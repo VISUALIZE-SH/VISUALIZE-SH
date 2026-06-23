@@ -5,6 +5,7 @@ import { buildStylesheet } from '../graph/cytoscapeStyles'
 import { getLayout, type LayoutName } from '../graph/layouts'
 import { attachElasticPull } from '../graph/elasticPull'
 import { declutterOverlaps, spaceIslands } from '../graph/declutter'
+import { removeTimelineAxis, updateTimelineAxis } from '../graph/timeline'
 import type { GraphData } from '../types/entities'
 
 interface Props {
@@ -12,6 +13,7 @@ interface Props {
   visibleIds: Set<string>
   selectedId: string | null
   layoutName: LayoutName
+  accessibilityMode: boolean
   onSelect: (id: string | null) => void
   onCyReady?: (cy: Cytoscape.Core) => void
 }
@@ -21,13 +23,15 @@ export default function GraphCanvas({
   visibleIds,
   selectedId,
   layoutName,
+  accessibilityMode,
   onSelect,
   onCyReady,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
   const cyRef = useRef<Cytoscape.Core | null>(null)
   const didMount = useRef(false)
-  const didLayoutMount = useRef(false)
+  const layoutNameRef = useRef(layoutName)
+  layoutNameRef.current = layoutName
 
   // Create the instance once per dataset.
   useEffect(() => {
@@ -35,7 +39,7 @@ export default function GraphCanvas({
     const cy = cytoscape({
       container: containerRef.current,
       elements: [...graph.elements.nodes, ...graph.elements.edges],
-      style: buildStylesheet(),
+      style: buildStylesheet({ accessibilityMode }),
       layout: getLayout(layoutName),
       wheelSensitivity: 0.2,
       minZoom: 0.12,
@@ -52,8 +56,13 @@ export default function GraphCanvas({
     // whitespace around disconnected islands, then frame.
     const declutterAndFit = () => {
       if (cyRef.current !== cy) return
-      declutterOverlaps(cy)
-      spaceIslands(cy)
+      if (layoutNameRef.current === 'timeline') {
+        updateTimelineAxis(cy)
+      } else {
+        removeTimelineAxis(cy)
+        declutterOverlaps(cy)
+        spaceIslands(cy)
+      }
       cy.resize()
       cy.fit(cy.elements(':visible'), 45)
     }
@@ -90,7 +99,10 @@ export default function GraphCanvas({
       cy.fit(cy.elements(':visible'), 45)
     })
 
-    cy.on('tap', 'node', (evt) => onSelect(evt.target.id()))
+    cy.on('tap', 'node', (evt) => {
+      if (evt.target.data('isTimelineAxis')) return
+      onSelect(evt.target.id())
+    })
     cy.on('tap', (evt) => {
       if (evt.target === cy) onSelect(null)
     })
@@ -104,24 +116,41 @@ export default function GraphCanvas({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [graph])
 
-  // Re-run layout when the user switches it. Skip the first run — the instance
-  // was already laid out (and decluttered) by the create effect.
-  useEffect(() => {
-    if (!didLayoutMount.current) {
-      didLayoutMount.current = true
-      return
-    }
-    cyRef.current?.layout(getLayout(layoutName)).run()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [layoutName])
-
-  // Toggle node visibility on filter change; relayout the visible subset.
+  // Accessibility mode changes label size inside the Cytoscape canvas as well as
+  // DOM text. Refresh the stylesheet in place so graph state is preserved.
   useEffect(() => {
     const cy = cyRef.current
     if (!cy) return
+    cy.style(buildStylesheet({ accessibilityMode })).update()
+    if (layoutNameRef.current === 'timeline') {
+      updateTimelineAxis(cy)
+    } else {
+      declutterOverlaps(cy)
+      spaceIslands(cy)
+    }
+    cy.resize()
+    cy.fit(cy.elements(':visible'), 45)
+  }, [accessibilityMode])
+
+  // Toggle node visibility on filter/layout change; relayout the visible subset.
+  // Timeline mode shows dated therapies/trials plus the condition/anatomy tier.
+  useEffect(() => {
+    const cy = cyRef.current
+    if (!cy) return
+    removeTimelineAxis(cy)
+    cy.scratch('_timelineLayoutState', null)
     cy.batch(() => {
       cy.nodes().forEach((n) => {
-        n.style('display', visibleIds.has(n.id()) ? 'element' : 'none')
+        const hasTimelineDate = Boolean(n.data('timelineDate'))
+        const isTimelineCondition = n.data('group') === 'condition'
+        const shown =
+          visibleIds.has(n.id()) &&
+          (layoutName !== 'timeline' || hasTimelineDate || isTimelineCondition)
+        n.style('display', shown ? 'element' : 'none')
+        n.toggleClass(
+          'timeline-node',
+          layoutName === 'timeline' && shown && !n.data('isTimelineAxis'),
+        )
       })
     })
     // The create effect already laid out the full graph; skip the duplicate run.
@@ -131,7 +160,7 @@ export default function GraphCanvas({
     }
     cy.layout(getLayout(layoutName)).run()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [visibleIds])
+  }, [visibleIds, layoutName])
 
   // Neighborhood highlight + recenter on selection.
   useEffect(() => {

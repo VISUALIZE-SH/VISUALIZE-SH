@@ -4,6 +4,7 @@ import type { GraphData, NodeGroup, RegulatoryStatus } from './types/entities'
 import { loadGraph } from './data/loadGraph'
 import { GROUP_ORDER } from './graph/palette'
 import { getLayout, type LayoutName } from './graph/layouts'
+import { timelineYear } from './graph/timeline'
 import GraphCanvas from './components/GraphCanvas'
 import Header from './components/Header'
 import Filters from './components/Filters'
@@ -30,6 +31,9 @@ export default function App() {
   const [layoutName, setLayoutName] = useState<LayoutName>('fcose')
   const [aboutOpen, setAboutOpen] = useState(false)
   const [leftOpen, setLeftOpen] = useState(false)
+  const [filtersCollapsed, setFiltersCollapsed] = useState(false)
+  const [accessibilityMode, setAccessibilityMode] = useState(false)
+  const [timelineTipOpen, setTimelineTipOpen] = useState(false)
   const cyRef = useRef<Cytoscape.Core | null>(null)
 
   useEffect(() => {
@@ -69,6 +73,30 @@ export default function App() {
     return set
   }, [graph, activeGroups, activeRegulatory, showDrafts])
 
+  const timelineSummary = useMemo(() => {
+    const dated = nodes.filter((n) => visibleIds.has(n.id) && n.timelineDate)
+    const conditions = nodes.filter(
+      (n) => visibleIds.has(n.id) && n.group === 'condition',
+    )
+    if (dated.length === 0) return null
+    const years = dated.map((n) => timelineYear(n.timelineDate!))
+    return {
+      count: dated.length,
+      conditionCount: conditions.length,
+      total: dated.length + conditions.length,
+      start: Math.min(...years),
+      end: Math.max(...years),
+    }
+  }, [nodes, visibleIds])
+
+  useEffect(() => {
+    if (layoutName !== 'timeline' || !selectedId) return
+    const selected = nodesById.get(selectedId)
+    if (!selected?.timelineDate && selected?.group !== 'condition') {
+      setSelectedId(null)
+    }
+  }, [layoutName, nodesById, selectedId])
+
   if (error)
     return (
       <div className="state-msg error">
@@ -83,6 +111,16 @@ export default function App() {
   function handleSelect(id: string | null) {
     setSelectedId(id)
     setLeftOpen(false)
+  }
+  function toggleOptionsPanel() {
+    if (
+      typeof window !== 'undefined' &&
+      window.matchMedia('(max-width: 860px)').matches
+    ) {
+      setLeftOpen((o) => !o)
+    } else {
+      setFiltersCollapsed((c) => !c)
+    }
   }
   function toggleGroup(g: NodeGroup) {
     setActiveGroups((prev) => {
@@ -114,7 +152,7 @@ export default function App() {
   }
 
   return (
-    <div className="app">
+    <div className={`app ${accessibilityMode ? 'accessibility-mode' : ''}`}>
       <Header
         meta={graph.meta}
         nodes={nodes}
@@ -124,10 +162,18 @@ export default function App() {
         onFit={fit}
         onRelayout={relayout}
         onAbout={() => setAboutOpen(true)}
-        onToggleFilters={() => setLeftOpen((o) => !o)}
+        onToggleFilters={toggleOptionsPanel}
+        filtersCollapsed={filtersCollapsed}
+        accessibilityMode={accessibilityMode}
+        onToggleAccessibility={() => setAccessibilityMode((enabled) => !enabled)}
       />
       <div className="body">
-        <aside className={`sidebar ${leftOpen ? 'open' : ''}`}>
+        <aside
+          className={`sidebar ${leftOpen ? 'open' : ''} ${
+            filtersCollapsed ? 'collapsed' : ''
+          }`}
+          aria-hidden={filtersCollapsed && !leftOpen}
+        >
           <Filters
             meta={graph.meta}
             activeGroups={activeGroups}
@@ -147,11 +193,47 @@ export default function App() {
             visibleIds={visibleIds}
             selectedId={selectedId}
             layoutName={layoutName}
+            accessibilityMode={accessibilityMode}
             onSelect={handleSelect}
             onCyReady={(cy) => {
               cyRef.current = cy
             }}
           />
+          <div className="canvas-disclaimer" role="note">
+            This is not a clinical advice tool. Content here is not provided or
+            endorsed by the organizations listed.
+          </div>
+          {layoutName === 'timeline' && (
+            <div
+              className={`timeline-note ${timelineTipOpen ? 'expanded' : 'collapsed'}`}
+              role="note"
+            >
+              <button
+                className="timeline-note-toggle"
+                type="button"
+                aria-expanded={timelineTipOpen}
+                onClick={() => setTimelineTipOpen((open) => !open)}
+                title={timelineTipOpen ? 'Collapse timeline tip' : 'Expand timeline tip'}
+              >
+                <strong>Timeline</strong>
+                <span>
+                  {timelineSummary
+                    ? `${timelineSummary.total} nodes · ${timelineSummary.start}-${timelineSummary.end}`
+                    : 'No dated items'}
+                </span>
+                <span className="timeline-note-icon">
+                  {timelineTipOpen ? '−' : '+'}
+                </span>
+              </button>
+              {timelineTipOpen && (
+                <p className="timeline-note-detail">
+                  {timelineSummary
+                    ? `${timelineSummary.count} dated therapies/trials + ${timelineSummary.conditionCount} anatomy/disease nodes. Anatomy/disease state is shown as the top row; companies and other undated context nodes are omitted.`
+                    : 'No dated therapies or trials match the current filters.'}
+                </p>
+              )}
+            </div>
+          )}
         </main>
 
         {selectedNode && (

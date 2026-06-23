@@ -15,6 +15,11 @@
   treats: [cond-af]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved (Watchman 2015; FLX 2020; FLX Pro 2023)."
+  timeline:
+    date: "2020-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval of Watchman FLX"
   mechanism: "Percutaneously seals the left atrial appendage to prevent thrombus embolization in non-valvular AF."
   links:
     - label: "Product page"
@@ -31,6 +36,11 @@
   treats: [cond-af]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2021; dual-seal (lobe + disc) design."
+  timeline:
+    date: "2021-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval"
   mechanism: "Dual-seal LAA occluder for stroke prevention in non-valvular AF."
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -43,6 +53,12 @@
   treats: [cond-af]
   regulatoryStatus: approved
   regulatoryDetail: "CE mark and China NMPA approved; investigational in the US."
+  timeline:
+    date: "2016-01-01"
+    precision: year
+    dateBasis: ce-mark
+    event: "CE mark"
+    notes: "Year-level CE mark date; refine if an exact notified-body date is verified."
   mechanism: "Umbrella-and-cover LAA occluder designed for variable appendage anatomy."
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -56,6 +72,11 @@
   treats: [cond-pfo]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2016 for recurrent cryptogenic stroke due to PFO."
+  timeline:
+    date: "2016-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for recurrent cryptogenic stroke due to PFO"
   mechanism: "Double-disc nitinol occluder that closes the patent foramen ovale."
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -68,6 +89,11 @@
   treats: [cond-pfo, cond-asd]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved for PFO and for secundum ASD closure."
+  timeline:
+    date: "2018-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for PFO closure"
   mechanism: "ePTFE-covered nitinol frame occluder for PFO and atrial septal defects."
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -80,6 +106,11 @@
   treats: [cond-asd]
   regulatoryStatus: approved
   regulatoryDetail: "Long-established transcatheter device for secundum ASD."
+  timeline:
+    date: "2001-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for secundum ASD closure"
   mechanism: "Self-expanding double-disc occluder for secundum atrial septal defects."
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -92,6 +123,11 @@
   treats: [cond-pda]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2019; usable in premature infants >=700 g."
+  timeline:
+    date: "2019-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval"
   mechanism: "Miniature occluder for transcatheter closure of patent ductus arteriosus."
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -104,6 +140,11 @@
   treats: [cond-vsd]
   regulatoryStatus: approved
   regulatoryDetail: "Approved for muscular VSDs; membranous-VSD use remains investigational/off-label."
+  timeline:
+    date: "2007-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA humanitarian device exemption for muscular VSD closure"
   mechanism: "Double-disc occluder for muscular ventricular septal defects."
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -156,6 +197,11 @@
   treats: [cond-hfref, cond-hfpef]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved; indication expanded to NYHA II-III HF (CHAMPION, GUIDE-HF)."
+  timeline:
+    date: "2014-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval"
   mechanism: "Wireless pulmonary-artery pressure sensor enabling pressure-guided HF management."
   pulse: 4
   curation: { status: curated, lastUpdated: 2026-06-22 }
@@ -169,6 +215,11 @@
   treats: [cond-hfref, cond-hfpef]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2024 (PROACTIVE-HF); now part of Edwards Lifesciences."
+  timeline:
+    date: "2024-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval"
   mechanism: "Pulmonary-artery pressure sensor with a paired patient-management platform."
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -206,6 +257,11 @@
   treats: [cond-cmd]
   regulatoryStatus: investigational
   regulatoryDetail: "CE marked in Europe; investigational in the US (COSIRA-II)."
+  timeline:
+    date: "2011-01-01"
+    precision: year
+    dateBasis: ce-mark
+    event: "CE mark in Europe"
   mechanism: "Hourglass stent narrows the coronary sinus to raise backward pressure and redistribute perfusion to ischemic myocardium."
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -234,6 +290,11 @@
   treats: [cond-hcm]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2022 for symptomatic obstructive HCM; REMS program."
+  timeline:
+    date: "2022-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for symptomatic obstructive HCM"
   mechanism: "Reversibly inhibits cardiac myosin ATPase, reducing hypercontractility and LVOT obstruction."
   pulse: 6
   curation: { status: curated, lastUpdated: 2026-06-22 }
@@ -261,6 +322,11 @@
   treats: [cond-attr-cm]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2019 for ATTR-CM (ATTR-ACT)."
+  timeline:
+    date: "2019-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for ATTR-CM"
   mechanism: "Stabilizes the transthyretin tetramer, slowing amyloid fibril formation."
   pulse: 4
   curation: { status: curated, lastUpdated: 2026-06-22 }
@@ -274,6 +340,11 @@
   treats: [cond-attr-cm]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2024 for ATTR-CM (ATTRibute-CM)."
+  timeline:
+    date: "2024-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for ATTR-CM"
   mechanism: "Near-complete TTR tetramer stabilizer mimicking a protective TTR variant."
   pulse: 8
   curation: { status: curated, lastUpdated: 2026-06-22 }
@@ -287,6 +358,12 @@
   treats: [cond-attr-cm]
   regulatoryStatus: approved
   regulatoryDetail: "Approved for hATTR polyneuropathy; ATTR-CM indication via HELIOS-B (2025). VERIFY label."
+  timeline:
+    date: "2025-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for ATTR-CM indication"
+    notes: "Existing curated record asks to verify the label; keep under human review."
   mechanism: "Subcutaneous RNAi that lowers hepatic transthyretin production."
   pulse: 8
   curation: { status: curated, lastUpdated: 2026-06-22 }
@@ -313,6 +390,11 @@
   treats: [cond-hfref, cond-hfpef]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved across the HF spectrum (DAPA-HF, DELIVER)."
+  timeline:
+    date: "2020-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for HFrEF"
   mechanism: "SGLT2 inhibition with pleiotropic cardiorenal benefit; a pillar of GDMT."
   pulse: 5
   curation: { status: curated, lastUpdated: 2026-06-22 }
@@ -326,6 +408,11 @@
   treats: [cond-hfref, cond-hfpef]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved across the HF spectrum (EMPEROR-Reduced/Preserved); co-marketed with Eli Lilly."
+  timeline:
+    date: "2021-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for HFrEF"
   mechanism: "SGLT2 inhibitor reducing HF hospitalization across ejection fractions."
   pulse: 5
   curation: { status: curated, lastUpdated: 2026-06-22 }
@@ -339,6 +426,11 @@
   treats: [cond-hfref, cond-hfpef]
   regulatoryStatus: approved
   regulatoryDetail: "Approved for chronic HF; greatest benefit at lower EF (PARADIGM-HF; PARAGON-HF)."
+  timeline:
+    date: "2015-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for chronic heart failure"
   mechanism: "Angiotensin receptor-neprilysin inhibitor augmenting natriuretic peptides while blocking RAAS."
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -351,6 +443,11 @@
   treats: [cond-hfref]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2021 for worsening HFrEF (VICTORIA)."
+  timeline:
+    date: "2021-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for worsening HFrEF"
   mechanism: "Soluble guanylate cyclase stimulator restoring the NO-sGC-cGMP pathway."
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -363,6 +460,12 @@
   treats: [cond-hfpef]
   regulatoryStatus: approved
   regulatoryDetail: "Approved for CKD in T2D; HFmrEF/HFpEF benefit shown in FINEARTS-HF (2024). VERIFY HF label."
+  timeline:
+    date: "2021-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for CKD in T2D"
+    notes: "HF label remains flagged for verification in the curated record."
   mechanism: "Nonsteroidal mineralocorticoid receptor antagonist reducing cardiorenal inflammation/fibrosis."
   pulse: 6
   curation: { status: curated, lastUpdated: 2026-06-22 }
@@ -442,6 +545,11 @@
   treats: [cond-as]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved across surgical risk strata (high/inoperable 2015 lineage; intermediate 2016; low-risk 2019). Also used for aortic/mitral/tricuspid/pulmonary valve-in-valve."
+  timeline:
+    date: "2015-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval of SAPIEN 3 lineage for high/inoperable-risk aortic stenosis"
   mechanism: "Balloon-expandable bovine-pericardial valve on a cobalt-chromium frame, deployed within the native aortic annulus."
   links:
     - label: "Product page"
@@ -458,6 +566,11 @@
   treats: [cond-as]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved across risk strata (high 2014 CoreValve lineage; intermediate 2017; low-risk 2019); supra-annular design favored in small annuli."
+  timeline:
+    date: "2014-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval of CoreValve/Evolut lineage for high-risk aortic stenosis"
   mechanism: "Self-expanding supra-annular porcine-pericardial valve on a nitinol frame for the native aortic annulus."
   links:
     - label: "Product page"
@@ -474,6 +587,11 @@
   treats: [cond-as]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2023 (CE mark 2021); intra-annular sealing cuff (NaviSeal) to reduce paravalvular leak."
+  timeline:
+    date: "2021-01-01"
+    precision: year
+    dateBasis: ce-mark
+    event: "CE mark"
   mechanism: "Self-expanding bovine-pericardial valve with an active sealing cuff for the native aortic annulus."
   pulse: 5
   curation: { status: curated, lastUpdated: 2026-06-22 }
@@ -487,6 +605,12 @@
   treats: [cond-as]
   regulatoryStatus: discontinued
   regulatoryDetail: "CE-marked self-expanding TAVR; Boston Scientific wound down the ACURATE platform in 2025 after ACURATE IDE failed noninferiority vs SAPIEN/Evolut. Not FDA approved."
+  timeline:
+    date: "2020-01-01"
+    precision: year
+    dateBasis: ce-mark
+    event: "CE mark"
+    notes: "Year-level CE mark date; platform later discontinued."
   mechanism: "Self-expanding porcine-pericardial valve with a top-down deployment and stabilization arches."
   pulse: 6
   curation: { status: curated, lastUpdated: 2026-06-22, notes: "Verify final commercial wind-down timeline/geographies." }
@@ -500,6 +624,12 @@
   treats: [cond-ar, cond-as]
   regulatoryStatus: approved
   regulatoryDetail: "First transcatheter heart valve approved for symptomatic severe aortic regurgitation (FDA 2025; CE mark for AR and AS). VERIFY exact approval dates."
+  timeline:
+    date: "2025-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for symptomatic severe aortic regurgitation"
+    notes: "Existing curated record asks to verify exact approval dates."
   mechanism: "Self-expanding valve with anatomically-aligned locators that clip the native leaflets, enabling fixation without annular calcium (key for pure AR)."
   links:
     - label: "Product page"
@@ -517,6 +647,11 @@
   treats: [cond-mr]
   regulatoryStatus: approved
   regulatoryDetail: "CE mark 2020 for mitral regurgitation; US investigational (SUMMIT pivotal trial). Transapical delivery with an apical tether."
+  timeline:
+    date: "2020-01-01"
+    precision: year
+    dateBasis: ce-mark
+    event: "CE mark for mitral regurgitation"
   mechanism: "Self-expanding porcine-pericardial mitral valve anchored by an apical pad via a tether; fully repositionable/retrievable."
   pulse: 5
   curation: { status: curated, lastUpdated: 2026-06-22 }
@@ -557,6 +692,11 @@
   treats: [cond-mr]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved for primary/degenerative MR (2013) and for secondary/functional MR in heart failure (2019, on COAPT); now in G4 generation."
+  timeline:
+    date: "2013-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for primary/degenerative mitral regurgitation"
   mechanism: "Percutaneous transseptal clip that grasps the mitral leaflets to create a double-orifice valve and reduce regurgitation."
   links:
     - label: "Product page"
@@ -573,6 +713,11 @@
   treats: [cond-mr]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved for degenerative MR 2022 (CLASP IID); central spacer plus independently-graspable paddles."
+  timeline:
+    date: "2022-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval for degenerative mitral regurgitation"
   mechanism: "Transseptal edge-to-edge repair device with a central spacer that fills the regurgitant orifice and broad paddles for leaflet capture."
   links:
     - label: "Product page"
@@ -589,6 +734,11 @@
   treats: [cond-tr]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved April 2024 for tricuspid regurgitation (on TRILUMINATE Pivotal) — the first transcatheter tricuspid repair device in the US."
+  timeline:
+    date: "2024-04-01"
+    precision: month
+    dateBasis: fda-approval
+    event: "FDA approval for tricuspid regurgitation"
   mechanism: "Transcatheter edge-to-edge clip adapted to tricuspid anatomy to approximate leaflets and reduce TR."
   links:
     - label: "Product page"
@@ -606,6 +756,11 @@
   treats: [cond-tr]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved February 2024 (on TRISCEND II) — the first transcatheter tricuspid valve replacement system."
+  timeline:
+    date: "2024-02-01"
+    precision: month
+    dateBasis: fda-approval
+    event: "FDA approval for tricuspid regurgitation"
   mechanism: "Self-expanding bovine-pericardial valve with intra-annular sealing and anchoring tabs that engage native tricuspid leaflets."
   links:
     - label: "Product page"
@@ -623,6 +778,12 @@
   treats: [cond-mr, cond-tr]
   regulatoryStatus: approved
   regulatoryDetail: "CE mark for mitral and tricuspid annular reduction; US investigational. Implanted on the beating heart under imaging guidance."
+  timeline:
+    date: "2015-01-01"
+    precision: year
+    dateBasis: ce-mark
+    event: "CE mark for mitral annular reduction"
+    notes: "Earliest known Cardioband CE mark; tricuspid CE mark came later."
   mechanism: "Adjustable transcatheter annuloplasty band anchored along the valve annulus and cinched to reduce annular dimension and regurgitation."
   pulse: 4
   curation: { status: curated, lastUpdated: 2026-06-22 }
@@ -637,6 +798,11 @@
   treats: [cond-pv]
   regulatoryStatus: approved
   regulatoryDetail: "FDA Humanitarian Device Exemption 2010; PMA approval 2017. For dysfunctional RVOT conduits/bioprosthetic valves."
+  timeline:
+    date: "2010-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA humanitarian device exemption"
   mechanism: "Balloon-expandable bovine-jugular-vein valve sutured in a platinum-iridium stent for the pulmonary position."
   pulse: 3
   curation: { status: curated, lastUpdated: 2026-06-22 }
@@ -650,6 +816,11 @@
   treats: [cond-pv]
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2021 — first TPVR for severe pulmonary regurgitation in a native/surgically-repaired RVOT (e.g. repaired tetralogy of Fallot)."
+  timeline:
+    date: "2021-01-01"
+    precision: year
+    dateBasis: fda-approval
+    event: "FDA approval"
   mechanism: "Self-expanding porcine-pericardial valve in a nitinol frame designed to seat in the native RVOT/main pulmonary artery."
   pulse: 4
   curation: { status: curated, lastUpdated: 2026-06-22 }

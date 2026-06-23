@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-23T16:15:52.568Z",
+    "generatedAt": "2026-06-23T19:23:53.516Z",
     "lastUpdated": "2026-06-22",
     "counts": {
       "condition": 16,
@@ -475,6 +475,7 @@
           "isDraft": false,
           "degree": 8,
           "pulse": 6,
+          "timelineDate": "2020-01-01",
           "entity": {
             "id": "dev-watchman-flx",
             "type": "therapy",
@@ -487,6 +488,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved (Watchman 2015; FLX 2020; FLX Pro 2023).",
+            "timeline": {
+              "date": "2020-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval of Watchman FLX"
+            },
             "mechanism": "Percutaneously seals the left atrial appendage to prevent thrombus embolization in non-valvular AF.",
             "links": [
               {
@@ -511,6 +518,7 @@
           "isDraft": false,
           "degree": 4,
           "pulse": 0,
+          "timelineDate": "2021-01-01",
           "entity": {
             "id": "dev-amulet",
             "type": "therapy",
@@ -523,6 +531,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2021; dual-seal (lobe + disc) design.",
+            "timeline": {
+              "date": "2021-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval"
+            },
             "mechanism": "Dual-seal LAA occluder for stroke prevention in non-valvular AF.",
             "curation": {
               "status": "curated",
@@ -540,6 +554,7 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2016-01-01",
           "entity": {
             "id": "dev-lambre",
             "type": "therapy",
@@ -552,6 +567,13 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "CE mark and China NMPA approved; investigational in the US.",
+            "timeline": {
+              "date": "2016-01-01",
+              "precision": "year",
+              "dateBasis": "ce-mark",
+              "event": "CE mark",
+              "notes": "Year-level CE mark date; refine if an exact notified-body date is verified."
+            },
             "mechanism": "Umbrella-and-cover LAA occluder designed for variable appendage anatomy.",
             "curation": {
               "status": "curated",
@@ -569,6 +591,7 @@
           "isDraft": false,
           "degree": 4,
           "pulse": 0,
+          "timelineDate": "2016-01-01",
           "entity": {
             "id": "dev-amplatzer-pfo",
             "type": "therapy",
@@ -581,6 +604,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2016 for recurrent cryptogenic stroke due to PFO.",
+            "timeline": {
+              "date": "2016-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for recurrent cryptogenic stroke due to PFO"
+            },
             "mechanism": "Double-disc nitinol occluder that closes the patent foramen ovale.",
             "curation": {
               "status": "curated",
@@ -598,6 +627,7 @@
           "isDraft": false,
           "degree": 4,
           "pulse": 0,
+          "timelineDate": "2018-01-01",
           "entity": {
             "id": "dev-gore-cardioform-septal",
             "type": "therapy",
@@ -611,6 +641,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved for PFO and for secundum ASD closure.",
+            "timeline": {
+              "date": "2018-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for PFO closure"
+            },
             "mechanism": "ePTFE-covered nitinol frame occluder for PFO and atrial septal defects.",
             "curation": {
               "status": "curated",
@@ -628,6 +664,7 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2001-01-01",
           "entity": {
             "id": "dev-amplatzer-asd",
             "type": "therapy",
@@ -640,6 +677,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "Long-established transcatheter device for secundum ASD.",
+            "timeline": {
+              "date": "2001-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for secundum ASD closure"
+            },
             "mechanism": "Self-expanding double-disc occluder for secundum atrial septal defects.",
             "curation": {
               "status": "curated",
@@ -657,6 +700,7 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2019-01-01",
           "entity": {
             "id": "dev-amplatzer-piccolo",
             "type": "therapy",
@@ -669,6 +713,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2019; usable in premature infants >=700 g.",
+            "timeline": {
+              "date": "2019-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval"
+            },
             "mechanism": "Miniature occluder for transcatheter closure of patent ductus arteriosus.",
             "curation": {
               "status": "curated",
@@ -686,6 +736,7 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2007-01-01",
           "entity": {
             "id": "dev-amplatzer-vsd",
             "type": "therapy",
@@ -698,6 +749,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "Approved for muscular VSDs; membranous-VSD use remains investigational/off-label.",
+            "timeline": {
+              "date": "2007-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA humanitarian device exemption for muscular VSD closure"
+            },
             "mechanism": "Double-disc occluder for muscular ventricular septal defects.",
             "curation": {
               "status": "curated",
@@ -805,6 +862,7 @@
           "isDraft": false,
           "degree": 5,
           "pulse": 4,
+          "timelineDate": "2014-01-01",
           "entity": {
             "id": "dev-cardiomems",
             "type": "therapy",
@@ -818,6 +876,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved; indication expanded to NYHA II-III HF (CHAMPION, GUIDE-HF).",
+            "timeline": {
+              "date": "2014-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval"
+            },
             "mechanism": "Wireless pulmonary-artery pressure sensor enabling pressure-guided HF management.",
             "pulse": 4,
             "curation": {
@@ -836,6 +900,7 @@
           "isDraft": false,
           "degree": 4,
           "pulse": 0,
+          "timelineDate": "2024-01-01",
           "entity": {
             "id": "dev-cordella",
             "type": "therapy",
@@ -849,6 +914,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2024 (PROACTIVE-HF); now part of Edwards Lifesciences.",
+            "timeline": {
+              "date": "2024-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval"
+            },
             "mechanism": "Pulmonary-artery pressure sensor with a paired patient-management platform.",
             "curation": {
               "status": "curated",
@@ -926,6 +997,7 @@
           "isDraft": false,
           "degree": 4,
           "pulse": 0,
+          "timelineDate": "2011-01-01",
           "entity": {
             "id": "dev-coronary-sinus-reducer",
             "type": "therapy",
@@ -938,6 +1010,12 @@
             ],
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "CE marked in Europe; investigational in the US (COSIRA-II).",
+            "timeline": {
+              "date": "2011-01-01",
+              "precision": "year",
+              "dateBasis": "ce-mark",
+              "event": "CE mark in Europe"
+            },
             "mechanism": "Hourglass stent narrows the coronary sinus to raise backward pressure and redistribute perfusion to ischemic myocardium.",
             "curation": {
               "status": "curated",
@@ -983,6 +1061,7 @@
           "isDraft": false,
           "degree": 4,
           "pulse": 6,
+          "timelineDate": "2022-01-01",
           "entity": {
             "id": "rx-mavacamten",
             "type": "therapy",
@@ -995,6 +1074,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2022 for symptomatic obstructive HCM; REMS program.",
+            "timeline": {
+              "date": "2022-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for symptomatic obstructive HCM"
+            },
             "mechanism": "Reversibly inhibits cardiac myosin ATPase, reducing hypercontractility and LVOT obstruction.",
             "pulse": 6,
             "curation": {
@@ -1044,6 +1129,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 4,
+          "timelineDate": "2019-01-01",
           "entity": {
             "id": "rx-tafamidis",
             "type": "therapy",
@@ -1056,6 +1142,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2019 for ATTR-CM (ATTR-ACT).",
+            "timeline": {
+              "date": "2019-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for ATTR-CM"
+            },
             "mechanism": "Stabilizes the transthyretin tetramer, slowing amyloid fibril formation.",
             "pulse": 4,
             "curation": {
@@ -1074,6 +1166,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 8,
+          "timelineDate": "2024-01-01",
           "entity": {
             "id": "rx-acoramidis",
             "type": "therapy",
@@ -1086,6 +1179,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2024 for ATTR-CM (ATTRibute-CM).",
+            "timeline": {
+              "date": "2024-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for ATTR-CM"
+            },
             "mechanism": "Near-complete TTR tetramer stabilizer mimicking a protective TTR variant.",
             "pulse": 8,
             "curation": {
@@ -1104,6 +1203,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 8,
+          "timelineDate": "2025-01-01",
           "entity": {
             "id": "rx-vutrisiran",
             "type": "therapy",
@@ -1116,6 +1216,13 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "Approved for hATTR polyneuropathy; ATTR-CM indication via HELIOS-B (2025). VERIFY label.",
+            "timeline": {
+              "date": "2025-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for ATTR-CM indication",
+              "notes": "Existing curated record asks to verify the label; keep under human review."
+            },
             "mechanism": "Subcutaneous RNAi that lowers hepatic transthyretin production.",
             "pulse": 8,
             "curation": {
@@ -1163,6 +1270,7 @@
           "isDraft": false,
           "degree": 5,
           "pulse": 5,
+          "timelineDate": "2020-01-01",
           "entity": {
             "id": "rx-dapagliflozin",
             "type": "therapy",
@@ -1176,6 +1284,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved across the HF spectrum (DAPA-HF, DELIVER).",
+            "timeline": {
+              "date": "2020-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for HFrEF"
+            },
             "mechanism": "SGLT2 inhibition with pleiotropic cardiorenal benefit; a pillar of GDMT.",
             "pulse": 5,
             "curation": {
@@ -1194,6 +1308,7 @@
           "isDraft": false,
           "degree": 5,
           "pulse": 5,
+          "timelineDate": "2021-01-01",
           "entity": {
             "id": "rx-empagliflozin",
             "type": "therapy",
@@ -1207,6 +1322,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved across the HF spectrum (EMPEROR-Reduced/Preserved); co-marketed with Eli Lilly.",
+            "timeline": {
+              "date": "2021-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for HFrEF"
+            },
             "mechanism": "SGLT2 inhibitor reducing HF hospitalization across ejection fractions.",
             "pulse": 5,
             "curation": {
@@ -1225,6 +1346,7 @@
           "isDraft": false,
           "degree": 4,
           "pulse": 0,
+          "timelineDate": "2015-01-01",
           "entity": {
             "id": "rx-sacubitril-valsartan",
             "type": "therapy",
@@ -1238,6 +1360,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "Approved for chronic HF; greatest benefit at lower EF (PARADIGM-HF; PARAGON-HF).",
+            "timeline": {
+              "date": "2015-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for chronic heart failure"
+            },
             "mechanism": "Angiotensin receptor-neprilysin inhibitor augmenting natriuretic peptides while blocking RAAS.",
             "curation": {
               "status": "curated",
@@ -1255,6 +1383,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 0,
+          "timelineDate": "2021-01-01",
           "entity": {
             "id": "rx-vericiguat",
             "type": "therapy",
@@ -1267,6 +1396,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2021 for worsening HFrEF (VICTORIA).",
+            "timeline": {
+              "date": "2021-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for worsening HFrEF"
+            },
             "mechanism": "Soluble guanylate cyclase stimulator restoring the NO-sGC-cGMP pathway.",
             "curation": {
               "status": "curated",
@@ -1284,6 +1419,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 6,
+          "timelineDate": "2021-01-01",
           "entity": {
             "id": "rx-finerenone",
             "type": "therapy",
@@ -1296,6 +1432,13 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "Approved for CKD in T2D; HFmrEF/HFpEF benefit shown in FINEARTS-HF (2024). VERIFY HF label.",
+            "timeline": {
+              "date": "2021-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for CKD in T2D",
+              "notes": "HF label remains flagged for verification in the curated record."
+            },
             "mechanism": "Nonsteroidal mineralocorticoid receptor antagonist reducing cardiorenal inflammation/fibrosis.",
             "pulse": 6,
             "curation": {
@@ -1460,6 +1603,7 @@
           "isDraft": false,
           "degree": 6,
           "pulse": 9,
+          "timelineDate": "2015-01-01",
           "entity": {
             "id": "dev-sapien-3",
             "type": "therapy",
@@ -1472,6 +1616,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved across surgical risk strata (high/inoperable 2015 lineage; intermediate 2016; low-risk 2019). Also used for aortic/mitral/tricuspid/pulmonary valve-in-valve.",
+            "timeline": {
+              "date": "2015-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval of SAPIEN 3 lineage for high/inoperable-risk aortic stenosis"
+            },
             "mechanism": "Balloon-expandable bovine-pericardial valve on a cobalt-chromium frame, deployed within the native aortic annulus.",
             "links": [
               {
@@ -1496,6 +1646,7 @@
           "isDraft": false,
           "degree": 4,
           "pulse": 8,
+          "timelineDate": "2014-01-01",
           "entity": {
             "id": "dev-evolut",
             "type": "therapy",
@@ -1508,6 +1659,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved across risk strata (high 2014 CoreValve lineage; intermediate 2017; low-risk 2019); supra-annular design favored in small annuli.",
+            "timeline": {
+              "date": "2014-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval of CoreValve/Evolut lineage for high-risk aortic stenosis"
+            },
             "mechanism": "Self-expanding supra-annular porcine-pericardial valve on a nitinol frame for the native aortic annulus.",
             "links": [
               {
@@ -1532,6 +1689,7 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 5,
+          "timelineDate": "2021-01-01",
           "entity": {
             "id": "dev-navitor",
             "type": "therapy",
@@ -1544,6 +1702,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2023 (CE mark 2021); intra-annular sealing cuff (NaviSeal) to reduce paravalvular leak.",
+            "timeline": {
+              "date": "2021-01-01",
+              "precision": "year",
+              "dateBasis": "ce-mark",
+              "event": "CE mark"
+            },
             "mechanism": "Self-expanding bovine-pericardial valve with an active sealing cuff for the native aortic annulus.",
             "pulse": 5,
             "curation": {
@@ -1562,6 +1726,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 6,
+          "timelineDate": "2020-01-01",
           "entity": {
             "id": "dev-acurate-neo2",
             "type": "therapy",
@@ -1574,6 +1739,13 @@
             ],
             "regulatoryStatus": "discontinued",
             "regulatoryDetail": "CE-marked self-expanding TAVR; Boston Scientific wound down the ACURATE platform in 2025 after ACURATE IDE failed noninferiority vs SAPIEN/Evolut. Not FDA approved.",
+            "timeline": {
+              "date": "2020-01-01",
+              "precision": "year",
+              "dateBasis": "ce-mark",
+              "event": "CE mark",
+              "notes": "Year-level CE mark date; platform later discontinued."
+            },
             "mechanism": "Self-expanding porcine-pericardial valve with a top-down deployment and stabilization arches.",
             "pulse": 6,
             "curation": {
@@ -1593,6 +1765,7 @@
           "isDraft": false,
           "degree": 4,
           "pulse": 8,
+          "timelineDate": "2025-01-01",
           "entity": {
             "id": "dev-trilogy",
             "type": "therapy",
@@ -1606,6 +1779,13 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "First transcatheter heart valve approved for symptomatic severe aortic regurgitation (FDA 2025; CE mark for AR and AS). VERIFY exact approval dates.",
+            "timeline": {
+              "date": "2025-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for symptomatic severe aortic regurgitation",
+              "notes": "Existing curated record asks to verify exact approval dates."
+            },
             "mechanism": "Self-expanding valve with anatomically-aligned locators that clip the native leaflets, enabling fixation without annular calcium (key for pure AR).",
             "links": [
               {
@@ -1630,6 +1810,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 5,
+          "timelineDate": "2020-01-01",
           "entity": {
             "id": "dev-tendyne",
             "type": "therapy",
@@ -1642,6 +1823,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "CE mark 2020 for mitral regurgitation; US investigational (SUMMIT pivotal trial). Transapical delivery with an apical tether.",
+            "timeline": {
+              "date": "2020-01-01",
+              "precision": "year",
+              "dateBasis": "ce-mark",
+              "event": "CE mark for mitral regurgitation"
+            },
             "mechanism": "Self-expanding porcine-pericardial mitral valve anchored by an apical pad via a tether; fully repositionable/retrievable.",
             "pulse": 5,
             "curation": {
@@ -1720,6 +1907,7 @@
           "isDraft": false,
           "degree": 7,
           "pulse": 7,
+          "timelineDate": "2013-01-01",
           "entity": {
             "id": "dev-mitraclip",
             "type": "therapy",
@@ -1732,6 +1920,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved for primary/degenerative MR (2013) and for secondary/functional MR in heart failure (2019, on COAPT); now in G4 generation.",
+            "timeline": {
+              "date": "2013-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for primary/degenerative mitral regurgitation"
+            },
             "mechanism": "Percutaneous transseptal clip that grasps the mitral leaflets to create a double-orifice valve and reduce regurgitation.",
             "links": [
               {
@@ -1756,6 +1950,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 6,
+          "timelineDate": "2022-01-01",
           "entity": {
             "id": "dev-pascal",
             "type": "therapy",
@@ -1768,6 +1963,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved for degenerative MR 2022 (CLASP IID); central spacer plus independently-graspable paddles.",
+            "timeline": {
+              "date": "2022-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for degenerative mitral regurgitation"
+            },
             "mechanism": "Transseptal edge-to-edge repair device with a central spacer that fills the regurgitant orifice and broad paddles for leaflet capture.",
             "links": [
               {
@@ -1792,6 +1993,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 8,
+          "timelineDate": "2024-04-01",
           "entity": {
             "id": "dev-triclip",
             "type": "therapy",
@@ -1804,6 +2006,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved April 2024 for tricuspid regurgitation (on TRILUMINATE Pivotal) — the first transcatheter tricuspid repair device in the US.",
+            "timeline": {
+              "date": "2024-04-01",
+              "precision": "month",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for tricuspid regurgitation"
+            },
             "mechanism": "Transcatheter edge-to-edge clip adapted to tricuspid anatomy to approximate leaflets and reduce TR.",
             "links": [
               {
@@ -1828,6 +2036,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 8,
+          "timelineDate": "2024-02-01",
           "entity": {
             "id": "dev-evoque",
             "type": "therapy",
@@ -1840,6 +2049,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved February 2024 (on TRISCEND II) — the first transcatheter tricuspid valve replacement system.",
+            "timeline": {
+              "date": "2024-02-01",
+              "precision": "month",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval for tricuspid regurgitation"
+            },
             "mechanism": "Self-expanding bovine-pericardial valve with intra-annular sealing and anchoring tabs that engage native tricuspid leaflets.",
             "links": [
               {
@@ -1864,6 +2079,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 4,
+          "timelineDate": "2015-01-01",
           "entity": {
             "id": "dev-cardioband",
             "type": "therapy",
@@ -1877,6 +2093,13 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "CE mark for mitral and tricuspid annular reduction; US investigational. Implanted on the beating heart under imaging guidance.",
+            "timeline": {
+              "date": "2015-01-01",
+              "precision": "year",
+              "dateBasis": "ce-mark",
+              "event": "CE mark for mitral annular reduction",
+              "notes": "Earliest known Cardioband CE mark; tricuspid CE mark came later."
+            },
             "mechanism": "Adjustable transcatheter annuloplasty band anchored along the valve annulus and cinched to reduce annular dimension and regurgitation.",
             "pulse": 4,
             "curation": {
@@ -1895,6 +2118,7 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 3,
+          "timelineDate": "2010-01-01",
           "entity": {
             "id": "dev-melody",
             "type": "therapy",
@@ -1907,6 +2131,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA Humanitarian Device Exemption 2010; PMA approval 2017. For dysfunctional RVOT conduits/bioprosthetic valves.",
+            "timeline": {
+              "date": "2010-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA humanitarian device exemption"
+            },
             "mechanism": "Balloon-expandable bovine-jugular-vein valve sutured in a platinum-iridium stent for the pulmonary position.",
             "pulse": 3,
             "curation": {
@@ -1925,6 +2155,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 4,
+          "timelineDate": "2021-01-01",
           "entity": {
             "id": "dev-harmony",
             "type": "therapy",
@@ -1937,6 +2168,12 @@
             ],
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2021 — first TPVR for severe pulmonary regurgitation in a native/surgically-repaired RVOT (e.g. repaired tetralogy of Fallot).",
+            "timeline": {
+              "date": "2021-01-01",
+              "precision": "year",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval"
+            },
             "mechanism": "Self-expanding porcine-pericardial valve in a nitinol frame designed to seat in the native RVOT/main pulmonary artery.",
             "pulse": 4,
             "curation": {
@@ -2671,12 +2908,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2005-02-01",
           "entity": {
             "id": "trial-protect-af",
             "type": "trial",
             "name": "PROTECT AF",
             "phase": "Pivotal RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2005-02-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT00129545"
+            },
             "conditions": [
               "cond-af"
             ],
@@ -2706,12 +2951,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2010-11-01",
           "entity": {
             "id": "trial-prevail",
             "type": "trial",
             "name": "PREVAIL",
             "phase": "Pivotal RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2010-11-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT01182441"
+            },
             "conditions": [
               "cond-af"
             ],
@@ -2741,12 +2994,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 0,
+          "timelineDate": "2015-10-13",
           "entity": {
             "id": "trial-prague-17",
             "type": "trial",
             "name": "PRAGUE-17",
             "phase": "RCT (LAAC vs DOAC)",
             "status": "completed",
+            "timeline": {
+              "date": "2015-10-13",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT02426944"
+            },
             "conditions": [
               "cond-af"
             ],
@@ -2777,12 +3038,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 0,
+          "timelineDate": "2016-08-24",
           "entity": {
             "id": "trial-amulet-ide",
             "type": "trial",
             "name": "Amulet IDE",
             "phase": "RCT (head-to-head)",
             "status": "completed",
+            "timeline": {
+              "date": "2016-08-24",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT02879448"
+            },
             "conditions": [
               "cond-af"
             ],
@@ -2813,12 +3082,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2019-05-20",
           "entity": {
             "id": "trial-option",
             "type": "trial",
             "name": "OPTION",
             "phase": "RCT (LAAC vs DOAC post-ablation)",
             "status": "completed",
+            "timeline": {
+              "date": "2019-05-20",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03795298"
+            },
             "conditions": [
               "cond-af"
             ],
@@ -2848,12 +3125,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2020-10-15",
           "entity": {
             "id": "trial-champion-af",
             "type": "trial",
             "name": "CHAMPION-AF",
             "phase": "RCT (LAAC vs DOAC)",
             "status": "active",
+            "timeline": {
+              "date": "2020-10-15",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT04394546"
+            },
             "conditions": [
               "cond-af"
             ],
@@ -2883,12 +3168,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2003-08-01",
           "entity": {
             "id": "trial-respect",
             "type": "trial",
             "name": "RESPECT",
             "phase": "RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2003-08-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT00465270"
+            },
             "conditions": [
               "cond-pfo"
             ],
@@ -2918,12 +3211,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2008-12-10",
           "entity": {
             "id": "trial-reduce",
             "type": "trial",
             "name": "Gore REDUCE",
             "phase": "RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2008-12-10",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT00738894"
+            },
             "conditions": [
               "cond-pfo"
             ],
@@ -2953,12 +3254,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2007-12-01",
           "entity": {
             "id": "trial-close",
             "type": "trial",
             "name": "CLOSE",
             "phase": "RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2007-12-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT00562289"
+            },
             "conditions": [
               "cond-pfo"
             ],
@@ -2989,6 +3298,7 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2018-05-29",
           "entity": {
             "id": "trial-explorer-hcm",
             "type": "trial",
@@ -2996,6 +3306,13 @@
             "nctId": "NCT03470545",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2018-05-29",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03470545"
+            },
             "conditions": [
               "cond-hcm"
             ],
@@ -3025,12 +3342,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2020-07-06",
           "entity": {
             "id": "trial-valor-hcm",
             "type": "trial",
             "name": "VALOR-HCM",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2020-07-06",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT04349072"
+            },
             "conditions": [
               "cond-hcm"
             ],
@@ -3060,12 +3385,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2022-02-01",
           "entity": {
             "id": "trial-sequoia-hcm",
             "type": "trial",
             "name": "SEQUOIA-HCM",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2022-02-01",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT05186818"
+            },
             "conditions": [
               "cond-hcm"
             ],
@@ -3095,12 +3428,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2023-06-20",
           "entity": {
             "id": "trial-maple-hcm",
             "type": "trial",
             "name": "MAPLE-HCM",
             "phase": "Phase 3 RCT (monotherapy)",
             "status": "active",
+            "timeline": {
+              "date": "2023-06-20",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT05767346"
+            },
             "conditions": [
               "cond-hcm"
             ],
@@ -3128,6 +3469,7 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2013-12-09",
           "entity": {
             "id": "trial-attr-act",
             "type": "trial",
@@ -3135,6 +3477,13 @@
             "nctId": "NCT01994889",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2013-12-09",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT01994889"
+            },
             "conditions": [
               "cond-attr-cm"
             ],
@@ -3164,12 +3513,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2019-03-19",
           "entity": {
             "id": "trial-attribute-cm",
             "type": "trial",
             "name": "ATTRibute-CM",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2019-03-19",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03860935"
+            },
             "conditions": [
               "cond-attr-cm"
             ],
@@ -3199,12 +3556,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2019-11-26",
           "entity": {
             "id": "trial-helios-b",
             "type": "trial",
             "name": "HELIOS-B",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2019-11-26",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT04153149"
+            },
             "conditions": [
               "cond-attr-cm"
             ],
@@ -3234,12 +3599,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2019-09-04",
           "entity": {
             "id": "trial-apollo-b",
             "type": "trial",
             "name": "APOLLO-B",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2019-09-04",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03997383"
+            },
             "conditions": [
               "cond-attr-cm"
             ],
@@ -3269,6 +3642,7 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2009-12-01",
           "entity": {
             "id": "trial-paradigm-hf",
             "type": "trial",
@@ -3276,6 +3650,13 @@
             "nctId": "NCT01035255",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2009-12-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT01035255"
+            },
             "conditions": [
               "cond-hfref"
             ],
@@ -3305,6 +3686,7 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2017-02-08",
           "entity": {
             "id": "trial-dapa-hf",
             "type": "trial",
@@ -3312,6 +3694,13 @@
             "nctId": "NCT03036124",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2017-02-08",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03036124"
+            },
             "conditions": [
               "cond-hfref"
             ],
@@ -3341,12 +3730,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2018-08-27",
           "entity": {
             "id": "trial-deliver",
             "type": "trial",
             "name": "DELIVER",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2018-08-27",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03619213"
+            },
             "conditions": [
               "cond-hfpef"
             ],
@@ -3376,12 +3773,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2017-03-02",
           "entity": {
             "id": "trial-emperor-preserved",
             "type": "trial",
             "name": "EMPEROR-Preserved",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2017-03-02",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03057951"
+            },
             "conditions": [
               "cond-hfpef"
             ],
@@ -3411,12 +3816,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2017-03-06",
           "entity": {
             "id": "trial-emperor-reduced",
             "type": "trial",
             "name": "EMPEROR-Reduced",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2017-03-06",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03057977"
+            },
             "conditions": [
               "cond-hfref"
             ],
@@ -3446,12 +3859,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2016-09-20",
           "entity": {
             "id": "trial-victoria",
             "type": "trial",
             "name": "VICTORIA",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2016-09-20",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT02861534"
+            },
             "conditions": [
               "cond-hfref"
             ],
@@ -3481,12 +3902,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2020-09-14",
           "entity": {
             "id": "trial-finearts-hf",
             "type": "trial",
             "name": "FINEARTS-HF",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2020-09-14",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT04435626"
+            },
             "conditions": [
               "cond-hfpef"
             ],
@@ -3516,12 +3945,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2017-01-06",
           "entity": {
             "id": "trial-galactic-hf",
             "type": "trial",
             "name": "GALACTIC-HF",
             "phase": "Phase 3 RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2017-01-06",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT02929329"
+            },
             "conditions": [
               "cond-hfref"
             ],
@@ -3551,12 +3988,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2015-12-01",
           "entity": {
             "id": "trial-reduce-lap-hf-i",
             "type": "trial",
             "name": "REDUCE LAP-HF I",
             "phase": "RCT (mechanistic, sham-controlled)",
             "status": "completed",
+            "timeline": {
+              "date": "2015-12-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT02600234"
+            },
             "conditions": [
               "cond-hfpef"
             ],
@@ -3586,12 +4031,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2017-06-01",
           "entity": {
             "id": "trial-reduce-lap-hf-ii",
             "type": "trial",
             "name": "REDUCE LAP-HF II",
             "phase": "Pivotal RCT (sham-controlled)",
             "status": "completed",
+            "timeline": {
+              "date": "2017-06-01",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03088033"
+            },
             "conditions": [
               "cond-hfpef"
             ],
@@ -3621,12 +4074,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 0,
+          "timelineDate": "2018-09-19",
           "entity": {
             "id": "trial-relieve-hf",
             "type": "trial",
             "name": "RELIEVE-HF",
             "phase": "Pivotal RCT (sham-controlled)",
             "status": "completed",
+            "timeline": {
+              "date": "2018-09-19",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03499236"
+            },
             "conditions": [
               "cond-hfref",
               "cond-hfpef"
@@ -3657,12 +4118,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 0,
+          "timelineDate": "2007-09-01",
           "entity": {
             "id": "trial-champion",
             "type": "trial",
             "name": "CHAMPION",
             "phase": "RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2007-09-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT00531661"
+            },
             "conditions": [
               "cond-hfref",
               "cond-hfpef"
@@ -3693,12 +4162,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 0,
+          "timelineDate": "2018-03-15",
           "entity": {
             "id": "trial-guide-hf",
             "type": "trial",
             "name": "GUIDE-HF",
             "phase": "RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2018-03-15",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03387813"
+            },
             "conditions": [
               "cond-hfref",
               "cond-hfpef"
@@ -3729,12 +4206,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 0,
+          "timelineDate": "2020-01-10",
           "entity": {
             "id": "trial-proactive-hf",
             "type": "trial",
             "name": "PROACTIVE-HF",
             "phase": "Single-arm pivotal",
             "status": "completed",
+            "timeline": {
+              "date": "2020-01-10",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT04089059"
+            },
             "conditions": [
               "cond-hfref",
               "cond-hfpef"
@@ -3765,12 +4250,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2010-09-01",
           "entity": {
             "id": "trial-cosira",
             "type": "trial",
             "name": "COSIRA",
             "phase": "RCT (sham-controlled)",
             "status": "completed",
+            "timeline": {
+              "date": "2010-09-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT01205893"
+            },
             "conditions": [
               "cond-cmd"
             ],
@@ -3800,12 +4293,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2022-01-04",
           "entity": {
             "id": "trial-cosira-ii",
             "type": "trial",
             "name": "COSIRA-II",
             "phase": "Pivotal RCT (sham-controlled)",
             "status": "active",
+            "timeline": {
+              "date": "2022-01-04",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT05102019"
+            },
             "conditions": [
               "cond-cmd"
             ],
@@ -3833,12 +4334,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 3,
+          "timelineDate": "2011-03-01",
           "entity": {
             "id": "trial-partner-2",
             "type": "trial",
             "name": "PARTNER 2A",
             "phase": "Pivotal RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2011-03-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT01314313"
+            },
             "conditions": [
               "cond-as"
             ],
@@ -3870,12 +4379,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 6,
+          "timelineDate": "2016-03-01",
           "entity": {
             "id": "trial-partner-3",
             "type": "trial",
             "name": "PARTNER 3",
             "phase": "Pivotal RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2016-03-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT02675114"
+            },
             "conditions": [
               "cond-as"
             ],
@@ -3907,12 +4424,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 6,
+          "timelineDate": "2016-03-01",
           "entity": {
             "id": "trial-evolut-low-risk",
             "type": "trial",
             "name": "Evolut Low Risk",
             "phase": "Pivotal RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2016-03-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT02701283"
+            },
             "conditions": [
               "cond-as"
             ],
@@ -3944,12 +4469,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 9,
+          "timelineDate": "2017-07-12",
           "entity": {
             "id": "trial-early-tavr",
             "type": "trial",
             "name": "EARLY TAVR",
             "phase": "RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2017-07-12",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03042104"
+            },
             "conditions": [
               "cond-as"
             ],
@@ -3980,12 +4513,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 6,
+          "timelineDate": "2021-04-02",
           "entity": {
             "id": "trial-smart",
             "type": "trial",
             "name": "SMART",
             "phase": "RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2021-04-02",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT04722250"
+            },
             "conditions": [
               "cond-as"
             ],
@@ -4017,12 +4558,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 6,
+          "timelineDate": "2019-06-10",
           "entity": {
             "id": "trial-acurate-ide",
             "type": "trial",
             "name": "ACURATE IDE",
             "phase": "Pivotal RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2019-06-10",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03735667"
+            },
             "conditions": [
               "cond-as"
             ],
@@ -4053,12 +4602,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 8,
+          "timelineDate": "2020-05-22",
           "entity": {
             "id": "trial-align-ar",
             "type": "trial",
             "name": "ALIGN-AR",
             "phase": "Pivotal (single-arm)",
             "status": "completed",
+            "timeline": {
+              "date": "2020-05-22",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT04415047"
+            },
             "conditions": [
               "cond-ar"
             ],
@@ -4089,12 +4646,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 2,
+          "timelineDate": "2005-08-01",
           "entity": {
             "id": "trial-everest-2",
             "type": "trial",
             "name": "EVEREST II",
             "phase": "RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2005-08-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT00209274"
+            },
             "conditions": [
               "cond-mr"
             ],
@@ -4126,12 +4691,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 6,
+          "timelineDate": "2012-08-01",
           "entity": {
             "id": "trial-coapt",
             "type": "trial",
             "name": "COAPT",
             "phase": "Pivotal RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2012-08-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT01626079"
+            },
             "conditions": [
               "cond-mr"
             ],
@@ -4162,12 +4735,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 4,
+          "timelineDate": "2013-11-01",
           "entity": {
             "id": "trial-mitra-fr",
             "type": "trial",
             "name": "MITRA-FR",
             "phase": "RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2013-11-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT01920698"
+            },
             "conditions": [
               "cond-mr"
             ],
@@ -4198,12 +4779,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 5,
+          "timelineDate": "2018-11-30",
           "entity": {
             "id": "trial-clasp-iid",
             "type": "trial",
             "name": "CLASP IID",
             "phase": "Pivotal RCT",
             "status": "active",
+            "timeline": {
+              "date": "2018-11-30",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03706833"
+            },
             "conditions": [
               "cond-mr"
             ],
@@ -4235,12 +4824,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 7,
+          "timelineDate": "2019-08-21",
           "entity": {
             "id": "trial-triluminate",
             "type": "trial",
             "name": "TRILUMINATE Pivotal",
             "phase": "Pivotal RCT",
             "status": "completed",
+            "timeline": {
+              "date": "2019-08-21",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03904147"
+            },
             "conditions": [
               "cond-tr"
             ],
@@ -4271,12 +4868,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 8,
+          "timelineDate": "2021-04-09",
           "entity": {
             "id": "trial-triscend-2",
             "type": "trial",
             "name": "TRISCEND II",
             "phase": "Pivotal RCT",
             "status": "active",
+            "timeline": {
+              "date": "2021-04-09",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT04482062"
+            },
             "conditions": [
               "cond-tr"
             ],
@@ -4307,12 +4912,20 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 6,
+          "timelineDate": "2018-06-15",
           "entity": {
             "id": "trial-summit",
             "type": "trial",
             "name": "SUMMIT",
             "phase": "Pivotal RCT",
             "status": "active",
+            "timeline": {
+              "date": "2018-06-15",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03433274"
+            },
             "conditions": [
               "cond-mr"
             ],
@@ -4344,12 +4957,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 4,
+          "timelineDate": "2017-10-23",
           "entity": {
             "id": "trial-apollo-tmvr",
             "type": "trial",
             "name": "APOLLO",
             "phase": "Pivotal RCT",
             "status": "active",
+            "timeline": {
+              "date": "2017-10-23",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT03242642"
+            },
             "conditions": [
               "cond-mr"
             ],
@@ -4378,12 +4999,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 4,
+          "timelineDate": "2020-11-12",
           "entity": {
             "id": "trial-encircle",
             "type": "trial",
             "name": "ENCIRCLE",
             "phase": "Pivotal RCT",
             "status": "active",
+            "timeline": {
+              "date": "2020-11-12",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT04153292"
+            },
             "conditions": [
               "cond-mr"
             ],
@@ -4412,12 +5041,20 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 3,
+          "timelineDate": "2017-01-01",
           "entity": {
             "id": "trial-harmony",
             "type": "trial",
             "name": "Harmony TPV Pivotal",
             "phase": "Pivotal (single-arm)",
             "status": "completed",
+            "timeline": {
+              "date": "2017-01-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT02979587"
+            },
             "conditions": [
               "cond-pv"
             ],

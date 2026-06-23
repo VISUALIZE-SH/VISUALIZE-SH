@@ -90,6 +90,50 @@ Keep scores **relative to each other** so the graph reads sensibly.
 
 ---
 
+## The `timeline` block (optional, therapies and trials only)
+
+`timeline` drives the Timeline view. It is allowed on **therapies** and
+**trials**. Do **not** add it to companies; organizations are context nodes, not
+dated events. Conditions/anatomy also do not get timeline dates.
+
+```yaml
+timeline:
+  date: "2024-04-01"       # ISO date used for placement
+  precision: month         # "day" | "month" | "year"
+  dateBasis: fda-approval  # see allowed values below
+  event: "FDA approval for tricuspid regurgitation"
+  source: "https://..."    # optional but preferred
+  notes: "..."             # optional uncertainty / assumption note
+```
+
+Allowed `dateBasis` values:
+
+| Value | Use |
+|---|---|
+| `fda-approval` | FDA approval, HDE, PMA, or other FDA marketing authorization |
+| `ce-mark` | European CE mark / CE certification |
+| `availability-announcement` | A news or company announcement of general availability when the approval date cannot be verified |
+| `trial-start` | Clinical trial start date, preferably from ClinicalTrials.gov |
+
+Therapy timeline rule: use the earliest verified FDA approval or CE mark for the
+specific product/therapy represented by the entity. If there are multiple approval
+types or indication expansions (IDE, HDE, PMA, supplemental approvals, low-risk
+expansions, etc.), use the earliest marketing authorization for the product or
+product lineage captured by the entity. If the approval date is uncertain, use the
+date when general availability in the US or Europe was announced in a credible
+news/company source, set `dateBasis: availability-announcement`, and explain that
+assumption in `notes`.
+
+Trial timeline rule: use the date when the trial started. Prefer the
+ClinicalTrials.gov `startDateStruct.date` and put the study URL in `source`. If
+only a month or year is available, store the first day of that month/year in
+`date`, set `precision` to `month` or `year`, and do not imply day-level accuracy.
+
+The Timeline view hides entities without `timeline.date`, so missing or uncertain
+dates should be omitted rather than guessed.
+
+---
+
 ## Conditions (`data/conditions.yaml`)
 
 | Field | Req | Notes |
@@ -131,6 +175,7 @@ discriminated by `therapyType`.
 | `mechanism` | | how it works |
 | `description` | | optional extra context |
 | `links` | | list of `{label, url}` info links (see "Links" below) |
+| `timeline` | | placement date for first FDA/CE approval or verified availability announcement |
 | `pulse` | | 0–10 news-attention score (see above) |
 | `curation` | ✓ | see above |
 
@@ -174,6 +219,7 @@ nuance (dates, geographies, CRLs, breakthrough designation) in `regulatoryDetail
 | `resultStatus` | ✓ | `positive` \| `mixed` \| `negative` \| `ongoing` \| `terminated` |
 | `references` | | list of URLs or `PMID:#######` (a ClinicalTrials.gov search link is a fine fallback) |
 | `links` | | list of `{label, url}` outcome-summary links, NOT ClinicalTrials.gov (see "Links" below) |
+| `timeline` | | trial start date (`dateBasis: trial-start`) |
 | `pulse` | | 0–10 news-attention score (see above) |
 | `curation` | ✓ | see above |
 
@@ -270,5 +316,9 @@ A green run prints node/edge/draft counts. The build must be green before commit
    `pulse` is the one field you may update on a `curated` entity without flipping it
    to `draft` (it is a presentation signal, not a clinical claim). Keep scores
    relative and clamp to 0–10.
-7. Run `npm run build:data` and resolve all errors before finishing.
-8. Summarize what you added/changed (ids + why) for the human curator.
+7. Add `timeline` to new therapies and trials when a date is verifiable. Use the
+   therapy and trial rules above. Never add `timeline` to companies. If the date
+   is uncertain, omit it unless you have a credible availability announcement and
+   can explain the assumption in `timeline.notes`.
+8. Run `npm run build:data` and resolve all errors before finishing.
+9. Summarize what you added/changed (ids + why) for the human curator.

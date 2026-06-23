@@ -191,6 +191,10 @@ const nodes: { data: GraphNodeData }[] = all
         isDraft: entity.curation?.status === 'draft',
         degree: degree.get(entity.id) ?? 0,
         pulse,
+        timelineDate:
+          entity.type === 'therapy' || entity.type === 'trial'
+            ? entity.timeline?.date
+            : undefined,
         entity,
       },
     }

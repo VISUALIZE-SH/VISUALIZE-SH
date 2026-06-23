@@ -37,6 +37,29 @@ export interface InfoLink {
   url: string
 }
 
+export type TimelineDateBasis =
+  | 'fda-approval'
+  | 'ce-mark'
+  | 'availability-announcement'
+  | 'trial-start'
+
+export type TimelinePrecision = 'day' | 'month' | 'year'
+
+export interface TimelineEntry {
+  /** ISO date used for timeline placement. See `precision` for display. */
+  date: string
+  /** Human-readable event shown in details and update reviews. */
+  event: string
+  /** Why this date belongs on the timeline. */
+  dateBasis: TimelineDateBasis
+  /** Whether day/month components are verified or placeholders for placement. */
+  precision: TimelinePrecision
+  /** Optional source URL for the date. */
+  source?: string
+  /** Optional notes for uncertain or availability-announcement dates. */
+  notes?: string
+}
+
 export interface Condition {
   id: string
   type: 'condition'
@@ -64,6 +87,8 @@ export interface Therapy {
   description?: string
   /** External info links (product page / third-party clinical source). */
   links?: InfoLink[]
+  /** Timeline placement date for product approval or availability. */
+  timeline?: TimelineEntry
   /** Newsworthiness 0-10 (10 = most coverage). Drives label font size. */
   pulse?: number
   curation: Curation
@@ -99,6 +124,8 @@ export interface Trial {
   references?: string[]
   /** External outcome-summary links (non-ClinicalTrials.gov). */
   links?: InfoLink[]
+  /** Timeline placement date for the trial start. */
+  timeline?: TimelineEntry
   /** Newsworthiness 0-10 (10 = most coverage). Drives label font size. */
   pulse?: number
   curation: Curation
@@ -132,6 +159,8 @@ export interface GraphNodeData {
   degree: number
   /** Newsworthiness 0-10 (0 = unscored). Drives label font size in the graph. */
   pulse: number
+  /** ISO date used by the timeline layout; absent for companies/undated entities. */
+  timelineDate?: string
   entity: Entity
 }
 

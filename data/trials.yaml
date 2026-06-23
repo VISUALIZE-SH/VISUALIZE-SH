@@ -11,6 +11,12 @@
   name: "PROTECT AF"
   phase: "Pivotal RCT"
   status: completed
+  timeline:
+    date: "2005-02-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT00129545"
   conditions: [cond-af]
   therapies: [dev-watchman-flx]
   enrollment: 707
@@ -26,6 +32,12 @@
   name: "PREVAIL"
   phase: "Pivotal RCT"
   status: completed
+  timeline:
+    date: "2010-11-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT01182441"
   conditions: [cond-af]
   therapies: [dev-watchman-flx]
   enrollment: 407
@@ -41,6 +53,12 @@
   name: "PRAGUE-17"
   phase: "RCT (LAAC vs DOAC)"
   status: completed
+  timeline:
+    date: "2015-10-13"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT02426944"
   conditions: [cond-af]
   therapies: [dev-watchman-flx, dev-amulet]
   enrollment: 402
@@ -56,6 +74,12 @@
   name: "Amulet IDE"
   phase: "RCT (head-to-head)"
   status: completed
+  timeline:
+    date: "2016-08-24"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT02879448"
   conditions: [cond-af]
   therapies: [dev-amulet, dev-watchman-flx]
   enrollment: 1878
@@ -71,6 +95,12 @@
   name: "OPTION"
   phase: "RCT (LAAC vs DOAC post-ablation)"
   status: completed
+  timeline:
+    date: "2019-05-20"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03795298"
   conditions: [cond-af]
   therapies: [dev-watchman-flx]
   enrollment: 1600
@@ -86,6 +116,12 @@
   name: "CHAMPION-AF"
   phase: "RCT (LAAC vs DOAC)"
   status: active
+  timeline:
+    date: "2020-10-15"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT04394546"
   conditions: [cond-af]
   therapies: [dev-watchman-flx]
   enrollment: 3000
@@ -101,6 +137,12 @@
   name: "RESPECT"
   phase: "RCT"
   status: completed
+  timeline:
+    date: "2003-08-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT00465270"
   conditions: [cond-pfo]
   therapies: [dev-amplatzer-pfo]
   enrollment: 980
@@ -116,6 +158,12 @@
   name: "Gore REDUCE"
   phase: "RCT"
   status: completed
+  timeline:
+    date: "2008-12-10"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT00738894"
   conditions: [cond-pfo]
   therapies: [dev-gore-cardioform-septal]
   enrollment: 664
@@ -131,6 +179,12 @@
   name: "CLOSE"
   phase: "RCT"
   status: completed
+  timeline:
+    date: "2007-12-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT00562289"
   conditions: [cond-pfo]
   therapies: [dev-amplatzer-pfo]
   enrollment: 663
@@ -148,6 +202,12 @@
   nctId: "NCT03470545"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2018-05-29"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03470545"
   conditions: [cond-hcm]
   therapies: [rx-mavacamten]
   enrollment: 251
@@ -163,6 +223,12 @@
   name: "VALOR-HCM"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2020-07-06"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT04349072"
   conditions: [cond-hcm]
   therapies: [rx-mavacamten]
   enrollment: 112
@@ -178,6 +244,12 @@
   name: "SEQUOIA-HCM"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2022-02-01"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT05186818"
   conditions: [cond-hcm]
   therapies: [rx-aficamten]
   enrollment: 282
@@ -193,6 +265,12 @@
   name: "MAPLE-HCM"
   phase: "Phase 3 RCT (monotherapy)"
   status: active
+  timeline:
+    date: "2023-06-20"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT05767346"
   conditions: [cond-hcm]
   therapies: [rx-aficamten]
   primaryEndpoint: "Aficamten vs metoprolol as monotherapy (peak VO2)"
@@ -208,6 +286,12 @@
   nctId: "NCT01994889"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2013-12-09"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT01994889"
   conditions: [cond-attr-cm]
   therapies: [rx-tafamidis]
   enrollment: 441
@@ -223,6 +307,12 @@
   name: "ATTRibute-CM"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2019-03-19"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03860935"
   conditions: [cond-attr-cm]
   therapies: [rx-acoramidis]
   enrollment: 632
@@ -238,6 +328,12 @@
   name: "HELIOS-B"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2019-11-26"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT04153149"
   conditions: [cond-attr-cm]
   therapies: [rx-vutrisiran]
   enrollment: 655
@@ -253,6 +349,12 @@
   name: "APOLLO-B"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2019-09-04"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03997383"
   conditions: [cond-attr-cm]
   therapies: [rx-patisiran]
   enrollment: 360
@@ -270,6 +372,12 @@
   nctId: "NCT01035255"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2009-12-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT01035255"
   conditions: [cond-hfref]
   therapies: [rx-sacubitril-valsartan]
   enrollment: 8442
@@ -286,6 +394,12 @@
   nctId: "NCT03036124"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2017-02-08"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03036124"
   conditions: [cond-hfref]
   therapies: [rx-dapagliflozin]
   enrollment: 4744
@@ -301,6 +415,12 @@
   name: "DELIVER"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2018-08-27"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03619213"
   conditions: [cond-hfpef]
   therapies: [rx-dapagliflozin]
   enrollment: 6263
@@ -316,6 +436,12 @@
   name: "EMPEROR-Preserved"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2017-03-02"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03057951"
   conditions: [cond-hfpef]
   therapies: [rx-empagliflozin]
   enrollment: 5988
@@ -331,6 +457,12 @@
   name: "EMPEROR-Reduced"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2017-03-06"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03057977"
   conditions: [cond-hfref]
   therapies: [rx-empagliflozin]
   enrollment: 3730
@@ -346,6 +478,12 @@
   name: "VICTORIA"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2016-09-20"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT02861534"
   conditions: [cond-hfref]
   therapies: [rx-vericiguat]
   enrollment: 5050
@@ -361,6 +499,12 @@
   name: "FINEARTS-HF"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2020-09-14"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT04435626"
   conditions: [cond-hfpef]
   therapies: [rx-finerenone]
   enrollment: 6001
@@ -376,6 +520,12 @@
   name: "GALACTIC-HF"
   phase: "Phase 3 RCT"
   status: completed
+  timeline:
+    date: "2017-01-06"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT02929329"
   conditions: [cond-hfref]
   therapies: [rx-omecamtiv-mecarbil]
   enrollment: 8256
@@ -392,6 +542,12 @@
   name: "REDUCE LAP-HF I"
   phase: "RCT (mechanistic, sham-controlled)"
   status: completed
+  timeline:
+    date: "2015-12-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT02600234"
   conditions: [cond-hfpef]
   therapies: [dev-corvia-shunt]
   enrollment: 44
@@ -407,6 +563,12 @@
   name: "REDUCE LAP-HF II"
   phase: "Pivotal RCT (sham-controlled)"
   status: completed
+  timeline:
+    date: "2017-06-01"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03088033"
   conditions: [cond-hfpef]
   therapies: [dev-corvia-shunt]
   enrollment: 626
@@ -422,6 +584,12 @@
   name: "RELIEVE-HF"
   phase: "Pivotal RCT (sham-controlled)"
   status: completed
+  timeline:
+    date: "2018-09-19"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03499236"
   conditions: [cond-hfref, cond-hfpef]
   therapies: [dev-vwave-ventura]
   enrollment: 508
@@ -438,6 +606,12 @@
   name: "CHAMPION"
   phase: "RCT"
   status: completed
+  timeline:
+    date: "2007-09-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT00531661"
   conditions: [cond-hfref, cond-hfpef]
   therapies: [dev-cardiomems]
   enrollment: 550
@@ -453,6 +627,12 @@
   name: "GUIDE-HF"
   phase: "RCT"
   status: completed
+  timeline:
+    date: "2018-03-15"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03387813"
   conditions: [cond-hfref, cond-hfpef]
   therapies: [dev-cardiomems]
   enrollment: 1000
@@ -468,6 +648,12 @@
   name: "PROACTIVE-HF"
   phase: "Single-arm pivotal"
   status: completed
+  timeline:
+    date: "2020-01-10"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT04089059"
   conditions: [cond-hfref, cond-hfpef]
   therapies: [dev-cordella]
   enrollment: 456
@@ -484,6 +670,12 @@
   name: "COSIRA"
   phase: "RCT (sham-controlled)"
   status: completed
+  timeline:
+    date: "2010-09-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT01205893"
   conditions: [cond-cmd]
   therapies: [dev-coronary-sinus-reducer]
   enrollment: 104
@@ -499,6 +691,12 @@
   name: "COSIRA-II"
   phase: "Pivotal RCT (sham-controlled)"
   status: active
+  timeline:
+    date: "2022-01-04"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT05102019"
   conditions: [cond-cmd]
   therapies: [dev-coronary-sinus-reducer]
   primaryEndpoint: "Angina and ischemia endpoints"
@@ -515,6 +713,12 @@
   name: "PARTNER 2A"
   phase: "Pivotal RCT"
   status: completed
+  timeline:
+    date: "2011-03-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT01314313"
   conditions: [cond-as]
   therapies: [dev-sapien-3, proc-savr]
   enrollment: 2032
@@ -531,6 +735,12 @@
   name: "PARTNER 3"
   phase: "Pivotal RCT"
   status: completed
+  timeline:
+    date: "2016-03-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT02675114"
   conditions: [cond-as]
   therapies: [dev-sapien-3, proc-savr]
   enrollment: 1000
@@ -547,6 +757,12 @@
   name: "Evolut Low Risk"
   phase: "Pivotal RCT"
   status: completed
+  timeline:
+    date: "2016-03-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT02701283"
   conditions: [cond-as]
   therapies: [dev-evolut, proc-savr]
   enrollment: 1414
@@ -563,6 +779,12 @@
   name: "EARLY TAVR"
   phase: "RCT"
   status: completed
+  timeline:
+    date: "2017-07-12"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03042104"
   conditions: [cond-as]
   therapies: [dev-sapien-3]
   enrollment: 901
@@ -579,6 +801,12 @@
   name: "SMART"
   phase: "RCT"
   status: completed
+  timeline:
+    date: "2021-04-02"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT04722250"
   conditions: [cond-as]
   therapies: [dev-evolut, dev-sapien-3]
   enrollment: 716
@@ -595,6 +823,12 @@
   name: "ACURATE IDE"
   phase: "Pivotal RCT"
   status: completed
+  timeline:
+    date: "2019-06-10"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03735667"
   conditions: [cond-as]
   therapies: [dev-acurate-neo2]
   year: 2025
@@ -610,6 +844,12 @@
   name: "ALIGN-AR"
   phase: "Pivotal (single-arm)"
   status: completed
+  timeline:
+    date: "2020-05-22"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT04415047"
   conditions: [cond-ar]
   therapies: [dev-trilogy]
   enrollment: 180
@@ -627,6 +867,12 @@
   name: "EVEREST II"
   phase: "RCT"
   status: completed
+  timeline:
+    date: "2005-08-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT00209274"
   conditions: [cond-mr]
   therapies: [dev-mitraclip, proc-mv-surgery]
   enrollment: 279
@@ -643,6 +889,12 @@
   name: "COAPT"
   phase: "Pivotal RCT"
   status: completed
+  timeline:
+    date: "2012-08-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT01626079"
   conditions: [cond-mr]
   therapies: [dev-mitraclip]
   enrollment: 614
@@ -659,6 +911,12 @@
   name: "MITRA-FR"
   phase: "RCT"
   status: completed
+  timeline:
+    date: "2013-11-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT01920698"
   conditions: [cond-mr]
   therapies: [dev-mitraclip]
   enrollment: 304
@@ -675,6 +933,12 @@
   name: "CLASP IID"
   phase: "Pivotal RCT"
   status: active
+  timeline:
+    date: "2018-11-30"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03706833"
   conditions: [cond-mr]
   therapies: [dev-pascal, dev-mitraclip]
   enrollment: 300
@@ -692,6 +956,12 @@
   name: "TRILUMINATE Pivotal"
   phase: "Pivotal RCT"
   status: completed
+  timeline:
+    date: "2019-08-21"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03904147"
   conditions: [cond-tr]
   therapies: [dev-triclip]
   enrollment: 350
@@ -708,6 +978,12 @@
   name: "TRISCEND II"
   phase: "Pivotal RCT"
   status: active
+  timeline:
+    date: "2021-04-09"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT04482062"
   conditions: [cond-tr]
   therapies: [dev-evoque]
   enrollment: 400
@@ -725,6 +1001,12 @@
   name: "SUMMIT"
   phase: "Pivotal RCT"
   status: active
+  timeline:
+    date: "2018-06-15"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03433274"
   conditions: [cond-mr]
   therapies: [dev-tendyne, dev-mitraclip]
   year: 2025
@@ -740,6 +1022,12 @@
   name: "APOLLO"
   phase: "Pivotal RCT"
   status: active
+  timeline:
+    date: "2017-10-23"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT03242642"
   conditions: [cond-mr]
   therapies: [dev-intrepid]
   primaryEndpoint: "Safety and effectiveness of TMVR vs control"
@@ -754,6 +1042,12 @@
   name: "ENCIRCLE"
   phase: "Pivotal RCT"
   status: active
+  timeline:
+    date: "2020-11-12"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT04153292"
   conditions: [cond-mr]
   therapies: [dev-sapien-m3]
   primaryEndpoint: "Safety and effectiveness of transseptal TMVR"
@@ -769,6 +1063,12 @@
   name: "Harmony TPV Pivotal"
   phase: "Pivotal (single-arm)"
   status: completed
+  timeline:
+    date: "2017-01-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT02979587"
   conditions: [cond-pv]
   therapies: [dev-harmony]
   year: 2021

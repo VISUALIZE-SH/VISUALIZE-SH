@@ -12,9 +12,12 @@ interface Props {
   onRelayout: () => void
   onAbout: () => void
   onToggleFilters: () => void
+  filtersCollapsed: boolean
+  accessibilityMode: boolean
+  onToggleAccessibility: () => void
 }
 
-const LAYOUTS: LayoutName[] = ['fcose', 'dagre', 'concentric']
+const LAYOUTS: LayoutName[] = ['fcose', 'dagre', 'concentric', 'timeline']
 
 export default function Header({
   meta,
@@ -26,6 +29,9 @@ export default function Header({
   onRelayout,
   onAbout,
   onToggleFilters,
+  filtersCollapsed,
+  accessibilityMode,
+  onToggleAccessibility,
 }: Props) {
   return (
     <header className="header">
@@ -33,8 +39,8 @@ export default function Header({
         <button
           className="icon-btn filters-toggle"
           onClick={onToggleFilters}
-          aria-label="Toggle filters"
-          title="Filters"
+          aria-label={filtersCollapsed ? 'Show options panel' : 'Hide options panel'}
+          title={filtersCollapsed ? 'Show options panel' : 'Hide options panel'}
         >
           ☰
         </button>
@@ -42,7 +48,7 @@ export default function Header({
           <h1>
             VISUALIZE<span className="brand-accent">·SH</span>
           </h1>
-          <p className="header-sub">Structural heart atlas · valvular &amp; non-valvular</p>
+          <p className="header-sub">Structural heart atlas</p>
         </div>
       </div>
 
@@ -69,6 +75,17 @@ export default function Header({
         <button className="icon-btn" onClick={onRelayout} title="Re-run layout">
           ↻
         </button>
+        <label
+          className={`mode-toggle ${accessibilityMode ? 'active' : ''}`}
+          title="Accessibility mode"
+        >
+          <input
+            type="checkbox"
+            checked={accessibilityMode}
+            onChange={onToggleAccessibility}
+          />
+          <span>Accessibility</span>
+        </label>
         <button className="text-btn" onClick={onAbout} title="About & data sources">
           About
         </button>

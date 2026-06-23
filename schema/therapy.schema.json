@@ -50,6 +50,7 @@
       },
       "description": "External info links shown in the detail panel. For devices: the product page on the maker's site (preferred), else a reputable news/journal/third-party clinical source. Each item is {label, url}."
     },
+    "timeline": { "$ref": "#/definitions/timeline" },
     "pulse": {
       "type": "number",
       "minimum": 0,
@@ -67,6 +68,25 @@
         "status": { "enum": ["draft", "curated"] },
         "lastUpdated": { "type": "string", "format": "date" },
         "sources": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "timeline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["date", "event", "dateBasis", "precision"],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "ISO date used for timeline placement. If precision is year or month, use the first day of the placeholder period."
+        },
+        "event": { "type": "string", "minLength": 1 },
+        "dateBasis": {
+          "enum": ["fda-approval", "ce-mark", "availability-announcement", "trial-start"]
+        },
+        "precision": { "enum": ["day", "month", "year"] },
+        "source": { "type": "string", "format": "uri" },
         "notes": { "type": "string" }
       }
     }

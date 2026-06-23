@@ -6,6 +6,7 @@ import type {
   GraphNodeData,
 } from '../types/entities'
 import { GROUP_META } from '../graph/palette'
+import { formatTimelineDate, TIMELINE_BASIS_LABELS } from '../graph/timeline'
 
 interface Props {
   node: GraphNodeData
@@ -92,6 +93,31 @@ function Fact({ label, value }: { label: string; value?: ReactNode }) {
       <span className="fact-label">{label}</span>
       <span className="fact-value">{value}</span>
     </div>
+  )
+}
+
+function TimelineFact({ e }: { e: Entity }) {
+  if (e.type !== 'therapy' && e.type !== 'trial') return null
+  if (!e.timeline) return null
+  const sourceLabel = e.timeline.source
+    ? new URL(e.timeline.source).hostname.replace('www.', '')
+    : null
+  return (
+    <>
+      <Fact
+        label="Timeline"
+        value={`${formatTimelineDate(e.timeline)} · ${e.timeline.event}`}
+      />
+      <Fact label="Date basis" value={TIMELINE_BASIS_LABELS[e.timeline.dateBasis]} />
+      {e.timeline.notes && <p className="note">{e.timeline.notes}</p>}
+      {e.timeline.source && (
+        <div className="links">
+          <a href={e.timeline.source} target="_blank" rel="noopener noreferrer">
+            {sourceLabel}
+          </a>
+        </div>
+      )}
+    </>
   )
 }
 
@@ -220,6 +246,7 @@ function Facts({ e }: { e: Entity }) {
           <Fact label="Type" value={e.therapyType} />
           <Fact label="Class" value={e.subtype} />
           <Fact label="Status" value={statusBadge(e.regulatoryStatus, 'reg')} />
+          <TimelineFact e={e} />
           <Fact label="Details" value={e.regulatoryDetail} />
           {e.mechanism && (
             <p className="desc">
@@ -257,6 +284,7 @@ function Facts({ e }: { e: Entity }) {
           <Fact label="Phase" value={e.phase} />
           <Fact label="Status" value={e.status} />
           <Fact label="Result" value={statusBadge(e.resultStatus, 'result')} />
+          <TimelineFact e={e} />
           <Fact label="Year" value={e.year} />
           <Fact
             label="Enrollment"

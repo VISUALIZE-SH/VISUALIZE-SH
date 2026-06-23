@@ -7,7 +7,16 @@
 // versions, and Cytoscape accepts a plain {selector, style}[] at runtime.
 import { GROUP_META } from './palette'
 
-export function buildStylesheet(): any[] {
+interface StylesheetOptions {
+  accessibilityMode?: boolean
+}
+
+function scaled(value: number, scale: number): number {
+  return value * scale
+}
+
+export function buildStylesheet(options: StylesheetOptions = {}): any[] {
+  const fontScale = options.accessibilityMode ? 2 : 1
   const styles: any[] = [
     {
       selector: 'node',
@@ -20,24 +29,24 @@ export function buildStylesheet(): any[] {
         // hottest topics surface first on the overview). `min-zoomed-font-size`
         // hides any label whose on-screen size drops below the threshold, which
         // declutters automatically as you zoom out.
-        'font-size': 'mapData(pulse, 0, 10, 9, 26)',
+        'font-size': `mapData(pulse, 0, 10, ${scaled(9, fontScale)}, ${scaled(26, fontScale)})`,
         'font-family':
           '"Source Sans 3", "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif',
         color: '#110318',
         'text-wrap': 'wrap',
-        'text-max-width': '92px',
+        'text-max-width': `${scaled(92, fontScale)}px`,
         'text-valign': 'bottom',
         'text-halign': 'center',
-        'text-margin-y': 3,
+        'text-margin-y': scaled(3, fontScale),
         width: 'mapData(degree, 1, 12, 24, 60)',
         height: 'mapData(degree, 1, 12, 24, 60)',
         'border-width': 1,
         'border-color': 'rgba(0,0,0,0.18)',
         'text-outline-color': '#ffffff',
-        'text-outline-width': 2,
+        'text-outline-width': scaled(2, fontScale),
         // Hide labels that would render smaller than this many px (declutter on
         // zoom-out). High-pulse labels survive longer because their base is larger.
-        'min-zoomed-font-size': 6,
+        'min-zoomed-font-size': scaled(6, fontScale),
         // Draw higher-pulse nodes (and their labels) above lower ones to reduce
         // occlusion of the items that matter most.
         'z-index': 'mapData(pulse, 0, 10, 1, 100)',
@@ -55,6 +64,50 @@ export function buildStylesheet(): any[] {
         'target-arrow-shape': 'triangle',
         'arrow-scale': 0.7,
         opacity: 0.7,
+      },
+    },
+    {
+      selector: 'node[?isTimelineAxis]',
+      style: {
+        width: 2,
+        height: 26,
+        shape: 'rectangle',
+        'background-color': '#d6cee0',
+        'border-width': 0,
+        label: 'data(label)',
+        'font-size': scaled(24, fontScale),
+        'font-weight': 600,
+        color: '#777777',
+        'text-outline-color': '#ffffff',
+        'text-outline-width': scaled(3, fontScale),
+        'text-valign': 'bottom',
+        'text-halign': 'center',
+        'text-margin-y': scaled(12, fontScale),
+        'min-zoomed-font-size': 0,
+        'z-index': 0,
+        events: 'no',
+      },
+    },
+    {
+      selector: 'edge[?isTimelineAxis]',
+      style: {
+        width: 1.2,
+        'curve-style': 'straight',
+        'line-color': '#d6cee0',
+        'target-arrow-shape': 'none',
+        opacity: 0.95,
+        'z-index': 0,
+        events: 'no',
+      },
+    },
+    {
+      selector: 'node.timeline-node',
+      style: {
+        'font-size': `mapData(pulse, 0, 10, ${scaled(18, fontScale)}, ${scaled(52, fontScale)})`,
+        'text-max-width': `${scaled(184, fontScale)}px`,
+        'text-margin-y': scaled(7, fontScale),
+        'text-outline-width': scaled(3, fontScale),
+        'min-zoomed-font-size': 0,
       },
     },
     {
