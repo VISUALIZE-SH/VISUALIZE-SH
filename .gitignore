@@ -11,5 +11,9 @@ dist-ssr
 .vite
 *.log
 
+# Claude Code local settings — per-machine tool-permission allowlist, not shared
+# (the `*.local` rule above misses the `.local.json` suffix, so list it explicitly)
+.claude/settings.local.json
+
 # NOTE: public/graph.json is intentionally NOT ignored — it is generated from
 # data/*.yaml and committed so GitHub Pages can serve it without a build server.
