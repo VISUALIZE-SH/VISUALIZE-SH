@@ -68,6 +68,23 @@ function relatedGroups(
     .map(([label, items]) => ({ label, items }))
 }
 
+function PulseMeter({ value }: { value: number }) {
+  if (!value || value <= 0) return null
+  const v = Math.max(0, Math.min(10, value))
+  return (
+    <div
+      className="pulse-row"
+      title="Pulse: recent news attention, 0–10 (drives label size in the graph)"
+    >
+      <span className="fact-label">Pulse</span>
+      <span className="pulse-meter" aria-hidden="true">
+        <span className="pulse-fill" style={{ width: `${v * 10}%` }} />
+      </span>
+      <span className="pulse-num">{v}/10</span>
+    </div>
+  )
+}
+
 function Fact({ label, value }: { label: string; value?: ReactNode }) {
   if (value === undefined || value === null || value === '') return null
   return (
@@ -227,6 +244,7 @@ export default function DetailPanel({
 
       <div className="detail-body">
         <section className="detail-section">
+          <PulseMeter value={node.pulse} />
           <Facts e={e} />
         </section>
 

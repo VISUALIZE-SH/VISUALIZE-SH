@@ -506,3 +506,275 @@
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/search?term=COSIRA-II"]
   curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# ============================ VALVULAR TRIALS ============================
+
+# --- TAVR ---
+- id: trial-partner-2
+  type: trial
+  name: "PARTNER 2A"
+  phase: "Pivotal RCT"
+  status: completed
+  conditions: [cond-as]
+  therapies: [dev-sapien-3, proc-savr]
+  enrollment: 2032
+  year: 2016
+  primaryEndpoint: "Death or disabling stroke at 2 years"
+  outcomeSummary: "In intermediate-risk severe aortic stenosis, TAVR (SAPIEN XT/3) was noninferior to surgical AVR."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=PARTNER+2A+SAPIEN"]
+  pulse: 3
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-partner-3
+  type: trial
+  name: "PARTNER 3"
+  phase: "Pivotal RCT"
+  status: completed
+  conditions: [cond-as]
+  therapies: [dev-sapien-3, proc-savr]
+  enrollment: 1000
+  year: 2019
+  primaryEndpoint: "Composite of death, stroke, or rehospitalization at 1 year"
+  outcomeSummary: "In low-surgical-risk severe AS, TAVR with SAPIEN 3 was superior to surgery at 1 year (longer-term curves converge)."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=PARTNER+3+SAPIEN"]
+  pulse: 6
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-evolut-low-risk
+  type: trial
+  name: "Evolut Low Risk"
+  phase: "Pivotal RCT"
+  status: completed
+  conditions: [cond-as]
+  therapies: [dev-evolut, proc-savr]
+  enrollment: 1414
+  year: 2019
+  primaryEndpoint: "Death or disabling stroke at 24 months"
+  outcomeSummary: "In low-risk severe AS, self-expanding TAVR (Evolut) was noninferior to surgery."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=Evolut+Low+Risk+TAVR"]
+  pulse: 6
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-early-tavr
+  type: trial
+  name: "EARLY TAVR"
+  phase: "RCT"
+  status: completed
+  conditions: [cond-as]
+  therapies: [dev-sapien-3]
+  enrollment: 901
+  year: 2024
+  primaryEndpoint: "Composite of death, stroke, or unplanned cardiovascular hospitalization"
+  outcomeSummary: "In asymptomatic severe AS, early TAVR reduced events versus clinical surveillance — extending TAVR to asymptomatic disease."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=EARLY+TAVR+asymptomatic"]
+  pulse: 9
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-smart
+  type: trial
+  name: "SMART"
+  phase: "RCT"
+  status: completed
+  conditions: [cond-as]
+  therapies: [dev-evolut, dev-sapien-3]
+  enrollment: 716
+  year: 2024
+  primaryEndpoint: "Clinical composite and bioprosthetic valve dysfunction in small annuli"
+  outcomeSummary: "In small aortic annuli, self-expanding (Evolut) and balloon-expandable (SAPIEN 3) TAVR were clinically similar, but Evolut showed superior valve hemodynamics/less dysfunction."
+  resultStatus: mixed
+  references: ["https://clinicaltrials.gov/search?term=SMART+trial+small+annulus+TAVR"]
+  pulse: 6
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-acurate-ide
+  type: trial
+  name: "ACURATE IDE"
+  phase: "Pivotal RCT"
+  status: completed
+  conditions: [cond-as]
+  therapies: [dev-acurate-neo2]
+  year: 2025
+  primaryEndpoint: "Composite of death, stroke, or rehospitalization at 1 year"
+  outcomeSummary: "ACURATE neo2 failed to meet noninferiority versus contemporary TAVR valves; results contributed to Boston Scientific discontinuing the platform."
+  resultStatus: negative
+  references: ["https://clinicaltrials.gov/search?term=ACURATE+IDE"]
+  pulse: 6
+  curation: { status: curated, lastUpdated: 2026-06-22, notes: "Confirm publication/readout year and exact endpoint result." }
+
+- id: trial-align-ar
+  type: trial
+  name: "ALIGN-AR"
+  phase: "Pivotal (single-arm)"
+  status: completed
+  conditions: [cond-ar]
+  therapies: [dev-trilogy]
+  enrollment: 180
+  year: 2024
+  primaryEndpoint: "Safety (mortality) and effectiveness vs performance goals"
+  outcomeSummary: "JenaValve Trilogy met its endpoints in symptomatic severe aortic regurgitation, supporting the first dedicated transcatheter therapy for AR."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=ALIGN-AR+JenaValve"]
+  pulse: 8
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- Mitral TEER ---
+- id: trial-everest-2
+  type: trial
+  name: "EVEREST II"
+  phase: "RCT"
+  status: completed
+  conditions: [cond-mr]
+  therapies: [dev-mitraclip, proc-mv-surgery]
+  enrollment: 279
+  year: 2011
+  primaryEndpoint: "Freedom from death, MV surgery, and ≥3+ MR at 12 months"
+  outcomeSummary: "MitraClip was less effective than surgery at reducing MR but safer, establishing TEER for selected patients."
+  resultStatus: mixed
+  references: ["https://clinicaltrials.gov/search?term=EVEREST+II+MitraClip"]
+  pulse: 2
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-coapt
+  type: trial
+  name: "COAPT"
+  phase: "Pivotal RCT"
+  status: completed
+  conditions: [cond-mr]
+  therapies: [dev-mitraclip]
+  enrollment: 614
+  year: 2018
+  primaryEndpoint: "Heart-failure hospitalizations at 24 months"
+  outcomeSummary: "In secondary/functional MR with persistent HF symptoms, MitraClip reduced HF hospitalizations and mortality on top of GDMT."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=COAPT+MitraClip"]
+  pulse: 6
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-mitra-fr
+  type: trial
+  name: "MITRA-FR"
+  phase: "RCT"
+  status: completed
+  conditions: [cond-mr]
+  therapies: [dev-mitraclip]
+  enrollment: 304
+  year: 2018
+  primaryEndpoint: "Death or unplanned HF hospitalization at 12 months"
+  outcomeSummary: "In secondary MR, TEER showed no benefit over medical therapy — the COAPT/MITRA-FR contrast framed the proportionate vs disproportionate MR concept."
+  resultStatus: negative
+  references: ["https://clinicaltrials.gov/search?term=MITRA-FR"]
+  pulse: 4
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-clasp-iid
+  type: trial
+  name: "CLASP IID"
+  phase: "Pivotal RCT"
+  status: active
+  conditions: [cond-mr]
+  therapies: [dev-pascal, dev-mitraclip]
+  enrollment: 300
+  year: 2023
+  primaryEndpoint: "Safety and MR reduction; noninferiority vs MitraClip"
+  outcomeSummary: "In degenerative MR, PASCAL was noninferior to MitraClip, supporting FDA approval."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=CLASP+IID+PASCAL"]
+  pulse: 5
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- Tricuspid ---
+- id: trial-triluminate
+  type: trial
+  name: "TRILUMINATE Pivotal"
+  phase: "Pivotal RCT"
+  status: completed
+  conditions: [cond-tr]
+  therapies: [dev-triclip]
+  enrollment: 350
+  year: 2023
+  primaryEndpoint: "Hierarchical composite (death, surgery, HF hospitalization, QoL)"
+  outcomeSummary: "TriClip reduced tricuspid regurgitation and improved quality of life, but without a significant reduction in death or HF hospitalization at 1 year."
+  resultStatus: mixed
+  references: ["https://clinicaltrials.gov/search?term=TRILUMINATE+TriClip"]
+  pulse: 7
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-triscend-2
+  type: trial
+  name: "TRISCEND II"
+  phase: "Pivotal RCT"
+  status: active
+  conditions: [cond-tr]
+  therapies: [dev-evoque]
+  enrollment: 400
+  year: 2024
+  primaryEndpoint: "Hierarchical composite incl. symptoms/QoL and clinical events"
+  outcomeSummary: "EVOQUE transcatheter tricuspid replacement improved symptoms, function, and quality of life versus optimized medical therapy."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=TRISCEND+II+EVOQUE"]
+  pulse: 8
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- TMVR ---
+- id: trial-summit
+  type: trial
+  name: "SUMMIT"
+  phase: "Pivotal RCT"
+  status: active
+  conditions: [cond-mr]
+  therapies: [dev-tendyne, dev-mitraclip]
+  year: 2025
+  primaryEndpoint: "Composite of mortality, HF hospitalization, and QoL"
+  outcomeSummary: "US pivotal trial of Tendyne TMVR (incl. randomization vs TEER in suitable anatomy); informs the role of mitral replacement vs repair."
+  resultStatus: mixed
+  references: ["https://clinicaltrials.gov/search?term=SUMMIT+Tendyne"]
+  pulse: 6
+  curation: { status: curated, lastUpdated: 2026-06-22, notes: "Confirm readout details/year as data mature." }
+
+- id: trial-apollo-tmvr
+  type: trial
+  name: "APOLLO"
+  phase: "Pivotal RCT"
+  status: active
+  conditions: [cond-mr]
+  therapies: [dev-intrepid]
+  primaryEndpoint: "Safety and effectiveness of TMVR vs control"
+  outcomeSummary: "US pivotal trial of the Medtronic Intrepid TMVR system; ongoing."
+  resultStatus: ongoing
+  references: ["https://clinicaltrials.gov/search?term=APOLLO+Intrepid+transcatheter+mitral"]
+  pulse: 4
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-encircle
+  type: trial
+  name: "ENCIRCLE"
+  phase: "Pivotal RCT"
+  status: active
+  conditions: [cond-mr]
+  therapies: [dev-sapien-m3]
+  primaryEndpoint: "Safety and effectiveness of transseptal TMVR"
+  outcomeSummary: "US pivotal trial of the Edwards SAPIEN M3 transseptal TMVR system; ongoing."
+  resultStatus: ongoing
+  references: ["https://clinicaltrials.gov/search?term=ENCIRCLE+SAPIEN+M3"]
+  pulse: 4
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- TPVR ---
+- id: trial-harmony
+  type: trial
+  name: "Harmony TPV Pivotal"
+  phase: "Pivotal (single-arm)"
+  status: completed
+  conditions: [cond-pv]
+  therapies: [dev-harmony]
+  year: 2021
+  primaryEndpoint: "Acceptable hemodynamic function and freedom from PV dysfunction"
+  outcomeSummary: "Harmony TPV provided effective relief of pulmonary regurgitation in native/repaired RVOT, supporting FDA approval."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=Harmony+TPV+pulmonary"]
+  pulse: 3
+  curation: { status: curated, lastUpdated: 2026-06-22 }

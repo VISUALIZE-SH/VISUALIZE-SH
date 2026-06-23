@@ -14,11 +14,18 @@ export function buildStylesheet(): any[] {
       style: {
         'background-color': '#9aa0aa',
         label: 'data(label)',
-        'font-size': 7,
-        'font-family': 'Inter, system-ui, -apple-system, sans-serif',
-        color: '#16161a',
+        // Adaptive label: base font scales with "pulse" (newsworthiness), and
+        // labels render in model space so they grow/shrink with zoom. Higher-pulse
+        // nodes get larger labels, so they stay legible when zoomed out (and the
+        // hottest topics surface first on the overview). `min-zoomed-font-size`
+        // hides any label whose on-screen size drops below the threshold, which
+        // declutters automatically as you zoom out.
+        'font-size': 'mapData(pulse, 0, 10, 9, 26)',
+        'font-family':
+          '"Source Sans 3", "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif',
+        color: '#110318',
         'text-wrap': 'wrap',
-        'text-max-width': '88px',
+        'text-max-width': '92px',
         'text-valign': 'bottom',
         'text-halign': 'center',
         'text-margin-y': 3,
@@ -28,7 +35,12 @@ export function buildStylesheet(): any[] {
         'border-color': 'rgba(0,0,0,0.18)',
         'text-outline-color': '#ffffff',
         'text-outline-width': 2,
-        'min-zoomed-font-size': 7,
+        // Hide labels that would render smaller than this many px (declutter on
+        // zoom-out). High-pulse labels survive longer because their base is larger.
+        'min-zoomed-font-size': 6,
+        // Draw higher-pulse nodes (and their labels) above lower ones to reduce
+        // occlusion of the items that matter most.
+        'z-index': 'mapData(pulse, 0, 10, 1, 100)',
         'transition-property': 'opacity',
         'transition-duration': 180,
       },
@@ -51,7 +63,7 @@ export function buildStylesheet(): any[] {
       style: {
         'border-width': 2,
         'border-style': 'dashed',
-        'border-color': '#16161a',
+        'border-color': '#110318',
       },
     },
     {
@@ -59,8 +71,17 @@ export function buildStylesheet(): any[] {
       style: { opacity: 0.08, 'text-opacity': 0 },
     },
     {
+      // Selected node: emphasize border + label, and force the label to always
+      // render (min-zoomed-font-size: 0) and sit on top regardless of pulse.
       selector: 'node.sel',
-      style: { 'border-width': 3, 'border-color': '#16161a', 'font-size': 9 },
+      style: {
+        'border-width': 3,
+        'border-color': '#110318',
+        'font-weight': 'bold',
+        'text-outline-width': 2.5,
+        'min-zoomed-font-size': 0,
+        'z-index': 9999,
+      },
     },
     {
       selector: 'edge.hl',

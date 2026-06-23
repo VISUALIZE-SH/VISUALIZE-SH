@@ -42,7 +42,7 @@ export default function Header({
           <h1>
             VISUALIZE<span className="brand-accent">·HF</span>
           </h1>
-          <p className="header-sub">Non-valvular structural heart atlas</p>
+          <p className="header-sub">Structural heart atlas · valvular &amp; non-valvular</p>
         </div>
       </div>
 

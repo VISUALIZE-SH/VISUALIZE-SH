@@ -26,6 +26,12 @@
       "description": "Anatomic structures involved, e.g. ['left atrial appendage']."
     },
     "description": { "type": "string" },
+    "pulse": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10,
+      "description": "Newsworthiness / attention score, 0-10 (10 = most recent coverage). Maintained by the update routine; drives label font size in the graph. Omit if unscored."
+    },
     "curation": { "$ref": "#/definitions/curation" }
   },
   "definitions": {

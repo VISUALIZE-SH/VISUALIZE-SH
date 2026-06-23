@@ -9,6 +9,10 @@ export default function Legend() {
           connections
         </li>
         <li>
+          <span className="legend-swatch pulse">A<small>a</small></span> Label size
+          = pulse (recent news attention)
+        </li>
+        <li>
           <span className="legend-swatch dashed" /> Dashed = draft / uncurated
         </li>
         <li>
@@ -18,6 +22,8 @@ export default function Legend() {
       </ul>
       <p className="filter-note">
         Click a node to focus its neighborhood; click empty space to reset.
+        <strong> Drag</strong> a node to elastically pull its neighbors along. Zoom
+        in to reveal more labels — the highest-pulse topics stay legible first.
       </p>
     </section>
   )

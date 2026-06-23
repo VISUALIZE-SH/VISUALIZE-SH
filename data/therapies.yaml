@@ -16,6 +16,7 @@
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved (Watchman 2015; FLX 2020; FLX Pro 2023)."
   mechanism: "Percutaneously seals the left atrial appendage to prevent thrombus embolization in non-valvular AF."
+  pulse: 6
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-amulet
@@ -114,6 +115,7 @@
   regulatoryStatus: investigational
   regulatoryDetail: "Investigational; FDA Breakthrough Device. Responder-subgroup signal in REDUCE LAP-HF II."
   mechanism: "Implanted interatrial shunt that decompresses the left atrium to lower exertional filling pressure in HFpEF."
+  pulse: 5
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-vwave-ventura
@@ -126,6 +128,7 @@
   regulatoryStatus: investigational
   regulatoryDetail: "Investigational. RELIEVE-HF neutral overall with a divergent HFrEF-subgroup signal."
   mechanism: "Interatrial shunt to reduce left atrial pressure across the HF spectrum."
+  pulse: 5
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-edwards-apture
@@ -151,6 +154,7 @@
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved; indication expanded to NYHA II-III HF (CHAMPION, GUIDE-HF)."
   mechanism: "Wireless pulmonary-artery pressure sensor enabling pressure-guided HF management."
+  pulse: 4
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-cordella
@@ -228,6 +232,7 @@
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2022 for symptomatic obstructive HCM; REMS program."
   mechanism: "Reversibly inhibits cardiac myosin ATPase, reducing hypercontractility and LVOT obstruction."
+  pulse: 6
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: rx-aficamten
@@ -240,6 +245,7 @@
   regulatoryStatus: investigational
   regulatoryDetail: "Next-generation myosin inhibitor; FDA review pending after SEQUOIA-HCM. VERIFY current approval status."
   mechanism: "Selective cardiac myosin inhibitor reducing LVOT gradients with a wider therapeutic window."
+  pulse: 8
   curation: { status: curated, lastUpdated: 2026-06-22, notes: "Regulatory status time-sensitive; confirm at next refresh." }
 
 # --- ATTR-CM ---
@@ -253,6 +259,7 @@
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2019 for ATTR-CM (ATTR-ACT)."
   mechanism: "Stabilizes the transthyretin tetramer, slowing amyloid fibril formation."
+  pulse: 4
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: rx-acoramidis
@@ -265,6 +272,7 @@
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved 2024 for ATTR-CM (ATTRibute-CM)."
   mechanism: "Near-complete TTR tetramer stabilizer mimicking a protective TTR variant."
+  pulse: 8
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: rx-vutrisiran
@@ -277,6 +285,7 @@
   regulatoryStatus: approved
   regulatoryDetail: "Approved for hATTR polyneuropathy; ATTR-CM indication via HELIOS-B (2025). VERIFY label."
   mechanism: "Subcutaneous RNAi that lowers hepatic transthyretin production."
+  pulse: 8
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: rx-patisiran
@@ -302,6 +311,7 @@
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved across the HF spectrum (DAPA-HF, DELIVER)."
   mechanism: "SGLT2 inhibition with pleiotropic cardiorenal benefit; a pillar of GDMT."
+  pulse: 5
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: rx-empagliflozin
@@ -314,6 +324,7 @@
   regulatoryStatus: approved
   regulatoryDetail: "FDA approved across the HF spectrum (EMPEROR-Reduced/Preserved); co-marketed with Eli Lilly."
   mechanism: "SGLT2 inhibitor reducing HF hospitalization across ejection fractions."
+  pulse: 5
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: rx-sacubitril-valsartan
@@ -350,6 +361,7 @@
   regulatoryStatus: approved
   regulatoryDetail: "Approved for CKD in T2D; HFmrEF/HFpEF benefit shown in FINEARTS-HF (2024). VERIFY HF label."
   mechanism: "Nonsteroidal mineralocorticoid receptor antagonist reducing cardiorenal inflammation/fibrosis."
+  pulse: 6
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: rx-omecamtiv-mecarbil
@@ -413,3 +425,268 @@
   regulatoryDetail: "Consumer digital health app for BP/CV risk; not a structural-heart-specific therapy. VERIFY relevance."
   mechanism: "App-based blood-pressure tracking and behavioral coaching for cardiovascular risk."
   curation: { status: draft, lastUpdated: 2026-06-22, notes: "Indication mapping is loose; refine or remove during curation." }
+
+# ============================ VALVULAR THERAPIES =========================
+# Transcatheter and surgical therapies for valvular structural heart disease.
+
+# --- TAVR (transcatheter aortic valve replacement) ---
+- id: dev-sapien-3
+  type: therapy
+  therapyType: device
+  subtype: "TAVR (balloon-expandable)"
+  name: "Edwards SAPIEN 3 / SAPIEN 3 Ultra RESILIA"
+  company: co-edwards
+  treats: [cond-as]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved across surgical risk strata (high/inoperable 2015 lineage; intermediate 2016; low-risk 2019). Also used for aortic/mitral/tricuspid/pulmonary valve-in-valve."
+  mechanism: "Balloon-expandable bovine-pericardial valve on a cobalt-chromium frame, deployed within the native aortic annulus."
+  pulse: 9
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-evolut
+  type: therapy
+  therapyType: device
+  subtype: "TAVR (self-expanding)"
+  name: "Medtronic Evolut FX / FX+"
+  company: co-medtronic
+  treats: [cond-as]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved across risk strata (high 2014 CoreValve lineage; intermediate 2017; low-risk 2019); supra-annular design favored in small annuli."
+  mechanism: "Self-expanding supra-annular porcine-pericardial valve on a nitinol frame for the native aortic annulus."
+  pulse: 8
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-navitor
+  type: therapy
+  therapyType: device
+  subtype: "TAVR (self-expanding)"
+  name: "Abbott Navitor"
+  company: co-abbott
+  treats: [cond-as]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved 2023 (CE mark 2021); intra-annular sealing cuff (NaviSeal) to reduce paravalvular leak."
+  mechanism: "Self-expanding bovine-pericardial valve with an active sealing cuff for the native aortic annulus."
+  pulse: 5
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-acurate-neo2
+  type: therapy
+  therapyType: device
+  subtype: "TAVR (self-expanding)"
+  name: "Boston Scientific ACURATE neo2"
+  company: co-boston-scientific
+  treats: [cond-as]
+  regulatoryStatus: discontinued
+  regulatoryDetail: "CE-marked self-expanding TAVR; Boston Scientific wound down the ACURATE platform in 2025 after ACURATE IDE failed noninferiority vs SAPIEN/Evolut. Not FDA approved."
+  mechanism: "Self-expanding porcine-pericardial valve with a top-down deployment and stabilization arches."
+  pulse: 6
+  curation: { status: curated, lastUpdated: 2026-06-22, notes: "Verify final commercial wind-down timeline/geographies." }
+
+- id: dev-trilogy
+  type: therapy
+  therapyType: device
+  subtype: "TAVR for aortic regurgitation"
+  name: "JenaValve Trilogy"
+  company: co-jenavalve
+  treats: [cond-ar, cond-as]
+  regulatoryStatus: approved
+  regulatoryDetail: "First transcatheter heart valve approved for symptomatic severe aortic regurgitation (FDA 2025; CE mark for AR and AS). VERIFY exact approval dates."
+  mechanism: "Self-expanding valve with anatomically-aligned locators that clip the native leaflets, enabling fixation without annular calcium (key for pure AR)."
+  pulse: 8
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- TMVR (transcatheter mitral valve replacement) ---
+- id: dev-tendyne
+  type: therapy
+  therapyType: device
+  subtype: "TMVR (transcatheter mitral valve replacement)"
+  name: "Abbott Tendyne"
+  company: co-abbott
+  treats: [cond-mr]
+  regulatoryStatus: approved
+  regulatoryDetail: "CE mark 2020 for mitral regurgitation; US investigational (SUMMIT pivotal trial). Transapical delivery with an apical tether."
+  mechanism: "Self-expanding porcine-pericardial mitral valve anchored by an apical pad via a tether; fully repositionable/retrievable."
+  pulse: 5
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-sapien-m3
+  type: therapy
+  therapyType: device
+  subtype: "TMVR (transcatheter mitral valve replacement)"
+  name: "Edwards SAPIEN M3"
+  company: co-edwards
+  treats: [cond-mr]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Investigational transseptal TMVR (ENCIRCLE pivotal trial); uses a dock to capture a SAPIEN valve in the mitral position."
+  mechanism: "Nitinol dock encircles the mitral leaflets/chordae, then a balloon-expandable SAPIEN valve is implanted within the dock."
+  pulse: 4
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-intrepid
+  type: therapy
+  therapyType: device
+  subtype: "TMVR (transcatheter mitral valve replacement)"
+  name: "Medtronic Intrepid"
+  company: co-medtronic
+  treats: [cond-mr]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Investigational TMVR (APOLLO pivotal trial); transseptal delivery system in development."
+  mechanism: "Self-expanding dual-stent bovine-pericardial mitral valve with a conformable outer fixation ring."
+  pulse: 4
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- TEER (transcatheter edge-to-edge repair) ---
+- id: dev-mitraclip
+  type: therapy
+  therapyType: device
+  subtype: "Mitral TEER"
+  name: "Abbott MitraClip"
+  company: co-abbott
+  treats: [cond-mr]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved for primary/degenerative MR (2013) and for secondary/functional MR in heart failure (2019, on COAPT); now in G4 generation."
+  mechanism: "Percutaneous transseptal clip that grasps the mitral leaflets to create a double-orifice valve and reduce regurgitation."
+  pulse: 7
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-pascal
+  type: therapy
+  therapyType: device
+  subtype: "Mitral TEER"
+  name: "Edwards PASCAL / PASCAL Precision"
+  company: co-edwards
+  treats: [cond-mr]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved for degenerative MR 2022 (CLASP IID); central spacer plus independently-graspable paddles."
+  mechanism: "Transseptal edge-to-edge repair device with a central spacer that fills the regurgitant orifice and broad paddles for leaflet capture."
+  pulse: 6
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-triclip
+  type: therapy
+  therapyType: device
+  subtype: "Tricuspid TEER"
+  name: "Abbott TriClip"
+  company: co-abbott
+  treats: [cond-tr]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved April 2024 for tricuspid regurgitation (on TRILUMINATE Pivotal) — the first transcatheter tricuspid repair device in the US."
+  mechanism: "Transcatheter edge-to-edge clip adapted to tricuspid anatomy to approximate leaflets and reduce TR."
+  pulse: 8
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- TTVR (transcatheter tricuspid valve replacement) ---
+- id: dev-evoque
+  type: therapy
+  therapyType: device
+  subtype: "TTVR (transcatheter tricuspid valve replacement)"
+  name: "Edwards EVOQUE"
+  company: co-edwards
+  treats: [cond-tr]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved February 2024 (on TRISCEND II) — the first transcatheter tricuspid valve replacement system."
+  mechanism: "Self-expanding bovine-pericardial valve with intra-annular sealing and anchoring tabs that engage native tricuspid leaflets."
+  pulse: 8
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- Transcatheter annuloplasty ---
+- id: dev-cardioband
+  type: therapy
+  therapyType: device
+  subtype: "Transcatheter annuloplasty"
+  name: "Edwards Cardioband"
+  company: co-edwards
+  treats: [cond-mr, cond-tr]
+  regulatoryStatus: approved
+  regulatoryDetail: "CE mark for mitral and tricuspid annular reduction; US investigational. Implanted on the beating heart under imaging guidance."
+  mechanism: "Adjustable transcatheter annuloplasty band anchored along the valve annulus and cinched to reduce annular dimension and regurgitation."
+  pulse: 4
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- TPVR (transcatheter pulmonary valve replacement) ---
+- id: dev-melody
+  type: therapy
+  therapyType: device
+  subtype: "TPVR (transcatheter pulmonary valve)"
+  name: "Medtronic Melody TPV"
+  company: co-medtronic
+  treats: [cond-pv]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA Humanitarian Device Exemption 2010; PMA approval 2017. For dysfunctional RVOT conduits/bioprosthetic valves."
+  mechanism: "Balloon-expandable bovine-jugular-vein valve sutured in a platinum-iridium stent for the pulmonary position."
+  pulse: 3
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-harmony
+  type: therapy
+  therapyType: device
+  subtype: "TPVR (transcatheter pulmonary valve)"
+  name: "Medtronic Harmony TPV"
+  company: co-medtronic
+  treats: [cond-pv]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved 2021 — first TPVR for severe pulmonary regurgitation in a native/surgically-repaired RVOT (e.g. repaired tetralogy of Fallot)."
+  mechanism: "Self-expanding porcine-pericardial valve in a nitinol frame designed to seat in the native RVOT/main pulmonary artery."
+  pulse: 4
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- Surgical & balloon valve therapies ---
+- id: proc-savr
+  type: therapy
+  therapyType: procedure
+  subtype: "Surgical valve replacement"
+  name: "Surgical Aortic Valve Replacement (SAVR)"
+  treats: [cond-as, cond-ar]
+  regulatoryStatus: approved
+  regulatoryDetail: "Standard surgical therapy (mechanical or bioprosthetic valve); the comparator arm in the PARTNER and Evolut TAVR trials."
+  mechanism: "Open surgical excision of the diseased aortic valve and implantation of a mechanical or bioprosthetic prosthesis."
+  pulse: 4
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: proc-mv-surgery
+  type: therapy
+  therapyType: procedure
+  subtype: "Surgical valve repair/replacement"
+  name: "Surgical Mitral Valve Repair / Replacement"
+  treats: [cond-mr, cond-ms]
+  regulatoryStatus: approved
+  regulatoryDetail: "Standard surgical therapy; repair (annuloplasty + leaflet/chordal techniques) preferred over replacement for degenerative MR."
+  mechanism: "Open or minimally-invasive surgical repair (annuloplasty ring, leaflet resection/neochordae) or prosthetic replacement of the mitral valve."
+  pulse: 3
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: proc-tv-surgery
+  type: therapy
+  therapyType: procedure
+  subtype: "Surgical valve repair/replacement"
+  name: "Surgical Tricuspid Valve Repair / Replacement"
+  treats: [cond-tr]
+  regulatoryStatus: approved
+  regulatoryDetail: "Standard surgical therapy, classically annuloplasty during left-sided heart surgery; isolated tricuspid surgery carries higher operative risk."
+  mechanism: "Surgical annuloplasty (ring) or prosthetic replacement of the tricuspid valve."
+  pulse: 2
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: proc-bav
+  type: therapy
+  therapyType: procedure
+  subtype: "Balloon valvuloplasty"
+  name: "Balloon Aortic Valvuloplasty (BAV)"
+  treats: [cond-as]
+  regulatoryStatus: approved
+  regulatoryDetail: "Palliative or bridge therapy; restenosis is common. Also used to facilitate TAVR."
+  mechanism: "Balloon dilation of the stenotic aortic valve to transiently increase valve area."
+  pulse: 2
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: proc-pmbc
+  type: therapy
+  therapyType: procedure
+  subtype: "Balloon valvuloplasty"
+  name: "Percutaneous Mitral Balloon Commissurotomy (PMBC)"
+  treats: [cond-ms]
+  regulatoryStatus: approved
+  regulatoryDetail: "First-line therapy for suitable rheumatic mitral stenosis (favorable valve morphology, no significant MR or LA thrombus)."
+  mechanism: "Transseptal balloon splitting of fused mitral commissures to enlarge the mitral orifice."
+  pulse: 2
+  curation: { status: curated, lastUpdated: 2026-06-22 }

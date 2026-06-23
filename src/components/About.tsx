@@ -23,11 +23,24 @@ export default function About({ meta, onClose }: Props) {
         </div>
         <div className="modal-body">
           <p>
-            An interactive knowledge graph of the <strong>non-valvular
-            structural heart</strong> landscape — conditions and anatomy, the
-            therapies that target them (devices, pharmaceuticals, digital, and
-            procedures), the companies behind them, and the clinical trials that
-            evaluate them.
+            An interactive knowledge graph of the <strong>structural heart</strong>{' '}
+            landscape — valvular and non-valvular — covering conditions and
+            anatomy, the therapies that target them (devices, pharmaceuticals,
+            digital, and procedures), the companies behind them, and the clinical
+            trials that evaluate them.
+          </p>
+
+          <h3>Reading the graph</h3>
+          <p>
+            Node <strong>color/shape</strong> encodes entity type and{' '}
+            <strong>size</strong> encodes how connected it is. Label{' '}
+            <strong>size</strong> reflects each item&apos;s <strong>pulse</strong>{' '}
+            — a 0–10 score of recent news attention — so the most newsworthy
+            topics stay legible when zoomed out; zoom in to reveal the rest.
+            A dashed outline marks unreviewed <em>drafts</em>.{' '}
+            <strong>Drag</strong> any node and a lightweight physics simulation
+            elastically pulls its neighbors along, with the pull falling off across
+            the network.
           </p>
 
           <h3>What&apos;s inside</h3>

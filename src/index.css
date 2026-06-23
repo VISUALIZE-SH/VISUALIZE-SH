@@ -1,26 +1,56 @@
+/* ============================================================================
+   VISUALIZE-HF — Design System
+   Derived from harshadparanjape.com. Brand palette: deep purple #3b0b55, lilac
+   #f0d5ff, lime #dcfbb6, gold #ffd358. Type: Open Sans headings, Source Sans Pro
+   body. All UI chrome reads from these tokens — change a token here, not a
+   component. See DESIGN.md for the full reference.
+   ============================================================================ */
 :root {
-  --bg: #f4f5f7;
+  /* --- Brand (the four source swatches + working shades) ----------------- */
+  --brand: #3b0b55;        /* deep purple — primary brand, active fills, header rule */
+  --brand-dark: #2a073e;   /* pressed / hover-on-brand */
+  --brand-ink: #1a0426;    /* near-black purple — strongest text, scrims */
+  --lilac: #f0d5ff;        /* soft lavender — tinted backgrounds, highlights */
+  --lime: #dcfbb6;         /* soft green — accents, positive highlights */
+  --gold: #ffd358;         /* warm yellow — accents, pulse meter, attention */
+  --link: #7d1ba8;         /* violet — links & interactive accents */
+  --link-hover: #a646d1;   /* lighter violet — link hover */
+
+  /* --- Surfaces & lines -------------------------------------------------- */
+  --bg: #f7f4f9;           /* faint lilac-tinted page background */
   --surface: #ffffff;
-  --surface-2: #fafbfc;
-  --border: #e4e6eb;
-  --border-strong: #d3d6dd;
-  --text: #16161a;
-  --text-2: #5b5d66;
-  --text-3: #8b8d98;
-  --accent: #e5484d;
-  --accent-2: #3e63dd;
+  --surface-2: #fcfbfd;
+  --border: #e6e0ec;
+  --border-strong: #d6cee0;
+
+  /* --- Text ------------------------------------------------------------- */
+  --text: #1a0426;         /* headings / strong (brand ink) */
+  --text-2: #555555;       /* body */
+  --text-3: #999999;       /* muted / captions */
+
+  /* --- Semantic aliases (kept so existing rules pick up the new palette) - */
+  --accent: var(--brand);  /* deep-purple brand (·HF mark, primaries, active) */
+  --accent-2: var(--link); /* links, focus rings, selected accents */
+
+  /* --- Status (kept functional) ---------------------------------------- */
+  --ok: #3c763d;
+  --warn: #8a6d3b;
+  --bad: #a94442;
+  --info: #31708f;
+  --muted: #777777;
+  --draft: #7d1ba8;
+
+  /* --- Type ------------------------------------------------------------- */
+  --font: 'Source Sans 3', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  --font-display: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace;
+
+  /* --- Shape & depth ---------------------------------------------------- */
   --radius: 10px;
   --radius-sm: 6px;
-  --shadow: 0 1px 2px rgba(16, 16, 26, 0.04), 0 4px 16px rgba(16, 16, 26, 0.06);
-  --shadow-lg: 0 8px 40px rgba(16, 16, 26, 0.18);
-  --font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-
-  --ok: #2a9d5c;
-  --warn: #c8830a;
-  --bad: #d3454b;
-  --info: #3e63dd;
-  --muted: #7c7f8a;
-  --draft: #8e4ec6;
+  --shadow: 0 1px 2px rgba(17, 3, 24, 0.05), 0 4px 16px rgba(17, 3, 24, 0.07);
+  --shadow-lg: 0 8px 40px rgba(17, 3, 24, 0.22);
 }
 
 * {
@@ -44,14 +74,17 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 650;
-  letter-spacing: -0.01em;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--text);
 }
 a {
-  color: var(--accent-2);
+  color: var(--link);
   text-decoration: none;
 }
 a:hover {
+  color: var(--link-hover);
   text-decoration: underline;
 }
 button {
@@ -94,6 +127,8 @@ button {
   padding: 10px 16px;
   background: var(--surface);
   border-bottom: 1px solid var(--border);
+  /* signature brand accent rule along the top of the app */
+  border-top: 3px solid var(--brand);
   z-index: 20;
 }
 .header-brand {
@@ -103,10 +138,15 @@ button {
   flex: 0 0 auto;
 }
 .header h1 {
-  font-size: 17px;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: var(--brand-ink);
 }
 .brand-accent {
-  color: var(--accent);
+  color: var(--brand);
+  font-weight: 600;
 }
 .header-sub {
   margin: 0;
@@ -144,7 +184,7 @@ button {
   color: var(--text-2);
 }
 .seg-btn.active {
-  background: var(--text);
+  background: var(--brand);
   color: #fff;
 }
 .icon-btn {
@@ -350,6 +390,16 @@ button {
   color: var(--text-2);
   font-weight: 700;
 }
+.legend-swatch.pulse {
+  color: var(--text-2);
+  font-weight: 700;
+  line-height: 1;
+}
+.legend-swatch.pulse small {
+  font-size: 0.62em;
+  font-weight: 600;
+  opacity: 0.7;
+}
 
 /* ---------- Canvas ---------- */
 .canvas-wrap {
@@ -357,7 +407,7 @@ button {
   position: relative;
   min-width: 0;
   background:
-    radial-gradient(circle, rgba(16, 16, 26, 0.05) 1px, transparent 1px) 0 0 /
+    radial-gradient(circle, rgba(59, 11, 85, 0.07) 1px, transparent 1px) 0 0 /
     22px 22px,
     var(--bg);
 }
@@ -436,6 +486,36 @@ button {
 .fact-value {
   flex: 1 1 auto;
 }
+.pulse-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 0 8px;
+  font-size: 13px;
+}
+.pulse-row .fact-label {
+  flex: 0 0 92px;
+}
+.pulse-meter {
+  position: relative;
+  flex: 1 1 auto;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--bg);
+  overflow: hidden;
+}
+.pulse-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--gold), var(--brand));
+}
+.pulse-num {
+  flex: 0 0 auto;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-3);
+  font-size: 12px;
+}
 .desc {
   font-size: 13px;
   color: var(--text-2);
@@ -505,8 +585,8 @@ button {
   text-transform: capitalize;
 }
 .badge.draft {
-  background: #f3e8fb;
-  color: var(--draft);
+  background: var(--lilac);
+  color: var(--brand);
   margin-left: 6px;
 }
 .reg-approved,
@@ -537,7 +617,7 @@ button {
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(16, 16, 26, 0.4);
+  background: rgba(17, 3, 24, 0.45);
   display: grid;
   place-items: center;
   z-index: 100;
@@ -638,7 +718,7 @@ button {
     display: block;
     position: absolute;
     inset: 0;
-    background: rgba(16, 16, 26, 0.35);
+    background: rgba(17, 3, 24, 0.4);
     z-index: 25;
   }
   .detail {

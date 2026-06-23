@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-06-23T02:42:37.307Z",
+    "generatedAt": "2026-06-23T05:23:57.145Z",
     "lastUpdated": "2026-06-22",
     "counts": {
-      "condition": 10,
-      "device": 17,
+      "condition": 16,
+      "device": 32,
       "pharmaceutical": 12,
-      "procedure": 2,
+      "procedure": 7,
       "digital": 2,
-      "company": 23,
-      "trial": 33
+      "company": 25,
+      "trial": 50
     },
     "draftCount": 5,
-    "total": 99
+    "total": 144
   },
   "elements": {
     "nodes": [
@@ -24,6 +24,7 @@
           "category": "Atrial fibrillation / stroke prevention",
           "isDraft": false,
           "degree": 9,
+          "pulse": 5,
           "entity": {
             "id": "cond-af",
             "type": "condition",
@@ -35,6 +36,7 @@
               "left atrial appendage"
             ],
             "description": "Most common sustained arrhythmia; thrombus typically forms in the left atrial appendage, the target of LAA closure for stroke prevention when anticoagulation is unsuitable.",
+            "pulse": 5,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -50,6 +52,7 @@
           "category": "Septal & congenital defect",
           "isDraft": false,
           "degree": 5,
+          "pulse": 0,
           "entity": {
             "id": "cond-pfo",
             "type": "condition",
@@ -76,6 +79,7 @@
           "category": "Septal & congenital defect",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "cond-asd",
             "type": "condition",
@@ -101,6 +105,7 @@
           "category": "Septal & congenital defect",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "cond-vsd",
             "type": "condition",
@@ -126,6 +131,7 @@
           "category": "Septal & congenital defect",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "cond-pda",
             "type": "condition",
@@ -153,6 +159,7 @@
           "category": "Cardiomyopathy",
           "isDraft": false,
           "degree": 8,
+          "pulse": 6,
           "entity": {
             "id": "cond-hcm",
             "type": "condition",
@@ -165,6 +172,7 @@
               "left ventricular outflow tract"
             ],
             "description": "Sarcomeric cardiomyopathy with LV hypertrophy; the obstructive form (HOCM) features dynamic LVOT obstruction treated by septal reduction or cardiac myosin inhibitors.",
+            "pulse": 6,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -180,6 +188,7 @@
           "category": "Infiltrative cardiomyopathy",
           "isDraft": false,
           "degree": 8,
+          "pulse": 7,
           "entity": {
             "id": "cond-attr-cm",
             "type": "condition",
@@ -191,6 +200,7 @@
               "left ventricle"
             ],
             "description": "Infiltrative cardiomyopathy from misfolded transthyretin (wild-type or hereditary) depositing in the myocardium; treated with TTR stabilizers and silencers.",
+            "pulse": 7,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -206,6 +216,7 @@
           "category": "Heart failure",
           "isDraft": false,
           "degree": 20,
+          "pulse": 5,
           "entity": {
             "id": "cond-hfref",
             "type": "condition",
@@ -216,6 +227,7 @@
               "left ventricle"
             ],
             "description": "Heart failure with LVEF <=40%; managed with guideline-directed medical therapy (four pillars) and increasingly with hemodynamic monitoring.",
+            "pulse": 5,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -231,6 +243,7 @@
           "category": "Heart failure",
           "isDraft": false,
           "degree": 22,
+          "pulse": 6,
           "entity": {
             "id": "cond-hfpef",
             "type": "condition",
@@ -242,6 +255,7 @@
               "left atrium"
             ],
             "description": "Heart failure with LVEF >=50% and elevated filling pressures; emerging therapies include SGLT2 inhibitors, finerenone, and interatrial shunts.",
+            "pulse": 6,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -257,6 +271,7 @@
           "category": "Coronary microvascular",
           "isDraft": false,
           "degree": 4,
+          "pulse": 0,
           "entity": {
             "id": "cond-cmd",
             "type": "condition",
@@ -277,12 +292,189 @@
       },
       {
         "data": {
+          "id": "cond-as",
+          "label": "Aortic Stenosis",
+          "group": "condition",
+          "category": "Aortic valve disease",
+          "isDraft": false,
+          "degree": 13,
+          "pulse": 9,
+          "entity": {
+            "id": "cond-as",
+            "type": "condition",
+            "name": "Aortic Stenosis",
+            "abbreviation": "AS",
+            "category": "Aortic valve disease",
+            "anatomy": [
+              "aortic valve",
+              "left ventricular outflow tract",
+              "aortic root"
+            ],
+            "description": "Progressive narrowing of the aortic valve (commonly calcific/degenerative); severe symptomatic disease is treated by TAVR or surgical AVR, with trials now extending TAVR to low-risk and asymptomatic patients.",
+            "pulse": 9,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-ar",
+          "label": "Aortic Regurgitation",
+          "group": "condition",
+          "category": "Aortic valve disease",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 7,
+          "entity": {
+            "id": "cond-ar",
+            "type": "condition",
+            "name": "Aortic Regurgitation",
+            "abbreviation": "AR",
+            "category": "Aortic valve disease",
+            "anatomy": [
+              "aortic valve",
+              "aortic root",
+              "left ventricle"
+            ],
+            "description": "Diastolic backflow through an incompetent aortic valve causing LV volume overload; historically surgical, now with the first dedicated transcatheter device (JenaValve Trilogy) for symptomatic severe AR.",
+            "pulse": 7,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-mr",
+          "label": "Mitral Regurgitation",
+          "group": "condition",
+          "category": "Mitral valve disease",
+          "isDraft": false,
+          "degree": 14,
+          "pulse": 8,
+          "entity": {
+            "id": "cond-mr",
+            "type": "condition",
+            "name": "Mitral Regurgitation",
+            "abbreviation": "MR",
+            "category": "Mitral valve disease",
+            "anatomy": [
+              "mitral valve",
+              "mitral annulus",
+              "left atrium",
+              "left ventricle"
+            ],
+            "description": "Systolic backflow through the mitral valve, either primary/degenerative (leaflet/chordal) or secondary/functional (annular dilation, LV remodeling); treated by transcatheter edge-to-edge repair (TEER), transcatheter replacement (TMVR), annuloplasty, or surgery.",
+            "pulse": 8,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-ms",
+          "label": "Mitral Stenosis",
+          "group": "condition",
+          "category": "Mitral valve disease",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 3,
+          "entity": {
+            "id": "cond-ms",
+            "type": "condition",
+            "name": "Mitral Stenosis",
+            "abbreviation": "MS",
+            "category": "Mitral valve disease",
+            "anatomy": [
+              "mitral valve",
+              "mitral annulus",
+              "left atrium"
+            ],
+            "description": "Obstruction to LA-to-LV inflow, most often rheumatic (commissural fusion) or degenerative with mitral annular calcification; treated by percutaneous balloon commissurotomy or surgery.",
+            "pulse": 3,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-tr",
+          "label": "Tricuspid Regurgitation",
+          "group": "condition",
+          "category": "Tricuspid valve disease",
+          "isDraft": false,
+          "degree": 6,
+          "pulse": 9,
+          "entity": {
+            "id": "cond-tr",
+            "type": "condition",
+            "name": "Tricuspid Regurgitation",
+            "abbreviation": "TR",
+            "category": "Tricuspid valve disease",
+            "anatomy": [
+              "tricuspid valve",
+              "tricuspid annulus",
+              "right atrium",
+              "right ventricle"
+            ],
+            "description": "Backflow through the tricuspid valve, frequently functional from annular dilation/right-heart remodeling; long undertreated, now addressed by transcatheter edge-to-edge repair (TriClip) and transcatheter replacement (EVOQUE).",
+            "pulse": 9,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-pv",
+          "label": "Pulmonary Valve Disease",
+          "group": "condition",
+          "category": "Pulmonary valve disease",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 4,
+          "entity": {
+            "id": "cond-pv",
+            "type": "condition",
+            "name": "Pulmonary Valve Disease",
+            "abbreviation": "PVD",
+            "category": "Pulmonary valve disease",
+            "anatomy": [
+              "pulmonary valve",
+              "right ventricular outflow tract",
+              "pulmonary artery"
+            ],
+            "description": "Pulmonary regurgitation/stenosis or RVOT conduit dysfunction, often in repaired congenital heart disease (e.g. tetralogy of Fallot); treated by transcatheter pulmonary valve replacement (Melody, Harmony) or surgery.",
+            "pulse": 4,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "dev-watchman-flx",
           "label": "Watchman FLX",
           "group": "device",
           "category": "LAA closure device",
           "isDraft": false,
           "degree": 8,
+          "pulse": 6,
           "entity": {
             "id": "dev-watchman-flx",
             "type": "therapy",
@@ -296,6 +488,7 @@
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved (Watchman 2015; FLX 2020; FLX Pro 2023).",
             "mechanism": "Percutaneously seals the left atrial appendage to prevent thrombus embolization in non-valvular AF.",
+            "pulse": 6,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -311,6 +504,7 @@
           "category": "LAA closure device",
           "isDraft": false,
           "degree": 4,
+          "pulse": 0,
           "entity": {
             "id": "dev-amulet",
             "type": "therapy",
@@ -339,6 +533,7 @@
           "category": "LAA closure device",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "dev-lambre",
             "type": "therapy",
@@ -367,6 +562,7 @@
           "category": "PFO closure device",
           "isDraft": false,
           "degree": 4,
+          "pulse": 0,
           "entity": {
             "id": "dev-amplatzer-pfo",
             "type": "therapy",
@@ -395,6 +591,7 @@
           "category": "Septal/PFO closure device",
           "isDraft": false,
           "degree": 4,
+          "pulse": 0,
           "entity": {
             "id": "dev-gore-cardioform-septal",
             "type": "therapy",
@@ -424,6 +621,7 @@
           "category": "ASD closure device",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "dev-amplatzer-asd",
             "type": "therapy",
@@ -452,6 +650,7 @@
           "category": "PDA closure device",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "dev-amplatzer-piccolo",
             "type": "therapy",
@@ -480,6 +679,7 @@
           "category": "VSD closure device",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "dev-amplatzer-vsd",
             "type": "therapy",
@@ -508,6 +708,7 @@
           "category": "interatrial shunt",
           "isDraft": false,
           "degree": 4,
+          "pulse": 5,
           "entity": {
             "id": "dev-corvia-shunt",
             "type": "therapy",
@@ -521,6 +722,7 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational; FDA Breakthrough Device. Responder-subgroup signal in REDUCE LAP-HF II.",
             "mechanism": "Implanted interatrial shunt that decompresses the left atrium to lower exertional filling pressure in HFpEF.",
+            "pulse": 5,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -536,6 +738,7 @@
           "category": "interatrial shunt",
           "isDraft": false,
           "degree": 4,
+          "pulse": 5,
           "entity": {
             "id": "dev-vwave-ventura",
             "type": "therapy",
@@ -550,6 +753,7 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational. RELIEVE-HF neutral overall with a divergent HFrEF-subgroup signal.",
             "mechanism": "Interatrial shunt to reduce left atrial pressure across the HF spectrum.",
+            "pulse": 5,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -565,6 +769,7 @@
           "category": "interatrial shunt",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "dev-edwards-apture",
             "type": "therapy",
@@ -593,6 +798,7 @@
           "category": "PA pressure sensor",
           "isDraft": false,
           "degree": 5,
+          "pulse": 4,
           "entity": {
             "id": "dev-cardiomems",
             "type": "therapy",
@@ -607,6 +813,7 @@
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved; indication expanded to NYHA II-III HF (CHAMPION, GUIDE-HF).",
             "mechanism": "Wireless pulmonary-artery pressure sensor enabling pressure-guided HF management.",
+            "pulse": 4,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -622,6 +829,7 @@
           "category": "PA pressure sensor",
           "isDraft": false,
           "degree": 4,
+          "pulse": 0,
           "entity": {
             "id": "dev-cordella",
             "type": "therapy",
@@ -651,6 +859,7 @@
           "category": "IVC sensor",
           "isDraft": false,
           "degree": 3,
+          "pulse": 0,
           "entity": {
             "id": "dev-fire1-norm",
             "type": "therapy",
@@ -680,6 +889,7 @@
           "category": "LA pressure sensor",
           "isDraft": false,
           "degree": 3,
+          "pulse": 0,
           "entity": {
             "id": "dev-vlap",
             "type": "therapy",
@@ -709,6 +919,7 @@
           "category": "coronary sinus reducer",
           "isDraft": false,
           "degree": 4,
+          "pulse": 0,
           "entity": {
             "id": "dev-coronary-sinus-reducer",
             "type": "therapy",
@@ -737,6 +948,7 @@
           "category": "coronary sinus / microvascular device",
           "isDraft": true,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "dev-aflux",
             "type": "therapy",
@@ -764,6 +976,7 @@
           "category": "cardiac myosin inhibitor",
           "isDraft": false,
           "degree": 4,
+          "pulse": 6,
           "entity": {
             "id": "rx-mavacamten",
             "type": "therapy",
@@ -777,6 +990,7 @@
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2022 for symptomatic obstructive HCM; REMS program.",
             "mechanism": "Reversibly inhibits cardiac myosin ATPase, reducing hypercontractility and LVOT obstruction.",
+            "pulse": 6,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -792,6 +1006,7 @@
           "category": "cardiac myosin inhibitor",
           "isDraft": false,
           "degree": 4,
+          "pulse": 8,
           "entity": {
             "id": "rx-aficamten",
             "type": "therapy",
@@ -805,6 +1020,7 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Next-generation myosin inhibitor; FDA review pending after SEQUOIA-HCM. VERIFY current approval status.",
             "mechanism": "Selective cardiac myosin inhibitor reducing LVOT gradients with a wider therapeutic window.",
+            "pulse": 8,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22",
@@ -821,6 +1037,7 @@
           "category": "TTR stabilizer",
           "isDraft": false,
           "degree": 3,
+          "pulse": 4,
           "entity": {
             "id": "rx-tafamidis",
             "type": "therapy",
@@ -834,6 +1051,7 @@
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2019 for ATTR-CM (ATTR-ACT).",
             "mechanism": "Stabilizes the transthyretin tetramer, slowing amyloid fibril formation.",
+            "pulse": 4,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -849,6 +1067,7 @@
           "category": "TTR stabilizer",
           "isDraft": false,
           "degree": 3,
+          "pulse": 8,
           "entity": {
             "id": "rx-acoramidis",
             "type": "therapy",
@@ -862,6 +1081,7 @@
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved 2024 for ATTR-CM (ATTRibute-CM).",
             "mechanism": "Near-complete TTR tetramer stabilizer mimicking a protective TTR variant.",
+            "pulse": 8,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -877,6 +1097,7 @@
           "category": "TTR silencer (siRNA)",
           "isDraft": false,
           "degree": 3,
+          "pulse": 8,
           "entity": {
             "id": "rx-vutrisiran",
             "type": "therapy",
@@ -890,6 +1111,7 @@
             "regulatoryStatus": "approved",
             "regulatoryDetail": "Approved for hATTR polyneuropathy; ATTR-CM indication via HELIOS-B (2025). VERIFY label.",
             "mechanism": "Subcutaneous RNAi that lowers hepatic transthyretin production.",
+            "pulse": 8,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -905,6 +1127,7 @@
           "category": "TTR silencer (siRNA)",
           "isDraft": false,
           "degree": 3,
+          "pulse": 0,
           "entity": {
             "id": "rx-patisiran",
             "type": "therapy",
@@ -933,6 +1156,7 @@
           "category": "SGLT2 inhibitor",
           "isDraft": false,
           "degree": 5,
+          "pulse": 5,
           "entity": {
             "id": "rx-dapagliflozin",
             "type": "therapy",
@@ -947,6 +1171,7 @@
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved across the HF spectrum (DAPA-HF, DELIVER).",
             "mechanism": "SGLT2 inhibition with pleiotropic cardiorenal benefit; a pillar of GDMT.",
+            "pulse": 5,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -962,6 +1187,7 @@
           "category": "SGLT2 inhibitor",
           "isDraft": false,
           "degree": 5,
+          "pulse": 5,
           "entity": {
             "id": "rx-empagliflozin",
             "type": "therapy",
@@ -976,6 +1202,7 @@
             "regulatoryStatus": "approved",
             "regulatoryDetail": "FDA approved across the HF spectrum (EMPEROR-Reduced/Preserved); co-marketed with Eli Lilly.",
             "mechanism": "SGLT2 inhibitor reducing HF hospitalization across ejection fractions.",
+            "pulse": 5,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -991,6 +1218,7 @@
           "category": "ARNI",
           "isDraft": false,
           "degree": 4,
+          "pulse": 0,
           "entity": {
             "id": "rx-sacubitril-valsartan",
             "type": "therapy",
@@ -1020,6 +1248,7 @@
           "category": "sGC stimulator",
           "isDraft": false,
           "degree": 3,
+          "pulse": 0,
           "entity": {
             "id": "rx-vericiguat",
             "type": "therapy",
@@ -1048,6 +1277,7 @@
           "category": "nonsteroidal MRA",
           "isDraft": false,
           "degree": 3,
+          "pulse": 6,
           "entity": {
             "id": "rx-finerenone",
             "type": "therapy",
@@ -1061,6 +1291,7 @@
             "regulatoryStatus": "approved",
             "regulatoryDetail": "Approved for CKD in T2D; HFmrEF/HFpEF benefit shown in FINEARTS-HF (2024). VERIFY HF label.",
             "mechanism": "Nonsteroidal mineralocorticoid receptor antagonist reducing cardiorenal inflammation/fibrosis.",
+            "pulse": 6,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -1076,6 +1307,7 @@
           "category": "cardiac myosin activator",
           "isDraft": false,
           "degree": 3,
+          "pulse": 0,
           "entity": {
             "id": "rx-omecamtiv-mecarbil",
             "type": "therapy",
@@ -1104,6 +1336,7 @@
           "category": "surgical septal reduction",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "proc-septal-myectomy",
             "type": "therapy",
@@ -1131,6 +1364,7 @@
           "category": "percutaneous septal reduction",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "proc-alcohol-septal-ablation",
             "type": "therapy",
@@ -1158,6 +1392,7 @@
           "category": "digital HF management / GDMT titration",
           "isDraft": true,
           "degree": 3,
+          "pulse": 0,
           "entity": {
             "id": "dig-story-health",
             "type": "therapy",
@@ -1188,6 +1423,7 @@
           "category": "digital cardiovascular management",
           "isDraft": true,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "dig-hello-heart",
             "type": "therapy",
@@ -1211,11 +1447,612 @@
       },
       {
         "data": {
+          "id": "dev-sapien-3",
+          "label": "Edwards SAPIEN 3 / SAPIEN 3 Ultra RESILIA",
+          "group": "device",
+          "category": "TAVR (balloon-expandable)",
+          "isDraft": false,
+          "degree": 6,
+          "pulse": 9,
+          "entity": {
+            "id": "dev-sapien-3",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "TAVR (balloon-expandable)",
+            "name": "Edwards SAPIEN 3 / SAPIEN 3 Ultra RESILIA",
+            "company": "co-edwards",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved across surgical risk strata (high/inoperable 2015 lineage; intermediate 2016; low-risk 2019). Also used for aortic/mitral/tricuspid/pulmonary valve-in-valve.",
+            "mechanism": "Balloon-expandable bovine-pericardial valve on a cobalt-chromium frame, deployed within the native aortic annulus.",
+            "pulse": 9,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-evolut",
+          "label": "Medtronic Evolut FX / FX+",
+          "group": "device",
+          "category": "TAVR (self-expanding)",
+          "isDraft": false,
+          "degree": 4,
+          "pulse": 8,
+          "entity": {
+            "id": "dev-evolut",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "TAVR (self-expanding)",
+            "name": "Medtronic Evolut FX / FX+",
+            "company": "co-medtronic",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved across risk strata (high 2014 CoreValve lineage; intermediate 2017; low-risk 2019); supra-annular design favored in small annuli.",
+            "mechanism": "Self-expanding supra-annular porcine-pericardial valve on a nitinol frame for the native aortic annulus.",
+            "pulse": 8,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-navitor",
+          "label": "Abbott Navitor",
+          "group": "device",
+          "category": "TAVR (self-expanding)",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 5,
+          "entity": {
+            "id": "dev-navitor",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "TAVR (self-expanding)",
+            "name": "Abbott Navitor",
+            "company": "co-abbott",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved 2023 (CE mark 2021); intra-annular sealing cuff (NaviSeal) to reduce paravalvular leak.",
+            "mechanism": "Self-expanding bovine-pericardial valve with an active sealing cuff for the native aortic annulus.",
+            "pulse": 5,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-acurate-neo2",
+          "label": "Boston Scientific ACURATE neo2",
+          "group": "device",
+          "category": "TAVR (self-expanding)",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 6,
+          "entity": {
+            "id": "dev-acurate-neo2",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "TAVR (self-expanding)",
+            "name": "Boston Scientific ACURATE neo2",
+            "company": "co-boston-scientific",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "discontinued",
+            "regulatoryDetail": "CE-marked self-expanding TAVR; Boston Scientific wound down the ACURATE platform in 2025 after ACURATE IDE failed noninferiority vs SAPIEN/Evolut. Not FDA approved.",
+            "mechanism": "Self-expanding porcine-pericardial valve with a top-down deployment and stabilization arches.",
+            "pulse": 6,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22",
+              "notes": "Verify final commercial wind-down timeline/geographies."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-trilogy",
+          "label": "JenaValve Trilogy",
+          "group": "device",
+          "category": "TAVR for aortic regurgitation",
+          "isDraft": false,
+          "degree": 4,
+          "pulse": 8,
+          "entity": {
+            "id": "dev-trilogy",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "TAVR for aortic regurgitation",
+            "name": "JenaValve Trilogy",
+            "company": "co-jenavalve",
+            "treats": [
+              "cond-ar",
+              "cond-as"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "First transcatheter heart valve approved for symptomatic severe aortic regurgitation (FDA 2025; CE mark for AR and AS). VERIFY exact approval dates.",
+            "mechanism": "Self-expanding valve with anatomically-aligned locators that clip the native leaflets, enabling fixation without annular calcium (key for pure AR).",
+            "pulse": 8,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tendyne",
+          "label": "Abbott Tendyne",
+          "group": "device",
+          "category": "TMVR (transcatheter mitral valve replacement)",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 5,
+          "entity": {
+            "id": "dev-tendyne",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "TMVR (transcatheter mitral valve replacement)",
+            "name": "Abbott Tendyne",
+            "company": "co-abbott",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "CE mark 2020 for mitral regurgitation; US investigational (SUMMIT pivotal trial). Transapical delivery with an apical tether.",
+            "mechanism": "Self-expanding porcine-pericardial mitral valve anchored by an apical pad via a tether; fully repositionable/retrievable.",
+            "pulse": 5,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sapien-m3",
+          "label": "Edwards SAPIEN M3",
+          "group": "device",
+          "category": "TMVR (transcatheter mitral valve replacement)",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 4,
+          "entity": {
+            "id": "dev-sapien-m3",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "TMVR (transcatheter mitral valve replacement)",
+            "name": "Edwards SAPIEN M3",
+            "company": "co-edwards",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational transseptal TMVR (ENCIRCLE pivotal trial); uses a dock to capture a SAPIEN valve in the mitral position.",
+            "mechanism": "Nitinol dock encircles the mitral leaflets/chordae, then a balloon-expandable SAPIEN valve is implanted within the dock.",
+            "pulse": 4,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-intrepid",
+          "label": "Medtronic Intrepid",
+          "group": "device",
+          "category": "TMVR (transcatheter mitral valve replacement)",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 4,
+          "entity": {
+            "id": "dev-intrepid",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "TMVR (transcatheter mitral valve replacement)",
+            "name": "Medtronic Intrepid",
+            "company": "co-medtronic",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational TMVR (APOLLO pivotal trial); transseptal delivery system in development.",
+            "mechanism": "Self-expanding dual-stent bovine-pericardial mitral valve with a conformable outer fixation ring.",
+            "pulse": 4,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitraclip",
+          "label": "Abbott MitraClip",
+          "group": "device",
+          "category": "Mitral TEER",
+          "isDraft": false,
+          "degree": 7,
+          "pulse": 7,
+          "entity": {
+            "id": "dev-mitraclip",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Mitral TEER",
+            "name": "Abbott MitraClip",
+            "company": "co-abbott",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved for primary/degenerative MR (2013) and for secondary/functional MR in heart failure (2019, on COAPT); now in G4 generation.",
+            "mechanism": "Percutaneous transseptal clip that grasps the mitral leaflets to create a double-orifice valve and reduce regurgitation.",
+            "pulse": 7,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-pascal",
+          "label": "Edwards PASCAL / PASCAL Precision",
+          "group": "device",
+          "category": "Mitral TEER",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 6,
+          "entity": {
+            "id": "dev-pascal",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Mitral TEER",
+            "name": "Edwards PASCAL / PASCAL Precision",
+            "company": "co-edwards",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved for degenerative MR 2022 (CLASP IID); central spacer plus independently-graspable paddles.",
+            "mechanism": "Transseptal edge-to-edge repair device with a central spacer that fills the regurgitant orifice and broad paddles for leaflet capture.",
+            "pulse": 6,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-triclip",
+          "label": "Abbott TriClip",
+          "group": "device",
+          "category": "Tricuspid TEER",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 8,
+          "entity": {
+            "id": "dev-triclip",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Tricuspid TEER",
+            "name": "Abbott TriClip",
+            "company": "co-abbott",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved April 2024 for tricuspid regurgitation (on TRILUMINATE Pivotal) — the first transcatheter tricuspid repair device in the US.",
+            "mechanism": "Transcatheter edge-to-edge clip adapted to tricuspid anatomy to approximate leaflets and reduce TR.",
+            "pulse": 8,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-evoque",
+          "label": "Edwards EVOQUE",
+          "group": "device",
+          "category": "TTVR (transcatheter tricuspid valve replacement)",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 8,
+          "entity": {
+            "id": "dev-evoque",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "TTVR (transcatheter tricuspid valve replacement)",
+            "name": "Edwards EVOQUE",
+            "company": "co-edwards",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved February 2024 (on TRISCEND II) — the first transcatheter tricuspid valve replacement system.",
+            "mechanism": "Self-expanding bovine-pericardial valve with intra-annular sealing and anchoring tabs that engage native tricuspid leaflets.",
+            "pulse": 8,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardioband",
+          "label": "Edwards Cardioband",
+          "group": "device",
+          "category": "Transcatheter annuloplasty",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 4,
+          "entity": {
+            "id": "dev-cardioband",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Transcatheter annuloplasty",
+            "name": "Edwards Cardioband",
+            "company": "co-edwards",
+            "treats": [
+              "cond-mr",
+              "cond-tr"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "CE mark for mitral and tricuspid annular reduction; US investigational. Implanted on the beating heart under imaging guidance.",
+            "mechanism": "Adjustable transcatheter annuloplasty band anchored along the valve annulus and cinched to reduce annular dimension and regurgitation.",
+            "pulse": 4,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-melody",
+          "label": "Medtronic Melody TPV",
+          "group": "device",
+          "category": "TPVR (transcatheter pulmonary valve)",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 3,
+          "entity": {
+            "id": "dev-melody",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "TPVR (transcatheter pulmonary valve)",
+            "name": "Medtronic Melody TPV",
+            "company": "co-medtronic",
+            "treats": [
+              "cond-pv"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA Humanitarian Device Exemption 2010; PMA approval 2017. For dysfunctional RVOT conduits/bioprosthetic valves.",
+            "mechanism": "Balloon-expandable bovine-jugular-vein valve sutured in a platinum-iridium stent for the pulmonary position.",
+            "pulse": 3,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-harmony",
+          "label": "Medtronic Harmony TPV",
+          "group": "device",
+          "category": "TPVR (transcatheter pulmonary valve)",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 4,
+          "entity": {
+            "id": "dev-harmony",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "TPVR (transcatheter pulmonary valve)",
+            "name": "Medtronic Harmony TPV",
+            "company": "co-medtronic",
+            "treats": [
+              "cond-pv"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved 2021 — first TPVR for severe pulmonary regurgitation in a native/surgically-repaired RVOT (e.g. repaired tetralogy of Fallot).",
+            "mechanism": "Self-expanding porcine-pericardial valve in a nitinol frame designed to seat in the native RVOT/main pulmonary artery.",
+            "pulse": 4,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-savr",
+          "label": "Surgical Aortic Valve Replacement (SAVR)",
+          "group": "procedure",
+          "category": "Surgical valve replacement",
+          "isDraft": false,
+          "degree": 5,
+          "pulse": 4,
+          "entity": {
+            "id": "proc-savr",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "subtype": "Surgical valve replacement",
+            "name": "Surgical Aortic Valve Replacement (SAVR)",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Standard surgical therapy (mechanical or bioprosthetic valve); the comparator arm in the PARTNER and Evolut TAVR trials.",
+            "mechanism": "Open surgical excision of the diseased aortic valve and implantation of a mechanical or bioprosthetic prosthesis.",
+            "pulse": 4,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-mv-surgery",
+          "label": "Surgical Mitral Valve Repair / Replacement",
+          "group": "procedure",
+          "category": "Surgical valve repair/replacement",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 3,
+          "entity": {
+            "id": "proc-mv-surgery",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "subtype": "Surgical valve repair/replacement",
+            "name": "Surgical Mitral Valve Repair / Replacement",
+            "treats": [
+              "cond-mr",
+              "cond-ms"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Standard surgical therapy; repair (annuloplasty + leaflet/chordal techniques) preferred over replacement for degenerative MR.",
+            "mechanism": "Open or minimally-invasive surgical repair (annuloplasty ring, leaflet resection/neochordae) or prosthetic replacement of the mitral valve.",
+            "pulse": 3,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-tv-surgery",
+          "label": "Surgical Tricuspid Valve Repair / Replacement",
+          "group": "procedure",
+          "category": "Surgical valve repair/replacement",
+          "isDraft": false,
+          "degree": 1,
+          "pulse": 2,
+          "entity": {
+            "id": "proc-tv-surgery",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "subtype": "Surgical valve repair/replacement",
+            "name": "Surgical Tricuspid Valve Repair / Replacement",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Standard surgical therapy, classically annuloplasty during left-sided heart surgery; isolated tricuspid surgery carries higher operative risk.",
+            "mechanism": "Surgical annuloplasty (ring) or prosthetic replacement of the tricuspid valve.",
+            "pulse": 2,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-bav",
+          "label": "Balloon Aortic Valvuloplasty (BAV)",
+          "group": "procedure",
+          "category": "Balloon valvuloplasty",
+          "isDraft": false,
+          "degree": 1,
+          "pulse": 2,
+          "entity": {
+            "id": "proc-bav",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "subtype": "Balloon valvuloplasty",
+            "name": "Balloon Aortic Valvuloplasty (BAV)",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Palliative or bridge therapy; restenosis is common. Also used to facilitate TAVR.",
+            "mechanism": "Balloon dilation of the stenotic aortic valve to transiently increase valve area.",
+            "pulse": 2,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-pmbc",
+          "label": "Percutaneous Mitral Balloon Commissurotomy (PMBC)",
+          "group": "procedure",
+          "category": "Balloon valvuloplasty",
+          "isDraft": false,
+          "degree": 1,
+          "pulse": 2,
+          "entity": {
+            "id": "proc-pmbc",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "subtype": "Balloon valvuloplasty",
+            "name": "Percutaneous Mitral Balloon Commissurotomy (PMBC)",
+            "treats": [
+              "cond-ms"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "First-line therapy for suitable rheumatic mitral stenosis (favorable valve morphology, no significant MR or LA thrombus).",
+            "mechanism": "Transseptal balloon splitting of fused mitral commissures to enlarge the mitral orifice.",
+            "pulse": 2,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-boston-scientific",
           "label": "Boston Scientific",
           "group": "company",
           "isDraft": false,
-          "degree": 1,
+          "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "co-boston-scientific",
             "type": "company",
@@ -1240,7 +2077,8 @@
           "label": "Abbott",
           "group": "company",
           "isDraft": false,
-          "degree": 6,
+          "degree": 10,
+          "pulse": 0,
           "entity": {
             "id": "co-abbott",
             "type": "company",
@@ -1266,6 +2104,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-wl-gore",
             "type": "company",
@@ -1287,6 +2126,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-lifetech",
             "type": "company",
@@ -1307,6 +2147,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-corvia",
             "type": "company",
@@ -1327,6 +2168,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-vwave",
             "type": "company",
@@ -1347,7 +2189,8 @@
           "label": "Edwards Lifesciences",
           "group": "company",
           "isDraft": false,
-          "degree": 1,
+          "degree": 6,
+          "pulse": 0,
           "entity": {
             "id": "co-edwards",
             "type": "company",
@@ -1370,6 +2213,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-endotronix",
             "type": "company",
@@ -1390,6 +2234,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-fire1",
             "type": "company",
@@ -1410,6 +2255,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-vectorious",
             "type": "company",
@@ -1430,6 +2276,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-shockwave",
             "type": "company",
@@ -1451,6 +2298,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-bristol-myers-squibb",
             "type": "company",
@@ -1473,6 +2321,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "co-cytokinetics",
             "type": "company",
@@ -1495,6 +2344,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-pfizer",
             "type": "company",
@@ -1517,6 +2367,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-bridgebio",
             "type": "company",
@@ -1539,6 +2390,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "co-alnylam",
             "type": "company",
@@ -1561,6 +2413,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-astrazeneca",
             "type": "company",
@@ -1583,6 +2436,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-boehringer-ingelheim",
             "type": "company",
@@ -1604,6 +2458,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-novartis",
             "type": "company",
@@ -1626,6 +2481,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-merck",
             "type": "company",
@@ -1648,6 +2504,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-bayer",
             "type": "company",
@@ -1665,11 +2522,59 @@
       },
       {
         "data": {
+          "id": "co-medtronic",
+          "label": "Medtronic",
+          "group": "company",
+          "isDraft": false,
+          "degree": 4,
+          "pulse": 7,
+          "entity": {
+            "id": "co-medtronic",
+            "type": "company",
+            "name": "Medtronic",
+            "ticker": "MDT",
+            "hq": "Dublin, Ireland / Minneapolis, MN, USA",
+            "website": "https://www.medtronic.com",
+            "description": "Structural heart portfolio incl. the Evolut self-expanding TAVR platform, Melody/Harmony transcatheter pulmonary valves, and the investigational Intrepid TMVR.",
+            "pulse": 7,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-jenavalve",
+          "label": "JenaValve Technology",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "pulse": 8,
+          "entity": {
+            "id": "co-jenavalve",
+            "type": "company",
+            "name": "JenaValve Technology",
+            "hq": "Irvine, CA, USA",
+            "website": "https://www.jenavalve.com",
+            "description": "Developer of the Trilogy transcatheter heart valve — the first device dedicated to transcatheter treatment of aortic regurgitation.",
+            "pulse": 8,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-story-health",
           "label": "Story Health",
           "group": "company",
           "isDraft": true,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-story-health",
             "type": "company",
@@ -1691,6 +2596,7 @@
           "group": "company",
           "isDraft": true,
           "degree": 1,
+          "pulse": 0,
           "entity": {
             "id": "co-hello-heart",
             "type": "company",
@@ -1712,6 +2618,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-protect-af",
             "type": "trial",
@@ -1746,6 +2653,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-prevail",
             "type": "trial",
@@ -1780,6 +2688,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 3,
+          "pulse": 0,
           "entity": {
             "id": "trial-prague-17",
             "type": "trial",
@@ -1815,6 +2724,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 3,
+          "pulse": 0,
           "entity": {
             "id": "trial-amulet-ide",
             "type": "trial",
@@ -1850,6 +2760,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-option",
             "type": "trial",
@@ -1884,6 +2795,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-champion-af",
             "type": "trial",
@@ -1918,6 +2830,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-respect",
             "type": "trial",
@@ -1952,6 +2865,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-reduce",
             "type": "trial",
@@ -1986,6 +2900,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-close",
             "type": "trial",
@@ -2021,6 +2936,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-explorer-hcm",
             "type": "trial",
@@ -2056,6 +2972,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-valor-hcm",
             "type": "trial",
@@ -2090,6 +3007,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-sequoia-hcm",
             "type": "trial",
@@ -2124,6 +3042,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-maple-hcm",
             "type": "trial",
@@ -2156,6 +3075,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-attr-act",
             "type": "trial",
@@ -2191,6 +3111,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-attribute-cm",
             "type": "trial",
@@ -2225,6 +3146,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-helios-b",
             "type": "trial",
@@ -2259,6 +3181,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-apollo-b",
             "type": "trial",
@@ -2293,6 +3216,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-paradigm-hf",
             "type": "trial",
@@ -2328,6 +3252,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-dapa-hf",
             "type": "trial",
@@ -2363,6 +3288,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-deliver",
             "type": "trial",
@@ -2397,6 +3323,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-emperor-preserved",
             "type": "trial",
@@ -2431,6 +3358,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-emperor-reduced",
             "type": "trial",
@@ -2465,6 +3393,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-victoria",
             "type": "trial",
@@ -2499,6 +3428,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-finearts-hf",
             "type": "trial",
@@ -2533,6 +3463,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-galactic-hf",
             "type": "trial",
@@ -2567,6 +3498,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-reduce-lap-hf-i",
             "type": "trial",
@@ -2601,6 +3533,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-reduce-lap-hf-ii",
             "type": "trial",
@@ -2635,6 +3568,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 3,
+          "pulse": 0,
           "entity": {
             "id": "trial-relieve-hf",
             "type": "trial",
@@ -2670,6 +3604,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 3,
+          "pulse": 0,
           "entity": {
             "id": "trial-champion",
             "type": "trial",
@@ -2705,6 +3640,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 3,
+          "pulse": 0,
           "entity": {
             "id": "trial-guide-hf",
             "type": "trial",
@@ -2740,6 +3676,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 3,
+          "pulse": 0,
           "entity": {
             "id": "trial-proactive-hf",
             "type": "trial",
@@ -2775,6 +3712,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-cosira",
             "type": "trial",
@@ -2809,6 +3747,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
+          "pulse": 0,
           "entity": {
             "id": "trial-cosira-ii",
             "type": "trial",
@@ -2827,6 +3766,620 @@
             "references": [
               "https://clinicaltrials.gov/search?term=COSIRA-II"
             ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-partner-2",
+          "label": "PARTNER 2A",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 3,
+          "entity": {
+            "id": "trial-partner-2",
+            "type": "trial",
+            "name": "PARTNER 2A",
+            "phase": "Pivotal RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-sapien-3",
+              "proc-savr"
+            ],
+            "enrollment": 2032,
+            "year": 2016,
+            "primaryEndpoint": "Death or disabling stroke at 2 years",
+            "outcomeSummary": "In intermediate-risk severe aortic stenosis, TAVR (SAPIEN XT/3) was noninferior to surgical AVR.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=PARTNER+2A+SAPIEN"
+            ],
+            "pulse": 3,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-partner-3",
+          "label": "PARTNER 3",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 6,
+          "entity": {
+            "id": "trial-partner-3",
+            "type": "trial",
+            "name": "PARTNER 3",
+            "phase": "Pivotal RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-sapien-3",
+              "proc-savr"
+            ],
+            "enrollment": 1000,
+            "year": 2019,
+            "primaryEndpoint": "Composite of death, stroke, or rehospitalization at 1 year",
+            "outcomeSummary": "In low-surgical-risk severe AS, TAVR with SAPIEN 3 was superior to surgery at 1 year (longer-term curves converge).",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=PARTNER+3+SAPIEN"
+            ],
+            "pulse": 6,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-evolut-low-risk",
+          "label": "Evolut Low Risk",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 6,
+          "entity": {
+            "id": "trial-evolut-low-risk",
+            "type": "trial",
+            "name": "Evolut Low Risk",
+            "phase": "Pivotal RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-evolut",
+              "proc-savr"
+            ],
+            "enrollment": 1414,
+            "year": 2019,
+            "primaryEndpoint": "Death or disabling stroke at 24 months",
+            "outcomeSummary": "In low-risk severe AS, self-expanding TAVR (Evolut) was noninferior to surgery.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=Evolut+Low+Risk+TAVR"
+            ],
+            "pulse": 6,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-early-tavr",
+          "label": "EARLY TAVR",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 9,
+          "entity": {
+            "id": "trial-early-tavr",
+            "type": "trial",
+            "name": "EARLY TAVR",
+            "phase": "RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-sapien-3"
+            ],
+            "enrollment": 901,
+            "year": 2024,
+            "primaryEndpoint": "Composite of death, stroke, or unplanned cardiovascular hospitalization",
+            "outcomeSummary": "In asymptomatic severe AS, early TAVR reduced events versus clinical surveillance — extending TAVR to asymptomatic disease.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=EARLY+TAVR+asymptomatic"
+            ],
+            "pulse": 9,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-smart",
+          "label": "SMART",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 6,
+          "entity": {
+            "id": "trial-smart",
+            "type": "trial",
+            "name": "SMART",
+            "phase": "RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-evolut",
+              "dev-sapien-3"
+            ],
+            "enrollment": 716,
+            "year": 2024,
+            "primaryEndpoint": "Clinical composite and bioprosthetic valve dysfunction in small annuli",
+            "outcomeSummary": "In small aortic annuli, self-expanding (Evolut) and balloon-expandable (SAPIEN 3) TAVR were clinically similar, but Evolut showed superior valve hemodynamics/less dysfunction.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://clinicaltrials.gov/search?term=SMART+trial+small+annulus+TAVR"
+            ],
+            "pulse": 6,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-acurate-ide",
+          "label": "ACURATE IDE",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 6,
+          "entity": {
+            "id": "trial-acurate-ide",
+            "type": "trial",
+            "name": "ACURATE IDE",
+            "phase": "Pivotal RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-acurate-neo2"
+            ],
+            "year": 2025,
+            "primaryEndpoint": "Composite of death, stroke, or rehospitalization at 1 year",
+            "outcomeSummary": "ACURATE neo2 failed to meet noninferiority versus contemporary TAVR valves; results contributed to Boston Scientific discontinuing the platform.",
+            "resultStatus": "negative",
+            "references": [
+              "https://clinicaltrials.gov/search?term=ACURATE+IDE"
+            ],
+            "pulse": 6,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22",
+              "notes": "Confirm publication/readout year and exact endpoint result."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-align-ar",
+          "label": "ALIGN-AR",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 8,
+          "entity": {
+            "id": "trial-align-ar",
+            "type": "trial",
+            "name": "ALIGN-AR",
+            "phase": "Pivotal (single-arm)",
+            "status": "completed",
+            "conditions": [
+              "cond-ar"
+            ],
+            "therapies": [
+              "dev-trilogy"
+            ],
+            "enrollment": 180,
+            "year": 2024,
+            "primaryEndpoint": "Safety (mortality) and effectiveness vs performance goals",
+            "outcomeSummary": "JenaValve Trilogy met its endpoints in symptomatic severe aortic regurgitation, supporting the first dedicated transcatheter therapy for AR.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=ALIGN-AR+JenaValve"
+            ],
+            "pulse": 8,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-everest-2",
+          "label": "EVEREST II",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 2,
+          "entity": {
+            "id": "trial-everest-2",
+            "type": "trial",
+            "name": "EVEREST II",
+            "phase": "RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-mitraclip",
+              "proc-mv-surgery"
+            ],
+            "enrollment": 279,
+            "year": 2011,
+            "primaryEndpoint": "Freedom from death, MV surgery, and ≥3+ MR at 12 months",
+            "outcomeSummary": "MitraClip was less effective than surgery at reducing MR but safer, establishing TEER for selected patients.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://clinicaltrials.gov/search?term=EVEREST+II+MitraClip"
+            ],
+            "pulse": 2,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-coapt",
+          "label": "COAPT",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 6,
+          "entity": {
+            "id": "trial-coapt",
+            "type": "trial",
+            "name": "COAPT",
+            "phase": "Pivotal RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-mitraclip"
+            ],
+            "enrollment": 614,
+            "year": 2018,
+            "primaryEndpoint": "Heart-failure hospitalizations at 24 months",
+            "outcomeSummary": "In secondary/functional MR with persistent HF symptoms, MitraClip reduced HF hospitalizations and mortality on top of GDMT.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=COAPT+MitraClip"
+            ],
+            "pulse": 6,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-mitra-fr",
+          "label": "MITRA-FR",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 4,
+          "entity": {
+            "id": "trial-mitra-fr",
+            "type": "trial",
+            "name": "MITRA-FR",
+            "phase": "RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-mitraclip"
+            ],
+            "enrollment": 304,
+            "year": 2018,
+            "primaryEndpoint": "Death or unplanned HF hospitalization at 12 months",
+            "outcomeSummary": "In secondary MR, TEER showed no benefit over medical therapy — the COAPT/MITRA-FR contrast framed the proportionate vs disproportionate MR concept.",
+            "resultStatus": "negative",
+            "references": [
+              "https://clinicaltrials.gov/search?term=MITRA-FR"
+            ],
+            "pulse": 4,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-clasp-iid",
+          "label": "CLASP IID",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 5,
+          "entity": {
+            "id": "trial-clasp-iid",
+            "type": "trial",
+            "name": "CLASP IID",
+            "phase": "Pivotal RCT",
+            "status": "active",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-pascal",
+              "dev-mitraclip"
+            ],
+            "enrollment": 300,
+            "year": 2023,
+            "primaryEndpoint": "Safety and MR reduction; noninferiority vs MitraClip",
+            "outcomeSummary": "In degenerative MR, PASCAL was noninferior to MitraClip, supporting FDA approval.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=CLASP+IID+PASCAL"
+            ],
+            "pulse": 5,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-triluminate",
+          "label": "TRILUMINATE Pivotal",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 7,
+          "entity": {
+            "id": "trial-triluminate",
+            "type": "trial",
+            "name": "TRILUMINATE Pivotal",
+            "phase": "Pivotal RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-triclip"
+            ],
+            "enrollment": 350,
+            "year": 2023,
+            "primaryEndpoint": "Hierarchical composite (death, surgery, HF hospitalization, QoL)",
+            "outcomeSummary": "TriClip reduced tricuspid regurgitation and improved quality of life, but without a significant reduction in death or HF hospitalization at 1 year.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://clinicaltrials.gov/search?term=TRILUMINATE+TriClip"
+            ],
+            "pulse": 7,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-triscend-2",
+          "label": "TRISCEND II",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 8,
+          "entity": {
+            "id": "trial-triscend-2",
+            "type": "trial",
+            "name": "TRISCEND II",
+            "phase": "Pivotal RCT",
+            "status": "active",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-evoque"
+            ],
+            "enrollment": 400,
+            "year": 2024,
+            "primaryEndpoint": "Hierarchical composite incl. symptoms/QoL and clinical events",
+            "outcomeSummary": "EVOQUE transcatheter tricuspid replacement improved symptoms, function, and quality of life versus optimized medical therapy.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=TRISCEND+II+EVOQUE"
+            ],
+            "pulse": 8,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-summit",
+          "label": "SUMMIT",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "pulse": 6,
+          "entity": {
+            "id": "trial-summit",
+            "type": "trial",
+            "name": "SUMMIT",
+            "phase": "Pivotal RCT",
+            "status": "active",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-tendyne",
+              "dev-mitraclip"
+            ],
+            "year": 2025,
+            "primaryEndpoint": "Composite of mortality, HF hospitalization, and QoL",
+            "outcomeSummary": "US pivotal trial of Tendyne TMVR (incl. randomization vs TEER in suitable anatomy); informs the role of mitral replacement vs repair.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://clinicaltrials.gov/search?term=SUMMIT+Tendyne"
+            ],
+            "pulse": 6,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22",
+              "notes": "Confirm readout details/year as data mature."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-apollo-tmvr",
+          "label": "APOLLO",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 4,
+          "entity": {
+            "id": "trial-apollo-tmvr",
+            "type": "trial",
+            "name": "APOLLO",
+            "phase": "Pivotal RCT",
+            "status": "active",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-intrepid"
+            ],
+            "primaryEndpoint": "Safety and effectiveness of TMVR vs control",
+            "outcomeSummary": "US pivotal trial of the Medtronic Intrepid TMVR system; ongoing.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/search?term=APOLLO+Intrepid+transcatheter+mitral"
+            ],
+            "pulse": 4,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-encircle",
+          "label": "ENCIRCLE",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 4,
+          "entity": {
+            "id": "trial-encircle",
+            "type": "trial",
+            "name": "ENCIRCLE",
+            "phase": "Pivotal RCT",
+            "status": "active",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-sapien-m3"
+            ],
+            "primaryEndpoint": "Safety and effectiveness of transseptal TMVR",
+            "outcomeSummary": "US pivotal trial of the Edwards SAPIEN M3 transseptal TMVR system; ongoing.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/search?term=ENCIRCLE+SAPIEN+M3"
+            ],
+            "pulse": 4,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-harmony",
+          "label": "Harmony TPV Pivotal",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "pulse": 3,
+          "entity": {
+            "id": "trial-harmony",
+            "type": "trial",
+            "name": "Harmony TPV Pivotal",
+            "phase": "Pivotal (single-arm)",
+            "status": "completed",
+            "conditions": [
+              "cond-pv"
+            ],
+            "therapies": [
+              "dev-harmony"
+            ],
+            "year": 2021,
+            "primaryEndpoint": "Acceptable hemodynamic function and freedom from PV dysfunction",
+            "outcomeSummary": "Harmony TPV provided effective relief of pulmonary regurgitation in native/repaired RVOT, supporting FDA approval.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=Harmony+TPV+pulmonary"
+            ],
+            "pulse": 3,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -3422,6 +4975,318 @@
       },
       {
         "data": {
+          "id": "dev-sapien-3__made_by__co-edwards",
+          "source": "dev-sapien-3",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sapien-3__treats__cond-as",
+          "source": "dev-sapien-3",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-evolut__made_by__co-medtronic",
+          "source": "dev-evolut",
+          "target": "co-medtronic",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-evolut__treats__cond-as",
+          "source": "dev-evolut",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-navitor__made_by__co-abbott",
+          "source": "dev-navitor",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-navitor__treats__cond-as",
+          "source": "dev-navitor",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-acurate-neo2__made_by__co-boston-scientific",
+          "source": "dev-acurate-neo2",
+          "target": "co-boston-scientific",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-acurate-neo2__treats__cond-as",
+          "source": "dev-acurate-neo2",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-trilogy__made_by__co-jenavalve",
+          "source": "dev-trilogy",
+          "target": "co-jenavalve",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-trilogy__treats__cond-ar",
+          "source": "dev-trilogy",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-trilogy__treats__cond-as",
+          "source": "dev-trilogy",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tendyne__made_by__co-abbott",
+          "source": "dev-tendyne",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tendyne__treats__cond-mr",
+          "source": "dev-tendyne",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sapien-m3__made_by__co-edwards",
+          "source": "dev-sapien-m3",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sapien-m3__treats__cond-mr",
+          "source": "dev-sapien-m3",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-intrepid__made_by__co-medtronic",
+          "source": "dev-intrepid",
+          "target": "co-medtronic",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-intrepid__treats__cond-mr",
+          "source": "dev-intrepid",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitraclip__made_by__co-abbott",
+          "source": "dev-mitraclip",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitraclip__treats__cond-mr",
+          "source": "dev-mitraclip",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-pascal__made_by__co-edwards",
+          "source": "dev-pascal",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-pascal__treats__cond-mr",
+          "source": "dev-pascal",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-triclip__made_by__co-abbott",
+          "source": "dev-triclip",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-triclip__treats__cond-tr",
+          "source": "dev-triclip",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-evoque__made_by__co-edwards",
+          "source": "dev-evoque",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-evoque__treats__cond-tr",
+          "source": "dev-evoque",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardioband__made_by__co-edwards",
+          "source": "dev-cardioband",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardioband__treats__cond-mr",
+          "source": "dev-cardioband",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardioband__treats__cond-tr",
+          "source": "dev-cardioband",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-melody__made_by__co-medtronic",
+          "source": "dev-melody",
+          "target": "co-medtronic",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-melody__treats__cond-pv",
+          "source": "dev-melody",
+          "target": "cond-pv",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-harmony__made_by__co-medtronic",
+          "source": "dev-harmony",
+          "target": "co-medtronic",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-harmony__treats__cond-pv",
+          "source": "dev-harmony",
+          "target": "cond-pv",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-savr__treats__cond-as",
+          "source": "proc-savr",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-savr__treats__cond-ar",
+          "source": "proc-savr",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-mv-surgery__treats__cond-mr",
+          "source": "proc-mv-surgery",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-mv-surgery__treats__cond-ms",
+          "source": "proc-mv-surgery",
+          "target": "cond-ms",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-tv-surgery__treats__cond-tr",
+          "source": "proc-tv-surgery",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-bav__treats__cond-as",
+          "source": "proc-bav",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-pmbc__treats__cond-ms",
+          "source": "proc-pmbc",
+          "target": "cond-ms",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "trial-protect-af__evaluates__dev-watchman-flx",
           "source": "trial-protect-af",
           "target": "dev-watchman-flx",
@@ -3993,6 +5858,334 @@
           "id": "trial-cosira-ii__studies__cond-cmd",
           "source": "trial-cosira-ii",
           "target": "cond-cmd",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-partner-2__evaluates__dev-sapien-3",
+          "source": "trial-partner-2",
+          "target": "dev-sapien-3",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-partner-2__evaluates__proc-savr",
+          "source": "trial-partner-2",
+          "target": "proc-savr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-partner-2__studies__cond-as",
+          "source": "trial-partner-2",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-partner-3__evaluates__dev-sapien-3",
+          "source": "trial-partner-3",
+          "target": "dev-sapien-3",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-partner-3__evaluates__proc-savr",
+          "source": "trial-partner-3",
+          "target": "proc-savr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-partner-3__studies__cond-as",
+          "source": "trial-partner-3",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-evolut-low-risk__evaluates__dev-evolut",
+          "source": "trial-evolut-low-risk",
+          "target": "dev-evolut",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-evolut-low-risk__evaluates__proc-savr",
+          "source": "trial-evolut-low-risk",
+          "target": "proc-savr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-evolut-low-risk__studies__cond-as",
+          "source": "trial-evolut-low-risk",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-early-tavr__evaluates__dev-sapien-3",
+          "source": "trial-early-tavr",
+          "target": "dev-sapien-3",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-early-tavr__studies__cond-as",
+          "source": "trial-early-tavr",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-smart__evaluates__dev-evolut",
+          "source": "trial-smart",
+          "target": "dev-evolut",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-smart__evaluates__dev-sapien-3",
+          "source": "trial-smart",
+          "target": "dev-sapien-3",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-smart__studies__cond-as",
+          "source": "trial-smart",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-acurate-ide__evaluates__dev-acurate-neo2",
+          "source": "trial-acurate-ide",
+          "target": "dev-acurate-neo2",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-acurate-ide__studies__cond-as",
+          "source": "trial-acurate-ide",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-align-ar__evaluates__dev-trilogy",
+          "source": "trial-align-ar",
+          "target": "dev-trilogy",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-align-ar__studies__cond-ar",
+          "source": "trial-align-ar",
+          "target": "cond-ar",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-everest-2__evaluates__dev-mitraclip",
+          "source": "trial-everest-2",
+          "target": "dev-mitraclip",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-everest-2__evaluates__proc-mv-surgery",
+          "source": "trial-everest-2",
+          "target": "proc-mv-surgery",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-everest-2__studies__cond-mr",
+          "source": "trial-everest-2",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-coapt__evaluates__dev-mitraclip",
+          "source": "trial-coapt",
+          "target": "dev-mitraclip",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-coapt__studies__cond-mr",
+          "source": "trial-coapt",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-mitra-fr__evaluates__dev-mitraclip",
+          "source": "trial-mitra-fr",
+          "target": "dev-mitraclip",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-mitra-fr__studies__cond-mr",
+          "source": "trial-mitra-fr",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-clasp-iid__evaluates__dev-pascal",
+          "source": "trial-clasp-iid",
+          "target": "dev-pascal",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-clasp-iid__evaluates__dev-mitraclip",
+          "source": "trial-clasp-iid",
+          "target": "dev-mitraclip",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-clasp-iid__studies__cond-mr",
+          "source": "trial-clasp-iid",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-triluminate__evaluates__dev-triclip",
+          "source": "trial-triluminate",
+          "target": "dev-triclip",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-triluminate__studies__cond-tr",
+          "source": "trial-triluminate",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-triscend-2__evaluates__dev-evoque",
+          "source": "trial-triscend-2",
+          "target": "dev-evoque",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-triscend-2__studies__cond-tr",
+          "source": "trial-triscend-2",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-summit__evaluates__dev-tendyne",
+          "source": "trial-summit",
+          "target": "dev-tendyne",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-summit__evaluates__dev-mitraclip",
+          "source": "trial-summit",
+          "target": "dev-mitraclip",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-summit__studies__cond-mr",
+          "source": "trial-summit",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-apollo-tmvr__evaluates__dev-intrepid",
+          "source": "trial-apollo-tmvr",
+          "target": "dev-intrepid",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-apollo-tmvr__studies__cond-mr",
+          "source": "trial-apollo-tmvr",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-encircle__evaluates__dev-sapien-m3",
+          "source": "trial-encircle",
+          "target": "dev-sapien-m3",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-encircle__studies__cond-mr",
+          "source": "trial-encircle",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-harmony__evaluates__dev-harmony",
+          "source": "trial-harmony",
+          "target": "dev-harmony",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-harmony__studies__cond-pv",
+          "source": "trial-harmony",
+          "target": "cond-pv",
           "relationship": "studies"
         }
       }

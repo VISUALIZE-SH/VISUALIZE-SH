@@ -10,14 +10,20 @@ export interface GroupMeta {
   shape: string
 }
 
+// Categorical node palette — seven distinct, readable hues drawn from the brand
+// palette (deep purple, lime, gold) plus the complements needed to tell seven
+// groups apart. The two largest groups carry the signature accents: clinical
+// trials are gold and devices are lime, so the graph reads purple + green + gold
+// rather than monochrome. Saturated versions of the soft brand swatches are used
+// so node fills stay legible on white. See DESIGN.md.
 export const GROUP_META: Record<NodeGroup, GroupMeta> = {
-  condition: { label: 'Condition / anatomy', color: '#e5484d', shape: 'ellipse' },
-  device: { label: 'Device', color: '#12a594', shape: 'hexagon' },
-  pharmaceutical: { label: 'Pharmaceutical', color: '#3e63dd', shape: 'round-rectangle' },
-  procedure: { label: 'Procedure', color: '#f76b15', shape: 'round-triangle' },
-  digital: { label: 'Digital therapy', color: '#8e4ec6', shape: 'diamond' },
-  trial: { label: 'Clinical trial', color: '#f5a623', shape: 'star' },
-  company: { label: 'Company', color: '#7c7f8a', shape: 'rectangle' },
+  condition: { label: 'Condition / anatomy', color: '#7c1fb0', shape: 'ellipse' },
+  device: { label: 'Device', color: '#5ba32b', shape: 'hexagon' },
+  pharmaceutical: { label: 'Pharmaceutical', color: '#2f6fed', shape: 'round-rectangle' },
+  procedure: { label: 'Procedure', color: '#ec7211', shape: 'round-triangle' },
+  digital: { label: 'Digital therapy', color: '#d6249f', shape: 'diamond' },
+  trial: { label: 'Clinical trial', color: '#eab308', shape: 'star' },
+  company: { label: 'Company', color: '#64748b', shape: 'rectangle' },
 }
 
 /** Display order for legend + filter chips. */

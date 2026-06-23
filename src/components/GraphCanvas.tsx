@@ -3,6 +3,7 @@ import type Cytoscape from 'cytoscape'
 import cytoscape from '../graph/cytoscapeSetup'
 import { buildStylesheet } from '../graph/cytoscapeStyles'
 import { getLayout, type LayoutName } from '../graph/layouts'
+import { attachElasticPull } from '../graph/elasticPull'
 import type { GraphData } from '../types/entities'
 
 interface Props {
@@ -42,6 +43,13 @@ export default function GraphCanvas({
     didMount.current = false
     onCyReady?.(cy)
 
+    // Physics-informed elastic pull: dragging a node springs its neighbors along.
+    const detachElastic = attachElasticPull(cy)
+
+    if (import.meta.env.DEV) {
+      ;(window as unknown as { __cy?: Cytoscape.Core }).__cy = cy
+    }
+
     // The flex container can finish sizing after Cytoscape initializes, so the
     // layout's built-in fit may frame against stale dimensions. Re-fit on the
     // next frame once the container has its final size.
@@ -57,6 +65,7 @@ export default function GraphCanvas({
     })
 
     return () => {
+      detachElastic()
       cy.destroy()
       cyRef.current = null
     }

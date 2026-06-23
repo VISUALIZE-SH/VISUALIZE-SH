@@ -178,6 +178,10 @@ const nodes: { data: GraphNodeData }[] = all
         : entity.type === 'therapy'
           ? (entity as Therapy).subtype
           : undefined
+    // pulse: clamp to 0-10; default 0 (unscored) when absent.
+    const rawPulse = (entity as { pulse?: number }).pulse
+    const pulse =
+      typeof rawPulse === 'number' ? Math.max(0, Math.min(10, rawPulse)) : 0
     return {
       data: {
         id: entity.id,
@@ -186,6 +190,7 @@ const nodes: { data: GraphNodeData }[] = all
         category,
         isDraft: entity.curation?.status === 'draft',
         degree: degree.get(entity.id) ?? 0,
+        pulse,
         entity,
       },
     }
@@ -214,6 +219,7 @@ const lastUpdated = all.reduce(
 )
 
 const draftCount = nodes.filter((n) => n.data.isDraft).length
+const scoredCount = nodes.filter((n) => n.data.pulse > 0).length
 
 const graph: GraphData = {
   meta: {
@@ -230,7 +236,9 @@ mkdirSync(dirname(OUT_FILE), { recursive: true })
 writeFileSync(OUT_FILE, JSON.stringify(graph, null, 2) + '\n', 'utf8')
 
 console.log('✓ build-data: wrote public/graph.json')
-console.log(`  nodes: ${nodes.length}  edges: ${edges.length}  drafts: ${draftCount}`)
+console.log(
+  `  nodes: ${nodes.length}  edges: ${edges.length}  drafts: ${draftCount}  pulse-scored: ${scoredCount}`,
+)
 console.log(
   `  by group: ${Object.entries(counts)
     .map(([g, c]) => `${g}=${c}`)

@@ -39,6 +39,8 @@ export interface Condition {
   category: string
   anatomy?: string[]
   description?: string
+  /** Newsworthiness 0-10 (10 = most coverage). Drives label font size. */
+  pulse?: number
   curation: Curation
 }
 
@@ -54,6 +56,8 @@ export interface Therapy {
   regulatoryDetail?: string
   mechanism?: string
   description?: string
+  /** Newsworthiness 0-10 (10 = most coverage). Drives label font size. */
+  pulse?: number
   curation: Curation
 }
 
@@ -65,6 +69,8 @@ export interface Company {
   hq?: string
   website?: string
   description?: string
+  /** Newsworthiness 0-10 (10 = most coverage). Drives label font size. */
+  pulse?: number
   curation: Curation
 }
 
@@ -83,6 +89,8 @@ export interface Trial {
   outcomeSummary?: string
   resultStatus: ResultStatus
   references?: string[]
+  /** Newsworthiness 0-10 (10 = most coverage). Drives label font size. */
+  pulse?: number
   curation: Curation
 }
 
@@ -112,6 +120,8 @@ export interface GraphNodeData {
   category?: string
   isDraft: boolean
   degree: number
+  /** Newsworthiness 0-10 (0 = unscored). Drives label font size in the graph. */
+  pulse: number
   entity: Entity
 }
 

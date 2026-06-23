@@ -60,6 +60,36 @@ curation:
 
 ---
 
+## The `pulse` field (optional, on every entity type)
+
+`pulse` is a **0–10 newsworthiness score** (10 = the most recent/heaviest coverage,
+0 or absent = unscored / quiet). It is a top-level field — a sibling of `curation`,
+not inside it — and is allowed on conditions, therapies, companies, and trials.
+
+```yaml
+pulse: 8   # number, 0–10; out-of-range values are clamped at build time
+```
+
+What it drives: in the graph, **label font size scales with `pulse`**, so the
+hottest topics stay legible when zoomed out and quieter ones reveal as you zoom in.
+It does **not** affect validation, edges, or filtering.
+
+How to score it (rough guide):
+
+| Pulse | Meaning |
+|---|---|
+| 8–10 | Front-of-mind now: a recent approval, a pivotal readout, an acquisition, or active controversy |
+| 5–7 | Established and clinically active, still frequently discussed |
+| 2–4 | Background / mature standard of care |
+| 0–1 (or omit) | Historical or low-attention |
+
+`pulse` is meant to be **refreshed on a cadence** — it reflects attention *now*, so
+the update routine should re-score existing entities as the news cycle moves, not
+just set it once. Lower a score when a topic goes quiet; raise it on fresh news.
+Keep scores **relative to each other** so the graph reads sensibly.
+
+---
+
 ## Conditions (`data/conditions.yaml`)
 
 | Field | Req | Notes |
@@ -71,12 +101,14 @@ curation:
 | `category` | ✓ | grouping for filters; reuse an existing value (see below) |
 | `anatomy` | | list of structures, e.g. `["left atrial appendage"]` |
 | `description` | | 1–2 sentences |
+| `pulse` | | 0–10 news-attention score (see above) |
 | `curation` | ✓ | see above |
 
 **Recommended `category` vocabulary** (keep consistent — new values fragment the
 filters): `Atrial fibrillation / stroke prevention`, `Septal & congenital defect`,
 `Cardiomyopathy`, `Infiltrative cardiomyopathy`, `Heart failure`,
-`Coronary microvascular`.
+`Coronary microvascular`, `Aortic valve disease`, `Mitral valve disease`,
+`Tricuspid valve disease`, `Pulmonary valve disease`.
 
 ---
 
@@ -98,6 +130,7 @@ discriminated by `therapyType`.
 | `regulatoryDetail` | | free text specifics, e.g. `FDA approved 2022; REMS` |
 | `mechanism` | | how it works |
 | `description` | | optional extra context |
+| `pulse` | | 0–10 news-attention score (see above) |
 | `curation` | ✓ | see above |
 
 Use `regulatoryStatus` for the broad bucket (it drives the filter) and put the
@@ -116,6 +149,7 @@ nuance (dates, geographies, CRLs, breakthrough designation) in `regulatoryDetail
 | `hq` | | city, region, country |
 | `website` | | must be a full `https://…` URL |
 | `description` | | note acquisitions/ownership here |
+| `pulse` | | 0–10 news-attention score (see above) |
 | `curation` | ✓ | see above |
 
 ---
@@ -138,6 +172,7 @@ nuance (dates, geographies, CRLs, breakthrough designation) in `regulatoryDetail
 | `outcomeSummary` | | 1 sentence on the result |
 | `resultStatus` | ✓ | `positive` \| `mixed` \| `negative` \| `ongoing` \| `terminated` |
 | `references` | | list of URLs or `PMID:#######` (a ClinicalTrials.gov search link is a fine fallback) |
+| `pulse` | | 0–10 news-attention score (see above) |
 | `curation` | ✓ | see above |
 
 Note: the therapy↔trial and condition↔trial links are recorded **only on the
@@ -205,5 +240,10 @@ A green run prints node/edge/draft counts. The build must be green before commit
 3. Every draft must include at least one `sources` URL.
 4. Never invent `nctId`s or enum values; if unsure, omit the optional field.
 5. Reuse existing `category`/`subtype` vocabulary; don't coin near-duplicates.
-6. Run `npm run build:data` and resolve all errors before finishing.
-7. Summarize what you added/changed (ids + why) for the human curator.
+6. Set/refresh `pulse` (0–10) on new entities and re-score existing ones to match
+   the current news cycle — raise it on fresh coverage, lower it as topics go quiet.
+   `pulse` is the one field you may update on a `curated` entity without flipping it
+   to `draft` (it is a presentation signal, not a clinical claim). Keep scores
+   relative and clamp to 0–10.
+7. Run `npm run build:data` and resolve all errors before finishing.
+8. Summarize what you added/changed (ids + why) for the human curator.

@@ -1,9 +1,9 @@
 # VISUALIZE-HF
 
-An interactive, front-end-only **knowledge graph of the non-valvular structural
-heart landscape** — conditions and anatomy, the therapies that target them
-(devices, pharmaceuticals, digital therapeutics, procedures), the companies behind
-them, and the clinical trials that evaluate them.
+An interactive, front-end-only **knowledge graph of the structural heart
+landscape** — valvular and non-valvular — covering conditions and anatomy, the
+therapies that target them (devices, pharmaceuticals, digital therapeutics,
+procedures), the companies behind them, and the clinical trials that evaluate them.
 
 Built with React + TypeScript + Vite + [Cytoscape.js](https://js.cytoscape.org/).
 The data is hand-curated YAML, validated and compiled into a static graph — so the
@@ -43,7 +43,13 @@ data/*.yaml  ──(npm run build:data)──►  public/graph.json  ──►  
   checks referential integrity, derives the graph edges, and writes
   `public/graph.json` (committed, so no server is needed).
 - The app loads `graph.json` and renders it. Color/shape encode entity type, node
-  size encodes connectedness, and a dashed outline marks uncurated **drafts**.
+  size encodes connectedness, **label size encodes `pulse`** (recent news
+  attention, 0–10), and a dashed outline marks uncurated **drafts**. Labels scale
+  with zoom and auto-hide when too small, so the highest-pulse topics surface
+  first on the overview.
+- **Elastic pull:** dragging a node runs a small [`d3-force`](https://github.com/d3/d3-force)
+  spring simulation ([`src/graph/elasticPull.ts`](src/graph/elasticPull.ts)) so the
+  neighbors are pulled along, with the effect falling off across the network.
 
 ## Updating the data
 
@@ -58,6 +64,14 @@ every field, the id conventions, and the rules. The short version:
 A scheduled assistant can draft updates for you — see
 **[`ROUTINE.md`](ROUTINE.md)**.
 
+## Design system
+
+The visual language (Source Sans Pro type, deep-purple brand, vivid-violet links)
+is derived from [harshadparanjape.com](https://www.harshadparanjape.com/) and
+documented in **[`DESIGN.md`](DESIGN.md)**. All UI chrome reads from design tokens
+in `src/index.css` (`:root`); the categorical node palette lives in
+`src/graph/palette.ts`.
+
 ## Project layout
 
 ```
@@ -65,6 +79,7 @@ data/        YAML source of truth (conditions, therapies, companies, trials)
 schema/      JSON Schemas + DATA_DICTIONARY.md
 scripts/     build-data.ts (validate + compile)
 public/      graph.json (generated, committed)
+DESIGN.md    design system (tokens, type scale, palette)
 src/
   graph/     Cytoscape setup, styles, layouts, palette
   components/ GraphCanvas, Header, Filters, DetailPanel, SearchBar, Legend, About
