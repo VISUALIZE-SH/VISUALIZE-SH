@@ -73,10 +73,10 @@ const BB_OPTS = {
 /** Relax node positions so label-inclusive footprints stop overlapping, with a
  *  coherent organic warp applied so the result doesn't look grid-like. */
 export function declutterOverlaps(cy: Core, opts: DeclutterOptions = {}): void {
-  const iterations = opts.iterations ?? 400
+  const iterations = opts.iterations ?? 240
   const padding = opts.padding ?? 3
   const homeStrength = opts.homeStrength ?? 0.06
-  const collideIterations = opts.collideIterations ?? 4
+  const collideIterations = opts.collideIterations ?? 3
   const radiusScale = opts.radiusScale ?? 1
   const jitter = opts.jitter ?? 16
   const wavelength = opts.jitterWavelength ?? 620

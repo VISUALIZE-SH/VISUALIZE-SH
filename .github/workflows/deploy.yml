@@ -27,7 +27,12 @@ jobs:
           cache: npm
       - run: npm ci
       # `npm run build` runs build:data (validate + compile) -> tsc -> vite build.
+      # Derive the Pages base path from the repo name so assets resolve under
+      # https://<owner>.github.io/<repo>/ no matter what the repo is named.
+      # For a custom domain, add public/CNAME and set VITE_BASE to "/" instead.
       - run: npm run build
+        env:
+          VITE_BASE: /${{ github.event.repository.name }}/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

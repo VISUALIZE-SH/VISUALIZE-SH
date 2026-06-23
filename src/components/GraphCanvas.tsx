@@ -1,10 +1,11 @@
 import { useEffect, useRef } from 'react'
 import type Cytoscape from 'cytoscape'
-import cytoscape from '../graph/cytoscapeSetup'
+import cytoscape, { ensureLayoutExtension } from '../graph/cytoscapeSetup'
 import { buildStylesheet } from '../graph/cytoscapeStyles'
-import { getLayout, type LayoutName } from '../graph/layouts'
+import { getLayout, frameLayout, type LayoutName } from '../graph/layouts'
 import { attachElasticPull } from '../graph/elasticPull'
 import { declutterOverlaps, spaceIslands } from '../graph/declutter'
+import { clusterByCondition } from '../graph/clusterByCondition'
 import { removeTimelineAxis, updateTimelineAxis } from '../graph/timeline'
 import type { GraphData } from '../types/entities'
 
@@ -60,13 +61,26 @@ export default function GraphCanvas({
         updateTimelineAxis(cy)
       } else {
         removeTimelineAxis(cy)
-        declutterOverlaps(cy)
-        spaceIslands(cy)
+        // Island clustering is a property of the Clustered (fcose) view only —
+        // it would fight the intended structure of Hierarchy / Concentric.
+        if (layoutNameRef.current === 'fcose') clusterByCondition(cy)
+        // Hierarchy (dagre) is laid out as clean layered ranks. The organic
+        // declutter jitter and the radial island spacing both smear those
+        // columns into the unreadable vertical strip, so skip them here and let
+        // dagre's own (label-aware) spacing stand; frameLayout frames it.
+        if (layoutNameRef.current !== 'dagre') {
+          declutterOverlaps(cy)
+          spaceIslands(cy)
+        }
       }
-      cy.resize()
-      cy.fit(cy.elements(':visible'), 45)
+      frameLayout(cy, layoutNameRef.current)
     }
     cy.on('layoutstop', declutterAndFit)
+
+    // Each fresh layout owns positions: clear the one-time condition-spread flag
+    // so clusterByCondition re-spreads the new anchors (re-runs without a layout
+    // — fonts/accessibility — keep the flag and stay idempotent).
+    cy.on('layoutstart', () => cy.scratch('_clusterCondSpread', null))
 
     // Web fonts load asynchronously; until they do, label bounding boxes are
     // measured at the wrong (fallback/zero) size and the de-clutter pass under-
@@ -80,11 +94,13 @@ export default function GraphCanvas({
     if (import.meta.env.DEV) {
       const w = window as unknown as {
         __cy?: Cytoscape.Core
+        __cluster?: (o?: Parameters<typeof clusterByCondition>[1]) => void
         __declutter?: (o?: Parameters<typeof declutterOverlaps>[1]) => void
         __spaceIslands?: (o?: Parameters<typeof spaceIslands>[1]) => number
         __refit?: () => void
       }
       w.__cy = cy
+      w.__cluster = (o) => clusterByCondition(cy, o)
       w.__declutter = (o) => declutterOverlaps(cy, o)
       w.__spaceIslands = (o) => spaceIslands(cy, o)
       w.__refit = () => cy.fit(cy.elements(':visible'), 45)
@@ -95,8 +111,7 @@ export default function GraphCanvas({
     // next frame once the container has its final size.
     requestAnimationFrame(() => {
       if (cyRef.current !== cy) return
-      cy.resize()
-      cy.fit(cy.elements(':visible'), 45)
+      frameLayout(cy, layoutNameRef.current)
     })
 
     cy.on('tap', 'node', (evt) => {
@@ -125,11 +140,13 @@ export default function GraphCanvas({
     if (layoutNameRef.current === 'timeline') {
       updateTimelineAxis(cy)
     } else {
-      declutterOverlaps(cy)
-      spaceIslands(cy)
+      if (layoutNameRef.current === 'fcose') clusterByCondition(cy)
+      if (layoutNameRef.current !== 'dagre') {
+        declutterOverlaps(cy)
+        spaceIslands(cy)
+      }
     }
-    cy.resize()
-    cy.fit(cy.elements(':visible'), 45)
+    frameLayout(cy, layoutNameRef.current)
   }, [accessibilityMode])
 
   // Toggle node visibility on filter/layout change; relayout the visible subset.
@@ -158,7 +175,15 @@ export default function GraphCanvas({
       didMount.current = true
       return
     }
-    cy.layout(getLayout(layoutName)).run()
+    // dagre is code-split — make sure it's registered before running its layout.
+    let cancelled = false
+    ensureLayoutExtension(layoutName).then(() => {
+      if (cancelled || cyRef.current !== cy) return
+      cy.layout(getLayout(layoutName)).run()
+    })
+    return () => {
+      cancelled = true
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visibleIds, layoutName])
 

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Interactive knowledge graph of the non-valvular structural heart landscape: conditions, therapies, companies, and clinical trials.",
+  "description": "Interactive knowledge graph of the structural heart landscape (valvular and non-valvular): conditions, therapies, companies, and clinical trials.",
   "scripts": {
     "build:data": "tsx scripts/build-data.ts",
     "predev": "npm run build:data",

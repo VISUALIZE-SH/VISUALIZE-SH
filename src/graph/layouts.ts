@@ -1,3 +1,4 @@
+import type { Core } from 'cytoscape'
 import { dateToUtcMs, getTimelineWidth } from './timeline'
 
 // Layout presets. fcose = force-directed clustering (default), dagre = layered
@@ -185,7 +186,21 @@ export function getLayout(name: LayoutName): any {
   const common = { animate: false, padding: 45, fit: true }
   switch (name) {
     case 'dagre':
-      return { name: 'dagre', rankDir: 'LR', nodeSep: 22, rankSep: 80, ...common }
+      return {
+        name: 'dagre',
+        rankDir: 'LR',
+        nodeSep: 26,
+        rankSep: 130,
+        // Reserve space for each node's (below-the-icon) label when packing a
+        // rank, so columns don't collide. The declutter pass that normally
+        // separates label footprints is skipped for Hierarchy (it would smear
+        // the layered ranks), so dagre has to own label spacing itself.
+        nodeDimensionsIncludeLabels: true,
+        ...common,
+        // frameLayout() does width-fit framing for dagre instead of fit-to-all
+        // (this dataset collapses to ~3 very tall ranks — see frameLayout).
+        fit: false,
+      }
     case 'concentric':
       return {
         name: 'concentric',
@@ -206,7 +221,10 @@ export function getLayout(name: LayoutName): any {
     default:
       return {
         name: 'fcose',
-        quality: 'proof',
+        // 'default' quality skips fcose's expensive spectral/Newton refinement,
+        // which is overkill for a graph this size (~150 nodes) — the subsequent
+        // clusterByCondition + declutter passes own the final arrangement anyway.
+        quality: 'default',
         randomize: true,
         packComponents: true, // keep disconnected clusters from flying apart
         nodeSeparation: 80,
@@ -214,8 +232,43 @@ export function getLayout(name: LayoutName): any {
         nodeRepulsion: 4500,
         gravity: 0.4,
         gravityRange: 3.2,
-        numIter: 2500,
+        numIter: 1200,
         ...common,
       }
   }
+}
+
+const FRAME_PADDING = 45
+
+/**
+ * Frame the freshly-laid-out graph in the viewport.
+ *
+ * Most layouts are 2-D and space-filling, so fit-to-all reads well. The layered
+ * Hierarchy (dagre) is the exception: this dataset collapses to ~3 ranks
+ * (trial → therapy → condition/company), so an LR layout is only a few hundred
+ * px wide but several thousand tall — fit-to-all then shrinks it to an
+ * unreadable vertical sliver. Instead, frame dagre to the viewport *width* at a
+ * readable zoom and let the user pan down through the layers.
+ */
+export function frameLayout(cy: Core, name: LayoutName): void {
+  cy.resize() // recompute against the current container size before framing
+  const eles = cy.elements(':visible')
+  if (eles.empty()) return
+  if (name !== 'dagre') {
+    cy.fit(eles, FRAME_PADDING)
+    return
+  }
+  const bb = eles.boundingBox()
+  const viewW = cy.width()
+  const usableW = Math.max(1, viewW - 2 * FRAME_PADDING)
+  // Fill the width, but never magnify past 1:1 (so a narrow, heavily-filtered
+  // hierarchy doesn't balloon) and never drop below the configured minimum.
+  const zoom = Math.max(cy.minZoom(), Math.min(1, usableW / bb.w))
+  cy.viewport({
+    zoom,
+    pan: {
+      x: (viewW - bb.w * zoom) / 2 - bb.x1 * zoom, // centre horizontally
+      y: FRAME_PADDING - bb.y1 * zoom, // align to the top rank
+    },
+  })
 }

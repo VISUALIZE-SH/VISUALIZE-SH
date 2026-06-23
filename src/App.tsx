@@ -3,7 +3,8 @@ import type Cytoscape from 'cytoscape'
 import type { GraphData, NodeGroup, RegulatoryStatus } from './types/entities'
 import { loadGraph } from './data/loadGraph'
 import { GROUP_ORDER } from './graph/palette'
-import { getLayout, type LayoutName } from './graph/layouts'
+import { getLayout, frameLayout, type LayoutName } from './graph/layouts'
+import { ensureLayoutExtension } from './graph/cytoscapeSetup'
 import { timelineYear } from './graph/timeline'
 import GraphCanvas from './components/GraphCanvas'
 import Header from './components/Header'
@@ -144,11 +145,14 @@ export default function App() {
   function fit() {
     const cy = cyRef.current
     if (!cy) return
-    cy.resize() // recompute against the current container size before framing
-    cy.fit(cy.elements(':visible'), 40)
+    // Layout-aware framing: fit-to-all for 2-D layouts, width-fit for the tall
+    // layered Hierarchy (see frameLayout).
+    frameLayout(cy, layoutName)
   }
   function relayout() {
-    cyRef.current?.layout(getLayout(layoutName)).run()
+    const cy = cyRef.current
+    if (!cy) return
+    ensureLayoutExtension(layoutName).then(() => cy.layout(getLayout(layoutName)).run())
   }
 
   return (

@@ -34,7 +34,7 @@ This document is the reference; the implementation lives in CSS custom propertie
 
 | Token | Hex | Use |
 |---|---|---|
-| `--brand` | `#3b0b55` | Primary brand; active toggle fill, `·HF` mark, header rule, primaries |
+| `--brand` | `#3b0b55` | Primary brand; active toggle fill, `·SH` mark, header rule, primaries |
 | `--brand-dark` | `#2a073e` | Pressed / hover-on-brand |
 | `--brand-ink` | `#1a0426` | Strongest text, graph labels, scrims |
 | `--lilac` | `#f0d5ff` | Soft tinted backgrounds & highlights (e.g. draft badge) |

@@ -50,6 +50,13 @@ data/*.yaml  ──(npm run build:data)──►  public/graph.json  ──►  
 - **Elastic pull:** dragging a node runs a small [`d3-force`](https://github.com/d3/d3-force)
   spring simulation ([`src/graph/elasticPull.ts`](src/graph/elasticPull.ts)) so the
   neighbors are pulled along, with the effect falling off across the network.
+- **Condition-anchored clustering:** after the clustered layout, a `d3-force` pass
+  ([`src/graph/clusterByCondition.ts`](src/graph/clusterByCondition.ts)) gathers each
+  node into an island around the disease state(s) it connects to. The condition nodes
+  are pinned anchors (spread apart once so islands have room between them); every other
+  node is pulled toward the weighted centroid of the conditions it reaches within a few
+  hops. Single-condition nodes pull in tight; nodes shared across conditions pull weakly
+  and linger in the space between islands.
 - **Label-aware de-clutter:** after every layout, a short `d3-force` collision pass
   ([`src/graph/declutter.ts`](src/graph/declutter.ts)) separates nodes by their
   *label-inclusive* footprint (so big-`pulse` labels don't cover neighboring icons),
@@ -58,6 +65,12 @@ data/*.yaml  ──(npm run build:data)──►  public/graph.json  ──►  
   [`simplex-noise`](https://github.com/jwagner/simplex-noise.js) displacement field
   (an organic, non-grid warp where neighbors drift together) and pushes disconnected
   components apart so isolated islands read as isolated.
+- **Lean initial load:** Vite splits the bundle into long-cache vendor chunks
+  (`react`, `cytoscape`, `force`) plus a small app chunk, so a data/UI edit only
+  busts the app chunk. The Hierarchy layout's `dagre` dependency is dynamically
+  imported — it loads only when you first open that view, keeping it off the
+  critical path (see [`cytoscapeSetup.ts`](src/graph/cytoscapeSetup.ts) and
+  [`vite.config.ts`](vite.config.ts)).
 
 ## Updating the data
 
@@ -89,7 +102,7 @@ scripts/     build-data.ts (validate + compile)
 public/      graph.json (generated, committed)
 DESIGN.md    design system (tokens, type scale, palette)
 src/
-  graph/     Cytoscape setup, styles, layouts, palette, elasticPull, declutter
+  graph/     Cytoscape setup, styles, layouts, palette, elasticPull, clusterByCondition, declutter
   components/ GraphCanvas, Header, Filters, DetailPanel, SearchBar, Legend, About
   data/      loadGraph.ts
   types/     entities.ts (TS mirror of the schema)
@@ -98,7 +111,12 @@ src/
 ## Deployment
 
 Pushing to `main` builds and deploys to GitHub Pages via
-`.github/workflows/deploy.yml`. The production base path is `/visualize-sh/`
-(the repo name); for a different repo name or a custom domain set `VITE_BASE`
-(e.g. `VITE_BASE=/ npm run build`). Any static host (Netlify, Vercel, S3) also
-works — just serve `dist/`.
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). To turn it on,
+enable **Settings → Pages → Source: GitHub Actions** once.
+
+The site is served from a project sub-path (`https://<owner>.github.io/<repo>/`),
+so asset URLs need the right base. CI sets `VITE_BASE` from the repo name
+automatically, so it works whatever the repo is called. For a **custom domain**,
+add a `public/CNAME` file and build with `VITE_BASE=/`. Local builds default to
+`/visualize-sh/` (see [`vite.config.ts`](vite.config.ts)). Any static host
+(Netlify, Vercel, S3) also works — just serve `dist/` at the matching base.
