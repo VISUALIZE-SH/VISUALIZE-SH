@@ -1,4 +1,4 @@
-# VISUALIZE-HF — Design System
+# VISUALIZE-SH — Design System
 
 The look and feel are derived from **[harshadparanjape.com](https://www.harshadparanjape.com/)**.
 
@@ -103,7 +103,7 @@ Loaded from Google Fonts in [`index.html`](index.html). Per the source site,
 
 | Role | Family | Size | Weight | Notes |
 |---|---|---|---|---|
-| Wordmark `VISUALIZE·HF` | Open Sans | 19px | 300 | `letter-spacing: 0.04em`; `·HF` in `--brand` @ 600 |
+| Wordmark `VISUALIZE·SH` | Open Sans | 19px | 300 | `letter-spacing: 0.04em`; `·SH` in `--brand` @ 600 |
 | Headings `h1–h3` | Open Sans | contextual | 600 | `letter-spacing: -0.005em`, color `--text` |
 | Body | Source Sans Pro | 14px | 400 | `line-height: 1.45`, color `--text-2` |
 | Labels / facts | Source Sans Pro | 12–13px | 400/600 | |

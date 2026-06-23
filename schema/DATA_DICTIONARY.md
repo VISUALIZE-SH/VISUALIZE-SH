@@ -1,4 +1,4 @@
-# VISUALIZE-HF — Data Dictionary & Authoring Guide
+# VISUALIZE-SH — Data Dictionary & Authoring Guide
 
 This is the **contract** for the data layer. Read it fully before adding or editing
 data — whether you are a human curator or an automated update routine.
@@ -130,6 +130,7 @@ discriminated by `therapyType`.
 | `regulatoryDetail` | | free text specifics, e.g. `FDA approved 2022; REMS` |
 | `mechanism` | | how it works |
 | `description` | | optional extra context |
+| `links` | | list of `{label, url}` info links (see "Links" below) |
 | `pulse` | | 0–10 news-attention score (see above) |
 | `curation` | ✓ | see above |
 
@@ -172,12 +173,36 @@ nuance (dates, geographies, CRLs, breakthrough designation) in `regulatoryDetail
 | `outcomeSummary` | | 1 sentence on the result |
 | `resultStatus` | ✓ | `positive` \| `mixed` \| `negative` \| `ongoing` \| `terminated` |
 | `references` | | list of URLs or `PMID:#######` (a ClinicalTrials.gov search link is a fine fallback) |
+| `links` | | list of `{label, url}` outcome-summary links, NOT ClinicalTrials.gov (see "Links" below) |
 | `pulse` | | 0–10 news-attention score (see above) |
 | `curation` | ✓ | see above |
 
 Note: the therapy↔trial and condition↔trial links are recorded **only on the
 trial** (`therapies`, `conditions`). Do not add a reciprocal list on therapies or
 conditions — the app derives the reverse direction automatically.
+
+---
+
+## Links (`links` on therapies and trials)
+
+Optional list of labeled external links shown in the detail panel's **More info**
+section. Each item is `{ label, url }` (the `url` must be a full `https://…`).
+
+```yaml
+links:
+  - label: "Product page"
+    url: "https://www.example.com/products/foo"
+```
+
+- **Therapies (devices especially):** the **product page on the maker's site** if it
+  exists; otherwise a reputable third-party source (journal article, medical-news
+  site, or clinical source). Drugs/procedures may link a label or guideline.
+- **Trials:** a source that **summarizes the outcomes other than ClinicalTrials.gov**
+  (the primary journal article, a TCTMD/medical-news write-up, or a guideline). Leave
+  the ClinicalTrials.gov deep-link to be handled automatically from `nctId`.
+- The panel **always also shows a PubMed search link** generated from the entity name
+  (a verifiable fallback), so an entity is never link-less. Only add `links` when you
+  have a *specific, verified* URL — never invent one (same rule as `nctId`).
 
 ---
 

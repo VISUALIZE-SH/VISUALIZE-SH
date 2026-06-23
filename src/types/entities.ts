@@ -31,6 +31,12 @@ export interface Curation {
   notes?: string
 }
 
+/** A labeled external link shown in the detail panel. */
+export interface InfoLink {
+  label: string
+  url: string
+}
+
 export interface Condition {
   id: string
   type: 'condition'
@@ -56,6 +62,8 @@ export interface Therapy {
   regulatoryDetail?: string
   mechanism?: string
   description?: string
+  /** External info links (product page / third-party clinical source). */
+  links?: InfoLink[]
   /** Newsworthiness 0-10 (10 = most coverage). Drives label font size. */
   pulse?: number
   curation: Curation
@@ -89,6 +97,8 @@ export interface Trial {
   outcomeSummary?: string
   resultStatus: ResultStatus
   references?: string[]
+  /** External outcome-summary links (non-ClinicalTrials.gov). */
+  links?: InfoLink[]
   /** Newsworthiness 0-10 (10 = most coverage). Drives label font size. */
   pulse?: number
   curation: Curation

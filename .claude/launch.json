@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "visualize-sh",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "serve"],
+      "port": 5173
+    },
+    {
+      "name": "vite-5174",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["vite", "--port", "5174", "--strictPort", "--host", "127.0.0.1"],
+      "port": 5174
+    }
+  ]
+}

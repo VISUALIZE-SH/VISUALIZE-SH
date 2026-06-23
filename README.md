@@ -1,4 +1,4 @@
-# VISUALIZE-HF
+# VISUALIZE-SH
 
 An interactive, front-end-only **knowledge graph of the structural heart
 landscape** — valvular and non-valvular — covering conditions and anatomy, the
@@ -50,6 +50,14 @@ data/*.yaml  ──(npm run build:data)──►  public/graph.json  ──►  
 - **Elastic pull:** dragging a node runs a small [`d3-force`](https://github.com/d3/d3-force)
   spring simulation ([`src/graph/elasticPull.ts`](src/graph/elasticPull.ts)) so the
   neighbors are pulled along, with the effect falling off across the network.
+- **Label-aware de-clutter:** after every layout, a short `d3-force` collision pass
+  ([`src/graph/declutter.ts`](src/graph/declutter.ts)) separates nodes by their
+  *label-inclusive* footprint (so big-`pulse` labels don't cover neighboring icons),
+  while gently holding the layout's structure. Re-runs once web fonts load so label
+  sizes are measured correctly. The same pass adds a coherent
+  [`simplex-noise`](https://github.com/jwagner/simplex-noise.js) displacement field
+  (an organic, non-grid warp where neighbors drift together) and pushes disconnected
+  components apart so isolated islands read as isolated.
 
 ## Updating the data
 
@@ -81,7 +89,7 @@ scripts/     build-data.ts (validate + compile)
 public/      graph.json (generated, committed)
 DESIGN.md    design system (tokens, type scale, palette)
 src/
-  graph/     Cytoscape setup, styles, layouts, palette
+  graph/     Cytoscape setup, styles, layouts, palette, elasticPull, declutter
   components/ GraphCanvas, Header, Filters, DetailPanel, SearchBar, Legend, About
   data/      loadGraph.ts
   types/     entities.ts (TS mirror of the schema)
@@ -90,7 +98,7 @@ src/
 ## Deployment
 
 Pushing to `main` builds and deploys to GitHub Pages via
-`.github/workflows/deploy.yml`. The production base path is `/VISUALIZE-HF/`
+`.github/workflows/deploy.yml`. The production base path is `/visualize-sh/`
 (the repo name); for a different repo name or a custom domain set `VITE_BASE`
 (e.g. `VITE_BASE=/ npm run build`). Any static host (Netlify, Vercel, S3) also
 works — just serve `dist/`.

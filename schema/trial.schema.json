@@ -41,6 +41,19 @@
       "items": { "type": "string" },
       "description": "URLs or 'PMID:########' citations."
     },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "url"],
+        "properties": {
+          "label": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" }
+        }
+      },
+      "description": "External info links shown in the detail panel. For trials: a source that summarizes the outcomes OTHER than ClinicalTrials.gov (journal article, TCTMD/medical news, society guideline). Each item is {label, url}."
+    },
     "pulse": {
       "type": "number",
       "minimum": 0,

@@ -40,7 +40,7 @@ export default function Header({
         </button>
         <div>
           <h1>
-            VISUALIZE<span className="brand-accent">·HF</span>
+            VISUALIZE<span className="brand-accent">·SH</span>
           </h1>
           <p className="header-sub">Structural heart atlas · valvular &amp; non-valvular</p>
         </div>

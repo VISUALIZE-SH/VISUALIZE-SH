@@ -4,6 +4,7 @@ import cytoscape from '../graph/cytoscapeSetup'
 import { buildStylesheet } from '../graph/cytoscapeStyles'
 import { getLayout, type LayoutName } from '../graph/layouts'
 import { attachElasticPull } from '../graph/elasticPull'
+import { declutterOverlaps, spaceIslands } from '../graph/declutter'
 import type { GraphData } from '../types/entities'
 
 interface Props {
@@ -26,6 +27,7 @@ export default function GraphCanvas({
   const containerRef = useRef<HTMLDivElement>(null)
   const cyRef = useRef<Cytoscape.Core | null>(null)
   const didMount = useRef(false)
+  const didLayoutMount = useRef(false)
 
   // Create the instance once per dataset.
   useEffect(() => {
@@ -46,8 +48,37 @@ export default function GraphCanvas({
     // Physics-informed elastic pull: dragging a node springs its neighbors along.
     const detachElastic = attachElasticPull(cy)
 
+    // After any layout: relax label footprints apart (with organic jitter), open up
+    // whitespace around disconnected islands, then frame.
+    const declutterAndFit = () => {
+      if (cyRef.current !== cy) return
+      declutterOverlaps(cy)
+      spaceIslands(cy)
+      cy.resize()
+      cy.fit(cy.elements(':visible'), 45)
+    }
+    cy.on('layoutstop', declutterAndFit)
+
+    // Web fonts load asynchronously; until they do, label bounding boxes are
+    // measured at the wrong (fallback/zero) size and the de-clutter pass under-
+    // separates. Re-run it once the real fonts are ready so footprints are correct.
+    if (typeof document !== 'undefined' && document.fonts?.ready) {
+      document.fonts.ready.then(() => {
+        if (cyRef.current === cy) declutterAndFit()
+      })
+    }
+
     if (import.meta.env.DEV) {
-      ;(window as unknown as { __cy?: Cytoscape.Core }).__cy = cy
+      const w = window as unknown as {
+        __cy?: Cytoscape.Core
+        __declutter?: (o?: Parameters<typeof declutterOverlaps>[1]) => void
+        __spaceIslands?: (o?: Parameters<typeof spaceIslands>[1]) => number
+        __refit?: () => void
+      }
+      w.__cy = cy
+      w.__declutter = (o) => declutterOverlaps(cy, o)
+      w.__spaceIslands = (o) => spaceIslands(cy, o)
+      w.__refit = () => cy.fit(cy.elements(':visible'), 45)
     }
 
     // The flex container can finish sizing after Cytoscape initializes, so the
@@ -56,7 +87,7 @@ export default function GraphCanvas({
     requestAnimationFrame(() => {
       if (cyRef.current !== cy) return
       cy.resize()
-      cy.fit(undefined, 45)
+      cy.fit(cy.elements(':visible'), 45)
     })
 
     cy.on('tap', 'node', (evt) => onSelect(evt.target.id()))
@@ -65,6 +96,7 @@ export default function GraphCanvas({
     })
 
     return () => {
+      cy.off('layoutstop', declutterAndFit)
       detachElastic()
       cy.destroy()
       cyRef.current = null
@@ -72,8 +104,13 @@ export default function GraphCanvas({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [graph])
 
-  // Re-run layout when the user switches it.
+  // Re-run layout when the user switches it. Skip the first run — the instance
+  // was already laid out (and decluttered) by the create effect.
   useEffect(() => {
+    if (!didLayoutMount.current) {
+      didLayoutMount.current = true
+      return
+    }
     cyRef.current?.layout(getLayout(layoutName)).run()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [layoutName])

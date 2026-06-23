@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 // GitHub Pages project sub-path (the repo name); override with VITE_BASE for a
 // custom domain (VITE_BASE=/) or a different repo name.
 export default defineConfig(({ command }) => ({
-  base: command === 'build' ? (process.env.VITE_BASE ?? '/VISUALIZE-HF/') : '/',
+  base: command === 'build' ? (process.env.VITE_BASE ?? '/visualize-sh/') : '/',
   plugins: [react()],
   server: { port: 5173, strictPort: true },
 }))

@@ -16,7 +16,7 @@ export default function About({ meta, onClose }: Props) {
         aria-modal="true"
       >
         <div className="modal-head">
-          <h2>About VISUALIZE·HF</h2>
+          <h2>About VISUALIZE·SH</h2>
           <button className="icon-btn" onClick={onClose} aria-label="Close">
             ✕
           </button>

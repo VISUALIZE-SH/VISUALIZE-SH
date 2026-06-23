@@ -126,6 +126,83 @@ function statusBadge(value: string, kind: 'reg' | 'result') {
   return <span className={`badge ${kind}-${value}`}>{value}</span>
 }
 
+// Build a PubMed search URL — a verifiable, non-fabricated fallback that lands on
+// the primary literature (clinical source for devices; outcome publications for
+// trials). Curated `links` are always shown first and take precedence.
+function pubmedSearch(query: string): string {
+  return `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(query)}`
+}
+// Reduce a display name to a clean PubMed query: drop "(Brand)" parentheticals and
+// any "/ alternate name" so e.g. "Edwards SAPIEN 3 / SAPIEN 3 Ultra RESILIA" -> the
+// core "Edwards SAPIEN 3".
+function coreName(name: string): string {
+  return name
+    .replace(/\s*\([^)]*\)\s*/g, ' ')
+    .split('/')[0]
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+interface PanelLink {
+  label: string
+  sub?: string
+  url: string
+}
+
+/** "More info" links for devices/drugs/procedures (product page or clinical
+ *  source) and trials (outcome summary other than ClinicalTrials.gov). */
+function MoreInfo({
+  node,
+  byId,
+}: {
+  node: GraphNodeData
+  byId: Map<string, GraphNodeData>
+}) {
+  const e = node.entity
+  const links: PanelLink[] = []
+
+  if (e.type === 'therapy') {
+    for (const l of e.links ?? []) links.push({ label: l.label, url: l.url })
+    links.push({
+      label: 'Clinical literature',
+      sub: 'PubMed',
+      url: pubmedSearch(coreName(e.name)),
+    })
+  } else if (e.type === 'trial') {
+    for (const l of e.links ?? []) links.push({ label: l.label, url: l.url })
+    const firstTherapy = (e.therapies ?? [])
+      .map((id) => byId.get(id)?.label)
+      .find(Boolean)
+    const query = [coreName(e.name), firstTherapy ? coreName(firstTherapy) : '']
+      .filter(Boolean)
+      .join(' ')
+    links.push({ label: 'Outcome publications', sub: 'PubMed', url: pubmedSearch(query) })
+  } else {
+    return null
+  }
+
+  return (
+    <section className="detail-section">
+      <h3>More info</h3>
+      <div className="link-buttons">
+        {links.map((l, i) => (
+          <a
+            key={i}
+            className="link-btn"
+            href={l.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="link-btn-label">{l.label}</span>
+            {l.sub && <span className="link-btn-sub">{l.sub}</span>}
+            <span className="link-btn-ext" aria-hidden="true">↗</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}
+
 function Facts({ e }: { e: Entity }) {
   switch (e.type) {
     case 'condition':
@@ -247,6 +324,8 @@ export default function DetailPanel({
           <PulseMeter value={node.pulse} />
           <Facts e={e} />
         </section>
+
+        <MoreInfo node={node} byId={nodesById} />
 
         {groups.length > 0 && (
           <section className="detail-section">
