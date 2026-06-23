@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "therapy.schema.json",
+  "title": "Therapy",
+  "description": "A device, pharmaceutical, digital therapeutic, or procedure.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "therapyType", "name", "treats", "regulatoryStatus", "curation"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(rx|dev|dig|proc)-[a-z0-9-]+$",
+      "description": "Prefix encodes therapyType: rx-=pharmaceutical, dev-=device, dig-=digital, proc-=procedure."
+    },
+    "type": { "const": "therapy" },
+    "therapyType": { "enum": ["pharmaceutical", "device", "digital", "procedure"] },
+    "subtype": {
+      "type": "string",
+      "description": "Drug class or device class, e.g. 'SGLT2 inhibitor', 'LAA closure device', 'PA pressure sensor'."
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "company": {
+      "type": "string",
+      "pattern": "^co-[a-z0-9-]+$",
+      "description": "Reference to a company id. Optional (e.g. generic procedures have no maker)."
+    },
+    "treats": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^cond-[a-z0-9-]+$" },
+      "description": "References to condition ids this therapy targets."
+    },
+    "regulatoryStatus": { "enum": ["approved", "investigational", "discontinued"] },
+    "regulatoryDetail": {
+      "type": "string",
+      "description": "Free-text specifics, e.g. 'FDA approved 2021; CE mark 2020'."
+    },
+    "mechanism": { "type": "string" },
+    "description": { "type": "string" },
+    "curation": { "$ref": "#/definitions/curation" }
+  },
+  "definitions": {
+    "curation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "lastUpdated"],
+      "properties": {
+        "status": { "enum": ["draft", "curated"] },
+        "lastUpdated": { "type": "string", "format": "date" },
+        "sources": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

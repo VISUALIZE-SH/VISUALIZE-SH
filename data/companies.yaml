@@ -1,0 +1,190 @@
+# Companies — organizations that develop/market the therapies.
+# Schema: schema/company.schema.json   |   See schema/DATA_DICTIONARY.md
+# id prefix: co-
+
+- id: co-boston-scientific
+  type: company
+  name: "Boston Scientific"
+  ticker: "BSX"
+  hq: "Marlborough, MA, USA"
+  website: "https://www.bostonscientific.com"
+  description: "Medical device maker; LAA closure (Watchman franchise)."
+  curation: { status: curated, lastUpdated: 2026-06-22, sources: ["https://www.bostonscientific.com"] }
+
+- id: co-abbott
+  type: company
+  name: "Abbott"
+  ticker: "ABT"
+  hq: "Abbott Park, IL, USA"
+  website: "https://www.abbott.com"
+  description: "Structural heart portfolio incl. Amplatzer occluders, Amulet, and CardioMEMS."
+  curation: { status: curated, lastUpdated: 2026-06-22, sources: ["https://www.abbott.com"] }
+
+- id: co-wl-gore
+  type: company
+  name: "W. L. Gore & Associates"
+  hq: "Newark, DE, USA"
+  website: "https://www.goremedical.com"
+  description: "Maker of GORE Cardioform septal/PFO occluders."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-lifetech
+  type: company
+  name: "Lifetech Scientific"
+  hq: "Shenzhen, China"
+  description: "Structural heart occluders incl. the LAmbre LAA closure device."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-corvia
+  type: company
+  name: "Corvia Medical"
+  hq: "Tewksbury, MA, USA"
+  description: "Developer of the Corvia Atrial Shunt for heart failure."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-vwave
+  type: company
+  name: "V-Wave"
+  hq: "Caesarea, Israel"
+  description: "Interatrial shunt (Ventura) developer; acquired by Johnson & Johnson MedTech (2024)."
+  curation: { status: curated, lastUpdated: 2026-06-22, notes: "Verify post-acquisition product branding." }
+
+- id: co-edwards
+  type: company
+  name: "Edwards Lifesciences"
+  ticker: "EW"
+  hq: "Irvine, CA, USA"
+  website: "https://www.edwards.com"
+  description: "Structural heart company; APTURE transcatheter shunt and (via Endotronix) the Cordella sensor."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-endotronix
+  type: company
+  name: "Endotronix"
+  hq: "Naperville, IL, USA"
+  description: "Cordella PA pressure sensor; acquired by Edwards Lifesciences (2024)."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-fire1
+  type: company
+  name: "FIRE1"
+  hq: "Dublin, Ireland"
+  description: "Foundry-backed developer of the NORM inferior vena cava (IVC) sensor for HF monitoring."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-vectorious
+  type: company
+  name: "Vectorious Medical Technologies"
+  hq: "Tel Aviv, Israel"
+  description: "Developer of the V-LAP wireless left-atrial pressure sensor."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-shockwave
+  type: company
+  name: "Shockwave Medical (Johnson & Johnson)"
+  hq: "Santa Clara, CA, USA"
+  description: "Coronary Sinus Reducer (via Neovasc acquisition); Shockwave acquired by J&J (2024)."
+  curation: { status: curated, lastUpdated: 2026-06-22, notes: "Reducer lineage: Neovasc -> Shockwave (2023) -> J&J (2024). Verify." }
+
+- id: co-bristol-myers-squibb
+  type: company
+  name: "Bristol Myers Squibb"
+  ticker: "BMY"
+  hq: "New York, NY, USA"
+  website: "https://www.bms.com"
+  description: "Markets mavacamten (Camzyos) for HCM, via the MyoKardia acquisition."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-cytokinetics
+  type: company
+  name: "Cytokinetics"
+  ticker: "CYTK"
+  hq: "South San Francisco, CA, USA"
+  website: "https://www.cytokinetics.com"
+  description: "Muscle-biology company; aficamten (HCM) and omecamtiv mecarbil (HFrEF)."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-pfizer
+  type: company
+  name: "Pfizer"
+  ticker: "PFE"
+  hq: "New York, NY, USA"
+  website: "https://www.pfizer.com"
+  description: "Markets tafamidis (Vyndaqel/Vyndamax) for ATTR-CM."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-bridgebio
+  type: company
+  name: "BridgeBio Pharma"
+  ticker: "BBIO"
+  hq: "Palo Alto, CA, USA"
+  website: "https://www.bridgebio.com"
+  description: "Markets acoramidis (Attruby) for ATTR-CM."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-alnylam
+  type: company
+  name: "Alnylam Pharmaceuticals"
+  ticker: "ALNY"
+  hq: "Cambridge, MA, USA"
+  website: "https://www.alnylam.com"
+  description: "RNAi therapeutics; vutrisiran (Amvuttra) and patisiran (Onpattro) for ATTR."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-astrazeneca
+  type: company
+  name: "AstraZeneca"
+  ticker: "AZN"
+  hq: "Cambridge, UK"
+  website: "https://www.astrazeneca.com"
+  description: "Markets dapagliflozin (Farxiga/Forxiga), an SGLT2 inhibitor."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-boehringer-ingelheim
+  type: company
+  name: "Boehringer Ingelheim"
+  hq: "Ingelheim, Germany"
+  website: "https://www.boehringer-ingelheim.com"
+  description: "Empagliflozin (Jardiance), an SGLT2 inhibitor co-marketed with Eli Lilly."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-novartis
+  type: company
+  name: "Novartis"
+  ticker: "NVS"
+  hq: "Basel, Switzerland"
+  website: "https://www.novartis.com"
+  description: "Markets sacubitril/valsartan (Entresto), an ARNI."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-merck
+  type: company
+  name: "Merck (MSD)"
+  ticker: "MRK"
+  hq: "Rahway, NJ, USA"
+  website: "https://www.merck.com"
+  description: "Markets vericiguat (Verquvo), an sGC stimulator (co-developed with Bayer)."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-bayer
+  type: company
+  name: "Bayer"
+  ticker: "BAYRY"
+  hq: "Leverkusen, Germany"
+  website: "https://www.bayer.com"
+  description: "Finerenone (Kerendia), a nonsteroidal MRA; vericiguat co-developer."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: co-story-health
+  type: company
+  name: "Story Health"
+  hq: "Mountain View, CA, USA"
+  description: "Digital care platform for guideline-directed HF medical-therapy titration."
+  curation: { status: draft, lastUpdated: 2026-06-22, notes: "Digital health vendor; confirm structural-heart relevance and classification." }
+
+- id: co-hello-heart
+  type: company
+  name: "Hello Heart"
+  hq: "Menlo Park, CA, USA"
+  description: "Digital heart-health app for blood pressure and cardiovascular risk management."
+  curation: { status: draft, lastUpdated: 2026-06-22, notes: "Digital health vendor; refine indication relevance." }

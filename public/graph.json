@@ -1,0 +1,4001 @@
+{
+  "meta": {
+    "generatedAt": "2026-06-23T02:42:37.307Z",
+    "lastUpdated": "2026-06-22",
+    "counts": {
+      "condition": 10,
+      "device": 17,
+      "pharmaceutical": 12,
+      "procedure": 2,
+      "digital": 2,
+      "company": 23,
+      "trial": 33
+    },
+    "draftCount": 5,
+    "total": 99
+  },
+  "elements": {
+    "nodes": [
+      {
+        "data": {
+          "id": "cond-af",
+          "label": "Atrial Fibrillation",
+          "group": "condition",
+          "category": "Atrial fibrillation / stroke prevention",
+          "isDraft": false,
+          "degree": 9,
+          "entity": {
+            "id": "cond-af",
+            "type": "condition",
+            "name": "Atrial Fibrillation",
+            "abbreviation": "AF",
+            "category": "Atrial fibrillation / stroke prevention",
+            "anatomy": [
+              "left atrium",
+              "left atrial appendage"
+            ],
+            "description": "Most common sustained arrhythmia; thrombus typically forms in the left atrial appendage, the target of LAA closure for stroke prevention when anticoagulation is unsuitable.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-pfo",
+          "label": "Patent Foramen Ovale (PFO-associated stroke)",
+          "group": "condition",
+          "category": "Septal & congenital defect",
+          "isDraft": false,
+          "degree": 5,
+          "entity": {
+            "id": "cond-pfo",
+            "type": "condition",
+            "name": "Patent Foramen Ovale (PFO-associated stroke)",
+            "abbreviation": "PFO",
+            "category": "Septal & congenital defect",
+            "anatomy": [
+              "interatrial septum",
+              "fossa ovalis"
+            ],
+            "description": "Residual interatrial communication implicated in paradoxical embolism and cryptogenic stroke; transcatheter closure reduces recurrent stroke in selected patients.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-asd",
+          "label": "Atrial Septal Defect",
+          "group": "condition",
+          "category": "Septal & congenital defect",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "cond-asd",
+            "type": "condition",
+            "name": "Atrial Septal Defect",
+            "abbreviation": "ASD",
+            "category": "Septal & congenital defect",
+            "anatomy": [
+              "interatrial septum"
+            ],
+            "description": "Congenital opening in the atrial septum causing left-to-right shunt; secundum defects are amenable to transcatheter closure.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-vsd",
+          "label": "Ventricular Septal Defect",
+          "group": "condition",
+          "category": "Septal & congenital defect",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "cond-vsd",
+            "type": "condition",
+            "name": "Ventricular Septal Defect",
+            "abbreviation": "VSD",
+            "category": "Septal & congenital defect",
+            "anatomy": [
+              "interventricular septum"
+            ],
+            "description": "Congenital or post-infarction defect in the ventricular septum; selected muscular and post-MI defects are treated with transcatheter occluders.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-pda",
+          "label": "Patent Ductus Arteriosus",
+          "group": "condition",
+          "category": "Septal & congenital defect",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "cond-pda",
+            "type": "condition",
+            "name": "Patent Ductus Arteriosus",
+            "abbreviation": "PDA",
+            "category": "Septal & congenital defect",
+            "anatomy": [
+              "ductus arteriosus",
+              "aorta",
+              "pulmonary artery"
+            ],
+            "description": "Persistent fetal connection between aorta and pulmonary artery; transcatheter closure is standard, including in premature infants.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-hcm",
+          "label": "Hypertrophic Cardiomyopathy",
+          "group": "condition",
+          "category": "Cardiomyopathy",
+          "isDraft": false,
+          "degree": 8,
+          "entity": {
+            "id": "cond-hcm",
+            "type": "condition",
+            "name": "Hypertrophic Cardiomyopathy",
+            "abbreviation": "HCM",
+            "category": "Cardiomyopathy",
+            "anatomy": [
+              "interventricular septum",
+              "left ventricle",
+              "left ventricular outflow tract"
+            ],
+            "description": "Sarcomeric cardiomyopathy with LV hypertrophy; the obstructive form (HOCM) features dynamic LVOT obstruction treated by septal reduction or cardiac myosin inhibitors.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-attr-cm",
+          "label": "Transthyretin Amyloid Cardiomyopathy",
+          "group": "condition",
+          "category": "Infiltrative cardiomyopathy",
+          "isDraft": false,
+          "degree": 8,
+          "entity": {
+            "id": "cond-attr-cm",
+            "type": "condition",
+            "name": "Transthyretin Amyloid Cardiomyopathy",
+            "abbreviation": "ATTR-CM",
+            "category": "Infiltrative cardiomyopathy",
+            "anatomy": [
+              "myocardium",
+              "left ventricle"
+            ],
+            "description": "Infiltrative cardiomyopathy from misfolded transthyretin (wild-type or hereditary) depositing in the myocardium; treated with TTR stabilizers and silencers.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-hfref",
+          "label": "Heart Failure with Reduced Ejection Fraction",
+          "group": "condition",
+          "category": "Heart failure",
+          "isDraft": false,
+          "degree": 20,
+          "entity": {
+            "id": "cond-hfref",
+            "type": "condition",
+            "name": "Heart Failure with Reduced Ejection Fraction",
+            "abbreviation": "HFrEF",
+            "category": "Heart failure",
+            "anatomy": [
+              "left ventricle"
+            ],
+            "description": "Heart failure with LVEF <=40%; managed with guideline-directed medical therapy (four pillars) and increasingly with hemodynamic monitoring.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-hfpef",
+          "label": "Heart Failure with Preserved Ejection Fraction",
+          "group": "condition",
+          "category": "Heart failure",
+          "isDraft": false,
+          "degree": 22,
+          "entity": {
+            "id": "cond-hfpef",
+            "type": "condition",
+            "name": "Heart Failure with Preserved Ejection Fraction",
+            "abbreviation": "HFpEF",
+            "category": "Heart failure",
+            "anatomy": [
+              "left ventricle",
+              "left atrium"
+            ],
+            "description": "Heart failure with LVEF >=50% and elevated filling pressures; emerging therapies include SGLT2 inhibitors, finerenone, and interatrial shunts.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-cmd",
+          "label": "Coronary Microvascular Dysfunction & Refractory Angina",
+          "group": "condition",
+          "category": "Coronary microvascular",
+          "isDraft": false,
+          "degree": 4,
+          "entity": {
+            "id": "cond-cmd",
+            "type": "condition",
+            "name": "Coronary Microvascular Dysfunction & Refractory Angina",
+            "abbreviation": "CMD",
+            "category": "Coronary microvascular",
+            "anatomy": [
+              "coronary microvasculature",
+              "coronary sinus"
+            ],
+            "description": "Angina from impaired microvascular function (often with non-obstructive coronaries); device approaches include coronary sinus narrowing to redistribute perfusion.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-watchman-flx",
+          "label": "Watchman FLX",
+          "group": "device",
+          "category": "LAA closure device",
+          "isDraft": false,
+          "degree": 8,
+          "entity": {
+            "id": "dev-watchman-flx",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "LAA closure device",
+            "name": "Watchman FLX",
+            "company": "co-boston-scientific",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved (Watchman 2015; FLX 2020; FLX Pro 2023).",
+            "mechanism": "Percutaneously seals the left atrial appendage to prevent thrombus embolization in non-valvular AF.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amulet",
+          "label": "Amplatzer Amulet",
+          "group": "device",
+          "category": "LAA closure device",
+          "isDraft": false,
+          "degree": 4,
+          "entity": {
+            "id": "dev-amulet",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "LAA closure device",
+            "name": "Amplatzer Amulet",
+            "company": "co-abbott",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved 2021; dual-seal (lobe + disc) design.",
+            "mechanism": "Dual-seal LAA occluder for stroke prevention in non-valvular AF.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lambre",
+          "label": "LAmbre",
+          "group": "device",
+          "category": "LAA closure device",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "dev-lambre",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "LAA closure device",
+            "name": "LAmbre",
+            "company": "co-lifetech",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "CE mark and China NMPA approved; investigational in the US.",
+            "mechanism": "Umbrella-and-cover LAA occluder designed for variable appendage anatomy.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-pfo",
+          "label": "Amplatzer PFO Occluder",
+          "group": "device",
+          "category": "PFO closure device",
+          "isDraft": false,
+          "degree": 4,
+          "entity": {
+            "id": "dev-amplatzer-pfo",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "PFO closure device",
+            "name": "Amplatzer PFO Occluder",
+            "company": "co-abbott",
+            "treats": [
+              "cond-pfo"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved 2016 for recurrent cryptogenic stroke due to PFO.",
+            "mechanism": "Double-disc nitinol occluder that closes the patent foramen ovale.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-gore-cardioform-septal",
+          "label": "GORE Cardioform Septal Occluder",
+          "group": "device",
+          "category": "Septal/PFO closure device",
+          "isDraft": false,
+          "degree": 4,
+          "entity": {
+            "id": "dev-gore-cardioform-septal",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Septal/PFO closure device",
+            "name": "GORE Cardioform Septal Occluder",
+            "company": "co-wl-gore",
+            "treats": [
+              "cond-pfo",
+              "cond-asd"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved for PFO and for secundum ASD closure.",
+            "mechanism": "ePTFE-covered nitinol frame occluder for PFO and atrial septal defects.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-asd",
+          "label": "Amplatzer Septal Occluder (ASO)",
+          "group": "device",
+          "category": "ASD closure device",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "dev-amplatzer-asd",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "ASD closure device",
+            "name": "Amplatzer Septal Occluder (ASO)",
+            "company": "co-abbott",
+            "treats": [
+              "cond-asd"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Long-established transcatheter device for secundum ASD.",
+            "mechanism": "Self-expanding double-disc occluder for secundum atrial septal defects.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-piccolo",
+          "label": "Amplatzer Piccolo Occluder",
+          "group": "device",
+          "category": "PDA closure device",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "dev-amplatzer-piccolo",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "PDA closure device",
+            "name": "Amplatzer Piccolo Occluder",
+            "company": "co-abbott",
+            "treats": [
+              "cond-pda"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved 2019; usable in premature infants >=700 g.",
+            "mechanism": "Miniature occluder for transcatheter closure of patent ductus arteriosus.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-vsd",
+          "label": "Amplatzer Muscular VSD Occluder",
+          "group": "device",
+          "category": "VSD closure device",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "dev-amplatzer-vsd",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "VSD closure device",
+            "name": "Amplatzer Muscular VSD Occluder",
+            "company": "co-abbott",
+            "treats": [
+              "cond-vsd"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Approved for muscular VSDs; membranous-VSD use remains investigational/off-label.",
+            "mechanism": "Double-disc occluder for muscular ventricular septal defects.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-corvia-shunt",
+          "label": "Corvia Atrial Shunt",
+          "group": "device",
+          "category": "interatrial shunt",
+          "isDraft": false,
+          "degree": 4,
+          "entity": {
+            "id": "dev-corvia-shunt",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "interatrial shunt",
+            "name": "Corvia Atrial Shunt",
+            "company": "co-corvia",
+            "treats": [
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational; FDA Breakthrough Device. Responder-subgroup signal in REDUCE LAP-HF II.",
+            "mechanism": "Implanted interatrial shunt that decompresses the left atrium to lower exertional filling pressure in HFpEF.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vwave-ventura",
+          "label": "Ventura Interatrial Shunt",
+          "group": "device",
+          "category": "interatrial shunt",
+          "isDraft": false,
+          "degree": 4,
+          "entity": {
+            "id": "dev-vwave-ventura",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "interatrial shunt",
+            "name": "Ventura Interatrial Shunt",
+            "company": "co-vwave",
+            "treats": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational. RELIEVE-HF neutral overall with a divergent HFrEF-subgroup signal.",
+            "mechanism": "Interatrial shunt to reduce left atrial pressure across the HF spectrum.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-edwards-apture",
+          "label": "APTURE Transcatheter Shunt",
+          "group": "device",
+          "category": "interatrial shunt",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "dev-edwards-apture",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "interatrial shunt",
+            "name": "APTURE Transcatheter Shunt",
+            "company": "co-edwards",
+            "treats": [
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational shunt-to-coronary-sinus system under clinical study (ALT FLOW).",
+            "mechanism": "Creates a left atrium-to-coronary-sinus shunt to lower left atrial pressure.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardiomems",
+          "label": "CardioMEMS HF System",
+          "group": "device",
+          "category": "PA pressure sensor",
+          "isDraft": false,
+          "degree": 5,
+          "entity": {
+            "id": "dev-cardiomems",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "PA pressure sensor",
+            "name": "CardioMEMS HF System",
+            "company": "co-abbott",
+            "treats": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved; indication expanded to NYHA II-III HF (CHAMPION, GUIDE-HF).",
+            "mechanism": "Wireless pulmonary-artery pressure sensor enabling pressure-guided HF management.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cordella",
+          "label": "Cordella PA Sensor",
+          "group": "device",
+          "category": "PA pressure sensor",
+          "isDraft": false,
+          "degree": 4,
+          "entity": {
+            "id": "dev-cordella",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "PA pressure sensor",
+            "name": "Cordella PA Sensor",
+            "company": "co-endotronix",
+            "treats": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved 2024 (PROACTIVE-HF); now part of Edwards Lifesciences.",
+            "mechanism": "Pulmonary-artery pressure sensor with a paired patient-management platform.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-fire1-norm",
+          "label": "FIRE1 NORM System",
+          "group": "device",
+          "category": "IVC sensor",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "dev-fire1-norm",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "IVC sensor",
+            "name": "FIRE1 NORM System",
+            "company": "co-fire1",
+            "treats": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational inferior vena cava sensor for congestion monitoring (FUTURE-HF).",
+            "mechanism": "Implantable IVC sensor that tracks vessel-area changes as a congestion surrogate.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vlap",
+          "label": "V-LAP",
+          "group": "device",
+          "category": "LA pressure sensor",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "dev-vlap",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "LA pressure sensor",
+            "name": "V-LAP",
+            "company": "co-vectorious",
+            "treats": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational wireless left-atrial pressure sensor (VECTOR-HF).",
+            "mechanism": "Direct left-atrial pressure measurement for granular pressure-guided HF management.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-coronary-sinus-reducer",
+          "label": "Coronary Sinus Reducer",
+          "group": "device",
+          "category": "coronary sinus reducer",
+          "isDraft": false,
+          "degree": 4,
+          "entity": {
+            "id": "dev-coronary-sinus-reducer",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "coronary sinus reducer",
+            "name": "Coronary Sinus Reducer",
+            "company": "co-shockwave",
+            "treats": [
+              "cond-cmd"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "CE marked in Europe; investigational in the US (COSIRA-II).",
+            "mechanism": "Hourglass stent narrows the coronary sinus to raise backward pressure and redistribute perfusion to ischemic myocardium.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-aflux",
+          "label": "A-Flux (CMD device)",
+          "group": "device",
+          "category": "coronary sinus / microvascular device",
+          "isDraft": true,
+          "degree": 1,
+          "entity": {
+            "id": "dev-aflux",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "coronary sinus / microvascular device",
+            "name": "A-Flux (CMD device)",
+            "treats": [
+              "cond-cmd"
+            ],
+            "regulatoryStatus": "investigational",
+            "mechanism": "User-flagged device targeting coronary microvascular dysfunction.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-06-22",
+              "notes": "Placeholder from user request ('A-flux for CMD'). VERIFY exact product name and manufacturer before curating; add company ref and sources."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-mavacamten",
+          "label": "Mavacamten (Camzyos)",
+          "group": "pharmaceutical",
+          "category": "cardiac myosin inhibitor",
+          "isDraft": false,
+          "degree": 4,
+          "entity": {
+            "id": "rx-mavacamten",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "cardiac myosin inhibitor",
+            "name": "Mavacamten (Camzyos)",
+            "company": "co-bristol-myers-squibb",
+            "treats": [
+              "cond-hcm"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved 2022 for symptomatic obstructive HCM; REMS program.",
+            "mechanism": "Reversibly inhibits cardiac myosin ATPase, reducing hypercontractility and LVOT obstruction.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-aficamten",
+          "label": "Aficamten",
+          "group": "pharmaceutical",
+          "category": "cardiac myosin inhibitor",
+          "isDraft": false,
+          "degree": 4,
+          "entity": {
+            "id": "rx-aficamten",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "cardiac myosin inhibitor",
+            "name": "Aficamten",
+            "company": "co-cytokinetics",
+            "treats": [
+              "cond-hcm"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Next-generation myosin inhibitor; FDA review pending after SEQUOIA-HCM. VERIFY current approval status.",
+            "mechanism": "Selective cardiac myosin inhibitor reducing LVOT gradients with a wider therapeutic window.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22",
+              "notes": "Regulatory status time-sensitive; confirm at next refresh."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-tafamidis",
+          "label": "Tafamidis (Vyndaqel/Vyndamax)",
+          "group": "pharmaceutical",
+          "category": "TTR stabilizer",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "rx-tafamidis",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "TTR stabilizer",
+            "name": "Tafamidis (Vyndaqel/Vyndamax)",
+            "company": "co-pfizer",
+            "treats": [
+              "cond-attr-cm"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved 2019 for ATTR-CM (ATTR-ACT).",
+            "mechanism": "Stabilizes the transthyretin tetramer, slowing amyloid fibril formation.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-acoramidis",
+          "label": "Acoramidis (Attruby)",
+          "group": "pharmaceutical",
+          "category": "TTR stabilizer",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "rx-acoramidis",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "TTR stabilizer",
+            "name": "Acoramidis (Attruby)",
+            "company": "co-bridgebio",
+            "treats": [
+              "cond-attr-cm"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved 2024 for ATTR-CM (ATTRibute-CM).",
+            "mechanism": "Near-complete TTR tetramer stabilizer mimicking a protective TTR variant.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-vutrisiran",
+          "label": "Vutrisiran (Amvuttra)",
+          "group": "pharmaceutical",
+          "category": "TTR silencer (siRNA)",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "rx-vutrisiran",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "TTR silencer (siRNA)",
+            "name": "Vutrisiran (Amvuttra)",
+            "company": "co-alnylam",
+            "treats": [
+              "cond-attr-cm"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Approved for hATTR polyneuropathy; ATTR-CM indication via HELIOS-B (2025). VERIFY label.",
+            "mechanism": "Subcutaneous RNAi that lowers hepatic transthyretin production.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-patisiran",
+          "label": "Patisiran (Onpattro)",
+          "group": "pharmaceutical",
+          "category": "TTR silencer (siRNA)",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "rx-patisiran",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "TTR silencer (siRNA)",
+            "name": "Patisiran (Onpattro)",
+            "company": "co-alnylam",
+            "treats": [
+              "cond-attr-cm"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Approved for hATTR polyneuropathy; ATTR-CM indication NOT approved (APOLLO-B; FDA declined 2023).",
+            "mechanism": "IV RNAi that lowers transthyretin production.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-dapagliflozin",
+          "label": "Dapagliflozin (Farxiga)",
+          "group": "pharmaceutical",
+          "category": "SGLT2 inhibitor",
+          "isDraft": false,
+          "degree": 5,
+          "entity": {
+            "id": "rx-dapagliflozin",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "SGLT2 inhibitor",
+            "name": "Dapagliflozin (Farxiga)",
+            "company": "co-astrazeneca",
+            "treats": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved across the HF spectrum (DAPA-HF, DELIVER).",
+            "mechanism": "SGLT2 inhibition with pleiotropic cardiorenal benefit; a pillar of GDMT.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-empagliflozin",
+          "label": "Empagliflozin (Jardiance)",
+          "group": "pharmaceutical",
+          "category": "SGLT2 inhibitor",
+          "isDraft": false,
+          "degree": 5,
+          "entity": {
+            "id": "rx-empagliflozin",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "SGLT2 inhibitor",
+            "name": "Empagliflozin (Jardiance)",
+            "company": "co-boehringer-ingelheim",
+            "treats": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved across the HF spectrum (EMPEROR-Reduced/Preserved); co-marketed with Eli Lilly.",
+            "mechanism": "SGLT2 inhibitor reducing HF hospitalization across ejection fractions.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-sacubitril-valsartan",
+          "label": "Sacubitril/Valsartan (Entresto)",
+          "group": "pharmaceutical",
+          "category": "ARNI",
+          "isDraft": false,
+          "degree": 4,
+          "entity": {
+            "id": "rx-sacubitril-valsartan",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "ARNI",
+            "name": "Sacubitril/Valsartan (Entresto)",
+            "company": "co-novartis",
+            "treats": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Approved for chronic HF; greatest benefit at lower EF (PARADIGM-HF; PARAGON-HF).",
+            "mechanism": "Angiotensin receptor-neprilysin inhibitor augmenting natriuretic peptides while blocking RAAS.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-vericiguat",
+          "label": "Vericiguat (Verquvo)",
+          "group": "pharmaceutical",
+          "category": "sGC stimulator",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "rx-vericiguat",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "sGC stimulator",
+            "name": "Vericiguat (Verquvo)",
+            "company": "co-merck",
+            "treats": [
+              "cond-hfref"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved 2021 for worsening HFrEF (VICTORIA).",
+            "mechanism": "Soluble guanylate cyclase stimulator restoring the NO-sGC-cGMP pathway.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-finerenone",
+          "label": "Finerenone (Kerendia)",
+          "group": "pharmaceutical",
+          "category": "nonsteroidal MRA",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "rx-finerenone",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "nonsteroidal MRA",
+            "name": "Finerenone (Kerendia)",
+            "company": "co-bayer",
+            "treats": [
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Approved for CKD in T2D; HFmrEF/HFpEF benefit shown in FINEARTS-HF (2024). VERIFY HF label.",
+            "mechanism": "Nonsteroidal mineralocorticoid receptor antagonist reducing cardiorenal inflammation/fibrosis.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-omecamtiv-mecarbil",
+          "label": "Omecamtiv Mecarbil",
+          "group": "pharmaceutical",
+          "category": "cardiac myosin activator",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "rx-omecamtiv-mecarbil",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "cardiac myosin activator",
+            "name": "Omecamtiv Mecarbil",
+            "company": "co-cytokinetics",
+            "treats": [
+              "cond-hfref"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "GALACTIC-HF modestly positive; FDA complete response letter (2023) - not approved.",
+            "mechanism": "Selective cardiac myosin activator increasing systolic ejection time and stroke volume.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-septal-myectomy",
+          "label": "Surgical Septal Myectomy",
+          "group": "procedure",
+          "category": "surgical septal reduction",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "proc-septal-myectomy",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "subtype": "surgical septal reduction",
+            "name": "Surgical Septal Myectomy",
+            "treats": [
+              "cond-hcm"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Established surgical standard of care for obstructive HCM at experienced centers.",
+            "mechanism": "Surgical resection of hypertrophied basal septum to relieve LVOT obstruction.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-alcohol-septal-ablation",
+          "label": "Alcohol Septal Ablation",
+          "group": "procedure",
+          "category": "percutaneous septal reduction",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "proc-alcohol-septal-ablation",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "subtype": "percutaneous septal reduction",
+            "name": "Alcohol Septal Ablation",
+            "treats": [
+              "cond-hcm"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Established percutaneous alternative to myectomy in selected patients.",
+            "mechanism": "Catheter-delivered ethanol infarcts a septal perforator to thin the basal septum and reduce obstruction.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dig-story-health",
+          "label": "Story Health Platform",
+          "group": "digital",
+          "category": "digital HF management / GDMT titration",
+          "isDraft": true,
+          "degree": 3,
+          "entity": {
+            "id": "dig-story-health",
+            "type": "therapy",
+            "therapyType": "digital",
+            "subtype": "digital HF management / GDMT titration",
+            "name": "Story Health Platform",
+            "company": "co-story-health",
+            "treats": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Care-delivery software (not an FDA-cleared DTx); classification varies. VERIFY.",
+            "mechanism": "AI-assisted remote titration of guideline-directed medical therapy with care-team workflows.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-06-22",
+              "notes": "Confirm structural-heart relevance, indication, and regulatory classification."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dig-hello-heart",
+          "label": "Hello Heart",
+          "group": "digital",
+          "category": "digital cardiovascular management",
+          "isDraft": true,
+          "degree": 2,
+          "entity": {
+            "id": "dig-hello-heart",
+            "type": "therapy",
+            "therapyType": "digital",
+            "subtype": "digital cardiovascular management",
+            "name": "Hello Heart",
+            "company": "co-hello-heart",
+            "treats": [
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Consumer digital health app for BP/CV risk; not a structural-heart-specific therapy. VERIFY relevance.",
+            "mechanism": "App-based blood-pressure tracking and behavioral coaching for cardiovascular risk.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-06-22",
+              "notes": "Indication mapping is loose; refine or remove during curation."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-boston-scientific",
+          "label": "Boston Scientific",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-boston-scientific",
+            "type": "company",
+            "name": "Boston Scientific",
+            "ticker": "BSX",
+            "hq": "Marlborough, MA, USA",
+            "website": "https://www.bostonscientific.com",
+            "description": "Medical device maker; LAA closure (Watchman franchise).",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22",
+              "sources": [
+                "https://www.bostonscientific.com"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-abbott",
+          "label": "Abbott",
+          "group": "company",
+          "isDraft": false,
+          "degree": 6,
+          "entity": {
+            "id": "co-abbott",
+            "type": "company",
+            "name": "Abbott",
+            "ticker": "ABT",
+            "hq": "Abbott Park, IL, USA",
+            "website": "https://www.abbott.com",
+            "description": "Structural heart portfolio incl. Amplatzer occluders, Amulet, and CardioMEMS.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22",
+              "sources": [
+                "https://www.abbott.com"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-wl-gore",
+          "label": "W. L. Gore & Associates",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-wl-gore",
+            "type": "company",
+            "name": "W. L. Gore & Associates",
+            "hq": "Newark, DE, USA",
+            "website": "https://www.goremedical.com",
+            "description": "Maker of GORE Cardioform septal/PFO occluders.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-lifetech",
+          "label": "Lifetech Scientific",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-lifetech",
+            "type": "company",
+            "name": "Lifetech Scientific",
+            "hq": "Shenzhen, China",
+            "description": "Structural heart occluders incl. the LAmbre LAA closure device.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-corvia",
+          "label": "Corvia Medical",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-corvia",
+            "type": "company",
+            "name": "Corvia Medical",
+            "hq": "Tewksbury, MA, USA",
+            "description": "Developer of the Corvia Atrial Shunt for heart failure.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-vwave",
+          "label": "V-Wave",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-vwave",
+            "type": "company",
+            "name": "V-Wave",
+            "hq": "Caesarea, Israel",
+            "description": "Interatrial shunt (Ventura) developer; acquired by Johnson & Johnson MedTech (2024).",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22",
+              "notes": "Verify post-acquisition product branding."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-edwards",
+          "label": "Edwards Lifesciences",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-edwards",
+            "type": "company",
+            "name": "Edwards Lifesciences",
+            "ticker": "EW",
+            "hq": "Irvine, CA, USA",
+            "website": "https://www.edwards.com",
+            "description": "Structural heart company; APTURE transcatheter shunt and (via Endotronix) the Cordella sensor.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-endotronix",
+          "label": "Endotronix",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-endotronix",
+            "type": "company",
+            "name": "Endotronix",
+            "hq": "Naperville, IL, USA",
+            "description": "Cordella PA pressure sensor; acquired by Edwards Lifesciences (2024).",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-fire1",
+          "label": "FIRE1",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-fire1",
+            "type": "company",
+            "name": "FIRE1",
+            "hq": "Dublin, Ireland",
+            "description": "Foundry-backed developer of the NORM inferior vena cava (IVC) sensor for HF monitoring.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-vectorious",
+          "label": "Vectorious Medical Technologies",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-vectorious",
+            "type": "company",
+            "name": "Vectorious Medical Technologies",
+            "hq": "Tel Aviv, Israel",
+            "description": "Developer of the V-LAP wireless left-atrial pressure sensor.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-shockwave",
+          "label": "Shockwave Medical (Johnson & Johnson)",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-shockwave",
+            "type": "company",
+            "name": "Shockwave Medical (Johnson & Johnson)",
+            "hq": "Santa Clara, CA, USA",
+            "description": "Coronary Sinus Reducer (via Neovasc acquisition); Shockwave acquired by J&J (2024).",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22",
+              "notes": "Reducer lineage: Neovasc -> Shockwave (2023) -> J&J (2024). Verify."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-bristol-myers-squibb",
+          "label": "Bristol Myers Squibb",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-bristol-myers-squibb",
+            "type": "company",
+            "name": "Bristol Myers Squibb",
+            "ticker": "BMY",
+            "hq": "New York, NY, USA",
+            "website": "https://www.bms.com",
+            "description": "Markets mavacamten (Camzyos) for HCM, via the MyoKardia acquisition.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-cytokinetics",
+          "label": "Cytokinetics",
+          "group": "company",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "co-cytokinetics",
+            "type": "company",
+            "name": "Cytokinetics",
+            "ticker": "CYTK",
+            "hq": "South San Francisco, CA, USA",
+            "website": "https://www.cytokinetics.com",
+            "description": "Muscle-biology company; aficamten (HCM) and omecamtiv mecarbil (HFrEF).",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-pfizer",
+          "label": "Pfizer",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-pfizer",
+            "type": "company",
+            "name": "Pfizer",
+            "ticker": "PFE",
+            "hq": "New York, NY, USA",
+            "website": "https://www.pfizer.com",
+            "description": "Markets tafamidis (Vyndaqel/Vyndamax) for ATTR-CM.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-bridgebio",
+          "label": "BridgeBio Pharma",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-bridgebio",
+            "type": "company",
+            "name": "BridgeBio Pharma",
+            "ticker": "BBIO",
+            "hq": "Palo Alto, CA, USA",
+            "website": "https://www.bridgebio.com",
+            "description": "Markets acoramidis (Attruby) for ATTR-CM.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-alnylam",
+          "label": "Alnylam Pharmaceuticals",
+          "group": "company",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "co-alnylam",
+            "type": "company",
+            "name": "Alnylam Pharmaceuticals",
+            "ticker": "ALNY",
+            "hq": "Cambridge, MA, USA",
+            "website": "https://www.alnylam.com",
+            "description": "RNAi therapeutics; vutrisiran (Amvuttra) and patisiran (Onpattro) for ATTR.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-astrazeneca",
+          "label": "AstraZeneca",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-astrazeneca",
+            "type": "company",
+            "name": "AstraZeneca",
+            "ticker": "AZN",
+            "hq": "Cambridge, UK",
+            "website": "https://www.astrazeneca.com",
+            "description": "Markets dapagliflozin (Farxiga/Forxiga), an SGLT2 inhibitor.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-boehringer-ingelheim",
+          "label": "Boehringer Ingelheim",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-boehringer-ingelheim",
+            "type": "company",
+            "name": "Boehringer Ingelheim",
+            "hq": "Ingelheim, Germany",
+            "website": "https://www.boehringer-ingelheim.com",
+            "description": "Empagliflozin (Jardiance), an SGLT2 inhibitor co-marketed with Eli Lilly.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-novartis",
+          "label": "Novartis",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-novartis",
+            "type": "company",
+            "name": "Novartis",
+            "ticker": "NVS",
+            "hq": "Basel, Switzerland",
+            "website": "https://www.novartis.com",
+            "description": "Markets sacubitril/valsartan (Entresto), an ARNI.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-merck",
+          "label": "Merck (MSD)",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-merck",
+            "type": "company",
+            "name": "Merck (MSD)",
+            "ticker": "MRK",
+            "hq": "Rahway, NJ, USA",
+            "website": "https://www.merck.com",
+            "description": "Markets vericiguat (Verquvo), an sGC stimulator (co-developed with Bayer).",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-bayer",
+          "label": "Bayer",
+          "group": "company",
+          "isDraft": false,
+          "degree": 1,
+          "entity": {
+            "id": "co-bayer",
+            "type": "company",
+            "name": "Bayer",
+            "ticker": "BAYRY",
+            "hq": "Leverkusen, Germany",
+            "website": "https://www.bayer.com",
+            "description": "Finerenone (Kerendia), a nonsteroidal MRA; vericiguat co-developer.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-story-health",
+          "label": "Story Health",
+          "group": "company",
+          "isDraft": true,
+          "degree": 1,
+          "entity": {
+            "id": "co-story-health",
+            "type": "company",
+            "name": "Story Health",
+            "hq": "Mountain View, CA, USA",
+            "description": "Digital care platform for guideline-directed HF medical-therapy titration.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-06-22",
+              "notes": "Digital health vendor; confirm structural-heart relevance and classification."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-hello-heart",
+          "label": "Hello Heart",
+          "group": "company",
+          "isDraft": true,
+          "degree": 1,
+          "entity": {
+            "id": "co-hello-heart",
+            "type": "company",
+            "name": "Hello Heart",
+            "hq": "Menlo Park, CA, USA",
+            "description": "Digital heart-health app for blood pressure and cardiovascular risk management.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-06-22",
+              "notes": "Digital health vendor; refine indication relevance."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-protect-af",
+          "label": "PROTECT AF",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-protect-af",
+            "type": "trial",
+            "name": "PROTECT AF",
+            "phase": "Pivotal RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-watchman-flx"
+            ],
+            "enrollment": 707,
+            "year": 2014,
+            "primaryEndpoint": "Composite of stroke, cardiovascular death, and systemic embolism",
+            "outcomeSummary": "Watchman was noninferior (and superior on the long-term composite) to warfarin in non-valvular AF.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=PROTECT-AF+Watchman"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-prevail",
+          "label": "PREVAIL",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-prevail",
+            "type": "trial",
+            "name": "PREVAIL",
+            "phase": "Pivotal RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-watchman-flx"
+            ],
+            "enrollment": 407,
+            "year": 2014,
+            "primaryEndpoint": "Efficacy and safety vs warfarin",
+            "outcomeSummary": "Co-primary endpoints only partially met, but data supported approval alongside PROTECT AF.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://clinicaltrials.gov/search?term=PREVAIL+Watchman"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-prague-17",
+          "label": "PRAGUE-17",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "trial-prague-17",
+            "type": "trial",
+            "name": "PRAGUE-17",
+            "phase": "RCT (LAAC vs DOAC)",
+            "status": "completed",
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-watchman-flx",
+              "dev-amulet"
+            ],
+            "enrollment": 402,
+            "year": 2020,
+            "primaryEndpoint": "Composite of cardiovascular, neurological, and bleeding events",
+            "outcomeSummary": "LAA closure was noninferior to DOACs in high-risk AF patients.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=PRAGUE-17"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-amulet-ide",
+          "label": "Amulet IDE",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "trial-amulet-ide",
+            "type": "trial",
+            "name": "Amulet IDE",
+            "phase": "RCT (head-to-head)",
+            "status": "completed",
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-amulet",
+              "dev-watchman-flx"
+            ],
+            "enrollment": 1878,
+            "year": 2021,
+            "primaryEndpoint": "Safety, effective LAA occlusion, and stroke/systemic embolism",
+            "outcomeSummary": "Amulet was noninferior to Watchman; more peri-procedural complications but superior LAA closure.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=Amulet+IDE"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-option",
+          "label": "OPTION",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-option",
+            "type": "trial",
+            "name": "OPTION",
+            "phase": "RCT (LAAC vs DOAC post-ablation)",
+            "status": "completed",
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-watchman-flx"
+            ],
+            "enrollment": 1600,
+            "year": 2025,
+            "primaryEndpoint": "Stroke/death and non-procedural bleeding after AF ablation",
+            "outcomeSummary": "LAA closure was noninferior for ischemic events with less non-procedural bleeding than DOAC after ablation.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=OPTION+Watchman"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-champion-af",
+          "label": "CHAMPION-AF",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-champion-af",
+            "type": "trial",
+            "name": "CHAMPION-AF",
+            "phase": "RCT (LAAC vs DOAC)",
+            "status": "active",
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-watchman-flx"
+            ],
+            "enrollment": 3000,
+            "primaryEndpoint": "Stroke/systemic embolism and bleeding vs first-line DOAC",
+            "outcomeSummary": "Large RCT testing first-line LAA closure vs DOAC in a broad AF population; results pending.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/search?term=CHAMPION-AF"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22",
+              "notes": "Confirm enrollment and readout date at refresh."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-respect",
+          "label": "RESPECT",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-respect",
+            "type": "trial",
+            "name": "RESPECT",
+            "phase": "RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-pfo"
+            ],
+            "therapies": [
+              "dev-amplatzer-pfo"
+            ],
+            "enrollment": 980,
+            "year": 2017,
+            "primaryEndpoint": "Recurrent ischemic stroke",
+            "outcomeSummary": "Extended follow-up showed PFO closure superior to medical therapy for recurrent cryptogenic stroke.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=RESPECT+PFO"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-reduce",
+          "label": "Gore REDUCE",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-reduce",
+            "type": "trial",
+            "name": "Gore REDUCE",
+            "phase": "RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-pfo"
+            ],
+            "therapies": [
+              "dev-gore-cardioform-septal"
+            ],
+            "enrollment": 664,
+            "year": 2017,
+            "primaryEndpoint": "Recurrent stroke and new brain infarcts",
+            "outcomeSummary": "PFO closure reduced recurrent stroke versus antiplatelet therapy alone.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=Gore+REDUCE+PFO"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-close",
+          "label": "CLOSE",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-close",
+            "type": "trial",
+            "name": "CLOSE",
+            "phase": "RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-pfo"
+            ],
+            "therapies": [
+              "dev-amplatzer-pfo"
+            ],
+            "enrollment": 663,
+            "year": 2017,
+            "primaryEndpoint": "Recurrent stroke",
+            "outcomeSummary": "Closure superior to antiplatelet therapy in patients with high-risk PFO features (multiple devices used).",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=CLOSE+PFO+trial"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22",
+              "notes": "CLOSE permitted several occluders; therapy ref is representative."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-explorer-hcm",
+          "label": "EXPLORER-HCM",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-explorer-hcm",
+            "type": "trial",
+            "name": "EXPLORER-HCM",
+            "nctId": "NCT03470545",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hcm"
+            ],
+            "therapies": [
+              "rx-mavacamten"
+            ],
+            "enrollment": 251,
+            "year": 2020,
+            "primaryEndpoint": "Composite functional/symptomatic improvement (peak VO2 + NYHA)",
+            "outcomeSummary": "Mavacamten improved exercise capacity, LVOT gradient, symptoms, and quality of life in obstructive HCM.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT03470545"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-valor-hcm",
+          "label": "VALOR-HCM",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-valor-hcm",
+            "type": "trial",
+            "name": "VALOR-HCM",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hcm"
+            ],
+            "therapies": [
+              "rx-mavacamten"
+            ],
+            "enrollment": 112,
+            "year": 2022,
+            "primaryEndpoint": "Decision to proceed with septal reduction therapy",
+            "outcomeSummary": "Mavacamten markedly reduced eligibility/need for septal reduction therapy in severely symptomatic obstructive HCM.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=VALOR-HCM"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-sequoia-hcm",
+          "label": "SEQUOIA-HCM",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-sequoia-hcm",
+            "type": "trial",
+            "name": "SEQUOIA-HCM",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hcm"
+            ],
+            "therapies": [
+              "rx-aficamten"
+            ],
+            "enrollment": 282,
+            "year": 2024,
+            "primaryEndpoint": "Change in peak oxygen uptake (peak VO2)",
+            "outcomeSummary": "Aficamten significantly improved peak VO2 and all secondary endpoints in obstructive HCM.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=SEQUOIA-HCM"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-maple-hcm",
+          "label": "MAPLE-HCM",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-maple-hcm",
+            "type": "trial",
+            "name": "MAPLE-HCM",
+            "phase": "Phase 3 RCT (monotherapy)",
+            "status": "active",
+            "conditions": [
+              "cond-hcm"
+            ],
+            "therapies": [
+              "rx-aficamten"
+            ],
+            "primaryEndpoint": "Aficamten vs metoprolol as monotherapy (peak VO2)",
+            "outcomeSummary": "Head-to-head monotherapy comparison against a beta-blocker; ongoing.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/search?term=MAPLE-HCM"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-attr-act",
+          "label": "ATTR-ACT",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-attr-act",
+            "type": "trial",
+            "name": "ATTR-ACT",
+            "nctId": "NCT01994889",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-attr-cm"
+            ],
+            "therapies": [
+              "rx-tafamidis"
+            ],
+            "enrollment": 441,
+            "year": 2018,
+            "primaryEndpoint": "All-cause mortality and cardiovascular hospitalizations",
+            "outcomeSummary": "Tafamidis reduced mortality and cardiovascular hospitalizations in ATTR-CM.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01994889"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-attribute-cm",
+          "label": "ATTRibute-CM",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-attribute-cm",
+            "type": "trial",
+            "name": "ATTRibute-CM",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-attr-cm"
+            ],
+            "therapies": [
+              "rx-acoramidis"
+            ],
+            "enrollment": 632,
+            "year": 2023,
+            "primaryEndpoint": "Hierarchical composite of death and cardiovascular hospitalization",
+            "outcomeSummary": "Acoramidis improved the hierarchical composite endpoint, supporting FDA approval.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=ATTRibute-CM"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-helios-b",
+          "label": "HELIOS-B",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-helios-b",
+            "type": "trial",
+            "name": "HELIOS-B",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-attr-cm"
+            ],
+            "therapies": [
+              "rx-vutrisiran"
+            ],
+            "enrollment": 655,
+            "year": 2024,
+            "primaryEndpoint": "All-cause mortality and recurrent cardiovascular events",
+            "outcomeSummary": "Vutrisiran reduced mortality and cardiovascular events in ATTR-CM.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=HELIOS-B"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-apollo-b",
+          "label": "APOLLO-B",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-apollo-b",
+            "type": "trial",
+            "name": "APOLLO-B",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-attr-cm"
+            ],
+            "therapies": [
+              "rx-patisiran"
+            ],
+            "enrollment": 360,
+            "year": 2023,
+            "primaryEndpoint": "6-minute walk distance",
+            "outcomeSummary": "Patisiran improved functional measures, but the FDA declined the ATTR-CM indication.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://clinicaltrials.gov/search?term=APOLLO-B+patisiran"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-paradigm-hf",
+          "label": "PARADIGM-HF",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-paradigm-hf",
+            "type": "trial",
+            "name": "PARADIGM-HF",
+            "nctId": "NCT01035255",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "rx-sacubitril-valsartan"
+            ],
+            "enrollment": 8442,
+            "year": 2014,
+            "primaryEndpoint": "Cardiovascular death or HF hospitalization",
+            "outcomeSummary": "Sacubitril/valsartan was superior to enalapril in HFrEF, establishing ARNI as foundational therapy.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01035255"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-dapa-hf",
+          "label": "DAPA-HF",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-dapa-hf",
+            "type": "trial",
+            "name": "DAPA-HF",
+            "nctId": "NCT03036124",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "rx-dapagliflozin"
+            ],
+            "enrollment": 4744,
+            "year": 2019,
+            "primaryEndpoint": "Worsening HF or cardiovascular death",
+            "outcomeSummary": "Dapagliflozin reduced events in HFrEF regardless of diabetes status.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT03036124"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-deliver",
+          "label": "DELIVER",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-deliver",
+            "type": "trial",
+            "name": "DELIVER",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hfpef"
+            ],
+            "therapies": [
+              "rx-dapagliflozin"
+            ],
+            "enrollment": 6263,
+            "year": 2022,
+            "primaryEndpoint": "Cardiovascular death or worsening HF",
+            "outcomeSummary": "Dapagliflozin reduced events in HF with mildly reduced or preserved ejection fraction.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=DELIVER+dapagliflozin"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-emperor-preserved",
+          "label": "EMPEROR-Preserved",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-emperor-preserved",
+            "type": "trial",
+            "name": "EMPEROR-Preserved",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hfpef"
+            ],
+            "therapies": [
+              "rx-empagliflozin"
+            ],
+            "enrollment": 5988,
+            "year": 2021,
+            "primaryEndpoint": "Cardiovascular death or HF hospitalization",
+            "outcomeSummary": "First clearly positive HFpEF outcomes trial, driven by reduced HF hospitalizations.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=EMPEROR-Preserved"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-emperor-reduced",
+          "label": "EMPEROR-Reduced",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-emperor-reduced",
+            "type": "trial",
+            "name": "EMPEROR-Reduced",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "rx-empagliflozin"
+            ],
+            "enrollment": 3730,
+            "year": 2020,
+            "primaryEndpoint": "Cardiovascular death or HF hospitalization",
+            "outcomeSummary": "Empagliflozin reduced cardiovascular death or HF hospitalization in HFrEF.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=EMPEROR-Reduced"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-victoria",
+          "label": "VICTORIA",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-victoria",
+            "type": "trial",
+            "name": "VICTORIA",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "rx-vericiguat"
+            ],
+            "enrollment": 5050,
+            "year": 2020,
+            "primaryEndpoint": "Cardiovascular death or HF hospitalization",
+            "outcomeSummary": "Vericiguat reduced events in patients with recently worsening HFrEF.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=VICTORIA+vericiguat"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-finearts-hf",
+          "label": "FINEARTS-HF",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-finearts-hf",
+            "type": "trial",
+            "name": "FINEARTS-HF",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hfpef"
+            ],
+            "therapies": [
+              "rx-finerenone"
+            ],
+            "enrollment": 6001,
+            "year": 2024,
+            "primaryEndpoint": "Cardiovascular death and total worsening HF events",
+            "outcomeSummary": "Finerenone reduced worsening-HF events in HF with mildly reduced or preserved ejection fraction.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=FINEARTS-HF"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-galactic-hf",
+          "label": "GALACTIC-HF",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-galactic-hf",
+            "type": "trial",
+            "name": "GALACTIC-HF",
+            "phase": "Phase 3 RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "rx-omecamtiv-mecarbil"
+            ],
+            "enrollment": 8256,
+            "year": 2020,
+            "primaryEndpoint": "Composite of HF event or cardiovascular death",
+            "outcomeSummary": "Modest reduction in the primary composite; the FDA did not approve omecamtiv mecarbil.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://clinicaltrials.gov/search?term=GALACTIC-HF"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-reduce-lap-hf-i",
+          "label": "REDUCE LAP-HF I",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-reduce-lap-hf-i",
+            "type": "trial",
+            "name": "REDUCE LAP-HF I",
+            "phase": "RCT (mechanistic, sham-controlled)",
+            "status": "completed",
+            "conditions": [
+              "cond-hfpef"
+            ],
+            "therapies": [
+              "dev-corvia-shunt"
+            ],
+            "enrollment": 44,
+            "year": 2018,
+            "primaryEndpoint": "Exercise pulmonary capillary wedge pressure",
+            "outcomeSummary": "Sham-controlled pilot demonstrated reduced exercise wedge pressure with the atrial shunt.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=REDUCE+LAP-HF+I"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-reduce-lap-hf-ii",
+          "label": "REDUCE LAP-HF II",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-reduce-lap-hf-ii",
+            "type": "trial",
+            "name": "REDUCE LAP-HF II",
+            "phase": "Pivotal RCT (sham-controlled)",
+            "status": "completed",
+            "conditions": [
+              "cond-hfpef"
+            ],
+            "therapies": [
+              "dev-corvia-shunt"
+            ],
+            "enrollment": 626,
+            "year": 2022,
+            "primaryEndpoint": "Hierarchical composite of CV death/stroke, HF events, and KCCQ",
+            "outcomeSummary": "Neutral overall; a prespecified responder subgroup (without latent pulmonary vascular disease) appeared to benefit.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://clinicaltrials.gov/search?term=REDUCE+LAP-HF+II"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-relieve-hf",
+          "label": "RELIEVE-HF",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "trial-relieve-hf",
+            "type": "trial",
+            "name": "RELIEVE-HF",
+            "phase": "Pivotal RCT (sham-controlled)",
+            "status": "completed",
+            "conditions": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "therapies": [
+              "dev-vwave-ventura"
+            ],
+            "enrollment": 508,
+            "year": 2024,
+            "primaryEndpoint": "Hierarchical clinical composite (death, transplant/LVAD, HF events, KCCQ)",
+            "outcomeSummary": "Neutral overall with opposing directional effects: apparent benefit in HFrEF and a harm signal in HFpEF.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://clinicaltrials.gov/search?term=RELIEVE-HF"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-champion",
+          "label": "CHAMPION",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "trial-champion",
+            "type": "trial",
+            "name": "CHAMPION",
+            "phase": "RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "therapies": [
+              "dev-cardiomems"
+            ],
+            "enrollment": 550,
+            "year": 2011,
+            "primaryEndpoint": "HF hospitalizations",
+            "outcomeSummary": "Pulmonary-artery-pressure-guided management reduced HF hospitalizations.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=CHAMPION+CardioMEMS"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-guide-hf",
+          "label": "GUIDE-HF",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "trial-guide-hf",
+            "type": "trial",
+            "name": "GUIDE-HF",
+            "phase": "RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "therapies": [
+              "dev-cardiomems"
+            ],
+            "enrollment": 1000,
+            "year": 2021,
+            "primaryEndpoint": "All-cause mortality and total HF events",
+            "outcomeSummary": "Primary endpoint neutral overall; a pre-COVID-19 sensitivity analysis suggested benefit.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://clinicaltrials.gov/search?term=GUIDE-HF"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-proactive-hf",
+          "label": "PROACTIVE-HF",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 3,
+          "entity": {
+            "id": "trial-proactive-hf",
+            "type": "trial",
+            "name": "PROACTIVE-HF",
+            "phase": "Single-arm pivotal",
+            "status": "completed",
+            "conditions": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "therapies": [
+              "dev-cordella"
+            ],
+            "enrollment": 456,
+            "year": 2023,
+            "primaryEndpoint": "HF events and mortality vs performance goal; safety",
+            "outcomeSummary": "Met prespecified safety and efficacy goals, supporting FDA approval of the Cordella sensor.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=PROACTIVE-HF+Cordella"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cosira",
+          "label": "COSIRA",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-cosira",
+            "type": "trial",
+            "name": "COSIRA",
+            "phase": "RCT (sham-controlled)",
+            "status": "completed",
+            "conditions": [
+              "cond-cmd"
+            ],
+            "therapies": [
+              "dev-coronary-sinus-reducer"
+            ],
+            "enrollment": 104,
+            "year": 2015,
+            "primaryEndpoint": "Improvement in CCS angina class",
+            "outcomeSummary": "The coronary sinus Reducer improved angina class in refractory angina versus sham.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/search?term=COSIRA+reducer"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cosira-ii",
+          "label": "COSIRA-II",
+          "group": "trial",
+          "isDraft": false,
+          "degree": 2,
+          "entity": {
+            "id": "trial-cosira-ii",
+            "type": "trial",
+            "name": "COSIRA-II",
+            "phase": "Pivotal RCT (sham-controlled)",
+            "status": "active",
+            "conditions": [
+              "cond-cmd"
+            ],
+            "therapies": [
+              "dev-coronary-sinus-reducer"
+            ],
+            "primaryEndpoint": "Angina and ischemia endpoints",
+            "outcomeSummary": "US pivotal sham-controlled trial of the coronary sinus Reducer; ongoing.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/search?term=COSIRA-II"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "data": {
+          "id": "dev-watchman-flx__made_by__co-boston-scientific",
+          "source": "dev-watchman-flx",
+          "target": "co-boston-scientific",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-watchman-flx__treats__cond-af",
+          "source": "dev-watchman-flx",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amulet__made_by__co-abbott",
+          "source": "dev-amulet",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amulet__treats__cond-af",
+          "source": "dev-amulet",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lambre__made_by__co-lifetech",
+          "source": "dev-lambre",
+          "target": "co-lifetech",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lambre__treats__cond-af",
+          "source": "dev-lambre",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-pfo__made_by__co-abbott",
+          "source": "dev-amplatzer-pfo",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-pfo__treats__cond-pfo",
+          "source": "dev-amplatzer-pfo",
+          "target": "cond-pfo",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-gore-cardioform-septal__made_by__co-wl-gore",
+          "source": "dev-gore-cardioform-septal",
+          "target": "co-wl-gore",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-gore-cardioform-septal__treats__cond-pfo",
+          "source": "dev-gore-cardioform-septal",
+          "target": "cond-pfo",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-gore-cardioform-septal__treats__cond-asd",
+          "source": "dev-gore-cardioform-septal",
+          "target": "cond-asd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-asd__made_by__co-abbott",
+          "source": "dev-amplatzer-asd",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-asd__treats__cond-asd",
+          "source": "dev-amplatzer-asd",
+          "target": "cond-asd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-piccolo__made_by__co-abbott",
+          "source": "dev-amplatzer-piccolo",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-piccolo__treats__cond-pda",
+          "source": "dev-amplatzer-piccolo",
+          "target": "cond-pda",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-vsd__made_by__co-abbott",
+          "source": "dev-amplatzer-vsd",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-vsd__treats__cond-vsd",
+          "source": "dev-amplatzer-vsd",
+          "target": "cond-vsd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-corvia-shunt__made_by__co-corvia",
+          "source": "dev-corvia-shunt",
+          "target": "co-corvia",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-corvia-shunt__treats__cond-hfpef",
+          "source": "dev-corvia-shunt",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vwave-ventura__made_by__co-vwave",
+          "source": "dev-vwave-ventura",
+          "target": "co-vwave",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vwave-ventura__treats__cond-hfref",
+          "source": "dev-vwave-ventura",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vwave-ventura__treats__cond-hfpef",
+          "source": "dev-vwave-ventura",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-edwards-apture__made_by__co-edwards",
+          "source": "dev-edwards-apture",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-edwards-apture__treats__cond-hfpef",
+          "source": "dev-edwards-apture",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardiomems__made_by__co-abbott",
+          "source": "dev-cardiomems",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardiomems__treats__cond-hfref",
+          "source": "dev-cardiomems",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardiomems__treats__cond-hfpef",
+          "source": "dev-cardiomems",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cordella__made_by__co-endotronix",
+          "source": "dev-cordella",
+          "target": "co-endotronix",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cordella__treats__cond-hfref",
+          "source": "dev-cordella",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cordella__treats__cond-hfpef",
+          "source": "dev-cordella",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-fire1-norm__made_by__co-fire1",
+          "source": "dev-fire1-norm",
+          "target": "co-fire1",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-fire1-norm__treats__cond-hfref",
+          "source": "dev-fire1-norm",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-fire1-norm__treats__cond-hfpef",
+          "source": "dev-fire1-norm",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vlap__made_by__co-vectorious",
+          "source": "dev-vlap",
+          "target": "co-vectorious",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vlap__treats__cond-hfref",
+          "source": "dev-vlap",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vlap__treats__cond-hfpef",
+          "source": "dev-vlap",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-coronary-sinus-reducer__made_by__co-shockwave",
+          "source": "dev-coronary-sinus-reducer",
+          "target": "co-shockwave",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-coronary-sinus-reducer__treats__cond-cmd",
+          "source": "dev-coronary-sinus-reducer",
+          "target": "cond-cmd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-aflux__treats__cond-cmd",
+          "source": "dev-aflux",
+          "target": "cond-cmd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-mavacamten__made_by__co-bristol-myers-squibb",
+          "source": "rx-mavacamten",
+          "target": "co-bristol-myers-squibb",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-mavacamten__treats__cond-hcm",
+          "source": "rx-mavacamten",
+          "target": "cond-hcm",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-aficamten__made_by__co-cytokinetics",
+          "source": "rx-aficamten",
+          "target": "co-cytokinetics",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-aficamten__treats__cond-hcm",
+          "source": "rx-aficamten",
+          "target": "cond-hcm",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-tafamidis__made_by__co-pfizer",
+          "source": "rx-tafamidis",
+          "target": "co-pfizer",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-tafamidis__treats__cond-attr-cm",
+          "source": "rx-tafamidis",
+          "target": "cond-attr-cm",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-acoramidis__made_by__co-bridgebio",
+          "source": "rx-acoramidis",
+          "target": "co-bridgebio",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-acoramidis__treats__cond-attr-cm",
+          "source": "rx-acoramidis",
+          "target": "cond-attr-cm",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-vutrisiran__made_by__co-alnylam",
+          "source": "rx-vutrisiran",
+          "target": "co-alnylam",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-vutrisiran__treats__cond-attr-cm",
+          "source": "rx-vutrisiran",
+          "target": "cond-attr-cm",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-patisiran__made_by__co-alnylam",
+          "source": "rx-patisiran",
+          "target": "co-alnylam",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-patisiran__treats__cond-attr-cm",
+          "source": "rx-patisiran",
+          "target": "cond-attr-cm",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-dapagliflozin__made_by__co-astrazeneca",
+          "source": "rx-dapagliflozin",
+          "target": "co-astrazeneca",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-dapagliflozin__treats__cond-hfref",
+          "source": "rx-dapagliflozin",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-dapagliflozin__treats__cond-hfpef",
+          "source": "rx-dapagliflozin",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-empagliflozin__made_by__co-boehringer-ingelheim",
+          "source": "rx-empagliflozin",
+          "target": "co-boehringer-ingelheim",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-empagliflozin__treats__cond-hfref",
+          "source": "rx-empagliflozin",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-empagliflozin__treats__cond-hfpef",
+          "source": "rx-empagliflozin",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-sacubitril-valsartan__made_by__co-novartis",
+          "source": "rx-sacubitril-valsartan",
+          "target": "co-novartis",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-sacubitril-valsartan__treats__cond-hfref",
+          "source": "rx-sacubitril-valsartan",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-sacubitril-valsartan__treats__cond-hfpef",
+          "source": "rx-sacubitril-valsartan",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-vericiguat__made_by__co-merck",
+          "source": "rx-vericiguat",
+          "target": "co-merck",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-vericiguat__treats__cond-hfref",
+          "source": "rx-vericiguat",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-finerenone__made_by__co-bayer",
+          "source": "rx-finerenone",
+          "target": "co-bayer",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-finerenone__treats__cond-hfpef",
+          "source": "rx-finerenone",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-omecamtiv-mecarbil__made_by__co-cytokinetics",
+          "source": "rx-omecamtiv-mecarbil",
+          "target": "co-cytokinetics",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-omecamtiv-mecarbil__treats__cond-hfref",
+          "source": "rx-omecamtiv-mecarbil",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-septal-myectomy__treats__cond-hcm",
+          "source": "proc-septal-myectomy",
+          "target": "cond-hcm",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-alcohol-septal-ablation__treats__cond-hcm",
+          "source": "proc-alcohol-septal-ablation",
+          "target": "cond-hcm",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-story-health__made_by__co-story-health",
+          "source": "dig-story-health",
+          "target": "co-story-health",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-story-health__treats__cond-hfref",
+          "source": "dig-story-health",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-story-health__treats__cond-hfpef",
+          "source": "dig-story-health",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-hello-heart__made_by__co-hello-heart",
+          "source": "dig-hello-heart",
+          "target": "co-hello-heart",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-hello-heart__treats__cond-hfpef",
+          "source": "dig-hello-heart",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-protect-af__evaluates__dev-watchman-flx",
+          "source": "trial-protect-af",
+          "target": "dev-watchman-flx",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-protect-af__studies__cond-af",
+          "source": "trial-protect-af",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-prevail__evaluates__dev-watchman-flx",
+          "source": "trial-prevail",
+          "target": "dev-watchman-flx",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-prevail__studies__cond-af",
+          "source": "trial-prevail",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-prague-17__evaluates__dev-watchman-flx",
+          "source": "trial-prague-17",
+          "target": "dev-watchman-flx",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-prague-17__evaluates__dev-amulet",
+          "source": "trial-prague-17",
+          "target": "dev-amulet",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-prague-17__studies__cond-af",
+          "source": "trial-prague-17",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-amulet-ide__evaluates__dev-amulet",
+          "source": "trial-amulet-ide",
+          "target": "dev-amulet",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-amulet-ide__evaluates__dev-watchman-flx",
+          "source": "trial-amulet-ide",
+          "target": "dev-watchman-flx",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-amulet-ide__studies__cond-af",
+          "source": "trial-amulet-ide",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-option__evaluates__dev-watchman-flx",
+          "source": "trial-option",
+          "target": "dev-watchman-flx",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-option__studies__cond-af",
+          "source": "trial-option",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-champion-af__evaluates__dev-watchman-flx",
+          "source": "trial-champion-af",
+          "target": "dev-watchman-flx",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-champion-af__studies__cond-af",
+          "source": "trial-champion-af",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-respect__evaluates__dev-amplatzer-pfo",
+          "source": "trial-respect",
+          "target": "dev-amplatzer-pfo",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-respect__studies__cond-pfo",
+          "source": "trial-respect",
+          "target": "cond-pfo",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-reduce__evaluates__dev-gore-cardioform-septal",
+          "source": "trial-reduce",
+          "target": "dev-gore-cardioform-septal",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-reduce__studies__cond-pfo",
+          "source": "trial-reduce",
+          "target": "cond-pfo",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-close__evaluates__dev-amplatzer-pfo",
+          "source": "trial-close",
+          "target": "dev-amplatzer-pfo",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-close__studies__cond-pfo",
+          "source": "trial-close",
+          "target": "cond-pfo",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-explorer-hcm__evaluates__rx-mavacamten",
+          "source": "trial-explorer-hcm",
+          "target": "rx-mavacamten",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-explorer-hcm__studies__cond-hcm",
+          "source": "trial-explorer-hcm",
+          "target": "cond-hcm",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-valor-hcm__evaluates__rx-mavacamten",
+          "source": "trial-valor-hcm",
+          "target": "rx-mavacamten",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-valor-hcm__studies__cond-hcm",
+          "source": "trial-valor-hcm",
+          "target": "cond-hcm",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-sequoia-hcm__evaluates__rx-aficamten",
+          "source": "trial-sequoia-hcm",
+          "target": "rx-aficamten",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-sequoia-hcm__studies__cond-hcm",
+          "source": "trial-sequoia-hcm",
+          "target": "cond-hcm",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-maple-hcm__evaluates__rx-aficamten",
+          "source": "trial-maple-hcm",
+          "target": "rx-aficamten",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-maple-hcm__studies__cond-hcm",
+          "source": "trial-maple-hcm",
+          "target": "cond-hcm",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-attr-act__evaluates__rx-tafamidis",
+          "source": "trial-attr-act",
+          "target": "rx-tafamidis",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-attr-act__studies__cond-attr-cm",
+          "source": "trial-attr-act",
+          "target": "cond-attr-cm",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-attribute-cm__evaluates__rx-acoramidis",
+          "source": "trial-attribute-cm",
+          "target": "rx-acoramidis",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-attribute-cm__studies__cond-attr-cm",
+          "source": "trial-attribute-cm",
+          "target": "cond-attr-cm",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-helios-b__evaluates__rx-vutrisiran",
+          "source": "trial-helios-b",
+          "target": "rx-vutrisiran",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-helios-b__studies__cond-attr-cm",
+          "source": "trial-helios-b",
+          "target": "cond-attr-cm",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-apollo-b__evaluates__rx-patisiran",
+          "source": "trial-apollo-b",
+          "target": "rx-patisiran",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-apollo-b__studies__cond-attr-cm",
+          "source": "trial-apollo-b",
+          "target": "cond-attr-cm",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-paradigm-hf__evaluates__rx-sacubitril-valsartan",
+          "source": "trial-paradigm-hf",
+          "target": "rx-sacubitril-valsartan",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-paradigm-hf__studies__cond-hfref",
+          "source": "trial-paradigm-hf",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-dapa-hf__evaluates__rx-dapagliflozin",
+          "source": "trial-dapa-hf",
+          "target": "rx-dapagliflozin",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-dapa-hf__studies__cond-hfref",
+          "source": "trial-dapa-hf",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-deliver__evaluates__rx-dapagliflozin",
+          "source": "trial-deliver",
+          "target": "rx-dapagliflozin",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-deliver__studies__cond-hfpef",
+          "source": "trial-deliver",
+          "target": "cond-hfpef",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-emperor-preserved__evaluates__rx-empagliflozin",
+          "source": "trial-emperor-preserved",
+          "target": "rx-empagliflozin",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-emperor-preserved__studies__cond-hfpef",
+          "source": "trial-emperor-preserved",
+          "target": "cond-hfpef",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-emperor-reduced__evaluates__rx-empagliflozin",
+          "source": "trial-emperor-reduced",
+          "target": "rx-empagliflozin",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-emperor-reduced__studies__cond-hfref",
+          "source": "trial-emperor-reduced",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-victoria__evaluates__rx-vericiguat",
+          "source": "trial-victoria",
+          "target": "rx-vericiguat",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-victoria__studies__cond-hfref",
+          "source": "trial-victoria",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-finearts-hf__evaluates__rx-finerenone",
+          "source": "trial-finearts-hf",
+          "target": "rx-finerenone",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-finearts-hf__studies__cond-hfpef",
+          "source": "trial-finearts-hf",
+          "target": "cond-hfpef",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-galactic-hf__evaluates__rx-omecamtiv-mecarbil",
+          "source": "trial-galactic-hf",
+          "target": "rx-omecamtiv-mecarbil",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-galactic-hf__studies__cond-hfref",
+          "source": "trial-galactic-hf",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-reduce-lap-hf-i__evaluates__dev-corvia-shunt",
+          "source": "trial-reduce-lap-hf-i",
+          "target": "dev-corvia-shunt",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-reduce-lap-hf-i__studies__cond-hfpef",
+          "source": "trial-reduce-lap-hf-i",
+          "target": "cond-hfpef",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-reduce-lap-hf-ii__evaluates__dev-corvia-shunt",
+          "source": "trial-reduce-lap-hf-ii",
+          "target": "dev-corvia-shunt",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-reduce-lap-hf-ii__studies__cond-hfpef",
+          "source": "trial-reduce-lap-hf-ii",
+          "target": "cond-hfpef",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-relieve-hf__evaluates__dev-vwave-ventura",
+          "source": "trial-relieve-hf",
+          "target": "dev-vwave-ventura",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-relieve-hf__studies__cond-hfref",
+          "source": "trial-relieve-hf",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-relieve-hf__studies__cond-hfpef",
+          "source": "trial-relieve-hf",
+          "target": "cond-hfpef",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-champion__evaluates__dev-cardiomems",
+          "source": "trial-champion",
+          "target": "dev-cardiomems",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-champion__studies__cond-hfref",
+          "source": "trial-champion",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-champion__studies__cond-hfpef",
+          "source": "trial-champion",
+          "target": "cond-hfpef",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-guide-hf__evaluates__dev-cardiomems",
+          "source": "trial-guide-hf",
+          "target": "dev-cardiomems",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-guide-hf__studies__cond-hfref",
+          "source": "trial-guide-hf",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-guide-hf__studies__cond-hfpef",
+          "source": "trial-guide-hf",
+          "target": "cond-hfpef",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-proactive-hf__evaluates__dev-cordella",
+          "source": "trial-proactive-hf",
+          "target": "dev-cordella",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-proactive-hf__studies__cond-hfref",
+          "source": "trial-proactive-hf",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-proactive-hf__studies__cond-hfpef",
+          "source": "trial-proactive-hf",
+          "target": "cond-hfpef",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cosira__evaluates__dev-coronary-sinus-reducer",
+          "source": "trial-cosira",
+          "target": "dev-coronary-sinus-reducer",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cosira__studies__cond-cmd",
+          "source": "trial-cosira",
+          "target": "cond-cmd",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cosira-ii__evaluates__dev-coronary-sinus-reducer",
+          "source": "trial-cosira-ii",
+          "target": "dev-coronary-sinus-reducer",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cosira-ii__studies__cond-cmd",
+          "source": "trial-cosira-ii",
+          "target": "cond-cmd",
+          "relationship": "studies"
+        }
+      }
+    ]
+  }
+}

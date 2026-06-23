@@ -1,0 +1,97 @@
+# Conditions / anatomy — the disease entities in non-valvular structural heart.
+# Schema: schema/condition.schema.json   |   See schema/DATA_DICTIONARY.md
+# id prefix: cond-
+# Recommended `category` vocabulary (keep consistent for filtering/coloring):
+#   "Atrial fibrillation / stroke prevention", "Septal & congenital defect",
+#   "Cardiomyopathy", "Infiltrative cardiomyopathy", "Heart failure",
+#   "Coronary microvascular"
+
+- id: cond-af
+  type: condition
+  name: "Atrial Fibrillation"
+  abbreviation: "AF"
+  category: "Atrial fibrillation / stroke prevention"
+  anatomy: ["left atrium", "left atrial appendage"]
+  description: "Most common sustained arrhythmia; thrombus typically forms in the left atrial appendage, the target of LAA closure for stroke prevention when anticoagulation is unsuitable."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: cond-pfo
+  type: condition
+  name: "Patent Foramen Ovale (PFO-associated stroke)"
+  abbreviation: "PFO"
+  category: "Septal & congenital defect"
+  anatomy: ["interatrial septum", "fossa ovalis"]
+  description: "Residual interatrial communication implicated in paradoxical embolism and cryptogenic stroke; transcatheter closure reduces recurrent stroke in selected patients."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: cond-asd
+  type: condition
+  name: "Atrial Septal Defect"
+  abbreviation: "ASD"
+  category: "Septal & congenital defect"
+  anatomy: ["interatrial septum"]
+  description: "Congenital opening in the atrial septum causing left-to-right shunt; secundum defects are amenable to transcatheter closure."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: cond-vsd
+  type: condition
+  name: "Ventricular Septal Defect"
+  abbreviation: "VSD"
+  category: "Septal & congenital defect"
+  anatomy: ["interventricular septum"]
+  description: "Congenital or post-infarction defect in the ventricular septum; selected muscular and post-MI defects are treated with transcatheter occluders."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: cond-pda
+  type: condition
+  name: "Patent Ductus Arteriosus"
+  abbreviation: "PDA"
+  category: "Septal & congenital defect"
+  anatomy: ["ductus arteriosus", "aorta", "pulmonary artery"]
+  description: "Persistent fetal connection between aorta and pulmonary artery; transcatheter closure is standard, including in premature infants."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: cond-hcm
+  type: condition
+  name: "Hypertrophic Cardiomyopathy"
+  abbreviation: "HCM"
+  category: "Cardiomyopathy"
+  anatomy: ["interventricular septum", "left ventricle", "left ventricular outflow tract"]
+  description: "Sarcomeric cardiomyopathy with LV hypertrophy; the obstructive form (HOCM) features dynamic LVOT obstruction treated by septal reduction or cardiac myosin inhibitors."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: cond-attr-cm
+  type: condition
+  name: "Transthyretin Amyloid Cardiomyopathy"
+  abbreviation: "ATTR-CM"
+  category: "Infiltrative cardiomyopathy"
+  anatomy: ["myocardium", "left ventricle"]
+  description: "Infiltrative cardiomyopathy from misfolded transthyretin (wild-type or hereditary) depositing in the myocardium; treated with TTR stabilizers and silencers."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: cond-hfref
+  type: condition
+  name: "Heart Failure with Reduced Ejection Fraction"
+  abbreviation: "HFrEF"
+  category: "Heart failure"
+  anatomy: ["left ventricle"]
+  description: "Heart failure with LVEF <=40%; managed with guideline-directed medical therapy (four pillars) and increasingly with hemodynamic monitoring."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: cond-hfpef
+  type: condition
+  name: "Heart Failure with Preserved Ejection Fraction"
+  abbreviation: "HFpEF"
+  category: "Heart failure"
+  anatomy: ["left ventricle", "left atrium"]
+  description: "Heart failure with LVEF >=50% and elevated filling pressures; emerging therapies include SGLT2 inhibitors, finerenone, and interatrial shunts."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: cond-cmd
+  type: condition
+  name: "Coronary Microvascular Dysfunction & Refractory Angina"
+  abbreviation: "CMD"
+  category: "Coronary microvascular"
+  anatomy: ["coronary microvasculature", "coronary sinus"]
+  description: "Angina from impaired microvascular function (often with non-obstructive coronaries); device approaches include coronary sinus narrowing to redistribute perfusion."
+  curation: { status: curated, lastUpdated: 2026-06-22 }

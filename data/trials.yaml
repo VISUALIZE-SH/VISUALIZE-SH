@@ -1,0 +1,508 @@
+# Clinical trials — evaluate therapies in conditions.
+# Schema: schema/trial.schema.json   |   See schema/DATA_DICTIONARY.md
+# id prefix: trial-
+# Every `therapies` and `conditions` id must resolve (build:data enforces this).
+# NOTE: nctId is included only where verified. Where omitted, `references` carries
+# a ClinicalTrials.gov search link; the refresh routine should fill verified NCT ids.
+
+# ============================ LAA CLOSURE =================================
+- id: trial-protect-af
+  type: trial
+  name: "PROTECT AF"
+  phase: "Pivotal RCT"
+  status: completed
+  conditions: [cond-af]
+  therapies: [dev-watchman-flx]
+  enrollment: 707
+  year: 2014
+  primaryEndpoint: "Composite of stroke, cardiovascular death, and systemic embolism"
+  outcomeSummary: "Watchman was noninferior (and superior on the long-term composite) to warfarin in non-valvular AF."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=PROTECT-AF+Watchman"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-prevail
+  type: trial
+  name: "PREVAIL"
+  phase: "Pivotal RCT"
+  status: completed
+  conditions: [cond-af]
+  therapies: [dev-watchman-flx]
+  enrollment: 407
+  year: 2014
+  primaryEndpoint: "Efficacy and safety vs warfarin"
+  outcomeSummary: "Co-primary endpoints only partially met, but data supported approval alongside PROTECT AF."
+  resultStatus: mixed
+  references: ["https://clinicaltrials.gov/search?term=PREVAIL+Watchman"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-prague-17
+  type: trial
+  name: "PRAGUE-17"
+  phase: "RCT (LAAC vs DOAC)"
+  status: completed
+  conditions: [cond-af]
+  therapies: [dev-watchman-flx, dev-amulet]
+  enrollment: 402
+  year: 2020
+  primaryEndpoint: "Composite of cardiovascular, neurological, and bleeding events"
+  outcomeSummary: "LAA closure was noninferior to DOACs in high-risk AF patients."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=PRAGUE-17"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-amulet-ide
+  type: trial
+  name: "Amulet IDE"
+  phase: "RCT (head-to-head)"
+  status: completed
+  conditions: [cond-af]
+  therapies: [dev-amulet, dev-watchman-flx]
+  enrollment: 1878
+  year: 2021
+  primaryEndpoint: "Safety, effective LAA occlusion, and stroke/systemic embolism"
+  outcomeSummary: "Amulet was noninferior to Watchman; more peri-procedural complications but superior LAA closure."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=Amulet+IDE"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-option
+  type: trial
+  name: "OPTION"
+  phase: "RCT (LAAC vs DOAC post-ablation)"
+  status: completed
+  conditions: [cond-af]
+  therapies: [dev-watchman-flx]
+  enrollment: 1600
+  year: 2025
+  primaryEndpoint: "Stroke/death and non-procedural bleeding after AF ablation"
+  outcomeSummary: "LAA closure was noninferior for ischemic events with less non-procedural bleeding than DOAC after ablation."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=OPTION+Watchman"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-champion-af
+  type: trial
+  name: "CHAMPION-AF"
+  phase: "RCT (LAAC vs DOAC)"
+  status: active
+  conditions: [cond-af]
+  therapies: [dev-watchman-flx]
+  enrollment: 3000
+  primaryEndpoint: "Stroke/systemic embolism and bleeding vs first-line DOAC"
+  outcomeSummary: "Large RCT testing first-line LAA closure vs DOAC in a broad AF population; results pending."
+  resultStatus: ongoing
+  references: ["https://clinicaltrials.gov/search?term=CHAMPION-AF"]
+  curation: { status: curated, lastUpdated: 2026-06-22, notes: "Confirm enrollment and readout date at refresh." }
+
+# ============================ SEPTAL / PFO ================================
+- id: trial-respect
+  type: trial
+  name: "RESPECT"
+  phase: "RCT"
+  status: completed
+  conditions: [cond-pfo]
+  therapies: [dev-amplatzer-pfo]
+  enrollment: 980
+  year: 2017
+  primaryEndpoint: "Recurrent ischemic stroke"
+  outcomeSummary: "Extended follow-up showed PFO closure superior to medical therapy for recurrent cryptogenic stroke."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=RESPECT+PFO"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-reduce
+  type: trial
+  name: "Gore REDUCE"
+  phase: "RCT"
+  status: completed
+  conditions: [cond-pfo]
+  therapies: [dev-gore-cardioform-septal]
+  enrollment: 664
+  year: 2017
+  primaryEndpoint: "Recurrent stroke and new brain infarcts"
+  outcomeSummary: "PFO closure reduced recurrent stroke versus antiplatelet therapy alone."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=Gore+REDUCE+PFO"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-close
+  type: trial
+  name: "CLOSE"
+  phase: "RCT"
+  status: completed
+  conditions: [cond-pfo]
+  therapies: [dev-amplatzer-pfo]
+  enrollment: 663
+  year: 2017
+  primaryEndpoint: "Recurrent stroke"
+  outcomeSummary: "Closure superior to antiplatelet therapy in patients with high-risk PFO features (multiple devices used)."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=CLOSE+PFO+trial"]
+  curation: { status: curated, lastUpdated: 2026-06-22, notes: "CLOSE permitted several occluders; therapy ref is representative." }
+
+# ============================ HCM ========================================
+- id: trial-explorer-hcm
+  type: trial
+  name: "EXPLORER-HCM"
+  nctId: "NCT03470545"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-hcm]
+  therapies: [rx-mavacamten]
+  enrollment: 251
+  year: 2020
+  primaryEndpoint: "Composite functional/symptomatic improvement (peak VO2 + NYHA)"
+  outcomeSummary: "Mavacamten improved exercise capacity, LVOT gradient, symptoms, and quality of life in obstructive HCM."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/study/NCT03470545"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-valor-hcm
+  type: trial
+  name: "VALOR-HCM"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-hcm]
+  therapies: [rx-mavacamten]
+  enrollment: 112
+  year: 2022
+  primaryEndpoint: "Decision to proceed with septal reduction therapy"
+  outcomeSummary: "Mavacamten markedly reduced eligibility/need for septal reduction therapy in severely symptomatic obstructive HCM."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=VALOR-HCM"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-sequoia-hcm
+  type: trial
+  name: "SEQUOIA-HCM"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-hcm]
+  therapies: [rx-aficamten]
+  enrollment: 282
+  year: 2024
+  primaryEndpoint: "Change in peak oxygen uptake (peak VO2)"
+  outcomeSummary: "Aficamten significantly improved peak VO2 and all secondary endpoints in obstructive HCM."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=SEQUOIA-HCM"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-maple-hcm
+  type: trial
+  name: "MAPLE-HCM"
+  phase: "Phase 3 RCT (monotherapy)"
+  status: active
+  conditions: [cond-hcm]
+  therapies: [rx-aficamten]
+  primaryEndpoint: "Aficamten vs metoprolol as monotherapy (peak VO2)"
+  outcomeSummary: "Head-to-head monotherapy comparison against a beta-blocker; ongoing."
+  resultStatus: ongoing
+  references: ["https://clinicaltrials.gov/search?term=MAPLE-HCM"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# ============================ ATTR-CM ====================================
+- id: trial-attr-act
+  type: trial
+  name: "ATTR-ACT"
+  nctId: "NCT01994889"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-attr-cm]
+  therapies: [rx-tafamidis]
+  enrollment: 441
+  year: 2018
+  primaryEndpoint: "All-cause mortality and cardiovascular hospitalizations"
+  outcomeSummary: "Tafamidis reduced mortality and cardiovascular hospitalizations in ATTR-CM."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/study/NCT01994889"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-attribute-cm
+  type: trial
+  name: "ATTRibute-CM"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-attr-cm]
+  therapies: [rx-acoramidis]
+  enrollment: 632
+  year: 2023
+  primaryEndpoint: "Hierarchical composite of death and cardiovascular hospitalization"
+  outcomeSummary: "Acoramidis improved the hierarchical composite endpoint, supporting FDA approval."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=ATTRibute-CM"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-helios-b
+  type: trial
+  name: "HELIOS-B"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-attr-cm]
+  therapies: [rx-vutrisiran]
+  enrollment: 655
+  year: 2024
+  primaryEndpoint: "All-cause mortality and recurrent cardiovascular events"
+  outcomeSummary: "Vutrisiran reduced mortality and cardiovascular events in ATTR-CM."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=HELIOS-B"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-apollo-b
+  type: trial
+  name: "APOLLO-B"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-attr-cm]
+  therapies: [rx-patisiran]
+  enrollment: 360
+  year: 2023
+  primaryEndpoint: "6-minute walk distance"
+  outcomeSummary: "Patisiran improved functional measures, but the FDA declined the ATTR-CM indication."
+  resultStatus: mixed
+  references: ["https://clinicaltrials.gov/search?term=APOLLO-B+patisiran"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# ============================ HF PHARMACOTHERAPY =========================
+- id: trial-paradigm-hf
+  type: trial
+  name: "PARADIGM-HF"
+  nctId: "NCT01035255"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-hfref]
+  therapies: [rx-sacubitril-valsartan]
+  enrollment: 8442
+  year: 2014
+  primaryEndpoint: "Cardiovascular death or HF hospitalization"
+  outcomeSummary: "Sacubitril/valsartan was superior to enalapril in HFrEF, establishing ARNI as foundational therapy."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/study/NCT01035255"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-dapa-hf
+  type: trial
+  name: "DAPA-HF"
+  nctId: "NCT03036124"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-hfref]
+  therapies: [rx-dapagliflozin]
+  enrollment: 4744
+  year: 2019
+  primaryEndpoint: "Worsening HF or cardiovascular death"
+  outcomeSummary: "Dapagliflozin reduced events in HFrEF regardless of diabetes status."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/study/NCT03036124"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-deliver
+  type: trial
+  name: "DELIVER"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-hfpef]
+  therapies: [rx-dapagliflozin]
+  enrollment: 6263
+  year: 2022
+  primaryEndpoint: "Cardiovascular death or worsening HF"
+  outcomeSummary: "Dapagliflozin reduced events in HF with mildly reduced or preserved ejection fraction."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=DELIVER+dapagliflozin"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-emperor-preserved
+  type: trial
+  name: "EMPEROR-Preserved"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-hfpef]
+  therapies: [rx-empagliflozin]
+  enrollment: 5988
+  year: 2021
+  primaryEndpoint: "Cardiovascular death or HF hospitalization"
+  outcomeSummary: "First clearly positive HFpEF outcomes trial, driven by reduced HF hospitalizations."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=EMPEROR-Preserved"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-emperor-reduced
+  type: trial
+  name: "EMPEROR-Reduced"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-hfref]
+  therapies: [rx-empagliflozin]
+  enrollment: 3730
+  year: 2020
+  primaryEndpoint: "Cardiovascular death or HF hospitalization"
+  outcomeSummary: "Empagliflozin reduced cardiovascular death or HF hospitalization in HFrEF."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=EMPEROR-Reduced"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-victoria
+  type: trial
+  name: "VICTORIA"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-hfref]
+  therapies: [rx-vericiguat]
+  enrollment: 5050
+  year: 2020
+  primaryEndpoint: "Cardiovascular death or HF hospitalization"
+  outcomeSummary: "Vericiguat reduced events in patients with recently worsening HFrEF."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=VICTORIA+vericiguat"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-finearts-hf
+  type: trial
+  name: "FINEARTS-HF"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-hfpef]
+  therapies: [rx-finerenone]
+  enrollment: 6001
+  year: 2024
+  primaryEndpoint: "Cardiovascular death and total worsening HF events"
+  outcomeSummary: "Finerenone reduced worsening-HF events in HF with mildly reduced or preserved ejection fraction."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=FINEARTS-HF"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-galactic-hf
+  type: trial
+  name: "GALACTIC-HF"
+  phase: "Phase 3 RCT"
+  status: completed
+  conditions: [cond-hfref]
+  therapies: [rx-omecamtiv-mecarbil]
+  enrollment: 8256
+  year: 2020
+  primaryEndpoint: "Composite of HF event or cardiovascular death"
+  outcomeSummary: "Modest reduction in the primary composite; the FDA did not approve omecamtiv mecarbil."
+  resultStatus: mixed
+  references: ["https://clinicaltrials.gov/search?term=GALACTIC-HF"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# ============================ HF SHUNTS ==================================
+- id: trial-reduce-lap-hf-i
+  type: trial
+  name: "REDUCE LAP-HF I"
+  phase: "RCT (mechanistic, sham-controlled)"
+  status: completed
+  conditions: [cond-hfpef]
+  therapies: [dev-corvia-shunt]
+  enrollment: 44
+  year: 2018
+  primaryEndpoint: "Exercise pulmonary capillary wedge pressure"
+  outcomeSummary: "Sham-controlled pilot demonstrated reduced exercise wedge pressure with the atrial shunt."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=REDUCE+LAP-HF+I"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-reduce-lap-hf-ii
+  type: trial
+  name: "REDUCE LAP-HF II"
+  phase: "Pivotal RCT (sham-controlled)"
+  status: completed
+  conditions: [cond-hfpef]
+  therapies: [dev-corvia-shunt]
+  enrollment: 626
+  year: 2022
+  primaryEndpoint: "Hierarchical composite of CV death/stroke, HF events, and KCCQ"
+  outcomeSummary: "Neutral overall; a prespecified responder subgroup (without latent pulmonary vascular disease) appeared to benefit."
+  resultStatus: mixed
+  references: ["https://clinicaltrials.gov/search?term=REDUCE+LAP-HF+II"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-relieve-hf
+  type: trial
+  name: "RELIEVE-HF"
+  phase: "Pivotal RCT (sham-controlled)"
+  status: completed
+  conditions: [cond-hfref, cond-hfpef]
+  therapies: [dev-vwave-ventura]
+  enrollment: 508
+  year: 2024
+  primaryEndpoint: "Hierarchical clinical composite (death, transplant/LVAD, HF events, KCCQ)"
+  outcomeSummary: "Neutral overall with opposing directional effects: apparent benefit in HFrEF and a harm signal in HFpEF."
+  resultStatus: mixed
+  references: ["https://clinicaltrials.gov/search?term=RELIEVE-HF"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# ============================ HEMODYNAMIC SENSORS ========================
+- id: trial-champion
+  type: trial
+  name: "CHAMPION"
+  phase: "RCT"
+  status: completed
+  conditions: [cond-hfref, cond-hfpef]
+  therapies: [dev-cardiomems]
+  enrollment: 550
+  year: 2011
+  primaryEndpoint: "HF hospitalizations"
+  outcomeSummary: "Pulmonary-artery-pressure-guided management reduced HF hospitalizations."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=CHAMPION+CardioMEMS"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-guide-hf
+  type: trial
+  name: "GUIDE-HF"
+  phase: "RCT"
+  status: completed
+  conditions: [cond-hfref, cond-hfpef]
+  therapies: [dev-cardiomems]
+  enrollment: 1000
+  year: 2021
+  primaryEndpoint: "All-cause mortality and total HF events"
+  outcomeSummary: "Primary endpoint neutral overall; a pre-COVID-19 sensitivity analysis suggested benefit."
+  resultStatus: mixed
+  references: ["https://clinicaltrials.gov/search?term=GUIDE-HF"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-proactive-hf
+  type: trial
+  name: "PROACTIVE-HF"
+  phase: "Single-arm pivotal"
+  status: completed
+  conditions: [cond-hfref, cond-hfpef]
+  therapies: [dev-cordella]
+  enrollment: 456
+  year: 2023
+  primaryEndpoint: "HF events and mortality vs performance goal; safety"
+  outcomeSummary: "Met prespecified safety and efficacy goals, supporting FDA approval of the Cordella sensor."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=PROACTIVE-HF+Cordella"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# ============================ CORONARY MICROVASCULAR =====================
+- id: trial-cosira
+  type: trial
+  name: "COSIRA"
+  phase: "RCT (sham-controlled)"
+  status: completed
+  conditions: [cond-cmd]
+  therapies: [dev-coronary-sinus-reducer]
+  enrollment: 104
+  year: 2015
+  primaryEndpoint: "Improvement in CCS angina class"
+  outcomeSummary: "The coronary sinus Reducer improved angina class in refractory angina versus sham."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/search?term=COSIRA+reducer"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-cosira-ii
+  type: trial
+  name: "COSIRA-II"
+  phase: "Pivotal RCT (sham-controlled)"
+  status: active
+  conditions: [cond-cmd]
+  therapies: [dev-coronary-sinus-reducer]
+  primaryEndpoint: "Angina and ischemia endpoints"
+  outcomeSummary: "US pivotal sham-controlled trial of the coronary sinus Reducer; ongoing."
+  resultStatus: ongoing
+  references: ["https://clinicaltrials.gov/search?term=COSIRA-II"]
+  curation: { status: curated, lastUpdated: 2026-06-22 }

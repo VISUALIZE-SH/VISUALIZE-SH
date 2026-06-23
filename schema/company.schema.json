@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "company.schema.json",
+  "title": "Company",
+  "description": "An organization that develops or markets a therapy.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "name", "curation"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^co-[a-z0-9-]+$",
+      "description": "Stable kebab-case id prefixed with 'co-'."
+    },
+    "type": { "const": "company" },
+    "name": { "type": "string", "minLength": 1 },
+    "ticker": { "type": "string", "description": "Stock ticker if public, e.g. 'BSX'." },
+    "hq": { "type": "string", "description": "Headquarters location." },
+    "website": { "type": "string", "format": "uri" },
+    "description": { "type": "string" },
+    "curation": { "$ref": "#/definitions/curation" }
+  },
+  "definitions": {
+    "curation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "lastUpdated"],
+      "properties": {
+        "status": { "enum": ["draft", "curated"] },
+        "lastUpdated": { "type": "string", "format": "date" },
+        "sources": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

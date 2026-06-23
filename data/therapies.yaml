@@ -1,0 +1,415 @@
+# Therapies — devices, pharmaceuticals, digital therapeutics, procedures.
+# Schema: schema/therapy.schema.json   |   See schema/DATA_DICTIONARY.md
+# id prefix encodes therapyType: rx-=pharmaceutical, dev-=device, dig-=digital, proc-=procedure
+# `company` and every `treats` id must resolve (build:data enforces this).
+
+# ============================ DEVICES =====================================
+
+# --- LAA closure ---
+- id: dev-watchman-flx
+  type: therapy
+  therapyType: device
+  subtype: "LAA closure device"
+  name: "Watchman FLX"
+  company: co-boston-scientific
+  treats: [cond-af]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved (Watchman 2015; FLX 2020; FLX Pro 2023)."
+  mechanism: "Percutaneously seals the left atrial appendage to prevent thrombus embolization in non-valvular AF."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-amulet
+  type: therapy
+  therapyType: device
+  subtype: "LAA closure device"
+  name: "Amplatzer Amulet"
+  company: co-abbott
+  treats: [cond-af]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved 2021; dual-seal (lobe + disc) design."
+  mechanism: "Dual-seal LAA occluder for stroke prevention in non-valvular AF."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-lambre
+  type: therapy
+  therapyType: device
+  subtype: "LAA closure device"
+  name: "LAmbre"
+  company: co-lifetech
+  treats: [cond-af]
+  regulatoryStatus: approved
+  regulatoryDetail: "CE mark and China NMPA approved; investigational in the US."
+  mechanism: "Umbrella-and-cover LAA occluder designed for variable appendage anatomy."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- Septal / congenital defect closure ---
+- id: dev-amplatzer-pfo
+  type: therapy
+  therapyType: device
+  subtype: "PFO closure device"
+  name: "Amplatzer PFO Occluder"
+  company: co-abbott
+  treats: [cond-pfo]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved 2016 for recurrent cryptogenic stroke due to PFO."
+  mechanism: "Double-disc nitinol occluder that closes the patent foramen ovale."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-gore-cardioform-septal
+  type: therapy
+  therapyType: device
+  subtype: "Septal/PFO closure device"
+  name: "GORE Cardioform Septal Occluder"
+  company: co-wl-gore
+  treats: [cond-pfo, cond-asd]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved for PFO and for secundum ASD closure."
+  mechanism: "ePTFE-covered nitinol frame occluder for PFO and atrial septal defects."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-amplatzer-asd
+  type: therapy
+  therapyType: device
+  subtype: "ASD closure device"
+  name: "Amplatzer Septal Occluder (ASO)"
+  company: co-abbott
+  treats: [cond-asd]
+  regulatoryStatus: approved
+  regulatoryDetail: "Long-established transcatheter device for secundum ASD."
+  mechanism: "Self-expanding double-disc occluder for secundum atrial septal defects."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-amplatzer-piccolo
+  type: therapy
+  therapyType: device
+  subtype: "PDA closure device"
+  name: "Amplatzer Piccolo Occluder"
+  company: co-abbott
+  treats: [cond-pda]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved 2019; usable in premature infants >=700 g."
+  mechanism: "Miniature occluder for transcatheter closure of patent ductus arteriosus."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-amplatzer-vsd
+  type: therapy
+  therapyType: device
+  subtype: "VSD closure device"
+  name: "Amplatzer Muscular VSD Occluder"
+  company: co-abbott
+  treats: [cond-vsd]
+  regulatoryStatus: approved
+  regulatoryDetail: "Approved for muscular VSDs; membranous-VSD use remains investigational/off-label."
+  mechanism: "Double-disc occluder for muscular ventricular septal defects."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- Heart failure interatrial shunts ---
+- id: dev-corvia-shunt
+  type: therapy
+  therapyType: device
+  subtype: "interatrial shunt"
+  name: "Corvia Atrial Shunt"
+  company: co-corvia
+  treats: [cond-hfpef]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Investigational; FDA Breakthrough Device. Responder-subgroup signal in REDUCE LAP-HF II."
+  mechanism: "Implanted interatrial shunt that decompresses the left atrium to lower exertional filling pressure in HFpEF."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-vwave-ventura
+  type: therapy
+  therapyType: device
+  subtype: "interatrial shunt"
+  name: "Ventura Interatrial Shunt"
+  company: co-vwave
+  treats: [cond-hfref, cond-hfpef]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Investigational. RELIEVE-HF neutral overall with a divergent HFrEF-subgroup signal."
+  mechanism: "Interatrial shunt to reduce left atrial pressure across the HF spectrum."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-edwards-apture
+  type: therapy
+  therapyType: device
+  subtype: "interatrial shunt"
+  name: "APTURE Transcatheter Shunt"
+  company: co-edwards
+  treats: [cond-hfpef]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Investigational shunt-to-coronary-sinus system under clinical study (ALT FLOW)."
+  mechanism: "Creates a left atrium-to-coronary-sinus shunt to lower left atrial pressure."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- Implantable hemodynamic sensors ---
+- id: dev-cardiomems
+  type: therapy
+  therapyType: device
+  subtype: "PA pressure sensor"
+  name: "CardioMEMS HF System"
+  company: co-abbott
+  treats: [cond-hfref, cond-hfpef]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved; indication expanded to NYHA II-III HF (CHAMPION, GUIDE-HF)."
+  mechanism: "Wireless pulmonary-artery pressure sensor enabling pressure-guided HF management."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-cordella
+  type: therapy
+  therapyType: device
+  subtype: "PA pressure sensor"
+  name: "Cordella PA Sensor"
+  company: co-endotronix
+  treats: [cond-hfref, cond-hfpef]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved 2024 (PROACTIVE-HF); now part of Edwards Lifesciences."
+  mechanism: "Pulmonary-artery pressure sensor with a paired patient-management platform."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-fire1-norm
+  type: therapy
+  therapyType: device
+  subtype: "IVC sensor"
+  name: "FIRE1 NORM System"
+  company: co-fire1
+  treats: [cond-hfref, cond-hfpef]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Investigational inferior vena cava sensor for congestion monitoring (FUTURE-HF)."
+  mechanism: "Implantable IVC sensor that tracks vessel-area changes as a congestion surrogate."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-vlap
+  type: therapy
+  therapyType: device
+  subtype: "LA pressure sensor"
+  name: "V-LAP"
+  company: co-vectorious
+  treats: [cond-hfref, cond-hfpef]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Investigational wireless left-atrial pressure sensor (VECTOR-HF)."
+  mechanism: "Direct left-atrial pressure measurement for granular pressure-guided HF management."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- Coronary sinus / microvascular ---
+- id: dev-coronary-sinus-reducer
+  type: therapy
+  therapyType: device
+  subtype: "coronary sinus reducer"
+  name: "Coronary Sinus Reducer"
+  company: co-shockwave
+  treats: [cond-cmd]
+  regulatoryStatus: investigational
+  regulatoryDetail: "CE marked in Europe; investigational in the US (COSIRA-II)."
+  mechanism: "Hourglass stent narrows the coronary sinus to raise backward pressure and redistribute perfusion to ischemic myocardium."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-aflux
+  type: therapy
+  therapyType: device
+  subtype: "coronary sinus / microvascular device"
+  name: "A-Flux (CMD device)"
+  treats: [cond-cmd]
+  regulatoryStatus: investigational
+  mechanism: "User-flagged device targeting coronary microvascular dysfunction."
+  curation:
+    status: draft
+    lastUpdated: 2026-06-22
+    notes: "Placeholder from user request ('A-flux for CMD'). VERIFY exact product name and manufacturer before curating; add company ref and sources."
+
+# ============================ PHARMACEUTICALS =============================
+
+# --- HCM: cardiac myosin inhibitors ---
+- id: rx-mavacamten
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: "cardiac myosin inhibitor"
+  name: "Mavacamten (Camzyos)"
+  company: co-bristol-myers-squibb
+  treats: [cond-hcm]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved 2022 for symptomatic obstructive HCM; REMS program."
+  mechanism: "Reversibly inhibits cardiac myosin ATPase, reducing hypercontractility and LVOT obstruction."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: rx-aficamten
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: "cardiac myosin inhibitor"
+  name: "Aficamten"
+  company: co-cytokinetics
+  treats: [cond-hcm]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Next-generation myosin inhibitor; FDA review pending after SEQUOIA-HCM. VERIFY current approval status."
+  mechanism: "Selective cardiac myosin inhibitor reducing LVOT gradients with a wider therapeutic window."
+  curation: { status: curated, lastUpdated: 2026-06-22, notes: "Regulatory status time-sensitive; confirm at next refresh." }
+
+# --- ATTR-CM ---
+- id: rx-tafamidis
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: "TTR stabilizer"
+  name: "Tafamidis (Vyndaqel/Vyndamax)"
+  company: co-pfizer
+  treats: [cond-attr-cm]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved 2019 for ATTR-CM (ATTR-ACT)."
+  mechanism: "Stabilizes the transthyretin tetramer, slowing amyloid fibril formation."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: rx-acoramidis
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: "TTR stabilizer"
+  name: "Acoramidis (Attruby)"
+  company: co-bridgebio
+  treats: [cond-attr-cm]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved 2024 for ATTR-CM (ATTRibute-CM)."
+  mechanism: "Near-complete TTR tetramer stabilizer mimicking a protective TTR variant."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: rx-vutrisiran
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: "TTR silencer (siRNA)"
+  name: "Vutrisiran (Amvuttra)"
+  company: co-alnylam
+  treats: [cond-attr-cm]
+  regulatoryStatus: approved
+  regulatoryDetail: "Approved for hATTR polyneuropathy; ATTR-CM indication via HELIOS-B (2025). VERIFY label."
+  mechanism: "Subcutaneous RNAi that lowers hepatic transthyretin production."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: rx-patisiran
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: "TTR silencer (siRNA)"
+  name: "Patisiran (Onpattro)"
+  company: co-alnylam
+  treats: [cond-attr-cm]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Approved for hATTR polyneuropathy; ATTR-CM indication NOT approved (APOLLO-B; FDA declined 2023)."
+  mechanism: "IV RNAi that lowers transthyretin production."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# --- HFrEF / HFpEF pharmacotherapy ---
+- id: rx-dapagliflozin
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: "SGLT2 inhibitor"
+  name: "Dapagliflozin (Farxiga)"
+  company: co-astrazeneca
+  treats: [cond-hfref, cond-hfpef]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved across the HF spectrum (DAPA-HF, DELIVER)."
+  mechanism: "SGLT2 inhibition with pleiotropic cardiorenal benefit; a pillar of GDMT."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: rx-empagliflozin
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: "SGLT2 inhibitor"
+  name: "Empagliflozin (Jardiance)"
+  company: co-boehringer-ingelheim
+  treats: [cond-hfref, cond-hfpef]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved across the HF spectrum (EMPEROR-Reduced/Preserved); co-marketed with Eli Lilly."
+  mechanism: "SGLT2 inhibitor reducing HF hospitalization across ejection fractions."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: rx-sacubitril-valsartan
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: "ARNI"
+  name: "Sacubitril/Valsartan (Entresto)"
+  company: co-novartis
+  treats: [cond-hfref, cond-hfpef]
+  regulatoryStatus: approved
+  regulatoryDetail: "Approved for chronic HF; greatest benefit at lower EF (PARADIGM-HF; PARAGON-HF)."
+  mechanism: "Angiotensin receptor-neprilysin inhibitor augmenting natriuretic peptides while blocking RAAS."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: rx-vericiguat
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: "sGC stimulator"
+  name: "Vericiguat (Verquvo)"
+  company: co-merck
+  treats: [cond-hfref]
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved 2021 for worsening HFrEF (VICTORIA)."
+  mechanism: "Soluble guanylate cyclase stimulator restoring the NO-sGC-cGMP pathway."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: rx-finerenone
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: "nonsteroidal MRA"
+  name: "Finerenone (Kerendia)"
+  company: co-bayer
+  treats: [cond-hfpef]
+  regulatoryStatus: approved
+  regulatoryDetail: "Approved for CKD in T2D; HFmrEF/HFpEF benefit shown in FINEARTS-HF (2024). VERIFY HF label."
+  mechanism: "Nonsteroidal mineralocorticoid receptor antagonist reducing cardiorenal inflammation/fibrosis."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: rx-omecamtiv-mecarbil
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: "cardiac myosin activator"
+  name: "Omecamtiv Mecarbil"
+  company: co-cytokinetics
+  treats: [cond-hfref]
+  regulatoryStatus: investigational
+  regulatoryDetail: "GALACTIC-HF modestly positive; FDA complete response letter (2023) - not approved."
+  mechanism: "Selective cardiac myosin activator increasing systolic ejection time and stroke volume."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# ============================ PROCEDURES ==================================
+
+- id: proc-septal-myectomy
+  type: therapy
+  therapyType: procedure
+  subtype: "surgical septal reduction"
+  name: "Surgical Septal Myectomy"
+  treats: [cond-hcm]
+  regulatoryStatus: approved
+  regulatoryDetail: "Established surgical standard of care for obstructive HCM at experienced centers."
+  mechanism: "Surgical resection of hypertrophied basal septum to relieve LVOT obstruction."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: proc-alcohol-septal-ablation
+  type: therapy
+  therapyType: procedure
+  subtype: "percutaneous septal reduction"
+  name: "Alcohol Septal Ablation"
+  treats: [cond-hcm]
+  regulatoryStatus: approved
+  regulatoryDetail: "Established percutaneous alternative to myectomy in selected patients."
+  mechanism: "Catheter-delivered ethanol infarcts a septal perforator to thin the basal septum and reduce obstruction."
+  curation: { status: curated, lastUpdated: 2026-06-22 }
+
+# ============================ DIGITAL THERAPEUTICS =======================
+
+- id: dig-story-health
+  type: therapy
+  therapyType: digital
+  subtype: "digital HF management / GDMT titration"
+  name: "Story Health Platform"
+  company: co-story-health
+  treats: [cond-hfref, cond-hfpef]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Care-delivery software (not an FDA-cleared DTx); classification varies. VERIFY."
+  mechanism: "AI-assisted remote titration of guideline-directed medical therapy with care-team workflows."
+  curation: { status: draft, lastUpdated: 2026-06-22, notes: "Confirm structural-heart relevance, indication, and regulatory classification." }
+
+- id: dig-hello-heart
+  type: therapy
+  therapyType: digital
+  subtype: "digital cardiovascular management"
+  name: "Hello Heart"
+  company: co-hello-heart
+  treats: [cond-hfpef]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Consumer digital health app for BP/CV risk; not a structural-heart-specific therapy. VERIFY relevance."
+  mechanism: "App-based blood-pressure tracking and behavioral coaching for cardiovascular risk."
+  curation: { status: draft, lastUpdated: 2026-06-22, notes: "Indication mapping is loose; refine or remove during curation." }

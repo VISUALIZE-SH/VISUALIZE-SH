@@ -1,0 +1,38 @@
+{
+  "name": "visualize-hf",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Interactive knowledge graph of the non-valvular structural heart landscape: conditions, therapies, companies, and clinical trials.",
+  "scripts": {
+    "build:data": "tsx scripts/build-data.ts",
+    "predev": "npm run build:data",
+    "dev": "vite",
+    "serve": "vite",
+    "prebuild": "npm run build:data",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "cytoscape": "^3.30.2",
+    "cytoscape-dagre": "^2.5.0",
+    "cytoscape-fcose": "^2.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/cytoscape": "^3.21.8",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "js-yaml": "^4.1.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.5"
+  }
+}

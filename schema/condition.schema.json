@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "condition.schema.json",
+  "title": "Condition",
+  "description": "An anatomy/disease entity in the non-valvular structural heart space.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "name", "category", "curation"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^cond-[a-z0-9-]+$",
+      "description": "Stable kebab-case id prefixed with 'cond-'."
+    },
+    "type": { "const": "condition" },
+    "name": { "type": "string", "minLength": 1 },
+    "abbreviation": { "type": "string", "description": "e.g. HFpEF, HCM, ATTR-CM." },
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Grouping used for filtering. See DATA_DICTIONARY.md for the recommended vocabulary."
+    },
+    "anatomy": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Anatomic structures involved, e.g. ['left atrial appendage']."
+    },
+    "description": { "type": "string" },
+    "curation": { "$ref": "#/definitions/curation" }
+  },
+  "definitions": {
+    "curation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "lastUpdated"],
+      "properties": {
+        "status": { "enum": ["draft", "curated"] },
+        "lastUpdated": { "type": "string", "format": "date" },
+        "sources": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}
