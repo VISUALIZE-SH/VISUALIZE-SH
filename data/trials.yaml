@@ -749,8 +749,11 @@
   outcomeSummary: "In low-surgical-risk severe AS, TAVR with SAPIEN 3 was superior to surgery at 1 year (longer-term curves converge)."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=PARTNER+3+SAPIEN"]
-  pulse: 6
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  pulse: 8
+  curation:
+    status: curated
+    lastUpdated: 2026-06-28
+    notes: "New York Valves 2026 (Jun 24-26): 7-year PARTNER 3 valve durability/outcomes presented — SAPIEN 3 durability comparable to surgery in low-risk patients, supporting TAVR in lifetime management. Human curator: consider folding the 7-year readout into outcomeSummary."
 
 - id: trial-evolut-low-risk
   type: trial
@@ -794,7 +797,41 @@
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=EARLY+TAVR+asymptomatic"]
   pulse: 9
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: curated
+    lastUpdated: 2026-06-28
+    notes: "Updated EARLY TAVR efficacy results presented at New York Valves 2026 (Jun 24-26); human curator may refresh outcomeSummary with the longer-term data."
+
+- id: trial-progress
+  type: trial
+  name: "PROGRESS"
+  nctId: "NCT04889872"
+  phase: "Pivotal RCT"
+  status: recruiting
+  timeline:
+    date: "2021-10-12"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT04889872"
+  conditions: [cond-as]
+  therapies: [dev-sapien-3]
+  enrollment: 750
+  primaryEndpoint: "Composite of death, stroke, and unplanned cardiovascular hospitalization"
+  outcomeSummary: "Randomized trial testing TAVR (SAPIEN 3) versus clinical surveillance in moderate, calcific aortic stenosis; baseline clinical and echocardiographic characteristics of the enrolled cohort were presented at New York Valves 2026, with primary outcomes pending."
+  resultStatus: ongoing
+  references: ["https://clinicaltrials.gov/study/NCT04889872"]
+  links:
+    - label: "New York Valves 2026 late-breaking program (CRF)"
+      url: "https://www.crf.org/crf/news-and-events/news/news/3995-new-york-valves-2026-to-unveil-late-breaking-research-in-structural-heart-disease"
+  pulse: 7
+  curation:
+    status: draft
+    lastUpdated: 2026-06-28
+    sources:
+      - "https://clinicaltrials.gov/study/NCT04889872"
+      - "https://www.crf.org/crf/news-and-events/news/news/3995-new-york-valves-2026-to-unveil-late-breaking-research-in-structural-heart-disease"
+    notes: "Baseline characteristics presented at New York Valves 2026 (Jun 24-26); no primary outcome yet (est. completion 2037). VERIFY exact primary endpoint wording from the trial protocol before promoting."
 
 - id: trial-smart
   type: trial
@@ -1054,8 +1091,11 @@
   outcomeSummary: "US pivotal trial of the Edwards SAPIEN M3 transseptal TMVR system; ongoing."
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/search?term=ENCIRCLE+SAPIEN+M3"]
-  pulse: 4
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  pulse: 6
+  curation:
+    status: curated
+    lastUpdated: 2026-06-28
+    notes: "New York Valves 2026 (Jun 24-26): one-year ENCIRCLE-MAC Registry outcomes presented, supporting safety/effectiveness/QoL of SAPIEN M3 in mitral annular calcification. SAPIEN M3 reportedly received FDA approval in late 2025; human curator: verify and update dev-sapien-m3 regulatoryStatus accordingly."
 
 # --- TPVR ---
 - id: trial-harmony

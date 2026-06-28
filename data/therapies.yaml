@@ -666,8 +666,11 @@
   regulatoryStatus: investigational
   regulatoryDetail: "Investigational transseptal TMVR (ENCIRCLE pivotal trial); uses a dock to capture a SAPIEN valve in the mitral position."
   mechanism: "Nitinol dock encircles the mitral leaflets/chordae, then a balloon-expandable SAPIEN valve is implanted within the dock."
-  pulse: 4
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  pulse: 6
+  curation:
+    status: curated
+    lastUpdated: 2026-06-28
+    notes: "One-year ENCIRCLE-MAC Registry data presented at New York Valves 2026 (Jun 24-26). SAPIEN M3 reportedly received FDA approval in late 2025 as the first transseptal TMVR; human curator: VERIFY the approval and, if confirmed, update regulatoryStatus to approved with regulatoryDetail and a fda-approval timeline."
 
 - id: dev-intrepid
   type: therapy
@@ -722,8 +725,11 @@
   links:
     - label: "Product page"
       url: "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-mitral-tricuspid-technologies/pascal-precision-system"
-  pulse: 6
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  pulse: 7
+  curation:
+    status: curated
+    lastUpdated: 2026-06-28
+    notes: "New York Valves 2026 (Jun 24-26): real-world PASCAL M-TEER outcomes from >4,500 patients in the STS/ACC TVT Registry presented, reinforcing sustained safety/effectiveness in mitral regurgitation."
 
 - id: dev-triclip
   type: therapy
