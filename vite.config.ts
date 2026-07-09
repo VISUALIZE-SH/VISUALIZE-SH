@@ -1,9 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// In dev the app is served from '/'. For the production build it is served from a
-// GitHub Pages project sub-path (the repo name); override with VITE_BASE for a
-// custom domain (VITE_BASE=/) or a different repo name.
+// In dev the app is served from '/'. The production build is deployed to the
+// visualize-sh.com custom domain root (see .github/workflows/deploy.yml, which
+// sets VITE_BASE=/); fall back to the GitHub Pages project sub-path only if
+// VITE_BASE is unset, e.g. for a one-off build against the default
+// <owner>.github.io/<repo>/ URL.
 export default defineConfig(({ command }) => ({
   base: command === 'build' ? (process.env.VITE_BASE ?? '/visualize-sh/') : '/',
   plugins: [react()],

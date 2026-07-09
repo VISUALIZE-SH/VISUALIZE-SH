@@ -12,6 +12,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["vite", "--port", "5174", "--strictPort", "--host", "127.0.0.1"],
       "port": 5174
+    },
+    {
+      "name": "dist-root-static",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4173", "--directory", "dist", "--bind", "127.0.0.1"],
+      "port": 4173
     }
   ]
 }
