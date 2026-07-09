@@ -16,7 +16,7 @@
   category: "Atrial fibrillation / stroke prevention"
   anatomy: ["left atrium", "left atrial appendage"]
   description: "Most common sustained arrhythmia; thrombus typically forms in the left atrial appendage, the target of LAA closure for stroke prevention when anticoagulation is unsuitable."
-  pulse: 5
+  pulse: 7
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: cond-pfo
@@ -62,7 +62,7 @@
   category: "Cardiomyopathy"
   anatomy: ["interventricular septum", "left ventricle", "left ventricular outflow tract"]
   description: "Sarcomeric cardiomyopathy with LV hypertrophy; the obstructive form (HOCM) features dynamic LVOT obstruction treated by septal reduction or cardiac myosin inhibitors."
-  pulse: 6
+  pulse: 7
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: cond-attr-cm
@@ -72,7 +72,7 @@
   category: "Infiltrative cardiomyopathy"
   anatomy: ["myocardium", "left ventricle"]
   description: "Infiltrative cardiomyopathy from misfolded transthyretin (wild-type or hereditary) depositing in the myocardium; treated with TTR stabilizers and silencers."
-  pulse: 7
+  pulse: 8
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: cond-hfref
@@ -102,6 +102,7 @@
   category: "Coronary microvascular"
   anatomy: ["coronary microvasculature", "coronary sinus"]
   description: "Angina from impaired microvascular function (often with non-obstructive coronaries); device approaches include coronary sinus narrowing to redistribute perfusion."
+  pulse: 3
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 # ============================ VALVULAR DISEASE ============================
@@ -115,7 +116,10 @@
   anatomy: ["aortic valve", "left ventricular outflow tract", "aortic root"]
   description: "Progressive narrowing of the aortic valve (commonly calcific/degenerative); severe symptomatic disease is treated by TAVR or surgical AVR, with trials now extending TAVR to low-risk and asymptomatic patients."
   pulse: 9
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: curated
+    lastUpdated: 2026-06-22
+    notes: "CMS released a proposed National Coverage Determination (NCD) decision memo (2026-06-15) that would end Coverage with Evidence Development for symptomatic severe AS TAVR, extend Medicare coverage to asymptomatic severe AS (informed by EARLY TAVR data), and relax Heart Team requirements. 30-day public comment period runs through 2026-07-15; final ruling expected ~Sept 2026. Affects coverage for all AS-treating TAVR devices. Sources: https://www.acc.org/Latest-in-Cardiology/Articles/2026/06/17/17/38/CMS-Proposes-Updates-to-TAVR-National-Coverage-Determination ; https://www.tctmd.com/news/cms-proposes-expanding-tavi-coverage-asymptomatic-patients. Human curator: monitor for the final NCD ruling."
 
 - id: cond-ar
   type: condition

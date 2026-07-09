@@ -129,7 +129,38 @@
   outcomeSummary: "Large RCT testing first-line LAA closure vs DOAC in a broad AF population; results pending."
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/search?term=CHAMPION-AF"]
-  curation: { status: curated, lastUpdated: 2026-06-22, notes: "Confirm enrollment and readout date at refresh." }
+  pulse: 7
+  curation:
+    status: curated
+    lastUpdated: 2026-06-22
+    notes: "CONFIRMED readout: Watchman FLX met all primary/secondary safety and efficacy endpoints — noninferior to NOACs for CV death/stroke/SE and superior on non-procedural major/clinically-relevant bleeding at 3 years. Presented at ACC.26 and published simultaneously in NEJM 2026-03-28 (DOI 10.1056/NEJMoa2517213). Sources: https://news.bostonscientific.com/2026-03-28-CHAMPION-AF-study-of-the-WATCHMAN-FLX-TM-Left-Atrial-Appendage-Closure-Device-as-a-first-line-therapy-for-stroke-risk-reduction-meets-all-primary-and-secondary-safety-and-efficacy-endpoints ; https://www.nejm.org/doi/10.1056/NEJMoa2517213. Human curator: update status to completed, resultStatus to positive, and rewrite outcomeSummary/year with the trial results."
+
+- id: trial-lambre-ii
+  type: trial
+  name: "LAmbre II First-in-Man"
+  nctId: "NCT07455539"
+  phase: "First-in-man"
+  status: unknown
+  timeline:
+    date: "2026-04-01"
+    precision: month
+    dateBasis: trial-start
+    event: "Estimated trial start"
+    source: "https://clinicaltrials.gov/study/NCT07455539"
+    notes: "ClinicalTrials.gov lists status as 'not yet recruiting' with an estimated (not actual) start date; no allowed schema value maps exactly to 'not yet recruiting', so status is left as unknown pending an update."
+  conditions: [cond-af]
+  therapies: [dev-lambre]
+  enrollment: 10
+  primaryEndpoint: "Safety and feasibility of the next-generation LAmbre II occluder"
+  outcomeSummary: "First-in-man feasibility study (Prince of Wales Hospital, Hong Kong, with Lifetech Scientific) of the next-generation LAmbre II LAA occluder in non-valvular AF; not yet recruiting."
+  resultStatus: ongoing
+  references: ["https://clinicaltrials.gov/study/NCT07455539"]
+  pulse: 2
+  curation:
+    status: draft
+    lastUpdated: 2026-07-08
+    sources: ["https://clinicaltrials.gov/study/NCT07455539"]
+    notes: "Referenced against the existing dev-lambre entity as the closest product match; the device under study is a next-generation 'LAmbre II' variant, not yet a separately catalogued therapy. Human curator: add a distinct dev-lambre-ii therapy entity if/when LAmbre II specifications are published."
 
 # ============================ SEPTAL / PFO ================================
 - id: trial-respect
@@ -278,6 +309,36 @@
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/search?term=MAPLE-HCM"]
   curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-acacia-hcm
+  type: trial
+  name: "ACACIA-HCM"
+  nctId: "NCT06081894"
+  phase: "Phase 3 RCT"
+  status: active
+  timeline:
+    date: "2023-08-30"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT06081894"
+  conditions: [cond-hcm]
+  therapies: [rx-aficamten]
+  enrollment: 500
+  year: 2026
+  primaryEndpoint: "Change in KCCQ Clinical Summary Score and change in predicted peak VO2 from baseline to week 36"
+  outcomeSummary: "Topline results (announced 2026-05-05) showed aficamten met both dual primary endpoints (KCCQ-CSS and pVO2) at week 36 vs placebo in symptomatic non-obstructive HCM; full data (plus a MAPLE-HCM subgroup analysis) presented as late-breakers at ESC Congress 2026 (announced 2026-07-07)."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/study/NCT06081894"]
+  pulse: 8
+  curation:
+    status: draft
+    lastUpdated: 2026-07-08
+    sources:
+      - "https://clinicaltrials.gov/study/NCT06081894"
+      - "https://www.thecardiologyadvisor.com/news/aficamten-meets-primary-endpoints-in-phase-3-non-obstructive-hcm-trial/"
+      - "https://www.globenewswire.com/news-release/2026/07/07/3323061/35409/en/Cytokinetics-Announces-Three-Late-Breaking-Science-Abstracts-at-the-European-Society-of-Cardiology-ESC-Congress-2026.html"
+    notes: "First pivotal trial of a cardiac myosin inhibitor in non-obstructive HCM; if regulators are convinced, aficamten could become the first approved drug for nHCM. Human curator: refine outcomeSummary once full ESC 2026 data (Aug 28-31) are published."
 
 # ============================ ATTR-CM ====================================
 - id: trial-attr-act
@@ -579,6 +640,31 @@
   references: ["https://clinicaltrials.gov/search?term=REDUCE+LAP-HF+II"]
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
+- id: trial-responder-hf
+  type: trial
+  name: "RESPONDER-HF"
+  nctId: "NCT05425459"
+  phase: "Confirmatory RCT (sham-controlled, precision medicine)"
+  status: active
+  timeline:
+    date: "2022-11-17"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT05425459"
+  conditions: [cond-hfpef]
+  therapies: [dev-corvia-shunt]
+  enrollment: 750
+  primaryEndpoint: "Composite of HF event rates and KCCQ score at 12 months"
+  outcomeSummary: "Confirmatory precision-medicine trial re-evaluating the Corvia Atrial Shunt in HFpEF/HFmrEF, targeting the responder phenotype identified in REDUCE LAP-HF II; active, not recruiting, no readout yet."
+  resultStatus: ongoing
+  references: ["https://clinicaltrials.gov/study/NCT05425459"]
+  pulse: 5
+  curation:
+    status: draft
+    lastUpdated: 2026-07-08
+    sources: ["https://clinicaltrials.gov/study/NCT05425459"]
+
 - id: trial-relieve-hf
   type: trial
   name: "RELIEVE-HF"
@@ -598,7 +684,35 @@
   outcomeSummary: "Neutral overall with opposing directional effects: apparent benefit in HFrEF and a harm signal in HFpEF."
   resultStatus: mixed
   references: ["https://clinicaltrials.gov/search?term=RELIEVE-HF"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: curated
+    lastUpdated: 2026-06-22
+    notes: "Reviewing these RELIEVE-HF data, the FDA Circulatory System Devices Panel voted 15-0 against recommending approval on effectiveness/benefit-risk grounds (2025-12-03); no final FDA decision found as of 2026-07-08. See dev-vwave-ventura notes. Source: https://www.tctmd.com/news/fda-panel-declines-endorse-ventura-interatrial-shunt-hfref."
+
+- id: trial-alt-flow-ii
+  type: trial
+  name: "ALT-FLOW II"
+  nctId: "NCT05686317"
+  phase: "Randomized sham-controlled RCT"
+  status: active
+  timeline:
+    date: "2023-04-01"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT05686317"
+  conditions: [cond-hfpef]
+  therapies: [dev-edwards-apture]
+  enrollment: 100
+  primaryEndpoint: "30-day safety (freedom from serious device/procedure complications) and 6-month change in exercise pulmonary capillary wedge pressure"
+  outcomeSummary: "Randomized sham-controlled pivotal trial of the Edwards APTURE left atrium-to-coronary-sinus shunt in HFpEF/HFmrEF; active, not recruiting, no readout yet."
+  resultStatus: ongoing
+  references: ["https://clinicaltrials.gov/study/NCT05686317"]
+  pulse: 4
+  curation:
+    status: draft
+    lastUpdated: 2026-07-08
+    sources: ["https://clinicaltrials.gov/study/NCT05686317"]
 
 # ============================ HEMODYNAMIC SENSORS ========================
 - id: trial-champion
@@ -705,6 +819,32 @@
   references: ["https://clinicaltrials.gov/search?term=COSIRA-II"]
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
+- id: trial-serra-i
+  type: trial
+  name: "SERRA-I"
+  nctId: "NCT06991322"
+  phase: "Early feasibility study"
+  status: recruiting
+  timeline:
+    date: "2025-06-18"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT06991322"
+  conditions: [cond-cmd]
+  therapies: [dev-aflux]
+  enrollment: 30
+  primaryEndpoint: "Safety and clinical performance of the A-FLUX self-expanding coronary sinus reducer for symptomatic CMD"
+  outcomeSummary: "European early feasibility study of the A-FLUX coronary sinus reducer for refractory angina from coronary microvascular dysfunction; enrolling, no readout yet."
+  resultStatus: ongoing
+  references: ["https://clinicaltrials.gov/study/NCT06991322"]
+  pulse: 3
+  curation:
+    status: draft
+    lastUpdated: 2026-07-08
+    sources: ["https://clinicaltrials.gov/study/NCT06991322"]
+    notes: "A second, similarly-titled ClinicalTrials.gov record (NCT07449325, 'Self-Expanding Coronary Sinus Reducer for Treatment of Symptomatic Coronary Microvascular Dysfunction (CMD)', est. start April 2026) also references the A-FLUX device without the 'SERRA-I' name — human curator: verify whether this is a distinct (e.g. US) trial or a re-registration before adding separately."
+
 # ============================ VALVULAR TRIALS ============================
 
 # --- TAVR ---
@@ -775,7 +915,10 @@
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=Evolut+Low+Risk+TAVR"]
   pulse: 6
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: curated
+    lastUpdated: 2026-06-22
+    notes: "6-7 year follow-up (published JACC 2026-02-16) found no significant difference in all-cause mortality/disabling stroke between TAVR and SAVR, but higher reintervention rates with TAVR (5.5% vs 3.3% at 6 years; 9.8% vs 6% in a 7-year subset). Medtronic issued a clinician communication reinforcing IFU adherence. Note the original trial used CoreValve/Evolut R/PRO, since superseded by Evolut FX/FX+. Sources: https://www.jacc.org/doi/10.1016/j.jacc.2026.02.5063 ; https://www.tctmd.com/news/higher-reintervention-risk-tavi-emerges-6-7-years-evolut-low-risk-trial."
 
 - id: trial-early-tavr
   type: trial
@@ -896,7 +1039,10 @@
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=ALIGN-AR+JenaValve"]
   pulse: 8
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: curated
+    lastUpdated: 2026-06-22
+    notes: "A new sub-analysis (presented at New York Valves 2026, recapped in a JenaValve release 2026-07-01) examined predictors of pacemaker implantation after Trilogy in AR, finding a mechanism distinct from the annular-oversizing driver seen in AS. Source: https://www.globenewswire.com/news-release/2026/07/01/3320637/0/en/jenavalve-recaps-key-highlights-including-late-breaking-clinical-data-from-new-york-valves-2026.html."
 
 # --- Mitral TEER ---
 - id: trial-everest-2
@@ -1095,7 +1241,7 @@
   curation:
     status: curated
     lastUpdated: 2026-06-28
-    notes: "New York Valves 2026 (Jun 24-26): one-year ENCIRCLE-MAC Registry outcomes presented, supporting safety/effectiveness/QoL of SAPIEN M3 in mitral annular calcification. SAPIEN M3 reportedly received FDA approval in late 2025; human curator: verify and update dev-sapien-m3 regulatoryStatus accordingly."
+    notes: "New York Valves 2026 (Jun 24-26): one-year ENCIRCLE-MAC Registry outcomes presented, supporting safety/effectiveness/QoL of SAPIEN M3 in mitral annular calcification. CONFIRMED: SAPIEN M3 received FDA approval 2025-12-23 (see dev-sapien-m3 notes for sources); this pivotal ENCIRCLE trial supported that approval."
 
 # --- TPVR ---
 - id: trial-harmony

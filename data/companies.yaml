@@ -41,6 +41,7 @@
   hq: "Tewksbury, MA, USA"
   website: "https://corviamedical.com"
   description: "Developer of the Corvia Atrial Shunt for heart failure."
+  pulse: 3
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: co-vwave
@@ -57,6 +58,7 @@
   hq: "Irvine, CA, USA"
   website: "https://www.edwards.com"
   description: "Structural heart company; APTURE transcatheter shunt and (via Endotronix) the Cordella sensor."
+  pulse: 7
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: co-endotronix
@@ -106,6 +108,7 @@
   hq: "South San Francisco, CA, USA"
   website: "https://www.cytokinetics.com"
   description: "Muscle-biology company; aficamten (HCM) and omecamtiv mecarbil (HFrEF)."
+  pulse: 8
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: co-pfizer
@@ -124,6 +127,7 @@
   hq: "Palo Alto, CA, USA"
   website: "https://www.bridgebio.com"
   description: "Markets acoramidis (Attruby) for ATTR-CM."
+  pulse: 5
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: co-alnylam
@@ -197,7 +201,10 @@
   website: "https://www.jenavalve.com"
   description: "Developer of the Trilogy transcatheter heart valve — the first device dedicated to transcatheter treatment of aortic regurgitation."
   pulse: 8
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: curated
+    lastUpdated: 2026-06-22
+    notes: "Remains independent: a US District Court granted the FTC's injunction against Edwards Lifesciences' proposed ~$1.2B acquisition of JenaValve (Jan 9, 2026) and Edwards abandoned the deal. Source: https://www.massdevice.com/edwards-fda-nod-left-atrial-appendage-clip/ background context; https://www.edwards.com/newsroom/news/2026-01-09-edwards-comments-on-jenavalve-acquisition. Human curator: consider adding this M&A history to description."
 
 - id: co-story-health
   type: company
@@ -212,3 +219,18 @@
   hq: "Menlo Park, CA, USA"
   description: "Digital heart-health app for blood pressure and cardiovascular risk management."
   curation: { status: draft, lastUpdated: 2026-06-22, notes: "Digital health vendor; refine indication relevance." }
+
+- id: co-vahaticor
+  type: company
+  name: "VahatiCor, Inc."
+  hq: "USA"
+  website: "https://vahaticor.com"
+  description: "Developer of the A-FLUX Reducer System, an investigational self-expanding coronary sinus reducer for coronary microvascular dysfunction (a T45 Labs portfolio company)."
+  pulse: 3
+  curation:
+    status: draft
+    lastUpdated: 2026-07-08
+    sources:
+      - "https://vahaticor.com/"
+      - "https://www.businesswire.com/news/home/20251118907873/en/VahatiCor-Closes-Oversubscribed-Series-B-Financing-to-Accelerate-A-FLUX-Development-for-Coronary-Microvascular-Dysfunction."
+    notes: "Confirms the maker of the 'A-flux' device previously logged as an unverified placeholder on dev-aflux. HQ city not verified; VERIFY exact HQ location before promoting."

@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-06-28T19:52:26.050Z",
-    "lastUpdated": "2026-06-28",
+    "generatedAt": "2026-07-09T03:58:39.818Z",
+    "lastUpdated": "2026-07-08",
     "counts": {
       "condition": 16,
-      "device": 32,
+      "device": 33,
       "pharmaceutical": 12,
       "procedure": 7,
       "digital": 2,
-      "company": 25,
-      "trial": 51
+      "company": 26,
+      "trial": 56
     },
-    "draftCount": 6,
-    "total": 145
+    "draftCount": 13,
+    "total": 152
   },
   "elements": {
     "nodes": [
@@ -23,8 +23,8 @@
           "group": "condition",
           "category": "Atrial fibrillation / stroke prevention",
           "isDraft": false,
-          "degree": 9,
-          "pulse": 5,
+          "degree": 11,
+          "pulse": 7,
           "entity": {
             "id": "cond-af",
             "type": "condition",
@@ -36,7 +36,7 @@
               "left atrial appendage"
             ],
             "description": "Most common sustained arrhythmia; thrombus typically forms in the left atrial appendage, the target of LAA closure for stroke prevention when anticoagulation is unsuitable.",
-            "pulse": 5,
+            "pulse": 7,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -158,8 +158,8 @@
           "group": "condition",
           "category": "Cardiomyopathy",
           "isDraft": false,
-          "degree": 8,
-          "pulse": 6,
+          "degree": 9,
+          "pulse": 7,
           "entity": {
             "id": "cond-hcm",
             "type": "condition",
@@ -172,7 +172,7 @@
               "left ventricular outflow tract"
             ],
             "description": "Sarcomeric cardiomyopathy with LV hypertrophy; the obstructive form (HOCM) features dynamic LVOT obstruction treated by septal reduction or cardiac myosin inhibitors.",
-            "pulse": 6,
+            "pulse": 7,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -188,7 +188,7 @@
           "category": "Infiltrative cardiomyopathy",
           "isDraft": false,
           "degree": 8,
-          "pulse": 7,
+          "pulse": 8,
           "entity": {
             "id": "cond-attr-cm",
             "type": "condition",
@@ -200,7 +200,7 @@
               "left ventricle"
             ],
             "description": "Infiltrative cardiomyopathy from misfolded transthyretin (wild-type or hereditary) depositing in the myocardium; treated with TTR stabilizers and silencers.",
-            "pulse": 7,
+            "pulse": 8,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -242,7 +242,7 @@
           "group": "condition",
           "category": "Heart failure",
           "isDraft": false,
-          "degree": 22,
+          "degree": 24,
           "pulse": 6,
           "entity": {
             "id": "cond-hfpef",
@@ -270,8 +270,8 @@
           "group": "condition",
           "category": "Coronary microvascular",
           "isDraft": false,
-          "degree": 4,
-          "pulse": 0,
+          "degree": 5,
+          "pulse": 3,
           "entity": {
             "id": "cond-cmd",
             "type": "condition",
@@ -283,6 +283,7 @@
               "coronary sinus"
             ],
             "description": "Angina from impaired microvascular function (often with non-obstructive coronaries); device approaches include coronary sinus narrowing to redistribute perfusion.",
+            "pulse": 3,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -314,7 +315,8 @@
             "pulse": 9,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-06-22",
+              "notes": "CMS released a proposed National Coverage Determination (NCD) decision memo (2026-06-15) that would end Coverage with Evidence Development for symptomatic severe AS TAVR, extend Medicare coverage to asymptomatic severe AS (informed by EARLY TAVR data), and relax Heart Team requirements. 30-day public comment period runs through 2026-07-15; final ruling expected ~Sept 2026. Affects coverage for all AS-treating TAVR devices. Sources: https://www.acc.org/Latest-in-Cardiology/Articles/2026/06/17/17/38/CMS-Proposes-Updates-to-TAVR-National-Coverage-Determination ; https://www.tctmd.com/news/cms-proposes-expanding-tavi-coverage-asymptomatic-patients. Human curator: monitor for the final NCD ruling."
             }
           }
         }
@@ -552,7 +554,7 @@
           "group": "device",
           "category": "LAA closure device",
           "isDraft": false,
-          "degree": 2,
+          "degree": 3,
           "pulse": 0,
           "timelineDate": "2016-01-01",
           "entity": {
@@ -578,6 +580,50 @@
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-ecliptis",
+          "label": "Edwards Ecliptis LAA Exclusion System",
+          "group": "device",
+          "category": "Surgical LAA exclusion clip",
+          "isDraft": true,
+          "degree": 2,
+          "pulse": 6,
+          "timelineDate": "2026-06-26",
+          "entity": {
+            "id": "dev-ecliptis",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Surgical LAA exclusion clip",
+            "name": "Edwards Ecliptis LAA Exclusion System",
+            "company": "co-edwards",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA 510(k) clearance ~2026-06-26 (submitted 2025-12-29). A surgical clip applied during concomitant cardiac surgery — not a percutaneous occluder. Edwards' first entry into LAA exclusion, competing with AtriCure AtriClip and Medtronic Penditure.",
+            "timeline": {
+              "date": "2026-06-26",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "FDA 510(k) clearance",
+              "source": "https://www.medtechdive.com/news/edwards-wins-fda-clearance-for-laa-clip-setting-up-competition-with-atricu/823980/",
+              "notes": "Date per FDA 510(k) database as reported by MedTech Dive/MassDevice; VERIFY exact clearance date against the FDA 510(k) database entry."
+            },
+            "mechanism": "Implantable clip applied surgically to mechanically close the left atrial appendage during concomitant cardiac surgery, preventing thrombus formation and embolization.",
+            "pulse": 6,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-07-08",
+              "sources": [
+                "https://www.medtechdive.com/news/edwards-wins-fda-clearance-for-laa-clip-setting-up-competition-with-atricu/823980/",
+                "https://www.massdevice.com/edwards-fda-nod-left-atrial-appendage-clip/"
+              ],
+              "notes": "New market entrant; VERIFY against an official Edwards product page before promoting to curated."
             }
           }
         }
@@ -770,8 +816,8 @@
           "group": "device",
           "category": "interatrial shunt",
           "isDraft": false,
-          "degree": 4,
-          "pulse": 5,
+          "degree": 5,
+          "pulse": 6,
           "entity": {
             "id": "dev-corvia-shunt",
             "type": "therapy",
@@ -785,10 +831,11 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational; FDA Breakthrough Device. Responder-subgroup signal in REDUCE LAP-HF II.",
             "mechanism": "Implanted interatrial shunt that decompresses the left atrium to lower exertional filling pressure in HFpEF.",
-            "pulse": 5,
+            "pulse": 6,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-06-22",
+              "notes": "RESPONDER-HF (NCT05425459), a confirmatory sham-controlled precision-medicine trial re-evaluating the shunt in HFpEF/HFmrEF, is active/not recruiting (750-patient target; enrolled since Nov 2022). Source: https://clinicaltrials.gov/study/NCT05425459."
             }
           }
         }
@@ -801,7 +848,7 @@
           "category": "interatrial shunt",
           "isDraft": false,
           "degree": 4,
-          "pulse": 5,
+          "pulse": 6,
           "entity": {
             "id": "dev-vwave-ventura",
             "type": "therapy",
@@ -816,10 +863,11 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational. RELIEVE-HF neutral overall with a divergent HFrEF-subgroup signal.",
             "mechanism": "Interatrial shunt to reduce left atrial pressure across the HF spectrum.",
-            "pulse": 5,
+            "pulse": 6,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-06-22",
+              "notes": "FDA Circulatory System Devices Panel voted 15-0 against recommending approval on effectiveness/benefit-risk grounds (9-6 in favor on safety only), reviewing RELIEVE-HF data (2025-12-03). J&J is reviewing panel feedback with the FDA; no final FDA decision (approval or rejection) found as of 2026-07-08 — status remains investigational. Sources: https://www.medtechdive.com/news/JJ-Johnson-V-Wave-heart-shunt-FDA-panel-vote/807159/ ; https://www.tctmd.com/news/fda-panel-declines-endorse-ventura-interatrial-shunt-hfref."
             }
           }
         }
@@ -831,8 +879,8 @@
           "group": "device",
           "category": "interatrial shunt",
           "isDraft": false,
-          "degree": 2,
-          "pulse": 0,
+          "degree": 3,
+          "pulse": 4,
           "entity": {
             "id": "dev-edwards-apture",
             "type": "therapy",
@@ -846,9 +894,11 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational shunt-to-coronary-sinus system under clinical study (ALT FLOW).",
             "mechanism": "Creates a left atrium-to-coronary-sinus shunt to lower left atrial pressure.",
+            "pulse": 4,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-06-22",
+              "notes": "ALT-FLOW II (NCT05686317), the randomized sham-controlled trial, is active/not recruiting (100-patient target, enrolling since April 2023). Source: https://clinicaltrials.gov/study/NCT05686317."
             }
           }
         }
@@ -1027,27 +1077,41 @@
       {
         "data": {
           "id": "dev-aflux",
-          "label": "A-Flux (CMD device)",
+          "label": "A-FLUX Reducer System",
           "group": "device",
-          "category": "coronary sinus / microvascular device",
+          "category": "coronary sinus reducer",
           "isDraft": true,
-          "degree": 1,
-          "pulse": 0,
+          "degree": 3,
+          "pulse": 3,
           "entity": {
             "id": "dev-aflux",
             "type": "therapy",
             "therapyType": "device",
-            "subtype": "coronary sinus / microvascular device",
-            "name": "A-Flux (CMD device)",
+            "subtype": "coronary sinus reducer",
+            "name": "A-FLUX Reducer System",
+            "company": "co-vahaticor",
             "treats": [
               "cond-cmd"
             ],
             "regulatoryStatus": "investigational",
-            "mechanism": "User-flagged device targeting coronary microvascular dysfunction.",
+            "regulatoryDetail": "Investigational; early feasibility study (SERRA-I, NCT06991322) underway in Europe. Not FDA cleared/approved.",
+            "mechanism": "Self-expanding dense-cell nitinol coronary sinus reducer (SwiftCell Technology) that narrows the coronary sinus to redistribute perfusion toward ischemic myocardium — mechanistically analogous to the Shockwave/J&J Coronary Sinus Reducer.",
+            "links": [
+              {
+                "label": "Product page",
+                "url": "https://vahaticor.com/"
+              }
+            ],
+            "pulse": 3,
             "curation": {
               "status": "draft",
-              "lastUpdated": "2026-06-22",
-              "notes": "Placeholder from user request ('A-flux for CMD'). VERIFY exact product name and manufacturer before curating; add company ref and sources."
+              "lastUpdated": "2026-07-08",
+              "sources": [
+                "https://vahaticor.com/",
+                "https://clinicaltrials.gov/study/NCT06991322",
+                "https://www.jacc.org/doi/10.1016/j.jaccas.2024.102962"
+              ],
+              "notes": "Manufacturer confirmed as VahatiCor, Inc. (T45 Labs portfolio), resolving the prior 'unverified placeholder' flag. Company closed an oversubscribed $23M Series B (2025-11-18) to accelerate development. Human curator: verify current SERRA-I enrollment progress before promoting to curated."
             }
           }
         }
@@ -1084,7 +1148,8 @@
             "pulse": 6,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-06-22",
+              "notes": "FDA accepted (2026-06-01) a Priority Review sNDA for an adolescent symptomatic oHCM indication, based on positive Phase 3 SCOUT-HCM topline results (announced Jan 2026); PDUFA date 2026-09-30. If approved, would be the first cardiac myosin inhibitor for adolescents. Source: https://news.bms.com/news/corporate-financial/2026/U-S--Food-and-Drug-Administration-Accepts-for-Priority-Review-Bristol-Myers-Squibbs-Supplemental-New-Drug-Application-for-Camzyos-mavacamten-to-Treat-Adolescents-with-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-oHCM/default.aspx. Human curator: track the Sept 2026 PDUFA decision."
             }
           }
         }
@@ -1096,8 +1161,8 @@
           "group": "pharmaceutical",
           "category": "cardiac myosin inhibitor",
           "isDraft": false,
-          "degree": 4,
-          "pulse": 8,
+          "degree": 5,
+          "pulse": 9,
           "entity": {
             "id": "rx-aficamten",
             "type": "therapy",
@@ -1111,11 +1176,11 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Next-generation myosin inhibitor; FDA review pending after SEQUOIA-HCM. VERIFY current approval status.",
             "mechanism": "Selective cardiac myosin inhibitor reducing LVOT gradients with a wider therapeutic window.",
-            "pulse": 8,
+            "pulse": 9,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22",
-              "notes": "Regulatory status time-sensitive; confirm at next refresh."
+              "notes": "CONFIRMED: FDA approved 2025-12-19 under the brand name Myqorzo for symptomatic obstructive HCM (NYHA II-III), based on SEQUOIA-HCM (see trial-sequoia-hcm). Also approved in China (NMPA, 2025-12-17) and the EU (European Commission, 2026-02-17); first EU commercial launch (Germany) 2026-06-01. A second pivotal trial, ACACIA-HCM, met both primary endpoints in non-obstructive HCM (topline 2026-05-05); full data plus a MAPLE-HCM subgroup analysis are slated as late-breaking presentations at ESC Congress 2026 (announced 2026-07-07). Sources: https://ir.cytokinetics.com/press-releases/press-release-details/2025/Cytokinetics-Announces-FDA-Approval-of-MYQORZO-aficamten-for-the-Treatment-of-Adults-with-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-to-Improve-Functional-Capacity-and-Symptoms/default.aspx ; https://www.healio.com/news/cardiology/20251219/fda-approves-aficamten-for-adults-with-obstructive-hcm ; https://www.globenewswire.com/news-release/2026/07/07/3323061/35409/en/Cytokinetics-Announces-Three-Late-Breaking-Science-Abstracts-at-the-European-Society-of-Cardiology-ESC-Congress-2026.html. Human curator: update name to 'Aficamten (Myqorzo)', regulatoryStatus to approved, regulatoryDetail, and add an fda-approval timeline (2025-12-19)."
             }
           }
         }
@@ -1165,7 +1230,7 @@
           "category": "TTR stabilizer",
           "isDraft": false,
           "degree": 3,
-          "pulse": 8,
+          "pulse": 9,
           "timelineDate": "2024-01-01",
           "entity": {
             "id": "rx-acoramidis",
@@ -1186,10 +1251,11 @@
               "event": "FDA approval for ATTR-CM"
             },
             "mechanism": "Near-complete TTR tetramer stabilizer mimicking a protective TTR variant.",
-            "pulse": 8,
+            "pulse": 9,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-06-22",
+              "notes": "New analyses (published Circulation: Heart Failure, 2026-07-02) report early and sustained kidney-protective effects in ATTR-CM: a reversible eGFR dip plus reduced urinary albumin-to-creatinine ratio by Day 28, sustained through Month 30. Sources: https://www.globenewswire.com/news-release/2026/07/02/3321249/0/en/Acoramidis-Associated-with-First-Ever-Early-and-Sustained-Direct-Kidney-Protective-Effects-in-ATTR-CM.html ; https://investor.bridgebio.com/news/news-details/2026/Acoramidis-Associated-with-First-Ever-Early-and-Sustained-Direct-Kidney-Protective-Effects-in-ATTR-CM/default.aspx."
             }
           }
         }
@@ -1751,7 +1817,7 @@
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22",
-              "notes": "Verify final commercial wind-down timeline/geographies."
+              "notes": "CONFIRMED: Boston Scientific discontinued worldwide sales/R&D/manufacturing of ACURATE neo2 and ACURATE Prime effective 2025-05-28, after ACURATE IDE showed higher death/stroke/rehospitalization vs. competitor valves plus evidence of valve under-expansion; no reversal found as of 2026-07-08. Sources: https://citoday.com/news/boston-scientific-discontinues-acurate-neo2-and-acurate-prime-tavr-systems ; https://www.massdevice.com/boston-scientific-discontinues-acurate-tavr-sales-cites-regulatory-burden/."
             }
           }
         }
@@ -1796,7 +1862,8 @@
             "pulse": 8,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-06-22",
+              "notes": "CONFIRMED exact FDA approval date: 2026-03-23 (not 2025 as in the current timeline — human curator: correct timeline.date to 2026-03-23 and precision to day). Sources: https://www.tctmd.com/news/fda-approves-jenavalves-trilogy-aortic-regurgitation ; https://citoday.com/news/fda-approves-jenavalves-trilogy-thv-system-for-symptomatic-severe-aortic-regurgitation. Additionally, a 2026-07-01 JenaValve release recapped New York Valves 2026 late-breakers: an ALIGN-AR sub-analysis on pacemaker-implantation predictors (distinct from AS-oversizing mechanisms) and the JENA-VAD expanded-access registry (28 LVAD patients with severe AR treated with Trilogy; zero major 30-day complications; 7.3% one-year mortality). Source: https://www.globenewswire.com/news-release/2026/07/01/3320637/0/en/jenavalve-recaps-key-highlights-including-late-breaking-clinical-data-from-new-york-valves-2026.html."
             }
           }
         }
@@ -1846,7 +1913,7 @@
           "category": "TMVR (transcatheter mitral valve replacement)",
           "isDraft": false,
           "degree": 3,
-          "pulse": 6,
+          "pulse": 7,
           "entity": {
             "id": "dev-sapien-m3",
             "type": "therapy",
@@ -1860,11 +1927,11 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational transseptal TMVR (ENCIRCLE pivotal trial); uses a dock to capture a SAPIEN valve in the mitral position.",
             "mechanism": "Nitinol dock encircles the mitral leaflets/chordae, then a balloon-expandable SAPIEN valve is implanted within the dock.",
-            "pulse": 6,
+            "pulse": 7,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-28",
-              "notes": "One-year ENCIRCLE-MAC Registry data presented at New York Valves 2026 (Jun 24-26). SAPIEN M3 reportedly received FDA approval in late 2025 as the first transseptal TMVR; human curator: VERIFY the approval and, if confirmed, update regulatoryStatus to approved with regulatoryDetail and a fda-approval timeline."
+              "notes": "CONFIRMED: FDA approved 2025-12-23 as the Edwards SAPIEN M3 Mitral Valve Replacement System — the first transseptal TMVR device — for (1) symptomatic moderate-to-severe/severe MR unsuitable for surgery/TEER and (2) mitral valve dysfunction associated with mitral annular calcification unsuitable for surgery/TEER. Based on the single-arm ENCIRCLE pivotal trial (299 patients; ~95.7% achieved MR <=1+; presented TCT 2025-10-27, published Lancet 2025-11-29). CE Mark was earlier, April 2025. One-year ENCIRCLE-MAC Registry data were separately presented at New York Valves 2026 (Jun 24-26). Sources: https://www.edwards.com/newsroom/news/2025-12-23-fda-approves-edwards-lifesciences--sapien-m3-mitra ; https://www.tctmd.com/news/fda-approves-sapien-m3-transseptal-mitral-valve-replacement. Human curator: update regulatoryStatus to approved, regulatoryDetail, and add an fda-approval timeline (2025-12-23)."
             }
           }
         }
@@ -2434,7 +2501,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
-          "pulse": 0,
+          "pulse": 3,
           "entity": {
             "id": "co-corvia",
             "type": "company",
@@ -2442,6 +2509,7 @@
             "hq": "Tewksbury, MA, USA",
             "website": "https://corviamedical.com",
             "description": "Developer of the Corvia Atrial Shunt for heart failure.",
+            "pulse": 3,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -2477,8 +2545,8 @@
           "label": "Edwards Lifesciences",
           "group": "company",
           "isDraft": false,
-          "degree": 6,
-          "pulse": 0,
+          "degree": 7,
+          "pulse": 7,
           "entity": {
             "id": "co-edwards",
             "type": "company",
@@ -2487,6 +2555,7 @@
             "hq": "Irvine, CA, USA",
             "website": "https://www.edwards.com",
             "description": "Structural heart company; APTURE transcatheter shunt and (via Endotronix) the Cordella sensor.",
+            "pulse": 7,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -2612,7 +2681,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 2,
-          "pulse": 0,
+          "pulse": 8,
           "entity": {
             "id": "co-cytokinetics",
             "type": "company",
@@ -2621,6 +2690,7 @@
             "hq": "South San Francisco, CA, USA",
             "website": "https://www.cytokinetics.com",
             "description": "Muscle-biology company; aficamten (HCM) and omecamtiv mecarbil (HFrEF).",
+            "pulse": 8,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -2658,7 +2728,7 @@
           "group": "company",
           "isDraft": false,
           "degree": 1,
-          "pulse": 0,
+          "pulse": 5,
           "entity": {
             "id": "co-bridgebio",
             "type": "company",
@@ -2667,6 +2737,7 @@
             "hq": "Palo Alto, CA, USA",
             "website": "https://www.bridgebio.com",
             "description": "Markets acoramidis (Attruby) for ATTR-CM.",
+            "pulse": 5,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -2853,7 +2924,8 @@
             "pulse": 8,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-06-22",
+              "notes": "Remains independent: a US District Court granted the FTC's injunction against Edwards Lifesciences' proposed ~$1.2B acquisition of JenaValve (Jan 9, 2026) and Edwards abandoned the deal. Source: https://www.massdevice.com/edwards-fda-nod-left-atrial-appendage-clip/ background context; https://www.edwards.com/newsroom/news/2026-01-09-edwards-comments-on-jenavalve-acquisition. Human curator: consider adding this M&A history to description."
             }
           }
         }
@@ -2898,6 +2970,34 @@
               "status": "draft",
               "lastUpdated": "2026-06-22",
               "notes": "Digital health vendor; refine indication relevance."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-vahaticor",
+          "label": "VahatiCor, Inc.",
+          "group": "company",
+          "isDraft": true,
+          "degree": 1,
+          "pulse": 3,
+          "entity": {
+            "id": "co-vahaticor",
+            "type": "company",
+            "name": "VahatiCor, Inc.",
+            "hq": "USA",
+            "website": "https://vahaticor.com",
+            "description": "Developer of the A-FLUX Reducer System, an investigational self-expanding coronary sinus reducer for coronary microvascular dysfunction (a T45 Labs portfolio company).",
+            "pulse": 3,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-07-08",
+              "sources": [
+                "https://vahaticor.com/",
+                "https://www.businesswire.com/news/home/20251118907873/en/VahatiCor-Closes-Oversubscribed-Series-B-Financing-to-Accelerate-A-FLUX-Development-for-Coronary-Microvascular-Dysfunction."
+              ],
+              "notes": "Confirms the maker of the 'A-flux' device previously logged as an unverified placeholder on dev-aflux. HQ city not verified; VERIFY exact HQ location before promoting."
             }
           }
         }
@@ -3126,7 +3226,7 @@
           "group": "trial",
           "isDraft": false,
           "degree": 2,
-          "pulse": 0,
+          "pulse": 7,
           "timelineDate": "2020-10-15",
           "entity": {
             "id": "trial-champion-af",
@@ -3154,10 +3254,60 @@
             "references": [
               "https://clinicaltrials.gov/search?term=CHAMPION-AF"
             ],
+            "pulse": 7,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22",
-              "notes": "Confirm enrollment and readout date at refresh."
+              "notes": "CONFIRMED readout: Watchman FLX met all primary/secondary safety and efficacy endpoints — noninferior to NOACs for CV death/stroke/SE and superior on non-procedural major/clinically-relevant bleeding at 3 years. Presented at ACC.26 and published simultaneously in NEJM 2026-03-28 (DOI 10.1056/NEJMoa2517213). Sources: https://news.bostonscientific.com/2026-03-28-CHAMPION-AF-study-of-the-WATCHMAN-FLX-TM-Left-Atrial-Appendage-Closure-Device-as-a-first-line-therapy-for-stroke-risk-reduction-meets-all-primary-and-secondary-safety-and-efficacy-endpoints ; https://www.nejm.org/doi/10.1056/NEJMoa2517213. Human curator: update status to completed, resultStatus to positive, and rewrite outcomeSummary/year with the trial results."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-lambre-ii",
+          "label": "LAmbre II First-in-Man",
+          "group": "trial",
+          "isDraft": true,
+          "degree": 2,
+          "pulse": 2,
+          "timelineDate": "2026-04-01",
+          "entity": {
+            "id": "trial-lambre-ii",
+            "type": "trial",
+            "name": "LAmbre II First-in-Man",
+            "nctId": "NCT07455539",
+            "phase": "First-in-man",
+            "status": "unknown",
+            "timeline": {
+              "date": "2026-04-01",
+              "precision": "month",
+              "dateBasis": "trial-start",
+              "event": "Estimated trial start",
+              "source": "https://clinicaltrials.gov/study/NCT07455539",
+              "notes": "ClinicalTrials.gov lists status as 'not yet recruiting' with an estimated (not actual) start date; no allowed schema value maps exactly to 'not yet recruiting', so status is left as unknown pending an update."
+            },
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-lambre"
+            ],
+            "enrollment": 10,
+            "primaryEndpoint": "Safety and feasibility of the next-generation LAmbre II occluder",
+            "outcomeSummary": "First-in-man feasibility study (Prince of Wales Hospital, Hong Kong, with Lifetech Scientific) of the next-generation LAmbre II LAA occluder in non-valvular AF; not yet recruiting.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT07455539"
+            ],
+            "pulse": 2,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-07-08",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT07455539"
+              ],
+              "notes": "Referenced against the existing dev-lambre entity as the closest product match; the device under study is a next-generation 'LAmbre II' variant, not yet a separately catalogued therapy. Human curator: add a distinct dev-lambre-ii therapy entity if/when LAmbre II specifications are published."
             }
           }
         }
@@ -3459,6 +3609,57 @@
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-acacia-hcm",
+          "label": "ACACIA-HCM",
+          "group": "trial",
+          "isDraft": true,
+          "degree": 2,
+          "pulse": 8,
+          "timelineDate": "2023-08-30",
+          "entity": {
+            "id": "trial-acacia-hcm",
+            "type": "trial",
+            "name": "ACACIA-HCM",
+            "nctId": "NCT06081894",
+            "phase": "Phase 3 RCT",
+            "status": "active",
+            "timeline": {
+              "date": "2023-08-30",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT06081894"
+            },
+            "conditions": [
+              "cond-hcm"
+            ],
+            "therapies": [
+              "rx-aficamten"
+            ],
+            "enrollment": 500,
+            "year": 2026,
+            "primaryEndpoint": "Change in KCCQ Clinical Summary Score and change in predicted peak VO2 from baseline to week 36",
+            "outcomeSummary": "Topline results (announced 2026-05-05) showed aficamten met both dual primary endpoints (KCCQ-CSS and pVO2) at week 36 vs placebo in symptomatic non-obstructive HCM; full data (plus a MAPLE-HCM subgroup analysis) presented as late-breakers at ESC Congress 2026 (announced 2026-07-07).",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT06081894"
+            ],
+            "pulse": 8,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-07-08",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT06081894",
+                "https://www.thecardiologyadvisor.com/news/aficamten-meets-primary-endpoints-in-phase-3-non-obstructive-hcm-trial/",
+                "https://www.globenewswire.com/news-release/2026/07/07/3323061/35409/en/Cytokinetics-Announces-Three-Late-Breaking-Science-Abstracts-at-the-European-Society-of-Cardiology-ESC-Congress-2026.html"
+              ],
+              "notes": "First pivotal trial of a cardiac myosin inhibitor in non-obstructive HCM; if regulators are convinced, aficamten could become the first approved drug for nHCM. Human curator: refine outcomeSummary once full ESC 2026 data (Aug 28-31) are published."
             }
           }
         }
@@ -4070,6 +4271,53 @@
       },
       {
         "data": {
+          "id": "trial-responder-hf",
+          "label": "RESPONDER-HF",
+          "group": "trial",
+          "isDraft": true,
+          "degree": 2,
+          "pulse": 5,
+          "timelineDate": "2022-11-17",
+          "entity": {
+            "id": "trial-responder-hf",
+            "type": "trial",
+            "name": "RESPONDER-HF",
+            "nctId": "NCT05425459",
+            "phase": "Confirmatory RCT (sham-controlled, precision medicine)",
+            "status": "active",
+            "timeline": {
+              "date": "2022-11-17",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT05425459"
+            },
+            "conditions": [
+              "cond-hfpef"
+            ],
+            "therapies": [
+              "dev-corvia-shunt"
+            ],
+            "enrollment": 750,
+            "primaryEndpoint": "Composite of HF event rates and KCCQ score at 12 months",
+            "outcomeSummary": "Confirmatory precision-medicine trial re-evaluating the Corvia Atrial Shunt in HFpEF/HFmrEF, targeting the responder phenotype identified in REDUCE LAP-HF II; active, not recruiting, no readout yet.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT05425459"
+            ],
+            "pulse": 5,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-07-08",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT05425459"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "trial-relieve-hf",
           "label": "RELIEVE-HF",
           "group": "trial",
@@ -4107,7 +4355,55 @@
             ],
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-06-22",
+              "notes": "Reviewing these RELIEVE-HF data, the FDA Circulatory System Devices Panel voted 15-0 against recommending approval on effectiveness/benefit-risk grounds (2025-12-03); no final FDA decision found as of 2026-07-08. See dev-vwave-ventura notes. Source: https://www.tctmd.com/news/fda-panel-declines-endorse-ventura-interatrial-shunt-hfref."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-alt-flow-ii",
+          "label": "ALT-FLOW II",
+          "group": "trial",
+          "isDraft": true,
+          "degree": 2,
+          "pulse": 4,
+          "timelineDate": "2023-04-01",
+          "entity": {
+            "id": "trial-alt-flow-ii",
+            "type": "trial",
+            "name": "ALT-FLOW II",
+            "nctId": "NCT05686317",
+            "phase": "Randomized sham-controlled RCT",
+            "status": "active",
+            "timeline": {
+              "date": "2023-04-01",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT05686317"
+            },
+            "conditions": [
+              "cond-hfpef"
+            ],
+            "therapies": [
+              "dev-edwards-apture"
+            ],
+            "enrollment": 100,
+            "primaryEndpoint": "30-day safety (freedom from serious device/procedure complications) and 6-month change in exercise pulmonary capillary wedge pressure",
+            "outcomeSummary": "Randomized sham-controlled pivotal trial of the Edwards APTURE left atrium-to-coronary-sinus shunt in HFpEF/HFmrEF; active, not recruiting, no readout yet.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT05686317"
+            ],
+            "pulse": 4,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-07-08",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT05686317"
+              ]
             }
           }
         }
@@ -4330,6 +4626,54 @@
       },
       {
         "data": {
+          "id": "trial-serra-i",
+          "label": "SERRA-I",
+          "group": "trial",
+          "isDraft": true,
+          "degree": 2,
+          "pulse": 3,
+          "timelineDate": "2025-06-18",
+          "entity": {
+            "id": "trial-serra-i",
+            "type": "trial",
+            "name": "SERRA-I",
+            "nctId": "NCT06991322",
+            "phase": "Early feasibility study",
+            "status": "recruiting",
+            "timeline": {
+              "date": "2025-06-18",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT06991322"
+            },
+            "conditions": [
+              "cond-cmd"
+            ],
+            "therapies": [
+              "dev-aflux"
+            ],
+            "enrollment": 30,
+            "primaryEndpoint": "Safety and clinical performance of the A-FLUX self-expanding coronary sinus reducer for symptomatic CMD",
+            "outcomeSummary": "European early feasibility study of the A-FLUX coronary sinus reducer for refractory angina from coronary microvascular dysfunction; enrolling, no readout yet.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT06991322"
+            ],
+            "pulse": 3,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-07-08",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT06991322"
+              ],
+              "notes": "A second, similarly-titled ClinicalTrials.gov record (NCT07449325, 'Self-Expanding Coronary Sinus Reducer for Treatment of Symptomatic Coronary Microvascular Dysfunction (CMD)', est. start April 2026) also references the A-FLUX device without the 'SERRA-I' name — human curator: verify whether this is a distinct (e.g. US) trial or a re-registration before adding separately."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "trial-partner-2",
           "label": "PARTNER 2A",
           "group": "trial",
@@ -4459,7 +4803,8 @@
             "pulse": 6,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-06-22",
+              "notes": "6-7 year follow-up (published JACC 2026-02-16) found no significant difference in all-cause mortality/disabling stroke between TAVR and SAVR, but higher reintervention rates with TAVR (5.5% vs 3.3% at 6 years; 9.8% vs 6% in a 7-year subset). Medtronic issued a clinician communication reinforcing IFU adherence. Note the original trial used CoreValve/Evolut R/PRO, since superseded by Evolut FX/FX+. Sources: https://www.jacc.org/doi/10.1016/j.jacc.2026.02.5063 ; https://www.tctmd.com/news/higher-reintervention-risk-tavi-emerges-6-7-years-evolut-low-risk-trial."
             }
           }
         }
@@ -4692,7 +5037,8 @@
             "pulse": 8,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-06-22",
+              "notes": "A new sub-analysis (presented at New York Valves 2026, recapped in a JenaValve release 2026-07-01) examined predictors of pacemaker implantation after Trilogy in AR, finding a mechanism distinct from the annular-oversizing driver seen in AS. Source: https://www.globenewswire.com/news-release/2026/07/01/3320637/0/en/jenavalve-recaps-key-highlights-including-late-breaking-clinical-data-from-new-york-valves-2026.html."
             }
           }
         }
@@ -5088,7 +5434,7 @@
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-28",
-              "notes": "New York Valves 2026 (Jun 24-26): one-year ENCIRCLE-MAC Registry outcomes presented, supporting safety/effectiveness/QoL of SAPIEN M3 in mitral annular calcification. SAPIEN M3 reportedly received FDA approval in late 2025; human curator: verify and update dev-sapien-m3 regulatoryStatus accordingly."
+              "notes": "New York Valves 2026 (Jun 24-26): one-year ENCIRCLE-MAC Registry outcomes presented, supporting safety/effectiveness/QoL of SAPIEN M3 in mitral annular calcification. CONFIRMED: SAPIEN M3 received FDA approval 2025-12-23 (see dev-sapien-m3 notes for sources); this pivotal ENCIRCLE trial supported that approval."
             }
           }
         }
@@ -5182,6 +5528,22 @@
         "data": {
           "id": "dev-lambre__treats__cond-af",
           "source": "dev-lambre",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-ecliptis__made_by__co-edwards",
+          "source": "dev-ecliptis",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-ecliptis__treats__cond-af",
+          "source": "dev-ecliptis",
           "target": "cond-af",
           "relationship": "treats"
         }
@@ -5440,6 +5802,14 @@
           "source": "dev-coronary-sinus-reducer",
           "target": "cond-cmd",
           "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-aflux__made_by__co-vahaticor",
+          "source": "dev-aflux",
+          "target": "co-vahaticor",
+          "relationship": "made_by"
         }
       },
       {
@@ -6148,6 +6518,22 @@
       },
       {
         "data": {
+          "id": "trial-lambre-ii__evaluates__dev-lambre",
+          "source": "trial-lambre-ii",
+          "target": "dev-lambre",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-lambre-ii__studies__cond-af",
+          "source": "trial-lambre-ii",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
           "id": "trial-respect__evaluates__dev-amplatzer-pfo",
           "source": "trial-respect",
           "target": "dev-amplatzer-pfo",
@@ -6254,6 +6640,22 @@
         "data": {
           "id": "trial-maple-hcm__studies__cond-hcm",
           "source": "trial-maple-hcm",
+          "target": "cond-hcm",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-acacia-hcm__evaluates__rx-aficamten",
+          "source": "trial-acacia-hcm",
+          "target": "rx-aficamten",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-acacia-hcm__studies__cond-hcm",
+          "source": "trial-acacia-hcm",
           "target": "cond-hcm",
           "relationship": "studies"
         }
@@ -6484,6 +6886,22 @@
       },
       {
         "data": {
+          "id": "trial-responder-hf__evaluates__dev-corvia-shunt",
+          "source": "trial-responder-hf",
+          "target": "dev-corvia-shunt",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-responder-hf__studies__cond-hfpef",
+          "source": "trial-responder-hf",
+          "target": "cond-hfpef",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
           "id": "trial-relieve-hf__evaluates__dev-vwave-ventura",
           "source": "trial-relieve-hf",
           "target": "dev-vwave-ventura",
@@ -6502,6 +6920,22 @@
         "data": {
           "id": "trial-relieve-hf__studies__cond-hfpef",
           "source": "trial-relieve-hf",
+          "target": "cond-hfpef",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-alt-flow-ii__evaluates__dev-edwards-apture",
+          "source": "trial-alt-flow-ii",
+          "target": "dev-edwards-apture",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-alt-flow-ii__studies__cond-hfpef",
+          "source": "trial-alt-flow-ii",
           "target": "cond-hfpef",
           "relationship": "studies"
         }
@@ -6606,6 +7040,22 @@
         "data": {
           "id": "trial-cosira-ii__studies__cond-cmd",
           "source": "trial-cosira-ii",
+          "target": "cond-cmd",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-serra-i__evaluates__dev-aflux",
+          "source": "trial-serra-i",
+          "target": "dev-aflux",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-serra-i__studies__cond-cmd",
+          "source": "trial-serra-i",
           "target": "cond-cmd",
           "relationship": "studies"
         }
