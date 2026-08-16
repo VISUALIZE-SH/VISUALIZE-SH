@@ -813,6 +813,31 @@
   pulse: 8
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
+- id: dev-adaptr
+  type: therapy
+  therapyType: device
+  name: "Versa Vascular adapTR Leaflet Enhancement System"
+  company: co-versa-vascular
+  treats: [cond-tr]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Investigational transcatheter tricuspid repair system; exclusively for clinical investigation and not commercially available."
+  mechanism: "A transfemorally delivered, conformable nitinol frame sits entirely in the right atrium to stabilize annular dilation, while a central disk reduces the regurgitant orifice and supports native leaflet coaptation without entering the right ventricle."
+  description: "A dual-mechanism repair concept intended to combine annular stabilization with leaflet enhancement while preserving the native tricuspid valve."
+  links:
+    - label: "Developer page"
+      url: "https://versavascular.com/"
+    - label: "First-in-human report"
+      url: "https://www.jacc.org/doi/10.1016/j.jaccas.2025.106051"
+  pulse: 8
+  curation:
+    status: draft
+    lastUpdated: 2026-08-15
+    sources:
+      - "https://versavascular.com/"
+      - "https://www.jacc.org/doi/10.1016/j.jaccas.2025.106051"
+      - "https://www.tctmd.com/slide/case-presentation-99"
+    notes: "The developer website and ClinicalTrials.gov still use the earlier 'Versa' name; 'adapTR Leaflet Enhancement System' is the name presented at New York Valves 2026. Human curator: confirm final commercial capitalization and naming as the program advances."
+
 # --- TTVR (transcatheter tricuspid valve replacement) ---
 - id: dev-evoque
   type: therapy

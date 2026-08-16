@@ -1178,6 +1178,41 @@
   pulse: 8
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
+- id: trial-adaptr-fih
+  type: trial
+  name: "adapTR First-in-Human Study"
+  nctId: "NCT06368401"
+  phase: "Early feasibility / first-in-human"
+  status: active
+  timeline:
+    date: "2024-08-05"
+    precision: day
+    dateBasis: trial-start
+    event: "First-in-human study start"
+    source: "https://clinicaltrials.gov/study/NCT06368401"
+  conditions: [cond-tr]
+  therapies: [dev-adaptr]
+  enrollment: 10
+  year: 2026
+  primaryEndpoint: "Acute procedural success and freedom from procedure- or device-related major adverse events through hospital discharge"
+  outcomeSummary: "Prospective, nonrandomized, single-arm feasibility study; the published first case showed sustained TR reduction and improved functional status at 90 days, but full-cohort results have not been posted."
+  resultStatus: ongoing
+  references:
+    - "https://clinicaltrials.gov/study/NCT06368401"
+    - "https://www.jacc.org/doi/10.1016/j.jaccas.2025.106051"
+  links:
+    - label: "First-in-human report"
+      url: "https://www.jacc.org/doi/10.1016/j.jaccas.2025.106051"
+  pulse: 8
+  curation:
+    status: draft
+    lastUpdated: 2026-08-15
+    sources:
+      - "https://clinicaltrials.gov/study/NCT06368401"
+      - "https://www.jacc.org/doi/10.1016/j.jaccas.2025.106051"
+      - "https://www.tctmd.com/slide/case-presentation-99"
+    notes: "ClinicalTrials.gov still lists the study as active, not recruiting, but the record was last updated 2024-12-05 and gives an estimated completion date of 2025-10-02. Human curator: verify current study status and whether full 10-patient results are available."
+
 # --- TMVR ---
 - id: trial-summit
   type: trial
