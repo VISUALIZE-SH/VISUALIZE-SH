@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-07-09T03:58:39.818Z",
-    "lastUpdated": "2026-07-08",
+    "generatedAt": "2026-08-16T04:21:40.757Z",
+    "lastUpdated": "2026-08-15",
     "counts": {
       "condition": 16,
-      "device": 33,
+      "device": 34,
       "pharmaceutical": 12,
       "procedure": 7,
       "digital": 2,
-      "company": 26,
-      "trial": 56
+      "company": 27,
+      "trial": 57
     },
-    "draftCount": 13,
-    "total": 152
+    "draftCount": 16,
+    "total": 155
   },
   "elements": {
     "nodes": [
@@ -416,7 +416,7 @@
           "group": "condition",
           "category": "Tricuspid valve disease",
           "isDraft": false,
-          "degree": 6,
+          "degree": 8,
           "pulse": 9,
           "entity": {
             "id": "cond-tr",
@@ -2098,6 +2098,51 @@
       },
       {
         "data": {
+          "id": "dev-adaptr",
+          "label": "Versa Vascular adapTR Leaflet Enhancement System",
+          "group": "device",
+          "isDraft": true,
+          "degree": 3,
+          "pulse": 8,
+          "entity": {
+            "id": "dev-adaptr",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Versa Vascular adapTR Leaflet Enhancement System",
+            "company": "co-versa-vascular",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational transcatheter tricuspid repair system; exclusively for clinical investigation and not commercially available.",
+            "mechanism": "A transfemorally delivered, conformable nitinol frame sits entirely in the right atrium to stabilize annular dilation, while a central disk reduces the regurgitant orifice and supports native leaflet coaptation without entering the right ventricle.",
+            "description": "A dual-mechanism repair concept intended to combine annular stabilization with leaflet enhancement while preserving the native tricuspid valve.",
+            "links": [
+              {
+                "label": "Developer page",
+                "url": "https://versavascular.com/"
+              },
+              {
+                "label": "First-in-human report",
+                "url": "https://www.jacc.org/doi/10.1016/j.jaccas.2025.106051"
+              }
+            ],
+            "pulse": 8,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-08-15",
+              "sources": [
+                "https://versavascular.com/",
+                "https://www.jacc.org/doi/10.1016/j.jaccas.2025.106051",
+                "https://www.tctmd.com/slide/case-presentation-99"
+              ],
+              "notes": "The developer website and ClinicalTrials.gov still use the earlier 'Versa' name; 'adapTR Leaflet Enhancement System' is the name presented at New York Valves 2026. Human curator: confirm final commercial capitalization and naming as the program advances."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "dev-evoque",
           "label": "Edwards EVOQUE",
           "group": "device",
@@ -2926,6 +2971,33 @@
               "status": "curated",
               "lastUpdated": "2026-06-22",
               "notes": "Remains independent: a US District Court granted the FTC's injunction against Edwards Lifesciences' proposed ~$1.2B acquisition of JenaValve (Jan 9, 2026) and Edwards abandoned the deal. Source: https://www.massdevice.com/edwards-fda-nod-left-atrial-appendage-clip/ background context; https://www.edwards.com/newsroom/news/2026-01-09-edwards-comments-on-jenavalve-acquisition. Human curator: consider adding this M&A history to description."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-versa-vascular",
+          "label": "Versa Vascular",
+          "group": "company",
+          "isDraft": true,
+          "degree": 1,
+          "pulse": 7,
+          "entity": {
+            "id": "co-versa-vascular",
+            "type": "company",
+            "name": "Versa Vascular",
+            "hq": "Santa Cruz, CA, USA",
+            "website": "https://versavascular.com",
+            "description": "Clinical-stage structural-heart company developing the adapTR transcatheter tricuspid valve repair system.",
+            "pulse": 7,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-08-15",
+              "sources": [
+                "https://versavascular.com/",
+                "https://versavascular.com/about/"
+              ]
             }
           }
         }
@@ -5311,6 +5383,64 @@
       },
       {
         "data": {
+          "id": "trial-adaptr-fih",
+          "label": "adapTR First-in-Human Study",
+          "group": "trial",
+          "isDraft": true,
+          "degree": 2,
+          "pulse": 8,
+          "timelineDate": "2024-08-05",
+          "entity": {
+            "id": "trial-adaptr-fih",
+            "type": "trial",
+            "name": "adapTR First-in-Human Study",
+            "nctId": "NCT06368401",
+            "phase": "Early feasibility / first-in-human",
+            "status": "active",
+            "timeline": {
+              "date": "2024-08-05",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "First-in-human study start",
+              "source": "https://clinicaltrials.gov/study/NCT06368401"
+            },
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-adaptr"
+            ],
+            "enrollment": 10,
+            "year": 2026,
+            "primaryEndpoint": "Acute procedural success and freedom from procedure- or device-related major adverse events through hospital discharge",
+            "outcomeSummary": "Prospective, nonrandomized, single-arm feasibility study; the published first case showed sustained TR reduction and improved functional status at 90 days, but full-cohort results have not been posted.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT06368401",
+              "https://www.jacc.org/doi/10.1016/j.jaccas.2025.106051"
+            ],
+            "links": [
+              {
+                "label": "First-in-human report",
+                "url": "https://www.jacc.org/doi/10.1016/j.jaccas.2025.106051"
+              }
+            ],
+            "pulse": 8,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-08-15",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT06368401",
+                "https://www.jacc.org/doi/10.1016/j.jaccas.2025.106051",
+                "https://www.tctmd.com/slide/case-presentation-99"
+              ],
+              "notes": "ClinicalTrials.gov still lists the study as active, not recruiting, but the record was last updated 2024-12-05 and gives an estimated completion date of 2025-10-02. Human curator: verify current study status and whether full 10-patient results are available."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "trial-summit",
           "label": "SUMMIT",
           "group": "trial",
@@ -6272,6 +6402,22 @@
         "data": {
           "id": "dev-triclip__treats__cond-tr",
           "source": "dev-triclip",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-adaptr__made_by__co-versa-vascular",
+          "source": "dev-adaptr",
+          "target": "co-versa-vascular",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-adaptr__treats__cond-tr",
+          "source": "dev-adaptr",
           "target": "cond-tr",
           "relationship": "treats"
         }
@@ -7328,6 +7474,22 @@
         "data": {
           "id": "trial-triscend-2__studies__cond-tr",
           "source": "trial-triscend-2",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-adaptr-fih__evaluates__dev-adaptr",
+          "source": "trial-adaptr-fih",
+          "target": "dev-adaptr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-adaptr-fih__studies__cond-tr",
+          "source": "trial-adaptr-fih",
           "target": "cond-tr",
           "relationship": "studies"
         }
