@@ -88,6 +88,29 @@
       - "https://www.massdevice.com/edwards-fda-nod-left-atrial-appendage-clip/"
     notes: "New market entrant; VERIFY against an official Edwards product page before promoting to curated."
 
+- id: dev-claas-acuform
+  type: therapy
+  therapyType: device
+  subtype: "LAA closure device"
+  name: "CLAAS AcuFORM LAAO System"
+  company: co-wl-gore
+  treats: [cond-af]
+  regulatoryStatus: investigational
+  regulatoryDetail: "Investigational in all geographies; developed by Conformal Medical, a wholly owned W. L. Gore & Associates subsidiary since February 2026."
+  mechanism: "Foam-based implant delivered percutaneously through transseptal access to conform to left-atrial-appendage anatomy and seal the appendage."
+  description: "The permanent implant is intended to prevent thromboembolism from the left atrial appendage in non-valvular atrial fibrillation."
+  links:
+    - label: "Product and clinical-study information"
+      url: "https://conformalmedical.com/patient/afib-and-stroke"
+  pulse: 5
+  curation:
+    status: draft
+    lastUpdated: 2026-08-22
+    sources:
+      - "https://www.goremedical.com/about-us/news/gore-acquires-conformal-medical-2026-02-19"
+      - "https://conformalmedical.com/patient/afib-and-stroke"
+    notes: "The system remains investigational and is not approved for commercial use in any geography. Confirm final Gore/Conformal product branding before promotion."
+
 # --- Septal / congenital defect closure ---
 - id: dev-amplatzer-pfo
   type: therapy
