@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-08-16T04:21:40.757Z",
-    "lastUpdated": "2026-08-15",
+    "generatedAt": "2026-08-22T22:38:10.691Z",
+    "lastUpdated": "2026-08-22",
     "counts": {
       "condition": 16,
-      "device": 34,
+      "device": 35,
       "pharmaceutical": 12,
       "procedure": 7,
       "digital": 2,
       "company": 27,
-      "trial": 57
+      "trial": 58
     },
-    "draftCount": 16,
-    "total": 155
+    "draftCount": 18,
+    "total": 157
   },
   "elements": {
     "nodes": [
@@ -23,7 +23,7 @@
           "group": "condition",
           "category": "Atrial fibrillation / stroke prevention",
           "isDraft": false,
-          "degree": 11,
+          "degree": 13,
           "pulse": 7,
           "entity": {
             "id": "cond-af",
@@ -475,7 +475,7 @@
           "group": "device",
           "category": "LAA closure device",
           "isDraft": false,
-          "degree": 8,
+          "degree": 9,
           "pulse": 6,
           "timelineDate": "2020-01-01",
           "entity": {
@@ -518,7 +518,7 @@
           "group": "device",
           "category": "LAA closure device",
           "isDraft": false,
-          "degree": 4,
+          "degree": 5,
           "pulse": 0,
           "timelineDate": "2021-01-01",
           "entity": {
@@ -624,6 +624,48 @@
                 "https://www.massdevice.com/edwards-fda-nod-left-atrial-appendage-clip/"
               ],
               "notes": "New market entrant; VERIFY against an official Edwards product page before promoting to curated."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-claas-acuform",
+          "label": "CLAAS AcuFORM LAAO System",
+          "group": "device",
+          "category": "LAA closure device",
+          "isDraft": true,
+          "degree": 3,
+          "pulse": 5,
+          "entity": {
+            "id": "dev-claas-acuform",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "LAA closure device",
+            "name": "CLAAS AcuFORM LAAO System",
+            "company": "co-wl-gore",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational in all geographies; developed by Conformal Medical, a wholly owned W. L. Gore & Associates subsidiary since February 2026.",
+            "mechanism": "Foam-based implant delivered percutaneously through transseptal access to conform to left-atrial-appendage anatomy and seal the appendage.",
+            "description": "The permanent implant is intended to prevent thromboembolism from the left atrial appendage in non-valvular atrial fibrillation.",
+            "links": [
+              {
+                "label": "Product and clinical-study information",
+                "url": "https://conformalmedical.com/patient/afib-and-stroke"
+              }
+            ],
+            "pulse": 5,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-08-22",
+              "sources": [
+                "https://www.goremedical.com/about-us/news/gore-acquires-conformal-medical-2026-02-19",
+                "https://conformalmedical.com/patient/afib-and-stroke"
+              ],
+              "notes": "The system remains investigational and is not approved for commercial use in any geography. Confirm final Gore/Conformal product branding before promotion."
             }
           }
         }
@@ -2502,7 +2544,7 @@
           "label": "W. L. Gore & Associates",
           "group": "company",
           "isDraft": false,
-          "degree": 1,
+          "degree": 2,
           "pulse": 0,
           "entity": {
             "id": "co-wl-gore",
@@ -2513,7 +2555,8 @@
             "description": "Maker of GORE Cardioform septal/PFO occluders.",
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-06-22",
+              "notes": "Gore completed its acquisition of Conformal Medical on 2026-02-19; Conformal remains a wholly owned subsidiary developing the investigational CLAAS AcuFORM LAAO system. Human curator: update the company description after reviewing the new dev-claas-acuform entry. Source: https://www.goremedical.com/about-us/news/gore-acquires-conformal-medical-2026-02-19"
             }
           }
         }
@@ -3380,6 +3423,58 @@
                 "https://clinicaltrials.gov/study/NCT07455539"
               ],
               "notes": "Referenced against the existing dev-lambre entity as the closest product match; the device under study is a next-generation 'LAmbre II' variant, not yet a separately catalogued therapy. Human curator: add a distinct dev-lambre-ii therapy entity if/when LAmbre II specifications are published."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-conform",
+          "label": "CONFORM Pivotal Trial",
+          "group": "trial",
+          "isDraft": true,
+          "degree": 4,
+          "pulse": 5,
+          "timelineDate": "2022-05-26",
+          "entity": {
+            "id": "trial-conform",
+            "type": "trial",
+            "name": "CONFORM Pivotal Trial",
+            "nctId": "NCT05147792",
+            "phase": "Pivotal RCT",
+            "status": "recruiting",
+            "timeline": {
+              "date": "2022-05-26",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT05147792"
+            },
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-claas-acuform",
+              "dev-watchman-flx",
+              "dev-amulet"
+            ],
+            "enrollment": 1600,
+            "primaryEndpoint": "Safety and effectiveness of CLAAS AcuFORM by noninferiority to commercially available Watchman and Amulet LAAO systems",
+            "outcomeSummary": "Recruiting randomized pivotal trial comparing the investigational CLAAS AcuFORM system with commercially available LAAO devices; no results have been posted.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT05147792",
+              "https://www.conformtrial.com/conform-trial"
+            ],
+            "pulse": 5,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-08-22",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT05147792",
+                "https://www.conformtrial.com/conform-trial"
+              ],
+              "notes": "ClinicalTrials.gov reported recruiting status, an actual start date of 2022-05-26, and estimated enrollment of 1,600 in its 2026-06-29 update. The record names both Watchman and Amulet as commercial comparators; verify the exact comparator allocation before promotion."
             }
           }
         }
@@ -5680,6 +5775,22 @@
       },
       {
         "data": {
+          "id": "dev-claas-acuform__made_by__co-wl-gore",
+          "source": "dev-claas-acuform",
+          "target": "co-wl-gore",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-claas-acuform__treats__cond-af",
+          "source": "dev-claas-acuform",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "dev-amplatzer-pfo__made_by__co-abbott",
           "source": "dev-amplatzer-pfo",
           "target": "co-abbott",
@@ -6674,6 +6785,38 @@
         "data": {
           "id": "trial-lambre-ii__studies__cond-af",
           "source": "trial-lambre-ii",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-conform__evaluates__dev-claas-acuform",
+          "source": "trial-conform",
+          "target": "dev-claas-acuform",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-conform__evaluates__dev-watchman-flx",
+          "source": "trial-conform",
+          "target": "dev-watchman-flx",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-conform__evaluates__dev-amulet",
+          "source": "trial-conform",
+          "target": "dev-amulet",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-conform__studies__cond-af",
+          "source": "trial-conform",
           "target": "cond-af",
           "relationship": "studies"
         }
