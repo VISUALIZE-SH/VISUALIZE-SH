@@ -134,6 +134,27 @@ export interface Trial {
 export type Entity = Condition | Therapy | Company | Trial
 
 // ---------------------------------------------------------------------------
+// News (authored in data/news.yaml and compiled into public/graph.json)
+// ---------------------------------------------------------------------------
+
+/** A curation-reviewed news item connected to one or more graph entities. */
+export interface NewsItem {
+  /** Stable, date-prefixed kebab-case id; never reuse an id for a different story. */
+  id: string
+  /** ISO publication date (YYYY-MM-DD), used to order the news feed. */
+  publishedAt: string
+  title: string
+  /** Concise, plain-language summary for the feed and detail panel. */
+  summary: string
+  sourceName: string
+  sourceUrl: string
+  /** Controlled loosely in authoring; suitable for feed filtering and display. */
+  topicTags: string[]
+  /** Existing graph entity ids to focus when this item is selected. */
+  relevantNodeIds: string[]
+}
+
+// ---------------------------------------------------------------------------
 // Compiled graph (output of scripts/build-data.ts, consumed by the app)
 // ---------------------------------------------------------------------------
 
@@ -178,10 +199,16 @@ export interface GraphMeta {
   counts: Record<NodeGroup, number>
   draftCount: number
   total: number
+  /** Number of validated news items included in this graph payload. */
+  newsCount: number
+  /** Most recent news publication date, or undefined when no news is present. */
+  latestNewsDate?: string
 }
 
 export interface GraphData {
   meta: GraphMeta
+  /** Reverse-chronological, validated news feed. */
+  news: NewsItem[]
   elements: {
     nodes: { data: GraphNodeData }[]
     edges: { data: GraphEdgeData }[]

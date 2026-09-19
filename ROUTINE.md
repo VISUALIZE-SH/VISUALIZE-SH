@@ -1,64 +1,84 @@
-# Scheduled update routine
+# Sunday news + dataset routine
 
-This file holds the prompt for a periodic assistant run that keeps the data fresh.
-Wire it up with `/schedule` (or any Claude Code scheduled task) at whatever cadence
-you like (e.g. monthly). The routine only ever produces **drafts**; you review and
-promote them.
+This is the durable prompt for the active local structural-heart newsletter task,
+scheduled for Sundays at 6:00 PM Pacific. A single research pass should produce
+both outputs:
+
+1. update the app's source-linked news feed and Pulse values locally; and
+2. send the human-readable weekly newsletter through the task's already-configured
+   email/notification channel.
+
+Do not create a second schedule. Keep the task attached to this local project so it
+can edit the working tree; the machine and desktop app must be running at execution
+time. The routine creates only **draft** clinical entities. It never commits,
+pushes, or deploys.
 
 ## How the loop works
 
-1. The routine reads `schema/DATA_DICTIONARY.md` and the existing `data/*.yaml`.
-2. It researches recent developments and proposes additions/edits as `draft`
-   entities with `sources`.
-3. It runs `npm run build:data` and fixes any validation errors.
-4. It leaves the changes (ideally on a branch / as a diff) and a summary.
-5. **You** review drafts in the app (dashed nodes / "Show drafts" filter),
-   correct them, and flip `curation.status` to `curated`, then redeploy.
+1. Read `schema/DATA_DICTIONARY.md` and the existing `data/*.yaml`.
+2. Research the preceding seven days once, then write selected stories to
+   `data/news.yaml` and use the same material for the newsletter.
+3. Refresh `pulse` and propose warranted additions/edits as `draft` entities with
+   sources.
+4. Run `npm run build:data` and fix every validation error.
+5. Leave local, uncommitted changes plus a concise run summary, then send the digest
+   using the existing recipient and delivery configuration.
+6. The human curator reviews drafts in the app, corrects them, and promotes them to
+   `curated` before any later deploy.
 
-## Prompt to schedule
+## Prompt for the local Sunday task
 
-> You are updating the VISUALIZE-SH dataset. Work only inside `data/*.yaml`.
+> Run the weekly VISUALIZE-SH structural-heart intelligence workflow. Work in
+> `/Users/hparanjape/Documents/Work/Software/VISUALIZE-SH`. Do not commit, push,
+> deploy, create another scheduled task, or change the configured newsletter
+> recipient or delivery channel.
 >
-> 1. Read `schema/DATA_DICTIONARY.md` and follow it exactly, including the
->    "Hard rules for an automated update routine".
-> 2. Review the current `data/*.yaml` so you don't duplicate existing entities.
-> 3. Research developments since the most recent `curation.lastUpdated` in the
->    structural heart space (valvular and non-valvular): new FDA/CE approvals,
->    pivotal trial readouts, new devices/drugs/digital therapeutics, company
->    acquisitions, and status changes (e.g. investigational → approved).
->    Prioritize: LAAO, septal & congenital defect closure, HCM (myosin inhibitors
->    + septal reduction), ATTR cardiac amyloidosis, HFrEF/HFpEF pharmacotherapy,
->    interatrial shunts, implantable PA/IVC/LA sensors, coronary-sinus / CMD
->    therapies, digital therapeutics, and valvular therapy — TAVR (incl. aortic
->    regurgitation), mitral TEER/TMVR/annuloplasty, tricuspid TEER/TTVR,
->    transcatheter pulmonary valves, and surgical valve therapy.
-> 4. Add or update entities as `curation.status: draft` with `curation.lastUpdated`
->    set to today and at least one credible `sources` URL each. Create referenced
->    companies/conditions before the entities that point to them. Reuse existing
->    `category`/`subtype` vocabulary and id prefixes.
-> 5. Set/refresh the `pulse` field (0–10) to reflect *current* news attention:
->    score new entities, and re-score existing ones up or down as the cycle moves
->    (a quiet topic should drift down). `pulse` is the one field you may change on a
->    `curated` entity without flipping it to draft — it is a presentation signal,
->    not a clinical claim. Keep scores relative across the whole dataset.
-> 6. Add `links` (`{label, url}`) where you can VERIFY a specific URL: for devices,
->    the product page on the maker's site (else a journal/medical-news/clinical
->    source); for trials, a non-ClinicalTrials.gov outcome summary (primary paper,
->    TCTMD, guideline). Never invent a URL — the panel already shows a PubMed search
->    fallback, so omitting `links` is fine. Ensure companies have a `website`.
-> 7. Add `timeline` for new therapies and trials when you can verify the date. For
->    therapies, use the earliest FDA approval or CE mark for the specific
->    product/therapy; if that is not verifiable, use a credible US/EU general
->    availability announcement and document the assumption in `timeline.notes`. For
->    trials, use the trial start date, preferably from ClinicalTrials.gov. Do not
->    add `timeline` to companies, and do not guess dates.
-> 8. Do NOT modify the other facts of existing `curated` entities. If something
->    curated looks outdated, instead add a `curation.notes` flag on it describing
->    the suggested change for human review.
-> 9. Run `npm run build:data` and fix every error until it passes.
-> 10. Output a concise summary: each id you added/changed, what it is, the source,
->    and anything the human curator should double-check (especially regulatory
->    status and NCT ids).
+> 1. Read `schema/DATA_DICTIONARY.md` and follow it exactly, including the news
+>    contract and the hard rules for automated updates.
+> 2. Review all current `data/*.yaml`. Note the newest `publishedAt` in
+>    `data/news.yaml`; deduplicate against both canonical source URL and title.
+> 3. Research material developments published during the preceding seven days in
+>    structural heart (valvular and non-valvular), heart failure, and digital
+>    therapies relevant to structural-heart care. Cover new FDA/CE approvals,
+>    pivotal trial readouts, devices, drugs, digital therapies, acquisitions, and
+>    meaningful status changes. Prioritize LAAO; septal/congenital closure; HCM;
+>    ATTR-CM; HFrEF/HFpEF therapies; interatrial shunts; PA/IVC/LA sensors;
+>    coronary-sinus/CMD therapies; TAVR including aortic regurgitation; mitral
+>    TEER/TMVR/annuloplasty; tricuspid TEER/TTVR; transcatheter pulmonary valves;
+>    and surgical valve therapy.
+> 4. Select only material, independently useful stories. Append each to
+>    `data/news.yaml` using an immutable `news-YYYY-MM-DD-*` id, ISO publication
+>    date, source-faithful title, one- or two-sentence summary, canonical public
+>    HTTPS source URL, concise topic tags, and every relevant existing graph node
+>    id. Prefer regulators, trial registries, journals, and original company
+>    releases. Do not attach a story to a node merely because it is adjacent in the
+>    graph. Keep the feed newest-first and retain at most 250 items.
+> 5. Add or update warranted entities as `curation.status: draft`, with
+>    `curation.lastUpdated` set to today and at least one credible source URL.
+>    Create referenced companies and conditions before entities that point to them;
+>    reuse existing category/subtype vocabulary and id prefixes.
+> 6. Refresh `pulse` from 0–10 to reflect current, relative news attention across
+>    the whole dataset. A quiet topic should drift down. Pulse is the only field
+>    that may change on a curated entity without making it a draft.
+> 7. Add links only when the exact URL is verified. For devices, prefer the maker's
+>    product page, then a journal or credible clinical source. For trials, use a
+>    non-ClinicalTrials.gov outcome summary. Never invent a URL; omission is safer.
+> 8. Add timeline entries for new therapies and trials only when the date is
+>    verified. Prefer the earliest FDA approval or CE mark for a therapy and the
+>    ClinicalTrials.gov start date for a trial. Document availability-date
+>    assumptions in `timeline.notes`; never guess.
+> 9. Do not modify other facts on existing curated entities. If one looks outdated,
+>    add a `curation.notes` review flag instead.
+> 10. Run `npm run build:data` and fix every error. If validation cannot pass, do
+>     not send the newsletter; report the failure for review.
+> 11. Send the weekly newsletter through this task's existing email/notification
+>     configuration. Reuse the same researched items, grouped into Structural
+>     Heart, Heart Failure, and SH-relevant Digital Therapies. Include each title,
+>     short summary, and source link. If a section has no material development, say
+>     so rather than padding it. Do not add unsupported interpretation.
+> 12. Finish with a concise run summary: every id added or changed, its source, any
+>     curator review flags (especially regulatory status and NCT ids), and whether
+>     newsletter delivery succeeded.
 >
-> Accuracy over completeness — when uncertain, omit optional fields (especially
-> `nctId` and `links`) rather than guessing.
+> Accuracy over completeness. When uncertain, omit optional fields rather than
+> guessing.

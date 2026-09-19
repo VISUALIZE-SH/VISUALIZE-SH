@@ -15,6 +15,9 @@ interface Props {
   filtersCollapsed: boolean
   accessibilityMode: boolean
   onToggleAccessibility: () => void
+  sidebarMode: 'atlas' | 'news'
+  newsCount: number
+  onSidebarModeChange: (mode: 'atlas' | 'news') => void
 }
 
 const LAYOUTS: LayoutName[] = ['fcose', 'dagre', 'concentric', 'timeline']
@@ -32,6 +35,9 @@ export default function Header({
   filtersCollapsed,
   accessibilityMode,
   onToggleAccessibility,
+  sidebarMode,
+  newsCount,
+  onSidebarModeChange,
 }: Props) {
   return (
     <header className="header">
@@ -57,6 +63,21 @@ export default function Header({
       </div>
 
       <div className="header-tools">
+        <div className="seg view-switcher" role="group" aria-label="View">
+          <button
+            className={`seg-btn ${sidebarMode === 'atlas' ? 'active' : ''}`}
+            onClick={() => onSidebarModeChange('atlas')}
+          >
+            Atlas
+          </button>
+          <button
+            className={`seg-btn ${sidebarMode === 'news' ? 'active' : ''}`}
+            onClick={() => onSidebarModeChange('news')}
+          >
+            News
+            {newsCount > 0 && <span className="seg-count">{newsCount}</span>}
+          </button>
+        </div>
         <div className="seg" role="group" aria-label="Layout">
           {LAYOUTS.map((l) => (
             <button

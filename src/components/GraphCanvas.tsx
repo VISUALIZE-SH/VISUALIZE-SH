@@ -13,6 +13,7 @@ interface Props {
   graph: GraphData
   visibleIds: Set<string>
   selectedId: string | null
+  highlightedIds: Set<string>
   layoutName: LayoutName
   accessibilityMode: boolean
   onSelect: (id: string | null) => void
@@ -23,6 +24,7 @@ export default function GraphCanvas({
   graph,
   visibleIds,
   selectedId,
+  highlightedIds,
   layoutName,
   accessibilityMode,
   onSelect,
@@ -32,7 +34,9 @@ export default function GraphCanvas({
   const cyRef = useRef<Cytoscape.Core | null>(null)
   const didMount = useRef(false)
   const layoutNameRef = useRef(layoutName)
+  const onSelectRef = useRef(onSelect)
   layoutNameRef.current = layoutName
+  onSelectRef.current = onSelect
 
   // Create the instance once per dataset.
   useEffect(() => {
@@ -116,10 +120,10 @@ export default function GraphCanvas({
 
     cy.on('tap', 'node', (evt) => {
       if (evt.target.data('isTimelineAxis')) return
-      onSelect(evt.target.id())
+      onSelectRef.current(evt.target.id())
     })
     cy.on('tap', (evt) => {
-      if (evt.target === cy) onSelect(null)
+      if (evt.target === cy) onSelectRef.current(null)
     })
 
     return () => {
@@ -187,20 +191,53 @@ export default function GraphCanvas({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visibleIds, layoutName])
 
-  // Neighborhood highlight + recenter on selection.
+  // Neighborhood highlight for a selected node, or a multi-node focus for a
+  // selected news item. News focus deliberately does not pull in each node's
+  // whole neighborhood: only the entities explicitly linked by the curator are
+  // emphasized, so the story-to-graph mapping stays honest.
   useEffect(() => {
     const cy = cyRef.current
     if (!cy) return
-    cy.elements().removeClass('faded sel hl')
-    if (!selectedId) return
-    const node = cy.getElementById(selectedId)
-    if (node.empty()) return
-    const hood = node.closedNeighborhood()
-    cy.elements().not(hood).addClass('faded')
-    node.addClass('sel')
-    hood.edges().addClass('hl')
-    cy.animate({ center: { eles: node }, duration: 300, easing: 'ease-out' })
-  }, [selectedId])
+    const applyFocus = () => {
+      cy.elements().removeClass('faded sel news-hit hl')
+
+      if (selectedId) {
+        const node = cy.getElementById(selectedId)
+        if (node.empty()) return
+        const hood = node.closedNeighborhood()
+        cy.elements().not(hood).addClass('faded')
+        node.addClass('sel')
+        hood.edges().addClass('hl')
+        cy.animate({ center: { eles: node }, duration: 300, easing: 'ease-out' })
+        return
+      }
+
+      if (highlightedIds.size === 0) return
+      let highlighted = cy.collection()
+      for (const id of highlightedIds) {
+        const node = cy.getElementById(id)
+        if (!node.empty() && node.visible()) highlighted = highlighted.merge(node)
+      }
+      if (highlighted.empty()) return
+
+      cy.elements().not(highlighted).addClass('faded')
+      highlighted.addClass('news-hit')
+      if (highlighted.length === 1) {
+        cy.animate({ center: { eles: highlighted }, duration: 300, easing: 'ease-out' })
+      } else {
+        cy.animate({ fit: { eles: highlighted, padding: 110 }, duration: 350, easing: 'ease-out' })
+      }
+    }
+
+    applyFocus()
+    // Filter changes can kick off a fresh layout after this effect. Re-apply the
+    // focus after layoutstop so layout framing cannot move the linked nodes back
+    // off screen.
+    if (selectedId || highlightedIds.size > 0) cy.on('layoutstop', applyFocus)
+    return () => {
+      cy.off('layoutstop', applyFocus)
+    }
+  }, [highlightedIds, selectedId])
 
   return <div ref={containerRef} className="graph-canvas" />
 }
