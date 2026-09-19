@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-16T04:21:40.757Z",
+    "generatedAt": "2026-09-19T17:04:27.905Z",
     "lastUpdated": "2026-08-15",
     "counts": {
       "condition": 16,
@@ -12,8 +12,1075 @@
       "trial": 57
     },
     "draftCount": 16,
-    "total": 155
+    "total": 155,
+    "newsCount": 61,
+    "latestNewsDate": "2026-09-12"
   },
+  "news": [
+    {
+      "id": "news-2026-09-12-ai-powered-ultrasound-robotic-system-guides-transcatheter-closure-of-con",
+      "publishedAt": "2026-09-12",
+      "title": "AI-powered ultrasound robotic system guides transcatheter closure of congenital heart disease in China",
+      "summary": "A Chinese team reported performing a transcatheter closure of an atrial septal defect in a 48-year-old patient using an AI-powered ultrasound robotic system. Public reports describe the platform as combining automated ultrasound acquisition, lesion identification, 3D anatomical reconstruction, path planning, and real-time procedural navigation, while clinicians retained responsibility for the intervention and device deployment.",
+      "sourceName": "Sixth Medical Center of the Chinese PLA General Hospital",
+      "sourceUrl": "https://interestingengineering.com/science/world-first-ai-backed-ultrasound-robot-congenital-heart-surgery-completed-in-china",
+      "topicTags": [
+        "ASD closure",
+        "robotics",
+        "clinical AI"
+      ],
+      "relevantNodeIds": [
+        "cond-asd",
+        "dev-amplatzer-asd"
+      ]
+    },
+    {
+      "id": "news-2026-09-11-closure-af-sex-specific-analysis-raises-new-caution-about-laao-in-older",
+      "publishedAt": "2026-09-11",
+      "title": "CLOSURE-AF sex-specific analysis raises new caution about LAAO in older women who can tolerate DOAC therapy",
+      "summary": "A sex-specific analysis of the randomized CLOSURE-AF trial found that worse outcomes with LAAO versus best medical therapy were concentrated in women. Among women, the primary composite endpoint occurred in 58.7% with LAAO versus 35.1% with medical therapy, while no comparable adverse treatment effect was seen in men; the strongest interaction involved cardiovascular or unexplained death.",
+      "sourceName": "TCTMD / ESC 2026 analysis",
+      "sourceUrl": "https://www.tctmd.com/news/closure-af-worse-outcomes-laao-driven-results-women",
+      "topicTags": [
+        "LAAO",
+        "atrial fibrillation",
+        "clinical evidence"
+      ],
+      "relevantNodeIds": [
+        "cond-af"
+      ]
+    },
+    {
+      "id": "news-2026-09-11-cms-finalizes-expanded-medicare-coverage-for-tavr-including-asymptomatic",
+      "publishedAt": "2026-09-11",
+      "title": "CMS finalizes expanded Medicare coverage for TAVR, including asymptomatic severe aortic stenosis",
+      "summary": "CMS finalized a major update to the U.S. National Coverage Determination for TAVR. Medicare coverage now extends to selected patients with asymptomatic severe aortic stenosis under coverage-with-evidence-development, while symptomatic severe AS no longer carries that CED requirement. CMS also preserved the multidisciplinary heart-team model while allowing more flexibility in chart-review triage, operator configuration, and volume criteria.",
+      "sourceName": "TCTMD / CMS",
+      "sourceUrl": "https://www.tctmd.com/news/cms-finalizes-anticipated-updates-national-coverage-tavi",
+      "topicTags": [
+        "TAVR",
+        "reimbursement",
+        "policy"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "dev-sapien-3",
+        "dev-evolut",
+        "dev-navitor"
+      ]
+    },
+    {
+      "id": "news-2026-09-10-emboline-receives-fda-clearance-for-the-emboliner-embolic-protection-sys",
+      "publishedAt": "2026-09-10",
+      "title": "Emboline receives FDA clearance for the Emboliner embolic-protection system for TAVR",
+      "summary": "The FDA granted 510(k) clearance to Emboline’s Emboliner Embolic Protection System for use during TAVR. The self-expanding filter is designed to protect all three cerebral vessels while also capturing embolic material that could travel to systemic organs, giving it a broader protection concept than cerebral-only filters.",
+      "sourceName": "Emboline / Cardiac Interventions Today",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/emboline-receives-us-fda-510k-clearance-for-emboliner-embolic-protection-system-302873269.html",
+      "topicTags": [
+        "TAVR",
+        "embolic protection",
+        "FDA clearance"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-09-09-carvolix-submits-tavipilot-software-for-ce-marking-targeting-european-la",
+      "publishedAt": "2026-09-09",
+      "title": "Carvolix submits TAVIPILOT Software for CE marking, targeting European launch in early 2027",
+      "summary": "Carvolix announced that it submitted the European regulatory dossier for CE marking of TAVIPILOT Software, its AI-based intraoperative guidance system for TAVR. The software has already received FDA clearance in the United States, and Carvolix now expects a possible CE Mark by year-end 2026 followed by an initial commercial rollout in France and Germany in early 2027.",
+      "sourceName": "Carvolix",
+      "sourceUrl": "https://www.marketscreener.com/news/carvolix-takes-a-key-step-toward-commercial-launch-of-tavipilot-software-in-europe-with-regulatory-s-ce785bd9d18af422",
+      "topicTags": [
+        "TAVR",
+        "procedural guidance",
+        "clinical AI"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-09-09-large-u-s-study-highlights-persistent-heart-failure-risk-and-underuse-of",
+      "publishedAt": "2026-09-09",
+      "title": "Large U.S. study highlights persistent heart-failure risk and underuse of guideline-directed therapy after TAVR",
+      "summary": "An analysis of more than 37,000 U.S. TAVR patients found that heart failure remains common before and after valve replacement and that evidence-based HF medications are frequently underused. Within one year of TAVR, 18.6% experienced an acute HF episode; HF hospitalization and all-cause mortality reached 8.8% and 9.8% at one year, rising to 13.8% and 17.9% at two years.",
+      "sourceName": "Cardiovascular Business / Journal of Cardiovascular Medicine",
+      "sourceUrl": "https://cardiovascularbusiness.com/topics/clinical/structural-heart-disease/tavr/heart-failure-and-after-tavr-new-data-point-ongoing-concerns",
+      "topicTags": [
+        "TAVR",
+        "heart failure",
+        "real-world evidence"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "cond-hfref",
+        "cond-hfpef"
+      ]
+    },
+    {
+      "id": "news-2026-09-09-tempus-receives-arpa-h-award-to-test-an-autonomous-ai-agent-in-heart-fai",
+      "publishedAt": "2026-09-09",
+      "title": "Tempus receives ARPA-H award to test an autonomous AI agent in heart failure",
+      "summary": "Tempus said an award of up to $9.5 million will support development and prospective multicenter validation of an AI agent intended to coordinate heart-failure care; the system remains investigational.",
+      "sourceName": "Tempus AI",
+      "sourceUrl": "https://tempus.gcs-web.com/news-releases/news-release-details/tempus-secures-95-million-arpa-h-advocate-funding-deploy-first",
+      "topicTags": [
+        "digital health",
+        "heart failure",
+        "clinical AI"
+      ],
+      "relevantNodeIds": [
+        "cond-hfref",
+        "cond-hfpef"
+      ]
+    },
+    {
+      "id": "news-2026-09-06-india-launches-national-valve-registry-for-transcatheter-valve-intervent",
+      "publishedAt": "2026-09-06",
+      "title": "India launches national Valve Registry for transcatheter valve interventions",
+      "summary": "India launched the India Valve Registry, a collaborative multicenter initiative designed to collect de-identified real-world data on patients undergoing transcatheter valve interventions and their long-term outcomes. The registry aims to generate India-specific evidence rather than relying primarily on European and North American datasets, and participating centers will contribute standardized treatment and outcome information.",
+      "sourceName": "India Valves 2026 / DD India",
+      "sourceUrl": "https://ddindia.co.in/2026/09/vice-president-radhakrishnan-launches-india-valve-registry-to-strengthen-evidence-based-cardiac-care/",
+      "topicTags": [
+        "registry",
+        "real-world evidence",
+        "valvular disease"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "cond-ar",
+        "cond-mr",
+        "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-09-03-innovheart-completes-first-u-s-implant-of-saturn-transseptal-tmvr-system",
+      "publishedAt": "2026-09-03",
+      "title": "InnovHeart completes first U.S. implant of Saturn transseptal TMVR system",
+      "summary": "InnovHeart announced the first U.S. implantation of its Saturn Transseptal TMVR System in the CASSINI-US Early Feasibility Study. The procedure was performed August 25 at NewYork-Presbyterian/Columbia in an 86-year-old woman with symptomatic severe functional mitral regurgitation, and the company reported elimination of MR after implantation. Saturn has now been implanted in 15 patients globally, moving the platform from initial international feasibility toward structured U.S.",
+      "sourceName": "InnovHeart",
+      "sourceUrl": "https://www.innovheart.com/",
+      "topicTags": [
+        "mitral regurgitation",
+        "TMVR",
+        "early feasibility"
+      ],
+      "relevantNodeIds": [
+        "cond-mr"
+      ]
+    },
+    {
+      "id": "news-2026-09-02-lux-valve-plus-ttvr-expands-into-eastern-india-with-two-high-risk-cases",
+      "publishedAt": "2026-09-02",
+      "title": "LuX-Valve Plus TTVR expands into Eastern India with two high-risk cases",
+      "summary": "Apollo Multispeciality Hospitals in Kolkata reported two consecutive transcatheter tricuspid valve replacement procedures using the Jenscare LuX-Valve Plus system in elderly, frail patients with severe symptomatic TR. Post-procedure assessments reportedly showed satisfactory valve function and resolution of significant regurgitation without major complications.",
+      "sourceName": "Apollo Multispeciality Hospitals coverage",
+      "sourceUrl": "https://thebengal.in/2026/09/02/apollo-kolkata-successful-ttvr-tricuspid-valve-replacement-eastern-india/",
+      "topicTags": [
+        "tricuspid regurgitation",
+        "TTVR",
+        "commercial adoption"
+      ],
+      "relevantNodeIds": [
+        "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-09-02-modified-transseptal-batman-technique-reported-for-high-risk-mitral-valv",
+      "publishedAt": "2026-09-02",
+      "title": "Modified transseptal BATMAN technique reported for high-risk mitral valve-in-valve TMVR",
+      "summary": "A three-case series described a modified transseptal BATMAN — Balloon-Assisted Translocation of the Mitral Anterior leaflet — technique for patients undergoing mitral valve-in-valve TMVR who were at high risk of left ventricular outflow tract obstruction. All three complex cases were reported as successful, illustrating another strategy for modifying the anterior mitral leaflet before valve implantation.",
+      "sourceName": "Catheterization and Cardiovascular Interventions",
+      "sourceUrl": "https://visualize.jove.com/42681887-modified-transseptal-batman-for-anterior-leaflet-modification-in-high-risk-transcatheter-mitral-valve-in-valve-replacements-a-case-series",
+      "topicTags": [
+        "mitral regurgitation",
+        "TMVR",
+        "leaflet modification"
+      ],
+      "relevantNodeIds": [
+        "cond-mr"
+      ]
+    },
+    {
+      "id": "news-2026-09-01-medtronic-invests-up-to-80m-in-pi-cardia-and-secures-option-to-acquire-t",
+      "publishedAt": "2026-09-01",
+      "title": "Medtronic invests up to $80M in Pi-Cardia and secures option to acquire the company",
+      "summary": "Medtronic announced a strategic investment of up to $80 million in Pi-Cardia, developer of the FDA-cleared ShortCut leaflet-modification system used to enable valve-in-valve TAVR in patients at risk of coronary obstruction. Medtronic is expected to become the exclusive global commercial distributor for ShortCut in 2027, and the agreement includes an option to acquire Pi-Cardia for an estimated upfront price of up to $210 million, plus potential earn-outs.",
+      "sourceName": "Medtronic",
+      "sourceUrl": "https://news.medtronic.com/2026-09-01-Medtronic-Announces-Strategic-Investment-in-Pi-Cardia-to-Accelerate-Innovation-for-Complex-TAVR",
+      "topicTags": [
+        "TAVR",
+        "leaflet modification",
+        "investment"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "co-medtronic"
+      ]
+    },
+    {
+      "id": "news-2026-09-01-providence-st-joseph-begins-commercial-use-of-edwards-sapien-m3-tmvr-in",
+      "publishedAt": "2026-09-01",
+      "title": "Providence St. Joseph begins commercial use of Edwards SAPIEN M3 TMVR in Orange County",
+      "summary": "Providence St. Joseph Hospital reported the first commercial SAPIEN M3 TMVR procedure in Orange County, California, expanding local access to Edwards Lifesciences’ FDA-approved transseptal mitral-replacement system. SAPIEN M3 is indicated for selected patients with symptomatic moderate-to-severe or severe MR who are unsuitable for surgery or TEER, and also for certain patients with mitral annular calcification.",
+      "sourceName": "Providence St. Joseph Hospital",
+      "sourceUrl": "https://blog.providence.org/regional-blog-news/st-joseph-hospital-first-in-orange-county-to-offer-new-minimally-invasive-treatment-for-mitral-regurgitation",
+      "topicTags": [
+        "mitral regurgitation",
+        "TMVR",
+        "commercial adoption"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "dev-sapien-m3",
+        "co-edwards"
+      ]
+    },
+    {
+      "id": "news-2026-08-30-acasa-tavi-ongoing-noac-monotherapy-reduces-subclinical-leaflet-thrombos",
+      "publishedAt": "2026-08-30",
+      "title": "ACASA-TAVI: ongoing NOAC monotherapy reduces subclinical leaflet thrombosis after TAVR",
+      "summary": "ACASA-TAVI randomized 360 post-TAVR patients to NOAC monotherapy or aspirin and found significantly less hypoattenuated leaflet thickening with anticoagulation. HALT occurred in 16.2% of the NOAC group versus 28.6% of patients receiving aspirin, while the composite safety endpoint of bleeding, thromboembolism or death was noninferior. The result suggests that anticoagulation can materially suppress subclinical valve thrombosis without an obvious safety penalty in this trial population.",
+      "sourceName": "ESC Congress 2026 / JAMA",
+      "sourceUrl": "https://www.acc.org/latest-in-cardiology/articles/2026/08/29/08/48/sun-545am-combo-tavi-esc-2026",
+      "topicTags": [
+        "TAVR",
+        "leaflet thrombosis",
+        "anticoagulation"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-08-30-notion-4-tempers-enthusiasm-for-short-course-anticoagulation-solely-to-p",
+      "publishedAt": "2026-08-30",
+      "title": "NOTION-4 tempers enthusiasm for short-course anticoagulation solely to prevent HALT",
+      "summary": "NOTION-4 randomized 352 post-TAVR patients without another indication for oral anticoagulation to lifelong single antiplatelet therapy or three months of a DOAC followed by antiplatelet therapy. At three months, HALT was markedly lower with DOAC therapy—12.1% versus 31.8%—but by one year the difference had largely disappeared after anticoagulation was stopped, with HALT rates of 28.3% versus 32.2%.",
+      "sourceName": "ACC / JACC / ESC Congress 2026",
+      "sourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2026/08/29/08/48/sun-555am-notion-esc-2026",
+      "topicTags": [
+        "TAVR",
+        "leaflet thrombosis",
+        "anticoagulation"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-08-30-tavi-pci-trial-supports-tavr-first-as-a-viable-strategy-when-pci-is-also",
+      "publishedAt": "2026-08-30",
+      "title": "TAVI PCI trial supports TAVR-first as a viable strategy when PCI is also planned",
+      "summary": "The randomized TAVI PCI trial compared TAVI-first versus PCI-first strategies in patients with severe aortic stenosis and concomitant coronary artery disease. At one year, the composite primary endpoint occurred in 22.2% of the TAVI-first group versus 24.2% of the PCI-first group, establishing noninferiority of the TAVI-first approach.",
+      "sourceName": "ACC / ESC Congress 2026",
+      "sourceUrl": "https://www.acc.org/latest-in-cardiology/articles/2026/08/29/08/48/sun-545am-combo-tavi-esc-2026",
+      "topicTags": [
+        "TAVR",
+        "PCI",
+        "trial readout"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-08-30-tric-i-hf-shows-transcatheter-tricuspid-repair-can-improve-hard-clinical",
+      "publishedAt": "2026-08-30",
+      "title": "TRIC-I-HF shows transcatheter tricuspid repair can improve hard clinical outcomes",
+      "summary": "TRIC-I-HF randomized 360 patients with symptomatic severe tricuspid regurgitation and elevated heart-failure risk to transcatheter tricuspid valve repair plus medical therapy or medical therapy alone. At one year, repair was superior on a hierarchical endpoint incorporating death, HF hospitalization and quality-of-life improvement, with a win ratio of 2.42. Longer-term follow-up also showed a lower risk of the composite of death or HF hospitalization through three years.",
+      "sourceName": "TCTMD / ESC Congress 2026",
+      "sourceUrl": "https://www.tctmd.com/news/tric-i-hf-scores-big-clinical-wins-ttvr-high-risk-patients",
+      "topicTags": [
+        "tricuspid regurgitation",
+        "transcatheter repair",
+        "trial readout"
+      ],
+      "relevantNodeIds": [
+        "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-08-29-ai-supported-monitoring-of-patients-awaiting-tavi-is-linked-to-lower-mor",
+      "publishedAt": "2026-08-29",
+      "title": "AI-supported monitoring of patients awaiting TAVI is linked to lower mortality",
+      "summary": "ESC Congress featured new data showing that AI-supported monitoring of patients awaiting TAVI reduced mortality compared with conventional waiting-list management. The presentation sits within a broader ESC session focused on structural-heart imaging, artificial intelligence and procedural optimization, reflecting growing interest in digital tools that extend beyond CT sizing and into longitudinal patient management.",
+      "sourceName": "ESC Congress 2026",
+      "sourceUrl": "https://esc365.escardio.org/presentation/325788",
+      "topicTags": [
+        "TAVR",
+        "clinical AI",
+        "patient monitoring"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-08-29-esc-analyses-extend-aficamten-evidence-across-obstructive-and-non-obstru",
+      "publishedAt": "2026-08-29",
+      "title": "ESC analyses extend aficamten evidence across obstructive and non-obstructive HCM",
+      "summary": "Cytokinetics reported that ACACIA-HCM analyses showed changes in cardiac structure and diastolic function, while a MAPLE-HCM subgroup analysis favored aficamten over metoprolol across prior-treatment groups.",
+      "sourceName": "Cytokinetics",
+      "sourceUrl": "https://ir.cytokinetics.com/press-releases/press-release-details/2026/Cytokinetics-Announces-Additional-Results-from-ACACIA-HCM-and-MAPLE-HCM-Presented-in-Late-Breaking-Clinical-Trial-Session-at-the-European-Society-of-Cardiology-ESC-Congress-2026/default.aspx",
+      "topicTags": [
+        "HCM",
+        "clinical evidence",
+        "pharmaceutical"
+      ],
+      "relevantNodeIds": [
+        "rx-aficamten",
+        "cond-hcm",
+        "co-cytokinetics",
+        "trial-acacia-hcm",
+        "trial-maple-hcm"
+      ]
+    },
+    {
+      "id": "news-2026-08-28-highlife-receives-ce-mark-for-clarity-next-generation-tmvr-valve",
+      "publishedAt": "2026-08-28",
+      "title": "HighLife receives CE Mark for Clarity next-generation TMVR valve",
+      "summary": "HighLife received CE Mark approval for its Clarity Mitral Heart Valve for use with the HighLife TMVR System. Clarity uses an open-cell outflow design intended to reduce left-ventricular-outflow-tract-obstruction risk while preserving HighLife’s transfemoral valve-in-ring architecture; the approved system covers native mitral annuli from 30 to 53 mm.",
+      "sourceName": "HighLife / Cardiac Interventions Today",
+      "sourceUrl": "https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/",
+      "topicTags": [
+        "mitral regurgitation",
+        "TMVR",
+        "CE Mark"
+      ],
+      "relevantNodeIds": [
+        "cond-mr"
+      ]
+    },
+    {
+      "id": "news-2026-08-27-abbotts-amulet-360-laa-occluder-receives-ce-mark",
+      "publishedAt": "2026-08-27",
+      "title": "Abbott’s Amulet 360 LAA occluder receives CE Mark",
+      "summary": "Abbott received CE Mark approval for Amulet 360, its next-generation dual-seal left atrial appendage occluder for patients with non-valvular atrial fibrillation. The redesigned lobe is softer and more conformable, with smaller anchors intended to accommodate a broader range of LAA anatomies while retaining the outer disk as a second sealing layer.",
+      "sourceName": "Abbott",
+      "sourceUrl": "https://abbott.mediaroom.com/2026-08-27-Abbotts-next-generation-Amulet-360-TM-device-receives-CE-Mark-to-treat-people-with-atrial-fibrillation-at-risk-of-stroke",
+      "topicTags": [
+        "LAAO",
+        "atrial fibrillation",
+        "CE Mark"
+      ],
+      "relevantNodeIds": [
+        "cond-af",
+        "dev-amulet",
+        "co-abbott"
+      ]
+    },
+    {
+      "id": "news-2026-08-20-meta-analysis-examines-combined-laao-and-tavr-for-patients-with-atrial-f",
+      "publishedAt": "2026-08-20",
+      "title": "Meta-analysis examines combined LAAO and TAVR for patients with atrial fibrillation",
+      "summary": "A new systematic review and meta-analysis evaluated comparative studies of TAVR plus left atrial appendage occlusion versus TAVR followed by standard medical therapy in patients with atrial fibrillation. The clinical question is important because TAVR patients with AF frequently have both high thromboembolic risk and substantial bleeding vulnerability from chronic anticoagulation.",
+      "sourceName": "Journal of Cardiology",
+      "sourceUrl": "https://visualize.jove.com/42624430-left-atrial-appendage-occlusion-in-patients-with-atrial-fibrillation-undergoing-transcatheter-aortic-valve-replacement-a-meta-analysis",
+      "topicTags": [
+        "LAAO",
+        "TAVR",
+        "atrial fibrillation"
+      ],
+      "relevantNodeIds": [
+        "cond-af",
+        "cond-as",
+        "dev-watchman-flx",
+        "dev-amulet"
+      ]
+    },
+    {
+      "id": "news-2026-08-20-radiographics-review-highlights-failure-modes-in-ct-based-tavr-planning",
+      "publishedAt": "2026-08-20",
+      "title": "Radiographics review highlights failure modes in CT-based TAVR planning",
+      "summary": "A new Radiographics review focuses on challenging anatomical and pathological features that can compromise CT segmentation and TAVR planning. The authors emphasize that automated or gradient-based 3D processing can generate erroneous annular, LVOT, root, or vascular-access measurements unless operators recognize and correct artifacts. The work is especially timely as structural-heart planning becomes increasingly automated and AI-assisted.",
+      "sourceName": "Radiographics",
+      "sourceUrl": "https://education.rsna.org/Public/Catalog/Details.aspx?id=o9GmrZI03qNZU3do9FKzjw%3D%3D",
+      "topicTags": [
+        "TAVR",
+        "CT planning",
+        "clinical AI"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-08-19-new-jacc-analysis-tests-how-robust-the-randomized-evidence-for-mitral-te",
+      "publishedAt": "2026-08-19",
+      "title": "New JACC analysis tests how robust the randomized evidence for mitral TEER really is",
+      "summary": "Investigators reassessed COAPT, MITRA-FR, and RESHAPE-HF2 using fragility-index methods to quantify how resistant their conclusions are to small changes in event counts. COAPT’s reductions in heart-failure hospitalization and mortality remained comparatively robust, whereas several nonsignificant MITRA-FR outcomes were statistically fragile.",
+      "sourceName": "JACC: Advances",
+      "sourceUrl": "https://www.jacc.org/doi/10.1016/j.jacadv.2026.103164",
+      "topicTags": [
+        "mitral regurgitation",
+        "TEER",
+        "clinical evidence"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "dev-mitraclip",
+        "trial-coapt",
+        "trial-mitra-fr"
+      ]
+    },
+    {
+      "id": "news-2026-08-18-national-real-world-study-sharpens-the-lifetime-management-debate-after",
+      "publishedAt": "2026-08-18",
+      "title": "National real-world study sharpens the lifetime-management debate after TAVR",
+      "summary": "A retrospective Epic Cosmos analysis included 300,927 TAVR patients treated from 2010 through May 2026 and examined long-term reintervention and clinically significant valve failure. Reintervention remained uncommon—1.2% at 5 years and 2.7% at 10 years—but 3,315 patients underwent redo-TAVR and 347 underwent surgical explantation.",
+      "sourceName": "medRxiv",
+      "sourceUrl": "https://www.medrxiv.org/content/10.64898/2026.08.16.26360543v1",
+      "topicTags": [
+        "TAVR",
+        "redo TAVR",
+        "real-world evidence"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-08-18-prevue-valve-shows-ai-ecg-structural-heart-screening-loses-accuracy-when",
+      "publishedAt": "2026-08-18",
+      "title": "PREVUE-VALVE shows AI-ECG structural-heart screening loses accuracy when moved into the community",
+      "summary": "The PREVUE-VALVE study tested the EchoNext AI-ECG structural-heart disease model in a community cohort of adults aged 65–85 who received in-home ECG and echocardiography. Among 2,402 analyzable participants, structural-heart disease prevalence was only about 7.5% and the AI model’s discrimination fell to an AUC of 0.71, compared with approximately 0.83 in hospital-based cohorts; performance improved to about 0.79 in people with an abnormal ECG.",
+      "sourceName": "JACC",
+      "sourceUrl": "https://www.jacc.org/doi/10.1016/j.jacc.2026.06.013",
+      "topicTags": [
+        "clinical AI",
+        "screening",
+        "validation"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "cond-mr",
+        "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-08-17-lux-valve-plus-shows-strong-early-outcomes-in-patients-with-very-large-t",
+      "publishedAt": "2026-08-17",
+      "title": "LuX-Valve Plus shows strong early outcomes in patients with very large tricuspid anatomy",
+      "summary": "The European TRINITY cohort reported outcomes in 114 high-risk patients with severe or greater symptomatic tricuspid regurgitation treated using 55–70 mm LuX-Valve Plus systems, specifically addressing patients whose annuli are too large for many competing TTVR platforms. Intraprocedural success was 95.6%, 30-day clinical success was 91.2%, and 93.7% of patients had residual TR of moderate or less at 30 days.",
+      "sourceName": "EuroIntervention",
+      "sourceUrl": "https://eurointervention.pcronline.com/article/outcomes-of-patients-with-large-anatomies-undergoing-transcatheter-tricuspid-valve-replacement-with-the-lux-valve-plus-system",
+      "topicTags": [
+        "tricuspid regurgitation",
+        "TTVR",
+        "clinical evidence"
+      ],
+      "relevantNodeIds": [
+        "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-08-14-versa-vascular-adds-15m-to-series-c-and-appoints-former-medtronic-struct",
+      "publishedAt": "2026-08-14",
+      "title": "Versa Vascular adds $15M to Series C and appoints former Medtronic structural-heart leader as CEO",
+      "summary": "Versa Vascular appointed Bill Shields as CEO and announced a $15 million expansion of its Series C financing, bringing total committed capital in the round to $42 million. Shields previously spent 15 years at Medtronic and most recently led its Transcatheter Mitral and Tricuspid Therapies division. The new funding is earmarked for completion of the ongoing first-in-human study of the AdapTR transcatheter tricuspid repair system, a U.S.",
+      "sourceName": "Cardiac Interventions Today",
+      "sourceUrl": "https://citoday.com/news/versa-vascular-appoints-bill-shields-as-ceo",
+      "topicTags": [
+        "tricuspid regurgitation",
+        "transcatheter repair",
+        "financing"
+      ],
+      "relevantNodeIds": [
+        "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-08-13-jupiter-endovascular-recruits-structural-heart-trial-leader-to-advance-i",
+      "publishedAt": "2026-08-13",
+      "title": "Jupiter Endovascular recruits structural-heart trial leader to advance its Transforming Fixation catheter platform",
+      "summary": "Jupiter Endovascular appointed interventional cardiologist Catalin Toma as chief medical officer. The company’s Transforming Fixation (TFX) platform is designed to let a catheter transition from flexible to fixed and back again, addressing the trade-off between navigation and procedural stability.",
+      "sourceName": "Cardiovascular News",
+      "sourceUrl": "https://cardiovascularnews.com/jupiter-endovascular-appoints-catalin-toma-as-chief-medical-officer/",
+      "topicTags": [
+        "catheter platform",
+        "leadership",
+        "enabling technology"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-08-10-early-tavr-analysis-shows-treadmill-testing-can-unmask-treatment-indicat",
+      "publishedAt": "2026-08-10",
+      "title": "EARLY TAVR analysis shows treadmill testing can unmask treatment indications in “asymptomatic” severe AS",
+      "summary": "A prespecified EARLY TAVR registry analysis found that treadmill stress testing identified an established indication for aortic valve replacement in roughly one in six patients initially considered asymptomatic with severe aortic stenosis. Of 1,250 screened patients, 146 had a positive stress test; among registry participants, 75.8% underwent AVR by six months, 79.9% by one year, and 85.9% by two years.",
+      "sourceName": "Cardiovascular News",
+      "sourceUrl": "https://cardiovascularnews.com/treadmill-test-could-uncover-previously-unseen-markers-of-aortic-stenosis/",
+      "topicTags": [
+        "aortic stenosis",
+        "TAVR",
+        "patient selection"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "trial-early-tavr"
+      ]
+    },
+    {
+      "id": "news-2026-08-10-jacc-publishes-two-part-best-practice-framework-for-redo-tavr",
+      "publishedAt": "2026-08-10",
+      "title": "JACC publishes two-part best-practice framework for redo-TAVR",
+      "summary": "A Heart and Valve Collaboratory consensus effort published a two-part technical framework for redo-TAVR, separating short-frame and tall-frame device combinations and emphasizing that TAV-in-TAV cannot be treated as a generic procedure. The documents standardize CT-based sizing and risk assessment, including implant-depth effects, neoskirt geometry, leaflet overhang, coronary access, sinus sequestration risk, anchoring, and second-valve expansion.",
+      "sourceName": "JACC: Cardiovascular Interventions",
+      "sourceUrl": "https://www.jacc.org/doi/10.1016/j.jcin.2026.06.003",
+      "topicTags": [
+        "TAVR",
+        "redo TAVR",
+        "best practices"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-08-06-asia-pacific-multicenter-registry-supports-basilica-and-unicorn-leaflet",
+      "publishedAt": "2026-08-06",
+      "title": "Asia-Pacific multicenter registry supports BASILICA and UNICORN leaflet modification for high-risk TAVR",
+      "summary": "A multicenter Asia-Pacific registry reported real-world outcomes for transcatheter electrosurgical leaflet-modification techniques used to mitigate coronary obstruction during TAVR, including BASILICA and the newer UNICORN approach. The registry included 100 patients treated across seven centers; BASILICA was used in 67%, UNICORN in 30%, and a combined approach in 3%, with procedural success reported in 85.1% and 96.7% of BASILICA and UNICORN cases, respectively.",
+      "sourceName": "JACC: Asia",
+      "sourceUrl": "https://www.jacc.org/doi/10.1016/j.jacasi.2026.04.017",
+      "topicTags": [
+        "TAVR",
+        "leaflet modification",
+        "registry"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-08-06-uc-davis-performs-first-u-s-carlen-procedure-in-nyra-medicals-enhance-mi",
+      "publishedAt": "2026-08-06",
+      "title": "UC Davis performs first U.S. CARLEN procedure in Nyra Medical’s ENHANCE mitral-repair study",
+      "summary": "UC Davis Medical Center reported the first U.S. treatment of symptomatic functional mitral regurgitation with Nyra Medical’s investigational CARLEN System as part of the ENHANCE Early Feasibility Study. CARLEN is a transcatheter, single-leaflet implant intended to restore mitral leaflet coaptation without sutures, tethers, or permanent alteration of the native valve anatomy, potentially preserving future treatment options. The first U.S.",
+      "sourceName": "UC Davis Health",
+      "sourceUrl": "https://health.ucdavis.edu/news/headlines/uc-davis-medical-center-first-in-us-to-treat-heart-valve-condition-with-investigational-device/2026/08",
+      "topicTags": [
+        "mitral regurgitation",
+        "transcatheter repair",
+        "early feasibility"
+      ],
+      "relevantNodeIds": [
+        "cond-mr"
+      ]
+    },
+    {
+      "id": "news-2026-07-28-modular-robotic-steerable-catheter-platform-demonstrates-potential-for-c",
+      "publishedAt": "2026-07-28",
+      "title": "Modular robotic steerable catheter platform demonstrates potential for complex endovascular access",
+      "summary": "Researchers described a handheld robotic catheter with two steerable segments and four degrees of freedom, coupled to a modular tendon-driven actuation platform. The prototype was evaluated through simulation and in-vitro vascular-phantom testing for fenestrated and branched endovascular aneurysm repair.",
+      "sourceName": "arXiv preprint",
+      "sourceUrl": "https://arxiv.org/abs/2607.25807",
+      "topicTags": [
+        "robotics",
+        "catheter platform",
+        "preclinical"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-07-27-acc-launches-enhanced-impact-registry-with-a-dedicated-transcatheter-pul",
+      "publishedAt": "2026-07-27",
+      "title": "ACC launches enhanced IMPACT Registry with a dedicated transcatheter pulmonary valve replacement option",
+      "summary": "The American College of Cardiology released an enhanced version of the IMPACT Registry with more flexible data-collection pathways for interventional catheterization, electrophysiology, cardiac implantable electronic devices, and transcatheter pulmonary valve replacement. Programs can now select a submission pathway focused specifically on TPVR, which should reduce data-entry burden while preserving procedure-specific quality tracking.",
+      "sourceName": "American College of Cardiology",
+      "sourceUrl": "https://www.acc.org/membership/sections-and-councils/adult-congenital-and-pediatric-cardiology-section/section-updates",
+      "topicTags": [
+        "pulmonary valve",
+        "registry",
+        "quality tracking"
+      ],
+      "relevantNodeIds": [
+        "cond-pv",
+        "dev-melody",
+        "dev-harmony"
+      ]
+    },
+    {
+      "id": "news-2026-07-27-rare-dual-caval-valve-implantation-performed-for-severe-tricuspid-regurg",
+      "publishedAt": "2026-07-27",
+      "title": "Rare dual caval valve implantation performed for severe tricuspid regurgitation",
+      "summary": "A multidisciplinary team at the Army Institute of Cardio-Thoracic Sciences in Pune reported a complex minimally invasive procedure in a patient with prior valve surgery and severe tricuspid regurgitation. The team implanted prosthetic valves in both the superior and inferior vena cava, creating a bicaval valve implantation strategy intended to reduce venous backflow without repeat open-heart surgery.",
+      "sourceName": "Pune Pulse",
+      "sourceUrl": "https://www.mypunepulse.com/pune-aicts-doctors-perform-rare-dual-valve-heart-procedure-without-open-surgery/",
+      "topicTags": [
+        "tricuspid regurgitation",
+        "caval valve",
+        "case report"
+      ],
+      "relevantNodeIds": [
+        "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-07-23-edwards-reports-strong-q2-structural-heart-growth-and-raises-tavr-tmtt-g",
+      "publishedAt": "2026-07-23",
+      "title": "Edwards reports strong Q2 structural-heart growth and raises TAVR/TMTT guidance",
+      "summary": "Edwards reported Q2 TAVR sales of $1.26 billion, up 11.3% year over year, and transcatheter mitral/tricuspid therapy sales of roughly $196 million, up about 47%. The company raised full-year TAVR growth guidance to 8%–9% and TMTT sales guidance to $760–$780 million. Edwards also highlighted upcoming TCT presentations for PROGRESS and CLASP IITR, expected U.S. approval of PASCAL for tricuspid use in Q4, and expected U.S./European approval of the next-generation PASCAL with Capture Clarity.",
+      "sourceName": "Edwards Lifesciences",
+      "sourceUrl": "https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Reports-Second-Quarter-Results/default.aspx",
+      "topicTags": [
+        "TAVR",
+        "mitral",
+        "tricuspid",
+        "company results"
+      ],
+      "relevantNodeIds": [
+        "co-edwards",
+        "cond-as",
+        "cond-mr",
+        "cond-tr",
+        "dev-sapien-3",
+        "dev-evoque"
+      ]
+    },
+    {
+      "id": "news-2026-07-20-boston-scientific-starts-faradigm-ide-trial-for-faraflex-pfa-system",
+      "publishedAt": "2026-07-20",
+      "title": "Boston Scientific starts FARADIGM IDE trial for Faraflex PFA system",
+      "summary": "Boston Scientific enrolled the first patients in its FARADIGM IDE trial of the investigational Faraflex pulsed-field ablation catheter, with initial procedures performed at St. David’s Medical Center. Faraflex combines mapping and ablation in a single 8 Fr NAV-enabled catheter used with the Opal HDx mapping system. This is primarily an electrophysiology development rather than a structural-heart therapy milestone, so it is lower priority here.",
+      "sourceName": "MassDevice",
+      "sourceUrl": "https://www.massdevice.com/boston-scientific-first-patient-faradigm-trial/",
+      "topicTags": [
+        "atrial fibrillation",
+        "PFA",
+        "clinical trial"
+      ],
+      "relevantNodeIds": [
+        "cond-af",
+        "co-boston-scientific"
+      ]
+    },
+    {
+      "id": "news-2026-07-20-jenscare-completes-first-u-s-implants-in-trinity-pivotal-ttvr-trial",
+      "publishedAt": "2026-07-20",
+      "title": "Jenscare completes first U.S. implants in TRINITY pivotal TTVR trial",
+      "summary": "Jenscare Scientific completed the first patient implantations in its TRINITY U.S. pivotal trial for the LuX-Valve Plus transvenous tricuspid valve replacement system. The initial cases were performed at Montefiore Hospital, just weeks after the device received CE mark approval in Europe. LuX-Valve Plus is Jenscare’s second-generation TTVR platform for severe tricuspid regurgitation and uses a transvenous delivery approach.",
+      "sourceName": "MassDevice",
+      "sourceUrl": "https://www.massdevice.com/jenscare-first-tavr-implants-us-trial/",
+      "topicTags": [
+        "tricuspid regurgitation",
+        "TTVR",
+        "clinical trial"
+      ],
+      "relevantNodeIds": [
+        "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-07-20-professional-societies-push-cms-to-preserve-heart-team-and-registry-safe",
+      "publishedAt": "2026-07-20",
+      "title": "Professional societies push CMS to preserve heart-team and registry safeguards in TAVR NCD update",
+      "summary": "SCAI, ACC, and STS submitted joint comments supporting modernization of the U.S. TAVR National Coverage Determination while asking CMS to clarify several proposed changes. The groups recommended maintaining multidisciplinary heart-team evaluation, national-registry participation, and targeted coverage-with-evidence-development for selected populations. CMS is expected to issue a final decision around September 15, 2026.",
+      "sourceName": "Cardiac Interventions Today",
+      "sourceUrl": "https://citoday.com/news/multisociety-comments-submitted%20to-cms-on-proposed-decision-on-ncd-for-tavr?c4src=home",
+      "topicTags": [
+        "TAVR",
+        "reimbursement",
+        "policy"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "dev-sapien-3",
+        "dev-evolut",
+        "dev-navitor"
+      ]
+    },
+    {
+      "id": "news-2026-07-16-electrowire-medical-receives-fda-510-k-clearance-for-lightningwire-trans",
+      "publishedAt": "2026-07-16",
+      "title": "ElectroWire Medical receives FDA 510(k) clearance for LightningWire transseptal puncture system",
+      "summary": "ElectroWire Medical received FDA 510(k) clearance for LightningWire, an electrosurgical guidewire-based system for transseptal puncture, and is beginning a limited U.S. commercial launch. The company positions the device for procedures including atrial fibrillation ablation, left atrial appendage occlusion, and transcatheter mitral valve repair and replacement.",
+      "sourceName": "Cardiac Interventions Today",
+      "sourceUrl": "https://citoday.com/news/electrowires-lightningwire-transseptal-puncture-system-receives-fda-clearance?c4src=home",
+      "topicTags": [
+        "transseptal access",
+        "FDA clearance",
+        "enabling technology"
+      ],
+      "relevantNodeIds": [
+        "cond-af",
+        "cond-mr",
+        "cond-tr",
+        "cond-asd"
+      ]
+    },
+    {
+      "id": "news-2026-07-15-acc-scai-and-sts-submit-formal-comments-on-cms-proposed-tavr-national-co",
+      "publishedAt": "2026-07-15",
+      "title": "ACC, SCAI, and STS submit formal comments on CMS’ proposed TAVR National Coverage Determination update",
+      "summary": "The ACC, SCAI, and STS submitted joint comments to CMS on the proposed revision of the National Coverage Determination for TAVR. The societies support modernization of the policy but argue for preserving multidisciplinary heart-team decision-making, audited national registry participation, consistent quality standards, and continued clinical data collection.",
+      "sourceName": "American College of Cardiology",
+      "sourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2026/07/15/17/40/ACC-SCAI-and-STS-Submit-Feedback-on-Proposed-TAVR-NCD",
+      "topicTags": [
+        "TAVR",
+        "reimbursement",
+        "policy"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "dev-sapien-3",
+        "dev-evolut",
+        "dev-navitor"
+      ]
+    },
+    {
+      "id": "news-2026-07-13-edwards-lifesciences-and-genesis-medtech-agree-to-12-million-ftc-settlem",
+      "publishedAt": "2026-07-13",
+      "title": "Edwards Lifesciences and Genesis MedTech agree to $12 million FTC settlement related to JC Medical acquisition",
+      "summary": "The U.S. Federal Trade Commission announced a proposed $12 million settlement with Edwards Lifesciences and Genesis MedTech over allegations that the companies failed to comply with Hart-Scott-Rodino notification and waiting-period requirements in Edwards’ 2024 acquisition of JC Medical. Edwards is set to pay $10 million and Genesis $2 million, with additional prior-notice obligations included in the settlement.",
+      "sourceName": "MassDevice",
+      "sourceUrl": "https://www.massdevice.com/edwards-10m-ftc-penalty-jc-medical/",
+      "topicTags": [
+        "aortic regurgitation",
+        "M&A",
+        "regulatory"
+      ],
+      "relevantNodeIds": [
+        "cond-ar",
+        "co-edwards"
+      ]
+    },
+    {
+      "id": "news-2026-07-13-medtronic-issues-removal-action-for-certain-harmony-transcatheter-pulmon",
+      "publishedAt": "2026-07-13",
+      "title": "Medtronic issues removal action for certain Harmony transcatheter pulmonary valve delivery catheter lots",
+      "summary": "Medtronic issued a customer letter recommending removal of certain lots of the Harmony transcatheter pulmonary valve delivery catheter system, and the FDA identified the action as its most serious recall classification because continued use could result in serious injury or death. Harmony is Medtronic’s transcatheter pulmonary valve platform for patients with dysfunctional right ventricular outflow tracts.",
+      "sourceName": "MassDevice",
+      "sourceUrl": "https://www.massdevice.com/medtronic-warns-harmony-delivery-system/",
+      "topicTags": [
+        "pulmonary valve",
+        "device safety",
+        "recall"
+      ],
+      "relevantNodeIds": [
+        "cond-pv",
+        "dev-harmony",
+        "trial-harmony",
+        "co-medtronic"
+      ]
+    },
+    {
+      "id": "news-2026-07-07-cytokinetics-announces-esc-2026-late-breaking-aficamten-abstracts",
+      "publishedAt": "2026-07-07",
+      "title": "Cytokinetics announces ESC 2026 late-breaking aficamten abstracts",
+      "summary": "Cytokinetics announced planned ESC Congress presentations covering ACACIA-HCM and a MAPLE-HCM subgroup analysis, keeping cardiac myosin inhibition in focus ahead of the meeting.",
+      "sourceName": "Cytokinetics",
+      "sourceUrl": "https://ir.cytokinetics.com/press-releases/press-release-details/2026/Cytokinetics-Announces-Three-Late-Breaking-Science-Abstracts-at-the-European-Society-of-Cardiology-ESC-Congress-2026/default.aspx",
+      "topicTags": [
+        "HCM",
+        "clinical evidence",
+        "pharmaceutical"
+      ],
+      "relevantNodeIds": [
+        "rx-aficamten",
+        "cond-hcm",
+        "co-cytokinetics"
+      ]
+    },
+    {
+      "id": "news-2026-07-02-acoramidis-analysis-reports-early-sustained-kidney-markers-in-attr-cm",
+      "publishedAt": "2026-07-02",
+      "title": "Acoramidis analysis reports early, sustained kidney markers in ATTR-CM",
+      "summary": "A BridgeBio-reported analysis describes an early reversible eGFR change and lower urinary albumin-to-creatinine ratio through follow-up in ATTR-CM; it is supportive evidence, not a change to the approved indication.",
+      "sourceName": "BridgeBio Pharma",
+      "sourceUrl": "https://investor.bridgebio.com/news/news-details/2026/Acoramidis-Associated-with-First-Ever-Early-and-Sustained-Direct-Kidney-Protective-Effects-in-ATTR-CM/default.aspx",
+      "topicTags": [
+        "ATTR-CM",
+        "drug evidence",
+        "heart failure"
+      ],
+      "relevantNodeIds": [
+        "rx-acoramidis",
+        "cond-attr-cm",
+        "co-bridgebio"
+      ]
+    },
+    {
+      "id": "news-2026-07-02-laplace-receives-fda-ide-approval-for-triumph-pivotal-ttvr-trial",
+      "publishedAt": "2026-07-02",
+      "title": "Laplace receives FDA IDE approval for TRIUMPH pivotal TTVR trial",
+      "summary": "Laplace Interventional announced FDA investigational device exemption approval for TRIUMPH, a pivotal trial of its transcatheter tricuspid valve replacement system in severe tricuspid regurgitation. The prospective multicenter study is expected to enroll approximately 400 patients at up to 75 sites, randomized 2:1 between the Laplace TTVR system and a commercial TTVR device.",
+      "sourceName": "Cardiac Interventions Today",
+      "sourceUrl": "https://citoday.com/news/ide-for-triumph-pivotal-trial-of-laplaces-ttvr-system?c4src=news",
+      "topicTags": [
+        "tricuspid regurgitation",
+        "TTVR",
+        "FDA IDE"
+      ],
+      "relevantNodeIds": [
+        "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-07-02-stun-af-suggests-laa-ablation-before-laao-may-reduce-peridevice-leaks",
+      "publishedAt": "2026-07-02",
+      "title": "STUN-AF suggests LAA ablation before LAAO may reduce peridevice leaks",
+      "summary": "In the nonrandomized STUN-AF study, patients undergoing concomitant pulsed-field ablation and left atrial appendage occlusion had fewer peridevice leaks when the appendage was ablated before occlusion. The proportion with no leak was higher with LAA ablation at both 4 months and 12 months, and multivariable analysis associated LAA ablation with lower odds of leak.",
+      "sourceName": "TCTMD",
+      "sourceUrl": "https://www.tctmd.com/news/stun-af-ablation-laao-may-reduce-peridevice-leaks",
+      "topicTags": [
+        "LAAO",
+        "atrial fibrillation",
+        "PFA"
+      ],
+      "relevantNodeIds": [
+        "cond-af",
+        "dev-watchman-flx",
+        "co-boston-scientific"
+      ]
+    },
+    {
+      "id": "news-2026-07-01-first-u-s-real-world-triclip-data-show-strong-commercial-rollout",
+      "publishedAt": "2026-07-01",
+      "title": "First U.S. real-world TriClip data show strong commercial rollout",
+      "summary": "TCTMD reported STS/ACC TVT Registry data for more than 3,000 patients treated with Abbott’s TriClip G4 system at 278 U.S. sites after FDA approval. Device success was 98%, 30-day all-cause mortality was 1.4%, median hospital stay was 1 day, and 96% of patients were discharged home. At 30 days, 87% had moderate-or-less TR and 51% had mild-or-less TR, with substantial improvements in KCCQ score and NYHA class.",
+      "sourceName": "TCTMD",
+      "sourceUrl": "https://www.tctmd.com/news/real-world-triclip-data-show-reduced-tr-good-procedural-success",
+      "topicTags": [
+        "tricuspid regurgitation",
+        "T-TEER",
+        "real-world evidence"
+      ],
+      "relevantNodeIds": [
+        "cond-tr",
+        "dev-triclip",
+        "co-abbott"
+      ]
+    },
+    {
+      "id": "news-2026-06-30-ge-healthcare-introduces-allia-upgrade-pathways-for-existing-interventio",
+      "publishedAt": "2026-06-30",
+      "title": "GE HealthCare introduces Allia upgrade pathways for existing interventional suites",
+      "summary": "GE HealthCare announced Allia platform upgrade pathways intended to modernize selected legacy Innova and Discovery image-guided therapy systems. While not a structural-heart implant announcement, imaging-room capability is increasingly central to TAVR, TEER, TTVR, LAAO, and complex valve programs. The relevance is operational: hospitals may be able to improve image guidance and procedural workflow without replacing the entire interventional suite.",
+      "sourceName": "Cardiac Interventions Today",
+      "sourceUrl": "https://citoday.com/news",
+      "topicTags": [
+        "image guidance",
+        "workflow",
+        "infrastructure"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "cond-mr",
+        "cond-tr",
+        "cond-af"
+      ]
+    },
+    {
+      "id": "news-2026-06-29-abbott-highlights-triclip-navitor-and-amulet-360-datasets-at-ny-valves",
+      "publishedAt": "2026-06-29",
+      "title": "Abbott highlights TriClip, Navitor, and Amulet 360 datasets at NY Valves",
+      "summary": "Cardiac Interventions Today reported that Abbott presented first U.S. real-world outcomes for TriClip TEER, along with data on Navitor TAVR for aortic stenosis and Amulet 360 LAA occlusion. The TriClip data overlap with the TCTMD TVT Registry coverage and reinforce the commercial-readiness story for tricuspid repair. The Navitor mention is relevant because it shows Abbott continuing to build its TAVR evidence base while TriClip expands its tricuspid franchise.",
+      "sourceName": "Cardiac Interventions Today",
+      "sourceUrl": "https://citoday.com/center/valvular-interventions",
+      "topicTags": [
+        "T-TEER",
+        "TAVR",
+        "LAAO"
+      ],
+      "relevantNodeIds": [
+        "cond-tr",
+        "cond-as",
+        "cond-af",
+        "dev-triclip",
+        "dev-navitor",
+        "dev-amulet",
+        "co-abbott"
+      ]
+    },
+    {
+      "id": "news-2026-06-28-j-valve-transfemoral-thv-system-reports-1-year-efs-outcomes-in-severe-ar",
+      "publishedAt": "2026-06-28",
+      "title": "J-Valve transfemoral THV system reports 1-year EFS outcomes in severe AR",
+      "summary": "Cardiac Interventions Today noted 1-year outcomes from an early feasibility study of the investigational J-Valve transfemoral transcatheter heart valve system for symptomatic severe aortic regurgitation. Although the item is just outside the strict June 29–July 5 window, it is highly relevant because native AR remains an underpenetrated TAVR-adjacent indication. The U.S.",
+      "sourceName": "Cardiac Interventions Today",
+      "sourceUrl": "https://citoday.com/center/valvular-interventions",
+      "topicTags": [
+        "aortic regurgitation",
+        "TAVR",
+        "early feasibility"
+      ],
+      "relevantNodeIds": [
+        "cond-ar",
+        "co-edwards"
+      ]
+    },
+    {
+      "id": "news-2026-06-26-edwards-receives-fda-clearance-for-ecliptis-laa-exclusion-system",
+      "publishedAt": "2026-06-26",
+      "title": "Edwards receives FDA clearance for Ecliptis LAA exclusion system",
+      "summary": "Edwards entered surgical left atrial appendage exclusion with FDA clearance for Ecliptis, a clip-based system intended for use during concomitant cardiac surgery.",
+      "sourceName": "MedTech Dive",
+      "sourceUrl": "https://www.medtechdive.com/news/edwards-wins-fda-clearance-for-laa-clip-setting-up-competition-with-atricu/823980/",
+      "topicTags": [
+        "LAA closure",
+        "FDA clearance",
+        "device"
+      ],
+      "relevantNodeIds": [
+        "dev-ecliptis",
+        "cond-af",
+        "co-edwards"
+      ]
+    },
+    {
+      "id": "news-2026-06-26-valgen-dragonfly-tmvr-receives-ce-mark-for-functional-mr",
+      "publishedAt": "2026-06-26",
+      "title": "Valgen DragonFly TMVR receives CE Mark for functional MR",
+      "summary": "Cardiac Interventions Today reported that Valgen Medtech’s DragonFly transcatheter mitral valve repair system received European CE Mark approval for functional mitral regurgitation. This is outside the strict weekly window but close enough to matter for trend context, especially because transcatheter mitral repair remains a key competitive category. CE Mark approval in FMR indicates continued geographic and technology diversification beyond MitraClip/PASCAL-like incumbent systems.",
+      "sourceName": "Cardiac Interventions Today",
+      "sourceUrl": "https://citoday.com/center/valvular-interventions",
+      "topicTags": [
+        "mitral regurgitation",
+        "transcatheter repair",
+        "CE Mark"
+      ],
+      "relevantNodeIds": [
+        "cond-mr"
+      ]
+    },
+    {
+      "id": "news-2026-06-18-cms-proposes-major-tavr-coverage-update",
+      "publishedAt": "2026-06-18",
+      "title": "CMS proposes major TAVR coverage update",
+      "summary": "CMS proposed removing the coverage-with-evidence-development requirement for TAVR in symptomatic severe aortic stenosis, while expanding coverage to asymptomatic severe AS under CMS-approved evidence-development studies. The proposal also revises patient-assessment, heart-team, operator, hospital, and program-volume requirements. The public-comment period runs through July 15, 2026; the proposal is not yet final.",
+      "sourceName": "CMS proposed decision memo",
+      "sourceUrl": "https://www.cms.gov/medicare-coverage-database/view/ncacal-decision-memo.aspx?NCAId=321&proposed=Y",
+      "topicTags": [
+        "TAVR",
+        "reimbursement",
+        "policy"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "dev-sapien-3",
+        "dev-evolut",
+        "dev-navitor"
+      ]
+    },
+    {
+      "id": "news-2026-06-16-cardiawave-begins-routine-european-use-of-valvosoft-a-noninvasive-ultras",
+      "publishedAt": "2026-06-16",
+      "title": "Cardiawave begins routine European use of Valvosoft, a noninvasive ultrasound therapy for severe symptomatic AS",
+      "summary": "Cardiawave announced routine clinical use of Valvosoft in France, the Netherlands, and Germany following CE marking in late 2025. The company says the system uses high-intensity ultrasound pulses to fragment calcification on native aortic-valve leaflets without surgery, implantation, or general anesthesia.",
+      "sourceName": "Cardiac Interventions Today",
+      "sourceUrl": "https://citoday.com/news/cardiawaves-valvosoft-niut-device-to-treat-severe-symptomatic-aortic-stenosis-launched-in-europe",
+      "topicTags": [
+        "aortic stenosis",
+        "ultrasound therapy",
+        "commercialization"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-06-16-massdevice-frames-the-cms-proposal-as-a-volume-tailwind-for-major-tavr-p",
+      "publishedAt": "2026-06-16",
+      "title": "MassDevice frames the CMS proposal as a volume tailwind for major TAVR players",
+      "summary": "MassDevice reported that analysts saw the CMS proposal as a positive for Edwards and the broader TAVR category, including Medtronic and Abbott; it also noted Boston Scientific’s potential re-entry via its MiRus investment. The article emphasized the removal of CED for symptomatic patients and the addition of a CED pathway for asymptomatic severe AS.",
+      "sourceName": "MassDevice",
+      "sourceUrl": "https://www.massdevice.com/cms-proposes-tavr-coverage-update-edwards/",
+      "topicTags": [
+        "TAVR",
+        "reimbursement",
+        "market"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "co-edwards",
+        "co-medtronic",
+        "co-abbott",
+        "co-boston-scientific"
+      ]
+    },
+    {
+      "id": "news-2026-06-16-prevue-valve-publication-reinforces-the-scale-of-underrecognized-valve-d",
+      "publishedAt": "2026-06-16",
+      "title": "PREVUE-VALVE publication reinforces the scale of underrecognized valve disease",
+      "summary": "PREVUE-VALVE used CVS and Walgreens outreach followed by at-home ECG and echocardiography in a national sample of adults aged 65–85. The study estimated moderate-or-greater valvular heart disease in 8.2% of this population and mild-to-moderate disease in 18.4%; tricuspid regurgitation was the most common moderate-or-greater lesion, followed by aortic stenosis and mitral regurgitation.",
+      "sourceName": "TCTMD",
+      "sourceUrl": "https://www.tctmd.com/news/now-published-prevue-valve-charts-prevalence-valve-disease-united-states",
+      "topicTags": [
+        "screening",
+        "valvular disease",
+        "epidemiology"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "cond-mr",
+        "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-06-16-ten-year-partner-2a-and-sapien-3-registry-data-sharpen-the-tavi-durabili",
+      "publishedAt": "2026-06-16",
+      "title": "Ten-year PARTNER 2A and Sapien 3 registry data sharpen the TAVI durability discussion",
+      "summary": "Ten-year follow-up showed that intermediate-risk patients treated with the older Sapien XT valve in PARTNER 2A had higher mortality and valve reintervention than surgical AVR overall, driven largely by transthoracic-access cases. In contrast, a propensity-matched comparison of the newer Sapien 3 registry cohort versus surgical AVR showed no difference in 10-year all-cause mortality or aortic-valve reintervention.",
+      "sourceName": "TCTMD",
+      "sourceUrl": "https://www.tctmd.com/news/new-10-year-tavi-data-generally-reassuring-highlight-challenges",
+      "topicTags": [
+        "TAVR",
+        "durability",
+        "long-term evidence"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "dev-sapien-3",
+        "trial-partner-2",
+        "co-edwards"
+      ]
+    },
+    {
+      "id": "news-2026-06-15-anteris-positions-duravr-around-lifetime-management-and-disease-modifica",
+      "publishedAt": "2026-06-15",
+      "title": "Anteris positions DurAVR around lifetime management and disease modification",
+      "summary": "Anteris argued that as TAVR expands to younger, lower-risk patients, success metrics should extend beyond a technically successful implant to include hemodynamics, residual disease physiology, ventricular recovery, durability, and future intervention options. Its DurAVR is a balloon-expandable, single-piece biomimetic THV designed to mimic native-valve flow and is being studied in the PARADIGM trial against commercially available TAVR systems.",
+      "sourceName": "MassDevice",
+      "sourceUrl": "https://www.massdevice.com/anteris-outlines-future-challenges-tavr-therapy/",
+      "topicTags": [
+        "TAVR",
+        "lifetime management",
+        "device strategy"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-06-08-triscend-ii-analysis-quantifies-hospital-cost-and-length-of-stay-drivers",
+      "publishedAt": "2026-06-08",
+      "title": "TRISCEND II analysis quantifies hospital-cost and length-of-stay drivers after Evoque TTVR",
+      "summary": "A TRISCEND II analysis of 155 patients undergoing Edwards Evoque transcatheter tricuspid valve replacement found index-admission costs of about $80,005, including a $49,000 device-acquisition cost. New renal-replacement therapy and new pacemaker/CIED implantation were the largest independent contributors to incremental cost, while renal replacement, stroke, and new pacemaker/CIED implantation had the largest effects on length of stay.",
+      "sourceName": "TCTMD",
+      "sourceUrl": "https://www.tctmd.com/news/triscend-ii-data-reveal-drivers-hospital-costs-length-stay-ttvr",
+      "topicTags": [
+        "tricuspid regurgitation",
+        "TTVR",
+        "health economics"
+      ],
+      "relevantNodeIds": [
+        "cond-tr",
+        "dev-evoque",
+        "trial-triscend-2",
+        "co-edwards"
+      ]
+    }
+  ],
   "elements": {
     "nodes": [
       {
