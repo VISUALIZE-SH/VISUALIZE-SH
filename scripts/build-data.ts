@@ -7,7 +7,8 @@
  *   3. Enforce cross-field + referential integrity (ids unique, refs resolve to
  *      the correct entity type, therapy id prefix matches therapyType).
  *   4. Derive graph nodes + edges, compute node degree.
- *   5. Write public/graph.json with a meta block (counts, lastUpdated, drafts).
+ *   5. Validate data/news.yaml and verify all of its node references resolve.
+ *   6. Write public/graph.json with graph metadata and a news feed.
  *
  * Any error fails the build (exit 1) with a clear message, so a scheduled
  * updater (or CI) catches malformed data before it ships.
@@ -20,6 +21,7 @@ import Ajv, { type ValidateFunction } from 'ajv'
 import addFormats from 'ajv-formats'
 import type {
   Entity,
+  NewsItem,
   Therapy,
   Trial,
   GraphData,
@@ -52,6 +54,7 @@ const validators: Record<string, ValidateFunction> = {
   therapies: loadSchema('therapy.schema.json'),
   companies: loadSchema('company.schema.json'),
   trials: loadSchema('trial.schema.json'),
+  news: loadSchema('news.schema.json'),
 }
 
 // --- load + parse YAML -----------------------------------------------------
@@ -89,12 +92,43 @@ for (const file of files) {
   })
 }
 
+// News attaches to graph nodes but is not itself a graph entity.
+function loadNews(): NewsItem[] {
+  const items = loadEntities('news') as NewsItem[]
+  const validate = validators.news
+  items.forEach((item, i) => {
+    if (!validate(item)) {
+      const id = item?.id ?? `index ${i}`
+      for (const e of validate.errors ?? []) {
+        fail(`data/news.yaml [${id}] ${e.instancePath || '/'} ${e.message}`)
+      }
+    }
+  })
+  return items
+}
+
+const news = loadNews()
+
 // --- build id index + uniqueness ------------------------------------------
 const byId = new Map<string, Entity>()
 for (const entity of all) {
   if (!entity?.id) continue
   if (byId.has(entity.id)) fail(`Duplicate id: ${entity.id}`)
   byId.set(entity.id, entity)
+}
+
+const newsIds = new Set<string>()
+for (const item of news) {
+  if (!item?.id) continue
+  if (newsIds.has(item.id)) fail(`Duplicate news id: ${item.id}`)
+  newsIds.add(item.id)
+  const idDate = item.id.match(/^news-(\d{4}-\d{2}-\d{2})-/)?.[1]
+  if (idDate && item.publishedAt && idDate !== item.publishedAt) {
+    fail(`news "${item.id}" date prefix must match publishedAt "${item.publishedAt}"`)
+  }
+  for (const nodeId of item.relevantNodeIds ?? []) {
+    if (!byId.has(nodeId)) fail(`news "${item.id}" references unknown node id "${nodeId}"`)
+  }
 }
 
 // Reference must exist and resolve to the expected entity type.
@@ -224,6 +258,10 @@ const lastUpdated = all.reduce(
 
 const draftCount = nodes.filter((n) => n.data.isDraft).length
 const scoredCount = nodes.filter((n) => n.data.pulse > 0).length
+const sortedNews = [...news].sort((a, b) => {
+  const dateOrder = b.publishedAt.localeCompare(a.publishedAt)
+  return dateOrder || a.id.localeCompare(b.id)
+})
 
 const graph: GraphData = {
   meta: {
@@ -232,7 +270,10 @@ const graph: GraphData = {
     counts,
     draftCount,
     total: nodes.length,
+    newsCount: sortedNews.length,
+    latestNewsDate: sortedNews[0]?.publishedAt,
   },
+  news: sortedNews,
   elements: { nodes, edges: edges.map((data) => ({ data })) },
 }
 
@@ -243,6 +284,7 @@ console.log('✓ build-data: wrote public/graph.json')
 console.log(
   `  nodes: ${nodes.length}  edges: ${edges.length}  drafts: ${draftCount}  pulse-scored: ${scoredCount}`,
 )
+console.log(`  news: ${sortedNews.length}${sortedNews[0] ? `  latest: ${sortedNews[0].publishedAt}` : ''}`)
 console.log(
   `  by group: ${Object.entries(counts)
     .map(([g, c]) => `${g}=${c}`)

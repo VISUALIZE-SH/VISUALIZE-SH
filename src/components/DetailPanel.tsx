@@ -4,15 +4,19 @@ import type {
   Entity,
   GraphEdgeData,
   GraphNodeData,
+  NewsItem,
 } from '../types/entities'
 import { GROUP_META } from '../graph/palette'
 import { formatTimelineDate, TIMELINE_BASIS_LABELS } from '../graph/timeline'
+import NewsFeed from './NewsFeed'
 
 interface Props {
   node: GraphNodeData
   nodesById: Map<string, GraphNodeData>
   edges: GraphEdgeData[]
+  newsItems: NewsItem[]
   onSelect: (id: string) => void
+  onNewsSelect: (item: NewsItem) => void
   onClose: () => void
 }
 
@@ -322,7 +326,9 @@ export default function DetailPanel({
   node,
   nodesById,
   edges,
+  newsItems,
   onSelect,
+  onNewsSelect,
   onClose,
 }: Props) {
   const e = node.entity
@@ -354,6 +360,23 @@ export default function DetailPanel({
         </section>
 
         <MoreInfo node={node} byId={nodesById} />
+
+        {newsItems.length > 0 && (
+          <section className="detail-section node-news-section">
+            <div className="detail-section-title">
+              <div>
+                <h3>Past news</h3>
+                <small>Newest first</small>
+              </div>
+              <span>{newsItems.length}</span>
+            </div>
+            <NewsFeed
+              className="news-feed-compact"
+              items={newsItems}
+              onSelect={onNewsSelect}
+            />
+          </section>
+        )}
 
         {groups.length > 0 && (
           <section className="detail-section">

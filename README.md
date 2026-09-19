@@ -6,8 +6,9 @@ therapies that target them (devices, pharmaceuticals, digital therapeutics,
 procedures), the companies behind them, and the clinical trials that evaluate them.
 
 Built with React + TypeScript + Vite + [Cytoscape.js](https://js.cytoscape.org/).
-The data is hand-curated YAML, validated and compiled into a static graph — so the
-whole thing deploys as plain static files and is easy to keep up to date.
+The data is hand-curated YAML, validated and compiled into a static graph and
+source-linked news feed — so the whole thing deploys as plain static files and is
+easy to keep up to date.
 
 > ⚕️ **For educational use only — not medical advice.** Data may be incomplete or
 > out of date; verify against primary sources (FDA labeling, ClinicalTrials.gov,
@@ -33,8 +34,8 @@ npm run typecheck    # TypeScript only
 
 ```
 data/*.yaml  ──(npm run build:data)──►  public/graph.json  ──►  React + Cytoscape app
-(source of truth,        validate +                         (loads graph.json at runtime)
- hand-curated)           derive edges
+(entities + news,        validate + attach news             (loads one static payload)
+ source of truth)        + derive edges
 ```
 
 - **Source of truth** is the YAML in `data/` (one file per entity type). Entities
@@ -42,6 +43,9 @@ data/*.yaml  ──(npm run build:data)──►  public/graph.json  ──►  
 - `scripts/build-data.ts` validates every entity against `schema/*.schema.json`,
   checks referential integrity, derives the graph edges, and writes
   `public/graph.json` (committed, so no server is needed).
+- `data/news.yaml` holds the weekly source-linked digest. Every story names the
+  existing graph nodes it concerns; selecting it focuses those nodes, and the
+  same story appears in each linked node's detail panel.
 - The app loads `graph.json` and renders it. Color/shape encode entity type, node
   size encodes connectedness, **label size encodes `pulse`** (recent news
   attention, 0–10), and a dashed outline marks uncurated **drafts**. Labels scale
@@ -78,7 +82,7 @@ Read **[`schema/DATA_DICTIONARY.md`](schema/DATA_DICTIONARY.md)** — it documen
 every field, the id conventions, and the rules. The short version:
 
 1. Edit the YAML in `data/` (add entities as `curation.status: draft` with
-   `sources`).
+   `sources`; add source-linked stories to `data/news.yaml`).
 2. `npm run build:data` — must pass (it fails on bad data or dangling references).
 3. Review drafts in the app, promote to `curated`, commit, and deploy.
 
@@ -96,7 +100,7 @@ in `src/index.css` (`:root`); the categorical node palette lives in
 ## Project layout
 
 ```
-data/        YAML source of truth (conditions, therapies, companies, trials)
+data/        YAML source of truth (conditions, therapies, companies, trials, news)
 schema/      JSON Schemas + DATA_DICTIONARY.md
 scripts/     build-data.ts (validate + compile)
 public/      graph.json (generated, committed)

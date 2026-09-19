@@ -3,8 +3,8 @@
 This is the **contract** for the data layer. Read it fully before adding or editing
 data — whether you are a human curator or an automated update routine.
 
-The graph is built from four YAML files in `data/`. Each file is a **YAML list of
-entities**. Entities reference each other **by `id`**; the build step
+The graph is built from four entity YAML files plus a news feed in `data/`. Each
+file is a **YAML list**. Entities reference each other **by `id`**; the build step
 (`npm run build:data`) turns those references into graph edges and **fails the
 build** if anything is malformed or a reference doesn't resolve.
 
@@ -14,10 +14,43 @@ data/therapies.yaml    devices, drugs, digital,    (rx-* dev-* dig-* proc-*)
                        procedures
 data/companies.yaml    organizations               (co-*)
 data/trials.yaml       clinical trials             (trial-*)
+data/news.yaml         source-linked news feed     (news-YYYY-MM-DD-*)
 ```
 
 JSON Schemas in `schema/*.schema.json` are the machine-checked source of truth for
 field names, types, and allowed values. This document explains them in prose.
+
+---
+
+## News (`data/news.yaml`)
+
+News items are not graph nodes. They are a compact, source-linked feed that can
+focus related nodes in the graph and can be displayed in an entity's detail panel.
+The build serializes them at `graph.news`, newest first, and reports `newsCount`
+and `latestNewsDate` in `graph.meta`.
+
+```yaml
+- id: news-2026-07-07-example-readout
+  publishedAt: "2026-07-07"
+  title: "Short, source-faithful headline"
+  summary: "One or two concise sentences explaining why it matters."
+  sourceName: "Publisher or organization"
+  sourceUrl: "https://www.example.org/news/item"
+  topicTags: ["HCM", "clinical evidence"]
+  relevantNodeIds: ["cond-hcm", "trial-example"]
+```
+
+Required fields are `id`, `publishedAt`, `title`, `summary`, `sourceName`,
+`sourceUrl`, `topicTags`, and `relevantNodeIds`. Use an immutable, date-prefixed
+id; correct copy in place but never reuse an id for a different story. Sources
+must be canonical public HTTPS URLs. `relevantNodeIds` must be non-empty and every
+id must already exist in the entity files; the build fails if a target is missing.
+
+For the weekly routine, append each selected item to this file and retain older
+items as feed history. Favor the original press release, regulator, journal, or
+trial registry over an aggregator. Each item should be independently useful, short,
+and source-faithful; a news item is not a substitute for updating a clinical claim
+in an entity's curation block.
 
 ---
 

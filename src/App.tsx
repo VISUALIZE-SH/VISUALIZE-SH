@@ -1,6 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type Cytoscape from 'cytoscape'
-import type { GraphData, NodeGroup, RegulatoryStatus } from './types/entities'
+import type {
+  GraphData,
+  NewsItem,
+  NodeGroup,
+  RegulatoryStatus,
+} from './types/entities'
 import { loadGraph } from './data/loadGraph'
 import { GROUP_ORDER } from './graph/palette'
 import { getLayout, frameLayout, type LayoutName } from './graph/layouts'
@@ -11,6 +16,7 @@ import Header from './components/Header'
 import Filters from './components/Filters'
 import DetailPanel from './components/DetailPanel'
 import About from './components/About'
+import NewsFeed from './components/NewsFeed'
 
 const ALL_REGULATORY: RegulatoryStatus[] = [
   'approved',
@@ -22,6 +28,9 @@ export default function App() {
   const [graph, setGraph] = useState<GraphData | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [selectedNewsId, setSelectedNewsId] = useState<string | null>(null)
+  const [newsFilterNodeId, setNewsFilterNodeId] = useState<string | null>(null)
+  const [sidebarMode, setSidebarMode] = useState<'atlas' | 'news'>('atlas')
   const [activeGroups, setActiveGroups] = useState<Set<NodeGroup>>(
     new Set(GROUP_ORDER),
   )
@@ -57,6 +66,23 @@ export default function App() {
     () => new Map(nodes.map((n) => [n.id, n])),
     [nodes],
   )
+  const selectedNews = useMemo(
+    () => graph?.news.find((item) => item.id === selectedNewsId) ?? null,
+    [graph, selectedNewsId],
+  )
+  const newsFilterNode = useMemo(
+    () => (newsFilterNodeId ? nodesById.get(newsFilterNodeId) ?? null : null),
+    [newsFilterNodeId, nodesById],
+  )
+  const visibleNews = useMemo(
+    () =>
+      newsFilterNodeId
+        ? (graph?.news ?? []).filter((item) =>
+            item.relevantNodeIds.includes(newsFilterNodeId),
+          )
+        : (graph?.news ?? []),
+    [graph, newsFilterNodeId],
+  )
 
   const visibleIds = useMemo(() => {
     const set = new Set<string>()
@@ -90,6 +116,21 @@ export default function App() {
     }
   }, [nodes, visibleIds])
 
+  // A news selection is an explicit request to see its linked entities, so it
+  // temporarily brings filtered-out nodes back into the canvas without changing
+  // the user's filter choices.
+  const canvasVisibleIds = useMemo(() => {
+    if (!selectedNews) return visibleIds
+    const next = new Set(visibleIds)
+    for (const id of selectedNews.relevantNodeIds) next.add(id)
+    return next
+  }, [selectedNews, visibleIds])
+
+  const highlightedIds = useMemo(
+    () => new Set(selectedNews?.relevantNodeIds ?? []),
+    [selectedNews],
+  )
+
   useEffect(() => {
     if (layoutName !== 'timeline' || !selectedId) return
     const selected = nodesById.get(selectedId)
@@ -108,10 +149,55 @@ export default function App() {
     return <div className="state-msg">Loading the structural-heart graph…</div>
 
   const selectedNode = selectedId ? nodesById.get(selectedId) ?? null : null
+  const selectedNodeNews = selectedNode
+    ? graph.news
+        .filter((item) => item.relevantNodeIds.includes(selectedNode.id))
+        .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+    : []
 
   function handleSelect(id: string | null) {
+    if (sidebarMode === 'news') {
+      setSelectedId(id)
+      setNewsFilterNodeId(id)
+      setSelectedNewsId(null)
+      return
+    }
     setSelectedId(id)
+    setSelectedNewsId(null)
+    setNewsFilterNodeId(null)
     setLeftOpen(false)
+  }
+  function handleNewsSelect(item: NewsItem) {
+    setSelectedId(null)
+    setSelectedNewsId((current) => (current === item.id ? null : item.id))
+    if (sidebarMode !== 'news') setNewsFilterNodeId(null)
+    setSidebarMode('news')
+    // Timeline intentionally omits companies and undated context. Return to the
+    // clustered atlas so every curated node attached to the story can be shown.
+    if (layoutName === 'timeline') setLayoutName('fcose')
+    if (
+      typeof window !== 'undefined' &&
+      window.matchMedia('(max-width: 860px)').matches
+    ) {
+      setLeftOpen(false)
+    }
+  }
+  function handleSidebarModeChange(mode: 'atlas' | 'news') {
+    setSidebarMode(mode)
+    setFiltersCollapsed(false)
+    if (mode === 'atlas') {
+      setSelectedNewsId(null)
+      setNewsFilterNodeId(null)
+    } else {
+      setSelectedId(null)
+      setNewsFilterNodeId(null)
+    }
+    if (
+      typeof window !== 'undefined' &&
+      window.matchMedia('(max-width: 860px)').matches
+    ) {
+      setLeftOpen(true)
+    }
   }
   function toggleOptionsPanel() {
     if (
@@ -170,32 +256,92 @@ export default function App() {
         filtersCollapsed={filtersCollapsed}
         accessibilityMode={accessibilityMode}
         onToggleAccessibility={() => setAccessibilityMode((enabled) => !enabled)}
+        sidebarMode={sidebarMode}
+        newsCount={graph.meta.newsCount}
+        onSidebarModeChange={handleSidebarModeChange}
       />
       <div className="body">
         <aside
-          className={`sidebar ${leftOpen ? 'open' : ''} ${
+          className={`sidebar ${sidebarMode === 'news' ? 'news-sidebar' : ''} ${leftOpen ? 'open' : ''} ${
             filtersCollapsed ? 'collapsed' : ''
           }`}
           aria-hidden={filtersCollapsed && !leftOpen}
         >
-          <Filters
-            meta={graph.meta}
-            activeGroups={activeGroups}
-            onToggleGroup={toggleGroup}
-            activeRegulatory={activeRegulatory}
-            onToggleRegulatory={toggleRegulatory}
-            showDrafts={showDrafts}
-            onToggleDrafts={() => setShowDrafts((d) => !d)}
-            onReset={resetFilters}
-          />
+          {sidebarMode === 'atlas' ? (
+            <Filters
+              meta={graph.meta}
+              activeGroups={activeGroups}
+              onToggleGroup={toggleGroup}
+              activeRegulatory={activeRegulatory}
+              onToggleRegulatory={toggleRegulatory}
+              showDrafts={showDrafts}
+              onToggleDrafts={() => setShowDrafts((d) => !d)}
+              onReset={resetFilters}
+            />
+          ) : (
+            <div className="news-panel">
+              <div className="news-panel-head">
+                <div>
+                  <p className="eyebrow">Weekly intelligence</p>
+                  <h2>Recent news</h2>
+                  <p>
+                    {newsFilterNode
+                      ? `Showing stories linked to ${newsFilterNode.label}.`
+                      : 'Select a story to focus its related nodes, or select a node to filter this feed.'}
+                  </p>
+                </div>
+                {selectedNews && (
+                  <button
+                    className="news-panel-clear"
+                    type="button"
+                    onClick={() => setSelectedNewsId(null)}
+                  >
+                    Clear
+                  </button>
+                )}
+              </div>
+              {newsFilterNode && (
+                <div className="news-node-filter" role="status">
+                  <span className="dot" style={{ background: 'var(--gold)' }} />
+                  <span>
+                    <strong>{newsFilterNode.label}</strong>
+                    <small>
+                      {visibleNews.length} {visibleNews.length === 1 ? 'story' : 'stories'} · newest first
+                    </small>
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setNewsFilterNodeId(null)
+                      setSelectedId(null)
+                    }}
+                    aria-label={`Clear ${newsFilterNode.label} news filter`}
+                  >
+                    ✕
+                  </button>
+                </div>
+              )}
+              <NewsFeed
+                items={visibleNews}
+                selectedItemId={selectedNewsId ?? undefined}
+                onSelect={handleNewsSelect}
+                emptyMessage={
+                  newsFilterNode
+                    ? `No archived news is linked to ${newsFilterNode.label}.`
+                    : undefined
+                }
+              />
+            </div>
+          )}
         </aside>
         {leftOpen && <div className="scrim" onClick={() => setLeftOpen(false)} />}
 
         <main className="canvas-wrap">
           <GraphCanvas
             graph={graph}
-            visibleIds={visibleIds}
+            visibleIds={canvasVisibleIds}
             selectedId={selectedId}
+            highlightedIds={highlightedIds}
             layoutName={layoutName}
             accessibilityMode={accessibilityMode}
             onSelect={handleSelect}
@@ -203,6 +349,22 @@ export default function App() {
               cyRef.current = cy
             }}
           />
+          {selectedNews && (
+            <div className="news-focus-banner" role="status">
+              <span className="news-focus-mark" aria-hidden="true">✦</span>
+              <span className="news-focus-copy">
+                <span>News focus</span>
+                <strong>{selectedNews.title}</strong>
+              </span>
+              <button
+                type="button"
+                onClick={() => setSelectedNewsId(null)}
+                aria-label="Clear news focus"
+              >
+                ✕
+              </button>
+            </div>
+          )}
           <div className="canvas-disclaimer" role="note">
             This is not a clinical advice tool. Content here is not provided or
             endorsed by the organizations listed.
@@ -240,13 +402,15 @@ export default function App() {
           )}
         </main>
 
-        {selectedNode && (
+        {selectedNode && sidebarMode === 'atlas' && (
           <DetailPanel
             node={selectedNode}
             nodesById={nodesById}
             edges={edges}
             onSelect={(id) => handleSelect(id)}
             onClose={() => setSelectedId(null)}
+            newsItems={selectedNodeNews}
+            onNewsSelect={handleNewsSelect}
           />
         )}
       </div>
