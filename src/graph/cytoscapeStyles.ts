@@ -137,6 +137,19 @@ export function buildStylesheet(options: StylesheetOptions = {}): any[] {
       },
     },
     {
+      // A selected news item may point at several nodes. The gold halo echoes
+      // the Pulse treatment while keeping single-node selection visually distinct.
+      selector: 'node.news-hit',
+      style: {
+        'border-width': 4,
+        'border-color': '#ffd358',
+        'font-weight': 'bold',
+        'text-outline-width': 3,
+        'min-zoomed-font-size': 0,
+        'z-index': 9999,
+      },
+    },
+    {
       selector: 'edge.hl',
       style: {
         'line-color': '#5b5d66',
