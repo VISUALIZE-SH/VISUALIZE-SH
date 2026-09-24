@@ -10,9 +10,20 @@
     "id": { "type": "string", "pattern": "^news-[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+$" },
     "publishedAt": { "type": "string", "format": "date" },
     "title": { "type": "string", "minLength": 1, "maxLength": 220 },
-    "summary": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "summary": { "type": "string", "minLength": 1, "maxLength": 650 },
     "sourceName": { "type": "string", "minLength": 1, "maxLength": 100 },
     "sourceUrl": { "type": "string", "format": "uri", "pattern": "^https://", "description": "Canonical public HTTPS URL for the cited source." },
+    "additionalSources": {
+      "type": "array", "uniqueItems": true, "maxItems": 5,
+      "description": "Independent or corroborating sources for the same event; never duplicate the primary URL.",
+      "items": {
+        "type": "object", "additionalProperties": false, "required": ["label", "url"],
+        "properties": {
+          "label": { "type": "string", "minLength": 1, "maxLength": 100 },
+          "url": { "type": "string", "format": "uri", "pattern": "^https://" }
+        }
+      }
+    },
     "topicTags": {
       "type": "array", "minItems": 1, "uniqueItems": true,
       "items": { "type": "string", "minLength": 1, "maxLength": 48 }

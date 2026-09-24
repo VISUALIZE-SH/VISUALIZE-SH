@@ -7,6 +7,18 @@ interface Props {
   onSelect: (id: string) => void
 }
 
+function materialMatch(node: GraphNodeData, query: string): string | undefined {
+  const entity = node.entity
+  if (entity.type !== 'therapy' || entity.therapyType !== 'device') return undefined
+  return entity.materials?.find((material) =>
+    [material.name, material.role, material.category, material.note]
+      .filter(Boolean)
+      .join(' ')
+      .toLowerCase()
+      .includes(query),
+  )?.name
+}
+
 export default function SearchBar({ nodes, onSelect }: Props) {
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
@@ -16,7 +28,11 @@ export default function SearchBar({ nodes, onSelect }: Props) {
     const q = query.trim().toLowerCase()
     if (!q) return []
     return nodes
-      .filter((n) => n.label.toLowerCase().includes(q))
+      .map((node) => ({
+        node,
+        material: materialMatch(node, q),
+      }))
+      .filter(({ node, material }) => node.label.toLowerCase().includes(q) || material)
       .slice(0, 8)
   }, [query, nodes])
 
@@ -31,7 +47,7 @@ export default function SearchBar({ nodes, onSelect }: Props) {
       <input
         className="search-input"
         type="search"
-        placeholder="Search conditions, therapies, trials…"
+        placeholder="Search therapies, trials, materials…"
         value={query}
         onChange={(e) => {
           setQuery(e.target.value)
@@ -43,28 +59,31 @@ export default function SearchBar({ nodes, onSelect }: Props) {
           blurTimer.current = window.setTimeout(() => setOpen(false), 150)
         }}
         onKeyDown={(e) => {
-          if (e.key === 'Enter' && matches[0]) choose(matches[0].id)
+          if (e.key === 'Enter' && matches[0]) choose(matches[0].node.id)
           if (e.key === 'Escape') setOpen(false)
         }}
       />
       {open && matches.length > 0 && (
         <ul className="search-results">
-          {matches.map((n) => (
-            <li key={n.id}>
+          {matches.map(({ node, material }) => (
+            <li key={node.id}>
               <button
                 type="button"
                 onMouseDown={(e) => {
                   e.preventDefault()
                   if (blurTimer.current) window.clearTimeout(blurTimer.current)
-                  choose(n.id)
+                  choose(node.id)
                 }}
               >
                 <span
                   className="dot"
-                  style={{ background: GROUP_META[n.group].color }}
+                  style={{ background: GROUP_META[node.group].color }}
                 />
-                <span className="search-label">{n.label}</span>
-                <span className="search-group">{GROUP_META[n.group].label}</span>
+                <span className="search-label">
+                  {node.label}
+                  {material && <small>Matches {material}</small>}
+                </span>
+                <span className="search-group">{GROUP_META[node.group].label}</span>
               </button>
             </li>
           ))}

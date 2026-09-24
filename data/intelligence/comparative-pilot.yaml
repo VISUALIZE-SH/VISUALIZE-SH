@@ -1,0 +1,856 @@
+{
+  "schema_version": 1,
+  "device_configurations": [
+    {
+      "configuration_id": "sapien-3-20",
+      "product_version_id": "ver-sapien-3",
+      "device_family_id": "family-sapien",
+      "generation": "SAPIEN 3",
+      "configuration_label": "SAPIEN 3 model 9600TFX, 20 mm",
+      "therapy_class": "TAVR",
+      "target_structure": "Aortic valve",
+      "mechanism": "replacement"
+    },
+    {
+      "configuration_id": "sapien-3-23",
+      "product_version_id": "ver-sapien-3",
+      "device_family_id": "family-sapien",
+      "generation": "SAPIEN 3",
+      "configuration_label": "SAPIEN 3 model 9600TFX, 23 mm",
+      "therapy_class": "TAVR",
+      "target_structure": "Aortic valve",
+      "mechanism": "replacement"
+    },
+    {
+      "configuration_id": "sapien-3-26",
+      "product_version_id": "ver-sapien-3",
+      "device_family_id": "family-sapien",
+      "generation": "SAPIEN 3",
+      "configuration_label": "SAPIEN 3 model 9600TFX, 26 mm",
+      "therapy_class": "TAVR",
+      "target_structure": "Aortic valve",
+      "mechanism": "replacement"
+    },
+    {
+      "configuration_id": "sapien-3-29",
+      "product_version_id": "ver-sapien-3",
+      "device_family_id": "family-sapien",
+      "generation": "SAPIEN 3",
+      "configuration_label": "SAPIEN 3 model 9600TFX, 29 mm",
+      "therapy_class": "TAVR",
+      "target_structure": "Aortic valve",
+      "mechanism": "replacement"
+    },
+    {
+      "configuration_id": "evolut-fx-23",
+      "product_version_id": "ver-evolut-fx",
+      "device_family_id": "family-evolut",
+      "generation": "Evolut FX",
+      "configuration_label": "Evolut FX model EVOLUTFX-23, 23 mm",
+      "therapy_class": "TAVR",
+      "target_structure": "Aortic valve",
+      "mechanism": "replacement"
+    },
+    {
+      "configuration_id": "evolut-fx-26",
+      "product_version_id": "ver-evolut-fx",
+      "device_family_id": "family-evolut",
+      "generation": "Evolut FX",
+      "configuration_label": "Evolut FX model EVOLUTFX-26, 26 mm",
+      "therapy_class": "TAVR",
+      "target_structure": "Aortic valve",
+      "mechanism": "replacement"
+    },
+    {
+      "configuration_id": "evolut-fx-29",
+      "product_version_id": "ver-evolut-fx",
+      "device_family_id": "family-evolut",
+      "generation": "Evolut FX",
+      "configuration_label": "Evolut FX model EVOLUTFX-29, 29 mm",
+      "therapy_class": "TAVR",
+      "target_structure": "Aortic valve",
+      "mechanism": "replacement"
+    },
+    {
+      "configuration_id": "evolut-fx-34",
+      "product_version_id": "ver-evolut-fx",
+      "device_family_id": "family-evolut",
+      "generation": "Evolut FX",
+      "configuration_label": "Evolut FX model EVOLUTFX-34, 34 mm",
+      "therapy_class": "TAVR",
+      "target_structure": "Aortic valve",
+      "mechanism": "replacement"
+    }
+  ],
+  "metric_definitions": [
+    {
+      "metric_id": "native-annulus-diameter-range",
+      "display_name": "Native annulus diameter range",
+      "module": "core_device_card",
+      "value_kind": "text",
+      "canonical_unit": "mm",
+      "applicable_to": [
+        "TAVR"
+      ],
+      "required_context": [
+        "modality",
+        "sizing_basis",
+        "native_annulus"
+      ],
+      "default_comparability": "not_comparable",
+      "definition_note": "SAPIEN 3 reports a TEE sizing recommendation; Evolut FX reports an annulus diameter criterion without the same measurement method. Retain source-specific modality and comparability rationale."
+    },
+    {
+      "metric_id": "sapien-ct-native-annulus-area",
+      "display_name": "SAPIEN native annulus sizing range (CT area)",
+      "module": "core_device_card",
+      "value_kind": "text",
+      "canonical_unit": "mm²",
+      "applicable_to": [
+        "TAVR"
+      ],
+      "required_context": [
+        "modality",
+        "sizing_basis",
+        "native_annulus"
+      ],
+      "default_comparability": "within_family_only",
+      "definition_note": "FDA SAPIEN 3 IFU Table 2 CT area recommendation; distinct from TEE diameter and CT area-derived diameter."
+    },
+    {
+      "metric_id": "sapien-ct-area-derived-annulus-diameter",
+      "display_name": "SAPIEN native annulus area-derived diameter (CT)",
+      "module": "core_device_card",
+      "value_kind": "text",
+      "canonical_unit": "mm",
+      "applicable_to": [
+        "TAVR"
+      ],
+      "required_context": [
+        "modality",
+        "sizing_basis",
+        "native_annulus"
+      ],
+      "default_comparability": "within_family_only",
+      "definition_note": "FDA SAPIEN 3 IFU Table 2 area-derived diameter; distinct from TEE diameter and Evolut FX diameter criteria."
+    },
+    {
+      "metric_id": "evolut-fx-delivery-capsule-outer-diameter",
+      "display_name": "Evolut FX delivery capsule outer diameter",
+      "module": "core_device_card",
+      "value_kind": "numeric",
+      "canonical_unit": "Fr",
+      "applicable_to": [
+        "TAVR"
+      ],
+      "required_context": [
+        "delivery_catheter_model",
+        "capsule_outer_diameter"
+      ],
+      "default_comparability": "not_comparable",
+      "definition_note": "Capsule outer diameter for compatible delivery catheter model; not minimum vessel diameter or a prescribed access-vessel size."
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "sapien-3-20-tee-diameter",
+      "configuration_id": "sapien-3-20",
+      "metric_id": "native-annulus-diameter-range",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "16–19",
+      "unit": "mm",
+      "statistic": "range",
+      "comparability": "within_family_only",
+      "comparability_rationale": "Size-specific SAPIEN 3 recommendation. Interpret only with its stated TEE modality; it is not directly comparable to Evolut FX native annulus criteria.",
+      "method": {
+        "modality": "TEE",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "Native annulus TEE diameter as specified by the FDA IFU."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native annulus; TEE sizing basis.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "sapien-3-20"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "locator": "PDF page 2, Table 2; native annulus TEE diameter row for 20 mm THV",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "sapien-3-20-ct-area",
+      "configuration_id": "sapien-3-20",
+      "metric_id": "sapien-ct-native-annulus-area",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "273–345",
+      "unit": "mm²",
+      "statistic": "range",
+      "comparability": "within_family_only",
+      "comparability_rationale": "Size-specific SAPIEN 3 recommendation. Interpret only with its stated CT modality; it is not directly comparable to Evolut FX native annulus criteria.",
+      "method": {
+        "modality": "CT",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "Native annulus CT area as specified by the FDA IFU."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native annulus; CT sizing basis.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "sapien-3-20"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "locator": "PDF page 2, Table 2; native annulus CT area row for 20 mm THV",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "sapien-3-20-ct-diameter",
+      "configuration_id": "sapien-3-20",
+      "metric_id": "sapien-ct-area-derived-annulus-diameter",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "18.6–21",
+      "unit": "mm",
+      "statistic": "range",
+      "comparability": "within_family_only",
+      "comparability_rationale": "Size-specific SAPIEN 3 recommendation. Interpret only with its stated CT modality; it is not directly comparable to Evolut FX native annulus criteria.",
+      "method": {
+        "modality": "CT",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "Native annulus CT area-derived diameter as specified by the FDA IFU."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native annulus; CT sizing basis.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "sapien-3-20"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "locator": "PDF page 2, Table 2; native annulus CT area-derived diameter row for 20 mm THV",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "sapien-3-23-tee-diameter",
+      "configuration_id": "sapien-3-23",
+      "metric_id": "native-annulus-diameter-range",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "18–22",
+      "unit": "mm",
+      "statistic": "range",
+      "comparability": "within_family_only",
+      "comparability_rationale": "Size-specific SAPIEN 3 recommendation. Interpret only with its stated TEE modality; it is not directly comparable to Evolut FX native annulus criteria.",
+      "method": {
+        "modality": "TEE",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "Native annulus TEE diameter as specified by the FDA IFU."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native annulus; TEE sizing basis.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "sapien-3-23"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "locator": "PDF page 2, Table 2; native annulus TEE diameter row for 23 mm THV",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "sapien-3-23-ct-area",
+      "configuration_id": "sapien-3-23",
+      "metric_id": "sapien-ct-native-annulus-area",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "338–430",
+      "unit": "mm²",
+      "statistic": "range",
+      "comparability": "within_family_only",
+      "comparability_rationale": "Size-specific SAPIEN 3 recommendation. Interpret only with its stated CT modality; it is not directly comparable to Evolut FX native annulus criteria.",
+      "method": {
+        "modality": "CT",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "Native annulus CT area as specified by the FDA IFU."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native annulus; CT sizing basis.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "sapien-3-23"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "locator": "PDF page 2, Table 2; native annulus CT area row for 23 mm THV",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "sapien-3-23-ct-diameter",
+      "configuration_id": "sapien-3-23",
+      "metric_id": "sapien-ct-area-derived-annulus-diameter",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "20.7–23.4",
+      "unit": "mm",
+      "statistic": "range",
+      "comparability": "within_family_only",
+      "comparability_rationale": "Size-specific SAPIEN 3 recommendation. Interpret only with its stated CT modality; it is not directly comparable to Evolut FX native annulus criteria.",
+      "method": {
+        "modality": "CT",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "Native annulus CT area-derived diameter as specified by the FDA IFU."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native annulus; CT sizing basis.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "sapien-3-23"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "locator": "PDF page 2, Table 2; native annulus CT area-derived diameter row for 23 mm THV",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "sapien-3-26-tee-diameter",
+      "configuration_id": "sapien-3-26",
+      "metric_id": "native-annulus-diameter-range",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "21–25",
+      "unit": "mm",
+      "statistic": "range",
+      "comparability": "within_family_only",
+      "comparability_rationale": "Size-specific SAPIEN 3 recommendation. Interpret only with its stated TEE modality; it is not directly comparable to Evolut FX native annulus criteria.",
+      "method": {
+        "modality": "TEE",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "Native annulus TEE diameter as specified by the FDA IFU."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native annulus; TEE sizing basis.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "sapien-3-26"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "locator": "PDF page 2, Table 2; native annulus TEE diameter row for 26 mm THV",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "sapien-3-26-ct-area",
+      "configuration_id": "sapien-3-26",
+      "metric_id": "sapien-ct-native-annulus-area",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "430–546",
+      "unit": "mm²",
+      "statistic": "range",
+      "comparability": "within_family_only",
+      "comparability_rationale": "Size-specific SAPIEN 3 recommendation. Interpret only with its stated CT modality; it is not directly comparable to Evolut FX native annulus criteria.",
+      "method": {
+        "modality": "CT",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "Native annulus CT area as specified by the FDA IFU."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native annulus; CT sizing basis.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "sapien-3-26"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "locator": "PDF page 2, Table 2; native annulus CT area row for 26 mm THV",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "sapien-3-26-ct-diameter",
+      "configuration_id": "sapien-3-26",
+      "metric_id": "sapien-ct-area-derived-annulus-diameter",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "23.4–26.4",
+      "unit": "mm",
+      "statistic": "range",
+      "comparability": "within_family_only",
+      "comparability_rationale": "Size-specific SAPIEN 3 recommendation. Interpret only with its stated CT modality; it is not directly comparable to Evolut FX native annulus criteria.",
+      "method": {
+        "modality": "CT",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "Native annulus CT area-derived diameter as specified by the FDA IFU."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native annulus; CT sizing basis.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "sapien-3-26"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "locator": "PDF page 2, Table 2; native annulus CT area-derived diameter row for 26 mm THV",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "sapien-3-29-tee-diameter",
+      "configuration_id": "sapien-3-29",
+      "metric_id": "native-annulus-diameter-range",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "24–28",
+      "unit": "mm",
+      "statistic": "range",
+      "comparability": "within_family_only",
+      "comparability_rationale": "Size-specific SAPIEN 3 recommendation. Interpret only with its stated TEE modality; it is not directly comparable to Evolut FX native annulus criteria.",
+      "method": {
+        "modality": "TEE",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "Native annulus TEE diameter as specified by the FDA IFU."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native annulus; TEE sizing basis.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "sapien-3-29"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "locator": "PDF page 2, Table 2; native annulus TEE diameter row for 29 mm THV",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "sapien-3-29-ct-area",
+      "configuration_id": "sapien-3-29",
+      "metric_id": "sapien-ct-native-annulus-area",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "540–683",
+      "unit": "mm²",
+      "statistic": "range",
+      "comparability": "within_family_only",
+      "comparability_rationale": "Size-specific SAPIEN 3 recommendation. Interpret only with its stated CT modality; it is not directly comparable to Evolut FX native annulus criteria.",
+      "method": {
+        "modality": "CT",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "Native annulus CT area as specified by the FDA IFU."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native annulus; CT sizing basis.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "sapien-3-29"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "locator": "PDF page 2, Table 2; native annulus CT area row for 29 mm THV",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "sapien-3-29-ct-diameter",
+      "configuration_id": "sapien-3-29",
+      "metric_id": "sapien-ct-area-derived-annulus-diameter",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "26.2–29.5",
+      "unit": "mm",
+      "statistic": "range",
+      "comparability": "within_family_only",
+      "comparability_rationale": "Size-specific SAPIEN 3 recommendation. Interpret only with its stated CT modality; it is not directly comparable to Evolut FX native annulus criteria.",
+      "method": {
+        "modality": "CT",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "Native annulus CT area-derived diameter as specified by the FDA IFU."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native annulus; CT sizing basis.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "sapien-3-29"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "locator": "PDF page 2, Table 2; native annulus CT area-derived diameter row for 29 mm THV",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "evolut-fx-23-native-annulus-diameter",
+      "configuration_id": "evolut-fx-23",
+      "metric_id": "native-annulus-diameter-range",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "18–20",
+      "unit": "mm",
+      "statistic": "range",
+      "comparability": "not_comparable",
+      "comparability_rationale": "Evolut FX IFU native-annulus range. Not directly comparable to SAPIEN TEE sizing recommendation; modality and label context differ. Excludes table footnote 17 mm exception for failed SAV/TAV.",
+      "method": {
+        "modality": "other",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "FDA Table 2 native aortic annulus diameter criterion; for valve-in-valve cases, table footnote directs use of failed valve measured inner diameter."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native aortic annulus; not failed SAV/TAV inner diameter.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "evolut-fx-23"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174D.pdf",
+        "locator": "PDF page 32, Table 2; native-annulus diameter row for EVOLUTFX-23",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "evolut-fx-23-delivery-capsule-od",
+      "configuration_id": "evolut-fx-23",
+      "metric_id": "evolut-fx-delivery-capsule-outer-diameter",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": 18,
+      "unit": "Fr",
+      "statistic": "individual",
+      "comparability": "not_comparable",
+      "comparability_rationale": "System-level delivery catheter profile applies to this size grouping. Not a minimum vessel diameter and not directly comparable to any SAPIEN value curated here.",
+      "method": {
+        "modality": "other",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "FDA specifies 18 Fr (6.0 mm) capsule outer diameter for catheter D-EVOLUTFX-2329; 23–29 mm valves share D-EVOLUTFX-2329, while 34 mm uses D-EVOLUTFX-34."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Compatible delivery catheter D-EVOLUTFX-2329; capsule outer diameter.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "evolut-fx-23"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174D.pdf",
+        "locator": "PDF page 33, Figure 2 (capsule OD and catheter model); PDF page 35, Table 3 (valve-to-catheter compatibility)",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "evolut-fx-26-native-annulus-diameter",
+      "configuration_id": "evolut-fx-26",
+      "metric_id": "native-annulus-diameter-range",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "20–23",
+      "unit": "mm",
+      "statistic": "range",
+      "comparability": "not_comparable",
+      "comparability_rationale": "Evolut FX IFU native-annulus range. Not directly comparable to SAPIEN TEE sizing recommendation; modality and label context differ. Excludes table footnote 17 mm exception for failed SAV/TAV.",
+      "method": {
+        "modality": "other",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "FDA Table 2 native aortic annulus diameter criterion; for valve-in-valve cases, table footnote directs use of failed valve measured inner diameter."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native aortic annulus; not failed SAV/TAV inner diameter.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "evolut-fx-26"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174D.pdf",
+        "locator": "PDF page 32, Table 2; native-annulus diameter row for EVOLUTFX-26",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "evolut-fx-26-delivery-capsule-od",
+      "configuration_id": "evolut-fx-26",
+      "metric_id": "evolut-fx-delivery-capsule-outer-diameter",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": 18,
+      "unit": "Fr",
+      "statistic": "individual",
+      "comparability": "not_comparable",
+      "comparability_rationale": "System-level delivery catheter profile applies to this size grouping. Not a minimum vessel diameter and not directly comparable to any SAPIEN value curated here.",
+      "method": {
+        "modality": "other",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "FDA specifies 18 Fr (6.0 mm) capsule outer diameter for catheter D-EVOLUTFX-2329; 23–29 mm valves share D-EVOLUTFX-2329, while 34 mm uses D-EVOLUTFX-34."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Compatible delivery catheter D-EVOLUTFX-2329; capsule outer diameter.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "evolut-fx-26"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174D.pdf",
+        "locator": "PDF page 33, Figure 2 (capsule OD and catheter model); PDF page 35, Table 3 (valve-to-catheter compatibility)",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "evolut-fx-29-native-annulus-diameter",
+      "configuration_id": "evolut-fx-29",
+      "metric_id": "native-annulus-diameter-range",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "23–26",
+      "unit": "mm",
+      "statistic": "range",
+      "comparability": "not_comparable",
+      "comparability_rationale": "Evolut FX IFU native-annulus range. Not directly comparable to SAPIEN TEE sizing recommendation; modality and label context differ. Excludes table footnote 17 mm exception for failed SAV/TAV.",
+      "method": {
+        "modality": "other",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "FDA Table 2 native aortic annulus diameter criterion; for valve-in-valve cases, table footnote directs use of failed valve measured inner diameter."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native aortic annulus; not failed SAV/TAV inner diameter.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "evolut-fx-29"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174D.pdf",
+        "locator": "PDF page 32, Table 2; native-annulus diameter row for EVOLUTFX-29",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "evolut-fx-29-delivery-capsule-od",
+      "configuration_id": "evolut-fx-29",
+      "metric_id": "evolut-fx-delivery-capsule-outer-diameter",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": 18,
+      "unit": "Fr",
+      "statistic": "individual",
+      "comparability": "not_comparable",
+      "comparability_rationale": "System-level delivery catheter profile applies to this size grouping. Not a minimum vessel diameter and not directly comparable to any SAPIEN value curated here.",
+      "method": {
+        "modality": "other",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "FDA specifies 18 Fr (6.0 mm) capsule outer diameter for catheter D-EVOLUTFX-2329; 23–29 mm valves share D-EVOLUTFX-2329, while 34 mm uses D-EVOLUTFX-34."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Compatible delivery catheter D-EVOLUTFX-2329; capsule outer diameter.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "evolut-fx-29"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174D.pdf",
+        "locator": "PDF page 33, Figure 2 (capsule OD and catheter model); PDF page 35, Table 3 (valve-to-catheter compatibility)",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "evolut-fx-34-native-annulus-diameter",
+      "configuration_id": "evolut-fx-34",
+      "metric_id": "native-annulus-diameter-range",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": "26–30",
+      "unit": "mm",
+      "statistic": "range",
+      "comparability": "not_comparable",
+      "comparability_rationale": "Evolut FX IFU native-annulus range. Not directly comparable to SAPIEN TEE sizing recommendation; modality and label context differ. Excludes table footnote 17 mm exception for failed SAV/TAV.",
+      "method": {
+        "modality": "other",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "FDA Table 2 native aortic annulus diameter criterion; for valve-in-valve cases, table footnote directs use of failed valve measured inner diameter."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Native aortic annulus; not failed SAV/TAV inner diameter.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "evolut-fx-34"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174D.pdf",
+        "locator": "PDF page 32, Table 2; native-annulus diameter row for EVOLUTFX-34",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    },
+    {
+      "observation_id": "evolut-fx-34-delivery-capsule-od",
+      "configuration_id": "evolut-fx-34",
+      "metric_id": "evolut-fx-delivery-capsule-outer-diameter",
+      "module": "core_device_card",
+      "measurement_status": "reported",
+      "value": 22,
+      "unit": "Fr",
+      "statistic": "individual",
+      "comparability": "not_comparable",
+      "comparability_rationale": "System-level delivery catheter profile applies to this size grouping. Not a minimum vessel diameter and not directly comparable to any SAPIEN value curated here.",
+      "method": {
+        "modality": "other",
+        "protocol_or_grading_standard": "FDA-labeled sizing/profile statement",
+        "conditions_summary": "FDA specifies 22 Fr (7.33 mm) capsule outer diameter for catheter D-EVOLUTFX-34; 23–29 mm valves share D-EVOLUTFX-2329, while 34 mm uses D-EVOLUTFX-34."
+      },
+      "timepoint": {
+        "label": "Pre-implant sizing or access planning",
+        "phase": "pre_deployment"
+      },
+      "context": {
+        "setting": "not_applicable",
+        "target_structure": "Aortic valve",
+        "anatomy_or_model": "Compatible delivery catheter D-EVOLUTFX-34; capsule outer diameter.",
+        "cohort_or_sample": "Labeled recommendation/specification, not a clinical cohort",
+        "configuration_context": "evolut-fx-34"
+      },
+      "provenance": {
+        "source_type": "FDA_label",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174D.pdf",
+        "locator": "PDF page 33, Figure 2 (capsule OD and catheter model); PDF page 35, Table 3 (valve-to-catheter compatibility)",
+        "extracted_on": "2026-09-22",
+        "review_status": "unreviewed"
+      }
+    }
+  ]
+}

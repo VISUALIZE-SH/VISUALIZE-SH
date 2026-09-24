@@ -38,7 +38,12 @@
     "resultStatus": { "enum": ["positive", "mixed", "negative", "ongoing", "terminated"] },
     "references": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "anyOf": [
+          { "type": "string", "format": "uri", "pattern": "^https://" },
+          { "type": "string", "pattern": "^PMID:[0-9]+$" }
+        ]
+      },
       "description": "URLs or 'PMID:########' citations."
     },
     "links": {
@@ -49,7 +54,7 @@
         "required": ["label", "url"],
         "properties": {
           "label": { "type": "string", "minLength": 1 },
-          "url": { "type": "string", "format": "uri" }
+          "url": { "type": "string", "format": "uri", "pattern": "^https://" }
         }
       },
       "description": "External info links shown in the detail panel. For trials: a source that summarizes the outcomes OTHER than ClinicalTrials.gov (journal article, TCTMD/medical news, society guideline). Each item is {label, url}."
@@ -71,7 +76,15 @@
       "properties": {
         "status": { "enum": ["draft", "curated"] },
         "lastUpdated": { "type": "string", "format": "date" },
-        "sources": { "type": "array", "items": { "type": "string" } },
+        "sources": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              { "type": "string", "format": "uri", "pattern": "^https://" },
+              { "type": "string", "pattern": "^PMID:[0-9]+$" }
+            ]
+          }
+        },
         "notes": { "type": "string" }
       }
     },
@@ -90,7 +103,7 @@
           "enum": ["fda-approval", "ce-mark", "availability-announcement", "trial-start"]
         },
         "precision": { "enum": ["day", "month", "year"] },
-        "source": { "type": "string", "format": "uri" },
+        "source": { "type": "string", "format": "uri", "pattern": "^https://" },
         "notes": { "type": "string" }
       }
     }

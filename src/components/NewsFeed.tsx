@@ -40,7 +40,7 @@ export default function NewsFeed({
   items,
   selectedItemId,
   onSelect,
-  emptyMessage = 'No recent news to show.',
+  emptyMessage = 'No recent news.',
   className = '',
 }: NewsFeedProps) {
   const classNames = ['news-feed', className].filter(Boolean).join(' ')

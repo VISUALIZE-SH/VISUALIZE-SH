@@ -36,6 +36,9 @@ and `latestNewsDate` in `graph.meta`.
   summary: "One or two concise sentences explaining why it matters."
   sourceName: "Publisher or organization"
   sourceUrl: "https://www.example.org/news/item"
+  additionalSources:
+    - label: "Corroborating journal or filing"
+      url: "https://www.example.org/second-source"
   topicTags: ["HCM", "clinical evidence"]
   relevantNodeIds: ["cond-hcm", "trial-example"]
 ```
@@ -45,6 +48,14 @@ Required fields are `id`, `publishedAt`, `title`, `summary`, `sourceName`,
 id; correct copy in place but never reuse an id for a different story. Sources
 must be canonical public HTTPS URLs. `relevantNodeIds` must be non-empty and every
 id must already exist in the entity files; the build fails if a target is missing.
+
+Summaries may use two or three original sentences (up to 650 characters) when
+needed to preserve the scope, result, and uncertainty found in historical email
+newsletters. Do not copy or lightly paraphrase extended publisher text. When the
+same development is reported by several sources, create one item, choose the most
+authoritative source as `sourceUrl`, and put up to five useful independent or
+primary corroborating citations in `additionalSources`; do not duplicate the
+primary URL there.
 
 For the weekly routine, append each selected item to this file and retain older
 items as feed history. Favor the original press release, regulator, journal, or
@@ -207,6 +218,7 @@ discriminated by `therapyType`.
 | `regulatoryDetail` | | free text specifics, e.g. `FDA approved 2022; REMS` |
 | `mechanism` | | how it works |
 | `description` | | optional extra context |
+| `materials` | devices only: ✓ | key permanent-implant materials; list of `{name, role, category, source, note?}` |
 | `links` | | list of `{label, url}` info links (see "Links" below) |
 | `timeline` | | placement date for first FDA/CE approval or verified availability announcement |
 | `pulse` | | 0–10 news-attention score (see above) |
@@ -214,6 +226,14 @@ discriminated by `therapyType`.
 
 Use `regulatoryStatus` for the broad bucket (it drives the filter) and put the
 nuance (dates, geographies, CRLs, breakthrough designation) in `regulatoryDetail`.
+
+For device `materials`, include only decision-useful implant materials: the
+frame/body alloy, biologic leaflet tissue, functional fabric or sealing skirt,
+surface coating, sensor housing, and anchoring material. Exclude delivery-system
+plastics, sutures, sterilization residuals, trace alloy constituents, and other
+incidental materials. Use one of `frame`, `leaflet`, `fabric`, `coating`, `sensor`,
+or `anchor` for `category`, and attach a direct public HTTPS source to every item.
+If a material applies only to one model in a family record, say so in `note`.
 
 ---
 
@@ -355,3 +375,58 @@ A green run prints node/edge/draft counts. The build must be green before commit
    can explain the assumption in `timeline.notes`.
 8. Run `npm run build:data` and resolve all errors before finishing.
 9. Summarize what you added/changed (ids + why) for the human curator.
+
+---
+
+## Versioned intelligence (`data/intelligence/pilot.yaml`)
+
+The versioned intelligence pilot is a source-linked evidence layer alongside the
+retained graph. `npm run build:intelligence` validates the YAML against
+`schema/intelligence.schema.json` and writes the static payload to
+`public/intelligence.json`; the app reads that payload for Atlas and Data views.
+The local newsletter preview reads the compiled payload when it is present and
+falls back to the authored YAML only for local validation and review.
+
+The companion `data/intelligence/comparative-pilot.yaml` supplies exact-size
+device configurations, metric definitions, and source-located observations for
+the Data comparison table. Its shape follows
+`schema/comparative-observation.schema.json`. Each configuration identifies an
+exact `product_version_id`; build validation checks the linked family and
+generation. Each observation retains its method, source locator, extraction
+date, review status, and comparability rationale. Do not copy a family or
+successor value into an uncurated size. See
+[the comparative data model](../docs/COMPARATIVE_DATA_MODEL.md) for authoring
+rules and the initial FDA-label scope.
+
+The top-level collections are:
+
+| Collection | Purpose |
+|---|---|
+| `sources` | Publisher records and stable URLs used by source references. |
+| `families`, `versions` | Product identity, generation context, and version-level links. |
+| `claims` | Typed technical or operating assertions with basis, availability, and limits. |
+| `decisions`, `indications` | Jurisdiction-specific decisions and the populations or uses they cover. |
+| `trials`, `trialSnapshots`, `cohorts` | Study identity, dated registry state, and analysis populations. |
+| `endpoints`, `readouts`, `outcomes` | Endpoint definitions, dated readouts, and cohort-by-arm results. |
+| `lineage`, `events` | Version relationships and dated design, indication, or evidence changes. |
+
+Every evidence record carries `reviewStatus` and `sourceRefs`. A `draft` record
+is reviewable context and is excluded from a production weekly issue by default.
+Promotion requires human source review and resolved locators; a URL alone does
+not establish that a claim is clinically complete. Record IDs are stable,
+lower-kebab-case identifiers. The legacy graph crosswalk is explicit through
+`entityIds` and `conditionIds`; it does not silently rename or delete legacy
+records.
+
+Product versions are distinct from product families, and trial records are
+distinct from readouts and analysis cohorts. A readout with an empty
+`versionIds` list and a populated `familyIds` list is family-level context with
+an unresolved exact build. Consumers must preserve that limitation rather than
+infer a generation. Dates retain their declared precision. Outcomes preserve
+the cohort, arm, endpoint, timepoint, analysis population, denominator, effect
+measure, confidence interval level and sidedness, p-value qualifier, and any
+explicit missingness or limitation.
+
+For the full workflow, see [the evidence pipeline](../docs/EVIDENCE_PIPELINE.md),
+[local implementation status](../docs/LOCAL_IMPLEMENTATION_STATUS.md), and
+[local newsletter readiness](../docs/NEWSLETTER_LOCAL_READINESS.md).

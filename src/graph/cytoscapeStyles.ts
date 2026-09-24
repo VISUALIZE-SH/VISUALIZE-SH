@@ -9,6 +9,7 @@ import { GROUP_META } from './palette'
 
 interface StylesheetOptions {
   accessibilityMode?: boolean
+  darkMode?: boolean
 }
 
 function scaled(value: number, scale: number): number {
@@ -16,7 +17,14 @@ function scaled(value: number, scale: number): number {
 }
 
 export function buildStylesheet(options: StylesheetOptions = {}): any[] {
-  const fontScale = options.accessibilityMode ? 2 : 1
+  // Keep graph-rendered labels in step with the 20% larger DOM typography.
+  // Accessibility mode remains 50% larger than the regular graph labels.
+  const fontScale = options.accessibilityMode ? 2.7 : 1.8
+  const ink = options.darkMode ? '#f8f3fa' : '#110318'
+  const outline = options.darkMode ? '#09070c' : '#ffffff'
+  const edge = options.darkMode ? '#665b70' : '#d2d3db'
+  const axis = options.darkMode ? '#584b63' : '#d6cee0'
+  const muted = options.darkMode ? '#b6aabd' : '#777777'
   const styles: any[] = [
     {
       selector: 'node',
@@ -32,7 +40,7 @@ export function buildStylesheet(options: StylesheetOptions = {}): any[] {
         'font-size': `mapData(pulse, 0, 10, ${scaled(9, fontScale)}, ${scaled(26, fontScale)})`,
         'font-family':
           '"Source Sans 3", "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif',
-        color: '#110318',
+        color: ink,
         'text-wrap': 'wrap',
         'text-max-width': `${scaled(92, fontScale)}px`,
         'text-valign': 'bottom',
@@ -41,8 +49,8 @@ export function buildStylesheet(options: StylesheetOptions = {}): any[] {
         width: 'mapData(degree, 1, 12, 24, 60)',
         height: 'mapData(degree, 1, 12, 24, 60)',
         'border-width': 1,
-        'border-color': 'rgba(0,0,0,0.18)',
-        'text-outline-color': '#ffffff',
+        'border-color': options.darkMode ? 'rgba(255,255,255,0.38)' : 'rgba(0,0,0,0.18)',
+        'text-outline-color': outline,
         'text-outline-width': scaled(2, fontScale),
         // Hide labels that would render smaller than this many px (declutter on
         // zoom-out). High-pulse labels survive longer because their base is larger.
@@ -59,8 +67,8 @@ export function buildStylesheet(options: StylesheetOptions = {}): any[] {
       style: {
         width: 1.4,
         'curve-style': 'bezier',
-        'line-color': '#d2d3db',
-        'target-arrow-color': '#d2d3db',
+        'line-color': edge,
+        'target-arrow-color': edge,
         'target-arrow-shape': 'triangle',
         'arrow-scale': 0.7,
         opacity: 0.7,
@@ -72,13 +80,13 @@ export function buildStylesheet(options: StylesheetOptions = {}): any[] {
         width: 2,
         height: 26,
         shape: 'rectangle',
-        'background-color': '#d6cee0',
+        'background-color': axis,
         'border-width': 0,
         label: 'data(label)',
         'font-size': scaled(24, fontScale),
         'font-weight': 600,
-        color: '#777777',
-        'text-outline-color': '#ffffff',
+        color: muted,
+        'text-outline-color': outline,
         'text-outline-width': scaled(3, fontScale),
         'text-valign': 'bottom',
         'text-halign': 'center',
@@ -93,7 +101,7 @@ export function buildStylesheet(options: StylesheetOptions = {}): any[] {
       style: {
         width: 1.2,
         'curve-style': 'straight',
-        'line-color': '#d6cee0',
+        'line-color': axis,
         'target-arrow-shape': 'none',
         opacity: 0.95,
         'z-index': 0,
@@ -116,7 +124,7 @@ export function buildStylesheet(options: StylesheetOptions = {}): any[] {
       style: {
         'border-width': 2,
         'border-style': 'dashed',
-        'border-color': '#110318',
+        'border-color': ink,
       },
     },
     {
@@ -129,7 +137,7 @@ export function buildStylesheet(options: StylesheetOptions = {}): any[] {
       selector: 'node.sel',
       style: {
         'border-width': 3,
-        'border-color': '#110318',
+        'border-color': ink,
         'font-weight': 'bold',
         'text-outline-width': 2.5,
         'min-zoomed-font-size': 0,
@@ -152,8 +160,8 @@ export function buildStylesheet(options: StylesheetOptions = {}): any[] {
     {
       selector: 'edge.hl',
       style: {
-        'line-color': '#5b5d66',
-        'target-arrow-color': '#5b5d66',
+        'line-color': options.darkMode ? '#c8b9d0' : '#5b5d66',
+        'target-arrow-color': options.darkMode ? '#c8b9d0' : '#5b5d66',
         width: 2,
         opacity: 1,
       },

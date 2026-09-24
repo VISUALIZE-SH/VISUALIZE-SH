@@ -37,6 +37,25 @@
     },
     "mechanism": { "type": "string" },
     "description": { "type": "string" },
+    "materials": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "role", "category", "source"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "role": { "type": "string", "minLength": 1 },
+          "category": {
+            "enum": ["frame", "leaflet", "fabric", "coating", "sensor", "anchor"]
+          },
+          "source": { "type": "string", "format": "uri", "pattern": "^https://" },
+          "note": { "type": "string", "minLength": 1 }
+        }
+      },
+      "description": "Clinically meaningful permanent-implant materials only; excludes delivery-system and incidental materials."
+    },
     "links": {
       "type": "array",
       "items": {
@@ -45,7 +64,7 @@
         "required": ["label", "url"],
         "properties": {
           "label": { "type": "string", "minLength": 1 },
-          "url": { "type": "string", "format": "uri" }
+          "url": { "type": "string", "format": "uri", "pattern": "^https://" }
         }
       },
       "description": "External info links shown in the detail panel. For devices: the product page on the maker's site (preferred), else a reputable news/journal/third-party clinical source. Each item is {label, url}."
@@ -59,6 +78,15 @@
     },
     "curation": { "$ref": "#/definitions/curation" }
   },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "therapyType": { "const": "device" } },
+        "required": ["therapyType"]
+      },
+      "then": { "required": ["materials"] }
+    }
+  ],
   "definitions": {
     "curation": {
       "type": "object",
@@ -67,7 +95,15 @@
       "properties": {
         "status": { "enum": ["draft", "curated"] },
         "lastUpdated": { "type": "string", "format": "date" },
-        "sources": { "type": "array", "items": { "type": "string" } },
+        "sources": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              { "type": "string", "format": "uri", "pattern": "^https://" },
+              { "type": "string", "pattern": "^PMID:[0-9]+$" }
+            ]
+          }
+        },
         "notes": { "type": "string" }
       }
     },
@@ -86,7 +122,7 @@
           "enum": ["fda-approval", "ce-mark", "availability-announcement", "trial-start"]
         },
         "precision": { "enum": ["day", "month", "year"] },
-        "source": { "type": "string", "format": "uri" },
+        "source": { "type": "string", "format": "uri", "pattern": "^https://" },
         "notes": { "type": "string" }
       }
     }

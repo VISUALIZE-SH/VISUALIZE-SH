@@ -1,0 +1,368 @@
+# Device figures for Data thumbnails and Figures tab. FDA documents are public;
+# publication figures are used only under an explicit CC BY license named in the caption.
+sources:
+- id: src-mitraclip-s028-labeling
+  title: MitraClip NT / MitraClip NTR-XTR Clip Delivery System Instructions for Use (PMA P100009/S028 labeling; EL2106481
+    + EL2120710)
+  url: https://www.accessdata.fda.gov/cdrh_docs/pdf10/P100009S028D.pdf
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2019-03-14'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P100009/S028
+- id: src-reducer-review-2016
+  title: 'Percutaneous Device to Narrow the Coronary Sinus: Shifting Paradigm in the Treatment of Refractory Angina? A Review
+    of the Literature'
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5073123/
+  kind: publication
+  publisher: Frontiers in Cardiovascular Medicine
+  publishedAt:
+    value: '2016'
+    precision: year
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: doi:10.3389/fcvm.2016.00042
+media:
+- id: media-sapien-ultra-resilia-device
+  versionIds:
+  - ver-sapien-ultra-resilia
+  panel: design
+  title: SAPIEN 3 Ultra RESILIA valve
+  caption: FDA figure of the SAPIEN 3 Ultra platform valve frame (model 9750TFX) with its inner and outer PET skirts — the
+    shared frame the RESILIA-tissue configuration is built on; RESILIA changes only the tissue treatment, not the frame shown
+    here.
+  alt: Line-drawing FDA figure of the SAPIEN 3 Ultra balloon-expandable valve frame with a visible outer sealing skirt at
+    its base.
+  assetPath: /evidence/fda/sapien-ultra-resilia.png
+  page: 100
+  figure: Figure 1
+  sourceRefs:
+  - sourceId: src-sapien-ifu-s085
+    locator: PDF page 100 of 221 (SAPIEN 3 Ultra IFU section, model 9750TFX), Figure 1
+  reviewStatus: draft
+- id: media-trilogy-device
+  versionIds:
+  - ver-trilogy
+  panel: design
+  title: Trilogy transcatheter heart valve
+  caption: Official FDA figure of the Trilogy THV self-expanding nitinol frame with its three leaflet-capturing Locators and
+    flared sealing ring.
+  alt: FDA figure of the self-expanding Trilogy transcatheter aortic valve frame with three anchoring Locator arms extending
+    below the sealing ring.
+  assetPath: /evidence/fda/trilogy.png
+  page: 2
+  figure: Figure 1
+  sourceRefs:
+  - sourceId: src-trilogy-ssed
+    locator: PDF page 2, Figure 1; Section V Device Description
+  reviewStatus: draft
+- id: media-melody-device
+  versionIds:
+  - ver-melody
+  panel: design
+  title: Melody transcatheter pulmonary valve
+  caption: Official FDA figure of the Melody TPV, a bovine jugular vein valve sutured into a balloon-expandable platinum-iridium
+    frame.
+  alt: FDA figure of the Melody transcatheter pulmonary valve, a bovine jugular vein valve inside a balloon-expandable platinum-iridium
+    stent frame.
+  assetPath: /evidence/fda/melody.png
+  page: 2
+  figure: Figure 1
+  sourceRefs:
+  - sourceId: src-melody-ssed
+    locator: PDF page 2, Figure 1; Section V Device Description
+  reviewStatus: draft
+- id: media-harmony-device
+  versionIds:
+  - ver-harmony
+  panel: design
+  title: Harmony transcatheter pulmonary valve
+  caption: Official FDA figure showing both Harmony TPV sizes (TPV 22, TPV 25) — self-expanding nitinol frames with a knitted
+    polyester graft and porcine pericardial valve.
+  alt: FDA figure of the two Harmony transcatheter pulmonary valve sizes, TPV 22 and TPV 25, shown side by side.
+  assetPath: /evidence/fda/harmony.png
+  page: 2
+  figure: Figure 1
+  sourceRefs:
+  - sourceId: src-harmony-ssed
+    locator: PDF page 2, Figure 1; Section V Device Description
+  reviewStatus: draft
+- id: media-mitraclip-nt-device
+  versionIds:
+  - ver-mitraclip-nt
+  panel: design
+  title: MitraClip NT device dimensions
+  caption: FDA labeling figure showing the MitraClip NT implant photographed in five configurations (closed length, 120°/180°
+    grasping width, arm width, arm length) with millimeter dimension callouts.
+  alt: FDA figure with five photographs of the MitraClip NT clip in different open and closed positions, each annotated with
+    millimeter dimension arrows.
+  assetPath: /evidence/fda/mitraclip-nt.png
+  page: 11
+  figure: Figure 10.1
+  sourceRefs:
+  - sourceId: src-mitraclip-s028-labeling
+    locator: 'PDF page 11 of 172 (MitraClip NT IFU EL2106481, its own p.11 of 85), Figure 10.1: MitraClip NT Device Dimensions'
+  reviewStatus: draft
+- id: media-mitraclip-ntr-xtr-device
+  versionIds:
+  - ver-mitraclip-ntr-xtr
+  panel: design
+  title: MitraClip XTR implant dimensions
+  caption: FDA labeling figure showing the MitraClip XTR (extended-arm) implant photographed in five configurations with millimeter
+    dimension callouts; its 18 mm/22 mm arm dimensions are larger than the standard NTR/NT clip.
+  alt: FDA figure with five photographs of the MitraClip XTR clip in different open and closed positions, each annotated with
+    millimeter dimension arrows.
+  assetPath: /evidence/fda/mitraclip-ntr-xtr.png
+  page: 96
+  figure: Figure 10.2
+  sourceRefs:
+  - sourceId: src-mitraclip-s028-labeling
+    locator: 'PDF page 96 of 172 (MitraClip NTR/XTR IFU EL2120710, its own p.11 of 87), Figure 10.2: MitraClip XTR Implant
+      Dimensions'
+  reviewStatus: draft
+- id: media-pascal-precision-device
+  versionIds:
+  - ver-pascal-precision
+  panel: design
+  title: PASCAL implant
+  caption: Official FDA figure of the PASCAL implant, showing its central spacer flanked by two independently actuated clasp/paddle
+    arms.
+  alt: Line-drawing FDA figure of the PASCAL implant with two clasps and paddles flanking a central spacer.
+  assetPath: /evidence/fda/pascal-precision.png
+  page: 3
+  figure: Figure 2
+  sourceRefs:
+  - sourceId: src-pascal-ssed
+    locator: PDF page 3, Figure 2 ("PASCAL" panel); Section V Device Description
+  reviewStatus: draft
+- id: media-triclip-g4-implant
+  versionIds:
+  - ver-triclip-g4
+  panel: design
+  title: TriClip G4 implant close-up
+  caption: Official FDA labeling figure showing the TriClip G4 clip implant alone across six positions, from fully closed
+    to fully inverted, without the rest of the delivery system.
+  alt: FDA figure with six close-up photographs of the TriClip G4 clip implant at different opening angles, from fully closed
+    to fully inverted.
+  assetPath: /evidence/fda/triclip-g4-implant.png
+  page: 4
+  figure: Figure 1
+  sourceRefs:
+  - sourceId: src-triclip-ifu
+    locator: 'PDF page 4, Figure 1: TriClip G4 Implant Positions'
+  reviewStatus: draft
+- id: media-tendyne-device
+  versionIds:
+  - ver-tendyne
+  panel: design
+  title: Tendyne mitral valve and apical pad
+  caption: Official FDA figure of the Tendyne Mitral Valve (porcine pericardial leaflets, dual-frame design) connected by
+    its tether to the epicardial Apical Pad; cropped from the full multi-component system figure.
+  alt: FDA figure of the Tendyne bioprosthetic mitral valve connected by a tether to its apical pad.
+  assetPath: /evidence/fda/tendyne.png
+  page: 2
+  figure: Figure 1
+  sourceRefs:
+  - sourceId: src-tendyne-ssed
+    locator: PDF page 2, Figure 1 (valve/apical-pad panel); Section V Device Description
+  reviewStatus: draft
+- id: media-sapien-m3-device
+  versionIds:
+  - ver-sapien-m3
+  panel: design
+  title: SAPIEN M3 transcatheter heart valve
+  caption: Official FDA figure of the SAPIEN M3 balloon-expandable valve frame with its full-frame outer skirt.
+  alt: Line-drawing FDA figure of the SAPIEN M3 valve frame with a honeycomb commissure pattern and full-length outer skirt.
+  assetPath: /evidence/fda/sapien-m3.png
+  page: 2
+  figure: Figure 1
+  sourceRefs:
+  - sourceId: src-sapienm3-ssed
+    locator: PDF page 2, Figure 1; Section V Device Description
+  reviewStatus: draft
+- id: media-evoque-device
+  versionIds:
+  - ver-evoque
+  panel: design
+  title: EVOQUE valve
+  caption: Official FDA figure of the EVOQUE self-expanding nitinol valve frame with its leaflet-anchoring arms; cropped from
+    the full multi-component system figure.
+  alt: FDA figure of the EVOQUE tricuspid valve replacement frame with anchoring arms that engage the native leaflets.
+  assetPath: /evidence/fda/evoque.png
+  page: 2
+  figure: Figure 1
+  sourceRefs:
+  - sourceId: src-evoque-ssed
+    locator: PDF page 2, Figure 1 (valve panel); Section V Device Description
+  reviewStatus: draft
+- id: media-watchman-flx-device
+  versionIds:
+  - ver-watchman-flx
+  panel: design
+  title: WATCHMAN FLX closure device
+  caption: FDA SSED figure of the WATCHMAN FLX Closure Device, showing the dual-row nitinol frame closed at both ends with
+    its PET fabric cap.
+  alt: Grayscale product photo of a self-expanding nitinol basket implant with a fully meshed, rounded dome shape and small
+    fixation anchors around its base.
+  assetPath: /evidence/fda/watchman-flx.png
+  page: 4
+  figure: Figure 3
+  sourceRefs:
+  - sourceId: src-watchman-flx-s035-ssed
+    locator: PDF page 4, Figure 3; Device Description
+  reviewStatus: draft
+- id: media-watchman-flx-pro-device
+  versionIds:
+  - ver-watchman-flx-pro
+  panel: design
+  title: WATCHMAN FLX Pro closure device
+  caption: FDA SSED figure of the WATCHMAN FLX Pro Device, distinguished from the original FLX by an updated fixation-anchor
+    and fabric pattern at the device base.
+  alt: Grayscale product photo of a nitinol basket implant with a scalloped, petal-shaped mesh pattern around its lower edge.
+  assetPath: /evidence/fda/watchman-flx-pro.png
+  page: 4
+  figure: Figure 1b
+  sourceRefs:
+  - sourceId: src-watchman-flx-pro-s074-ssed
+    locator: PDF page 4, Figure 1b; Device Description
+  reviewStatus: draft
+- id: media-amulet-device
+  versionIds:
+  - ver-amulet
+  panel: design
+  title: Amplatzer Amulet occluder
+  caption: FDA SSED figure of the Amplatzer Amulet LAA Occluder, showing the polyester-covered lobe and disc joined by a central
+    waist, mounted on the delivery cable.
+  alt: Blue mesh, hat-shaped left atrial appendage occluder with a domed lobe, a wider brim-like disc, and a metal delivery
+    cable extending from its center.
+  assetPath: /evidence/fda/amulet.png
+  page: 2
+  figure: Figure 1
+  sourceRefs:
+  - sourceId: src-amulet-ssed
+    locator: PDF page 2, Figure 1; Device Description
+  reviewStatus: draft
+- id: media-amplatzer-pfo-device
+  versionIds:
+  - ver-amplatzer-pfo
+  panel: design
+  title: Amplatzer PFO Occluder
+  caption: FDA SSED figure of the Amplatzer PFO Occluder, showing its two self-expanding discs linked by a short connecting
+    waist.
+  alt: Black-and-white line drawing of a double-disc wire-mesh occluder joined by a narrow central waist, mounted on a short
+    delivery shaft.
+  assetPath: /evidence/fda/amplatzer-pfo.png
+  page: 2
+  figure: Figure 1
+  sourceRefs:
+  - sourceId: src-amplatzer-pfo-ssed
+    locator: PDF page 2, Figure 1; Device Description
+  reviewStatus: draft
+- id: media-amplatzer-asd-device
+  versionIds:
+  - ver-amplatzer-asd
+  panel: design
+  title: Amplatzer Septal Occluder (ASO)
+  caption: FDA SSED figure of the Amplatzer Septal Occluder, a self-expanding double-disc device with callouts for the left-
+    and right-atrial disc diameters and connecting waist.
+  alt: Technical line drawing of a double-disc wire-mesh ASD occluder with dimension arrows labeled A, B and C.
+  assetPath: /evidence/fda/amplatzer-asd.png
+  page: 4
+  figure: Figure 1
+  sourceRefs:
+  - sourceId: src-amplatzer-aso-ssed
+    locator: PDF page 4 (device diagram; the shared Figure 1 caption is printed on PDF page 5); Device Description
+  reviewStatus: draft
+- id: media-gore-cardioform-septal-device
+  versionIds:
+  - ver-gore-cardioform-septal
+  panel: design
+  title: GORE CARDIOFORM Septal Occluder
+  caption: FDA SSED figure of the GORE CARDIOFORM Septal Occluder (right atrial view), a platinum-filled Nitinol/ePTFE double-disc
+    occluder with its leaflet, eyelet and lock loop labeled.
+  alt: Line drawing of a circular, petal-patterned fabric-covered occluder disc with labeled leader lines for occluder leaflet,
+    right atrial eyelet, lock loop and platinum-filled nitinol wire frame.
+  assetPath: /evidence/fda/gore-cardioform-septal.png
+  page: 2
+  figure: Figure 1b
+  sourceRefs:
+  - sourceId: src-gore-cardioform-septal-ssed
+    locator: PDF page 2, Figure 1(b) Right atrial view; Device Description
+  reviewStatus: draft
+- id: media-cardiomems-device
+  versionIds:
+  - ver-cardiomems
+  panel: design
+  title: CardioMEMS HF System sensor
+  caption: FDA SSED photo of the CardioMEMS PA Sensor, a battery-free fused-silica capsule with coiled tether wires, shown
+    with its labeled 12 mm x 3 mm dimensions.
+  alt: Photo of a small translucent capsule sensor with looped wire tethers at both ends, resting on a gray surface with handwritten
+    millimeter measurement arrows.
+  assetPath: /evidence/fda/cardiomems.png
+  page: 3
+  figure: Figure 1
+  sourceRefs:
+  - sourceId: src-cardiomems-ssed-orig
+    locator: PDF page 3, Figure 1; Device Description
+  reviewStatus: draft
+- id: media-cordella-device
+  versionIds:
+  - ver-cordella
+  panel: design
+  title: Cordella PA Sensor
+  caption: FDA SSED photo of the Cordella PA Sensor (panel A), a battery-free capacitive pressure sensor with nitinol anchor
+    loops, shown next to a US dime for scale.
+  alt: Photo of a small glass-bodied pressure sensor with two looped wire anchors, positioned next to a coin for size reference,
+    on a white background.
+  assetPath: /evidence/fda/cordella.png
+  page: 3
+  figure: Figure 2 (panel A)
+  sourceRefs:
+  - sourceId: src-cordella-ssed
+    locator: PDF page 3, Figure 2 panel A; Device Description
+  reviewStatus: draft
+- id: media-lambre-device
+  versionIds:
+  - ver-lambre
+  panel: design
+  title: LAmbre LAA occluder
+  caption: Photo of the explanted LAmbre device from a CC BY-licensed Brazilian multicenter case series, showing the umbrella
+    and cover disc joined by a central pin.
+  alt: Photo of a gold umbrella-shaped wire frame joined to a smaller white fabric-covered disc, on a white background.
+  assetPath: /evidence/publications/lambre.png
+  figure: Figure 1 (left panel)
+  sourceRefs:
+  - sourceId: src-lambre-study
+    locator: Figure 1, left panel; device description; CC BY license
+  reviewStatus: draft
+- id: media-coronary-sinus-reducer-device
+  versionIds:
+  - ver-coronary-sinus-reducer
+  panel: design
+  title: Coronary Sinus Reducer
+  caption: Photo of the expanded, balloon-expandable Coronary Sinus Reducer stent from a 2016 CC BY-licensed literature review
+    (Frontiers in Cardiovascular Medicine).
+  alt: Photo of a stainless-steel hourglass-shaped mesh stent with a narrow central waist, on a white background.
+  assetPath: /evidence/publications/coronary-sinus-reducer.png
+  figure: Figure 1 (upper panel, expanded device)
+  sourceRefs:
+  - sourceId: src-reducer-review-2016
+    locator: Figure 1, upper panel (expanded device); CC BY 4.0
+  reviewStatus: draft
+- id: media-corvia-shunt-device
+  versionIds:
+  - ver-corvia-shunt
+  panel: design
+  title: Corvia Atrial Shunt device
+  caption: Photo of the Corvia Interatrial Shunt Device (IASD) from a CC BY-licensed 2019 Frontiers review, showing the self-expanding
+    nitinol double-disc cage.
+  alt: Photo of a symmetrical wire-frame double-disc device resembling a small round cage, on a light gray background.
+  assetPath: /evidence/publications/corvia-shunt.png
+  figure: Figure 4 (panel A)
+  sourceRefs:
+  - sourceId: src-frontiers-corvia-2019
+    locator: PMC mirror (PMC6759808), Figure 4 panel A; CC BY 4.0
+  reviewStatus: draft

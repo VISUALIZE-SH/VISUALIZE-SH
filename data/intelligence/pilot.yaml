@@ -1,0 +1,2071 @@
+# Human-review pilot. Authored from the source register below; no clinical claim is marked reviewed.
+schemaVersion: 1
+updatedAt: '2026-09-22'
+coverage:
+  title: Evidence pilot
+  description: Draft, source-linked records for review. Not a complete label, IFU, or safety inventory.
+sources:
+  - id: src-sapien-original
+    title: SAPIEN 3 original PMA decision
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-20'
+    access: public
+  - id: src-sapien-s010
+    title: SAPIEN 3 intermediate-risk indication supplement
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031S010
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-20'
+    access: public
+  - id: src-sapien-s141
+    title: SAPIEN 3 Ultra RESILIA product-change supplement
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031S141
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-20'
+    access: public
+  - id: src-sapien-ssed
+    title: SAPIEN 3 original Summary of Safety and Effectiveness
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031B.pdf
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-20'
+    access: public
+  - id: src-sapien-ifu-s085
+    title: SAPIEN 3 instructions for use, PMA supplement S085
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-22'
+    access: public
+  - id: src-mitraclip-s028
+    title: MitraClip secondary MR indication supplement
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S028
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-20'
+    access: public
+  - id: src-watchman-s043
+    title: WATCHMAN DAPT labeling supplement
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S043
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-20'
+    access: public
+  - id: src-watchman-s074
+    title: WATCHMAN FLX / FLX Pro post-ablation indication
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S074
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-20'
+    access: public
+  - id: src-evolut-ssed
+    title: Evolut PRO+, FX and FX+ redo-TAVR SSED
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174B.pdf
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-20'
+    access: public
+  - id: src-evolut-ifu
+    title: Evolut PRO+, FX and FX+ instructions for use
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174D.pdf
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-22'
+    access: public
+  - id: src-evolut-order
+    title: Evolut redo-TAVR approval order
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174A.pdf
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-20'
+    access: public
+  - id: src-triclip-ssed
+    title: TriClip G4 Summary of Safety and Effectiveness
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-20'
+    access: public
+  - id: src-feops
+    title: FEops HEARTguide K214066 clearance and summary
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf21/K214066.pdf
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-20'
+    access: public
+  - id: src-dasi
+    title: PrecisionTAVI K223809 clearance and summary
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223809.pdf
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-20'
+    access: public
+  - id: src-triluminate-350
+    title: TRILUMINATE primary 350-patient report
+    url: https://pubmed.ncbi.nlm.nih.gov/36876753/
+    kind: publication
+    publisher: New England Journal of Medicine
+    retrievedAt: '2026-09-20'
+    access: public
+    publishedAt:
+      value: '2023-03-04'
+      precision: day
+  - id: src-triluminate-572
+    title: 'TRILUMINATE full randomized cohort: one year'
+    url: https://pubmed.ncbi.nlm.nih.gov/39471883/
+    kind: publication
+    publisher: Journal of the American College of Cardiology
+    retrievedAt: '2026-09-20'
+    access: public
+    publishedAt:
+      value: '2024-10-28'
+      precision: day
+  - id: src-triluminate-2y
+    title: 'TRILUMINATE randomized cohort: two years'
+    url: https://pubmed.ncbi.nlm.nih.gov/40159089/
+    kind: publication
+    publisher: Circulation
+    retrievedAt: '2026-09-20'
+    access: public
+    publishedAt:
+      value: '2025-03-30'
+      precision: day
+  - id: src-predict
+    title: PREDICT-LAA randomized computational planning trial
+    url: >-
+      https://research.dial.uclouvain.be/server/api/core/bitstreams/12ed8680-9648-4c6b-a0ab-d839c6e23965/content
+    kind: publication
+    publisher: 'JACC: Cardiovascular Interventions / UCLouvain repository'
+    retrievedAt: '2026-09-20'
+    access: public
+    publishedAt:
+      value: '2023-03-27'
+      precision: day
+  - id: src-vital
+    title: VITAL-HF randomized digital care trial
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13050095/
+    kind: publication
+    publisher: The Lancet Regional Health – Americas
+    retrievedAt: '2026-09-20'
+    access: public
+    publishedAt:
+      value: '2026-03-25'
+      precision: day
+  - id: src-hello
+    title: Hello Heart mobile blood-pressure management cohort
+    url: https://pubmed.ncbi.nlm.nih.gov/34652447/
+    kind: publication
+    publisher: JAMA Network Open
+    retrievedAt: '2026-09-20'
+    access: public
+    publishedAt:
+      value: '2021-10-15'
+      precision: day
+families:
+  - id: family-sapien
+    name: SAPIEN
+    manufacturer: Edwards Lifesciences
+    entityIds:
+      - dev-sapien-3
+    conditionIds:
+      - cond-as
+    description: Separate native-valve indication changes from valve design and tissue changes.
+  - id: family-evolut
+    name: Evolut
+    manufacturer: Medtronic
+    entityIds:
+      - dev-evolut
+    conditionIds:
+      - cond-as
+    description: Frame access features and redo-TAVR labeling are distinct developments.
+  - id: family-mitraclip
+    name: MitraClip
+    manufacturer: Abbott
+    entityIds:
+      - dev-mitraclip
+    conditionIds:
+      - cond-mr
+    description: One indication decision can cover more than one delivery-system generation.
+  - id: family-watchman
+    name: WATCHMAN
+    manufacturer: Boston Scientific
+    entityIds:
+      - dev-watchman-flx
+    conditionIds:
+      - cond-af
+    description: Track implant generations, post-implant drug regimens, and post-ablation eligibility separately.
+  - id: family-triclip
+    name: TriClip
+    manufacturer: Abbott
+    entityIds:
+      - dev-triclip
+    conditionIds:
+      - cond-tr
+    description: Trial family mapping does not establish use of the currently labeled generation.
+  - id: family-feops
+    name: FEops HEARTguide
+    manufacturer: FEops
+    entityIds: []
+    conditionIds:
+      - cond-af
+    description: Patient-specific simulation for LAA occluder planning.
+  - id: family-dasi
+    name: PrecisionTAVI
+    manufacturer: DASI Simulations
+    entityIds: []
+    conditionIds:
+      - cond-as
+    description: Patient-specific simulation for aortic valve planning.
+  - id: family-story
+    name: Story Health
+    manufacturer: Story Health
+    entityIds:
+      - dig-story-health
+    conditionIds:
+      - cond-hfref
+    description: A clinician and coach supported care program, with software as one component.
+  - id: family-hello
+    name: Hello Heart
+    manufacturer: Hello Heart
+    entityIds:
+      - dig-hello-heart
+    conditionIds: []
+    description: A blood-pressure management program; no structural-heart efficacy attribution.
+versions:
+  - id: ver-sapien-3
+    familyId: family-sapien
+    name: SAPIEN 3
+    kind: device
+    clinicalRole: treats
+    summary: Original model identity retained across the 2015 and 2016 indication records.
+    sourceRefs:
+      - sourceId: src-sapien-original
+        locator: Device and approval-order fields
+    reviewStatus: draft
+    model: 9600TFX
+  - id: ver-sapien-ultra-resilia
+    familyId: family-sapien
+    name: SAPIEN 3 Ultra RESILIA
+    kind: device
+    clinicalRole: treats
+    summary: A separately named product in S141. The short decision record alone is not a detailed design disclosure.
+    sourceRefs:
+      - sourceId: src-sapien-s141
+        locator: Device, supplement reason and approval-order statement
+    reviewStatus: draft
+  - id: ver-evolut-fx
+    familyId: family-evolut
+    name: Evolut FX
+    kind: device
+    clinicalRole: treats
+    summary: A configuration described in the redo-TAVR SSED.
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: Section V, device description
+    reviewStatus: draft
+  - id: ver-evolut-fx-plus
+    familyId: family-evolut
+    name: Evolut FX+
+    kind: device
+    clinicalRole: treats
+    summary: The expanded frame windows are identified separately from the redo-TAVR indication.
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: Section V, page 3
+    reviewStatus: draft
+  - id: ver-mitraclip-nt
+    familyId: family-mitraclip
+    name: MitraClip NT
+    kind: device
+    clinicalRole: treats
+    summary: Named in the secondary-MR approval.
+    sourceRefs:
+      - sourceId: src-mitraclip-s028
+        locator: Device field
+    reviewStatus: draft
+  - id: ver-mitraclip-ntr-xtr
+    familyId: family-mitraclip
+    name: MitraClip NTR / XTR
+    kind: device
+    clinicalRole: treats
+    summary: A model group as named in S028; individual size configurations still need extraction.
+    sourceRefs:
+      - sourceId: src-mitraclip-s028
+        locator: Device field
+    reviewStatus: draft
+  - id: ver-watchman-flx
+    familyId: family-watchman
+    name: WATCHMAN FLX
+    kind: device
+    clinicalRole: treats
+    summary: The same named implant appears in distinct regimen and indication decisions.
+    sourceRefs:
+      - sourceId: src-watchman-s043
+        locator: Device field
+    reviewStatus: draft
+  - id: ver-watchman-flx-pro
+    familyId: family-watchman
+    name: WATCHMAN FLX Pro
+    kind: device
+    clinicalRole: treats
+    summary: Named in the 2025 post-ablation indication decision.
+    sourceRefs:
+      - sourceId: src-watchman-s074
+        locator: Approval-order statement
+    reviewStatus: draft
+  - id: ver-triclip-g4
+    familyId: family-triclip
+    name: TriClip G4
+    kind: device
+    clinicalRole: treats
+    summary: The labeled system is tracked separately from unresolved trial-generation attribution.
+    sourceRefs:
+      - sourceId: src-triclip-ssed
+        locator: Device description
+    reviewStatus: draft
+  - id: ver-feops-141
+    familyId: family-feops
+    name: FEops HEARTguide 1.4.1
+    kind: digital
+    clinicalRole: plans
+    summary: Prior build identified in the later submission comparison table.
+    sourceRefs:
+      - sourceId: src-feops
+        locator: 510(k) summary, technological comparison, pages 3–4
+    reviewStatus: draft
+    digitalSubtype: planning
+    softwareVersion: 1.4.1
+  - id: ver-feops-heartguide
+    familyId: family-feops
+    name: FEops HEARTguide 1.4.2
+    kind: digital
+    clinicalRole: plans
+    summary: LAA planning build evaluated in K214066.
+    sourceRefs:
+      - sourceId: src-feops
+        locator: 510(k) summary, technological comparison, page 4
+    reviewStatus: draft
+    digitalSubtype: planning
+    softwareVersion: 1.4.2
+  - id: ver-dasi-11
+    familyId: family-dasi
+    name: PrecisionTAVI 1.1
+    kind: digital
+    clinicalRole: plans
+    summary: TAVR planning software with a documented regulatory predicate.
+    sourceRefs:
+      - sourceId: src-dasi
+        locator: Indications-for-use form, page 3 of PDF
+    reviewStatus: draft
+    digitalSubtype: planning
+    softwareVersion: '1.1'
+  - id: ver-story-vital
+    familyId: family-story
+    name: Story Health · VITAL-HF care configuration
+    kind: digital
+    clinicalRole: manages
+    summary: Study-defined intervention; the commercial software build is not established here.
+    sourceRefs:
+      - sourceId: src-vital
+        locator: 'Methods: intervention'
+    reviewStatus: draft
+    digitalSubtype: care_delivery
+  - id: ver-hello-cohort
+    familyId: family-hello
+    name: Hello Heart · 2021 cohort program
+    kind: digital
+    clinicalRole: manages
+    summary: Historical observational program, not a current software release.
+    sourceRefs:
+      - sourceId: src-hello
+        locator: Methods
+    reviewStatus: draft
+    digitalSubtype: care_delivery
+claims:
+  - id: claim-sapien-3-manufacturer
+    versionId: ver-sapien-3
+    key: manufacturer
+    label: Manufacturer
+    comparisonAttributeId: manufacturer
+    value: Edwards Lifesciences
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-original
+        locator: Device and approval-order fields
+    reviewStatus: draft
+  - id: claim-sapien-3-family
+    versionId: ver-sapien-3
+    key: family
+    label: Product family
+    comparisonAttributeId: family
+    value: SAPIEN
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-original
+        locator: Device and approval-order fields
+    reviewStatus: draft
+  - id: claim-sapien-3-version
+    versionId: ver-sapien-3
+    key: exact-version
+    label: Exact product version
+    comparisonAttributeId: exact-version
+    value: SAPIEN 3
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-original
+        locator: Device and approval-order fields
+    reviewStatus: draft
+  - id: claim-sapien-ultra-manufacturer
+    versionId: ver-sapien-ultra-resilia
+    key: manufacturer
+    label: Manufacturer
+    comparisonAttributeId: manufacturer
+    value: Edwards Lifesciences
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-s141
+        locator: Device, supplement reason and approval-order statement
+    reviewStatus: draft
+  - id: claim-sapien-ultra-family
+    versionId: ver-sapien-ultra-resilia
+    key: family
+    label: Product family
+    comparisonAttributeId: family
+    value: SAPIEN
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-s141
+        locator: Device, supplement reason and approval-order statement
+    reviewStatus: draft
+  - id: claim-sapien-ultra-version
+    versionId: ver-sapien-ultra-resilia
+    key: exact-version
+    label: Exact product version
+    comparisonAttributeId: exact-version
+    value: SAPIEN 3 Ultra RESILIA
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-s141
+        locator: Device, supplement reason and approval-order statement
+    reviewStatus: draft
+  - id: claim-evolut-fx-manufacturer
+    versionId: ver-evolut-fx
+    key: manufacturer
+    label: Manufacturer
+    comparisonAttributeId: manufacturer
+    value: Medtronic
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: Section V, device description
+    reviewStatus: draft
+  - id: claim-evolut-fx-family
+    versionId: ver-evolut-fx
+    key: family
+    label: Product family
+    comparisonAttributeId: family
+    value: Evolut
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: Section V, device description
+    reviewStatus: draft
+  - id: claim-evolut-fx-version
+    versionId: ver-evolut-fx
+    key: exact-version
+    label: Exact product version
+    comparisonAttributeId: exact-version
+    value: Evolut FX
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: Section V, device description
+    reviewStatus: draft
+  - id: claim-evolut-fx-plus-manufacturer
+    versionId: ver-evolut-fx-plus
+    key: manufacturer
+    label: Manufacturer
+    comparisonAttributeId: manufacturer
+    value: Medtronic
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: Section V, device description
+    reviewStatus: draft
+  - id: claim-evolut-fx-plus-family
+    versionId: ver-evolut-fx-plus
+    key: family
+    label: Product family
+    comparisonAttributeId: family
+    value: Evolut
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: Section V, page 3
+    reviewStatus: draft
+  - id: claim-evolut-fx-plus-version
+    versionId: ver-evolut-fx-plus
+    key: exact-version
+    label: Exact product version
+    comparisonAttributeId: exact-version
+    value: Evolut FX+
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: Section V, page 3
+    reviewStatus: draft
+  - id: claim-sapien-3-frame
+    versionId: ver-sapien-3
+    key: frame-material
+    label: Frame material
+    comparisonAttributeId: frame-material
+    value: MP35N cobalt-chromium
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-ssed
+        locator: Section V, page 2
+    reviewStatus: draft
+    context: 'Original claim combined frame material with expansion mechanism; this normalized row retains only the frame material.'
+  - id: claim-sapien-3-expansion
+    versionId: ver-sapien-3
+    key: expansion-mechanism
+    label: Expansion mechanism
+    comparisonAttributeId: expansion-mechanism
+    value: Balloon expandable
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-ssed
+        locator: Section V, page 2
+    reviewStatus: draft
+    context: 'Original claim combined this expansion mechanism with frame material; this normalized row retains only expansion mechanism.'
+  - id: claim-sapien-3-leaflets
+    versionId: ver-sapien-3
+    key: leaflets
+    label: Leaflet tissue
+    comparisonAttributeId: leaflet-material
+    value: Bovine pericardium; three leaflets
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-ssed
+        locator: Section V, page 2
+    reviewStatus: draft
+  - id: claim-sapien-3-skirt
+    versionId: ver-sapien-3
+    key: skirt
+    label: Sealing architecture
+    comparisonAttributeId: sealing-design
+    value: PET internal skirt and external sealing skirt
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-ssed
+        locator: Section V, page 2
+    reviewStatus: draft
+  - id: claim-sapien-3-design-question
+    versionId: ver-sapien-3
+    key: design-question
+    label: Engineering question
+    value: How do crimp history, leaflet stress, and skirt compression change across valve sizes?
+    availability: reported
+    basis: analyst_interpretation
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-ssed
+        locator: 'Section V: architecture used to frame this editorial question'
+    reviewStatus: draft
+    limitation: A research question, not a measured result or a clinical durability claim.
+  - id: claim-sapien-3-stress
+    versionId: ver-sapien-3
+    key: stress
+    label: Size-specific leaflet stress
+    availability: not_yet_reviewed
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-ssed
+        locator: Selected public SSED; numerical stress extraction pending
+    reviewStatus: draft
+    unit: MPa
+    context: Model, tissue law, hydration, crimp conditions and mesh validation must accompany any future value.
+  - id: claim-sapien-ultra-resilia-design-disclosure
+    versionId: ver-sapien-ultra-resilia
+    key: design-disclosure
+    label: Detailed material/process changes
+    availability: not_publicly_disclosed
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-sapien-s141
+        locator: Short public decision record
+    reviewStatus: draft
+    limitation: >-
+      This record names the product change; it does not disclose a full specification. Other labeling still
+      needs review.
+  - id: claim-evolut-fx-frame
+    versionId: ver-evolut-fx
+    key: frame-material
+    label: Frame material
+    comparisonAttributeId: frame-material
+    value: Nitinol
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: Section V, device description
+    reviewStatus: draft
+    context: 'The cited SSED describes the Nitinol frame; this normalized row captures its material only.'
+  - id: claim-evolut-fx-expansion
+    versionId: ver-evolut-fx
+    key: expansion-mechanism
+    label: Expansion mechanism
+    comparisonAttributeId: expansion-mechanism
+    value: Self-expanding
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-22'
+    sourceRefs:
+      - sourceId: src-evolut-ifu
+        locator: Evolut FX IFU, Section 1.1, PDF page 32
+    reviewStatus: draft
+    context: The Evolut FX device description explicitly calls its nitinol frame self-expanding.
+  - id: claim-evolut-fx-plus-expansion
+    versionId: ver-evolut-fx-plus
+    key: expansion-mechanism
+    label: Expansion mechanism
+    comparisonAttributeId: expansion-mechanism
+    value: Self-expanding
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-22'
+    sourceRefs:
+      - sourceId: src-evolut-ifu
+        locator: Evolut FX+ IFU, Section 1.1, PDF page 60
+    reviewStatus: draft
+    context: The Evolut FX+ device description separately calls its nitinol frame self-expanding.
+  - id: claim-evolut-fx-leaflets
+    versionId: ver-evolut-fx
+    key: leaflet-material
+    label: Leaflet material
+    comparisonAttributeId: leaflet-material
+    value: Porcine pericardium
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: Section V, device description
+    reviewStatus: draft
+    context: 'Source wording: “porcine pericardial tissue”; this normalized row captures leaflet material only.'
+  - id: claim-evolut-fx-markers
+    versionId: ver-evolut-fx
+    key: implant-depth-markers
+    label: Implant-depth visualization
+    comparisonAttributeId: deployment-feature
+    value: Radiopaque gold markers at the target implant depth
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-21'
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: 'Section V, page 3, Figure 1 and accompanying device description'
+    reviewStatus: draft
+    context: The SSED describes the markers as an Evolut FX addition intended to support visualization during placement.
+  - id: claim-evolut-fx-plus-access
+    versionId: ver-evolut-fx-plus
+    key: access
+    label: Distinct mechanical feature
+    comparisonAttributeId: coronary-access-feature
+    value: Expanded frame windows behind the three valve leaflets
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: Section V, page 3
+    reviewStatus: draft
+    context: Intended to facilitate coronary access after implantation; not a quantified clinical access advantage.
+  - id: claim-evolut-fx-plus-design-question
+    versionId: ver-evolut-fx-plus
+    key: design-question
+    label: Engineering question
+    value: Evaluate coronary-access clearance, frame loading, and local fatigue around the larger windows.
+    availability: reported
+    basis: analyst_interpretation
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: 'Section V: documented geometry feature'
+    reviewStatus: draft
+    limitation: No numerical fatigue performance is inferred from geometry.
+  - id: claim-mitraclip-nt-fit
+    versionId: ver-mitraclip-nt
+    key: fit
+    label: Secondary-MR boundary
+    value: LVEF 20–50%; LVESD ≤70 mm; persistent symptomatic MR despite maximally tolerated GDMT
+    availability: reported
+    basis: directly_reported
+    category: fit
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-mitraclip-s028
+        locator: Approval-order statement
+    reviewStatus: draft
+    context: US historical 2019 authorization; see dated indication record and full label.
+  - id: claim-mitraclip-ntr-xtr-fit
+    versionId: ver-mitraclip-ntr-xtr
+    key: fit
+    label: Secondary-MR boundary
+    value: LVEF 20–50%; LVESD ≤70 mm; persistent symptomatic MR despite maximally tolerated GDMT
+    availability: reported
+    basis: directly_reported
+    category: fit
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-mitraclip-s028
+        locator: Approval-order statement
+    reviewStatus: draft
+    context: US historical 2019 authorization; see dated indication record and full label.
+  - id: claim-watchman-flx-regimen
+    versionId: ver-watchman-flx
+    key: regimen
+    label: Post-implant regimen
+    value: DAPT added as an alternative
+    availability: reported
+    basis: directly_reported
+    category: fit
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-watchman-s043
+        locator: Approval-order statement
+    reviewStatus: draft
+    context: US labeling decision, 2022; not a new hardware generation.
+  - id: claim-triclip-g4-materials
+    versionId: ver-triclip-g4
+    key: materials
+    label: Material extraction
+    availability: not_yet_reviewed
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-triclip-ssed
+        locator: 'Device description: independent extraction pending'
+    reviewStatus: draft
+  - id: claim-triclip-g4-system
+    versionId: ver-triclip-g4
+    key: system-components
+    label: System architecture
+    value: Steerable guide catheter, delivery system, implant, and procedural accessories
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-21'
+    sourceRefs:
+      - sourceId: src-triclip-ssed
+        locator: 'Section V, page 2, Figure 1 and Device Description'
+    reviewStatus: draft
+  - id: claim-triclip-g4-sizes
+    versionId: ver-triclip-g4
+    key: implant-sizes
+    label: Implant configurations
+    value: NT, XT, NTW, and XTW
+    availability: reported
+    basis: directly_reported
+    category: design
+    observedAt: '2026-09-21'
+    sourceRefs:
+      - sourceId: src-triclip-ssed
+        locator: 'Section V, page 3, TriClip G4 Delivery System description'
+    reviewStatus: draft
+    context: The implant can be opened, closed, unlocked, and repositioned before final deployment.
+  - id: claim-feops-heartguide-function
+    versionId: ver-feops-heartguide
+    key: function
+    label: Function / action
+    value: Predict LAA occluder deformation for size and placement planning
+    availability: reported
+    basis: directly_reported
+    category: digital
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-feops
+        locator: 510(k) summary, intended use
+    reviewStatus: draft
+  - id: claim-feops-heartguide-boundary
+    versionId: ver-feops-heartguide
+    key: boundary
+    label: Human operating boundary
+    value: Qualified case analysts prepare results; clinicians make the final decision
+    availability: reported
+    basis: directly_reported
+    category: digital
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-feops
+        locator: 510(k) summary, description and intended use
+    reviewStatus: draft
+  - id: claim-feops-heartguide-library
+    versionId: ver-feops-heartguide
+    key: library
+    label: Supported device library
+    value: WATCHMAN, WATCHMAN FLX, Amplatzer Amulet
+    availability: reported
+    basis: directly_reported
+    category: digital
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-feops
+        locator: Technological comparison, page 4
+    reviewStatus: draft
+    context: K214066 build 1.4.2 scope only.
+  - id: claim-feops-heartguide-exposure
+    versionId: ver-feops-heartguide
+    key: exposure
+    label: Delivered exposure
+    value: Procedural planning report
+    availability: reported
+    basis: directly_reported
+    category: digital
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-feops
+        locator: Description and functioning
+    reviewStatus: draft
+    limitation: A planning report is not a therapeutic dose. Routine adoption and report turnaround are not extracted.
+  - id: claim-feops-heartguide-clinical-attribution
+    versionId: ver-feops-heartguide
+    key: clinical-attribution
+    label: PREDICT-LAA build mapping
+    availability: not_yet_reviewed
+    basis: directly_reported
+    category: evidence
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-predict
+        locator: 'Methods: FEops HEARTguide intervention; exact build not extracted'
+    reviewStatus: draft
+    limitation: Family-level results remain separate from this cleared software build.
+  - id: claim-dasi-11-function
+    versionId: ver-dasi-11
+    key: function
+    label: Function / action
+    value: Predict selected TAVR frame deformation in patient anatomy
+    availability: reported
+    basis: directly_reported
+    category: digital
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-dasi
+        locator: Summary, device description
+    reviewStatus: draft
+  - id: claim-dasi-11-boundary
+    versionId: ver-dasi-11
+    key: boundary
+    label: Human operating boundary
+    value: Trained operators prepare the report; clinicians interpret and validate it
+    availability: reported
+    basis: directly_reported
+    category: digital
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-dasi
+        locator: Summary, device description and intended use
+    reviewStatus: draft
+  - id: claim-dasi-11-validation
+    versionId: ver-dasi-11
+    key: validation
+    label: Technical validation population
+    value: 89
+    availability: reported
+    basis: directly_reported
+    category: evidence
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-dasi
+        locator: Testing summary, page 3 of summary
+    reviewStatus: draft
+    unit: patients
+    context: Comparison with post-TAVR CT; not a randomized therapeutic-benefit trial.
+  - id: claim-story-vital-function
+    versionId: ver-story-vital
+    key: function
+    label: Function / action
+    value: Medication optimization with clinicians and health coaches
+    availability: reported
+    basis: directly_reported
+    category: digital
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-vital
+        locator: 'Methods: intervention'
+    reviewStatus: draft
+  - id: claim-story-vital-dose
+    versionId: ver-story-vital
+    key: dose
+    label: Requested exposure
+    value: Daily vital-sign and symptom reporting; visits at 3 and 6 months
+    availability: reported
+    basis: directly_reported
+    category: digital
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-vital
+        locator: Methods
+    reviewStatus: draft
+    limitation: Requested reporting is not measured adherence or delivered treatment dose.
+  - id: claim-story-vital-build
+    versionId: ver-story-vital
+    key: build
+    label: Software build
+    availability: not_yet_reviewed
+    basis: directly_reported
+    category: digital
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-vital
+        locator: 'Methods: commercial build not established'
+    reviewStatus: draft
+  - id: claim-story-vital-fit
+    versionId: ver-story-vital
+    key: fit
+    label: Studied population
+    value: Stable HFrEF, LVEF ≤40%, therapy not optimized, smartphone access
+    availability: reported
+    basis: directly_reported
+    category: fit
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-vital
+        locator: 'Methods: participants'
+    reviewStatus: draft
+    context: Trial eligibility; not an FDA indication.
+  - id: claim-hello-cohort-function
+    versionId: ver-hello-cohort
+    key: function
+    label: Function / action
+    value: Mobile blood-pressure self-management
+    availability: reported
+    basis: directly_reported
+    category: digital
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-hello
+        locator: Methods
+    reviewStatus: draft
+  - id: claim-hello-cohort-causality
+    versionId: ver-hello-cohort
+    key: causality
+    label: Evidence boundary
+    value: Observational cohort
+    availability: reported
+    basis: directly_reported
+    category: evidence
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-hello
+        locator: Study design
+    reviewStatus: draft
+    limitation: Engagement and blood-pressure associations cannot establish causal valve or heart-failure benefit.
+  - id: claim-hello-cohort-build
+    versionId: ver-hello-cohort
+    key: build
+    label: Software build
+    availability: not_yet_reviewed
+    basis: directly_reported
+    category: digital
+    observedAt: '2026-09-20'
+    sourceRefs:
+      - sourceId: src-hello
+        locator: Study methods; release mapping pending
+    reviewStatus: draft
+decisions:
+  - id: decision-sapien-original
+    identifier: P140031
+    rootIdentifier: P140031
+    versionIds:
+      - ver-sapien-3
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2015-06-17'
+      precision: day
+    changeType: initial_authorization
+    summary: Initial high-or-greater-risk native calcific AS authorization.
+    sourceRefs:
+      - sourceId: src-sapien-original
+        locator: Decision and approval-order statement
+    reviewStatus: draft
+  - id: decision-sapien-s010
+    identifier: P140031/S010
+    rootIdentifier: P140031
+    versionIds:
+      - ver-sapien-3
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2016-08-18'
+      precision: day
+    changeType: indication
+    summary: Intermediate surgical risk added.
+    sourceRefs:
+      - sourceId: src-sapien-s010
+        locator: Decision and approval-order statement
+    reviewStatus: draft
+  - id: decision-sapien-s141
+    identifier: P140031/S141
+    rootIdentifier: P140031
+    versionIds:
+      - ver-sapien-ultra-resilia
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2022-07-28'
+      precision: day
+    changeType: design
+    summary: SAPIEN 3 Ultra RESILIA product change.
+    sourceRefs:
+      - sourceId: src-sapien-s141
+        locator: Decision and approval-order statement
+    reviewStatus: draft
+  - id: decision-mitraclip-s028
+    identifier: P100009/S028
+    rootIdentifier: P100009
+    versionIds:
+      - ver-mitraclip-nt
+      - ver-mitraclip-ntr-xtr
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2019-03-14'
+      precision: day
+    changeType: indication
+    summary: Secondary MR indication added for the named model groups.
+    sourceRefs:
+      - sourceId: src-mitraclip-s028
+        locator: Decision and approval-order statement
+    reviewStatus: draft
+  - id: decision-watchman-s043
+    identifier: P130013/S043
+    rootIdentifier: P130013
+    versionIds:
+      - ver-watchman-flx
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2022-09-02'
+      precision: day
+    changeType: labeling
+    summary: Alternative DAPT regimen; original WATCHMAN also named outside the pilot versions.
+    sourceRefs:
+      - sourceId: src-watchman-s043
+        locator: Decision and approval-order statement
+    reviewStatus: draft
+  - id: decision-watchman-s074
+    identifier: P130013/S074
+    rootIdentifier: P130013
+    versionIds:
+      - ver-watchman-flx
+      - ver-watchman-flx-pro
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2025-07-16'
+      precision: day
+    changeType: indication
+    summary: Post-ablation indication added for the named FLX models.
+    sourceRefs:
+      - sourceId: src-watchman-s074
+        locator: Decision and approval-order statement
+    reviewStatus: draft
+  - id: decision-evolut-s174
+    identifier: P130021/S174
+    rootIdentifier: P130021
+    versionIds:
+      - ver-evolut-fx
+      - ver-evolut-fx-plus
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2025-08-27'
+      precision: day
+    changeType: indication
+    summary: >-
+      Failed transcatheter aortic bioprosthesis indication added; PRO+ is also named outside these pilot
+      versions.
+    sourceRefs:
+      - sourceId: src-evolut-order
+        locator: Decision and approval-order statement
+    reviewStatus: draft
+  - id: decision-feops
+    identifier: K214066
+    rootIdentifier: K214066
+    versionIds:
+      - ver-feops-heartguide
+    jurisdiction: US
+    pathway: 510(k)
+    date:
+      value: '2022-02-25'
+      precision: day
+    changeType: software
+    summary: LAA simulation library extended in build 1.4.2.
+    sourceRefs:
+      - sourceId: src-feops
+        locator: Decision and approval-order statement
+    reviewStatus: draft
+  - id: decision-dasi
+    identifier: K223809
+    rootIdentifier: K223809
+    versionIds:
+      - ver-dasi-11
+    jurisdiction: US
+    pathway: 510(k)
+    date:
+      value: '2023-05-30'
+      precision: day
+    changeType: initial_authorization
+    summary: PrecisionTAVI 1.1 cleared for procedural planning.
+    sourceRefs:
+      - sourceId: src-dasi
+        locator: Decision and approval-order statement
+    reviewStatus: draft
+indications:
+  - id: ifu-sapien-2015
+    decisionId: decision-sapien-original
+    versionIds:
+      - ver-sapien-3
+    jurisdiction: US
+    effectiveDate:
+      value: '2015-06-17'
+      precision: day
+    text: Symptomatic severe native calcific AS with high or greater risk for open surgery.
+    textType: paraphrase
+    population: Heart-team assessed high or greater surgical risk
+    sourceRefs:
+      - sourceId: src-sapien-original
+        locator: Indications / approval-order statement
+    reviewStatus: draft
+    anatomy: Native aortic valve
+  - id: ifu-sapien-2016
+    decisionId: decision-sapien-s010
+    versionIds:
+      - ver-sapien-3
+    jurisdiction: US
+    effectiveDate:
+      value: '2016-08-18'
+      precision: day
+    text: Symptomatic severe native calcific AS with intermediate or greater risk for open surgery.
+    textType: paraphrase
+    population: Heart-team assessed intermediate or greater surgical risk
+    sourceRefs:
+      - sourceId: src-sapien-s010
+        locator: Indications / approval-order statement
+    reviewStatus: draft
+    anatomy: Native aortic valve
+    supersedesId: ifu-sapien-2015
+    restrictions: >-
+      Historical indication excerpt only; full contraindications and subsequent supplements are not
+      represented.
+  - id: ifu-mitraclip-2019
+    decisionId: decision-mitraclip-s028
+    versionIds:
+      - ver-mitraclip-nt
+      - ver-mitraclip-ntr-xtr
+    jurisdiction: US
+    effectiveDate:
+      value: '2019-03-14'
+      precision: day
+    text: >-
+      Persistent symptomatic secondary MR despite maximally tolerated GDMT, within the label’s
+      ventricular-function and size limits.
+    textType: paraphrase
+    population: Symptomatic moderate-to-severe or severe secondary MR
+    sourceRefs:
+      - sourceId: src-mitraclip-s028
+        locator: Indications / approval-order statement
+    reviewStatus: draft
+    anatomy: Mitral valve
+    restrictions: LVEF 20–50%; LVESD ≤70 mm; experienced multidisciplinary heart-team assessment.
+  - id: ifu-watchman-2025
+    decisionId: decision-watchman-s074
+    versionIds:
+      - ver-watchman-flx
+      - ver-watchman-flx-pro
+    jurisdiction: US
+    effectiveDate:
+      value: '2025-07-16'
+      precision: day
+    text: >-
+      After catheter ablation for non-valvular AF, selected patients at increased embolic risk and suitable
+      for anticoagulation may receive FLX or FLX Pro.
+    textType: paraphrase
+    population: Selected non-valvular AF patients following ablation
+    sourceRefs:
+      - sourceId: src-watchman-s074
+        locator: Indications / approval-order statement
+    reviewStatus: draft
+    anatomy: Left atrial appendage
+    restrictions: Concomitant or sequential use is described. This paraphrase is not the complete IFU.
+  - id: ifu-evolut-2025
+    decisionId: decision-evolut-s174
+    versionIds:
+      - ver-evolut-fx
+      - ver-evolut-fx-plus
+    jurisdiction: US
+    effectiveDate:
+      value: '2025-08-27'
+      precision: day
+    text: >-
+      Failing surgical or transcatheter aortic bioprosthesis in patients at high or greater risk for open
+      surgery.
+    textType: paraphrase
+    population: Symptomatic bioprosthetic valve failure; heart-team risk assessment
+    sourceRefs:
+      - sourceId: src-evolut-order
+        locator: Indications / approval-order statement
+    reviewStatus: draft
+    anatomy: Aortic bioprosthesis
+    restrictions: Order specifies predicted surgical mortality ≥8% at 30 days plus clinical comorbidity assessment.
+  - id: ifu-feops-2022
+    decisionId: decision-feops
+    versionIds:
+      - ver-feops-heartguide
+    jurisdiction: US
+    effectiveDate:
+      value: '2022-02-25'
+      precision: day
+    text: Patient-specific LAA occluder simulation supports procedural sizing and placement.
+    textType: paraphrase
+    population: Qualified clinicians planning LAA occlusion
+    sourceRefs:
+      - sourceId: src-feops
+        locator: Indications / approval-order statement
+    reviewStatus: draft
+    anatomy: Left atrial appendage
+    restrictions: >-
+      Use alongside the simulated device IFU and clinical judgment; this record does not authorize TAVR
+      planning.
+  - id: ifu-dasi-2023
+    decisionId: decision-dasi
+    versionIds:
+      - ver-dasi-11
+    jurisdiction: US
+    effectiveDate:
+      value: '2023-05-30'
+      precision: day
+    text: Patient-specific TAVR simulation provides additional planning information.
+    textType: paraphrase
+    population: Qualified specialists planning TAVR
+    sourceRefs:
+      - sourceId: src-dasi
+        locator: Indications / approval-order statement
+    reviewStatus: draft
+    anatomy: Aortic root and valve
+    restrictions: The clinician remains responsible for treatment decisions and device-IFU compliance.
+trials:
+  - id: evidence-triluminate
+    name: TRILUMINATE Pivotal
+    nctId: NCT03904147
+    familyIds:
+      - family-triclip
+    entityId: trial-triluminate
+    design: Randomized, open-label TEER plus medical therapy versus medical therapy
+    population: Symptomatic severe tricuspid regurgitation
+    versionIds: []
+    versionMapping: unclear
+    sourceRefs:
+      - sourceId: src-triluminate-350
+        locator: Methods
+    reviewStatus: draft
+  - id: evidence-predict
+    name: PREDICT-LAA
+    nctId: NCT04180605
+    familyIds:
+      - family-feops
+    design: Randomized CT planning versus CT plus computational simulation for Amulet implantation
+    population: Patients undergoing transcatheter LAA closure
+    versionIds: []
+    versionMapping: unclear
+    sourceRefs:
+      - sourceId: src-predict
+        locator: Methods
+    reviewStatus: draft
+  - id: evidence-vital
+    name: VITAL-HF
+    familyIds:
+      - family-story
+    design: Randomized, unblinded parallel-group digital care program versus usual care
+    population: Stable HFrEF with medication optimization needs
+    versionIds: []
+    versionMapping: unclear
+    sourceRefs:
+      - sourceId: src-vital
+        locator: Methods
+    reviewStatus: draft
+trialSnapshots: []
+cohorts:
+  - id: cohort-triluminate-350
+    trialId: evidence-triluminate
+    name: Primary randomized cohort · 350
+    population: Initial primary analysis population
+    enrollment:
+      - value: 350
+        stage: randomized
+    arms:
+      - id: arm-teer
+        name: TriClip + medical therapy
+        randomized: 175
+      - id: arm-control
+        name: Medical therapy
+        randomized: 175
+    sourceRefs:
+      - sourceId: src-triluminate-350
+        locator: Methods and Results
+    reviewStatus: draft
+  - id: cohort-triluminate-572
+    trialId: evidence-triluminate
+    name: Full randomized cohort · 572
+    population: 350 initial participants plus 222 subsequently randomized
+    enrollment:
+      - value: 572
+        stage: randomized
+        note: Includes the 350-person cohort; never sum these overlapping cohorts.
+    arms:
+      - id: arm-teer
+        name: TriClip + medical therapy
+      - id: arm-control
+        name: Medical therapy
+    sourceRefs:
+      - sourceId: src-triluminate-572
+        locator: Methods and Results
+    reviewStatus: draft
+  - id: cohort-predict
+    trialId: evidence-predict
+    name: PREDICT-LAA randomized cohort
+    population: Two planning strategies using Amulet
+    enrollment:
+      - value: 200
+        stage: randomized
+      - value: 197
+        stage: treated
+      - value: 181
+        stage: analyzed
+        note: 'Evaluable 90-day CT: 91 standard, 90 simulation.'
+    arms:
+      - id: arm-standard
+        name: Standard CT planning
+        randomized: 100
+      - id: arm-simulation
+        name: CT + simulation
+        randomized: 100
+    sourceRefs:
+      - sourceId: src-predict
+        locator: Study population; Figure 1; Table 2
+    reviewStatus: draft
+  - id: cohort-vital
+    trialId: evidence-vital
+    name: VITAL-HF randomized cohort
+    population: Stable HFrEF; smartphone access
+    enrollment:
+      - value: 178
+        stage: randomized
+    arms:
+      - id: arm-digital
+        name: Digital care program
+        randomized: 90
+      - id: arm-usual
+        name: Usual care
+        randomized: 88
+    sourceRefs:
+      - sourceId: src-vital
+        locator: Methods and Results
+    reviewStatus: draft
+endpoints:
+  - id: endpoint-tri-hierarchy
+    name: Hierarchical primary composite
+    definition: Death or tricuspid surgery, then HF hospitalization, then ≥15-point KCCQ improvement.
+    hierarchy: primary
+    measureType: hierarchical
+    timeframe: 1 year
+    analysisPopulation: Randomized analysis population; endpoint-specific missingness not extracted
+    sourceRefs:
+      - sourceId: src-triluminate-350
+        locator: 'Methods: primary endpoint'
+    reviewStatus: draft
+  - id: endpoint-tri-hfh-1y
+    name: Annualized HF hospitalizations
+    definition: HF hospitalization events per patient-year.
+    hierarchy: component
+    measureType: rate
+    timeframe: 1 year
+    analysisPopulation: Full randomized cohort; person-time denominators not extracted
+    sourceRefs:
+      - sourceId: src-triluminate-572
+        locator: Results
+    reviewStatus: draft
+  - id: endpoint-tri-hfh-2y
+    name: Recurrent HF hospitalizations
+    definition: Annualized recurrent events and joint-frailty model estimate.
+    hierarchy: not_reported
+    measureType: rate
+    timeframe: 2 years
+    analysisPopulation: Intention-to-treat; person-time denominators not extracted
+    sourceRefs:
+      - sourceId: src-triluminate-2y
+        locator: Methods and Results
+    reviewStatus: draft
+  - id: endpoint-tri-death-2y
+    name: All-cause mortality
+    definition: Mortality through two years, separately from the composite endpoint.
+    hierarchy: not_reported
+    measureType: binary
+    timeframe: 2 years
+    analysisPopulation: Intention-to-treat; endpoint-specific denominator not extracted
+    sourceRefs:
+      - sourceId: src-triluminate-2y
+        locator: Results
+    reviewStatus: draft
+  - id: endpoint-predict-primary
+    name: Residual leak or device-related thrombus
+    definition: Grade 3–4 leak distal to the Amulet lobe and/or device-related thrombus on CT.
+    hierarchy: primary
+    measureType: binary
+    timeframe: 90 days
+    analysisPopulation: Evaluable CT within randomized groups
+    sourceRefs:
+      - sourceId: src-predict
+        locator: Study endpoints; Table 2
+    reviewStatus: draft
+  - id: endpoint-predict-closure
+    name: Complete LAA closure
+    definition: No residual leak or disc retraction, with complete trabecular coverage.
+    hierarchy: secondary
+    measureType: binary
+    timeframe: 90 days
+    analysisPopulation: Evaluable CT within randomized groups
+    sourceRefs:
+      - sourceId: src-predict
+        locator: Study endpoints; Table 2
+    reviewStatus: draft
+  - id: endpoint-vital-score
+    name: HF medical therapy score
+    definition: Change in HF Collaboratory medication score, range 0–12.
+    hierarchy: primary
+    measureType: continuous
+    timeframe: 6 months
+    analysisPopulation: Trial analysis; adjusted effect; missing-data details require review
+    sourceRefs:
+      - sourceId: src-vital
+        locator: Methods and Findings
+    reviewStatus: draft
+readouts:
+  - id: readout-tri-350-1y
+    trialId: evidence-triluminate
+    cohortId: cohort-triluminate-350
+    title: TRILUMINATE · primary cohort · one year
+    publishedAt:
+      value: '2023-03-04'
+      precision: day
+    followUp: 1 year
+    maturity: primary
+    versionIds: []
+    limitation: Exact TriClip generation not resolved. Composite benefit is not evidence of a mortality benefit.
+    sourceRefs:
+      - sourceId: src-triluminate-350
+        locator: Primary report
+    reviewStatus: draft
+  - id: readout-tri-572-1y
+    trialId: evidence-triluminate
+    cohortId: cohort-triluminate-572
+    title: TRILUMINATE · full cohort · one year
+    publishedAt:
+      value: '2024-10-28'
+      precision: day
+    followUp: 1 year
+    maturity: primary
+    versionIds: []
+    limitation: Overlaps the 350-person primary population. Software/hardware generation mapping remains unresolved.
+    sourceRefs:
+      - sourceId: src-triluminate-572
+        locator: Primary report
+    reviewStatus: draft
+  - id: readout-tri-572-2y
+    trialId: evidence-triluminate
+    cohortId: cohort-triluminate-572
+    title: TRILUMINATE · full cohort · two years
+    publishedAt:
+      value: '2025-03-30'
+      precision: day
+    followUp: 2 years
+    maturity: follow_up
+    versionIds: []
+    limitation: >-
+      Control crossover affects intervention-containing composite interpretation. This does not replace the
+      one-year readout.
+    sourceRefs:
+      - sourceId: src-triluminate-2y
+        locator: Primary report
+    reviewStatus: draft
+  - id: readout-predict-90d
+    trialId: evidence-predict
+    cohortId: cohort-predict
+    title: PREDICT-LAA · planning and CT outcomes
+    publishedAt:
+      value: '2023-03-27'
+      precision: day
+    followUp: 90 days
+    maturity: primary
+    versionIds: []
+    limitation: Exact FEops software build unresolved; 19 randomized patients lack evaluable follow-up CT.
+    sourceRefs:
+      - sourceId: src-predict
+        locator: Primary report
+    reviewStatus: draft
+  - id: readout-vital-6m
+    trialId: evidence-vital
+    cohortId: cohort-vital
+    title: VITAL-HF · medication optimization
+    publishedAt:
+      value: '2026-03-25'
+      precision: day
+    followUp: 6 months
+    maturity: primary
+    versionIds: []
+    limitation: The treatment is a care package; the effect cannot be attributed to software alone.
+    sourceRefs:
+      - sourceId: src-vital
+        locator: Primary report
+    reviewStatus: draft
+outcomes:
+  - id: outcome-tri-350-hierarchy
+    readoutId: readout-tri-350-1y
+    endpointId: endpoint-tri-hierarchy
+    arms: []
+    effect:
+      measure: Win ratio
+      value: 1.48
+      ci:
+        lower: 1.06
+        upper: 2.13
+        level: 95
+        sidedness: two_sided
+    pValue: 0.02
+    interpretation: Composite favored TEER; mortality/surgery and HF hospitalization were not demonstrably different.
+    sourceRefs:
+      - sourceId: src-triluminate-350
+        locator: Results
+    reviewStatus: draft
+  - id: outcome-tri-572-hierarchy
+    readoutId: readout-tri-572-1y
+    endpointId: endpoint-tri-hierarchy
+    arms: []
+    effect:
+      measure: Win ratio
+      value: 1.84
+    pValue: 0.0001
+    interpretation: Full-cohort composite result; keep distinct from the initial 350-person estimate.
+    sourceRefs:
+      - sourceId: src-triluminate-572
+        locator: Results
+    reviewStatus: draft
+    pValueQualifier: <
+  - id: outcome-tri-572-hfh-1y
+    readoutId: readout-tri-572-1y
+    endpointId: endpoint-tri-hfh-1y
+    arms:
+      - armId: arm-teer
+        value: 0.17
+        unit: events/patient-year
+      - armId: arm-control
+        value: 0.2
+        unit: events/patient-year
+    pValue: 0.4
+    interpretation: One-year HF hospitalization rates did not demonstrate a difference.
+    sourceRefs:
+      - sourceId: src-triluminate-572
+        locator: Results
+    reviewStatus: draft
+  - id: outcome-tri-572-hfh-2y
+    readoutId: readout-tri-572-2y
+    endpointId: endpoint-tri-hfh-2y
+    arms:
+      - armId: arm-teer
+        value: 0.19
+        unit: events/patient-year
+      - armId: arm-control
+        value: 0.26
+        unit: events/patient-year
+    effect:
+      measure: Joint-frailty hazard ratio
+      value: 0.72
+      ci:
+        upper: 0.93
+        sidedness: one_sided
+    pValue: 0.02
+    interpretation: Fewer recurrent HF hospitalizations through two years.
+    sourceRefs:
+      - sourceId: src-triluminate-2y
+        locator: Results
+    reviewStatus: draft
+    limitation: >-
+      Abstract reports a one-sided upper confidence limit; nominal level is not specified there. Do not render
+      as a two-sided 95% interval.
+  - id: outcome-tri-572-death-2y
+    readoutId: readout-tri-572-2y
+    endpointId: endpoint-tri-death-2y
+    arms:
+      - armId: arm-teer
+        value: 17.9
+        unit: '%'
+      - armId: arm-control
+        value: 17.1
+        unit: '%'
+    interpretation: Mortality was similar; no mortality advantage established.
+    sourceRefs:
+      - sourceId: src-triluminate-2y
+        locator: Results
+    reviewStatus: draft
+  - id: outcome-predict-primary
+    readoutId: readout-predict-90d
+    endpointId: endpoint-predict-primary
+    arms:
+      - armId: arm-standard
+        value: 41.8
+        unit: '%'
+        denominator: 91
+      - armId: arm-simulation
+        value: 28.9
+        unit: '%'
+        denominator: 90
+    effect:
+      measure: Risk ratio, simulation / standard
+      value: 0.69
+      ci:
+        lower: 0.46
+        upper: 1.04
+        level: 95
+        sidedness: two_sided
+    pValue: 0.08
+    interpretation: Primary imaging endpoint was inconclusive.
+    sourceRefs:
+      - sourceId: src-predict
+        locator: Table 2, primary endpoint
+    reviewStatus: draft
+    limitation: The confidence interval crosses 1. Clinical event reduction was not established.
+  - id: outcome-predict-closure
+    readoutId: readout-predict-90d
+    endpointId: endpoint-predict-closure
+    arms:
+      - armId: arm-standard
+        value: 44
+        unit: '%'
+        denominator: 91
+      - armId: arm-simulation
+        value: 61.1
+        unit: '%'
+        denominator: 90
+    pValue: 0.03
+    interpretation: Complete closure favored simulation on a secondary endpoint.
+    sourceRefs:
+      - sourceId: src-predict
+        locator: Table 2, complete LAA closure
+    reviewStatus: draft
+    limitation: >-
+      Secondary, unadjusted comparison; do not reinterpret it as primary-endpoint success. The paper’s
+      relative-benefit estimate is not copied because its relation to the displayed proportions requires
+      review.
+  - id: outcome-vital-score
+    readoutId: readout-vital-6m
+    endpointId: endpoint-vital-score
+    arms: []
+    effect:
+      measure: Adjusted between-group mean difference
+      value: 0.78
+      unit: score points
+      ci:
+        lower: 0.21
+        upper: 1.34
+        level: 95
+        sidedness: two_sided
+    pValue: 0.007
+    interpretation: The care program improved medication optimization at six months.
+    sourceRefs:
+      - sourceId: src-vital
+        locator: Results
+    reviewStatus: draft
+    limitation: A medication score is not hospitalization, survival, or standalone algorithm efficacy.
+lineage:
+  - id: lineage-evolut-fx-plus
+    fromVersionId: ver-evolut-fx
+    toVersionId: ver-evolut-fx-plus
+    relationship: derived_from
+    explanation: FDA describes FX+ as building on FX with expanded coronary-access windows.
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: Section V, page 3
+    reviewStatus: draft
+  - id: lineage-feops-build
+    fromVersionId: ver-feops-141
+    toVersionId: ver-feops-heartguide
+    relationship: succeeds
+    explanation: The comparison identifies a shared code base and an expanded device library.
+    sourceRefs:
+      - sourceId: src-feops
+        locator: Technological comparison, pages 3–4
+    reviewStatus: draft
+  - id: lineage-feops-dasi-predicate
+    fromVersionId: ver-feops-heartguide
+    toVersionId: ver-dasi-11
+    relationship: predicate_for
+    explanation: >-
+      Regulatory comparison only; this does not establish code, company, product ancestry, or shared clinical
+      outcomes.
+    sourceRefs:
+      - sourceId: src-dasi
+        locator: Predicate-device section, page 1 of summary
+    reviewStatus: draft
+events:
+  - id: event-sapien-intermediate
+    title: 'SAPIEN 3: indication expansion without an inferred redesign'
+    eventDate:
+      value: '2016-08-18'
+      precision: day
+    publishedAt:
+      value: '2026-09-20'
+      precision: day
+    discoveredAt: '2026-09-20'
+    kind: indication
+    versionIds:
+      - ver-sapien-3
+    decisionIds:
+      - decision-sapien-s010
+    readoutIds: []
+    before: High-or-greater-risk native calcific AS.
+    after: Intermediate-risk patients included.
+    whyItMatters: A label boundary can change while product identity stays stable.
+    uncertainty: This historical excerpt is not the complete current IFU.
+    sourceRefs:
+      - sourceId: src-sapien-original
+        locator: Approval-order statement
+      - sourceId: src-sapien-s010
+        locator: Approval-order statement
+    reviewStatus: draft
+  - id: event-sapien-resilia
+    title: 'SAPIEN 3 Ultra RESILIA: a separately recorded product change'
+    eventDate:
+      value: '2022-07-28'
+      precision: day
+    publishedAt:
+      value: '2026-09-20'
+      precision: day
+    discoveredAt: '2026-09-20'
+    kind: design
+    versionIds:
+      - ver-sapien-ultra-resilia
+    decisionIds:
+      - decision-sapien-s141
+    readoutIds: []
+    before: SAPIEN 3 product record.
+    after: Ultra RESILIA named in a design/components/material supplement.
+    whyItMatters: Track engineering disclosure separately from patient eligibility.
+    uncertainty: The short FDA entry does not identify every changed component or establish comparative durability.
+    sourceRefs:
+      - sourceId: src-sapien-s141
+        locator: Device and supplement-reason fields
+    reviewStatus: draft
+  - id: event-watchman-dapt
+    title: 'WATCHMAN: a regimen change is not an implant generation'
+    eventDate:
+      value: '2022-09-02'
+      precision: day
+    publishedAt:
+      value: '2026-09-20'
+      precision: day
+    discoveredAt: '2026-09-20'
+    kind: labeling
+    versionIds:
+      - ver-watchman-flx
+    decisionIds:
+      - decision-watchman-s043
+    readoutIds: []
+    before: Prior post-implant regimen options.
+    after: DAPT added as an alternative.
+    whyItMatters: The same implant can gain a different care pathway.
+    uncertainty: The record also names original WATCHMAN; full regimen instructions need the applicable IFU.
+    sourceRefs:
+      - sourceId: src-watchman-s043
+        locator: Approval-order statement
+    reviewStatus: draft
+  - id: event-watchman-ablation
+    title: 'WATCHMAN FLX / FLX Pro: post-ablation eligibility'
+    eventDate:
+      value: '2025-07-16'
+      precision: day
+    publishedAt:
+      value: '2026-09-20'
+      precision: day
+    discoveredAt: '2026-09-20'
+    kind: indication
+    versionIds:
+      - ver-watchman-flx
+      - ver-watchman-flx-pro
+    decisionIds:
+      - decision-watchman-s074
+    readoutIds: []
+    before: Previously defined non-valvular AF population.
+    after: A post-ablation indication is described for selected patients.
+    whyItMatters: Connect indication changes to their evidence and named models.
+    uncertainty: No new hardware generation is inferred from this label decision.
+    sourceRefs:
+      - sourceId: src-watchman-s074
+        locator: Approval-order statement
+    reviewStatus: draft
+  - id: event-evolut-redo
+    title: 'Evolut: redo-TAVR authorization follows its own history'
+    eventDate:
+      value: '2025-08-27'
+      precision: day
+    publishedAt:
+      value: '2026-09-20'
+      precision: day
+    discoveredAt: '2026-09-20'
+    kind: indication
+    versionIds:
+      - ver-evolut-fx
+      - ver-evolut-fx-plus
+    decisionIds:
+      - decision-evolut-s174
+    readoutIds: []
+    before: Previously supported aortic-valve indications.
+    after: Failed transcatheter bioprostheses included for high-or-greater-risk patients.
+    whyItMatters: Patient fit must include the prior implant and coronary-access constraints.
+    uncertainty: The authorization does not establish the suitability of every valve-in-valve combination.
+    sourceRefs:
+      - sourceId: src-evolut-order
+        locator: Approval order, page 1
+    reviewStatus: draft
+  - id: event-feops-library
+    title: 'FEops: a software update changes the simulated-device library'
+    eventDate:
+      value: '2022-02-25'
+      precision: day
+    publishedAt:
+      value: '2026-09-20'
+      precision: day
+    discoveredAt: '2026-09-20'
+    kind: software
+    versionIds:
+      - ver-feops-141
+      - ver-feops-heartguide
+    decisionIds:
+      - decision-feops
+    readoutIds: []
+    before: Build 1.4.1 library.
+    after: Build 1.4.2 includes additional LAA occluder models.
+    whyItMatters: Digital lineage needs software build and supported implant identity.
+    uncertainty: This is LAA planning authorization; it does not extend to all structural-heart procedures.
+    sourceRefs:
+      - sourceId: src-feops
+        locator: Technological comparison, pages 3–4
+    reviewStatus: draft
+  - id: event-predict-laa
+    title: 'PREDICT-LAA: primary and secondary outcomes tell different stories'
+    eventDate:
+      value: '2023-03-27'
+      precision: day
+    publishedAt:
+      value: '2026-09-20'
+      precision: day
+    discoveredAt: '2026-09-20'
+    kind: evidence
+    versionIds: []
+    decisionIds: []
+    readoutIds:
+      - readout-predict-90d
+    before: Patient-specific simulation offered a planning hypothesis.
+    after: >-
+      The primary imaging endpoint remained inconclusive; complete closure favored simulation as a secondary
+      result.
+    whyItMatters: Separate technical accuracy, procedural utility, and clinical benefit.
+    uncertainty: >-
+      Exact software build unresolved; CT missingness and unadjusted secondary comparisons limit
+      interpretation.
+    sourceRefs:
+      - sourceId: src-predict
+        locator: Table 2
+    reviewStatus: draft
+  - id: event-triluminate-two-years
+    title: 'TRILUMINATE: retain both cohort size and follow-up'
+    eventDate:
+      value: '2025-03-30'
+      precision: day
+    publishedAt:
+      value: '2026-09-20'
+      precision: day
+    discoveredAt: '2026-09-20'
+    kind: evidence
+    versionIds: []
+    decisionIds: []
+    readoutIds:
+      - readout-tri-572-2y
+    before: The one-year full-cohort readout showed similar HF hospitalization rates.
+    after: A two-year recurrent-hospitalization benefit was reported.
+    whyItMatters: New follow-up adds evidence without overwriting the earlier readout.
+    uncertainty: Mortality remained similar; control crossover affects some composite outcomes.
+    sourceRefs:
+      - sourceId: src-triluminate-2y
+        locator: Results
+    reviewStatus: draft
+media:
+  - id: media-sapien-3-valve
+    versionIds:
+      - ver-sapien-3
+    panel: design
+    title: SAPIEN 3 transcatheter heart valve
+    caption: Official FDA figure showing the balloon-expandable valve configuration described in the original SSED.
+    alt: Grayscale FDA figure of the SAPIEN 3 transcatheter heart valve with its cylindrical frame and leaflet assembly.
+    assetPath: /evidence/fda/sapien-3-transcatheter-heart-valve.png
+    page: 2
+    figure: Figure 1
+    sourceRefs:
+      - sourceId: src-sapien-ssed
+        locator: 'PDF page 2, Figure 1; Section V Device Description'
+    reviewStatus: reviewed
+  - id: media-evolut-fx-valve
+    versionIds:
+      - ver-evolut-fx
+    panel: design
+    title: Evolut FX valve configuration
+    caption: FDA figure associated with the Evolut FX description, including its implant-depth marker feature.
+    alt: Grayscale FDA figure of the tall self-expanding Evolut FX transcatheter aortic valve frame.
+    assetPath: /evidence/fda/evolut-fx-valve.png
+    page: 3
+    figure: Figure 1
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: 'PDF page 3, Figure 1; Section V Device Description'
+    reviewStatus: reviewed
+  - id: media-evolut-fx-plus-valve
+    versionIds:
+      - ver-evolut-fx-plus
+    panel: design
+    title: Evolut FX+ valve configuration
+    caption: FDA figure for the FX+ configuration; the accompanying text identifies expanded frame windows for future coronary access.
+    alt: FDA figure of the self-expanding Evolut FX Plus valve frame with expanded upper-frame window geometry.
+    assetPath: /evidence/fda/evolut-fx-plus-valve.png
+    page: 3
+    figure: Figure 2
+    sourceRefs:
+      - sourceId: src-evolut-ssed
+        locator: 'PDF page 3, Figure 2; Section V Device Description'
+    reviewStatus: reviewed
+  - id: media-triclip-g4-system
+    versionIds:
+      - ver-triclip-g4
+    panel: action
+    title: TriClip G4 system and controls
+    caption: Official system figure linking the delivery controls, guide catheter, stabilizer, and four named implant configurations.
+    alt: Labeled FDA system diagram showing the TriClip G4 delivery handle, steerable guide catheter, stabilizer, and NT, NTW, XT, and XTW implants.
+    assetPath: /evidence/fda/triclip-g4-system.png
+    page: 2
+    figure: Figure 1
+    sourceRefs:
+      - sourceId: src-triclip-ssed
+        locator: 'PDF page 2, Figure 1; Section V Device Description'
+    reviewStatus: reviewed
+  - id: media-feops-heartguide-function
+    versionIds:
+      - ver-feops-heartguide
+    panel: workflow
+    title: FEops HEARTguide workflow boundary
+    caption: FDA summary excerpt describing the CT-based simulation workflow, report output, and clinician decision boundary for version 1.4.2.
+    alt: FDA 510(k) summary excerpt describing FEops HEARTguide inputs, analyst-operated simulation, report output, and clinician review.
+    assetPath: /evidence/fda/feops-heartguide-function.png
+    page: 5
+    crop:
+      x: 0.0863
+      y: 0.0576
+      width: 0.8275
+      height: 0.4182
+    sourceRefs:
+      - sourceId: src-feops
+        locator: 'PDF page 5, 510(k) Summary, Description and Functioning'
+    reviewStatus: reviewed
+  - id: media-precisiontavi-function
+    versionIds:
+      - ver-dasi-11
+    panel: function
+    title: PrecisionTAVI 1.1 function and output
+    caption: FDA summary excerpt describing patient-specific finite-element simulation and the report delivered for clinician review.
+    alt: FDA 510(k) summary excerpt describing PrecisionTAVI inputs, simulation steps, report output, and clinician validation responsibility.
+    assetPath: /evidence/fda/precisiontavi-function.png
+    page: 5
+    crop:
+      x: 0.0902
+      y: 0.0455
+      width: 0.8196
+      height: 0.4182
+    sourceRefs:
+      - sourceId: src-dasi
+        locator: 'PDF page 5, 510(k) Summary, Device Description and Function'
+    reviewStatus: reviewed

@@ -1,0 +1,307 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://visualize-sh.org/schema/intelligence.schema.json",
+  "title": "VISUALIZE-SH source-linked intelligence data",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "updatedAt", "coverage", "sources", "families", "versions", "claims", "decisions", "indications", "trials", "trialSnapshots", "cohorts", "endpoints", "readouts", "outcomes", "lineage", "events"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "updatedAt": { "$ref": "#/$defs/dateOnly" },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "description"],
+      "properties": { "title": { "$ref": "#/$defs/nonEmpty" }, "description": { "$ref": "#/$defs/nonEmpty" } }
+    },
+    "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
+    "families": { "type": "array", "items": { "$ref": "#/$defs/family" } },
+    "versions": { "type": "array", "items": { "$ref": "#/$defs/version" } },
+    "comparisonCategories": { "type": "array", "items": { "$ref": "#/$defs/comparisonCategory" } },
+    "standardAttributes": { "type": "array", "items": { "$ref": "#/$defs/standardAttribute" } },
+    "comparative": { "type": "object" },
+    "claims": { "type": "array", "items": { "$ref": "#/$defs/claim" } },
+    "decisions": { "type": "array", "items": { "$ref": "#/$defs/decision" } },
+    "indications": { "type": "array", "items": { "$ref": "#/$defs/indication" } },
+    "trials": { "type": "array", "items": { "$ref": "#/$defs/trial" } },
+    "trialSnapshots": { "type": "array", "items": { "$ref": "#/$defs/trialSnapshot" } },
+    "cohorts": { "type": "array", "items": { "$ref": "#/$defs/cohort" } },
+    "endpoints": { "type": "array", "items": { "$ref": "#/$defs/endpoint" } },
+    "readouts": { "type": "array", "items": { "$ref": "#/$defs/readout" } },
+    "outcomes": { "type": "array", "items": { "$ref": "#/$defs/outcome" } },
+    "lineage": { "type": "array", "items": { "$ref": "#/$defs/lineageEdge" } },
+    "events": { "type": "array", "items": { "$ref": "#/$defs/event" } },
+    "media": { "type": "array", "items": { "$ref": "#/$defs/media" } }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$", "minLength": 3, "maxLength": 160 },
+    "nonEmpty": { "type": "string", "minLength": 1, "pattern": "\\S" },
+    "dateOnly": { "type": "string", "format": "date" },
+    "dateTime": { "type": "string", "format": "date-time" },
+    "evidenceDate": {
+      "type": "object", "additionalProperties": false, "required": ["value", "precision"],
+      "properties": {
+        "value": { "type": "string", "pattern": "^\\d{4}(?:-\\d{2}(?:-\\d{2})?)?$" },
+        "precision": { "enum": ["day", "month", "year"] }
+      }
+    },
+    "sourceRef": {
+      "type": "object", "additionalProperties": false, "required": ["sourceId", "locator"],
+      "properties": { "sourceId": { "$ref": "#/$defs/id" }, "locator": { "$ref": "#/$defs/nonEmpty" } }
+    },
+    "sourceRefs": { "type": "array", "items": { "$ref": "#/$defs/sourceRef" } },
+    "reviewStatus": { "enum": ["draft", "reviewed"] },
+    "provenanceProperties": {
+      "properties": {
+        "sourceRefs": { "$ref": "#/$defs/sourceRefs" },
+        "reviewStatus": { "$ref": "#/$defs/reviewStatus" }
+      }
+    },
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "title", "url", "kind", "publisher", "retrievedAt", "access"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "title": { "$ref": "#/$defs/nonEmpty" },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "kind": { "enum": ["regulatory", "registry", "publication", "manufacturer", "technical", "other"] },
+        "publisher": { "$ref": "#/$defs/nonEmpty" }, "publishedAt": { "$ref": "#/$defs/evidenceDate" },
+        "retrievedAt": { "anyOf": [{ "$ref": "#/$defs/dateOnly" }, { "$ref": "#/$defs/dateTime" }] },
+        "access": { "enum": ["public", "licensed"] }, "identifier": { "$ref": "#/$defs/nonEmpty" },
+        "snapshotPath": { "type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      },
+      "allOf": [
+        { "if": { "required": ["snapshotPath"] }, "then": { "required": ["sha256"], "properties": { "access": { "const": "public" } } } },
+        { "if": { "required": ["sha256"] }, "then": { "required": ["snapshotPath"] } }
+      ]
+    },
+    "family": {
+      "type": "object", "additionalProperties": false, "required": ["id", "name", "manufacturer", "entityIds", "conditionIds", "description"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "name": { "$ref": "#/$defs/nonEmpty" }, "manufacturer": { "$ref": "#/$defs/nonEmpty" },
+        "entityIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "conditionIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "description": { "$ref": "#/$defs/nonEmpty" }
+      },
+      "anyOf": [{ "properties": { "entityIds": { "minItems": 1 } } }, { "properties": { "conditionIds": { "minItems": 1 } } }]
+    },
+    "comparisonCategory": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "label", "conditionId", "versionKind", "therapyClass", "targetStructure", "mechanism", "versionIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "label": { "$ref": "#/$defs/nonEmpty" }, "order": { "type": "integer", "minimum": 0 },
+        "conditionId": { "$ref": "#/$defs/id" }, "versionKind": { "enum": ["device", "digital", "pharmaceutical", "procedure"] }, "therapyClass": { "$ref": "#/$defs/nonEmpty" },
+        "targetStructure": { "$ref": "#/$defs/nonEmpty" }, "mechanism": { "$ref": "#/$defs/nonEmpty" },
+        "versionIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } }
+      }
+    },
+    "standardAttribute": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "label", "section", "order", "valueType", "scope", "categoryIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "label": { "$ref": "#/$defs/nonEmpty" },
+        "section": { "$ref": "#/$defs/nonEmpty" }, "order": { "type": "integer", "minimum": 0 },
+        "valueType": { "enum": ["text", "number", "boolean"] }, "scope": { "enum": ["version_wide", "configuration", "jurisdiction"] },
+        "categoryIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } }
+      }
+    },
+    "version": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "familyId", "name", "kind", "clinicalRole", "summary", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "familyId": { "$ref": "#/$defs/id" }, "name": { "$ref": "#/$defs/nonEmpty" },
+        "kind": { "enum": ["device", "digital", "pharmaceutical", "procedure"] },
+        "clinicalRole": { "enum": ["treats", "manages", "detects", "plans", "monitors"] },
+        "model": { "$ref": "#/$defs/nonEmpty" }, "softwareVersion": { "$ref": "#/$defs/nonEmpty" },
+        "digitalSubtype": { "enum": ["therapeutic", "care_delivery", "diagnostic", "planning", "monitoring"] },
+        "summary": { "$ref": "#/$defs/nonEmpty" }, "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" },
+        "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      },
+      "allOf": [
+        { "if": { "properties": { "kind": { "const": "digital" } }, "required": ["kind"] }, "then": { "required": ["digitalSubtype"] }, "else": { "not": { "required": ["digitalSubtype"] } } }
+      ]
+    },
+    "claim": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "versionId", "category", "key", "label", "availability", "basis", "observedAt", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "versionId": { "$ref": "#/$defs/id" },
+        "category": { "enum": ["design", "fit", "evidence", "evolution", "digital"] },
+        "key": { "type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$" }, "label": { "$ref": "#/$defs/nonEmpty" },
+        "value": { "type": ["string", "number", "boolean"], "minLength": 1 }, "unit": { "$ref": "#/$defs/nonEmpty" },
+        "availability": { "enum": ["reported", "not_publicly_disclosed", "not_yet_reviewed", "not_applicable", "conflicting"] },
+        "basis": { "enum": ["directly_reported", "derived", "analyst_interpretation"] },
+        "context": { "$ref": "#/$defs/nonEmpty" }, "limitation": { "$ref": "#/$defs/nonEmpty" }, "observedAt": { "$ref": "#/$defs/dateOnly" },
+        "comparisonAttributeId": { "$ref": "#/$defs/id" },
+        "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" }, "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      },
+      "allOf": [
+        { "if": { "properties": { "availability": { "const": "reported" } }, "required": ["availability"] }, "then": { "required": ["value"], "properties": { "sourceRefs": { "minItems": 1 } } }, "else": { "not": { "required": ["value"] } } }
+      ]
+    },
+    "decision": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "identifier", "rootIdentifier", "jurisdiction", "pathway", "date", "versionIds", "changeType", "summary", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "identifier": { "$ref": "#/$defs/nonEmpty" }, "rootIdentifier": { "$ref": "#/$defs/nonEmpty" },
+        "jurisdiction": { "$ref": "#/$defs/nonEmpty" }, "pathway": { "enum": ["PMA", "510(k)", "De Novo", "HDE", "NDA", "BLA", "other"] },
+        "date": { "$ref": "#/$defs/evidenceDate" }, "versionIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "changeType": { "enum": ["initial_authorization", "indication", "labeling", "design", "manufacturing", "software", "other"] },
+        "summary": { "$ref": "#/$defs/nonEmpty" }, "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" }, "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      }
+    },
+    "indication": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "decisionId", "versionIds", "jurisdiction", "effectiveDate", "text", "textType", "population", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "decisionId": { "$ref": "#/$defs/id" },
+        "versionIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "jurisdiction": { "$ref": "#/$defs/nonEmpty" }, "effectiveDate": { "$ref": "#/$defs/evidenceDate" }, "text": { "$ref": "#/$defs/nonEmpty" },
+        "textType": { "enum": ["verbatim", "paraphrase"] }, "population": { "$ref": "#/$defs/nonEmpty" },
+        "anatomy": { "$ref": "#/$defs/nonEmpty" }, "restrictions": { "$ref": "#/$defs/nonEmpty" }, "supersedesId": { "$ref": "#/$defs/id" },
+        "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" }, "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      }
+    },
+    "trial": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "name", "design", "versionIds", "versionMapping", "population", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "name": { "$ref": "#/$defs/nonEmpty" }, "nctId": { "type": "string", "pattern": "^NCT\\d{8}$" },
+        "entityId": { "$ref": "#/$defs/id" }, "familyIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } }, "design": { "$ref": "#/$defs/nonEmpty" },
+        "versionIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "versionMapping": { "enum": ["exact", "mixed", "unclear"] }, "population": { "$ref": "#/$defs/nonEmpty" },
+        "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" }, "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      },
+      "allOf": [
+        { "if": { "properties": { "versionMapping": { "const": "exact" } }, "required": ["versionMapping"] }, "then": { "properties": { "versionIds": { "minItems": 1, "maxItems": 1 } } } },
+        { "if": { "properties": { "versionMapping": { "const": "mixed" } }, "required": ["versionMapping"] }, "then": { "properties": { "versionIds": { "minItems": 2 } } } },
+        { "if": { "properties": { "versionMapping": { "const": "unclear" } }, "required": ["versionMapping"] }, "then": { "required": ["familyIds"], "properties": { "versionIds": { "maxItems": 0 }, "familyIds": { "minItems": 1 } } } }
+      ]
+    },
+    "trialSnapshot": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "trialId", "observedAt", "status", "enrollment", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "trialId": { "$ref": "#/$defs/id" }, "observedAt": { "$ref": "#/$defs/dateOnly" },
+        "registryUpdatedAt": { "$ref": "#/$defs/dateOnly" }, "status": { "$ref": "#/$defs/nonEmpty" },
+        "enrollment": {
+          "type": "object", "additionalProperties": false, "required": ["value", "basis", "scope"],
+          "properties": { "value": { "type": "integer", "minimum": 0 }, "basis": { "enum": ["estimated", "actual"] }, "scope": { "$ref": "#/$defs/nonEmpty" } }
+        },
+        "note": { "$ref": "#/$defs/nonEmpty" }, "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" },
+        "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      }
+    },
+    "cohort": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "trialId", "name", "population", "enrollment", "arms", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "trialId": { "$ref": "#/$defs/id" }, "name": { "$ref": "#/$defs/nonEmpty" }, "population": { "$ref": "#/$defs/nonEmpty" },
+        "enrollment": { "type": "array", "items": {
+          "type": "object", "additionalProperties": false, "required": ["value", "stage"],
+          "properties": { "value": { "type": "integer", "minimum": 0 }, "stage": { "enum": ["target", "screened", "randomized", "treated", "analyzed"] }, "note": { "$ref": "#/$defs/nonEmpty" } }
+        } },
+        "arms": { "type": "array", "minItems": 1, "items": {
+          "type": "object", "additionalProperties": false, "required": ["id", "name"],
+          "properties": { "id": { "$ref": "#/$defs/id" }, "name": { "$ref": "#/$defs/nonEmpty" }, "randomized": { "type": "integer", "minimum": 0 } }
+        } },
+        "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" }, "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      }
+    },
+    "endpoint": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "name", "definition", "hierarchy", "measureType", "timeframe", "analysisPopulation", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "name": { "$ref": "#/$defs/nonEmpty" }, "definition": { "$ref": "#/$defs/nonEmpty" },
+        "hierarchy": { "enum": ["primary", "secondary", "exploratory", "component", "not_reported"] },
+        "measureType": { "enum": ["binary", "continuous", "time_to_event", "rate", "hierarchical", "count"] },
+        "timeframe": { "$ref": "#/$defs/nonEmpty" }, "analysisPopulation": { "$ref": "#/$defs/nonEmpty" }, "standard": { "$ref": "#/$defs/nonEmpty" },
+        "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" }, "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      }
+    },
+    "readout": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "trialId", "cohortId", "title", "publishedAt", "followUp", "maturity", "versionIds", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "trialId": { "$ref": "#/$defs/id" }, "cohortId": { "$ref": "#/$defs/id" },
+        "title": { "$ref": "#/$defs/nonEmpty" }, "publishedAt": { "$ref": "#/$defs/evidenceDate" }, "followUp": { "$ref": "#/$defs/nonEmpty" },
+        "maturity": { "enum": ["interim", "primary", "follow_up"] },
+        "versionIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "limitation": { "$ref": "#/$defs/nonEmpty" }, "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" },
+        "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      }
+    },
+    "outcome": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "readoutId", "endpointId", "arms", "interpretation", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "readoutId": { "$ref": "#/$defs/id" }, "endpointId": { "$ref": "#/$defs/id" },
+        "arms": { "type": "array", "items": {
+          "type": "object", "additionalProperties": false, "required": ["armId", "value", "unit"],
+          "properties": { "armId": { "$ref": "#/$defs/id" }, "value": { "type": "number" }, "unit": { "$ref": "#/$defs/nonEmpty" }, "denominator": { "type": "integer", "minimum": 1 } }
+        } },
+        "effect": {
+          "type": "object", "additionalProperties": false, "required": ["measure", "value"],
+          "properties": {
+            "measure": { "$ref": "#/$defs/nonEmpty" }, "value": { "type": "number" }, "unit": { "$ref": "#/$defs/nonEmpty" },
+            "ci": {
+              "type": "object", "additionalProperties": false, "required": ["sidedness"],
+              "properties": { "lower": { "type": "number" }, "upper": { "type": "number" }, "level": { "type": "number", "exclusiveMinimum": 0, "maximum": 100 }, "sidedness": { "enum": ["one_sided", "two_sided"] } }
+            }
+          }
+        },
+        "pValue": { "type": "number", "minimum": 0, "maximum": 1 }, "pValueQualifier": { "enum": ["=", "<", ">"] }, "interpretation": { "$ref": "#/$defs/nonEmpty" }, "limitation": { "$ref": "#/$defs/nonEmpty" },
+        "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" }, "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      },
+      "allOf": [{ "if": { "required": ["pValueQualifier"] }, "then": { "required": ["pValue"] } }]
+    },
+    "lineageEdge": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "fromVersionId", "toVersionId", "relationship", "explanation", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "fromVersionId": { "$ref": "#/$defs/id" }, "toVersionId": { "$ref": "#/$defs/id" },
+        "relationship": { "enum": ["succeeds", "derived_from", "uses_component", "compatible_with", "predicate_for", "evidence_bridged_to"] },
+        "explanation": { "$ref": "#/$defs/nonEmpty" }, "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" },
+        "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      }
+    },
+    "event": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "title", "eventDate", "publishedAt", "discoveredAt", "kind", "versionIds", "decisionIds", "readoutIds", "before", "after", "whyItMatters", "uncertainty", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "title": { "$ref": "#/$defs/nonEmpty" }, "eventDate": { "$ref": "#/$defs/evidenceDate" },
+        "publishedAt": { "$ref": "#/$defs/evidenceDate" }, "discoveredAt": { "$ref": "#/$defs/dateOnly" },
+        "kind": { "enum": ["design", "indication", "labeling", "manufacturing", "software", "evidence"] },
+        "versionIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "decisionIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "readoutIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "before": { "$ref": "#/$defs/nonEmpty" }, "after": { "$ref": "#/$defs/nonEmpty" }, "whyItMatters": { "$ref": "#/$defs/nonEmpty" }, "uncertainty": { "$ref": "#/$defs/nonEmpty" },
+        "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" }, "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      },
+      "anyOf": [
+        { "properties": { "versionIds": { "minItems": 1 } } }, { "properties": { "decisionIds": { "minItems": 1 } } }, { "properties": { "readoutIds": { "minItems": 1 } } }
+      ]
+    },
+    "media": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "versionIds", "panel", "title", "caption", "alt", "assetPath", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "versionIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "panel": { "enum": ["design", "fit", "function", "action", "workflow"] },
+        "title": { "$ref": "#/$defs/nonEmpty" }, "caption": { "$ref": "#/$defs/nonEmpty" }, "alt": { "$ref": "#/$defs/nonEmpty" },
+        "assetPath": { "type": "string", "pattern": "^/evidence/(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9][A-Za-z0-9._/-]*\\.(?:png|jpe?g|webp|avif)$" },
+        "page": { "type": "integer", "minimum": 1 }, "figure": { "$ref": "#/$defs/nonEmpty" },
+        "crop": {
+          "type": "object", "additionalProperties": false, "required": ["x", "y", "width", "height"],
+          "properties": {
+            "x": { "type": "number", "minimum": 0, "maximum": 1 }, "y": { "type": "number", "minimum": 0, "maximum": 1 },
+            "width": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 }, "height": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 }
+          }
+        },
+        "sourceRefs": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/sourceRef" } },
+        "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }
+      }
+    }
+  }
+}
