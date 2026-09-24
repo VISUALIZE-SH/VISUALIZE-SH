@@ -95,8 +95,10 @@ and to block force pushes and deletion. With a single GitHub account, use zero
 required PR approvals: GitHub cannot count the PR author's own approval. The owner
 must still inspect the diff, source links, and checks before merging. Add required
 CODEOWNERS review only after a second trusted reviewer has access. Configure
-`zoho-production` with the owner as a required reviewer, disable self-review and
-admin bypass, and allow deployments only from `main`.
+`zoho-production` with the owner as a required reviewer and allow deployments only
+from `main`. For the solo account, allow the owner to approve a run they started;
+otherwise GitHub would block every send. Keep admin bypass disabled. The manual
+`SEND` input and environment review remain separate actions.
 
 Under **Settings → Actions → General → Workflow permissions**, the organization
 must permit the built-in Actions token to write and allow Actions to create pull
