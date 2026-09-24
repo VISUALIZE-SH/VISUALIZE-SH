@@ -295,7 +295,8 @@ const lastUpdated = all.reduce(
 
 const draftCount = nodes.filter((n) => n.data.isDraft).length
 const scoredCount = nodes.filter((n) => n.data.pulse > 0).length
-const sortedNews = [...news].sort((a, b) => {
+// Validate every item above, then omit unreviewed research from the public feed.
+const sortedNews = news.filter((item) => item.reviewStatus !== 'draft').sort((a, b) => {
   const dateOrder = b.publishedAt.localeCompare(a.publishedAt)
   return dateOrder || a.id.localeCompare(b.id)
 })

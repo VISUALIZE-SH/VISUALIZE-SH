@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { escapeHtml, groupFor, isHttpsUrl, isSendableNewsItem } from './render-newsletter'
+import { escapeHtml, groupFor, isHttpsUrl, isSendableNewsItem, renderDocument, selectNewsForIssue } from './render-newsletter'
 
 test('escapes text and permits only public HTTPS URLs', () => {
   assert.equal(escapeHtml('<a&"\'>'), '&lt;a&amp;&quot;&#39;&gt;')
@@ -21,4 +21,8 @@ test('weekly sendable output excludes explicitly draft news', () => {
   assert.equal(isSendableNewsItem(item), true)
   assert.equal(isSendableNewsItem({ ...item, reviewStatus: 'reviewed' }), true)
   assert.equal(isSendableNewsItem({ ...item, reviewStatus: 'draft' }), false)
+  assert.deepEqual(selectNewsForIssue([{ ...item, reviewStatus: 'draft' }], '2026-01-01', '2026-01-07', true).map((value) => value.id), ['draft'])
+  assert.deepEqual(selectNewsForIssue([{ ...item, reviewStatus: 'draft' }], '2026-01-01', '2026-01-07', false), [])
+  const grouped: Parameters<typeof renderDocument>[2] = new Map([['Structural Heart', [{ ...item, reviewStatus: 'draft' as const }]]])
+  assert.match(renderDocument('2026-01-07', '2026-01-01', grouped, true, true), /DRAFT REVIEW — FOR LOCAL REVIEW ONLY; DO NOT SEND/)
 })

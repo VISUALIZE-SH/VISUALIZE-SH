@@ -37,9 +37,9 @@ node --import tsx scripts/newsletter-local.ts --dry-run
 ```
 
 Preflight reports only configuration names and statuses. It never prints values,
-refreshes a token, calls Zoho, creates a draft, or sends a campaign. The local
-command refuses `--draft` and `--send`; the existing Zoho command also defaults to
-dry-run and requires explicit flags for either remote operation.
+refreshes a token, calls Zoho, creates a draft, or sends a campaign. This command
+is for the flagship intelligence previews; weekly news uses the separate
+`newsletter:review` command and ignored `artifacts/newsletter-review/` output.
 
 For a project-page deployment, pass its base path so archive and workspace links
 remain valid:
@@ -55,13 +55,11 @@ The remaining manual rollout dependencies are account and domain operations:
 - Publish and verify SPF and DKIM and maintain DMARC for the sending domain.
 - Disable open, click, plain-text, reply, Google Analytics, and website-activity
   tracking in Zoho Campaigns.
-- Set the deployed HTTPS origin, hosted signup URL, matching Zoho data-center
-  endpoints, least-privilege environment secrets, and protected `zoho-production`
-  approval as described in `docs/ZOHO_CAMPAIGNS_SETUP.md` and
-  `docs/CLOUD_WORKFLOW.md`.
-- Review a test-list import and the required Zoho footer before enabling any
-  protected delivery. This local work does not modify Zoho, subscribe anyone, or
-  enable a schedule.
+- Verify the deployed HTTPS origin and hosted signup URL. Follow
+  `docs/LOCAL_NEWSLETTER_WORKFLOW.md` and `docs/ZOHO_CAMPAIGNS_SETUP.md` for the
+  local weekly review, exact-content check, Zoho import, and test-list send.
+- Review the required Zoho footer and actual test receipt before production
+  delivery. This preview command does not modify Zoho or subscribe anyone.
 
 Do not put credentials, refresh tokens, subscriber addresses, or sender details in
 the repository or generated preview files.

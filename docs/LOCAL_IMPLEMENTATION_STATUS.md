@@ -186,3 +186,19 @@ recorded in `curation.notes`.
 compilation, the security scan, and the newsletter dry run (live Zoho
 configuration still missing, as expected). `VITE_BASE=/ npm run build` passed.
 Nothing was committed or pushed.
+
+## Local weekly newsletter switch — September 24, 2026
+
+The Sunday Codex task now researches in the saved local project and stops after
+validation and draft previews. Its former Gmail delivery instruction was removed.
+New weekly news uses `reviewStatus: draft`; the public graph and normal digest
+exclude draft news while the ignored `artifacts/newsletter-review/` previews
+display it with a **DO NOT SEND** banner. The old GitHub research and Zoho send
+workflows are removed. Local public rendering reruns validation, and a separate
+local check compares deployed email HTML byte for byte before manual Zoho import.
+The old npm shortcuts for API research and programmatic Zoho sends are removed.
+
+`npm run newsletter:review -- --date 2026-09-20` rendered two items locally.
+`npm run validate:local` passed 65 tests, both TypeScript checks, schema builds,
+and the security scan. `VITE_BASE=/ npm run build` passed. No campaign was
+created or sent, and no subscriber data or private watchlist was published.

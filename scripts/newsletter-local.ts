@@ -23,18 +23,7 @@ const COMPILED_INTELLIGENCE_FILE = join(ROOT, 'public', 'intelligence.json')
 const INTELLIGENCE_SCHEMA_FILE = join(ROOT, 'schema', 'intelligence.schema.json')
 const EDITORIAL_FILE = join(ROOT, 'data', 'editorial-issues.yaml')
 const PREVIEW_DIR = join(ROOT, 'public', 'previews', 'newsletter')
-const REQUIRED_ENV = [
-  'NEWSLETTER_PUBLIC_ORIGIN',
-  'VITE_NEWSLETTER_SIGNUP_URL',
-  'ZOHO_ACCOUNTS_URL',
-  'ZOHO_CAMPAIGNS_API_URL',
-  'ZOHO_CLIENT_ID',
-  'ZOHO_CLIENT_SECRET',
-  'ZOHO_REFRESH_TOKEN',
-  'ZOHO_CAMPAIGNS_FROM_EMAIL',
-  'ZOHO_CAMPAIGNS_LIST_KEY',
-] as const
-const OPTIONAL_ENV = ['ZOHO_CAMPAIGNS_TOPIC_ID'] as const
+const OPTIONAL_PUBLIC_URLS = ['NEWSLETTER_PUBLIC_ORIGIN', 'VITE_NEWSLETTER_SIGNUP_URL'] as const
 
 type ReviewStatus = 'draft' | 'reviewed'
 interface EditorialIssue { slug: string; title: string; dek: string; versionIds: string[]; eventIds?: string[]; readoutIds?: string[]; claimIds?: string[] }
@@ -277,23 +266,9 @@ function envUrl(name: string): PreflightCheck {
     return { name, status: 'configured', detail: 'set; value withheld' }
   } catch { return { name, status: 'invalid', detail: 'must be an HTTPS URL; value withheld' } }
 }
-function envSecret(name: string, kind: 'email' | 'identifier' | 'opaque' = 'identifier'): PreflightCheck {
-  const value = process.env[name]?.trim()
-  if (!value) return { name, status: 'missing', detail: 'not set' }
-  const valid = kind === 'opaque'
-    ? value.length <= 2048 && !(/[\s\u0000-\u001f\u007f]/.test(value))
-    : kind === 'email'
-    ? value.length <= 254 && !(/[\s\u0000-\u001f\u007f]/.test(value)) && /^[^@]+@[^@]+\.[^@]+$/.test(value)
-    : value.length <= 256 && /^[A-Za-z0-9_-]+$/.test(value)
-  return { name, status: valid ? 'configured' : 'invalid', detail: valid ? 'set; value withheld' : 'format invalid; value withheld' }
-}
 export function preflight(): PreflightResult {
-  const checks: PreflightCheck[] = REQUIRED_ENV.map((name) => {
-    if (name.endsWith('_URL') || name.endsWith('_ORIGIN')) return envUrl(name)
-    if (name === 'ZOHO_CAMPAIGNS_FROM_EMAIL') return envSecret(name, 'email')
-    if (name === 'ZOHO_CLIENT_ID' || name === 'ZOHO_CLIENT_SECRET' || name === 'ZOHO_REFRESH_TOKEN') return envSecret(name, 'opaque')
-    return envSecret(name)
-  })
+  const checks: PreflightCheck[] = OPTIONAL_PUBLIC_URLS.map((name) => process.env[name]?.trim()
+    ? envUrl(name) : { name, status: 'pending', detail: 'optional for local preview; not set' })
   const origin = process.env.NEWSLETTER_PUBLIC_ORIGIN?.trim()
   if (origin) {
     try {
@@ -302,16 +277,6 @@ export function preflight(): PreflightResult {
       checks.push({ name: 'NEWSLETTER_PUBLIC_ORIGIN shape', status: 'configured', detail: 'origin shape checked; value withheld' })
     } catch { checks.push({ name: 'NEWSLETTER_PUBLIC_ORIGIN shape', status: 'invalid', detail: 'must be an HTTPS origin without a path; value withheld' }) }
   }
-  for (const name of OPTIONAL_ENV) checks.push(process.env[name]?.trim() ? envSecret(name) : { name, status: 'pending', detail: 'optional; not set' })
-  const accounts = process.env.ZOHO_ACCOUNTS_URL?.trim()
-  const campaigns = process.env.ZOHO_CAMPAIGNS_API_URL?.trim()
-  if (accounts && campaigns) {
-    try {
-      const a = new URL(accounts); const c = new URL(campaigns)
-      const match = new Map([['accounts.zoho.com', 'campaigns.zoho.com'], ['accounts.zoho.eu', 'campaigns.zoho.eu'], ['accounts.zoho.in', 'campaigns.zoho.in'], ['accounts.zoho.com.au', 'campaigns.zoho.com.au'], ['accounts.zoho.jp', 'campaigns.zoho.jp'], ['accounts.zoho.com.cn', 'campaigns.zoho.com.cn']]).get(a.hostname)
-      checks.push({ name: 'ZOHO data-center pair', status: match === c.hostname && a.pathname === '/' && c.pathname === '/api/v1.1' && !a.port && !c.port && !a.search && !c.search && !a.hash && !c.hash ? 'configured' : 'invalid', detail: 'host pair checked; values withheld' })
-    } catch { checks.push({ name: 'ZOHO data-center pair', status: 'invalid', detail: 'URL syntax invalid; values withheld' }) }
-  } else checks.push({ name: 'ZOHO data-center pair', status: 'pending', detail: 'requires both Zoho endpoint URLs' })
   const manualRequirements = ['Create the Zoho Campaigns organization and enter the public identity, mailing address, privacy URL, verified sender, and unsubscribe footer.', 'Publish and verify SPF and DKIM for the sending domain and maintain an appropriate DMARC policy.', 'Create the consent-controlled list/topic and hosted HTTPS signup form; enable double opt-in and retain the signup URL.', 'Disable Zoho open, click, plain-text, reply, Google Analytics, and website-activity tracking.', 'Configure NEWSLETTER_PUBLIC_ORIGIN only after HTTPS deployment; verify the exact public email URL and review the Zoho test-list import manually.']
   return { ok: checks.every((check) => check.status !== 'missing' && check.status !== 'invalid'), checks, manualRequirements }
 }
@@ -344,9 +309,9 @@ function main(args: string[]): void {
   if (args.includes('--send') || args.includes('--draft')) fail('this local command never creates or sends Zoho campaigns')
   const dryRun = args.includes('--dry-run')
   const check = preflight()
-  console.log(`local preflight: ${check.ok ? 'ready' : 'action required'}`)
+  console.log(`local preview preflight: ${check.ok ? 'ready' : 'invalid optional URL'}`)
   for (const item of check.checks) console.log(`${item.status.toUpperCase()} ${item.name}: ${item.detail}`)
-  if (!check.ok) console.log('Remaining manual Zoho/domain requirements:')
+  console.log('Before manual Zoho delivery:')
   for (const item of check.manualRequirements) console.log(`- ${item}`)
   if (dryRun) { console.log('dry-run: no files written and no Zoho request made'); return }
   const baseArgument = args.indexOf('--base')

@@ -41,6 +41,7 @@ and `latestNewsDate` in `graph.meta`.
       url: "https://www.example.org/second-source"
   topicTags: ["HCM", "clinical evidence"]
   relevantNodeIds: ["cond-hcm", "trial-example"]
+  reviewStatus: draft
 ```
 
 Required fields are `id`, `publishedAt`, `title`, `summary`, `sourceName`,
@@ -48,6 +49,11 @@ Required fields are `id`, `publishedAt`, `title`, `summary`, `sourceName`,
 id; correct copy in place but never reuse an id for a different story. Sources
 must be canonical public HTTPS URLs. `relevantNodeIds` must be non-empty and every
 id must already exist in the entity files; the build fails if a target is missing.
+New research starts with `reviewStatus: draft`. Draft news stays in the local
+tracked YAML during review but is omitted from compiled `graph.news` and the
+normal public digest. After checking the source and approving the issue locally,
+set accepted items to `reviewStatus: reviewed`; remove rejected items. Older items
+without this field retain their existing public behavior.
 
 Summaries may use two or three original sentences (up to 650 characters) when
 needed to preserve the scope, result, and uncertainty found in historical email
