@@ -54,18 +54,21 @@ validation together when adding a field, then update the corresponding TS types.
 - `npm run review:prepare` creates a local review packet from draft evidence and
   source-change proposals. FDA and ClinicalTrials.gov snapshots under ignored
   `artifacts/evidence/` are discovery inputs, not automatic edits to curated YAML.
-- `npm run newsletter:research -- --dry-run` checks local research configuration
-  without an API call. A real research run uses a private watchlist in ignored
-  `artifacts/research/source-registry.yaml` or the CI secret and writes a proposal
-  under ignored `artifacts/`; `newsletter:apply` adds draft-safe items for review.
-- `npm run newsletter:local -- --dry-run` reports configuration names and statuses
+- The active Sunday Codex task reads the private watchlist only from ignored
+  `artifacts/research/source-registry.yaml`, researches through the ChatGPT
+  account, and updates local data. It does not use the dormant direct API
+  research script or an OpenAI API key.
+- `npm run newsletter:review -- --date YYYY-MM-DD` validates changes and renders
+  draft browser/email previews under ignored `artifacts/newsletter-review/`.
+  New news remains `reviewStatus: draft` until a curator approves it.
+- `npm run newsletter:local -- --dry-run` checks optional public URLs
   without writing files or contacting Zoho. The flagship previews are marked
   draft and live outside the sendable `public/digests/` tree.
-- GitHub's weekly research workflow is off until
-  `NEWSLETTER_AUTOMATION_ENABLED=true`. Research opens a review PR; delivery is a
-  separate manual workflow from `main`, gated by a merged PR, exact Pages content,
-  the `SEND` input, and the `zoho-production` environment approval. See
-  `docs/CLOUD_WORKFLOW.md` for the full sequence.
+- The GitHub research and delivery workflows have been removed. After local
+  approval, render and publish the final issue; run
+  `npm run newsletter:delivery:check -- --date YYYY-MM-DD` to compare the
+  deployed HTML with the local file before a manual Zoho import and test send.
+  See `docs/LOCAL_NEWSLETTER_WORKFLOW.md` for the full sequence.
 - This checkout cannot verify GitHub rulesets, Zoho account settings, consent,
   sender authentication, or any successful production send. The outstanding
   account and domain setup is in `docs/ZOHO_CAMPAIGNS_SETUP.md`; the code review
@@ -85,10 +88,10 @@ Zoho for an already created or delivered campaign.
 - `docs/EVIDENCE_PIPELINE.md` and `docs/COMPARATIVE_DATA_MODEL.md`: evidence
   compilation, provenance, and configuration-level data rules.
 - `docs/NEWSLETTER_LOCAL_READINESS.md`: draft preview and preflight behavior.
-- `docs/CLOUD_WORKFLOW.md`, `docs/ZOHO_CAMPAIGNS_SETUP.md`, and
-  `docs/SECURITY_REVIEW.md`: cloud operations and rollout gates.
+- `docs/LOCAL_NEWSLETTER_WORKFLOW.md`, `docs/ZOHO_CAMPAIGNS_SETUP.md`, and
+  `docs/SECURITY_REVIEW.md`: local weekly operations and rollout gates.
 - `docs/LOCAL_IMPLEMENTATION_STATUS.md`: dated implementation and verification
   record. `docs/DEVICE_COMPARISON_PLAN.md` and
   `docs/VISUALIZE_SH_NEWS_ATLAS_DATA_PLAN.md` are design history; check the code and
-  status record for what is implemented now. `ROUTINE.md` is the legacy local
-  Sunday task contract until cloud cutover is confirmed.
+  status record for what is implemented now. `ROUTINE.md` is the active local
+  Sunday task contract.

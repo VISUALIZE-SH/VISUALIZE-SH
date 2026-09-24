@@ -66,20 +66,15 @@ or misleading association.
 
 ## Research and review boundaries
 
-The weekly job is split into research, application, rendering, and human review:
-
-1. `scripts/research-weekly.ts` receives a private source watchlist and searches a
-   bounded date window. It writes a proposal artifact, never curated YAML.
-2. `scripts/apply-weekly-research.ts` applies only draft-safe additions and keeps
-   proposed changes to curated facts in a review area.
-3. Newsletter rendering uses the same selected news; it does not perform a second
-   research pass.
-4. Cloud delivery occurs only after a reviewed PR and a separately protected send
-   action.
-
-The operator-maintained watchlist lives under ignored `artifacts/research/`
-locally and in a GitHub Actions secret in cloud runs. Its contents are operational
-research strategy, not public application data and not evidence by themselves.
+The weekly Codex task researches in the saved local project. It reads the private
+watchlist from ignored `artifacts/research/`, updates `data/news.yaml` with draft
+items, and builds ignored newsletter review previews. Draft news is excluded from
+the public compiled graph and normal digest renderer. The task stops for source
+and content review. After the owner approves the exact issue locally, a separate
+command validates and renders public HTML. Delivery requires a deployed HTML
+match and a separate local approval before a manual Zoho Campaigns send. See
+`docs/LOCAL_NEWSLETTER_WORKFLOW.md` for the steps. The watchlist is operational
+research strategy, not public application data or evidence by itself.
 
 Official PDFs and API snapshots also land under ignored `artifacts/evidence/`.
 Public images may be derived from a reviewed public document only when the media

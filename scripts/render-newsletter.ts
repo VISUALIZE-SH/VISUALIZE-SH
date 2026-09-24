@@ -40,6 +40,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = resolve(__dirname, '..')
 const NEWS_FILE = join(ROOT, 'data', 'news.yaml')
 const DIGESTS_DIR = join(ROOT, 'public', 'digests')
+const REVIEW_DIR = join(ROOT, 'artifacts', 'newsletter-review')
 
 export function escapeHtml(value: string): string {
   return value.replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]!)
@@ -73,6 +74,11 @@ export function groupFor(item: NewsItem): Group {
 
 export function isSendableNewsItem(item: NewsItem): boolean {
   return item.reviewStatus !== 'draft'
+}
+
+export function selectNewsForIssue(news: NewsItem[], startDate: string, issueDate: string, review: boolean): NewsItem[] {
+  return news.filter((item) => (review || isSendableNewsItem(item)) && item.publishedAt >= startDate && item.publishedAt <= issueDate)
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || a.id.localeCompare(b.id))
 }
 
 function loadNews(): NewsItem[] {
@@ -135,12 +141,16 @@ export function renderDocument(issueDate: string, startDate: string, grouped: Ma
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>${escapeHtml(title)}</title></head><body style="margin:0;background:#f4f4f4;">${email ? `<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td>${main}</td></tr></table>` : main}</body></html>\n`
 }
 
-function parseDateArgument(args: string[], latestDate: string): string {
+function parseArguments(args: string[], latestDate: string): { issueDate: string; review: boolean } {
+  const review = args.includes('--review')
+  if (args.filter((arg) => arg === '--review').length > 1) throw new Error('Use --review at most once')
   const index = args.indexOf('--date')
-  if (index === -1) return latestDate
-  const value = args[index + 1]
-  if (!value || args.filter((arg) => arg === '--date').length !== 1) throw new Error('Use --date YYYY-MM-DD at most once')
-  return value
+  if (args.filter((arg) => arg === '--date').length > 1) throw new Error('Use --date YYYY-MM-DD at most once')
+  const issueDate = index === -1 ? latestDate : args[index + 1]
+  if (!issueDate || issueDate === '--review' || args.some((arg, position) => arg !== '--review' && (index < 0 || (position !== index && position !== index + 1)))) {
+    throw new Error('Usage: newsletter:render [--review] [--date YYYY-MM-DD]')
+  }
+  return { issueDate, review }
 }
 
 function readIndex(): DigestIndexEntry[] {
@@ -151,7 +161,7 @@ function readIndex(): DigestIndexEntry[] {
   return parsed as DigestIndexEntry[]
 }
 
-export function renderIssue(issueDateArg?: string): DigestIndexEntry {
+export function renderIssue(issueDateArg?: string, review = false): { issueDate: string; itemCount: number; outputDir: string } {
   const news = loadNews()
   const latest = news.map((item) => item.publishedAt).sort().at(-1)
   if (!latest) throw new Error('No news items available')
@@ -160,29 +170,30 @@ export function renderIssue(issueDateArg?: string): DigestIndexEntry {
   const start = new Date(end)
   start.setUTCDate(start.getUTCDate() - 6)
   const startDate = dateString(start)
-  // Draft or unreviewed intelligence is preview-only. Legacy news records have
-  // no reviewStatus and remain eligible for the established weekly digest.
-  const selected = news.filter((item) => isSendableNewsItem(item) && item.publishedAt >= startDate && item.publishedAt <= issueDate)
-    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || a.id.localeCompare(b.id))
+  // Local review must include draft news. Public output excludes it until a
+  // curator explicitly marks it reviewed; legacy records remain eligible.
+  const selected = selectNewsForIssue(news, startDate, issueDate, review)
   const grouped = new Map<Group, NewsItem[]>(GROUPS.map((group) => [group, []]))
   for (const item of selected) grouped.get(groupFor(item))!.push(item)
-  const outDir = join(DIGESTS_DIR, issueDate)
+  const outDir = join(review ? REVIEW_DIR : DIGESTS_DIR, issueDate)
   mkdirSync(outDir, { recursive: true })
-  writeFileSync(join(outDir, 'index.html'), renderDocument(issueDate, startDate, grouped, false), 'utf8')
-  writeFileSync(join(outDir, 'email.html'), renderDocument(issueDate, startDate, grouped, true), 'utf8')
+  writeFileSync(join(outDir, 'index.html'), renderDocument(issueDate, startDate, grouped, false, review), 'utf8')
+  writeFileSync(join(outDir, 'email.html'), renderDocument(issueDate, startDate, grouped, true, review), 'utf8')
+  if (review) return { issueDate, itemCount: selected.length, outputDir: outDir }
   const entry: DigestIndexEntry = { issueDate, startDate, endDate: issueDate, itemCount: selected.length, href: `/digests/${issueDate}/`, emailHref: `/digests/${issueDate}/email.html` }
   const nextIndex = [...readIndex().filter((item) => item.issueDate !== issueDate), entry]
     .sort((a, b) => b.issueDate.localeCompare(a.issueDate))
   writeFileSync(join(DIGESTS_DIR, 'index.json'), JSON.stringify(nextIndex, null, 2) + '\n', 'utf8')
-  return entry
+  return { issueDate, itemCount: selected.length, outputDir: outDir }
 }
 
 const isMain = process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)
 if (isMain) {
   try {
     const latest = loadNews().map((item) => item.publishedAt).sort().at(-1)
-    const entry = renderIssue(parseDateArgument(process.argv.slice(2), latest ?? ''))
-    console.log(`✓ rendered ${entry.itemCount} items to public/digests/${entry.issueDate}/`)
+    const { issueDate, review } = parseArguments(process.argv.slice(2), latest ?? '')
+    const entry = renderIssue(issueDate, review)
+    console.log(`✓ rendered ${entry.itemCount} items to ${review ? 'artifacts/newsletter-review' : 'public/digests'}/${entry.issueDate}/`)
   } catch (error) {
     console.error(`✗ newsletter render failed: ${error instanceof Error ? error.message : String(error)}`)
     process.exitCode = 1
