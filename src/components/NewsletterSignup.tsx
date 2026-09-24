@@ -10,7 +10,11 @@ function safeSignupUrl(value: string | undefined): string | undefined {
   if (!value?.trim()) return undefined
   try {
     const url = new URL(value)
-    return url.protocol === 'https:' && url.hostname && !url.username && !url.password
+    const zohoHostedForm =
+      url.hostname === 'zc.vg' ||
+      url.hostname === 'maillist-manage.com' ||
+      url.hostname.endsWith('.maillist-manage.com')
+    return url.protocol === 'https:' && zohoHostedForm && url.pathname !== '/' && !url.username && !url.password
       ? url.toString()
       : undefined
   } catch {

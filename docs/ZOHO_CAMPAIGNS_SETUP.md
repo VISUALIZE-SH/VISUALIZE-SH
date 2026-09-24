@@ -117,8 +117,10 @@ Add these **repository variables**:
 - `ZOHO_CAMPAIGNS_API_URL` — the matching Campaigns API base ending in
   `/api/v1.1`.
 - `NEWSLETTER_PUBLIC_ORIGIN` — the deployed VISUALIZE-SH HTTPS origin.
-- `NEWSLETTER_SIGNUP_URL` — the published Zoho hosted-form URL; this is
-  intentionally public and becomes the web app's signup link.
+- `NEWSLETTER_SIGNUP_URL` — the published Zoho hosted-form URL (`zc.vg` or a
+  `maillist-manage.com` host); this is intentionally public and becomes the web
+  app's signup link. Leave it unset until the form points to the intended list,
+  includes consent and privacy information, and double opt-in is confirmed.
 
 The recipient list is referenced by its secret list key and, when applicable, its
 topic ID. Individual destinations are managed in Zoho through the
