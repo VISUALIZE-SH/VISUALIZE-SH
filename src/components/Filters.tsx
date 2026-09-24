@@ -1,5 +1,6 @@
 import type { GraphMeta, NodeGroup, RegulatoryStatus } from '../types/entities'
 import { GROUP_META, GROUP_ORDER } from '../graph/palette'
+import EntitySwatch from './EntitySwatch'
 import Legend from './Legend'
 
 interface Props {
@@ -55,7 +56,7 @@ export default function Filters({
               checked={activeGroups.has(g)}
               onChange={() => onToggleGroup(g)}
             />
-            <span className="dot" style={{ background: GROUP_META[g].color }} />
+            <EntitySwatch group={g} />
             <span className="check-label">{GROUP_META[g].label}</span>
             <span className="count">{meta.counts[g] ?? 0}</span>
           </label>
