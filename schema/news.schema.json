@@ -13,6 +13,7 @@
     "summary": { "type": "string", "minLength": 1, "maxLength": 650 },
     "sourceName": { "type": "string", "minLength": 1, "maxLength": 100 },
     "sourceUrl": { "type": "string", "format": "uri", "pattern": "^https://", "description": "Canonical public HTTPS URL for the cited source." },
+    "reviewStatus": { "type": "string", "enum": ["draft", "reviewed"], "description": "New automated research stays draft until a curator approves it for the public feed and newsletter." },
     "additionalSources": {
       "type": "array", "uniqueItems": true, "maxItems": 5,
       "description": "Independent or corroborating sources for the same event; never duplicate the primary URL.",

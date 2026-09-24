@@ -139,6 +139,7 @@ function main(): void {
       .map((url) => ({ label: sourceLabel(url), url }))
     const clean: JsonObject = {
       id, publishedAt,
+      reviewStatus: 'draft',
       title: string(item.title, `newNews[${index}].title`),
       summary: string(item.summary, `newNews[${index}].summary`),
       sourceName: string(item.sourceName, `newNews[${index}].sourceName`),
