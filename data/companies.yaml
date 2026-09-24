@@ -25,8 +25,11 @@
   name: "W. L. Gore & Associates"
   hq: "Newark, DE, USA"
   website: "https://www.goremedical.com"
-  description: "Maker of GORE Cardioform septal/PFO occluders."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  description: "Maker of GORE Cardioform septal/PFO occluders; acquired Conformal Medical (CLAAS AcuFORM LAAO system, investigational) in February 2026."
+  curation:
+    status: curated
+    lastUpdated: 2026-09-23
+    notes: "2026-09-23: Conformal acquisition (announced 2026-01-05, closed 2026-02-19) added to description at the owner's request. Source: https://www.gore.com/news-events/gore-acquiring-conformal-medical"
 
 - id: co-lifetech
   type: company
@@ -248,3 +251,31 @@
       - "https://vahaticor.com/"
       - "https://www.businesswire.com/news/home/20251118907873/en/VahatiCor-Closes-Oversubscribed-Series-B-Financing-to-Accelerate-A-FLUX-Development-for-Coronary-Microvascular-Dysfunction."
     notes: "Confirms the maker of the 'A-flux' device previously logged as an unverified placeholder on dev-aflux. HQ city not verified; VERIFY exact HQ location before promoting."
+
+- id: co-corcym
+  type: company
+  name: Corcym
+  website: https://www.corcym.com/
+  description: Structural and cardiac-surgery company (spun out of LivaNova's Cardiac Surgery business in 2022) that makes surgical heart valves and the Nitinol Memo annuloplasty-ring platform, now extended to the tricuspid valve via TriMemo.
+  pulse: 4
+  curation:
+    status: draft
+    lastUpdated: '2026-09-23'
+    sources:
+    - https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair
+    - https://www.corcym.com/devices/mitral/memo4d
+    notes: 'Draft from 2026-09-23 research. Maker of the TriMemo and Memo 4D Curve devices reported in news-2026-09-08-... and news-2026-09-22-...; no company node currently exists to attach these devices to. HQ/ticker not verified — left blank rather than guessed. Sources: https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair ; https://www.financialcontent.com/article/bizwire-2026-9-22-corcym-announces-first-in-human-implant-of-memo-4d-curve-expanding-its-memo-mitral-repair-platform'
+
+- id: co-eli-lilly
+  type: company
+  name: Eli Lilly and Company
+  ticker: LLY
+  hq: Indianapolis, IN, USA
+  website: https://www.lilly.com
+  description: Maker of tirzepatide (Mounjaro/Zepbound); sponsor of the SUMMIT trial evaluating tirzepatide in obesity-related HFpEF.
+  curation:
+    status: draft
+    lastUpdated: '2026-09-23'
+    sources:
+    - https://en.wikipedia.org/wiki/Tirzepatide
+    notes: Added only to support the rx-tirzepatide proposal below; standard company facts not independently re-verified against a primary source this pass.

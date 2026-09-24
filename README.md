@@ -10,32 +10,57 @@ The data is hand-curated YAML, validated and compiled into a static graph and
 source-linked news feed — so the whole thing deploys as plain static files and is
 easy to keep up to date.
 
-> ⚕️ **For educational use only — not medical advice.** Data may be incomplete or
-> out of date; verify against primary sources (FDA labeling, ClinicalTrials.gov,
-> peer-reviewed publications).
+VISUALIZE-SH now has three connected workspaces around that retained graph:
+**News** explains what changed, **Atlas** shows how a product or therapy fits and
+evolves, and **Data** lets readers inspect the source-linked evidence behind a
+comparison. The graph remains the overview and navigation surface. Versioned
+evidence is loaded from the static `public/intelligence.json` payload.
+
+> ⚕️ **This is not a clinical advice tool.** Content here is not provided or
+> endorsed by the organizations listed. For educational and informational use
+> only. This is not medical advice and may be incomplete or out of date.
+> Regulatory status, trial results, and corporate ownership change frequently —
+> always verify against primary sources (FDA labeling, ClinicalTrials.gov,
+> peer-reviewed publications) before relying on anything here.
 
 ## Quick start
 
 ```bash
-npm install
+npm ci
 npm run dev          # builds data, then starts Vite at http://localhost:5173
 ```
+
+New collaborators should read **[`docs/HANDOFF.md`](docs/HANDOFF.md)** for the
+source-of-truth map, review boundaries, and a complete local verification path.
+The current checkout may contain uncommitted work; inspect `git status --short`
+before changing files.
 
 Other scripts:
 
 ```bash
-npm run build:data   # validate data/*.yaml -> public/graph.json
-npm run build        # build:data + typecheck + production build to dist/
+npm run build:graph  # validate graph/news YAML -> public/graph.json
+npm run build:data   # build both graph.json and intelligence.json
+npm run build        # build:data + app typecheck + production build to dist/
 npm run preview      # serve the production build locally
-npm run typecheck    # TypeScript only
+npm run typecheck    # app TypeScript only
+npm run validate:local # both typechecks, tests, security scan, and newsletter preflight
+npm run newsletter:render -- --date YYYY-MM-DD  # public + email-safe weekly HTML
+npm run test:newsletter                        # newsletter unit tests
+npm run security:check                         # secrets, email/PII, tracking scan
+npm run build:intelligence                     # validate pilot -> public/intelligence.json
+npm run newsletter:local                       # local DRAFT REVIEW previews only
+npm run newsletter:local -- --dry-run          # no-write local preflight
+npm run review:prepare                         # assemble a local review packet
+npm run evidence:snapshot -- --help            # bounded official-source snapshot CLI
+npm run evidence:snapshot-document -- --help   # local document snapshot CLI
 ```
 
 ## How it works
 
 ```
-data/*.yaml  ──(npm run build:data)──►  public/graph.json  ──►  React + Cytoscape app
-(entities + news,        validate + attach news             (loads one static payload)
- source of truth)        + derive edges
+data/*.yaml  ──(build:graph)──────────────►  public/graph.json ───► retained graph overview
+data/intelligence/{pilot,taxonomy,comparative-pilot}.yaml + catalog/*.yaml ─(build:intelligence)─► public/intelligence.json ─► News / Atlas / Data
+data/news.yaml  ─────────────────────────► graph.news + weekly digest HTML
 ```
 
 - **Source of truth** is the YAML in `data/` (one file per entity type). Entities
@@ -46,6 +71,27 @@ data/*.yaml  ──(npm run build:data)──►  public/graph.json  ──►  
 - `data/news.yaml` holds the weekly source-linked digest. Every story names the
   existing graph nodes it concerns; selecting it focuses those nodes, and the
   same story appears in each linked node's detail panel.
+- `data/intelligence/pilot.yaml` holds versioned, source-located evidence records.
+  Claims, events, readouts, and outcomes retain review status and explicit
+  missingness; `scripts/build-intelligence.ts` validates cross-record references
+  before writing the static payload.
+- `data/intelligence/taxonomy.yaml` defines device/drug classes and their standard
+  attributes. `data/intelligence/catalog/*.yaml` adds products, FDA decisions, and
+  compact spec values per class (see `data/intelligence/catalog/README.md`); each
+  value compiles to a draft, source-located claim.
+- News, Atlas, and Data share version context through links such as
+  `?mode=atlas&version=ver-feops-heartguide` and
+  `?mode=data&version=ver-feops-heartguide`. The original graph remains available
+  as the overview and legacy crosswalk.
+- Data **Browse** shows one spec table per device or drug class (one row per
+  product, one column per standard attribute, plus the first US approval), with
+  Outcomes, History, and Figures tabs. Selecting a product or value opens its
+  sources and context. **Compare** aligns two to four exact versions in a class. Column order and evidence date are shareable in
+  the URL; visible rows export to CSV or JSON with source locators and gap states.
+  The pilot also offers exact-size SAPIEN 3 and Evolut FX configuration selectors,
+  with source-located annulus sizing and Evolut FX delivery capsule measurements.
+  These observations remain unreviewed; missing sizes, metrics, and clinical
+  outcomes stay explicit gaps. Available source figures appear in both views.
 - The app loads `graph.json` and renders it. Color/shape encode entity type, node
   size encodes connectedness, **label size encodes `pulse`** (recent news
   attention, 0–10), and a dashed outline marks uncurated **drafts**. Labels scale
@@ -69,12 +115,10 @@ data/*.yaml  ──(npm run build:data)──►  public/graph.json  ──►  
   [`simplex-noise`](https://github.com/jwagner/simplex-noise.js) displacement field
   (an organic, non-grid warp where neighbors drift together) and pushes disconnected
   components apart so isolated islands read as isolated.
-- **Lean initial load:** Vite splits the bundle into long-cache vendor chunks
-  (`react`, `cytoscape`, `force`) plus a small app chunk, so a data/UI edit only
-  busts the app chunk. The Hierarchy layout's `dagre` dependency is dynamically
-  imported — it loads only when you first open that view, keeping it off the
-  critical path (see [`cytoscapeSetup.ts`](src/graph/cytoscapeSetup.ts) and
-  [`vite.config.ts`](vite.config.ts)).
+- **Lean initial load:** Vite splits the bundle into vendor chunks (`react`,
+  `cytoscape`, `force`) and lazily loads workspace views and the graph canvas.
+  The Atlas graph offers a clustered overview and timeline (see
+  [`layouts.ts`](src/graph/layouts.ts) and [`vite.config.ts`](vite.config.ts)).
 
 ## Updating the data
 
@@ -86,8 +130,24 @@ every field, the id conventions, and the rules. The short version:
 2. `npm run build:data` — must pass (it fails on bad data or dangling references).
 3. Review drafts in the app, promote to `curated`, commit, and deploy.
 
-A scheduled assistant can draft updates for you — see
-**[`ROUTINE.md`](ROUTINE.md)**.
+For versioned evidence, run `npm run build:intelligence` and inspect the generated
+`public/intelligence.json`. Use `npm run review:prepare` to collect draft records,
+source changes, missing fields, unresolved mappings, and weekly proposals into a
+local review packet. Use `npm run newsletter:local` for the two local-only flagship
+previews; these remain outside `public/digests/` and are never sendable while
+their records are draft. See [`docs/LOCAL_IMPLEMENTATION_STATUS.md`](docs/LOCAL_IMPLEMENTATION_STATUS.md),
+[`docs/EVIDENCE_PIPELINE.md`](docs/EVIDENCE_PIPELINE.md), and
+[`docs/NEWSLETTER_LOCAL_READINESS.md`](docs/NEWSLETTER_LOCAL_READINESS.md).
+For ownership boundaries and the end-to-end runtime/research flow, see
+[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+
+The cloud workflow researches a weekly evidence window, prepares a review PR,
+publishes approved HTML, and delivers it through Zoho Campaigns without touching a
+local clone. See **[`docs/CLOUD_WORKFLOW.md`](docs/CLOUD_WORKFLOW.md)** and
+**[`docs/ZOHO_CAMPAIGNS_SETUP.md`](docs/ZOHO_CAMPAIGNS_SETUP.md)**. The final
+threat review and rollout gate are in
+**[`docs/SECURITY_REVIEW.md`](docs/SECURITY_REVIEW.md)**. `ROUTINE.md` is retained
+as the legacy local-task contract until cloud cutover is verified.
 
 ## Design system
 
@@ -100,16 +160,18 @@ in `src/index.css` (`:root`); the categorical node palette lives in
 ## Project layout
 
 ```
-data/        YAML source of truth (conditions, therapies, companies, trials, news)
+data/        YAML source of truth (legacy graph, news, and intelligence pilot)
 schema/      JSON Schemas + DATA_DICTIONARY.md
-scripts/     build-data.ts (validate + compile)
-public/      graph.json (generated, committed)
+scripts/     validation, evidence snapshots, review packets, digests, and Zoho tools
+public/      graph.json + intelligence.json + public digest/preview HTML (generated)
+prompts/     bounded weekly research contract
+docs/        handoff guide, architecture, evidence rules, operations, and plans
 DESIGN.md    design system (tokens, type scale, palette)
 src/
   graph/     Cytoscape setup, styles, layouts, palette, elasticPull, clusterByCondition, declutter
   components/ GraphCanvas, Header, Filters, DetailPanel, SearchBar, Legend, About
-  data/      loadGraph.ts
-  types/     entities.ts (TS mirror of the schema)
+  data/      payload loading, comparison projection, and URL workspace state
+  types/     graph, intelligence, and comparative data contracts
 ```
 
 ## Deployment
@@ -118,9 +180,18 @@ Pushing to `main` builds and deploys to GitHub Pages via
 [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). To turn it on,
 enable **Settings → Pages → Source: GitHub Actions** once.
 
-The site is served from a project sub-path (`https://<owner>.github.io/<repo>/`),
-so asset URLs need the right base. CI sets `VITE_BASE` from the repo name
-automatically, so it works whatever the repo is called. For a **custom domain**,
-add a `public/CNAME` file and build with `VITE_BASE=/`. Local builds default to
-`/visualize-sh/` (see [`vite.config.ts`](vite.config.ts)). Any static host
-(Netlify, Vercel, S3) also works — just serve `dist/` at the matching base.
+The production workflow serves the configured custom domain from `/`; one-off
+production builds fall back to the GitHub Pages project path when `VITE_BASE` is
+unset (see [`vite.config.ts`](vite.config.ts)). Set the public repository variable
+`NEWSLETTER_SIGNUP_URL` to the hosted Zoho form URL to activate the Newsletter
+signup link in the deployed client.
+
+## Privacy and security
+
+The app uses no analytics, advertising pixels, tracking cookies, or tracking
+storage. It uses `localStorage` only to remember the visitor's selected color
+theme. Newsletter signup opens Zoho's separately hosted consent form;
+subscriber addresses remain in Zoho and never enter the repository. See
+[`PRIVACY.md`](PRIVACY.md), the
+[published privacy notice](https://visualize-sh.com/privacy.html), and
+[`SECURITY.md`](SECURITY.md).

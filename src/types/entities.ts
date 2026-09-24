@@ -37,6 +37,25 @@ export interface InfoLink {
   url: string
 }
 
+export type DeviceMaterialCategory =
+  | 'frame'
+  | 'leaflet'
+  | 'fabric'
+  | 'coating'
+  | 'sensor'
+  | 'anchor'
+
+/** A clinically meaningful material in the permanent implant. Delivery-system
+ *  plastics, sutures, trace constituents, and other incidental materials are
+ *  intentionally excluded. */
+export interface DeviceMaterial {
+  name: string
+  role: string
+  category: DeviceMaterialCategory
+  source: string
+  note?: string
+}
+
 export type TimelineDateBasis =
   | 'fda-approval'
   | 'ce-mark'
@@ -85,6 +104,8 @@ export interface Therapy {
   regulatoryDetail?: string
   mechanism?: string
   description?: string
+  /** Key permanent-implant materials for device therapies, with evidence. */
+  materials?: DeviceMaterial[]
   /** External info links (product page / third-party clinical source). */
   links?: InfoLink[]
   /** Timeline placement date for product approval or availability. */
@@ -148,6 +169,8 @@ export interface NewsItem {
   summary: string
   sourceName: string
   sourceUrl: string
+  /** Corroborating coverage for the same event; the primary source stays above. */
+  additionalSources?: InfoLink[]
   /** Controlled loosely in authoring; suitable for feed filtering and display. */
   topicTags: string[]
   /** Existing graph entity ids to focus when this item is selected. */

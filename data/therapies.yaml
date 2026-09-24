@@ -21,6 +21,14 @@
     dateBasis: fda-approval
     event: "FDA approval of Watchman FLX"
   mechanism: "Percutaneously seals the left atrial appendage to prevent thrombus embolization in non-valvular AF."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding implant frame", category: frame, source: "https://www.watchman.com/content/dam/watchman/downloads/download-center/watchman-flx/WATCHMAN_FLX_Product_Brochure.pdf" }
+    - { name: "Polyethylene terephthalate (PET)", role: "Porous fabric cover on the atrial face", category: fabric, source: "https://www.watchman.com/content/dam/watchman/downloads/download-center/watchman-flx/WATCHMAN_FLX_Product_Brochure.pdf" }
+    - name: "PVDF-HFP fluoropolymer"
+      role: "HEMOCOAT thromboresistant surface coating"
+      category: coating
+      source: "https://www.watchman.com/en-us-implanter/device/watchman-flx-pro.html"
+      note: "WATCHMAN FLX Pro only; the standard FLX device is uncoated."
   links:
     - label: "Product page"
       url: "https://www.bostonscientific.com/en-EU/products/laac-system/watchman-flx.html"
@@ -42,6 +50,9 @@
     dateBasis: fda-approval
     event: "FDA approval"
   mechanism: "Dual-seal LAA occluder for stroke prevention in non-valvular AF."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding mesh lobe and disc", category: frame, source: "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049C.pdf" }
+    - { name: "Polyester (PET)", role: "Occlusive patches sewn into the lobe and disc", category: fabric, source: "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049C.pdf" }
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-lambre
@@ -60,6 +71,10 @@
     event: "CE mark"
     notes: "Year-level CE mark date; refine if an exact notified-body date is verified."
   mechanism: "Umbrella-and-cover LAA occluder designed for variable appendage anatomy."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding umbrella and cover mesh", category: frame, source: "https://rumidimur.com/wp-content/uploads/2017/08/Lifetech_Product-Catalogue_small.pdf" }
+    - { name: "Polyethylene terephthalate (PET)", role: "Occlusive membranes sewn into the umbrella and cover", category: fabric, source: "https://rumidimur.com/wp-content/uploads/2017/08/Lifetech_Product-Catalogue_small.pdf" }
+    - { name: "Titanium nitride", role: "Surface coating on the nitinol mesh", category: coating, source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9352115/" }
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-ecliptis
@@ -79,6 +94,10 @@
     source: "https://www.medtechdive.com/news/edwards-wins-fda-clearance-for-laa-clip-setting-up-competition-with-atricu/823980/"
     notes: "Date per FDA 510(k) database as reported by MedTech Dive/MassDevice; VERIFY exact clearance date against the FDA 510(k) database entry."
   mechanism: "Implantable clip applied surgically to mechanically close the left atrial appendage during concomitant cardiac surgery, preventing thrombus formation and embolization."
+  materials:
+    - { name: "Polyether ether ketone (PEEK)", role: "Twin implant bars", category: frame, source: "https://eifu.edwards.com/eifu/5d4dd5ad46e0fb0001c61ac7/DOC-0564734A.pdf" }
+    - { name: "Silicone", role: "Overmold covering the PEEK bars", category: coating, source: "https://eifu.edwards.com/eifu/5d4dd5ad46e0fb0001c61ac7/DOC-0564734A.pdf" }
+    - { name: "Nitinol", role: "Spring connecting the clip bars", category: anchor, source: "https://eifu.edwards.com/eifu/5d4dd5ad46e0fb0001c61ac7/DOC-0564734A.pdf" }
   pulse: 6
   curation:
     status: draft
@@ -104,6 +123,9 @@
     dateBasis: fda-approval
     event: "FDA approval for recurrent cryptogenic stroke due to PFO"
   mechanism: "Double-disc nitinol occluder that closes the patent foramen ovale."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding double-disc wire mesh", category: frame, source: "https://www.fda.gov/media/97980/download" }
+    - { name: "Polyester (PET)", role: "Occlusive fabric within both discs", category: fabric, source: "https://www.fda.gov/media/97980/download" }
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-gore-cardioform-septal
@@ -121,6 +143,11 @@
     dateBasis: fda-approval
     event: "FDA approval for PFO closure"
   mechanism: "ePTFE-covered nitinol frame occluder for PFO and atrial septal defects."
+  materials:
+    - name: "Nitinol with platinum core"
+      role: "Conformable wire frame; the platinum core adds radiopacity"
+      category: frame
+      source: "https://www.goremedical.com/cardioform-for-pfo-closure"
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-amplatzer-asd
@@ -138,6 +165,9 @@
     dateBasis: fda-approval
     event: "FDA approval for secundum ASD closure"
   mechanism: "Self-expanding double-disc occluder for secundum atrial septal defects."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding double-disc wire mesh", category: frame, source: "https://www.accessdata.fda.gov/cdrh_docs/pdf/P000039B.pdf" }
+    - { name: "Polyester (PET)", role: "Occlusive fabric in the discs and connecting waist", category: fabric, source: "https://www.accessdata.fda.gov/cdrh_docs/pdf/P000039B.pdf" }
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-amplatzer-piccolo
@@ -155,6 +185,12 @@
     dateBasis: fda-approval
     event: "FDA approval"
   mechanism: "Miniature occluder for transcatheter closure of patent ductus arteriosus."
+  materials:
+    - name: "Nitinol"
+      role: "Self-expanding braided wire mesh"
+      category: frame
+      source: "https://www.structuralheart.abbott/fileadmin/content/For_Patients/Patient_Guides/patent-ductus-arteriosus-pda-treatment-options-patient-guide2.pdf"
+      note: "The Piccolo design does not use a polyester occlusion patch."
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-amplatzer-vsd
@@ -167,12 +203,18 @@
   regulatoryStatus: approved
   regulatoryDetail: "Approved for muscular VSDs; membranous-VSD use remains investigational/off-label."
   timeline:
-    date: "2007-01-01"
-    precision: year
+    date: "2007-09-07"
+    precision: day
     dateBasis: fda-approval
-    event: "FDA humanitarian device exemption for muscular VSD closure"
+    event: "FDA PMA approval (P040040) for muscular VSD closure"
   mechanism: "Double-disc occluder for muscular ventricular septal defects."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  materials:
+    - { name: "Nitinol", role: "Self-expanding double-disc wire mesh", category: frame, source: "https://www.accessdata.fda.gov/cdrh_docs/pdf4/P040040C.pdf" }
+    - { name: "Polyester (PET)", role: "Occlusive fabric in the discs and waist", category: fabric, source: "https://www.accessdata.fda.gov/cdrh_docs/pdf4/P040040C.pdf" }
+  curation:
+    status: curated
+    lastUpdated: 2026-09-23
+    notes: "2026-09-23: pathway corrected from HDE to PMA and date set to 2007-09-07 at the owner's request (https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040040)."
 
 # --- Heart failure interatrial shunts ---
 - id: dev-corvia-shunt
@@ -185,6 +227,9 @@
   regulatoryStatus: investigational
   regulatoryDetail: "Investigational; FDA Breakthrough Device. Responder-subgroup signal in REDUCE LAP-HF II."
   mechanism: "Implanted interatrial shunt that decompresses the left atrium to lower exertional filling pressure in HFpEF."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding shunt frame", category: frame, source: "https://us.corviamedical.com/wp-content/uploads/2024/07/00697AW-US-Corvia-Patient-Information-Guide-Rev-01.pdf" }
+    - { name: "Tantalum", role: "Radiopaque marker material", category: frame, source: "https://us.corviamedical.com/wp-content/uploads/2024/07/00697AW-US-Corvia-Patient-Information-Guide-Rev-01.pdf" }
   pulse: 6
   curation:
     status: curated
@@ -201,6 +246,11 @@
   regulatoryStatus: investigational
   regulatoryDetail: "Investigational. RELIEVE-HF neutral overall with a divergent HFrEF-subgroup signal."
   mechanism: "Interatrial shunt to reduce left atrial pressure across the HF spectrum."
+  materials:
+    - name: "Nitinol"
+      role: "Self-expanding hourglass frame"
+      category: frame
+      source: "https://vwavemedical.com/vwave/technology/"
   pulse: 6
   curation:
     status: curated
@@ -217,6 +267,8 @@
   regulatoryStatus: investigational
   regulatoryDetail: "Investigational shunt-to-coronary-sinus system under clinical study (ALT FLOW)."
   mechanism: "Creates a left atrium-to-coronary-sinus shunt to lower left atrial pressure."
+  materials:
+    - { name: "Nitinol", role: "Bare self-expanding four-arm shunt frame", category: frame, source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12399238/" }
   pulse: 4
   curation:
     status: curated
@@ -232,15 +284,22 @@
   company: co-abbott
   treats: [cond-hfref, cond-hfpef]
   regulatoryStatus: approved
-  regulatoryDetail: "FDA approved; indication expanded to NYHA II-III HF (CHAMPION, GUIDE-HF)."
+  regulatoryDetail: "FDA approved; indication expanded to NYHA II-III HF (CHAMPION, GUIDE-HF). Next-generation CardioMEMS HERO reader approved 2026-02-27 (same implanted sensor)."
   timeline:
     date: "2014-01-01"
     precision: year
     dateBasis: fda-approval
     event: "FDA approval"
   mechanism: "Wireless pulmonary-artery pressure sensor enabling pressure-guided HF management."
+  materials:
+    - { name: "Fused silica", role: "Hermetically sealed sensor capsule", category: sensor, source: "https://www.jacc.org/doi/10.1016/j.jacc.2007.06.061" }
+    - { name: "Medical-grade silicone", role: "Blood-contacting sensor encapsulation", category: coating, source: "https://www.jacc.org/doi/10.1016/j.jacc.2007.06.061" }
+    - { name: "Nitinol", role: "Paired pulmonary-artery anchoring loops", category: anchor, source: "https://www.jacc.org/doi/10.1016/j.jacc.2007.06.061" }
   pulse: 4
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: curated
+    lastUpdated: 2026-09-23
+    notes: "2026-09-23: HERO reader approval added to regulatoryDetail at the owner's request. Source: https://abbott.mediaroom.com/press-releases?item=124735"
 
 - id: dev-cordella
   type: therapy
@@ -257,6 +316,10 @@
     dateBasis: fda-approval
     event: "FDA approval"
   mechanism: "Pulmonary-artery pressure sensor with a paired patient-management platform."
+  materials:
+    - { name: "Borofloat borosilicate glass", role: "Primary blood-contacting sensor housing", category: sensor, source: "https://endotronix.com/wp-content/uploads/2025/07/100906-00-Rev-2-Attachment-1-Cordella-Pulmonary-Artery-System-Patient-Implant-Leaflet.pdf" }
+    - { name: "Nitinol", role: "Pulmonary-artery anchoring structure", category: anchor, source: "https://endotronix.com/wp-content/uploads/2025/07/100906-00-Rev-2-Attachment-1-Cordella-Pulmonary-Artery-System-Patient-Implant-Leaflet.pdf" }
+    - { name: "Silicone", role: "Protective sensor surface coating", category: coating, source: "https://endotronix.com/wp-content/uploads/2025/07/100906-00-Rev-2-Attachment-1-Cordella-Pulmonary-Artery-System-Patient-Implant-Leaflet.pdf" }
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-fire1-norm
@@ -269,6 +332,9 @@
   regulatoryStatus: investigational
   regulatoryDetail: "Investigational inferior vena cava sensor for congestion monitoring (FUTURE-HF)."
   mechanism: "Implantable IVC sensor that tracks vessel-area changes as a congestion surrogate."
+  materials:
+    - { name: "Nitinol", role: "Crown-shaped, compliant sensor frame", category: sensor, source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12568234/" }
+    - { name: "Gold", role: "Conductive wire in the passive resonant sensor circuit", category: sensor, source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12568234/" }
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-vlap
@@ -281,6 +347,8 @@
   regulatoryStatus: investigational
   regulatoryDetail: "Investigational wireless left-atrial pressure sensor (VECTOR-HF)."
   mechanism: "Direct left-atrial pressure measurement for granular pressure-guided HF management."
+  materials:
+    - { name: "Nitinol", role: "Braided double-disc interatrial anchor", category: anchor, source: "https://eurointervention.pcronline.com/article/a-novel-implantable-left-atrial-pressure-sensor-in-two-heart-failure-patients" }
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 # --- Coronary sinus / microvascular ---
@@ -299,6 +367,8 @@
     dateBasis: ce-mark
     event: "CE mark in Europe"
   mechanism: "Hourglass stent narrows the coronary sinus to raise backward pressure and redistribute perfusion to ischemic myocardium."
+  materials:
+    - { name: "Surgical-grade stainless steel", role: "Balloon-expandable hourglass mesh", category: frame, source: "https://shockwavemedical.com/wp-content/uploads/2024/11/Shockwave-Reducer-Spec-Sheet.pdf" }
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: dev-aflux
@@ -309,17 +379,20 @@
   company: co-vahaticor
   treats: [cond-cmd]
   regulatoryStatus: investigational
-  regulatoryDetail: "Investigational; early feasibility study (SERRA-I, NCT06991322) underway in Europe. Not FDA cleared/approved."
+  regulatoryDetail: "Investigational; early feasibility study (SERRA-I, NCT06991322) enrolling in the US and Europe (first US patient announced 2026-06-17). Not FDA cleared/approved."
   mechanism: "Self-expanding dense-cell nitinol coronary sinus reducer (SwiftCell Technology) that narrows the coronary sinus to redistribute perfusion toward ischemic myocardium — mechanistically analogous to the Shockwave/J&J Coronary Sinus Reducer."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding dense-cell hourglass mesh", category: frame, source: "https://vahaticor.com/" }
   links:
     - label: "Product page"
       url: "https://vahaticor.com/"
   pulse: 3
   curation:
     status: draft
-    lastUpdated: 2026-07-08
+    lastUpdated: 2026-09-23
     sources:
       - "https://vahaticor.com/"
+      - "https://vahaticor.com/device-and-technology/"
       - "https://clinicaltrials.gov/study/NCT06991322"
       - "https://www.jacc.org/doi/10.1016/j.jaccas.2024.102962"
     notes: "Manufacturer confirmed as VahatiCor, Inc. (T45 Labs portfolio), resolving the prior 'unverified placeholder' flag. Company closed an oversubscribed $23M Series B (2025-11-18) to accelerate development. Human curator: verify current SERRA-I enrollment progress before promoting to curated."
@@ -342,7 +415,7 @@
     dateBasis: fda-approval
     event: "FDA approval for symptomatic obstructive HCM"
   mechanism: "Reversibly inhibits cardiac myosin ATPase, reducing hypercontractility and LVOT obstruction."
-  pulse: 6
+  pulse: 7
   curation:
     status: curated
     lastUpdated: 2026-06-22
@@ -352,17 +425,22 @@
   type: therapy
   therapyType: pharmaceutical
   subtype: "cardiac myosin inhibitor"
-  name: "Aficamten"
+  name: "Aficamten (Myqorzo)"
   company: co-cytokinetics
   treats: [cond-hcm]
-  regulatoryStatus: investigational
-  regulatoryDetail: "Next-generation myosin inhibitor; FDA review pending after SEQUOIA-HCM. VERIFY current approval status."
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved 2025-12-19 (NDA 219083) for symptomatic obstructive HCM, based on SEQUOIA-HCM; EU approval 2026-02-17."
+  timeline:
+    date: "2025-12-19"
+    precision: day
+    dateBasis: fda-approval
+    event: "FDA approval of Myqorzo for symptomatic obstructive HCM"
   mechanism: "Selective cardiac myosin inhibitor reducing LVOT gradients with a wider therapeutic window."
   pulse: 9
   curation:
     status: curated
-    lastUpdated: 2026-06-22
-    notes: "CONFIRMED: FDA approved 2025-12-19 under the brand name Myqorzo for symptomatic obstructive HCM (NYHA II-III), based on SEQUOIA-HCM (see trial-sequoia-hcm). Also approved in China (NMPA, 2025-12-17) and the EU (European Commission, 2026-02-17); first EU commercial launch (Germany) 2026-06-01. A second pivotal trial, ACACIA-HCM, met both primary endpoints in non-obstructive HCM (topline 2026-05-05); full data plus a MAPLE-HCM subgroup analysis are slated as late-breaking presentations at ESC Congress 2026 (announced 2026-07-07). Sources: https://ir.cytokinetics.com/press-releases/press-release-details/2025/Cytokinetics-Announces-FDA-Approval-of-MYQORZO-aficamten-for-the-Treatment-of-Adults-with-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-to-Improve-Functional-Capacity-and-Symptoms/default.aspx ; https://www.healio.com/news/cardiology/20251219/fda-approves-aficamten-for-adults-with-obstructive-hcm ; https://www.globenewswire.com/news-release/2026/07/07/3323061/35409/en/Cytokinetics-Announces-Three-Late-Breaking-Science-Abstracts-at-the-European-Society-of-Cardiology-ESC-Congress-2026.html. Human curator: update name to 'Aficamten (Myqorzo)', regulatoryStatus to approved, regulatoryDetail, and add an fda-approval timeline (2025-12-19)."
+    lastUpdated: 2026-09-23
+    notes: "CONFIRMED: FDA approved 2025-12-19 under the brand name Myqorzo for symptomatic obstructive HCM (NYHA II-III), based on SEQUOIA-HCM (see trial-sequoia-hcm). Also approved in China (NMPA, 2025-12-17) and the EU (European Commission, 2026-02-17); first EU commercial launch (Germany) 2026-06-01. A second pivotal trial, ACACIA-HCM, met both primary endpoints in non-obstructive HCM (topline 2026-05-05); full data plus a MAPLE-HCM subgroup analysis are slated as late-breaking presentations at ESC Congress 2026 (announced 2026-07-07). Sources: https://ir.cytokinetics.com/press-releases/press-release-details/2025/Cytokinetics-Announces-FDA-Approval-of-MYQORZO-aficamten-for-the-Treatment-of-Adults-with-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-to-Improve-Functional-Capacity-and-Symptoms/default.aspx ; https://www.healio.com/news/cardiology/20251219/fda-approves-aficamten-for-adults-with-obstructive-hcm ; https://www.globenewswire.com/news-release/2026/07/07/3323061/35409/en/Cytokinetics-Announces-Three-Late-Breaking-Science-Abstracts-at-the-European-Society-of-Cardiology-ESC-Congress-2026.html. Applied 2026-09-23 at the owner's request: name, regulatoryStatus, regulatoryDetail, and fda-approval timeline updated from the Drugs@FDA NDA 219083 record."
 
 # --- ATTR-CM ---
 - id: rx-tafamidis
@@ -398,7 +476,7 @@
     dateBasis: fda-approval
     event: "FDA approval for ATTR-CM"
   mechanism: "Near-complete TTR tetramer stabilizer mimicking a protective TTR variant."
-  pulse: 9
+  pulse: 10
   curation:
     status: curated
     lastUpdated: 2026-06-22
@@ -412,7 +490,7 @@
   company: co-alnylam
   treats: [cond-attr-cm]
   regulatoryStatus: approved
-  regulatoryDetail: "Approved for hATTR polyneuropathy; ATTR-CM indication via HELIOS-B (2025). VERIFY label."
+  regulatoryDetail: "Approved for hATTR polyneuropathy (2022); ATTR-CM indication approved 2025-03-20 (NDA 215515/S-006) based on HELIOS-B."
   timeline:
     date: "2025-01-01"
     precision: year
@@ -420,8 +498,11 @@
     event: "FDA approval for ATTR-CM indication"
     notes: "Existing curated record asks to verify the label; keep under human review."
   mechanism: "Subcutaneous RNAi that lowers hepatic transthyretin production."
-  pulse: 8
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  pulse: 9
+  curation:
+    status: curated
+    lastUpdated: 2026-09-23
+    notes: "2026-09-23: ATTR-CM label date verified on Drugs@FDA (https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215515) and applied at the owner's request. ESC 2026 HELIOS-B subgroup: benefit consistent regardless of background tafamidis (https://investors.alnylam.com/press-release?id=30006)."
 
 - id: rx-patisiran
   type: therapy
@@ -514,16 +595,19 @@
   company: co-bayer
   treats: [cond-hfpef]
   regulatoryStatus: approved
-  regulatoryDetail: "Approved for CKD in T2D; HFmrEF/HFpEF benefit shown in FINEARTS-HF (2024). VERIFY HF label."
+  regulatoryDetail: "Approved for CKD in T2D (2021); HF with LVEF ≥40% indication approved 2025-07-11 (NDA 215341/S-009) based on FINEARTS-HF."
   timeline:
     date: "2021-01-01"
     precision: year
     dateBasis: fda-approval
     event: "FDA approval for CKD in T2D"
-    notes: "HF label remains flagged for verification in the curated record."
+    notes: "HF (LVEF ≥40%) indication added 2025-07-11 per Drugs@FDA NDA 215341 supplement S-009."
   mechanism: "Nonsteroidal mineralocorticoid receptor antagonist reducing cardiorenal inflammation/fibrosis."
   pulse: 6
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: curated
+    lastUpdated: 2026-09-23
+    notes: "2026-09-23: HF label verified on Drugs@FDA (https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215341); regulatoryDetail updated at the owner's request."
 
 - id: rx-omecamtiv-mecarbil
   type: therapy
@@ -606,6 +690,14 @@
     dateBasis: fda-approval
     event: "FDA approval of SAPIEN 3 lineage for high/inoperable-risk aortic stenosis"
   mechanism: "Balloon-expandable bovine-pericardial valve on a cobalt-chromium frame, deployed within the native aortic annulus."
+  materials:
+    - { name: "Cobalt-chromium alloy", role: "Balloon-expandable valve frame", category: frame, source: "https://www.fda.gov/medical-devices/recently-approved-devices/edwards-sapien-3-sapien-3-ultra-and-sapien-3-ultra-resilia-transcatheter-heart-valve-system" }
+    - name: "Bovine pericardium"
+      role: "Trileaflet valve tissue"
+      category: leaflet
+      source: "https://www.edwards.com/newsroom/news/2022-09-12-edwards-launches-sapien-3-ultra-resilia-valve-foll"
+      note: "SAPIEN 3 Ultra RESILIA uses RESILIA anti-calcification tissue treatment."
+    - { name: "Polyethylene terephthalate (PET)", role: "Inner and outer sealing skirts", category: fabric, source: "https://cdn.clinicaltrials.gov/large-docs/65/NCT03471065/Prot_SAP_000.pdf" }
   links:
     - label: "Product page"
       url: "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-heart/transcatheter-sapien-3"
@@ -627,6 +719,9 @@
     dateBasis: fda-approval
     event: "FDA approval of CoreValve/Evolut lineage for high-risk aortic stenosis"
   mechanism: "Self-expanding supra-annular porcine-pericardial valve on a nitinol frame for the native aortic annulus."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding supra-annular valve frame", category: frame, source: "https://www.medtronic.com/en-us/healthcare-professionals/products/cardiovascular/heart-valves/transcatheter-systems/evolut-fx-tavr-system.html" }
+    - { name: "Porcine pericardium", role: "Trileaflet valve tissue", category: leaflet, source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13244683/" }
   links:
     - label: "Product page"
       url: "https://www.medtronic.com/en-us/healthcare-professionals/products/cardiovascular/heart-valves/transcatheter-systems/evolut-fx-tavr-system.html"
@@ -648,6 +743,10 @@
     dateBasis: ce-mark
     event: "CE mark"
   mechanism: "Self-expanding bovine-pericardial valve with an active sealing cuff for the native aortic annulus."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding valve frame", category: frame, source: "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF" }
+    - { name: "Bovine pericardium", role: "Trileaflet valve tissue", category: leaflet, source: "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF" }
+    - { name: "Ultra-high-molecular-weight polyethylene (UHMWPE)", role: "NaviSeal inner and outer sealing cuff", category: fabric, source: "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF" }
   pulse: 5
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -667,6 +766,14 @@
     event: "CE mark"
     notes: "Year-level CE mark date; platform later discontinued."
   mechanism: "Self-expanding porcine-pericardial valve with a top-down deployment and stabilization arches."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding valve frame and stabilization arches", category: frame, source: "https://www.bostonscientific.com/content/dam/elabeling/ic/acurate-neo2/51081293-01A_ACURATEneo2_IFU_OUS_ML_s.pdf" }
+    - name: "Porcine pericardium"
+      role: "Trileaflet valve tissue"
+      category: leaflet
+      source: "https://www.bostonscientific.com/content/dam/bostonscientific/StructuralHeart/acurate-neo2-eu/2023-updates/SH-621403-AE-ACURATE_neo2_product_overview_spec_sheet.pdf"
+      note: "Treated with the BioFix anti-calcification process."
+    - { name: "Polyethylene terephthalate (PET)", role: "Sealing fabric", category: fabric, source: "https://www.bostonscientific.com/content/dam/elabeling/ic/acurate-neo2/51081293-01A_ACURATEneo2_IFU_OUS_ML_s.pdf" }
   pulse: 6
   curation:
     status: curated
@@ -681,22 +788,30 @@
   company: co-jenavalve
   treats: [cond-ar, cond-as]
   regulatoryStatus: approved
-  regulatoryDetail: "First transcatheter heart valve approved for symptomatic severe aortic regurgitation (FDA 2025; CE mark for AR and AS). VERIFY exact approval dates."
+  regulatoryDetail: "First transcatheter heart valve approved for symptomatic severe aortic regurgitation (FDA PMA P250024, 2026-03-17; CE mark for AR and AS)."
   timeline:
-    date: "2025-01-01"
-    precision: year
+    date: "2026-03-17"
+    precision: day
     dateBasis: fda-approval
     event: "FDA approval for symptomatic severe aortic regurgitation"
-    notes: "Existing curated record asks to verify exact approval dates."
+    source: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250024"
+    notes: "Decision date from the FDA PMA database and SSED; press coverage dated the announcement 2026-03-23."
   mechanism: "Self-expanding valve with anatomically-aligned locators that clip the native leaflets, enabling fixation without annular calcium (key for pure AR)."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding valve frame and integrated locators", category: frame, source: "https://jenavalve.com/trilogy-system/" }
+    - name: "Porcine pericardium"
+      role: "Trileaflet valve tissue"
+      category: leaflet
+      source: "https://jenavalve.com/trilogy-system/"
+      note: "Treated with JenaValve's proprietary Jasmine tissue process."
   links:
     - label: "Product page"
       url: "https://jenavalve.com/trilogy-system/"
   pulse: 8
   curation:
     status: curated
-    lastUpdated: 2026-06-22
-    notes: "CONFIRMED exact FDA approval date: 2026-03-23 (not 2025 as in the current timeline — human curator: correct timeline.date to 2026-03-23 and precision to day). Sources: https://www.tctmd.com/news/fda-approves-jenavalves-trilogy-aortic-regurgitation ; https://citoday.com/news/fda-approves-jenavalves-trilogy-thv-system-for-symptomatic-severe-aortic-regurgitation. Additionally, a 2026-07-01 JenaValve release recapped New York Valves 2026 late-breakers: an ALIGN-AR sub-analysis on pacemaker-implantation predictors (distinct from AS-oversizing mechanisms) and the JENA-VAD expanded-access registry (28 LVAD patients with severe AR treated with Trilogy; zero major 30-day complications; 7.3% one-year mortality). Source: https://www.globenewswire.com/news-release/2026/07/01/3320637/0/en/jenavalve-recaps-key-highlights-including-late-breaking-clinical-data-from-new-york-valves-2026.html."
+    lastUpdated: 2026-09-23
+    notes: "2026-09-23: timeline corrected at the owner's request to the FDA decision date 2026-03-17 (P250024; openFDA and SSED p.1). Earlier note: press reports dated the approval 2026-03-23. Sources: https://www.tctmd.com/news/fda-approves-jenavalves-trilogy-aortic-regurgitation ; https://citoday.com/news/fda-approves-jenavalves-trilogy-thv-system-for-symptomatic-severe-aortic-regurgitation. Additionally, a 2026-07-01 JenaValve release recapped New York Valves 2026 late-breakers: an ALIGN-AR sub-analysis on pacemaker-implantation predictors (distinct from AS-oversizing mechanisms) and the JENA-VAD expanded-access registry (28 LVAD patients with severe AR treated with Trilogy; zero major 30-day complications; 7.3% one-year mortality). Source: https://www.globenewswire.com/news-release/2026/07/01/3320637/0/en/jenavalve-recaps-key-highlights-including-late-breaking-clinical-data-from-new-york-valves-2026.html."
 
 # --- TMVR (transcatheter mitral valve replacement) ---
 - id: dev-tendyne
@@ -707,15 +822,22 @@
   company: co-abbott
   treats: [cond-mr]
   regulatoryStatus: approved
-  regulatoryDetail: "CE mark 2020 for mitral regurgitation; US investigational (SUMMIT pivotal trial). Transapical delivery with an apical tether."
+  regulatoryDetail: "CE mark 2020 for mitral regurgitation; FDA approved 2025-05-23 (PMA P240042) for mitral valve disease with severe mitral annular calcification. Transapical delivery with an apical tether."
   timeline:
     date: "2020-01-01"
     precision: year
     dateBasis: ce-mark
     event: "CE mark for mitral regurgitation"
   mechanism: "Self-expanding porcine-pericardial mitral valve anchored by an apical pad via a tether; fully repositionable/retrievable."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding inner and outer valve frames", category: frame, source: "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/GB/en/ARTEN600263257_A.pdf" }
+    - { name: "Porcine pericardium", role: "Valve leaflets and outer tissue seal", category: leaflet, source: "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/GB/en/ARTEN600263257_A.pdf" }
+    - { name: "Polyethylene terephthalate (PET)", role: "Outer and pocket fabric", category: fabric, source: "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/GB/en/ARTEN600263257_A.pdf" }
   pulse: 5
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: curated
+    lastUpdated: 2026-09-23
+    notes: "2026-09-23: US approval added at the owner's request (https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P240042); timeline still shows the 2020 CE mark as first availability."
 
 - id: dev-sapien-m3
   type: therapy
@@ -724,14 +846,25 @@
   name: "Edwards SAPIEN M3"
   company: co-edwards
   treats: [cond-mr]
-  regulatoryStatus: investigational
-  regulatoryDetail: "Investigational transseptal TMVR (ENCIRCLE pivotal trial); uses a dock to capture a SAPIEN valve in the mitral position."
+  regulatoryStatus: approved
+  regulatoryDetail: "FDA approved 2025-12-22 (PMA P250019) as the first transseptal TMVR system, based on ENCIRCLE; uses a dock to capture a SAPIEN valve in the mitral position."
+  timeline:
+    date: "2025-12-22"
+    precision: day
+    dateBasis: fda-approval
+    event: "FDA approval of SAPIEN M3 transseptal TMVR"
+    source: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250019"
   mechanism: "Nitinol dock encircles the mitral leaflets/chordae, then a balloon-expandable SAPIEN valve is implanted within the dock."
+  materials:
+    - { name: "Nitinol", role: "Encircling dock and paravalvular-leak guard", category: anchor, source: "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-mitral-tricuspid-technologies/sapien-m3/features" }
+    - { name: "Cobalt-chromium alloy", role: "Balloon-expandable valve frame", category: frame, source: "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-mitral-tricuspid-technologies/sapien-m3/features" }
+    - { name: "Bovine pericardium", role: "Trileaflet valve tissue", category: leaflet, source: "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-mitral-tricuspid-technologies/sapien-m3/features" }
+    - { name: "Polyethylene terephthalate (PET)", role: "Full-frame sealing skirt", category: fabric, source: "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-mitral-tricuspid-technologies/sapien-m3/features" }
   pulse: 7
   curation:
     status: curated
-    lastUpdated: 2026-06-28
-    notes: "CONFIRMED: FDA approved 2025-12-23 as the Edwards SAPIEN M3 Mitral Valve Replacement System — the first transseptal TMVR device — for (1) symptomatic moderate-to-severe/severe MR unsuitable for surgery/TEER and (2) mitral valve dysfunction associated with mitral annular calcification unsuitable for surgery/TEER. Based on the single-arm ENCIRCLE pivotal trial (299 patients; ~95.7% achieved MR <=1+; presented TCT 2025-10-27, published Lancet 2025-11-29). CE Mark was earlier, April 2025. One-year ENCIRCLE-MAC Registry data were separately presented at New York Valves 2026 (Jun 24-26). Sources: https://www.edwards.com/newsroom/news/2025-12-23-fda-approves-edwards-lifesciences--sapien-m3-mitra ; https://www.tctmd.com/news/fda-approves-sapien-m3-transseptal-mitral-valve-replacement. Human curator: update regulatoryStatus to approved, regulatoryDetail, and add an fda-approval timeline (2025-12-23)."
+    lastUpdated: 2026-09-23
+    notes: "2026-09-23: status, regulatoryDetail, and timeline applied at the owner's request using the FDA decision date 2025-12-22 (P250019; Edwards announced 2025-12-23). Earlier note: CONFIRMED: FDA approved 2025-12-23 as the Edwards SAPIEN M3 Mitral Valve Replacement System — the first transseptal TMVR device — for (1) symptomatic moderate-to-severe/severe MR unsuitable for surgery/TEER and (2) mitral valve dysfunction associated with mitral annular calcification unsuitable for surgery/TEER. Based on the single-arm ENCIRCLE pivotal trial (299 patients; ~95.7% achieved MR <=1+; presented TCT 2025-10-27, published Lancet 2025-11-29). CE Mark was earlier, April 2025. One-year ENCIRCLE-MAC Registry data were separately presented at New York Valves 2026 (Jun 24-26). Sources: https://www.edwards.com/newsroom/news/2025-12-23-fda-approves-edwards-lifesciences--sapien-m3-mitra ; https://www.tctmd.com/news/fda-approves-sapien-m3-transseptal-mitral-valve-replacement. Human curator: update regulatoryStatus to approved, regulatoryDetail, and add an fda-approval timeline (2025-12-23)."
 
 - id: dev-intrepid
   type: therapy
@@ -743,6 +876,10 @@
   regulatoryStatus: investigational
   regulatoryDetail: "Investigational TMVR (APOLLO pivotal trial); transseptal delivery system in development."
   mechanism: "Self-expanding dual-stent bovine-pericardial mitral valve with a conformable outer fixation ring."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding inner stent and outer fixation frame", category: frame, source: "https://cdn.clinicaltrials.gov/large-docs/40/NCT02322840/Prot_SAP_001.pdf" }
+    - { name: "Bovine pericardium", role: "Trileaflet valve tissue", category: leaflet, source: "https://cdn.clinicaltrials.gov/large-docs/40/NCT02322840/Prot_SAP_001.pdf" }
+    - { name: "Polyester", role: "Woven valve-support fabric", category: fabric, source: "https://cdn.clinicaltrials.gov/large-docs/40/NCT02322840/Prot_SAP_001.pdf" }
   pulse: 4
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -762,6 +899,10 @@
     dateBasis: fda-approval
     event: "FDA approval for primary/degenerative mitral regurgitation"
   mechanism: "Percutaneous transseptal clip that grasps the mitral leaflets to create a double-orifice valve and reduce regurgitation."
+  materials:
+    - { name: "Cobalt-chromium alloy", role: "Clip arms and body", category: frame, source: "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/au/hcp/structural-heart/pdfs/mitraclip/Exec%20Summary%20-%20MitraClip%20G4%20v2.pdf" }
+    - { name: "Nitinol", role: "Flexible grippers and frictional elements", category: anchor, source: "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/au/hcp/structural-heart/pdfs/mitraclip/Exec%20Summary%20-%20MitraClip%20G4%20v2.pdf" }
+    - { name: "Polyester", role: "Clip and gripper fabric cover that promotes tissue growth", category: fabric, source: "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/au/hcp/structural-heart/pdfs/mitraclip/Exec%20Summary%20-%20MitraClip%20G4%20v2.pdf" }
   links:
     - label: "Product page"
       url: "https://www.cardiovascular.abbott/us/en/hcp/products/structural-heart/transcatheter-valve-solutions/mitraclip.html"
@@ -783,6 +924,9 @@
     dateBasis: fda-approval
     event: "FDA approval for degenerative mitral regurgitation"
   mechanism: "Transseptal edge-to-edge repair device with a central spacer that fills the regurgitant orifice and broad paddles for leaflet capture."
+  materials:
+    - { name: "Nitinol", role: "Flexible spacer, paddles, and clasps", category: frame, source: "https://www.fda.gov/medical-devices/recently-approved-devices/pascal-precision-transcatheter-valve-repair-system" }
+    - { name: "Polyethylene terephthalate (PET)", role: "Cloth covering the implant's primary components", category: fabric, source: "https://www.fda.gov/medical-devices/recently-approved-devices/pascal-precision-transcatheter-valve-repair-system" }
   links:
     - label: "Product page"
       url: "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-mitral-tricuspid-technologies/pascal-precision-system"
@@ -807,6 +951,10 @@
     dateBasis: fda-approval
     event: "FDA approval for tricuspid regurgitation"
   mechanism: "Transcatheter edge-to-edge clip adapted to tricuspid anatomy to approximate leaflets and reduce TR."
+  materials:
+    - { name: "Cobalt-chromium alloy", role: "Clip arms and body", category: frame, source: "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf" }
+    - { name: "Nitinol", role: "Flexible grippers and frictional elements", category: anchor, source: "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf" }
+    - { name: "Polyester", role: "Clip and gripper fabric cover", category: fabric, source: "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf" }
   links:
     - label: "Product page"
       url: "https://www.cardiovascular.abbott/us/en/hcp/products/structural-heart/transcatheter-valve-solutions/triclip.html"
@@ -823,6 +971,12 @@
   regulatoryDetail: "Investigational transcatheter tricuspid repair system; exclusively for clinical investigation and not commercially available."
   mechanism: "A transfemorally delivered, conformable nitinol frame sits entirely in the right atrium to stabilize annular dilation, while a central disk reduces the regurgitant orifice and supports native leaflet coaptation without entering the right ventricle."
   description: "A dual-mechanism repair concept intended to combine annular stabilization with leaflet enhancement while preserving the native tricuspid valve."
+  materials:
+    - name: "Nitinol"
+      role: "Conformable right-atrial frame with tissue-anchoring barbs"
+      category: frame
+      source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12926008/"
+      note: "The public first-in-human report describes a textile ingrowth skirt but does not identify its polymer."
   links:
     - label: "Developer page"
       url: "https://versavascular.com/"
@@ -854,6 +1008,10 @@
     dateBasis: fda-approval
     event: "FDA approval for tricuspid regurgitation"
   mechanism: "Self-expanding bovine-pericardial valve with intra-annular sealing and anchoring tabs that engage native tricuspid leaflets."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding valve frame and leaflet-engaging anchors", category: frame, source: "https://eifu.edwards.com/eifu/tmtt-production-eifus/DOC-0255961B.pdf" }
+    - { name: "Bovine pericardium", role: "Trileaflet valve tissue", category: leaflet, source: "https://eifu.edwards.com/eifu/tmtt-production-eifus/DOC-0255961B.pdf" }
+    - { name: "Polyethylene terephthalate (PET)", role: "Intra-annular fabric sealing skirt", category: fabric, source: "https://eifu.edwards.com/eifu/tmtt-production-eifus/DOC-0583384A.pdf" }
   links:
     - label: "Product page"
       url: "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-mitral-tricuspid-technologies/evoque-tricuspid-valve-replacement-system"
@@ -877,6 +1035,9 @@
     event: "CE mark for mitral annular reduction"
     notes: "Earliest known Cardioband CE mark; tricuspid CE mark came later."
   mechanism: "Adjustable transcatheter annuloplasty band anchored along the valve annulus and cinched to reduce annular dimension and regurgitation."
+  materials:
+    - { name: "Polyester", role: "Adjustable annuloplasty sleeve", category: fabric, source: "https://eurointervention.pcronline.com/article/the-cardioband-transcatheter-direct-mitral-valve-annuloplasty-system" }
+    - { name: "Stainless steel", role: "Helical annular anchors", category: anchor, source: "https://eurointervention.pcronline.com/article/the-cardioband-transcatheter-direct-mitral-valve-annuloplasty-system" }
   pulse: 4
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -889,15 +1050,21 @@
   company: co-medtronic
   treats: [cond-pv]
   regulatoryStatus: approved
-  regulatoryDetail: "FDA Humanitarian Device Exemption 2010; PMA approval 2017. For dysfunctional RVOT conduits/bioprosthetic valves."
+  regulatoryDetail: "FDA Humanitarian Device Exemption 2010 (H080002); PMA approval 2015-01-27 (P140017). For dysfunctional RVOT conduits/bioprosthetic valves."
   timeline:
-    date: "2010-01-01"
-    precision: year
+    date: "2010-01-25"
+    precision: day
     dateBasis: fda-approval
     event: "FDA humanitarian device exemption"
   mechanism: "Balloon-expandable bovine-jugular-vein valve sutured in a platinum-iridium stent for the pulmonary position."
+  materials:
+    - { name: "Platinum-iridium alloy", role: "Balloon-expandable valve stent", category: frame, source: "https://w.medtronic.com/melody/downloads/ensemble-ii-product-brochure.pdf" }
+    - { name: "Bovine jugular vein", role: "Biologic valve conduit and leaflets", category: leaflet, source: "https://w.medtronic.com/melody/downloads/ensemble-ii-product-brochure.pdf" }
   pulse: 3
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: curated
+    lastUpdated: 2026-09-23
+    notes: "2026-09-23: PMA year corrected 2017→2015 and HDE date set to 2010-01-25 at the owner's request (openFDA; https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140017B.pdf p.1)."
 
 - id: dev-harmony
   type: therapy
@@ -914,6 +1081,14 @@
     dateBasis: fda-approval
     event: "FDA approval"
   mechanism: "Self-expanding porcine-pericardial valve in a nitinol frame designed to seat in the native RVOT/main pulmonary artery."
+  materials:
+    - { name: "Nitinol", role: "Self-expanding right-ventricular-outflow-tract frame", category: frame, source: "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf" }
+    - name: "Porcine pericardium"
+      role: "Trileaflet pulmonary valve tissue"
+      category: leaflet
+      source: "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf"
+      note: "Processed with Medtronic's alpha-amino oleic acid anti-mineralization treatment."
+    - { name: "Polyester", role: "Knitted frame covering", category: fabric, source: "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf" }
   pulse: 4
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
@@ -939,7 +1114,7 @@
   regulatoryStatus: approved
   regulatoryDetail: "Standard surgical therapy; repair (annuloplasty + leaflet/chordal techniques) preferred over replacement for degenerative MR."
   mechanism: "Open or minimally-invasive surgical repair (annuloplasty ring, leaflet resection/neochordae) or prosthetic replacement of the mitral valve."
-  pulse: 3
+  pulse: 4
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: proc-tv-surgery
@@ -951,7 +1126,7 @@
   regulatoryStatus: approved
   regulatoryDetail: "Standard surgical therapy, classically annuloplasty during left-sided heart surgery; isolated tricuspid surgery carries higher operative risk."
   mechanism: "Surgical annuloplasty (ring) or prosthetic replacement of the tricuspid valve."
-  pulse: 2
+  pulse: 4
   curation: { status: curated, lastUpdated: 2026-06-22 }
 
 - id: proc-bav
@@ -977,3 +1152,90 @@
   mechanism: "Transseptal balloon splitting of fused mitral commissures to enlarge the mitral orifice."
   pulse: 2
   curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: dev-trimemo
+  type: therapy
+  therapyType: device
+  subtype: Surgical annuloplasty ring
+  name: Corcym TriMemo
+  company: co-corcym
+  treats:
+  - cond-tr
+  regulatoryStatus: approved
+  regulatoryDetail: FDA cleared April 2026; commercially available in the US. First-in-human implant September 8, 2026 at Cleveland Clinic. First tricuspid-specific extension of Corcym's ~20-year Memo mitral annuloplasty platform.
+  mechanism: Semi-rigid, open Nitinol-cell annuloplasty ring with a Carbofilm-coated silicone sheath, implanted surgically to remodel/support the tricuspid annulus.
+  materials:
+  - { name: Nitinol, role: Cell-structure ring core, category: frame, source: "https://www.corcym.com/devices/mitral/memo4d" }
+  - { name: Silicone, role: Oval sheath over the ring core, category: fabric, source: "https://www.corcym.com/devices/mitral/memo4d" }
+  - { name: Carbofilm (turbostratic carbon), role: Surface coating of the sheath, category: coating, source: "https://www.corcym.com/devices/mitral/memo4d" }
+  pulse: 4
+  curation:
+    status: draft
+    lastUpdated: '2026-09-23'
+    sources:
+    - https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair
+    - https://www.corcym.com/devices/mitral/memo4d
+    notes: 'Draft from 2026-09-23 research. Needed to attach the Sept 8, 2026 first-in-human TriMemo news item; no existing device id covers a dedicated tricuspid surgical annuloplasty ring. Exact FDA clearance date/number and material composition should be verified against the 510(k) summary before promotion to curated (materials above are inferred from the closed-ring Memo 4D product page, not a TriMemo-specific source, since no TriMemo product page could be located). Sources: https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair ; https://www.massdevice.com/corcym-achieves-first-in-human-implant-of-trimemo-for-tricuspid-valve-repair/'
+
+- id: dev-memo-4d-curve
+  type: therapy
+  therapyType: device
+  subtype: Surgical annuloplasty ring
+  name: Corcym Memo 4D Curve
+  company: co-corcym
+  treats:
+  - cond-mr
+  regulatoryStatus: approved
+  regulatoryDetail: FDA cleared and commercially available in the US as of September 2026. Open-configuration addition to the Memo 4D mitral-ring family (sizes up to 42 mm). First-in-human implant September 22, 2026 at UVA Health.
+  mechanism: Semi-rigid, open-configuration Nitinol-cell annuloplasty ring with a Carbofilm-coated silicone sheath, designed to preserve three-dimensional mitral annular motion while remodeling annuli from standard degenerative disease to severely dilated.
+  materials:
+  - { name: Nitinol, role: Cell-structure ring core, category: frame, source: "https://www.corcym.com/devices/mitral/memo4d" }
+  - { name: Silicone, role: Oval sheath over the ring core, category: fabric, source: "https://www.corcym.com/devices/mitral/memo4d" }
+  - { name: Carbofilm (turbostratic carbon), role: Surface coating of the sheath, category: coating, source: "https://www.corcym.com/devices/mitral/memo4d" }
+  pulse: 4
+  curation:
+    status: draft
+    lastUpdated: '2026-09-23'
+    sources:
+    - https://www.financialcontent.com/article/bizwire-2026-9-22-corcym-announces-first-in-human-implant-of-memo-4d-curve-expanding-its-memo-mitral-repair-platform
+    - https://www.corcym.com/devices/mitral/memo4d
+    notes: 'Draft from 2026-09-23 research. Needed to attach the Sept 22, 2026 first-in-human Memo 4D Curve news item; existing graph has no Corcym mitral-annuloplasty device id. Exact FDA clearance date/number not disclosed in the press release and should be verified before promotion to curated. Sources: https://www.financialcontent.com/article/bizwire-2026-9-22-corcym-announces-first-in-human-implant-of-memo-4d-curve-expanding-its-memo-mitral-repair-platform ; https://cvillerightnow.com/news/208802-uva-health-first-in-world-to-implant-new-cardiac-mitral-valve-repair-device/'
+
+- id: rx-azd5462
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: relaxin receptor (RXFP1) agonist
+  name: AZD5462
+  company: co-astrazeneca
+  treats:
+  - cond-hfref
+  regulatoryStatus: investigational
+  regulatoryDetail: Phase 2b (LUMINARA) hemodynamic/safety data presented at ESC 2026; not yet approved for any indication. Larger, outcomes-powered trials are planned.
+  mechanism: Oral small-molecule agonist of the RXFP1 relaxin receptor; reduces systemic vascular resistance/afterload and is intended to promote reverse cardiac remodeling.
+  pulse: 6
+  curation:
+    status: draft
+    lastUpdated: '2026-09-23'
+    sources:
+    - https://www.escardio.org/news/press/press-releases/novel-drug-shows-promise-in-an-early-phase-trial-in-heart-failure/
+    - https://pubmed.ncbi.nlm.nih.gov/42668430/
+    notes: New investigational mechanism (relaxin pathway) not previously represented in the graph. Only Phase 2b dose-ranging/hemodynamic data exist; not powered for clinical outcomes.
+
+- id: rx-tirzepatide
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: GLP-1/GIP receptor agonist
+  name: Tirzepatide (Zepbound)
+  company: co-eli-lilly
+  treats:
+  - cond-hfpef
+  regulatoryStatus: investigational
+  regulatoryDetail: Approved for weight loss and obstructive sleep apnea; NOT approved for an HFpEF indication as of Sept 2026. Positive Phase 3 SUMMIT trial (obesity-related HFpEF) supports a new Class IIa recommendation for semaglutide/tirzepatide in the 2026 ESC heart failure guidelines, but that is a guideline recommendation, not a drug-label change.
+  mechanism: Dual GLP-1/GIP receptor agonist; weight loss and direct cardiometabolic effects are proposed to reduce filling pressures and symptom burden in obesity-related HFpEF.
+  curation:
+    status: draft
+    lastUpdated: '2026-09-23'
+    sources:
+    - https://www.escardio.org/news/press/press-releases/major-changes-made-to-the-esc-guidelines-on-heart-failure/
+    - https://en.wikipedia.org/wiki/Tirzepatide
+    notes: GLP-1/obesity-HFpEF is explicitly in scope for this graph and currently has no representative entity. SUMMIT trial primary results were NOT independently re-verified against NEJM this pass -- VERIFY trial name/NCT/date before promoting to curated, and confirm current regulatory status has not changed.

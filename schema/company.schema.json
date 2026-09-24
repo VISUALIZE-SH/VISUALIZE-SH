@@ -16,7 +16,7 @@
     "name": { "type": "string", "minLength": 1 },
     "ticker": { "type": "string", "description": "Stock ticker if public, e.g. 'BSX'." },
     "hq": { "type": "string", "description": "Headquarters location." },
-    "website": { "type": "string", "format": "uri" },
+    "website": { "type": "string", "format": "uri", "pattern": "^https://" },
     "description": { "type": "string" },
     "pulse": {
       "type": "number",
@@ -34,7 +34,15 @@
       "properties": {
         "status": { "enum": ["draft", "curated"] },
         "lastUpdated": { "type": "string", "format": "date" },
-        "sources": { "type": "array", "items": { "type": "string" } },
+        "sources": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              { "type": "string", "format": "uri", "pattern": "^https://" },
+              { "type": "string", "pattern": "^PMID:[0-9]+$" }
+            ]
+          }
+        },
         "notes": { "type": "string" }
       }
     }
