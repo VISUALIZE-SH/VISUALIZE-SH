@@ -25,22 +25,20 @@ export default function About({ meta, onClose }: Props) {
           <p>
             An interactive knowledge graph of the <strong>structural heart</strong>{' '}
             landscape — valvular and non-valvular — covering conditions and
-            anatomy, the therapies that target them (devices, pharmaceuticals,
-            digital, and procedures), the companies behind them, and the clinical
-            trials that evaluate them.
+            anatomy, therapies (devices, pharmaceuticals, digital, procedures),
+            companies, and clinical trials.
           </p>
 
           <h3>Reading the graph</h3>
           <p>
-            Node <strong>color/shape</strong> encodes entity type and{' '}
-            <strong>size</strong> encodes how connected it is. Label{' '}
-            <strong>size</strong> reflects each item&apos;s <strong>pulse</strong>{' '}
-            — a 0–10 score of recent news attention — so the most newsworthy
-            topics stay legible when zoomed out; zoom in to reveal the rest.
+            Node <strong>color/shape</strong> encodes entity type;{' '}
+            <strong>size</strong> encodes connections. Label{' '}
+            <strong>size</strong> reflects <strong>pulse</strong>{' '}
+            — a 0–10 recent-news-attention score — so the most newsworthy
+            topics stay legible when zoomed out.
             A dashed outline marks unreviewed <em>drafts</em>.{' '}
-            <strong>Drag</strong> any node and a lightweight physics simulation
-            elastically pulls its neighbors along, with the pull falling off across
-            the network.
+            <strong>Drag</strong> any node and its neighbors follow, via a
+            lightweight physics pull that fades across the network.
           </p>
 
           <h3>What&apos;s inside</h3>
@@ -57,23 +55,21 @@ export default function About({ meta, onClose }: Props) {
             ))}
           </ul>
 
-          <h3>How it&apos;s built &amp; updated</h3>
+          <h3>Built &amp; updated</h3>
           <p>
-            Every entity is authored as documented YAML, validated against a JSON
-            Schema, and compiled into the graph at build time. The schema is
-            structured so a scheduled assistant can draft updates (new approvals,
-            trial readouts) as <em>drafts</em> — shown with a dashed outline —
-            which are then reviewed and promoted by a human curator.
+            Every entity is authored as YAML, validated against a JSON
+            Schema, and compiled into the graph at build time. A scheduled
+            assistant can draft updates (new approvals, trial readouts) for a
+            human curator to review and promote.
           </p>
 
           <h3>Data &amp; disclaimer</h3>
           <p className="disclaimer">
-            For educational and informational use only. This is <strong>not
-            medical advice</strong> and may be incomplete or out of date.
-            Regulatory status, trial results, and corporate ownership change
-            frequently — always verify against primary sources (FDA labeling,
-            ClinicalTrials.gov, peer-reviewed publications) before relying on
-            anything here.
+            For educational use only — this is <strong>not medical advice</strong>{' '}
+            and may be incomplete or out of date. Regulatory status, trial
+            results, and ownership change frequently; verify against primary
+            sources (FDA labeling, ClinicalTrials.gov, peer-reviewed literature)
+            before relying on this.
           </p>
 
           <p className="muted">

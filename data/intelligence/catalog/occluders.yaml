@@ -1,0 +1,960 @@
+# needs-fulltext:
+#   - dev-amplatzer-pfo (ver-amplatzer-pfo): delivery-sheath French size for the TorqVue system.
+#     Only a patient brochure (not a physician IFU) was posted for P120021; needs the Abbott
+#     physician IFU. https://www.accessdata.fda.gov/cdrh_docs/pdf12/P120021D.pdf
+#   - dev-amplatzer-piccolo (ver-amplatzer-piccolo): delivery-sheath French size, exact occluder/
+#     retention-disk diameters, labeled post-implant antiplatelet regimen, fabric-cover/surface-coating.
+#     No public SSED/IFU was posted for supplement P020024/S052.
+#     https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P020024S052
+#   - GORE CARDIOFORM ASD Occluder (ver-gore-cardioform-asd): occluder diameters, delivery-sheath
+#     French size, frame/fabric confirmation specific to this configuration, post-implant regimen.
+#     No public SSED/labeling was posted for supplement P050006/S071. Full text of the ASSURED
+#     study was paywalled/cookie-gated in this review: https://pubmed.ncbi.nlm.nih.gov/31943749/
+#   - dev-amplatzer-vsd (ver-amplatzer-vsd): exact labeled post-implant antiplatelet regimen
+#     (dosing/duration) -- SSED references anti-platelet therapy only in a contraindication clause.
+#     Not encoded as a spec value here because taxonomy.yaml's post-implant-therapy attribute does
+#     not list vsd-occluders (or pda-occluders) in its categoryIds.
+#     https://www.accessdata.fda.gov/cdrh_docs/pdf4/P040040b.pdf
+#   - dev-ecliptis (ver-ecliptis): labeled post-implant antithrombotic regimen -- not specified in
+#     the 510(k) summary. https://www.accessdata.fda.gov/cdrh_docs/pdf25/K254232.pdf
+#   - dev-lambre (ver-lambre): explicit recapture/reposition capability -- the delivery cable is
+#     described as a threaded (screw) system but recapture is not explicitly stated in the reviewed
+#     source. https://pmc.ncbi.nlm.nih.gov/articles/PMC9352115/
+observedAt: '2026-09-23'
+sources:
+- id: src-amulet-ssed
+  title: Amplatzer Amulet LAA Occluder SSED
+  url: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2021-08-14'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P200049
+- id: src-amplatzer-pfo-ssed
+  title: Amplatzer PFO Occluder SSED
+  url: https://www.accessdata.fda.gov/cdrh_docs/pdf12/P120021B.pdf
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2016-10-28'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P120021
+- id: src-gore-cardioform-septal-s044-decision
+  title: GORE CARDIOFORM Septal Occluder line-addition decision (S044)
+  url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P050006S044
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2015-04-30'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P050006/S044
+- id: src-gore-cardioform-septal-ssed
+  title: GORE CARDIOFORM Septal Occluder SSED (ASD + PFO indications, S060)
+  url: https://www.accessdata.fda.gov/cdrh_docs/pdf5/P050006s060b.pdf
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2018-03-30'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P050006/S060
+- id: src-gore-cardioform-septal-ifu
+  title: GORE CARDIOFORM Septal Occluder labeling / Instructions for Use (S060)
+  url: https://www.accessdata.fda.gov/cdrh_docs/pdf5/P050006s060d.pdf
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2018-03-30'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P050006/S060
+- id: src-gore-cardioform-asd-decision
+  title: GORE CARDIOFORM ASD Occluder addition decision (S071)
+  url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P050006S071
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2019-05-28'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P050006/S071
+- id: src-gore-cardioform-asd-pr
+  title: GORE CARDIOFORM ASD Occluder Receives FDA Approval for the Treatment of Atrial Septal Defects
+    (press release)
+  url: https://www.prnewswire.com/news-releases/gore-cardioform-asd-occluder-receives-fda-approval-for-the-treatment-of-atrial-septal-defects-300859967.html
+  kind: manufacturer
+  publisher: W. L. Gore & Associates
+  publishedAt:
+    value: '2019-06-04'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+- id: src-gore-cardioform-asd-assured
+  title: 'ASSURED clinical study: New GORE CARDIOFORM ASD occluder for transcatheter closure of atrial
+    septal defect (PMID 31943749)'
+  url: https://pubmed.ncbi.nlm.nih.gov/31943749/
+  kind: publication
+  publisher: PubMed / Catheter Cardiovasc Interv
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: PMID 31943749
+- id: src-amplatzer-aso-ssed
+  title: Amplatzer Septal Occluder (ASO) SSED
+  url: https://www.accessdata.fda.gov/cdrh_docs/pdf/P000039b.pdf
+  kind: regulatory
+  publisher: FDA
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P000039
+- id: src-amplatzer-aso-decision
+  title: Amplatzer Septal Occluder (ASO) PMA database decision record
+  url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P000039
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2001-12-05'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P000039
+- id: src-amplatzer-piccolo-decision
+  title: Amplatzer Piccolo Occluder PMA database decision record (S052)
+  url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P020024S052
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2019-01-11'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P020024/S052
+- id: src-amplatzer-piccolo-brochure
+  title: Amplatzer Piccolo Occluder patient brochure
+  url: https://www.structuralheart.abbott/fileadmin/content/Solutions-Products/structural-interventions/Amplatzer_Piccolo_Parent_Brochure._2019.pdf
+  kind: manufacturer
+  publisher: Abbott
+  publishedAt:
+    value: '2019'
+    precision: year
+  retrievedAt: '2026-09-23'
+  access: public
+- id: src-amplatzer-piccolo-pivotal
+  title: 3-year follow-up of a prospective, multicenter study of the Amplatzer Piccolo Occluder for transcatheter
+    PDA closure in children >=700 grams (PMC10541325)
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10541325/
+  kind: publication
+  publisher: PMC / J Am Heart Assoc or Catheter Cardiovasc Interv
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: PMC10541325
+- id: src-amplatzer-vsd-ssed
+  title: Amplatzer Muscular VSD Occluder SSED
+  url: https://www.accessdata.fda.gov/cdrh_docs/pdf4/P040040b.pdf
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2007-09-07'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P040040
+- id: src-lambre-study
+  title: 'Oclusão do Apêndice Atrial Esquerdo com a Prótese Lambre: Experiência Multicêntrica Inicial
+    no Brasil'
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9352115/
+  kind: publication
+  publisher: Arquivos Brasileiros de Cardiologia
+  publishedAt:
+    value: '2022-04-26'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: doi:10.36660/abc.20210275
+- id: src-lambre-us-status
+  title: FDA-approved Investigator-initiated Pre-market Clinical Trial of LAmbre Plus LAA Closure System
+    Obtained Medical Insurance Coverage in the US (press release)
+  url: https://www.prnewswire.com/news-releases/fda-approved-investigator-initiated-pre-market-clinical-trial-of-lambre-plus-laa-closure-system-obtained-medical-insurance-coverage-in-the-us-301617667.html
+  kind: manufacturer
+  publisher: Lifetech Scientific
+  publishedAt:
+    value: '2022-09-05'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+- id: src-ecliptis-510k
+  title: ECLIPTIS Left Atrial Appendage Exclusion System 510(k) clearance letter and summary (K254232)
+  url: https://www.accessdata.fda.gov/cdrh_docs/pdf25/K254232.pdf
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2026-06-26'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: K254232
+- id: src-watchman-flx-s035-ssed
+  title: WATCHMAN FLX Closure Device with Delivery System SSED (original FLX approval, S035)
+  url: https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S035B.pdf
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2020-07-21'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P130013/S035
+- id: src-watchman-flx-pro-s074-ssed
+  title: WATCHMAN FLX / FLX Pro post-ablation indication and NOAC-alone regimen SSED (S074)
+  url: https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S074B.pdf
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2025-07-16'
+    precision: day
+  retrievedAt: '2026-09-23'
+  access: public
+  identifier: P130013/S074
+families:
+- id: family-amulet
+  name: Amplatzer Amulet
+  manufacturer: Abbott
+  entityIds:
+  - dev-amulet
+  conditionIds:
+  - cond-af
+  description: Single-generation LAA occluder family; track the Amulet IDE Trial vs. WATCHMAN as the pivotal
+    evidence.
+- id: family-lambre
+  name: LAmbre
+  manufacturer: Lifetech Scientific
+  entityIds:
+  - dev-lambre
+  conditionIds:
+  - cond-af
+  description: CE-marked/China NMPA-approved LAA occluder; track separately from its US IDE-only status.
+- id: family-ecliptis
+  name: Ecliptis
+  manufacturer: Edwards Lifesciences
+  entityIds:
+  - dev-ecliptis
+  conditionIds:
+  - cond-af
+  description: Surgical LAA exclusion clip (510(k), not a transcatheter occluder); do not merge its attributes
+    with percutaneous LAAO devices.
+- id: family-amplatzer-pfo
+  name: Amplatzer PFO Occluder
+  manufacturer: Abbott
+  entityIds:
+  - dev-amplatzer-pfo
+  conditionIds:
+  - cond-pfo
+  description: Track the RESPECT-trial-supported PFO indication separately from the Amplatzer ASD/VSD
+    occluder families.
+- id: family-gore-cardioform
+  name: GORE CARDIOFORM
+  manufacturer: W. L. Gore & Associates
+  entityIds:
+  - dev-gore-cardioform-septal
+  conditionIds:
+  - cond-pfo
+  - cond-asd
+  description: Shared CARDIOFORM platform; the Septal Occluder (<=17 mm, ASD+PFO) and the larger ASD Occluder
+    (8-35 mm, ASD only) are separate labeled configurations under PMA P050006.
+- id: family-amplatzer-asd
+  name: Amplatzer Septal Occluder
+  manufacturer: Abbott
+  entityIds:
+  - dev-amplatzer-asd
+  conditionIds:
+  - cond-asd
+  description: Long-established double-disc ASD occluder family; original 2001 PMA.
+- id: family-amplatzer-piccolo
+  name: Amplatzer Piccolo Occluder
+  manufacturer: Abbott
+  entityIds:
+  - dev-amplatzer-piccolo
+  conditionIds:
+  - cond-pda
+  description: PDA occluder for small/premature infants; a supplement (S052) to the original Amplatzer
+    Duct Occluder PMA (P020024).
+- id: family-amplatzer-vsd
+  name: Amplatzer Muscular VSD Occluder
+  manufacturer: Abbott
+  entityIds:
+  - dev-amplatzer-vsd
+  conditionIds:
+  - cond-vsd
+  description: Standalone PMA (P040040) for high-risk muscular VSD closure; verify against therapies.yaml,
+    which mislabels this as an HDE.
+versions:
+- id: ver-amulet
+  familyId: family-amulet
+  name: Amplatzer Amulet
+  kind: device
+  clinicalRole: treats
+  summary: Dual-seal (lobe+disc) LAA occluder; FDA approved 2021 on the Amulet IDE Trial vs. WATCHMAN.
+  sourceRefs:
+  - sourceId: src-amulet-ssed
+    locator: Device and approval-order fields
+  reviewStatus: draft
+- id: ver-lambre
+  familyId: family-lambre
+  name: LAmbre
+  kind: device
+  clinicalRole: treats
+  summary: Umbrella-and-cover LAA occluder; CE-marked and China NMPA-approved. No FDA marketing authorization
+    as of 2026-09-23 (US IDE trial only).
+  sourceRefs:
+  - sourceId: src-lambre-study
+    locator: Device description ('Dispositivo Lambre®' section)
+  reviewStatus: draft
+- id: ver-ecliptis
+  familyId: family-ecliptis
+  name: Ecliptis LAA Exclusion System
+  kind: device
+  clinicalRole: treats
+  summary: Surgical LAA exclusion clip cleared via 510(k) substantial equivalence to AtriCure AtriClip;
+    applied under direct visualization during concomitant cardiac surgery, not a transcatheter occluder.
+  sourceRefs:
+  - sourceId: src-ecliptis-510k
+    locator: 510(k) Summary, Device Description
+  reviewStatus: draft
+- id: ver-amplatzer-pfo
+  familyId: family-amplatzer-pfo
+  name: Amplatzer PFO Occluder
+  kind: device
+  clinicalRole: treats
+  summary: Double-disc nitinol/polyester PFO occluder; FDA approved 2016 on the RESPECT trial.
+  sourceRefs:
+  - sourceId: src-amplatzer-pfo-ssed
+    locator: Device and approval-order fields
+  reviewStatus: draft
+- id: ver-gore-cardioform-septal
+  familyId: family-gore-cardioform
+  name: GORE CARDIOFORM Septal Occluder
+  kind: device
+  clinicalRole: treats
+  summary: ePTFE-covered nitinol double-disc occluder labeled for ostium secundum ASD and PFO closure
+    (defects <=17 mm); approved on the REDUCE trial for the PFO indication.
+  sourceRefs:
+  - sourceId: src-gore-cardioform-septal-ssed
+    locator: Device Description and Indications for Use
+  reviewStatus: draft
+- id: ver-gore-cardioform-asd
+  familyId: family-gore-cardioform
+  name: GORE CARDIOFORM ASD Occluder
+  kind: device
+  clinicalRole: treats
+  summary: Larger-defect configuration of the CARDIOFORM platform, labeled for ostium secundum ASDs 8-35
+    mm; added to the GORE HELEX/CARDIOFORM product line in 2019 (P050006/S071). No public SSED/labeling
+    was posted for this supplement.
+  sourceRefs:
+  - sourceId: src-gore-cardioform-asd-decision
+    locator: Approval order statement
+  reviewStatus: draft
+- id: ver-amplatzer-asd
+  familyId: family-amplatzer-asd
+  name: Amplatzer Septal Occluder (ASO)
+  kind: device
+  clinicalRole: treats
+  summary: Double-disc nitinol/polyester ASD occluder, 28 sizes (4-38 mm); original 2001 PMA compared
+    the device to surgical ASD closure.
+  sourceRefs:
+  - sourceId: src-amplatzer-aso-ssed
+    locator: Device Description and Table 1
+  reviewStatus: draft
+- id: ver-amplatzer-piccolo
+  familyId: family-amplatzer-piccolo
+  name: Amplatzer Piccolo Occluder
+  kind: device
+  clinicalRole: treats
+  summary: Miniaturized braided-nitinol PDA occluder for infants >=700 g; FDA approved 2019 (P020024/S052)
+    on a 200-patient US IDE study (NCT03055858). No public SSED was posted for this supplement.
+  sourceRefs:
+  - sourceId: src-amplatzer-piccolo-decision
+    locator: Approval order statement
+  reviewStatus: draft
+- id: ver-amplatzer-vsd
+  familyId: family-amplatzer-vsd
+  name: Amplatzer Muscular VSD Occluder
+  kind: device
+  clinicalRole: treats
+  summary: Double-disc nitinol/polyester occluder for high-surgical-risk muscular VSD closure; approved
+    2007 on a retrospective 41-patient high-risk cohort. This is a standard PMA (P040040), not an HDE.
+  sourceRefs:
+  - sourceId: src-amplatzer-vsd-ssed
+    locator: Device Description and General Information fields
+  reviewStatus: draft
+decisions:
+- id: decision-amulet
+  identifier: P200049
+  rootIdentifier: P200049
+  versionIds:
+  - ver-amulet
+  jurisdiction: US
+  pathway: PMA
+  date:
+    value: '2021-08-14'
+    precision: day
+  changeType: initial_authorization
+  summary: Original US approval of the Amplatzer Amulet LAA Occluder, based on the Amulet IDE Trial vs.
+    WATCHMAN.
+  sourceRefs:
+  - sourceId: src-amulet-ssed
+    locator: PDF p.1, General Information and Indications for Use
+  reviewStatus: draft
+- id: decision-amplatzer-pfo
+  identifier: P120021
+  rootIdentifier: P120021
+  versionIds:
+  - ver-amplatzer-pfo
+  jurisdiction: US
+  pathway: PMA
+  date:
+    value: '2016-10-28'
+    precision: day
+  changeType: initial_authorization
+  summary: Original US approval of the Amplatzer PFO Occluder for recurrent cryptogenic stroke risk reduction,
+    based on the RESPECT trial.
+  sourceRefs:
+  - sourceId: src-amplatzer-pfo-ssed
+    locator: PDF p.1, General Information and Indications for Use
+  reviewStatus: draft
+- id: decision-gore-cardioform-septal-s044
+  identifier: P050006/S044
+  rootIdentifier: P050006
+  versionIds:
+  - ver-gore-cardioform-septal
+  jurisdiction: US
+  pathway: PMA
+  date:
+    value: '2015-04-30'
+    precision: day
+  changeType: design
+  summary: Addition of the GORE CARDIOFORM Septal Occluder configuration to the GORE HELEX Septal Occluder
+    product line (ASD indication only at this point).
+  sourceRefs:
+  - sourceId: src-gore-cardioform-septal-s044-decision
+    locator: Approval order statement
+  reviewStatus: draft
+- id: decision-gore-cardioform-septal-s060
+  identifier: P050006/S060
+  rootIdentifier: P050006
+  versionIds:
+  - ver-gore-cardioform-septal
+  jurisdiction: US
+  pathway: PMA
+  date:
+    value: '2018-03-30'
+    precision: day
+  changeType: indication
+  summary: Adds the PFO closure indication (REDUCE trial) and formalizes the combined ASD+PFO label under
+    the GORE CARDIOFORM Septal Occluder name.
+  sourceRefs:
+  - sourceId: src-gore-cardioform-septal-ssed
+    locator: PDF p.1, Indications for Use
+  reviewStatus: draft
+- id: decision-gore-cardioform-asd
+  identifier: P050006/S071
+  rootIdentifier: P050006
+  versionIds:
+  - ver-gore-cardioform-asd
+  jurisdiction: US
+  pathway: PMA
+  date:
+    value: '2019-05-28'
+    precision: day
+  changeType: design
+  summary: Addition of the GORE CARDIOFORM ASD Occluder configuration (larger defects, 8-35 mm) to the
+    GORE HELEX/CARDIOFORM product line.
+  sourceRefs:
+  - sourceId: src-gore-cardioform-asd-decision
+    locator: Approval order statement
+  reviewStatus: draft
+- id: decision-amplatzer-asd
+  identifier: P000039
+  rootIdentifier: P000039
+  versionIds:
+  - ver-amplatzer-asd
+  jurisdiction: US
+  pathway: PMA
+  date:
+    value: '2001-12-05'
+    precision: day
+  changeType: initial_authorization
+  summary: Original US approval of the Amplatzer Septal Occluder (ASO) and Delivery System for secundum
+    ASD closure (and fenestrated Fontan fenestration closure).
+  sourceRefs:
+  - sourceId: src-amplatzer-aso-decision
+    locator: Decision Date and Approval Order Statement fields
+  reviewStatus: draft
+- id: decision-amplatzer-piccolo
+  identifier: P020024/S052
+  rootIdentifier: P020024
+  versionIds:
+  - ver-amplatzer-piccolo
+  jurisdiction: US
+  pathway: PMA
+  date:
+    value: '2019-01-11'
+    precision: day
+  changeType: design
+  summary: Approval for the AMPLATZER Piccolo Occluder as a new configuration under the original Amplatzer
+    Duct Occluder PMA (P020024), based on the 200-patient US IDE study NCT03055858.
+  sourceRefs:
+  - sourceId: src-amplatzer-piccolo-decision
+    locator: Approval order statement
+  reviewStatus: draft
+- id: decision-amplatzer-vsd
+  identifier: P040040
+  rootIdentifier: P040040
+  versionIds:
+  - ver-amplatzer-vsd
+  jurisdiction: US
+  pathway: PMA
+  date:
+    value: '2007-09-07'
+    precision: day
+  changeType: initial_authorization
+  summary: Original US approval (standard PMA, not an HDE) of the Amplatzer Muscular VSD Occluder for
+    high-surgical-risk complex muscular VSD closure.
+  sourceRefs:
+  - sourceId: src-amplatzer-vsd-ssed
+    locator: PDF p.1, General Information and Indications and Usage
+  reviewStatus: draft
+- id: decision-ecliptis
+  identifier: K254232
+  rootIdentifier: K254232
+  versionIds:
+  - ver-ecliptis
+  jurisdiction: US
+  pathway: 510(k)
+  date:
+    value: '2026-06-26'
+    precision: day
+  changeType: initial_authorization
+  summary: 510(k) clearance of the ECLIPTIS Left Atrial Appendage Exclusion System as substantially equivalent
+    to the AtriCure AtriClip (K210293).
+  sourceRefs:
+  - sourceId: src-ecliptis-510k
+    locator: PDF p.1, clearance letter; PDF p.5, 510(k) Summary
+  reviewStatus: draft
+- id: decision-watchman-flx-s035
+  identifier: P130013/S035
+  rootIdentifier: P130013
+  versionIds:
+  - ver-watchman-flx
+  jurisdiction: US
+  pathway: PMA
+  date:
+    value: '2020-07-21'
+    precision: day
+  changeType: design
+  summary: Original US approval of the WATCHMAN FLX Closure Device with Delivery System (new frame/anchor
+    design and expanded LAA ostium range vs. the original WATCHMAN), based on the PINNACLE FLX study.
+  sourceRefs:
+  - sourceId: src-watchman-flx-s035-ssed
+    locator: PDF p.1, General Information
+  reviewStatus: draft
+specs:
+- version: ver-amulet
+  category: laao-occluders
+  source: src-amulet-ssed
+  values:
+    device-design:
+      value: 'Dual-seal occluder: Nitinol lobe + larger disc, central waist'
+      loc: PDF p.2, Device Description
+      context: Braided Nitinol lobe; disc connected to the lobe by the waist.
+    frame-material:
+      value: Braided Nitinol
+      loc: PDF p.2, Device Description
+    fabric-cover:
+      value: Polyester fabric sewn into both the lobe and the disc
+      loc: PDF p.2, Device Description
+    anchoring-mechanism:
+      value: Lobe wires give radial fixation against LAA wall (passive)
+      loc: PDF p.2, Device Description
+      context: Passive friction only; no screw/active fixation.
+    repositionable:
+      value: Recapturable and repositionable by pulling the delivery cable before release
+      loc: PDF p.5, Principles of Operation
+    access-route:
+      value: Transfemoral venous, transseptal puncture
+      loc: PDF p.4, Principles of Operation
+    delivery-sheath:
+      value: 12F or 14F Amplatzer TV45x45 Delivery Sheath
+      loc: PDF p.3, Accessories
+    available-sizes:
+      value: Lobe 16-34 mm; disc 22-41 mm (13 device sizes)
+      loc: PDF p.2, Device Description
+    imaging-guidance:
+      value: Pre-procedure TEE to exclude thrombus; fluoroscopy plus TEE during implantation
+      loc: PDF p.4, Principles of Operation
+    indication-scope:
+      value: LAA thrombus-embolization risk reduction in non-valvular AF
+      loc: PDF p.1, Indications for Use
+      context: Assessed by CHADS2/CHA2DS2-VASc; suitable for short-term anticoagulation, with rationale
+        to seek a non-pharmacologic alternative.
+    post-implant-therapy:
+      value: 'Amulet IDE protocol: DAPT or aspirin+OAC, physician discretion'
+      loc: PDF p.22, Clinical Study
+      context: NOAC or VKA. Reflects the FDA-reviewed pivotal-trial regimen (vs. the Watchman control
+        arm’s required aspirin+warfarin); may not be the verbatim current IFU wording.
+    pivotal-trials:
+      value: Amulet IDE Trial (vs. WATCHMAN, PMA P130013)
+      loc: PDF p.12, Summary of Primary Clinical Study
+- version: ver-lambre
+  category: laao-occluders
+  source: src-lambre-study
+  values:
+    device-design:
+      value: Umbrella (8 arms + distal hooks) and disc, central pin
+      loc: Article body, 'Dispositivo Lambre®' section
+      context: Arms have atraumatic tips; disc covers the LAA ostium.
+    frame-material:
+      value: Self-expanding Nitinol mesh
+      loc: Article body, 'Dispositivo Lambre®' section
+    fabric-cover:
+      value: PET fabric sewn inside the umbrella and disc
+      loc: Article body, 'Dispositivo Lambre®' section
+      context: PET = polyethylene terephthalate.
+    surface-coating:
+      value: Titanium nitride (TiN) coating over the Nitinol mesh
+      loc: Article body, 'Dispositivo Lambre®' section
+    anchoring-mechanism:
+      value: Umbrella arms engage LAA trabeculae; distal hooks anchor wall
+      loc: Article body, 'Dispositivo Lambre®' section
+      context: Atraumatic tips; arms deploy via anterograde rotation, for added stability.
+    access-route:
+      value: Transseptal, via dedicated dual-curve (45°/30°) long delivery sheath
+      loc: Article body, Methods
+    delivery-sheath:
+      value: 8F to 10F (dual-curve 45°/30° sheaths, sized to the chosen device)
+      loc: Article body, Methods
+    available-sizes:
+      value: 'Standard: umbrella 16-36 mm; Special: umbrella 16-26 mm'
+      loc: Article body, Methods
+      context: Standard type in 2 mm steps, disc 6 mm larger (16-30 mm umbrella) or 4 mm larger (32-36
+        mm umbrella). Special type disc 12-14 mm larger.
+    anatomy-range-summary:
+      value: Umbrella 2-8 mm larger than LAA landing zone
+      loc: Article body, Methods
+      context: Sized by intraoperative angiography/TEE (implantation zone).
+    imaging-guidance:
+      value: Intraoperative angiography plus transesophageal echocardiography (TEE)
+      loc: Article body, Methods
+    post-implant-therapy:
+      value: Aspirin 100 mg + clopidogrel 75 mg post-procedure
+      loc: Article body, Methods
+      context: Clopidogrel stopped at 3 months, aspirin continued; follow-up TEE at 3 and 6 months. Single-center/multicenter
+        Brazilian registry protocol, not an FDA label (device has no US marketing authorization).
+    indication-scope:
+      availability: not_applicable
+      basis: directly_reported
+      loc: Press release body
+      source: src-lambre-us-status
+      context: No FDA-approved US indication as of 2026-09-23. Available in the US only through an FDA-approved
+        investigator-initiated IDE trial (LAmbre Plus, approved March 2022); CE-marked and China NMPA-approved
+        for LAA occlusion in non-valvular AF outside the US (see data/therapies.yaml).
+- version: ver-ecliptis
+  category: laao-occluders
+  source: src-ecliptis-510k
+  values:
+    device-design:
+      value: Curved mechanical clip, U-shape opening, tip-first closure
+      loc: PDF p.5-6, Device Description and Table 1
+      context: Surgical LAA exclusion clip, not a transcatheter occluder.
+    frame-material:
+      value: Nitinol spring plus polyether ether ketone (PEEK) bars
+      loc: PDF p.5, Device Description
+    fabric-cover:
+      value: Silicone overmold covering the PEEK implant bars
+      loc: PDF p.5, Device Description
+    anchoring-mechanism:
+      value: Spring-loaded clip compresses across the LAA base
+      loc: PDF p.6, Table 1 (Clip Mechanics)
+      context: Not a radial-friction endovascular anchor.
+    repositionable:
+      value: Recapturable and re-deployable, same delivery system
+      loc: PDF p.7, Table 1 (Adjustment after deployment)
+      context: After initial deployment.
+    access-route:
+      value: Surgical, epicardial, under direct visualization
+      loc: PDF p.5, Indications for Use
+      context: Performed with other cardiac surgical procedures (not transcatheter/femoral).
+    delivery-sheath:
+      availability: not_applicable
+      loc: PDF p.5, Device Description
+      context: Delivered via a malleable-shaft, pre-loaded surgical applicator; no transcatheter sheath
+        French size applies.
+    available-sizes:
+      value: 35, 40, 45, 50 mm clip sizes
+      loc: PDF p.5, Device Description
+    imaging-guidance:
+      value: Direct surgical visualization; no fluoro/echo required
+      loc: PDF p.5, Indications for Use
+      context: With or without camera/endoscope assistance.
+    indication-scope:
+      value: Exclusion of the heart's left atrial appendage
+      loc: PDF p.5, Indications for Use
+      context: Performed under direct visualization, in conjunction with other cardiac surgical procedures.
+    post-implant-therapy:
+      availability: not_publicly_disclosed
+      loc: PDF p.5-7
+      context: The 510(k) summary does not specify a device-specific post-implant antithrombotic regimen.
+    pivotal-trials:
+      availability: not_applicable
+      loc: PDF p.7, Performance Data
+      context: Cleared via 510(k) substantial equivalence to the AtriCure AtriClip (K210293) using bench,
+        animal, and biocompatibility testing; no human pivotal trial was required.
+- version: ver-amplatzer-pfo
+  category: pfo-occluders
+  source: src-amplatzer-pfo-ssed
+  values:
+    device-design:
+      value: Self-expanding double-disc device, articulating waist
+      loc: PDF p.2, Device Description
+      context: Two discs linked by a short connecting waist that articulates to conform to the septal
+        wall.
+    frame-material:
+      value: Nitinol wire mesh
+      loc: PDF p.2, Device Description
+    fabric-cover:
+      value: Polyester fabric sewn to each disc with polyester thread
+      loc: PDF p.2, Device Description
+    repositionable:
+      value: End-screw delivery-cable attachment allows recapture if required, before release
+      loc: PDF p.2, Device Description
+    access-route:
+      value: 'Transseptal, via the AMPLATZER TorqVue Delivery System'
+      loc: PDF p.2, Device Description
+      context: 510(k)-cleared; right atrium to left atrium.
+    available-sizes:
+      value: 18, 25, 35 mm (device size = right atrial disc diameter)
+      loc: PDF p.2, Device Description
+    imaging-guidance:
+      value: TEE at ~6 months post-implant to assess closure
+      loc: PDF p.15, Study Protocol
+      context: ICE may substitute for TEE at the time of the procedure.
+    indication-scope:
+      value: Transcatheter PFO closure to reduce recurrent stroke risk
+      loc: PDF p.1, Indications for Use
+      context: In patients (predominantly 18-60 y) with cryptogenic stroke due to presumed paradoxical
+        embolism.
+    post-implant-therapy:
+      value: 'RESPECT protocol: clopidogrel 30 days + aspirin 6 months'
+      loc: PDF p.15, Study Protocol
+      context: Additional therapy beyond 6 months at investigator discretion.
+    pivotal-trials:
+      value: RESPECT trial (IDE G990318)
+      loc: PDF p.10, Summary of Primary Clinical Study
+- version: ver-gore-cardioform-septal
+  category:
+  - pfo-occluders
+  - asd-occluders
+  source: src-gore-cardioform-septal-ssed
+  values:
+    device-design:
+      value: 'Double-disc occluder: platinum-filled Nitinol, ePTFE cover'
+      loc: PDF p.2, Device Description
+      context: Forms a double-disc configuration when deployed.
+    frame-material:
+      value: Platinum-filled Nitinol wire frame
+      loc: PDF p.2, Device Description
+    fabric-cover:
+      value: Expanded polytetrafluoroethylene (ePTFE) cover
+      loc: PDF p.2, Device Description
+    surface-coating:
+      value: Hydrophilic surface treatment on the ePTFE to aid echocardiographic visibility
+      loc: PDF p.2, Device Description
+    repositionable:
+      value: Handle repositions/retrieves via Retrieval Cord before release
+      loc: PDF p.2, Device Description
+    access-route:
+      value: Transcatheter, conventional delivery; 0.035 in guidewire
+      loc: PDF p.2, Device Description
+    delivery-sheath:
+      value: 10 Fr outer-diameter Delivery Catheter, 75 cm working length
+      loc: PDF p.2, Device Description
+    available-sizes:
+      value: 20, 25, 30 mm occluder diameters
+      loc: PDF p.2, Device Description
+    anatomy-range-summary:
+      value: Not recommended for defects larger than 17 mm
+      loc: PDF p.4, Warnings
+      source: src-gore-cardioform-septal-ifu
+    imaging-guidance:
+      value: TEE/ICE with color-flow Doppler for sizing
+      loc: PDF p.4, Warnings (device sizing)
+      source: src-gore-cardioform-septal-ifu
+      context: TTE or TEE used to assess closure post-implant.
+    indication-scope:
+      value: Transcatheter closure of secundum ASD and PFO
+      loc: PDF p.1, Indications for Use
+      context: PFO closure to reduce recurrent ischemic stroke risk in patients (predominantly 18-60
+        y) with cryptogenic stroke due to presumed paradoxical embolism.
+    post-implant-therapy:
+      value: 'ASD: antiplatelet 6 months. PFO: antiplatelet indefinitely'
+      loc: PDF p.5, Post Procedure
+      source: src-gore-cardioform-septal-ifu
+      context: 'ASD continuation beyond 6 months at physician discretion. REDUCE trial regimen: clopidogrel
+        75 mg for 3 days, then aspirin 81-325 mg alone (or aspirin+dipyridamole, or clopidogrel 75 mg
+        alone).'
+    pivotal-trials:
+      value: REDUCE trial
+      loc: PDF p.5, Summary of Primary Clinical Study
+- version: ver-gore-cardioform-asd
+  category: asd-occluders
+  source: src-gore-cardioform-asd-decision
+  values:
+    device-design:
+      value: Same CARDIOFORM platform (Nitinol frame, ePTFE cover)
+      loc: Approval order statement
+      context: As the GORE CARDIOFORM Septal Occluder, in a labeled configuration for larger ASDs.
+      basis: derived
+      limitation: No public SSED or labeling document was posted for supplement P050006/S071; the shared
+        platform is inferred from the approval order's description of this as an 'addition ... to the
+        GORE HELEX Septal Occluder product line' plus the original CARDIOFORM Septal Occluder SSED device
+        description.
+    anatomy-range-summary:
+      value: Labeled for secundum ASDs 8-35 mm in diameter
+      loc: Press release, paragraph 2
+      source: src-gore-cardioform-asd-pr
+      context: Including defects without a retro-aortic rim.
+    indication-scope:
+      value: Percutaneous closure of ostium secundum atrial septal defects (ASD)
+      loc: Approval order statement
+    pivotal-trials:
+      value: ASSURED clinical study
+      loc: Article title
+      source: src-gore-cardioform-asd-assured
+      limitation: Full text of PMID 31943749 was not accessible in this review (cookie-gated); trial name
+        is taken from the indexed article title, not the abstract/methods.
+- version: ver-amplatzer-asd
+  category: asd-occluders
+  source: src-amplatzer-aso-ssed
+  values:
+    device-design:
+      value: Self-expanding double-disc device, waist sized to ASD
+      loc: PDF p.3, Device Description
+      context: Discs linked by a short connecting waist.
+    frame-material:
+      value: Nitinol wire mesh
+      loc: PDF p.3, Device Description
+    fabric-cover:
+      value: Polyester fabric filling the discs and waist, sewn on with polyester thread
+      loc: PDF p.3, Device Description
+    repositionable:
+      value: Delivery cable allows placement and retrieval before release
+      loc: PDF p.4, Device Description
+      context: Retrieval is used if necessary.
+    access-route:
+      value: Transcatheter, via the AMPLATZER Delivery System
+      loc: PDF p.4, Device Description
+      context: Delivery System = Delivery Sheath, Dilator, Loader.
+    delivery-sheath:
+      value: 6-7F (4-10 mm devices) up to 12F (34-38 mm devices), by device size
+      loc: PDF p.4, Table 1 (Device Specifications)
+    available-sizes:
+      value: 4-38 mm device (stretched-ASD) sizes, 28 sizes total
+      loc: PDF p.4, Table 1 (Device Specifications)
+    anatomy-range-summary:
+      value: Device size = stretched ASD 4-38 mm; LA disc 16-54, RA 12-48 mm
+      loc: PDF p.4, Table 1 (Device Specifications)
+      context: LA/RA disc size depends on device size.
+    imaging-guidance:
+      value: Echo evidence of secundum ASD required for selection
+      loc: PDF p.16, Study Protocol
+      context: TEE probe size is a selection factor; TTE used at follow-up.
+    indication-scope:
+      value: Occlusion of secundum ASD; also fenestrated Fontan closure
+      loc: PDF p.2, Indications and Usage
+      context: Closure of the fenestration after a fenestrated Fontan procedure.
+    post-implant-therapy:
+      value: Aspirin 3-5 mg/kg/day for 6 months post-placement
+      loc: PDF p.16, Study Protocol
+    pivotal-trials:
+      value: AGA Medical ASO pivotal study (device vs. surgical closure)
+      loc: PDF p.14, Summary of Clinical Studies
+      context: Surgical closure of atrial septal defects.
+- version: ver-amplatzer-piccolo
+  category: pda-occluders
+  source: src-amplatzer-piccolo-pivotal
+  values:
+    device-design:
+      value: Self-expanding braided Nitinol occluder, central waist
+      loc: Article body, Introduction/Methods
+      context: Waist spans the PDA length with retention discs seated on the aortic and pulmonary sides
+        for positional stability.
+    frame-material:
+      value: Braided Nitinol (shape-memory)
+      loc: PDF p.3, Amplatzer Piccolo Occluder section
+      source: src-amplatzer-piccolo-brochure
+    access-route:
+      value: Transcatheter, minimally invasive (typically femoral)
+      loc: PDF p.4 and p.6, The Amplatzer Piccolo Procedure
+      source: src-amplatzer-piccolo-brochure
+      context: Access in a cardiac catheterization laboratory.
+    anatomy-range-summary:
+      value: PDA <=4 mm narrowest, >=3 mm length; pt >=700 g, >=3 days
+      loc: Article body, Methods (inclusion/exclusion criteria)
+      context: Labeled use; diameter at the narrowest portion.
+      basis: derived
+      limitation: Derived from the pivotal-study eligibility criteria plus the patient-brochure contraindications
+        (src-amplatzer-piccolo-brochure, PDF p.5); no FDA SSED was public for this supplement to confirm
+        verbatim label wording.
+    pivotal-trials:
+      value: Piccolo US IDE pivotal study (NCT03055858)
+      loc: Article body, Study Design
+- version: ver-amplatzer-vsd
+  category: vsd-occluders
+  source: src-amplatzer-vsd-ssed
+  values:
+    device-design:
+      value: Self-expandable double-disc device, waist sized to VSD
+      loc: PDF p.2, Device Description
+      context: Discs linked by a short cylindrical waist.
+    frame-material:
+      value: Nitinol wire mesh
+      loc: PDF p.2, Device Description
+    fabric-cover:
+      value: Polyester fabric filling the discs and waist, sewn on by polyester thread
+      loc: PDF p.2, Device Description
+    repositionable:
+      value: Delivery Cable allows placement and recapture of the device before release
+      loc: PDF p.3, Device Description
+    access-route:
+      value: Transcatheter, via AMPLATZER TorqVue Delivery System
+      loc: PDF p.2, Device Description
+      context: 45° antegrade or 180° retrograde, per physician preference.
+    delivery-sheath:
+      value: 5-9 Fr depending on device size (4-18 mm)
+      loc: PDF p.2, Table 1A (Device Specifications)
+    available-sizes:
+      value: 4, 6, 8, 10, 12, 14, 16, 18 mm waist diameters
+      loc: PDF p.2, Table 1A (Device Specifications)
+    anatomy-range-summary:
+      value: Device waist 4-18 mm sized to the muscular VSD
+      loc: PDF p.1, Contraindications
+      context: Contraindicated if <4 mm from a semilunar/atrioventricular valve or in patients <5.2 kg.
+    imaging-guidance:
+      value: Doppler transthoracic echocardiography (TTE) pre-implant and at follow-up
+      loc: PDF p.12, Study Protocol
+    indication-scope:
+      value: Complex muscular VSD warranting closure, high surgical risk
+      loc: PDF p.1, Indications and Usage
+      context: Large L-R shunt, pulmonary hypertension, and/or CHF symptoms.
+    pivotal-trials:
+      value: AGA Medical Muscular VSD retrospective High Risk cohort
+      loc: PDF p.12, Clinical Studies
+      context: 11 US centers, n=41.

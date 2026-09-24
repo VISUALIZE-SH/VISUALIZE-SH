@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import type {
   Curation,
+  DeviceMaterial,
   Entity,
   GraphEdgeData,
   GraphNodeData,
@@ -154,6 +155,52 @@ function LinkList({ refs }: { refs?: string[] }) {
 
 function statusBadge(value: string, kind: 'reg' | 'result') {
   return <span className={`badge ${kind}-${value}`}>{value}</span>
+}
+
+const MATERIAL_CATEGORY_LABELS: Record<DeviceMaterial['category'], string> = {
+  frame: 'Frame / body',
+  leaflet: 'Leaflet tissue',
+  fabric: 'Fabric / skirt',
+  coating: 'Surface coating',
+  sensor: 'Sensor',
+  anchor: 'Anchor',
+}
+
+function sourceName(url: string): string {
+  return new URL(url).hostname.replace('www.', '')
+}
+
+function DeviceMaterials({ e }: { e: Entity }) {
+  if (e.type !== 'therapy' || e.therapyType !== 'device' || !e.materials?.length) {
+    return null
+  }
+
+  return (
+    <section className="detail-section material-section">
+      <div className="material-heading">
+        <h3>Key materials</h3>
+        <span>{e.materials.length}</span>
+      </div>
+      <p className="material-scope">
+        Permanent implant only — delivery-system and incidental materials omitted.
+      </p>
+      <div className="material-list">
+        {e.materials.map((material, index) => (
+          <article className="material-item" key={`${material.name}-${index}`}>
+            <span className="material-role">
+              {MATERIAL_CATEGORY_LABELS[material.category]}
+            </span>
+            <strong>{material.name}</strong>
+            <span className="material-use">{material.role}</span>
+            {material.note && <span className="material-note">{material.note}</span>}
+            <a href={material.source} target="_blank" rel="noopener noreferrer">
+              {sourceName(material.source)} <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        ))}
+      </div>
+    </section>
+  )
 }
 
 // Build a PubMed search URL — a verifiable, non-fabricated fallback that lands on
@@ -358,6 +405,8 @@ export default function DetailPanel({
           <PulseMeter value={node.pulse} />
           <Facts e={e} />
         </section>
+
+        <DeviceMaterials e={e} />
 
         <MoreInfo node={node} byId={nodesById} />
 

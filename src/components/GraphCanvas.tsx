@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import type Cytoscape from 'cytoscape'
-import cytoscape, { ensureLayoutExtension } from '../graph/cytoscapeSetup'
+import cytoscape from '../graph/cytoscapeSetup'
 import { buildStylesheet } from '../graph/cytoscapeStyles'
 import { getLayout, frameLayout, type LayoutName } from '../graph/layouts'
 import { attachElasticPull } from '../graph/elasticPull'
@@ -16,6 +16,7 @@ interface Props {
   highlightedIds: Set<string>
   layoutName: LayoutName
   accessibilityMode: boolean
+  darkMode: boolean
   onSelect: (id: string | null) => void
   onCyReady?: (cy: Cytoscape.Core) => void
 }
@@ -27,12 +28,12 @@ export default function GraphCanvas({
   highlightedIds,
   layoutName,
   accessibilityMode,
+  darkMode,
   onSelect,
   onCyReady,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
   const cyRef = useRef<Cytoscape.Core | null>(null)
-  const didMount = useRef(false)
   const layoutNameRef = useRef(layoutName)
   const onSelectRef = useRef(onSelect)
   layoutNameRef.current = layoutName
@@ -44,14 +45,15 @@ export default function GraphCanvas({
     const cy = cytoscape({
       container: containerRef.current,
       elements: [...graph.elements.nodes, ...graph.elements.edges],
-      style: buildStylesheet({ accessibilityMode }),
-      layout: getLayout(layoutName),
-      wheelSensitivity: 0.2,
+      style: buildStylesheet({ accessibilityMode, darkMode }),
+      // Visibility is a React-owned filter. Start from neutral positions and let
+      // the visibility effect below run the first real layout on its subset;
+      // otherwise Cytoscape lays out every node once before filters are applied.
+      layout: { name: 'preset', fit: false },
       minZoom: 0.12,
       maxZoom: 3,
     })
     cyRef.current = cy
-    didMount.current = false
     onCyReady?.(cy)
 
     // Physics-informed elastic pull: dragging a node springs its neighbors along.
@@ -65,17 +67,9 @@ export default function GraphCanvas({
         updateTimelineAxis(cy)
       } else {
         removeTimelineAxis(cy)
-        // Island clustering is a property of the Clustered (fcose) view only —
-        // it would fight the intended structure of Hierarchy / Concentric.
-        if (layoutNameRef.current === 'fcose') clusterByCondition(cy)
-        // Hierarchy (dagre) is laid out as clean layered ranks. The organic
-        // declutter jitter and the radial island spacing both smear those
-        // columns into the unreadable vertical strip, so skip them here and let
-        // dagre's own (label-aware) spacing stand; frameLayout frames it.
-        if (layoutNameRef.current !== 'dagre') {
-          declutterOverlaps(cy)
-          spaceIslands(cy)
-        }
+        clusterByCondition(cy)
+        declutterOverlaps(cy)
+        spaceIslands(cy)
       }
       frameLayout(cy, layoutNameRef.current)
     }
@@ -135,23 +129,21 @@ export default function GraphCanvas({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [graph])
 
-  // Accessibility mode changes label size inside the Cytoscape canvas as well as
-  // DOM text. Refresh the stylesheet in place so graph state is preserved.
+  // Theme/accessibility updates refresh Cytoscape in place so graph positions,
+  // filters, and the user's current selection remain intact.
   useEffect(() => {
     const cy = cyRef.current
     if (!cy) return
-    cy.style(buildStylesheet({ accessibilityMode })).update()
+    cy.style(buildStylesheet({ accessibilityMode, darkMode })).update()
     if (layoutNameRef.current === 'timeline') {
       updateTimelineAxis(cy)
     } else {
-      if (layoutNameRef.current === 'fcose') clusterByCondition(cy)
-      if (layoutNameRef.current !== 'dagre') {
-        declutterOverlaps(cy)
-        spaceIslands(cy)
-      }
+      clusterByCondition(cy)
+      declutterOverlaps(cy)
+      spaceIslands(cy)
     }
     frameLayout(cy, layoutNameRef.current)
-  }, [accessibilityMode])
+  }, [accessibilityMode, darkMode])
 
   // Toggle node visibility on filter/layout change; relayout the visible subset.
   // Timeline mode shows dated therapies/trials plus the condition/anatomy tier.
@@ -174,20 +166,8 @@ export default function GraphCanvas({
         )
       })
     })
-    // The create effect already laid out the full graph; skip the duplicate run.
-    if (!didMount.current) {
-      didMount.current = true
-      return
-    }
-    // dagre is code-split — make sure it's registered before running its layout.
-    let cancelled = false
-    ensureLayoutExtension(layoutName).then(() => {
-      if (cancelled || cyRef.current !== cy) return
-      cy.layout(getLayout(layoutName)).run()
-    })
-    return () => {
-      cancelled = true
-    }
+    // Lay out only rendered elements, including on the initial mount.
+    cy.elements(':visible').layout(getLayout(layoutName)).run()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visibleIds, layoutName])
 

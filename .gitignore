@@ -4,12 +4,22 @@ node_modules
 # build output
 dist
 dist-ssr
+artifacts
+/public/previews/
+/output/playwright/
+/.playwright-cli/
+/tmp/
 
 # editor / OS
 .DS_Store
 *.local
 .vite
 *.log
+
+# local configuration and credentials (the empty template is intentionally public)
+.env
+.env.*
+!.env.example
 
 # Claude Code local settings — per-machine tool-permission allowlist, not shared
 # (the `*.local` rule above misses the `.local.json` suffix, so list it explicitly)

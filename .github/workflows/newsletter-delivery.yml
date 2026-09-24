@@ -1,0 +1,118 @@
+name: Deliver approved weekly newsletter
+
+on:
+  workflow_dispatch:
+    inputs:
+      reviewed_pr:
+        description: 'Merged review PR number (for the delivery audit trail)'
+        required: true
+        type: string
+      issue_date:
+        description: 'Approved digest issue date (YYYY-MM-DD)'
+        required: true
+        type: string
+      confirm_send:
+        description: 'Type SEND to permit delivery from main'
+        required: true
+        default: ''
+        type: string
+
+permissions: {}
+
+concurrency:
+  group: newsletter-delivery
+  cancel-in-progress: false
+
+jobs:
+  deliver:
+    # Dispatch may be started from another ref in the UI; never deliver it.
+    if: github.ref == 'refs/heads/main' && inputs.confirm_send == 'SEND'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      actions: read
+      contents: read
+      pull-requests: read
+    environment:
+      name: zoho-production
+    steps:
+      - name: Checkout approved main
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Confirm this exact main revision is deployed to Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          deployed_sha="$(gh api "repos/${GITHUB_REPOSITORY}/actions/workflows/deploy.yml/runs?branch=main&status=success&per_page=1" --jq '.workflow_runs[0].head_sha')"
+          current_sha="$(git rev-parse HEAD)"
+          test -n "$deployed_sha"
+          test "$deployed_sha" = "$current_sha"
+      - name: Verify the reviewed PR and issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REVIEWED_PR: ${{ inputs.reviewed_pr }}
+          ISSUE_DATE: ${{ inputs.issue_date }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$REVIEWED_PR" =~ ^[0-9]+$ ]]
+          [[ "$ISSUE_DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]
+          merge_oid="$(gh pr view "$REVIEWED_PR" --repo "$GITHUB_REPOSITORY" \
+            --json state,mergedAt,baseRefName,mergeCommit \
+            --jq 'select(.state == "MERGED" and .mergedAt != null and .baseRefName == "main") | .mergeCommit.oid')"
+          [[ "$merge_oid" =~ ^[0-9a-f]{40}$ ]]
+          gh pr view "$REVIEWED_PR" --repo "$GITHUB_REPOSITORY" --json files \
+            --jq '.files[].path' | grep -Fx "public/digests/${ISSUE_DATE}/email.html"
+
+          reviewed_blob="$(gh api \
+            "repos/${GITHUB_REPOSITORY}/contents/public/digests/${ISSUE_DATE}/email.html?ref=${merge_oid}" \
+            --jq '.sha')"
+          current_blob="$(git hash-object "public/digests/${ISSUE_DATE}/email.html")"
+          test -n "$reviewed_blob"
+          test "$reviewed_blob" = "$current_blob"
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 20
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts
+      - name: Validate the approved newsletter
+        run: npm run newsletter:validate
+      - name: Confirm the public issue is available
+        env:
+          ISSUE_DATE: ${{ inputs.issue_date }}
+          NEWSLETTER_PUBLIC_ORIGIN: ${{ vars.NEWSLETTER_PUBLIC_ORIGIN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          origin="$(node --input-type=module -e 'const url = new URL(process.env.NEWSLETTER_PUBLIC_ORIGIN); if (url.protocol !== "https:" || url.username || url.password || url.pathname !== "/" || url.search || url.hash) process.exit(1); process.stdout.write(url.origin)')"
+          email_url="${origin}/digests/${ISSUE_DATE}/email.html"
+          remote_file="$(mktemp)"
+          trap 'rm -f "$remote_file"' EXIT
+          curl --fail --silent --show-error --location --max-redirs 2 --proto '=https' --proto-redir '=https' "$email_url" > "$remote_file"
+          cmp --silent "public/digests/${ISSUE_DATE}/email.html" "$remote_file"
+          echo "NEWSLETTER_EMAIL_URL=$email_url" >> "$GITHUB_ENV"
+      - name: Send through Zoho
+        env:
+          ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
+          ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
+          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
+          ZOHO_CAMPAIGNS_FROM_EMAIL: ${{ secrets.ZOHO_CAMPAIGNS_FROM_EMAIL }}
+          ZOHO_CAMPAIGNS_LIST_KEY: ${{ secrets.ZOHO_CAMPAIGNS_LIST_KEY }}
+          ZOHO_CAMPAIGNS_TOPIC_ID: ${{ secrets.ZOHO_CAMPAIGNS_TOPIC_ID }}
+          ZOHO_ACCOUNTS_URL: ${{ vars.ZOHO_ACCOUNTS_URL }}
+          ZOHO_CAMPAIGNS_API_URL: ${{ vars.ZOHO_CAMPAIGNS_API_URL }}
+          NEWSLETTER_PUBLIC_ORIGIN: ${{ vars.NEWSLETTER_PUBLIC_ORIGIN }}
+          ISSUE_DATE: ${{ inputs.issue_date }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Do not print environment variables or enable shell tracing in this job.
+          npm run newsletter:zoho:publish -- \
+            --email-url "$NEWSLETTER_EMAIL_URL" \
+            --campaign-name "Structural Heart Weekly Digest ${ISSUE_DATE}" \
+            --subject "Structural Heart Weekly Digest — ${ISSUE_DATE}"

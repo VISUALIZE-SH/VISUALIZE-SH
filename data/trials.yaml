@@ -1299,3 +1299,51 @@
   references: ["https://clinicaltrials.gov/search?term=Harmony+TPV+pulmonary"]
   pulse: 3
   curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: trial-closure-af
+  type: trial
+  name: CLOSURE-AF
+  phase: RCT
+  status: completed
+  conditions:
+  - cond-af
+  therapies:
+  - dev-watchman-flx
+  - dev-amulet
+  enrollment: 888
+  year: 2026
+  primaryEndpoint: Composite of stroke, systemic embolism, major bleeding, or cardiovascular/unexplained death
+  outcomeSummary: LAAO failed to demonstrate noninferiority to best medical (anticoagulant) therapy in patients with AF at high stroke and bleeding risk, with significantly worse composite outcomes overall; a later sex-specific analysis found the harm was concentrated in women.
+  resultStatus: negative
+  references:
+  - https://www.tctmd.com/news/closure-af-worse-outcomes-laao-driven-results-women
+  curation:
+    status: draft
+    lastUpdated: '2026-09-23'
+    sources:
+    - https://www.tctmd.com/news/closure-af-worse-outcomes-laao-driven-results-women
+    - https://www.tctmd.com/news/cms-finalizes-anticipated-updates-national-coverage-tavi
+    notes: German DZHK-sponsored multicenter RCT; main results published in NEJM (~Nov 2025), sex-specific subgroup presented at ESC 2026 and already covered by news-2026-09-11-closure-af-sex-specific-analysis-raises-new-caution-about-laao-in-older in data/news.yaml, which currently only links to cond-af. NCT number and the exact per-site device mix were NOT independently verified (multiple commercial LAAO devices were reportedly used across sites) -- therapies list is representative only. VERIFY nctId and device list before promoting to curated.
+
+- id: trial-luminara
+  type: trial
+  name: LUMINARA
+  phase: Phase 2b
+  status: completed
+  conditions:
+  - cond-hfref
+  therapies:
+  - rx-azd5462
+  enrollment: 375
+  year: 2026
+  primaryEndpoint: Dose-ranging hemodynamic, echocardiographic, and safety/tolerability measures at 24 weeks
+  outcomeSummary: Lowest studied dose (20 mg) of AZD5462 reduced end-systolic volume index in an HFrEF cohort (LVEF <=35%) and lowered systemic vascular resistance in a separate LVEF 41-55% cohort, with good tolerability and no excess hypotension or volume overload; the trial was not powered for clinical outcomes.
+  resultStatus: positive
+  references:
+  - https://pubmed.ncbi.nlm.nih.gov/42668430/
+  curation:
+    status: draft
+    lastUpdated: '2026-09-23'
+    sources:
+    - https://www.escardio.org/news/press/press-releases/novel-drug-shows-promise-in-an-early-phase-trial-in-heart-failure/
+    notes: 69-site, 10-country dose-ranging study presented as an ESC 2026 Hot Line and published in Circulation. NCT number not independently verified -- VERIFY before promoting to curated.

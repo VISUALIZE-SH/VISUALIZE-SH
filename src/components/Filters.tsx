@@ -10,6 +10,10 @@ interface Props {
   onToggleRegulatory: (r: RegulatoryStatus) => void
   showDrafts: boolean
   onToggleDrafts: () => void
+  materialQuery: string
+  onMaterialQueryChange: (query: string) => void
+  materialMatchCount: number
+  materialSuggestions: string[]
   onReset: () => void
 }
 
@@ -27,6 +31,10 @@ export default function Filters({
   onToggleRegulatory,
   showDrafts,
   onToggleDrafts,
+  materialQuery,
+  onMaterialQueryChange,
+  materialMatchCount,
+  materialSuggestions,
   onReset,
 }: Props) {
   return (
@@ -55,7 +63,7 @@ export default function Filters({
       </section>
 
       <section className="filter-group">
-        <h3>Therapy regulatory status</h3>
+        <h3>Regulatory status</h3>
         {REGULATORY.map((r) => (
           <label key={r.id} className="check">
             <input
@@ -70,6 +78,40 @@ export default function Filters({
       </section>
 
       <section className="filter-group">
+        <h3>Implant material</h3>
+        <div className="material-filter-wrap">
+          <input
+            className="material-filter"
+            type="search"
+            list="material-suggestions"
+            placeholder="Nitinol, bovine pericardium…"
+            value={materialQuery}
+            onChange={(event) => onMaterialQueryChange(event.target.value)}
+            aria-label="Filter by implant material"
+          />
+          {materialQuery && (
+            <button
+              type="button"
+              onClick={() => onMaterialQueryChange('')}
+              aria-label="Clear material filter"
+            >
+              ✕
+            </button>
+          )}
+        </div>
+        <datalist id="material-suggestions">
+          {materialSuggestions.map((material) => (
+            <option value={material} key={material} />
+          ))}
+        </datalist>
+        <p className="filter-note material-filter-note">
+          {materialQuery
+            ? `${materialMatchCount} matching ${materialMatchCount === 1 ? 'device' : 'devices'}`
+            : 'Filters devices by frame, tissue, fabric, coating, sensor, or anchor material.'}
+        </p>
+      </section>
+
+      <section className="filter-group">
         <h3>Curation</h3>
         <label className="check">
           <input type="checkbox" checked={showDrafts} onChange={onToggleDrafts} />
@@ -78,7 +120,7 @@ export default function Filters({
           </span>
         </label>
         <p className="filter-note">
-          Drafts are auto-suggested, not yet human-curated (dashed outline).
+          Auto-suggested, not yet curated (dashed outline).
         </p>
       </section>
 
