@@ -51,34 +51,19 @@ test('local preflight reports names and statuses without exposing values', () =>
   }
 })
 
-test('preflight accepts dotted opaque OAuth values and optional topic absence', () => {
-  const names = [
-    'NEWSLETTER_PUBLIC_ORIGIN', 'VITE_NEWSLETTER_SIGNUP_URL', 'ZOHO_ACCOUNTS_URL',
-    'ZOHO_CAMPAIGNS_API_URL', 'ZOHO_CLIENT_ID', 'ZOHO_CLIENT_SECRET', 'ZOHO_REFRESH_TOKEN',
-    'ZOHO_CAMPAIGNS_FROM_EMAIL', 'ZOHO_CAMPAIGNS_LIST_KEY', 'ZOHO_CAMPAIGNS_TOPIC_ID',
-  ]
+test('local preview preflight needs no OAuth credentials and validates optional public URLs', () => {
+  const names = ['NEWSLETTER_PUBLIC_ORIGIN', 'VITE_NEWSLETTER_SIGNUP_URL']
   const previous = new Map(names.map((name) => [name, process.env[name]]))
-  const clientIdName = ['ZOHO', 'CLIENT', 'ID'].join('_')
-  const clientSecretName = ['ZOHO', 'CLIENT', 'SECRET'].join('_')
-  const refreshTokenName = ['ZOHO', 'REFRESH', 'TOKEN'].join('_')
-  const fromEmailName = ['ZOHO', 'CAMPAIGNS', 'FROM', 'EMAIL'].join('_')
-  Object.assign(process.env, {
-    NEWSLETTER_PUBLIC_ORIGIN: 'https://example.test',
-    VITE_NEWSLETTER_SIGNUP_URL: 'https://signup.example.test/form',
-    ZOHO_ACCOUNTS_URL: 'https://accounts.zoho.com',
-    ZOHO_CAMPAIGNS_API_URL: 'https://campaigns.zoho.com/api/v1.1',
-    [clientIdName]: ['client', 'id', 'part'].join('.'),
-    [clientSecretName]: ['secret', 'with', 'dots'].join('.'),
-    [refreshTokenName]: ['refresh', 'token', 'with', 'dots'].join('.'),
-    [fromEmailName]: `sender${'@'}example.invalid`,
-    ZOHO_CAMPAIGNS_LIST_KEY: 'list_key',
-  })
-  delete process.env.ZOHO_CAMPAIGNS_TOPIC_ID
   try {
+    for (const name of names) delete process.env[name]
+    assert.equal(preflight().ok, true)
+    process.env.NEWSLETTER_PUBLIC_ORIGIN = 'https://example.test'
+    process.env.VITE_NEWSLETTER_SIGNUP_URL = 'https://signup.example.test/form'
     const result = preflight()
     assert.equal(result.ok, true)
-    assert.equal(result.checks.find((check) => check.name === 'ZOHO_CAMPAIGNS_TOPIC_ID')?.status, 'pending')
-    assert.equal(result.checks.find((check) => check.name === 'ZOHO_REFRESH_TOKEN')?.status, 'configured')
+    assert.equal(result.checks.some((check) => check.name.startsWith('ZOHO_')), false)
+    process.env.NEWSLETTER_PUBLIC_ORIGIN = 'http://example.test'
+    assert.equal(preflight().ok, false)
   } finally {
     for (const [name, value] of previous) {
       if (value === undefined) delete process.env[name]

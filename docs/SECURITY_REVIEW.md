@@ -1,125 +1,82 @@
-# Cloud newsletter security review
+# Local newsletter security review
 
-Code review: 2026-09-19 · Handoff clarification: 2026-09-23
-
-## Outcome
-
-The code includes controls for public-repository research and delivery. This
-checkout does not establish that GitHub rulesets, the `zoho-production`
-environment's required reviewers, Zoho settings, or domain records are
-configured. Those are rollout checks below. Scheduled research is disabled by
-default; the delivery workflow is manual and restricted to `main`. Its environment
-approval takes effect only when required reviewers are configured in GitHub.
-GitHub needs a Zoho list key, not subscriber addresses or exports.
+Updated 2026-09-24 for local research, newsletter validation, and delivery
+approval. The owner reviews the exact data and HTML before any publication or
+Zoho send. The GitHub-hosted research and delivery workflows have been removed;
+GitHub Actions still runs repository security checks and deploys approved site
+changes to Pages.
 
 ## Trust boundaries and controls
 
-### Public repository
+### Private local research
 
-- Only public atlas data, source-linked news, generated newsletter HTML, code, and
-  documentation belong in Git.
-- `npm run security:check` scans tracked and unignored text for known credential
-  patterns and email-shaped values. It also checks browser code and digest HTML
-  for selected tracking and active-content patterns. This heuristic scan cannot
-  prove that every secret or private fact has been excluded; review the diff.
-- Data schemas and the compiler require public HTTPS links without embedded
-  credentials. Generated HTML escapes untrusted text.
-- Dependency audit, dependency review, and CodeQL run in GitHub Actions. Actions
-  are pinned to immutable commit SHAs and Dependabot proposes updates.
+- The active Sunday Codex task runs under the owner's ChatGPT account in the
+  local project. It reads the ignored private watchlist at
+  `artifacts/research/source-registry.yaml`. The watchlist stays out of GitHub
+  and is a starting point, never evidence for a claim.
+- External web content is evidence to check, never an instruction to execute.
+  Research may update local data, but the task may not commit, push, deploy,
+  create a Zoho campaign, or send mail.
+- New news is marked `reviewStatus: draft`. New entities retain
+  `curation.status: draft`; only Pulse may change on an existing curated entity
+  during automated research. Every claim and source needs owner review.
+- `npm run newsletter:review -- --date YYYY-MM-DD` runs the local validation gate
+  and writes browser/email previews under ignored `artifacts/`. Both include a
+  draft banner. Draft news is validated but omitted from public `graph.json` and
+  normal `public/digests/` output.
 
-### AI-assisted research
+### Public repository and site
 
-- The OpenAI key is available only to the single research step. Requests use
-  `store: false`, a bounded evidence window, bounded output/tool calls, and live web
-  search.
-- Web content is explicitly untrusted. The model returns structured proposals; it
-  cannot select repository paths or run commands.
-- New entities are draft-only. Existing curated facts are recorded as proposals,
-  not overwritten. Only Pulse may change automatically on an existing node.
-- A schema/reference/URL/security gate must pass before the workflow can open a
-  pull request. No proposed content is delivered before human review and merge.
+- Only approved atlas data, source-linked news, generated digest HTML, code, and
+  documentation belong in Git. `npm run security:check` scans tracked and
+  unignored text for known credentials, email-shaped data, browser tracking,
+  active digest content, and unpinned Actions. This heuristic scan cannot prove
+  that every private detail is absent; review the complete diff.
+- Schemas require public HTTPS source links and valid references. Generated HTML
+  escapes news text and contains no scripts, forms, pixels, remote assets, or
+  website tracking. GitHub Pages deploys only changes that reach `main`.
+- Private credentials, subscriber data, the source watchlist, and draft review
+  artifacts remain outside the public repository. The site links to a Zoho
+  hosted consent form and does not embed it.
 
-### GitHub automation
+### Delivery
 
-- Workflows start with no permissions and grant only job-level access. Checkout
-  does not persist credentials.
-- Research can stage only `data`, `public/graph.json`, and `public/digests`.
-- After the built-in token opens the research PR, the job explicitly dispatches
-  security checks on the new branch; it does not rely on a downstream PR event
-  that GitHub may suppress for recursion prevention.
-- Production delivery accepts only an exact `SEND` confirmation from `main`, then
-  verifies the PR was merged, the current email HTML has the reviewed Git blob,
-  the exact current main revision deployed successfully, and the deployed HTML is
-  byte-for-byte identical to the local reviewed file.
-- Zoho API hosts are allowlisted as matching official data-center pairs. Repository
-  variables therefore cannot redirect OAuth credentials or access tokens to an
-  arbitrary host.
-
-### Subscriber and mail data
-
-- Contacts stay in a consent-controlled Zoho list. GitHub receives only a list key
-  and optional topic ID, both stored as protected environment secrets.
-- The website links to a Zoho-hosted form instead of embedding it. App code sets
-  no cookies; its only persistent browser value is the `localStorage` color-theme
-  preference. `PRIVACY.md` documents this and the external services involved.
-- Double opt-in, unsubscribe/suppression handling, sender-domain authentication,
-  and organization-wide disabling of open/click/reply/analytics tracking are part
-  of the required Zoho setup.
-- The public email body contains no scripts, forms, remote assets, or tracking
-  pixels. Zoho must be checked during the test send to ensure it does not add
-  tracking and does add the required organization/unsubscribe footer.
+- `npm run newsletter:delivery:check -- --date YYYY-MM-DD` validates the local
+  checkout and compares the deployed email HTML byte for byte with the local
+  approved file. It prints a content hash and does not contact Zoho.
+- Zoho Campaigns imports the verified public URL only after local approval.
+  The owner checks the sender, topic, consented list, content, links, footer,
+  unsubscribe behavior, and disabled tracking. A test-list delivery and actual
+  receipt precede any production launch.
+- The old Zoho OAuth grant and GitHub environment secrets are unused by this
+  manual path. Remove or revoke them after a successful test and after checking
+  that no other application depends on them.
 
 ## Residual risks
 
-- AI research can be incomplete or wrong. Human source review remains mandatory;
-  the clinical disclaimer does not replace that review.
-- Any public digest can disclose whatever a curator merges. Never include private
-  notes, embargoed material, personal data, subscriber data, or confidential
-  documents.
-- A compromised Zoho administrator or GitHub repository administrator can change
-  mailing configuration. Require MFA, minimize administrators, review audit logs,
-  and rotate credentials after role or security changes.
-- Zoho's create-then-send API has no repository-level idempotency guarantee. If a
-  run fails after campaign creation or during send, inspect Zoho before retrying to
-  avoid duplicate delivery.
-- A successful send API response means Zoho accepted the request; inspect the
-  campaign status and test-list receipt before treating delivery as complete.
-- The web app loads Google Fonts and the site host processes ordinary request logs.
-  VISUALIZE-SH does not receive analytics from either, but this is disclosed in the
-  public privacy notice.
-- The legally required organization address in Zoho's footer is public to
-  recipients. Use an appropriate organizational mailing address, not an address
-  that should remain private.
+- AI research can be incomplete or wrong. Human source review is mandatory;
+  the clinical disclaimer does not replace it.
+- A public digest exposes whatever the owner approves and publishes. Exclude
+  private notes, embargoed information, personal data, subscriber data, and
+  confidential documents.
+- The scheduled task needs the Mac and desktop app running, a working local
+  checkout, network access, and available ChatGPT usage. If it fails, no issue is
+  approved or sent automatically.
+- A Zoho test or production send may be accepted before the UI confirms final
+  delivery. Inspect campaign status and the recipient's actual inbox. Do not
+  retry an uncertain send until checking Zoho for a duplicate.
+- The legally required company address in Zoho's footer is public to recipients.
+  Use an organizational mailing address suitable for disclosure.
 
-## What the checkout can and cannot verify
+## Approval gates
 
-`npm run validate:local` checks schemas, TypeScript, tests, the local content
-scan, and a no-network configuration preflight. `npm run build` verifies the
-static bundle. Neither command reads GitHub settings, DNS, subscriber consent,
-Zoho organization policy, or the delivered message. Record those external checks
-in the rollout review; do not infer them from a green local build.
+1. Review local data diffs, every source, and the draft browser/email previews.
+2. Mark accepted news reviewed, remove rejected items, and rerun validation.
+3. Approve the exact public HTML and repository diff before publication.
+4. Compare deployed HTML with the approved local file.
+5. Approve the exact issue and intended Zoho recipient list before launch.
 
-## Rollout gate
-
-Before setting `NEWSLETTER_AUTOMATION_ENABLED=true` or delivering to the production
-list:
-
-1. Enable GitHub secret scanning, push protection, private vulnerability reporting,
-   a `main` ruleset requiring PRs and status checks, and deletion/force-push
-   blocking. For a solo owner, use zero required PR approvals and personally review
-   every diff and source before merge. Require CODEOWNERS approval once an
-   independent trusted reviewer is available; requiring it for the sole PR author
-   would deadlock merges.
-2. Have an organization owner permit the built-in Actions token to write and create
-   pull requests before enabling scheduled research. If organization policy keeps
-   either permission disabled, leave the schedule off. Do not use a broad personal
-   access token as a workaround; the workflow must never approve its own PR.
-3. Restrict the `zoho-production` environment to `main` and require a reviewer.
-4. Enter every secret directly in GitHub's settings UI; never paste it into chat,
-   an issue, a PR, a command argument, or a repository file.
-5. Complete the Zoho setup in `docs/ZOHO_CAMPAIGNS_SETUP.md`, including MFA,
-   SPF/DKIM/DMARC, double opt-in, public footer identity, and disabled tracking.
-6. Run research manually, review and merge the PR, then perform the first delivery
-   to a test list. Inspect source links, rendering, disclaimer, unsubscribe footer,
-   headers, and the Zoho audit log.
-7. Enable the cloud Sunday schedule and only then disable the legacy local task.
+`npm run validate:local` checks schemas, TypeScript, tests, the content scan,
+and local preview preflight. It does not verify account settings, DNS, consent,
+Zoho tracking policy, or actual message delivery. Check those in Zoho and record
+the result of the test-list send.

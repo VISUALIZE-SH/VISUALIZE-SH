@@ -1,96 +1,52 @@
-# Legacy local Sunday news + dataset routine
+# Local Sunday news and newsletter review routine
 
-> Cutover note: the GitHub-hosted replacement is documented in
-> `docs/CLOUD_WORKFLOW.md`. After one successful end-to-end cloud test, disable the
-> local scheduled task. Do not run both schedules: the cloud workflow updates
-> `origin` through reviewed pull requests, while a local clone changes only when
-> its owner explicitly pulls.
+This is the durable contract for the **Structural Heart Therapy Digest** scheduled
+task. It runs Sundays at 6 PM Pacific in the saved local project, using the
+owner's ChatGPT/Codex account. Keep the Mac powered on and the desktop app
+running. The task prepares research and a newsletter for local review. It never
+sends email, creates a Zoho campaign, commits, pushes, deploys, or publishes.
 
-This is the durable prompt for the legacy local structural-heart newsletter task,
-scheduled for Sundays at 6:00 PM Pacific. A single research pass should produce
-both outputs:
+The private source watchlist stays in ignored
+`artifacts/research/source-registry.yaml`. The scheduled task reads it locally;
+neither an OpenAI API key nor a GitHub secret copy is needed. The watchlist is a
+set of starting points, not evidence for a claim.
 
-1. update the app's source-linked news feed and Pulse values locally; and
-2. send the human-readable weekly newsletter through the task's already-configured
-   email/notification channel.
+## Scheduled run
 
-Do not create a second schedule. Keep the task attached to this local project so it
-can edit the working tree; the machine and desktop app must be running at execution
-time. The routine creates only **draft** clinical entities. It never commits,
-pushes, or deploys.
+1. Read this file, `schema/DATA_DICTIONARY.md`, `schema/news.schema.json`, and the
+   current `data/*.yaml`. Record any existing local edits; preserve them.
+2. Research the preceding seven days once. Cover structural-heart devices,
+   heart-failure therapies, and relevant digital therapies. Prioritize LAAO,
+   septal/congenital closure, HCM, ATTR-CM, HFrEF/HFpEF, interatrial shunts,
+   PA/IVC/LA sensors, coronary-sinus/CMD therapies, TAVR, mitral/tricuspid
+   transcatheter therapies, pulmonary valves, and surgical valve therapy. Include
+   meaningful engineering research from university and journal sources. Verify
+   each exact publication date and canonical public HTTPS source. Prefer
+   regulators, trial registries, journals, and original company releases.
+3. Select at most 20 material, nonduplicative items. Add them to `data/news.yaml`
+   with immutable `news-YYYY-MM-DD-*` IDs, source-faithful titles, concise
+   summaries, topic tags, and relevant existing graph node IDs. Mark every new
+   item `reviewStatus: draft`. Keep newest first and retain at most 250 items.
+4. Add warranted entities only with `curation.status: draft` and verified source
+   URLs. Pulse may change on existing curated entities; do not change their other
+   facts. Flag uncertain regulatory status, trial IDs, and outdated facts for
+   curator review. Never invent a link, date, or trial outcome.
+5. Run `npm run newsletter:review -- --date YYYY-MM-DD`, using the Sunday issue
+   date. This validates data, references, tests, TypeScript, and the public-repo
+   safety scan, then writes local draft browser and email previews under ignored
+   `artifacts/newsletter-review/YYYY-MM-DD/`. Fix validation errors. If a check
+   cannot pass, report the failure and stop.
+6. Report every changed ID and source, the local preview paths, item count,
+   validation result, curator flags, and any limitations. Ask the owner to review
+   the exact local data diff and previews. **Stop before publication or delivery.**
 
-## How the loop works
+## After local approval
 
-1. Read `schema/DATA_DICTIONARY.md`, the existing `data/*.yaml`, and the private
-   ignored watchlist at `artifacts/research/source-registry.yaml`.
-2. Research the preceding seven days once, then write selected stories to
-   `data/news.yaml` and use the same material for the newsletter.
-3. Refresh `pulse` and propose warranted additions/edits as `draft` entities with
-   sources.
-4. Run `npm run build:data` and fix every validation error.
-5. Leave local, uncommitted changes plus a concise run summary, then send the digest
-   using the existing recipient and delivery configuration.
-6. The human curator reviews drafts in the app, corrects them, and promotes them to
-   `curated` before any later deploy.
-
-## Prompt for the local Sunday task
-
-> Run the weekly VISUALIZE-SH structural-heart intelligence workflow. Work in
-> `/Users/hparanjape/Documents/Work/Software/VISUALIZE-SH`. Do not commit, push,
-> deploy, create another scheduled task, or change the configured newsletter
-> recipient or delivery channel.
->
-> 1. Read `schema/DATA_DICTIONARY.md` and follow it exactly, including the news
->    contract and the hard rules for automated updates.
->    Also use `artifacts/research/source-registry.yaml` as a systematic set of
->    starting points. It is a watchlist, not evidence: verify the exact dated
->    source for every selected claim, and keep the watchlist out of commits.
-> 2. Review all current `data/*.yaml`. Note the newest `publishedAt` in
->    `data/news.yaml`; deduplicate against both canonical source URL and title.
-> 3. Research material developments published during the preceding seven days in
->    structural heart (valvular and non-valvular), heart failure, and digital
->    therapies relevant to structural-heart care. Cover new FDA/CE approvals,
->    pivotal trial readouts, devices, drugs, digital therapies, acquisitions, and
->    meaningful status changes. Prioritize LAAO; septal/congenital closure; HCM;
->    ATTR-CM; HFrEF/HFpEF therapies; interatrial shunts; PA/IVC/LA sensors;
->    coronary-sinus/CMD therapies; TAVR including aortic regurgitation; mitral
->    TEER/TMVR/annuloplasty; tricuspid TEER/TTVR; transcatheter pulmonary valves;
->    and surgical valve therapy. Include university department news and
->    publication pages (e.g., Duke BME publications) and engineering journals
->    from the watchlist for device-engineering research.
-> 4. Select only material, independently useful stories. Append each to
->    `data/news.yaml` using an immutable `news-YYYY-MM-DD-*` id, ISO publication
->    date, source-faithful title, one- or two-sentence summary, canonical public
->    HTTPS source URL, concise topic tags, and every relevant existing graph node
->    id. Prefer regulators, trial registries, journals, and original company
->    releases. Do not attach a story to a node merely because it is adjacent in the
->    graph. Keep the feed newest-first and retain at most 250 items.
-> 5. Add or update warranted entities as `curation.status: draft`, with
->    `curation.lastUpdated` set to today and at least one credible source URL.
->    Create referenced companies and conditions before entities that point to them;
->    reuse existing category/subtype vocabulary and id prefixes.
-> 6. Refresh `pulse` from 0–10 to reflect current, relative news attention across
->    the whole dataset. A quiet topic should drift down. Pulse is the only field
->    that may change on a curated entity without making it a draft.
-> 7. Add links only when the exact URL is verified. For devices, prefer the maker's
->    product page, then a journal or credible clinical source. For trials, use a
->    non-ClinicalTrials.gov outcome summary. Never invent a URL; omission is safer.
-> 8. Add timeline entries for new therapies and trials only when the date is
->    verified. Prefer the earliest FDA approval or CE mark for a therapy and the
->    ClinicalTrials.gov start date for a trial. Document availability-date
->    assumptions in `timeline.notes`; never guess.
-> 9. Do not modify other facts on existing curated entities. If one looks outdated,
->    add a `curation.notes` review flag instead.
-> 10. Run `npm run build:data` and fix every error. If validation cannot pass, do
->     not send the newsletter; report the failure for review.
-> 11. Send the weekly newsletter through this task's existing email/notification
->     configuration. Reuse the same researched items, grouped into Structural
->     Heart, Heart Failure, and SH-relevant Digital Therapies. Include each title,
->     short summary, and source link. If a section has no material development, say
->     so rather than padding it. Do not add unsupported interpretation.
-> 12. Finish with a concise run summary: every id added or changed, its source, any
->     curator review flags (especially regulatory status and NCT ids), and whether
->     newsletter delivery succeeded.
->
-> Accuracy over completeness. When uncertain, omit optional fields rather than
-> guessing.
+The owner reviews sources, data changes, and both previews. Accepted news items
+are marked `reviewStatus: reviewed`; rejected items are removed. A separate
+explicit local command renders the approved public issue, and publication to the
+repository happens only after the owner's approval. After GitHub Pages serves the
+exact HTML, a local delivery check compares it byte for byte. Zoho Campaigns is
+then used manually to import and test the issue. Sending to the intended list
+requires another explicit approval of that exact issue and recipient list. See
+`docs/LOCAL_NEWSLETTER_WORKFLOW.md` for the full procedure.

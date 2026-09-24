@@ -45,6 +45,8 @@ npm run preview      # serve the production build locally
 npm run typecheck    # app TypeScript only
 npm run validate:local # both typechecks, tests, security scan, and newsletter preflight
 npm run newsletter:render -- --date YYYY-MM-DD  # public + email-safe weekly HTML
+npm run newsletter:review -- --date YYYY-MM-DD  # validated, ignored local draft previews
+npm run newsletter:delivery:check -- --date YYYY-MM-DD # compare deployed email HTML byte for byte
 npm run test:newsletter                        # newsletter unit tests
 npm run security:check                         # secrets, email/PII, tracking scan
 npm run build:intelligence                     # validate pilot -> public/intelligence.json
@@ -141,13 +143,13 @@ their records are draft. See [`docs/LOCAL_IMPLEMENTATION_STATUS.md`](docs/LOCAL_
 For ownership boundaries and the end-to-end runtime/research flow, see
 [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
-The cloud workflow researches a weekly evidence window, prepares a review PR,
-publishes approved HTML, and delivers it through Zoho Campaigns without touching a
-local clone. See **[`docs/CLOUD_WORKFLOW.md`](docs/CLOUD_WORKFLOW.md)** and
-**[`docs/ZOHO_CAMPAIGNS_SETUP.md`](docs/ZOHO_CAMPAIGNS_SETUP.md)**. The final
-threat review and rollout gate are in
-**[`docs/SECURITY_REVIEW.md`](docs/SECURITY_REVIEW.md)**. `ROUTINE.md` is retained
-as the legacy local-task contract until cloud cutover is verified.
+The Sunday Codex task researches a weekly evidence window in the local checkout,
+generates validated draft previews, and stops for owner review. Public rendering,
+publication, and Zoho delivery require separate local approval. See
+**[`docs/LOCAL_NEWSLETTER_WORKFLOW.md`](docs/LOCAL_NEWSLETTER_WORKFLOW.md)**,
+**[`docs/ZOHO_CAMPAIGNS_SETUP.md`](docs/ZOHO_CAMPAIGNS_SETUP.md)**, and the
+security boundary in **[`docs/SECURITY_REVIEW.md`](docs/SECURITY_REVIEW.md)**.
+`ROUTINE.md` is the active scheduled-task contract.
 
 ## Design system
 

@@ -158,7 +158,7 @@ export type Entity = Condition | Therapy | Company | Trial
 // News (authored in data/news.yaml and compiled into public/graph.json)
 // ---------------------------------------------------------------------------
 
-/** A curation-reviewed news item connected to one or more graph entities. */
+/** A source-linked news item connected to one or more graph entities. */
 export interface NewsItem {
   /** Stable, date-prefixed kebab-case id; never reuse an id for a different story. */
   id: string
@@ -169,6 +169,8 @@ export interface NewsItem {
   summary: string
   sourceName: string
   sourceUrl: string
+  /** Draft items remain local and are omitted from public graph and digest output. */
+  reviewStatus?: 'draft' | 'reviewed'
   /** Corroborating coverage for the same event; the primary source stays above. */
   additionalSources?: InfoLink[]
   /** Controlled loosely in authoring; suitable for feed filtering and display. */
