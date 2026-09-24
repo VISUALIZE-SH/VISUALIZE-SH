@@ -34,11 +34,9 @@ export function parseWorkspace(search: string): WorkspaceState {
   const newsFrom = query.get('newsFrom') ?? ''
   const newsTo = query.get('newsTo') ?? ''
   const atlasTopic = topic(query.get('topic'))
-  const mode = requestedMode === 'atlas' || requestedMode === 'data'
+  const mode = requestedMode === 'news' || requestedMode === 'data'
     ? requestedMode
-    : !requestedMode && (id(query.get('node')) || atlasTopic)
-      ? 'atlas'
-      : 'news'
+    : 'atlas'
   return {
     mode,
     dataView: mode === 'data' && query.get('dataView') === 'compare' ? 'compare' : 'browse',
