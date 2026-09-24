@@ -90,12 +90,21 @@ Repository variables (public configuration, not credentials):
 - `OPENAI_RESEARCH_EFFORT` — optional `low`, `medium`, or `high`; defaults to
   `low` to control cost.
 
-Configure branch protection on `main` to require a pull request, CODEOWNERS review,
-and passing checks. Configure `zoho-production` with required reviewers and prevent
-non-`main` deployments. Under **Settings → Actions → General → Workflow
-permissions**, permit the built-in Actions token to write and enable the setting
-that allows Actions to create pull requests; the workflow never approves its own
-PR. Enable GitHub secret scanning with push protection and private vulnerability
+Configure a `main` ruleset to require a pull request and passing security checks,
+and to block force pushes and deletion. With a single GitHub account, use zero
+required PR approvals: GitHub cannot count the PR author's own approval. The owner
+must still inspect the diff, source links, and checks before merging. Add required
+CODEOWNERS review only after a second trusted reviewer has access. Configure
+`zoho-production` with the owner as a required reviewer, disable self-review and
+admin bypass, and allow deployments only from `main`.
+
+Under **Settings → Actions → General → Workflow permissions**, the organization
+must permit the built-in Actions token to write and allow Actions to create pull
+requests for automated research PRs to work. If either control is disabled by
+organization policy, leave `NEWSLETTER_AUTOMATION_ENABLED` unset and ask an
+organization owner to enable the minimum repository permissions needed. Do not
+substitute a broad personal access token. The workflow never approves its own PR.
+Enable GitHub secret scanning with push protection and private vulnerability
 reporting. Action references are pinned to immutable commit SHAs and Dependabot
 proposes updates.
 
