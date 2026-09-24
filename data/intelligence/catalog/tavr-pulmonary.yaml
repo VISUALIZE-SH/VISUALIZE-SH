@@ -1,0 +1,794 @@
+# tavr-pulmonary.yaml — aortic TAVR (SAPIEN 3 family, Evolut family, Navitor, ACURATE neo2),
+# JenaValve Trilogy (aortic regurgitation), and Medtronic Melody/Harmony (pulmonary valves).
+#
+# Non-paywall gaps (not listed as needs-fulltext because no paywall is involved):
+#  - ACURATE neo2 IFU (51081293-01A_ACURATEneo2_IFU_OUS_ML_s.pdf) returns HTTP 404 as of
+#    2026-09-23; the 2-page product spec sheet was used instead. Delivery-catheter true OD and
+#    repositionability are not stated in the spec sheet and are left not_publicly_disclosed.
+#  - SAPIEN 3 Ultra RESILIA (PMA P140031/S141) has no public SSED or labeling PDF (design-change
+#    supplement; FDA lists only a one-line Approval Order Statement). Design attributes are
+#    sourced to the shared SAPIEN 3 Ultra platform IFU (S085D) plus Edwards' RESILIA launch
+#    release; available-sizes for the RESILIA-tissue configuration specifically is left
+#    not_publicly_disclosed.
+#  - Navitor (PMA P190023/S002) likewise has no public SSED/labeling PDF; design/sizing data
+#    comes from the Abbott eIFU (ARTMT600163776 Rev B, dated 2022), which predates the 35 mm
+#    "Navitor Titan" size added by supplement S013 (2023-09-15).
+
+observedAt: '2026-09-23'
+
+sources:
+  - id: src-medtronic-evolut-durability
+    title: Medtronic TAVR durability and supra-annular design page
+    url: https://www.medtronic.com/en-us/healthcare-professionals/specialties/interventional-cardiology/therapies-procedures/transcatheter-aortic-valve-replacement/procedure-performance/durability.html
+    kind: manufacturer
+    publisher: Medtronic
+    retrievedAt: '2026-09-23'
+    access: public
+  - id: src-navitor-s002
+    title: Navitor Transcatheter Aortic Valve design-change supplement (NaviSeal outer skirt)
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P190023S002
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2023-01-13', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P190023/S002
+  - id: src-navitor-original
+    title: Portico/Navitor original PMA decision (base platform, high-or-greater-risk AS)
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P190023
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2021-09-17', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P190023
+  - id: src-navitor-ifu
+    title: Navitor Transcatheter Aortic Valve Implantation System Instructions for Use (Rev B)
+    url: https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF
+    kind: manufacturer
+    publisher: Abbott
+    publishedAt: { value: '2022', precision: year }
+    retrievedAt: '2026-09-23'
+    access: public
+  - id: src-evolut-fx-s094
+    title: Medtronic Evolut FX System design-change supplement (introduces Evolut FX trade name)
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130021S094
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2021-08-12', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P130021/S094
+  - id: src-evolut-fx-plus-s155
+    title: Evolut FX+ design/manufacturing supplement (larger stent-frame coronary-access windows)
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130021S155
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2024-03-22', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P130021/S155
+  - id: src-trilogy-ssed
+    title: Trilogy Transcatheter Heart Valve System original Summary of Safety and Effectiveness
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250024B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2026-03-17', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P250024
+  - id: src-trilogy-ifu
+    title: Trilogy Transcatheter Heart Valve System Instructions for Use (PMA labeling)
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250024D.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2026-03-17', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P250024
+  - id: src-melody-hde
+    title: Melody Transcatheter Pulmonary Valve original Humanitarian Device Exemption
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfHDE/hde.cfm?id=H080002
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2010-01-25', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: H080002
+  - id: src-melody-ssed
+    title: Melody Transcatheter Pulmonary Valve / Ensemble DS original PMA Summary of Safety and Effectiveness
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140017B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2015-01-27', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P140017
+  - id: src-melody-ifu
+    title: Melody Transcatheter Pulmonary Valve / Ensemble DS Instructions for Use (PMA labeling)
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140017D.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2015-01-27', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P140017
+  - id: src-harmony-ssed
+    title: Harmony Transcatheter Pulmonary Valve System original PMA Summary of Safety and Effectiveness
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2021-03-26', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P200046
+  - id: src-harmony-ifu
+    title: Harmony Transcatheter Pulmonary Valve System Instructions for Use (PMA labeling)
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046D.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2021-03-26', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P200046
+  - id: src-acurate-neo2-specsheet
+    title: ACURATE neo2 Aortic Valve System specifications and ordering information
+    url: https://www.bostonscientific.com/content/dam/bostonscientific/StructuralHeart/acurate-neo2-eu/2023-updates/SH-621403-AE-ACURATE_neo2_product_overview_spec_sheet.pdf
+    kind: manufacturer
+    publisher: Boston Scientific
+    publishedAt: { value: '2023', precision: year }
+    retrievedAt: '2026-09-23'
+    access: public
+  - id: src-edwards-resilia-launch
+    title: 'Edwards launches SAPIEN 3 Ultra RESILIA valve following FDA approval (press release)'
+    url: https://www.edwards.com/newsroom/news/2022-09-12-edwards-launches-sapien-3-ultra-resilia-valve-foll
+    kind: manufacturer
+    publisher: Edwards Lifesciences
+    publishedAt: { value: '2022-09-12', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+
+families:
+  - id: family-navitor
+    name: Navitor
+    manufacturer: Abbott
+    entityIds: [dev-navitor]
+    conditionIds: [cond-as]
+    description: Built on the Portico (P190023) delivery/frame platform; the Navitor trade name and NaviSeal outer sealing cuff were introduced by a 2023 design-change supplement, not a fresh original PMA.
+  - id: family-acurate
+    name: ACURATE neo2
+    manufacturer: Boston Scientific
+    entityIds: [dev-acurate-neo2]
+    conditionIds: [cond-as]
+    description: CE-marked self-expanding TAVR; no PMA or 510(k) record exists in the FDA PMA/510(k) databases (openFDA, checked 2026-09-23), confirming it was never FDA authorized. Boston Scientific discontinued the platform worldwide in 2025.
+  - id: family-trilogy
+    name: Trilogy
+    manufacturer: JenaValve Technology
+    entityIds: [dev-trilogy]
+    conditionIds: [cond-ar, cond-as]
+    description: Anatomically-aligned leaflet Locators anchor the frame without relying on annular calcium, the mechanism behind the first FDA approval for native aortic regurgitation.
+  - id: family-melody
+    name: Melody
+    manufacturer: Medtronic
+    entityIds: [dev-melody]
+    conditionIds: [cond-pv]
+    description: Bovine-jugular-vein valve for dysfunctional RVOT conduits; converted from a 2010 Humanitarian Device Exemption to a full 2015 PMA approval for the same conduit population.
+  - id: family-harmony
+    name: Harmony
+    manufacturer: Medtronic
+    entityIds: [dev-harmony]
+    conditionIds: [cond-pv]
+    description: Self-expanding nitinol platform sized for the native/surgically-repaired RVOT and main pulmonary artery, distinct from Melody's conduit-only indication.
+
+versions:
+  - id: ver-navitor
+    familyId: family-navitor
+    name: Navitor
+    kind: device
+    clinicalRole: treats
+    summary: NaviSeal-cuffed evolution of the Portico platform; introduced in the US by a 2023 design-change supplement to PMA P190023.
+    sourceRefs:
+      - sourceId: src-navitor-s002
+        locator: Approval Order Statement and Device field
+    reviewStatus: draft
+  - id: ver-acurate-neo2
+    familyId: family-acurate
+    name: ACURATE neo2
+    kind: device
+    clinicalRole: treats
+    summary: Top-down-deployed, supra-annular self-expanding valve; CE-marked only — never reached FDA authorization, and the platform was discontinued in 2025.
+    sourceRefs:
+      - sourceId: src-acurate-neo2-specsheet
+        locator: p.1, Specifications table
+    reviewStatus: draft
+  - id: ver-trilogy
+    familyId: family-trilogy
+    name: Trilogy
+    kind: device
+    clinicalRole: treats
+    summary: First transcatheter heart valve with a US indication for native aortic regurgitation, approved under PMA P250024.
+    sourceRefs:
+      - sourceId: src-trilogy-ssed
+        locator: p.1, General Information and Indications for Use
+    reviewStatus: draft
+  - id: ver-melody
+    familyId: family-melody
+    name: Melody TPV
+    kind: device
+    clinicalRole: treats
+    summary: Balloon-expandable bovine-jugular-vein valve for dysfunctional RVOT conduits; the device identity is unchanged between the 2010 HDE and 2015 PMA.
+    sourceRefs:
+      - sourceId: src-melody-ssed
+        locator: p.1, General Information
+    reviewStatus: draft
+  - id: ver-harmony
+    familyId: family-harmony
+    name: Harmony TPV
+    kind: device
+    clinicalRole: treats
+    summary: Self-expanding nitinol valve for severe pulmonary regurgitation in a native or surgically-repaired RVOT, available in two sizes (TPV 22, TPV 25).
+    sourceRefs:
+      - sourceId: src-harmony-ssed
+        locator: p.1-2, General Information and Device Description
+    reviewStatus: draft
+
+decisions:
+  - id: decision-navitor-s002
+    identifier: P190023/S002
+    rootIdentifier: P190023
+    versionIds: [ver-navitor]
+    jurisdiction: US
+    pathway: PMA
+    date: { value: '2023-01-13', precision: day }
+    changeType: design
+    summary: Design-change supplement (inner-skirt material change, new NaviSeal outer sealing cuff, minor frame/loading-system changes) on the base Portico PMA platform; the device is remarketed under the Navitor trade name from this decision forward.
+    sourceRefs:
+      - sourceId: src-navitor-s002
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: decision-evolut-fx-s094
+    identifier: P130021/S094
+    rootIdentifier: P130021
+    versionIds: [ver-evolut-fx]
+    jurisdiction: US
+    pathway: PMA
+    date: { value: '2021-08-12', precision: day }
+    changeType: design
+    summary: Design-change supplement approving modifications to the CoreValve Evolut PRO+ System; FDA's approval order states the modified device "will be marketed under the trade name Medtronic Evolut FX Sys."
+    sourceRefs:
+      - sourceId: src-evolut-fx-s094
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: decision-evolut-fx-plus-s155
+    identifier: P130021/S155
+    rootIdentifier: P130021
+    versionIds: [ver-evolut-fx-plus]
+    jurisdiction: US
+    pathway: PMA
+    date: { value: '2024-03-22', precision: day }
+    changeType: design
+    summary: Design/manufacturing supplement adding larger stent-frame openings (coronary-access windows) to the Evolut FX System; FDA's approval order states the modified device "will be marketed under the trade name Evolut FX+ System."
+    sourceRefs:
+      - sourceId: src-evolut-fx-plus-s155
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: decision-trilogy-original
+    identifier: P250024
+    rootIdentifier: P250024
+    versionIds: [ver-trilogy]
+    jurisdiction: US
+    pathway: PMA
+    date: { value: '2026-03-17', precision: day }
+    changeType: initial_authorization
+    summary: Original PMA approval for symptomatic severe native aortic regurgitation in patients at high or greater surgical risk, based on the ALIGN-AR study (IDE G150035).
+    sourceRefs:
+      - sourceId: src-trilogy-ssed
+        locator: p.1, General Information ("Date of FDA Notice of Approval")
+    reviewStatus: draft
+  - id: decision-melody-hde
+    identifier: H080002
+    rootIdentifier: H080002
+    versionIds: [ver-melody]
+    jurisdiction: US
+    pathway: HDE
+    date: { value: '2010-01-25', precision: day }
+    changeType: initial_authorization
+    summary: Original Humanitarian Device Exemption for the Melody TPV and Ensemble delivery system, for dysfunctional RVOT conduits that were >=16 mm in diameter as originally implanted.
+    sourceRefs:
+      - sourceId: src-melody-hde
+        locator: Approval Order Statement and HDE Number field
+    reviewStatus: draft
+  - id: decision-melody-pma
+    identifier: P140017
+    rootIdentifier: P140017
+    versionIds: [ver-melody]
+    jurisdiction: US
+    pathway: PMA
+    date: { value: '2015-01-27', precision: day }
+    changeType: initial_authorization
+    summary: Conversion from HDE to a full PMA approval for the same RVOT-conduit population, removing the humanitarian-use device caps and broadening market availability; granted priority review as a breakthrough technology.
+    sourceRefs:
+      - sourceId: src-melody-ssed
+        locator: p.1, General Information
+    reviewStatus: draft
+  - id: decision-harmony-original
+    identifier: P200046
+    rootIdentifier: P200046
+    versionIds: [ver-harmony]
+    jurisdiction: US
+    pathway: PMA
+    date: { value: '2021-03-26', precision: day }
+    changeType: initial_authorization
+    summary: Original PMA approval for severe pulmonary regurgitation in patients with a native or surgically-repaired RVOT who are clinically indicated for surgical pulmonary valve replacement; granted breakthrough device status.
+    sourceRefs:
+      - sourceId: src-harmony-ssed
+        locator: p.1, General Information and Indications for Use
+    reviewStatus: draft
+
+specs:
+  # ---------------------------------------------------------------- SAPIEN 3
+  - version: ver-sapien-3
+    category: aortic-tavr-valves
+    source: src-sapien-ifu-s085
+    values:
+      tissue-treatment:
+        value: Carpentier-Edwards ThermaFix leaflet treatment
+        loc: 'PDF p.100, Device Description §1.0'
+      repositionable:
+        value: Not repositionable — single balloon-inflation deployment
+        loc: 'PDF p.100, Device Description §1.0'
+        context: 'No recapture/resheath mechanism described. Balloon-expandable design; "device recapture or retrieval" appears only as a procedural adverse-event category in the SSED, not as a designed feature.'
+      access-route:
+        value: 'Transfemoral (primary); transapical, transaortic (alternative)'
+        loc: 'PDF p.6 (eSheath access exclusions); PDF p.17 (clinical TF/TA/TAo access breakdown)'
+      delivery-sheath:
+        value: 14 Fr or 16 Fr Edwards eSheath introducer set
+        loc: 'PDF p.6, Contraindications/exclusion criteria'
+        context: Labeled introducer size, not a measured maximum delivery-system OD.
+      available-sizes:
+        value: '20, 23, 26, 29 mm (valve heights 15.5–22.5 mm)'
+        loc: 'PDF p.100, Table 2'
+      anatomy-range-summary:
+        value: '20mm 16–19mm; 23mm 18–22mm; 26mm 21–25mm; 29mm 24–28mm'
+        loc: 'PDF p.101, Table 3'
+        context: 'By size, TEE annulus diameter. CT area-derived range is also given per size (e.g. 20 mm = 273–345 mm²); valve-in-valve sizing for a failed surgical bioprosthesis uses a separate true-ID table (PDF p.101, Table 4).'
+      indication-scope:
+        value: Native AS, any surgical risk; ViV for failed AV/MV, high+ risk
+        loc: 'PDF p.103, §2.0 Indications'
+        context: 'AS = aortic stenosis; ViV = valve-in-valve; risk per Heart Team judgment. Exact wording: (1) "relief of aortic stenosis in patients... judged... to be appropriate for the transcatheter heart valve replacement therapy" (no risk-stratum language — reflects the low-risk-inclusive label); (2) valve-in-valve for failed surgical aortic/mitral bioprosthesis, "high or greater risk... predicted risk of surgical mortality >=8% at 30 days."'
+      pivotal-trials:
+        value: PARTNER II trial — SAPIEN 3 high-risk cohort (PIIS3HR) + Nested Registry #7 (NR7); IDE G090216
+        source: src-sapien-ssed
+        loc: 'p.21, Section X Summary of Primary Clinical Study'
+
+  # ------------------------------------------------------- SAPIEN 3 Ultra RESILIA
+  - version: ver-sapien-ultra-resilia
+    category: aortic-tavr-valves
+    source: src-sapien-ifu-s085
+    values:
+      frame-material:
+        value: Cobalt-chromium (shared SAPIEN 3 Ultra platform frame)
+        loc: 'PDF p.100, Device Description §1.0'
+        context: S141 (the RESILIA-specific supplement) changes tissue and skirt material only; frame design is inherited from the SAPIEN 3 Ultra platform described in this combined IFU.
+      expansion-mechanism:
+        value: Balloon-expandable
+        loc: 'PDF p.100, Device Description §1.0'
+      leaflet-material:
+        value: Trileaflet bovine pericardium
+        loc: 'PDF p.100, Device Description §1.0'
+      sealing-design:
+        value: Polyethylene terephthalate (PET) inner and outer fabric skirts
+        loc: 'PDF p.100, Device Description §1.0'
+        context: The added outer skirt (vs. the base SAPIEN 3's single skirt) is what defines the "Ultra" platform; not specific to the RESILIA tissue change.
+      tissue-treatment:
+        value: 'RESILIA tissue: anti-calcification treatment, dry packaging'
+        source: src-edwards-resilia-launch
+        loc: 'Press release body, paragraphs 2–4'
+        context: 'Non-glutaraldehyde-storage packaging. Edwards: "RESILIA tissue is a bovine pericardial tissue treated with advanced anti-calcification technology... dry tissue packaging conditions that facilitate ease of use... the only dry storage transcatheter heart valve on the U.S. market today" (as of the 2022-09-12 launch). This differs from the ThermaFix process used on non-RESILIA SAPIEN 3/SAPIEN 3 Ultra valves.'
+      repositionable:
+        value: Not repositionable — single balloon-inflation deployment
+        loc: 'PDF p.100, Device Description §1.0'
+        context: Same mechanism as base SAPIEN 3 Ultra platform.
+      access-route:
+        value: 'Transfemoral (primary); transapical, transaortic (alternative)'
+        loc: 'PDF p.6 (eSheath access exclusions, shared platform document); no RESILIA-specific access statement located'
+      delivery-sheath:
+        value: 14 Fr or 16 Fr Edwards eSheath introducer set
+        loc: 'PDF p.6, Contraindications/exclusion criteria'
+        context: Shared Ultra-platform delivery system.
+      available-sizes:
+        availability: not_publicly_disclosed
+        loc: 'S141 Approval Order Statement (no size table); no RESILIA-specific IFU located'
+        context: The shared SAPIEN 3 Ultra platform (this IFU) lists 20/23/26 mm only (no 29 mm) — PDF p.100 Table 1 — but no source confirms this identically for the RESILIA-tissue configuration.
+      anatomy-range-summary:
+        value: 'Platform range (20/23/26 mm only): 16–19 to 21–25 mm TEE'
+        loc: 'PDF p.101, Table 3 (Ultra sizes only)'
+        context: SAPIEN 3 Ultra platform; TEE annulus diameter. Not confirmed as RESILIA-specific; no dedicated RESILIA sizing table was located.
+      indication-scope:
+        value: Native AS, any surgical risk; failed AV/MV bioprosthesis, high+
+        loc: 'PDF p.103, §2.0 Indications (shared platform document)'
+        context: AS = aortic stenosis; risk per Heart Team judgment. S141's approval order does not state an indication change; RESILIA is a tissue/material substitution on the existing Ultra indication.
+      pivotal-trials:
+        availability: not_applicable
+        loc: 'S141 Approval Order Statement'
+        context: S141 is a device/material-change supplement (RESILIA tissue substitution on the existing SAPIEN 3 Ultra platform); the approval order does not reference a dedicated clinical trial, consistent with a bench/comparability-based design-change review.
+
+  # ---------------------------------------------------------------- Evolut FX
+  - version: ver-evolut-fx
+    category: aortic-tavr-valves
+    source: src-evolut-ifu
+    values:
+      tissue-treatment:
+        value: Alpha-amino oleic acid (AOA) anti-mineralization treatment
+        loc: 'PDF p.32, §1.1 Evolut FX transcatheter aortic valve'
+      leaflet-position:
+        value: Supra-annular
+        loc: 'Supra-annular design benefits'
+        source: src-medtronic-evolut-durability
+        context: Manufacturer statement for the Evolut platform; the working leaflets sit above the native annulus.
+      repositionable:
+        value: Recapturable, up to 3 attempts
+        loc: 'PDF p.33, §1.2 Delivery catheter system; PDF p.20, deployment/recapture instructions'
+        context: 'Before the "point of no recapture"; deployment-knob mechanism.'
+      access-route:
+        value: 'Transfemoral (primary); subclavian/axillary, direct aortic (alternative)'
+        loc: 'PDF p.10, Warnings and precautions (access-site criteria)'
+      delivery-sheath:
+        value: '23–29mm: 18 Fr (6.0mm) capsule; 34mm: 22 Fr (7.33mm) capsule'
+        loc: 'PDF p.33, §1.2 Delivery catheter system and Figure 2'
+        context: 14 Fr equivalent inline sheath (23-29mm valves); 18 Fr equivalent inline sheath (34mm valve).
+      available-sizes:
+        value: 23, 26, 29, 34 mm
+        loc: 'PDF p.32, Table 2'
+      anatomy-range-summary:
+        value: '23mm 17/18–20mm; 26mm 20–23mm; 29mm 23–26mm; 34mm 26–30mm'
+        loc: 'PDF p.32, Table 2'
+        context: Aortic annulus diameter by size. Annulus perimeter equivalents also given per size (diameter × π); TAV-in-SAV/TAV-in-TAV criteria apply to the failed valve's measured inner diameter.
+      indication-scope:
+        value: Native AS, appropriate for THV; ViV for failed AV, high+ risk
+        loc: 'PDF p.35, §2 Indications'
+        context: THV per Heart Team; failed surgical/transcatheter bioprosthetic AV.
+      pivotal-trials:
+        value: STS/ACC TVT Registry real-world redo-TAVR analysis (basis for PMA P130021/S174)
+        source: src-evolut-ssed
+        loc: 'p.5 (repo tmp/pdfs/P130021S174B.txt), Section X Summary of Primary Clinical Study'
+        context: This registry analysis specifically supports the 2025 redo-TAVR indication (decision-evolut-s174). The base Evolut FX device generation itself was introduced by a 2021 design-change supplement (decision-evolut-fx-s094) that cites no dedicated new clinical trial.
+
+  # -------------------------------------------------------------- Evolut FX+
+  - version: ver-evolut-fx-plus
+    category: aortic-tavr-valves
+    source: src-evolut-ifu
+    values:
+      frame-material:
+        value: Self-expanding nitinol, multi-level frame, 3 gold markers
+        loc: 'PDF p.60, §1.1 Evolut FX+ transcatheter aortic valve'
+        context: Radiopaque markers near the inflow.
+      leaflet-material:
+        value: Processed porcine pericardium (3 leaflets + inner skirt)
+        loc: 'PDF p.60, Table 1'
+        context: Single-layer; 23 mm valve also uses ePTFE suture.
+      sealing-design:
+        value: Porcine pericardial outer skirt (wrap), 1.5 cells tall
+        loc: 'PDF p.60, §1.1 Evolut FX+ transcatheter aortic valve'
+        context: Sutured at the inflow.
+      tissue-treatment:
+        value: Alpha-amino oleic acid (AOA) anti-mineralization treatment
+        loc: 'PDF p.60, §1.1 Evolut FX+ transcatheter aortic valve'
+      leaflet-position:
+        value: Supra-annular
+        loc: 'Supra-annular design benefits'
+        source: src-medtronic-evolut-durability
+        context: Manufacturer statement for the Evolut platform; the working leaflets sit above the native annulus.
+      repositionable:
+        value: Recapturable, up to 3 attempts
+        loc: 'PDF p.60–61, §1.2 Delivery catheter system'
+        context: 'Before the "point of no recapture"; same deployment-knob mechanism as Evolut FX.'
+      access-route:
+        value: 'Transfemoral (primary); subclavian/axillary, direct aortic (alternative)'
+        loc: 'PDF p.10, Warnings and precautions (shared access-site criteria in this combined labeling)'
+      delivery-sheath:
+        value: '23–29mm: 18 Fr (6.0mm) capsule; 34mm: 22 Fr (7.33mm) capsule'
+        loc: 'PDF p.60–61, §1.2 Delivery catheter system'
+        context: 14 Fr equivalent inline sheath (23-29mm valves); 18 Fr equivalent inline sheath (34mm valve). Same delivery-catheter models (D-EVOLUTFX-2329 / D-EVOLUTFX-34) as Evolut FX.
+      available-sizes:
+        value: 23, 26, 29, 34 mm
+        loc: 'PDF p.60–61, Table 2'
+      anatomy-range-summary:
+        value: '23mm 17/18–20mm; 26mm 20–23mm; 29mm 23–26mm; 34mm 26–30mm'
+        loc: 'PDF p.60–61, Table 2'
+        context: Aortic annulus diameter by size. Identical anatomical sizing table to Evolut FX; FX+ differs by the added frame windows (coronary-access-feature), not by annulus range.
+      indication-scope:
+        value: Native AS, appropriate for THV; ViV for failed AV, high+ risk
+        loc: 'PDF p.63, §2 Indications'
+        context: THV per Heart Team; failed surgical/transcatheter bioprosthetic AV.
+      pivotal-trials:
+        value: STS/ACC TVT Registry real-world redo-TAVR analysis (basis for PMA P130021/S174)
+        source: src-evolut-ssed
+        loc: 'p.5 (repo tmp/pdfs/P130021S174B.txt), Section X Summary of Primary Clinical Study'
+        context: Supports the 2025 redo-TAVR indication. The FX+ generation itself was introduced by a 2024 design-change supplement (decision-evolut-fx-plus-s155) that cites no dedicated new clinical trial.
+
+  # ---------------------------------------------------------------- Navitor
+  - version: ver-navitor
+    category: aortic-tavr-valves
+    source: src-navitor-ifu
+    values:
+      manufacturer:
+        value: Abbott
+        source: src-navitor-s002
+        loc: Applicant field
+      family:
+        value: Navitor
+        source: src-navitor-s002
+        loc: Device/trade-name field
+      exact-version:
+        value: Navitor
+        source: src-navitor-s002
+        loc: Device/trade-name field
+      frame-material:
+        value: Nitinol (self-expanding, radiopaque)
+        loc: 'PDF p.3, Description'
+      expansion-mechanism:
+        value: Self-expanding
+        loc: 'PDF p.3, Description'
+      leaflet-material:
+        value: Trileaflet bovine pericardium
+        loc: 'PDF p.3, Description'
+      sealing-design:
+        value: 'NaviSeal cuff: inner/outer polyethylene layers fill voids'
+        loc: 'PDF p.3, Description'
+        context: Between the native valve and stent.
+      tissue-treatment:
+        value: Glutaraldehyde-crosslinked leaflet, Linx anticalcification
+        loc: 'PDF p.3, Description'
+        context: Leaflet pericardium preserved/crosslinked in glutaraldehyde.
+      leaflet-position:
+        value: Intra-annular leaflets
+        loc: 'PDF p.9, Performance Characteristics'
+        context: 'Exact wording: "contains intra-annular leaflets which provide early function and hemodynamic stability prior to final valve deployment."'
+      repositionable:
+        value: Re-sheathable/repositionable up to 2 times
+        loc: 'PDF p.4, FlexNav Delivery System'
+        context: Provided the valve has not been fully deployed.
+      access-route:
+        value: 'Transfemoral (primary); subclavian, axillary (alternative)'
+        loc: 'PDF p.4, FlexNav Delivery System'
+      delivery-sheath:
+        value: '23/25mm: 14 Fr (6.0mm); 27/29mm: 15 Fr (6.3mm) capsule'
+        loc: 'PDF p.4, Table 3'
+        context: Compatible with separate 18 Fr / 19 Fr introducer sheaths. FlexNav's own integrated sheath is reported as an "equivalent" French size (labeled), not a directly measured true OD; the capsule OD in mm is directly measured.
+      available-sizes:
+        value: 23, 25, 27, 29 mm
+        loc: 'PDF p.3, Table 1'
+        context: A larger 35 mm "Navitor Titan" size was added by FDA supplement P190023/S013 (2023-09-15, per openFDA), after this 2022 IFU revision; not covered by this document.
+      anatomy-range-summary:
+        value: '23mm 19–21mm; 25mm 21–23mm; 27mm 23–25mm; 29mm 25–27mm'
+        loc: 'PDF p.3–4, Table 2'
+        context: Annulus diameter by size. Ascending aorta diameter, annulus area (mm²) and perimeter (mm) ranges are also tabulated per size.
+      indication-scope:
+        value: Native AS, high+ surgical risk (STS mortality >=8% at 30d)
+        source: src-navitor-original
+        loc: Approval Order Statement (base PMA P190023, 2021-09-17)
+        context: 'STS-based predicted mortality. This is the base-PMA indication inherited via the S002 design-change supplement; no US labeling supplement broadening the risk category (e.g. to intermediate/low risk) was identified among P190023 supplements through S034 (2026-07-09, per openFDA). The international IFU used for design attributes states a similar but not identical "high or extreme risk" phrasing (p.5, Indications) — not used here because it is not the US-specific label.'
+      pivotal-trials:
+        value: NCT04011722 (trial number listed against the P190023/S002 FDA record)
+        source: src-navitor-s002
+        loc: Clinical Trials field
+        context: The public FDA record lists this trial number but does not name the study or describe its design; S002 is a bench/comparability-based design-change supplement (NaviSeal outer skirt), and the approval order itself references no clinical trial.
+
+  # ------------------------------------------------------------ ACURATE neo2
+  - version: ver-acurate-neo2
+    category: aortic-tavr-valves
+    source: src-acurate-neo2-specsheet
+    values:
+      manufacturer:
+        value: Boston Scientific
+        loc: 'p.1, footer/branding'
+      family:
+        value: ACURATE neo2
+        loc: 'p.1, title'
+      exact-version:
+        value: ACURATE neo2
+        loc: 'p.1, title'
+      frame-material:
+        value: Nitinol
+        loc: 'p.1, Specifications table'
+      expansion-mechanism:
+        value: Self-expanding
+        loc: 'p.1, Specifications table'
+      leaflet-material:
+        value: Porcine pericardium
+        loc: 'p.1, Specifications table'
+      sealing-design:
+        value: Active PVseal — conforms to the native annulus to reduce paravalvular leak
+        loc: 'p.1, Specifications table and "Active PVseal Technology" panel'
+      tissue-treatment:
+        value: BioFix anti-calcification process
+        loc: 'p.1, Specifications table'
+        context: 'Footnote: "Significant reduction in calcification demonstrated in animal models... No clinical data are available which evaluate the long-term impact of the BioFix tissue treatment in patients."'
+      leaflet-position:
+        value: Supra-annular
+        loc: 'p.1, Specifications table'
+      repositionable:
+        availability: not_publicly_disclosed
+        loc: 'p.1–2 (not stated in this spec sheet)'
+        context: The IFU that would normally document recapture/reposition capability (51081293-01A_ACURATEneo2_IFU_OUS_ML_s.pdf) returns HTTP 404 as of 2026-09-23 and no Wayback Machine snapshot was found.
+      access-route:
+        value: Transfemoral
+        loc: 'p.1, Specifications table'
+      delivery-sheath:
+        value: 14 Fr iSLEEVE expandable introducer set (optional accessory)
+        loc: 'p.2, Ordering Information'
+        context: This is an optional expandable-introducer accessory listed in the catalog, not a stated true delivery-catheter OD; the primary delivery-system OD is not disclosed in this spec sheet.
+      available-sizes:
+        value: 'S 23 mm, M 25 mm, L 27 mm'
+        loc: 'p.1, Valve Size table'
+      anatomy-range-summary:
+        value: 'S 21–23mm; M 23–25mm; L 25–27mm (CT perimeter-derived)'
+        loc: 'p.1, Valve Size table'
+        context: Aortic annulus diameter. Annulus perimeter ranges also given (66–85 mm across S/M/L).
+      indication-scope:
+        availability: not_applicable
+        loc: 'p.1, Indications for Use'
+        context: 'Never received FDA authorization — no PMA or 510(k) record for "ACURATE" exists in the openFDA PMA/510(k) databases (checked 2026-09-23). This is a CE-mark indication only: "...severe native calcific aortic stenosis... judged by a Heart Team... to be appropriate for the transcatheter heart valve replacement therapy." Boston Scientific discontinued the platform worldwide in 2025.'
+      pivotal-trials:
+        availability: not_applicable
+        loc: n/a
+        context: No US pivotal trial applies because the device was never FDA-authorized.
+
+  # --------------------------------------------------------------- Trilogy
+  - version: ver-trilogy
+    category: aortic-regurgitation-tavr
+    source: src-trilogy-ssed
+    values:
+      frame-material:
+        value: Self-expanding nitinol with 3 Locators bearing tantalum radiopaque markers
+        loc: 'p.2, V. Device Description'
+      expansion-mechanism:
+        value: Self-expanding
+        loc: 'p.2, V. Device Description'
+      leaflet-material:
+        value: Trileaflet porcine pericardium, sewn with polyester sutures
+        loc: 'p.2, V. Device Description'
+      tissue-treatment:
+        availability: not_publicly_disclosed
+        loc: 'p.2 device description and p.9 tissue-characterization testing (glutaraldehyde crosslinking confirmed; no named proprietary process disclosed)'
+        context: The SSED describes "glutaraldehyde crosslinking" and "proprietary tissue processing" (bench comparability testing, p.9-11) without naming a branded tissue-treatment process.
+      sealing-design:
+        value: Flared Sealing Ring extending from the LVOT inflow to the annular basal plane
+        loc: 'p.2, V. Device Description'
+      anchoring-mechanism:
+        value: 3 Locators clip and capture native leaflets (no calcium anchor)
+        loc: 'p.2, V. Device Description'
+        context: Between the Locators and stent body. This active-anchoring mechanism is what allows THV fixation in patients with pure aortic regurgitation, who typically lack the annular calcium that anchors conventional TAVR valves.
+      repositionable:
+        value: Locators repositionable before Sealing Ring release only
+        source: src-trilogy-ifu
+        loc: 'p.19–20, Deployment/recapture warnings'
+        context: Partial deployment only; not repositionable/retrievable once the Sealing Ring has deployed.
+      access-route:
+        value: Transfemoral (percutaneous or cutdown); vessel >=7.0 mm
+        source: src-trilogy-ifu
+        loc: 'p.10, Patient selection criteria; p.4, Device Description'
+        context: Minimum femoral/iliac vessel diameter 7.0 mm.
+      delivery-sheath:
+        value: 22 Fr Introducer Sheath OD; 20 Fr Delivery Catheter OD
+        loc: 'p.2–3, V. Device Description'
+      available-sizes:
+        value: 23, 25, 27 mm
+        loc: 'p.2, V. Device Description'
+      anatomy-range-summary:
+        value: 'Aortic annulus diameter 21–28.6 mm (annulus perimeter 66–90 mm), by MDCT or TEE'
+        source: src-trilogy-ifu
+        loc: 'p.7, Table 2 THV Sizing Chart'
+        context: 'By size: 23 mm 21–24.2 mm; 25 mm 24.2–26.4 mm; 27 mm 26.4–28.6 mm annulus diameter.'
+      indication-scope:
+        value: Symptomatic severe native AR, high or greater surgical risk
+        loc: 'p.1, II. Indications for Use'
+        context: 'AR = aortic regurgitation; not endocarditis/rheumatic/dissection-related. Exact wording: "...treatment of symptomatic, severe native tricuspid aortic valve regurgitation... in patients who are judged by a Heart Team, including a cardiac surgeon, to be at high or greater risk for surgical aortic valve replacement (i.e., predicted risk of surgical mortality >=8% at 30 days...)."'
+      pivotal-trials:
+        value: ALIGN-AR study (IDE G150035) + ALIGN-AR continued access program (CAP) cohort
+        loc: 'p.13, X. Summary of Primary Clinical Study'
+
+  # ---------------------------------------------------------------- Melody
+  - version: ver-melody
+    category: pulmonary-valves
+    source: src-melody-ssed
+    values:
+      frame-material:
+        value: Platinum-iridium (balloon-expandable stent, laser-welded)
+        loc: 'p.2, V. Device Description'
+      expansion-mechanism:
+        value: Balloon-expandable (Ensemble delivery system, balloon-in-balloon)
+        loc: 'p.2, V. Device Description'
+      leaflet-material:
+        value: Bovine jugular vein segment with native venous valve, sutured into the frame
+        loc: 'p.2, V. Device Description'
+      tissue-treatment:
+        value: Glutaraldehyde-fixed; no proprietary anti-calcification process
+        source: src-melody-ifu
+        loc: 'p.5, Device materials/sterilization'
+      sealing-design:
+        availability: not_publicly_disclosed
+        loc: 'p.2, V. Device Description (no distinct sealing-cuff/skirt feature described; sealing relies on balloon-expanded stent apposition to the conduit wall)'
+      repositionable:
+        value: Not repositionable — single balloon-in-balloon inflation
+        source: src-melody-ifu
+        loc: 'Labeling reviewed in full; no reposition/recapture/retrieve language found'
+        context: No resheath/recapture mechanism described.
+      access-route:
+        value: Transvenous — femoral (94.6%) or internal jugular (4.8%)
+        source: src-melody-ifu
+        loc: 'p.24, Clinical study access-route summary'
+      delivery-sheath:
+        value: Ensemble DS — 22 Fr crossing profile
+        loc: 'p.2, V. Device Description'
+      available-sizes:
+        value: '16 mm BJV (expands to <=20 mm); 18 mm BJV (expands to <=22 mm)'
+        source: src-melody-ifu
+        loc: 'p.5, Device Description'
+      anatomy-range-summary:
+        value: Original RVOT conduit diameter >=16 mm circumferential
+        source: src-melody-ifu
+        loc: 'p.16, Implantation/predilation guidance'
+        context: Conduit predilated to <=110% of nominal diameter (<=20 mm for the 16→20 mm valve, <=22 mm for the 18→22 mm valve).
+      indication-scope:
+        value: 'Adjunct to surgery: dysfunctional RVOT conduit, >=16mm'
+        loc: 'p.1, II. Indications for Use'
+        context: Regurgitation >=moderate and/or mean RVOT gradient >=35 mmHg.
+      pivotal-trials:
+        value: Original US IDE study (171 subjects, 5 US centers)
+        loc: 'p.5, X.1 Melody TPV Long-term Follow-up PAS (Study Design)'
+        context: Basis for HDE H080002 and PMA P140017. No formal trial acronym is used in the SSED; described only as "the pre-market IDE study" / "the original IDE study."
+
+  # --------------------------------------------------------------- Harmony
+  - version: ver-harmony
+    category: pulmonary-valves
+    source: src-harmony-ssed
+    values:
+      frame-material:
+        value: Self-expanding nitinol wire struts
+        loc: 'p.2, V. Device Description'
+      expansion-mechanism:
+        value: Self-expanding
+        loc: 'p.2, V. Device Description'
+      leaflet-material:
+        value: Porcine pericardial valve, PTFE or UHMWPE sutures
+        loc: 'p.2, V. Device Description'
+        context: PTFE-impregnated polyester suture (TPV 22) or UHMWPE suture (TPV 25).
+      tissue-treatment:
+        value: Alpha-amino oleic acid (AOA) anti-mineralization treatment
+        loc: 'p.2, V. Device Description'
+      sealing-design:
+        value: Knitted polyester fabric graft sewn onto the nitinol frame
+        source: src-harmony-ifu
+        loc: 'p.5, §1.1 Transcatheter pulmonary valve (TPV)'
+      repositionable:
+        value: Not intended for recapture/retrieval once deployment begins
+        source: src-harmony-ifu
+        loc: 'p.13–14, Deployment warnings'
+        context: Physician-judgment-only repositioning discouraged after deployment is complete.
+      access-route:
+        value: Transvenous — femoral vein (94.4%, 67/71) or jugular vein (5.6%, 4/71)
+        source: src-harmony-ifu
+        loc: 'p.32, Clinical access-site summary'
+      delivery-sheath:
+        value: Harmony DCS — 25 Fr (8.33 mm) crossing profile
+        loc: 'p.2, V. Device Description'
+        context: Labeling states the patient's venous anatomy should accommodate this 25 Fr (8.33 mm) delivery catheter system.
+        source: src-harmony-ifu
+      available-sizes:
+        value: TPV 22, TPV 25
+        loc: 'p.2, V. Device Description'
+      anatomy-range-summary:
+        value: 'TPV22: distal 22–28mm, proximal 23–39mm; TPV25: 25–38/32–48mm'
+        source: src-harmony-ifu
+        loc: 'p.5–6, §1.2 Patient anatomical criteria, Figures 1–2'
+        context: Distal PA/bifurcation vs proximal PA/RVOT diameter; perimeter-derived diameter.
+      indication-scope:
+        value: Severe pulmonary regurgitation, native/repaired RVOT, PVR-indicated
+        loc: 'p.1, Indications for Use'
+        context: By echo, or PR fraction >=30% by CMR.
+      pivotal-trials:
+        value: Harmony TPV IDE study — EFS + pivotal phases pooled
+        loc: 'p.34, X. Summary of Primary Clinical Study'
+        context: IDE G120175.

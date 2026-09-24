@@ -1,6 +1,12 @@
-# Sunday news + dataset routine
+# Legacy local Sunday news + dataset routine
 
-This is the durable prompt for the active local structural-heart newsletter task,
+> Cutover note: the GitHub-hosted replacement is documented in
+> `docs/CLOUD_WORKFLOW.md`. After one successful end-to-end cloud test, disable the
+> local scheduled task. Do not run both schedules: the cloud workflow updates
+> `origin` through reviewed pull requests, while a local clone changes only when
+> its owner explicitly pulls.
+
+This is the durable prompt for the legacy local structural-heart newsletter task,
 scheduled for Sundays at 6:00 PM Pacific. A single research pass should produce
 both outputs:
 
@@ -15,7 +21,8 @@ pushes, or deploys.
 
 ## How the loop works
 
-1. Read `schema/DATA_DICTIONARY.md` and the existing `data/*.yaml`.
+1. Read `schema/DATA_DICTIONARY.md`, the existing `data/*.yaml`, and the private
+   ignored watchlist at `artifacts/research/source-registry.yaml`.
 2. Research the preceding seven days once, then write selected stories to
    `data/news.yaml` and use the same material for the newsletter.
 3. Refresh `pulse` and propose warranted additions/edits as `draft` entities with
@@ -35,6 +42,9 @@ pushes, or deploys.
 >
 > 1. Read `schema/DATA_DICTIONARY.md` and follow it exactly, including the news
 >    contract and the hard rules for automated updates.
+>    Also use `artifacts/research/source-registry.yaml` as a systematic set of
+>    starting points. It is a watchlist, not evidence: verify the exact dated
+>    source for every selected claim, and keep the watchlist out of commits.
 > 2. Review all current `data/*.yaml`. Note the newest `publishedAt` in
 >    `data/news.yaml`; deduplicate against both canonical source URL and title.
 > 3. Research material developments published during the preceding seven days in
@@ -45,7 +55,9 @@ pushes, or deploys.
 >    ATTR-CM; HFrEF/HFpEF therapies; interatrial shunts; PA/IVC/LA sensors;
 >    coronary-sinus/CMD therapies; TAVR including aortic regurgitation; mitral
 >    TEER/TMVR/annuloplasty; tricuspid TEER/TTVR; transcatheter pulmonary valves;
->    and surgical valve therapy.
+>    and surgical valve therapy. Include university department news and
+>    publication pages (e.g., Duke BME publications) and engineering journals
+>    from the watchlist for device-engineering research.
 > 4. Select only material, independently useful stories. Append each to
 >    `data/news.yaml` using an immutable `news-YYYY-MM-DD-*` id, ISO publication
 >    date, source-faithful title, one- or two-sentence summary, canonical public

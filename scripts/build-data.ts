@@ -40,6 +40,18 @@ const OUT_FILE = join(ROOT, 'public', 'graph.json')
 const errors: string[] = []
 const fail = (msg: string) => errors.push(msg)
 
+function checkPublicHttps(label: string, value: string | undefined) {
+  if (!value || value.startsWith('PMID:')) return
+  try {
+    const url = new URL(value)
+    if (url.protocol !== 'https:' || !url.hostname || url.username || url.password) {
+      fail(`${label} must be a public HTTPS URL without embedded credentials`)
+    }
+  } catch {
+    fail(`${label} must be a valid public HTTPS URL`)
+  }
+}
+
 // --- ajv setup -------------------------------------------------------------
 const ajv = new Ajv({ allErrors: true, allowUnionTypes: true })
 addFormats(ajv)
@@ -94,11 +106,11 @@ for (const file of files) {
 
 // News attaches to graph nodes but is not itself a graph entity.
 function loadNews(): NewsItem[] {
-  const items = loadEntities('news') as NewsItem[]
+  const items = loadEntities('news') as unknown as NewsItem[]
   const validate = validators.news
   items.forEach((item, i) => {
+    const id = item?.id ?? `index ${i}`
     if (!validate(item)) {
-      const id = item?.id ?? `index ${i}`
       for (const e of validate.errors ?? []) {
         fail(`data/news.yaml [${id}] ${e.instancePath || '/'} ${e.message}`)
       }
@@ -126,6 +138,11 @@ for (const item of news) {
   if (idDate && item.publishedAt && idDate !== item.publishedAt) {
     fail(`news "${item.id}" date prefix must match publishedAt "${item.publishedAt}"`)
   }
+  checkPublicHttps(`news "${item.id}".sourceUrl`, item.sourceUrl)
+  for (const source of item.additionalSources ?? []) {
+    checkPublicHttps(`news "${item.id}".additionalSources`, source.url)
+    if (source.url === item.sourceUrl) fail(`news "${item.id}" repeats its primary URL in additionalSources`)
+  }
   for (const nodeId of item.relevantNodeIds ?? []) {
     if (!byId.has(nodeId)) fail(`news "${item.id}" references unknown node id "${nodeId}"`)
   }
@@ -150,6 +167,12 @@ const PREFIX_TO_THERAPY_TYPE: Record<string, TherapyType> = {
 
 // --- cross-field + referential integrity ----------------------------------
 for (const entity of all) {
+  for (const [index, source] of (entity.curation?.sources ?? []).entries()) {
+    checkPublicHttps(`${entity.type} "${entity.id}".curation.sources[${index}]`, source)
+  }
+  if (entity.type === 'company') {
+    checkPublicHttps(`company "${entity.id}".website`, entity.website)
+  }
   if (entity.type === 'therapy') {
     const t = entity as Therapy
     const prefix = t.id.split('-')[0]
@@ -159,11 +182,25 @@ for (const entity of all) {
     }
     if (t.company) checkRef(`therapy "${t.id}".company`, t.company, 'company')
     for (const c of t.treats ?? []) checkRef(`therapy "${t.id}".treats`, c, 'condition')
+    for (const [index, link] of (t.links ?? []).entries()) {
+      checkPublicHttps(`therapy "${t.id}".links[${index}].url`, link.url)
+    }
+    for (const [index, material] of (t.materials ?? []).entries()) {
+      checkPublicHttps(`therapy "${t.id}".materials[${index}].source`, material.source)
+    }
+    checkPublicHttps(`therapy "${t.id}".timeline.source`, t.timeline?.source)
   }
   if (entity.type === 'trial') {
     const tr = entity as Trial
     for (const c of tr.conditions ?? []) checkRef(`trial "${tr.id}".conditions`, c, 'condition')
     for (const th of tr.therapies ?? []) checkRef(`trial "${tr.id}".therapies`, th, 'therapy')
+    for (const [index, reference] of (tr.references ?? []).entries()) {
+      checkPublicHttps(`trial "${tr.id}".references[${index}]`, reference)
+    }
+    for (const [index, link] of (tr.links ?? []).entries()) {
+      checkPublicHttps(`trial "${tr.id}".links[${index}].url`, link.url)
+    }
+    checkPublicHttps(`trial "${tr.id}".timeline.source`, tr.timeline?.source)
   }
 }
 

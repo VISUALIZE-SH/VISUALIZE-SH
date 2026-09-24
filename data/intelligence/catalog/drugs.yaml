@@ -1,0 +1,684 @@
+observedAt: '2026-09-23'
+sources:
+  # --- Cardiac myosin inhibitors (cond-hcm) ---
+  - id: src-camzyos-label
+    title: CAMZYOS (mavacamten) prescribing information
+    url: https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=669c936b-3ee6-4e36-8a22-79dd11b1255b
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 214998
+  - id: src-camzyos-fda-overview
+    title: Drugs@FDA process overview, NDA 214998 (mavacamten)
+    url: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=214998
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 214998
+  - id: src-myqorzo-label
+    title: MYQORZO (aficamten) prescribing information
+    url: https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=fd778507-1274-4d1a-a659-5431d55c543a&type=pdf
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 219083
+  - id: src-myqorzo-fda-overview
+    title: Drugs@FDA process overview, NDA 219083 (aficamten)
+    url: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219083
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 219083
+  # --- ATTR-CM therapies (cond-attr-cm) ---
+  - id: src-vyndaqel-label
+    title: VYNDAQEL and VYNDAMAX (tafamidis) prescribing information
+    url: https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=1b4121ee-a733-4456-a917-be2603477839
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 211996 / NDA 212161
+  - id: src-vyndaqel-fda-overview
+    title: Drugs@FDA process overview, NDA 211996 (tafamidis meglumine)
+    url: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211996
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 211996
+  - id: src-attruby-label
+    title: ATTRUBY (acoramidis) prescribing information
+    url: https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=913552ef-875d-4cb7-bf05-a7d20a394c38&type=display
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 216540
+  - id: src-attruby-fda-overview
+    title: Drugs@FDA process overview, NDA 216540 (acoramidis)
+    url: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216540
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 216540
+  - id: src-amvuttra-label
+    title: AMVUTTRA (vutrisiran) prescribing information, ATTR-CM supplement (215515/S-006)
+    url: https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215515s006lbl.pdf
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 215515/S-006
+  - id: src-amvuttra-fda-overview
+    title: Drugs@FDA process overview, NDA 215515 (vutrisiran)
+    url: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215515
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 215515
+  - id: src-onpattro-label
+    title: ONPATTRO (patisiran) prescribing information
+    url: https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e87ec36f-b4b4-49d4-aea4-d4ffb09b0970
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 210922
+  - id: src-patisiran-crl
+    title: Alnylam Complete Response Letter announcement for patisiran in ATTR-CM
+    url: https://investors.alnylam.com/press-release?id=27741
+    kind: manufacturer
+    publisher: Alnylam Pharmaceuticals
+    publishedAt: { value: '2023-10-09', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+  # --- HFrEF / HFpEF pharmacotherapy (cond-hfref, cond-hfpef) ---
+  - id: src-farxiga-label
+    title: FARXIGA (dapagliflozin) prescribing information
+    url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72ad22ae-efe6-4cd6-a302-98aaee423d69&audience=professional
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 202293
+  - id: src-farxiga-fda-overview
+    title: Drugs@FDA process overview, NDA 202293 (dapagliflozin)
+    url: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202293
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 202293
+  - id: src-jardiance-label
+    title: JARDIANCE (empagliflozin) prescribing information
+    url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5777b8a8-ada6-4950-8548-43a1de11f075
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 204629
+  - id: src-jardiance-fda-overview
+    title: Drugs@FDA process overview, NDA 204629 (empagliflozin)
+    url: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204629
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 204629
+  - id: src-entresto-label
+    title: ENTRESTO (sacubitril/valsartan) prescribing information
+    url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 207620
+  - id: src-entresto-fda-overview
+    title: Drugs@FDA process overview, NDA 207620 (sacubitril/valsartan)
+    url: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207620
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 207620
+  - id: src-verquvo-label
+    title: VERQUVO (vericiguat) prescribing information
+    url: https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=17056d73-1b1b-4bf2-9c07-b7a9367f0d6d&type=display
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 214377
+  - id: src-verquvo-fda-overview
+    title: Drugs@FDA process overview, NDA 214377 (vericiguat)
+    url: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=214377
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 214377
+  - id: src-kerendia-label
+    title: KERENDIA (finerenone) prescribing information, HF indication update
+    url: https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc726765-5d5a-4d6e-b037-b847bda9fb7c
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2025-08-28', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 215341
+  - id: src-kerendia-fda-overview
+    title: Drugs@FDA process overview, NDA 215341 (finerenone)
+    url: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215341
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NDA 215341
+  - id: src-omecamtiv-crl
+    title: Cytokinetics Complete Response Letter announcement for omecamtiv mecarbil
+    url: https://ir.cytokinetics.com/press-releases/press-release-details/2023/Cytokinetics-Receives-Complete-Response-Letter-From-FDA-for-New-Drug-Application-for-Omecamtiv-Mecarbil-02-28-2023/default.aspx
+    kind: manufacturer
+    publisher: Cytokinetics
+    publishedAt: { value: '2023-02-28', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+  - id: src-galactic-hf-nejm
+    title: 'Cardiac Myosin Activation with Omecamtiv Mecarbil in Systolic Heart Failure (GALACTIC-HF)'
+    url: https://pubmed.ncbi.nlm.nih.gov/33185990/
+    kind: publication
+    publisher: New England Journal of Medicine
+    publishedAt: { value: '2021-01-14', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+
+families:
+  - id: family-mavacamten
+    name: Mavacamten
+    manufacturer: Bristol Myers Squibb
+    entityIds: [rx-mavacamten]
+    conditionIds: [cond-hcm]
+    description: First-in-class cardiac myosin inhibitor for symptomatic obstructive HCM; a supplemental adolescent indication was under FDA priority review as of this extraction.
+  - id: family-aficamten
+    name: Aficamten
+    manufacturer: Cytokinetics
+    entityIds: [rx-aficamten]
+    conditionIds: [cond-hcm]
+    description: Next-generation cardiac myosin inhibitor; the graph's regulatoryStatus for rx-aficamten predates its December 2025 approval as Myqorzo and needs updating.
+  - id: family-tafamidis
+    name: Tafamidis
+    manufacturer: Pfizer
+    entityIds: [rx-tafamidis]
+    conditionIds: [cond-attr-cm]
+    description: TTR stabilizer marketed as two non-interchangeable oral products (Vyndaqel 80 mg, Vyndamax 61 mg) sharing one ATTR-CM indication.
+  - id: family-acoramidis
+    name: Acoramidis
+    manufacturer: BridgeBio Pharma
+    entityIds: [rx-acoramidis]
+    conditionIds: [cond-attr-cm]
+    description: Near-complete TTR tetramer stabilizer approved for ATTR-CM.
+  - id: family-vutrisiran
+    name: Vutrisiran
+    manufacturer: Alnylam Pharmaceuticals
+    entityIds: [rx-vutrisiran]
+    conditionIds: [cond-attr-cm]
+    description: GalNAc-conjugated siRNA; the ATTR-CM indication is a 2025 supplement to the 2022 hATTR-polyneuropathy approval.
+  - id: family-patisiran
+    name: Patisiran
+    manufacturer: Alnylam Pharmaceuticals
+    entityIds: [rx-patisiran]
+    conditionIds: [cond-attr-cm]
+    description: IV siRNA approved only for hATTR polyneuropathy; the ATTR-CM supplemental indication was not approved (2023 Complete Response Letter).
+  - id: family-dapagliflozin
+    name: Dapagliflozin
+    manufacturer: AstraZeneca
+    entityIds: [rx-dapagliflozin]
+    conditionIds: [cond-hfref, cond-hfpef]
+    description: SGLT2 inhibitor; the original 2020 HFrEF indication was broadened in 2023 to heart failure across the full range of LVEF.
+  - id: family-empagliflozin
+    name: Empagliflozin
+    manufacturer: Boehringer Ingelheim
+    entityIds: [rx-empagliflozin]
+    conditionIds: [cond-hfref, cond-hfpef]
+    description: SGLT2 inhibitor; the 2021 HFrEF indication was broadened in 2022 to heart failure regardless of ejection fraction.
+  - id: family-sacubitril-valsartan
+    name: Sacubitril/Valsartan
+    manufacturer: Novartis
+    entityIds: [rx-sacubitril-valsartan]
+    conditionIds: [cond-hfref, cond-hfpef]
+    description: ARNI; the 2015 chronic-HF indication was relabeled in 2021 to remove the "reduced ejection fraction" qualifier, extending use toward HFpEF.
+  - id: family-vericiguat
+    name: Vericiguat
+    manufacturer: Merck (MSD)
+    entityIds: [rx-vericiguat]
+    conditionIds: [cond-hfref]
+    description: Soluble guanylate cyclase stimulator for worsening chronic HFrEF.
+  - id: family-finerenone
+    name: Finerenone
+    manufacturer: Bayer
+    entityIds: [rx-finerenone]
+    conditionIds: [cond-hfpef]
+    description: Nonsteroidal MRA; the HF (LVEF >=40%) indication is a 2025 supplement to the original CKD-in-T2D approval.
+  - id: family-omecamtiv-mecarbil
+    name: Omecamtiv Mecarbil
+    manufacturer: Cytokinetics
+    entityIds: [rx-omecamtiv-mecarbil]
+    conditionIds: [cond-hfref]
+    description: Cardiac myosin activator for HFrEF; the NDA received a 2023 Complete Response Letter and Cytokinetics has stated it has no plans for an additional trial.
+
+versions:
+  - id: ver-camzyos
+    familyId: family-mavacamten
+    name: Camzyos (mavacamten)
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: Oral, echocardiography-guided cardiac myosin inhibitor for symptomatic obstructive HCM; boxed warning for heart-failure risk and a REMS program.
+    sourceRefs:
+      - sourceId: src-camzyos-label
+        locator: 'Label §1 Indications and Usage; Boxed Warning'
+    reviewStatus: draft
+  - id: ver-myqorzo
+    familyId: family-aficamten
+    name: Myqorzo (aficamten)
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: Second cardiac myosin inhibitor approved for symptomatic obstructive HCM; also echo-guided dosing with a boxed heart-failure warning and REMS.
+    sourceRefs:
+      - sourceId: src-myqorzo-label
+        locator: 'Label §1 Indications and Usage; Boxed Warning'
+    reviewStatus: draft
+  - id: ver-vyndaqel-vyndamax
+    familyId: family-tafamidis
+    name: Vyndaqel/Vyndamax (tafamidis)
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: Two dose-equivalent oral formulations (meglumine 80 mg vs. free acid 61 mg) sharing the ATTR-CM indication; the original US approval was for ATTR-CM itself.
+    sourceRefs:
+      - sourceId: src-vyndaqel-label
+        locator: 'Label §1 Indications and Usage; §2 Dosage and Administration'
+    reviewStatus: draft
+  - id: ver-attruby
+    familyId: family-acoramidis
+    name: Attruby (acoramidis)
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: Near-complete TTR stabilizer dosed as two tablets twice daily for ATTR-CM.
+    sourceRefs:
+      - sourceId: src-attruby-label
+        locator: 'Label §1 Indications and Usage; §2.1'
+    reviewStatus: draft
+  - id: ver-amvuttra
+    familyId: family-vutrisiran
+    name: Amvuttra (vutrisiran)
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: Quarterly subcutaneous siRNA; ATTR-CM indication (§1.2) added 2025-03-20 alongside the original hATTR-PN indication (§1.1).
+    sourceRefs:
+      - sourceId: src-amvuttra-label
+        locator: 'Label §1.1-1.2 Indications and Usage'
+    reviewStatus: draft
+  - id: ver-onpattro
+    familyId: family-patisiran
+    name: Onpattro (patisiran)
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: IV siRNA approved only for hATTR polyneuropathy; a supplemental ATTR-CM indication (APOLLO-B) was not approved.
+    sourceRefs:
+      - sourceId: src-onpattro-label
+        locator: 'Label §1 Indications and Usage (no ATTR-CM indication present)'
+      - sourceId: src-patisiran-crl
+        locator: Press release, regulatory update on the ATTR-CM sNDA
+    reviewStatus: draft
+  - id: ver-farxiga
+    familyId: family-dapagliflozin
+    name: Farxiga (dapagliflozin)
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: SGLT2 inhibitor indicated for heart failure across the full range of LVEF, following sequential HFrEF (2020) then full-spectrum (2023) approvals.
+    sourceRefs:
+      - sourceId: src-farxiga-label
+        locator: 'Label §1 Indications and Usage'
+    reviewStatus: draft
+  - id: ver-jardiance
+    familyId: family-empagliflozin
+    name: Jardiance (empagliflozin)
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: SGLT2 inhibitor indicated for heart failure regardless of LVEF, following sequential HFrEF (2021) then HFpEF-inclusive (2022) approvals.
+    sourceRefs:
+      - sourceId: src-jardiance-label
+        locator: 'Label §1 Indications and Usage'
+    reviewStatus: draft
+  - id: ver-entresto
+    familyId: family-sacubitril-valsartan
+    name: Entresto (sacubitril/valsartan)
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: ARNI indicated for chronic heart failure; a 2021 label change removed the "reduced ejection fraction" qualifier, noting benefit is most evident with LVEF below normal.
+    sourceRefs:
+      - sourceId: src-entresto-label
+        locator: 'Label §1.1 Indications and Usage'
+    reviewStatus: draft
+  - id: ver-verquvo
+    familyId: family-vericiguat
+    name: Verquvo (vericiguat)
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: Oral sGC stimulator for symptomatic chronic HFrEF following a recent worsening event.
+    sourceRefs:
+      - sourceId: src-verquvo-label
+        locator: 'Label §1 Indications and Usage'
+    reviewStatus: draft
+  - id: ver-kerendia
+    familyId: family-finerenone
+    name: Kerendia (finerenone)
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: Nonsteroidal MRA; the HF indication (LVEF >=40%) was added 2025-07-11 alongside the original CKD-in-T2D indication.
+    sourceRefs:
+      - sourceId: src-kerendia-label
+        locator: 'Label §1 Indications and Usage'
+    reviewStatus: draft
+  - id: ver-omecamtiv
+    familyId: family-omecamtiv-mecarbil
+    name: Omecamtiv Mecarbil
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: Selective cardiac myosin activator studied in GALACTIC-HF for HFrEF; the NDA is not approved (2023 Complete Response Letter).
+    sourceRefs:
+      - sourceId: src-omecamtiv-crl
+        locator: Press release, FDA Complete Response Letter summary
+    reviewStatus: draft
+
+decisions:
+  - id: decision-camzyos-nda
+    identifier: '214998'
+    rootIdentifier: '214998'
+    versionIds: [ver-camzyos]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2022-04-28', precision: day }
+    changeType: initial_authorization
+    summary: Initial approval for symptomatic NYHA class II-III obstructive HCM.
+    sourceRefs:
+      - sourceId: src-camzyos-fda-overview
+        locator: 'ORIG-1 action, approval date'
+    reviewStatus: draft
+  - id: decision-myqorzo-nda
+    identifier: '219083'
+    rootIdentifier: '219083'
+    versionIds: [ver-myqorzo]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2025-12-19', precision: day }
+    changeType: initial_authorization
+    summary: Initial approval for symptomatic obstructive HCM.
+    sourceRefs:
+      - sourceId: src-myqorzo-fda-overview
+        locator: 'ORIG-1 action, approval date'
+    reviewStatus: draft
+  - id: decision-vyndaqel-nda
+    identifier: 211996 / 212161
+    rootIdentifier: '211996'
+    versionIds: [ver-vyndaqel-vyndamax]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2019-05-03', precision: day }
+    changeType: initial_authorization
+    summary: Initial approval of both formulations for ATTR-CM (ATTR-ACT); this was the first US indication for tafamidis.
+    sourceRefs:
+      - sourceId: src-vyndaqel-fda-overview
+        locator: 'ORIG-1 action, approval date'
+    reviewStatus: draft
+  - id: decision-attruby-nda
+    identifier: '216540'
+    rootIdentifier: '216540'
+    versionIds: [ver-attruby]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2024-11-22', precision: day }
+    changeType: initial_authorization
+    summary: Initial approval for ATTR-CM (ATTRibute-CM).
+    sourceRefs:
+      - sourceId: src-attruby-fda-overview
+        locator: 'ORIG-1 action, approval date'
+    reviewStatus: draft
+  - id: decision-amvuttra-attr-cm
+    identifier: 215515/S-006
+    rootIdentifier: '215515'
+    versionIds: [ver-amvuttra]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2025-03-20', precision: day }
+    changeType: indication
+    summary: Added the ATTR-CM indication (HELIOS-B) to the 2022 hATTR-polyneuropathy approval.
+    sourceRefs:
+      - sourceId: src-amvuttra-fda-overview
+        locator: 'SUPPL-6 action, Efficacy-New Indication'
+    reviewStatus: draft
+  - id: decision-farxiga-hfref
+    identifier: 202293/S-020
+    rootIdentifier: '202293'
+    versionIds: [ver-farxiga]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2020-05-05', precision: day }
+    changeType: indication
+    summary: Added the HFrEF indication (DAPA-HF).
+    sourceRefs:
+      - sourceId: src-farxiga-fda-overview
+        locator: 'SUPPL-20 action, Efficacy-New Indication'
+    reviewStatus: draft
+  - id: decision-farxiga-full-range
+    identifier: 202293/S-026
+    rootIdentifier: '202293'
+    versionIds: [ver-farxiga]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2023-05-08', precision: day }
+    changeType: indication
+    summary: Expanded the HF indication to the full range of LVEF, including HFmrEF/HFpEF (DELIVER).
+    sourceRefs:
+      - sourceId: src-farxiga-fda-overview
+        locator: 'SUPPL-26 action, Efficacy-New Indication'
+    reviewStatus: draft
+  - id: decision-jardiance-hfref
+    identifier: 204629/S-026
+    rootIdentifier: '204629'
+    versionIds: [ver-jardiance]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2021-08-18', precision: day }
+    changeType: indication
+    summary: Added the HFrEF indication (EMPEROR-Reduced).
+    sourceRefs:
+      - sourceId: src-jardiance-fda-overview
+        locator: 'SUPPL-26 action, Efficacy-New Indication'
+    reviewStatus: draft
+  - id: decision-jardiance-any-ef
+    identifier: 204629/S-033
+    rootIdentifier: '204629'
+    versionIds: [ver-jardiance]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2022-02-24', precision: day }
+    changeType: indication
+    summary: Expanded the HF indication to regardless of LVEF, including HFpEF (EMPEROR-Preserved).
+    sourceRefs:
+      - sourceId: src-jardiance-fda-overview
+        locator: 'SUPPL-33 action, Efficacy-New Indication'
+    reviewStatus: draft
+  - id: decision-entresto-orig
+    identifier: '207620'
+    rootIdentifier: '207620'
+    versionIds: [ver-entresto]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2015-07-07', precision: day }
+    changeType: initial_authorization
+    summary: Initial approval to reduce CV death/HF hospitalization in chronic heart failure (PARADIGM-HF).
+    sourceRefs:
+      - sourceId: src-entresto-fda-overview
+        locator: 'ORIG-1 action, approval date'
+    reviewStatus: draft
+  - id: decision-entresto-lvef-below-normal
+    identifier: 207620/S-018
+    rootIdentifier: '207620'
+    versionIds: [ver-entresto]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2021-02-16', precision: day }
+    changeType: labeling
+    summary: Removed the "reduced ejection fraction" qualifier; label now states benefit is most evident with LVEF below normal (PARAGON-HF).
+    sourceRefs:
+      - sourceId: src-entresto-fda-overview
+        locator: 'SUPPL-18 action, Efficacy-Labeling Change With Clinical Data'
+    reviewStatus: draft
+  - id: decision-verquvo-nda
+    identifier: '214377'
+    rootIdentifier: '214377'
+    versionIds: [ver-verquvo]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2021-01-19', precision: day }
+    changeType: initial_authorization
+    summary: Initial approval for worsening chronic HFrEF (VICTORIA).
+    sourceRefs:
+      - sourceId: src-verquvo-fda-overview
+        locator: 'ORIG-1 action, approval date'
+    reviewStatus: draft
+  - id: decision-kerendia-hf
+    identifier: 215341/S-009
+    rootIdentifier: '215341'
+    versionIds: [ver-kerendia]
+    jurisdiction: US
+    pathway: NDA
+    date: { value: '2025-07-11', precision: day }
+    changeType: indication
+    summary: Added the HF indication for LVEF >=40% (FINEARTS-HF); FDA action date precedes Bayer's 2025-07-14 announcement.
+    sourceRefs:
+      - sourceId: src-kerendia-fda-overview
+        locator: 'SUPPL-9 action, Efficacy-New Indication'
+    reviewStatus: draft
+
+specs:
+  - version: ver-camzyos
+    category: cardiac-myosin-inhibitors
+    source: src-camzyos-label
+    values:
+      drug-class: { value: Selective cardiac myosin inhibitor, loc: 'Label §12.1' }
+      route-dosing: { value: 'Oral; 2.5-15 mg daily, echo-guided titration q4-8wk', loc: 'Label §2.1' }
+      monitoring: { value: 'LVEF by echo (interrupt <50%); REMS; CYP2C19/3A4 interaction limits', loc: 'Label Boxed Warning; §5.1-5.3' }
+      indication-scope: { value: Symptomatic NYHA class II-III obstructive HCM to improve function/symptoms, loc: 'Label §1' }
+      pivotal-trials: { value: EXPLORER-HCM, loc: 'Label §14 Clinical Studies' }
+  - version: ver-myqorzo
+    category: cardiac-myosin-inhibitors
+    source: src-myqorzo-label
+    values:
+      drug-class: { value: Selective cardiac myosin inhibitor, loc: 'Label §12.1' }
+      route-dosing: { value: 'Oral; 5-20 mg daily, titrate 5 mg q2-8wk, echo-guided', loc: 'Label §2.1-2.2' }
+      monitoring: { value: 'LVEF by echo (decrease <50%, interrupt <40%); REMS; CYP2C9/3A4 interactions', loc: 'Label Boxed Warning; §5.1-5.3' }
+      indication-scope: { value: Symptomatic obstructive HCM to improve functional capacity and symptoms, loc: 'Label §1' }
+      pivotal-trials: { value: SEQUOIA-HCM, loc: 'Label §14 Clinical Studies' }
+  - version: ver-vyndaqel-vyndamax
+    category: attr-cm-drugs
+    source: src-vyndaqel-label
+    values:
+      drug-class: { value: TTR tetramer stabilizer, loc: 'Label §12.1' }
+      route-dosing: { value: 'Vyndaqel 80 mg or Vyndamax 61 mg orally once daily (not interchangeable)', loc: 'Label §2' }
+      monitoring: { value: 'No REMS or lab-monitoring program specified; caution with BCRP substrates', loc: 'Label (no §5); §7.1 Drug Interactions' }
+      indication-scope: { value: 'ATTR-CM (wild-type or hereditary): reduces CV mortality and hospitalization', loc: 'Label §1' }
+      pivotal-trials: { value: ATTR-ACT, loc: 'Label §14 Clinical Studies' }
+  - version: ver-attruby
+    category: attr-cm-drugs
+    source: src-attruby-label
+    values:
+      drug-class: { value: 'Near-complete TTR tetramer stabilizer (>=90%)', loc: 'Label §12.1' }
+      route-dosing: { value: 'Oral; 712 mg (two 356 mg tablets) twice daily', loc: 'Label §2.1' }
+      monitoring: { value: 'Serum creatinine/eGFR dip within ~4wk of initiation, generally reversible', loc: 'Label §6.1' }
+      indication-scope: { value: 'ATTR-CM (wild-type or variant): reduces CV death and CV hospitalization', loc: 'Label §1' }
+      pivotal-trials: { value: ATTRibute-CM, loc: 'Label §14 Clinical Studies' }
+  - version: ver-amvuttra
+    category: attr-cm-drugs
+    source: src-amvuttra-label
+    values:
+      drug-class: { value: 'TTR-silencing siRNA, GalNAc-conjugated', loc: 'Label §12.1' }
+      route-dosing: { value: '25 mg subcutaneous injection once every 3 months, HCP-administered', loc: 'Label §2.1-2.2' }
+      monitoring: { value: 'Serum vitamin A; supplement at RDA; refer to ophthalmology if symptomatic', loc: 'Label §5.1' }
+      indication-scope: { value: 'ATTR-CM: reduces CV mortality, CV hospitalizations, urgent HF visits', loc: 'Label §1.2' }
+      pivotal-trials: { value: HELIOS-B, loc: 'Label §14 Clinical Studies' }
+  - version: ver-onpattro
+    category: attr-cm-drugs
+    source: src-patisiran-crl
+    values:
+      indication-scope:
+        value: 'ATTR-CM not FDA-approved (CRL Oct 2023); label covers only hATTR-PN'
+        loc: 'Press release, regulatory update; cf. label §1 (no ATTR-CM indication)'
+        context: 'FDA stated APOLLO-B did not establish clinical meaningfulness for the cardiomyopathy indication despite meeting its primary/secondary endpoints; no subsequent resubmission has been approved as of this extraction.'
+      pivotal-trials: { value: APOLLO-B, loc: 'Press release, regulatory update' }
+  - version: ver-farxiga
+    category: [hfref-drugs, hfpef-drugs]
+    source: src-farxiga-label
+    values:
+      drug-class: { value: SGLT2 inhibitor, loc: 'Label §12.1' }
+      route-dosing: { value: 'Oral; 10 mg once daily (all HF indications)', loc: 'Label §2.3' }
+      monitoring: { value: 'Ketoacidosis risk; volume status/hypotension; genital mycotic infections', loc: 'Label §5.1-5.3' }
+      indication-scope: { value: 'HF: reduces CV death, HF hospitalization, urgent HF visits, any LVEF', loc: 'Label §1' }
+      pivotal-trials: { value: 'DAPA-HF; DELIVER', loc: 'Label §14 Clinical Studies' }
+  - version: ver-jardiance
+    category: [hfref-drugs, hfpef-drugs]
+    source: src-jardiance-label
+    values:
+      drug-class: { value: SGLT2 inhibitor, loc: 'Label §12.1' }
+      route-dosing: { value: 'Oral; 10 mg once daily (HF indications, any LVEF)', loc: 'Label §2.2' }
+      monitoring: { value: 'Volume status/renal function before start; genital mycotic infections', loc: 'Label §5.2-5.3' }
+      indication-scope: { value: 'HF: reduces CV death and HF hospitalization, regardless of LVEF', loc: 'Label §1' }
+      pivotal-trials: { value: 'EMPEROR-Reduced; EMPEROR-Preserved', loc: 'Label §14 Clinical Studies' }
+  - version: ver-entresto
+    category: [hfref-drugs, hfpef-drugs]
+    source: src-entresto-label
+    values:
+      drug-class: { value: 'Angiotensin receptor-neprilysin inhibitor (ARNI)', loc: 'Label §12.1' }
+      route-dosing: { value: 'Oral; start 49/51 mg BID, double at 2-4wk to target 97/103 mg BID', loc: 'Label §2.2' }
+      monitoring: { value: 'Serum potassium (hyperkalemia); renal function; angioedema', loc: 'Label §5.2, §5.4, §5.5' }
+      indication-scope: { value: 'Chronic HF; benefit most evident with LVEF below normal', loc: 'Label §1.1' }
+      pivotal-trials: { value: 'PARADIGM-HF; PARAGON-HF', loc: 'Label §14 Clinical Studies' }
+  - version: ver-verquvo
+    category: hfref-drugs
+    source: src-verquvo-label
+    values:
+      drug-class: { value: 'Soluble guanylate cyclase (sGC) stimulator', loc: 'Label §12.1' }
+      route-dosing: { value: 'Oral; start 2.5-5 mg/day with food, double q2wk to target 10 mg/day', loc: 'Label §2.1' }
+      monitoring: { value: 'Blood pressure (hypotension); hemoglobin (anemia); pregnancy test', loc: 'Label §5.1, §6.1' }
+      indication-scope: { value: 'Symptomatic chronic HFrEF (LVEF <45%) after HF hospitalization/IV diuretics', loc: 'Label §1' }
+      pivotal-trials: { value: VICTORIA, loc: 'Label §14 Clinical Studies' }
+  - version: ver-kerendia
+    category: hfpef-drugs
+    source: src-kerendia-label
+    values:
+      drug-class: { value: 'Nonsteroidal mineralocorticoid receptor antagonist (MRA)', loc: 'Label §12.1' }
+      route-dosing: { value: 'Oral; 20 or 40 mg once daily by baseline eGFR, retitrate at 4wk', loc: 'Label §2.3' }
+      monitoring: { value: 'Serum potassium and eGFR at 4wk and periodically; avoid grapefruit', loc: 'Label §2.3' }
+      indication-scope: { value: 'HF with LVEF >=40%: reduces CV death, HF hospitalization, urgent HF visits', loc: 'Label §1' }
+      pivotal-trials: { value: FINEARTS-HF, loc: 'Label §14 Clinical Studies' }
+  - version: ver-omecamtiv
+    category: hfref-drugs
+    source: src-omecamtiv-crl
+    values:
+      drug-class:
+        value: Selective small-molecule cardiac myosin activator
+        loc: 'Press release, mechanism description'
+        source: src-galactic-hf-nejm
+      indication-scope:
+        value: 'Investigational; FDA Complete Response Letter Feb 2023 (HFrEF, not approved)'
+        loc: 'Press release, FDA Complete Response Letter summary'
+        context: 'FDA held GALACTIC-HF alone insufficient for substantial evidence of effectiveness and asked for another trial; Cytokinetics has stated it has no plans to conduct one.'
+      pivotal-trials:
+        value: GALACTIC-HF
+        loc: 'NEJM primary publication'
+        source: src-galactic-hf-nejm

@@ -1,0 +1,934 @@
+# needs-fulltext:
+#   - attribute: delivery-sheath (ver-cardioband)
+#     note: >-
+#       Cardioband guide/delivery catheter French size was not disclosed in the reviewed
+#       peer-reviewed device-parade article (no FDA SSED/IFU exists; device is CE-marked only).
+#     url: https://eurointervention.pcronline.com/article/the-cardioband-transcatheter-direct-mitral-valve-annuloplasty-system
+#   - attribute: available-sizes (ver-cardioband)
+#     note: >-
+#       Source states "six sizes" but does not give the band-length/mm values; an Edwards IFU
+#       or CE technical file would be needed for exact dimensions.
+#     url: https://eurointervention.pcronline.com/article/the-cardioband-transcatheter-direct-mitral-valve-annuloplasty-system
+
+observedAt: '2026-09-23'
+
+sources:
+  # --- TriClip (P230007) ---
+  - id: src-triclip-pma
+    title: TriClip G4 System original PMA decision
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P230007
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2024-04-01', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P230007
+  - id: src-triclip-ifu
+    title: TriClip G4 System Instructions for Use (EL2140056)
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007C.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2024-03-28', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P230007
+  - id: src-triclip-g5-pma
+    title: TriClip G5 Delivery System process-change supplement decision
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P230007S005
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2024-12-31', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P230007/S005
+  - id: src-abbott-triclip-page
+    title: Abbott TriClip TEER System product/ordering page (US)
+    url: https://www.cardiovascular.abbott/us/en/hcp/products/structural-heart/transcatheter-valve-solutions/triclip.html
+    kind: manufacturer
+    publisher: Abbott
+    retrievedAt: '2026-09-23'
+    access: public
+
+  # --- MitraClip G4 / G5 (P100009 supplements) ---
+  - id: src-mitraclip-g4-pma
+    title: MitraClip G4 System design-change supplement decision
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S029
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2019-07-09', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P100009/S029
+  - id: src-mitraclip-g5-pma
+    title: MitraClip G5 / TriClip G5 Delivery System supplement decision
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S067
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2024-12-31', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P100009/S067
+  - id: src-mitraclip-g4-specs
+    title: 'MitraClip: Advancing Mitral Therapy for Your Patients (Abbott ANZ exec summary)'
+    url: https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/au/hcp/structural-heart/pdfs/mitraclip/Exec%20Summary%20-%20MitraClip%20G4%20v2.pdf
+    kind: manufacturer
+    publisher: Abbott
+    publishedAt: { value: '2021', precision: year }
+    retrievedAt: '2026-09-23'
+    access: public
+  - id: src-abbott-mitraclip-page
+    title: Abbott MitraClip TEER System product/ordering page (US)
+    url: https://www.cardiovascular.abbott/us/en/hcp/products/structural-heart/transcatheter-valve-solutions/mitraclip.html
+    kind: manufacturer
+    publisher: Abbott
+    retrievedAt: '2026-09-23'
+    access: public
+
+  # --- Edwards PASCAL Precision (P220003) ---
+  - id: src-pascal-pma
+    title: PASCAL Precision Transcatheter Valve Repair System original PMA decision
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P220003
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2022-09-14', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P220003
+  - id: src-pascal-ssed
+    title: PASCAL Precision system Summary of Safety and Effectiveness Data
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf22/P220003B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2022-09-14', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P220003
+  - id: src-pascal-ifu
+    title: PASCAL Precision system Labeling Part 2 (physician IFU and CLASP IID summary)
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf22/P220003D.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2022-09-14', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P220003
+
+  # --- Abbott Tendyne (P240042) ---
+  - id: src-tendyne-pma
+    title: Tendyne Transcatheter Mitral Valve System original PMA decision
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P240042
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2025-05-23', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P240042
+  - id: src-tendyne-ssed
+    title: Tendyne Transcatheter Mitral Valve System Summary of Safety and Effectiveness Data
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2025-05-23', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P240042
+  - id: src-tendyne-ifu
+    title: Tendyne Transcatheter Mitral Valve System Instructions for Use (ARTEN600354777)
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042D.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2025-05-23', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P240042
+
+  # --- Edwards SAPIEN M3 (P250019) ---
+  - id: src-sapienm3-pma
+    title: SAPIEN M3 Transcatheter Mitral Valve Replacement System original PMA decision
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250019
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2025-12-22', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P250019
+  - id: src-sapienm3-ssed
+    title: SAPIEN M3 system Summary of Safety and Effectiveness Data
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250019B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2025-12-22', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P250019
+  - id: src-sapienm3-ifu
+    title: SAPIEN M3 system Labeling Part 2 (physician IFU)
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250019D.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2025-12-22', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P250019
+  - id: src-sapienm3-s002-pma
+    title: Edwards SAPIEN M3 Transcatheter Heart Valve (sizes 20/23/26/29 mm) process-change supplement
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250019S002
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2026-03-11', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P250019/S002
+
+  # --- Edwards EVOQUE (P230013) ---
+  - id: src-evoque-pma
+    title: Edwards EVOQUE Tricuspid Valve Replacement System original PMA decision
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P230013
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2024-02-01', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P230013
+  - id: src-evoque-ssed
+    title: EVOQUE system Summary of Safety and Effectiveness Data
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230013B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2024-02-01', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P230013
+  - id: src-evoque-ifu
+    title: EVOQUE system Labeling Part 2 (physician IFU)
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230013C.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2024-02-01', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: P230013
+
+  # --- Edwards Cardioband (CE mark only; no US PMA) ---
+  - id: src-cardioband-review
+    title: The Cardioband transcatheter direct mitral valve annuloplasty system
+    url: https://eurointervention.pcronline.com/article/the-cardioband-transcatheter-direct-mitral-valve-annuloplasty-system
+    kind: publication
+    publisher: EuroIntervention
+    publishedAt: { value: '2015', precision: year }
+    retrievedAt: '2026-09-23'
+    access: public
+
+  # --- Versa Vascular adapTR (investigational; first-in-human) ---
+  - id: src-adaptr-fih
+    title: First-in-Human Use of a Novel Dual-Mechanism Transcatheter Tricuspid Repair Device
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12926008/
+    kind: publication
+    publisher: JACC Case Reports
+    publishedAt: { value: '2026-01-14', precision: day }
+    retrievedAt: '2026-09-23'
+    access: public
+
+  # --- Medtronic Intrepid (investigational; transseptal EFS protocol) ---
+  - id: src-intrepid-protocol
+    title: 'Early Feasibility Study of the Intrepid TMVR Transseptal System: Clinical Investigation Plan'
+    url: https://cdn.clinicaltrials.gov/large-docs/40/NCT02322840/Prot_SAP_001.pdf
+    kind: registry
+    publisher: Medtronic / ClinicalTrials.gov
+    retrievedAt: '2026-09-23'
+    access: public
+    identifier: NCT02322840
+
+families:
+  - id: family-pascal
+    name: PASCAL
+    manufacturer: Edwards Lifesciences
+    entityIds:
+      - dev-pascal
+    conditionIds:
+      - cond-mr
+    description: PASCAL and the narrower-profile PASCAL Ace are a single FDA-cleared system, not separate product generations.
+  - id: family-tendyne
+    name: Tendyne
+    manufacturer: Abbott
+    entityIds:
+      - dev-tendyne
+    conditionIds:
+      - cond-mr
+    description: FDA approval is scoped to severe mitral annular calcification (MAC); broader CE-marked MR use is a separate regulatory scope.
+  - id: family-sapien-m3
+    name: SAPIEN M3
+    manufacturer: Edwards Lifesciences
+    entityIds:
+      - dev-sapien-m3
+    conditionIds:
+      - cond-mr
+    description: Distinct dock-plus-balloon-expandable-valve platform from the aortic SAPIEN family; track the dock and valve as one system.
+  - id: family-intrepid
+    name: Intrepid
+    manufacturer: Medtronic
+    entityIds:
+      - dev-intrepid
+    conditionIds:
+      - cond-mr
+    description: Investigational; the transapical (APOLLO) and newer transfemoral transseptal delivery generations should be tracked separately as evidence accrues.
+  - id: family-evoque
+    name: EVOQUE
+    manufacturer: Edwards Lifesciences
+    entityIds:
+      - dev-evoque
+    conditionIds:
+      - cond-tr
+    description: A 56-mm valve was used late in the TRISCEND II trial but is outside the original PMA scope.
+  - id: family-adaptr
+    name: adapTR
+    manufacturer: Versa Vascular
+    entityIds:
+      - dev-adaptr
+    conditionIds:
+      - cond-tr
+    description: Investigational dual-mechanism (annular stabilization plus leaflet enhancement) tricuspid repair device; public evidence is a single first-in-human case.
+  - id: family-cardioband
+    name: Cardioband
+    manufacturer: Edwards Lifesciences
+    entityIds:
+      - dev-cardioband
+    conditionIds:
+      - cond-mr
+      - cond-tr
+    description: CE-marked direct annuloplasty system for mitral and (later) tricuspid use; no US PMA/IDE approval identified.
+
+versions:
+  - id: ver-mitraclip-g4
+    familyId: family-mitraclip
+    name: MitraClip G4
+    kind: device
+    clinicalRole: treats
+    summary: Design-change generation adding a wider clip arm (NTW/XTW) and independent, simultaneous gripper actuation over NT/NTR/XTR.
+    sourceRefs:
+      - sourceId: src-mitraclip-g4-pma
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: ver-mitraclip-g5
+    familyId: family-mitraclip
+    name: MitraClip G5
+    kind: device
+    clinicalRole: treats
+    summary: Delivery-system handle and IFU ergonomics update built on the unchanged G4 implant; approved together with TriClip G5.
+    sourceRefs:
+      - sourceId: src-mitraclip-g5-pma
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: ver-triclip-g5
+    familyId: family-triclip
+    name: TriClip G5
+    kind: device
+    clinicalRole: treats
+    summary: Delivery-system handle and IFU ergonomics update built on the unchanged G4 implant; approved together with MitraClip G5.
+    sourceRefs:
+      - sourceId: src-triclip-g5-pma
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: ver-pascal-precision
+    familyId: family-pascal
+    name: PASCAL Precision
+    kind: device
+    clinicalRole: treats
+    summary: Central-spacer TEER system with independently actuated clasps; FDA-approved for degenerative MR on CLASP IID.
+    sourceRefs:
+      - sourceId: src-pascal-pma
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: ver-tendyne
+    familyId: family-tendyne
+    name: Tendyne
+    kind: device
+    clinicalRole: treats
+    summary: Transapical TMVR with an apical-tethered outer frame; FDA-approved specifically for severe MAC unsuitable for surgery/TEER.
+    sourceRefs:
+      - sourceId: src-tendyne-pma
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: ver-sapien-m3
+    familyId: family-sapien-m3
+    name: SAPIEN M3
+    kind: device
+    clinicalRole: treats
+    summary: Transseptal dock-plus-balloon-expandable-valve TMVR system; FDA-approved for MR and MAC-associated mitral valve dysfunction.
+    sourceRefs:
+      - sourceId: src-sapienm3-pma
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: ver-intrepid
+    familyId: family-intrepid
+    name: Intrepid
+    kind: device
+    clinicalRole: treats
+    summary: Investigational self-expanding dual-stent TMVR with a conformable outer fixation ring; originally transapical (APOLLO), now also studied via a transfemoral transseptal delivery system.
+    sourceRefs:
+      - sourceId: src-intrepid-protocol
+        locator: Title page and Section 6.1 Product Description
+    reviewStatus: draft
+  - id: ver-evoque
+    familyId: family-evoque
+    name: EVOQUE
+    kind: device
+    clinicalRole: treats
+    summary: Self-expanding TTVR with anchors that engage the native tricuspid leaflets; FDA-approved on TRISCEND II.
+    sourceRefs:
+      - sourceId: src-evoque-pma
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: ver-adaptr
+    familyId: family-adaptr
+    name: adapTR Leaflet Enhancement System
+    kind: device
+    clinicalRole: treats
+    summary: Investigational right-atrium-only device combining a conformable annular-stabilizing frame with a central disk; evidence limited to a single first-in-human case.
+    sourceRefs:
+      - sourceId: src-adaptr-fih
+        locator: Case Summary
+    reviewStatus: draft
+  - id: ver-cardioband
+    familyId: family-cardioband
+    name: Cardioband
+    kind: device
+    clinicalRole: treats
+    summary: CE-marked adjustable direct annuloplasty band anchored along the annulus; no US PMA/IDE decision identified.
+    sourceRefs:
+      - sourceId: src-cardioband-review
+        locator: Device description
+    reviewStatus: draft
+
+decisions:
+  - id: decision-triclip-g4-initial
+    identifier: P230007
+    rootIdentifier: P230007
+    versionIds:
+      - ver-triclip-g4
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2024-04-01'
+      precision: day
+    changeType: initial_authorization
+    summary: Initial US authorization for tricuspid TEER, on the TRILUMINATE Pivotal trial.
+    sourceRefs:
+      - sourceId: src-triclip-pma
+        locator: Decision Date and Approval Order Statement
+    reviewStatus: draft
+  - id: decision-triclip-g5
+    identifier: P230007/S005
+    rootIdentifier: P230007
+    versionIds:
+      - ver-triclip-g5
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2024-12-31'
+      precision: day
+    changeType: design
+    summary: Approval of the TriClip G5 (and MitraClip G5) Delivery System handle redesign and IFU simplification; implant unchanged from G4.
+    sourceRefs:
+      - sourceId: src-triclip-g5-pma
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: decision-mitraclip-g4
+    identifier: P100009/S029
+    rootIdentifier: P100009
+    versionIds:
+      - ver-mitraclip-g4
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2019-07-09'
+      precision: day
+    changeType: design
+    summary: Approval of design changes including a wider clip arm (NTW/XTW) and independent, simultaneous gripper actuation.
+    sourceRefs:
+      - sourceId: src-mitraclip-g4-pma
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: decision-mitraclip-g5
+    identifier: P100009/S067
+    rootIdentifier: P100009
+    versionIds:
+      - ver-mitraclip-g5
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2024-12-31'
+      precision: day
+    changeType: design
+    summary: Approval of the MitraClip G5 (and TriClip G5) Delivery System handle redesign and IFU simplification; implant unchanged from G4.
+    sourceRefs:
+      - sourceId: src-mitraclip-g5-pma
+        locator: Approval Order Statement
+    reviewStatus: draft
+  - id: decision-pascal-precision
+    identifier: P220003
+    rootIdentifier: P220003
+    versionIds:
+      - ver-pascal-precision
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2022-09-14'
+      precision: day
+    changeType: initial_authorization
+    summary: Initial US authorization for degenerative (primary) MR in prohibitive-surgical-risk patients, on CLASP IID.
+    sourceRefs:
+      - sourceId: src-pascal-pma
+        locator: Decision Date and Approval Order Statement
+    reviewStatus: draft
+  - id: decision-tendyne
+    identifier: P240042
+    rootIdentifier: P240042
+    versionIds:
+      - ver-tendyne
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2025-05-23'
+      precision: day
+    changeType: initial_authorization
+    summary: Initial US authorization, scoped to severe mitral valve dysfunction associated with severe MAC unsuitable for surgery/TEER, on the SUMMIT Severe MAC cohort.
+    sourceRefs:
+      - sourceId: src-tendyne-pma
+        locator: Decision Date and Approval Order Statement
+    reviewStatus: draft
+  - id: decision-sapien-m3
+    identifier: P250019
+    rootIdentifier: P250019
+    versionIds:
+      - ver-sapien-m3
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2025-12-22'
+      precision: day
+    changeType: initial_authorization
+    summary: Initial US authorization for MR and for MAC-associated mitral valve dysfunction, on the ENCIRCLE trial.
+    sourceRefs:
+      - sourceId: src-sapienm3-pma
+        locator: Decision Date and Approval Order Statement
+    reviewStatus: draft
+  - id: decision-evoque
+    identifier: P230013
+    rootIdentifier: P230013
+    versionIds:
+      - ver-evoque
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: '2024-02-01'
+      precision: day
+    changeType: initial_authorization
+    summary: Initial US authorization for tricuspid valve replacement in severe TR, on TRISCEND II.
+    sourceRefs:
+      - sourceId: src-evoque-pma
+        locator: Decision Date and Approval Order Statement
+    reviewStatus: draft
+
+specs:
+  - version: ver-triclip-g4
+    category: [tricuspid-teer]
+    source: src-triclip-ifu
+    values:
+      frame-material:
+        value: Cobalt-chromium alloy clip arms/body; nitinol grippers
+        source: src-triclip-ifu
+        loc: 'PDF p.5, Section 3.0 Contraindications (implant-component hypersensitivity)'
+      grasping-mechanism:
+        value: Independent or simultaneous leaflet grasping (implant identical to MitraClip G4)
+        basis: derived
+        loc: 'PDF p.4, Section V Device Description ("identical to...MitraClip G4 implant...in formulation, geometry")'
+        source: src-triclip-ssed
+        context: TriClip G4 SSED states the implant is identical to the commercially available MitraClip G4 implant; MitraClip G4's own design-change approval (P100009/S029) added independent, simultaneous gripper actuation.
+      available-sizes:
+        value: 'Four sizes: NT, NTW, XT, XTW'
+        loc: 'PDF p.4, Table 2'
+        context: 'Grasping width (min): NT/NTW 17 mm, XT/XTW 22 mm. Implant width (nominal): NT/NTW 20 mm, XT/XTW 25 mm. Arm width (max): NT/XT 4 mm, NTW/XTW 6 mm. Max arm (coaptation) length: NT/NTW 9 mm, XT/XTW 12 mm.'
+      delivery-sheath:
+        value: Guide catheter 8.4 mm (25 Fr); delivery catheter 5.3 mm (16 Fr)
+        loc: 'PDF p.4, Table 2'
+      access-route:
+        value: Transfemoral venous to right atrium; no transseptal puncture
+        loc: 'PDF p.3, Device Description (Steerable Guide Catheter)'
+      imaging-guidance:
+        value: Fluoroscopy and transesophageal echocardiography (TEE)
+        loc: 'PDF p.5, Section 5.0/Warnings (implantation technique)'
+      indication-scope:
+        value: Symptomatic severe TR despite OMT, intermediate-or-greater risk
+        loc: 'PDF p.1, Section II Indications for Use'
+        source: src-triclip-ssed
+        context: OMT = optimal medical therapy; full wording is longer (multidisciplinary heart-team determination that TEER is expected to reduce TR to moderate or less).
+      pivotal-trials:
+        value: TRILUMINATE Pivotal (NCT03904147)
+        loc: 'PDF p.10, Section X Summary of Primary Clinical Study'
+        source: src-triclip-ssed
+
+  - version: ver-triclip-g5
+    category: [tricuspid-teer]
+    source: src-triclip-g5-pma
+    values:
+      device-design:
+        value: Same G4 implant; redesigned delivery handle, simplified IFU
+        loc: Approval Order Statement
+        context: FDA approval order describes modifications to the Delivery System Handle and simplification of IFU procedural steps to improve ergonomics/usability.
+      available-sizes:
+        value: NT, NTW, XT, XTW (unchanged from G4 per approval order)
+        basis: derived
+        loc: Approval Order Statement
+        context: FDA states the change is limited to the Delivery System Handle and IFU procedural steps, not the implant.
+
+  - version: ver-mitraclip-g4
+    category: [mitral-teer]
+    source: src-mitraclip-g4-specs
+    values:
+      grasping-mechanism:
+        value: Independent and simultaneous gripper (leaflet) actuation
+        source: src-mitraclip-g4-pma
+        loc: Approval Order Statement
+        context: Added over the prior NT/NTR/XTR generation per the G4 design-change approval order.
+      available-sizes:
+        value: 'Four sizes: NT, NTW, XT, XTW'
+        loc: 'PDF p.7 (printed pp.12-13), "MitraClip Device (Implant)" figure'
+        context: 'Arm length: NT/NTW 15 mm, XT/XTW 18 mm (standard vs long-length arm). Arm width: NT/XT 4 mm, NTW/XTW 6 mm.'
+      delivery-sheath:
+        value: 25 Fr steerable guide catheter
+        loc: 'PDF p.7 (printed pp.12-13), "Steerable Guide Catheter"'
+      access-route:
+        value: Transfemoral venous, transseptal (left atrium)
+        loc: 'PDF p.7 (printed pp.12-13), "Clip Delivery System"'
+      imaging-guidance:
+        value: Fluoroscopy and transesophageal echocardiography (TEE)
+        loc: 'PDF p.7 (printed pp.12-13), "Equipment"'
+      indication-scope:
+        value: Degenerative MR and secondary MR in heart failure on GDMT
+        basis: derived
+        loc: Approval Order Statement
+        source: src-mitraclip-g4-pma
+        context: Prohibitive-surgical-risk degenerative MR plus GDMT-refractory secondary MR; carried over unchanged from the P100009 original approval and the S028 secondary-MR expansion, since S029 was a design-change supplement, not an indication change.
+
+  - version: ver-mitraclip-g5
+    category: [mitral-teer]
+    source: src-mitraclip-g5-pma
+    values:
+      device-design:
+        value: Same G4 implant; redesigned delivery handle, simplified IFU
+        loc: Approval Order Statement
+        context: Approved together with TriClip G5; FDA approval order describes handle and IFU procedural-step changes to improve ergonomics/usability.
+      available-sizes:
+        value: NT, NTW, XT, XTW (unchanged from G4)
+        basis: derived
+        loc: Approval Order Statement
+        context: FDA states the change is limited to the Delivery System Handle and IFU procedural steps, not the implant; Abbott's US ordering page lists catalog numbers CDS0801-NT/NTW/XT/XTW and Steerable Guide Catheter SGC0801.
+      access-route:
+        value: Transfemoral venous, transseptal (left atrium)
+        basis: derived
+        loc: Approval Order Statement
+        context: Access route unchanged from G4; not restated in this handle/ergonomics supplement.
+
+  - version: ver-pascal-precision
+    category: [mitral-teer]
+    source: src-pascal-ssed
+    values:
+      device-design:
+        value: Central spacer plus paddles and independently actuated clasps
+        loc: 'PDF p.2, Section V Device Description'
+        context: Spacer fills the regurgitant orifice; broad paddles and clasps capture the leaflets.
+      frame-material:
+        value: Nitinol spacer, paddles, and clasps
+        loc: 'PDF p.2, Section V Device Description'
+      fabric-cover:
+        value: Polyethylene terephthalate (PET) cloth over the spacer/paddles/clasps
+        loc: 'PDF p.2, Section V Device Description'
+      available-sizes:
+        value: Two implant profiles, PASCAL and the narrower-profile PASCAL Ace
+        loc: 'PDF p.2, Section V Device Description; Figure 2'
+      delivery-sheath:
+        availability: not_publicly_disclosed
+        loc: 'SSED (PDF, 40pp) and Labeling Part 2 (PDF, 38pp) checked; no guide-sheath French size or catheter OD stated'
+        source: src-pascal-ifu
+      grasping-mechanism:
+        value: Independent leaflet capture (clasps move separately or together)
+        source: src-pascal-ifu
+        loc: 'PDF p.8, Section 8 Implant procedure steps'
+        context: Each clasp slider can be advanced/retracted separately (clasp lock disengaged) or together with the other clasp (clasp lock engaged).
+      access-route:
+        value: Transfemoral venous, transseptal (left atrium)
+        source: src-pascal-ifu
+        loc: 'PDF p.7, Implant procedure (Access step)'
+      imaging-guidance:
+        value: Transesophageal echocardiography (TEE, 2D and 3D) and fluoroscopy
+        source: src-pascal-ifu
+        loc: 'PDF p.5, Section on required equipment/capabilities'
+      indication-scope:
+        value: Degenerative (primary) MR, prohibitive surgical risk
+        loc: 'PDF p.1, Section II Indications for Use'
+      pivotal-trials:
+        value: CLASP IID (NCT03706833)
+        source: src-pascal-ifu
+        loc: 'PDF p.10, CLASP IID trial summary'
+
+  - version: ver-tendyne
+    category: [mitral-replacement]
+    source: src-tendyne-ssed
+    values:
+      expansion-mechanism:
+        value: Self-expanding
+        loc: 'PDF p.3, Section V Device Description'
+      frame-material:
+        value: Nitinol inner and outer (fixation) frames; apical tether
+        loc: 'PDF p.3, Section V Device Description'
+      leaflet-material:
+        value: Porcine pericardium
+        source: src-tendyne-ifu
+        loc: 'PDF p.4, Table 1 header / Device Description'
+      anchoring-mechanism:
+        value: UHMWPE tether secured to an epicardial apical pad
+        loc: 'PDF p.3, Section V Device Description'
+        context: Ultra-high-molecular-weight polyethylene tether; pad tension adjusted, then tether cut to release the delivery system.
+      available-sizes:
+        value: 'Outer diameters 29, 33, 35, 37, 39, 41 mm; SP or LP profile'
+        source: src-tendyne-ifu
+        loc: 'PDF p.4, Table 1'
+        context: SP = Standard Profile, LP = Low Profile. 23 model/annulus-fit sub-sizes (A/B/C/S/M/L) in Table 1, each matched to a native-annulus AP and perimeter range.
+      anatomy-range-summary:
+        value: Native annulus AP 26.4-36.8 mm / perimeter 96-143 mm across sub-sizes
+        source: src-tendyne-ifu
+        loc: 'PDF p.4, Table 1'
+      delivery-sheath:
+        availability: not_publicly_disclosed
+        loc: 'IFU (PDF, 64pp) checked; transapical delivery sheath/dilator described without a French size or measured OD'
+        source: src-tendyne-ifu
+      access-route:
+        value: Transapical (left ventricular apex)
+        loc: 'PDF p.1, Section II Indications for Use / Device Description'
+      imaging-guidance:
+        value: Transesophageal echocardiography (TEE) and fluoroscopy
+        source: src-tendyne-ifu
+        loc: 'IFU implant procedure steps'
+      indication-scope:
+        value: Severe mitral valve dysfunction (MR/MS) associated with severe MAC
+        loc: 'PDF p.1, Section II Indications for Use'
+        context: Moderate-to-severe/severe MR, severe MS, or moderate MR with moderate-or-greater MS, associated with severe MAC, unsuitable for surgery or TEER.
+      post-implant-therapy:
+        value: Long-term anticoagulation recommended if thromboembolism risk factors
+        source: src-tendyne-ifu
+        loc: 'PDF p.15, Patient counseling information'
+        context: 'General bioprosthetic-valve guidance ("unless contraindicated"), not a fixed protocol duration.'
+      pivotal-trials:
+        value: SUMMIT trial, Severe MAC cohort (IDE G140240)
+        loc: 'PDF p.12, Section X Summary of Primary Clinical Study'
+
+  - version: ver-sapien-m3
+    category: [mitral-replacement]
+    source: src-sapienm3-ssed
+    values:
+      expansion-mechanism:
+        value: Balloon-expandable valve within a self-expanding nitinol encircling dock
+        loc: 'PDF p.2, Section V Device Description'
+      frame-material:
+        value: Cobalt-chromium valve frame; nitinol dock (PET-covered braid)
+        loc: 'PDF p.2, Section V Device Description'
+      leaflet-material:
+        value: Bovine pericardium
+        loc: 'PDF p.2, Section V Device Description'
+      tissue-treatment:
+        value: Carpentier-Edwards ThermaFix process
+        loc: 'PDF p.2, Section V Device Description'
+      sealing-design:
+        value: PET inner skirt, full-frame outer skirt
+        loc: 'PDF p.2, Section V Device Description'
+        context: ePTFE covering the frame inflow/outflow.
+      anchoring-mechanism:
+        value: Nitinol dock encircles/cinches native leaflets before valve deployment
+        loc: 'PDF p.2, Section V Device Description'
+      available-sizes:
+        value: '20, 23, 26, 29 mm'
+        source: src-sapienm3-s002-pma
+        loc: Device field
+      delivery-sheath:
+        value: Edwards 23F guide sheath; Commander M delivery system
+        loc: 'PDF p.2-3, Section V Device Description'
+      access-route:
+        value: Transfemoral venous, transseptal, through 23F guide sheath
+        loc: 'PDF p.16, Clinical study procedural description'
+      imaging-guidance:
+        value: Transesophageal echocardiography (TEE) and fluoroscopy
+        basis: derived
+        loc: 'PDF p.2-3, Section V Device Description (delivery-system positioning knobs); IFU procedure steps'
+        source: src-sapienm3-ifu
+      indication-scope:
+        value: Symptomatic moderate-to-severe/severe MR, or MAC-associated MV dysfunction
+        loc: 'PDF p.1, Section II Indications for Use'
+        context: Both indications require the patient to be unsuitable for surgery or TEER per multidisciplinary heart team.
+      post-implant-therapy:
+        value: Anticoagulation per physician discretion, minimum 6 months
+        source: src-sapienm3-ifu
+        loc: 'PDF p.5, Precautions'
+        context: Failure to anticoagulate/bridge appropriately risks valve thrombosis.
+      pivotal-trials:
+        value: ENCIRCLE trial, Main Cohort (IDE G170152)
+        loc: 'PDF p.17, Section X Summary of Primary Clinical Study'
+
+  - version: ver-intrepid
+    category: [mitral-replacement]
+    source: src-intrepid-protocol
+    values:
+      expansion-mechanism:
+        value: Self-expanding
+        loc: 'PDF p.21, Section 6.1 Product Description'
+      frame-material:
+        value: Inner nitinol stent; isolated outer nitinol fixation ring
+        loc: 'PDF p.21, Section 6.1 Product Description'
+        context: A nitinol-reinforced polyester atrial-brim skirt is structurally independent of both.
+      leaflet-material:
+        value: Bovine pericardium
+        loc: 'PDF p.21, Section 6.1 Product Description'
+      sealing-design:
+        value: Woven polyester valve fabric and atrial-brim skirt
+        loc: 'PDF p.21, Section 6.1 Product Description'
+      anchoring-mechanism:
+        value: Outer fixation ring conforms to and engages the annulus
+        loc: 'PDF p.21, Section 6.1 Product Description'
+        context: Mechanically isolated from the inner valve stent so annular loading does not distort the leaflets.
+      delivery-sheath:
+        availability: not_publicly_disclosed
+        loc: 'Clinical Investigation Plan (PDF, 159pp, pp.1-45 reviewed) checked; transfemoral sheath/dilator kit described without a French size'
+      access-route:
+        value: Investigational transfemoral transseptal (left atrium)
+        loc: 'PDF p.1 Title page; PDF p.21, Section 6.1 Product Description'
+        context: Earlier device generation used transapical access (APOLLO trial).
+      imaging-guidance:
+        value: Fluoroscopy and echocardiography
+        loc: 'PDF p.21, Section 6.1 Product Description'
+      indication-scope:
+        value: 'Investigational: moderate-severe/severe MR, ineligible for surgery'
+        loc: 'PDF p.11, Indication under investigation'
+      pivotal-trials:
+        value: APOLLO (transapical, ongoing); separate transseptal EFS protocol
+        loc: 'PDF p.1 Title page; PDF p.11, Investigation Purpose'
+        context: APOLLO is the Intrepid transapical pivotal program described in existing graph data; this protocol (NCT02322840) is a distinct transfemoral transseptal early feasibility study. No FDA decision has been identified for either generation.
+
+  - version: ver-evoque
+    category: [tricuspid-replacement]
+    source: src-evoque-ssed
+    values:
+      expansion-mechanism:
+        value: Self-expanding
+        loc: 'PDF p.2, Section V Device Description'
+      frame-material:
+        value: Self-expanding nitinol frame with an integrated anchoring system
+        loc: 'PDF p.2, Section V Device Description'
+      leaflet-material:
+        value: Bovine pericardium (28 mm trileaflet valve)
+        loc: 'PDF p.2, Section V Device Description'
+      tissue-treatment:
+        value: Glutaraldehyde fixation, proprietary Thermafix process
+        loc: 'PDF p.2, Section V Device Description'
+      sealing-design:
+        value: Intra-annular fabric skirt
+        loc: 'PDF p.2, Section V Device Description'
+      anchoring-mechanism:
+        value: Nitinol anchors capture the free edge of all 3 native leaflets
+        loc: 'PDF p.2, Section V Device Description'
+        context: Anchors extend between the subvalvular chordae to engage the septal, anterior, and posterior tricuspid leaflets.
+      available-sizes:
+        value: 44, 48, 52 mm outer frame diameter
+        loc: 'PDF p.2, Section V Device Description'
+        context: A 56-mm valve was used late in TRISCEND II enrollment but is outside this PMA's scope.
+      anatomy-range-summary:
+        value: Perimeter-derived annulus diameter approx. 36.5-53.5 mm
+        source: src-evoque-ifu
+        loc: 'PDF p.2, Valve size recommendation table'
+        context: Range spans the 44/48/52 mm sizes across systole/diastole.
+      delivery-sheath:
+        value: 28 Fr delivery-system OD; 24/28/33 Fr dilator kit
+        source: src-evoque-ifu
+        loc: 'PDF p.2, Delivery System / Dilator Kit description'
+      access-route:
+        value: Transfemoral venous (right atrium); no transseptal puncture
+        source: src-evoque-ifu
+        loc: 'PDF p.2, Delivery System description'
+      imaging-guidance:
+        value: TEE and fluoroscopy, with CT-based sizing
+        source: src-evoque-ifu
+        loc: 'IFU precautions and sizing sections'
+      indication-scope:
+        value: Symptomatic severe TR despite OMT, heart-team appropriate for replacement
+        loc: 'PDF p.1, Section II Indications for Use'
+        context: OMT = optimal medical therapy.
+      post-implant-therapy:
+        value: Anticoagulant/antiplatelet therapy per physician discretion
+        source: src-evoque-ifu
+        loc: 'PDF p.3, Warnings'
+        context: Per current guidelines; no fixed protocol duration stated.
+      pivotal-trials:
+        value: TRISCEND II (IDE G190289)
+        loc: 'PDF p.13, Section X Summary of Primary Clinical Study'
+
+  - version: ver-adaptr
+    category: [tricuspid-replacement]
+    source: src-adaptr-fih
+    values:
+      frame-material:
+        value: Conformable nitinol right-atrial frame with anchoring barbs
+        loc: Device Description / Figure 1
+        context: Frame is covered by a textile atrial-skirt ingrowth matrix; the report does not identify the fabric polymer.
+      anchoring-mechanism:
+        value: Barbs engage right-atrial tissue only; no ventricular contact
+        loc: Case Summary (device description paragraph)
+        context: Device sits entirely in the right atrium and does not cross the septum.
+      available-sizes:
+        value: Single configuration reported (22 mm central disk)
+        loc: Case Summary; Discussion
+        context: Additional sizes/shapes are planned per the Discussion section; only one first-in-human configuration is public.
+      delivery-sheath:
+        value: 26 Fr delivery catheter (26-F DrySeal Flex introducer)
+        loc: Case Summary (procedure description)
+      access-route:
+        value: Transfemoral venous (right atrium); no septal crossing
+        loc: Case Summary (procedure description)
+      imaging-guidance:
+        value: 3D multiplanar TEE and fluoroscopy; CT for sizing/follow-up
+        loc: Case Summary (procedure description); Figures 2-5
+      indication-scope:
+        value: 'Investigational: high-risk isolated functional TR, single case'
+        loc: Case Summary
+        context: Anatomy unsuitable for other transcatheter tricuspid valve intervention (TTVI) options in this patient.
+      post-implant-therapy:
+        value: Anticoagulation for at least 6 months in this case
+        loc: Case Summary (post-procedure course)
+        context: Single-case protocol, not a labeled regimen.
+
+  - version: ver-cardioband
+    category: [transcatheter-annuloplasty]
+    source: src-cardioband-review
+    values:
+      device-design:
+        value: Adjustable band anchored trigone-to-trigone, cinched under echo
+        loc: Device description / Procedural details
+        context: Sleeve is anchored along the posterior mitral annulus, then the cinching mechanism reduces annular dimension on the beating heart.
+      fabric-cover:
+        value: Standard polyester fabric sleeve
+        loc: Device description
+      anchoring-mechanism:
+        value: Multiple stainless-steel anchors screwed sequentially along the annulus
+        loc: Device description
+      available-sizes:
+        value: Six implant sizes to cover different annulus sizes
+        loc: Procedural details (Implant sizes)
+      access-route:
+        value: Transfemoral venous, transseptal (left atrium), via the fossa ovalis
+        loc: Procedural details (Delivery method / Access)
+      imaging-guidance:
+        value: Echocardiography (beating-heart TEE guidance)
+        loc: Procedural details
+      indication-scope:
+        value: Mitral annular reduction (functional MR)
+        context: CE-marked, no identified US authorization.
+        basis: derived
+        loc: Article scope (mitral Cardioband); cross-checked against FDA PMA database (no listing found)

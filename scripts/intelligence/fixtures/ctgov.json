@@ -1,0 +1,27 @@
+{
+  "protocolSection": {
+    "identificationModule": {
+      "nctId": "NCT99999999",
+      "briefTitle": "Synthetic Structural Heart Study",
+      "officialTitle": "Synthetic Fixture for Local Pipeline Testing"
+    },
+    "statusModule": {
+      "overallStatus": "RECRUITING",
+      "startDateStruct": { "date": "2099-01", "type": "ESTIMATED" },
+      "primaryCompletionDateStruct": { "date": "2100-01", "type": "ESTIMATED" },
+      "completionDateStruct": { "date": "2100-06", "type": "ESTIMATED" },
+      "studyFirstSubmitDate": "2098-12-01",
+      "studyFirstPostDateStruct": { "date": "2098-12-10" }
+    },
+    "designModule": {
+      "studyType": "INTERVENTIONAL",
+      "enrollmentInfo": { "count": 120, "type": "ESTIMATED" }
+    },
+    "conditionsModule": { "conditions": ["Synthetic Aortic Valve Disease"] },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        { "measure": "Synthetic primary endpoint", "description": "No clinical meaning.", "timeFrame": "1 year" }
+      ]
+    }
+  }
+}

@@ -1,22 +1,106 @@
 {
   "meta": {
-    "generatedAt": "2026-09-19T17:04:27.905Z",
-    "lastUpdated": "2026-08-15",
+    "generatedAt": "2026-09-24T05:17:27.235Z",
+    "lastUpdated": "2026-09-23",
     "counts": {
       "condition": 16,
-      "device": 34,
-      "pharmaceutical": 12,
+      "device": 36,
+      "pharmaceutical": 14,
       "procedure": 7,
       "digital": 2,
-      "company": 27,
-      "trial": 57
+      "company": 29,
+      "trial": 59
     },
-    "draftCount": 16,
-    "total": 155,
-    "newsCount": 61,
-    "latestNewsDate": "2026-09-12"
+    "draftCount": 24,
+    "total": 163,
+    "newsCount": 78,
+    "latestNewsDate": "2026-09-23"
   },
   "news": [
+    {
+      "id": "news-2026-09-23-acoramidis-real-world-study-shows-benefit-vs-tafamidis",
+      "publishedAt": "2026-09-23",
+      "title": "Acoramidis Shows Real-World Benefit Versus Tafamidis in ATTR-CM",
+      "summary": "A peer-reviewed U.S. claims-data study comparing acoramidis (170 patients) with tafamidis (448 patients) in ATTR-CM found a 34% lower risk of a composite clinical-worsening endpoint (diuretic intensification, HF hospitalization, or death) with acoramidis, and a 43% lower risk of diuretic intensification alone. BridgeBio, which markets acoramidis, sponsored the analysis and cautioned that administrative claims data capture cardiac biomarkers poorly and that the 4.6-month average follow-up is short given acoramidis' recent approval.",
+      "sourceName": "BridgeBio Pharma",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/09/23/3367401/0/en/acoramidis-demonstrates-real-world-benefit-versus-tafamidis-in-attr-cm-reducing-risk-of-clinical-worsening.html",
+      "topicTags": [
+        "ATTR-CM",
+        "real-world evidence",
+        "pharmaceutical"
+      ],
+      "relevantNodeIds": [
+        "rx-acoramidis",
+        "rx-tafamidis",
+        "cond-attr-cm"
+      ]
+    },
+    {
+      "id": "news-2026-09-22-corcym-memo-4d-curve-first-in-human-implant-mitral-annuloplasty",
+      "publishedAt": "2026-09-22",
+      "title": "Corcym reports first-in-human implant of Memo 4D Curve, an open-configuration mitral annuloplasty ring",
+      "summary": "Corcym announced the first human implant of Memo 4D Curve, an FDA-cleared open-configuration addition to its Nitinol Memo mitral annuloplasty family, sized up to 42 mm for annuli ranging from standard degenerative disease to severely dilated. Michael Ibrahim performed the procedure at UVA Health; Corcym said it will formally introduce the ring internationally at the EACTS meeting in October 2026. No comparative outcomes data versus the existing closed Memo 4D ring were disclosed.",
+      "sourceName": "Corcym (BusinessWire release)",
+      "sourceUrl": "https://www.financialcontent.com/article/bizwire-2026-9-22-corcym-announces-first-in-human-implant-of-memo-4d-curve-expanding-its-memo-mitral-repair-platform",
+      "topicTags": [
+        "mitral regurgitation",
+        "surgical annuloplasty",
+        "first-in-human"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "proc-mv-surgery"
+      ]
+    },
+    {
+      "id": "news-2026-09-22-ubc-ivalve-soft-closure-mechanical-heart-valve",
+      "publishedAt": "2026-09-22",
+      "title": "UBC's Heart Valve Performance Laboratory reports on a soft-closure mechanical valve prototype",
+      "summary": "The University of British Columbia's Heart Valve Performance Laboratory described the design rationale and pulse-duplicator hydrodynamic testing of iValve, a bileaflet mechanical heart-valve platform built around curved leaflets and distributed, progressive closure contact intended to reduce the rapid-closure flow events linked to mechanical-valve thromboembolism and hemolysis. Prototypes maintained large projected opening areas across 10 test cycles at physiologic flow and pressure conditions. # needs-fulltext: abstract/metadata only, full text is paywalled.",
+      "sourceName": "Journal of Biomechanics",
+      "sourceUrl": "https://doi.org/10.1016/j.jbiomech.2026.113582",
+      "topicTags": [
+        "mechanical heart valve",
+        "hydrodynamics",
+        "device design"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-09-18-open-heart-study-links-tavr-delay-beyond-6-months-to-worse-outcomes",
+      "publishedAt": "2026-09-18",
+      "title": "Single-center study links TAVR performed more than 6 months after AS diagnosis to worse outcomes",
+      "summary": "A retrospective single-center study of 149 severe aortic stenosis patients (2021-2023) found the composite of heart-failure hospitalization or death occurred more often when TAVR was performed more than 6 months after diagnosis (n=49) than within 6 months (n=100), over a median 729-day follow-up. Guidelines already call for surveillance within roughly 6-12 months for patients who do not meet immediate-intervention criteria; the authors say the findings support timelier evaluation but call for larger, multicenter confirmation given the small, single-site, non-randomized design.",
+      "sourceName": "Open Heart",
+      "sourceUrl": "https://doi.org/10.1136/openhrt-2026-004403",
+      "topicTags": [
+        "TAVR",
+        "aortic stenosis",
+        "treatment timing",
+        "outcomes research"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-09-16-politecnico-milano-tavi-post-dilation-simulation",
+      "publishedAt": "2026-09-16",
+      "title": "Politecnico di Milano validates a balloon post-dilation model for patient-specific TAVI simulation",
+      "summary": "Politecnico di Milano engineers, working with Ospedale Maggiore Policlinico, added a calibrated finite-element balloon model to patient-specific TAVI simulations to reproduce the post-dilation step that earlier simulation pipelines skipped. Predicted post-dilation valve configurations were compared against post-operative CT in four patients, and including the post-dilation step improved agreement between simulated and actual final device geometry. # needs-fulltext: abstract/metadata only, full text is paywalled.",
+      "sourceName": "Annals of Biomedical Engineering",
+      "sourceUrl": "https://doi.org/10.1007/s10439-026-04325-0",
+      "topicTags": [
+        "TAVR",
+        "computational modeling",
+        "digital twin"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
     {
       "id": "news-2026-09-12-ai-powered-ultrasound-robotic-system-guides-transcatheter-closure-of-con",
       "publishedAt": "2026-09-12",
@@ -32,6 +116,22 @@
       "relevantNodeIds": [
         "cond-asd",
         "dev-amplatzer-asd"
+      ]
+    },
+    {
+      "id": "news-2026-09-12-sichuan-university-nanogel-coating-bioprosthetic-valve",
+      "publishedAt": "2026-09-12",
+      "title": "ROS-responsive nanogel coating targets inflammation-driven bioprosthetic valve failure",
+      "summary": "Sichuan University (West China Hospital) researchers compared explanted failed and non-degenerated bioprosthetic heart valves and found pronounced inflammation and reactive-oxygen-species accumulation in the failed leaflets. Guided by that finding, they built a ROS-responsive, diclofenac-releasing zwitterionic nanogel coating for glutaraldehyde-fixed pericardium designed to blunt inflammation-driven degeneration rather than only address calcification directly. # needs-fulltext: abstract/metadata only, full text is paywalled.",
+      "sourceName": "Acta Biomaterialia",
+      "sourceUrl": "https://doi.org/10.1016/j.actbio.2026.09.020",
+      "topicTags": [
+        "bioprosthetic valve",
+        "leaflet durability",
+        "biomaterials"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
       ]
     },
     {
@@ -86,6 +186,22 @@
       ]
     },
     {
+      "id": "news-2026-09-10-pediavalve-tissue-engineered-pediatric-pulmonary-valve",
+      "publishedAt": "2026-09-10",
+      "title": "PEDIAVALVE project reports decellularized pulmonary valves sized for small children",
+      "summary": "A Romania-based team (George Emil Palade University of Medicine, Targu Mures) working with Clemson University's Dan Simionescu published decellularization results for lamb pulmonary valves aimed at right ventricular outflow tract reconstruction in children, a size range under 15mm poorly served by current options. The protocol removed over 90% of donor DNA while preserving the valve's 3D matrix architecture, and decellularized valves matched fresh valves on opening area, pressure gradient, and 14-day cell viability in bench testing.",
+      "sourceName": "Frontiers in Bioengineering and Biotechnology",
+      "sourceUrl": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1902783/full",
+      "topicTags": [
+        "tissue engineering",
+        "pediatric heart valve",
+        "pulmonary valve"
+      ],
+      "relevantNodeIds": [
+        "cond-pv"
+      ]
+    },
+    {
       "id": "news-2026-09-09-carvolix-submits-tavipilot-software-for-ce-marking-targeting-european-la",
       "publishedAt": "2026-09-09",
       "title": "Carvolix submits TAVIPILOT Software for CE marking, targeting European launch in early 2027",
@@ -134,6 +250,24 @@
       "relevantNodeIds": [
         "cond-hfref",
         "cond-hfpef"
+      ]
+    },
+    {
+      "id": "news-2026-09-08-corcym-trimemo-first-in-human-implant-tricuspid-annuloplasty",
+      "publishedAt": "2026-09-08",
+      "title": "Corcym reports first-in-human implant of TriMemo, a dedicated tricuspid annuloplasty ring",
+      "summary": "Corcym announced the first human implantation of TriMemo, a semi-rigid Nitinol annuloplasty ring purpose-built for tricuspid valve repair rather than adapted from a mitral design, performed by A. Marc Gillinov at Cleveland Clinic. The device received FDA clearance in April 2026 and is now commercially available in the US, extending Corcym's two-decade-old Memo mitral platform to the tricuspid valve; the release does not describe a pivotal trial or patient-selection criteria beyond this first case.",
+      "sourceName": "Corcym (BusinessWire release)",
+      "sourceUrl": "https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair",
+      "topicTags": [
+        "tricuspid regurgitation",
+        "surgical annuloplasty",
+        "first-in-human",
+        "FDA clearance"
+      ],
+      "relevantNodeIds": [
+        "cond-tr",
+        "proc-tv-surgery"
       ]
     },
     {
@@ -255,6 +389,23 @@
       ]
     },
     {
+      "id": "news-2026-08-30-luminara-phase-2b-oral-relaxin-agonist-azd5462-improves-hf",
+      "publishedAt": "2026-08-30",
+      "title": "LUMINARA Phase 2b Trial: Oral Relaxin Agonist AZD5462 Shows Early Promise in Heart Failure",
+      "summary": "In the 375-patient LUMINARA Phase 2b trial, presented as an ESC 2026 Hot Line and published simultaneously in Circulation, AstraZeneca's oral RXFP1 relaxin-receptor agonist AZD5462 modestly improved a cardiac-remodeling measure (end-systolic volume index) in an HFrEF cohort (LVEF <=35%) and lowered systemic vascular resistance in a separate cohort with LVEF 41-55%, without excess hypotension or fluid retention. This was a dose-ranging safety/hemodynamic study, not powered for clinical outcomes, and the investigators said larger outcomes trials are now needed.",
+      "sourceName": "European Society of Cardiology",
+      "sourceUrl": "https://www.escardio.org/news/press/press-releases/novel-drug-shows-promise-in-an-early-phase-trial-in-heart-failure/",
+      "topicTags": [
+        "HFrEF",
+        "investigational drug",
+        "ESC 2026"
+      ],
+      "relevantNodeIds": [
+        "cond-hfref",
+        "co-astrazeneca"
+      ]
+    },
+    {
       "id": "news-2026-08-30-notion-4-tempers-enthusiasm-for-short-course-anticoagulation-solely-to-p",
       "publishedAt": "2026-08-30",
       "title": "NOTION-4 tempers enthusiasm for short-course anticoagulation solely to prevent HALT",
@@ -303,6 +454,25 @@
       ]
     },
     {
+      "id": "news-2026-08-30-vutrisiran-benefit-holds-regardless-of-tafamidis-use",
+      "publishedAt": "2026-08-30",
+      "title": "HELIOS-B Subgroup Shows Vutrisiran Benefit Holds Regardless of Background Tafamidis",
+      "summary": "A prespecified HELIOS-B subgroup analysis presented at ESC Congress 2026 examined 654 ATTR-CM patients, 40% of whom were on background tafamidis, and found vutrisiran's effect on the composite of all-cause mortality and recurrent cardiovascular events through 33-36 months was consistent whether or not patients also took tafamidis. Alnylam, which markets vutrisiran, noted the trial was not statistically powered specifically for the tafamidis-combination subgroup and that health-status gains were attenuated in that group.",
+      "sourceName": "Alnylam Pharmaceuticals",
+      "sourceUrl": "https://investors.alnylam.com/press-release?id=30006",
+      "topicTags": [
+        "ATTR-CM",
+        "combination therapy",
+        "ESC 2026"
+      ],
+      "relevantNodeIds": [
+        "rx-vutrisiran",
+        "rx-tafamidis",
+        "trial-helios-b",
+        "cond-attr-cm"
+      ]
+    },
+    {
       "id": "news-2026-08-29-ai-supported-monitoring-of-patients-awaiting-tavi-is-linked-to-lower-mor",
       "publishedAt": "2026-08-29",
       "title": "AI-supported monitoring of patients awaiting TAVI is linked to lower mortality",
@@ -316,6 +486,24 @@
       ],
       "relevantNodeIds": [
         "cond-as"
+      ]
+    },
+    {
+      "id": "news-2026-08-29-camzyos-5-year-explorer-lte-data-shown-at-esc-2026",
+      "publishedAt": "2026-08-29",
+      "title": "Bristol Myers Squibb Presents 5-Year Camzyos (Mavacamten) Data From EXPLORER-LTE at ESC 2026",
+      "summary": "In the EXPLORER-LTE cohort of the MAVA-LTE extension study (231 patients followed up to 252 weeks), continuous mavacamten treatment was associated with sustained LVOT-gradient reduction, and 69.6% of patients improved by at least one NYHA class, with no new safety signals versus the original EXPLORER-HCM trial. Seven patients had reversible LVEF drops below 50% that recovered after treatment interruption, and Bristol Myers Squibb noted continued approval still depends on confirmatory post-marketing evidence.",
+      "sourceName": "Bristol Myers Squibb",
+      "sourceUrl": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Presents-Data-Up-to-Five-Years-Reinforcing-the-Long-Term-Efficacy-and-Safety-of-Camzyos-mavacamten-in-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-oHCM-at-the-European-Society-of-Cardiology-ESC-Congress-2026/default.aspx",
+      "topicTags": [
+        "HCM",
+        "long-term safety",
+        "ESC 2026"
+      ],
+      "relevantNodeIds": [
+        "rx-mavacamten",
+        "cond-hcm",
+        "co-bristol-myers-squibb"
       ]
     },
     {
@@ -336,6 +524,25 @@
         "co-cytokinetics",
         "trial-acacia-hcm",
         "trial-maple-hcm"
+      ]
+    },
+    {
+      "id": "news-2026-08-28-esc-heart-failure-guidelines-redefine-hfref-and-hfpef",
+      "publishedAt": "2026-08-28",
+      "title": "2026 ESC Guidelines Redefine Heart Failure Classification, Drop HFmrEF Category",
+      "summary": "The 2026 ESC Guidelines for the management of heart failure, published in the European Heart Journal and presented at ESC Congress 2026, collapse the three-way ejection-fraction classification into two phenotypes -- HFrEF (LVEF <50%) and HFpEF (LVEF >=50%) -- eliminating the separate HFmrEF category, and give mineralocorticoid receptor antagonists (e.g., finerenone) a Class I recommendation across the EF spectrum. The guidelines also give semaglutide or tirzepatide a Class IIa recommendation in HFpEF patients with obesity, reflecting trial evidence rather than a formal drug-label change for that indication.",
+      "sourceName": "European Society of Cardiology",
+      "sourceUrl": "https://www.escardio.org/news/press/press-releases/major-changes-made-to-the-esc-guidelines-on-heart-failure/",
+      "topicTags": [
+        "heart failure",
+        "guidelines",
+        "HFrEF",
+        "HFpEF"
+      ],
+      "relevantNodeIds": [
+        "cond-hfref",
+        "cond-hfpef",
+        "rx-finerenone"
       ]
     },
     {
@@ -477,6 +684,22 @@
       ]
     },
     {
+      "id": "news-2026-08-17-san-raffaele-ai-ct-pipeline-aortic-valve-calcification",
+      "publishedAt": "2026-08-17",
+      "title": "Automated CT pipeline maps fibrocalcific burden ahead of TAVI",
+      "summary": "Researchers at Vita-Salute San Raffaele University (Milan) built a one-click, CT-based pipeline that automatically segments and quantifies fibrotic and calcific tissue on the aortic valve from pre-TAVI cardiac CT, replacing a manual, radiologist-dependent step. In 25 patients with severe aortic stenosis the automated regional measurements agreed closely with two independent expert readers while processing each case in under three minutes. # needs-fulltext: abstract/metadata only, full text is paywalled.",
+      "sourceName": "Annals of Biomedical Engineering",
+      "sourceUrl": "https://doi.org/10.1007/s10439-026-04272-w",
+      "topicTags": [
+        "imaging AI",
+        "TAVR planning",
+        "calcification"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
       "id": "news-2026-08-14-versa-vascular-adds-15m-to-series-c-and-appoints-former-medtronic-struct",
       "publishedAt": "2026-08-14",
       "title": "Versa Vascular adds $15M to Series C and appoints former Medtronic structural-heart leader as CEO",
@@ -507,6 +730,39 @@
       "relevantNodeIds": [
         "cond-mr",
         "cond-tr"
+      ]
+    },
+    {
+      "id": "news-2026-08-12-unsw-review-soft-robotic-cardiac-sleeves-heart-failure",
+      "publishedAt": "2026-08-12",
+      "title": "Review maps engineering path for soft robotic cardiac sleeves in heart failure",
+      "summary": "A UNSW Sydney-led team, with Hannover Medical School, published a Nature Communications review of soft robotic cardiac sleeves, a non-blood-contact class of mechanical circulatory support that wraps and actuates around the outside of the heart. The review lays out the pathophysiological rationale, recent actuator and materials advances, and the engineering and translational hurdles still standing between prototypes and clinical use, and proposes a development framework for future devices.",
+      "sourceName": "Nature Communications",
+      "sourceUrl": "https://www.nature.com/articles/s41467-026-76596-z",
+      "topicTags": [
+        "soft robotics",
+        "heart failure",
+        "mechanical circulatory support"
+      ],
+      "relevantNodeIds": [
+        "cond-hfref",
+        "cond-hfpef"
+      ]
+    },
+    {
+      "id": "news-2026-08-11-pitt-cmu-heart-assembloid-models-mitral-valve-prolapse",
+      "publishedAt": "2026-08-11",
+      "title": "Heart 'assembloids' give researchers a lab model of human valve disease",
+      "summary": "University of Pittsburgh and Carnegie Mellon University researchers combined heart-chamber organoids grown from human stem cells into valve-bearing 'assembloids,' adding simulated blood flow and muscle contraction to reproduce native valve development. Introducing disease-linked mutations reproduced signs of mitral valve prolapse, offering a human tissue model for studying valve disorders without relying solely on animal studies. The work was published in Cell Stem Cell on August 11, 2026.",
+      "sourceName": "University of Pittsburgh (Pittwire)",
+      "sourceUrl": "https://www.pittwire.pitt.edu/features-articles/2026/08/11/heart-valve-organoid",
+      "topicTags": [
+        "tissue engineering",
+        "disease modeling",
+        "mitral valve"
+      ],
+      "relevantNodeIds": [
+        "cond-mr"
       ]
     },
     {
@@ -543,6 +799,22 @@
       ]
     },
     {
+      "id": "news-2026-08-08-ku-leuven-ross-procedure-growth-remodeling-simulation",
+      "publishedAt": "2026-08-08",
+      "title": "KU Leuven-led model simulates pulmonary-autograft dilation after the Ross procedure",
+      "summary": "Engineers at KU Leuven, with Eindhoven University of Technology and Ghent University, built an image-based finite-element pipeline that reconstructs patient-specific root geometry and simulates how the pulmonary autograft grows and remodels under systemic pressure after a Ross procedure. The model reproduced observed autograft dilation in a sheep model and linked the predicted diameter change to leaflet coaptation loss, a step toward predicting which autografts will fail and require reoperation.",
+      "sourceName": "International Journal for Numerical Methods in Biomedical Engineering (PMC)",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13451147/",
+      "topicTags": [
+        "computational modeling",
+        "digital twin",
+        "aortic valve surgery"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ]
+    },
+    {
       "id": "news-2026-08-06-asia-pacific-multicenter-registry-supports-basilica-and-unicorn-leaflet",
       "publishedAt": "2026-08-06",
       "title": "Asia-Pacific multicenter registry supports BASILICA and UNICORN leaflet modification for high-risk TAVR",
@@ -569,6 +841,22 @@
         "mitral regurgitation",
         "transcatheter repair",
         "early feasibility"
+      ],
+      "relevantNodeIds": [
+        "cond-mr"
+      ]
+    },
+    {
+      "id": "news-2026-08-06-uc-irvine-polycarbonate-polyurethane-mitral-valve",
+      "publishedAt": "2026-08-06",
+      "title": "UC Irvine study evaluates polycarbonate-polyurethane scaffolds for polymeric mitral valves",
+      "summary": "A UC Irvine biomedical engineering team led by Arash Kheradvar compared two polycarbonate-based polyurethanes as trileaflet scaffold materials for polymeric mitral valves, linking rheological and mechanical properties to valve-level flow, pressure, and wear performance out to 50 million accelerated cycles. One formulation was implanted in an ovine model as an early in-vivo check, part of a broader push toward polymeric valves that combine mechanical-valve durability with bioprosthetic-like hemodynamics.",
+      "sourceName": "Annals of Biomedical Engineering (PMC)",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13505576/",
+      "topicTags": [
+        "polymeric heart valve",
+        "biomaterials",
+        "mitral valve"
       ],
       "relevantNodeIds": [
         "cond-mr"
@@ -1090,7 +1378,7 @@
           "group": "condition",
           "category": "Atrial fibrillation / stroke prevention",
           "isDraft": false,
-          "degree": 11,
+          "degree": 12,
           "pulse": 7,
           "entity": {
             "id": "cond-af",
@@ -1282,7 +1570,7 @@
           "group": "condition",
           "category": "Heart failure",
           "isDraft": false,
-          "degree": 20,
+          "degree": 22,
           "pulse": 5,
           "entity": {
             "id": "cond-hfref",
@@ -1309,7 +1597,7 @@
           "group": "condition",
           "category": "Heart failure",
           "isDraft": false,
-          "degree": 24,
+          "degree": 25,
           "pulse": 6,
           "entity": {
             "id": "cond-hfpef",
@@ -1424,7 +1712,7 @@
           "group": "condition",
           "category": "Mitral valve disease",
           "isDraft": false,
-          "degree": 14,
+          "degree": 15,
           "pulse": 8,
           "entity": {
             "id": "cond-mr",
@@ -1483,7 +1771,7 @@
           "group": "condition",
           "category": "Tricuspid valve disease",
           "isDraft": false,
-          "degree": 8,
+          "degree": 9,
           "pulse": 9,
           "entity": {
             "id": "cond-tr",
@@ -1542,7 +1830,7 @@
           "group": "device",
           "category": "LAA closure device",
           "isDraft": false,
-          "degree": 8,
+          "degree": 9,
           "pulse": 6,
           "timelineDate": "2020-01-01",
           "entity": {
@@ -1564,6 +1852,27 @@
               "event": "FDA approval of Watchman FLX"
             },
             "mechanism": "Percutaneously seals the left atrial appendage to prevent thrombus embolization in non-valvular AF.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding implant frame",
+                "category": "frame",
+                "source": "https://www.watchman.com/content/dam/watchman/downloads/download-center/watchman-flx/WATCHMAN_FLX_Product_Brochure.pdf"
+              },
+              {
+                "name": "Polyethylene terephthalate (PET)",
+                "role": "Porous fabric cover on the atrial face",
+                "category": "fabric",
+                "source": "https://www.watchman.com/content/dam/watchman/downloads/download-center/watchman-flx/WATCHMAN_FLX_Product_Brochure.pdf"
+              },
+              {
+                "name": "PVDF-HFP fluoropolymer",
+                "role": "HEMOCOAT thromboresistant surface coating",
+                "category": "coating",
+                "source": "https://www.watchman.com/en-us-implanter/device/watchman-flx-pro.html",
+                "note": "WATCHMAN FLX Pro only; the standard FLX device is uncoated."
+              }
+            ],
             "links": [
               {
                 "label": "Product page",
@@ -1585,7 +1894,7 @@
           "group": "device",
           "category": "LAA closure device",
           "isDraft": false,
-          "degree": 4,
+          "degree": 5,
           "pulse": 0,
           "timelineDate": "2021-01-01",
           "entity": {
@@ -1607,6 +1916,20 @@
               "event": "FDA approval"
             },
             "mechanism": "Dual-seal LAA occluder for stroke prevention in non-valvular AF.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding mesh lobe and disc",
+                "category": "frame",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049C.pdf"
+              },
+              {
+                "name": "Polyester (PET)",
+                "role": "Occlusive patches sewn into the lobe and disc",
+                "category": "fabric",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049C.pdf"
+              }
+            ],
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -1644,6 +1967,26 @@
               "notes": "Year-level CE mark date; refine if an exact notified-body date is verified."
             },
             "mechanism": "Umbrella-and-cover LAA occluder designed for variable appendage anatomy.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding umbrella and cover mesh",
+                "category": "frame",
+                "source": "https://rumidimur.com/wp-content/uploads/2017/08/Lifetech_Product-Catalogue_small.pdf"
+              },
+              {
+                "name": "Polyethylene terephthalate (PET)",
+                "role": "Occlusive membranes sewn into the umbrella and cover",
+                "category": "fabric",
+                "source": "https://rumidimur.com/wp-content/uploads/2017/08/Lifetech_Product-Catalogue_small.pdf"
+              },
+              {
+                "name": "Titanium nitride",
+                "role": "Surface coating on the nitinol mesh",
+                "category": "coating",
+                "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9352115/"
+              }
+            ],
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -1682,6 +2025,26 @@
               "notes": "Date per FDA 510(k) database as reported by MedTech Dive/MassDevice; VERIFY exact clearance date against the FDA 510(k) database entry."
             },
             "mechanism": "Implantable clip applied surgically to mechanically close the left atrial appendage during concomitant cardiac surgery, preventing thrombus formation and embolization.",
+            "materials": [
+              {
+                "name": "Polyether ether ketone (PEEK)",
+                "role": "Twin implant bars",
+                "category": "frame",
+                "source": "https://eifu.edwards.com/eifu/5d4dd5ad46e0fb0001c61ac7/DOC-0564734A.pdf"
+              },
+              {
+                "name": "Silicone",
+                "role": "Overmold covering the PEEK bars",
+                "category": "coating",
+                "source": "https://eifu.edwards.com/eifu/5d4dd5ad46e0fb0001c61ac7/DOC-0564734A.pdf"
+              },
+              {
+                "name": "Nitinol",
+                "role": "Spring connecting the clip bars",
+                "category": "anchor",
+                "source": "https://eifu.edwards.com/eifu/5d4dd5ad46e0fb0001c61ac7/DOC-0564734A.pdf"
+              }
+            ],
             "pulse": 6,
             "curation": {
               "status": "draft",
@@ -1724,6 +2087,20 @@
               "event": "FDA approval for recurrent cryptogenic stroke due to PFO"
             },
             "mechanism": "Double-disc nitinol occluder that closes the patent foramen ovale.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding double-disc wire mesh",
+                "category": "frame",
+                "source": "https://www.fda.gov/media/97980/download"
+              },
+              {
+                "name": "Polyester (PET)",
+                "role": "Occlusive fabric within both discs",
+                "category": "fabric",
+                "source": "https://www.fda.gov/media/97980/download"
+              }
+            ],
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -1761,6 +2138,14 @@
               "event": "FDA approval for PFO closure"
             },
             "mechanism": "ePTFE-covered nitinol frame occluder for PFO and atrial septal defects.",
+            "materials": [
+              {
+                "name": "Nitinol with platinum core",
+                "role": "Conformable wire frame; the platinum core adds radiopacity",
+                "category": "frame",
+                "source": "https://www.goremedical.com/cardioform-for-pfo-closure"
+              }
+            ],
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -1797,6 +2182,20 @@
               "event": "FDA approval for secundum ASD closure"
             },
             "mechanism": "Self-expanding double-disc occluder for secundum atrial septal defects.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding double-disc wire mesh",
+                "category": "frame",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf/P000039B.pdf"
+              },
+              {
+                "name": "Polyester (PET)",
+                "role": "Occlusive fabric in the discs and connecting waist",
+                "category": "fabric",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf/P000039B.pdf"
+              }
+            ],
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -1833,6 +2232,15 @@
               "event": "FDA approval"
             },
             "mechanism": "Miniature occluder for transcatheter closure of patent ductus arteriosus.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding braided wire mesh",
+                "category": "frame",
+                "source": "https://www.structuralheart.abbott/fileadmin/content/For_Patients/Patient_Guides/patent-ductus-arteriosus-pda-treatment-options-patient-guide2.pdf",
+                "note": "The Piccolo design does not use a polyester occlusion patch."
+              }
+            ],
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -1849,7 +2257,7 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 0,
-          "timelineDate": "2007-01-01",
+          "timelineDate": "2007-09-07",
           "entity": {
             "id": "dev-amplatzer-vsd",
             "type": "therapy",
@@ -1863,15 +2271,30 @@
             "regulatoryStatus": "approved",
             "regulatoryDetail": "Approved for muscular VSDs; membranous-VSD use remains investigational/off-label.",
             "timeline": {
-              "date": "2007-01-01",
-              "precision": "year",
+              "date": "2007-09-07",
+              "precision": "day",
               "dateBasis": "fda-approval",
-              "event": "FDA humanitarian device exemption for muscular VSD closure"
+              "event": "FDA PMA approval (P040040) for muscular VSD closure"
             },
             "mechanism": "Double-disc occluder for muscular ventricular septal defects.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding double-disc wire mesh",
+                "category": "frame",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf4/P040040C.pdf"
+              },
+              {
+                "name": "Polyester (PET)",
+                "role": "Occlusive fabric in the discs and waist",
+                "category": "fabric",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf4/P040040C.pdf"
+              }
+            ],
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-09-23",
+              "notes": "2026-09-23: pathway corrected from HDE to PMA and date set to 2007-09-07 at the owner's request (https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040040)."
             }
           }
         }
@@ -1898,6 +2321,20 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational; FDA Breakthrough Device. Responder-subgroup signal in REDUCE LAP-HF II.",
             "mechanism": "Implanted interatrial shunt that decompresses the left atrium to lower exertional filling pressure in HFpEF.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding shunt frame",
+                "category": "frame",
+                "source": "https://us.corviamedical.com/wp-content/uploads/2024/07/00697AW-US-Corvia-Patient-Information-Guide-Rev-01.pdf"
+              },
+              {
+                "name": "Tantalum",
+                "role": "Radiopaque marker material",
+                "category": "frame",
+                "source": "https://us.corviamedical.com/wp-content/uploads/2024/07/00697AW-US-Corvia-Patient-Information-Guide-Rev-01.pdf"
+              }
+            ],
             "pulse": 6,
             "curation": {
               "status": "curated",
@@ -1930,6 +2367,14 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational. RELIEVE-HF neutral overall with a divergent HFrEF-subgroup signal.",
             "mechanism": "Interatrial shunt to reduce left atrial pressure across the HF spectrum.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding hourglass frame",
+                "category": "frame",
+                "source": "https://vwavemedical.com/vwave/technology/"
+              }
+            ],
             "pulse": 6,
             "curation": {
               "status": "curated",
@@ -1961,6 +2406,14 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational shunt-to-coronary-sinus system under clinical study (ALT FLOW).",
             "mechanism": "Creates a left atrium-to-coronary-sinus shunt to lower left atrial pressure.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Bare self-expanding four-arm shunt frame",
+                "category": "frame",
+                "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12399238/"
+              }
+            ],
             "pulse": 4,
             "curation": {
               "status": "curated",
@@ -1992,7 +2445,7 @@
               "cond-hfpef"
             ],
             "regulatoryStatus": "approved",
-            "regulatoryDetail": "FDA approved; indication expanded to NYHA II-III HF (CHAMPION, GUIDE-HF).",
+            "regulatoryDetail": "FDA approved; indication expanded to NYHA II-III HF (CHAMPION, GUIDE-HF). Next-generation CardioMEMS HERO reader approved 2026-02-27 (same implanted sensor).",
             "timeline": {
               "date": "2014-01-01",
               "precision": "year",
@@ -2000,10 +2453,31 @@
               "event": "FDA approval"
             },
             "mechanism": "Wireless pulmonary-artery pressure sensor enabling pressure-guided HF management.",
+            "materials": [
+              {
+                "name": "Fused silica",
+                "role": "Hermetically sealed sensor capsule",
+                "category": "sensor",
+                "source": "https://www.jacc.org/doi/10.1016/j.jacc.2007.06.061"
+              },
+              {
+                "name": "Medical-grade silicone",
+                "role": "Blood-contacting sensor encapsulation",
+                "category": "coating",
+                "source": "https://www.jacc.org/doi/10.1016/j.jacc.2007.06.061"
+              },
+              {
+                "name": "Nitinol",
+                "role": "Paired pulmonary-artery anchoring loops",
+                "category": "anchor",
+                "source": "https://www.jacc.org/doi/10.1016/j.jacc.2007.06.061"
+              }
+            ],
             "pulse": 4,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-09-23",
+              "notes": "2026-09-23: HERO reader approval added to regulatoryDetail at the owner's request. Source: https://abbott.mediaroom.com/press-releases?item=124735"
             }
           }
         }
@@ -2038,6 +2512,26 @@
               "event": "FDA approval"
             },
             "mechanism": "Pulmonary-artery pressure sensor with a paired patient-management platform.",
+            "materials": [
+              {
+                "name": "Borofloat borosilicate glass",
+                "role": "Primary blood-contacting sensor housing",
+                "category": "sensor",
+                "source": "https://endotronix.com/wp-content/uploads/2025/07/100906-00-Rev-2-Attachment-1-Cordella-Pulmonary-Artery-System-Patient-Implant-Leaflet.pdf"
+              },
+              {
+                "name": "Nitinol",
+                "role": "Pulmonary-artery anchoring structure",
+                "category": "anchor",
+                "source": "https://endotronix.com/wp-content/uploads/2025/07/100906-00-Rev-2-Attachment-1-Cordella-Pulmonary-Artery-System-Patient-Implant-Leaflet.pdf"
+              },
+              {
+                "name": "Silicone",
+                "role": "Protective sensor surface coating",
+                "category": "coating",
+                "source": "https://endotronix.com/wp-content/uploads/2025/07/100906-00-Rev-2-Attachment-1-Cordella-Pulmonary-Artery-System-Patient-Implant-Leaflet.pdf"
+              }
+            ],
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -2068,6 +2562,20 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational inferior vena cava sensor for congestion monitoring (FUTURE-HF).",
             "mechanism": "Implantable IVC sensor that tracks vessel-area changes as a congestion surrogate.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Crown-shaped, compliant sensor frame",
+                "category": "sensor",
+                "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12568234/"
+              },
+              {
+                "name": "Gold",
+                "role": "Conductive wire in the passive resonant sensor circuit",
+                "category": "sensor",
+                "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12568234/"
+              }
+            ],
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -2098,6 +2606,14 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational wireless left-atrial pressure sensor (VECTOR-HF).",
             "mechanism": "Direct left-atrial pressure measurement for granular pressure-guided HF management.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Braided double-disc interatrial anchor",
+                "category": "anchor",
+                "source": "https://eurointervention.pcronline.com/article/a-novel-implantable-left-atrial-pressure-sensor-in-two-heart-failure-patients"
+              }
+            ],
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -2134,6 +2650,14 @@
               "event": "CE mark in Europe"
             },
             "mechanism": "Hourglass stent narrows the coronary sinus to raise backward pressure and redistribute perfusion to ischemic myocardium.",
+            "materials": [
+              {
+                "name": "Surgical-grade stainless steel",
+                "role": "Balloon-expandable hourglass mesh",
+                "category": "frame",
+                "source": "https://shockwavemedical.com/wp-content/uploads/2024/11/Shockwave-Reducer-Spec-Sheet.pdf"
+              }
+            ],
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -2161,8 +2685,16 @@
               "cond-cmd"
             ],
             "regulatoryStatus": "investigational",
-            "regulatoryDetail": "Investigational; early feasibility study (SERRA-I, NCT06991322) underway in Europe. Not FDA cleared/approved.",
+            "regulatoryDetail": "Investigational; early feasibility study (SERRA-I, NCT06991322) enrolling in the US and Europe (first US patient announced 2026-06-17). Not FDA cleared/approved.",
             "mechanism": "Self-expanding dense-cell nitinol coronary sinus reducer (SwiftCell Technology) that narrows the coronary sinus to redistribute perfusion toward ischemic myocardium — mechanistically analogous to the Shockwave/J&J Coronary Sinus Reducer.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding dense-cell hourglass mesh",
+                "category": "frame",
+                "source": "https://vahaticor.com/"
+              }
+            ],
             "links": [
               {
                 "label": "Product page",
@@ -2172,9 +2704,10 @@
             "pulse": 3,
             "curation": {
               "status": "draft",
-              "lastUpdated": "2026-07-08",
+              "lastUpdated": "2026-09-23",
               "sources": [
                 "https://vahaticor.com/",
+                "https://vahaticor.com/device-and-technology/",
                 "https://clinicaltrials.gov/study/NCT06991322",
                 "https://www.jacc.org/doi/10.1016/j.jaccas.2024.102962"
               ],
@@ -2191,7 +2724,7 @@
           "category": "cardiac myosin inhibitor",
           "isDraft": false,
           "degree": 4,
-          "pulse": 6,
+          "pulse": 7,
           "timelineDate": "2022-01-01",
           "entity": {
             "id": "rx-mavacamten",
@@ -2212,7 +2745,7 @@
               "event": "FDA approval for symptomatic obstructive HCM"
             },
             "mechanism": "Reversibly inhibits cardiac myosin ATPase, reducing hypercontractility and LVOT obstruction.",
-            "pulse": 6,
+            "pulse": 7,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22",
@@ -2224,30 +2757,37 @@
       {
         "data": {
           "id": "rx-aficamten",
-          "label": "Aficamten",
+          "label": "Aficamten (Myqorzo)",
           "group": "pharmaceutical",
           "category": "cardiac myosin inhibitor",
           "isDraft": false,
           "degree": 5,
           "pulse": 9,
+          "timelineDate": "2025-12-19",
           "entity": {
             "id": "rx-aficamten",
             "type": "therapy",
             "therapyType": "pharmaceutical",
             "subtype": "cardiac myosin inhibitor",
-            "name": "Aficamten",
+            "name": "Aficamten (Myqorzo)",
             "company": "co-cytokinetics",
             "treats": [
               "cond-hcm"
             ],
-            "regulatoryStatus": "investigational",
-            "regulatoryDetail": "Next-generation myosin inhibitor; FDA review pending after SEQUOIA-HCM. VERIFY current approval status.",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved 2025-12-19 (NDA 219083) for symptomatic obstructive HCM, based on SEQUOIA-HCM; EU approval 2026-02-17.",
+            "timeline": {
+              "date": "2025-12-19",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval of Myqorzo for symptomatic obstructive HCM"
+            },
             "mechanism": "Selective cardiac myosin inhibitor reducing LVOT gradients with a wider therapeutic window.",
             "pulse": 9,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22",
-              "notes": "CONFIRMED: FDA approved 2025-12-19 under the brand name Myqorzo for symptomatic obstructive HCM (NYHA II-III), based on SEQUOIA-HCM (see trial-sequoia-hcm). Also approved in China (NMPA, 2025-12-17) and the EU (European Commission, 2026-02-17); first EU commercial launch (Germany) 2026-06-01. A second pivotal trial, ACACIA-HCM, met both primary endpoints in non-obstructive HCM (topline 2026-05-05); full data plus a MAPLE-HCM subgroup analysis are slated as late-breaking presentations at ESC Congress 2026 (announced 2026-07-07). Sources: https://ir.cytokinetics.com/press-releases/press-release-details/2025/Cytokinetics-Announces-FDA-Approval-of-MYQORZO-aficamten-for-the-Treatment-of-Adults-with-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-to-Improve-Functional-Capacity-and-Symptoms/default.aspx ; https://www.healio.com/news/cardiology/20251219/fda-approves-aficamten-for-adults-with-obstructive-hcm ; https://www.globenewswire.com/news-release/2026/07/07/3323061/35409/en/Cytokinetics-Announces-Three-Late-Breaking-Science-Abstracts-at-the-European-Society-of-Cardiology-ESC-Congress-2026.html. Human curator: update name to 'Aficamten (Myqorzo)', regulatoryStatus to approved, regulatoryDetail, and add an fda-approval timeline (2025-12-19)."
+              "lastUpdated": "2026-09-23",
+              "notes": "CONFIRMED: FDA approved 2025-12-19 under the brand name Myqorzo for symptomatic obstructive HCM (NYHA II-III), based on SEQUOIA-HCM (see trial-sequoia-hcm). Also approved in China (NMPA, 2025-12-17) and the EU (European Commission, 2026-02-17); first EU commercial launch (Germany) 2026-06-01. A second pivotal trial, ACACIA-HCM, met both primary endpoints in non-obstructive HCM (topline 2026-05-05); full data plus a MAPLE-HCM subgroup analysis are slated as late-breaking presentations at ESC Congress 2026 (announced 2026-07-07). Sources: https://ir.cytokinetics.com/press-releases/press-release-details/2025/Cytokinetics-Announces-FDA-Approval-of-MYQORZO-aficamten-for-the-Treatment-of-Adults-with-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-to-Improve-Functional-Capacity-and-Symptoms/default.aspx ; https://www.healio.com/news/cardiology/20251219/fda-approves-aficamten-for-adults-with-obstructive-hcm ; https://www.globenewswire.com/news-release/2026/07/07/3323061/35409/en/Cytokinetics-Announces-Three-Late-Breaking-Science-Abstracts-at-the-European-Society-of-Cardiology-ESC-Congress-2026.html. Applied 2026-09-23 at the owner's request: name, regulatoryStatus, regulatoryDetail, and fda-approval timeline updated from the Drugs@FDA NDA 219083 record."
             }
           }
         }
@@ -2297,7 +2837,7 @@
           "category": "TTR stabilizer",
           "isDraft": false,
           "degree": 3,
-          "pulse": 9,
+          "pulse": 10,
           "timelineDate": "2024-01-01",
           "entity": {
             "id": "rx-acoramidis",
@@ -2318,7 +2858,7 @@
               "event": "FDA approval for ATTR-CM"
             },
             "mechanism": "Near-complete TTR tetramer stabilizer mimicking a protective TTR variant.",
-            "pulse": 9,
+            "pulse": 10,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22",
@@ -2335,7 +2875,7 @@
           "category": "TTR silencer (siRNA)",
           "isDraft": false,
           "degree": 3,
-          "pulse": 8,
+          "pulse": 9,
           "timelineDate": "2025-01-01",
           "entity": {
             "id": "rx-vutrisiran",
@@ -2348,7 +2888,7 @@
               "cond-attr-cm"
             ],
             "regulatoryStatus": "approved",
-            "regulatoryDetail": "Approved for hATTR polyneuropathy; ATTR-CM indication via HELIOS-B (2025). VERIFY label.",
+            "regulatoryDetail": "Approved for hATTR polyneuropathy (2022); ATTR-CM indication approved 2025-03-20 (NDA 215515/S-006) based on HELIOS-B.",
             "timeline": {
               "date": "2025-01-01",
               "precision": "year",
@@ -2357,10 +2897,11 @@
               "notes": "Existing curated record asks to verify the label; keep under human review."
             },
             "mechanism": "Subcutaneous RNAi that lowers hepatic transthyretin production.",
-            "pulse": 8,
+            "pulse": 9,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-09-23",
+              "notes": "2026-09-23: ATTR-CM label date verified on Drugs@FDA (https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215515) and applied at the owner's request. ESC 2026 HELIOS-B subgroup: benefit consistent regardless of background tafamidis (https://investors.alnylam.com/press-release?id=30006)."
             }
           }
         }
@@ -2564,19 +3105,20 @@
               "cond-hfpef"
             ],
             "regulatoryStatus": "approved",
-            "regulatoryDetail": "Approved for CKD in T2D; HFmrEF/HFpEF benefit shown in FINEARTS-HF (2024). VERIFY HF label.",
+            "regulatoryDetail": "Approved for CKD in T2D (2021); HF with LVEF ≥40% indication approved 2025-07-11 (NDA 215341/S-009) based on FINEARTS-HF.",
             "timeline": {
               "date": "2021-01-01",
               "precision": "year",
               "dateBasis": "fda-approval",
               "event": "FDA approval for CKD in T2D",
-              "notes": "HF label remains flagged for verification in the curated record."
+              "notes": "HF (LVEF ≥40%) indication added 2025-07-11 per Drugs@FDA NDA 215341 supplement S-009."
             },
             "mechanism": "Nonsteroidal mineralocorticoid receptor antagonist reducing cardiorenal inflammation/fibrosis.",
             "pulse": 6,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-09-23",
+              "notes": "2026-09-23: HF label verified on Drugs@FDA (https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215341); regulatoryDetail updated at the owner's request."
             }
           }
         }
@@ -2756,6 +3298,27 @@
               "event": "FDA approval of SAPIEN 3 lineage for high/inoperable-risk aortic stenosis"
             },
             "mechanism": "Balloon-expandable bovine-pericardial valve on a cobalt-chromium frame, deployed within the native aortic annulus.",
+            "materials": [
+              {
+                "name": "Cobalt-chromium alloy",
+                "role": "Balloon-expandable valve frame",
+                "category": "frame",
+                "source": "https://www.fda.gov/medical-devices/recently-approved-devices/edwards-sapien-3-sapien-3-ultra-and-sapien-3-ultra-resilia-transcatheter-heart-valve-system"
+              },
+              {
+                "name": "Bovine pericardium",
+                "role": "Trileaflet valve tissue",
+                "category": "leaflet",
+                "source": "https://www.edwards.com/newsroom/news/2022-09-12-edwards-launches-sapien-3-ultra-resilia-valve-foll",
+                "note": "SAPIEN 3 Ultra RESILIA uses RESILIA anti-calcification tissue treatment."
+              },
+              {
+                "name": "Polyethylene terephthalate (PET)",
+                "role": "Inner and outer sealing skirts",
+                "category": "fabric",
+                "source": "https://cdn.clinicaltrials.gov/large-docs/65/NCT03471065/Prot_SAP_000.pdf"
+              }
+            ],
             "links": [
               {
                 "label": "Product page",
@@ -2799,6 +3362,20 @@
               "event": "FDA approval of CoreValve/Evolut lineage for high-risk aortic stenosis"
             },
             "mechanism": "Self-expanding supra-annular porcine-pericardial valve on a nitinol frame for the native aortic annulus.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding supra-annular valve frame",
+                "category": "frame",
+                "source": "https://www.medtronic.com/en-us/healthcare-professionals/products/cardiovascular/heart-valves/transcatheter-systems/evolut-fx-tavr-system.html"
+              },
+              {
+                "name": "Porcine pericardium",
+                "role": "Trileaflet valve tissue",
+                "category": "leaflet",
+                "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13244683/"
+              }
+            ],
             "links": [
               {
                 "label": "Product page",
@@ -2842,6 +3419,26 @@
               "event": "CE mark"
             },
             "mechanism": "Self-expanding bovine-pericardial valve with an active sealing cuff for the native aortic annulus.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding valve frame",
+                "category": "frame",
+                "source": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF"
+              },
+              {
+                "name": "Bovine pericardium",
+                "role": "Trileaflet valve tissue",
+                "category": "leaflet",
+                "source": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF"
+              },
+              {
+                "name": "Ultra-high-molecular-weight polyethylene (UHMWPE)",
+                "role": "NaviSeal inner and outer sealing cuff",
+                "category": "fabric",
+                "source": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF"
+              }
+            ],
             "pulse": 5,
             "curation": {
               "status": "curated",
@@ -2880,6 +3477,27 @@
               "notes": "Year-level CE mark date; platform later discontinued."
             },
             "mechanism": "Self-expanding porcine-pericardial valve with a top-down deployment and stabilization arches.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding valve frame and stabilization arches",
+                "category": "frame",
+                "source": "https://www.bostonscientific.com/content/dam/elabeling/ic/acurate-neo2/51081293-01A_ACURATEneo2_IFU_OUS_ML_s.pdf"
+              },
+              {
+                "name": "Porcine pericardium",
+                "role": "Trileaflet valve tissue",
+                "category": "leaflet",
+                "source": "https://www.bostonscientific.com/content/dam/bostonscientific/StructuralHeart/acurate-neo2-eu/2023-updates/SH-621403-AE-ACURATE_neo2_product_overview_spec_sheet.pdf",
+                "note": "Treated with the BioFix anti-calcification process."
+              },
+              {
+                "name": "Polyethylene terephthalate (PET)",
+                "role": "Sealing fabric",
+                "category": "fabric",
+                "source": "https://www.bostonscientific.com/content/dam/elabeling/ic/acurate-neo2/51081293-01A_ACURATEneo2_IFU_OUS_ML_s.pdf"
+              }
+            ],
             "pulse": 6,
             "curation": {
               "status": "curated",
@@ -2898,7 +3516,7 @@
           "isDraft": false,
           "degree": 4,
           "pulse": 8,
-          "timelineDate": "2025-01-01",
+          "timelineDate": "2026-03-17",
           "entity": {
             "id": "dev-trilogy",
             "type": "therapy",
@@ -2911,15 +3529,31 @@
               "cond-as"
             ],
             "regulatoryStatus": "approved",
-            "regulatoryDetail": "First transcatheter heart valve approved for symptomatic severe aortic regurgitation (FDA 2025; CE mark for AR and AS). VERIFY exact approval dates.",
+            "regulatoryDetail": "First transcatheter heart valve approved for symptomatic severe aortic regurgitation (FDA PMA P250024, 2026-03-17; CE mark for AR and AS).",
             "timeline": {
-              "date": "2025-01-01",
-              "precision": "year",
+              "date": "2026-03-17",
+              "precision": "day",
               "dateBasis": "fda-approval",
               "event": "FDA approval for symptomatic severe aortic regurgitation",
-              "notes": "Existing curated record asks to verify exact approval dates."
+              "source": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250024",
+              "notes": "Decision date from the FDA PMA database and SSED; press coverage dated the announcement 2026-03-23."
             },
             "mechanism": "Self-expanding valve with anatomically-aligned locators that clip the native leaflets, enabling fixation without annular calcium (key for pure AR).",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding valve frame and integrated locators",
+                "category": "frame",
+                "source": "https://jenavalve.com/trilogy-system/"
+              },
+              {
+                "name": "Porcine pericardium",
+                "role": "Trileaflet valve tissue",
+                "category": "leaflet",
+                "source": "https://jenavalve.com/trilogy-system/",
+                "note": "Treated with JenaValve's proprietary Jasmine tissue process."
+              }
+            ],
             "links": [
               {
                 "label": "Product page",
@@ -2929,8 +3563,8 @@
             "pulse": 8,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22",
-              "notes": "CONFIRMED exact FDA approval date: 2026-03-23 (not 2025 as in the current timeline — human curator: correct timeline.date to 2026-03-23 and precision to day). Sources: https://www.tctmd.com/news/fda-approves-jenavalves-trilogy-aortic-regurgitation ; https://citoday.com/news/fda-approves-jenavalves-trilogy-thv-system-for-symptomatic-severe-aortic-regurgitation. Additionally, a 2026-07-01 JenaValve release recapped New York Valves 2026 late-breakers: an ALIGN-AR sub-analysis on pacemaker-implantation predictors (distinct from AS-oversizing mechanisms) and the JENA-VAD expanded-access registry (28 LVAD patients with severe AR treated with Trilogy; zero major 30-day complications; 7.3% one-year mortality). Source: https://www.globenewswire.com/news-release/2026/07/01/3320637/0/en/jenavalve-recaps-key-highlights-including-late-breaking-clinical-data-from-new-york-valves-2026.html."
+              "lastUpdated": "2026-09-23",
+              "notes": "2026-09-23: timeline corrected at the owner's request to the FDA decision date 2026-03-17 (P250024; openFDA and SSED p.1). Earlier note: press reports dated the approval 2026-03-23. Sources: https://www.tctmd.com/news/fda-approves-jenavalves-trilogy-aortic-regurgitation ; https://citoday.com/news/fda-approves-jenavalves-trilogy-thv-system-for-symptomatic-severe-aortic-regurgitation. Additionally, a 2026-07-01 JenaValve release recapped New York Valves 2026 late-breakers: an ALIGN-AR sub-analysis on pacemaker-implantation predictors (distinct from AS-oversizing mechanisms) and the JENA-VAD expanded-access registry (28 LVAD patients with severe AR treated with Trilogy; zero major 30-day complications; 7.3% one-year mortality). Source: https://www.globenewswire.com/news-release/2026/07/01/3320637/0/en/jenavalve-recaps-key-highlights-including-late-breaking-clinical-data-from-new-york-valves-2026.html."
             }
           }
         }
@@ -2956,7 +3590,7 @@
               "cond-mr"
             ],
             "regulatoryStatus": "approved",
-            "regulatoryDetail": "CE mark 2020 for mitral regurgitation; US investigational (SUMMIT pivotal trial). Transapical delivery with an apical tether.",
+            "regulatoryDetail": "CE mark 2020 for mitral regurgitation; FDA approved 2025-05-23 (PMA P240042) for mitral valve disease with severe mitral annular calcification. Transapical delivery with an apical tether.",
             "timeline": {
               "date": "2020-01-01",
               "precision": "year",
@@ -2964,10 +3598,31 @@
               "event": "CE mark for mitral regurgitation"
             },
             "mechanism": "Self-expanding porcine-pericardial mitral valve anchored by an apical pad via a tether; fully repositionable/retrievable.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding inner and outer valve frames",
+                "category": "frame",
+                "source": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/GB/en/ARTEN600263257_A.pdf"
+              },
+              {
+                "name": "Porcine pericardium",
+                "role": "Valve leaflets and outer tissue seal",
+                "category": "leaflet",
+                "source": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/GB/en/ARTEN600263257_A.pdf"
+              },
+              {
+                "name": "Polyethylene terephthalate (PET)",
+                "role": "Outer and pocket fabric",
+                "category": "fabric",
+                "source": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/GB/en/ARTEN600263257_A.pdf"
+              }
+            ],
             "pulse": 5,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-09-23",
+              "notes": "2026-09-23: US approval added at the owner's request (https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P240042); timeline still shows the 2020 CE mark as first availability."
             }
           }
         }
@@ -2981,6 +3636,7 @@
           "isDraft": false,
           "degree": 3,
           "pulse": 7,
+          "timelineDate": "2025-12-22",
           "entity": {
             "id": "dev-sapien-m3",
             "type": "therapy",
@@ -2991,14 +3647,47 @@
             "treats": [
               "cond-mr"
             ],
-            "regulatoryStatus": "investigational",
-            "regulatoryDetail": "Investigational transseptal TMVR (ENCIRCLE pivotal trial); uses a dock to capture a SAPIEN valve in the mitral position.",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA approved 2025-12-22 (PMA P250019) as the first transseptal TMVR system, based on ENCIRCLE; uses a dock to capture a SAPIEN valve in the mitral position.",
+            "timeline": {
+              "date": "2025-12-22",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "FDA approval of SAPIEN M3 transseptal TMVR",
+              "source": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250019"
+            },
             "mechanism": "Nitinol dock encircles the mitral leaflets/chordae, then a balloon-expandable SAPIEN valve is implanted within the dock.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Encircling dock and paravalvular-leak guard",
+                "category": "anchor",
+                "source": "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-mitral-tricuspid-technologies/sapien-m3/features"
+              },
+              {
+                "name": "Cobalt-chromium alloy",
+                "role": "Balloon-expandable valve frame",
+                "category": "frame",
+                "source": "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-mitral-tricuspid-technologies/sapien-m3/features"
+              },
+              {
+                "name": "Bovine pericardium",
+                "role": "Trileaflet valve tissue",
+                "category": "leaflet",
+                "source": "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-mitral-tricuspid-technologies/sapien-m3/features"
+              },
+              {
+                "name": "Polyethylene terephthalate (PET)",
+                "role": "Full-frame sealing skirt",
+                "category": "fabric",
+                "source": "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-mitral-tricuspid-technologies/sapien-m3/features"
+              }
+            ],
             "pulse": 7,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-28",
-              "notes": "CONFIRMED: FDA approved 2025-12-23 as the Edwards SAPIEN M3 Mitral Valve Replacement System — the first transseptal TMVR device — for (1) symptomatic moderate-to-severe/severe MR unsuitable for surgery/TEER and (2) mitral valve dysfunction associated with mitral annular calcification unsuitable for surgery/TEER. Based on the single-arm ENCIRCLE pivotal trial (299 patients; ~95.7% achieved MR <=1+; presented TCT 2025-10-27, published Lancet 2025-11-29). CE Mark was earlier, April 2025. One-year ENCIRCLE-MAC Registry data were separately presented at New York Valves 2026 (Jun 24-26). Sources: https://www.edwards.com/newsroom/news/2025-12-23-fda-approves-edwards-lifesciences--sapien-m3-mitra ; https://www.tctmd.com/news/fda-approves-sapien-m3-transseptal-mitral-valve-replacement. Human curator: update regulatoryStatus to approved, regulatoryDetail, and add an fda-approval timeline (2025-12-23)."
+              "lastUpdated": "2026-09-23",
+              "notes": "2026-09-23: status, regulatoryDetail, and timeline applied at the owner's request using the FDA decision date 2025-12-22 (P250019; Edwards announced 2025-12-23). Earlier note: CONFIRMED: FDA approved 2025-12-23 as the Edwards SAPIEN M3 Mitral Valve Replacement System — the first transseptal TMVR device — for (1) symptomatic moderate-to-severe/severe MR unsuitable for surgery/TEER and (2) mitral valve dysfunction associated with mitral annular calcification unsuitable for surgery/TEER. Based on the single-arm ENCIRCLE pivotal trial (299 patients; ~95.7% achieved MR <=1+; presented TCT 2025-10-27, published Lancet 2025-11-29). CE Mark was earlier, April 2025. One-year ENCIRCLE-MAC Registry data were separately presented at New York Valves 2026 (Jun 24-26). Sources: https://www.edwards.com/newsroom/news/2025-12-23-fda-approves-edwards-lifesciences--sapien-m3-mitra ; https://www.tctmd.com/news/fda-approves-sapien-m3-transseptal-mitral-valve-replacement. Human curator: update regulatoryStatus to approved, regulatoryDetail, and add an fda-approval timeline (2025-12-23)."
             }
           }
         }
@@ -3025,6 +3714,26 @@
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational TMVR (APOLLO pivotal trial); transseptal delivery system in development.",
             "mechanism": "Self-expanding dual-stent bovine-pericardial mitral valve with a conformable outer fixation ring.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding inner stent and outer fixation frame",
+                "category": "frame",
+                "source": "https://cdn.clinicaltrials.gov/large-docs/40/NCT02322840/Prot_SAP_001.pdf"
+              },
+              {
+                "name": "Bovine pericardium",
+                "role": "Trileaflet valve tissue",
+                "category": "leaflet",
+                "source": "https://cdn.clinicaltrials.gov/large-docs/40/NCT02322840/Prot_SAP_001.pdf"
+              },
+              {
+                "name": "Polyester",
+                "role": "Woven valve-support fabric",
+                "category": "fabric",
+                "source": "https://cdn.clinicaltrials.gov/large-docs/40/NCT02322840/Prot_SAP_001.pdf"
+              }
+            ],
             "pulse": 4,
             "curation": {
               "status": "curated",
@@ -3062,6 +3771,26 @@
               "event": "FDA approval for primary/degenerative mitral regurgitation"
             },
             "mechanism": "Percutaneous transseptal clip that grasps the mitral leaflets to create a double-orifice valve and reduce regurgitation.",
+            "materials": [
+              {
+                "name": "Cobalt-chromium alloy",
+                "role": "Clip arms and body",
+                "category": "frame",
+                "source": "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/au/hcp/structural-heart/pdfs/mitraclip/Exec%20Summary%20-%20MitraClip%20G4%20v2.pdf"
+              },
+              {
+                "name": "Nitinol",
+                "role": "Flexible grippers and frictional elements",
+                "category": "anchor",
+                "source": "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/au/hcp/structural-heart/pdfs/mitraclip/Exec%20Summary%20-%20MitraClip%20G4%20v2.pdf"
+              },
+              {
+                "name": "Polyester",
+                "role": "Clip and gripper fabric cover that promotes tissue growth",
+                "category": "fabric",
+                "source": "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/au/hcp/structural-heart/pdfs/mitraclip/Exec%20Summary%20-%20MitraClip%20G4%20v2.pdf"
+              }
+            ],
             "links": [
               {
                 "label": "Product page",
@@ -3105,6 +3834,20 @@
               "event": "FDA approval for degenerative mitral regurgitation"
             },
             "mechanism": "Transseptal edge-to-edge repair device with a central spacer that fills the regurgitant orifice and broad paddles for leaflet capture.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Flexible spacer, paddles, and clasps",
+                "category": "frame",
+                "source": "https://www.fda.gov/medical-devices/recently-approved-devices/pascal-precision-transcatheter-valve-repair-system"
+              },
+              {
+                "name": "Polyethylene terephthalate (PET)",
+                "role": "Cloth covering the implant's primary components",
+                "category": "fabric",
+                "source": "https://www.fda.gov/medical-devices/recently-approved-devices/pascal-precision-transcatheter-valve-repair-system"
+              }
+            ],
             "links": [
               {
                 "label": "Product page",
@@ -3149,6 +3892,26 @@
               "event": "FDA approval for tricuspid regurgitation"
             },
             "mechanism": "Transcatheter edge-to-edge clip adapted to tricuspid anatomy to approximate leaflets and reduce TR.",
+            "materials": [
+              {
+                "name": "Cobalt-chromium alloy",
+                "role": "Clip arms and body",
+                "category": "frame",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf"
+              },
+              {
+                "name": "Nitinol",
+                "role": "Flexible grippers and frictional elements",
+                "category": "anchor",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf"
+              },
+              {
+                "name": "Polyester",
+                "role": "Clip and gripper fabric cover",
+                "category": "fabric",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf"
+              }
+            ],
             "links": [
               {
                 "label": "Product page",
@@ -3184,6 +3947,15 @@
             "regulatoryDetail": "Investigational transcatheter tricuspid repair system; exclusively for clinical investigation and not commercially available.",
             "mechanism": "A transfemorally delivered, conformable nitinol frame sits entirely in the right atrium to stabilize annular dilation, while a central disk reduces the regurgitant orifice and supports native leaflet coaptation without entering the right ventricle.",
             "description": "A dual-mechanism repair concept intended to combine annular stabilization with leaflet enhancement while preserving the native tricuspid valve.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Conformable right-atrial frame with tissue-anchoring barbs",
+                "category": "frame",
+                "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12926008/",
+                "note": "The public first-in-human report describes a textile ingrowth skirt but does not identify its polymer."
+              }
+            ],
             "links": [
               {
                 "label": "Developer page",
@@ -3237,6 +4009,26 @@
               "event": "FDA approval for tricuspid regurgitation"
             },
             "mechanism": "Self-expanding bovine-pericardial valve with intra-annular sealing and anchoring tabs that engage native tricuspid leaflets.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding valve frame and leaflet-engaging anchors",
+                "category": "frame",
+                "source": "https://eifu.edwards.com/eifu/tmtt-production-eifus/DOC-0255961B.pdf"
+              },
+              {
+                "name": "Bovine pericardium",
+                "role": "Trileaflet valve tissue",
+                "category": "leaflet",
+                "source": "https://eifu.edwards.com/eifu/tmtt-production-eifus/DOC-0255961B.pdf"
+              },
+              {
+                "name": "Polyethylene terephthalate (PET)",
+                "role": "Intra-annular fabric sealing skirt",
+                "category": "fabric",
+                "source": "https://eifu.edwards.com/eifu/tmtt-production-eifus/DOC-0583384A.pdf"
+              }
+            ],
             "links": [
               {
                 "label": "Product page",
@@ -3282,6 +4074,20 @@
               "notes": "Earliest known Cardioband CE mark; tricuspid CE mark came later."
             },
             "mechanism": "Adjustable transcatheter annuloplasty band anchored along the valve annulus and cinched to reduce annular dimension and regurgitation.",
+            "materials": [
+              {
+                "name": "Polyester",
+                "role": "Adjustable annuloplasty sleeve",
+                "category": "fabric",
+                "source": "https://eurointervention.pcronline.com/article/the-cardioband-transcatheter-direct-mitral-valve-annuloplasty-system"
+              },
+              {
+                "name": "Stainless steel",
+                "role": "Helical annular anchors",
+                "category": "anchor",
+                "source": "https://eurointervention.pcronline.com/article/the-cardioband-transcatheter-direct-mitral-valve-annuloplasty-system"
+              }
+            ],
             "pulse": 4,
             "curation": {
               "status": "curated",
@@ -3299,7 +4105,7 @@
           "isDraft": false,
           "degree": 2,
           "pulse": 3,
-          "timelineDate": "2010-01-01",
+          "timelineDate": "2010-01-25",
           "entity": {
             "id": "dev-melody",
             "type": "therapy",
@@ -3311,18 +4117,33 @@
               "cond-pv"
             ],
             "regulatoryStatus": "approved",
-            "regulatoryDetail": "FDA Humanitarian Device Exemption 2010; PMA approval 2017. For dysfunctional RVOT conduits/bioprosthetic valves.",
+            "regulatoryDetail": "FDA Humanitarian Device Exemption 2010 (H080002); PMA approval 2015-01-27 (P140017). For dysfunctional RVOT conduits/bioprosthetic valves.",
             "timeline": {
-              "date": "2010-01-01",
-              "precision": "year",
+              "date": "2010-01-25",
+              "precision": "day",
               "dateBasis": "fda-approval",
               "event": "FDA humanitarian device exemption"
             },
             "mechanism": "Balloon-expandable bovine-jugular-vein valve sutured in a platinum-iridium stent for the pulmonary position.",
+            "materials": [
+              {
+                "name": "Platinum-iridium alloy",
+                "role": "Balloon-expandable valve stent",
+                "category": "frame",
+                "source": "https://w.medtronic.com/melody/downloads/ensemble-ii-product-brochure.pdf"
+              },
+              {
+                "name": "Bovine jugular vein",
+                "role": "Biologic valve conduit and leaflets",
+                "category": "leaflet",
+                "source": "https://w.medtronic.com/melody/downloads/ensemble-ii-product-brochure.pdf"
+              }
+            ],
             "pulse": 3,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-09-23",
+              "notes": "2026-09-23: PMA year corrected 2017→2015 and HDE date set to 2010-01-25 at the owner's request (openFDA; https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140017B.pdf p.1)."
             }
           }
         }
@@ -3356,6 +4177,27 @@
               "event": "FDA approval"
             },
             "mechanism": "Self-expanding porcine-pericardial valve in a nitinol frame designed to seat in the native RVOT/main pulmonary artery.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding right-ventricular-outflow-tract frame",
+                "category": "frame",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf"
+              },
+              {
+                "name": "Porcine pericardium",
+                "role": "Trileaflet pulmonary valve tissue",
+                "category": "leaflet",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf",
+                "note": "Processed with Medtronic's alpha-amino oleic acid anti-mineralization treatment."
+              },
+              {
+                "name": "Polyester",
+                "role": "Knitted frame covering",
+                "category": "fabric",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf"
+              }
+            ],
             "pulse": 4,
             "curation": {
               "status": "curated",
@@ -3402,7 +4244,7 @@
           "category": "Surgical valve repair/replacement",
           "isDraft": false,
           "degree": 3,
-          "pulse": 3,
+          "pulse": 4,
           "entity": {
             "id": "proc-mv-surgery",
             "type": "therapy",
@@ -3416,7 +4258,7 @@
             "regulatoryStatus": "approved",
             "regulatoryDetail": "Standard surgical therapy; repair (annuloplasty + leaflet/chordal techniques) preferred over replacement for degenerative MR.",
             "mechanism": "Open or minimally-invasive surgical repair (annuloplasty ring, leaflet resection/neochordae) or prosthetic replacement of the mitral valve.",
-            "pulse": 3,
+            "pulse": 4,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -3432,7 +4274,7 @@
           "category": "Surgical valve repair/replacement",
           "isDraft": false,
           "degree": 1,
-          "pulse": 2,
+          "pulse": 4,
           "entity": {
             "id": "proc-tv-surgery",
             "type": "therapy",
@@ -3445,7 +4287,7 @@
             "regulatoryStatus": "approved",
             "regulatoryDetail": "Standard surgical therapy, classically annuloplasty during left-sided heart surgery; isolated tricuspid surgery carries higher operative risk.",
             "mechanism": "Surgical annuloplasty (ring) or prosthetic replacement of the tricuspid valve.",
-            "pulse": 2,
+            "pulse": 4,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
@@ -3507,6 +4349,185 @@
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-06-22"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-trimemo",
+          "label": "Corcym TriMemo",
+          "group": "device",
+          "category": "Surgical annuloplasty ring",
+          "isDraft": true,
+          "degree": 2,
+          "pulse": 4,
+          "entity": {
+            "id": "dev-trimemo",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Surgical annuloplasty ring",
+            "name": "Corcym TriMemo",
+            "company": "co-corcym",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA cleared April 2026; commercially available in the US. First-in-human implant September 8, 2026 at Cleveland Clinic. First tricuspid-specific extension of Corcym's ~20-year Memo mitral annuloplasty platform.",
+            "mechanism": "Semi-rigid, open Nitinol-cell annuloplasty ring with a Carbofilm-coated silicone sheath, implanted surgically to remodel/support the tricuspid annulus.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Cell-structure ring core",
+                "category": "frame",
+                "source": "https://www.corcym.com/devices/mitral/memo4d"
+              },
+              {
+                "name": "Silicone",
+                "role": "Oval sheath over the ring core",
+                "category": "fabric",
+                "source": "https://www.corcym.com/devices/mitral/memo4d"
+              },
+              {
+                "name": "Carbofilm (turbostratic carbon)",
+                "role": "Surface coating of the sheath",
+                "category": "coating",
+                "source": "https://www.corcym.com/devices/mitral/memo4d"
+              }
+            ],
+            "pulse": 4,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-23",
+              "sources": [
+                "https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair",
+                "https://www.corcym.com/devices/mitral/memo4d"
+              ],
+              "notes": "Draft from 2026-09-23 research. Needed to attach the Sept 8, 2026 first-in-human TriMemo news item; no existing device id covers a dedicated tricuspid surgical annuloplasty ring. Exact FDA clearance date/number and material composition should be verified against the 510(k) summary before promotion to curated (materials above are inferred from the closed-ring Memo 4D product page, not a TriMemo-specific source, since no TriMemo product page could be located). Sources: https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair ; https://www.massdevice.com/corcym-achieves-first-in-human-implant-of-trimemo-for-tricuspid-valve-repair/"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-memo-4d-curve",
+          "label": "Corcym Memo 4D Curve",
+          "group": "device",
+          "category": "Surgical annuloplasty ring",
+          "isDraft": true,
+          "degree": 2,
+          "pulse": 4,
+          "entity": {
+            "id": "dev-memo-4d-curve",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Surgical annuloplasty ring",
+            "name": "Corcym Memo 4D Curve",
+            "company": "co-corcym",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA cleared and commercially available in the US as of September 2026. Open-configuration addition to the Memo 4D mitral-ring family (sizes up to 42 mm). First-in-human implant September 22, 2026 at UVA Health.",
+            "mechanism": "Semi-rigid, open-configuration Nitinol-cell annuloplasty ring with a Carbofilm-coated silicone sheath, designed to preserve three-dimensional mitral annular motion while remodeling annuli from standard degenerative disease to severely dilated.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Cell-structure ring core",
+                "category": "frame",
+                "source": "https://www.corcym.com/devices/mitral/memo4d"
+              },
+              {
+                "name": "Silicone",
+                "role": "Oval sheath over the ring core",
+                "category": "fabric",
+                "source": "https://www.corcym.com/devices/mitral/memo4d"
+              },
+              {
+                "name": "Carbofilm (turbostratic carbon)",
+                "role": "Surface coating of the sheath",
+                "category": "coating",
+                "source": "https://www.corcym.com/devices/mitral/memo4d"
+              }
+            ],
+            "pulse": 4,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-23",
+              "sources": [
+                "https://www.financialcontent.com/article/bizwire-2026-9-22-corcym-announces-first-in-human-implant-of-memo-4d-curve-expanding-its-memo-mitral-repair-platform",
+                "https://www.corcym.com/devices/mitral/memo4d"
+              ],
+              "notes": "Draft from 2026-09-23 research. Needed to attach the Sept 22, 2026 first-in-human Memo 4D Curve news item; existing graph has no Corcym mitral-annuloplasty device id. Exact FDA clearance date/number not disclosed in the press release and should be verified before promotion to curated. Sources: https://www.financialcontent.com/article/bizwire-2026-9-22-corcym-announces-first-in-human-implant-of-memo-4d-curve-expanding-its-memo-mitral-repair-platform ; https://cvillerightnow.com/news/208802-uva-health-first-in-world-to-implant-new-cardiac-mitral-valve-repair-device/"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-azd5462",
+          "label": "AZD5462",
+          "group": "pharmaceutical",
+          "category": "relaxin receptor (RXFP1) agonist",
+          "isDraft": true,
+          "degree": 3,
+          "pulse": 6,
+          "entity": {
+            "id": "rx-azd5462",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "relaxin receptor (RXFP1) agonist",
+            "name": "AZD5462",
+            "company": "co-astrazeneca",
+            "treats": [
+              "cond-hfref"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Phase 2b (LUMINARA) hemodynamic/safety data presented at ESC 2026; not yet approved for any indication. Larger, outcomes-powered trials are planned.",
+            "mechanism": "Oral small-molecule agonist of the RXFP1 relaxin receptor; reduces systemic vascular resistance/afterload and is intended to promote reverse cardiac remodeling.",
+            "pulse": 6,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-23",
+              "sources": [
+                "https://www.escardio.org/news/press/press-releases/novel-drug-shows-promise-in-an-early-phase-trial-in-heart-failure/",
+                "https://pubmed.ncbi.nlm.nih.gov/42668430/"
+              ],
+              "notes": "New investigational mechanism (relaxin pathway) not previously represented in the graph. Only Phase 2b dose-ranging/hemodynamic data exist; not powered for clinical outcomes."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-tirzepatide",
+          "label": "Tirzepatide (Zepbound)",
+          "group": "pharmaceutical",
+          "category": "GLP-1/GIP receptor agonist",
+          "isDraft": true,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "rx-tirzepatide",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "subtype": "GLP-1/GIP receptor agonist",
+            "name": "Tirzepatide (Zepbound)",
+            "company": "co-eli-lilly",
+            "treats": [
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Approved for weight loss and obstructive sleep apnea; NOT approved for an HFpEF indication as of Sept 2026. Positive Phase 3 SUMMIT trial (obesity-related HFpEF) supports a new Class IIa recommendation for semaglutide/tirzepatide in the 2026 ESC heart failure guidelines, but that is a guideline recommendation, not a drug-label change.",
+            "mechanism": "Dual GLP-1/GIP receptor agonist; weight loss and direct cardiometabolic effects are proposed to reduce filling pressures and symptom burden in obesity-related HFpEF.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-23",
+              "sources": [
+                "https://www.escardio.org/news/press/press-releases/major-changes-made-to-the-esc-guidelines-on-heart-failure/",
+                "https://en.wikipedia.org/wiki/Tirzepatide"
+              ],
+              "notes": "GLP-1/obesity-HFpEF is explicitly in scope for this graph and currently has no representative entity. SUMMIT trial primary results were NOT independently re-verified against NEJM this pass -- VERIFY trial name/NCT/date before promoting to curated, and confirm current regulatory status has not changed."
             }
           }
         }
@@ -3577,10 +4598,11 @@
             "name": "W. L. Gore & Associates",
             "hq": "Newark, DE, USA",
             "website": "https://www.goremedical.com",
-            "description": "Maker of GORE Cardioform septal/PFO occluders.",
+            "description": "Maker of GORE Cardioform septal/PFO occluders; acquired Conformal Medical (CLAAS AcuFORM LAAO system, investigational) in February 2026.",
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22"
+              "lastUpdated": "2026-09-23",
+              "notes": "2026-09-23: Conformal acquisition (announced 2026-01-05, closed 2026-02-19) added to description at the owner's request. Source: https://www.gore.com/news-events/gore-acquiring-conformal-medical"
             }
           }
         }
@@ -3886,7 +4908,7 @@
           "label": "AstraZeneca",
           "group": "company",
           "isDraft": false,
-          "degree": 1,
+          "degree": 2,
           "pulse": 0,
           "entity": {
             "id": "co-astrazeneca",
@@ -4137,6 +5159,60 @@
                 "https://www.businesswire.com/news/home/20251118907873/en/VahatiCor-Closes-Oversubscribed-Series-B-Financing-to-Accelerate-A-FLUX-Development-for-Coronary-Microvascular-Dysfunction."
               ],
               "notes": "Confirms the maker of the 'A-flux' device previously logged as an unverified placeholder on dev-aflux. HQ city not verified; VERIFY exact HQ location before promoting."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-corcym",
+          "label": "Corcym",
+          "group": "company",
+          "isDraft": true,
+          "degree": 2,
+          "pulse": 4,
+          "entity": {
+            "id": "co-corcym",
+            "type": "company",
+            "name": "Corcym",
+            "website": "https://www.corcym.com/",
+            "description": "Structural and cardiac-surgery company (spun out of LivaNova's Cardiac Surgery business in 2022) that makes surgical heart valves and the Nitinol Memo annuloplasty-ring platform, now extended to the tricuspid valve via TriMemo.",
+            "pulse": 4,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-23",
+              "sources": [
+                "https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair",
+                "https://www.corcym.com/devices/mitral/memo4d"
+              ],
+              "notes": "Draft from 2026-09-23 research. Maker of the TriMemo and Memo 4D Curve devices reported in news-2026-09-08-... and news-2026-09-22-...; no company node currently exists to attach these devices to. HQ/ticker not verified — left blank rather than guessed. Sources: https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair ; https://www.financialcontent.com/article/bizwire-2026-9-22-corcym-announces-first-in-human-implant-of-memo-4d-curve-expanding-its-memo-mitral-repair-platform"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-eli-lilly",
+          "label": "Eli Lilly and Company",
+          "group": "company",
+          "isDraft": true,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-eli-lilly",
+            "type": "company",
+            "name": "Eli Lilly and Company",
+            "ticker": "LLY",
+            "hq": "Indianapolis, IN, USA",
+            "website": "https://www.lilly.com",
+            "description": "Maker of tirzepatide (Mounjaro/Zepbound); sponsor of the SUMMIT trial evaluating tirzepatide in obesity-related HFpEF.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-23",
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tirzepatide"
+              ],
+              "notes": "Added only to support the rx-tirzepatide proposal below; standard company facts not independently re-verified against a primary source this pass."
             }
           }
         }
@@ -6678,6 +7754,86 @@
             }
           }
         }
+      },
+      {
+        "data": {
+          "id": "trial-closure-af",
+          "label": "CLOSURE-AF",
+          "group": "trial",
+          "isDraft": true,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-closure-af",
+            "type": "trial",
+            "name": "CLOSURE-AF",
+            "phase": "RCT",
+            "status": "completed",
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-watchman-flx",
+              "dev-amulet"
+            ],
+            "enrollment": 888,
+            "year": 2026,
+            "primaryEndpoint": "Composite of stroke, systemic embolism, major bleeding, or cardiovascular/unexplained death",
+            "outcomeSummary": "LAAO failed to demonstrate noninferiority to best medical (anticoagulant) therapy in patients with AF at high stroke and bleeding risk, with significantly worse composite outcomes overall; a later sex-specific analysis found the harm was concentrated in women.",
+            "resultStatus": "negative",
+            "references": [
+              "https://www.tctmd.com/news/closure-af-worse-outcomes-laao-driven-results-women"
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-23",
+              "sources": [
+                "https://www.tctmd.com/news/closure-af-worse-outcomes-laao-driven-results-women",
+                "https://www.tctmd.com/news/cms-finalizes-anticipated-updates-national-coverage-tavi"
+              ],
+              "notes": "German DZHK-sponsored multicenter RCT; main results published in NEJM (~Nov 2025), sex-specific subgroup presented at ESC 2026 and already covered by news-2026-09-11-closure-af-sex-specific-analysis-raises-new-caution-about-laao-in-older in data/news.yaml, which currently only links to cond-af. NCT number and the exact per-site device mix were NOT independently verified (multiple commercial LAAO devices were reportedly used across sites) -- therapies list is representative only. VERIFY nctId and device list before promoting to curated."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-luminara",
+          "label": "LUMINARA",
+          "group": "trial",
+          "isDraft": true,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-luminara",
+            "type": "trial",
+            "name": "LUMINARA",
+            "phase": "Phase 2b",
+            "status": "completed",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "rx-azd5462"
+            ],
+            "enrollment": 375,
+            "year": 2026,
+            "primaryEndpoint": "Dose-ranging hemodynamic, echocardiographic, and safety/tolerability measures at 24 weeks",
+            "outcomeSummary": "Lowest studied dose (20 mg) of AZD5462 reduced end-systolic volume index in an HFrEF cohort (LVEF <=35%) and lowered systemic vascular resistance in a separate LVEF 41-55% cohort, with good tolerability and no excess hypotension or volume overload; the trial was not powered for clinical outcomes.",
+            "resultStatus": "positive",
+            "references": [
+              "https://pubmed.ncbi.nlm.nih.gov/42668430/"
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-23",
+              "sources": [
+                "https://www.escardio.org/news/press/press-releases/novel-drug-shows-promise-in-an-early-phase-trial-in-heart-failure/"
+              ],
+              "notes": "69-site, 10-country dose-ranging study presented as an ESC 2026 Hot Line and published in Circulation. NCT number not independently verified -- VERIFY before promoting to curated."
+            }
+          }
+        }
       }
     ],
     "edges": [
@@ -7614,6 +8770,70 @@
           "id": "proc-pmbc__treats__cond-ms",
           "source": "proc-pmbc",
           "target": "cond-ms",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-trimemo__made_by__co-corcym",
+          "source": "dev-trimemo",
+          "target": "co-corcym",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-trimemo__treats__cond-tr",
+          "source": "dev-trimemo",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-memo-4d-curve__made_by__co-corcym",
+          "source": "dev-memo-4d-curve",
+          "target": "co-corcym",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-memo-4d-curve__treats__cond-mr",
+          "source": "dev-memo-4d-curve",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-azd5462__made_by__co-astrazeneca",
+          "source": "rx-azd5462",
+          "target": "co-astrazeneca",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-azd5462__treats__cond-hfref",
+          "source": "rx-azd5462",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-tirzepatide__made_by__co-eli-lilly",
+          "source": "rx-tirzepatide",
+          "target": "co-eli-lilly",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-tirzepatide__treats__cond-hfpef",
+          "source": "rx-tirzepatide",
+          "target": "cond-hfpef",
           "relationship": "treats"
         }
       },
@@ -8630,6 +9850,46 @@
           "id": "trial-harmony__studies__cond-pv",
           "source": "trial-harmony",
           "target": "cond-pv",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-closure-af__evaluates__dev-watchman-flx",
+          "source": "trial-closure-af",
+          "target": "dev-watchman-flx",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-closure-af__evaluates__dev-amulet",
+          "source": "trial-closure-af",
+          "target": "dev-amulet",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-closure-af__studies__cond-af",
+          "source": "trial-closure-af",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-luminara__evaluates__rx-azd5462",
+          "source": "trial-luminara",
+          "target": "rx-azd5462",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-luminara__studies__cond-hfref",
+          "source": "trial-luminara",
+          "target": "cond-hfref",
           "relationship": "studies"
         }
       }

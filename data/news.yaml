@@ -2,6 +2,56 @@
 # Historical entries were imported from the archived weekly digest emails.
 # Every relevantNodeIds entry must resolve to an existing graph node.
 
+- id: "news-2026-09-23-acoramidis-real-world-study-shows-benefit-vs-tafamidis"
+  publishedAt: "2026-09-23"
+  title: "Acoramidis Shows Real-World Benefit Versus Tafamidis in ATTR-CM"
+  summary: "A peer-reviewed U.S. claims-data study comparing acoramidis (170 patients) with tafamidis (448 patients) in ATTR-CM found a 34% lower risk of a composite clinical-worsening endpoint (diuretic intensification, HF hospitalization, or death) with acoramidis, and a 43% lower risk of diuretic intensification alone. BridgeBio, which markets acoramidis, sponsored the analysis and cautioned that administrative claims data capture cardiac biomarkers poorly and that the 4.6-month average follow-up is short given acoramidis' recent approval."
+  sourceName: "BridgeBio Pharma"
+  sourceUrl: "https://www.globenewswire.com/news-release/2026/09/23/3367401/0/en/acoramidis-demonstrates-real-world-benefit-versus-tafamidis-in-attr-cm-reducing-risk-of-clinical-worsening.html"
+  topicTags: ["ATTR-CM", "real-world evidence", "pharmaceutical"]
+  relevantNodeIds: ["rx-acoramidis", "rx-tafamidis", "cond-attr-cm"]
+
+
+- id: "news-2026-09-22-corcym-memo-4d-curve-first-in-human-implant-mitral-annuloplasty"
+  publishedAt: "2026-09-22"
+  title: "Corcym reports first-in-human implant of Memo 4D Curve, an open-configuration mitral annuloplasty ring"
+  summary: "Corcym announced the first human implant of Memo 4D Curve, an FDA-cleared open-configuration addition to its Nitinol Memo mitral annuloplasty family, sized up to 42 mm for annuli ranging from standard degenerative disease to severely dilated. Michael Ibrahim performed the procedure at UVA Health; Corcym said it will formally introduce the ring internationally at the EACTS meeting in October 2026. No comparative outcomes data versus the existing closed Memo 4D ring were disclosed."
+  sourceName: "Corcym (BusinessWire release)"
+  sourceUrl: "https://www.financialcontent.com/article/bizwire-2026-9-22-corcym-announces-first-in-human-implant-of-memo-4d-curve-expanding-its-memo-mitral-repair-platform"
+  topicTags: ["mitral regurgitation", "surgical annuloplasty", "first-in-human"]
+  relevantNodeIds: ["cond-mr", "proc-mv-surgery"]
+
+
+
+- id: "news-2026-09-22-ubc-ivalve-soft-closure-mechanical-heart-valve"
+  publishedAt: "2026-09-22"
+  title: "UBC's Heart Valve Performance Laboratory reports on a soft-closure mechanical valve prototype"
+  summary: "The University of British Columbia's Heart Valve Performance Laboratory described the design rationale and pulse-duplicator hydrodynamic testing of iValve, a bileaflet mechanical heart-valve platform built around curved leaflets and distributed, progressive closure contact intended to reduce the rapid-closure flow events linked to mechanical-valve thromboembolism and hemolysis. Prototypes maintained large projected opening areas across 10 test cycles at physiologic flow and pressure conditions. # needs-fulltext: abstract/metadata only, full text is paywalled."
+  sourceName: "Journal of Biomechanics"
+  sourceUrl: "https://doi.org/10.1016/j.jbiomech.2026.113582"
+  topicTags: ["mechanical heart valve", "hydrodynamics", "device design"]
+  relevantNodeIds: ["cond-as"]
+
+- id: "news-2026-09-18-open-heart-study-links-tavr-delay-beyond-6-months-to-worse-outcomes"
+  publishedAt: "2026-09-18"
+  title: "Single-center study links TAVR performed more than 6 months after AS diagnosis to worse outcomes"
+  summary: "A retrospective single-center study of 149 severe aortic stenosis patients (2021-2023) found the composite of heart-failure hospitalization or death occurred more often when TAVR was performed more than 6 months after diagnosis (n=49) than within 6 months (n=100), over a median 729-day follow-up. Guidelines already call for surveillance within roughly 6-12 months for patients who do not meet immediate-intervention criteria; the authors say the findings support timelier evaluation but call for larger, multicenter confirmation given the small, single-site, non-randomized design."
+  sourceName: "Open Heart"
+  sourceUrl: "https://doi.org/10.1136/openhrt-2026-004403"
+  topicTags: ["TAVR", "aortic stenosis", "treatment timing", "outcomes research"]
+  relevantNodeIds: ["cond-as"]
+
+
+
+- id: "news-2026-09-16-politecnico-milano-tavi-post-dilation-simulation"
+  publishedAt: "2026-09-16"
+  title: "Politecnico di Milano validates a balloon post-dilation model for patient-specific TAVI simulation"
+  summary: "Politecnico di Milano engineers, working with Ospedale Maggiore Policlinico, added a calibrated finite-element balloon model to patient-specific TAVI simulations to reproduce the post-dilation step that earlier simulation pipelines skipped. Predicted post-dilation valve configurations were compared against post-operative CT in four patients, and including the post-dilation step improved agreement between simulated and actual final device geometry. # needs-fulltext: abstract/metadata only, full text is paywalled."
+  sourceName: "Annals of Biomedical Engineering"
+  sourceUrl: "https://doi.org/10.1007/s10439-026-04325-0"
+  topicTags: ["TAVR", "computational modeling", "digital twin"]
+  relevantNodeIds: ["cond-as"]
+
 - id: "news-2026-09-12-ai-powered-ultrasound-robotic-system-guides-transcatheter-closure-of-con"
   publishedAt: "2026-09-12"
   title: "AI-powered ultrasound robotic system guides transcatheter closure of congenital heart disease in China"
@@ -10,6 +60,18 @@
   sourceUrl: "https://interestingengineering.com/science/world-first-ai-backed-ultrasound-robot-congenital-heart-surgery-completed-in-china"
   topicTags: ["ASD closure", "robotics", "clinical AI"]
   relevantNodeIds: ["cond-asd", "dev-amplatzer-asd"]
+
+
+
+
+- id: "news-2026-09-12-sichuan-university-nanogel-coating-bioprosthetic-valve"
+  publishedAt: "2026-09-12"
+  title: "ROS-responsive nanogel coating targets inflammation-driven bioprosthetic valve failure"
+  summary: "Sichuan University (West China Hospital) researchers compared explanted failed and non-degenerated bioprosthetic heart valves and found pronounced inflammation and reactive-oxygen-species accumulation in the failed leaflets. Guided by that finding, they built a ROS-responsive, diclofenac-releasing zwitterionic nanogel coating for glutaraldehyde-fixed pericardium designed to blunt inflammation-driven degeneration rather than only address calcification directly. # needs-fulltext: abstract/metadata only, full text is paywalled."
+  sourceName: "Acta Biomaterialia"
+  sourceUrl: "https://doi.org/10.1016/j.actbio.2026.09.020"
+  topicTags: ["bioprosthetic valve", "leaflet durability", "biomaterials"]
+  relevantNodeIds: ["cond-as"]
 
 - id: "news-2026-09-11-cms-finalizes-expanded-medicare-coverage-for-tavr-including-asymptomatic"
   publishedAt: "2026-09-11"
@@ -20,6 +82,9 @@
   topicTags: ["TAVR", "reimbursement", "policy"]
   relevantNodeIds: ["cond-as", "dev-sapien-3", "dev-evolut", "dev-navitor"]
 
+
+
+
 - id: "news-2026-09-11-closure-af-sex-specific-analysis-raises-new-caution-about-laao-in-older"
   publishedAt: "2026-09-11"
   title: "CLOSURE-AF sex-specific analysis raises new caution about LAAO in older women who can tolerate DOAC therapy"
@@ -28,6 +93,9 @@
   sourceUrl: "https://www.tctmd.com/news/closure-af-worse-outcomes-laao-driven-results-women"
   topicTags: ["LAAO", "atrial fibrillation", "clinical evidence"]
   relevantNodeIds: ["cond-af"]
+
+
+
 
 - id: "news-2026-09-10-emboline-receives-fda-clearance-for-the-emboliner-embolic-protection-sys"
   publishedAt: "2026-09-10"
@@ -38,6 +106,18 @@
   topicTags: ["TAVR", "embolic protection", "FDA clearance"]
   relevantNodeIds: ["cond-as"]
 
+
+
+
+- id: "news-2026-09-10-pediavalve-tissue-engineered-pediatric-pulmonary-valve"
+  publishedAt: "2026-09-10"
+  title: "PEDIAVALVE project reports decellularized pulmonary valves sized for small children"
+  summary: "A Romania-based team (George Emil Palade University of Medicine, Targu Mures) working with Clemson University's Dan Simionescu published decellularization results for lamb pulmonary valves aimed at right ventricular outflow tract reconstruction in children, a size range under 15mm poorly served by current options. The protocol removed over 90% of donor DNA while preserving the valve's 3D matrix architecture, and decellularized valves matched fresh valves on opening area, pressure gradient, and 14-day cell viability in bench testing."
+  sourceName: "Frontiers in Bioengineering and Biotechnology"
+  sourceUrl: "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1902783/full"
+  topicTags: ["tissue engineering", "pediatric heart valve", "pulmonary valve"]
+  relevantNodeIds: ["cond-pv"]
+
 - id: "news-2026-09-09-tempus-receives-arpa-h-award-to-test-an-autonomous-ai-agent-in-heart-fai"
   publishedAt: "2026-09-09"
   title: "Tempus receives ARPA-H award to test an autonomous AI agent in heart failure"
@@ -46,6 +126,9 @@
   sourceUrl: "https://tempus.gcs-web.com/news-releases/news-release-details/tempus-secures-95-million-arpa-h-advocate-funding-deploy-first"
   topicTags: ["digital health", "heart failure", "clinical AI"]
   relevantNodeIds: ["cond-hfref", "cond-hfpef"]
+
+
+
 
 - id: "news-2026-09-09-large-u-s-study-highlights-persistent-heart-failure-risk-and-underuse-of"
   publishedAt: "2026-09-09"
@@ -56,6 +139,9 @@
   topicTags: ["TAVR", "heart failure", "real-world evidence"]
   relevantNodeIds: ["cond-as", "cond-hfref", "cond-hfpef"]
 
+
+
+
 - id: "news-2026-09-09-carvolix-submits-tavipilot-software-for-ce-marking-targeting-european-la"
   publishedAt: "2026-09-09"
   title: "Carvolix submits TAVIPILOT Software for CE marking, targeting European launch in early 2027"
@@ -64,6 +150,20 @@
   sourceUrl: "https://www.marketscreener.com/news/carvolix-takes-a-key-step-toward-commercial-launch-of-tavipilot-software-in-europe-with-regulatory-s-ce785bd9d18af422"
   topicTags: ["TAVR", "procedural guidance", "clinical AI"]
   relevantNodeIds: ["cond-as"]
+
+
+
+
+- id: "news-2026-09-08-corcym-trimemo-first-in-human-implant-tricuspid-annuloplasty"
+  publishedAt: "2026-09-08"
+  title: "Corcym reports first-in-human implant of TriMemo, a dedicated tricuspid annuloplasty ring"
+  summary: "Corcym announced the first human implantation of TriMemo, a semi-rigid Nitinol annuloplasty ring purpose-built for tricuspid valve repair rather than adapted from a mitral design, performed by A. Marc Gillinov at Cleveland Clinic. The device received FDA clearance in April 2026 and is now commercially available in the US, extending Corcym's two-decade-old Memo mitral platform to the tricuspid valve; the release does not describe a pivotal trial or patient-selection criteria beyond this first case."
+  sourceName: "Corcym (BusinessWire release)"
+  sourceUrl: "https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair"
+  topicTags: ["tricuspid regurgitation", "surgical annuloplasty", "first-in-human", "FDA clearance"]
+  relevantNodeIds: ["cond-tr", "proc-tv-surgery"]
+
+
 
 - id: "news-2026-09-06-india-launches-national-valve-registry-for-transcatheter-valve-intervent"
   publishedAt: "2026-09-06"
@@ -74,6 +174,9 @@
   topicTags: ["registry", "real-world evidence", "valvular disease"]
   relevantNodeIds: ["cond-as", "cond-ar", "cond-mr", "cond-tr"]
 
+
+
+
 - id: "news-2026-09-03-innovheart-completes-first-u-s-implant-of-saturn-transseptal-tmvr-system"
   publishedAt: "2026-09-03"
   title: "InnovHeart completes first U.S. implant of Saturn transseptal TMVR system"
@@ -82,6 +185,9 @@
   sourceUrl: "https://www.innovheart.com/"
   topicTags: ["mitral regurgitation", "TMVR", "early feasibility"]
   relevantNodeIds: ["cond-mr"]
+
+
+
 
 - id: "news-2026-09-02-modified-transseptal-batman-technique-reported-for-high-risk-mitral-valv"
   publishedAt: "2026-09-02"
@@ -92,6 +198,9 @@
   topicTags: ["mitral regurgitation", "TMVR", "leaflet modification"]
   relevantNodeIds: ["cond-mr"]
 
+
+
+
 - id: "news-2026-09-02-lux-valve-plus-ttvr-expands-into-eastern-india-with-two-high-risk-cases"
   publishedAt: "2026-09-02"
   title: "LuX-Valve Plus TTVR expands into Eastern India with two high-risk cases"
@@ -100,6 +209,9 @@
   sourceUrl: "https://thebengal.in/2026/09/02/apollo-kolkata-successful-ttvr-tricuspid-valve-replacement-eastern-india/"
   topicTags: ["tricuspid regurgitation", "TTVR", "commercial adoption"]
   relevantNodeIds: ["cond-tr"]
+
+
+
 
 - id: "news-2026-09-01-providence-st-joseph-begins-commercial-use-of-edwards-sapien-m3-tmvr-in"
   publishedAt: "2026-09-01"
@@ -110,6 +222,9 @@
   topicTags: ["mitral regurgitation", "TMVR", "commercial adoption"]
   relevantNodeIds: ["cond-mr", "dev-sapien-m3", "co-edwards"]
 
+
+
+
 - id: "news-2026-09-01-medtronic-invests-up-to-80m-in-pi-cardia-and-secures-option-to-acquire-t"
   publishedAt: "2026-09-01"
   title: "Medtronic invests up to $80M in Pi-Cardia and secures option to acquire the company"
@@ -118,6 +233,9 @@
   sourceUrl: "https://news.medtronic.com/2026-09-01-Medtronic-Announces-Strategic-Investment-in-Pi-Cardia-to-Accelerate-Innovation-for-Complex-TAVR"
   topicTags: ["TAVR", "leaflet modification", "investment"]
   relevantNodeIds: ["cond-as", "co-medtronic"]
+
+
+
 
 - id: "news-2026-08-30-tric-i-hf-shows-transcatheter-tricuspid-repair-can-improve-hard-clinical"
   publishedAt: "2026-08-30"
@@ -128,6 +246,9 @@
   topicTags: ["tricuspid regurgitation", "transcatheter repair", "trial readout"]
   relevantNodeIds: ["cond-tr"]
 
+
+
+
 - id: "news-2026-08-30-tavi-pci-trial-supports-tavr-first-as-a-viable-strategy-when-pci-is-also"
   publishedAt: "2026-08-30"
   title: "TAVI PCI trial supports TAVR-first as a viable strategy when PCI is also planned"
@@ -136,6 +257,9 @@
   sourceUrl: "https://www.acc.org/latest-in-cardiology/articles/2026/08/29/08/48/sun-545am-combo-tavi-esc-2026"
   topicTags: ["TAVR", "PCI", "trial readout"]
   relevantNodeIds: ["cond-as"]
+
+
+
 
 - id: "news-2026-08-30-notion-4-tempers-enthusiasm-for-short-course-anticoagulation-solely-to-p"
   publishedAt: "2026-08-30"
@@ -146,6 +270,9 @@
   topicTags: ["TAVR", "leaflet thrombosis", "anticoagulation"]
   relevantNodeIds: ["cond-as"]
 
+
+
+
 - id: "news-2026-08-30-acasa-tavi-ongoing-noac-monotherapy-reduces-subclinical-leaflet-thrombos"
   publishedAt: "2026-08-30"
   title: "ACASA-TAVI: ongoing NOAC monotherapy reduces subclinical leaflet thrombosis after TAVR"
@@ -154,6 +281,29 @@
   sourceUrl: "https://www.acc.org/latest-in-cardiology/articles/2026/08/29/08/48/sun-545am-combo-tavi-esc-2026"
   topicTags: ["TAVR", "leaflet thrombosis", "anticoagulation"]
   relevantNodeIds: ["cond-as"]
+
+
+
+
+- id: "news-2026-08-30-vutrisiran-benefit-holds-regardless-of-tafamidis-use"
+  publishedAt: "2026-08-30"
+  title: "HELIOS-B Subgroup Shows Vutrisiran Benefit Holds Regardless of Background Tafamidis"
+  summary: "A prespecified HELIOS-B subgroup analysis presented at ESC Congress 2026 examined 654 ATTR-CM patients, 40% of whom were on background tafamidis, and found vutrisiran's effect on the composite of all-cause mortality and recurrent cardiovascular events through 33-36 months was consistent whether or not patients also took tafamidis. Alnylam, which markets vutrisiran, noted the trial was not statistically powered specifically for the tafamidis-combination subgroup and that health-status gains were attenuated in that group."
+  sourceName: "Alnylam Pharmaceuticals"
+  sourceUrl: "https://investors.alnylam.com/press-release?id=30006"
+  topicTags: ["ATTR-CM", "combination therapy", "ESC 2026"]
+  relevantNodeIds: ["rx-vutrisiran", "rx-tafamidis", "trial-helios-b", "cond-attr-cm"]
+
+
+- id: "news-2026-08-30-luminara-phase-2b-oral-relaxin-agonist-azd5462-improves-hf"
+  publishedAt: "2026-08-30"
+  title: "LUMINARA Phase 2b Trial: Oral Relaxin Agonist AZD5462 Shows Early Promise in Heart Failure"
+  summary: "In the 375-patient LUMINARA Phase 2b trial, presented as an ESC 2026 Hot Line and published simultaneously in Circulation, AstraZeneca's oral RXFP1 relaxin-receptor agonist AZD5462 modestly improved a cardiac-remodeling measure (end-systolic volume index) in an HFrEF cohort (LVEF <=35%) and lowered systemic vascular resistance in a separate cohort with LVEF 41-55%, without excess hypotension or fluid retention. This was a dose-ranging safety/hemodynamic study, not powered for clinical outcomes, and the investigators said larger outcomes trials are now needed."
+  sourceName: "European Society of Cardiology"
+  sourceUrl: "https://www.escardio.org/news/press/press-releases/novel-drug-shows-promise-in-an-early-phase-trial-in-heart-failure/"
+  topicTags: ["HFrEF", "investigational drug", "ESC 2026"]
+  relevantNodeIds: ["cond-hfref", "co-astrazeneca"]
+
 
 - id: "news-2026-08-29-esc-analyses-extend-aficamten-evidence-across-obstructive-and-non-obstru"
   publishedAt: "2026-08-29"
@@ -164,6 +314,9 @@
   topicTags: ["HCM", "clinical evidence", "pharmaceutical"]
   relevantNodeIds: ["rx-aficamten", "cond-hcm", "co-cytokinetics", "trial-acacia-hcm", "trial-maple-hcm"]
 
+
+
+
 - id: "news-2026-08-29-ai-supported-monitoring-of-patients-awaiting-tavi-is-linked-to-lower-mor"
   publishedAt: "2026-08-29"
   title: "AI-supported monitoring of patients awaiting TAVI is linked to lower mortality"
@@ -172,6 +325,19 @@
   sourceUrl: "https://esc365.escardio.org/presentation/325788"
   topicTags: ["TAVR", "clinical AI", "patient monitoring"]
   relevantNodeIds: ["cond-as"]
+
+
+
+
+- id: "news-2026-08-29-camzyos-5-year-explorer-lte-data-shown-at-esc-2026"
+  publishedAt: "2026-08-29"
+  title: "Bristol Myers Squibb Presents 5-Year Camzyos (Mavacamten) Data From EXPLORER-LTE at ESC 2026"
+  summary: "In the EXPLORER-LTE cohort of the MAVA-LTE extension study (231 patients followed up to 252 weeks), continuous mavacamten treatment was associated with sustained LVOT-gradient reduction, and 69.6% of patients improved by at least one NYHA class, with no new safety signals versus the original EXPLORER-HCM trial. Seven patients had reversible LVEF drops below 50% that recovered after treatment interruption, and Bristol Myers Squibb noted continued approval still depends on confirmatory post-marketing evidence."
+  sourceName: "Bristol Myers Squibb"
+  sourceUrl: "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Presents-Data-Up-to-Five-Years-Reinforcing-the-Long-Term-Efficacy-and-Safety-of-Camzyos-mavacamten-in-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-oHCM-at-the-European-Society-of-Cardiology-ESC-Congress-2026/default.aspx"
+  topicTags: ["HCM", "long-term safety", "ESC 2026"]
+  relevantNodeIds: ["rx-mavacamten", "cond-hcm", "co-bristol-myers-squibb"]
+
 
 - id: "news-2026-08-28-highlife-receives-ce-mark-for-clarity-next-generation-tmvr-valve"
   publishedAt: "2026-08-28"
@@ -182,6 +348,19 @@
   topicTags: ["mitral regurgitation", "TMVR", "CE Mark"]
   relevantNodeIds: ["cond-mr"]
 
+
+
+
+- id: "news-2026-08-28-esc-heart-failure-guidelines-redefine-hfref-and-hfpef"
+  publishedAt: "2026-08-28"
+  title: "2026 ESC Guidelines Redefine Heart Failure Classification, Drop HFmrEF Category"
+  summary: "The 2026 ESC Guidelines for the management of heart failure, published in the European Heart Journal and presented at ESC Congress 2026, collapse the three-way ejection-fraction classification into two phenotypes -- HFrEF (LVEF <50%) and HFpEF (LVEF >=50%) -- eliminating the separate HFmrEF category, and give mineralocorticoid receptor antagonists (e.g., finerenone) a Class I recommendation across the EF spectrum. The guidelines also give semaglutide or tirzepatide a Class IIa recommendation in HFpEF patients with obesity, reflecting trial evidence rather than a formal drug-label change for that indication."
+  sourceName: "European Society of Cardiology"
+  sourceUrl: "https://www.escardio.org/news/press/press-releases/major-changes-made-to-the-esc-guidelines-on-heart-failure/"
+  topicTags: ["heart failure", "guidelines", "HFrEF", "HFpEF"]
+  relevantNodeIds: ["cond-hfref", "cond-hfpef", "rx-finerenone"]
+
+
 - id: "news-2026-08-27-abbotts-amulet-360-laa-occluder-receives-ce-mark"
   publishedAt: "2026-08-27"
   title: "Abbott’s Amulet 360 LAA occluder receives CE Mark"
@@ -190,6 +369,9 @@
   sourceUrl: "https://abbott.mediaroom.com/2026-08-27-Abbotts-next-generation-Amulet-360-TM-device-receives-CE-Mark-to-treat-people-with-atrial-fibrillation-at-risk-of-stroke"
   topicTags: ["LAAO", "atrial fibrillation", "CE Mark"]
   relevantNodeIds: ["cond-af", "dev-amulet", "co-abbott"]
+
+
+
 
 - id: "news-2026-08-20-radiographics-review-highlights-failure-modes-in-ct-based-tavr-planning"
   publishedAt: "2026-08-20"
@@ -200,6 +382,9 @@
   topicTags: ["TAVR", "CT planning", "clinical AI"]
   relevantNodeIds: ["cond-as"]
 
+
+
+
 - id: "news-2026-08-20-meta-analysis-examines-combined-laao-and-tavr-for-patients-with-atrial-f"
   publishedAt: "2026-08-20"
   title: "Meta-analysis examines combined LAAO and TAVR for patients with atrial fibrillation"
@@ -208,6 +393,9 @@
   sourceUrl: "https://visualize.jove.com/42624430-left-atrial-appendage-occlusion-in-patients-with-atrial-fibrillation-undergoing-transcatheter-aortic-valve-replacement-a-meta-analysis"
   topicTags: ["LAAO", "TAVR", "atrial fibrillation"]
   relevantNodeIds: ["cond-af", "cond-as", "dev-watchman-flx", "dev-amulet"]
+
+
+
 
 - id: "news-2026-08-19-new-jacc-analysis-tests-how-robust-the-randomized-evidence-for-mitral-te"
   publishedAt: "2026-08-19"
@@ -218,6 +406,9 @@
   topicTags: ["mitral regurgitation", "TEER", "clinical evidence"]
   relevantNodeIds: ["cond-mr", "dev-mitraclip", "trial-coapt", "trial-mitra-fr"]
 
+
+
+
 - id: "news-2026-08-18-prevue-valve-shows-ai-ecg-structural-heart-screening-loses-accuracy-when"
   publishedAt: "2026-08-18"
   title: "PREVUE-VALVE shows AI-ECG structural-heart screening loses accuracy when moved into the community"
@@ -226,6 +417,9 @@
   sourceUrl: "https://www.jacc.org/doi/10.1016/j.jacc.2026.06.013"
   topicTags: ["clinical AI", "screening", "validation"]
   relevantNodeIds: ["cond-as", "cond-mr", "cond-tr"]
+
+
+
 
 - id: "news-2026-08-18-national-real-world-study-sharpens-the-lifetime-management-debate-after"
   publishedAt: "2026-08-18"
@@ -236,6 +430,9 @@
   topicTags: ["TAVR", "redo TAVR", "real-world evidence"]
   relevantNodeIds: ["cond-as"]
 
+
+
+
 - id: "news-2026-08-17-lux-valve-plus-shows-strong-early-outcomes-in-patients-with-very-large-t"
   publishedAt: "2026-08-17"
   title: "LuX-Valve Plus shows strong early outcomes in patients with very large tricuspid anatomy"
@@ -244,6 +441,18 @@
   sourceUrl: "https://eurointervention.pcronline.com/article/outcomes-of-patients-with-large-anatomies-undergoing-transcatheter-tricuspid-valve-replacement-with-the-lux-valve-plus-system"
   topicTags: ["tricuspid regurgitation", "TTVR", "clinical evidence"]
   relevantNodeIds: ["cond-tr"]
+
+
+
+
+- id: "news-2026-08-17-san-raffaele-ai-ct-pipeline-aortic-valve-calcification"
+  publishedAt: "2026-08-17"
+  title: "Automated CT pipeline maps fibrocalcific burden ahead of TAVI"
+  summary: "Researchers at Vita-Salute San Raffaele University (Milan) built a one-click, CT-based pipeline that automatically segments and quantifies fibrotic and calcific tissue on the aortic valve from pre-TAVI cardiac CT, replacing a manual, radiologist-dependent step. In 25 patients with severe aortic stenosis the automated regional measurements agreed closely with two independent expert readers while processing each case in under three minutes. # needs-fulltext: abstract/metadata only, full text is paywalled."
+  sourceName: "Annals of Biomedical Engineering"
+  sourceUrl: "https://doi.org/10.1007/s10439-026-04272-w"
+  topicTags: ["imaging AI", "TAVR planning", "calcification"]
+  relevantNodeIds: ["cond-as"]
 
 - id: "news-2026-08-14-versa-vascular-adds-15m-to-series-c-and-appoints-former-medtronic-struct"
   publishedAt: "2026-08-14"
@@ -254,6 +463,9 @@
   topicTags: ["tricuspid regurgitation", "transcatheter repair", "financing"]
   relevantNodeIds: ["cond-tr"]
 
+
+
+
 - id: "news-2026-08-13-jupiter-endovascular-recruits-structural-heart-trial-leader-to-advance-i"
   publishedAt: "2026-08-13"
   title: "Jupiter Endovascular recruits structural-heart trial leader to advance its Transforming Fixation catheter platform"
@@ -262,6 +474,27 @@
   sourceUrl: "https://cardiovascularnews.com/jupiter-endovascular-appoints-catalin-toma-as-chief-medical-officer/"
   topicTags: ["catheter platform", "leadership", "enabling technology"]
   relevantNodeIds: ["cond-mr", "cond-tr"]
+
+
+
+
+- id: "news-2026-08-12-unsw-review-soft-robotic-cardiac-sleeves-heart-failure"
+  publishedAt: "2026-08-12"
+  title: "Review maps engineering path for soft robotic cardiac sleeves in heart failure"
+  summary: "A UNSW Sydney-led team, with Hannover Medical School, published a Nature Communications review of soft robotic cardiac sleeves, a non-blood-contact class of mechanical circulatory support that wraps and actuates around the outside of the heart. The review lays out the pathophysiological rationale, recent actuator and materials advances, and the engineering and translational hurdles still standing between prototypes and clinical use, and proposes a development framework for future devices."
+  sourceName: "Nature Communications"
+  sourceUrl: "https://www.nature.com/articles/s41467-026-76596-z"
+  topicTags: ["soft robotics", "heart failure", "mechanical circulatory support"]
+  relevantNodeIds: ["cond-hfref", "cond-hfpef"]
+
+- id: "news-2026-08-11-pitt-cmu-heart-assembloid-models-mitral-valve-prolapse"
+  publishedAt: "2026-08-11"
+  title: "Heart 'assembloids' give researchers a lab model of human valve disease"
+  summary: "University of Pittsburgh and Carnegie Mellon University researchers combined heart-chamber organoids grown from human stem cells into valve-bearing 'assembloids,' adding simulated blood flow and muscle contraction to reproduce native valve development. Introducing disease-linked mutations reproduced signs of mitral valve prolapse, offering a human tissue model for studying valve disorders without relying solely on animal studies. The work was published in Cell Stem Cell on August 11, 2026."
+  sourceName: "University of Pittsburgh (Pittwire)"
+  sourceUrl: "https://www.pittwire.pitt.edu/features-articles/2026/08/11/heart-valve-organoid"
+  topicTags: ["tissue engineering", "disease modeling", "mitral valve"]
+  relevantNodeIds: ["cond-mr"]
 
 - id: "news-2026-08-10-jacc-publishes-two-part-best-practice-framework-for-redo-tavr"
   publishedAt: "2026-08-10"
@@ -272,6 +505,9 @@
   topicTags: ["TAVR", "redo TAVR", "best practices"]
   relevantNodeIds: ["cond-as"]
 
+
+
+
 - id: "news-2026-08-10-early-tavr-analysis-shows-treadmill-testing-can-unmask-treatment-indicat"
   publishedAt: "2026-08-10"
   title: "EARLY TAVR analysis shows treadmill testing can unmask treatment indications in “asymptomatic” severe AS"
@@ -280,6 +516,18 @@
   sourceUrl: "https://cardiovascularnews.com/treadmill-test-could-uncover-previously-unseen-markers-of-aortic-stenosis/"
   topicTags: ["aortic stenosis", "TAVR", "patient selection"]
   relevantNodeIds: ["cond-as", "trial-early-tavr"]
+
+
+
+
+- id: "news-2026-08-08-ku-leuven-ross-procedure-growth-remodeling-simulation"
+  publishedAt: "2026-08-08"
+  title: "KU Leuven-led model simulates pulmonary-autograft dilation after the Ross procedure"
+  summary: "Engineers at KU Leuven, with Eindhoven University of Technology and Ghent University, built an image-based finite-element pipeline that reconstructs patient-specific root geometry and simulates how the pulmonary autograft grows and remodels under systemic pressure after a Ross procedure. The model reproduced observed autograft dilation in a sheep model and linked the predicted diameter change to leaflet coaptation loss, a step toward predicting which autografts will fail and require reoperation."
+  sourceName: "International Journal for Numerical Methods in Biomedical Engineering (PMC)"
+  sourceUrl: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13451147/"
+  topicTags: ["computational modeling", "digital twin", "aortic valve surgery"]
+  relevantNodeIds: ["cond-as"]
 
 - id: "news-2026-08-06-uc-davis-performs-first-u-s-carlen-procedure-in-nyra-medicals-enhance-mi"
   publishedAt: "2026-08-06"
@@ -290,6 +538,9 @@
   topicTags: ["mitral regurgitation", "transcatheter repair", "early feasibility"]
   relevantNodeIds: ["cond-mr"]
 
+
+
+
 - id: "news-2026-08-06-asia-pacific-multicenter-registry-supports-basilica-and-unicorn-leaflet"
   publishedAt: "2026-08-06"
   title: "Asia-Pacific multicenter registry supports BASILICA and UNICORN leaflet modification for high-risk TAVR"
@@ -298,6 +549,18 @@
   sourceUrl: "https://www.jacc.org/doi/10.1016/j.jacasi.2026.04.017"
   topicTags: ["TAVR", "leaflet modification", "registry"]
   relevantNodeIds: ["cond-as"]
+
+
+
+
+- id: "news-2026-08-06-uc-irvine-polycarbonate-polyurethane-mitral-valve"
+  publishedAt: "2026-08-06"
+  title: "UC Irvine study evaluates polycarbonate-polyurethane scaffolds for polymeric mitral valves"
+  summary: "A UC Irvine biomedical engineering team led by Arash Kheradvar compared two polycarbonate-based polyurethanes as trileaflet scaffold materials for polymeric mitral valves, linking rheological and mechanical properties to valve-level flow, pressure, and wear performance out to 50 million accelerated cycles. One formulation was implanted in an ovine model as an early in-vivo check, part of a broader push toward polymeric valves that combine mechanical-valve durability with bioprosthetic-like hemodynamics."
+  sourceName: "Annals of Biomedical Engineering (PMC)"
+  sourceUrl: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13505576/"
+  topicTags: ["polymeric heart valve", "biomaterials", "mitral valve"]
+  relevantNodeIds: ["cond-mr"]
 
 - id: "news-2026-07-28-modular-robotic-steerable-catheter-platform-demonstrates-potential-for-c"
   publishedAt: "2026-07-28"
@@ -308,6 +571,9 @@
   topicTags: ["robotics", "catheter platform", "preclinical"]
   relevantNodeIds: ["cond-mr", "cond-tr"]
 
+
+
+
 - id: "news-2026-07-27-rare-dual-caval-valve-implantation-performed-for-severe-tricuspid-regurg"
   publishedAt: "2026-07-27"
   title: "Rare dual caval valve implantation performed for severe tricuspid regurgitation"
@@ -316,6 +582,9 @@
   sourceUrl: "https://www.mypunepulse.com/pune-aicts-doctors-perform-rare-dual-valve-heart-procedure-without-open-surgery/"
   topicTags: ["tricuspid regurgitation", "caval valve", "case report"]
   relevantNodeIds: ["cond-tr"]
+
+
+
 
 - id: "news-2026-07-27-acc-launches-enhanced-impact-registry-with-a-dedicated-transcatheter-pul"
   publishedAt: "2026-07-27"
@@ -326,6 +595,9 @@
   topicTags: ["pulmonary valve", "registry", "quality tracking"]
   relevantNodeIds: ["cond-pv", "dev-melody", "dev-harmony"]
 
+
+
+
 - id: "news-2026-07-23-edwards-reports-strong-q2-structural-heart-growth-and-raises-tavr-tmtt-g"
   publishedAt: "2026-07-23"
   title: "Edwards reports strong Q2 structural-heart growth and raises TAVR/TMTT guidance"
@@ -334,6 +606,9 @@
   sourceUrl: "https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Reports-Second-Quarter-Results/default.aspx"
   topicTags: ["TAVR", "mitral", "tricuspid", "company results"]
   relevantNodeIds: ["co-edwards", "cond-as", "cond-mr", "cond-tr", "dev-sapien-3", "dev-evoque"]
+
+
+
 
 - id: "news-2026-07-20-professional-societies-push-cms-to-preserve-heart-team-and-registry-safe"
   publishedAt: "2026-07-20"
@@ -344,6 +619,9 @@
   topicTags: ["TAVR", "reimbursement", "policy"]
   relevantNodeIds: ["cond-as", "dev-sapien-3", "dev-evolut", "dev-navitor"]
 
+
+
+
 - id: "news-2026-07-20-jenscare-completes-first-u-s-implants-in-trinity-pivotal-ttvr-trial"
   publishedAt: "2026-07-20"
   title: "Jenscare completes first U.S. implants in TRINITY pivotal TTVR trial"
@@ -352,6 +630,9 @@
   sourceUrl: "https://www.massdevice.com/jenscare-first-tavr-implants-us-trial/"
   topicTags: ["tricuspid regurgitation", "TTVR", "clinical trial"]
   relevantNodeIds: ["cond-tr"]
+
+
+
 
 - id: "news-2026-07-20-boston-scientific-starts-faradigm-ide-trial-for-faraflex-pfa-system"
   publishedAt: "2026-07-20"
@@ -362,6 +643,9 @@
   topicTags: ["atrial fibrillation", "PFA", "clinical trial"]
   relevantNodeIds: ["cond-af", "co-boston-scientific"]
 
+
+
+
 - id: "news-2026-07-16-electrowire-medical-receives-fda-510-k-clearance-for-lightningwire-trans"
   publishedAt: "2026-07-16"
   title: "ElectroWire Medical receives FDA 510(k) clearance for LightningWire transseptal puncture system"
@@ -370,6 +654,9 @@
   sourceUrl: "https://citoday.com/news/electrowires-lightningwire-transseptal-puncture-system-receives-fda-clearance?c4src=home"
   topicTags: ["transseptal access", "FDA clearance", "enabling technology"]
   relevantNodeIds: ["cond-af", "cond-mr", "cond-tr", "cond-asd"]
+
+
+
 
 - id: "news-2026-07-15-acc-scai-and-sts-submit-formal-comments-on-cms-proposed-tavr-national-co"
   publishedAt: "2026-07-15"
@@ -380,6 +667,9 @@
   topicTags: ["TAVR", "reimbursement", "policy"]
   relevantNodeIds: ["cond-as", "dev-sapien-3", "dev-evolut", "dev-navitor"]
 
+
+
+
 - id: "news-2026-07-13-medtronic-issues-removal-action-for-certain-harmony-transcatheter-pulmon"
   publishedAt: "2026-07-13"
   title: "Medtronic issues removal action for certain Harmony transcatheter pulmonary valve delivery catheter lots"
@@ -388,6 +678,9 @@
   sourceUrl: "https://www.massdevice.com/medtronic-warns-harmony-delivery-system/"
   topicTags: ["pulmonary valve", "device safety", "recall"]
   relevantNodeIds: ["cond-pv", "dev-harmony", "trial-harmony", "co-medtronic"]
+
+
+
 
 - id: "news-2026-07-13-edwards-lifesciences-and-genesis-medtech-agree-to-12-million-ftc-settlem"
   publishedAt: "2026-07-13"
@@ -398,6 +691,9 @@
   topicTags: ["aortic regurgitation", "M&A", "regulatory"]
   relevantNodeIds: ["cond-ar", "co-edwards"]
 
+
+
+
 - id: "news-2026-07-07-cytokinetics-announces-esc-2026-late-breaking-aficamten-abstracts"
   publishedAt: "2026-07-07"
   title: "Cytokinetics announces ESC 2026 late-breaking aficamten abstracts"
@@ -406,6 +702,9 @@
   sourceUrl: "https://ir.cytokinetics.com/press-releases/press-release-details/2026/Cytokinetics-Announces-Three-Late-Breaking-Science-Abstracts-at-the-European-Society-of-Cardiology-ESC-Congress-2026/default.aspx"
   topicTags: ["HCM", "clinical evidence", "pharmaceutical"]
   relevantNodeIds: ["rx-aficamten", "cond-hcm", "co-cytokinetics"]
+
+
+
 
 - id: "news-2026-07-02-stun-af-suggests-laa-ablation-before-laao-may-reduce-peridevice-leaks"
   publishedAt: "2026-07-02"
@@ -416,6 +715,9 @@
   topicTags: ["LAAO", "atrial fibrillation", "PFA"]
   relevantNodeIds: ["cond-af", "dev-watchman-flx", "co-boston-scientific"]
 
+
+
+
 - id: "news-2026-07-02-laplace-receives-fda-ide-approval-for-triumph-pivotal-ttvr-trial"
   publishedAt: "2026-07-02"
   title: "Laplace receives FDA IDE approval for TRIUMPH pivotal TTVR trial"
@@ -424,6 +726,9 @@
   sourceUrl: "https://citoday.com/news/ide-for-triumph-pivotal-trial-of-laplaces-ttvr-system?c4src=news"
   topicTags: ["tricuspid regurgitation", "TTVR", "FDA IDE"]
   relevantNodeIds: ["cond-tr"]
+
+
+
 
 - id: "news-2026-07-02-acoramidis-analysis-reports-early-sustained-kidney-markers-in-attr-cm"
   publishedAt: "2026-07-02"
@@ -434,6 +739,9 @@
   topicTags: ["ATTR-CM", "drug evidence", "heart failure"]
   relevantNodeIds: ["rx-acoramidis", "cond-attr-cm", "co-bridgebio"]
 
+
+
+
 - id: "news-2026-07-01-first-u-s-real-world-triclip-data-show-strong-commercial-rollout"
   publishedAt: "2026-07-01"
   title: "First U.S. real-world TriClip data show strong commercial rollout"
@@ -442,6 +750,9 @@
   sourceUrl: "https://www.tctmd.com/news/real-world-triclip-data-show-reduced-tr-good-procedural-success"
   topicTags: ["tricuspid regurgitation", "T-TEER", "real-world evidence"]
   relevantNodeIds: ["cond-tr", "dev-triclip", "co-abbott"]
+
+
+
 
 - id: "news-2026-06-30-ge-healthcare-introduces-allia-upgrade-pathways-for-existing-interventio"
   publishedAt: "2026-06-30"
@@ -452,6 +763,9 @@
   topicTags: ["image guidance", "workflow", "infrastructure"]
   relevantNodeIds: ["cond-as", "cond-mr", "cond-tr", "cond-af"]
 
+
+
+
 - id: "news-2026-06-29-abbott-highlights-triclip-navitor-and-amulet-360-datasets-at-ny-valves"
   publishedAt: "2026-06-29"
   title: "Abbott highlights TriClip, Navitor, and Amulet 360 datasets at NY Valves"
@@ -460,6 +774,9 @@
   sourceUrl: "https://citoday.com/center/valvular-interventions"
   topicTags: ["T-TEER", "TAVR", "LAAO"]
   relevantNodeIds: ["cond-tr", "cond-as", "cond-af", "dev-triclip", "dev-navitor", "dev-amulet", "co-abbott"]
+
+
+
 
 - id: "news-2026-06-28-j-valve-transfemoral-thv-system-reports-1-year-efs-outcomes-in-severe-ar"
   publishedAt: "2026-06-28"
@@ -470,6 +787,9 @@
   topicTags: ["aortic regurgitation", "TAVR", "early feasibility"]
   relevantNodeIds: ["cond-ar", "co-edwards"]
 
+
+
+
 - id: "news-2026-06-26-valgen-dragonfly-tmvr-receives-ce-mark-for-functional-mr"
   publishedAt: "2026-06-26"
   title: "Valgen DragonFly TMVR receives CE Mark for functional MR"
@@ -478,6 +798,9 @@
   sourceUrl: "https://citoday.com/center/valvular-interventions"
   topicTags: ["mitral regurgitation", "transcatheter repair", "CE Mark"]
   relevantNodeIds: ["cond-mr"]
+
+
+
 
 - id: "news-2026-06-26-edwards-receives-fda-clearance-for-ecliptis-laa-exclusion-system"
   publishedAt: "2026-06-26"
@@ -488,6 +811,9 @@
   topicTags: ["LAA closure", "FDA clearance", "device"]
   relevantNodeIds: ["dev-ecliptis", "cond-af", "co-edwards"]
 
+
+
+
 - id: "news-2026-06-18-cms-proposes-major-tavr-coverage-update"
   publishedAt: "2026-06-18"
   title: "CMS proposes major TAVR coverage update"
@@ -496,6 +822,9 @@
   sourceUrl: "https://www.cms.gov/medicare-coverage-database/view/ncacal-decision-memo.aspx?NCAId=321&proposed=Y"
   topicTags: ["TAVR", "reimbursement", "policy"]
   relevantNodeIds: ["cond-as", "dev-sapien-3", "dev-evolut", "dev-navitor"]
+
+
+
 
 - id: "news-2026-06-16-ten-year-partner-2a-and-sapien-3-registry-data-sharpen-the-tavi-durabili"
   publishedAt: "2026-06-16"
@@ -506,6 +835,9 @@
   topicTags: ["TAVR", "durability", "long-term evidence"]
   relevantNodeIds: ["cond-as", "dev-sapien-3", "trial-partner-2", "co-edwards"]
 
+
+
+
 - id: "news-2026-06-16-prevue-valve-publication-reinforces-the-scale-of-underrecognized-valve-d"
   publishedAt: "2026-06-16"
   title: "PREVUE-VALVE publication reinforces the scale of underrecognized valve disease"
@@ -514,6 +846,9 @@
   sourceUrl: "https://www.tctmd.com/news/now-published-prevue-valve-charts-prevalence-valve-disease-united-states"
   topicTags: ["screening", "valvular disease", "epidemiology"]
   relevantNodeIds: ["cond-as", "cond-mr", "cond-tr"]
+
+
+
 
 - id: "news-2026-06-16-massdevice-frames-the-cms-proposal-as-a-volume-tailwind-for-major-tavr-p"
   publishedAt: "2026-06-16"
@@ -524,6 +859,9 @@
   topicTags: ["TAVR", "reimbursement", "market"]
   relevantNodeIds: ["cond-as", "co-edwards", "co-medtronic", "co-abbott", "co-boston-scientific"]
 
+
+
+
 - id: "news-2026-06-16-cardiawave-begins-routine-european-use-of-valvosoft-a-noninvasive-ultras"
   publishedAt: "2026-06-16"
   title: "Cardiawave begins routine European use of Valvosoft, a noninvasive ultrasound therapy for severe symptomatic AS"
@@ -533,6 +871,9 @@
   topicTags: ["aortic stenosis", "ultrasound therapy", "commercialization"]
   relevantNodeIds: ["cond-as"]
 
+
+
+
 - id: "news-2026-06-15-anteris-positions-duravr-around-lifetime-management-and-disease-modifica"
   publishedAt: "2026-06-15"
   title: "Anteris positions DurAVR around lifetime management and disease modification"
@@ -541,6 +882,9 @@
   sourceUrl: "https://www.massdevice.com/anteris-outlines-future-challenges-tavr-therapy/"
   topicTags: ["TAVR", "lifetime management", "device strategy"]
   relevantNodeIds: ["cond-as"]
+
+
+
 
 - id: "news-2026-06-08-triscend-ii-analysis-quantifies-hospital-cost-and-length-of-stay-drivers"
   publishedAt: "2026-06-08"

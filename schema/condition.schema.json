@@ -42,7 +42,15 @@
       "properties": {
         "status": { "enum": ["draft", "curated"] },
         "lastUpdated": { "type": "string", "format": "date" },
-        "sources": { "type": "array", "items": { "type": "string" } },
+        "sources": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              { "type": "string", "format": "uri", "pattern": "^https://" },
+              { "type": "string", "pattern": "^PMID:[0-9]+$" }
+            ]
+          }
+        },
         "notes": { "type": "string" }
       }
     }
