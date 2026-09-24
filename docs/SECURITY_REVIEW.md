@@ -105,10 +105,15 @@ Before setting `NEWSLETTER_AUTOMATION_ENABLED=true` or delivering to the product
 list:
 
 1. Enable GitHub secret scanning, push protection, private vulnerability reporting,
-   branch protection/rulesets, required CODEOWNERS review, and required status
-   checks.
-2. Allow the built-in Actions token to write and create pull requests, while
-   retaining required human review and preventing workflow self-approval.
+   a `main` ruleset requiring PRs and status checks, and deletion/force-push
+   blocking. For a solo owner, use zero required PR approvals and personally review
+   every diff and source before merge. Require CODEOWNERS approval once an
+   independent trusted reviewer is available; requiring it for the sole PR author
+   would deadlock merges.
+2. Have an organization owner permit the built-in Actions token to write and create
+   pull requests before enabling scheduled research. If organization policy keeps
+   either permission disabled, leave the schedule off. Do not use a broad personal
+   access token as a workaround; the workflow must never approve its own PR.
 3. Restrict the `zoho-production` environment to `main` and require a reviewer.
 4. Enter every secret directly in GitHub's settings UI; never paste it into chat,
    an issue, a PR, a command argument, or a repository file.
