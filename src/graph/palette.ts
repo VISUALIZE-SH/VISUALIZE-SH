@@ -3,11 +3,13 @@
 // they never drift.
 import type { NodeGroup, EdgeRelationship } from '../types/entities'
 
+export type GroupShape = 'ellipse' | 'hexagon' | 'round-rectangle' | 'round-triangle' | 'diamond' | 'star' | 'rectangle'
+
 export interface GroupMeta {
   label: string
   color: string
   /** Cytoscape node shape name. */
-  shape: string
+  shape: GroupShape
 }
 
 // Categorical node palette — seven distinct, readable hues drawn from the brand
