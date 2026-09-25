@@ -10,9 +10,10 @@ or use data from them. The hosting provider may process ordinary request logs as
 part of serving the static site.
 
 The newsletter button opens a separately hosted Zoho Campaigns subscription form.
-Information entered there is submitted directly to Zoho and is governed by the
-privacy notice and consent language shown on that form. Subscriber addresses are
-not stored in this repository or in the public newsletter pages.
+The current demo form asks for an email address and name. Information entered there
+is submitted directly to Zoho, which sends a confirmation email before the
+subscription is complete. Subscriber addresses are not stored in this repository
+or in the public newsletter pages.
 
 Newsletter issues are public, static HTML. Do not include subscriber data,
 recipient lists, private notes, credentials, or other sensitive information in an
