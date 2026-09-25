@@ -1,5 +1,24 @@
 # Local weekly newsletter workflow
 
+## Command summary
+
+Run these from the repository root, replacing `YYYY-MM-DD` with the issue date.
+The scheduled task runs the first command for the initial draft; rerun it after
+your edits.
+
+```sh
+# Validate the data and create local draft browser and email previews for review.
+npm run newsletter:review -- --date YYYY-MM-DD
+
+# After approving the content, validate again and render the public digest files.
+npm run newsletter:render -- --date YYYY-MM-DD
+
+# Ask Codex to commit the approved changes and push them to origin/main; Pages deploys.
+
+# After deployment, verify the public email HTML matches the approved local file.
+npm run newsletter:delivery:check -- --date YYYY-MM-DD
+```
+
 Research, newsletter generation, validation, and the delivery decision happen in
 the owner's local Codex project. The active **Structural Heart Therapy Digest**
 task runs Sundays at 6 PM Pacific under the owner's ChatGPT account. The Mac and
@@ -40,11 +59,11 @@ npm run newsletter:render -- --date YYYY-MM-DD
 ```
 
 The render command reruns the validation gate, writes sendable HTML to
-`public/digests/YYYY-MM-DD/`, and updates the digest
-index. Inspect the final HTML and the whole diff, then commit and publish the
-approved changes through the normal repository review path. GitHub Pages still
-hosts the public site; its deployment workflow runs when approved changes reach
-`main`. The scheduled task never performs these publication steps.
+`public/digests/YYYY-MM-DD/`, and updates the digest index. Inspect the final
+HTML and the whole diff, then ask Codex to commit the approved changes and push
+them to `origin/main`. A PR is optional if the repository permits direct pushes.
+GitHub Pages hosts the public site; its deployment workflow runs when approved
+changes reach `main`. The scheduled task never performs these publication steps.
 
 ## 3. Check deployment, then approve delivery locally
 
