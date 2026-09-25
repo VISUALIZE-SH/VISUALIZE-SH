@@ -88,7 +88,8 @@ export default function NewsletterSignup({ onClose }: Props) {
         </div>
         <div className="modal-body newsletter-body">
           <p id="newsletter-description">
-            Weekly updates on structural heart approvals, trial readouts, and emerging ideas.
+            We’re testing registration for weekly updates on structural heart approvals, trial
+            readouts, and emerging ideas.
           </p>
           {signupUrl ? (
             <a
@@ -97,7 +98,7 @@ export default function NewsletterSignup({ onClose }: Props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Continue to signup form <span aria-hidden="true">↗</span>
+              Continue to demo signup form <span aria-hidden="true">↗</span>
             </a>
           ) : (
             <p className="newsletter-config-note" role="status">
@@ -113,14 +114,15 @@ export default function NewsletterSignup({ onClose }: Props) {
             </ul>
           </div>}
           <p className="newsletter-note">
-            No tracking cookies. You’ll leave this site to sign up via Zoho Campaigns, where its
-            privacy and consent terms apply.{' '}
+            The demo form asks for your email address and name. Zoho Campaigns sends a confirmation
+            email before your subscription is complete. Your details go directly to Zoho; this site
+            does not store them. Read our{' '}
             <a
               href={`${import.meta.env.BASE_URL}privacy.html`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Privacy notice
+              privacy notice
             </a>
             .
           </p>
