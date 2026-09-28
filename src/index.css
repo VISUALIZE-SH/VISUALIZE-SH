@@ -450,6 +450,22 @@ button {
 .search-results button:hover {
   background: var(--surface-2);
 }
+.search-submit {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 41;
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  text-align: left;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
 .search-label {
   flex: 1 1 auto;
   overflow: hidden;
@@ -707,6 +723,10 @@ button {
 }
 .legend-swatch.dashed {
   border: 1.5px dashed var(--text);
+  border-radius: 4px;
+}
+.legend-swatch.lifecycle {
+  border: 2px solid #d92d20;
   border-radius: 4px;
 }
 .legend-swatch.arrow {
@@ -1174,6 +1194,10 @@ button {
   color: var(--brand);
   margin-left: 6px;
 }
+.badge.lifecycle-status {
+  background: #fde7e5;
+  color: #b42318;
+}
 .reg-approved,
 .result-positive {
   background: #e7f6ed;
@@ -1185,6 +1209,7 @@ button {
   color: var(--info);
 }
 .reg-discontinued,
+.reg-unknown,
 .result-terminated {
   background: #eef0f3;
   color: var(--muted);

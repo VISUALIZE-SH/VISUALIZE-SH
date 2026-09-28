@@ -8,6 +8,7 @@ import type {
   NewsItem,
 } from '../types/entities'
 import { GROUP_META } from '../graph/palette'
+import { lifecycleLabel } from '../data/lifecycle'
 import { formatTimelineDate, TIMELINE_BASIS_LABELS } from '../graph/timeline'
 import NewsFeed from './NewsFeed'
 
@@ -154,7 +155,7 @@ function LinkList({ refs }: { refs?: string[] }) {
 }
 
 function statusBadge(value: string, kind: 'reg' | 'result') {
-  return <span className={`badge ${kind}-${value}`}>{value}</span>
+  return <span className={`badge ${kind}-${value}`}>{kind === 'reg' && value === 'unknown' ? 'Unverified' : value}</span>
 }
 
 const MATERIAL_CATEGORY_LABELS: Record<DeviceMaterial['category'], string> = {
@@ -297,6 +298,8 @@ function Facts({ e }: { e: Entity }) {
           <Fact label="Type" value={e.therapyType} />
           <Fact label="Class" value={e.subtype} />
           <Fact label="Status" value={statusBadge(e.regulatoryStatus, 'reg')} />
+          {lifecycleLabel(e) && <Fact label="Lifecycle" value={<span className="badge lifecycle-status">{lifecycleLabel(e)}</span>} />}
+          <Fact label="Lifecycle detail" value={e.lifecycleDetail} />
           <TimelineFact e={e} />
           <Fact label="Details" value={e.regulatoryDetail} />
           {e.mechanism && (
@@ -334,6 +337,8 @@ function Facts({ e }: { e: Entity }) {
         <>
           <Fact label="Phase" value={e.phase} />
           <Fact label="Status" value={e.status} />
+          {lifecycleLabel(e) && <Fact label="Lifecycle" value={<span className="badge lifecycle-status">{lifecycleLabel(e)}</span>} />}
+          <Fact label="Lifecycle detail" value={e.lifecycleDetail} />
           <Fact label="Result" value={statusBadge(e.resultStatus, 'result')} />
           <TimelineFact e={e} />
           <Fact label="Year" value={e.year} />

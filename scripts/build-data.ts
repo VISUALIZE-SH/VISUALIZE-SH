@@ -30,6 +30,7 @@ import type {
   NodeGroup,
   TherapyType,
 } from '../src/types/entities'
+import { atlasLifecycleFlags } from '../src/data/lifecycle'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = resolve(__dirname, '..')
@@ -253,6 +254,7 @@ const nodes: { data: GraphNodeData }[] = all
     const rawPulse = (entity as { pulse?: number }).pulse
     const pulse =
       typeof rawPulse === 'number' ? Math.max(0, Math.min(10, rawPulse)) : 0
+    const lifecycleFlags = atlasLifecycleFlags(entity)
     return {
       data: {
         id: entity.id,
@@ -260,6 +262,8 @@ const nodes: { data: GraphNodeData }[] = all
         group,
         category,
         isDraft: entity.curation?.status === 'draft',
+        isHalted: lifecycleFlags.isHalted,
+        isRetired: lifecycleFlags.isRetired,
         degree: degree.get(entity.id) ?? 0,
         pulse,
         timelineDate:

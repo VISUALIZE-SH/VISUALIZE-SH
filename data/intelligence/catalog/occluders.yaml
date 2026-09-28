@@ -226,14 +226,16 @@ sources:
   identifier: P130013/S074
 families:
 - id: family-amulet
-  name: Amplatzer Amulet
+  name: Amplatzer Cardiac Plug / Amulet
   manufacturer: Abbott
   entityIds:
   - dev-amulet
+  - dev-amplatzer-cardiac-plug
+  - dev-amulet-360
   conditionIds:
   - cond-af
-  description: Single-generation LAA occluder family; track the Amulet IDE Trial vs. WATCHMAN as the pivotal
-    evidence.
+  description: The historical Amplatzer Cardiac Plug preceded Amulet; keep their designs and authorization
+    histories distinct. The Amulet IDE Trial supports the later Amulet version.
 - id: family-lambre
   name: LAmbre
   manufacturer: Lifetech Scientific
@@ -299,6 +301,7 @@ families:
 versions:
 - id: ver-amulet
   familyId: family-amulet
+  graphEntityId: dev-amulet
   name: Amplatzer Amulet
   kind: device
   clinicalRole: treats
@@ -309,6 +312,7 @@ versions:
   reviewStatus: draft
 - id: ver-lambre
   familyId: family-lambre
+  graphEntityId: dev-lambre
   name: LAmbre
   kind: device
   clinicalRole: treats
@@ -320,6 +324,7 @@ versions:
   reviewStatus: draft
 - id: ver-ecliptis
   familyId: family-ecliptis
+  graphEntityId: dev-ecliptis
   name: Ecliptis LAA Exclusion System
   kind: device
   clinicalRole: treats
@@ -667,7 +672,7 @@ specs:
         investigator-initiated IDE trial (LAmbre Plus, approved March 2022); CE-marked and China NMPA-approved
         for LAA occlusion in non-valvular AF outside the US (see data/therapies.yaml).
 - version: ver-ecliptis
-  category: laao-occluders
+  category: laa-exclusion-ligation
   source: src-ecliptis-510k
   values:
     device-design:

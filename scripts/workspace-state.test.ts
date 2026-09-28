@@ -29,6 +29,24 @@ test('shared evidence context survives deep links; malformed dates and modes are
   assert.equal(parseWorkspace('?mode=atlas&topic=%3Cscript%3E').atlasTopic, '')
 })
 
+test('mode scoped search text survives shareable workspace links and is bounded', () => {
+  const news = parseWorkspace('?mode=news&q=WATCHMAN%20FLX')
+  assert.equal(news.searchQuery, 'WATCHMAN FLX')
+  assert.deepEqual(parseWorkspace(`?${workspaceQuery(news)}`), news)
+  assert.equal(parseWorkspace(`?mode=data&q=${'x'.repeat(140)}`).searchQuery.length, 120)
+  assert.equal(new URLSearchParams(workspaceQuery({ ...news, searchQuery: '  ' })).has('q'), false)
+})
+
+test('Atlas node selection is shared without isolation unless it came from search', () => {
+  const graphClick = parseWorkspace('?mode=atlas&node=dev-watchman-flx')
+  assert.equal(graphClick.isolateNode, false, 'ordinary graph clicks keep the surrounding graph visible')
+  assert.equal(new URLSearchParams(workspaceQuery(graphClick)).has('isolate'), false)
+  const searchResult = parseWorkspace('?mode=atlas&node=dev-watchman-flx&isolate=1')
+  assert.equal(searchResult.isolateNode, true)
+  assert.deepEqual(parseWorkspace(`?${workspaceQuery(searchResult)}`), searchResult)
+  assert.equal(parseWorkspace('?mode=atlas&isolate=1').isolateNode, false, 'isolation requires a selected node')
+})
+
 test('Data comparison state preserves ordered repeated version parameters and validates IDs', () => {
   const state = parseWorkspace('?mode=data&dataView=compare&compareCategory=aortic-tavr&compare=ver-sapien-3&compare=ver-evolut-fx&compare=ver-sapien-3&compare=%3Cscript%3E&compare=ver-ultra&compare=ver-fx-plus&compare=ver-sixth')
   assert.equal(state.dataView, 'compare')
@@ -113,5 +131,7 @@ test('news topics only link when they resolve to Atlas entities', () => {
   const nodes = graph.elements.nodes.map((node) => node.data)
   assert.ok(atlasTopicNodeIds(nodes, 'TAVR').has('dev-evolut'))
   assert.ok(atlasTopicNodeIds(nodes, 'LAAO').has('dev-watchman-flx'), 'common topic acronyms resolve to Atlas terminology')
+  assert.ok(atlasTopicNodeIds(nodes, 'LAAC').has('dev-watchman-flx'), 'closure acronym resolves to occlusion products')
+  assert.ok(atlasTopicNodeIds(nodes, 'LAAC').has('dev-ecliptis'), 'closure topic includes LAA exclusion devices')
   assert.equal(atlasTopicNodeIds(nodes, 'not an Atlas topic').size, 0)
 })

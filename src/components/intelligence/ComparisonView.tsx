@@ -93,7 +93,7 @@ function ComparisonTable({ data, rows, versionIds, asOf }: { data: IntelligenceD
         return <th scope="col" key={id}><span className="intel-product">{thumb ? <img className="intel-thumb" src={assetPath(thumb.assetPath)} alt={`${versionName(data, id)}: ${thumb.alt}`} /> : <span className="intel-thumb intel-thumb-empty" aria-hidden="true" />}<span className="intel-product-text">{versionName(data, id)}<span className="intel-compare-maker">{manufacturer(id)}</span></span></span></th>
       })}</tr></thead>
       <tbody>
-        <tr><th scope="row">US approval</th>{versionIds.map(id => {
+        <tr><th scope="row">US authorization</th>{versionIds.map(id => {
           const decision = firstDecision(data, id, 'US', asOf)
           return <td key={id} className={decision ? undefined : 'is-gap'} title={decision ? `${decision.identifier} · ${formatEvidenceDate(decision.date)}` : undefined}>{decision ? <><strong>{approvalLabel(decision)}</strong>{decision.changeType === 'indication' && <span className="intel-compare-maker">indication</span>}</> : '—'}</td>
         })}</tr>

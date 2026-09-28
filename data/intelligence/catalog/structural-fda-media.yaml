@@ -1,0 +1,69 @@
+# FDA figures for new structural-heart categories.
+observedAt: '2026-09-28'
+sources:
+  - id: src-mi-chord-denovo-summary-media
+    title: 'DEN230069, Mi-CHORD System, LSI Solutions, Inc. (De Novo Summary)'
+    url: https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-28'
+    access: public
+    identifier: DEN230069
+  - id: src-heartmate-3-ssed-media
+    title: 'HeartMate 3 Left Ventricular Assist System Summary of Safety and Effectiveness Data'
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160054B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2017-08-23', precision: day }
+    retrievedAt: '2026-09-28'
+    access: public
+    identifier: P160054
+  - id: src-heartmate-ii-ssed-media
+    title: 'Thoratec HeartMate II Left Ventricular Assist System Summary of Safety and Effectiveness Data'
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf6/P060040B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2008-04-21', precision: day }
+    retrievedAt: '2026-09-28'
+    access: public
+    identifier: P060040
+media:
+  - id: media-mi-chord-system
+    versionIds: [ver-mi-chord]
+    panel: design
+    title: Mi-CHORD System
+    caption: FDA figure showing the Mi-STITCH suturing device and Mi-KNOT fastener device that comprise the Mi-CHORD System.
+    alt: Two white and purple surgical instruments with long shafts, shown separately as the Mi-STITCH and Mi-KNOT devices.
+    assetPath: /evidence/fda/mi-chord.png
+    page: 2
+    figure: Figure 1
+    sourceRefs:
+      - sourceId: src-mi-chord-denovo-summary-media
+        locator: 'PDF page 2 of 19, Figure 1: Mi-CHORD System'
+    reviewStatus: draft
+  - id: media-heartmate-3-system
+    versionIds: [ver-heartmate-3]
+    panel: design
+    title: HeartMate 3 LVAS components
+    caption: FDA figure identifying the implantable HeartMate 3 LVAD and external components, including driveline, battery, exit site, and controller.
+    alt: Diagram of an implanted HeartMate 3 pump and driveline connected to an external controller and battery.
+    assetPath: /evidence/fda/heartmate-3.png
+    page: 2
+    figure: Figure 1
+    sourceRefs:
+      - sourceId: src-heartmate-3-ssed-media
+        locator: 'PDF page 2 of 39, Figure 1: HeartMate 3 LVAS Implantable and External Components'
+    reviewStatus: draft
+  - id: media-heartmate-ii-system
+    versionIds: [ver-heartmate-ii]
+    panel: design
+    title: HeartMate II LVAS components
+    caption: FDA Figure 1 identifies the implantable pump, percutaneous lead, System Controller, and external batteries.
+    alt: Labeled grayscale diagram of the HeartMate II LVAS, showing an implanted pump and percutaneous lead connected to an external System Controller and batteries.
+    assetPath: /evidence/fda/heartmate-ii.png
+    page: 2
+    figure: Figure 1
+    sourceRefs:
+      - sourceId: src-heartmate-ii-ssed-media
+        locator: 'PDF page 2, Figure 1: HeartMate II LVAS, Implantable and External Components'
+    reviewStatus: draft

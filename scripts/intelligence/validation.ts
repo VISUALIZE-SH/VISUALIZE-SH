@@ -154,7 +154,14 @@ function validateSemantics(data: IntelligenceData, legacyIds: ReadonlySet<string
       seenConfigurations.add(identity)
     }
   }
-  for (const version of data.versions) if (!families.has(version.familyId)) issues.push(`${version.id}.familyId references missing family ${version.familyId}`)
+  for (const version of data.versions) {
+    const family = families.get(version.familyId)
+    if (!family) issues.push(`${version.id}.familyId references missing family ${version.familyId}`)
+    if (version.graphEntityId) {
+      if (legacyIds && !legacyIds.has(version.graphEntityId)) issues.push(`${version.id}.graphEntityId references missing legacy graph ID ${version.graphEntityId}`)
+      if (family && !family.entityIds.includes(version.graphEntityId)) issues.push(`${version.id}.graphEntityId ${version.graphEntityId} is not listed by ${family.id}.entityIds`)
+    }
+  }
   for (const claim of data.claims) {
     if (!versions.has(claim.versionId)) issues.push(`${claim.id}.versionId references missing version ${claim.versionId}`)
     if (claim.comparisonAttributeId && !standardAttributes.has(claim.comparisonAttributeId)) issues.push(`${claim.id}.comparisonAttributeId references missing standard attribute ${claim.comparisonAttributeId}`)

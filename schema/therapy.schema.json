@@ -30,7 +30,9 @@
       "items": { "type": "string", "pattern": "^cond-[a-z0-9-]+$" },
       "description": "References to condition ids this therapy targets."
     },
-    "regulatoryStatus": { "enum": ["approved", "investigational", "discontinued"] },
+    "regulatoryStatus": { "enum": ["approved", "investigational", "discontinued", "unknown"] },
+    "lifecycleStatus": { "enum": ["halted", "retired", "recalled"], "description": "Source-verified exceptional status; a recall can apply to specified units without ending authorization." },
+    "lifecycleDetail": { "type": "string", "minLength": 1, "description": "Scope and date of the exceptional status, supported by a curation source." },
     "regulatoryDetail": {
       "type": "string",
       "description": "Free-text specifics, e.g. 'FDA approved 2021; CE mark 2020'."
@@ -39,7 +41,7 @@
     "description": { "type": "string" },
     "materials": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 0,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -85,6 +87,20 @@
         "required": ["therapyType"]
       },
       "then": { "required": ["materials"] }
+    },
+    {
+      "if": {
+        "properties": {
+          "therapyType": { "const": "device" },
+          "curation": {
+            "type": "object",
+            "properties": { "status": { "const": "curated" } },
+            "required": ["status"]
+          }
+        },
+        "required": ["therapyType", "curation"]
+      },
+      "then": { "properties": { "materials": { "type": "array", "minItems": 1 } } }
     }
   ],
   "definitions": {
