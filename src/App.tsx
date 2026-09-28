@@ -5,6 +5,7 @@ import type { AppMode, IntelligenceData } from './types/intelligence'
 import { loadGraph } from './data/loadGraph'
 import { loadIntelligence } from './data/intelligence'
 import { atlasTopicNodeIds, normalizeAtlasTopic } from './data/atlas-topic'
+import { versionForGraphEntities } from './data/atlas-navigation'
 import { parseWorkspace, scopeToCondition, workspaceQuery, type WorkspaceState } from './data/workspace-state'
 import { GROUP_ORDER } from './graph/palette'
 import { getLayout, frameLayout, LAYOUT_LABELS, type LayoutName } from './graph/layouts'
@@ -23,7 +24,7 @@ const GraphCanvas = lazy(() => import('./components/GraphCanvas'))
 const AtlasEvidence = lazy(() => import('./components/intelligence/AtlasEvidence'))
 const DataWorkspace = lazy(() => import('./components/intelligence/DataWorkspace'))
 const NewsWorkspace = lazy(() => import('./components/intelligence/NewsWorkspace'))
-const ALL_REGULATORY: RegulatoryStatus[] = ['approved', 'investigational', 'discontinued']
+const ALL_REGULATORY: RegulatoryStatus[] = ['approved', 'investigational', 'discontinued', 'unknown']
 const NO_HIGHLIGHTS = new Set<string>()
 const ATLAS_LAYOUTS: LayoutName[] = ['fcose', 'timeline']
 
@@ -152,17 +153,18 @@ export default function App() {
   // Graph visibility is a separate projection from the evidence scope above:
   // hiding a node must not silently remove an intelligence record.
   const visibleIds = useMemo(() => new Set(nodes.filter(node => {
+    if (workspace.isolateNode && workspace.nodeId) return node.id === workspace.nodeId
     if (!conditionMatches.has(node.id) || !activeGroups.has(node.group) || (node.isDraft && !showDrafts)) return false
     if (normalizedMaterialQuery && !materialMatches.has(node.id)) return false
     if (workspace.atlasTopic && !atlasTopicMatchIds.has(node.id)) return false
     return node.entity.type !== 'therapy' || activeRegulatory.has(node.entity.regulatoryStatus)
-  }).map(node => node.id)), [nodes, conditionMatches, activeGroups, showDrafts, normalizedMaterialQuery, materialMatches, workspace.atlasTopic, atlasTopicMatchIds, activeRegulatory])
+  }).map(node => node.id)), [nodes, conditionMatches, activeGroups, showDrafts, normalizedMaterialQuery, materialMatches, workspace.atlasTopic, atlasTopicMatchIds, activeRegulatory, workspace.nodeId, workspace.isolateNode])
   const legacyNews = useMemo(() => graph?.news.filter(item => !workspace.conditionId || item.relevantNodeIds.some(id => conditionMatches.has(id))) ?? [], [graph, workspace.conditionId, conditionMatches])
 
   function openVersion(id: string, mode: AppMode = 'atlas') {
     const version = intelligence?.versions.find(item => item.id === id)
     const family = intelligence?.families.find(item => item.id === version?.familyId)
-    navigate({ mode, atlasView: 'profiles', atlasTopic: '', versionId: id, nodeId: '', ...(!family?.conditionIds.includes(workspace.conditionId) ? { conditionId: '' } : {}) })
+    navigate({ mode, atlasView: 'profiles', atlasTopic: '', versionId: id, nodeId: '', isolateNode: false, ...(!family?.conditionIds.includes(workspace.conditionId) ? { conditionId: '' } : {}) })
   }
   function openAtlasTopic(topic: string) {
     setActiveGroups(new Set(GROUP_ORDER))
@@ -171,26 +173,26 @@ export default function App() {
     setMaterialQuery('')
     setLayoutName('fcose')
     setSelectedId(null)
-    navigate({ mode: 'atlas', atlasView: 'graph', atlasTopic: topic, conditionId: '', versionId: '', nodeId: '' })
+    navigate({ mode: 'atlas', atlasView: 'graph', atlasTopic: topic, conditionId: '', versionId: '', nodeId: '', isolateNode: false })
   }
   function openGraphNode(id: string) {
     setSelectedId(id)
     setLayoutName('fcose')
-    navigate({ mode: 'atlas', atlasView: 'graph', atlasTopic: '', versionId: '', nodeId: id })
+    navigate({ mode: 'atlas', atlasView: 'graph', atlasTopic: '', versionId: '', nodeId: id, isolateNode: false })
   }
   function handleModeChange(mode: AppMode) {
     if (mode === 'atlas') {
       setLayoutName('fcose')
-      navigate({ mode, atlasView: 'graph', atlasTopic: '', nodeId: '', versionId: '', newsFrom: '', newsTo: '' })
+      navigate({ mode, atlasView: 'graph', atlasTopic: '', nodeId: '', versionId: '', newsFrom: '', newsTo: '', searchQuery: '', isolateNode: false })
       return
     }
     // News has its own publication window and must never carry evidence or
     // regulatory context forward from Atlas/Data.
     if (mode === 'news') {
-      navigate({ mode, atlasTopic: '', jurisdiction: '', asOf: '' })
+      navigate({ mode, atlasTopic: '', jurisdiction: '', asOf: '', searchQuery: '', nodeId: '', isolateNode: false })
       return
     }
-    navigate({ mode, atlasTopic: '', newsFrom: '', newsTo: '' })
+    navigate({ mode, atlasTopic: '', newsFrom: '', newsTo: '', searchQuery: '', nodeId: '', isolateNode: false })
   }
   function handleDataViewChange(dataView: 'browse' | 'compare') {
     setCompareNotice('')
@@ -224,21 +226,15 @@ export default function App() {
   }
   function handleSelect(id: string | null) {
     setSelectedId(id)
-    navigate({ nodeId: id ?? '' })
+    navigate({ nodeId: id ?? '', isolateNode: false })
   }
   function handleSearch(id: string) {
-    const family = intelligence?.families.find(item => item.entityIds.includes(id))
-    const version = intelligence?.versions.find(item => item.familyId === family?.id)
-    if (version) openVersion(version.id)
-    else {
-      setSelectedId(id)
-      setLayoutName('fcose')
-      navigate({ mode: 'atlas', atlasView: 'graph', atlasTopic: '', nodeId: id, versionId: '', conditionId: '' })
-    }
+    setSelectedId(id)
+    setLayoutName('fcose')
+    navigate({ mode: 'atlas', atlasView: 'graph', atlasTopic: '', nodeId: id, isolateNode: true, versionId: '', conditionId: '' })
   }
   function handleNewsSelect(item: NewsItem) {
-    const family = intelligence?.families.find(entry => entry.entityIds.some(id => item.relevantNodeIds.includes(id)))
-    const version = intelligence?.versions.find(entry => entry.familyId === family?.id)
+    const version = intelligence ? versionForGraphEntities(intelligence, item.relevantNodeIds) : undefined
     navigate({ mode: 'news', atlasTopic: '', versionId: version?.id ?? '', conditionId: '' })
   }
   function toggleGroup(group: NodeGroup) { setActiveGroups(previous => { const next = new Set(previous); next.has(group) ? next.delete(group) : next.add(group); return next }) }
@@ -259,7 +255,7 @@ export default function App() {
   if (!graph) return <div className="state-msg">Loading VISUALIZE·SH…</div>
 
   return <div className={`app ${accessibilityMode ? 'accessibility-mode' : ''}`}>
-    <Header meta={graph.meta} nodes={nodes} onSelect={handleSearch}
+    <Header meta={graph.meta} nodes={nodes} news={graph.news} searchQuery={workspace.searchQuery} onSearch={query => navigate({ searchQuery: query, ...(workspace.mode === 'data' ? { dataView: 'browse' as const } : {}) })} onSelect={handleSearch}
       onAbout={() => setAboutOpen(true)}
       accessibilityMode={accessibilityMode} onToggleAccessibility={() => setAccessibilityMode(value => !value)}
       themePreference={themePreference} onThemePreferenceChange={setThemePreference}
@@ -322,8 +318,8 @@ export default function App() {
       <Suspense fallback={<p className="workspace-loading" role="status">Loading evidence…</p>}>
         {evidenceError ? <div className="workspace-loading" role="alert"><h2>Evidence is unavailable</h2><p>{evidenceError}</p><button onClick={() => window.location.reload()}>Retry</button><button onClick={() => navigate({ mode: 'atlas', atlasView: 'graph' })}>Open Atlas</button></div> : !scoped ? <p className="workspace-loading" role="status">Loading evidence…</p> : <>
           {workspace.versionId && !selectedVersion && !(workspace.mode === 'data' && workspace.dataView === 'compare') && <p className="workspace-notice" role="status">Product not available in this context. Choose another or clear context.</p>}
-          {workspace.mode === 'news' && <NewsWorkspace data={scoped} legacyNews={legacyNews} nodesById={nodesById} versionId={versionId} onOpenAtlas={id => openVersion(id)} onOpenAtlasTopic={openAtlasTopic} onOpenData={id => openVersion(id, 'data')} atlasTopics={atlasTopics} newsFrom={workspace.newsFrom} newsTo={workspace.newsTo} />}
-          {workspace.mode === 'data' && <>{workspace.dataView === 'compare' && compareNotice && <p className="workspace-notice" role="status">{compareNotice}</p>}<DataWorkspace data={scoped} conditionId={workspace.conditionId} versionId={versionId} onOpenAtlas={id => openVersion(id)} jurisdiction={workspace.jurisdiction} asOf={workspace.asOf} dataView={workspace.dataView} compareCategory={eligibleCompareCategory?.id ?? ''} compareVersionIds={compareVersionIds} compareConfigurationIds={compareConfigurationIds} onDataViewChange={handleDataViewChange} onCompareCategoryChange={handleCompareCategoryChange} onCompareVersionIdsChange={handleCompareVersionIdsChange} onCompareConfigurationIdsChange={handleCompareConfigurationIdsChange} /></>}
+          {workspace.mode === 'news' && <NewsWorkspace data={scoped} legacyNews={legacyNews} nodesById={nodesById} versionId={versionId} onOpenAtlas={id => openVersion(id)} onOpenAtlasTopic={openAtlasTopic} onOpenData={id => openVersion(id, 'data')} atlasTopics={atlasTopics} newsFrom={workspace.newsFrom} newsTo={workspace.newsTo} searchQuery={workspace.searchQuery} />}
+          {workspace.mode === 'data' && <>{workspace.dataView === 'compare' && compareNotice && <p className="workspace-notice" role="status">{compareNotice}</p>}<DataWorkspace data={scoped} conditionId={workspace.conditionId} versionId={versionId} onOpenAtlas={id => openVersion(id)} jurisdiction={workspace.jurisdiction} asOf={workspace.asOf} dataView={workspace.dataView} initialQuery={workspace.searchQuery} compareCategory={eligibleCompareCategory?.id ?? ''} compareVersionIds={compareVersionIds} compareConfigurationIds={compareConfigurationIds} onDataViewChange={handleDataViewChange} onCompareCategoryChange={handleCompareCategoryChange} onCompareVersionIdsChange={handleCompareVersionIdsChange} onCompareConfigurationIdsChange={handleCompareConfigurationIdsChange} /></>}
           {workspace.mode === 'atlas' && (versionId
             ? <AtlasEvidence data={scoped} versionId={versionId} onSelectVersion={id => openVersion(id)} onOpenData={id => openVersion(id, 'data')} jurisdiction={workspace.jurisdiction} asOf={workspace.asOf} />
             : <ProfileCatalog data={scoped} therapyNodes={nodes.filter((node) => node.entity.type === 'therapy' && conditionMatches.has(node.id))} nodesById={nodesById} onOpenVersion={id => openVersion(id)} onOpenNode={openGraphNode} />)}

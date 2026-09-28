@@ -81,6 +81,16 @@ test('comparison categories and attributes keep exact version and scope boundari
   expectInvalid(dangling, /references missing standard attribute attribute-missing/)
 })
 
+test('version graph mappings must point to a graph entity owned by the version family', () => {
+  const missing = validData()
+  missing.versions[0].graphEntityId = 'dev-missing'
+  expectInvalid(missing, /graphEntityId references missing legacy graph ID dev-missing/)
+
+  const outsideFamily = validData()
+  outsideFamily.versions[0].graphEntityId = 'trial-legacy'
+  expectInvalid(outsideFamily, /graphEntityId trial-legacy is not listed by family-one.entityIds/)
+})
+
 test('configuration dataset validates exact version, family, and generation links', () => {
   const pilot = loadIntelligenceSource(defaultIntelligencePaths(resolve('.'))) as unknown as IntelligenceData
   const comparative = JSON.parse(readFileSync(resolve('data/intelligence/comparative-pilot.yaml'), 'utf8')) as NonNullable<IntelligenceData['comparative']>

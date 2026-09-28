@@ -109,10 +109,11 @@
       "type": "object", "additionalProperties": false,
       "required": ["id", "familyId", "name", "kind", "clinicalRole", "summary", "sourceRefs", "reviewStatus"],
       "properties": {
-        "id": { "$ref": "#/$defs/id" }, "familyId": { "$ref": "#/$defs/id" }, "name": { "$ref": "#/$defs/nonEmpty" },
+        "id": { "$ref": "#/$defs/id" }, "familyId": { "$ref": "#/$defs/id" }, "graphEntityId": { "$ref": "#/$defs/id" }, "name": { "$ref": "#/$defs/nonEmpty" },
         "kind": { "enum": ["device", "digital", "pharmaceutical", "procedure"] },
         "clinicalRole": { "enum": ["treats", "manages", "detects", "plans", "monitors"] },
         "model": { "$ref": "#/$defs/nonEmpty" }, "softwareVersion": { "$ref": "#/$defs/nonEmpty" },
+        "lifecycleStatus": { "enum": ["halted", "retired", "recalled"] }, "lifecycleDetail": { "$ref": "#/$defs/nonEmpty" },
         "digitalSubtype": { "enum": ["therapeutic", "care_delivery", "diagnostic", "planning", "monitoring"] },
         "summary": { "$ref": "#/$defs/nonEmpty" }, "sourceRefs": { "$ref": "#/$defs/provenanceProperties/properties/sourceRefs" },
         "reviewStatus": { "$ref": "#/$defs/provenanceProperties/properties/reviewStatus" }

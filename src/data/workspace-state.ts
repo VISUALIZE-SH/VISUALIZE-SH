@@ -17,6 +17,8 @@ export interface WorkspaceState {
   newsFrom: string
   newsTo: string
   nodeId: string
+  searchQuery: string
+  isolateNode: boolean
 }
 
 const id = (value: string | null) => value && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value) ? value : ''
@@ -54,6 +56,8 @@ export function parseWorkspace(search: string): WorkspaceState {
     newsFrom: mode === 'news' && isCalendarDate(newsFrom) ? newsFrom : '',
     newsTo: mode === 'news' && isCalendarDate(newsTo) ? newsTo : '',
     nodeId: id(query.get('node')),
+    searchQuery: (query.get('q') ?? '').slice(0, 120),
+    isolateNode: query.get('isolate') === '1' && Boolean(query.get('node')),
   }
 }
 
@@ -76,6 +80,8 @@ export function workspaceQuery(state: WorkspaceState): string {
     if (state.newsTo) query.set('newsTo', state.newsTo)
   }
   if (state.nodeId && state.atlasView === 'graph') query.set('node', state.nodeId)
+  if (state.isolateNode && state.nodeId && state.mode === 'atlas' && state.atlasView === 'graph') query.set('isolate', '1')
+  if (state.searchQuery.trim()) query.set('q', state.searchQuery.trim().slice(0, 120))
   return query.toString()
 }
 

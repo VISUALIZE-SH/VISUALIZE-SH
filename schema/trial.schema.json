@@ -20,7 +20,9 @@
       "description": "ClinicalTrials.gov identifier; used to build a deep link."
     },
     "phase": { "type": "string", "description": "e.g. 'Phase 3', 'Pivotal RCT', 'Registry'." },
-    "status": { "enum": ["recruiting", "active", "completed", "terminated", "unknown"] },
+    "status": { "enum": ["recruiting", "active", "completed", "suspended", "terminated", "unknown"] },
+    "lifecycleStatus": { "enum": ["halted", "retired", "recalled"] },
+    "lifecycleDetail": { "type": "string", "minLength": 1 },
     "conditions": {
       "type": "array",
       "minItems": 1,

@@ -237,6 +237,19 @@
 
 
 
+- id: "news-2026-08-31-laacs-2-surgical-laa-closure-results"
+  publishedAt: "2026-08-31"
+  title: "LAACS-2 finds no significant overall stroke reduction with routine surgical LAA closure, with a high-risk subgroup signal"
+  summary: "At ESC Congress 2026, investigators reported 1,500 patients randomized during planned open-heart surgery and followed for a median of four years: stroke or TIA occurred in 4.28% assigned LAA closure versus 5.04% with standard care (HR 0.85, 95% CI 0.53–1.37; P=0.517). A prespecified report described a 56% reduction in the subgroup above the median CHA2DS2-VASc risk score (P=0.018); this does not establish routine benefit for all surgical patients, and long-term follow-up continues. The surgical technique/device mix was not specified in the press report, so these findings do not establish efficacy for a particular clip generation."
+  sourceName: "European Society of Cardiology"
+  sourceUrl: "https://www.escardio.org/news/press/press-releases/left-atrial-appendage-closure-during-open-heart-surgery-only-beneficial-for-high-risk-patients/"
+  additionalSources:
+    - label: "ESC Congress session listing"
+      url: "https://esc365.escardio.org/"
+  topicTags: ["surgical LAA exclusion", "LAACS-2", "stroke prevention", "randomized trial"]
+  relevantNodeIds: ["cond-af"]
+  reviewStatus: draft
+
 - id: "news-2026-08-30-tric-i-hf-shows-transcatheter-tricuspid-repair-can-improve-hard-clinical"
   publishedAt: "2026-08-30"
   title: "TRIC-I-HF shows transcatheter tricuspid repair can improve hard clinical outcomes"
@@ -742,6 +755,16 @@
 
 
 
+- id: "news-2026-07-01-northwestern-fluoroless-watchman-workflow"
+  publishedAt: "2026-07-01"
+  title: "Northwestern describes fluoroscopy-free AF ablation and WATCHMAN implantation workflow"
+  summary: "A Northwestern Medicine Breakthroughs for Physicians clinical video describes a fluoroscopy-free workflow combining catheter ablation and WATCHMAN implantation; the featured physician reports performing ablation and WATCHMAN procedures without radiation exposure over 15 years. Northwestern dates the item only to July 2026, without a publication day. This is a technique feature, not a comparative clinical study; it reports no controlled outcomes, and does not identify the WATCHMAN generation, so efficacy and generation-specific conclusions cannot be drawn."
+  sourceName: "Northwestern Medicine Breakthroughs for Physicians"
+  sourceUrl: "https://breakthroughsforphysicians.nm.org/cardiovascular-clinical-video-radiation-free-catheter-ablation-watchman-implantation.html"
+  topicTags: ["LAAO", "WATCHMAN", "fluoroscopy-free procedure", "workflow"]
+  relevantNodeIds: ["cond-af"]
+  reviewStatus: draft
+
 - id: "news-2026-07-01-first-u-s-real-world-triclip-data-show-strong-commercial-rollout"
   publishedAt: "2026-07-01"
   title: "First U.S. real-world TriClip data show strong commercial rollout"
@@ -894,3 +917,273 @@
   sourceUrl: "https://www.tctmd.com/news/triscend-ii-data-reveal-drivers-hospital-costs-length-stay-ttvr"
   topicTags: ["tricuspid regurgitation", "TTVR", "health economics"]
   relevantNodeIds: ["cond-tr", "dev-evoque", "trial-triscend-2", "co-edwards"]
+
+- id: "news-2026-05-19-heal-laa-watchman-flx-pro-postmarket-analysis"
+  publishedAt: "2026-05-19"
+  title: "HEAL-LAA reports six-month outcomes for WATCHMAN FLX Pro in 500-patient post-market study"
+  summary: "In a prospective, single-arm study at 32 U.S. centers, 500 patients received WATCHMAN FLX Pro; the six-month composite of death, stroke, systemic embolism, or major bleeding was 11.1% (55/496), below the prespecified 21% performance goal. The primary paper also reports 45-day seal and 12-month follow-up, but the comparison is against performance goals rather than a randomized control, and the study was sponsored by Boston Scientific."
+  sourceName: "JACC: Clinical Electrophysiology"
+  sourceUrl: "https://www.jacc.org/doi/10.1016/j.jacep.2026.03.029"
+  additionalSources:
+    - label: "PubMed record"
+      url: "https://pubmed.ncbi.nlm.nih.gov/42138685/"
+  topicTags: ["LAAO", "WATCHMAN FLX Pro", "post-market study"]
+  relevantNodeIds: ["cond-af", "dev-watchman-flx"]
+  reviewStatus: draft
+
+- id: "news-2026-03-28-champion-af-watchman-flx-vs-noac"
+  publishedAt: "2026-03-28"
+  title: "CHAMPION-AF finds WATCHMAN FLX noninferior to NOACs for efficacy and superior for nonprocedural bleeding at three years"
+  summary: "In the 3,000-patient randomized CHAMPION-AF trial of patients eligible for long-term anticoagulation, WATCHMAN FLX met noninferiority for the composite of cardiovascular death, stroke, or systemic embolism at three years (5.7% vs 4.8%) and reduced nonprocedural major or clinically relevant nonmajor bleeding (10.9% vs 19.0%). The study population had low mean bleeding risk; ischemic stroke was numerically more frequent with closure (3.2% vs 2.0%), and five-year follow-up is ongoing, so this result does not establish broad first-line equivalence for every AF population."
+  sourceName: "New England Journal of Medicine"
+  sourceUrl: "https://www.nejm.org/doi/full/10.1056/NEJMoa2517213"
+  additionalSources:
+    - label: "ACC.26 trial coverage"
+      url: "https://www.acc.org/Latest-in-Cardiology/Articles/2026/03/25/21/27/sat-930am-championaf-acc-2026"
+    - label: "Boston Scientific trial results"
+      url: "https://www.bostonscientific.com/en-EU/products/laac-system/champion-af-clinical-trial/trial-results.html"
+  topicTags: ["LAAO", "WATCHMAN FLX", "CHAMPION-AF", "randomized trial"]
+  relevantNodeIds: ["cond-af", "dev-watchman-flx", "trial-champion-af"]
+  reviewStatus: draft
+
+- id: "news-2026-03-18-closure-af-laa-closure-not-noninferior"
+  publishedAt: "2026-03-18"
+  title: "CLOSURE-AF finds LAA closure did not meet noninferiority versus physician-directed medical therapy in high-risk AF"
+  summary: "The randomized German CLOSURE-AF trial enrolled 912 patients at high risk of both stroke and bleeding. At median three-year follow-up, the composite of stroke, systemic embolism, major bleeding, or cardiovascular/unexplained death occurred at 16.8 versus 13.3 events per 100 patient-years with closure versus medical therapy; the prespecified noninferiority criterion was not met (P=0.44). The study included physician-selected devices and medical treatment, and its result applies to this older, high-risk population rather than establishing comparative performance for a specific device generation."
+  sourceName: "New England Journal of Medicine"
+  sourceUrl: "https://www.nejm.org/doi/abs/10.1056/NEJMoa2513310"
+  additionalSources:
+    - label: "ACC trial summary"
+      url: "https://www.acc.org/latest-in-cardiology/journal-scans/2026/03/24/17/43/closure-af"
+    - label: "ClinicalTrials.gov record"
+      url: "https://clinicaltrials.gov/study/NCT03463317"
+  topicTags: ["LAAO", "atrial fibrillation", "CLOSURE-AF", "randomized trial"]
+  relevantNodeIds: ["cond-af", "trial-closure-af"]
+  reviewStatus: draft
+
+- id: "news-2026-02-06-veritas-amulet-360-early-outcomes"
+  publishedAt: "2026-02-06"
+  title: "VERITAS reports early procedural and seal outcomes for investigational Amulet 360"
+  summary: "The prospective, single-arm VERITAS study implanted Amulet 360 in 400 patients at 34 sites; 399 implants succeeded, and all 376 patients with 45-day echocardiography met the seal endpoint of leak ≤5 mm, with 94% complete occlusion and no leak ≥3 mm. Seven-day/discharge safety endpoint events were zero, while device-related thrombus was observed in 2.4% and 3.3% had a major bleed during follow-up. The study has no randomized comparator or demonstrated stroke-reduction efficacy, and the device was investigational in this report."
+  sourceName: "Journal of the American College of Cardiology: Clinical Electrophysiology"
+  sourceUrl: "https://www.jacc.org/doi/10.1016/j.jacep.2026.01.021"
+  additionalSources:
+    - label: "ACC Journal Scan"
+      url: "https://www.acc.org/latest-in-cardiology/journal-scans/2026/02/17/14/32/veritas"
+  topicTags: ["LAAO", "Amulet 360", "VERITAS", "early outcomes"]
+  relevantNodeIds: ["cond-af", "dev-amulet-360"]
+  reviewStatus: draft
+
+- id: "news-2026-02-03-acc-registry-machine-learning-laao-risk"
+  publishedAt: "2026-02-03"
+  title: "ACC Registry study finds machine learning modestly improves prediction of in-hospital LAAO events"
+  summary: "A JACC: Advances analysis trained and validated logistic regression, LASSO, and XGBoost models on 81,703 procedures in the ACC LAAO Registry. XGBoost discrimination for composite in-hospital major adverse events was modest (validation AUC 0.648 using 16 variables and 0.653 with 51 variables), and performance for rare events remained poor with overfitting concerns; the findings support further registry risk-model development, not a validated bedside decision tool."
+  sourceName: "American College of Cardiology"
+  sourceUrl: "https://www.acc.org/latest-in-cardiology/journal-scans/2026/02/02/20/04/machine-learning-outperforms"
+  additionalSources:
+    - label: "JACC: Advances original study"
+      url: "https://doi.org/10.1016/j.jacadv.2025.102540"
+    - label: "ACC LAAO Registry"
+      url: "https://cvquality.acc.org/NCDR-Home/registries/hospital-registries/laao-registry"
+  topicTags: ["LAAO", "ACC Registry", "machine learning", "risk prediction"]
+  relevantNodeIds: ["cond-af", "dev-watchman-flx"]
+  reviewStatus: draft
+
+- id: "news-2025-09-01-opinion-prophylactic-surgical-laao-no-af"
+  publishedAt: "2025-09-01"
+  title: "OPINION trial finds no significant one-year benefit from prophylactic surgical LAA closure in patients without prior AF"
+  summary: "In a 2,118-patient randomized trial of people without preoperative AF undergoing valve surgery, the primary composite of ischemic stroke, TIA, or cardiovascular death occurred in 6.9% with concomitant surgical LAA closure and 8.2% without it (HR 0.83, 95% CI 0.61–1.14; P=0.25). A possible signal in the CHA2DS2-VASc ≥3 subgroup is exploratory; follow-up is being extended. The intervention was surgical suture excision/closure, not a comparison of named marketed clip devices, so the results should not be assigned to AtriClip or another specific device."
+  sourceName: "European Heart Journal"
+  sourceUrl: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13191831/"
+  additionalSources:
+    - label: "ACC trial coverage"
+      url: "https://www.acc.org/latest-in-cardiology/articles/2025/08/26/11/47/mon-839am-opinion-esc-2025"
+    - label: "ESC Congress abstract"
+      url: "https://esc365.escardio.org/journal/92177"
+  topicTags: ["surgical LAA exclusion", "OPINION", "valve surgery", "randomized trial"]
+  relevantNodeIds: ["cond-af"]
+  reviewStatus: draft
+
+- id: "news-2025-07-16-fda-watchman-flx-post-ablation-indication"
+  publishedAt: "2025-07-16"
+  title: "FDA expands WATCHMAN FLX and FLX Pro labeling to patients after AF ablation"
+  summary: "FDA approved PMA supplement S074 to expand the WATCHMAN FLX and FLX Pro indications to include patients following catheter ablation for non-valvular AF and to add a post-implant drug regimen. The change is specific to the two named FLX generations and their labeled eligibility criteria; it does not extend to the original WATCHMAN or other LAA closure devices."
+  sourceName: "U.S. Food and Drug Administration"
+  sourceUrl: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S074"
+  additionalSources:
+    - label: "FDA approval order"
+      url: "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S074A.pdf"
+    - label: "FDA Summary of Safety and Effectiveness Data"
+      url: "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S074B.pdf"
+  topicTags: ["LAAO", "WATCHMAN FLX", "FDA", "post-ablation indication"]
+  relevantNodeIds: ["cond-af", "dev-watchman-flx"]
+  reviewStatus: draft
+
+- id: "news-2025-06-30-swiss-apero-three-year-amulet-watchman-flx"
+  publishedAt: "2025-06-30"
+  title: "Three-year SWISS-APERO follow-up finds no significant intention-to-treat ischemic difference between Amulet and Watchman/FLX"
+  summary: "In this 221-patient randomized trial of higher-risk AF patients, the three-year composite of cardiovascular death, stroke, TIA, or systemic embolism was 18.2% with Amulet versus 31.0% with Watchman/FLX (HR 0.58, 95% CI 0.33–1.03; P=0.06) in the intention-to-treat analysis. As-treated and per-protocol analyses reached nominal significance, but those findings are hypothesis-generating; the trial was not powered for clinical outcomes, and most Watchman-arm patients received FLX."
+  sourceName: "Journal of the American College of Cardiology"
+  sourceUrl: "https://www.jacc.org/doi/10.1016/j.jacc.2025.03.535"
+  additionalSources:
+    - label: "ACC SWISS-APERO trial record"
+      url: "https://www.acc.org/latest-in-cardiology/clinical-trials/2021/11/02/22/20/swiss-apero"
+    - label: "TCTMD conference report"
+      url: "https://www.tctmd.com/news/swiss-apero-3-years-hints-differences-between-amulet-watchman-emerge"
+  topicTags: ["LAAO", "Amulet", "WATCHMAN FLX", "SWISS-APERO", "randomized trial"]
+  relevantNodeIds: ["cond-af", "dev-amulet", "dev-watchman-flx"]
+  reviewStatus: draft
+
+- id: "news-2025-05-27-watchman-flx-vs-first-generation-registry"
+  publishedAt: "2025-05-27"
+  title: "ACC Registry comparison associates WATCHMAN FLX with fewer one-year events than first-generation WATCHMAN"
+  summary: "A propensity-matched NCDR LAAO Registry analysis compared 27,141 WATCHMAN FLX recipients with 27,141 first-generation WATCHMAN recipients from 641 U.S. sites. At one year, FLX was associated with lower adjusted hazards of major adverse events (HR 0.84), ischemic stroke (HR 0.82), and ischemic stroke/systemic embolism (HR 0.74); 45-day peridevice leak was also lower (14.7% vs 23.5%), while device-related thrombus was similar. This was an observational comparison across different treatment eras, so residual confounding remains possible."
+  sourceName: "JACC: Cardiovascular Interventions"
+  sourceUrl: "https://www.jacc.org/doi/10.1016/j.jcin.2025.03.025"
+  additionalSources:
+    - label: "ACC Registry study summary"
+      url: "https://www.acc.org/Latest-in-Cardiology/Journal-Scans/2025/06/09/19/10/Lower-Risk-of-Major-Adverse-Events-Ischemic-Stroke-in-LAAO"
+  topicTags: ["LAAO", "WATCHMAN FLX", "real-world evidence", "ACC Registry"]
+  relevantNodeIds: ["cond-af", "dev-watchman-flx", "dev-watchman-original"]
+  reviewStatus: draft
+
+- id: "news-2025-04-09-amulet-ide-high-risk-device-thrombus"
+  publishedAt: "2025-04-09"
+  title: "Amulet IDE analysis finds fewer high-risk thrombi with Amulet than WATCHMAN 2.5"
+  summary: "A core-laboratory analysis of the randomized Amulet IDE cohort found high-risk device-related thrombus through 12 months in 4.0% of WATCHMAN 2.5 recipients (35/885) versus 2.2% with Amulet (20/903; P=0.030); high-risk thrombus was often detected after 45 days. Across device groups, patients with high-risk DRT had more five-year stroke/systemic embolism/cardiovascular-death events than those with low-risk or no DRT (30.4% vs 19.9%). This post-randomization subgroup analysis does not prove device-related causation or apply to WATCHMAN FLX/FLX Pro."
+  sourceName: "JACC: Clinical Electrophysiology"
+  sourceUrl: "https://www.jacc.org/doi/10.1016/j.jacep.2025.02.016"
+  additionalSources:
+    - label: "ACC Journal Scan"
+      url: "https://www.acc.org/Latest-in-Cardiology/Journal-Scans/2025/04/10/13/42/More-High-Risk-Device-Related-Thrombi-With-Watchman"
+    - label: "PubMed record"
+      url: "https://pubmed.ncbi.nlm.nih.gov/40208159/"
+  topicTags: ["LAAO", "Amulet IDE", "device-related thrombus", "WATCHMAN 2.5"]
+  relevantNodeIds: ["cond-af", "dev-amulet", "dev-watchman-original", "trial-amulet-ide"]
+  reviewStatus: draft
+
+- id: news-2022-04-01-occlutech-pvl-long-term-outcomes
+  publishedAt: '2022-04-01'
+  title: Multicenter Occlutech PLD study reports sustained improvement after paravalvular leak closure
+  summary: The study enrolled 144 patients at 21 sites; its 112-patient full-analysis set had procedural success of 91.3% for mitral and 90.0% for aortic leaks. At two years, among the reported follow-up subset, NYHA III/IV fell from 80% at baseline to 14.1%; 3 device embolizations were reported. This was nonrandomized and follow-up was incomplete.
+  sourceName: Journal of Clinical Medicine
+  sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/
+  reviewStatus: reviewed
+  topicTags: [paravalvular leak, device closure, clinical outcomes]
+  relevantNodeIds: [cond-pvl, dev-occlutech-pvl, trial-pld-multicenter]
+
+- id: news-2024-06-11-fda-grants-mi-chord-denovo
+  publishedAt: '2024-06-11'
+  title: FDA grants De Novo authorization to LSI Solutions Mi-CHORD system
+  summary: FDA granted De Novo DEN230069 for the Mi-CHORD artificial chordae surgical replacement system. Its supporting prospective OUS feasibility cohort enrolled 12 patients with one-year follow-up; that small cohort supports classification and authorization but does not establish comparative effectiveness.
+  sourceName: U.S. Food and Drug Administration
+  sourceUrl: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230069
+  reviewStatus: reviewed
+  topicTags: [mitral repair, artificial chordae, FDA De Novo]
+  relevantNodeIds: [cond-mr, dev-mi-chord, co-lsi-solutions, trial-mi-chord-pilot]
+
+- id: news-2018-09-18-tricaval-trial-halted
+  publishedAt: '2018-09-18'
+  title: TRICAVAL trial of caval Sapien XT implantation terminated for safety concerns
+  summary: ClinicalTrials.gov records TRICAVAL as terminated for safety concerns after enrolling 28 participants. This halt concerns inferior caval implantation of Edwards SAPIEN XT in that study; it does not establish a class-wide stop for later bicaval systems such as TricValve.
+  sourceName: ClinicalTrials.gov
+  sourceUrl: https://clinicaltrials.gov/study/NCT02387697
+  reviewStatus: reviewed
+  lifecycleStatus: halted
+  topicTags: [tricuspid regurgitation, caval valve implantation, halted trial]
+  relevantNodeIds: [cond-tr, dev-edwards-sapien-xt-caval, trial-tricaval]
+
+- id: news-2025-01-08-alive-revivent-trial-results
+  publishedAt: '2025-01-08'
+  title: ALIVE trial finds no significant 12-month clinical benefit for Revivent TC
+  summary: In a prospective 2:1 device-versus-control study of patients with prior anterior MI and LV remodeling, Revivent TC safely reduced LV dimensions but did not improve the 12-month hierarchical composite efficacy endpoint (win ratio 1.13; P=0.32). A post hoc surgical-only subgroup appeared more favorable and needs randomized confirmation.
+  sourceName: "JACC: Heart Failure"
+  sourceUrl: https://pubmed.ncbi.nlm.nih.gov/39797846/
+  reviewStatus: reviewed
+  topicTags: [LV restoration, ischemic cardiomyopathy, trial results]
+  relevantNodeIds: [cond-ischemic-lv-remodeling, cond-hfref, dev-revivent-tc, trial-alive-revivent]
+
+- id: news-2012-05-25-peerless-hf-stopped
+  publishedAt: '2012-05-25'
+  title: PEERLESS-HF stopped after interim futility analysis
+  summary: The randomized HeartNet study was stopped after interim analysis showed the primary six-month efficacy endpoint was unlikely to be met; the trial registry also lists termination. This is a halted trial signal, not evidence that all epicardial restraint therapies were withdrawn.
+  sourceName: Journal of Cardiac Failure
+  sourceUrl: https://pubmed.ncbi.nlm.nih.gov/22633302/
+  reviewStatus: reviewed
+  lifecycleStatus: halted
+  topicTags: [heart failure, epicardial restraint, halted trial]
+  relevantNodeIds: [cond-hfref, dev-heartnet, trial-peerless-hf]
+
+- id: news-2026-06-18-fda-heartmate-3-kit-recall
+  publishedAt: '2026-06-18'
+  title: FDA lists Class II recall for specified HeartMate 3 LVAS kits
+  summary: FDA posted an open Class II recall initiated May 13, 2026, for specified 11V lithium-ion backup batteries within HeartMate 3 LVAS kits model 106524US (recall Z-2518-2026). Only affected serial-numbered units are covered; the action is not a blanket recall of all implanted HeartMate 3 pumps.
+  sourceName: U.S. Food and Drug Administration
+  sourceUrl: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfres/res.cfm?id=220518
+  reviewStatus: reviewed
+  lifecycleStatus: recalled
+  topicTags: [durable MCS, LVAD, FDA recall]
+  relevantNodeIds: [cond-hfref, dev-heartmate-3, dev-heartmate-3-lvas-kit-106524us, trial-momentum-3]
+
+- id: news-2023-12-29-kiss-registry-pvl-closure
+  publishedAt: '2023-12-29'
+  title: KISS registry compares transcatheter and surgical paravalvular leak closure
+  summary: In a retrospective three-center cohort of 335 patients, technical success was 78.9% with transcatheter closure and 76.2% with surgery; long-term mortality did not differ significantly. AVP III accounted for 140 of 171 transcatheter cases, so these outcomes are not specific to one device.
+  sourceName: Journal of the American Heart Association
+  sourceUrl: https://pubmed.ncbi.nlm.nih.gov/38156599/
+  reviewStatus: reviewed
+  topicTags: [paravalvular leak, transcatheter closure, surgical comparison]
+  relevantNodeIds: [cond-pvl, dev-amplatzer-pvl-plug-iii, trial-kiss-pvl]
+
+- id: news-2026-06-03-corcinch-hf-suspended
+  publishedAt: '2026-06-03'
+  title: ClinicalTrials.gov lists CORCINCH-HF as suspended
+  summary: The registry's June 2026 update lists the pivotal AccuCinch trial as suspended, with estimated enrollment 400. This is a study-status update and does not establish that the device itself was withdrawn or explain the reason for suspension.
+  sourceName: ClinicalTrials.gov
+  sourceUrl: https://clinicaltrials.gov/study/NCT04331769
+  reviewStatus: reviewed
+  lifecycleStatus: halted
+  topicTags: [left ventricular restoration, clinical trial, suspended]
+  relevantNodeIds: [cond-ischemic-lv-remodeling, dev-accucinch, trial-corcinch-hf]
+
+- id: news-2021-02-26-corcap-withdrawal-reviewed
+  publishedAt: '2021-02-26'
+  title: Peer-reviewed review reports CorCap was withdrawn from the market
+  summary: A 2021 review states that the CorCap cardiac support device was withdrawn from the market, citing concerns about long-term pericardial constriction. This is a secondary literature report; it does not establish a formal FDA recall or the date withdrawal occurred.
+  sourceName: Cardiovascular Diagnosis and Therapy
+  sourceUrl: https://cdt.amegroups.org/article/view/48028/html
+  reviewStatus: reviewed
+  lifecycleStatus: retired
+  topicTags: [epicardial restraint, CorCap, historical device]
+  relevantNodeIds: [cond-hfref, dev-corcap, trial-acorn-corcap]
+
+- id: news-2022-03-03-tricento-registry-reports-bicaval-valve-outcomes
+  publishedAt: '2022-03-03'
+  title: TRICENTO registry reports early results of a custom bicaval valved stent
+  summary: A multicenter retrospective registry of 21 high-risk patients reported 100% technical success and no in-hospital deaths; 3 patients had asymptomatic stent fractures, median follow-up was 61 days, and one-year survival was 76%. The small cohort supports feasibility and highlights a design durability issue.
+  sourceName: "Circulation: Cardiovascular Interventions"
+  sourceUrl: https://pubmed.ncbi.nlm.nih.gov/35236096/
+  reviewStatus: reviewed
+  topicTags: [tricuspid regurgitation, heterotopic caval valves, clinical registry]
+  relevantNodeIds: [cond-tr, dev-tricento, trial-tricento-registry]
+
+- id: news-2025-10-23-accucinch-two-year-follow-up
+  publishedAt: '2025-10-23'
+  title: Ancora reports two-year early-study follow-up for AccuCinch LV restoration
+  summary: Ancora announced two-year follow-up from early AccuCinch studies, describing sustained reverse remodeling and improvements in heart function, quality of life, and heart-failure hospitalizations. These are early-study findings reported by the manufacturer; CORCINCH-HF remains the separate randomized pivotal evaluation and AccuCinch is investigational.
+  sourceName: Ancora Heart
+  sourceUrl: https://www.ancoraheart.com/press_releases/ancora-heart-inc-reports-two-year-results/
+  reviewStatus: reviewed
+  additionalSources: [{ label: Peer-reviewed two-year report, url: https://doi.org/10.1016/j.shj.2025.100694 }]
+  topicTags: [LV restoration, heart failure, investigational device]
+  relevantNodeIds: [cond-hfref, dev-accucinch, trial-corcinch-hf]
+
+- id: news-2008-04-21-fda-approves-heartmate-ii
+  publishedAt: '2008-04-21'
+  title: FDA grants original PMA to HeartMate II LVAS for bridge to transplantation
+  summary: FDA granted original PMA P060040 for the HeartMate II LVAS as bridge-to-transplantation support in advanced refractory left ventricular failure. Later label supplements expanded indications; the 2008 decision is the initial authorization record.
+  sourceName: U.S. Food and Drug Administration
+  sourceUrl: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P060040
+  reviewStatus: reviewed
+  topicTags: [durable MCS, LVAD, FDA PMA]
+  relevantNodeIds: [cond-hfref, dev-heartmate-ii, trial-momentum-3]

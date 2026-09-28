@@ -170,3 +170,31 @@
   description: "Pulmonary regurgitation/stenosis or RVOT conduit dysfunction, often in repaired congenital heart disease (e.g. tetralogy of Fallot); treated by transcatheter pulmonary valve replacement (Melody, Harmony) or surgery."
   pulse: 4
   curation: { status: curated, lastUpdated: 2026-06-22 }
+
+- id: cond-pvl
+  type: condition
+  name: Prosthetic paravalvular leak
+  abbreviation: PVL
+  category: Mitral valve disease
+  anatomy: [prosthetic valve sewing ring, periannular channel]
+  description: Regurgitant flow through a defect between a prosthetic valve and the native annulus, potentially causing heart failure or hemolysis; selected high-risk patients may undergo transcatheter closure.
+  curation:
+    status: draft
+    lastUpdated: '2026-09-28'
+    sources:
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC10863827/
+
+- id: cond-ischemic-lv-remodeling
+  type: condition
+  name: Ischemic left ventricular remodeling
+  abbreviation: Ischemic LV remodeling
+  category: Heart failure
+  anatomy: [left ventricle, anterior myocardial scar]
+  description: LV dilation and geometric distortion after extensive myocardial infarction; selected patients have been studied for surgical or hybrid scar exclusion and ventricular reconstruction.
+  curation:
+    status: draft
+    lastUpdated: '2026-09-28'
+    sources:
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC9725051/
+    - https://pubmed.ncbi.nlm.nih.gov/39797846/

@@ -16,8 +16,12 @@ set of starting points, not evidence for a claim.
 1. Read this file, `schema/DATA_DICTIONARY.md`, `schema/news.schema.json`, and the
    current `data/*.yaml`. Record any existing local edits; preserve them.
 2. Research the preceding seven days once. Cover structural-heart devices,
-   heart-failure therapies, and relevant digital therapies. Prioritize LAAO,
-   septal/congenital closure, HCM, ATTR-CM, HFrEF/HFpEF, interatrial shunts,
+   heart-failure therapies, and relevant digital therapies. Prioritize LAAO/LAAC,
+   including endocardial occluders, percutaneous epicardial ligation, surgical
+   exclusion, and investigational designs. Distinguish exact device generations,
+   regional authorization, historical withdrawal, and current availability.
+   Also prioritize septal/congenital closure, HCM, ATTR-CM, HFrEF/HFpEF,
+   interatrial shunts,
    PA/IVC/LA sensors, coronary-sinus/CMD therapies, TAVR, mitral/tricuspid
    transcatheter therapies, pulmonary valves, and surgical valve therapy. Include
    meaningful engineering research from university and journal sources. Verify
@@ -29,7 +33,9 @@ set of starting points, not evidence for a claim.
    item `reviewStatus: draft`. Keep newest first and retain at most 250 items.
 4. Add warranted entities only with `curation.status: draft` and verified source
    URLs. Pulse may change on existing curated entities; do not change their other
-   facts. Flag uncertain regulatory status, trial IDs, and outdated facts for
+   facts. Do not transfer a trial, clearance, or material claim across LAA device
+   generations, and do not treat soft-tissue ligation clearance as stroke-prevention
+   approval. Flag uncertain regulatory status, trial IDs, and outdated facts for
    curator review. Never invent a link, date, or trial outcome.
 5. Run `npm run newsletter:review -- --date YYYY-MM-DD`, using the Sunday issue
    date. This validates data, references, tests, TypeScript, and the public-repo
