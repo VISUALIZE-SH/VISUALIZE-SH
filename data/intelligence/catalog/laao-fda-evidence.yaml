@@ -1,0 +1,76 @@
+# Additional primary FDA evidence for LAA closure devices.
+# Claims are device-version scoped and do not move evidence across generations.
+observedAt: '2026-09-28'
+sources:
+  - id: src-watchman-original-ssed
+    title: WATCHMAN LAA Closure Technology Summary of Safety and Effectiveness Data
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2015-03-13', precision: day }
+    retrievedAt: '2026-09-28'
+    access: public
+    identifier: P130013
+  - id: src-watchman-pas-5y
+    title: WATCHMAN continued follow-up of IDE cohorts Post-Approval Study
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=3356&t_id=512509
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-28'
+    access: public
+    identifier: P130013/PAS001
+  - id: src-amulet-ide-ssed
+    title: Amplatzer Amulet Left Atrial Appendage Occluder Summary of Safety and Effectiveness Data
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2021-08-14', precision: day }
+    retrievedAt: '2026-09-28'
+    access: public
+    identifier: P200049
+  - id: src-amulet-ide-pubmed
+    title: 'Amplatzer Amulet Left Atrial Appendage Occluder Versus Watchman Device for Stroke Prophylaxis (Amulet IDE): A Randomized, Controlled Trial'
+    url: https://pubmed.ncbi.nlm.nih.gov/34459659/
+    kind: publication
+    publisher: Circulation
+    publishedAt: { value: '2021-09-07', precision: day }
+    retrievedAt: '2026-09-28'
+    access: public
+    identifier: PMID 34459659
+  - id: src-amulet-ide-5y-pas
+    title: Continued Follow-up of the Amulet IDE Cohort Post-Approval Study
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6664&t_id=724803
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-28'
+    access: public
+    identifier: P200049/PAS001
+  - id: src-amulet-ide-registry
+    title: Amplatzer Amulet Left Atrial Appendage Occluder Trial (Amulet IDE)
+    url: https://clinicaltrials.gov/study/NCT02879448
+    kind: registry
+    publisher: ClinicalTrials.gov
+    retrievedAt: '2026-09-28'
+    access: public
+    identifier: NCT02879448
+  - id: src-acc-laao-2025-review
+    title: 'Cutting-Edge Structural Interventions | LAAO: An Effective Alternative With a Hidden Clinical Paradox'
+    url: https://www.acc.org/latest-in-cardiology/articles/2025/06/01/01/cutting-edge-structural-interventions-laao
+    kind: publication
+    publisher: American College of Cardiology
+    publishedAt: { value: '2025-06-01', precision: day }
+    retrievedAt: '2026-09-28'
+    access: public
+specs:
+  - version: ver-watchman-original
+    category: laao-occluders
+    source: src-watchman-original-ssed
+    values:
+      indication-scope:
+        value: 'Reduce thromboembolism risk from LAA in NVAF at increased stroke risk with a suitable reason to seek a non-pharmacologic alternative to warfarin.'
+        loc: 'PDF pp. 1–2, Indications for Use'
+        limitation: Original 2015 WATCHMAN indication snapshot; check later PMA supplements for current labeling.
+      pivotal-trials:
+        value: 'PROTECT AF (NCT00129545); PREVAIL (NCT01182441)'
+        loc: 'PDF p. 12, Summary of Primary Clinical Studies; FDA PAS linked IDE cohort follow-up'
+        context: Original WATCHMAN generation evidence; do not transfer endpoint estimates to FLX generations.

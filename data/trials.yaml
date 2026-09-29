@@ -18,7 +18,7 @@
     event: "Trial start"
     source: "https://clinicaltrials.gov/study/NCT00129545"
   conditions: [cond-af]
-  therapies: [dev-watchman-flx]
+  therapies: [dev-watchman-original]
   enrollment: 707
   year: 2014
   primaryEndpoint: "Composite of stroke, cardiovascular death, and systemic embolism"
@@ -39,7 +39,7 @@
     event: "Trial start"
     source: "https://clinicaltrials.gov/study/NCT01182441"
   conditions: [cond-af]
-  therapies: [dev-watchman-flx]
+  therapies: [dev-watchman-original]
   enrollment: 407
   year: 2014
   primaryEndpoint: "Efficacy and safety vs warfarin"
@@ -115,7 +115,7 @@
   type: trial
   name: "CHAMPION-AF"
   phase: "RCT (LAAC vs DOAC)"
-  status: active
+  status: suspended
   timeline:
     date: "2020-10-15"
     precision: day
@@ -125,15 +125,15 @@
   conditions: [cond-af]
   therapies: [dev-watchman-flx]
   enrollment: 3000
-  primaryEndpoint: "Stroke/systemic embolism and bleeding vs first-line DOAC"
-  outcomeSummary: "Large RCT testing first-line LAA closure vs DOAC in a broad AF population; results pending."
-  resultStatus: ongoing
-  references: ["https://clinicaltrials.gov/search?term=CHAMPION-AF"]
+  primaryEndpoint: "3-year composite of cardiovascular death, stroke, or systemic embolism; non-procedural bleeding"
+  outcomeSummary: "At 3 years, WATCHMAN FLX was noninferior to NOACs for CV death/stroke/systemic embolism (KM 5.7% vs 4.8%; 81/1,499 vs 65/1,501) and superior for non-procedural bleeding (KM 10.9% vs 19.0%; HR 0.55, 95% CI 0.45–0.67). Five-year follow-up remains ongoing."
+  resultStatus: positive
+  references: ["https://clinicaltrials.gov/study/NCT04394546", "https://www.nejm.org/doi/10.1056/NEJMoa2517213"]
   pulse: 7
   curation:
     status: curated
-    lastUpdated: 2026-06-22
-    notes: "CONFIRMED readout: Watchman FLX met all primary/secondary safety and efficacy endpoints — noninferior to NOACs for CV death/stroke/SE and superior on non-procedural major/clinically-relevant bleeding at 3 years. Presented at ACC.26 and published simultaneously in NEJM 2026-03-28 (DOI 10.1056/NEJMoa2517213). Sources: https://news.bostonscientific.com/2026-03-28-CHAMPION-AF-study-of-the-WATCHMAN-FLX-TM-Left-Atrial-Appendage-Closure-Device-as-a-first-line-therapy-for-stroke-risk-reduction-meets-all-primary-and-secondary-safety-and-efficacy-endpoints ; https://www.nejm.org/doi/10.1056/NEJMoa2517213. Human curator: update status to completed, resultStatus to positive, and rewrite outcomeSummary/year with the trial results."
+    lastUpdated: 2026-09-28
+    notes: "Primary three-year results published 2026-03-28 (NEJM DOI 10.1056/NEJMoa2517213). Registry follow-up continues through five years, so trial status remains active while resultStatus records the positive primary readout. Outcome rates are Kaplan-Meier estimates; event counts and randomized denominators are included."
 
 - id: trial-lambre-ii
   type: trial
@@ -1347,3 +1347,174 @@
     sources:
     - https://www.escardio.org/news/press/press-releases/novel-drug-shows-promise-in-an-early-phase-trial-in-heart-failure/
     notes: 69-site, 10-country dose-ranging study presented as an ESC 2026 Hot Line and published in Circulation. NCT number not independently verified -- VERIFY before promoting to curated.
+
+# =============== STRUCTURAL HEART / HF RECONSTRUCTION ====================
+- id: trial-pld-multicenter
+  type: trial
+  name: Occlutech PLD multicenter study
+  phase: Prospective multicenter single-arm study
+  status: completed
+  conditions: [cond-pvl]
+  therapies: [dev-occlutech-pvl]
+  enrollment: 144
+  year: 2022
+  primaryEndpoint: Procedural closure success and long-term safety/clinical outcomes
+  outcomeSummary: The 112-patient full analysis set reported procedural success of 91.3% for mitral and 90.0% for aortic PVLs; among 80 patients with two-year follow-up, NYHA III/IV fell from 80% to 14.1%.
+  resultStatus: positive
+  references: [https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/]
+  links: [{ label: Long-term multicenter publication, url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/ }]
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/] }
+
+- id: trial-rechord
+  type: trial
+  nctId: NCT02803957
+  name: ReChord
+  phase: Pivotal randomized IDE trial
+  status: active
+  conditions: [cond-mr]
+  therapies: [dev-neochord-ds1000]
+  enrollment: 585
+  year: 2016
+  primaryEndpoint: Safety and effectiveness of NeoChord DS1000 versus conventional open surgical repair
+  outcomeSummary: ClinicalTrials.gov lists the study as active, not recruiting in its 2026-04-08 update, with estimated enrollment of 585; do not describe it as halted.
+  resultStatus: ongoing
+  references: [https://clinicaltrials.gov/study/NCT02803957, https://www.neochord.com/wp-content/uploads/2024/12/RP-602000-001_DS1000_SSCP_Rev_B_FINAL_05Dec2024.docx.pdf]
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://clinicaltrials.gov/study/NCT02803957] }
+
+- id: trial-mi-chord-pilot
+  type: trial
+  name: Mi-CHORD safety and feasibility cohort
+  phase: Prospective single-center pilot
+  status: completed
+  conditions: [cond-mr]
+  therapies: [dev-mi-chord]
+  enrollment: 12
+  year: 2024
+  primaryEndpoint: 30-day mortality; implantation time
+  outcomeSummary: FDA De Novo review reports a prospective 12-patient OUS cohort with follow-up completed in January 2023; summary supports De Novo authorization, but this compact record does not infer an unreported effect estimate.
+  resultStatus: positive
+  references: [https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf]
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf] }
+
+- id: trial-tricaval
+  type: trial
+  nctId: NCT02387697
+  name: TRICAVAL
+  phase: Randomized phase 2/3
+  status: terminated
+  lifecycleStatus: halted
+  conditions: [cond-tr]
+  therapies: [dev-edwards-sapien-xt-caval]
+  enrollment: 28
+  year: 2018
+  primaryEndpoint: Efficacy and safety of inferior caval valve implantation for severe secondary tricuspid regurgitation
+  outcomeSummary: Terminated for safety concerns after valve dislodgement/migration events; the safety stop applies to this Edwards Sapien XT IVC study and does not establish that other bicaval systems were halted.
+  resultStatus: terminated
+  references: [https://clinicaltrials.gov/study/NCT02387697, https://pubmed.ncbi.nlm.nih.gov/31929100/]
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://clinicaltrials.gov/study/NCT02387697, https://pubmed.ncbi.nlm.nih.gov/31929100/] }
+
+- id: trial-alive-revivent
+  type: trial
+  nctId: NCT02931240
+  name: ALIVE
+  phase: Prospective multicenter nonrandomized 2:1 device versus control
+  status: completed
+  conditions: [cond-ischemic-lv-remodeling, cond-hfref]
+  therapies: [dev-revivent-tc]
+  year: 2025
+  primaryEndpoint: 12-month hierarchical clinical effectiveness endpoint
+  outcomeSummary: Among 126 patients (84 device, 42 control), 30-day major adverse events occurred in 17.9% of treated patients; LV dimensions decreased, but the primary 12-month hierarchical composite did not differ significantly (win ratio 1.13; P=0.32).
+  resultStatus: mixed
+  references: [https://pubmed.ncbi.nlm.nih.gov/39797846/, https://clinicaltrials.gov/study/NCT02931240]
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://pubmed.ncbi.nlm.nih.gov/39797846/] }
+
+- id: trial-peerless-hf
+  type: trial
+  nctId: NCT00382863
+  name: PEERLESS-HF
+  phase: Randomized controlled trial
+  status: terminated
+  lifecycleStatus: halted
+  conditions: [cond-hfref]
+  therapies: [dev-heartnet]
+  year: 2012
+  primaryEndpoint: Change in peak oxygen consumption at 6 months
+  outcomeSummary: Trial stopped enrollment after interim futility; ClinicalTrials.gov records termination (follow-up resources unavailable). This is trial status only and does not establish that all epicardial restraint devices were retired.
+  resultStatus: terminated
+  references: [https://clinicaltrials.gov/study/NCT00382863, https://pubmed.ncbi.nlm.nih.gov/22633302/]
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://clinicaltrials.gov/study/NCT00382863, https://pubmed.ncbi.nlm.nih.gov/22633302/] }
+
+- id: trial-acorn-corcap
+  type: trial
+  name: Acorn randomized trial (five-year no-MVR cohort)
+  phase: Randomized controlled trial follow-up
+  status: completed
+  conditions: [cond-hfref]
+  therapies: [dev-corcap]
+  year: 2013
+  primaryEndpoint: Survival, adverse events, cardiac procedures, NYHA class, and echocardiographic remodeling
+  outcomeSummary: The 107-patient no-MVR stratum randomized 57 to CorCap and 50 control; only 50 completed five-year follow-up. At five years survival was similar, while LV end-diastolic volume decreased and more CorCap patients improved by at least one NYHA class.
+  resultStatus: mixed
+  references: [https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/, https://pubmed.ncbi.nlm.nih.gov/21762937/]
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/, https://pubmed.ncbi.nlm.nih.gov/21762937/], notes: "The 107-person five-year no-MVR stratum is the original Acorn RCT follow-up, not NCT00630266 (the separate 50-person confirmatory study)." }
+
+- id: trial-corcinch-hf
+  type: trial
+  nctId: NCT04331769
+  name: CORCINCH-HF
+  phase: Pivotal randomized trial
+  status: suspended
+  conditions: [cond-hfref]
+  therapies: [dev-accucinch]
+  enrollment: 400
+  year: 2020
+  primaryEndpoint: Six-month safety and efficacy endpoints; 12-month follow-up
+  outcomeSummary: The ClinicalTrials.gov record lists the pivotal study as suspended as of its June 2026 update; this is a study status and does not mean the AccuCinch device was withdrawn. Earlier enrollment milestones and two-year early-study results are separate from pivotal evidence.
+  resultStatus: ongoing
+  references: [https://clinicaltrials.gov/study/NCT04331769, https://www.ancoraheart.com/press_releases/ancora-heart-inc-reports-two-year-results/]
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://clinicaltrials.gov/study/NCT04331769] }
+
+- id: trial-tricento-registry
+  type: trial
+  name: TRICENTO multicenter registry
+  phase: Retrospective multicenter registry
+  status: completed
+  conditions: [cond-tr]
+  therapies: [dev-tricento]
+  enrollment: 21
+  year: 2022
+  primaryEndpoint: Procedural and clinical outcomes after custom bicaval valved-stent implantation
+  outcomeSummary: Technical success was 100%; 3 asymptomatic prosthesis fractures were detected; median follow-up was 61 days and overall survival at one year was 76%. Small retrospective series.
+  resultStatus: mixed
+  references: [https://pubmed.ncbi.nlm.nih.gov/35236096/]
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://pubmed.ncbi.nlm.nih.gov/35236096/] }
+
+- id: trial-kiss-pvl
+  type: trial
+  name: KISS multicenter PVL registry
+  phase: Retrospective multicenter comparative registry
+  status: completed
+  conditions: [cond-pvl]
+  therapies: [dev-amplatzer-pvl-plug-iii]
+  enrollment: 335
+  year: 2024
+  primaryEndpoint: All-cause death during follow-up
+  outcomeSummary: Transcatheter closure was initial management in 171 patients and surgery in 164; technical success was 78.9% versus 76.2%, and adjusted long-term mortality did not significantly differ. AVP III was used in 140/171 transcatheter cases; outcomes are not device-specific.
+  resultStatus: mixed
+  references: [https://pubmed.ncbi.nlm.nih.gov/38156599/]
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://pubmed.ncbi.nlm.nih.gov/38156599/] }
+
+- id: trial-momentum-3
+  type: trial
+  nctId: NCT02224755
+  name: MOMENTUM 3
+  phase: Pivotal randomized controlled trial
+  status: completed
+  conditions: [cond-hfref]
+  therapies: [dev-heartmate-3, dev-heartmate-ii]
+  year: 2022
+  primaryEndpoint: Survival to transplant, recovery, or 24 months of support free of disabling stroke or pump replacement
+  outcomeSummary: Five-year follow-up reported 58.4% survival with HeartMate 3; FDA-approved durable MCS remains an established option for advanced HFrEF.
+  resultStatus: positive
+  references: [https://www.acc.org/latest-in-cardiology/articles/2023/07/25/13/36/sustained-superiority-of-the-heartmate-3-lvad, https://clinicaltrials.gov/study/NCT02224755]
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://www.acc.org/latest-in-cardiology/articles/2023/07/25/13/36/sustained-superiority-of-the-heartmate-3-lvad] }

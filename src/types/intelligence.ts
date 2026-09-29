@@ -1,5 +1,6 @@
 /** Source-linked evidence layer. Legacy graph IDs remain the navigation crosswalk. */
 import type { ComparativeDataset } from './comparative'
+import type { LifecycleStatus } from './entities'
 export type ReviewStatus = 'draft' | 'reviewed'
 export type Availability = 'reported' | 'not_publicly_disclosed' | 'not_yet_reviewed' | 'not_applicable' | 'conflicting'
 export type EvidenceBasis = 'directly_reported' | 'derived' | 'analyst_interpretation'
@@ -35,10 +36,14 @@ export interface ProductFamily {
 export interface ProductVersion extends Provenance {
   id: string
   familyId: string
+  /** Legacy graph therapy node that represents this exact product generation, when unambiguous. */
+  graphEntityId?: string
   name: string
   kind: 'device' | 'digital' | 'pharmaceutical' | 'procedure'
   clinicalRole: ClinicalRole
   model?: string
+  lifecycleStatus?: LifecycleStatus
+  lifecycleDetail?: string
   softwareVersion?: string
   digitalSubtype?: 'therapeutic' | 'care_delivery' | 'diagnostic' | 'planning' | 'monitoring'
   summary: string

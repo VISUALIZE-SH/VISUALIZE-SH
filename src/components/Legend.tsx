@@ -15,6 +15,9 @@ export default function Legend() {
           <span className="legend-swatch dashed" /> Dashed = draft / uncurated
         </li>
         <li>
+          <span className="legend-swatch lifecycle" /> Red outline = halted / retired / recalled
+        </li>
+        <li>
           <span className="legend-swatch arrow">→</span> Arrow = relationship
           direction
         </li>

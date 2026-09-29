@@ -220,7 +220,7 @@ discriminated by `therapyType`.
 | `name` | ✓ | brand + generic, e.g. `Dapagliflozin (Farxiga)` |
 | `company` | | a `co-…` id; omit for generic procedures |
 | `treats` | ✓ | non-empty list of `cond-…` ids |
-| `regulatoryStatus` | ✓ | `approved` \| `investigational` \| `discontinued` (coarse, for filtering) |
+| `regulatoryStatus` | ✓ | `approved` \| `investigational` \| `discontinued` \| `unknown` (coarse, for filtering; `unknown` means current status unverified) |
 | `regulatoryDetail` | | free text specifics, e.g. `FDA approved 2022; REMS` |
 | `mechanism` | | how it works |
 | `description` | | optional extra context |
@@ -233,11 +233,15 @@ discriminated by `therapyType`.
 Use `regulatoryStatus` for the broad bucket (it drives the filter) and put the
 nuance (dates, geographies, CRLs, breakthrough designation) in `regulatoryDetail`.
 
-For device `materials`, include only decision-useful implant materials: the
+For draft device `materials`, use an empty list when no implant composition has been
+verified; curated devices require at least one sourced material. Do not substitute
+an assumed material from another generation. Otherwise,
+include only decision-useful implanted materials, including bioabsorbable components: the
 frame/body alloy, biologic leaflet tissue, functional fabric or sealing skirt,
 surface coating, sensor housing, and anchoring material. Exclude delivery-system
-plastics, sutures, sterilization residuals, trace alloy constituents, and other
-incidental materials. Use one of `frame`, `leaflet`, `fabric`, `coating`, `sensor`,
+plastics, incidental delivery sutures, sterilization residuals, trace alloy constituents, and other
+incidental materials. A ligating suture that remains as the implant is material evidence.
+Use one of `frame`, `leaflet`, `fabric`, `coating`, `sensor`,
 or `anchor` for `category`, and attach a direct public HTTPS source to every item.
 If a material applies only to one model in a family record, say so in `note`.
 
@@ -423,6 +427,11 @@ not establish that a claim is clinically complete. Record IDs are stable,
 lower-kebab-case identifiers. The legacy graph crosswalk is explicit through
 `entityIds` and `conditionIds`; it does not silently rename or delete legacy
 records.
+
+`ProductVersion.graphEntityId` optionally maps an exact generation to one
+legacy therapy node for Atlas search routing. Omit it when a graph node
+represents multiple generations; Atlas then keeps that selection on the graph
+instead of routing to an arbitrary family version.
 
 Product versions are distinct from product families, and trial records are
 distinct from readouts and analysis cohorts. A readout with an empty

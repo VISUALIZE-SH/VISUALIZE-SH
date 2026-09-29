@@ -62,7 +62,9 @@ test('ambiguous records and invalid column selections fail safely', () => {
   assert.equal(frame.claims.length, 2)
   assert.throws(() => projectComparison(data, 'aortic-tavr-valves', ['ver-sapien-3', 'ver-sapien-3'], ''), /unique/)
   assert.throws(() => projectComparison(data, 'aortic-tavr-valves', ['ver-dasi-11'], ''), /not eligible/)
-  assert.deepEqual(scopeToCondition(data, 'cond-af').comparisonCategories?.map(category => category.id), ['laao-occluders'])
+  assert.deepEqual(scopeToCondition(data, 'cond-af').comparisonCategories?.map(category => category.id), ['laao-occluders', 'laa-exclusion-ligation'])
+  assert.throws(() => projectComparison(data, 'laao-occluders', ['ver-watchman-flx', 'ver-lariat'], ''), /not eligible/)
+  assert.throws(() => projectComparison(data, 'laa-exclusion-ligation', ['ver-lariat', 'ver-watchman-flx'], ''), /not eligible/)
 })
 
 test('comparison export preserves column order, status, and source boundaries', () => {

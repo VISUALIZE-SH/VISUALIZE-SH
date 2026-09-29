@@ -15,7 +15,7 @@ export interface Column<Row> {
   cell: (row: Row, open: (focus: string) => void) => { content: ReactNode; gap?: boolean; title?: string }
 }
 
-export interface ProductInfo { name: string; maker: string; thumb?: EvidenceMedia }
+export interface ProductInfo { name: string; maker: string; thumb?: EvidenceMedia; lifecycleStatus?: 'halted' | 'retired' | 'recalled'; lifecycleDetail?: string }
 
 function publicAssetPath(path: string): string {
   const base = (import.meta as ImportMeta & { env?: { BASE_URL?: string } }).env?.BASE_URL ?? '/'
@@ -25,7 +25,8 @@ function publicAssetPath(path: string): string {
 export function productInfo(data: IntelligenceData, version: ProductVersion | undefined, fallback = 'Product not resolved'): ProductInfo {
   if (!version) return { name: fallback, maker: '' }
   const maker = data.families.find(family => family.id === version.familyId)?.manufacturer ?? ''
-  return { name: version.name, maker, thumb: thumbnailFor(data, version.id) }
+  const lifecycleVersion = version as ProductVersion & { lifecycleStatus?: ProductInfo['lifecycleStatus']; lifecycleDetail?: string }
+  return { name: version.name, maker, thumb: thumbnailFor(data, version.id), lifecycleStatus: lifecycleVersion.lifecycleStatus, lifecycleDetail: lifecycleVersion.lifecycleDetail }
 }
 
 /** Distinct source documents for a set of source IDs, in first-seen order. */
@@ -90,7 +91,7 @@ export function GroupedTable<Row>({ id, label, rows, columns, rowKey, product, s
           const key = rowKey(row)
           const isOpen = open?.key === key
           const info = product(row)
-          const name = <>{showThumbs && <Thumb media={info.thumb} name={info.name} />}<span className="intel-product-text"><span className="intel-spec-name">{info.name}</span>{info.maker && <span className="intel-spec-maker">{info.maker}</span>}</span></>
+          const name = <>{showThumbs && <Thumb media={info.thumb} name={info.name} />}<span className="intel-product-text"><span className="intel-spec-name">{info.name}{info.lifecycleStatus && <span className="intel-lifecycle-tag" title={info.lifecycleDetail}>{info.lifecycleStatus === 'halted' ? 'Halted' : info.lifecycleStatus === 'retired' ? 'Retired' : 'Recalled'}</span>}</span>{info.maker && <span className="intel-spec-maker">{info.maker}</span>}</span></>
           return <Fragment key={key}>
             <tr className={isOpen ? 'is-open' : undefined}>
               <th scope="row">{detail
@@ -167,7 +168,7 @@ export function SpecTables({ data, tables, onOpenAtlas }: { data: IntelligenceDa
     {tables.map(table => {
       const columns: Column<SpecRow>[] = [
         {
-          id: 'us-approval', label: 'US approval', width: WIDTH.narrow,
+          id: 'us-approval', label: 'US authorization', width: WIDTH.narrow,
           cell: row => ({
             gap: !row.approval,
             title: row.approval ? `${row.approval.identifier} · ${formatEvidenceDate(row.approval.date)} · ${row.approval.changeType.replace(/_/g, ' ')}` : 'No US decision recorded',
@@ -186,7 +187,7 @@ export function SpecTables({ data, tables, onOpenAtlas }: { data: IntelligenceDa
       ]
       return <GroupedTable<SpecRow> key={table.id} id={table.id} label={table.label} rows={table.rows} columns={columns}
         rowKey={row => row.version.id}
-        product={row => ({ name: row.version.name, maker: row.manufacturer, thumb: thumbnailFor(data, row.version.id) })}
+        product={row => ({ ...productInfo(data, row.version), maker: row.manufacturer })}
         sources={row => sourcesFor(data, [...row.cells.flat(), ...row.extra].flatMap(claim => claim.sourceRefs.map(ref => ref.sourceId)).concat(row.approval?.sourceRefs.map(ref => ref.sourceId) ?? []))}
         detail={(row, focus) => <SpecSheet data={data} row={row} table={table} focus={focus} onOpenAtlas={onOpenAtlas} />} />
     })}

@@ -1,0 +1,852 @@
+# Historical LAA closure devices described in the 2018 CI Today spectrum article.
+# Every record is draft and bounded to its cited historical source; current commercial
+# availability is intentionally not inferred from old regulatory or study material.
+observedAt: '2026-09-27'
+sources:
+  - id: src-laao-citoday-2018
+    title: The Spectrum of Devices for Percutaneous Left Atrial Appendage Occlusion
+    url: https://citoday.com/articles/2018-may-june/the-spectrum-of-devices-for-percutaneous-left-atrial-appendage-occlusion
+    kind: publication
+    publisher: Cardiac Interventions Today
+    publishedAt: { value: '2018-05', precision: month }
+    retrievedAt: '2026-09-27'
+    access: public
+  - id: src-plaato-first-human
+    title: 'Percutaneous left atrial appendage transcatheter occlusion to prevent stroke in high-risk patients with atrial fibrillation: early clinical experience'
+    url: https://pubmed.ncbi.nlm.nih.gov/11997272/
+    kind: publication
+    publisher: Circulation
+    publishedAt: { value: '2002-04-23', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: PMID 11997272
+  - id: src-plaato-feasibility
+    title: 'Percutaneous Left Atrial Appendage Transcatheter Occlusion (PLAATO System) to Prevent Stroke in High-Risk Patients With Non-Rheumatic Atrial Fibrillation: Results From the International Multi-Center Feasibility Trials'
+    url: https://www.jacc.org/doi/10.1016/j.jacc.2005.03.042
+    kind: publication
+    publisher: JACC
+    publishedAt: { value: '2005-06-09', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: doi:10.1016/j.jacc.2005.03.042
+  - id: src-watchman-legacy-spec
+    title: WATCHMAN Left Atrial Appendage Closure Device Product Specification Sheet
+    url: https://www.watchman.com/content/dam/watchman/downloads/download-center/about-watchman/WATCHMAN_Specsheet.pdf
+    kind: manufacturer
+    publisher: Boston Scientific
+    publishedAt: { value: '2015-03', precision: month }
+    retrievedAt: '2026-09-27'
+    access: public
+  - id: src-watchman-original-fda
+    title: WATCHMAN LAA Closure Technology original PMA approval
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2015-03-13', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: P130013
+  - id: src-watchman-flx-early-study
+    title: 'Left atrial appendage closure: First in man with the 4th generation WATCHMAN device'
+    url: https://pubmed.ncbi.nlm.nih.gov/26354821/
+    kind: publication
+    publisher: Catheterization and Cardiovascular Interventions
+    publishedAt: { value: '2015-09-10', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: PMID 26354821
+  - id: src-watchman-flx-redesign-study
+    title: Procedural and Short-Term Results With the New Watchman FLX Left Atrial Appendage Occlusion Device
+    url: https://www.jacc.org/doi/10.1016/j.jcin.2020.06.056
+    kind: publication
+    publisher: JACC Cardiovascular Interventions
+    publishedAt: { value: '2020', precision: year }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: doi:10.1016/j.jcin.2020.06.056
+  - id: src-acp-preclinical
+    title: Transcatheter occlusion of the left atrial appendage--experimental testing of a new Amplatzer device
+    url: https://pubmed.ncbi.nlm.nih.gov/20665856/
+    kind: publication
+    publisher: Catheterization and Cardiovascular Interventions
+    publishedAt: { value: '2010-08-01', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: PMID 20665856
+  - id: src-acp-first-human
+    title: 'Left atrial appendage closure with Amplatzer cardiac plug in atrial fibrillation: initial European experience'
+    url: https://pubmed.ncbi.nlm.nih.gov/20824765/
+    kind: publication
+    publisher: Catheterization and Cardiovascular Interventions
+    publishedAt: { value: '2011-04-01', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: PMID 20824765
+  - id: src-wavecrest-acquisition
+    title: Biosense Webster Announces Acquisition of Coherex Medical
+    url: https://www.jnj.com/media-center/press-releases/biosense-webster-inc-announces-acquisition-of-coherex-medical-inc
+    kind: manufacturer
+    publisher: Johnson & Johnson
+    publishedAt: { value: '2015-11-20', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+  - id: src-wavecrest-catalog
+    title: The COHEREX WAVEcrest LAA Implant, EMEA product catalogue
+    url: https://www.jnjmedtech.com/sites/default/files/user_uploaded_assets/pdf_assets/2020-09/084962-200128%20EMEA%20Biosense_Products_Catalogue_2020_single_page_0.pdf
+    kind: manufacturer
+    publisher: Biosense Webster / Johnson & Johnson
+    publishedAt: { value: '2020', precision: year }
+    retrievedAt: '2026-09-27'
+    access: public
+  - id: src-occlutech-first-human
+    title: 'Left Atrial Appendage Closure With the New Occlutech Device: First in Man Experience and Neurological Outcome'
+    url: https://pubmed.ncbi.nlm.nih.gov/27925332/
+    kind: publication
+    publisher: Journal of Cardiovascular Electrophysiology
+    publishedAt: { value: '2016-12-29', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: PMID 27925332
+  - id: src-occlutech-2016-field-notice
+    title: Occlutech LAA Occluder Urgent Field Safety Notice FSN-20160928
+    url: https://www.moph.gov.lb/userfiles/files/Medical%20Devices/Medical%20Devices%20Recalls%202016/24-10-2016/OcclutechLAAOccluder.pdf
+    kind: manufacturer
+    publisher: Occlutech GmbH
+    publishedAt: { value: '2016-09-30', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: FSN-20160928
+  - id: src-occlutech-plus-preclinical
+    title: Preclinical assessment of a modified Occlutech left atrial appendage closure device in a porcine model
+    url: https://www.nature.com/articles/s41598-021-82359-1
+    kind: publication
+    publisher: Scientific Reports
+    publishedAt: { value: '2021-02-04', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: doi:10.1038/s41598-021-82359-1
+  - id: src-atriclip-ifu-2024
+    title: AtriClip LAA Exclusion System Instructions for Use IFU-0278.A
+    url: https://europe.atricure.com/sites/default/files/devices-ifu/IFU-0278.A.pdf
+    kind: manufacturer
+    publisher: AtriCure
+    publishedAt: { value: '2024-07', precision: month }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: IFU-0278.A
+  - id: src-amulet-360-ce
+    title: Abbott's next-generation Amulet 360 device receives CE Mark
+    url: https://abbott.mediaroom.com/2026-08-27-Abbotts-next-generation-Amulet-360-TM-device-receives-CE-Mark-to-treat-people-with-atrial-fibrillation-at-risk-of-stroke
+    kind: manufacturer
+    publisher: Abbott
+    publishedAt: { value: '2026-08-27', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+  - id: src-amulet-360-product
+    title: Amulet 360 LAA Occluder product information
+    url: https://www.cardiovascular.abbott/int/en/hcp/products/electrophysiology/left-atrial-appendage-occlusion/amulet-360-laao.html
+    kind: manufacturer
+    publisher: Abbott
+    retrievedAt: '2026-09-27'
+    access: public
+  - id: src-claas-first-clinical
+    title: First clinical experience with the Conformal Left Atrial Appendage Seal
+    url: https://www.jacc.org/doi/10.1016/j.jcin.2021.08.060
+    kind: publication
+    publisher: JACC Cardiovascular Interventions
+    publishedAt: { value: '2021-11-01', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: doi:10.1016/j.jcin.2021.08.060
+  - id: src-claas-investigational
+    title: CONFORM Pivotal Trial physician information
+    url: https://www.conformtrial.com/physicians
+    kind: manufacturer
+    publisher: Conformal Medical
+    retrievedAt: '2026-09-27'
+    access: public
+  - id: src-laminar-first-human
+    title: Laminar left atrial appendage exclusion device clinical study
+    url: https://www.jacc.org/doi/10.1016/j.jcin.2023.04.028
+    kind: publication
+    publisher: JACC Cardiovascular Interventions
+    publishedAt: { value: '2023', precision: year }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: doi:10.1016/j.jcin.2023.04.028
+  - id: src-laminar-trial-hold
+    title: LAMINAR pivotal trial status
+    url: https://clinicaltrials.jnj.com/en/study-detail/NCT06168942?tab=eligibility
+    kind: registry
+    publisher: Johnson & Johnson Clinical Trials
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: NCT06168942
+  - id: src-omega-field-notice
+    title: OMEGA LAA Occluder Field Safety Notice
+    url: https://assets.hpra.ie/data/docs/default-source/product-updates/fsn/field-safety-notices/november-2024/omega-left-atrial-appendage-%28laa%29-occluder-device_eclipse-medical_-advice-regarding-a-device-removal.pdf?sfvrsn=a200dad9_1
+    kind: manufacturer
+    publisher: Eclipse Medical / Health Products Regulatory Authority
+    publishedAt: { value: '2024-11-26', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+  - id: src-lacbes-first-clinical
+    title: First clinical experience with the LACbes left atrial appendage occluder
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9478548/
+    kind: publication
+    publisher: Peer-reviewed original clinical publication
+    publishedAt: { value: '2022', precision: year }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: PMC9478548
+  - id: src-ultraseal-ii-study
+    title: ULTRASEAL II left atrial appendage occluder clinical study
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9796275/
+    kind: publication
+    publisher: Peer-reviewed original clinical publication
+    publishedAt: { value: '2022', precision: year }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: PMC9796275
+  - id: src-cardioblate-canines
+    title: Cardioblate Closure LAA canine feasibility study
+    url: https://pubmed.ncbi.nlm.nih.gov/20346467/
+    kind: publication
+    publisher: Peer-reviewed original preclinical publication
+    publishedAt: { value: '2010', precision: year }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: PMID 20346467
+  - id: src-cardioblate-trial
+    title: Cardioblate Closure clinical trial NCT00841529
+    url: https://clinicaltrials.gov/study/NCT00841529
+    kind: registry
+    publisher: ClinicalTrials.gov
+    publishedAt: { value: '2012-10-23', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: NCT00841529
+  - id: src-sideris-first-human
+    title: Sideris transcatheter patch clinical publication (JACC 2011)
+    url: https://www.jacc.org/doi/abs/10.1016/j.jacc.2011.08.036
+    kind: publication
+    publisher: JACC
+    publishedAt: { value: '2011-11-08', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: doi:10.1016/j.jacc.2011.08.036
+  - id: src-ultraseal-first-multicenter
+    title: 'Percutaneous Left Atrial Appendage Closure With the Ultraseal Device: Insights From the Initial Multicenter Experience'
+    url: https://pubmed.ncbi.nlm.nih.gov/30249439/
+    kind: publication
+    publisher: JACC Cardiovascular Interventions
+    publishedAt: { value: '2018-10-08', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: PMID 30249439
+  - id: src-seala-multicenter
+    title: Percutaneous left atrial appendage closure with SeaLA device in non-valvular atrial fibrillation
+    url: https://pubmed.ncbi.nlm.nih.gov/38841867/
+    kind: publication
+    publisher: Catheterization and Cardiovascular Interventions
+    publishedAt: { value: '2024-06-06', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: PMID 38841867
+  - id: src-lefort-original-study
+    title: LAmbre and Lefort left atrial appendage occluders original clinical comparison
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5287943/
+    kind: publication
+    publisher: Peer-reviewed original clinical publication
+    publishedAt: { value: '2017', precision: year }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: PMC5287943
+  - id: src-pfm-preclinical-presentation
+    title: 'PFM Medical: Device Description and Preclinical Results'
+    url: https://www.tctmd.com/slide/pfm-medical-device-description-and-preclinical-results
+    kind: technical
+    publisher: TCT / PFM Medical
+    publishedAt: { value: '2012', precision: year }
+    retrievedAt: '2026-09-27'
+    access: public
+  - id: src-lariat-original-510k
+    title: LARIAT Loop Applicator 510(k) decision K060721
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=k060721
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2006-06-02', precision: day }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: K060721
+  - id: src-lariat-ii-510k
+    title: LARIAT II soft-tissue ligation 510(k) summary K090385
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf9/K090385.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2009', precision: year }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: K090385
+  - id: src-sierra-first-human
+    title: First-in-human evaluation of the Sierra LAA ligation system
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11642118/
+    kind: publication
+    publisher: Peer-reviewed original clinical publication
+    publishedAt: { value: '2024', precision: year }
+    retrievedAt: '2026-09-27'
+    access: public
+    identifier: PMC11642118
+families:
+  - id: family-plaato
+    name: PLAATO
+    manufacturer: ev3 Inc. (at 2005 feasibility publication)
+    entityIds: [dev-plaato]
+    conditionIds: [cond-af]
+    description: Historical percutaneous LAA occlusion platform; availability today is unverified.
+  - id: family-wavecrest
+    name: Coherex WaveCrest
+    manufacturer: Coherex Medical (2015); later Biosense Webster
+    entityIds: [dev-wavecrest]
+    conditionIds: [cond-af]
+    description: Historical LAA occluder, CE marked by 2013; current commercial status is unverified.
+  - id: family-occlutech-laa
+    name: Occlutech LAA Occluder
+    manufacturer: Occlutech International AB / Occlutech GmbH
+    entityIds: [dev-occlutech-laa-original, dev-occlutech-laa-redesigned]
+    conditionIds: [cond-af]
+    description: Original and later modified Plus designs require distinct evidence records; current commercial status is unverified.
+  - id: family-atriclip
+    name: AtriClip
+    manufacturer: AtriCure
+    entityIds: [dev-atriclip]
+    conditionIds: [cond-af]
+    description: Surgical epicardial LAA exclusion clip; specifications are bounded to the July 2024 IFU.
+  - id: family-claas
+    name: CLAAS
+    manufacturer: Conformal Medical
+    entityIds: [dev-claas]
+    conditionIds: [cond-af]
+    description: Investigational conformal LAA seal; early human evidence does not establish commercial availability.
+  - id: family-laminar
+    name: LAMINAR
+    manufacturer: Laminar (later Johnson & Johnson)
+    entityIds: [dev-laminar-laa]
+    conditionIds: [cond-af]
+    description: Investigational LAA closure by tissue rotation and interlocking; sponsor trial listed on hold.
+  - id: family-omega-laa
+    name: OMEGA LAA
+    manufacturer: Eclipse Medical
+    entityIds: [dev-omega-laa]
+    conditionIds: [cond-af]
+    description: Historical LAA occluder; manufacturer recalled all unused stock in November 2024.
+  - id: family-lacbes
+    name: LACbes
+    manufacturer: Push Medical
+    entityIds: [dev-lacbes]
+    conditionIds: [cond-af]
+    description: Lobe-and-disc LAA occluder described in a 2022 first clinical study; present market status unverified.
+  - id: family-ultraseal
+    name: Ultraseal
+    manufacturer: Cardia
+    entityIds: [dev-ultraseal, dev-ultraseal-ii]
+    conditionIds: [cond-af]
+    description: Original and Ultraseal II generations are tracked separately; present availability unverified.
+  - id: family-cardioblate-closure
+    name: Cardioblate Closure
+    manufacturer: Medtronic
+    entityIds: [dev-cardioblate-closure]
+    conditionIds: [cond-af]
+    description: Historic investigational silicone-band LAA closure prototype; distinct from Cardioblate RF ablation.
+  - id: family-sideris-patch
+    name: Sideris / Prolipsis transcatheter patch
+    manufacturer: Custom Medical Devices (historical)
+    entityIds: [dev-sideris-patch, dev-prolipsis]
+    conditionIds: [cond-af]
+    description: Historical balloon-delivered patch platform and later Prolipsis redesign; current availability unverified.
+  - id: family-seala
+    name: SeaLA
+    manufacturer: Hangzhou Valued Medtech
+    entityIds: [dev-seala]
+    conditionIds: [cond-af]
+    description: Historical LAA occluder described in 2018 and in a later 2024 clinical study; current status unverified.
+  - id: family-lefort
+    name: Lefort
+    manufacturer: Shape Memory Alloy Co. (historical)
+    entityIds: [dev-lefort]
+    conditionIds: [cond-af]
+    description: Historical Lefort generation; do not equate with later MemoLefort products.
+  - id: family-pfm-laa
+    name: PFM LAA
+    manufacturer: pfm medical
+    entityIds: [dev-pfm-laa]
+    conditionIds: [cond-af]
+    description: Research-stage LAA occluder, described in 2012 preclinical technical material.
+  - id: family-lariat
+    name: LARIAT
+    manufacturer: SentreHEART (historical)
+    entityIds: [dev-lariat]
+    conditionIds: [cond-af]
+    description: Percutaneous epicardial suture ligation; FDA tool clearances do not establish an LAA closure indication.
+  - id: family-sierra
+    name: Sierra
+    manufacturer: Aegis Medical Innovations
+    entityIds: [dev-sierra]
+    conditionIds: [cond-af]
+    description: Investigational percutaneous epicardial LAA ligation system; present availability unverified.
+versions:
+  - id: ver-plaato
+    familyId: family-plaato
+    graphEntityId: dev-plaato
+    name: PLAATO system
+    kind: device
+    clinicalRole: treats
+    summary: Early transseptal LAA occluder studied in 2002 and 2005; no present availability claim.
+    sourceRefs:
+      - { sourceId: src-plaato-first-human, locator: "Abstract, Methods and results" }
+      - { sourceId: src-plaato-feasibility, locator: "Abstract, Objectives and Results" }
+    reviewStatus: draft
+  - id: ver-watchman-original
+    familyId: family-watchman
+    graphEntityId: dev-watchman-original
+    name: Original WATCHMAN (2015)
+    kind: device
+    clinicalRole: treats
+    summary: Legacy WATCHMAN implant authorized by the original FDA PMA in March 2015; distinct from FLX.
+    sourceRefs:
+      - { sourceId: src-watchman-original-fda, locator: "Decision Date and Approval Order Statement" }
+    reviewStatus: draft
+  - id: ver-watchman-flx-2015
+    familyId: family-watchman
+    graphEntityId: dev-watchman-flx-2015
+    name: Early WATCHMAN FLX (2015 iteration)
+    kind: device
+    clinicalRole: treats
+    summary: Early fourth-generation iteration studied in 2015 and withdrawn in 2016 after increased embolization; distinct from the redesigned FDA-approved 2020 FLX.
+    sourceRefs:
+      - { sourceId: src-watchman-flx-early-study, locator: Abstract }
+      - { sourceId: src-watchman-flx-redesign-study, locator: "Design Modifications and discussion of 2015 CE version" }
+    reviewStatus: draft
+  - id: ver-amplatzer-cardiac-plug
+    familyId: family-amulet
+    graphEntityId: dev-amplatzer-cardiac-plug
+    name: Amplatzer Cardiac Plug (ACP)
+    kind: device
+    clinicalRole: treats
+    summary: Historical Amplatzer LAA plug investigated before the later Amulet generation; current commercial status unverified.
+    sourceRefs:
+      - { sourceId: src-acp-preclinical, locator: "Abstract, Methods and Results" }
+      - { sourceId: src-acp-first-human, locator: "Abstract, Methods" }
+    reviewStatus: draft
+  - id: ver-wavecrest
+    familyId: family-wavecrest
+    graphEntityId: dev-wavecrest
+    name: Coherex WaveCrest
+    kind: device
+    clinicalRole: treats
+    summary: CE-marked LAA occluder as reported by its acquirer in 2015; present market status unverified.
+    sourceRefs:
+      - { sourceId: src-wavecrest-acquisition, locator: "Press release, opening and CE Mark paragraphs" }
+    reviewStatus: draft
+  - id: ver-occlutech-laa-original
+    familyId: family-occlutech-laa
+    graphEntityId: dev-occlutech-laa-original
+    name: Original Occlutech LAA Occluder
+    kind: device
+    clinicalRole: treats
+    summary: Original device studied in 2012–2016; September 2016 field notice suspended shipping and sales after four dislocations.
+    sourceRefs:
+      - { sourceId: src-occlutech-first-human, locator: "Abstract, Methods and Results" }
+      - { sourceId: src-occlutech-2016-field-notice, locator: "PDF p.2, Problem description and Action taken" }
+    reviewStatus: draft
+  - id: ver-occlutech-laa-redesigned
+    familyId: family-occlutech-laa
+    graphEntityId: dev-occlutech-laa-redesigned
+    name: Modified Occlutech Plus LAA Occluder
+    kind: device
+    clinicalRole: treats
+    summary: Modified device evaluated in a 2021 porcine preclinical study; human use or present availability unverified.
+    sourceRefs:
+      - { sourceId: src-occlutech-plus-preclinical, locator: "Introduction and Device design" }
+    reviewStatus: draft
+  - id: ver-atriclip
+    familyId: family-atriclip
+    graphEntityId: dev-atriclip
+    name: AtriClip LAA Exclusion System
+    kind: device
+    clinicalRole: treats
+    summary: Epicardial surgical clip for LAA exclusion; 2024 IFU describes permanent implant materials and sizes.
+    sourceRefs:
+      - { sourceId: src-atriclip-ifu-2024, locator: Device description and sizing table }
+    reviewStatus: draft
+  - id: ver-amulet-360
+    familyId: family-amulet
+    graphEntityId: dev-amulet-360
+    name: Amulet 360
+    kind: device
+    clinicalRole: treats
+    summary: Next-generation Amulet received CE Mark August 2026; Abbott states US investigational status at retrieval.
+    sourceRefs:
+      - { sourceId: src-amulet-360-ce, locator: CE Mark announcement and device description }
+      - { sourceId: src-amulet-360-product, locator: US investigational disclaimer }
+    reviewStatus: draft
+  - id: ver-claas
+    familyId: family-claas
+    graphEntityId: dev-claas
+    name: Conformal Left Atrial Appendage Seal (CLAAS)
+    kind: device
+    clinicalRole: treats
+    summary: Conformable foam LAA seal investigated in early clinical study and pivotal trial; commercial availability unverified.
+    sourceRefs:
+      - { sourceId: src-claas-first-clinical, locator: Device description }
+      - { sourceId: src-claas-investigational, locator: Physician trial information }
+    reviewStatus: draft
+  - id: ver-laminar
+    familyId: family-laminar
+    graphEntityId: dev-laminar-laa
+    name: LAMINAR LAA Exclusion System
+    kind: device
+    clinicalRole: treats
+    summary: Investigational transcatheter LAA closure platform; sponsor trial status shown as on hold at retrieval.
+    sourceRefs:
+      - { sourceId: src-laminar-first-human, locator: Device description }
+      - { sourceId: src-laminar-trial-hold, locator: Trial status }
+    reviewStatus: draft
+  - id: ver-omega-laa
+    familyId: family-omega-laa
+    graphEntityId: dev-omega-laa
+    name: OMEGA LAA Occluder
+    kind: device
+    clinicalRole: treats
+    summary: Historical device; a November 2024 manufacturer field notice recalled all inventory over material degradation concerns.
+    sourceRefs:
+      - { sourceId: src-omega-field-notice, locator: "Field Safety Notice, reason and affected product" }
+    reviewStatus: draft
+  - id: ver-lacbes
+    familyId: family-lacbes
+    graphEntityId: dev-lacbes
+    name: LACbes LAA Occluder
+    kind: device
+    clinicalRole: treats
+    summary: Lobe-and-disc LAA occluder described in a 2022 first clinical report; current availability unverified.
+    sourceRefs:
+      - { sourceId: src-lacbes-first-clinical, locator: Device and Methods sections }
+    reviewStatus: draft
+  - id: ver-ultraseal-ii
+    familyId: family-ultraseal
+    graphEntityId: dev-ultraseal-ii
+    name: Ultraseal II LAA Occluder
+    kind: device
+    clinicalRole: treats
+    summary: Revised Ultraseal with shorter flexible bulb described in a 2022 clinical study; current availability unverified.
+    sourceRefs:
+      - { sourceId: src-ultraseal-ii-study, locator: Device description and Methods }
+    reviewStatus: draft
+  - id: ver-cardioblate-closure
+    familyId: family-cardioblate-closure
+    graphEntityId: dev-cardioblate-closure
+    name: Cardioblate Closure LAA Device
+    kind: device
+    clinicalRole: treats
+    summary: Historical investigational LAA closure prototype; the registered Phase 2 trial terminated and current availability is unverified.
+    sourceRefs:
+      - { sourceId: src-cardioblate-canines, locator: "Abstract, device design" }
+      - { sourceId: src-cardioblate-trial, locator: Overall status and enrollment }
+    reviewStatus: draft
+  - id: ver-sideris-patch
+    familyId: family-sideris-patch
+    graphEntityId: dev-sideris-patch
+    name: Sideris transcatheter patch
+    kind: device
+    clinicalRole: treats
+    summary: Historical balloon-delivered LAA patch investigated in the 2011 first-human report; current availability unverified.
+    sourceRefs:
+      - { sourceId: src-sideris-first-human, locator: Study device and methods }
+      - { sourceId: src-laao-citoday-2018, locator: Sideris patch device section }
+    reviewStatus: draft
+  - id: ver-prolipsis
+    familyId: family-sideris-patch
+    graphEntityId: dev-prolipsis
+    name: Prolipsis patch redesign
+    kind: device
+    clinicalRole: treats
+    summary: Historical Sideris patch redesign described in the 2018 inventory; no full peer-reviewed primary study located.
+    sourceRefs:
+      - { sourceId: src-laao-citoday-2018, locator: Prolipsis paragraph }
+    reviewStatus: draft
+  - id: ver-ultraseal
+    familyId: family-ultraseal
+    graphEntityId: dev-ultraseal
+    name: Ultraseal LAA Occluder
+    kind: device
+    clinicalRole: treats
+    summary: Original Ultraseal generation in the 2018 multicenter experience; separate from revised Ultraseal II.
+    sourceRefs:
+      - { sourceId: src-ultraseal-first-multicenter, locator: Abstract and device description }
+    reviewStatus: draft
+  - id: ver-seala
+    familyId: family-seala
+    graphEntityId: dev-seala
+    name: SeaLA LAA Occluder
+    kind: device
+    clinicalRole: treats
+    summary: SeaLA is a named LAA occluder, distinct from a generic “sealer” class; current availability unverified.
+    sourceRefs:
+      - { sourceId: src-seala-multicenter, locator: Abstract and device description }
+      - { sourceId: src-laao-citoday-2018, locator: SeaLA paragraph }
+    reviewStatus: draft
+  - id: ver-lefort
+    familyId: family-lefort
+    graphEntityId: dev-lefort
+    name: Lefort LAA Occluder
+    kind: device
+    clinicalRole: treats
+    summary: Historical Lefort occluder described in a 2017 original clinical comparison; later branded successors need separate review.
+    sourceRefs:
+      - { sourceId: src-lefort-original-study, locator: Device description }
+    reviewStatus: draft
+  - id: ver-pfm-laa
+    familyId: family-pfm-laa
+    graphEntityId: dev-pfm-laa
+    name: PFM LAA Occluder
+    kind: device
+    clinicalRole: treats
+    summary: Research-stage LAA device described in a 2012 preclinical technical presentation; current availability unverified.
+    sourceRefs:
+      - { sourceId: src-pfm-preclinical-presentation, locator: Device description }
+    reviewStatus: draft
+  - id: ver-lariat
+    familyId: family-lariat
+    graphEntityId: dev-lariat
+    name: LARIAT LAA Ligation System
+    kind: device
+    clinicalRole: treats
+    summary: Epicardial suture ligation studied for LAA closure; FDA 510(k) clearances were for soft-tissue ligation tools, not an LAA-specific claim.
+    sourceRefs:
+      - { sourceId: src-lariat-original-510k, locator: Device name and decision }
+      - { sourceId: src-lariat-ii-510k, locator: Indications for use }
+    reviewStatus: draft
+  - id: ver-sierra
+    familyId: family-sierra
+    graphEntityId: dev-sierra
+    name: Sierra LAA Ligation System
+    kind: device
+    clinicalRole: treats
+    summary: Epicardial-only percutaneous ligation evaluated in a seven-person first-human study; commercial status unverified.
+    sourceRefs:
+      - { sourceId: src-sierra-first-human, locator: Device description and Methods }
+    reviewStatus: draft
+decisions:
+  - id: decision-watchman-original-p130013
+    identifier: P130013
+    rootIdentifier: P130013
+    versionIds: [ver-watchman-original]
+    jurisdiction: US
+    pathway: PMA
+    date: { value: '2015-03-13', precision: day }
+    changeType: initial_authorization
+    summary: Original US WATCHMAN LAA closure technology PMA, preceding WATCHMAN FLX supplement S035 in 2020.
+    sourceRefs:
+      - { sourceId: src-watchman-original-fda, locator: "Decision Date and Approval Order Statement" }
+    reviewStatus: draft
+specs:
+  - version: ver-plaato
+    category: laao-occluders
+    source: src-plaato-first-human
+    values:
+      device-design: { value: Self-expanding cage occludes the LAA, loc: "Abstract, Methods and results" }
+      frame-material: { value: Nitinol, loc: "Abstract, Methods and results" }
+      fabric-cover: { value: ePTFE polymeric membrane, loc: "Abstract, Methods and results" }
+      access-route: { value: Percutaneous transseptal LAA delivery, source: src-plaato-feasibility, loc: "Article introduction, system description" }
+  - version: ver-watchman-original
+    category: laao-occluders
+    source: src-watchman-legacy-spec
+    values:
+      device-design: { value: Self-expanding nitinol cage with proximal porous cover, loc: "PDF p.2, WATCHMAN LAAC Device" }
+      frame-material: { value: Nitinol alloy, loc: "PDF p.2, General Specifications and Materials List" }
+      fabric-cover: { value: PET knit fabric on proximal face, loc: "PDF p.2, General Specifications and Materials List" }
+      anchoring-mechanism: { value: Peripheral fixation anchors, loc: "PDF p.2, labeled device figure" }
+      access-route: { value: 'Femoral venous, transseptal', loc: "PDF p.1, technology description" }
+      available-sizes: { value: '21, 24, 27, 30, 33 mm', loc: "PDF p.2, General Specifications and Materials List" }
+  - version: ver-watchman-flx-2015
+    category: laao-occluders
+    source: src-watchman-flx-redesign-study
+    values:
+      device-design:
+        value: Early fourth-generation WATCHMAN FLX iteration
+        source: src-watchman-flx-early-study
+        loc: Title and Abstract
+        context: The 2020 redesigned FLX paper distinguishes this earlier 2015 CE-mark iteration.
+  - version: ver-amplatzer-cardiac-plug
+    category: laao-occluders
+    source: src-acp-preclinical
+    values:
+      device-design: { value: Transcatheter LAA plug with nitinol structure and polyester fabric, loc: "Abstract, Methods" }
+      frame-material: { value: Nitinol, loc: "Abstract, Methods" }
+      fabric-cover: { value: Polyester fabric, loc: "Abstract, Methods" }
+      access-route: { value: Percutaneous transseptal, source: src-acp-first-human, loc: "Abstract, Methods" }
+      repositionable: { value: Retrievable and repositionable in preclinical implants, loc: "Abstract, Results", context: Canine study; not a claim about current instructions for use. }
+  - version: ver-wavecrest
+    category: laao-occluders
+    source: src-wavecrest-catalog
+    values:
+      device-design: { value: ePTFE occluder with independently actuated anchors, loc: "Device Description and Implant Characteristics" }
+      frame-material: { value: Laser-cut nitinol frame, loc: "Device Description and Implant Characteristics" }
+      fabric-cover: { value: ePTFE occluder and polyurethane foam rim, loc: "Device Description and Implant Characteristics" }
+      anchoring-mechanism: { value: 20 interlocking actuated anchors, loc: Implant Characteristics }
+      repositionable: { value: Fully recapturable before final release, loc: Implant Characteristics }
+  - version: ver-occlutech-laa-original
+    category: laao-occluders
+    source: src-occlutech-first-human
+    values:
+      device-design:
+        value: Implantable catheter-delivered LAA occluder
+        loc: "Abstract, Methods and Results"
+        limitation: Exact original device materials require original IFU or full-text confirmation.
+      available-sizes:
+        value: '18, 21, 24, 27, 30, 33 mm affected in 2016 notice'
+        source: src-occlutech-2016-field-notice
+        loc: "PDF p.2, Affected product/articles"
+        context: Recall-affected sizes; not necessarily the complete historical size range.
+  - version: ver-occlutech-laa-redesigned
+    category: laao-occluders
+    source: src-occlutech-plus-preclinical
+    values:
+      device-design: { value: Self-expanding conical lobe with proximal seal, loc: "Introduction, Occlutech Plus device paragraph", context: Porcine preclinical evaluation. }
+      fabric-cover: { value: Polyurethane mesh covering with modified polymer surface, loc: "Introduction, Occlutech Plus device paragraph", context: Porcine preclinical evaluation. }
+      anchoring-mechanism: { value: Distal loops supported by added anchors, loc: "Introduction, Occlutech Plus device paragraph", context: Added after original design anchoring concerns. }
+  - version: ver-atriclip
+    category: laa-exclusion-ligation
+    source: src-atriclip-ifu-2024
+    values:
+      device-design: { value: Surgical clip compresses the LAA base, loc: Device description }
+      frame-material: { value: Titanium beams and nitinol springs, loc: Device description }
+      fabric-cover: { value: Knit-braided PET fabric with titanium dioxide, loc: Device description }
+      access-route: { value: Surgical epicardial placement, loc: Instructions for use }
+      available-sizes: { value: '35, 40, 45, 50 mm', loc: Product code and sizing table }
+  - version: ver-amulet-360
+    category: laao-occluders
+    source: src-amulet-360-ce
+    values:
+      device-design: { value: Softer lobe with proximal outer disc, loc: Device description }
+      anchoring-mechanism: { value: Two rows of shorter anchors, loc: Device description }
+      access-route: { value: Transfemoral venous, loc: Procedure description }
+      indication-scope:
+        availability: not_applicable
+        source: src-amulet-360-product
+        loc: US investigational disclaimer
+        context: CE-marked 2026-08-27 and offered in selected international markets; Abbott states investigational use only in the US.
+  - version: ver-claas
+    category: laao-occluders
+    source: src-claas-first-clinical
+    values:
+      device-design: { value: Conformable foam cup with nitinol endoskeleton, loc: Device description }
+      frame-material: { value: Nitinol endoskeleton, loc: Device description }
+      fabric-cover: { value: Porous foam with outer ePTFE cover, loc: Device description }
+      anchoring-mechanism: { value: Nitinol barbs, loc: Device description }
+      access-route: { value: Transseptal venous catheter delivery, loc: "Methods, procedure" }
+      available-sizes: { value: '27 and 35 mm', loc: Device description }
+  - version: ver-laminar
+    category: laao-occluders
+    source: src-laminar-first-human
+    values:
+      device-design: { value: Self-expanding ball with six-petal tissue lock, loc: Device description }
+      frame-material: { value: Nitinol ball, loc: Device description, context: Lock material not specified in the cited study. }
+      anchoring-mechanism: { value: Interlocking petals compress LAA tissue, loc: Device description }
+      access-route: { value: Transseptal catheter delivery, loc: "Methods, procedure" }
+      available-sizes: { value: '12 and 16 mm balls; 16 mm lock', loc: Device description }
+  - version: ver-omega-laa
+    category: laao-occluders
+    source: src-omega-field-notice
+    values:
+      device-design: { value: Cup-and-disc LAA occluder, loc: Affected device description }
+      frame-material: { value: Platinum-coated nitinol, loc: Affected device description }
+      available-sizes: { value: '14–30 mm', loc: Affected device sizes }
+      indication-scope:
+        availability: not_applicable
+        loc: Reason for Field Safety Notice
+        context: November 2024 notice directed removal of all stock over corrosion, nickel leaching, and wire-breakage concerns; it is not a current indication statement.
+  - version: ver-lacbes
+    category: laao-occluders
+    source: src-lacbes-first-clinical
+    values:
+      device-design: { value: Lobe-and-disc occluder with central waist, loc: Device description }
+      frame-material: { value: Nitinol mesh, loc: Device description }
+      fabric-cover: { value: Polyester patches, loc: Device description }
+      anchoring-mechanism: { value: 10–12 curved isogenous barbs, loc: Device description }
+      available-sizes: { value: '18–34 mm lobes in 2 mm steps', loc: Device sizing }
+  - version: ver-ultraseal-ii
+    category: laao-occluders
+    source: src-ultraseal-ii-study
+    values:
+      device-design: { value: Flexible distal bulb and proximal polyester sail, loc: Device description }
+      fabric-cover: { value: Inverted polyester sail, loc: Device description }
+      delivery-sheath: { value: '9–12 Fr', loc: Device description }
+      available-sizes: { value: '16–34 mm in 10 sizes', loc: Device description }
+      anatomy-range-summary: { value: Minimum LAA depth 12 mm, loc: Device description }
+  - version: ver-cardioblate-closure
+    category: laa-exclusion-ligation
+    source: src-cardioblate-canines
+    values:
+      device-design: { value: Expandable external LAA closure bands, loc: Abstract, context: Canine preclinical prototype. }
+      fabric-cover: { value: Silicone bands covered with polyester fabric, loc: Abstract, context: Canine preclinical prototype. }
+      access-route: { value: Thoracoscopic epicardial application, loc: Abstract, context: Canine preclinical prototype; the later clinical registry enrolled patients scheduled for cardiac surgery. }
+  - version: ver-sideris-patch
+    category: laao-occluders
+    source: src-laao-citoday-2018
+    values:
+      device-design: { value: Balloon-delivered frameless porous patch, loc: Sideris patch paragraph, context: Described in the 2018 historical technical review. }
+      fabric-cover: { value: Porous polyurethane patch, loc: Sideris patch paragraph }
+      delivery-sheath: { value: 13 Fr, loc: Sideris patch paragraph }
+  - version: ver-prolipsis
+    category: laao-occluders
+    source: src-laao-citoday-2018
+    values:
+      device-design: { value: Redesigned balloon-delivered patch, loc: Prolipsis paragraph }
+      repositionable: { value: Immediate patch release after placement, loc: Prolipsis paragraph, limitation: Described by the 2018 review; original clinical publication was not located. }
+  - version: ver-ultraseal
+    category: laao-occluders
+    source: src-laao-citoday-2018
+    values:
+      device-design: { value: Soft distal bulb joined to proximal sealing sail, loc: Ultraseal paragraph }
+      frame-material: { value: Nitinol, loc: Ultraseal paragraph }
+      anchoring-mechanism: { value: Distal bulb with fixation hooks, loc: Ultraseal paragraph }
+  - version: ver-seala
+    category: laao-occluders
+    source: src-laao-citoday-2018
+    values:
+      device-design: { value: Distal anchor disc joined to proximal sealing disc, loc: SeaLA paragraph }
+      frame-material: { value: Nitinol braid, loc: SeaLA paragraph }
+      anchoring-mechanism: { value: Nine hooks on distal anchor disc, loc: SeaLA paragraph }
+  - version: ver-lefort
+    category: laao-occluders
+    source: src-lefort-original-study
+    values:
+      device-design: { value: Umbrella occluder with internal flow barrier, loc: Device description }
+      frame-material: { value: Nickel-titanium alloy, loc: Device description }
+      available-sizes: { value: '21–33 mm', loc: Device description }
+  - version: ver-pfm-laa
+    category: laao-occluders
+    source: src-pfm-preclinical-presentation
+    values:
+      device-design: { value: Double-disc closure with adjustable center connector, loc: Device description }
+      frame-material: { value: Nitinol frame, loc: Device description }
+      anchoring-mechanism: { value: Barbless primary and secondary anchors, loc: Device description }
+  - version: ver-lariat
+    category: laa-exclusion-ligation
+    source: src-lariat-ii-510k
+    values:
+      device-design: { value: Pre-tied ligating suture loop, loc: Device description }
+      fabric-cover: { value: Polyester suture, loc: Device description }
+      access-route: { value: Percutaneous epicardial and transseptal access, source: src-laao-citoday-2018, loc: LARIAT procedure paragraph }
+      indication-scope:
+        availability: not_applicable
+        source: src-lariat-original-510k
+        loc: Indications for use
+        context: The FDA 510(k) covers general soft-tissue approximation and ligation, not a specific LAA closure indication.
+  - version: ver-sierra
+    category: laa-exclusion-ligation
+    source: src-sierra-first-human
+    values:
+      device-design: { value: Epicardial guide and ligating band system, loc: Device description }
+      access-route: { value: Percutaneous subxiphoid epicardial, loc: Procedure description }
