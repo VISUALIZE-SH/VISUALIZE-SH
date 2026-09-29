@@ -83,6 +83,28 @@ const SPREAD_FLAG = '_clusterCondSpread'
 const isVisible = (n: NodeSingular) => n.style('display') !== 'none'
 const isCondition = (n: NodeSingular) => n.data('group') === 'condition'
 
+// Stable pseudo-random placement keeps categories interleaved around condition
+// anchors. The ID suffix spreads nodes within a category; a stable category
+// phase rotates those orbits so categories do not form contiguous bands.
+function stableHash(value: string): number {
+  let hash = 2166136261
+  for (let i = 0; i < value.length; i++) hash = Math.imul(hash ^ value.charCodeAt(i), 16777619)
+  return hash >>> 0
+}
+
+function orbitOffset(id: string, group: string): { x: number; y: number } {
+  const tail = id.split('-').at(-1) ?? id
+  const tailHash = stableHash(tail)
+  // Let the suffix spread nodes of one category around the orbit, then rotate
+  // each category by a stable phase. Category labels therefore do not form
+  // contiguous angular clusters even when ids share a category prefix.
+  const tailIndex = /^\d+$/.test(tail) ? Number(tail) : tailHash / 0x100000000
+  const categoryPhase = (stableHash(group) / 0x100000000) * Math.PI * 2
+  const angle = tailIndex * 2.399963229728653 + categoryPhase
+  const radius = 52 + ((tailHash >>> 8) % 69)
+  return { x: Math.cos(angle) * radius, y: Math.sin(angle) * radius }
+}
+
 /**
  * Pull each node into an island around the condition(s) it is connected to.
  * Condition nodes are pinned; satellites are attracted to the weighted centroid
@@ -121,7 +143,7 @@ export function clusterByCondition(cy: Core, opts: ClusterOptions = {}): void {
 
   const conditionNodes = visNodes.filter(isCondition)
   const conditionIds = new Set(conditionNodes.map((n) => n.id()))
-  if (conditionIds.size < 2) return // nothing to cluster around
+  if (conditionIds.size < 1) return // nothing to cluster around
 
   // One-time radial spread of the condition anchors, so the islands have room
   // between them. Done before computing satellite targets so they aim at the
@@ -196,7 +218,12 @@ export function clusterByCondition(cy: Core, opts: ClusterOptions = {}): void {
     })
     const monogamy = top / sum // 1 when bound to a single condition, lower when split
     const pull = pullStrength * Math.pow(monogamy, monogamyExp)
-    return { id: n.id(), x: p.x, y: p.y, r, isCondition: false, tx: cx / sum, ty: cy0 / sum, pull }
+    const orbit = orbitOffset(n.id(), String(n.data('group')))
+    const tx = cx / sum + orbit.x
+    const ty = cy0 / sum + orbit.y
+    // Seed the simulation on the same mixed orbit it is attracted toward. This
+    // prevents fcose/source ordering from preserving category-shaped clumps.
+    return { id: n.id(), x: tx, y: ty, r, isCondition: false, tx, ty, pull }
   })
 
   const sim = forceSimulation<CNode>(nodes)

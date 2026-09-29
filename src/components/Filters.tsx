@@ -22,6 +22,7 @@ const REGULATORY: { id: RegulatoryStatus; label: string }[] = [
   { id: 'approved', label: 'Approved' },
   { id: 'investigational', label: 'Investigational' },
   { id: 'discontinued', label: 'Discontinued' },
+  { id: 'unknown', label: 'Current status unverified' },
 ]
 
 export default function Filters({

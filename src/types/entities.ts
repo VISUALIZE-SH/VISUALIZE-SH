@@ -6,12 +6,14 @@ export type EntityType = 'condition' | 'therapy' | 'company' | 'trial'
 
 export type TherapyType = 'pharmaceutical' | 'device' | 'digital' | 'procedure'
 
-export type RegulatoryStatus = 'approved' | 'investigational' | 'discontinued'
+export type RegulatoryStatus = 'approved' | 'investigational' | 'discontinued' | 'unknown'
+export type LifecycleStatus = 'halted' | 'retired' | 'recalled'
 
 export type TrialStatus =
   | 'recruiting'
   | 'active'
   | 'completed'
+  | 'suspended'
   | 'terminated'
   | 'unknown'
 
@@ -45,8 +47,8 @@ export type DeviceMaterialCategory =
   | 'sensor'
   | 'anchor'
 
-/** A clinically meaningful material in the permanent implant. Delivery-system
- *  plastics, sutures, trace constituents, and other incidental materials are
+/** A clinically meaningful implanted material, including a bioabsorbable implant.
+ *  Delivery-system plastics, incidental sutures, trace constituents, and other incidental materials are
  *  intentionally excluded. */
 export interface DeviceMaterial {
   name: string
@@ -101,6 +103,8 @@ export interface Therapy {
   company?: string
   treats: string[]
   regulatoryStatus: RegulatoryStatus
+  lifecycleStatus?: LifecycleStatus
+  lifecycleDetail?: string
   regulatoryDetail?: string
   mechanism?: string
   description?: string
@@ -135,6 +139,8 @@ export interface Trial {
   nctId?: string
   phase?: string
   status?: TrialStatus
+  lifecycleStatus?: LifecycleStatus
+  lifecycleDetail?: string
   conditions: string[]
   therapies: string[]
   enrollment?: number
@@ -171,6 +177,7 @@ export interface NewsItem {
   sourceUrl: string
   /** Draft items remain local and are omitted from public graph and digest output. */
   reviewStatus?: 'draft' | 'reviewed'
+  lifecycleStatus?: LifecycleStatus
   /** Corroborating coverage for the same event; the primary source stays above. */
   additionalSources?: InfoLink[]
   /** Controlled loosely in authoring; suitable for feed filtering and display. */
@@ -202,6 +209,9 @@ export interface GraphNodeData {
   /** Original entity category (conditions) or therapy subtype — used for filters. */
   category?: string
   isDraft: boolean
+  /** Clinical or product lifecycle flags used for Atlas safety/status styling. */
+  isHalted?: boolean
+  isRetired?: boolean
   degree: number
   /** Newsworthiness 0-10 (0 = unscored). Drives label font size in the graph. */
   pulse: number

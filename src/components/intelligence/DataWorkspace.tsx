@@ -31,6 +31,7 @@ export interface DataWorkspaceProps {
   jurisdiction: string
   asOf: string
   dataView: 'browse' | 'compare'
+  initialQuery: string
   compareCategory: string
   compareVersionIds: string[]
   compareConfigurationIds: string[]
@@ -116,11 +117,12 @@ function GroupedTabs<Row>({ groups, render }: { groups: Grouped<Row>[]; render: 
 }
 
 export default function DataWorkspace({
-  data, conditionId, versionId, onOpenAtlas, jurisdiction, asOf, dataView, compareCategory, compareVersionIds, compareConfigurationIds,
+  data, conditionId, versionId, onOpenAtlas, jurisdiction, asOf, dataView, initialQuery, compareCategory, compareVersionIds, compareConfigurationIds,
   onDataViewChange, onCompareCategoryChange, onCompareVersionIdsChange, onCompareConfigurationIdsChange,
 }: DataWorkspaceProps) {
   const [tab, setTab] = useState<DataTab>('specs')
-  const [query, setQuery] = useState('')
+  const [query, setQuery] = useState(initialQuery)
+  useEffect(() => setQuery(initialQuery), [initialQuery])
   const normalizedQuery = query.trim().toLowerCase()
 
   const specTables = useMemo(() => projectSpecTables(data, { versionId, asOf, jurisdiction, query: normalizedQuery }), [data, versionId, asOf, jurisdiction, normalizedQuery])
@@ -161,7 +163,14 @@ export default function DataWorkspace({
   const outcomeProduct = (row: OutcomeRow) => {
     if (row.versionIds.length) return productInfo(data, versionById(data, row.versionIds[0]))
     const family = outcomeFamily(row)
-    return { name: family ? `${family.name} family` : row.trial, maker: family ? `${family.manufacturer} · generation unresolved` : 'Product not resolved' }
+    const familyVersion = family && data.versions.find(version => version.familyId === family.id)
+    return familyVersion ? productInfo(data, familyVersion) : { name: family ? `${family.name} family` : row.trial, maker: family ? `${family.manufacturer} · generation unresolved` : 'Product not resolved' }
+  }
+  const isTrialHalted = (trialId: string) => {
+    const trialLifecycle = (data.trials.find(trial => trial.id === trialId) as (typeof data.trials)[number] & { lifecycleStatus?: string } | undefined)?.lifecycleStatus
+    if (trialLifecycle === 'halted') return true
+    const status = data.trialSnapshots.filter(snapshot => snapshot.trialId === trialId).sort((a, b) => b.observedAt.localeCompare(a.observedAt))[0]?.status.trim()
+    return /^(terminated|suspended|halted)\b/i.test(status ?? '')
   }
   const outcomeGroups = useMemo(() => groupRows(filteredOutcomes, outcomeVersion, place), [filteredOutcomes, place])
   const historyGroups = useMemo(() => groupRows(filteredHistory.flatMap(row => (row.versionIds.length ? row.versionIds : ['']).map(versionId => ({ ...row, versionId }))), row => row.versionId, place), [filteredHistory, place])
@@ -221,7 +230,7 @@ export default function DataWorkspace({
             rowKey={row => row.id} product={outcomeProduct} sources={row => sourcesFor(data, splitIds(row.sourceIds))}
             detail={row => <OutcomeDetail row={row} />}
             columns={[
-              { id: 'trial', label: 'Trial', width: WIDTH.cell, cell: row => ({ content: <>{row.trial}{row.nctId && <small>{row.nctId}</small>}</> }) },
+              { id: 'trial', label: 'Trial', width: WIDTH.cell, cell: row => ({ content: <>{row.trial}{isTrialHalted(row.trialId) && <span className="intel-lifecycle-tag">Halted</span>}{row.nctId && <small>{row.nctId}</small>}</> }) },
               { id: 'endpoint', label: 'Endpoint', width: WIDTH.wide, cell: row => ({ content: <>{row.endpoint}<small>{row.hierarchy.replace(/_/g, ' ')}</small></> }) },
               { id: 'result', label: 'Result', width: WIDTH.cell, cell: row => ({ content: <><strong>{row.armValues}</strong><small>{row.arm}</small></> }) },
               { id: 'effect', label: 'Effect', width: WIDTH.cell, cell: row => ({ gap: row.effect === 'Not reported', content: row.effect === 'Not reported' ? '—' : <>{row.effect}{row.ci && row.ci !== 'Not reported' && <small>{row.ci}</small>}</> }) },

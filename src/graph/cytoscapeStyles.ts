@@ -128,6 +128,16 @@ export function buildStylesheet(options: StylesheetOptions = {}): any[] {
       },
     },
     {
+      // Halted trials and retired/recalled therapies remain visible, with a
+      // clear red outline that is distinct from ordinary draft styling.
+      selector: 'node[?isHalted], node[?isRetired]',
+      style: {
+        'border-width': 4,
+        'border-style': 'solid',
+        'border-color': '#d92d20',
+      },
+    },
+    {
       selector: '.faded',
       style: { opacity: 0.08, 'text-opacity': 0 },
     },
@@ -142,6 +152,15 @@ export function buildStylesheet(options: StylesheetOptions = {}): any[] {
         'text-outline-width': 2.5,
         'min-zoomed-font-size': 0,
         'z-index': 9999,
+      },
+    },
+    {
+      // Selection emphasis keeps the lifecycle alert visible on top of its
+      // default border styling while preserving the selected label treatment.
+      selector: 'node.sel[?isHalted], node.sel[?isRetired]',
+      style: {
+        'border-width': 4,
+        'border-color': '#d92d20',
       },
     },
     {

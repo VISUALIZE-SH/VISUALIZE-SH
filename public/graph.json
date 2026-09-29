@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-09-24T05:17:27.235Z",
-    "lastUpdated": "2026-09-23",
+    "generatedAt": "2026-09-29T00:26:02.305Z",
+    "lastUpdated": "2026-09-28",
     "counts": {
-      "condition": 16,
-      "device": 36,
+      "condition": 18,
+      "device": 73,
       "pharmaceutical": 14,
       "procedure": 7,
       "digital": 2,
-      "company": 29,
-      "trial": 59
+      "company": 38,
+      "trial": 70
     },
-    "draftCount": 24,
-    "total": 163,
+    "draftCount": 72,
+    "total": 222,
     "newsCount": 78,
     "latestNewsDate": "2026-09-23"
   },
@@ -1378,7 +1378,9 @@
           "group": "condition",
           "category": "Atrial fibrillation / stroke prevention",
           "isDraft": false,
-          "degree": 12,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 35,
           "pulse": 7,
           "entity": {
             "id": "cond-af",
@@ -1406,6 +1408,8 @@
           "group": "condition",
           "category": "Septal & congenital defect",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 5,
           "pulse": 0,
           "entity": {
@@ -1433,6 +1437,8 @@
           "group": "condition",
           "category": "Septal & congenital defect",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "entity": {
@@ -1459,6 +1465,8 @@
           "group": "condition",
           "category": "Septal & congenital defect",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -1485,6 +1493,8 @@
           "group": "condition",
           "category": "Septal & congenital defect",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -1513,6 +1523,8 @@
           "group": "condition",
           "category": "Cardiomyopathy",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 9,
           "pulse": 7,
           "entity": {
@@ -1542,6 +1554,8 @@
           "group": "condition",
           "category": "Infiltrative cardiomyopathy",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 8,
           "pulse": 8,
           "entity": {
@@ -1570,7 +1584,9 @@
           "group": "condition",
           "category": "Heart failure",
           "isDraft": false,
-          "degree": 22,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 34,
           "pulse": 5,
           "entity": {
             "id": "cond-hfref",
@@ -1597,6 +1613,8 @@
           "group": "condition",
           "category": "Heart failure",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 25,
           "pulse": 6,
           "entity": {
@@ -1625,6 +1643,8 @@
           "group": "condition",
           "category": "Coronary microvascular",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 5,
           "pulse": 3,
           "entity": {
@@ -1653,6 +1673,8 @@
           "group": "condition",
           "category": "Aortic valve disease",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 14,
           "pulse": 9,
           "entity": {
@@ -1683,6 +1705,8 @@
           "group": "condition",
           "category": "Aortic valve disease",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 7,
           "entity": {
@@ -1712,7 +1736,9 @@
           "group": "condition",
           "category": "Mitral valve disease",
           "isDraft": false,
-          "degree": 15,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 19,
           "pulse": 8,
           "entity": {
             "id": "cond-mr",
@@ -1742,6 +1768,8 @@
           "group": "condition",
           "category": "Mitral valve disease",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 3,
           "entity": {
@@ -1771,7 +1799,9 @@
           "group": "condition",
           "category": "Tricuspid valve disease",
           "isDraft": false,
-          "degree": 9,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 14,
           "pulse": 9,
           "entity": {
             "id": "cond-tr",
@@ -1801,6 +1831,8 @@
           "group": "condition",
           "category": "Pulmonary valve disease",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 4,
           "entity": {
@@ -1825,12 +1857,1119 @@
       },
       {
         "data": {
+          "id": "cond-pvl",
+          "label": "Prosthetic paravalvular leak",
+          "group": "condition",
+          "category": "Mitral valve disease",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "entity": {
+            "id": "cond-pvl",
+            "type": "condition",
+            "name": "Prosthetic paravalvular leak",
+            "abbreviation": "PVL",
+            "category": "Mitral valve disease",
+            "anatomy": [
+              "prosthetic valve sewing ring",
+              "periannular channel"
+            ],
+            "description": "Regurgitant flow through a defect between a prosthetic valve and the native annulus, potentially causing heart failure or hemolysis; selected high-risk patients may undergo transcatheter closure.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/",
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC10863827/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-ischemic-lv-remodeling",
+          "label": "Ischemic left ventricular remodeling",
+          "group": "condition",
+          "category": "Heart failure",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "cond-ischemic-lv-remodeling",
+            "type": "condition",
+            "name": "Ischemic left ventricular remodeling",
+            "abbreviation": "Ischemic LV remodeling",
+            "category": "Heart failure",
+            "anatomy": [
+              "left ventricle",
+              "anterior myocardial scar"
+            ],
+            "description": "LV dilation and geometric distortion after extensive myocardial infarction; selected patients have been studied for surgical or hybrid scar exclusion and ventricular reconstruction.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC9725051/",
+                "https://pubmed.ncbi.nlm.nih.gov/39797846/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-watchman-original",
+          "label": "WATCHMAN (original generation)",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "timelineDate": "2015-03-13",
+          "entity": {
+            "id": "dev-watchman-original",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "WATCHMAN (original generation)",
+            "company": "co-boston-scientific",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Original WATCHMAN received US FDA PMA P130013 in March 2015; distinct from the withdrawn 2015 FLX and FDA-approved 2020 FLX.",
+            "timeline": {
+              "date": "2015-03-13",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "Original WATCHMAN FDA PMA",
+              "source": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013"
+            },
+            "mechanism": "Endocardial nitinol-frame plug for LAA occlusion.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding implant frame",
+                "category": "frame",
+                "source": "https://www.watchman.com/content/dam/watchman/downloads/download-center/about-watchman/WATCHMAN_Specsheet.pdf"
+              },
+              {
+                "name": "Polyethylene terephthalate (PET)",
+                "role": "Proximal fabric cover",
+                "category": "fabric",
+                "source": "https://www.watchman.com/content/dam/watchman/downloads/download-center/about-watchman/WATCHMAN_Specsheet.pdf"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013",
+                "https://www.watchman.com/content/dam/watchman/downloads/download-center/about-watchman/WATCHMAN_Specsheet.pdf"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-watchman-flx-2015",
+          "label": "WATCHMAN FLX (2015 iteration)",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "timelineDate": "2015-01-01",
+          "entity": {
+            "id": "dev-watchman-flx-2015",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "WATCHMAN FLX (2015 iteration)",
+            "company": "co-boston-scientific",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "discontinued",
+            "regulatoryDetail": "2015 CE-marked iteration withdrawn in 2016 after increased device embolization; distinct from the redesigned FLX approved by FDA in 2020.",
+            "timeline": {
+              "date": "2015-01-01",
+              "precision": "year",
+              "dateBasis": "ce-mark",
+              "event": "Early WATCHMAN FLX CE mark",
+              "source": "https://www.jacc.org/doi/10.1016/j.jcin.2020.06.056"
+            },
+            "mechanism": "Early-generation endocardial LAA plug, subsequently withdrawn.",
+            "materials": [],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://www.jacc.org/doi/10.1016/j.jcin.2020.06.056",
+                "https://citoday.com/articles/2018-may-june/the-spectrum-of-devices-for-percutaneous-left-atrial-appendage-occlusion"
+              ],
+              "notes": "Early-iteration implant composition not independently verified; do not carry forward 2020 FLX specifications."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-cardiac-plug",
+          "label": "Amplatzer Cardiac Plug (ACP)",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-amplatzer-cardiac-plug",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "Amplatzer Cardiac Plug (ACP)",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Historical ACP generation studied before Amulet; current availability and jurisdiction-specific authorization unverified.",
+            "mechanism": "Lobe-and-disc endocardial LAA occluder.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding lobe and disc",
+                "category": "frame",
+                "source": "https://pubmed.ncbi.nlm.nih.gov/20665856/"
+              },
+              {
+                "name": "Polyester",
+                "role": "Occlusive fabric",
+                "category": "fabric",
+                "source": "https://pubmed.ncbi.nlm.nih.gov/20665856/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/20665856/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-plaato",
+          "label": "PLAATO",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-plaato",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "PLAATO",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Early percutaneous LAA occlusion program; current commercial availability and authorization unverified.",
+            "mechanism": "Membrane-covered endocardial LAA occluder.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding implant frame",
+                "category": "frame",
+                "source": "https://pubmed.ncbi.nlm.nih.gov/11997272/"
+              },
+              {
+                "name": "Expanded polytetrafluoroethylene (ePTFE)",
+                "role": "Occlusive membrane",
+                "category": "fabric",
+                "source": "https://pubmed.ncbi.nlm.nih.gov/11997272/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/11997272/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-wavecrest",
+          "label": "WaveCrest",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "timelineDate": "2013-09-01",
+          "entity": {
+            "id": "dev-wavecrest",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "WaveCrest",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "CE-marked in 2013; current commercial availability and US authorization unverified.",
+            "timeline": {
+              "date": "2013-09-01",
+              "precision": "month",
+              "dateBasis": "ce-mark",
+              "event": "WaveCrest CE mark",
+              "source": "https://www.jnj.com/media-center/press-releases/biosense-webster-inc-announces-acquisition-of-coherex-medical-inc"
+            },
+            "mechanism": "Membrane-covered endocardial occluder with actuated anchors.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Occluder frame",
+                "category": "frame",
+                "source": "https://www.jnjmedtech.com/sites/default/files/user_uploaded_assets/pdf_assets/2020-09/084962-200128%20EMEA%20Biosense_Products_Catalogue_2020_single_page_0.pdf"
+              },
+              {
+                "name": "Expanded polytetrafluoroethylene (ePTFE)",
+                "role": "Occlusive membrane",
+                "category": "fabric",
+                "source": "https://www.jnjmedtech.com/sites/default/files/user_uploaded_assets/pdf_assets/2020-09/084962-200128%20EMEA%20Biosense_Products_Catalogue_2020_single_page_0.pdf"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://www.jnjmedtech.com/sites/default/files/user_uploaded_assets/pdf_assets/2020-09/084962-200128%20EMEA%20Biosense_Products_Catalogue_2020_single_page_0.pdf",
+                "https://www.jnj.com/media-center/press-releases/biosense-webster-inc-announces-acquisition-of-coherex-medical-inc"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-occlutech-laa-original",
+          "label": "Occlutech LAA Occluder (original)",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-occlutech-laa-original",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "Occlutech LAA Occluder (original)",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "discontinued",
+            "regulatoryDetail": "Original design: manufacturer suspended sales and shipping in 2016 after four reported dislocations.",
+            "mechanism": "Covered nitinol-mesh LAA occluder with distal loop anchors.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding mesh frame",
+                "category": "frame",
+                "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5935193/"
+              },
+              {
+                "name": "Polyurethane",
+                "role": "Occlusive covering",
+                "category": "fabric",
+                "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5935193/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/27925332/",
+                "https://www.moph.gov.lb/userfiles/files/Medical%20Devices/Medical%20Devices%20Recalls%202016/24-10-2016/OcclutechLAAOccluder.pdf",
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC5935193/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-occlutech-laa-redesigned",
+          "label": "Occlutech LAA Occluder Plus (redesigned)",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-occlutech-laa-redesigned",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "Occlutech LAA Occluder Plus (redesigned)",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Redesigned device studied preclinically in 2021; current human-use and marketing status unverified.",
+            "mechanism": "Modified covered lobe with additional fixation anchors.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding lobe frame",
+                "category": "frame",
+                "source": "https://www.nature.com/articles/s41598-021-82359-1"
+              },
+              {
+                "name": "Polyurethane",
+                "role": "Occlusive mesh covering",
+                "category": "fabric",
+                "source": "https://www.nature.com/articles/s41598-021-82359-1"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://www.nature.com/articles/s41598-021-82359-1"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sideris-patch",
+          "label": "Sideris Transcatheter Patch",
+          "group": "device",
+          "category": "Percutaneous LAA patch",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-sideris-patch",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA patch",
+            "name": "Sideris Transcatheter Patch",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Historical clinical report; current product and authorization status unverified.",
+            "mechanism": "Bioabsorbable patch placed within the appendage and fixed with adhesive.",
+            "materials": [],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/22078431/"
+              ],
+              "notes": "Implant and adhesive composition not verified from the primary report."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-prolipsis",
+          "label": "Prolipsis",
+          "group": "device",
+          "category": "Percutaneous LAA patch",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-prolipsis",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA patch",
+            "name": "Prolipsis",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Second-generation Sideris patch presented by 2017; current authorization and availability unverified.",
+            "mechanism": "Bioabsorbable LAA patch with an immediate-release design.",
+            "materials": [],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://www.tctmd.com/slide/prolipsis-0",
+                "https://citoday.com/articles/2018-may-june/the-spectrum-of-devices-for-percutaneous-left-atrial-appendage-occlusion"
+              ],
+              "notes": "Exact Prolipsis implant composition not verified separately from the first-generation patch."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-ultraseal",
+          "label": "Ultraseal (first generation)",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-ultraseal",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "Ultraseal (first generation)",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "First-generation device studied clinically by 2018; distinguish from Ultraseal II. Current first-generation status unverified.",
+            "mechanism": "Distal bulb and proximal sealing sail joined by an articulating connector.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding distal frame",
+                "category": "frame",
+                "source": "https://www.jacc.org/doi/10.1016/j.jcin.2018.05.023"
+              },
+              {
+                "name": "Polyvinyl alcohol foam and polyester",
+                "role": "Proximal sealing sail",
+                "category": "fabric",
+                "source": "https://www.jacc.org/doi/10.1016/j.jcin.2018.05.023"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://www.jacc.org/doi/10.1016/j.jcin.2018.05.023",
+                "https://pubmed.ncbi.nlm.nih.gov/35842775/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-seala",
+          "label": "SeaLA",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-seala",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "SeaLA",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Historical device described in 2018; current development and authorization status unverified.",
+            "mechanism": "Anchor-disc and seal-disc endocardial occluder.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Braided mesh discs",
+                "category": "frame",
+                "source": "https://citoday.com/articles/2018-may-june/the-spectrum-of-devices-for-percutaneous-left-atrial-appendage-occlusion"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://citoday.com/articles/2018-may-june/the-spectrum-of-devices-for-percutaneous-left-atrial-appendage-occlusion"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lefort",
+          "label": "LeFort LAA Occluder",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-lefort",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "LeFort LAA Occluder",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Historical LeFort design described in 2018; do not transfer later MemoLefort claims without confirming generation identity.",
+            "mechanism": "Covered nitinol umbrella occluder with fixation barbs.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Umbrella frame",
+                "category": "frame",
+                "source": "https://citoday.com/articles/2018-may-june/the-spectrum-of-devices-for-percutaneous-left-atrial-appendage-occlusion"
+              },
+              {
+                "name": "Polyethylene terephthalate (PET)",
+                "role": "Permeable occlusive covering",
+                "category": "fabric",
+                "source": "https://citoday.com/articles/2018-may-june/the-spectrum-of-devices-for-percutaneous-left-atrial-appendage-occlusion"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://citoday.com/articles/2018-may-june/the-spectrum-of-devices-for-percutaneous-left-atrial-appendage-occlusion"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-pfm-laa",
+          "label": "pfm medical LAA Occluder",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-pfm-laa",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "pfm medical LAA Occluder",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Preclinical-stage design in 2017–2018; current development and authorization status unverified.",
+            "mechanism": "Distal anchor and proximal disc linked by an adjustable connector.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Occluder frame",
+                "category": "frame",
+                "source": "https://www.ahajournals.org/doi/pdf/10.1161/CIRCINTERVENTIONS.117.005359"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://www.ahajournals.org/doi/pdf/10.1161/CIRCINTERVENTIONS.117.005359"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lariat",
+          "label": "LARIAT",
+          "group": "device",
+          "category": "Percutaneous epicardial LAA ligation",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-lariat",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous epicardial LAA ligation",
+            "name": "LARIAT",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "LARIAT RS 510(k) K153096 covers soft-tissue approximation/ligation, not stroke-prevention approval; do not transfer that decision to every LARIAT iteration. Current LAA-use status unverified.",
+            "mechanism": "Percutaneous epicardial suture loop ligates the LAA externally.",
+            "materials": [],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf15/K153096.pdf",
+                "https://accessgudid.nlm.nih.gov/devices/M95530060"
+              ],
+              "notes": "Graph entry spans historical LARIAT iterations; RS-specific suture composition is not assigned to the whole line."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sierra",
+          "label": "Sierra LAA Ligation System",
+          "group": "device",
+          "category": "Percutaneous epicardial LAA ligation",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-sierra",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous epicardial LAA ligation",
+            "name": "Sierra LAA Ligation System",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "First-in-human feasibility published in 2024; current development and marketing status unverified.",
+            "mechanism": "Epicardial LAA ligature delivered through a subxiphoid approach.",
+            "materials": [],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC11642118/",
+                "https://clinicaltrials.gov/study/NCT02583178"
+              ],
+              "notes": "The first-in-human paper identifies a ligature but does not verify its composition."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-claas",
+          "label": "CLAAS AcuFORM LAA Occlusion System",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-claas",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "CLAAS AcuFORM LAA Occlusion System",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Clinical investigation only; no commercial authorization established by the cited trial program.",
+            "mechanism": "Conformable foam-covered endocardial LAA occluder.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Cylindrical implant endoskeleton",
+                "category": "frame",
+                "source": "https://doi.org/10.1155/2021/4556400"
+              },
+              {
+                "name": "Polyurethane-carbonate foam",
+                "role": "Occlusive matrix",
+                "category": "fabric",
+                "source": "https://doi.org/10.1155/2021/4556400"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://www.conformtrial.com/physicians",
+                "https://doi.org/10.1155/2021/4556400"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-omega-laa",
+          "label": "Omega LAA Occluder",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-omega-laa",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "Omega LAA Occluder",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "November 2024 all-stock recall: unused units were quarantined and returned; the notice advised no extra action for implanted units at that time. Current availability unverified.",
+            "mechanism": "Cup-and-disc endocardial LAA occluder.",
+            "materials": [
+              {
+                "name": "Platinum-coated nitinol",
+                "role": "Dual-layer implant frame",
+                "category": "frame",
+                "source": "https://assets.hpra.ie/data/docs/default-source/product-updates/fsn/field-safety-notices/november-2024/omega-left-atrial-appendage-%28laa%29-occluder-device_eclipse-medical_-advice-regarding-a-device-removal.pdf?sfvrsn=a200dad9_1"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://assets.hpra.ie/data/docs/default-source/product-updates/fsn/field-safety-notices/november-2024/omega-left-atrial-appendage-%28laa%29-occluder-device_eclipse-medical_-advice-regarding-a-device-removal.pdf?sfvrsn=a200dad9_1"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lacbes",
+          "label": "LACbes LAA Occluder",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-lacbes",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "LACbes LAA Occluder",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Reported approved for clinical use in China by 2017–2018; US and EU authorization unverified.",
+            "mechanism": "Lobe-and-disc LAA occluder with articulated waist.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding lobe and disc",
+                "category": "frame",
+                "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478548/"
+              },
+              {
+                "name": "Polyester",
+                "role": "Occlusive patches",
+                "category": "fabric",
+                "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478548/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://www.pushmedical.com/en/product/84207.html",
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478548/"
+              ],
+              "notes": "China authorization is reported in clinical literature; a primary NMPA decision record was not located."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-ultraseal-ii",
+          "label": "Ultraseal II",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-ultraseal-ii",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "Ultraseal II",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Second-generation Cardia device studied clinically; current regional authorization and availability unverified.",
+            "mechanism": "Flexible distal bulb and proximal sealing sail joined by a shorter articulation.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Distal bulb frame",
+                "category": "frame",
+                "source": "https://doi.org/10.1002/ccd.30336"
+              },
+              {
+                "name": "Polyester",
+                "role": "Proximal sail covering",
+                "category": "fabric",
+                "source": "https://doi.org/10.1002/ccd.30336"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://doi.org/10.1002/ccd.30336",
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC11526496/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardioblate-closure",
+          "label": "Cardioblate Closure (LAA prototype)",
+          "group": "device",
+          "category": "Thoracoscopic LAA exclusion band",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-cardioblate-closure",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Thoracoscopic LAA exclusion band",
+            "name": "Cardioblate Closure (LAA prototype)",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Historical investigational closure prototype; NCT00841529 terminated, and current availability unverified. Separate from the Cardioblate RF ablation line.",
+            "mechanism": "Thoracoscopically applied expandable band encircles the LAA opening.",
+            "materials": [
+              {
+                "name": "Silicone",
+                "role": "Expandable occluding band",
+                "category": "frame",
+                "source": "https://pubmed.ncbi.nlm.nih.gov/20346467/"
+              },
+              {
+                "name": "Polyester",
+                "role": "Band covering",
+                "category": "fabric",
+                "source": "https://pubmed.ncbi.nlm.nih.gov/20346467/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/20346467/",
+                "https://clinicaltrials.gov/study/NCT00841529"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-atriclip",
+          "label": "AtriClip FLEX",
+          "group": "device",
+          "category": "Surgical LAA exclusion clip",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-atriclip",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Surgical LAA exclusion clip",
+            "name": "AtriClip FLEX",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA-cleared surgical LAA exclusion system applied under direct visualization; do not describe its 510(k) clearance as stroke-prevention PMA approval.",
+            "mechanism": "Epicardial clip excludes the LAA during cardiac surgery.",
+            "materials": [
+              {
+                "name": "Grade 2 titanium",
+                "role": "Clip beams",
+                "category": "frame",
+                "source": "https://europe.atricure.com/sites/default/files/devices-ifu/IFU-0278.A.pdf"
+              },
+              {
+                "name": "Polyethylene terephthalate (PET)",
+                "role": "Knit-braided clip cover",
+                "category": "fabric",
+                "source": "https://europe.atricure.com/sites/default/files/devices-ifu/IFU-0278.A.pdf"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://europe.atricure.com/sites/default/files/devices-ifu/IFU-0278.A.pdf",
+                "https://www.atricure.com/healthcare-professionals/therapies/LAAM/atriclip-exclusion-system/atriclip-flex-device"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amulet-360",
+          "label": "Amulet 360",
+          "group": "device",
+          "category": "Percutaneous LAA occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "timelineDate": "2026-08-27",
+          "entity": {
+            "id": "dev-amulet-360",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA occluder",
+            "name": "Amulet 360",
+            "company": "co-abbott",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "CE Mark announced August 2026; commercialized in selected international markets, with US use investigational.",
+            "timeline": {
+              "date": "2026-08-27",
+              "precision": "day",
+              "dateBasis": "ce-mark",
+              "event": "Amulet 360 CE Mark announced",
+              "source": "https://abbott.mediaroom.com/2026-08-27-Abbotts-next-generation-Amulet-360-TM-device-receives-CE-Mark-to-treat-people-with-atrial-fibrillation-at-risk-of-stroke"
+            },
+            "mechanism": "Dual-seal endocardial LAA occluder with a redesigned lobe and anchor layout.",
+            "materials": [],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://abbott.mediaroom.com/2026-08-27-Abbotts-next-generation-Amulet-360-TM-device-receives-CE-Mark-to-treat-people-with-atrial-fibrillation-at-risk-of-stroke",
+                "https://www.cardiovascular.abbott/int/en/hcp/products/electrophysiology/left-atrial-appendage-occlusion/amulet-360-laao.html"
+              ],
+              "notes": "Public source reviewed does not disclose generation-specific implant materials; avoid copying prior Amulet composition."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-laminar-laa",
+          "label": "Laminar LAA Closure Device",
+          "group": "device",
+          "category": "Percutaneous LAA closure device",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-laminar-laa",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Percutaneous LAA closure device",
+            "name": "Laminar LAA Closure Device",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "IDE clinical investigation; sponsor trial NCT06168942 listed on hold. No marketing authorization established.",
+            "mechanism": "Expandable ball and petal-shaped lock compress tissue around the LAA opening.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding ball structure",
+                "category": "frame",
+                "source": "https://www.jacc.org/doi/10.1016/j.jcin.2023.04.028",
+                "note": "Lock composition not reported in this source."
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-27",
+              "sources": [
+                "https://www.jacc.org/doi/10.1016/j.jcin.2023.04.028",
+                "https://clinicaltrials.jnj.com/en/study-detail/NCT06168942?tab=eligibility",
+                "https://www.cms.gov/medicare/coverage/evidence/left-atrial-closure"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "dev-watchman-flx",
           "label": "Watchman FLX",
           "group": "device",
           "category": "LAA closure device",
           "isDraft": false,
-          "degree": 9,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 7,
           "pulse": 6,
           "timelineDate": "2020-01-01",
           "entity": {
@@ -1894,6 +3033,8 @@
           "group": "device",
           "category": "LAA closure device",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 5,
           "pulse": 0,
           "timelineDate": "2021-01-01",
@@ -1944,6 +3085,8 @@
           "group": "device",
           "category": "LAA closure device",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "timelineDate": "2016-01-01",
@@ -2001,6 +3144,8 @@
           "group": "device",
           "category": "Surgical LAA exclusion clip",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 6,
           "timelineDate": "2026-06-26",
@@ -2065,6 +3210,8 @@
           "group": "device",
           "category": "PFO closure device",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 4,
           "pulse": 0,
           "timelineDate": "2016-01-01",
@@ -2115,6 +3262,8 @@
           "group": "device",
           "category": "Septal/PFO closure device",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 4,
           "pulse": 0,
           "timelineDate": "2018-01-01",
@@ -2160,6 +3309,8 @@
           "group": "device",
           "category": "ASD closure device",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2001-01-01",
@@ -2210,6 +3361,8 @@
           "group": "device",
           "category": "PDA closure device",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2019-01-01",
@@ -2255,6 +3408,8 @@
           "group": "device",
           "category": "VSD closure device",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2007-09-07",
@@ -2306,6 +3461,8 @@
           "group": "device",
           "category": "interatrial shunt",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 5,
           "pulse": 6,
           "entity": {
@@ -2351,6 +3508,8 @@
           "group": "device",
           "category": "interatrial shunt",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 4,
           "pulse": 6,
           "entity": {
@@ -2391,6 +3550,8 @@
           "group": "device",
           "category": "interatrial shunt",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 4,
           "entity": {
@@ -2430,6 +3591,8 @@
           "group": "device",
           "category": "PA pressure sensor",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 5,
           "pulse": 4,
           "timelineDate": "2014-01-01",
@@ -2489,6 +3652,8 @@
           "group": "device",
           "category": "PA pressure sensor",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 4,
           "pulse": 0,
           "timelineDate": "2024-01-01",
@@ -2546,6 +3711,8 @@
           "group": "device",
           "category": "IVC sensor",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "entity": {
@@ -2590,6 +3757,8 @@
           "group": "device",
           "category": "LA pressure sensor",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "entity": {
@@ -2628,6 +3797,8 @@
           "group": "device",
           "category": "coronary sinus reducer",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 4,
           "pulse": 0,
           "timelineDate": "2011-01-01",
@@ -2672,6 +3843,8 @@
           "group": "device",
           "category": "coronary sinus reducer",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 3,
           "entity": {
@@ -2723,6 +3896,8 @@
           "group": "pharmaceutical",
           "category": "cardiac myosin inhibitor",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 4,
           "pulse": 7,
           "timelineDate": "2022-01-01",
@@ -2761,6 +3936,8 @@
           "group": "pharmaceutical",
           "category": "cardiac myosin inhibitor",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 5,
           "pulse": 9,
           "timelineDate": "2025-12-19",
@@ -2799,6 +3976,8 @@
           "group": "pharmaceutical",
           "category": "TTR stabilizer",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 4,
           "timelineDate": "2019-01-01",
@@ -2836,6 +4015,8 @@
           "group": "pharmaceutical",
           "category": "TTR stabilizer",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 10,
           "timelineDate": "2024-01-01",
@@ -2874,6 +4055,8 @@
           "group": "pharmaceutical",
           "category": "TTR silencer (siRNA)",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 9,
           "timelineDate": "2025-01-01",
@@ -2913,6 +4096,8 @@
           "group": "pharmaceutical",
           "category": "TTR silencer (siRNA)",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "entity": {
@@ -2942,6 +4127,8 @@
           "group": "pharmaceutical",
           "category": "SGLT2 inhibitor",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 5,
           "pulse": 5,
           "timelineDate": "2020-01-01",
@@ -2980,6 +4167,8 @@
           "group": "pharmaceutical",
           "category": "SGLT2 inhibitor",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 5,
           "pulse": 5,
           "timelineDate": "2021-01-01",
@@ -3018,6 +4207,8 @@
           "group": "pharmaceutical",
           "category": "ARNI",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 4,
           "pulse": 0,
           "timelineDate": "2015-01-01",
@@ -3055,6 +4246,8 @@
           "group": "pharmaceutical",
           "category": "sGC stimulator",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "timelineDate": "2021-01-01",
@@ -3091,6 +4284,8 @@
           "group": "pharmaceutical",
           "category": "nonsteroidal MRA",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 6,
           "timelineDate": "2021-01-01",
@@ -3130,6 +4325,8 @@
           "group": "pharmaceutical",
           "category": "cardiac myosin activator",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "entity": {
@@ -3159,6 +4356,8 @@
           "group": "procedure",
           "category": "surgical septal reduction",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -3187,6 +4386,8 @@
           "group": "procedure",
           "category": "percutaneous septal reduction",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -3215,6 +4416,8 @@
           "group": "digital",
           "category": "digital HF management / GDMT titration",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "entity": {
@@ -3246,6 +4449,8 @@
           "group": "digital",
           "category": "digital cardiovascular management",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "entity": {
@@ -3276,6 +4481,8 @@
           "group": "device",
           "category": "TAVR (balloon-expandable)",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 7,
           "pulse": 9,
           "timelineDate": "2015-01-01",
@@ -3340,6 +4547,8 @@
           "group": "device",
           "category": "TAVR (self-expanding)",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 4,
           "pulse": 8,
           "timelineDate": "2014-01-01",
@@ -3397,6 +4606,8 @@
           "group": "device",
           "category": "TAVR (self-expanding)",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 5,
           "timelineDate": "2021-01-01",
@@ -3454,6 +4665,8 @@
           "group": "device",
           "category": "TAVR (self-expanding)",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 6,
           "timelineDate": "2020-01-01",
@@ -3514,6 +4727,8 @@
           "group": "device",
           "category": "TAVR for aortic regurgitation",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 4,
           "pulse": 8,
           "timelineDate": "2026-03-17",
@@ -3576,6 +4791,8 @@
           "group": "device",
           "category": "TMVR (transcatheter mitral valve replacement)",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 5,
           "timelineDate": "2020-01-01",
@@ -3634,6 +4851,8 @@
           "group": "device",
           "category": "TMVR (transcatheter mitral valve replacement)",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 7,
           "timelineDate": "2025-12-22",
@@ -3699,6 +4918,8 @@
           "group": "device",
           "category": "TMVR (transcatheter mitral valve replacement)",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 4,
           "entity": {
@@ -3749,6 +4970,8 @@
           "group": "device",
           "category": "Mitral TEER",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 7,
           "pulse": 7,
           "timelineDate": "2013-01-01",
@@ -3812,6 +5035,8 @@
           "group": "device",
           "category": "Mitral TEER",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 7,
           "timelineDate": "2022-01-01",
@@ -3870,6 +5095,8 @@
           "group": "device",
           "category": "Tricuspid TEER",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 8,
           "timelineDate": "2024-04-01",
@@ -3932,6 +5159,8 @@
           "label": "Versa Vascular adapTR Leaflet Enhancement System",
           "group": "device",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 8,
           "entity": {
@@ -3987,6 +5216,8 @@
           "group": "device",
           "category": "TTVR (transcatheter tricuspid valve replacement)",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 8,
           "timelineDate": "2024-02-01",
@@ -4050,6 +5281,8 @@
           "group": "device",
           "category": "Transcatheter annuloplasty",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 4,
           "timelineDate": "2015-01-01",
@@ -4103,6 +5336,8 @@
           "group": "device",
           "category": "TPVR (transcatheter pulmonary valve)",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 3,
           "timelineDate": "2010-01-25",
@@ -4155,6 +5390,8 @@
           "group": "device",
           "category": "TPVR (transcatheter pulmonary valve)",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 4,
           "timelineDate": "2021-01-01",
@@ -4213,6 +5450,8 @@
           "group": "procedure",
           "category": "Surgical valve replacement",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 5,
           "pulse": 4,
           "entity": {
@@ -4243,6 +5482,8 @@
           "group": "procedure",
           "category": "Surgical valve repair/replacement",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 4,
           "entity": {
@@ -4273,6 +5514,8 @@
           "group": "procedure",
           "category": "Surgical valve repair/replacement",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 4,
           "entity": {
@@ -4302,6 +5545,8 @@
           "group": "procedure",
           "category": "Balloon valvuloplasty",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 2,
           "entity": {
@@ -4331,6 +5576,8 @@
           "group": "procedure",
           "category": "Balloon valvuloplasty",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 2,
           "entity": {
@@ -4360,6 +5607,8 @@
           "group": "device",
           "category": "Surgical annuloplasty ring",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 4,
           "entity": {
@@ -4415,6 +5664,8 @@
           "group": "device",
           "category": "Surgical annuloplasty ring",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 4,
           "entity": {
@@ -4470,6 +5721,8 @@
           "group": "pharmaceutical",
           "category": "relaxin receptor (RXFP1) agonist",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 6,
           "entity": {
@@ -4505,6 +5758,8 @@
           "group": "pharmaceutical",
           "category": "GLP-1/GIP receptor agonist",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "entity": {
@@ -4534,11 +5789,637 @@
       },
       {
         "data": {
+          "id": "dev-occlutech-pvl",
+          "label": "Occlutech Paravalvular Leak Device (PLD)",
+          "group": "device",
+          "category": "Dedicated paravalvular leak occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-occlutech-pvl",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Dedicated paravalvular leak occluder",
+            "name": "Occlutech Paravalvular Leak Device (PLD)",
+            "company": "co-occlutech",
+            "treats": [
+              "cond-pvl"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "CE-marked dedicated closure device; no FDA authorization identified in FDA databases reviewed. Do not conflate customary off-label use of other plugs in the US with authorization of this device.",
+            "mechanism": "Transcatheter plug occlusion of selected channels adjacent to a prosthetic valve.",
+            "materials": [],
+            "links": [
+              {
+                "label": "Long-term multicenter clinical study",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/",
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC4882385/"
+              ],
+              "notes": "PLD-specific trials report procedural and follow-up outcomes; no FDA decision located."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-neochord-ds1000",
+          "label": "NeoChord DS1000",
+          "group": "device",
+          "category": "Artificial chordae surgical replacement system",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-neochord-ds1000",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Artificial chordae surgical replacement system",
+            "name": "NeoChord DS1000",
+            "company": "co-neochord",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "US ReChord IDE trial remains active, not recruiting in the 2026-04-08 ClinicalTrials.gov update; no US marketing authorization identified.",
+            "mechanism": "Transapical, beating-heart delivery of artificial ePTFE chordae for mitral leaflet repair.",
+            "materials": [],
+            "links": [
+              {
+                "label": "Device clinical performance summary",
+                "url": "https://www.neochord.com/wp-content/uploads/2024/12/RP-602000-001_DS1000_SSCP_Rev_B_FINAL_05Dec2024.docx.pdf"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02803957",
+                "https://www.neochord.com/wp-content/uploads/2024/12/RP-602000-001_DS1000_SSCP_Rev_B_FINAL_05Dec2024.docx.pdf"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mi-chord",
+          "label": "Mi-CHORD System",
+          "group": "device",
+          "category": "Artificial chordae surgical replacement system",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "timelineDate": "2024-06-11",
+          "entity": {
+            "id": "dev-mi-chord",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Artificial chordae surgical replacement system",
+            "name": "Mi-CHORD System",
+            "company": "co-lsi-solutions",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA De Novo DEN230069 granted 2024-06-11; indicated as a surgical artificial chordae replacement system.",
+            "mechanism": "Mi-STITCH and Mi-KNOT devices place and secure artificial chordae during mitral valve repair.",
+            "materials": [],
+            "links": [
+              {
+                "label": "FDA De Novo decision",
+                "url": "https://www.accessdata.fda.gov/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230069"
+              }
+            ],
+            "timeline": {
+              "date": "2024-06-11",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "FDA De Novo granted",
+              "source": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230069"
+            },
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230069",
+                "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf"
+              ],
+              "notes": "FDA's supporting clinical dataset was a prospective single-center 12-patient cohort; device materials omitted because no verified implant-material disclosure was added here."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tricvalve",
+          "label": "TricValve Transcatheter Bicaval Valve System",
+          "group": "device",
+          "category": "Heterotopic bicaval transcatheter valve",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-tricvalve",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Heterotopic bicaval transcatheter valve",
+            "name": "TricValve Transcatheter Bicaval Valve System",
+            "company": "co-pf-products",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "CE-marked in Europe; US TRICAV IDE study is ongoing; CMS record states no FDA approval as of its 2024 meeting materials.",
+            "mechanism": "Two self-expanding bioprosthetic valves implanted in the superior and inferior vena cava to reduce systolic backflow into the caval veins.",
+            "materials": [],
+            "links": [
+              {
+                "label": "TRICUS EURO 6-month outcomes",
+                "url": "https://www.jacc.org/doi/10.1016/j.jcin.2022.05.022"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://www.cms.gov/files/document/september-10-2024-final-agenda-and-materials.pdf",
+                "https://clinicaltrials.gov/study/NCT06137807",
+                "https://www.jacc.org/doi/10.1016/j.jcin.2022.05.022"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-revivent-tc",
+          "label": "Revivent TC System",
+          "group": "device",
+          "category": "Hybrid left ventricular reconstruction system",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-revivent-tc",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Hybrid left ventricular reconstruction system",
+            "name": "Revivent TC System",
+            "company": "co-bioventrix",
+            "treats": [
+              "cond-ischemic-lv-remodeling",
+              "cond-hfref"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Studied in prospective ALIVE trial; US regulatory authorization not identified.",
+            "mechanism": "Hybrid transcatheter and surgical scar exclusion that partitions off akinetic LV scar to reduce chamber size and reshape the ventricle.",
+            "materials": [],
+            "links": [
+              {
+                "label": "ALIVE trial outcomes",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/39797846/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/39797846/",
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC9725051/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-corcap",
+          "label": "CorCap Cardiac Support Device",
+          "group": "device",
+          "category": "Epicardial ventricular restraint mesh",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": true,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-corcap",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Epicardial ventricular restraint mesh",
+            "name": "CorCap Cardiac Support Device",
+            "company": "co-acorn-cardiovascular",
+            "treats": [
+              "cond-hfref"
+            ],
+            "regulatoryStatus": "discontinued",
+            "regulatoryDetail": "Historical investigational device; FDA did not approve the PMA, and a peer-reviewed review states the device was withdrawn from market. This is not an FDA recall.",
+            "lifecycleStatus": "retired",
+            "lifecycleDetail": "Reported withdrawn from market after FDA non-approval; source is a peer-reviewed review, not an FDA recall record.",
+            "mechanism": "Surgically placed polyester mesh around the ventricles providing passive epicardial restraint intended to limit dilation and support reverse remodeling.",
+            "materials": [],
+            "links": [
+              {
+                "label": "Five-year Acorn trial outcomes",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/",
+                "https://doi.org/10.1080/24748706.2020.1777359",
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC7944209/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-heartmate-3",
+          "label": "HeartMate 3 LVAD",
+          "group": "device",
+          "category": "Durable implantable LV assist system",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "timelineDate": "2017-08-23",
+          "entity": {
+            "id": "dev-heartmate-3",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Durable implantable LV assist system",
+            "name": "HeartMate 3 LVAD",
+            "company": "co-abbott",
+            "treats": [
+              "cond-hfref"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA-approved durable LVAD with bridge-to-transplant and destination-therapy indications. Specific accessories/lots have separate recalls; the entire implanted HeartMate 3 pump is not labeled recalled here.",
+            "mechanism": "Fully magnetically levitated centrifugal-flow pump assists systemic circulation by moving blood from the left ventricle to the aorta.",
+            "materials": [
+              {
+                "name": "Ti6Al4V titanium alloy",
+                "role": "primary LVAS construction material",
+                "category": "frame",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160054B.pdf"
+              },
+              {
+                "name": "polyester vascular graft sealed with gelatin",
+                "role": "outflow graft",
+                "category": "fabric",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160054B.pdf"
+              }
+            ],
+            "links": [
+              {
+                "label": "Five-year MOMENTUM 3 outcomes (ACC)",
+                "url": "https://www.acc.org/latest-in-cardiology/articles/2023/07/25/13/36/sustained-superiority-of-the-heartmate-3-lvad"
+              }
+            ],
+            "timeline": {
+              "date": "2017-08-23",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "FDA PMA P160054",
+              "source": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160054"
+            },
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160054B.pdf",
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfres/res.cfm?id=220518",
+                "https://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/abbottthoratec-corp-recalls-heartmate-ii-and-heartmate-3-left-ventricular-assist-system-lvas-due"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-edwards-sapien-xt-caval",
+          "label": "Edwards SAPIEN XT valve used for caval valve implantation",
+          "group": "device",
+          "category": "Heterotopic caval valve implantation",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-edwards-sapien-xt-caval",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Heterotopic caval valve implantation",
+            "name": "Edwards SAPIEN XT valve used for caval valve implantation",
+            "company": "co-edwards",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "The SAPIEN XT is an approved valve for its labeled uses; caval implantation for tricuspid regurgitation in TRICAVAL was investigational and the trial stopped for safety concerns.",
+            "mechanism": "Off-label heterotopic implantation in the inferior vena cava to reduce regurgitant venous backflow.",
+            "materials": [],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02387697",
+                "https://pubmed.ncbi.nlm.nih.gov/31929100/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-heartnet",
+          "label": "Paracor HeartNet",
+          "group": "device",
+          "category": "Epicardial elastic ventricular restraint",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-heartnet",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Epicardial elastic ventricular restraint",
+            "name": "Paracor HeartNet",
+            "company": "co-paracor-medical",
+            "treats": [
+              "cond-hfref"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational epicardial restraint system evaluated in PEERLESS-HF; no current marketing authorization identified.",
+            "mechanism": "Elastic nitinol mesh placed around the ventricles to limit progressive dilation.",
+            "materials": [],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/22633302/",
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC6477619/"
+              ],
+              "notes": "Trial was stopped for futility; the therapy is not tagged retired absent authoritative product-retirement evidence."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-heartmate-3-lvas-kit-106524us",
+          "label": "Affected 11V backup batteries in HeartMate 3 kit 106524US",
+          "group": "device",
+          "category": "Durable LVAS kit / external support equipment",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": true,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-heartmate-3-lvas-kit-106524us",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Durable LVAS kit / external support equipment",
+            "name": "Affected 11V backup batteries in HeartMate 3 kit 106524US",
+            "company": "co-abbott",
+            "treats": [
+              "cond-hfref"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Model-specific kit included in open Class II FDA recall Z-2518-2026; scope does not imply all HeartMate 3 implanted pumps are recalled.",
+            "lifecycleStatus": "recalled",
+            "lifecycleDetail": "FDA recall Z-2518-2026 (posted 2026-06-18; initiated 2026-05-13) applies to specified 11V lithium-ion backup batteries in model 106524US kits, identified by serial number. See FDA record for affected units and current status.",
+            "mechanism": "External kit within the HeartMate 3 LVAS system supporting long-term LV assist therapy.",
+            "materials": [],
+            "links": [
+              {
+                "label": "FDA recall record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfres/res.cfm?id=220518"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfres/res.cfm?id=220518"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-pvl-plug-iii",
+          "label": "Amplatzer Valvular Plug III",
+          "group": "device",
+          "category": "Paravalvular leak plug",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-amplatzer-pvl-plug-iii",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Paravalvular leak plug",
+            "name": "Amplatzer Valvular Plug III",
+            "company": "co-abbott",
+            "treats": [
+              "cond-pvl"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Used for PVL closure in observational registries, generally off-label in the United States; no FDA approval specifically for PVL closure identified.",
+            "mechanism": "Low-profile oval vascular plug deployed across selected paravalvular channels.",
+            "materials": [],
+            "links": [
+              {
+                "label": "KISS multicenter registry",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10863827/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC10863827/",
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC10397666/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tricento",
+          "label": "TRICENTO bicaval valved stent",
+          "group": "device",
+          "category": "Heterotopic bicaval valved stent",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-tricento",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Heterotopic bicaval valved stent",
+            "name": "TRICENTO bicaval valved stent",
+            "company": "co-nvt",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational/custom-made bicaval system reported in a multicenter registry; no FDA authorization identified.",
+            "mechanism": "Custom bicaval valved stent to redirect systolic backflow away from the venae cavae.",
+            "materials": [],
+            "links": [
+              {
+                "label": "Multicenter registry outcomes",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/35236096/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/35236096/",
+                "https://www.acc.org/Latest-in-Cardiology/Articles/2022/10/01/01/42/Cutting-Edge-Structural-Interventions-Transcatheter-Tricuspid-Valve-Replacement-Useful-or-Not"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-accucinch",
+          "label": "AccuCinch Ventricular Restoration System",
+          "group": "device",
+          "category": "Transcatheter LV restoration system",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-accucinch",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Transcatheter LV restoration system",
+            "name": "AccuCinch Ventricular Restoration System",
+            "company": "co-ancora-heart",
+            "treats": [
+              "cond-hfref",
+              "cond-ischemic-lv-remodeling"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "FDA Breakthrough Device Designation; CORCINCH-HF pivotal trial is evaluating the device. Breakthrough designation is not marketing authorization.",
+            "mechanism": "Transcatheter circumferential ventricular cinching intended to reduce LV size and wall stress.",
+            "materials": [],
+            "links": [
+              {
+                "label": "Two-year results announcement",
+                "url": "https://www.ancoraheart.com/press_releases/ancora-heart-inc-reports-two-year-results/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT04331769",
+                "https://www.ancoraheart.com/press_releases/ancora-heart-inc-reports-two-year-results/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-heartmate-ii",
+          "label": "HeartMate II LVAD",
+          "group": "device",
+          "category": "Durable implantable LV assist system",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "timelineDate": "2008-04-21",
+          "entity": {
+            "id": "dev-heartmate-ii",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Durable implantable LV assist system",
+            "name": "HeartMate II LVAD",
+            "company": "co-abbott",
+            "treats": [
+              "cond-hfref"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA PMA P060040 granted 2008-04-21; subsequent label supplements include destination therapy. Current availability may vary; authorization remains present in FDA PMA records.",
+            "mechanism": "Implantable continuous-flow axial LV assist pump.",
+            "materials": [],
+            "links": [
+              {
+                "label": "FDA PMA decision record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P060040"
+              }
+            ],
+            "timeline": {
+              "date": "2008-04-21",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "FDA PMA for bridge to transplantation",
+              "source": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P060040"
+            },
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P060040",
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf6/P060040b.pdf"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-boston-scientific",
           "label": "Boston Scientific",
           "group": "company",
           "isDraft": false,
-          "degree": 2,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
           "pulse": 0,
           "entity": {
             "id": "co-boston-scientific",
@@ -4564,7 +6445,9 @@
           "label": "Abbott",
           "group": "company",
           "isDraft": false,
-          "degree": 10,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 15,
           "pulse": 0,
           "entity": {
             "id": "co-abbott",
@@ -4590,6 +6473,8 @@
           "label": "W. L. Gore & Associates",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -4613,6 +6498,8 @@
           "label": "Lifetech Scientific",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -4634,6 +6521,8 @@
           "label": "Corvia Medical",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 3,
           "entity": {
@@ -4657,6 +6546,8 @@
           "label": "V-Wave",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -4679,7 +6570,9 @@
           "label": "Edwards Lifesciences",
           "group": "company",
           "isDraft": false,
-          "degree": 7,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 8,
           "pulse": 7,
           "entity": {
             "id": "co-edwards",
@@ -4703,6 +6596,8 @@
           "label": "Endotronix",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -4725,6 +6620,8 @@
           "label": "FIRE1",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -4747,6 +6644,8 @@
           "label": "Vectorious Medical Technologies",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -4769,6 +6668,8 @@
           "label": "Shockwave Medical (Johnson & Johnson)",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -4791,6 +6692,8 @@
           "label": "Bristol Myers Squibb",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -4814,6 +6717,8 @@
           "label": "Cytokinetics",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 8,
           "entity": {
@@ -4838,6 +6743,8 @@
           "label": "Pfizer",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -4861,6 +6768,8 @@
           "label": "BridgeBio Pharma",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 5,
           "entity": {
@@ -4885,6 +6794,8 @@
           "label": "Alnylam Pharmaceuticals",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "entity": {
@@ -4908,6 +6819,8 @@
           "label": "AstraZeneca",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "entity": {
@@ -4931,6 +6844,8 @@
           "label": "Boehringer Ingelheim",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -4953,6 +6868,8 @@
           "label": "Novartis",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -4976,6 +6893,8 @@
           "label": "Merck (MSD)",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -4999,6 +6918,8 @@
           "label": "Bayer",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -5022,6 +6943,8 @@
           "label": "Medtronic",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 4,
           "pulse": 7,
           "entity": {
@@ -5046,6 +6969,8 @@
           "label": "JenaValve Technology",
           "group": "company",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 8,
           "entity": {
@@ -5070,6 +6995,8 @@
           "label": "Versa Vascular",
           "group": "company",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 7,
           "entity": {
@@ -5097,6 +7024,8 @@
           "label": "Story Health",
           "group": "company",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -5119,6 +7048,8 @@
           "label": "Hello Heart",
           "group": "company",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -5141,6 +7072,8 @@
           "label": "VahatiCor, Inc.",
           "group": "company",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 3,
           "entity": {
@@ -5169,6 +7102,8 @@
           "label": "Corcym",
           "group": "company",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 4,
           "entity": {
@@ -5196,6 +7131,8 @@
           "label": "Eli Lilly and Company",
           "group": "company",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 1,
           "pulse": 0,
           "entity": {
@@ -5219,10 +7156,245 @@
       },
       {
         "data": {
+          "id": "co-occlutech",
+          "label": "Occlutech",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-occlutech",
+            "type": "company",
+            "name": "Occlutech",
+            "hq": "Jena, Germany",
+            "website": "https://occlutech.com",
+            "description": "Structural heart device maker including a dedicated paravalvular leak closure device.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://occlutech.com"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-neochord",
+          "label": "NeoChord",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-neochord",
+            "type": "company",
+            "name": "NeoChord",
+            "website": "https://www.neochord.com",
+            "description": "Developer of the DS1000 artificial chordae delivery system for mitral valve repair.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://www.neochord.com"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-lsi-solutions",
+          "label": "LSI Solutions",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-lsi-solutions",
+            "type": "company",
+            "name": "LSI Solutions",
+            "website": "https://www.lsisolutions.com",
+            "description": "Developer of the Mi-CHORD surgical chordal replacement system.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230069"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-pf-products",
+          "label": "P+F Products + Features",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-pf-products",
+            "type": "company",
+            "name": "P+F Products + Features",
+            "website": "https://www.pfproducts.com",
+            "description": "Manufacturer of the TricValve transcatheter bicaval valve system.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://www.cms.gov/medicare/coverage/investigational-device-exemption-ide-studies/approved/g240065-nct06137807"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-bioventrix",
+          "label": "BioVentrix",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-bioventrix",
+            "type": "company",
+            "name": "BioVentrix",
+            "website": "https://bioventrix.com",
+            "description": "Developer of the Revivent TC hybrid transcatheter/surgical LV reconstruction system.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02931240"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-acorn-cardiovascular",
+          "label": "Acorn Cardiovascular",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-acorn-cardiovascular",
+            "type": "company",
+            "name": "Acorn Cardiovascular",
+            "description": "Historical developer of the CorCap epicardial cardiac support device.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/17888974/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-paracor-medical",
+          "label": "Paracor Medical",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-paracor-medical",
+            "type": "company",
+            "name": "Paracor Medical",
+            "description": "Historical developer of the HeartNet epicardial ventricular restraint device.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/22633302/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-ancora-heart",
+          "label": "Ancora Heart",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-ancora-heart",
+            "type": "company",
+            "name": "Ancora Heart",
+            "website": "https://www.ancoraheart.com",
+            "description": "Developer of the investigational AccuCinch transcatheter LV restoration system.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://www.ancoraheart.com"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-nvt",
+          "label": "New Valve Technology (NVT)",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-nvt",
+            "type": "company",
+            "name": "New Valve Technology (NVT)",
+            "website": "https://www.nvt-med.com",
+            "description": "Developer of the custom-made TRICENTO bicaval valved stent system.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://eurointervention.pcronline.com/article/first-in-man-implantation-of-the-tricento-transcatheter-heart-valve-for-the-treatment-of-severe-tricuspid-regurgitation"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "trial-protect-af",
           "label": "PROTECT AF",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2005-02-01",
@@ -5243,7 +7415,7 @@
               "cond-af"
             ],
             "therapies": [
-              "dev-watchman-flx"
+              "dev-watchman-original"
             ],
             "enrollment": 707,
             "year": 2014,
@@ -5266,6 +7438,8 @@
           "label": "PREVAIL",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2010-11-01",
@@ -5286,7 +7460,7 @@
               "cond-af"
             ],
             "therapies": [
-              "dev-watchman-flx"
+              "dev-watchman-original"
             ],
             "enrollment": 407,
             "year": 2014,
@@ -5309,6 +7483,8 @@
           "label": "PRAGUE-17",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "timelineDate": "2015-10-13",
@@ -5353,6 +7529,8 @@
           "label": "Amulet IDE",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "timelineDate": "2016-08-24",
@@ -5397,6 +7575,8 @@
           "label": "OPTION",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2019-05-20",
@@ -5440,6 +7620,8 @@
           "label": "CHAMPION-AF",
           "group": "trial",
           "isDraft": false,
+          "isHalted": true,
+          "isRetired": false,
           "degree": 2,
           "pulse": 7,
           "timelineDate": "2020-10-15",
@@ -5448,7 +7630,7 @@
             "type": "trial",
             "name": "CHAMPION-AF",
             "phase": "RCT (LAAC vs DOAC)",
-            "status": "active",
+            "status": "suspended",
             "timeline": {
               "date": "2020-10-15",
               "precision": "day",
@@ -5463,17 +7645,18 @@
               "dev-watchman-flx"
             ],
             "enrollment": 3000,
-            "primaryEndpoint": "Stroke/systemic embolism and bleeding vs first-line DOAC",
-            "outcomeSummary": "Large RCT testing first-line LAA closure vs DOAC in a broad AF population; results pending.",
-            "resultStatus": "ongoing",
+            "primaryEndpoint": "3-year composite of cardiovascular death, stroke, or systemic embolism; non-procedural bleeding",
+            "outcomeSummary": "At 3 years, WATCHMAN FLX was noninferior to NOACs for CV death/stroke/systemic embolism (KM 5.7% vs 4.8%; 81/1,499 vs 65/1,501) and superior for non-procedural bleeding (KM 10.9% vs 19.0%; HR 0.55, 95% CI 0.45–0.67). Five-year follow-up remains ongoing.",
+            "resultStatus": "positive",
             "references": [
-              "https://clinicaltrials.gov/search?term=CHAMPION-AF"
+              "https://clinicaltrials.gov/study/NCT04394546",
+              "https://www.nejm.org/doi/10.1056/NEJMoa2517213"
             ],
             "pulse": 7,
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-22",
-              "notes": "CONFIRMED readout: Watchman FLX met all primary/secondary safety and efficacy endpoints — noninferior to NOACs for CV death/stroke/SE and superior on non-procedural major/clinically-relevant bleeding at 3 years. Presented at ACC.26 and published simultaneously in NEJM 2026-03-28 (DOI 10.1056/NEJMoa2517213). Sources: https://news.bostonscientific.com/2026-03-28-CHAMPION-AF-study-of-the-WATCHMAN-FLX-TM-Left-Atrial-Appendage-Closure-Device-as-a-first-line-therapy-for-stroke-risk-reduction-meets-all-primary-and-secondary-safety-and-efficacy-endpoints ; https://www.nejm.org/doi/10.1056/NEJMoa2517213. Human curator: update status to completed, resultStatus to positive, and rewrite outcomeSummary/year with the trial results."
+              "lastUpdated": "2026-09-28",
+              "notes": "Primary three-year results published 2026-03-28 (NEJM DOI 10.1056/NEJMoa2517213). Registry follow-up continues through five years, so trial status remains active while resultStatus records the positive primary readout. Outcome rates are Kaplan-Meier estimates; event counts and randomized denominators are included."
             }
           }
         }
@@ -5484,6 +7667,8 @@
           "label": "LAmbre II First-in-Man",
           "group": "trial",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 2,
           "timelineDate": "2026-04-01",
@@ -5533,6 +7718,8 @@
           "label": "RESPECT",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2003-08-01",
@@ -5576,6 +7763,8 @@
           "label": "Gore REDUCE",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2008-12-10",
@@ -5619,6 +7808,8 @@
           "label": "CLOSE",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2007-12-01",
@@ -5663,6 +7854,8 @@
           "label": "EXPLORER-HCM",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2018-05-29",
@@ -5707,6 +7900,8 @@
           "label": "VALOR-HCM",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2020-07-06",
@@ -5750,6 +7945,8 @@
           "label": "SEQUOIA-HCM",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2022-02-01",
@@ -5793,6 +7990,8 @@
           "label": "MAPLE-HCM",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2023-06-20",
@@ -5834,6 +8033,8 @@
           "label": "ACACIA-HCM",
           "group": "trial",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 8,
           "timelineDate": "2023-08-30",
@@ -5885,6 +8086,8 @@
           "label": "ATTR-ACT",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2013-12-09",
@@ -5929,6 +8132,8 @@
           "label": "ATTRibute-CM",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2019-03-19",
@@ -5972,6 +8177,8 @@
           "label": "HELIOS-B",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2019-11-26",
@@ -6015,6 +8222,8 @@
           "label": "APOLLO-B",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2019-09-04",
@@ -6058,6 +8267,8 @@
           "label": "PARADIGM-HF",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2009-12-01",
@@ -6102,6 +8313,8 @@
           "label": "DAPA-HF",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2017-02-08",
@@ -6146,6 +8359,8 @@
           "label": "DELIVER",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2018-08-27",
@@ -6189,6 +8404,8 @@
           "label": "EMPEROR-Preserved",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2017-03-02",
@@ -6232,6 +8449,8 @@
           "label": "EMPEROR-Reduced",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2017-03-06",
@@ -6275,6 +8494,8 @@
           "label": "VICTORIA",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2016-09-20",
@@ -6318,6 +8539,8 @@
           "label": "FINEARTS-HF",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2020-09-14",
@@ -6361,6 +8584,8 @@
           "label": "GALACTIC-HF",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2017-01-06",
@@ -6404,6 +8629,8 @@
           "label": "REDUCE LAP-HF I",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2015-12-01",
@@ -6447,6 +8674,8 @@
           "label": "REDUCE LAP-HF II",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2017-06-01",
@@ -6490,6 +8719,8 @@
           "label": "RESPONDER-HF",
           "group": "trial",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 5,
           "timelineDate": "2022-11-17",
@@ -6537,6 +8768,8 @@
           "label": "RELIEVE-HF",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "timelineDate": "2018-09-19",
@@ -6582,6 +8815,8 @@
           "label": "ALT-FLOW II",
           "group": "trial",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 4,
           "timelineDate": "2023-04-01",
@@ -6629,6 +8864,8 @@
           "label": "CHAMPION",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "timelineDate": "2007-09-01",
@@ -6673,6 +8910,8 @@
           "label": "GUIDE-HF",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "timelineDate": "2018-03-15",
@@ -6717,6 +8956,8 @@
           "label": "PROACTIVE-HF",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "timelineDate": "2020-01-10",
@@ -6761,6 +9002,8 @@
           "label": "COSIRA",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2010-09-01",
@@ -6804,6 +9047,8 @@
           "label": "COSIRA-II",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "timelineDate": "2022-01-04",
@@ -6845,6 +9090,8 @@
           "label": "SERRA-I",
           "group": "trial",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 3,
           "timelineDate": "2025-06-18",
@@ -6893,6 +9140,8 @@
           "label": "PARTNER 2A",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 3,
           "timelineDate": "2011-03-01",
@@ -6938,6 +9187,8 @@
           "label": "PARTNER 3",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 8,
           "timelineDate": "2016-03-01",
@@ -6984,6 +9235,8 @@
           "label": "Evolut Low Risk",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 6,
           "timelineDate": "2016-03-01",
@@ -7030,6 +9283,8 @@
           "label": "EARLY TAVR",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 9,
           "timelineDate": "2017-07-12",
@@ -7075,6 +9330,8 @@
           "label": "PROGRESS",
           "group": "trial",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 7,
           "timelineDate": "2021-10-12",
@@ -7130,6 +9387,8 @@
           "label": "SMART",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 6,
           "timelineDate": "2021-04-02",
@@ -7175,6 +9434,8 @@
           "label": "ACURATE IDE",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 6,
           "timelineDate": "2019-06-10",
@@ -7219,6 +9480,8 @@
           "label": "ALIGN-AR",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 8,
           "timelineDate": "2020-05-22",
@@ -7264,6 +9527,8 @@
           "label": "EVEREST II",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 2,
           "timelineDate": "2005-08-01",
@@ -7309,6 +9574,8 @@
           "label": "COAPT",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 6,
           "timelineDate": "2012-08-01",
@@ -7353,6 +9620,8 @@
           "label": "MITRA-FR",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 4,
           "timelineDate": "2013-11-01",
@@ -7397,6 +9666,8 @@
           "label": "CLASP IID",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 5,
           "timelineDate": "2018-11-30",
@@ -7442,6 +9713,8 @@
           "label": "TRILUMINATE Pivotal",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 7,
           "timelineDate": "2019-08-21",
@@ -7486,6 +9759,8 @@
           "label": "TRISCEND II",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 8,
           "timelineDate": "2021-04-09",
@@ -7530,6 +9805,8 @@
           "label": "adapTR First-in-Human Study",
           "group": "trial",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 8,
           "timelineDate": "2024-08-05",
@@ -7588,6 +9865,8 @@
           "label": "SUMMIT",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 6,
           "timelineDate": "2018-06-15",
@@ -7633,6 +9912,8 @@
           "label": "APOLLO",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 4,
           "timelineDate": "2017-10-23",
@@ -7675,6 +9956,8 @@
           "label": "ENCIRCLE",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 6,
           "timelineDate": "2020-11-12",
@@ -7718,6 +10001,8 @@
           "label": "Harmony TPV Pivotal",
           "group": "trial",
           "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 3,
           "timelineDate": "2017-01-01",
@@ -7761,6 +10046,8 @@
           "label": "CLOSURE-AF",
           "group": "trial",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 3,
           "pulse": 0,
           "entity": {
@@ -7802,6 +10089,8 @@
           "label": "LUMINARA",
           "group": "trial",
           "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
           "degree": 2,
           "pulse": 0,
           "entity": {
@@ -7834,9 +10123,680 @@
             }
           }
         }
+      },
+      {
+        "data": {
+          "id": "trial-pld-multicenter",
+          "label": "Occlutech PLD multicenter study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-pld-multicenter",
+            "type": "trial",
+            "name": "Occlutech PLD multicenter study",
+            "phase": "Prospective multicenter single-arm study",
+            "status": "completed",
+            "conditions": [
+              "cond-pvl"
+            ],
+            "therapies": [
+              "dev-occlutech-pvl"
+            ],
+            "enrollment": 144,
+            "year": 2022,
+            "primaryEndpoint": "Procedural closure success and long-term safety/clinical outcomes",
+            "outcomeSummary": "The 112-patient full analysis set reported procedural success of 91.3% for mitral and 90.0% for aortic PVLs; among 80 patients with two-year follow-up, NYHA III/IV fell from 80% to 14.1%.",
+            "resultStatus": "positive",
+            "references": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/"
+            ],
+            "links": [
+              {
+                "label": "Long-term multicenter publication",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-rechord",
+          "label": "ReChord",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-rechord",
+            "type": "trial",
+            "nctId": "NCT02803957",
+            "name": "ReChord",
+            "phase": "Pivotal randomized IDE trial",
+            "status": "active",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-neochord-ds1000"
+            ],
+            "enrollment": 585,
+            "year": 2016,
+            "primaryEndpoint": "Safety and effectiveness of NeoChord DS1000 versus conventional open surgical repair",
+            "outcomeSummary": "ClinicalTrials.gov lists the study as active, not recruiting in its 2026-04-08 update, with estimated enrollment of 585; do not describe it as halted.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT02803957",
+              "https://www.neochord.com/wp-content/uploads/2024/12/RP-602000-001_DS1000_SSCP_Rev_B_FINAL_05Dec2024.docx.pdf"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02803957"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-mi-chord-pilot",
+          "label": "Mi-CHORD safety and feasibility cohort",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-mi-chord-pilot",
+            "type": "trial",
+            "name": "Mi-CHORD safety and feasibility cohort",
+            "phase": "Prospective single-center pilot",
+            "status": "completed",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-mi-chord"
+            ],
+            "enrollment": 12,
+            "year": 2024,
+            "primaryEndpoint": "30-day mortality; implantation time",
+            "outcomeSummary": "FDA De Novo review reports a prospective 12-patient OUS cohort with follow-up completed in January 2023; summary supports De Novo authorization, but this compact record does not infer an unreported effect estimate.",
+            "resultStatus": "positive",
+            "references": [
+              "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tricaval",
+          "label": "TRICAVAL",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": true,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-tricaval",
+            "type": "trial",
+            "nctId": "NCT02387697",
+            "name": "TRICAVAL",
+            "phase": "Randomized phase 2/3",
+            "status": "terminated",
+            "lifecycleStatus": "halted",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-edwards-sapien-xt-caval"
+            ],
+            "enrollment": 28,
+            "year": 2018,
+            "primaryEndpoint": "Efficacy and safety of inferior caval valve implantation for severe secondary tricuspid regurgitation",
+            "outcomeSummary": "Terminated for safety concerns after valve dislodgement/migration events; the safety stop applies to this Edwards Sapien XT IVC study and does not establish that other bicaval systems were halted.",
+            "resultStatus": "terminated",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT02387697",
+              "https://pubmed.ncbi.nlm.nih.gov/31929100/"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02387697",
+                "https://pubmed.ncbi.nlm.nih.gov/31929100/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-alive-revivent",
+          "label": "ALIVE",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-alive-revivent",
+            "type": "trial",
+            "nctId": "NCT02931240",
+            "name": "ALIVE",
+            "phase": "Prospective multicenter nonrandomized 2:1 device versus control",
+            "status": "completed",
+            "conditions": [
+              "cond-ischemic-lv-remodeling",
+              "cond-hfref"
+            ],
+            "therapies": [
+              "dev-revivent-tc"
+            ],
+            "year": 2025,
+            "primaryEndpoint": "12-month hierarchical clinical effectiveness endpoint",
+            "outcomeSummary": "Among 126 patients (84 device, 42 control), 30-day major adverse events occurred in 17.9% of treated patients; LV dimensions decreased, but the primary 12-month hierarchical composite did not differ significantly (win ratio 1.13; P=0.32).",
+            "resultStatus": "mixed",
+            "references": [
+              "https://pubmed.ncbi.nlm.nih.gov/39797846/",
+              "https://clinicaltrials.gov/study/NCT02931240"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/39797846/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-peerless-hf",
+          "label": "PEERLESS-HF",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": true,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-peerless-hf",
+            "type": "trial",
+            "nctId": "NCT00382863",
+            "name": "PEERLESS-HF",
+            "phase": "Randomized controlled trial",
+            "status": "terminated",
+            "lifecycleStatus": "halted",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "dev-heartnet"
+            ],
+            "year": 2012,
+            "primaryEndpoint": "Change in peak oxygen consumption at 6 months",
+            "outcomeSummary": "Trial stopped enrollment after interim futility; ClinicalTrials.gov records termination (follow-up resources unavailable). This is trial status only and does not establish that all epicardial restraint devices were retired.",
+            "resultStatus": "terminated",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT00382863",
+              "https://pubmed.ncbi.nlm.nih.gov/22633302/"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT00382863",
+                "https://pubmed.ncbi.nlm.nih.gov/22633302/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-acorn-corcap",
+          "label": "Acorn randomized trial (five-year no-MVR cohort)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-acorn-corcap",
+            "type": "trial",
+            "name": "Acorn randomized trial (five-year no-MVR cohort)",
+            "phase": "Randomized controlled trial follow-up",
+            "status": "completed",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "dev-corcap"
+            ],
+            "year": 2013,
+            "primaryEndpoint": "Survival, adverse events, cardiac procedures, NYHA class, and echocardiographic remodeling",
+            "outcomeSummary": "The 107-patient no-MVR stratum randomized 57 to CorCap and 50 control; only 50 completed five-year follow-up. At five years survival was similar, while LV end-diastolic volume decreased and more CorCap patients improved by at least one NYHA class.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/",
+              "https://pubmed.ncbi.nlm.nih.gov/21762937/"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/",
+                "https://pubmed.ncbi.nlm.nih.gov/21762937/"
+              ],
+              "notes": "The 107-person five-year no-MVR stratum is the original Acorn RCT follow-up, not NCT00630266 (the separate 50-person confirmatory study)."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-corcinch-hf",
+          "label": "CORCINCH-HF",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": true,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-corcinch-hf",
+            "type": "trial",
+            "nctId": "NCT04331769",
+            "name": "CORCINCH-HF",
+            "phase": "Pivotal randomized trial",
+            "status": "suspended",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "dev-accucinch"
+            ],
+            "enrollment": 400,
+            "year": 2020,
+            "primaryEndpoint": "Six-month safety and efficacy endpoints; 12-month follow-up",
+            "outcomeSummary": "The ClinicalTrials.gov record lists the pivotal study as suspended as of its June 2026 update; this is a study status and does not mean the AccuCinch device was withdrawn. Earlier enrollment milestones and two-year early-study results are separate from pivotal evidence.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT04331769",
+              "https://www.ancoraheart.com/press_releases/ancora-heart-inc-reports-two-year-results/"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT04331769"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tricento-registry",
+          "label": "TRICENTO multicenter registry",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-tricento-registry",
+            "type": "trial",
+            "name": "TRICENTO multicenter registry",
+            "phase": "Retrospective multicenter registry",
+            "status": "completed",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-tricento"
+            ],
+            "enrollment": 21,
+            "year": 2022,
+            "primaryEndpoint": "Procedural and clinical outcomes after custom bicaval valved-stent implantation",
+            "outcomeSummary": "Technical success was 100%; 3 asymptomatic prosthesis fractures were detected; median follow-up was 61 days and overall survival at one year was 76%. Small retrospective series.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://pubmed.ncbi.nlm.nih.gov/35236096/"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/35236096/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-kiss-pvl",
+          "label": "KISS multicenter PVL registry",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-kiss-pvl",
+            "type": "trial",
+            "name": "KISS multicenter PVL registry",
+            "phase": "Retrospective multicenter comparative registry",
+            "status": "completed",
+            "conditions": [
+              "cond-pvl"
+            ],
+            "therapies": [
+              "dev-amplatzer-pvl-plug-iii"
+            ],
+            "enrollment": 335,
+            "year": 2024,
+            "primaryEndpoint": "All-cause death during follow-up",
+            "outcomeSummary": "Transcatheter closure was initial management in 171 patients and surgery in 164; technical success was 78.9% versus 76.2%, and adjusted long-term mortality did not significantly differ. AVP III was used in 140/171 transcatheter cases; outcomes are not device-specific.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://pubmed.ncbi.nlm.nih.gov/38156599/"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/38156599/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-momentum-3",
+          "label": "MOMENTUM 3",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-momentum-3",
+            "type": "trial",
+            "nctId": "NCT02224755",
+            "name": "MOMENTUM 3",
+            "phase": "Pivotal randomized controlled trial",
+            "status": "completed",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "dev-heartmate-3",
+              "dev-heartmate-ii"
+            ],
+            "year": 2022,
+            "primaryEndpoint": "Survival to transplant, recovery, or 24 months of support free of disabling stroke or pump replacement",
+            "outcomeSummary": "Five-year follow-up reported 58.4% survival with HeartMate 3; FDA-approved durable MCS remains an established option for advanced HFrEF.",
+            "resultStatus": "positive",
+            "references": [
+              "https://www.acc.org/latest-in-cardiology/articles/2023/07/25/13/36/sustained-superiority-of-the-heartmate-3-lvad",
+              "https://clinicaltrials.gov/study/NCT02224755"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-09-28",
+              "sources": [
+                "https://www.acc.org/latest-in-cardiology/articles/2023/07/25/13/36/sustained-superiority-of-the-heartmate-3-lvad"
+              ]
+            }
+          }
+        }
       }
     ],
     "edges": [
+      {
+        "data": {
+          "id": "dev-watchman-original__made_by__co-boston-scientific",
+          "source": "dev-watchman-original",
+          "target": "co-boston-scientific",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-watchman-original__treats__cond-af",
+          "source": "dev-watchman-original",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-watchman-flx-2015__made_by__co-boston-scientific",
+          "source": "dev-watchman-flx-2015",
+          "target": "co-boston-scientific",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-watchman-flx-2015__treats__cond-af",
+          "source": "dev-watchman-flx-2015",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-cardiac-plug__treats__cond-af",
+          "source": "dev-amplatzer-cardiac-plug",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-plaato__treats__cond-af",
+          "source": "dev-plaato",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-wavecrest__treats__cond-af",
+          "source": "dev-wavecrest",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-occlutech-laa-original__treats__cond-af",
+          "source": "dev-occlutech-laa-original",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-occlutech-laa-redesigned__treats__cond-af",
+          "source": "dev-occlutech-laa-redesigned",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sideris-patch__treats__cond-af",
+          "source": "dev-sideris-patch",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-prolipsis__treats__cond-af",
+          "source": "dev-prolipsis",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-ultraseal__treats__cond-af",
+          "source": "dev-ultraseal",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-seala__treats__cond-af",
+          "source": "dev-seala",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lefort__treats__cond-af",
+          "source": "dev-lefort",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-pfm-laa__treats__cond-af",
+          "source": "dev-pfm-laa",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lariat__treats__cond-af",
+          "source": "dev-lariat",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sierra__treats__cond-af",
+          "source": "dev-sierra",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-claas__treats__cond-af",
+          "source": "dev-claas",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-omega-laa__treats__cond-af",
+          "source": "dev-omega-laa",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lacbes__treats__cond-af",
+          "source": "dev-lacbes",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-ultraseal-ii__treats__cond-af",
+          "source": "dev-ultraseal-ii",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardioblate-closure__treats__cond-af",
+          "source": "dev-cardioblate-closure",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-atriclip__treats__cond-af",
+          "source": "dev-atriclip",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amulet-360__made_by__co-abbott",
+          "source": "dev-amulet-360",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amulet-360__treats__cond-af",
+          "source": "dev-amulet-360",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-laminar-laa__treats__cond-af",
+          "source": "dev-laminar-laa",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
       {
         "data": {
           "id": "dev-watchman-flx__made_by__co-boston-scientific",
@@ -8839,9 +11799,249 @@
       },
       {
         "data": {
-          "id": "trial-protect-af__evaluates__dev-watchman-flx",
+          "id": "dev-occlutech-pvl__made_by__co-occlutech",
+          "source": "dev-occlutech-pvl",
+          "target": "co-occlutech",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-occlutech-pvl__treats__cond-pvl",
+          "source": "dev-occlutech-pvl",
+          "target": "cond-pvl",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-neochord-ds1000__made_by__co-neochord",
+          "source": "dev-neochord-ds1000",
+          "target": "co-neochord",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-neochord-ds1000__treats__cond-mr",
+          "source": "dev-neochord-ds1000",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mi-chord__made_by__co-lsi-solutions",
+          "source": "dev-mi-chord",
+          "target": "co-lsi-solutions",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mi-chord__treats__cond-mr",
+          "source": "dev-mi-chord",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tricvalve__made_by__co-pf-products",
+          "source": "dev-tricvalve",
+          "target": "co-pf-products",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tricvalve__treats__cond-tr",
+          "source": "dev-tricvalve",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-revivent-tc__made_by__co-bioventrix",
+          "source": "dev-revivent-tc",
+          "target": "co-bioventrix",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-revivent-tc__treats__cond-ischemic-lv-remodeling",
+          "source": "dev-revivent-tc",
+          "target": "cond-ischemic-lv-remodeling",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-revivent-tc__treats__cond-hfref",
+          "source": "dev-revivent-tc",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-corcap__made_by__co-acorn-cardiovascular",
+          "source": "dev-corcap",
+          "target": "co-acorn-cardiovascular",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-corcap__treats__cond-hfref",
+          "source": "dev-corcap",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-heartmate-3__made_by__co-abbott",
+          "source": "dev-heartmate-3",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-heartmate-3__treats__cond-hfref",
+          "source": "dev-heartmate-3",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-edwards-sapien-xt-caval__made_by__co-edwards",
+          "source": "dev-edwards-sapien-xt-caval",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-edwards-sapien-xt-caval__treats__cond-tr",
+          "source": "dev-edwards-sapien-xt-caval",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-heartnet__made_by__co-paracor-medical",
+          "source": "dev-heartnet",
+          "target": "co-paracor-medical",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-heartnet__treats__cond-hfref",
+          "source": "dev-heartnet",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-heartmate-3-lvas-kit-106524us__made_by__co-abbott",
+          "source": "dev-heartmate-3-lvas-kit-106524us",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-heartmate-3-lvas-kit-106524us__treats__cond-hfref",
+          "source": "dev-heartmate-3-lvas-kit-106524us",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-pvl-plug-iii__made_by__co-abbott",
+          "source": "dev-amplatzer-pvl-plug-iii",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amplatzer-pvl-plug-iii__treats__cond-pvl",
+          "source": "dev-amplatzer-pvl-plug-iii",
+          "target": "cond-pvl",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tricento__made_by__co-nvt",
+          "source": "dev-tricento",
+          "target": "co-nvt",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tricento__treats__cond-tr",
+          "source": "dev-tricento",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-accucinch__made_by__co-ancora-heart",
+          "source": "dev-accucinch",
+          "target": "co-ancora-heart",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-accucinch__treats__cond-hfref",
+          "source": "dev-accucinch",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-accucinch__treats__cond-ischemic-lv-remodeling",
+          "source": "dev-accucinch",
+          "target": "cond-ischemic-lv-remodeling",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-heartmate-ii__made_by__co-abbott",
+          "source": "dev-heartmate-ii",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-heartmate-ii__treats__cond-hfref",
+          "source": "dev-heartmate-ii",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-protect-af__evaluates__dev-watchman-original",
           "source": "trial-protect-af",
-          "target": "dev-watchman-flx",
+          "target": "dev-watchman-original",
           "relationship": "evaluates"
         }
       },
@@ -8855,9 +12055,9 @@
       },
       {
         "data": {
-          "id": "trial-prevail__evaluates__dev-watchman-flx",
+          "id": "trial-prevail__evaluates__dev-watchman-original",
           "source": "trial-prevail",
-          "target": "dev-watchman-flx",
+          "target": "dev-watchman-original",
           "relationship": "evaluates"
         }
       },
@@ -9889,6 +13089,198 @@
         "data": {
           "id": "trial-luminara__studies__cond-hfref",
           "source": "trial-luminara",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-pld-multicenter__evaluates__dev-occlutech-pvl",
+          "source": "trial-pld-multicenter",
+          "target": "dev-occlutech-pvl",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-pld-multicenter__studies__cond-pvl",
+          "source": "trial-pld-multicenter",
+          "target": "cond-pvl",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-rechord__evaluates__dev-neochord-ds1000",
+          "source": "trial-rechord",
+          "target": "dev-neochord-ds1000",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-rechord__studies__cond-mr",
+          "source": "trial-rechord",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-mi-chord-pilot__evaluates__dev-mi-chord",
+          "source": "trial-mi-chord-pilot",
+          "target": "dev-mi-chord",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-mi-chord-pilot__studies__cond-mr",
+          "source": "trial-mi-chord-pilot",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tricaval__evaluates__dev-edwards-sapien-xt-caval",
+          "source": "trial-tricaval",
+          "target": "dev-edwards-sapien-xt-caval",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tricaval__studies__cond-tr",
+          "source": "trial-tricaval",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-alive-revivent__evaluates__dev-revivent-tc",
+          "source": "trial-alive-revivent",
+          "target": "dev-revivent-tc",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-alive-revivent__studies__cond-ischemic-lv-remodeling",
+          "source": "trial-alive-revivent",
+          "target": "cond-ischemic-lv-remodeling",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-alive-revivent__studies__cond-hfref",
+          "source": "trial-alive-revivent",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-peerless-hf__evaluates__dev-heartnet",
+          "source": "trial-peerless-hf",
+          "target": "dev-heartnet",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-peerless-hf__studies__cond-hfref",
+          "source": "trial-peerless-hf",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-acorn-corcap__evaluates__dev-corcap",
+          "source": "trial-acorn-corcap",
+          "target": "dev-corcap",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-acorn-corcap__studies__cond-hfref",
+          "source": "trial-acorn-corcap",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-corcinch-hf__evaluates__dev-accucinch",
+          "source": "trial-corcinch-hf",
+          "target": "dev-accucinch",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-corcinch-hf__studies__cond-hfref",
+          "source": "trial-corcinch-hf",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tricento-registry__evaluates__dev-tricento",
+          "source": "trial-tricento-registry",
+          "target": "dev-tricento",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tricento-registry__studies__cond-tr",
+          "source": "trial-tricento-registry",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-kiss-pvl__evaluates__dev-amplatzer-pvl-plug-iii",
+          "source": "trial-kiss-pvl",
+          "target": "dev-amplatzer-pvl-plug-iii",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-kiss-pvl__studies__cond-pvl",
+          "source": "trial-kiss-pvl",
+          "target": "cond-pvl",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-momentum-3__evaluates__dev-heartmate-3",
+          "source": "trial-momentum-3",
+          "target": "dev-heartmate-3",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-momentum-3__evaluates__dev-heartmate-ii",
+          "source": "trial-momentum-3",
+          "target": "dev-heartmate-ii",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-momentum-3__studies__cond-hfref",
+          "source": "trial-momentum-3",
           "target": "cond-hfref",
           "relationship": "studies"
         }

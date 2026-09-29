@@ -16,6 +16,7 @@ export interface NewsWorkspaceProps {
   atlasTopics: ReadonlySet<string>
   newsFrom: string
   newsTo: string
+  searchQuery: string
 }
 
 interface FamilyTrail {
@@ -53,6 +54,15 @@ function relatedStories(item: NewsItem, stories: NewsItem[], nodesById: Map<stri
     const score = sharedNodes.length * 4 + deviceLinks * 3 + sharedTopics.length
     return score ? [{ item: candidate, sharedNodes, sharedTopics, score }] : []
   }).sort((a, b) => b.score - a.score || b.item.publishedAt.localeCompare(a.item.publishedAt)).slice(0, 2)
+}
+
+function lifecycleTag(item: NewsItem): 'Halted' | 'Retired' | 'Recalled' | undefined {
+  switch (item.lifecycleStatus) {
+    case 'halted': return 'Halted'
+    case 'retired': return 'Retired'
+    case 'recalled': return 'Recalled'
+    default: return undefined
+  }
 }
 
 function ConnectionPanel({
@@ -114,18 +124,20 @@ function ConnectionPanel({
 }
 
 export default function NewsWorkspace({
-  data, legacyNews, nodesById, versionId, onOpenAtlas, onOpenAtlasTopic, onOpenData, atlasTopics, newsFrom, newsTo,
+  data, legacyNews, nodesById, versionId, onOpenAtlas, onOpenAtlasTopic, onOpenData, atlasTopics, newsFrom, newsTo, searchQuery,
 }: NewsWorkspaceProps) {
   const [visibleCount, setVisibleCount] = useState(12)
   const stories = useMemo(() => legacyNews.filter((item) => {
     if (newsFrom && item.publishedAt < newsFrom) return false
     if (newsTo && !isOnOrBefore(item.publishedAt, newsTo)) return false
+    const q = searchQuery.trim().toLowerCase()
+    if (q && ![item.title, item.summary, item.sourceName, item.publishedAt, ...item.topicTags].join(' ').toLowerCase().includes(q)) return false
     if (!versionId) return true
     return familyTrails(data, item).some(({ versions }) => versions.some((version) => version.id === versionId))
       || item.relevantNodeIds.includes(versionId)
-  }).slice().sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || a.title.localeCompare(b.title)), [legacyNews, data, versionId, newsFrom, newsTo])
+  }).slice().sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || a.title.localeCompare(b.title)), [legacyNews, data, versionId, newsFrom, newsTo, searchQuery])
 
-  useEffect(() => setVisibleCount(12), [versionId, newsFrom, newsTo])
+  useEffect(() => setVisibleCount(12), [versionId, newsFrom, newsTo, searchQuery])
 
   function revealStory(id: string) {
     setVisibleCount(stories.length)
@@ -147,10 +159,11 @@ export default function NewsWorkspace({
           const exactVersion = data.versions.find((version) => item.relevantNodeIds.includes(version.id))
           const trailVersions = trails.flatMap((trail) => trail.versions)
           const primaryVersion = exactVersion ?? trailVersions[trailVersions.length - 1]
+          const lifecycle = lifecycleTag(item)
           return <article className="intel-news-story" id={`story-${item.id}`} key={item.id}>
             <time className="intel-news-date" dateTime={item.publishedAt}>{formatEvidenceDate(item.publishedAt)}</time>
             <div className="intel-news-story-body">
-              <div className="intel-news-story-meta"><span>{item.topicTags[0] ?? 'Structural heart'}</span><span>{item.sourceName}</span></div>
+              <div className="intel-news-story-meta"><span>{item.topicTags[0] ?? 'Structural heart'}</span><span>{item.sourceName}</span>{lifecycle && <span className="intel-lifecycle-tag">{lifecycle}</span>}</div>
               <h3>{item.title}</h3>
               <p className="intel-news-brief">{item.summary}</p>
               <div className="intel-news-source-row">

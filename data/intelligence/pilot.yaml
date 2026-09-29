@@ -1,6 +1,6 @@
 # Human-review pilot. Authored from the source register below; no clinical claim is marked reviewed.
 schemaVersion: 1
-updatedAt: '2026-09-22'
+updatedAt: '2026-09-27'
 coverage:
   title: Evidence pilot
   description: Draft, source-linked records for review. Not a complete label, IFU, or safety inventory.
@@ -164,6 +164,50 @@ sources:
     publishedAt:
       value: '2021-10-15'
       precision: day
+  - id: src-champion-af-nejm
+    title: Left Atrial Appendage Closure or Anticoagulation for Atrial Fibrillation (CHAMPION-AF)
+    url: https://www.nejm.org/doi/10.1056/NEJMoa2517213
+    kind: publication
+    publisher: New England Journal of Medicine
+    retrievedAt: '2026-09-28'
+    access: public
+    publishedAt: { value: '2026-03-28', precision: day }
+    identifier: doi:10.1056/NEJMoa2517213
+  - id: src-watchman-flx-pas
+    title: WATCHMAN FLX LAA Closure Device with Delivery System Real-World Use Post-Approval Study
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6406&t_id=683187
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: '2026-09-28'
+    access: public
+    identifier: P130013/PAS
+  - id: src-swiss-apero-3y
+    title: '3-Year Clinical Outcomes Comparing the Amulet vs Watchman FLX: SWISS-APERO Randomized Clinical Trial'
+    url: https://www.jacc.org/doi/10.1016/j.jacc.2025.03.535
+    kind: publication
+    publisher: Journal of the American College of Cardiology
+    retrievedAt: '2026-09-28'
+    access: public
+    publishedAt: { value: '2025-07-08', precision: day }
+    identifier: PMID 40602941; doi:10.1016/j.jacc.2025.03.535
+  - id: src-veritas-amulet-360
+    title: 'Early Outcomes With a Next-Generation Dual-Seal Left Atrial Appendage Occluder: Results From the VERITAS Study'
+    url: https://www.sciencedirect.com/science/article/pii/S2405500X26000289
+    kind: publication
+    publisher: 'JACC: Clinical Electrophysiology'
+    retrievedAt: '2026-09-28'
+    access: public
+    publishedAt: { value: '2026-02-06', precision: day }
+    identifier: doi:10.1016/j.jacep.2026.01.021
+  - id: src-atriclip-exclude
+    title: 'Exclusion of the left atrial appendage with a novel device: early results of a multicenter trial'
+    url: https://pubmed.ncbi.nlm.nih.gov/21906756/
+    kind: publication
+    publisher: The Journal of Thoracic and Cardiovascular Surgery
+    retrievedAt: '2026-09-28'
+    access: public
+    publishedAt: { value: '2011-09-08', precision: day }
+    identifier: PMID 21906756; doi:10.1016/j.jtcvs.2011.07.052
 families:
   - id: family-sapien
     name: SAPIEN
@@ -194,6 +238,8 @@ families:
     manufacturer: Boston Scientific
     entityIds:
       - dev-watchman-flx
+      - dev-watchman-original
+      - dev-watchman-flx-2015
     conditionIds:
       - cond-af
     description: Track implant generations, post-implant drug regimens, and post-ablation eligibility separately.
@@ -243,7 +289,7 @@ versions:
     summary: Original model identity retained across the 2015 and 2016 indication records.
     sourceRefs:
       - sourceId: src-sapien-original
-        locator: Device and approval-order fields
+        locator: 'Device and approval-order fields'
     reviewStatus: draft
     model: 9600TFX
   - id: ver-sapien-ultra-resilia
@@ -254,7 +300,7 @@ versions:
     summary: A separately named product in S141. The short decision record alone is not a detailed design disclosure.
     sourceRefs:
       - sourceId: src-sapien-s141
-        locator: Device, supplement reason and approval-order statement
+        locator: 'Device, supplement reason and approval-order statement'
     reviewStatus: draft
   - id: ver-evolut-fx
     familyId: family-evolut
@@ -264,7 +310,7 @@ versions:
     summary: A configuration described in the redo-TAVR SSED.
     sourceRefs:
       - sourceId: src-evolut-ssed
-        locator: Section V, device description
+        locator: 'Section V, device description'
     reviewStatus: draft
   - id: ver-evolut-fx-plus
     familyId: family-evolut
@@ -274,7 +320,7 @@ versions:
     summary: The expanded frame windows are identified separately from the redo-TAVR indication.
     sourceRefs:
       - sourceId: src-evolut-ssed
-        locator: Section V, page 3
+        locator: 'Section V, page 3'
     reviewStatus: draft
   - id: ver-mitraclip-nt
     familyId: family-mitraclip
@@ -284,7 +330,7 @@ versions:
     summary: Named in the secondary-MR approval.
     sourceRefs:
       - sourceId: src-mitraclip-s028
-        locator: Device field
+        locator: 'Device field'
     reviewStatus: draft
   - id: ver-mitraclip-ntr-xtr
     familyId: family-mitraclip
@@ -294,27 +340,29 @@ versions:
     summary: A model group as named in S028; individual size configurations still need extraction.
     sourceRefs:
       - sourceId: src-mitraclip-s028
-        locator: Device field
+        locator: 'Device field'
     reviewStatus: draft
   - id: ver-watchman-flx
     familyId: family-watchman
+    graphEntityId: dev-watchman-flx
     name: WATCHMAN FLX
     kind: device
     clinicalRole: treats
     summary: The same named implant appears in distinct regimen and indication decisions.
     sourceRefs:
       - sourceId: src-watchman-s043
-        locator: Device field
+        locator: 'Device field'
     reviewStatus: draft
   - id: ver-watchman-flx-pro
     familyId: family-watchman
+    graphEntityId: dev-watchman-flx
     name: WATCHMAN FLX Pro
     kind: device
     clinicalRole: treats
     summary: Named in the 2025 post-ablation indication decision.
     sourceRefs:
       - sourceId: src-watchman-s074
-        locator: Approval-order statement
+        locator: 'Approval-order statement'
     reviewStatus: draft
   - id: ver-triclip-g4
     familyId: family-triclip
@@ -324,7 +372,7 @@ versions:
     summary: The labeled system is tracked separately from unresolved trial-generation attribution.
     sourceRefs:
       - sourceId: src-triclip-ssed
-        locator: Device description
+        locator: 'Device description'
     reviewStatus: draft
   - id: ver-feops-141
     familyId: family-feops
@@ -334,7 +382,7 @@ versions:
     summary: Prior build identified in the later submission comparison table.
     sourceRefs:
       - sourceId: src-feops
-        locator: 510(k) summary, technological comparison, pages 3–4
+        locator: '510(k) summary, technological comparison, pages 3–4'
     reviewStatus: draft
     digitalSubtype: planning
     softwareVersion: 1.4.1
@@ -346,7 +394,7 @@ versions:
     summary: LAA planning build evaluated in K214066.
     sourceRefs:
       - sourceId: src-feops
-        locator: 510(k) summary, technological comparison, page 4
+        locator: '510(k) summary, technological comparison, page 4'
     reviewStatus: draft
     digitalSubtype: planning
     softwareVersion: 1.4.2
@@ -358,7 +406,7 @@ versions:
     summary: TAVR planning software with a documented regulatory predicate.
     sourceRefs:
       - sourceId: src-dasi
-        locator: Indications-for-use form, page 3 of PDF
+        locator: 'Indications-for-use form, page 3 of PDF'
     reviewStatus: draft
     digitalSubtype: planning
     softwareVersion: '1.1'
@@ -381,7 +429,7 @@ versions:
     summary: Historical observational program, not a current software release.
     sourceRefs:
       - sourceId: src-hello
-        locator: Methods
+        locator: 'Methods'
     reviewStatus: draft
     digitalSubtype: care_delivery
 claims:
@@ -397,7 +445,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-sapien-original
-        locator: Device and approval-order fields
+        locator: 'Device and approval-order fields'
     reviewStatus: draft
   - id: claim-sapien-3-family
     versionId: ver-sapien-3
@@ -411,7 +459,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-sapien-original
-        locator: Device and approval-order fields
+        locator: 'Device and approval-order fields'
     reviewStatus: draft
   - id: claim-sapien-3-version
     versionId: ver-sapien-3
@@ -425,7 +473,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-sapien-original
-        locator: Device and approval-order fields
+        locator: 'Device and approval-order fields'
     reviewStatus: draft
   - id: claim-sapien-ultra-manufacturer
     versionId: ver-sapien-ultra-resilia
@@ -439,7 +487,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-sapien-s141
-        locator: Device, supplement reason and approval-order statement
+        locator: 'Device, supplement reason and approval-order statement'
     reviewStatus: draft
   - id: claim-sapien-ultra-family
     versionId: ver-sapien-ultra-resilia
@@ -453,7 +501,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-sapien-s141
-        locator: Device, supplement reason and approval-order statement
+        locator: 'Device, supplement reason and approval-order statement'
     reviewStatus: draft
   - id: claim-sapien-ultra-version
     versionId: ver-sapien-ultra-resilia
@@ -467,7 +515,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-sapien-s141
-        locator: Device, supplement reason and approval-order statement
+        locator: 'Device, supplement reason and approval-order statement'
     reviewStatus: draft
   - id: claim-evolut-fx-manufacturer
     versionId: ver-evolut-fx
@@ -481,7 +529,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-evolut-ssed
-        locator: Section V, device description
+        locator: 'Section V, device description'
     reviewStatus: draft
   - id: claim-evolut-fx-family
     versionId: ver-evolut-fx
@@ -495,7 +543,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-evolut-ssed
-        locator: Section V, device description
+        locator: 'Section V, device description'
     reviewStatus: draft
   - id: claim-evolut-fx-version
     versionId: ver-evolut-fx
@@ -509,7 +557,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-evolut-ssed
-        locator: Section V, device description
+        locator: 'Section V, device description'
     reviewStatus: draft
   - id: claim-evolut-fx-plus-manufacturer
     versionId: ver-evolut-fx-plus
@@ -523,7 +571,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-evolut-ssed
-        locator: Section V, device description
+        locator: 'Section V, device description'
     reviewStatus: draft
   - id: claim-evolut-fx-plus-family
     versionId: ver-evolut-fx-plus
@@ -537,7 +585,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-evolut-ssed
-        locator: Section V, page 3
+        locator: 'Section V, page 3'
     reviewStatus: draft
   - id: claim-evolut-fx-plus-version
     versionId: ver-evolut-fx-plus
@@ -551,7 +599,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-evolut-ssed
-        locator: Section V, page 3
+        locator: 'Section V, page 3'
     reviewStatus: draft
   - id: claim-sapien-3-frame
     versionId: ver-sapien-3
@@ -565,7 +613,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-sapien-ssed
-        locator: Section V, page 2
+        locator: 'Section V, page 2'
     reviewStatus: draft
     context: 'Original claim combined frame material with expansion mechanism; this normalized row retains only the frame material.'
   - id: claim-sapien-3-expansion
@@ -580,7 +628,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-sapien-ssed
-        locator: Section V, page 2
+        locator: 'Section V, page 2'
     reviewStatus: draft
     context: 'Original claim combined this expansion mechanism with frame material; this normalized row retains only expansion mechanism.'
   - id: claim-sapien-3-leaflets
@@ -595,7 +643,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-sapien-ssed
-        locator: Section V, page 2
+        locator: 'Section V, page 2'
     reviewStatus: draft
   - id: claim-sapien-3-skirt
     versionId: ver-sapien-3
@@ -609,7 +657,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-sapien-ssed
-        locator: Section V, page 2
+        locator: 'Section V, page 2'
     reviewStatus: draft
   - id: claim-sapien-3-design-question
     versionId: ver-sapien-3
@@ -635,7 +683,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-sapien-ssed
-        locator: Selected public SSED; numerical stress extraction pending
+        locator: 'Selected public SSED; numerical stress extraction pending'
     reviewStatus: draft
     unit: MPa
     context: Model, tissue law, hydration, crimp conditions and mesh validation must accompany any future value.
@@ -649,7 +697,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-sapien-s141
-        locator: Short public decision record
+        locator: 'Short public decision record'
     reviewStatus: draft
     limitation: >-
       This record names the product change; it does not disclose a full specification. Other labeling still
@@ -666,7 +714,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-evolut-ssed
-        locator: Section V, device description
+        locator: 'Section V, device description'
     reviewStatus: draft
     context: 'The cited SSED describes the Nitinol frame; this normalized row captures its material only.'
   - id: claim-evolut-fx-expansion
@@ -681,7 +729,7 @@ claims:
     observedAt: '2026-09-22'
     sourceRefs:
       - sourceId: src-evolut-ifu
-        locator: Evolut FX IFU, Section 1.1, PDF page 32
+        locator: 'Evolut FX IFU, Section 1.1, PDF page 32'
     reviewStatus: draft
     context: The Evolut FX device description explicitly calls its nitinol frame self-expanding.
   - id: claim-evolut-fx-plus-expansion
@@ -696,7 +744,7 @@ claims:
     observedAt: '2026-09-22'
     sourceRefs:
       - sourceId: src-evolut-ifu
-        locator: Evolut FX+ IFU, Section 1.1, PDF page 60
+        locator: 'Evolut FX+ IFU, Section 1.1, PDF page 60'
     reviewStatus: draft
     context: The Evolut FX+ device description separately calls its nitinol frame self-expanding.
   - id: claim-evolut-fx-leaflets
@@ -711,7 +759,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-evolut-ssed
-        locator: Section V, device description
+        locator: 'Section V, device description'
     reviewStatus: draft
     context: 'Source wording: “porcine pericardial tissue”; this normalized row captures leaflet material only.'
   - id: claim-evolut-fx-markers
@@ -741,7 +789,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-evolut-ssed
-        locator: Section V, page 3
+        locator: 'Section V, page 3'
     reviewStatus: draft
     context: Intended to facilitate coronary access after implantation; not a quantified clinical access advantage.
   - id: claim-evolut-fx-plus-design-question
@@ -769,7 +817,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-mitraclip-s028
-        locator: Approval-order statement
+        locator: 'Approval-order statement'
     reviewStatus: draft
     context: US historical 2019 authorization; see dated indication record and full label.
   - id: claim-mitraclip-ntr-xtr-fit
@@ -783,7 +831,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-mitraclip-s028
-        locator: Approval-order statement
+        locator: 'Approval-order statement'
     reviewStatus: draft
     context: US historical 2019 authorization; see dated indication record and full label.
   - id: claim-watchman-flx-regimen
@@ -797,7 +845,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-watchman-s043
-        locator: Approval-order statement
+        locator: 'Approval-order statement'
     reviewStatus: draft
     context: US labeling decision, 2022; not a new hardware generation.
   - id: claim-triclip-g4-materials
@@ -850,7 +898,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-feops
-        locator: 510(k) summary, intended use
+        locator: '510(k) summary, intended use'
     reviewStatus: draft
   - id: claim-feops-heartguide-boundary
     versionId: ver-feops-heartguide
@@ -863,7 +911,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-feops
-        locator: 510(k) summary, description and intended use
+        locator: '510(k) summary, description and intended use'
     reviewStatus: draft
   - id: claim-feops-heartguide-library
     versionId: ver-feops-heartguide
@@ -876,7 +924,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-feops
-        locator: Technological comparison, page 4
+        locator: 'Technological comparison, page 4'
     reviewStatus: draft
     context: K214066 build 1.4.2 scope only.
   - id: claim-feops-heartguide-exposure
@@ -890,7 +938,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-feops
-        locator: Description and functioning
+        locator: 'Description and functioning'
     reviewStatus: draft
     limitation: A planning report is not a therapeutic dose. Routine adoption and report turnaround are not extracted.
   - id: claim-feops-heartguide-clinical-attribution
@@ -917,7 +965,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-dasi
-        locator: Summary, device description
+        locator: 'Summary, device description'
     reviewStatus: draft
   - id: claim-dasi-11-boundary
     versionId: ver-dasi-11
@@ -930,7 +978,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-dasi
-        locator: Summary, device description and intended use
+        locator: 'Summary, device description and intended use'
     reviewStatus: draft
   - id: claim-dasi-11-validation
     versionId: ver-dasi-11
@@ -943,7 +991,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-dasi
-        locator: Testing summary, page 3 of summary
+        locator: 'Testing summary, page 3 of summary'
     reviewStatus: draft
     unit: patients
     context: Comparison with post-TAVR CT; not a randomized therapeutic-benefit trial.
@@ -971,7 +1019,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-vital
-        locator: Methods
+        locator: 'Methods'
     reviewStatus: draft
     limitation: Requested reporting is not measured adherence or delivered treatment dose.
   - id: claim-story-vital-build
@@ -1011,7 +1059,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-hello
-        locator: Methods
+        locator: 'Methods'
     reviewStatus: draft
   - id: claim-hello-cohort-causality
     versionId: ver-hello-cohort
@@ -1024,7 +1072,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-hello
-        locator: Study design
+        locator: 'Study design'
     reviewStatus: draft
     limitation: Engagement and blood-pressure associations cannot establish causal valve or heart-failure benefit.
   - id: claim-hello-cohort-build
@@ -1037,7 +1085,7 @@ claims:
     observedAt: '2026-09-20'
     sourceRefs:
       - sourceId: src-hello
-        locator: Study methods; release mapping pending
+        locator: 'Study methods; release mapping pending'
     reviewStatus: draft
 decisions:
   - id: decision-sapien-original
@@ -1054,7 +1102,7 @@ decisions:
     summary: Initial high-or-greater-risk native calcific AS authorization.
     sourceRefs:
       - sourceId: src-sapien-original
-        locator: Decision and approval-order statement
+        locator: 'Decision and approval-order statement'
     reviewStatus: draft
   - id: decision-sapien-s010
     identifier: P140031/S010
@@ -1070,7 +1118,7 @@ decisions:
     summary: Intermediate surgical risk added.
     sourceRefs:
       - sourceId: src-sapien-s010
-        locator: Decision and approval-order statement
+        locator: 'Decision and approval-order statement'
     reviewStatus: draft
   - id: decision-sapien-s141
     identifier: P140031/S141
@@ -1086,7 +1134,7 @@ decisions:
     summary: SAPIEN 3 Ultra RESILIA product change.
     sourceRefs:
       - sourceId: src-sapien-s141
-        locator: Decision and approval-order statement
+        locator: 'Decision and approval-order statement'
     reviewStatus: draft
   - id: decision-mitraclip-s028
     identifier: P100009/S028
@@ -1103,7 +1151,7 @@ decisions:
     summary: Secondary MR indication added for the named model groups.
     sourceRefs:
       - sourceId: src-mitraclip-s028
-        locator: Decision and approval-order statement
+        locator: 'Decision and approval-order statement'
     reviewStatus: draft
   - id: decision-watchman-s043
     identifier: P130013/S043
@@ -1119,7 +1167,7 @@ decisions:
     summary: Alternative DAPT regimen; original WATCHMAN also named outside the pilot versions.
     sourceRefs:
       - sourceId: src-watchman-s043
-        locator: Decision and approval-order statement
+        locator: 'Decision and approval-order statement'
     reviewStatus: draft
   - id: decision-watchman-s074
     identifier: P130013/S074
@@ -1136,7 +1184,7 @@ decisions:
     summary: Post-ablation indication added for the named FLX models.
     sourceRefs:
       - sourceId: src-watchman-s074
-        locator: Decision and approval-order statement
+        locator: 'Decision and approval-order statement'
     reviewStatus: draft
   - id: decision-evolut-s174
     identifier: P130021/S174
@@ -1155,7 +1203,7 @@ decisions:
       versions.
     sourceRefs:
       - sourceId: src-evolut-order
-        locator: Decision and approval-order statement
+        locator: 'Decision and approval-order statement'
     reviewStatus: draft
   - id: decision-feops
     identifier: K214066
@@ -1171,7 +1219,7 @@ decisions:
     summary: LAA simulation library extended in build 1.4.2.
     sourceRefs:
       - sourceId: src-feops
-        locator: Decision and approval-order statement
+        locator: 'Decision and approval-order statement'
     reviewStatus: draft
   - id: decision-dasi
     identifier: K223809
@@ -1187,7 +1235,7 @@ decisions:
     summary: PrecisionTAVI 1.1 cleared for procedural planning.
     sourceRefs:
       - sourceId: src-dasi
-        locator: Decision and approval-order statement
+        locator: 'Decision and approval-order statement'
     reviewStatus: draft
 indications:
   - id: ifu-sapien-2015
@@ -1203,7 +1251,7 @@ indications:
     population: Heart-team assessed high or greater surgical risk
     sourceRefs:
       - sourceId: src-sapien-original
-        locator: Indications / approval-order statement
+        locator: 'Indications / approval-order statement'
     reviewStatus: draft
     anatomy: Native aortic valve
   - id: ifu-sapien-2016
@@ -1219,7 +1267,7 @@ indications:
     population: Heart-team assessed intermediate or greater surgical risk
     sourceRefs:
       - sourceId: src-sapien-s010
-        locator: Indications / approval-order statement
+        locator: 'Indications / approval-order statement'
     reviewStatus: draft
     anatomy: Native aortic valve
     supersedesId: ifu-sapien-2015
@@ -1242,7 +1290,7 @@ indications:
     population: Symptomatic moderate-to-severe or severe secondary MR
     sourceRefs:
       - sourceId: src-mitraclip-s028
-        locator: Indications / approval-order statement
+        locator: 'Indications / approval-order statement'
     reviewStatus: draft
     anatomy: Mitral valve
     restrictions: LVEF 20–50%; LVESD ≤70 mm; experienced multidisciplinary heart-team assessment.
@@ -1262,7 +1310,7 @@ indications:
     population: Selected non-valvular AF patients following ablation
     sourceRefs:
       - sourceId: src-watchman-s074
-        locator: Indications / approval-order statement
+        locator: 'Indications / approval-order statement'
     reviewStatus: draft
     anatomy: Left atrial appendage
     restrictions: Concomitant or sequential use is described. This paraphrase is not the complete IFU.
@@ -1282,7 +1330,7 @@ indications:
     population: Symptomatic bioprosthetic valve failure; heart-team risk assessment
     sourceRefs:
       - sourceId: src-evolut-order
-        locator: Indications / approval-order statement
+        locator: 'Indications / approval-order statement'
     reviewStatus: draft
     anatomy: Aortic bioprosthesis
     restrictions: Order specifies predicted surgical mortality ≥8% at 30 days plus clinical comorbidity assessment.
@@ -1299,7 +1347,7 @@ indications:
     population: Qualified clinicians planning LAA occlusion
     sourceRefs:
       - sourceId: src-feops
-        locator: Indications / approval-order statement
+        locator: 'Indications / approval-order statement'
     reviewStatus: draft
     anatomy: Left atrial appendage
     restrictions: >-
@@ -1318,11 +1366,96 @@ indications:
     population: Qualified specialists planning TAVR
     sourceRefs:
       - sourceId: src-dasi
-        locator: Indications / approval-order statement
+        locator: 'Indications / approval-order statement'
     reviewStatus: draft
     anatomy: Aortic root and valve
     restrictions: The clinician remains responsible for treatment decisions and device-IFU compliance.
 trials:
+  - id: evidence-champion-af
+    name: CHAMPION-AF
+    nctId: NCT04394546
+    familyIds: [family-watchman]
+    entityId: trial-champion-af
+    design: International randomized comparison of WATCHMAN FLX left atrial appendage closure with NOAC therapy
+    population: Patients with nonvalvular atrial fibrillation suitable for oral anticoagulation
+    versionIds: [ver-watchman-flx]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-champion-af-nejm
+        locator: 'Methods and Results'
+    reviewStatus: draft
+  - id: evidence-protect-af
+    name: PROTECT AF
+    nctId: NCT00129545
+    familyIds: [family-watchman]
+    entityId: trial-protect-af
+    design: Randomized comparison of WATCHMAN LAA closure with warfarin
+    population: Patients with nonvalvular atrial fibrillation and elevated stroke risk
+    versionIds: [ver-watchman-original]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-watchman-original-ssed
+        locator: 'Summary of Primary Clinical Study'
+    reviewStatus: draft
+  - id: evidence-amulet-ide
+    name: Amulet IDE
+    nctId: NCT02879448
+    familyIds: [family-amulet, family-watchman]
+    design: International randomized comparison of Amplatzer Amulet with WATCHMAN 2.5
+    population: Nonvalvular atrial fibrillation at increased stroke risk; eligible for short-term anticoagulation and seeking a nonpharmacologic alternative
+    versionIds: [ver-amulet, ver-watchman-original]
+    versionMapping: mixed
+    sourceRefs:
+      - sourceId: src-amulet-ide-ssed
+        locator: 'PDF pp. 11–12, Study Design and population'
+    reviewStatus: draft
+  - id: evidence-swiss-apero
+    name: SWISS-APERO
+    nctId: NCT03399851
+    familyIds: [family-amulet, family-watchman]
+    design: Investigator-initiated randomized comparison of Amulet with Watchman-generation LAA closure devices
+    population: Atrial fibrillation patients at high bleeding risk undergoing LAA closure
+    versionIds: [ver-amulet, ver-watchman-original, ver-watchman-flx]
+    versionMapping: mixed
+    sourceRefs:
+      - sourceId: src-swiss-apero-3y
+        locator: 'Methods; Table 1'
+    reviewStatus: draft
+  - id: evidence-veritas
+    name: VERITAS
+    nctId: NCT06707688
+    familyIds: [family-amulet]
+    design: Prospective global multicenter single-arm study
+    population: Nonvalvular atrial fibrillation with elevated CHA2DS2-VASc stroke risk
+    versionIds: [ver-amulet-360]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-veritas-amulet-360
+        locator: 'Abstract, Methods and Results'
+    reviewStatus: draft
+  - id: evidence-watchman-flx-pas
+    name: WATCHMAN FLX Real-World Use Post-Approval Study
+    familyIds: [family-watchman]
+    design: FDA post-approval prospective registry surveillance cohort
+    population: US patients undergoing WATCHMAN FLX implantation in routine clinical practice
+    versionIds: [ver-watchman-flx]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-watchman-flx-pas
+        locator: 'Study Design and Final Effect Findings'
+    reviewStatus: draft
+  - id: evidence-atriclip-exclude
+    name: EXCLUDE multicenter AtriClip study
+    nctId: NCT00779857
+    familyIds: [family-atriclip]
+    design: Prospective multicenter single-arm FDA study of concomitant AtriClip during open cardiac surgery
+    population: Patients undergoing elective cardiac surgery with atrial fibrillation or elevated CHADS2 risk
+    versionIds: []
+    versionMapping: unclear
+    sourceRefs:
+      - sourceId: src-atriclip-exclude
+        locator: 'Abstract, Methods and Results'
+    reviewStatus: draft
   - id: evidence-triluminate
     name: TRILUMINATE Pivotal
     nctId: NCT03904147
@@ -1335,7 +1468,7 @@ trials:
     versionMapping: unclear
     sourceRefs:
       - sourceId: src-triluminate-350
-        locator: Methods
+        locator: 'Methods'
     reviewStatus: draft
   - id: evidence-predict
     name: PREDICT-LAA
@@ -1348,7 +1481,7 @@ trials:
     versionMapping: unclear
     sourceRefs:
       - sourceId: src-predict
-        locator: Methods
+        locator: 'Methods'
     reviewStatus: draft
   - id: evidence-vital
     name: VITAL-HF
@@ -1360,10 +1493,374 @@ trials:
     versionMapping: unclear
     sourceRefs:
       - sourceId: src-vital
-        locator: Methods
+        locator: 'Methods'
     reviewStatus: draft
-trialSnapshots: []
+  - id: evidence-pvl-pld-multicenter
+    name: Occlutech PLD multicenter long-term study
+    familyIds: [family-occlutech-pvl]
+    design: International prospective multicenter single-arm study
+    population: 144 patients with symptomatic aortic or mitral prosthetic PVL at 21 sites
+    versionIds: [ver-occlutech-pvl]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-pvl-pld-outcomes
+        locator: 'Abstract; Methods and Results'
+    reviewStatus: reviewed
+  - id: evidence-rechord
+    name: ReChord
+    nctId: NCT02803957
+    familyIds: [family-neochord]
+    entityId: trial-rechord
+    design: Randomized IDE trial of NeoChord DS1000 versus open surgical repair
+    population: Patients with degenerative mitral valve disease
+    versionIds: [ver-neochord-ds1000]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-rechord-registry
+        locator: 'Status and study plan; updated 2026-04-08'
+    reviewStatus: reviewed
+  - id: evidence-michord-pilot
+    name: Mi-CHORD OUS feasibility cohort
+    familyIds: [family-mi-chord]
+    entityId: trial-mi-chord-pilot
+    design: Prospective single-center 12-patient feasibility cohort
+    population: Severe primary mitral regurgitation patients undergoing surgical repair
+    versionIds: [ver-mi-chord]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-michord-fda
+        locator: 'Clinical Information, pp. 11-14'
+    reviewStatus: reviewed
+  - id: evidence-tricaval
+    name: TRICAVAL
+    nctId: NCT02387697
+    familyIds: [family-sapien-caval]
+    entityId: trial-tricaval
+    design: Randomized phase 2/3 inferior caval implantation of Edwards SAPIEN XT
+    population: Severe secondary TR with advanced right heart failure
+    versionIds: [ver-sapien-xt-caval]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-tricaval-registry
+        locator: 'Status: terminated for safety concerns; enrollment 28'
+    reviewStatus: reviewed
+  - id: evidence-alive
+    name: ALIVE
+    nctId: NCT02931240
+    familyIds: [family-revivent]
+    entityId: trial-alive-revivent
+    design: Prospective multicenter nonrandomized 2:1 device-versus-control trial
+    population: NYHA III-IV heart failure with extensive anterior LV scar after myocardial infarction
+    versionIds: [ver-revivent-tc]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-revivent-alive
+        locator: 'Abstract; primary efficacy endpoint'
+    reviewStatus: reviewed
+  - id: evidence-peerless-hf
+    name: PEERLESS-HF
+    nctId: NCT00382863
+    familyIds: [family-heartnet]
+    entityId: trial-peerless-hf
+    design: Prospective randomized evaluation of HeartNet elastic restraint versus control
+    population: Symptomatic heart failure patients
+    versionIds: [ver-heartnet]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-peerless-hf
+        locator: 'Abstract; interim futility and trial stop'
+    reviewStatus: reviewed
+  - id: evidence-acorn-five-year
+    name: Acorn randomized trial five-year no-MVR cohort
+    familyIds: [family-corcap]
+    entityId: trial-acorn-corcap
+    design: Randomized controlled trial follow-up
+    population: 107 patients in the no-mitral-repair/replacement stratum (57 CorCap, 50 control)
+    versionIds: [ver-corcap]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-corcap-five-year
+        locator: 'Methods; five-year no-MVR cohort'
+    reviewStatus: reviewed
+  - id: evidence-momentum-3
+    name: MOMENTUM 3
+    nctId: NCT02224755
+    familyIds: [family-heartmate-3, family-heartmate-ii]
+    entityId: trial-momentum-3
+    design: Randomized pivotal LVAD trial and five-year follow-up
+    population: Patients with advanced refractory left ventricular heart failure
+    versionIds: [ver-heartmate-3, ver-heartmate-ii]
+    versionMapping: mixed
+    sourceRefs:
+      - sourceId: src-heartmate3-ssed
+        locator: 'Clinical Studies; primary endpoint'
+      - sourceId: src-heartmate3-five-year
+        locator: 'Abstract; five-year outcomes'
+    reviewStatus: reviewed
+  - id: evidence-corcinch-hf
+    name: CORCINCH-HF
+    nctId: NCT04331769
+    familyIds: [family-accucinch]
+    entityId: trial-corcinch-hf
+    design: Randomized pivotal device plus guideline-directed medical therapy versus guideline-directed therapy study
+    population: Patients with symptomatic HFrEF
+    versionIds: [ver-accucinch]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-accucinch-corcinch
+        locator: 'Study Status; enrollment'
+    reviewStatus: reviewed
+  - id: evidence-kiss-pvl
+    name: KISS paravalvular leak registry
+    familyIds: [family-avp3-pvl]
+    entityId: trial-kiss-pvl
+    design: Retrospective multicenter cohort comparison
+    population: Symptomatic PVL patients treated with transcatheter closure or surgery
+    versionIds: []
+    versionMapping: unclear
+    sourceRefs:
+      - sourceId: src-avp3-kiss
+        locator: 'Abstract; cohort and outcomes (not device-specific)'
+    reviewStatus: reviewed
+  - id: evidence-tricento-registry
+    name: TRICENTO multicenter registry
+    familyIds: [family-tricento]
+    entityId: trial-tricento-registry
+    design: Retrospective multicenter registry
+    population: High-risk patients treated for severe tricuspid regurgitation with a custom bicaval valved stent
+    versionIds: [ver-tricento]
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-tricento-registry
+        locator: 'Abstract; registry cohort and outcomes'
+    reviewStatus: reviewed
+trialSnapshots:
+  - id: snapshot-rechord-2026
+    trialId: evidence-rechord
+    observedAt: '2026-09-28'
+    registryUpdatedAt: '2026-04-08'
+    status: 'Active, not recruiting'
+    enrollment:
+      value: 585
+      basis: estimated
+      scope: registered target
+    note: Trial continues with follow-up; not halted.
+    sourceRefs:
+      - sourceId: src-rechord-registry
+        locator: 'Study Status; enrollment'
+    reviewStatus: reviewed
+  - id: snapshot-tricaval-2018
+    trialId: evidence-tricaval
+    observedAt: '2026-09-28'
+    registryUpdatedAt: '2018-09-18'
+    status: 'Terminated (safety concerns)'
+    enrollment: { value: 28, basis: actual, scope: total enrollment }
+    sourceRefs:
+      - sourceId: src-tricaval-registry
+        locator: 'Study Status; reason; enrollment'
+    reviewStatus: reviewed
+  - id: snapshot-alive-2025
+    trialId: evidence-alive
+    observedAt: '2026-09-28'
+    status: Completed
+    enrollment: { value: 126, basis: actual, scope: trial enrollment }
+    sourceRefs:
+      - sourceId: src-revivent-alive
+        locator: 'Abstract; 2:1 trial design'
+    reviewStatus: reviewed
+  - id: snapshot-peerless-hf-2012
+    trialId: evidence-peerless-hf
+    observedAt: '2026-09-28'
+    registryUpdatedAt: '2012-03-27'
+    status: 'Terminated (follow-up resources unavailable)'
+    note: Enrollment stopped earlier after an interim futility analysis; primary report describes the enrollment stop.
+    enrollment: { value: 210, basis: actual, scope: randomized participants }
+    sourceRefs:
+      - sourceId: src-peerless-ctg
+        locator: 'Study Status and reason'
+    reviewStatus: reviewed
+  - id: snapshot-corcinch-hf-2026
+    trialId: evidence-corcinch-hf
+    observedAt: '2026-09-28'
+    registryUpdatedAt: '2026-06-03'
+    status: Suspended
+    enrollment: { value: 400, basis: estimated, scope: registered target }
+    note: Pivotal trial status only; no evidence located that the AccuCinch product itself was withdrawn.
+    sourceRefs:
+      - sourceId: src-accucinch-corcinch
+        locator: 'Study Status; last update posted June 2026'
+    reviewStatus: reviewed
 cohorts:
+  - id: cohort-acorn-no-mvr-5y
+    trialId: evidence-acorn-five-year
+    name: Acorn no-MVR randomized stratum
+    population: Patients randomized to CorCap plus optimal medical therapy or optimal medical therapy alone without concomitant mitral valve repair/replacement
+    enrollment:
+      - value: 107
+        stage: randomized
+        note: 57 CorCap and 50 control enrolled; only 50 completed five-year follow-up.
+    arms:
+      - { id: arm-acorn-corcap, name: CorCap plus optimal medical therapy, randomized: 57 }
+      - { id: arm-acorn-control, name: Optimal medical therapy alone, randomized: 50 }
+    sourceRefs:
+      - sourceId: src-corcap-five-year
+        locator: 'Methods; no-MVR stratum enrollment and five-year follow-up attrition'
+    reviewStatus: reviewed
+  - id: cohort-kiss-pvl-2024
+    trialId: evidence-kiss-pvl
+    name: KISS registry analyzed cohort
+    population: Symptomatic prosthetic paravalvular leak patients treated at three centers
+    enrollment:
+      - value: 335
+        stage: analyzed
+    arms:
+      - { id: arm-kiss-pvl-transcatheter, name: Transcatheter closure }
+      - { id: arm-kiss-pvl-surgery, name: Surgery }
+    sourceRefs:
+      - sourceId: src-avp3-kiss
+        locator: 'Abstract; Table 3 (technical success)'
+    reviewStatus: reviewed
+  - id: cohort-michord-12
+    trialId: evidence-michord-pilot
+    name: Mi-CHORD feasibility cohort
+    population: Prospective Mi-CHORD cohort of adults with severe primary mitral regurgitation undergoing surgical repair; FDA also describes a retrospective reference cohort with only 20 evaluable at one year.
+    enrollment:
+      - value: 12
+        stage: randomized
+    arms:
+      - { id: arm-michord, name: Mi-CHORD treatment cohort }
+    sourceRefs:
+      - sourceId: src-michord-fda
+        locator: 'Clinical Information; one-year echocardiographic results, pages 13-14'
+    reviewStatus: reviewed
+  - id: cohort-tricento-21
+    trialId: evidence-tricento-registry
+    name: TRICENTO multicenter registry cohort
+    population: High-risk patients with severe tricuspid regurgitation treated with bicaval valved stent
+    enrollment:
+      - value: 21
+        stage: analyzed
+    arms:
+      - { id: arm-tricento, name: TRICENTO implantation }
+    sourceRefs:
+      - sourceId: src-tricento-registry
+        locator: 'Abstract; technical success'
+    reviewStatus: reviewed
+  - id: cohort-alive-126
+    trialId: evidence-alive
+    name: ALIVE nonrandomized 2:1 cohort
+    population: Patients with ischemic cardiomyopathy and anterior LV scar after myocardial infarction
+    enrollment:
+      - value: 126
+        stage: randomized
+    arms:
+      - { id: arm-alive-device, name: Revivent TC }
+      - { id: arm-alive-control, name: Control }
+    sourceRefs:
+      - sourceId: src-revivent-alive
+        locator: 'Abstract; Methods and Results'
+    reviewStatus: reviewed
+  - id: cohort-momentum3-5y
+    trialId: evidence-momentum-3
+    name: MOMENTUM 3 extended five-year analysis
+    population: Participants still receiving LVAD support at two-year follow-up
+    enrollment:
+      - value: 477
+        stage: analyzed
+    arms:
+      - { id: arm-momentum3-hm3, name: HeartMate 3 }
+      - { id: arm-momentum3-hmii, name: HeartMate II }
+    sourceRefs:
+      - sourceId: src-heartmate3-five-year
+        locator: 'Abstract; eligible extended-phase participants and five-year survival'
+    reviewStatus: reviewed
+  - id: cohort-champion-af-randomized
+    trialId: evidence-champion-af
+    name: Randomized cohort · 3,000
+    population: NVAF patients eligible for anticoagulation; mean CHA2DS2-VASc 3.5
+    enrollment:
+      - { value: 3000, stage: randomized }
+    arms:
+      - { id: arm-champion-device, name: WATCHMAN FLX LAA closure, randomized: 1499 }
+      - { id: arm-champion-noac, name: NOAC therapy, randomized: 1501 }
+    sourceRefs:
+      - { sourceId: src-champion-af-nejm, locator: "Methods and Results"}
+    reviewStatus: draft
+  - id: cohort-protect-af-randomized
+    trialId: evidence-protect-af
+    name: PROTECT AF intention-to-treat cohort
+    population: NVAF patients randomized to WATCHMAN or warfarin
+    enrollment:
+      - { value: 707, stage: randomized }
+    arms:
+      - { id: arm-protect-watchman, name: WATCHMAN, randomized: 463 }
+      - { id: arm-protect-warfarin, name: Warfarin, randomized: 244 }
+    sourceRefs:
+      - { sourceId: src-watchman-original-ssed, locator: "Table 14, PROTECT AF primary effectiveness results"}
+    reviewStatus: draft
+  - id: cohort-amulet-ide-randomized
+    trialId: evidence-amulet-ide
+    name: Amulet IDE randomized cohort
+    population: NVAF patients at increased stroke risk and seeking a nonpharmacologic alternative
+    enrollment:
+      - { value: 1878, stage: randomized }
+    arms:
+      - { id: arm-amulet-ide-amulet, name: Amplatzer Amulet, randomized: 934 }
+      - { id: arm-amulet-ide-watchman, name: WATCHMAN 2.5, randomized: 944 }
+    sourceRefs:
+      - { sourceId: src-amulet-ide-ssed, locator: "PDF pp. 11, 16–17; Table 4"}
+    reviewStatus: draft
+  - id: cohort-watchman-flx-pas
+    trialId: evidence-watchman-flx-pas
+    name: WATCHMAN FLX real-world PAS implant cohort
+    population: US real-world registry cohort; enrollment and follow-up are not randomized CHAMPION-AF data
+    enrollment:
+      - value: 97529
+        stage: analyzed
+        note: 'ITT enrolled; 95,125 implanted in implant data set'
+    arms:
+      - { id: arm-watchman-flx-pas, name: WATCHMAN FLX implant cohort }
+    sourceRefs:
+      - { sourceId: src-watchman-flx-pas, locator: "Final Effect Findings and Patient Follow-up Rate"}
+    reviewStatus: draft
+  - id: cohort-swiss-apero-randomized
+    trialId: evidence-swiss-apero
+    name: SWISS-APERO randomized cohort · 221
+    population: AF undergoing LAA closure with high bleeding risk
+    enrollment:
+      - { value: 221, stage: randomized }
+      - { value: 220, stage: treated }
+    arms:
+      - { id: arm-swiss-amulet, name: Amulet, randomized: 111 }
+      - { id: arm-swiss-watchman, name: Watchman randomized arm (mixed 2.5 / FLX), randomized: 110 }
+    sourceRefs:
+      - { sourceId: src-swiss-apero-3y, locator: "Methods and Results"}
+    reviewStatus: draft
+  - id: cohort-veritas-amulet-360
+    trialId: evidence-veritas
+    name: VERITAS implant-attempt cohort
+    population: NVAF patients at increased stroke risk; 34 international sites
+    enrollment:
+      - { value: 400, stage: treated }
+      - { value: 376, stage: analyzed, note: 45-day echocardiography available }
+    arms:
+      - { id: arm-veritas-amulet-360, name: Amulet 360 implant attempt }
+    sourceRefs:
+      - { sourceId: src-veritas-amulet-360, locator: "Abstract, Results"}
+    reviewStatus: draft
+  - id: cohort-atriclip-exclude
+    trialId: evidence-atriclip-exclude
+    name: EXCLUDE eligible AtriClip patients
+    population: Open cardiac surgery; one of 71 enrollees had LAA anatomy too small and was not eligible; 70 received AtriClip placement
+    enrollment:
+      - { value: 71, stage: screened }
+      - { value: 70, stage: treated }
+      - { value: 61, stage: analyzed, note: Three-month imaging assessment available }
+    arms:
+      - { id: arm-atriclip-exclude, name: AtriClip placement }
+    sourceRefs:
+      - { sourceId: src-atriclip-exclude, locator: "Abstract, Results"}
+    reviewStatus: draft
   - id: cohort-triluminate-350
     trialId: evidence-triluminate
     name: Primary randomized cohort · 350
@@ -1380,7 +1877,7 @@ cohorts:
         randomized: 175
     sourceRefs:
       - sourceId: src-triluminate-350
-        locator: Methods and Results
+        locator: 'Methods and Results'
     reviewStatus: draft
   - id: cohort-triluminate-572
     trialId: evidence-triluminate
@@ -1397,7 +1894,7 @@ cohorts:
         name: Medical therapy
     sourceRefs:
       - sourceId: src-triluminate-572
-        locator: Methods and Results
+        locator: 'Methods and Results'
     reviewStatus: draft
   - id: cohort-predict
     trialId: evidence-predict
@@ -1420,7 +1917,7 @@ cohorts:
         randomized: 100
     sourceRefs:
       - sourceId: src-predict
-        locator: Study population; Figure 1; Table 2
+        locator: 'Study population; Figure 1; Table 2'
     reviewStatus: draft
   - id: cohort-vital
     trialId: evidence-vital
@@ -1438,9 +1935,205 @@ cohorts:
         randomized: 88
     sourceRefs:
       - sourceId: src-vital
-        locator: Methods and Results
+        locator: 'Methods and Results'
     reviewStatus: draft
 endpoints:
+  - id: endpoint-acorn-lvedv
+    name: Five-year left ventricular end-diastolic volume
+    definition: Longitudinal model comparison of LVEDV over five years in the no-MVR stratum.
+    hierarchy: secondary
+    measureType: continuous
+    timeframe: 5 years
+    analysisPopulation: No-MVR randomized stratum; 107 enrolled, 57 did not complete five-year follow-up due to death, loss to follow-up, or withdrawal.
+    sourceRefs:
+      - sourceId: src-corcap-five-year
+        locator: 'Results; longitudinal regression analysis of LVEDV'
+    reviewStatus: reviewed
+  - id: endpoint-kiss-technical-success
+    name: KISS procedural technical success
+    definition: Technical success of the assigned paravalvular leak closure strategy.
+    hierarchy: secondary
+    measureType: binary
+    timeframe: Procedure
+    analysisPopulation: Transcatheter closure and surgery groups, 171 and 164 patients respectively; registry-level, not AVP III-specific.
+    sourceRefs:
+      - sourceId: src-avp3-kiss
+        locator: 'Table 3; overall group outcome, not device-specific'
+    reviewStatus: reviewed
+  - id: endpoint-michord-recurrent-mr
+    name: Recurrent moderate-or-greater mitral regurgitation
+    definition: Moderate or greater mitral regurgitation at one-year echocardiographic follow-up.
+    hierarchy: secondary
+    measureType: binary
+    timeframe: 1 year
+    analysisPopulation: Prospective Mi-CHORD cohort n=12; FDA also reports a retrospective reference cohort with 20 evaluable at one year, but denominator accounting is not fully clear in the summary.
+    sourceRefs:
+      - sourceId: src-michord-fda
+        locator: 'Clinical Information; page 14, one-year recurrent MR comparison'
+    reviewStatus: reviewed
+  - id: endpoint-tricento-technical-success
+    name: TRICENTO technical success
+    definition: Technical success of implantation of the custom bicaval valved stent.
+    hierarchy: secondary
+    measureType: binary
+    timeframe: Procedure
+    analysisPopulation: Multicenter registry, n=21.
+    sourceRefs:
+      - sourceId: src-tricento-registry
+        locator: 'Abstract; Results'
+    reviewStatus: reviewed
+  - id: endpoint-alive-primary
+    name: ALIVE hierarchical primary efficacy endpoint
+    definition: Hierarchical composite efficacy endpoint comparing Revivent TC with control at 12 months.
+    hierarchy: primary
+    measureType: hierarchical
+    timeframe: 12 months
+    analysisPopulation: Randomized 2:1 cohort, device n=84 and control n=42.
+    sourceRefs:
+      - sourceId: src-revivent-alive
+        locator: 'Abstract; primary efficacy result'
+    reviewStatus: reviewed
+  - id: endpoint-momentum3-survival
+    name: MOMENTUM 3 five-year overall survival
+    definition: Kaplan–Meier overall survival through five years in the extended analysis.
+    hierarchy: secondary
+    measureType: time_to_event
+    timeframe: 5 years
+    analysisPopulation: Extended-phase analysis among participants still on LVAD support at two years.
+    sourceRefs:
+      - sourceId: src-heartmate3-five-year
+        locator: 'Abstract; five-year overall survival'
+    reviewStatus: reviewed
+  - id: endpoint-champion-efficacy
+    name: CHAMPION-AF primary efficacy composite
+    definition: Cardiovascular death, stroke, or systemic embolism.
+    hierarchy: primary
+    measureType: time_to_event
+    timeframe: 3 years
+    analysisPopulation: Randomized population; Kaplan–Meier cumulative event estimates at 3 years.
+    sourceRefs:
+      - { sourceId: src-champion-af-nejm, locator: Methods and Results"}
+    reviewStatus: draft
+  - id: endpoint-champion-nonprocedural-bleeding
+    name: CHAMPION-AF primary safety endpoint
+    definition: Non-procedure-related bleeding.
+    hierarchy: primary
+    measureType: time_to_event
+    timeframe: 3 years
+    analysisPopulation: Randomized population; Kaplan–Meier cumulative event estimates at 3 years.
+    sourceRefs:
+      - { sourceId: src-champion-af-nejm, locator: "Methods and Results"}
+    reviewStatus: draft
+  - id: endpoint-protect-primary
+    name: PROTECT AF primary effectiveness composite
+    definition: Stroke, systemic embolism, and cardiovascular or unexplained death.
+    hierarchy: primary
+    measureType: rate
+    timeframe: Primary PROTECT AF analysis follow-up; reported per 100 patient-years.
+    analysisPopulation: Intention-to-treat; randomized groups WATCHMAN N=463 and warfarin N=244.
+    sourceRefs:
+      - { sourceId: src-watchman-original-ssed, locator: "Table 14"}
+    reviewStatus: draft
+  - id: endpoint-amulet-safety
+    name: Amulet IDE primary safety composite
+    definition: Procedure-related complications, all-cause death, or BARC type 3 or greater major bleeding.
+    hierarchy: primary
+    measureType: time_to_event
+    timeframe: 12 months
+    analysisPopulation: Per-protocol implant-attempt population; Amulet N=903, WATCHMAN 2.5 N=896; Kaplan–Meier estimate.
+    sourceRefs:
+      - { sourceId: src-amulet-ide-ssed, locator: "PDF pp. 14, 22, Table 10"}
+    reviewStatus: draft
+  - id: endpoint-amulet-effectiveness
+    name: Amulet IDE primary effectiveness composite
+    definition: Ischemic stroke or systemic embolism.
+    hierarchy: primary
+    measureType: time_to_event
+    timeframe: 18 months
+    analysisPopulation: Intention-to-treat; Amulet N=934, WATCHMAN 2.5 N=944; Kaplan–Meier estimate.
+    sourceRefs:
+      - { sourceId: src-amulet-ide-ssed, locator: "PDF pp. 14, 32–33, Table 18"}
+    reviewStatus: draft
+  - id: endpoint-amulet-closure
+    name: Amulet IDE primary mechanism-of-action endpoint
+    definition: Residual peri-device jet ≤5 mm by Doppler on TEE at 45 days.
+    hierarchy: primary
+    measureType: binary
+    timeframe: 45 days
+    analysisPopulation: Successful implant as randomized and evaluable core-lab TEE; Amulet N=801, WATCHMAN 2.5 N=792.
+    sourceRefs:
+      - { sourceId: src-amulet-ide-ssed, locator: "PDF p. 33, Table 19"}
+    reviewStatus: draft
+  - id: endpoint-amulet-effectiveness-5y
+    name: Amulet IDE ischemic stroke or systemic embolism through five years
+    definition: Ischemic stroke or systemic embolism.
+    hierarchy: secondary
+    measureType: time_to_event
+    timeframe: 5 years
+    analysisPopulation: Randomized Amulet IDE ITT population; FDA PAS reports 89.2% Amulet and 83.3% WATCHMAN five-year follow-up.
+    sourceRefs:
+      - { sourceId: src-amulet-ide-5y-pas, locator: "Final Effect Findings and Patient Follow-up Rate"}
+    reviewStatus: draft
+  - id: endpoint-watchman-flx-pas-stroke-se
+    name: WATCHMAN FLX PAS ischemic stroke or systemic embolism
+    definition: Adjudicated ischemic stroke or systemic embolism.
+    hierarchy: not_reported
+    measureType: time_to_event
+    timeframe: 2 years
+    analysisPopulation: Implant data set; Kaplan–Meier estimate. 24-month follow-up rate 43.1%; substantial attrition.
+    sourceRefs:
+      - { sourceId: src-watchman-flx-pas, locator: "Final Effect Findings; Patient Follow-up Rate"}
+    reviewStatus: draft
+  - id: endpoint-swiss-apero-3y-ischemic
+    name: SWISS-APERO 3-year ischemic composite
+    definition: Cardiovascular death, stroke, transient ischemic attack, or systemic embolism.
+    hierarchy: secondary
+    measureType: time_to_event
+    timeframe: 3 years
+    analysisPopulation: Intention-to-treat randomized arms; Kaplan–Meier estimates. Watchman arm is mixed generation (25 Watchman 2.5 and 85 FLX); 3 assigned Amulet subjects received FLX.
+    sourceRefs:
+      - { sourceId: src-swiss-apero-3y, locator: "Results; Table 1"}
+    reviewStatus: draft
+  - id: endpoint-veritas-primary-safety
+    name: VERITAS primary safety endpoint
+    definition: Death, ischemic stroke, systemic embolism, or device/procedure-related complication requiring open cardiac surgery or major endovascular intervention.
+    hierarchy: primary
+    measureType: binary
+    timeframe: Through 7 days postprocedure or hospital discharge, whichever is later
+    analysisPopulation: All 400 patients with an implant attempt.
+    sourceRefs:
+      - { sourceId: src-veritas-amulet-360, locator: "Abstract, Methods and Results"}
+    reviewStatus: draft
+  - id: endpoint-veritas-closure
+    name: VERITAS primary effectiveness endpoint
+    definition: LAA closure, defined as residual leak ≤5 mm on independent core-lab 45-day TEE.
+    hierarchy: primary
+    measureType: binary
+    timeframe: 45 days
+    analysisPopulation: 376 patients with evaluable 45-day echocardiography.
+    sourceRefs:
+      - { sourceId: src-veritas-amulet-360, locator: "Abstract, Methods and Results"}
+    reviewStatus: draft
+  - id: endpoint-atriclip-exclusion-intraop
+    name: EXCLUDE intraoperative LAA exclusion
+    definition: Successful LAA exclusion confirmed by intraoperative TEE.
+    hierarchy: primary
+    measureType: binary
+    timeframe: Intraoperative
+    analysisPopulation: 70 eligible patients with successful AtriClip placement.
+    sourceRefs:
+      - { sourceId: src-atriclip-exclude, locator: "Abstract, Results"}
+    reviewStatus: draft
+  - id: endpoint-atriclip-exclusion-3m
+    name: EXCLUDE three-month imaging-confirmed LAA exclusion
+    definition: Successful LAA exclusion on CTA or TEE.
+    hierarchy: secondary
+    measureType: binary
+    timeframe: 3 months
+    analysisPopulation: Patients with follow-up imaging; 61 of 70 eligible patients imaged.
+    sourceRefs:
+      - { sourceId: src-atriclip-exclude, locator: "Abstract, Results"}
+    reviewStatus: draft
   - id: endpoint-tri-hierarchy
     name: Hierarchical primary composite
     definition: Death or tricuspid surgery, then HF hospitalization, then ≥15-point KCCQ improvement.
@@ -1461,7 +2154,7 @@ endpoints:
     analysisPopulation: Full randomized cohort; person-time denominators not extracted
     sourceRefs:
       - sourceId: src-triluminate-572
-        locator: Results
+        locator: 'Results'
     reviewStatus: draft
   - id: endpoint-tri-hfh-2y
     name: Recurrent HF hospitalizations
@@ -1472,7 +2165,7 @@ endpoints:
     analysisPopulation: Intention-to-treat; person-time denominators not extracted
     sourceRefs:
       - sourceId: src-triluminate-2y
-        locator: Methods and Results
+        locator: 'Methods and Results'
     reviewStatus: draft
   - id: endpoint-tri-death-2y
     name: All-cause mortality
@@ -1483,7 +2176,7 @@ endpoints:
     analysisPopulation: Intention-to-treat; endpoint-specific denominator not extracted
     sourceRefs:
       - sourceId: src-triluminate-2y
-        locator: Results
+        locator: 'Results'
     reviewStatus: draft
   - id: endpoint-predict-primary
     name: Residual leak or device-related thrombus
@@ -1494,7 +2187,7 @@ endpoints:
     analysisPopulation: Evaluable CT within randomized groups
     sourceRefs:
       - sourceId: src-predict
-        locator: Study endpoints; Table 2
+        locator: 'Study endpoints; Table 2'
     reviewStatus: draft
   - id: endpoint-predict-closure
     name: Complete LAA closure
@@ -1505,7 +2198,7 @@ endpoints:
     analysisPopulation: Evaluable CT within randomized groups
     sourceRefs:
       - sourceId: src-predict
-        locator: Study endpoints; Table 2
+        locator: 'Study endpoints; Table 2'
     reviewStatus: draft
   - id: endpoint-vital-score
     name: HF medical therapy score
@@ -1516,9 +2209,184 @@ endpoints:
     analysisPopulation: Trial analysis; adjusted effect; missing-data details require review
     sourceRefs:
       - sourceId: src-vital
-        locator: Methods and Findings
+        locator: 'Methods and Findings'
     reviewStatus: draft
 readouts:
+  - id: readout-acorn-corcap-5y
+    trialId: evidence-acorn-five-year
+    cohortId: cohort-acorn-no-mvr-5y
+    title: Acorn no-MVR stratum five-year follow-up
+    publishedAt: { value: '2012-05', precision: month }
+    followUp: 5 years
+    maturity: follow_up
+    versionIds: [ver-corcap]
+    limitation: 107 enrolled in the no-MVR stratum; 57 did not complete five-year follow-up. Results are from a selected stratum and are not evidence of current commercial availability.
+    sourceRefs:
+      - sourceId: src-corcap-five-year
+        locator: 'Abstract; Methods and Results'
+    reviewStatus: reviewed
+  - id: readout-kiss-pvl-2024
+    trialId: evidence-kiss-pvl
+    cohortId: cohort-kiss-pvl-2024
+    title: KISS registry procedural success
+    publishedAt: { value: '2024-01', precision: month }
+    followUp: Procedure
+    maturity: primary
+    versionIds: []
+    limitation: Registry compares strategies, not the performance of AVP III specifically; AVP III was used in 140 of 171 transcatheter cases.
+    sourceRefs:
+      - sourceId: src-avp3-kiss
+        locator: 'Abstract; Table 3'
+    reviewStatus: reviewed
+  - id: readout-michord-fda
+    trialId: evidence-michord-pilot
+    cohortId: cohort-michord-12
+    title: Mi-CHORD one-year feasibility outcomes reported in FDA De Novo review
+    publishedAt: { value: '2024-06-11', precision: day }
+    followUp: 1 year
+    maturity: interim
+    versionIds: [ver-mi-chord]
+    limitation: Twelve-person feasibility cohort and historical reference group; descriptive evidence does not establish comparative effectiveness.
+    sourceRefs:
+      - sourceId: src-michord-fda
+        locator: 'Clinical Information; pages 13-14'
+    reviewStatus: reviewed
+  - id: readout-tricento-registry
+    trialId: evidence-tricento-registry
+    cohortId: cohort-tricento-21
+    title: TRICENTO multicenter registry early results
+    publishedAt: { value: '2022-03-03', precision: day }
+    followUp: Median 61 days
+    maturity: primary
+    versionIds: [ver-tricento]
+    limitation: Small retrospective registry; follow-up was short and asymptomatic stent fractures were observed.
+    sourceRefs:
+      - sourceId: src-tricento-registry
+        locator: 'Abstract; Results'
+    reviewStatus: reviewed
+  - id: readout-alive-12m
+    trialId: evidence-alive
+    cohortId: cohort-alive-126
+    title: ALIVE 12-month primary efficacy analysis
+    publishedAt: { value: '2025-01-08', precision: day }
+    followUp: 12 months
+    maturity: primary
+    versionIds: [ver-revivent-tc]
+    limitation: Non-significant primary efficacy result; the trial was not evidence of clinical benefit on this composite.
+    sourceRefs:
+      - sourceId: src-revivent-alive
+        locator: 'Abstract; primary efficacy result'
+    reviewStatus: reviewed
+  - id: readout-momentum3-5y
+    trialId: evidence-momentum-3
+    cohortId: cohort-momentum3-5y
+    title: MOMENTUM 3 extended five-year outcomes
+    publishedAt: { value: '2022-09', precision: month }
+    followUp: 5 years
+    maturity: follow_up
+    versionIds: [ver-heartmate-3, ver-heartmate-ii]
+    limitation: Extended analysis conditions on participants still receiving LVAD therapy at two years; not the full original randomized population.
+    sourceRefs:
+      - sourceId: src-heartmate3-five-year
+        locator: 'Abstract; five-year overall survival'
+    reviewStatus: reviewed
+  - id: readout-champion-af-3y
+    trialId: evidence-champion-af
+    cohortId: cohort-champion-af-randomized
+    title: CHAMPION-AF · primary three-year results
+    publishedAt: { value: '2026-03-28', precision: day }
+    followUp: 3 years
+    maturity: primary
+    versionIds: [ver-watchman-flx]
+    limitation: Five-year follow-up continues. Results apply to WATCHMAN FLX and the studied NOAC strategy; they do not establish a class effect for all LAA closure devices.
+    sourceRefs:
+      - { sourceId: src-champion-af-nejm, locator: "Results"}
+    reviewStatus: draft
+  - id: readout-protect-af-primary
+    trialId: evidence-protect-af
+    cohortId: cohort-protect-af-randomized
+    title: PROTECT AF · FDA pivotal primary analysis
+    publishedAt: { value: '2015-03-13', precision: day }
+    followUp: Primary analysis; rate expressed per 100 patient-years
+    maturity: primary
+    versionIds: [ver-watchman-original]
+    limitation: Original WATCHMAN generation only. FDA SSED's historical trial result; do not combine with later-generation FLX evidence.
+    sourceRefs:
+      - { sourceId: src-watchman-original-ssed, locator: "Table 14"}
+    reviewStatus: draft
+  - id: readout-amulet-ide-18m
+    trialId: evidence-amulet-ide
+    cohortId: cohort-amulet-ide-randomized
+    title: Amulet IDE · FDA pivotal results
+    publishedAt: { value: '2021-08-14', precision: day }
+    followUp: 45 days, 12 months, and 18 months by endpoint
+    maturity: primary
+    versionIds: [ver-amulet, ver-watchman-original]
+    limitation: Comparator is WATCHMAN 2.5, not FLX. Endpoint estimates use different analysis populations and denominators; refer to each endpoint row.
+    sourceRefs:
+      - { sourceId: src-amulet-ide-ssed, locator: "Tables 10, 18, and 19"}
+    reviewStatus: draft
+  - id: readout-amulet-ide-5y
+    trialId: evidence-amulet-ide
+    cohortId: cohort-amulet-ide-randomized
+    title: Amulet IDE · FDA five-year follow-up
+    publishedAt: { value: '2024-09-11', precision: day }
+    followUp: 5 years
+    maturity: follow_up
+    versionIds: [ver-amulet, ver-watchman-original]
+    limitation: Comparator is WATCHMAN 2.5. The final FDA PAS includes 89.2% Amulet and 83.3% WATCHMAN five-year follow-up; interpret estimates with attrition in view.
+    sourceRefs:
+      - { sourceId: src-amulet-ide-5y-pas, locator: "Final Effect Findings; Patient Follow-up Rate; report received 2024-09-11"}
+    reviewStatus: draft
+  - id: readout-watchman-flx-pas-2y
+    trialId: evidence-watchman-flx-pas
+    cohortId: cohort-watchman-flx-pas
+    title: WATCHMAN FLX · FDA real-world PAS
+    publishedAt: { value: '2026-08-21', precision: day }
+    followUp: Up to 2 years
+    maturity: follow_up
+    versionIds: [ver-watchman-flx]
+    limitation: Nonrandomized prospective registry surveillance; the 6-year FDA report was received 2026-08-21. ITT N=97,529; implant analysis set N=95,125; only 43.1% follow-up at 24 months, so interpret the KM estimate with attrition caveat.
+    sourceRefs:
+      - { sourceId: src-watchman-flx-pas, locator: "Final Effect Findings and Patient Follow-up Rate"}
+    reviewStatus: draft
+  - id: readout-swiss-apero-3y
+    trialId: evidence-swiss-apero
+    cohortId: cohort-swiss-apero-randomized
+    title: SWISS-APERO · three-year clinical outcomes
+    publishedAt: { value: '2025-07-08', precision: day }
+    followUp: 3 years
+    maturity: follow_up
+    versionIds: [ver-amulet, ver-watchman-original, ver-watchman-flx]
+    limitation: 'The original SWISS-APERO primary endpoint was 45-day CCTA LAA patency. The 3-year clinical ischemic composite is a follow-up endpoint. Randomized comparator arm mixed generations: 25 WATCHMAN 2.5 and 85 WATCHMAN FLX; 3 participants assigned to Amulet received FLX. This is not a pure Amulet-versus-FLX estimate; no significant ITT difference and small sample make subgroup findings hypothesis generating.'
+    sourceRefs:
+      - { sourceId: src-swiss-apero-3y, locator: "Results; Table 1"}
+    reviewStatus: draft
+  - id: readout-veritas-45d
+    trialId: evidence-veritas
+    cohortId: cohort-veritas-amulet-360
+    title: VERITAS · Amulet 360 early outcomes
+    publishedAt: { value: '2026-02-06', precision: day }
+    followUp: 7 days or discharge for safety; 45 days for closure
+    maturity: primary
+    versionIds: [ver-amulet-360]
+    limitation: Single-arm, early follow-up; no comparative effectiveness inference. 100% closure refers to 376 patients with imaging; 93.9% had 0 mm leak. US investigational status at retrieval.
+    sourceRefs:
+      - { sourceId: src-veritas-amulet-360, locator: "Abstract, Results"}
+    reviewStatus: draft
+  - id: readout-atriclip-exclude
+    trialId: evidence-atriclip-exclude
+    cohortId: cohort-atriclip-exclude
+    title: EXCLUDE · prospective AtriClip device study
+    publishedAt: { value: '2011-09-08', precision: day }
+    followUp: 30-day safety; intraoperative and 3-month imaging effectiveness
+    maturity: primary
+    versionIds: []
+    limitation: Device-specific prospective AtriClip study. Single-arm and small; excludes 1 enrolled patient with anatomy too small for device placement. Long-term stroke prevention was not established by this study.
+    sourceRefs:
+      - sourceId: src-atriclip-exclude
+        locator: 'Abstract, Methods and Results'
+    reviewStatus: draft
   - id: readout-tri-350-1y
     trialId: evidence-triluminate
     cohortId: cohort-triluminate-350
@@ -1532,7 +2400,7 @@ readouts:
     limitation: Exact TriClip generation not resolved. Composite benefit is not evidence of a mortality benefit.
     sourceRefs:
       - sourceId: src-triluminate-350
-        locator: Primary report
+        locator: 'Primary report'
     reviewStatus: draft
   - id: readout-tri-572-1y
     trialId: evidence-triluminate
@@ -1547,7 +2415,7 @@ readouts:
     limitation: Overlaps the 350-person primary population. Software/hardware generation mapping remains unresolved.
     sourceRefs:
       - sourceId: src-triluminate-572
-        locator: Primary report
+        locator: 'Primary report'
     reviewStatus: draft
   - id: readout-tri-572-2y
     trialId: evidence-triluminate
@@ -1564,7 +2432,7 @@ readouts:
       one-year readout.
     sourceRefs:
       - sourceId: src-triluminate-2y
-        locator: Primary report
+        locator: 'Primary report'
     reviewStatus: draft
   - id: readout-predict-90d
     trialId: evidence-predict
@@ -1579,7 +2447,7 @@ readouts:
     limitation: Exact FEops software build unresolved; 19 randomized patients lack evaluable follow-up CT.
     sourceRefs:
       - sourceId: src-predict
-        locator: Primary report
+        locator: 'Primary report'
     reviewStatus: draft
   - id: readout-vital-6m
     trialId: evidence-vital
@@ -1594,9 +2462,229 @@ readouts:
     limitation: The treatment is a care package; the effect cannot be attributed to software alone.
     sourceRefs:
       - sourceId: src-vital
-        locator: Primary report
+        locator: 'Primary report'
     reviewStatus: draft
 outcomes:
+  - id: outcome-acorn-lvedv-5y
+    readoutId: readout-acorn-corcap-5y
+    endpointId: endpoint-acorn-lvedv
+    arms:
+      - { armId: arm-acorn-corcap, value: -28.9, unit: 'mL average LVEDV difference versus control across five years' }
+    pValue: 0.029
+    interpretation: Mean LVEDV in the CorCap group was 28.9 mL smaller than control when averaged over five years (P=.029); the publication reports 50 total five-year completers across both groups, without group-specific completer denominators in its abstract.
+    sourceRefs:
+      - sourceId: src-corcap-five-year
+        locator: 'Results; longitudinal regression analysis of LVEDV'
+    reviewStatus: reviewed
+  - id: outcome-kiss-pvl-procedural-success
+    readoutId: readout-kiss-pvl-2024
+    endpointId: endpoint-kiss-technical-success
+    arms:
+      - { armId: arm-kiss-pvl-transcatheter, value: 78.9, unit: '% technical success', denominator: 171 }
+      - { armId: arm-kiss-pvl-surgery, value: 76.2, unit: '% technical success', denominator: 164 }
+    interpretation: Observational registry-level technical success; this is not an AVP III-specific estimate.
+    sourceRefs:
+      - sourceId: src-avp3-kiss
+        locator: 'Table 3; technical success'
+    reviewStatus: reviewed
+  - id: outcome-michord-recurrent-mr-1y
+    readoutId: readout-michord-fda
+    endpointId: endpoint-michord-recurrent-mr
+    arms:
+      - { armId: arm-michord, value: 8.3, unit: '% with recurrent moderate-or-greater MR', denominator: 12 }
+    interpretation: FDA review reports one of 12 Mi-CHORD patients (8.3%) with recurrent moderate-or-greater MR at one year. The review also describes a retrospective reference cohort (20 evaluable), but its reported 28.6% denominator accounting is unclear; it is not treated as a randomized comparison here.
+    sourceRefs:
+      - sourceId: src-michord-fda
+        locator: 'Clinical Information; page 14, one-year recurrent MR comparison'
+    reviewStatus: reviewed
+  - id: outcome-tricento-technical-success
+    readoutId: readout-tricento-registry
+    endpointId: endpoint-tricento-technical-success
+    arms:
+      - { armId: arm-tricento, value: 100, unit: '% technical success', denominator: 21 }
+    interpretation: Technical success was reported in all 21 registry patients; three asymptomatic stent fractures occurred during follow-up.
+    sourceRefs:
+      - sourceId: src-tricento-registry
+        locator: 'Abstract; Results'
+    reviewStatus: reviewed
+  - id: outcome-alive-primary-12m
+    readoutId: readout-alive-12m
+    endpointId: endpoint-alive-primary
+    arms:
+      - { armId: arm-alive-device, value: 1.13, unit: 'win ratio (device vs control)', denominator: 126 }
+    pValue: 0.32
+    interpretation: At 12 months the hierarchical efficacy endpoint did not differ significantly between groups (win ratio 1.13; P=0.32).
+    sourceRefs:
+      - sourceId: src-revivent-alive
+        locator: 'Abstract; primary efficacy result'
+    reviewStatus: reviewed
+  - id: outcome-momentum3-survival-5y
+    readoutId: readout-momentum3-5y
+    endpointId: endpoint-momentum3-survival
+    arms:
+      - { armId: arm-momentum3-hm3, value: 58.4, unit: '% Kaplan–Meier overall survival' }
+      - { armId: arm-momentum3-hmii, value: 43.7, unit: '% Kaplan–Meier overall survival' }
+    effect:
+      measure: Hazard ratio
+      value: 0.72
+      ci: { lower: 0.58, upper: 0.89, level: 95, sidedness: two_sided }
+    pValue: 0.003
+    interpretation: Five-year overall survival favored HeartMate 3 in the extended-phase analysis; estimates apply to those still on LVAD support at two years, not the full ITT cohort.
+    sourceRefs:
+      - sourceId: src-heartmate3-five-year
+        locator: 'Abstract; five-year overall survival'
+    reviewStatus: reviewed
+  - id: outcome-champion-efficacy-3y
+    readoutId: readout-champion-af-3y
+    endpointId: endpoint-champion-efficacy
+    arms:
+      - { armId: arm-champion-device, value: 5.7, unit: '% Kaplan–Meier estimate', denominator: 1499 }
+      - { armId: arm-champion-noac, value: 4.8, unit: '% Kaplan–Meier estimate', denominator: 1501 }
+    effect:
+      measure: Risk difference
+      value: 0.9
+      unit: percentage points (device minus anticoagulation)
+      ci: { lower: -0.8, upper: 2.6, level: 95, sidedness: two_sided }
+    pValue: 0.001
+    pValueQualifier: '<'
+    interpretation: Met prespecified noninferiority for the three-year efficacy composite; primary event counts were 81 device and 65 anticoagulation patients.
+    sourceRefs:
+      - { sourceId: src-champion-af-nejm, locator: "Results"}
+    reviewStatus: draft
+  - id: outcome-champion-bleeding-3y
+    readoutId: readout-champion-af-3y
+    endpointId: endpoint-champion-nonprocedural-bleeding
+    arms:
+      - { armId: arm-champion-device, value: 10.9, unit: '% Kaplan–Meier estimate', denominator: 1499 }
+      - { armId: arm-champion-noac, value: 19.0, unit: '% Kaplan–Meier estimate', denominator: 1501 }
+    effect:
+      measure: Hazard ratio
+      value: 0.55
+      ci: { lower: 0.45, upper: 0.67, level: 95, sidedness: two_sided }
+    pValue: 0.001
+    pValueQualifier: '<'
+    interpretation: Met superiority for non-procedure-related bleeding by three years; endpoint excludes procedural bleeding.
+    sourceRefs:
+      - { sourceId: src-champion-af-nejm, locator: "Results"}
+    reviewStatus: draft
+  - id: outcome-protect-af-primary
+    readoutId: readout-protect-af-primary
+    endpointId: endpoint-protect-primary
+    arms:
+      - { armId: arm-protect-watchman, value: 2.2, unit: events per 100 patient-years, denominator: 463 }
+      - { armId: arm-protect-warfarin, value: 3.7, unit: events per 100 patient-years, denominator: 244 }
+    effect:
+      measure: Rate ratio
+      value: 0.61
+      ci: { lower: 0.42, upper: 1.07, level: 95, sidedness: two_sided }
+    interpretation: FDA pivotal SSED reports the rate ratio and met noninferiority; the reported credible interval is retained with the source's Bayesian analysis context.
+    limitation: Event-rate denominators are patient-years and differ from randomized patient counts; arm denominator fields show randomized participants for cohort context only.
+    sourceRefs:
+      - { sourceId: src-watchman-original-ssed, locator: "Table 14"}
+    reviewStatus: draft
+  - id: outcome-amulet-safety-12m
+    readoutId: readout-amulet-ide-18m
+    endpointId: endpoint-amulet-safety
+    arms:
+      - { armId: arm-amulet-ide-amulet, value: 14.5, unit: '% Kaplan–Meier estimate', denominator: 903 }
+      - { armId: arm-amulet-ide-watchman, value: 14.7, unit: '% Kaplan–Meier estimate', denominator: 896 }
+    interpretation: Noninferiority was met. The 12-month primary safety analysis is per-protocol among implant attempts as randomized, rather than all randomized participants.
+    sourceRefs:
+      - { sourceId: src-amulet-ide-ssed, locator: "PDF p. 22, Table 10"}
+    reviewStatus: draft
+  - id: outcome-amulet-effectiveness-18m
+    readoutId: readout-amulet-ide-18m
+    endpointId: endpoint-amulet-effectiveness
+    arms:
+      - { armId: arm-amulet-ide-amulet, value: 2.8, unit: '% Kaplan–Meier estimate', denominator: 934 }
+      - { armId: arm-amulet-ide-watchman, value: 2.8, unit: '% Kaplan–Meier estimate', denominator: 944 }
+    interpretation: Noninferiority was met in the intention-to-treat population; event counts were 25 Amulet and 24 WATCHMAN patients.
+    sourceRefs:
+      - { sourceId: src-amulet-ide-ssed, locator: "PDF pp. 32–33, Table 18"}
+    reviewStatus: draft
+  - id: outcome-amulet-closure-45d
+    readoutId: readout-amulet-ide-18m
+    endpointId: endpoint-amulet-closure
+    arms:
+      - { armId: arm-amulet-ide-amulet, value: 98.9, unit: '% effective closure (792/801)', denominator: 801 }
+      - { armId: arm-amulet-ide-watchman, value: 96.8, unit: '% effective closure (767/792)', denominator: 792 }
+    interpretation: Effective closure was residual jet ≤5 mm on 45-day TEE; tested for noninferiority and secondarily superior for Amulet.
+    sourceRefs:
+      - { sourceId: src-amulet-ide-ssed, locator: "PDF p. 33, Table 19"}
+    reviewStatus: draft
+  - id: outcome-amulet-effectiveness-5y
+    readoutId: readout-amulet-ide-5y
+    endpointId: endpoint-amulet-effectiveness-5y
+    arms:
+      - { armId: arm-amulet-ide-amulet, value: 7.4, unit: '% Kaplan–Meier estimate', denominator: 934 }
+      - { armId: arm-amulet-ide-watchman, value: 7.1, unit: '% Kaplan–Meier estimate', denominator: 944 }
+    interpretation: FDA reports 58 Amulet and 53 WATCHMAN subjects with an effectiveness endpoint event; randomized groups had similar five-year ischemic stroke/systemic embolism estimates.
+    limitation: Lower five-year follow-up in the WATCHMAN arm (83.3%) than Amulet (89.2%); comparator is WATCHMAN 2.5.
+    sourceRefs:
+      - { sourceId: src-amulet-ide-5y-pas, locator: "Final Effect Findings; Patient Follow-up Rate"}
+    reviewStatus: draft
+  - id: outcome-watchman-flx-pas-stroke-se-2y
+    readoutId: readout-watchman-flx-pas-2y
+    endpointId: endpoint-watchman-flx-pas-stroke-se
+    arms:
+      - { armId: arm-watchman-flx-pas, value: 2.46, unit: '% Kaplan–Meier estimate', denominator: 95125 }
+    interpretation: FDA reports adjudicated ischemic stroke/systemic embolism cumulative incidence at 730 days in the implanted analysis set.
+    limitation: 24-month follow-up was 43.1%; high attrition limits certainty despite the Kaplan–Meier method.
+    sourceRefs:
+      - { sourceId: src-watchman-flx-pas, locator: "Final Effect Findings; 24-month follow-up rate"}
+    reviewStatus: draft
+  - id: outcome-swiss-apero-3y-ischemic
+    readoutId: readout-swiss-apero-3y
+    endpointId: endpoint-swiss-apero-3y-ischemic
+    arms:
+      - { armId: arm-swiss-amulet, value: 18.2, unit: '% Kaplan–Meier estimate', denominator: 111 }
+      - { armId: arm-swiss-watchman, value: 31.0, unit: '% Kaplan–Meier estimate', denominator: 110 }
+    effect:
+      measure: Hazard ratio
+      value: 0.58
+      ci: { lower: 0.33, upper: 1.03, level: 95, sidedness: two_sided }
+    pValue: 0.062
+    interpretation: Intention-to-treat comparison was not statistically significant. As-treated and per-protocol findings favored Amulet, but are hypothesis generating and do not isolate WATCHMAN FLX because the randomized control arm included WATCHMAN 2.5.
+    limitation: Three-year outcome percentages are Kaplan–Meier estimates; the source reports 80 Amulet and 76 Watchman patients with three-year clinical follow-up. Watchman randomized arm comprised 25 legacy 2.5 and 85 FLX; 3 Amulet-assigned patients received FLX.
+    sourceRefs:
+      - { sourceId: src-swiss-apero-3y, locator: "Results; Table 1"}
+    reviewStatus: draft
+  - id: outcome-veritas-safety-7d
+    readoutId: readout-veritas-45d
+    endpointId: endpoint-veritas-primary-safety
+    arms:
+      - { armId: arm-veritas-amulet-360, value: 0, unit: '%', denominator: 400 }
+    interpretation: No primary safety endpoint events occurred among 400 patients through 7 days or discharge.
+    sourceRefs:
+      - { sourceId: src-veritas-amulet-360, locator: "Results"}
+    reviewStatus: draft
+  - id: outcome-veritas-closure-45d
+    readoutId: readout-veritas-45d
+    endpointId: endpoint-veritas-closure
+    arms:
+      - { armId: arm-veritas-amulet-360, value: 100, unit: '% leak ≤5 mm', denominator: 376 }
+    interpretation: All 376 patients with evaluable 45-day echocardiography met the primary effectiveness endpoint; complete closure (0 mm leak) was 93.9% in the same study report.
+    sourceRefs:
+      - { sourceId: src-veritas-amulet-360, locator: "Results"}
+    reviewStatus: draft
+  - id: outcome-atriclip-intraop-exclusion
+    readoutId: readout-atriclip-exclude
+    endpointId: endpoint-atriclip-exclusion-intraop
+    arms:
+      - { armId: arm-atriclip-exclude, value: 95.7, unit: '%', denominator: 70 }
+    interpretation: Intraoperative TEE confirmed LAA exclusion in 67 of 70 patients with successful AtriClip placement.
+    sourceRefs:
+      - { sourceId: src-atriclip-exclude, locator: "Results"}
+    reviewStatus: draft
+  - id: outcome-atriclip-3m-exclusion
+    readoutId: readout-atriclip-exclude
+    endpointId: endpoint-atriclip-exclusion-3m
+    arms:
+      - { armId: arm-atriclip-exclude, value: 98.4, unit: '% among patients imaged', denominator: 61 }
+    interpretation: Three-month imaging showed exclusion in 60 of 61 imaged patients; 65 of 70 were available for assessment.
+    sourceRefs:
+      - { sourceId: src-atriclip-exclude, locator: "Results"}
+    reviewStatus: draft
   - id: outcome-tri-350-hierarchy
     readoutId: readout-tri-350-1y
     endpointId: endpoint-tri-hierarchy
@@ -1613,7 +2701,7 @@ outcomes:
     interpretation: Composite favored TEER; mortality/surgery and HF hospitalization were not demonstrably different.
     sourceRefs:
       - sourceId: src-triluminate-350
-        locator: Results
+        locator: 'Results'
     reviewStatus: draft
   - id: outcome-tri-572-hierarchy
     readoutId: readout-tri-572-1y
@@ -1626,7 +2714,7 @@ outcomes:
     interpretation: Full-cohort composite result; keep distinct from the initial 350-person estimate.
     sourceRefs:
       - sourceId: src-triluminate-572
-        locator: Results
+        locator: 'Results'
     reviewStatus: draft
     pValueQualifier: <
   - id: outcome-tri-572-hfh-1y
@@ -1643,7 +2731,7 @@ outcomes:
     interpretation: One-year HF hospitalization rates did not demonstrate a difference.
     sourceRefs:
       - sourceId: src-triluminate-572
-        locator: Results
+        locator: 'Results'
     reviewStatus: draft
   - id: outcome-tri-572-hfh-2y
     readoutId: readout-tri-572-2y
@@ -1665,7 +2753,7 @@ outcomes:
     interpretation: Fewer recurrent HF hospitalizations through two years.
     sourceRefs:
       - sourceId: src-triluminate-2y
-        locator: Results
+        locator: 'Results'
     reviewStatus: draft
     limitation: >-
       Abstract reports a one-sided upper confidence limit; nominal level is not specified there. Do not render
@@ -1683,7 +2771,7 @@ outcomes:
     interpretation: Mortality was similar; no mortality advantage established.
     sourceRefs:
       - sourceId: src-triluminate-2y
-        locator: Results
+        locator: 'Results'
     reviewStatus: draft
   - id: outcome-predict-primary
     readoutId: readout-predict-90d
@@ -1709,7 +2797,7 @@ outcomes:
     interpretation: Primary imaging endpoint was inconclusive.
     sourceRefs:
       - sourceId: src-predict
-        locator: Table 2, primary endpoint
+        locator: 'Table 2, primary endpoint'
     reviewStatus: draft
     limitation: The confidence interval crosses 1. Clinical event reduction was not established.
   - id: outcome-predict-closure
@@ -1728,7 +2816,7 @@ outcomes:
     interpretation: Complete closure favored simulation on a secondary endpoint.
     sourceRefs:
       - sourceId: src-predict
-        locator: Table 2, complete LAA closure
+        locator: 'Table 2, complete LAA closure'
     reviewStatus: draft
     limitation: >-
       Secondary, unadjusted comparison; do not reinterpret it as primary-endpoint success. The paper’s
@@ -1751,7 +2839,7 @@ outcomes:
     interpretation: The care program improved medication optimization at six months.
     sourceRefs:
       - sourceId: src-vital
-        locator: Results
+        locator: 'Results'
     reviewStatus: draft
     limitation: A medication score is not hospitalization, survival, or standalone algorithm efficacy.
 lineage:
@@ -1762,7 +2850,7 @@ lineage:
     explanation: FDA describes FX+ as building on FX with expanded coronary-access windows.
     sourceRefs:
       - sourceId: src-evolut-ssed
-        locator: Section V, page 3
+        locator: 'Section V, page 3'
     reviewStatus: draft
   - id: lineage-feops-build
     fromVersionId: ver-feops-141
@@ -1771,7 +2859,7 @@ lineage:
     explanation: The comparison identifies a shared code base and an expanded device library.
     sourceRefs:
       - sourceId: src-feops
-        locator: Technological comparison, pages 3–4
+        locator: 'Technological comparison, pages 3–4'
     reviewStatus: draft
   - id: lineage-feops-dasi-predicate
     fromVersionId: ver-feops-heartguide
@@ -1782,7 +2870,7 @@ lineage:
       outcomes.
     sourceRefs:
       - sourceId: src-dasi
-        locator: Predicate-device section, page 1 of summary
+        locator: 'Predicate-device section, page 1 of summary'
     reviewStatus: draft
 events:
   - id: event-sapien-intermediate
@@ -1806,9 +2894,9 @@ events:
     uncertainty: This historical excerpt is not the complete current IFU.
     sourceRefs:
       - sourceId: src-sapien-original
-        locator: Approval-order statement
+        locator: 'Approval-order statement'
       - sourceId: src-sapien-s010
-        locator: Approval-order statement
+        locator: 'Approval-order statement'
     reviewStatus: draft
   - id: event-sapien-resilia
     title: 'SAPIEN 3 Ultra RESILIA: a separately recorded product change'
@@ -1831,7 +2919,7 @@ events:
     uncertainty: The short FDA entry does not identify every changed component or establish comparative durability.
     sourceRefs:
       - sourceId: src-sapien-s141
-        locator: Device and supplement-reason fields
+        locator: 'Device and supplement-reason fields'
     reviewStatus: draft
   - id: event-watchman-dapt
     title: 'WATCHMAN: a regimen change is not an implant generation'
@@ -1854,7 +2942,7 @@ events:
     uncertainty: The record also names original WATCHMAN; full regimen instructions need the applicable IFU.
     sourceRefs:
       - sourceId: src-watchman-s043
-        locator: Approval-order statement
+        locator: 'Approval-order statement'
     reviewStatus: draft
   - id: event-watchman-ablation
     title: 'WATCHMAN FLX / FLX Pro: post-ablation eligibility'
@@ -1878,7 +2966,7 @@ events:
     uncertainty: No new hardware generation is inferred from this label decision.
     sourceRefs:
       - sourceId: src-watchman-s074
-        locator: Approval-order statement
+        locator: 'Approval-order statement'
     reviewStatus: draft
   - id: event-evolut-redo
     title: 'Evolut: redo-TAVR authorization follows its own history'
@@ -1902,7 +2990,7 @@ events:
     uncertainty: The authorization does not establish the suitability of every valve-in-valve combination.
     sourceRefs:
       - sourceId: src-evolut-order
-        locator: Approval order, page 1
+        locator: 'Approval order, page 1'
     reviewStatus: draft
   - id: event-feops-library
     title: 'FEops: a software update changes the simulated-device library'
@@ -1926,7 +3014,7 @@ events:
     uncertainty: This is LAA planning authorization; it does not extend to all structural-heart procedures.
     sourceRefs:
       - sourceId: src-feops
-        locator: Technological comparison, pages 3–4
+        locator: 'Technological comparison, pages 3–4'
     reviewStatus: draft
   - id: event-predict-laa
     title: 'PREDICT-LAA: primary and secondary outcomes tell different stories'
@@ -1952,7 +3040,7 @@ events:
       interpretation.
     sourceRefs:
       - sourceId: src-predict
-        locator: Table 2
+        locator: 'Table 2'
     reviewStatus: draft
   - id: event-triluminate-two-years
     title: 'TRILUMINATE: retain both cohort size and follow-up'
@@ -1974,7 +3062,7 @@ events:
     uncertainty: Mortality remained similar; control crossover affects some composite outcomes.
     sourceRefs:
       - sourceId: src-triluminate-2y
-        locator: Results
+        locator: 'Results'
     reviewStatus: draft
 media:
   - id: media-sapien-3-valve

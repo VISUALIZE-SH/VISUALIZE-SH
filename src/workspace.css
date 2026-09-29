@@ -67,6 +67,7 @@
 .profile-status-approved { color: var(--ok); }
 .profile-status-investigational { color: var(--warn); }
 .profile-status-discontinued { color: var(--bad); }
+.profile-status-unknown { color: var(--muted); }
 .profile-landscape-grid dl { display: grid; gap: 8px; margin: 4px 0 14px; }
 .profile-landscape-grid dl div { display: grid; grid-template-columns: minmax(100px, .7fr) minmax(0, 1.3fr); gap: 10px; padding-top: 7px; border-top: 1px solid var(--border); }
 .profile-landscape-grid dt { color: var(--text-3); font-size: var(--fs-11); }

@@ -16,7 +16,10 @@ Cover material developments in structural heart (valvular and non-valvular),
 heart failure, and digital therapies relevant to structural-heart care. Look for
 new FDA/CE decisions, pivotal readouts, meaningful trial-status changes, devices,
 drugs, digital therapies, acquisitions, financings, recalls, and important policy
-changes. Prioritize LAAO; septal/congenital closure; HCM; ATTR-CM; HFrEF/HFpEF;
+changes. Prioritize LAAO/LAAC, including endocardial occluders, percutaneous
+epicardial ligation, surgical exclusion, and investigational designs. Resolve exact
+device generations and regional regulatory status before linking trials or claiming
+current availability. Also prioritize septal/congenital closure; HCM; ATTR-CM; HFrEF/HFpEF;
 interatrial shunts; PA/IVC/LA sensors; coronary-sinus/CMD therapies; TAVR including
 aortic regurgitation; mitral TEER/TMVR/annuloplasty; tricuspid TEER/TTVR;
 transcatheter pulmonary valves; and surgical valve therapy. Also scan the

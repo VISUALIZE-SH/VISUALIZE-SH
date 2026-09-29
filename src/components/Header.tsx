@@ -1,4 +1,4 @@
-import type { GraphMeta, GraphNodeData } from '../types/entities'
+import type { GraphMeta, GraphNodeData, NewsItem } from '../types/entities'
 import type { AppMode } from '../types/intelligence'
 import type { ThemePreference } from '../theme'
 import SearchBar from './SearchBar'
@@ -6,6 +6,9 @@ import SearchBar from './SearchBar'
 interface Props {
   meta: GraphMeta
   nodes: GraphNodeData[]
+  news: NewsItem[]
+  searchQuery: string
+  onSearch: (query: string) => void
   onSelect: (id: string) => void
   onAbout: () => void
   accessibilityMode: boolean
@@ -20,6 +23,9 @@ interface Props {
 export default function Header({
   meta,
   nodes,
+  news,
+  searchQuery,
+  onSearch,
   onSelect,
   onAbout,
   accessibilityMode,
@@ -40,7 +46,7 @@ export default function Header({
           <p className="header-sub">Structural heart intelligence</p>
         </div>
         <div className="header-search">
-          <SearchBar nodes={nodes} onSelect={onSelect} />
+          <SearchBar nodes={nodes} onSelect={onSelect} mode={mode} news={news} searchQuery={searchQuery} onSearch={onSearch} />
         </div>
       </div>
 

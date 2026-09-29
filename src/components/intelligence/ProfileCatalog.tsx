@@ -50,7 +50,7 @@ export default function ProfileCatalog({ data, therapyNodes, nodesById, onOpenVe
           const company = therapy.company ? nodesById.get(therapy.company)?.label : undefined
           const conditions = therapy.treats.map((id) => nodesById.get(id)?.label ?? id)
           return <article key={node.id}>
-            <div className="profile-landscape-meta"><span>{therapy.subtype ?? node.category ?? therapy.therapyType}</span><span className={`profile-status profile-status-${therapy.regulatoryStatus}`}>{therapy.regulatoryStatus}</span></div>
+            <div className="profile-landscape-meta"><span>{therapy.subtype ?? node.category ?? therapy.therapyType}</span><span className={`profile-status profile-status-${therapy.regulatoryStatus}`}>{therapy.regulatoryStatus === 'unknown' ? 'Unverified' : therapy.regulatoryStatus}</span></div>
             <h4>{therapy.name}</h4>
             {company && <p className="profile-maker">{company}</p>}
             <p>{therapy.mechanism ?? therapy.description ?? 'No detailed mechanism profile yet.'}</p>
