@@ -88,8 +88,8 @@ export default function NewsletterSignup({ onClose }: Props) {
         </div>
         <div className="modal-body newsletter-body">
           <p id="newsletter-description">
-            We’re testing registration for weekly updates on structural heart approvals, trial
-            readouts, and emerging ideas.
+            We’re testing registration for a regular newsletter on structural heart approvals,
+            trial readouts, and emerging ideas.
           </p>
           {signupUrl ? (
             <a
