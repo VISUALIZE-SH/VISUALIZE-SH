@@ -133,6 +133,98 @@ export function declutterOverlaps(cy: Core, opts: DeclutterOptions = {}): void {
   })
 }
 
+export interface FootprintSpacingOptions {
+  /** Maximum fraction of the smaller label-inclusive box that may be covered. */
+  maxOcclusion?: number
+  /** Small visible gap between separated boxes, in model pixels. */
+  gap?: number
+  /** Maximum deterministic relaxation passes. */
+  iterations?: number
+  /** Keep date positions unchanged and resolve collisions on the vertical axis. */
+  verticalOnly?: boolean
+  /** Exclude synthetic timeline axis nodes from entity spacing. */
+  excludeTimelineAxis?: boolean
+}
+
+/**
+ * Resolve residual label-inclusive rectangle collisions after physics and island
+ * translation. The force pass uses circumscribing circles; this final pass uses
+ * Cytoscape's actual rendered boxes and moves both nodes along the cheaper axis.
+ */
+export function enforceFootprintSpacing(
+  cy: Core,
+  opts: FootprintSpacingOptions = {},
+): void {
+  const maxOcclusion = Math.max(0, Math.min(1, opts.maxOcclusion ?? 0))
+  const gap = Math.max(0, opts.gap ?? 2)
+  const iterations = Math.max(1, opts.iterations ?? 400)
+  const visible = cy.nodes().filter((n) =>
+    n.style('display') !== 'none' && !(opts.excludeTimelineAxis && n.data('isTimelineAxis')),
+  )
+  if (visible.length < 2) return
+
+  const nodes = visible.map((node: NodeSingular) => ({
+    node,
+    pos: { ...node.position() },
+    box: { ...node.boundingBox(BB_OPTS) },
+  }))
+  const dims = nodes.map(({ box }) => ({ w: Math.max(1, box.w), h: Math.max(1, box.h) }))
+  for (let pass = 0; pass < iterations; pass++) {
+    let changed = false
+    for (let i = 0; i < nodes.length; i++) {
+      const a = nodes[i]
+      for (let j = i + 1; j < nodes.length; j++) {
+        const b = nodes[j]
+        const overlapX = Math.min(a.box.x2, b.box.x2) - Math.max(a.box.x1, b.box.x1)
+        const overlapY = Math.min(a.box.y2, b.box.y2) - Math.max(a.box.y1, b.box.y1)
+        if (overlapX <= 0 || overlapY <= 0) continue
+        const overlapArea = overlapX * overlapY
+        const coveredFraction = overlapArea / Math.min(dims[i].w * dims[i].h, dims[j].w * dims[j].h)
+        if (coveredFraction <= maxOcclusion) continue
+
+        const acx = (a.box.x1 + a.box.x2) / 2
+        const bcx = (b.box.x1 + b.box.x2) / 2
+        const acy = (a.box.y1 + a.box.y2) / 2
+        const bcy = (b.box.y1 + b.box.y2) / 2
+        // Choose the axis that requires the least total movement. Stable IDs
+        // provide a deterministic direction when two centers are identical.
+        // Center-distance formulation also handles a small box fully contained
+        // inside a larger one, where intersection width alone underestimates the
+        // movement needed to clear the larger rectangle.
+        const moveX = Math.max(0, (dims[i].w + dims[j].w) / 2 + gap - Math.abs(acx - bcx))
+        const moveY = Math.max(0, (dims[i].h + dims[j].h) / 2 + gap - Math.abs(acy - bcy))
+        let dx = 0
+        let dy = 0
+        if (!opts.verticalOnly && moveX <= moveY) {
+          const direction = acx === bcx ? (a.node.id() < b.node.id() ? -1 : 1) : acx < bcx ? -1 : 1
+          dx = direction * moveX / 2
+        } else {
+          const direction = acy === bcy ? (a.node.id() < b.node.id() ? -1 : 1) : acy < bcy ? -1 : 1
+          dy = direction * moveY / 2
+        }
+        a.pos.x += dx
+        b.pos.x -= dx
+        a.pos.y += dy
+        b.pos.y -= dy
+        a.box.x1 += dx
+        a.box.x2 += dx
+        a.box.y1 += dy
+        a.box.y2 += dy
+        b.box.x1 -= dx
+        b.box.x2 -= dx
+        b.box.y1 -= dy
+        b.box.y2 -= dy
+        changed = true
+      }
+    }
+    if (!changed) break
+  }
+
+  cy.batch(() => {
+    for (const { node, pos } of nodes) node.position(pos)
+  })
+}
+
 export interface IslandSpacingOptions {
   /** whitespace (model px) to push each disconnected component outward */
   gap?: number
