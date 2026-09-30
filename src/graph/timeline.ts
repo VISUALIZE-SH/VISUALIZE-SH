@@ -33,7 +33,12 @@ function tickId(year: number): string {
   return `__timeline_axis_tick_${year}`
 }
 
-function axisX(dateMs: number, min: number, span: number, width: number): number {
+export interface TimelineFootprint {
+  dateMs: number
+  width: number
+}
+
+export function timelineX(dateMs: number, min: number, span: number, width: number): number {
   return ((dateMs - min) / span) * width
 }
 
@@ -41,11 +46,19 @@ export function getTimelineWidth(
   visibleNodeCount: number,
   minYear: number,
   maxYear: number,
+  footprints: TimelineFootprint[] = [],
 ): number {
-  return Math.max(
+  const baseWidth = Math.max(
     2200,
     visibleNodeCount * 30,
     (maxYear - minYear + 1) * 115,
+  )
+  const measuredWidth = footprints.reduce((sum, item) => sum + item.width, 0)
+  // Stretch for the amount of content and label width, with a framing-friendly
+  // cap. Exact final rectangle cleanup handles dates that are unusually close.
+  return Math.min(
+    10_000,
+    Math.max(baseWidth * 1.5, visibleNodeCount * 70, (maxYear - minYear + 1) * 160, measuredWidth * 0.45),
   )
 }
 
@@ -67,15 +80,27 @@ export function updateTimelineAxis(cy: Core): void {
   if (nodes.length === 0) return
 
   const dates = nodes.map((n) => dateToUtcMs(n.data('timelineDate')))
-  const min = Math.min(...dates)
-  const max = Math.max(...dates)
-  const span = Math.max(1, max - min)
+  const layoutState = cy.scratch('_timelineLayoutState')
+  const min = layoutState?.min ?? Math.min(...dates)
+  const span = layoutState?.span ?? Math.max(1, Math.max(...dates) - min)
+  const max = min + span
   const minYear = new Date(min).getUTCFullYear()
   const maxYear = new Date(max).getUTCFullYear()
   const midYear = Math.round((minYear + maxYear) / 2)
-  const width = getTimelineWidth(timelineNodes.length, minYear, maxYear)
+  const maxEntityY = timelineNodes.reduce((maxY, node) => Math.max(maxY, node.boundingBox({
+    includeLabels: true,
+    includeNodes: true,
+    includeEdges: false,
+    includeOverlays: false,
+  }).y2), Number.NEGATIVE_INFINITY)
+  const axisY = Number.isFinite(maxEntityY) ? maxEntityY + 110 : TIMELINE_AXIS_Y
+  const footprints = nodes.map((n) => ({
+    dateMs: dateToUtcMs(n.data('timelineDate')),
+    width: n.boundingBox({ includeLabels: true, includeNodes: true, includeEdges: false, includeOverlays: false }).w,
+  }))
+  const width = layoutState?.width ?? getTimelineWidth(timelineNodes.length, minYear, maxYear, footprints)
 
-  const tickYears = [...new Set([minYear, midYear, maxYear])]
+  const tickYears = minYear < midYear && midYear < maxYear ? [midYear] : []
   const elements: ElementDefinition[] = [
     {
       group: 'nodes',
@@ -84,7 +109,7 @@ export function updateTimelineAxis(cy: Core): void {
         isTimelineAxis: true,
         label: String(minYear),
       },
-      position: { x: 0, y: TIMELINE_AXIS_Y },
+      position: { x: 0, y: axisY },
       selectable: false,
       grabbable: false,
     },
@@ -93,9 +118,9 @@ export function updateTimelineAxis(cy: Core): void {
       data: {
         id: AXIS_END_ID,
         isTimelineAxis: true,
-        label: String(maxYear),
+        label: maxYear === minYear ? '' : String(maxYear),
       },
-      position: { x: width, y: TIMELINE_AXIS_Y },
+      position: { x: width, y: axisY },
       selectable: false,
       grabbable: false,
     },
@@ -114,12 +139,11 @@ export function updateTimelineAxis(cy: Core): void {
 
   for (const year of tickYears) {
     const id = tickId(year)
-    if (id === AXIS_START_ID || id === AXIS_END_ID) continue
-    const x = axisX(Date.UTC(year, 0, 1), min, span, width)
+    const x = timelineX(Date.UTC(year, 0, 1), min, span, width)
     elements.push({
       group: 'nodes',
       data: { id, isTimelineAxis: true, label: String(year) },
-      position: { x, y: TIMELINE_AXIS_Y },
+      position: { x, y: axisY },
       selectable: false,
       grabbable: false,
     })

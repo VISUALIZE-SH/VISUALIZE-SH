@@ -4,7 +4,7 @@ import cytoscape from '../graph/cytoscapeSetup'
 import { buildStylesheet } from '../graph/cytoscapeStyles'
 import { getLayout, frameLayout, type LayoutName } from '../graph/layouts'
 import { attachElasticPull } from '../graph/elasticPull'
-import { declutterOverlaps, spaceIslands } from '../graph/declutter'
+import { declutterOverlaps, enforceFootprintSpacing, spaceIslands } from '../graph/declutter'
 import { clusterByCondition } from '../graph/clusterByCondition'
 import { removeTimelineAxis, updateTimelineAxis } from '../graph/timeline'
 import type { GraphData } from '../types/entities'
@@ -59,17 +59,25 @@ export default function GraphCanvas({
     // Physics-informed elastic pull: dragging a node springs its neighbors along.
     const detachElastic = attachElasticPull(cy)
 
+    const relayoutTimeline = () => {
+      removeTimelineAxis(cy)
+      cy.scratch('_timelineLayoutState', null)
+      cy.elements(':visible').layout(getLayout('timeline')).run()
+    }
+
     // After any layout: relax label footprints apart (with organic jitter), open up
     // whitespace around disconnected islands, then frame.
     const declutterAndFit = () => {
       if (cyRef.current !== cy) return
       if (layoutNameRef.current === 'timeline') {
+        enforceFootprintSpacing(cy, { verticalOnly: true, excludeTimelineAxis: true })
         updateTimelineAxis(cy)
       } else {
         removeTimelineAxis(cy)
         clusterByCondition(cy)
         declutterOverlaps(cy)
         spaceIslands(cy)
+        enforceFootprintSpacing(cy)
       }
       frameLayout(cy, layoutNameRef.current)
     }
@@ -85,7 +93,9 @@ export default function GraphCanvas({
     // separates. Re-run it once the real fonts are ready so footprints are correct.
     if (typeof document !== 'undefined' && document.fonts?.ready) {
       document.fonts.ready.then(() => {
-        if (cyRef.current === cy) declutterAndFit()
+        if (cyRef.current !== cy) return
+        if (layoutNameRef.current === 'timeline') relayoutTimeline()
+        else declutterAndFit()
       })
     }
 
@@ -135,14 +145,19 @@ export default function GraphCanvas({
     const cy = cyRef.current
     if (!cy) return
     cy.style(buildStylesheet({ accessibilityMode, darkMode })).update()
-    if (layoutNameRef.current === 'timeline') {
-      updateTimelineAxis(cy)
-    } else {
+    if (layoutNameRef.current !== 'timeline') {
       clusterByCondition(cy)
       declutterOverlaps(cy)
       spaceIslands(cy)
+      enforceFootprintSpacing(cy)
     }
-    frameLayout(cy, layoutNameRef.current)
+    if (layoutNameRef.current === 'timeline') {
+      removeTimelineAxis(cy)
+      cy.scratch('_timelineLayoutState', null)
+      cy.elements(':visible').layout(getLayout('timeline')).run()
+    } else {
+      frameLayout(cy, layoutNameRef.current)
+    }
   }, [accessibilityMode, darkMode])
 
   // Toggle node visibility on filter/layout change; relayout the visible subset.
