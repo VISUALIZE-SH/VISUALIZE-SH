@@ -1,5 +1,5 @@
 import type { Core } from 'cytoscape'
-import { dateToUtcMs, getTimelineWidth } from './timeline'
+import { dateToUtcMs, getTimelineWidth, timelineX } from './timeline'
 
 // The Atlas intentionally has two views: an exploratory condition-clustered
 // landscape and a dated timeline.
@@ -27,6 +27,8 @@ interface TimelineItem {
   label: string
   ms: number
   x: number
+  width: number
+  height: number
 }
 
 function hashId(id: string): number {
@@ -58,7 +60,9 @@ function assignVerticalOffsets(items: TimelineItem[]): Map<string, number> {
   }
 
   for (const groupItems of byGroup.values()) {
-    const laneLastX: number[] = []
+    const laneRightEdge: number[] = []
+    // Leave room for the small deterministic per-node jitter on either side.
+    const trackStep = Math.max(62, ...groupItems.map((item) => item.height)) + 48
     groupItems
       .sort((a, b) => {
         if (a.x !== b.x) return a.x - b.x
@@ -66,17 +70,15 @@ function assignVerticalOffsets(items: TimelineItem[]): Map<string, number> {
         return a.label.localeCompare(b.label)
       })
       .forEach((item) => {
-        const minGap =
-          item.group === 'condition' ? TIMELINE_LABEL_GAP * 1.15 : TIMELINE_LABEL_GAP
         let lane = 0
         while (
-          laneLastX[lane] !== undefined &&
-          item.x - laneLastX[lane] < minGap
+          laneRightEdge[lane] !== undefined &&
+          item.x - item.width / 2 - laneRightEdge[lane] < TIMELINE_LABEL_GAP
         ) {
           lane += 1
         }
-        laneLastX[lane] = item.x
-        offsets.set(item.id, lane)
+        laneRightEdge[lane] = item.x + item.width / 2
+        offsets.set(item.id, spreadOffset(lane) * trackStep)
       })
   }
 
@@ -105,14 +107,8 @@ function getTimelineState(cy: any) {
   datedNodes.forEach((n: any) => {
     msById.set(n.id(), dateToUtcMs(n.data('timelineDate')))
   })
-
-  const dates = [...msById.values()]
-  const min = dates.length ? Math.min(...dates) : Date.UTC(2000, 0, 1)
-  const max = dates.length ? Math.max(...dates) : min
-  const span = Math.max(1, max - min)
-  const minYear = new Date(min).getUTCFullYear()
-  const maxYear = new Date(max).getUTCFullYear()
-  const width = getTimelineWidth(nodes.length, minYear, maxYear)
+  const datedTimes = [...msById.values()]
+  const datedMin = datedTimes.length ? Math.min(...datedTimes) : Date.UTC(2000, 0, 1)
 
   nodes
     .filter((n: any) => n.data('group') === 'condition')
@@ -129,8 +125,23 @@ function getTimelineState(cy: any) {
         const ms = msById.get(neighborId)
         if (ms !== undefined) neighborDates.push(ms)
       })
-      msById.set(n.id(), neighborDates.length ? median(neighborDates) : min)
+      msById.set(n.id(), neighborDates.length ? median(neighborDates) : datedMin)
     })
+
+  const dates = [...msById.values()]
+  const min = dates.length ? Math.min(...dates) : Date.UTC(2000, 0, 1)
+  const max = dates.length ? Math.max(...dates) : min
+  const span = Math.max(1, max - min)
+  const minYear = new Date(min).getUTCFullYear()
+  const maxYear = new Date(max).getUTCFullYear()
+  const measuredById = new Map<string, { width: number; height: number }>()
+  const measuredItems = nodes.map((n: any) => {
+    const box = n.boundingBox({ includeLabels: true, includeNodes: true, includeEdges: false, includeOverlays: false })
+    const measured = { width: box.w, height: box.h }
+    measuredById.set(n.id(), measured)
+    return { dateMs: msById.get(n.id()) ?? min, ...measured }
+  })
+  const width = getTimelineWidth(nodes.length, minYear, maxYear, measuredItems)
 
   const timelineItems: TimelineItem[] = nodes
     .map((n: any) => {
@@ -141,7 +152,9 @@ function getTimelineState(cy: any) {
         group: String(n.data('group')),
         label: String(n.data('label')),
         ms,
-        x: ((ms - min) / span) * width,
+        x: timelineX(ms, min, span, width),
+        width: measuredById.get(n.id())?.width ?? 1,
+        height: measuredById.get(n.id())?.height ?? 1,
       }
     })
     .filter(Boolean) as TimelineItem[]
@@ -153,12 +166,6 @@ function getTimelineState(cy: any) {
   return state
 }
 
-function timelineSpreadStep(group: string): number {
-  if (group === 'condition') return 58
-  if (group === 'trial') return 66
-  return 62
-}
-
 function timelinePosition(n: any) {
   const group = String(n.data('group'))
   const state = getTimelineState(n.cy())
@@ -166,11 +173,11 @@ function timelinePosition(n: any) {
   if (ms === undefined) {
     return { x: -320, y: TIMELINE_LANE_Y[group] ?? 1080 }
   }
-  const x = ((ms - state.min) / state.span) * state.width
+  const x = timelineX(ms, state.min, state.span, state.width)
   const laneY = TIMELINE_LANE_Y[group] ?? 1080
   const offset = state.offsetById.get(n.id()) ?? 0
   const jitter = ((hashId(n.id()) % 19) - 9) * 2
-  const spread = spreadOffset(offset) * timelineSpreadStep(group) + jitter
+  const spread = offset + jitter
   return { x, y: laneY + spread }
 }
 
@@ -218,6 +225,17 @@ export function frameLayout(cy: Core, name: LayoutName): void {
   cy.resize() // recompute against the current container size before framing
   const eles = cy.elements(':visible')
   if (eles.empty()) return
+  const savedTimelineMinZoom = cy.scratch('_timelineBaseMinZoom') as number | null | undefined
+  if (name === 'timeline') {
+    const baseMinZoom = typeof savedTimelineMinZoom === 'number' ? savedTimelineMinZoom : cy.minZoom()
+    cy.scratch('_timelineBaseMinZoom', baseMinZoom)
+    // Let fit choose the scale needed for the full timeline, then make that
+    // fitted scale the lower zoom bound. Users can still zoom in normally.
+    cy.minZoom(0.005)
+  } else if (typeof savedTimelineMinZoom === 'number') {
+    cy.minZoom(savedTimelineMinZoom)
+    cy.scratch('_timelineBaseMinZoom', null)
+  }
   cy.fit(eles, FRAME_PADDING)
   // The clustered overview is intentionally a little closer than a strict
   // edge-to-edge fit so labels remain useful on first load. Timeline keeps its
@@ -225,5 +243,8 @@ export function frameLayout(cy: Core, name: LayoutName): void {
   if (name === 'fcose') {
     cy.zoom(Math.min(cy.maxZoom(), cy.zoom() * 1.1))
     cy.center(eles)
+  } else {
+    const baseMinZoom = cy.scratch('_timelineBaseMinZoom') as number
+    cy.minZoom(Math.min(baseMinZoom, cy.zoom()))
   }
 }
