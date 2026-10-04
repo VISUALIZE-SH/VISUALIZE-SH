@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import type { GraphNodeData } from '../../types/entities'
 import type { IntelligenceData } from '../../types/intelligence'
 
@@ -22,6 +23,13 @@ const GROUP_LABELS: Record<string, string> = {
  * concise landscape profile built only from authored graph fields.
  */
 export default function ProfileCatalog({ data, therapyNodes, nodesById, onOpenVersion, onOpenNode }: ProfileCatalogProps) {
+  const targetId = window.location.hash.slice(1)
+  useEffect(() => {
+    if (!targetId.startsWith('profile-')) return
+    const card = document.getElementById(targetId)
+    card?.scrollIntoView({ block: 'center' })
+    card?.focus({ preventScroll: true })
+  }, [targetId, data])
   const deeplyProfiledIds = new Set(data.families.flatMap((family) => family.entityIds))
   const landscapeOnly = therapyNodes
     .filter((node) => !deeplyProfiledIds.has(node.id))
@@ -49,7 +57,7 @@ export default function ProfileCatalog({ data, therapyNodes, nodesById, onOpenVe
           const therapy = node.entity
           const company = therapy.company ? nodesById.get(therapy.company)?.label : undefined
           const conditions = therapy.treats.map((id) => nodesById.get(id)?.label ?? id)
-          return <article key={node.id}>
+          return <article key={node.id} id={`profile-${node.id}`} tabIndex={-1}>
             <div className="profile-landscape-meta"><span>{therapy.subtype ?? node.category ?? therapy.therapyType}</span><span className={`profile-status profile-status-${therapy.regulatoryStatus}`}>{therapy.regulatoryStatus === 'unknown' ? 'Unverified' : therapy.regulatoryStatus}</span></div>
             <h4>{therapy.name}</h4>
             {company && <p className="profile-maker">{company}</p>}

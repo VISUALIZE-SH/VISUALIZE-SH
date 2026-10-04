@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import type { MouseEvent, ReactNode } from 'react'
 import type {
   Curation,
   DeviceMaterial,
@@ -20,6 +20,9 @@ interface Props {
   onSelect: (id: string) => void
   onNewsSelect: (item: NewsItem) => void
   onClose: () => void
+  profileLinks: Array<{ id: string; name: string; href: string; dataHref: string }>
+  landscapeProfileHref?: string
+  onProfileNavigate: (href: string) => void
 }
 
 interface RelatedGroup {
@@ -382,10 +385,18 @@ export default function DetailPanel({
   onSelect,
   onNewsSelect,
   onClose,
+  profileLinks,
+  landscapeProfileHref,
+  onProfileNavigate,
 }: Props) {
   const e = node.entity
   const meta = GROUP_META[node.group]
   const groups = relatedGroups(node.id, edges, nodesById)
+  function followProfile(event: MouseEvent<HTMLAnchorElement>, href: string) {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+    event.preventDefault()
+    onProfileNavigate(href)
+  }
 
   return (
     <aside className="detail">
@@ -406,6 +417,21 @@ export default function DetailPanel({
       </div>
 
       <div className="detail-body">
+        {e.type === 'therapy' && (profileLinks.length > 0 || landscapeProfileHref) && (
+          <section className="detail-section detail-profile-links" aria-label="Therapy profiles">
+            <h3>{profileLinks.length > 1 ? 'Product profiles' : 'Profile'}</h3>
+            {profileLinks.map(profile => (
+              <div className="detail-profile-record" key={profile.id}>
+                <strong className="detail-profile-name">{profile.name}</strong>
+                <div className="detail-profile-actions">
+                  <a href={profile.href} aria-label={`View ${profile.name} profile`} onClick={event => followProfile(event, profile.href)}>View profile <span aria-hidden="true">→</span></a>
+                  <a href={profile.dataHref} aria-label={`View ${profile.name} data`} onClick={event => followProfile(event, profile.dataHref)}>View data <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            ))}
+            {landscapeProfileHref && <div className="detail-profile-actions"><a href={landscapeProfileHref} aria-label={`View ${e.name} profile`} onClick={event => followProfile(event, landscapeProfileHref)}>View profile <span aria-hidden="true">→</span></a></div>}
+          </section>
+        )}
         <section className="detail-section">
           <PulseMeter value={node.pulse} />
           <Facts e={e} />

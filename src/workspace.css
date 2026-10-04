@@ -77,8 +77,12 @@
 .profile-landscape-actions a { font-size: var(--fs-12); font-weight: 600; }
 .atlas-detail-stack { display: flex; flex-direction: column; width: 360px; min-height: 0; flex-shrink: 0; border-left: 1px solid var(--border); }
 .atlas-detail-stack .detail { flex: 1; width: 100%; min-height: 0; }
-.graph-profile-links { background: var(--lilac); padding: 10px 16px; font-size: var(--fs-12); }
-.graph-profile-links button { display: block; border: 0; padding: 5px 0; background: transparent; color: var(--brand); font-weight: 600; }
+.detail-section.detail-profile-links { background: var(--lilac); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px; }
+.detail-section.detail-profile-links > h3 { color: var(--text-2); }
+.detail-profile-record + .detail-profile-record { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+.detail-profile-name { display: block; font-size: var(--fs-12); margin-bottom: 8px; }
+.detail-profile-actions { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: var(--fs-13); font-weight: 600; }
+.detail-profile-actions a:focus-visible, .profile-landscape-grid article:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
 .app button:focus-visible, .app select:focus-visible, .app input:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
 @media (max-width: 1120px) {
   .workspace-context-atlas { flex-wrap: wrap; overflow-x: visible; }
