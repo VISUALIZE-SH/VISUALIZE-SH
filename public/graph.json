@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-10-04T16:17:30.983Z",
+    "generatedAt": "2026-10-04T18:54:09.924Z",
     "lastUpdated": "2026-10-04",
     "counts": {
       "condition": 19,
       "device": 75,
       "pharmaceutical": 14,
-      "procedure": 7,
+      "procedure": 8,
       "digital": 4,
       "company": 54,
-      "trial": 73
+      "trial": 74
     },
-    "draftCount": 237,
-    "total": 246,
+    "draftCount": 239,
+    "total": 248,
     "newsCount": 56,
     "latestNewsDate": "2026-09-23"
   },
@@ -1327,7 +1327,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 16,
+          "degree": 18,
           "pulse": 9,
           "entity": {
             "id": "cond-as",
@@ -5954,6 +5954,49 @@
                 "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf"
               ],
               "notes": "2026-10-03 audit: FDA SSED p.2 identifies size-specific sutures in addition to the frame, leaflet tissue and polyester graft already listed. Apply the material roles only to the corresponding TPV size. Adds a directly attributable source and date to the graph milestone. Graph context and primary evidence links aligned with version records."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-tavi",
+          "label": "TAVI / TAVR (procedure)",
+          "group": "procedure",
+          "category": "Transcatheter aortic valve replacement",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 6,
+          "entity": {
+            "id": "proc-tavi",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "subtype": "Transcatheter aortic valve replacement",
+            "name": "TAVI / TAVR (procedure)",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Established procedure for aortic stenosis; eligibility and device authorization depend on the patient, valve platform, and jurisdiction.",
+            "mechanism": "Catheter-based implantation of a bioprosthetic valve within the diseased aortic valve to relieve stenosis.",
+            "description": "Transcatheter aortic valve implantation (TAVI), also called transcatheter aortic valve replacement (TAVR). This general procedure node anchors evidence on care around TAVI, including post-procedure antithrombotic strategies, when a study does not evaluate a particular valve platform.",
+            "links": [
+              {
+                "label": "2025 ESC/EACTS valve guideline",
+                "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/valvular-heart-disease/"
+              }
+            ],
+            "pulse": 6,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-04",
+              "sources": [
+                "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/valvular-heart-disease/",
+                "https://www.escardio.org/news/news-room/congress-news/2025-guidelines-valvular-heart-disease/"
+              ],
+              "notes": "Procedure-level anchor, separate from individual TAVR device nodes. The graph status approved denotes an established procedure, not an FDA product approval or approval of any trial's antithrombotic regimen. Procedures have no single manufacturer or product marketing-authorization date."
             }
           }
         }
@@ -11023,6 +11066,71 @@
       },
       {
         "data": {
+          "id": "trial-acasa-tavi",
+          "label": "ACASA-TAVI",
+          "group": "trial",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 8,
+          "timelineDate": "2021-12-04",
+          "entity": {
+            "id": "trial-acasa-tavi",
+            "type": "trial",
+            "name": "ACASA-TAVI",
+            "nctId": "NCT05035277",
+            "phase": "Phase 3 RCT (open-label, blinded endpoints)",
+            "status": "completed",
+            "timeline": {
+              "date": "2021-12-04",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Trial start",
+              "source": "https://clinicaltrials.gov/study/NCT05035277"
+            },
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "proc-tavi"
+            ],
+            "enrollment": 360,
+            "year": 2026,
+            "primaryEndpoint": "Co-primary endpoints at 12 months: CT-detected hypoattenuated leaflet thickening (HALT; superiority) and a composite of VARC-3 bleeding, thromboembolic events, and all-cause death (noninferiority).",
+            "outcomeSummary": "In patients aged 65-80 without an independent anticoagulation indication after TAVI, 12 months of factor Xa DOAC monotherapy reduced HALT versus aspirin (16.2% vs 28.6%; risk ratio 0.55, 95% CI 0.37-0.82; P=0.004) and met noninferiority for the safety composite (7.5% vs 10.6%). These findings do not establish improved long-term valve durability or superiority for clinical events.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT05035277",
+              "https://jamanetwork.com/journals/jama/fullarticle/2853401",
+              "PMID:42669043"
+            ],
+            "links": [
+              {
+                "label": "JAMA primary results (August 30, 2026)",
+                "url": "https://jamanetwork.com/journals/jama/fullarticle/2853401"
+              },
+              {
+                "label": "ESC Congress 2026 readout and context",
+                "url": "https://www.escardio.org/news/news-room/congress-news/hot-line-7-advances-in-interventional-cardiology/"
+              }
+            ],
+            "pulse": 8,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-04",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT05035277",
+                "https://jamanetwork.com/journals/jama/fullarticle/2853401",
+                "https://www.escardio.org/news/news-room/congress-news/hot-line-7-advances-in-interventional-cardiology/"
+              ],
+              "notes": "Procedure-level post-TAVI management evidence: the proc-tavi edge identifies the care setting, not a randomized comparison of TAVI devices or TAVI versus surgery. The registry permits clinician-selected therapeutic-dose apixaban, rivaroxaban, or edoxaban monotherapy versus aspirin 75 mg/day; it does not establish separate efficacy for each drug. The ClinicalTrials.gov record last updated June 9, 2026 reports completed status, actual enrollment of 360, and actual start December 4, 2021. It also lists 5- and 10-year MACE follow-up; those results are not reported here. JAMA reports 336 participants completing the trial. The safety risk difference was -3.3 percentage points (95% CI -9.5 to 2.8; noninferiority P<0.001). Low safety-event counts limit inference, and individual clinical components were not adequately powered. HALT is an imaging endpoint; do not generalize the result to all ages, anticoagulation regimens, or routine treatment recommendations."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "trial-partner-2",
           "label": "PARTNER 2A",
           "group": "trial",
@@ -13963,6 +14071,14 @@
       },
       {
         "data": {
+          "id": "proc-tavi__treats__cond-as",
+          "source": "proc-tavi",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "proc-savr__treats__cond-as",
           "source": "proc-savr",
           "target": "cond-as",
@@ -15062,6 +15178,22 @@
           "id": "trial-serra-i__studies__cond-cmd",
           "source": "trial-serra-i",
           "target": "cond-cmd",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-acasa-tavi__evaluates__proc-tavi",
+          "source": "trial-acasa-tavi",
+          "target": "proc-tavi",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-acasa-tavi__studies__cond-as",
+          "source": "trial-acasa-tavi",
+          "target": "cond-as",
           "relationship": "studies"
         }
       },
