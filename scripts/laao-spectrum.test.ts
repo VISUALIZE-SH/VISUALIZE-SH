@@ -54,6 +54,6 @@ test('historical generations retain distinct dated evidence and draft source lin
   assert.ok(modern, 'redesigned 2020 FLX decision missing')
   assert.ok(!authored.decisions.some(item => item.versionIds.includes('ver-watchman-flx-2015') && item.jurisdiction === 'US'), 'withdrawn early FLX must not inherit 2020 US authorization')
   assert.match(authored.versions.find(item => item.id === 'ver-omega-laa')?.summary ?? '', /recall/i)
-  assert.match(authored.versions.find(item => item.id === 'ver-laminar')?.summary ?? '', /on hold/i)
+  assert.match(authored.versions.find(item => item.id === 'ver-laminar')?.summary ?? '', /suspended/i)
   assert.match(authored.versions.find(item => item.id === 'ver-amulet-360')?.summary ?? '', /US investigational/i)
 })

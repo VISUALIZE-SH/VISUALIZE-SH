@@ -14,7 +14,7 @@
 #    comes from the Abbott eIFU (ARTMT600163776 Rev B, dated 2022), which predates the 35 mm
 #    "Navitor Titan" size added by supplement S013 (2023-09-15).
 
-observedAt: '2026-09-23'
+observedAt: '2026-10-03'
 
 sources:
   - id: src-medtronic-evolut-durability
@@ -147,6 +147,36 @@ sources:
     publishedAt: { value: '2022-09-12', precision: day }
     retrievedAt: '2026-09-23'
     access: public
+  - id: src-sapien-xt-original-ssed
+    title: SAPIEN XT model 9300TFX — original FDA SSED P130009
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130009B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt:
+      value: "2014-06-16"
+      precision: day
+    retrievedAt: "2026-10-03"
+    access: public
+    identifier: P130009
+  - id: src-sapien-ultra-resilia-ifu-s182
+    title: SAPIEN 3 / Ultra / Ultra RESILIA consolidated FDA Instructions for Use (P140031/S182)
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S182D.pdf
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: "2026-10-03"
+    access: public
+    identifier: P140031/S182
+  - id: src-sapien-s182
+    title: SAPIEN 3 / Ultra / Ultra RESILIA — asymptomatic severe AS indication expansion
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031S182
+    kind: regulatory
+    publisher: FDA
+    publishedAt:
+      value: "2025-04-30"
+      precision: day
+    retrievedAt: "2026-10-03"
+    access: public
+    identifier: P140031/S182
 
 families:
   - id: family-navitor
@@ -230,6 +260,20 @@ versions:
     sourceRefs:
       - sourceId: src-harmony-ssed
         locator: p.1-2, General Information and Device Description
+    reviewStatus: draft
+  - id: ver-sapien-xt
+    familyId: family-sapien
+    name: SAPIEN XT aortic valve (9300TFX)
+    graphEntityId: dev-sapien-xt
+    kind: device
+    clinicalRole: treats
+    model: 9300TFX
+    summary: >-
+      Historical balloon-expandable cobalt-chromium/bovine-pericardial/PET aortic valve. Distinct XT configuration used in PARTNER 2A; not the
+      later SAPIEN 3 design.
+    sourceRefs:
+      - sourceId: src-sapien-xt-original-ssed
+        locator: SSED PDF pp.1–2, Indications for Use and Device Description
     reviewStatus: draft
 
 decisions:
@@ -324,6 +368,43 @@ decisions:
       - sourceId: src-harmony-ssed
         locator: p.1, General Information and Indications for Use
     reviewStatus: draft
+  - id: decision-sapien-xt-original
+    identifier: P130009
+    rootIdentifier: P130009
+    versionIds:
+      - ver-sapien-xt
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: "2014-06-16"
+      precision: day
+    changeType: initial_authorization
+    summary: >-
+      Original US PMA for SAPIEN XT in severe symptomatic native calcific aortic stenosis in patients judged at high or greater surgical risk;
+      later indication expansions remain separate.
+    sourceRefs:
+      - sourceId: src-sapien-xt-original-ssed
+        locator: SSED p.1, Date of FDA Notice of Approval and Indications for Use
+    reviewStatus: draft
+  - id: decision-sapien-s182
+    identifier: P140031/S182
+    rootIdentifier: P140031
+    versionIds:
+      - ver-sapien-3
+      - ver-sapien-ultra-resilia
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: "2025-04-30"
+      precision: day
+    changeType: indication
+    summary: >-
+      Expands the SAPIEN 3, Ultra and Ultra RESILIA indications to selected patients with asymptomatic severe native calcific AS, assessed by
+      a Heart Team.
+    sourceRefs:
+      - sourceId: src-sapien-s182
+        locator: Decision Date and Approval Order Statement — asymptomatic severe native calcific aortic stenosis
+    reviewStatus: draft
 
 specs:
   # ---------------------------------------------------------------- SAPIEN 3
@@ -333,128 +414,160 @@ specs:
     values:
       tissue-treatment:
         value: Carpentier-Edwards ThermaFix leaflet treatment
-        loc: 'PDF p.100, Device Description §1.0'
+        loc: PDF p.100, Device Description §1.0
       repositionable:
         value: Not repositionable — single balloon-inflation deployment
-        loc: 'PDF p.100, Device Description §1.0'
-        context: 'No recapture/resheath mechanism described. Balloon-expandable design; "device recapture or retrieval" appears only as a procedural adverse-event category in the SSED, not as a designed feature.'
+        loc: PDF p.100, Device Description §1.0
+        context: >-
+          No recapture/resheath mechanism described. Balloon-expandable design; "device recapture or retrieval" appears only as a procedural
+          adverse-event category in the SSED, not as a designed feature.
       access-route:
-        value: 'Transfemoral (primary); transapical, transaortic (alternative)'
-        loc: 'PDF p.6 (eSheath access exclusions); PDF p.17 (clinical TF/TA/TAo access breakdown)'
+        value: Transfemoral (primary); transapical, transaortic (alternative)
+        loc: PDF p.6 (eSheath access exclusions); PDF p.17 (clinical TF/TA/TAo access breakdown)
       delivery-sheath:
         value: 14 Fr or 16 Fr Edwards eSheath introducer set
-        loc: 'PDF p.6, Contraindications/exclusion criteria'
+        loc: PDF p.6, Contraindications/exclusion criteria
         context: Labeled introducer size, not a measured maximum delivery-system OD.
       available-sizes:
-        value: '20, 23, 26, 29 mm (valve heights 15.5–22.5 mm)'
-        loc: 'PDF p.100, Table 2'
+        value: 20, 23, 26, 29 mm (valve heights 15.5–22.5 mm)
+        loc: PDF p.100, Table 2
       anatomy-range-summary:
-        value: '20mm 16–19mm; 23mm 18–22mm; 26mm 21–25mm; 29mm 24–28mm'
-        loc: 'PDF p.101, Table 3'
-        context: 'By size, TEE annulus diameter. CT area-derived range is also given per size (e.g. 20 mm = 273–345 mm²); valve-in-valve sizing for a failed surgical bioprosthesis uses a separate true-ID table (PDF p.101, Table 4).'
+        value: 20mm 16–19mm; 23mm 18–22mm; 26mm 21–25mm; 29mm 24–28mm
+        loc: PDF p.101, Table 3
+        context: >-
+          By size, TEE annulus diameter. CT area-derived range is also given per size (e.g. 20 mm = 273–345 mm²); valve-in-valve sizing for a
+          failed surgical bioprosthesis uses a separate true-ID table (PDF p.101, Table 4).
       indication-scope:
-        value: Native AS, any surgical risk; ViV for failed AV/MV, high+ risk
-        loc: 'PDF p.103, §2.0 Indications'
-        context: 'AS = aortic stenosis; ViV = valve-in-valve; risk per Heart Team judgment. Exact wording: (1) "relief of aortic stenosis in patients... judged... to be appropriate for the transcatheter heart valve replacement therapy" (no risk-stratum language — reflects the low-risk-inclusive label); (2) valve-in-valve for failed surgical aortic/mitral bioprosthesis, "high or greater risk... predicted risk of surgical mortality >=8% at 30 days."'
+        value: Native severe AS, including selected asymptomatic patients; valve-in-valve / mitral-ring indications have distinct risk criteria
+        source: src-sapien-ultra-resilia-ifu-s182
+        loc: PDF p.5, §2 Indications
+        context: Use the current IFU for complete population restrictions; historical decision records retain their earlier scopes.
       pivotal-trials:
-        value: PARTNER II trial — SAPIEN 3 high-risk cohort (PIIS3HR) + Nested Registry #7 (NR7); IDE G090216
+        value: PARTNER II trial — SAPIEN 3 high-risk cohort (PIIS3HR) + Nested Registry
         source: src-sapien-ssed
-        loc: 'p.21, Section X Summary of Primary Clinical Study'
+        loc: p.21, Section X Summary of Primary Clinical Study
 
   # ------------------------------------------------------- SAPIEN 3 Ultra RESILIA
+
   - version: ver-sapien-ultra-resilia
     category: aortic-tavr-valves
     source: src-sapien-ifu-s085
     values:
       frame-material:
-        value: Cobalt-chromium (shared SAPIEN 3 Ultra platform frame)
-        loc: 'PDF p.100, Device Description §1.0'
-        context: S141 (the RESILIA-specific supplement) changes tissue and skirt material only; frame design is inherited from the SAPIEN 3 Ultra platform described in this combined IFU.
+        value: Cobalt-chromium
+        source: src-sapien-ultra-resilia-ifu-s182
+        loc: PDF pp.1–2, §1 Device Description — SAPIEN 3 Ultra RESILIA
       expansion-mechanism:
         value: Balloon-expandable
-        loc: 'PDF p.100, Device Description §1.0'
+        source: src-sapien-ultra-resilia-ifu-s182
+        loc: PDF p.1, §1 Device Description
       leaflet-material:
-        value: Trileaflet bovine pericardium
-        loc: 'PDF p.100, Device Description §1.0'
+        value: Trileaflet RESILIA bovine pericardial tissue
+        source: src-sapien-ultra-resilia-ifu-s182
+        loc: PDF p.1, §1 Device Description
       sealing-design:
-        value: Polyethylene terephthalate (PET) inner and outer fabric skirts
-        loc: 'PDF p.100, Device Description §1.0'
-        context: The added outer skirt (vs. the base SAPIEN 3's single skirt) is what defines the "Ultra" platform; not specific to the RESILIA tissue change.
+        value: PET fabric skirt; Ultra platform includes an outer sealing skirt
+        source: src-sapien-ultra-resilia-ifu-s182
+        loc: PDF p.1, §1 Device Description
       tissue-treatment:
-        value: 'RESILIA tissue: anti-calcification treatment, dry packaging'
+        value: "RESILIA tissue: anti-calcification treatment, dry packaging"
         source: src-edwards-resilia-launch
-        loc: 'Press release body, paragraphs 2–4'
-        context: 'Non-glutaraldehyde-storage packaging. Edwards: "RESILIA tissue is a bovine pericardial tissue treated with advanced anti-calcification technology... dry tissue packaging conditions that facilitate ease of use... the only dry storage transcatheter heart valve on the U.S. market today" (as of the 2022-09-12 launch). This differs from the ThermaFix process used on non-RESILIA SAPIEN 3/SAPIEN 3 Ultra valves.'
+        loc: Press release body, paragraphs 2–4
+        context: >-
+          Non-glutaraldehyde-storage packaging. Edwards: "RESILIA tissue is a bovine pericardial tissue treated with advanced anti-calcification
+          technology... dry tissue packaging conditions that facilitate ease of use... the only dry storage transcatheter heart valve on the
+          U.S. market today" (as of the 2022-09-12 launch). This differs from the ThermaFix process used on non-RESILIA SAPIEN 3/SAPIEN 3 Ultra
+          valves.
       repositionable:
         value: Not repositionable — single balloon-inflation deployment
-        loc: 'PDF p.100, Device Description §1.0'
+        loc: PDF p.100, Device Description §1.0
         context: Same mechanism as base SAPIEN 3 Ultra platform.
       access-route:
-        value: 'Transfemoral (primary); transapical, transaortic (alternative)'
-        loc: 'PDF p.6 (eSheath access exclusions, shared platform document); no RESILIA-specific access statement located'
+        availability: not_yet_reviewed
+        source: src-sapien-ultra-resilia-ifu-s182
+        loc: Consolidated IFU §8 — procedural instructions
+        context: >-
+          Exact routes for the RESILIA configuration require a dedicated locator check; historical SAPIEN 3 trial access routes are not
+          transferred automatically.
       delivery-sheath:
-        value: 14 Fr or 16 Fr Edwards eSheath introducer set
-        loc: 'PDF p.6, Contraindications/exclusion criteria'
-        context: Shared Ultra-platform delivery system.
+        value: Commander systems 9750CM20/23/26/29; compatible Edwards sheath required
+        source: src-sapien-ultra-resilia-ifu-s182
+        loc: PDF p.9, Table 9; PDF p.12, §8.3.3
+        context: >-
+          Matching delivery systems are identified. Exact sheath model and French size remain unverified here; do not inherit those dimensions
+          from an earlier Ultra label.
       available-sizes:
-        availability: not_publicly_disclosed
-        loc: 'S141 Approval Order Statement (no size table); no RESILIA-specific IFU located'
-        context: The shared SAPIEN 3 Ultra platform (this IFU) lists 20/23/26 mm only (no 29 mm) — PDF p.100 Table 1 — but no source confirms this identically for the RESILIA-tissue configuration.
+        value: "Model 9755RSL: 20, 23, 26, 29 mm"
+        source: src-sapien-ultra-resilia-ifu-s182
+        loc: PDF p.2, Table 1
       anatomy-range-summary:
-        value: 'Platform range (20/23/26 mm only): 16–19 to 21–25 mm TEE'
-        loc: 'PDF p.101, Table 3 (Ultra sizes only)'
-        context: SAPIEN 3 Ultra platform; TEE annulus diameter. Not confirmed as RESILIA-specific; no dedicated RESILIA sizing table was located.
+        value: "20 mm: 16–19 mm TEE; 23 mm: 18–22 mm; 26 mm: 21–25 mm; 29 mm: 24–28 mm"
+        source: src-sapien-ultra-resilia-ifu-s182
+        loc: PDF p.2, Table 4
+        context: >-
+          Native-annulus sizing; CT-area ranges are 273–345, 338–430, 430–546 and 540–683 mm² respectively. Separate tables cover failed
+          surgical bioprostheses.
       indication-scope:
-        value: Native AS, any surgical risk; failed AV/MV bioprosthesis, high+
-        loc: 'PDF p.103, §2.0 Indications (shared platform document)'
-        context: AS = aortic stenosis; risk per Heart Team judgment. S141's approval order does not state an indication change; RESILIA is a tissue/material substitution on the existing Ultra indication.
+        value: Native severe AS, including selected asymptomatic patients; valve-in-valve / mitral-ring indications have distinct risk criteria
+        source: src-sapien-ultra-resilia-ifu-s182
+        loc: PDF p.5, §2 Indications
+        context: Use the current IFU for complete population restrictions; historical decision records retain their earlier scopes.
       pivotal-trials:
         availability: not_applicable
-        loc: 'S141 Approval Order Statement'
-        context: S141 is a device/material-change supplement (RESILIA tissue substitution on the existing SAPIEN 3 Ultra platform); the approval order does not reference a dedicated clinical trial, consistent with a bench/comparability-based design-change review.
+        loc: S141 Approval Order Statement
+        context: >-
+          S141 is a device/material-change supplement (RESILIA tissue substitution on the existing SAPIEN 3 Ultra platform); the approval order
+          does not reference a dedicated clinical trial, consistent with a bench/comparability-based design-change review.
 
   # ---------------------------------------------------------------- Evolut FX
+
   - version: ver-evolut-fx
     category: aortic-tavr-valves
     source: src-evolut-ifu
     values:
       tissue-treatment:
         value: Alpha-amino oleic acid (AOA) anti-mineralization treatment
-        loc: 'PDF p.32, §1.1 Evolut FX transcatheter aortic valve'
+        loc: PDF p.32, §1.1 Evolut FX transcatheter aortic valve
       leaflet-position:
         value: Supra-annular
-        loc: 'Supra-annular design benefits'
+        loc: Supra-annular design benefits
         source: src-medtronic-evolut-durability
         context: Manufacturer statement for the Evolut platform; the working leaflets sit above the native annulus.
       repositionable:
         value: Recapturable, up to 3 attempts
-        loc: 'PDF p.33, §1.2 Delivery catheter system; PDF p.20, deployment/recapture instructions'
-        context: 'Before the "point of no recapture"; deployment-knob mechanism.'
+        loc: PDF p.33, §1.2 Delivery catheter system; PDF p.20, deployment/recapture instructions
+        context: Before the "point of no recapture"; deployment-knob mechanism.
       access-route:
-        value: 'Transfemoral (primary); subclavian/axillary, direct aortic (alternative)'
-        loc: 'PDF p.10, Warnings and precautions (access-site criteria)'
+        value: Transfemoral (primary); subclavian/axillary, direct aortic (alternative)
+        loc: PDF p.10, Warnings and precautions (access-site criteria)
       delivery-sheath:
-        value: '23–29mm: 18 Fr (6.0mm) capsule; 34mm: 22 Fr (7.33mm) capsule'
-        loc: 'PDF p.33, §1.2 Delivery catheter system and Figure 2'
+        value: "23–29mm: 18 Fr (6.0mm) capsule; 34mm: 22 Fr (7.33mm) capsule"
+        loc: PDF p.33, §1.2 Delivery catheter system and Figure 2
         context: 14 Fr equivalent inline sheath (23-29mm valves); 18 Fr equivalent inline sheath (34mm valve).
       available-sizes:
         value: 23, 26, 29, 34 mm
-        loc: 'PDF p.32, Table 2'
+        loc: PDF p.32, Table 2
       anatomy-range-summary:
-        value: '23mm 17/18–20mm; 26mm 20–23mm; 29mm 23–26mm; 34mm 26–30mm'
-        loc: 'PDF p.32, Table 2'
-        context: Aortic annulus diameter by size. Annulus perimeter equivalents also given per size (diameter × π); TAV-in-SAV/TAV-in-TAV criteria apply to the failed valve's measured inner diameter.
+        value: 23mm 17/18–20mm; 26mm 20–23mm; 29mm 23–26mm; 34mm 26–30mm
+        loc: PDF p.32, Table 2
+        context: >-
+          Aortic annulus diameter by size. Annulus perimeter equivalents also given per size (diameter × π); TAV-in-SAV/TAV-in-TAV criteria
+          apply to the failed valve's measured inner diameter.
       indication-scope:
         value: Native AS, appropriate for THV; ViV for failed AV, high+ risk
-        loc: 'PDF p.35, §2 Indications'
+        loc: PDF p.35, §2 Indications
         context: THV per Heart Team; failed surgical/transcatheter bioprosthetic AV.
       pivotal-trials:
         value: STS/ACC TVT Registry real-world redo-TAVR analysis (basis for PMA P130021/S174)
         source: src-evolut-ssed
-        loc: 'p.5 (repo tmp/pdfs/P130021S174B.txt), Section X Summary of Primary Clinical Study'
-        context: This registry analysis specifically supports the 2025 redo-TAVR indication (decision-evolut-s174). The base Evolut FX device generation itself was introduced by a 2021 design-change supplement (decision-evolut-fx-s094) that cites no dedicated new clinical trial.
+        loc: p.5 (repo tmp/pdfs/P130021S174B.txt), Section X Summary of Primary Clinical Study
+        context: >-
+          This registry analysis specifically supports the 2025 redo-TAVR indication (decision-evolut-s174). The base Evolut FX device
+          generation itself was introduced by a 2021 design-change supplement (decision-evolut-fx-s094) that cites no dedicated new clinical
+          trial.
 
   # -------------------------------------------------------------- Evolut FX+
+
   - version: ver-evolut-fx-plus
     category: aortic-tavr-valves
     source: src-evolut-ifu
@@ -526,56 +639,72 @@ specs:
         loc: Device/trade-name field
       frame-material:
         value: Nitinol (self-expanding, radiopaque)
-        loc: 'PDF p.3, Description'
+        loc: PDF p.3, Description
       expansion-mechanism:
         value: Self-expanding
-        loc: 'PDF p.3, Description'
+        loc: PDF p.3, Description
       leaflet-material:
         value: Trileaflet bovine pericardium
-        loc: 'PDF p.3, Description'
+        loc: PDF p.3, Description
       sealing-design:
-        value: 'NaviSeal cuff: inner/outer polyethylene layers fill voids'
-        loc: 'PDF p.3, Description'
-        context: Between the native valve and stent.
+        value: NaviSeal polyethylene (UHMWPE) inner/outer cuff fabric
+        loc: Abbott IFU PDF p.13, Product Materials substance table; US IFU device description
+        context: >-
+          US IFU says polyethylene; Product Materials table specifies ultra-high molecular weight polyethylene. These are compatible
+          polymer/grade terms.
+        observedAt: "2026-10-03"
       tissue-treatment:
         value: Glutaraldehyde-crosslinked leaflet, Linx anticalcification
-        loc: 'PDF p.3, Description'
+        loc: PDF p.3, Description
         context: Leaflet pericardium preserved/crosslinked in glutaraldehyde.
       leaflet-position:
         value: Intra-annular leaflets
-        loc: 'PDF p.9, Performance Characteristics'
-        context: 'Exact wording: "contains intra-annular leaflets which provide early function and hemodynamic stability prior to final valve deployment."'
+        loc: PDF p.9, Performance Characteristics
+        context: >-
+          Exact wording: "contains intra-annular leaflets which provide early function and hemodynamic stability prior to final valve
+          deployment."
       repositionable:
         value: Re-sheathable/repositionable up to 2 times
-        loc: 'PDF p.4, FlexNav Delivery System'
+        loc: PDF p.4, FlexNav Delivery System
         context: Provided the valve has not been fully deployed.
       access-route:
-        value: 'Transfemoral (primary); subclavian, axillary (alternative)'
-        loc: 'PDF p.4, FlexNav Delivery System'
+        value: Transfemoral (primary); subclavian, axillary (alternative)
+        loc: PDF p.4, FlexNav Delivery System
       delivery-sheath:
-        value: '23/25mm: 14 Fr (6.0mm); 27/29mm: 15 Fr (6.3mm) capsule'
-        loc: 'PDF p.4, Table 3'
-        context: Compatible with separate 18 Fr / 19 Fr introducer sheaths. FlexNav's own integrated sheath is reported as an "equivalent" French size (labeled), not a directly measured true OD; the capsule OD in mm is directly measured.
+        value: "23/25mm: 14 Fr (6.0mm); 27/29mm: 15 Fr (6.3mm) capsule"
+        loc: PDF p.4, Table 3
+        context: >-
+          Compatible with separate 18 Fr / 19 Fr introducer sheaths. FlexNav's own integrated sheath is reported as an "equivalent" French size
+          (labeled), not a directly measured true OD; the capsule OD in mm is directly measured.
       available-sizes:
         value: 23, 25, 27, 29 mm
-        loc: 'PDF p.3, Table 1'
-        context: A larger 35 mm "Navitor Titan" size was added by FDA supplement P190023/S013 (2023-09-15, per openFDA), after this 2022 IFU revision; not covered by this document.
+        loc: PDF p.3, Table 1
+        context: >-
+          A larger 35 mm "Navitor Titan" size was added by FDA supplement P190023/S013 (2023-09-15, per openFDA), after this 2022 IFU revision;
+          not covered by this document.
       anatomy-range-summary:
-        value: '23mm 19–21mm; 25mm 21–23mm; 27mm 23–25mm; 29mm 25–27mm'
-        loc: 'PDF p.3–4, Table 2'
+        value: 23mm 19–21mm; 25mm 21–23mm; 27mm 23–25mm; 29mm 25–27mm
+        loc: PDF p.3–4, Table 2
         context: Annulus diameter by size. Ascending aorta diameter, annulus area (mm²) and perimeter (mm) ranges are also tabulated per size.
       indication-scope:
         value: Native AS, high+ surgical risk (STS mortality >=8% at 30d)
         source: src-navitor-original
         loc: Approval Order Statement (base PMA P190023, 2021-09-17)
-        context: 'STS-based predicted mortality. This is the base-PMA indication inherited via the S002 design-change supplement; no US labeling supplement broadening the risk category (e.g. to intermediate/low risk) was identified among P190023 supplements through S034 (2026-07-09, per openFDA). The international IFU used for design attributes states a similar but not identical "high or extreme risk" phrasing (p.5, Indications) — not used here because it is not the US-specific label.'
+        context: >-
+          STS-based predicted mortality. This is the base-PMA indication inherited via the S002 design-change supplement; no US labeling
+          supplement broadening the risk category (e.g. to intermediate/low risk) was identified among P190023 supplements through S034
+          (2026-07-09, per openFDA). The international IFU used for design attributes states a similar but not identical "high or extreme risk"
+          phrasing (p.5, Indications) — not used here because it is not the US-specific label.
       pivotal-trials:
         value: NCT04011722 (trial number listed against the P190023/S002 FDA record)
         source: src-navitor-s002
         loc: Clinical Trials field
-        context: The public FDA record lists this trial number but does not name the study or describe its design; S002 is a bench/comparability-based design-change supplement (NaviSeal outer skirt), and the approval order itself references no clinical trial.
+        context: >-
+          The public FDA record lists this trial number but does not name the study or describe its design; S002 is a bench/comparability-based
+          design-change supplement (NaviSeal outer skirt), and the approval order itself references no clinical trial.
 
   # ------------------------------------------------------------ ACURATE neo2
+
   - version: ver-acurate-neo2
     category: aortic-tavr-valves
     source: src-acurate-neo2-specsheet
@@ -703,6 +832,7 @@ specs:
       leaflet-material:
         value: Bovine jugular vein segment with native venous valve, sutured into the frame
         loc: 'p.2, V. Device Description'
+        context: 'The valve is sutured into the platinum-iridium frame; the SSED describes both valve tissue and frame but does not identify the permanent suture polymer.'
       tissue-treatment:
         value: Glutaraldehyde-fixed; no proprietary anti-calcification process
         source: src-melody-ifu
@@ -754,7 +884,7 @@ specs:
       leaflet-material:
         value: Porcine pericardial valve, PTFE or UHMWPE sutures
         loc: 'p.2, V. Device Description'
-        context: PTFE-impregnated polyester suture (TPV 22) or UHMWPE suture (TPV 25).
+        context: 'PTFE-impregnated polyester suture for TPV 22; UHMWPE suture for TPV 25. Treat these as size-specific permanent fixation materials, not a single interchangeable material.'
       tissue-treatment:
         value: Alpha-amino oleic acid (AOA) anti-mineralization treatment
         loc: 'p.2, V. Device Description'
@@ -792,3 +922,69 @@ specs:
         value: Harmony TPV IDE study — EFS + pivotal phases pooled
         loc: 'p.34, X. Summary of Primary Clinical Study'
         context: IDE G120175.
+
+claims:
+  - id: claim-sapien-xt-frame-material
+    versionId: ver-sapien-xt
+    category: design
+    key: frame-material
+    label: Frame material
+    value: Cobalt-chromium frame
+    availability: reported
+    basis: directly_reported
+    comparisonAttributeId: frame-material
+    observedAt: "2026-10-03"
+    sourceRefs:
+      - sourceId: src-sapien-xt-original-ssed
+        locator: SSED PDF p.2, Section V Device Description
+    reviewStatus: draft
+  - id: claim-sapien-xt-leaflet-material
+    versionId: ver-sapien-xt
+    category: design
+    key: leaflet-material
+    label: Leaflet material
+    value: Bovine pericardium
+    availability: reported
+    basis: directly_reported
+    comparisonAttributeId: leaflet-material
+    observedAt: "2026-10-03"
+    sourceRefs:
+      - sourceId: src-sapien-xt-original-ssed
+        locator: SSED PDF p.2, Section V Device Description
+    reviewStatus: draft
+  - id: claim-sapien-xt-fabric-cover
+    versionId: ver-sapien-xt
+    category: design
+    key: fabric-cover
+    label: Fabric / cover
+    value: Polyethylene terephthalate (PET) skirt
+    availability: reported
+    basis: directly_reported
+    comparisonAttributeId: fabric-cover
+    observedAt: "2026-10-03"
+    sourceRefs:
+      - sourceId: src-sapien-xt-original-ssed
+        locator: SSED PDF p.2, Section V Device Description
+    reviewStatus: draft
+
+indications:
+  - id: ifu-sapien-2025-asymptomatic
+    decisionId: decision-sapien-s182
+    versionIds:
+      - ver-sapien-3
+      - ver-sapien-ultra-resilia
+    jurisdiction: US
+    effectiveDate:
+      value: "2025-04-30"
+      precision: day
+    text: >-
+      Selected asymptomatic severe native calcific AS patients may undergo TAVR to reduce risks from disease progression, following Heart
+      Team assessment.
+    textType: paraphrase
+    population: Patients with asymptomatic severe native calcific AS considered appropriate by a Heart Team
+    anatomy: Native aortic valve
+    restrictions: Label expansion is specific to the listed SAPIEN systems. Medicare coverage requirements are a separate policy.
+    sourceRefs:
+      - sourceId: src-sapien-s182
+        locator: Decision Date and Approval Order Statement — asymptomatic severe native calcific aortic stenosis
+    reviewStatus: draft
