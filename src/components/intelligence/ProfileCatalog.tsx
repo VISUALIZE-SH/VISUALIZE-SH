@@ -1,5 +1,7 @@
+import { useEffect } from 'react'
 import type { GraphNodeData } from '../../types/entities'
 import type { IntelligenceData } from '../../types/intelligence'
+import EvidenceReferences from './EvidenceReferences'
 
 interface ProfileCatalogProps {
   data: IntelligenceData
@@ -22,6 +24,13 @@ const GROUP_LABELS: Record<string, string> = {
  * concise landscape profile built only from authored graph fields.
  */
 export default function ProfileCatalog({ data, therapyNodes, nodesById, onOpenVersion, onOpenNode }: ProfileCatalogProps) {
+  const targetId = window.location.hash.slice(1)
+  useEffect(() => {
+    if (!targetId.startsWith('profile-')) return
+    const card = document.getElementById(targetId)
+    card?.scrollIntoView({ block: 'center' })
+    card?.focus({ preventScroll: true })
+  }, [targetId, data])
   const deeplyProfiledIds = new Set(data.families.flatMap((family) => family.entityIds))
   const landscapeOnly = therapyNodes
     .filter((node) => !deeplyProfiledIds.has(node.id))
@@ -36,7 +45,7 @@ export default function ProfileCatalog({ data, therapyNodes, nodesById, onOpenVe
       <header><h3 id="deep-profiles-title">Source-linked versions</h3><span>{data.versions.length}</span></header>
       <div className="profile-family-grid">{data.families.map((family) => <article key={family.id}>
         <span className="eyebrow">{family.manufacturer}</span><h3>{family.name}</h3><p>{family.description}</p>
-        <ul>{data.versions.filter((version) => version.familyId === family.id).map((version) => <li key={version.id}><button onClick={() => onOpenVersion(version.id)}>{version.name}<span>View profile →</span></button></li>)}</ul>
+        <ul>{data.versions.filter((version) => version.familyId === family.id).map((version) => <li key={version.id}><button onClick={() => onOpenVersion(version.id)}>{version.name}<span>View profile →</span></button><EvidenceReferences data={data} versionId={version.id} name={version.name} compact /></li>)}</ul>
       </article>)}</div>
     </section>}
 
@@ -49,7 +58,7 @@ export default function ProfileCatalog({ data, therapyNodes, nodesById, onOpenVe
           const therapy = node.entity
           const company = therapy.company ? nodesById.get(therapy.company)?.label : undefined
           const conditions = therapy.treats.map((id) => nodesById.get(id)?.label ?? id)
-          return <article key={node.id}>
+          return <article key={node.id} id={`profile-${node.id}`} tabIndex={-1}>
             <div className="profile-landscape-meta"><span>{therapy.subtype ?? node.category ?? therapy.therapyType}</span><span className={`profile-status profile-status-${therapy.regulatoryStatus}`}>{therapy.regulatoryStatus === 'unknown' ? 'Unverified' : therapy.regulatoryStatus}</span></div>
             <h4>{therapy.name}</h4>
             {company && <p className="profile-maker">{company}</p>}
@@ -63,6 +72,7 @@ export default function ProfileCatalog({ data, therapyNodes, nodesById, onOpenVe
               <button type="button" onClick={() => onOpenNode(node.id)}>Open in Explore →</button>
               {therapy.links?.slice(0, 1).map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>)}
             </div>
+            <EvidenceReferences data={data} entityId={node.id} name={therapy.name} compact />
           </article>
         })}</div>
       </section>

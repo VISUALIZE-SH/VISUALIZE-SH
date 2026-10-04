@@ -33,6 +33,7 @@ on someone else's behalf without reviewing the diff.
 | Exact-size comparison observation | `data/intelligence/comparative-pilot.yaml` | Same intelligence build; comparison rules in `docs/COMPARATIVE_DATA_MODEL.md` |
 | Device/drug class or standard attribute | `data/intelligence/taxonomy.yaml` | Same intelligence build; Data spec-table columns |
 | Product specs, FDA decisions for a class | `data/intelligence/catalog/<class>.yaml` | Same intelligence build; format in `data/intelligence/catalog/README.md` |
+| Consolidated references and exact citation metadata | `data/intelligence/catalog/references-*.yaml`, `data/intelligence/citations.yaml` | Same intelligence build; direct patent connections required; methodology in `docs/REFERENCE_BIBLIOGRAPHY.md` |
 | Local flagship preview selection | `data/editorial-issues.yaml` | `npm run newsletter:local` → `public/previews/newsletter/` |
 | Weekly public/email digest | `data/news.yaml` | `npm run newsletter:render -- --date YYYY-MM-DD` → `public/digests/` |
 | Shareable UI filter or selection | `src/data/workspace-state.ts`, then `src/App.tsx` | `scripts/workspace-state.test.ts` and browser back/forward checks |

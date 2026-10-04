@@ -17,6 +17,7 @@ import {
 } from '../../data/intelligence'
 import { projectSpecTables, versionPlacement, type Placement } from '../../data/spec-tables'
 import ComparisonView from './ComparisonView'
+import EvidenceReferences from './EvidenceReferences'
 import { GroupedTable, JumpNav, SpecTables, WIDTH, productInfo, sourcesFor } from './DataTables'
 import './intelligence.css'
 
@@ -228,7 +229,7 @@ export default function DataWorkspace({
         : activeTab === 'specs' ? <SpecTables data={data} tables={specTables} onOpenAtlas={onOpenAtlas} />
           : activeTab === 'outcomes' ? <GroupedTabs groups={outcomeGroups} render={group => <GroupedTable<OutcomeRow> key={group.id} id={group.id} label={group.label} rows={group.rows}
             rowKey={row => row.id} product={outcomeProduct} sources={row => sourcesFor(data, splitIds(row.sourceIds))}
-            detail={row => <OutcomeDetail row={row} />}
+            detail={row => <><OutcomeDetail row={row} /><div className="intel-reference-grid">{(row.versionIds.length ? row.versionIds : data.versions.filter(version => version.familyId === outcomeFamily(row)?.id).map(version => version.id)).map(id => <article key={id}><h3>{versionName(data, id)}</h3><EvidenceReferences data={data} versionId={id} name={versionName(data, id)} compact /></article>)}</div></>}
             columns={[
               { id: 'trial', label: 'Trial', width: WIDTH.cell, cell: row => ({ content: <>{row.trial}{isTrialHalted(row.trialId) && <span className="intel-lifecycle-tag">Halted</span>}{row.nctId && <small>{row.nctId}</small>}</> }) },
               { id: 'endpoint', label: 'Endpoint', width: WIDTH.wide, cell: row => ({ content: <>{row.endpoint}<small>{row.hierarchy.replace(/_/g, ' ')}</small></> }) },
@@ -238,6 +239,7 @@ export default function DataWorkspace({
             ]} />} />
             : activeTab === 'history' ? <GroupedTabs groups={historyGroups} render={group => <GroupedTable<HistoryItem> key={group.id} id={group.id} label={group.label} rows={group.rows}
               rowKey={row => `${row.id}:${row.versionId}`} product={row => productInfo(data, versionById(data, row.versionId))} sources={row => sourcesFor(data, splitIds(row.sourceIds))}
+              detail={row => <EvidenceReferences data={data} versionId={row.versionId} name={versionName(data, row.versionId)} />}
               columns={[
                 { id: 'date', label: 'Date', width: WIDTH.narrow, cell: row => ({ gap: !row.date, content: row.date ? formatEvidenceDate(row.date) : '—' }) },
                 { id: 'record', label: 'Record', width: WIDTH.cell, cell: row => ({ content: row.record }) },
@@ -246,6 +248,7 @@ export default function DataWorkspace({
               ]} />} />
               : <GroupedTabs groups={figureGroups} render={group => <GroupedTable<FigureItem> key={group.id} id={group.id} label={group.label} rows={group.rows}
                 rowKey={row => `${row.media.id}:${row.versionId}`} product={row => productInfo(data, versionById(data, row.versionId))} sources={row => sourcesFor(data, row.media.sourceRefs.map(ref => ref.sourceId))}
+                detail={row => <EvidenceReferences data={data} versionId={row.versionId} name={versionName(data, row.versionId)} />}
                 columns={[
                   { id: 'figure', label: 'Figure', width: WIDTH.cell, cell: row => ({ content: <a className="intel-figure-link" href={assetUrl(row.media.assetPath)} target="_blank" rel="noreferrer"><img src={assetUrl(row.media.assetPath)} alt={row.media.alt} loading="lazy" /></a> }) },
                   { id: 'title', label: 'Title', width: WIDTH.cell, cell: row => ({ content: <>{row.media.title}{row.media.reviewStatus === 'draft' && <small>draft</small>}</> }) },

@@ -1,24 +1,7 @@
-# needs-fulltext:
-#   - attribute: delivery-sheath (V-Wave Ventura interatrial shunt, ver-vwave-ventura)
-#     note: Reviewed sources (ESC Heart Failure 2024 fluid-dynamics paper; Structural Heart
-#       2025 review) describe a "custom delivery catheter" without a stated French size.
-#       RK.md blog references a sheath but does not state Fr; not used as it is not a
-#       peer-reviewed/primary source.
-#   - attribute: delivery-sheath (Edwards APTURE transcatheter shunt, ver-edwards-apture)
-#     note: WebSearch snippets suggested 20F (transjugular) or 24F introducer figures but
-#       the underlying sources (JACC:CVI 2023 Hibbert et al., doi:10.1016/j.jcin.2023.03.012;
-#       ALT-FLOW II design paper, doi:10.1093/ejhf/xuaf016) are paywalled and were not
-#       independently confirmed in full text, so the value is omitted rather than guessed.
-#   - attribute: delivery-sheath (A-FLUX Reducer System, ver-aflux)
-#     note: vahaticor.com "Device & Technology" page describes transvenous delivery but does
-#       not publish a French size.
-#   - attribute: post-implant-therapy (Corvia Atrial Shunt, ver-corvia-shunt; V-Wave Ventura,
-#       ver-vwave-ventura)
-#     note: Corvia US patient guide (00697AW Rev01, 2024-02) only says "take your medications
-#       as directed"; no specific antithrombotic regimen is publicly stated. The V-Wave
-#       ESC Heart Failure 2024 paper and the Structural Heart 2025 review do not state a
-#       labeled post-implant antithrombotic regimen for Ventura (investigational device, no
-#       US labeling exists yet).
+# Evidence gaps after the 2026-10-03 audit:
+# A-FLUX introducer French size and Corvia labeled post-implant medication regimen
+# remain unverified. Ventura 14 Fr and APTURE 20 F are now supported by primary
+# documents. Trial medication protocols do not constitute approved device labeling.
 observedAt: '2026-09-23'
 sources:
   - id: src-cardiomems-ssed-orig
@@ -27,7 +10,7 @@ sources:
     kind: regulatory
     publisher: FDA
     publishedAt: { value: '2014-05-28', precision: day }
-    retrievedAt: '2026-09-23'
+    retrievedAt: "2026-10-03"
     access: public
     identifier: P100045
   - id: src-cardiomems-s056-ssed
@@ -36,7 +19,7 @@ sources:
     kind: regulatory
     publisher: FDA
     publishedAt: { value: '2022-02-18', precision: day }
-    retrievedAt: '2026-09-23'
+    retrievedAt: "2026-10-03"
     access: public
     identifier: P100045/S056
   - id: src-cordella-ssed
@@ -45,7 +28,7 @@ sources:
     kind: regulatory
     publisher: FDA
     publishedAt: { value: '2024-06-20', precision: day }
-    retrievedAt: '2026-09-23'
+    retrievedAt: "2026-10-03"
     access: public
     identifier: P230040
   - id: src-cordella-labeling
@@ -72,7 +55,7 @@ sources:
     kind: publication
     publisher: EuroIntervention
     publishedAt: { value: '2020-08-28', precision: day }
-    retrievedAt: '2026-09-23'
+    retrievedAt: "2026-10-03"
     access: public
     identifier: 'doi:10.4244/EIJ-D-19-00873'
   - id: src-atrial-shunting-review-2025
@@ -90,7 +73,7 @@ sources:
     kind: publication
     publisher: ESC Heart Failure
     publishedAt: { value: '2024-05-22', precision: day }
-    retrievedAt: '2026-09-23'
+    retrievedAt: "2026-10-03"
     access: public
     identifier: 'doi:10.1002/ehf2.14859'
   - id: src-corvia-patient-guide
@@ -99,7 +82,7 @@ sources:
     kind: manufacturer
     publisher: Corvia Medical
     publishedAt: { value: '2024-02', precision: month }
-    retrievedAt: '2026-09-23'
+    retrievedAt: "2026-10-03"
     access: public
   - id: src-frontiers-corvia-2019
     title: 'Interatrial Shunt Device for Heart Failure With Preserved Ejection Fraction'
@@ -116,22 +99,105 @@ sources:
     kind: manufacturer
     publisher: Shockwave Medical
     publishedAt: { value: '2025-03-26', precision: day }
-    retrievedAt: '2026-09-23'
+    retrievedAt: "2026-10-03"
     access: public
   - id: src-vahaticor-home
     title: 'VahatiCor - Advancing Treatment for Coronary Microvascular Dysfunction (CMD)'
     url: https://vahaticor.com/
     kind: manufacturer
     publisher: VahatiCor, Inc.
-    retrievedAt: '2026-09-23'
+    retrievedAt: "2026-10-03"
     access: public
   - id: src-vahaticor-device
     title: 'A-FLUX Reducer System: How It Works'
     url: https://vahaticor.com/device-and-technology/
     kind: manufacturer
     publisher: VahatiCor, Inc.
-    retrievedAt: '2026-09-23'
+    retrievedAt: "2026-10-03"
     access: public
+  - id: src-fire1-future-hf-primary
+    title: "First-in-Human Implantable Inferior Vena Cava Sensor for Remote Care in Heart Failure: FUTURE-HF"
+    url: https://www.jacc.org/doi/10.1016/j.jchf.2025.01.019
+    kind: publication
+    publisher: "JACC: Heart Failure"
+    retrievedAt: "2026-10-03"
+    access: public
+    publishedAt:
+      value: "2025-04-09"
+      precision: day
+    identifier: doi:10.1016/j.jchf.2025.01.019
+  - id: src-fire1-current-manufacturer
+    title: FIRE1 — investigational device and company information
+    url: https://fire1foundry.com/about/
+    kind: manufacturer
+    publisher: FIRE1
+    retrievedAt: "2026-10-03"
+    access: public
+  - id: src-vlap-current-manufacturer
+    title: Vectorious — V-LAP investigational device information
+    url: https://www.vectoriousmedtech.com/
+    kind: manufacturer
+    publisher: Vectorious Medical Technologies
+    retrievedAt: "2026-10-03"
+    access: public
+  - id: src-vlap-vector-hf-registry
+    title: VECTOR-HF clinical investigation of the V-LAP system
+    url: https://clinicaltrials.gov/study/NCT03775161
+    kind: registry
+    publisher: ClinicalTrials.gov
+    retrievedAt: "2026-10-03"
+    access: public
+    identifier: NCT03775161
+  - id: src-corvia-reduce-lap-hf-i-design
+    title: "REDUCE LAP-HF I: rationale and design of the randomized trial (author manuscript)"
+    url: https://eprints.gla.ac.uk/128358/1/128358.pdf
+    kind: publication
+    publisher: "Circulation: Heart Failure / University of Glasgow"
+    retrievedAt: "2026-10-03"
+    access: public
+    publishedAt:
+      value: "2016"
+      precision: year
+    identifier: doi:10.1161/CIRCHEARTFAILURE.116.003025
+  - id: src-corvia-tct-2019
+    title: Corvia IASD for HFpEF — Scott Lilly, TCT 2019 presentation
+    url: https://corviamedical.com/wp-content/uploads/2021/06/Corvia_IASD_for_HFpEF_Lilly_Ohio_State_TCT2019.pdf
+    kind: manufacturer
+    publisher: Corvia Medical / Scott Lilly
+    retrievedAt: "2026-10-03"
+    access: public
+    publishedAt:
+      value: "2019"
+      precision: year
+  - id: src-corvia-responder-current
+    title: RESPONDER-HF — current trial design and follow-up status
+    url: https://us.corviamedical.com/healthcare-professionals/reduce-lap-hf-clinical-program/responder-hf/
+    kind: manufacturer
+    publisher: Corvia Medical
+    retrievedAt: "2026-10-03"
+    access: public
+    identifier: NCT05425459
+  - id: src-vwave-fda-panel-briefing
+    title: V-Wave Ventura — sponsor briefing document for the December 2025 FDA panel
+    url: https://www.fda.gov/media/189899/download
+    kind: regulatory
+    publisher: FDA / V-Wave
+    retrievedAt: "2026-10-03"
+    access: public
+    publishedAt:
+      value: "2025-10-30"
+      precision: day
+  - id: src-apture-alt-flow-ii-primary
+    title: ALT-FLOW II — randomized sham-controlled left atrial-to-coronary sinus shunt trial rationale and design
+    url: https://academic.oup.com/eurjhf/advance-article/doi/10.1093/ejhf/xuaf016/8415028
+    kind: publication
+    publisher: European Journal of Heart Failure
+    retrievedAt: "2026-10-03"
+    access: public
+    publishedAt:
+      value: "2026-01-08"
+      precision: day
+    identifier: doi:10.1093/ejhf/xuaf016
 
 families:
   - id: family-cardiomems
@@ -151,19 +217,23 @@ families:
     manufacturer: FIRE1
     entityIds: [dev-fire1-norm]
     conditionIds: [cond-hfref, cond-hfpef]
-    description: 'IVC-area sensor, renamed from the FIRE1 System to the NORM System during clinical development.'
+    description: >-
+      IVC-area monitoring system. The 2025 FUTURE-HF report includes four earlier implants and 46 implants with an updated sensor design; it is
+      not evidence that every commercial-development configuration is identical.
   - id: family-vlap
     name: V-LAP
     manufacturer: Vectorious Medical Technologies
     entityIds: [dev-vlap]
     conditionIds: [cond-hfref, cond-hfpef]
-    description: 'Leadless transseptal left-atrial pressure sensor, successor to the earlier lead-based HeartPOD concept.'
+    description: >-
+      Leadless transseptal left-atrial pressure sensor. Dimensions below refer to the 2020 first-in-human configuration; later configurations
+      require their own evidence.
   - id: family-corvia-shunt
     name: Corvia Atrial Shunt
     manufacturer: Corvia Medical
     entityIds: [dev-corvia-shunt]
     conditionIds: [cond-hfpef]
-    description: 'Fixed 8 mm orifice interatrial shunt, formerly marketed as the IASD System II.'
+    description: Fixed 8 mm orifice interatrial shunt, originally named IASD System II; current US evidence concerns investigational clinical trials.
   - id: family-vwave-ventura
     name: Ventura Interatrial Shunt
     manufacturer: 'V-Wave (Johnson & Johnson MedTech)'
@@ -218,8 +288,10 @@ versions:
     clinicalRole: monitors
     summary: 'Passive IVC-area sensor read by an external belt-like reader; investigational, no US marketing authorization.'
     sourceRefs:
-      - sourceId: src-rpm-review-2025
-        locator: 'Section 3.3, FIRE1 System, Now NORM System'
+      - sourceId: src-fire1-future-hf-primary
+        locator: Methods — system description; Screening and implantation procedure
+      - sourceId: src-fire1-current-manufacturer
+        locator: Investigational device disclaimer
     reviewStatus: draft
   - id: ver-vlap
     familyId: family-vlap
@@ -229,7 +301,9 @@ versions:
     summary: 'Leadless, battery-free left-atrial pressure sensor anchored at the interatrial septum; investigational, no US marketing authorization.'
     sourceRefs:
       - sourceId: src-vlap-eurointervention
-        locator: 'Article body, device description paragraph'
+        locator: Device description and first-in-human implant procedure
+      - sourceId: src-vlap-current-manufacturer
+        locator: Investigational device disclaimer
     reviewStatus: draft
   - id: ver-corvia-shunt
     familyId: family-corvia-shunt
@@ -238,8 +312,10 @@ versions:
     clinicalRole: treats
     summary: 'Fixed-diameter double-disc interatrial shunt; investigational, evaluated most recently in REDUCE LAP-HF II and the confirmatory RESPONDER-HF trial.'
     sourceRefs:
-      - sourceId: src-atrial-shunting-review-2025
-        locator: "'Corvia Atrial Shunt' section"
+      - sourceId: src-corvia-reduce-lap-hf-i-design
+        locator: Author manuscript pp.6–8 — The Investigational Device
+      - sourceId: src-corvia-responder-current
+        locator: Current RESPONDER-HF study design and In Follow-up status
     reviewStatus: draft
   - id: ver-vwave-ventura
     familyId: family-vwave-ventura
@@ -249,7 +325,9 @@ versions:
     summary: 'Second-generation, valveless hourglass interatrial shunt; investigational, evaluated in RELIEVE-HF.'
     sourceRefs:
       - sourceId: src-vwave-fluid-dynamics
-        locator: 'Main text, device description paragraph'
+        locator: Device description; author full text DOI 10.1002/ehf2.14859
+      - sourceId: src-vwave-fda-panel-briefing
+        locator: Printed pp.43–45, sections 3.2.1–3.2.3; investigational device submitted for panel review
     reviewStatus: draft
   - id: ver-edwards-apture
     familyId: family-edwards-apture
@@ -258,8 +336,8 @@ versions:
     clinicalRole: treats
     summary: 'Bare-nitinol left atrium-to-coronary-sinus shunt delivered by percutaneous atriotomy; investigational, evaluated in the ALT-FLOW program.'
     sourceRefs:
-      - sourceId: src-atrial-shunting-review-2025
-        locator: "'Apture Shunt System' section"
+      - sourceId: src-apture-alt-flow-ii-primary
+        locator: Device and procedure; Figure 1; Trial design
     reviewStatus: draft
   - id: ver-coronary-sinus-reducer
     familyId: family-coronary-sinus-reducer
@@ -417,198 +495,249 @@ specs:
 
   - version: ver-fire1-norm
     category: hf-pressure-sensors
-    source: src-rpm-review-2025
+    source: src-fire1-future-hf-primary
     values:
       device-design:
-        value: 'Passive, battery-free crown implant: nitinol/gold-strand LC circuit'
-        loc: 'Section 3.3, FIRE1 System, Now NORM System'
-        context: 'Nitinol wrapped in polymer-coated gold strands connected to a capacitor. Inductance changes as the vessel wall moves with respiration and the cardiac cycle.'
+        value: "Passive, battery-free crown implant: nitinol/gold-strand LC circuit"
+        loc: Methods — system description; Figure 1
+        context: >-
+          Passive nitinol/gold/capacitor circuit; the first four implants used an earlier design and the subsequent 46 an updated design.
+          Reported materials apply to the study system, not every later NORM configuration.
       sensor-location:
-        value: 'Inferior vena cava, between the renal and hepatic veins'
-        loc: 'Section 3.3, FIRE1 System, Now NORM System'
+        value: Inferior vena cava, between the renal and hepatic veins
+        loc: Methods — Screening and implantation procedure; Figure 2
       measured-parameter:
-        value: 'IVC cross-sectional area and collapsibility; no calibration required'
-        loc: 'Section 3.3, FIRE1 System, Now NORM System'
+        value: IVC cross-sectional area and collapsibility; no calibration required
+        loc: Methods — system description and Screening and implantation procedure
       power-telemetry:
-        value: 'Battery-free; interrogated (~1 min) via belt-like abdomen reader'
-        loc: 'Section 3.3, FIRE1 System, Now NORM System'
-        context: 'Passive resonant circuit; data uploaded to a cloud application.'
+        value: Battery-free; interrogated (~1 min) via belt-like abdomen reader
+        loc: Methods — system description; Figure 1
+        context: Passive resonant circuit; data uploaded to a cloud application.
       access-route:
-        value: 'Femoral venous access'
-        loc: 'Section 3.3, FIRE1 System, Now NORM System'
+        value: Femoral venous access
+        loc: Methods — Screening and implantation procedure; Figure 2
       delivery-sheath:
-        value: '16 Fr introducer sheath; custom delivery system'
-        loc: 'Section 3.3, FIRE1 System, Now NORM System'
-        context: 'Placed under fluoroscopic guidance; placement confirmed by cavagram.'
+        value: 16 F introducer sheath, 70 cm length
+        loc: Methods — Screening and implantation procedure; Figure 2
+        context: FUTURE-HF implantation configuration; fluoroscopic placement confirmed by cavography.
       available-sizes:
         availability: not_publicly_disclosed
-        loc: 'Section 3.3, FIRE1 System, Now NORM System (device sizing not stated)'
+        loc: Methods — system description (commercial sizing range not stated)
       indication-scope:
-        value: 'Investigational; HF congestion monitoring (FUTURE-HF/FUTURE-HF2)'
-        loc: 'Section 3.3, FIRE1 System, Now NORM System'
-        context: 'FUTURE-HF2 is the US arm. The renamed NORM System received FDA Breakthrough Device Designation in 2025; this is a designation, not a marketing authorization.'
+        value: Investigational IVC monitoring system for heart failure
+        loc: About page — investigational device disclaimer
+        source: src-fire1-current-manufacturer
+        context: Company information does not establish a marketing authorization. FUTURE-HF is a feasibility study.
       pivotal-trials:
-        value: 'FUTURE-HF (NCT04203576); FUTURE-HF2 (NCT05763407)'
-        loc: 'Section 3.3, FIRE1 System, Now NORM System'
-        context: 'FUTURE-HFII planned as the pivotal trial.'
+        value: FUTURE-HF (NCT04203576); FUTURE-HF2 (NCT05763407)
+        loc: Methods — Study design
+        context: >-
+          Early feasibility programs; the primary publication reports 50 implants, with exploratory clinical outcomes rather than randomized
+          efficacy.
+      post-implant-therapy:
+        value: DAPT or anticoagulation for one month in FUTURE-HF
+        loc: Methods — Screening and implantation procedure
+        context: >-
+          Followed by single antiplatelet therapy or anticoagulation when indicated. Investigational study protocol, not approved commercial
+          labeling.
+
+
+    observedAt: "2026-10-03"
 
   - version: ver-vlap
     category: hf-pressure-sensors
     source: src-vlap-eurointervention
     values:
       device-design:
-        value: 'Leadless MEMS sensor + antenna, nitinol hemidiscs (16/18 mm)'
-        loc: 'Article body, device description paragraph'
-        context: 'Spans the septum; anchored by two braided nitinol hemidiscs, 16 mm RA disc and 18 mm LA disc.'
+        value: Leadless MEMS sensor + antenna, nitinol hemidiscs (16/18 mm)
+        loc: Article body, device description paragraph
+        context: Spans the septum; anchored by two braided nitinol hemidiscs, 16 mm RA disc and 18 mm LA disc.
       sensor-location:
-        value: 'Left-atrial side of the interatrial septum (transseptal implant)'
-        loc: 'Article body, device description paragraph'
+        value: Left-atrial side of the interatrial septum (transseptal implant)
+        loc: Article body, device description paragraph
       measured-parameter:
-        value: 'Left atrial pressure, direct high-fidelity measurement'
-        loc: 'Article body, device description paragraph'
+        value: Left atrial pressure, direct high-fidelity measurement
+        loc: Article body, device description paragraph
       power-telemetry:
-        value: 'Battery-free; bidirectional RF link to external unit'
-        loc: 'Article body, device description paragraph'
-        context: 'Designed to operate at least 10 years.'
+        value: Battery-free; bidirectional RF link to external unit
+        loc: Article body, device description paragraph
+        context: Designed to operate at least 10 years.
       access-route:
-        value: 'Femoral venous + transseptal puncture (fossa ovalis)'
-        loc: 'Article body, device description paragraph'
-        context: 'Centrally in the fossa ovalis, under TEE or ICE guidance.'
+        value: Femoral venous + transseptal puncture (fossa ovalis)
+        loc: Article body, device description paragraph
+        context: Centrally in the fossa ovalis, under TEE or ICE guidance.
       delivery-sheath:
-        value: '12 Fr delivery system, fully retrievable braid'
-        loc: 'Article body, device description paragraph'
-        context: 'Anchoring braid remains fully retrievable during deployment.'
+        value: 12 Fr delivery system, fully retrievable braid
+        loc: Article body, device description paragraph
+        context: Anchoring braid remains fully retrievable during deployment.
       available-sizes:
-        value: 'Body <18x3.8 mm; antenna 17 mm; hemidiscs 16/18 mm'
-        source: src-rpm-review-2025
-        loc: 'Section 2.2, V-LAP System'
-        context: 'Hemidiscs: 16 mm RA / 18 mm LA. Implant-body dimensions per the 2025 comparative review; hemidisc/antenna dimensions per the 2020 first-in-human case report (same device family).'
+        value: 17 mm antenna; 16 mm right-atrial and 18 mm left-atrial anchoring hemidiscs
+        loc: Device description paragraph
+        context: >-
+          2020 first-in-human configuration. Body dimensions previously taken from a later review have been removed; dimensions are not a
+          commercial size range.
       indication-scope:
-        value: 'Investigational; HF left-atrial-pressure monitoring (VECTOR-HF)'
-        source: src-rpm-review-2025
-        loc: 'Section 2.2, V-LAP System'
-        context: 'Also VECTOR-HF IIa. FDA Breakthrough Device Designation granted in 2020; this is a designation, not a marketing authorization.'
+        value: Investigational left-atrial pressure monitoring in heart failure
+        loc: Manufacturer investigational device disclaimer
+        source: src-vlap-current-manufacturer
       post-implant-therapy:
-        value: 'Aspirin and clopidogrel, or anticoagulation, started the day after implantation'
-        loc: 'Article body, discharge/follow-up paragraph'
+        value: Aspirin and clopidogrel, or anticoagulation, started the day after implantation
+        loc: Article body, discharge/follow-up paragraph
+        context: Regimen reported for the first two human implants; study treatment, not approved labeling.
       pivotal-trials:
-        value: 'VECTOR-HF (NCT03775161); VECTOR-HF IIa'
-        source: src-rpm-review-2025
-        loc: 'Section 2.2, V-LAP System'
+        value: VECTOR-HF (NCT03775161)
+        loc: Study identification and intervention fields
+        source: src-vlap-vector-hf-registry
+        context: Clinical investigation; this registry establishes identity, not approval or pivotal randomized efficacy.
+
+
+    observedAt: "2026-10-03"
 
   - version: ver-corvia-shunt
     category: interatrial-shunts
-    source: src-atrial-shunting-review-2025
+    source: src-corvia-reduce-lap-hf-i-design
     values:
       device-design:
-        value: 'Multi-legged, one-size self-expanding metal double-disc cage'
-        loc: "'Corvia Atrial Shunt' section"
-        context: 'Single-piece; spans the interatrial septum.'
+        value: Multi-legged, one-size self-expanding metal double-disc cage
+        loc: Author manuscript pp.6–8 — The Investigational Device and study procedure
+        context: Single-piece; spans the interatrial septum.
       frame-material:
-        value: 'Nitinol (0.144 g) with a small tantalum radiopaque marker (0.005 g)'
+        value: Nitinol (0.144 g) with a small tantalum radiopaque marker (0.005 g)
         source: src-corvia-patient-guide
-        loc: 'PDF p.3, Implant Materials'
+        loc: PDF p.3, Implant Materials
       fabric-cover:
         availability: not_applicable
-        loc: 'PDF p.3, Implant Materials'
+        loc: PDF p.3, Implant Materials
         source: src-corvia-patient-guide
-        context: 'Implant Materials section lists only nitinol and a tantalum marker; bare-metal cage, no fabric/cover component.'
+        context: Implant Materials section lists only nitinol and a tantalum marker; bare-metal cage, no fabric/cover component.
       shunt-diameter:
-        value: '8 mm fixed inner (orifice) diameter; 19.4 mm outer disc diameter'
-        loc: "'Corvia Atrial Shunt' section"
+        value: 8 mm fixed inner (orifice) diameter; 19.4 mm outer disc diameter
+        loc: Author manuscript pp.6–8 — The Investigational Device and study procedure
       access-route:
-        value: 'Transfemoral venous access; deployment after atrial (transseptal) puncture'
-        loc: "'Corvia Atrial Shunt' section"
+        value: Transfemoral venous access; deployment after atrial (transseptal) puncture
+        loc: Author manuscript pp.6–8 — The Investigational Device and study procedure
       delivery-sheath:
-        value: '16 Fr delivery sheath'
-        source: src-frontiers-corvia-2019
-        loc: 'Article body, device implant-procedure paragraph'
+        value: 16 Fr delivery catheter (historical IASD configuration)
+        loc: PDF p.7, device illustration — Catheter (16 Fr)
+        source: src-corvia-tct-2019
+        context: >-
+          Manufacturer-hosted 2019 presentation reports the catheter profile. It does not establish introducer sheath inner or outer diameter,
+          or an unchanged current delivery system.
       available-sizes:
-        value: 'Single size (8 mm fixed orifice)'
-        loc: "'Corvia Atrial Shunt' section"
+        value: Single size (8 mm fixed orifice)
+        loc: Author manuscript pp.6–8 — The Investigational Device and study procedure
       indication-scope:
-        value: 'Investigational; HFpEF/HFmrEF with elevated left-atrial (exercise) pressure'
-        loc: "'RESPONDER-HF' section"
-        context: 'RESPONDER-HF (NCT05425459) is a confirmatory precision-medicine trial in a peak-exercise-PVR-defined subgroup, enrolling since December 2022 (goal n=750).'
+        value: Investigational shunt in HF with LVEF at least 40% and elevated exercise filling pressure
+        loc: RESPONDER-HF — study design, population, enrollment and status
+        source: src-corvia-responder-current
+        context: >-
+          Current sponsor page lists 260 randomized participants and In Follow-up; the older review target of 750 is not the current enrollment
+          figure.
       pivotal-trials:
-        value: 'REDUCE LAP-HF II (NCT03088033); RESPONDER-HF (NCT05425459, confirmatory)'
-        loc: "'REDUCE-LAP-HF-II' and 'RESPONDER-HF' sections"
+        value: REDUCE LAP-HF II; RESPONDER-HF (NCT05425459)
+        loc: RESPONDER-HF — clinical program and study design
+        source: src-corvia-responder-current
+        context: Trial enrollment and follow-up do not establish benefit or marketing authorization.
+
+
+    observedAt: "2026-10-03"
 
   - version: ver-vwave-ventura
     category: interatrial-shunts
     source: src-vwave-fluid-dynamics
     values:
       device-design:
-        value: 'Hourglass self-expanding nitinol stent, sintered ePTFE cover'
-        loc: 'Main text, device description paragraph'
-        context: 'Fully encapsulated; valveless (second generation).'
+        value: Hourglass self-expanding nitinol stent, sintered ePTFE cover
+        loc: Main text, device description paragraph
+        context: Fully encapsulated; valveless (second generation).
       frame-material:
-        value: 'Self-expanding nitinol frame'
-        loc: 'Main text, device description paragraph'
+        value: Self-expanding nitinol frame
+        loc: Main text, device description paragraph
       fabric-cover:
-        value: 'Sintered ePTFE encapsulant, luminal + abluminal surfaces'
-        loc: 'Main text, device description paragraph'
-        context: 'Internodal distance <=30 micrometers.'
+        value: Sintered ePTFE encapsulant, luminal + abluminal surfaces
+        loc: Main text, device description paragraph
+        context: Internodal distance <=30 micrometers.
       shunt-diameter:
-        value: 'Neck ID 5.1 mm; LA entry 14 mm; RA exit 11 mm; length 12 mm'
-        loc: 'Main text, device description paragraph'
-        context: 'Neck ID +/-0.1 mm; wall thickness 0.2 mm.'
+        value: Neck ID 5.1 mm; LA entry 14 mm; RA exit 11 mm; length 12 mm
+        loc: Main text, device description paragraph
+        context: Neck ID +/-0.1 mm; wall thickness 0.2 mm.
       access-route:
-        value: 'Femoral venous access; transseptal puncture across the fossa ovalis'
-        source: src-atrial-shunting-review-2025
-        loc: "'V-Wave Ventura Shunt System' section"
+        value: Right femoral venous access with transseptal puncture
+        loc: Printed p.44 / PDF p.45, section 3.2.3
+        source: src-vwave-fda-panel-briefing
       delivery-sheath:
-        availability: not_publicly_disclosed
-        loc: 'Main text, device description paragraph (describes a "custom delivery catheter" without a stated French size)'
+        value: 14 French Cook Medical Mullins Introducer Sheath
+        loc: Printed p.44 / PDF p.45, section 3.2.3
+        source: src-vwave-fda-panel-briefing
+        context: RELIEVE-HF investigational delivery configuration; FDA-hosted sponsor panel briefing is not an approval order.
       available-sizes:
-        value: 'Single size (5.1 mm effective orifice)'
-        source: src-atrial-shunting-review-2025
-        loc: "'V-Wave Ventura Shunt System' section"
+        value: Fixed nominal 5.1 mm orifice in the described study configuration
+        loc: Device description; Figure 1
+        context: Fixed investigational study geometry; no claim that all current or future models share the same dimensions.
       anatomy-range-summary:
-        value: 'Interatrial septum thickness must not exceed 6 mm'
-        loc: 'Main text, device description paragraph'
+        value: Interatrial septum thickness must not exceed 6 mm
+        loc: Main text, device description paragraph
       indication-scope:
-        value: 'Investigational; HF across the LVEF spectrum'
-        loc: 'Main text, Results (RELIEVE-HF open-label roll-in cohort)'
-        context: 'RELIEVE-HF randomized cohort (508 patients) completed enrollment; no FDA decision (approval or rejection) as of the retrieval date.'
+        value: Investigational; HF across the LVEF spectrum
+        loc: Main text, Results (RELIEVE-HF open-label roll-in cohort)
+        context: >-
+          The publication concerns RELIEVE-HF study cohorts. A later FDA panel briefing supports investigational device identity; a panel
+          meeting or sponsor submission does not constitute FDA approval.
       pivotal-trials:
-        value: 'RELIEVE-HF (NCT03499236)'
-        loc: 'Main text, device description and Results'
+        value: RELIEVE-HF (NCT03499236)
+        loc: Main text, device description and Results
+      post-implant-therapy:
+        value: Aspirin plus clopidogrel or ongoing oral anticoagulation in RELIEVE-HF
+        loc: Printed p.66 / PDF p.67, section 5.4, Tables 13–14
+        source: src-vwave-fda-panel-briefing
+        context: Investigational trial protocol; not an approved labeled medication regimen.
+
+
+    observedAt: "2026-10-03"
 
   - version: ver-edwards-apture
     category: interatrial-shunts
-    source: src-atrial-shunting-review-2025
+    source: src-apture-alt-flow-ii-primary
     values:
       device-design:
-        value: 'Bare nitinol implant, 4 anchoring legs; LA-to-CS shunt'
-        loc: "'Apture Shunt System' section"
-        context: '2 legs in the coronary sinus, 2 in the left atrium; created via percutaneous atriotomy.'
+        value: Bare nitinol implant, 4 anchoring legs; LA-to-CS shunt
+        loc: Device and procedure; Figure 1
+        context: 2 legs in the coronary sinus, 2 in the left atrium; created via percutaneous atriotomy.
       frame-material:
-        value: 'Bare self-expanding nitinol frame'
-        loc: "'Apture Shunt System' section"
+        value: Bare self-expanding nitinol frame
+        loc: Device and procedure; Figure 1
       fabric-cover:
         availability: not_applicable
-        loc: "'Apture Shunt System' section"
-        context: 'Described as a "bare nitinol implant"; no fabric/cover component.'
+        loc: Device and procedure; Figure 1
+        context: Described as a "bare nitinol implant"; no fabric/cover component.
       shunt-diameter:
-        value: '7 mm internal (effective) diameter'
-        loc: "'Apture Shunt System' section"
+        value: 7 mm internal diameter; 28 mm device length
+        loc: Device and procedure; Figure 1
+        context: Four anchoring arms, two in the coronary sinus and two in the left atrium.
       access-route:
-        value: 'Right internal jugular venous access'
-        loc: "'Apture Shunt System' section"
+        value: Right internal jugular venous access
+        loc: Device and procedure; Figure 1
       delivery-sheath:
-        availability: not_publicly_disclosed
-        loc: "'Apture Shunt System' section (French size not stated)"
+        value: 20 F introducer sheath via right transjugular access
+        loc: Device and procedure — introducer sheath and access
+        context: ALT-FLOW II study configuration; fluoroscopy and transesophageal echocardiography guidance.
       available-sizes:
-        value: 'Single size (7 mm)'
-        loc: "'Apture Shunt System' section"
+        value: 7 mm internal diameter in the trial configuration
+        loc: Device and procedure; Figure 1
+        context: The paper describes this geometry; it does not establish a complete commercial model-size catalog.
       indication-scope:
-        value: 'Investigational; left atrium-to-coronary-sinus shunt for HFrEF/HFmrEF/HFpEF'
-        loc: "'ALt FLOW US Study' and 'ALT-FLOW II Trial' sections"
-        context: 'ALT-FLOW II (NCT05686317) is a randomized, sham-controlled trial; first patient enrolled March 2023, expected completion Q1 2026.'
+        value: Investigational LA-to-coronary-sinus shunt in HF with LVEF greater than 40%
+        loc: Trial design — study population and eligibility
+        context: ALT-FLOW II studies HFpEF/HFmrEF, not an HFrEF indication. The paper describes trial design rather than final efficacy results.
       pivotal-trials:
-        value: 'ALT-FLOW II (NCT05686317)'
-        loc: "'ALT-FLOW II Trial' section"
+        value: ALT-FLOW II (NCT05686317), randomized and sham controlled
+        loc: Trial design — registration, randomization and endpoints
+        context: >-
+          The 2026 paper is a protocol/design publication; prior predicted Q1 2026 completion has been removed because it is not proof of actual
+          completion.
+
+
+    observedAt: "2026-10-03"
 
   - version: ver-coronary-sinus-reducer
     category: cmd-devices
