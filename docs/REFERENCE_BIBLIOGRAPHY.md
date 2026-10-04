@@ -27,7 +27,7 @@ Three Luna agents reviewed the LAAO, valve/repair, and remaining therapy
 inventories, reusing existing authored research and public-source notes. The
 [per-therapy audit](audit/2026-10-04-reference-research.json) covers all 100
 therapies and records checked product documents, patent sources, qualifying
-numbers, and limitations. The final compiled inventory contains 781 sources,
+numbers, and limitations. The final compiled inventory contains 782 sources,
 including 291 distinct patent records; counts in a product's Evidence section
 reflect only its linked documents.
 
@@ -46,6 +46,10 @@ the A2 application publication. Article citation metadata covers 98 exact URL
 aliases, resolved through DOI, PMID, PMC-to-PMID mapping, or original publisher
 metadata. Duplicate DOI aliases share the same verified bibliographic fields.
 Publication dates retain their recorded day, month, or year precision.
+The author review checked 93 URL aliases against 84 PubMed article records and
+five publisher-only pages. Credited collective authors and suffixes remain in
+the byline; appended investigator and reviewer rosters are excluded. Publisher
+full names take precedence where PubMed initials lose a name or hyphen.
 
 Named marking lists remain scoped to their stated product/generation. For
 example, WATCHMAN FLX and FLX Pro have separate lists; those marks do not get
@@ -61,7 +65,8 @@ inferring patents for investigational therapies.
   `data/intelligence/catalog/references-*.yaml`. Preserve the public proof
   document, exact row/page locator, and scope statement in `patentConnection`.
 - Update exact article metadata in `data/intelligence/citations.yaml`; keep
-  source URLs and identifier resolution reviewable.
+  source URLs and identifier resolution reviewable. Verify the article byline
+  rather than copying an expanded investigator or reviewer list.
 - Run `npm run build:intelligence`. Schema and semantic validation reject
   patent sources lacking a public non-patent product connection. The display
   independently enforces the same connection requirement.

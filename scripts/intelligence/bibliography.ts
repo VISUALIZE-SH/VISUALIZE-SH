@@ -10,11 +10,14 @@ export interface CitationOverride {
   citation: CitationMetadata
 }
 
+const isFdaHost = (host: string) => host === 'fda.gov' || host.endsWith('.fda.gov')
+const PUBLICATION_DOMAINS = ['doi.org', 'nejm.org', 'jacc.org', 'sciencedirect.com', 'nature.com', 'eurointervention.pcronline.com', 'frontiersin.org', 'academic.oup.com', 'ahajournals.org', 'jamanetwork.com']
+
 function inferredKind(url: string): SourceDocument['kind'] {
   const host = new URL(url).hostname
   if (host === 'clinicaltrials.gov') return 'registry'
-  if (/^(?:pubmed|pmc)\.ncbi\.nlm\.nih\.gov$|doi\.org$|nejm\.org$|jacc\.org$|sciencedirect\.com$|nature\.com$|eurointervention\.pcronline\.com$|frontiersin\.org$|academic\.oup\.com$|ahajournals\.org$|jamanetwork\.com$/.test(host)) return 'publication'
-  if (host.endsWith('fda.gov') || host === 'dailymed.nlm.nih.gov') return 'regulatory'
+  if (host === 'pubmed.ncbi.nlm.nih.gov' || host === 'pmc.ncbi.nlm.nih.gov' || PUBLICATION_DOMAINS.some(domain => host === domain || host.endsWith(`.${domain}`))) return 'publication'
+  if (isFdaHost(host) || host === 'dailymed.nlm.nih.gov') return 'regulatory'
   return 'other'
 }
 
@@ -44,7 +47,7 @@ export function addGraphBibliography(data: IntelligenceData, graph: GraphData): 
         title: label ?? `[Source document: ${host}${documentName ? `, ${documentName}` : ''}]`,
         url,
         kind: inferredKind(url) === 'other' ? kind ?? (manufacturerHosts.has(host) ? 'manufacturer' : 'other') : inferredKind(url),
-        publisher: host.endsWith('fda.gov') ? 'U.S. Food and Drug Administration' : host === 'clinicaltrials.gov' ? 'ClinicalTrials.gov' : publisher ?? manufacturerHosts.get(host) ?? host,
+        publisher: isFdaHost(host) ? 'U.S. Food and Drug Administration' : host === 'clinicaltrials.gov' ? 'ClinicalTrials.gov' : publisher ?? manufacturerHosts.get(host) ?? host,
         retrievedAt,
         access: 'public',
       }

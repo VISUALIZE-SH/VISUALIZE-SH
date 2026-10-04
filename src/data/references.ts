@@ -193,13 +193,14 @@ const escapeHtml = (value: string) => value.replace(/&/g, '&amp;').replace(/</g,
 
 /** A portable, printable APA list with italics, double spacing, and hanging indents. */
 export function referencesToApaHtml(references: CollectedReference[], name: string): string {
+  const titleKey = (source: SourceDocument) => source.title.replace(/^(?:a|an|the)\s+/i, '')
+  const authorKey = (source: SourceDocument) => source.citation?.authors?.join(' | ') ?? (source.kind === 'publication' || source.kind === 'patent' ? titleKey(source) : source.publisher)
   const sorted = [...references].sort((a, b) => {
-    const author = (source: SourceDocument) => source.citation?.authors?.join(' | ') ?? (source.kind === 'publication' || source.kind === 'patent' ? source.title : source.publisher)
-    return author(a.source).localeCompare(author(b.source)) || apaDateKey(a.source).localeCompare(apaDateKey(b.source)) || a.source.title.localeCompare(b.source.title)
+    return authorKey(a.source).localeCompare(authorKey(b.source)) || apaDateKey(a.source).localeCompare(apaDateKey(b.source)) || titleKey(a.source).localeCompare(titleKey(b.source))
   })
   const dateGroups = new Map<string, number>()
   function apaDateKey(source: SourceDocument): string { return (source.kind === 'publication' || source.kind === 'patent' ? source.publishedAt?.value.slice(0, 4) : source.publishedAt?.value) ?? '' }
-  const groupKey = (source: SourceDocument) => `${source.citation?.authors?.join('|') ?? (source.kind === 'publication' || source.kind === 'patent' ? source.title : source.publisher)}|${apaDateKey(source) || 'n.d.'}`
+  const groupKey = (source: SourceDocument) => `${authorKey(source)}|${source.publishedAt?.value.slice(0, 4) ?? 'n.d.'}`
   for (const item of sorted) dateGroups.set(groupKey(item.source), (dateGroups.get(groupKey(item.source)) ?? 0) + 1)
   const offsets = new Map<string, number>()
   const entries = sorted.map(({ source }) => {

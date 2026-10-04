@@ -91,6 +91,25 @@ test('APA expands abbreviated page ranges and keeps dates and author order preci
   assert.ok(html.indexOf('Smith, A. (2025)') < html.indexOf('Smith, A., &amp; Jones, B. (2020)'))
 })
 
+test('APA disambiguates the same author and year across dates in chronological order', () => {
+  const records: SourceDocument[] = [
+    { ...source('february'), title: 'An early alphabetic title', publishedAt: { value: '2026-02-01', precision: 'day' } },
+    { ...source('january-z'), title: 'Zeta', publishedAt: { value: '2026-01-01', precision: 'day' } },
+    { ...source('january-a'), title: 'The Alpha report', publishedAt: { value: '2026-01-01', precision: 'day' } },
+    { ...source('year'), title: 'Year report', publishedAt: { value: '2026', precision: 'year' } },
+    { ...source('older'), title: 'Older report', publishedAt: { value: '2025', precision: 'year' } },
+  ]
+  const html = referencesToApaHtml(records.map(source => ({ source, category: 'Other sources', locators: [], contexts: [], connections: [] })), 'Test')
+  assert.match(html, /\(2025\)\. <i>Older report/)
+  assert.match(html, /\(2026a\)\. <i>Year report/)
+  assert.match(html, /\(2026b, January 1\)\. <i>The Alpha report/)
+  assert.match(html, /\(2026c, January 1\)\. <i>Zeta/)
+  assert.match(html, /\(2026d, February 1\)\. <i>An early alphabetic title/)
+  assert.ok(html.indexOf('Year report') < html.indexOf('The Alpha report'))
+  assert.ok(html.indexOf('The Alpha report') < html.indexOf('Zeta'))
+  assert.ok(html.indexOf('Zeta') < html.indexOf('An early alphabetic title'))
+})
+
 test('the researched patent markings stay with the named WATCHMAN generations', () => {
   const data = JSON.parse(readFileSync('public/intelligence.json', 'utf8')) as IntelligenceData
   const patents = (versionId: string) => referencesFor(data, { versionId }).filter(item => item.category === 'Patents')
@@ -116,6 +135,28 @@ test('graph compilation gives every therapy its existing links, trial references
     assert.ok(referencesFor(compiled, { entityId: node.id }).length > 0, node.id)
   }
   const watchman = referencesFor(compiled, { entityId: 'dev-watchman-flx' })
-  assert.ok(watchman.some(item => item.source.url.includes('clinicaltrials.gov')))
+  assert.ok(watchman.some(item => new URL(item.source.url).hostname === 'clinicaltrials.gov'))
   assert.ok(watchman.some(item => item.contexts.some(context => context.includes('Clinical'))))
+  const evolut = referencesFor(compiled, { entityId: 'dev-evolut' })
+  assert.ok(evolut.some(item => item.source.citation?.doi === '10.1016/j.jacc.2026.02.5063'))
+})
+
+test('source attribution distinguishes FDA and publication domains from lookalike hosts', () => {
+  const graph = JSON.parse(readFileSync('public/graph.json', 'utf8')) as GraphData
+  const node = graph.elements.nodes.find(node => node.data.entity.type === 'therapy')!
+  assert.ok(node.data.entity.type === 'therapy')
+  const urls = ['https://fda.gov/document', 'https://www.accessdata.fda.gov/document', 'https://notfda.gov/document', 'https://fda.gov.example.org/document', 'https://www.nejm.org/doi/10.1000/example', 'https://notnejm.org/document', 'https://nejm.org.example.org/document']
+  node.data.entity = { ...node.data.entity, curation: { ...node.data.entity.curation, sources: urls }, links: undefined, timeline: undefined, materials: undefined }
+  const data = addGraphBibliography(fixture(), { ...graph, elements: { ...graph.elements, nodes: [node] }, news: [] })
+  for (const url of urls.slice(0, 2)) {
+    const source = data.sources.find(source => source.url === url)!
+    assert.equal(source.kind, 'regulatory')
+    assert.equal(source.publisher, 'U.S. Food and Drug Administration')
+  }
+  assert.equal(data.sources.find(source => source.url === urls[4])!.kind, 'publication')
+  for (const url of [...urls.slice(2, 4), ...urls.slice(5)]) {
+    const source = data.sources.find(source => source.url === url)!
+    assert.equal(source.kind, 'other')
+    assert.notEqual(source.publisher, 'U.S. Food and Drug Administration')
+  }
 })

@@ -1890,5 +1890,154 @@
       "Exact marked patent-number records in Google Patents and USPTO Official Gazette; Corvia EP 2424472 B1 grant verified separately from A2 publication."
     ],
     "scope": "Patent identities come only from direct product connections. Metadata completion does not introduce patent-family or cited-patent members. Older audit notes about unavailable metadata describe the initial search; the final exact-record metadata pass resolved these gaps."
+  },
+  "citationAuthorReview": {
+    "reviewDate": "2026-10-04",
+    "citationUrlRecords": 98,
+    "pubMedMatchedUrlRecords": 93,
+    "uniquePubMedArticles": 84,
+    "publisherOnlyUrlRecords": 5,
+    "policy": "Use the article byline, including credited collective authors and author suffixes; exclude appended investigator/reviewer rosters. Preserve full publisher names where PubMed Initials are lossy.",
+    "corrections": [
+      {
+        "url": "https://doi.org/10.1016/j.shj.2025.100694",
+        "previousAuthorCount": 10,
+        "correctedAuthorCount": 11,
+        "evidence": [
+          "https://pubmed.ncbi.nlm.nih.gov/40895421/",
+          "https://einstein.elsevierpure.com/en/publications/reverse-remodeling-induced-by-transcatheter-left-ventricular-rest-2/"
+        ],
+        "note": "PubMed Article/AuthorList and institutional bibliographic record identify AccuCinch Study Investigators as collective author; add it."
+      },
+      {
+        "url": "https://www.nejm.org/doi/10.1056/NEJMoa2517213",
+        "previousAuthorCount": 34,
+        "correctedAuthorCount": 35,
+        "evidence": [
+          "https://www.nejm.org/doi/10.1056/NEJMoa2517213",
+          "https://pubmed.ncbi.nlm.nih.gov/41910347/"
+        ],
+        "note": "NEJM exact byline says “for the CHAMPION-AF Investigators”; add the collective."
+      },
+      {
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2601103",
+        "previousAuthorCount": 20,
+        "correctedAuthorCount": 21,
+        "evidence": [
+          "https://www.nejm.org/doi/full/10.1056/NEJMoa2601103",
+          "https://pubmed.ncbi.nlm.nih.gov/41910394/"
+        ],
+        "note": "NEJM exact byline says “for the SCOUT-HCM Investigators”; add the collective."
+      },
+      {
+        "url": "https://www.nejm.org/doi/10.1056/NEJMoa2504654",
+        "previousAuthorCount": 33,
+        "correctedAuthorCount": 34,
+        "evidence": [
+          "https://www.nejm.org/doi/abs/10.1056/NEJMoa2504654",
+          "https://pubmed.ncbi.nlm.nih.gov/40888697/"
+        ],
+        "note": "NEJM author byline is “for the MAPLE-HCM Investigators”; add that group. Current Edileide de Barros Correia represented as Correia, E. D. B. follows the publisher full name and is not an extra author; do not reduce to lossy NLM Initials EB."
+      },
+      {
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1514616",
+        "previousAuthorCount": 33,
+        "correctedAuthorCount": 34,
+        "evidence": [
+          "https://pubmed.ncbi.nlm.nih.gov/27040324/"
+        ],
+        "note": "Retain the credited collective author from the article AuthorList."
+      },
+      {
+        "url": "https://www.nejm.org/doi/10.1056/NEJMoa1900486",
+        "previousAuthorCount": 40,
+        "correctedAuthorCount": 41,
+        "evidence": [
+          "https://www.nejm.org/doi/full/10.1056/NEJMoa1900486",
+          "https://pubmed.ncbi.nlm.nih.gov/30883052/"
+        ],
+        "note": "NEJM byline gives Joseph C. Cleveland, Jr. and “for the MOMENTUM 3 Investigators”; add the collective and suffix."
+      },
+      {
+        "url": "https://www.jacc.org/doi/10.1016/j.jacc.2020.04.067",
+        "previousAuthorCount": 26,
+        "correctedAuthorCount": 27,
+        "evidence": [
+          "https://www.jacc.org/doi/10.1016/j.jacc.2020.04.067",
+          "https://pubmed.ncbi.nlm.nih.gov/32586585/"
+        ],
+        "note": "JACC exact author byline says “on behalf of PRAGUE-17 Trial Investigators”; add the collective."
+      },
+      {
+        "url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa1816885",
+        "previousAuthorCount": 31,
+        "correctedAuthorCount": 32,
+        "evidence": [
+          "https://www.nejm.org/doi/pdf/10.1056/NEJMoa1816885?listPDF=true",
+          "https://pubmed.ncbi.nlm.nih.gov/30883053/"
+        ],
+        "note": "NEJM original byline gives George L. Zorn III and “for the Evolut Low Risk Trial Investigators”; add the collective and suffix. O’Hair curly-vs-straight apostrophe is typographic only."
+      },
+      {
+        "url": "https://www.nejm.org/doi/10.1056/NEJMoa2410027",
+        "previousAuthorCount": 13,
+        "correctedAuthorCount": 14,
+        "evidence": [
+          "https://www.nejm.org/doi/10.1056/NEJMoa2410027",
+          "https://pubmed.ncbi.nlm.nih.gov/39555826/"
+        ],
+        "note": "NEJM exact byline says “for the SUMMIT Trial Study Group”; add the collective."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42668430/",
+        "previousAuthorCount": 16,
+        "correctedAuthorCount": 16,
+        "evidence": [
+          "https://pubmed.ncbi.nlm.nih.gov/42668430/",
+          "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.126.082763"
+        ],
+        "note": "Full name is Lai-Shan Melanie Chan. Current Chan, L.-S.-M. is same person but hyphen placement conflates middle name; APA-style initials should be L.-S. M. Article is still new; public primary listing has exact full name."
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S2405500X26000289",
+        "previousAuthorCount": 14,
+        "correctedAuthorCount": 15,
+        "evidence": [
+          "https://www.sciencedirect.com/science/article/pii/S2405500X26000289",
+          "https://pubmed.ncbi.nlm.nih.gov/41701134/"
+        ],
+        "note": "PubMed Article/AuthorList contains the VERITAS Investigators collective; current citation omits it. Direct publisher page is indexed in audit source; search-result extraction did not show full byline text."
+      },
+      {
+        "url": "https://www.jacc.org/doi/10.1016/j.jacc.2026.02.5063",
+        "previousAuthorCount": 135,
+        "correctedAuthorCount": 5,
+        "evidence": [
+          "https://www.jacc.org/doi/10.1016/j.jacc.2026.02.5063",
+          "https://pubmed.ncbi.nlm.nih.gov/41697183/"
+        ],
+        "note": "JACC publisher says four named authors “on behalf of the Evolut Low Risk Trial Investigators”; PubMed Article/AuthorList lists those four plus the collective. The other 131 array entries are collaborators/roster, with repeated Deeb/Reardon and others, not article authors. Publisher: online 2026-02-16; issue JACC 87(23), 3210–3221, issue date 2026-06-16. Current citation volume/issue/pages correct; publishedAt currently 2026-06 appears issue month, while primary page reports first online date in February.",
+        "publicationDateBasis": "First online publication on 2026-02-16; journal issue date 2026-06-16. The source publishedAt records the first public date."
+      },
+      {
+        "url": "https://www.acc.org/latest-in-cardiology/articles/2025/06/01/01/cutting-edge-structural-interventions-laao",
+        "previousAuthorCount": 1,
+        "correctedAuthorCount": 3,
+        "evidence": [
+          "https://www.acc.org/latest-in-cardiology/articles/2025/06/01/01/cutting-edge-structural-interventions-laao"
+        ],
+        "note": "Exact ACC page says authored by Vivian Zhao, Anton Camaj, and Isida Byku; current American College of Cardiology is publisher, not byline author."
+      },
+      {
+        "url": "https://academic.oup.com/eurheartj/article/46/44/4635/8234488",
+        "previousAuthorCount": 140,
+        "correctedAuthorCount": 26,
+        "evidence": [
+          "https://academic.oup.com/eurheartj/article/46/44/4635/8234488",
+          "https://pubmed.ncbi.nlm.nih.gov/40878295/"
+        ],
+        "note": "PubMed Article/AuthorList has the 25 named task-force members and ESC/EACTS Scientific Document Group, matching the first 26 current entries; remove the following 114 names appended from broader reviewer/participant roster. Publisher page presents the collective group byline and confirms volume 46 issue 44, pages 4635–4736, 2025-11-21 issue date and 2025-08-29 first publication. Current 2025-08-29 is correct first-publication date. Current duplicate Abid is within the appended material."
+      }
+    ]
   }
 }
