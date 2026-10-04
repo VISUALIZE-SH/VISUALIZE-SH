@@ -2566,7 +2566,35 @@
       listed. Apply the material roles only to the corresponding TPV size. Adds a directly attributable source and date to the graph
       milestone. Graph context and primary evidence links aligned with version records.
 
-# --- Surgical & balloon valve therapies ---
+# --- General transcatheter, surgical & balloon valve procedures ---
+- id: proc-tavi
+  type: therapy
+  therapyType: procedure
+  subtype: "Transcatheter aortic valve replacement"
+  name: "TAVI / TAVR (procedure)"
+  treats: [cond-as]
+  regulatoryStatus: approved
+  regulatoryDetail: "Established procedure for aortic stenosis; eligibility and device authorization depend on the patient, valve platform, and jurisdiction."
+  mechanism: "Catheter-based implantation of a bioprosthetic valve within the diseased aortic valve to relieve stenosis."
+  description: >-
+    Transcatheter aortic valve implantation (TAVI), also called transcatheter aortic valve replacement (TAVR).
+    This general procedure node anchors evidence on care around TAVI, including post-procedure antithrombotic
+    strategies, when a study does not evaluate a particular valve platform.
+  links:
+    - label: "2025 ESC/EACTS valve guideline"
+      url: "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/valvular-heart-disease/"
+  pulse: 6
+  curation:
+    status: draft
+    lastUpdated: "2026-10-04"
+    sources:
+      - "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/valvular-heart-disease/"
+      - "https://www.escardio.org/news/news-room/congress-news/2025-guidelines-valvular-heart-disease/"
+    notes: >-
+      Procedure-level anchor, separate from individual TAVR device nodes. The graph status approved denotes
+      an established procedure, not an FDA product approval or approval of any trial's antithrombotic regimen.
+      Procedures have no single manufacturer or product marketing-authorization date.
+
 - id: proc-savr
   type: therapy
   therapyType: procedure

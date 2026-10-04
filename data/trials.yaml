@@ -1001,6 +1001,60 @@
 # ============================ VALVULAR TRIALS ============================
 
 # --- TAVR ---
+- id: trial-acasa-tavi
+  type: trial
+  name: "ACASA-TAVI"
+  nctId: NCT05035277
+  phase: "Phase 3 RCT (open-label, blinded endpoints)"
+  status: completed
+  timeline:
+    date: "2021-12-04"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT05035277"
+  conditions: [cond-as]
+  therapies: [proc-tavi]
+  enrollment: 360
+  year: 2026
+  primaryEndpoint: >-
+    Co-primary endpoints at 12 months: CT-detected hypoattenuated leaflet thickening (HALT; superiority)
+    and a composite of VARC-3 bleeding, thromboembolic events, and all-cause death (noninferiority).
+  outcomeSummary: >-
+    In patients aged 65-80 without an independent anticoagulation indication after TAVI, 12 months of
+    factor Xa DOAC monotherapy reduced HALT versus aspirin (16.2% vs 28.6%; risk ratio 0.55, 95% CI
+    0.37-0.82; P=0.004) and met noninferiority for the safety composite (7.5% vs 10.6%). These findings
+    do not establish improved long-term valve durability or superiority for clinical events.
+  resultStatus: positive
+  references:
+    - "https://clinicaltrials.gov/study/NCT05035277"
+    - "https://jamanetwork.com/journals/jama/fullarticle/2853401"
+    - "PMID:42669043"
+  links:
+    - label: "JAMA primary results (August 30, 2026)"
+      url: "https://jamanetwork.com/journals/jama/fullarticle/2853401"
+    - label: "ESC Congress 2026 readout and context"
+      url: "https://www.escardio.org/news/news-room/congress-news/hot-line-7-advances-in-interventional-cardiology/"
+  pulse: 8
+  curation:
+    status: draft
+    lastUpdated: "2026-10-04"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT05035277"
+      - "https://jamanetwork.com/journals/jama/fullarticle/2853401"
+      - "https://www.escardio.org/news/news-room/congress-news/hot-line-7-advances-in-interventional-cardiology/"
+    notes: >-
+      Procedure-level post-TAVI management evidence: the proc-tavi edge identifies the care setting, not
+      a randomized comparison of TAVI devices or TAVI versus surgery. The registry permits clinician-selected
+      therapeutic-dose apixaban, rivaroxaban, or edoxaban monotherapy versus aspirin 75 mg/day; it does not
+      establish separate efficacy for each drug. The ClinicalTrials.gov record last updated June 9, 2026
+      reports completed status, actual enrollment of 360, and actual start December 4, 2021. It also lists
+      5- and 10-year MACE follow-up; those results are not reported here. JAMA reports 336 participants
+      completing the trial. The safety risk difference was -3.3 percentage points (95% CI -9.5 to 2.8;
+      noninferiority P<0.001). Low safety-event counts limit inference, and individual clinical components
+      were not adequately powered. HALT is an imaging endpoint; do not generalize the result to all ages,
+      anticoagulation regimens, or routine treatment recommendations.
+
 - id: trial-partner-2
   type: trial
   name: "PARTNER 2A"
