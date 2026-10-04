@@ -38,6 +38,9 @@ the A2 application publication. Article citation metadata covers 98 exact URL
 aliases, resolved through DOI, PMID, PMC-to-PMID mapping, or original publisher
 metadata. Duplicate DOI aliases share the same verified bibliographic fields.
 Publication dates retain their recorded day, month, or year precision.
+ Credited collective authors and suffixes remain in
+the byline; appended investigator and reviewer rosters are excluded. Publisher
+full names take precedence where PubMed initials lose a name or hyphen.
 
 Named marking lists remain scoped to their stated product/generation. For
 example, WATCHMAN FLX and FLX Pro have separate lists; those marks do not get
@@ -53,7 +56,8 @@ inferring patents for investigational therapies.
   `data/intelligence/catalog/references-*.yaml`. Preserve the public proof
   document, exact row/page locator, and scope statement in `patentConnection`.
 - Update exact article metadata in `data/intelligence/citations.yaml`; keep
-  source URLs and identifier resolution reviewable.
+  source URLs and identifier resolution reviewable. Verify the article byline
+  rather than copying an expanded investigator or reviewer list.
 - Run `npm run build:intelligence`. Schema and semantic validation reject
   patent sources lacking a public non-patent product connection. The display
   independently enforces the same connection requirement.
