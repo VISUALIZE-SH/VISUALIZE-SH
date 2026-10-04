@@ -327,7 +327,7 @@ export default function App() {
         <div className="canvas-disclaimer">Current landscape. Dated evidence and labeling are in Profiles.</div>
       </main>
       {selectedNode && <div className="atlas-detail-stack">
-        <DetailPanel node={selectedNode} nodesById={nodesById} edges={edges} onSelect={handleSelect} onClose={() => handleSelect(null)} newsItems={selectedNodeNews} onNewsSelect={handleNewsSelect} profileLinks={profileLinks} landscapeProfileHref={landscapeProfileHref} onProfileNavigate={openProfileLink} />
+        <DetailPanel intelligence={intelligence} node={selectedNode} nodesById={nodesById} edges={edges} onSelect={handleSelect} onClose={() => handleSelect(null)} newsItems={selectedNodeNews} onNewsSelect={handleNewsSelect} profileLinks={profileLinks} landscapeProfileHref={landscapeProfileHref} onProfileNavigate={openProfileLink} />
       </div>}
     </div> : <main className="workspace-content" id="workspace-main">
       <Suspense fallback={<p className="workspace-loading" role="status">Loading evidence…</p>}>

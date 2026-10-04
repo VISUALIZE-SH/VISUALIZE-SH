@@ -5,6 +5,7 @@ import addFormats from 'ajv-formats'
 import yaml from 'js-yaml'
 import type { EvidenceDate, IntelligenceData, SourceRef } from '../../src/types/intelligence'
 import { validateComparativeDataset } from '../comparative-schema-validation'
+import { isPatentSource } from '../../src/data/references'
 
 export interface ValidationOptions {
   schemaPath: string
@@ -19,7 +20,7 @@ export class IntelligenceValidationError extends Error {
 }
 
 const COLLECTIONS = [
-  'sources', 'families', 'versions', 'claims', 'decisions', 'indications', 'trials',
+  'sources', 'bibliography', 'families', 'versions', 'claims', 'decisions', 'indications', 'trials',
   'trialSnapshots', 'cohorts', 'endpoints', 'readouts', 'outcomes', 'lineage', 'events', 'media',
   'comparisonCategories', 'standardAttributes',
 ] as const
@@ -117,6 +118,27 @@ function validateSemantics(data: IntelligenceData, legacyIds: ReadonlySet<string
   for (const collection of COLLECTIONS) {
     if (collection === 'sources' || collection === 'families' || collection === 'comparisonCategories' || collection === 'standardAttributes') continue
     for (const record of (data[collection] ?? []) as Provenanced[]) validateSourceRefs(record, sourceIds, issues)
+  }
+
+  const connectedPatents = new Set<string>()
+  for (const entry of data.bibliography ?? []) {
+    for (const id of entry.entityIds) if (!legacyIds.has(id)) issues.push(`${entry.id}.entityIds references missing legacy graph ID ${id}`)
+    for (const id of entry.versionIds) if (!versions.has(id)) issues.push(`${entry.id}.versionIds references missing version ${id}`)
+    const patents = entry.sourceRefs.filter(ref => {
+      const source = sources.get(ref.sourceId)
+      return source && isPatentSource(source)
+    })
+    if (patents.length && !entry.patentConnection) issues.push(`${entry.id} patent needs a direct product connection`)
+    if (entry.patentConnection) {
+      const connection = sources.get(entry.patentConnection.sourceId)
+      if (!connection) issues.push(`${entry.id}.patentConnection references missing source ${entry.patentConnection.sourceId}`)
+      else if (isPatentSource(connection) || connection.access !== 'public') issues.push(`${entry.id}.patentConnection must cite a public product or related source, not a patent record`)
+      else if (patents.length) for (const ref of patents) connectedPatents.add(ref.sourceId)
+      if (!patents.length) issues.push(`${entry.id}.patentConnection has no patent reference`)
+    }
+  }
+  for (const source of data.sources) {
+    if (isPatentSource(source) && !connectedPatents.has(source.id)) issues.push(`${source.id} patent has no direct product connection in bibliography`)
   }
 
   for (const family of data.families) {

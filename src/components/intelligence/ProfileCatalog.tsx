@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import type { GraphNodeData } from '../../types/entities'
 import type { IntelligenceData } from '../../types/intelligence'
+import EvidenceReferences from './EvidenceReferences'
 
 interface ProfileCatalogProps {
   data: IntelligenceData
@@ -44,7 +45,7 @@ export default function ProfileCatalog({ data, therapyNodes, nodesById, onOpenVe
       <header><h3 id="deep-profiles-title">Source-linked versions</h3><span>{data.versions.length}</span></header>
       <div className="profile-family-grid">{data.families.map((family) => <article key={family.id}>
         <span className="eyebrow">{family.manufacturer}</span><h3>{family.name}</h3><p>{family.description}</p>
-        <ul>{data.versions.filter((version) => version.familyId === family.id).map((version) => <li key={version.id}><button onClick={() => onOpenVersion(version.id)}>{version.name}<span>View profile →</span></button></li>)}</ul>
+        <ul>{data.versions.filter((version) => version.familyId === family.id).map((version) => <li key={version.id}><button onClick={() => onOpenVersion(version.id)}>{version.name}<span>View profile →</span></button><EvidenceReferences data={data} versionId={version.id} name={version.name} compact /></li>)}</ul>
       </article>)}</div>
     </section>}
 
@@ -71,6 +72,7 @@ export default function ProfileCatalog({ data, therapyNodes, nodesById, onOpenVe
               <button type="button" onClick={() => onOpenNode(node.id)}>Open in Explore →</button>
               {therapy.links?.slice(0, 1).map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>)}
             </div>
+            <EvidenceReferences data={data} entityId={node.id} name={therapy.name} compact />
           </article>
         })}</div>
       </section>

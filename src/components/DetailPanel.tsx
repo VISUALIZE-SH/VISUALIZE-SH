@@ -11,9 +11,12 @@ import { GROUP_META } from '../graph/palette'
 import { lifecycleLabel } from '../data/lifecycle'
 import { formatTimelineDate, TIMELINE_BASIS_LABELS } from '../graph/timeline'
 import NewsFeed from './NewsFeed'
+import type { IntelligenceData } from '../types/intelligence'
+import EvidenceReferences from './intelligence/EvidenceReferences'
 
 interface Props {
   node: GraphNodeData
+  intelligence?: IntelligenceData | null
   nodesById: Map<string, GraphNodeData>
   edges: GraphEdgeData[]
   newsItems: NewsItem[]
@@ -379,6 +382,7 @@ function CurationBlock({ c }: { c: Curation }) {
 
 export default function DetailPanel({
   node,
+  intelligence,
   nodesById,
   edges,
   newsItems,
@@ -440,6 +444,8 @@ export default function DetailPanel({
         <DeviceMaterials e={e} />
 
         <MoreInfo node={node} byId={nodesById} />
+
+        {e.type === 'therapy' && intelligence && <EvidenceReferences data={intelligence} entityId={e.id} name={e.name} />}
 
         {newsItems.length > 0 && (
           <section className="detail-section node-news-section">

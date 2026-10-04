@@ -9,19 +9,40 @@ export interface EvidenceDate { value: string; precision: 'day' | 'month' | 'yea
 export interface SourceRef { sourceId: string; locator: string }
 export interface Provenance { sourceRefs: SourceRef[]; reviewStatus: ReviewStatus }
 
+/** Bibliographic fields transcribed from the source; author strings use APA surname/initials. */
+export interface CitationMetadata {
+  authors?: string[]
+  containerTitle?: string
+  volume?: string
+  issue?: string
+  pages?: string
+  doi?: string
+  patentNumber?: string
+  patentOffice?: string
+}
+
 export interface SourceDocument {
   id: string
   title: string
   url: string
-  kind: 'regulatory' | 'registry' | 'publication' | 'manufacturer' | 'technical' | 'other'
+  kind: 'regulatory' | 'registry' | 'publication' | 'manufacturer' | 'technical' | 'patent' | 'other'
   publisher: string
   publishedAt?: EvidenceDate
   retrievedAt: string
   access: 'public' | 'licensed'
   identifier?: string
+  citation?: CitationMetadata
   /** Locally cached public documents only; licensed full text is never shipped. */
   snapshotPath?: string
   sha256?: string
+}
+
+/** Additional references and the explicit public evidence connecting a patent to a product. */
+export interface BibliographyEntry extends Provenance {
+  id: string
+  entityIds: string[]
+  versionIds: string[]
+  patentConnection?: SourceRef & { statement: string }
 }
 
 export interface ProductFamily {
@@ -237,6 +258,7 @@ export interface IntelligenceData {
   updatedAt: string
   coverage: { title: string; description: string }
   sources: SourceDocument[]
+  bibliography?: BibliographyEntry[]
   families: ProductFamily[]
   versions: ProductVersion[]
   comparisonCategories?: ComparisonCategory[]

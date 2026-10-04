@@ -6,6 +6,7 @@ import { approvalLabel, firstDecision, thumbnailFor } from '../../data/spec-tabl
 import type { ComparativeObservation } from '../../types/comparative'
 import type { EvidenceClaim, IntelligenceData } from '../../types/intelligence'
 import ComparisonMediaStrip from './ComparisonMediaStrip'
+import EvidenceReferences from './EvidenceReferences'
 
 interface Props {
   data: IntelligenceData
@@ -198,5 +199,6 @@ export default function ComparisonView({
       : compareVersionIds.length < 2 ? <div className="intel-empty"><h3>Add at least two products</h3></div>
         : <><p className="intel-compare-note">Draft values. Select a value for its source, method, and comparability.{data.media?.some(item => item.versionIds.some(id => compareVersionIds.includes(id))) && <> <a href="#compare-source-figures">Figures ↓</a></>}</p><ComparisonTable key={compareVersionIds.join(':')} data={data} rows={rows} versionIds={compareVersionIds} asOf={asOf} /></>}
     {category && <ComparisonMediaStrip data={data} versionIds={compareVersionIds} />}
+    {category && compareVersionIds.length > 0 && <div className="intel-reference-grid">{compareVersionIds.map(id => <article key={id}><h3>{versionName(data, id)}</h3><EvidenceReferences data={data} versionId={id} name={versionName(data, id)} compact /></article>)}</div>}
   </section>
 }

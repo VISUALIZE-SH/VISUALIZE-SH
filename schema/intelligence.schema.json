@@ -15,6 +15,7 @@
       "properties": { "title": { "$ref": "#/$defs/nonEmpty" }, "description": { "$ref": "#/$defs/nonEmpty" } }
     },
     "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
+    "bibliography": { "type": "array", "items": { "$ref": "#/$defs/bibliography" } },
     "families": { "type": "array", "items": { "$ref": "#/$defs/family" } },
     "versions": { "type": "array", "items": { "$ref": "#/$defs/version" } },
     "comparisonCategories": { "type": "array", "items": { "$ref": "#/$defs/comparisonCategory" } },
@@ -63,17 +64,47 @@
       "properties": {
         "id": { "$ref": "#/$defs/id" }, "title": { "$ref": "#/$defs/nonEmpty" },
         "url": { "type": "string", "format": "uri", "pattern": "^https://" },
-        "kind": { "enum": ["regulatory", "registry", "publication", "manufacturer", "technical", "other"] },
+        "kind": { "enum": ["regulatory", "registry", "publication", "manufacturer", "technical", "patent", "other"] },
         "publisher": { "$ref": "#/$defs/nonEmpty" }, "publishedAt": { "$ref": "#/$defs/evidenceDate" },
         "retrievedAt": { "anyOf": [{ "$ref": "#/$defs/dateOnly" }, { "$ref": "#/$defs/dateTime" }] },
         "access": { "enum": ["public", "licensed"] }, "identifier": { "$ref": "#/$defs/nonEmpty" },
+        "citation": { "$ref": "#/$defs/citation" },
         "snapshotPath": { "type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+" },
         "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
       },
       "allOf": [
         { "if": { "required": ["snapshotPath"] }, "then": { "required": ["sha256"], "properties": { "access": { "const": "public" } } } },
-        { "if": { "required": ["sha256"] }, "then": { "required": ["snapshotPath"] } }
+        { "if": { "required": ["sha256"] }, "then": { "required": ["snapshotPath"] } },
+        { "if": { "properties": { "kind": { "const": "patent" } }, "required": ["kind"] }, "then": { "required": ["citation"], "properties": { "citation": { "required": ["patentNumber", "patentOffice"] } } } }
       ]
+    },
+    "citation": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "authors": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/nonEmpty" } },
+        "containerTitle": { "$ref": "#/$defs/nonEmpty" },
+        "volume": { "$ref": "#/$defs/nonEmpty" }, "issue": { "$ref": "#/$defs/nonEmpty" },
+        "pages": { "$ref": "#/$defs/nonEmpty" }, "doi": { "$ref": "#/$defs/nonEmpty" },
+        "patentNumber": { "$ref": "#/$defs/nonEmpty" }, "patentOffice": { "$ref": "#/$defs/nonEmpty" }
+      }
+    },
+    "bibliography": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "entityIds", "versionIds", "sourceRefs", "reviewStatus"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "entityIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "versionIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "sourceRefs": { "allOf": [{ "$ref": "#/$defs/sourceRefs" }], "minItems": 1 },
+        "reviewStatus": { "$ref": "#/$defs/reviewStatus" },
+        "patentConnection": {
+          "type": "object", "additionalProperties": false, "required": ["sourceId", "locator", "statement"],
+          "properties": {
+            "sourceId": { "$ref": "#/$defs/id" }, "locator": { "$ref": "#/$defs/nonEmpty" }, "statement": { "$ref": "#/$defs/nonEmpty" }
+          }
+        }
+      },
+      "anyOf": [{ "properties": { "entityIds": { "minItems": 1 } } }, { "properties": { "versionIds": { "minItems": 1 } } }]
     },
     "family": {
       "type": "object", "additionalProperties": false, "required": ["id", "name", "manufacturer", "entityIds", "conditionIds", "description"],
