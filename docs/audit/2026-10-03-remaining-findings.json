@@ -1,0 +1,314 @@
+{
+  "auditDate": "2026-10-03",
+  "stage": "Domain findings and candidate changes before final integration",
+  "resolutionReport": "docs/DATABASE_AUDIT_2026-10-03.md",
+  "limitations": [
+    "Candidates are not an automatic patch; parent review narrowed or rejected unsupported fields. Final authored YAML and the consolidated report describe implemented changes."
+  ],
+  "observedAt": "2026-10-03",
+  "scope": "Read-only primary-source audit of seven version rows in six-therapy-categories.yaml and four graph entities outside other agents' scopes. No YAML edits made.",
+  "patchProposals": [
+    {
+      "target": "data/intelligence/catalog/six-therapy-categories.yaml#ver-revivent-tc",
+      "suggestedChanges": {
+        "company": "BioVentrix attribution is present at family level; keep it.",
+        "summary": "ALIVE trial's 12-month hierarchical efficacy composite was not significantly different from control (win ratio 1.13; P=.32).",
+        "regulatory": "Do not imply authorization from the clinical trial. No primary regulator decision for Revivent TC was located in this bounded pass.",
+        "materials": "No version-specific source reviewed here supports a material list; leave unasserted."
+      },
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/39797846/",
+        "https://clinicaltrials.gov/study/NCT01568138"
+      ],
+      "notes": "Company trial record identifies BioVentrix as the study information provider and links its sponsor website, supporting association but not current legal ownership or market availability."
+    },
+    {
+      "target": "data/intelligence/catalog/six-therapy-categories.yaml#ver-corcap",
+      "suggestedChanges": {
+        "summary": "The 5-year Acorn follow-up covers the 107-patient no-MVR cohort; distinguish published outcomes from regulatory status.",
+        "lifecycleStatus": "Do not treat retired/withdrawn status as primary-source verified in this pass.",
+        "lifecycleDetail": "Replace the review-based market-withdrawal claim with an explicit gap unless a primary company, FDA, or transaction source is found.",
+        "materials": "Keep broad polyester-mesh construction: the full-text primary Acorn paper introduction identifies a polyester mesh fitted around the ventricles; avoid asserting weave/knit. Withdrawal after FDA non-approval remains review-sourced."
+      },
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/"
+      ],
+      "notes": "Full-text Introduction supports broad polyester mesh/design; withdrawal date and regulatory disposition still lack a primary record."
+    },
+    {
+      "target": "data/intelligence/catalog/six-therapy-categories.yaml#ver-heartnet",
+      "suggestedChanges": {
+        "summary": "PEERLESS-HF was an investigational trial that stopped enrollment after interim futility; do not state market or regulatory disposition as settled.",
+        "regulatory": "No primary regulator authorization identified in this pass.",
+        "materials": "No exact material composition proposed without direct primary device documentation."
+      },
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/22633302/",
+        "https://clinicaltrials.gov/study/NCT00382863"
+      ],
+      "notes": "Paracor is the historical company named by the study identity; current corporate status and device availability remain unverified."
+    },
+    {
+      "target": "data/intelligence/catalog/six-therapy-categories.yaml#ver-accucinch",
+      "suggestedChanges": {
+        "summary": "AccuCinch remains investigational in the CORCINCH-HF pivotal record; list trial enrollment target only as a registry field and distinguish its early-feasibility two-year publication.",
+        "regulatory": "No marketing authorization established by the cited trial records or primary paper.",
+        "materials": "No version-specific material composition supported by sources in this pass."
+      },
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT04331769",
+        "https://clinicaltrials.gov/study/NCT03533517",
+        "https://doi.org/10.1016/j.shj.2025.100694"
+      ],
+      "notes": "Ancora Heart is the sponsor/developer association in registry records, not proof of continued availability. The 2025 two-year paper and company release concern an earlier-study follow-up; do not merge it with pivotal-trial results."
+    },
+    {
+      "target": "data/intelligence/catalog/six-therapy-categories.yaml#ver-heartmate-ii",
+      "suggestedChanges": {
+        "company": "Abbott Medical is the current FDA PMA applicant; retain historical Thoratec product identity in the device name/history.",
+        "regulatoryDetail": "FDA P060040 initially approved HeartMate II on 2008-04-21 for bridge-to-transplantation; FDA later approved the destination-therapy expansion via S005 on 2010-01-20. Do not summarize the 2008 approval as encompassing all later indications.",
+        "materials": "FDA SSED identifies Ti-6Al-4V pump construction, polyester vascular grafts, and ceramic bearings for the evaluated model; ensure claim is labeled as HeartMate II generation-specific."
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P060040",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf6/p060040b.Pdf",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf6/P060040S005b.pdf"
+      ],
+      "notes": "FDA source distinguishes historical Thoratec brand/manufacturer materials from the current Abbott applicant. Current regional availability should not be inferred solely from the PMA record."
+    },
+    {
+      "target": "data/intelligence/catalog/six-therapy-categories.yaml#ver-heartmate-3",
+      "suggestedChanges": {
+        "company": "Abbott Medical is the FDA applicant/current owner-operator; Thoratec LLC remains named as manufacturer/registered establishment in FDA records.",
+        "regulatoryDetail": "P160054 decision date was 2017-08-23; consult current supplements before asserting current labeling or use population.",
+        "materials": "Do not transfer HeartMate II materials to HeartMate 3; populate only from P160054 SSED/IFU exact text."
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160054",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm?lid=564610&lpcd=DSQ"
+      ],
+      "notes": "PMA is US-specific. Current supplements exist, so the original 2017 SSED alone does not establish present-day labeling or global availability."
+    },
+    {
+      "target": "data/intelligence/catalog/six-therapy-categories.yaml#ver-heartmate-3-kit-106524us",
+      "suggestedChanges": {
+        "lifecycleDetail": "Keep the recall bounded to model 106524US and serial numbers in FDA attachment E. FDA says 24 complaints by the action letter date; this record does not mean every HeartMate 3 pump is recalled.",
+        "summary": "FDA classified the May 13, 2026 action as an open Class II recall for 11V backup-battery failures affecting specified LVAS kits, model 106524US.",
+        "materials": "FDA action instructions identify affected units as 11V lithium-ion backup batteries (recall record Action; only affected serials in model 106524US)."
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfres/res.cfm?id=220518"
+      ],
+      "notes": "Recall record identifies lithium-ion in the instructions/Action section and lists affected serials in the attachment. Keep claim tightly scoped."
+    },
+    {
+      "target": "data/therapies.yaml#dev-trimemo",
+      "suggestedChanges": {
+        "company": "co-corcym is directly supported as applicant/manufacturer.",
+        "regulatoryDetail": "FDA 510(k) K260498 found substantial equivalence on 2026-04-14. This is US clearance; avoid stating worldwide authorization. Corcym's EACTS page announces the platform launch and first-in-human experiences, but does not substantiate the asserted September 8 date or US commercial availability.",
+        "mechanism": "Semirigid annuloplasty ring reshapes the tricuspid annulus to restore leaflet coaptation and valve function.",
+        "materials": [
+          "Electropolished Nitinol core",
+          "silicone sewing ring",
+          "knitted polyester (PET) fabric coated with Carbofilm (turbostratic carbon)",
+          " ",
+          "F",
+          "D",
+          "A",
+          " ",
+          "s",
+          "u",
+          "m",
+          "m",
+          "a",
+          "r",
+          "y",
+          " ",
+          "p",
+          "a",
+          "g",
+          "e",
+          " ",
+          "1",
+          " ",
+          "a",
+          "l",
+          "s",
+          "o",
+          " ",
+          "s",
+          "a",
+          "y",
+          "s",
+          " ",
+          "s",
+          "i",
+          "x",
+          " ",
+          "s",
+          "i",
+          "z",
+          "e",
+          "s",
+          " ",
+          "2",
+          "6",
+          "–",
+          "3",
+          "6",
+          " ",
+          "m",
+          "m",
+          " ",
+          "i",
+          "n",
+          " ",
+          "2",
+          " ",
+          "m",
+          "m",
+          " ",
+          "i",
+          "n",
+          "c",
+          "r",
+          "e",
+          "m",
+          "e",
+          "n",
+          "t",
+          "s",
+          " ",
+          "(",
+          "P",
+          "D",
+          "F",
+          " ",
+          "p",
+          "a",
+          "g",
+          "e",
+          " ",
+          "1",
+          ")",
+          "."
+        ],
+        "remove": [
+          "unsupported 20-year tricuspid-specific platform claim",
+          "unsupported specific first-implant date",
+          "commercially available in US unless separately sourced"
+        ]
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260498.pdf",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260498",
+        "https://info.corcym.com/corcym-at-eacts-2026/launch-symposium",
+        "https://www.corcym.com/press-release-day-one",
+        "https://info.corcym.com/corcym-at-eacts-2026/launch-symposium"
+      ],
+      "notes": "FDA summary, PDF page 1 (printed page 1; browser PDF page 5) contains materials, indication, sizes; FDA decision letter identifies K260498 substantial equivalence date 2026-04-14. Corcym EACTS page names surgeons presenting first-in-human experiences on October 9 but does not establish the historical dates of the first implants or commercial status."
+    },
+    {
+      "target": "data/therapies.yaml#dev-memo-4d-curve",
+      "suggestedChanges": {
+        "company": "co-corcym is directly supported as applicant/manufacturer.",
+        "regulatoryDetail": "FDA 510(k) K261707 found substantial equivalence on 2026-06-18. This is US clearance; current availability/first-human date should be stated only if specifically source-dated.",
+        "mechanism": "Semirigid open mitral annuloplasty ring intended to restore leaflet coaptation and valve function by reshaping the mitral annulus.",
+        "materials": [
+          "superelastic Nitinol metallic core",
+          "silicone elastomer enclosing core",
+          "knitted polyester fabric with Carbofilm coating",
+          "PET suture thread with Carbofilm coating"
+        ],
+        "remove": [
+          "unsupported assertion of commercially available as of September 2026 unless supported by direct source"
+        ]
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261707.pdf",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261707",
+        "https://info.corcym.com/corcym-at-eacts-2026/launch-symposium",
+        "https://www.corcym.com/press-release-day-one"
+      ],
+      "notes": "FDA summary, PDF page 2 (browser PDF page 5) gives exact composition and size range; FDA decision letter gives clearance date 2026-06-18. Corcym EACTS agenda confirms first-in-human/robotic experiences would be presented Oct. 9, but does not date the first implants."
+    },
+    {
+      "target": "data/therapies.yaml#rx-azd5462",
+      "suggestedChanges": {
+        "company": "co-astrazeneca is supported by the official pipeline listing.",
+        "regulatoryStatus": "investigational",
+        "regulatoryDetail": "AstraZeneca lists AZD5462 for heart failure in Phase II (pipeline snapshot as of 2026-07-27). Do not claim LUMINARA results, planned pivotal trials, or exact HF subtype without the direct trial registry or original primary publication.",
+        "mechanism": "Retain selective oral allosteric RXFP1 agonist mechanism supported by the original discovery paper and translational research. Keep LUMINARA as Phase IIb, 375 total (235 LVEF ≤35%; 140 LVEF 41–55%), 24 weeks. Lowest-dose primary LVESVI result P=.054; do not report significant primary benefit or clinical outcomes benefit.",
+        "materials": null
+      },
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/38502782/",
+        "https://pubmed.ncbi.nlm.nih.gov/42137267/",
+        "https://www.escardio.org/news/press/press-releases/novel-drug-shows-promise-in-an-early-phase-trial-in-heart-failure/",
+        "https://www.astrazeneca.com/our-therapy-areas/pipeline.html"
+      ],
+      "notes": "Original discovery paper directly confirms the mechanism; 2026 translational study includes Phase I human data and says Phase II is underway; ESC release reports LUMINARA Phase IIb cohort and a nonsignificant primary comparison. Phase III outcomes study remains necessary."
+    },
+    {
+      "target": "data/therapies.yaml#rx-tirzepatide",
+      "suggestedChanges": {
+        "company": "co-eli-lilly is supported by the sponsor's SUMMIT record.",
+        "regulatoryStatus": "approved for other labeled indications; HFpEF remains outside indication in reviewed primary evidence",
+        "regulatoryDetail": "SUMMIT (NCT04847557) was a Phase 3 study with target enrollment 731; separate HFpEF regulatory status must be checked against current jurisdiction-specific drug labels, not guideline recommendations.",
+        "mechanism": "Dual GIP/GLP-1 receptor agonist only if supported by the current official product label; delete the unsupported speculation about direct cardiometabolic effects/filling-pressure mechanism.",
+        "links": [
+          "https://trials.lilly.com/en-US/trial/282998"
+        ]
+      },
+      "sources": [
+        "https://trials.lilly.com/en-US/trial/282998",
+        "https://clinicaltrials.gov/study/NCT04847557"
+      ],
+      "notes": "Primary sponsor/registry pages support trial identity, drug, Phase III, enrollment target, and sponsor. The proposal does not establish 2026 HFpEF labeling, current FDA/EMA status, or a guideline-based regulatory effect. Remove Wikipedia source and independently verify each exact commercial label before asserting approval scopes."
+    }
+  ],
+  "companyCorrections": [
+    {
+      "id": "co-corcym",
+      "correction": "Use 2021-06-01 as Corcym operational launch/foundation date. It was formed from Gyrus Capital's acquisition/carve-out of LivaNova's heart valve business, not founded in 2022.",
+      "sources": [
+        "https://www.corcym.com/press-release-day-one"
+      ]
+    }
+  ],
+  "structuralOnlyEvidence": [
+    {
+      "claim": "FDA 510(k) substantial equivalence decisions and device materials",
+      "entities": [
+        "dev-trimemo",
+        "dev-memo-4d-curve"
+      ],
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260498.pdf",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261707.pdf"
+      ],
+      "limit": "Supports US clearance and specific bench/device description statements, not clinical effectiveness, commercial availability, or authorization outside the US."
+    },
+    {
+      "claim": "FDA PMA, current applicant, and geographically limited recall",
+      "entities": [
+        "dev-heartmate-ii",
+        "dev-heartmate-3",
+        "dev-heartmate-3-lvas-kit-106524us"
+      ],
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P060040",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160054",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfres/res.cfm?id=220518"
+      ],
+      "limit": "FDA records describe US decisions; recall serials are narrower than device family."
+    }
+  ],
+  "unresolved": [
+    "Primary regulator/company sources for current global availability or country approvals of Revivent TC, CorCap, HeartNet, and AccuCinch were not verified.",
+    "CorCap market withdrawal and polyester construction are present in secondary-source-backed catalog text; no direct primary confirmation was located.",
+    "Current HFpEF tirzepatide label status by geography and any 2026 guideline claim need direct regulator/guideline sources; sponsor trial record cannot support labeling.",
+    "Corcym first-human dates and commercial availability need date-specific direct company or hospital sources; FDA clearance itself does not establish commercial distribution.",
+    "CorCap market withdrawal after FDA non-approval remains supported only by a review in the records checked; its primary full-text trial paper does support broad polyester mesh construction."
+  ]
+}

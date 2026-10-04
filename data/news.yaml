@@ -59,10 +59,14 @@
   sourceName: "Sixth Medical Center of the Chinese PLA General Hospital"
   sourceUrl: "https://interestingengineering.com/science/world-first-ai-backed-ultrasound-robot-congenital-heart-surgery-completed-in-china"
   topicTags: ["ASD closure", "robotics", "clinical AI"]
-  relevantNodeIds: ["cond-asd", "dev-amplatzer-asd"]
+  relevantNodeIds:
+    - cond-asd
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-09-12-sichuan-university-nanogel-coating-bioprosthetic-valve"
   publishedAt: "2026-09-12"
@@ -80,10 +84,17 @@
   sourceName: "TCTMD / CMS"
   sourceUrl: "https://www.tctmd.com/news/cms-finalizes-anticipated-updates-national-coverage-tavi"
   topicTags: ["TAVR", "reimbursement", "policy"]
-  relevantNodeIds: ["cond-as", "dev-sapien-3", "dev-evolut", "dev-navitor"]
+  relevantNodeIds:
+    - cond-as
 
 
 
+
+
+  additionalSources:
+    - label: CMS final decision memo Sep 10 2026
+      url: https://www.cms.gov/medicare-coverage-database/view/ncacal-decision-memo.aspx?NCAId=321&proposed=N
+  reviewStatus: draft
 
 - id: "news-2026-09-11-closure-af-sex-specific-analysis-raises-new-caution-about-laao-in-older"
   publishedAt: "2026-09-11"
@@ -97,8 +108,9 @@
 
 
 
-- id: "news-2026-09-10-emboline-receives-fda-clearance-for-the-emboliner-embolic-protection-sys"
-  publishedAt: "2026-09-10"
+  reviewStatus: draft
+- id: "news-2026-09-09-emboline-receives-fda-clearance-for-the-emboliner-embolic-protection-sys"
+  publishedAt: "2026-09-09"
   title: "Emboline receives FDA clearance for the Emboliner embolic-protection system for TAVR"
   summary: "The FDA granted 510(k) clearance to Emboline’s Emboliner Embolic Protection System for use during TAVR. The self-expanding filter is designed to protect all three cerebral vessels while also capturing embolic material that could travel to systemic organs, giving it a broader protection concept than cerebral-only filters."
   sourceName: "Emboline / Cardiac Interventions Today"
@@ -108,6 +120,12 @@
 
 
 
+
+
+  additionalSources:
+    - label: FDA 510(k) K261715
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715
+  reviewStatus: draft
 
 - id: "news-2026-09-10-pediavalve-tissue-engineered-pediatric-pulmonary-valve"
   publishedAt: "2026-09-10"
@@ -154,6 +172,9 @@
 
 
 
+
+  reviewStatus: draft
+
 - id: "news-2026-09-08-corcym-trimemo-first-in-human-implant-tricuspid-annuloplasty"
   publishedAt: "2026-09-08"
   title: "Corcym reports first-in-human implant of TriMemo, a dedicated tricuspid annuloplasty ring"
@@ -189,6 +210,9 @@
 
 
 
+
+  reviewStatus: draft
+
 - id: "news-2026-09-02-modified-transseptal-batman-technique-reported-for-high-risk-mitral-valv"
   publishedAt: "2026-09-02"
   title: "Modified transseptal BATMAN technique reported for high-risk mitral valve-in-valve TMVR"
@@ -200,6 +224,9 @@
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-09-02-lux-valve-plus-ttvr-expands-into-eastern-india-with-two-high-risk-cases"
   publishedAt: "2026-09-02"
@@ -274,6 +301,12 @@
 
 
 
+
+  additionalSources:
+    - label: NEJM original TAVI-PCI trial
+      url: https://www.nejm.org/doi/full/10.1056/NEJMoa2606924
+  reviewStatus: draft
+
 - id: "news-2026-08-30-notion-4-tempers-enthusiasm-for-short-course-anticoagulation-solely-to-p"
   publishedAt: "2026-08-30"
   title: "NOTION-4 tempers enthusiasm for short-course anticoagulation solely to prevent HALT"
@@ -286,17 +319,26 @@
 
 
 
+
+  additionalSources:
+    - label: Original NOTION-4 randomized trial, JACC
+      url: https://www.jacc.org/doi/10.1016/j.jacc.2026.08.023
+  reviewStatus: draft
+
 - id: "news-2026-08-30-acasa-tavi-ongoing-noac-monotherapy-reduces-subclinical-leaflet-thrombos"
   publishedAt: "2026-08-30"
   title: "ACASA-TAVI: ongoing NOAC monotherapy reduces subclinical leaflet thrombosis after TAVR"
   summary: "ACASA-TAVI randomized 360 post-TAVR patients to NOAC monotherapy or aspirin and found significantly less hypoattenuated leaflet thickening with anticoagulation. HALT occurred in 16.2% of the NOAC group versus 28.6% of patients receiving aspirin, while the composite safety endpoint of bleeding, thromboembolism or death was noninferior. The result suggests that anticoagulation can materially suppress subclinical valve thrombosis without an obvious safety penalty in this trial population."
-  sourceName: "ESC Congress 2026 / JAMA"
-  sourceUrl: "https://www.acc.org/latest-in-cardiology/articles/2026/08/29/08/48/sun-545am-combo-tavi-esc-2026"
+  sourceName: JAMA — original ACASA-TAVI randomized trial
+  sourceUrl: https://jamanetwork.com/journals/jama/fullarticle/2853401
   topicTags: ["TAVR", "leaflet thrombosis", "anticoagulation"]
   relevantNodeIds: ["cond-as"]
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-08-30-vutrisiran-benefit-holds-regardless-of-tafamidis-use"
   publishedAt: "2026-08-30"
@@ -398,6 +440,9 @@
 
 
 
+
+  reviewStatus: draft
+
 - id: "news-2026-08-20-meta-analysis-examines-combined-laao-and-tavr-for-patients-with-atrial-f"
   publishedAt: "2026-08-20"
   title: "Meta-analysis examines combined LAAO and TAVR for patients with atrial fibrillation"
@@ -409,6 +454,9 @@
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-08-19-new-jacc-analysis-tests-how-robust-the-randomized-evidence-for-mitral-te"
   publishedAt: "2026-08-19"
@@ -647,6 +695,12 @@
 
 
 
+
+  additionalSources:
+    - label: ClinicalTrials.gov NCT06568003
+      url: https://clinicaltrials.gov/study/NCT06568003
+  reviewStatus: draft
+
 - id: "news-2026-07-20-boston-scientific-starts-faradigm-ide-trial-for-faraflex-pfa-system"
   publishedAt: "2026-07-20"
   title: "Boston Scientific starts FARADIGM IDE trial for Faraflex PFA system"
@@ -671,6 +725,12 @@
 
 
 
+
+  additionalSources:
+    - label: FDA 510(k) K261745
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K261745
+  reviewStatus: draft
+
 - id: "news-2026-07-15-acc-scai-and-sts-submit-formal-comments-on-cms-proposed-tavr-national-co"
   publishedAt: "2026-07-15"
   title: "ACC, SCAI, and STS submit formal comments on CMS’ proposed TAVR National Coverage Determination update"
@@ -686,7 +746,9 @@
 - id: "news-2026-07-13-medtronic-issues-removal-action-for-certain-harmony-transcatheter-pulmon"
   publishedAt: "2026-07-13"
   title: "Medtronic issues removal action for certain Harmony transcatheter pulmonary valve delivery catheter lots"
-  summary: "Medtronic issued a customer letter recommending removal of certain lots of the Harmony transcatheter pulmonary valve delivery catheter system, and the FDA identified the action as its most serious recall classification because continued use could result in serious injury or death. Harmony is Medtronic’s transcatheter pulmonary valve platform for patients with dysfunctional right ventricular outflow tracts."
+  summary: >-
+    Medtronic reported a removal action for specified lots of the Harmony Delivery Catheter System. FDA recall Z-2624-2026 covers the delivery
+    catheter and advises checking affected lots; it does not identify a recall of the implanted Harmony valve itself.
   sourceName: "MassDevice"
   sourceUrl: "https://www.massdevice.com/medtronic-warns-harmony-delivery-system/"
   topicTags: ["pulmonary valve", "device safety", "recall"]
@@ -694,6 +756,12 @@
 
 
 
+
+
+  additionalSources:
+    - label: FDA Harmony Delivery Catheter System Class I recall Z-2624-2026
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRes/res.cfm?id=220767
+  reviewStatus: draft
 
 - id: "news-2026-07-13-edwards-lifesciences-and-genesis-medtech-agree-to-12-million-ftc-settlem"
   publishedAt: "2026-07-13"
@@ -706,6 +774,12 @@
 
 
 
+
+
+  additionalSources:
+    - label: FTC case page and proposed judgment status
+      url: https://www.ftc.gov/legal-library/browse/cases-proceedings/united-states-v-edwards-lifesciences-corp-genesis-medtech-group-ltd
+  reviewStatus: draft
 
 - id: "news-2026-07-07-cytokinetics-announces-esc-2026-late-breaking-aficamten-abstracts"
   publishedAt: "2026-07-07"
@@ -758,7 +832,12 @@
 - id: "news-2026-07-01-northwestern-fluoroless-watchman-workflow"
   publishedAt: "2026-07-01"
   title: "Northwestern describes fluoroscopy-free AF ablation and WATCHMAN implantation workflow"
-  summary: "A Northwestern Medicine Breakthroughs for Physicians clinical video describes a fluoroscopy-free workflow combining catheter ablation and WATCHMAN implantation; the featured physician reports performing ablation and WATCHMAN procedures without radiation exposure over 15 years. Northwestern dates the item only to July 2026, without a publication day. This is a technique feature, not a comparative clinical study; it reports no controlled outcomes, and does not identify the WATCHMAN generation, so efficacy and generation-specific conclusions cannot be drawn."
+  summary: >-
+    A Northwestern Medicine Breakthroughs for Physicians clinical video describes a fluoroscopy-free workflow combining catheter ablation and
+    WATCHMAN implantation; the featured physician reports performing ablation and WATCHMAN procedures without radiation exposure over 15
+    years. Northwestern dates the item only to July 2026, without a publication day. This is a technique feature, not a comparative clinical
+    study; it reports no controlled outcomes, and does not identify the WATCHMAN generation, so efficacy and generation-specific conclusions
+    cannot be drawn. Source dates this report to July 2026; the exact publication day is unverified.
   sourceName: "Northwestern Medicine Breakthroughs for Physicians"
   sourceUrl: "https://breakthroughsforphysicians.nm.org/cardiovascular-clinical-video-radiation-free-catheter-ablation-watchman-implantation.html"
   topicTags: ["LAAO", "WATCHMAN", "fluoroscopy-free procedure", "workflow"]
@@ -789,6 +868,9 @@
 
 
 
+
+  reviewStatus: draft
+
 - id: "news-2026-06-29-abbott-highlights-triclip-navitor-and-amulet-360-datasets-at-ny-valves"
   publishedAt: "2026-06-29"
   title: "Abbott highlights TriClip, Navitor, and Amulet 360 datasets at NY Valves"
@@ -800,6 +882,9 @@
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-06-28-j-valve-transfemoral-thv-system-reports-1-year-efs-outcomes-in-severe-ar"
   publishedAt: "2026-06-28"
@@ -813,6 +898,9 @@
 
 
 
+
+  reviewStatus: draft
+
 - id: "news-2026-06-26-valgen-dragonfly-tmvr-receives-ce-mark-for-functional-mr"
   publishedAt: "2026-06-26"
   title: "Valgen DragonFly TMVR receives CE Mark for functional MR"
@@ -824,6 +912,9 @@
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-06-26-edwards-receives-fda-clearance-for-ecliptis-laa-exclusion-system"
   publishedAt: "2026-06-26"
@@ -837,6 +928,12 @@
 
 
 
+
+  additionalSources:
+    - label: FDA 510(k) K254232
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K254232
+  reviewStatus: draft
+
 - id: "news-2026-06-18-cms-proposes-major-tavr-coverage-update"
   publishedAt: "2026-06-18"
   title: "CMS proposes major TAVR coverage update"
@@ -844,10 +941,14 @@
   sourceName: "CMS proposed decision memo"
   sourceUrl: "https://www.cms.gov/medicare-coverage-database/view/ncacal-decision-memo.aspx?NCAId=321&proposed=Y"
   topicTags: ["TAVR", "reimbursement", "policy"]
-  relevantNodeIds: ["cond-as", "dev-sapien-3", "dev-evolut", "dev-navitor"]
+  relevantNodeIds:
+    - cond-as
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-06-16-ten-year-partner-2a-and-sapien-3-registry-data-sharpen-the-tavi-durabili"
   publishedAt: "2026-06-16"

@@ -1,0 +1,387 @@
+{
+  "auditDate": "2026-10-03",
+  "stage": "Domain findings and candidate changes before final integration",
+  "resolutionReport": "docs/DATABASE_AUDIT_2026-10-03.md",
+  "limitations": [
+    "Candidates are not an automatic patch; parent review narrowed or rejected unsupported fields. Final authored YAML and the consolidated report describe implemented changes."
+  ],
+  "therapyUpdates": [
+    {
+      "id": "dev-mi-chord",
+      "fields": {
+        "materials": [
+          {
+            "name": "Expanded polytetrafluoroethylene (ePTFE)",
+            "role": "Permanent artificial chordae suture",
+            "category": "fabric",
+            "source": "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf"
+          },
+          {
+            "name": "Titanium (ASTM F67 grade 1 or 2)",
+            "role": "Permanent chordae fastener",
+            "category": "anchor",
+            "source": "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf"
+      ],
+      "notes": "FDA De Novo Summary PDF p.5, Table 1 identifies both as implanted components in permanent patient contact. The existing therapy entry has an empty materials list."
+    },
+    {
+      "id": "dev-tricvalve",
+      "fields": {
+        "materials": [
+          {
+            "name": "Nitinol",
+            "role": "Self-expanding SVC and IVC valve frames",
+            "category": "frame",
+            "source": "https://productsandfeatures.com/wp-content/uploads/2023/07/Tricvalve_Technical_Specifications_2023.pdf"
+          },
+          {
+            "name": "Bovine pericardium",
+            "role": "Three valve leaflets in each caval implant",
+            "category": "leaflet",
+            "source": "https://productsandfeatures.com/wp-content/uploads/2023/07/Tricvalve_Technical_Specifications_2023.pdf"
+          },
+          {
+            "name": "Polyester",
+            "role": "PVL skirt on the SVC frame",
+            "category": "fabric",
+            "source": "https://productsandfeatures.com/wp-content/uploads/2023/07/Tricvalve_Technical_Specifications_2023.pdf"
+          },
+          {
+            "name": "Bovine pericardium and PET",
+            "role": "Short PVL skirt on the IVC frame",
+            "category": "fabric",
+            "source": "https://productsandfeatures.com/products/tricvalve-transcatheter-bicaval-valves/"
+          }
+        ]
+      },
+      "sources": [
+        "https://productsandfeatures.com/wp-content/uploads/2023/07/Tricvalve_Technical_Specifications_2023.pdf",
+        "https://productsandfeatures.com/products/tricvalve-transcatheter-bicaval-valves/"
+      ],
+      "notes": "The manufacturer PDF p.2 describes nitinol, cross-linked bovine pericardium, and polyester PVL protection; the current manufacturer product page distinguishes SVC long skirt and IVC bovine-pericardium/PET short skirt. Current therapy record has materials: []. Keep CE scope distinct from the investigational US study."
+    },
+    {
+      "id": "dev-tricento",
+      "fields": {
+        "materials": [
+          {
+            "name": "Nitinol",
+            "role": "Support stent structure",
+            "category": "frame",
+            "source": "https://www.nvt-med.com/files/Content/Downloads/Patient%20Leaflet%20TRICENTO_Rev_00105601_072021_02.pdf"
+          },
+          {
+            "name": "Porcine pericardium",
+            "role": "Valve leaflets and stent-graft cover",
+            "category": "leaflet",
+            "source": "https://www.nvt-med.com/files/Content/Downloads/Patient%20Leaflet%20TRICENTO_Rev_00105601_072021_02.pdf"
+          },
+          {
+            "name": "Polytetrafluoroethylene (PTFE)",
+            "role": "Permanent suture material",
+            "category": "fabric",
+            "source": "https://www.nvt-med.com/files/Content/Downloads/Patient%20Leaflet%20TRICENTO_Rev_00105601_072021_02.pdf"
+          },
+          {
+            "name": "Gold",
+            "role": "Radiopaque markers",
+            "category": "frame",
+            "source": "https://www.nvt-med.com/files/Content/Downloads/Patient%20Leaflet%20TRICENTO_Rev_00105601_072021_02.pdf"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.nvt-med.com/files/Content/Downloads/Patient%20Leaflet%20TRICENTO_Rev_00105601_072021_02.pdf"
+      ],
+      "notes": "Manufacturer leaflet p.1, Materials and quantitative composition, lists porcine pericardium, PTFE, nitinol and gold. Current therapy record has materials: []."
+    },
+    {
+      "id": "dev-occlutech-pvl",
+      "fields": {
+        "materials": [
+          {
+            "name": "Nitinol",
+            "role": "Braided wire double-disc and waist occluder",
+            "category": "frame",
+            "source": "https://www.occlutech.com/wp-content/uploads/2020/06/Onorato-2019-Midterm-procedural-and-clinical-outcomes-of-percutaneous-paravalvular-leak-closure-with-the-Occlutech-PLD.pdf"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.occlutech.com/wp-content/uploads/2020/06/Onorato-2019-Midterm-procedural-and-clinical-outcomes-of-percutaneous-paravalvular-leak-closure-with-the-Occlutech-PLD.pdf"
+      ],
+      "notes": "Original study's device-description section (PDF p.3) identifies a self-expanding, flexible double-disc device made from nitinol-braided wires. Exact polymer/coating was not disclosed there; do not add one without a device-specific IFU."
+    },
+    {
+      "id": "dev-harmony",
+      "fields": {
+        "materials": [
+          {
+            "name": "PTFE-impregnated polyester suture",
+            "role": "Permanent fixation suture for TPV 22",
+            "category": "fabric",
+            "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf"
+          },
+          {
+            "name": "Ultra-high-molecular-weight polyethylene (UHMWPE) suture",
+            "role": "Permanent fixation suture for TPV 25",
+            "category": "fabric",
+            "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf"
+      ],
+      "notes": "FDA SSED p.2 identifies size-specific sutures in addition to the frame, leaflet tissue and polyester graft already listed. Apply the material roles only to the corresponding TPV size."
+    },
+    {
+      "id": "dev-navitor",
+      "fields": {},
+      "sources": [
+        "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF"
+      ],
+      "notes": "Cross-file material conflict: therapy YAML calls NaviSeal UHMWPE, while the catalog spec calls it polyethylene. The Abbott IFU is shared, but its exact material table/page was not verified during this pass; retain the conflict for direct IFU review rather than silently asserting either label."
+    }
+  ],
+  "companyRecommendations": [],
+  "findings": [
+    {
+      "id": "ver-navitor",
+      "status": "gap",
+      "summary": "Navitor is the Portico-lineage PMA P190023 device after S002; 2022 IFU sizes predate 35 mm Titan added by S013. NaviSeal material is recorded as PE in catalog vs UHMWPE in therapy data; direct IFU locator resolution remains open.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P190023S002",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P190023S013",
+        "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF"
+      ]
+    },
+    {
+      "id": "ver-acurate-neo2",
+      "status": "verified",
+      "summary": "CE-marked; no FDA authorization located. Boston Scientific disclosed its Q2 2025 decision to discontinue worldwide sales of ACURATE neo2 and Prime; this is product sales discontinuation, not a patient implant recall.",
+      "sources": [
+        "https://news.bostonscientific.com/2025-10-22-Boston-Scientific-announces-results-for-third-quarter-2025",
+        "https://www.bostonscientific.com/en-US/medical-specialties/structural-heart/acurate-neo2-for-physicians.html"
+      ]
+    },
+    {
+      "id": "ver-trilogy",
+      "status": "verified",
+      "summary": "PMA P250024 approved 2026-03-17 for symptomatic severe native AR in high-or-greater surgical risk patients; S003 is a later 2026-07-09 supplement. Version and locator remain distinct.",
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250024B.pdf",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?PMANumber=P250024&SupplementNumber=S003&start_search=1"
+      ]
+    },
+    {
+      "id": "ver-melody",
+      "status": "gap",
+      "summary": "The HDE-to-PMA sequence is correctly represented. SSED verifies platinum-iridium frame and bovine jugular valve tissue; fixation suture polymer is not specified in the cited SSED and remains unresolved.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfHDE/hde.cfm?id=H080002",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140017B.pdf"
+      ]
+    },
+    {
+      "id": "ver-harmony",
+      "status": "corrected",
+      "summary": "PMA scope is native or surgically repaired RVOT severe PR; composition includes nitinol, polyester graft, porcine pericardium, and TPV-size-specific permanent sutures. Catalog clarification added for TPV22 vs TPV25.",
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046D.pdf"
+      ]
+    },
+    {
+      "id": "ver-sapien-3",
+      "status": "verified",
+      "summary": "Reviewed base SAPIEN 3 product spec: balloon-expandable cobalt-chromium frame, bovine-pericardial leaflets and ThermaFix tissue; native AS risk scope and high-risk valve-in-valve indication remain separated.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031D.pdf"
+      ]
+    },
+    {
+      "id": "ver-sapien-ultra-resilia",
+      "status": "gap",
+      "summary": "S141 is a tissue/design-change approval without dedicated public SSED or RESILIA-specific sizing table; shared Ultra IFU supports platform attributes only. Existing not-publicly-disclosed size field is appropriate.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031S141",
+        "https://www.edwards.com/newsroom/news/2022-09-12-edwards-launches-sapien-3-ultra-resilia-valve-foll"
+      ]
+    },
+    {
+      "id": "ver-evolut-fx",
+      "status": "corrected",
+      "summary": "FDA FX generation entered under S094; catalog lacked durable frame and leaflet materials, now added from the device-description section of the IFU.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130021S094"
+      ]
+    },
+    {
+      "id": "ver-evolut-fx-plus",
+      "status": "verified",
+      "summary": "FX+ is a design/manufacturing generation introduced by S155 with larger frame windows; it retains its own distinct material/spec row from FX.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130021S155"
+      ]
+    },
+    {
+      "id": "ver-mitraclip-g4",
+      "status": "verified",
+      "summary": "G4 adds NTW/XTW and independent/simultaneous gripper actuation over prior configurations; materials are represented at family therapy level.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S029",
+        "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/au/hcp/structural-heart/pdfs/mitraclip/Exec%20Summary%20-%20MitraClip%20G4%20v2.pdf"
+      ]
+    },
+    {
+      "id": "ver-mitraclip-g5",
+      "status": "verified",
+      "summary": "G5 is a delivery handle/IFU redesign on the unchanged G4 implant; 2025 S078 clarifies preparation steps and does not constitute an indication expansion.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P100009S078"
+      ]
+    },
+    {
+      "id": "ver-triclip-g5",
+      "status": "verified",
+      "summary": "G5 delivery handle/IFU update carries the G4 implant. Its decision should not be read as a new implant material version or indication expansion.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P230007S005",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P100009S078"
+      ]
+    },
+    {
+      "id": "ver-pascal-precision",
+      "status": "verified",
+      "summary": "FDA PMA P220003 is scoped to degenerative MR for prohibitive surgical risk; the catalog retains a distinct central-spacer device/material profile.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P220003",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf22/P220003B.pdf"
+      ]
+    },
+    {
+      "id": "ver-tendyne",
+      "status": "verified",
+      "summary": "PMA P240042 authorization covers severe MAC-associated mitral valve dysfunction for patients unsuitable for surgery/TEER; materials and apical tether are version-specific.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P240042",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042B.pdf"
+      ]
+    },
+    {
+      "id": "ver-sapien-m3",
+      "status": "verified",
+      "summary": "PMA P250019 (2025-12-22) is a separate transseptal TMVR system and authorization from Tendyne; the 2026 process supplement does not replace the original approval record.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250019",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250019S002"
+      ]
+    },
+    {
+      "id": "ver-intrepid",
+      "status": "gap",
+      "summary": "Investigational version is not FDA authorized; APOLLO transapical lineage and newer transseptal feasibility protocol are different access-system study contexts. Exact commercial availability and final transseptal version status remain unverified.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT02322840",
+        "https://cdn.clinicaltrials.gov/large-docs/40/NCT02322840/Prot_SAP_001.pdf"
+      ]
+    },
+    {
+      "id": "ver-evoque",
+      "status": "verified",
+      "summary": "Original PMA P230013 is severe symptomatic TR despite OMT. September 2026 supplement S027 exists; it is post-approval history, not a new therapy lineage.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P230013",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?PMANumber=P230013&SupplementNumber=S027&start_search=1"
+      ]
+    },
+    {
+      "id": "ver-adaptr",
+      "status": "gap",
+      "summary": "Public evidence remains a single first-in-human case; textile ingrowth skirt polymer is not disclosed, so no skirt material should be inferred.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12926008/"
+      ]
+    },
+    {
+      "id": "ver-cardioband",
+      "status": "gap",
+      "summary": "CE-marked direct annuloplasty for mitral and later tricuspid use; no US PMA identified. Reviewed source gives six sizes but not exact lengths, and the exact labeling lifecycle remains uncertain.",
+      "sources": [
+        "https://eurointervention.pcronline.com/article/the-cardioband-transcatheter-direct-mitral-valve-annuloplasty-system",
+        "https://www.edwards.com/jp/newsroom/news/30-04-2018"
+      ]
+    },
+    {
+      "id": "ver-occlutech-pvl",
+      "status": "gap",
+      "summary": "Dedicated PVL device has observational clinical evidence and original-study description of a nitinol-braided double disc; FDA authorization not identified. Therapy materials remain empty pending owner update.",
+      "sources": [
+        "https://www.occlutech.com/wp-content/uploads/2020/06/Onorato-2019-Midterm-procedural-and-clinical-outcomes-of-percutaneous-paravalvular-leak-closure-with-the-Occlutech-PLD.pdf",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/"
+      ]
+    },
+    {
+      "id": "ver-neochord-ds1000",
+      "status": "gap",
+      "summary": "ReChord remains an IDE investigation (registry status active, not recruiting at cited 2026 update). Product/implant material and non-US market status need an exact SSCP locator review before populating the empty materials list.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT02803957",
+        "https://www.neochord.com/wp-content/uploads/2024/12/RP-602000-001_DS1000_SSCP_Rev_B_FINAL_05Dec2024.docx.pdf"
+      ]
+    },
+    {
+      "id": "ver-mi-chord",
+      "status": "corrected",
+      "summary": "FDA De Novo granted 2024-06-11 for surgical replacement of adult mitral chordae under direct visualization. FDA p.5 explicitly identifies permanent ePTFE suture and titanium fastener; therapy YAML currently omits both.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230069",
+        "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf"
+      ]
+    },
+    {
+      "id": "ver-tricvalve",
+      "status": "corrected",
+      "summary": "EU CE-marked; US IDE remains investigational/no FDA approval identified. Manufacturer material table distinguishes SVC and IVC skirt composition; catalog now contains sourced composition but legacy therapy has no materials.",
+      "sources": [
+        "https://productsandfeatures.com/wp-content/uploads/2023/07/Tricvalve_Technical_Specifications_2023.pdf",
+        "https://clinicaltrials.gov/study/NCT06137807",
+        "https://www.cms.gov/medicare/coverage/investigational-device-exemption-ide-studies/approved/g240065-nct06137807"
+      ]
+    },
+    {
+      "id": "ver-sapien-xt-caval",
+      "status": "verified",
+      "summary": "TRICAVAL studied off-label IVC implantation of the separately approved SAPIEN XT; trial terminated for safety concerns. This does not establish withdrawal of SAPIEN XT from its labeled aortic uses.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT02387697",
+        "https://pubmed.ncbi.nlm.nih.gov/31929100/"
+      ]
+    },
+    {
+      "id": "ver-avp3-pvl",
+      "status": "gap",
+      "summary": "AVP III appears in observational PVL closure data, but PVL-specific FDA authorization was not found. Do not infer composition from AVP/AVP II generations; exact AVP III-specific IFU materials remain unverified.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10863827/",
+        "https://www.tga.gov.au/resources/artg/366090"
+      ]
+    },
+    {
+      "id": "ver-tricento",
+      "status": "corrected",
+      "summary": "Manufacturer leaflet identifies porcine pericardium, PTFE suture, nitinol stent and gold markers. Therapy data omit materials; family developer name matches leaflet, though other clinical publications use MEDIRA and current corporate relationship is unresolved.",
+      "sources": [
+        "https://www.nvt-med.com/files/Content/Downloads/Patient%20Leaflet%20TRICENTO_Rev_00105601_072021_02.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/35236096/"
+      ]
+    }
+  ]
+}

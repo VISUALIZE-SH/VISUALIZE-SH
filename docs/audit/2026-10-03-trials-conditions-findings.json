@@ -1,0 +1,815 @@
+{
+  "auditDate": "2026-10-03",
+  "stage": "Domain findings and candidate changes before final integration",
+  "resolutionReport": "docs/DATABASE_AUDIT_2026-10-03.md",
+  "limitations": [
+    "Candidates are not an automatic patch; parent review narrowed or rejected unsupported fields. Final authored YAML and the consolidated report describe implemented changes."
+  ],
+  "findings": [
+    {
+      "id": "cond-af",
+      "status": "corrected",
+      "summary": "Added/verified authoritative guideline or consensus source supporting existing condition anatomy and definition; marked draft and dated 2026-10-03.",
+      "sources": [
+        "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001193"
+      ]
+    },
+    {
+      "id": "cond-ar",
+      "status": "corrected",
+      "summary": "Added/verified authoritative guideline or consensus source supporting existing condition anatomy and definition; marked draft and dated 2026-10-03.",
+      "sources": [
+        "https://academic.oup.com/eurheartj/article/46/44/4635/8234488"
+      ]
+    },
+    {
+      "id": "cond-as",
+      "status": "corrected",
+      "summary": "Added 2025 valve-guideline source and updated the prior CMS NCD note using the final 2026-09-10 decision: symptomatic severe AS is covered without CED; asymptomatic severe AS remains restricted to CED and FDA-indicated systems. Historical proposal citations retained.",
+      "sources": [
+        "https://academic.oup.com/eurheartj/article/46/44/4635/8234488",
+        "https://www.cms.gov/medicare-coverage-database/view/ncacal-decision-memo.aspx?NCAId=321&proposed=N",
+        "https://www.acc.org/Latest-in-Cardiology/Articles/2026/06/17/17/38/CMS-Proposes-Updates-to-TAVR-National-Coverage-Determination",
+        "https://www.tctmd.com/news/cms-proposes-expanding-tavi-coverage-asymptomatic-patients"
+      ]
+    },
+    {
+      "id": "cond-asd",
+      "status": "corrected",
+      "summary": "Added/verified authoritative guideline or consensus source supporting existing condition anatomy and definition; marked draft and dated 2026-10-03.",
+      "sources": [
+        "https://www.jacc.org/doi/10.1016/j.jacc.2025.09.006"
+      ]
+    },
+    {
+      "id": "cond-attr-cm",
+      "status": "corrected",
+      "summary": "Added/verified authoritative guideline or consensus source supporting existing condition anatomy and definition; marked draft and dated 2026-10-03.",
+      "sources": [
+        "https://www.jacc.org/doi/10.1016/j.jacc.2022.11.022"
+      ]
+    },
+    {
+      "id": "cond-cmd",
+      "status": "corrected",
+      "summary": "Added/verified authoritative guideline or consensus source supporting existing condition anatomy and definition; marked draft and dated 2026-10-03.",
+      "sources": [
+        "https://doi.org/10.1093/eurheartj/ehae177"
+      ]
+    },
+    {
+      "id": "cond-hcm",
+      "status": "corrected",
+      "summary": "Added/verified authoritative guideline or consensus source supporting existing condition anatomy and definition; marked draft and dated 2026-10-03.",
+      "sources": [
+        "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001250"
+      ]
+    },
+    {
+      "id": "cond-hfpef",
+      "status": "corrected",
+      "summary": "Added 2022 HF guideline; removed interatrial shunts from generic emerging-therapy claim.",
+      "sources": [
+        "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063"
+      ]
+    },
+    {
+      "id": "cond-hfref",
+      "status": "corrected",
+      "summary": "Added 2022 HF guideline support; replaced unsupported monitoring characterization with definition/treatment summary.",
+      "sources": [
+        "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063"
+      ]
+    },
+    {
+      "id": "cond-hypertension",
+      "status": "corrected",
+      "summary": "Retained new guideline-supported systemic hypertension condition; anatomy includes systemic arterial circulation and LV.",
+      "sources": [
+        "https://academic.oup.com/eurheartj/article/45/38/3912/7741010",
+        "https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001356"
+      ]
+    },
+    {
+      "id": "cond-ischemic-lv-remodeling",
+      "status": "corrected",
+      "summary": "Rechecked prior source and added the 2025 ALIVE primary publication supporting LV dilation/anterior scar and reconstruction.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9725051/",
+        "https://pubmed.ncbi.nlm.nih.gov/39797846/",
+        "https://www.jacc.org/doi/10.1016/j.jchf.2024.09.023"
+      ]
+    },
+    {
+      "id": "cond-mr",
+      "status": "corrected",
+      "summary": "Added/verified authoritative guideline or consensus source supporting existing condition anatomy and definition; marked draft and dated 2026-10-03.",
+      "sources": [
+        "https://academic.oup.com/eurheartj/article/46/44/4635/8234488"
+      ]
+    },
+    {
+      "id": "cond-ms",
+      "status": "corrected",
+      "summary": "Added/verified authoritative guideline or consensus source supporting existing condition anatomy and definition; marked draft and dated 2026-10-03.",
+      "sources": [
+        "https://academic.oup.com/eurheartj/article/46/44/4635/8234488"
+      ]
+    },
+    {
+      "id": "cond-pda",
+      "status": "corrected",
+      "summary": "Corrected overbroad statement that transcatheter closure is standard in preterm infants; added 2025 ACHD and AAP sources.",
+      "sources": [
+        "https://www.jacc.org/doi/10.1016/j.jacc.2025.09.006",
+        "https://publications.aap.org/pediatrics/article/155/5/e2025071425/201674/Patent-Ductus-Arteriosus-in-Preterm-Infants"
+      ]
+    },
+    {
+      "id": "cond-pfo",
+      "status": "corrected",
+      "summary": "Added/verified authoritative guideline or consensus source supporting existing condition anatomy and definition; marked draft and dated 2026-10-03.",
+      "sources": [
+        "https://www.jscai.org/article/S2772-9303(22)00094-4/fulltext",
+        "https://www.scai.org/media-center/news-and-articles/scai-issues-official-guidelines-management-patent-foramen-ovale"
+      ]
+    },
+    {
+      "id": "cond-pv",
+      "status": "corrected",
+      "summary": "Added/verified authoritative guideline or consensus source supporting existing condition anatomy and definition; marked draft and dated 2026-10-03.",
+      "sources": [
+        "https://www.jacc.org/doi/10.1016/j.jacc.2025.09.006"
+      ]
+    },
+    {
+      "id": "cond-pvl",
+      "status": "corrected",
+      "summary": "Rechecked source-to-anatomy fit; corrected category to prosthetic valve complication, included native annulus; one prior PMC source inaccessible.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10863827/"
+      ]
+    },
+    {
+      "id": "cond-tr",
+      "status": "corrected",
+      "summary": "Added/verified authoritative guideline or consensus source supporting existing condition anatomy and definition; marked draft and dated 2026-10-03.",
+      "sources": [
+        "https://academic.oup.com/eurheartj/article/46/44/4635/8234488"
+      ]
+    },
+    {
+      "id": "cond-vsd",
+      "status": "corrected",
+      "summary": "Corrected language to distinguish congenital defect from acquired post-MI rupture and qualify transcatheter closure; added 2025 ACHD/ACS sources.",
+      "sources": [
+        "https://www.jacc.org/doi/10.1016/j.jacc.2025.09.006",
+        "https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009"
+      ]
+    },
+    {
+      "id": "trial-acacia-hcm",
+      "status": "verified",
+      "summary": "Inspected trial identity, condition/therapy linkage, endpoint, enrollment, reported result, and status fields against record citations available in source data; this pass did not independently refresh every mutable registry field.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT06081894",
+        "https://www.thecardiologyadvisor.com/news/aficamten-meets-primary-endpoints-in-phase-3-non-obstructive-hcm-trial/",
+        "https://www.globenewswire.com/news-release/2026/07/07/3323061/35409/en/Cytokinetics-Announces-Three-Late-Breaking-Science-Abstracts-at-the-European-Society-of-Cardiology-ESC-Congress-2026.html"
+      ]
+    },
+    {
+      "id": "trial-acorn-corcap",
+      "status": "corrected",
+      "summary": "Filled 107 for the five-year no-MVR stratum (57 device, 50 control); 50 completed five-year follow-up. No NCT assigned because NCT00630266 is a separate confirmatory study.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/21762937/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/"
+      ]
+    },
+    {
+      "id": "trial-acurate-ide",
+      "status": "corrected",
+      "summary": "Enrollment reflects 1,500 participants in the randomized primary-paper comparison. A secondary reproduction says overall registry n=1,948, but this total was not accessible in the primary registry and remains unverified.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/40412426/",
+        "https://clinicaltrials.gov/study/NCT03735667"
+      ]
+    },
+    {
+      "id": "trial-adaptr-fih",
+      "status": "verified",
+      "summary": "Inspected trial identity, condition/therapy linkage, endpoint, enrollment, reported result, and status fields against record citations available in source data; this pass did not independently refresh every mutable registry field.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT06368401",
+        "https://www.jacc.org/doi/10.1016/j.jaccas.2025.106051",
+        "https://www.tctmd.com/slide/case-presentation-99"
+      ]
+    },
+    {
+      "id": "trial-align-ar",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT04415047",
+        "https://clinicaltrials.gov/search?term=ALIGN-AR+JenaValve"
+      ]
+    },
+    {
+      "id": "trial-alive-revivent",
+      "status": "corrected",
+      "summary": "Filled 126 actual participants reported by the ALIVE primary paper (84 device and 42 nonrandomized controls).",
+      "sources": [
+        "https://www.jacc.org/doi/10.1016/j.jchf.2024.09.023",
+        "https://clinicaltrials.gov/study/NCT02931240"
+      ]
+    },
+    {
+      "id": "trial-alt-flow-ii",
+      "status": "verified",
+      "summary": "Inspected trial identity, condition/therapy linkage, endpoint, enrollment, reported result, and status fields against record citations available in source data; this pass did not independently refresh every mutable registry field.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT05686317"
+      ]
+    },
+    {
+      "id": "trial-amulet-ide",
+      "status": "corrected",
+      "summary": "Corrected the comparator edge to first-generation Watchman 2.5, not FLX; primary 3-year paper identifies the generation mismatch.",
+      "sources": [
+        "https://www.jacc.org/doi/10.1016/j.jcin.2023.06.022",
+        "https://clinicaltrials.gov/study/NCT02879448"
+      ]
+    },
+    {
+      "id": "trial-apollo-b",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03997383",
+        "https://clinicaltrials.gov/search?term=APOLLO-B+patisiran"
+      ]
+    },
+    {
+      "id": "trial-apollo-tmvr",
+      "status": "gap",
+      "summary": "NCT identity matches the Intrepid APOLLO study. Third-party mirror lists 1,056 overall target, but primary exact enrollment was not verifiable; enrollment left unset.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03242642"
+      ]
+    },
+    {
+      "id": "trial-attr-act",
+      "status": "verified",
+      "summary": "Inspected trial identity, condition/therapy linkage, endpoint, enrollment, reported result, and status fields against record citations available in source data; this pass did not independently refresh every mutable registry field.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT01994889"
+      ]
+    },
+    {
+      "id": "trial-attribute-cm",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03860935",
+        "https://clinicaltrials.gov/search?term=ATTRibute-CM"
+      ]
+    },
+    {
+      "id": "trial-champion",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT00531661",
+        "https://clinicaltrials.gov/search?term=CHAMPION+CardioMEMS"
+      ]
+    },
+    {
+      "id": "trial-champion-af",
+      "status": "corrected",
+      "summary": "Corrected study status to active follow-up per matching registry information; positive published readout does not imply registry completion.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT04394546",
+        "https://www.nejm.org/doi/10.1056/NEJMoa2517213"
+      ]
+    },
+    {
+      "id": "trial-clasp-iid",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03706833",
+        "https://clinicaltrials.gov/search?term=CLASP+IID+PASCAL"
+      ]
+    },
+    {
+      "id": "trial-close",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT00562289",
+        "https://clinicaltrials.gov/search?term=CLOSE+PFO+trial"
+      ]
+    },
+    {
+      "id": "trial-closure-af",
+      "status": "gap",
+      "summary": "No verified NCT ID established in inspected citations; retain as a registry-ID gap pending a matching primary source. Unresolved fields: nctId, timeline.",
+      "sources": [
+        "https://www.tctmd.com/news/closure-af-worse-outcomes-laao-driven-results-women",
+        "https://www.tctmd.com/news/cms-finalizes-anticipated-updates-national-coverage-tavi"
+      ]
+    },
+    {
+      "id": "trial-coapt",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT01626079",
+        "https://clinicaltrials.gov/search?term=COAPT+MitraClip"
+      ]
+    },
+    {
+      "id": "trial-comet-hf",
+      "status": "corrected",
+      "summary": "Verified NCT06736574 against the matching CTG/Sponsor COMET-HF record; 1,800 is estimated registry enrollment and 2024-12-19 actual start.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT06736574",
+        "https://ir.cytokinetics.com/press-releases/press-release-details/2024/Cytokinetics-Announces-Start-of-COMET-HF-a-Confirmatory-Phase-3-Clinical-Trial-of-Omecamtiv-Mecarbil-in-Patients-with-Symptomatic-Heart-Failure-with-Severely-Reduced-Ejection-Fraction-12-03-2024/default.aspx"
+      ]
+    },
+    {
+      "id": "trial-corcinch-hf",
+      "status": "verified",
+      "summary": "Inspected trial identity, condition/therapy linkage, endpoint, enrollment, reported result, and status fields against record citations available in source data; this pass did not independently refresh every mutable registry field. Unresolved fields: timeline.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT04331769",
+        "https://www.ancoraheart.com/press_releases/ancora-heart-inc-reports-two-year-results/"
+      ]
+    },
+    {
+      "id": "trial-cosira",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT01205893",
+        "https://clinicaltrials.gov/search?term=COSIRA+reducer"
+      ]
+    },
+    {
+      "id": "trial-cosira-ii",
+      "status": "corrected",
+      "summary": "Filled 380 as the CTG estimated total across the randomized sham-controlled cohort and the nonrandomized registry; not the RCT denominator.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT05102019"
+      ]
+    },
+    {
+      "id": "trial-dapa-hf",
+      "status": "verified",
+      "summary": "Inspected trial identity, condition/therapy linkage, endpoint, enrollment, reported result, and status fields against record citations available in source data; this pass did not independently refresh every mutable registry field.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03036124"
+      ]
+    },
+    {
+      "id": "trial-deliver",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03619213",
+        "https://clinicaltrials.gov/search?term=DELIVER+dapagliflozin"
+      ]
+    },
+    {
+      "id": "trial-early-tavr",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03042104",
+        "https://clinicaltrials.gov/search?term=EARLY+TAVR+asymptomatic"
+      ]
+    },
+    {
+      "id": "trial-emperor-preserved",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03057951",
+        "https://clinicaltrials.gov/search?term=EMPEROR-Preserved"
+      ]
+    },
+    {
+      "id": "trial-emperor-reduced",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03057977",
+        "https://clinicaltrials.gov/search?term=EMPEROR-Reduced"
+      ]
+    },
+    {
+      "id": "trial-encircle",
+      "status": "gap",
+      "summary": "NCT identity matches SAPIEN M3 ENCIRCLE. FDA SSED supports 299 treated in the main cohort; third-party overall target 900 was not verified in the primary registry and remains unset.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT04153292",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250019D.pdf"
+      ]
+    },
+    {
+      "id": "trial-everest-2",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT00209274",
+        "https://clinicaltrials.gov/search?term=EVEREST+II+MitraClip"
+      ]
+    },
+    {
+      "id": "trial-evolut-low-risk",
+      "status": "corrected",
+      "summary": "Mapped trial to broad CoreValve/Evolut lineage; original randomized models were CoreValve, Evolut R, Evolut PRO, not FX/FX+.",
+      "sources": [
+        "https://www.nejm.org/doi/abs/10.1056/NEJMoa1816885",
+        "https://clinicaltrials.gov/study/NCT02701283"
+      ]
+    },
+    {
+      "id": "trial-explorer-hcm",
+      "status": "verified",
+      "summary": "Inspected trial identity, condition/therapy linkage, endpoint, enrollment, reported result, and status fields against record citations available in source data; this pass did not independently refresh every mutable registry field.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03470545"
+      ]
+    },
+    {
+      "id": "trial-finearts-hf",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT04435626",
+        "https://clinicaltrials.gov/search?term=FINEARTS-HF"
+      ]
+    },
+    {
+      "id": "trial-galactic-hf",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT02929329",
+        "https://clinicaltrials.gov/search?term=GALACTIC-HF"
+      ]
+    },
+    {
+      "id": "trial-guide-hf",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03387813",
+        "https://clinicaltrials.gov/search?term=GUIDE-HF"
+      ]
+    },
+    {
+      "id": "trial-harmony",
+      "status": "corrected",
+      "summary": "Filled 86 actual CTG-listed participants for NCT02979587; noted FDA post-approval follow-up frame separately.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT02979587",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6743&t_id=721623"
+      ]
+    },
+    {
+      "id": "trial-helios-b",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT04153149",
+        "https://clinicaltrials.gov/search?term=HELIOS-B"
+      ]
+    },
+    {
+      "id": "trial-kiss-pvl",
+      "status": "gap",
+      "summary": "No verified NCT ID established in inspected citations; retain as a registry-ID gap pending a matching primary source. Unresolved fields: nctId, timeline.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/38156599/"
+      ]
+    },
+    {
+      "id": "trial-lambre-ii",
+      "status": "verified",
+      "summary": "Inspected trial identity, condition/therapy linkage, endpoint, enrollment, reported result, and status fields against record citations available in source data; this pass did not independently refresh every mutable registry field.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT07455539"
+      ]
+    },
+    {
+      "id": "trial-luminara",
+      "status": "corrected",
+      "summary": "Verified NCT06299826 against the matching primary Circulation results paper; filled 375 randomized (235 cohort A, 140 cohort B), and start date 2024-06-04 from the matching registry record. Design article planned ~360.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42668430/",
+        "https://clinicaltrials.gov/study/NCT06299826",
+        "https://academic.oup.com/eschf/article/13/3/xvaf007/8415024"
+      ]
+    },
+    {
+      "id": "trial-maple-hcm",
+      "status": "corrected",
+      "summary": "Corrected trial state, actual randomized enrollment (175), primary endpoint/readout details using matching CTG record and primary publication.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT05767346",
+        "https://www.nejm.org/doi/10.1056/NEJMoa2504654",
+        "https://clinicaltrials.gov/search?term=MAPLE-HCM"
+      ]
+    },
+    {
+      "id": "trial-mi-chord-pilot",
+      "status": "gap",
+      "summary": "No verified NCT ID established in inspected citations; retain as a registry-ID gap pending a matching primary source. Unresolved fields: nctId, timeline.",
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf"
+      ]
+    },
+    {
+      "id": "trial-mitra-fr",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT01920698",
+        "https://clinicaltrials.gov/search?term=MITRA-FR"
+      ]
+    },
+    {
+      "id": "trial-momentum-3",
+      "status": "corrected",
+      "summary": "Filled 1,028 randomized for the pivotal NCT02224755 IDE cohort; excludes the separate continued-access protocol and pooled-analysis denominators.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT02224755",
+        "https://www.nejm.org/doi/10.1056/NEJMoa1900486"
+      ]
+    },
+    {
+      "id": "trial-option",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03795298",
+        "https://clinicaltrials.gov/search?term=OPTION+Watchman"
+      ]
+    },
+    {
+      "id": "trial-paradigm-hf",
+      "status": "verified",
+      "summary": "Inspected trial identity, condition/therapy linkage, endpoint, enrollment, reported result, and status fields against record citations available in source data; this pass did not independently refresh every mutable registry field.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT01035255"
+      ]
+    },
+    {
+      "id": "trial-partner-2",
+      "status": "corrected",
+      "summary": "Corrected the randomized trial edge to SAPIEN XT plus surgery; SAPIEN 3 results came from a separate registry and are not attributed to the PARTNER 2A RCT.",
+      "sources": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa1514616",
+        "https://clinicaltrials.gov/study/NCT01314313"
+      ]
+    },
+    {
+      "id": "trial-partner-3",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT02675114",
+        "https://clinicaltrials.gov/search?term=PARTNER+3+SAPIEN"
+      ]
+    },
+    {
+      "id": "trial-peerless-hf",
+      "status": "corrected",
+      "summary": "Filled 210 as the primary publication population; noted secondary report of 217 enrolled and planned target 272 as unresolved discrepancies.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/22633302/",
+        "https://clinicaltrials.gov/study/NCT00382863"
+      ]
+    },
+    {
+      "id": "trial-pld-multicenter",
+      "status": "gap",
+      "summary": "No verified NCT ID established in inspected citations; retain as a registry-ID gap pending a matching primary source. Unresolved fields: nctId, timeline.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/"
+      ]
+    },
+    {
+      "id": "trial-prague-17",
+      "status": "corrected",
+      "summary": "Corrected device generation mapping: source-era reports identify Amulet and original Watchman; no Watchman FLX evidence is attributed.",
+      "sources": [
+        "https://www.jacc.org/doi/10.1016/j.jacc.2020.04.067",
+        "https://clinicaltrials.gov/study/NCT02426944"
+      ]
+    },
+    {
+      "id": "trial-prevail",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT01182441",
+        "https://clinicaltrials.gov/search?term=PREVAIL+Watchman"
+      ]
+    },
+    {
+      "id": "trial-proactive-hf",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT04089059",
+        "https://clinicaltrials.gov/search?term=PROACTIVE-HF+Cordella"
+      ]
+    },
+    {
+      "id": "trial-progress",
+      "status": "verified",
+      "summary": "Inspected trial identity, condition/therapy linkage, endpoint, enrollment, reported result, and status fields against record citations available in source data; this pass did not independently refresh every mutable registry field.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT04889872",
+        "https://www.crf.org/crf/news-and-events/news/news/3995-new-york-valves-2026-to-unveil-late-breaking-research-in-structural-heart-disease"
+      ]
+    },
+    {
+      "id": "trial-protect-af",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT00129545",
+        "https://clinicaltrials.gov/search?term=PROTECT-AF+Watchman"
+      ]
+    },
+    {
+      "id": "trial-rechord",
+      "status": "verified",
+      "summary": "Inspected trial identity, condition/therapy linkage, endpoint, enrollment, reported result, and status fields against record citations available in source data; this pass did not independently refresh every mutable registry field. Unresolved fields: timeline.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT02803957",
+        "https://www.neochord.com/wp-content/uploads/2024/12/RP-602000-001_DS1000_SSCP_Rev_B_FINAL_05Dec2024.docx.pdf"
+      ]
+    },
+    {
+      "id": "trial-reduce",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT00738894",
+        "https://clinicaltrials.gov/search?term=Gore+REDUCE+PFO"
+      ]
+    },
+    {
+      "id": "trial-reduce-lap-hf-i",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT02600234",
+        "https://clinicaltrials.gov/search?term=REDUCE+LAP-HF+I"
+      ]
+    },
+    {
+      "id": "trial-reduce-lap-hf-ii",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03088033",
+        "https://clinicaltrials.gov/search?term=REDUCE+LAP-HF+II"
+      ]
+    },
+    {
+      "id": "trial-relieve-hf",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03499236",
+        "https://clinicaltrials.gov/search?term=RELIEVE-HF"
+      ]
+    },
+    {
+      "id": "trial-respect",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT00465270",
+        "https://clinicaltrials.gov/search?term=RESPECT+PFO"
+      ]
+    },
+    {
+      "id": "trial-responder-hf",
+      "status": "corrected",
+      "summary": "Corrected to sponsor-reported 260 randomized (not stale 750 goal), in follow-up; clarified LVEF ≥40%, endpoint timing, and CV-death secondary endpoint.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT05425459",
+        "https://us.corviamedical.com/healthcare-professionals/reduce-lap-hf-clinical-program/responder-hf/",
+        "https://www.cms.gov/medicarecoverageideapproved-ide-studies/g150210-nct05425459"
+      ]
+    },
+    {
+      "id": "trial-sequoia-hcm",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT05186818",
+        "https://clinicaltrials.gov/search?term=SEQUOIA-HCM"
+      ]
+    },
+    {
+      "id": "trial-serra-i",
+      "status": "gap",
+      "summary": "Existing NCT06991322 is retained provisionally, but another reference points to NCT07449325; exact SERRA-I identity remains conflicting and requires source adjudication.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT06991322"
+      ]
+    },
+    {
+      "id": "trial-smart",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT04722250",
+        "https://clinicaltrials.gov/search?term=SMART+trial+small+annulus+TAVR"
+      ]
+    },
+    {
+      "id": "trial-summit",
+      "status": "corrected",
+      "summary": "Filled 958 as the planned multi-cohort SUMMIT program total; explicitly distinguished it from the randomized Tendyne-versus-TEER comparison.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03433274",
+        "https://d14d5nk8lue86.cloudfront.net/s3fs-public/2021-07/968a241d-2743-4000-a149-8217db77e1ee.pdf"
+      ]
+    },
+    {
+      "id": "trial-summit-tirzepatide",
+      "status": "verified",
+      "summary": "Added the distinct tirzepatide SUMMIT HFpEF trial, NCT04847557; primary NEJM paper verifies 731 randomized and Lilly study page verifies identity/start/completion. Distinct from Tendyne SUMMIT.",
+      "sources": [
+        "https://www.nejm.org/doi/10.1056/NEJMoa2410027",
+        "https://clinicaltrials.gov/study/NCT04847557",
+        "https://trials.lilly.com/en-US/trial/282998"
+      ]
+    },
+    {
+      "id": "trial-tricaval",
+      "status": "verified",
+      "summary": "Inspected trial identity, condition/therapy linkage, endpoint, enrollment, reported result, and status fields against record citations available in source data; this pass did not independently refresh every mutable registry field. Unresolved fields: timeline.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT02387697",
+        "https://pubmed.ncbi.nlm.nih.gov/31929100/"
+      ]
+    },
+    {
+      "id": "trial-tricento-registry",
+      "status": "gap",
+      "summary": "No verified NCT ID established in inspected citations; retain as a registry-ID gap pending a matching primary source. Unresolved fields: nctId, timeline.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/35236096/"
+      ]
+    },
+    {
+      "id": "trial-triluminate",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT03904147",
+        "https://clinicaltrials.gov/search?term=TRILUMINATE+TriClip"
+      ]
+    },
+    {
+      "id": "trial-triscend-2",
+      "status": "corrected",
+      "summary": "Corrected registry enrollment from 400 to 864 actual; official CTG record matches EVOQUE TRISCEND II and active-not-recruiting status.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT04482062",
+        "https://clinicaltrials.gov/search?term=TRISCEND+II+EVOQUE"
+      ]
+    },
+    {
+      "id": "trial-valor-hcm",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT04349072",
+        "https://clinicaltrials.gov/search?term=VALOR-HCM"
+      ]
+    },
+    {
+      "id": "trial-victoria",
+      "status": "corrected",
+      "summary": "Added the NCT identifier found in the record’s direct registry URL and cross-checked study name/intervention against an indexed matching CTG record or primary publication; this does not imply all mutable registry fields were refreshed.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT02861534",
+        "https://clinicaltrials.gov/search?term=VICTORIA+vericiguat"
+      ]
+    }
+  ],
+  "therapyUpdates": [],
+  "companyRecommendations": []
+}

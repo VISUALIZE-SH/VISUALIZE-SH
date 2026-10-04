@@ -33,6 +33,17 @@ sources:
   retrievedAt: '2026-09-23'
   access: public
   identifier: P200049
+- id: src-amulet-ifu
+  title: Amplatzer Amulet Left Atrial Appendage Occluder Instructions for Use (P200049 IFU)
+  url: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049C.pdf
+  kind: regulatory
+  publisher: FDA
+  publishedAt:
+    value: '2021-09'
+    precision: month
+  retrievedAt: '2026-09-30'
+  access: public
+  identifier: P200049
 - id: src-amplatzer-pfo-ssed
   title: Amplatzer PFO Occluder SSED
   url: https://www.accessdata.fda.gov/cdrh_docs/pdf12/P120021B.pdf
@@ -267,6 +278,7 @@ families:
   manufacturer: W. L. Gore & Associates
   entityIds:
   - dev-gore-cardioform-septal
+  - dev-gore-cardioform-asd
   conditionIds:
   - cond-pfo
   - cond-asd
@@ -336,6 +348,7 @@ versions:
   reviewStatus: draft
 - id: ver-amplatzer-pfo
   familyId: family-amplatzer-pfo
+  graphEntityId: dev-amplatzer-pfo
   name: Amplatzer PFO Occluder
   kind: device
   clinicalRole: treats
@@ -346,6 +359,7 @@ versions:
   reviewStatus: draft
 - id: ver-gore-cardioform-septal
   familyId: family-gore-cardioform
+  graphEntityId: dev-gore-cardioform-septal
   name: GORE CARDIOFORM Septal Occluder
   kind: device
   clinicalRole: treats
@@ -357,6 +371,7 @@ versions:
   reviewStatus: draft
 - id: ver-gore-cardioform-asd
   familyId: family-gore-cardioform
+  graphEntityId: dev-gore-cardioform-asd
   name: GORE CARDIOFORM ASD Occluder
   kind: device
   clinicalRole: treats
@@ -369,6 +384,7 @@ versions:
   reviewStatus: draft
 - id: ver-amplatzer-asd
   familyId: family-amplatzer-asd
+  graphEntityId: dev-amplatzer-asd
   name: Amplatzer Septal Occluder (ASO)
   kind: device
   clinicalRole: treats
@@ -380,6 +396,7 @@ versions:
   reviewStatus: draft
 - id: ver-amplatzer-piccolo
   familyId: family-amplatzer-piccolo
+  graphEntityId: dev-amplatzer-piccolo
   name: Amplatzer Piccolo Occluder
   kind: device
   clinicalRole: treats
@@ -391,6 +408,7 @@ versions:
   reviewStatus: draft
 - id: ver-amplatzer-vsd
   familyId: family-amplatzer-vsd
+  graphEntityId: dev-amplatzer-vsd
   name: Amplatzer Muscular VSD Occluder
   kind: device
   clinicalRole: treats
@@ -600,8 +618,10 @@ specs:
       value: 12F or 14F Amplatzer TV45x45 Delivery Sheath
       loc: PDF p.3, Accessories
     available-sizes:
-      value: Lobe 16-34 mm; disc 22-41 mm (13 device sizes)
-      loc: PDF p.2, Device Description
+      value: Lobe 16-34 mm; disc 22-41 mm (8 lobe sizes)
+      source: src-amulet-ifu
+      loc: PDF p.19 (printed p.15), Appendix A, Table 1
+      context: Eight lobe sizes (16, 18, 20, 22, 25, 28, 31, 34 mm). The SSED (PDF p.2, Device Description) gives the same lobe and disc ranges without a count. An earlier "13 device sizes" value was incorrect; the only 13s in the Amulet documents are a 13F loader/ACP sheath size (SSED PDF p.3) and the top of the first landing-zone range, not a size count.
     imaging-guidance:
       value: Pre-procedure TEE to exclude thrombus; fluoroscopy plus TEE during implantation
       loc: PDF p.4, Principles of Operation

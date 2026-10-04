@@ -214,9 +214,13 @@ families:
     manufacturer: Edwards Lifesciences
     entityIds:
       - dev-sapien-3
+      - dev-sapien-xt
     conditionIds:
       - cond-as
-    description: Separate native-valve indication changes from valve design and tissue changes.
+    description: >-
+      SAPIEN XT, SAPIEN 3 and SAPIEN 3 Ultra RESILIA are separate aortic valve configurations. Match trial evidence, materials and delivery
+      geometry to the tested version.
+
   - id: family-evolut
     name: Evolut
     manufacturer: Medtronic
@@ -254,17 +258,21 @@ families:
   - id: family-feops
     name: FEops HEARTguide
     manufacturer: FEops
-    entityIds: []
+    entityIds:
+      - dig-feops-heartguide
     conditionIds:
       - cond-af
     description: Patient-specific simulation for LAA occluder planning.
+
   - id: family-dasi
     name: PrecisionTAVI
     manufacturer: DASI Simulations
-    entityIds: []
+    entityIds:
+      - dig-precision-tavi
     conditionIds:
       - cond-as
     description: Patient-specific simulation for aortic valve planning.
+
   - id: family-story
     name: Story Health
     manufacturer: Story Health
@@ -278,8 +286,10 @@ families:
     manufacturer: Hello Heart
     entityIds:
       - dig-hello-heart
-    conditionIds: []
+    conditionIds:
+      - cond-hypertension
     description: A blood-pressure management program; no structural-heart efficacy attribution.
+
 versions:
   - id: ver-sapien-3
     familyId: family-sapien
@@ -292,6 +302,9 @@ versions:
         locator: 'Device and approval-order fields'
     reviewStatus: draft
     model: 9600TFX
+
+    graphEntityId: dev-sapien-3
+
   - id: ver-sapien-ultra-resilia
     familyId: family-sapien
     name: SAPIEN 3 Ultra RESILIA
@@ -302,6 +315,9 @@ versions:
       - sourceId: src-sapien-s141
         locator: 'Device, supplement reason and approval-order statement'
     reviewStatus: draft
+
+    graphEntityId: dev-sapien-3
+
   - id: ver-evolut-fx
     familyId: family-evolut
     name: Evolut FX
@@ -398,6 +414,9 @@ versions:
     reviewStatus: draft
     digitalSubtype: planning
     softwareVersion: 1.4.2
+
+    graphEntityId: dig-feops-heartguide
+
   - id: ver-dasi-11
     familyId: family-dasi
     name: PrecisionTAVI 1.1
@@ -410,6 +429,9 @@ versions:
     reviewStatus: draft
     digitalSubtype: planning
     softwareVersion: '1.1'
+
+    graphEntityId: dig-precision-tavi
+
   - id: ver-story-vital
     familyId: family-story
     name: Story Health · VITAL-HF care configuration
@@ -711,12 +733,13 @@ claims:
     availability: reported
     basis: directly_reported
     category: design
-    observedAt: '2026-09-20'
+    observedAt: "2026-10-03"
     sourceRefs:
-      - sourceId: src-evolut-ssed
-        locator: 'Section V, device description'
+      - sourceId: src-evolut-ifu
+        locator: Evolut FX IFU, PDF p.32, §1.1 — nitinol frame
     reviewStatus: draft
-    context: 'The cited SSED describes the Nitinol frame; this normalized row captures its material only.'
+    context: Material of the exact Evolut FX frame; self-expansion is represented separately.
+
   - id: claim-evolut-fx-expansion
     versionId: ver-evolut-fx
     key: expansion-mechanism
@@ -756,12 +779,13 @@ claims:
     availability: reported
     basis: directly_reported
     category: design
-    observedAt: '2026-09-20'
+    observedAt: "2026-10-03"
     sourceRefs:
-      - sourceId: src-evolut-ssed
-        locator: 'Section V, device description'
+      - sourceId: src-evolut-ifu
+        locator: Evolut FX IFU, PDF p.32, §1.1 — porcine-pericardial leaflets
     reviewStatus: draft
-    context: 'Source wording: “porcine pericardial tissue”; this normalized row captures leaflet material only.'
+    context: Leaflet tissue in the exact Evolut FX configuration.
+
   - id: claim-evolut-fx-markers
     versionId: ver-evolut-fx
     key: implant-depth-markers

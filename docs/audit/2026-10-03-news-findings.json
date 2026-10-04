@@ -1,0 +1,303 @@
+{
+  "auditDate": "2026-10-03",
+  "stage": "Domain findings and candidate changes before final integration",
+  "resolutionReport": "docs/DATABASE_AUDIT_2026-10-03.md",
+  "limitations": [
+    "Candidates are not an automatic patch; parent review narrowed or rejected unsupported fields. Final authored YAML and the consolidated report describe implemented changes."
+  ],
+  "newsUpdates": [
+    {
+      "id": "news-2026-09-10-emboline-receives-fda-clearance-for-the-emboliner-embolic-protection-sys",
+      "fields": {
+        "publishedAt": "2026-09-09",
+        "additionalSources": [
+          {
+            "label": "FDA 510(k) K261715",
+            "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715",
+        "https://www.prnewswire.com/news-releases/emboline-receives-us-fda-510k-clearance-for-emboliner-embolic-protection-system-302873269.html"
+      ],
+      "notes": "FDA decision Sep 8; PR release date Sep 9; row date Sep 10 appears off by one. 510(k) clearance/substantial equivalence, not PMA approval."
+    },
+    {
+      "id": "news-2026-08-30-acasa-tavi-ongoing-noac-monotherapy-reduces-subclinical-leaflet-thrombos",
+      "fields": {
+        "sourceName": "JAMA (original ACASA-TAVI trial)",
+        "sourceUrl": "https://jamanetwork.com/journals/jama/article-abstract/10.1001/jama.2026.17036"
+      },
+      "sources": [
+        "https://jamanetwork.com/journals/jama/article-abstract/10.1001/jama.2026.17036"
+      ],
+      "notes": "Current ACC URL is for unrelated TAVI-PCI; replace with original JAMA paper."
+    },
+    {
+      "id": "news-2026-08-30-notion-4-tempers-enthusiasm-for-short-course-anticoagulation-solely-to-p",
+      "fields": {
+        "additionalSources": [
+          {
+            "label": "Original NOTION-4 randomized trial, JACC",
+            "url": "https://www.jacc.org/doi/10.1016/j.jacc.2026.08.023"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.jacc.org/doi/10.1016/j.jacc.2026.08.023"
+      ],
+      "notes": "Current ACC URL is an ESC congress summary for NOTION-4 (not TAVI-PCI); retain it and add the original JACC trial. The 3-month HALT reduction was attenuated by 12 months."
+    },
+    {
+      "id": "news-2026-08-30-tavi-pci-trial-supports-tavr-first-as-a-viable-strategy-when-pci-is-also",
+      "fields": {
+        "additionalSources": [
+          {
+            "label": "NEJM original TAVI-PCI trial",
+            "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2606924"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa2606924"
+      ],
+      "notes": "Add original randomized trial alongside ACC summary."
+    },
+    {
+      "id": "news-2026-09-11-cms-finalizes-expanded-medicare-coverage-for-tavr-including-asymptomatic",
+      "fields": {
+        "additionalSources": [
+          {
+            "label": "CMS final decision memo Sep 10 2026",
+            "url": "https://www.cms.gov/medicare-coverage-database/view/ncacal-decision-memo.aspx?NCAId=321&proposed=N"
+          }
+        ],
+        "relevantNodeIds": [
+          "cond-as"
+        ]
+      },
+      "sources": [
+        "https://www.cms.gov/medicare-coverage-database/view/ncacal-decision-memo.aspx?NCAId=321&proposed=N"
+      ],
+      "notes": "System-wide severe-AS coverage policy, not a product-specific decision. Story date Sep 11 differs from CMS decision date Sep 10."
+    },
+    {
+      "id": "news-2026-06-18-cms-proposes-major-tavr-coverage-update",
+      "fields": {
+        "relevantNodeIds": [
+          "cond-as"
+        ]
+      },
+      "sources": [
+        "https://www.cms.gov/medicare-coverage-database/view/ncacal-decision-memo.aspx?NCAId=321&proposed=Y"
+      ],
+      "notes": "Remove device nodes unless the CMS memo names them as specific subjects; proposal memo dated Jun 15, article dated Jun 18."
+    },
+    {
+      "id": "news-2026-09-12-ai-powered-ultrasound-robotic-system-guides-transcatheter-closure-of-con",
+      "fields": {
+        "relevantNodeIds": [
+          "cond-asd"
+        ]
+      },
+      "sources": [
+        "https://interestingengineering.com/science/world-first-ai-backed-ultrasound-robot-congenital-heart-surgery-completed-in-china"
+      ],
+      "notes": "Secondary-only report; no primary case/hospital evidence located to identify deployed occluder maker/model. Remove dev-amplatzer-asd pending source."
+    },
+    {
+      "id": "news-2026-09-09-carvolix-submits-tavipilot-software-for-ce-marking-targeting-european-la",
+      "fields": {
+        "reviewStatus": "draft"
+      },
+      "sources": [
+        "https://www.marketscreener.com/news/carvolix-takes-a-key-step-toward-commercial-launch-of-tavipilot-software-in-europe-with-regulatory-s-ce785bd9d18af422"
+      ],
+      "notes": "No primary regulator or company source verified; do not imply CE mark granted."
+    },
+    {
+      "id": "news-2026-09-03-innovheart-completes-first-u-s-implant-of-saturn-transseptal-tmvr-system",
+      "fields": {
+        "reviewStatus": "draft"
+      },
+      "sources": [],
+      "notes": "Current InnovHeart homepage is not event-specific. No primary hospital/company statement or trial record located in this pass; hold until linked."
+    },
+    {
+      "id": "news-2026-09-02-modified-transseptal-batman-technique-reported-for-high-risk-mitral-valv",
+      "fields": {
+        "reviewStatus": "draft"
+      },
+      "sources": [
+        "https://visualize.jove.com/42681887-modified-transseptal-batman-for-anterior-leaflet-modification-in-high-risk-transcatheter-mitral-valve-in-valve-replacements-a-case-series"
+      ],
+      "notes": "JoVE visualization/metadata rather than original journal landing page; add DOI/publisher URL."
+    },
+    {
+      "id": "news-2026-08-20-radiographics-review-highlights-failure-modes-in-ct-based-tavr-planning",
+      "fields": {
+        "reviewStatus": "draft"
+      },
+      "sources": [
+        "https://education.rsna.org/Public/Catalog/Details.aspx?id=o9GmrZI03qNZU3do9FKzjw%3D%3D"
+      ],
+      "notes": "RSNA course catalog is not a citable Radiographics article; add original citation/DOI or preserve source gap."
+    },
+    {
+      "id": "news-2026-08-20-meta-analysis-examines-combined-laao-and-tavr-for-patients-with-atrial-f",
+      "fields": {
+        "reviewStatus": "draft"
+      },
+      "sources": [
+        "https://visualize.jove.com/42624430-left-atrial-appendage-occlusion-in-patients-with-atrial-fibrillation-undergoing-transcatheter-aortic-valve-replacement-a-meta-analysis"
+      ],
+      "notes": "JoVE metadata page, not original journal item. Verify device generations before device-specific edges."
+    },
+    {
+      "id": "news-2026-07-01-northwestern-fluoroless-watchman-workflow",
+      "fields": {
+        "reviewStatus": "draft"
+      },
+      "sources": [
+        "https://breakthroughsforphysicians.nm.org/cardiovascular-clinical-video-radiation-free-catheter-ablation-watchman-implantation.html"
+      ],
+      "notes": "Source supplies month/year only, not verified Jul 1. Preserve source link and the row as draft; clarify date precision or leave unpromoted until the precise date is supported."
+    },
+    {
+      "id": "news-2026-06-30-ge-healthcare-introduces-allia-upgrade-pathways-for-existing-interventio",
+      "fields": {
+        "reviewStatus": "draft"
+      },
+      "sources": [],
+      "notes": "Current source is generic CI Today index/topic hub, not event-specific. Replace with primary release, study paper, or regulator/notified-body source; CE claim particularly needs authorization evidence."
+    },
+    {
+      "id": "news-2026-06-29-abbott-highlights-triclip-navitor-and-amulet-360-datasets-at-ny-valves",
+      "fields": {
+        "reviewStatus": "draft"
+      },
+      "sources": [],
+      "notes": "Current source is generic CI Today index/topic hub, not event-specific. Replace with primary release, study paper, or regulator/notified-body source; CE claim particularly needs authorization evidence."
+    },
+    {
+      "id": "news-2026-06-28-j-valve-transfemoral-thv-system-reports-1-year-efs-outcomes-in-severe-ar",
+      "fields": {
+        "reviewStatus": "draft"
+      },
+      "sources": [],
+      "notes": "Current source is generic CI Today index/topic hub, not event-specific. Replace with primary release, study paper, or regulator/notified-body source; CE claim particularly needs authorization evidence."
+    },
+    {
+      "id": "news-2026-06-26-valgen-dragonfly-tmvr-receives-ce-mark-for-functional-mr",
+      "fields": {
+        "reviewStatus": "draft"
+      },
+      "sources": [],
+      "notes": "Current source is generic CI Today index/topic hub, not event-specific. Replace with primary release, study paper, or regulator/notified-body source; CE claim particularly needs authorization evidence."
+    },
+    {
+      "id": "news-2026-07-13-medtronic-issues-removal-action-for-certain-harmony-transcatheter-pulmon",
+      "fields": {
+        "additionalSources": [
+          {
+            "label": "FDA Harmony Delivery Catheter System Class I recall Z-2624-2026",
+            "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRes/res.cfm?id=220767"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRes/res.cfm?id=220767"
+      ],
+      "notes": "This is the product-specific Harmony Delivery Catheter System recall (Class I, Z-2624-2026), not the HeartMate 3 battery recall. Scope is affected delivery catheter lots, not Harmony valves."
+    },
+    {
+      "id": "news-2026-07-16-electrowire-medical-receives-fda-510-k-clearance-for-lightningwire-trans",
+      "fields": {
+        "additionalSources": [
+          {
+            "label": "FDA 510(k) K261745",
+            "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K261745"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K261745"
+      ],
+      "notes": "FDA decision Jun 26 2026; use cleared, not approved. July 16 is article date."
+    },
+    {
+      "id": "news-2026-06-26-edwards-receives-fda-clearance-for-ecliptis-laa-exclusion-system",
+      "fields": {
+        "additionalSources": [
+          {
+            "label": "FDA 510(k) K254232",
+            "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K254232"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K254232"
+      ],
+      "notes": "FDA record confirms Edwards, ECLIPTIS and Jun 26 substantially-equivalent decision."
+    },
+    {
+      "id": "news-2026-07-13-edwards-lifesciences-and-genesis-medtech-agree-to-12-million-ftc-settlem",
+      "fields": {
+        "additionalSources": [
+          {
+            "label": "FTC case page and proposed judgment status",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/united-states-v-edwards-lifesciences-corp-genesis-medtech-group-ltd"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.ftc.gov/legal-library/browse/cases-proceedings/united-states-v-edwards-lifesciences-corp-genesis-medtech-group-ltd"
+      ],
+      "notes": "FTC case page says case status Pending and records a proposed final judgment; do not call it a final court judgment."
+    },
+    {
+      "id": "news-2026-07-20-jenscare-completes-first-u-s-implants-in-trinity-pivotal-ttvr-trial",
+      "fields": {
+        "additionalSources": [
+          {
+            "label": "ClinicalTrials.gov NCT06568003",
+            "url": "https://clinicaltrials.gov/study/NCT06568003"
+          }
+        ]
+      },
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT06568003"
+      ],
+      "notes": "Registry supports study identity/sponsor/status, not first-implant date alone."
+    }
+  ],
+  "findings": [
+    {
+      "id": "news-inventory",
+      "status": "verified",
+      "summary": "Audited all 102 rows: 78 non-draft and 24 draft. Full identifier list and per-row draft dispositions are in the audit report.",
+      "sources": []
+    },
+    {
+      "id": "news-cms-scope",
+      "status": "corrected",
+      "summary": "CMS TAVR NCD news should be condition/system policy, not product-specific; retain cond-as only.",
+      "sources": [
+        "https://www.cms.gov/medicare-coverage-database/view/ncacal-decision-memo.aspx?NCAId=321&proposed=N",
+        "https://www.cms.gov/medicare-coverage-database/view/ncacal-decision-memo.aspx?NCAId=321&proposed=Y"
+      ]
+    },
+    {
+      "id": "news-regulatory-records",
+      "status": "verified",
+      "summary": "Primary FDA records confirm Emboliner K261715 (Sep 8), LightningWire K261745 (Jun 26), Ecliptis K254232 (Jun 26), and the product-specific Harmony Delivery Catheter recall Z-2624-2026 (record 220767). HeartMate 3 battery recall 220518 is a separate product action and is covered in the remaining-record audit.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K261745",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K254232",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRes/res.cfm?id=220767"
+      ]
+    }
+  ]
+}
