@@ -1,18 +1,21 @@
 import type { IntelligenceData, ProductVersion } from '../types/intelligence'
 
 /**
- * Resolve a graph therapy node only when its exact catalog version is known.
- * A family node with several generations stays on the graph unless authors
- * provide an explicit graphEntityId mapping for the selected generation.
+ * List the authored profiles for a graph node, preferring exact generation
+ * mappings before offering all versions associated with a shared family node.
  */
-export function versionForGraphEntity(data: IntelligenceData, entityId: string): ProductVersion | undefined {
+export function versionsForGraphEntity(data: IntelligenceData, entityId: string): ProductVersion[] {
   const exact = data.versions.filter(version => version.graphEntityId === entityId)
-  if (exact.length === 1) return exact[0]
-  if (exact.length > 1) return undefined
+  if (exact.length) return exact
 
   const familyIds = new Set(data.families.filter(family => family.entityIds.includes(entityId)).map(family => family.id))
-  const familyVersions = data.versions.filter(version => familyIds.has(version.familyId))
-  return familyVersions.length === 1 ? familyVersions[0] : undefined
+  return data.versions.filter(version => familyIds.has(version.familyId))
+}
+
+/** Resolve a graph node only when its product generation is unambiguous. */
+export function versionForGraphEntity(data: IntelligenceData, entityId: string): ProductVersion | undefined {
+  const versions = versionsForGraphEntity(data, entityId)
+  return versions.length === 1 ? versions[0] : undefined
 }
 
 /** Resolve a news item only when all relevant graph nodes identify one version. */

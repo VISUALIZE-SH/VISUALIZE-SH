@@ -22,6 +22,7 @@
     "newsletter:validate": "npm run build:data && npm run test:newsletter && npm run typecheck:scripts && npm run security:check",
     "test:newsletter": "node --import tsx --test scripts/*.test.ts",
     "build:graph": "node --import tsx scripts/build-data.ts",
+    "audit:database": "node --import tsx scripts/audit-database.ts",
     "build:intelligence": "node --import tsx scripts/build-intelligence.ts",
     "evidence:snapshot": "node --import tsx scripts/snapshot-evidence.ts",
     "evidence:snapshot-document": "node --import tsx scripts/snapshot-document.ts",

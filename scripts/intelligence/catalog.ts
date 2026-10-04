@@ -12,17 +12,18 @@ type Doc = Record<string, unknown>
 interface Attribute { id: string; label: string; section: string; categoryIds: string[] }
 interface Category { id: string; versionIds: string[] }
 
-const MERGED = ['sources', 'families', 'versions', 'claims', 'decisions', 'indications', 'media'] as const
+const MERGED = ['sources', 'bibliography', 'families', 'versions', 'claims', 'decisions', 'indications', 'media'] as const
 const FRAGMENT_KEYS = new Set<string>([...MERGED, 'observedAt', 'specs'])
 const VALUE_KEYS = new Set(['value', 'unit', 'loc', 'source', 'availability', 'basis', 'context', 'limitation', 'observedAt'])
 
-export interface IntelligenceSourcePaths { input: string; taxonomy?: string; catalogDir?: string }
+export interface IntelligenceSourcePaths { input: string; taxonomy?: string; catalogDir?: string; citationMetadata?: string }
 
 export function defaultIntelligencePaths(root: string): Required<IntelligenceSourcePaths> {
   return {
     input: resolve(root, 'data/intelligence/pilot.yaml'),
     taxonomy: resolve(root, 'data/intelligence/taxonomy.yaml'),
     catalogDir: resolve(root, 'data/intelligence/catalog'),
+    citationMetadata: resolve(root, 'data/intelligence/citations.yaml'),
   }
 }
 

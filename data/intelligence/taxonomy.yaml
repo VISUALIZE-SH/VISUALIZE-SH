@@ -11,7 +11,13 @@ comparisonCategories:
     therapyClass: 'Transcatheter aortic valve replacement'
     targetStructure: 'Aortic valve'
     mechanism: 'Valve replacement'
-    versionIds: [ver-sapien-3, ver-sapien-ultra-resilia, ver-evolut-fx, ver-evolut-fx-plus]
+    versionIds:
+      - ver-sapien-3
+      - ver-sapien-ultra-resilia
+      - ver-evolut-fx
+      - ver-evolut-fx-plus
+      - ver-sapien-xt
+
   - id: aortic-regurgitation-tavr
     label: 'TAVR for aortic regurgitation'
     order: 20
@@ -246,20 +252,39 @@ comparisonCategories:
     targetStructure: 'Left ventricle to aorta'
     mechanism: 'Mechanical circulatory support'
     versionIds: [ver-heartmate-ii, ver-heartmate-3, ver-heartmate-3-kit-106524us]
+  - id: surgical-mitral-annuloplasty
+    label: Surgical mitral annuloplasty
+    order: 81
+    conditionId: cond-mr
+    versionKind: device
+    therapyClass: Surgical mitral annuloplasty ring
+    targetStructure: Mitral annulus
+    mechanism: Annular reshaping
+    versionIds: []
+  - id: surgical-tricuspid-annuloplasty
+    label: Surgical tricuspid annuloplasty
+    order: 82
+    conditionId: cond-tr
+    versionKind: device
+    therapyClass: Surgical tricuspid annuloplasty ring
+    targetStructure: Tricuspid annulus
+    mechanism: Annular reshaping
+    versionIds: []
+
 standardAttributes:
   - { id: implant-material, label: 'Permanent implant material', section: 'Design', order: 54, valueType: text, scope: version_wide, categoryIds: [mitral-chordal-reconstruction, heterotopic-caval-valves, lv-restoration, epicardial-restraint, durable-mcs] }
-  - { id: development-status, label: 'Development / safety status', section: 'Status', order: 230, valueType: text, scope: version_wide, categoryIds: [pvl-closure, mitral-chordal-reconstruction, heterotopic-caval-valves, lv-restoration, epicardial-restraint, durable-mcs] }
-  - { id: manufacturer, label: 'Manufacturer', section: 'Identity', order: 10, valueType: text, scope: version_wide, categoryIds: [aortic-tavr-valves, pvl-closure, mitral-chordal-reconstruction, heterotopic-caval-valves, lv-restoration, epicardial-restraint, durable-mcs] }
+  - { id: development-status, label: 'Development / safety status', section: 'Status', order: 230, valueType: text, scope: version_wide, categoryIds: [pvl-closure, mitral-chordal-reconstruction, heterotopic-caval-valves, lv-restoration, epicardial-restraint, durable-mcs, hfref-drugs, hfpef-drugs] }
+  - { id: manufacturer, label: 'Manufacturer', section: 'Identity', order: 10, valueType: text, scope: version_wide, categoryIds: [aortic-tavr-valves, pvl-closure, mitral-chordal-reconstruction, heterotopic-caval-valves, lv-restoration, epicardial-restraint, durable-mcs, surgical-mitral-annuloplasty, surgical-tricuspid-annuloplasty] }
   - { id: family, label: 'Product family', section: 'Identity', order: 20, valueType: text, scope: version_wide, categoryIds: [aortic-tavr-valves, pvl-closure, mitral-chordal-reconstruction, heterotopic-caval-valves, lv-restoration, epicardial-restraint, durable-mcs] }
   - { id: exact-version, label: 'Exact product version', section: 'Identity', order: 30, valueType: text, scope: version_wide, categoryIds: [aortic-tavr-valves, pvl-closure, mitral-chordal-reconstruction, heterotopic-caval-valves, lv-restoration, epicardial-restraint, durable-mcs] }
-  - { id: device-design, label: 'Design', section: 'Design', order: 35, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, hf-pressure-sensors, cmd-devices, transcatheter-annuloplasty, pvl-closure, mitral-chordal-reconstruction, heterotopic-caval-valves, lv-restoration, epicardial-restraint, durable-mcs] }
+  - { id: device-design, label: 'Design', section: 'Design', order: 35, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, hf-pressure-sensors, cmd-devices, transcatheter-annuloplasty, pvl-closure, mitral-chordal-reconstruction, heterotopic-caval-valves, lv-restoration, epicardial-restraint, durable-mcs, surgical-mitral-annuloplasty, surgical-tricuspid-annuloplasty] }
   - { id: expansion-mechanism, label: 'Expansion', section: 'Design', order: 40, valueType: text, scope: version_wide, categoryIds: [aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement] }
-  - { id: frame-material, label: 'Frame material', section: 'Design', order: 50, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, cmd-devices, transcatheter-annuloplasty] }
+  - { id: frame-material, label: 'Frame material', section: 'Design', order: 50, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, cmd-devices, transcatheter-annuloplasty, surgical-mitral-annuloplasty, surgical-tricuspid-annuloplasty] }
   - { id: leaflet-material, label: 'Leaflet material', section: 'Design', order: 60, valueType: text, scope: version_wide, categoryIds: [aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement] }
   - { id: tissue-treatment, label: 'Tissue treatment', section: 'Design', order: 62, valueType: text, scope: version_wide, categoryIds: [aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement] }
   - { id: leaflet-position, label: 'Leaflet position', section: 'Design', order: 64, valueType: text, scope: version_wide, categoryIds: [aortic-tavr-valves, aortic-regurgitation-tavr] }
-  - { id: fabric-cover, label: 'Fabric / cover', section: 'Design', order: 66, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, transcatheter-annuloplasty] }
-  - { id: surface-coating, label: 'Surface coating', section: 'Design', order: 68, valueType: text, scope: version_wide, categoryIds: [laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders] }
+  - { id: fabric-cover, label: 'Fabric / cover', section: 'Design', order: 66, valueType: text, scope: version_wide, categoryIds: [aortic-tavr-valves, laa-exclusion-ligation, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, transcatheter-annuloplasty, surgical-mitral-annuloplasty, surgical-tricuspid-annuloplasty] }
+  - { id: surface-coating, label: 'Surface coating', section: 'Design', order: 68, valueType: text, scope: version_wide, categoryIds: [laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, surgical-mitral-annuloplasty, surgical-tricuspid-annuloplasty] }
   - { id: sealing-design, label: 'Sealing', section: 'Design', order: 70, valueType: text, scope: version_wide, categoryIds: [aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement] }
   - { id: anchoring-mechanism, label: 'Anchoring', section: 'Design', order: 72, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, mitral-replacement, tricuspid-replacement, laao-occluders, aortic-regurgitation-tavr, transcatheter-annuloplasty] }
   - { id: grasping-mechanism, label: 'Leaflet grasping', section: 'Design', order: 74, valueType: text, scope: version_wide, categoryIds: [mitral-teer, tricuspid-teer] }
@@ -270,9 +295,9 @@ standardAttributes:
   - { id: deployment-feature, label: 'Deployment feature', section: 'Design', order: 80, valueType: text, scope: version_wide, categoryIds: [aortic-tavr-valves] }
   - { id: coronary-access-feature, label: 'Coronary access', section: 'Design', order: 90, valueType: text, scope: version_wide, categoryIds: [aortic-tavr-valves] }
   - { id: repositionable, label: 'Recapture / reposition', section: 'Design', order: 95, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders] }
-  - { id: access-route, label: 'Access', section: 'Delivery & sizing', order: 100, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, hf-pressure-sensors, cmd-devices, transcatheter-annuloplasty] }
+  - { id: access-route, label: 'Access', section: 'Delivery & sizing', order: 100, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, hf-pressure-sensors, cmd-devices, transcatheter-annuloplasty, surgical-mitral-annuloplasty, surgical-tricuspid-annuloplasty] }
   - { id: delivery-sheath, label: 'Delivery system', section: 'Delivery & sizing', order: 105, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, hf-pressure-sensors, cmd-devices, transcatheter-annuloplasty] }
-  - { id: available-sizes, label: 'Sizes', section: 'Delivery & sizing', order: 108, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, hf-pressure-sensors, cmd-devices, transcatheter-annuloplasty] }
+  - { id: available-sizes, label: 'Sizes', section: 'Delivery & sizing', order: 108, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, hf-pressure-sensors, cmd-devices, transcatheter-annuloplasty, surgical-mitral-annuloplasty, surgical-tricuspid-annuloplasty] }
   - { id: anatomy-range-summary, label: 'Treatable anatomy', section: 'Delivery & sizing', order: 109, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, hf-pressure-sensors, cmd-devices, transcatheter-annuloplasty] }
   - { id: delivery-profile, label: 'Delivery profile (by size)', section: 'Delivery & sizing', order: 115, valueType: text, scope: configuration, categoryIds: [aortic-tavr-valves] }
   - { id: labeled-anatomy-range, label: 'Anatomy range (by size)', section: 'Delivery & sizing', order: 120, valueType: text, scope: configuration, categoryIds: [aortic-tavr-valves] }
@@ -280,6 +305,6 @@ standardAttributes:
   - { id: drug-class, label: 'Class / mechanism', section: 'Pharmacology', order: 20, valueType: text, scope: version_wide, categoryIds: [cardiac-myosin-inhibitors, attr-cm-drugs, hfref-drugs, hfpef-drugs] }
   - { id: route-dosing, label: 'Route & dose', section: 'Pharmacology', order: 30, valueType: text, scope: version_wide, categoryIds: [cardiac-myosin-inhibitors, attr-cm-drugs, hfref-drugs, hfpef-drugs] }
   - { id: monitoring, label: 'Monitoring / REMS', section: 'Pharmacology', order: 40, valueType: text, scope: version_wide, categoryIds: [cardiac-myosin-inhibitors, attr-cm-drugs, hfref-drugs, hfpef-drugs] }
-  - { id: indication-scope, label: 'US indication', section: 'Use', order: 200, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, hf-pressure-sensors, cmd-devices, transcatheter-annuloplasty, cardiac-myosin-inhibitors, attr-cm-drugs, hfref-drugs, hfpef-drugs, pvl-closure, mitral-chordal-reconstruction, heterotopic-caval-valves, lv-restoration, epicardial-restraint, durable-mcs] }
+  - { id: indication-scope, label: 'US indication', section: 'Use', order: 200, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, hf-pressure-sensors, cmd-devices, transcatheter-annuloplasty, cardiac-myosin-inhibitors, attr-cm-drugs, hfref-drugs, hfpef-drugs, pvl-closure, mitral-chordal-reconstruction, heterotopic-caval-valves, lv-restoration, epicardial-restraint, durable-mcs, surgical-mitral-annuloplasty, surgical-tricuspid-annuloplasty] }
   - { id: post-implant-therapy, label: 'Post-implant antithrombotic', section: 'Use', order: 210, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, laao-occluders, pfo-occluders, asd-occluders, mitral-replacement, tricuspid-replacement, hf-pressure-sensors, interatrial-shunts] }
   - { id: pivotal-trials, label: 'Pivotal trial', section: 'Use', order: 220, valueType: text, scope: version_wide, categoryIds: [laa-exclusion-ligation, aortic-tavr-valves, aortic-regurgitation-tavr, pulmonary-valves, mitral-replacement, tricuspid-replacement, mitral-teer, tricuspid-teer, laao-occluders, pfo-occluders, asd-occluders, pda-occluders, vsd-occluders, interatrial-shunts, hf-pressure-sensors, cmd-devices, transcatheter-annuloplasty, cardiac-myosin-inhibitors, attr-cm-drugs, hfref-drugs, hfpef-drugs, pvl-closure, mitral-chordal-reconstruction, heterotopic-caval-valves, lv-restoration, epicardial-restraint, durable-mcs] }

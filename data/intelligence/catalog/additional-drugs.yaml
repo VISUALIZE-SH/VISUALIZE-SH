@@ -1,0 +1,138 @@
+observedAt: "2026-10-03"
+sources:
+  - id: src-azd5462-discovery
+    title: Discovery of Clinical Candidate AZD5462, a Selective Oral Allosteric RXFP1 Agonist for Treatment of Heart Failure
+    url: https://pubmed.ncbi.nlm.nih.gov/38502782/
+    kind: publication
+    publisher: Journal of Medicinal Chemistry / PubMed
+    retrievedAt: "2026-10-03"
+    access: public
+    identifier: PMID 38502782
+  - id: src-azd5462-pipeline
+    title: AstraZeneca clinical pipeline — AZD5462 Phase II
+    url: https://www.astrazeneca.com/our-therapy-areas/pipeline.html
+    kind: manufacturer
+    publisher: AstraZeneca
+    retrievedAt: "2026-10-03"
+    access: public
+  - id: src-luminara-esc-results
+    title: LUMINARA — ESC Congress 2026 primary investigator results announcement
+    url: https://www.escardio.org/news/press/press-releases/novel-drug-shows-promise-in-an-early-phase-trial-in-heart-failure/
+    kind: publication
+    publisher: European Society of Cardiology
+    publishedAt:
+      value: "2026-08-30"
+      precision: day
+    retrievedAt: "2026-10-03"
+    access: public
+  - id: src-zepbound-current-label
+    title: Zepbound (tirzepatide) US prescribing information — August 2026
+    url: https://pi.lilly.com/us/zepbound-uspi.pdf
+    kind: regulatory
+    publisher: Eli Lilly / FDA-approved US labeling
+    publishedAt:
+      value: 2026-08
+      precision: month
+    retrievedAt: "2026-10-03"
+    access: public
+  - id: src-tirzepatide-summit-sponsor
+    title: SUMMIT — tirzepatide in obesity-related HFpEF, NCT04847557
+    url: https://trials.lilly.com/en-US/trial/282998
+    kind: registry
+    publisher: Eli Lilly
+    retrievedAt: "2026-10-03"
+    access: public
+    identifier: NCT04847557
+families:
+  - id: family-azd5462
+    name: AZD5462
+    manufacturer: AstraZeneca
+    entityIds:
+      - rx-azd5462
+    conditionIds:
+      - cond-hfref
+      - cond-hfpef
+    description: >-
+      Investigational RXFP1 agonist. LUMINARA cohorts had LVEF at most 35% and 41–55%; the graph condition grouping is broader than these
+      trial-specific enrollment ranges.
+  - id: family-tirzepatide
+    name: Tirzepatide
+    manufacturer: Eli Lilly
+    entityIds:
+      - rx-tirzepatide
+    conditionIds:
+      - cond-hfpef
+    description: Dual GIP/GLP-1 agonist studied in obesity-related HFpEF; current US Zepbound labeling is distinct from the SUMMIT study population.
+versions:
+  - id: ver-azd5462
+    familyId: family-azd5462
+    name: AZD5462 investigational program
+    graphEntityId: rx-azd5462
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: >-
+      Investigational oral small-molecule RXFP1 agonist in Phase II development; no approved prescription regimen established by the cited
+      studies.
+    sourceRefs:
+      - sourceId: src-azd5462-discovery
+        locator: Title and abstract — molecule identity and RXFP1 agonism
+      - sourceId: src-azd5462-pipeline
+        locator: Phase II — AZD5462 heart failure
+    reviewStatus: draft
+  - id: ver-tirzepatide-zepbound
+    familyId: family-tirzepatide
+    name: Tirzepatide (Zepbound)
+    graphEntityId: rx-tirzepatide
+    kind: pharmaceutical
+    clinicalRole: treats
+    summary: >-
+      US Zepbound label covers weight management and obesity-associated OSA; HFpEF evidence comes from SUMMIT and does not itself establish
+      an HFpEF indication.
+    sourceRefs:
+      - sourceId: src-zepbound-current-label
+        locator: US prescribing information §1, §12.1; revised August 2026
+      - sourceId: src-tirzepatide-summit-sponsor
+        locator: Study summary — Phase 3, sponsor and HFpEF population
+    reviewStatus: draft
+specs:
+  - version: ver-azd5462
+    category:
+      - hfref-drugs
+      - hfpef-drugs
+    source: src-azd5462-discovery
+    values:
+      drug-class:
+        value: Selective oral allosteric RXFP1 relaxin-receptor agonist
+        loc: Title and abstract
+      development-status:
+        value: Investigational, Phase II clinical development
+        source: src-azd5462-pipeline
+        loc: Phase II — AZD5462 heart failure
+      indication-scope:
+        value: "LUMINARA investigational HF cohorts: LVEF at most 35% and 41–55%"
+        source: src-luminara-esc-results
+        loc: Study design — cohort eligibility
+        context: Trial population rather than a US approved indication. No claim of randomized reduction in mortality or HF events.
+      pivotal-trials:
+        value: LUMINARA, Phase IIb dose-ranging trial; 375 randomized participants
+        source: src-luminara-esc-results
+        loc: Study design and primary-endpoint results
+        context: >-
+          This is not a pivotal marketing-authorization efficacy claim. Lowest-dose HFrEF primary comparison p=0.054; larger outcome trials
+          were recommended.
+  - version: ver-tirzepatide-zepbound
+    category: hfpef-drugs
+    source: src-zepbound-current-label
+    values:
+      drug-class:
+        value: Dual GIP and GLP-1 receptor agonist
+        loc: US prescribing information §12.1
+      indication-scope:
+        value: Weight management; moderate-to-severe OSA in adults with obesity
+        loc: US prescribing information §1
+        context: August 2026 US label does not list HFpEF. SUMMIT research and guideline recommendations are separate from approved labeling.
+      pivotal-trials:
+        value: SUMMIT (NCT04847557), Phase 3 obesity-related HFpEF study; 731 participants
+        source: src-tirzepatide-summit-sponsor
+        loc: Study summary — trial identity, population and enrollment
+        context: The HFpEF study is distinct from Tendyne’s SUMMIT device trial and from Zepbound’s labeled weight/OSA clinical programs.
