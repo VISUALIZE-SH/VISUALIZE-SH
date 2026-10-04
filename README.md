@@ -85,6 +85,13 @@ data/news.yaml  ─────────────────────�
   `?mode=atlas&version=ver-feops-heartguide` and
   `?mode=data&version=ver-feops-heartguide`. The original graph remains available
   as the overview and legacy crosswalk.
+- Therapy profiles and Data cards include a consolidated **Evidence** section,
+  grouped into clinical data, publications, patents, regulatory documents, and
+  product/technical sources. Existing in-section links remain available.
+  **Export References** downloads the complete reference list as APA HTML with
+  italics and hanging indents. Patents require an explicit public product-to-
+  patent connection; [reference curation and research audit](docs/REFERENCE_BIBLIOGRAPHY.md)
+  describe the scope and citation metadata.
 - Data **Browse** shows one spec table per device or drug class (one row per
   product, one column per standard attribute, plus the first US approval), with
   Outcomes, History, and Figures tabs. Selecting a product or value opens its

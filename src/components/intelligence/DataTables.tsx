@@ -3,6 +3,7 @@ import type { EvidenceClaim, EvidenceMedia, IntelligenceData, ProductVersion, So
 import type { SpecRow, SpecTable } from '../../data/spec-tables'
 import { approvalLabel, compactCitation, thumbnailFor } from '../../data/spec-tables'
 import { availabilityLabel, displayValue, formatEvidenceDate, sourceFor, sourceUrl } from '../../data/intelligence'
+import EvidenceReferences from './EvidenceReferences'
 
 /** One width scale for every Data table so columns line up down the page. */
 export const WIDTH = { product: 232, narrow: 104, cell: 152, wide: 304, sources: 168 } as const
@@ -159,6 +160,7 @@ function SpecSheet({ data, row, table, focus, onOpenAtlas }: { data: Intelligenc
       <a href={publicAssetPath(item.assetPath)} target="_blank" rel="noreferrer"><img src={publicAssetPath(item.assetPath)} alt={item.alt} loading="lazy" /></a>
       <figcaption>{item.title}{item.page ? ` · p.${item.page}` : ''}</figcaption>
     </figure>)}</div>}
+    <EvidenceReferences data={data} versionId={row.version.id} name={row.version.name} />
   </div>
 }
 
