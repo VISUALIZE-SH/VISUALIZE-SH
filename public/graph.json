@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-08T05:41:26.361Z",
+    "generatedAt": "2026-10-08T15:24:42.682Z",
     "lastUpdated": "2026-10-07",
     "counts": {
       "condition": 19,
@@ -13,10 +13,247 @@
     },
     "draftCount": 249,
     "total": 258,
-    "newsCount": 56,
-    "latestNewsDate": "2026-09-23"
+    "newsCount": 68,
+    "latestNewsDate": "2026-10-05"
   },
   "news": [
+    {
+      "id": "news-2026-10-05-cardiomems-cardioguide-patient-access",
+      "publishedAt": "2026-10-05",
+      "title": "Abbott announces CardioGuide HF patient pressure access and treatment-plan updates",
+      "summary": "Abbott announced FDA approval for CardioMEMS system updates that let care teams enable patient access to pulmonary artery pressure trends and send clinician-configured medication instructions through CardioGuide HF. Availability is planned later in 2026. The release does not identify a software build or establish additional clinical benefit; the decision-specific FDA record remains unverified.",
+      "sourceName": "Abbott",
+      "sourceUrl": "https://abbott.mediaroom.com/2026-10-05-Abbott-receives-FDA-approval-for-new-CardioMEMS-HF-System-capabilities-that-help-patients-engage-in-the-care-of-their-heart-condition",
+      "topicTags": [
+        "heart failure",
+        "patient monitoring",
+        "software"
+      ],
+      "relevantNodeIds": [
+        "dev-cardiomems",
+        "dig-cardioguide-hf",
+        "cond-hfref",
+        "cond-hfpef"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-04-echodino-pediatric-echo-foundation-model",
+      "publishedAt": "2026-10-04",
+      "title": "EchoDino preprint evaluates pediatric-trained echocardiography representations across age groups",
+      "summary": "A preprint first submitted October 4 and revised October 7 describes EchoDino, trained on 3.7 million frames from 1.7 million unlabeled pediatric echo videos and evaluated across nine pediatric/adult datasets. The abstract reports structural-heart-disease detection AUC 0.872 versus 0.811 for a comparator. This is model evaluation, with no established clinical deployment or point-of-care utility.",
+      "sourceName": "arXiv (original preprint)",
+      "sourceUrl": "https://arxiv.org/abs/2610.05603v2",
+      "topicTags": [
+        "clinical AI",
+        "echocardiography",
+        "preprint"
+      ],
+      "relevantNodeIds": [
+        "cond-asd",
+        "cond-vsd",
+        "cond-pda"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-02-emboliner-first-us-commercial-use",
+      "publishedAt": "2026-10-02",
+      "title": "Emboline reports first US commercial Emboliner use and begins a controlled launch",
+      "summary": "Emboline reported two commercial Emboliner procedures during TAVR at Columbia on October 1 and announced a controlled US launch on October 2. FDA lists EPC-03 clearance under K261715 on September 8. Commercial use is a separate milestone from clearance; the release does not provide comparative stroke-prevention outcomes or demonstrate broad availability.",
+      "sourceName": "Emboline",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html",
+      "topicTags": [
+        "TAVR",
+        "embolic protection",
+        "commercial launch"
+      ],
+      "relevantNodeIds": [
+        "dev-emboliner",
+        "co-emboline",
+        "cond-as"
+      ],
+      "additionalSources": [
+        {
+          "label": "FDA K261715 clearance record",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715"
+        }
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-02-tavr-fsi-bench-validation",
+      "publishedAt": "2026-10-02",
+      "title": "Preprint validates a TAVR fluid–structure model against a pulse duplicator",
+      "summary": "An arXiv preprint compares simulated flow, pressure and leaflet dynamics with pulse-duplicator measurements at 60, 70 and 80 bpm. Boundary parameters were calibrated at 70 bpm and held fixed, while measured pressure and flow informed forcing at each rate. Agreement supports conditional bench validation and parameter transfer; it does not establish in-vivo or patient-specific prediction.",
+      "sourceName": "arXiv (original preprint)",
+      "sourceUrl": "https://arxiv.org/abs/2610.03297v1",
+      "topicTags": [
+        "TAVR",
+        "computational modeling",
+        "preprint"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "dev-evolut"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-01-autus-fda-approval",
+      "publishedAt": "2026-10-01",
+      "title": "FDA approves AUTUS size-adjustable surgical pulmonary valve for pediatric patients",
+      "summary": "FDA approved the AUTUS Size-Adjustable Valve through PMA for pediatric congenital pulmonary valve disease on October 1. Initial implantation is surgical; later balloon expansion can widen the polymeric-leaflet valve from approximately 13 mm to as much as 22 mm. FDA describes a 62-patient study but cautions that expansion experience is limited. Exact approved labeling and the PMA identifier remain to be reviewed.",
+      "sourceName": "FDA",
+      "sourceUrl": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children",
+      "topicTags": [
+        "pulmonary valve",
+        "pediatric heart valve",
+        "FDA approval"
+      ],
+      "relevantNodeIds": [
+        "dev-autus",
+        "co-edwards",
+        "cond-pv",
+        "trial-autus-pivotal"
+      ],
+      "additionalSources": [
+        {
+          "label": "Edwards approval announcement",
+          "url": "https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Receives-FDA-Approval-for-AUTUS-Valve-the-First-Surgical-Pulmonary-Valve-for-Pediatric-Patients/default.aspx"
+        },
+        {
+          "label": "Pivotal study NCT05006404",
+          "url": "https://clinicaltrials.gov/study/NCT05006404"
+        }
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-30-camzyos-pediatric-indication-expansion",
+      "publishedAt": "2026-09-30",
+      "title": "FDA expands CAMZYOS indication to pediatric patients weighing at least 30 kg",
+      "summary": "FDA expanded mavacamten’s US indication to adults and pediatric patients weighing at least 30 kg with symptomatic obstructive HCM, to improve functional capacity and symptoms. The expansion followed evaluation of pediatric patients in SCOUT-HCM. The approved weight threshold is distinct from trial age eligibility; echocardiographic monitoring and REMS requirements continue.",
+      "sourceName": "FDA",
+      "sourceUrl": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart",
+      "topicTags": [
+        "HCM",
+        "pediatric",
+        "FDA approval"
+      ],
+      "relevantNodeIds": [
+        "rx-mavacamten",
+        "cond-hcm"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-29-mitria-t45-svs-partnership",
+      "publishedAt": "2026-09-29",
+      "title": "Mitria partners with T45 Labs to advance investigational Subvalvular Spacer",
+      "summary": "Mitria announced a T45 Labs partnership and named Marwan Berrada-Sounni CEO to advance its investigational Subvalvular Spacer for secondary/functional MR. The release reports six recipients but does not define device builds, surgical versus transcatheter composition, or a registry cohort. SVS remains unavailable for commercial sale; the cumulative sponsor count is not a clinical efficacy result.",
+      "sourceName": "T45 Labs / Mitria Medical",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html",
+      "topicTags": [
+        "mitral regurgitation",
+        "subvalvular repair",
+        "corporate development"
+      ],
+      "relevantNodeIds": [
+        "dev-mitria-svs",
+        "co-mitria-medical",
+        "cond-mr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-29-puerarin-artificial-plasma-bhv-coating",
+      "publishedAt": "2026-09-29",
+      "title": "Puerarin-loaded artificial-plasma coating shows preclinical valve-material effects",
+      "summary": "An Acta Biomaterialia study describes a hydroxyethyl-starch hydrogel coating on glutaraldehyde-crosslinked porcine pericardium, with ROS-responsive puerarin release. The abstract reports reduced platelet/protein adhesion, endothelial-cell support and reduced calcification at 12 weeks in rat subcutaneous implants. This is a distinct strategy from the earlier diclofenac nanogel report; human valve durability is not established. Only the abstract was reviewed.",
+      "sourceName": "Acta Biomaterialia (original abstract)",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42810482/",
+      "topicTags": [
+        "bioprosthetic valve",
+        "materials",
+        "preclinical research"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ],
+      "additionalSources": [
+        {
+          "label": "Original article DOI",
+          "url": "https://doi.org/10.1016/j.actbio.2026.09.046"
+        }
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-28-immersogeometric-mitral-teer-model",
+      "publishedAt": "2026-09-28",
+      "title": "Preprint models mitral valve dynamics and single- versus double-clip TEER",
+      "summary": "An arXiv preprint models a reconstructed human mitral valve, including blood-flow interaction and idealized single- and double-clip repairs. A penalty constraint enforces leaflet coaptation without modeling the clip itself. Reconstruction checks and mesh-convergence tests support the computational method; its repair scenarios are simulations, not clinical outcomes or validated patient-specific treatment recommendations.",
+      "sourceName": "arXiv (original preprint)",
+      "sourceUrl": "https://arxiv.org/abs/2609.34209v1",
+      "topicTags": [
+        "mitral regurgitation",
+        "computational modeling",
+        "preprint"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "dev-mitraclip"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-25-amulet-canada-labeling-notice",
+      "publishedAt": "2026-09-25",
+      "title": "Health Canada posts Amulet labeling recall for pulmonary artery injury precautions",
+      "summary": "Health Canada published a Type II labeling recall for eight original Amulet 9-ACP2 models on September 25, with a recall date of September 10. The notice concerns a revised pulmonary-artery contraindication and landing-zone distance assessment; it explicitly states that the notification is unrelated to device defectiveness. FDA separately approved the US labeling change on August 28 under P200049/S021. The Canadian classification does not establish a US recall or Amulet 360 applicability.",
+      "sourceName": "Health Canada",
+      "sourceUrl": "https://recalls-rappels.canada.ca/en/alert-recall/amplatzertm-amulettm-left-atrial-appendage-occluder",
+      "topicTags": [
+        "LAAO",
+        "labeling",
+        "safety notice"
+      ],
+      "relevantNodeIds": [
+        "dev-amulet",
+        "co-abbott"
+      ],
+      "additionalSources": [
+        {
+          "label": "FDA P200049/S021 labeling decision",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P200049S021"
+        },
+        {
+          "label": "Abbott September 2026 customer correction letter",
+          "url": "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/pdf/reports/Customer%20Letter%20-%20Amplatzer%20Amulet%20Left%20Atrial%20Appendage%20Occluder.pdf"
+        }
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-24-parallel-septal-balloon-occlusion-mteer-case",
+      "publishedAt": "2026-09-24",
+      "title": "Case report describes septal balloon occlusion as a bailout during mitral TEER",
+      "summary": "A single-patient report describes temporary balloon occlusion of an iatrogenic atrial septal defect after profound hypoxemia developed during mitral TEER. A compliant sizing balloon beside the transseptal sheath restored oxygenation while preserving access for PASCAL deployment; definitive septal closure followed. This is an abstract-only procedural case, with no comparative evidence, exact PASCAL generation or disclosed septal-occluder model.",
+      "sourceName": "JACC Case Reports (original abstract)",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42782237/",
+      "topicTags": [
+        "mitral TEER",
+        "septal closure",
+        "case report"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "cond-asd",
+        "dev-pascal"
+      ],
+      "reviewStatus": "reviewed"
+    },
     {
       "id": "news-2026-09-23-acoramidis-real-world-study-shows-benefit-vs-tafamidis",
       "publishedAt": "2026-09-23",
@@ -255,6 +492,30 @@
         "dev-sapien-m3",
         "co-edwards"
       ]
+    },
+    {
+      "id": "news-2026-08-30-cardio-ttransform-stabilizer-subgroup",
+      "publishedAt": "2026-08-30",
+      "title": "CARDIO-TTRansform subgroup analysis links eplontersen effect to baseline stabilizer use",
+      "summary": "A prespecified CARDIO-TTRansform analysis found that baseline TTR-stabilizer use modified eplontersen’s effect on cardiovascular death/recurrent cardiovascular events. Benefit appeared without a baseline stabilizer (RR 0.71, 95% CI 0.54–0.93), while the stabilizer subgroup showed no benefit (RR 1.14, 0.85–1.53). The overall trial was neutral. This missing August publication is a backfill; the subgroup findings do not establish benefit in the overall study population.",
+      "sourceName": "Nature Medicine / UCL accepted-version abstract",
+      "sourceUrl": "https://doi.org/10.1038/s41591-026-04670-6",
+      "topicTags": [
+        "ATTR-CM",
+        "clinical evidence",
+        "subgroup analysis"
+      ],
+      "relevantNodeIds": [
+        "cond-attr-cm",
+        "rx-tafamidis"
+      ],
+      "additionalSources": [
+        {
+          "label": "Author-institution abstract and accepted version",
+          "url": "https://discovery.ucl.ac.uk/id/eprint/10230315/"
+        }
+      ],
+      "reviewStatus": "reviewed"
     },
     {
       "id": "news-2026-08-30-luminara-phase-2b-oral-relaxin-agonist-azd5462-improves-hf",
