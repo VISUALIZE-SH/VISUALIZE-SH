@@ -1922,3 +1922,72 @@
       2026-10-03 audit: 44 randomized participants (23 mavacamten, 21 placebo), aged 12–<18 and body weight ≥35 kg; trial eligibility differs
       from the ≥30 kg US label. Indexed official CTG record verifies actual start April 17, 2024 and active, not recruiting; its long-term
       extension continues after the positive primary readout.
+
+- id: trial-autus-pivotal
+  type: trial
+  name: AUTUS Valve Pivotal Study
+  nctId: NCT05006404
+  phase: Pivotal single-arm device study
+  status: active
+  conditions:
+    - cond-pv
+  therapies:
+    - dev-autus
+  enrollment: 62
+  resultStatus: ongoing
+  primaryEndpoint: Device-related complications at 30 days; acceptable hemodynamic performance at 6 months.
+  outcomeSummary: >-
+    Registry lists 62 actual participants and active, not recruiting status; primary completion August 24, 2026, with long-term
+    follow-up ongoing. Registry has no posted results; FDA separately summarizes the approval study.
+  references:
+    - https://clinicaltrials.gov/study/NCT05006404
+    - https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+  links:
+    - label: FDA approval-study summary
+      url: https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+  timeline:
+    date: '2024-02-05'
+    precision: day
+    dateBasis: trial-start
+    event: Registered pivotal study actual start
+    source: https://clinicaltrials.gov/study/NCT05006404
+  curation:
+    status: draft
+    lastUpdated: '2026-10-07'
+    sources:
+      - https://clinicaltrials.gov/study/NCT05006404
+      - https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+    notes: >-
+      WOR-26: Official API protocolSection identificationModule, statusModule, designModule, eligibilityModule and outcomesModule
+      retrieved 2026-10-07. Last update posted 2026-09-28 (submitted September 24); 62 is actual registry enrollment, not every
+      endpoint denominator. Registered ages 18 months–16 years are trial criteria, not approved labeling. Separate from the
+      11-patient EFS and the continued-access target.
+
+- id: trial-autus-continued-access
+  type: trial
+  name: AUTUS Valve Continued Access Study
+  nctId: NCT07466745
+  phase: Continued-access single-arm device study
+  status: recruiting
+  conditions:
+    - cond-pv
+  therapies:
+    - dev-autus
+  enrollment: 36
+  resultStatus: ongoing
+  primaryEndpoint: Device-related complications at 30 days; acceptable hemodynamic performance at 6 months.
+  outcomeSummary: >-
+    Registry lists recruiting status and 36 estimated participants; actual start July 27, 2026 and estimated primary completion
+    October 30, 2027. No posted results.
+  references:
+    - https://clinicaltrials.gov/study/NCT07466745
+  curation:
+    status: draft
+    lastUpdated: '2026-10-07'
+    sources:
+      - https://clinicaltrials.gov/study/NCT07466745
+    notes: >-
+      WOR-26: Official API identificationModule, statusModule, designModule, eligibilityModule and outcomesModule retrieved
+      2026-10-07; last update posted 2026-08-10. The 36 count is a registered estimate, not actual enrollment or an
+      approval-cohort denominator. Keep distinct from pivotal NCT05006404. Registered follow-up extends to 2036; exact device
+      model not disclosed.

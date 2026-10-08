@@ -1,6 +1,6 @@
 # Human-review pilot. Authored from the source register below; no clinical claim is marked reviewed.
 schemaVersion: 1
-updatedAt: '2026-10-04'
+updatedAt: '2026-10-07'
 coverage:
   title: Evidence pilot
   description: Draft, source-linked records for review. Not a complete label, IFU, or safety inventory.
@@ -1395,6 +1395,44 @@ indications:
     anatomy: Aortic root and valve
     restrictions: The clinician remains responsible for treatment decisions and device-IFU compliance.
 trials:
+  - id: evidence-autus-pivotal
+    name: AUTUS Valve Pivotal Study
+    nctId: NCT05006404
+    entityId: trial-autus-pivotal
+    familyIds:
+      - family-autus
+    design: Prospective, single-arm, open-label multicenter device study
+    population: >-
+      Pediatric patients aged 18 months–16 years requiring surgical pulmonary valve replacement; registry eligibility, not
+      approved-label scope.
+    versionIds:
+      - ver-autus-size-adjustable
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-autus-pivotal-registry
+        locator: >-
+          Official API protocolSection.identificationModule; descriptionModule; designModule; eligibilityModule (retrieved
+          2026-10-07). Named AUTUS device; no exact catalog model or older EFS mapping inferred.
+    reviewStatus: draft
+  - id: evidence-autus-continued-access
+    name: AUTUS Valve Continued Access Study
+    nctId: NCT07466745
+    entityId: trial-autus-continued-access
+    familyIds:
+      - family-autus
+    design: Prospective, single-arm, open-label multicenter device study
+    population: >-
+      Pediatric patients aged 18 months–16 years requiring surgical pulmonary valve replacement; registry eligibility, not
+      approved-label scope.
+    versionIds:
+      - ver-autus-size-adjustable
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-autus-continued-access-registry
+        locator: >-
+          Official API protocolSection.identificationModule; descriptionModule; designModule; eligibilityModule (retrieved
+          2026-10-07). Named AUTUS device; no exact catalog model or older EFS mapping inferred.
+    reviewStatus: draft
   - id: evidence-champion-af
     name: CHAMPION-AF
     nctId: NCT04394546
@@ -1659,6 +1697,39 @@ trials:
         locator: 'Abstract; registry cohort and outcomes'
     reviewStatus: reviewed
 trialSnapshots:
+  - id: snapshot-autus-pivotal-20261007
+    trialId: evidence-autus-pivotal
+    observedAt: '2026-10-07'
+    registryUpdatedAt: '2026-09-28'
+    status: Active, not recruiting
+    enrollment:
+      value: 62
+      basis: actual
+      scope: Total registered pivotal-study enrollment
+    note: >-
+      Last update submitted September 24 and posted September 28. Primary completion is actual August 24, 2026; estimated study
+      completion February 5, 2036. Registry has no posted results. FDA summary first-60 six-month data is a different analysis
+      denominator.
+    sourceRefs:
+      - sourceId: src-autus-pivotal-registry
+        locator: API protocolSection.statusModule; designModule.enrollmentInfo; hasResults (retrieved 2026-10-07)
+    reviewStatus: draft
+  - id: snapshot-autus-cas-20261007
+    trialId: evidence-autus-continued-access
+    observedAt: '2026-10-07'
+    registryUpdatedAt: '2026-08-10'
+    status: Recruiting
+    enrollment:
+      value: 36
+      basis: estimated
+      scope: Continued-access study target; not actual enrollment
+    note: >-
+      Actual start July 27, 2026; estimated primary completion October 30, 2027 and study completion April 30, 2036. No posted
+      results. Snapshot describes the last posted registry revision, not live site-level enrollment.
+    sourceRefs:
+      - sourceId: src-autus-continued-access-registry
+        locator: API protocolSection.statusModule; designModule.enrollmentInfo; hasResults (retrieved 2026-10-07)
+    reviewStatus: draft
   - id: snapshot-rechord-2026
     trialId: evidence-rechord
     observedAt: '2026-09-28'
@@ -2897,6 +2968,208 @@ lineage:
         locator: 'Predicate-device section, page 1 of summary'
     reviewStatus: draft
 events:
+  - id: event-amulet-fda-labeling-20260828
+    title: FDA approves Amulet pulmonary-artery labeling update
+    eventDate:
+      value: '2026-08-28'
+      precision: day
+    publishedAt:
+      value: '2026-08-28'
+      precision: day
+    discoveredAt: '2026-10-07'
+    kind: labeling
+    versionIds:
+      - ver-amulet
+    decisionIds:
+      - decision-amulet-p200049s021
+    readoutIds: []
+    before: >-
+      The existing Amulet IFU described interference with adjacent structures without the specific pulmonary-artery guidance
+      authorized by this supplement.
+    after: FDA approved the labeling change under P200049/S021 on August 28, 2026.
+    whyItMatters: Provides independent US regulatory confirmation for the pulmonary-artery safety-labeling update.
+    uncertainty: >-
+      The FDA page's October 5 update date is separate from its August 28 decision. This is not a new device generation or evidence
+      of Amulet 360 applicability.
+    sourceRefs:
+      - sourceId: src-amulet-fda-p200049s021
+        locator: Device; Decision Date; Supplement Type/Reason; Approval Order Statement; Page Last Updated
+    reviewStatus: draft
+  - id: event-amulet-canada-labeling-recall-20260910
+    title: Canada records an Amulet labeling recall concerning pulmonary artery injury
+    eventDate:
+      value: '2026-09-10'
+      precision: day
+    publishedAt:
+      value: '2026-09-25'
+      precision: day
+    discoveredAt: '2026-10-07'
+    kind: labeling
+    versionIds:
+      - ver-amulet
+    decisionIds: []
+    readoutIds: []
+    before: Amulet's existing contraindication referred generally to interference with adjacent intracardiac or intravascular structures.
+    after: >-
+      Health Canada recorded a Type II labeling recall, RA-82682, notifying consignees of pulmonary-artery contraindication and
+      landing-zone assessment changes.
+    whyItMatters: Adds a dated, jurisdiction-specific safety notice for the listed original 9-ACP2 models.
+    uncertainty: >-
+      Health Canada explicitly distinguishes this labeling notification from device defectiveness. Canadian classification is not
+      transferred to the US; no global product withdrawal, Amulet 360 scope or adverse-event incidence is inferred.
+    sourceRefs:
+      - sourceId: src-amulet-health-canada-ra82682
+        locator: Affected products; Issue; Original published date; Recall class; Recall date; Identification number
+    reviewStatus: draft
+  - id: event-autus-fda-approval-20261001
+    title: FDA announces AUTUS pediatric surgical pulmonary-valve approval
+    eventDate:
+      value: '2026-10-01'
+      precision: day
+    publishedAt:
+      value: '2026-10-01'
+      precision: day
+    discoveredAt: '2026-10-07'
+    kind: indication
+    versionIds:
+      - ver-autus-size-adjustable
+    decisionIds: []
+    readoutIds: []
+    before: Earlier AUTUS development and study materials described investigational use.
+    after: FDA announced US PMA approval for pediatric congenital pulmonary valve disease.
+    whyItMatters: Adds a size-adjustable polymeric-leaflet surgical valve with later balloon expansion.
+    uncertainty: >-
+      PMA identifier and approved IFU not located, so no identifier-bearing decision is fabricated. FDA reports first 60 of 62
+      patients at six months, three frame fractures, two reduced-leaflet-motion cases without symptoms and two expansions; long-term
+      expansion experience remains limited.
+    sourceRefs:
+      - sourceId: src-autus-fda-announcement-20261001
+        locator: Opening, diameter, leaflet and clinical-study paragraphs; PMA pathway and approval-recipient paragraphs
+    reviewStatus: draft
+  - id: event-mitria-t45-partnership-ceo-20260929
+    title: Mitria partners with T45 Labs to advance investigational SVS
+    eventDate:
+      value: '2026-09-29'
+      precision: day
+    publishedAt:
+      value: '2026-09-29'
+      precision: day
+    discoveredAt: '2026-10-07'
+    kind: evidence
+    versionIds:
+      - ver-mitria-svs
+    decisionIds: []
+    readoutIds: []
+    before: Earlier surgical experience and a US expanded-access implantation had been reported.
+    after: T45 announced development/operational support and a CEO appointment; sponsor reported six SVS recipients.
+    whyItMatters: Records a corporate development milestone for an investigational functional-MR repair concept.
+    uncertainty: >-
+      Six is an unspecified sponsor-reported cumulative count, not registered enrollment, an exact-generation transcatheter cohort
+      or an efficacy result. Surgical/transcatheter composition, cutoff and device builds are undisclosed; no approval inferred.
+    sourceRefs:
+      - sourceId: src-mitria-t45-partnership
+        locator: Opening two paragraphs; non-quotation paragraph beginning To date; investigational-device disclaimer
+    reviewStatus: draft
+  - id: event-cardioguide-hf-announcement-20261005
+    title: Abbott announces CardioGuide HF patient pressure access and medication updates
+    eventDate:
+      value: '2026-10-05'
+      precision: day
+    publishedAt:
+      value: '2026-10-05'
+      precision: day
+    discoveredAt: '2026-10-07'
+    kind: software
+    versionIds:
+      - ver-cardioguide-hf-announced-2026
+    decisionIds: []
+    readoutIds: []
+    before: Abbott described CardioMEMS pressure readings as clinician-accessed information.
+    after: Announced app capabilities expose patient pressure trends and clinician-configured Dynamic Treatment Plan instructions.
+    whyItMatters: Adds patient-facing workflow context to the CardioMEMS monitoring family.
+    uncertainty: >-
+      Manufacturer-reported FDA approval is not independently reconciled to a supplement. Availability is planned later in 2026;
+      exact software build and sensor-model compatibility are unspecified. No sensor redesign or autonomous prescribing inferred.
+    sourceRefs:
+      - sourceId: src-cardiomems-cardioguide-announcement-20261005
+        locator: Opening non-quotation paragraph; Dynamic Treatment Plan and planned-availability paragraphs; FAQs
+    reviewStatus: draft
+  - id: event-amulet-ifu-correction-202609
+    title: Original Amulet labeling correction addresses pulmonary artery injury risk
+    eventDate:
+      value: 2026-09
+      precision: month
+    publishedAt:
+      value: 2026-09
+      precision: month
+    discoveredAt: '2026-10-07'
+    kind: labeling
+    versionIds:
+      - ver-amulet
+    decisionIds: []
+    readoutIds: []
+    before: The existing contraindication referred generally to interference with intracardiac/intravascular structures.
+    after: Abbott specified the pulmonary artery and added landing-zone distance-assessment guidance; product return not required.
+    whyItMatters: Preserves a safety-labeling update with its exact original-model scope.
+    uncertainty: >-
+      Exact letter day undisclosed; its date remains month precision. Dated News uses the separate Canadian notice's publication
+      date. Appendix A lists original 9-ACP2 models, not Amulet 360. No recall classification is inferred from the letter alone.
+    sourceRefs:
+      - sourceId: src-amulet-ifu-correction-202609
+        locator: PDF p.1 opening and Actions Abbott is Taking; p.3 Appendix A
+    reviewStatus: draft
+  - id: event-emboliner-first-commercial-use-20261001
+    title: Emboline reports first US commercial Emboliner procedures
+    eventDate:
+      value: '2026-10-01'
+      precision: day
+    publishedAt:
+      value: '2026-10-02'
+      precision: day
+    discoveredAt: '2026-10-07'
+    kind: evidence
+    versionIds:
+      - ver-emboliner-epc03
+    decisionIds:
+      - decision-emboliner-k261715
+    readoutIds: []
+    before: FDA cleared EPC-03 September 8, 2026; commercial use was a separate milestone.
+    after: Sponsor reported two commercial TAVR procedures October 1 and commencement of a controlled US launch.
+    whyItMatters: Distinguishes authorization date, procedure date and announcement date.
+    uncertainty: >-
+      Sponsor disclosure is not comparative stroke-prevention evidence or proof of broad access. Release names the Emboliner family
+      without an EPC-03 build identifier; commercial-use evidence stays family-level context for the cleared named system.
+    sourceRefs:
+      - sourceId: src-emboliner-commercial-use-20261002
+        locator: Opening non-quotation paragraphs and controlled-launch paragraph
+    reviewStatus: draft
+  - id: event-camzyos-pediatric-indication-20260930
+    title: CAMZYOS US indication expands to pediatric patients weighing at least 30 kg
+    eventDate:
+      value: '2026-09-30'
+      precision: day
+    publishedAt:
+      value: '2026-09-30'
+      precision: day
+    discoveredAt: '2026-10-07'
+    kind: indication
+    versionIds:
+      - ver-camzyos
+    decisionIds:
+      - decision-camzyos-2026-pediatric
+    readoutIds: []
+    before: The original US authorization was for adults with symptomatic NYHA II–III obstructive HCM.
+    after: The expanded indication includes adults and pediatric patients weighing at least 30 kg with symptomatic obstructive HCM.
+    whyItMatters: Adds the missing dated event and News crosswalk to the existing label-backed Data draft.
+    uncertainty: >-
+      Reuses existing decision-camzyos-2026-pediatric and label records. Weight-based approved population is distinct from SCOUT-HCM
+      trial ages; echocardiography and REMS requirements remain.
+    sourceRefs:
+      - sourceId: src-camzyos-2026-fda
+        locator: Opening action paragraph and approved population
+      - sourceId: src-camzyos-2026-announcement
+        locator: Release date and opening approval paragraph
+    reviewStatus: draft
   - id: event-sapien-intermediate
     title: 'SAPIEN 3: indication expansion without an inferred redesign'
     eventDate:

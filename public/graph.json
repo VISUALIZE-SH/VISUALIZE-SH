@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-10-04T18:54:09.924Z",
-    "lastUpdated": "2026-10-04",
+    "generatedAt": "2026-10-08T05:41:26.361Z",
+    "lastUpdated": "2026-10-07",
     "counts": {
       "condition": 19,
-      "device": 75,
+      "device": 79,
       "pharmaceutical": 14,
       "procedure": 8,
-      "digital": 4,
-      "company": 54,
-      "trial": 74
+      "digital": 5,
+      "company": 57,
+      "trial": 76
     },
-    "draftCount": 239,
-    "total": 248,
+    "draftCount": 249,
+    "total": 258,
     "newsCount": 56,
     "latestNewsDate": "2026-09-23"
   },
@@ -1229,7 +1229,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 35,
+          "degree": 36,
           "pulse": 5,
           "entity": {
             "id": "cond-hfref",
@@ -1261,7 +1261,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 26,
+          "degree": 27,
           "pulse": 6,
           "entity": {
             "id": "cond-hfpef",
@@ -1327,7 +1327,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 18,
+          "degree": 19,
           "pulse": 9,
           "entity": {
             "id": "cond-as",
@@ -1399,7 +1399,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 19,
+          "degree": 21,
           "pulse": 8,
           "entity": {
             "id": "cond-mr",
@@ -1503,7 +1503,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 3,
+          "degree": 6,
           "pulse": 4,
           "entity": {
             "id": "cond-pv",
@@ -7485,6 +7485,292 @@
       },
       {
         "data": {
+          "id": "dev-mitria-svs",
+          "label": "Subvalvular Spacer (SVS)",
+          "group": "device",
+          "category": "Transcatheter subvalvular mitral repair",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 4,
+          "entity": {
+            "id": "dev-mitria-svs",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Transcatheter subvalvular mitral repair",
+            "name": "Subvalvular Spacer (SVS)",
+            "company": "co-mitria-medical",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational and not commercially available, per September 29, 2026 sponsor disclosure. Mitria reported first US use at Cleveland Clinic under single-patient expanded access; no marketing approval decision verified.",
+            "mechanism": "Nitinol braid designed to support the displaced posterior leaflet and improve coaptation while preserving native leaflet motion and valve opening in functional MR.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Braided posterior leaflet support implant",
+                "category": "frame",
+                "source": "https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html",
+                "note": "About Mitria Medical, paragraph 1. Full composition and exact model are not disclosed."
+              }
+            ],
+            "description": "Distinct subvalvular mitral repair concept. Earlier two-patient surgical experience remains family-level preliminary evidence and is not mapped to the contemporary transcatheter build.",
+            "links": [
+              {
+                "label": "T45 Labs product overview",
+                "url": "https://t45labs.com/mitria-medical/"
+              },
+              {
+                "label": "Original surgical experience abstract (AATS 2025)",
+                "url": "https://www.aats.org/resources/sub-valvular-spacer-implant-fo-11413"
+              }
+            ],
+            "pulse": 4,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-06",
+              "sources": [
+                "https://t45labs.com/mitria-medical/",
+                "https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html",
+                "https://www.prnewswire.com/news-releases/mitria-medical-announces-first-use-of-novel-mitral-valve-repair-device-in-us-under-single-patient-expanded-access-302704666.html",
+                "https://www.aats.org/resources/sub-valvular-spacer-implant-fo-11413"
+              ],
+              "notes": "WOR-25: Contemporary design/material/intended target from September 29 release, About Mitria Medical; investigational status from the preceding disclaimer. US use from March 5 release, opening non-quotation paragraphs; January 2026 procedure month is reported only in T45's undated portfolio page, paragraph 2. No graph approval/availability timeline added. AATS written Abstract, Methods/Results reports two surgical cases with different follow-up, including concomitant CABG in one patient; no comparative outcome or general safety claim. Implant size, sheath, exact generation, registry identifier and regulatory decision remain unverified. All new facts await curator review."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-autus",
+          "label": "AUTUS Size-Adjustable Valve",
+          "group": "device",
+          "category": "Size-adjustable surgical pulmonary valve",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 9,
+          "timelineDate": "2026-10-01",
+          "entity": {
+            "id": "dev-autus",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Size-adjustable surgical pulmonary valve",
+            "name": "AUTUS Size-Adjustable Valve",
+            "company": "co-edwards",
+            "treats": [
+              "cond-pv"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "US FDA announced PMA approval October 1, 2026 for pediatric congenital pulmonary valve disease. Exact approved IFU and PMA identifier remain unverified.",
+            "mechanism": "Surgical pulmonary valve replacement followed, when needed, by transcatheter balloon expansion to accommodate patient growth.",
+            "materials": [
+              {
+                "name": "Polymeric material",
+                "role": "Valve leaflets",
+                "category": "leaflet",
+                "source": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children",
+                "note": "FDA polymeric-leaflet paragraph; specific polymer chemistry and frame alloy are not disclosed."
+              }
+            ],
+            "description": "Polymeric-leaflet surgical valve with announcement-reported initial diameter approximately 13 mm and expansion up to 22 mm. These are adjustable diameters, not a discrete catalog size list. Longer-term expansion and durability evidence remain limited.",
+            "links": [
+              {
+                "label": "FDA approval announcement",
+                "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children"
+              },
+              {
+                "label": "Edwards approval announcement",
+                "url": "https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Receives-FDA-Approval-for-AUTUS-Valve-the-First-Surgical-Pulmonary-Valve-for-Pediatric-Patients/default.aspx"
+              }
+            ],
+            "timeline": {
+              "date": "2026-10-01",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "US FDA PMA approval announced for AUTUS",
+              "source": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children"
+            },
+            "pulse": 9,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-07",
+              "sources": [
+                "https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children",
+                "https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Receives-FDA-Approval-for-AUTUS-Valve-the-First-Surgical-Pulmonary-Valve-for-Pediatric-Patients/default.aspx"
+              ],
+              "notes": "WOR-26: FDA opening, diameter, polymeric-leaflet and approval-recipient paragraphs. Approval is US-specific; trial eligibility is not an approved-label substitute. NCT05006404 pivotal and NCT07466745 continued-access counts remain separate. Undated manufacturer study page still carries investigational language; the dated FDA announcement establishes approval. No autonomous growth or reduction in repeat surgery is asserted as proven. Public documents retrieved 2026-10-07."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitrapatch",
+          "label": "MitraPatch Mitral Valve Repair System",
+          "group": "device",
+          "category": "Surgical mitral chordal repair",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "timelineDate": "2025-12-04",
+          "entity": {
+            "id": "dev-mitrapatch",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Surgical mitral chordal repair",
+            "name": "MitraPatch Mitral Valve Repair System",
+            "company": "co-chawla-heart-technologies",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "US 510(k) substantial-equivalence clearance K252126, December 4, 2025, for marginal (primary) chordae tendinae repair/replacement only.",
+            "mechanism": "Permanent ePTFE monomembrane connects papillary muscle and mitral leaflet to replace chordal support.",
+            "materials": [
+              {
+                "name": "Expanded polytetrafluoroethylene (ePTFE)",
+                "role": "Permanent neochord monomembrane",
+                "category": "fabric",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252126.pdf",
+                "note": "PDF p.5 (Summary p.1), Device Description."
+              }
+            ],
+            "description": "One-size surgical chordal implant with a delivery handle and locator tool. Separate from Mitria Medical SVS; no transfer of functional-MR spacer evidence or transcatheter route.",
+            "links": [
+              {
+                "label": "FDA clearance and 510(k) summary",
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252126.pdf"
+              }
+            ],
+            "timeline": {
+              "date": "2025-12-04",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "FDA 510(k) clearance (K252126)",
+              "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252126.pdf",
+              "notes": "Coarse graph dateBasis includes clearance; exact pathway is 510(k), not PMA approval."
+            },
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-07",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252126.pdf"
+              ],
+              "notes": "WOR-26 historical backfill: FDA PDF p.1 clearance letter, p.4 Indications for Use and pp.5–6 Summary. The generic graph approved state represents a cleared device; exact pathway is 510(k). No current distribution, comparative clinical efficacy or registry identity established. Public source retrieved 2026-10-07."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-emboliner",
+          "label": "Emboliner Embolic Protection System (EPC-03)",
+          "group": "device",
+          "category": "Temporary embolic-protection adjunct during TAVR",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 8,
+          "timelineDate": "2026-09-08",
+          "entity": {
+            "id": "dev-emboliner",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Temporary embolic-protection adjunct during TAVR",
+            "name": "Emboliner Embolic Protection System (EPC-03)",
+            "company": "co-emboline",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA 510(k) substantial-equivalence clearance K261715 on September 8, 2026; manufacturer announced controlled US launch October 2.",
+            "mechanism": "Temporary catheter designed to capture and remove embolic debris generated during TAVR.",
+            "materials": [],
+            "description": "Adjunct to TAVR for aortic stenosis, not an aortic valve replacement. First US commercial procedures were reported for October 1, 2026; material composition and exact cleared IFU restrictions await verification.",
+            "links": [
+              {
+                "label": "FDA EPC-03 clearance record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715"
+              },
+              {
+                "label": "First US commercial-use announcement",
+                "url": "https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html"
+              }
+            ],
+            "timeline": {
+              "date": "2026-09-08",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "FDA 510(k) clearance (K261715)",
+              "source": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715",
+              "notes": "Exact pathway is 510(k) clearance, not PMA approval; commercial procedures occurred later."
+            },
+            "pulse": 8,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-07",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715",
+                "https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html"
+              ],
+              "notes": "WOR-26: FDA Device Name, Applicant, Decision Date and Decision; October 2 release opening and controlled-launch paragraph. AS link is procedural context only. FDA summary/IFU unavailable in this pass; no unsupported filter alloy, pore size, delivery profile, other-procedure indication or stroke-reduction claim. Release does not disclose a new EPC-03 build. Public documents retrieved 2026-10-07."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dig-cardioguide-hf",
+          "label": "CardioGuide HF App",
+          "group": "digital",
+          "category": "Patient-facing hemodynamic monitoring companion app",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 7,
+          "entity": {
+            "id": "dig-cardioguide-hf",
+            "type": "therapy",
+            "therapyType": "digital",
+            "subtype": "Patient-facing hemodynamic monitoring companion app",
+            "name": "CardioGuide HF App",
+            "company": "co-abbott",
+            "treats": [
+              "cond-hfref",
+              "cond-hfpef"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Abbott announced FDA approval for CardioMEMS system updates October 5, 2026; decision-specific record and software version not independently verified. Availability planned later in 2026.",
+            "mechanism": "Displays CardioMEMS pulmonary artery pressure trends and conveys clinician-configured Dynamic Treatment Plan medication instructions.",
+            "description": "Announced companion app for CardioMEMS users. Manufacturer describes iOS/Android access and clinician-enabled treatment-plan communication; no autonomous prescribing or added clinical-outcome benefit established.",
+            "links": [
+              {
+                "label": "Abbott system-update announcement and FAQs",
+                "url": "https://abbott.mediaroom.com/2026-10-05-Abbott-receives-FDA-approval-for-new-CardioMEMS-HF-System-capabilities-that-help-patients-engage-in-the-care-of-their-heart-condition"
+              }
+            ],
+            "pulse": 7,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-07",
+              "sources": [
+                "https://abbott.mediaroom.com/2026-10-05-Abbott-receives-FDA-approval-for-new-CardioMEMS-HF-System-capabilities-that-help-patients-engage-in-the-care-of-their-heart-condition"
+              ],
+              "notes": "WOR-26: Opening non-quotation paragraph; Dynamic Treatment Plan and availability paragraphs; app/system FAQs. Named announced configuration rather than an exact released software build. No compatibility bridge to a specific historical CM3000 model, new sensor hardware generation or change to the clinical indication. Public source retrieved 2026-10-07."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-boston-scientific",
           "label": "Boston Scientific",
           "group": "company",
@@ -7531,7 +7817,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 16,
+          "degree": 17,
           "pulse": 0,
           "entity": {
             "id": "co-abbott",
@@ -7711,7 +7997,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 9,
+          "degree": 10,
           "pulse": 7,
           "entity": {
             "id": "co-edwards",
@@ -9127,6 +9413,89 @@
                 "https://clinicaltrials.gov/study/NCT05911685"
               ],
               "notes": "Patent assignee name change and clinical-trial sponsor are separate evidence roles; current headquarters and website omitted without verification."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-mitria-medical",
+          "label": "Mitria Medical",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 4,
+          "entity": {
+            "id": "co-mitria-medical",
+            "type": "company",
+            "name": "Mitria Medical",
+            "website": "https://mitriamedical.com/",
+            "description": "Cleveland Clinic-origin company developing the investigational Subvalvular Spacer for functional mitral regurgitation; joined the T45 Labs portfolio through a partnership announced September 29, 2026.",
+            "pulse": 4,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-06",
+              "sources": [
+                "https://t45labs.com/mitria-medical/",
+                "https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html",
+                "https://www.prnewswire.com/news-releases/mitria-medical-announces-first-use-of-novel-mitral-valve-repair-device-in-us-under-single-patient-expanded-access-302704666.html"
+              ],
+              "notes": "WOR-25: T45 partnership release, opening paragraphs and About Mitria Medical; Mitria March 5 release, paragraph beginning In 2019. Website URL is linked by the inspected T45 portfolio page; direct manufacturer homepage could not be inspected. No funding, headquarters or ownership inference."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-chawla-heart-technologies",
+          "label": "Chawla Heart Technologies LLC",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-chawla-heart-technologies",
+            "type": "company",
+            "name": "Chawla Heart Technologies LLC",
+            "description": "FDA K252126 applicant and manufacturer of the MitraPatch Mitral Valve Repair System.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-07",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252126.pdf"
+              ],
+              "notes": "WOR-26: FDA PDF p.5 (510(k) Summary p.1), Applicant, and p.6 manufacturer row. No ownership, financing or current distribution inference. Public source retrieved 2026-10-07."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-emboline",
+          "label": "Emboline",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-emboline",
+            "type": "company",
+            "name": "Emboline",
+            "description": "Developer of the Emboliner temporary embolic-protection system for use during TAVR.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-07",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715",
+                "https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html"
+              ],
+              "notes": "WOR-26: FDA K261715 Applicant; October 2 release opening and About Emboline, excluding quotations. Controlled US launch announcement does not establish broad availability. Public sources retrieved 2026-10-07."
             }
           }
         }
@@ -12826,6 +13195,104 @@
             }
           }
         }
+      },
+      {
+        "data": {
+          "id": "trial-autus-pivotal",
+          "label": "AUTUS Valve Pivotal Study",
+          "group": "trial",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "timelineDate": "2024-02-05",
+          "entity": {
+            "id": "trial-autus-pivotal",
+            "type": "trial",
+            "name": "AUTUS Valve Pivotal Study",
+            "nctId": "NCT05006404",
+            "phase": "Pivotal single-arm device study",
+            "status": "active",
+            "conditions": [
+              "cond-pv"
+            ],
+            "therapies": [
+              "dev-autus"
+            ],
+            "enrollment": 62,
+            "resultStatus": "ongoing",
+            "primaryEndpoint": "Device-related complications at 30 days; acceptable hemodynamic performance at 6 months.",
+            "outcomeSummary": "Registry lists 62 actual participants and active, not recruiting status; primary completion August 24, 2026, with long-term follow-up ongoing. Registry has no posted results; FDA separately summarizes the approval study.",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT05006404",
+              "https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children"
+            ],
+            "links": [
+              {
+                "label": "FDA approval-study summary",
+                "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children"
+              }
+            ],
+            "timeline": {
+              "date": "2024-02-05",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Registered pivotal study actual start",
+              "source": "https://clinicaltrials.gov/study/NCT05006404"
+            },
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-07",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT05006404",
+                "https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children"
+              ],
+              "notes": "WOR-26: Official API protocolSection identificationModule, statusModule, designModule, eligibilityModule and outcomesModule retrieved 2026-10-07. Last update posted 2026-09-28 (submitted September 24); 62 is actual registry enrollment, not every endpoint denominator. Registered ages 18 months–16 years are trial criteria, not approved labeling. Separate from the 11-patient EFS and the continued-access target."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-autus-continued-access",
+          "label": "AUTUS Valve Continued Access Study",
+          "group": "trial",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-autus-continued-access",
+            "type": "trial",
+            "name": "AUTUS Valve Continued Access Study",
+            "nctId": "NCT07466745",
+            "phase": "Continued-access single-arm device study",
+            "status": "recruiting",
+            "conditions": [
+              "cond-pv"
+            ],
+            "therapies": [
+              "dev-autus"
+            ],
+            "enrollment": 36,
+            "resultStatus": "ongoing",
+            "primaryEndpoint": "Device-related complications at 30 days; acceptable hemodynamic performance at 6 months.",
+            "outcomeSummary": "Registry lists recruiting status and 36 estimated participants; actual start July 27, 2026 and estimated primary completion October 30, 2027. No posted results.",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT07466745"
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-07",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT07466745"
+              ],
+              "notes": "WOR-26: Official API identificationModule, statusModule, designModule, eligibilityModule and outcomesModule retrieved 2026-10-07; last update posted 2026-08-10. The 36 count is a registered estimate, not actual enrollment or an approval-cohort denominator. Keep distinct from pivotal NCT05006404. Registered follow-up extends to 2036; exact device model not disclosed."
+            }
+          }
+        }
       }
     ],
     "edges": [
@@ -14511,6 +14978,94 @@
       },
       {
         "data": {
+          "id": "dev-mitria-svs__made_by__co-mitria-medical",
+          "source": "dev-mitria-svs",
+          "target": "co-mitria-medical",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitria-svs__treats__cond-mr",
+          "source": "dev-mitria-svs",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-autus__made_by__co-edwards",
+          "source": "dev-autus",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-autus__treats__cond-pv",
+          "source": "dev-autus",
+          "target": "cond-pv",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitrapatch__made_by__co-chawla-heart-technologies",
+          "source": "dev-mitrapatch",
+          "target": "co-chawla-heart-technologies",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitrapatch__treats__cond-mr",
+          "source": "dev-mitrapatch",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-emboliner__made_by__co-emboline",
+          "source": "dev-emboliner",
+          "target": "co-emboline",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-emboliner__treats__cond-as",
+          "source": "dev-emboliner",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-cardioguide-hf__made_by__co-abbott",
+          "source": "dig-cardioguide-hf",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-cardioguide-hf__treats__cond-hfref",
+          "source": "dig-cardioguide-hf",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-cardioguide-hf__treats__cond-hfpef",
+          "source": "dig-cardioguide-hf",
+          "target": "cond-hfpef",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "trial-protect-af__evaluates__dev-watchman-original",
           "source": "trial-protect-af",
           "target": "dev-watchman-original",
@@ -15818,6 +16373,38 @@
           "id": "trial-scout-hcm__studies__cond-hcm",
           "source": "trial-scout-hcm",
           "target": "cond-hcm",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-autus-pivotal__evaluates__dev-autus",
+          "source": "trial-autus-pivotal",
+          "target": "dev-autus",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-autus-pivotal__studies__cond-pv",
+          "source": "trial-autus-pivotal",
+          "target": "cond-pv",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-autus-continued-access__evaluates__dev-autus",
+          "source": "trial-autus-continued-access",
+          "target": "dev-autus",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-autus-continued-access__studies__cond-pv",
+          "source": "trial-autus-continued-access",
+          "target": "cond-pv",
           "relationship": "studies"
         }
       }
