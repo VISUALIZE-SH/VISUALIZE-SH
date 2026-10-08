@@ -3515,3 +3515,211 @@
       Original FDA SSED p.1 covers high-or-greater surgical risk; the inoperable pivotal Cohort B is distinct from the full approved
       indication. 2026-10-03 audit: PARTNER 2A original randomized report supplies XT-generation attribution, distinct from the original 2014
       approval cohort.
+
+- id: dev-mitria-svs
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter subvalvular mitral repair
+  name: Subvalvular Spacer (SVS)
+  company: co-mitria-medical
+  treats: [cond-mr]
+  regulatoryStatus: investigational
+  regulatoryDetail: Investigational and not commercially available, per September 29, 2026 sponsor disclosure. Mitria reported first US use at Cleveland Clinic under single-patient expanded access; no marketing approval decision verified.
+  mechanism: Nitinol braid designed to support the displaced posterior leaflet and improve coaptation while preserving native leaflet motion and valve opening in functional MR.
+  materials:
+    - name: Nitinol
+      role: Braided posterior leaflet support implant
+      category: frame
+      source: https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html
+      note: 'About Mitria Medical, paragraph 1. Full composition and exact model are not disclosed.'
+  description: Distinct subvalvular mitral repair concept. Earlier two-patient surgical experience remains family-level preliminary evidence and is not mapped to the contemporary transcatheter build.
+  links:
+    - label: T45 Labs product overview
+      url: https://t45labs.com/mitria-medical/
+    - label: Original surgical experience abstract (AATS 2025)
+      url: https://www.aats.org/resources/sub-valvular-spacer-implant-fo-11413
+  pulse: 4
+  curation:
+    status: draft
+    lastUpdated: '2026-10-06'
+    sources:
+      - https://t45labs.com/mitria-medical/
+      - https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html
+      - https://www.prnewswire.com/news-releases/mitria-medical-announces-first-use-of-novel-mitral-valve-repair-device-in-us-under-single-patient-expanded-access-302704666.html
+      - https://www.aats.org/resources/sub-valvular-spacer-implant-fo-11413
+    notes: >-
+      WOR-25: Contemporary design/material/intended target from September 29 release, About Mitria Medical; investigational status from the
+      preceding disclaimer. US use from March 5 release, opening non-quotation paragraphs; January 2026 procedure month is reported only in
+      T45's undated portfolio page, paragraph 2. No graph approval/availability timeline added. AATS written Abstract, Methods/Results reports
+      two surgical cases with different follow-up, including concomitant CABG in one patient; no comparative outcome or general safety claim.
+      Implant size, sheath, exact generation, registry identifier and regulatory decision remain unverified. All new facts await curator review.
+
+- id: dev-autus
+  type: therapy
+  therapyType: device
+  subtype: Size-adjustable surgical pulmonary valve
+  name: AUTUS Size-Adjustable Valve
+  company: co-edwards
+  treats:
+    - cond-pv
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    US FDA announced PMA approval October 1, 2026 for pediatric congenital pulmonary valve disease. Exact approved IFU and PMA
+    identifier remain unverified.
+  mechanism: Surgical pulmonary valve replacement followed, when needed, by transcatheter balloon expansion to accommodate patient growth.
+  materials:
+    - name: Polymeric material
+      role: Valve leaflets
+      category: leaflet
+      source: https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+      note: FDA polymeric-leaflet paragraph; specific polymer chemistry and frame alloy are not disclosed.
+  description: >-
+    Polymeric-leaflet surgical valve with announcement-reported initial diameter approximately 13 mm and expansion up to 22 mm.
+    These are adjustable diameters, not a discrete catalog size list. Longer-term expansion and durability evidence remain
+    limited.
+  links:
+    - label: FDA approval announcement
+      url: https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+    - label: Edwards approval announcement
+      url: >-
+        https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Receives-FDA-Approval-for-AUTUS-Valve-the-First-Surgical-Pulmonary-Valve-for-Pediatric-Patients/default.aspx
+  timeline:
+    date: '2026-10-01'
+    precision: day
+    dateBasis: fda-approval
+    event: US FDA PMA approval announced for AUTUS
+    source: https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+  pulse: 9
+  curation:
+    status: draft
+    lastUpdated: '2026-10-07'
+    sources:
+      - https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+      - >-
+        https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Receives-FDA-Approval-for-AUTUS-Valve-the-First-Surgical-Pulmonary-Valve-for-Pediatric-Patients/default.aspx
+    notes: >-
+      WOR-26: FDA opening, diameter, polymeric-leaflet and approval-recipient paragraphs. Approval is US-specific; trial
+      eligibility is not an approved-label substitute. NCT05006404 pivotal and NCT07466745 continued-access counts remain
+      separate. Undated manufacturer study page still carries investigational language; the dated FDA announcement establishes
+      approval. No autonomous growth or reduction in repeat surgery is asserted as proven. Public documents retrieved 2026-10-07.
+
+- id: dev-mitrapatch
+  type: therapy
+  therapyType: device
+  subtype: Surgical mitral chordal repair
+  name: MitraPatch Mitral Valve Repair System
+  company: co-chawla-heart-technologies
+  treats:
+    - cond-mr
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    US 510(k) substantial-equivalence clearance K252126, December 4, 2025, for marginal (primary) chordae tendinae
+    repair/replacement only.
+  mechanism: Permanent ePTFE monomembrane connects papillary muscle and mitral leaflet to replace chordal support.
+  materials:
+    - name: Expanded polytetrafluoroethylene (ePTFE)
+      role: Permanent neochord monomembrane
+      category: fabric
+      source: https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252126.pdf
+      note: PDF p.5 (Summary p.1), Device Description.
+  description: >-
+    One-size surgical chordal implant with a delivery handle and locator tool. Separate from Mitria Medical SVS; no transfer of
+    functional-MR spacer evidence or transcatheter route.
+  links:
+    - label: FDA clearance and 510(k) summary
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252126.pdf
+  timeline:
+    date: '2025-12-04'
+    precision: day
+    dateBasis: fda-approval
+    event: FDA 510(k) clearance (K252126)
+    source: https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252126.pdf
+    notes: Coarse graph dateBasis includes clearance; exact pathway is 510(k), not PMA approval.
+  curation:
+    status: draft
+    lastUpdated: '2026-10-07'
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252126.pdf
+    notes: >-
+      WOR-26 historical backfill: FDA PDF p.1 clearance letter, p.4 Indications for Use and pp.5–6 Summary. The generic graph
+      approved state represents a cleared device; exact pathway is 510(k). No current distribution, comparative clinical efficacy
+      or registry identity established. Public source retrieved 2026-10-07.
+
+- id: dev-emboliner
+  type: therapy
+  therapyType: device
+  subtype: Temporary embolic-protection adjunct during TAVR
+  name: Emboliner Embolic Protection System (EPC-03)
+  company: co-emboline
+  treats:
+    - cond-as
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    FDA 510(k) substantial-equivalence clearance K261715 on September 8, 2026; manufacturer announced controlled US launch October
+    2.
+  mechanism: Temporary catheter designed to capture and remove embolic debris generated during TAVR.
+  materials: []
+  description: >-
+    Adjunct to TAVR for aortic stenosis, not an aortic valve replacement. First US commercial procedures were reported for October
+    1, 2026; material composition and exact cleared IFU restrictions await verification.
+  links:
+    - label: FDA EPC-03 clearance record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715
+    - label: First US commercial-use announcement
+      url: >-
+        https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html
+  timeline:
+    date: '2026-09-08'
+    precision: day
+    dateBasis: fda-approval
+    event: FDA 510(k) clearance (K261715)
+    source: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715
+    notes: Exact pathway is 510(k) clearance, not PMA approval; commercial procedures occurred later.
+  pulse: 8
+  curation:
+    status: draft
+    lastUpdated: '2026-10-07'
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715
+      - >-
+        https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html
+    notes: >-
+      WOR-26: FDA Device Name, Applicant, Decision Date and Decision; October 2 release opening and controlled-launch paragraph.
+      AS link is procedural context only. FDA summary/IFU unavailable in this pass; no unsupported filter alloy, pore size,
+      delivery profile, other-procedure indication or stroke-reduction claim. Release does not disclose a new EPC-03 build. Public
+      documents retrieved 2026-10-07.
+
+- id: dig-cardioguide-hf
+  type: therapy
+  therapyType: digital
+  subtype: Patient-facing hemodynamic monitoring companion app
+  name: CardioGuide HF App
+  company: co-abbott
+  treats:
+    - cond-hfref
+    - cond-hfpef
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Abbott announced FDA approval for CardioMEMS system updates October 5, 2026; decision-specific record and software version not
+    independently verified. Availability planned later in 2026.
+  mechanism: >-
+    Displays CardioMEMS pulmonary artery pressure trends and conveys clinician-configured Dynamic Treatment Plan medication
+    instructions.
+  description: >-
+    Announced companion app for CardioMEMS users. Manufacturer describes iOS/Android access and clinician-enabled treatment-plan
+    communication; no autonomous prescribing or added clinical-outcome benefit established.
+  links:
+    - label: Abbott system-update announcement and FAQs
+      url: >-
+        https://abbott.mediaroom.com/2026-10-05-Abbott-receives-FDA-approval-for-new-CardioMEMS-HF-System-capabilities-that-help-patients-engage-in-the-care-of-their-heart-condition
+  pulse: 7
+  curation:
+    status: draft
+    lastUpdated: '2026-10-07'
+    sources:
+      - >-
+        https://abbott.mediaroom.com/2026-10-05-Abbott-receives-FDA-approval-for-new-CardioMEMS-HF-System-capabilities-that-help-patients-engage-in-the-care-of-their-heart-condition
+    notes: >-
+      WOR-26: Opening non-quotation paragraph; Dynamic Treatment Plan and availability paragraphs; app/system FAQs. Named
+      announced configuration rather than an exact released software build. No compatibility bridge to a specific historical
+      CM3000 model, new sensor hardware generation or change to the clinical indication. Public source retrieved 2026-10-07.

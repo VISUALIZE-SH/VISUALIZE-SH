@@ -2,6 +2,53 @@
   "bibliography": [
     {
       "entityIds": [
+        "dev-autus"
+      ],
+      "id": "bib-autus-study-page-status-conflict",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Study overview; investigational disclaimer; document code PP--US-13323 v1.0. Undated study-page language does not supersede the dated October 1 FDA approval.",
+          "sourceId": "src-autus-edwards-study-page"
+        }
+      ],
+      "versionIds": [
+        "ver-autus-size-adjustable"
+      ]
+    },
+    {
+      "entityIds": [
+        "cond-attr-cm",
+        "rx-tafamidis"
+      ],
+      "id": "bib-cardio-ttransform-stabilizer-analysis-2026",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "UCL accepted-version Abstract: overall trial neutral, prespecified baseline-stabilizer subgroups. Publication date from publisher-deposited Crossref published-online (August 30). No tafamidis monotherapy efficacy or exact drug-version comparison inferred.",
+          "sourceId": "src-cardio-ttransform-stabilizer-analysis-2026"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "cond-asd",
+        "cond-vsd",
+        "cond-pda"
+      ],
+      "id": "bib-echodino-preprint-v2-20261007",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "v2 Abstract and submission history; study-level SHD analysis and Discussion. First submission October 4, v2 revision October 7. Preprint dataset evaluation, not a clinically deployed software build.",
+          "sourceId": "src-echodino-preprint-v2-20261007"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
         "dev-accucinch"
       ],
       "id": "bib-graph-dev-accucinch",
@@ -536,6 +583,56 @@
     },
     {
       "entityIds": [
+        "dev-autus"
+      ],
+      "id": "bib-graph-dev-autus",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Therapy information links",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        },
+        {
+          "locator": "Therapy information links",
+          "sourceId": "src-autus-edwards-approval-20261001"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-autus-edwards-approval-20261001"
+        },
+        {
+          "locator": "Materials: Polymeric material — Valve leaflets",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        },
+        {
+          "locator": "Timeline: US FDA PMA approval announced for AUTUS",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        },
+        {
+          "locator": "Related trial: AUTUS Valve Pivotal Study",
+          "sourceId": "src-autus-pivotal-registry"
+        },
+        {
+          "locator": "Related trial: AUTUS Valve Pivotal Study",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        },
+        {
+          "locator": "Related trial timeline: AUTUS Valve Pivotal Study",
+          "sourceId": "src-autus-pivotal-registry"
+        },
+        {
+          "locator": "Related trial: AUTUS Valve Continued Access Study",
+          "sourceId": "src-autus-continued-access-registry"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
         "dev-cardioband"
       ],
       "id": "bib-graph-dev-cardioband",
@@ -1016,6 +1113,36 @@
         {
           "locator": "Related trial timeline: TRICAVAL",
           "sourceId": "src-tricaval-registry"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "dev-emboliner"
+      ],
+      "id": "bib-graph-dev-emboliner",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Therapy information links",
+          "sourceId": "src-emboliner-fda-k261715"
+        },
+        {
+          "locator": "Therapy information links",
+          "sourceId": "src-emboliner-commercial-use-20261002"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-emboliner-fda-k261715"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-emboliner-commercial-use-20261002"
+        },
+        {
+          "locator": "Timeline: FDA 510(k) clearance (K261715)",
+          "sourceId": "src-emboliner-fda-k261715"
         }
       ],
       "versionIds": []
@@ -1940,6 +2067,70 @@
         {
           "locator": "News: New JACC analysis tests how robust the randomized evidence for mitral TEER really is",
           "sourceId": "src-graph-3b48ff3f926fde77"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "dev-mitrapatch"
+      ],
+      "id": "bib-graph-dev-mitrapatch",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Therapy information links",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        },
+        {
+          "locator": "Materials: Expanded polytetrafluoroethylene (ePTFE) — Permanent neochord monomembrane",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        },
+        {
+          "locator": "Timeline: FDA 510(k) clearance (K252126)",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "dev-mitria-svs"
+      ],
+      "id": "bib-graph-dev-mitria-svs",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Therapy information links",
+          "sourceId": "src-mitria-t45-portfolio"
+        },
+        {
+          "locator": "Therapy information links",
+          "sourceId": "src-mitria-surgical-abstract-2025"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-mitria-t45-portfolio"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-mitria-t45-partnership"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-mitria-us-expanded-access"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-mitria-surgical-abstract-2025"
+        },
+        {
+          "locator": "Materials: Nitinol — Braided posterior leaflet support implant",
+          "sourceId": "src-mitria-t45-partnership"
         }
       ],
       "versionIds": []
@@ -3278,6 +3469,24 @@
         {
           "locator": "Timeline: WaveCrest CE mark",
           "sourceId": "src-wavecrest-acquisition"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "dig-cardioguide-hf"
+      ],
+      "id": "bib-graph-dig-cardioguide-hf",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Therapy information links",
+          "sourceId": "src-cardiomems-cardioguide-announcement-20261005"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-cardiomems-cardioguide-announcement-20261005"
         }
       ],
       "versionIds": []
@@ -4883,6 +5092,62 @@
         "ver-watchman-flx",
         "ver-watchman-flx-pro"
       ]
+    },
+    {
+      "entityIds": [
+        "dev-mitraclip"
+      ],
+      "id": "bib-mitral-teer-fsi-preprint-20260928",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "v1 Abstract; Numerical Results and Discussion. Coaptation constraint uses a clip-shaped region without modeling clip mechanics; no exact MitraClip generation or clinical-efficacy mapping.",
+          "sourceId": "src-mitral-teer-fsi-preprint-20260928"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "dev-mitria-svs"
+      ],
+      "id": "bib-mitria-clinic-design-2024",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Subvalvular Spacer section, paragraphs 1–3: design concept and initial surgical delivery; historical description, exact generation unresolved",
+          "sourceId": "src-mitria-clinic-design-2024"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "dev-mitria-svs"
+      ],
+      "id": "bib-mitria-surgical-abstract-2025",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Written Abstract, Methods and Results: two surgical patients, with separate follow-up; patient 2 underwent concomitant triple CABG. Exact build not specified; no transcatheter efficacy bridge.",
+          "sourceId": "src-mitria-surgical-abstract-2025"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "dev-mitria-svs"
+      ],
+      "id": "bib-mitria-us-expanded-access",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening non-quotation paragraphs: sponsor reports first US implantation at Cleveland Clinic under Single Patient Expanded Access; procedure date and build not specified",
+          "sourceId": "src-mitria-us-expanded-access"
+        }
+      ],
+      "versionIds": []
     },
     {
       "entityIds": [
@@ -8243,6 +8508,49 @@
         {
           "locator": "Google Patents record header verifies issued patent number USRE50050E1, title, inventor names, and publication date.",
           "sourceId": "src-patent-usre50050e1"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "dev-pascal",
+        "cond-asd"
+      ],
+      "id": "bib-parallel-septal-balloon-case-20260924",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Abstract, Case summary and Discussion; publication metadata. One patient; PASCAL generation and septal-occluder model unspecified. Full text not reviewed.",
+          "sourceId": "src-parallel-septal-balloon-case-20260924"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "cond-as"
+      ],
+      "id": "bib-puerarin-bhv-coating-20260929",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Original Abstract (PubMed API Article/Abstract) and Electronic ArticleDate. Abstract only; rat subcutaneous implants at 12 weeks, not human valve durability or an exact marketed prosthesis.",
+          "sourceId": "src-puerarin-bhv-coating-abstract-20260929"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "dev-evolut"
+      ],
+      "id": "bib-tavr-fsi-preprint-20261002",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "v1 Abstract; Materials and Methods §2.1 (26 mm CoreValve Evolut R specimen); Discussion limitations. Preprint bench evidence, not a released valve design change or an Evolut FX/FX+ clinical result.",
+          "sourceId": "src-tavr-fsi-preprint-20261002"
         }
       ],
       "versionIds": []
@@ -14099,6 +14407,34 @@
     {
       "availability": "reported",
       "basis": "directly_reported",
+      "category": "fit",
+      "context": "September 2026 letter updates the contraindication and adds distance-assessment guidance for original Amulet 9-ACP2 models; product return is not required.",
+      "id": "claim-amulet-pulmonary-artery-labeling-correction-202609",
+      "key": "safety.pulmonaryArteryLabelingCorrection",
+      "label": "Pulmonary artery labeling correction",
+      "limitation": "Exact letter issue day is undisclosed. FDA's labeling decision is August 28; Canada's Type II labeling recall is dated September 10 and published September 25. No Amulet 360 applicability, recall classification in other jurisdictions or adverse-event incidence is inferred. The letter supplements rather than replaces the full IFU.",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.1, opening paragraphs and Actions Abbott is Taking; p.3, Appendix A model list",
+          "sourceId": "src-amulet-ifu-correction-202609"
+        },
+        {
+          "locator": "Decision Date; Approval Order Statement",
+          "sourceId": "src-amulet-fda-p200049s021"
+        },
+        {
+          "locator": "Affected products; Issue; Original published date; Recall class; Recall date",
+          "sourceId": "src-amulet-health-canada-ra82682"
+        }
+      ],
+      "value": "Assess pulmonary artery proximity to the landing zone",
+      "versionId": "ver-amulet"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
       "category": "design",
       "comparisonAttributeId": "repositionable",
       "id": "claim-amulet-repositionable",
@@ -14400,6 +14736,222 @@
       ],
       "value": "Oral; 712 mg (two 356 mg tablets) twice daily",
       "versionId": "ver-attruby"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "access-route",
+      "id": "claim-autus-size-adjustable-access-route",
+      "key": "access-route",
+      "label": "Access",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening paragraph; diameter paragraph",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        }
+      ],
+      "value": "Surgical implantation; subsequent transcatheter balloon dilation",
+      "versionId": "ver-autus-size-adjustable"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "adjustable-diameter",
+      "id": "claim-autus-size-adjustable-adjustable-diameter",
+      "key": "adjustable-diameter",
+      "label": "Adjustable valve diameter",
+      "limitation": "Announcement-level valve diameter description, not discrete marketed sizes or a patient annulus/RVOT eligibility range.",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Diameter paragraph",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        }
+      ],
+      "value": "Approx. 13 mm initial diameter; later expansion up to 22 mm",
+      "versionId": "ver-autus-size-adjustable"
+    },
+    {
+      "availability": "not_yet_reviewed",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "available-sizes",
+      "context": "Reported initial and maximum diameters are not discrete marketed sizes. Exact catalog size/model requires the approved IFU.",
+      "id": "claim-autus-size-adjustable-available-sizes",
+      "key": "available-sizes",
+      "label": "Sizes",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Diameter paragraph (approximately 13 mm initially; expansion up to 22 mm)",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        }
+      ],
+      "versionId": "ver-autus-size-adjustable"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "development-status",
+      "id": "claim-autus-size-adjustable-development-status",
+      "key": "development-status",
+      "label": "Development / safety status",
+      "limitation": "PMA identifier, approval order and approved IFU were not located. No formal decision record with an invented identifier is added.",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening paragraph; PMA pathway paragraph",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        }
+      ],
+      "value": "US FDA PMA approval announced October 1, 2026",
+      "versionId": "ver-autus-size-adjustable"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "device-design",
+      "id": "claim-autus-size-adjustable-device-design",
+      "key": "device-design",
+      "label": "Design",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening paragraph; polymeric-leaflet paragraph",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        }
+      ],
+      "value": "Size-adjustable surgical pulmonary valve with polymeric leaflets",
+      "versionId": "ver-autus-size-adjustable"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "expansion-mechanism",
+      "id": "claim-autus-size-adjustable-expansion-mechanism",
+      "key": "expansion-mechanism",
+      "label": "Expansion",
+      "limitation": "Designed to accommodate growth; expansion experience and durability are limited. It does not grow autonomously.",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Diameter paragraph; final clinical-study paragraph",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        }
+      ],
+      "value": "Postimplant transcatheter balloon expansion",
+      "versionId": "ver-autus-size-adjustable"
+    },
+    {
+      "availability": "not_publicly_disclosed",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "frame-material",
+      "id": "claim-autus-size-adjustable-frame-material",
+      "key": "frame-material",
+      "label": "Frame material",
+      "limitation": "This is missingness in the inspected announcement, not a conclusion about the unavailable IFU or SSED.",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Entire FDA announcement (frame alloy not specified)",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        }
+      ],
+      "versionId": "ver-autus-size-adjustable"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "indication-scope",
+      "context": "Paraphrase of FDA announcement scope; trial ages and eligibility are not substituted for exact approved labeling.",
+      "id": "claim-autus-size-adjustable-indication-scope",
+      "key": "indication-scope",
+      "label": "US indication",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening paragraph",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        }
+      ],
+      "value": "Pediatric congenital pulmonary valve disease; surgical replacement",
+      "versionId": "ver-autus-size-adjustable"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "leaflet-material",
+      "id": "claim-autus-size-adjustable-leaflet-material",
+      "key": "leaflet-material",
+      "label": "Leaflet material",
+      "limitation": "Polymer chemistry is not disclosed in the FDA announcement; no ePTFE or other specific composition inferred.",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Polymeric-leaflet paragraph",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        }
+      ],
+      "value": "Polymeric material",
+      "versionId": "ver-autus-size-adjustable"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "manufacturer",
+      "context": "FDA names Autus Valve Technologies as developer; legal manufacturing-site details are not established here.",
+      "id": "claim-autus-size-adjustable-manufacturer",
+      "key": "manufacturer",
+      "label": "Manufacturer",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Final paragraph naming approval recipient and original developer",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        }
+      ],
+      "value": "Edwards Lifesciences (approval holder)",
+      "versionId": "ver-autus-size-adjustable"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "evidence",
+      "comparisonAttributeId": "pivotal-trials",
+      "context": "Pivotal registry reports 62 actual participants. Continued access has a separate registry record and snapshot. The earlier 11-patient feasibility report is not merged with this cohort.",
+      "id": "claim-autus-size-adjustable-pivotal-trials",
+      "key": "pivotal-trials",
+      "label": "Pivotal trial",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "API protocolSection.identificationModule; descriptionModule; designModule (retrieved 2026-10-07)",
+          "sourceId": "src-autus-pivotal-registry"
+        }
+      ],
+      "value": "AUT-CP-001 / NCT05006404",
+      "versionId": "ver-autus-size-adjustable"
     },
     {
       "availability": "reported",
@@ -14884,6 +15436,26 @@
       ],
       "value": "Single size (fits PA branch 7-15 mm diameter)",
       "versionId": "ver-cardiomems"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "digital",
+      "context": "Abbott's October 5 system-level announcement describes CardioGuide HF and Merlin.net Dynamic Treatment Plan; availability is planned later in 2026.",
+      "id": "claim-cardiomems-cardioguide-patient-access-2026",
+      "key": "cardioguide.patientAccess",
+      "label": "Announced CardioGuide HF patient capabilities",
+      "limitation": "Exact software release and compatible sensor models are not specified. No CM3000 hardware change, autonomous prescribing or incremental clinical-outcome benefit is established. FDA supplement not independently located.",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening non-quotation paragraph; Dynamic Treatment Plan paragraph; planned-availability paragraph; FAQ What is the Dynamic Treatment Plan?",
+          "sourceId": "src-cardiomems-cardioguide-announcement-20261005"
+        }
+      ],
+      "value": "Patient pressure trends and clinician-configured medication updates",
+      "versionId": "ver-cardioguide-hf-announced-2026"
     },
     {
       "availability": "reported",
@@ -16246,6 +16818,122 @@
       ],
       "value": "7 mm internal diameter; 28 mm device length",
       "versionId": "ver-edwards-apture"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "development-status",
+      "context": "FDA K261715 confirms clearance on September 8, 2026. First commercial procedures occurred October 1; release appeared October 2.",
+      "id": "claim-emboliner-epc03-development-status",
+      "key": "development-status",
+      "label": "Development / safety status",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening paragraph; controlled-launch paragraph",
+          "sourceId": "src-emboliner-commercial-use-20261002"
+        }
+      ],
+      "value": "US 510(k)-cleared; controlled commercial launch announced October 2",
+      "versionId": "ver-emboliner-epc03"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "device-design",
+      "id": "claim-emboliner-epc03-device-design",
+      "key": "device-design",
+      "label": "Design",
+      "limitation": "Manufacturer design intent; no superiority or stroke-reduction outcome inferred.",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Second non-quotation paragraph; About Emboline",
+          "sourceId": "src-emboliner-commercial-use-20261002"
+        }
+      ],
+      "value": "Temporary catheter for capture/removal of embolic debris during TAVR",
+      "versionId": "ver-emboliner-epc03"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "exact-version",
+      "id": "claim-emboliner-epc03-exact-version",
+      "key": "exact-version",
+      "label": "Exact product version",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Device Name",
+          "sourceId": "src-emboliner-fda-k261715"
+        }
+      ],
+      "value": "Emboliner EPC-03",
+      "versionId": "ver-emboliner-epc03"
+    },
+    {
+      "availability": "not_applicable",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "implant-material",
+      "context": "Temporary protection adjunct, not a permanent implant; filter/frame composition was not independently verified.",
+      "id": "claim-emboliner-epc03-implant-material",
+      "key": "implant-material",
+      "label": "Permanent implant material",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Device Classification Name (temporary catheter)",
+          "sourceId": "src-emboliner-fda-k261715"
+        }
+      ],
+      "versionId": "ver-emboliner-epc03"
+    },
+    {
+      "availability": "not_yet_reviewed",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "indication-scope",
+      "id": "claim-emboliner-epc03-indication-scope",
+      "key": "indication-scope",
+      "label": "US indication",
+      "limitation": "Sponsor describes TAVR use; regulator record establishes clearance but exact indication restrictions require the unavailable summary/IFU.",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Device Classification Name (exact cleared IFU text unavailable)",
+          "sourceId": "src-emboliner-fda-k261715"
+        }
+      ],
+      "versionId": "ver-emboliner-epc03"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "manufacturer",
+      "id": "claim-emboliner-epc03-manufacturer",
+      "key": "manufacturer",
+      "label": "Manufacturer",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Applicant",
+          "sourceId": "src-emboliner-fda-k261715"
+        }
+      ],
+      "value": "Emboline, Inc.",
+      "versionId": "ver-emboliner-epc03"
     },
     {
       "availability": "reported",
@@ -20604,6 +21292,296 @@
       ],
       "value": "Repositionable before release via Delivery Catheter Handle",
       "versionId": "ver-mitraclip-ntr-xtr"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "access-route",
+      "id": "claim-mitrapatch-access-route",
+      "key": "access-route",
+      "label": "Access",
+      "limitation": "Access incision, beating-heart use and transcatheter compatibility are not established.",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.5 (Summary p.1), Common Name and Device Description",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        }
+      ],
+      "value": "Surgical mitral chordal repair",
+      "versionId": "ver-mitrapatch"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "available-sizes",
+      "id": "claim-mitrapatch-available-sizes",
+      "key": "available-sizes",
+      "label": "Sizes",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.6 (Summary p.2), Product Variants comparison row",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        }
+      ],
+      "value": "One size",
+      "versionId": "ver-mitrapatch"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "development-status",
+      "id": "claim-mitrapatch-development-status",
+      "key": "development-status",
+      "label": "Development / safety status",
+      "limitation": "Historical backfill; current commercial distribution and human trial evidence are not verified.",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.1 clearance letter",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        }
+      ],
+      "value": "US 510(k) clearance December 4, 2025; K252126",
+      "versionId": "ver-mitrapatch"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "device-design",
+      "id": "claim-mitrapatch-device-design",
+      "key": "device-design",
+      "label": "Design",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.5 (Summary p.1), Device Description",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        }
+      ],
+      "value": "Permanent ePTFE monomembrane connecting papillary muscle and leaflet",
+      "versionId": "ver-mitrapatch"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "implant-material",
+      "id": "claim-mitrapatch-implant-material",
+      "key": "implant-material",
+      "label": "Permanent implant material",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.5 (Summary p.1), Device Description",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        }
+      ],
+      "value": "Nonabsorbable expanded polytetrafluoroethylene (ePTFE)",
+      "versionId": "ver-mitrapatch"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "indication-scope",
+      "id": "claim-mitrapatch-indication-scope",
+      "key": "indication-scope",
+      "label": "US indication",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.4 Indications for Use; p.5 (Summary p.1) Indication for Use",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        }
+      ],
+      "value": "Repair/replacement of marginal (primary) chordae tendinae only",
+      "versionId": "ver-mitrapatch"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "manufacturer",
+      "id": "claim-mitrapatch-manufacturer",
+      "key": "manufacturer",
+      "label": "Manufacturer",
+      "observedAt": "2026-10-07",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.5 (Summary p.1), Applicant; p.6 comparison table",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        }
+      ],
+      "value": "Chawla Heart Technologies LLC",
+      "versionId": "ver-mitrapatch"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "access-route",
+      "id": "claim-mitria-svs-access-route",
+      "key": "access-route",
+      "label": "Access",
+      "limitation": "Vascular entry and transseptal route are not specified. The AATS 2025 two-patient abstract describes surgical implantation and is not mapped to this build.",
+      "observedAt": "2026-10-06",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening paragraph; About Mitria Medical, paragraph 1",
+          "sourceId": "src-mitria-t45-partnership"
+        }
+      ],
+      "value": "Transcatheter approach under development",
+      "versionId": "ver-mitria-svs"
+    },
+    {
+      "availability": "not_publicly_disclosed",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "available-sizes",
+      "id": "claim-mitria-svs-available-sizes",
+      "key": "available-sizes",
+      "label": "Sizes",
+      "observedAt": "2026-10-06",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Entire written release, including About Mitria Medical (no implant size range disclosed)",
+          "sourceId": "src-mitria-t45-partnership"
+        }
+      ],
+      "versionId": "ver-mitria-svs"
+    },
+    {
+      "availability": "not_publicly_disclosed",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "delivery-sheath",
+      "id": "claim-mitria-svs-delivery-sheath",
+      "key": "delivery-sheath",
+      "label": "Delivery system",
+      "observedAt": "2026-10-06",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Entire written release, including About Mitria Medical (no delivery profile disclosed)",
+          "sourceId": "src-mitria-t45-partnership"
+        }
+      ],
+      "versionId": "ver-mitria-svs"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "development-status",
+      "id": "claim-mitria-svs-development-status",
+      "key": "development-status",
+      "label": "Development / safety status",
+      "limitation": "Single-patient expanded access is sponsor-reported; no marketing authorization or regulator decision is inferred.",
+      "observedAt": "2026-10-06",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Investigational-device statement immediately before About Mitria Medical",
+          "sourceId": "src-mitria-t45-partnership"
+        }
+      ],
+      "value": "Investigational; not available for commercial sale",
+      "versionId": "ver-mitria-svs"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "device-design",
+      "context": "Intended support and coaptation mechanism in functional MR; sponsor design description, not demonstrated comparative benefit.",
+      "id": "claim-mitria-svs-device-design",
+      "key": "device-design",
+      "label": "Design",
+      "observedAt": "2026-10-06",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "About Mitria Medical, paragraph 1",
+          "sourceId": "src-mitria-t45-partnership"
+        }
+      ],
+      "value": "Nitinol braid supporting the displaced posterior leaflet",
+      "versionId": "ver-mitria-svs"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "implant-material",
+      "id": "claim-mitria-svs-implant-material",
+      "key": "implant-material",
+      "label": "Permanent implant material",
+      "limitation": "Full implant composition, coverings and coatings are not disclosed.",
+      "observedAt": "2026-10-06",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "About Mitria Medical, paragraph 1",
+          "sourceId": "src-mitria-t45-partnership"
+        }
+      ],
+      "value": "Nitinol braid",
+      "versionId": "ver-mitria-svs"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "indication-scope",
+      "context": "Development target rather than an FDA-approved indication; no approval decision is added.",
+      "id": "claim-mitria-svs-indication-scope",
+      "key": "indication-scope",
+      "label": "US indication",
+      "observedAt": "2026-10-06",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "About Mitria Medical, paragraph 1",
+          "sourceId": "src-mitria-t45-partnership"
+        }
+      ],
+      "value": "Intended for secondary / functional MR; investigational",
+      "versionId": "ver-mitria-svs"
+    },
+    {
+      "availability": "not_publicly_disclosed",
+      "basis": "directly_reported",
+      "category": "evidence",
+      "comparisonAttributeId": "pivotal-trials",
+      "id": "claim-mitria-svs-pivotal-trials",
+      "key": "pivotal-trials",
+      "label": "Pivotal trial",
+      "limitation": "No verified SVS registry identifier or pivotal protocol was located in this bounded review.",
+      "observedAt": "2026-10-06",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Entire written release (conference experience described; no pivotal trial identified)",
+          "sourceId": "src-mitria-t45-partnership"
+        }
+      ],
+      "versionId": "ver-mitria-svs"
     },
     {
       "availability": "reported",
@@ -27063,6 +28041,19 @@
       "versionKind": "device"
     },
     {
+      "conditionId": "cond-as",
+      "id": "embolic-protection-devices",
+      "label": "TAVR embolic-protection adjuncts",
+      "mechanism": "Temporary capture and removal of embolic debris",
+      "order": 32,
+      "targetStructure": "Arterial circulation during TAVR",
+      "therapyClass": "Temporary embolic protection during TAVR",
+      "versionIds": [
+        "ver-emboliner-epc03"
+      ],
+      "versionKind": "device"
+    },
+    {
       "conditionId": "cond-hfref",
       "id": "epicardial-restraint",
       "label": "Epicardial restraint",
@@ -27234,7 +28225,8 @@
       "therapyClass": "Artificial chordae replacement",
       "versionIds": [
         "ver-neochord-ds1000",
-        "ver-mi-chord"
+        "ver-mi-chord",
+        "ver-mitrapatch"
       ],
       "versionKind": "device"
     },
@@ -27250,6 +28242,19 @@
         "ver-tendyne",
         "ver-sapien-m3",
         "ver-intrepid"
+      ],
+      "versionKind": "device"
+    },
+    {
+      "conditionId": "cond-mr",
+      "id": "mitral-subvalvular-repair",
+      "label": "Mitral subvalvular repair",
+      "mechanism": "Leaflet support to improve coaptation",
+      "order": 45,
+      "targetStructure": "Mitral posterior leaflet / subvalvular apparatus",
+      "therapyClass": "Subvalvular posterior leaflet support",
+      "versionIds": [
+        "ver-mitria-svs"
       ],
       "versionKind": "device"
     },
@@ -27335,6 +28340,19 @@
       "therapyClass": "Surgical mitral annuloplasty ring",
       "versionIds": [
         "ver-memo-4d-curve"
+      ],
+      "versionKind": "device"
+    },
+    {
+      "conditionId": "cond-pv",
+      "id": "surgical-pulmonary-valves",
+      "label": "Surgical pulmonary valves",
+      "mechanism": "Surgical valve replacement with postimplant balloon expansion when applicable",
+      "order": 31,
+      "targetStructure": "Pulmonary valve / RVOT",
+      "therapyClass": "Surgical pulmonary valve replacement",
+      "versionIds": [
+        "ver-autus-size-adjustable"
       ],
       "versionKind": "device"
     },
@@ -27522,6 +28540,29 @@
         }
       ],
       "summary": "Original US approval of the Amplatzer Amulet LAA Occluder, based on the Amulet IDE Trial vs. WATCHMAN.",
+      "versionIds": [
+        "ver-amulet"
+      ]
+    },
+    {
+      "changeType": "labeling",
+      "date": {
+        "precision": "day",
+        "value": "2026-08-28"
+      },
+      "id": "decision-amulet-p200049s021",
+      "identifier": "P200049/S021",
+      "jurisdiction": "US",
+      "pathway": "PMA",
+      "reviewStatus": "draft",
+      "rootIdentifier": "P200049",
+      "sourceRefs": [
+        {
+          "locator": "Device; PMA/Supplement Number; Decision Date; Supplement Type/Reason; Approval Order Statement",
+          "sourceId": "src-amulet-fda-p200049s021"
+        }
+      ],
+      "summary": "FDA approved a contraindication modification and landing-zone/pulmonary-artery relationship assessment in Amulet's IFU to reduce pulmonary artery injury risk.",
       "versionIds": [
         "ver-amulet"
       ]
@@ -27735,6 +28776,29 @@
       "summary": "510(k) clearance of the ECLIPTIS Left Atrial Appendage Exclusion System as substantially equivalent to the AtriCure AtriClip (K210293).",
       "versionIds": [
         "ver-ecliptis"
+      ]
+    },
+    {
+      "changeType": "initial_authorization",
+      "date": {
+        "precision": "day",
+        "value": "2026-09-08"
+      },
+      "id": "decision-emboliner-k261715",
+      "identifier": "K261715",
+      "jurisdiction": "US",
+      "pathway": "510(k)",
+      "reviewStatus": "draft",
+      "rootIdentifier": "K261715",
+      "sourceRefs": [
+        {
+          "locator": "Device Classification Name; Device Name; Decision Date; Decision (Substantially Equivalent)",
+          "sourceId": "src-emboliner-fda-k261715"
+        }
+      ],
+      "summary": "FDA substantial-equivalence clearance for Emboliner EPC-03, classified as a temporary embolic-protection catheter for transcatheter intracardiac procedures. Exact Indications for Use text not reviewed.",
+      "versionIds": [
+        "ver-emboliner-epc03"
       ]
     },
     {
@@ -28358,6 +29422,29 @@
       "versionIds": [
         "ver-mitraclip-nt",
         "ver-mitraclip-ntr-xtr"
+      ]
+    },
+    {
+      "changeType": "initial_authorization",
+      "date": {
+        "precision": "day",
+        "value": "2025-12-04"
+      },
+      "id": "decision-mitrapatch-k252126",
+      "identifier": "K252126",
+      "jurisdiction": "US",
+      "pathway": "510(k)",
+      "reviewStatus": "draft",
+      "rootIdentifier": "K252126",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.1 clearance letter; p.4 Indications for Use form; p.5 (Summary p.1) Indication for Use",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        }
+      ],
+      "summary": "Substantial-equivalence clearance for marginal (primary) chordae tendinae repair/replacement only.",
+      "versionIds": [
+        "ver-mitrapatch"
       ]
     },
     {
@@ -29266,6 +30353,226 @@
   ],
   "events": [
     {
+      "after": "Health Canada recorded a Type II labeling recall, RA-82682, notifying consignees of pulmonary-artery contraindication and landing-zone assessment changes.",
+      "before": "Amulet's existing contraindication referred generally to interference with adjacent intracardiac or intravascular structures.",
+      "decisionIds": [],
+      "discoveredAt": "2026-10-07",
+      "eventDate": {
+        "precision": "day",
+        "value": "2026-09-10"
+      },
+      "id": "event-amulet-canada-labeling-recall-20260910",
+      "kind": "labeling",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-09-25"
+      },
+      "readoutIds": [],
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Affected products; Issue; Original published date; Recall class; Recall date; Identification number",
+          "sourceId": "src-amulet-health-canada-ra82682"
+        }
+      ],
+      "title": "Canada records an Amulet labeling recall concerning pulmonary artery injury",
+      "uncertainty": "Health Canada explicitly distinguishes this labeling notification from device defectiveness. Canadian classification is not transferred to the US; no global product withdrawal, Amulet 360 scope or adverse-event incidence is inferred.",
+      "versionIds": [
+        "ver-amulet"
+      ],
+      "whyItMatters": "Adds a dated, jurisdiction-specific safety notice for the listed original 9-ACP2 models."
+    },
+    {
+      "after": "FDA approved the labeling change under P200049/S021 on August 28, 2026.",
+      "before": "The existing Amulet IFU described interference with adjacent structures without the specific pulmonary-artery guidance authorized by this supplement.",
+      "decisionIds": [
+        "decision-amulet-p200049s021"
+      ],
+      "discoveredAt": "2026-10-07",
+      "eventDate": {
+        "precision": "day",
+        "value": "2026-08-28"
+      },
+      "id": "event-amulet-fda-labeling-20260828",
+      "kind": "labeling",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-08-28"
+      },
+      "readoutIds": [],
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Device; Decision Date; Supplement Type/Reason; Approval Order Statement; Page Last Updated",
+          "sourceId": "src-amulet-fda-p200049s021"
+        }
+      ],
+      "title": "FDA approves Amulet pulmonary-artery labeling update",
+      "uncertainty": "The FDA page's October 5 update date is separate from its August 28 decision. This is not a new device generation or evidence of Amulet 360 applicability.",
+      "versionIds": [
+        "ver-amulet"
+      ],
+      "whyItMatters": "Provides independent US regulatory confirmation for the pulmonary-artery safety-labeling update."
+    },
+    {
+      "after": "Abbott specified the pulmonary artery and added landing-zone distance-assessment guidance; product return not required.",
+      "before": "The existing contraindication referred generally to interference with intracardiac/intravascular structures.",
+      "decisionIds": [],
+      "discoveredAt": "2026-10-07",
+      "eventDate": {
+        "precision": "month",
+        "value": "2026-09"
+      },
+      "id": "event-amulet-ifu-correction-202609",
+      "kind": "labeling",
+      "publishedAt": {
+        "precision": "month",
+        "value": "2026-09"
+      },
+      "readoutIds": [],
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.1 opening and Actions Abbott is Taking; p.3 Appendix A",
+          "sourceId": "src-amulet-ifu-correction-202609"
+        }
+      ],
+      "title": "Original Amulet labeling correction addresses pulmonary artery injury risk",
+      "uncertainty": "Exact letter day undisclosed; its date remains month precision. Dated News uses the separate Canadian notice's publication date. Appendix A lists original 9-ACP2 models, not Amulet 360. No recall classification is inferred from the letter alone.",
+      "versionIds": [
+        "ver-amulet"
+      ],
+      "whyItMatters": "Preserves a safety-labeling update with its exact original-model scope."
+    },
+    {
+      "after": "FDA announced US PMA approval for pediatric congenital pulmonary valve disease.",
+      "before": "Earlier AUTUS development and study materials described investigational use.",
+      "decisionIds": [],
+      "discoveredAt": "2026-10-07",
+      "eventDate": {
+        "precision": "day",
+        "value": "2026-10-01"
+      },
+      "id": "event-autus-fda-approval-20261001",
+      "kind": "indication",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-10-01"
+      },
+      "readoutIds": [],
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening, diameter, leaflet and clinical-study paragraphs; PMA pathway and approval-recipient paragraphs",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        }
+      ],
+      "title": "FDA announces AUTUS pediatric surgical pulmonary-valve approval",
+      "uncertainty": "PMA identifier and approved IFU not located, so no identifier-bearing decision is fabricated. FDA reports first 60 of 62 patients at six months, three frame fractures, two reduced-leaflet-motion cases without symptoms and two expansions; long-term expansion experience remains limited.",
+      "versionIds": [
+        "ver-autus-size-adjustable"
+      ],
+      "whyItMatters": "Adds a size-adjustable polymeric-leaflet surgical valve with later balloon expansion."
+    },
+    {
+      "after": "The expanded indication includes adults and pediatric patients weighing at least 30 kg with symptomatic obstructive HCM.",
+      "before": "The original US authorization was for adults with symptomatic NYHA II–III obstructive HCM.",
+      "decisionIds": [
+        "decision-camzyos-2026-pediatric"
+      ],
+      "discoveredAt": "2026-10-07",
+      "eventDate": {
+        "precision": "day",
+        "value": "2026-09-30"
+      },
+      "id": "event-camzyos-pediatric-indication-20260930",
+      "kind": "indication",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-09-30"
+      },
+      "readoutIds": [],
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening action paragraph and approved population",
+          "sourceId": "src-camzyos-2026-fda"
+        },
+        {
+          "locator": "Release date and opening approval paragraph",
+          "sourceId": "src-camzyos-2026-announcement"
+        }
+      ],
+      "title": "CAMZYOS US indication expands to pediatric patients weighing at least 30 kg",
+      "uncertainty": "Reuses existing decision-camzyos-2026-pediatric and label records. Weight-based approved population is distinct from SCOUT-HCM trial ages; echocardiography and REMS requirements remain.",
+      "versionIds": [
+        "ver-camzyos"
+      ],
+      "whyItMatters": "Adds the missing dated event and News crosswalk to the existing label-backed Data draft."
+    },
+    {
+      "after": "Announced app capabilities expose patient pressure trends and clinician-configured Dynamic Treatment Plan instructions.",
+      "before": "Abbott described CardioMEMS pressure readings as clinician-accessed information.",
+      "decisionIds": [],
+      "discoveredAt": "2026-10-07",
+      "eventDate": {
+        "precision": "day",
+        "value": "2026-10-05"
+      },
+      "id": "event-cardioguide-hf-announcement-20261005",
+      "kind": "software",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-10-05"
+      },
+      "readoutIds": [],
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening non-quotation paragraph; Dynamic Treatment Plan and planned-availability paragraphs; FAQs",
+          "sourceId": "src-cardiomems-cardioguide-announcement-20261005"
+        }
+      ],
+      "title": "Abbott announces CardioGuide HF patient pressure access and medication updates",
+      "uncertainty": "Manufacturer-reported FDA approval is not independently reconciled to a supplement. Availability is planned later in 2026; exact software build and sensor-model compatibility are unspecified. No sensor redesign or autonomous prescribing inferred.",
+      "versionIds": [
+        "ver-cardioguide-hf-announced-2026"
+      ],
+      "whyItMatters": "Adds patient-facing workflow context to the CardioMEMS monitoring family."
+    },
+    {
+      "after": "Sponsor reported two commercial TAVR procedures October 1 and commencement of a controlled US launch.",
+      "before": "FDA cleared EPC-03 September 8, 2026; commercial use was a separate milestone.",
+      "decisionIds": [
+        "decision-emboliner-k261715"
+      ],
+      "discoveredAt": "2026-10-07",
+      "eventDate": {
+        "precision": "day",
+        "value": "2026-10-01"
+      },
+      "id": "event-emboliner-first-commercial-use-20261001",
+      "kind": "evidence",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-10-02"
+      },
+      "readoutIds": [],
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening non-quotation paragraphs and controlled-launch paragraph",
+          "sourceId": "src-emboliner-commercial-use-20261002"
+        }
+      ],
+      "title": "Emboline reports first US commercial Emboliner procedures",
+      "uncertainty": "Sponsor disclosure is not comparative stroke-prevention evidence or proof of broad access. Release names the Emboliner family without an EPC-03 build identifier; commercial-use evidence stays family-level context for the cleared named system.",
+      "versionIds": [
+        "ver-emboliner-epc03"
+      ],
+      "whyItMatters": "Distinguishes authorization date, procedure date and announcement date."
+    },
+    {
       "after": "Failed transcatheter bioprostheses included for high-or-greater-risk patients.",
       "before": "Previously supported aortic-valve indications.",
       "decisionIds": [
@@ -29330,6 +30637,36 @@
         "ver-feops-heartguide"
       ],
       "whyItMatters": "Digital lineage needs software build and supported implant identity."
+    },
+    {
+      "after": "T45 announced development/operational support and a CEO appointment; sponsor reported six SVS recipients.",
+      "before": "Earlier surgical experience and a US expanded-access implantation had been reported.",
+      "decisionIds": [],
+      "discoveredAt": "2026-10-07",
+      "eventDate": {
+        "precision": "day",
+        "value": "2026-09-29"
+      },
+      "id": "event-mitria-t45-partnership-ceo-20260929",
+      "kind": "evidence",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-09-29"
+      },
+      "readoutIds": [],
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening two paragraphs; non-quotation paragraph beginning To date; investigational-device disclaimer",
+          "sourceId": "src-mitria-t45-partnership"
+        }
+      ],
+      "title": "Mitria partners with T45 Labs to advance investigational SVS",
+      "uncertainty": "Six is an unspecified sponsor-reported cumulative count, not registered enrollment, an exact-generation transcatheter cohort or an efficacy result. Surgical/transcatheter composition, cutoff and device builds are undisclosed; no approval inferred.",
+      "versionIds": [
+        "ver-mitria-svs"
+      ],
+      "whyItMatters": "Records a corporate development milestone for an investigational functional-MR repair concept."
     },
     {
       "after": "The primary imaging endpoint remained inconclusive; complete closure favored simulation as a secondary result.",
@@ -29675,6 +31012,18 @@
     },
     {
       "conditionIds": [
+        "cond-pv"
+      ],
+      "description": "Size-adjustable surgical pulmonary valve for pediatric congenital pulmonary valve disease; subsequent transcatheter balloon expansion is distinct from initial surgical implantation.",
+      "entityIds": [
+        "dev-autus"
+      ],
+      "id": "family-autus",
+      "manufacturer": "Edwards Lifesciences; developed by Autus Valve Technologies",
+      "name": "AUTUS"
+    },
+    {
+      "conditionIds": [
         "cond-pvl"
       ],
       "description": "US off-label PVL use appears in observational datasets; dedicated PVL labeling differs by market.",
@@ -29722,6 +31071,19 @@
       "id": "family-cardioblate-closure",
       "manufacturer": "Medtronic",
       "name": "Cardioblate Closure"
+    },
+    {
+      "conditionIds": [
+        "cond-hfref",
+        "cond-hfpef"
+      ],
+      "description": "Patient-facing companion app for the CardioMEMS system and clinician-configured treatment-plan communication; hardware compatibility and software release identifiers are not specified in the announcement.",
+      "entityIds": [
+        "dig-cardioguide-hf"
+      ],
+      "id": "family-cardioguide-hf",
+      "manufacturer": "Abbott",
+      "name": "CardioGuide HF"
     },
     {
       "conditionIds": [
@@ -29845,6 +31207,18 @@
       "id": "family-edwards-apture",
       "manufacturer": "Edwards Lifesciences",
       "name": "APTURE Transcatheter Shunt System"
+    },
+    {
+      "conditionIds": [
+        "cond-as"
+      ],
+      "description": "Temporary embolic-protection adjunct used during TAVR; the protection device itself does not replace the aortic valve.",
+      "entityIds": [
+        "dev-emboliner"
+      ],
+      "id": "family-emboliner",
+      "manufacturer": "Emboline",
+      "name": "Emboliner"
     },
     {
       "conditionIds": [
@@ -30126,6 +31500,30 @@
       "id": "family-mitraclip",
       "manufacturer": "Abbott",
       "name": "MitraClip"
+    },
+    {
+      "conditionIds": [
+        "cond-mr"
+      ],
+      "description": "Surgical marginal (primary) chordae repair/replacement implant; distinct from Mitria's investigational posterior leaflet spacer for functional MR.",
+      "entityIds": [
+        "dev-mitrapatch"
+      ],
+      "id": "family-mitrapatch",
+      "manufacturer": "Chawla Heart Technologies LLC",
+      "name": "MitraPatch"
+    },
+    {
+      "conditionIds": [
+        "cond-mr"
+      ],
+      "description": "Investigational posterior leaflet support implant for functional mitral regurgitation; contemporary transcatheter development and earlier surgical experience are kept separate.",
+      "entityIds": [
+        "dev-mitria-svs"
+      ],
+      "id": "family-mitria-svs",
+      "manufacturer": "Mitria Medical",
+      "name": "Subvalvular Spacer (SVS)"
     },
     {
       "conditionIds": [
@@ -36551,6 +37949,34 @@
     },
     {
       "access": "public",
+      "id": "src-amulet-fda-p200049s021",
+      "identifier": "P200049/S021",
+      "kind": "regulatory",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-08-28"
+      },
+      "publisher": "FDA",
+      "retrievedAt": "2026-10-07",
+      "title": "Amplatzer Amulet pulmonary-artery labeling supplement — P200049/S021",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P200049S021"
+    },
+    {
+      "access": "public",
+      "id": "src-amulet-health-canada-ra82682",
+      "identifier": "RA-82682",
+      "kind": "regulatory",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-09-25"
+      },
+      "publisher": "Health Canada",
+      "retrievedAt": "2026-10-07",
+      "title": "Amplatzer Amulet Left Atrial Appendage Occluder — labeling recall RA-82682",
+      "url": "https://recalls-rappels.canada.ca/en/alert-recall/amplatzertm-amulettm-left-atrial-appendage-occluder"
+    },
+    {
+      "access": "public",
       "id": "src-amulet-ide-5y-pas",
       "identifier": "P200049/PAS001",
       "kind": "regulatory",
@@ -36634,6 +38060,19 @@
       "retrievedAt": "2026-09-30",
       "title": "Amplatzer Amulet Left Atrial Appendage Occluder Instructions for Use (P200049 IFU)",
       "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049C.pdf"
+    },
+    {
+      "access": "public",
+      "id": "src-amulet-ifu-correction-202609",
+      "kind": "manufacturer",
+      "publishedAt": {
+        "precision": "month",
+        "value": "2026-09"
+      },
+      "publisher": "Abbott Medical",
+      "retrievedAt": "2026-10-07",
+      "title": "Medical Device Correction: Amplatzer Amulet Left Atrial Appendage Occluder",
+      "url": "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/pdf/reports/Customer%20Letter%20-%20Amplatzer%20Amulet%20Left%20Atrial%20Appendage%20Occluder.pdf"
     },
     {
       "access": "public",
@@ -36813,6 +38252,70 @@
     },
     {
       "access": "public",
+      "id": "src-autus-continued-access-registry",
+      "identifier": "NCT07466745",
+      "kind": "registry",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-03-12"
+      },
+      "publisher": "ClinicalTrials.gov / Edwards Lifesciences",
+      "retrievedAt": "2026-10-07",
+      "title": "Autus Valve Continued Access Study (AUT-CP-002)",
+      "url": "https://clinicaltrials.gov/study/NCT07466745"
+    },
+    {
+      "access": "public",
+      "id": "src-autus-edwards-approval-20261001",
+      "kind": "manufacturer",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-10-01"
+      },
+      "publisher": "Edwards Lifesciences",
+      "retrievedAt": "2026-10-07",
+      "title": "Edwards Lifesciences Receives FDA Approval for AUTUS Valve, the First Surgical Pulmonary Valve for Pediatric Patients",
+      "url": "https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Receives-FDA-Approval-for-AUTUS-Valve-the-First-Surgical-Pulmonary-Valve-for-Pediatric-Patients/default.aspx"
+    },
+    {
+      "access": "public",
+      "id": "src-autus-edwards-study-page",
+      "identifier": "PP--US-13323 v1.0",
+      "kind": "manufacturer",
+      "publisher": "Edwards Lifesciences",
+      "retrievedAt": "2026-10-07",
+      "title": "AUTUS size-adjustable valve — continued-access study overview",
+      "url": "https://www.edwards.com/healthcare-professionals/products-services/autus-size-adjustable-valve"
+    },
+    {
+      "access": "public",
+      "id": "src-autus-fda-announcement-20261001",
+      "kind": "regulatory",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-10-01"
+      },
+      "publisher": "FDA",
+      "retrievedAt": "2026-10-07",
+      "title": "FDA Approves First Heart Valve Designed to Grow with Children",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children"
+    },
+    {
+      "access": "public",
+      "id": "src-autus-pivotal-registry",
+      "identifier": "NCT05006404",
+      "kind": "registry",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2021-08-16"
+      },
+      "publisher": "ClinicalTrials.gov / Edwards Lifesciences",
+      "retrievedAt": "2026-10-07",
+      "title": "Autus Valve Pivotal Study (AUT-CP-001)",
+      "url": "https://clinicaltrials.gov/study/NCT05006404"
+    },
+    {
+      "access": "public",
       "citation": {
         "authors": [
           "Güner, A.",
@@ -36979,6 +38482,20 @@
     },
     {
       "access": "public",
+      "id": "src-cardio-ttransform-stabilizer-analysis-2026",
+      "identifier": "DOI:10.1038/s41591-026-04670-6",
+      "kind": "publication",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-08-30"
+      },
+      "publisher": "Nature Medicine / UCL Discovery",
+      "retrievedAt": "2026-10-07",
+      "title": "Eplontersen with and without background transthyretin stabilizers in transthyretin amyloid cardiomyopathy: secondary analysis of a phase 3, randomized controlled trial",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10230315/"
+    },
+    {
+      "access": "public",
       "citation": {
         "authors": [
           "Maisano, F.",
@@ -37043,6 +38560,19 @@
       "retrievedAt": "2026-09-27",
       "title": "Cardioblate Closure clinical trial NCT00841529",
       "url": "https://clinicaltrials.gov/study/NCT00841529"
+    },
+    {
+      "access": "public",
+      "id": "src-cardiomems-cardioguide-announcement-20261005",
+      "kind": "manufacturer",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-10-05"
+      },
+      "publisher": "Abbott",
+      "retrievedAt": "2026-10-07",
+      "title": "Abbott receives FDA approval for new CardioMEMS HF System capabilities that help patients engage in the care of their heart condition",
+      "url": "https://abbott.mediaroom.com/2026-10-05-Abbott-receives-FDA-approval-for-new-CardioMEMS-HF-System-capabilities-that-help-patients-engage-in-the-care-of-their-heart-condition"
     },
     {
       "access": "public",
@@ -37373,6 +38903,20 @@
     },
     {
       "access": "public",
+      "id": "src-echodino-preprint-v2-20261007",
+      "identifier": "arXiv:2610.05603v2",
+      "kind": "publication",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-10-07"
+      },
+      "publisher": "arXiv / Cheng et al.",
+      "retrievedAt": "2026-10-07",
+      "title": "EchoDino: A pediatric foundation model for transferable echocardiographic analysis across the lifespan",
+      "url": "https://arxiv.org/abs/2610.05603v2"
+    },
+    {
+      "access": "public",
       "id": "src-ecliptis-510k",
       "identifier": "K254232",
       "kind": "regulatory",
@@ -37434,6 +38978,33 @@
       "retrievedAt": "2026-10-04",
       "title": "Edwards SAPIEN 3 Ultra Transcatheter Heart Valve Instructions for Use",
       "url": "https://eifu.edwards.com/eifu/5970f1a946e0fb00015e5f4c/DOC-0190518A.pdf"
+    },
+    {
+      "access": "public",
+      "id": "src-emboliner-commercial-use-20261002",
+      "kind": "manufacturer",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-10-02"
+      },
+      "publisher": "Emboline",
+      "retrievedAt": "2026-10-07",
+      "title": "Emboline Announces First U.S. Commercial Use of the Emboliner Embolic Protection System",
+      "url": "https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html"
+    },
+    {
+      "access": "public",
+      "id": "src-emboliner-fda-k261715",
+      "identifier": "K261715",
+      "kind": "regulatory",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-09-08"
+      },
+      "publisher": "FDA",
+      "retrievedAt": "2026-10-07",
+      "title": "Emboliner Embolic Protection System (EPC-03) — FDA 510(k) record",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715"
     },
     {
       "access": "public",
@@ -42035,6 +43606,96 @@
     },
     {
       "access": "public",
+      "id": "src-mitral-teer-fsi-preprint-20260928",
+      "identifier": "arXiv:2609.34209v1",
+      "kind": "publication",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-09-28"
+      },
+      "publisher": "arXiv / Kim et al.",
+      "retrievedAt": "2026-10-07",
+      "title": "Immersogeometric fluid-structure interaction modeling of the human mitral valve and transcatheter edge-to-edge repair",
+      "url": "https://arxiv.org/abs/2609.34209v1"
+    },
+    {
+      "access": "public",
+      "id": "src-mitrapatch-fda-k252126",
+      "identifier": "K252126",
+      "kind": "regulatory",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2025-12-04"
+      },
+      "publisher": "FDA / Chawla Heart Technologies",
+      "retrievedAt": "2026-10-07",
+      "title": "MitraPatch Mitral Valve Repair System — K252126 clearance and 510(k) summary",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252126.pdf"
+    },
+    {
+      "access": "public",
+      "id": "src-mitria-clinic-design-2024",
+      "kind": "technical",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2024-07-11"
+      },
+      "publisher": "Cleveland Clinic",
+      "retrievedAt": "2026-10-06",
+      "title": "Transforming Cardiovascular Care: Three of the Latest Innovations",
+      "url": "https://consultqd.clevelandclinic.org/transforming-cardiovascular-care-three-of-the-latest-innovations"
+    },
+    {
+      "access": "public",
+      "id": "src-mitria-surgical-abstract-2025",
+      "identifier": "AATS Mitral Conclave MC83",
+      "kind": "publication",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2025-12-12"
+      },
+      "publisher": "American Association for Thoracic Surgery",
+      "retrievedAt": "2026-10-06",
+      "title": "MC83. Sub-Valvular Spacer Implant for Functional Mitral Regurgitation: A Novel Surgical Approach",
+      "url": "https://www.aats.org/resources/sub-valvular-spacer-implant-fo-11413"
+    },
+    {
+      "access": "public",
+      "id": "src-mitria-t45-partnership",
+      "kind": "manufacturer",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-09-29"
+      },
+      "publisher": "T45 Labs",
+      "retrievedAt": "2026-10-06",
+      "title": "Mitria Medical Partners with T45 Labs to Advance Novel Mitral Valve Repair Therapy",
+      "url": "https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html"
+    },
+    {
+      "access": "public",
+      "id": "src-mitria-t45-portfolio",
+      "kind": "manufacturer",
+      "publisher": "T45 Labs",
+      "retrievedAt": "2026-10-06",
+      "title": "Mitria Medical — T45 Labs portfolio",
+      "url": "https://t45labs.com/mitria-medical/"
+    },
+    {
+      "access": "public",
+      "id": "src-mitria-us-expanded-access",
+      "kind": "manufacturer",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-03-05"
+      },
+      "publisher": "Mitria Medical, Inc.",
+      "retrievedAt": "2026-10-06",
+      "title": "Mitria Medical Announces First Use of Novel Mitral Valve Repair Device in U.S. Under Single Patient Expanded Access",
+      "url": "https://www.prnewswire.com/news-releases/mitria-medical-announces-first-use-of-novel-mitral-valve-repair-device-in-us-under-single-patient-expanded-access-302704666.html"
+    },
+    {
+      "access": "public",
       "id": "src-myqorzo-fda-overview",
       "identifier": "NDA 219083",
       "kind": "regulatory",
@@ -42209,6 +43870,20 @@
       "retrievedAt": "2026-10-03",
       "title": "ONPATTRO (patisiran) prescribing information",
       "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e87ec36f-b4b4-49d4-aea4-d4ffb09b0970"
+    },
+    {
+      "access": "public",
+      "id": "src-parallel-septal-balloon-case-20260924",
+      "identifier": "PMID:42782237; DOI:10.1016/j.jaccas.2026.110445",
+      "kind": "publication",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-09-24"
+      },
+      "publisher": "JACC Case Reports / Radhakrishna et al.",
+      "retrievedAt": "2026-10-07",
+      "title": "Parallel Septal Balloon Occlusion for Acute Right-to-Left Shunt During Mitral Transcatheter Edge-to-Edge Repair",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42782237/"
     },
     {
       "access": "public",
@@ -46173,6 +47848,20 @@
     },
     {
       "access": "public",
+      "id": "src-puerarin-bhv-coating-abstract-20260929",
+      "identifier": "PMID:42810482; DOI:10.1016/j.actbio.2026.09.046",
+      "kind": "publication",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-09-29"
+      },
+      "publisher": "Acta Biomaterialia / Feng et al.",
+      "retrievedAt": "2026-10-07",
+      "title": "Multifunctional ROS-responsive bioprosthetic heart valves armored with a puerarin-loaded artificial-plasma hydrogel coating for concurrent thromboresistance and immunomodulation",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42810482/"
+    },
+    {
+      "access": "public",
       "citation": {
         "authors": [
           "Onorato, E. M.",
@@ -46607,6 +48296,20 @@
       "retrievedAt": "2026-09-28",
       "title": "3-Year Clinical Outcomes Comparing the Amulet vs Watchman FLX for Left Atrial Appendage Closure in Patients With Atrial Fibrillation",
       "url": "https://www.jacc.org/doi/10.1016/j.jacc.2025.03.535"
+    },
+    {
+      "access": "public",
+      "id": "src-tavr-fsi-preprint-20261002",
+      "identifier": "arXiv:2610.03297v1",
+      "kind": "publication",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-10-02"
+      },
+      "publisher": "arXiv / Lee et al.",
+      "retrievedAt": "2026-10-07",
+      "title": "Experimental Bench Validation of a Computational Fluid-Structure Interaction Model of Transcatheter Aortic Valve Dynamics",
+      "url": "https://arxiv.org/abs/2610.03297v1"
     },
     {
       "access": "public",
@@ -47684,11 +49387,25 @@
         "cmd-devices",
         "transcatheter-annuloplasty",
         "surgical-mitral-annuloplasty",
-        "surgical-tricuspid-annuloplasty"
+        "surgical-tricuspid-annuloplasty",
+        "surgical-pulmonary-valves",
+        "mitral-chordal-reconstruction",
+        "mitral-subvalvular-repair"
       ],
       "id": "access-route",
       "label": "Access",
       "order": 100,
+      "scope": "version_wide",
+      "section": "Delivery & sizing",
+      "valueType": "text"
+    },
+    {
+      "categoryIds": [
+        "surgical-pulmonary-valves"
+      ],
+      "id": "adjustable-diameter",
+      "label": "Adjustable valve diameter",
+      "order": 110,
       "scope": "version_wide",
       "section": "Delivery & sizing",
       "valueType": "text"
@@ -47756,7 +49473,10 @@
         "cmd-devices",
         "transcatheter-annuloplasty",
         "surgical-mitral-annuloplasty",
-        "surgical-tricuspid-annuloplasty"
+        "surgical-tricuspid-annuloplasty",
+        "surgical-pulmonary-valves",
+        "mitral-chordal-reconstruction",
+        "mitral-subvalvular-repair"
       ],
       "id": "available-sizes",
       "label": "Sizes",
@@ -47805,7 +49525,8 @@
         "interatrial-shunts",
         "hf-pressure-sensors",
         "cmd-devices",
-        "transcatheter-annuloplasty"
+        "transcatheter-annuloplasty",
+        "mitral-subvalvular-repair"
       ],
       "id": "delivery-sheath",
       "label": "Delivery system",
@@ -47834,7 +49555,10 @@
         "epicardial-restraint",
         "durable-mcs",
         "hfref-drugs",
-        "hfpef-drugs"
+        "hfpef-drugs",
+        "surgical-pulmonary-valves",
+        "embolic-protection-devices",
+        "mitral-subvalvular-repair"
       ],
       "id": "development-status",
       "label": "Development / safety status",
@@ -47864,7 +49588,10 @@
         "epicardial-restraint",
         "durable-mcs",
         "surgical-mitral-annuloplasty",
-        "surgical-tricuspid-annuloplasty"
+        "surgical-tricuspid-annuloplasty",
+        "surgical-pulmonary-valves",
+        "embolic-protection-devices",
+        "mitral-subvalvular-repair"
       ],
       "id": "device-design",
       "label": "Design",
@@ -47895,7 +49622,8 @@
         "heterotopic-caval-valves",
         "lv-restoration",
         "epicardial-restraint",
-        "durable-mcs"
+        "durable-mcs",
+        "embolic-protection-devices"
       ],
       "id": "exact-version",
       "label": "Exact product version",
@@ -47910,7 +49638,8 @@
         "aortic-regurgitation-tavr",
         "pulmonary-valves",
         "mitral-replacement",
-        "tricuspid-replacement"
+        "tricuspid-replacement",
+        "surgical-pulmonary-valves"
       ],
       "id": "expansion-mechanism",
       "label": "Expansion",
@@ -47978,7 +49707,8 @@
         "cmd-devices",
         "transcatheter-annuloplasty",
         "surgical-mitral-annuloplasty",
-        "surgical-tricuspid-annuloplasty"
+        "surgical-tricuspid-annuloplasty",
+        "surgical-pulmonary-valves"
       ],
       "id": "frame-material",
       "label": "Frame material",
@@ -48026,7 +49756,9 @@
         "heterotopic-caval-valves",
         "lv-restoration",
         "epicardial-restraint",
-        "durable-mcs"
+        "durable-mcs",
+        "embolic-protection-devices",
+        "mitral-subvalvular-repair"
       ],
       "id": "implant-material",
       "label": "Permanent implant material",
@@ -48065,7 +49797,10 @@
         "epicardial-restraint",
         "durable-mcs",
         "surgical-mitral-annuloplasty",
-        "surgical-tricuspid-annuloplasty"
+        "surgical-tricuspid-annuloplasty",
+        "surgical-pulmonary-valves",
+        "embolic-protection-devices",
+        "mitral-subvalvular-repair"
       ],
       "id": "indication-scope",
       "label": "US indication",
@@ -48091,7 +49826,8 @@
         "aortic-regurgitation-tavr",
         "pulmonary-valves",
         "mitral-replacement",
-        "tricuspid-replacement"
+        "tricuspid-replacement",
+        "surgical-pulmonary-valves"
       ],
       "id": "leaflet-material",
       "label": "Leaflet material",
@@ -48122,7 +49858,9 @@
         "epicardial-restraint",
         "durable-mcs",
         "surgical-mitral-annuloplasty",
-        "surgical-tricuspid-annuloplasty"
+        "surgical-tricuspid-annuloplasty",
+        "surgical-pulmonary-valves",
+        "embolic-protection-devices"
       ],
       "id": "manufacturer",
       "label": "Manufacturer",
@@ -48184,7 +49922,9 @@
         "heterotopic-caval-valves",
         "lv-restoration",
         "epicardial-restraint",
-        "durable-mcs"
+        "durable-mcs",
+        "surgical-pulmonary-valves",
+        "mitral-subvalvular-repair"
       ],
       "id": "pivotal-trials",
       "label": "Pivotal trial",
@@ -48414,6 +50154,50 @@
       ],
       "versionIds": [],
       "versionMapping": "unclear"
+    },
+    {
+      "design": "Prospective, single-arm, open-label multicenter device study",
+      "entityId": "trial-autus-continued-access",
+      "familyIds": [
+        "family-autus"
+      ],
+      "id": "evidence-autus-continued-access",
+      "name": "AUTUS Valve Continued Access Study",
+      "nctId": "NCT07466745",
+      "population": "Pediatric patients aged 18 months–16 years requiring surgical pulmonary valve replacement; registry eligibility, not approved-label scope.",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Official API protocolSection.identificationModule; descriptionModule; designModule; eligibilityModule (retrieved 2026-10-07). Named AUTUS device; no exact catalog model or older EFS mapping inferred.",
+          "sourceId": "src-autus-continued-access-registry"
+        }
+      ],
+      "versionIds": [
+        "ver-autus-size-adjustable"
+      ],
+      "versionMapping": "exact"
+    },
+    {
+      "design": "Prospective, single-arm, open-label multicenter device study",
+      "entityId": "trial-autus-pivotal",
+      "familyIds": [
+        "family-autus"
+      ],
+      "id": "evidence-autus-pivotal",
+      "name": "AUTUS Valve Pivotal Study",
+      "nctId": "NCT05006404",
+      "population": "Pediatric patients aged 18 months–16 years requiring surgical pulmonary valve replacement; registry eligibility, not approved-label scope.",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Official API protocolSection.identificationModule; descriptionModule; designModule; eligibilityModule (retrieved 2026-10-07). Named AUTUS device; no exact catalog model or older EFS mapping inferred.",
+          "sourceId": "src-autus-pivotal-registry"
+        }
+      ],
+      "versionIds": [
+        "ver-autus-size-adjustable"
+      ],
+      "versionMapping": "exact"
     },
     {
       "design": "International randomized comparison of WATCHMAN FLX left atrial appendage closure with NOAC therapy",
@@ -48801,6 +50585,46 @@
     {
       "enrollment": {
         "basis": "estimated",
+        "scope": "Continued-access study target; not actual enrollment",
+        "value": 36
+      },
+      "id": "snapshot-autus-cas-20261007",
+      "note": "Actual start July 27, 2026; estimated primary completion October 30, 2027 and study completion April 30, 2036. No posted results. Snapshot describes the last posted registry revision, not live site-level enrollment.",
+      "observedAt": "2026-10-07",
+      "registryUpdatedAt": "2026-08-10",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "API protocolSection.statusModule; designModule.enrollmentInfo; hasResults (retrieved 2026-10-07)",
+          "sourceId": "src-autus-continued-access-registry"
+        }
+      ],
+      "status": "Recruiting",
+      "trialId": "evidence-autus-continued-access"
+    },
+    {
+      "enrollment": {
+        "basis": "actual",
+        "scope": "Total registered pivotal-study enrollment",
+        "value": 62
+      },
+      "id": "snapshot-autus-pivotal-20261007",
+      "note": "Last update submitted September 24 and posted September 28. Primary completion is actual August 24, 2026; estimated study completion February 5, 2036. Registry has no posted results. FDA summary first-60 six-month data is a different analysis denominator.",
+      "observedAt": "2026-10-07",
+      "registryUpdatedAt": "2026-09-28",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "API protocolSection.statusModule; designModule.enrollmentInfo; hasResults (retrieved 2026-10-07)",
+          "sourceId": "src-autus-pivotal-registry"
+        }
+      ],
+      "status": "Active, not recruiting",
+      "trialId": "evidence-autus-pivotal"
+    },
+    {
+      "enrollment": {
+        "basis": "estimated",
         "scope": "registered target",
         "value": 400
       },
@@ -48878,7 +50702,7 @@
       "trialId": "evidence-tricaval"
     }
   ],
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-07",
   "versions": [
     {
       "clinicalRole": "treats",
@@ -49117,6 +50941,22 @@
     },
     {
       "clinicalRole": "treats",
+      "familyId": "family-autus",
+      "graphEntityId": "dev-autus",
+      "id": "ver-autus-size-adjustable",
+      "kind": "device",
+      "name": "AUTUS Size-Adjustable Valve",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening paragraph; diameter and leaflet paragraphs; PMA pathway and approval-recipient paragraphs",
+          "sourceId": "src-autus-fda-announcement-20261001"
+        }
+      ],
+      "summary": "FDA announced US PMA approval October 1, 2026. Polymeric-leaflet surgical pulmonary valve designed for later balloon expansion. Exact model, frame alloy, polymer chemistry and approved IFU remain unverified."
+    },
+    {
+      "clinicalRole": "treats",
       "familyId": "family-avp3-pvl",
       "graphEntityId": "dev-amplatzer-pvl-plug-iii",
       "id": "ver-avp3-pvl",
@@ -49200,6 +51040,23 @@
         }
       ],
       "summary": "Historical investigational LAA closure prototype; the registered Phase 2 trial terminated and current availability is unverified."
+    },
+    {
+      "clinicalRole": "monitors",
+      "digitalSubtype": "monitoring",
+      "familyId": "family-cardioguide-hf",
+      "graphEntityId": "dig-cardioguide-hf",
+      "id": "ver-cardioguide-hf-announced-2026",
+      "kind": "digital",
+      "name": "CardioGuide HF (announced 2026; build unspecified)",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Opening non-quotation paragraph; Dynamic Treatment Plan and planned-availability paragraphs; CardioGuide HF and Dynamic Treatment Plan FAQs",
+          "sourceId": "src-cardiomems-cardioguide-announcement-20261005"
+        }
+      ],
+      "summary": "Abbott describes patient access to pulmonary artery pressure trends and clinician-configured medication updates, with availability planned later in 2026. Exact software release and decision-specific FDA record are not verified."
     },
     {
       "clinicalRole": "monitors",
@@ -49356,6 +51213,27 @@
         }
       ],
       "summary": "Bare-nitinol left atrium-to-coronary-sinus shunt delivered by percutaneous atriotomy; investigational, evaluated in the ALT-FLOW program."
+    },
+    {
+      "clinicalRole": "manages",
+      "familyId": "family-emboliner",
+      "graphEntityId": "dev-emboliner",
+      "id": "ver-emboliner-epc03",
+      "kind": "device",
+      "model": "EPC-03",
+      "name": "Emboliner Embolic Protection System (EPC-03)",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Device Name; 510(k) Number; Decision Date",
+          "sourceId": "src-emboliner-fda-k261715"
+        },
+        {
+          "locator": "Opening non-quotation paragraphs; controlled-launch paragraph. Release gives family name, not a new EPC-03 build.",
+          "sourceId": "src-emboliner-commercial-use-20261002"
+        }
+      ],
+      "summary": "FDA lists EPC-03 under K261715, cleared September 8, 2026. Emboline announced first US commercial procedures on October 1 and a controlled launch. Exact materials, profile and cleared IFU wording await review."
     },
     {
       "clinicalRole": "treats",
@@ -49866,6 +51744,38 @@
         }
       ],
       "summary": "A model group as named in S028; individual size configurations still need extraction."
+    },
+    {
+      "clinicalRole": "treats",
+      "familyId": "family-mitrapatch",
+      "graphEntityId": "dev-mitrapatch",
+      "id": "ver-mitrapatch",
+      "kind": "device",
+      "name": "MitraPatch Mitral Valve Repair System",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.1 clearance letter; p.5 (Summary p.1), Indication for Use and Device Description; p.6 comparison table",
+          "sourceId": "src-mitrapatch-fda-k252126"
+        }
+      ],
+      "summary": "US 510(k)-cleared ePTFE monomembrane implant for marginal (primary) chordae repair/replacement. One implant connects papillary muscle and leaflet; clearance is distinct from proven comparative benefit or current distribution."
+    },
+    {
+      "clinicalRole": "treats",
+      "familyId": "family-mitria-svs",
+      "graphEntityId": "dev-mitria-svs",
+      "id": "ver-mitria-svs",
+      "kind": "device",
+      "name": "Subvalvular Spacer (SVS; investigational design)",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "About Mitria Medical, paragraph 1; investigational-device statement immediately before that heading",
+          "sourceId": "src-mitria-t45-partnership"
+        }
+      ],
+      "summary": "Nitinol braid designed to support the displaced posterior leaflet in functional MR. The September 2026 disclosure names no model or generation; earlier surgical cases are family-level evidence, not outcomes for this exact build."
     },
     {
       "clinicalRole": "treats",
