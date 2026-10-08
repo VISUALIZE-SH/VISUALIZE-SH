@@ -25,6 +25,8 @@ evidence is loaded from the static `public/intelligence.json` payload.
 
 ## Quick start
 
+Use Node 20.19+ or 22.12+; GitHub Actions uses Node 22.
+
 ```bash
 npm ci
 npm run dev          # builds data, then starts Vite at http://localhost:5173

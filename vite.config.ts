@@ -13,24 +13,31 @@ export default defineConfig(({ command, isPreview }) => ({
   plugins: [react()],
   server: { port: 5173, strictPort: true },
   build: {
+    // Retain Vite 6's browser floor when changing bundlers.
+    target: ['es2020', 'edge88', 'firefox78', 'chrome87', 'safari14'],
     // The cytoscape core (+fcose) is ~570 kB minified and can't be trimmed without
     // dropping the library; it's a single cached chunk, so raise the warning floor
     // above it to keep build logs clean rather than flagging an unavoidable size.
     chunkSizeWarningLimit: 700,
     // Keep the heavy, rarely-changing graph and force libraries in cached
     // chunks; the workspace views are lazy-loaded by App.tsx.
-    rollupOptions: {
+    rolldownOptions: {
       output: {
-        manualChunks(id) {
-          if (!id.includes('node_modules')) return
-          if (id.includes('react') || id.includes('scheduler')) return 'react'
-          if (
-            id.includes('cytoscape') ||
-            id.includes('cose-base') ||
-            id.includes('layout-base')
-          )
-            return 'cytoscape'
-          if (id.includes('d3-') || id.includes('simplex-noise')) return 'force'
+        codeSplitting: {
+          groups: [{
+            debugName: 'libraries',
+            name(id) {
+              if (!id.includes('node_modules')) return
+              if (id.includes('react') || id.includes('scheduler')) return 'react'
+              if (
+                id.includes('cytoscape') ||
+                id.includes('cose-base') ||
+                id.includes('layout-base')
+              )
+                return 'cytoscape'
+              if (id.includes('d3-') || id.includes('simplex-noise')) return 'force'
+            },
+          }],
         },
       },
     },
