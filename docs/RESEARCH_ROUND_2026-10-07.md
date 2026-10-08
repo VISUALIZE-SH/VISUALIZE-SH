@@ -130,3 +130,8 @@ October 7 retrieval date, so compiled bibliography metadata does not infer a
 retrieval date from the August publication date. This adds citation metadata only;
 the clinical interpretation remains limited to the reviewed UCL accepted-version
 abstract and does not imply review of the publisher's full text.
+
+Live verification after publication also found that ordinary page reloads could
+reuse the previous JSON payload for the host's ten-minute cache lifetime. The app
+now revalidates graph and intelligence JSON on load using `cache: 'no-cache'`,
+preserving conditional caching while checking for newly published data.
