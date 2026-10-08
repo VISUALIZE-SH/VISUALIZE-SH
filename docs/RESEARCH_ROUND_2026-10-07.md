@@ -1,10 +1,12 @@
 # October 7, 2026 research handoff
 
 [WOR-26](https://linear.app/workspace-visualize-sh/issue/WOR-26/research-october-7-developments-and-update-news-atlas-and-data-drafts)
-tracks the research deliverable in `P-WOR-1`. All new factual records remain
-**draft**. Curator signoff remains under WOR-10. The owner approved an origin push
-after reviewing the local handoff. This approval preserves draft status and does
-not authorize publication or delivery. Authored article drafts remain unchanged.
+tracks the research deliverable in `P-WOR-1`. At the October 7 handoff, all new
+factual records were **draft** and the owner approved an origin push that
+preserved draft status. On October 8, the owner reviewed and approved publication
+of this round's 12 News items under WOR-10; those items are now **reviewed**.
+Atlas/Data evidence and unrelated held News retain their existing review states.
+Authored article drafts remain unchanged. Newsletter delivery is not authorized.
 
 ## Scope and deliverables
 
@@ -21,7 +23,8 @@ snapshots, 8 events and 7 bibliography records. Existing Mitria and CAMZYOS
 records were reused without rewriting them. Atlas and Data receive the same
 version/source-linked evidence; the graph payload retains draft markers.
 Draft News is intentionally excluded from the normal public News feed until
-curator promotion. The research branch includes the existing Mitria graph/catalog
+curator promotion; the 12 approved items now compile into that feed. The research
+branch includes the existing Mitria graph/catalog
 prerequisite from WOR-25, which was not yet committed. Other earlier local edits
 are outside this push; its JSON payloads are regenerated from the branch's YAML.
 
@@ -93,5 +96,37 @@ Validation: `npm run build:data`, `npm run validate:local`,
 confirms every pre-existing News/company/therapy/trial and pilot evidence record
 is preserved, and `data/editorial-issues.yaml` is byte-identical. The owner's
 other pre-existing working-tree changes remain in place. No article drafts were
-edited. The owner approved origin push; curator promotion and publication remain
-separate decisions.
+edited. The initial origin push preserved draft status; the October 8 News
+approval and promotion are recorded below.
+
+## October 8 News approval
+
+The owner explicitly reviewed and approved the new research News items in this
+chat on October 8, 2026, requesting that they appear on the live News page.
+[WOR-10](https://linear.app/workspace-visualize-sh/issue/WOR-10/complete-curator-review-of-draft-catalog-claims-and-held-news)
+records the decision. Only `reviewStatus` changes from `draft` to `reviewed` for
+the following 12 IDs; their copy, dates, documentary citations and limitations
+above are preserved:
+
+- `news-2026-10-05-cardiomems-cardioguide-patient-access`
+- `news-2026-10-04-echodino-pediatric-echo-foundation-model`
+- `news-2026-10-02-emboliner-first-us-commercial-use`
+- `news-2026-10-02-tavr-fsi-bench-validation`
+- `news-2026-10-01-autus-fda-approval`
+- `news-2026-09-30-camzyos-pediatric-indication-expansion`
+- `news-2026-09-29-mitria-t45-svs-partnership`
+- `news-2026-09-29-puerarin-artificial-plasma-bhv-coating`
+- `news-2026-09-28-immersogeometric-mitral-teer-model`
+- `news-2026-09-25-amulet-canada-labeling-notice`
+- `news-2026-09-24-parallel-septal-balloon-occlusion-mteer-case`
+- `news-2026-08-30-cardio-ttransform-stabilizer-subgroup`
+
+The newest approved story is October 5; the August 30 backfill retains its actual
+publication date. Forty-six unrelated held News items remain draft. This approval
+does not promote Atlas/Data claims or authored articles, or authorize a send.
+
+The backfill's existing DOI citation has an explicit source record carrying the
+October 7 retrieval date, so compiled bibliography metadata does not infer a
+retrieval date from the August publication date. This adds citation metadata only;
+the clinical interpretation remains limited to the reviewed UCL accepted-version
+abstract and does not imply review of the publisher's full text.
