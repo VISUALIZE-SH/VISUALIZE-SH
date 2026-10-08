@@ -4,7 +4,8 @@ import type { GraphData } from '../types/entities'
 // BASE_URL makes the path correct under a GitHub Pages sub-path as well as in dev.
 export async function loadGraph(): Promise<GraphData> {
   // Revalidate public data so a reload sees newly reviewed News after deployment.
-  const res = await fetch(`${import.meta.env.BASE_URL}graph.json`, { cache: 'no-cache' })
+  const requestOptions = { method: 'GET', cache: 'no-cache' as const }
+  const res = await fetch(`${import.meta.env.BASE_URL}graph.json`, requestOptions)
   if (!res.ok) {
     throw new Error(`Failed to load graph data (HTTP ${res.status})`)
   }
