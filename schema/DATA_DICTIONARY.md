@@ -290,6 +290,16 @@ Note: the therapy↔trial and condition↔trial links are recorded **only on the
 trial** (`therapies`, `conditions`). Do not add a reciprocal list on therapies or
 conditions — the app derives the reverse direction automatically.
 
+Procedure-specific management trials belong in the graph when they directly
+inform the outcomes or care of a structural heart procedure, even without a
+device-specific comparison. Link them to the general `proc-…` node and relevant
+condition. Explain the tested strategy and population in `outcomeSummary`, and
+state in `curation.notes` that the procedure edge identifies the care setting.
+For example, ACASA-TAVI links to `proc-tavi` as post-TAVI antithrombotic evidence;
+that edge does not attribute its results to a particular valve or establish the
+efficacy of TAVI itself. Keep device or drug-specific edges for results that
+support that attribution.
+
 ---
 
 ## Links (`links` on therapies and trials)

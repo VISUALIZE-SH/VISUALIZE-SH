@@ -1,0 +1,380 @@
+# WOR-26: documentary additions; dates and generation limits remain explicit.
+observedAt: '2026-10-07'
+sources:
+  - id: src-cardiomems-cardioguide-announcement-20261005
+    title: Abbott receives FDA approval for new CardioMEMS HF System capabilities that help patients engage in the care of their heart condition
+    url: https://abbott.mediaroom.com/2026-10-05-Abbott-receives-FDA-approval-for-new-CardioMEMS-HF-System-capabilities-that-help-patients-engage-in-the-care-of-their-heart-condition
+    kind: manufacturer
+    publisher: Abbott
+    publishedAt: { value: '2026-10-05', precision: day }
+    retrievedAt: '2026-10-07'
+    access: public
+  - id: src-amulet-ifu-correction-202609
+    title: 'Medical Device Correction: Amplatzer Amulet Left Atrial Appendage Occluder'
+    url: https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/pdf/reports/Customer%20Letter%20-%20Amplatzer%20Amulet%20Left%20Atrial%20Appendage%20Occluder.pdf
+    kind: manufacturer
+    publisher: Abbott Medical
+    publishedAt: { value: '2026-09', precision: month }
+    retrievedAt: '2026-10-07'
+    access: public
+  - id: src-amulet-fda-p200049s021
+    title: Amplatzer Amulet pulmonary-artery labeling supplement — P200049/S021
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P200049S021
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2026-08-28', precision: day }
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: P200049/S021
+  - id: src-amulet-health-canada-ra82682
+    title: Amplatzer Amulet Left Atrial Appendage Occluder — labeling recall RA-82682
+    url: https://recalls-rappels.canada.ca/en/alert-recall/amplatzertm-amulettm-left-atrial-appendage-occluder
+    kind: regulatory
+    publisher: Health Canada
+    publishedAt: { value: '2026-09-25', precision: day }
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: RA-82682
+  - id: src-mitrapatch-fda-k252126
+    title: MitraPatch Mitral Valve Repair System — K252126 clearance and 510(k) summary
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252126.pdf
+    kind: regulatory
+    publisher: FDA / Chawla Heart Technologies
+    publishedAt: { value: '2025-12-04', precision: day }
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: K252126
+  - id: src-emboliner-fda-k261715
+    title: Emboliner Embolic Protection System (EPC-03) — FDA 510(k) record
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2026-09-08', precision: day }
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: K261715
+  - id: src-emboliner-commercial-use-20261002
+    title: Emboline Announces First U.S. Commercial Use of the Emboliner Embolic Protection System
+    url: https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html
+    kind: manufacturer
+    publisher: Emboline
+    publishedAt: { value: '2026-10-02', precision: day }
+    retrievedAt: '2026-10-07'
+    access: public
+
+  - id: src-tavr-fsi-preprint-20261002
+    title: Experimental Bench Validation of a Computational Fluid-Structure Interaction Model of Transcatheter Aortic Valve Dynamics
+    url: https://arxiv.org/abs/2610.03297v1
+    kind: publication
+    publisher: arXiv / Lee et al.
+    publishedAt:
+      value: '2026-10-02'
+      precision: day
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: arXiv:2610.03297v1
+  - id: src-mitral-teer-fsi-preprint-20260928
+    title: Immersogeometric fluid-structure interaction modeling of the human mitral valve and transcatheter edge-to-edge repair
+    url: https://arxiv.org/abs/2609.34209v1
+    kind: publication
+    publisher: arXiv / Kim et al.
+    publishedAt:
+      value: '2026-09-28'
+      precision: day
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: arXiv:2609.34209v1
+  - id: src-echodino-preprint-v2-20261007
+    title: 'EchoDino: A pediatric foundation model for transferable echocardiographic analysis across the lifespan'
+    url: https://arxiv.org/abs/2610.05603v2
+    kind: publication
+    publisher: arXiv / Cheng et al.
+    publishedAt:
+      value: '2026-10-07'
+      precision: day
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: arXiv:2610.05603v2
+  - id: src-puerarin-bhv-coating-abstract-20260929
+    title: >-
+      Multifunctional ROS-responsive bioprosthetic heart valves armored with a puerarin-loaded artificial-plasma hydrogel coating
+      for concurrent thromboresistance and immunomodulation
+    url: https://pubmed.ncbi.nlm.nih.gov/42810482/
+    kind: publication
+    publisher: Acta Biomaterialia / Feng et al.
+    publishedAt:
+      value: '2026-09-29'
+      precision: day
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: PMID:42810482; DOI:10.1016/j.actbio.2026.09.046
+  - id: src-parallel-septal-balloon-case-20260924
+    title: Parallel Septal Balloon Occlusion for Acute Right-to-Left Shunt During Mitral Transcatheter Edge-to-Edge Repair
+    url: https://pubmed.ncbi.nlm.nih.gov/42782237/
+    kind: publication
+    publisher: JACC Case Reports / Radhakrishna et al.
+    publishedAt:
+      value: '2026-09-24'
+      precision: day
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: PMID:42782237; DOI:10.1016/j.jaccas.2026.110445
+  - id: src-cardio-ttransform-stabilizer-analysis-2026
+    title: >-
+      Eplontersen with and without background transthyretin stabilizers in transthyretin amyloid cardiomyopathy: secondary analysis
+      of a phase 3, randomized controlled trial
+    url: https://discovery.ucl.ac.uk/id/eprint/10230315/
+    kind: publication
+    publisher: Nature Medicine / UCL Discovery
+    publishedAt:
+      value: '2026-08-30'
+      precision: day
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: DOI:10.1038/s41591-026-04670-6
+
+families:
+  - id: family-cardioguide-hf
+    name: CardioGuide HF
+    manufacturer: Abbott
+    entityIds: [dig-cardioguide-hf]
+    conditionIds: [cond-hfref, cond-hfpef]
+    description: Patient-facing companion app for the CardioMEMS system and clinician-configured treatment-plan communication; hardware compatibility and software release identifiers are not specified in the announcement.
+  - id: family-mitrapatch
+    name: MitraPatch
+    manufacturer: Chawla Heart Technologies LLC
+    entityIds: [dev-mitrapatch]
+    conditionIds: [cond-mr]
+    description: Surgical marginal (primary) chordae repair/replacement implant; distinct from Mitria's investigational posterior leaflet spacer for functional MR.
+  - id: family-emboliner
+    name: Emboliner
+    manufacturer: Emboline
+    entityIds: [dev-emboliner]
+    conditionIds: [cond-as]
+    description: Temporary embolic-protection adjunct used during TAVR; the protection device itself does not replace the aortic valve.
+
+versions:
+  - id: ver-cardioguide-hf-announced-2026
+    familyId: family-cardioguide-hf
+    graphEntityId: dig-cardioguide-hf
+    name: CardioGuide HF (announced 2026; build unspecified)
+    kind: digital
+    clinicalRole: monitors
+    digitalSubtype: monitoring
+    summary: Abbott describes patient access to pulmonary artery pressure trends and clinician-configured medication updates, with availability planned later in 2026. Exact software release and decision-specific FDA record are not verified.
+    sourceRefs:
+      - sourceId: src-cardiomems-cardioguide-announcement-20261005
+        locator: 'Opening non-quotation paragraph; Dynamic Treatment Plan and planned-availability paragraphs; CardioGuide HF and Dynamic Treatment Plan FAQs'
+    reviewStatus: draft
+  - id: ver-mitrapatch
+    familyId: family-mitrapatch
+    graphEntityId: dev-mitrapatch
+    name: MitraPatch Mitral Valve Repair System
+    kind: device
+    clinicalRole: treats
+    summary: US 510(k)-cleared ePTFE monomembrane implant for marginal (primary) chordae repair/replacement. One implant connects papillary muscle and leaflet; clearance is distinct from proven comparative benefit or current distribution.
+    sourceRefs:
+      - sourceId: src-mitrapatch-fda-k252126
+        locator: 'PDF p.1 clearance letter; p.5 (Summary p.1), Indication for Use and Device Description; p.6 comparison table'
+    reviewStatus: draft
+  - id: ver-emboliner-epc03
+    familyId: family-emboliner
+    graphEntityId: dev-emboliner
+    name: Emboliner Embolic Protection System (EPC-03)
+    model: EPC-03
+    kind: device
+    clinicalRole: manages
+    summary: FDA lists EPC-03 under K261715, cleared September 8, 2026. Emboline announced first US commercial procedures on October 1 and a controlled launch. Exact materials, profile and cleared IFU wording await review.
+    sourceRefs:
+      - sourceId: src-emboliner-fda-k261715
+        locator: 'Device Name; 510(k) Number; Decision Date'
+      - sourceId: src-emboliner-commercial-use-20261002
+        locator: 'Opening non-quotation paragraphs; controlled-launch paragraph. Release gives family name, not a new EPC-03 build.'
+    reviewStatus: draft
+
+decisions:
+  - id: decision-amulet-p200049s021
+    identifier: P200049/S021
+    rootIdentifier: P200049
+    jurisdiction: US
+    pathway: PMA
+    date: { value: '2026-08-28', precision: day }
+    versionIds: [ver-amulet]
+    changeType: labeling
+    summary: FDA approved a contraindication modification and landing-zone/pulmonary-artery relationship assessment in Amulet's IFU to reduce pulmonary artery injury risk.
+    sourceRefs:
+      - sourceId: src-amulet-fda-p200049s021
+        locator: 'Device; PMA/Supplement Number; Decision Date; Supplement Type/Reason; Approval Order Statement'
+    reviewStatus: draft
+  - id: decision-mitrapatch-k252126
+    identifier: K252126
+    rootIdentifier: K252126
+    jurisdiction: US
+    pathway: 510(k)
+    date: { value: '2025-12-04', precision: day }
+    versionIds: [ver-mitrapatch]
+    changeType: initial_authorization
+    summary: Substantial-equivalence clearance for marginal (primary) chordae tendinae repair/replacement only.
+    sourceRefs:
+      - sourceId: src-mitrapatch-fda-k252126
+        locator: 'PDF p.1 clearance letter; p.4 Indications for Use form; p.5 (Summary p.1) Indication for Use'
+    reviewStatus: draft
+  - id: decision-emboliner-k261715
+    identifier: K261715
+    rootIdentifier: K261715
+    jurisdiction: US
+    pathway: 510(k)
+    date: { value: '2026-09-08', precision: day }
+    versionIds: [ver-emboliner-epc03]
+    changeType: initial_authorization
+    summary: FDA substantial-equivalence clearance for Emboliner EPC-03, classified as a temporary embolic-protection catheter for transcatheter intracardiac procedures. Exact Indications for Use text not reviewed.
+    sourceRefs:
+      - sourceId: src-emboliner-fda-k261715
+        locator: 'Device Classification Name; Device Name; Decision Date; Decision (Substantially Equivalent)'
+    reviewStatus: draft
+
+claims:
+  - id: claim-cardiomems-cardioguide-patient-access-2026
+    versionId: ver-cardioguide-hf-announced-2026
+    category: digital
+    key: cardioguide.patientAccess
+    label: Announced CardioGuide HF patient capabilities
+    value: Patient pressure trends and clinician-configured medication updates
+    availability: reported
+    basis: directly_reported
+    observedAt: '2026-10-07'
+    context: Abbott's October 5 system-level announcement describes CardioGuide HF and Merlin.net Dynamic Treatment Plan; availability is planned later in 2026.
+    limitation: Exact software release and compatible sensor models are not specified. No CM3000 hardware change, autonomous prescribing or incremental clinical-outcome benefit is established. FDA supplement not independently located.
+    sourceRefs:
+      - sourceId: src-cardiomems-cardioguide-announcement-20261005
+        locator: 'Opening non-quotation paragraph; Dynamic Treatment Plan paragraph; planned-availability paragraph; FAQ What is the Dynamic Treatment Plan?'
+    reviewStatus: draft
+  - id: claim-amulet-pulmonary-artery-labeling-correction-202609
+    versionId: ver-amulet
+    category: fit
+    key: safety.pulmonaryArteryLabelingCorrection
+    label: Pulmonary artery labeling correction
+    value: Assess pulmonary artery proximity to the landing zone
+    availability: reported
+    basis: directly_reported
+    observedAt: '2026-10-07'
+    context: September 2026 letter updates the contraindication and adds distance-assessment guidance for original Amulet 9-ACP2 models; product return is not required.
+    limitation: Exact letter issue day is undisclosed. FDA's labeling decision is August 28; Canada's Type II labeling recall is dated September 10 and published September 25. No Amulet 360 applicability, recall classification in other jurisdictions or adverse-event incidence is inferred. The letter supplements rather than replaces the full IFU.
+    sourceRefs:
+      - sourceId: src-amulet-ifu-correction-202609
+        locator: 'PDF p.1, opening paragraphs and Actions Abbott is Taking; p.3, Appendix A model list'
+      - sourceId: src-amulet-fda-p200049s021
+        locator: 'Decision Date; Approval Order Statement'
+      - sourceId: src-amulet-health-canada-ra82682
+        locator: 'Affected products; Issue; Original published date; Recall class; Recall date'
+    reviewStatus: draft
+
+specs:
+  - version: ver-mitrapatch
+    category: mitral-chordal-reconstruction
+    source: src-mitrapatch-fda-k252126
+    values:
+      manufacturer: { value: Chawla Heart Technologies LLC, loc: 'PDF p.5 (Summary p.1), Applicant; p.6 comparison table' }
+      device-design: { value: Permanent ePTFE monomembrane connecting papillary muscle and leaflet, loc: 'PDF p.5 (Summary p.1), Device Description' }
+      implant-material: { value: Nonabsorbable expanded polytetrafluoroethylene (ePTFE), loc: 'PDF p.5 (Summary p.1), Device Description' }
+      available-sizes: { value: One size, loc: 'PDF p.6 (Summary p.2), Product Variants comparison row' }
+      access-route:
+        value: Surgical mitral chordal repair
+        loc: 'PDF p.5 (Summary p.1), Common Name and Device Description'
+        limitation: Access incision, beating-heart use and transcatheter compatibility are not established.
+      indication-scope: { value: Repair/replacement of marginal (primary) chordae tendinae only, loc: 'PDF p.4 Indications for Use; p.5 (Summary p.1) Indication for Use' }
+      development-status:
+        value: US 510(k) clearance December 4, 2025; K252126
+        loc: PDF p.1 clearance letter
+        limitation: Historical backfill; current commercial distribution and human trial evidence are not verified.
+  - version: ver-emboliner-epc03
+    category: embolic-protection-devices
+    source: src-emboliner-fda-k261715
+    values:
+      manufacturer: { value: 'Emboline, Inc.', loc: Applicant }
+      exact-version: { value: Emboliner EPC-03, loc: Device Name }
+      device-design:
+        value: Temporary catheter for capture/removal of embolic debris during TAVR
+        source: src-emboliner-commercial-use-20261002
+        loc: Second non-quotation paragraph; About Emboline
+        limitation: Manufacturer design intent; no superiority or stroke-reduction outcome inferred.
+      development-status:
+        value: US 510(k)-cleared; controlled commercial launch announced October 2
+        source: src-emboliner-commercial-use-20261002
+        loc: Opening paragraph; controlled-launch paragraph
+        context: FDA K261715 confirms clearance on September 8, 2026. First commercial procedures occurred October 1; release appeared October 2.
+      indication-scope:
+        availability: not_yet_reviewed
+        loc: Device Classification Name (exact cleared IFU text unavailable)
+        limitation: Sponsor describes TAVR use; regulator record establishes clearance but exact indication restrictions require the unavailable summary/IFU.
+      implant-material:
+        availability: not_applicable
+        loc: Device Classification Name (temporary catheter)
+        context: Temporary protection adjunct, not a permanent implant; filter/frame composition was not independently verified.
+
+bibliography:
+  - id: bib-tavr-fsi-preprint-20261002
+    entityIds:
+      - dev-evolut
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-tavr-fsi-preprint-20261002
+        locator: >-
+          v1 Abstract; Materials and Methods §2.1 (26 mm CoreValve Evolut R specimen); Discussion limitations. Preprint bench
+          evidence, not a released valve design change or an Evolut FX/FX+ clinical result.
+    reviewStatus: draft
+  - id: bib-mitral-teer-fsi-preprint-20260928
+    entityIds:
+      - dev-mitraclip
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-mitral-teer-fsi-preprint-20260928
+        locator: >-
+          v1 Abstract; Numerical Results and Discussion. Coaptation constraint uses a clip-shaped region without modeling clip
+          mechanics; no exact MitraClip generation or clinical-efficacy mapping.
+    reviewStatus: draft
+  - id: bib-echodino-preprint-v2-20261007
+    entityIds:
+      - cond-asd
+      - cond-vsd
+      - cond-pda
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-echodino-preprint-v2-20261007
+        locator: >-
+          v2 Abstract and submission history; study-level SHD analysis and Discussion. First submission October 4, v2 revision
+          October 7. Preprint dataset evaluation, not a clinically deployed software build.
+    reviewStatus: draft
+  - id: bib-puerarin-bhv-coating-20260929
+    entityIds:
+      - cond-as
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-puerarin-bhv-coating-abstract-20260929
+        locator: >-
+          Original Abstract (PubMed API Article/Abstract) and Electronic ArticleDate. Abstract only; rat subcutaneous implants at 12
+          weeks, not human valve durability or an exact marketed prosthesis.
+    reviewStatus: draft
+  - id: bib-parallel-septal-balloon-case-20260924
+    entityIds:
+      - dev-pascal
+      - cond-asd
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-parallel-septal-balloon-case-20260924
+        locator: >-
+          Abstract, Case summary and Discussion; publication metadata. One patient; PASCAL generation and septal-occluder model
+          unspecified. Full text not reviewed.
+    reviewStatus: draft
+  - id: bib-cardio-ttransform-stabilizer-analysis-2026
+    entityIds:
+      - cond-attr-cm
+      - rx-tafamidis
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-cardio-ttransform-stabilizer-analysis-2026
+        locator: >-
+          UCL accepted-version Abstract: overall trial neutral, prespecified baseline-stabilizer subgroups. Publication date from
+          publisher-deposited Crossref published-online (August 30). No tafamidis monotherapy efficacy or exact drug-version
+          comparison inferred.
+    reviewStatus: draft
