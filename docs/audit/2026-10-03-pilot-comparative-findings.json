@@ -1,0 +1,251 @@
+{
+  "auditDate": "2026-10-03",
+  "stage": "Domain findings and candidate changes before final integration",
+  "resolutionReport": "docs/DATABASE_AUDIT_2026-10-03.md",
+  "limitations": [
+    "Candidates are not an automatic patch; parent review narrowed or rejected unsupported fields. Final authored YAML and the consolidated report describe implemented changes."
+  ],
+  "updates": [
+    {
+      "file": "data/intelligence/catalog/figures.yaml",
+      "collection": "media",
+      "id": "media-sapien-ultra-resilia-device",
+      "fields": {
+        "title": "SAPIEN 3 Ultra platform valve (reference image for RESILIA version)",
+        "caption": "FDA IFU Figure 1 depicts model 9750TFX, identified there as the SAPIEN 3 Ultra valve; this is a platform-reference image, not an image of the SAPIEN 3 Ultra RESILIA valve. The IFU identifies the pictured valve as having ThermaFix-treated leaflets. Do not infer that RESILIA changes only tissue treatment or that this image depicts the RESILIA model.",
+        "sourceRefs": [
+          {
+            "sourceId": "src-sapien-ifu-s085",
+            "locator": "PDF page 100 of 221 (SAPIEN 3 Ultra IFU section, model 9750TFX), Figure 1; description identifies standard ThermaFix leaflets"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S162C.pdf",
+        "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-heart/transcatheter-sapien-3-ultra-resilia"
+      ],
+      "notes": "FDA S085 labels Figure 1 as SAPIEN 3 Ultra, model 9750TFX, and describes ThermaFix-treated leaflets. The current record's clause that RESILIA changes only tissue treatment is not supported for the pictured version. Use the image only as a platform reference unless an exact RESILIA-specific labeled image is sourced."
+    },
+    {
+      "file": "data/intelligence/catalog/figures.yaml",
+      "collection": "media",
+      "id": "media-lambre-device",
+      "fields": {
+        "caption": "LAmbre device image from Chamié et al., “Oclusão do Apêndice Atrial Esquerdo com a Prótese Lambre: Experiência Multicêntrica Inicial no Brasil,” Figure 1 (left panel). Reproduced/cropped from the article under CC BY 4.0; credit the authors and article, link the article and license, and indicate the crop.",
+        "sourceRefs": [
+          {
+            "sourceId": "src-lambre-study",
+            "locator": "Figure 1, left panel; article states Creative Commons Attribution License; crop used in asset"
+          }
+        ]
+      },
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9352115/",
+        "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "notes": "The paper identifies LAmbre's nitinol mesh, TiN coating, PET fabric, umbrella, pin, and cover disc; the article states CC BY reuse subject to proper attribution. The current caption says CC BY but omits a full author/article citation, license link, and modification notice for the cropped panel."
+    },
+    {
+      "file": "data/intelligence/catalog/figures.yaml",
+      "collection": "media",
+      "id": "media-coronary-sinus-reducer-device",
+      "fields": {
+        "caption": "Coronary Sinus Reducer image from Benedetto et al., “Percutaneous Device to Narrow the Coronary Sinus: Shifting Paradigm in the Treatment of Refractory Angina? A Review of the Literature,” Figure 1 (upper panel, expanded device). Reproduced/cropped under CC BY 4.0; credit the authors and article, link the article and license, and indicate the crop.",
+        "sourceRefs": [
+          {
+            "sourceId": "src-reducer-review-2016",
+            "locator": "Figure 1, upper panel (expanded device); article states CC BY; crop used in asset"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2016.00042/full",
+        "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "notes": "The source article describes the reducer as stainless steel and identifies Figure 1. Its publication license is CC BY 4.0. The current record names the license but not full author/article attribution or that the image is a cropped panel."
+    },
+    {
+      "file": "data/intelligence/catalog/figures.yaml",
+      "collection": "media",
+      "id": "media-corvia-shunt-device",
+      "fields": {
+        "caption": "Corvia Interatrial Shunt Device image from Kaye and Nanayakkara, “Interatrial Shunt Device for Heart Failure With Preserved Ejection Fraction,” Figure 4A. Reproduced/cropped under CC BY 4.0; credit the authors and article, link the article and license, and indicate the crop.",
+        "sourceRefs": [
+          {
+            "sourceId": "src-frontiers-corvia-2019",
+            "locator": "Figure 4, panel A; article states CC BY 4.0; crop used in asset"
+          }
+        ]
+      },
+      "sources": [
+        "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2019.00143/full",
+        "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "notes": "Figure 4A shows the IASD. The article separately notes that Figure 3 includes Elsevier-permission material; the cited device image is Figure 4A, not that credited Figure 3. The current record should retain the exact panel and include full attribution, license link, and crop notice."
+    },
+    {
+      "file": "data/therapies.yaml and data/intelligence/catalog/tavr-pulmonary.yaml (parent-owned)",
+      "collection": "therapy/device materials",
+      "id": "Navitor NaviSeal cuff material",
+      "fields": {
+        "materials": "UHMWPE (polyethylene) fabric in the inner and outer NaviSeal cuff; identify cuff fabric distinctly from valve leaflets, nitinol stent, and fixation materials.",
+        "sourceRefs": [
+          {
+            "source": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF",
+            "locator": "PDF p.13, Product Materials table: inner/outer cuff fabric described as polyethylene fabric; chemical substance identified as ultra-high molecular weight polyethylene (UHMWPE)"
+          },
+          {
+            "source": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/US/en/ARTEN600249797_A.pdf",
+            "locator": "Navitor TAVI System IFU, device description: NaviSeal inner and outer cuff portions are made from polyethylene"
+          }
+        ]
+      },
+      "sources": [
+        "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF",
+        "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/US/en/ARTEN600249797_A.pdf"
+      ],
+      "notes": "The generic US IFU description (polyethylene) and Abbott product-materials table (polyethylene fabric/UHMWPE) are compatible levels of material specificity. This resolves the graph/catalog wording mismatch; parent should harmonize terminology rather than preserve it as a conflict. The pilot subtask made no shared YAML edit."
+    }
+  ],
+  "findings": [
+    {
+      "id": "comparative-pilot-20-observations",
+      "status": "verified",
+      "summary": "Independently rechecked all 20 quantitative observations against their labeled FDA IFU locators. All 12 SAPIEN 3 values match S085 PDF page 2, Table 2; all eight Evolut FX annulus/profile values match S174 PDF pages 32–35, Table 2/Figure 2/Table 3. Evolut 23 mm correctly excludes the 17 mm SAV/TAV-only footnote exception. Records remain unreviewed; that status should be retained until review is recorded.",
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174D.pdf"
+      ]
+    },
+    {
+      "id": "media-sapien-ultra-resilia-device",
+      "status": "corrected",
+      "summary": "The local provenance identifies an FDA drawing for SAPIEN 3 Ultra model 9750TFX with ThermaFix-treated tissue, not the SAPIEN 3 Ultra RESILIA generation. Existing caption claim that the RESILIA model differs only by tissue treatment is unsupported and conflicts with FDA/manufacturer product material; qualify this as a platform-reference image or replace it with exact RESILIA-specific evidence.",
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S162C.pdf",
+        "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-heart/transcatheter-sapien-3-ultra-resilia"
+      ]
+    },
+    {
+      "id": "publication-figure-license-attribution",
+      "status": "corrected",
+      "summary": "The LAmbre article and the two Frontiers figure sources state CC BY reuse terms. Figure 1 of the Reducer article and Figure 4A of the Corvia article are identified without the Elsevier-permission warning that applies to Figure 3. Existing captions record CC BY but lack complete source/author attribution, license links, and crop notices. CC BY 4.0 requires appropriate credit, a license link, and indication of changes.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9352115/",
+        "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2016.00042/full",
+        "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2019.00143/full",
+        "https://creativecommons.org/licenses/by/4.0/"
+      ]
+    },
+    {
+      "id": "pilot-explicit-missing-outcomes",
+      "status": "gap",
+      "summary": "Explicitly absent, ongoing, or not-yet-reported outcomes and endpoint fields remain unknown, not zero; this audit did not replace missing outcomes or infer endpoint results from registry status. Preserve those missingness states pending primary-source readout.",
+      "sources": []
+    },
+    {
+      "id": "pilot-trial-primary-checks-2026-10-03",
+      "status": "verified",
+      "summary": "Primary/official source checks support these trial records: evidence-champion-af (parent prior NEJM check), evidence-protect-af, evidence-amulet-ide, evidence-swiss-apero, evidence-veritas, evidence-watchman-flx-pas, evidence-atriclip-exclude, evidence-triluminate, evidence-predict, evidence-vital, evidence-pvl-pld-multicenter, evidence-rechord, evidence-michord-pilot, evidence-alive, evidence-peerless-hf, evidence-acorn-five-year, evidence-momentum-3, evidence-kiss-pvl, evidence-tricento-registry. Study-specific cohort/generation limitations are retained in the audit report.",
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013B.pdf",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/36876753/",
+        "https://pubmed.ncbi.nlm.nih.gov/34459659/",
+        "https://pubmed.ncbi.nlm.nih.gov/35236096/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/",
+        "https://research.dial.uclouvain.be/server/api/core/bitstreams/12ed8680-9648-4c6b-a0ab-d839c6e23965/content",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13050095/",
+        "https://clinicaltrials.gov/study/NCT02803957",
+        "https://pubmed.ncbi.nlm.nih.gov/39797846/",
+        "https://pubmed.ncbi.nlm.nih.gov/22633302/",
+        "https://pubmed.ncbi.nlm.nih.gov/21762937/",
+        "https://pubmed.ncbi.nlm.nih.gov/36074476/",
+        "https://pubmed.ncbi.nlm.nih.gov/38156599/"
+      ]
+    },
+    {
+      "id": "pilot-current-registry-gaps",
+      "status": "gap",
+      "summary": "Current ClinicalTrials.gov status/enrollment details were not independently confirmed from a usable official record in this pass for evidence-tricaval and evidence-corcinch-hf. The TRICAVAL primary publication verifies the randomized study and stop for valve dislocations/safety; official registry status/enrollment needs refresh. CORCINCH-HF mirrors report suspension, but its official current record needs refresh. Keep date-specific current registry detail as a gap; suspension does not establish product withdrawal.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT02387697",
+        "https://clinicaltrials.gov/study/NCT04331769",
+        "https://eurointervention.pcronline.com/article/treatment-of-severe-tricuspid-regurgitation-in-patients-with-advanced-heart-failure-with-caval-vein-implantation-of-the-edwards-sapien-xt-valve-tricavala-controlled-prospective-randomized-trial"
+      ]
+    },
+    {
+      "id": "pilot-all-readouts-checked",
+      "status": "verified",
+      "summary": "Enumerated and source-checked all 19 readouts: readout-acorn-corcap-5y, readout-kiss-pvl-2024, readout-michord-fda, readout-tricento-registry, readout-alive-12m, readout-momentum3-5y, readout-champion-af-3y, readout-protect-af-primary, readout-amulet-ide-18m, readout-amulet-ide-5y, readout-watchman-flx-pas-2y, readout-swiss-apero-3y, readout-veritas-45d, readout-atriclip-exclude, readout-tri-350-1y, readout-tri-572-1y, readout-tri-572-2y, readout-predict-90d, readout-vital-6m. VERITAS original indexed abstract and Abbott source establish 0 mm complete closure versus ≤5 mm primary effectiveness definitions, denominator and timing; full text is inaccessible, but abstract facts are directly verified.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/21762937/",
+        "https://pubmed.ncbi.nlm.nih.gov/38156599/",
+        "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/35236096/",
+        "https://pubmed.ncbi.nlm.nih.gov/39797846/",
+        "https://pubmed.ncbi.nlm.nih.gov/36074476/",
+        "https://www.nejm.org/doi/10.1056/NEJMoa2517213",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013B.pdf",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6664&t_id=724803",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6406&t_id=683187",
+        "https://www.jacc.org/doi/10.1016/j.jacc.2025.03.535",
+        "https://www.sciencedirect.com/science/article/pii/S2405500X26000289",
+        "https://pubmed.ncbi.nlm.nih.gov/21906756/",
+        "https://pubmed.ncbi.nlm.nih.gov/36876753/",
+        "https://www.jacc.org/doi/full/10.1016/j.jacc.2024.10.086",
+        "https://pubmed.ncbi.nlm.nih.gov/40159089/",
+        "https://research.dial.uclouvain.be/server/api/core/bitstreams/12ed8680-9648-4c6b-a0ab-d839c6e23965/content",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13050095/"
+      ]
+    },
+    {
+      "id": "pilot-outcome-numeric-verification",
+      "status": "verified",
+      "summary": "Numerically rechecked against primary tables/figures/source text all 27 outcomes: outcome-acorn-lvedv-5y, outcome-kiss-pvl-procedural-success, outcome-michord-recurrent-mr-1y, outcome-tricento-technical-success, outcome-alive-primary-12m, outcome-momentum3-survival-5y, outcome-champion-efficacy-3y, outcome-champion-bleeding-3y, outcome-protect-af-primary, outcome-amulet-safety-12m, outcome-amulet-effectiveness-18m, outcome-amulet-closure-45d, outcome-amulet-effectiveness-5y, outcome-watchman-flx-pas-stroke-se-2y, outcome-swiss-apero-3y-ischemic, outcome-veritas-safety-7d, outcome-veritas-closure-45d, outcome-atriclip-intraop-exclusion, outcome-atriclip-3m-exclusion, outcome-tri-350-hierarchy, outcome-tri-572-hierarchy, outcome-tri-572-hfh-1y, outcome-tri-572-hfh-2y, outcome-tri-572-death-2y, outcome-predict-primary, outcome-predict-closure, outcome-vital-score. The two VERITAS outcomes are supported by the original indexed abstract: 0/400 primary safety events through 7 days/discharge; 376/376 met ≤5 mm at 45 days; 93.9% had 0 mm complete closure.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/21762937/",
+        "https://pubmed.ncbi.nlm.nih.gov/38156599/",
+        "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/35236096/",
+        "https://pubmed.ncbi.nlm.nih.gov/39797846/",
+        "https://pubmed.ncbi.nlm.nih.gov/36074476/",
+        "https://www.nejm.org/doi/10.1056/NEJMoa2517213",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013B.pdf",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6664&t_id=724803",
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6406&t_id=683187",
+        "https://www.jacc.org/doi/10.1016/j.jacc.2025.03.535",
+        "https://pubmed.ncbi.nlm.nih.gov/21906756/",
+        "https://pubmed.ncbi.nlm.nih.gov/36876753/",
+        "https://www.jacc.org/doi/full/10.1016/j.jacc.2024.10.086",
+        "https://pubmed.ncbi.nlm.nih.gov/40159089/",
+        "https://research.dial.uclouvain.be/server/api/core/bitstreams/12ed8680-9648-4c6b-a0ab-d839c6e23965/content",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13050095/",
+        "https://www.jacc.org/doi/10.1016/j.jacep.2026.01.021"
+      ]
+    },
+    {
+      "id": "veritas-abstract-endpoint-verification",
+      "status": "verified",
+      "summary": "The publisher-indexed original abstract verifies zero primary-safety events among 400 through 7 days/discharge, primary effectiveness defined as ≤5 mm at 45-day TEE among 376 evaluable patients (all met it), and complete closure defined as 0 mm leak in 93.9%. Abbott separately describes the 93.9% as no leaks greater than 3 mm; this is compatible with the stricter 0 mm primary-paper definition. The publisher page itself was inaccessible, so claims beyond the indexed abstract remain unverified.",
+      "sources": [
+        "https://www.jacc.org/doi/10.1016/j.jacep.2026.01.021",
+        "https://pubmed.ncbi.nlm.nih.gov/41701134/",
+        "https://abbott.mediaroom.com/press-releases?item=124733"
+      ]
+    },
+    {
+      "id": "navitor-polyethylene-uhmwpe",
+      "status": "verified",
+      "summary": "Abbott Navitor IFU terminology is consistent: the current US IFU describes NaviSeal inner/outer cuff portions as polyethylene; Abbott product-materials IFU calls the cuff a polyethylene fabric and specifies UHMWPE in its substance table on PDF p.13. Recommend parent normalize as UHMWPE (polyethylene) cuff fabric, retaining exact permanent implant scope.",
+      "sources": [
+        "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF",
+        "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/US/en/ARTEN600249797_A.pdf"
+      ]
+    }
+  ]
+}

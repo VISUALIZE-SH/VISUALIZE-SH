@@ -9,6 +9,7 @@
 - id: trial-protect-af
   type: trial
   name: "PROTECT AF"
+  nctId: NCT00129545
   phase: "Pivotal RCT"
   status: completed
   timeline:
@@ -25,11 +26,15 @@
   outcomeSummary: "Watchman was noninferior (and superior on the long-term composite) to warfarin in non-valvular AF."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=PROTECT-AF+Watchman"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT00129545"
 - id: trial-prevail
   type: trial
   name: "PREVAIL"
+  nctId: NCT01182441
   phase: "Pivotal RCT"
   status: completed
   timeline:
@@ -46,11 +51,15 @@
   outcomeSummary: "Co-primary endpoints only partially met, but data supported approval alongside PROTECT AF."
   resultStatus: mixed
   references: ["https://clinicaltrials.gov/search?term=PREVAIL+Watchman"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT01182441"
 - id: trial-prague-17
   type: trial
   name: "PRAGUE-17"
+  nctId: NCT02426944
   phase: "RCT (LAAC vs DOAC)"
   status: completed
   timeline:
@@ -60,18 +69,24 @@
     event: "Trial start"
     source: "https://clinicaltrials.gov/study/NCT02426944"
   conditions: [cond-af]
-  therapies: [dev-watchman-flx, dev-amulet]
+  therapies: [dev-watchman-original, dev-amulet]
   enrollment: 402
   year: 2020
   primaryEndpoint: "Composite of cardiovascular, neurological, and bleeding events"
   outcomeSummary: "LAA closure was noninferior to DOACs in high-risk AF patients."
   resultStatus: positive
-  references: ["https://clinicaltrials.gov/search?term=PRAGUE-17"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  references: ["https://clinicaltrials.gov/study/NCT02426944", "https://www.jacc.org/doi/10.1016/j.jacc.2020.04.067"]
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT02426944"
+      - "https://www.jacc.org/doi/10.1016/j.jacc.2020.04.067"
+    notes: "The trial's device-era primary reports describe Amulet and first-generation Watchman devices; do not assign outcomes to the later Watchman FLX generation."
 - id: trial-amulet-ide
   type: trial
   name: "Amulet IDE"
+  nctId: NCT02879448
   phase: "RCT (head-to-head)"
   status: completed
   timeline:
@@ -81,18 +96,24 @@
     event: "Trial start"
     source: "https://clinicaltrials.gov/study/NCT02879448"
   conditions: [cond-af]
-  therapies: [dev-amulet, dev-watchman-flx]
+  therapies: [dev-amulet, dev-watchman-original]
   enrollment: 1878
   year: 2021
   primaryEndpoint: "Safety, effective LAA occlusion, and stroke/systemic embolism"
   outcomeSummary: "Amulet was noninferior to Watchman; more peri-procedural complications but superior LAA closure."
   resultStatus: positive
-  references: ["https://clinicaltrials.gov/search?term=Amulet+IDE"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  references: ["https://clinicaltrials.gov/study/NCT02879448", "https://www.jacc.org/doi/10.1016/j.jcin.2023.06.022"]
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT02879448"
+      - "https://www.jacc.org/doi/10.1016/j.jcin.2023.06.022"
+    notes: "The randomized comparator was the first-generation Watchman 2.5, not Watchman FLX; the three-year primary report explicitly notes this generation difference."
 - id: trial-option
   type: trial
   name: "OPTION"
+  nctId: NCT03795298
   phase: "RCT (LAAC vs DOAC post-ablation)"
   status: completed
   timeline:
@@ -109,13 +130,17 @@
   outcomeSummary: "LAA closure was noninferior for ischemic events with less non-procedural bleeding than DOAC after ablation."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=OPTION+Watchman"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03795298"
 - id: trial-champion-af
   type: trial
   name: "CHAMPION-AF"
+  nctId: NCT04394546
   phase: "RCT (LAAC vs DOAC)"
-  status: suspended
+  status: active
   timeline:
     date: "2020-10-15"
     precision: day
@@ -131,10 +156,11 @@
   references: ["https://clinicaltrials.gov/study/NCT04394546", "https://www.nejm.org/doi/10.1056/NEJMoa2517213"]
   pulse: 7
   curation:
-    status: curated
-    lastUpdated: 2026-09-28
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT04394546"
     notes: "Primary three-year results published 2026-03-28 (NEJM DOI 10.1056/NEJMoa2517213). Registry follow-up continues through five years, so trial status remains active while resultStatus records the positive primary readout. Outcome rates are Kaplan-Meier estimates; event counts and randomized denominators are included."
-
 - id: trial-lambre-ii
   type: trial
   name: "LAmbre II First-in-Man"
@@ -166,6 +192,7 @@
 - id: trial-respect
   type: trial
   name: "RESPECT"
+  nctId: NCT00465270
   phase: "RCT"
   status: completed
   timeline:
@@ -182,11 +209,15 @@
   outcomeSummary: "Extended follow-up showed PFO closure superior to medical therapy for recurrent cryptogenic stroke."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=RESPECT+PFO"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT00465270"
 - id: trial-reduce
   type: trial
   name: "Gore REDUCE"
+  nctId: NCT00738894
   phase: "RCT"
   status: completed
   timeline:
@@ -203,11 +234,15 @@
   outcomeSummary: "PFO closure reduced recurrent stroke versus antiplatelet therapy alone."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=Gore+REDUCE+PFO"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT00738894"
 - id: trial-close
   type: trial
   name: "CLOSE"
+  nctId: NCT00562289
   phase: "RCT"
   status: completed
   timeline:
@@ -224,9 +259,12 @@
   outcomeSummary: "Closure superior to antiplatelet therapy in patients with high-risk PFO features (multiple devices used)."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=CLOSE+PFO+trial"]
-  curation: { status: curated, lastUpdated: 2026-06-22, notes: "CLOSE permitted several occluders; therapy ref is representative." }
-
-# ============================ HCM ========================================
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT00562289"
+    notes: "CLOSE permitted several occluders; therapy ref is representative."
 - id: trial-explorer-hcm
   type: trial
   name: "EXPLORER-HCM"
@@ -252,6 +290,7 @@
 - id: trial-valor-hcm
   type: trial
   name: "VALOR-HCM"
+  nctId: NCT04349072
   phase: "Phase 3 RCT"
   status: completed
   timeline:
@@ -268,11 +307,15 @@
   outcomeSummary: "Mavacamten markedly reduced eligibility/need for septal reduction therapy in severely symptomatic obstructive HCM."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=VALOR-HCM"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT04349072"
 - id: trial-sequoia-hcm
   type: trial
   name: "SEQUOIA-HCM"
+  nctId: NCT05186818
   phase: "Phase 3 RCT"
   status: completed
   timeline:
@@ -289,13 +332,17 @@
   outcomeSummary: "Aficamten significantly improved peak VO2 and all secondary endpoints in obstructive HCM."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=SEQUOIA-HCM"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT05186818"
 - id: trial-maple-hcm
   type: trial
   name: "MAPLE-HCM"
+  nctId: NCT05767346
   phase: "Phase 3 RCT (monotherapy)"
-  status: active
+  status: completed
   timeline:
     date: "2023-06-20"
     precision: day
@@ -304,12 +351,21 @@
     source: "https://clinicaltrials.gov/study/NCT05767346"
   conditions: [cond-hcm]
   therapies: [rx-aficamten]
-  primaryEndpoint: "Aficamten vs metoprolol as monotherapy (peak VO2)"
-  outcomeSummary: "Head-to-head monotherapy comparison against a beta-blocker; ongoing."
-  resultStatus: ongoing
+  enrollment: 175
+  year: 2025
+  primaryEndpoint: "Change from baseline in peak oxygen uptake at week 24"
+  outcomeSummary: "Aficamten was superior to metoprolol for change in peak VO2 at 24 weeks (between-group difference 2.3 mL/kg/min, 95% CI 1.5–3.1; P<0.001), with greater improvements in symptoms and LVOT obstruction."
+  resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=MAPLE-HCM"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  links:
+    - label: "NEJM primary results"
+      url: "https://www.nejm.org/doi/10.1056/NEJMoa2504654"
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT05767346"
+      - "https://www.nejm.org/doi/10.1056/NEJMoa2504654"
 - id: trial-acacia-hcm
   type: trial
   name: "ACACIA-HCM"
@@ -366,6 +422,7 @@
 - id: trial-attribute-cm
   type: trial
   name: "ATTRibute-CM"
+  nctId: NCT03860935
   phase: "Phase 3 RCT"
   status: completed
   timeline:
@@ -382,11 +439,15 @@
   outcomeSummary: "Acoramidis improved the hierarchical composite endpoint, supporting FDA approval."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=ATTRibute-CM"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03860935"
 - id: trial-helios-b
   type: trial
   name: "HELIOS-B"
+  nctId: NCT04153149
   phase: "Phase 3 RCT"
   status: completed
   timeline:
@@ -403,11 +464,15 @@
   outcomeSummary: "Vutrisiran reduced mortality and cardiovascular events in ATTR-CM."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=HELIOS-B"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT04153149"
 - id: trial-apollo-b
   type: trial
   name: "APOLLO-B"
+  nctId: NCT03997383
   phase: "Phase 3 RCT"
   status: completed
   timeline:
@@ -424,9 +489,11 @@
   outcomeSummary: "Patisiran improved functional measures, but the FDA declined the ATTR-CM indication."
   resultStatus: mixed
   references: ["https://clinicaltrials.gov/search?term=APOLLO-B+patisiran"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
-# ============================ HF PHARMACOTHERAPY =========================
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03997383"
 - id: trial-paradigm-hf
   type: trial
   name: "PARADIGM-HF"
@@ -474,6 +541,7 @@
 - id: trial-deliver
   type: trial
   name: "DELIVER"
+  nctId: NCT03619213
   phase: "Phase 3 RCT"
   status: completed
   timeline:
@@ -490,11 +558,15 @@
   outcomeSummary: "Dapagliflozin reduced events in HF with mildly reduced or preserved ejection fraction."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=DELIVER+dapagliflozin"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03619213"
 - id: trial-emperor-preserved
   type: trial
   name: "EMPEROR-Preserved"
+  nctId: NCT03057951
   phase: "Phase 3 RCT"
   status: completed
   timeline:
@@ -511,11 +583,15 @@
   outcomeSummary: "First clearly positive HFpEF outcomes trial, driven by reduced HF hospitalizations."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=EMPEROR-Preserved"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03057951"
 - id: trial-emperor-reduced
   type: trial
   name: "EMPEROR-Reduced"
+  nctId: NCT03057977
   phase: "Phase 3 RCT"
   status: completed
   timeline:
@@ -532,11 +608,15 @@
   outcomeSummary: "Empagliflozin reduced cardiovascular death or HF hospitalization in HFrEF."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=EMPEROR-Reduced"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03057977"
 - id: trial-victoria
   type: trial
   name: "VICTORIA"
+  nctId: NCT02861534
   phase: "Phase 3 RCT"
   status: completed
   timeline:
@@ -553,11 +633,15 @@
   outcomeSummary: "Vericiguat reduced events in patients with recently worsening HFrEF."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=VICTORIA+vericiguat"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT02861534"
 - id: trial-finearts-hf
   type: trial
   name: "FINEARTS-HF"
+  nctId: NCT04435626
   phase: "Phase 3 RCT"
   status: completed
   timeline:
@@ -574,11 +658,15 @@
   outcomeSummary: "Finerenone reduced worsening-HF events in HF with mildly reduced or preserved ejection fraction."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=FINEARTS-HF"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT04435626"
 - id: trial-galactic-hf
   type: trial
   name: "GALACTIC-HF"
+  nctId: NCT02929329
   phase: "Phase 3 RCT"
   status: completed
   timeline:
@@ -595,12 +683,42 @@
   outcomeSummary: "Modest reduction in the primary composite; the FDA did not approve omecamtiv mecarbil."
   resultStatus: mixed
   references: ["https://clinicaltrials.gov/search?term=GALACTIC-HF"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
-# ============================ HF SHUNTS ==================================
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT02929329"
+- id: trial-comet-hf
+  type: trial
+  name: "COMET-HF"
+  nctId: NCT06736574
+  phase: "Phase 3"
+  status: recruiting
+  timeline:
+    date: "2024-12-19"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT06736574"
+  conditions: [cond-hfref]
+  therapies: [rx-omecamtiv-mecarbil]
+  enrollment: 1800
+  primaryEndpoint: "Time to first event in the composite of cardiovascular death, first heart-failure event, LVAD implantation, cardiac transplantation, or stroke"
+  outcomeSummary: "Confirmatory Phase 3 study of omecamtiv mecarbil in symptomatic HFrEF with LVEF <30%; recruiting, with approximately 1,800 participants planned and no results reported."
+  resultStatus: ongoing
+  references:
+    - "https://clinicaltrials.gov/study/NCT06736574"
+    - "https://ir.cytokinetics.com/press-releases/press-release-details/2024/Cytokinetics-Announces-Start-of-COMET-HF-a-Confirmatory-Phase-3-Clinical-Trial-of-Omecamtiv-Mecarbil-in-Patients-with-Symptomatic-Heart-Failure-with-Severely-Reduced-Ejection-Fraction-12-03-2024/default.aspx"
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT06736574"
+      - "https://ir.cytokinetics.com/press-releases/press-release-details/2024/Cytokinetics-Announces-Start-of-COMET-HF-a-Confirmatory-Phase-3-Clinical-Trial-of-Omecamtiv-Mecarbil-in-Patients-with-Symptomatic-Heart-Failure-with-Severely-Reduced-Ejection-Fraction-12-03-2024/default.aspx"
 - id: trial-reduce-lap-hf-i
   type: trial
   name: "REDUCE LAP-HF I"
+  nctId: NCT02600234
   phase: "RCT (mechanistic, sham-controlled)"
   status: completed
   timeline:
@@ -617,11 +735,15 @@
   outcomeSummary: "Sham-controlled pilot demonstrated reduced exercise wedge pressure with the atrial shunt."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=REDUCE+LAP-HF+I"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT02600234"
 - id: trial-reduce-lap-hf-ii
   type: trial
   name: "REDUCE LAP-HF II"
+  nctId: NCT03088033
   phase: "Pivotal RCT (sham-controlled)"
   status: completed
   timeline:
@@ -638,8 +760,11 @@
   outcomeSummary: "Neutral overall; a prespecified responder subgroup (without latent pulmonary vascular disease) appeared to benefit."
   resultStatus: mixed
   references: ["https://clinicaltrials.gov/search?term=REDUCE+LAP-HF+II"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03088033"
 - id: trial-responder-hf
   type: trial
   name: "RESPONDER-HF"
@@ -654,20 +779,26 @@
     source: "https://clinicaltrials.gov/study/NCT05425459"
   conditions: [cond-hfpef]
   therapies: [dev-corvia-shunt]
-  enrollment: 750
-  primaryEndpoint: "Composite of HF event rates and KCCQ score at 12 months"
-  outcomeSummary: "Confirmatory precision-medicine trial re-evaluating the Corvia Atrial Shunt in HFpEF/HFmrEF, targeting the responder phenotype identified in REDUCE LAP-HF II; active, not recruiting, no readout yet."
+  enrollment: 260
+  primaryEndpoint: "Rate of total first and recurrent HF events through 24 months, analyzed when the last randomized participant reaches 12 months, and change in KCCQ from baseline to 12 months"
+  outcomeSummary: "Corvia reports 260 participants randomized 1:1 and the study in follow-up. The HFpEF/HFmrEF population has LVEF at least 40%; the 12-month secondary endpoint is cardiovascular death. No trial results are reported on the sponsor page."
   resultStatus: ongoing
-  references: ["https://clinicaltrials.gov/study/NCT05425459"]
+  references:
+    - "https://clinicaltrials.gov/study/NCT05425459"
+    - "https://us.corviamedical.com/healthcare-professionals/reduce-lap-hf-clinical-program/responder-hf/"
   pulse: 5
   curation:
     status: draft
-    lastUpdated: 2026-07-08
-    sources: ["https://clinicaltrials.gov/study/NCT05425459"]
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT05425459"
+      - "https://us.corviamedical.com/healthcare-professionals/reduce-lap-hf-clinical-program/responder-hf/"
+      - "https://www.cms.gov/medicarecoverageideapproved-ide-studies/g150210-nct05425459"
 
 - id: trial-relieve-hf
   type: trial
   name: "RELIEVE-HF"
+  nctId: NCT03499236
   phase: "Pivotal RCT (sham-controlled)"
   status: completed
   timeline:
@@ -685,10 +816,11 @@
   resultStatus: mixed
   references: ["https://clinicaltrials.gov/search?term=RELIEVE-HF"]
   curation:
-    status: curated
-    lastUpdated: 2026-06-22
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03499236"
     notes: "Reviewing these RELIEVE-HF data, the FDA Circulatory System Devices Panel voted 15-0 against recommending approval on effectiveness/benefit-risk grounds (2025-12-03); no final FDA decision found as of 2026-07-08. See dev-vwave-ventura notes. Source: https://www.tctmd.com/news/fda-panel-declines-endorse-ventura-interatrial-shunt-hfref."
-
 - id: trial-alt-flow-ii
   type: trial
   name: "ALT-FLOW II"
@@ -718,6 +850,7 @@
 - id: trial-champion
   type: trial
   name: "CHAMPION"
+  nctId: NCT00531661
   phase: "RCT"
   status: completed
   timeline:
@@ -734,11 +867,15 @@
   outcomeSummary: "Pulmonary-artery-pressure-guided management reduced HF hospitalizations."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=CHAMPION+CardioMEMS"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT00531661"
 - id: trial-guide-hf
   type: trial
   name: "GUIDE-HF"
+  nctId: NCT03387813
   phase: "RCT"
   status: completed
   timeline:
@@ -755,11 +892,15 @@
   outcomeSummary: "Primary endpoint neutral overall; a pre-COVID-19 sensitivity analysis suggested benefit."
   resultStatus: mixed
   references: ["https://clinicaltrials.gov/search?term=GUIDE-HF"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03387813"
 - id: trial-proactive-hf
   type: trial
   name: "PROACTIVE-HF"
+  nctId: NCT04089059
   phase: "Single-arm pivotal"
   status: completed
   timeline:
@@ -776,12 +917,15 @@
   outcomeSummary: "Met prespecified safety and efficacy goals, supporting FDA approval of the Cordella sensor."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=PROACTIVE-HF+Cordella"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
-# ============================ CORONARY MICROVASCULAR =====================
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT04089059"
 - id: trial-cosira
   type: trial
   name: "COSIRA"
+  nctId: NCT01205893
   phase: "RCT (sham-controlled)"
   status: completed
   timeline:
@@ -798,11 +942,15 @@
   outcomeSummary: "The coronary sinus Reducer improved angina class in refractory angina versus sham."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=COSIRA+reducer"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT01205893"
 - id: trial-cosira-ii
   type: trial
   name: "COSIRA-II"
+  nctId: NCT05102019
   phase: "Pivotal RCT (sham-controlled)"
   status: active
   timeline:
@@ -813,12 +961,17 @@
     source: "https://clinicaltrials.gov/study/NCT05102019"
   conditions: [cond-cmd]
   therapies: [dev-coronary-sinus-reducer]
+  enrollment: 380
   primaryEndpoint: "Angina and ischemia endpoints"
   outcomeSummary: "US pivotal sham-controlled trial of the coronary sinus Reducer; ongoing."
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/search?term=COSIRA-II"]
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT05102019"
+    notes: "ClinicalTrials.gov lists estimated total enrollment of 380 across the randomized sham-controlled cohort and nonrandomized registry arm; this is the overall registry target, not the randomized comparison size."
 - id: trial-serra-i
   type: trial
   name: "SERRA-I"
@@ -848,9 +1001,64 @@
 # ============================ VALVULAR TRIALS ============================
 
 # --- TAVR ---
+- id: trial-acasa-tavi
+  type: trial
+  name: "ACASA-TAVI"
+  nctId: NCT05035277
+  phase: "Phase 3 RCT (open-label, blinded endpoints)"
+  status: completed
+  timeline:
+    date: "2021-12-04"
+    precision: day
+    dateBasis: trial-start
+    event: "Trial start"
+    source: "https://clinicaltrials.gov/study/NCT05035277"
+  conditions: [cond-as]
+  therapies: [proc-tavi]
+  enrollment: 360
+  year: 2026
+  primaryEndpoint: >-
+    Co-primary endpoints at 12 months: CT-detected hypoattenuated leaflet thickening (HALT; superiority)
+    and a composite of VARC-3 bleeding, thromboembolic events, and all-cause death (noninferiority).
+  outcomeSummary: >-
+    In patients aged 65-80 without an independent anticoagulation indication after TAVI, 12 months of
+    factor Xa DOAC monotherapy reduced HALT versus aspirin (16.2% vs 28.6%; risk ratio 0.55, 95% CI
+    0.37-0.82; P=0.004) and met noninferiority for the safety composite (7.5% vs 10.6%). These findings
+    do not establish improved long-term valve durability or superiority for clinical events.
+  resultStatus: positive
+  references:
+    - "https://clinicaltrials.gov/study/NCT05035277"
+    - "https://jamanetwork.com/journals/jama/fullarticle/2853401"
+    - "PMID:42669043"
+  links:
+    - label: "JAMA primary results (August 30, 2026)"
+      url: "https://jamanetwork.com/journals/jama/fullarticle/2853401"
+    - label: "ESC Congress 2026 readout and context"
+      url: "https://www.escardio.org/news/news-room/congress-news/hot-line-7-advances-in-interventional-cardiology/"
+  pulse: 8
+  curation:
+    status: draft
+    lastUpdated: "2026-10-04"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT05035277"
+      - "https://jamanetwork.com/journals/jama/fullarticle/2853401"
+      - "https://www.escardio.org/news/news-room/congress-news/hot-line-7-advances-in-interventional-cardiology/"
+    notes: >-
+      Procedure-level post-TAVI management evidence: the proc-tavi edge identifies the care setting, not
+      a randomized comparison of TAVI devices or TAVI versus surgery. The registry permits clinician-selected
+      therapeutic-dose apixaban, rivaroxaban, or edoxaban monotherapy versus aspirin 75 mg/day; it does not
+      establish separate efficacy for each drug. The ClinicalTrials.gov record last updated June 9, 2026
+      reports completed status, actual enrollment of 360, and actual start December 4, 2021. It also lists
+      5- and 10-year MACE follow-up; those results are not reported here. JAMA reports 336 participants
+      completing the trial. The safety risk difference was -3.3 percentage points (95% CI -9.5 to 2.8;
+      noninferiority P<0.001). Low safety-event counts limit inference, and individual clinical components
+      were not adequately powered. HALT is an imaging endpoint; do not generalize the result to all ages,
+      anticoagulation regimens, or routine treatment recommendations.
+
 - id: trial-partner-2
   type: trial
   name: "PARTNER 2A"
+  nctId: NCT01314313
   phase: "Pivotal RCT"
   status: completed
   timeline:
@@ -860,19 +1068,25 @@
     event: "Trial start"
     source: "https://clinicaltrials.gov/study/NCT01314313"
   conditions: [cond-as]
-  therapies: [dev-sapien-3, proc-savr]
+  therapies: [dev-sapien-xt, proc-savr]
   enrollment: 2032
   year: 2016
   primaryEndpoint: "Death or disabling stroke at 2 years"
-  outcomeSummary: "In intermediate-risk severe aortic stenosis, TAVR (SAPIEN XT/3) was noninferior to surgical AVR."
+  outcomeSummary: "In the randomized PARTNER 2A comparison, SAPIEN XT TAVR was noninferior to surgical AVR for the primary two-year composite. SAPIEN 3 results came from a separate, nonrandomized registry cohort and are not mapped to this RCT edge."
   resultStatus: positive
-  references: ["https://clinicaltrials.gov/search?term=PARTNER+2A+SAPIEN"]
+  references: ["https://clinicaltrials.gov/study/NCT01314313", "https://www.nejm.org/doi/full/10.1056/NEJMoa1514616"]
   pulse: 3
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT01314313"
+      - "https://www.nejm.org/doi/full/10.1056/NEJMoa1514616"
+    notes: "The primary randomized PARTNER 2A cohort tested SAPIEN XT against surgery. The same NCT program also included a distinct SAPIEN 3 registry cohort, which is excluded from this trial node's randomized result/device mapping."
 - id: trial-partner-3
   type: trial
   name: "PARTNER 3"
+  nctId: NCT02675114
   phase: "Pivotal RCT"
   status: completed
   timeline:
@@ -891,13 +1105,15 @@
   references: ["https://clinicaltrials.gov/search?term=PARTNER+3+SAPIEN"]
   pulse: 8
   curation:
-    status: curated
-    lastUpdated: 2026-06-28
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT02675114"
     notes: "New York Valves 2026 (Jun 24-26): 7-year PARTNER 3 valve durability/outcomes presented — SAPIEN 3 durability comparable to surgery in low-risk patients, supporting TAVR in lifetime management. Human curator: consider folding the 7-year readout into outcomeSummary."
-
 - id: trial-evolut-low-risk
   type: trial
   name: "Evolut Low Risk"
+  nctId: NCT02701283
   phase: "Pivotal RCT"
   status: completed
   timeline:
@@ -913,16 +1129,20 @@
   primaryEndpoint: "Death or disabling stroke at 24 months"
   outcomeSummary: "In low-risk severe AS, self-expanding TAVR (Evolut) was noninferior to surgery."
   resultStatus: positive
-  references: ["https://clinicaltrials.gov/search?term=Evolut+Low+Risk+TAVR"]
+  references: ["https://clinicaltrials.gov/study/NCT02701283", "https://www.nejm.org/doi/abs/10.1056/NEJMoa1816885", "https://www.jacc.org/doi/10.1016/j.jacc.2026.02.5063"]
   pulse: 6
   curation:
-    status: curated
-    lastUpdated: 2026-06-22
+    status: draft
+    lastUpdated: "2026-10-04"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT02701283"
+      - "https://www.nejm.org/doi/abs/10.1056/NEJMoa1816885"
+      - "https://www.jacc.org/doi/10.1016/j.jacc.2026.02.5063"
     notes: "6-7 year follow-up (published JACC 2026-02-16) found no significant difference in all-cause mortality/disabling stroke between TAVR and SAVR, but higher reintervention rates with TAVR (5.5% vs 3.3% at 6 years; 9.8% vs 6% in a 7-year subset). Medtronic issued a clinician communication reinforcing IFU adherence. Note the original trial used CoreValve/Evolut R/PRO, since superseded by Evolut FX/FX+. Sources: https://www.jacc.org/doi/10.1016/j.jacc.2026.02.5063 ; https://www.tctmd.com/news/higher-reintervention-risk-tavi-emerges-6-7-years-evolut-low-risk-trial."
-
 - id: trial-early-tavr
   type: trial
   name: "EARLY TAVR"
+  nctId: NCT03042104
   phase: "RCT"
   status: completed
   timeline:
@@ -941,10 +1161,11 @@
   references: ["https://clinicaltrials.gov/search?term=EARLY+TAVR+asymptomatic"]
   pulse: 9
   curation:
-    status: curated
-    lastUpdated: 2026-06-28
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03042104"
     notes: "Updated EARLY TAVR efficacy results presented at New York Valves 2026 (Jun 24-26); human curator may refresh outcomeSummary with the longer-term data."
-
 - id: trial-progress
   type: trial
   name: "PROGRESS"
@@ -979,6 +1200,7 @@
 - id: trial-smart
   type: trial
   name: "SMART"
+  nctId: NCT04722250
   phase: "RCT"
   status: completed
   timeline:
@@ -996,13 +1218,17 @@
   resultStatus: mixed
   references: ["https://clinicaltrials.gov/search?term=SMART+trial+small+annulus+TAVR"]
   pulse: 6
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT04722250"
 - id: trial-acurate-ide
   type: trial
   name: "ACURATE IDE"
+  nctId: NCT03735667
   phase: "Pivotal RCT"
-  status: completed
+  status: active
   timeline:
     date: "2019-06-10"
     precision: day
@@ -1011,17 +1237,24 @@
     source: "https://clinicaltrials.gov/study/NCT03735667"
   conditions: [cond-as]
   therapies: [dev-acurate-neo2]
+  enrollment: 1500
   year: 2025
   primaryEndpoint: "Composite of death, stroke, or rehospitalization at 1 year"
   outcomeSummary: "ACURATE neo2 failed to meet noninferiority versus contemporary TAVR valves; results contributed to Boston Scientific discontinuing the platform."
   resultStatus: negative
   references: ["https://clinicaltrials.gov/search?term=ACURATE+IDE"]
   pulse: 6
-  curation: { status: curated, lastUpdated: 2026-06-22, notes: "Confirm publication/readout year and exact endpoint result." }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03735667"
+      - "https://pubmed.ncbi.nlm.nih.gov/40412426/"
+    notes: "Enrollment is the 1,500-participant randomized main comparison reported in the primary paper. A secondary reproduction of the registry listed 1,948 total participants, but the accessible primary registry record could not be inspected to verify that wider program total; it is not substituted here. The main cohort did not meet its prespecified noninferiority criterion."
 - id: trial-align-ar
   type: trial
   name: "ALIGN-AR"
+  nctId: NCT04415047
   phase: "Pivotal (single-arm)"
   status: completed
   timeline:
@@ -1040,14 +1273,15 @@
   references: ["https://clinicaltrials.gov/search?term=ALIGN-AR+JenaValve"]
   pulse: 8
   curation:
-    status: curated
-    lastUpdated: 2026-06-22
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT04415047"
     notes: "A new sub-analysis (presented at New York Valves 2026, recapped in a JenaValve release 2026-07-01) examined predictors of pacemaker implantation after Trilogy in AR, finding a mechanism distinct from the annular-oversizing driver seen in AS. Source: https://www.globenewswire.com/news-release/2026/07/01/3320637/0/en/jenavalve-recaps-key-highlights-including-late-breaking-clinical-data-from-new-york-valves-2026.html."
-
-# --- Mitral TEER ---
 - id: trial-everest-2
   type: trial
   name: "EVEREST II"
+  nctId: NCT00209274
   phase: "RCT"
   status: completed
   timeline:
@@ -1065,11 +1299,15 @@
   resultStatus: mixed
   references: ["https://clinicaltrials.gov/search?term=EVEREST+II+MitraClip"]
   pulse: 2
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT00209274"
 - id: trial-coapt
   type: trial
   name: "COAPT"
+  nctId: NCT01626079
   phase: "Pivotal RCT"
   status: completed
   timeline:
@@ -1087,11 +1325,15 @@
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=COAPT+MitraClip"]
   pulse: 6
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT01626079"
 - id: trial-mitra-fr
   type: trial
   name: "MITRA-FR"
+  nctId: NCT01920698
   phase: "RCT"
   status: completed
   timeline:
@@ -1109,11 +1351,15 @@
   resultStatus: negative
   references: ["https://clinicaltrials.gov/search?term=MITRA-FR"]
   pulse: 4
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT01920698"
 - id: trial-clasp-iid
   type: trial
   name: "CLASP IID"
+  nctId: NCT03706833
   phase: "Pivotal RCT"
   status: active
   timeline:
@@ -1131,12 +1377,15 @@
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=CLASP+IID+PASCAL"]
   pulse: 5
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
-# --- Tricuspid ---
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03706833"
 - id: trial-triluminate
   type: trial
   name: "TRILUMINATE Pivotal"
+  nctId: NCT03904147
   phase: "Pivotal RCT"
   status: completed
   timeline:
@@ -1154,11 +1403,15 @@
   resultStatus: mixed
   references: ["https://clinicaltrials.gov/search?term=TRILUMINATE+TriClip"]
   pulse: 7
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03904147"
 - id: trial-triscend-2
   type: trial
   name: "TRISCEND II"
+  nctId: NCT04482062
   phase: "Pivotal RCT"
   status: active
   timeline:
@@ -1169,15 +1422,18 @@
     source: "https://clinicaltrials.gov/study/NCT04482062"
   conditions: [cond-tr]
   therapies: [dev-evoque]
-  enrollment: 400
+  enrollment: 864
   year: 2024
   primaryEndpoint: "Hierarchical composite incl. symptoms/QoL and clinical events"
   outcomeSummary: "EVOQUE transcatheter tricuspid replacement improved symptoms, function, and quality of life versus optimized medical therapy."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=TRISCEND+II+EVOQUE"]
   pulse: 8
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT04482062"
 - id: trial-adaptr-fih
   type: trial
   name: "adapTR First-in-Human Study"
@@ -1217,6 +1473,7 @@
 - id: trial-summit
   type: trial
   name: "SUMMIT"
+  nctId: NCT03433274
   phase: "Pivotal RCT"
   status: active
   timeline:
@@ -1227,17 +1484,49 @@
     source: "https://clinicaltrials.gov/study/NCT03433274"
   conditions: [cond-mr]
   therapies: [dev-tendyne, dev-mitraclip]
+  enrollment: 958
   year: 2025
   primaryEndpoint: "Composite of mortality, HF hospitalization, and QoL"
   outcomeSummary: "US pivotal trial of Tendyne TMVR (incl. randomization vs TEER in suitable anatomy); informs the role of mitral replacement vs repair."
   resultStatus: mixed
   references: ["https://clinicaltrials.gov/search?term=SUMMIT+Tendyne"]
   pulse: 6
-  curation: { status: curated, lastUpdated: 2026-06-22, notes: "Confirm readout details/year as data mature." }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03433274"
+    notes: "958 is the planned total across the multi-cohort SUMMIT program (randomized and nonrandomized Tendyne cohorts, including the MAC cohort), not the randomized Tendyne-versus-TEER comparison denominator."
+- id: trial-summit-tirzepatide
+  type: trial
+  name: "SUMMIT (tirzepatide in obesity-related HFpEF)"
+  nctId: NCT04847557
+  phase: "Phase 3 RCT"
+  status: completed
+  timeline:
+    date: '2021-04-20'
+    precision: day
+    dateBasis: trial-start
+    event: Trial start
+    source: 'https://trials.lilly.com/en-US/trial/282998'
+  conditions: [cond-hfpef]
+  therapies: [rx-tirzepatide]
+  enrollment: 731
+  year: 2025
+  primaryEndpoint: "Time to first cardiovascular death or worsening heart-failure event; KCCQ clinical summary score change at 52 weeks"
+  outcomeSummary: "In 731 randomized participants with obesity and HFpEF (LVEF >=50%), tirzepatide reduced the composite risk of cardiovascular death or worsening heart failure and improved health status versus placebo. This is the tirzepatide SUMMIT trial, distinct from the Tendyne TMVR SUMMIT study."
+  resultStatus: positive
+  references: ['https://clinicaltrials.gov/study/NCT04847557', 'https://www.nejm.org/doi/10.1056/NEJMoa2410027', 'https://trials.lilly.com/en-US/trial/282998']
+  curation:
+    status: draft
+    lastUpdated: '2026-10-03'
+    sources: ['https://clinicaltrials.gov/study/NCT04847557', 'https://www.nejm.org/doi/10.1056/NEJMoa2410027', 'https://trials.lilly.com/en-US/trial/282998']
+    notes: "731 is the actual randomized population reported by the primary NEJM paper; Lilly's trial page reports trial completion on 2024-07-02. Keep separate from the Tendyne SUMMIT trial (NCT03433274)."
 
 - id: trial-apollo-tmvr
   type: trial
   name: "APOLLO"
+  nctId: NCT03242642
   phase: "Pivotal RCT"
   status: active
   timeline:
@@ -1253,11 +1542,16 @@
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/search?term=APOLLO+Intrepid+transcatheter+mitral"]
   pulse: 4
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT03242642"
+    notes: "A third-party registry mirror lists a total target of 1,056, but the accessible primary ClinicalTrials.gov record and a pivotal paper with an exact total were not available to verify it. Enrollment is left unset rather than importing that number."
 - id: trial-encircle
   type: trial
   name: "ENCIRCLE"
+  nctId: NCT04153292
   phase: "Pivotal RCT"
   status: active
   timeline:
@@ -1274,16 +1568,18 @@
   references: ["https://clinicaltrials.gov/search?term=ENCIRCLE+SAPIEN+M3"]
   pulse: 6
   curation:
-    status: curated
-    lastUpdated: 2026-06-28
-    notes: "New York Valves 2026 (Jun 24-26): one-year ENCIRCLE-MAC Registry outcomes presented, supporting safety/effectiveness/QoL of SAPIEN M3 in mitral annular calcification. CONFIRMED: SAPIEN M3 received FDA approval 2025-12-23 (see dev-sapien-m3 notes for sources); this pivotal ENCIRCLE trial supported that approval."
-
-# --- TPVR ---
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT04153292"
+      - "https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250019D.pdf"
+    notes: "FDA SSED P250019 reports 299 treated in the main cohort. A third-party registry mirror lists an estimated 900 across ENCIRCLE cohorts, but that total could not be checked in the accessible primary registry record, so enrollment remains unset. New York Valves 2026: one-year ENCIRCLE-MAC registry outcomes were presented."
 - id: trial-harmony
   type: trial
   name: "Harmony TPV Pivotal"
+  nctId: NCT02979587
   phase: "Pivotal (single-arm)"
-  status: completed
+  status: active
   timeline:
     date: "2017-01-01"
     precision: month
@@ -1292,14 +1588,19 @@
     source: "https://clinicaltrials.gov/study/NCT02979587"
   conditions: [cond-pv]
   therapies: [dev-harmony]
+  enrollment: 86
   year: 2021
   primaryEndpoint: "Acceptable hemodynamic function and freedom from PV dysfunction"
   outcomeSummary: "Harmony TPV provided effective relief of pulmonary regurgitation in native/repaired RVOT, supporting FDA approval."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=Harmony+TPV+pulmonary"]
   pulse: 3
-  curation: { status: curated, lastUpdated: 2026-06-22 }
-
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - "https://clinicaltrials.gov/study/NCT02979587"
+    notes: "ClinicalTrials.gov reports 86 actual participants for NCT02979587. FDA post-approval reporting describes a separate 150-implant follow-up cohort; that frame is not substituted for registry enrollment."
 - id: trial-closure-af
   type: trial
   name: CLOSURE-AF
@@ -1310,45 +1611,63 @@
   therapies:
   - dev-watchman-flx
   - dev-amulet
-  enrollment: 888
+  enrollment: 912
   year: 2026
   primaryEndpoint: Composite of stroke, systemic embolism, major bleeding, or cardiovascular/unexplained death
-  outcomeSummary: LAAO failed to demonstrate noninferiority to best medical (anticoagulant) therapy in patients with AF at high stroke and bleeding risk, with significantly worse composite outcomes overall; a later sex-specific analysis found the harm was concentrated in women.
+  outcomeSummary: >-
+    LAA closure did not meet the prespecified noninferiority criterion versus physician-directed medical therapy in high-risk AF at median
+    three-year follow-up (P=.44 for noninferiority). The study used physician-selected devices and is not an exact-generation comparison.
   resultStatus: negative
   references:
   - https://www.tctmd.com/news/closure-af-worse-outcomes-laao-driven-results-women
+  nctId: NCT03463317
   curation:
     status: draft
-    lastUpdated: '2026-09-23'
+    lastUpdated: "2026-10-03"
     sources:
-    - https://www.tctmd.com/news/closure-af-worse-outcomes-laao-driven-results-women
-    - https://www.tctmd.com/news/cms-finalizes-anticipated-updates-national-coverage-tavi
-    notes: German DZHK-sponsored multicenter RCT; main results published in NEJM (~Nov 2025), sex-specific subgroup presented at ESC 2026 and already covered by news-2026-09-11-closure-af-sex-specific-analysis-raises-new-caution-about-laao-in-older in data/news.yaml, which currently only links to cond-af. NCT number and the exact per-site device mix were NOT independently verified (multiple commercial LAAO devices were reportedly used across sites) -- therapies list is representative only. VERIFY nctId and device list before promoting to curated.
+      - https://www.tctmd.com/news/closure-af-worse-outcomes-laao-driven-results-women
+      - https://www.tctmd.com/news/cms-finalizes-anticipated-updates-national-coverage-tavi
+      - https://www.nejm.org/doi/full/10.1056/NEJMoa2513310
+      - https://pubmed.ncbi.nlm.nih.gov/41849741/
+      - https://clinicaltrials.gov/study/NCT03463317
+    notes: >-
+      2026-10-03 audit: Primary NEJM indexed abstract (online March 18, 2026) directly verifies NCT03463317 and 912 randomized;
+      primary-endpoint analysis included 446 device and 442 medical-therapy participants (888 analyzed). Therapy links are representative; the
+      precise commercial device mix was not independently verified. The separate sex-specific conference report remains draft news and is not
+      generalized into this trial outcome.
 
 - id: trial-luminara
   type: trial
   name: LUMINARA
+  nctId: NCT06299826
   phase: Phase 2b
   status: completed
-  conditions:
-  - cond-hfref
-  therapies:
-  - rx-azd5462
+  timeline:
+    date: '2024-06-04'
+    precision: day
+    dateBasis: trial-start
+    event: Trial start
+    source: 'https://clinicaltrials.gov/study/NCT06299826'
+  conditions: [cond-hfref]
+  therapies: [rx-azd5462]
   enrollment: 375
   year: 2026
-  primaryEndpoint: Dose-ranging hemodynamic, echocardiographic, and safety/tolerability measures at 24 weeks
-  outcomeSummary: Lowest studied dose (20 mg) of AZD5462 reduced end-systolic volume index in an HFrEF cohort (LVEF <=35%) and lowered systemic vascular resistance in a separate LVEF 41-55% cohort, with good tolerability and no excess hypotension or volume overload; the trial was not powered for clinical outcomes.
-  resultStatus: positive
+  primaryEndpoint: Dose-ranging echocardiographic and hemodynamic measures at week 25
+  outcomeSummary: "In 375 randomized participants (235 with LVEF <=35%; 140 with LVEF 41-55%), AZD5462 was well tolerated. The 20 mg dose showed a borderline placebo-adjusted reduction in end-systolic volume index in cohort A, while each dose lowered systemic vascular resistance index in cohort B; the study was not powered for clinical outcomes."
+  resultStatus: mixed
   references:
-  - https://pubmed.ncbi.nlm.nih.gov/42668430/
+    - 'https://clinicaltrials.gov/study/NCT06299826'
+    - 'https://pubmed.ncbi.nlm.nih.gov/42668430/'
+    - 'https://academic.oup.com/eschf/article/13/3/xvaf007/8415024'
   curation:
     status: draft
-    lastUpdated: '2026-09-23'
+    lastUpdated: '2026-10-03'
     sources:
-    - https://www.escardio.org/news/press/press-releases/novel-drug-shows-promise-in-an-early-phase-trial-in-heart-failure/
-    notes: 69-site, 10-country dose-ranging study presented as an ESC 2026 Hot Line and published in Circulation. NCT number not independently verified -- VERIFY before promoting to curated.
+      - 'https://clinicaltrials.gov/study/NCT06299826'
+      - 'https://pubmed.ncbi.nlm.nih.gov/42668430/'
+      - 'https://academic.oup.com/eschf/article/13/3/xvaf007/8415024'
+    notes: "The primary-results paper identifies NCT06299826 and reports 375 randomized participants (235 in cohort A and 140 in cohort B). This differs from the design paper's approximate planned total of 360; the reported enrollment reflects randomized participants."
 
-# =============== STRUCTURAL HEART / HF RECONSTRUCTION ====================
 - id: trial-pld-multicenter
   type: trial
   name: Occlutech PLD multicenter study
@@ -1361,9 +1680,9 @@
   primaryEndpoint: Procedural closure success and long-term safety/clinical outcomes
   outcomeSummary: The 112-patient full analysis set reported procedural success of 91.3% for mitral and 90.0% for aortic PVLs; among 80 patients with two-year follow-up, NYHA III/IV fell from 80% to 14.1%.
   resultStatus: positive
-  references: [https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/]
-  links: [{ label: Long-term multicenter publication, url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/ }]
-  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/] }
+  references: ['https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/']
+  links: [{ label: Long-term multicenter publication, url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/' }]
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: ['https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/'] }
 
 - id: trial-rechord
   type: trial
@@ -1378,8 +1697,19 @@
   primaryEndpoint: Safety and effectiveness of NeoChord DS1000 versus conventional open surgical repair
   outcomeSummary: ClinicalTrials.gov lists the study as active, not recruiting in its 2026-04-08 update, with estimated enrollment of 585; do not describe it as halted.
   resultStatus: ongoing
-  references: [https://clinicaltrials.gov/study/NCT02803957, https://www.neochord.com/wp-content/uploads/2024/12/RP-602000-001_DS1000_SSCP_Rev_B_FINAL_05Dec2024.docx.pdf]
-  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://clinicaltrials.gov/study/NCT02803957] }
+  references: ['https://clinicaltrials.gov/study/NCT02803957', 'https://www.neochord.com/wp-content/uploads/2024/12/RP-602000-001_DS1000_SSCP_Rev_B_FINAL_05Dec2024.docx.pdf']
+  timeline:
+    date: "2016-11-03"
+    precision: day
+    dateBasis: trial-start
+    event: Actual study start
+    source: https://clinicaltrials.gov/study/NCT02803957
+    notes: Actual start date from the indexed official registry record.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02803957
 
 - id: trial-mi-chord-pilot
   type: trial
@@ -1393,8 +1723,8 @@
   primaryEndpoint: 30-day mortality; implantation time
   outcomeSummary: FDA De Novo review reports a prospective 12-patient OUS cohort with follow-up completed in January 2023; summary supports De Novo authorization, but this compact record does not infer an unreported effect estimate.
   resultStatus: positive
-  references: [https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf]
-  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf] }
+  references: ['https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf']
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: ['https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf'] }
 
 - id: trial-tricaval
   type: trial
@@ -1410,8 +1740,20 @@
   primaryEndpoint: Efficacy and safety of inferior caval valve implantation for severe secondary tricuspid regurgitation
   outcomeSummary: Terminated for safety concerns after valve dislodgement/migration events; the safety stop applies to this Edwards Sapien XT IVC study and does not establish that other bicaval systems were halted.
   resultStatus: terminated
-  references: [https://clinicaltrials.gov/study/NCT02387697, https://pubmed.ncbi.nlm.nih.gov/31929100/]
-  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://clinicaltrials.gov/study/NCT02387697, https://pubmed.ncbi.nlm.nih.gov/31929100/] }
+  references: ['https://clinicaltrials.gov/study/NCT02387697', 'https://pubmed.ncbi.nlm.nih.gov/31929100/']
+  timeline:
+    date: "2015-01-01"
+    precision: month
+    dateBasis: trial-start
+    event: Actual study start
+    source: https://clinicaltrials.gov/study/NCT02387697
+    notes: Registry reports January 2015 only; first day is a storage convention, not a reported start day.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02387697
+      - https://pubmed.ncbi.nlm.nih.gov/31929100/
 
 - id: trial-alive-revivent
   type: trial
@@ -1421,12 +1763,13 @@
   status: completed
   conditions: [cond-ischemic-lv-remodeling, cond-hfref]
   therapies: [dev-revivent-tc]
+  enrollment: 126
   year: 2025
   primaryEndpoint: 12-month hierarchical clinical effectiveness endpoint
   outcomeSummary: Among 126 patients (84 device, 42 control), 30-day major adverse events occurred in 17.9% of treated patients; LV dimensions decreased, but the primary 12-month hierarchical composite did not differ significantly (win ratio 1.13; P=0.32).
   resultStatus: mixed
-  references: [https://pubmed.ncbi.nlm.nih.gov/39797846/, https://clinicaltrials.gov/study/NCT02931240]
-  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://pubmed.ncbi.nlm.nih.gov/39797846/] }
+  references: ['https://pubmed.ncbi.nlm.nih.gov/39797846/', 'https://clinicaltrials.gov/study/NCT02931240']
+  curation: { status: draft, lastUpdated: '2026-10-03', sources: ['https://pubmed.ncbi.nlm.nih.gov/39797846/', 'https://clinicaltrials.gov/study/NCT02931240'], notes: 'The primary publication reports 126 actual enrollees (84 device, 42 nonrandomized control); the overall design is prospective and nonrandomized.' }
 
 - id: trial-peerless-hf
   type: trial
@@ -1437,12 +1780,13 @@
   lifecycleStatus: halted
   conditions: [cond-hfref]
   therapies: [dev-heartnet]
+  enrollment: 210
   year: 2012
   primaryEndpoint: Change in peak oxygen consumption at 6 months
   outcomeSummary: Trial stopped enrollment after interim futility; ClinicalTrials.gov records termination (follow-up resources unavailable). This is trial status only and does not establish that all epicardial restraint devices were retired.
   resultStatus: terminated
-  references: [https://clinicaltrials.gov/study/NCT00382863, https://pubmed.ncbi.nlm.nih.gov/22633302/]
-  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://clinicaltrials.gov/study/NCT00382863, https://pubmed.ncbi.nlm.nih.gov/22633302/] }
+  references: ['https://clinicaltrials.gov/study/NCT00382863', 'https://pubmed.ncbi.nlm.nih.gov/22633302/']
+  curation: { status: draft, lastUpdated: '2026-10-03', sources: ['https://clinicaltrials.gov/study/NCT00382863', 'https://pubmed.ncbi.nlm.nih.gov/22633302/'], notes: "The primary publication reports treatment and control groups totaling 210 participants. A secondary contemporaneous account reports 217 enrolled, while the protocol target was 272; the discrepancy from the primary report's analysis population is unresolved. Enrollment reflects the primary publication population." }
 
 - id: trial-acorn-corcap
   type: trial
@@ -1451,12 +1795,13 @@
   status: completed
   conditions: [cond-hfref]
   therapies: [dev-corcap]
+  enrollment: 107
   year: 2013
   primaryEndpoint: Survival, adverse events, cardiac procedures, NYHA class, and echocardiographic remodeling
   outcomeSummary: The 107-patient no-MVR stratum randomized 57 to CorCap and 50 control; only 50 completed five-year follow-up. At five years survival was similar, while LV end-diastolic volume decreased and more CorCap patients improved by at least one NYHA class.
   resultStatus: mixed
-  references: [https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/, https://pubmed.ncbi.nlm.nih.gov/21762937/]
-  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/, https://pubmed.ncbi.nlm.nih.gov/21762937/], notes: "The 107-person five-year no-MVR stratum is the original Acorn RCT follow-up, not NCT00630266 (the separate 50-person confirmatory study)." }
+  references: ['https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/', 'https://pubmed.ncbi.nlm.nih.gov/21762937/']
+  curation: { status: draft, lastUpdated: '2026-10-03', sources: ['https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/', 'https://pubmed.ncbi.nlm.nih.gov/21762937/'], notes: "The 107 participants are the five-year no-MVR stratum (57 device, 50 control), not the full original Acorn RCT or NCT00630266 (the separate 50-person confirmatory study); 50 participants completed five-year follow-up." }
 
 - id: trial-corcinch-hf
   type: trial
@@ -1471,8 +1816,8 @@
   primaryEndpoint: Six-month safety and efficacy endpoints; 12-month follow-up
   outcomeSummary: The ClinicalTrials.gov record lists the pivotal study as suspended as of its June 2026 update; this is a study status and does not mean the AccuCinch device was withdrawn. Earlier enrollment milestones and two-year early-study results are separate from pivotal evidence.
   resultStatus: ongoing
-  references: [https://clinicaltrials.gov/study/NCT04331769, https://www.ancoraheart.com/press_releases/ancora-heart-inc-reports-two-year-results/]
-  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://clinicaltrials.gov/study/NCT04331769] }
+  references: ['https://clinicaltrials.gov/study/NCT04331769', 'https://www.ancoraheart.com/press_releases/ancora-heart-inc-reports-two-year-results/']
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: ['https://clinicaltrials.gov/study/NCT04331769'] }
 
 - id: trial-tricento-registry
   type: trial
@@ -1486,8 +1831,8 @@
   primaryEndpoint: Procedural and clinical outcomes after custom bicaval valved-stent implantation
   outcomeSummary: Technical success was 100%; 3 asymptomatic prosthesis fractures were detected; median follow-up was 61 days and overall survival at one year was 76%. Small retrospective series.
   resultStatus: mixed
-  references: [https://pubmed.ncbi.nlm.nih.gov/35236096/]
-  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://pubmed.ncbi.nlm.nih.gov/35236096/] }
+  references: ['https://pubmed.ncbi.nlm.nih.gov/35236096/']
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: ['https://pubmed.ncbi.nlm.nih.gov/35236096/'] }
 
 - id: trial-kiss-pvl
   type: trial
@@ -1501,8 +1846,8 @@
   primaryEndpoint: All-cause death during follow-up
   outcomeSummary: Transcatheter closure was initial management in 171 patients and surgery in 164; technical success was 78.9% versus 76.2%, and adjusted long-term mortality did not significantly differ. AVP III was used in 140/171 transcatheter cases; outcomes are not device-specific.
   resultStatus: mixed
-  references: [https://pubmed.ncbi.nlm.nih.gov/38156599/]
-  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://pubmed.ncbi.nlm.nih.gov/38156599/] }
+  references: ['https://pubmed.ncbi.nlm.nih.gov/38156599/']
+  curation: { status: curated, lastUpdated: '2026-09-28', sources: ['https://pubmed.ncbi.nlm.nih.gov/38156599/'] }
 
 - id: trial-momentum-3
   type: trial
@@ -1512,9 +1857,137 @@
   status: completed
   conditions: [cond-hfref]
   therapies: [dev-heartmate-3, dev-heartmate-ii]
+  enrollment: 1028
   year: 2022
   primaryEndpoint: Survival to transplant, recovery, or 24 months of support free of disabling stroke or pump replacement
   outcomeSummary: Five-year follow-up reported 58.4% survival with HeartMate 3; FDA-approved durable MCS remains an established option for advanced HFrEF.
   resultStatus: positive
-  references: [https://www.acc.org/latest-in-cardiology/articles/2023/07/25/13/36/sustained-superiority-of-the-heartmate-3-lvad, https://clinicaltrials.gov/study/NCT02224755]
-  curation: { status: curated, lastUpdated: '2026-09-28', sources: [https://www.acc.org/latest-in-cardiology/articles/2023/07/25/13/36/sustained-superiority-of-the-heartmate-3-lvad] }
+  references: ['https://www.acc.org/latest-in-cardiology/articles/2023/07/25/13/36/sustained-superiority-of-the-heartmate-3-lvad', 'https://clinicaltrials.gov/study/NCT02224755']
+  timeline:
+    date: "2014-09-02"
+    precision: day
+    dateBasis: trial-start
+    event: Actual study start
+    source: https://clinicaltrials.gov/study/NCT02224755
+    notes: Actual start date from the indexed official registry record.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.acc.org/latest-in-cardiology/articles/2023/07/25/13/36/sustained-superiority-of-the-heartmate-3-lvad
+      - https://clinicaltrials.gov/study/NCT02224755
+      - https://www.nejm.org/doi/10.1056/NEJMoa1900486
+    notes: >-
+      The NCT02224755 pivotal IDE cohort randomized 1,028 participants. This excludes the separate continued-access protocol and later pooled
+      analyses with different denominators.
+
+- id: trial-scout-hcm
+  type: trial
+  name: SCOUT-HCM
+  nctId: NCT06253221
+  phase: Phase 3 randomized double-blind placebo-controlled trial
+  status: active
+  conditions:
+    - cond-hcm
+  therapies:
+    - rx-mavacamten
+  enrollment: 44
+  year: 2026
+  primaryEndpoint: Change from baseline in Valsalva LVOT gradient at week 28
+  outcomeSummary: >-
+    Mavacamten reduced the week-28 Valsalva LVOT gradient versus placebo; randomized adolescents aged 12–<18 had symptomatic NYHA II–III
+    obstructive HCM.
+  resultStatus: positive
+  references:
+    - https://clinicaltrials.gov/study/NCT06253221
+    - https://www.nejm.org/doi/full/10.1056/NEJMoa2601103
+    - >-
+      https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart
+  timeline:
+    date: "2024-04-17"
+    precision: day
+    dateBasis: trial-start
+    event: Actual study start
+    source: https://clinicaltrials.gov/study/NCT06253221
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://packageinserts.bms.com/pi/pi_camzyos.pdf
+      - >-
+        https://news.bms.com/news/details/2026/U-S--Food-and-Drug-Administration-Approves-Expanded-Indication-for-Bristol-Myers-Squibbs-CAMZYOS-mavacamten-for-the-Treatment-of-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-oHCM-in-Adults-and-Pediatric-Patients/default.aspx
+      - https://pubmed.ncbi.nlm.nih.gov/41038603/
+      - https://clinicaltrials.gov/study/NCT06253221
+    notes: >-
+      2026-10-03 audit: 44 randomized participants (23 mavacamten, 21 placebo), aged 12–<18 and body weight ≥35 kg; trial eligibility differs
+      from the ≥30 kg US label. Indexed official CTG record verifies actual start April 17, 2024 and active, not recruiting; its long-term
+      extension continues after the positive primary readout.
+
+- id: trial-autus-pivotal
+  type: trial
+  name: AUTUS Valve Pivotal Study
+  nctId: NCT05006404
+  phase: Pivotal single-arm device study
+  status: active
+  conditions:
+    - cond-pv
+  therapies:
+    - dev-autus
+  enrollment: 62
+  resultStatus: ongoing
+  primaryEndpoint: Device-related complications at 30 days; acceptable hemodynamic performance at 6 months.
+  outcomeSummary: >-
+    Registry lists 62 actual participants and active, not recruiting status; primary completion August 24, 2026, with long-term
+    follow-up ongoing. Registry has no posted results; FDA separately summarizes the approval study.
+  references:
+    - https://clinicaltrials.gov/study/NCT05006404
+    - https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+  links:
+    - label: FDA approval-study summary
+      url: https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+  timeline:
+    date: '2024-02-05'
+    precision: day
+    dateBasis: trial-start
+    event: Registered pivotal study actual start
+    source: https://clinicaltrials.gov/study/NCT05006404
+  curation:
+    status: draft
+    lastUpdated: '2026-10-07'
+    sources:
+      - https://clinicaltrials.gov/study/NCT05006404
+      - https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+    notes: >-
+      WOR-26: Official API protocolSection identificationModule, statusModule, designModule, eligibilityModule and outcomesModule
+      retrieved 2026-10-07. Last update posted 2026-09-28 (submitted September 24); 62 is actual registry enrollment, not every
+      endpoint denominator. Registered ages 18 months–16 years are trial criteria, not approved labeling. Separate from the
+      11-patient EFS and the continued-access target.
+
+- id: trial-autus-continued-access
+  type: trial
+  name: AUTUS Valve Continued Access Study
+  nctId: NCT07466745
+  phase: Continued-access single-arm device study
+  status: recruiting
+  conditions:
+    - cond-pv
+  therapies:
+    - dev-autus
+  enrollment: 36
+  resultStatus: ongoing
+  primaryEndpoint: Device-related complications at 30 days; acceptable hemodynamic performance at 6 months.
+  outcomeSummary: >-
+    Registry lists recruiting status and 36 estimated participants; actual start July 27, 2026 and estimated primary completion
+    October 30, 2027. No posted results.
+  references:
+    - https://clinicaltrials.gov/study/NCT07466745
+  curation:
+    status: draft
+    lastUpdated: '2026-10-07'
+    sources:
+      - https://clinicaltrials.gov/study/NCT07466745
+    notes: >-
+      WOR-26: Official API identificationModule, statusModule, designModule, eligibilityModule and outcomesModule retrieved
+      2026-10-07; last update posted 2026-08-10. The 36 count is a registered estimate, not actual enrollment or an
+      approval-cohort denominator. Keep distinct from pivotal NCT05006404. Registered follow-up extends to 2036; exact device
+      model not disclosed.

@@ -1,9 +1,11 @@
 /** Compile reviewed/draft intelligence YAML into a deterministic public JSON payload. */
-import { mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs'
 import { dirname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import yaml from 'js-yaml'
 import type { IntelligenceData } from '../src/types/intelligence'
+import type { GraphData } from '../src/types/entities'
+import { addGraphBibliography, applyCitationOverrides, type CitationOverride } from './intelligence/bibliography'
 import { defaultIntelligencePaths, loadIntelligenceSource } from './intelligence/catalog'
 import { loadLegacyIds, validateIntelligence } from './intelligence/validation'
 
@@ -18,6 +20,7 @@ export interface BuildIntelligenceOptions {
   schema: string
   legacyDataDir: string
   graph?: string
+  citationMetadata?: string
 }
 
 // Stable key and identified-record order makes generated diffs reviewable and
@@ -39,7 +42,9 @@ function canonicalize(value: unknown): unknown {
 export function compileIntelligence(options: BuildIntelligenceOptions): { data: IntelligenceData; json: string; changed: boolean } {
   const source = loadIntelligenceSource(options)
   const comparative = options.comparative ? yaml.load(readFileSync(options.comparative, 'utf8'), { schema: yaml.CORE_SCHEMA }) : undefined
-  const combined = comparative === undefined ? source : { ...(source as object), comparative }
+  let combined = (comparative === undefined ? source : { ...source, comparative }) as unknown as IntelligenceData
+  if (options.graph && existsSync(options.graph)) combined = addGraphBibliography(combined, JSON.parse(readFileSync(options.graph, 'utf8')) as GraphData)
+  if (options.citationMetadata && existsSync(options.citationMetadata)) combined = applyCitationOverrides(combined, yaml.load(readFileSync(options.citationMetadata, 'utf8'), { schema: yaml.CORE_SCHEMA }) as CitationOverride[])
   const legacyIds = loadLegacyIds(options.legacyDataDir, options.graph)
   const data = validateIntelligence(combined, { schemaPath: options.schema, legacyIds })
   const json = `${JSON.stringify(canonicalize(data), null, 2)}\n`
@@ -71,7 +76,7 @@ function parseArgs(argv: string[]): BuildIntelligenceOptions {
   for (let index = 0; index < argv.length; index++) {
     const argument = argv[index]
     if (argument === '--help') {
-      console.log('Usage: tsx scripts/build-intelligence.ts [--input path] [--taxonomy path] [--catalog dir] [--comparative path] [--output path] [--schema path] [--legacy-data path] [--graph path]')
+      console.log('Usage: tsx scripts/build-intelligence.ts [--input path] [--taxonomy path] [--catalog dir] [--comparative path] [--citations path] [--output path] [--schema path] [--legacy-data path] [--graph path]')
       process.exit(0)
     }
     const value = argv[++index]
@@ -84,6 +89,7 @@ function parseArgs(argv: string[]): BuildIntelligenceOptions {
     else if (argument === '--schema') options.schema = resolve(ROOT, value)
     else if (argument === '--legacy-data') options.legacyDataDir = resolve(ROOT, value)
     else if (argument === '--graph') options.graph = resolve(ROOT, value)
+    else if (argument === '--citations') options.citationMetadata = resolve(ROOT, value)
     else throw new Error(`unknown argument ${argument}`)
   }
   return options

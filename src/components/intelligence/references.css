@@ -1,0 +1,28 @@
+.evidence-references { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); min-width: 0; }
+.evidence-references-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .65rem; margin-bottom: .65rem; }
+.evidence-references .evidence-references-head h3 { margin: 0; font-size: 1.05rem; color: var(--text); }
+.evidence-references h3 span, .evidence-reference-group h4 span { color: var(--text-3); font-size: .85em; font-weight: 400; margin-left: .4rem; }
+.evidence-references .evidence-references-export { border: 1px solid var(--border); border-radius: 5px; background: var(--surface); color: var(--link); padding: .4rem .7rem; font: inherit; font-size: .85rem; cursor: pointer; }
+.evidence-references-export:disabled { opacity: .5; cursor: default; }
+.evidence-references-export:hover:not(:disabled) { border-color: var(--link); }
+.evidence-references-export:focus-visible, .evidence-references summary:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+.evidence-references-intro, .evidence-reference-meta, .evidence-reference-empty { color: var(--text-2); font-size: .85rem; line-height: 1.5; }
+.evidence-reference-group { margin-top: 1rem; }
+.evidence-reference-group h4 { margin: 0 0 .4rem; font-size: .9rem; }
+.evidence-reference-group > ul { list-style: none; padding: 0; margin: 0; }
+.evidence-reference-group > ul > li { padding: .6rem 0; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
+.evidence-reference-group > ul > li:last-child { border-bottom: 0; }
+.evidence-reference-title { font-size: .9rem; font-weight: 600; line-height: 1.5; }
+.evidence-references .evidence-reference-meta { margin: .2rem 0; }
+.evidence-reference-locators { font-size: .8rem; line-height: 1.5; color: var(--text-2); }
+.evidence-references summary { cursor: pointer; }
+.evidence-reference-locators ul { padding-left: 1.25rem; margin-top: .4rem; }
+.evidence-patent-connection { font-size: .85rem; line-height: 1.5; margin: .4rem 0; }
+.evidence-patent-connection a { display: block; }
+.evidence-references-compact { margin-top: .8rem; padding-top: .8rem; }
+.evidence-reference-expand > summary { color: var(--link); font-size: .85rem; }
+.intel-reference-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 1.5rem; }
+.intel-reference-grid article { min-width: 0; }
+.intel-reference-grid h3 { margin-bottom: 0; }
+.intel-spec-detail .evidence-references, .intel-spec-detail .evidence-references a, .detail .evidence-references a { white-space: normal; }
+.profile-family-grid li .evidence-references button { width: auto; display: inline-block; }

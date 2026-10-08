@@ -9,7 +9,26 @@
   hq: "Marlborough, MA, USA"
   website: "https://www.bostonscientific.com"
   description: "Medical device maker; LAA closure (Watchman franchise)."
-  curation: { status: curated, lastUpdated: 2026-06-22, sources: ["https://www.bostonscientific.com"] }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.bostonscientific.com
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013
+      - https://www.watchman.com/content/dam/watchman/downloads/download-center/about-watchman/WATCHMAN_Specsheet.pdf
+      - https://www.jacc.org/doi/10.1016/j.jcin.2020.06.056
+      - https://citoday.com/articles/2018-may-june/the-spectrum-of-devices-for-percutaneous-left-atrial-appendage-occlusion
+      - https://www.sec.gov/Archives/edgar/data/885725/000088572516000028/a2015form10-k.htm
+      - https://www.sec.gov/Archives/edgar/data/885725/000088572516000035/q12016form10-q.htm
+      - https://www.bfarm.de/SharedDocs/Kundeninfos/EN/11/2016/02623-16_kundeninfo_en.pdf?__blob=publicationFile
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S035B.pdf
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S043
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S074
+      - >-
+        https://www.bostonscientific.com/content/dam/bostonscientific/StructuralHeart/acurate-neo2-eu/2023-updates/SH-621403-AE-ACURATE_neo2_product_overview_spec_sheet.pdf
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-abbott
   type: company
@@ -17,8 +36,48 @@
   ticker: "ABT"
   hq: "Abbott Park, IL, USA"
   website: "https://www.abbott.com"
-  description: "Structural heart portfolio incl. Amplatzer occluders, Amulet, and CardioMEMS."
-  curation: { status: curated, lastUpdated: 2026-06-22, sources: ["https://www.abbott.com"] }
+  description: >-
+    Structural-heart and cardiac-device portfolio including Amplatzer/Amulet occluders, CardioMEMS, MitraClip/TriClip, Tendyne and HeartMate
+    systems. Abbott completed the St. Jude Medical acquisition in January 2017; historical St. Jude generations retain their original
+    developer context.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.abbott.com
+      - https://www.abbott.com/corpnewsroom/products-and-innovation/st-jude-medical-acquisition-complete.html
+      - https://pubmed.ncbi.nlm.nih.gov/20665856/
+      - https://pubmed.ncbi.nlm.nih.gov/20824765/
+      - >-
+        https://abbott.mediaroom.com/2026-08-27-Abbotts-next-generation-Amulet-360-TM-device-receives-CE-Mark-to-treat-people-with-atrial-fibrillation-at-risk-of-stroke
+      - https://www.cardiovascular.abbott/int/en/hcp/products/electrophysiology/left-atrial-appendage-occlusion/amulet-360-laao.html
+      - https://ec.europa.eu/tools/eudamed/api/documents/bb3c3556-fc8b-4c30-9e32-7d719293b81b
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf12/P120021B.pdf
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P000039
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf/P000039b.pdf
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P020024S052
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf4/P040040b.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf10/P100045B.pdf
+      - https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/IS/en/ARTMT600163776_B.PDF
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P190023S002
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P240042
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S028
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S029
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S067
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P230007S005
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160054B.pdf
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfres/res.cfm?id=220518
+      - >-
+        https://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/abbottthoratec-corp-recalls-heartmate-ii-and-heartmate-3-left-ventricular-assist-system-lvas-due
+      - https://pubmed.ncbi.nlm.nih.gov/36074476/
+      - https://www.acc.org/latest-in-cardiology/articles/2023/07/25/13/36/sustained-superiority-of-the-heartmate-3-lvad
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC10863827/
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC10397666/
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P060040
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf6/P060040b.pdf
+    notes: "2026-10-03 audit: Adds acquired-product lineage rather than treating every historical device as an original Abbott development."
 
 - id: co-wl-gore
   type: company
@@ -27,16 +86,33 @@
   website: "https://www.goremedical.com"
   description: "Maker of GORE Cardioform septal/PFO occluders; acquired Conformal Medical (CLAAS AcuFORM LAAO system, investigational) in February 2026."
   curation:
-    status: curated
-    lastUpdated: 2026-09-23
-    notes: "2026-09-23: Conformal acquisition (announced 2026-01-05, closed 2026-02-19) added to description at the owner's request. Source: https://www.gore.com/news-events/gore-acquiring-conformal-medical"
+    status: draft
+    lastUpdated: "2026-10-03"
+    notes: >-
+      2026-09-23: Conformal acquisition (announced 2026-01-05, closed 2026-02-19) added to description at the owner's request. Source:
+      https://www.gore.com/news-events/gore-acquiring-conformal-medical 2026-10-03 audit: Official company announcement confirms the Conformal
+      acquisition closed in February 2026.
+    sources:
+      - https://www.gore.com/news-events/gore-completes-acquisition-conformal-medical
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P050006S044
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf5/P050006s060b.pdf
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P050006S071
+      - https://www.goremedical.com/products/cardioform-asd-occluder
 
 - id: co-lifetech
   type: company
   name: "Lifetech Scientific"
   hq: "Shenzhen, China"
   description: "Structural heart occluders incl. the LAmbre LAA closure device."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  website: https://www.lifetechmed.com/en/
+  ticker: 1302.HK
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.lifetechmed.com/en/
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC9352115/
+    notes: "2026-10-03 audit: Official company site identifies Hong Kong stock code 1302; website added."
 
 - id: co-corvia
   type: company
@@ -45,14 +121,31 @@
   website: "https://corviamedical.com"
   description: "Developer of the Corvia Atrial Shunt for heart failure."
   pulse: 3
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://eprints.gla.ac.uk/128358/1/128358.pdf
+      - https://us.corviamedical.com/healthcare-professionals/reduce-lap-hf-clinical-program/responder-hf/
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-vwave
   type: company
   name: "V-Wave"
   hq: "Caesarea, Israel"
-  description: "Interatrial shunt (Ventura) developer; acquired by Johnson & Johnson MedTech (2024)."
-  curation: { status: curated, lastUpdated: 2026-06-22, notes: "Verify post-acquisition product branding." }
+  description: >-
+    Developer of the Ventura interatrial shunt. Johnson & Johnson announced completion of its V-Wave acquisition in October 2024; acquisition
+    does not confer product marketing authorization.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    notes: Verify post-acquisition product branding.
+    sources:
+      - https://www.investor.jnj.com/investor-news/news-details/2024/Johnson--Johnson-Completes-Acquisition-of-V-Wave/default.aspx
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC11424381/
+      - https://www.fda.gov/media/189899/download
 
 - id: co-edwards
   type: company
@@ -60,17 +153,45 @@
   ticker: "EW"
   hq: "Irvine, CA, USA"
   website: "https://www.edwards.com"
-  description: "Structural heart company; APTURE transcatheter shunt and (via Endotronix) the Cordella sensor."
+  description: >-
+    Structural-heart company with SAPIEN, PASCAL, EVOQUE, Cardioband and APTURE platforms. Acquired Valtech Cardio in January 2017 and
+    Endotronix in 2024. Its planned JenaValve acquisition was abandoned in January 2026.
   pulse: 7
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.sec.gov/Archives/edgar/data/1099800/000109980017000003/ew8-kvaltechcardioacquisit.htm
+      - https://endotronix.com/about-endotronix/
+      - https://www.edwards.com/newsroom/news/2026-01-09-edwards-comments-on-jenavalve-acquisition
+      - https://www.medtechdive.com/news/edwards-wins-fda-clearance-for-laa-clip-setting-up-competition-with-atricu/823980/
+      - https://www.massdevice.com/edwards-fda-nod-left-atrial-appendage-clip/
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K254232.pdf
+      - https://academic.oup.com/eurjhf/advance-article/doi/10.1093/ejhf/xuaf016/8415028
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031S141
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250019
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P220003
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P230013
+      - https://eurointervention.pcronline.com/article/the-cardioband-transcatheter-direct-mitral-valve-annuloplasty-system
+      - https://clinicaltrials.gov/study/NCT02387697
+      - https://pubmed.ncbi.nlm.nih.gov/31929100/
 
 - id: co-endotronix
   type: company
   name: "Endotronix"
   hq: "Naperville, IL, USA"
   website: "https://endotronix.com"
-  description: "Cordella PA pressure sensor; acquired by Edwards Lifesciences (2024)."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  description: >-
+    Developer of the Cordella pulmonary-artery sensor and HF monitoring system; acquired by Edwards Lifesciences in 2024 and identified as a
+    wholly owned subsidiary in company materials.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://endotronix.com/about-endotronix/
+      - https://endotronix.com/manuals-old/
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230040B.pdf
 
 - id: co-fire1
   type: company
@@ -78,7 +199,15 @@
   hq: "Dublin, Ireland"
   website: "https://fire1foundry.com"
   description: "Foundry-backed developer of the NORM inferior vena cava (IVC) sensor for HF monitoring."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.jacc.org/doi/10.1016/j.jchf.2025.01.019
+      - https://fire1foundry.com/about/
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-vectorious
   type: company
@@ -86,23 +215,51 @@
   hq: "Tel Aviv, Israel"
   website: "https://www.vectoriousmedtech.com"
   description: "Developer of the V-LAP wireless left-atrial pressure sensor."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://eurointervention.pcronline.com/article/a-novel-implantable-left-atrial-pressure-sensor-in-two-heart-failure-patients
+      - https://www.vectoriousmedtech.com/
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-shockwave
   type: company
   name: "Shockwave Medical (Johnson & Johnson)"
   hq: "Santa Clara, CA, USA"
-  description: "Coronary Sinus Reducer (via Neovasc acquisition); Shockwave acquired by J&J (2024)."
-  curation: { status: curated, lastUpdated: 2026-06-22, notes: "Reducer lineage: Neovasc -> Shockwave (2023) -> J&J (2024). Verify." }
+  description: >-
+    Developer of cardiovascular devices including the Coronary Sinus Reducer acquired with Neovasc in April 2023. Johnson & Johnson completed
+    its acquisition of Shockwave Medical in May 2024.
+  website: https://shockwavemedical.com/
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    notes: >-
+      2026-10-03 audit: Official completion announcements support Neovasc → Shockwave (April 2023) → Johnson & Johnson (May 2024). Product
+      approvals are separate from acquisition dates.
+    sources:
+      - https://shockwavemedical.com/news/shockwave-medical-completes-acquisition-of-neovasc/
+      - https://www.investor.jnj.com/files/doc_news/Johnson--Johnson-Completes-Acquisition-of-Shockwave-Medical-2024.pdf
+      - https://shockwavemedical.com/wp-content/uploads/2024/11/Shockwave-Reducer-Spec-Sheet.pdf
 
 - id: co-bristol-myers-squibb
   type: company
   name: "Bristol Myers Squibb"
   ticker: "BMY"
-  hq: "New York, NY, USA"
+  hq: Princeton, NJ, USA
   website: "https://www.bms.com"
-  description: "Markets mavacamten (Camzyos) for HCM, via the MyoKardia acquisition."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  description: Markets mavacamten (Camzyos) for symptomatic obstructive HCM after completing the MyoKardia acquisition in November 2020.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.bms.com/contact-us.html
+      - >-
+        https://news.bms.com/news/corporate-financial/2020/Bristol-Myers-Squibb-Completes-Acquisition-of-MyoKardia-Strengthening-Companys-Leading-Cardiovascular-Franchise/default.aspx
+      - https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=669c936b-3ee6-4e36-8a22-79dd11b1255b
+    notes: "2026-10-03 audit: Corrects the former New York headquarters entry using current official contact information."
 
 - id: co-cytokinetics
   type: company
@@ -110,9 +267,19 @@
   ticker: "CYTK"
   hq: "South San Francisco, CA, USA"
   website: "https://www.cytokinetics.com"
-  description: "Muscle-biology company; aficamten (HCM) and omecamtiv mecarbil (HFrEF)."
+  description: >-
+    Muscle-biology company marketing aficamten (Myqorzo) for symptomatic obstructive HCM and developing omecamtiv mecarbil for HFrEF, with
+    COMET-HF listed as a confirmatory Phase 3 program.
   pulse: 8
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://cytokinetics.com/medicines-research/pipeline/
+      - https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=fd778507-1274-4d1a-a659-5431d55c543a&type=pdf
+      - https://clinicaltrials.gov/study/NCT06736574
+      - >-
+        https://ir.cytokinetics.com/press-releases/press-release-details/2023/Cytokinetics-Receives-Complete-Response-Letter-From-FDA-for-New-Drug-Application-for-Omecamtiv-Mecarbil-02-28-2023/default.aspx
 
 - id: co-pfizer
   type: company
@@ -121,7 +288,14 @@
   hq: "New York, NY, USA"
   website: "https://www.pfizer.com"
   description: "Markets tafamidis (Vyndaqel/Vyndamax) for ATTR-CM."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=1b4121ee-a733-4456-a917-be2603477839
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-bridgebio
   type: company
@@ -131,7 +305,14 @@
   website: "https://www.bridgebio.com"
   description: "Markets acoramidis (Attruby) for ATTR-CM."
   pulse: 5
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=913552ef-875d-4cb7-bf05-a7d20a394c38&type=display
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-alnylam
   type: company
@@ -140,7 +321,16 @@
   hq: "Cambridge, MA, USA"
   website: "https://www.alnylam.com"
   description: "RNAi therapeutics; vutrisiran (Amvuttra) and patisiran (Onpattro) for ATTR."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215515s006lbl.pdf
+      - https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e87ec36f-b4b4-49d4-aea4-d4ffb09b0970
+      - https://investors.alnylam.com/press-release?id=27741
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-astrazeneca
   type: company
@@ -149,7 +339,16 @@
   hq: "Cambridge, UK"
   website: "https://www.astrazeneca.com"
   description: "Markets dapagliflozin (Farxiga/Forxiga), an SGLT2 inhibitor."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72ad22ae-efe6-4cd6-a302-98aaee423d69&audience=professional
+      - https://www.escardio.org/news/press/press-releases/novel-drug-shows-promise-in-an-early-phase-trial-in-heart-failure/
+      - https://pubmed.ncbi.nlm.nih.gov/42668430/
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-boehringer-ingelheim
   type: company
@@ -157,7 +356,14 @@
   hq: "Ingelheim, Germany"
   website: "https://www.boehringer-ingelheim.com"
   description: "Empagliflozin (Jardiance), an SGLT2 inhibitor co-marketed with Eli Lilly."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5777b8a8-ada6-4950-8548-43a1de11f075
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-novartis
   type: company
@@ -166,7 +372,14 @@
   hq: "Basel, Switzerland"
   website: "https://www.novartis.com"
   description: "Markets sacubitril/valsartan (Entresto), an ARNI."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-merck
   type: company
@@ -174,8 +387,13 @@
   ticker: "MRK"
   hq: "Rahway, NJ, USA"
   website: "https://www.merck.com"
-  description: "Markets vericiguat (Verquvo), an sGC stimulator (co-developed with Bayer)."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  description: Merck/MSD co-developed vericiguat (Verquvo) with Bayer and holds US commercial rights; Bayer holds commercial rights outside the US.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.bayer.com/media/en-us/us-fda-approves-vericiguat-for-patients-with-symptomatic-chronic-heart-failure/
+      - https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=17056d73-1b1b-4bf2-9c07-b7a9367f0d6d&type=display
 
 - id: co-bayer
   type: company
@@ -183,8 +401,15 @@
   ticker: "BAYRY"
   hq: "Leverkusen, Germany"
   website: "https://www.bayer.com"
-  description: "Finerenone (Kerendia), a nonsteroidal MRA; vericiguat co-developer."
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  description: >-
+    Markets finerenone (Kerendia), a nonsteroidal mineralocorticoid-receptor antagonist. Co-developed vericiguat with Merck/MSD and holds
+    Verquvo commercial rights outside the US.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.bayer.com/media/en-us/us-fda-approves-vericiguat-for-patients-with-symptomatic-chronic-heart-failure/
+      - https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc726765-5d5a-4d6e-b037-b847bda9fb7c
 
 # --- Valvular structural heart companies ---
 - id: co-medtronic
@@ -195,19 +420,38 @@
   website: "https://www.medtronic.com"
   description: "Structural heart portfolio incl. the Evolut self-expanding TAVR platform, Melody/Harmony transcatheter pulmonary valves, and the investigational Intrepid TMVR."
   pulse: 7
-  curation: { status: curated, lastUpdated: 2026-06-22 }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://pubmed.ncbi.nlm.nih.gov/20346467/
+      - https://clinicaltrials.gov/study/NCT00841529
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174B.pdf
+      - https://cdn.clinicaltrials.gov/large-docs/40/NCT02322840/Prot_SAP_001.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140017B.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200046B.pdf
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-jenavalve
   type: company
   name: "JenaValve Technology"
   hq: "Irvine, CA, USA"
   website: "https://www.jenavalve.com"
-  description: "Developer of the Trilogy transcatheter heart valve — the first device dedicated to transcatheter treatment of aortic regurgitation."
+  description: >-
+    Developer of the Trilogy transcatheter aortic valve, including the 2026 US severe native aortic-regurgitation authorization. Edwards
+    abandoned its proposed acquisition following a US court injunction in January 2026; JenaValve is not an Edwards subsidiary on that basis.
   pulse: 8
   curation:
-    status: curated
-    lastUpdated: 2026-06-22
-    notes: "Remains independent: a US District Court granted the FTC's injunction against Edwards Lifesciences' proposed ~$1.2B acquisition of JenaValve (Jan 9, 2026) and Edwards abandoned the deal. Source: https://www.massdevice.com/edwards-fda-nod-left-atrial-appendage-clip/ background context; https://www.edwards.com/newsroom/news/2026-01-09-edwards-comments-on-jenavalve-acquisition. Human curator: consider adding this M&A history to description."
+    status: draft
+    lastUpdated: "2026-10-03"
+    notes: >-
+      2026-10-03 audit: Edwards abandoned the proposed JenaValve acquisition in January 2026 after the court injunction; product attribution
+      remains JenaValve. The official Edwards statement supports transaction history.
+    sources:
+      - https://www.edwards.com/newsroom/news/2026-01-09-edwards-comments-on-jenavalve-acquisition
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250024B.pdf
 
 - id: co-versa-vascular
   type: company
@@ -218,24 +462,48 @@
   pulse: 7
   curation:
     status: draft
-    lastUpdated: 2026-08-15
+    lastUpdated: "2026-10-03"
     sources:
-      - "https://versavascular.com/"
-      - "https://versavascular.com/about/"
+      - https://versavascular.com/
+      - https://versavascular.com/about/
+      - https://www.jacc.org/doi/10.1016/j.jaccas.2025.106051
+      - https://www.tctmd.com/slide/case-presentation-99
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC12926008/
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-story-health
   type: company
   name: "Story Health"
   hq: "Mountain View, CA, USA"
-  description: "Digital care platform for guideline-directed HF medical-therapy titration."
-  curation: { status: draft, lastUpdated: 2026-06-22, notes: "Digital health vendor; confirm structural-heart relevance and classification." }
+  description: >-
+    Clinician and coach supported digital specialty-care company for HF medication optimization and other cardiovascular care. Acquired by
+    Innovaccer in September 2025.
+  website: https://www.storyhealth.com
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    notes: Digital health vendor; confirm structural-heart relevance and classification.
+    sources:
+      - https://innovaccer.com/news/innovaccer-acquires-story-health-to-pioneer-ai-agents-that-augment-specialty-care-teams
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC13050095/
 
 - id: co-hello-heart
   type: company
   name: "Hello Heart"
   hq: "Menlo Park, CA, USA"
-  description: "Digital heart-health app for blood pressure and cardiovascular risk management."
-  curation: { status: draft, lastUpdated: 2026-06-22, notes: "Digital health vendor; refine indication relevance." }
+  description: >-
+    Provider of a commercial blood-pressure and cardiovascular-risk management program. The 2021 observational hypertension cohort does not
+    establish efficacy in structural-heart disease or HFpEF.
+  website: https://www.helloheart.com/
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    notes: Digital health vendor; refine indication relevance.
+    sources:
+      - https://www.helloheart.com/
+      - https://pubmed.ncbi.nlm.nih.gov/34652447/
 
 - id: co-vahaticor
   type: company
@@ -246,25 +514,43 @@
   pulse: 3
   curation:
     status: draft
-    lastUpdated: 2026-07-08
+    lastUpdated: "2026-10-03"
     sources:
-      - "https://vahaticor.com/"
-      - "https://www.businesswire.com/news/home/20251118907873/en/VahatiCor-Closes-Oversubscribed-Series-B-Financing-to-Accelerate-A-FLUX-Development-for-Coronary-Microvascular-Dysfunction."
-    notes: "Confirms the maker of the 'A-flux' device previously logged as an unverified placeholder on dev-aflux. HQ city not verified; VERIFY exact HQ location before promoting."
+      - https://vahaticor.com/
+      - >-
+        https://www.businesswire.com/news/home/20251118907873/en/VahatiCor-Closes-Oversubscribed-Series-B-Financing-to-Accelerate-A-FLUX-Development-for-Coronary-Microvascular-Dysfunction.
+      - https://vahaticor.com/device-and-technology/
+      - https://clinicaltrials.gov/study/NCT06991322
+      - https://www.jacc.org/doi/10.1016/j.jaccas.2024.102962
+    notes: >-
+      Confirms the maker of the 'A-flux' device previously logged as an unverified placeholder on dev-aflux. HQ city not verified; VERIFY
+      exact HQ location before promoting. 2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication
+      evidence. Legacy ticker and headquarters fields are not independently reverified by these product sources.
 
 - id: co-corcym
   type: company
   name: Corcym
   website: https://www.corcym.com/
-  description: Structural and cardiac-surgery company (spun out of LivaNova's Cardiac Surgery business in 2022) that makes surgical heart valves and the Nitinol Memo annuloplasty-ring platform, now extended to the tricuspid valve via TriMemo.
+  description: >-
+    Surgical heart-valve company launched in June 2021 following Gyrus Capital’s acquisition of LivaNova’s heart-valve business. Its Memo
+    annuloplasty platform includes Memo 4D Curve and TriMemo products.
   pulse: 4
   curation:
     status: draft
-    lastUpdated: '2026-09-23'
+    lastUpdated: "2026-10-03"
     sources:
-    - https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair
-    - https://www.corcym.com/devices/mitral/memo4d
-    notes: 'Draft from 2026-09-23 research. Maker of the TriMemo and Memo 4D Curve devices reported in news-2026-09-08-... and news-2026-09-22-...; no company node currently exists to attach these devices to. HQ/ticker not verified — left blank rather than guessed. Sources: https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair ; https://www.financialcontent.com/article/bizwire-2026-9-22-corcym-announces-first-in-human-implant-of-memo-4d-curve-expanding-its-memo-mitral-repair-platform'
+      - >-
+        https://www.financialcontent.com/article/bizwire-2026-9-8-corcym-announces-first-in-human-implant-of-trimemo-extending-its-memo-platform-to-tricuspid-valve-repair
+      - https://www.corcym.com/devices/mitral/memo4d
+      - https://www.corcym.com/press-release-day-one
+      - https://info.corcym.com/corcym-at-eacts-2026/launch-symposium
+      - >-
+        https://www.financialcontent.com/article/bizwire-2026-9-22-corcym-announces-first-in-human-implant-of-memo-4d-curve-expanding-its-memo-mitral-repair-platform
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260498.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261707.pdf
+    notes: >-
+      2026-10-03 audit: Corcym launched global operations June 2021 following the LivaNova heart-valve carve-out. This company node supports
+      TriMemo and Memo 4D Curve relationships; registered offices are not treated as independently verified headquarters.
 
 - id: co-eli-lilly
   type: company
@@ -272,72 +558,434 @@
   ticker: LLY
   hq: Indianapolis, IN, USA
   website: https://www.lilly.com
-  description: Maker of tirzepatide (Mounjaro/Zepbound); sponsor of the SUMMIT trial evaluating tirzepatide in obesity-related HFpEF.
+  description: >-
+    Maker of tirzepatide (Mounjaro/Zepbound) and sponsor of the 731-participant SUMMIT obesity-related HFpEF study. Tirzepatide HFpEF study
+    evidence is distinct from approved diabetes or weight-management indications.
   curation:
     status: draft
-    lastUpdated: '2026-09-23'
+    lastUpdated: "2026-10-03"
     sources:
-    - https://en.wikipedia.org/wiki/Tirzepatide
-    notes: Added only to support the rx-tirzepatide proposal below; standard company facts not independently re-verified against a primary source this pass.
+      - https://en.wikipedia.org/wiki/Tirzepatide
+      - https://trials.lilly.com/en-US/trial/282998
+      - https://investor.lilly.com/news-releases/news-release-details/lillys-tirzepatide-successful-phase-3-study-showing-benefit
+      - https://www.escardio.org/news/press/press-releases/major-changes-made-to-the-esc-guidelines-on-heart-failure/
+    notes: >-
+      2026-10-03 audit: Official Lilly sponsor page supports the tirzepatide SUMMIT relationship; company/product attribution no longer relies
+      on Wikipedia. Legacy headquarters/ticker fields are not independently verified by this trial source.
 
 - id: co-occlutech
   type: company
   name: Occlutech
-  hq: Jena, Germany
+  hq: Schaffhausen, Switzerland (holding company); Jena, Germany (device operations)
   website: https://occlutech.com
-  description: Structural heart device maker including a dedicated paravalvular leak closure device.
-  curation: { status: draft, lastUpdated: '2026-09-28', sources: [https://occlutech.com] }
+  description: >-
+    Occlutech Holding AG is based at Schaffhausen, Switzerland; its device operations include Jena, Germany. Portfolio includes septal and
+    paravalvular leak occluders; original and redesigned LAA devices have separate lifecycle evidence.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://occlutech.com
+      - https://occlutech.com/contact/
+      - https://pubmed.ncbi.nlm.nih.gov/27925332/
+      - https://www.moph.gov.lb/userfiles/files/Medical%20Devices/Medical%20Devices%20Recalls%202016/24-10-2016/OcclutechLAAOccluder.pdf
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC5935193/
+      - https://www.nature.com/articles/s41598-021-82359-1
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC8999580/
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC4882385/
+      - >-
+        https://www.occlutech.com/wp-content/uploads/2020/06/Onorato-2019-Midterm-procedural-and-clinical-outcomes-of-percutaneous-paravalvular-leak-closure-with-the-Occlutech-PLD.pdf
+    notes: >-
+      2026-10-03 audit: Distinguishes holding-company location from manufacturer operations; no inference of a single manufacturing-site
+      headquarters.
 
 - id: co-neochord
   type: company
   name: NeoChord
   website: https://www.neochord.com
   description: Developer of the DS1000 artificial chordae delivery system for mitral valve repair.
-  curation: { status: draft, lastUpdated: '2026-09-28', sources: [https://www.neochord.com] }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.neochord.com
+      - https://clinicaltrials.gov/study/NCT02803957
+      - https://www.neochord.com/wp-content/uploads/2024/12/RP-602000-001_DS1000_SSCP_Rev_B_FINAL_05Dec2024.docx.pdf
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-lsi-solutions
   type: company
   name: LSI Solutions
   website: https://www.lsisolutions.com
   description: Developer of the Mi-CHORD surgical chordal replacement system.
-  curation: { status: draft, lastUpdated: '2026-09-28', sources: [https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230069] }
+  hq: Victor, NY, USA
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN230069
+      - https://www.lsisolutions.com/
+      - https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf
 
 - id: co-pf-products
   type: company
   name: P+F Products + Features
-  website: https://www.pfproducts.com
+  website: https://productsandfeatures.com/
   description: Manufacturer of the TricValve transcatheter bicaval valve system.
-  curation: { status: draft, lastUpdated: '2026-09-28', sources: [https://www.cms.gov/medicare/coverage/investigational-device-exemption-ide-studies/approved/g240065-nct06137807] }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.cms.gov/medicare/coverage/investigational-device-exemption-ide-studies/approved/g240065-nct06137807
+      - https://productsandfeatures.com/
+      - https://productsandfeatures.com/wp-content/uploads/2023/07/Tricvalve_Technical_Specifications_2023.pdf
+      - https://www.cms.gov/files/document/september-10-2024-final-agenda-and-materials.pdf
+      - https://clinicaltrials.gov/study/NCT06137807
+      - https://www.jacc.org/doi/10.1016/j.jcin.2022.05.022
+      - https://productsandfeatures.com/products/tricvalve-transcatheter-bicaval-valves/
+    notes: "2026-10-03 audit: Corrects the manufacturer website using its current product and technical documentation."
 
 - id: co-bioventrix
   type: company
   name: BioVentrix
   website: https://bioventrix.com
   description: Developer of the Revivent TC hybrid transcatheter/surgical LV reconstruction system.
-  curation: { status: draft, lastUpdated: '2026-09-28', sources: [https://clinicaltrials.gov/study/NCT02931240] }
+  hq: Mansfield, MA, USA
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02931240
+      - https://bioventrix.com/
+      - https://pubmed.ncbi.nlm.nih.gov/39797846/
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC9725051/
+    notes: "2026-10-03 audit: Current official company description gives Mansfield headquarters."
 
 - id: co-acorn-cardiovascular
   type: company
   name: Acorn Cardiovascular
   description: Historical developer of the CorCap epicardial cardiac support device.
-  curation: { status: draft, lastUpdated: '2026-09-28', sources: [https://pubmed.ncbi.nlm.nih.gov/17888974/] }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://pubmed.ncbi.nlm.nih.gov/17888974/
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/
+      - https://doi.org/10.1080/24748706.2020.1777359
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC7944209/
+      - https://cdt.amegroups.org/article/view/48028/html
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-paracor-medical
   type: company
   name: Paracor Medical
   description: Historical developer of the HeartNet epicardial ventricular restraint device.
-  curation: { status: draft, lastUpdated: '2026-09-28', sources: [https://pubmed.ncbi.nlm.nih.gov/22633302/] }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://pubmed.ncbi.nlm.nih.gov/22633302/
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC6477619/
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-ancora-heart
   type: company
   name: Ancora Heart
   website: https://www.ancoraheart.com
   description: Developer of the investigational AccuCinch transcatheter LV restoration system.
-  curation: { status: draft, lastUpdated: '2026-09-28', sources: [https://www.ancoraheart.com] }
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.ancoraheart.com
+      - https://clinicaltrials.gov/study/NCT04331769
+      - https://www.ancoraheart.com/press_releases/ancora-heart-inc-reports-two-year-results/
+      - https://doi.org/10.1016/j.shj.2025.100694
+    notes: >-
+      2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and
+      headquarters fields are not independently reverified by these product sources.
 
 - id: co-nvt
   type: company
   name: New Valve Technology (NVT)
   website: https://www.nvt-med.com
-  description: Developer of the custom-made TRICENTO bicaval valved stent system.
-  curation: { status: draft, lastUpdated: '2026-09-28', sources: [https://eurointervention.pcronline.com/article/first-in-man-implantation-of-the-tricento-transcatheter-heart-valve-for-the-treatment-of-severe-tricuspid-regurgitation] }
+  description: >-
+    New Valve Technology, developer/manufacturer named on TRICENTO bicaval valved-stent documentation. Its current website describes
+    collaboration with Biosensors; the exact legal ownership history remains unverified.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - >-
+        https://eurointervention.pcronline.com/article/first-in-man-implantation-of-the-tricento-transcatheter-heart-valve-for-the-treatment-of-severe-tricuspid-regurgitation
+      - https://www.nvt-med.com/nvt-biosensors.html
+      - https://www.nvt-med.com/files/Content/Downloads/Patient%20Leaflet%20TRICENTO_Rev_00105601_072021_02.pdf
+      - https://pubmed.ncbi.nlm.nih.gov/35236096/
+      - >-
+        https://www.acc.org/Latest-in-Cardiology/Articles/2022/10/01/01/42/Cutting-Edge-Structural-Interventions-Transcatheter-Tricuspid-Valve-Replacement-Useful-or-Not
+
+- id: co-appriva-medical
+  type: company
+  name: Appriva Medical
+  description: >-
+    Appriva Medical developed the PLAATO LAA occlusion system. Microvena acquired Appriva in 2002 and later operated as ev3 Endovascular; ev3
+    reported discontinuing PLAATO development and commercialization in 2005.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.sec.gov/Archives/edgar/data/1318310/000110465906052498/a06-15615_110q.htm
+      - https://pubmed.ncbi.nlm.nih.gov/11997272/
+      - https://law.justia.com/cases/delaware/supreme-court/2007/98990.html
+      - https://www.sec.gov/Archives/edgar/data/1318310/000104746905016267/a2157384zs-1a.htm
+    notes: >-
+      Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+      2026-10-03 audit: Adds the precise historical ev3 Endovascular name and court acquisition record. 2026-10-03 audit: ev3 registration
+      filing identifies ev3 Endovascular as formerly ev3 Inc.; historical corporate naming recorded separately from product authorization.
+- id: co-coherex-medical
+  type: company
+  name: Coherex Medical
+  description: >-
+    Coherex Medical developed WaveCrest; Biosense Webster acquired Coherex in November 2015. WaveCrest had CE Mark in 2013 and was then
+    unavailable for U.S. commercial distribution.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.biosensewebster.com/documents/TaylorPressRelease.pdf?Cache=20%2F11%2F2015+12%3A16%3A45
+    notes: Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+- id: co-custom-medical-devices
+  type: company
+  name: Custom Medical Devices
+  description: >-
+    The Sideris Transcatheter Patch was developed by Custom Medical Devices and described as a bioabsorbable polyurethane patch deployed
+    with adhesive.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.jacc.org/doi/abs/10.1016/j.jacc.2011.08.036
+    notes: Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+- id: co-cardia
+  type: company
+  name: Cardia
+  description: Cardia developed Ultraseal II, a second-generation product that must remain separate from original Ultraseal specifications.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC9796275/
+    notes: Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+- id: co-shape-memory-alloy
+  type: company
+  name: Shape Memory Alloy Co.
+  description: >-
+    The historical Lefort device is attributed to Shape Memory Alloy Co. in original clinical literature; this is distinct from later
+    MemoLefort products.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC5287943/
+    notes: Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+- id: co-pfm-medical
+  type: company
+  name: pfm medical
+  description: pfm medical presented a research-stage LAA occluder design; no later authorization or market availability established.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.ahajournals.org/doi/pdf/10.1161/CIRCINTERVENTIONS.117.005359
+    notes: Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+- id: co-sentreheart
+  type: company
+  name: SentreHEART
+  description: Historical developer of the LARIAT epicardial suture ligation system; AtriCure completed its acquisition of SentreHEART in August 2019.
+  hq: Redwood City, CA, USA (historical 2019 company location)
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf15/K153096.pdf
+      - https://www.jacc.org/doi/10.1016/j.jacc.2012.06.046
+      - https://ir.atricure.com/news-releases/news-release-details/atricure-completes-acquisition-sentreheart
+    notes: Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+- id: co-aegis-medical-innovations
+  type: company
+  name: Aegis Medical Innovations
+  description: Aegis Medical Innovations developed the Sierra epicardial LAA ligation system evaluated in first-in-human research.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC11642118/
+    notes: Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+- id: co-conformal-medical
+  type: company
+  name: Conformal Medical
+  description: >-
+    Developer of the investigational CLAAS AcuFORM LAA occlusion system. W. L. Gore & Associates completed its acquisition of Conformal
+    Medical in February 2026.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.jacc.org/doi/10.1016/j.jcin.2021.08.060
+      - https://clinicaltrials.gov/study/NCT05147792
+      - https://www.gore.com/news-events/gore-completes-acquisition-conformal-medical
+    notes: Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+- id: co-eclipse-medical
+  type: company
+  name: Eclipse Medical
+  description: >-
+    Eclipse Medical was manufacturer of the OMEGA LAA Occluder; a November 2024 notice called for removal of unused stock and
+    quarantine/return.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - >-
+        https://assets.hpra.ie/data/docs/default-source/product-updates/fsn/field-safety-notices/november-2024/omega-left-atrial-appendage-%28laa%29-occluder-device_eclipse-medical_-advice-regarding-a-device-removal.pdf?sfvrsn=a200dad9_1
+    notes: Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+- id: co-shanghai-push-medical
+  type: company
+  name: Shanghai Push Medical Equipment
+  description: LACBES was developed/manufactured by Shanghai Push Medical Equipment; primary clinical research identifies PushMed, Shanghai.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC9478548/
+      - https://www.jstage.jst.go.jp/article/circj/82/1/82_CJ-17-0412/_pdf
+    notes: Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+- id: co-atricure
+  type: company
+  name: AtriCure
+  description: >-
+    Developer of AF ablation and surgical LAA management products including AtriClip; acquired SentreHEART, the LARIAT developer, in August
+    2019.
+  website: https://www.atricure.com/
+  hq: Mason, OH, USA
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://europe.atricure.com/sites/default/files/devices-ifu/IFU-0278.A.pdf
+      - https://ir.atricure.com/news-releases/news-release-details/atricure-completes-acquisition-sentreheart
+      - https://www.atricure.com/
+      - https://www.atricure.com/about-atricure/locations
+    notes: >-
+      Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+      2026-10-03 audit: Corporate Locations page directly labels Mason, Ohio as the corporate headquarters.
+- id: co-laminar
+  type: company
+  name: Laminar, Inc.
+  description: >-
+    Laminar developed the investigational rotational LAA elimination system and was acquired by Johnson & Johnson MedTech in 2023 as part of
+    Biosense Webster.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.investor.jnj.com/investor-news/news-details/2023/Johnson--Johnson-MedTech-Acquires-Laminar-Inc/default.aspx
+      - https://clinicaltrials.gov/study/NCT06168942
+    notes: Historical product developer identified in primary evidence; omitted current headquarters, ticker or website are not inferred.
+
+- id: co-feops
+  name: FEops NV (Materialise)
+  hq: Gent-Zwijnaarde, Belgium
+  website: https://feops.com/
+  description: >-
+    Developer of FEops HEARTguide patient-specific cardiac implant planning software. Materialise acquired FEops in July 2024; FDA-cleared
+    version identity remains FEops NV.
+  type: company
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf21/K214066.pdf
+      - https://www.materialise.com/es/news/press-releases/expanding-cardiovascular-capabilities-feops-acquisition
+      - https://feops.com/
+    notes: >-
+      FDA submission establishes manufacturer identity/address; ownership/product announcement is separately sourced. 2026-10-03 audit:
+      Official current FEops site checked; FDA submission address retained separately from ownership evidence.
+
+- id: co-dasi-simulations
+  name: DASI Simulations
+  hq: Dublin, OH, USA
+  website: https://dasisim.ai/
+  description: Developer of PrecisionTAVI, patient-specific simulation software supporting transcatheter aortic valve implantation planning.
+  type: company
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223809.pdf
+      - https://dasisim.ai/dasi-simulations-precision-tavi-earns-fda-clearance/
+    notes: FDA submission establishes manufacturer identity/address; ownership/product announcement is separately sourced.
+
+- id: co-hangzhou-dinova-ep
+  type: company
+  name: Hangzhou Dinova EP Technology (formerly Hangzhou Nuomao Medtech)
+  description: >-
+    Current name of the LAA-occluder patent assignee originally named Hangzhou Nuomao Medtech Co., Ltd.; the patent record documents a
+    change of name to Hangzhou Dinova EP Technology Co., Ltd. ClinicalTrials.gov separately identifies Dinova as sponsor of the SeaLA study.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-03"
+    sources:
+      - https://patents.google.com/patent/US10792045B2/en
+      - https://clinicaltrials.gov/study/NCT05911685
+    notes: >-
+      Patent assignee name change and clinical-trial sponsor are separate evidence roles; current headquarters and website omitted without
+      verification.
+
+- id: co-mitria-medical
+  type: company
+  name: Mitria Medical
+  website: https://mitriamedical.com/
+  description: Cleveland Clinic-origin company developing the investigational Subvalvular Spacer for functional mitral regurgitation; joined the T45 Labs portfolio through a partnership announced September 29, 2026.
+  pulse: 4
+  curation:
+    status: draft
+    lastUpdated: '2026-10-06'
+    sources:
+      - https://t45labs.com/mitria-medical/
+      - https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html
+      - https://www.prnewswire.com/news-releases/mitria-medical-announces-first-use-of-novel-mitral-valve-repair-device-in-us-under-single-patient-expanded-access-302704666.html
+    notes: 'WOR-25: T45 partnership release, opening paragraphs and About Mitria Medical; Mitria March 5 release, paragraph beginning In 2019. Website URL is linked by the inspected T45 portfolio page; direct manufacturer homepage could not be inspected. No funding, headquarters or ownership inference.'
+
+- id: co-chawla-heart-technologies
+  type: company
+  name: Chawla Heart Technologies LLC
+  description: FDA K252126 applicant and manufacturer of the MitraPatch Mitral Valve Repair System.
+  curation:
+    status: draft
+    lastUpdated: '2026-10-07'
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252126.pdf
+    notes: >-
+      WOR-26: FDA PDF p.5 (510(k) Summary p.1), Applicant, and p.6 manufacturer row. No ownership, financing or current
+      distribution inference. Public source retrieved 2026-10-07.
+
+- id: co-emboline
+  type: company
+  name: Emboline
+  description: Developer of the Emboliner temporary embolic-protection system for use during TAVR.
+  curation:
+    status: draft
+    lastUpdated: '2026-10-07'
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715
+      - >-
+        https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html
+    notes: >-
+      WOR-26: FDA K261715 Applicant; October 2 release opening and About Emboline, excluding quotations. Controlled US launch
+      announcement does not establish broad availability. Public sources retrieved 2026-10-07.

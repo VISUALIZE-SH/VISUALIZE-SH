@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import type { IntelligenceData, ProductVersion } from '../src/types/intelligence'
-import { versionForGraphEntities, versionForGraphEntity } from '../src/data/atlas-navigation'
+import { versionForGraphEntities, versionForGraphEntity, versionsForGraphEntity } from '../src/data/atlas-navigation'
 
 const provenance = { sourceRefs: [], reviewStatus: 'draft' as const }
 function version(id: string, familyId: string, graphEntityId?: string): ProductVersion {
@@ -23,6 +23,18 @@ function data(): IntelligenceData {
 
 test('search opens the explicitly mapped generation within a multi-version family', () => {
   assert.equal(versionForGraphEntity(data(), 'dev-current')?.id, 'ver-current')
+})
+
+test('selected therapy profile links prefer its exact generation over other family members', () => {
+  assert.deepEqual(versionsForGraphEntity(data(), 'dev-current').map(item => item.id), ['ver-current'])
+})
+
+test('shared nodes offer every applicable profile without silently choosing a generation', () => {
+  const fixture = data()
+  fixture.families[0].entityIds.push('dev-shared')
+  assert.deepEqual(versionsForGraphEntity(fixture, 'dev-shared').map(item => item.id), ['ver-old', 'ver-current'])
+  fixture.versions.push(version('ver-current-pro', 'family-multi', 'dev-current'))
+  assert.deepEqual(versionsForGraphEntity(fixture, 'dev-current').map(item => item.id), ['ver-current', 'ver-current-pro'])
 })
 
 test('an unmapped shared family node stays on the graph instead of opening an arbitrary generation', () => {

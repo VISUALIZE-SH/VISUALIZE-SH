@@ -1,0 +1,124 @@
+# WOR-26: surgical implantation and later balloon expansion are distinct procedures.
+observedAt: '2026-10-07'
+sources:
+  - id: src-autus-fda-announcement-20261001
+    title: FDA Approves First Heart Valve Designed to Grow with Children
+    url: https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+    kind: regulatory
+    publisher: FDA
+    publishedAt: { value: '2026-10-01', precision: day }
+    retrievedAt: '2026-10-07'
+    access: public
+  - id: src-autus-edwards-approval-20261001
+    title: Edwards Lifesciences Receives FDA Approval for AUTUS Valve, the First Surgical Pulmonary Valve for Pediatric Patients
+    url: https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Receives-FDA-Approval-for-AUTUS-Valve-the-First-Surgical-Pulmonary-Valve-for-Pediatric-Patients/default.aspx
+    kind: manufacturer
+    publisher: Edwards Lifesciences
+    publishedAt: { value: '2026-10-01', precision: day }
+    retrievedAt: '2026-10-07'
+    access: public
+  - id: src-autus-pivotal-registry
+    title: Autus Valve Pivotal Study (AUT-CP-001)
+    url: https://clinicaltrials.gov/study/NCT05006404
+    kind: registry
+    publisher: ClinicalTrials.gov / Edwards Lifesciences
+    publishedAt: { value: '2021-08-16', precision: day }
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: NCT05006404
+  - id: src-autus-continued-access-registry
+    title: Autus Valve Continued Access Study (AUT-CP-002)
+    url: https://clinicaltrials.gov/study/NCT07466745
+    kind: registry
+    publisher: ClinicalTrials.gov / Edwards Lifesciences
+    publishedAt: { value: '2026-03-12', precision: day }
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: NCT07466745
+  - id: src-autus-edwards-study-page
+    title: AUTUS size-adjustable valve — continued-access study overview
+    url: https://www.edwards.com/healthcare-professionals/products-services/autus-size-adjustable-valve
+    kind: manufacturer
+    publisher: Edwards Lifesciences
+    retrievedAt: '2026-10-07'
+    access: public
+    identifier: PP--US-13323 v1.0
+
+families:
+  - id: family-autus
+    name: AUTUS
+    manufacturer: Edwards Lifesciences; developed by Autus Valve Technologies
+    entityIds: [dev-autus]
+    conditionIds: [cond-pv]
+    description: Size-adjustable surgical pulmonary valve for pediatric congenital pulmonary valve disease; subsequent transcatheter balloon expansion is distinct from initial surgical implantation.
+
+versions:
+  - id: ver-autus-size-adjustable
+    familyId: family-autus
+    graphEntityId: dev-autus
+    name: AUTUS Size-Adjustable Valve
+    kind: device
+    clinicalRole: treats
+    summary: FDA announced US PMA approval October 1, 2026. Polymeric-leaflet surgical pulmonary valve designed for later balloon expansion. Exact model, frame alloy, polymer chemistry and approved IFU remain unverified.
+    sourceRefs:
+      - sourceId: src-autus-fda-announcement-20261001
+        locator: 'Opening paragraph; diameter and leaflet paragraphs; PMA pathway and approval-recipient paragraphs'
+    reviewStatus: draft
+
+bibliography:
+  - id: bib-autus-study-page-status-conflict
+    entityIds: [dev-autus]
+    versionIds: [ver-autus-size-adjustable]
+    sourceRefs:
+      - sourceId: src-autus-edwards-study-page
+        locator: 'Study overview; investigational disclaimer; document code PP--US-13323 v1.0. Undated study-page language does not supersede the dated October 1 FDA approval.'
+    reviewStatus: draft
+
+specs:
+  - version: ver-autus-size-adjustable
+    category: surgical-pulmonary-valves
+    source: src-autus-fda-announcement-20261001
+    values:
+      manufacturer:
+        value: Edwards Lifesciences (approval holder)
+        loc: Final paragraph naming approval recipient and original developer
+        context: FDA names Autus Valve Technologies as developer; legal manufacturing-site details are not established here.
+      device-design:
+        value: Size-adjustable surgical pulmonary valve with polymeric leaflets
+        loc: Opening paragraph; polymeric-leaflet paragraph
+      expansion-mechanism:
+        value: Postimplant transcatheter balloon expansion
+        loc: Diameter paragraph; final clinical-study paragraph
+        limitation: Designed to accommodate growth; expansion experience and durability are limited. It does not grow autonomously.
+      leaflet-material:
+        value: Polymeric material
+        loc: Polymeric-leaflet paragraph
+        limitation: Polymer chemistry is not disclosed in the FDA announcement; no ePTFE or other specific composition inferred.
+      frame-material:
+        availability: not_publicly_disclosed
+        loc: Entire FDA announcement (frame alloy not specified)
+        limitation: This is missingness in the inspected announcement, not a conclusion about the unavailable IFU or SSED.
+      access-route:
+        value: Surgical implantation; subsequent transcatheter balloon dilation
+        loc: Opening paragraph; diameter paragraph
+      available-sizes:
+        availability: not_yet_reviewed
+        loc: Diameter paragraph (approximately 13 mm initially; expansion up to 22 mm)
+        context: Reported initial and maximum diameters are not discrete marketed sizes. Exact catalog size/model requires the approved IFU.
+      adjustable-diameter:
+        value: Approx. 13 mm initial diameter; later expansion up to 22 mm
+        loc: Diameter paragraph
+        limitation: Announcement-level valve diameter description, not discrete marketed sizes or a patient annulus/RVOT eligibility range.
+      development-status:
+        value: US FDA PMA approval announced October 1, 2026
+        loc: Opening paragraph; PMA pathway paragraph
+        limitation: PMA identifier, approval order and approved IFU were not located. No formal decision record with an invented identifier is added.
+      indication-scope:
+        value: Pediatric congenital pulmonary valve disease; surgical replacement
+        loc: Opening paragraph
+        context: Paraphrase of FDA announcement scope; trial ages and eligibility are not substituted for exact approved labeling.
+      pivotal-trials:
+        value: AUT-CP-001 / NCT05006404
+        source: src-autus-pivotal-registry
+        loc: 'API protocolSection.identificationModule; descriptionModule; designModule (retrieved 2026-10-07)'
+        context: Pivotal registry reports 62 actual participants. Continued access has a separate registry record and snapshot. The earlier 11-patient feasibility report is not merged with this cohort.

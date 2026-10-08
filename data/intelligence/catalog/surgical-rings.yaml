@@ -1,0 +1,162 @@
+# Exact FDA-cleared configurations; no material inheritance from closed Memo 4D rings.
+observedAt: "2026-10-03"
+sources:
+  - id: src-trimemo-fda
+    title: TriMemo — FDA 510(k) clearance and summary K260498
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260498.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt:
+      value: "2026-04-14"
+      precision: day
+    retrievedAt: "2026-10-03"
+    access: public
+    identifier: K260498
+  - id: src-memo-4d-curve-fda
+    title: Memo 4D Curve — FDA 510(k) clearance and summary K261707
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261707.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt:
+      value: "2026-06-18"
+      precision: day
+    retrievedAt: "2026-10-03"
+    access: public
+    identifier: K261707
+families:
+  - id: family-trimemo
+    name: TriMemo
+    manufacturer: Corcym
+    entityIds:
+      - dev-trimemo
+    conditionIds:
+      - cond-tr
+    description: Semirigid open 3D tricuspid annuloplasty ring; distinct from the closed Memo 4D configuration.
+  - id: family-memo-4d-curve
+    name: Memo 4D Curve
+    manufacturer: Corcym
+    entityIds:
+      - dev-memo-4d-curve
+    conditionIds:
+      - cond-mr
+    description: >-
+      Semirigid open mitral annuloplasty ring; 24–32 mm rings are flat, while 34–42 mm rings have an out-of-plane 3D shape. Distinct from closed
+      Memo 4D.
+
+versions:
+  - id: ver-trimemo
+    familyId: family-trimemo
+    name: TriMemo
+    graphEntityId: dev-trimemo
+    kind: device
+    clinicalRole: treats
+    summary: Semirigid open 3D tricuspid annuloplasty ring
+    sourceRefs:
+      - sourceId: src-trimemo-fda
+        locator: PDF p.5, 510(k) Summary — Device Description; PDF p.6 — Intended Use
+    reviewStatus: draft
+  - id: ver-memo-4d-curve
+    familyId: family-memo-4d-curve
+    name: Memo 4D Curve
+    graphEntityId: dev-memo-4d-curve
+    kind: device
+    clinicalRole: treats
+    summary: Open semirigid mitral annuloplasty ring with size-dependent flat (24–32 mm) or 3D (34–42 mm) shape
+    sourceRefs:
+      - sourceId: src-memo-4d-curve-fda
+        locator: PDF pp.5–6, 510(k) Summary — Device Description and Intended Use
+    reviewStatus: draft
+
+decisions:
+  - id: decision-trimemo-510k
+    identifier: K260498
+    rootIdentifier: K260498
+    versionIds:
+      - ver-trimemo
+    jurisdiction: US
+    pathway: 510(k)
+    date:
+      value: "2026-04-14"
+      precision: day
+    changeType: initial_authorization
+    summary: FDA substantial-equivalence clearance for TriMemo; not proof of commercial distribution or clinical-outcome efficacy.
+    sourceRefs:
+      - sourceId: src-trimemo-fda
+        locator: PDF p.1 — FDA clearance letter; Indications for Use form
+    reviewStatus: draft
+  - id: decision-memo-4d-curve-510k
+    identifier: K261707
+    rootIdentifier: K261707
+    versionIds:
+      - ver-memo-4d-curve
+    jurisdiction: US
+    pathway: 510(k)
+    date:
+      value: "2026-06-18"
+      precision: day
+    changeType: initial_authorization
+    summary: FDA substantial-equivalence clearance for Memo 4D Curve; not proof of commercial distribution or clinical-outcome efficacy.
+    sourceRefs:
+      - sourceId: src-memo-4d-curve-fda
+        locator: PDF p.1 — FDA clearance letter; Indications for Use form
+    reviewStatus: draft
+specs:
+  - version: ver-trimemo
+    category: surgical-tricuspid-annuloplasty
+    source: src-trimemo-fda
+    values:
+      manufacturer:
+        value: Corcym S.r.l.
+        loc: 510(k) Summary — applicant details
+      device-design:
+        value: Semirigid open 3D tricuspid annuloplasty ring
+        loc: PDF p.5 (printed Summary p.1), Device Description
+      frame-material:
+        value: Electropolished nitinol
+        loc: PDF p.5 (printed Summary p.1), Device Description
+      fabric-cover:
+        value: Silicone plus knitted polyester (PET) fabric
+        loc: PDF p.5 (printed Summary p.1), Device Description
+      surface-coating:
+        value: Carbofilm turbostratic-carbon coating on polyester fabric
+        loc: PDF p.5 (printed Summary p.1), Device Description
+      available-sizes:
+        value: "Six sizes: 26, 28, 30, 32, 34, 36 mm"
+        loc: PDF p.5 (printed Summary p.1), Device Description
+      access-route:
+        value: Surgical valve repair; annuloplasty ring implantation
+        loc: PDF p.5 (printed Summary p.1), Device Description
+      indication-scope:
+        value: Tricuspid insufficiency or steno-insufficiency with annular dilation/deformation
+        loc: PDF p.4, Indications for Use; PDF p.5 (printed Summary p.1), Intended Use
+        context: US 510(k)-cleared indications; no authorization in other jurisdictions inferred.
+
+  - version: ver-memo-4d-curve
+    category: surgical-mitral-annuloplasty
+    source: src-memo-4d-curve-fda
+    values:
+      manufacturer:
+        value: Corcym S.r.l.
+        loc: 510(k) Summary — applicant details
+      device-design:
+        value: Open semirigid ring; 24–32 mm flat, 34–42 mm out-of-plane 3D
+        loc: PDF p.6 (printed Summary p.2), Device Description — size-dependent shape
+      frame-material:
+        value: Superelastic nitinol
+        loc: PDF pp.5–6, 510(k) Summary — Device Description and Intended Use
+      fabric-cover:
+        value: Silicone plus knitted polyester (PET) fabric
+        loc: PDF pp.5–6, 510(k) Summary — Device Description and Intended Use
+      surface-coating:
+        value: Carbofilm turbostratic-carbon coating on polyester fabric
+        loc: PDF pp.5–6, 510(k) Summary — Device Description and Intended Use
+      available-sizes:
+        value: "Ten sizes: 24–42 mm in 2 mm increments"
+        loc: PDF pp.5–6, 510(k) Summary — Device Description and Intended Use
+      access-route:
+        value: Surgical valve repair; annuloplasty ring implantation
+        loc: PDF pp.5–6, 510(k) Summary — Device Description and Intended Use
+      indication-scope:
+        value: Mitral insufficiency or steno-insufficiency with annular dilation/deformation
+        loc: PDF pp.5–6, 510(k) Summary — Device Description and Intended Use
+        context: US 510(k)-cleared indications; no authorization in other jurisdictions inferred.

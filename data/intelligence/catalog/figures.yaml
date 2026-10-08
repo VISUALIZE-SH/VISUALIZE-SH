@@ -25,24 +25,34 @@ sources:
   retrievedAt: '2026-09-23'
   access: public
   identifier: doi:10.3389/fcvm.2016.00042
+- id: src-cc-by-4-license
+  title: Creative Commons Attribution 4.0 International license
+  url: https://creativecommons.org/licenses/by/4.0/
+  kind: other
+  publisher: Creative Commons
+  retrievedAt: "2026-10-03"
+  access: public
+  identifier: CC BY 4.0
+
 media:
 - id: media-sapien-ultra-resilia-device
   versionIds:
   - ver-sapien-ultra-resilia
   panel: design
-  title: SAPIEN 3 Ultra RESILIA valve
-  caption: FDA figure of the SAPIEN 3 Ultra platform valve frame (model 9750TFX) with its inner and outer PET skirts — the
-    shared frame the RESILIA-tissue configuration is built on; RESILIA changes only the tissue treatment, not the frame shown
-    here.
+  title: SAPIEN 3 Ultra platform valve (reference image for RESILIA version)
+  caption: >-
+    FDA IFU Figure 1 shows SAPIEN 3 Ultra model 9750TFX with ThermaFix-treated leaflets. This is a reference image of the Ultra platform; the
+    RESILIA valve is not pictured.
   alt: Line-drawing FDA figure of the SAPIEN 3 Ultra balloon-expandable valve frame with a visible outer sealing skirt at
     its base.
   assetPath: /evidence/fda/sapien-ultra-resilia.png
   page: 100
   figure: Figure 1
   sourceRefs:
-  - sourceId: src-sapien-ifu-s085
-    locator: PDF page 100 of 221 (SAPIEN 3 Ultra IFU section, model 9750TFX), Figure 1
+    - sourceId: src-sapien-ifu-s085
+      locator: PDF page 100 of 221 (SAPIEN 3 Ultra IFU section, model 9750TFX), Figure 1; description identifies standard ThermaFix leaflets
   reviewStatus: draft
+
 - id: media-trilogy-device
   versionIds:
   - ver-trilogy
@@ -219,8 +229,8 @@ media:
   - ver-watchman-flx-pro
   panel: design
   title: WATCHMAN FLX Pro closure device
-  caption: FDA SSED figure of the WATCHMAN FLX Pro Device, distinguished from the original FLX by an updated fixation-anchor
-    and fabric pattern at the device base.
+  caption: FDA SSED figure of the WATCHMAN FLX Pro Device. The SSED describes FLX Pro as FLX with a HEMOCOAT coating and three
+    tantalum radiopaque markers added, plus an additional 40 mm size.
   alt: Grayscale product photo of a nitinol basket implant with a scalloped, petal-shaped mesh pattern around its lower edge.
   assetPath: /evidence/fda/watchman-flx-pro.png
   page: 4
@@ -329,40 +339,52 @@ media:
   - ver-lambre
   panel: design
   title: LAmbre LAA occluder
-  caption: Photo of the explanted LAmbre device from a CC BY-licensed Brazilian multicenter case series, showing the umbrella
-    and cover disc joined by a central pin.
+  caption: >-
+    LAmbre device, cropped from Chamié et al. (2022), “Oclusão do Apêndice Atrial Esquerdo com a Prótese Lambre: Experiência Multicêntrica
+    Inicial no Brasil,” Figure 1, left panel. Reproduced under CC BY 4.0; article and license linked below.
   alt: Photo of a gold umbrella-shaped wire frame joined to a smaller white fabric-covered disc, on a white background.
   assetPath: /evidence/publications/lambre.png
   figure: Figure 1 (left panel)
   sourceRefs:
-  - sourceId: src-lambre-study
-    locator: Figure 1, left panel; device description; CC BY license
+    - sourceId: src-lambre-study
+      locator: Figure 1, left panel; article states Creative Commons Attribution License; crop used in asset
+    - sourceId: src-cc-by-4-license
+      locator: Creative Commons Attribution 4.0 International license; figure panel cropped from original article
   reviewStatus: draft
+
 - id: media-coronary-sinus-reducer-device
   versionIds:
   - ver-coronary-sinus-reducer
   panel: design
   title: Coronary Sinus Reducer
-  caption: Photo of the expanded, balloon-expandable Coronary Sinus Reducer stent from a 2016 CC BY-licensed literature review
-    (Frontiers in Cardiovascular Medicine).
+  caption: >-
+    Coronary Sinus Reducer, cropped from Benedetto et al. (2016), “Percutaneous Device to Narrow the Coronary Sinus: Shifting Paradigm in the
+    Treatment of Refractory Angina? A Review of the Literature,” Figure 1, upper panel. Reproduced under CC BY 4.0; article and license linked
+    below.
   alt: Photo of a stainless-steel hourglass-shaped mesh stent with a narrow central waist, on a white background.
   assetPath: /evidence/publications/coronary-sinus-reducer.png
   figure: Figure 1 (upper panel, expanded device)
   sourceRefs:
-  - sourceId: src-reducer-review-2016
-    locator: Figure 1, upper panel (expanded device); CC BY 4.0
+    - sourceId: src-reducer-review-2016
+      locator: Figure 1, upper panel (expanded device); article states CC BY; crop used in asset
+    - sourceId: src-cc-by-4-license
+      locator: Creative Commons Attribution 4.0 International license; figure panel cropped from original article
   reviewStatus: draft
+
 - id: media-corvia-shunt-device
   versionIds:
   - ver-corvia-shunt
   panel: design
   title: Corvia Atrial Shunt device
-  caption: Photo of the Corvia Interatrial Shunt Device (IASD) from a CC BY-licensed 2019 Frontiers review, showing the self-expanding
-    nitinol double-disc cage.
+  caption: >-
+    Corvia IASD, cropped from Kaye and Nanayakkara (2019), “Interatrial Shunt Device for Heart Failure With Preserved Ejection Fraction,”
+    Figure 4A. Reproduced under CC BY 4.0; article and license linked below.
   alt: Photo of a symmetrical wire-frame double-disc device resembling a small round cage, on a light gray background.
   assetPath: /evidence/publications/corvia-shunt.png
   figure: Figure 4 (panel A)
   sourceRefs:
-  - sourceId: src-frontiers-corvia-2019
-    locator: PMC mirror (PMC6759808), Figure 4 panel A; CC BY 4.0
+    - sourceId: src-frontiers-corvia-2019
+      locator: Figure 4, panel A; article states CC BY 4.0; crop used in asset
+    - sourceId: src-cc-by-4-license
+      locator: Creative Commons Attribution 4.0 International license; figure panel cropped from original article
   reviewStatus: draft

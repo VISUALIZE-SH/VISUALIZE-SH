@@ -2,6 +2,241 @@
 # Historical entries were imported from the archived weekly digest emails.
 # Every relevantNodeIds entry must resolve to an existing graph node.
 
+- id: news-2026-10-05-cardiomems-cardioguide-patient-access
+  publishedAt: '2026-10-05'
+  title: Abbott announces CardioGuide HF patient pressure access and treatment-plan updates
+  summary: >-
+    Abbott announced FDA approval for CardioMEMS system updates that let care teams enable patient access to pulmonary artery
+    pressure trends and send clinician-configured medication instructions through CardioGuide HF. Availability is planned later in
+    2026. The release does not identify a software build or establish additional clinical benefit; the decision-specific FDA
+    record remains unverified.
+  sourceName: Abbott
+  sourceUrl: >-
+    https://abbott.mediaroom.com/2026-10-05-Abbott-receives-FDA-approval-for-new-CardioMEMS-HF-System-capabilities-that-help-patients-engage-in-the-care-of-their-heart-condition
+  topicTags:
+    - heart failure
+    - patient monitoring
+    - software
+  relevantNodeIds:
+    - dev-cardiomems
+    - dig-cardioguide-hf
+    - cond-hfref
+    - cond-hfpef
+  reviewStatus: draft
+
+- id: news-2026-10-04-echodino-pediatric-echo-foundation-model
+  publishedAt: '2026-10-04'
+  title: EchoDino preprint evaluates pediatric-trained echocardiography representations across age groups
+  summary: >-
+    A preprint first submitted October 4 and revised October 7 describes EchoDino, trained on 3.7 million frames from 1.7 million
+    unlabeled pediatric echo videos and evaluated across nine pediatric/adult datasets. The abstract reports
+    structural-heart-disease detection AUC 0.872 versus 0.811 for a comparator. This is model evaluation, with no established
+    clinical deployment or point-of-care utility.
+  sourceName: arXiv (original preprint)
+  sourceUrl: https://arxiv.org/abs/2610.05603v2
+  topicTags:
+    - clinical AI
+    - echocardiography
+    - preprint
+  relevantNodeIds:
+    - cond-asd
+    - cond-vsd
+    - cond-pda
+  reviewStatus: draft
+
+- id: news-2026-10-02-emboliner-first-us-commercial-use
+  publishedAt: '2026-10-02'
+  title: Emboline reports first US commercial Emboliner use and begins a controlled launch
+  summary: >-
+    Emboline reported two commercial Emboliner procedures during TAVR at Columbia on October 1 and announced a controlled US
+    launch on October 2. FDA lists EPC-03 clearance under K261715 on September 8. Commercial use is a separate milestone from
+    clearance; the release does not provide comparative stroke-prevention outcomes or demonstrate broad availability.
+  sourceName: Emboline
+  sourceUrl: >-
+    https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html
+  topicTags:
+    - TAVR
+    - embolic protection
+    - commercial launch
+  relevantNodeIds:
+    - dev-emboliner
+    - co-emboline
+    - cond-as
+  additionalSources:
+    - label: FDA K261715 clearance record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715
+  reviewStatus: draft
+
+- id: news-2026-10-02-tavr-fsi-bench-validation
+  publishedAt: '2026-10-02'
+  title: Preprint validates a TAVR fluid–structure model against a pulse duplicator
+  summary: >-
+    An arXiv preprint compares simulated flow, pressure and leaflet dynamics with pulse-duplicator measurements at 60, 70 and 80
+    bpm. Boundary parameters were calibrated at 70 bpm and held fixed, while measured pressure and flow informed forcing at each
+    rate. Agreement supports conditional bench validation and parameter transfer; it does not establish in-vivo or
+    patient-specific prediction.
+  sourceName: arXiv (original preprint)
+  sourceUrl: https://arxiv.org/abs/2610.03297v1
+  topicTags:
+    - TAVR
+    - computational modeling
+    - preprint
+  relevantNodeIds:
+    - cond-as
+    - dev-evolut
+  reviewStatus: draft
+
+- id: news-2026-10-01-autus-fda-approval
+  publishedAt: '2026-10-01'
+  title: FDA approves AUTUS size-adjustable surgical pulmonary valve for pediatric patients
+  summary: >-
+    FDA approved the AUTUS Size-Adjustable Valve through PMA for pediatric congenital pulmonary valve disease on October 1.
+    Initial implantation is surgical; later balloon expansion can widen the polymeric-leaflet valve from approximately 13 mm to as
+    much as 22 mm. FDA describes a 62-patient study but cautions that expansion experience is limited. Exact approved labeling and
+    the PMA identifier remain to be reviewed.
+  sourceName: FDA
+  sourceUrl: https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+  topicTags:
+    - pulmonary valve
+    - pediatric heart valve
+    - FDA approval
+  relevantNodeIds:
+    - dev-autus
+    - co-edwards
+    - cond-pv
+    - trial-autus-pivotal
+  additionalSources:
+    - label: Edwards approval announcement
+      url: >-
+        https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Receives-FDA-Approval-for-AUTUS-Valve-the-First-Surgical-Pulmonary-Valve-for-Pediatric-Patients/default.aspx
+    - label: Pivotal study NCT05006404
+      url: https://clinicaltrials.gov/study/NCT05006404
+  reviewStatus: draft
+
+- id: news-2026-09-30-camzyos-pediatric-indication-expansion
+  publishedAt: '2026-09-30'
+  title: FDA expands CAMZYOS indication to pediatric patients weighing at least 30 kg
+  summary: >-
+    FDA expanded mavacamten’s US indication to adults and pediatric patients weighing at least 30 kg with symptomatic obstructive
+    HCM, to improve functional capacity and symptoms. The expansion followed evaluation of pediatric patients in SCOUT-HCM. The
+    approved weight threshold is distinct from trial age eligibility; echocardiographic monitoring and REMS requirements continue.
+  sourceName: FDA
+  sourceUrl: >-
+    https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart
+  topicTags:
+    - HCM
+    - pediatric
+    - FDA approval
+  relevantNodeIds:
+    - rx-mavacamten
+    - cond-hcm
+  reviewStatus: draft
+
+- id: news-2026-09-29-mitria-t45-svs-partnership
+  publishedAt: '2026-09-29'
+  title: Mitria partners with T45 Labs to advance investigational Subvalvular Spacer
+  summary: >-
+    Mitria announced a T45 Labs partnership and named Marwan Berrada-Sounni CEO to advance its investigational Subvalvular Spacer
+    for secondary/functional MR. The release reports six recipients but does not define device builds, surgical versus
+    transcatheter composition, or a registry cohort. SVS remains unavailable for commercial sale; the cumulative sponsor count is
+    not a clinical efficacy result.
+  sourceName: T45 Labs / Mitria Medical
+  sourceUrl: >-
+    https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html
+  topicTags:
+    - mitral regurgitation
+    - subvalvular repair
+    - corporate development
+  relevantNodeIds:
+    - dev-mitria-svs
+    - co-mitria-medical
+    - cond-mr
+  reviewStatus: draft
+
+- id: news-2026-09-29-puerarin-artificial-plasma-bhv-coating
+  publishedAt: '2026-09-29'
+  title: Puerarin-loaded artificial-plasma coating shows preclinical valve-material effects
+  summary: >-
+    An Acta Biomaterialia study describes a hydroxyethyl-starch hydrogel coating on glutaraldehyde-crosslinked porcine
+    pericardium, with ROS-responsive puerarin release. The abstract reports reduced platelet/protein adhesion, endothelial-cell
+    support and reduced calcification at 12 weeks in rat subcutaneous implants. This is a distinct strategy from the earlier
+    diclofenac nanogel report; human valve durability is not established. Only the abstract was reviewed.
+  sourceName: Acta Biomaterialia (original abstract)
+  sourceUrl: https://pubmed.ncbi.nlm.nih.gov/42810482/
+  topicTags:
+    - bioprosthetic valve
+    - materials
+    - preclinical research
+  relevantNodeIds:
+    - cond-as
+  additionalSources:
+    - label: Original article DOI
+      url: https://doi.org/10.1016/j.actbio.2026.09.046
+  reviewStatus: draft
+
+- id: news-2026-09-28-immersogeometric-mitral-teer-model
+  publishedAt: '2026-09-28'
+  title: Preprint models mitral valve dynamics and single- versus double-clip TEER
+  summary: >-
+    An arXiv preprint models a reconstructed human mitral valve, including blood-flow interaction and idealized single- and
+    double-clip repairs. A penalty constraint enforces leaflet coaptation without modeling the clip itself. Reconstruction checks
+    and mesh-convergence tests support the computational method; its repair scenarios are simulations, not clinical outcomes or
+    validated patient-specific treatment recommendations.
+  sourceName: arXiv (original preprint)
+  sourceUrl: https://arxiv.org/abs/2609.34209v1
+  topicTags:
+    - mitral regurgitation
+    - computational modeling
+    - preprint
+  relevantNodeIds:
+    - cond-mr
+    - dev-mitraclip
+  reviewStatus: draft
+
+- id: news-2026-09-25-amulet-canada-labeling-notice
+  publishedAt: '2026-09-25'
+  title: Health Canada posts Amulet labeling recall for pulmonary artery injury precautions
+  summary: >-
+    Health Canada published a Type II labeling recall for eight original Amulet 9-ACP2 models on September 25, with a recall date
+    of September 10. The notice concerns a revised pulmonary-artery contraindication and landing-zone distance assessment; it
+    explicitly states that the notification is unrelated to device defectiveness. FDA separately approved the US labeling change
+    on August 28 under P200049/S021. The Canadian classification does not establish a US recall or Amulet 360 applicability.
+  sourceName: Health Canada
+  sourceUrl: https://recalls-rappels.canada.ca/en/alert-recall/amplatzertm-amulettm-left-atrial-appendage-occluder
+  topicTags:
+    - LAAO
+    - labeling
+    - safety notice
+  relevantNodeIds:
+    - dev-amulet
+    - co-abbott
+  additionalSources:
+    - label: FDA P200049/S021 labeling decision
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P200049S021
+    - label: Abbott September 2026 customer correction letter
+      url: https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/pdf/reports/Customer%20Letter%20-%20Amplatzer%20Amulet%20Left%20Atrial%20Appendage%20Occluder.pdf
+  reviewStatus: draft
+
+- id: news-2026-09-24-parallel-septal-balloon-occlusion-mteer-case
+  publishedAt: '2026-09-24'
+  title: Case report describes septal balloon occlusion as a bailout during mitral TEER
+  summary: >-
+    A single-patient report describes temporary balloon occlusion of an iatrogenic atrial septal defect after profound hypoxemia
+    developed during mitral TEER. A compliant sizing balloon beside the transseptal sheath restored oxygenation while preserving
+    access for PASCAL deployment; definitive septal closure followed. This is an abstract-only procedural case, with no
+    comparative evidence, exact PASCAL generation or disclosed septal-occluder model.
+  sourceName: JACC Case Reports (original abstract)
+  sourceUrl: https://pubmed.ncbi.nlm.nih.gov/42782237/
+  topicTags:
+    - mitral TEER
+    - septal closure
+    - case report
+  relevantNodeIds:
+    - cond-mr
+    - cond-asd
+    - dev-pascal
+  reviewStatus: draft
+
 - id: "news-2026-09-23-acoramidis-real-world-study-shows-benefit-vs-tafamidis"
   publishedAt: "2026-09-23"
   title: "Acoramidis Shows Real-World Benefit Versus Tafamidis in ATTR-CM"
@@ -59,10 +294,14 @@
   sourceName: "Sixth Medical Center of the Chinese PLA General Hospital"
   sourceUrl: "https://interestingengineering.com/science/world-first-ai-backed-ultrasound-robot-congenital-heart-surgery-completed-in-china"
   topicTags: ["ASD closure", "robotics", "clinical AI"]
-  relevantNodeIds: ["cond-asd", "dev-amplatzer-asd"]
+  relevantNodeIds:
+    - cond-asd
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-09-12-sichuan-university-nanogel-coating-bioprosthetic-valve"
   publishedAt: "2026-09-12"
@@ -80,10 +319,17 @@
   sourceName: "TCTMD / CMS"
   sourceUrl: "https://www.tctmd.com/news/cms-finalizes-anticipated-updates-national-coverage-tavi"
   topicTags: ["TAVR", "reimbursement", "policy"]
-  relevantNodeIds: ["cond-as", "dev-sapien-3", "dev-evolut", "dev-navitor"]
+  relevantNodeIds:
+    - cond-as
 
 
 
+
+
+  additionalSources:
+    - label: CMS final decision memo Sep 10 2026
+      url: https://www.cms.gov/medicare-coverage-database/view/ncacal-decision-memo.aspx?NCAId=321&proposed=N
+  reviewStatus: draft
 
 - id: "news-2026-09-11-closure-af-sex-specific-analysis-raises-new-caution-about-laao-in-older"
   publishedAt: "2026-09-11"
@@ -97,8 +343,9 @@
 
 
 
-- id: "news-2026-09-10-emboline-receives-fda-clearance-for-the-emboliner-embolic-protection-sys"
-  publishedAt: "2026-09-10"
+  reviewStatus: draft
+- id: "news-2026-09-09-emboline-receives-fda-clearance-for-the-emboliner-embolic-protection-sys"
+  publishedAt: "2026-09-09"
   title: "Emboline receives FDA clearance for the Emboliner embolic-protection system for TAVR"
   summary: "The FDA granted 510(k) clearance to Emboline’s Emboliner Embolic Protection System for use during TAVR. The self-expanding filter is designed to protect all three cerebral vessels while also capturing embolic material that could travel to systemic organs, giving it a broader protection concept than cerebral-only filters."
   sourceName: "Emboline / Cardiac Interventions Today"
@@ -108,6 +355,12 @@
 
 
 
+
+
+  additionalSources:
+    - label: FDA 510(k) K261715
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715
+  reviewStatus: draft
 
 - id: "news-2026-09-10-pediavalve-tissue-engineered-pediatric-pulmonary-valve"
   publishedAt: "2026-09-10"
@@ -154,6 +407,9 @@
 
 
 
+
+  reviewStatus: draft
+
 - id: "news-2026-09-08-corcym-trimemo-first-in-human-implant-tricuspid-annuloplasty"
   publishedAt: "2026-09-08"
   title: "Corcym reports first-in-human implant of TriMemo, a dedicated tricuspid annuloplasty ring"
@@ -189,6 +445,9 @@
 
 
 
+
+  reviewStatus: draft
+
 - id: "news-2026-09-02-modified-transseptal-batman-technique-reported-for-high-risk-mitral-valv"
   publishedAt: "2026-09-02"
   title: "Modified transseptal BATMAN technique reported for high-risk mitral valve-in-valve TMVR"
@@ -200,6 +459,9 @@
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-09-02-lux-valve-plus-ttvr-expands-into-eastern-india-with-two-high-risk-cases"
   publishedAt: "2026-09-02"
@@ -274,6 +536,12 @@
 
 
 
+
+  additionalSources:
+    - label: NEJM original TAVI-PCI trial
+      url: https://www.nejm.org/doi/full/10.1056/NEJMoa2606924
+  reviewStatus: draft
+
 - id: "news-2026-08-30-notion-4-tempers-enthusiasm-for-short-course-anticoagulation-solely-to-p"
   publishedAt: "2026-08-30"
   title: "NOTION-4 tempers enthusiasm for short-course anticoagulation solely to prevent HALT"
@@ -286,17 +554,26 @@
 
 
 
+
+  additionalSources:
+    - label: Original NOTION-4 randomized trial, JACC
+      url: https://www.jacc.org/doi/10.1016/j.jacc.2026.08.023
+  reviewStatus: draft
+
 - id: "news-2026-08-30-acasa-tavi-ongoing-noac-monotherapy-reduces-subclinical-leaflet-thrombos"
   publishedAt: "2026-08-30"
   title: "ACASA-TAVI: ongoing NOAC monotherapy reduces subclinical leaflet thrombosis after TAVR"
   summary: "ACASA-TAVI randomized 360 post-TAVR patients to NOAC monotherapy or aspirin and found significantly less hypoattenuated leaflet thickening with anticoagulation. HALT occurred in 16.2% of the NOAC group versus 28.6% of patients receiving aspirin, while the composite safety endpoint of bleeding, thromboembolism or death was noninferior. The result suggests that anticoagulation can materially suppress subclinical valve thrombosis without an obvious safety penalty in this trial population."
-  sourceName: "ESC Congress 2026 / JAMA"
-  sourceUrl: "https://www.acc.org/latest-in-cardiology/articles/2026/08/29/08/48/sun-545am-combo-tavi-esc-2026"
+  sourceName: JAMA — original ACASA-TAVI randomized trial
+  sourceUrl: https://jamanetwork.com/journals/jama/fullarticle/2853401
   topicTags: ["TAVR", "leaflet thrombosis", "anticoagulation"]
   relevantNodeIds: ["cond-as"]
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-08-30-vutrisiran-benefit-holds-regardless-of-tafamidis-use"
   publishedAt: "2026-08-30"
@@ -317,6 +594,28 @@
   topicTags: ["HFrEF", "investigational drug", "ESC 2026"]
   relevantNodeIds: ["cond-hfref", "co-astrazeneca"]
 
+
+- id: news-2026-08-30-cardio-ttransform-stabilizer-subgroup
+  publishedAt: '2026-08-30'
+  title: CARDIO-TTRansform subgroup analysis links eplontersen effect to baseline stabilizer use
+  summary: >-
+    A prespecified CARDIO-TTRansform analysis found that baseline TTR-stabilizer use modified eplontersen’s effect on
+    cardiovascular death/recurrent cardiovascular events. Benefit appeared without a baseline stabilizer (RR 0.71, 95% CI
+    0.54–0.93), while the stabilizer subgroup showed no benefit (RR 1.14, 0.85–1.53). The overall trial was neutral. This missing
+    August publication is a backfill; the subgroup findings do not establish benefit in the overall study population.
+  sourceName: Nature Medicine / UCL accepted-version abstract
+  sourceUrl: https://doi.org/10.1038/s41591-026-04670-6
+  topicTags:
+    - ATTR-CM
+    - clinical evidence
+    - subgroup analysis
+  relevantNodeIds:
+    - cond-attr-cm
+    - rx-tafamidis
+  additionalSources:
+    - label: Author-institution abstract and accepted version
+      url: https://discovery.ucl.ac.uk/id/eprint/10230315/
+  reviewStatus: draft
 
 - id: "news-2026-08-29-esc-analyses-extend-aficamten-evidence-across-obstructive-and-non-obstru"
   publishedAt: "2026-08-29"
@@ -398,6 +697,9 @@
 
 
 
+
+  reviewStatus: draft
+
 - id: "news-2026-08-20-meta-analysis-examines-combined-laao-and-tavr-for-patients-with-atrial-f"
   publishedAt: "2026-08-20"
   title: "Meta-analysis examines combined LAAO and TAVR for patients with atrial fibrillation"
@@ -409,6 +711,9 @@
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-08-19-new-jacc-analysis-tests-how-robust-the-randomized-evidence-for-mitral-te"
   publishedAt: "2026-08-19"
@@ -647,6 +952,12 @@
 
 
 
+
+  additionalSources:
+    - label: ClinicalTrials.gov NCT06568003
+      url: https://clinicaltrials.gov/study/NCT06568003
+  reviewStatus: draft
+
 - id: "news-2026-07-20-boston-scientific-starts-faradigm-ide-trial-for-faraflex-pfa-system"
   publishedAt: "2026-07-20"
   title: "Boston Scientific starts FARADIGM IDE trial for Faraflex PFA system"
@@ -671,6 +982,12 @@
 
 
 
+
+  additionalSources:
+    - label: FDA 510(k) K261745
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K261745
+  reviewStatus: draft
+
 - id: "news-2026-07-15-acc-scai-and-sts-submit-formal-comments-on-cms-proposed-tavr-national-co"
   publishedAt: "2026-07-15"
   title: "ACC, SCAI, and STS submit formal comments on CMS’ proposed TAVR National Coverage Determination update"
@@ -686,7 +1003,9 @@
 - id: "news-2026-07-13-medtronic-issues-removal-action-for-certain-harmony-transcatheter-pulmon"
   publishedAt: "2026-07-13"
   title: "Medtronic issues removal action for certain Harmony transcatheter pulmonary valve delivery catheter lots"
-  summary: "Medtronic issued a customer letter recommending removal of certain lots of the Harmony transcatheter pulmonary valve delivery catheter system, and the FDA identified the action as its most serious recall classification because continued use could result in serious injury or death. Harmony is Medtronic’s transcatheter pulmonary valve platform for patients with dysfunctional right ventricular outflow tracts."
+  summary: >-
+    Medtronic reported a removal action for specified lots of the Harmony Delivery Catheter System. FDA recall Z-2624-2026 covers the delivery
+    catheter and advises checking affected lots; it does not identify a recall of the implanted Harmony valve itself.
   sourceName: "MassDevice"
   sourceUrl: "https://www.massdevice.com/medtronic-warns-harmony-delivery-system/"
   topicTags: ["pulmonary valve", "device safety", "recall"]
@@ -694,6 +1013,12 @@
 
 
 
+
+
+  additionalSources:
+    - label: FDA Harmony Delivery Catheter System Class I recall Z-2624-2026
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRes/res.cfm?id=220767
+  reviewStatus: draft
 
 - id: "news-2026-07-13-edwards-lifesciences-and-genesis-medtech-agree-to-12-million-ftc-settlem"
   publishedAt: "2026-07-13"
@@ -706,6 +1031,12 @@
 
 
 
+
+
+  additionalSources:
+    - label: FTC case page and proposed judgment status
+      url: https://www.ftc.gov/legal-library/browse/cases-proceedings/united-states-v-edwards-lifesciences-corp-genesis-medtech-group-ltd
+  reviewStatus: draft
 
 - id: "news-2026-07-07-cytokinetics-announces-esc-2026-late-breaking-aficamten-abstracts"
   publishedAt: "2026-07-07"
@@ -758,7 +1089,12 @@
 - id: "news-2026-07-01-northwestern-fluoroless-watchman-workflow"
   publishedAt: "2026-07-01"
   title: "Northwestern describes fluoroscopy-free AF ablation and WATCHMAN implantation workflow"
-  summary: "A Northwestern Medicine Breakthroughs for Physicians clinical video describes a fluoroscopy-free workflow combining catheter ablation and WATCHMAN implantation; the featured physician reports performing ablation and WATCHMAN procedures without radiation exposure over 15 years. Northwestern dates the item only to July 2026, without a publication day. This is a technique feature, not a comparative clinical study; it reports no controlled outcomes, and does not identify the WATCHMAN generation, so efficacy and generation-specific conclusions cannot be drawn."
+  summary: >-
+    A Northwestern Medicine Breakthroughs for Physicians clinical video describes a fluoroscopy-free workflow combining catheter ablation and
+    WATCHMAN implantation; the featured physician reports performing ablation and WATCHMAN procedures without radiation exposure over 15
+    years. Northwestern dates the item only to July 2026, without a publication day. This is a technique feature, not a comparative clinical
+    study; it reports no controlled outcomes, and does not identify the WATCHMAN generation, so efficacy and generation-specific conclusions
+    cannot be drawn. Source dates this report to July 2026; the exact publication day is unverified.
   sourceName: "Northwestern Medicine Breakthroughs for Physicians"
   sourceUrl: "https://breakthroughsforphysicians.nm.org/cardiovascular-clinical-video-radiation-free-catheter-ablation-watchman-implantation.html"
   topicTags: ["LAAO", "WATCHMAN", "fluoroscopy-free procedure", "workflow"]
@@ -789,6 +1125,9 @@
 
 
 
+
+  reviewStatus: draft
+
 - id: "news-2026-06-29-abbott-highlights-triclip-navitor-and-amulet-360-datasets-at-ny-valves"
   publishedAt: "2026-06-29"
   title: "Abbott highlights TriClip, Navitor, and Amulet 360 datasets at NY Valves"
@@ -800,6 +1139,9 @@
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-06-28-j-valve-transfemoral-thv-system-reports-1-year-efs-outcomes-in-severe-ar"
   publishedAt: "2026-06-28"
@@ -813,6 +1155,9 @@
 
 
 
+
+  reviewStatus: draft
+
 - id: "news-2026-06-26-valgen-dragonfly-tmvr-receives-ce-mark-for-functional-mr"
   publishedAt: "2026-06-26"
   title: "Valgen DragonFly TMVR receives CE Mark for functional MR"
@@ -824,6 +1169,9 @@
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-06-26-edwards-receives-fda-clearance-for-ecliptis-laa-exclusion-system"
   publishedAt: "2026-06-26"
@@ -837,6 +1185,12 @@
 
 
 
+
+  additionalSources:
+    - label: FDA 510(k) K254232
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K254232
+  reviewStatus: draft
+
 - id: "news-2026-06-18-cms-proposes-major-tavr-coverage-update"
   publishedAt: "2026-06-18"
   title: "CMS proposes major TAVR coverage update"
@@ -844,10 +1198,14 @@
   sourceName: "CMS proposed decision memo"
   sourceUrl: "https://www.cms.gov/medicare-coverage-database/view/ncacal-decision-memo.aspx?NCAId=321&proposed=Y"
   topicTags: ["TAVR", "reimbursement", "policy"]
-  relevantNodeIds: ["cond-as", "dev-sapien-3", "dev-evolut", "dev-navitor"]
+  relevantNodeIds:
+    - cond-as
 
 
 
+
+
+  reviewStatus: draft
 
 - id: "news-2026-06-16-ten-year-partner-2a-and-sapien-3-registry-data-sharpen-the-tavi-durabili"
   publishedAt: "2026-06-16"

@@ -1,0 +1,484 @@
+{
+  "auditDate": "2026-10-03",
+  "stage": "Domain findings and candidate changes before final integration",
+  "resolutionReport": "docs/DATABASE_AUDIT_2026-10-03.md",
+  "limitations": [
+    "Candidates are not an automatic patch; parent review narrowed or rejected unsupported fields. Final authored YAML and the consolidated report describe implemented changes."
+  ],
+  "therapyUpdates": [
+    {
+      "id": "dev-amplatzer-cardiac-plug",
+      "fields": {
+        "description": "Abbott acquired St. Jude Medical, the historical ACP developer; ACP is a distinct earlier generation from Amulet.",
+        "company": "co-abbott"
+      },
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/20824765/",
+        "https://www.abbott.com/corpnewsroom/products-and-innovation/st-jude-medical-acquisition-complete.html"
+      ],
+      "notes": "Historical company attribution derives from St. Jude ACP publications; current corporate successor is Abbott."
+    },
+    {
+      "id": "dev-plaato",
+      "fields": {
+        "description": "Appriva Medical developed PLAATO; Microvena acquired its rights in 2002, later ev3. ev3 reported discontinuing PLAATO development and commercialization in 2005.",
+        "company": "co-appriva-medical"
+      },
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1318310/000110465906052498/a06-15615_110q.htm",
+        "https://pubmed.ncbi.nlm.nih.gov/11997272/",
+        "https://law.justia.com/cases/delaware/supreme-court/2007/98990.html"
+      ],
+      "notes": "Ownership lineage is verified by the Delaware Supreme Court opinion and ev3 SEC filing; market availability after discontinuation is unresolved."
+    },
+    {
+      "id": "dev-wavecrest",
+      "fields": {
+        "description": "Coherex Medical developed WaveCrest; Biosense Webster acquired Coherex in November 2015. WaveCrest had CE Mark in 2013 and was then unavailable for U.S. commercial distribution.",
+        "company": "co-coherex-medical"
+      },
+      "sources": [
+        "https://www.biosensewebster.com/documents/TaylorPressRelease.pdf?Cache=20%2F11%2F2015+12%3A16%3A45"
+      ],
+      "notes": "Historical developer and acquisition supported by company announcement. Current regional commercial availability remains unresolved."
+    },
+    {
+      "id": "dev-occlutech-laa-original",
+      "fields": {
+        "description": "Occlutech developed the original LAA Occluder. Its 2016 field notice reported suspension of sales and shipment after dislodgements; preserve discontinued status for this generation only.",
+        "company": "co-occlutech"
+      },
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/27925332/",
+        "https://www.moph.gov.lb/userfiles/files/Medical%20Devices/Medical%20Devices%20Recalls%202016/24-10-2016/OcclutechLAAOccluder.pdf"
+      ],
+      "notes": "Existing company entity co-occlutech can be reused. Do not transfer original-generation recall/discontinuation to Plus."
+    },
+    {
+      "id": "dev-occlutech-laa-redesigned",
+      "fields": {
+        "description": "Occlutech developed the modified Occlutech Plus LAA device, a redesign distinct from the original device subject to the 2016 field action.",
+        "company": "co-occlutech"
+      },
+      "sources": [
+        "https://www.nature.com/articles/s41598-021-82359-1"
+      ],
+      "notes": "Current authorization and commercial status by region not established by this source."
+    },
+    {
+      "id": "dev-sideris-patch",
+      "fields": {
+        "description": "The Sideris Transcatheter Patch was developed by Custom Medical Devices and described as a bioabsorbable polyurethane patch deployed with adhesive.",
+        "company": "co-custom-medical-devices"
+      },
+      "sources": [
+        "https://www.jacc.org/doi/abs/10.1016/j.jacc.2011.08.036"
+      ],
+      "notes": "Historical report identifies the manufacturer; present availability and regulatory status unresolved."
+    },
+    {
+      "id": "dev-prolipsis",
+      "fields": {},
+      "sources": [
+        "https://www.jacc.org/doi/abs/10.1016/j.jacc.2011.08.036"
+      ],
+      "notes": "No Prolipsis-specific primary publication, regulatory record, registry, or manufacturer statement was located. Treat description, manufacturer, generation relationship, design/mechanism, materials, and current status as null/unverified; parent curation should withdraw the existing graph claims “Percutaneous LAA patch,” “Second-generation Sideris patch,” and “Bioabsorbable LAA patch with an immediate-release design” unless primary evidence is obtained. The linked original Sideris study establishes only first-generation patch facts."
+    },
+    {
+      "id": "dev-ultraseal",
+      "fields": {
+        "description": "Cardia developed the original Ultraseal LAA occluder; keep first-generation specifications separate from Ultraseal II.",
+        "company": "co-cardia"
+      },
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/30249439/"
+      ],
+      "notes": "Current original-generation availability unresolved."
+    },
+    {
+      "id": "dev-seala",
+      "fields": {
+        "description": "SeaLA is associated with Hangzhou Nuomao Medtech, whose LAA-occluder patent record identifies the original assignee as Hangzhou Nuomao Medtech Co., Ltd. and records its name change to Hangzhou Dinova EP Technology Co., Ltd. ClinicalTrials.gov separately identifies Dinova as the study sponsor; sponsorship alone does not establish device manufacture.",
+        "company": "co-hangzhou-dinova-ep"
+      },
+      "sources": [
+        "https://patents.google.com/patent/US10792045B2/en",
+        "https://clinicaltrials.gov/study/NCT05911685"
+      ],
+      "notes": "Use co-hangzhou-dinova-ep as the current-name company node, with Hangzhou Nuomao Medtech as the documented former name of the patent assignee (not a separate company absent evidence of a distinct legal entity). Patent record supports a name change for the assignee; trial sponsorship is a separate role. Current market status and jurisdiction-specific approvals remain unresolved."
+    },
+    {
+      "id": "dev-lefort",
+      "fields": {
+        "description": "The historical Lefort device is attributed to Shape Memory Alloy Co. in original clinical literature; this is distinct from later MemoLefort products.",
+        "company": "co-shape-memory-alloy"
+      },
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5287943/"
+      ],
+      "notes": "Regional authorization/current availability unresolved."
+    },
+    {
+      "id": "dev-pfm-laa",
+      "fields": {
+        "description": "pfm medical presented a research-stage LAA occluder design; no later authorization or market availability established.",
+        "company": "co-pfm-medical"
+      },
+      "sources": [
+        "https://www.ahajournals.org/doi/pdf/10.1161/CIRCINTERVENTIONS.117.005359"
+      ],
+      "notes": "Current development and commercial status unresolved."
+    },
+    {
+      "id": "dev-lariat",
+      "fields": {
+        "description": "SentreHEART developed the LARIAT epicardial suture ligation system; FDA tool clearances for soft-tissue approximation/ligation do not establish a stroke-prevention indication.",
+        "company": "co-sentreheart"
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf15/K153096.pdf",
+        "https://www.jacc.org/doi/10.1016/j.jacc.2012.06.046"
+      ],
+      "notes": "NCT00841529 is the Cardioblate IDE trial, not a LARIAT study, and is excluded here. The original LARIAT clinical report identifies SentreHEART and describes combined pericardial and transseptal access. Current LAA-use and commercial status unresolved."
+    },
+    {
+      "id": "dev-sierra",
+      "fields": {
+        "description": "Aegis Medical Innovations developed the Sierra epicardial LAA ligation system evaluated in first-in-human research.",
+        "company": "co-aegis-medical-innovations"
+      },
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11642118/"
+      ],
+      "notes": "Current regulatory and market status unresolved."
+    },
+    {
+      "id": "dev-claas",
+      "fields": {
+        "description": "Conformal Medical developed the investigational CLAAS AcuFORM LAA occlusion system; distinguish trial-stage evidence from marketing authorization.",
+        "company": "co-conformal-medical"
+      },
+      "sources": [
+        "https://www.jacc.org/doi/10.1016/j.jcin.2021.08.060",
+        "https://clinicaltrials.gov/study/NCT05147792"
+      ],
+      "notes": "Primary sources establish developer and investigation; no marketing authorization located."
+    },
+    {
+      "id": "dev-omega-laa",
+      "fields": {
+        "description": "Eclipse Medical was manufacturer of the OMEGA LAA Occluder; a November 2024 notice called for removal of unused stock and quarantine/return.",
+        "company": "co-eclipse-medical"
+      },
+      "sources": [
+        "https://assets.hpra.ie/data/docs/default-source/product-updates/fsn/field-safety-notices/november-2024/omega-left-atrial-appendage-%28laa%29-occluder-device_eclipse-medical_-advice-regarding-a-device-removal.pdf?sfvrsn=a200dad9_1"
+      ],
+      "notes": "Field notice does not establish current corporate status or all-country authorization status."
+    },
+    {
+      "id": "dev-lacbes",
+      "fields": {
+        "description": "LACBES was developed/manufactured by Shanghai Push Medical Equipment; primary clinical research identifies PushMed, Shanghai.",
+        "company": "co-shanghai-push-medical"
+      },
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478548/",
+        "https://www.jstage.jst.go.jp/article/circj/82/1/82_CJ-17-0412/_pdf"
+      ],
+      "notes": "China authorization is reported in clinical research; primary NMPA decision record was not located. US/EU authorization unresolved."
+    },
+    {
+      "id": "dev-ultraseal-ii",
+      "fields": {
+        "description": "Cardia developed Ultraseal II, a second-generation product that must remain separate from original Ultraseal specifications.",
+        "company": "co-cardia"
+      },
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9796275/"
+      ],
+      "notes": "Regional authorization and current availability unresolved."
+    },
+    {
+      "id": "dev-cardioblate-closure",
+      "fields": {
+        "description": "Medtronic Cardiovascular sponsored an IDE evaluation of its Cardioblate LAA Closure Device; this was a historical investigational prototype, distinct from Cardioblate RF ablation products.",
+        "company": "co-medtronic"
+      },
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT00841529",
+        "https://pubmed.ncbi.nlm.nih.gov/20346467/"
+      ],
+      "notes": "Trial terminated; no marketing authorization established."
+    },
+    {
+      "id": "dev-atriclip",
+      "fields": {
+        "description": "AtriCure manufactures the AtriClip surgical epicardial LAA exclusion platform; IFU-0278.A supports this FLEX product generation.",
+        "company": "co-atricure"
+      },
+      "sources": [
+        "https://europe.atricure.com/sites/default/files/devices-ifu/IFU-0278.A.pdf"
+      ],
+      "notes": "Authorization and indication vary by jurisdiction; do not imply FDA PMA approval for stroke prevention."
+    },
+    {
+      "id": "dev-laminar-laa",
+      "fields": {
+        "description": "Laminar developed the investigational rotational LAA elimination system and was acquired by Johnson & Johnson MedTech in 2023 as part of Biosense Webster.",
+        "company": "co-laminar"
+      },
+      "sources": [
+        "https://www.investor.jnj.com/investor-news/news-details/2023/Johnson--Johnson-MedTech-Acquires-Laminar-Inc/default.aspx",
+        "https://clinicaltrials.gov/study/NCT06168942"
+      ],
+      "notes": "The pivotal trial is suspended; later divestment/current owner claims need primary-source confirmation as of the audit date."
+    },
+    {
+      "id": "dev-gore-cardioform-asd",
+      "fields": {
+        "company": "co-wl-gore",
+        "description": "Larger ostium secundum ASD configuration in the GORE CARDIOFORM family, indicated for percutaneous transcatheter closure of ostium secundum atrial septal defects.",
+        "regulatoryStatus": "approved",
+        "regulatoryDetail": "US PMA supplement P050006/S071 approved 2019-05-28 to add the CARDIOFORM ASD configuration to the GORE HELEX Septal Occluder product line; manufacturer product information states the current US indication for ostium secundum ASD closure.",
+        "materials": [],
+        "links": [
+          {
+            "label": "GORE CARDIOFORM ASD Occluder",
+            "url": "https://www.goremedical.com/products/cardioform-asd-occluder"
+          }
+        ],
+        "timeline": {
+          "date": "2019-05-28",
+          "precision": "day",
+          "dateBasis": "fda-approval",
+          "event": "FDA PMA supplement added the GORE CARDIOFORM ASD Occluder configuration.",
+          "source": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P050006S071",
+          "notes": "Approval for the ASD configuration; the shared family source says it was added to the HELEX Septal Occluder product line."
+        }
+      },
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P050006S071",
+        "https://www.goremedical.com/products/cardioform-asd-occluder"
+      ],
+      "notes": "The 2019 FDA order identifies the ASD configuration and decision date; Gore’s current product page states the US indication. Exact implant material specifics for this larger-defect configuration were not independently visible in the accessible public IFU during this review, so materials remains empty rather than being inherited from the distinct CARDIOFORM Septal Occluder record."
+    }
+  ],
+  "companyRecommendations": [
+    {
+      "id": "co-abbott",
+      "name": "Abbott",
+      "description": "Abbott acquired St. Jude Medical, the historical ACP developer; ACP is a distinct earlier generation from Amulet.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/20824765/",
+        "https://www.abbott.com/corpnewsroom/products-and-innovation/st-jude-medical-acquisition-complete.html"
+      ]
+    },
+    {
+      "id": "co-appriva-medical",
+      "name": "Appriva Medical",
+      "description": "Appriva Medical developed PLAATO; Microvena acquired its rights in 2002, later ev3. ev3 reported discontinuing PLAATO development and commercialization in 2005.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1318310/000110465906052498/a06-15615_110q.htm",
+        "https://pubmed.ncbi.nlm.nih.gov/11997272/",
+        "https://law.justia.com/cases/delaware/supreme-court/2007/98990.html"
+      ]
+    },
+    {
+      "id": "co-coherex-medical",
+      "name": "Coherex Medical",
+      "description": "Coherex Medical developed WaveCrest; Biosense Webster acquired Coherex in November 2015. WaveCrest had CE Mark in 2013 and was then unavailable for U.S. commercial distribution.",
+      "sources": [
+        "https://www.biosensewebster.com/documents/TaylorPressRelease.pdf?Cache=20%2F11%2F2015+12%3A16%3A45"
+      ]
+    },
+    {
+      "id": "co-custom-medical-devices",
+      "name": "Custom Medical Devices",
+      "description": "The Sideris Transcatheter Patch was developed by Custom Medical Devices and described as a bioabsorbable polyurethane patch deployed with adhesive.",
+      "sources": [
+        "https://www.jacc.org/doi/abs/10.1016/j.jacc.2011.08.036"
+      ]
+    },
+    {
+      "id": "co-cardia",
+      "name": "Cardia",
+      "description": "Cardia developed Ultraseal II, a second-generation product that must remain separate from original Ultraseal specifications.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9796275/"
+      ]
+    },
+    {
+      "id": "co-hangzhou-dinova-ep",
+      "name": "Hangzhou Dinova EP Technology",
+      "description": "Current name of the LAA-occluder patent assignee originally named Hangzhou Nuomao Medtech Co., Ltd.; the patent record documents a change of name to Hangzhou Dinova EP Technology Co., Ltd. ClinicalTrials.gov separately identifies Dinova as sponsor of the SeaLA study.",
+      "sources": [
+        "https://patents.google.com/patent/US10792045B2/en",
+        "https://clinicaltrials.gov/study/NCT05911685"
+      ]
+    },
+    {
+      "id": "co-shape-memory-alloy",
+      "name": "Shape Memory Alloy Co.",
+      "description": "The historical Lefort device is attributed to Shape Memory Alloy Co. in original clinical literature; this is distinct from later MemoLefort products.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5287943/"
+      ]
+    },
+    {
+      "id": "co-pfm-medical",
+      "name": "pfm medical",
+      "description": "pfm medical presented a research-stage LAA occluder design; no later authorization or market availability established.",
+      "sources": [
+        "https://www.ahajournals.org/doi/pdf/10.1161/CIRCINTERVENTIONS.117.005359"
+      ]
+    },
+    {
+      "id": "co-sentreheart",
+      "name": "SentreHEART",
+      "description": "SentreHEART developed the LARIAT epicardial suture ligation system; FDA tool clearances for soft-tissue approximation/ligation do not establish a stroke-prevention indication.",
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf15/K153096.pdf",
+        "https://www.jacc.org/doi/10.1016/j.jacc.2012.06.046"
+      ]
+    },
+    {
+      "id": "co-aegis-medical-innovations",
+      "name": "Aegis Medical Innovations",
+      "description": "Aegis Medical Innovations developed the Sierra epicardial LAA ligation system evaluated in first-in-human research.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11642118/"
+      ]
+    },
+    {
+      "id": "co-conformal-medical",
+      "name": "Conformal Medical",
+      "description": "Conformal Medical developed the investigational CLAAS AcuFORM LAA occlusion system; distinguish trial-stage evidence from marketing authorization.",
+      "sources": [
+        "https://www.jacc.org/doi/10.1016/j.jcin.2021.08.060",
+        "https://clinicaltrials.gov/study/NCT05147792"
+      ]
+    },
+    {
+      "id": "co-eclipse-medical",
+      "name": "Eclipse Medical",
+      "description": "Eclipse Medical was manufacturer of the OMEGA LAA Occluder; a November 2024 notice called for removal of unused stock and quarantine/return.",
+      "sources": [
+        "https://assets.hpra.ie/data/docs/default-source/product-updates/fsn/field-safety-notices/november-2024/omega-left-atrial-appendage-%28laa%29-occluder-device_eclipse-medical_-advice-regarding-a-device-removal.pdf?sfvrsn=a200dad9_1"
+      ]
+    },
+    {
+      "id": "co-shanghai-push-medical",
+      "name": "Shanghai Push Medical Equipment",
+      "description": "LACBES was developed/manufactured by Shanghai Push Medical Equipment; primary clinical research identifies PushMed, Shanghai.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478548/",
+        "https://www.jstage.jst.go.jp/article/circj/82/1/82_CJ-17-0412/_pdf"
+      ]
+    },
+    {
+      "id": "co-medtronic",
+      "name": "Medtronic",
+      "description": "Medtronic Cardiovascular sponsored an IDE evaluation of its Cardioblate LAA Closure Device; this was a historical investigational prototype, distinct from Cardioblate RF ablation products.",
+      "sources": [
+        "https://clinicaltrials.gov/study/NCT00841529",
+        "https://pubmed.ncbi.nlm.nih.gov/20346467/"
+      ]
+    },
+    {
+      "id": "co-atricure",
+      "name": "AtriCure",
+      "description": "AtriCure manufactures the AtriClip surgical epicardial LAA exclusion platform; IFU-0278.A supports this FLEX product generation.",
+      "sources": [
+        "https://europe.atricure.com/sites/default/files/devices-ifu/IFU-0278.A.pdf"
+      ]
+    },
+    {
+      "id": "co-laminar",
+      "name": "Laminar, Inc.",
+      "description": "Laminar developed the investigational rotational LAA elimination system and was acquired by Johnson & Johnson MedTech in 2023 as part of Biosense Webster.",
+      "sources": [
+        "https://www.investor.jnj.com/investor-news/news-details/2023/Johnson--Johnson-MedTech-Acquires-Laminar-Inc/default.aspx",
+        "https://clinicaltrials.gov/study/NCT06168942"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "laao-plaato-ownership",
+      "status": "corrected",
+      "summary": "The Delaware Supreme Court opinion states that Appriva developed PLAATO and Microvena acquired all rights/interests in 2002; ev3 later reported discontinuing development and commercialization in 2005.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1318310/000110465906052498/a06-15615_110q.htm",
+        "https://law.justia.com/cases/delaware/supreme-court/2007/98990.html"
+      ]
+    },
+    {
+      "id": "laao-unmapped-makers",
+      "status": "verified",
+      "summary": "20 LAA graph therapies lack company mappings. Proposed developer/manufacturer mappings are listed in therapyUpdates; they span historical developers, current owners, and investigational sponsors and should not be read as current commercial availability.",
+      "sources": [
+        "https://www.biosensewebster.com/documents/TaylorPressRelease.pdf?Cache=20%2F11%2F2015+12%3A16%3A45",
+        "https://clinicaltrials.gov/study/NCT05911685",
+        "https://www.jacc.org/doi/abs/10.1016/j.jacc.2011.08.036",
+        "https://patents.google.com/patent/US10792045B2/en"
+      ]
+    },
+    {
+      "id": "laao-prolipsis-manufacturer",
+      "status": "gap",
+      "summary": "No primary source verifies Prolipsis manufacturer, generation lineage, design, mechanism, or materials. Keep those fields unset and withdraw the existing unverified graph subtype, “second-generation” regulatory detail, and bioabsorbable/immediate-release mechanism pending direct primary evidence.",
+      "sources": [
+        "https://www.jacc.org/doi/abs/10.1016/j.jacc.2011.08.036",
+        "https://eurointervention.pcronline.com/article/ehra-eapci-expert-consensus-statement-on-catheter-based-left-atrial-appendage-occlusion-an-update"
+      ]
+    },
+    {
+      "id": "laao-laminar-latest-owner",
+      "status": "gap",
+      "summary": "J&J confirmed Laminar acquisition in 2023 and trial suspension is on ClinicalTrials.gov; a reported 2026 asset sale surfaced in secondary press, but a primary transaction record was not located. Do not update current owner absent primary evidence.",
+      "sources": [
+        "https://www.investor.jnj.com/investor-news/news-details/2023/Johnson--Johnson-MedTech-Acquires-Laminar-Inc/default.aspx",
+        "https://clinicaltrials.gov/study/NCT06168942"
+      ]
+    },
+    {
+      "id": "laao-authorization-geography",
+      "status": "gap",
+      "summary": "For historical and China-developed LAA devices, current authorization and commercial availability are not consistently disclosed in the cited primary records. Preserve jurisdiction-specific known decisions only; do not infer worldwide approval or discontinuation.",
+      "sources": [
+        "https://www.moph.gov.lb/userfiles/files/Medical%20Devices/Medical%20Devices%20Recalls%202016/24-10-2016/OcclutechLAAOccluder.pdf",
+        "https://clinicaltrials.gov/study/NCT05911685"
+      ]
+    },
+    {
+      "id": "septal-company-mappings",
+      "status": "verified",
+      "summary": "The catalog’s septal/congenital version families identify Abbott for Amplatzer, W. L. Gore for CARDIOFORM, Lifetech for LAmbre, and Edwards for Ecliptis; corresponding graph therapy entities already map to companies. Scope remains version-specific and regulatory decisions should not be generalized across indications.",
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf/P000039B.pdf",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf/P040040C.pdf",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf"
+      ]
+    },
+    {
+      "id": "gore-cardioform-asd-therapy-node",
+      "status": "verified",
+      "summary": "The GORE CARDIOFORM ASD Occluder has no separate graph therapy node yet; add dev-gore-cardioform-asd and connect it to the existing GORE CARDIOFORM family. FDA records an S071 decision on 2019-05-28; the current manufacturer page gives the US ostium secundum ASD indication.",
+      "sources": [
+        "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P050006S071",
+        "https://www.goremedical.com/products/cardioform-asd-occluder"
+      ]
+    },
+    {
+      "id": "laao-secondary-spec-cleanup",
+      "status": "corrected",
+      "summary": "All 12 spec claims in the assigned fragments that relied on the 2018 CI Today spectrum review were removed or replaced with primary-source-supported claims; no spec block still uses that review as a value source.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/22078431/",
+        "https://www.jacc.org/doi/10.1016/j.jcin.2018.05.023",
+        "https://www.jacc.org/doi/10.1016/j.jacc.2012.06.046",
+        "https://pubmed.ncbi.nlm.nih.gov/38841867/"
+      ]
+    }
+  ]
+}
