@@ -11,7 +11,7 @@ import type {
 /** Fetch the optional, source-linked pilot separately from the graph payload. */
 export async function loadIntelligence(): Promise<IntelligenceData> {
   const baseUrl = (import.meta as ImportMeta & { env?: { BASE_URL?: string } }).env?.BASE_URL ?? '/'
-  const response = await fetch(`${baseUrl}intelligence.json`)
+  const response = await fetch(`${baseUrl}intelligence.json`, { cache: 'no-cache' })
   if (!response.ok) {
     throw new Error(`Failed to load intelligence data (HTTP ${response.status})`)
   }
