@@ -12,7 +12,7 @@ sources:                          # new SourceDocument records (see pilot.yaml)
   - id: src-navitor-ssed
     title: Navitor TAVI system SSED
     url: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023S014B.pdf
-    kind: regulatory              # regulatory | registry | publication | manufacturer | technical | other
+    kind: regulatory              # regulatory | registry | publication | patent | manufacturer | technical | other
     publisher: FDA
     publishedAt: { value: '2023-01-13', precision: day }
     retrievedAt: '2026-09-23'
@@ -58,3 +58,33 @@ Rules:
   explicit CC BY license named in the caption. Store FDA images under
   `public/evidence/fda/` and publication images under
   `public/evidence/publications/` (longest side ≤ 480 px, ≤ 80 KB).
+
+## Consolidated references
+
+`references-{laao,valves,other}.yaml` adds public product-linked sources and
+`bibliography` records. Existing claim, design, trial, and regulatory source links
+remain in their original sections. The build also collects existing therapy,
+related trial, and news URLs from the graph. All of these appear in the shared
+Evidence section, grouped by source kind, with one entry per document.
+
+Each bibliography entry needs `id`, `entityIds`, `versionIds`, `sourceRefs`, and
+`reviewStatus`. At least one entity or version must be named. Use `versionIds`
+only when the source explicitly identifies that generation. An entity-only
+reference remains labeled as a therapy/family reference in version profiles.
+
+A patent source must use `kind: patent` and provide `citation.patentNumber` and
+`citation.patentOffice`. Its bibliography entry must also provide
+`patentConnection: { sourceId, locator, statement }`, identifying a public
+non-patent document that explicitly connects that patent number to the named
+product. Manufacturer patent marking, an explicit product/IFU reference, and
+an exact approved-drug NDA entry in the FDA Orange Book qualify. Subject,
+inventor, assignee, or company-portfolio similarity does not qualify. Both
+semantic validation and the Evidence view enforce this connection.
+
+`../citations.yaml` supplements exact existing URLs with verified article
+titles, authors (APA surname/initials), journal, volume, issue, pages or article
+number, DOI, and publication date. Preserve the precision of the source date.
+Do not substitute retrieval dates for publication dates or invent missing
+authors. The APA export uses `n.d.` and a document descriptor when metadata is
+unavailable. The public research audit and methodology are in
+`../../../docs/REFERENCE_BIBLIOGRAPHY.md`.

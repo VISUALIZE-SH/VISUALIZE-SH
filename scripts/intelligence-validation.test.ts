@@ -59,6 +59,17 @@ test('accepts reported zero, explicit missingness, and keeps predicate relations
   assert.equal(validateIntelligence(validData(), { schemaPath: SCHEMA, legacyIds: LEGACY }).claims[0].value, 0)
 })
 
+test('patent references cannot enter the payload without a direct public product connection', () => {
+  const data = validData()
+  data.sources.push({ id: 'src-patent', title: 'Product device', url: 'https://patents.google.com/patent/US10000001B2/en', kind: 'patent', publisher: 'USPTO', retrievedAt: '2026-10-04', access: 'public', publishedAt: { value: '2018', precision: 'year' }, citation: { authors: ['Inventor, A.'], patentNumber: 'U.S. Patent No. 10,000,001', patentOffice: 'U.S. Patent and Trademark Office' } })
+  data.bibliography = [{ id: 'bib-one', entityIds: ['dev-one'], versionIds: ['ver-one'], sourceRefs: [{ sourceId: 'src-patent', locator: 'Patent record' }], reviewStatus: 'draft' }]
+  expectInvalid(data, /patent needs a direct product connection/)
+  data.bibliography[0].patentConnection = { sourceId: 'src-one', locator: 'Product marking row', statement: 'Product One explicitly lists US 10000001.' }
+  assert.doesNotThrow(() => validateIntelligence(data, { schemaPath: SCHEMA, legacyIds: LEGACY }))
+  data.bibliography[0].patentConnection.sourceId = 'src-patent'
+  expectInvalid(data, /must cite a public product or related source/)
+})
+
 test('comparison categories and attributes keep exact version and scope boundaries', () => {
   function comparisonData() {
     const data = validData()

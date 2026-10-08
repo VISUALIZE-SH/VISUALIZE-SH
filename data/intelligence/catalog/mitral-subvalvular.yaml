@@ -1,0 +1,123 @@
+# WOR-25: contemporary SVS design, not an exact model or a bridged surgical cohort.
+observedAt: '2026-10-06'
+sources:
+  - id: src-mitria-t45-portfolio
+    title: Mitria Medical — T45 Labs portfolio
+    url: https://t45labs.com/mitria-medical/
+    kind: manufacturer
+    publisher: T45 Labs
+    retrievedAt: '2026-10-06'
+    access: public
+  - id: src-mitria-t45-partnership
+    title: Mitria Medical Partners with T45 Labs to Advance Novel Mitral Valve Repair Therapy
+    url: https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html
+    kind: manufacturer
+    publisher: T45 Labs
+    publishedAt: { value: '2026-09-29', precision: day }
+    retrievedAt: '2026-10-06'
+    access: public
+  - id: src-mitria-us-expanded-access
+    title: Mitria Medical Announces First Use of Novel Mitral Valve Repair Device in U.S. Under Single Patient Expanded Access
+    url: https://www.prnewswire.com/news-releases/mitria-medical-announces-first-use-of-novel-mitral-valve-repair-device-in-us-under-single-patient-expanded-access-302704666.html
+    kind: manufacturer
+    publisher: Mitria Medical, Inc.
+    publishedAt: { value: '2026-03-05', precision: day }
+    retrievedAt: '2026-10-06'
+    access: public
+  - id: src-mitria-surgical-abstract-2025
+    title: 'MC83. Sub-Valvular Spacer Implant for Functional Mitral Regurgitation: A Novel Surgical Approach'
+    url: https://www.aats.org/resources/sub-valvular-spacer-implant-fo-11413
+    kind: publication
+    publisher: American Association for Thoracic Surgery
+    publishedAt: { value: '2025-12-12', precision: day }
+    retrievedAt: '2026-10-06'
+    access: public
+    identifier: AATS Mitral Conclave MC83
+  - id: src-mitria-clinic-design-2024
+    title: 'Transforming Cardiovascular Care: Three of the Latest Innovations'
+    url: https://consultqd.clevelandclinic.org/transforming-cardiovascular-care-three-of-the-latest-innovations
+    kind: technical
+    publisher: Cleveland Clinic
+    publishedAt: { value: '2024-07-11', precision: day }
+    retrievedAt: '2026-10-06'
+    access: public
+
+families:
+  - id: family-mitria-svs
+    name: Subvalvular Spacer (SVS)
+    manufacturer: Mitria Medical
+    entityIds: [dev-mitria-svs]
+    conditionIds: [cond-mr]
+    description: Investigational posterior leaflet support implant for functional mitral regurgitation; contemporary transcatheter development and earlier surgical experience are kept separate.
+
+versions:
+  - id: ver-mitria-svs
+    familyId: family-mitria-svs
+    graphEntityId: dev-mitria-svs
+    name: Subvalvular Spacer (SVS; investigational design)
+    kind: device
+    clinicalRole: treats
+    summary: Nitinol braid designed to support the displaced posterior leaflet in functional MR. The September 2026 disclosure names no model or generation; earlier surgical cases are family-level evidence, not outcomes for this exact build.
+    sourceRefs:
+      - sourceId: src-mitria-t45-partnership
+        locator: 'About Mitria Medical, paragraph 1; investigational-device statement immediately before that heading'
+    reviewStatus: draft
+
+bibliography:
+  - id: bib-mitria-surgical-abstract-2025
+    entityIds: [dev-mitria-svs]
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-mitria-surgical-abstract-2025
+        locator: 'Written Abstract, Methods and Results: two surgical patients, with separate follow-up; patient 2 underwent concomitant triple CABG. Exact build not specified; no transcatheter efficacy bridge.'
+    reviewStatus: draft
+  - id: bib-mitria-clinic-design-2024
+    entityIds: [dev-mitria-svs]
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-mitria-clinic-design-2024
+        locator: 'Subvalvular Spacer section, paragraphs 1–3: design concept and initial surgical delivery; historical description, exact generation unresolved'
+    reviewStatus: draft
+  - id: bib-mitria-us-expanded-access
+    entityIds: [dev-mitria-svs]
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-mitria-us-expanded-access
+        locator: 'Opening non-quotation paragraphs: sponsor reports first US implantation at Cleveland Clinic under Single Patient Expanded Access; procedure date and build not specified'
+    reviewStatus: draft
+
+specs:
+  - version: ver-mitria-svs
+    category: mitral-subvalvular-repair
+    source: src-mitria-t45-partnership
+    values:
+      device-design:
+        value: Nitinol braid supporting the displaced posterior leaflet
+        loc: 'About Mitria Medical, paragraph 1'
+        context: Intended support and coaptation mechanism in functional MR; sponsor design description, not demonstrated comparative benefit.
+      implant-material:
+        value: Nitinol braid
+        loc: 'About Mitria Medical, paragraph 1'
+        limitation: Full implant composition, coverings and coatings are not disclosed.
+      access-route:
+        value: Transcatheter approach under development
+        loc: 'Opening paragraph; About Mitria Medical, paragraph 1'
+        limitation: Vascular entry and transseptal route are not specified. The AATS 2025 two-patient abstract describes surgical implantation and is not mapped to this build.
+      delivery-sheath:
+        availability: not_publicly_disclosed
+        loc: 'Entire written release, including About Mitria Medical (no delivery profile disclosed)'
+      available-sizes:
+        availability: not_publicly_disclosed
+        loc: 'Entire written release, including About Mitria Medical (no implant size range disclosed)'
+      development-status:
+        value: Investigational; not available for commercial sale
+        loc: 'Investigational-device statement immediately before About Mitria Medical'
+        limitation: Single-patient expanded access is sponsor-reported; no marketing authorization or regulator decision is inferred.
+      indication-scope:
+        value: Intended for secondary / functional MR; investigational
+        loc: 'About Mitria Medical, paragraph 1'
+        context: Development target rather than an FDA-approved indication; no approval decision is added.
+      pivotal-trials:
+        availability: not_publicly_disclosed
+        loc: 'Entire written release (conference experience described; no pivotal trial identified)'
+        limitation: No verified SVS registry identifier or pivotal protocol was located in this bounded review.

@@ -1,4 +1,4 @@
-observedAt: '2026-09-28'
+observedAt: '2026-10-03'
 sources:
   - id: src-pvl-pld-outcomes
     title: Safety, Efficacy and Long-Term Outcomes of Patients Treated with the Occlutech Paravalvular Leak Device
@@ -173,6 +173,22 @@ sources:
     retrievedAt: '2026-09-28'
     access: public
     identifier: Z-2518-2026
+  - id: src-tricvalve-techspec
+    title: TricValve Transcatheter Bicaval Valve System Technical Specifications
+    url: https://productsandfeatures.com/wp-content/uploads/2023/07/Tricvalve_Technical_Specifications_2023.pdf
+    kind: manufacturer
+    publisher: P+F Products + Features
+    publishedAt: { value: '2023', precision: year }
+    retrievedAt: '2026-10-03'
+    access: public
+  - id: src-tricento-patient-leaflet
+    title: TRICENTO Valved Stent Graft Bioprosthesis Patient Leaflet
+    url: https://www.nvt-med.com/files/Content/Downloads/Patient%20Leaflet%20TRICENTO_Rev_00105601_072021_02.pdf
+    kind: manufacturer
+    publisher: New Valve Technology
+    publishedAt: { value: '2021-07', precision: month }
+    retrievedAt: '2026-10-03'
+    access: public
 families:
   - id: family-occlutech-pvl
     name: Occlutech PLD
@@ -438,7 +454,7 @@ specs:
     values:
       manufacturer: { value: LSI Solutions, loc: "Applicant field, page 1"}
       device-design: { value: ePTFE artificial chordae secured by titanium fastener, loc: "Table 1, page 5"}
-      implant-material: { value: ePTFE suture and titanium (ASTM F67 grade 1 or 2) fastener, loc: "Table 1, page 5"}
+      implant-material: { value: "Permanent ePTFE suture and titanium (ASTM F67 grade 1 or 2) fastener", loc: "Table 1, PDF p.5; implanted components, permanent patient contact"}
       pivotal-trials: { value: OUS prospective feasibility cohort (12 patients), loc: "Clinical Information, pp. 11-14"}
   - version: ver-tricvalve
     category: heterotopic-caval-valves
@@ -446,6 +462,7 @@ specs:
     values:
       manufacturer: { value: P+F Products + Features, loc: "Study device/manufacturer, Methods"}
       device-design: { value: Two self-expanding bioprostheses for SVC and IVC, loc: "Device description, Methods"}
+      implant-material: { value: "Nitinol frames; bovine-pericardial leaflets; polyester PVL skirt (SVC) and bovine pericardium + PET skirt (IVC)", source: src-tricvalve-techspec, loc: "PDF p.2, Stent Frame Material, Biological Material, Number of Leaflets and PVL Protection"}
       pivotal-trials: { value: TRICUS EURO (n=35; 6-month outcomes), loc: "Methods and Results"}
   - version: ver-sapien-xt-caval
     category: heterotopic-caval-valves
@@ -465,9 +482,21 @@ specs:
     category: epicardial-restraint
     source: src-corcap-five-year
     values:
-      manufacturer: { value: Acorn Cardiovascular, loc: "Abstract; device description"}
-      device-design: { value: Woven polyester mesh cardiac restraint, loc: "Abstract; device description"}
-      pivotal-trials: { value: "Acorn randomized trial; 5-year no-MVR cohort n=107", loc: "Methods and Results"}
+      manufacturer:
+        value: Acorn Cardiovascular
+        loc: Abstract; device description
+      device-design:
+        value: Polyester mesh fitted around the ventricles for diastolic support
+        loc: Introduction — CorCap device description
+      pivotal-trials:
+        value: Acorn randomized trial; 5-year no-MVR cohort n=107
+        loc: Methods and Results
+      implant-material:
+        value: Polyester ventricular restraint mesh
+        loc: Introduction — CorCap device description
+
+    observedAt: "2026-10-03"
+
   - version: ver-heartnet
     category: epicardial-restraint
     source: src-peerless-hf
@@ -487,7 +516,7 @@ specs:
     source: src-tricento-registry
     values:
       manufacturer: { value: New Valve Technology (NVT), loc: "Article; device description" }
-      device-design: { value: Custom-made bicaval valved stent graft, loc: "Abstract and Methods" }
+      device-design: { value: "Custom-made bicaval stent graft; porcine-pericardial leaflets/cover, PTFE suture, nitinol support stent, gold markers", source: src-tricento-patient-leaflet, loc: "PDF p.1, Materials and quantitative composition" }
       pivotal-trials: { value: Multicenter TRICENTO registry (21 patients), loc: "Abstract; study design" }
   - version: ver-accucinch
     category: lv-restoration

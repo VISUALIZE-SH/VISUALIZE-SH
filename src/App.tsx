@@ -5,7 +5,7 @@ import type { AppMode, IntelligenceData } from './types/intelligence'
 import { loadGraph } from './data/loadGraph'
 import { loadIntelligence } from './data/intelligence'
 import { atlasTopicNodeIds, normalizeAtlasTopic } from './data/atlas-topic'
-import { versionForGraphEntities } from './data/atlas-navigation'
+import { versionForGraphEntities, versionsForGraphEntity } from './data/atlas-navigation'
 import { parseWorkspace, scopeToCondition, workspaceQuery, type WorkspaceState } from './data/workspace-state'
 import { GROUP_ORDER } from './graph/palette'
 import { getLayout, frameLayout, LAYOUT_LABELS, type LayoutName } from './graph/layouts'
@@ -77,7 +77,7 @@ export default function App() {
     applyResolvedTheme(darkMode)
   }, [themePreference, darkMode])
 
-  function navigate(patch: Partial<WorkspaceState>) {
+  function navigate(patch: Partial<WorkspaceState>, hash = '') {
     // Serialize every shareable choice through one URL boundary so browser
     // history and copied links restore the same workspace state.
     const next = { ...workspace, ...patch }
@@ -85,6 +85,7 @@ export default function App() {
     if (patch.nodeId !== undefined) setSelectedId(patch.nodeId || null)
     const url = new URL(window.location.href)
     url.search = workspaceQuery(next)
+    url.hash = hash
     window.history.pushState(null, '', url)
     setLeftOpen(false)
   }
@@ -135,8 +136,19 @@ export default function App() {
   const versionId = selectedVersion?.id ?? null
   const selectedNode = selectedId ? nodesById.get(selectedId) ?? null : null
   const selectedNodeNews = graph?.news.filter(item => selectedId && item.relevantNodeIds.includes(selectedId)) ?? []
-  const selectedFamily = intelligence?.families.find(family => selectedId && family.entityIds.includes(selectedId))
-  const graphVersions = intelligence?.versions.filter(version => version.familyId === selectedFamily?.id) ?? []
+  const graphVersions = intelligence && selectedNode?.entity.type === 'therapy' ? versionsForGraphEntity(intelligence, selectedNode.id) : []
+  const profileLinks = graphVersions.map(version => {
+    const family = intelligence?.families.find(item => item.id === version.familyId)
+    const context = { atlasView: 'profiles' as const, atlasTopic: '', versionId: version.id, nodeId: '', isolateNode: false, searchQuery: '', conditionId: family?.conditionIds.includes(workspace.conditionId) ? workspace.conditionId : '' }
+    return {
+      id: version.id, name: version.name,
+      href: `?${workspaceQuery({ ...workspace, ...context, mode: 'atlas' })}`,
+      dataHref: `?${workspaceQuery({ ...workspace, ...context, mode: 'data', dataView: 'browse' })}`,
+    }
+  })
+  const landscapeProfileHref = intelligence && selectedNode?.entity.type === 'therapy' && !graphVersions.length
+    ? `?${workspaceQuery({ ...workspace, mode: 'atlas', atlasView: 'profiles', atlasTopic: '', versionId: '', nodeId: '', isolateNode: false, searchQuery: '', conditionId: selectedNode.entity.treats.includes(workspace.conditionId) ? workspace.conditionId : '' })}#profile-${selectedNode.id}`
+    : undefined
   const materialSuggestions = useMemo(() => [...new Set(nodes.flatMap(node => node.entity.type === 'therapy' ? (node.entity.materials ?? []).map(material => material.name) : []))].sort(), [nodes])
   const normalizedMaterialQuery = materialQuery.trim().toLowerCase()
   const atlasTopicMatchIds = useMemo(() => workspace.atlasTopic ? atlasTopicNodeIds(nodes, workspace.atlasTopic) : NO_HIGHLIGHTS, [nodes, workspace.atlasTopic])
@@ -164,7 +176,11 @@ export default function App() {
   function openVersion(id: string, mode: AppMode = 'atlas') {
     const version = intelligence?.versions.find(item => item.id === id)
     const family = intelligence?.families.find(item => item.id === version?.familyId)
-    navigate({ mode, atlasView: 'profiles', atlasTopic: '', versionId: id, nodeId: '', isolateNode: false, ...(!family?.conditionIds.includes(workspace.conditionId) ? { conditionId: '' } : {}) })
+    navigate({ mode, atlasView: 'profiles', atlasTopic: '', versionId: id, nodeId: '', isolateNode: false, ...(mode === 'data' ? { dataView: 'browse', searchQuery: '' } : {}), ...(!family?.conditionIds.includes(workspace.conditionId) ? { conditionId: '' } : {}) })
+  }
+  function openProfileLink(href: string) {
+    const url = new URL(href, window.location.href)
+    navigate(parseWorkspace(url.search), url.hash)
   }
   function openAtlasTopic(topic: string) {
     setActiveGroups(new Set(GROUP_ORDER))
@@ -311,8 +327,7 @@ export default function App() {
         <div className="canvas-disclaimer">Current landscape. Dated evidence and labeling are in Profiles.</div>
       </main>
       {selectedNode && <div className="atlas-detail-stack">
-        {graphVersions.length > 0 && <div className="graph-profile-links">Versions{graphVersions.map(version => <button key={version.id} onClick={() => openVersion(version.id)}>{version.name} ↗</button>)}</div>}
-        <DetailPanel node={selectedNode} nodesById={nodesById} edges={edges} onSelect={handleSelect} onClose={() => handleSelect(null)} newsItems={selectedNodeNews} onNewsSelect={handleNewsSelect} />
+        <DetailPanel intelligence={intelligence} node={selectedNode} nodesById={nodesById} edges={edges} onSelect={handleSelect} onClose={() => handleSelect(null)} newsItems={selectedNodeNews} onNewsSelect={handleNewsSelect} profileLinks={profileLinks} landscapeProfileHref={landscapeProfileHref} onProfileNavigate={openProfileLink} />
       </div>}
     </div> : <main className="workspace-content" id="workspace-main">
       <Suspense fallback={<p className="workspace-loading" role="status">Loading evidence…</p>}>
