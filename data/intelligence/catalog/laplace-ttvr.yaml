@@ -1,0 +1,124 @@
+# WOR-28: Draft company/product identity and manufacturer-described access routes.
+# Exact generation, implant composition and trial-specific build mapping remain uncurated.
+# See docs/RESEARCH_LAPLACE_2026-10-09.md for provenance, gaps and review boundaries.
+observedAt: '2026-10-09'
+
+sources:
+  - id: src-laplace-company
+    title: Laplace Interventional company homepage
+    url: https://laplaceint.com/
+    kind: manufacturer
+    publisher: Laplace Interventional
+    retrievedAt: '2026-10-09'
+    access: public
+  - id: src-laplace-team
+    title: Laplace Interventional management team
+    url: https://laplaceint.com/team
+    kind: manufacturer
+    publisher: Laplace Interventional
+    retrievedAt: '2026-10-09'
+    access: public
+  - id: src-laplace-technology
+    title: Laplace TTVR System technology overview
+    url: https://laplaceint.com/technology-1
+    kind: manufacturer
+    publisher: Laplace Interventional
+    retrievedAt: '2026-10-09'
+    access: public
+  - id: src-laplace-triumph-release
+    title: Laplace Announces FDA IDE Approval of TRIUMPH Pivotal Trial of Its Transcatheter Tricuspid Valve Replacement System
+    url: https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html
+    kind: manufacturer
+    publisher: Laplace Interventional, Inc. via PR Newswire
+    publishedAt: { value: '2026-06-29', precision: day }
+    retrievedAt: '2026-10-09'
+    access: public
+  # publishedAt is first registry posting; current revision dates are in pilot trialSnapshots.
+  - id: src-laplace-efs-us-registry
+    title: Early Feasibility Study (EFS) Laplace Transcatheter Tricuspid Valve Replacement (TTVR) System
+    url: https://clinicaltrials.gov/study/NCT06183684
+    kind: registry
+    publisher: ClinicalTrials.gov
+    identifier: NCT06183684
+    publishedAt: { value: '2023-12-27', precision: day }
+    retrievedAt: '2026-10-09'
+    access: public
+  - id: src-laplace-efs-canada-registry
+    title: Laplace Outside the US (OUS) Early Feasibility Study (EFS) Canada
+    url: https://clinicaltrials.gov/study/NCT07171060
+    kind: registry
+    publisher: ClinicalTrials.gov
+    identifier: NCT07171060
+    publishedAt: { value: '2025-09-12', precision: day }
+    retrievedAt: '2026-10-09'
+    access: public
+  - id: src-laplace-triumph-registry
+    title: Tricuspid Regurgitation Treatment With LAPLACE Transcatheter Tricuspid Valve Replacement System (TRIUMPH)
+    url: https://clinicaltrials.gov/study/NCT07687485
+    kind: registry
+    publisher: ClinicalTrials.gov
+    identifier: NCT07687485
+    publishedAt: { value: '2026-07-07', precision: day }
+    retrievedAt: '2026-10-09'
+    access: public
+
+families:
+  - id: family-laplace-ttvr
+    name: Laplace TTVR
+    manufacturer: Laplace Interventional
+    entityIds: [dev-laplace-ttvr]
+    conditionIds: [cond-tr]
+    description: Investigational transcatheter tricuspid valve replacement platform; exact product generations are unresolved.
+
+versions:
+  - id: ver-laplace-ttvr-investigational
+    familyId: family-laplace-ttvr
+    graphEntityId: dev-laplace-ttvr
+    name: Laplace TTVR System (investigational overview)
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Manufacturer-described investigational TTVR system with transjugular or transfemoral delivery. This overview does
+      not establish an exact model/release or a common build across the US EFS, Canadian EFS and TRIUMPH studies;
+      trial evidence remains mapped only to the family.
+    sourceRefs:
+      - sourceId: src-laplace-company
+        locator: About Us, company location and percutaneous TTVR description; publication date not stated.
+      - sourceId: src-laplace-technology
+        locator: Laplace TTVR System heading; SIMPLE paragraph (access routes); final Caution (investigational use only, no sale).
+    reviewStatus: draft
+
+specs:
+  - version: ver-laplace-ttvr-investigational
+    category: tricuspid-replacement
+    source: src-laplace-technology
+    values:
+      access-route:
+        value: Transjugular or transfemoral (manufacturer overview)
+        loc: Laplace TTVR System, SIMPLE paragraph; undated page retrieved 2026-10-09.
+        context: Manufacturer description of the investigational platform; not an approved-label statement.
+        limitation: >-
+          Exact model/revision and route-specific trial builds are not identified. Canadian EFS eligibility is transjugular;
+          TRIUMPH route is not specified in the inspected registry. Do not transfer measurements or results across routes.
+
+bibliography:
+  - id: bib-laplace-company
+    entityIds: [co-laplace-interventional]
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-laplace-company
+        locator: About Us, company identity and Plymouth, Minnesota location.
+      - sourceId: src-laplace-team
+        locator: Management Team, Ramji Iyer card, Founder and Chief Executive Officer.
+      - sourceId: src-laplace-triumph-release
+        locator: About the Company, privately held company status; excludes quoted clinical opinions.
+    reviewStatus: draft
+  - id: bib-laplace-ttvr
+    entityIds: [dev-laplace-ttvr]
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-laplace-technology
+        locator: Laplace TTVR System heading; SIMPLE paragraph; final Caution. Family-level description, no exact generation.
+      - sourceId: src-laplace-triumph-release
+        locator: Opening two paragraphs; sponsor-reported IDE announcement and proposed cohorts, not a marketing decision or outcomes.
+    reviewStatus: draft

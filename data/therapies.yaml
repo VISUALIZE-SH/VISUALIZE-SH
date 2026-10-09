@@ -2385,6 +2385,45 @@
       presented at New York Valves 2026. Human curator: confirm final commercial capitalization and naming as the program advances.
 
 # --- TTVR (transcatheter tricuspid valve replacement) ---
+- id: dev-laplace-ttvr
+  type: therapy
+  therapyType: device
+  subtype: "TTVR (transcatheter tricuspid valve replacement)"
+  name: Laplace TTVR System
+  company: co-laplace-interventional
+  treats: [cond-tr]
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Manufacturer states investigational use only and no commercial availability in any geography. Its June 29, 2026
+    announcement reports FDA IDE approval for TRIUMPH; the decision-specific FDA document was not verified.
+  mechanism: Percutaneous prosthetic replacement of the native tricuspid valve.
+  description: >-
+    Investigational TTVR platform with manufacturer-described transjugular and transfemoral delivery. Exact product
+    generation and trial-specific build mapping are unresolved.
+  materials: []
+  links:
+    - label: Manufacturer technology overview
+      url: https://laplaceint.com/technology-1
+    - label: Company TRIUMPH announcement
+      url: https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html
+  pulse: 6
+  curation:
+    status: draft
+    lastUpdated: '2026-10-09'
+    sources:
+      - https://laplaceint.com/
+      - https://laplaceint.com/technology-1
+      - https://clinicaltrials.gov/study/NCT06183684
+      - https://clinicaltrials.gov/study/NCT07687485
+      - https://clinicaltrials.gov/study/NCT07171060
+      - https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html
+    notes: >-
+      WOR-28: Homepage About Us; Technology, SIMPLE paragraph and final Caution; release opening paragraph and About the
+      Company. Retrieved 2026-10-09. The IDE announcement is sponsor-reported, not a verified marketing authorization;
+      no approval timeline is assigned. Empty materials means composition is not curated for an exact generation, not that
+      the implant has no materials. Delivery dimensions, size ranges and clinical outcomes are not inferred from the
+      undated overview or transferred between access routes/cohorts. See docs/RESEARCH_LAPLACE_2026-10-09.md.
+
 - id: dev-evoque
   type: therapy
   therapyType: device
