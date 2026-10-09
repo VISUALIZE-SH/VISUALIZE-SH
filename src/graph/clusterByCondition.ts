@@ -93,7 +93,7 @@ function stableHash(value: string): number {
 }
 
 function orbitOffset(id: string, group: string): { x: number; y: number } {
-  const tail = id.split('-').at(-1) ?? id
+  const tail = id.split('-').pop() ?? id
   const tailHash = stableHash(tail)
   // Let the suffix spread nodes of one category around the orbit, then rotate
   // each category by a stable phase. Category labels therefore do not form
