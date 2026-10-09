@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-10-08T15:24:42.682Z",
-    "lastUpdated": "2026-10-07",
+    "generatedAt": "2026-10-09T18:59:38.603Z",
+    "lastUpdated": "2026-10-09",
     "counts": {
       "condition": 19,
-      "device": 79,
+      "device": 80,
       "pharmaceutical": 14,
       "procedure": 8,
       "digital": 5,
-      "company": 57,
-      "trial": 76
+      "company": 58,
+      "trial": 79
     },
-    "draftCount": 249,
-    "total": 258,
-    "newsCount": 68,
+    "draftCount": 254,
+    "total": 263,
+    "newsCount": 67,
     "latestNewsDate": "2026-10-05"
   },
   "news": [
@@ -1089,22 +1089,6 @@
       ]
     },
     {
-      "id": "news-2026-07-02-laplace-receives-fda-ide-approval-for-triumph-pivotal-ttvr-trial",
-      "publishedAt": "2026-07-02",
-      "title": "Laplace receives FDA IDE approval for TRIUMPH pivotal TTVR trial",
-      "summary": "Laplace Interventional announced FDA investigational device exemption approval for TRIUMPH, a pivotal trial of its transcatheter tricuspid valve replacement system in severe tricuspid regurgitation. The prospective multicenter study is expected to enroll approximately 400 patients at up to 75 sites, randomized 2:1 between the Laplace TTVR system and a commercial TTVR device.",
-      "sourceName": "Cardiac Interventions Today",
-      "sourceUrl": "https://citoday.com/news/ide-for-triumph-pivotal-trial-of-laplaces-ttvr-system?c4src=news",
-      "topicTags": [
-        "tricuspid regurgitation",
-        "TTVR",
-        "FDA IDE"
-      ],
-      "relevantNodeIds": [
-        "cond-tr"
-      ]
-    },
-    {
       "id": "news-2026-07-02-stun-af-suggests-laa-ablation-before-laao-may-reduce-peridevice-leaks",
       "publishedAt": "2026-07-02",
       "title": "STUN-AF suggests LAA ablation before LAAO may reduce peridevice leaks",
@@ -1729,7 +1713,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 14,
+          "degree": 18,
           "pulse": 9,
           "entity": {
             "id": "cond-tr",
@@ -5927,6 +5911,59 @@
       },
       {
         "data": {
+          "id": "dev-laplace-ttvr",
+          "label": "Laplace TTVR System",
+          "group": "device",
+          "category": "TTVR (transcatheter tricuspid valve replacement)",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 5,
+          "pulse": 6,
+          "entity": {
+            "id": "dev-laplace-ttvr",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "TTVR (transcatheter tricuspid valve replacement)",
+            "name": "Laplace TTVR System",
+            "company": "co-laplace-interventional",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Manufacturer states investigational use only and no commercial availability in any geography. Its June 29, 2026 announcement reports FDA IDE approval for TRIUMPH; the decision-specific FDA document was not verified.",
+            "mechanism": "Percutaneous prosthetic replacement of the native tricuspid valve.",
+            "description": "Investigational TTVR platform with manufacturer-described transjugular and transfemoral delivery. Exact product generation and trial-specific build mapping are unresolved.",
+            "materials": [],
+            "links": [
+              {
+                "label": "Manufacturer technology overview",
+                "url": "https://laplaceint.com/technology-1"
+              },
+              {
+                "label": "Company TRIUMPH announcement",
+                "url": "https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html"
+              }
+            ],
+            "pulse": 6,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-09",
+              "sources": [
+                "https://laplaceint.com/",
+                "https://laplaceint.com/technology-1",
+                "https://clinicaltrials.gov/study/NCT06183684",
+                "https://clinicaltrials.gov/study/NCT07687485",
+                "https://clinicaltrials.gov/study/NCT07171060",
+                "https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html"
+              ],
+              "notes": "WOR-28: Homepage About Us; Technology, SIMPLE paragraph and final Caution; release opening paragraph and About the Company. Retrieved 2026-10-09. The IDE announcement is sponsor-reported, not a verified marketing authorization; no approval timeline is assigned. Empty materials means composition is not curated for an exact generation, not that the implant has no materials. Delivery dimensions, size ranges and clinical outcomes are not inferred from the undated overview or transferred between access routes/cohorts. See docs/RESEARCH_LAPLACE_2026-10-09.md."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "dev-evoque",
           "label": "Edwards EVOQUE",
           "group": "device",
@@ -5934,7 +5971,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 3,
+          "degree": 4,
           "pulse": 8,
           "timelineDate": "2023-10-01",
           "entity": {
@@ -9763,6 +9800,38 @@
       },
       {
         "data": {
+          "id": "co-laplace-interventional",
+          "label": "Laplace Interventional",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 6,
+          "entity": {
+            "id": "co-laplace-interventional",
+            "type": "company",
+            "name": "Laplace Interventional",
+            "hq": "Plymouth, MN, USA",
+            "website": "https://laplaceint.com/",
+            "description": "Privately held medical device company developing an investigational transcatheter tricuspid valve replacement system. Ramji Iyer is its founder and chief executive officer.",
+            "pulse": 6,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-09",
+              "sources": [
+                "https://laplaceint.com/",
+                "https://laplaceint.com/team",
+                "https://laplaceint.com/technology-1",
+                "https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html"
+              ],
+              "notes": "WOR-28: Homepage About Us establishes company identity/location; Team, Management Team, Ramji Iyer card establishes founder/CEO role; June 29, 2026 company-authored release, About the Company establishes privately held status. Public documents retrieved 2026-10-09. LSI interview spotlight is a discovery lead only. See docs/RESEARCH_LAPLACE_2026-10-09.md; no founding year, financing total or ownership inference."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "trial-protect-af",
           "label": "PROTECT AF",
           "group": "trial",
@@ -12547,6 +12616,150 @@
       },
       {
         "data": {
+          "id": "trial-laplace-efs-us",
+          "label": "Laplace TTVR US Early Feasibility Study",
+          "group": "trial",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "timelineDate": "2024-02-19",
+          "entity": {
+            "id": "trial-laplace-efs-us",
+            "type": "trial",
+            "name": "Laplace TTVR US Early Feasibility Study",
+            "nctId": "NCT06183684",
+            "phase": "Early feasibility",
+            "status": "recruiting",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-laplace-ttvr"
+            ],
+            "enrollment": 65,
+            "primaryEndpoint": "Successful valve implantation during the procedure (technical success).",
+            "outcomeSummary": "Prospective, multicenter, single-arm feasibility study; estimated enrollment is 65 and the registry has no posted results as retrieved October 9, 2026.",
+            "resultStatus": "ongoing",
+            "timeline": {
+              "date": "2024-02-19",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "US EFS actual study start",
+              "source": "https://clinicaltrials.gov/study/NCT06183684"
+            },
+            "references": [
+              "https://clinicaltrials.gov/study/NCT06183684"
+            ],
+            "pulse": 5,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-09",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT06183684"
+              ],
+              "notes": "WOR-28: Official API protocolSection.identificationModule (CLN-002); sponsorCollaboratorsModule.leadSponsor; descriptionModule; designModule.enrollmentInfo (ESTIMATED); outcomesModule.primaryOutcomes[0]; statusModule (RECRUITING, last update posted 2026-09-25, actual start 2024-02-19); hasResults false. Retrieved 2026-10-09. US eligibility inclusion 5 allows transjugular or transfemoral access; this does not establish route-specific treated counts or exact product revision. Keep separate from Canadian EFS and TRIUMPH; no external outcomes were extracted."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-laplace-efs-canada",
+          "label": "Laplace TTVR Canadian Early Feasibility Study",
+          "group": "trial",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 4,
+          "timelineDate": "2024-06-18",
+          "entity": {
+            "id": "trial-laplace-efs-canada",
+            "type": "trial",
+            "name": "Laplace TTVR Canadian Early Feasibility Study",
+            "nctId": "NCT07171060",
+            "phase": "Early feasibility",
+            "status": "recruiting",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-laplace-ttvr"
+            ],
+            "enrollment": 15,
+            "primaryEndpoint": "Successful valve implantation during the procedure (technical success).",
+            "outcomeSummary": "Separate Canadian prospective, multicenter, single-arm feasibility study; estimated enrollment is 15 and the registry has no posted results as retrieved October 9, 2026.",
+            "resultStatus": "ongoing",
+            "timeline": {
+              "date": "2024-06-18",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Canadian EFS actual study start",
+              "source": "https://clinicaltrials.gov/study/NCT07171060"
+            },
+            "references": [
+              "https://clinicaltrials.gov/study/NCT07171060"
+            ],
+            "pulse": 4,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-09",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT07171060"
+              ],
+              "notes": "WOR-28: Official API protocolSection.identificationModule (CLN-003, OUS EFS Canada); sponsorCollaboratorsModule.leadSponsor; descriptionModule; designModule.enrollmentInfo (ESTIMATED); outcomesModule.primaryOutcomes[0]; statusModule (RECRUITING, last update posted 2026-07-22, actual start 2024-06-18); hasResults false. Retrieved 2026-10-09. Eligibility inclusion 5 specifies transjugular access. Exact generation and any participant overlap with the US study are unverified; do not combine enrollment or transfer US/transfemoral results to this study."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-laplace-triumph",
+          "label": "TRIUMPH (Laplace TTVR)",
+          "group": "trial",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 6,
+          "entity": {
+            "id": "trial-laplace-triumph",
+            "type": "trial",
+            "name": "TRIUMPH (Laplace TTVR)",
+            "nctId": "NCT07687485",
+            "phase": "Pivotal randomized controlled trial with a separate single-arm cohort",
+            "status": "unknown",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-laplace-ttvr",
+              "dev-evoque"
+            ],
+            "primaryEndpoint": "Composite major adverse events at 30 days; composite all-cause mortality, heart-failure hospitalization and tricuspid reintervention at 12 months.",
+            "outcomeSummary": "Registry describes 400 patients randomized 2:1 Laplace versus EVOQUE plus up to 150 in a separate single-arm cohort; its total enrollment field separately estimates 700. The discrepancy is unresolved; no registry results are posted.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT07687485",
+              "https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html"
+            ],
+            "pulse": 6,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-09",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT07687485",
+                "https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html"
+              ],
+              "notes": "WOR-28: Official API protocolSection.identificationModule (CLN-004, TRIUMPH); descriptionModule; designModule.designInfo and enrollmentInfo; armsInterventionsModule; outcomesModule.primaryOutcomes[0:2]; statusModule; hasResults false. Retrieved 2026-10-09. Registry reports NOT_YET_RECRUITING, status verified 2026-07, last update posted 2026-07-22; graph status unknown preserves the unsupported coarse enum mapping. Estimated start 2026-09 is not an actual start, so no timeline is assigned. Graph enrollment is omitted: the API estimates 700 total while its design describes 400 randomized plus up to 150 single-arm patients; the intelligence snapshot retains the raw 700 estimate with its caveat. Single-arm patients are unsuitable for EVOQUE and suboptimal for T-TEER. Exact Laplace/EVOQUE generations and TRIUMPH access route remain unverified. June 29 release opening paragraphs report IDE approval and the cohort plan, not outcomes or marketing authorization. See docs/RESEARCH_LAPLACE_2026-10-09.md."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "trial-summit",
           "label": "SUMMIT",
           "group": "trial",
@@ -14727,6 +14940,22 @@
       },
       {
         "data": {
+          "id": "dev-laplace-ttvr__made_by__co-laplace-interventional",
+          "source": "dev-laplace-ttvr",
+          "target": "co-laplace-interventional",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-laplace-ttvr__treats__cond-tr",
+          "source": "dev-laplace-ttvr",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "dev-evoque__made_by__co-edwards",
           "source": "dev-evoque",
           "target": "co-edwards",
@@ -16297,6 +16526,62 @@
         "data": {
           "id": "trial-adaptr-fih__studies__cond-tr",
           "source": "trial-adaptr-fih",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-laplace-efs-us__evaluates__dev-laplace-ttvr",
+          "source": "trial-laplace-efs-us",
+          "target": "dev-laplace-ttvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-laplace-efs-us__studies__cond-tr",
+          "source": "trial-laplace-efs-us",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-laplace-efs-canada__evaluates__dev-laplace-ttvr",
+          "source": "trial-laplace-efs-canada",
+          "target": "dev-laplace-ttvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-laplace-efs-canada__studies__cond-tr",
+          "source": "trial-laplace-efs-canada",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-laplace-triumph__evaluates__dev-laplace-ttvr",
+          "source": "trial-laplace-triumph",
+          "target": "dev-laplace-ttvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-laplace-triumph__evaluates__dev-evoque",
+          "source": "trial-laplace-triumph",
+          "target": "dev-evoque",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-laplace-triumph__studies__cond-tr",
+          "source": "trial-laplace-triumph",
           "target": "cond-tr",
           "relationship": "studies"
         }

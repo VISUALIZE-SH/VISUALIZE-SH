@@ -1,6 +1,6 @@
 # Human-review pilot. Authored from the source register below; no clinical claim is marked reviewed.
 schemaVersion: 1
-updatedAt: '2026-10-07'
+updatedAt: '2026-10-09'
 coverage:
   title: Evidence pilot
   description: Draft, source-linked records for review. Not a complete label, IFU, or safety inventory.
@@ -1395,6 +1395,59 @@ indications:
     anatomy: Aortic root and valve
     restrictions: The clinician remains responsible for treatment decisions and device-IFU compliance.
 trials:
+  - id: evidence-laplace-efs-us
+    name: Laplace TTVR US Early Feasibility Study
+    nctId: NCT06183684
+    entityId: trial-laplace-efs-us
+    familyIds: [family-laplace-ttvr]
+    design: Prospective, multicenter, single-arm, open-label early feasibility study; protocol CLN-002
+    versionIds: []
+    versionMapping: unclear
+    population: Adults with severe, symptomatic tricuspid regurgitation; US EFS eligibility, not marketed-label scope.
+    sourceRefs:
+      - sourceId: src-laplace-efs-us-registry
+        locator: >-
+          Official API protocolSection.identificationModule; sponsorCollaboratorsModule.leadSponsor; descriptionModule;
+          designModule.designInfo; armsInterventionsModule; eligibilityModule, inclusion 5 permits transjugular or
+          transfemoral access. Exact product revision is not stated; retrieved 2026-10-09.
+    reviewStatus: draft
+  - id: evidence-laplace-efs-canada
+    name: Laplace TTVR Canadian Early Feasibility Study
+    nctId: NCT07171060
+    entityId: trial-laplace-efs-canada
+    familyIds: [family-laplace-ttvr]
+    design: Prospective, multicenter, single-arm, open-label Canadian early feasibility study; protocol CLN-003
+    versionIds: []
+    versionMapping: unclear
+    population: Adults with severe, symptomatic tricuspid regurgitation; Canadian EFS eligibility, not marketed-label scope.
+    sourceRefs:
+      - sourceId: src-laplace-efs-canada-registry
+        locator: >-
+          Official API protocolSection.identificationModule; sponsorCollaboratorsModule.leadSponsor; descriptionModule;
+          designModule.designInfo; armsInterventionsModule; eligibilityModule, inclusion 5 specifies transjugular access.
+          Exact product revision is not stated; retrieved 2026-10-09.
+    reviewStatus: draft
+  - id: evidence-laplace-triumph
+    name: TRIUMPH (Laplace TTVR)
+    nctId: NCT07687485
+    entityId: trial-laplace-triumph
+    familyIds: [family-laplace-ttvr, family-evoque]
+    design: >-
+      Prospective, multicenter pivotal noninferiority study; 400 EVOQUE-eligible patients randomized 2:1 Laplace:EVOQUE,
+      with outcome-assessor masking, plus up to 150 in a separate single-arm cohort; protocol CLN-004. The registry's
+      separate 700-patient total enrollment estimate is unresolved against this cohort description.
+    versionIds: []
+    versionMapping: unclear
+    population: >-
+      Adults with symptomatic severe or greater tricuspid regurgitation; separate single-arm cohort is suitable for Laplace,
+      unsuitable for EVOQUE and suboptimal for T-TEER. These are study criteria, not an approved indication.
+    sourceRefs:
+      - sourceId: src-laplace-triumph-registry
+        locator: >-
+          Official API protocolSection.identificationModule; sponsorCollaboratorsModule.leadSponsor; descriptionModule;
+          designModule.designInfo and enrollmentInfo; armsInterventionsModule; eligibilityModule. Neither exact device
+          generation nor TRIUMPH access route is specified; retrieved 2026-10-09.
+    reviewStatus: draft
   - id: evidence-autus-pivotal
     name: AUTUS Valve Pivotal Study
     nctId: NCT05006404
@@ -1697,6 +1750,54 @@ trials:
         locator: 'Abstract; registry cohort and outcomes'
     reviewStatus: reviewed
 trialSnapshots:
+  - id: snapshot-laplace-efs-us-20261009
+    trialId: evidence-laplace-efs-us
+    observedAt: '2026-10-09'
+    registryUpdatedAt: '2026-09-25'
+    status: RECRUITING
+    enrollment: { value: 65, basis: estimated, scope: US EFS total registered target; not treated or analyzed enrollment }
+    note: >-
+      Status verified September 2026; actual start February 19, 2024. No registry results posted. This record is separate
+      from the Canadian EFS; access-route eligibility does not establish route-specific enrollment or results.
+    sourceRefs:
+      - sourceId: src-laplace-efs-us-registry
+        locator: >-
+          Official API protocolSection.statusModule (overallStatus, statusVerifiedDate, startDateStruct,
+          lastUpdatePostDateStruct); designModule.enrollmentInfo; hasResults false; retrieved 2026-10-09.
+    reviewStatus: draft
+  - id: snapshot-laplace-efs-canada-20261009
+    trialId: evidence-laplace-efs-canada
+    observedAt: '2026-10-09'
+    registryUpdatedAt: '2026-07-22'
+    status: RECRUITING
+    enrollment: { value: 15, basis: estimated, scope: Canadian EFS total registered target; not treated or analyzed enrollment }
+    note: >-
+      Status verified July 2026; actual start June 18, 2024. No registry results posted. Canadian eligibility specifies
+      transjugular access; do not sum this estimate with US enrollment or assume common participants/configurations.
+    sourceRefs:
+      - sourceId: src-laplace-efs-canada-registry
+        locator: >-
+          Official API protocolSection.statusModule (overallStatus, statusVerifiedDate, startDateStruct,
+          lastUpdatePostDateStruct); designModule.enrollmentInfo; hasResults false; retrieved 2026-10-09.
+    reviewStatus: draft
+  - id: snapshot-laplace-triumph-20261009
+    trialId: evidence-laplace-triumph
+    observedAt: '2026-10-09'
+    registryUpdatedAt: '2026-07-22'
+    status: NOT_YET_RECRUITING
+    enrollment: { value: 700, basis: estimated, scope: Raw registry total enrollment estimate; unresolved against the cohort description }
+    note: >-
+      Status verified July 2026. Registry describes 400 randomized patients plus up to 150 single-arm patients, while its
+      enrollmentInfo field estimates 700; do not replace either figure, sum cohorts into an inferred total, or infer an
+      explanation for the discrepancy. Estimated September 2026 start is not an actual start or proof of recruitment.
+      No registry results posted; June 29 sponsor announcement is not decision-specific FDA confirmation.
+    sourceRefs:
+      - sourceId: src-laplace-triumph-registry
+        locator: >-
+          Official API protocolSection.statusModule (overallStatus, statusVerifiedDate, startDateStruct,
+          lastUpdatePostDateStruct); designModule.enrollmentInfo and designInfo.interventionModelDescription;
+          hasResults false; retrieved 2026-10-09.
+    reviewStatus: draft
   - id: snapshot-autus-pivotal-20261007
     trialId: evidence-autus-pivotal
     observedAt: '2026-10-07'

@@ -1469,6 +1469,113 @@
       - "https://www.tctmd.com/slide/case-presentation-99"
     notes: "ClinicalTrials.gov still lists the study as active, not recruiting, but the record was last updated 2024-12-05 and gives an estimated completion date of 2025-10-02. Human curator: verify current study status and whether full 10-patient results are available."
 
+# --- Laplace TTVR studies ---
+- id: trial-laplace-efs-us
+  type: trial
+  name: Laplace TTVR US Early Feasibility Study
+  nctId: NCT06183684
+  phase: Early feasibility
+  status: recruiting
+  conditions: [cond-tr]
+  therapies: [dev-laplace-ttvr]
+  enrollment: 65
+  primaryEndpoint: Successful valve implantation during the procedure (technical success).
+  outcomeSummary: >-
+    Prospective, multicenter, single-arm feasibility study; estimated enrollment is 65 and the registry has no posted
+    results as retrieved October 9, 2026.
+  resultStatus: ongoing
+  timeline:
+    date: '2024-02-19'
+    precision: day
+    dateBasis: trial-start
+    event: US EFS actual study start
+    source: https://clinicaltrials.gov/study/NCT06183684
+  references:
+    - https://clinicaltrials.gov/study/NCT06183684
+  pulse: 5
+  curation:
+    status: draft
+    lastUpdated: '2026-10-09'
+    sources:
+      - https://clinicaltrials.gov/study/NCT06183684
+    notes: >-
+      WOR-28: Official API protocolSection.identificationModule (CLN-002); sponsorCollaboratorsModule.leadSponsor;
+      descriptionModule; designModule.enrollmentInfo (ESTIMATED); outcomesModule.primaryOutcomes[0]; statusModule
+      (RECRUITING, last update posted 2026-09-25, actual start 2024-02-19); hasResults false. Retrieved 2026-10-09.
+      US eligibility inclusion 5 allows transjugular or transfemoral access; this does not establish route-specific treated
+      counts or exact product revision. Keep separate from Canadian EFS and TRIUMPH; no external outcomes were extracted.
+
+- id: trial-laplace-efs-canada
+  type: trial
+  name: Laplace TTVR Canadian Early Feasibility Study
+  nctId: NCT07171060
+  phase: Early feasibility
+  status: recruiting
+  conditions: [cond-tr]
+  therapies: [dev-laplace-ttvr]
+  enrollment: 15
+  primaryEndpoint: Successful valve implantation during the procedure (technical success).
+  outcomeSummary: >-
+    Separate Canadian prospective, multicenter, single-arm feasibility study; estimated enrollment is 15 and the registry
+    has no posted results as retrieved October 9, 2026.
+  resultStatus: ongoing
+  timeline:
+    date: '2024-06-18'
+    precision: day
+    dateBasis: trial-start
+    event: Canadian EFS actual study start
+    source: https://clinicaltrials.gov/study/NCT07171060
+  references:
+    - https://clinicaltrials.gov/study/NCT07171060
+  pulse: 4
+  curation:
+    status: draft
+    lastUpdated: '2026-10-09'
+    sources:
+      - https://clinicaltrials.gov/study/NCT07171060
+    notes: >-
+      WOR-28: Official API protocolSection.identificationModule (CLN-003, OUS EFS Canada); sponsorCollaboratorsModule.leadSponsor;
+      descriptionModule; designModule.enrollmentInfo (ESTIMATED); outcomesModule.primaryOutcomes[0]; statusModule
+      (RECRUITING, last update posted 2026-07-22, actual start 2024-06-18); hasResults false. Retrieved 2026-10-09.
+      Eligibility inclusion 5 specifies transjugular access. Exact generation and any participant overlap with the US study
+      are unverified; do not combine enrollment or transfer US/transfemoral results to this study.
+
+- id: trial-laplace-triumph
+  type: trial
+  name: TRIUMPH (Laplace TTVR)
+  nctId: NCT07687485
+  phase: Pivotal randomized controlled trial with a separate single-arm cohort
+  status: unknown
+  conditions: [cond-tr]
+  therapies: [dev-laplace-ttvr, dev-evoque]
+  primaryEndpoint: >-
+    Composite major adverse events at 30 days; composite all-cause mortality, heart-failure hospitalization and tricuspid
+    reintervention at 12 months.
+  outcomeSummary: >-
+    Registry describes 400 patients randomized 2:1 Laplace versus EVOQUE plus up to 150 in a separate single-arm cohort;
+    its total enrollment field separately estimates 700. The discrepancy is unresolved; no registry results are posted.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT07687485
+    - https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html
+  pulse: 6
+  curation:
+    status: draft
+    lastUpdated: '2026-10-09'
+    sources:
+      - https://clinicaltrials.gov/study/NCT07687485
+      - https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html
+    notes: >-
+      WOR-28: Official API protocolSection.identificationModule (CLN-004, TRIUMPH); descriptionModule; designModule.designInfo
+      and enrollmentInfo; armsInterventionsModule; outcomesModule.primaryOutcomes[0:2]; statusModule; hasResults false.
+      Retrieved 2026-10-09. Registry reports NOT_YET_RECRUITING, status verified 2026-07, last update posted 2026-07-22;
+      graph status unknown preserves the unsupported coarse enum mapping. Estimated start 2026-09 is not an actual start,
+      so no timeline is assigned. Graph enrollment is omitted: the API estimates 700 total while its design describes 400
+      randomized plus up to 150 single-arm patients; the intelligence snapshot retains the raw 700 estimate with its caveat.
+      Single-arm patients are unsuitable for EVOQUE and suboptimal for T-TEER. Exact Laplace/EVOQUE generations and TRIUMPH
+      access route remain unverified. June 29 release opening paragraphs report IDE approval and the cohort plan, not outcomes
+      or marketing authorization. See docs/RESEARCH_LAPLACE_2026-10-09.md.
+
 # --- TMVR ---
 - id: trial-summit
   type: trial
