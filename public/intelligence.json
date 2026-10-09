@@ -1309,6 +1309,14 @@
           "sourceId": "src-graph-d3ef2d7740798282"
         },
         {
+          "locator": "Related trial: TRIUMPH (Laplace TTVR)",
+          "sourceId": "src-laplace-triumph-registry"
+        },
+        {
+          "locator": "Related trial: TRIUMPH (Laplace TTVR)",
+          "sourceId": "src-laplace-triumph-release"
+        },
+        {
           "locator": "News: Edwards reports strong Q2 structural-heart growth and raises TAVR/TMTT guidance",
           "sourceId": "src-graph-4f66e3638610a05c"
         },
@@ -1799,6 +1807,72 @@
         {
           "locator": "Materials: Nitinol — Self-expanding ball structure",
           "sourceId": "src-laminar-first-human"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "dev-laplace-ttvr"
+      ],
+      "id": "bib-graph-dev-laplace-ttvr",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Therapy information links",
+          "sourceId": "src-laplace-technology"
+        },
+        {
+          "locator": "Therapy information links",
+          "sourceId": "src-laplace-triumph-release"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-laplace-company"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-laplace-technology"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-laplace-efs-us-registry"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-laplace-triumph-registry"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-laplace-efs-canada-registry"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-laplace-triumph-release"
+        },
+        {
+          "locator": "Related trial: Laplace TTVR US Early Feasibility Study",
+          "sourceId": "src-laplace-efs-us-registry"
+        },
+        {
+          "locator": "Related trial timeline: Laplace TTVR US Early Feasibility Study",
+          "sourceId": "src-laplace-efs-us-registry"
+        },
+        {
+          "locator": "Related trial: Laplace TTVR Canadian Early Feasibility Study",
+          "sourceId": "src-laplace-efs-canada-registry"
+        },
+        {
+          "locator": "Related trial timeline: Laplace TTVR Canadian Early Feasibility Study",
+          "sourceId": "src-laplace-efs-canada-registry"
+        },
+        {
+          "locator": "Related trial: TRIUMPH (Laplace TTVR)",
+          "sourceId": "src-laplace-triumph-registry"
+        },
+        {
+          "locator": "Related trial: TRIUMPH (Laplace TTVR)",
+          "sourceId": "src-laplace-triumph-release"
         }
       ],
       "versionIds": []
@@ -5160,6 +5234,46 @@
         "ver-watchman-flx",
         "ver-watchman-flx-pro"
       ]
+    },
+    {
+      "entityIds": [
+        "co-laplace-interventional"
+      ],
+      "id": "bib-laplace-company",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "About Us, company identity and Plymouth, Minnesota location.",
+          "sourceId": "src-laplace-company"
+        },
+        {
+          "locator": "Management Team, Ramji Iyer card, Founder and Chief Executive Officer.",
+          "sourceId": "src-laplace-team"
+        },
+        {
+          "locator": "About the Company, privately held company status; excludes quoted clinical opinions.",
+          "sourceId": "src-laplace-triumph-release"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "dev-laplace-ttvr"
+      ],
+      "id": "bib-laplace-ttvr",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Laplace TTVR System heading; SIMPLE paragraph; final Caution. Family-level description, no exact generation.",
+          "sourceId": "src-laplace-technology"
+        },
+        {
+          "locator": "Opening two paragraphs; sponsor-reported IDE announcement and proposed cohorts, not a marketing decision or outcomes.",
+          "sourceId": "src-laplace-triumph-release"
+        }
+      ],
+      "versionIds": []
     },
     {
       "entityIds": [
@@ -20117,6 +20231,27 @@
       "basis": "directly_reported",
       "category": "fit",
       "comparisonAttributeId": "access-route",
+      "context": "Manufacturer description of the investigational platform; not an approved-label statement.",
+      "id": "claim-laplace-ttvr-investigational-access-route",
+      "key": "access-route",
+      "label": "Access",
+      "limitation": "Exact model/revision and route-specific trial builds are not identified. Canadian EFS eligibility is transjugular; TRIUMPH route is not specified in the inspected registry. Do not transfer measurements or results across routes.",
+      "observedAt": "2026-10-09",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Laplace TTVR System, SIMPLE paragraph; undated page retrieved 2026-10-09.",
+          "sourceId": "src-laplace-technology"
+        }
+      ],
+      "value": "Transjugular or transfemoral (manufacturer overview)",
+      "versionId": "ver-laplace-ttvr-investigational"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "access-route",
       "id": "claim-lariat-access-route",
       "key": "access-route",
       "label": "Access",
@@ -28459,6 +28594,7 @@
       "targetStructure": "Tricuspid valve",
       "therapyClass": "Transcatheter tricuspid valve replacement or reshaping",
       "versionIds": [
+        "ver-laplace-ttvr-investigational",
         "ver-evoque",
         "ver-adaptr"
       ],
@@ -31484,6 +31620,18 @@
       "id": "family-laminar",
       "manufacturer": "Laminar (later Johnson & Johnson)",
       "name": "LAMINAR"
+    },
+    {
+      "conditionIds": [
+        "cond-tr"
+      ],
+      "description": "Investigational transcatheter tricuspid valve replacement platform; exact product generations are unresolved.",
+      "entityIds": [
+        "dev-laplace-ttvr"
+      ],
+      "id": "family-laplace-ttvr",
+      "manufacturer": "Laplace Interventional",
+      "name": "Laplace TTVR"
     },
     {
       "conditionIds": [
@@ -43342,6 +43490,88 @@
     },
     {
       "access": "public",
+      "id": "src-laplace-company",
+      "kind": "manufacturer",
+      "publisher": "Laplace Interventional",
+      "retrievedAt": "2026-10-09",
+      "title": "Laplace Interventional company homepage",
+      "url": "https://laplaceint.com/"
+    },
+    {
+      "access": "public",
+      "id": "src-laplace-efs-canada-registry",
+      "identifier": "NCT07171060",
+      "kind": "registry",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2025-09-12"
+      },
+      "publisher": "ClinicalTrials.gov",
+      "retrievedAt": "2026-10-09",
+      "title": "Laplace Outside the US (OUS) Early Feasibility Study (EFS) Canada",
+      "url": "https://clinicaltrials.gov/study/NCT07171060"
+    },
+    {
+      "access": "public",
+      "id": "src-laplace-efs-us-registry",
+      "identifier": "NCT06183684",
+      "kind": "registry",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2023-12-27"
+      },
+      "publisher": "ClinicalTrials.gov",
+      "retrievedAt": "2026-10-09",
+      "title": "Early Feasibility Study (EFS) Laplace Transcatheter Tricuspid Valve Replacement (TTVR) System",
+      "url": "https://clinicaltrials.gov/study/NCT06183684"
+    },
+    {
+      "access": "public",
+      "id": "src-laplace-team",
+      "kind": "manufacturer",
+      "publisher": "Laplace Interventional",
+      "retrievedAt": "2026-10-09",
+      "title": "Laplace Interventional management team",
+      "url": "https://laplaceint.com/team"
+    },
+    {
+      "access": "public",
+      "id": "src-laplace-technology",
+      "kind": "manufacturer",
+      "publisher": "Laplace Interventional",
+      "retrievedAt": "2026-10-09",
+      "title": "Laplace TTVR System technology overview",
+      "url": "https://laplaceint.com/technology-1"
+    },
+    {
+      "access": "public",
+      "id": "src-laplace-triumph-registry",
+      "identifier": "NCT07687485",
+      "kind": "registry",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-07-07"
+      },
+      "publisher": "ClinicalTrials.gov",
+      "retrievedAt": "2026-10-09",
+      "title": "Tricuspid Regurgitation Treatment With LAPLACE Transcatheter Tricuspid Valve Replacement System (TRIUMPH)",
+      "url": "https://clinicaltrials.gov/study/NCT07687485"
+    },
+    {
+      "access": "public",
+      "id": "src-laplace-triumph-release",
+      "kind": "manufacturer",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-06-29"
+      },
+      "publisher": "Laplace Interventional, Inc. via PR Newswire",
+      "retrievedAt": "2026-10-09",
+      "title": "Laplace Announces FDA IDE Approval of TRIUMPH Pivotal Trial of Its Transcatheter Tricuspid Valve Replacement System",
+      "url": "https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html"
+    },
+    {
+      "access": "public",
       "citation": {
         "authors": [
           "Bartus, K.",
@@ -50345,6 +50575,67 @@
       "versionMapping": "unclear"
     },
     {
+      "design": "Prospective, multicenter, single-arm, open-label Canadian early feasibility study; protocol CLN-003",
+      "entityId": "trial-laplace-efs-canada",
+      "familyIds": [
+        "family-laplace-ttvr"
+      ],
+      "id": "evidence-laplace-efs-canada",
+      "name": "Laplace TTVR Canadian Early Feasibility Study",
+      "nctId": "NCT07171060",
+      "population": "Adults with severe, symptomatic tricuspid regurgitation; Canadian EFS eligibility, not marketed-label scope.",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Official API protocolSection.identificationModule; sponsorCollaboratorsModule.leadSponsor; descriptionModule; designModule.designInfo; armsInterventionsModule; eligibilityModule, inclusion 5 specifies transjugular access. Exact product revision is not stated; retrieved 2026-10-09.",
+          "sourceId": "src-laplace-efs-canada-registry"
+        }
+      ],
+      "versionIds": [],
+      "versionMapping": "unclear"
+    },
+    {
+      "design": "Prospective, multicenter, single-arm, open-label early feasibility study; protocol CLN-002",
+      "entityId": "trial-laplace-efs-us",
+      "familyIds": [
+        "family-laplace-ttvr"
+      ],
+      "id": "evidence-laplace-efs-us",
+      "name": "Laplace TTVR US Early Feasibility Study",
+      "nctId": "NCT06183684",
+      "population": "Adults with severe, symptomatic tricuspid regurgitation; US EFS eligibility, not marketed-label scope.",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Official API protocolSection.identificationModule; sponsorCollaboratorsModule.leadSponsor; descriptionModule; designModule.designInfo; armsInterventionsModule; eligibilityModule, inclusion 5 permits transjugular or transfemoral access. Exact product revision is not stated; retrieved 2026-10-09.",
+          "sourceId": "src-laplace-efs-us-registry"
+        }
+      ],
+      "versionIds": [],
+      "versionMapping": "unclear"
+    },
+    {
+      "design": "Prospective, multicenter pivotal noninferiority study; 400 EVOQUE-eligible patients randomized 2:1 Laplace:EVOQUE, with outcome-assessor masking, plus up to 150 in a separate single-arm cohort; protocol CLN-004. The registry's separate 700-patient total enrollment estimate is unresolved against this cohort description.",
+      "entityId": "trial-laplace-triumph",
+      "familyIds": [
+        "family-laplace-ttvr",
+        "family-evoque"
+      ],
+      "id": "evidence-laplace-triumph",
+      "name": "TRIUMPH (Laplace TTVR)",
+      "nctId": "NCT07687485",
+      "population": "Adults with symptomatic severe or greater tricuspid regurgitation; separate single-arm cohort is suitable for Laplace, unsuitable for EVOQUE and suboptimal for T-TEER. These are study criteria, not an approved indication.",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Official API protocolSection.identificationModule; sponsorCollaboratorsModule.leadSponsor; descriptionModule; designModule.designInfo and enrollmentInfo; armsInterventionsModule; eligibilityModule. Neither exact device generation nor TRIUMPH access route is specified; retrieved 2026-10-09.",
+          "sourceId": "src-laplace-triumph-registry"
+        }
+      ],
+      "versionIds": [],
+      "versionMapping": "unclear"
+    },
+    {
       "design": "Prospective single-center 12-patient feasibility cohort",
       "entityId": "trial-mi-chord-pilot",
       "familyIds": [
@@ -50726,6 +51017,66 @@
     },
     {
       "enrollment": {
+        "basis": "estimated",
+        "scope": "Canadian EFS total registered target; not treated or analyzed enrollment",
+        "value": 15
+      },
+      "id": "snapshot-laplace-efs-canada-20261009",
+      "note": "Status verified July 2026; actual start June 18, 2024. No registry results posted. Canadian eligibility specifies transjugular access; do not sum this estimate with US enrollment or assume common participants/configurations.",
+      "observedAt": "2026-10-09",
+      "registryUpdatedAt": "2026-07-22",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Official API protocolSection.statusModule (overallStatus, statusVerifiedDate, startDateStruct, lastUpdatePostDateStruct); designModule.enrollmentInfo; hasResults false; retrieved 2026-10-09.",
+          "sourceId": "src-laplace-efs-canada-registry"
+        }
+      ],
+      "status": "RECRUITING",
+      "trialId": "evidence-laplace-efs-canada"
+    },
+    {
+      "enrollment": {
+        "basis": "estimated",
+        "scope": "US EFS total registered target; not treated or analyzed enrollment",
+        "value": 65
+      },
+      "id": "snapshot-laplace-efs-us-20261009",
+      "note": "Status verified September 2026; actual start February 19, 2024. No registry results posted. This record is separate from the Canadian EFS; access-route eligibility does not establish route-specific enrollment or results.",
+      "observedAt": "2026-10-09",
+      "registryUpdatedAt": "2026-09-25",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Official API protocolSection.statusModule (overallStatus, statusVerifiedDate, startDateStruct, lastUpdatePostDateStruct); designModule.enrollmentInfo; hasResults false; retrieved 2026-10-09.",
+          "sourceId": "src-laplace-efs-us-registry"
+        }
+      ],
+      "status": "RECRUITING",
+      "trialId": "evidence-laplace-efs-us"
+    },
+    {
+      "enrollment": {
+        "basis": "estimated",
+        "scope": "Raw registry total enrollment estimate; unresolved against the cohort description",
+        "value": 700
+      },
+      "id": "snapshot-laplace-triumph-20261009",
+      "note": "Status verified July 2026. Registry describes 400 randomized patients plus up to 150 single-arm patients, while its enrollmentInfo field estimates 700; do not replace either figure, sum cohorts into an inferred total, or infer an explanation for the discrepancy. Estimated September 2026 start is not an actual start or proof of recruitment. No registry results posted; June 29 sponsor announcement is not decision-specific FDA confirmation.",
+      "observedAt": "2026-10-09",
+      "registryUpdatedAt": "2026-07-22",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Official API protocolSection.statusModule (overallStatus, statusVerifiedDate, startDateStruct, lastUpdatePostDateStruct); designModule.enrollmentInfo and designInfo.interventionModelDescription; hasResults false; retrieved 2026-10-09.",
+          "sourceId": "src-laplace-triumph-registry"
+        }
+      ],
+      "status": "NOT_YET_RECRUITING",
+      "trialId": "evidence-laplace-triumph"
+    },
+    {
+      "enrollment": {
         "basis": "actual",
         "scope": "randomized participants",
         "value": 210
@@ -50784,7 +51135,7 @@
       "trialId": "evidence-tricaval"
     }
   ],
-  "updatedAt": "2026-10-07",
+  "updatedAt": "2026-10-09",
   "versions": [
     {
       "clinicalRole": "treats",
@@ -51683,6 +52034,26 @@
         }
       ],
       "summary": "Investigational transcatheter LAA closure platform; pivotal trial NCT06168942 shown as suspended on ClinicalTrials.gov at retrieval."
+    },
+    {
+      "clinicalRole": "treats",
+      "familyId": "family-laplace-ttvr",
+      "graphEntityId": "dev-laplace-ttvr",
+      "id": "ver-laplace-ttvr-investigational",
+      "kind": "device",
+      "name": "Laplace TTVR System (investigational overview)",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "About Us, company location and percutaneous TTVR description; publication date not stated.",
+          "sourceId": "src-laplace-company"
+        },
+        {
+          "locator": "Laplace TTVR System heading; SIMPLE paragraph (access routes); final Caution (investigational use only, no sale).",
+          "sourceId": "src-laplace-technology"
+        }
+      ],
+      "summary": "Manufacturer-described investigational TTVR system with transjugular or transfemoral delivery. This overview does not establish an exact model/release or a common build across the US EFS, Canadian EFS and TRIUMPH studies; trial evidence remains mapped only to the family."
     },
     {
       "clinicalRole": "treats",
