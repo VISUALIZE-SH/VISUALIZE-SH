@@ -4,6 +4,7 @@ import type { SpecRow, SpecTable } from '../../data/spec-tables'
 import { approvalLabel, compactCitation, thumbnailFor } from '../../data/spec-tables'
 import { availabilityLabel, displayValue, formatEvidenceDate, sourceFor, sourceUrl } from '../../data/intelligence'
 import EvidenceReferences from './EvidenceReferences'
+import { MediaSourceLinks } from './EvidenceMediaGallery'
 
 /** One width scale for every Data table so columns line up down the page. */
 export const WIDTH = { product: 232, narrow: 104, cell: 152, wide: 304, sources: 168 } as const
@@ -158,7 +159,12 @@ function SpecSheet({ data, row, table, focus, onOpenAtlas }: { data: Intelligenc
     })}</dl>
     {row.media.length > 0 && <div className="intel-spec-figures">{row.media.map(item => <figure key={item.id}>
       <a href={publicAssetPath(item.assetPath)} target="_blank" rel="noreferrer"><img src={publicAssetPath(item.assetPath)} alt={item.alt} loading="lazy" /></a>
-      <figcaption>{item.title}{item.page ? ` · p.${item.page}` : ''}</figcaption>
+      <figcaption>
+        <strong>{item.title}</strong>{item.reviewStatus === 'draft' && ' · draft'}
+        <p>{item.caption}</p>
+        <p>{item.page ? `Page ${item.page}` : 'Original figure image'}{item.figure ? ` · ${item.figure}` : ''}</p>
+        <MediaSourceLinks data={data} item={item} />
+      </figcaption>
     </figure>)}</div>}
     <EvidenceReferences data={data} versionId={row.version.id} name={row.version.name} />
   </div>
