@@ -44,6 +44,14 @@ and `latestNewsDate` in `graph.meta`.
   reviewStatus: draft
 ```
 
+News IDs remain immutable when a source-supported publication-date correction is needed.
+Normally the date in the ID must match `publishedAt`. For a correction, add
+`publicationDateCorrection: { previousPublishedAt, reason, sourceUrl }` and an
+explicit `reviewStatus`. The previous value must match the ID date, the corrected
+`publishedAt` must differ, and the reason/source must document the correction.
+`previousPublishedAt` is the former stored date, not a second publication event.
+Draft corrections remain excluded from the normal feed until curator approval.
+
 Required fields are `id`, `publishedAt`, `title`, `summary`, `sourceName`,
 `sourceUrl`, `topicTags`, and `relevantNodeIds`. Use an immutable, date-prefixed
 id; correct copy in place but never reuse an id for a different story. Sources
