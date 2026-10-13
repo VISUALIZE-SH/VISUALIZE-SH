@@ -4,6 +4,12 @@ Start here when taking over this checkout. This is a static React/Vite site; no
 application server or database is required. Use Node 20.19+ or 22.12+; Node 22 and
 the lockfile are used in GitHub Actions.
 
+Read [`../AGENTS.md`](../AGENTS.md), [`LINEAR_WORKFLOW.md`](LINEAR_WORKFLOW.md),
+and [`SOURCE_CURATION_POLICY.md`](SOURCE_CURATION_POLICY.md) for contributor
+rules. Track app/catalog work, recurring digest operations, and owner-authored
+articles in their respective existing Linear projects. The source policy applies
+to all three; podcasts and interviews are not factual evidence.
+
 ## First local run
 
 ```sh

@@ -12,6 +12,13 @@ fact. Do not invent dates, IDs, URLs, trial identifiers, regulatory status, or
 clinical outcomes. Omit uncertain candidates and add a review flag when a human
 needs to decide.
 
+Use only public or legitimately licensed documentary evidence in accordance
+with `docs/SOURCE_CURATION_POLICY.md`. Podcasts, interviews, recordings, and
+transcripts never substantiate factual claims, including attributed interview
+statements. Independently verify any such lead in an eligible document. Do not
+copy licensed full text or restricted figures into proposals or public outputs;
+record abstract-only or inaccessible-full-text limitations.
+
 Cover material developments in structural heart (valvular and non-valvular),
 heart failure, and digital therapies relevant to structural-heart care. Look for
 new FDA/CE decisions, pivotal readouts, meaningful trial-status changes, devices,

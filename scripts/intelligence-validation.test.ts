@@ -207,7 +207,7 @@ test('validates cited local evidence-media renditions and their version referenc
   const version = validData(); version.media = [{ ...data.media[0], versionIds: ['ver-missing'] }]
   expectInvalid(version, /versionIds references missing version ver-missing/)
   const crop = validData(); crop.media = [{ ...data.media[0], crop: { x: 0.8, y: 0.2, width: 0.4, height: 0.6 } }]
-  expectInvalid(crop, /crop must remain within normalized source-page bounds/)
+  expectInvalid(crop, /crop must remain within normalized source page or figure image bounds/)
 })
 
 test('compiler output is deterministic and unchanged inputs are not rewritten', () => {

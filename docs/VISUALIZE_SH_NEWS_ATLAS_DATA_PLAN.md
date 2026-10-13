@@ -28,6 +28,11 @@ This was a targeted competitive and scientific literature review, not a systemat
 
 ### Competitive landscape
 
+Current curation follows [SOURCE_CURATION_POLICY.md](SOURCE_CURATION_POLICY.md):
+public or legitimately licensed documentary sources only; podcasts, interviews,
+and transcripts cannot support factual claims. The publication inventory below
+describes discovery channels, not permission to use every content format.
+
 | Publication or product | Relevant observed offering | Consequence for VISUALIZE-SH |
 |---|---|---|
 | [The Valve Wire](https://www.thevalvewire.com/) and its [trial dashboard](https://www.thevalvewire.com/trials) | Structural-heart digest, topic coverage, trial status/enrollment/completion tracking, and materials/regulatory stories. | Closest direct overlap. News aggregation, materials summaries, and a registry tracker are insufficient differentiation by themselves. |
@@ -41,7 +46,7 @@ This was a targeted competitive and scientific literature review, not a systemat
 | [MassDevice](https://www.massdevice.com/massdevices-transcatheter-heart-valves-special-report/) | News plus a transcatheter-valve special report covering technology, companies, markets, and competitive dynamics. | Even comparative market reports are occupied territory. The opportunity is technical specificity, evidence traceability, and maintenance over time. |
 | [Fierce Medtech](https://www.fiercebiotech.com/medtech) | Device development, studies, regulation, safety, and transactions. | Use event reporting to initiate primary-source verification. |
 | [MedTech Strategist](https://www.mystrategist.com/) | Subscription business, startup, regulatory, reimbursement, and policy intelligence. | Avoid a promise of comprehensive commercial intelligence without a corresponding research operation. |
-| [DeviceTalks](https://www.devicetalks.com/about/) | Product-development, manufacturing, leadership, and business interviews, podcasts, and events. | Useful design rationale, but interview statements remain attributed claims until corroborated. |
+| [DeviceTalks](https://www.devicetalks.com/about/) | Product-development, manufacturing, leadership, and business interviews, podcasts, and events. | Discovery leads only. Podcasts/interviews and their transcripts are excluded as factual evidence; independently establish a fact in an eligible document before curation. |
 | [STAT medical-device coverage](https://www.statnews.com/topic/medical-devices/) | Investigative and explanatory reporting on devices, regulation, safety, payment, and adoption. | Evidence quality and commercial context matter alongside engineering. |
 | [GlobalData pipeline database](https://www.globaldata.com/product/medical-devices-pipeline-products-database/) | Broad commercial pipeline intelligence and structured delivery. | Compete on a narrow technical domain and transparent sources; do not promise comparable global completeness initially. |
 

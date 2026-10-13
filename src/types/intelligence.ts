@@ -249,7 +249,7 @@ export interface EvidenceMedia extends Provenance {
   page?: number
   /** Source-authored figure/table label, if present. */
   figure?: string
-  /** Optional normalized coordinates of the extraction within the source page. */
+  /** Normalized extraction coordinates within the source page or figure image named in the locator. */
   crop?: { x: number; y: number; width: number; height: number }
 }
 

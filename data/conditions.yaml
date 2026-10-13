@@ -263,3 +263,44 @@
     sources:
     - https://academic.oup.com/eurheartj/article/45/38/3912/7741010
     - https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001356
+
+- id: cond-hf
+  type: condition
+  name: Heart failure
+  abbreviation: HF
+  category: Heart failure
+  anatomy:
+    - heart
+  description: >-
+    Broad heart failure scope used for LINK-HF2, whose registry eligibility does not restrict to one
+    ejection-fraction subtype.
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT04502563
+    notes: >-
+      Broad HF taxonomy candidate. Do not substitute HFrEF-only or HFpEF-only eligibility or assert subtype
+      outcomes. Registry eligibility NYHAII–IV, adult participants.
+
+- id: cond-bag3-dcm
+  type: condition
+  name: BAG3 Mutation-Associated Dilated Cardiomyopathy
+  abbreviation: BAG3 DCM
+  category: Cardiomyopathy
+  anatomy:
+    - myocardium
+    - left ventricle
+  description: >-
+    BAG3 mutation-associated dilated cardiomyopathy. UPBEAT targets adults with a truncating BAG3 mutation,
+    LVEF below45% and NYHAII/III symptoms; this genotype-specific condition does not stand for all HFrEF.
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - >-
+        https://affiniatx.com/affinia-therapeutics-aftx-201-and-upbeat-clinical-trial-in-bag3-dcm-featured-at-the-heart-failure-society-of-america-hfsa-annual-scientific-meeting-2026/
+      - https://clinicaltrials.gov/study/NCT07426419
+    notes: >-
+      New genotype-specific condition candidate. Curator should confirm if this belongs in existing condition
+      taxonomy or whether a broader DCM node is preferred; do not map to HFrEF alone.

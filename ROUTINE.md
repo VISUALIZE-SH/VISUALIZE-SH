@@ -13,7 +13,8 @@ set of starting points, not evidence for a claim.
 
 ## Scheduled run
 
-1. Read this file, `schema/DATA_DICTIONARY.md`, `schema/news.schema.json`, and the
+1. Read `AGENTS.md`, `docs/LINEAR_WORKFLOW.md`,
+   `docs/SOURCE_CURATION_POLICY.md`, this file, `schema/DATA_DICTIONARY.md`, `schema/news.schema.json`, and the
    current `data/*.yaml`. Record any existing local edits; preserve them.
 2. Research the preceding seven days once. Cover structural-heart devices,
    heart-failure therapies, and relevant digital therapies. Prioritize LAAO/LAAC,
@@ -27,6 +28,13 @@ set of starting points, not evidence for a claim.
    meaningful engineering research from university and journal sources. Verify
    each exact publication date and canonical public HTTPS source. Prefer
    regulators, trial registries, journals, and original company releases.
+   Use only public or legitimately licensed documentary evidence; podcasts,
+   interviews, recordings, and transcripts cannot substantiate facts. A lead
+   from those channels needs independent documentary verification. Use licensed
+   content only within its permitted use; never copy full text or restricted
+   figures into public outputs. Track recurring digest work in newsletter,
+   shared catalog/evidence corrections in webapp, and topical articles in
+   editorials; reuse matching Linear issues before filing new work.
 3. Select at most 20 material, nonduplicative items. Add them to `data/news.yaml`
    with immutable `news-YYYY-MM-DD-*` IDs, source-faithful titles, concise
    summaries, topic tags, and relevant existing graph node IDs. Mark every new

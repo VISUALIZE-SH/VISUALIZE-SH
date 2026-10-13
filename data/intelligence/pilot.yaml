@@ -1,6 +1,6 @@
 # Human-review pilot. Authored from the source register below; no clinical claim is marked reviewed.
 schemaVersion: 1
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-12'
 coverage:
   title: Evidence pilot
   description: Draft, source-linked records for review. Not a complete label, IFU, or safety inventory.
@@ -1749,6 +1749,257 @@ trials:
       - sourceId: src-tricento-registry
         locator: 'Abstract; registry cohort and outcomes'
     reviewStatus: reviewed
+  - id: evidence-trial-serra-i-eu
+    name: SERRA-I (Europe)
+    nctId: NCT06991322
+    entityId: trial-serra-i
+    familyIds: [family-aflux]
+    design: Single-group, open-label early feasibility study; protocol VHC-00002
+    versionIds: []
+    versionMapping: unclear
+    population: Symptomatic coronary microvascular dysfunction; European study locations
+    sourceRefs:
+      - sourceId: src-aflux-serra-i-eu-registry
+        locator: 'protocolSection identificationModule, designModule, conditionsModule, armsInterventionsModule and contactsLocationsModule; exact model revision not stated'
+    reviewStatus: draft
+  - id: evidence-trial-serra-i-us
+    name: SERRA-I US
+    nctId: NCT07449325
+    entityId: trial-serra-i-us
+    familyIds: [family-aflux]
+    design: Single-group, open-label early feasibility study; protocol VHC-00004
+    versionIds: []
+    versionMapping: unclear
+    population: Symptomatic coronary microvascular dysfunction; US study locations
+    sourceRefs:
+      - sourceId: src-aflux-serra-i-us-registry
+        locator: 'protocolSection identificationModule, designModule, conditionsModule, armsInterventionsModule and contactsLocationsModule; exact model revision not stated'
+    reviewStatus: draft
+
+  - id: evidence-link-hf2
+    entityId: trial-link-hf2
+    name: LINK-HF2
+    nctId: NCT04502563
+    familyIds:
+      - family-link-hf2-study-intervention
+    design: >-
+      Randomized parallel study; registry reports quadruple masking. Wearable data analyzed in both arms, alerts
+      shared with clinical team only in active arm. Final-paper masking discrepancy unresolved.
+    versionIds: []
+    versionMapping: unclear
+    population: Adult Veterans with HF and NYHAII–IV; broad HF scope, not one EF-defined subtype.
+    sourceRefs:
+      - sourceId: src-link-hf2-registry
+        locator: protocolSection.designModule; armsInterventionsModule; eligibilityModule
+    reviewStatus: draft
+  - id: evidence-teer-china
+    entityId: trial-teer-china
+    name: TEER-CHINA
+    nctId: NCT05556460
+    familyIds:
+      - family-dragonfly-t
+    design: >-
+      Prospective multicenter randomized parallel1:1 DragonFly-T plus medical therapy versus medical therapy;
+      outcome-assessor masked.
+    versionIds: []
+    versionMapping: unclear
+    population: >-
+      Symptomatic severe tricuspid regurgitation despite medical therapy, intermediate-or-higher surgical risk;
+      China.
+    sourceRefs:
+      - sourceId: src-teer-china-registry
+        locator: protocolSection.designModule; descriptionModule; armsInterventionsModule
+      - sourceId: src-teer-china-design-20260727
+        locator: Methods; Study design
+    reviewStatus: draft
+
+  - id: evidence-upbeat-aftx-201
+    entityId: trial-upbeat-aftx-201
+    name: UPBEAT
+    nctId: NCT07426419
+    design: Phase1/2 multicenter open-label single-group dose-escalation and dose-expansion trial.
+    versionIds:
+      - ver-aftx-201
+    versionMapping: exact
+    population: >-
+      Adults18–70 with truncating BAG3 mutation, DCM, LVEF<45%, NYHAII/III; exact additional criteria retained
+      at registry.
+    sourceRefs:
+      - sourceId: src-upbeat-ctgov-nct07426419
+        locator: protocolSection.identificationModule; designModule; eligibilityModule
+    reviewStatus: draft
+
+  - id: intel-trial-cmic-ii
+    name: C-MIC II
+    nctId: NCT04662034
+    entityId: trial-cmic-ii
+    design: RANDOMIZED; PARALLEL; masking NONE
+    versionIds:
+      - ver-cmic-surgical-ii
+    versionMapping: exact
+    population: >-
+      Patients with idiopathic dilative cardiomyopathy who have systolic left ventricular dysfunction (NYHA III
+      - IV) despite adequate therapy according to treatment guidelines of heart failure and who have a baseline
+      left ventricular ejection fraction of ≥25% and ≤35 will receive a C-MIC System and microcurrent therapy
+      after device implantation with optimal medical management. At the end of the study after 6 months, the
+      C-MIC System will be turned off. The control group will receive optimal medical management without device
+      implantation.
+    sourceRefs:
+      - sourceId: src-cmic-nct04662034
+        locator: 'protocolSection: identificationModule, designModule, descriptionModule, eligibilityModule'
+    reviewStatus: draft
+  - id: intel-trial-cmic-iii
+    name: C-MIC III
+    nctId: NCT06920030
+    entityId: trial-cmic-iii
+    design: NON_RANDOMIZED; PARALLEL; masking NONE
+    versionIds:
+      - ver-cmic-subcutaneous-iii
+    versionMapping: exact
+    population: >-
+      Patients with idiopathic dilated cardiomyopathy in heart failure (NYHA class III - IV) with a baseline
+      left ventricular ejection fraction between ≥25% and ≤35%, and patients with non-ischemic cardiomyopathy in
+      heart failure (NYHA class III-IV) with a baseline left ventricular ejection fraction \>40% and \<50%
+      despite guideline-directed medical therapy, will receive C-MIC treatment in addition to optimal medical
+      management.
+
+
+      The device can be implanted without the need for open-heart surgery. Patients are assigned to one of two
+      groups according to the indications under investigation. At the end of the study after 6 months, the C-MIC
+      System will be turned off. The primary endpoint of the study is the absolute change in left ventricular
+      ejection fraction after 6 months of treatment.
+    sourceRefs:
+      - sourceId: src-cmic-nct06920030
+        locator: 'protocolSection: identificationModule, designModule, descriptionModule, eligibilityModule'
+    reviewStatus: draft
+  - id: intel-trial-cmic-iv
+    name: C-MIC IV
+    nctId: NCT07795359
+    entityId: trial-cmic-iv
+    design: RANDOMIZED; PARALLEL; masking QUADRUPLE
+    versionIds:
+      - ver-cmic-subcutaneous-iv
+    versionMapping: exact
+    population: >-
+      This study evaluates the safety and performance/effectiveness of the C-MIC System, an active implantable
+      medical device designed to treat patients with heart failure with reduced ejection fraction (HFrEF). The
+      system delivers a non-excitatory, constant direct electrical microcurrent (DC) to the heart with the aim
+      of improving cardiac function.
+
+
+      The C-MIC System is intended for use in patients with ischemic or non-ischemic dilated cardiomyopathy who
+      have symptomatic, ambulatory heart failure despite receiving guideline-directed medical therapy. Eligible
+      patients must have a left ventricular ejection fraction (LVEF) between ≥20% and ≤40%.
+
+
+      The device is implanted in the catheterization laboratory using a minimally invasive procedure that does
+      not require open-heart surgery. Following implantation, patients receive C-MIC Therapy for a duration of
+      six months. The therapy is designed to improve left ventricular performance, as well as functional
+      capacity and patient well-being, including 6-minute walk distance, quality of life, and New York Heart
+      Association (NYHA) functional class.
+    sourceRefs:
+      - sourceId: src-cmic-nct07795359
+        locator: 'protocolSection: identificationModule, designModule, descriptionModule, eligibilityModule'
+    reviewStatus: draft
+  - id: intel-trial-cmic-ii-follow-up
+    name: C-MIC II follow-up
+    nctId: NCT05189860
+    entityId: trial-cmic-ii-follow-up
+    design: NA; SINGLE_GROUP; masking NONE
+    versionIds:
+      - ver-cmic-surgical-ii
+    versionMapping: exact
+    population: >-
+      The C-MIC System is a medical device used to treat heart failure per the intended purpose which is to
+      treat heart failure by applying an electrical micro-current to the heart.
+
+
+      Target patients for this study are patients who have received the device in a prior study.
+    sourceRefs:
+      - sourceId: src-cmic-nct05189860
+        locator: 'protocolSection: identificationModule, designModule, descriptionModule, eligibilityModule'
+    reviewStatus: draft
+
+  - id: trial-cycle-1-ref
+    name: CYCLE-1-REF
+    nctId: NCT06215911
+    entityId: trial-cycle-1-ref
+    familyIds:
+      - family-tovinontrine
+    design: >-
+      Phase 2 randomized parallel placebo-controlled study; structured registry masking lists participant, care
+      provider, investigator and outcomes assessor.
+    versionIds:
+      - ver-tovinontrine-crd750
+    versionMapping: exact
+    population: Adults with chronic HFrEF and EF ≤40%.
+    sourceRefs:
+      - sourceId: src-tovinontrine-ref-registry
+        locator: >-
+          protocolSection.identificationModule, designModule, armsInterventionsModule, eligibilityModule and
+          outcomesModule; API inspected 2026-10-12
+    reviewStatus: draft
+
+  - id: trial-cycle-2-pef
+    name: CYCLE-2-PEF
+    nctId: NCT06215586
+    entityId: trial-cycle-2-pef
+    familyIds:
+      - family-tovinontrine
+    design: >-
+      Phase 2 randomized parallel placebo-controlled study; structured registry masking lists participant, care
+      provider, investigator and outcomes assessor.
+    versionIds:
+      - ver-tovinontrine-crd750
+    versionMapping: exact
+    population: Adults with chronic HF and EF >40% (registry-defined preserved-EF cohort).
+    sourceRefs:
+      - sourceId: src-tovinontrine-pef-registry
+        locator: >-
+          protocolSection.identificationModule, designModule, armsInterventionsModule, eligibilityModule and
+          outcomesModule; API inspected 2026-10-12
+    reviewStatus: draft
+
+  - id: evidence-clasp-ii-tr
+    entityId: trial-clasp-ii-tr
+    name: CLASP II TR
+    nctId: NCT04097145
+    familyIds:
+      - family-pascal
+    design: >-
+      Prospective multicenter open-label randomized 2:1 PASCAL plus optimal medical therapy versus optimal
+      medical therapy alone; primary design paper randomized scope 450. Registry also lists single-arm registry
+      and continued access groups.
+    versionIds: []
+    versionMapping: unclear
+    population: Adults with symptomatic severe-or-greater tricuspid regurgitation at intermediate-or-higher surgical risk.
+    sourceRefs:
+      - sourceId: src-clasp-ii-tr-registry
+        locator: protocolSection.designModule; armsInterventionsModule; descriptionModule
+      - sourceId: src-clasp-ii-tr-design-20261009
+        locator: Abstract; Trial Registration
+    reviewStatus: draft
+
+  - id: intel-trial-reveal-i124
+    entityId: trial-reveal-i124
+    name: REVEAL
+    nctId: NCT06788535
+    design: >-
+      Phase 3 open-label nonrandomized single-group diagnostic study; independent readers/adjudicators blinded
+      to the alternate data.
+    versionIds:
+      - ver-i124-evuzamitide-reveal
+    versionMapping: exact
+    population: >-
+      Adults undergoing evaluation for suspected cardiac amyloidosis; established cardiac/systemic amyloidosis
+      excluded in reported cohort.
+    sourceRefs:
+      - sourceId: src-reveal-registry
+        locator: protocolSection identification/status/design/armsInterventions/outcomes modules
+      - sourceId: src-reveal-jama
+        locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
+    reviewStatus: draft
+
 trialSnapshots:
   - id: snapshot-laplace-efs-us-20261009
     trialId: evidence-laplace-efs-us
@@ -1886,6 +2137,215 @@ trialSnapshots:
       - sourceId: src-accucinch-corcinch
         locator: 'Study Status; last update posted June 2026'
     reviewStatus: reviewed
+  - id: snapshot-serra-i-eu-20261006
+    trialId: evidence-trial-serra-i-eu
+    observedAt: '2026-10-06'
+    registryUpdatedAt: '2026-08-26'
+    status: ACTIVE_NOT_RECRUITING
+    enrollment: { value: 30, basis: estimated, scope: European protocol VHC-00002 target }
+    note: Registry reports active, not recruiting; no results posted. Estimated enrollment is not actual treated or analyzed enrollment.
+    sourceRefs:
+      - sourceId: src-aflux-serra-i-eu-registry
+        locator: 'protocolSection.statusModule overallStatus and lastUpdatePostDateStruct; designModule.enrollmentInfo; hasResults false'
+    reviewStatus: draft
+  - id: snapshot-serra-i-us-20261006
+    trialId: evidence-trial-serra-i-us
+    observedAt: '2026-10-06'
+    registryUpdatedAt: '2026-09-25'
+    status: SUSPENDED
+    enrollment: { value: 30, basis: estimated, scope: US protocol VHC-00004 target }
+    note: Suspended to implement a protocol change; no results posted. Do not infer an adverse-event reason or sum this estimate with the European target.
+    sourceRefs:
+      - sourceId: src-aflux-serra-i-us-registry
+        locator: 'protocolSection.statusModule overallStatus, whyStopped and lastUpdatePostDateStruct; designModule.enrollmentInfo; hasResults false'
+    reviewStatus: draft
+
+  - id: snapshot-link-hf2-20261012
+    trialId: evidence-link-hf2
+    observedAt: '2026-10-12'
+    registryUpdatedAt: '2026-04-28'
+    status: COMPLETED
+    enrollment:
+      value: 176
+      basis: actual
+      scope: Total registry enrollment
+    note: >-
+      Actual registry enrollment176 differs from171 analyzed (80/91) and protocol240 planned. Registry reports
+      quadruple masking; final Oct9 paper unavailable and design discrepancy not adjudicated. Last
+      update/results posted2026-04-28. Raw hospitalization counts do not establish benefit.
+    sourceRefs:
+      - sourceId: src-link-hf2-registry
+        locator: protocolSection.statusModule; designModule.enrollmentInfo
+    reviewStatus: draft
+  - id: snapshot-teer-china-20261012
+    trialId: evidence-teer-china
+    observedAt: '2026-10-12'
+    registryUpdatedAt: '2026-06-12'
+    status: RECRUITING
+    enrollment:
+      value: 236
+      basis: estimated
+      scope: Total registry enrollment
+    note: >-
+      236 is ESTIMATED planned enrollment; registry last update2026-06-12 and verified2026-06. Primary
+      completion2028-08-15 and completion2032-08-15 estimates. Paper snapshot118 enrolled as of2026-01-14 is
+      historical and not actual total. Randomized parallel, outcome-assessor masked. No randomized efficacy
+      results posted.
+    sourceRefs:
+      - sourceId: src-teer-china-registry
+        locator: protocolSection.statusModule; designModule.enrollmentInfo
+    reviewStatus: draft
+
+  - id: snapshot-upbeat-20261012
+    trialId: evidence-upbeat-aftx-201
+    observedAt: '2026-10-12'
+    registryUpdatedAt: '2026-09-01'
+    status: RECRUITING
+    enrollment:
+      value: 22
+      basis: estimated
+      scope: Total planned registry enrollment
+    note: >-
+      Official API inspected: Phase1/2 open-label single-group dose-escalation/expansion; RECRUITING; estimated
+      enrollment22. Last update posted2026-09-01, status verified2026-07. Estimated start2026-09, primary
+      completion2028-12, completion2032-12. Exact population18–70 with truncating BAG3 mutation, LVEF<45%,
+      NYHAII/III. Current eligibility agrees with October sponsor; July18–55 preserved as historical conflict,
+      amendment date unverified. No results posted.
+    sourceRefs:
+      - sourceId: src-upbeat-ctgov-nct07426419
+        locator: protocolSection.statusModule; designModule.enrollmentInfo
+    reviewStatus: draft
+
+  - id: snapshot-trial-cmic-ii-20261012
+    trialId: intel-trial-cmic-ii
+    observedAt: '2026-10-12'
+    registryUpdatedAt: '2026-02-06'
+    status: COMPLETED
+    enrollment:
+      value: 70
+      basis: actual
+      scope: Registry total; not readout cohort or treated count.
+    note: 'Registry status as posted, may lag operations. Start: {"date": "2021-02-05", "type": "ACTUAL"}'
+    sourceRefs:
+      - sourceId: src-cmic-nct04662034
+        locator: protocolSection.statusModule; protocolSection.designModule.enrollmentInfo
+    reviewStatus: draft
+  - id: snapshot-trial-cmic-iii-20261012
+    trialId: intel-trial-cmic-iii
+    observedAt: '2026-10-12'
+    registryUpdatedAt: '2026-08-11'
+    status: RECRUITING
+    enrollment:
+      value: 22
+      basis: estimated
+      scope: Registry total; not readout cohort or treated count.
+    note: 'Registry status as posted, may lag operations. Start: {"date": "2025-04-09", "type": "ACTUAL"}'
+    sourceRefs:
+      - sourceId: src-cmic-nct06920030
+        locator: protocolSection.statusModule; protocolSection.designModule.enrollmentInfo
+    reviewStatus: draft
+  - id: snapshot-trial-cmic-iv-20261012
+    trialId: intel-trial-cmic-iv
+    observedAt: '2026-10-12'
+    registryUpdatedAt: '2026-08-31'
+    status: NOT_YET_RECRUITING
+    enrollment:
+      value: 60
+      basis: estimated
+      scope: Registry total; not readout cohort or treated count.
+    note: 'Registry status as posted, may lag operations. Start: {"date": "2026-09", "type": "ESTIMATED"}'
+    sourceRefs:
+      - sourceId: src-cmic-nct07795359
+        locator: protocolSection.statusModule; protocolSection.designModule.enrollmentInfo
+    reviewStatus: draft
+  - id: snapshot-trial-cmic-ii-follow-up-20261012
+    trialId: intel-trial-cmic-ii-follow-up
+    observedAt: '2026-10-12'
+    registryUpdatedAt: '2025-06-08'
+    status: RECRUITING
+    enrollment:
+      value: 31
+      basis: estimated
+      scope: Registry total; not readout cohort or treated count.
+    note: 'Registry status as posted, may lag operations. Start: {"date": "2022-03-03", "type": "ACTUAL"}'
+    sourceRefs:
+      - sourceId: src-cmic-nct05189860
+        locator: protocolSection.statusModule; protocolSection.designModule.enrollmentInfo
+    reviewStatus: draft
+
+  - id: snapshot-tovinontrine-ref-20261012
+    trialId: trial-cycle-1-ref
+    observedAt: '2026-10-12'
+    registryUpdatedAt: '2026-09-01'
+    status: COMPLETED
+    enrollment:
+      value: 557
+      basis: actual
+      scope: Registry enrolled population; not sponsor randomized/analyzed denominator
+    note: >-
+      Sponsor reports 529 randomized versus registry 557 enrolled. Difference unresolved; no registry results
+      posted at retrieval. NT-proBNP is a biomarker, not hospitalization/survival.
+    sourceRefs:
+      - sourceId: src-tovinontrine-ref-registry
+        locator: protocolSection.statusModule and designModule.enrollmentInfo; hasResults=false
+    reviewStatus: draft
+
+  - id: snapshot-tovinontrine-pef-20261012
+    trialId: trial-cycle-2-pef
+    observedAt: '2026-10-12'
+    registryUpdatedAt: '2026-09-01'
+    status: COMPLETED
+    enrollment:
+      value: 303
+      basis: actual
+      scope: Registry enrolled population; not sponsor randomized/analyzed denominator
+    note: >-
+      Sponsor reports 277 randomized versus registry 303 enrolled. Difference unresolved; no registry results
+      posted at retrieval. NT-proBNP is a biomarker, not hospitalization/survival.
+    sourceRefs:
+      - sourceId: src-tovinontrine-pef-registry
+        locator: protocolSection.statusModule and designModule.enrollmentInfo; hasResults=false
+    reviewStatus: draft
+
+  - id: snapshot-clasp-ii-tr-20261012
+    trialId: evidence-clasp-ii-tr
+    observedAt: '2026-10-12'
+    registryUpdatedAt: '2026-09-14'
+    status: RECRUITING
+    enrollment:
+      value: 1270
+      basis: estimated
+      scope: Aggregate registry estimate; four arms including randomized, single-arm registry and continued access
+    note: >-
+      Official registry last posted 2026-09-14, status verified 2026-08; RECRUITING with 1270 ESTIMATED across
+      four listed arms (randomized device/control, single-arm registry, continued access). Actual start
+      2019-12-11; primary completion 2027-12-31 and completion 2031-12-31 ESTIMATED. October 9 primary design
+      abstract describes 450 randomized participants in 2:1 allocation and says enrollment completed for the
+      randomized trial, results expected. Preserve registry aggregate versus randomized-cohort scope; no
+      inferred actual aggregate count or clinical result. Exact PASCAL/PASCAL Ace configurations and generation
+      mapping unresolved.
+    sourceRefs:
+      - sourceId: src-clasp-ii-tr-registry
+        locator: protocolSection.statusModule; designModule.enrollmentInfo; armsInterventionsModule.armGroups
+    reviewStatus: draft
+
+  - id: snapshot-reveal-20261012
+    trialId: intel-trial-reveal-i124
+    observedAt: '2026-10-12'
+    registryUpdatedAt: '2026-04-30'
+    status: COMPLETED
+    enrollment:
+      value: 204
+      basis: actual
+      scope: Registry enrollment; separate from publication 195 enrolled/170 included.
+    note: >-
+      Registry completion 2026-04-09; paper study window through 2026-03-12. Preserve difference pending
+      reconciliation.
+    sourceRefs:
+      - sourceId: src-reveal-registry
+        locator: protocolSection identification/status/design/armsInterventions/outcomes modules
+    reviewStatus: draft
+
 cohorts:
   - id: cohort-acorn-no-mvr-5y
     trialId: evidence-acorn-five-year
@@ -2133,6 +2593,80 @@ cohorts:
       - sourceId: src-vital
         locator: 'Methods and Results'
     reviewStatus: draft
+  - id: cohort-link-hf2-registry-results
+    trialId: evidence-link-hf2
+    name: LINK-HF2 posted90-day hospitalization analysis
+    population: 80 active and91 control participants in posted primary outcome;85 and91 started respectively.
+    enrollment:
+      - value: 176
+        stage: randomized
+        note: Registry participant flow started85 active and91 control.
+      - value: 171
+        stage: analyzed
+        note: Posted primary outcome denominators80 active and91 control.
+    arms:
+      - id: arm-link-hf2-active
+        name: Active remote-monitoring arm
+        randomized: 85
+      - id: arm-link-hf2-control
+        name: Control sensor-only arm
+        randomized: 91
+    sourceRefs:
+      - sourceId: src-link-hf2-registry
+        locator: resultsSection.participantFlowModule; resultsSection.outcomeMeasuresModule.outcomeMeasures[0].denoms
+    reviewStatus: draft
+
+  - id: cohort-cmic-ii
+    trialId: intel-trial-cmic-ii
+    name: C-MIC ii reported cohort
+    population: Nonischemic DCM; LVEF 25–35%; NYHA III–IV
+    enrollment:
+      - value: 65
+        stage: analyzed
+        note: 65 mITT (32 device,33 control)
+    arms:
+      - id: arm-cmic-ii-device
+        name: Surgical C-MIC + GDMT
+        randomized: 35
+      - id: arm-cmic-ii-control
+        name: GDMT alone
+        randomized: 35
+    sourceRefs:
+      - sourceId: src-cmic-ii-rct-2025
+        locator: Abstract Methods/results; Results Patients
+    reviewStatus: draft
+  - id: cohort-cmic-fu
+    trialId: intel-trial-cmic-ii-follow-up
+    name: C-MIC fu reported cohort
+    population: Previously treated nonischemic HFrEF; uncontrolled post-deactivation follow-up
+    enrollment:
+      - value: 31
+        stage: analyzed
+        note: 31 enrolled; endpoint-specific missingness and reactivation require full analysis context.
+    arms:
+      - id: arm-cmic-fu
+        name: Previously treated surgical C-MIC
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract; Methods Study design; Table 2
+    reviewStatus: draft
+
+  - id: cohort-reveal-jama
+    trialId: intel-trial-reveal-i124
+    name: REVEAL published diagnostic cohort
+    population: Suspected cardiac amyloidosis at 18 US centers; not ATTR-only.
+    enrollment:
+      - value: 170
+        stage: analyzed
+        note: Public abstract reports 195 enrolled; do not substitute registry 204.
+    arms:
+      - id: arm-reveal-i124
+        name: I 124 evuzamitide PET/CT
+    sourceRefs:
+      - sourceId: src-reveal-jama
+        locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
+    reviewStatus: draft
+
 endpoints:
   - id: endpoint-acorn-lvedv
     name: Five-year left ventricular end-diastolic volume
@@ -2407,6 +2941,165 @@ endpoints:
       - sourceId: src-vital
         locator: 'Methods and Findings'
     reviewStatus: draft
+  - id: endpoint-link-hf2-hf-hospitalizations
+    name: 90-day HF hospitalizations
+    definition: >-
+      Registry primary outcome is titled Heart Failure Hospitalization Rate but reports a number with unit Heart
+      failure hospitalizations.
+    hierarchy: primary
+    measureType: count
+    timeframe: 90 days
+    analysisPopulation: 80 active and91 control participants
+    sourceRefs:
+      - sourceId: src-link-hf2-registry
+        locator: resultsSection.outcomeMeasuresModule.outcomeMeasures[0]
+    reviewStatus: draft
+
+  - id: endpoint-cmic-ii-lvef
+    name: LVEF change
+    definition: LVEF change
+    hierarchy: primary
+    measureType: continuous
+    timeframe: 6 months
+    analysisPopulation: Modified intention-to-treat
+    sourceRefs:
+      - sourceId: src-cmic-ii-rct-2025
+        locator: Abstract Methods/results; primary endpoint
+    reviewStatus: draft
+  - id: endpoint-cmic-fu-lvef
+    name: LVEF change vs pre-implantation
+    definition: LVEF change vs pre-implantation
+    hierarchy: secondary
+    measureType: continuous
+    timeframe: 18 months post-implantation
+    analysisPopulation: Follow-up cohort; reported longitudinal estimates
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Results Efficacy endpoints/Table 3
+    reviewStatus: draft
+  - id: endpoint-cmic-fu-kccq
+    name: KCCQ-OSS change vs pre-implantation
+    definition: KCCQ-OSS change vs pre-implantation
+    hierarchy: secondary
+    measureType: continuous
+    timeframe: 18 months post-implantation
+    analysisPopulation: Follow-up cohort; reported longitudinal estimates
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Results Efficacy endpoints/Table 3
+    reviewStatus: draft
+  - id: endpoint-cmic-fu-walk
+    name: 6MWD change vs pre-implantation
+    definition: 6MWD change vs pre-implantation
+    hierarchy: secondary
+    measureType: continuous
+    timeframe: 18 months post-implantation
+    analysisPopulation: Follow-up cohort; reported longitudinal estimates
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Results Efficacy endpoints/Table 3
+    reviewStatus: draft
+  - id: endpoint-cmic-fu-vo2
+    name: Weight-adjusted peak VO2 change vs pre-implantation
+    definition: Weight-adjusted peak VO2 change vs pre-implantation
+    hierarchy: secondary
+    measureType: continuous
+    timeframe: 18 months post-implantation
+    analysisPopulation: Follow-up cohort; reported longitudinal estimates
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Results Efficacy endpoints/Table 3
+    reviewStatus: draft
+  - id: endpoint-cmic-fu-mortality
+    name: All-cause deaths
+    definition: All-cause deaths
+    hierarchy: primary
+    measureType: count
+    timeframe: 12 months after deactivation
+    analysisPopulation: 31-person follow-up cohort
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Table 2; Results
+    reviewStatus: draft
+  - id: endpoint-cmic-fu-hospitalization
+    name: Patients hospitalized
+    definition: Patients hospitalized
+    hierarchy: primary
+    measureType: count
+    timeframe: 12 months after deactivation
+    analysisPopulation: 31-person follow-up cohort
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Table 2; Results
+    reviewStatus: draft
+  - id: endpoint-cmic-fu-device-ae
+    name: Device-related adverse events
+    definition: Device-related adverse events
+    hierarchy: primary
+    measureType: count
+    timeframe: 12 months after deactivation
+    analysisPopulation: 31-person follow-up cohort
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Table 2; Results
+    reviewStatus: draft
+  - id: endpoint-cmic-fu-reactivation
+    name: Patients needing reactivation
+    definition: Patients needing reactivation
+    hierarchy: secondary
+    measureType: count
+    timeframe: 12 months after deactivation
+    analysisPopulation: 31-person follow-up cohort
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Table 2; Results
+    reviewStatus: draft
+
+  - id: endpoint-reveal-sensitivity
+    name: SENSITIVITY
+    definition: Overall sensitivity against independently adjudicated standard-of-care diagnosis
+    hierarchy: primary
+    measureType: binary
+    timeframe: Up to 60 days
+    analysisPopulation: Published diagnostic cohort
+    sourceRefs:
+      - sourceId: src-reveal-jama
+        locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
+    reviewStatus: draft
+  - id: endpoint-reveal-specificity
+    name: SPECIFICITY
+    definition: Overall specificity against independently adjudicated standard-of-care diagnosis
+    hierarchy: primary
+    measureType: binary
+    timeframe: Up to 60 days
+    analysisPopulation: Published diagnostic cohort
+    sourceRefs:
+      - sourceId: src-reveal-jama
+        locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
+    reviewStatus: draft
+  - id: endpoint-reveal-ppv
+    name: PPV
+    definition: Overall ppv against independently adjudicated standard-of-care diagnosis
+    hierarchy: not_reported
+    measureType: binary
+    timeframe: Up to 60 days
+    analysisPopulation: Published diagnostic cohort
+    sourceRefs:
+      - sourceId: src-reveal-jama
+        locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
+    reviewStatus: draft
+  - id: endpoint-reveal-npv
+    name: NPV
+    definition: Overall npv against independently adjudicated standard-of-care diagnosis
+    hierarchy: not_reported
+    measureType: binary
+    timeframe: Up to 60 days
+    analysisPopulation: Published diagnostic cohort
+    sourceRefs:
+      - sourceId: src-reveal-jama
+        locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
+    reviewStatus: draft
+
 readouts:
   - id: readout-acorn-corcap-5y
     trialId: evidence-acorn-five-year
@@ -2660,6 +3353,82 @@ readouts:
       - sourceId: src-vital
         locator: 'Primary report'
     reviewStatus: draft
+  - id: readout-link-hf2-registry-20260428
+    trialId: evidence-link-hf2
+    cohortId: cohort-link-hf2-registry-results
+    title: LINK-HF2 posted primary outcome
+    publishedAt:
+      value: '2026-04-28'
+      precision: day
+    followUp: 90 days
+    maturity: primary
+    versionIds: []
+    limitation: >-
+      Exact hardware/software build mapping unresolved. Registry reports counts with no comparative statistical
+      analyses. No final-paper estimates imported.
+    sourceRefs:
+      - sourceId: src-link-hf2-registry
+        locator: >-
+          protocolSection.statusModule.resultsFirstPostDateStruct;
+          resultsSection.outcomeMeasuresModule.outcomeMeasures[0]
+    reviewStatus: draft
+
+  - id: readout-cmic-ii
+    trialId: intel-trial-cmic-ii
+    cohortId: cohort-cmic-ii
+    title: Six-month surgical C-MIC RCT
+    publishedAt:
+      value: '2025-07-15'
+      precision: day
+    followUp: 6 months
+    maturity: primary
+    versionIds:
+      - ver-cmic-surgical-ii
+    limitation: >-
+      Open-label; not evidence for subcutaneous III/IV. mITT excludes five randomized patients; early-stop
+      recommendation.
+    sourceRefs:
+      - sourceId: src-cmic-ii-rct-2025
+        locator: Abstract Methods/results; Results Patients
+    reviewStatus: draft
+  - id: readout-cmic-fu
+    trialId: intel-trial-cmic-ii-follow-up
+    cohortId: cohort-cmic-fu
+    title: Twelve months after surgical C-MIC deactivation
+    publishedAt:
+      value: '2026-08-26'
+      precision: day
+    followUp: 18 months after implantation / 12 months after deactivation
+    maturity: follow_up
+    versionIds:
+      - ver-cmic-surgical-ii
+    limitation: >-
+      Open-label; not evidence for subcutaneous III/IV. No concurrent control; small cohort; reactivation and
+      missingness; no causal durability claim.
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract; Methods Study design; Table 2
+    reviewStatus: draft
+
+  - id: readout-reveal-jama
+    trialId: intel-trial-reveal-i124
+    cohortId: cohort-reveal-jama
+    title: REVEAL primary diagnostic performance
+    publishedAt:
+      value: '2026-08-30'
+      precision: day
+    followUp: Reference clinical diagnosis collected over 60 days
+    maturity: primary
+    versionIds:
+      - ver-i124-evuzamitide-reveal
+    limitation: >-
+      Abstract-only review; full text/supplement not inspected. Overall suspected cardiac amyloidosis, not
+      ATTR-specific sensitivity.
+    sourceRefs:
+      - sourceId: src-reveal-jama
+        locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
+    reviewStatus: draft
+
 outcomes:
   - id: outcome-acorn-lvedv-5y
     readoutId: readout-acorn-corcap-5y
@@ -3038,6 +3807,281 @@ outcomes:
         locator: 'Results'
     reviewStatus: draft
     limitation: A medication score is not hospitalization, survival, or standalone algorithm efficacy.
+  - id: outcome-link-hf2-registry-hospitalizations
+    readoutId: readout-link-hf2-registry-20260428
+    endpointId: endpoint-link-hf2-hf-hospitalizations
+    arms:
+      - armId: arm-link-hf2-active
+        value: 13
+        unit: HF hospitalizations
+        denominator: 80
+      - armId: arm-link-hf2-control
+        value: 16
+        unit: HF hospitalizations
+        denominator: 91
+    interpretation: >-
+      Source-faithful hospitalization counts; no comparative statistical benefit established by posted registry
+      result.
+    limitation: >-
+      No statistical analyses supplied; counts are hospitalizations, not necessarily unique participants.
+      KCCQ90-day result NOT_POSTED. Do not equate algorithm notification instability with clinical
+      hospitalization.
+    sourceRefs:
+      - sourceId: src-link-hf2-registry
+        locator: resultsSection.outcomeMeasuresModule.outcomeMeasures[0].classes; denoms; unitOfMeasure
+    reviewStatus: draft
+
+  - id: outcome-cmic-ii-lvef
+    readoutId: readout-cmic-ii
+    endpointId: endpoint-cmic-ii-lvef
+    arms: []
+    effect:
+      measure: Mean difference
+      value: 5.1
+      unit: percentage points
+      ci:
+        lower: 3.1
+        upper: 7.1
+        level: 95
+        sidedness: two_sided
+    pValue: 0.001
+    pValueQualifier: <
+    interpretation: Between-group adjusted mean difference; mITT 65, surgical device 32/control 33.
+    limitation: Surgical configuration only; not evidence for subcutaneous III/IV.
+    sourceRefs:
+      - sourceId: src-cmic-ii-rct-2025
+        locator: Abstract Methods/results; primary endpoint
+    reviewStatus: draft
+  - id: outcome-cmic-fu-lvef
+    readoutId: readout-cmic-fu
+    endpointId: endpoint-cmic-fu-lvef
+    arms: []
+    effect:
+      measure: Mean change from pre-implantation
+      value: 6
+      unit: percentage points
+      ci:
+        lower: 5
+        upper: 8
+        level: 95
+        sidedness: two_sided
+    pValue: 0.0001
+    pValueQualifier: <
+    interpretation: Within-cohort change; not randomized durability comparison.
+    limitation: Surgical configuration only; not evidence for subcutaneous III/IV.
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Results Efficacy endpoints/Table 3
+    reviewStatus: draft
+  - id: outcome-cmic-fu-kccq
+    readoutId: readout-cmic-fu
+    endpointId: endpoint-cmic-fu-kccq
+    arms: []
+    effect:
+      measure: Mean change from pre-implantation
+      value: 43
+      unit: points
+      ci:
+        lower: 36
+        upper: 49
+        level: 95
+        sidedness: two_sided
+    pValue: 0.0001
+    pValueQualifier: <
+    interpretation: Within-cohort change.
+    limitation: Surgical configuration only; not evidence for subcutaneous III/IV.
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Results Efficacy endpoints/Table 3
+    reviewStatus: draft
+  - id: outcome-cmic-fu-walk
+    readoutId: readout-cmic-fu
+    endpointId: endpoint-cmic-fu-walk
+    arms: []
+    effect:
+      measure: Mean change from pre-implantation
+      value: 150
+      unit: m
+      ci:
+        lower: 109
+        upper: 191
+        level: 95
+        sidedness: two_sided
+    pValue: 0.0001
+    pValueQualifier: <
+    interpretation: Within-cohort change; declined 31 m from end of active therapy.
+    limitation: Surgical configuration only; not evidence for subcutaneous III/IV.
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Results Efficacy endpoints/Table 3
+    reviewStatus: draft
+  - id: outcome-cmic-fu-vo2
+    readoutId: readout-cmic-fu
+    endpointId: endpoint-cmic-fu-vo2
+    arms: []
+    effect:
+      measure: Mean change from pre-implantation
+      value: 0.3
+      unit: mL/kg/min
+      ci:
+        lower: -2
+        upper: 3
+        level: 95
+        sidedness: two_sided
+    pValue: 0.8
+    pValueQualifier: '='
+    interpretation: No statistically significant change; separates objective CPET from walk distance.
+    limitation: Surgical configuration only; not evidence for subcutaneous III/IV.
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Results Efficacy endpoints/Table 3
+    reviewStatus: draft
+  - id: outcome-cmic-fu-mortality
+    readoutId: readout-cmic-fu
+    endpointId: endpoint-cmic-fu-mortality
+    arms:
+      - armId: arm-cmic-fu
+        value: 1
+        unit: patients
+        denominator: 31
+    interpretation: Deaths and hospitalizations were assessed as unrelated to device.
+    limitation: Small uncontrolled surgical cohort; no comparative clinical-event benefit established.
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Table 2; Results
+    reviewStatus: draft
+  - id: outcome-cmic-fu-hospitalization
+    readoutId: readout-cmic-fu
+    endpointId: endpoint-cmic-fu-hospitalization
+    arms:
+      - armId: arm-cmic-fu
+        value: 3
+        unit: patients
+        denominator: 31
+    interpretation: Deaths and hospitalizations were assessed as unrelated to device.
+    limitation: Small uncontrolled surgical cohort; no comparative clinical-event benefit established.
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Table 2; Results
+    reviewStatus: draft
+  - id: outcome-cmic-fu-device-ae
+    readoutId: readout-cmic-fu
+    endpointId: endpoint-cmic-fu-device-ae
+    arms:
+      - armId: arm-cmic-fu
+        value: 1
+        unit: patients
+        denominator: 31
+    interpretation: Dyspnea resolved.
+    limitation: Small uncontrolled surgical cohort; no comparative clinical-event benefit established.
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Table 2; Results
+    reviewStatus: draft
+  - id: outcome-cmic-fu-reactivation
+    readoutId: readout-cmic-fu
+    endpointId: endpoint-cmic-fu-reactivation
+    arms:
+      - armId: arm-cmic-fu
+        value: 3
+        unit: patients
+        denominator: 31
+    interpretation: Clinical deterioration required reactivation.
+    limitation: Small uncontrolled surgical cohort; no comparative clinical-event benefit established.
+    sourceRefs:
+      - sourceId: src-cmic-ii-fu-20260826
+        locator: Abstract Results; Table 2; Results
+    reviewStatus: draft
+
+  - id: outcome-reveal-sensitivity
+    readoutId: readout-reveal-jama
+    endpointId: endpoint-reveal-sensitivity
+    arms: []
+    effect:
+      measure: sensitivity
+      value: 94
+      unit: '%'
+      ci:
+        lower: 85
+        upper: 98
+        level: 95
+        sidedness: two_sided
+    interpretation: Diagnostic accuracy, not treatment efficacy.
+    limitation: >-
+      Overall cardiac amyloidosis cohort; abstract does not expose endpoint-specific denominators. PPV/NPV
+      depend on prevalence.
+    sourceRefs:
+      - sourceId: src-reveal-jama
+        locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
+    reviewStatus: draft
+    pValue: 0.001
+    pValueQualifier: <
+  - id: outcome-reveal-specificity
+    readoutId: readout-reveal-jama
+    endpointId: endpoint-reveal-specificity
+    arms: []
+    effect:
+      measure: specificity
+      value: 86
+      unit: '%'
+      ci:
+        lower: 77
+        upper: 92
+        level: 95
+        sidedness: two_sided
+    interpretation: Diagnostic accuracy, not treatment efficacy.
+    limitation: >-
+      Overall cardiac amyloidosis cohort; abstract does not expose endpoint-specific denominators. PPV/NPV
+      depend on prevalence.
+    sourceRefs:
+      - sourceId: src-reveal-jama
+        locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
+    reviewStatus: draft
+    pValue: 0.001
+    pValueQualifier: <
+  - id: outcome-reveal-ppv
+    readoutId: readout-reveal-jama
+    endpointId: endpoint-reveal-ppv
+    arms: []
+    effect:
+      measure: ppv
+      value: 85
+      unit: '%'
+      ci:
+        lower: 75
+        upper: 92
+        level: 95
+        sidedness: two_sided
+    interpretation: Diagnostic accuracy, not treatment efficacy.
+    limitation: >-
+      Overall cardiac amyloidosis cohort; abstract does not expose endpoint-specific denominators. PPV/NPV
+      depend on prevalence.
+    sourceRefs:
+      - sourceId: src-reveal-jama
+        locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
+    reviewStatus: draft
+  - id: outcome-reveal-npv
+    readoutId: readout-reveal-jama
+    endpointId: endpoint-reveal-npv
+    arms: []
+    effect:
+      measure: npv
+      value: 94
+      unit: '%'
+      ci:
+        lower: 87
+        upper: 98
+        level: 95
+        sidedness: two_sided
+    interpretation: Diagnostic accuracy, not treatment efficacy.
+    limitation: >-
+      Overall cardiac amyloidosis cohort; abstract does not expose endpoint-specific denominators. PPV/NPV
+      depend on prevalence.
+    sourceRefs:
+      - sourceId: src-reveal-jama
+        locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
+    reviewStatus: draft
+
 lineage:
   - id: lineage-evolut-fx-plus
     fromVersionId: ver-evolut-fx
@@ -3071,56 +4115,37 @@ lineage:
 events:
   - id: event-amulet-fda-labeling-20260828
     title: FDA approves Amulet pulmonary-artery labeling update
-    eventDate:
-      value: '2026-08-28'
-      precision: day
-    publishedAt:
-      value: '2026-08-28'
-      precision: day
+    eventDate: { value: '2026-08-28', precision: day }
+    publishedAt: { value: '2026-08-28', precision: day }
     discoveredAt: '2026-10-07'
     kind: labeling
-    versionIds:
-      - ver-amulet
-    decisionIds:
-      - decision-amulet-p200049s021
+    versionIds: [ver-amulet]
+    decisionIds: [decision-amulet-p200049s021]
     readoutIds: []
-    before: >-
-      The existing Amulet IFU described interference with adjacent structures without the specific pulmonary-artery guidance
-      authorized by this supplement.
+    before: The existing Amulet IFU described interference with adjacent structures without the specific pulmonary-artery guidance authorized by this supplement.
     after: FDA approved the labeling change under P200049/S021 on August 28, 2026.
     whyItMatters: Provides independent US regulatory confirmation for the pulmonary-artery safety-labeling update.
-    uncertainty: >-
-      The FDA page's October 5 update date is separate from its August 28 decision. This is not a new device generation or evidence
-      of Amulet 360 applicability.
+    uncertainty: The FDA page's October 5 update date is separate from its August 28 decision. This is not a new device generation or evidence of Amulet 360 applicability.
     sourceRefs:
       - sourceId: src-amulet-fda-p200049s021
-        locator: Device; Decision Date; Supplement Type/Reason; Approval Order Statement; Page Last Updated
+        locator: 'Device; Decision Date; Supplement Type/Reason; Approval Order Statement; Page Last Updated'
     reviewStatus: draft
   - id: event-amulet-canada-labeling-recall-20260910
     title: Canada records an Amulet labeling recall concerning pulmonary artery injury
-    eventDate:
-      value: '2026-09-10'
-      precision: day
-    publishedAt:
-      value: '2026-09-25'
-      precision: day
+    eventDate: { value: '2026-09-10', precision: day }
+    publishedAt: { value: '2026-09-25', precision: day }
     discoveredAt: '2026-10-07'
     kind: labeling
-    versionIds:
-      - ver-amulet
+    versionIds: [ver-amulet]
     decisionIds: []
     readoutIds: []
     before: Amulet's existing contraindication referred generally to interference with adjacent intracardiac or intravascular structures.
-    after: >-
-      Health Canada recorded a Type II labeling recall, RA-82682, notifying consignees of pulmonary-artery contraindication and
-      landing-zone assessment changes.
+    after: Health Canada recorded a Type II labeling recall, RA-82682, notifying consignees of pulmonary-artery contraindication and landing-zone assessment changes.
     whyItMatters: Adds a dated, jurisdiction-specific safety notice for the listed original 9-ACP2 models.
-    uncertainty: >-
-      Health Canada explicitly distinguishes this labeling notification from device defectiveness. Canadian classification is not
-      transferred to the US; no global product withdrawal, Amulet 360 scope or adverse-event incidence is inferred.
+    uncertainty: Health Canada explicitly distinguishes this labeling notification from device defectiveness. Canadian classification is not transferred to the US; no global product withdrawal, Amulet 360 scope or adverse-event incidence is inferred.
     sourceRefs:
       - sourceId: src-amulet-health-canada-ra82682
-        locator: Affected products; Issue; Original published date; Recall class; Recall date; Identification number
+        locator: 'Affected products; Issue; Original published date; Recall class; Recall date; Identification number'
     reviewStatus: draft
   - id: event-autus-fda-approval-20261001
     title: FDA announces AUTUS pediatric surgical pulmonary-valve approval
@@ -3462,6 +4487,26 @@ events:
       - sourceId: src-triluminate-2y
         locator: 'Results'
     reviewStatus: draft
+  - id: event-mitria-svs-first-us-expanded-access
+    title: Mitria reports first US SVS implantation under single-patient expanded access
+    eventDate: { value: '2026-01', precision: month }
+    publishedAt: { value: '2026-03-05', precision: day }
+    discoveredAt: '2026-10-06'
+    kind: evidence
+    versionIds: [ver-mitria-svs]
+    decisionIds: []
+    readoutIds: []
+    before: SVS had earlier surgical human experience outside this US announcement.
+    after: Sponsor reported first US implantation at Cleveland Clinic under Single Patient Expanded Access.
+    whyItMatters: Documents an investigational-use milestone for a distinct functional MR repair concept.
+    uncertainty: January 2026 procedure month comes from T45's undated portfolio page; the March 5 release gives no procedure date. Exact implanted build, regulator case authorization and outcomes are not independently verified; no marketing approval is inferred.
+    sourceRefs:
+      - sourceId: src-mitria-t45-portfolio
+        locator: 'Repairing Functional MR From Beneath the Valve, paragraph 2 (January 2026)'
+      - sourceId: src-mitria-us-expanded-access
+        locator: 'Opening non-quotation paragraphs (first US implantation, Cleveland Clinic and Single Patient Expanded Access)'
+    reviewStatus: draft
+
 media:
   - id: media-sapien-3-valve
     versionIds:
