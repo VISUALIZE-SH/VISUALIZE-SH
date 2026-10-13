@@ -2549,3 +2549,192 @@
     notes: >-
       Registry 204 actual vs paper 195 enrolled/170 included; preserve distinct scopes. Brigham and Women’s
       Hospital sponsor. ATTR condition is a partial diagnostic crosswalk.
+
+# Documentary records; source and scope limits accompany each entry.
+- id: trial-highlife-us-efs
+  type: trial
+  name: HighLife US early feasibility (28 mm)
+  nctId: NCT04029337
+  phase: Feasibility study
+  status: recruiting
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-highlife-tmvr
+  enrollment: 30
+  primaryEndpoint: Freedom from major adverse events and continued intended valve performance at 30 days.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT04029337
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT04029337
+    notes: >-
+      Registry last update posted
+      2025-03-17; 30 estimated participants; this count is not a treated or analyzed cohort. No results
+      posted in the API record.
+  timeline:
+    date: '2020-07-14'
+    precision: day
+    dateBasis: trial-start
+    event: Actual registry study start
+    source: https://clinicaltrials.gov/study/NCT04029337
+  pulse: 5
+
+- id: trial-highlife-expanded-tsmvr
+  type: trial
+  name: HighLife expanded transseptal feasibility (28 mm)
+  nctId: NCT04029363
+  phase: Feasibility study
+  status: recruiting
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-highlife-tmvr
+  enrollment: 120
+  primaryEndpoint: Device safety / freedom from major adverse events at 30 days.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT04029363
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT04029363
+    notes: >-
+      Registry last update posted
+      2025-09-15; 120 estimated participants; this count is not a treated or analyzed cohort. No results
+      posted in the API record.
+  timeline:
+    date: '2019-05-28'
+    precision: day
+    dateBasis: trial-start
+    event: Actual registry study start
+    source: https://clinicaltrials.gov/study/NCT04029363
+  pulse: 5
+
+- id: trial-highlife-highflo
+  type: trial
+  name: HighFLO Clarity feasibility
+  nctId: NCT04888247
+  phase: Feasibility study
+  status: recruiting
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-highlife-clarity
+  enrollment: 30
+  primaryEndpoint: Technical success at 24 hours.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT04888247
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT04888247
+    notes: >-
+      Registry last update posted
+      2024-10-03; 30 estimated participants; this count is not a treated or analyzed cohort. Recruitment
+      record last verified October 2024; current recruitment may be stale. No results posted in the API
+      record.
+  timeline:
+    date: '2021-07-01'
+    precision: day
+    dateBasis: trial-start
+    event: Actual registry study start
+    source: https://clinicaltrials.gov/study/NCT04888247
+  pulse: 5
+
+- id: trial-highlife-highfive
+  type: trial
+  name: HIGHFIVE Clarity pivotal
+  nctId: NCT06683729
+  phase: Pivotal single-arm study
+  status: unknown
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-highlife-clarity
+  enrollment: 240
+  primaryEndpoint: All-cause mortality or heart-failure hospitalization at 24 months.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT06683729
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT06683729
+    notes: >-
+      Registry last update posted
+      2025-09-15; 240 estimated participants; this count is not a treated or analyzed cohort. Registry
+      estimated start is not verified initiation. September 2026 company disclosures describe the pivotal
+      program advancing, but this registry remains NOT_YET_RECRUITING. Do not silently reconcile the conflict.
+      No results posted in the API record.
+  pulse: 5
+
+- id: trial-highlife-31mm-feasibility
+  type: trial
+  name: HighLife historical 31 mm feasibility
+  nctId: NCT02974881
+  phase: Feasibility study
+  status: completed
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-highlife-tmvr
+  enrollment: 5
+  resultStatus: ongoing
+  primaryEndpoint: >-
+    Freedom of major adverse events (at 30 days post procedure); Continued intended performance of the
+    HighLife™ bioprosthesis (at 30 days post procedure); Technical success (immediately after procedure)
+  references:
+    - https://clinicaltrials.gov/study/NCT02974881
+  pulse: 4
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT02974881
+    notes: >-
+      Registry last posted 2024-10-03; 5
+      actual overall participants, not a numerical efficacy result. Historical 31 mm study; later-generation
+      equivalence not established. No posted results extracted.
+  timeline:
+    date: '2017-07-20'
+    precision: day
+    dateBasis: trial-start
+    event: Actual registry study start
+    source: https://clinicaltrials.gov/study/NCT02974881
+
+- id: trial-highlife-embrace
+  type: trial
+  name: EMBRACE European HighLife post-market registry
+  nctId: NCT07409285
+  phase: Prospective observational registry
+  status: unknown
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-highlife-tmvr
+  enrollment: 150
+  resultStatus: ongoing
+  primaryEndpoint: >-
+    Rate of Technical Success (At exit from procedure room); Rate of Device Success (30 days); Primary
+    Performance Endpoint (30 days)
+  references:
+    - https://clinicaltrials.gov/study/NCT07409285
+  pulse: 4
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT07409285
+    notes: >-
+      Registry last posted 2026-02-13; 150
+      estimated overall participants, not a numerical efficacy result. Commercial registry describes a 28 mm
+      bioprosthesis; exact marketed generation unresolved. Estimated start is not verified initiation. No
+      posted results extracted.

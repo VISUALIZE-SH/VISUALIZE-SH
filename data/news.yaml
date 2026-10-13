@@ -1000,17 +1000,29 @@
   relevantNodeIds: ["cond-hfref", "cond-hfpef", "rx-finerenone"]
 
 
-- id: "news-2026-08-28-highlife-receives-ce-mark-for-clarity-next-generation-tmvr-valve"
-  publishedAt: "2026-08-28"
-  title: "HighLife receives CE Mark for Clarity next-generation TMVR valve"
-  summary: "HighLife received CE Mark approval for its Clarity Mitral Heart Valve for use with the HighLife TMVR System. Clarity uses an open-cell outflow design intended to reduce left-ventricular-outflow-tract-obstruction risk while preserving HighLife’s transfemoral valve-in-ring architecture; the approved system covers native mitral annuli from 30 to 53 mm."
-  sourceName: "HighLife / Cardiac Interventions Today"
-  sourceUrl: "https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/"
-  topicTags: ["mitral regurgitation", "TMVR", "CE Mark"]
-  relevantNodeIds: ["cond-mr"]
-
-
-
+- id: news-2026-08-28-highlife-receives-ce-mark-for-clarity-next-generation-tmvr-valve
+  publishedAt: '2026-08-27'
+  publicationDateCorrection:
+    previousPublishedAt: '2026-08-28'
+    reason: Primary HighLife release is dated August 27; retain the immutable existing News ID.
+    sourceUrl: https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/
+  title: HighLife receives CE Mark for Clarity next-generation TMVR valve
+  summary: >-
+    HighLife announced CE marking for its next-generation Clarity valve, including standard and LAV
+    configurations. Its open-cell outflow design is intended to address LVOTO-related anatomical constraints.
+    Manufacturer claims await independent certificate/label confirmation; U.S. use remains investigational.
+  sourceName: HighLife SAS
+  sourceUrl: >-
+    https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/
+  topicTags:
+    - mitral regurgitation
+    - TMVR
+    - CE Mark
+  relevantNodeIds:
+    - cond-mr
+    - co-highlife
+    - dev-highlife-clarity
+  reviewStatus: reviewed
 
 - id: "news-2026-08-27-abbotts-amulet-360-laa-occluder-receives-ce-mark"
   publishedAt: "2026-08-27"
@@ -1971,3 +1983,86 @@
   reviewStatus: draft
   topicTags: [durable MCS, LVAD, FDA PMA]
   relevantNodeIds: [cond-hfref, dev-heartmate-ii, trial-momentum-3]
+
+# Documentary records; source and scope limits accompany each entry.
+- id: news-2026-09-22-highlife-eur80m-financing
+  publishedAt: '2026-09-22'
+  title: HighLife announces €80 million financing for European expansion and U.S. pivotal development
+  summary: >-
+    HighLife disclosed a €80 million ($90+ million) financing co-led by Andera Partners, Sofinnova Partners,
+    Supernova Invest and Mérieux Equity Partners. The company plans to expand European commercialization and
+    advance its U.S. pivotal program; its TMVR products remain investigational in the United States.
+  sourceName: HighLife SAS
+  sourceUrl: >-
+    https://www.highlifemedical.com/highlife-raises-90-million-to-start-its-us-pivotal-study-and-accelerate-commercial-expansion-in-europe/
+  topicTags:
+    - TMVR
+    - mitral regurgitation
+    - financing
+  relevantNodeIds:
+    - co-highlife
+    - dev-highlife-tmvr
+    - dev-highlife-clarity
+    - trial-highlife-highfive
+  reviewStatus: reviewed
+
+- id: news-2026-09-23-ultrasight-series-b2
+  publishedAt: '2026-09-23'
+  title: UltraSight announces $24 million Series B2 financing
+  summary: >-
+    UltraSight announced $24 million in Series B2 financing led by Alive HealthTech Growth Fund to support US
+    expansion and additional cardiac workflows. Echosystem is a product-line/workflow name; FDA
+    acquisition-guidance clearances do not establish automated AS interpretation authorization.
+  sourceName: UltraSight
+  sourceUrl: >-
+    https://ultrasight.com/ultrasight-raises-24-million-to-scale-its-ai-guided-cardiac-workflow-platform-across-u-s-health-systems/
+  reviewStatus: reviewed
+  topicTags:
+    - Funding
+    - Cardiac imaging
+    - AI guidance
+  relevantNodeIds:
+    - co-ultrasight
+    - dig-ultrasight-guidance
+    - cond-as
+
+- id: news-2026-08-28-ultrasight-as-diagnostic-study
+  publishedAt: '2026-08-28'
+  title: JAMA study evaluates novice-acquired cardiac ultrasound for AS detection
+  summary: >-
+    A Mayo diagnostic study combined AI-guided ultrasound acquisition with automated detection of moderate or
+    greater AS. The public abstract reports 1302 prospective novice-operator examinations, with 1258 suitable
+    for automated analysis; sensitivity was 93% and specificity 96%. Exact commercial software releases are
+    unverified.
+  sourceName: JAMA Cardiology
+  sourceUrl: https://jamanetwork.com/journals/jamacardiology/article-abstract/2853493
+  reviewStatus: reviewed
+  additionalSources:
+    - label: UltraSight disclosure linking the study to its workflow
+      url: >-
+        https://ultrasight.com/ultrasight-raises-24-million-to-scale-its-ai-guided-cardiac-workflow-platform-across-u-s-health-systems/
+  topicTags:
+    - Aortic stenosis
+    - Diagnostic research
+    - Cardiac imaging
+  relevantNodeIds:
+    - co-ultrasight
+    - dig-ultrasight-guidance
+    - cond-as
+
+- id: news-2026-09-21-respiree-series-a-syndicate-expansion
+  publishedAt: '2026-09-21'
+  title: Respiree adds ARKRAY & PARTNERS and Bizedge Capital to Series A syndicate
+  summary: >-
+    Respiree announced two additional international investors joining its Series A syndicate, led by We
+    Venture Capital and ClavystBio. The company plans to expand its commercial team and U.S. presence; the
+    release does not disclose the round amount.
+  sourceName: Respiree via GlobeNewswire
+  sourceUrl: >-
+    https://www.globenewswire.com/news-release/2026/09/22/3365926/0/en/respiree-extends-series-a-syndicate-with-addition-of-international-investors-to-support-continued-global-growth.html
+  topicTags:
+    - patient monitoring
+    - funding
+  relevantNodeIds:
+    - co-respiree
+  reviewStatus: reviewed

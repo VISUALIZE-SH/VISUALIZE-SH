@@ -31,6 +31,7 @@ import type {
   TherapyType,
 } from '../src/types/entities'
 import { atlasLifecycleFlags } from '../src/data/lifecycle'
+import { newsDateIssues } from './news-validation'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = resolve(__dirname, '..')
@@ -135,10 +136,8 @@ for (const item of news) {
   if (!item?.id) continue
   if (newsIds.has(item.id)) fail(`Duplicate news id: ${item.id}`)
   newsIds.add(item.id)
-  const idDate = item.id.match(/^news-(\d{4}-\d{2}-\d{2})-/)?.[1]
-  if (idDate && item.publishedAt && idDate !== item.publishedAt) {
-    fail(`news "${item.id}" date prefix must match publishedAt "${item.publishedAt}"`)
-  }
+  for (const issue of newsDateIssues(item)) fail(`news "${item.id}" ${issue}`)
+  checkPublicHttps(`news "${item.id}".publicationDateCorrection.sourceUrl`, item.publicationDateCorrection?.sourceUrl)
   checkPublicHttps(`news "${item.id}".sourceUrl`, item.sourceUrl)
   for (const source of item.additionalSources ?? []) {
     checkPublicHttps(`news "${item.id}".additionalSources`, source.url)
