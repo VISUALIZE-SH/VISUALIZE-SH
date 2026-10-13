@@ -170,6 +170,8 @@ export interface NewsItem {
   id: string
   /** ISO publication date (YYYY-MM-DD), used to order the news feed. */
   publishedAt: string
+  /** Source-supported date correction; previousPublishedAt is the former stored value. ID stays stable. */
+  publicationDateCorrection?: { previousPublishedAt: string; reason: string; sourceUrl: string }
   title: string
   /** Concise, plain-language summary for the feed and detail panel. */
   summary: string
