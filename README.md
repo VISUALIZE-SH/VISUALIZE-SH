@@ -32,7 +32,10 @@ npm ci
 npm run dev          # builds data, then starts Vite at http://localhost:5173
 ```
 
-New collaborators should read **[`docs/HANDOFF.md`](docs/HANDOFF.md)** for the
+New collaborators should read [`AGENTS.md`](AGENTS.md),
+[`docs/LINEAR_WORKFLOW.md`](docs/LINEAR_WORKFLOW.md), and
+[`docs/SOURCE_CURATION_POLICY.md`](docs/SOURCE_CURATION_POLICY.md) for project
+routing, Luna/Sol delegation, and eligible factual sources. Read **[`docs/HANDOFF.md`](docs/HANDOFF.md)** for the
 source-of-truth map, review boundaries, and a complete local verification path.
 The current checkout may contain uncommitted work; inspect `git status --short`
 before changing files.

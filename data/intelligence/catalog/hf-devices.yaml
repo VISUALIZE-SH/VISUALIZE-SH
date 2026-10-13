@@ -199,6 +199,25 @@ sources:
       precision: day
     identifier: doi:10.1093/ejhf/xuaf016
 
+  - id: src-aflux-serra-i-eu-registry
+    title: SERRA-I European study — NCT06991322 (VHC-00002)
+    url: https://clinicaltrials.gov/study/NCT06991322
+    kind: registry
+    publisher: ClinicalTrials.gov
+    publishedAt: { value: '2025-05-27', precision: day }
+    retrievedAt: '2026-10-06'
+    access: public
+    identifier: NCT06991322
+  - id: src-aflux-serra-i-us-registry
+    title: SERRA-I US — NCT07449325 (VHC-00004)
+    url: https://clinicaltrials.gov/study/NCT07449325
+    kind: registry
+    publisher: ClinicalTrials.gov
+    publishedAt: { value: '2026-03-04', precision: day }
+    retrievedAt: '2026-10-06'
+    access: public
+    identifier: NCT07449325
+
 families:
   - id: family-cardiomems
     name: CardioMEMS
@@ -354,10 +373,14 @@ versions:
     name: A-FLUX Reducer System
     kind: device
     clinicalRole: treats
-    summary: 'Self-expanding, repositionable nitinol coronary sinus reducer with SwiftCell Technology; investigational, early feasibility study (SERRA-I).'
+    summary: 'Self-expanding, repositionable nitinol coronary sinus reducer with SwiftCell Technology; investigational. Dated October 6, 2026 registry review: European SERRA-I active, not recruiting; separate SERRA-I US suspended for a protocol change.'
     sourceRefs:
       - sourceId: src-vahaticor-device
         locator: "'The Device' section"
+      - sourceId: src-aflux-serra-i-eu-registry
+        locator: protocolSection.statusModule, overallStatus and lastUpdatePostDateStruct (2026-08-26)
+      - sourceId: src-aflux-serra-i-us-registry
+        locator: protocolSection.statusModule, overallStatus, whyStopped and lastUpdatePostDateStruct (2026-09-25)
     reviewStatus: draft
 
 decisions:
@@ -796,9 +819,49 @@ specs:
         loc: "'The Device' section, Four Sizes"
         context: 'Selected to match the patient coronary-sinus diameter.'
       indication-scope:
-        value: 'Investigational; symptomatic CMD (SERRA-I early feasibility)'
+        value: 'Investigational; intended for symptomatic CMD'
+        observedAt: '2026-10-06'
         source: src-vahaticor-home
-        loc: 'Homepage, investigational-device disclaimer and SERRA-I news item'
+        loc: 'Homepage, investigational-device disclaimer and opening device description'
+        context: 'Development target; not an FDA-approved indication. Dated study statuses are separate registry evidence.'
       pivotal-trials:
-        value: 'SERRA-I'
-        loc: "'Clinical Evaluation' section"
+        availability: not_publicly_disclosed
+        observedAt: '2026-10-06'
+        loc: "'Clinical Evaluation' section (SERRA-I is early feasibility; no pivotal authorization trial identified)"
+        limitation: SERRA-I is not pivotal approval evidence; current statuses are supplied by dated registry snapshots.
+
+claims:
+  - id: claim-aflux-development-status
+    versionId: ver-aflux
+    category: fit
+    key: development-status
+    label: Development / safety status
+    comparisonAttributeId: development-status
+    value: 'SERRA-I EU: active, not recruiting; US: suspended for protocol change'
+    availability: reported
+    basis: directly_reported
+    observedAt: '2026-10-06'
+    sourceRefs:
+      - sourceId: src-aflux-serra-i-eu-registry
+        locator: 'protocolSection.statusModule: ACTIVE_NOT_RECRUITING; lastUpdatePostDateStruct 2026-08-26'
+      - sourceId: src-aflux-serra-i-us-registry
+        locator: 'protocolSection.statusModule: SUSPENDED; whyStopped protocol change; lastUpdatePostDateStruct 2026-09-25'
+    reviewStatus: draft
+    context: Dated registry observations for separate VHC-00002 and VHC-00004 protocols. Each lists estimated enrollment of 30; no results posted.
+    limitation: Registry intervention names identify A-FLUX, but do not disclose an exact model revision. Status is not a clinical efficacy or marketing authorization claim.
+
+bibliography:
+  - id: bib-aflux-serra-i-eu-registry
+    entityIds: [dev-aflux]
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-aflux-serra-i-eu-registry
+        locator: 'protocolSection: identificationModule (VHC-00002), statusModule, designModule, armsInterventionsModule, outcomesModule, contactsLocationsModule; hasResults false'
+    reviewStatus: draft
+  - id: bib-aflux-serra-i-us-registry
+    entityIds: [dev-aflux]
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-aflux-serra-i-us-registry
+        locator: 'protocolSection: identificationModule (VHC-00004 / SERRA-I US), statusModule, designModule, armsInterventionsModule, outcomesModule, contactsLocationsModule; hasResults false'
+    reviewStatus: draft

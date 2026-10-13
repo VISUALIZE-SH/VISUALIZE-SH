@@ -1,0 +1,203 @@
+# Commercially reusable LAAO device crops. See docs/LAAO_DEVICE_IMAGE_CURATION.md.
+# FDA-submitted images take precedence when retrievable, exact-version, and reusable.
+sources:
+  - id: src-laao-han-benditt-2023
+    title: 'Percutaneous Left Atrial Appendage Occlusion Therapy: Evolution and Growing Evidence'
+    url: https://www.imrpress.com/journal/RCM/24/7/10.31083/j.rcm2407211
+    kind: publication
+    publisher: Reviews in Cardiovascular Medicine
+    publishedAt: { value: '2023-07-19', precision: day }
+    retrievedAt: '2026-10-04'
+    access: public
+    identifier: doi:10.31083/j.rcm2407211
+  - id: src-laao-suradi-hijazi-2017
+    title: 'Left atrial appendage closure: outcomes and challenges'
+    url: https://link.springer.com/article/10.1007/s12471-016-0929-0
+    kind: publication
+    publisher: Netherlands Heart Journal
+    publishedAt: { value: '2016-12-09', precision: day }
+    retrievedAt: '2026-10-04'
+    access: public
+    identifier: doi:10.1007/s12471-016-0929-0
+  - id: src-laao-ren-clacbac-2021
+    title: 'Two-Year Outcome From Combining Cryoballoon Ablation and Left Atrial Appendage Closure: CLACBAC Study'
+    url: https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2020.610537/full
+    kind: publication
+    publisher: Frontiers in Cardiovascular Medicine
+    publishedAt: { value: '2021-01-11', precision: day }
+    retrievedAt: '2026-10-04'
+    access: public
+    identifier: doi:10.3389/fcvm.2020.610537
+  - id: src-laao-sommer-preclinical-2021
+    title: Preclinical Assessment of a Novel Conformable Foam-Based Left Atrial Appendage Closure Device
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8213491/
+    kind: publication
+    publisher: BioMed Research International
+    publishedAt: { value: '2021-06', precision: month }
+    retrievedAt: '2026-10-04'
+    access: public
+    identifier: doi:10.1155/2021/4556400
+
+media:
+  - id: media-watchman-original-device
+    versionIds: [ver-watchman-original]
+    panel: design
+    title: Original WATCHMAN (legacy 2.5), 27 mm implant
+    caption: >-
+      Original WATCHMAN implant cropped from Han and Benditt (2023), “Percutaneous Left Atrial
+      Appendage Occlusion Therapy: Evolution and Growing Evidence,” Figure 2A, 27 mm device.
+      Original figure credit: Boston Scientific. CC BY 4.0; device crop only, with surrounding
+      labels and other sizes omitted. Article and license linked below.
+    alt: Photograph of a legacy WATCHMAN implant with a rounded wire frame and pale fabric covering, on a gray background.
+    assetPath: /evidence/publications/watchman-original.png
+    page: 6
+    figure: Figure 2A (27 mm device)
+    crop: { x: 0.437441, y: 0.098065, width: 0.129015, height: 0.076970 }
+    sourceRefs:
+      - sourceId: src-laao-han-benditt-2023
+        locator: PDF p.6, Figure 2A, third implant (27 mm), legacy WATCHMAN 2.5; credit Boston Scientific
+      - sourceId: src-cc-by-4-license
+        locator: CC BY 4.0; cropped device photograph; original credits retained
+    reviewStatus: draft
+  - id: media-amplatzer-cardiac-plug-device
+    versionIds: [ver-amplatzer-cardiac-plug]
+    panel: design
+    title: Amplatzer Cardiac Plug (ACP)
+    caption: >-
+      ACP implant cropped from Han and Benditt (2023), “Percutaneous Left Atrial Appendage
+      Occlusion Therapy: Evolution and Growing Evidence,” Figure 1B, left device.
+      Original figure credit: St. Jude Medical. CC BY 4.0; device crop only, with surrounding
+      labels and the Amulet comparison omitted. The proximal attachment visible in the source
+      is retained. Article and license linked below.
+    alt: Photograph of the ACP mesh lobe and wider disc, with peripheral stabilizing wires and a short proximal attachment.
+    assetPath: /evidence/publications/amplatzer-cardiac-plug.png
+    page: 5
+    figure: Figure 1B (left device)
+    crop: { x: 0.163428, y: 0.256250, width: 0.198763, height: 0.140625 }
+    sourceRefs:
+      - sourceId: src-laao-han-benditt-2023
+        locator: PDF p.5, Figure 1B, left ACP implant; credit St. Jude Medical
+      - sourceId: src-cc-by-4-license
+        locator: CC BY 4.0; cropped device photograph; original credits retained
+    reviewStatus: draft
+  - id: media-plaato-device
+    versionIds: [ver-plaato]
+    panel: design
+    title: PLAATO implant
+    caption: >-
+      PLAATO implant cropped from Suradi and Hijazi (2017), “Left atrial appendage closure:
+      outcomes and challenges,” Figure 2a. Original figure credit: courtesy of Boston Scientific.
+      CC BY 4.0; surrounding devices and panel lettering omitted; device pixels unchanged.
+      Article and license linked below.
+    alt: Photograph of the PLAATO implant with a pale membrane covering its rounded expandable frame and small surface anchors.
+    assetPath: /evidence/publications/plaato.png
+    page: 3
+    figure: Figure 2a
+    crop: { x: 0.295462, y: 0.075243, width: 0.295462, height: 0.239381 }
+    sourceRefs:
+      - sourceId: src-laao-suradi-hijazi-2017
+        locator: PDF p.3 (journal p.145), Figure 2a; courtesy Boston Scientific
+      - sourceId: src-cc-by-4-license
+        locator: CC BY 4.0; device crop with panel lettering omitted; original credits retained
+    reviewStatus: draft
+  - id: media-wavecrest-device
+    versionIds: [ver-wavecrest]
+    panel: design
+    title: WaveCrest implant
+    caption: >-
+      WaveCrest implant cropped from Suradi and Hijazi (2017), “Left atrial appendage closure:
+      outcomes and challenges,” Figure 2d. Original figure credit: courtesy of Coherex Medical.
+      CC BY 4.0; surrounding devices and labels omitted. The short proximal attachment visible
+      in the source is retained. Article and license linked below.
+    alt: Photograph of a white-covered WaveCrest occluder with projecting anchors and a short proximal attachment.
+    assetPath: /evidence/publications/wavecrest.png
+    page: 3
+    figure: Figure 2d
+    crop: { x: 0.687261, y: 0.336165, width: 0.217263, height: 0.189927 }
+    sourceRefs:
+      - sourceId: src-laao-suradi-hijazi-2017
+        locator: PDF p.3 (journal p.145), Figure 2d; courtesy Coherex Medical
+      - sourceId: src-cc-by-4-license
+        locator: CC BY 4.0; cropped device photograph; original credits retained
+    reviewStatus: draft
+  - id: media-lacbes-device
+    versionIds: [ver-lacbes]
+    panel: design
+    title: LACbes occluder
+    caption: >-
+      LACbes device photograph from Bai et al. (2022), “A newly designed disk-lobe occluder
+      with isogenous barbs for left atrial appendage closure: Initial multicenter experience,”
+      Figure 1A. © 2022 Bai et al., CC BY 4.0; device panel extracted and cropped, with the
+      separate panel-letter overlay and annotated lateral view omitted. Article and license linked below.
+    alt: En-face photograph of the LACbes occluder showing its circular mesh disc, central hub and peripheral barbs.
+    assetPath: /evidence/publications/lacbes.png
+    page: 3
+    figure: Figure 1A
+    crop: { x: 0.116739, y: 0.122253, width: 0.337310, height: 0.246388 }
+    sourceRefs:
+      - sourceId: src-lacbes-first-clinical
+        locator: PDF p.3, Figure 1A, left device photograph
+      - sourceId: src-cc-by-4-license
+        locator: CC BY 4.0; device panel extracted and cropped; separate panel lettering omitted
+    reviewStatus: draft
+  - id: media-lefort-device
+    versionIds: [ver-lefort]
+    panel: design
+    title: Lefort LAA occluder
+    caption: >-
+      Lefort implant cropped from Ren et al. (2021), “Two-Year Outcome From Combining Cryoballoon
+      Ablation and Left Atrial Appendage Closure: CLACBAC Study,” Figure 3A. The source identifies
+      Shape Memory Alloy Co., Shanghai. © 2021 Ren et al., CC BY 4.0; surrounding labels and
+      comparison devices omitted. Article and license linked below.
+    alt: Photograph of a historical Lefort occluder with a mesh disc and rounded lobe, on a gray background.
+    assetPath: /evidence/publications/lefort.png
+    page: 4
+    figure: Figure 3A
+    crop: { x: 0.120149, y: 0.386392, width: 0.227396, height: 0.140702 }
+    sourceRefs:
+      - sourceId: src-laao-ren-clacbac-2021
+        locator: PDF p.4, Figure 3A, Lefort (Shape Memory Alloy Co., Shanghai)
+      - sourceId: src-cc-by-4-license
+        locator: CC BY 4.0; cropped device photograph
+    reviewStatus: draft
+  - id: media-claas-preclinical-device
+    versionIds: [ver-claas]
+    panel: design
+    title: CLAAS preclinical prototype (large implant)
+    caption: >-
+      Large CLAAS preclinical prototype from Sommer et al. (2021), “Preclinical Assessment of
+      a Novel Conformable Foam-Based Left Atrial Appendage Closure Device,” Figure 1b, right
+      implant. This depicts the published preclinical configuration. © 2021 Sommer et al.,
+      CC BY 4.0; device crop with adjoining lettering omitted; device pixels unchanged.
+      Article and license linked below.
+    alt: Photograph of the large preclinical CLAAS foam-covered implant with a dark central recess, on a white background.
+    assetPath: /evidence/publications/claas.png
+    figure: Figure 1b (right, large implant)
+    crop: { x: 0.261789, y: 0.360377, width: 0.237398, height: 0.213208 }
+    sourceRefs:
+      - sourceId: src-laao-sommer-preclinical-2021
+        locator: Figure 1b, right large preclinical implant; original repository figure image
+      - sourceId: src-cc-by-4-license
+        locator: CC BY 4.0; preclinical device crop with adjoining lettering omitted
+    reviewStatus: draft
+  - id: media-sierra-working-end
+    versionIds: [ver-sierra]
+    panel: design
+    title: Sierra Aegis ligation system working end
+    caption: >-
+      Working end of the Sierra Aegis ligation system from Batko et al. (2024), “First-in-Human
+      Percutaneous Epicardial-Only Left Atrial Appendage Closure Using Sierra Left Atrial Appendage
+      Ligation System,” Figure 3. The photograph shows the loop and cutter component.
+      © 2024 Batko et al., CC BY 4.0; cropped to the device working end, with caption and page
+      content omitted. Article and license linked below.
+    alt: Photograph of the Sierra Aegis system's pale loop and cutter at the distal end of a blue shaft, on a gray background.
+    assetPath: /evidence/publications/sierra.png
+    page: 4
+    figure: Figure 3
+    crop: { x: 0.361244, y: 0.511136, width: 0.451555, height: 0.141966 }
+    sourceRefs:
+      - sourceId: src-sierra-first-human
+        locator: PDF p.4, Figure 3, Sierra Aegis ligation system working end
+      - sourceId: src-cc-by-4-license
+        locator: CC BY 4.0; cropped working-end photograph
+    reviewStatus: draft

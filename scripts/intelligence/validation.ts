@@ -358,7 +358,7 @@ function validateSemantics(data: IntelligenceData, legacyIds: ReadonlySet<string
       issues.push(`${media.id}.assetPath must be a safe root-relative image under /evidence/`)
     }
     if (media.crop && (media.crop.x + media.crop.width > 1 || media.crop.y + media.crop.height > 1)) {
-      issues.push(`${media.id}.crop must remain within normalized source-page bounds`)
+      issues.push(`${media.id}.crop must remain within normalized source page or figure image bounds`)
     }
   }
   return issues
