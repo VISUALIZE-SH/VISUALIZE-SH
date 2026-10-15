@@ -36,6 +36,7 @@ interface SimLink extends SimulationLinkDatum<SimNode> {
 }
 
 export interface ElasticPullOptions {
+  enabled?: () => boolean
   /** Spring stiffness, 0–1. Lower = stretchier/more elastic. */
   linkStrength?: number
   /** Friction, 0–1. Higher = more damping (less jiggle). */
@@ -125,6 +126,7 @@ export function attachElasticPull(cy: Core, opts: ElasticPullOptions = {}): () =
   }
 
   function onGrab(e: EventObject) {
+    if (opts.enabled && !opts.enabled()) return
     const node = e.target as NodeSingular
     build()
     if (!sim) return

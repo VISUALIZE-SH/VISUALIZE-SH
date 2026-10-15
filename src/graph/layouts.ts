@@ -1,12 +1,11 @@
 import type { Core } from 'cytoscape'
 import { dateToUtcMs, getTimelineWidth, timelineX } from './timeline'
 
-// The Atlas intentionally has two views: an exploratory condition-clustered
-// landscape and a dated timeline.
-export type LayoutName = 'fcose' | 'timeline'
+// Atlas offers stable semantic islands and a dated timeline.
+export type LayoutName = 'islands' | 'timeline'
 
 export const LAYOUT_LABELS: Record<LayoutName, string> = {
-  fcose: 'Clustered',
+  islands: 'Islands',
   timeline: 'Timeline',
 }
 
@@ -181,14 +180,15 @@ function timelinePosition(n: any) {
   return { x, y: laneY + spread }
 }
 
-// Returns plain layout-options objects. Typed as `any` because the fcose
-// extension options are not part of Cytoscape's core LayoutOptions type.
-//
 // animate:false makes the built-in fit accurate (animated layouts can fit
 // against mid-flight positions and mis-frame the graph).
 export function getLayout(name: LayoutName): any {
-  const common = { animate: false, padding: 45, fit: true }
   switch (name) {
+    case 'islands':
+      return {
+        name: 'preset', animate: false, fit: false,
+        positions: (node: any) => node.cy().scratch('_stableIslandPositions')?.get(node.id()) ?? node.position(),
+      }
     case 'timeline':
       return {
         name: 'preset',
@@ -197,54 +197,26 @@ export function getLayout(name: LayoutName): any {
         padding: 70,
         positions: timelinePosition,
       }
-    case 'fcose':
-    default:
-      return {
-        name: 'fcose',
-        // 'default' quality skips fcose's expensive spectral/Newton refinement,
-        // which is overkill for a graph this size (~150 nodes) — the subsequent
-        // clusterByCondition + declutter passes own the final arrangement anyway.
-        quality: 'default',
-        randomize: true,
-        packComponents: true, // keep disconnected clusters from flying apart
-        nodeSeparation: 80,
-        idealEdgeLength: 68,
-        nodeRepulsion: 4500,
-        gravity: 0.4,
-        gravityRange: 3.2,
-        numIter: 1200,
-        ...common,
-      }
   }
 }
 
 const FRAME_PADDING = 45
 
-/** Frame the freshly-laid-out graph in the viewport. */
-export function frameLayout(cy: Core, name: LayoutName): void {
+/** Frame the graph; automatic island framing favors readable labels over a full overview. */
+export function frameLayout(cy: Core, name: LayoutName, options: { readable?: boolean } = {}): void {
   cy.resize() // recompute against the current container size before framing
   const eles = cy.elements(':visible')
   if (eles.empty()) return
   const savedTimelineMinZoom = cy.scratch('_timelineBaseMinZoom') as number | null | undefined
-  if (name === 'timeline') {
-    const baseMinZoom = typeof savedTimelineMinZoom === 'number' ? savedTimelineMinZoom : cy.minZoom()
-    cy.scratch('_timelineBaseMinZoom', baseMinZoom)
-    // Let fit choose the scale needed for the full timeline, then make that
-    // fitted scale the lower zoom bound. Users can still zoom in normally.
-    cy.minZoom(0.005)
-  } else if (typeof savedTimelineMinZoom === 'number') {
-    cy.minZoom(savedTimelineMinZoom)
-    cy.scratch('_timelineBaseMinZoom', null)
-  }
+  const baseMinZoom = typeof savedTimelineMinZoom === 'number' ? savedTimelineMinZoom : cy.minZoom()
+  cy.scratch('_timelineBaseMinZoom', baseMinZoom)
+  // Let fit choose the full overview scale, keeping it reachable on zoom-out.
+  cy.minZoom(0.005)
   cy.fit(eles, FRAME_PADDING)
-  // The clustered overview is intentionally a little closer than a strict
-  // edge-to-edge fit so labels remain useful on first load. Timeline keeps its
-  // complete time span framed.
-  if (name === 'fcose') {
-    cy.zoom(Math.min(cy.maxZoom(), cy.zoom() * 1.1))
+  cy.minZoom(Math.min(baseMinZoom, cy.zoom()))
+  if (name === 'islands' && options.readable) {
+    // Open at 75% of the original 0.7 scale, retaining room to zoom out or Fit.
+    cy.zoom(Math.min(cy.maxZoom(), Math.max(cy.zoom(), 0.525)))
     cy.center(eles)
-  } else {
-    const baseMinZoom = cy.scratch('_timelineBaseMinZoom') as number
-    cy.minZoom(Math.min(baseMinZoom, cy.zoom()))
   }
 }

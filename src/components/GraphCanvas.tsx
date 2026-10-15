@@ -1,17 +1,19 @@
 import { useEffect, useRef } from 'react'
 import type Cytoscape from 'cytoscape'
-import cytoscape from '../graph/cytoscapeSetup'
+import cytoscape from 'cytoscape'
 import { buildStylesheet } from '../graph/cytoscapeStyles'
 import { getLayout, frameLayout, type LayoutName } from '../graph/layouts'
 import { attachElasticPull } from '../graph/elasticPull'
-import { declutterOverlaps, enforceFootprintSpacing, spaceIslands } from '../graph/declutter'
-import { clusterByCondition } from '../graph/clusterByCondition'
+import { enforceFootprintSpacing } from '../graph/declutter'
 import { removeTimelineAxis, updateTimelineAxis } from '../graph/timeline'
+import { computeStableIslands } from '../graph/stableIslands'
+import { atlasTargetLabels, islandConditionLabel } from '../data/atlas-targets'
 import type { GraphData } from '../types/entities'
 
 interface Props {
   graph: GraphData
   visibleIds: Set<string>
+  showDrafts: boolean
   selectedId: string | null
   highlightedIds: Set<string>
   layoutName: LayoutName
@@ -24,6 +26,7 @@ interface Props {
 export default function GraphCanvas({
   graph,
   visibleIds,
+  showDrafts,
   selectedId,
   highlightedIds,
   layoutName,
@@ -42,10 +45,17 @@ export default function GraphCanvas({
   // Create the instance once per dataset.
   useEffect(() => {
     if (!containerRef.current) return
+    const graphNodes = graph.elements.nodes.map(node => node.data)
+    const graphEdges = graph.elements.edges.map(edge => edge.data)
+    const nodesById = new Map(graphNodes.map(node => [node.id, node]))
+    const islandNodes = graphNodes.map((node, index) => {
+      const labels = atlasTargetLabels(node, nodesById, graphEdges)
+      return { data: { ...node, islandLabel: node.entity.type === 'condition' ? islandConditionLabel(node) : labels.label, isSharedTarget: labels.shared }, position: { x: (index % 20) * 300, y: Math.floor(index / 20) * 200 } }
+    })
     const cy = cytoscape({
       container: containerRef.current,
-      elements: [...graph.elements.nodes, ...graph.elements.edges],
-      style: buildStylesheet({ accessibilityMode, darkMode }),
+      elements: [...islandNodes, ...graph.elements.edges],
+      style: buildStylesheet({ accessibilityMode, darkMode, stableIslands: layoutName === 'islands' }),
       // Visibility is a React-owned filter. Start from neutral positions and let
       // the visibility effect below run the first real layout on its subset;
       // otherwise Cytoscape lays out every node once before filters are applied.
@@ -57,7 +67,30 @@ export default function GraphCanvas({
     onCyReady?.(cy)
 
     // Physics-informed elastic pull: dragging a node springs its neighbors along.
-    const detachElastic = attachElasticPull(cy)
+    const detachElastic = attachElasticPull(cy, { enabled: () => layoutNameRef.current !== 'islands' })
+
+    // Cache a full-dataset map. Filtering changes visibility, never its coordinates.
+    const buildStableMap = () => {
+      const nodes = graph.elements.nodes.map(node => node.data)
+      const edges = graph.elements.edges.map(edge => edge.data)
+      const footprints = new Map<string, { width: number; height: number }>()
+      cy.batch(() => {
+        cy.nodes().forEach(node => {
+          const wasDisplay = node.style('display')
+          node.style('display', 'element')
+          const box = node.boundingBox({ includeLabels: true, includeEdges: false })
+          const position = node.position()
+          // Labels sit below icons; reserve the asymmetric extent on both sides
+          // of the icon rather than treating the box center as the node center.
+          footprints.set(node.id(), { width: 2 * Math.max(position.x - box.x1, box.x2 - position.x), height: 2 * Math.max(position.y - box.y1, box.y2 - position.y) })
+          node.style('display', wasDisplay)
+        })
+      })
+      cy.scratch('_stableIslandPositions', computeStableIslands(nodes, edges, footprints))
+    }
+    buildStableMap()
+    cy.scratch('_stableAccessibility', accessibilityMode)
+    cy.scratch('_buildStableMap', buildStableMap)
 
     const relayoutTimeline = () => {
       removeTimelineAxis(cy)
@@ -65,28 +98,22 @@ export default function GraphCanvas({
       cy.elements(':visible').layout(getLayout('timeline')).run()
     }
 
-    // After any layout: relax label footprints apart (with organic jitter), open up
-    // whitespace around disconnected islands, then frame.
+    // Timeline needs footprint cleanup; Islands reuses its cached coordinates.
     const declutterAndFit = () => {
       if (cyRef.current !== cy) return
       if (layoutNameRef.current === 'timeline') {
         enforceFootprintSpacing(cy, { verticalOnly: true, excludeTimelineAxis: true })
         updateTimelineAxis(cy)
-      } else {
+      } else if (layoutNameRef.current === 'islands') {
         removeTimelineAxis(cy)
-        clusterByCondition(cy)
-        declutterOverlaps(cy)
-        spaceIslands(cy)
-        enforceFootprintSpacing(cy)
+        cy.nodes('[group = "condition"]').lock()
       }
-      frameLayout(cy, layoutNameRef.current)
+      frameLayout(cy, layoutNameRef.current, { readable: true })
     }
     cy.on('layoutstop', declutterAndFit)
 
-    // Each fresh layout owns positions: clear the one-time condition-spread flag
-    // so clusterByCondition re-spreads the new anchors (re-runs without a layout
-    // — fonts/accessibility — keep the flag and stay idempotent).
-    cy.on('layoutstart', () => cy.scratch('_clusterCondSpread', null))
+    // A fresh layout owns positions; release the previous Islands hub locks.
+    cy.on('layoutstart', () => { cy.nodes().unlock() })
 
     // Web fonts load asynchronously; until they do, label bounding boxes are
     // measured at the wrong (fallback/zero) size and the de-clutter pass under-
@@ -94,7 +121,9 @@ export default function GraphCanvas({
     if (typeof document !== 'undefined' && document.fonts?.ready) {
       document.fonts.ready.then(() => {
         if (cyRef.current !== cy) return
-        if (layoutNameRef.current === 'timeline') relayoutTimeline()
+        if (layoutNameRef.current === 'islands') buildStableMap()
+        if (layoutNameRef.current === 'islands') cy.elements(':visible').layout(getLayout('islands')).run()
+        else if (layoutNameRef.current === 'timeline') relayoutTimeline()
         else declutterAndFit()
       })
     }
@@ -102,15 +131,9 @@ export default function GraphCanvas({
     if (import.meta.env.DEV) {
       const w = window as unknown as {
         __cy?: Cytoscape.Core
-        __cluster?: (o?: Parameters<typeof clusterByCondition>[1]) => void
-        __declutter?: (o?: Parameters<typeof declutterOverlaps>[1]) => void
-        __spaceIslands?: (o?: Parameters<typeof spaceIslands>[1]) => number
         __refit?: () => void
       }
       w.__cy = cy
-      w.__cluster = (o) => clusterByCondition(cy, o)
-      w.__declutter = (o) => declutterOverlaps(cy, o)
-      w.__spaceIslands = (o) => spaceIslands(cy, o)
       w.__refit = () => cy.fit(cy.elements(':visible'), 45)
     }
 
@@ -119,7 +142,7 @@ export default function GraphCanvas({
     // next frame once the container has its final size.
     requestAnimationFrame(() => {
       if (cyRef.current !== cy) return
-      frameLayout(cy, layoutNameRef.current)
+      frameLayout(cy, layoutNameRef.current, { readable: true })
     })
 
     cy.on('tap', 'node', (evt) => {
@@ -144,21 +167,20 @@ export default function GraphCanvas({
   useEffect(() => {
     const cy = cyRef.current
     if (!cy) return
-    cy.style(buildStylesheet({ accessibilityMode, darkMode })).update()
-    if (layoutNameRef.current !== 'timeline') {
-      clusterByCondition(cy)
-      declutterOverlaps(cy)
-      spaceIslands(cy)
-      enforceFootprintSpacing(cy)
+    cy.style(buildStylesheet({ accessibilityMode, darkMode, stableIslands: layoutName === 'islands' })).update()
+    if (layoutName === 'islands' && cy.scratch('_stableAccessibility') !== accessibilityMode) {
+      cy.scratch('_buildStableMap')?.()
+      cy.scratch('_stableAccessibility', accessibilityMode)
+      cy.elements(':visible').layout(getLayout('islands')).run()
     }
     if (layoutNameRef.current === 'timeline') {
       removeTimelineAxis(cy)
       cy.scratch('_timelineLayoutState', null)
       cy.elements(':visible').layout(getLayout('timeline')).run()
     } else {
-      frameLayout(cy, layoutNameRef.current)
+      frameLayout(cy, layoutNameRef.current, { readable: true })
     }
-  }, [accessibilityMode, darkMode])
+  }, [accessibilityMode, darkMode, layoutName])
 
   // Toggle node visibility on filter/layout change; relayout the visible subset.
   // Timeline mode shows dated therapies/trials plus the condition/anatomy tier.
@@ -180,11 +202,20 @@ export default function GraphCanvas({
           layoutName === 'timeline' && shown && !n.data('isTimelineAxis'),
         )
       })
+      cy.edges().forEach(edge => { edge.style('display', showDrafts || !edge.data('isDraft') ? 'element' : 'none') })
+      const nodes = graph.elements.nodes.map(node => node.data)
+      const byId = new Map(nodes.map(node => [node.id, node]))
+      const edges = graph.elements.edges.map(edge => edge.data).filter(edge => showDrafts || !edge.isDraft)
+      cy.nodes().forEach(node => {
+        const labels = atlasTargetLabels(node.data(), byId, edges)
+        node.data('islandLabel', node.data('group') === 'condition' ? islandConditionLabel(node.data()) : labels.label)
+        node.data('isSharedTarget', labels.shared)
+      })
     })
     // Lay out only rendered elements, including on the initial mount.
     cy.elements(':visible').layout(getLayout(layoutName)).run()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [visibleIds, layoutName])
+  }, [visibleIds, layoutName, showDrafts])
 
   // Neighborhood highlight for a selected node, or a multi-node focus for a
   // selected news item. News focus deliberately does not pull in each node's
@@ -197,9 +228,11 @@ export default function GraphCanvas({
       cy.elements().removeClass('faded sel news-hit hl')
 
       if (selectedId) {
+        cy.resize()
         const node = cy.getElementById(selectedId)
         if (node.empty()) return
-        const hood = node.closedNeighborhood()
+        const connections = node.connectedEdges().filter(edge => edge.visible())
+        const hood = node.union(connections).union(connections.connectedNodes().filter(':visible'))
         cy.elements().not(hood).addClass('faded')
         node.addClass('sel')
         hood.edges().addClass('hl')
@@ -232,7 +265,7 @@ export default function GraphCanvas({
     return () => {
       cy.off('layoutstop', applyFocus)
     }
-  }, [highlightedIds, selectedId])
+  }, [highlightedIds, selectedId, showDrafts, visibleIds])
 
-  return <div ref={containerRef} className="graph-canvas" />
+  return <div ref={containerRef} className="graph-canvas" role="img" aria-label="Interactive structural heart network. Use search or connection buttons to inspect a node and its sources." />
 }

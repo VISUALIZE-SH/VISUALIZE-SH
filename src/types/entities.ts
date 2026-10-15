@@ -207,7 +207,31 @@ export type NodeGroup =
   | 'company'
   | 'trial'
 
-export type EdgeRelationship = 'treats' | 'made_by' | 'evaluates' | 'studies'
+export type EvidenceRelationship = 'treats' | 'used_in' | 'investigated_for' | 'invested_in' | 'acquired' | 'option_to_acquire' | 'portfolio_includes' | 'terminated_acquisition'
+export type EdgeRelationship = 'treats' | 'made_by' | 'evaluates' | 'studies' | EvidenceRelationship
+
+/** Additional edges retain their own review state and exact documentary scope. */
+export interface SourcedRelationship {
+  id: string
+  source: string
+  target: string
+  relationship: EvidenceRelationship
+  scope: string
+  /** Precision is encoded by YYYY, YYYY-MM, or YYYY-MM-DD. Omit unknown dates. */
+  eventDate?: string
+  notes?: string
+  curation: Curation
+  sources: Array<{
+    url: string
+    title: string
+    publisher: string
+    publishedAt?: string
+    retrievedAt: string
+    access: 'public' | 'licensed'
+    sourceType: 'regulator' | 'registry' | 'publication' | 'filing' | 'company' | 'investor' | 'patent-office'
+    locator: string
+  }>
+}
 
 export interface GraphNodeData {
   id: string
@@ -232,6 +256,8 @@ export interface GraphEdgeData {
   source: string
   target: string
   relationship: EdgeRelationship
+  isDraft?: boolean
+  evidence?: SourcedRelationship
 }
 
 export interface GraphMeta {

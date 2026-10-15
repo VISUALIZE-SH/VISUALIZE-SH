@@ -472,3 +472,42 @@ explicit missingness or limitation.
 For the full workflow, see [the evidence pipeline](../docs/EVIDENCE_PIPELINE.md),
 [local implementation status](../docs/LOCAL_IMPLEMENTATION_STATUS.md), and
 [local newsletter readiness](../docs/NEWSLETTER_LOCAL_READINESS.md).
+
+## Source-located graph relationships (`data/relationships.yaml`)
+
+Additional graph connections are authored as a YAML list validated by
+`schema/relationship.schema.json` and `scripts/graph-relationships.ts`. Each
+record has a stable `rel-` ID, `source`, `target`, `relationship`, exact `scope`,
+independent `curation` state, and one or more `sources` with documentary title,
+publisher, URL, source class, public/licensed access, retrieval date, and exact
+locator. Source publication and event dates are separate; omit unknown dates and
+use `YYYY` or `YYYY-MM` when that is the document's precision. Never add full text
+or licensed excerpts to these records.
+
+Supported additional connections:
+
+| Relationship | Endpoints | Meaning |
+| --- | --- | --- |
+| `treats` | therapy → condition | Additional source-scoped target; population/version constraints stay in `scope`. |
+| `investigated_for` | therapy → condition | Study target; does not establish commercial authorization. |
+| `used_in` | non-procedure therapy → procedure | Documented procedure use, preserving investigational/authorized scope. |
+| `invested_in` | company → company | Investment; instrument and date limits must be explicit. |
+| `acquired` | company → company | Completed acquisition, with completion date/precision. |
+| `option_to_acquire` | company → company or product | Conditional option; product endpoint identifies asset scope, never a completed purchase. |
+| `portfolio_includes` | company/incubator → company | Disclosed portfolio association; no implied fund ownership or equity percentage. |
+| `terminated_acquisition` | company → company | Historical terminated agreement; never ownership. |
+
+Duplicate directed relationship triples, unresolved IDs, self-links, and incorrect
+endpoint types fail the graph build. These records supplement, rather than repeat,
+the existing entity-field-derived edges. Draft relationships are shown locally
+with their own state and source details; hiding drafts hides these edges and
+their target annotations even when both endpoints are curated. Graph position
+never upgrades association to clinical efficacy, current regulatory approval, or
+ownership. Patent associations still require the separate explicit product
+connection and patent-office documentary checks in the source policy.
+
+Stable islands uses direct `treats`/`investigated_for` edges for therapy placement.
+Manufacturer, investment, procedure-use, and trial paths cannot create new
+therapy targets. Shared target abbreviations are appended to node labels; “study”
+marks investigation and * marks a separately source-scoped target. Node/edge
+review remains independent from the rendering prototype.

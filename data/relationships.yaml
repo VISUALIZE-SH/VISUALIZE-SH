@@ -1,0 +1,450 @@
+# Source-located additional Atlas relationships. All additions remain draft.
+# See docs/ATLAS_RELATIONSHIP_RESEARCH_2026-10-15.md and schema/relationship.schema.json.
+- id: rel-sapien3-tavi
+  source: dev-sapien-3
+  target: proc-tavi
+  relationship: used_in
+  scope: >-
+    SAPIEN 3 model 9600TFX is a transcatheter aortic valve used in TAVR. This historical PMA does not
+    establish current labeling for all Ultra or RESILIA variants.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031B.pdf
+      title: P140031 Summary of Safety and Effectiveness Data
+      publisher: FDA
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: regulator
+      locator: >-
+        pp.1–2, II Indications for Use and V Device Description; index TAVR procedure; FDA decision/notice
+        date 2015-06-17; document publication date not stated
+- id: rel-evolut-tavi
+  source: dev-evolut
+  target: proc-tavi
+  relationship: used_in
+  scope: >-
+    CoreValve/Evolut lineage is used for TAVR; P130021/S174 specifically covers PRO+, FX and FX+ redo-TAVR use
+    in its defined population. No cross-generation specification transfer.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174B.pdf
+      title: P130021S174 Summary of Safety and Effectiveness Data
+      publisher: FDA
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: regulator
+      locator: >-
+        pp.1–2, General Information and II Indications for Use; FDA decision/notice date 2025-08-28; document
+        publication date not stated
+- id: rel-siegel-tavi
+  source: dev-siegel-tavr
+  target: proc-tavi
+  relationship: used_in
+  scope: >-
+    SIEGEL is an investigational transcatheter aortic valve replacement platform; this is a procedure
+    association, not commercial authorization.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/
+      title: SIEGEL Transcatheter Aortic Valve
+      publisher: MiRus
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: company
+      locator: Product description and investigational-use notice
+- id: rel-mitraclip-mteer
+  source: dev-mitraclip
+  target: proc-mitral-teer
+  relationship: used_in
+  scope: >-
+    MitraClip repairs the mitral valve by percutaneous leaflet approximation. This record describes the
+    original P100009 system; it does not transfer dimensions or outcomes to G4.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.accessdata.fda.gov/cdrh_docs/pdf10/P100009B.pdf
+      title: P100009 Summary of Safety and Effectiveness Data
+      publisher: FDA
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: regulator
+      locator: >-
+        pp.1–2, II Indications for Use and V Device Description (leaflet coaptation); FDA decision/notice date
+        2013-10-24; document publication date not stated
+- id: rel-pascal-mteer
+  source: dev-pascal
+  target: proc-mitral-teer
+  relationship: used_in
+  scope: >-
+    PASCAL Precision mitral leaflet repair in the P220003 degenerative-MR population; procedure classification
+    only, not authorization of every PASCAL generation.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.accessdata.fda.gov/cdrh_docs/pdf22/P220003B.pdf
+      title: P220003 Summary of Safety and Effectiveness Data
+      publisher: FDA
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: regulator
+      locator: >-
+        pp.1–3, II Indications for Use, V Device Description, VI Alternative Practices and Procedures; FDA
+        decision/notice date 2022-09-14; document publication date not stated
+- id: rel-triclip-tteer
+  source: dev-triclip
+  target: proc-tricuspid-teer
+  relationship: used_in
+  scope: TriClip G4 transcatheter edge-to-edge repair for the symptomatic severe-TR population defined by P230007.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf
+      title: P230007 Summary of Safety and Effectiveness Data
+      publisher: FDA
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: regulator
+      locator: >-
+        pp.1–2, II Indications for Use and V Device Description; FDA decision/notice date 2024-04-01; document
+        publication date not stated
+- id: rel-pascal-tteer-study
+  source: dev-pascal
+  target: proc-tricuspid-teer
+  relationship: used_in
+  scope: >-
+    PASCAL system used for transcatheter tricuspid valve repair in the single-arm CLASP TR early-feasibility
+    study. Investigational US study context; not a US marketing-authorization claim.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://pubmed.ncbi.nlm.nih.gov/37137586/
+      title: 1-Year Outcomes of Transcatheter Tricuspid Valve Repair
+      publisher: JACC / PubMed
+      publishedAt: "2023-05-09"
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: publication
+      locator: "Abstract: Objectives and Conclusions; DOI 10.1016/j.jacc.2023.02.049"
+- id: rel-evoque-ttvr
+  source: dev-evoque
+  target: proc-ttvr
+  relationship: used_in
+  scope: >-
+    EVOQUE transcatheter replacement of the native tricuspid valve in P230013; indication and size scope
+    remain decision-specific.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230013B.pdf
+      title: P230013 Summary of Safety and Effectiveness Data
+      publisher: FDA
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: regulator
+      locator: >-
+        pp.1–2, II Indications for Use and V Device Description; FDA decision/notice date 2024-02-01; document
+        publication date not stated
+- id: rel-tendyne-tmvr
+  source: dev-tendyne
+  target: proc-tmvr
+  relationship: used_in
+  scope: >-
+    Tendyne transcatheter mitral replacement in symptomatic severe mitral dysfunction associated with severe
+    MAC, for patients unsuitable for surgery or TEER (P240042).
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042B.pdf
+      title: P240042 Summary of Safety and Effectiveness Data
+      publisher: FDA
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: regulator
+      locator: >-
+        p.1, II Indications for Use; p.41, Benefit-Risk Determination; FDA decision/notice date 2025-05-23;
+        document publication date not stated
+- id: rel-watchmanflx-laac
+  source: dev-watchman-flx
+  target: proc-laac
+  relationship: used_in
+  scope: >-
+    2020 WATCHMAN FLX percutaneous LAA closure in the nonvalvular-AF population defined by P130013/S035; no
+    transfer to the 2015 FLX iteration or FLX Pro.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S035
+      title: P130013/S035 PMA decision
+      publisher: FDA
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: regulator
+      locator: Approval Order Statement; FDA decision/notice date 2020-07-21; document publication date not stated
+- id: rel-amulet-laac
+  source: dev-amulet
+  target: proc-laac
+  relationship: used_in
+  scope: >-
+    Amplatzer Amulet percutaneous LAA occlusion for the nonvalvular-AF population defined by P200049; no
+    Amulet 360 claim.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf
+      title: P200049 Summary of Safety and Effectiveness Data
+      publisher: FDA
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: regulator
+      locator: >-
+        pp.1–2, II Indications for Use and V Device Description; FDA decision/notice date 2021-08-14; document
+        publication date not stated
+- id: rel-tendyne-mac-ms
+  source: dev-tendyne
+  target: cond-ms
+  relationship: treats
+  scope: >-
+    P240042 indication includes severe mitral stenosis associated with severe mitral annular calcification
+    (MAC), in patients unsuitable for mitral surgery or TEER. This does not establish treatment of all MS
+    etiologies.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042B.pdf
+      title: P240042 Summary of Safety and Effectiveness Data
+      publisher: FDA
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: regulator
+      locator: >-
+        p.1, II Indications for Use; p.41, Benefit-Risk Determination; FDA decision/notice date 2025-05-23;
+        document publication date not stated
+- id: rel-pascal-tr-study
+  source: dev-pascal
+  target: cond-tr
+  relationship: investigated_for
+  scope: >-
+    PASCAL system studied for severe-or-greater TR in CLASP TR (NCT03745313). Single-arm early-feasibility
+    cohort; no US approval or randomized comparative benefit inferred.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://pubmed.ncbi.nlm.nih.gov/37137586/
+      title: 1-Year Outcomes of Transcatheter Tricuspid Valve Repair
+      publisher: JACC / PubMed
+      publishedAt: "2023-05-09"
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: publication
+      locator: "Abstract: Objectives and Conclusions; DOI 10.1016/j.jacc.2023.02.049"
+- id: rel-bsx-mirus-investment
+  source: co-boston-scientific
+  target: co-mirus
+  relationship: invested_in
+  scope: >-
+    Acquired non-voting common equity interests in MiRus; minority investment, distinct from acquisition of
+    the company or its TAVR business.
+  eventDate: "2026-05-15"
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm
+      title: Boston Scientific Form 8-K
+      publisher: Boston Scientific / SEC
+      publishedAt: "2026-05-18"
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: filing
+      locator: Item 8.01, Investment Agreement with MiRus LLC, paragraphs 1–4
+- id: rel-bsx-siegel-option
+  source: co-boston-scientific
+  target: dev-siegel-tavr
+  relationship: option_to_acquire
+  scope: >-
+    Exclusive conditional option to acquire a to-be-formed subsidiary holding assets primarily relating to the
+    MiRus SIEGEL TAVR system. Product endpoint identifies asset scope, not a completed purchase.
+  eventDate: "2026-05-15"
+  notes: >-
+    Exercise depends on clinical/regulatory milestones and closing conditions; this is not acquisition of
+    MiRus.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm
+      title: Boston Scientific Form 8-K
+      publisher: Boston Scientific / SEC
+      publishedAt: "2026-05-18"
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: filing
+      locator: Item 8.01, Investment Agreement with MiRus LLC, paragraphs 1–4
+- id: rel-edwards-jenavalve-note
+  source: co-edwards
+  target: co-jenavalve
+  relationship: invested_in
+  scope: >-
+    Convertible promissory note investment in January 2026; debt with conversion potential. No conversion or
+    equity control established.
+  eventDate: 2026-01
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm
+      title: Edwards Lifesciences 2025 Form 10-K
+      publisher: Edwards Lifesciences / SEC
+      publishedAt: "2026-02-25"
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: filing
+      locator: Note 9, printed p.70, opening paragraph
+- id: rel-edwards-jenavalve-termination
+  source: co-edwards
+  target: co-jenavalve
+  relationship: terminated_acquisition
+  scope: >-
+    The July 2024 merger agreement was terminated January 14, 2026 following an injunction. JenaValve must not
+    be represented as an acquired Edwards subsidiary.
+  eventDate: "2026-01-14"
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm
+      title: Edwards Lifesciences 2025 Form 10-K
+      publisher: Edwards Lifesciences / SEC
+      publishedAt: "2026-02-25"
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: filing
+      locator: Note 9, printed p.69, JenaValve merger and injunction paragraphs
+- id: rel-edwards-endotronix-acquisition
+  source: co-edwards
+  target: co-endotronix
+  relationship: acquired
+  scope: >-
+    Acquired all remaining outstanding Endotronix shares on August 19, 2024. This is completion, distinct from
+    the July 2024 option exercise.
+  eventDate: "2024-08-19"
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm
+      title: Edwards Lifesciences 2025 Form 10-K
+      publisher: Edwards Lifesciences / SEC
+      publishedAt: "2026-02-25"
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: filing
+      locator: Note 10, printed p.73, Endotronix, opening two paragraphs
+- id: rel-edwards-vectorious-acquisition
+  source: co-edwards
+  target: co-vectorious
+  relationship: acquired
+  scope: >-
+    Acquired the remaining noncontrolling interest during 2025, increasing ownership from 61% to 100%; control
+    had already been obtained in February 2023.
+  eventDate: "2025"
+  notes: Exact 2025 completion month/day unspecified.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm
+      title: Edwards Lifesciences 2025 Form 10-K
+      publisher: Edwards Lifesciences / SEC
+      publishedAt: "2026-02-25"
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: filing
+      locator: Note 9, printed p.70–71, Purchase of noncontrolling interest
+- id: rel-edwards-corvia-investor
+  source: co-edwards
+  target: co-corvia
+  relationship: invested_in
+  scope: Corvia publicly names Edwards Lifesciences among its funders.
+  notes: Undated disclosure; investment date, instrument and holding percentage unspecified.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: https://corviamedical.com/about-us/investors/
+      title: Investors
+      publisher: Corvia Medical
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: company
+      locator: Investors, opening paragraph naming funders
+- id: rel-t45-mitria-portfolio
+  source: co-t45-labs
+  target: co-mitria-medical
+  relationship: portfolio_includes
+  scope: >-
+    Mitria is explicitly identified as a T45 Labs portfolio company, with development, financing, operational
+    and clinical/regulatory support.
+  eventDate: "2026-09-29"
+  notes: >-
+    Incubation/portfolio association; no equity percentage, completed investment transaction or acquisition
+    inferred.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: >-
+        https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html
+      title: Mitria Medical Partners with T45 Labs to Advance Novel Mitral Valve Repair Therapy
+      publisher: T45 Labs / PR Newswire
+      publishedAt: "2026-09-29"
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: company
+      locator: Opening two body paragraphs; About Mitria Medical; About T45 Labs portfolio paragraph
+- id: rel-t45-vahaticor-portfolio
+  source: co-t45-labs
+  target: co-vahaticor
+  relationship: portfolio_includes
+  scope: VahatiCor is named in the current T45 Labs portfolio.
+  notes: >-
+    Portfolio association only; T45 Fund-I is a distinct legal investor. Initial investment date and holding
+    percentage unknown.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-15"
+  sources:
+    - url: >-
+        https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html
+      title: Mitria Medical Partners with T45 Labs to Advance Novel Mitral Valve Repair Therapy
+      publisher: T45 Labs / PR Newswire
+      publishedAt: "2026-09-29"
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: company
+      locator: Opening two body paragraphs; About Mitria Medical; About T45 Labs portfolio paragraph
+    - url: https://t45labs.com/about/
+      title: About T45 Labs
+      publisher: T45 Labs
+      retrievedAt: "2026-10-15"
+      access: public
+      sourceType: investor
+      locator: >-
+        Our Investment Funds → T45 Fund-I company list; VahatiCor named. T45 fund and incubator legal
+        identities remain distinct.

@@ -1,5 +1,5 @@
 // Compact key for the visual encodings that the filter checkboxes don't cover.
-export default function Legend() {
+export default function Legend({ stableIslands = false }: { stableIslands?: boolean }) {
   return (
     <section className="filter-group legend">
       <h3>Legend</h3>
@@ -8,8 +8,7 @@ export default function Legend() {
           <span className="legend-swatch node-size" /> Node size = connections
         </li>
         <li>
-          <span className="legend-swatch pulse">A<small>a</small></span> Label size
-          = pulse (recent news attention)
+          <span className="legend-swatch pulse">A<small>a</small></span> Label size = pulse (recent news attention)
         </li>
         <li>
           <span className="legend-swatch dashed" /> Dashed = draft / uncurated
@@ -23,10 +22,11 @@ export default function Legend() {
         </li>
       </ul>
       <p className="filter-note">
-        Click a node to focus its neighborhood; click empty space to reset.
-        <strong> Drag</strong> a node to pull its neighbors along. Zoom in for more
-        labels — highest-pulse topics show first.
+        Click a node to focus its neighborhood; click empty space to reset.{' '}
+        {stableIslands ? 'Condition hubs stay fixed. Shared therapy labels list their targets; “study” marks investigation and * marks a source-scoped target.' : 'Drag a node to pull its neighbors along.'}
+        {' '}Select a node for relationship evidence. Zoom in for more labels.
       </p>
+      {stableIslands && <p className="filter-note">Purple links = targets. Teal = procedure use. Gold links = corporate context. Dashed links = draft evidence; dotted links mark investigation, options and terminated agreements. Companies and trials remain visible.</p>}
     </section>
   )
 }

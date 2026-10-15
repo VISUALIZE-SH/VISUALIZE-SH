@@ -2783,3 +2783,33 @@
       estimated overall participants, not a numerical efficacy result. Commercial registry describes a 28 mm
       bioprosthesis; exact marketed generation unresolved. Estimated start is not verified initiation. No
       posted results extracted.
+
+# --- Original publication-backed early-feasibility context ---
+- id: trial-clasp-tr-efs
+  type: trial
+  name: CLASP TR Early Feasibility Study
+  nctId: NCT03745313
+  phase: Early feasibility
+  status: unknown
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-pascal
+  resultStatus: positive
+  outcomeSummary: >-
+    Published single-arm one-year follow-up of PASCAL tricuspid repair; reported improvements do not establish
+    randomized comparative benefit.
+  references:
+    - https://pubmed.ncbi.nlm.nih.gov/37137586/
+  links:
+    - label: Original study abstract
+      url: https://pubmed.ncbi.nlm.nih.gov/37137586/
+  curation:
+    status: draft
+    lastUpdated: '2026-10-15'
+    sources:
+      - https://pubmed.ncbi.nlm.nih.gov/37137586/
+    notes: >-
+      Kodali et al., JACC 2023-05-09, DOI 10.1016/j.jacc.2023.02.049, Abstract Objectives/Methods/Conclusions
+      explicitly identify CLASP TR EFS and NCT03745313. Abstract-only extraction; current registry recruitment
+      status, exact start date and full-text subgroups not verified. No timeline date added.
