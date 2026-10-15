@@ -26,7 +26,7 @@ const DataWorkspace = lazy(() => import('./components/intelligence/DataWorkspace
 const NewsWorkspace = lazy(() => import('./components/intelligence/NewsWorkspace'))
 const ALL_REGULATORY: RegulatoryStatus[] = ['approved', 'investigational', 'discontinued', 'unknown']
 const NO_HIGHLIGHTS = new Set<string>()
-const ATLAS_LAYOUTS: LayoutName[] = ['fcose', 'timeline']
+const ATLAS_LAYOUTS: LayoutName[] = ['islands', 'timeline']
 
 export default function App() {
   const [graph, setGraph] = useState<GraphData | null>(null)
@@ -40,7 +40,7 @@ export default function App() {
   const [activeRegulatory, setActiveRegulatory] = useState<Set<RegulatoryStatus>>(new Set(ALL_REGULATORY))
   const [showDrafts, setShowDrafts] = useState(true)
   const [materialQuery, setMaterialQuery] = useState('')
-  const [layoutName, setLayoutName] = useState<LayoutName>('fcose')
+  const [layoutName, setLayoutName] = useState<LayoutName>('islands')
   const [aboutOpen, setAboutOpen] = useState(false)
   const [newsletterOpen, setNewsletterOpen] = useState(false)
   const [leftOpen, setLeftOpen] = useState(false)
@@ -92,6 +92,7 @@ export default function App() {
 
   const nodes = useMemo(() => graph?.elements.nodes.map(n => n.data) ?? [], [graph])
   const edges = useMemo(() => graph?.elements.edges.map(e => e.data) ?? [], [graph])
+  const reviewedVisibleEdges = useMemo(() => edges.filter(edge => showDrafts || !edge.isDraft), [edges, showDrafts])
   const nodesById = useMemo(() => new Map(nodes.map(n => [n.id, n])), [nodes])
   const conditions = nodes.filter(node => node.group === 'condition')
   const scoped = useMemo(() => intelligence ? scopeToCondition(intelligence, workspace.conditionId) : null, [intelligence, workspace.conditionId])
@@ -160,17 +161,18 @@ export default function App() {
   const conditionMatches = useMemo(() => new Set(nodes.filter(node => {
     if (!workspace.conditionId) return true
     const entity = node.entity
-    return entity.id === workspace.conditionId || (entity.type === 'therapy' && entity.treats.includes(workspace.conditionId)) || (entity.type === 'trial' && entity.conditions.includes(workspace.conditionId))
-  }).map(node => node.id)), [nodes, workspace.conditionId])
+    return entity.id === workspace.conditionId || (entity.type === 'therapy' && (entity.treats.includes(workspace.conditionId) || reviewedVisibleEdges.some(edge => edge.source === entity.id && edge.target === workspace.conditionId && ['treats', 'investigated_for'].includes(edge.relationship)))) || (entity.type === 'trial' && entity.conditions.includes(workspace.conditionId))
+  }).map(node => node.id)), [nodes, reviewedVisibleEdges, workspace.conditionId])
   // Graph visibility is a separate projection from the evidence scope above:
   // hiding a node must not silently remove an intelligence record.
+  const isolatedNodeId = workspace.isolateNode ? workspace.nodeId : ''
   const visibleIds = useMemo(() => new Set(nodes.filter(node => {
-    if (workspace.isolateNode && workspace.nodeId) return node.id === workspace.nodeId
+    if (isolatedNodeId) return node.id === isolatedNodeId
     if (!conditionMatches.has(node.id) || !activeGroups.has(node.group) || (node.isDraft && !showDrafts)) return false
     if (normalizedMaterialQuery && !materialMatches.has(node.id)) return false
     if (workspace.atlasTopic && !atlasTopicMatchIds.has(node.id)) return false
     return node.entity.type !== 'therapy' || activeRegulatory.has(node.entity.regulatoryStatus)
-  }).map(node => node.id)), [nodes, conditionMatches, activeGroups, showDrafts, normalizedMaterialQuery, materialMatches, workspace.atlasTopic, atlasTopicMatchIds, activeRegulatory, workspace.nodeId, workspace.isolateNode])
+  }).map(node => node.id)), [nodes, conditionMatches, activeGroups, showDrafts, normalizedMaterialQuery, materialMatches, workspace.atlasTopic, atlasTopicMatchIds, activeRegulatory, isolatedNodeId])
   const legacyNews = useMemo(() => graph?.news.filter(item => !workspace.conditionId || item.relevantNodeIds.some(id => conditionMatches.has(id))) ?? [], [graph, workspace.conditionId, conditionMatches])
 
   function openVersion(id: string, mode: AppMode = 'atlas') {
@@ -187,18 +189,18 @@ export default function App() {
     setActiveRegulatory(new Set(ALL_REGULATORY))
     setShowDrafts(true)
     setMaterialQuery('')
-    setLayoutName('fcose')
+    setLayoutName('islands')
     setSelectedId(null)
     navigate({ mode: 'atlas', atlasView: 'graph', atlasTopic: topic, conditionId: '', versionId: '', nodeId: '', isolateNode: false })
   }
   function openGraphNode(id: string) {
     setSelectedId(id)
-    setLayoutName('fcose')
+    setLayoutName('islands')
     navigate({ mode: 'atlas', atlasView: 'graph', atlasTopic: '', versionId: '', nodeId: id, isolateNode: false })
   }
   function handleModeChange(mode: AppMode) {
     if (mode === 'atlas') {
-      setLayoutName('fcose')
+      setLayoutName('islands')
       navigate({ mode, atlasView: 'graph', atlasTopic: '', nodeId: '', versionId: '', newsFrom: '', newsTo: '', searchQuery: '', isolateNode: false })
       return
     }
@@ -246,7 +248,7 @@ export default function App() {
   }
   function handleSearch(id: string) {
     setSelectedId(id)
-    setLayoutName('fcose')
+    setLayoutName('islands')
     navigate({ mode: 'atlas', atlasView: 'graph', atlasTopic: '', nodeId: id, isolateNode: true, versionId: '', conditionId: '' })
   }
   function handleNewsSelect(item: NewsItem) {
@@ -315,19 +317,19 @@ export default function App() {
     </div>
     {graphView ? <div className="body">
       <aside className={`sidebar ${leftOpen ? 'open' : ''} ${filtersCollapsed ? 'collapsed' : ''}`} aria-hidden={filtersCollapsed && !leftOpen}>
-        <Filters meta={graph.meta} activeGroups={activeGroups} onToggleGroup={toggleGroup} activeRegulatory={activeRegulatory} onToggleRegulatory={toggleRegulatory}
+        <Filters stableIslands={layoutName === 'islands'} meta={graph.meta} activeGroups={activeGroups} onToggleGroup={toggleGroup} activeRegulatory={activeRegulatory} onToggleRegulatory={toggleRegulatory}
           showDrafts={showDrafts} onToggleDrafts={() => setShowDrafts(value => !value)} materialQuery={materialQuery} onMaterialQueryChange={setMaterialQuery}
           materialMatchCount={materialMatches.size} materialSuggestions={materialSuggestions} onReset={resetFilters} />
       </aside>
       {leftOpen && <div className="scrim" onClick={() => setLeftOpen(false)} />}
       <main className="canvas-wrap">
         <Suspense fallback={<p className="workspace-loading">Loading graph…</p>}>
-          <GraphCanvas graph={graph} visibleIds={visibleIds} selectedId={selectedId} highlightedIds={workspace.atlasTopic ? atlasTopicMatchIds : NO_HIGHLIGHTS} layoutName={layoutName} accessibilityMode={accessibilityMode} darkMode={darkMode} onSelect={handleSelect} onCyReady={cy => { cyRef.current = cy }} />
+          <GraphCanvas graph={graph} visibleIds={visibleIds} showDrafts={showDrafts} selectedId={selectedId} highlightedIds={workspace.atlasTopic ? atlasTopicMatchIds : NO_HIGHLIGHTS} layoutName={layoutName} accessibilityMode={accessibilityMode} darkMode={darkMode} onSelect={handleSelect} onCyReady={cy => { cyRef.current = cy }} />
         </Suspense>
-        <div className="canvas-disclaimer">Current landscape. Dated evidence and labeling are in Profiles.</div>
+        <div className="canvas-disclaimer">{layoutName === 'islands' ? 'Stable condition islands · shared targets on node labels · select for sources' : 'Current landscape. Dated evidence and labeling are in Profiles.'}</div>
       </main>
       {selectedNode && <div className="atlas-detail-stack">
-        <DetailPanel intelligence={intelligence} node={selectedNode} nodesById={nodesById} edges={edges} onSelect={handleSelect} onClose={() => handleSelect(null)} newsItems={selectedNodeNews} onNewsSelect={handleNewsSelect} profileLinks={profileLinks} landscapeProfileHref={landscapeProfileHref} onProfileNavigate={openProfileLink} />
+        <DetailPanel intelligence={intelligence} node={selectedNode} nodesById={nodesById} edges={reviewedVisibleEdges} onSelect={handleSelect} onClose={() => handleSelect(null)} newsItems={selectedNodeNews} onNewsSelect={handleNewsSelect} profileLinks={profileLinks} landscapeProfileHref={landscapeProfileHref} onProfileNavigate={openProfileLink} />
       </div>}
     </div> : <main className="workspace-content" id="workspace-main">
       <Suspense fallback={<p className="workspace-loading" role="status">Loading evidence…</p>}>

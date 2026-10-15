@@ -1,0 +1,162 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Documentary graph relationship",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "source",
+    "target",
+    "relationship",
+    "scope",
+    "curation",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^rel-[a-z0-9-]+$"
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "relationship": {
+      "enum": [
+        "treats",
+        "used_in",
+        "investigated_for",
+        "invested_in",
+        "acquired",
+        "option_to_acquire",
+        "portfolio_includes",
+        "terminated_acquisition"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "eventDate": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "string",
+          "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"
+        },
+        {
+          "type": "string",
+          "pattern": "^[0-9]{4}$"
+        }
+      ]
+    },
+    "notes": {
+      "type": "string",
+      "minLength": 1
+    },
+    "curation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "lastUpdated"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "draft",
+            "curated"
+          ]
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date"
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "title",
+          "publisher",
+          "retrievedAt",
+          "access",
+          "sourceType",
+          "locator"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publishedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]{4}$"
+              }
+            ]
+          },
+          "retrievedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "access": {
+            "enum": [
+              "public",
+              "licensed"
+            ]
+          },
+          "sourceType": {
+            "enum": [
+              "regulator",
+              "registry",
+              "publication",
+              "filing",
+              "company",
+              "investor",
+              "patent-office"
+            ]
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@ import type {
   GraphNodeData,
   NewsItem,
 } from '../types/entities'
-import { GROUP_META } from '../graph/palette'
+import { GROUP_META, RELATIONSHIP_LABEL, REVERSE_RELATIONSHIP_LABEL } from '../graph/palette'
 import { lifecycleLabel } from '../data/lifecycle'
 import { formatTimelineDate, TIMELINE_BASIS_LABELS } from '../graph/timeline'
 import NewsFeed from './NewsFeed'
@@ -61,20 +61,8 @@ function relatedGroups(
     if (e.source !== id && e.target !== id) continue
     const isSource = e.source === id
     const other = isSource ? e.target : e.source
-    switch (e.relationship) {
-      case 'treats':
-        push(isSource ? 'Treats' : 'Treated by', other)
-        break
-      case 'made_by':
-        push(isSource ? 'Made by' : 'Makes', other)
-        break
-      case 'evaluates':
-        push(isSource ? 'Evaluates' : 'Evaluated in', other)
-        break
-      case 'studies':
-        push(isSource ? 'Condition studied' : 'Studied in', other)
-        break
-    }
+    const label = isSource ? RELATIONSHIP_LABEL[e.relationship] : REVERSE_RELATIONSHIP_LABEL[e.relationship]
+    push(label.charAt(0).toUpperCase() + label.slice(1), other)
   }
   return [...groups.entries()]
     .sort((a, b) => REL_ORDER.indexOf(a[0]) - REL_ORDER.indexOf(b[0]))
@@ -396,6 +384,7 @@ export default function DetailPanel({
   const e = node.entity
   const meta = GROUP_META[node.group]
   const groups = relatedGroups(node.id, edges, nodesById)
+  const evidenceEdges = edges.filter(edge => edge.evidence && (edge.source === node.id || edge.target === node.id))
   function followProfile(event: MouseEvent<HTMLAnchorElement>, href: string) {
     if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
     event.preventDefault()
@@ -440,6 +429,21 @@ export default function DetailPanel({
           <PulseMeter value={node.pulse} />
           <Facts e={e} />
         </section>
+
+        {evidenceEdges.length > 0 && <section className="detail-section relationship-evidence">
+          <h3>Relationship evidence</h3>
+          {evidenceEdges.map(edge => <article key={edge.id}>
+            <strong>{edge.source === node.id ? RELATIONSHIP_LABEL[edge.relationship] : REVERSE_RELATIONSHIP_LABEL[edge.relationship]} · {nodesById.get(edge.source === node.id ? edge.target : edge.source)?.label}</strong>
+            <p><span className="badge draft">{edge.evidence!.curation.status}</span>{edge.evidence!.eventDate && ` · ${edge.evidence!.eventDate}`}</p>
+            <p>{edge.evidence!.scope}</p>
+            {edge.evidence!.notes && <p className="note">{edge.evidence!.notes}</p>}
+            {edge.evidence!.sources.map(source => <div key={source.url}>
+              <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>
+              <small>{source.publisher}{source.publishedAt ? ` · ${source.publishedAt}` : ' · undated'} · {source.access} · retrieved {source.retrievedAt}</small>
+              <small>{source.locator}</small>
+            </div>)}
+          </article>)}
+        </section>}
 
         <DeviceMaterials e={e} />
 

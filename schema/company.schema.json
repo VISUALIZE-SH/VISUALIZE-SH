@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "company.schema.json",
   "title": "Company",
-  "description": "An organization that develops or markets a therapy.",
+  "description": "An organization that develops, markets, invests in, or incubates therapies and their developers.",
   "type": "object",
   "additionalProperties": false,
   "required": ["id", "type", "name", "curation"],
