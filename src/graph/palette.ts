@@ -44,4 +44,18 @@ export const RELATIONSHIP_LABEL: Record<EdgeRelationship, string> = {
   made_by: 'made by',
   evaluates: 'evaluates',
   studies: 'studies',
+  used_in: 'used in procedure',
+  investigated_for: 'investigated for',
+  invested_in: 'invested in',
+  acquired: 'acquired',
+  option_to_acquire: 'conditional acquisition option',
+  portfolio_includes: 'portfolio includes',
+  terminated_acquisition: 'terminated acquisition agreement',
+}
+
+export const REVERSE_RELATIONSHIP_LABEL: Record<EdgeRelationship, string> = {
+  treats: 'Targeted by', made_by: 'Makes', evaluates: 'Evaluated in', studies: 'Studied in',
+  used_in: 'Devices / therapies used', investigated_for: 'Investigational therapies',
+  invested_in: 'Investment from', acquired: 'Acquired by', option_to_acquire: 'Conditional option held by',
+  portfolio_includes: 'Portfolio of', terminated_acquisition: 'Terminated acquisition with',
 }

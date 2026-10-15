@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-10-15T03:53:11.171Z",
-    "lastUpdated": "2026-10-14",
+    "generatedAt": "2026-10-15T17:16:14.238Z",
+    "lastUpdated": "2026-10-15",
     "counts": {
       "condition": 21,
       "device": 91,
       "pharmaceutical": 17,
-      "procedure": 8,
+      "procedure": 13,
       "digital": 10,
-      "company": 70,
-      "trial": 99
+      "company": 71,
+      "trial": 100
     },
-    "draftCount": 289,
-    "total": 316,
+    "draftCount": 296,
+    "total": 323,
     "newsCount": 92,
     "latestNewsDate": "2026-10-12"
   },
@@ -1819,7 +1819,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 37,
+          "degree": 38,
           "pulse": 7,
           "entity": {
             "id": "cond-af",
@@ -2219,7 +2219,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 30,
+          "degree": 32,
           "pulse": 8,
           "entity": {
             "id": "cond-mr",
@@ -2254,7 +2254,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 4,
           "pulse": 3,
           "entity": {
             "id": "cond-ms",
@@ -2288,7 +2288,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 22,
+          "degree": 26,
           "pulse": 9,
           "entity": {
             "id": "cond-tr",
@@ -2524,7 +2524,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 4,
+          "degree": 6,
           "pulse": 0,
           "entity": {
             "id": "dev-siegel-tavr",
@@ -3856,7 +3856,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 5,
+          "degree": 6,
           "pulse": 6,
           "timelineDate": "2020-07-21",
           "entity": {
@@ -3931,7 +3931,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 5,
+          "degree": 6,
           "pulse": 0,
           "timelineDate": "2013-01-01",
           "entity": {
@@ -5783,7 +5783,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 6,
+          "degree": 7,
           "pulse": 9,
           "timelineDate": "2014-01-01",
           "entity": {
@@ -5860,7 +5860,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 4,
+          "degree": 5,
           "pulse": 8,
           "timelineDate": "2007-03-01",
           "entity": {
@@ -6147,7 +6147,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 3,
+          "degree": 5,
           "pulse": 5,
           "timelineDate": "2020-01-01",
           "entity": {
@@ -6362,7 +6362,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 7,
+          "degree": 8,
           "pulse": 7,
           "timelineDate": "2008-01-01",
           "entity": {
@@ -6437,7 +6437,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 4,
+          "degree": 8,
           "pulse": 7,
           "timelineDate": "2019-02-01",
           "entity": {
@@ -6504,7 +6504,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 3,
+          "degree": 4,
           "pulse": 8,
           "timelineDate": "2020-04-01",
           "entity": {
@@ -6688,7 +6688,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 4,
+          "degree": 5,
           "pulse": 8,
           "timelineDate": "2023-10-01",
           "entity": {
@@ -6982,7 +6982,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 5,
           "pulse": 6,
           "entity": {
             "id": "proc-tavi",
@@ -9618,13 +9618,189 @@
       },
       {
         "data": {
+          "id": "proc-mitral-teer",
+          "label": "Mitral transcatheter edge-to-edge repair (M-TEER)",
+          "group": "procedure",
+          "category": "Structural heart procedure",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 5,
+          "entity": {
+            "id": "proc-mitral-teer",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "name": "Mitral transcatheter edge-to-edge repair (M-TEER)",
+            "subtype": "Structural heart procedure",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Procedure category; authorization and patient eligibility apply to specific devices and jurisdictions.",
+            "description": "Catheter-based mitral leaflet approximation. Product indications remain population- and generation-specific.",
+            "pulse": 5,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf22/P220003B.pdf"
+              ],
+              "notes": "Procedure taxonomy addition; source locator: pp.1–3, II Indications for Use, V Device Description, VI Alternative Practices and Procedures. See docs/ATLAS_RELATIONSHIP_RESEARCH_2026-10-15.md. No blanket device authorization inferred."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-tricuspid-teer",
+          "label": "Tricuspid transcatheter edge-to-edge repair (T-TEER)",
+          "group": "procedure",
+          "category": "Structural heart procedure",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 5,
+          "entity": {
+            "id": "proc-tricuspid-teer",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "name": "Tricuspid transcatheter edge-to-edge repair (T-TEER)",
+            "subtype": "Structural heart procedure",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Procedure category; authorization and patient eligibility apply to specific devices and jurisdictions.",
+            "description": "Catheter-based tricuspid leaflet approximation; distinguish investigational PASCAL use from the cited TriClip G4 decision.",
+            "pulse": 5,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf"
+              ],
+              "notes": "Procedure taxonomy addition; source locator: pp.1–2, II Indications for Use and V Device Description. See docs/ATLAS_RELATIONSHIP_RESEARCH_2026-10-15.md. No blanket device authorization inferred."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-tmvr",
+          "label": "Transcatheter mitral valve replacement (TMVR)",
+          "group": "procedure",
+          "category": "Structural heart procedure",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 5,
+          "entity": {
+            "id": "proc-tmvr",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "name": "Transcatheter mitral valve replacement (TMVR)",
+            "subtype": "Structural heart procedure",
+            "treats": [
+              "cond-mr",
+              "cond-ms"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Procedure category; authorization and patient eligibility apply to specific devices and jurisdictions.",
+            "description": "Catheter-based mitral valve replacement. The cited Tendyne decision includes MR/MS only with severe mitral annular calcification and defined eligibility.",
+            "pulse": 5,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042B.pdf"
+              ],
+              "notes": "Procedure taxonomy addition; source locator: p.1, II Indications for Use; p.41, Benefit-Risk Determination. See docs/ATLAS_RELATIONSHIP_RESEARCH_2026-10-15.md. No blanket device authorization inferred."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-ttvr",
+          "label": "Transcatheter tricuspid valve replacement (TTVR)",
+          "group": "procedure",
+          "category": "Structural heart procedure",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "entity": {
+            "id": "proc-ttvr",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "name": "Transcatheter tricuspid valve replacement (TTVR)",
+            "subtype": "Structural heart procedure",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Procedure category; authorization and patient eligibility apply to specific devices and jurisdictions.",
+            "description": "Catheter-based replacement of the native tricuspid valve; cited EVOQUE indication is symptomatic severe TR despite optimal medical therapy.",
+            "pulse": 5,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230013B.pdf"
+              ],
+              "notes": "Procedure taxonomy addition; source locator: pp.1–2, II Indications for Use and V Device Description. See docs/ATLAS_RELATIONSHIP_RESEARCH_2026-10-15.md. No blanket device authorization inferred."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-laac",
+          "label": "Percutaneous left atrial appendage closure (LAAC)",
+          "group": "procedure",
+          "category": "Structural heart procedure",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 5,
+          "entity": {
+            "id": "proc-laac",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "name": "Percutaneous left atrial appendage closure (LAAC)",
+            "subtype": "Structural heart procedure",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Procedure category; authorization and patient eligibility apply to specific devices and jurisdictions.",
+            "description": "Catheter-based LAA closure for selected patients with nonvalvular AF; eligibility differs across product labels.",
+            "pulse": 5,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S035"
+              ],
+              "notes": "Procedure taxonomy addition; source locator: Approval Order Statement. See docs/ATLAS_RELATIONSHIP_RESEARCH_2026-10-15.md. No blanket device authorization inferred."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-mirus",
           "label": "MiRus LLC",
           "group": "company",
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 1,
+          "degree": 2,
           "pulse": 0,
           "entity": {
             "id": "co-mirus",
@@ -9652,7 +9828,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 4,
+          "degree": 6,
           "pulse": 0,
           "entity": {
             "id": "co-boston-scientific",
@@ -9813,7 +9989,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 1,
+          "degree": 2,
           "pulse": 3,
           "entity": {
             "id": "co-corvia",
@@ -9872,7 +10048,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 10,
+          "degree": 15,
           "pulse": 7,
           "entity": {
             "id": "co-edwards",
@@ -9915,7 +10091,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 1,
+          "degree": 2,
           "pulse": 0,
           "entity": {
             "id": "co-endotronix",
@@ -9973,7 +10149,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 1,
+          "degree": 2,
           "pulse": 0,
           "entity": {
             "id": "co-vectorious",
@@ -10366,7 +10542,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 1,
+          "degree": 3,
           "pulse": 8,
           "entity": {
             "id": "co-jenavalve",
@@ -10487,7 +10663,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 1,
+          "degree": 2,
           "pulse": 3,
           "entity": {
             "id": "co-vahaticor",
@@ -11300,7 +11476,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 1,
+          "degree": 2,
           "pulse": 4,
           "entity": {
             "id": "co-mitria-medical",
@@ -11724,6 +11900,34 @@
               "notes": "Owner approved the previewed content and publication on 2026-10-12. WOR-30 missing-entry documentary draft: About opening; Market final paragraph; Contact address; original corporate seed disclosure. Public sources retrieved 2026-10-12. Undated web pages have no inferred publication date. Recent funding lead unverified."
             },
             "pulse": 5
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-t45-labs",
+          "label": "T45 Labs",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "entity": {
+            "id": "co-t45-labs",
+            "type": "company",
+            "name": "T45 Labs",
+            "website": "https://t45labs.com/",
+            "description": "Medtech incubator whose disclosed portfolio includes Mitria Medical and VahatiCor. Portfolio association does not establish a particular fund holding or acquisition.",
+            "pulse": 5,
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15",
+              "sources": [
+                "https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html"
+              ],
+              "notes": "T45 Labs release dated 2026-09-29: opening partnership paragraphs and About T45 Labs portfolio paragraph. No legal fund entity, ownership percentage or investment date inferred."
+            }
           }
         }
       },
@@ -16653,6 +16857,51 @@
             }
           }
         }
+      },
+      {
+        "data": {
+          "id": "trial-clasp-tr-efs",
+          "label": "CLASP TR Early Feasibility Study",
+          "group": "trial",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-clasp-tr-efs",
+            "type": "trial",
+            "name": "CLASP TR Early Feasibility Study",
+            "nctId": "NCT03745313",
+            "phase": "Early feasibility",
+            "status": "unknown",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-pascal"
+            ],
+            "resultStatus": "positive",
+            "outcomeSummary": "Published single-arm one-year follow-up of PASCAL tricuspid repair; reported improvements do not establish randomized comparative benefit.",
+            "references": [
+              "https://pubmed.ncbi.nlm.nih.gov/37137586/"
+            ],
+            "links": [
+              {
+                "label": "Original study abstract",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/37137586/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/37137586/"
+              ],
+              "notes": "Kodali et al., JACC 2023-05-09, DOI 10.1016/j.jacc.2023.02.049, Abstract Objectives/Methods/Conclusions explicitly identify CLASP TR EFS and NCT03745313. Abstract-only extraction; current registry recruitment status, exact start date and full-text subgroups not verified. No timeline date added."
+            }
+          }
+        }
       }
     ],
     "edges": [
@@ -18738,6 +18987,54 @@
       },
       {
         "data": {
+          "id": "proc-mitral-teer__treats__cond-mr",
+          "source": "proc-mitral-teer",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-tricuspid-teer__treats__cond-tr",
+          "source": "proc-tricuspid-teer",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-tmvr__treats__cond-mr",
+          "source": "proc-tmvr",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-tmvr__treats__cond-ms",
+          "source": "proc-tmvr",
+          "target": "cond-ms",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-ttvr__treats__cond-tr",
+          "source": "proc-ttvr",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-laac__treats__cond-af",
+          "source": "proc-laac",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "trial-siegel-star__evaluates__dev-siegel-tavr",
           "source": "trial-siegel-star",
           "target": "dev-siegel-tavr",
@@ -20454,6 +20751,735 @@
           "source": "trial-highlife-embrace",
           "target": "cond-mr",
           "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-clasp-tr-efs__evaluates__dev-pascal",
+          "source": "trial-clasp-tr-efs",
+          "target": "dev-pascal",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-clasp-tr-efs__studies__cond-tr",
+          "source": "trial-clasp-tr-efs",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sapien-3__used_in__proc-tavi",
+          "source": "dev-sapien-3",
+          "target": "proc-tavi",
+          "relationship": "used_in",
+          "evidence": {
+            "id": "rel-sapien3-tavi",
+            "source": "dev-sapien-3",
+            "target": "proc-tavi",
+            "relationship": "used_in",
+            "scope": "SAPIEN 3 model 9600TFX is a transcatheter aortic valve used in TAVR. This historical PMA does not establish current labeling for all Ultra or RESILIA variants.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031B.pdf",
+                "title": "P140031 Summary of Safety and Effectiveness Data",
+                "publisher": "FDA",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "regulator",
+                "locator": "pp.1–2, II Indications for Use and V Device Description; index TAVR procedure; FDA decision/notice date 2015-06-17; document publication date not stated"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "dev-evolut__used_in__proc-tavi",
+          "source": "dev-evolut",
+          "target": "proc-tavi",
+          "relationship": "used_in",
+          "evidence": {
+            "id": "rel-evolut-tavi",
+            "source": "dev-evolut",
+            "target": "proc-tavi",
+            "relationship": "used_in",
+            "scope": "CoreValve/Evolut lineage is used for TAVR; P130021/S174 specifically covers PRO+, FX and FX+ redo-TAVR use in its defined population. No cross-generation specification transfer.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174B.pdf",
+                "title": "P130021S174 Summary of Safety and Effectiveness Data",
+                "publisher": "FDA",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "regulator",
+                "locator": "pp.1–2, General Information and II Indications for Use; FDA decision/notice date 2025-08-28; document publication date not stated"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "dev-siegel-tavr__used_in__proc-tavi",
+          "source": "dev-siegel-tavr",
+          "target": "proc-tavi",
+          "relationship": "used_in",
+          "evidence": {
+            "id": "rel-siegel-tavi",
+            "source": "dev-siegel-tavr",
+            "target": "proc-tavi",
+            "relationship": "used_in",
+            "scope": "SIEGEL is an investigational transcatheter aortic valve replacement platform; this is a procedure association, not commercial authorization.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/",
+                "title": "SIEGEL Transcatheter Aortic Valve",
+                "publisher": "MiRus",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "company",
+                "locator": "Product description and investigational-use notice"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitraclip__used_in__proc-mitral-teer",
+          "source": "dev-mitraclip",
+          "target": "proc-mitral-teer",
+          "relationship": "used_in",
+          "evidence": {
+            "id": "rel-mitraclip-mteer",
+            "source": "dev-mitraclip",
+            "target": "proc-mitral-teer",
+            "relationship": "used_in",
+            "scope": "MitraClip repairs the mitral valve by percutaneous leaflet approximation. This record describes the original P100009 system; it does not transfer dimensions or outcomes to G4.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf10/P100009B.pdf",
+                "title": "P100009 Summary of Safety and Effectiveness Data",
+                "publisher": "FDA",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "regulator",
+                "locator": "pp.1–2, II Indications for Use and V Device Description (leaflet coaptation); FDA decision/notice date 2013-10-24; document publication date not stated"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "dev-pascal__used_in__proc-mitral-teer",
+          "source": "dev-pascal",
+          "target": "proc-mitral-teer",
+          "relationship": "used_in",
+          "evidence": {
+            "id": "rel-pascal-mteer",
+            "source": "dev-pascal",
+            "target": "proc-mitral-teer",
+            "relationship": "used_in",
+            "scope": "PASCAL Precision mitral leaflet repair in the P220003 degenerative-MR population; procedure classification only, not authorization of every PASCAL generation.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/P220003B.pdf",
+                "title": "P220003 Summary of Safety and Effectiveness Data",
+                "publisher": "FDA",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "regulator",
+                "locator": "pp.1–3, II Indications for Use, V Device Description, VI Alternative Practices and Procedures; FDA decision/notice date 2022-09-14; document publication date not stated"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "dev-triclip__used_in__proc-tricuspid-teer",
+          "source": "dev-triclip",
+          "target": "proc-tricuspid-teer",
+          "relationship": "used_in",
+          "evidence": {
+            "id": "rel-triclip-tteer",
+            "source": "dev-triclip",
+            "target": "proc-tricuspid-teer",
+            "relationship": "used_in",
+            "scope": "TriClip G4 transcatheter edge-to-edge repair for the symptomatic severe-TR population defined by P230007.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf",
+                "title": "P230007 Summary of Safety and Effectiveness Data",
+                "publisher": "FDA",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "regulator",
+                "locator": "pp.1–2, II Indications for Use and V Device Description; FDA decision/notice date 2024-04-01; document publication date not stated"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "dev-pascal__used_in__proc-tricuspid-teer",
+          "source": "dev-pascal",
+          "target": "proc-tricuspid-teer",
+          "relationship": "used_in",
+          "evidence": {
+            "id": "rel-pascal-tteer-study",
+            "source": "dev-pascal",
+            "target": "proc-tricuspid-teer",
+            "relationship": "used_in",
+            "scope": "PASCAL system used for transcatheter tricuspid valve repair in the single-arm CLASP TR early-feasibility study. Investigational US study context; not a US marketing-authorization claim.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://pubmed.ncbi.nlm.nih.gov/37137586/",
+                "title": "1-Year Outcomes of Transcatheter Tricuspid Valve Repair",
+                "publisher": "JACC / PubMed",
+                "publishedAt": "2023-05-09",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "publication",
+                "locator": "Abstract: Objectives and Conclusions; DOI 10.1016/j.jacc.2023.02.049"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "dev-evoque__used_in__proc-ttvr",
+          "source": "dev-evoque",
+          "target": "proc-ttvr",
+          "relationship": "used_in",
+          "evidence": {
+            "id": "rel-evoque-ttvr",
+            "source": "dev-evoque",
+            "target": "proc-ttvr",
+            "relationship": "used_in",
+            "scope": "EVOQUE transcatheter replacement of the native tricuspid valve in P230013; indication and size scope remain decision-specific.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230013B.pdf",
+                "title": "P230013 Summary of Safety and Effectiveness Data",
+                "publisher": "FDA",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "regulator",
+                "locator": "pp.1–2, II Indications for Use and V Device Description; FDA decision/notice date 2024-02-01; document publication date not stated"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tendyne__used_in__proc-tmvr",
+          "source": "dev-tendyne",
+          "target": "proc-tmvr",
+          "relationship": "used_in",
+          "evidence": {
+            "id": "rel-tendyne-tmvr",
+            "source": "dev-tendyne",
+            "target": "proc-tmvr",
+            "relationship": "used_in",
+            "scope": "Tendyne transcatheter mitral replacement in symptomatic severe mitral dysfunction associated with severe MAC, for patients unsuitable for surgery or TEER (P240042).",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042B.pdf",
+                "title": "P240042 Summary of Safety and Effectiveness Data",
+                "publisher": "FDA",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "regulator",
+                "locator": "p.1, II Indications for Use; p.41, Benefit-Risk Determination; FDA decision/notice date 2025-05-23; document publication date not stated"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "dev-watchman-flx__used_in__proc-laac",
+          "source": "dev-watchman-flx",
+          "target": "proc-laac",
+          "relationship": "used_in",
+          "evidence": {
+            "id": "rel-watchmanflx-laac",
+            "source": "dev-watchman-flx",
+            "target": "proc-laac",
+            "relationship": "used_in",
+            "scope": "2020 WATCHMAN FLX percutaneous LAA closure in the nonvalvular-AF population defined by P130013/S035; no transfer to the 2015 FLX iteration or FLX Pro.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S035",
+                "title": "P130013/S035 PMA decision",
+                "publisher": "FDA",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "regulator",
+                "locator": "Approval Order Statement; FDA decision/notice date 2020-07-21; document publication date not stated"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "dev-amulet__used_in__proc-laac",
+          "source": "dev-amulet",
+          "target": "proc-laac",
+          "relationship": "used_in",
+          "evidence": {
+            "id": "rel-amulet-laac",
+            "source": "dev-amulet",
+            "target": "proc-laac",
+            "relationship": "used_in",
+            "scope": "Amplatzer Amulet percutaneous LAA occlusion for the nonvalvular-AF population defined by P200049; no Amulet 360 claim.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf",
+                "title": "P200049 Summary of Safety and Effectiveness Data",
+                "publisher": "FDA",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "regulator",
+                "locator": "pp.1–2, II Indications for Use and V Device Description; FDA decision/notice date 2021-08-14; document publication date not stated"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tendyne__treats__cond-ms",
+          "source": "dev-tendyne",
+          "target": "cond-ms",
+          "relationship": "treats",
+          "evidence": {
+            "id": "rel-tendyne-mac-ms",
+            "source": "dev-tendyne",
+            "target": "cond-ms",
+            "relationship": "treats",
+            "scope": "P240042 indication includes severe mitral stenosis associated with severe mitral annular calcification (MAC), in patients unsuitable for mitral surgery or TEER. This does not establish treatment of all MS etiologies.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042B.pdf",
+                "title": "P240042 Summary of Safety and Effectiveness Data",
+                "publisher": "FDA",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "regulator",
+                "locator": "p.1, II Indications for Use; p.41, Benefit-Risk Determination; FDA decision/notice date 2025-05-23; document publication date not stated"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "dev-pascal__investigated_for__cond-tr",
+          "source": "dev-pascal",
+          "target": "cond-tr",
+          "relationship": "investigated_for",
+          "evidence": {
+            "id": "rel-pascal-tr-study",
+            "source": "dev-pascal",
+            "target": "cond-tr",
+            "relationship": "investigated_for",
+            "scope": "PASCAL system studied for severe-or-greater TR in CLASP TR (NCT03745313). Single-arm early-feasibility cohort; no US approval or randomized comparative benefit inferred.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://pubmed.ncbi.nlm.nih.gov/37137586/",
+                "title": "1-Year Outcomes of Transcatheter Tricuspid Valve Repair",
+                "publisher": "JACC / PubMed",
+                "publishedAt": "2023-05-09",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "publication",
+                "locator": "Abstract: Objectives and Conclusions; DOI 10.1016/j.jacc.2023.02.049"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "co-boston-scientific__invested_in__co-mirus",
+          "source": "co-boston-scientific",
+          "target": "co-mirus",
+          "relationship": "invested_in",
+          "evidence": {
+            "id": "rel-bsx-mirus-investment",
+            "source": "co-boston-scientific",
+            "target": "co-mirus",
+            "relationship": "invested_in",
+            "scope": "Acquired non-voting common equity interests in MiRus; minority investment, distinct from acquisition of the company or its TAVR business.",
+            "eventDate": "2026-05-15",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm",
+                "title": "Boston Scientific Form 8-K",
+                "publisher": "Boston Scientific / SEC",
+                "publishedAt": "2026-05-18",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "filing",
+                "locator": "Item 8.01, Investment Agreement with MiRus LLC, paragraphs 1–4"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "co-boston-scientific__option_to_acquire__dev-siegel-tavr",
+          "source": "co-boston-scientific",
+          "target": "dev-siegel-tavr",
+          "relationship": "option_to_acquire",
+          "evidence": {
+            "id": "rel-bsx-siegel-option",
+            "source": "co-boston-scientific",
+            "target": "dev-siegel-tavr",
+            "relationship": "option_to_acquire",
+            "scope": "Exclusive conditional option to acquire a to-be-formed subsidiary holding assets primarily relating to the MiRus SIEGEL TAVR system. Product endpoint identifies asset scope, not a completed purchase.",
+            "eventDate": "2026-05-15",
+            "notes": "Exercise depends on clinical/regulatory milestones and closing conditions; this is not acquisition of MiRus.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm",
+                "title": "Boston Scientific Form 8-K",
+                "publisher": "Boston Scientific / SEC",
+                "publishedAt": "2026-05-18",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "filing",
+                "locator": "Item 8.01, Investment Agreement with MiRus LLC, paragraphs 1–4"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "co-edwards__invested_in__co-jenavalve",
+          "source": "co-edwards",
+          "target": "co-jenavalve",
+          "relationship": "invested_in",
+          "evidence": {
+            "id": "rel-edwards-jenavalve-note",
+            "source": "co-edwards",
+            "target": "co-jenavalve",
+            "relationship": "invested_in",
+            "scope": "Convertible promissory note investment in January 2026; debt with conversion potential. No conversion or equity control established.",
+            "eventDate": "2026-01",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm",
+                "title": "Edwards Lifesciences 2025 Form 10-K",
+                "publisher": "Edwards Lifesciences / SEC",
+                "publishedAt": "2026-02-25",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "filing",
+                "locator": "Note 9, printed p.70, opening paragraph"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "co-edwards__terminated_acquisition__co-jenavalve",
+          "source": "co-edwards",
+          "target": "co-jenavalve",
+          "relationship": "terminated_acquisition",
+          "evidence": {
+            "id": "rel-edwards-jenavalve-termination",
+            "source": "co-edwards",
+            "target": "co-jenavalve",
+            "relationship": "terminated_acquisition",
+            "scope": "The July 2024 merger agreement was terminated January 14, 2026 following an injunction. JenaValve must not be represented as an acquired Edwards subsidiary.",
+            "eventDate": "2026-01-14",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm",
+                "title": "Edwards Lifesciences 2025 Form 10-K",
+                "publisher": "Edwards Lifesciences / SEC",
+                "publishedAt": "2026-02-25",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "filing",
+                "locator": "Note 9, printed p.69, JenaValve merger and injunction paragraphs"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "co-edwards__acquired__co-endotronix",
+          "source": "co-edwards",
+          "target": "co-endotronix",
+          "relationship": "acquired",
+          "evidence": {
+            "id": "rel-edwards-endotronix-acquisition",
+            "source": "co-edwards",
+            "target": "co-endotronix",
+            "relationship": "acquired",
+            "scope": "Acquired all remaining outstanding Endotronix shares on August 19, 2024. This is completion, distinct from the July 2024 option exercise.",
+            "eventDate": "2024-08-19",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm",
+                "title": "Edwards Lifesciences 2025 Form 10-K",
+                "publisher": "Edwards Lifesciences / SEC",
+                "publishedAt": "2026-02-25",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "filing",
+                "locator": "Note 10, printed p.73, Endotronix, opening two paragraphs"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "co-edwards__acquired__co-vectorious",
+          "source": "co-edwards",
+          "target": "co-vectorious",
+          "relationship": "acquired",
+          "evidence": {
+            "id": "rel-edwards-vectorious-acquisition",
+            "source": "co-edwards",
+            "target": "co-vectorious",
+            "relationship": "acquired",
+            "scope": "Acquired the remaining noncontrolling interest during 2025, increasing ownership from 61% to 100%; control had already been obtained in February 2023.",
+            "eventDate": "2025",
+            "notes": "Exact 2025 completion month/day unspecified.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm",
+                "title": "Edwards Lifesciences 2025 Form 10-K",
+                "publisher": "Edwards Lifesciences / SEC",
+                "publishedAt": "2026-02-25",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "filing",
+                "locator": "Note 9, printed p.70–71, Purchase of noncontrolling interest"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "co-edwards__invested_in__co-corvia",
+          "source": "co-edwards",
+          "target": "co-corvia",
+          "relationship": "invested_in",
+          "evidence": {
+            "id": "rel-edwards-corvia-investor",
+            "source": "co-edwards",
+            "target": "co-corvia",
+            "relationship": "invested_in",
+            "scope": "Corvia publicly names Edwards Lifesciences among its funders.",
+            "notes": "Undated disclosure; investment date, instrument and holding percentage unspecified.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://corviamedical.com/about-us/investors/",
+                "title": "Investors",
+                "publisher": "Corvia Medical",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "company",
+                "locator": "Investors, opening paragraph naming funders"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "co-t45-labs__portfolio_includes__co-mitria-medical",
+          "source": "co-t45-labs",
+          "target": "co-mitria-medical",
+          "relationship": "portfolio_includes",
+          "evidence": {
+            "id": "rel-t45-mitria-portfolio",
+            "source": "co-t45-labs",
+            "target": "co-mitria-medical",
+            "relationship": "portfolio_includes",
+            "scope": "Mitria is explicitly identified as a T45 Labs portfolio company, with development, financing, operational and clinical/regulatory support.",
+            "eventDate": "2026-09-29",
+            "notes": "Incubation/portfolio association; no equity percentage, completed investment transaction or acquisition inferred.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html",
+                "title": "Mitria Medical Partners with T45 Labs to Advance Novel Mitral Valve Repair Therapy",
+                "publisher": "T45 Labs / PR Newswire",
+                "publishedAt": "2026-09-29",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "company",
+                "locator": "Opening two body paragraphs; About Mitria Medical; About T45 Labs portfolio paragraph"
+              }
+            ]
+          },
+          "isDraft": true
+        }
+      },
+      {
+        "data": {
+          "id": "co-t45-labs__portfolio_includes__co-vahaticor",
+          "source": "co-t45-labs",
+          "target": "co-vahaticor",
+          "relationship": "portfolio_includes",
+          "evidence": {
+            "id": "rel-t45-vahaticor-portfolio",
+            "source": "co-t45-labs",
+            "target": "co-vahaticor",
+            "relationship": "portfolio_includes",
+            "scope": "VahatiCor is named in the current T45 Labs portfolio.",
+            "notes": "Portfolio association only; T45 Fund-I is a distinct legal investor. Initial investment date and holding percentage unknown.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-15"
+            },
+            "sources": [
+              {
+                "url": "https://www.prnewswire.com/news-releases/mitria-medical-partners-with-t45-labs-to-advance-novel-mitral-valve-repair-therapy-302889421.html",
+                "title": "Mitria Medical Partners with T45 Labs to Advance Novel Mitral Valve Repair Therapy",
+                "publisher": "T45 Labs / PR Newswire",
+                "publishedAt": "2026-09-29",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "company",
+                "locator": "Opening two body paragraphs; About Mitria Medical; About T45 Labs portfolio paragraph"
+              },
+              {
+                "url": "https://t45labs.com/about/",
+                "title": "About T45 Labs",
+                "publisher": "T45 Labs",
+                "retrievedAt": "2026-10-15",
+                "access": "public",
+                "sourceType": "investor",
+                "locator": "Our Investment Funds → T45 Fund-I company list; VahatiCor named. T45 fund and incubator legal identities remain distinct."
+              }
+            ]
+          },
+          "isDraft": true
         }
       }
     ]

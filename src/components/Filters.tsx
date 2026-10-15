@@ -4,6 +4,7 @@ import EntitySwatch from './EntitySwatch'
 import Legend from './Legend'
 
 interface Props {
+  stableIslands?: boolean
   meta: GraphMeta
   activeGroups: Set<NodeGroup>
   onToggleGroup: (g: NodeGroup) => void
@@ -26,6 +27,7 @@ const REGULATORY: { id: RegulatoryStatus; label: string }[] = [
 ]
 
 export default function Filters({
+  stableIslands,
   meta,
   activeGroups,
   onToggleGroup,
@@ -126,7 +128,7 @@ export default function Filters({
         </p>
       </section>
 
-      <Legend />
+      <Legend stableIslands={stableIslands} />
     </div>
   )
 }

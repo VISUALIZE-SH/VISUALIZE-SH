@@ -128,7 +128,7 @@ test('co-dated timeline entities use height-aware vertical tracks and filtered n
   cy.destroy()
 })
 
-test('timeline framing lowers the zoom floor enough to fit a small viewport, then restores it for clustered view', () => {
+test('Islands starts closer while Fit and Timeline retain a reachable full overview', () => {
   let minZoom = 0.12
   let zoom = 0.12
   const scratch = new Map<string, unknown>()
@@ -147,8 +147,12 @@ test('timeline framing lowers the zoom floor enough to fit a small viewport, the
   frameLayout(fake, 'timeline')
   assert.equal(zoom, 0.06, 'fit can go below the usual floor on a narrow viewport')
   assert.equal(minZoom, 0.06, 'the fitted timeline remains reachable while zooming out')
-  frameLayout(fake, 'fcose')
-  assert.equal(minZoom, 0.12, 'clustered view restores the normal minimum zoom')
-  frameLayout(fake, 'fcose')
-  assert.equal(minZoom, 0.12, 'repeated clustered framing keeps the normal minimum zoom')
+  frameLayout(fake, 'islands', { readable: true })
+  assert.equal(zoom, 0.525, 'Islands starts at 75% of the original prototype zoom')
+  assert.equal(minZoom, 0.06, 'the full overview stays reachable from the closer starting view')
+  frameLayout(fake, 'islands')
+  assert.equal(zoom, 0.06, 'explicit Fit shows the full network')
+  frameLayout(fake, 'timeline')
+  assert.equal(zoom, 0.06, 'Timeline still fits its complete time span')
+  assert.equal(minZoom, 0.06, 'switching layouts does not lose the full overview floor')
 })
