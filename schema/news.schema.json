@@ -12,6 +12,7 @@
     "title": { "type": "string", "minLength": 1, "maxLength": 220 },
     "summary": { "type": "string", "minLength": 1, "maxLength": 650 },
     "sourceName": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "contentType": { "type": "string", "enum": ["news", "news-insights", "editorial"], "description": "Explicit presentation category; omitted means ordinary news. Independent of review status." },
     "sourceUrl": { "type": "string", "format": "uri", "pattern": "^https://", "description": "Canonical public HTTPS URL for the cited source." },
     "reviewStatus": { "type": "string", "enum": ["draft", "reviewed"], "description": "New automated research stays draft until a curator approves it for the public feed and newsletter." },
     "lifecycleStatus": { "enum": ["halted", "retired", "recalled"], "description": "Source-verified status covered by this story, for a visible feed tag." },

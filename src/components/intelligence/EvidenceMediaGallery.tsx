@@ -14,12 +14,12 @@ function publicAssetPath(path: string): string {
   return `${base}${path.replace(/^\/+/, '')}`
 }
 
-function SourceLinks({ data, item }: { data: IntelligenceData; item: Provenance }) {
+export function MediaSourceLinks({ data, item }: { data: IntelligenceData; item: Provenance }) {
   return <span className="intel-media-sources">{item.sourceRefs.map((ref) => {
     const source = data.sources.find((entry) => entry.id === ref.sourceId)
     const label = `${source?.publisher ?? ref.sourceId} · ${ref.locator}`
     return source?.url
-      ? <a key={`${ref.sourceId}:${ref.locator}`} href={source.url} target="_blank" rel="noreferrer">{label} ↗</a>
+      ? <a key={`${ref.sourceId}:${ref.locator}`} href={source.url} title={source.title} target="_blank" rel="noreferrer">{label} ↗</a>
       : <span key={`${ref.sourceId}:${ref.locator}`}>{label}</span>
   })}</span>
 }
@@ -40,7 +40,7 @@ export default function EvidenceMediaGallery({
       <img src={publicAssetPath(item.assetPath)} alt={item.alt} loading="lazy" /><figcaption>
         <div className="intel-media-caption-head"><strong>{item.title}</strong>{item.reviewStatus === 'draft' && <span className="intel-badge intel-badge-draft">Draft</span>}</div>
         <p>{item.versionIds.map((id) => data.versions.find((version) => version.id === id)?.name ?? id).join(', ')} · {panelLabels[item.panel]}</p><p>{item.caption}</p>
-        <p className="intel-media-locator">{item.page ? `Page ${item.page}` : 'Page not recorded'}{item.figure ? ` · ${item.figure}` : ''}</p><SourceLinks data={data} item={item} />
+        <p className="intel-media-locator">{item.page ? `Page ${item.page}` : 'Original figure image'}{item.figure ? ` · ${item.figure}` : ''}</p><MediaSourceLinks data={data} item={item} />
       </figcaption></figure>)}</div></section>
   return <section className={`intel-media-gallery${compact ? ' intel-media-gallery-compact' : ''}`} aria-label={heading}>
     <header className="intel-media-gallery-head"><h3>{heading}</h3><span>{media.length} {media.length === 1 ? 'figure' : 'figures'}</span></header>
@@ -51,8 +51,8 @@ export default function EvidenceMediaGallery({
         <figcaption>
           <div className="intel-media-caption-head"><strong>{item.title}</strong>{item.reviewStatus === 'draft' && <span className="intel-badge intel-badge-draft">Draft</span>}</div>
           <p>{item.caption}</p>
-          <p className="intel-media-locator">{item.page ? `Page ${item.page}` : 'Page not recorded'}{item.figure ? ` · ${item.figure}` : ''}</p>
-          <SourceLinks data={data} item={item} />
+          <p className="intel-media-locator">{item.page ? `Page ${item.page}` : 'Original figure image'}{item.figure ? ` · ${item.figure}` : ''}</p>
+          <MediaSourceLinks data={data} item={item} />
         </figcaption>
       </figure>)}</div>
     </section>)}</section>

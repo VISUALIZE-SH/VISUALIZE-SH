@@ -4,6 +4,12 @@ Start here when taking over this checkout. This is a static React/Vite site; no
 application server or database is required. Node 20 and the lockfile are used in
 GitHub Actions.
 
+Read [`../AGENTS.md`](../AGENTS.md), [`LINEAR_WORKFLOW.md`](LINEAR_WORKFLOW.md),
+and [`SOURCE_CURATION_POLICY.md`](SOURCE_CURATION_POLICY.md) for contributor
+rules. Track app/catalog work, recurring digest operations, and owner-authored
+articles in their respective existing Linear projects. The source policy applies
+to all three; podcasts and interviews are not factual evidence.
+
 ## First local run
 
 ```sh
@@ -35,6 +41,7 @@ on someone else's behalf without reviewing the diff.
 | Product specs, FDA decisions for a class | `data/intelligence/catalog/<class>.yaml` | Same intelligence build; format in `data/intelligence/catalog/README.md` |
 | Consolidated references and exact citation metadata | `data/intelligence/catalog/references-*.yaml`, `data/intelligence/citations.yaml` | Same intelligence build; direct patent connections required; methodology in `docs/REFERENCE_BIBLIOGRAPHY.md` |
 | Local flagship preview selection | `data/editorial-issues.yaml` | `npm run newsletter:local` → `public/previews/newsletter/` |
+| Manual News Insights draft | `prompts/news-insights.md`, `data/news-insights/<date>.yaml` | `npm run news-insights:prepare` / `news-insights:render` → ignored `artifacts/news-insights/`; [workflow](NEWS_INSIGHTS_WORKFLOW.md) |
 | Weekly public/email digest | `data/news.yaml` | `npm run newsletter:render -- --date YYYY-MM-DD` → `public/digests/` |
 | Shareable UI filter or selection | `src/data/workspace-state.ts`, then `src/App.tsx` | `scripts/workspace-state.test.ts` and browser back/forward checks |
 
@@ -89,6 +96,9 @@ Zoho for an already created or delivered campaign.
 - `docs/EVIDENCE_PIPELINE.md` and `docs/COMPARATIVE_DATA_MODEL.md`: evidence
   compilation, provenance, and configuration-level data rules.
 - `docs/NEWSLETTER_LOCAL_READINESS.md`: draft preview and preflight behavior.
+- `docs/NEWS_INSIGHTS_WORKFLOW.md` and `prompts/news-insights.md`: manual
+  run-to-run analytical editions, flexible intervals, multi-model review, and
+  local article/template/News badge previews. No automatic schedule.
 - `docs/LOCAL_NEWSLETTER_WORKFLOW.md`, `docs/ZOHO_CAMPAIGNS_SETUP.md`, and
   `docs/SECURITY_REVIEW.md`: local weekly operations and rollout gates.
 - `docs/LOCAL_IMPLEMENTATION_STATUS.md`: dated implementation and verification
