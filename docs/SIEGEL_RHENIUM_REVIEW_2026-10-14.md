@@ -1,16 +1,19 @@
 # SIEGEL valves and rhenium medical alloys
 
-**Local draft for owner/curator approval · researched October 14, 2026 (Los Angeles).**
-Documentary verification is complete for the scoped additions below; human factual
-review remains pending. No publication, push, delivery, or external issue update.
+**Owner-approved research · researched and approved October 14, 2026 (Los Angeles).**
+The owner reviewed the local preview, approved the changes and authorized push, PR
+review and merge. [WOR-32](https://linear.app/workspace-visualize-sh/issue/WOR-32/integrate-approved-siegel-research-and-pending-workspace-changes)
+tracks integration. Confirmed source-located records are reviewed/curated; research
+holds below remain unresolved. No newsletter delivery or new schedule is authorized.
 
-## Proposed additions
+## Approved additions
 
 The local catalog now includes MiRus, SIEGEL TAVR, its aortic product family and
 2026 disclosed configuration, US early feasibility and STAR trials, source-located
-design claims, registry snapshots and supporting references. All new records are
-draft. Formal hardware revision identifiers remain unknown; trials therefore map
-to the family rather than an assumed exact generation. Existing owner edits remain.
+design claims, registry snapshots and supporting references. The owner approved
+these records with their stated limits; the two SIEGEL News items are reviewed.
+Formal hardware revision identifiers remain unknown; trials therefore map to the
+family rather than an assumed exact generation. Existing owner edits remain.
 
 [Open SIEGEL in Atlas](http://localhost:5174/?mode=atlas&atlas=profiles&version=ver-siegel-tavr-2026&jurisdiction=all)
 or [inspect the Data table](http://localhost:5174/?mode=data&q=SIEGEL&jurisdiction=all).
@@ -129,7 +132,7 @@ Podcasts, interviews, recordings and transcripts were excluded throughout.
 
 ## Approval scope and handoff
 
-Review the draft device/trial/specification/reference additions, with these holds:
+The approved device/trial/specification/reference additions retain these holds:
 exact frame ratio; formal generation mapping; full clinical manuscript; clean
 pooled safety timepoint; long-term/comparative clinical benefit; mitral/tricuspid
 asset identities/materials; Beall primary confirmation; Mo-14Re correction text.
@@ -138,7 +141,8 @@ not evidence that the tested alloy is Siegel's exact material.
 
 Local files: `data/intelligence/catalog/siegel.yaml`, targeted additions in
 `data/{companies,therapies,trials}.yaml`, `data/intelligence/pilot.yaml` and regenerated
-public payloads. The pending issue proposal is in `docs/LINEAR_WORKFLOW.md`.
+public payloads. Issue reconciliation is recorded in `docs/LINEAR_WORKFLOW.md`.
 Validation and the task-only change manifest are recorded in ignored
-`artifacts/siegel-review-2026-10-14/`. Human approval and any later publication
-remain separate actions.
+`artifacts/siegel-review-2026-10-14/`. The owner approval covers this research and
+repository release. The News Insights article remains a draft and newsletter
+delivery remains outside this approval.

@@ -8,13 +8,13 @@
   website: https://www.mirusmed.com/
   description: Developer of the investigational SIEGEL aortic valve and MoRe molybdenum–rhenium biomaterials.
   curation:
-    status: draft
+    status: curated
     lastUpdated: '2026-10-14'
     sources:
       - https://www.mirusmed.com/
       - https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm
     notes: >-
-      Local documentary review only. SEC Form 8-K Item 8.01 records an investment agreement and conditional TAVR acquisition
+      Owner approved the previewed record on 2026-10-14; documentary limitations remain. SEC Form 8-K Item 8.01 records an investment agreement and conditional TAVR acquisition
       option; this is not evidence of completed acquisition. Unnamed mitral/tricuspid assets have unverified materials.
 
 - id: co-boston-scientific
@@ -1119,3 +1119,107 @@
     notes: >-
       FDA identifies Daxor Corporation as applicant; company is identified as sponsor in its own corporate
       disclosures. Product details use FDA submissions, not promotional outcome claims.
+
+# WOR-30 company-transaction research: owner-approved publication; retained limits are recorded below.
+- id: co-highlife
+  type: company
+  name: HighLife SAS
+  hq: Paris, France
+  website: https://www.highlifemedical.com/
+  description: >-
+    Structural heart company founded in 2010, with a U.S. facility in Irvine, California. Stefan Pilz became
+    CEO effective August 1, 2024. HighLife announced a €80 million ($90+ million) financing on September 22,
+    2026.
+  pulse: 8
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - >-
+        https://www.highlifemedical.com/highlife-raises-90-million-to-start-its-us-pivotal-study-and-accelerate-commercial-expansion-in-europe/
+      - https://www.sectoral.com/PDF/PE%20News/Highlife_news_2024-07-09.pdf
+    notes: >-
+      Owner approved the previewed content and publication on 2026-10-12. Funding announcement is an original
+      corporate disclosure, not a clinical source. Georg Börtlein was named founder/CEO in the June 2024
+      release; he is not the current CEO. CEO appointment: original July 9 release, PDF p.1 opening paragraph.
+      Funding: opening paragraph and About HighLife. Financing completion date beyond announcement date not
+      disclosed.
+
+- id: co-ultrasight
+  type: company
+  name: UltraSight
+  website: https://ultrasight.com/
+  description: Developer of cardiac ultrasound workflow software.
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - >-
+        https://ultrasight.com/ultrasight-raises-24-million-to-scale-its-ai-guided-cardiac-workflow-platform-across-u-s-health-systems/
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223347.pdf
+    notes: >-
+      Owner approved the previewed content and publication on 2026-10-12. WOR-30: original corporate
+      disclosure, About UltraSight; FDA K223347 applicant. Public documents retrieved 2026-10-12. Corporate
+      identity only; no inferred founding year or funding total.
+  pulse: 5
+
+- id: co-lubdub
+  type: company
+  name: Lubdub Technologies Pty Ltd
+  hq: Perth / Melbourne, Australia
+  website: https://www.lubdub.ai/
+  description: Develops an integrated cardiac-health platform combining ECG, cardiac biomarkers and echocardiography.
+  pulse: 5
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.lubdub.ai/
+      - https://www.heartfoundation.org.au/catalyst/heart-first-initiative
+    notes: >-
+      Owner approved the previewed content and publication on 2026-10-12. Company identity: manufacturer
+      footer and headquarters section. Funding amount/currency/date remain unverified in an eligible original
+      written disclosure; no funding assertion included.
+
+- id: co-respiree
+  type: company
+  name: Respiree Pte Ltd
+  hq: Singapore
+  website: https://www.respiree.com/
+  description: >-
+    Develops cardio-respiratory sensors and digital-care platforms. September 2026 disclosure announces
+    international investors joining its Series A syndicate.
+  pulse: 6
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223681.pdf
+      - >-
+        https://www.globenewswire.com/news-release/2026/09/22/3365926/0/en/respiree-extends-series-a-syndicate-with-addition-of-international-investors-to-support-continued-global-growth.html
+    notes: >-
+      Owner approved the previewed content and publication on 2026-10-12. Legal sponsor/address: K223681 PDFp4
+      Sponsor. Corporate event: GN2026-09-21 opening paragraphs; company round amount not disclosed. FDA
+      records establish sensor authorization only, not a platform-wide AI/HF approval.
+
+- id: co-conkay-medical
+  type: company
+  name: ConKay Medical Systems
+  hq: Pleasanton, California, United States
+  website: https://www.conkaymedical.com/
+  description: Early-stage developer of devices for valvular regurgitation; initial focus is the tricuspid valve.
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.conkaymedical.com/
+      - https://www.conkaymedical.com/market
+      - https://www.conkaymedical.com/contact
+      - >-
+        https://www.businesswire.com/news/home/20240318732658/en/ConKay-Medical-Systems-Raises-$1.8M-in-Oversubscribed-Seed-Funding-Round
+    notes: >-
+      Owner approved the previewed content and publication on 2026-10-12. WOR-30 missing-entry documentary
+      draft: About opening; Market final paragraph; Contact address; original corporate seed disclosure.
+      Public sources retrieved 2026-10-12. Undated web pages have no inferred publication date. Recent funding
+      lead unverified.
+  pulse: 5

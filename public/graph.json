@@ -1,22 +1,228 @@
 {
   "meta": {
-    "generatedAt": "2026-10-15T03:45:43.687Z",
+    "generatedAt": "2026-10-15T03:53:11.171Z",
     "lastUpdated": "2026-10-14",
     "counts": {
       "condition": 21,
-      "device": 86,
+      "device": 91,
       "pharmaceutical": 17,
       "procedure": 8,
-      "digital": 7,
-      "company": 65,
-      "trial": 93
+      "digital": 10,
+      "company": 70,
+      "trial": 99
     },
-    "draftCount": 288,
-    "total": 297,
-    "newsCount": 67,
-    "latestNewsDate": "2026-10-05"
+    "draftCount": 289,
+    "total": 316,
+    "newsCount": 92,
+    "latestNewsDate": "2026-10-12"
   },
   "news": [
+    {
+      "id": "news-2026-10-12-acacia-hcm-additional-hfsa-analyses",
+      "publishedAt": "2026-10-12",
+      "title": "Cytokinetics reports additional ACACIA-HCM analyses presented at HFSA",
+      "summary": "Cytokinetics reported additional ACACIA-HCM analyses at HFSA, covering composite exercise performance, responder domains, dose titration and safety in non-obstructive HCM. The written release is sponsor reporting; the underlying HFSA abstracts were not located. Non-obstructive use remains investigational, distinct from the approved adult obstructive-HCM indication; the release also reports systolic dysfunction and heart-failure events.",
+      "sourceName": "Cytokinetics, Incorporated",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/12/3379213/35409/en/cytokinetics-announces-additional-data-from-acacia-hcm-presented-at-the-hfsa-annual-scientific-meeting-2026.html",
+      "topicTags": [
+        "HCM",
+        "clinical evidence",
+        "pharmaceutical",
+        "HFSA 2026"
+      ],
+      "relevantNodeIds": [
+        "rx-aficamten",
+        "cond-hcm",
+        "co-cytokinetics",
+        "trial-acacia-hcm"
+      ],
+      "additionalSources": [
+        {
+          "label": "HFSA 2026 late-breaking program (presentation titles and schedule)",
+          "url": "https://hfsa.org/asm/late-breaking-clinical-research-2026"
+        },
+        {
+          "label": "ACACIA-HCM primary results, NEJM",
+          "url": "https://doi.org/10.1056/NEJMoa2603021"
+        },
+        {
+          "label": "ACACIA-HCM global efficacy analysis, Circulation",
+          "url": "https://doi.org/10.1161/CIRCULATIONAHA.126.082026"
+        }
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-11-acoramidis-independent-ehr-comparison",
+      "publishedAt": "2026-10-11",
+      "title": "BridgeBio reports an independent EHR comparison of acoramidis and tafamidis in ATTR-CM",
+      "summary": "BridgeBio announced HFSA presentation of an independent retrospective Epic COSMOS electronic-health-record comparison of patients newly initiating acoramidis or tafamidis, reporting an association between acoramidis and lower adverse-outcome rates. This sponsor-disclosed observational result is not a randomized head-to-head treatment effect; residual confounding and limited follow-up remain, and the full study was described as under journal peer review. Quantitative outcomes are omitted pending an accessible original study or abstract.",
+      "sourceName": "BridgeBio Pharma, Inc.",
+      "sourceUrl": "https://investor.bridgebio.com/news/news-details/2026/Acoramidis-Associated-with-Significantly-Improved-Clinical-Outcomes-Versus-Tafamidis-in-ATTR-CM-in-an-Independent-Real-World-Study-of-U-S--Electronic-Health-Records/default.aspx",
+      "topicTags": [
+        "ATTR-CM",
+        "real-world evidence",
+        "pharmaceutical",
+        "HFSA 2026"
+      ],
+      "relevantNodeIds": [
+        "rx-acoramidis",
+        "rx-tafamidis",
+        "cond-attr-cm",
+        "co-bridgebio"
+      ],
+      "additionalSources": [
+        {
+          "label": "HFSA-hosted copy of the BridgeBio announcement",
+          "url": "https://www.hfsa.org/acoramidis-associated-significantly-improved-clinical-outcomes-versus-tafamidis-attr-cm-independent"
+        },
+        {
+          "label": "Earlier peer-reviewed Komodo claims analysis (distinct dataset and study)",
+          "url": "https://doi.org/10.1007/s40119-026-00476-2"
+        },
+        {
+          "label": "HFSA announcement of the planned presentations (October 6)",
+          "url": "https://investor.bridgebio.com/news/news-details/2026/BridgeBio-to-Present-New-Acoramidis-Data-Including-Independent-Comparative-Real-World-EHR-Data-at-the-HFSA-Annual-Scientific-Meeting-2026/default.aspx"
+        }
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-11-tovinontrine-cycle-phase2",
+      "publishedAt": "2026-10-11",
+      "title": "Cardurion reports dose-dependent HFrEF biomarker results for tovinontrine; HFpEF trial misses NT-proBNP signal",
+      "summary": "Cardurion reported that investigational PDE9 inhibitor tovinontrine reduced NT-proBNP at two lower doses in the Phase 2 CYCLE-1 REF HFrEF trial, with no benefit at the highest dose. CYCLE-2 PEF found no significant NT-proBNP change at that dose in HFpEF. These sponsor-reported biomarker findings do not establish hospitalization or survival benefit.",
+      "sourceName": "Cardurion Pharmaceuticals",
+      "sourceUrl": "https://cardurion.com/cardurion-pharmaceuticals-presents-phase-2-results-for-tovinontrine-crd-750-a-pde9-inhibitor-as-a-novel-treatment-for-heart-failure/",
+      "additionalSources": [
+        {
+          "label": "CYCLE-1 REF registry",
+          "url": "https://clinicaltrials.gov/study/NCT06215911"
+        },
+        {
+          "label": "CYCLE-2 PEF registry",
+          "url": "https://clinicaltrials.gov/study/NCT06215586"
+        },
+        {
+          "label": "HRA Cycle-1 REF documentary summary",
+          "url": "https://www.hra.nhs.uk/planning-and-improving-research/application-summaries/research-summaries/cycle-1-ref/"
+        }
+      ],
+      "topicTags": [
+        "heart failure",
+        "HFrEF",
+        "HFpEF",
+        "PDE9 inhibition",
+        "Phase 2"
+      ],
+      "relevantNodeIds": [
+        "rx-tovinontrine",
+        "trial-cycle-1-ref",
+        "trial-cycle-2-pef",
+        "cond-hfref",
+        "cond-hfpef"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-09-affinia-aftx-201-hfsa-upbeat",
+      "publishedAt": "2026-10-09",
+      "title": "Affinia announces HFSA presentation featuring AFTX-201 and UPBEAT BAG3 DCM trial",
+      "summary": "Affinia announced an HFSA 2026 oral presentation on AFTX-201 and its Phase 1/2 UPBEAT trial in BAG3-associated DCM, scheduled October 10, and a company-sponsored event on October 11. The release describes an investigational program and trial population; its animal-model statements are preclinical and are not evidence of human benefit.",
+      "sourceName": "Affinia Therapeutics",
+      "sourceUrl": "https://affiniatx.com/affinia-therapeutics-aftx-201-and-upbeat-clinical-trial-in-bag3-dcm-featured-at-the-heart-failure-society-of-america-hfsa-annual-scientific-meeting-2026/",
+      "topicTags": [
+        "gene therapy",
+        "dilated cardiomyopathy",
+        "BAG3",
+        "clinical trial"
+      ],
+      "relevantNodeIds": [
+        "co-affinia-therapeutics",
+        "rx-aftx-201",
+        "trial-upbeat-aftx-201",
+        "cond-bag3-dcm"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-09-bayer-hfsa-reveal",
+      "publishedAt": "2026-10-09",
+      "title": "Bayer schedules REVEAL early-detection post-hoc analysis at HFSA",
+      "summary": "Bayer announced an October 11 late-breaking post-hoc REVEAL analysis about possible early cardiac amyloidosis detection. The page is dated October 9 with an October 8 release dateline. No inspected written HFSA result abstract supports new outcome numbers.",
+      "sourceName": "Bayer",
+      "sourceUrl": "https://www.bayer.com/en-us/united-states/news-and-stories/2026/heart-failure-data-at-hfsa",
+      "topicTags": [
+        "cardiac amyloidosis",
+        "diagnostic imaging"
+      ],
+      "relevantNodeIds": [
+        "rx-i124-evuzamitide",
+        "trial-reveal-i124",
+        "cond-attr-cm"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-09-clasp-ii-tr-design",
+      "publishedAt": "2026-10-09",
+      "title": "CLASP II TR design paper outlines PASCAL comparison with medical therapy",
+      "summary": "The CLASP II TR design paper describes a 450-participant randomized comparison of PASCAL repair plus medical therapy with medical therapy alone for symptomatic severe tricuspid regurgitation. Its six-month hierarchical endpoint combines clinical events and quality of life. The randomized trial completed enrollment; primary results are expected and are not reported.",
+      "sourceName": "American Heart Journal",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0002870326002899",
+      "topicTags": [
+        "tricuspid regurgitation",
+        "trial design",
+        "transcatheter repair"
+      ],
+      "relevantNodeIds": [
+        "cond-tr",
+        "dev-pascal",
+        "trial-clasp-ii-tr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-09-mitral-stenosis-fsi-energetics",
+      "publishedAt": "2026-10-09",
+      "title": "Patient-specific simulations compare ventricular flow energetics in calcific and rheumatic mitral stenosis",
+      "summary": "A fluid–structure simulation study compared one healthy, one calcific and one rheumatic patient-derived mitral geometry. The calcific case imposed greater modeled ventricular flow-energy burden than the rheumatic case at equivalent cardiac outputs. These proof-of-concept models lack subvalvular structures and direct in-vivo validation; they do not establish patient outcomes or implant performance.",
+      "sourceName": "Annals of Biomedical Engineering",
+      "sourceUrl": "https://link.springer.com/article/10.1007/s10439-026-04364-7",
+      "topicTags": [
+        "mitral stenosis",
+        "computational modeling",
+        "engineering research"
+      ],
+      "relevantNodeIds": [
+        "cond-ms"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-07-pediatric-asd-six-month-remodeling",
+      "publishedAt": "2026-10-07",
+      "title": "Pediatric ASD study reports six-month right-heart remodeling after transcatheter closure",
+      "summary": "A prospective observational study followed 53 children after secundum ASD closure with Amplatzer or Occlutech Figulla Flex II devices. Right-heart measures improved at six months, with functional changes concentrated in defects at least 10 mm. The uncontrolled, single-center findings do not compare the devices or establish long-term benefit.",
+      "sourceName": "BMC Cardiovascular Disorders",
+      "sourceUrl": "https://link.springer.com/article/10.1186/s12872-026-06789-3",
+      "additionalSources": [
+        {
+          "label": "Publisher accepted PDF",
+          "url": "https://link.springer.com/content/pdf/10.1186/s12872-026-06789-3_reference.pdf"
+        }
+      ],
+      "topicTags": [
+        "ASD",
+        "pediatric congenital heart disease",
+        "clinical evidence"
+      ],
+      "relevantNodeIds": [
+        "cond-asd",
+        "dev-amplatzer-asd"
+      ],
+      "reviewStatus": "reviewed"
+    },
     {
       "id": "news-2026-10-05-cardiomems-cardioguide-patient-access",
       "publishedAt": "2026-10-05",
@@ -130,6 +336,24 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-10-01-daxor-hfsa-2026-bva",
+      "publishedAt": "2026-10-01",
+      "title": "Daxor announced HFSA exhibition and two scheduled blood-volume analysis ePosters",
+      "summary": "Daxor announced an exhibit of its next-generation blood-volume analyzer at HFSA 2026 and listed two independent-investigator ePosters scheduled for October 10 on LVAD/total-artificial-heart patients and advanced-heart-failure volume phenotypes. The announcement supplies presentation titles and schedule, not poster results or a device model identifier; no poster document was located in this review.",
+      "sourceName": "Daxor Corporation",
+      "sourceUrl": "https://daxor.com/daxor-to-showcase-next-gen-blood-volume-analyzer-new-clinical-data-at-hfsa-2026/",
+      "topicTags": [
+        "heart failure",
+        "blood volume analysis",
+        "clinical research",
+        "conference"
+      ],
+      "relevantNodeIds": [
+        "co-daxor"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-09-30-camzyos-pediatric-indication-expansion",
       "publishedAt": "2026-09-30",
       "title": "FDA expands CAMZYOS indication to pediatric patients weighing at least 30 kg",
@@ -144,6 +368,31 @@
       "relevantNodeIds": [
         "rx-mavacamten",
         "cond-hcm"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-30-cytokinetics-launches-aspen-hcm",
+      "publishedAt": "2026-09-30",
+      "title": "Cytokinetics announces start of ASPEN-HCM real-world study of aficamten",
+      "summary": "Cytokinetics announced ASPEN-HCM, a prospective observational study of aficamten in adults with symptomatic obstructive HCM in routine practice. Planned measures cover safety, clinical outcomes, patient-reported health and resource use; these are study objectives, not results. A study-specific registry identifier and current enrollment were not verified in this review.",
+      "sourceName": "Cytokinetics, Incorporated",
+      "sourceUrl": "https://ir.cytokinetics.com/press-releases/press-release-details/2026/Cytokinetics-Launches-ASPEN-HCM-A-Real-World-Study-Evaluating-MYQORZO-aficamten-in-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy/default.aspx",
+      "topicTags": [
+        "HCM",
+        "real-world evidence",
+        "pharmaceutical"
+      ],
+      "relevantNodeIds": [
+        "rx-aficamten",
+        "cond-hcm",
+        "co-cytokinetics"
+      ],
+      "additionalSources": [
+        {
+          "label": "MYQORZO prescribing information (adult symptomatic oHCM indication)",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219083s000lbl.pdf"
+        }
       ],
       "reviewStatus": "reviewed"
     },
@@ -204,6 +453,31 @@
       "relevantNodeIds": [
         "cond-mr",
         "dev-mitraclip"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-28-tempus-ecg-mr-fda-clearance",
+      "publishedAt": "2026-09-28",
+      "title": "FDA clears Tempus ECG-MR software to flag signs associated with moderate or severe mitral regurgitation",
+      "summary": "FDA cleared Tempus ECG-MR through 510(k) K254297 on September 25. The prescription software analyzes eligible resting 12-lead ECGs from patients 65 or older at cardiovascular risk and returns a binary flag to support follow-up. It is not diagnostic, does not rule out MR, and is not for paced ECGs or serial monitoring. FDA’s summary reports retrospective validation in 6,341 ECGs across four US sites, with 75% sensitivity and 70% specificity; predictive values depend on prevalence.",
+      "sourceName": "Tempus AI, Inc.",
+      "sourceUrl": "https://www.tempus.com/news/pr/tempus-receives-fda-clearance-for-its-ecg-mr-ai-product-designed-to-identify-undiagnosed-mitral-regurgitation/",
+      "topicTags": [
+        "mitral regurgitation",
+        "clinical AI",
+        "ECG",
+        "FDA clearance"
+      ],
+      "relevantNodeIds": [
+        "co-tempus-ai",
+        "dig-tempus-ecg-mr"
+      ],
+      "additionalSources": [
+        {
+          "label": "FDA 510(k) record K254297",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K254297"
+        }
       ],
       "reviewStatus": "reviewed"
     },
@@ -273,6 +547,45 @@
       ]
     },
     {
+      "id": "news-2026-09-23-pascal-capture-clarity-mr-fda",
+      "publishedAt": "2026-09-23",
+      "title": "FDA approves PASCAL Ace with Capture Clarity MR implant-system supplement",
+      "summary": "FDA’s PMA record lists September 23 approval of PASCAL Ace with Capture Clarity MR Implant System under P220003/S028, categorized as a design/components/specifications/material change. Detailed labeling and the exact technical changes remain unreviewed; this record does not establish a Capture Clarity tricuspid indication.",
+      "sourceName": "FDA openFDA",
+      "sourceUrl": "https://api.fda.gov/device/pma.json?search=pma_number:P220003+AND+supplement_number:S028&limit=1",
+      "topicTags": [
+        "mitral regurgitation",
+        "TEER",
+        "FDA approval",
+        "device design"
+      ],
+      "relevantNodeIds": [
+        "dev-pascal",
+        "co-edwards",
+        "cond-mr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-23-ultrasight-series-b2",
+      "publishedAt": "2026-09-23",
+      "title": "UltraSight announces $24 million Series B2 financing",
+      "summary": "UltraSight announced $24 million in Series B2 financing led by Alive HealthTech Growth Fund to support US expansion and additional cardiac workflows. Echosystem is a product-line/workflow name; FDA acquisition-guidance clearances do not establish automated AS interpretation authorization.",
+      "sourceName": "UltraSight",
+      "sourceUrl": "https://ultrasight.com/ultrasight-raises-24-million-to-scale-its-ai-guided-cardiac-workflow-platform-across-u-s-health-systems/",
+      "reviewStatus": "reviewed",
+      "topicTags": [
+        "Funding",
+        "Cardiac imaging",
+        "AI guidance"
+      ],
+      "relevantNodeIds": [
+        "co-ultrasight",
+        "dig-ultrasight-guidance",
+        "cond-as"
+      ]
+    },
+    {
       "id": "news-2026-09-22-corcym-memo-4d-curve-first-in-human-implant-mitral-annuloplasty",
       "publishedAt": "2026-09-22",
       "title": "Corcym reports first-in-human implant of Memo 4D Curve, an open-configuration mitral annuloplasty ring",
@@ -290,6 +603,26 @@
       ]
     },
     {
+      "id": "news-2026-09-22-highlife-eur80m-financing",
+      "publishedAt": "2026-09-22",
+      "title": "HighLife announces €80 million financing for European expansion and U.S. pivotal development",
+      "summary": "HighLife disclosed a €80 million ($90+ million) financing co-led by Andera Partners, Sofinnova Partners, Supernova Invest and Mérieux Equity Partners. The company plans to expand European commercialization and advance its U.S. pivotal program; its TMVR products remain investigational in the United States.",
+      "sourceName": "HighLife SAS",
+      "sourceUrl": "https://www.highlifemedical.com/highlife-raises-90-million-to-start-its-us-pivotal-study-and-accelerate-commercial-expansion-in-europe/",
+      "topicTags": [
+        "TMVR",
+        "mitral regurgitation",
+        "financing"
+      ],
+      "relevantNodeIds": [
+        "co-highlife",
+        "dev-highlife-tmvr",
+        "dev-highlife-clarity",
+        "trial-highlife-highfive"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-09-22-ubc-ivalve-soft-closure-mechanical-heart-valve",
       "publishedAt": "2026-09-22",
       "title": "UBC's Heart Valve Performance Laboratory reports on a soft-closure mechanical valve prototype",
@@ -304,6 +637,41 @@
       "relevantNodeIds": [
         "cond-as"
       ]
+    },
+    {
+      "id": "news-2026-09-21-respiree-series-a-syndicate-expansion",
+      "publishedAt": "2026-09-21",
+      "title": "Respiree adds ARKRAY & PARTNERS and Bizedge Capital to Series A syndicate",
+      "summary": "Respiree announced two additional international investors joining its Series A syndicate, led by We Venture Capital and ClavystBio. The company plans to expand its commercial team and U.S. presence; the release does not disclose the round amount.",
+      "sourceName": "Respiree via GlobeNewswire",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/09/22/3365926/0/en/respiree-extends-series-a-syndicate-with-addition-of-international-investors-to-support-continued-global-growth.html",
+      "topicTags": [
+        "patient monitoring",
+        "funding"
+      ],
+      "relevantNodeIds": [
+        "co-respiree"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-18-hfsa-cmic-programme",
+      "publishedAt": "2026-09-18",
+      "title": "HFSA schedules C-MIC II and III analyses",
+      "summary": "HFSA announced October 12 sessions covering C-MIC II core-laboratory CPET and a C-MIC III pilot comparison with C-MIC II. Programme titles establish scheduled topics; written result abstracts were not located.",
+      "sourceName": "Heart Failure Society of America",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/hfsas-2026-annual-scientific-meeting-to-feature-late-breaking-trials-that-could-reshape-heart-failure-treatment-302882718.html",
+      "topicTags": [
+        "HFrEF",
+        "cardiac microcurrent",
+        "clinical evidence"
+      ],
+      "relevantNodeIds": [
+        "trial-cmic-ii",
+        "trial-cmic-iii",
+        "dev-cmic"
+      ],
+      "reviewStatus": "reviewed"
     },
     {
       "id": "news-2026-09-18-open-heart-study-links-tavr-delay-beyond-6-months-to-worse-outcomes",
@@ -494,6 +862,24 @@
       ]
     },
     {
+      "id": "news-2026-08-31-cmic-iv-registration",
+      "publishedAt": "2026-08-31",
+      "title": "C-MIC IV sham-controlled subcutaneous study registered",
+      "summary": "ClinicalTrials.gov posted C-MIC IV, a 60-participant estimated sham-controlled study stratified by ischemic/nonischemic etiology. The record lists not yet recruiting and an estimated September start; no results are posted.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07795359",
+      "topicTags": [
+        "HFrEF",
+        "cardiac microcurrent",
+        "clinical evidence"
+      ],
+      "relevantNodeIds": [
+        "trial-cmic-iv",
+        "dev-cmic"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-08-30-cardio-ttransform-stabilizer-subgroup",
       "publishedAt": "2026-08-30",
       "title": "CARDIO-TTRansform subgroup analysis links eplontersen effect to baseline stabilizer use",
@@ -533,6 +919,24 @@
         "cond-hfref",
         "co-astrazeneca"
       ]
+    },
+    {
+      "id": "news-2026-08-30-reveal-diagnostic",
+      "publishedAt": "2026-08-30",
+      "title": "REVEAL reports I 124 evuzamitide diagnostic accuracy",
+      "summary": "The published REVEAL 170-person cohort reported 94% sensitivity and 86% specificity for suspected cardiac amyloidosis. This is a diagnostic radiotracer study; Bayer continues to describe the agent as investigational.",
+      "sourceName": "JAMA",
+      "sourceUrl": "https://jamanetwork.com/journals/jama/article-abstract/2853272",
+      "topicTags": [
+        "cardiac amyloidosis",
+        "diagnostic imaging"
+      ],
+      "relevantNodeIds": [
+        "rx-i124-evuzamitide",
+        "trial-reveal-i124",
+        "cond-attr-cm"
+      ],
+      "reviewStatus": "reviewed"
     },
     {
       "id": "news-2026-08-30-tric-i-hf-shows-transcatheter-tricuspid-repair-can-improve-hard-clinical",
@@ -643,19 +1047,28 @@
       ]
     },
     {
-      "id": "news-2026-08-28-highlife-receives-ce-mark-for-clarity-next-generation-tmvr-valve",
+      "id": "news-2026-08-28-ultrasight-as-diagnostic-study",
       "publishedAt": "2026-08-28",
-      "title": "HighLife receives CE Mark for Clarity next-generation TMVR valve",
-      "summary": "HighLife received CE Mark approval for its Clarity Mitral Heart Valve for use with the HighLife TMVR System. Clarity uses an open-cell outflow design intended to reduce left-ventricular-outflow-tract-obstruction risk while preserving HighLife’s transfemoral valve-in-ring architecture; the approved system covers native mitral annuli from 30 to 53 mm.",
-      "sourceName": "HighLife / Cardiac Interventions Today",
-      "sourceUrl": "https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/",
+      "title": "JAMA study evaluates novice-acquired cardiac ultrasound for AS detection",
+      "summary": "A Mayo diagnostic study combined AI-guided ultrasound acquisition with automated detection of moderate or greater AS. The public abstract reports 1302 prospective novice-operator examinations, with 1258 suitable for automated analysis; sensitivity was 93% and specificity 96%. Exact commercial software releases are unverified.",
+      "sourceName": "JAMA Cardiology",
+      "sourceUrl": "https://jamanetwork.com/journals/jamacardiology/article-abstract/2853493",
+      "reviewStatus": "reviewed",
+      "additionalSources": [
+        {
+          "label": "UltraSight disclosure linking the study to its workflow",
+          "url": "https://ultrasight.com/ultrasight-raises-24-million-to-scale-its-ai-guided-cardiac-workflow-platform-across-u-s-health-systems/"
+        }
+      ],
       "topicTags": [
-        "mitral regurgitation",
-        "TMVR",
-        "CE Mark"
+        "Aortic stenosis",
+        "Diagnostic research",
+        "Cardiac imaging"
       ],
       "relevantNodeIds": [
-        "cond-mr"
+        "co-ultrasight",
+        "dig-ultrasight-guidance",
+        "cond-as"
       ]
     },
     {
@@ -675,6 +1088,48 @@
         "dev-amulet",
         "co-abbott"
       ]
+    },
+    {
+      "id": "news-2026-08-28-highlife-receives-ce-mark-for-clarity-next-generation-tmvr-valve",
+      "publishedAt": "2026-08-27",
+      "publicationDateCorrection": {
+        "previousPublishedAt": "2026-08-28",
+        "reason": "Primary HighLife release is dated August 27; retain the immutable existing News ID.",
+        "sourceUrl": "https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/"
+      },
+      "title": "HighLife receives CE Mark for Clarity next-generation TMVR valve",
+      "summary": "HighLife announced CE marking for its next-generation Clarity valve, including standard and LAV configurations. Its open-cell outflow design is intended to address LVOTO-related anatomical constraints. Manufacturer claims await independent certificate/label confirmation; U.S. use remains investigational.",
+      "sourceName": "HighLife SAS",
+      "sourceUrl": "https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/",
+      "topicTags": [
+        "mitral regurgitation",
+        "TMVR",
+        "CE Mark"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "co-highlife",
+        "dev-highlife-clarity"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-08-26-cmic-follow-up",
+      "publishedAt": "2026-08-26",
+      "title": "Surgical C-MIC follow-up reports outcomes after deactivation",
+      "summary": "The 31-person uncontrolled C-MIC II follow-up reports persistence of several improvements 12 months after device deactivation; three patients required reactivation. Small sample and absent concurrent control limit interpretation.",
+      "sourceName": "European Journal of Heart Failure",
+      "sourceUrl": "https://academic.oup.com/eurjhf/advance-article/doi/10.1093/ejhf/xuag274/8771333",
+      "topicTags": [
+        "HFrEF",
+        "cardiac microcurrent",
+        "clinical evidence"
+      ],
+      "relevantNodeIds": [
+        "trial-cmic-ii-follow-up",
+        "dev-cmic"
+      ],
+      "reviewStatus": "reviewed"
     },
     {
       "id": "news-2026-08-19-new-jacc-analysis-tests-how-robust-the-randomized-evidence-for-mitral-te",
@@ -925,6 +1380,23 @@
       ]
     },
     {
+      "id": "news-2026-07-29-daxor-ezbva-kansas-outpatient-launch",
+      "publishedAt": "2026-07-29",
+      "title": "Daxor announced an eastern Kansas outpatient ezBVA Lab service launch",
+      "summary": "Daxor announced a new outpatient blood-volume analysis program at an unnamed eastern Kansas healthcare facility using its ezBVA Lab send-out model. The release does not identify which BVA analyzer generation was used. Service availability is a commercial milestone, not clinical evidence of improved outcomes.",
+      "sourceName": "Daxor Corporation",
+      "sourceUrl": "https://daxor.com/daxor-broadens-outpatient-footprint-with-initiation-of-ezbva-lab-diagnostic-services-in-kansas/",
+      "topicTags": [
+        "blood volume analysis",
+        "outpatient diagnostics",
+        "commercial launch"
+      ],
+      "relevantNodeIds": [
+        "co-daxor"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-07-28-modular-robotic-steerable-catheter-platform-demonstrates-potential-for-c",
       "publishedAt": "2026-07-28",
       "title": "Modular robotic steerable catheter platform demonstrates potential for complex endovascular access",
@@ -958,6 +1430,32 @@
         "dev-melody",
         "dev-harmony"
       ]
+    },
+    {
+      "id": "news-2026-07-27-dragonfly-t-teer-china-design",
+      "publishedAt": "2026-07-27",
+      "title": "TEER-CHINA design paper describes DragonFly-T versus medical therapy in tricuspid regurgitation",
+      "summary": "The TEER-CHINA design publication describes an investigational DragonFly-T tricuspid repair comparison against optimized medical therapy in China. The registry still lists recruiting with estimated enrollment of 236 in its June revision. This is study design and registry status, not a clinical readout or evidence of FDA marketing authorization; exact participant-level clip models are unresolved.",
+      "sourceName": "JACC: Asia",
+      "sourceUrl": "https://www.jacc.org/doi/10.1016/j.jacasi.2026.06.012",
+      "additionalSources": [
+        {
+          "label": "Official TEER-CHINA registry",
+          "url": "https://clinicaltrials.gov/study/NCT05556460"
+        }
+      ],
+      "topicTags": [
+        "tricuspid regurgitation",
+        "TEER",
+        "trial design"
+      ],
+      "relevantNodeIds": [
+        "dev-dragonfly-t",
+        "trial-teer-china",
+        "co-valgen-medtech",
+        "cond-tr"
+      ],
+      "reviewStatus": "reviewed"
     },
     {
       "id": "news-2026-07-27-rare-dual-caval-valve-implantation-performed-for-severe-tricuspid-regurg",
@@ -996,6 +1494,27 @@
         "dev-sapien-3",
         "dev-evoque"
       ]
+    },
+    {
+      "id": "news-2026-07-22-affinia-aftx-201-orphan-drug",
+      "publishedAt": "2026-07-22",
+      "title": "Affinia reports FDA Orphan Drug designation for AFTX-201 in BAG3 DCM",
+      "summary": "Affinia reported FDA Orphan Drug designation for investigational AFTX-201 in BAG3-associated DCM. This sponsor-reported development designation is not marketing authorization. Its July 18–55 eligibility description differs from the September 1 registry and October 9 sponsor description of 18–70; the exact change date is unverified.",
+      "sourceName": "Affinia Therapeutics",
+      "sourceUrl": "https://affiniatx.com/fda-grants-orphan-drug-designation-to-affinia-therapeutics-aftx-201-for-the-treatment-of-bag3-associated-dilated-cardiomyopathy-dcm/",
+      "topicTags": [
+        "gene therapy",
+        "dilated cardiomyopathy",
+        "BAG3",
+        "orphan drug designation"
+      ],
+      "relevantNodeIds": [
+        "co-affinia-therapeutics",
+        "rx-aftx-201",
+        "trial-upbeat-aftx-201",
+        "cond-bag3-dcm"
+      ],
+      "reviewStatus": "reviewed"
     },
     {
       "id": "news-2026-07-20-boston-scientific-starts-faradigm-ide-trial-for-faraflex-pfa-system",
@@ -1231,6 +1750,62 @@
         "trial-triscend-2",
         "co-edwards"
       ]
+    },
+    {
+      "id": "news-2026-05-18-boston-mirus-siegel-investment",
+      "publishedAt": "2026-05-18",
+      "title": "Boston Scientific announces MiRus investment and conditional SIEGEL TAVR acquisition option",
+      "summary": "Boston Scientific announced a MiRus investment and an option to acquire its TAVR business, subject to milestones and further payments. The disclosure describes investigational SIEGEL sizes of 23, 26 and 29 mm and an 8 Fr expandable sheath. It also references unnamed mitral/tricuspid replacement assets; their materials are unverified. An option is not a completed acquisition, and the system was not commercially approved at the disclosure date.",
+      "sourceName": "Boston Scientific",
+      "sourceUrl": "https://news.bostonscientific.com/2026-05-18-Boston-Scientific-announces-strategic-investment-in-MiRus-LLC",
+      "additionalSources": [
+        {
+          "label": "SEC Form 8-K — Item 8.01",
+          "url": "https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm"
+        }
+      ],
+      "topicTags": [
+        "TAVR",
+        "SIEGEL",
+        "MiRus",
+        "rhenium",
+        "corporate transaction"
+      ],
+      "relevantNodeIds": [
+        "dev-siegel-tavr",
+        "co-mirus",
+        "co-boston-scientific",
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-04-08-siegel-star-first-enrollment",
+      "publishedAt": "2026-04-08",
+      "title": "MiRus reports first patient treatments in the randomized STAR study of SIEGEL TAVR",
+      "summary": "MiRus reported first treatments in STAR, a randomized comparison of SIEGEL with commercially available TAVR for severe symptomatic aortic stenosis. The registered target is an estimated 1,025 participants; the primary endpoint combines all-cause death, all stroke and valve/procedure-related cardiovascular rehospitalization at one year. The registry revision posted April 9, 2026 lists recruiting and no results. Trial authorization is distinct from commercial valve approval.",
+      "sourceName": "MiRus",
+      "sourceUrl": "https://www.mirusmed.com/mirus-brings-patient-enrollment-in-the-star-randomized-trial-of-the-siegel-transcatheter-aortic-valve/",
+      "additionalSources": [
+        {
+          "label": "STAR official registry — NCT07278310",
+          "url": "https://clinicaltrials.gov/study/NCT07278310"
+        }
+      ],
+      "topicTags": [
+        "TAVR",
+        "SIEGEL",
+        "MiRus",
+        "STAR",
+        "clinical trial"
+      ],
+      "relevantNodeIds": [
+        "dev-siegel-tavr",
+        "co-mirus",
+        "trial-siegel-star",
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
     }
   ],
   "elements": {
@@ -1572,7 +2147,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 22,
+          "degree": 23,
           "pulse": 9,
           "entity": {
             "id": "cond-as",
@@ -1644,7 +2219,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 22,
+          "degree": 30,
           "pulse": 8,
           "entity": {
             "id": "cond-mr",
@@ -1713,7 +2288,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 21,
+          "degree": 22,
           "pulse": 9,
           "entity": {
             "id": "cond-tr",
@@ -1883,7 +2458,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 3,
+          "degree": 7,
           "pulse": 0,
           "entity": {
             "id": "cond-hf",
@@ -1946,7 +2521,7 @@
           "label": "SIEGEL TAVR",
           "group": "device",
           "category": "Balloon-expandable transcatheter aortic valve",
-          "isDraft": true,
+          "isDraft": false,
           "isHalted": false,
           "isRetired": false,
           "degree": 4,
@@ -2002,7 +2577,7 @@
               }
             ],
             "curation": {
-              "status": "draft",
+              "status": "curated",
               "lastUpdated": "2026-10-14",
               "sources": [
                 "https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/",
@@ -8681,10 +9256,372 @@
       },
       {
         "data": {
+          "id": "dev-highlife-tmvr",
+          "label": "HighLife TMVR System",
+          "group": "device",
+          "category": "Transcatheter mitral valve replacement",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 6,
+          "pulse": 8,
+          "entity": {
+            "id": "dev-highlife-tmvr",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Transcatheter mitral valve replacement",
+            "name": "HighLife TMVR System",
+            "company": "co-highlife",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Manufacturer reports European CE marking; U.S. investigational use only, without commercial approval. Independent CE certificate/IFU not inspected.",
+            "mechanism": "Dual-component valve-in-ring system using a sub-annular ring.",
+            "materials": [],
+            "pulse": 8,
+            "links": [
+              {
+                "label": "Manufacturer announcement",
+                "url": "https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-its-tmvr-solution/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-its-tmvr-solution/"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Legacy graph remains draft under the existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data record is reviewed with its stated scope and unknowns. Draft geography-specific manufacturer claim, not an independently verified regulatory decision. Empty materials avoid transferring historical implant composition to the current commercial generations. No FDA marketing authorization inferred from IDE or breakthrough designation."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-highlife-clarity",
+          "label": "HighLife Clarity TMVR System",
+          "group": "device",
+          "category": "Transcatheter mitral valve replacement",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 8,
+          "entity": {
+            "id": "dev-highlife-clarity",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Transcatheter mitral valve replacement",
+            "name": "HighLife Clarity TMVR System",
+            "company": "co-highlife",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Manufacturer reports European CE marking; U.S. investigational use only, without commercial approval. Independent CE certificate/IFU not inspected.",
+            "mechanism": "Valve-in-ring system with an open-cell outflow valve-frame design intended to address LVOTO-related anatomical concerns.",
+            "materials": [],
+            "pulse": 8,
+            "links": [
+              {
+                "label": "Manufacturer announcement",
+                "url": "https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Legacy graph remains draft under the existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data record is reviewed with its stated scope and unknowns. Draft geography-specific manufacturer claim, not an independently verified regulatory decision. Empty materials avoid transferring historical implant composition to the current commercial generations. No FDA marketing authorization inferred from IDE or breakthrough designation."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dig-ultrasight-guidance",
+          "label": "UltraSight cardiac ultrasound guidance",
+          "group": "digital",
+          "category": "Cardiac ultrasound image acquisition guidance",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "entity": {
+            "id": "dig-ultrasight-guidance",
+            "type": "therapy",
+            "therapyType": "digital",
+            "subtype": "Cardiac ultrasound image acquisition guidance",
+            "name": "UltraSight cardiac ultrasound guidance",
+            "company": "co-ultrasight",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "US 510(k) clearances K223347 (2023-07-24) and K251416 (2025-12-17); adult 2D-TTE acquisition guidance.",
+            "description": "Diagnostic acquisition adjunct; the AS graph link is research context, not an AS-specific FDA indication.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223347.pdf",
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K251416.pdf",
+                "https://ultrasight.com/ultrasight-raises-24-million-to-scale-its-ai-guided-cardiac-workflow-platform-across-u-s-health-systems/",
+                "https://jamanetwork.com/journals/jamacardiology/article-abstract/2853493"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. WOR-30: FDA K223347 PDF p4 indication and p7 hardware row; K251416 PDF p1 decision and p4 indication. JAMA abstract: AS workflow context. This graph approved enum represents authorization, specifically clearance rather than PMA approval. Echosystem is a manufacturer workflow/product-line name, not a software build. New factual records remain draft."
+            },
+            "pulse": 5
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dig-lubdub-heart-health",
+          "label": "Lubdub heart-health platform",
+          "group": "digital",
+          "category": "Cardiac screening and monitoring",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "entity": {
+            "id": "dig-lubdub-heart-health",
+            "type": "therapy",
+            "therapyType": "digital",
+            "subtype": "Cardiac screening and monitoring",
+            "name": "Lubdub heart-health platform",
+            "company": "co-lubdub",
+            "treats": [
+              "cond-hf"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Authorization and exact commercial configurations not established in inspected sources.",
+            "mechanism": "Integrates ECG, biomarker and echocardiographic information for cardiac screening and monitoring.",
+            "description": "Heart Foundation written project description identifies wearable ECG, saliva biosensing and wearable ultrasound components.",
+            "pulse": 5,
+            "links": [
+              {
+                "label": "Written Heart First project description",
+                "url": "https://www.heartfoundation.org.au/catalyst/heart-first-initiative"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://www.lubdub.ai/",
+                "https://www.heartfoundation.org.au/catalyst/heart-first-initiative"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. The cond-hf edge denotes research motivation for earlier cardiac detection in the written Problem/Solution sections, not a treatment or clearance claim. No numerical performance, patent linkage, interview quotation or diagnostic-efficacy assertion extracted. Hardware model identifiers/software version unspecified."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-respiree-rs001",
+          "label": "Respiree Cardio-Respiratory Monitor (RS001)",
+          "group": "device",
+          "category": "Cardio-respiratory monitoring",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "timelineDate": "2023-03-08",
+          "entity": {
+            "id": "dev-respiree-rs001",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Cardio-respiratory monitoring",
+            "name": "Respiree Cardio-Respiratory Monitor (RS001)",
+            "company": "co-respiree",
+            "treats": [
+              "cond-hf"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA 510(k) cleared 2023-03-08; Adults; non-invasive spot respiration-rate checking in hospitals/hospital-type facilities outside ICU. No FDA-cleared HF-prediction indication.",
+            "mechanism": "Chest-worn optical sensor measures respiratory motion for spot respiration-rate checking.",
+            "materials": [],
+            "pulse": 5,
+            "links": [
+              {
+                "label": "FDA clearance and indications",
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223681.pdf"
+              }
+            ],
+            "timeline": {
+              "date": "2023-03-08",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "FDA 510(k) clearance",
+              "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223681.pdf",
+              "notes": "Existing timeline enum fda-approval represents verified marketing authorization; actual pathway is clearance, not PMA approval."
+            },
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223681.pdf",
+                "https://www.prnewswire.com/news-releases/digital-therapeutics-startup-respiree-gains-us-fda-clearance-for-its-rs001-cardio-respiratory-wearable-301766399.html"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Legacy graph remains draft under the existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data record is reviewed with its stated scope and unknowns. Permanent implant materials are inapplicable; empty draft materials list. cond-hf edge identifies sponsor-described patient application context from original2023 written disclosure, not a disease-specific FDA indication. FDA label limited to respiration rate: do not borrow pulse rate/SpO2 from Biobeat reference-device column."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-respiree-rs001-d",
+          "label": "Respiree Cardio-Respiratory Monitor System (RS001.D)",
+          "group": "device",
+          "category": "Cardio-respiratory monitoring",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "timelineDate": "2025-08-05",
+          "entity": {
+            "id": "dev-respiree-rs001-d",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Cardio-respiratory monitoring",
+            "name": "Respiree Cardio-Respiratory Monitor System (RS001.D)",
+            "company": "co-respiree",
+            "treats": [
+              "cond-hf"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA 510(k) cleared 2025-08-05; Adults; non-invasive spot respiration-rate checking in non-ICU hospital/hospital-type and home settings. No FDA-cleared HF-prediction indication.",
+            "mechanism": "Chest-worn optical sensor measures respiratory motion for spot respiration-rate checking.",
+            "materials": [],
+            "pulse": 5,
+            "links": [
+              {
+                "label": "FDA clearance and indications",
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250934.pdf"
+              }
+            ],
+            "timeline": {
+              "date": "2025-08-05",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "FDA 510(k) clearance",
+              "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250934.pdf",
+              "notes": "Existing timeline enum fda-approval represents verified marketing authorization; actual pathway is clearance, not PMA approval."
+            },
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250934.pdf",
+                "https://www.prnewswire.com/news-releases/digital-therapeutics-startup-respiree-gains-us-fda-clearance-for-its-rs001-cardio-respiratory-wearable-301766399.html"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Legacy graph remains draft under the existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data record is reviewed with its stated scope and unknowns. Permanent implant materials are inapplicable; empty draft materials list. cond-hf edge identifies sponsor-described patient application context from original2023 written disclosure, not a disease-specific FDA indication. FDA label limited to respiration rate: do not borrow pulse rate/SpO2 from Biobeat reference-device column."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-conkay-annuloplasty",
+          "label": "ConKay annular repair development platform",
+          "group": "device",
+          "category": "Transcatheter tricuspid annuloplasty",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "entity": {
+            "id": "dev-conkay-annuloplasty",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Transcatheter tricuspid annuloplasty",
+            "name": "ConKay annular repair development platform",
+            "company": "co-conkay-medical",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Development platform described in 2024 manufacturer disclosures. No FDA authorization, investigational-study permission, registry identity or human study start verified in this pass.",
+            "description": "Unnamed annular repair catheter platform under development for tricuspid regurgitation. No commercial model, generation, size range or implant materials verified.",
+            "mechanism": "Manufacturer describes a catheter-based annular repair concept leaving an implant around the native valve annulus.",
+            "materials": [],
+            "links": [
+              {
+                "label": "ConKay market focus",
+                "url": "https://www.conkaymedical.com/market"
+              },
+              {
+                "label": "Original development and financing disclosure",
+                "url": "https://www.businesswire.com/news/home/20240318732658/en/ConKay-Medical-Systems-Raises-$1.8M-in-Oversubscribed-Seed-Funding-Round"
+              }
+            ],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://www.conkaymedical.com/market",
+                "https://www.businesswire.com/news/home/20240318732658/en/ConKay-Medical-Systems-Raises-$1.8M-in-Oversubscribed-Seed-Funding-Round",
+                "https://www.einpresswire.com/article/743915283/conkay-medical-systems-adds-top-cardiologist-to-advisory-board-moves-to-larger-headquarters"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Legacy graph remains draft under the existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data record is reviewed with its stated scope and unknowns. WOR-30: Market final paragraph; original Business Wire release non-quotation development and catheter paragraphs; Sep16 2024 EIN manufacturer release non-quotation device paragraph. Investigational is broad development classification, not evidence that a registered clinical trial is ongoing. No named commercial device or exact build. Materials remain unknown; no source images or unsupported clinical benefit imported."
+            },
+            "pulse": 5
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dig-ultrasight-pvadiq",
+          "label": "UltraSight PVAD IQ Software",
+          "group": "digital",
+          "category": "PVAD ultrasound position-assessment analysis",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "entity": {
+            "id": "dig-ultrasight-pvadiq",
+            "type": "therapy",
+            "therapyType": "digital",
+            "subtype": "PVAD ultrasound position-assessment analysis",
+            "name": "UltraSight PVAD IQ Software",
+            "company": "co-ultrasight",
+            "treats": [
+              "cond-hf"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "US 510(k) K252235, 2025-12-18; adult PVAD ultrasound analysis.",
+            "description": "Physician decision-support analysis for adult PVAD ultrasound. The HF graph edge is broad critical-care context, not a disease-specific FDA indication.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252235.pdf",
+                "https://ultrasight.com/ultrasight-in-cardiac-critical-care/"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. WOR-30: FDA PDF p1 decision, p4 indication; Feb25 manufacturer announcement. Graph approved enum denotes clearance. Separate from UltraSight acquisition guidance/AS research; numbered software build unverified. Clinical context is adult PVAD support; no device-treatment efficacy inferred."
+            },
+            "pulse": 5
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-mirus",
           "label": "MiRus LLC",
           "group": "company",
-          "isDraft": true,
+          "isDraft": false,
           "isHalted": false,
           "isRetired": false,
           "degree": 1,
@@ -8696,13 +9633,13 @@
             "website": "https://www.mirusmed.com/",
             "description": "Developer of the investigational SIEGEL aortic valve and MoRe molybdenum–rhenium biomaterials.",
             "curation": {
-              "status": "draft",
+              "status": "curated",
               "lastUpdated": "2026-10-14",
               "sources": [
                 "https://www.mirusmed.com/",
                 "https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm"
               ],
-              "notes": "Local documentary review only. SEC Form 8-K Item 8.01 records an investment agreement and conditional TAVR acquisition option; this is not evidence of completed acquisition. Unnamed mitral/tricuspid assets have unverified materials."
+              "notes": "Owner approved the previewed record on 2026-10-14; documentary limitations remain. SEC Form 8-K Item 8.01 records an investment agreement and conditional TAVR acquisition option; this is not evidence of completed acquisition. Unnamed mitral/tricuspid assets have unverified materials."
             }
           }
         }
@@ -10641,10 +11578,161 @@
       },
       {
         "data": {
+          "id": "co-highlife",
+          "label": "HighLife SAS",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 8,
+          "entity": {
+            "id": "co-highlife",
+            "type": "company",
+            "name": "HighLife SAS",
+            "hq": "Paris, France",
+            "website": "https://www.highlifemedical.com/",
+            "description": "Structural heart company founded in 2010, with a U.S. facility in Irvine, California. Stefan Pilz became CEO effective August 1, 2024. HighLife announced a €80 million ($90+ million) financing on September 22, 2026.",
+            "pulse": 8,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://www.highlifemedical.com/highlife-raises-90-million-to-start-its-us-pivotal-study-and-accelerate-commercial-expansion-in-europe/",
+                "https://www.sectoral.com/PDF/PE%20News/Highlife_news_2024-07-09.pdf"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Funding announcement is an original corporate disclosure, not a clinical source. Georg Börtlein was named founder/CEO in the June 2024 release; he is not the current CEO. CEO appointment: original July 9 release, PDF p.1 opening paragraph. Funding: opening paragraph and About HighLife. Financing completion date beyond announcement date not disclosed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-ultrasight",
+          "label": "UltraSight",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "entity": {
+            "id": "co-ultrasight",
+            "type": "company",
+            "name": "UltraSight",
+            "website": "https://ultrasight.com/",
+            "description": "Developer of cardiac ultrasound workflow software.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://ultrasight.com/ultrasight-raises-24-million-to-scale-its-ai-guided-cardiac-workflow-platform-across-u-s-health-systems/",
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223347.pdf"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. WOR-30: original corporate disclosure, About UltraSight; FDA K223347 applicant. Public documents retrieved 2026-10-12. Corporate identity only; no inferred founding year or funding total."
+            },
+            "pulse": 5
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-lubdub",
+          "label": "Lubdub Technologies Pty Ltd",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 5,
+          "entity": {
+            "id": "co-lubdub",
+            "type": "company",
+            "name": "Lubdub Technologies Pty Ltd",
+            "hq": "Perth / Melbourne, Australia",
+            "website": "https://www.lubdub.ai/",
+            "description": "Develops an integrated cardiac-health platform combining ECG, cardiac biomarkers and echocardiography.",
+            "pulse": 5,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://www.lubdub.ai/",
+                "https://www.heartfoundation.org.au/catalyst/heart-first-initiative"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Company identity: manufacturer footer and headquarters section. Funding amount/currency/date remain unverified in an eligible original written disclosure; no funding assertion included."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-respiree",
+          "label": "Respiree Pte Ltd",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 6,
+          "entity": {
+            "id": "co-respiree",
+            "type": "company",
+            "name": "Respiree Pte Ltd",
+            "hq": "Singapore",
+            "website": "https://www.respiree.com/",
+            "description": "Develops cardio-respiratory sensors and digital-care platforms. September 2026 disclosure announces international investors joining its Series A syndicate.",
+            "pulse": 6,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223681.pdf",
+                "https://www.globenewswire.com/news-release/2026/09/22/3365926/0/en/respiree-extends-series-a-syndicate-with-addition-of-international-investors-to-support-continued-global-growth.html"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Legal sponsor/address: K223681 PDFp4 Sponsor. Corporate event: GN2026-09-21 opening paragraphs; company round amount not disclosed. FDA records establish sensor authorization only, not a platform-wide AI/HF approval."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-conkay-medical",
+          "label": "ConKay Medical Systems",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 5,
+          "entity": {
+            "id": "co-conkay-medical",
+            "type": "company",
+            "name": "ConKay Medical Systems",
+            "hq": "Pleasanton, California, United States",
+            "website": "https://www.conkaymedical.com/",
+            "description": "Early-stage developer of devices for valvular regurgitation; initial focus is the tricuspid valve.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://www.conkaymedical.com/",
+                "https://www.conkaymedical.com/market",
+                "https://www.conkaymedical.com/contact",
+                "https://www.businesswire.com/news/home/20240318732658/en/ConKay-Medical-Systems-Raises-$1.8M-in-Oversubscribed-Seed-Funding-Round"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. WOR-30 missing-entry documentary draft: About opening; Market final paragraph; Contact address; original corporate seed disclosure. Public sources retrieved 2026-10-12. Undated web pages have no inferred publication date. Recent funding lead unverified."
+            },
+            "pulse": 5
+          }
+        }
+      },
+      {
+        "data": {
           "id": "trial-siegel-star",
           "label": "STAR (SIEGEL TAVR)",
           "group": "trial",
-          "isDraft": true,
+          "isDraft": false,
           "isHalted": false,
           "isRetired": false,
           "degree": 2,
@@ -10670,7 +11758,7 @@
               "https://clinicaltrials.gov/study/NCT07278310"
             ],
             "curation": {
-              "status": "draft",
+              "status": "curated",
               "lastUpdated": "2026-10-14",
               "sources": [
                 "https://clinicaltrials.gov/study/NCT07278310"
@@ -10685,7 +11773,7 @@
           "id": "trial-siegel-efs",
           "label": "SIEGEL TAVR US Early Feasibility Study",
           "group": "trial",
-          "isDraft": true,
+          "isDraft": false,
           "isHalted": false,
           "isRetired": false,
           "degree": 2,
@@ -10711,7 +11799,7 @@
               "https://clinicaltrials.gov/study/NCT06680427"
             ],
             "curation": {
-              "status": "draft",
+              "status": "curated",
               "lastUpdated": "2026-10-14",
               "sources": [
                 "https://clinicaltrials.gov/study/NCT06680427"
@@ -14737,7 +15825,7 @@
             "year": 2026,
             "primaryEndpoint": "90-day heart failure hospitalization rate",
             "resultStatus": "mixed",
-            "outcomeSummary": "Registry reports13 versus16 HF hospitalizations in80 versus91 analyzed participants without comparative statistics. ACC26 abstract did not demonstrate a reduction in HF hospitalization; notification instability is a separate endpoint.",
+            "outcomeSummary": "Registry reports 13 versus 16 HF hospitalizations in 80 versus 91 analyzed participants without comparative statistics. ACC26 abstract did not demonstrate a reduction in HF hospitalization; notification instability is a separate endpoint.",
             "timeline": {
               "date": "2021-04-19",
               "precision": "day",
@@ -15042,7 +16130,7 @@
             ],
             "enrollment": 31,
             "primaryEndpoint": "Mortality; Hospitalizations; Adverse events",
-            "resultStatus": "positive",
+            "resultStatus": "mixed",
             "references": [
               "https://clinicaltrials.gov/study/NCT05189860",
               "https://academic.oup.com/eurjhf/advance-article/doi/10.1093/ejhf/xuag274/8771333"
@@ -15064,7 +16152,7 @@
               "source": "https://clinicaltrials.gov/study/NCT05189860",
               "notes": "ACTUAL registry date; estimated date does not establish trial commencement."
             },
-            "outcomeSummary": "Uncontrolled 31-person follow-up after six months of surgical C-MIC: reported improvements persisted 12 months after deactivation; three required reactivation."
+            "outcomeSummary": "Uncontrolled 31-person follow-up after six months of surgical C-MIC: several improvements persisted, but six-minute walk distance declined after deactivation, peak VO2 did not improve significantly, and three patients required reactivation."
           }
         }
       },
@@ -15284,6 +16372,284 @@
                 "https://jamanetwork.com/journals/jama/article-abstract/2853272"
               ],
               "notes": "Registry 204 actual vs paper 195 enrolled/170 included; preserve distinct scopes. Brigham and Women’s Hospital sponsor. ATTR condition is a partial diagnostic crosswalk."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-us-efs",
+          "label": "HighLife US early feasibility (28 mm)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "timelineDate": "2020-07-14",
+          "entity": {
+            "id": "trial-highlife-us-efs",
+            "type": "trial",
+            "name": "HighLife US early feasibility (28 mm)",
+            "nctId": "NCT04029337",
+            "phase": "Feasibility study",
+            "status": "recruiting",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-highlife-tmvr"
+            ],
+            "enrollment": 30,
+            "primaryEndpoint": "Freedom from major adverse events and continued intended valve performance at 30 days.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT04029337"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT04029337"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Registry last update posted 2025-03-17; 30 estimated participants; this count is not a treated or analyzed cohort.  No results posted in the API record."
+            },
+            "timeline": {
+              "date": "2020-07-14",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Actual registry study start",
+              "source": "https://clinicaltrials.gov/study/NCT04029337"
+            },
+            "pulse": 5
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-expanded-tsmvr",
+          "label": "HighLife expanded transseptal feasibility (28 mm)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "timelineDate": "2019-05-28",
+          "entity": {
+            "id": "trial-highlife-expanded-tsmvr",
+            "type": "trial",
+            "name": "HighLife expanded transseptal feasibility (28 mm)",
+            "nctId": "NCT04029363",
+            "phase": "Feasibility study",
+            "status": "recruiting",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-highlife-tmvr"
+            ],
+            "enrollment": 120,
+            "primaryEndpoint": "Device safety / freedom from major adverse events at 30 days.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT04029363"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT04029363"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Registry last update posted 2025-09-15; 120 estimated participants; this count is not a treated or analyzed cohort.  No results posted in the API record."
+            },
+            "timeline": {
+              "date": "2019-05-28",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Actual registry study start",
+              "source": "https://clinicaltrials.gov/study/NCT04029363"
+            },
+            "pulse": 5
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-highflo",
+          "label": "HighFLO Clarity feasibility",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "timelineDate": "2021-07-01",
+          "entity": {
+            "id": "trial-highlife-highflo",
+            "type": "trial",
+            "name": "HighFLO Clarity feasibility",
+            "nctId": "NCT04888247",
+            "phase": "Feasibility study",
+            "status": "recruiting",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-highlife-clarity"
+            ],
+            "enrollment": 30,
+            "primaryEndpoint": "Technical success at 24 hours.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT04888247"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT04888247"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Registry last update posted 2024-10-03; 30 estimated participants; this count is not a treated or analyzed cohort. Recruitment record last verified October 2024; current recruitment may be stale. No results posted in the API record."
+            },
+            "timeline": {
+              "date": "2021-07-01",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Actual registry study start",
+              "source": "https://clinicaltrials.gov/study/NCT04888247"
+            },
+            "pulse": 5
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-highfive",
+          "label": "HIGHFIVE Clarity pivotal",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 5,
+          "entity": {
+            "id": "trial-highlife-highfive",
+            "type": "trial",
+            "name": "HIGHFIVE Clarity pivotal",
+            "nctId": "NCT06683729",
+            "phase": "Pivotal single-arm study",
+            "status": "unknown",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-highlife-clarity"
+            ],
+            "enrollment": 240,
+            "primaryEndpoint": "All-cause mortality or heart-failure hospitalization at 24 months.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT06683729"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT06683729"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Registry last update posted 2025-09-15; 240 estimated participants; this count is not a treated or analyzed cohort. Registry estimated start is not verified initiation. September 2026 company disclosures describe the pivotal program advancing, but this registry remains NOT_YET_RECRUITING. Do not silently reconcile the conflict. No results posted in the API record."
+            },
+            "pulse": 5
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-31mm-feasibility",
+          "label": "HighLife historical 31 mm feasibility",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 4,
+          "timelineDate": "2017-07-20",
+          "entity": {
+            "id": "trial-highlife-31mm-feasibility",
+            "type": "trial",
+            "name": "HighLife historical 31 mm feasibility",
+            "nctId": "NCT02974881",
+            "phase": "Feasibility study",
+            "status": "completed",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-highlife-tmvr"
+            ],
+            "enrollment": 5,
+            "resultStatus": "ongoing",
+            "primaryEndpoint": "Freedom of major adverse events (at 30 days post procedure); Continued intended performance of the HighLife™ bioprosthesis (at 30 days post procedure); Technical success (immediately after procedure)",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT02974881"
+            ],
+            "pulse": 4,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02974881"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Registry last posted 2024-10-03; 5 actual overall participants, not a numerical efficacy result. Historical 31 mm study; later-generation equivalence not established. No posted results extracted."
+            },
+            "timeline": {
+              "date": "2017-07-20",
+              "precision": "day",
+              "dateBasis": "trial-start",
+              "event": "Actual registry study start",
+              "source": "https://clinicaltrials.gov/study/NCT02974881"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-embrace",
+          "label": "EMBRACE European HighLife post-market registry",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 4,
+          "entity": {
+            "id": "trial-highlife-embrace",
+            "type": "trial",
+            "name": "EMBRACE European HighLife post-market registry",
+            "nctId": "NCT07409285",
+            "phase": "Prospective observational registry",
+            "status": "unknown",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-highlife-tmvr"
+            ],
+            "enrollment": 150,
+            "resultStatus": "ongoing",
+            "primaryEndpoint": "Rate of Technical Success (At exit from procedure room); Rate of Device Success (30 days); Primary Performance Endpoint (30 days)",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT07409285"
+            ],
+            "pulse": 4,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-12",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT07409285"
+              ],
+              "notes": "Owner approved the previewed content and publication on 2026-10-12. Registry last posted 2026-02-13; 150 estimated overall participants, not a numerical efficacy result. Commercial registry describes a 28 mm bioprosthesis; exact marketed generation unresolved. Estimated start is not verified initiation. No posted results extracted."
             }
           }
         }
@@ -17244,6 +18610,134 @@
       },
       {
         "data": {
+          "id": "dev-highlife-tmvr__made_by__co-highlife",
+          "source": "dev-highlife-tmvr",
+          "target": "co-highlife",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-highlife-tmvr__treats__cond-mr",
+          "source": "dev-highlife-tmvr",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-highlife-clarity__made_by__co-highlife",
+          "source": "dev-highlife-clarity",
+          "target": "co-highlife",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-highlife-clarity__treats__cond-mr",
+          "source": "dev-highlife-clarity",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-ultrasight-guidance__made_by__co-ultrasight",
+          "source": "dig-ultrasight-guidance",
+          "target": "co-ultrasight",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-ultrasight-guidance__treats__cond-as",
+          "source": "dig-ultrasight-guidance",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-lubdub-heart-health__made_by__co-lubdub",
+          "source": "dig-lubdub-heart-health",
+          "target": "co-lubdub",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-lubdub-heart-health__treats__cond-hf",
+          "source": "dig-lubdub-heart-health",
+          "target": "cond-hf",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-respiree-rs001__made_by__co-respiree",
+          "source": "dev-respiree-rs001",
+          "target": "co-respiree",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-respiree-rs001__treats__cond-hf",
+          "source": "dev-respiree-rs001",
+          "target": "cond-hf",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-respiree-rs001-d__made_by__co-respiree",
+          "source": "dev-respiree-rs001-d",
+          "target": "co-respiree",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-respiree-rs001-d__treats__cond-hf",
+          "source": "dev-respiree-rs001-d",
+          "target": "cond-hf",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-conkay-annuloplasty__made_by__co-conkay-medical",
+          "source": "dev-conkay-annuloplasty",
+          "target": "co-conkay-medical",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-conkay-annuloplasty__treats__cond-tr",
+          "source": "dev-conkay-annuloplasty",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-ultrasight-pvadiq__made_by__co-ultrasight",
+          "source": "dig-ultrasight-pvadiq",
+          "target": "co-ultrasight",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-ultrasight-pvadiq__treats__cond-hf",
+          "source": "dig-ultrasight-pvadiq",
+          "target": "cond-hf",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "trial-siegel-star__evaluates__dev-siegel-tavr",
           "source": "trial-siegel-star",
           "target": "dev-siegel-tavr",
@@ -18863,6 +20357,102 @@
           "id": "trial-reveal-i124__studies__cond-attr-cm",
           "source": "trial-reveal-i124",
           "target": "cond-attr-cm",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-us-efs__evaluates__dev-highlife-tmvr",
+          "source": "trial-highlife-us-efs",
+          "target": "dev-highlife-tmvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-us-efs__studies__cond-mr",
+          "source": "trial-highlife-us-efs",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-expanded-tsmvr__evaluates__dev-highlife-tmvr",
+          "source": "trial-highlife-expanded-tsmvr",
+          "target": "dev-highlife-tmvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-expanded-tsmvr__studies__cond-mr",
+          "source": "trial-highlife-expanded-tsmvr",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-highflo__evaluates__dev-highlife-clarity",
+          "source": "trial-highlife-highflo",
+          "target": "dev-highlife-clarity",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-highflo__studies__cond-mr",
+          "source": "trial-highlife-highflo",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-highfive__evaluates__dev-highlife-clarity",
+          "source": "trial-highlife-highfive",
+          "target": "dev-highlife-clarity",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-highfive__studies__cond-mr",
+          "source": "trial-highlife-highfive",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-31mm-feasibility__evaluates__dev-highlife-tmvr",
+          "source": "trial-highlife-31mm-feasibility",
+          "target": "dev-highlife-tmvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-31mm-feasibility__studies__cond-mr",
+          "source": "trial-highlife-31mm-feasibility",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-embrace__evaluates__dev-highlife-tmvr",
+          "source": "trial-highlife-embrace",
+          "target": "dev-highlife-tmvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-highlife-embrace__studies__cond-mr",
+          "source": "trial-highlife-embrace",
+          "target": "cond-mr",
           "relationship": "studies"
         }
       }

@@ -115,97 +115,29 @@ are authoritative; do not maintain completion state in this table.
 
 Shared Linear reference: [VISUALIZE-SH work organization and source policy](https://linear.app/workspace-visualize-sh/document/visualize-sh-work-organization-and-source-policy-5232e09368ad).
 
+## Reconciled local work
+
+The owner initially requested local-only previews and later approved including
+all pending changes in a pushed, reviewed and merged PR on October 14, 2026.
+The following local proposals have been reconciled after searching Linear:
+
+- [WOR-32: approved SIEGEL research and pending workspace integration](https://linear.app/workspace-visualize-sh/issue/WOR-32/integrate-approved-siegel-research-and-pending-workspace-changes)
+  owns the SIEGEL/MiRus evidence additions, the shared News Insights/Editorial
+  keyword UI, and repository integration/review in `P-WOR-1`. Source pointers,
+  acceptance criteria and held evidence gaps are in the issue and
+  `docs/SIEGEL_RHENIUM_REVIEW_2026-10-14.md`.
+- [WOR-33: manual News Insights template and draft workflow](https://linear.app/workspace-visualize-sh/issue/WOR-33/add-manual-news-insights-template-frozen-run-windows-and-local-draft)
+  owns the template, frozen run windows, local renderer/preview workflow and
+  inaugural September 30–October 13 draft in `P-WOR-2`. This is distinct from
+  WOR-14's scheduled aggregated digest rehearsal. The article remains draft;
+  committing its source is not public article publication or delivery approval.
+
+Linear is authoritative for lifecycle and validation. No new schedule or send is
+created by these outcomes. The older local-only handoffs are retained in Git
+history; they are not pending/unfiled issues now.
+
 ## Unfiled work when Linear is unavailable
 
-### 2026-10-14 — SIEGEL and rhenium documentary research / local approval preview (not filed)
-
-The owner expressly requested local-only work. Linear was not contacted; this is
-a pending issue proposal, not an access-failure report or a filed issue. Search
-existing/archived issues before reconciling externally.
-
-- **Proposed project:** `P-WOR-1` / `visualize-sh-webapp`.
-- **Outcome/scope:** research MiRus SIEGEL family, separate FIH/EFS/STAR evidence,
-  review rhenium-alloy literature and other structural-heart uses, prepare draft
-  graph/catalog/trial/News additions and a local approval preview.
-- **Priority/labels:** Medium; `Improvement`, `Area: Atlas`, `Area: Data`,
-  `Area: News`, `Work: Evidence`.
-- **Pointers:** `docs/SIEGEL_RHENIUM_REVIEW_2026-10-14.md`,
-  `data/intelligence/catalog/siegel.yaml`, `co-mirus`, `dev-siegel-tavr`,
-  `family-siegel`, `ver-siegel-tavr-2026`, `trial-siegel-{efs,star}`;
-  `artifacts/siegel-review-2026-10-14/` (ignored local evidence/preview/checks).
-- **Acceptance criteria:** eligible source/locator/date/access retained; new facts
-  stay draft; estimated trial counts distinct from analyzed populations; no
-  transfer of orthopedic alloy percentages or clinical claims to the valve;
-  historical Beall and vascular corrigendum gaps explicit; no unsupported
-  mitral/tricuspid products or patent linkage; payloads regenerated, full local
-  validation/build, actual Atlas/Data and approval preview checked.
-- **Review dependencies:** curator factual approval (related WOR-10), documentary
-  source/rights discipline (WOR-6/WOR-12). Publication or delivery is outside this
-  local outcome. No Linear status was changed.
-- **Handoff:** source-located additions prepared, with unknown revision/material
-  ratios and research holds explicit. Human approval pending; software and visual
-  validation results live in the ignored task review packet.
-
-If needed, append a dated entry with proposed project, outcome, evidence/paths,
-acceptance criteria, and dependency IDs. Replace it with the confirmed Linear
-link after filing.
-
-### 2026-10-13 — Manual News Insights template and first local draft (not filed)
-
-The owner explicitly requested that all work remain local. Linear was not
-contacted; this is a pending issue proposal, not a claim of an access failure or
-a filed issue. Search existing issues for the same outcome before reconciliation.
-
-- **Proposed project:** `P-WOR-2` / `visualize-sh-newsletter`, for the recurring
-  analytical selection/cadence contract. The News UI work has its own pending
-  webapp deliverable below; specialty histories/research remain editorials.
-- **Outcome/scope:** reusable manual-generation template with Format A shell,
-  credible Format B connections, Format C close, previous-completed-run through
-  current-run coverage, and flexible two-week/monthly intervals; generate the
-  inaugural September 30–October 13 local draft and review packet.
-- **Priority/labels:** Medium; `Improvement`, `Area: News`, `Work: Governance`.
-- **Pointers:** `prompts/news-insights.md`; `templates/news-insights/article.yaml`;
-  `docs/NEWS_INSIGHTS_WORKFLOW.md`; `data/news-insights/2026-10-13.yaml`;
-  `scripts/{news-insights-run,render-news-insights,news-insights-preview}.ts`;
-  ignored `artifacts/news-insights/2026-10-13/` and `runs.json`.
-- **Acceptance criteria:** discoverable reusable template; tested monthly gaps,
-  inclusive boundary/dedup/backfill/rerun behavior and no checkpoint on failure;
-  exact first fourteen-date inventory; actual draft adds reasoned consequences,
-  credible connection, and discriminating next questions; Luna extraction and
-  Sol critique with coordinator verification; source-located claims, original
-  figure/table, local preview and validation; no schedule/publication/send.
-- **Related work to inspect:** WOR-14 (recurring draft/review handoff), WOR-18
-  (cadence/archive discipline), WOR-19 (author-led workflow), WOR-23
-  (publication/link handoff), WOR-10 (draft factual signoff). These are contextual
-  links, not prerequisites for this exploratory proposal. Selecting a feature
-  format, implementing it, approving final copy, publishing, and delivering are
-  separate outcomes.
-- **Local handoff:** template and revised 427-word academic draft generated from 16 candidates,
-  selecting 6 for analysis; 7 eligible source records retain locators and limits.
-  Initial generation checkpoint October 13, 2026; author/factual review pending.
-  Validated internal Data links and an original highlighted Atlas capture accompany
-  the revision. Validation and visual-review results are in the ignored run packet. No Linear
-  status was changed; no external issue, schedule, publication, or send.
-
-### 2026-10-13 — News Insights and Editorial keyword highlighting (not filed)
-
-- **Proposed project:** `P-WOR-1` / `visualize-sh-webapp`.
-- **Outcome/scope:** explicit optional News `contentType` and purple/white bold
-  metadata keyword highlighting in both News surfaces, without duplicate pills;
-  ordinary News retains its existing keyword styling. Cross-topic
-  authored items must not infer a single primary product.
-- **Priority/labels:** Medium; `Feature`, `Area: News`.
-- **Pointers:** `schema/news.schema.json`, `schema/DATA_DICTIONARY.md`,
-  `src/types/entities.ts`, `src/components/NewsContentBadge.*`, `NewsFeed.tsx`,
-  `intelligence/NewsWorkspace.tsx`, `src/index.css`, `DESIGN.md`,
-  `scripts/news-content-type.test.ts`.
-- **Acceptance criteria:** explicit type/schema contract, backward-compatible
-  omission/default, no title/tag inference, unchanged draft exclusion, actual
-  rendered metadata keywords and category search, desktop/mobile visual review, focused
-  tests plus full local validation/build, owner changes preserved.
-- **Relations:** related to the local manual template/run outcome above and
-  existing WOR-14/WOR-19/WOR-23 workflows; reconcile matching issues first.
-- **Local handoff:** implementation prepared; a draft News Insights card and an
-  existing specialty Editorial preview demonstrate the keyword highlighting in the ignored
-  review-site copy. The preview does not assert a publication date or promote
-  article/source states. No external issue filed while local-only scope applies.
+None recorded. If needed, append a dated entry with proposed project, outcome,
+evidence/paths, acceptance criteria, and dependency IDs. Replace it with the
+confirmed Linear link after filing.

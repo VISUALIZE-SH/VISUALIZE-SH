@@ -1,4 +1,4 @@
-# Local documentary review 2026-10-14; all new evidence awaits curator approval.
+# WOR-32: owner approved the previewed records on 2026-10-14; documented research holds remain.
 observedAt: '2026-10-14'
 sources:
   - id: src-siegel-fih-20240606
@@ -6,7 +6,9 @@ sources:
     url: https://www.mirusmed.com/mirus-siegel-tavr-first-in-human-results-presented-at-new-york-valves/
     kind: manufacturer
     publisher: MiRus
-    publishedAt: { value: '2024-06-06', precision: day }
+    publishedAt:
+      value: '2024-06-06'
+      precision: day
     retrievedAt: '2026-10-14'
     access: public
   - id: src-siegel-tct-written-slides-20251026
@@ -14,7 +16,9 @@ sources:
     url: https://www.mirusmed.com/abstracts/
     kind: publication
     publisher: MiRus / Yadav et al.; TCT meeting material
-    publishedAt: { value: '2025-10-26', precision: day }
+    publishedAt:
+      value: '2025-10-26'
+      precision: day
     retrievedAt: '2026-10-14'
     access: public
     identifier: Written meeting slides; not a peer-reviewed journal manuscript
@@ -23,21 +27,39 @@ sources:
     url: https://doi.org/10.1016/j.spinee.2023.01.007
     kind: publication
     publisher: The Spine Journal
-    publishedAt: { value: '2023', precision: year }
+    publishedAt:
+      value: '2023'
+      precision: year
     retrievedAt: '2026-10-14'
     access: public
-    identifier: 'PMID:36706920; abstract reprinted on MiRus abstracts page; publisher full text not inspected'
-    citation: { containerTitle: The Spine Journal, volume: '23', issue: '6', pages: '900–911', doi: 10.1016/j.spinee.2023.01.007 }
+    identifier: PMID:36706920; abstract reprinted on MiRus abstracts page; publisher full text not inspected
+    citation:
+      containerTitle: The Spine Journal
+      volume: '23'
+      issue: '6'
+      pages: 900–911
+      doi: 10.1016/j.spinee.2023.01.007
   - id: src-more-toschka-invitro-2022
-    title: Molybdenum as a Potential Biocompatible and Resorbable Material for Osteosynthesis in Craniomaxillofacial Surgery—An In Vitro Study
+    title: >-
+      Molybdenum as a Potential Biocompatible and Resorbable Material for Osteosynthesis in Craniomaxillofacial
+      Surgery—An In Vitro Study
     url: https://doi.org/10.3390/ijms232415710
     kind: publication
     publisher: International Journal of Molecular Sciences
-    publishedAt: { value: '2022-12-11', precision: day }
+    publishedAt:
+      value: '2022-12-11'
+      precision: day
     retrievedAt: '2026-10-14'
     access: public
     citation:
-      authors: ['Toschka, A.', 'Pöhle, G.', 'Quadbeck, P.', 'Suschek, C. V.', 'Strauß, A.', 'Redlich, C.', 'Rana, M.']
+      authors:
+        - Toschka, A.
+        - Pöhle, G.
+        - Quadbeck, P.
+        - Suschek, C. V.
+        - Strauß, A.
+        - Redlich, C.
+        - Rana, M.
       containerTitle: International Journal of Molecular Sciences
       volume: '23'
       issue: '24'
@@ -48,36 +70,54 @@ sources:
     url: https://pubmed.ncbi.nlm.nih.gov/40784442/
     kind: publication
     publisher: Acta Biomaterialia / PubMed
-    publishedAt: { value: '2025-08-08', precision: day }
+    publishedAt:
+      value: '2025-08-08'
+      precision: day
     retrievedAt: '2026-10-14'
     access: public
-    identifier: 'PMID:40784442; abstract only; linked corrigendum requires review'
-    citation: { containerTitle: Acta Biomaterialia, volume: '204', pages: '657–673', doi: 10.1016/j.actbio.2025.08.015 }
+    identifier: PMID:40784442; abstract only; linked corrigendum requires review
+    citation:
+      containerTitle: Acta Biomaterialia
+      volume: '204'
+      pages: 657–673
+      doi: 10.1016/j.actbio.2025.08.015
   - id: src-more-zhang-corrigendum-2026
     title: Corrigendum to The Mo-14Re alloy, a promising candidate material for bioresorbable vascular scaffolds
     url: https://pubmed.ncbi.nlm.nih.gov/41513494/
     kind: publication
     publisher: Acta Biomaterialia / PubMed
-    publishedAt: { value: '2026-01-08', precision: day }
+    publishedAt:
+      value: '2026-01-08'
+      precision: day
     retrievedAt: '2026-10-14'
     access: public
-    identifier: 'PMID:41513494; correction metadata only; correction text unavailable'
-    citation: { containerTitle: Acta Biomaterialia, volume: '212', pages: '868–869', doi: 10.1016/j.actbio.2025.12.037 }
+    identifier: PMID:41513494; correction metadata only; correction text unavailable
+    citation:
+      containerTitle: Acta Biomaterialia
+      volume: '212'
+      pages: 868–869
+      doi: 10.1016/j.actbio.2025.12.037
   - id: src-siegel-efs-registry
     title: Siegel Transcatheter Aortic Valve Replacement System Early Feasibility Study
     url: https://clinicaltrials.gov/study/NCT06680427
     kind: registry
     publisher: ClinicalTrials.gov / MiRus
-    publishedAt: { value: '2025-12-03', precision: day }
+    publishedAt:
+      value: '2025-12-03'
+      precision: day
     retrievedAt: '2026-10-14'
     access: public
     identifier: NCT06680427; MR-001; record last update posted 2025-12-03
   - id: src-siegel-star-registry
-    title: STAR Trial — Siegel Transcatheter Aortic Valve Replacement in Patients With Symptomatic Severe Aortic Stenosis
+    title: >-
+      STAR Trial — Siegel Transcatheter Aortic Valve Replacement in Patients With Symptomatic Severe Aortic
+      Stenosis
     url: https://clinicaltrials.gov/study/NCT07278310
     kind: registry
     publisher: ClinicalTrials.gov / MiRus
-    publishedAt: { value: '2026-04-09', precision: day }
+    publishedAt:
+      value: '2026-04-09'
+      precision: day
     retrievedAt: '2026-10-14'
     access: public
     identifier: NCT07278310; MR-002; record last update posted 2026-04-09
@@ -93,7 +133,9 @@ sources:
     url: https://news.bostonscientific.com/2026-05-18-Boston-Scientific-announces-strategic-investment-in-MiRus-LLC
     kind: manufacturer
     publisher: Boston Scientific
-    publishedAt: { value: '2026-05-18', precision: day }
+    publishedAt:
+      value: '2026-05-18'
+      precision: day
     retrievedAt: '2026-10-14'
     access: public
   - id: src-siegel-boston-8k-20260518
@@ -101,25 +143,34 @@ sources:
     url: https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm
     kind: other
     publisher: Boston Scientific / SEC EDGAR
-    publishedAt: { value: '2026-05-18', precision: day }
+    publishedAt:
+      value: '2026-05-18'
+      precision: day
     retrievedAt: '2026-10-14'
     access: public
     identifier: SEC accession 0000885725-26-000041
   - id: src-siegel-star-enrollment-20260408
     title: MiRus Begins Patient Enrollment in the STAR Randomized Trial of the Siegel Transcatheter Aortic Valve
-    url: https://www.mirusmed.com/mirus-brings-patient-enrollment-in-the-star-randomized-trial-of-the-siegel-transcatheter-aortic-valve/
+    url: >-
+      https://www.mirusmed.com/mirus-brings-patient-enrollment-in-the-star-randomized-trial-of-the-siegel-transcatheter-aortic-valve/
     kind: manufacturer
     publisher: MiRus
-    publishedAt: { value: '2026-04-08', precision: day }
+    publishedAt:
+      value: '2026-04-08'
+      precision: day
     retrievedAt: '2026-10-14'
     access: public
 families:
   - id: family-siegel
     name: SIEGEL
     manufacturer: MiRus LLC
-    entityIds: [dev-siegel-tavr]
-    conditionIds: [cond-as]
-    description: Investigational balloon-expandable aortic valve platform. Unnamed MiRus mitral/tricuspid assets are not established as Siegel models or as using the same alloy.
+    entityIds:
+      - dev-siegel-tavr
+    conditionIds:
+      - cond-as
+    description: >-
+      Investigational balloon-expandable aortic valve platform. Unnamed MiRus mitral/tricuspid assets are not
+      established as Siegel models or as using the same alloy.
 versions:
   - id: ver-siegel-tavr-2026
     familyId: family-siegel
@@ -127,119 +178,234 @@ versions:
     name: SIEGEL TAVR (2026 disclosed configuration)
     kind: device
     clinicalRole: treats
-    summary: Investigational aortic valve; manufacturer describes a molybdenum–rhenium frame and dry porcine leaflets. The 2026 disclosure covers 23/26/29-mm sizes; earlier cohorts must be reviewed separately. Formal model/revision identifier is undisclosed.
+    summary: >-
+      Investigational aortic valve; manufacturer describes a molybdenum–rhenium frame and dry porcine leaflets. The
+      2026 disclosure covers 23/26/29-mm sizes; earlier cohorts must be reviewed separately. Formal model/revision
+      identifier is undisclosed.
     sourceRefs:
-      - { sourceId: src-siegel-product, locator: 'Balloon Expandable Transcatheter Aortic Valve; Molybdenum-Rhenium; Exceptional Biocompatibility; US sale disclaimer' }
-      - { sourceId: src-siegel-boston-investment-20260518, locator: 'Non-quotation design and sizing paragraphs; investigational-device caution' }
-    reviewStatus: draft
+      - sourceId: src-siegel-product
+        locator: >-
+          Balloon Expandable Transcatheter Aortic Valve; Molybdenum-Rhenium; Exceptional Biocompatibility; US sale
+          disclaimer
+      - sourceId: src-siegel-boston-investment-20260518
+        locator: Non-quotation design and sizing paragraphs; investigational-device caution
+    reviewStatus: reviewed
 specs:
   - version: ver-siegel-tavr-2026
     category: aortic-tavr-valves
     source: src-siegel-product
-    values:
-      expansion-mechanism: { value: Balloon-expandable, loc: 'Balloon Expandable Transcatheter Aortic Valve heading' }
-      frame-material:
-        value: Molybdenum–rhenium (MoRe); manufacturer-described nickel/cobalt-free
-        loc: 'Molybdenum-Rhenium; Better Biocompatibility'
-        limitation: Exact valve-frame elemental percentages are not independently established; orthopedic Mo-47.5Re composition must not be substituted.
-      leaflet-material: { value: Dry porcine tissue, loc: 'Exceptional Biocompatibility' }
-      access-route:
-        value: Transfemoral (STAR eligibility)
-        source: src-siegel-star-registry
-        loc: 'Participation Criteria, inclusion 5'
-        limitation: Study eligibility, not approved labeling.
-      available-sizes:
-        value: 23, 26, 29 mm (2026 disclosure)
-        source: src-siegel-boston-investment-20260518
-        loc: 'Non-quotation sizing paragraph beginning Uniquely'
-        limitation: Investigational sizes, not a commercially authorized size range; do not back-assign all sizes to EFS.
-      delivery-sheath:
-        value: 8 Fr expandable sheath (manufacturer nominal profile)
-        source: src-siegel-boston-investment-20260518
-        loc: 'Non-quotation sizing paragraph beginning Uniquely'
-        context: Described for all three 2026 sizes; pre-mounted on balloon. Nominal unexpanded sheath profile is not maximum expanded outer diameter or vessel eligibility.
-        limitation: No independent IFU dimensional verification or proven vascular-injury reduction.
-      indication-scope:
-        value: Investigational; severe symptomatic aortic stenosis in STAR
-        source: src-siegel-star-enrollment-20260408
-        loc: 'STAR population paragraph; final investigational-device disclaimer'
-        limitation: Trial population is not an FDA-approved commercial indication; IDE is permission to study.
+    values: {}
 claims:
-  - id: claim-siegel-tavr-2026-frame-coating
+  - availability: reported
+    basis: directly_reported
+    category: fit
+    comparisonAttributeId: access-route
+    id: claim-siegel-tavr-2026-access-route
+    key: access-route
+    label: Access
+    limitation: Study eligibility, not approved labeling.
+    observedAt: '2026-10-14'
+    reviewStatus: reviewed
+    sourceRefs:
+      - locator: Participation Criteria, inclusion 5
+        sourceId: src-siegel-star-registry
+    value: Transfemoral (STAR eligibility)
     versionId: ver-siegel-tavr-2026
+  - availability: reported
+    basis: directly_reported
+    category: fit
+    comparisonAttributeId: available-sizes
+    id: claim-siegel-tavr-2026-available-sizes
+    key: available-sizes
+    label: Sizes
+    limitation: Investigational sizes, not a commercially authorized size range; do not back-assign all sizes to EFS.
+    observedAt: '2026-10-14'
+    reviewStatus: reviewed
+    sourceRefs:
+      - locator: Non-quotation sizing paragraph beginning Uniquely
+        sourceId: src-siegel-boston-investment-20260518
+    value: 23, 26, 29 mm (2026 disclosure)
+    versionId: ver-siegel-tavr-2026
+  - availability: reported
+    basis: directly_reported
+    category: fit
+    comparisonAttributeId: delivery-sheath
+    context: >-
+      Described for all three 2026 sizes; pre-mounted on balloon. Nominal unexpanded sheath profile is not maximum
+      expanded outer diameter or vessel eligibility.
+    id: claim-siegel-tavr-2026-delivery-sheath
+    key: delivery-sheath
+    label: Delivery system
+    limitation: No independent IFU dimensional verification or proven vascular-injury reduction.
+    observedAt: '2026-10-14'
+    reviewStatus: reviewed
+    sourceRefs:
+      - locator: Non-quotation sizing paragraph beginning Uniquely
+        sourceId: src-siegel-boston-investment-20260518
+    value: 8 Fr expandable sheath (manufacturer nominal profile)
+    versionId: ver-siegel-tavr-2026
+  - availability: reported
+    basis: directly_reported
     category: design
+    comparisonAttributeId: expansion-mechanism
+    id: claim-siegel-tavr-2026-expansion-mechanism
+    key: expansion-mechanism
+    label: Expansion
+    observedAt: '2026-10-14'
+    reviewStatus: reviewed
+    sourceRefs:
+      - locator: Balloon Expandable Transcatheter Aortic Valve heading
+        sourceId: src-siegel-product
+    value: Balloon-expandable
+    versionId: ver-siegel-tavr-2026
+  - availability: reported
+    basis: directly_reported
+    category: design
+    context: >-
+      May 2026 written design description; coating formulation, release kinetics and clinical effect are
+      unverified.
+    id: claim-siegel-tavr-2026-frame-coating
     key: frame-coating
     label: Frame coating (sponsor disclosure)
-    value: Nitric oxide coating
-    availability: reported
-    basis: directly_reported
-    context: May 2026 written design description; coating formulation, release kinetics and clinical effect are unverified.
     limitation: No claim of reduced thrombosis or improved healing is inferred.
     observedAt: '2026-10-14'
+    reviewStatus: reviewed
     sourceRefs:
-      - { sourceId: src-siegel-boston-investment-20260518, locator: 'Non-quotation paragraph beginning The SIEGEL TAVR valve is designed' }
-    reviewStatus: draft
-  - id: claim-siegel-tavr-2026-open-cell
+      - locator: Non-quotation paragraph beginning The SIEGEL TAVR valve is designed
+        sourceId: src-siegel-boston-investment-20260518
+    value: Nitric oxide coating
     versionId: ver-siegel-tavr-2026
+  - availability: reported
+    basis: directly_reported
     category: design
+    comparisonAttributeId: frame-material
+    id: claim-siegel-tavr-2026-frame-material
+    key: frame-material
+    label: Frame material
+    limitation: >-
+      Exact valve-frame elemental percentages are not independently established; orthopedic Mo-47.5Re composition
+      must not be substituted.
+    observedAt: '2026-10-14'
+    reviewStatus: reviewed
+    sourceRefs:
+      - locator: Molybdenum-Rhenium; Better Biocompatibility
+        sourceId: src-siegel-product
+    value: Molybdenum–rhenium (MoRe); manufacturer-described nickel/cobalt-free
+    versionId: ver-siegel-tavr-2026
+  - availability: reported
+    basis: directly_reported
+    category: fit
+    comparisonAttributeId: indication-scope
+    id: claim-siegel-tavr-2026-indication-scope
+    key: indication-scope
+    label: US indication
+    limitation: Trial population is not an FDA-approved commercial indication; IDE is permission to study.
+    observedAt: '2026-10-14'
+    reviewStatus: reviewed
+    sourceRefs:
+      - locator: STAR population paragraph; final investigational-device disclaimer
+        sourceId: src-siegel-star-enrollment-20260408
+    value: Investigational; severe symptomatic aortic stenosis in STAR
+    versionId: ver-siegel-tavr-2026
+  - availability: reported
+    basis: directly_reported
+    category: design
+    comparisonAttributeId: leaflet-material
+    id: claim-siegel-tavr-2026-leaflet-material
+    key: leaflet-material
+    label: Leaflet material
+    observedAt: '2026-10-14'
+    reviewStatus: reviewed
+    sourceRefs:
+      - locator: Exceptional Biocompatibility
+        sourceId: src-siegel-product
+    value: Dry porcine tissue
+    versionId: ver-siegel-tavr-2026
+  - availability: reported
+    basis: directly_reported
+    category: design
+    id: claim-siegel-tavr-2026-open-cell
     key: frame-geometry
     label: Frame geometry (manufacturer description)
-    value: Open-cell frame
-    availability: reported
-    basis: directly_reported
-    limitation: Intended positioning and coronary-access advantages are design claims, not established comparative clinical outcomes.
+    limitation: >-
+      Intended positioning and coronary-access advantages are design claims, not established comparative clinical
+      outcomes.
     observedAt: '2026-10-14'
+    reviewStatus: reviewed
     sourceRefs:
-      - { sourceId: src-siegel-product, locator: 'Superior Coronary Access: Open Cell Geometry' }
-    reviewStatus: draft
+      - locator: 'Superior Coronary Access: Open Cell Geometry'
+        sourceId: src-siegel-product
+    value: Open-cell frame
+    versionId: ver-siegel-tavr-2026
 bibliography:
   - id: bib-siegel-fih-20240606
-    entityIds: [dev-siegel-tavr]
+    entityIds:
+      - dev-siegel-tavr
     versionIds: []
     sourceRefs:
-      - { sourceId: src-siegel-fih-20240606, locator: 'Opening non-quotation paragraphs: five-patient Chile FIH series; not the US EFS or randomized STAR cohort' }
-    reviewStatus: draft
+      - sourceId: src-siegel-fih-20240606
+        locator: 'Opening non-quotation paragraphs: five-patient Chile FIH series; not the US EFS or randomized STAR cohort'
+    reviewStatus: reviewed
   - id: bib-siegel-tct-20251026
-    entityIds: [dev-siegel-tavr]
+    entityIds:
+      - dev-siegel-tavr
     versionIds: []
     sourceRefs:
       - sourceId: src-siegel-tct-written-slides-20251026
         locator: >-
           MiRus Siegel TAVR EFS Results, TCT October 26, 2025; original images
-          /wp-content/uploads/2025/10/Slide9-1.png and Slide10-1.png.
-          Slide 9 mixes FIH5/EFS30 and conflicts between 30-day title and Discharge column;
-          Slide 10 EFS30 hemodynamics lacks dispersion and per-timepoint denominators.
-          Preliminary meeting evidence, not comparative clinical validation; no clean pooled safety claim extracted.
-    reviewStatus: draft
+          /wp-content/uploads/2025/10/Slide9-1.png and Slide10-1.png. Slide 9 mixes FIH5/EFS30 and conflicts
+          between 30-day title and Discharge column; Slide 10 EFS30 hemodynamics lacks dispersion and per-timepoint
+          denominators. Preliminary meeting evidence, not comparative clinical validation; no clean pooled safety
+          claim extracted.
+    reviewStatus: reviewed
   - id: bib-siegel-alloy-context
-    entityIds: [dev-siegel-tavr]
+    entityIds:
+      - dev-siegel-tavr
     versionIds: []
     sourceRefs:
       - sourceId: src-more-toschka-invitro-2022
-        locator: 'Section 2 pp.3–5, Figures 2–4, and Section 4.1.2: Mo41Re/Mo48Re in vitro materials context only; not Siegel composition, human outcomes or valve fatigue evidence'
+        locator: >-
+          Section 2 pp.3–5, Figures 2–4, and Section 4.1.2: Mo41Re/Mo48Re in vitro materials context only; not
+          Siegel composition, human outcomes or valve fatigue evidence
       - sourceId: src-more-mok-ion-release-abstract-2023
-        locator: 'Abstract reproduced at https://www.mirusmed.com/abstracts/, The Spine Journal January 2023 entry; in vitro Mo-47.5Re material context only; publisher full text not inspected'
+        locator: >-
+          Abstract reproduced at https://www.mirusmed.com/abstracts/, The Spine Journal January 2023 entry; in
+          vitro Mo-47.5Re material context only; publisher full text not inspected
       - sourceId: src-more-zhang-vascular-2025
-        locator: 'PubMed Abstract and Erratum in: preclinical Mo-14Re vascular-wire research only; findings held pending correction review; not a structural-heart device study'
+        locator: >-
+          PubMed Abstract and Erratum in: preclinical Mo-14Re vascular-wire research only; findings held pending
+          correction review; not a structural-heart device study
       - sourceId: src-more-zhang-corrigendum-2026
-        locator: 'PubMed citation metadata; no abstract/correction text inspected; unresolved correction to the Mo-14Re paper'
-    reviewStatus: draft
+        locator: >-
+          PubMed citation metadata; no abstract/correction text inspected; unresolved correction to the Mo-14Re
+          paper
+    reviewStatus: reviewed
   - id: bib-siegel-product
-    entityIds: [dev-siegel-tavr]
-    versionIds: [ver-siegel-tavr-2026]
+    entityIds:
+      - dev-siegel-tavr
+    versionIds:
+      - ver-siegel-tavr-2026
     sourceRefs:
-      - { sourceId: src-siegel-product, locator: 'Design, tissue, sheath and US sale disclaimer sections; undated live page' }
-    reviewStatus: draft
+      - sourceId: src-siegel-product
+        locator: Design, tissue, sheath and US sale disclaimer sections; undated live page
+    reviewStatus: reviewed
   - id: bib-siegel-boston-investment-20260518
-    entityIds: [dev-siegel-tavr]
-    versionIds: [ver-siegel-tavr-2026]
+    entityIds:
+      - dev-siegel-tavr
+    versionIds:
+      - ver-siegel-tavr-2026
     sourceRefs:
-      - { sourceId: src-siegel-boston-investment-20260518, locator: 'Non-quotation design/sizing paragraphs; option terms and investigational-device caution' }
-      - { sourceId: src-siegel-boston-8k-20260518, locator: 'Item 8.01, Investment Agreement with MiRus LLC' }
-    reviewStatus: draft
+      - sourceId: src-siegel-boston-investment-20260518
+        locator: Non-quotation design/sizing paragraphs; option terms and investigational-device caution
+      - sourceId: src-siegel-boston-8k-20260518
+        locator: Item 8.01, Investment Agreement with MiRus LLC
+    reviewStatus: reviewed
   - id: bib-siegel-star-enrollment-20260408
-    entityIds: [dev-siegel-tavr]
+    entityIds:
+      - dev-siegel-tavr
     versionIds: []
     sourceRefs:
-      - { sourceId: src-siegel-star-enrollment-20260408, locator: 'Opening paragraph; study design paragraph beginning The STAR Trial Chairpersons; final disclaimer' }
-    reviewStatus: draft
+      - sourceId: src-siegel-star-enrollment-20260408
+        locator: Opening paragraph; study design paragraph beginning The STAR Trial Chairpersons; final disclaimer
+    reviewStatus: reviewed
