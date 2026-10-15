@@ -43,7 +43,7 @@
     - label: Early feasibility registry
       url: https://clinicaltrials.gov/study/NCT06680427
   curation:
-    status: draft
+    status: curated
     lastUpdated: '2026-10-14'
     sources:
       - https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/
@@ -4141,3 +4141,282 @@
     notes: >-
       Graph treats edge represents ATTR-CM diagnostic care context only, not treatment efficacy; Atlas
       clinicalRole=detects. AL scope not mapped to absent condition node. No treatment claim.
+
+# Documentary records; source and scope limits accompany each entry.
+- id: dev-highlife-tmvr
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter mitral valve replacement
+  name: HighLife TMVR System
+  company: co-highlife
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Manufacturer reports European CE marking; U.S. investigational use only, without commercial approval.
+    Independent CE certificate/IFU not inspected.
+  mechanism: Dual-component valve-in-ring system using a sub-annular ring.
+  materials: []
+  pulse: 8
+  links:
+    - label: Manufacturer announcement
+      url: https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-its-tmvr-solution/
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-its-tmvr-solution/
+    notes: >-
+      Legacy graph remains draft under the
+      existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data
+      record is reviewed with its stated scope and unknowns. Draft geography-specific manufacturer claim, not
+      an independently verified regulatory decision. Empty materials avoid transferring historical implant
+      composition to the current commercial generations. No FDA marketing authorization inferred from IDE or
+      breakthrough designation.
+
+- id: dev-highlife-clarity
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter mitral valve replacement
+  name: HighLife Clarity TMVR System
+  company: co-highlife
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Manufacturer reports European CE marking; U.S. investigational use only, without commercial approval.
+    Independent CE certificate/IFU not inspected.
+  mechanism: >-
+    Valve-in-ring system with an open-cell outflow valve-frame design intended to address LVOTO-related
+    anatomical concerns.
+  materials: []
+  pulse: 8
+  links:
+    - label: Manufacturer announcement
+      url: >-
+        https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - >-
+        https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/
+    notes: >-
+      Legacy graph remains draft under the
+      existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data
+      record is reviewed with its stated scope and unknowns. Draft geography-specific manufacturer claim, not
+      an independently verified regulatory decision. Empty materials avoid transferring historical implant
+      composition to the current commercial generations. No FDA marketing authorization inferred from IDE or
+      breakthrough designation.
+
+- id: dig-ultrasight-guidance
+  type: therapy
+  therapyType: digital
+  subtype: Cardiac ultrasound image acquisition guidance
+  name: UltraSight cardiac ultrasound guidance
+  company: co-ultrasight
+  treats:
+    - cond-as
+  regulatoryStatus: approved
+  regulatoryDetail: US 510(k) clearances K223347 (2023-07-24) and K251416 (2025-12-17); adult 2D-TTE acquisition guidance.
+  description: Diagnostic acquisition adjunct; the AS graph link is research context, not an AS-specific FDA indication.
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223347.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K251416.pdf
+      - >-
+        https://ultrasight.com/ultrasight-raises-24-million-to-scale-its-ai-guided-cardiac-workflow-platform-across-u-s-health-systems/
+      - https://jamanetwork.com/journals/jamacardiology/article-abstract/2853493
+    notes: >-
+      WOR-30: FDA K223347 PDF p4
+      indication and p7 hardware row; K251416 PDF p1 decision and p4 indication. JAMA abstract: AS workflow
+      context. This graph approved enum represents authorization, specifically clearance rather than PMA
+      approval. Echosystem is a manufacturer workflow/product-line name, not a software build. New factual
+      records remain draft.
+  pulse: 5
+
+- id: dig-lubdub-heart-health
+  type: therapy
+  therapyType: digital
+  subtype: Cardiac screening and monitoring
+  name: Lubdub heart-health platform
+  company: co-lubdub
+  treats:
+    - cond-hf
+  regulatoryStatus: unknown
+  regulatoryDetail: Authorization and exact commercial configurations not established in inspected sources.
+  mechanism: Integrates ECG, biomarker and echocardiographic information for cardiac screening and monitoring.
+  description: >-
+    Heart Foundation written project description identifies wearable ECG, saliva biosensing and wearable
+    ultrasound components.
+  pulse: 5
+  links:
+    - label: Written Heart First project description
+      url: https://www.heartfoundation.org.au/catalyst/heart-first-initiative
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.lubdub.ai/
+      - https://www.heartfoundation.org.au/catalyst/heart-first-initiative
+    notes: >-
+      The cond-hf edge denotes research
+      motivation for earlier cardiac detection in the written Problem/Solution sections, not a treatment or
+      clearance claim. No numerical performance, patent linkage, interview quotation or diagnostic-efficacy
+      assertion extracted. Hardware model identifiers/software version unspecified.
+
+- id: dev-respiree-rs001
+  type: therapy
+  therapyType: device
+  subtype: Cardio-respiratory monitoring
+  name: Respiree Cardio-Respiratory Monitor (RS001)
+  company: co-respiree
+  treats:
+    - cond-hf
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    FDA 510(k) cleared 2023-03-08; Adults; non-invasive spot respiration-rate checking in
+    hospitals/hospital-type facilities outside ICU. No FDA-cleared HF-prediction indication.
+  mechanism: Chest-worn optical sensor measures respiratory motion for spot respiration-rate checking.
+  materials: []
+  pulse: 5
+  links:
+    - label: FDA clearance and indications
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223681.pdf
+  timeline:
+    date: '2023-03-08'
+    precision: day
+    dateBasis: fda-approval
+    event: FDA 510(k) clearance
+    source: https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223681.pdf
+    notes: >-
+      Existing timeline enum fda-approval represents verified marketing authorization; actual pathway is
+      clearance, not PMA approval.
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223681.pdf
+      - >-
+        https://www.prnewswire.com/news-releases/digital-therapeutics-startup-respiree-gains-us-fda-clearance-for-its-rs001-cardio-respiratory-wearable-301766399.html
+    notes: >-
+      Legacy graph remains draft under the
+      existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data
+      record is reviewed with its stated scope and unknowns. Permanent implant materials are inapplicable;
+      empty draft materials list. cond-hf edge identifies sponsor-described patient application context from
+      original2023 written disclosure, not a disease-specific FDA indication. FDA label limited to respiration
+      rate: do not borrow pulse rate/SpO2 from Biobeat reference-device column.
+
+- id: dev-respiree-rs001-d
+  type: therapy
+  therapyType: device
+  subtype: Cardio-respiratory monitoring
+  name: Respiree Cardio-Respiratory Monitor System (RS001.D)
+  company: co-respiree
+  treats:
+    - cond-hf
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    FDA 510(k) cleared 2025-08-05; Adults; non-invasive spot respiration-rate checking in non-ICU
+    hospital/hospital-type and home settings. No FDA-cleared HF-prediction indication.
+  mechanism: Chest-worn optical sensor measures respiratory motion for spot respiration-rate checking.
+  materials: []
+  pulse: 5
+  links:
+    - label: FDA clearance and indications
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250934.pdf
+  timeline:
+    date: '2025-08-05'
+    precision: day
+    dateBasis: fda-approval
+    event: FDA 510(k) clearance
+    source: https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250934.pdf
+    notes: >-
+      Existing timeline enum fda-approval represents verified marketing authorization; actual pathway is
+      clearance, not PMA approval.
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250934.pdf
+      - >-
+        https://www.prnewswire.com/news-releases/digital-therapeutics-startup-respiree-gains-us-fda-clearance-for-its-rs001-cardio-respiratory-wearable-301766399.html
+    notes: >-
+      Legacy graph remains draft under the
+      existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data
+      record is reviewed with its stated scope and unknowns. Permanent implant materials are inapplicable;
+      empty draft materials list. cond-hf edge identifies sponsor-described patient application context from
+      original2023 written disclosure, not a disease-specific FDA indication. FDA label limited to respiration
+      rate: do not borrow pulse rate/SpO2 from Biobeat reference-device column.
+
+- id: dev-conkay-annuloplasty
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter tricuspid annuloplasty
+  name: ConKay annular repair development platform
+  company: co-conkay-medical
+  treats:
+    - cond-tr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Development platform described in 2024 manufacturer disclosures. No FDA authorization,
+    investigational-study permission, registry identity or human study start verified in this pass.
+  description: >-
+    Unnamed annular repair catheter platform under development for tricuspid regurgitation. No commercial
+    model, generation, size range or implant materials verified.
+  mechanism: >-
+    Manufacturer describes a catheter-based annular repair concept leaving an implant around the native valve
+    annulus.
+  materials: []
+  links:
+    - label: ConKay market focus
+      url: https://www.conkaymedical.com/market
+    - label: Original development and financing disclosure
+      url: >-
+        https://www.businesswire.com/news/home/20240318732658/en/ConKay-Medical-Systems-Raises-$1.8M-in-Oversubscribed-Seed-Funding-Round
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.conkaymedical.com/market
+      - >-
+        https://www.businesswire.com/news/home/20240318732658/en/ConKay-Medical-Systems-Raises-$1.8M-in-Oversubscribed-Seed-Funding-Round
+      - >-
+        https://www.einpresswire.com/article/743915283/conkay-medical-systems-adds-top-cardiologist-to-advisory-board-moves-to-larger-headquarters
+    notes: >-
+      Legacy graph remains draft under the
+      existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data
+      record is reviewed with its stated scope and unknowns. WOR-30: Market final paragraph; original Business
+      Wire release non-quotation development and catheter paragraphs; Sep16 2024 EIN manufacturer release
+      non-quotation device paragraph. Investigational is broad development classification, not evidence that a
+      registered clinical trial is ongoing. No named commercial device or exact build. Materials remain
+      unknown; no source images or unsupported clinical benefit imported.
+  pulse: 5
+
+- id: dig-ultrasight-pvadiq
+  type: therapy
+  therapyType: digital
+  subtype: PVAD ultrasound position-assessment analysis
+  name: UltraSight PVAD IQ Software
+  company: co-ultrasight
+  treats:
+    - cond-hf
+  regulatoryStatus: approved
+  regulatoryDetail: US 510(k) K252235, 2025-12-18; adult PVAD ultrasound analysis.
+  description: >-
+    Physician decision-support analysis for adult PVAD ultrasound. The HF graph edge is broad critical-care
+    context, not a disease-specific FDA indication.
+  curation:
+    status: curated
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252235.pdf
+      - https://ultrasight.com/ultrasight-in-cardiac-critical-care/
+    notes: >-
+      WOR-30: FDA PDF p1 decision, p4
+      indication; Feb25 manufacturer announcement. Graph approved enum denotes clearance. Separate from
+      UltraSight acquisition guidance/AS research; numbered software build unverified. Clinical context is
+      adult PVAD support; no device-treatment efficacy inferred.
+  pulse: 5

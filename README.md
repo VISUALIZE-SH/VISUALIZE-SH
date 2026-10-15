@@ -35,6 +35,8 @@ publication separate; draft article previews remain local.
 
 ## Quick start
 
+Use Node 20.19+ or 22.12+; GitHub Actions uses Node 22.
+
 ```bash
 npm ci
 npm run dev          # builds data, then starts Vite at http://localhost:5173
