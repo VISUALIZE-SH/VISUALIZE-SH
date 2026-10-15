@@ -2,6 +2,21 @@
 # Schema: schema/company.schema.json   |   See schema/DATA_DICTIONARY.md
 # id prefix: co-
 
+- id: co-mirus
+  type: company
+  name: MiRus LLC
+  website: https://www.mirusmed.com/
+  description: Developer of the investigational SIEGEL aortic valve and MoRe molybdenum–rhenium biomaterials.
+  curation:
+    status: draft
+    lastUpdated: '2026-10-14'
+    sources:
+      - https://www.mirusmed.com/
+      - https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm
+    notes: >-
+      Local documentary review only. SEC Form 8-K Item 8.01 records an investment agreement and conditional TAVR acquisition
+      option; this is not evidence of completed acquisition. Unnamed mitral/tricuspid assets have unverified materials.
+
 - id: co-boston-scientific
   type: company
   name: "Boston Scientific"
@@ -974,7 +989,6 @@
     notes: >-
       WOR-26: FDA PDF p.5 (510(k) Summary p.1), Applicant, and p.6 manufacturer row. No ownership, financing or current
       distribution inference. Public source retrieved 2026-10-07.
-
 - id: co-emboline
   type: company
   name: Emboline
@@ -1012,3 +1026,96 @@
       founder/CEO role; June 29, 2026 company-authored release, About the Company establishes privately held status. Public
       documents retrieved 2026-10-09. 
       no founding year, financing total or ownership inference.
+
+- id: co-tempus-ai
+  type: company
+  name: Tempus AI, Inc.
+  ticker: TEM
+  website: https://www.tempus.com
+  description: Technology company and FDA 510(k) applicant for Tempus ECG-MR (K254297).
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K254297
+      - >-
+        https://www.tempus.com/news/pr/tempus-receives-fda-clearance-for-its-ecg-mr-ai-product-designed-to-identify-undiagnosed-mitral-regurgitation/
+    notes: >-
+      Applicant status is from FDA K254297. Do not infer the manufacturer relationship solely from the
+      applicant field; product relationship should be curator-reviewed.
+
+- id: co-valgen-medtech
+  type: company
+  name: Hangzhou Valgen Medtech Co., Ltd
+  description: Sponsor/manufacturer of the DragonFly-T system evaluated in TEER-CHINA.
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05556460
+    notes: >-
+      protocolSection.sponsorCollaboratorsModule.leadSponsor and armsInterventionsModule; corporate
+      parent/acquisition fields not inferred.
+
+- id: co-affinia-therapeutics
+  type: company
+  name: Affinia Therapeutics
+  website: https://affiniatx.com/
+  description: >-
+    Clinical-stage biotechnology company developing gene therapies, including investigational AFTX-201 for
+    BAG3-associated dilated cardiomyopathy.
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - >-
+        https://affiniatx.com/affinia-therapeutics-aftx-201-and-upbeat-clinical-trial-in-bag3-dcm-featured-at-the-heart-failure-society-of-america-hfsa-annual-scientific-meeting-2026/
+
+- id: co-berlin-heals
+  type: company
+  name: Berlin Heals GmbH
+  website: https://www.berlinheals.com/
+  description: C-MIC trial sponsor; Berlin Heals Holding AG is separately named in corporate releases.
+  pulse: 6
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT07795359
+    notes: Sponsor identity confirmed in registry; corporate parent relationship not independently reconciled.
+
+- id: co-cardurion
+  type: company
+  name: Cardurion Pharmaceuticals
+  hq: Burlington, Massachusetts, USA
+  website: https://cardurion.com
+  description: >-
+    Clinical-stage developer of cardiovascular therapies, including investigational PDE9 inhibitor
+    tovinontrine.
+  pulse: 7
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - >-
+        https://cardurion.com/cardurion-pharmaceuticals-presents-phase-2-results-for-tovinontrine-crd-750-a-pde9-inhibitor-as-a-novel-treatment-for-heart-failure/
+
+- id: co-daxor
+  type: company
+  name: Daxor Corporation
+  ticker: DXR
+  website: https://daxor.com
+  description: Applicant for FDA-cleared blood volume analyzer submissions K964406, K251087, and K261099.
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K251087
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261099
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K964406
+      - >-
+        https://daxor.com/daxor-broadens-outpatient-footprint-with-initiation-of-ezbva-lab-diagnostic-services-in-kansas/
+      - https://daxor.com/daxor-to-showcase-next-gen-blood-volume-analyzer-new-clinical-data-at-hfsa-2026/
+    notes: >-
+      FDA identifies Daxor Corporation as applicant; company is identified as sponsor in its own corporate
+      disclosures. Product details use FDA submissions, not promotional outcome claims.

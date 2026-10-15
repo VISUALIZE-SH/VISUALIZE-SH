@@ -3,6 +3,7 @@ import type { GraphNodeData, NewsItem } from '../../types/entities'
 import type { IntelligenceData, ProductFamily, ProductVersion } from '../../types/intelligence'
 import { formatEvidenceDate, isOnOrBefore } from '../../data/intelligence'
 import { normalizeAtlasTopic } from '../../data/atlas-topic'
+import NewsContentBadge, { newsContentTypeLabel } from '../NewsContentBadge'
 import './intelligence.css'
 
 export interface NewsWorkspaceProps {
@@ -31,6 +32,11 @@ interface RelatedStory {
   score: number
 }
 
+function subjectTopics(item: NewsItem): string[] {
+  return item.topicTags.filter(tag => !item.contentType || item.contentType === 'news'
+    || tag.trim().toLowerCase() !== newsContentTypeLabel(item.contentType).toLowerCase())
+}
+
 function familyTrails(data: IntelligenceData, item: NewsItem): FamilyTrail[] {
   const directVersionIds = new Set(item.relevantNodeIds)
   return data.families.flatMap((family) => {
@@ -42,11 +48,11 @@ function familyTrails(data: IntelligenceData, item: NewsItem): FamilyTrail[] {
 
 function relatedStories(item: NewsItem, stories: NewsItem[], nodesById: Map<string, GraphNodeData>): RelatedStory[] {
   const nodeIds = new Set(item.relevantNodeIds)
-  const topics = new Set(item.topicTags.map((tag) => tag.toLowerCase()))
+  const topics = new Set(subjectTopics(item).map((tag) => tag.toLowerCase()))
   return stories.flatMap((candidate) => {
     if (candidate.id === item.id) return []
     const sharedNodes = candidate.relevantNodeIds.filter((id) => nodeIds.has(id))
-    const sharedTopics = candidate.topicTags.filter((tag) => topics.has(tag.toLowerCase()))
+    const sharedTopics = subjectTopics(candidate).filter((tag) => topics.has(tag.toLowerCase()))
     const deviceLinks = sharedNodes.filter((id) => {
       const group = nodesById.get(id)?.group
       return group === 'device' || group === 'digital' || group === 'pharmaceutical' || group === 'procedure'
@@ -83,7 +89,8 @@ function ConnectionPanel({
     .map((id) => nodesById.get(id)?.label)
     .filter((label): label is string => Boolean(label))
     .slice(0, 4)
-  const count = trails.length + related.length + (item.topicTags.length ? 1 : 0)
+  const topics = subjectTopics(item)
+  const count = trails.length + related.length + (topics.length || entityLabels.length ? 1 : 0)
 
   if (!count) return null
   return <section className="intel-news-connections" aria-label={`Connections for ${item.title}`}>
@@ -112,13 +119,13 @@ function ConnectionPanel({
           })}
         </div>
       </section>}
-      <section className="intel-connection-branch">
-        <p className="intel-connection-label">Topic trail</p>
-        <div className="intel-topic-trail">{item.topicTags.map((tag) => atlasTopics.has(normalizeAtlasTopic(tag))
+      {(topics.length > 0 || entityLabels.length > 0) && <section className="intel-connection-branch">
+        <p className="intel-connection-label">{topics.length ? 'Topic trail' : 'Entity context'}</p>
+        <div className="intel-topic-trail">{topics.map((tag) => atlasTopics.has(normalizeAtlasTopic(tag))
           ? <button type="button" key={tag} onClick={() => onOpenAtlasTopic(tag)} title={`Filter the Atlas by ${tag}`}>{tag}</button>
           : <span key={tag}>{tag}</span>)}</div>
         {entityLabels.length > 0 && <p className="intel-entity-context">Also linked to {entityLabels.join(' · ')}</p>}
-      </section>
+      </section>}
     </div>
   </section>
 }
@@ -131,7 +138,7 @@ export default function NewsWorkspace({
     if (newsFrom && item.publishedAt < newsFrom) return false
     if (newsTo && !isOnOrBefore(item.publishedAt, newsTo)) return false
     const q = searchQuery.trim().toLowerCase()
-    if (q && ![item.title, item.summary, item.sourceName, item.publishedAt, ...item.topicTags].join(' ').toLowerCase().includes(q)) return false
+    if (q && ![item.title, item.summary, item.sourceName, item.publishedAt, newsContentTypeLabel(item.contentType), ...item.topicTags].join(' ').toLowerCase().includes(q)) return false
     if (!versionId) return true
     return familyTrails(data, item).some(({ versions }) => versions.some((version) => version.id === versionId))
       || item.relevantNodeIds.includes(versionId)
@@ -158,12 +165,20 @@ export default function NewsWorkspace({
           const trails = familyTrails(data, item)
           const exactVersion = data.versions.find((version) => item.relevantNodeIds.includes(version.id))
           const trailVersions = trails.flatMap((trail) => trail.versions)
-          const primaryVersion = exactVersion ?? trailVersions[trailVersions.length - 1]
+          // A cross-topic authored article need not have one primary product.
+          const primaryVersion = item.contentType && item.contentType !== 'news'
+            ? undefined
+            : exactVersion ?? trailVersions[trailVersions.length - 1]
           const lifecycle = lifecycleTag(item)
           return <article className="intel-news-story" id={`story-${item.id}`} key={item.id}>
             <time className="intel-news-date" dateTime={item.publishedAt}>{formatEvidenceDate(item.publishedAt)}</time>
             <div className="intel-news-story-body">
-              <div className="intel-news-story-meta"><span>{item.topicTags[0] ?? 'Structural heart'}</span><span>{item.sourceName}</span>{lifecycle && <span className="intel-lifecycle-tag">{lifecycle}</span>}</div>
+              <div className="intel-news-story-meta">
+                {item.contentType && item.contentType !== 'news'
+                  ? <NewsContentBadge contentType={item.contentType} />
+                  : <span>{item.topicTags[0] ?? 'Structural heart'}</span>}
+                <span>{item.sourceName}</span>{lifecycle && <span className="intel-lifecycle-tag">{lifecycle}</span>}
+              </div>
               <h3>{item.title}</h3>
               <p className="intel-news-brief">{item.summary}</p>
               <div className="intel-news-source-row">

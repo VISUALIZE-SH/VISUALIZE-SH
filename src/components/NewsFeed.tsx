@@ -1,5 +1,6 @@
 import type { KeyboardEvent, MouseEvent } from 'react'
 import type { NewsItem } from '../types/entities'
+import NewsContentBadge, { newsContentTypeLabel } from './NewsContentBadge'
 import './NewsFeed.css'
 
 export interface NewsFeedProps {
@@ -72,6 +73,8 @@ export default function NewsFeed({
       <div className="news-feed-list" role="list">
         {items.map((item) => {
           const selected = item.id === selectedItemId
+          const topics = item.topicTags.filter(topic => !item.contentType || item.contentType === 'news'
+            || topic.trim().toLowerCase() !== newsContentTypeLabel(item.contentType).toLowerCase())
           return (
             <article
               key={item.id}
@@ -83,6 +86,7 @@ export default function NewsFeed({
               onKeyDown={(event) => handleKeyDown(event, item)}
             >
               <div className="news-card-meta">
+                <NewsContentBadge contentType={item.contentType} />
                 <span className="news-card-source">
                   {sourceLabel(item.sourceUrl, item.sourceName)}
                 </span>
@@ -91,9 +95,9 @@ export default function NewsFeed({
               </div>
               <h3 className="news-card-title">{item.title}</h3>
               <p className="news-card-summary">{item.summary}</p>
-              {item.topicTags.length > 0 && (
+              {topics.length > 0 && (
                 <ul className="news-card-topics" aria-label="Topics">
-                  {item.topicTags.map((topic) => <li key={topic}>{topic}</li>)}
+                  {topics.map((topic) => <li key={topic}>{topic}</li>)}
                 </ul>
               )}
               <a

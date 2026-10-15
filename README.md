@@ -16,6 +16,16 @@ evolves, and **Data** lets readers inspect the source-linked evidence behind a
 comparison. The graph remains the overview and navigation surface. Versioned
 evidence is loaded from the static `public/intelligence.json` payload.
 
+**News Insights** adds a manually generated analytical edition: consequential
+changes, credible connections, and the evidence that would change the reading
+next. Its window runs from the previous completed generation through today,
+usually about two weeks and longer in quiet periods. News Insights and specialty
+Editorial cards highlight their existing metadata keyword in purple with bold
+white text. The reusable
+[generation template](prompts/news-insights.md) and
+[local workflow](docs/NEWS_INSIGHTS_WORKFLOW.md) keep drafting, review, and
+publication separate; draft article previews remain local.
+
 > ⚕️ **This is not a clinical advice tool.** Content here is not provided or
 > endorsed by the organizations listed. For educational and informational use
 > only. This is not medical advice and may be incomplete or out of date.
@@ -30,7 +40,10 @@ npm ci
 npm run dev          # builds data, then starts Vite at http://localhost:5173
 ```
 
-New collaborators should read **[`docs/HANDOFF.md`](docs/HANDOFF.md)** for the
+New collaborators should read [`AGENTS.md`](AGENTS.md),
+[`docs/LINEAR_WORKFLOW.md`](docs/LINEAR_WORKFLOW.md), and
+[`docs/SOURCE_CURATION_POLICY.md`](docs/SOURCE_CURATION_POLICY.md) for project
+routing, Luna/Sol delegation, and eligible factual sources. Read **[`docs/HANDOFF.md`](docs/HANDOFF.md)** for the
 source-of-truth map, review boundaries, and a complete local verification path.
 The current checkout may contain uncommitted work; inspect `git status --short`
 before changing files.

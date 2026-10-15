@@ -2,6 +2,51 @@
 # Schema: schema/trial.schema.json   |   See schema/DATA_DICTIONARY.md
 # id prefix: trial-
 # Every `therapies` and `conditions` id must resolve (build:data enforces this).
+
+- id: trial-siegel-star
+  type: trial
+  name: STAR (SIEGEL TAVR)
+  nctId: NCT07278310
+  phase: Pivotal randomized trial
+  status: recruiting
+  conditions: [cond-as]
+  therapies: [dev-siegel-tavr]
+  enrollment: 1025
+  primaryEndpoint: Composite of all-cause mortality, all stroke and valve/procedure-related cardiovascular rehospitalization at 1 year (VARC-3).
+  outcomeSummary: No registry results posted. Enrollment is the estimated target; April 2028 completion remains estimated in the April 2026 registry revision.
+  resultStatus: ongoing
+  references: [https://clinicaltrials.gov/study/NCT07278310]
+  curation:
+    status: draft
+    lastUpdated: '2026-10-14'
+    sources: [https://clinicaltrials.gov/study/NCT07278310]
+    notes: >-
+      Registry header, Study Overview, Study Plan, Participation Criteria and Study Record Dates inspected 2026-10-14.
+      Last update posted 2026-04-09; estimated enrollment 1025, not enrolled/analyzed. Randomized, parallel, outcomes-assessor
+      masked; commercially available TAVR control. Sponsor April 8 release reports first treatments, while registry start
+      remains an April 2026 estimate. Exact hardware revision not disclosed. No market-approval timeline assigned.
+
+- id: trial-siegel-efs
+  type: trial
+  name: SIEGEL TAVR US Early Feasibility Study
+  nctId: NCT06680427
+  phase: Early feasibility; single-arm
+  status: active
+  conditions: [cond-as]
+  therapies: [dev-siegel-tavr]
+  enrollment: 30
+  primaryEndpoint: Immediate technical implantation success; all-cause mortality or disabling stroke at 30 days (VARC-3).
+  outcomeSummary: Active, not recruiting in the last posted registry revision (December 3, 2025); no registry results posted. Estimated 30 participants, not an analyzed denominator.
+  resultStatus: ongoing
+  references: [https://clinicaltrials.gov/study/NCT06680427]
+  curation:
+    status: draft
+    lastUpdated: '2026-10-14'
+    sources: [https://clinicaltrials.gov/study/NCT06680427]
+    notes: >-
+      Study Overview, Participation Criteria, Study Plan and Study Record Dates inspected 2026-10-14. Actual start 2025-03-26;
+      estimated December 2025 completion is stale and does not establish completion. Eligibility: age 50+, transfemoral,
+      23/26-mm valves; excludes bicuspid/unicuspid. Do not combine with Chile first-in-human series or infer 29-mm EFS data.
 # NOTE: nctId is included only where verified. Where omitted, `references` carries
 # a ClinicalTrials.gov search link; the refresh routine should fill verified NCT ids.
 
@@ -974,10 +1019,10 @@
     notes: "ClinicalTrials.gov lists estimated total enrollment of 380 across the randomized sham-controlled cohort and nonrandomized registry arm; this is the overall registry target, not the randomized comparison size."
 - id: trial-serra-i
   type: trial
-  name: "SERRA-I"
+  name: "SERRA-I (Europe)"
   nctId: "NCT06991322"
   phase: "Early feasibility study"
-  status: recruiting
+  status: active
   timeline:
     date: "2025-06-18"
     precision: day
@@ -987,16 +1032,20 @@
   conditions: [cond-cmd]
   therapies: [dev-aflux]
   enrollment: 30
-  primaryEndpoint: "Safety and clinical performance of the A-FLUX self-expanding coronary sinus reducer for symptomatic CMD"
-  outcomeSummary: "European early feasibility study of the A-FLUX coronary sinus reducer for refractory angina from coronary microvascular dysfunction; enrolling, no readout yet."
+  primaryEndpoint: "Procedural success through 12 months and rate of device-/procedure-related serious adverse events at 30 days"
+  outcomeSummary: "European single-group early feasibility study; active, not recruiting as of the August 26, 2026 registry update. Estimated enrollment 30; no registry results posted."
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/study/NCT06991322"]
   pulse: 3
   curation:
     status: draft
-    lastUpdated: 2026-07-08
+    lastUpdated: '2026-10-06'
     sources: ["https://clinicaltrials.gov/study/NCT06991322"]
-    notes: "A second, similarly-titled ClinicalTrials.gov record (NCT07449325, 'Self-Expanding Coronary Sinus Reducer for Treatment of Symptomatic Coronary Microvascular Dysfunction (CMD)', est. start April 2026) also references the A-FLUX device without the 'SERRA-I' name — human curator: verify whether this is a distinct (e.g. US) trial or a re-registration before adding separately."
+    notes: >-
+      WOR-25: Retrieved official ClinicalTrials.gov API record on 2026-10-06. identificationModule orgStudyId VHC-00002;
+      statusModule overallStatus ACTIVE_NOT_RECRUITING and lastUpdatePostDateStruct 2026-08-26; designModule enrollmentInfo
+      ESTIMATED 30; outcomesModule primaryOutcomes; contactsLocationsModule lists Netherlands, Poland and Spain. Separate US protocol
+      VHC-00004 / NCT07449325 now has trial-serra-i-us; do not combine target counts or infer actual treatment enrollment.
 
 # ============================ VALVULAR TRIALS ============================
 
@@ -2030,6 +2079,36 @@
       from the ≥30 kg US label. Indexed official CTG record verifies actual start April 17, 2024 and active, not recruiting; its long-term
       extension continues after the positive primary readout.
 
+- id: trial-serra-i-us
+  type: trial
+  name: SERRA-I US
+  nctId: NCT07449325
+  phase: Early feasibility study
+  status: suspended
+  conditions: [cond-cmd]
+  therapies: [dev-aflux]
+  enrollment: 30
+  primaryEndpoint: Procedural success through 12 months and rate of device-/procedure-related serious adverse events through 30 days
+  outcomeSummary: US single-group early feasibility study; suspended to implement a protocol change as of the September 25, 2026 registry update. Estimated enrollment 30; no registry results posted.
+  resultStatus: ongoing
+  references: [https://clinicaltrials.gov/study/NCT07449325]
+  timeline:
+    date: '2026-04-07'
+    precision: day
+    dateBasis: trial-start
+    event: US study start (registry actual)
+    source: https://clinicaltrials.gov/study/NCT07449325
+  pulse: 3
+  curation:
+    status: draft
+    lastUpdated: '2026-10-06'
+    sources: [https://clinicaltrials.gov/study/NCT07449325]
+    notes: >-
+      WOR-25: Official API retrieved 2026-10-06. identificationModule acronym SERRA-I US, orgStudyId VHC-00004;
+      statusModule overallStatus SUSPENDED, whyStopped protocol change, lastUpdatePostDateStruct 2026-09-25 and startDateStruct ACTUAL;
+      designModule enrollmentInfo ESTIMATED 30; outcomesModule primaryOutcomes. US locations: Yale, Christ Hospital and Cleveland Clinic.
+      Distinct protocol from European NCT06991322; do not sum estimated enrollments or imply an adverse-event suspension.
+
 - id: trial-autus-pivotal
   type: trial
   name: AUTUS Valve Pivotal Study
@@ -2069,7 +2148,6 @@
       retrieved 2026-10-07. Last update posted 2026-09-28 (submitted September 24); 62 is actual registry enrollment, not every
       endpoint denominator. Registered ages 18 months–16 years are trial criteria, not approved labeling. Separate from the
       11-patient EFS and the continued-access target.
-
 - id: trial-autus-continued-access
   type: trial
   name: AUTUS Valve Continued Access Study
@@ -2098,3 +2176,420 @@
       2026-10-07; last update posted 2026-08-10. The 36 count is a registered estimate, not actual enrollment or an
       approval-cohort denominator. Keep distinct from pivotal NCT05006404. Registered follow-up extends to 2036; exact device
       model not disclosed.
+
+- id: trial-link-hf2
+  type: trial
+  name: LINK-HF2
+  nctId: NCT04502563
+  phase: RCT
+  status: completed
+  conditions:
+    - cond-hf
+  therapies:
+    - dig-link-hf2-monitoring
+  enrollment: 176
+  year: 2026
+  primaryEndpoint: 90-day heart failure hospitalization rate
+  resultStatus: mixed
+  outcomeSummary: >-
+    Registry reports13 versus16 HF hospitalizations in80 versus91 analyzed participants without comparative
+    statistics. ACC26 abstract did not demonstrate a reduction in HF hospitalization; notification instability
+    is a separate endpoint.
+  timeline:
+    date: '2021-04-19'
+    precision: day
+    dateBasis: trial-start
+    event: Actual trial start
+    source: https://clinicaltrials.gov/api/v2/studies/NCT04502563
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT04502563
+    - https://cdn.clinicaltrials.gov/large-docs/63/NCT04502563/Prot_SAP_001.pdf
+    - https://www.jacc.org/doi/10.1016/j.jacc.2026.02.1489
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT04502563
+      - https://cdn.clinicaltrials.gov/large-docs/63/NCT04502563/Prot_SAP_001.pdf
+      - https://www.jacc.org/doi/10.1016/j.jacc.2026.02.1489
+    notes: >-
+      Actual registry enrollment176 differs from171 analyzed (80/91) and protocol240 planned. Registry reports
+      quadruple masking; final Oct9 paper unavailable and design discrepancy not adjudicated. Last
+      update/results posted2026-04-28. Raw hospitalization counts do not establish benefit.
+- id: trial-teer-china
+  type: trial
+  name: TEER-CHINA
+  nctId: NCT05556460
+  phase: RCT
+  status: recruiting
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-dragonfly-t
+  enrollment: 236
+  primaryEndpoint: >-
+    12-month hierarchical composite of death or tricuspid valve intervention, HF hospitalizations and KCCQ
+    improvement
+  resultStatus: ongoing
+  timeline:
+    date: '2024-09-03'
+    precision: day
+    dateBasis: trial-start
+    event: Actual trial start
+    source: https://clinicaltrials.gov/api/v2/studies/NCT05556460
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT05556460
+    - https://www.jacc.org/doi/10.1016/j.jacasi.2026.06.012
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05556460
+      - https://www.jacc.org/doi/10.1016/j.jacasi.2026.06.012
+    notes: >-
+      236 is ESTIMATED planned enrollment; registry last update2026-06-12 and verified2026-06. Primary
+      completion2028-08-15 and completion2032-08-15 estimates. Paper snapshot118 enrolled as of2026-01-14 is
+      historical and not actual total. Randomized parallel, outcome-assessor masked. No randomized efficacy
+      results posted.
+
+- id: trial-upbeat-aftx-201
+  type: trial
+  name: UPBEAT (AFTX-201-001)
+  nctId: NCT07426419
+  phase: Phase 1/2
+  status: recruiting
+  conditions:
+    - cond-bag3-dcm
+  therapies:
+    - rx-aftx-201
+  primaryEndpoint: >-
+    Number of participants with treatment-emergent adverse events (TEAEs) and serious adverse events (SAEs)
+    (baseline through 12 months)
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT07426419
+    - >-
+      https://affiniatx.com/affinia-therapeutics-aftx-201-and-upbeat-clinical-trial-in-bag3-dcm-featured-at-the-heart-failure-society-of-america-hfsa-annual-scientific-meeting-2026/
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT07426419
+      - >-
+        https://affiniatx.com/affinia-therapeutics-aftx-201-and-upbeat-clinical-trial-in-bag3-dcm-featured-at-the-heart-failure-society-of-america-hfsa-annual-scientific-meeting-2026/
+    notes: >-
+      Official API inspected: Phase1/2 open-label single-group dose-escalation/expansion; RECRUITING;
+      estimated enrollment22. Last update posted2026-09-01, status verified2026-07. Estimated start2026-09,
+      primary completion2028-12, completion2032-12. Exact population18–70 with truncating BAG3 mutation,
+      LVEF<45%, NYHAII/III. Current eligibility agrees with October sponsor; July 18–55 preserved as historical
+      conflict, amendment date unverified. No results posted.
+  enrollment: 22
+  timeline:
+    date: '2026-09-01'
+    precision: month
+    dateBasis: trial-start
+    event: Estimated trial start
+    source: https://clinicaltrials.gov/study/NCT07426419
+    notes: >-
+      Official registry start2026-09 ESTIMATED; first-day placeholder for month precision, not a confirmed
+      start day.
+
+- id: trial-cmic-ii
+  type: trial
+  name: C-MIC II
+  nctId: NCT04662034
+  phase: Device study (not applicable phase)
+  status: completed
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-cmic
+  enrollment: 70
+  primaryEndpoint: Performance
+  resultStatus: positive
+  references:
+    - https://clinicaltrials.gov/study/NCT04662034
+    - https://onlinelibrary.wiley.com/doi/10.1002/ejhf.3763
+  pulse: 6
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT04662034
+    notes: >-
+      Registry COMPLETED; enrollment actual. Results scoped by exact configuration; not marketing
+      authorization.
+  timeline:
+    date: '2021-02-05'
+    precision: day
+    dateBasis: trial-start
+    event: C-MIC II actual study start
+    source: https://clinicaltrials.gov/study/NCT04662034
+    notes: ACTUAL registry date; estimated date does not establish trial commencement.
+  outcomeSummary: >-
+    Open-label RCT: 70 randomized, 65 mITT; six-month LVEF difference 5.1 percentage points (95% CI 3.1–7.1),
+    favoring surgical C-MIC.
+- id: trial-cmic-iii
+  type: trial
+  name: C-MIC III
+  nctId: NCT06920030
+  phase: Device study (not applicable phase)
+  status: recruiting
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-cmic
+  enrollment: 22
+  primaryEndpoint: Left ventricular ejection fraction (LVEF) change from baseline
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT06920030
+  pulse: 6
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT06920030
+    notes: >-
+      Registry RECRUITING; enrollment estimated. Results scoped by exact configuration; not marketing
+      authorization.
+  timeline:
+    date: '2025-04-09'
+    precision: day
+    dateBasis: trial-start
+    event: C-MIC III actual study start
+    source: https://clinicaltrials.gov/study/NCT06920030
+    notes: ACTUAL registry date; estimated date does not establish trial commencement.
+- id: trial-cmic-iv
+  type: trial
+  name: C-MIC IV
+  nctId: NCT07795359
+  phase: Device study (not applicable phase)
+  status: unknown
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-cmic
+  enrollment: 60
+  primaryEndpoint: >-
+    Change From Baseline in Kansas City Cardiomyopathy Questionnaire Clinical Summary Score at Month 6; Change
+    From Baseline in 6-Minute Walk Distance at Month 6; Ordinal Shift From Baseline in New York Heart
+    Association Functional Class at Month 6; Patient Global Assessment of Change Score at Month 6; Percentage
+    of Participants Who Are Echocardiographic Responders at Month 6; Change From Baseline in N-Terminal
+    Pro-B-Type Natriuretic Peptide Concentration at Month 6
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT07795359
+  pulse: 6
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT07795359
+    notes: >-
+      Registry NOT_YET_RECRUITING; enrollment estimated. Results scoped by exact configuration; not marketing
+      authorization.
+  timeline:
+    date: '2026-09-01'
+    precision: month
+    dateBasis: trial-start
+    event: C-MIC IV estimated study start
+    source: https://clinicaltrials.gov/study/NCT07795359
+    notes: ESTIMATED registry date; estimated date does not establish trial commencement.
+- id: trial-cmic-ii-follow-up
+  type: trial
+  name: C-MIC II follow-up
+  nctId: NCT05189860
+  phase: Device study (not applicable phase)
+  status: recruiting
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-cmic
+  enrollment: 31
+  primaryEndpoint: Mortality; Hospitalizations; Adverse events
+  resultStatus: positive
+  references:
+    - https://clinicaltrials.gov/study/NCT05189860
+    - https://academic.oup.com/eurjhf/advance-article/doi/10.1093/ejhf/xuag274/8771333
+  pulse: 6
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT05189860
+    notes: >-
+      Registry RECRUITING; enrollment estimated. Results scoped by exact configuration; not marketing
+      authorization.
+  timeline:
+    date: '2022-03-03'
+    precision: day
+    dateBasis: trial-start
+    event: C-MIC II follow-up actual study start
+    source: https://clinicaltrials.gov/study/NCT05189860
+    notes: ACTUAL registry date; estimated date does not establish trial commencement.
+  outcomeSummary: >-
+    Uncontrolled 31-person follow-up after six months of surgical C-MIC: reported improvements persisted 12
+    months after deactivation; three required reactivation.
+
+- id: trial-cycle-1-ref
+  type: trial
+  name: CYCLE-1-REF
+  nctId: NCT06215911
+  phase: Phase 2
+  status: completed
+  conditions:
+    - cond-hfref
+  therapies:
+    - rx-tovinontrine
+  enrollment: 557
+  year: 2026
+  primaryEndpoint: Percent change in plasma NT-proBNP from baseline to week 12.
+  outcomeSummary: >-
+    Sponsor reports NT-proBNP reductions at 2.5 and 25 mg BID, but no benefit at 50 mg BID; numerical
+    treatment effects and analyzed denominators undisclosed.
+  resultStatus: mixed
+  references:
+    - https://clinicaltrials.gov/study/NCT06215911
+    - >-
+      https://cardurion.com/cardurion-pharmaceuticals-presents-phase-2-results-for-tovinontrine-crd-750-a-pde9-inhibitor-as-a-novel-treatment-for-heart-failure/
+  links:
+    - label: Sponsor Phase 2 results
+      url: >-
+        https://cardurion.com/cardurion-pharmaceuticals-presents-phase-2-results-for-tovinontrine-crd-750-a-pde9-inhibitor-as-a-novel-treatment-for-heart-failure/
+  timeline:
+    date: '2024-02-13'
+    precision: day
+    dateBasis: trial-start
+    event: Actual trial start
+    source: https://clinicaltrials.gov/study/NCT06215911
+  pulse: 7
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT06215911
+      - >-
+        https://cardurion.com/cardurion-pharmaceuticals-presents-phase-2-results-for-tovinontrine-crd-750-a-pde9-inhibitor-as-a-novel-treatment-for-heart-failure/
+    notes: >-
+      Registry actual enrollment 557; sponsor randomized count 529. Different populations; reason unresolved.
+      Registry snapshot posted 2026-09-01; hasResults false at retrieval. Preliminary sponsor biomarker
+      readout, not hard clinical outcomes.
+- id: trial-cycle-2-pef
+  type: trial
+  name: CYCLE-2-PEF
+  nctId: NCT06215586
+  phase: Phase 2
+  status: completed
+  conditions:
+    - cond-hfpef
+  therapies:
+    - rx-tovinontrine
+  enrollment: 303
+  year: 2026
+  primaryEndpoint: Percent change in plasma NT-proBNP from baseline to week 12.
+  outcomeSummary: >-
+    Sponsor reports no significant NT-proBNP change with 50 mg BID in HFpEF; numerical treatment effect and
+    analyzed denominator undisclosed.
+  resultStatus: negative
+  references:
+    - https://clinicaltrials.gov/study/NCT06215586
+    - >-
+      https://cardurion.com/cardurion-pharmaceuticals-presents-phase-2-results-for-tovinontrine-crd-750-a-pde9-inhibitor-as-a-novel-treatment-for-heart-failure/
+  links:
+    - label: Sponsor Phase 2 results
+      url: >-
+        https://cardurion.com/cardurion-pharmaceuticals-presents-phase-2-results-for-tovinontrine-crd-750-a-pde9-inhibitor-as-a-novel-treatment-for-heart-failure/
+  timeline:
+    date: '2024-02-13'
+    precision: day
+    dateBasis: trial-start
+    event: Actual trial start
+    source: https://clinicaltrials.gov/study/NCT06215586
+  pulse: 7
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT06215586
+      - >-
+        https://cardurion.com/cardurion-pharmaceuticals-presents-phase-2-results-for-tovinontrine-crd-750-a-pde9-inhibitor-as-a-novel-treatment-for-heart-failure/
+    notes: >-
+      Registry actual enrollment 303; sponsor randomized count 277. Different populations; reason unresolved.
+      Registry snapshot posted 2026-09-01; hasResults false at retrieval. Preliminary sponsor biomarker
+      readout, not hard clinical outcomes.
+
+- id: trial-clasp-ii-tr
+  type: trial
+  name: CLASP II TR
+  nctId: NCT04097145
+  phase: Pivotal RCT
+  status: recruiting
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-pascal
+  enrollment: 1270
+  primaryEndpoint: >-
+    6-month hierarchical composite: all-cause mortality, durable RVAD or heart transplant, tricuspid
+    surgery/intervention, HF hospitalizations and KCCQ improvement
+  resultStatus: ongoing
+  timeline:
+    date: '2019-12-11'
+    precision: day
+    dateBasis: trial-start
+    event: Actual trial start
+    source: https://clinicaltrials.gov/api/v2/studies/NCT04097145
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT04097145
+    - https://www.sciencedirect.com/science/article/pii/S0002870326002899
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT04097145
+      - https://www.sciencedirect.com/science/article/pii/S0002870326002899
+    notes: >-
+      Official registry last posted 2026-09-14, status verified 2026-08; RECRUITING with 1270 ESTIMATED across
+      four listed arms (randomized device/control, single-arm registry, continued access). Actual start
+      2019-12-11; primary completion 2027-12-31 and completion 2031-12-31 ESTIMATED. October 9 primary design
+      abstract describes 450 randomized participants in 2:1 allocation and says enrollment completed for the
+      randomized trial, results expected. Preserve registry aggregate versus randomized-cohort scope; no
+      inferred actual aggregate count or clinical result. Exact PASCAL/PASCAL Ace configurations and
+      generation mapping unresolved.
+
+- id: trial-reveal-i124
+  type: trial
+  name: REVEAL (I 124 evuzamitide diagnostic)
+  nctId: NCT06788535
+  phase: Phase 3
+  status: completed
+  conditions:
+    - cond-attr-cm
+  therapies:
+    - rx-i124-evuzamitide
+  enrollment: 204
+  resultStatus: positive
+  primaryEndpoint: Sensitivity and specificity of I 124 evuzamitide PET/CT for diagnosing cardiac amyloidosis
+  outcomeSummary: >-
+    Published overall 170-person cohort:94% sensitivity and 86% specificity. Diagnostic accuracy, not
+    ATTR-only or treatment efficacy.
+  references:
+    - https://clinicaltrials.gov/study/NCT06788535
+    - https://jamanetwork.com/journals/jama/article-abstract/2853272
+  timeline:
+    date: '2025-01-14'
+    precision: day
+    dateBasis: trial-start
+    event: REVEAL actual start
+    source: https://clinicaltrials.gov/study/NCT06788535
+  pulse: 7
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT06788535
+      - https://jamanetwork.com/journals/jama/article-abstract/2853272
+    notes: >-
+      Registry 204 actual vs paper 195 enrolled/170 included; preserve distinct scopes. Brigham and Women’s
+      Hospital sponsor. ATTR condition is a partial diagnostic crosswalk.

@@ -5,6 +5,56 @@
 
 # ============================ DEVICES =====================================
 
+- id: dev-siegel-tavr
+  type: therapy
+  therapyType: device
+  subtype: Balloon-expandable transcatheter aortic valve
+  name: SIEGEL TAVR
+  company: co-mirus
+  treats: [cond-as]
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational. MiRus reports STAR trial enrollment began April 2026; trial authorization is not commercial approval.
+    May 2026 sponsor disclosure states not approved for commercial distribution in any country.
+  mechanism: Catheter-delivered balloon-expandable replacement for a stenotic aortic valve.
+  materials:
+    - name: Molybdenum–rhenium (MoRe)
+      role: Balloon-expandable frame
+      category: frame
+      source: https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/
+      note: Manufacturer identifies nickel/cobalt-free alloy; exact frame percentages unverified.
+    - name: Dry porcine tissue
+      role: Valve leaflets
+      category: leaflet
+      source: https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/
+    - name: Nitric oxide coating
+      role: Frame surface coating (May 2026 sponsor description)
+      category: coating
+      source: https://news.bostonscientific.com/2026-05-18-Boston-Scientific-announces-strategic-investment-in-MiRus-LLC
+      note: Coating formulation and clinical effects not independently verified.
+  description: >-
+    MiRus investigational aortic platform. Current 23/26/29-mm disclosure and earlier feasibility cohorts retain separate scope;
+    human comparative benefit and long-term durability remain unestablished by the reviewed documents.
+  links:
+    - label: MiRus SIEGEL product information
+      url: https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/
+    - label: STAR pivotal registry
+      url: https://clinicaltrials.gov/study/NCT07278310
+    - label: Early feasibility registry
+      url: https://clinicaltrials.gov/study/NCT06680427
+  curation:
+    status: draft
+    lastUpdated: '2026-10-14'
+    sources:
+      - https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/
+      - https://news.bostonscientific.com/2026-05-18-Boston-Scientific-announces-strategic-investment-in-MiRus-LLC
+      - https://clinicaltrials.gov/study/NCT07278310
+      - https://clinicaltrials.gov/study/NCT06680427
+    notes: >-
+      
+      No FDA commercial-authorization decision or reusable product figure added. Do not infer exact alloy composition from
+      orthopedic Mo-47.5Re or attribute unnamed MiRus mitral/tricuspid assets to this aortic platform.
+
 # --- LAA closure ---
 - id: dev-watchman-original
   type: therapy
@@ -1308,8 +1358,8 @@
   company: co-vahaticor
   treats: [cond-cmd]
   regulatoryStatus: investigational
-  regulatoryDetail: "Investigational; early feasibility study (SERRA-I, NCT06991322) enrolling in the US and Europe (first US patient announced 2026-06-17). Not FDA cleared/approved."
-  mechanism: "Self-expanding dense-cell nitinol coronary sinus reducer (SwiftCell Technology) that narrows the coronary sinus to redistribute perfusion toward ischemic myocardium — mechanistically analogous to the Shockwave/J&J Coronary Sinus Reducer."
+  regulatoryDetail: "Investigational. European SERRA-I (NCT06991322): active, not recruiting (registry updated 2026-08-26). SERRA-I US (NCT07449325): suspended for a protocol change (updated 2026-09-25). No commercial authorization established."
+  mechanism: "Self-expanding dense-cell nitinol coronary sinus reducer (SwiftCell Technology) designed to create controlled coronary sinus narrowing and improve microvascular perfusion; intended mechanism, not a comparative efficacy claim."
   materials:
     - { name: "Nitinol", role: "Self-expanding dense-cell hourglass mesh", category: frame, source: "https://vahaticor.com/" }
   links:
@@ -1321,20 +1371,25 @@
     (SERRA-I).
   curation:
     status: draft
-    lastUpdated: "2026-10-03"
+    lastUpdated: "2026-10-06"
     sources:
       - https://vahaticor.com/
       - https://vahaticor.com/device-and-technology/
       - https://clinicaltrials.gov/study/NCT06991322
+      - https://clinicaltrials.gov/study/NCT07449325
       - https://www.jacc.org/doi/10.1016/j.jaccas.2024.102962
     notes: >-
       Manufacturer confirmed as VahatiCor, Inc. (T45 Labs portfolio), resolving the prior 'unverified placeholder' flag. Company closed an
-      oversubscribed $23M Series B (2025-11-18) to accelerate development. Human curator: verify current SERRA-I enrollment progress before
+      oversubscribed $23M Series B (2025-11-18) to accelerate development. Human curator: review the dated EU/US registry snapshots before
       promoting to curated. 2026-10-03 audit: Graph context and primary evidence links aligned with version records.
+
+      2026-10-06 WOR-25: Official registry records distinguish VHC-00002 (European sites) from VHC-00004 (SERRA-I US).
+      Each reports estimated enrollment of 30, not an actual treated total; counts are not combined. No results are posted.
 
 # ============================ PHARMACEUTICALS =============================
 
 # --- HCM: cardiac myosin inhibitors ---
+
 - id: rx-mavacamten
   type: therapy
   therapyType: pharmaceutical
@@ -3639,7 +3694,6 @@
       eligibility is not an approved-label substitute. NCT05006404 pivotal and NCT07466745 continued-access counts remain
       separate. Undated manufacturer study page still carries investigational language; the dated FDA announcement establishes
       approval. No autonomous growth or reduction in repeat surgery is asserted as proven. Public documents retrieved 2026-10-07.
-
 - id: dev-mitrapatch
   type: therapy
   therapyType: device
@@ -3681,7 +3735,6 @@
       WOR-26 historical backfill: FDA PDF p.1 clearance letter, p.4 Indications for Use and pp.5–6 Summary. The generic graph
       approved state represents a cleared device; exact pathway is 510(k). No current distribution, comparative clinical efficacy
       or registry identity established. Public source retrieved 2026-10-07.
-
 - id: dev-emboliner
   type: therapy
   therapyType: device
@@ -3725,7 +3778,6 @@
       AS link is procedural context only. FDA summary/IFU unavailable in this pass; no unsupported filter alloy, pore size,
       delivery profile, other-procedure indication or stroke-reduction claim. Release does not disclose a new EPC-03 build. Public
       documents retrieved 2026-10-07.
-
 - id: dig-cardioguide-hf
   type: therapy
   therapyType: digital
@@ -3760,3 +3812,332 @@
       WOR-26: Opening non-quotation paragraph; Dynamic Treatment Plan and availability paragraphs; app/system FAQs. Named
       announced configuration rather than an exact released software build. No compatibility bridge to a specific historical
       CM3000 model, new sensor hardware generation or change to the clinical indication. Public source retrieved 2026-10-07.
+
+- id: dig-tempus-ecg-mr
+  type: therapy
+  therapyType: digital
+  subtype: clinical diagnostic ECG analysis software
+  name: Tempus ECG-MR
+  company: co-tempus-ai
+  treats:
+    - cond-mr
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    FDA 510(k) substantial-equivalence clearance, K254297, decision dated 2026-09-25. This is a 510(k)
+    clearance, not a PMA approval. Product code remains unresolved because FDA database and decision summary
+    conflict.
+  mechanism: >-
+    Analyzes resting, non-ambulatory 12-lead ECG recordings with a locked machine-learning model to detect
+    signs associated with moderate or severe mitral regurgitation, returning a binary result or unclassifiable
+    status to support further referral or diagnostic follow-up.
+  description: >-
+    Prescription-use, software-only clinical decision support for eligible patients 65 years or older at
+    cardiovascular risk, without prior mitral valve intervention or prior diagnosis of moderate or severe MR.
+    Not a stand-alone diagnostic tool; output does not diagnose or rule out MR, direct treatment, or replace
+    diagnostic testing.
+  links:
+    - label: FDA 510(k) summary K254297
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf25/K254297.pdf
+    - label: Tempus clearance announcement (Sep 28, 2026)
+      url: >-
+        https://www.tempus.com/news/pr/tempus-receives-fda-clearance-for-its-ecg-mr-ai-product-designed-to-identify-undiagnosed-mitral-regurgitation/
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K254297.pdf
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K254297
+      - >-
+        https://www.tempus.com/news/pr/tempus-receives-fda-clearance-for-its-ecg-mr-ai-product-designed-to-identify-undiagnosed-mitral-regurgitation/
+    notes: >-
+      Do not promote before curator verifies the indication, exclusions, technical compatibility, and FDA
+      metadata discrepancy. The graph status approved means an FDA authorization exists; narrative must retain
+      the precise 510(k) clearance pathway.
+
+- id: dev-occlutech-asd
+  type: therapy
+  therapyType: device
+  subtype: ASD occluder
+  name: Occlutech ASD Occluder (US P200032)
+  company: co-occlutech
+  treats:
+    - cond-asd
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    US PMA P200032 approved December 29, 2023 for ostium secundum ASD with right ventricular volume overload.
+    Historical initial approval; current supplements/IFU not reconciled.
+  mechanism: >-
+    Two nitinol mesh discs and a flexible waist with three sutured polyester patches occlude the septal
+    defect.
+  materials:
+    - name: Nitinol
+      role: Discs and waist
+      category: frame
+      source: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200032B.pdf
+    - name: Polyester
+      role: Three sutured occlusive patches
+      category: fabric
+      source: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200032B.pdf
+  links:
+    - label: FDA original SSED
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200032B.pdf
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200032B.pdf
+    notes: >-
+      SSED pp.1–2, Sections I–V. New catalog inclusion, not a new 2026 approval. Figulla Flex II in a
+      mixed-device pediatric cohort is not assumed identical to this US model range. 
+- id: dev-laaguarder
+  type: therapy
+  therapyType: device
+  subtype: LAA occluder
+  name: LaaGuarder LAAC Device (LP01 brochure range)
+  treats:
+    - cond-af
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    FDA/CE authorization and applicable jurisdiction not verified. Undated distributor-hosted product
+    brochure; no verified July–October introduction.
+  mechanism: Self-expanding nitinol implant with PET proximal fabric for percutaneous LAA occlusion.
+  materials:
+    - name: Nitinol
+      role: Implant frame
+      category: frame
+      source: https://rumedlife.com/upload/pdf/1752481236_LaaGuarder_Left_Atrial_Appendage_Closure_System_(1).pdf
+    - name: PET
+      role: Proximal cover
+      category: fabric
+      source: https://rumedlife.com/upload/pdf/1752481236_LaaGuarder_Left_Atrial_Appendage_Closure_System_(1).pdf
+  links:
+    - label: Undated product brochure
+      url: https://rumedlife.com/upload/pdf/1752481236_LaaGuarder_Left_Atrial_Appendage_Closure_System_(1).pdf
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://rumedlife.com/upload/pdf/1752481236_LaaGuarder_Left_Atrial_Appendage_Closure_System_(1).pdf
+    notes: >-
+      PDF pp.2–4. Manufacturer identity remains unverified, so company link omitted. Brochure identifies
+      warfarin-suitable population; distributor-indexed wording differs. No approved indication, certificate,
+      clinical result or availability inferred.
+
+- id: dig-link-hf2-monitoring
+  type: therapy
+  therapyType: digital
+  subtype: Study remote-monitoring intervention
+  name: LINK-HF2 remote monitoring and predictive analytics
+  treats:
+    - cond-hf
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Study-context intervention; exact marketed hardware/model/software build and decision-specific marketing
+    authorization not established.
+  mechanism: >-
+    Wearable sensor information is analyzed remotely; instability alerts are shared with treating teams in the
+    active arm to prompt a clinician response.
+  description: >-
+    LINK-HF2 research intervention combining a wearable sensor, remote predictive analytics and clinical
+    response. This record identifies trial context rather than a commercial integrated product.
+  links:
+    - label: Official trial and results
+      url: https://clinicaltrials.gov/api/v2/studies/NCT04502563
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT04502563
+      - https://cdn.clinicaltrials.gov/large-docs/63/NCT04502563/Prot_SAP_001.pdf
+    notes: >-
+      Registry armsInterventionsModule; protocol pp.8,10–11. VitalConnect patch hardware and PhysIQ contractor
+      named in protocol; commercial model/algorithm build unresolved. Clinical teams retain decisions; no
+      autonomous prescribing, arrhythmia guidance, or outcome-improvement claim.
+- id: dev-dragonfly-t
+  type: therapy
+  therapyType: device
+  subtype: Tricuspid transcatheter edge-to-edge repair
+  name: DragonFly-T System
+  company: co-valgen-medtech
+  treats:
+    - cond-tr
+  regulatoryStatus: investigational
+  regulatoryDetail: Investigational device in TEER-CHINA (China); marketing authorization not verified.
+  mechanism: Tricuspid transcatheter edge-to-edge repair clip system.
+  materials: []
+  description: >-
+    Dedicated tricuspid repair system evaluated against medical therapy in TEER-CHINA. Materials and exact
+    participant clip configurations are unverified.
+  links:
+    - label: TEER-CHINA design paper
+      url: https://www.jacc.org/doi/10.1016/j.jacasi.2026.06.012
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05556460
+      - https://www.jacc.org/doi/10.1016/j.jacasi.2026.06.012
+    notes: >-
+      Registry armsInterventionsModule; design paper Study device description/Figure1. No inherited mitral
+      DragonFly materials, indications or approvals. Exact clip dimensions and Pro differences unknown.
+
+- id: rx-aftx-201
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: AAV gene therapy
+  name: AFTX-201
+  company: co-affinia-therapeutics
+  treats:
+    - cond-bag3-dcm
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational; sponsor reports FDA acceptance of the IND and Fast Track and Orphan Drug designations in
+    2026. These are development designations, not marketing authorization.
+  mechanism: >-
+    Single intravenous infusion of a gene therapy comprising ATC-0187 capsid carrying a functional BAG3
+    transgene.
+  description: >-
+    Investigational gene therapy being evaluated in UPBEAT for adults with BAG3 mutation-associated DCM.
+    Sponsor-reported design only; no human efficacy finding is asserted.
+  links:
+    - label: Sponsor program information
+      url: https://affiniatx.com/aftx-201/
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - >-
+        https://affiniatx.com/affinia-therapeutics-aftx-201-and-upbeat-clinical-trial-in-bag3-dcm-featured-at-the-heart-failure-society-of-america-hfsa-annual-scientific-meeting-2026/
+      - >-
+        https://affiniatx.com/fda-grants-orphan-drug-designation-to-affinia-therapeutics-aftx-201-for-the-treatment-of-bag3-associated-dilated-cardiomyopathy-dcm/
+      - https://clinicaltrials.gov/study/NCT07426419
+
+- id: dev-cmic
+  type: therapy
+  therapyType: device
+  subtype: cardiac microcurrent therapy
+  name: C-MIC cardiac microcurrent system
+  company: co-berlin-heals
+  treats:
+    - cond-hfref
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational system; no FDA marketing authorization or exact-generation CE certification verified.
+    Sponsor-reported Breakthrough designation is not approval.
+  mechanism: Delivers weak direct electrical microcurrent; clinical mechanism remains investigational.
+  materials: []
+  links:
+    - label: Manufacturer studies
+      url: https://www.berlinheals.com/en/studies
+  pulse: 6
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT04662034
+      - https://clinicaltrials.gov/study/NCT07795359
+    notes: >-
+      No implant-material evidence reviewed. Separate surgical II from subcutaneous III/IV; do not inherit
+      results, specifications or authorizations.
+
+- id: rx-tovinontrine
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: PDE9 inhibitor
+  name: Tovinontrine (CRD-750)
+  company: co-cardurion
+  treats:
+    - cond-hfref
+    - cond-hfpef
+  regulatoryStatus: investigational
+  regulatoryDetail: Phase 2 CYCLE heart-failure studies; no marketing authorization established by reviewed sources.
+  mechanism: Investigational PDE9 inhibition intended to augment natriuretic peptide/cGMP signaling.
+  pulse: 7
+  links:
+    - label: Cardurion Phase 2 announcement
+      url: >-
+        https://cardurion.com/cardurion-pharmaceuticals-presents-phase-2-results-for-tovinontrine-crd-750-a-pde9-inhibitor-as-a-novel-treatment-for-heart-failure/
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - >-
+        https://cardurion.com/cardurion-pharmaceuticals-presents-phase-2-results-for-tovinontrine-crd-750-a-pde9-inhibitor-as-a-novel-treatment-for-heart-failure/
+    notes: >-
+      Biomarker readouts are preliminary sponsor reports; no hospitalization or survival benefit established.
+      Keep separate from CRD-740/CARDINAL-HF and sickle-cell literature.
+
+- id: dev-daxor-bva-200
+  type: therapy
+  therapyType: device
+  subtype: Automated blood volume measuring analyzer
+  name: Daxor BVA-200
+  company: co-daxor
+  treats:
+    - cond-hf
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    FDA 510(k) substantial-equivalence clearance K251087 (decision 2025-08-04) and Special 510(k) K261099
+    (decision 2026-06-18). These are clearances, not PMA approvals. FDA labeling covers quantitative
+    blood-volume measurement in adults in a clinical laboratory setting; it is not an HF-specific treatment
+    indication.
+  materials: []
+  mechanism: >-
+    Measures gamma counts from patient venous whole-blood samples after I-131 human serum albumin tracer
+    administration and calculates red-cell mass, plasma volume, total blood volume, normalized hematocrit, and
+    albumin transudation rate.
+  description: >-
+    Automated in-vitro diagnostic analyzer for adult blood-volume measurement in a clinical laboratory
+    operated by laboratory technicians. The BVA-200 is distinct from the earlier BVA-100: FDA describes
+    whole-blood analysis rather than BVA-100 plasma fractionation, plus touchscreen-based operation and an
+    integrated gamma counter. BVA-200 does not administer the tracer; I-131 HSA is administered before blood
+    sampling. Its condition link in this graph is a navigation crosswalk for heart-failure use, not an
+    FDA-specific heart-failure indication or treatment claim.
+  links:
+    - label: FDA K261099 Special 510(k) summary
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261099.pdf
+    - label: FDA K251087 510(k) summary
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf25/K251087.pdf
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K251087.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261099.pdf
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K251087
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261099
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K964406
+    notes: >-
+      Graph schema requires a condition in `treats`; this is a measurement/diagnostic device, not a treatment.
+      `cond-hf` is only a weak use-context crosswalk and must not be rendered or described as a treatment
+      indication. FDA scope is adults broadly, clinical laboratory use, Rx only. Do not import company
+      marketing claims (98% accuracy, faster workflow, reduced blood draw, outcome improvement).
+
+- id: rx-i124-evuzamitide
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: diagnostic PET radiotracer
+  name: Iodine 124 evuzamitide (AT-01)
+  company: co-bayer
+  treats:
+    - cond-attr-cm
+  regulatoryStatus: investigational
+  regulatoryDetail: Bayer states not approved in any country; Breakthrough/Orphan designations do not establish approval.
+  mechanism: Amyloid-targeted PET imaging diagnostic adjunct; not amyloid depletion treatment.
+  description: Pan-amyloid diagnostic asset acquired from Attralus; distinguish Tc 99 m AT-05 and therapeutic AT-02.
+  pulse: 7
+  links:
+    - label: Primary REVEAL publication
+      url: https://jamanetwork.com/journals/jama/article-abstract/2853272
+  curation:
+    status: draft
+    lastUpdated: '2026-10-12'
+    sources:
+      - https://clinicaltrials.gov/study/NCT06788535
+      - https://jamanetwork.com/journals/jama/article-abstract/2853272
+      - https://www.bayer.com/en-us/united-states/news-and-stories/2026/heart-failure-data-at-hfsa
+      - >-
+        https://www.bayer.com/media/en-us/phase-iii-reveal-study-with-investigational-pet-radiotracer-iodine-124-evuzamitide-presented-as-late-breaker-at-esc-2026/
+    notes: >-
+      Graph treats edge represents ATTR-CM diagnostic care context only, not treatment efficacy; Atlas
+      clinicalRole=detects. AL scope not mapped to absent condition node. No treatment claim.

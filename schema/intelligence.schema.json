@@ -325,6 +325,7 @@
         "assetPath": { "type": "string", "pattern": "^/evidence/(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9][A-Za-z0-9._/-]*\\.(?:png|jpe?g|webp|avif)$" },
         "page": { "type": "integer", "minimum": 1 }, "figure": { "$ref": "#/$defs/nonEmpty" },
         "crop": {
+          "description": "Normalized extraction bounds within the source page or original figure image specified in sourceRefs.",
           "type": "object", "additionalProperties": false, "required": ["x", "y", "width", "height"],
           "properties": {
             "x": { "type": "number", "minimum": 0, "maximum": 1 }, "y": { "type": "number", "minimum": 0, "maximum": 1 },
