@@ -76,6 +76,13 @@ are an objective, not a guarantee; delegation adds coordination and context cost
 
 ## Change and review gates
 
+For a manual News Insights request, read `prompts/news-insights.md` and
+`docs/NEWS_INSIGHTS_WORKFLOW.md`. Use the last completed local generation run
+through today's Los Angeles date; initial windows are explicit. Keep this
+analytical feature separate from specialty Editorial articles and scheduled
+weekly research. Render/checkpoint local drafts only; this creates no schedule,
+publication, or send.
+
 Edit authored YAML, schemas, validators, and types together where applicable;
 regenerate public payloads from YAML. Use focused checks for the change, and
 `npm run validate:local` plus `VITE_BASE=/ npm run build` for substantial app/data

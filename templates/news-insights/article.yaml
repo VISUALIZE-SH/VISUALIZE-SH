@@ -1,0 +1,52 @@
+# Copy to data/news-insights/RUN_DATE.yaml after preparing the manual window.
+# Replace placeholders from run.json; fill exact source metadata and references.
+# This is a starter template, intentionally not a valid filled edition.
+# Academic/objective tone; 450–650 prose words by default; no reveal framing.
+id: insights-RUN_DATE
+contentType: news-insights
+reviewStatus: draft
+runDate: 'RUN_DATE'
+windowFrom: 'WINDOW_FROM'
+windowTo: 'WINDOW_TO'
+title: 'News Insights | ACTUAL_COVERAGE_DATES'
+dek: 'The argument emerging from this window, not a fixed specialty topic.'
+summary: 'A concise description of the consequential insights developed below.'
+relevantNodeIds: [EXISTING_GRAPH_NODE]
+selectedNewsIds: [FROZEN_CANDIDATE_NEWS_ID]
+scopeNote: 'Describe selection, coverage limits, draft state, and distinctions between documentary facts and editorial connections.'
+opening:
+  - text: 'Opening analysis (40–70 words): changes, significance, and evidentiary scope.'
+    sourceIds: [SOURCE_ID]
+    interpretation: true
+sections:
+  - heading: 'An insight warranted by the window'
+    role: insight
+    paragraphs:
+      - text: 'What the document establishes, with the exact identity and population.'
+        sourceIds: [SOURCE_ID]
+        # Optional link beside the claim/connection:
+        # contextLinks: [{label: 'Exact-version evidence', versionId: EXISTING_VERSION_ID}]
+        # Broad graph context is not study-specific corroboration:
+        # contextLinks: [{label: 'Condition context', nodeId: EXISTING_GRAPH_NODE}]
+      - {text: 'Why it matters and the strongest alternative reading.', sourceIds: [SOURCE_ID], interpretation: true}
+    # Optional section image captured from actual highlighted Atlas:
+    # atlasSnapshot: {file: atlas-context.jpg, nodeId: EXISTING_GRAPH_NODE, caption: 'Recorded relationships and their limits.'}
+  # Optional additional insight/connection sections, table, or original figure.
+  # Do not fill mandatory topic slots or force a common narrative.
+closing:
+  heading: 'Evidence priorities for the next edition'
+  role: next-question
+  paragraphs:
+    - {text: 'The exact observation/document that would distinguish the interpretations, and why.', sourceIds: [SOURCE_ID], interpretation: true}
+sources:
+  - id: SOURCE_ID
+    title: 'Exact document title'
+    publisher: 'Original publisher/author'
+    url: https://example.org/replace-with-actual-document
+    sourceClass: original-study
+    access: public
+    # publishedAt: 'VERIFIED_DOCUMENT_OR_VERSION_DATE' # omit if unknown
+    retrievedAt: 'RETRIEVAL_DATE'
+    locator: 'Exact section/page/table/figure actually inspected'
+    scope: 'Exact version/configuration, jurisdiction, population/cohort, method'
+    limits: 'Access, abstract/preprint scope, uncertainty, gaps and reuse rights'

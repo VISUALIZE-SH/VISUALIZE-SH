@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-10-13T06:16:52.425Z",
-    "lastUpdated": "2026-10-12",
+    "generatedAt": "2026-10-15T03:53:11.171Z",
+    "lastUpdated": "2026-10-14",
     "counts": {
       "condition": 21,
-      "device": 90,
+      "device": 91,
       "pharmaceutical": 17,
       "procedure": 8,
       "digital": 10,
-      "company": 69,
-      "trial": 97
+      "company": 70,
+      "trial": 99
     },
     "draftCount": 289,
-    "total": 312,
-    "newsCount": 90,
+    "total": 316,
+    "newsCount": 92,
     "latestNewsDate": "2026-10-12"
   },
   "news": [
@@ -1750,6 +1750,62 @@
         "trial-triscend-2",
         "co-edwards"
       ]
+    },
+    {
+      "id": "news-2026-05-18-boston-mirus-siegel-investment",
+      "publishedAt": "2026-05-18",
+      "title": "Boston Scientific announces MiRus investment and conditional SIEGEL TAVR acquisition option",
+      "summary": "Boston Scientific announced a MiRus investment and an option to acquire its TAVR business, subject to milestones and further payments. The disclosure describes investigational SIEGEL sizes of 23, 26 and 29 mm and an 8 Fr expandable sheath. It also references unnamed mitral/tricuspid replacement assets; their materials are unverified. An option is not a completed acquisition, and the system was not commercially approved at the disclosure date.",
+      "sourceName": "Boston Scientific",
+      "sourceUrl": "https://news.bostonscientific.com/2026-05-18-Boston-Scientific-announces-strategic-investment-in-MiRus-LLC",
+      "additionalSources": [
+        {
+          "label": "SEC Form 8-K — Item 8.01",
+          "url": "https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm"
+        }
+      ],
+      "topicTags": [
+        "TAVR",
+        "SIEGEL",
+        "MiRus",
+        "rhenium",
+        "corporate transaction"
+      ],
+      "relevantNodeIds": [
+        "dev-siegel-tavr",
+        "co-mirus",
+        "co-boston-scientific",
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-04-08-siegel-star-first-enrollment",
+      "publishedAt": "2026-04-08",
+      "title": "MiRus reports first patient treatments in the randomized STAR study of SIEGEL TAVR",
+      "summary": "MiRus reported first treatments in STAR, a randomized comparison of SIEGEL with commercially available TAVR for severe symptomatic aortic stenosis. The registered target is an estimated 1,025 participants; the primary endpoint combines all-cause death, all stroke and valve/procedure-related cardiovascular rehospitalization at one year. The registry revision posted April 9, 2026 lists recruiting and no results. Trial authorization is distinct from commercial valve approval.",
+      "sourceName": "MiRus",
+      "sourceUrl": "https://www.mirusmed.com/mirus-brings-patient-enrollment-in-the-star-randomized-trial-of-the-siegel-transcatheter-aortic-valve/",
+      "additionalSources": [
+        {
+          "label": "STAR official registry — NCT07278310",
+          "url": "https://clinicaltrials.gov/study/NCT07278310"
+        }
+      ],
+      "topicTags": [
+        "TAVR",
+        "SIEGEL",
+        "MiRus",
+        "STAR",
+        "clinical trial"
+      ],
+      "relevantNodeIds": [
+        "dev-siegel-tavr",
+        "co-mirus",
+        "trial-siegel-star",
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
     }
   ],
   "elements": {
@@ -2091,7 +2147,7 @@
           "isDraft": true,
           "isHalted": false,
           "isRetired": false,
-          "degree": 20,
+          "degree": 23,
           "pulse": 9,
           "entity": {
             "id": "cond-as",
@@ -2455,6 +2511,81 @@
                 "https://clinicaltrials.gov/study/NCT07426419"
               ],
               "notes": "New genotype-specific condition candidate. Curator should confirm if this belongs in existing condition taxonomy or whether a broader DCM node is preferred; do not map to HFrEF alone."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-siegel-tavr",
+          "label": "SIEGEL TAVR",
+          "group": "device",
+          "category": "Balloon-expandable transcatheter aortic valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-siegel-tavr",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Balloon-expandable transcatheter aortic valve",
+            "name": "SIEGEL TAVR",
+            "company": "co-mirus",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational. MiRus reports STAR trial enrollment began April 2026; trial authorization is not commercial approval. May 2026 sponsor disclosure states not approved for commercial distribution in any country.",
+            "mechanism": "Catheter-delivered balloon-expandable replacement for a stenotic aortic valve.",
+            "materials": [
+              {
+                "name": "Molybdenum–rhenium (MoRe)",
+                "role": "Balloon-expandable frame",
+                "category": "frame",
+                "source": "https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/",
+                "note": "Manufacturer identifies nickel/cobalt-free alloy; exact frame percentages unverified."
+              },
+              {
+                "name": "Dry porcine tissue",
+                "role": "Valve leaflets",
+                "category": "leaflet",
+                "source": "https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/"
+              },
+              {
+                "name": "Nitric oxide coating",
+                "role": "Frame surface coating (May 2026 sponsor description)",
+                "category": "coating",
+                "source": "https://news.bostonscientific.com/2026-05-18-Boston-Scientific-announces-strategic-investment-in-MiRus-LLC",
+                "note": "Coating formulation and clinical effects not independently verified."
+              }
+            ],
+            "description": "MiRus investigational aortic platform. Current 23/26/29-mm disclosure and earlier feasibility cohorts retain separate scope; human comparative benefit and long-term durability remain unestablished by the reviewed documents.",
+            "links": [
+              {
+                "label": "MiRus SIEGEL product information",
+                "url": "https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/"
+              },
+              {
+                "label": "STAR pivotal registry",
+                "url": "https://clinicaltrials.gov/study/NCT07278310"
+              },
+              {
+                "label": "Early feasibility registry",
+                "url": "https://clinicaltrials.gov/study/NCT06680427"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-14",
+              "sources": [
+                "https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/",
+                "https://news.bostonscientific.com/2026-05-18-Boston-Scientific-announces-strategic-investment-in-MiRus-LLC",
+                "https://clinicaltrials.gov/study/NCT07278310",
+                "https://clinicaltrials.gov/study/NCT06680427"
+              ],
+              "notes": "See docs/SIEGEL_RHENIUM_REVIEW_2026-10-14.md and intelligence catalog/siegel.yaml for section locators and source limits. No FDA commercial-authorization decision or reusable product figure added. Do not infer exact alloy composition from orthopedic Mo-47.5Re or attribute unnamed MiRus mitral/tricuspid assets to this aortic platform."
             }
           }
         }
@@ -9487,6 +9618,34 @@
       },
       {
         "data": {
+          "id": "co-mirus",
+          "label": "MiRus LLC",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-mirus",
+            "type": "company",
+            "name": "MiRus LLC",
+            "website": "https://www.mirusmed.com/",
+            "description": "Developer of the investigational SIEGEL aortic valve and MoRe molybdenum–rhenium biomaterials.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-14",
+              "sources": [
+                "https://www.mirusmed.com/",
+                "https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm"
+              ],
+              "notes": "Owner approved the previewed record on 2026-10-14; documentary limitations remain. SEC Form 8-K Item 8.01 records an investment agreement and conditional TAVR acquisition option; this is not evidence of completed acquisition. Unnamed mitral/tricuspid assets have unverified materials."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-boston-scientific",
           "label": "Boston Scientific",
           "group": "company",
@@ -11565,6 +11724,88 @@
               "notes": "Owner approved the previewed content and publication on 2026-10-12. WOR-30 missing-entry documentary draft: About opening; Market final paragraph; Contact address; original corporate seed disclosure. Public sources retrieved 2026-10-12. Undated web pages have no inferred publication date. Recent funding lead unverified."
             },
             "pulse": 5
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-siegel-star",
+          "label": "STAR (SIEGEL TAVR)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-siegel-star",
+            "type": "trial",
+            "name": "STAR (SIEGEL TAVR)",
+            "nctId": "NCT07278310",
+            "phase": "Pivotal randomized trial",
+            "status": "recruiting",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-siegel-tavr"
+            ],
+            "enrollment": 1025,
+            "primaryEndpoint": "Composite of all-cause mortality, all stroke and valve/procedure-related cardiovascular rehospitalization at 1 year (VARC-3).",
+            "outcomeSummary": "No registry results posted. Enrollment is the estimated target; April 2028 completion remains estimated in the April 2026 registry revision.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT07278310"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-14",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT07278310"
+              ],
+              "notes": "Registry header, Study Overview, Study Plan, Participation Criteria and Study Record Dates inspected 2026-10-14. Last update posted 2026-04-09; estimated enrollment 1025, not enrolled/analyzed. Randomized, parallel, outcomes-assessor masked; commercially available TAVR control. Sponsor April 8 release reports first treatments, while registry start remains an April 2026 estimate. Exact hardware revision not disclosed. No market-approval timeline assigned."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-siegel-efs",
+          "label": "SIEGEL TAVR US Early Feasibility Study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-siegel-efs",
+            "type": "trial",
+            "name": "SIEGEL TAVR US Early Feasibility Study",
+            "nctId": "NCT06680427",
+            "phase": "Early feasibility; single-arm",
+            "status": "active",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-siegel-tavr"
+            ],
+            "enrollment": 30,
+            "primaryEndpoint": "Immediate technical implantation success; all-cause mortality or disabling stroke at 30 days (VARC-3).",
+            "outcomeSummary": "Active, not recruiting in the last posted registry revision (December 3, 2025); no registry results posted. Estimated 30 participants, not an analyzed denominator.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT06680427"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-14",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT06680427"
+              ],
+              "notes": "Study Overview, Participation Criteria, Study Plan and Study Record Dates inspected 2026-10-14. Actual start 2025-03-26; estimated December 2025 completion is stale and does not establish completion. Eligibility: age 50+, transfemoral, 23/26-mm valves; excludes bicuspid/unicuspid. Do not combine with Chile first-in-human series or infer 29-mm EFS data."
+            }
           }
         }
       },
@@ -16417,6 +16658,22 @@
     "edges": [
       {
         "data": {
+          "id": "dev-siegel-tavr__made_by__co-mirus",
+          "source": "dev-siegel-tavr",
+          "target": "co-mirus",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-siegel-tavr__treats__cond-as",
+          "source": "dev-siegel-tavr",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "dev-watchman-original__made_by__co-boston-scientific",
           "source": "dev-watchman-original",
           "target": "co-boston-scientific",
@@ -18477,6 +18734,38 @@
           "source": "dig-ultrasight-pvadiq",
           "target": "cond-hf",
           "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-siegel-star__evaluates__dev-siegel-tavr",
+          "source": "trial-siegel-star",
+          "target": "dev-siegel-tavr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-siegel-star__studies__cond-as",
+          "source": "trial-siegel-star",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-siegel-efs__evaluates__dev-siegel-tavr",
+          "source": "trial-siegel-efs",
+          "target": "dev-siegel-tavr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-siegel-efs__studies__cond-as",
+          "source": "trial-siegel-efs",
+          "target": "cond-as",
+          "relationship": "studies"
         }
       },
       {

@@ -115,6 +115,27 @@ are authoritative; do not maintain completion state in this table.
 
 Shared Linear reference: [VISUALIZE-SH work organization and source policy](https://linear.app/workspace-visualize-sh/document/visualize-sh-work-organization-and-source-policy-5232e09368ad).
 
+## Reconciled local work
+
+The owner initially requested local-only previews and later approved including
+all pending changes in a pushed, reviewed and merged PR on October 14, 2026.
+The following local proposals have been reconciled after searching Linear:
+
+- [WOR-32: approved SIEGEL research and pending workspace integration](https://linear.app/workspace-visualize-sh/issue/WOR-32/integrate-approved-siegel-research-and-pending-workspace-changes)
+  owns the SIEGEL/MiRus evidence additions, the shared News Insights/Editorial
+  keyword UI, and repository integration/review in `P-WOR-1`. Source pointers,
+  acceptance criteria and held evidence gaps are in the issue and
+  `docs/SIEGEL_RHENIUM_REVIEW_2026-10-14.md`.
+- [WOR-33: manual News Insights template and draft workflow](https://linear.app/workspace-visualize-sh/issue/WOR-33/add-manual-news-insights-template-frozen-run-windows-and-local-draft)
+  owns the template, frozen run windows, local renderer/preview workflow and
+  inaugural September 30–October 13 draft in `P-WOR-2`. This is distinct from
+  WOR-14's scheduled aggregated digest rehearsal. The article remains draft;
+  committing its source is not public article publication or delivery approval.
+
+Linear is authoritative for lifecycle and validation. No new schedule or send is
+created by these outcomes. The older local-only handoffs are retained in Git
+history; they are not pending/unfiled issues now.
+
 ## Unfiled work when Linear is unavailable
 
 None recorded. If needed, append a dated entry with proposed project, outcome,
