@@ -2,6 +2,51 @@
 # Schema: schema/trial.schema.json   |   See schema/DATA_DICTIONARY.md
 # id prefix: trial-
 # Every `therapies` and `conditions` id must resolve (build:data enforces this).
+
+- id: trial-siegel-star
+  type: trial
+  name: STAR (SIEGEL TAVR)
+  nctId: NCT07278310
+  phase: Pivotal randomized trial
+  status: recruiting
+  conditions: [cond-as]
+  therapies: [dev-siegel-tavr]
+  enrollment: 1025
+  primaryEndpoint: Composite of all-cause mortality, all stroke and valve/procedure-related cardiovascular rehospitalization at 1 year (VARC-3).
+  outcomeSummary: No registry results posted. Enrollment is the estimated target; April 2028 completion remains estimated in the April 2026 registry revision.
+  resultStatus: ongoing
+  references: [https://clinicaltrials.gov/study/NCT07278310]
+  curation:
+    status: curated
+    lastUpdated: '2026-10-14'
+    sources: [https://clinicaltrials.gov/study/NCT07278310]
+    notes: >-
+      Registry header, Study Overview, Study Plan, Participation Criteria and Study Record Dates inspected 2026-10-14.
+      Last update posted 2026-04-09; estimated enrollment 1025, not enrolled/analyzed. Randomized, parallel, outcomes-assessor
+      masked; commercially available TAVR control. Sponsor April 8 release reports first treatments, while registry start
+      remains an April 2026 estimate. Exact hardware revision not disclosed. No market-approval timeline assigned.
+
+- id: trial-siegel-efs
+  type: trial
+  name: SIEGEL TAVR US Early Feasibility Study
+  nctId: NCT06680427
+  phase: Early feasibility; single-arm
+  status: active
+  conditions: [cond-as]
+  therapies: [dev-siegel-tavr]
+  enrollment: 30
+  primaryEndpoint: Immediate technical implantation success; all-cause mortality or disabling stroke at 30 days (VARC-3).
+  outcomeSummary: Active, not recruiting in the last posted registry revision (December 3, 2025); no registry results posted. Estimated 30 participants, not an analyzed denominator.
+  resultStatus: ongoing
+  references: [https://clinicaltrials.gov/study/NCT06680427]
+  curation:
+    status: curated
+    lastUpdated: '2026-10-14'
+    sources: [https://clinicaltrials.gov/study/NCT06680427]
+    notes: >-
+      Study Overview, Participation Criteria, Study Plan and Study Record Dates inspected 2026-10-14. Actual start 2025-03-26;
+      estimated December 2025 completion is stale and does not establish completion. Eligibility: age 50+, transfemoral,
+      23/26-mm valves; excludes bicuspid/unicuspid. Do not combine with Chile first-in-human series or infer 29-mm EFS data.
 # NOTE: nctId is included only where verified. Where omitted, `references` carries
 # a ClinicalTrials.gov search link; the refresh routine should fill verified NCT ids.
 

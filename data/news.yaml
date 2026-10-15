@@ -1,3 +1,37 @@
+- id: news-2026-05-18-boston-mirus-siegel-investment
+  publishedAt: '2026-05-18'
+  title: Boston Scientific announces MiRus investment and conditional SIEGEL TAVR acquisition option
+  summary: >-
+    Boston Scientific announced a MiRus investment and an option to acquire its TAVR business, subject to milestones and further
+    payments. The disclosure describes investigational SIEGEL sizes of 23, 26 and 29 mm and an 8 Fr expandable sheath.
+    It also references unnamed mitral/tricuspid replacement assets; their materials are unverified. An option is not a completed
+    acquisition, and the system was not commercially approved at the disclosure date.
+  sourceName: Boston Scientific
+  sourceUrl: https://news.bostonscientific.com/2026-05-18-Boston-Scientific-announces-strategic-investment-in-MiRus-LLC
+  additionalSources:
+    - label: SEC Form 8-K — Item 8.01
+      url: https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm
+  topicTags: [TAVR, SIEGEL, MiRus, rhenium, corporate transaction]
+  relevantNodeIds: [dev-siegel-tavr, co-mirus, co-boston-scientific, cond-as]
+  reviewStatus: reviewed
+
+- id: news-2026-04-08-siegel-star-first-enrollment
+  publishedAt: '2026-04-08'
+  title: MiRus reports first patient treatments in the randomized STAR study of SIEGEL TAVR
+  summary: >-
+    MiRus reported first treatments in STAR, a randomized comparison of SIEGEL with commercially available TAVR for severe symptomatic
+    aortic stenosis. The registered target is an estimated 1,025 participants; the primary endpoint combines all-cause death,
+    all stroke and valve/procedure-related cardiovascular rehospitalization at one year. The registry revision posted April 9,
+    2026 lists recruiting and no results. Trial authorization is distinct from commercial valve approval.
+  sourceName: MiRus
+  sourceUrl: https://www.mirusmed.com/mirus-brings-patient-enrollment-in-the-star-randomized-trial-of-the-siegel-transcatheter-aortic-valve/
+  additionalSources:
+    - label: STAR official registry — NCT07278310
+      url: https://clinicaltrials.gov/study/NCT07278310
+  topicTags: [TAVR, SIEGEL, MiRus, STAR, clinical trial]
+  relevantNodeIds: [dev-siegel-tavr, co-mirus, trial-siegel-star, cond-as]
+  reviewStatus: reviewed
+
 - id: news-2026-10-12-acacia-hcm-additional-hfsa-analyses
   publishedAt: '2026-10-12'
   title: Cytokinetics reports additional ACACIA-HCM analyses presented at HFSA
@@ -453,6 +487,10 @@
     - label: FDA 510(k) record K254297
       url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K254297
   reviewStatus: reviewed
+
+# News feed — source-linked items for the SH graph. Schema: schema/news.schema.json
+# Historical entries were imported from the archived weekly digest emails.
+# Every relevantNodeIds entry must resolve to an existing graph node.
 
 # News feed — source-linked items for the SH graph. Schema: schema/news.schema.json
 # Historical entries were imported from the archived weekly digest emails.

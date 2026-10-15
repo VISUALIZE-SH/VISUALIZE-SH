@@ -1,6 +1,6 @@
 # Human-review pilot. Authored from the source register below; no clinical claim is marked reviewed.
 schemaVersion: 1
-updatedAt: '2026-10-12'
+updatedAt: '2026-10-14'
 coverage:
   title: Evidence pilot
   description: Draft, source-linked records for review. Not a complete label, IFU, or safety inventory.
@@ -1395,6 +1395,31 @@ indications:
     anatomy: Aortic root and valve
     restrictions: The clinician remains responsible for treatment decisions and device-IFU compliance.
 trials:
+  - id: evidence-siegel-star
+    name: STAR (SIEGEL TAVR)
+    nctId: NCT07278310
+    entityId: trial-siegel-star
+    familyIds: [family-siegel]
+    design: Randomized parallel pivotal trial; outcomes-assessor masking; Siegel versus commercial TAVR. Sponsor describes 1:1 allocation; registry does not specify comparator generations.
+    versionIds: []
+    versionMapping: unclear
+    population: Adults 18+ with symptomatic severe native calcific AS at low/intermediate/high surgical risk; transfemoral eligible; 23/26/29-mm annular eligibility in inclusion 6. Hardware revision unspecified.
+    sourceRefs:
+      - { sourceId: src-siegel-star-registry, locator: 'Study Overview; Participation Criteria inclusion 1–6; Study Plan design and arms; MR-002; record last update posted 2026-04-09' }
+      - { sourceId: src-siegel-star-enrollment-20260408, locator: 'Non-quotation trial design paragraph beginning The STAR Trial Chairpersons (1:1 allocation)' }
+    reviewStatus: reviewed
+  - id: evidence-siegel-efs
+    name: SIEGEL TAVR US Early Feasibility Study
+    nctId: NCT06680427
+    entityId: trial-siegel-efs
+    familyIds: [family-siegel]
+    design: Prospective US multicenter non-randomized single-arm open-label feasibility study; MR-001.
+    versionIds: []
+    versionMapping: unclear
+    population: Age 50+ with symptomatic severe native AS; transfemoral eligible; 23/26-mm valves; bicuspid/unicuspid excluded. Exact revision unspecified; distinct from Chile FIH cohort and 2026 three-size disclosure.
+    sourceRefs:
+      - { sourceId: src-siegel-efs-registry, locator: 'Study Overview; Participation Criteria inclusion 1–5 and anatomical exclusion 4; Study Plan; record last update posted 2025-12-03' }
+    reviewStatus: reviewed
   - id: evidence-laplace-efs-us
     name: Laplace TTVR US Early Feasibility Study
     nctId: NCT06183684
@@ -2109,6 +2134,26 @@ trials:
     reviewStatus: reviewed
 
 trialSnapshots:
+  - id: snapshot-siegel-star-20261014
+    trialId: evidence-siegel-star
+    observedAt: '2026-10-14'
+    registryUpdatedAt: '2026-04-09'
+    status: RECRUITING
+    enrollment: { value: 1025, basis: estimated, scope: 'Registry total target; not randomized, treated or analyzed enrollment' }
+    note: No results posted. Registry start April 2026 and completion April 2028 remain estimated; separate April 8 sponsor announcement reports first treatments. Last verified April 2026.
+    sourceRefs:
+      - { sourceId: src-siegel-star-registry, locator: 'Header; Study Overview; Study Record Dates; No Results Posted tab; revision posted 2026-04-09' }
+    reviewStatus: reviewed
+  - id: snapshot-siegel-efs-20261014
+    trialId: evidence-siegel-efs
+    observedAt: '2026-10-14'
+    registryUpdatedAt: '2025-12-03'
+    status: ACTIVE_NOT_RECRUITING
+    enrollment: { value: 30, basis: estimated, scope: Registry total target; not proof of treated or analyzed cohort size }
+    note: Actual start March 26, 2025; December 2025 completion remains a stale estimate. No results posted. Last verified September 2025. Do not infer completion or substitute meeting-slide denominators.
+    sourceRefs:
+      - { sourceId: src-siegel-efs-registry, locator: 'Header; Study Overview; Study Record Dates; No Results Posted tab; revision posted 2025-12-03' }
+    reviewStatus: reviewed
   - id: snapshot-laplace-efs-us-20261009
     trialId: evidence-laplace-efs-us
     observedAt: '2026-10-09'

@@ -164,6 +164,9 @@ export type Entity = Condition | Therapy | Company | Trial
 // News (authored in data/news.yaml and compiled into public/graph.json)
 // ---------------------------------------------------------------------------
 
+/** Authored presentation category, independent of review status. */
+export type NewsContentType = 'news' | 'news-insights' | 'editorial'
+
 /** A source-linked news item connected to one or more graph entities. */
 export interface NewsItem {
   /** Stable, date-prefixed kebab-case id; never reuse an id for a different story. */
@@ -177,6 +180,8 @@ export interface NewsItem {
   summary: string
   sourceName: string
   sourceUrl: string
+  /** Explicit presentation category. Omitted means ordinary, unbadged news. */
+  contentType?: NewsContentType
   /** Draft items remain local and are omitted from public graph and digest output. */
   reviewStatus?: 'draft' | 'reviewed'
   lifecycleStatus?: LifecycleStatus

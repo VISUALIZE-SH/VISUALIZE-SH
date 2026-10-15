@@ -2,6 +2,21 @@
 # Schema: schema/company.schema.json   |   See schema/DATA_DICTIONARY.md
 # id prefix: co-
 
+- id: co-mirus
+  type: company
+  name: MiRus LLC
+  website: https://www.mirusmed.com/
+  description: Developer of the investigational SIEGEL aortic valve and MoRe molybdenum–rhenium biomaterials.
+  curation:
+    status: curated
+    lastUpdated: '2026-10-14'
+    sources:
+      - https://www.mirusmed.com/
+      - https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm
+    notes: >-
+      documentary limitations remain. SEC Form 8-K Item 8.01 records an investment agreement and conditional TAVR acquisition
+      option; this is not evidence of completed acquisition. Unnamed mitral/tricuspid assets have unverified materials.
+
 - id: co-boston-scientific
   type: company
   name: "Boston Scientific"

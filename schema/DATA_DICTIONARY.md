@@ -63,6 +63,15 @@ normal public digest. After checking the source and approving the issue locally,
 set accepted items to `reviewStatus: reviewed`; remove rejected items. Older items
 without this field retain their existing public behavior.
 
+Optional `contentType` is `news`, `news-insights`, or `editorial`. Omission and
+`news` both mean ordinary news with unchanged keyword styling. `news-insights` displays
+**News Insights** and `editorial` displays **Editorial** as the existing metadata
+keyword with purple background and bold white text, without a duplicate pill. Set
+the category explicitly; titles and topic tags never determine it. This field
+does not change draft visibility or confer curator/author approval. A published
+source-linked longform item may use its canonical HTTPS URL as `sourceUrl`;
+the card remains a concise summary and link, subject to the same source rules.
+
 Summaries may use two or three original sentences (up to 650 characters) when
 needed to preserve the scope, result, and uncertainty found in historical email
 newsletters. Do not copy or lightly paraphrase extended publisher text. When the

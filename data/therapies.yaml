@@ -5,6 +5,56 @@
 
 # ============================ DEVICES =====================================
 
+- id: dev-siegel-tavr
+  type: therapy
+  therapyType: device
+  subtype: Balloon-expandable transcatheter aortic valve
+  name: SIEGEL TAVR
+  company: co-mirus
+  treats: [cond-as]
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational. MiRus reports STAR trial enrollment began April 2026; trial authorization is not commercial approval.
+    May 2026 sponsor disclosure states not approved for commercial distribution in any country.
+  mechanism: Catheter-delivered balloon-expandable replacement for a stenotic aortic valve.
+  materials:
+    - name: Molybdenum–rhenium (MoRe)
+      role: Balloon-expandable frame
+      category: frame
+      source: https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/
+      note: Manufacturer identifies nickel/cobalt-free alloy; exact frame percentages unverified.
+    - name: Dry porcine tissue
+      role: Valve leaflets
+      category: leaflet
+      source: https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/
+    - name: Nitric oxide coating
+      role: Frame surface coating (May 2026 sponsor description)
+      category: coating
+      source: https://news.bostonscientific.com/2026-05-18-Boston-Scientific-announces-strategic-investment-in-MiRus-LLC
+      note: Coating formulation and clinical effects not independently verified.
+  description: >-
+    MiRus investigational aortic platform. Current 23/26/29-mm disclosure and earlier feasibility cohorts retain separate scope;
+    human comparative benefit and long-term durability remain unestablished by the reviewed documents.
+  links:
+    - label: MiRus SIEGEL product information
+      url: https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/
+    - label: STAR pivotal registry
+      url: https://clinicaltrials.gov/study/NCT07278310
+    - label: Early feasibility registry
+      url: https://clinicaltrials.gov/study/NCT06680427
+  curation:
+    status: curated
+    lastUpdated: '2026-10-14'
+    sources:
+      - https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/
+      - https://news.bostonscientific.com/2026-05-18-Boston-Scientific-announces-strategic-investment-in-MiRus-LLC
+      - https://clinicaltrials.gov/study/NCT07278310
+      - https://clinicaltrials.gov/study/NCT06680427
+    notes: >-
+      
+      No FDA commercial-authorization decision or reusable product figure added. Do not infer exact alloy composition from
+      orthopedic Mo-47.5Re or attribute unnamed MiRus mitral/tricuspid assets to this aortic platform.
+
 # --- LAA closure ---
 - id: dev-watchman-original
   type: therapy

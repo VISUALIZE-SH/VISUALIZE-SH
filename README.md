@@ -16,6 +16,16 @@ evolves, and **Data** lets readers inspect the source-linked evidence behind a
 comparison. The graph remains the overview and navigation surface. Versioned
 evidence is loaded from the static `public/intelligence.json` payload.
 
+**News Insights** adds a manually generated analytical edition: consequential
+changes, credible connections, and the evidence that would change the reading
+next. Its window runs from the previous completed generation through today,
+usually about two weeks and longer in quiet periods. News Insights and specialty
+Editorial cards highlight their existing metadata keyword in purple with bold
+white text. The reusable
+[generation template](prompts/news-insights.md) and
+[local workflow](docs/NEWS_INSIGHTS_WORKFLOW.md) keep drafting, review, and
+publication separate; draft article previews remain local.
+
 > ⚕️ **This is not a clinical advice tool.** Content here is not provided or
 > endorsed by the organizations listed. For educational and informational use
 > only. This is not medical advice and may be incomplete or out of date.

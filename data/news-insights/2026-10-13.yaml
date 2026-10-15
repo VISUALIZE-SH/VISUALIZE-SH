@@ -1,0 +1,204 @@
+id: insights-2026-10-13
+contentType: news-insights
+reviewStatus: draft
+runDate: '2026-10-13'
+windowFrom: '2026-09-30'
+windowTo: '2026-10-13'
+title: 'News Insights | September 30–October 13, 2026'
+dek: 'Pediatric eligibility, model validation, and patient-facing monitoring.'
+summary: >-
+  Analysis of pediatric follow-up, validation boundaries across three modeling studies,
+  and new CardioMEMS patient-facing capabilities.
+relevantNodeIds: [dev-autus, rx-mavacamten, dev-evolut, cond-ms, cond-asd, dev-cardiomems, dig-cardioguide-hf]
+selectedNewsIds:
+  - news-2026-10-01-autus-fda-approval
+  - news-2026-09-30-camzyos-pediatric-indication-expansion
+  - news-2026-10-02-tavr-fsi-bench-validation
+  - news-2026-10-09-mitral-stenosis-fsi-energetics
+  - news-2026-10-04-echodino-pediatric-echo-foundation-model
+  - news-2026-10-05-cardiomems-cardioguide-patient-access
+scopeNote: >-
+  Local draft; author and factual review pending. Six of sixteen candidate News records are analyzed.
+  Connections are analytical interpretations. Internal links show current draft context, not a historical
+  snapshot or independent corroboration. The selection does not establish a field-wide trend.
+opening:
+  - text: >-
+      Selected developments in this window concern pediatric eligibility, computational validation, and patient-facing
+      monitoring. Across these domains, the scope of a claim depends on the population, conditions, and observation period
+      evaluated. This edition examines those boundaries and identifies evidence that could extend them.
+    sourceIds: [autus-fda, camzyos-fda, tavr-fsi, mitral-fsi, echodino, cardioguide]
+    interpretation: true
+sections:
+  - heading: 'Pediatric evidence and duration of follow-up'
+    role: insight
+    paragraphs:
+      - text: >-
+          FDA approved AUTUS, a surgical pulmonary valve designed for subsequent balloon expansion as a child grows.
+          The announcement reports two expansions and ongoing longer-term study. Lifetime reductions in reoperation
+          remain unestablished.
+        sourceIds: [autus-fda]
+        contextLinks: [{label: 'AUTUS evidence', versionId: ver-autus-size-adjustable}]
+      - text: >-
+          CAMZYOS eligibility now includes US pediatric patients weighing at least 30 kg with symptomatic obstructive HCM.
+          FDA describes SCOUT-HCM as 44 patients aged 12–18, evaluated against placebo for Valsalva outflow-tract gradient
+          at Week 28. Functional and symptom benefit in pediatric patients is described as expected. The heart-failure
+          boxed warning and REMS requirements remain.
+        sourceIds: [camzyos-fda, camzyos-date]
+        contextLinks: [{label: 'CAMZYOS evidence', versionId: ver-camzyos}]
+      - text: >-
+          These separate indications share a longitudinal evidence question: how well do observations represent later
+          patient states? AUTUS requires evaluation after expansion; CAMZYOS requires distinction between authorized
+          eligibility, studied ages, endpoints, and follow-up. Neither announcement resolves the full pediatric time horizon.
+        sourceIds: [autus-fda, camzyos-fda]
+        interpretation: true
+        contextLinks:
+          - {label: 'AUTUS', versionId: ver-autus-size-adjustable}
+          - {label: 'CAMZYOS', versionId: ver-camzyos}
+  - heading: 'Model inputs and independent validation'
+    role: connection
+    paragraphs:
+      - text: >-
+          Three modeling studies illustrate different validation boundaries. Interpretation requires identifying supplied
+          inputs, calibration data, independent observations, and intended use. Shared terminology does not make their
+          tests equivalent.
+        sourceIds: [tavr-fsi, mitral-fsi, echodino]
+        interpretation: true
+      - text: >-
+          The TAVR preprint evaluates a 26-mm CoreValve Evolut R. Parameters calibrated at 70 bpm are retained at 60 and
+          80 bpm, while upstream forcing remains measurement-informed at each rate. Independent downstream checks
+          therefore constitute conditional bench validation. They do not establish patient-level prediction or applicability
+          to Evolut FX/FX+.
+        sourceIds: [tavr-fsi]
+      - text: >-
+          The mitral study uses one representative geometry per disease etiology, simplified anatomy, and no direct
+          volumetric or in-vivo validation. EchoDino reports patient-disjoint downstream tests and external benchmarks;
+          its internal TCH-SHD evaluation overlaps the unlabeled pretraining corpus. This distinction concerns pretraining
+          independence and does not establish label leakage or invalidate external benchmarks. Longitudinal adult congenital-heart
+          validation and clinical actionability remain unresolved.
+        sourceIds: [mitral-fsi, echodino]
+    table:
+      caption: 'Validation scope. Original analytical comparison; TAVR FSI and EchoDino are preprints. Atlas links provide broad context, not paper-specific evidence.'
+      columns: ['Study', 'Inputs or assumptions', 'Evaluation', 'Unresolved scope']
+      rows:
+        - cells: ['TAVR FSI · Evolut R', 'Measured forcing; 70-bpm calibration.', 'Downstream pressure and projected valve area at 60/80 bpm.', 'New loading, patient anatomy, other generations.']
+          sourceIds: [tavr-fsi]
+          contextLinks: [{label: 'Evolut lineage context', nodeId: dev-evolut}]
+        - cells: ['Mitral-stenosis FSI', 'Selected geometries; modeled loading.', 'Exploratory flow/energetics; prior planar comparisons.', 'Matched-loading volumetric validation; population variation.']
+          sourceIds: [mitral-fsi]
+          contextLinks: [{label: 'Mitral stenosis context', nodeId: cond-ms}]
+        - cells: ['EchoDino', 'Pediatric pretraining; internal corpus overlap.', 'Downstream patient-disjoint and external task tests.', 'Internal-test pretraining independence; longitudinal adult congenital-heart use.']
+          sourceIds: [echodino]
+          contextLinks: [{label: 'Congenital-heart context: ASD', nodeId: cond-asd}]
+  - heading: 'Evaluating patient-facing monitoring'
+    role: insight
+    paragraphs:
+      - text: >-
+          Abbott announced care-team-enabled access to CardioMEMS pressure trends and clinician-configured medication
+          instructions through CardioGuide HF, with availability planned later in 2026. The FDA approval claim remains
+          sponsor-attributed pending decision-specific verification; the software build is unspecified.
+        sourceIds: [cardioguide]
+        contextLinks:
+          - {label: 'CardioGuide announced capabilities', versionId: ver-cardioguide-hf-announced-2026}
+          - {label: 'CardioMEMS system evidence', versionId: ver-cardiomems}
+      - text: >-
+          These capabilities introduce a patient-facing workflow for existing monitoring information. Evaluation should
+          isolate their contribution to timely action, adherence, clinician workload, safety, and outcomes. Benefits from
+          earlier CardioMEMS studies cannot establish the incremental effect of this update.
+        sourceIds: [cardioguide]
+        interpretation: true
+        contextLinks: [{label: 'CardioGuide evidence scope', versionId: ver-cardioguide-hf-announced-2026}]
+    atlasSnapshot:
+      file: atlas-cardioguide.jpg
+      nodeId: dig-cardioguide-hf
+      conditionId: cond-hfpef
+      caption: >-
+        Current Atlas, filtered to HFpEF, with CardioGuide HF and its recorded condition relationship highlighted.
+        Graph links show catalog relationships; they do not establish compatibility, causal effects, or incremental benefit. Draft nodes remain visible.
+closing:
+  heading: 'Evidence priorities for the next edition'
+  role: next-question
+  paragraphs:
+    - text: >-
+        The next discriminating evidence would include post-expansion AUTUS valve function and reintervention;
+        longer pediatric CAMZYOS functional and safety follow-up; TAVR tests against withheld outputs under new loading;
+        matched-loading volumetric mitral comparisons; longitudinal postoperative adult congenital-heart measurements for EchoDino;
+        and a comparison isolating the added CardioGuide capabilities. Each would address a specific limit identified above.
+      sourceIds: [autus-fda, camzyos-fda, tavr-fsi, mitral-fsi, echodino, cardioguide]
+      interpretation: true
+sources:
+  - id: autus-fda
+    title: 'FDA Approves First Heart Valve Designed to Grow with Children'
+    publisher: 'U.S. Food and Drug Administration'
+    url: https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
+    sourceClass: regulator-document
+    access: public
+    publishedAt: '2026-10-01'
+    retrievedAt: '2026-10-13'
+    locator: 'Opening approval/design paragraphs; balloon-expansion paragraph; clinical-study and limited expansion-experience paragraphs.'
+    scope: 'AUTUS size-adjustable surgical pulmonary valve; pediatric congenital pulmonary-valve disease; United States.'
+    limits: 'Official announcement inspected; exact PMA/IFU and complete longitudinal trial report not inspected. No lifetime reintervention benefit inferred. No FDA-hosted figures reused.'
+  - id: camzyos-fda
+    title: 'FDA approves first drug to improve functional capacity and symptoms in children with rare inherited heart condition'
+    publisher: 'U.S. Food and Drug Administration'
+    url: https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart
+    sourceClass: regulator-document
+    access: public
+    retrievedAt: '2026-10-13'
+    locator: 'Action; Effectiveness (SCOUT-HCM population and endpoint); Safety Information.'
+    scope: 'Mavacamten; US symptomatic obstructive HCM; authorized pediatric weight threshold distinct from trial ages and follow-up.'
+    limits: 'Publication date not displayed in inspected body; dated BMS disclosure (camzyos-date) corroborates announcement timing without assigning its date to this FDA page. Current full prescribing information not inspected; no dosing or non-obstructive-HCM claim extracted.'
+  - id: camzyos-date
+    title: 'U.S. FDA Approves Expanded Indication for CAMZYOS in Adults and Pediatric Patients'
+    publisher: Bristol Myers Squibb
+    url: https://news.bms.com/news/corporate-financial/2026/U-S--Food-and-Drug-Administration-Approves-Expanded-Indication-for-Bristol-Myers-Squibbs-CAMZYOS-mavacamten-for-the-Treatment-of-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-oHCM-in-Adults-and-Pediatric-Patients/default.aspx
+    sourceClass: corporate-disclosure
+    access: public
+    publishedAt: '2026-09-30'
+    retrievedAt: '2026-10-13'
+    locator: 'Release heading/date and first non-quotation paragraph.'
+    scope: 'Original dated disclosure of the US pediatric indication expansion; used for announcement timing.'
+    limits: 'Timing only; authorization and cohort context established separately from FDA. No quoted expert statements used as evidence.'
+  - id: tavr-fsi
+    title: 'Experimental Bench Validation of a Computational Fluid–Structure Interaction Model of Transcatheter Aortic Valve Dynamics'
+    publisher: 'Lee et al. / arXiv'
+    url: https://arxiv.org/html/2610.03297v1
+    sourceClass: original-preprint
+    access: public
+    publishedAt: '2026-10-02'
+    retrievedAt: '2026-10-13'
+    locator: 'Abstract; section 2.1 experimental setup (Evolut R identity); section 2.3 calibration; Discussion.'
+    scope: '26-mm Medtronic CoreValve Evolut R experimental bench article; pulse-duplicator FSI and specified pulse rates.'
+    limits: 'Preprint; conditional measurement-informed forcing. No FX/FX+ transfer, patient outcomes, or deployment/leak-gap prediction asserted. Posting license does not establish figure reuse; original editorial table only.'
+  - id: mitral-fsi
+    title: 'Patient-Specific Analysis of Ventricular Vortex Formation and Flow Energetics in Rheumatic and Calcific Mitral Stenosis'
+    publisher: 'Davey et al. / Annals of Biomedical Engineering'
+    url: https://link.springer.com/article/10.1007/s10439-026-04364-7
+    sourceClass: original-study
+    access: public
+    publishedAt: '2026-10-09'
+    retrievedAt: '2026-10-13'
+    locator: 'Clinical Implications; Limitations; Conclusions.'
+    scope: 'Healthy and single representative MAC-associated/rheumatic stenosis valve geometries under modeled loading; no named implant.'
+    limits: 'Simplified anatomy/materials; no direct volumetric or in-vivo validation. No generalized clinical outcome asserted. Publisher displays CC BY 4.0; no source figures copied.'
+  - id: echodino
+    title: 'EchoDino: A pediatric foundation model for transferable echocardiographic analysis across the lifespan'
+    publisher: 'Cheng et al. / arXiv'
+    url: https://arxiv.org/html/2610.05603v2
+    sourceClass: original-preprint
+    access: public
+    publishedAt: '2026-10-07'
+    retrievedAt: '2026-10-13'
+    locator: 'Version header; section 2.1 and Table 1; held-out partition paragraph; Discussion (ACHD and clinical actionability limitations).'
+    scope: 'EchoDino representation model and task heads; named pediatric/adult evaluation datasets. October 7 is the inspected revision; the News item uses October 4 first-submission date.'
+    limits: 'Preprint; Table 1 and section 5.1 identify internal TCH-SHD as a subset of unlabeled pretraining TCH-Complex. Downstream patient-disjointness is not complete pretraining independence. No label leakage inferred; external benchmarks retain their scope. No integrated clinical or longitudinal ACHD validation established; code audit outside review. No source figures copied.'
+  - id: cardioguide
+    title: 'Abbott receives FDA approval for new CardioMEMS HF System capabilities that help patients engage in the care of their heart condition'
+    publisher: Abbott
+    url: https://abbott.mediaroom.com/2026-10-05-Abbott-receives-FDA-approval-for-new-CardioMEMS-HF-System-capabilities-that-help-patients-engage-in-the-care-of-their-heart-condition
+    sourceClass: corporate-disclosure
+    access: public
+    publishedAt: '2026-10-05'
+    retrievedAt: '2026-10-13'
+    locator: 'Non-quotation opening paragraphs; Dynamic Treatment Plan paragraph; planned availability paragraph; workflow FAQs.'
+    scope: 'Announced US CardioMEMS/CardioGuide patient-facing capabilities; clinician-configured instructions.'
+    limits: 'Approval sponsor-attributed pending decision-specific FDA/build verification; planned availability is not current rollout; no autonomous prescribing or isolated incremental outcome effect inferred. No quoted interview/executive statements used as evidence.'
