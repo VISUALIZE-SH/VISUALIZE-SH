@@ -10,6 +10,7 @@ import { GROUP_META } from './palette'
 interface StylesheetOptions {
   accessibilityMode?: boolean
   darkMode?: boolean
+  stableIslands?: boolean
 }
 
 function scaled(value: number, scale: number): number {
@@ -193,6 +194,28 @@ export function buildStylesheet(options: StylesheetOptions = {}): any[] {
       style: { 'background-color': meta.color, shape: meta.shape },
     })
   }
+
+  if (options.stableIslands) styles.push(
+    // Inherit the shared pulse-to-font-size mapping for every group.
+    { selector: 'node[islandLabel]', style: { label: 'data(islandLabel)', 'text-max-width': 175, 'min-zoomed-font-size': 5, 'text-outline-width': 2, width: 'mapData(degree, 0, 15, 28, 52)', height: 'mapData(degree, 0, 15, 28, 52)' } },
+    { selector: 'node[group = "condition"]', style: { width: 72, height: 72, 'text-max-width': 280, 'font-weight': 700, 'text-valign': 'center', 'text-halign': 'center', color: options.darkMode ? '#ead8f5' : '#48135f', 'background-color': options.darkMode ? '#33213e' : '#ead9f2', 'border-width': 2, 'min-zoomed-font-size': 0, 'z-index': 300 } },
+    { selector: 'node[group = "company"]', style: { 'text-max-width': 150, width: 27, height: 23 } },
+    { selector: 'node[group = "trial"]', style: { 'text-max-width': 155, width: 28, height: 28 } },
+    { selector: 'node[?isSharedTarget]', style: { 'font-weight': 600, 'text-max-width': 240, 'z-index': 200 } },
+    { selector: 'edge', style: { opacity: 0.32, width: 1.3, 'arrow-scale': 0.6 } },
+    { selector: 'edge[relationship = "treats"], edge[relationship = "investigated_for"]', style: { 'line-color': options.darkMode ? '#b987d1' : '#9859b5', 'target-arrow-color': options.darkMode ? '#b987d1' : '#9859b5', opacity: 0.55, width: 1.7 } },
+    { selector: 'edge[relationship = "used_in"]', style: { 'line-color': '#3a9294', 'target-arrow-color': '#3a9294', opacity: 0.55 } },
+    { selector: 'edge[relationship = "invested_in"], edge[relationship = "acquired"], edge[relationship = "option_to_acquire"], edge[relationship = "portfolio_includes"], edge[relationship = "terminated_acquisition"]', style: { 'line-color': '#b68a37', 'target-arrow-color': '#b68a37', 'line-style': 'dotted', opacity: 0.65, width: 2 } },
+    { selector: '.faded', style: { opacity: 0.08, 'text-opacity': 0 } },
+    { selector: 'node.sel', style: { 'z-index': 9999, 'min-zoomed-font-size': 0, 'font-weight': 700 } },
+    { selector: 'edge.hl', style: { opacity: 1, width: 2.7 } },
+  )
+
+  // Evidence state and relationship meaning apply in every layout, including Timeline.
+  styles.push(
+    { selector: 'edge[?isDraft]', style: { 'line-style': 'dashed' } },
+    { selector: 'edge[relationship = "investigated_for"], edge[relationship = "option_to_acquire"], edge[relationship = "terminated_acquisition"]', style: { 'line-style': 'dotted' } },
+  )
 
   return styles
 }

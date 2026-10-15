@@ -29,9 +29,11 @@ import type {
   GraphNodeData,
   NodeGroup,
   TherapyType,
+  SourcedRelationship,
 } from '../src/types/entities'
 import { atlasLifecycleFlags } from '../src/data/lifecycle'
 import { newsDateIssues } from './news-validation'
+import { relationshipEndpointIssues } from './graph-relationships'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = resolve(__dirname, '..')
@@ -69,6 +71,7 @@ const validators: Record<string, ValidateFunction> = {
   companies: loadSchema('company.schema.json'),
   trials: loadSchema('trial.schema.json'),
   news: loadSchema('news.schema.json'),
+  relationships: loadSchema('relationship.schema.json'),
 }
 
 // --- load + parse YAML -----------------------------------------------------
@@ -122,6 +125,14 @@ function loadNews(): NewsItem[] {
 }
 
 const news = loadNews()
+const rawRelationships: unknown = yaml.load(readFileSync(join(DATA_DIR, 'relationships.yaml'), 'utf8'), { schema: yaml.CORE_SCHEMA })
+const relationships: SourcedRelationship[] = []
+if (!Array.isArray(rawRelationships)) fail('data/relationships.yaml must be a list')
+else for (const [index, record] of rawRelationships.entries()) {
+  if (!validators.relationships(record)) {
+    for (const error of validators.relationships.errors ?? []) fail(`relationships[${index}] ${error.instancePath} ${error.message}`)
+  } else relationships.push(record as SourcedRelationship)
+}
 
 // --- build id index + uniqueness ------------------------------------------
 const byId = new Map<string, Entity>()
@@ -230,6 +241,20 @@ for (const entity of all) {
     for (const th of tr.therapies ?? []) if (byId.has(th)) addEdge(tr.id, th, 'evaluates')
     for (const c of tr.conditions ?? []) if (byId.has(c)) addEdge(tr.id, c, 'studies')
   }
+}
+
+const relationshipIds = new Set<string>()
+for (const record of relationships) {
+  if (relationshipIds.has(record.id)) fail(`Duplicate relationship id: ${record.id}`)
+  relationshipIds.add(record.id)
+  for (const issue of relationshipEndpointIssues(record, byId)) fail(`relationship "${record.id}" ${issue}`)
+  for (const source of record.sources ?? []) checkPublicHttps(`relationship "${record.id}".sources`, source.url)
+  const key = `${record.source}__${record.relationship}__${record.target}`
+  if (seenEdge.has(key)) fail(`relationship "${record.id}" duplicates an existing ${record.relationship} edge`)
+  addEdge(record.source, record.target, record.relationship)
+  const edge = edges[edges.length - 1]
+  edge.evidence = record
+  edge.isDraft = record.curation?.status === 'draft'
 }
 
 // degree = number of incident edges

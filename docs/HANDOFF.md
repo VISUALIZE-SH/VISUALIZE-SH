@@ -35,6 +35,7 @@ on someone else's behalf without reviewing the diff.
 | Need | Source to edit | Check and generated result |
 | --- | --- | --- |
 | Broad entity, graph relationship, or weekly news | `data/{conditions,therapies,companies,trials,news}.yaml` | `npm run build:graph` → `public/graph.json`; rules in `schema/DATA_DICTIONARY.md` |
+| Source-scoped procedure use, target, or corporate relationship | `data/relationships.yaml` | Same graph build; independent edge review state, provenance, and typed endpoints in `schema/relationship.schema.json` / `scripts/graph-relationships.ts` |
 | Exact product version, claim, trial result, or dated event | `data/intelligence/pilot.yaml` | `npm run build:intelligence` → `public/intelligence.json`; schema and semantic validator in `scripts/intelligence/validation.ts` |
 | Exact-size comparison observation | `data/intelligence/comparative-pilot.yaml` | Same intelligence build; comparison rules in `docs/COMPARATIVE_DATA_MODEL.md` |
 | Device/drug class or standard attribute | `data/intelligence/taxonomy.yaml` | Same intelligence build; Data spec-table columns |
@@ -56,6 +57,14 @@ review state, but must not be treated as clinically approved.
 renders News, Atlas, and Data. `src/data/comparison.ts` builds the comparison
 matrix and exports; `src/graph/` handles the Cytoscape graph. Change schema and
 validation together when adding a field, then update the corresponding TS types.
+
+Islands uses full condition hub names (HFpEF/HFrEF stay abbreviated) and
+pulse-based font scaling. Automatic framing starts at 0.525 zoom (75% of the
+initial prototype); **Fit to screen** still provides the full overview. Timeline
+is the other layout; Clustered is retired. Company/trial
+nodes and the light relationship styling remain enabled. See
+`src/data/atlas-targets.ts`, `src/graph/cytoscapeStyles.ts`, and
+`src/graph/layouts.ts` for these presentation rules.
 
 ## Review and publishing boundaries
 
