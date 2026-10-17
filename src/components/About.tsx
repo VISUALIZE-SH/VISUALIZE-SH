@@ -55,14 +55,6 @@ export default function About({ meta, onClose }: Props) {
             ))}
           </ul>
 
-          <h3>Built &amp; updated</h3>
-          <p>
-            Every entity is authored as YAML, validated against a JSON
-            Schema, and compiled into the graph at build time. A scheduled
-            assistant can draft updates (new approvals, trial readouts) for a
-            human curator to review and promote.
-          </p>
-
           <h3>Data &amp; disclaimer</h3>
           <p className="disclaimer">
             For educational use only — this is <strong>not medical advice</strong>{' '}
@@ -70,6 +62,11 @@ export default function About({ meta, onClose }: Props) {
             results, and ownership change frequently; verify against primary
             sources (FDA labeling, ClinicalTrials.gov, peer-reviewed literature)
             before relying on this.
+          </p>
+
+          <p>
+            Contact us if you have questions.{' '}
+            <a href="mailto:newsletter@visualize-sh.com">newsletter@visualize-sh.com</a>
           </p>
 
           <p className="muted">
