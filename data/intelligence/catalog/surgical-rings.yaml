@@ -54,7 +54,7 @@ versions:
     sourceRefs:
       - sourceId: src-trimemo-fda
         locator: PDF p.5, 510(k) Summary — Device Description; PDF p.6 — Intended Use
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-memo-4d-curve
     familyId: family-memo-4d-curve
     name: Memo 4D Curve
@@ -65,7 +65,7 @@ versions:
     sourceRefs:
       - sourceId: src-memo-4d-curve-fda
         locator: PDF pp.5–6, 510(k) Summary — Device Description and Intended Use
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 decisions:
   - id: decision-trimemo-510k
@@ -83,7 +83,7 @@ decisions:
     sourceRefs:
       - sourceId: src-trimemo-fda
         locator: PDF p.1 — FDA clearance letter; Indications for Use form
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-memo-4d-curve-510k
     identifier: K261707
     rootIdentifier: K261707
@@ -99,7 +99,7 @@ decisions:
     sourceRefs:
       - sourceId: src-memo-4d-curve-fda
         locator: PDF p.1 — FDA clearance letter; Indications for Use form
-    reviewStatus: draft
+    reviewStatus: reviewed
 specs:
   - version: ver-trimemo
     category: surgical-tricuspid-annuloplasty

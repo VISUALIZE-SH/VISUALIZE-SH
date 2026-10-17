@@ -88,3 +88,18 @@ Do not substitute retrieval dates for publication dates or invent missing
 authors. The APA export uses `n.d.` and a document descriptor when metadata is
 unavailable. The public research audit and methodology are in
 `../../../docs/REFERENCE_BIBLIOGRAPHY.md`.
+
+## Current collection approval
+
+On October 17, 2026 the owner approved all current Atlas/Data drafts, including
+records that explicitly retain evidence gaps. Authored records carry `reviewed`
+states; graph records carry `curated` states. Exact materials that remain unknown
+are recorded as `materialsStatus: not_established`, with their existing curation
+notes, rather than inferred from another generation.
+
+Compact specs and graph bibliography still generate draft records by default.
+`../generated-approvals.json` records the owner's approval of 813 generated
+records using hashes of the record and its referenced source metadata. The
+compiler promotes only matching content; new records and changed generated
+records or sources remain draft until a new review. This snapshot records human
+approval, not additional documentary verification or resolution of known gaps.

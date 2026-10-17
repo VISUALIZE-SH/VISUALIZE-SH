@@ -110,6 +110,8 @@ export interface Therapy {
   description?: string
   /** Key permanent-implant materials for device therapies, with evidence. */
   materials?: DeviceMaterial[]
+  /** Reviewed composition gap; approval does not establish a material. */
+  materialsStatus?: 'not_established'
   /** External info links (product page / third-party clinical source). */
   links?: InfoLink[]
   /** Timeline placement date for product approval or availability. */
