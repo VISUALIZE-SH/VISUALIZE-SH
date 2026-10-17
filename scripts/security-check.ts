@@ -65,7 +65,11 @@ for (const file of [...new Set(files)].sort()) {
   if (text.includes('\0')) continue
   scanned++
   for (const candidate of secretPatterns) addMatches(file, text, candidate.name, candidate.pattern)
-  addMatches(file, text, 'email address', emailPattern)
+  for (const match of text.matchAll(emailPattern)) {
+    // Owner-approved public contact only; private addresses remain prohibited.
+    if (file === 'src/components/About.tsx' && match[0] === ['newsletter', 'visualize-sh.com'].join('@')) continue
+    findings.push({ file, line: lineNumber(text, match.index!), type: 'email address' })
+  }
 
   literalSecretAssignment.lastIndex = 0
   for (let match = literalSecretAssignment.exec(text); match; match = literalSecretAssignment.exec(text)) {
@@ -106,5 +110,5 @@ if (unique.length > 0) {
   for (const finding of unique) console.error(`  ${finding.file}:${finding.line}: ${finding.type}`)
   process.exitCode = 1
 } else {
-  console.log(`✓ security check: ${scanned} public-repository files scanned; no secrets, email addresses, or browser tracking APIs found`)
+  console.log(`✓ security check: ${scanned} public-repository files scanned; no secrets, unapproved email addresses, or browser tracking APIs found`)
 }
