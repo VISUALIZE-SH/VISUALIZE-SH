@@ -289,7 +289,7 @@ versions:
     sourceRefs:
       - sourceId: src-cardiomems-ssed-orig
         locator: 'SSED (P100045B) p.1, Section V Device Description'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-cordella
     familyId: family-cordella
     name: Cordella Pulmonary Artery Sensor System
@@ -299,7 +299,7 @@ versions:
     sourceRefs:
       - sourceId: src-cordella-ssed
         locator: 'SSED (P230040B) p.1, Section I General Information'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-fire1-norm
     familyId: family-fire1-norm
     name: FIRE1 NORM System
@@ -311,7 +311,7 @@ versions:
         locator: Methods — system description; Screening and implantation procedure
       - sourceId: src-fire1-current-manufacturer
         locator: Investigational device disclaimer
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-vlap
     familyId: family-vlap
     name: V-LAP
@@ -323,7 +323,7 @@ versions:
         locator: Device description and first-in-human implant procedure
       - sourceId: src-vlap-current-manufacturer
         locator: Investigational device disclaimer
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-corvia-shunt
     familyId: family-corvia-shunt
     name: Corvia Atrial Shunt
@@ -335,7 +335,7 @@ versions:
         locator: Author manuscript pp.6–8 — The Investigational Device
       - sourceId: src-corvia-responder-current
         locator: Current RESPONDER-HF study design and In Follow-up status
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-vwave-ventura
     familyId: family-vwave-ventura
     name: Ventura Interatrial Shunt
@@ -347,7 +347,7 @@ versions:
         locator: Device description; author full text DOI 10.1002/ehf2.14859
       - sourceId: src-vwave-fda-panel-briefing
         locator: Printed pp.43–45, sections 3.2.1–3.2.3; investigational device submitted for panel review
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-edwards-apture
     familyId: family-edwards-apture
     name: APTURE Transcatheter Shunt System
@@ -357,7 +357,7 @@ versions:
     sourceRefs:
       - sourceId: src-apture-alt-flow-ii-primary
         locator: Device and procedure; Figure 1; Trial design
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-coronary-sinus-reducer
     familyId: family-coronary-sinus-reducer
     name: Coronary Sinus Reducer System
@@ -367,7 +367,7 @@ versions:
     sourceRefs:
       - sourceId: src-reducer-spec-sheet
         locator: 'PDF p.1, device description'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-aflux
     familyId: family-aflux
     name: A-FLUX Reducer System
@@ -381,7 +381,7 @@ versions:
         locator: protocolSection.statusModule, overallStatus and lastUpdatePostDateStruct (2026-08-26)
       - sourceId: src-aflux-serra-i-us-registry
         locator: protocolSection.statusModule, overallStatus, whyStopped and lastUpdatePostDateStruct (2026-09-25)
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 decisions:
   - id: decision-cardiomems-original
@@ -396,7 +396,7 @@ decisions:
     sourceRefs:
       - sourceId: src-cardiomems-ssed-orig
         locator: 'SSED (P100045B) p.1, Section I General Information / Indications for Use'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-cardiomems-s056
     identifier: P100045/S056
     rootIdentifier: P100045
@@ -409,7 +409,7 @@ decisions:
     sourceRefs:
       - sourceId: src-cardiomems-s056-ssed
         locator: 'SSED (P100045/S056) p.1, Section I General Information / Indications for Use'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-cordella-p230040
     identifier: P230040
     rootIdentifier: P230040
@@ -422,7 +422,7 @@ decisions:
     sourceRefs:
       - sourceId: src-cordella-ssed
         locator: 'SSED (P230040B) p.1, Section I General Information / Indications for Use'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 specs:
   - version: ver-cardiomems
@@ -846,7 +846,7 @@ claims:
         locator: 'protocolSection.statusModule: ACTIVE_NOT_RECRUITING; lastUpdatePostDateStruct 2026-08-26'
       - sourceId: src-aflux-serra-i-us-registry
         locator: 'protocolSection.statusModule: SUSPENDED; whyStopped protocol change; lastUpdatePostDateStruct 2026-09-25'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: Dated registry observations for separate VHC-00002 and VHC-00004 protocols. Each lists estimated enrollment of 30; no results posted.
     limitation: Registry intervention names identify A-FLUX, but do not disclose an exact model revision. Status is not a clinical efficacy or marketing authorization claim.
 
@@ -857,11 +857,11 @@ bibliography:
     sourceRefs:
       - sourceId: src-aflux-serra-i-eu-registry
         locator: 'protocolSection: identificationModule (VHC-00002), statusModule, designModule, armsInterventionsModule, outcomesModule, contactsLocationsModule; hasResults false'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-aflux-serra-i-us-registry
     entityIds: [dev-aflux]
     versionIds: []
     sourceRefs:
       - sourceId: src-aflux-serra-i-us-registry
         locator: 'protocolSection: identificationModule (VHC-00004 / SERRA-I US), statusModule, designModule, armsInterventionsModule, outcomesModule, contactsLocationsModule; hasResults false'
-    reviewStatus: draft
+    reviewStatus: reviewed

@@ -300,7 +300,7 @@ versions:
     sourceRefs:
       - sourceId: src-sapien-original
         locator: 'Device and approval-order fields'
-    reviewStatus: draft
+    reviewStatus: reviewed
     model: 9600TFX
 
     graphEntityId: dev-sapien-3
@@ -314,7 +314,7 @@ versions:
     sourceRefs:
       - sourceId: src-sapien-s141
         locator: 'Device, supplement reason and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
     graphEntityId: dev-sapien-3
 
@@ -327,7 +327,7 @@ versions:
     sourceRefs:
       - sourceId: src-evolut-ssed
         locator: 'Section V, device description'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-evolut-fx-plus
     familyId: family-evolut
     name: Evolut FX+
@@ -337,7 +337,7 @@ versions:
     sourceRefs:
       - sourceId: src-evolut-ssed
         locator: 'Section V, page 3'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-mitraclip-nt
     familyId: family-mitraclip
     name: MitraClip NT
@@ -347,7 +347,7 @@ versions:
     sourceRefs:
       - sourceId: src-mitraclip-s028
         locator: 'Device field'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-mitraclip-ntr-xtr
     familyId: family-mitraclip
     name: MitraClip NTR / XTR
@@ -357,7 +357,7 @@ versions:
     sourceRefs:
       - sourceId: src-mitraclip-s028
         locator: 'Device field'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-watchman-flx
     familyId: family-watchman
     graphEntityId: dev-watchman-flx
@@ -368,7 +368,7 @@ versions:
     sourceRefs:
       - sourceId: src-watchman-s043
         locator: 'Device field'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-watchman-flx-pro
     familyId: family-watchman
     graphEntityId: dev-watchman-flx
@@ -379,7 +379,7 @@ versions:
     sourceRefs:
       - sourceId: src-watchman-s074
         locator: 'Approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-triclip-g4
     familyId: family-triclip
     name: TriClip G4
@@ -389,7 +389,7 @@ versions:
     sourceRefs:
       - sourceId: src-triclip-ssed
         locator: 'Device description'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-feops-141
     familyId: family-feops
     name: FEops HEARTguide 1.4.1
@@ -399,7 +399,7 @@ versions:
     sourceRefs:
       - sourceId: src-feops
         locator: '510(k) summary, technological comparison, pages 3–4'
-    reviewStatus: draft
+    reviewStatus: reviewed
     digitalSubtype: planning
     softwareVersion: 1.4.1
   - id: ver-feops-heartguide
@@ -411,7 +411,7 @@ versions:
     sourceRefs:
       - sourceId: src-feops
         locator: '510(k) summary, technological comparison, page 4'
-    reviewStatus: draft
+    reviewStatus: reviewed
     digitalSubtype: planning
     softwareVersion: 1.4.2
 
@@ -426,7 +426,7 @@ versions:
     sourceRefs:
       - sourceId: src-dasi
         locator: 'Indications-for-use form, page 3 of PDF'
-    reviewStatus: draft
+    reviewStatus: reviewed
     digitalSubtype: planning
     softwareVersion: '1.1'
 
@@ -441,7 +441,7 @@ versions:
     sourceRefs:
       - sourceId: src-vital
         locator: 'Methods: intervention'
-    reviewStatus: draft
+    reviewStatus: reviewed
     digitalSubtype: care_delivery
   - id: ver-hello-cohort
     familyId: family-hello
@@ -452,7 +452,7 @@ versions:
     sourceRefs:
       - sourceId: src-hello
         locator: 'Methods'
-    reviewStatus: draft
+    reviewStatus: reviewed
     digitalSubtype: care_delivery
 claims:
   - id: claim-sapien-3-manufacturer
@@ -468,7 +468,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-original
         locator: 'Device and approval-order fields'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-sapien-3-family
     versionId: ver-sapien-3
     key: family
@@ -482,7 +482,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-original
         locator: 'Device and approval-order fields'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-sapien-3-version
     versionId: ver-sapien-3
     key: exact-version
@@ -496,7 +496,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-original
         locator: 'Device and approval-order fields'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-sapien-ultra-manufacturer
     versionId: ver-sapien-ultra-resilia
     key: manufacturer
@@ -510,7 +510,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-s141
         locator: 'Device, supplement reason and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-sapien-ultra-family
     versionId: ver-sapien-ultra-resilia
     key: family
@@ -524,7 +524,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-s141
         locator: 'Device, supplement reason and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-sapien-ultra-version
     versionId: ver-sapien-ultra-resilia
     key: exact-version
@@ -538,7 +538,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-s141
         locator: 'Device, supplement reason and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-evolut-fx-manufacturer
     versionId: ver-evolut-fx
     key: manufacturer
@@ -552,7 +552,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ssed
         locator: 'Section V, device description'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-evolut-fx-family
     versionId: ver-evolut-fx
     key: family
@@ -566,7 +566,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ssed
         locator: 'Section V, device description'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-evolut-fx-version
     versionId: ver-evolut-fx
     key: exact-version
@@ -580,7 +580,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ssed
         locator: 'Section V, device description'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-evolut-fx-plus-manufacturer
     versionId: ver-evolut-fx-plus
     key: manufacturer
@@ -594,7 +594,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ssed
         locator: 'Section V, device description'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-evolut-fx-plus-family
     versionId: ver-evolut-fx-plus
     key: family
@@ -608,7 +608,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ssed
         locator: 'Section V, page 3'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-evolut-fx-plus-version
     versionId: ver-evolut-fx-plus
     key: exact-version
@@ -622,7 +622,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ssed
         locator: 'Section V, page 3'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-sapien-3-frame
     versionId: ver-sapien-3
     key: frame-material
@@ -636,7 +636,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-ssed
         locator: 'Section V, page 2'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: 'Original claim combined frame material with expansion mechanism; this normalized row retains only the frame material.'
   - id: claim-sapien-3-expansion
     versionId: ver-sapien-3
@@ -651,7 +651,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-ssed
         locator: 'Section V, page 2'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: 'Original claim combined this expansion mechanism with frame material; this normalized row retains only expansion mechanism.'
   - id: claim-sapien-3-leaflets
     versionId: ver-sapien-3
@@ -666,7 +666,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-ssed
         locator: 'Section V, page 2'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-sapien-3-skirt
     versionId: ver-sapien-3
     key: skirt
@@ -680,7 +680,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-ssed
         locator: 'Section V, page 2'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-sapien-3-design-question
     versionId: ver-sapien-3
     key: design-question
@@ -693,7 +693,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-ssed
         locator: 'Section V: architecture used to frame this editorial question'
-    reviewStatus: draft
+    reviewStatus: reviewed
     limitation: A research question, not a measured result or a clinical durability claim.
   - id: claim-sapien-3-stress
     versionId: ver-sapien-3
@@ -706,7 +706,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-ssed
         locator: 'Selected public SSED; numerical stress extraction pending'
-    reviewStatus: draft
+    reviewStatus: reviewed
     unit: MPa
     context: Model, tissue law, hydration, crimp conditions and mesh validation must accompany any future value.
   - id: claim-sapien-ultra-resilia-design-disclosure
@@ -720,7 +720,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-s141
         locator: 'Short public decision record'
-    reviewStatus: draft
+    reviewStatus: reviewed
     limitation: >-
       This record names the product change; it does not disclose a full specification. Other labeling still
       needs review.
@@ -737,7 +737,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ifu
         locator: Evolut FX IFU, PDF p.32, §1.1 — nitinol frame
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: Material of the exact Evolut FX frame; self-expansion is represented separately.
 
   - id: claim-evolut-fx-expansion
@@ -753,7 +753,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ifu
         locator: 'Evolut FX IFU, Section 1.1, PDF page 32'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: The Evolut FX device description explicitly calls its nitinol frame self-expanding.
   - id: claim-evolut-fx-plus-expansion
     versionId: ver-evolut-fx-plus
@@ -768,7 +768,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ifu
         locator: 'Evolut FX+ IFU, Section 1.1, PDF page 60'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: The Evolut FX+ device description separately calls its nitinol frame self-expanding.
   - id: claim-evolut-fx-leaflets
     versionId: ver-evolut-fx
@@ -783,7 +783,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ifu
         locator: Evolut FX IFU, PDF p.32, §1.1 — porcine-pericardial leaflets
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: Leaflet tissue in the exact Evolut FX configuration.
 
   - id: claim-evolut-fx-markers
@@ -799,7 +799,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ssed
         locator: 'Section V, page 3, Figure 1 and accompanying device description'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: The SSED describes the markers as an Evolut FX addition intended to support visualization during placement.
   - id: claim-evolut-fx-plus-access
     versionId: ver-evolut-fx-plus
@@ -814,7 +814,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ssed
         locator: 'Section V, page 3'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: Intended to facilitate coronary access after implantation; not a quantified clinical access advantage.
   - id: claim-evolut-fx-plus-design-question
     versionId: ver-evolut-fx-plus
@@ -828,7 +828,7 @@ claims:
     sourceRefs:
       - sourceId: src-evolut-ssed
         locator: 'Section V: documented geometry feature'
-    reviewStatus: draft
+    reviewStatus: reviewed
     limitation: No numerical fatigue performance is inferred from geometry.
   - id: claim-mitraclip-nt-fit
     versionId: ver-mitraclip-nt
@@ -842,7 +842,7 @@ claims:
     sourceRefs:
       - sourceId: src-mitraclip-s028
         locator: 'Approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: US historical 2019 authorization; see dated indication record and full label.
   - id: claim-mitraclip-ntr-xtr-fit
     versionId: ver-mitraclip-ntr-xtr
@@ -856,7 +856,7 @@ claims:
     sourceRefs:
       - sourceId: src-mitraclip-s028
         locator: 'Approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: US historical 2019 authorization; see dated indication record and full label.
   - id: claim-watchman-flx-regimen
     versionId: ver-watchman-flx
@@ -870,7 +870,7 @@ claims:
     sourceRefs:
       - sourceId: src-watchman-s043
         locator: 'Approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: US labeling decision, 2022; not a new hardware generation.
   - id: claim-triclip-g4-materials
     versionId: ver-triclip-g4
@@ -883,7 +883,7 @@ claims:
     sourceRefs:
       - sourceId: src-triclip-ssed
         locator: 'Device description: independent extraction pending'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-triclip-g4-system
     versionId: ver-triclip-g4
     key: system-components
@@ -896,7 +896,7 @@ claims:
     sourceRefs:
       - sourceId: src-triclip-ssed
         locator: 'Section V, page 2, Figure 1 and Device Description'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-triclip-g4-sizes
     versionId: ver-triclip-g4
     key: implant-sizes
@@ -909,7 +909,7 @@ claims:
     sourceRefs:
       - sourceId: src-triclip-ssed
         locator: 'Section V, page 3, TriClip G4 Delivery System description'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: The implant can be opened, closed, unlocked, and repositioned before final deployment.
   - id: claim-feops-heartguide-function
     versionId: ver-feops-heartguide
@@ -923,7 +923,7 @@ claims:
     sourceRefs:
       - sourceId: src-feops
         locator: '510(k) summary, intended use'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-feops-heartguide-boundary
     versionId: ver-feops-heartguide
     key: boundary
@@ -936,7 +936,7 @@ claims:
     sourceRefs:
       - sourceId: src-feops
         locator: '510(k) summary, description and intended use'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-feops-heartguide-library
     versionId: ver-feops-heartguide
     key: library
@@ -949,7 +949,7 @@ claims:
     sourceRefs:
       - sourceId: src-feops
         locator: 'Technological comparison, page 4'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: K214066 build 1.4.2 scope only.
   - id: claim-feops-heartguide-exposure
     versionId: ver-feops-heartguide
@@ -963,7 +963,7 @@ claims:
     sourceRefs:
       - sourceId: src-feops
         locator: 'Description and functioning'
-    reviewStatus: draft
+    reviewStatus: reviewed
     limitation: A planning report is not a therapeutic dose. Routine adoption and report turnaround are not extracted.
   - id: claim-feops-heartguide-clinical-attribution
     versionId: ver-feops-heartguide
@@ -976,7 +976,7 @@ claims:
     sourceRefs:
       - sourceId: src-predict
         locator: 'Methods: FEops HEARTguide intervention; exact build not extracted'
-    reviewStatus: draft
+    reviewStatus: reviewed
     limitation: Family-level results remain separate from this cleared software build.
   - id: claim-dasi-11-function
     versionId: ver-dasi-11
@@ -990,7 +990,7 @@ claims:
     sourceRefs:
       - sourceId: src-dasi
         locator: 'Summary, device description'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-dasi-11-boundary
     versionId: ver-dasi-11
     key: boundary
@@ -1003,7 +1003,7 @@ claims:
     sourceRefs:
       - sourceId: src-dasi
         locator: 'Summary, device description and intended use'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-dasi-11-validation
     versionId: ver-dasi-11
     key: validation
@@ -1016,7 +1016,7 @@ claims:
     sourceRefs:
       - sourceId: src-dasi
         locator: 'Testing summary, page 3 of summary'
-    reviewStatus: draft
+    reviewStatus: reviewed
     unit: patients
     context: Comparison with post-TAVR CT; not a randomized therapeutic-benefit trial.
   - id: claim-story-vital-function
@@ -1031,7 +1031,7 @@ claims:
     sourceRefs:
       - sourceId: src-vital
         locator: 'Methods: intervention'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-story-vital-dose
     versionId: ver-story-vital
     key: dose
@@ -1044,7 +1044,7 @@ claims:
     sourceRefs:
       - sourceId: src-vital
         locator: 'Methods'
-    reviewStatus: draft
+    reviewStatus: reviewed
     limitation: Requested reporting is not measured adherence or delivered treatment dose.
   - id: claim-story-vital-build
     versionId: ver-story-vital
@@ -1057,7 +1057,7 @@ claims:
     sourceRefs:
       - sourceId: src-vital
         locator: 'Methods: commercial build not established'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-story-vital-fit
     versionId: ver-story-vital
     key: fit
@@ -1070,7 +1070,7 @@ claims:
     sourceRefs:
       - sourceId: src-vital
         locator: 'Methods: participants'
-    reviewStatus: draft
+    reviewStatus: reviewed
     context: Trial eligibility; not an FDA indication.
   - id: claim-hello-cohort-function
     versionId: ver-hello-cohort
@@ -1084,7 +1084,7 @@ claims:
     sourceRefs:
       - sourceId: src-hello
         locator: 'Methods'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-hello-cohort-causality
     versionId: ver-hello-cohort
     key: causality
@@ -1097,7 +1097,7 @@ claims:
     sourceRefs:
       - sourceId: src-hello
         locator: 'Study design'
-    reviewStatus: draft
+    reviewStatus: reviewed
     limitation: Engagement and blood-pressure associations cannot establish causal valve or heart-failure benefit.
   - id: claim-hello-cohort-build
     versionId: ver-hello-cohort
@@ -1110,7 +1110,7 @@ claims:
     sourceRefs:
       - sourceId: src-hello
         locator: 'Study methods; release mapping pending'
-    reviewStatus: draft
+    reviewStatus: reviewed
 decisions:
   - id: decision-sapien-original
     identifier: P140031
@@ -1127,7 +1127,7 @@ decisions:
     sourceRefs:
       - sourceId: src-sapien-original
         locator: 'Decision and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-sapien-s010
     identifier: P140031/S010
     rootIdentifier: P140031
@@ -1143,7 +1143,7 @@ decisions:
     sourceRefs:
       - sourceId: src-sapien-s010
         locator: 'Decision and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-sapien-s141
     identifier: P140031/S141
     rootIdentifier: P140031
@@ -1159,7 +1159,7 @@ decisions:
     sourceRefs:
       - sourceId: src-sapien-s141
         locator: 'Decision and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-mitraclip-s028
     identifier: P100009/S028
     rootIdentifier: P100009
@@ -1176,7 +1176,7 @@ decisions:
     sourceRefs:
       - sourceId: src-mitraclip-s028
         locator: 'Decision and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-watchman-s043
     identifier: P130013/S043
     rootIdentifier: P130013
@@ -1192,7 +1192,7 @@ decisions:
     sourceRefs:
       - sourceId: src-watchman-s043
         locator: 'Decision and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-watchman-s074
     identifier: P130013/S074
     rootIdentifier: P130013
@@ -1209,7 +1209,7 @@ decisions:
     sourceRefs:
       - sourceId: src-watchman-s074
         locator: 'Decision and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-evolut-s174
     identifier: P130021/S174
     rootIdentifier: P130021
@@ -1228,7 +1228,7 @@ decisions:
     sourceRefs:
       - sourceId: src-evolut-order
         locator: 'Decision and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-feops
     identifier: K214066
     rootIdentifier: K214066
@@ -1244,7 +1244,7 @@ decisions:
     sourceRefs:
       - sourceId: src-feops
         locator: 'Decision and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-dasi
     identifier: K223809
     rootIdentifier: K223809
@@ -1260,7 +1260,7 @@ decisions:
     sourceRefs:
       - sourceId: src-dasi
         locator: 'Decision and approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
 indications:
   - id: ifu-sapien-2015
     decisionId: decision-sapien-original
@@ -1276,7 +1276,7 @@ indications:
     sourceRefs:
       - sourceId: src-sapien-original
         locator: 'Indications / approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
     anatomy: Native aortic valve
   - id: ifu-sapien-2016
     decisionId: decision-sapien-s010
@@ -1292,7 +1292,7 @@ indications:
     sourceRefs:
       - sourceId: src-sapien-s010
         locator: 'Indications / approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
     anatomy: Native aortic valve
     supersedesId: ifu-sapien-2015
     restrictions: >-
@@ -1315,7 +1315,7 @@ indications:
     sourceRefs:
       - sourceId: src-mitraclip-s028
         locator: 'Indications / approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
     anatomy: Mitral valve
     restrictions: LVEF 20–50%; LVESD ≤70 mm; experienced multidisciplinary heart-team assessment.
   - id: ifu-watchman-2025
@@ -1335,7 +1335,7 @@ indications:
     sourceRefs:
       - sourceId: src-watchman-s074
         locator: 'Indications / approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
     anatomy: Left atrial appendage
     restrictions: Concomitant or sequential use is described. This paraphrase is not the complete IFU.
   - id: ifu-evolut-2025
@@ -1355,7 +1355,7 @@ indications:
     sourceRefs:
       - sourceId: src-evolut-order
         locator: 'Indications / approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
     anatomy: Aortic bioprosthesis
     restrictions: Order specifies predicted surgical mortality ≥8% at 30 days plus clinical comorbidity assessment.
   - id: ifu-feops-2022
@@ -1372,7 +1372,7 @@ indications:
     sourceRefs:
       - sourceId: src-feops
         locator: 'Indications / approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
     anatomy: Left atrial appendage
     restrictions: >-
       Use alongside the simulated device IFU and clinical judgment; this record does not authorize TAVR
@@ -1391,7 +1391,7 @@ indications:
     sourceRefs:
       - sourceId: src-dasi
         locator: 'Indications / approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
     anatomy: Aortic root and valve
     restrictions: The clinician remains responsible for treatment decisions and device-IFU compliance.
 trials:
@@ -1435,7 +1435,7 @@ trials:
           Official API protocolSection.identificationModule; sponsorCollaboratorsModule.leadSponsor; descriptionModule;
           designModule.designInfo; armsInterventionsModule; eligibilityModule, inclusion 5 permits transjugular or
           transfemoral access. Exact product revision is not stated; retrieved 2026-10-09.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-laplace-efs-canada
     name: Laplace TTVR Canadian Early Feasibility Study
     nctId: NCT07171060
@@ -1451,7 +1451,7 @@ trials:
           Official API protocolSection.identificationModule; sponsorCollaboratorsModule.leadSponsor; descriptionModule;
           designModule.designInfo; armsInterventionsModule; eligibilityModule, inclusion 5 specifies transjugular access.
           Exact product revision is not stated; retrieved 2026-10-09.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-laplace-triumph
     name: TRIUMPH (Laplace TTVR)
     nctId: NCT07687485
@@ -1472,7 +1472,7 @@ trials:
           Official API protocolSection.identificationModule; sponsorCollaboratorsModule.leadSponsor; descriptionModule;
           designModule.designInfo and enrollmentInfo; armsInterventionsModule; eligibilityModule. Neither exact device
           generation nor TRIUMPH access route is specified; retrieved 2026-10-09.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-autus-pivotal
     name: AUTUS Valve Pivotal Study
     nctId: NCT05006404
@@ -1491,7 +1491,7 @@ trials:
         locator: >-
           Official API protocolSection.identificationModule; descriptionModule; designModule; eligibilityModule (retrieved
           2026-10-07). Named AUTUS device; no exact catalog model or older EFS mapping inferred.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-autus-continued-access
     name: AUTUS Valve Continued Access Study
     nctId: NCT07466745
@@ -1510,7 +1510,7 @@ trials:
         locator: >-
           Official API protocolSection.identificationModule; descriptionModule; designModule; eligibilityModule (retrieved
           2026-10-07). Named AUTUS device; no exact catalog model or older EFS mapping inferred.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-champion-af
     name: CHAMPION-AF
     nctId: NCT04394546
@@ -1523,7 +1523,7 @@ trials:
     sourceRefs:
       - sourceId: src-champion-af-nejm
         locator: 'Methods and Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-protect-af
     name: PROTECT AF
     nctId: NCT00129545
@@ -1536,7 +1536,7 @@ trials:
     sourceRefs:
       - sourceId: src-watchman-original-ssed
         locator: 'Summary of Primary Clinical Study'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-amulet-ide
     name: Amulet IDE
     nctId: NCT02879448
@@ -1548,7 +1548,7 @@ trials:
     sourceRefs:
       - sourceId: src-amulet-ide-ssed
         locator: 'PDF pp. 11–12, Study Design and population'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-swiss-apero
     name: SWISS-APERO
     nctId: NCT03399851
@@ -1560,7 +1560,7 @@ trials:
     sourceRefs:
       - sourceId: src-swiss-apero-3y
         locator: 'Methods; Table 1'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-veritas
     name: VERITAS
     nctId: NCT06707688
@@ -1572,7 +1572,7 @@ trials:
     sourceRefs:
       - sourceId: src-veritas-amulet-360
         locator: 'Abstract, Methods and Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-watchman-flx-pas
     name: WATCHMAN FLX Real-World Use Post-Approval Study
     familyIds: [family-watchman]
@@ -1583,7 +1583,7 @@ trials:
     sourceRefs:
       - sourceId: src-watchman-flx-pas
         locator: 'Study Design and Final Effect Findings'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-atriclip-exclude
     name: EXCLUDE multicenter AtriClip study
     nctId: NCT00779857
@@ -1595,7 +1595,7 @@ trials:
     sourceRefs:
       - sourceId: src-atriclip-exclude
         locator: 'Abstract, Methods and Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-triluminate
     name: TRILUMINATE Pivotal
     nctId: NCT03904147
@@ -1609,7 +1609,7 @@ trials:
     sourceRefs:
       - sourceId: src-triluminate-350
         locator: 'Methods'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-predict
     name: PREDICT-LAA
     nctId: NCT04180605
@@ -1622,7 +1622,7 @@ trials:
     sourceRefs:
       - sourceId: src-predict
         locator: 'Methods'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-vital
     name: VITAL-HF
     familyIds:
@@ -1634,7 +1634,7 @@ trials:
     sourceRefs:
       - sourceId: src-vital
         locator: 'Methods'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-pvl-pld-multicenter
     name: Occlutech PLD multicenter long-term study
     familyIds: [family-occlutech-pvl]
@@ -1786,7 +1786,7 @@ trials:
     sourceRefs:
       - sourceId: src-aflux-serra-i-eu-registry
         locator: 'protocolSection identificationModule, designModule, conditionsModule, armsInterventionsModule and contactsLocationsModule; exact model revision not stated'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-trial-serra-i-us
     name: SERRA-I US
     nctId: NCT07449325
@@ -1799,7 +1799,7 @@ trials:
     sourceRefs:
       - sourceId: src-aflux-serra-i-us-registry
         locator: 'protocolSection identificationModule, designModule, conditionsModule, armsInterventionsModule and contactsLocationsModule; exact model revision not stated'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: evidence-link-hf2
     entityId: trial-link-hf2
@@ -1816,7 +1816,7 @@ trials:
     sourceRefs:
       - sourceId: src-link-hf2-registry
         locator: protocolSection.designModule; armsInterventionsModule; eligibilityModule
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: evidence-teer-china
     entityId: trial-teer-china
     name: TEER-CHINA
@@ -1836,7 +1836,7 @@ trials:
         locator: protocolSection.designModule; descriptionModule; armsInterventionsModule
       - sourceId: src-teer-china-design-20260727
         locator: Methods; Study design
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: evidence-upbeat-aftx-201
     entityId: trial-upbeat-aftx-201
@@ -1852,7 +1852,7 @@ trials:
     sourceRefs:
       - sourceId: src-upbeat-ctgov-nct07426419
         locator: protocolSection.identificationModule; designModule; eligibilityModule
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: intel-trial-cmic-ii
     name: C-MIC II
@@ -1872,7 +1872,7 @@ trials:
     sourceRefs:
       - sourceId: src-cmic-nct04662034
         locator: 'protocolSection: identificationModule, designModule, descriptionModule, eligibilityModule'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: intel-trial-cmic-iii
     name: C-MIC III
     nctId: NCT06920030
@@ -1896,7 +1896,7 @@ trials:
     sourceRefs:
       - sourceId: src-cmic-nct06920030
         locator: 'protocolSection: identificationModule, designModule, descriptionModule, eligibilityModule'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: intel-trial-cmic-iv
     name: C-MIC IV
     nctId: NCT07795359
@@ -1925,7 +1925,7 @@ trials:
     sourceRefs:
       - sourceId: src-cmic-nct07795359
         locator: 'protocolSection: identificationModule, designModule, descriptionModule, eligibilityModule'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: intel-trial-cmic-ii-follow-up
     name: C-MIC II follow-up
     nctId: NCT05189860
@@ -1943,7 +1943,7 @@ trials:
     sourceRefs:
       - sourceId: src-cmic-nct05189860
         locator: 'protocolSection: identificationModule, designModule, descriptionModule, eligibilityModule'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: trial-cycle-1-ref
     name: CYCLE-1-REF
@@ -1963,7 +1963,7 @@ trials:
         locator: >-
           protocolSection.identificationModule, designModule, armsInterventionsModule, eligibilityModule and
           outcomesModule; API inspected 2026-10-12
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: trial-cycle-2-pef
     name: CYCLE-2-PEF
@@ -1983,7 +1983,7 @@ trials:
         locator: >-
           protocolSection.identificationModule, designModule, armsInterventionsModule, eligibilityModule and
           outcomesModule; API inspected 2026-10-12
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: evidence-clasp-ii-tr
     entityId: trial-clasp-ii-tr
@@ -2003,7 +2003,7 @@ trials:
         locator: protocolSection.designModule; armsInterventionsModule; descriptionModule
       - sourceId: src-clasp-ii-tr-design-20261009
         locator: Abstract; Trial Registration
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: intel-trial-reveal-i124
     entityId: trial-reveal-i124
@@ -2023,7 +2023,7 @@ trials:
         locator: protocolSection identification/status/design/armsInterventions/outcomes modules
       - sourceId: src-reveal-jama
         locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 
   - id: study-highlife-us-efs
@@ -2168,7 +2168,7 @@ trialSnapshots:
         locator: >-
           Official API protocolSection.statusModule (overallStatus, statusVerifiedDate, startDateStruct,
           lastUpdatePostDateStruct); designModule.enrollmentInfo; hasResults false; retrieved 2026-10-09.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: snapshot-laplace-efs-canada-20261009
     trialId: evidence-laplace-efs-canada
     observedAt: '2026-10-09'
@@ -2183,7 +2183,7 @@ trialSnapshots:
         locator: >-
           Official API protocolSection.statusModule (overallStatus, statusVerifiedDate, startDateStruct,
           lastUpdatePostDateStruct); designModule.enrollmentInfo; hasResults false; retrieved 2026-10-09.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: snapshot-laplace-triumph-20261009
     trialId: evidence-laplace-triumph
     observedAt: '2026-10-09'
@@ -2201,7 +2201,7 @@ trialSnapshots:
           Official API protocolSection.statusModule (overallStatus, statusVerifiedDate, startDateStruct,
           lastUpdatePostDateStruct); designModule.enrollmentInfo and designInfo.interventionModelDescription;
           hasResults false; retrieved 2026-10-09.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: snapshot-autus-pivotal-20261007
     trialId: evidence-autus-pivotal
     observedAt: '2026-10-07'
@@ -2218,7 +2218,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-autus-pivotal-registry
         locator: API protocolSection.statusModule; designModule.enrollmentInfo; hasResults (retrieved 2026-10-07)
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: snapshot-autus-cas-20261007
     trialId: evidence-autus-continued-access
     observedAt: '2026-10-07'
@@ -2234,7 +2234,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-autus-continued-access-registry
         locator: API protocolSection.statusModule; designModule.enrollmentInfo; hasResults (retrieved 2026-10-07)
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: snapshot-rechord-2026
     trialId: evidence-rechord
     observedAt: '2026-09-28'
@@ -2300,7 +2300,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-aflux-serra-i-eu-registry
         locator: 'protocolSection.statusModule overallStatus and lastUpdatePostDateStruct; designModule.enrollmentInfo; hasResults false'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: snapshot-serra-i-us-20261006
     trialId: evidence-trial-serra-i-us
     observedAt: '2026-10-06'
@@ -2311,7 +2311,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-aflux-serra-i-us-registry
         locator: 'protocolSection.statusModule overallStatus, whyStopped and lastUpdatePostDateStruct; designModule.enrollmentInfo; hasResults false'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: snapshot-link-hf2-20261012
     trialId: evidence-link-hf2
@@ -2329,7 +2329,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-link-hf2-registry
         locator: protocolSection.statusModule; designModule.enrollmentInfo
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: snapshot-teer-china-20261012
     trialId: evidence-teer-china
     observedAt: '2026-10-12'
@@ -2347,7 +2347,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-teer-china-registry
         locator: protocolSection.statusModule; designModule.enrollmentInfo
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: snapshot-upbeat-20261012
     trialId: evidence-upbeat-aftx-201
@@ -2367,7 +2367,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-upbeat-ctgov-nct07426419
         locator: protocolSection.statusModule; designModule.enrollmentInfo
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: snapshot-trial-cmic-ii-20261012
     trialId: intel-trial-cmic-ii
@@ -2382,7 +2382,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-cmic-nct04662034
         locator: protocolSection.statusModule; protocolSection.designModule.enrollmentInfo
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: snapshot-trial-cmic-iii-20261012
     trialId: intel-trial-cmic-iii
     observedAt: '2026-10-12'
@@ -2396,7 +2396,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-cmic-nct06920030
         locator: protocolSection.statusModule; protocolSection.designModule.enrollmentInfo
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: snapshot-trial-cmic-iv-20261012
     trialId: intel-trial-cmic-iv
     observedAt: '2026-10-12'
@@ -2410,7 +2410,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-cmic-nct07795359
         locator: protocolSection.statusModule; protocolSection.designModule.enrollmentInfo
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: snapshot-trial-cmic-ii-follow-up-20261012
     trialId: intel-trial-cmic-ii-follow-up
     observedAt: '2026-10-12'
@@ -2424,7 +2424,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-cmic-nct05189860
         locator: protocolSection.statusModule; protocolSection.designModule.enrollmentInfo
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: snapshot-tovinontrine-ref-20261012
     trialId: trial-cycle-1-ref
@@ -2441,7 +2441,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-tovinontrine-ref-registry
         locator: protocolSection.statusModule and designModule.enrollmentInfo; hasResults=false
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: snapshot-tovinontrine-pef-20261012
     trialId: trial-cycle-2-pef
@@ -2458,7 +2458,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-tovinontrine-pef-registry
         locator: protocolSection.statusModule and designModule.enrollmentInfo; hasResults=false
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: snapshot-clasp-ii-tr-20261012
     trialId: evidence-clasp-ii-tr
@@ -2480,7 +2480,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-clasp-ii-tr-registry
         locator: protocolSection.statusModule; designModule.enrollmentInfo; armsInterventionsModule.armGroups
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: snapshot-reveal-20261012
     trialId: intel-trial-reveal-i124
@@ -2497,7 +2497,7 @@ trialSnapshots:
     sourceRefs:
       - sourceId: src-reveal-registry
         locator: protocolSection identification/status/design/armsInterventions/outcomes modules
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 
   - id: snapshot-highlife-us-efs-20261012
@@ -2700,7 +2700,7 @@ cohorts:
       - { id: arm-champion-noac, name: NOAC therapy, randomized: 1501 }
     sourceRefs:
       - { sourceId: src-champion-af-nejm, locator: "Methods and Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: cohort-protect-af-randomized
     trialId: evidence-protect-af
     name: PROTECT AF intention-to-treat cohort
@@ -2712,7 +2712,7 @@ cohorts:
       - { id: arm-protect-warfarin, name: Warfarin, randomized: 244 }
     sourceRefs:
       - { sourceId: src-watchman-original-ssed, locator: "Table 14, PROTECT AF primary effectiveness results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: cohort-amulet-ide-randomized
     trialId: evidence-amulet-ide
     name: Amulet IDE randomized cohort
@@ -2724,7 +2724,7 @@ cohorts:
       - { id: arm-amulet-ide-watchman, name: WATCHMAN 2.5, randomized: 944 }
     sourceRefs:
       - { sourceId: src-amulet-ide-ssed, locator: "PDF pp. 11, 16–17; Table 4"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: cohort-watchman-flx-pas
     trialId: evidence-watchman-flx-pas
     name: WATCHMAN FLX real-world PAS implant cohort
@@ -2737,7 +2737,7 @@ cohorts:
       - { id: arm-watchman-flx-pas, name: WATCHMAN FLX implant cohort }
     sourceRefs:
       - { sourceId: src-watchman-flx-pas, locator: "Final Effect Findings and Patient Follow-up Rate"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: cohort-swiss-apero-randomized
     trialId: evidence-swiss-apero
     name: SWISS-APERO randomized cohort · 221
@@ -2750,7 +2750,7 @@ cohorts:
       - { id: arm-swiss-watchman, name: Watchman randomized arm (mixed 2.5 / FLX), randomized: 110 }
     sourceRefs:
       - { sourceId: src-swiss-apero-3y, locator: "Methods and Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: cohort-veritas-amulet-360
     trialId: evidence-veritas
     name: VERITAS implant-attempt cohort
@@ -2762,7 +2762,7 @@ cohorts:
       - { id: arm-veritas-amulet-360, name: Amulet 360 implant attempt }
     sourceRefs:
       - { sourceId: src-veritas-amulet-360, locator: "Abstract, Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: cohort-atriclip-exclude
     trialId: evidence-atriclip-exclude
     name: EXCLUDE eligible AtriClip patients
@@ -2775,7 +2775,7 @@ cohorts:
       - { id: arm-atriclip-exclude, name: AtriClip placement }
     sourceRefs:
       - { sourceId: src-atriclip-exclude, locator: "Abstract, Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: cohort-triluminate-350
     trialId: evidence-triluminate
     name: Primary randomized cohort · 350
@@ -2793,7 +2793,7 @@ cohorts:
     sourceRefs:
       - sourceId: src-triluminate-350
         locator: 'Methods and Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: cohort-triluminate-572
     trialId: evidence-triluminate
     name: Full randomized cohort · 572
@@ -2810,7 +2810,7 @@ cohorts:
     sourceRefs:
       - sourceId: src-triluminate-572
         locator: 'Methods and Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: cohort-predict
     trialId: evidence-predict
     name: PREDICT-LAA randomized cohort
@@ -2833,7 +2833,7 @@ cohorts:
     sourceRefs:
       - sourceId: src-predict
         locator: 'Study population; Figure 1; Table 2'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: cohort-vital
     trialId: evidence-vital
     name: VITAL-HF randomized cohort
@@ -2851,7 +2851,7 @@ cohorts:
     sourceRefs:
       - sourceId: src-vital
         locator: 'Methods and Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: cohort-link-hf2-registry-results
     trialId: evidence-link-hf2
     name: LINK-HF2 posted90-day hospitalization analysis
@@ -2873,7 +2873,7 @@ cohorts:
     sourceRefs:
       - sourceId: src-link-hf2-registry
         locator: resultsSection.participantFlowModule; resultsSection.outcomeMeasuresModule.outcomeMeasures[0].denoms
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: cohort-cmic-ii
     trialId: intel-trial-cmic-ii
@@ -2893,7 +2893,7 @@ cohorts:
     sourceRefs:
       - sourceId: src-cmic-ii-rct-2025
         locator: Abstract Methods/results; Results Patients
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: cohort-cmic-fu
     trialId: intel-trial-cmic-ii-follow-up
     name: C-MIC fu reported cohort
@@ -2908,7 +2908,7 @@ cohorts:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract; Methods Study design; Table 2
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: cohort-reveal-jama
     trialId: intel-trial-reveal-i124
@@ -2924,7 +2924,7 @@ cohorts:
     sourceRefs:
       - sourceId: src-reveal-jama
         locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 
   - id: cohort-ultrasight-as-novices2026
@@ -3021,7 +3021,7 @@ endpoints:
     analysisPopulation: Randomized population; Kaplan–Meier cumulative event estimates at 3 years.
     sourceRefs:
       - { sourceId: src-champion-af-nejm, locator: Methods and Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-champion-nonprocedural-bleeding
     name: CHAMPION-AF primary safety endpoint
     definition: Non-procedure-related bleeding.
@@ -3031,7 +3031,7 @@ endpoints:
     analysisPopulation: Randomized population; Kaplan–Meier cumulative event estimates at 3 years.
     sourceRefs:
       - { sourceId: src-champion-af-nejm, locator: "Methods and Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-protect-primary
     name: PROTECT AF primary effectiveness composite
     definition: Stroke, systemic embolism, and cardiovascular or unexplained death.
@@ -3041,7 +3041,7 @@ endpoints:
     analysisPopulation: Intention-to-treat; randomized groups WATCHMAN N=463 and warfarin N=244.
     sourceRefs:
       - { sourceId: src-watchman-original-ssed, locator: "Table 14"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-amulet-safety
     name: Amulet IDE primary safety composite
     definition: Procedure-related complications, all-cause death, or BARC type 3 or greater major bleeding.
@@ -3051,7 +3051,7 @@ endpoints:
     analysisPopulation: Per-protocol implant-attempt population; Amulet N=903, WATCHMAN 2.5 N=896; Kaplan–Meier estimate.
     sourceRefs:
       - { sourceId: src-amulet-ide-ssed, locator: "PDF pp. 14, 22, Table 10"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-amulet-effectiveness
     name: Amulet IDE primary effectiveness composite
     definition: Ischemic stroke or systemic embolism.
@@ -3061,7 +3061,7 @@ endpoints:
     analysisPopulation: Intention-to-treat; Amulet N=934, WATCHMAN 2.5 N=944; Kaplan–Meier estimate.
     sourceRefs:
       - { sourceId: src-amulet-ide-ssed, locator: "PDF pp. 14, 32–33, Table 18"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-amulet-closure
     name: Amulet IDE primary mechanism-of-action endpoint
     definition: Residual peri-device jet ≤5 mm by Doppler on TEE at 45 days.
@@ -3071,7 +3071,7 @@ endpoints:
     analysisPopulation: Successful implant as randomized and evaluable core-lab TEE; Amulet N=801, WATCHMAN 2.5 N=792.
     sourceRefs:
       - { sourceId: src-amulet-ide-ssed, locator: "PDF p. 33, Table 19"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-amulet-effectiveness-5y
     name: Amulet IDE ischemic stroke or systemic embolism through five years
     definition: Ischemic stroke or systemic embolism.
@@ -3081,7 +3081,7 @@ endpoints:
     analysisPopulation: Randomized Amulet IDE ITT population; FDA PAS reports 89.2% Amulet and 83.3% WATCHMAN five-year follow-up.
     sourceRefs:
       - { sourceId: src-amulet-ide-5y-pas, locator: "Final Effect Findings and Patient Follow-up Rate"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-watchman-flx-pas-stroke-se
     name: WATCHMAN FLX PAS ischemic stroke or systemic embolism
     definition: Adjudicated ischemic stroke or systemic embolism.
@@ -3091,7 +3091,7 @@ endpoints:
     analysisPopulation: Implant data set; Kaplan–Meier estimate. 24-month follow-up rate 43.1%; substantial attrition.
     sourceRefs:
       - { sourceId: src-watchman-flx-pas, locator: "Final Effect Findings; Patient Follow-up Rate"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-swiss-apero-3y-ischemic
     name: SWISS-APERO 3-year ischemic composite
     definition: Cardiovascular death, stroke, transient ischemic attack, or systemic embolism.
@@ -3101,7 +3101,7 @@ endpoints:
     analysisPopulation: Intention-to-treat randomized arms; Kaplan–Meier estimates. Watchman arm is mixed generation (25 Watchman 2.5 and 85 FLX); 3 assigned Amulet subjects received FLX.
     sourceRefs:
       - { sourceId: src-swiss-apero-3y, locator: "Results; Table 1"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-veritas-primary-safety
     name: VERITAS primary safety endpoint
     definition: Death, ischemic stroke, systemic embolism, or device/procedure-related complication requiring open cardiac surgery or major endovascular intervention.
@@ -3111,7 +3111,7 @@ endpoints:
     analysisPopulation: All 400 patients with an implant attempt.
     sourceRefs:
       - { sourceId: src-veritas-amulet-360, locator: "Abstract, Methods and Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-veritas-closure
     name: VERITAS primary effectiveness endpoint
     definition: LAA closure, defined as residual leak ≤5 mm on independent core-lab 45-day TEE.
@@ -3121,7 +3121,7 @@ endpoints:
     analysisPopulation: 376 patients with evaluable 45-day echocardiography.
     sourceRefs:
       - { sourceId: src-veritas-amulet-360, locator: "Abstract, Methods and Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-atriclip-exclusion-intraop
     name: EXCLUDE intraoperative LAA exclusion
     definition: Successful LAA exclusion confirmed by intraoperative TEE.
@@ -3131,7 +3131,7 @@ endpoints:
     analysisPopulation: 70 eligible patients with successful AtriClip placement.
     sourceRefs:
       - { sourceId: src-atriclip-exclude, locator: "Abstract, Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-atriclip-exclusion-3m
     name: EXCLUDE three-month imaging-confirmed LAA exclusion
     definition: Successful LAA exclusion on CTA or TEE.
@@ -3141,7 +3141,7 @@ endpoints:
     analysisPopulation: Patients with follow-up imaging; 61 of 70 eligible patients imaged.
     sourceRefs:
       - { sourceId: src-atriclip-exclude, locator: "Abstract, Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-tri-hierarchy
     name: Hierarchical primary composite
     definition: Death or tricuspid surgery, then HF hospitalization, then ≥15-point KCCQ improvement.
@@ -3152,7 +3152,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-triluminate-350
         locator: 'Methods: primary endpoint'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-tri-hfh-1y
     name: Annualized HF hospitalizations
     definition: HF hospitalization events per patient-year.
@@ -3163,7 +3163,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-triluminate-572
         locator: 'Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-tri-hfh-2y
     name: Recurrent HF hospitalizations
     definition: Annualized recurrent events and joint-frailty model estimate.
@@ -3174,7 +3174,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-triluminate-2y
         locator: 'Methods and Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-tri-death-2y
     name: All-cause mortality
     definition: Mortality through two years, separately from the composite endpoint.
@@ -3185,7 +3185,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-triluminate-2y
         locator: 'Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-predict-primary
     name: Residual leak or device-related thrombus
     definition: Grade 3–4 leak distal to the Amulet lobe and/or device-related thrombus on CT.
@@ -3196,7 +3196,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-predict
         locator: 'Study endpoints; Table 2'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-predict-closure
     name: Complete LAA closure
     definition: No residual leak or disc retraction, with complete trabecular coverage.
@@ -3207,7 +3207,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-predict
         locator: 'Study endpoints; Table 2'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-vital-score
     name: HF medical therapy score
     definition: Change in HF Collaboratory medication score, range 0–12.
@@ -3218,7 +3218,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-vital
         locator: 'Methods and Findings'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-link-hf2-hf-hospitalizations
     name: 90-day HF hospitalizations
     definition: >-
@@ -3231,7 +3231,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-link-hf2-registry
         locator: resultsSection.outcomeMeasuresModule.outcomeMeasures[0]
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: endpoint-cmic-ii-lvef
     name: LVEF change
@@ -3243,7 +3243,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-cmic-ii-rct-2025
         locator: Abstract Methods/results; primary endpoint
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-cmic-fu-lvef
     name: LVEF change vs pre-implantation
     definition: LVEF change vs pre-implantation
@@ -3254,7 +3254,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Results Efficacy endpoints/Table 3
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-cmic-fu-kccq
     name: KCCQ-OSS change vs pre-implantation
     definition: KCCQ-OSS change vs pre-implantation
@@ -3265,7 +3265,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Results Efficacy endpoints/Table 3
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-cmic-fu-walk
     name: 6MWD change vs pre-implantation
     definition: 6MWD change vs pre-implantation
@@ -3276,7 +3276,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Results Efficacy endpoints/Table 3
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-cmic-fu-vo2
     name: Weight-adjusted peak VO2 change vs pre-implantation
     definition: Weight-adjusted peak VO2 change vs pre-implantation
@@ -3287,7 +3287,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Results Efficacy endpoints/Table 3
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-cmic-fu-mortality
     name: All-cause deaths
     definition: All-cause deaths
@@ -3298,7 +3298,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Table 2; Results
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-cmic-fu-hospitalization
     name: Patients hospitalized
     definition: Patients hospitalized
@@ -3309,7 +3309,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Table 2; Results
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-cmic-fu-device-ae
     name: Device-related adverse events
     definition: Device-related adverse events
@@ -3320,7 +3320,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Table 2; Results
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-cmic-fu-reactivation
     name: Patients needing reactivation
     definition: Patients needing reactivation
@@ -3331,7 +3331,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Table 2; Results
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: endpoint-reveal-sensitivity
     name: SENSITIVITY
@@ -3343,7 +3343,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-reveal-jama
         locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-reveal-specificity
     name: SPECIFICITY
     definition: Overall specificity against independently adjudicated standard-of-care diagnosis
@@ -3354,7 +3354,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-reveal-jama
         locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-reveal-ppv
     name: PPV
     definition: Overall ppv against independently adjudicated standard-of-care diagnosis
@@ -3365,7 +3365,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-reveal-jama
         locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: endpoint-reveal-npv
     name: NPV
     definition: Overall npv against independently adjudicated standard-of-care diagnosis
@@ -3376,7 +3376,7 @@ endpoints:
     sourceRefs:
       - sourceId: src-reveal-jama
         locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 
   - id: endpoint-ultrasight-as-sensitivity
@@ -3493,7 +3493,7 @@ readouts:
     limitation: Five-year follow-up continues. Results apply to WATCHMAN FLX and the studied NOAC strategy; they do not establish a class effect for all LAA closure devices.
     sourceRefs:
       - { sourceId: src-champion-af-nejm, locator: "Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-protect-af-primary
     trialId: evidence-protect-af
     cohortId: cohort-protect-af-randomized
@@ -3505,7 +3505,7 @@ readouts:
     limitation: Original WATCHMAN generation only. FDA SSED's historical trial result; do not combine with later-generation FLX evidence.
     sourceRefs:
       - { sourceId: src-watchman-original-ssed, locator: "Table 14"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-amulet-ide-18m
     trialId: evidence-amulet-ide
     cohortId: cohort-amulet-ide-randomized
@@ -3517,7 +3517,7 @@ readouts:
     limitation: Comparator is WATCHMAN 2.5, not FLX. Endpoint estimates use different analysis populations and denominators; refer to each endpoint row.
     sourceRefs:
       - { sourceId: src-amulet-ide-ssed, locator: "Tables 10, 18, and 19"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-amulet-ide-5y
     trialId: evidence-amulet-ide
     cohortId: cohort-amulet-ide-randomized
@@ -3529,7 +3529,7 @@ readouts:
     limitation: Comparator is WATCHMAN 2.5. The final FDA PAS includes 89.2% Amulet and 83.3% WATCHMAN five-year follow-up; interpret estimates with attrition in view.
     sourceRefs:
       - { sourceId: src-amulet-ide-5y-pas, locator: "Final Effect Findings; Patient Follow-up Rate; report received 2024-09-11"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-watchman-flx-pas-2y
     trialId: evidence-watchman-flx-pas
     cohortId: cohort-watchman-flx-pas
@@ -3541,7 +3541,7 @@ readouts:
     limitation: Nonrandomized prospective registry surveillance; the 6-year FDA report was received 2026-08-21. ITT N=97,529; implant analysis set N=95,125; only 43.1% follow-up at 24 months, so interpret the KM estimate with attrition caveat.
     sourceRefs:
       - { sourceId: src-watchman-flx-pas, locator: "Final Effect Findings and Patient Follow-up Rate"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-swiss-apero-3y
     trialId: evidence-swiss-apero
     cohortId: cohort-swiss-apero-randomized
@@ -3553,7 +3553,7 @@ readouts:
     limitation: 'The original SWISS-APERO primary endpoint was 45-day CCTA LAA patency. The 3-year clinical ischemic composite is a follow-up endpoint. Randomized comparator arm mixed generations: 25 WATCHMAN 2.5 and 85 WATCHMAN FLX; 3 participants assigned to Amulet received FLX. This is not a pure Amulet-versus-FLX estimate; no significant ITT difference and small sample make subgroup findings hypothesis generating.'
     sourceRefs:
       - { sourceId: src-swiss-apero-3y, locator: "Results; Table 1"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-veritas-45d
     trialId: evidence-veritas
     cohortId: cohort-veritas-amulet-360
@@ -3565,7 +3565,7 @@ readouts:
     limitation: Single-arm, early follow-up; no comparative effectiveness inference. 100% closure refers to 376 patients with imaging; 93.9% had 0 mm leak. US investigational status at retrieval.
     sourceRefs:
       - { sourceId: src-veritas-amulet-360, locator: "Abstract, Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-atriclip-exclude
     trialId: evidence-atriclip-exclude
     cohortId: cohort-atriclip-exclude
@@ -3578,7 +3578,7 @@ readouts:
     sourceRefs:
       - sourceId: src-atriclip-exclude
         locator: 'Abstract, Methods and Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-tri-350-1y
     trialId: evidence-triluminate
     cohortId: cohort-triluminate-350
@@ -3593,7 +3593,7 @@ readouts:
     sourceRefs:
       - sourceId: src-triluminate-350
         locator: 'Primary report'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-tri-572-1y
     trialId: evidence-triluminate
     cohortId: cohort-triluminate-572
@@ -3608,7 +3608,7 @@ readouts:
     sourceRefs:
       - sourceId: src-triluminate-572
         locator: 'Primary report'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-tri-572-2y
     trialId: evidence-triluminate
     cohortId: cohort-triluminate-572
@@ -3625,7 +3625,7 @@ readouts:
     sourceRefs:
       - sourceId: src-triluminate-2y
         locator: 'Primary report'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-predict-90d
     trialId: evidence-predict
     cohortId: cohort-predict
@@ -3640,7 +3640,7 @@ readouts:
     sourceRefs:
       - sourceId: src-predict
         locator: 'Primary report'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-vital-6m
     trialId: evidence-vital
     cohortId: cohort-vital
@@ -3655,7 +3655,7 @@ readouts:
     sourceRefs:
       - sourceId: src-vital
         locator: 'Primary report'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-link-hf2-registry-20260428
     trialId: evidence-link-hf2
     cohortId: cohort-link-hf2-registry-results
@@ -3674,7 +3674,7 @@ readouts:
         locator: >-
           protocolSection.statusModule.resultsFirstPostDateStruct;
           resultsSection.outcomeMeasuresModule.outcomeMeasures[0]
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: readout-cmic-ii
     trialId: intel-trial-cmic-ii
@@ -3693,7 +3693,7 @@ readouts:
     sourceRefs:
       - sourceId: src-cmic-ii-rct-2025
         locator: Abstract Methods/results; Results Patients
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: readout-cmic-fu
     trialId: intel-trial-cmic-ii-follow-up
     cohortId: cohort-cmic-fu
@@ -3711,7 +3711,7 @@ readouts:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract; Methods Study design; Table 2
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: readout-reveal-jama
     trialId: intel-trial-reveal-i124
@@ -3730,7 +3730,7 @@ readouts:
     sourceRefs:
       - sourceId: src-reveal-jama
         locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 
   - id: readout-ultrasight-as-jama20260828
@@ -3838,7 +3838,7 @@ outcomes:
     interpretation: Met prespecified noninferiority for the three-year efficacy composite; primary event counts were 81 device and 65 anticoagulation patients.
     sourceRefs:
       - { sourceId: src-champion-af-nejm, locator: "Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-champion-bleeding-3y
     readoutId: readout-champion-af-3y
     endpointId: endpoint-champion-nonprocedural-bleeding
@@ -3854,7 +3854,7 @@ outcomes:
     interpretation: Met superiority for non-procedure-related bleeding by three years; endpoint excludes procedural bleeding.
     sourceRefs:
       - { sourceId: src-champion-af-nejm, locator: "Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-protect-af-primary
     readoutId: readout-protect-af-primary
     endpointId: endpoint-protect-primary
@@ -3869,7 +3869,7 @@ outcomes:
     limitation: Event-rate denominators are patient-years and differ from randomized patient counts; arm denominator fields show randomized participants for cohort context only.
     sourceRefs:
       - { sourceId: src-watchman-original-ssed, locator: "Table 14"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-amulet-safety-12m
     readoutId: readout-amulet-ide-18m
     endpointId: endpoint-amulet-safety
@@ -3879,7 +3879,7 @@ outcomes:
     interpretation: Noninferiority was met. The 12-month primary safety analysis is per-protocol among implant attempts as randomized, rather than all randomized participants.
     sourceRefs:
       - { sourceId: src-amulet-ide-ssed, locator: "PDF p. 22, Table 10"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-amulet-effectiveness-18m
     readoutId: readout-amulet-ide-18m
     endpointId: endpoint-amulet-effectiveness
@@ -3889,7 +3889,7 @@ outcomes:
     interpretation: Noninferiority was met in the intention-to-treat population; event counts were 25 Amulet and 24 WATCHMAN patients.
     sourceRefs:
       - { sourceId: src-amulet-ide-ssed, locator: "PDF pp. 32–33, Table 18"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-amulet-closure-45d
     readoutId: readout-amulet-ide-18m
     endpointId: endpoint-amulet-closure
@@ -3899,7 +3899,7 @@ outcomes:
     interpretation: Effective closure was residual jet ≤5 mm on 45-day TEE; tested for noninferiority and secondarily superior for Amulet.
     sourceRefs:
       - { sourceId: src-amulet-ide-ssed, locator: "PDF p. 33, Table 19"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-amulet-effectiveness-5y
     readoutId: readout-amulet-ide-5y
     endpointId: endpoint-amulet-effectiveness-5y
@@ -3910,7 +3910,7 @@ outcomes:
     limitation: Lower five-year follow-up in the WATCHMAN arm (83.3%) than Amulet (89.2%); comparator is WATCHMAN 2.5.
     sourceRefs:
       - { sourceId: src-amulet-ide-5y-pas, locator: "Final Effect Findings; Patient Follow-up Rate"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-watchman-flx-pas-stroke-se-2y
     readoutId: readout-watchman-flx-pas-2y
     endpointId: endpoint-watchman-flx-pas-stroke-se
@@ -3920,7 +3920,7 @@ outcomes:
     limitation: 24-month follow-up was 43.1%; high attrition limits certainty despite the Kaplan–Meier method.
     sourceRefs:
       - { sourceId: src-watchman-flx-pas, locator: "Final Effect Findings; 24-month follow-up rate"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-swiss-apero-3y-ischemic
     readoutId: readout-swiss-apero-3y
     endpointId: endpoint-swiss-apero-3y-ischemic
@@ -3936,7 +3936,7 @@ outcomes:
     limitation: Three-year outcome percentages are Kaplan–Meier estimates; the source reports 80 Amulet and 76 Watchman patients with three-year clinical follow-up. Watchman randomized arm comprised 25 legacy 2.5 and 85 FLX; 3 Amulet-assigned patients received FLX.
     sourceRefs:
       - { sourceId: src-swiss-apero-3y, locator: "Results; Table 1"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-veritas-safety-7d
     readoutId: readout-veritas-45d
     endpointId: endpoint-veritas-primary-safety
@@ -3945,7 +3945,7 @@ outcomes:
     interpretation: No primary safety endpoint events occurred among 400 patients through 7 days or discharge.
     sourceRefs:
       - { sourceId: src-veritas-amulet-360, locator: "Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-veritas-closure-45d
     readoutId: readout-veritas-45d
     endpointId: endpoint-veritas-closure
@@ -3954,7 +3954,7 @@ outcomes:
     interpretation: All 376 patients with evaluable 45-day echocardiography met the primary effectiveness endpoint; complete closure (0 mm leak) was 93.9% in the same study report.
     sourceRefs:
       - { sourceId: src-veritas-amulet-360, locator: "Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-atriclip-intraop-exclusion
     readoutId: readout-atriclip-exclude
     endpointId: endpoint-atriclip-exclusion-intraop
@@ -3963,7 +3963,7 @@ outcomes:
     interpretation: Intraoperative TEE confirmed LAA exclusion in 67 of 70 patients with successful AtriClip placement.
     sourceRefs:
       - { sourceId: src-atriclip-exclude, locator: "Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-atriclip-3m-exclusion
     readoutId: readout-atriclip-exclude
     endpointId: endpoint-atriclip-exclusion-3m
@@ -3972,7 +3972,7 @@ outcomes:
     interpretation: Three-month imaging showed exclusion in 60 of 61 imaged patients; 65 of 70 were available for assessment.
     sourceRefs:
       - { sourceId: src-atriclip-exclude, locator: "Results"}
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-tri-350-hierarchy
     readoutId: readout-tri-350-1y
     endpointId: endpoint-tri-hierarchy
@@ -3990,7 +3990,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-triluminate-350
         locator: 'Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-tri-572-hierarchy
     readoutId: readout-tri-572-1y
     endpointId: endpoint-tri-hierarchy
@@ -4003,7 +4003,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-triluminate-572
         locator: 'Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
     pValueQualifier: <
   - id: outcome-tri-572-hfh-1y
     readoutId: readout-tri-572-1y
@@ -4020,7 +4020,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-triluminate-572
         locator: 'Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-tri-572-hfh-2y
     readoutId: readout-tri-572-2y
     endpointId: endpoint-tri-hfh-2y
@@ -4042,7 +4042,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-triluminate-2y
         locator: 'Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
     limitation: >-
       Abstract reports a one-sided upper confidence limit; nominal level is not specified there. Do not render
       as a two-sided 95% interval.
@@ -4060,7 +4060,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-triluminate-2y
         locator: 'Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-predict-primary
     readoutId: readout-predict-90d
     endpointId: endpoint-predict-primary
@@ -4086,7 +4086,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-predict
         locator: 'Table 2, primary endpoint'
-    reviewStatus: draft
+    reviewStatus: reviewed
     limitation: The confidence interval crosses 1. Clinical event reduction was not established.
   - id: outcome-predict-closure
     readoutId: readout-predict-90d
@@ -4105,7 +4105,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-predict
         locator: 'Table 2, complete LAA closure'
-    reviewStatus: draft
+    reviewStatus: reviewed
     limitation: >-
       Secondary, unadjusted comparison; do not reinterpret it as primary-endpoint success. The paper’s
       relative-benefit estimate is not copied because its relation to the displayed proportions requires
@@ -4128,7 +4128,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-vital
         locator: 'Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
     limitation: A medication score is not hospitalization, survival, or standalone algorithm efficacy.
   - id: outcome-link-hf2-registry-hospitalizations
     readoutId: readout-link-hf2-registry-20260428
@@ -4152,7 +4152,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-link-hf2-registry
         locator: resultsSection.outcomeMeasuresModule.outcomeMeasures[0].classes; denoms; unitOfMeasure
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: outcome-cmic-ii-lvef
     readoutId: readout-cmic-ii
@@ -4174,7 +4174,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-cmic-ii-rct-2025
         locator: Abstract Methods/results; primary endpoint
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-cmic-fu-lvef
     readoutId: readout-cmic-fu
     endpointId: endpoint-cmic-fu-lvef
@@ -4195,7 +4195,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Results Efficacy endpoints/Table 3
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-cmic-fu-kccq
     readoutId: readout-cmic-fu
     endpointId: endpoint-cmic-fu-kccq
@@ -4216,7 +4216,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Results Efficacy endpoints/Table 3
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-cmic-fu-walk
     readoutId: readout-cmic-fu
     endpointId: endpoint-cmic-fu-walk
@@ -4237,7 +4237,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Results Efficacy endpoints/Table 3
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-cmic-fu-vo2
     readoutId: readout-cmic-fu
     endpointId: endpoint-cmic-fu-vo2
@@ -4258,7 +4258,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Results Efficacy endpoints/Table 3
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-cmic-fu-mortality
     readoutId: readout-cmic-fu
     endpointId: endpoint-cmic-fu-mortality
@@ -4272,7 +4272,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Table 2; Results
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-cmic-fu-hospitalization
     readoutId: readout-cmic-fu
     endpointId: endpoint-cmic-fu-hospitalization
@@ -4286,7 +4286,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Table 2; Results
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-cmic-fu-device-ae
     readoutId: readout-cmic-fu
     endpointId: endpoint-cmic-fu-device-ae
@@ -4300,7 +4300,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Table 2; Results
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-cmic-fu-reactivation
     readoutId: readout-cmic-fu
     endpointId: endpoint-cmic-fu-reactivation
@@ -4314,7 +4314,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-cmic-ii-fu-20260826
         locator: Abstract Results; Table 2; Results
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: outcome-reveal-sensitivity
     readoutId: readout-reveal-jama
@@ -4336,7 +4336,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-reveal-jama
         locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
     pValue: 0.001
     pValueQualifier: <
   - id: outcome-reveal-specificity
@@ -4359,7 +4359,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-reveal-jama
         locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
     pValue: 0.001
     pValueQualifier: <
   - id: outcome-reveal-ppv
@@ -4382,7 +4382,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-reveal-jama
         locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: outcome-reveal-npv
     readoutId: readout-reveal-jama
     endpointId: endpoint-reveal-npv
@@ -4403,7 +4403,7 @@ outcomes:
     sourceRefs:
       - sourceId: src-reveal-jama
         locator: 'Public Abstract: Design/Participants, Intervention, Main Outcomes, Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 
   - id: outcome-ultrasight-as-sensitivity
@@ -4447,7 +4447,7 @@ lineage:
     sourceRefs:
       - sourceId: src-evolut-ssed
         locator: 'Section V, page 3'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: lineage-feops-build
     fromVersionId: ver-feops-141
     toVersionId: ver-feops-heartguide
@@ -4456,7 +4456,7 @@ lineage:
     sourceRefs:
       - sourceId: src-feops
         locator: 'Technological comparison, pages 3–4'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: lineage-feops-dasi-predicate
     fromVersionId: ver-feops-heartguide
     toVersionId: ver-dasi-11
@@ -4467,7 +4467,7 @@ lineage:
     sourceRefs:
       - sourceId: src-dasi
         locator: 'Predicate-device section, page 1 of summary'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
   - id: lineage-ultrasight-k223347-k251416
     fromVersionId: ver-ultrasight-ai-guidance-k223347
@@ -4508,7 +4508,7 @@ events:
     sourceRefs:
       - sourceId: src-amulet-fda-p200049s021
         locator: 'Device; Decision Date; Supplement Type/Reason; Approval Order Statement; Page Last Updated'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-amulet-canada-labeling-recall-20260910
     title: Canada records an Amulet labeling recall concerning pulmonary artery injury
     eventDate: { value: '2026-09-10', precision: day }
@@ -4525,7 +4525,7 @@ events:
     sourceRefs:
       - sourceId: src-amulet-health-canada-ra82682
         locator: 'Affected products; Issue; Original published date; Recall class; Recall date; Identification number'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-autus-fda-approval-20261001
     title: FDA announces AUTUS pediatric surgical pulmonary-valve approval
     eventDate:
@@ -4550,7 +4550,7 @@ events:
     sourceRefs:
       - sourceId: src-autus-fda-announcement-20261001
         locator: Opening, diameter, leaflet and clinical-study paragraphs; PMA pathway and approval-recipient paragraphs
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-mitria-t45-partnership-ceo-20260929
     title: Mitria partners with T45 Labs to advance investigational SVS
     eventDate:
@@ -4574,7 +4574,7 @@ events:
     sourceRefs:
       - sourceId: src-mitria-t45-partnership
         locator: Opening two paragraphs; non-quotation paragraph beginning To date; investigational-device disclaimer
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-cardioguide-hf-announcement-20261005
     title: Abbott announces CardioGuide HF patient pressure access and medication updates
     eventDate:
@@ -4598,7 +4598,7 @@ events:
     sourceRefs:
       - sourceId: src-cardiomems-cardioguide-announcement-20261005
         locator: Opening non-quotation paragraph; Dynamic Treatment Plan and planned-availability paragraphs; FAQs
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-amulet-ifu-correction-202609
     title: Original Amulet labeling correction addresses pulmonary artery injury risk
     eventDate:
@@ -4622,7 +4622,7 @@ events:
     sourceRefs:
       - sourceId: src-amulet-ifu-correction-202609
         locator: PDF p.1 opening and Actions Abbott is Taking; p.3 Appendix A
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-emboliner-first-commercial-use-20261001
     title: Emboline reports first US commercial Emboliner procedures
     eventDate:
@@ -4647,7 +4647,7 @@ events:
     sourceRefs:
       - sourceId: src-emboliner-commercial-use-20261002
         locator: Opening non-quotation paragraphs and controlled-launch paragraph
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-camzyos-pediatric-indication-20260930
     title: CAMZYOS US indication expands to pediatric patients weighing at least 30 kg
     eventDate:
@@ -4674,7 +4674,7 @@ events:
         locator: Opening action paragraph and approved population
       - sourceId: src-camzyos-2026-announcement
         locator: Release date and opening approval paragraph
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-sapien-intermediate
     title: 'SAPIEN 3: indication expansion without an inferred redesign'
     eventDate:
@@ -4699,7 +4699,7 @@ events:
         locator: 'Approval-order statement'
       - sourceId: src-sapien-s010
         locator: 'Approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-sapien-resilia
     title: 'SAPIEN 3 Ultra RESILIA: a separately recorded product change'
     eventDate:
@@ -4722,7 +4722,7 @@ events:
     sourceRefs:
       - sourceId: src-sapien-s141
         locator: 'Device and supplement-reason fields'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-watchman-dapt
     title: 'WATCHMAN: a regimen change is not an implant generation'
     eventDate:
@@ -4745,7 +4745,7 @@ events:
     sourceRefs:
       - sourceId: src-watchman-s043
         locator: 'Approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-watchman-ablation
     title: 'WATCHMAN FLX / FLX Pro: post-ablation eligibility'
     eventDate:
@@ -4769,7 +4769,7 @@ events:
     sourceRefs:
       - sourceId: src-watchman-s074
         locator: 'Approval-order statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-evolut-redo
     title: 'Evolut: redo-TAVR authorization follows its own history'
     eventDate:
@@ -4793,7 +4793,7 @@ events:
     sourceRefs:
       - sourceId: src-evolut-order
         locator: 'Approval order, page 1'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-feops-library
     title: 'FEops: a software update changes the simulated-device library'
     eventDate:
@@ -4817,7 +4817,7 @@ events:
     sourceRefs:
       - sourceId: src-feops
         locator: 'Technological comparison, pages 3–4'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-predict-laa
     title: 'PREDICT-LAA: primary and secondary outcomes tell different stories'
     eventDate:
@@ -4843,7 +4843,7 @@ events:
     sourceRefs:
       - sourceId: src-predict
         locator: 'Table 2'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-triluminate-two-years
     title: 'TRILUMINATE: retain both cohort size and follow-up'
     eventDate:
@@ -4865,7 +4865,7 @@ events:
     sourceRefs:
       - sourceId: src-triluminate-2y
         locator: 'Results'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: event-mitria-svs-first-us-expanded-access
     title: Mitria reports first US SVS implantation under single-patient expanded access
     eventDate: { value: '2026-01', precision: month }
@@ -4884,7 +4884,7 @@ events:
         locator: 'Repairing Functional MR From Beneath the Valve, paragraph 2 (January 2026)'
       - sourceId: src-mitria-us-expanded-access
         locator: 'Opening non-quotation paragraphs (first US implantation, Cleveland Clinic and Single Patient Expanded Access)'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 media:
   - id: media-sapien-3-valve

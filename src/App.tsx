@@ -15,7 +15,10 @@ import Filters from './components/Filters'
 import DetailPanel from './components/DetailPanel'
 import About from './components/About'
 import NewsletterSignup from './components/NewsletterSignup'
+import EditorialPrompt from './components/EditorialPrompt'
+import LocalArticlePage from './components/LocalArticlePage'
 import ProfileCatalog from './components/intelligence/ProfileCatalog'
+import { localArticleContentPath } from './editorial/local-articles'
 import './workspace.css'
 
 // Mode content and the graph canvas load on demand; App owns only shared state
@@ -33,7 +36,13 @@ export default function App() {
   const [intelligence, setIntelligence] = useState<IntelligenceData | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [evidenceError, setEvidenceError] = useState<string | null>(null)
-  const [workspace, setWorkspace] = useState(() => parseWorkspace(window.location.search))
+  const articleContentPath = localArticleContentPath(window.location.pathname)
+  const [workspace, setWorkspace] = useState(() => {
+    const parsed = parseWorkspace(window.location.search)
+    return articleContentPath && !new URLSearchParams(window.location.search).has('mode')
+      ? { ...parsed, mode: 'news' as const }
+      : parsed
+  })
   const [compareNotice, setCompareNotice] = useState('')
   const [selectedId, setSelectedId] = useState<string | null>(workspace.nodeId || null)
   const [activeGroups, setActiveGroups] = useState<Set<NodeGroup>>(new Set(GROUP_ORDER))
@@ -84,6 +93,13 @@ export default function App() {
     setWorkspace(next)
     if (patch.nodeId !== undefined) setSelectedId(patch.nodeId || null)
     const url = new URL(window.location.href)
+    if (articleContentPath) {
+      url.pathname = import.meta.env.BASE_URL
+      url.search = workspaceQuery(next)
+      url.hash = hash
+      window.location.assign(url)
+      return
+    }
     url.search = workspaceQuery(next)
     url.hash = hash
     window.history.pushState(null, '', url)
@@ -279,6 +295,9 @@ export default function App() {
       themePreference={themePreference} onThemePreferenceChange={setThemePreference}
       mode={workspace.mode} onModeChange={handleModeChange}
       onNewsletter={() => setNewsletterOpen(true)} />
+    {articleContentPath
+      ? <LocalArticlePage contentPath={articleContentPath} darkMode={darkMode} />
+      : <>
     <div className={`workspace-context ${graphView ? 'workspace-context-atlas' : ''}`} aria-label="Shared context">
       <label>Condition<select value={workspace.conditionId} onChange={event => navigate({ conditionId: event.target.value, versionId: '', nodeId: '' })}>
         <option value="">All conditions</option>{conditions.map(node => <option value={node.id} key={node.id}>{node.label}</option>)}
@@ -343,6 +362,8 @@ export default function App() {
         </>}
       </Suspense>
     </main>}
+    {graphView && !selectedId && !aboutOpen && !newsletterOpen && <EditorialPrompt news={graph.news} />}
+      </>}
     {aboutOpen && <About meta={graph.meta} onClose={() => setAboutOpen(false)} />}
     {newsletterOpen && <NewsletterSignup onClose={() => setNewsletterOpen(false)} />}
   </div>

@@ -1,0 +1,153 @@
+id: insights-2026-10-16
+contentType: news-insights
+reviewStatus: reviewed
+runDate: '2026-10-16'
+windowFrom: '2026-10-03'
+windowTo: '2026-10-16'
+title: 'News Insights | October 3–16, 2026'
+dek: 'Delivery-system reliability, rescue constraints, and the interpretation of clinical endpoints.'
+summary: >-
+  Two distinct delivery-system safety notices identify deployment and retrieval constraints.
+  The CLASP II TR design paper sets a separate question about interpreting a forthcoming hierarchical endpoint.
+relevantNodeIds: [dev-sapien-m3, dev-trilogy, dev-pascal, cond-mr, cond-ar, cond-tr]
+selectedNewsIds:
+  - news-2026-10-15-commander-m-delivery-system-fda-alert
+  - news-2026-10-09-trilogy-delivery-catheter-recall
+  - news-2026-10-09-clasp-ii-tr-design
+scopeNote: >-
+  The owner requested an overlapping fourteen-date window.
+  Three selected News records support two analytical sections; selection does not establish a field-wide trend.
+  Interpretations are labeled. Atlas links provide broad catalog context, not exact delivery-system evidence or
+  independent corroboration. Canonical source links identify the underlying documents.
+opening:
+  - text: >-
+      Two FDA notices in the past weeks concern delivery systems for heart valves. Their engineering relevance extends to deployment, retrieval, and the consequences of rescue.
+      A separate CLASP II TR design publication concerns how clinical benefit will be evaluated. These documents
+      warrant distinct questions about procedural reliability and endpoint interpretation.
+    sourceIds: [commander-alert, trilogy-23, trilogy-25, trilogy-27, clasp-design]
+    interpretation: true
+sections:
+  - heading: 'Delivery integrity and the consequences of rescue'
+    role: connection
+    paragraphs:
+      - text: >-
+          FDA listed an Early Alert on October 15 for four Commander M delivery-system lots used with SAPIEN M3.
+          Its customer-letter date and report cutoff are October 5. FDA relays the manufacturer's balloon-burst
+          reports, including one associated death and one serious injury. Potential consequences include embolism
+          and inability to retrieve the device through the guide sheath, possibly requiring surgery in patients
+          considered unsuitable for it. Other lots fall outside the identified action.
+        sourceIds: [commander-alert, fda-index]
+        contextLinks: [{label: 'SAPIEN M3 catalog context', nodeId: dev-sapien-m3}]
+      - text: >-
+          FDA's October 9 Trilogy postings describe a different issue: sleeve-liner separation that can hinder or
+          prevent valve deployment. The Class II recall covers specified catheter lots in three sizes under one
+          event. The firm initiated the action July 31; October is the public posting date. Quantities in commerce
+          describe inventory, not treated patients, failures, or an incidence denominator.
+        sourceIds: [trilogy-23, trilogy-25, trilogy-27]
+        contextLinks: [{label: 'Trilogy catalog context', nodeId: dev-trilogy}]
+      - text: >-
+          The useful connection is the dependence of treatment on reliable delivery and feasible recovery when
+          delivery fails. This suggests evaluating retrieval constraints and rescue consequences alongside
+          deployment success. It does not establish a common failure mechanism or permit pooling rates across
+          these products. The Commander M notice remains an Early Alert under investigation; the Trilogy records
+          describe a classified recall.
+        sourceIds: [commander-alert, trilogy-23, trilogy-25, trilogy-27]
+        interpretation: true
+  - heading: 'Reading a hierarchical endpoint by its components'
+    role: insight
+    paragraphs:
+      - text: >-
+          The October 9 CLASP II TR abstract describes 450 randomized patients with symptomatic severe tricuspid
+          regurgitation, allocated 2:1 to PASCAL repair plus optimal medical therapy or medical therapy alone.
+          Its six-month hierarchy combines death, durable RVAD or transplantation, tricuspid intervention,
+          heart-failure hospitalization, and KCCQ quality of life. The abstract reports completed enrollment and forthcoming primary results. This publication reports
+          design, not treatment effects.
+        sourceIds: [clasp-design]
+        contextLinks:
+          - {label: 'PASCAL catalog context', nodeId: dev-pascal}
+          - {label: 'Tricuspid regurgitation context', nodeId: cond-tr}
+      - text: >-
+          An overall positive hierarchy would require inspection of component contributions before attributing
+          benefit to survival or hospitalization. Quality-of-life improvement could remain valuable, while the
+          open-label design warrants attention to its measurement. The counterargument is substantive:
+          hierarchical methods prioritize serious events and retain patient-valued outcomes. A symptom-driven
+          result would not automatically invalidate the trial. Neither its result nor its dominant component
+          can be anticipated from this abstract.
+        sourceIds: [clasp-design]
+        interpretation: true
+sources:
+  - id: commander-alert
+    title: 'Early Alert: Transcatheter Mitral Valve Delivery System Issue from Edwards Lifesciences'
+    publisher: 'U.S. Food and Drug Administration'
+    url: https://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-transcatheter-mitral-valve-delivery-system-issue-edwards-lifesciences
+    sourceClass: regulator-document
+    access: public
+    retrievedAt: '2026-10-15'
+    locator: 'Affected Product; What to Do; Reason for Alert; Device Use.'
+    scope: >-
+      Commander M delivery systems for SAPIEN M3 TMVR; lots 67718561, 67804014, 67887043, and 67887044.
+      October 5 customer letter and manufacturer report cutoff; FDA communication with US customer contact.
+    limits: >-
+      Alert body has no visible publication date; October 15 listing verified separately in fda-index.
+      Early Alert under FDA review; no recall class assigned on inspected page. Three balloon-burst reports,
+      one death and one serious injury are manufacturer-attributed associations, not individual causation.
+      Exposure, incidence, and root cause absent. No other lots, aortic Commander systems, or leaflet failures inferred.
+      No figures or full source text reused.
+  - id: fda-index
+    title: 'CDRH New — News and Updates'
+    publisher: 'U.S. Food and Drug Administration'
+    url: https://www.fda.gov/medical-devices/medical-devices-news-and-events/cdrh-new-news-and-updates
+    sourceClass: regulator-document
+    access: public
+    retrievedAt: '2026-10-15'
+    locator: 'October 15, 2026 heading; linked Commander M/SAPIEN M3 Early Alert.'
+    scope: 'Dated FDA index listing used solely to establish the October 15 public alert listing.'
+    limits: 'Index timing is distinct from the October 5 customer letter/report cutoff. Dynamic index; not clinical evidence or a separate independent safety event.'
+  - id: trilogy-23
+    title: 'Class 2 Device Recall JenaValve Trilogy Delivery Catheter, 23 mm'
+    publisher: 'U.S. Food and Drug Administration'
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=222212
+    sourceClass: regulator-document
+    access: public
+    publishedAt: '2026-10-09'
+    retrievedAt: '2026-10-15'
+    locator: 'Date Initiated by Firm; Date Posted; Recall Status; Product; Code Information; Manufacturer Reason for Recall; FDA Determined Cause; Action; Quantity in Commerce.'
+    scope: 'Specified 23-mm TRILOGY-DC-S lots; recall Z-0134-2027, event 99697, PMA P250024. Firm initiated July 31, 2026; FDA posted October 9.'
+    limits: '111 units in commerce are inventory, not patients or failures. Open/classified Class II; FDA cause category nonconforming material/component may change. No patient denominator or clinical event count. One event shared with the other size records. No figures reused.'
+  - id: trilogy-25
+    title: 'Class 2 Device Recall JenaValve Trilogy Delivery Catheter, 25 mm'
+    publisher: 'U.S. Food and Drug Administration'
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=222213
+    sourceClass: regulator-document
+    access: public
+    publishedAt: '2026-10-09'
+    retrievedAt: '2026-10-15'
+    locator: 'Date Initiated by Firm; Date Posted; Recall Status; Product; Code Information; Manufacturer Reason for Recall; FDA Determined Cause; Action; Quantity in Commerce.'
+    scope: 'Specified 25-mm TRILOGY-DC-M lots; recall Z-0135-2027, event 99697, PMA P250024. Firm initiated July 31, 2026; FDA posted October 9.'
+    limits: '108 units in commerce are inventory, not patients or failures. Same classified recall event and stated sleeve-liner issue as other size records; not independent confirmation. No clinical event rate or cross-product comparison supported. No figures reused.'
+  - id: trilogy-27
+    title: 'Class 2 Device Recall JenaValve Trilogy Delivery Catheter, 27 mm'
+    publisher: 'U.S. Food and Drug Administration'
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=222214
+    sourceClass: regulator-document
+    access: public
+    publishedAt: '2026-10-09'
+    retrievedAt: '2026-10-15'
+    locator: 'Date Initiated by Firm; Date Posted; Recall Status; Product; Code Information; Manufacturer Reason for Recall; FDA Determined Cause; Action; Quantity in Commerce.'
+    scope: 'Specified 27-mm TRILOGY-DC-L lots; recall Z-0136-2027, event 99697, PMA P250024. Firm initiated July 31, 2026; FDA posted October 9.'
+    limits: '143 units in commerce are inventory, not patients or failures. Same classified recall event as other size records. No pooled event rate, implanted-valve defect or regulator action in another jurisdiction inferred. No figures reused.'
+  - id: clasp-design
+    title: 'Design and Rationale of the CLASP II TR Randomized Trial for Severe Tricuspid Regurgitation'
+    publisher: 'Ailawadi et al. / American Heart Journal; original abstract hosted by PubMed'
+    url: https://pubmed.ncbi.nlm.nih.gov/42855029/
+    sourceClass: original-study
+    access: public
+    publishedAt: '2026-10-09'
+    retrievedAt: '2026-10-15'
+    locator: 'Citation/DOI 10.1016/j.ahj.2026.107627; Abstract sentences describing randomized design, six-month hierarchy, visits, crossover, and enrollment completion.'
+    scope: 'CLASP II TR, NCT04097145; paper states 450 randomized participants, 2:1 PASCAL T-TEER plus optimal medical therapy versus medical therapy alone; symptomatic severe TR; open-label multicenter trial.'
+    limits: >-
+      Original abstract only; publisher full text inaccessible in this pass. No primary result, component event count,
+      win contribution, survival effect or detailed missing-data method inspected. The 450 belongs to the paper's
+      randomized population; broader registry cohorts/current status not reconciled. No repair-versus-replacement
+      comparison inferred. No third-party figure reused.

@@ -1,4 +1,4 @@
-# WOR-29: documentary research drafts; human factual review remains pending.
+# WOR-29: documentary research; owner approved the current records on 2026-10-17.
 observedAt: '2026-10-12'
 sources:
   - id: src-tempus-ecg-mr-fda-k254297
@@ -649,7 +649,7 @@ versions:
         locator: >-
           PDF pp.1, 4–6: clearance letter; Indications for Use; 510(k) Summary, Indications and General
           Warnings/Precautions
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-occlutech-asd-us-p200032
     familyId: family-occlutech-asd
     graphEntityId: dev-occlutech-asd
@@ -663,7 +663,7 @@ versions:
     sourceRefs:
       - sourceId: src-occlutech-asd-p200032-ssed
         locator: SSED pp.1–2, Sections I, II and V
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-laaguarder-lp01
     familyId: family-laaguarder
     graphEntityId: dev-laaguarder
@@ -678,7 +678,7 @@ versions:
     sourceRefs:
       - sourceId: src-laaguarder-lp01-brochure
         locator: PDF pp.2–4, Device Description, General Specifications/Ordering and Indications/Precautions
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-pascal-ace-capture-clarity-mr
     familyId: family-pascal
     graphEntityId: dev-pascal
@@ -694,7 +694,7 @@ versions:
         locator: >-
           results[0].trade_name, decision_date, supplement_reason and ao_statement; official API inspected
           2026-10-12
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-link-hf2-study-intervention
     familyId: family-link-hf2-study-intervention
     graphEntityId: dig-link-hf2-monitoring
@@ -708,7 +708,7 @@ versions:
     sourceRefs:
       - sourceId: src-link-hf2-protocol
         locator: 'Protocol4.0 pp.8,10–11: Operational Partner, clinical response and Study Device'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-dragonfly-t-study-system
     familyId: family-dragonfly-t
     graphEntityId: dev-dragonfly-t
@@ -721,7 +721,7 @@ versions:
     sourceRefs:
       - sourceId: src-teer-china-design-20260727
         locator: Study device description; Figure1 caption
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-aftx-201
     familyId: family-aftx-201
     name: AFTX-201
@@ -733,7 +733,7 @@ versions:
     sourceRefs:
       - sourceId: src-upbeat-ctgov-nct07426419
         locator: protocolSection.armsInterventionsModule.interventions[0]
-    reviewStatus: draft
+    reviewStatus: reviewed
     graphEntityId: rx-aftx-201
   - id: ver-cmic-surgical-ii
     familyId: family-cmic
@@ -745,7 +745,7 @@ versions:
     sourceRefs:
       - sourceId: src-cmic-nct04662034
         locator: protocolSection.identificationModule; armsInterventionsModule; designModule.designInfo
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-cmic-subcutaneous-iii
     familyId: family-cmic
     graphEntityId: dev-cmic
@@ -756,7 +756,7 @@ versions:
     sourceRefs:
       - sourceId: src-cmic-nct06920030
         locator: protocolSection.identificationModule; armsInterventionsModule; designModule.designInfo
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-cmic-subcutaneous-iv
     familyId: family-cmic
     graphEntityId: dev-cmic
@@ -767,7 +767,7 @@ versions:
     sourceRefs:
       - sourceId: src-cmic-nct07795359
         locator: protocolSection.identificationModule; armsInterventionsModule; designModule.designInfo
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-tovinontrine-crd750
     familyId: family-tovinontrine
     graphEntityId: rx-tovinontrine
@@ -783,7 +783,7 @@ versions:
         locator: >-
           Opening non-quotation paragraphs; CYCLE-1 REF and CYCLE-2 PEF results paragraphs; no complete
           numerical tables.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-daxor-bva-200
     familyId: family-daxor-bva
     graphEntityId: dev-daxor-bva-200
@@ -805,7 +805,7 @@ versions:
         locator: >-
           PDF pp.4–6: Indications for Use (p.4), device description and BVA-100 comparison (pp.5–6); 510(k)
           summary begins p.5
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-daxor-bva-100
     familyId: family-daxor-bva
     name: Daxor BVA-100
@@ -821,7 +821,7 @@ versions:
         locator: Device Name; 510(k) Number; Applicant; Decision Date; Decision
       - sourceId: src-daxor-bva200-k251087-summary
         locator: 'PDF pp.5–10: device description and comparison with BVA-100 predicate; summary begins p.5'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-i124-evuzamitide-reveal
     familyId: family-i124-evuzamitide
     graphEntityId: rx-i124-evuzamitide
@@ -840,7 +840,7 @@ versions:
         locator: >-
           Dateline Oct 8, page header Oct 9; Key Facts; Cardiac Amyloidosis; About Investigational Iodine 124
           Evuzamitide
-    reviewStatus: draft
+    reviewStatus: reviewed
 claims:
   - id: claim-tempus-ecg-mr-input-output
     versionId: ver-tempus-ecg-mr-k254297
@@ -861,7 +861,7 @@ claims:
     sourceRefs:
       - sourceId: src-tempus-ecg-mr-fda-k254297
         locator: 'PDF pp.5–6, Device Description; p.9, comparison table: Input, Output, Hardware, and PCCP'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-tempus-ecg-mr-sensitivity
     versionId: ver-tempus-ecg-mr-k254297
     category: evidence
@@ -882,7 +882,7 @@ claims:
     sourceRefs:
       - sourceId: src-tempus-ecg-mr-fda-k254297
         locator: PDF p.6 (Summary p.3), Summary of Clinical Studies; pp.7–8, Table 2
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-tempus-ecg-mr-specificity
     versionId: ver-tempus-ecg-mr-k254297
     category: evidence
@@ -902,7 +902,7 @@ claims:
     sourceRefs:
       - sourceId: src-tempus-ecg-mr-fda-k254297
         locator: PDF p.6 (Summary p.3), Summary of Clinical Studies
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-tempus-ecg-mr-predictive-values
     versionId: ver-tempus-ecg-mr-k254297
     category: evidence
@@ -919,7 +919,7 @@ claims:
     sourceRefs:
       - sourceId: src-tempus-ecg-mr-fda-k254297
         locator: PDF p.6 (Summary p.3), Summary of Clinical Studies; p.7, Table 1
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-link-hf2-study-sensing
     versionId: ver-link-hf2-study-intervention
     category: digital
@@ -933,7 +933,7 @@ claims:
     sourceRefs:
       - sourceId: src-link-hf2-protocol
         locator: Protocol4.0 p.11, Study Device
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-link-hf2-study-workflow
     versionId: ver-link-hf2-study-intervention
     category: digital
@@ -947,7 +947,7 @@ claims:
     sourceRefs:
       - sourceId: src-link-hf2-protocol
         locator: Protocol4.0 p.10, clinical response
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-dragonfly-t-filler
     versionId: ver-dragonfly-t-study-system
     category: design
@@ -961,7 +961,7 @@ claims:
     sourceRefs:
       - sourceId: src-teer-china-design-20260727
         locator: Study device description
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-dragonfly-t-grasping
     versionId: ver-dragonfly-t-study-system
     category: design
@@ -975,7 +975,7 @@ claims:
     sourceRefs:
       - sourceId: src-teer-china-design-20260727
         locator: Study device description
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-dragonfly-t-guide-compatibility
     versionId: ver-dragonfly-t-study-system
     category: design
@@ -989,7 +989,7 @@ claims:
     sourceRefs:
       - sourceId: src-teer-china-design-20260727
         locator: Study device description
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-aftx-201-route
     versionId: ver-aftx-201
     key: route
@@ -1002,7 +1002,7 @@ claims:
     sourceRefs:
       - sourceId: src-upbeat-ctgov-nct07426419
         locator: protocolSection.armsInterventionsModule.interventions[0].description
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-ver-cmic-surgical-ii-implant
     versionId: ver-cmic-surgical-ii
     category: design
@@ -1021,7 +1021,7 @@ claims:
     sourceRefs:
       - sourceId: src-cmic-nct04662034
         locator: protocolSection.armsInterventionsModule.interventions
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-ver-cmic-subcutaneous-iii-implant
     versionId: ver-cmic-subcutaneous-iii
     category: design
@@ -1038,7 +1038,7 @@ claims:
     sourceRefs:
       - sourceId: src-cmic-nct06920030
         locator: protocolSection.armsInterventionsModule.interventions
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-ver-cmic-subcutaneous-iv-implant
     versionId: ver-cmic-subcutaneous-iv
     category: design
@@ -1056,7 +1056,7 @@ claims:
     sourceRefs:
       - sourceId: src-cmic-nct07795359
         locator: protocolSection.armsInterventionsModule.interventions
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-daxor-bva200-measurands-and-setting
     versionId: ver-daxor-bva-200
     category: design
@@ -1077,7 +1077,7 @@ claims:
     sourceRefs:
       - sourceId: src-daxor-bva200-k261099-summary
         locator: PDF p.4, Indications for Use
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-daxor-bva200-tracer-method
     versionId: ver-daxor-bva-200
     category: design
@@ -1098,7 +1098,7 @@ claims:
     sourceRefs:
       - sourceId: src-daxor-bva200-k261099-summary
         locator: PDF p.4, Indications for Use; p.5, 510(k) summary device description
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-daxor-bva200-vs-bva100-workflow
     versionId: ver-daxor-bva-200
     category: evolution
@@ -1121,7 +1121,7 @@ claims:
         locator: PDF pp.5–10, device description and comparison with BVA-100 predicate
       - sourceId: src-daxor-bva200-k261099-summary
         locator: PDF pp.7–10, comparison of K261099 device with K251087 predicate
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-daxor-bva200-comparator-study
     versionId: ver-daxor-bva-200
     category: evidence
@@ -1143,7 +1143,7 @@ claims:
     sourceRefs:
       - sourceId: src-daxor-bva200-k251087-summary
         locator: PDF pp.11–12 (summary pp.7–8), performance data and comparison regression table
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-daxor-bva200-k261099-operator-validation
     versionId: ver-daxor-bva-200
     category: evidence
@@ -1158,7 +1158,7 @@ claims:
     sourceRefs:
       - sourceId: src-daxor-bva200-k261099-summary
         locator: PDF p.11 (summary p.7), Performance Data and Conclusions
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-occlutech-asd-pack-37asd09p
     versionId: ver-occlutech-asd-us-p200032
     category: design
@@ -1178,7 +1178,7 @@ claims:
     sourceRefs:
       - sourceId: src-occlutech-asd-pack-04255888902731
         locator: Device Identifier Information; Device Description; FDA Premarket Submission; Device Record Status
-    reviewStatus: draft
+    reviewStatus: reviewed
 decisions:
   - id: decision-tempus-ecg-mr-k254297
     identifier: K254297
@@ -1200,7 +1200,7 @@ decisions:
         locator: PDF p.1, dated September 25, 2026; pp.3–4, Indications for Use and 510(k) Summary
       - sourceId: src-tempus-ecg-mr-fda-record-k254297
         locator: 'FDA database fields: decision date, decision, and conflicting product code/date received'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-occlutech-asd-p200032
     identifier: P200032
     rootIdentifier: P200032
@@ -1218,7 +1218,7 @@ decisions:
     sourceRefs:
       - sourceId: src-occlutech-asd-p200032-ssed
         locator: SSED p.1, Sections I–II
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-pascal-p220003-s028
     identifier: P220003/S028
     rootIdentifier: P220003
@@ -1237,7 +1237,7 @@ decisions:
     sourceRefs:
       - sourceId: src-pascal-capture-clarity-p220003s028-api
         locator: results[0].decision_code (APPR), decision_date, supplement_type, supplement_reason and ao_statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-daxor-bva100-k964406
     identifier: K964406
     rootIdentifier: K964406
@@ -1255,7 +1255,7 @@ decisions:
     sourceRefs:
       - sourceId: src-daxor-bva100-k964406-record
         locator: '510(k) record: device name, applicant, decision date and decision'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-daxor-bva200-k251087
     identifier: K251087
     rootIdentifier: K251087
@@ -1275,7 +1275,7 @@ decisions:
         locator: 'FDA record: device name; applicant; decision date; decision; product code'
       - sourceId: src-daxor-bva200-k251087-summary
         locator: 'PDF pp.1, 4–10: clearance letter; Indications for Use (p.4); technical comparison (pp.7–10)'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-daxor-bva200-k261099
     identifier: K261099
     rootIdentifier: K261099
@@ -1298,7 +1298,7 @@ decisions:
         locator: >-
           PDF pp.1, 4–10: clearance letter; Indications for Use (p.4); comparison with K251087 predicate
           (pp.7–10)
-    reviewStatus: draft
+    reviewStatus: reviewed
 specs:
   - version: ver-occlutech-asd-us-p200032
     category: asd-occluders
@@ -1374,7 +1374,7 @@ bibliography:
         locator: >-
           Abstract; accepted PDF p.4 procedure, p.5 Table 1, p.8 Limitations. Mixed Amplatzer/Figulla Flex II
           cohort; no exact US version mapping, no device comparison.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-ms-fsi-energetics-20261009
     entityIds:
       - cond-ms
@@ -1384,7 +1384,7 @@ bibliography:
         locator: >-
           Abstract; Materials and Methods; Limitations; Conclusions. Three geometries; modeling evidence, no
           product-version or clinical-outcome inference.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-link-hf2-registry
     entityIds:
       - trial-link-hf2
@@ -1393,7 +1393,7 @@ bibliography:
     sourceRefs:
       - sourceId: src-link-hf2-registry
         locator: protocolSection; resultsSection
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-link-hf2-protocol
     entityIds:
       - trial-link-hf2
@@ -1403,7 +1403,7 @@ bibliography:
     sourceRefs:
       - sourceId: src-link-hf2-protocol
         locator: Protocol4.0 cover,p.8,p.10–12,p.18
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-link-hf2-acc2026
     entityIds:
       - trial-link-hf2
@@ -1411,7 +1411,7 @@ bibliography:
     sourceRefs:
       - sourceId: src-link-hf2-acc2026
         locator: Background; Methods; Results; Conclusion; History
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-teer-china-registry
     entityIds:
       - trial-teer-china
@@ -1420,7 +1420,7 @@ bibliography:
     sourceRefs:
       - sourceId: src-teer-china-registry
         locator: protocolSection.identificationModule; designModule; armsInterventionsModule
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-teer-china-design
     entityIds:
       - trial-teer-china
@@ -1430,7 +1430,7 @@ bibliography:
     sourceRefs:
       - sourceId: src-teer-china-design-20260727
         locator: Study device description; Figure1 caption; Trial Status; History
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-affinia-hfsa-20261009
     entityIds:
       - rx-aftx-201
@@ -1440,7 +1440,7 @@ bibliography:
     sourceRefs:
       - sourceId: src-affinia-hfsa-20261009
         locator: About AFTX-201 and UPBEAT; dated release body
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-affinia-od-date-20260722
     entityIds:
       - rx-aftx-201
@@ -1450,7 +1450,7 @@ bibliography:
     sourceRefs:
       - sourceId: src-affinia-od-date-20260722
         locator: About AFTX-201 and UPBEAT; dated release body
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-upbeat-ctgov-nct07426419
     entityIds:
       - rx-aftx-201
@@ -1460,7 +1460,7 @@ bibliography:
     sourceRefs:
       - sourceId: src-upbeat-ctgov-nct07426419
         locator: protocolSection.identificationModule; designModule; eligibilityModule
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-tovinontrine-ref-sponsor-readout
     entityIds:
       - trial-cycle-1-ref
@@ -1474,7 +1474,7 @@ bibliography:
           effect. No arm-level numerical result table.
       - sourceId: src-tovinontrine-ref-registry
         locator: Registry design/enrollment; no results posted; denominator reconciliation pending.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-tovinontrine-pef-sponsor-readout
     entityIds:
       - trial-cycle-2-pef
@@ -1488,7 +1488,7 @@ bibliography:
           numerical result table.
       - sourceId: src-tovinontrine-pef-registry
         locator: Registry design/enrollment; no results posted; denominator reconciliation pending.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-daxor-bva200-validation-registry
     entityIds:
       - dev-daxor-bva-200
@@ -1500,7 +1500,7 @@ bibliography:
         locator: >-
           BVA-200 versus BVA-100 validation registry description. No explicit mapping to FDA 319-measurement
           dataset; no posted-result claims imported.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-2026-10-12-acacia-hcm-additional-hfsa-analyses
     entityIds:
       - rx-aficamten
@@ -1513,7 +1513,7 @@ bibliography:
         locator: >-
           ACACIA-HCM exercise-performance, responder and dose/safety sections; sponsor release only, no
           underlying HFSA abstract inspected.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-2026-09-30-cytokinetics-launches-aspen-hcm
     entityIds:
       - rx-aficamten
@@ -1523,7 +1523,7 @@ bibliography:
     sourceRefs:
       - sourceId: src-cytokinetics-aspen-hcm-release-20260930
         locator: Opening paragraphs and About ASPEN-HCM; study launch and planned measures, no outcomes.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-2026-10-11-acoramidis-independent-ehr-comparison
     entityIds:
       - rx-acoramidis
@@ -1536,7 +1536,7 @@ bibliography:
         locator: >-
           Opening non-quotation paragraphs; study design/peer-review-status description. EHR observation
           differs from September claims database cohort; no causal or numeric clinical claim.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-clasp-ii-tr-design
     entityIds:
       - trial-clasp-ii-tr
@@ -1545,7 +1545,7 @@ bibliography:
     sourceRefs:
       - sourceId: src-clasp-ii-tr-design-20261009
         locator: Abstract; Available online 9 October 2026; Trial Registration
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-clasp-ii-tr-registry
     entityIds:
       - trial-clasp-ii-tr
@@ -1553,6 +1553,6 @@ bibliography:
     sourceRefs:
       - sourceId: src-clasp-ii-tr-registry
         locator: protocolSection.identificationModule; statusModule; designModule; armsInterventionsModule
-    reviewStatus: draft
+    reviewStatus: reviewed
 indications: []
 media: []

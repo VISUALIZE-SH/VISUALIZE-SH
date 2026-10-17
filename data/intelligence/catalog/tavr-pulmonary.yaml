@@ -220,7 +220,7 @@ versions:
     sourceRefs:
       - sourceId: src-navitor-s002
         locator: Approval Order Statement and Device field
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-acurate-neo2
     familyId: family-acurate
     name: ACURATE neo2
@@ -230,7 +230,7 @@ versions:
     sourceRefs:
       - sourceId: src-acurate-neo2-specsheet
         locator: p.1, Specifications table
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-trilogy
     familyId: family-trilogy
     name: Trilogy
@@ -240,7 +240,7 @@ versions:
     sourceRefs:
       - sourceId: src-trilogy-ssed
         locator: p.1, General Information and Indications for Use
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-melody
     familyId: family-melody
     name: Melody TPV
@@ -250,7 +250,7 @@ versions:
     sourceRefs:
       - sourceId: src-melody-ssed
         locator: p.1, General Information
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-harmony
     familyId: family-harmony
     name: Harmony TPV
@@ -260,7 +260,7 @@ versions:
     sourceRefs:
       - sourceId: src-harmony-ssed
         locator: p.1-2, General Information and Device Description
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-sapien-xt
     familyId: family-sapien
     name: SAPIEN XT aortic valve (9300TFX)
@@ -274,7 +274,7 @@ versions:
     sourceRefs:
       - sourceId: src-sapien-xt-original-ssed
         locator: SSED PDF pp.1–2, Indications for Use and Device Description
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 decisions:
   - id: decision-navitor-s002
@@ -289,7 +289,7 @@ decisions:
     sourceRefs:
       - sourceId: src-navitor-s002
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-evolut-fx-s094
     identifier: P130021/S094
     rootIdentifier: P130021
@@ -302,7 +302,7 @@ decisions:
     sourceRefs:
       - sourceId: src-evolut-fx-s094
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-evolut-fx-plus-s155
     identifier: P130021/S155
     rootIdentifier: P130021
@@ -315,7 +315,7 @@ decisions:
     sourceRefs:
       - sourceId: src-evolut-fx-plus-s155
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-trilogy-original
     identifier: P250024
     rootIdentifier: P250024
@@ -328,7 +328,7 @@ decisions:
     sourceRefs:
       - sourceId: src-trilogy-ssed
         locator: p.1, General Information ("Date of FDA Notice of Approval")
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-melody-hde
     identifier: H080002
     rootIdentifier: H080002
@@ -341,7 +341,7 @@ decisions:
     sourceRefs:
       - sourceId: src-melody-hde
         locator: Approval Order Statement and HDE Number field
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-melody-pma
     identifier: P140017
     rootIdentifier: P140017
@@ -354,7 +354,7 @@ decisions:
     sourceRefs:
       - sourceId: src-melody-ssed
         locator: p.1, General Information
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-harmony-original
     identifier: P200046
     rootIdentifier: P200046
@@ -367,7 +367,7 @@ decisions:
     sourceRefs:
       - sourceId: src-harmony-ssed
         locator: p.1, General Information and Indications for Use
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-sapien-xt-original
     identifier: P130009
     rootIdentifier: P130009
@@ -385,7 +385,7 @@ decisions:
     sourceRefs:
       - sourceId: src-sapien-xt-original-ssed
         locator: SSED p.1, Date of FDA Notice of Approval and Indications for Use
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-sapien-s182
     identifier: P140031/S182
     rootIdentifier: P140031
@@ -404,7 +404,7 @@ decisions:
     sourceRefs:
       - sourceId: src-sapien-s182
         locator: Decision Date and Approval Order Statement — asymptomatic severe native calcific aortic stenosis
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 specs:
   # ---------------------------------------------------------------- SAPIEN 3
@@ -937,7 +937,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-xt-original-ssed
         locator: SSED PDF p.2, Section V Device Description
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-sapien-xt-leaflet-material
     versionId: ver-sapien-xt
     category: design
@@ -951,7 +951,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-xt-original-ssed
         locator: SSED PDF p.2, Section V Device Description
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-sapien-xt-fabric-cover
     versionId: ver-sapien-xt
     category: design
@@ -965,7 +965,7 @@ claims:
     sourceRefs:
       - sourceId: src-sapien-xt-original-ssed
         locator: SSED PDF p.2, Section V Device Description
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 indications:
   - id: ifu-sapien-2025-asymptomatic
@@ -987,4 +987,4 @@ indications:
     sourceRefs:
       - sourceId: src-sapien-s182
         locator: Decision Date and Approval Order Statement — asymptomatic severe native calcific aortic stenosis
-    reviewStatus: draft
+    reviewStatus: reviewed

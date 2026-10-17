@@ -11,7 +11,7 @@
     "serve": "vite",
     "prebuild": "npm run build:data",
     "build": "tsc -p tsconfig.json && vite build",
-    "postbuild": "node scripts/strip-local-previews.mjs",
+    "postbuild": "node --import tsx scripts/render-editorials.ts && node --import tsx scripts/publish-news-insights.ts && node --import tsx scripts/wrap-local-article-pages.ts && node scripts/strip-local-previews.mjs",
     "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.json",
     "typecheck:scripts": "tsc -p tsconfig.node.json",

@@ -4,6 +4,7 @@ import type { IntelligenceData, ProductFamily, ProductVersion } from '../../type
 import { formatEvidenceDate, isOnOrBefore } from '../../data/intelligence'
 import { normalizeAtlasTopic } from '../../data/atlas-topic'
 import NewsContentBadge, { newsContentTypeLabel } from '../NewsContentBadge'
+import { isLocalArticleUrl } from '../../editorial/local-articles'
 import './intelligence.css'
 
 export interface NewsWorkspaceProps {
@@ -162,6 +163,7 @@ export default function NewsWorkspace({
     {stories.length ? <>
       <div className="intel-news-timeline">
         {stories.slice(0, visibleCount).map((item) => {
+          const localArticle = isLocalArticleUrl(item.sourceUrl)
           const trails = familyTrails(data, item)
           const exactVersion = data.versions.find((version) => item.relevantNodeIds.includes(version.id))
           const trailVersions = trails.flatMap((trail) => trail.versions)
@@ -183,7 +185,7 @@ export default function NewsWorkspace({
               <p className="intel-news-brief">{item.summary}</p>
               <div className="intel-news-source-row">
                 <span className="intel-news-sources">
-                  <a className="intel-source" href={item.sourceUrl} target="_blank" rel="noreferrer">Read at {item.sourceName} ↗</a>
+                  <a className="intel-source" href={item.sourceUrl} target={localArticle ? undefined : '_blank'} rel={localArticle ? undefined : 'noreferrer'}>{localArticle ? 'Read article' : `Read at ${item.sourceName} ↗`}</a>
                   {item.additionalSources?.map((source) => <a className="intel-source intel-source-secondary" href={source.url} target="_blank" rel="noreferrer" key={source.url}>{source.label} ↗</a>)}
                 </span>
                 {primaryVersion && <span className="intel-card-actions">

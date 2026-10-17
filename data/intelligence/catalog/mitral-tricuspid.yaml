@@ -308,7 +308,7 @@ versions:
     sourceRefs:
       - sourceId: src-mitraclip-g4-pma
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-mitraclip-g5
     familyId: family-mitraclip
     name: MitraClip G5
@@ -318,7 +318,7 @@ versions:
     sourceRefs:
       - sourceId: src-mitraclip-g5-pma
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-triclip-g5
     familyId: family-triclip
     name: TriClip G5
@@ -328,7 +328,7 @@ versions:
     sourceRefs:
       - sourceId: src-triclip-g5-pma
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-pascal-precision
     familyId: family-pascal
     name: PASCAL Precision
@@ -338,7 +338,7 @@ versions:
     sourceRefs:
       - sourceId: src-pascal-pma
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-tendyne
     familyId: family-tendyne
     name: Tendyne
@@ -348,7 +348,7 @@ versions:
     sourceRefs:
       - sourceId: src-tendyne-pma
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-sapien-m3
     familyId: family-sapien-m3
     name: SAPIEN M3
@@ -358,7 +358,7 @@ versions:
     sourceRefs:
       - sourceId: src-sapienm3-pma
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-intrepid
     familyId: family-intrepid
     name: Intrepid
@@ -368,7 +368,7 @@ versions:
     sourceRefs:
       - sourceId: src-intrepid-protocol
         locator: Title page and Section 6.1 Product Description
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-evoque
     familyId: family-evoque
     name: EVOQUE
@@ -378,7 +378,7 @@ versions:
     sourceRefs:
       - sourceId: src-evoque-pma
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-adaptr
     familyId: family-adaptr
     name: adapTR Leaflet Enhancement System
@@ -388,7 +388,7 @@ versions:
     sourceRefs:
       - sourceId: src-adaptr-fih
         locator: Case Summary
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-cardioband
     familyId: family-cardioband
     name: Cardioband
@@ -398,7 +398,7 @@ versions:
     sourceRefs:
       - sourceId: src-cardioband-review
         locator: Device description
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 decisions:
   - id: decision-triclip-g4-initial
@@ -416,7 +416,7 @@ decisions:
     sourceRefs:
       - sourceId: src-triclip-pma
         locator: Decision Date and Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-triclip-g5
     identifier: P230007/S005
     rootIdentifier: P230007
@@ -432,7 +432,7 @@ decisions:
     sourceRefs:
       - sourceId: src-triclip-g5-pma
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-mitraclip-g4
     identifier: P100009/S029
     rootIdentifier: P100009
@@ -448,7 +448,7 @@ decisions:
     sourceRefs:
       - sourceId: src-mitraclip-g4-pma
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-mitraclip-g5
     identifier: P100009/S067
     rootIdentifier: P100009
@@ -464,7 +464,7 @@ decisions:
     sourceRefs:
       - sourceId: src-mitraclip-g5-pma
         locator: Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-pascal-precision
     identifier: P220003
     rootIdentifier: P220003
@@ -480,7 +480,7 @@ decisions:
     sourceRefs:
       - sourceId: src-pascal-pma
         locator: Decision Date and Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-tendyne
     identifier: P240042
     rootIdentifier: P240042
@@ -496,7 +496,7 @@ decisions:
     sourceRefs:
       - sourceId: src-tendyne-pma
         locator: Decision Date and Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-sapien-m3
     identifier: P250019
     rootIdentifier: P250019
@@ -512,7 +512,7 @@ decisions:
     sourceRefs:
       - sourceId: src-sapienm3-pma
         locator: Decision Date and Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-evoque
     identifier: P230013
     rootIdentifier: P230013
@@ -528,7 +528,7 @@ decisions:
     sourceRefs:
       - sourceId: src-evoque-pma
         locator: Decision Date and Approval Order Statement
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 specs:
   - version: ver-triclip-g4

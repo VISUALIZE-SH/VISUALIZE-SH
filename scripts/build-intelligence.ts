@@ -8,6 +8,7 @@ import type { GraphData } from '../src/types/entities'
 import { addGraphBibliography, applyCitationOverrides, type CitationOverride } from './intelligence/bibliography'
 import { defaultIntelligencePaths, loadIntelligenceSource } from './intelligence/catalog'
 import { loadLegacyIds, validateIntelligence } from './intelligence/validation'
+import { applyGeneratedApprovals, type GeneratedApprovals } from './intelligence/approvals'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -21,6 +22,7 @@ export interface BuildIntelligenceOptions {
   legacyDataDir: string
   graph?: string
   citationMetadata?: string
+  approvals?: string
 }
 
 // Stable key and identified-record order makes generated diffs reviewable and
@@ -45,6 +47,7 @@ export function compileIntelligence(options: BuildIntelligenceOptions): { data: 
   let combined = (comparative === undefined ? source : { ...source, comparative }) as unknown as IntelligenceData
   if (options.graph && existsSync(options.graph)) combined = addGraphBibliography(combined, JSON.parse(readFileSync(options.graph, 'utf8')) as GraphData)
   if (options.citationMetadata && existsSync(options.citationMetadata)) combined = applyCitationOverrides(combined, yaml.load(readFileSync(options.citationMetadata, 'utf8'), { schema: yaml.CORE_SCHEMA }) as CitationOverride[])
+  if (options.approvals) combined = applyGeneratedApprovals(combined, JSON.parse(readFileSync(options.approvals, 'utf8')) as GeneratedApprovals)
   const legacyIds = loadLegacyIds(options.legacyDataDir, options.graph)
   const data = validateIntelligence(combined, { schemaPath: options.schema, legacyIds })
   const json = `${JSON.stringify(canonicalize(data), null, 2)}\n`
@@ -72,11 +75,12 @@ function parseArgs(argv: string[]): BuildIntelligenceOptions {
     schema: resolve(ROOT, 'schema/intelligence.schema.json'),
     legacyDataDir: resolve(ROOT, 'data'),
     graph: resolve(ROOT, 'public/graph.json'),
+    approvals: resolve(ROOT, 'data/intelligence/generated-approvals.json'),
   }
   for (let index = 0; index < argv.length; index++) {
     const argument = argv[index]
     if (argument === '--help') {
-      console.log('Usage: tsx scripts/build-intelligence.ts [--input path] [--taxonomy path] [--catalog dir] [--comparative path] [--citations path] [--output path] [--schema path] [--legacy-data path] [--graph path]')
+      console.log('Usage: tsx scripts/build-intelligence.ts [--input path] [--taxonomy path] [--catalog dir] [--comparative path] [--citations path] [--approvals path] [--output path] [--schema path] [--legacy-data path] [--graph path]')
       process.exit(0)
     }
     const value = argv[++index]
@@ -90,6 +94,7 @@ function parseArgs(argv: string[]): BuildIntelligenceOptions {
     else if (argument === '--legacy-data') options.legacyDataDir = resolve(ROOT, value)
     else if (argument === '--graph') options.graph = resolve(ROOT, value)
     else if (argument === '--citations') options.citationMetadata = resolve(ROOT, value)
+    else if (argument === '--approvals') options.approvals = resolve(ROOT, value)
     else throw new Error(`unknown argument ${argument}`)
   }
   return options
