@@ -1,0 +1,8 @@
+.editorial-invitation{position:fixed;z-index:30;right:18px;bottom:18px;width:min(330px,calc(100vw - 36px));box-sizing:border-box;padding:16px 38px 16px 18px;border:1px solid var(--border-strong);border-radius:var(--radius);background:var(--surface);color:var(--text);box-shadow:var(--shadow);font-size:15px;line-height:1.45}
+.editorial-invitation-label{font-weight:700;color:var(--link);font-size:12px;letter-spacing:.025em}
+.editorial-invitation p{margin:7px 0 9px}
+.editorial-invitation a{color:var(--link);font-weight:600;text-underline-offset:3px}
+.editorial-invitation-close{position:absolute;top:7px;right:7px;width:28px;height:28px;border:0;background:transparent;color:var(--text-2);cursor:pointer;font:24px/1 var(--font)}
+.editorial-invitation-close:hover{background:var(--surface-2);color:var(--text)}
+.editorial-invitation :focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media(max-width:600px){.editorial-invitation{right:12px;bottom:12px;width:min(320px,calc(100vw - 24px));padding-top:12px;padding-bottom:12px;font-size:14px}}

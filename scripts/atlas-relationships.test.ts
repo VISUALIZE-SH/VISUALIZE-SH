@@ -45,7 +45,7 @@ test('research additions preserve scoped targets and distinguish investigation f
   for (const edge of edges.filter(edge => edge.evidence)) {
     assert.equal(validate(edge.evidence), true, JSON.stringify(validate.errors))
     assert.deepEqual(relationshipEndpointIssues(edge.evidence!, entities), [])
-    assert.equal(edge.isDraft, true, `${edge.id} must remain draft`)
+    assert.equal(edge.isDraft, false, `${edge.id} reflects owner approval`)
   }
   const pascal = atlasTargetLabels(byId.get('dev-pascal')!, byId, edges)
   assert.ok(pascal.label.includes('TR (study)'))
@@ -54,17 +54,22 @@ test('research additions preserve scoped targets and distinguish investigation f
   assert.ok(tendyne.label.includes('MS*'))
   assert.ok(edges.find(edge => edge.source === 'dev-tendyne' && edge.target === 'cond-ms')!.evidence!.scope.includes('MAC'))
   assert.ok(!edges.some(edge => edge.source === 'co-edwards' && edge.target === 'co-jenavalve' && edge.relationship === 'acquired'))
-  assert.ok(!atlasTargetLabels(byId.get('dev-pascal')!, byId, edges.filter(edge => !edge.isDraft)).label.includes('TR'))
+  assert.ok(atlasTargetLabels(byId.get('dev-pascal')!, byId, edges.filter(edge => !edge.isDraft)).label.includes('TR (study)'))
 })
 
-test('Islands and Timeline both retain draft and investigation edge markings', () => {
+test('Islands and Timeline distinguish reviewed, draft and investigation edges', () => {
   for (const stableIslands of [true, false]) {
     const cy = cytoscape({ headless: true, styleEnabled: true, elements: graph.elements, style: buildStylesheet({ stableIslands }) })
     try {
       for (const edge of edges.filter(edge => edge.evidence)) {
         const dotted = ['investigated_for', 'option_to_acquire', 'terminated_acquisition'].includes(edge.relationship)
-        assert.equal(cy.getElementById(edge.id).style('line-style'), dotted ? 'dotted' : 'dashed', `${stableIslands ? 'Islands' : 'Timeline'}: ${edge.id}`)
+          || (stableIslands && ['invested_in', 'acquired', 'portfolio_includes'].includes(edge.relationship))
+        assert.equal(cy.getElementById(edge.id).style('line-style'), dotted ? 'dotted' : 'solid', `${stableIslands ? 'Islands' : 'Timeline'}: ${edge.id}`)
       }
+      const reviewedEdge = edges.find(edge => edge.evidence && edge.relationship === 'used_in')!
+      const draft = { ...reviewedEdge, id: 'fixture-draft-edge', isDraft: true }
+      cy.add({ data: draft })
+      assert.equal(cy.getElementById(draft.id).style('line-style'), 'dashed')
     } finally {
       cy.destroy()
     }

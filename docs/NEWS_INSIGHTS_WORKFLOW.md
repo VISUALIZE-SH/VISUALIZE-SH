@@ -40,11 +40,32 @@ to fourteen days. New older-publication backfills are listed separately rather
 than narrated as in-window developments. Initial older records establish a
 baseline, not a claim of new backfill discovery.
 
+When the owner explicitly requests a different coverage window, use
+`--window-from YYYY-MM-DD` (API: `prepareRun({ runDate, windowFrom })`). This
+deliberate override records `windowBasis: owner-explicit` and retains the actual
+previous completed run date and cumulative fingerprints. In-window unchanged
+records become `revisited` candidates for fresh analysis; this reason does not
+assert a new development or changed source. New/updated candidates and older
+backfill classification retain their existing meanings relative to the explicit
+window. Unchanged older records stay suppressed. Do not silently choose this
+override for an ordinary next edition.
+
+`--from` retains its first-run meaning; after a completed checkpoint it may only
+match that checkpoint. It cannot be combined with `--window-from`. An explicit
+override can also establish a first run when the owner specifies that window.
+Preparing an override does not advance the checkpoint. Successful rendering
+advances it to the actual run date, so the next ordinary edition starts there.
+
 Preparing a run freezes the candidate snapshot. Failed, unfinished, and deferred
 attempts do not advance the completed boundary. Revising the same run date reuses
 its snapshot and does not create another edition or checkpoint. To regenerate
 against a corrected inventory, deliberately reconcile the local manifest/ledger
 with the owner rather than quietly replacing the frozen input.
+An override cannot replace a same-date frozen window, even when its start matches
+a run prepared with the default basis. An explicit same-date rerun must match
+both its saved start and `owner-explicit` basis; omitting the option reuses the
+saved snapshot. Use the same override option when explicitly restating its window,
+and deliberately reconcile a mismatched frozen run before preparation.
 
 ## Manual sequence
 
@@ -54,6 +75,9 @@ npm run news-insights:prepare -- --date 2026-10-13 --from 2026-09-30
 
 # Later manual edition (use its actual Los Angeles calendar date):
 npm run news-insights:prepare -- --date YYYY-MM-DD
+
+# Only for the owner's explicit overlapping October 2–15 coverage request:
+npm run news-insights:prepare -- --date 2026-10-15 --window-from 2026-10-02
 
 # After extraction, drafting, critique and coordinator factual checks:
 npm run news-insights:render -- --date YYYY-MM-DD
@@ -80,9 +104,11 @@ or promote it until the article and actual public destination are approved.
 `npm run news-insights:preview -- --date YYYY-MM-DD` prepares an ignored copy of
 the production app under that run’s `site-preview/`, the article, a template
 reading view, and a review hub. It includes draft News only in this copy, with a
-local review banner and draft prefixes. An existing SAPIEN specialty preview is
-included solely to demonstrate the Editorial keyword treatment and is labeled as a preview;
-its review date is not an asserted publication date.
+local review banner and draft prefixes. Authored Editorial readers from `data/editorials/index.yaml` are rendered into this
+copy, including drafts, and their News links are rewritten locally. Production builds
+render only reviewed Editorials. The current LAAO Part 1 reader uses the owner-requested
+publication date; a separate Part 2 author draft is linked only from the review hub
+when its ignored local artifact is available.
 
 The command uses the current `dist/`; run `VITE_BASE=/ npm run build` before it
 after app changes. Then serve the review copy with:
@@ -138,3 +164,18 @@ delegation/critique changes, exclusions, visual QA, and remaining limits.
 
 Author selection, factual signoff, public rendering/publication, and newsletter
 delivery are separate outcomes. This workflow creates no schedule and no send.
+
+## Reviewed publication
+
+After explicit owner approval, set the edition and matching `data/news.yaml`
+record to `reviewStatus: reviewed`. Copy any original Atlas JPEG into
+`data/news-insights/figures/YYYY-MM-DD/`. The production postbuild runs
+`scripts/publish-news-insights.ts`, validates sources, context routes, selected
+News IDs and matching feed metadata, and renders only reviewed editions into
+`dist/insights/YYYY-MM-DD/` before applying the shared article shell. This build
+does not depend on ignored run ledgers or local review copies. Draft generation
+still uses the frozen local run; a build never advances that checkpoint.
+
+Reviewed readers omit draft banners, local review/template navigation and
+`noindex` metadata. Source, cohort and missing-evidence limits remain. Editing a
+review state does not authorize newsletter delivery. 

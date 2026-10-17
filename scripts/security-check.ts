@@ -30,7 +30,12 @@ const browserTrackingPatterns: Array<{ name: string; pattern: RegExp }> = [
   { name: 'tracking pixel markup', pattern: /<img\b[^>]*(?:width=["']?1["']?[^>]*height=["']?1|height=["']?1["']?[^>]*width=["']?1)/gi },
 ]
 const browserStorageApi = /\b(?:window\.)?(?:localStorage|sessionStorage)\s*(?:\.|\[)/g
-const allowedThemeStorageLines = new Map([
+const allowedPreferenceStorageLines = new Map([
+  // Exact UI-preference operations only; no identifiers or analytics.
+  ['src/components/EditorialPrompt.tsx', new Set([
+    "return sessionStorage.getItem(EDITORIAL_DISMISS_KEY) === '1'",
+    "sessionStorage.setItem(EDITORIAL_DISMISS_KEY, '1')",
+  ])],
   ['src/theme.ts', new Set([
     'const saved = window.localStorage.getItem(THEME_STORAGE_KEY)',
     'window.localStorage.setItem(THEME_STORAGE_KEY, preference)',
@@ -74,7 +79,7 @@ for (const file of [...new Set(files)].sort()) {
     browserStorageApi.lastIndex = 0
     for (let match = browserStorageApi.exec(text); match; match = browserStorageApi.exec(text)) {
       const line = text.slice(text.lastIndexOf('\n', match.index) + 1, text.indexOf('\n', match.index) < 0 ? text.length : text.indexOf('\n', match.index)).trim()
-      if (allowedThemeStorageLines.get(file)?.has(line)) continue
+      if (allowedPreferenceStorageLines.get(file)?.has(line)) continue
       findings.push({ file, line: lineNumber(text, match.index), type: 'unapproved persistent browser storage API' })
     }
   }

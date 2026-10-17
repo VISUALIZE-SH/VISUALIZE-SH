@@ -88,3 +88,9 @@ Do not substitute retrieval dates for publication dates or invent missing
 authors. The APA export uses `n.d.` and a document descriptor when metadata is
 unavailable. The public research audit and methodology are in
 `../../../docs/REFERENCE_BIBLIOGRAPHY.md`.
+
+## Authored review state
+
+Public records carry explicit `reviewStatus`, including compact spec values.
+Unspecified generated values default to draft. Review decisions and receipts
+are maintained privately; this repository contains the resulting record states.

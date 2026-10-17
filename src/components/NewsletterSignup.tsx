@@ -88,7 +88,7 @@ export default function NewsletterSignup({ onClose }: Props) {
         </div>
         <div className="modal-body newsletter-body">
           <p id="newsletter-description">
-            We’re testing registration for a regular newsletter on structural heart approvals,
+            Subscribe for structural heart approvals,
             trial readouts, and emerging ideas.
           </p>
           {signupUrl ? (
@@ -98,24 +98,15 @@ export default function NewsletterSignup({ onClose }: Props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Continue to demo signup form <span aria-hidden="true">↗</span>
+              Subscribe to the newsletter <span aria-hidden="true">↗</span>
             </a>
           ) : (
             <p className="newsletter-config-note" role="status">
               Signup is being configured. Check back soon.
             </p>
           )}
-          {import.meta.env.DEV && <div className="newsletter-local-issues">
-            <h3>Local review issues</h3>
-            <p>Draft evidence awaiting editorial review.</p>
-            <ul>
-              <li><a href={`${import.meta.env.BASE_URL}previews/newsletter/sapien-design-vs-indication-expansion/index.html`} target="_blank" rel="noreferrer">SAPIEN: design change versus indication expansion</a></li>
-              <li><a href={`${import.meta.env.BASE_URL}previews/newsletter/feops-predict-laa-simulation-evidence/index.html`} target="_blank" rel="noreferrer">PREDICT-LAA: simulation evidence in context</a></li>
-            </ul>
-          </div>}
           <p className="newsletter-note">
-            The demo form asks for your email address and name. Zoho Campaigns sends a confirmation
-            email before your subscription is complete. Your details go directly to Zoho; this site
+            The signup form is hosted by Zoho Campaigns. Your details go directly to Zoho; this site
             does not store them. Read our{' '}
             <a
               href={`${import.meta.env.BASE_URL}privacy.html`}

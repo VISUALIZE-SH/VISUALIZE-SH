@@ -41,6 +41,7 @@ on someone else's behalf without reviewing the diff.
 | Device/drug class or standard attribute | `data/intelligence/taxonomy.yaml` | Same intelligence build; Data spec-table columns |
 | Product specs, FDA decisions for a class | `data/intelligence/catalog/<class>.yaml` | Same intelligence build; format in `data/intelligence/catalog/README.md` |
 | Consolidated references and exact citation metadata | `data/intelligence/catalog/references-*.yaml`, `data/intelligence/citations.yaml` | Same intelligence build; direct patent connections required; methodology in `docs/REFERENCE_BIBLIOGRAPHY.md` |
+| Locally hosted authored article | Editorial registry/reader HTML, a News Insights dated route, or another generated `editorials/`, `insights/`, or `articles/` route | Renderers retain article HTML as `content.html` and use the shared app shell at the route; News Insights review copies include drafts; see `data/editorials/README.md` and `docs/NEWS_INSIGHTS_WORKFLOW.md` |
 | Local flagship preview selection | `data/editorial-issues.yaml` | `npm run newsletter:local` → `public/previews/newsletter/` |
 | Manual News Insights draft | `prompts/news-insights.md`, `data/news-insights/<date>.yaml` | `npm run news-insights:prepare` / `news-insights:render` → ignored `artifacts/news-insights/`; [workflow](NEWS_INSIGHTS_WORKFLOW.md) |
 | Weekly public/email digest | `data/news.yaml` | `npm run newsletter:render -- --date YYYY-MM-DD` → `public/digests/` |
@@ -53,7 +54,7 @@ version-specific evidence. A graph therapy node is not itself an exact device
 version or an evidence claim. Draft evidence can appear in local views with its
 review state, but must not be treated as clinically approved.
 
-`src/App.tsx` coordinates modes and shared URL state. `src/components/intelligence/`
+`src/App.tsx` coordinates modes and shared URL state. Locally hosted authored articles use the same app header and theme controls, with the article body underneath; article HTML is isolated in `content.html` and follows the app's resolved theme. Keep article reader columns at the shared 780px maximum width, and size the iframe to at least the visible workspace height so the themed surface continues to the viewport bottom while longer content can extend it. External news links remain external. Add new generated article routes under `editorials/`, `insights/`, or `articles/` for the postbuild wrapper to apply this shell automatically. `src/components/intelligence/`
 renders News, Atlas, and Data. `src/data/comparison.ts` builds the comparison
 matrix and exports; `src/graph/` handles the Cytoscape graph. Change schema and
 validation together when adding a field, then update the corresponding TS types.

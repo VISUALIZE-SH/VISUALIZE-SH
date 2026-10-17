@@ -1,6 +1,7 @@
 import type { KeyboardEvent, MouseEvent } from 'react'
 import type { NewsItem } from '../types/entities'
 import NewsContentBadge, { newsContentTypeLabel } from './NewsContentBadge'
+import { isLocalArticleUrl } from '../editorial/local-articles'
 import './NewsFeed.css'
 
 export interface NewsFeedProps {
@@ -72,6 +73,7 @@ export default function NewsFeed({
     <section className={classNames} aria-label="News">
       <div className="news-feed-list" role="list">
         {items.map((item) => {
+          const localArticle = isLocalArticleUrl(item.sourceUrl)
           const selected = item.id === selectedItemId
           const topics = item.topicTags.filter(topic => !item.contentType || item.contentType === 'news'
             || topic.trim().toLowerCase() !== newsContentTypeLabel(item.contentType).toLowerCase())
@@ -103,11 +105,11 @@ export default function NewsFeed({
               <a
                 className="news-card-link"
                 href={item.sourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={localArticle ? undefined : '_blank'}
+                rel={localArticle ? undefined : 'noopener noreferrer'}
                 onClick={stopCardClick}
               >
-                Read source <span aria-hidden="true">↗</span>
+                {localArticle ? 'Read article' : <>Read source <span aria-hidden="true">↗</span></>}
               </a>
             </article>
           )

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Local News Insights draft",
+  "title": "News Insights edition",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -17,7 +17,6 @@
     "selectedNewsIds",
     "opening",
     "sections",
-    "closing",
     "sources",
     "scopeNote"
   ],
@@ -30,7 +29,10 @@
       "const": "news-insights"
     },
     "reviewStatus": {
-      "const": "draft"
+      "enum": [
+        "draft",
+        "reviewed"
+      ]
     },
     "runDate": {
       "type": "string",
