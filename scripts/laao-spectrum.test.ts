@@ -38,13 +38,13 @@ test('article inventory appears in AF-scoped Data tables and Atlas profile famil
   assert.match(tables.find(table => table.id === 'laao-occluders')?.label ?? '', /LAAO\/LAAC/)
 })
 
-test('historical generations retain distinct dated evidence and draft source links', () => {
+test('historical generations retain distinct dated evidence and owner-reviewed source links', () => {
   const authored = loadIntelligenceSource(defaultIntelligencePaths(ROOT)) as unknown as IntelligenceData
   const ids = [...expectedEndocardial, ...expectedExclusion]
   for (const id of ids) {
     const version = authored.versions.find(item => item.id === id)
     assert.ok(version, `${id} missing`)
-    assert.equal(version.reviewStatus, 'draft')
+    assert.equal(version.reviewStatus, 'reviewed')
     assert.ok(version.sourceRefs.length, `${id} lacks source references`)
     for (const ref of version.sourceRefs) assert.ok(authored.sources.some(source => source.id === ref.sourceId), `${id} references missing source ${ref.sourceId}`)
   }

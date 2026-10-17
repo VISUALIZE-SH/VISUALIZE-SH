@@ -328,7 +328,7 @@ versions:
     sourceRefs:
       - sourceId: src-camzyos-label
         locator: 'Label §1 Indications and Usage; Boxed Warning'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-myqorzo
     familyId: family-aficamten
     name: Myqorzo (aficamten)
@@ -338,7 +338,7 @@ versions:
     sourceRefs:
       - sourceId: src-myqorzo-label
         locator: 'Label §1 Indications and Usage; Boxed Warning'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-vyndaqel-vyndamax
     familyId: family-tafamidis
     name: Vyndaqel/Vyndamax (tafamidis)
@@ -348,7 +348,7 @@ versions:
     sourceRefs:
       - sourceId: src-vyndaqel-label
         locator: 'Label §1 Indications and Usage; §2 Dosage and Administration'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-attruby
     familyId: family-acoramidis
     name: Attruby (acoramidis)
@@ -358,7 +358,7 @@ versions:
     sourceRefs:
       - sourceId: src-attruby-label
         locator: 'Label §1 Indications and Usage; §2.1'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-amvuttra
     familyId: family-vutrisiran
     name: Amvuttra (vutrisiran)
@@ -368,7 +368,7 @@ versions:
     sourceRefs:
       - sourceId: src-amvuttra-label
         locator: 'Label §1.1-1.2 Indications and Usage'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-onpattro
     familyId: family-patisiran
     name: Onpattro (patisiran)
@@ -380,7 +380,7 @@ versions:
         locator: 'Label §1 Indications and Usage (no ATTR-CM indication present)'
       - sourceId: src-patisiran-crl
         locator: Press release, regulatory update on the ATTR-CM sNDA
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-farxiga
     familyId: family-dapagliflozin
     name: Farxiga (dapagliflozin)
@@ -390,7 +390,7 @@ versions:
     sourceRefs:
       - sourceId: src-farxiga-label
         locator: 'Label §1 Indications and Usage'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-jardiance
     familyId: family-empagliflozin
     name: Jardiance (empagliflozin)
@@ -400,7 +400,7 @@ versions:
     sourceRefs:
       - sourceId: src-jardiance-label
         locator: 'Label §1 Indications and Usage'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-entresto
     familyId: family-sacubitril-valsartan
     name: Entresto (sacubitril/valsartan)
@@ -410,7 +410,7 @@ versions:
     sourceRefs:
       - sourceId: src-entresto-label
         locator: 'Label §1.1 Indications and Usage'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-verquvo
     familyId: family-vericiguat
     name: Verquvo (vericiguat)
@@ -420,7 +420,7 @@ versions:
     sourceRefs:
       - sourceId: src-verquvo-label
         locator: 'Label §1 Indications and Usage'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-kerendia
     familyId: family-finerenone
     name: Kerendia (finerenone)
@@ -430,7 +430,7 @@ versions:
     sourceRefs:
       - sourceId: src-kerendia-label
         locator: 'Label §1 Indications and Usage'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-omecamtiv
     familyId: family-omecamtiv-mecarbil
     name: Omecamtiv Mecarbil
@@ -444,7 +444,7 @@ versions:
         locator: Original NDA Complete Response Letter announcement
       - sourceId: src-cytokinetics-pipeline-audit
         locator: Current pipeline — omecamtiv mecarbil / COMET-HF Phase 3
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 decisions:
   - id: decision-camzyos-nda
@@ -459,7 +459,7 @@ decisions:
     sourceRefs:
       - sourceId: src-camzyos-fda-overview
         locator: 'ORIG-1 action, approval date'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-myqorzo-nda
     identifier: '219083'
     rootIdentifier: '219083'
@@ -472,7 +472,7 @@ decisions:
     sourceRefs:
       - sourceId: src-myqorzo-fda-overview
         locator: 'ORIG-1 action, approval date'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-vyndaqel-nda
     identifier: 211996 / 212161
     rootIdentifier: '211996'
@@ -485,7 +485,7 @@ decisions:
     sourceRefs:
       - sourceId: src-vyndaqel-fda-overview
         locator: 'ORIG-1 action, approval date'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-attruby-nda
     identifier: '216540'
     rootIdentifier: '216540'
@@ -498,7 +498,7 @@ decisions:
     sourceRefs:
       - sourceId: src-attruby-fda-overview
         locator: 'ORIG-1 action, approval date'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-amvuttra-attr-cm
     identifier: 215515/S-006
     rootIdentifier: '215515'
@@ -511,7 +511,7 @@ decisions:
     sourceRefs:
       - sourceId: src-amvuttra-fda-overview
         locator: 'SUPPL-6 action, Efficacy-New Indication'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-farxiga-hfref
     identifier: 202293/S-020
     rootIdentifier: '202293'
@@ -524,7 +524,7 @@ decisions:
     sourceRefs:
       - sourceId: src-farxiga-fda-overview
         locator: 'SUPPL-20 action, Efficacy-New Indication'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-farxiga-full-range
     identifier: 202293/S-026
     rootIdentifier: '202293'
@@ -537,7 +537,7 @@ decisions:
     sourceRefs:
       - sourceId: src-farxiga-fda-overview
         locator: 'SUPPL-26 action, Efficacy-New Indication'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-jardiance-hfref
     identifier: 204629/S-026
     rootIdentifier: '204629'
@@ -550,7 +550,7 @@ decisions:
     sourceRefs:
       - sourceId: src-jardiance-fda-overview
         locator: 'SUPPL-26 action, Efficacy-New Indication'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-jardiance-any-ef
     identifier: 204629/S-033
     rootIdentifier: '204629'
@@ -563,7 +563,7 @@ decisions:
     sourceRefs:
       - sourceId: src-jardiance-fda-overview
         locator: 'SUPPL-33 action, Efficacy-New Indication'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-entresto-orig
     identifier: '207620'
     rootIdentifier: '207620'
@@ -576,7 +576,7 @@ decisions:
     sourceRefs:
       - sourceId: src-entresto-fda-overview
         locator: 'ORIG-1 action, approval date'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-entresto-lvef-below-normal
     identifier: 207620/S-018
     rootIdentifier: '207620'
@@ -589,7 +589,7 @@ decisions:
     sourceRefs:
       - sourceId: src-entresto-fda-overview
         locator: 'SUPPL-18 action, Efficacy-Labeling Change With Clinical Data'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-verquvo-nda
     identifier: '214377'
     rootIdentifier: '214377'
@@ -602,7 +602,7 @@ decisions:
     sourceRefs:
       - sourceId: src-verquvo-fda-overview
         locator: 'ORIG-1 action, approval date'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-kerendia-hf
     identifier: 215341/S-009
     rootIdentifier: '215341'
@@ -615,7 +615,7 @@ decisions:
     sourceRefs:
       - sourceId: src-kerendia-fda-overview
         locator: 'SUPPL-9 action, Efficacy-New Indication'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-camzyos-2026-pediatric
     identifier: NDA 214998 — pediatric indication, 2026-09-30
     rootIdentifier: "214998"
@@ -633,7 +633,7 @@ decisions:
         locator: Action — adult and pediatric ≥30 kg indication
       - sourceId: src-camzyos-2026-announcement
         locator: Release date and opening approval announcement
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 specs:
   - version: ver-camzyos
@@ -804,4 +804,4 @@ indications:
     sourceRefs:
       - sourceId: src-camzyos-label
         locator: September 2026 label §1, §2.1 and §8.4
-    reviewStatus: draft
+    reviewStatus: reviewed

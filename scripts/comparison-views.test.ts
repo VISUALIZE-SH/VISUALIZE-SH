@@ -20,7 +20,7 @@ function pilotWithConfigurations(): IntelligenceData {
   }
 }
 
-test('aortic comparison aligns exact versions and keeps draft source provenance', () => {
+test('aortic comparison aligns exact versions and keeps reviewed source provenance', () => {
   const data = scopeToCondition(pilot(), 'cond-as')
   const category = data.comparisonCategories?.find(item => item.id === 'aortic-tavr-valves')
   assert.ok(category)
@@ -30,7 +30,7 @@ test('aortic comparison aligns exact versions and keeps draft source provenance'
   const frame = projection.rows.find(row => row.attribute.id === 'frame-material')
   assert.ok(frame)
   assert.deepEqual(frame.cells.map(cell => cell.claims[0]?.value), ['MP35N cobalt-chromium', 'Nitinol'])
-  assert.ok(frame.cells.every(cell => cell.status === 'reported' && cell.claims[0].reviewStatus === 'draft'))
+  assert.ok(frame.cells.every(cell => cell.status === 'reported' && cell.claims[0].reviewStatus === 'reviewed'))
   assert.ok(frame.cells.every(cell => cell.claims[0].sourceRefs[0].locator), 'every shown fact keeps a source locator')
 
   const expansion = projection.rows.find(row => row.attribute.id === 'expansion-mechanism')
@@ -79,7 +79,7 @@ test('comparison export preserves column order, status, and source boundaries', 
     ['delivery-profile', 'ver-sapien-3'],
   ])
   assert.equal(exported[0].value, 'Nitinol')
-  assert.equal(exported[0].reviewStatus, 'draft')
+  assert.equal(exported[0].reviewStatus, 'reviewed')
   assert.match(String(exported[0].sourceUrls), /accessdata\.fda\.gov/)
   assert.ok(exported[0].sourceLocators)
   assert.equal(exported[2].status, 'requires_configuration')
@@ -106,7 +106,7 @@ test('exact-size observations align without treating different sizing methods as
   assert.equal(exported[0].configurationId, 'sapien-3-23')
   assert.equal(exported[0].method, 'TEE')
   assert.equal(exported[1].configurationId, 'evolut-fx-26')
-  assert.equal(exported[1].reviewStatus, 'unreviewed')
+  assert.equal(exported[1].reviewStatus, 'verified')
   assert.match(String(exported[1].sourceUrls), /P130021S174D/)
   assert.equal(exported[3].value, 18)
 })

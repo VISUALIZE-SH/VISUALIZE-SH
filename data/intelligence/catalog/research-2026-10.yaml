@@ -178,7 +178,7 @@ versions:
     sourceRefs:
       - sourceId: src-cardiomems-cardioguide-announcement-20261005
         locator: 'Opening non-quotation paragraph; Dynamic Treatment Plan and planned-availability paragraphs; CardioGuide HF and Dynamic Treatment Plan FAQs'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-mitrapatch
     familyId: family-mitrapatch
     graphEntityId: dev-mitrapatch
@@ -189,7 +189,7 @@ versions:
     sourceRefs:
       - sourceId: src-mitrapatch-fda-k252126
         locator: 'PDF p.1 clearance letter; p.5 (Summary p.1), Indication for Use and Device Description; p.6 comparison table'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-emboliner-epc03
     familyId: family-emboliner
     graphEntityId: dev-emboliner
@@ -203,7 +203,7 @@ versions:
         locator: 'Device Name; 510(k) Number; Decision Date'
       - sourceId: src-emboliner-commercial-use-20261002
         locator: 'Opening non-quotation paragraphs; controlled-launch paragraph. Release gives family name, not a new EPC-03 build.'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 decisions:
   - id: decision-amulet-p200049s021
@@ -218,7 +218,7 @@ decisions:
     sourceRefs:
       - sourceId: src-amulet-fda-p200049s021
         locator: 'Device; PMA/Supplement Number; Decision Date; Supplement Type/Reason; Approval Order Statement'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-mitrapatch-k252126
     identifier: K252126
     rootIdentifier: K252126
@@ -231,7 +231,7 @@ decisions:
     sourceRefs:
       - sourceId: src-mitrapatch-fda-k252126
         locator: 'PDF p.1 clearance letter; p.4 Indications for Use form; p.5 (Summary p.1) Indication for Use'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: decision-emboliner-k261715
     identifier: K261715
     rootIdentifier: K261715
@@ -244,7 +244,7 @@ decisions:
     sourceRefs:
       - sourceId: src-emboliner-fda-k261715
         locator: 'Device Classification Name; Device Name; Decision Date; Decision (Substantially Equivalent)'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 claims:
   - id: claim-cardiomems-cardioguide-patient-access-2026
@@ -261,7 +261,7 @@ claims:
     sourceRefs:
       - sourceId: src-cardiomems-cardioguide-announcement-20261005
         locator: 'Opening non-quotation paragraph; Dynamic Treatment Plan paragraph; planned-availability paragraph; FAQ What is the Dynamic Treatment Plan?'
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: claim-amulet-pulmonary-artery-labeling-correction-202609
     versionId: ver-amulet
     category: fit
@@ -280,7 +280,7 @@ claims:
         locator: 'Decision Date; Approval Order Statement'
       - sourceId: src-amulet-health-canada-ra82682
         locator: 'Affected products; Issue; Original published date; Recall class; Recall date'
-    reviewStatus: draft
+    reviewStatus: reviewed
 
 specs:
   - version: ver-mitrapatch
@@ -335,7 +335,7 @@ bibliography:
         locator: >-
           v1 Abstract; Materials and Methods §2.1 (26 mm CoreValve Evolut R specimen); Discussion limitations. Preprint bench
           evidence, not a released valve design change or an Evolut FX/FX+ clinical result.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-mitral-teer-fsi-preprint-20260928
     entityIds:
       - dev-mitraclip
@@ -345,7 +345,7 @@ bibliography:
         locator: >-
           v1 Abstract; Numerical Results and Discussion. Coaptation constraint uses a clip-shaped region without modeling clip
           mechanics; no exact MitraClip generation or clinical-efficacy mapping.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-echodino-preprint-v2-20261007
     entityIds:
       - cond-asd
@@ -357,7 +357,7 @@ bibliography:
         locator: >-
           v2 Abstract and submission history; study-level SHD analysis and Discussion. First submission October 4, v2 revision
           October 7. Preprint dataset evaluation, not a clinically deployed software build.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-puerarin-bhv-coating-20260929
     entityIds:
       - cond-as
@@ -367,7 +367,7 @@ bibliography:
         locator: >-
           Original Abstract (PubMed API Article/Abstract) and Electronic ArticleDate. Abstract only; rat subcutaneous implants at 12
           weeks, not human valve durability or an exact marketed prosthesis.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-parallel-septal-balloon-case-20260924
     entityIds:
       - dev-pascal
@@ -378,7 +378,7 @@ bibliography:
         locator: >-
           Abstract, Case summary and Discussion; publication metadata. One patient; PASCAL generation and septal-occluder model
           unspecified. Full text not reviewed.
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: bib-cardio-ttransform-stabilizer-analysis-2026
     entityIds:
       - cond-attr-cm
@@ -390,4 +390,4 @@ bibliography:
           UCL accepted-version Abstract: overall trial neutral, prespecified baseline-stabilizer subgroups. Publication date from
           publisher-deposited Crossref published-online (August 30). No tafamidis monotherapy efficacy or exact drug-version
           comparison inferred.
-    reviewStatus: draft
+    reviewStatus: reviewed

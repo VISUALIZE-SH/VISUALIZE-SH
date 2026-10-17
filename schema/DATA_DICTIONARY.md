@@ -250,8 +250,10 @@ discriminated by `therapyType`.
 Use `regulatoryStatus` for the broad bucket (it drives the filter) and put the
 nuance (dates, geographies, CRLs, breakthrough designation) in `regulatoryDetail`.
 
-For draft device `materials`, use an empty list when no implant composition has been
-verified; curated devices require at least one sourced material. Do not substitute
+For device `materials`, use an empty list when no implant composition has been
+verified. A curated device requires a sourced material or explicit
+`materialsStatus: not_established` with a curation note retaining the gap.
+Owner approval reviews the record and its limitations; it does not establish composition. Do not substitute
 an assumed material from another generation. Otherwise,
 include only decision-useful implanted materials, including bioabsorbable components: the
 frame/body alloy, biologic leaflet tissue, functional fabric or sealing skirt,

@@ -9,7 +9,7 @@ addFormats(ajv)
 const schema = JSON.parse(readFileSync(new URL('../schema/therapy.schema.json', import.meta.url), 'utf8'))
 const validate = ajv.compile(schema)
 
-test('unverified implant materials may remain empty only for a draft device', () => {
+test('curated empty implant materials require an explicit reviewed gap and note', () => {
   const device = {
     id: 'dev-test-laa', type: 'therapy', therapyType: 'device', name: 'Test LAA device',
     treats: ['cond-af'], regulatoryStatus: 'unknown', materials: [],
@@ -18,6 +18,10 @@ test('unverified implant materials may remain empty only for a draft device', ()
   assert.equal(validate(device), true, JSON.stringify(validate.errors))
   assert.equal(validate({ ...device, curation: { ...device.curation, status: 'curated' } }), false)
   assert.ok(validate.errors?.some(error => error.instancePath === '/materials' && error.keyword === 'minItems'))
+  assert.equal(validate({ ...device, materialsStatus: 'not_established',
+    curation: { ...device.curation, status: 'curated', notes: 'Exact implant composition remains unestablished.' } }), true, JSON.stringify(validate.errors))
+  assert.equal(validate({ ...device, materialsStatus: 'not_established',
+    curation: { ...device.curation, status: 'curated' } }), false)
   assert.equal(validate({ ...device, curation: { ...device.curation, status: 'curated' }, materials: [{
     name: 'Nitinol', role: 'Frame', category: 'frame', source: 'https://example.org/source',
   }] }), true, JSON.stringify(validate.errors))

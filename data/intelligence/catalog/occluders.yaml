@@ -321,7 +321,7 @@ versions:
   sourceRefs:
   - sourceId: src-amulet-ssed
     locator: Device and approval-order fields
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: ver-lambre
   familyId: family-lambre
   graphEntityId: dev-lambre
@@ -333,7 +333,7 @@ versions:
   sourceRefs:
   - sourceId: src-lambre-study
     locator: Device description ('Dispositivo Lambre®' section)
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: ver-ecliptis
   familyId: family-ecliptis
   graphEntityId: dev-ecliptis
@@ -345,7 +345,7 @@ versions:
   sourceRefs:
   - sourceId: src-ecliptis-510k
     locator: 510(k) Summary, Device Description
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: ver-amplatzer-pfo
   familyId: family-amplatzer-pfo
   graphEntityId: dev-amplatzer-pfo
@@ -356,7 +356,7 @@ versions:
   sourceRefs:
   - sourceId: src-amplatzer-pfo-ssed
     locator: Device and approval-order fields
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: ver-gore-cardioform-septal
   familyId: family-gore-cardioform
   graphEntityId: dev-gore-cardioform-septal
@@ -368,7 +368,7 @@ versions:
   sourceRefs:
   - sourceId: src-gore-cardioform-septal-ssed
     locator: Device Description and Indications for Use
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: ver-gore-cardioform-asd
   familyId: family-gore-cardioform
   graphEntityId: dev-gore-cardioform-asd
@@ -381,7 +381,7 @@ versions:
   sourceRefs:
   - sourceId: src-gore-cardioform-asd-decision
     locator: Approval order statement
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: ver-amplatzer-asd
   familyId: family-amplatzer-asd
   graphEntityId: dev-amplatzer-asd
@@ -393,7 +393,7 @@ versions:
   sourceRefs:
   - sourceId: src-amplatzer-aso-ssed
     locator: Device Description and Table 1
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: ver-amplatzer-piccolo
   familyId: family-amplatzer-piccolo
   graphEntityId: dev-amplatzer-piccolo
@@ -405,7 +405,7 @@ versions:
   sourceRefs:
   - sourceId: src-amplatzer-piccolo-decision
     locator: Approval order statement
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: ver-amplatzer-vsd
   familyId: family-amplatzer-vsd
   graphEntityId: dev-amplatzer-vsd
@@ -417,7 +417,7 @@ versions:
   sourceRefs:
   - sourceId: src-amplatzer-vsd-ssed
     locator: Device Description and General Information fields
-  reviewStatus: draft
+  reviewStatus: reviewed
 decisions:
 - id: decision-amulet
   identifier: P200049
@@ -435,7 +435,7 @@ decisions:
   sourceRefs:
   - sourceId: src-amulet-ssed
     locator: PDF p.1, General Information and Indications for Use
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: decision-amplatzer-pfo
   identifier: P120021
   rootIdentifier: P120021
@@ -452,7 +452,7 @@ decisions:
   sourceRefs:
   - sourceId: src-amplatzer-pfo-ssed
     locator: PDF p.1, General Information and Indications for Use
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: decision-gore-cardioform-septal-s044
   identifier: P050006/S044
   rootIdentifier: P050006
@@ -469,7 +469,7 @@ decisions:
   sourceRefs:
   - sourceId: src-gore-cardioform-septal-s044-decision
     locator: Approval order statement
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: decision-gore-cardioform-septal-s060
   identifier: P050006/S060
   rootIdentifier: P050006
@@ -486,7 +486,7 @@ decisions:
   sourceRefs:
   - sourceId: src-gore-cardioform-septal-ssed
     locator: PDF p.1, Indications for Use
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: decision-gore-cardioform-asd
   identifier: P050006/S071
   rootIdentifier: P050006
@@ -503,7 +503,7 @@ decisions:
   sourceRefs:
   - sourceId: src-gore-cardioform-asd-decision
     locator: Approval order statement
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: decision-amplatzer-asd
   identifier: P000039
   rootIdentifier: P000039
@@ -520,7 +520,7 @@ decisions:
   sourceRefs:
   - sourceId: src-amplatzer-aso-decision
     locator: Decision Date and Approval Order Statement fields
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: decision-amplatzer-piccolo
   identifier: P020024/S052
   rootIdentifier: P020024
@@ -537,7 +537,7 @@ decisions:
   sourceRefs:
   - sourceId: src-amplatzer-piccolo-decision
     locator: Approval order statement
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: decision-amplatzer-vsd
   identifier: P040040
   rootIdentifier: P040040
@@ -554,7 +554,7 @@ decisions:
   sourceRefs:
   - sourceId: src-amplatzer-vsd-ssed
     locator: PDF p.1, General Information and Indications and Usage
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: decision-ecliptis
   identifier: K254232
   rootIdentifier: K254232
@@ -571,7 +571,7 @@ decisions:
   sourceRefs:
   - sourceId: src-ecliptis-510k
     locator: PDF p.1, clearance letter; PDF p.5, 510(k) Summary
-  reviewStatus: draft
+  reviewStatus: reviewed
 - id: decision-watchman-flx-s035
   identifier: P130013/S035
   rootIdentifier: P130013
@@ -588,7 +588,7 @@ decisions:
   sourceRefs:
   - sourceId: src-watchman-flx-s035-ssed
     locator: PDF p.1, General Information
-  reviewStatus: draft
+  reviewStatus: reviewed
 specs:
 - version: ver-amulet
   category: laao-occluders

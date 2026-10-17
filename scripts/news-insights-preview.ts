@@ -1,5 +1,5 @@
 /** Serve only an ignored review copy; never change authored/public review states. */
-import { cpSync, existsSync, mkdirSync, readFileSync, statSync, writeFileSync, createReadStream } from 'node:fs'
+import { cpSync, copyFileSync, existsSync, mkdirSync, readFileSync, statSync, writeFileSync, createReadStream } from 'node:fs'
 import { createServer } from 'node:http'
 import { extname, join, resolve, sep } from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -7,7 +7,8 @@ import yaml from 'js-yaml'
 import type { GraphData, NewsItem } from '../src/types/entities'
 import { reviewStyles } from './render-news-insights'
 import type { RunManifest } from './news-insights-run'
-import { renderPreviews } from './newsletter-local'
+import { renderEditorials } from './render-editorials'
+import { wrapLocalArticlePage } from './local-article-shell'
 
 const escape = (value: string) => value.replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]!)
 
@@ -45,23 +46,41 @@ export function prepareReviewSite(date: string): string {
   const graph = JSON.parse(readFileSync(join(site, 'graph.json'), 'utf8')) as GraphData
   const articleItem = JSON.parse(readFileSync(join(runRoot, 'news-item.json'), 'utf8')) as NewsItem
   const news = yaml.load(readFileSync('data/news.yaml', 'utf8'), { schema: yaml.CORE_SCHEMA }) as NewsItem[]
-  const editorialDir = join(site, 'previews/newsletter')
-  renderPreviews({ outputDir: editorialDir, basePath: '/', generatedAt: date })
-  const spec = (yaml.load(readFileSync('data/editorial-issues.yaml', 'utf8')) as { slug: string; title: string; dek: string }[])[0]
-  const editorialDemo: NewsItem = {
-    id: `news-${date}-editorial-preview`, publishedAt: date, contentType: 'editorial', reviewStatus: 'draft',
-    title: `${spec.title} · local editorial preview`, summary: `${spec.dek} This existing specialty preview demonstrates the Editorial label; its review date is not a publication date.`,
-    sourceName: 'VISUALIZE-SH · preview', sourceUrl: `/previews/newsletter/${spec.slug}/index.html`,
-    topicTags: ['Editorial preview'], relevantNodeIds: ['dev-sapien-3'],
+  renderEditorials({ outputDir: site, includeDrafts: true })
+  const editorials = yaml.load(readFileSync('data/editorials/index.yaml', 'utf8')) as { newsId: string; slug: string }[]
+  const editorialUrls = new Map(editorials.map(entry => [entry.newsId, `/editorials/${entry.slug}/`]))
+  for (const entry of editorials) wrapLocalArticlePage(join(site, 'editorials', entry.slug), 'dist/index.html')
+  const insightsRoute = join(site, 'insights', date)
+  if (existsSync(join(insightsRoute, 'index.html'))) {
+    const insightsHtml = readFileSync(join(insightsRoute, 'index.html'), 'utf8')
+    writeFileSync(join(insightsRoute, 'content.html'), insightsHtml.replace(/<nav\b[^>]*>[\s\S]*?<\/nav>/i, ''))
+    copyFileSync('dist/index.html', join(insightsRoute, 'index.html'))
+  }
+  const articleDrafts = 'artifacts/articles/2026-09-28-laao-design-series/drafts'
+  const revision = join(articleDrafts, 'part-2-series-v5.html')
+  const seriesDraft = join(articleDrafts, 'series-draft-v5.html')
+  const hasSeriesDraft = existsSync(seriesDraft)
+  if (hasSeriesDraft) {
+    mkdirSync(join(site, 'review/laao-series-v5'), { recursive: true })
+    cpSync(seriesDraft, join(site, 'review/laao-series-v5/index.html'))
+  }
+  const hasPart2 = existsSync(revision)
+  if (hasPart2) {
+    mkdirSync(join(site, 'review/laao-part-2'), { recursive: true })
+    cpSync(revision, join(site, 'review/laao-part-2/index.html'))
   }
   graph.news = [
-    { ...articleItem, sourceUrl: `/insights/${date}/` }, editorialDemo,
-    ...news.filter(item => item.id !== articleItem.id).map(item => ({ ...item, title: item.reviewStatus === 'draft' ? `[DRAFT] ${item.title}` : item.title })),
+    { ...articleItem, sourceUrl: `/insights/${date}/` },
+    ...news.filter(item => item.id !== articleItem.id).map(item => ({
+      ...item,
+      sourceUrl: editorialUrls.get(item.id) ?? item.sourceUrl,
+      title: item.reviewStatus === 'draft' ? `[DRAFT] ${item.title}` : item.title,
+    })),
   ]
   graph.meta.newsCount = graph.news.length
   graph.meta.latestNewsDate = date
   writeFileSync(join(site, 'graph.json'), JSON.stringify(graph, null, 2) + '\n')
-  const banner = `<div id="local-insights-review">LOCAL DRAFT REVIEW · News Insights and an Editorial preview · <a href="/review.html">Review hub</a></div>`
+  const banner = `<div id="local-insights-review">LOCAL PREVIEW · <a href="/review.html">Review hub</a></div>`
   const bannerStyle = '<style>#local-insights-review{box-sizing:border-box;padding:10px 18px;background:#3b0b55;color:#fff;font:14px/20px Arial,sans-serif;min-height:40px;position:relative;z-index:9999}#local-insights-review a{color:#fff;font-weight:700;margin-left:12px}.app{height:calc(100dvh - 40px)!important}</style>'
   writeFileSync(join(site, 'index.html'), readFileSync(join(site, 'index.html'), 'utf8').replace('</head>', bannerStyle + '</head>').replace('<body>', '<body>' + banner))
   const prompt = readFileSync('prompts/news-insights.md', 'utf8')
@@ -70,7 +89,7 @@ export function prepareReviewSite(date: string): string {
   writeFileSync(join(site, 'article.yaml'), readFileSync(`data/news-insights/${date}.yaml`))
   writeFileSync(join(site, 'template.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Manual News Insights template</title><style>${reviewStyles}</style></head><body><main><nav><a href="/review.html">Review hub</a><a href="/insights/${date}/">Draft edition</a><a href="/template.md">Markdown source</a></nav><span class="badge">News Insights</span><h1>Manual generation template</h1><p class="dek">Format A shell · credible Format B connections · Format C close</p><p>Previous completed run through today. Usually two weeks; longer when the owner waits through a quiet period. No schedule.</p>${templateReadingView(prompt)}<h2>Structured article starter</h2><pre>${escape(starter)}</pre></main></body></html>`)
   const newsHref = `/?mode=news&newsFrom=${run.windowFrom}&newsTo=${run.windowTo}`
-  writeFileSync(join(site, 'review.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>News Insights · Local review</title><style>${reviewStyles}</style></head><body><main><span class="badge">News Insights</span><span class="review-state">LOCAL REVIEW · No publication</span><h1>A repeatable feature, one completed draft</h1><p class="dek">${run.windowFrom}–${run.windowTo} · Manually generated ${date}</p><div class="review-links"><a href="/template.html">1. Review the reusable template<span>Window rules, model workflow, article shell, visual/evidence checks.</span></a><a href="/insights/${date}/">2. Read the first draft<span>Concise analysis with internal Data links and a highlighted Atlas figure.</span></a><a href="${escape(newsHref)}">Inspect News cards<span>Single purple-and-white News Insights and Editorial keywords in their metadata rows.</span></a><a href="/article.yaml">Inspect authored copy<span>Structured draft with exact citation locators and review limits.</span></a></div><p class="scope">Draft content is included only in this ignored review-site copy. The Editorial card links an existing local specialty preview; its displayed date is a review date. No author review state, public payload, issue, schedule, or send is changed by this preview.</p></main></body></html>`)
+  writeFileSync(join(site, 'review.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>VISUALIZE-SH · Local review</title><style>${reviewStyles}</style></head><body><main><span class="badge">Local preview</span><span class="review-state">Nothing published or sent</span><h1>Editorial and News Insights</h1><p class="dek">Prepared ${date} · News coverage ${run.windowFrom}–${run.windowTo}</p><div class="review-links">${hasSeriesDraft ? '<a href="/review/laao-series-v5/">Review the v5 series draft<span>All four parts, consistent series lines, and the new Part 1 summary introduction. Current additions are light red.</span></a>' : ''}${editorials.map(entry => `<a href="/editorials/${escape(entry.slug)}/">Read LAAO Part 1<span>Reader edition · Editorial · dated ${date}. Parts 2–4 appear in the series contents without links.</span></a>`).join('')}${hasPart2 ? '<a href="/review/laao-part-2/">Review revised LAAO Part 2<span>V5 author draft, retaining the current v4-derived content.</span></a>' : ''}<a href="/insights/${date}/">Read News Insights<span>Delivery reliability and clinical endpoint interpretation, with an original comparison table.</span></a><a href="${escape(newsHref)}">Open News<span>Editorial and News Insights cards, plus the recent draft FDA notices.</span></a><a href="/?mode=atlas">Open Atlas<span>The small Editorial invitation appears after eight seconds and can be dismissed.</span></a><a href="/template.html">Review the Insights template<span>Generation workflow and structured article source.</span></a></div><p class="scope">Drafts are included only in this local review copy. Owner and factual approval remain pending. No origin push, public promotion, schedule, or newsletter delivery has occurred.</p></main></body></html>`)
   if (existsSync(join(runRoot, 'review.md'))) cpSync(join(runRoot, 'review.md'), join(site, 'review.md'))
   console.log(`Prepared ignored review site: ${site}`)
   return site

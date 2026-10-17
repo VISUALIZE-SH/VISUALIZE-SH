@@ -1,5 +1,5 @@
 # Historical LAA closure devices described in the 2018 CI Today spectrum article.
-# Every record is draft and bounded to its cited historical source; current commercial
+# each is bounded to its cited historical source. Current commercial
 # availability is intentionally not inferred from old regulatory or study material.
 observedAt: '2026-10-03'
 sources:
@@ -467,7 +467,7 @@ versions:
       - { sourceId: src-plaato-first-human, locator: "Abstract, Methods and results" }
       - { sourceId: src-plaato-feasibility, locator: "Abstract, Objectives and Results" }
       - { sourceId: src-plaato-ev3-10q-2006, locator: "MD&A, Other liquidity information: Appriva acquisition and September 27, 2005 discontinuation" }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-watchman-original
     familyId: family-watchman
     graphEntityId: dev-watchman-original
@@ -477,7 +477,7 @@ versions:
     summary: Legacy WATCHMAN implant authorized by the original FDA PMA in March 2015; distinct from FLX.
     sourceRefs:
       - { sourceId: src-watchman-original-fda, locator: "Decision Date and Approval Order Statement" }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-watchman-flx-2015
     familyId: family-watchman
     graphEntityId: dev-watchman-flx-2015
@@ -490,7 +490,7 @@ versions:
       - { sourceId: src-watchman-flx-early-10q-2016q1, locator: "Part I Item 2 MD&A, Interventional Cardiology (initial market release suspended)" }
       - { sourceId: src-watchman-flx-early-fsn, locator: "PDF p.1, FSN 91133341-FA opening paragraphs (embolization reports, removal of non-implanted devices)" }
       - { sourceId: src-watchman-flx-redesign-study, locator: "Design Modifications and discussion of 2015 CE version" }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-amplatzer-cardiac-plug
     familyId: family-amulet
     graphEntityId: dev-amplatzer-cardiac-plug
@@ -501,7 +501,7 @@ versions:
     sourceRefs:
       - { sourceId: src-acp-preclinical, locator: "Abstract, Methods and Results" }
       - { sourceId: src-acp-first-human, locator: "Abstract, Methods" }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-wavecrest
     familyId: family-wavecrest
     graphEntityId: dev-wavecrest
@@ -511,7 +511,7 @@ versions:
     summary: CE-marked LAA occluder as reported by its acquirer in 2015; present market status unverified.
     sourceRefs:
       - { sourceId: src-wavecrest-acquisition, locator: "Press release, opening and CE Mark paragraphs" }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-occlutech-laa-original
     familyId: family-occlutech-laa
     graphEntityId: dev-occlutech-laa-original
@@ -522,7 +522,7 @@ versions:
     sourceRefs:
       - { sourceId: src-occlutech-first-human, locator: "Abstract, Methods and Results" }
       - { sourceId: src-occlutech-2016-field-notice, locator: "PDF p.2, Problem description and Action taken" }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-occlutech-laa-redesigned
     familyId: family-occlutech-laa
     graphEntityId: dev-occlutech-laa-redesigned
@@ -532,7 +532,7 @@ versions:
     summary: Modified device evaluated in a 2021 porcine preclinical study; human use or present availability unverified.
     sourceRefs:
       - { sourceId: src-occlutech-plus-preclinical, locator: "Introduction and Device design" }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-atriclip
     familyId: family-atriclip
     graphEntityId: dev-atriclip
@@ -542,7 +542,7 @@ versions:
     summary: Epicardial surgical clip for LAA exclusion; 2024 IFU describes permanent implant materials and sizes.
     sourceRefs:
       - { sourceId: src-atriclip-ifu-2024, locator: Device description and sizing table }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-amulet-360
     familyId: family-amulet
     graphEntityId: dev-amulet-360
@@ -554,7 +554,7 @@ versions:
       - { sourceId: src-amulet-360-ce, locator: CE Mark announcement and device description }
       - { sourceId: src-amulet-360-product, locator: US investigational disclaimer }
       - { sourceId: src-amulet-360-sscp, locator: "PDF p.12, Section 3.2 Previous Generations or Variants" }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-claas
     familyId: family-claas
     graphEntityId: dev-claas
@@ -565,7 +565,7 @@ versions:
     sourceRefs:
       - { sourceId: src-claas-first-clinical, locator: Device description }
       - { sourceId: src-claas-investigational, locator: Physician trial information }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-laminar
     familyId: family-laminar
     graphEntityId: dev-laminar-laa
@@ -576,7 +576,7 @@ versions:
     sourceRefs:
       - { sourceId: src-laminar-first-human, locator: Device description }
       - { sourceId: src-laminar-trial-hold, locator: "Study status: overall status and why stopped" }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-omega-laa
     familyId: family-omega-laa
     graphEntityId: dev-omega-laa
@@ -586,7 +586,7 @@ versions:
     summary: Historical device; a November 2024 manufacturer field notice recalled all inventory over material degradation concerns.
     sourceRefs:
       - { sourceId: src-omega-field-notice, locator: "Field Safety Notice, reason and affected product" }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-lacbes
     familyId: family-lacbes
     graphEntityId: dev-lacbes
@@ -596,7 +596,7 @@ versions:
     summary: Lobe-and-disc LAA occluder described in a 2022 first clinical report; current availability unverified.
     sourceRefs:
       - { sourceId: src-lacbes-first-clinical, locator: Device and Methods sections }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-ultraseal-ii
     familyId: family-ultraseal
     graphEntityId: dev-ultraseal-ii
@@ -606,7 +606,7 @@ versions:
     summary: Revised Ultraseal with shorter flexible bulb described in a 2022 clinical study; current availability unverified.
     sourceRefs:
       - { sourceId: src-ultraseal-ii-study, locator: Device description and Methods }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-cardioblate-closure
     familyId: family-cardioblate-closure
     graphEntityId: dev-cardioblate-closure
@@ -617,7 +617,7 @@ versions:
     sourceRefs:
       - { sourceId: src-cardioblate-canines, locator: "Abstract, device design" }
       - { sourceId: src-cardioblate-trial, locator: Overall status and enrollment }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-sideris-patch
     familyId: family-sideris-patch
     graphEntityId: dev-sideris-patch
@@ -627,7 +627,7 @@ versions:
     summary: Historical balloon-delivered LAA patch investigated in the 2011 first-human report; current availability unverified.
     sourceRefs:
       - { sourceId: src-sideris-first-human, locator: "Abstract, Objectives and Background" }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-prolipsis
     familyId: family-sideris-patch
     graphEntityId: dev-prolipsis
@@ -637,7 +637,7 @@ versions:
     summary: Prolipsis is a named historical patch device; its exact design lineage, manufacturer, and current status remain unverified from primary sources.
     sourceRefs:
       - { sourceId: src-laao-citoday-2018, locator: Prolipsis paragraph }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-ultraseal
     familyId: family-ultraseal
     graphEntityId: dev-ultraseal
@@ -647,7 +647,7 @@ versions:
     summary: Original Ultraseal generation in the 2018 multicenter experience; separate from revised Ultraseal II.
     sourceRefs:
       - { sourceId: src-ultraseal-first-multicenter, locator: Abstract and device description }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-seala
     familyId: family-seala
     graphEntityId: dev-seala
@@ -659,7 +659,7 @@ versions:
       - { sourceId: src-seala-multicenter, locator: Abstract and device description }
       - { sourceId: src-laao-citoday-2018, locator: SeaLA paragraph }
       - { sourceId: src-seala-registry, locator: "Study record, Sponsor and Collaborators" }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-lefort
     familyId: family-lefort
     graphEntityId: dev-lefort
@@ -669,7 +669,7 @@ versions:
     summary: Historical Lefort occluder described in a 2017 original clinical comparison; later branded successors need separate review.
     sourceRefs:
       - { sourceId: src-lefort-original-study, locator: Device description }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-pfm-laa
     familyId: family-pfm-laa
     graphEntityId: dev-pfm-laa
@@ -679,7 +679,7 @@ versions:
     summary: Research-stage LAA device described in a 2012 preclinical technical presentation; current availability unverified.
     sourceRefs:
       - { sourceId: src-pfm-preclinical-presentation, locator: Device description }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-lariat
     familyId: family-lariat
     graphEntityId: dev-lariat
@@ -690,7 +690,7 @@ versions:
     sourceRefs:
       - { sourceId: src-lariat-original-510k, locator: Device name and decision }
       - { sourceId: src-lariat-ii-510k, locator: Indications for use }
-    reviewStatus: draft
+    reviewStatus: reviewed
   - id: ver-sierra
     familyId: family-sierra
     graphEntityId: dev-sierra
@@ -700,7 +700,7 @@ versions:
     summary: Epicardial-only percutaneous ligation evaluated in a seven-person first-human study; commercial status unverified.
     sourceRefs:
       - { sourceId: src-sierra-first-human, locator: Device description and Methods }
-    reviewStatus: draft
+    reviewStatus: reviewed
 decisions:
   - id: decision-watchman-original-p130013
     identifier: P130013
@@ -713,7 +713,7 @@ decisions:
     summary: Original US WATCHMAN LAA closure technology PMA, preceding WATCHMAN FLX supplement S035 in 2020.
     sourceRefs:
       - { sourceId: src-watchman-original-fda, locator: "Decision Date and Approval Order Statement" }
-    reviewStatus: draft
+    reviewStatus: reviewed
 specs:
   - version: ver-plaato
     category: laao-occluders

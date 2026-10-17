@@ -1,4 +1,4 @@
-# Source-located additional Atlas relationships. All additions remain draft.
+# Source-located additional Atlas relationships. source limits remain explicit.
 # schema/relationship.schema.json.
 - id: rel-sapien3-tavi
   source: dev-sapien-3
@@ -8,7 +8,7 @@
     SAPIEN 3 model 9600TFX is a transcatheter aortic valve used in TAVR. This historical PMA does not
     establish current labeling for all Ultra or RESILIA variants.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031B.pdf
@@ -28,7 +28,7 @@
     CoreValve/Evolut lineage is used for TAVR; P130021/S174 specifically covers PRO+, FX and FX+ redo-TAVR use
     in its defined population. No cross-generation specification transfer.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174B.pdf
@@ -48,7 +48,7 @@
     SIEGEL is an investigational transcatheter aortic valve replacement platform; this is a procedure
     association, not commercial authorization.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/
@@ -66,7 +66,7 @@
     MitraClip repairs the mitral valve by percutaneous leaflet approximation. This record describes the
     original P100009 system; it does not transfer dimensions or outcomes to G4.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.accessdata.fda.gov/cdrh_docs/pdf10/P100009B.pdf
@@ -86,7 +86,7 @@
     PASCAL Precision mitral leaflet repair in the P220003 degenerative-MR population; procedure classification
     only, not authorization of every PASCAL generation.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.accessdata.fda.gov/cdrh_docs/pdf22/P220003B.pdf
@@ -104,7 +104,7 @@
   relationship: used_in
   scope: TriClip G4 transcatheter edge-to-edge repair for the symptomatic severe-TR population defined by P230007.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf
@@ -124,7 +124,7 @@
     PASCAL system used for transcatheter tricuspid valve repair in the single-arm CLASP TR early-feasibility
     study. Investigational US study context; not a US marketing-authorization claim.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://pubmed.ncbi.nlm.nih.gov/37137586/
@@ -143,7 +143,7 @@
     EVOQUE transcatheter replacement of the native tricuspid valve in P230013; indication and size scope
     remain decision-specific.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230013B.pdf
@@ -163,7 +163,7 @@
     Tendyne transcatheter mitral replacement in symptomatic severe mitral dysfunction associated with severe
     MAC, for patients unsuitable for surgery or TEER (P240042).
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042B.pdf
@@ -183,7 +183,7 @@
     2020 WATCHMAN FLX percutaneous LAA closure in the nonvalvular-AF population defined by P130013/S035; no
     transfer to the 2015 FLX iteration or FLX Pro.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S035
@@ -201,7 +201,7 @@
     Amplatzer Amulet percutaneous LAA occlusion for the nonvalvular-AF population defined by P200049; no
     Amulet 360 claim.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf
@@ -222,7 +222,7 @@
     (MAC), in patients unsuitable for mitral surgery or TEER. This does not establish treatment of all MS
     etiologies.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042B.pdf
@@ -242,7 +242,7 @@
     PASCAL system studied for severe-or-greater TR in CLASP TR (NCT03745313). Single-arm early-feasibility
     cohort; no US approval or randomized comparative benefit inferred.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://pubmed.ncbi.nlm.nih.gov/37137586/
@@ -262,7 +262,7 @@
     the company or its TAVR business.
   eventDate: "2026-05-15"
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm
@@ -285,7 +285,7 @@
     Exercise depends on clinical/regulatory milestones and closing conditions; this is not acquisition of
     MiRus.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.sec.gov/Archives/edgar/data/885725/000088572526000041/bsx-20260518.htm
@@ -305,7 +305,7 @@
     equity control established.
   eventDate: 2026-01
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm
@@ -325,7 +325,7 @@
     be represented as an acquired Edwards subsidiary.
   eventDate: "2026-01-14"
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm
@@ -345,7 +345,7 @@
     the July 2024 option exercise.
   eventDate: "2024-08-19"
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm
@@ -366,7 +366,7 @@
   eventDate: "2025"
   notes: Exact 2025 completion month/day unspecified.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm
@@ -384,7 +384,7 @@
   scope: Corvia publicly names Edwards Lifesciences among its funders.
   notes: Undated disclosure; investment date, instrument and holding percentage unspecified.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: https://corviamedical.com/about-us/investors/
@@ -406,7 +406,7 @@
     Incubation/portfolio association; no equity percentage, completed investment transaction or acquisition
     inferred.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: >-
@@ -427,7 +427,7 @@
     Portfolio association only; T45 Fund-I is a distinct legal investor. Initial investment date and holding
     percentage unknown.
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-15"
   sources:
     - url: >-

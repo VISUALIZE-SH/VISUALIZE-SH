@@ -6,7 +6,7 @@ import type { GraphData } from '../src/types/entities'
 import type { RunManifest } from './news-insights-run'
 import { renderEdition, validateEdition, type InsightsEdition } from './render-news-insights'
 
-const edition = yaml.load(readFileSync('data/news-insights/2026-10-13.yaml', 'utf8')) as InsightsEdition
+const edition = { ...(yaml.load(readFileSync('data/news-insights/2026-10-13.yaml', 'utf8')) as InsightsEdition), reviewStatus: 'draft' as const }
 const run = { runDate: edition.runDate, windowFrom: edition.windowFrom, windowTo: edition.windowTo,
   candidateNewsIds: edition.selectedNewsIds } as RunManifest
 const graph = JSON.parse(readFileSync('public/graph.json', 'utf8')) as GraphData
@@ -32,13 +32,13 @@ test('draft rendering retains review scope, near-claim sources, contextual evide
   assert.ok(markdown.includes('[Data: AUTUS evidence](/?mode=data&version=ver-autus-size-adjustable'))
 })
 
-test('schema and semantic gates reject publication, wrong windows, uncited facts, and bad identity/source routes', () => {
+test('schema and semantic gates reject invalid review states, wrong windows, uncited facts, and bad identity/source routes', () => {
   const mutate = (change: (copy: InsightsEdition) => void) => { const copy = structuredClone(edition); change(copy); return copy }
-  assert.throws(() => validateEdition({ ...edition, reviewStatus: 'reviewed' }, run, graph, versions), /Invalid News Insights/)
+  assert.throws(() => validateEdition({ ...edition, reviewStatus: 'unknown' }, run, graph, versions), /Invalid News Insights/)
   assert.throws(() => validateEdition({ ...edition, windowFrom: '2026-10-01' }, run, graph, versions), /frozen manual run/)
   assert.throws(() => validateEdition({ ...edition, selectedNewsIds: ['news-outside'] }, run, graph, versions), /outside frozen/)
   assert.throws(() => validateEdition({ ...edition, relevantNodeIds: ['unknown'] }, run, graph, versions), /Unknown graph/)
-  assert.throws(() => validateEdition(mutate(e => e.closing.role = 'insight'), run, graph, versions), /consequential next/)
+  assert.throws(() => validateEdition(mutate(e => e.closing!.role = 'insight'), run, graph, versions), /consequential next/)
   assert.throws(() => validateEdition(mutate(e => e.sections[0].paragraphs[0].sourceIds = ['missing']), run, graph, versions), /Unknown source/)
   assert.throws(() => validateEdition(mutate(e => e.sections[0].paragraphs[0].sourceIds = []), run, graph, versions), /Factual paragraphs/)
   assert.throws(() => validateEdition(mutate(e => e.sections[1].table!.rows[0].cells.pop()), run, graph, versions), /row\/column/)
@@ -57,4 +57,17 @@ test('source-derived text is escaped rather than executed in local previews', ()
   assert.ok(html.includes('&lt;script&gt;unsafe()&lt;/script&gt; &amp; original text'))
   assert.ok(!html.includes('<img src=x>'))
   assert.ok(!html.includes('<script>'))
+})
+
+
+test('reviewed rendering omits draft markers and local review navigation', () => {
+  const approved = validateEdition({ ...edition, reviewStatus: 'reviewed' }, run, graph, versions)
+  const { html, markdown, newsItem } = renderEdition(approved)
+  assert.equal(newsItem.reviewStatus, 'reviewed')
+  assert.ok(!html.includes('LOCAL DRAFT'))
+  assert.ok(!html.includes('/review.html'))
+  assert.ok(!html.includes('/template.html'))
+  assert.ok(!html.includes('noindex'))
+  assert.ok(!markdown.includes('LOCAL DRAFT'))
+  assert.ok(html.includes('Full News window'))
 })
