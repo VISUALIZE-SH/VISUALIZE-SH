@@ -7,6 +7,8 @@ import type { ComparativeObservation } from '../../types/comparative'
 import type { EvidenceClaim, IntelligenceData } from '../../types/intelligence'
 import ComparisonMediaStrip from './ComparisonMediaStrip'
 import EvidenceReferences from './EvidenceReferences'
+import { deviceIllustrationFor } from '../../data/device-illustrations'
+import ProductThumbnail from './ProductThumbnail'
 
 interface Props {
   data: IntelligenceData
@@ -18,11 +20,6 @@ interface Props {
   onCompareCategoryChange: (categoryId: string) => void
   onCompareVersionIdsChange: (versionIds: string[]) => void
   onCompareConfigurationIdsChange: (configurationIds: string[]) => void
-}
-
-function assetPath(path: string): string {
-  const base = (import.meta as ImportMeta & { env?: { BASE_URL?: string } }).env?.BASE_URL ?? '/'
-  return `${base}${path.replace(/^\/+/, '')}`
 }
 
 function download(filename: string, content: string, type: string): void {
@@ -90,8 +87,9 @@ function ComparisonTable({ data, rows, versionIds, asOf }: { data: IntelligenceD
     <table className="intel-compare-table">
       <caption className="intel-visually-hidden">Device standard attributes by exact product version and selected configuration</caption>
       <thead><tr><th scope="col">Attribute</th>{versionIds.map(id => {
-        const thumb = thumbnailFor(data, id)
-        return <th scope="col" key={id}><span className="intel-product">{thumb ? <img className="intel-thumb" src={assetPath(thumb.assetPath)} alt={`${versionName(data, id)}: ${thumb.alt}`} /> : <span className="intel-thumb intel-thumb-empty" aria-hidden="true" />}<span className="intel-product-text">{versionName(data, id)}<span className="intel-compare-maker">{manufacturer(id)}</span></span></span></th>
+        const isDevice = data.versions.find(version => version.id === id)?.kind === 'device'
+        const thumb = isDevice ? deviceIllustrationFor(id) : thumbnailFor(data, id)
+        return <th scope="col" key={id}><span className="intel-product"><ProductThumbnail key={thumb?.assetPath ?? id} illustration={thumb} name={versionName(data, id)} isDevice={isDevice} /><span className="intel-product-text">{versionName(data, id)}<span className="intel-compare-maker">{manufacturer(id)}</span></span></span></th>
       })}</tr></thead>
       <tbody>
         <tr><th scope="row">US authorization</th>{versionIds.map(id => {
