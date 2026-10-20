@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict'
-import { readFileSync } from 'node:fs'
+import { mkdtempSync, readFileSync, rmSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
 import test from 'node:test'
 import Ajv from 'ajv'
 import addFormats from 'ajv-formats'
@@ -30,8 +32,12 @@ test('news schema accepts explicit categories and rejects unsupported values', (
 })
 
 test('both actual News surfaces badge only explicit Insights and Editorial cards', async () => {
-  const server = await createServer({ server: { middlewareMode: true, hmr: false, ws: false }, appType: 'custom' })
+  // A second server with different options invalidates a shared optimizer cache,
+  // breaking lazy Atlas imports in any running preview. Tests own their cache.
+  const cacheDir = mkdtempSync(join(tmpdir(), 'visualize-sh-news-vite-'))
+  let server: Awaited<ReturnType<typeof createServer>> | undefined
   try {
+    server = await createServer({ cacheDir, server: { middlewareMode: true, hmr: false, ws: false }, appType: 'custom' })
     const { default: NewsFeed } = await server.ssrLoadModule('/src/components/NewsFeed.tsx')
     const { default: NewsWorkspace } = await server.ssrLoadModule('/src/components/intelligence/NewsWorkspace.tsx')
     const workspaceProps = {
@@ -83,6 +89,6 @@ test('both actual News surfaces badge only explicit Insights and Editorial cards
     }))
     assert.ok(!longform.includes('>Open product profile</button>'), 'a cross-topic article does not infer one primary product')
   } finally {
-    await server.close()
+    try { await server?.close() } finally { rmSync(cacheDir, { recursive: true, force: true }) }
   }
 })

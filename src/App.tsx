@@ -18,6 +18,7 @@ import NewsletterSignup from './components/NewsletterSignup'
 import EditorialPrompt from './components/EditorialPrompt'
 import LocalArticlePage from './components/LocalArticlePage'
 import ProfileCatalog from './components/intelligence/ProfileCatalog'
+import AtlasGraphBoundary from './components/AtlasGraphBoundary'
 import { localArticleContentPath } from './editorial/local-articles'
 import './workspace.css'
 
@@ -342,9 +343,11 @@ export default function App() {
       </aside>
       {leftOpen && <div className="scrim" onClick={() => setLeftOpen(false)} />}
       <main className="canvas-wrap">
-        <Suspense fallback={<p className="workspace-loading">Loading graph…</p>}>
-          <GraphCanvas graph={graph} visibleIds={visibleIds} showDrafts={showDrafts} selectedId={selectedId} highlightedIds={workspace.atlasTopic ? atlasTopicMatchIds : NO_HIGHLIGHTS} layoutName={layoutName} accessibilityMode={accessibilityMode} darkMode={darkMode} onSelect={handleSelect} onCyReady={cy => { cyRef.current = cy }} />
-        </Suspense>
+        <AtlasGraphBoundary onOpenProfiles={() => navigate({ atlasView: 'profiles', atlasTopic: '' })}>
+          <Suspense fallback={<p className="workspace-loading" role="status">Loading graph…</p>}>
+            <GraphCanvas graph={graph} visibleIds={visibleIds} showDrafts={showDrafts} selectedId={selectedId} highlightedIds={workspace.atlasTopic ? atlasTopicMatchIds : NO_HIGHLIGHTS} layoutName={layoutName} accessibilityMode={accessibilityMode} darkMode={darkMode} onSelect={handleSelect} onCyReady={cy => { cyRef.current = cy }} />
+          </Suspense>
+        </AtlasGraphBoundary>
         <div className="canvas-disclaimer">{layoutName === 'islands' ? 'Stable condition islands · shared targets on node labels · select for sources' : 'Current landscape. Dated evidence and labeling are in Profiles.'}</div>
       </main>
       {selectedNode && <div className="atlas-detail-stack">

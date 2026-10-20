@@ -1,10 +1,12 @@
 import { Fragment, useState, type ReactNode } from 'react'
-import type { EvidenceClaim, EvidenceMedia, IntelligenceData, ProductVersion, SourceDocument } from '../../types/intelligence'
+import type { EvidenceClaim, IntelligenceData, ProductVersion, SourceDocument } from '../../types/intelligence'
 import type { SpecRow, SpecTable } from '../../data/spec-tables'
 import { approvalLabel, compactCitation, thumbnailFor } from '../../data/spec-tables'
 import { availabilityLabel, displayValue, formatEvidenceDate, sourceFor, sourceUrl } from '../../data/intelligence'
 import EvidenceReferences from './EvidenceReferences'
 import { MediaSourceLinks } from './EvidenceMediaGallery'
+import { deviceIllustrationFor, type DeviceIllustration } from '../../data/device-illustrations'
+import ProductThumbnail from './ProductThumbnail'
 
 /** One width scale for every Data table so columns line up down the page. */
 export const WIDTH = { product: 232, narrow: 104, cell: 152, wide: 304, sources: 168 } as const
@@ -17,7 +19,7 @@ export interface Column<Row> {
   cell: (row: Row, open: (focus: string) => void) => { content: ReactNode; gap?: boolean; title?: string }
 }
 
-export interface ProductInfo { name: string; maker: string; thumb?: EvidenceMedia; lifecycleStatus?: 'halted' | 'retired' | 'recalled'; lifecycleDetail?: string }
+export interface ProductInfo { name: string; maker: string; thumb?: DeviceIllustration; isDevice?: boolean; lifecycleStatus?: 'halted' | 'retired' | 'recalled'; lifecycleDetail?: string }
 
 function publicAssetPath(path: string): string {
   const base = (import.meta as ImportMeta & { env?: { BASE_URL?: string } }).env?.BASE_URL ?? '/'
@@ -28,7 +30,8 @@ export function productInfo(data: IntelligenceData, version: ProductVersion | un
   if (!version) return { name: fallback, maker: '' }
   const maker = data.families.find(family => family.id === version.familyId)?.manufacturer ?? ''
   const lifecycleVersion = version as ProductVersion & { lifecycleStatus?: ProductInfo['lifecycleStatus']; lifecycleDetail?: string }
-  return { name: version.name, maker, thumb: thumbnailFor(data, version.id), lifecycleStatus: lifecycleVersion.lifecycleStatus, lifecycleDetail: lifecycleVersion.lifecycleDetail }
+  const isDevice = version.kind === 'device'
+  return { name: version.name, maker, isDevice, thumb: isDevice ? deviceIllustrationFor(version.id) : thumbnailFor(data, version.id), lifecycleStatus: lifecycleVersion.lifecycleStatus, lifecycleDetail: lifecycleVersion.lifecycleDetail }
 }
 
 /** Distinct source documents for a set of source IDs, in first-seen order. */
@@ -49,12 +52,6 @@ function Citations({ sources }: { sources: SourceDocument[] }) {
     {shown.map(source => <li key={source.id}><a href={source.url} target="_blank" rel="noreferrer" title={source.title}>{compactCitation(source)}</a></li>)}
     {sources.length > shown.length && <li className="intel-cite-more" title={sources.slice(3).map(compactCitation).join('\n')}>+{sources.length - shown.length} more</li>}
   </ul>
-}
-
-function Thumb({ media, name }: { media?: EvidenceMedia; name: string }) {
-  return media
-    ? <img className="intel-thumb" src={publicAssetPath(media.assetPath)} alt={`${name}: ${media.alt}`} loading="lazy" />
-    : <span className="intel-thumb intel-thumb-empty" aria-hidden="true" />
 }
 
 /** Category-grouped table with the product in the first column and citations in the last. */
@@ -78,8 +75,7 @@ export function GroupedTable<Row>({ id, label, rows, columns, rowKey, product, s
     return all
   }, [])
   const width = WIDTH.product + WIDTH.sources + columns.reduce((sum, column) => sum + column.width, 0)
-  // Placeholders keep names aligned only where some product in this table has a figure.
-  const showThumbs = rows.some(row => product(row).thumb)
+  const showThumbs = rows.some(row => { const info = product(row); return info.isDevice || info.thumb })
   return <section className="intel-spec-group" id={`data-${id}`} aria-labelledby={`data-title-${id}`}>
     <h3 id={`data-title-${id}`}>{label} <span>{rows.length}</span></h3>
     <div className="intel-spec-scroll" role="region" aria-label={label} tabIndex={0}>
@@ -93,7 +89,7 @@ export function GroupedTable<Row>({ id, label, rows, columns, rowKey, product, s
           const key = rowKey(row)
           const isOpen = open?.key === key
           const info = product(row)
-          const name = <>{showThumbs && <Thumb media={info.thumb} name={info.name} />}<span className="intel-product-text"><span className="intel-spec-name">{info.name}{info.lifecycleStatus && <span className="intel-lifecycle-tag" title={info.lifecycleDetail}>{info.lifecycleStatus === 'halted' ? 'Halted' : info.lifecycleStatus === 'retired' ? 'Retired' : 'Recalled'}</span>}</span>{info.maker && <span className="intel-spec-maker">{info.maker}</span>}</span></>
+          const name = <>{showThumbs && <ProductThumbnail key={info.thumb?.assetPath ?? info.name} illustration={info.thumb} name={info.name} isDevice={info.isDevice} />}<span className="intel-product-text"><span className="intel-spec-name">{info.name}{info.lifecycleStatus && <span className="intel-lifecycle-tag" title={info.lifecycleDetail}>{info.lifecycleStatus === 'halted' ? 'Halted' : info.lifecycleStatus === 'retired' ? 'Retired' : 'Recalled'}</span>}</span>{info.maker && <span className="intel-spec-maker">{info.maker}</span>}</span></>
           return <Fragment key={key}>
             <tr className={isOpen ? 'is-open' : undefined}>
               <th scope="row">{detail
