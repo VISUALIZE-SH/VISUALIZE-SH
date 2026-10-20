@@ -165,7 +165,7 @@ export default function DataWorkspace({
     if (row.versionIds.length) return productInfo(data, versionById(data, row.versionIds[0]))
     const family = outcomeFamily(row)
     const familyVersion = family && data.versions.find(version => version.familyId === family.id)
-    return familyVersion ? productInfo(data, familyVersion) : { name: family ? `${family.name} family` : row.trial, maker: family ? `${family.manufacturer} · generation unresolved` : 'Product not resolved' }
+    return { name: family ? `${family.name} family` : row.trial, maker: family ? `${family.manufacturer} · generation unresolved` : 'Product not resolved', isDevice: familyVersion?.kind === 'device' }
   }
   const isTrialHalted = (trialId: string) => {
     const trialLifecycle = (data.trials.find(trial => trial.id === trialId) as (typeof data.trials)[number] & { lifecycleStatus?: string } | undefined)?.lifecycleStatus

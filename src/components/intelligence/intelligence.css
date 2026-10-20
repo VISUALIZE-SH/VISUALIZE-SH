@@ -336,8 +336,11 @@
 button.intel-product { padding-right: 14px !important; }
 button.intel-product::after { content: '▸'; position: absolute; top: 50%; right: 0; color: var(--text-3); transform: translateY(-50%); }
 .intel-spec-table tr.is-open button.intel-product::after { content: '▾'; }
-.intel-thumb { flex: none; box-sizing: border-box; width: 44px; height: 44px; padding: 2px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: #fff; object-fit: contain; }
+.intel-thumb { flex: none; box-sizing: border-box; width: 64px; height: 64px; padding: 2px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: #fff; object-fit: contain; }
 .intel-thumb-empty { background: var(--surface-2); }
+.intel-thumb-placeholder { padding: 7px; color: var(--text-3); background: var(--surface); }
+.intel-thumb-placeholder circle { fill: none; stroke: currentColor; stroke-width: 1.4; }
+.intel-thumb-placeholder text { fill: currentColor; font: 28px system-ui, sans-serif; }
 .intel-cite { display: grid; gap: 2px; margin: 0; padding: 0; list-style: none; font-size: var(--fs-11); }
 .intel-cite a { color: var(--link); text-decoration: none; }
 .intel-cite a:hover { text-decoration: underline; }
