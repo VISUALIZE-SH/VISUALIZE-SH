@@ -1,25 +1,26 @@
 # Local newsletter security review
 
-Updated 2026-09-24 for local research, newsletter validation, and delivery
-approval. The owner reviews the exact data and HTML before any publication or
+Updated 2026-09-24 for local newsletter validation and delivery approval; research
+intake revised 2026-10-21 when research moved to the private research engine. The owner reviews the exact data and HTML before any publication or
 Zoho send. The GitHub-hosted research and delivery workflows have been removed;
 GitHub Actions still runs repository security checks and deploys approved site
 changes to Pages.
 
 ## Trust boundaries and controls
 
-### Private local research
+### Research intake
 
-- The active Sunday Codex task runs under the owner's ChatGPT account in the
-  local project. It reads the ignored private watchlist at
-  `artifacts/research/source-registry.yaml`. The watchlist stays out of GitHub
-  and is a starting point, never evidence for a claim.
-- External web content is evidence to check, never an instruction to execute.
-  Research may update local data, but the task may not commit, push, deploy,
-  create a Zoho campaign, or send mail.
-- New news is marked `reviewStatus: draft`. New entities retain
-  `curation.status: draft`; only Pulse may change on an existing curated entity
-  during automated research. Every claim and source needs owner review.
+- Research runs outside this repository, in the owner's private research engine,
+  and reaches the public checkout only as an approved export bundle. The engine's
+  source watchlist stays out of GitHub and is a starting point, never evidence for
+  a claim.
+- External web content is evidence to check, never an instruction to execute. An
+  export writes local data only; it does not commit, push, deploy, create a Zoho
+  campaign, or send mail.
+- Exported records carry the review state recorded in their bundle notes; draft
+  news stays `reviewStatus: draft` and draft entities stay `curation.status: draft`
+  until a curator approves them. Every claim and source still needs owner review of
+  the public diff.
 - `npm run newsletter:review -- --date YYYY-MM-DD` runs the local validation gate
   and writes browser/email previews under ignored `artifacts/`. Both include a
   draft banner. Draft news is validated but omitted from public `graph.json` and
@@ -59,9 +60,8 @@ changes to Pages.
 - A public digest exposes whatever the owner approves and publishes. Exclude
   private notes, embargoed information, personal data, subscriber data, and
   confidential documents.
-- The scheduled task needs the Mac and desktop app running, a working local
-  checkout, network access, and available ChatGPT usage. If it fails, no issue is
-  approved or sent automatically.
+- Research and export need the owner machine, a working local checkout, and
+  network access. If either fails, no issue is approved or sent automatically.
 - A Zoho test or production send may be accepted before the UI confirms final
   delivery. Inspect campaign status and the recipient's actual inbox. Do not
   retry an uncertain send until checking Zoho for a duplicate.

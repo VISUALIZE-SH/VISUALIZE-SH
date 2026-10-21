@@ -25,9 +25,10 @@ dates never become publication dates.
 
 Three Luna agents reviewed the LAAO, valve/repair, and remaining therapy
 inventories, reusing existing authored research and public-source notes. The
-[per-therapy audit](audit/2026-10-04-reference-research.json) covers all 100
-therapies and records checked product documents, patent sources, qualifying
-numbers, and limitations. The final compiled inventory contains 782 sources,
+per-therapy audit covers all 100 therapies and records checked product
+documents, patent sources, qualifying numbers, and limitations. The audit file was
+removed from this repository on 2026-10-21 (WOR-60) and is archived in the private
+research engine. The final compiled inventory contains 782 sources,
 including 291 distinct patent records; counts in a product's Evidence section
 reflect only its linked documents.
 

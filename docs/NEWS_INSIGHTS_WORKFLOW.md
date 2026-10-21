@@ -11,8 +11,8 @@ in a quiet period the owner may wait about a month. There is no scheduled task.
 ## Template and sources of truth
 
 - [Generation template](../prompts/news-insights.md): the instructions an agent
-  should read and execute on a manual request, including Luna/Sol extraction,
-  connections, critique, and coordinator verification.
+  should read and execute on a manual request, including use of the engine's
+  evidence packet, critique, and coordinator verification.
 - [Article starter](../templates/news-insights/article.yaml): copy and fill after
   freezing a run; placeholders are intentionally not a validated edition.
 - `data/news-insights/YYYY-MM-DD.yaml`: authored draft copy, citations, source
@@ -79,13 +79,18 @@ npm run news-insights:prepare -- --date YYYY-MM-DD
 # Only for the owner's explicit overlapping October 2–15 coverage request:
 npm run news-insights:prepare -- --date 2026-10-15 --window-from 2026-10-02
 
-# After extraction, drafting, critique and coordinator factual checks:
+# After the engine evidence packet, drafting, critique and coordinator factual checks:
 npm run news-insights:render -- --date YYYY-MM-DD
 ```
 
 Preparation writes `artifacts/news-insights/YYYY-MM-DD/run.json`. Read its
-candidates and backfill IDs, then follow the generation template. Copy/fill the
-starter or use the prior edition’s structure without carrying forward its topics.
+candidates and backfill IDs. Evidence extraction and connection research do not run
+here: the owner requests the private research engine's News Insights evidence
+packet (run type `news-insights-evidence`) for that window and candidate list;
+follow its `AGENTS.md` and `docs/RUNBOOK.md` (on the owner machine it is checked
+out at `discovery-engine/`, ignored by Git). Then follow the generation template.
+Copy/fill the starter or use the prior edition’s structure without carrying
+forward its topics.
 
 Rendering validates schema, the frozen dates and selected IDs, source references,
 paragraph citation requirements, table dimensions, graph nodes, and exact-version
@@ -153,7 +158,8 @@ cross-class effectiveness comparison or an automatic graph-difference engine.
 
 The manual recurring template/run work belongs in `P-WOR-2` and links to the News
 UI contract deliverable in `P-WOR-1`. Standalone specialty articles remain in
-`P-WOR-3`. While the owner requires local-only work, pending proposals live in
+`P-WOR-3`. Evidence-packet requests are research issues in `P-WOR-4`
+(`visualize-sh-discovery-engine`). While the owner requires local-only work, pending proposals live in
 `docs/LINEAR_WORKFLOW.md`; search existing issues before any external filing.
 
 Focused checks cover boundary dates, monthly gaps, deduplication, reruns, backfills,

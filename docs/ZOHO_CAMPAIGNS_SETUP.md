@@ -1,7 +1,8 @@
 # Zoho Campaigns setup and manual delivery
 
-Weekly research, newsletter generation, validation, and approval happen in the
-owner's local Codex project. Zoho Campaigns imports the **approved public HTTPS
+Newsletter generation, validation, and approval happen in the owner's local
+project; approved weekly news arrives via an export from the private research
+engine (see `docs/LOCAL_NEWSLETTER_WORKFLOW.md`). Zoho Campaigns imports the **approved public HTTPS
 HTML as the campaign body** after local review. Subscribers receive a normal HTML
 email. The complete sequence is in `docs/LOCAL_NEWSLETTER_WORKFLOW.md`.
 
@@ -47,7 +48,7 @@ terms apply after a visitor follows that link.
 
 ## 2. Import an approved issue and test it
 
-The Sunday task produces ignored local previews and stops. After the owner
+The local review command produces ignored previews and stops. After the owner
 reviews the data and previews, `npm run newsletter:render -- --date YYYY-MM-DD`
 writes the approved browser and email HTML to `public/digests/`. Publish those
 files through the normal repository review path, then run the local exact-content

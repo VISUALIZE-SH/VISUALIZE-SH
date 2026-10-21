@@ -3,7 +3,8 @@
 Use this template when the owner asks to generate a **News Insights** edition.
 It is a repository workflow template, not a scheduled task or a personal artifact
 template skill. Read `docs/NEWS_INSIGHTS_WORKFLOW.md` and
-`docs/SOURCE_CURATION_POLICY.md` before starting.
+`docs/SOURCE_CURATION_POLICY.md` before starting. Evidence research is not done
+here; it arrives as the engine's evidence packet (below).
 
 ## Purpose and voice
 
@@ -46,38 +47,39 @@ Run `npm run news-insights:prepare -- --date YYYY-MM-DD`. With no completed loca
 history, add `--from YYYY-MM-DD`. Inspect the saved `run.json`, candidates, draft
 states, and backfill IDs. Exclude existing News Insights/Editorial records from
 the input so the feature cannot analyze itself. Public payloads exclude draft
-News; use authored YAML for this local research step.
+News; use authored YAML for this local step. The saved window and candidate IDs
+are the inputs to the evidence run below.
 
-## Extraction and connection work
+## Evidence packet from the research engine
 
-1. Reconcile the candidate list against publication/event/revision dates and
-   duplicate disclosures. A hosted copy or repeated press release is one source
-   event, not independent evidence. The ledger and repository are inventory,
-   never documentary confirmation.
-2. Delegate bounded extraction to **gpt-6-luna**: one document set and a concise
-   table of exact object/version, population, comparator, endpoint, follow-up,
-   denominator where needed, supported change, locator, and limits. Use medium
-   effort for evidence verification; escalate after one ambiguous pass.
-3. Delegate connection/design work to **gpt-6.1-sol**, normally medium effort:
-   propose two or three connections or contrasts with primary references, state
-   what becomes visible through the juxtaposition, and identify where the
-   analogy breaks. Ask for the strongest counterargument, not a novelty score.
-4. Use a separate **Sol critique** after a concrete draft exists, with high
-   effort for material evidence/generation/cohort risks. Reuse agents where
-   sensible, and keep at most two subagents active by default. If a specified
-   model is unavailable, disclose a suitable substitution rather than guessing.
-5. The coordinating agent checks material assertions in the actual eligible
-   documents, resolves differences, integrates once, and records what changed
+Extraction and connection research do not run in this repository. Use the private
+research engine's News Insights evidence packet (run type `news-insights-evidence`),
+which the owner requests for the saved window and candidate IDs. On the owner
+machine the engine is at `discovery-engine/`, ignored by this repository's Git;
+follow its `AGENTS.md` and `docs/RUNBOOK.md`. Elsewhere, stop and ask the owner.
+The packet holds the source events, an extraction table with exact identities and
+locators, context routes, zero to three connection candidates with counterarguments,
+next checks, and exclusions and rights, in
+`discovery-engine/runs/<date>-news-insights-evidence/evidence-packet.md`. It is
+input to drafting, never a source or an owner approval.
+
+1. The coordinating agent reads the packet and checks the material assertions it
+   will use against the cited documents. Draft only claims the packet supports with
+   a locator; keep sponsor claims attributed and unknowns explicit. A claim the
+   packet does not support, or a missing or stale packet, becomes an open question
+   rather than a sentence.
+2. After a concrete draft exists, run a separate critique pass with a different
+   agent (`gpt-6.1-sol`, high effort for material evidence, generation, or cohort
+   risks). Ask for the strongest counterargument and for unsupported or
+   over-generalized statements. If a specified model is unavailable, disclose a
+   suitable substitution.
+3. The coordinator resolves differences, integrates once, and records what changed
    after critique. Agent output is neither a source nor owner approval.
 
-Agent briefs must name one deliverable, files/record IDs, source policy, exact
-acceptance criteria, and a concise findings/citations/uncertainties/checks output.
-Keep shared YAML and any Linear mutations with the coordinator. Use only public
-or legitimately licensed documentary sources. Exclude recordings, interviews,
-podcasts, and transcripts. Verify sponsor clinical claims in original results
-documents; an announcement can establish only its attributed announcement scope
-when result documents are missing. Keep unavailable full text and unknowns
-explicit. Retain exact locators, dates, access, and identity boundaries.
+Keep shared YAML and any Linear mutations with the coordinator. Use at most two
+subagents. Recordings, interviews, podcasts, and transcripts are not evidence. An
+announcement establishes only its attributed announcement scope when result
+documents are missing.
 
 ## Selection and argument tests
 
@@ -127,7 +129,7 @@ the contract in `schema/news-insights.schema.json`.
    needed, exact claim/population/version at issue, and how the answer matters.
 6. **Evidence routes and scope:** citations near each material assertion; links
    to exact Atlas/Data context where supported; selected and unselected News IDs;
-   provenance and access limits in the review packet. Do not map a study to an
+   provenance and access limits in `review.md`. Do not map a study to an
    unverified product generation or treat current Data filters as historical
    database snapshots. Add `contextLinks` beside the paragraph/table row making
    a connection. Use `{label, versionId}` for an existing exact-version Data
@@ -154,9 +156,9 @@ clinical conclusions.
   Markdown and browser previews. A successful render checkpoints this manual
   run; failure/prepare/defer does not. Checkpoint means generation complete,
   not factual approval, publication, or delivery.
-- Assemble `review.md` with source-to-claim locators, extraction/connection/
-  critique results, exclusions, rights, and open questions. Record the actual
-  model work, not promised work.
+- Assemble `review.md` with source-to-claim locators, the evidence packet
+  reference, critique results, exclusions, rights, and open questions. Record the
+  actual model work, not promised work.
 - Review desktop/mobile layout, tables, figure labels, citations, evidence
   routes, and the existing **News Insights** metadata keyword highlighted with
   brand-purple background and bold white text. **Editorial** uses the same
@@ -175,4 +177,5 @@ clinical conclusions.
 
 “Generate the next News Insights locally using `prompts/news-insights.md`, from
 the last completed manual run through today. Use Format A, credible Format B
-connections, and a Format C close; show me the draft and review packet.”
+connections, and a Format C close; use the engine's evidence packet and show me
+the draft and review.md.”
