@@ -78,7 +78,7 @@ export function legacyGaps(record: Row): string[] {
     if (empty(record.nctId)) gaps.push('registry_id_not_verified')
     if (empty(record.timeline)) gaps.push('trial_start_not_recorded')
     else if (empty(row(record.timeline).source)) gaps.push('timeline_source_not_recorded')
-    if (empty(record.enrollment)) gaps.push('enrollment_not_recorded')
+    if (empty(record.enrollment) && empty(record.enrollmentCounts)) gaps.push('enrollment_not_recorded')
     if (empty(record.primaryEndpoint)) gaps.push('primary_endpoint_not_recorded')
     if (empty(record.outcomeSummary)) gaps.push('outcome_summary_not_recorded')
     const registryIds = legacySources(record).flatMap(source => source.url.match(/NCT\d{8}/g) ?? [])

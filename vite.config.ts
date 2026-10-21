@@ -11,7 +11,10 @@ export default defineConfig(({ command, isPreview }) => ({
   // through to index.html and the app renders a blank page.
   base: command === 'build' || isPreview ? (process.env.VITE_BASE ?? '/visualize-sh/') : '/',
   plugins: [react()],
-  server: { port: 5173, strictPort: true },
+  // Scan only the app entry for dependencies, and never watch the owner's local
+  // research checkout (ignored by Git) nested in this folder.
+  optimizeDeps: { entries: ['index.html'] },
+  server: { port: 5173, strictPort: true, watch: { ignored: ['**/discovery-engine/**'] } },
   build: {
     // Retain Vite 6's browser floor when changing bundlers.
     target: ['es2020', 'edge88', 'firefox78', 'chrome87', 'safari14'],

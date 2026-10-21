@@ -34,6 +34,7 @@ import type {
 import { atlasLifecycleFlags } from '../src/data/lifecycle'
 import { newsDateIssues } from './news-validation'
 import { relationshipEndpointIssues } from './graph-relationships'
+import { trialIssues } from './trial-validation'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = resolve(__dirname, '..')
@@ -42,7 +43,9 @@ const SCHEMA_DIR = join(ROOT, 'schema')
 const OUT_FILE = join(ROOT, 'public', 'graph.json')
 
 const errors: string[] = []
+const warnings: string[] = []
 const fail = (msg: string) => errors.push(msg)
+const warn = (msg: string) => warnings.push(msg)
 
 function checkPublicHttps(label: string, value: string | undefined) {
   if (!value || value.startsWith('PMID:')) return
@@ -212,6 +215,13 @@ for (const entity of all) {
       checkPublicHttps(`trial "${tr.id}".links[${index}].url`, link.url)
     }
     checkPublicHttps(`trial "${tr.id}".timeline.source`, tr.timeline?.source)
+    checkPublicHttps(`trial "${tr.id}".primaryAnalysis.source`, tr.primaryAnalysis?.source)
+    for (const [index, count] of (tr.enrollmentCounts ?? []).entries()) {
+      checkPublicHttps(`trial "${tr.id}".enrollmentCounts[${index}].source`, count.source)
+    }
+    const issues = trialIssues(tr)
+    for (const issue of issues.errors) fail(`trial "${tr.id}" ${issue}`)
+    for (const issue of issues.warnings) warn(`trial "${tr.id}" ${issue}`)
   }
 }
 
@@ -299,7 +309,12 @@ const nodes: { data: GraphNodeData }[] = all
     }
   })
 
-// --- bail out on any error -------------------------------------------------
+// --- report warnings, then bail out on any error --------------------------
+if (warnings.length > 0) {
+  console.warn(`\n! build-data: ${warnings.length} warning(s):\n`)
+  for (const w of warnings) console.warn(`  • ${w}`)
+  console.warn('')
+}
 if (errors.length > 0) {
   console.error(`\n✗ build-data failed with ${errors.length} error(s):\n`)
   for (const e of errors) console.error(`  • ${e}`)

@@ -20,7 +20,11 @@
       "description": "ClinicalTrials.gov identifier; used to build a deep link."
     },
     "phase": { "type": "string", "description": "e.g. 'Phase 3', 'Pivotal RCT', 'Registry'." },
-    "status": { "enum": ["recruiting", "active", "completed", "suspended", "terminated", "unknown"] },
+    "status": {
+      "enum": ["not-yet-recruiting", "recruiting", "active", "completed", "suspended", "terminated", "unknown"],
+      "description": "The registry's overall recruitment status as the registry states it (for example ClinicalTrials.gov overallStatus), not whether results are reported. Use primaryAnalysis for the latter; 'active' means active, not recruiting."
+    },
+    "primaryAnalysis": { "$ref": "#/definitions/primaryAnalysis" },
     "lifecycleStatus": { "enum": ["halted", "retired", "recalled"] },
     "lifecycleDetail": { "type": "string", "minLength": 1 },
     "conditions": {
@@ -33,7 +37,17 @@
       "minItems": 1,
       "items": { "type": "string", "pattern": "^(rx|dev|dig|proc)-[a-z0-9-]+$" }
     },
-    "enrollment": { "type": "integer", "minimum": 0 },
+    "enrollment": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Legacy headline enrollment count with unspecified basis (estimated, actual, randomized, ...). Superseded by enrollmentCounts when present."
+    },
+    "enrollmentCounts": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/definitions/enrollmentCount" },
+      "description": "Typed enrollment counts, each with its basis and source. Unique by basis plus scope (checked by the validator)."
+    },
     "year": { "type": "integer", "description": "Year of primary publication / key readout." },
     "primaryEndpoint": { "type": "string" },
     "outcomeSummary": { "type": "string" },
@@ -88,6 +102,37 @@
           }
         },
         "notes": { "type": "string" }
+      }
+    },
+    "primaryAnalysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "description": "Whether the primary-endpoint analysis has been reported (publication, registry results or regulatory summary). Follow-up may continue under an 'active' registry status.",
+      "properties": {
+        "status": { "enum": ["reported", "not-reported"] },
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "ISO date of the report. If precision is year or month, use the first day of the period."
+        },
+        "precision": { "enum": ["day", "month", "year"] },
+        "source": { "type": "string", "format": "uri", "pattern": "^https://" }
+      },
+      "dependencies": { "date": ["precision"] },
+      "if": { "properties": { "status": { "const": "reported" } }, "required": ["status"] },
+      "then": { "required": ["source"] }
+    },
+    "enrollmentCount": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["count", "basis", "source"],
+      "properties": {
+        "count": { "type": "integer", "minimum": 0 },
+        "basis": { "enum": ["estimated", "actual", "randomized", "analyzed", "treated"] },
+        "asOf": { "type": "string", "format": "date" },
+        "scope": { "type": "string", "minLength": 1, "description": "What the count covers or excludes, e.g. 'excludes roll-in'." },
+        "source": { "type": "string", "format": "uri", "pattern": "^https://" }
       }
     },
     "timeline": {
