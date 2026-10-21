@@ -12,14 +12,18 @@ Team: `Workspace-visualize-sh` (`WOR`), UUID
 
 | Project | ID | File work here |
 | --- | --- | --- |
-| [visualize-sh-webapp](https://linear.app/workspace-visualize-sh/project/visualize-sh-webapp-0301c63597f8) | `P-WOR-1` | News/Atlas/Data and graph UI, schemas, validation, catalogs, citations, factual research/curation, source infrastructure. |
+| [visualize-sh-webapp](https://linear.app/workspace-visualize-sh/project/visualize-sh-webapp-0301c63597f8) | `P-WOR-1` | News/Atlas/Data and graph UI, schemas, validation, catalogs, citations, curation and intake of reviewed export bundles, publication acceptance. |
 | [visualize-sh-newsletter](https://linear.app/workspace-visualize-sh/project/visualize-sh-newsletter-ed23ad28fbc0) | `P-WOR-2` | Recurring aggregated digest selection, templates, review handoff, signup/consent, sender setup, delivery, archive/cadence. |
 | [visualize-sh-editorials](https://linear.app/workspace-visualize-sh/project/visualize-sh-editorials-b9e8941e27d5) | `P-WOR-3` | Owner-authored specialty articles, editorials, research articles, and topical histories such as LAAO/LAAC. |
+| [visualize-sh-discovery-engine](https://linear.app/workspace-visualize-sh/project/visualize-sh-discovery-engine-80aed4911cdc) | `P-WOR-4` | Research and discovery: monitor and record-refresh runs, candidate discovery and enrichment, News Insights evidence packets, and the private research engine itself. |
 
 Use the existing plural `visualize-sh-editorials` name returned by Linear. An
 article may be linked from a digest without moving its research/writing issue to
-newsletter. Shared catalog research belongs in webapp; the article issue links
-to it. Split cross-project work by deliverable and add related/blocking links.
+newsletter. Research and discovery issues belong in `P-WOR-4`; the public data,
+schema, or UI change that publishes their result belongs in webapp, and the
+article issue links to either. Research does not run in this repository; it runs
+in the private engine (see `AGENTS.md`). Split cross-project work by deliverable
+and add related/blocking links.
 
 ## Issue contract
 
@@ -76,15 +80,16 @@ never place subscriber lists or credentials in Linear.
 
 `AGENTS.md` defines Luna/Sol routing and bounded delegation. Use the smallest
 available model and context that meet the task's verification requirements;
-escalate conflicting evidence and integration to Sol. Delegate only independent
-work whose value exceeds coordination cost. Models do not confer factual review
-or publication approval.
+escalate integration and review to Sol. Research routing lives in the engine.
+Delegate only independent work whose value exceeds coordination cost. Models do
+not confer factual review or publication approval.
 
-`SOURCE_CURATION_POLICY.md` governs all three projects: public or legitimately
-licensed documentary sources only; no podcasts/interviews/transcripts as factual
-evidence; licensed access does not grant redistribution rights. New claims remain
-draft and source located. Known gaps may remain unresolved after a documented
-search; the issue is complete only if its stated deliverable permits that outcome.
+`SOURCE_CURATION_POLICY.md` states the publication acceptance criteria for the
+public projects: public or legitimately licensed documentary sources only; no
+podcasts/interviews/transcripts as factual evidence; licensed access does not
+grant redistribution rights. New claims remain draft and source located. Known
+gaps may remain unresolved after a documented search; the issue is complete only
+if its stated deliverable permits that outcome.
 
 ## Initial backlog index
 

@@ -24,8 +24,6 @@
     "build:graph": "node --import tsx scripts/build-data.ts",
     "audit:database": "node --import tsx scripts/audit-database.ts",
     "build:intelligence": "node --import tsx scripts/build-intelligence.ts",
-    "evidence:snapshot": "node --import tsx scripts/snapshot-evidence.ts",
-    "evidence:snapshot-document": "node --import tsx scripts/snapshot-document.ts",
     "newsletter:local": "node --import tsx scripts/newsletter-local.ts",
     "news-insights:prepare": "node --import tsx scripts/news-insights-run.ts prepare",
     "news-insights:render": "node --import tsx scripts/render-news-insights.ts",
@@ -33,8 +31,7 @@
     "news-insights:serve": "node --import tsx scripts/news-insights-preview.ts serve",
     "test": "node --import tsx --test scripts/*.test.ts",
     "validate:local": "npm run build:data && npm run typecheck && npm run typecheck:scripts && npm test && npm run security:check && npm run newsletter:local -- --dry-run",
-    "test:intelligence": "node --import tsx --test scripts/intelligence*.test.ts",
-    "review:prepare": "npm run build:intelligence && node --import tsx scripts/review-evidence.ts"
+    "test:intelligence": "node --import tsx --test scripts/intelligence*.test.ts"
   },
   "dependencies": {
     "cytoscape": "^3.34.3",

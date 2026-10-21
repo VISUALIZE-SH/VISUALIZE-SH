@@ -81,14 +81,17 @@ Ten intelligence claims remain `not_publicly_disclosed`, six `not_yet_reviewed`;
 
 ## Review artifacts and reproducibility
 
-- [Full 1,769-record inventory](audit/2026-10-03-inventory.json): record origin, evidence URLs/locators, review state, and completeness gaps.
-- [Field-level authored changes](audit/2026-10-03-changes.json) and [starting counts](audit/2026-10-03-baseline-summary.json): compared with the initial working tree, preserving pre-existing owner edits.
-- [News resolutions](audit/2026-10-03-news-resolutions.json): applied fields, the Emboliner ID migration, and unresolved story-specific evidence.
-- Domain reports: [LAA/septal](audit/2026-10-03-laa.md), [valves](audit/2026-10-03-valves.md), [trials/conditions](audit/2026-10-03-trials-conditions.md), [remaining devices/drugs](audit/2026-10-03-remaining.md), [pilot/comparative](audit/2026-10-03-pilot-comparative.md), and [news](audit/2026-10-03-news.md).
+The working artifacts of this audit were removed from this repository on
+2026-10-21 (WOR-60) and are archived in the private research engine. They were:
 
-The domain reports and their findings JSON preserve intermediate review findings. This consolidated report and final authored YAML supersede candidate patches: later checks resolved SAPIEN XT indication scope, RESILIA sizes/sizing, Memo ring shapes, Navitor material wording, TriMemo's physical PDF locator, current TRICAVAL identity/status, CLOSURE-AF, and the Camzyos pediatric decision. Candidate material/generation transfers were not applied automatically.
+- The full 1,769-record inventory: record origin, evidence URLs/locators, review state, and completeness gaps.
+- Field-level authored changes and starting counts, compared with the initial working tree, preserving pre-existing owner edits.
+- News resolutions: applied fields, the Emboliner ID migration, and unresolved story-specific evidence.
+- Domain reports: LAA/septal, valves, trials/conditions, remaining devices/drugs, pilot/comparative, and news.
 
-The new `npm run audit:database -- --date 2026-10-03 --output docs/audit/2026-10-03-inventory.json` command reproduces the offline inventory. Generated graph/intelligence JSON is rebuilt from authored YAML.
+The archived domain reports and their findings JSON preserve intermediate review findings. This consolidated report and final authored YAML supersede candidate patches: later checks resolved SAPIEN XT indication scope, RESILIA sizes/sizing, Memo ring shapes, Navitor material wording, TriMemo's physical PDF locator, current TRICAVAL identity/status, CLOSURE-AF, and the Camzyos pediatric decision. Candidate material/generation transfers were not applied automatically.
+
+The `npm run audit:database -- --date 2026-10-03 --output <path>` command reproduces the offline inventory at any output path. Generated graph/intelligence JSON is rebuilt from authored YAML.
 
 Validation completed successfully:
 

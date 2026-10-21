@@ -45,7 +45,7 @@ npm run dev          # builds data, then starts Vite at http://localhost:5173
 New collaborators should read [`AGENTS.md`](AGENTS.md),
 [`docs/LINEAR_WORKFLOW.md`](docs/LINEAR_WORKFLOW.md), and
 [`docs/SOURCE_CURATION_POLICY.md`](docs/SOURCE_CURATION_POLICY.md) for project
-routing, Luna/Sol delegation, and eligible factual sources. Read **[`docs/HANDOFF.md`](docs/HANDOFF.md)** for the
+routing, delegation, and the acceptance criteria for factual records. Read **[`docs/HANDOFF.md`](docs/HANDOFF.md)** for the
 source-of-truth map, review boundaries, and a complete local verification path.
 The current checkout may contain uncommitted work; inspect `git status --short`
 before changing files.
@@ -67,9 +67,6 @@ npm run security:check                         # secrets, email/PII, tracking sc
 npm run build:intelligence                     # validate pilot -> public/intelligence.json
 npm run newsletter:local                       # local DRAFT REVIEW previews only
 npm run newsletter:local -- --dry-run          # no-write local preflight
-npm run review:prepare                         # assemble a local review packet
-npm run evidence:snapshot -- --help            # bounded official-source snapshot CLI
-npm run evidence:snapshot-document -- --help   # local document snapshot CLI
 ```
 
 ## How it works
@@ -149,29 +146,30 @@ data/news.yaml  ─────────────────────�
 Read **[`schema/DATA_DICTIONARY.md`](schema/DATA_DICTIONARY.md)** — it documents
 every field, the id conventions, and the rules. The short version:
 
-1. Edit the YAML in `data/` (add entities as `curation.status: draft` with
-   `sources`; add source-linked stories to `data/news.yaml`).
+1. Edit the YAML in `data/`, or review the records an export bundle wrote there
+   (entities are `curation.status: draft` with `sources`; source-linked stories
+   go in `data/news.yaml`).
 2. `npm run build:data` — must pass (it fails on bad data or dangling references).
 3. Review drafts in the app, promote to `curated`, commit, and deploy.
 
 For versioned evidence, run `npm run build:intelligence` and inspect the generated
-`public/intelligence.json`. Use `npm run review:prepare` to collect draft records,
-source changes, missing fields, unresolved mappings, and weekly proposals into a
-local review packet. Use `npm run newsletter:local` for the two local-only flagship
-previews; these remain outside `public/digests/` and are never sendable while
-their records are draft. See [`docs/LOCAL_IMPLEMENTATION_STATUS.md`](docs/LOCAL_IMPLEMENTATION_STATUS.md),
+`public/intelligence.json`. Use `npm run newsletter:local` for the two local-only
+flagship previews; these remain outside `public/digests/` and are never sendable
+while their records are draft. See [`docs/LOCAL_IMPLEMENTATION_STATUS.md`](docs/LOCAL_IMPLEMENTATION_STATUS.md),
 [`docs/EVIDENCE_PIPELINE.md`](docs/EVIDENCE_PIPELINE.md), and
 [`docs/NEWSLETTER_LOCAL_READINESS.md`](docs/NEWSLETTER_LOCAL_READINESS.md).
-For ownership boundaries and the end-to-end runtime/research flow, see
+For ownership boundaries and the end-to-end runtime and intake flow, see
 [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
-The Sunday Codex task researches a weekly evidence window in the local checkout,
-generates validated draft previews, and stops for owner review. Public rendering,
-publication, and Zoho delivery require separate local approval. See
-**[`docs/LOCAL_NEWSLETTER_WORKFLOW.md`](docs/LOCAL_NEWSLETTER_WORKFLOW.md)**,
+Research does not run in this repository. New factual records arrive as reviewed
+export bundles from the owner's private research engine, which writes approved
+records into the checkout uncommitted; validation, previews, and publication then
+run here as described above. The weekly digest is rendered from the approved
+`data/news.yaml` items into validated draft previews and stops for owner review.
+Public rendering, publication, and Zoho delivery require separate local approval.
+See **[`docs/LOCAL_NEWSLETTER_WORKFLOW.md`](docs/LOCAL_NEWSLETTER_WORKFLOW.md)**,
 **[`docs/ZOHO_CAMPAIGNS_SETUP.md`](docs/ZOHO_CAMPAIGNS_SETUP.md)**, and the
 security boundary in **[`docs/SECURITY_REVIEW.md`](docs/SECURITY_REVIEW.md)**.
-`ROUTINE.md` is the active scheduled-task contract.
 
 ## Design system
 
@@ -186,9 +184,9 @@ in `src/index.css` (`:root`); the categorical node palette lives in
 ```
 data/        YAML source of truth (legacy graph, news, and intelligence pilot)
 schema/      JSON Schemas + DATA_DICTIONARY.md
-scripts/     validation, evidence snapshots, review packets, digests, and Zoho tools
+scripts/     validation, digests, News Insights, and Zoho tools
 public/      graph.json + intelligence.json + public digest/preview HTML (generated)
-prompts/     bounded weekly research contract
+prompts/     News Insights generation template
 docs/        handoff guide, architecture, evidence rules, operations, and plans
 DESIGN.md    design system (tokens, type scale, palette)
 src/
