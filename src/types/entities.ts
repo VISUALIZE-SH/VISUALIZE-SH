@@ -9,13 +9,39 @@ export type TherapyType = 'pharmaceutical' | 'device' | 'digital' | 'procedure'
 export type RegulatoryStatus = 'approved' | 'investigational' | 'discontinued' | 'unknown'
 export type LifecycleStatus = 'halted' | 'retired' | 'recalled'
 
+/** The registry's overall status as the registry states it; not whether results are reported. */
 export type TrialStatus =
+  | 'not-yet-recruiting'
   | 'recruiting'
   | 'active'
   | 'completed'
   | 'suspended'
   | 'terminated'
   | 'unknown'
+
+export type PrimaryAnalysisStatus = 'reported' | 'not-reported'
+
+/** Whether the primary-endpoint analysis has been reported, independent of registry status. */
+export interface PrimaryAnalysis {
+  status: PrimaryAnalysisStatus
+  /** ISO date of the report; first day of the period when `precision` is month or year. */
+  date?: string
+  /** Required with `date`. */
+  precision?: TimelinePrecision
+  /** Public HTTPS source; required when `status` is `reported`. */
+  source?: string
+}
+
+export type EnrollmentBasis = 'estimated' | 'actual' | 'randomized' | 'analyzed' | 'treated'
+
+export interface EnrollmentCount {
+  count: number
+  basis: EnrollmentBasis
+  asOf?: string
+  /** What the count covers or excludes, e.g. "excludes roll-in". */
+  scope?: string
+  source: string
+}
 
 export type ResultStatus =
   | 'positive'
@@ -140,12 +166,16 @@ export interface Trial {
   name: string
   nctId?: string
   phase?: string
+  /** Registry overall status; see `primaryAnalysis` for whether results are reported. */
   status?: TrialStatus
+  primaryAnalysis?: PrimaryAnalysis
   lifecycleStatus?: LifecycleStatus
   lifecycleDetail?: string
   conditions: string[]
   therapies: string[]
+  /** Legacy headline count with unspecified basis; superseded by `enrollmentCounts` when present. */
   enrollment?: number
+  enrollmentCounts?: EnrollmentCount[]
   year?: number
   primaryEndpoint?: string
   outcomeSummary?: string

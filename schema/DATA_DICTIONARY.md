@@ -294,10 +294,12 @@ If a material applies only to one model in a family record, say so in `note`.
 | `name` | ✓ | acronym, e.g. `EXPLORER-HCM` |
 | `nctId` | | `NCT########` (exactly 3 letters + 8 digits). **Only add if verified** — a wrong NCT deep-links to the wrong study |
 | `phase` | | free text, e.g. `Phase 3`, `Pivotal RCT` |
-| `status` | | `recruiting` \| `active` \| `completed` \| `terminated` \| `unknown` |
+| `status` | | The registry's overall recruitment status, as the registry states it: `not-yet-recruiting` \| `recruiting` \| `active` (active, not recruiting) \| `completed` \| `suspended` \| `terminated` \| `unknown`. It does **not** say whether results are reported; use `primaryAnalysis` |
+| `primaryAnalysis` | | `{status, date?, precision?, source?}` — whether the primary-endpoint analysis has been reported (see below) |
 | `conditions` | ✓ | non-empty list of `cond-…` ids |
 | `therapies` | ✓ | non-empty list of therapy ids |
-| `enrollment` | | integer |
+| `enrollment` | | integer. Legacy headline count with unspecified basis; superseded by `enrollmentCounts` when present |
+| `enrollmentCounts` | | list of typed counts `{count, basis, asOf?, scope?, source}` (see below) |
 | `year` | | integer (key readout / publication year) |
 | `primaryEndpoint` | | |
 | `outcomeSummary` | | 1 sentence on the result |
@@ -307,6 +309,35 @@ If a material applies only to one model in a family record, say so in `note`.
 | `timeline` | | trial start date (`dateBasis: trial-start`) |
 | `pulse` | | 0–10 news-attention score (see above) |
 | `curation` | ✓ | see above |
+
+**`primaryAnalysis`** records whether the primary-endpoint analysis has been
+reported (publication, registry results, or regulatory summary), independent of
+`status`: follow-up commonly continues under an `active` registry status after the
+primary readout.
+
+| Field | Req | Notes |
+|---|---|---|
+| `status` | ✓ | `reported` \| `not-reported` |
+| `date` | | ISO date of the report; when `precision` is `month` or `year`, use the first day of the period (same convention as `timeline`) |
+| `precision` | with `date` | `day` \| `month` \| `year` |
+| `source` | when `reported` | public HTTPS URL for the report; the validator rejects `reported` without one |
+
+**`enrollmentCounts`** replaces the single `enrollment` number when the basis is
+known. Each entry states what was counted and where that came from:
+
+| Field | Req | Notes |
+|---|---|---|
+| `count` | ✓ | integer ≥ 0 |
+| `basis` | ✓ | `estimated` (registry target) \| `actual` \| `randomized` \| `analyzed` \| `treated` |
+| `asOf` | | ISO date the count was current |
+| `scope` | | what the count includes or excludes, e.g. `excludes roll-in` |
+| `source` | ✓ | public HTTPS URL |
+
+`basis` plus `scope` must be unique within a trial. Do not rewrite a legacy
+`enrollment` into a typed count without a source that states its basis. If both
+fields are present and `enrollment` equals none of the counts, the build prints a
+warning (not an error); reconcile or drop the legacy number. The detail panel
+shows the typed counts when present and the legacy number otherwise.
 
 Note: the therapy↔trial and condition↔trial links are recorded **only on the
 trial** (`therapies`, `conditions`). Do not add a reciprocal list on therapies or

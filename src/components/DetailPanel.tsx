@@ -9,6 +9,7 @@ import type {
 } from '../types/entities'
 import { GROUP_META, RELATIONSHIP_LABEL, REVERSE_RELATIONSHIP_LABEL } from '../graph/palette'
 import { lifecycleLabel } from '../data/lifecycle'
+import { enrollmentEntries, primaryAnalysisLabel, trialStatusLabel } from '../data/trial-display'
 import { formatTimelineDate, TIMELINE_BASIS_LABELS } from '../graph/timeline'
 import NewsFeed from './NewsFeed'
 import type { IntelligenceData } from '../types/intelligence'
@@ -327,10 +328,23 @@ function Facts({ e }: { e: Entity }) {
       const ctgov = e.nctId
         ? `https://clinicaltrials.gov/study/${e.nctId}`
         : null
+      const enrollment = enrollmentEntries(e)
       return (
         <>
           <Fact label="Phase" value={e.phase} />
-          <Fact label="Status" value={e.status} />
+          <Fact label="Status" value={trialStatusLabel(e.status)} />
+          <Fact
+            label="Primary analysis"
+            value={
+              e.primaryAnalysis?.source ? (
+                <a href={e.primaryAnalysis.source} target="_blank" rel="noopener noreferrer">
+                  {primaryAnalysisLabel(e.primaryAnalysis)}
+                </a>
+              ) : (
+                primaryAnalysisLabel(e.primaryAnalysis)
+              )
+            }
+          />
           {lifecycleLabel(e) && <Fact label="Lifecycle" value={<span className="badge lifecycle-status">{lifecycleLabel(e)}</span>} />}
           <Fact label="Lifecycle detail" value={e.lifecycleDetail} />
           <Fact label="Result" value={statusBadge(e.resultStatus, 'result')} />
@@ -338,7 +352,20 @@ function Facts({ e }: { e: Entity }) {
           <Fact label="Year" value={e.year} />
           <Fact
             label="Enrollment"
-            value={e.enrollment ? e.enrollment.toLocaleString() : undefined}
+            value={
+              enrollment.length
+                ? enrollment.flatMap(({ label, count }, index) => [
+                    index > 0 && ' · ',
+                    count ? (
+                      <a key={label} href={count.source} target="_blank" rel="noopener noreferrer" title={count.asOf ? `As of ${count.asOf}` : undefined}>
+                        {label}
+                      </a>
+                    ) : (
+                      label
+                    ),
+                  ])
+                : undefined
+            }
           />
           <Fact label="Primary endpoint" value={e.primaryEndpoint} />
           {e.outcomeSummary && <p className="desc">{e.outcomeSummary}</p>}
