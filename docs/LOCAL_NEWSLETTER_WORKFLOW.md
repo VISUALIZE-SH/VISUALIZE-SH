@@ -3,8 +3,8 @@
 ## Command summary
 
 Run these from the repository root, replacing `YYYY-MM-DD` with the issue date.
-The scheduled task runs the first command for the initial draft; rerun it after
-your edits.
+Run the first command for the initial draft once the approved news has arrived via
+engine export (step 1); rerun it after your edits.
 
 ```sh
 # Validate the data and create local draft browser and email previews for review.
@@ -19,17 +19,19 @@ npm run newsletter:render -- --date YYYY-MM-DD
 npm run newsletter:delivery:check -- --date YYYY-MM-DD
 ```
 
-Research, newsletter generation, validation, and the delivery decision happen in
-the owner's local Codex project. The active **Structural Heart Therapy Digest**
-task runs Sundays at 6 PM Pacific under the owner's ChatGPT account. The Mac and
-desktop app must be running, and the local checkout and ignored source watchlist
-must remain available. No OpenAI API key or private watchlist in GitHub is needed.
+Newsletter generation, validation, and the delivery decision happen in the
+owner's local project. Weekly research does not run here and nothing is scheduled:
+the owner asks the private research engine for it, and the approved news arrives
+as an export bundle. No OpenAI API key or private watchlist in GitHub is needed.
 
-## 1. Scheduled research stops at a draft
+## 1. Approved news arrives via engine export
 
-The task follows `ROUTINE.md`. It researches the preceding seven days, updates
-`data/news.yaml` and justified Pulse/entity drafts, and marks new news
-`reviewStatus: draft`. It then runs:
+The owner runs the weekly news research in the private research engine, which
+stops at a review packet for owner approval (see the engine's `docs/RUNBOOK.md`;
+on the owner machine the engine is at `discovery-engine/`, ignored by Git). The
+engine's `export-apply` step then writes the approved items into `data/news.yaml`,
+with any justified Pulse/entity updates, in this checkout, uncommitted. Each item
+carries the review state recorded in its bundle's PR notes. Then run:
 
 ```sh
 npm run newsletter:review -- --date YYYY-MM-DD
@@ -38,17 +40,17 @@ npm run newsletter:review -- --date YYYY-MM-DD
 The command validates data, references, tests, TypeScript, and the repository
 safety scan before writing browser and email previews to ignored
 `artifacts/newsletter-review/YYYY-MM-DD/`. The previews contain a prominent
-**DRAFT REVIEW — DO NOT SEND** banner. Draft news is excluded from the public
-`graph.json` feed and from normal digest rendering. The task reports its changes
-and stops. It never sends Gmail or Zoho mail, creates a campaign, commits,
-pushes, opens a PR, or deploys.
+**DRAFT REVIEW — DO NOT SEND** banner, and news still marked `reviewStatus: draft`
+is excluded from the public `graph.json` feed and from normal digest rendering.
+Neither the export nor this command sends Gmail or Zoho mail, creates a campaign,
+commits, pushes, opens a PR, or deploys.
 
 ## 2. Approve the data and public issue locally
 
 In Codex, inspect `git diff` for every changed data file and generated
 `public/graph.json`, open both local previews, and check each claim against its
 linked source. Remove rejected items and mark accepted news
-`reviewStatus: reviewed`. Review any proposed entity as a draft and keep private
+`reviewStatus: reviewed` if it is not already. Review any proposed entity as a draft and keep private
 notes, embargoed information, subscriber data, and credentials out of the public
 files. Run `npm run newsletter:review -- --date YYYY-MM-DD` again after edits.
 
@@ -63,7 +65,7 @@ The render command reruns the validation gate, writes sendable HTML to
 HTML and the whole diff, then ask Codex to commit the approved changes and push
 them to `origin/main`. A PR is optional if the repository permits direct pushes.
 GitHub Pages hosts the public site; its deployment workflow runs when approved
-changes reach `main`. The scheduled task never performs these publication steps.
+changes reach `main`. The export step never performs these publication steps.
 
 ## 3. Check deployment, then approve delivery locally
 
