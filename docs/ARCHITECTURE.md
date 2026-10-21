@@ -64,19 +64,20 @@ versions, cohorts, arms, decisions, lineage, dates, and missingness must agree.
 Add a semantic rule when a structurally valid record could still make an unsafe
 or misleading association.
 
-## Research and review boundaries
+## Export intake and review boundaries
 
-The weekly Codex task researches in the saved local project. It reads the private
-watchlist from ignored `artifacts/research/`, updates `data/news.yaml` with draft
-items, and builds ignored newsletter review previews. Draft news is excluded from
-the public compiled graph and normal digest renderer. The task stops for source
-and content review. After the owner approves the exact issue locally, a separate
-command validates and renders public HTML. Delivery requires a deployed HTML
-match and a separate local approval before a manual Zoho Campaigns send. See
-`docs/LOCAL_NEWSLETTER_WORKFLOW.md` for the steps. The watchlist is operational
-research strategy, not public application data or evidence by itself.
+Research does not run in this repository. Factual changes arrive as reviewed
+export bundles from the owner's private research engine. On the owner machine the
+engine's `export-apply` step writes the approved records into this checkout,
+uncommitted, and leaves the validation, previews, and publication below to this
+repository. New news arrives as `reviewStatus: draft`; draft news is excluded from
+the public compiled graph and normal digest renderer, and ignored newsletter review
+previews show it for source and content review. After the owner approves the exact
+issue locally, a separate command validates and renders public HTML. Delivery
+requires a deployed HTML match and a separate local approval before a manual Zoho
+Campaigns send. See `docs/LOCAL_NEWSLETTER_WORKFLOW.md` for the steps. Source
+acceptance criteria are in `docs/SOURCE_CURATION_POLICY.md`.
 
-Official PDFs and API snapshots also land under ignored `artifacts/evidence/`.
 Public images may be derived from a reviewed public document only when the media
 record retains the exact document source and page/figure locator. Extraction is a
 review step; the application never scrapes or downloads documents at runtime.
@@ -88,7 +89,7 @@ When adding a feature, identify its layer first:
 - broad entity or relationship: graph YAML and graph schema;
 - dated/version-specific assertion: intelligence YAML and intelligence schema;
 - public presentation: a mode component consuming compiled data;
-- discovery or monitoring: ignored artifact plus human review, not direct publish;
+- discovery or monitoring: the private research engine and its export bundle, with human review, not direct publish;
 - shareable UI choice: workspace URL state and a round-trip test;
 - color or surface: semantic theme token plus light/dark contrast check.
 

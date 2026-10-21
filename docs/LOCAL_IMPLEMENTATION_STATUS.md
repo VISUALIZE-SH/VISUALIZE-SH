@@ -54,9 +54,6 @@ two flagship review previews from these records:
 npm run build:intelligence
 npm run newsletter:local -- --base /
 npm run newsletter:local -- --dry-run
-npm run review:prepare
-npm run evidence:snapshot -- --source fda-pma --id P999999S001
-npm run evidence:snapshot-document -- --help
 ```
 
 The two preview issues are written outside the sendable digest tree at
@@ -64,7 +61,7 @@ The two preview issues are written outside the sendable digest tree at
 ONLY; DO NOT SEND** and their paths are excluded from the normal weekly delivery
 workflow. `docs/NEWSLETTER_LOCAL_READINESS.md` documents the preview
 and preflight behavior. `docs/EVIDENCE_PIPELINE.md` documents deterministic
-compilation, immutable local evidence snapshots, and the review packet.
+compilation, export intake, and the official-document media workflow.
 
 The implementation maps to the approved phases as follows:
 
@@ -74,7 +71,7 @@ The implementation maps to the approved phases as follows:
 | 1. Provenance and identity | Implemented through the intelligence schema, semantic validation, source locators, review status, legacy graph crosswalks, and deterministic compilation. | Draft records remain separate from approved claims. |
 | 2. Atlas profiles and lineage | Implemented for the app’s family/version profiles, dated events, indications, and typed lineage edges. | Pilot breadth and exact product mappings remain incomplete. |
 | 3. Trial and Data comparison | Implemented for cohorts, endpoints, readouts, outcomes, denominators, effect uncertainty, explicit missingness, an exact-version attribute matrix, and bounded exact-size sizing/delivery observations for aortic TAVR valves. | No claim is promoted by the UI; pilot comparative observations are unreviewed. Clinical outcomes are not placed in the attribute matrix. |
-| 4. Source change proposals | Implemented locally with bounded official-source snapshots, immutable document snapshots, draft queues, and `review:prepare`. | This does not run a continuous monitor or silently apply proposals. |
+| 4. Source change proposals | Moved to the private research engine (WOR-60). Snapshots, change queues, and review packets are produced there; this repository accepts reviewed export bundles. | No continuous monitor runs here, and no proposal is applied silently. |
 | 5. Digital extension and editorial launch | Implemented as the FEops/PREDICT-LAA pilot subject and two local flagship previews. | Full clinical curation, broader digital coverage, and production editorial launch remain manual work. |
 
 Remaining work includes source-by-source review and promotion, exact generation or
@@ -103,11 +100,7 @@ Final local verification on September 21, 2026 passed:
   their container.
 - Actual Chrome downloads of filtered CSV and JSON: two PREDICT-LAA primary-arm
   rows retain 41.8% and 28.9%, source locators, and unresolved build mapping.
-- Live public FDA `P140031/S010` and ClinicalTrials.gov `NCT04180605` GET captures
-  into ignored `artifacts/evidence/`. The registry's `UNKNOWN` status and estimated
-  enrollment remain registry observations, separate from publication results.
 - Repeated compilation and preview generation preserve deterministic content.
-  `review:prepare` assembles 96 draft records without applying changes.
 
 ## Device comparison update — September 22, 2026
 
@@ -175,9 +168,7 @@ FDA documents, except three CC BY publication figures. Sheath sizes for APTURE,
 V-Wave Ventura, Cardioband, and the Amplatzer PFO/Piccolo remain explicit gaps.
 
 The news feed gained 17 items (valvular, non-valvular/HF, and university or
-engineering research); the private watchlist now lists 131 sources in 15
-categories, including university department news/publication pages. Verified
-corrections were applied to curated atlas entries (aficamten approval,
+engineering research). Verified corrections were applied to curated atlas entries (aficamten approval,
 finerenone and vutrisiran labels, SAPIEN M3 and Tendyne approvals, Trilogy and
 Melody dates, Amplatzer VSD pathway, CardioMEMS HERO, Gore/Conformal), each
 recorded in `curation.notes`.
@@ -189,9 +180,9 @@ Nothing was committed or pushed.
 
 ## Local weekly newsletter switch — September 24, 2026
 
-The Sunday Codex task now researches in the saved local project and stops after
-validation and draft previews. Its former Gmail delivery instruction was removed.
-New weekly news uses `reviewStatus: draft`; the public graph and normal digest
+Weekly research now runs locally and stops after validation and draft previews;
+its former Gmail delivery instruction was removed (research later moved to the
+private research engine, WOR-60). New weekly news uses `reviewStatus: draft`; the public graph and normal digest
 exclude draft news while the ignored `artifacts/newsletter-review/` previews
 display it with a **DO NOT SEND** banner. The old GitHub research and Zoho send
 workflows are removed. Local public rendering reruns validation, and a separate
@@ -202,3 +193,19 @@ The old npm shortcuts for API research and programmatic Zoho sends are removed.
 `npm run validate:local` passed 65 tests, both TypeScript checks, schema builds,
 and the security scan. `VITE_BASE=/ npm run build` passed. No campaign was
 created or sent, and no subscriber data or private watchlist was published.
+
+## Research moved to the private engine — October 21, 2026 (WOR-60)
+
+The research workflow scripts (weekly research, source and document snapshots,
+review packets), the weekly research prompt and `ROUTINE.md`, and the dated
+research working logs were removed from this repository; the history is archived
+in the private research engine. Documents that published records cite remain.
+`AGENTS.md`, the source policy, the data dictionary, and the handoff and workflow
+documents now route research to the engine and describe the export intake:
+approved records arrive as a reviewed bundle written uncommitted into this checkout,
+then follow the normal validation, preview, and publication path. The source policy
+is reduced to publication acceptance criteria.
+
+`npm run validate:local` (131 tests, both TypeScript checks, data builds, security
+scan, newsletter dry run) and `VITE_BASE=/ npm run build` passed on the edited
+branch. No schedule, publication, or send was created.

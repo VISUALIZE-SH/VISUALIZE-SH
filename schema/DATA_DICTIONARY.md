@@ -1,7 +1,8 @@
 # VISUALIZE-SH — Data Dictionary & Authoring Guide
 
 This is the **contract** for the data layer. Read it fully before adding or editing
-data — whether you are a human curator or an automated update routine.
+data, or before reviewing an export bundle that does. Research method lives in the
+private research engine; this file defines only what the public data may contain.
 
 The graph is built from four entity YAML files plus a news feed in `data/`. Each
 file is a **YAML list**. Entities reference each other **by `id`**; the build step
@@ -57,7 +58,7 @@ Required fields are `id`, `publishedAt`, `title`, `summary`, `sourceName`,
 id; correct copy in place but never reuse an id for a different story. Sources
 must be canonical public HTTPS URLs. `relevantNodeIds` must be non-empty and every
 id must already exist in the entity files; the build fails if a target is missing.
-New research starts with `reviewStatus: draft`. Draft news stays in the local
+New news starts with `reviewStatus: draft`. Draft news stays in the local
 tracked YAML during review but is omitted from compiled `graph.news` and the
 normal public digest. After checking the source and approving the issue locally,
 set accepted items to `reviewStatus: reviewed`; remove rejected items. Older items
@@ -80,11 +81,11 @@ authoritative source as `sourceUrl`, and put up to five useful independent or
 primary corroborating citations in `additionalSources`; do not duplicate the
 primary URL there.
 
-For the weekly routine, append each selected item to this file and retain older
-items as feed history. Favor the original press release, regulator, journal, or
-trial registry over an aggregator. Each item should be independently useful, short,
-and source-faithful; a news item is not a substitute for updating a clinical claim
-in an entity's curation block.
+Append each selected item to this file and retain older items as feed history.
+Favor the original press release, regulator, journal, or trial registry over an
+aggregator. Each item should be independently useful, short, and source-faithful;
+a news item is not a substitute for updating a clinical claim in an entity's
+curation block.
 
 ---
 
@@ -119,8 +120,10 @@ curation:
   notes: "..."           # optional free text (e.g. what to verify)
 ```
 
-- **An automated routine must only create entities with `status: draft`** and must
-  not flip anything to `curated`. Promotion to `curated` is a human action.
+- **Entities an agent adds are created with `status: draft`**, and an agent never
+  flips anything to `curated`. Promotion to `curated` is a human action. An export
+  bundle's records carry the state recorded in its PR notes after owner approval
+  in the engine; the public diff review still applies.
 - Drafts render with a dashed outline and can be hidden with the "Show drafts"
   filter, so unreviewed data is always visually distinct.
 - Always set `lastUpdated` to the date of the edit and add `sources`.
@@ -151,9 +154,9 @@ How to score it (rough guide):
 | 0–1 (or omit) | Historical or low-attention |
 
 `pulse` is meant to be **refreshed on a cadence** — it reflects attention *now*, so
-the update routine should re-score existing entities as the news cycle moves, not
-just set it once. Lower a score when a topic goes quiet; raise it on fresh news.
-Keep scores **relative to each other** so the graph reads sensibly.
+existing entities are re-scored as the news cycle moves, not just set once. Lower
+a score when a topic goes quiet; raise it on fresh news. Keep scores **relative
+to each other** so the graph reads sensibly.
 
 ---
 
@@ -373,9 +376,9 @@ The build derives directed edges from these fields (and only these):
    `conditions`.
 2. Set `resultStatus` and a one-line `outcomeSummary`.
 3. If the readout changes approval status, update the therapy's
-   `regulatoryStatus`/`regulatoryDetail` — but if you are an automated routine,
-   leave the therapy `status: curated` untouched and instead add a
-   `curation.notes` flag describing the suggested change for human review.
+   `regulatoryStatus`/`regulatoryDetail` — but if the change is not yet
+   curator-reviewed, leave the therapy `status: curated` untouched and instead
+   add a `curation.notes` flag describing the suggested change for human review.
 
 ---
 
@@ -396,7 +399,7 @@ A green run prints node/edge/draft counts. The build must be green before commit
 
 ---
 
-## Hard rules for an automated update routine
+## Hard rules for draft and non-curator edits
 
 1. Only **add** entities or **append** fields; never delete curated entities.
 2. New/changed entities you author get `curation.status: draft`.

@@ -1,6 +1,6 @@
 # Evidence pipeline
 
-The evidence pipeline compiles a bounded, human-authored YAML collection into the public intelligence payload and can capture review-only changes from two official APIs. It does not publish news, update curated YAML, monitor continuously, or schedule itself.
+The evidence pipeline compiles a bounded, human-authored YAML collection into the public intelligence payload. It does not publish news, update curated YAML, monitor continuously, or schedule itself. Evidence gathering, source snapshots, and monitoring happen in the owner's private research engine, not in this repository.
 
 ## Curated data build
 
@@ -39,65 +39,18 @@ The compiler sorts identified record arrays and object keys before serialization
 
 `0` remains a valid reported numeric value. Missing values omit `value` and use one of `not_publicly_disclosed`, `not_yet_reviewed`, `not_applicable`, or `conflicting`; the compiler rejects a hidden value on those states.
 
-## Local evidence snapshots
+## Export intake
 
-The snapshot command supports only FDA PMA and ClinicalTrials.gov. Without `--fetch`, it uses clearly synthetic local fixtures and performs no network access:
+An approved export bundle from the private research engine reaches this repository as additions to the authored YAML: news items, graph entities, source-scoped relationships, and new `data/intelligence/catalog/<topic>.yaml` fragments. On the owner machine the engine (checked out at `discovery-engine/`, ignored by this repository's Git) writes the records into the checkout uncommitted, and refuses a dirty tree. Intake then follows the normal path: rebuild the payloads, review the YAML and generated JSON diff against [the source policy](SOURCE_CURATION_POLICY.md), and commit through a reviewed pull request.
 
-```sh
-node --import tsx scripts/snapshot-evidence.ts --source fda-pma --id P999999S001
-node --import tsx scripts/snapshot-evidence.ts --source ctgov --id NCT99999999
-```
-
-Use a specific local response with `--fixture path/to/response.json`. Use `--retrieved-at` to make a replay's acquisition time explicit. The default outputs are:
-
-- immutable snapshots: `artifacts/evidence/snapshots/<source>/<IDENTIFIER>/<sha256>.json`
-- draft queue: `artifacts/evidence/review-queue.json`
-
-The SHA-256 digest is calculated from canonical JSON response content, independent of object key order. A repeated response reuses the content-addressed snapshot and adds no proposal. A changed response is normalized to a small set of decision or study fields, compared with the latest prior snapshot, and added once to the queue with `status: DRAFT` and `kind: normalized_api_change`. Changes are field-level paths such as `$.enrollment.count`; additions and removals retain an explicit `after` or `before` value. Raw responses and prior snapshots remain intact.
-
-The queue is a discovery aid. A reviewer must confirm the official detail page and supporting decision, label, SSED, protocol, or results document before editing curated intelligence or creating news. The command refuses YAML and news queue targets.
-
-## Explicit official API reads
-
-Network access occurs only when `--fetch` is present:
-
-```sh
-node --import tsx scripts/snapshot-evidence.ts --source fda-pma --id P140031S010 --fetch
-node --import tsx scripts/snapshot-evidence.ts --source ctgov --id NCT03904147 --fetch
-```
-
-Fetch mode issues credential-free `GET` requests only to these allowlisted endpoints:
-
-- `https://api.fda.gov/device/pma.json`
-- `https://clinicaltrials.gov/api/v2/studies/<NCT_ID>`
-
-Redirects are rejected, responses are capped at 5 MB, and requests time out after 20 seconds. The FDA API is a discovery source; reconcile a candidate against the decision-specific FDA page and posted documents. ClinicalTrials.gov provides current registry state, so each retrieval is stored as a dated local observation rather than treated as a complete revision history.
-
-There is intentionally no live monitor or schedule. Run the command manually or from a separately reviewed workflow when a bounded source needs checking.
-
-## Already-downloaded public documents
-
-Decision PDFs and other public FDA or ClinicalTrials.gov documents can change independently of normalized API metadata. Capture a local file with its explicit official source URL:
-
-```sh
-node --import tsx scripts/snapshot-document.ts \
-  --id P140031S010-order \
-  --source-url https://www.accessdata.fda.gov/cdrh_docs/example.pdf \
-  --file /path/to/already-downloaded-public-document.pdf
-```
-
-This command never fetches. It accepts a regular local PDF, HTML, JSON, XML, or text file only when the source URL is public HTTPS on an allowlisted FDA or ClinicalTrials.gov host. It stores the original bytes and immutable acquisition metadata under `artifacts/evidence/snapshots/documents/<IDENTIFIER>/`, keyed by the file's SHA-256 digest.
-
-When bytes change, both versions remain available and the shared queue receives one `DRAFT` proposal with `kind: document_content_changed`, the prior and current hashes, and a manual-review instruction. It deliberately emits no field or clinical semantic diff. A reviewer must compare the retained files and identify whether the change is substantive. Identical reruns create neither another snapshot nor another proposal. Licensed or private source URLs are rejected, and there is no `--fetch` mode.
-
-`npm run review:prepare` includes both API and document proposal kinds in the local evidence review packet without applying either kind.
+Intake does not approve publication. Each record arrives with the review state its bundle assigns, draft records stay draft until curator review, and a later source change opens a review task rather than silently updating an approved fact. Raw responses, document snapshots, review queues, and licensed text stay in the engine and out of Git.
 
 ## Verification
 
 Run the focused suite and script typecheck with:
 
 ```sh
-node --import tsx --test scripts/intelligence-validation.test.ts scripts/intelligence-snapshot.test.ts
+node --import tsx --test scripts/intelligence-validation.test.ts
 npm run typecheck:scripts
 node --import tsx scripts/build-intelligence.ts --output /tmp/visualize-sh-intelligence.json
 ```
@@ -107,9 +60,7 @@ Recommended package scripts are:
 ```json
 {
   "build:intelligence": "node --import tsx scripts/build-intelligence.ts",
-  "test:intelligence": "node --import tsx --test scripts/intelligence*.test.ts",
-  "evidence:snapshot": "node --import tsx scripts/snapshot-evidence.ts",
-  "evidence:snapshot-document": "node --import tsx scripts/snapshot-document.ts"
+  "test:intelligence": "node --import tsx --test scripts/intelligence*.test.ts"
 }
 ```
 

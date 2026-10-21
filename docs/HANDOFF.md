@@ -7,8 +7,10 @@ the lockfile are used in GitHub Actions.
 Read [`../AGENTS.md`](../AGENTS.md), [`LINEAR_WORKFLOW.md`](LINEAR_WORKFLOW.md),
 and [`SOURCE_CURATION_POLICY.md`](SOURCE_CURATION_POLICY.md) for contributor
 rules. Track app/catalog work, recurring digest operations, and owner-authored
-articles in their respective existing Linear projects. The source policy applies
-to all three; podcasts and interviews are not factual evidence.
+articles in their respective existing Linear projects; research and discovery
+issues go to `visualize-sh-discovery-engine` (`P-WOR-4`). The source policy states
+the acceptance criteria for published records; podcasts and interviews are not
+factual evidence.
 
 ## First local run
 
@@ -34,7 +36,7 @@ on someone else's behalf without reviewing the diff.
 
 | Need | Source to edit | Check and generated result |
 | --- | --- | --- |
-| Broad entity, graph relationship, or weekly news | `data/{conditions,therapies,companies,trials,news}.yaml` | `npm run build:graph` → `public/graph.json`; rules in `schema/DATA_DICTIONARY.md` |
+| Broad entity, graph relationship, or news | `data/{conditions,therapies,companies,trials,news}.yaml` | `npm run build:graph` → `public/graph.json`; rules in `schema/DATA_DICTIONARY.md` |
 | Source-scoped procedure use, target, or corporate relationship | `data/relationships.yaml` | Same graph build; independent edge review state, provenance, and typed endpoints in `schema/relationship.schema.json` / `scripts/graph-relationships.ts` |
 | Exact product version, claim, trial result, or dated event | `data/intelligence/pilot.yaml` | `npm run build:intelligence` → `public/intelligence.json`; schema and semantic validator in `scripts/intelligence/validation.ts` |
 | Exact-size comparison observation | `data/intelligence/comparative-pilot.yaml` | Same intelligence build; comparison rules in `docs/COMPARATIVE_DATA_MODEL.md` |
@@ -69,13 +71,14 @@ nodes and the light relationship styling remain enabled. See
 
 ## Review and publishing boundaries
 
-- `npm run review:prepare` creates a local review packet from draft evidence and
-  source-change proposals. FDA and ClinicalTrials.gov snapshots under ignored
-  `artifacts/evidence/` are discovery inputs, not automatic edits to curated YAML.
-- The active Sunday Codex task reads the private watchlist only from ignored
-  `artifacts/research/source-registry.yaml`, researches through the ChatGPT
-  account, and updates local data. It does not use the dormant direct API
-  research script or an OpenAI API key.
+- Research does not run in this repository. Factual changes arrive as reviewed
+  export bundles from the owner's private research engine, checked out on the
+  owner machine at `discovery-engine/` (ignored by this repository's Git; its
+  `AGENTS.md` and `docs/RUNBOOK.md` govern research requests, and elsewhere you
+  stop and ask the owner). Its `export-apply` step writes the approved records
+  into this checkout uncommitted and refuses a dirty tree. Review the public diff
+  and regenerated JSON, run the gates above, then commit and open the PR. An
+  export carries review states; it does not approve publication or a send.
 - `npm run newsletter:review -- --date YYYY-MM-DD` validates changes and renders
   draft browser/email previews under ignored `artifacts/newsletter-review/`.
   New news remains `reviewStatus: draft` until a curator approves it.
@@ -114,5 +117,4 @@ Zoho for an already created or delivered campaign.
 - `docs/LOCAL_IMPLEMENTATION_STATUS.md`: dated implementation and verification
   record. `docs/DEVICE_COMPARISON_PLAN.md` and
   `docs/VISUALIZE_SH_NEWS_ATLAS_DATA_PLAN.md` are design history; check the code and
-  status record for what is implemented now. `ROUTINE.md` is the active local
-  Sunday task contract.
+  status record for what is implemented now.
