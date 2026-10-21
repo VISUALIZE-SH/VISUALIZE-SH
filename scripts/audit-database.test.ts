@@ -25,3 +25,9 @@ test('invalid calendar dates fail before any inventory is read', () => {
   assert.throws(() => auditDatabase('/does-not-exist', '2026-02-30'), /valid YYYY-MM-DD/)
   assert.throws(() => auditDatabase('/does-not-exist', '2026-13-01'), /valid YYYY-MM-DD/)
 })
+
+test('typed enrollment counts satisfy the enrollment gap', () => {
+  assert.ok(legacyGaps({ type: 'trial' }).includes('enrollment_not_recorded'))
+  assert.ok(!legacyGaps({ type: 'trial', enrollment: 40 }).includes('enrollment_not_recorded'))
+  assert.ok(!legacyGaps({ type: 'trial', enrollmentCounts: [{ count: 40, basis: 'actual', source: 'https://example.org/registry' }] }).includes('enrollment_not_recorded'))
+})
