@@ -7,7 +7,7 @@
   </a>
 </p>
 
-<p align="center"><strong>Structural heart intelligence</strong> · <a href="https://visualize-sh.com/">visualize-sh.com</a></p>
+<p align="center"><strong>Structural heart design intelligence</strong> · <a href="https://visualize-sh.com/">visualize-sh.com</a></p>
 
 VISUALIZE·SH is a free, source-linked map of structural heart and heart-failure
 therapy: the conditions, the devices, drugs, digital therapies and procedures that
