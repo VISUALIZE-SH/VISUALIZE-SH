@@ -899,6 +899,28 @@
     },
     {
       "entityIds": [
+        "dev-avatar-valve-reconstruction"
+      ],
+      "id": "bib-graph-dev-avatar-valve-reconstruction",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-graph-6cc149b09b6daad4"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-graph-cf7692e1c070261b"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-graph-06b10d4f541e39b6"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
         "dev-cardioband"
       ],
       "id": "bib-graph-dev-cardioband",
@@ -1315,6 +1337,32 @@
         {
           "locator": "Related trial timeline: COSIRA-II",
           "sourceId": "src-graph-31325f9dea09bdb3"
+        }
+      ],
+      "versionIds": []
+    },
+    {
+      "entityIds": [
+        "dev-corveus-gsn-catheter"
+      ],
+      "id": "bib-graph-dev-corveus-gsn-catheter",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-graph-3d05cf33dc5aa276"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-graph-edec118bd7b001d2"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-graph-3f2bb88546c84f81"
+        },
+        {
+          "locator": "Therapy research sources",
+          "sourceId": "src-graph-9c33eda41a7d97d9"
         }
       ],
       "versionIds": []
@@ -3104,7 +3152,7 @@
         "dev-pascal"
       ],
       "id": "bib-graph-dev-pascal",
-      "reviewStatus": "reviewed",
+      "reviewStatus": "draft",
       "sourceRefs": [
         {
           "locator": "Therapy information links",
@@ -3161,6 +3209,10 @@
         {
           "locator": "Related trial: CLASP TR Early Feasibility Study",
           "sourceId": "src-graph-67ffbb715765cf12"
+        },
+        {
+          "locator": "Related trial timeline: CLASP TR Early Feasibility Study",
+          "sourceId": "src-graph-aef7ae131b69f886"
         },
         {
           "locator": "News: News Insights | October 3–16, 2026",
@@ -45005,6 +45057,15 @@
     },
     {
       "access": "public",
+      "id": "src-graph-06b10d4f541e39b6",
+      "kind": "other",
+      "publisher": "ebi.ac.uk",
+      "retrievedAt": "2026-10-21",
+      "title": "[Source document: ebi.ac.uk, fullTextXML]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13615604/fullTextXML"
+    },
+    {
+      "access": "public",
       "id": "src-graph-07310905e82b771d",
       "kind": "manufacturer",
       "publisher": "Abbott",
@@ -45783,6 +45844,15 @@
     },
     {
       "access": "public",
+      "id": "src-graph-3d05cf33dc5aa276",
+      "kind": "other",
+      "publisher": "api.nsf.gov",
+      "retrievedAt": "2026-10-21",
+      "title": "[Source document: api.nsf.gov, awards.json]",
+      "url": "https://api.nsf.gov/services/v1/awards.json?id=2213155&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName,abstractText"
+    },
+    {
+      "access": "public",
       "id": "src-graph-3d78bd67a658d1f7",
       "kind": "other",
       "publisher": "jstage.jst.go.jp",
@@ -45798,6 +45868,15 @@
       "retrievedAt": "2026-07-08",
       "title": "ACACIA-HCM (NCT06081894)",
       "url": "https://clinicaltrials.gov/study/NCT06081894"
+    },
+    {
+      "access": "public",
+      "id": "src-graph-3f2bb88546c84f81",
+      "kind": "other",
+      "publisher": "corveusmedical.com",
+      "retrievedAt": "2026-10-21",
+      "title": "[Source document: corveusmedical.com, home]",
+      "url": "https://www.corveusmedical.com/home"
     },
     {
       "access": "public",
@@ -46678,6 +46757,15 @@
     },
     {
       "access": "public",
+      "id": "src-graph-6cc149b09b6daad4",
+      "kind": "other",
+      "publisher": "avatarmedtech.com",
+      "retrievedAt": "2026-10-21",
+      "title": "[Source document: avatarmedtech.com]",
+      "url": "https://www.avatarmedtech.com/"
+    },
+    {
+      "access": "public",
       "id": "src-graph-6d346c0abcdcc48d",
       "kind": "other",
       "publisher": "Bristol Myers Squibb",
@@ -47502,6 +47590,15 @@
     },
     {
       "access": "public",
+      "id": "src-graph-9c33eda41a7d97d9",
+      "kind": "publication",
+      "publisher": "pmc.ncbi.nlm.nih.gov",
+      "retrievedAt": "2026-10-21",
+      "title": "[Source document: pmc.ncbi.nlm.nih.gov, PMC11911643]",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11911643/"
+    },
+    {
+      "access": "public",
       "id": "src-graph-9d350df0875e3f7d",
       "kind": "other",
       "publisher": "abbott.com",
@@ -48323,6 +48420,15 @@
     },
     {
       "access": "public",
+      "id": "src-graph-cf7692e1c070261b",
+      "kind": "other",
+      "publisher": "ebi.ac.uk",
+      "retrievedAt": "2026-10-21",
+      "title": "[Source document: ebi.ac.uk, fullTextXML]",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13476999/fullTextXML"
+    },
+    {
+      "access": "public",
       "id": "src-graph-cfb33797b8de2ffb",
       "kind": "registry",
       "publisher": "ClinicalTrials.gov",
@@ -48659,6 +48765,15 @@
       "retrievedAt": "2026-10-03",
       "title": "[Source document: ir.cytokinetics.com, default.aspx]",
       "url": "https://ir.cytokinetics.com/press-releases/press-release-details/2024/Cytokinetics-Announces-Start-of-COMET-HF-a-Confirmatory-Phase-3-Clinical-Trial-of-Omecamtiv-Mecarbil-in-Patients-with-Symptomatic-Heart-Failure-with-Severely-Reduced-Ejection-Fraction-12-03-2024/default.aspx"
+    },
+    {
+      "access": "public",
+      "id": "src-graph-edec118bd7b001d2",
+      "kind": "other",
+      "publisher": "corveusmedical.com",
+      "retrievedAt": "2026-10-21",
+      "title": "[Source document: corveusmedical.com]",
+      "url": "https://www.corveusmedical.com/"
     },
     {
       "access": "public",

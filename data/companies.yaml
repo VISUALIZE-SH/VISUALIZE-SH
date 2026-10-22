@@ -1241,3 +1241,47 @@
     notes: >-
       T45 Labs release dated 2026-09-29: opening partnership paragraphs and About T45 Labs portfolio
       paragraph. No legal fund entity, ownership percentage or investment date inferred.
+
+- id: co-avatar-medtech
+  type: company
+  name: AVaTAR MedTech
+  hq: Buenos Aires, Argentina
+  website: https://www.avatarmedtech.com/
+  description: >-
+    AVaTAR MedTech develops AVaTAR (Aortic Valve Trileaflet Autologous Reconstruction), a surgical method and set of
+    single-use instruments that the company says reconstruct the aortic or pulmonary valve from the patient's own tissue
+    in children and adults. A 2025 surgical-society meeting abstract reports the technique with prototype devices in
+    seven children with severe aortic regurgitation.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.avatarmedtech.com/
+      - https://www.avatarmedtech.com/contact
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13615604/fullTextXML
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13476999/fullTextXML
+    notes: >-
+      Product description is the company's own wording (sponsor claim). Location is the address on the company contact
+      page; legal entity and incorporation are not established. The abstract is a preliminary meeting abstract whose
+      authors include the company's chief scientific officer per the 2026 JTCVS Open disclosure.
+- id: co-corveus-medical
+  type: company
+  name: Corveus Medical
+  hq: Houston, Texas, USA
+  website: https://www.corveusmedical.com/
+  description: >-
+    Corveus Medical is developing a minimally invasive, catheter-delivered venous procedure to ablate the greater
+    splanchnic nerve as a treatment for congestive heart failure. An NSF SBIR Phase I award (2023 to 2024) and the
+    company's own statements describe preclinical work; no human use is documented.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.corveusmedical.com/
+      - https://www.corveusmedical.com/home
+      - >-
+        https://api.nsf.gov/services/v1/awards.json?id=2213155&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName,abstractText
+    notes: >-
+      Location is the awardee city in the NSF record; the company home page also says it is based in Houston. The
+      awardee's NSF outcomes report states a former name, Caridian Medical, Inc.; no state or SEC filing was opened.
+      Product descriptions are the company's own wording or the applicant's award abstract.

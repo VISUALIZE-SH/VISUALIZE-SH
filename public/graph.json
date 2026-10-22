@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-10-17T07:08:34.822Z",
-    "lastUpdated": "2026-10-15",
+    "generatedAt": "2026-10-22T06:46:33.534Z",
+    "lastUpdated": "2026-10-21",
     "counts": {
       "condition": 21,
-      "device": 91,
+      "device": 93,
       "pharmaceutical": 17,
       "procedure": 13,
       "digital": 10,
-      "company": 71,
+      "company": 73,
       "trial": 100
     },
-    "draftCount": 0,
-    "total": 323,
+    "draftCount": 4,
+    "total": 327,
     "newsCount": 144,
     "latestNewsDate": "2026-10-16"
   },
@@ -3312,7 +3312,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 23,
+          "degree": 24,
           "pulse": 9,
           "entity": {
             "id": "cond-as",
@@ -3350,7 +3350,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 3,
+          "degree": 4,
           "pulse": 7,
           "entity": {
             "id": "cond-ar",
@@ -3488,7 +3488,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 6,
+          "degree": 7,
           "pulse": 4,
           "entity": {
             "id": "cond-pv",
@@ -3623,7 +3623,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 7,
+          "degree": 8,
           "pulse": 0,
           "entity": {
             "id": "cond-hf",
@@ -10984,6 +10984,87 @@
       },
       {
         "data": {
+          "id": "dev-avatar-valve-reconstruction",
+          "label": "AVaTAR (Aortic Valve Trileaflet Autologous Reconstruction)",
+          "group": "device",
+          "category": "Single-use instrument set and surgical method for autologous trileaflet valve reconstruction",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-avatar-valve-reconstruction",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Single-use instrument set and surgical method for autologous trileaflet valve reconstruction",
+            "name": "AVaTAR (Aortic Valve Trileaflet Autologous Reconstruction)",
+            "company": "co-avatar-medtech",
+            "treats": [
+              "cond-as",
+              "cond-ar",
+              "cond-pv"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Investigational: the clinical series in a 2025 meeting abstract used prototype devices, and the company describes injection-molded production instruments as planned. No regulatory status is documented.",
+            "mechanism": "Sponsor-described: single-use instruments standardize building a symmetric trileaflet valve from the patient's own tissue (autologous pericardium in the reported series) and its semi-automated implantation. The neo-valve has no rigid frame and, for children, is intentionally oversized so the annulus can grow.",
+            "description": "Surgical method and set of single-use instruments that the company says let a surgeon build a symmetric trileaflet valve from the patient's own tissue and implant it to reconstruct the aortic or pulmonary valve in children and adults. A finite-element simulation of the AVaTAR aortic design was published in 2026. The documented clinical report is a preliminary 2025 meeting abstract of 7 children with severe aortic regurgitation treated with prototype devices: 71% had absent or mild regurgitation at discharge; at a mean 4.3 years 43% did, the rest had moderate regurgitation, 57% had absent or mild stenosis (mean peak gradient 43 mmHg), and none needed reintervention. The company's own larger patient counts are undated and are not combined with the abstract.",
+            "materials": [],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-21",
+              "sources": [
+                "https://www.avatarmedtech.com/",
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13476999/fullTextXML",
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13615604/fullTextXML"
+              ],
+              "notes": "Product description is the company's own wording (sponsor claim). The conditions are sponsor-described; the only documented clinical series is aortic regurgitation in children. Kit version, regulatory status and trial registration are not established. The abstract's authors include the company's chief scientific officer per the 2026 JTCVS Open disclosure."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-corveus-gsn-catheter",
+          "label": "Corveus venous catheter for greater splanchnic nerve ablation",
+          "group": "device",
+          "category": "Catheter-based nerve ablation (greater splanchnic nerve, venous approach)",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-corveus-gsn-catheter",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Catheter-based nerve ablation (greater splanchnic nerve, venous approach)",
+            "name": "Corveus venous catheter for greater splanchnic nerve ablation",
+            "company": "co-corveus-medical",
+            "treats": [
+              "cond-hf"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Preclinical, per the company's NSF award outcomes report. No human use and no regulatory status are documented.",
+            "mechanism": "Sponsor-described: a catheter reaches the target nerve branch through venous anatomy and ablates it; the NSF award abstract describes extravascular, localized energy delivery and a detection system indicating procedural success.",
+            "description": "The NSF SBIR Phase I award abstract describes a minimally invasive, catheter-delivered venous procedure for extravascular greater splanchnic nerve ablation in a subset of heart failure patients. The company calls it a non-implantable, one-time treatment and says full nerve deactivation can be confirmed during the procedure. Energy type and device configuration are not stated. An independent 2024 review lists Corveus Medical as an example in the neuromodulation column of a table of interventional therapies for chronic heart failure; it gives no device data.",
+            "materials": [],
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-21",
+              "sources": [
+                "https://api.nsf.gov/services/v1/awards.json?id=2213155&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName,abstractText",
+                "https://www.corveusmedical.com/",
+                "https://www.corveusmedical.com/home",
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC11911643/"
+              ],
+              "notes": "No product name is documented, so the name is descriptive. Preclinical statements are the awardee's own (NSF outcomes report); the abstract is the applicant's plan at award time. The company's heart failure wording differs by page and the ejection-fraction subtype is not stated. No registry trial was found."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-mirus",
           "label": "MiRus LLC",
           "group": "company",
@@ -13123,6 +13204,67 @@
       },
       {
         "data": {
+          "id": "co-avatar-medtech",
+          "label": "AVaTAR MedTech",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-avatar-medtech",
+            "type": "company",
+            "name": "AVaTAR MedTech",
+            "hq": "Buenos Aires, Argentina",
+            "website": "https://www.avatarmedtech.com/",
+            "description": "AVaTAR MedTech develops AVaTAR (Aortic Valve Trileaflet Autologous Reconstruction), a surgical method and set of single-use instruments that the company says reconstruct the aortic or pulmonary valve from the patient's own tissue in children and adults. A 2025 surgical-society meeting abstract reports the technique with prototype devices in seven children with severe aortic regurgitation.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-21",
+              "sources": [
+                "https://www.avatarmedtech.com/",
+                "https://www.avatarmedtech.com/contact",
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13615604/fullTextXML",
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13476999/fullTextXML"
+              ],
+              "notes": "Product description is the company's own wording (sponsor claim). Location is the address on the company contact page; legal entity and incorporation are not established. The abstract is a preliminary meeting abstract whose authors include the company's chief scientific officer per the 2026 JTCVS Open disclosure."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-corveus-medical",
+          "label": "Corveus Medical",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-corveus-medical",
+            "type": "company",
+            "name": "Corveus Medical",
+            "hq": "Houston, Texas, USA",
+            "website": "https://www.corveusmedical.com/",
+            "description": "Corveus Medical is developing a minimally invasive, catheter-delivered venous procedure to ablate the greater splanchnic nerve as a treatment for congestive heart failure. An NSF SBIR Phase I award (2023 to 2024) and the company's own statements describe preclinical work; no human use is documented.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-10-21",
+              "sources": [
+                "https://www.corveusmedical.com/",
+                "https://www.corveusmedical.com/home",
+                "https://api.nsf.gov/services/v1/awards.json?id=2213155&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName,abstractText"
+              ],
+              "notes": "Location is the awardee city in the NSF record; the company home page also says it is based in Houston. The awardee's NSF outcomes report states a former name, Caridian Medical, Inc.; no state or SEC filing was opened. Product descriptions are the company's own wording or the applicant's award abstract."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "trial-siegel-star",
           "label": "STAR (SIEGEL TAVR)",
           "group": "trial",
@@ -13517,21 +13659,21 @@
           "isRetired": false,
           "degree": 2,
           "pulse": 2,
-          "timelineDate": "2026-04-01",
+          "timelineDate": "2026-03-05",
           "entity": {
             "id": "trial-lambre-ii",
             "type": "trial",
             "name": "LAmbre II First-in-Man",
             "nctId": "NCT07455539",
             "phase": "First-in-man",
-            "status": "unknown",
+            "status": "active",
             "timeline": {
-              "date": "2026-04-01",
-              "precision": "month",
+              "date": "2026-03-05",
+              "precision": "day",
               "dateBasis": "trial-start",
-              "event": "Estimated trial start",
+              "event": "Trial start",
               "source": "https://clinicaltrials.gov/study/NCT07455539",
-              "notes": "ClinicalTrials.gov lists status as 'not yet recruiting' with an estimated (not actual) start date; no allowed schema value maps exactly to 'not yet recruiting', so status is left as unknown pending an update."
+              "notes": "Registry start date 2026-03-05 is ACTUAL (record last update posted 2026-09-18); earlier estimated 2026-04 start superseded."
             },
             "conditions": [
               "cond-af"
@@ -13541,7 +13683,7 @@
             ],
             "enrollment": 10,
             "primaryEndpoint": "Safety and feasibility of the next-generation LAmbre II occluder",
-            "outcomeSummary": "First-in-man feasibility study (Prince of Wales Hospital, Hong Kong, with Lifetech Scientific) of the next-generation LAmbre II LAA occluder in non-valvular AF; not yet recruiting.",
+            "outcomeSummary": "First-in-man feasibility study (Prince of Wales Hospital, Hong Kong, with Lifetech Scientific) of the next-generation LAmbre II LAA occluder in non-valvular AF; registry lists active, not recruiting (actual start 2026-03-05; 10 participants estimated).",
             "resultStatus": "ongoing",
             "references": [
               "https://clinicaltrials.gov/study/NCT07455539"
@@ -13916,7 +14058,7 @@
           "isRetired": false,
           "degree": 2,
           "pulse": 8,
-          "timelineDate": "2023-08-30",
+          "timelineDate": "2023-08-31",
           "entity": {
             "id": "trial-acacia-hcm",
             "type": "trial",
@@ -13925,7 +14067,7 @@
             "phase": "Phase 3 RCT",
             "status": "active",
             "timeline": {
-              "date": "2023-08-30",
+              "date": "2023-08-31",
               "precision": "day",
               "dateBasis": "trial-start",
               "event": "Trial start",
@@ -15054,7 +15196,7 @@
             "name": "COSIRA-II",
             "nctId": "NCT05102019",
             "phase": "Pivotal RCT (sham-controlled)",
-            "status": "active",
+            "status": "recruiting",
             "timeline": {
               "date": "2022-01-04",
               "precision": "day",
@@ -16254,7 +16396,7 @@
             "name": "APOLLO",
             "nctId": "NCT03242642",
             "phase": "Pivotal RCT",
-            "status": "active",
+            "status": "recruiting",
             "timeline": {
               "date": "2017-10-23",
               "precision": "day",
@@ -16275,6 +16417,7 @@
               "https://clinicaltrials.gov/search?term=APOLLO+Intrepid+transcatheter+mitral"
             ],
             "pulse": 4,
+            "enrollment": 1056,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-10-03",
@@ -16324,6 +16467,7 @@
               "https://clinicaltrials.gov/search?term=ENCIRCLE+SAPIEN+M3"
             ],
             "pulse": 6,
+            "enrollment": 786,
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-10-03",
@@ -17166,17 +17310,17 @@
             "name": "AUTUS Valve Continued Access Study",
             "nctId": "NCT07466745",
             "phase": "Continued-access single-arm device study",
-            "status": "recruiting",
+            "status": "active",
             "conditions": [
               "cond-pv"
             ],
             "therapies": [
               "dev-autus"
             ],
-            "enrollment": 36,
+            "enrollment": 4,
             "resultStatus": "ongoing",
             "primaryEndpoint": "Device-related complications at 30 days; acceptable hemodynamic performance at 6 months.",
-            "outcomeSummary": "Registry lists recruiting status and 36 estimated participants; actual start July 27, 2026 and estimated primary completion October 30, 2027. No posted results.",
+            "outcomeSummary": "Registry lists active, not recruiting status and 4 participants (actual enrollment); actual start July 27, 2026 and estimated primary completion October 30, 2027. No posted results.",
             "references": [
               "https://clinicaltrials.gov/study/NCT07466745"
             ],
@@ -17305,7 +17449,7 @@
           "isRetired": false,
           "degree": 2,
           "pulse": 0,
-          "timelineDate": "2026-09-01",
+          "timelineDate": "2026-10-01",
           "entity": {
             "id": "trial-upbeat-aftx-201",
             "type": "trial",
@@ -17336,12 +17480,12 @@
             },
             "enrollment": 22,
             "timeline": {
-              "date": "2026-09-01",
+              "date": "2026-10-01",
               "precision": "month",
               "dateBasis": "trial-start",
               "event": "Estimated trial start",
               "source": "https://clinicaltrials.gov/study/NCT07426419",
-              "notes": "Official registry start2026-09 ESTIMATED; first-day placeholder for month precision, not a confirmed start day."
+              "notes": "Official registry start 2026-10 ESTIMATED (record last update posted 2026-10-21); first-day placeholder for month precision, not a confirmed start day."
             }
           }
         }
@@ -18058,13 +18202,14 @@
           "isRetired": false,
           "degree": 2,
           "pulse": 0,
+          "timelineDate": "2019-02-05",
           "entity": {
             "id": "trial-clasp-tr-efs",
             "type": "trial",
             "name": "CLASP TR Early Feasibility Study",
             "nctId": "NCT03745313",
             "phase": "Early feasibility",
-            "status": "unknown",
+            "status": "completed",
             "conditions": [
               "cond-tr"
             ],
@@ -18082,6 +18227,14 @@
                 "url": "https://pubmed.ncbi.nlm.nih.gov/37137586/"
               }
             ],
+            "enrollment": 65,
+            "timeline": {
+              "date": "2019-02-05",
+              "event": "Trial start",
+              "dateBasis": "trial-start",
+              "precision": "day",
+              "source": "https://clinicaltrials.gov/study/NCT03745313"
+            },
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-10-15",
@@ -20220,6 +20373,54 @@
           "id": "proc-laac__treats__cond-af",
           "source": "proc-laac",
           "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-avatar-valve-reconstruction__made_by__co-avatar-medtech",
+          "source": "dev-avatar-valve-reconstruction",
+          "target": "co-avatar-medtech",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-avatar-valve-reconstruction__treats__cond-as",
+          "source": "dev-avatar-valve-reconstruction",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-avatar-valve-reconstruction__treats__cond-ar",
+          "source": "dev-avatar-valve-reconstruction",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-avatar-valve-reconstruction__treats__cond-pv",
+          "source": "dev-avatar-valve-reconstruction",
+          "target": "cond-pv",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-corveus-gsn-catheter__made_by__co-corveus-medical",
+          "source": "dev-corveus-gsn-catheter",
+          "target": "co-corveus-medical",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-corveus-gsn-catheter__treats__cond-hf",
+          "source": "dev-corveus-gsn-catheter",
+          "target": "cond-hf",
           "relationship": "treats"
         }
       },

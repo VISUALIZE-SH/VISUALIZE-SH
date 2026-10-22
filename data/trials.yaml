@@ -211,19 +211,19 @@
   name: "LAmbre II First-in-Man"
   nctId: "NCT07455539"
   phase: "First-in-man"
-  status: unknown
+  status: active
   timeline:
-    date: "2026-04-01"
-    precision: month
+    date: "2026-03-05"
+    precision: day
     dateBasis: trial-start
-    event: "Estimated trial start"
-    source: "https://clinicaltrials.gov/study/NCT07455539"
-    notes: "ClinicalTrials.gov lists status as 'not yet recruiting' with an estimated (not actual) start date; no allowed schema value maps exactly to 'not yet recruiting', so status is left as unknown pending an update."
+    event: Trial start
+    source: https://clinicaltrials.gov/study/NCT07455539
+    notes: Registry start date 2026-03-05 is ACTUAL (record last update posted 2026-09-18); earlier estimated 2026-04 start superseded.
   conditions: [cond-af]
   therapies: [dev-lambre]
   enrollment: 10
   primaryEndpoint: "Safety and feasibility of the next-generation LAmbre II occluder"
-  outcomeSummary: "First-in-man feasibility study (Prince of Wales Hospital, Hong Kong, with Lifetech Scientific) of the next-generation LAmbre II LAA occluder in non-valvular AF; not yet recruiting."
+  outcomeSummary: "First-in-man feasibility study (Prince of Wales Hospital, Hong Kong, with Lifetech Scientific) of the next-generation LAmbre II LAA occluder in non-valvular AF; registry lists active, not recruiting (actual start 2026-03-05; 10 participants estimated)."
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/study/NCT07455539"]
   pulse: 2
@@ -418,11 +418,11 @@
   phase: "Phase 3 RCT"
   status: active
   timeline:
-    date: "2023-08-30"
+    date: "2023-08-31"
     precision: day
     dateBasis: trial-start
-    event: "Trial start"
-    source: "https://clinicaltrials.gov/study/NCT06081894"
+    event: Trial start
+    source: https://clinicaltrials.gov/study/NCT06081894
   conditions: [cond-hcm]
   therapies: [rx-aficamten]
   enrollment: 500
@@ -997,7 +997,7 @@
   name: "COSIRA-II"
   nctId: NCT05102019
   phase: "Pivotal RCT (sham-controlled)"
-  status: active
+  status: recruiting
   timeline:
     date: "2022-01-04"
     precision: day
@@ -1684,7 +1684,7 @@
   name: "APOLLO"
   nctId: NCT03242642
   phase: "Pivotal RCT"
-  status: active
+  status: recruiting
   timeline:
     date: "2017-10-23"
     precision: day
@@ -1698,6 +1698,7 @@
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/search?term=APOLLO+Intrepid+transcatheter+mitral"]
   pulse: 4
+  enrollment: 1056
   curation:
     status: curated
     lastUpdated: "2026-10-03"
@@ -1723,6 +1724,7 @@
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/search?term=ENCIRCLE+SAPIEN+M3"]
   pulse: 6
+  enrollment: 786
   curation:
     status: curated
     lastUpdated: "2026-10-03"
@@ -2153,17 +2155,15 @@
   name: AUTUS Valve Continued Access Study
   nctId: NCT07466745
   phase: Continued-access single-arm device study
-  status: recruiting
+  status: active
   conditions:
     - cond-pv
   therapies:
     - dev-autus
-  enrollment: 36
+  enrollment: 4
   resultStatus: ongoing
   primaryEndpoint: Device-related complications at 30 days; acceptable hemodynamic performance at 6 months.
-  outcomeSummary: >-
-    Registry lists recruiting status and 36 estimated participants; actual start July 27, 2026 and estimated primary completion
-    October 30, 2027. No posted results.
+  outcomeSummary: Registry lists active, not recruiting status and 4 participants (actual enrollment); actual start July 27, 2026 and estimated primary completion October 30, 2027. No posted results.
   references:
     - https://clinicaltrials.gov/study/NCT07466745
   curation:
@@ -2285,14 +2285,12 @@
       conflict, amendment date unverified. No results posted.
   enrollment: 22
   timeline:
-    date: '2026-09-01'
+    date: "2026-10-01"
     precision: month
     dateBasis: trial-start
     event: Estimated trial start
     source: https://clinicaltrials.gov/study/NCT07426419
-    notes: >-
-      Official registry start2026-09 ESTIMATED; first-day placeholder for month precision, not a confirmed
-      start day.
+    notes: Official registry start 2026-10 ESTIMATED (record last update posted 2026-10-21); first-day placeholder for month precision, not a confirmed start day.
 
 - id: trial-cmic-ii
   type: trial
@@ -2790,7 +2788,7 @@
   name: CLASP TR Early Feasibility Study
   nctId: NCT03745313
   phase: Early feasibility
-  status: unknown
+  status: completed
   conditions:
     - cond-tr
   therapies:
@@ -2804,6 +2802,13 @@
   links:
     - label: Original study abstract
       url: https://pubmed.ncbi.nlm.nih.gov/37137586/
+  enrollment: 65
+  timeline:
+    date: "2019-02-05"
+    event: Trial start
+    dateBasis: trial-start
+    precision: day
+    source: https://clinicaltrials.gov/study/NCT03745313
   curation:
     status: curated
     lastUpdated: '2026-10-15'
