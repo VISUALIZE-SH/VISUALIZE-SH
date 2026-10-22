@@ -211,19 +211,19 @@
   name: "LAmbre II First-in-Man"
   nctId: "NCT07455539"
   phase: "First-in-man"
-  status: unknown
+  status: active
   timeline:
-    date: "2026-04-01"
-    precision: month
+    date: "2026-03-05"
+    precision: day
     dateBasis: trial-start
-    event: "Estimated trial start"
-    source: "https://clinicaltrials.gov/study/NCT07455539"
-    notes: "ClinicalTrials.gov lists status as 'not yet recruiting' with an estimated (not actual) start date; no allowed schema value maps exactly to 'not yet recruiting', so status is left as unknown pending an update."
+    event: Trial start
+    source: https://clinicaltrials.gov/study/NCT07455539
+    notes: Registry start date 2026-03-05 is ACTUAL (record last update posted 2026-09-18); earlier estimated 2026-04 start superseded.
   conditions: [cond-af]
   therapies: [dev-lambre]
   enrollment: 10
   primaryEndpoint: "Safety and feasibility of the next-generation LAmbre II occluder"
-  outcomeSummary: "First-in-man feasibility study (Prince of Wales Hospital, Hong Kong, with Lifetech Scientific) of the next-generation LAmbre II LAA occluder in non-valvular AF; not yet recruiting."
+  outcomeSummary: "First-in-man feasibility study (Prince of Wales Hospital, Hong Kong, with Lifetech Scientific) of the next-generation LAmbre II LAA occluder in non-valvular AF; registry lists active, not recruiting (actual start 2026-03-05; 10 participants estimated)."
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/study/NCT07455539"]
   pulse: 2
@@ -418,11 +418,11 @@
   phase: "Phase 3 RCT"
   status: active
   timeline:
-    date: "2023-08-30"
+    date: "2023-08-31"
     precision: day
     dateBasis: trial-start
-    event: "Trial start"
-    source: "https://clinicaltrials.gov/study/NCT06081894"
+    event: Trial start
+    source: https://clinicaltrials.gov/study/NCT06081894
   conditions: [cond-hcm]
   therapies: [rx-aficamten]
   enrollment: 500
@@ -997,7 +997,7 @@
   name: "COSIRA-II"
   nctId: NCT05102019
   phase: "Pivotal RCT (sham-controlled)"
-  status: active
+  status: recruiting
   timeline:
     date: "2022-01-04"
     precision: day
@@ -1684,7 +1684,7 @@
   name: "APOLLO"
   nctId: NCT03242642
   phase: "Pivotal RCT"
-  status: active
+  status: recruiting
   timeline:
     date: "2017-10-23"
     precision: day
@@ -1698,6 +1698,7 @@
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/search?term=APOLLO+Intrepid+transcatheter+mitral"]
   pulse: 4
+  enrollment: 1056
   curation:
     status: curated
     lastUpdated: "2026-10-03"
@@ -1723,6 +1724,7 @@
   resultStatus: ongoing
   references: ["https://clinicaltrials.gov/search?term=ENCIRCLE+SAPIEN+M3"]
   pulse: 6
+  enrollment: 786
   curation:
     status: curated
     lastUpdated: "2026-10-03"
@@ -2153,17 +2155,15 @@
   name: AUTUS Valve Continued Access Study
   nctId: NCT07466745
   phase: Continued-access single-arm device study
-  status: recruiting
+  status: active
   conditions:
     - cond-pv
   therapies:
     - dev-autus
-  enrollment: 36
+  enrollment: 4
   resultStatus: ongoing
   primaryEndpoint: Device-related complications at 30 days; acceptable hemodynamic performance at 6 months.
-  outcomeSummary: >-
-    Registry lists recruiting status and 36 estimated participants; actual start July 27, 2026 and estimated primary completion
-    October 30, 2027. No posted results.
+  outcomeSummary: Registry lists active, not recruiting status and 4 participants (actual enrollment); actual start July 27, 2026 and estimated primary completion October 30, 2027. No posted results.
   references:
     - https://clinicaltrials.gov/study/NCT07466745
   curation:
@@ -2285,14 +2285,12 @@
       conflict, amendment date unverified. No results posted.
   enrollment: 22
   timeline:
-    date: '2026-09-01'
+    date: "2026-10-01"
     precision: month
     dateBasis: trial-start
     event: Estimated trial start
     source: https://clinicaltrials.gov/study/NCT07426419
-    notes: >-
-      Official registry start2026-09 ESTIMATED; first-day placeholder for month precision, not a confirmed
-      start day.
+    notes: Official registry start 2026-10 ESTIMATED (record last update posted 2026-10-21); first-day placeholder for month precision, not a confirmed start day.
 
 - id: trial-cmic-ii
   type: trial
@@ -2790,7 +2788,7 @@
   name: CLASP TR Early Feasibility Study
   nctId: NCT03745313
   phase: Early feasibility
-  status: unknown
+  status: completed
   conditions:
     - cond-tr
   therapies:
@@ -2804,6 +2802,13 @@
   links:
     - label: Original study abstract
       url: https://pubmed.ncbi.nlm.nih.gov/37137586/
+  enrollment: 65
+  timeline:
+    date: "2019-02-05"
+    event: Trial start
+    dateBasis: trial-start
+    precision: day
+    source: https://clinicaltrials.gov/study/NCT03745313
   curation:
     status: curated
     lastUpdated: '2026-10-15'
@@ -2813,3 +2818,1220 @@
       Kodali et al., JACC 2023-05-09, DOI 10.1016/j.jacc.2023.02.049, Abstract Objectives/Methods/Conclusions
       explicitly identify CLASP TR EFS and NCT03745313. Abstract-only extraction; current registry recruitment
       status, exact start date and full-text subgroups not verified. No timeline date added.
+
+- id: trial-acorai-capture-hf
+  type: trial
+  name: CAPTURE-HF (Acorai Machine Learning Generalization Study)
+  nctId: NCT05835024
+  phase: Prospective observational cohort (no phase)
+  status: completed
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-acorai-save-sensor
+  enrollmentCounts:
+    - count: 1602
+      basis: actual
+      asOf: "2024-12-03"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05835024
+  primaryEndpoint: Evaluation of the machine-learning model's performance to estimate pressure (Day 0 to Day 90).
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05835024
+    notes: >-
+      Registry status Completed; no results document was retained. The registry names the device 'Acorai Sensor Data
+      Collection (ASDC) system 1.0'; no reviewed document states it is the product the company page calls the SAVE
+      Sensor System.
+- id: trial-acorai-hosp-hf
+  type: trial
+  name: "HOSP-HF: Non-Invasive Hemodynamic Monitoring in Hospitalized Heart Failure"
+  nctId: NCT07671742
+  phase: Prospective observational cohort (no phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-acorai-save-sensor
+  enrollmentCounts:
+    - count: 1000
+      basis: estimated
+      asOf: "2026-06-26"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07671742
+  primaryEndpoint: >-
+    Composite of 90-day heart failure hospitalization or all-cause mortality, measured 90 days after discharge from the
+    index hospitalization.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07671742
+    notes: >-
+      The registry names the studied device 'Acorai Device 1.0'; no reviewed document states it is the product the
+      company page calls the SAVE Sensor System.
+- id: trial-acorai-rhc-data-collection
+  type: trial
+  name: Acorai multi-site data collection study during right heart catheterization
+  nctId: NCT07010562
+  phase: Prospective observational cohort (no phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-acorai-save-sensor
+  enrollmentCounts:
+    - count: 392
+      basis: estimated
+      asOf: "2026-10-13"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07010562
+  primaryEndpoint: Evaluation of the machine-learning model's performance to estimate pressure (Day 0 to Day 90).
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07010562
+    notes: >-
+      The registry names the device only as 'Data collection'; no reviewed document states it is the product the company
+      page calls the SAVE Sensor System.
+- id: trial-allay-hf
+  type: trial
+  name: ALLAY-HF
+  nctId: NCT05685303
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-alleviant-alv1
+  enrollmentCounts:
+    - count: 700
+      basis: estimated
+      asOf: "2026-08-14"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05685303
+  primaryEndpoint: >-
+    Composite of mortality, heart failure events and quality of life based on the Kansas City Cardiomyopathy
+    Questionnaire (KCCQ), calculated at 12 months.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05685303
+    notes: >-
+      Randomized, sham-controlled, double-blinded study in HFpEF/HFmrEF (LVEF 40% or greater per the registry
+      eligibility); mapped to the broad heart-failure condition.
+- id: trial-allay-hfref
+  type: trial
+  name: ALLAY-HFrEF
+  nctId: NCT06812533
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-alleviant-alv1
+  enrollmentCounts:
+    - count: 350
+      basis: estimated
+      asOf: "2026-10-06"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06812533
+  primaryEndpoint: >-
+    Composite of all-cause mortality, cardiac transplantation or permanent left ventricular assist device implantation,
+    and heart failure events, at 12 months.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06812533
+- id: trial-altavalve-efs
+  type: trial
+  name: AltaValve Early Feasibility Study
+  nctId: NCT03997305
+  phase: Device study (not applicable phase)
+  status: unknown
+  primaryAnalysis:
+    status: reported
+    date: "2025-11-01"
+    precision: month
+    source: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41224388&resultType=core&format=json
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-altavalve
+  enrollmentCounts:
+    - count: 15
+      basis: estimated
+      asOf: "2023-09-01"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT03997305
+    - count: 30
+      basis: actual
+      scope: patients enrolled per the 2025 published 6-month abstract
+      source: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41224388&resultType=core&format=json
+  primaryEndpoint: Major adverse cardiac events at 30 days.
+  outcomeSummary: >-
+    A 2025 JACC: Cardiovascular Interventions paper (abstract) reports 6-month outcomes in 30 enrolled patients:
+    procedural success in 29 of 30, mitral regurgitation reduced to mild or less in all surviving patients at 30 days,
+    and no strokes, new pacemakers or mitral reinterventions within 6 months.
+  resultStatus: ongoing
+  references:
+    - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41224388&resultType=core&format=json
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT03997305
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41224388&resultType=core&format=json
+    notes: >-
+      Registry status Unknown (last verified 2023-08); the estimated completion date has passed. The paper abstract
+      cites this registration but reports 30 enrolled patients and technical success as its primary endpoint, which
+      differ from the registered estimate of 15 and 30-day MACE. Abstract only.
+- id: trial-atlas-altavalve
+  type: trial
+  name: ATLAS (AltaValve) Pivotal Trial
+  nctId: NCT06465745
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-altavalve
+  enrollmentCounts:
+    - count: 450
+      basis: estimated
+      asOf: "2026-08-03"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06465745
+  primaryEndpoint: Composite of all-cause mortality or heart failure hospitalization at 12 months.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06465745
+- id: trial-cirrus-hcm
+  type: trial
+  name: CIRRUS-HCM
+  nctId: NCT06347159
+  phase: Phase 2
+  status: active
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-hcm
+  therapies:
+    - rx-edg-7500
+  enrollmentCounts:
+    - count: 79
+      basis: estimated
+      asOf: "2026-07-31"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06347159
+  primaryEndpoint: Incidence of treatment-emergent adverse events from screening through study completion.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06347159
+    notes: >-
+      Open-label, non-randomized study of single dose in obstructive HCM and multiple doses in obstructive or
+      nonobstructive HCM.
+- id: trial-corwave-lvas-fih
+  type: trial
+  name: CorWave LVAS first-in-human study
+  nctId: NCT06907017
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-corwave-lvas
+  enrollmentCounts:
+    - count: 20
+      basis: estimated
+      asOf: "2026-08-03"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06907017
+  primaryEndpoint: Survival post-implant and freedom from adverse events associated with the CorWave LVAD, each at 30 days.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06907017
+    notes: >-
+      Registry status Recruiting as last verified 2026-02; the estimated primary completion (2026-08) has passed and
+      current status is not verified.
+- id: trial-duravr-efs
+  type: trial
+  name: DurAVR THV Early Feasibility Study
+  nctId: NCT05712161
+  phase: Device study (not applicable phase)
+  status: active
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-as
+  therapies:
+    - dev-duravr-thv
+  enrollmentCounts:
+    - count: 15
+      basis: actual
+      asOf: "2026-06-26"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05712161
+  primaryEndpoint: All-cause mortality or disabling stroke at 30 days; technical success immediately after the procedure.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05712161
+- id: trial-duravr-embark
+  type: trial
+  name: EMBARK (DurAVR THV first-in-human study)
+  nctId: NCT05182307
+  phase: Device study (not applicable phase)
+  status: active
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-as
+  therapies:
+    - dev-duravr-thv
+  enrollmentCounts:
+    - count: 150
+      basis: estimated
+      asOf: "2026-06-26"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05182307
+  primaryEndpoint: >-
+    Registered primary outcomes: DurAVR valve implant and hemodynamic performance immediately after the procedure;
+    all-cause mortality, myocardial infarction, stroke and life-threatening bleeding at 30 days and 1 year.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05182307
+- id: trial-duravr-eu-efs
+  type: trial
+  name: DurAVR THV European Early Feasibility Study
+  nctId: NCT06510855
+  phase: Device study (not applicable phase)
+  status: active
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-as
+  therapies:
+    - dev-duravr-thv
+  enrollmentCounts:
+    - count: 15
+      basis: actual
+      asOf: "2026-09-16"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06510855
+  primaryEndpoint: All-cause mortality or disabling stroke at 30 days.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06510855
+- id: trial-duravr-paradigm
+  type: trial
+  name: PARADIGM (DurAVR THV)
+  nctId: NCT07194265
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-as
+  therapies:
+    - dev-duravr-thv
+  enrollmentCounts:
+    - count: 1650
+      basis: estimated
+      asOf: "2026-07-15"
+      scope: >-
+        total across the all-comers randomized cohort (up to 1054), the low-risk continued-access cohort (up to 446) and
+        the valve-in-valve registry cohort (up to 150)
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07194265
+  primaryEndpoint: Composite of all-cause mortality, all stroke and cardiovascular hospitalization at 1 year.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07194265
+    notes: >-
+      Randomized against commercially available SAPIEN- or Evolut-series valves in the all-comers cohort; the registry
+      does not label the trial pivotal.
+- id: trial-flowmaker-fair
+  type: trial
+  name: FAIR (Icoms FlowMaker first-in-human study)
+  nctId: NCT07632586
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-icoms-flowmaker
+  enrollmentCounts:
+    - count: 10
+      basis: estimated
+      asOf: "2026-06-08"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07632586
+  primaryEndpoint: Device safety, and device safety and performance, at 1 month after implant.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07632586
+- id: trial-hemotag-hats-off
+  type: trial
+  name: HATS-OFF (HEMOTAG Assessment for Short-term Outcomes of Heart Failure)
+  nctId: NCT04149743
+  phase: Not applicable (diagnostic test study)
+  status: unknown
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-hemotag
+  enrollmentCounts:
+    - count: 420
+      basis: estimated
+      asOf: "2024-08-21"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT04149743
+  primaryEndpoint: Number of recurrent heart failure readmissions (30-day monitoring period).
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT04149743
+    notes: >-
+      Registry status Unknown (last verified 2024-08); the estimated completion date has passed. Randomized,
+      participant-masked diagnostic study of standard care with versus without HEMOTAG. No results document was
+      retained.
+- id: trial-cassini-eu
+  type: trial
+  name: CASSINI-EU
+  nctId: NCT06414265
+  phase: "Feasibility study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-innovheart-saturn-ts-tmvr
+  enrollmentCounts:
+    - count: 30
+      basis: estimated
+      asOf: "2026-05-20"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06414265
+  primaryEndpoint: >-
+    Freedom from device-related major adverse events at 30 days; technical procedural success; reduction of mitral
+    regurgitation to grade 1+ or less at 30 days.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06414265
+    notes: >-
+      Registry record last updated 2026-05-20; start 2024-04-04 (actual); eight sites in Georgia, Italy, Lithuania,
+      Poland and the United Kingdom, all recruiting; collaborator Avania. The registry lists the condition as Heart
+      Failure; the title and summary target mitral regurgitation, which is used here. Enrollment is the estimated
+      target, not patients treated.
+- id: trial-cassini-us
+  type: trial
+  name: CASSINI-US
+  nctId: NCT07130994
+  phase: "Early feasibility study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-innovheart-saturn-ts-tmvr
+  enrollmentCounts:
+    - count: 15
+      basis: estimated
+      asOf: "2026-08-10"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07130994
+  primaryEndpoint: >-
+    Technical (implant) success at the end of the procedure; freedom from device- or procedure-related major adverse
+    events at 30 days; reduction of mitral regurgitation to grade 1+ or less at 30 days.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07130994
+    notes: >-
+      Registry record last updated 2026-08-10. Single-arm, up to 15 patients at up to five US sites (two of five listed
+      sites recruiting); start 2026-08-05 (actual); collaborator Avania. The registry lists the conditions Mitral
+      Regurgitation and Heart Disease. Enrollment is the estimated target, not patients treated.
+- id: trial-ease-hf
+  type: trial
+  name: EASE HF
+  nctId: NCT05403372
+  phase: "Feasibility study (registry phase: not applicable)"
+  status: unknown
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-intershunt-dynama-pas-c
+  enrollmentCounts:
+    - count: 10
+      basis: actual
+      asOf: "2023-03-01"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05403372
+  primaryEndpoint: Proportion of subjects with a major adverse cardiac or cerebrovascular event or systemic embolization at 1 month.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05403372
+    notes: >-
+      Registry status Unknown (last verified 2023-02); start 2022-05-07 and primary completion 2022-08-06 (both actual);
+      one site in Tbilisi, Georgia; no results posted. Key inclusion criteria list LVEF 40% or more with
+      echocardiographic diastolic dysfunction. resultStatus is a placeholder: no category fits an unreported study of
+      unknown status.
+- id: trial-ease-hf2
+  type: trial
+  name: EASE HF2
+  nctId: NCT06859970
+  phase: "Early feasibility study (registry phase: not applicable)"
+  status: active
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-hf
+    - cond-hfref
+  therapies:
+    - dev-intershunt-dynama-pas-c
+  enrollmentCounts:
+    - count: 20
+      basis: estimated
+      asOf: "2026-05-27"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06859970
+  primaryEndpoint: >-
+    Proportion of subjects with a major adverse cardiac or cerebrovascular event or systemic embolization through one
+    month after the procedure.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06859970
+    notes: >-
+      Registry record last updated 2026-05-27; start 2025-05-15 (actual); six US sites; heart failure with LVEF 20-40%
+      on guideline therapy (registry also lists heart failure with reduced ejection fraction). Active, not recruiting.
+      Enrollment is the estimated target, not patients treated.
+- id: trial-enhance-efs
+  type: trial
+  name: ENHANCE EFS
+  nctId: NCT07503236
+  phase: "Early feasibility study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-nyra-carlen
+  enrollmentCounts:
+    - count: 30
+      basis: estimated
+      asOf: "2026-07-28"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07503236
+  primaryEndpoint: Freedom from device- or procedure-related serious adverse events through 30 days after the procedure.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07503236
+    notes: >-
+      Registry record last updated 2026-07-28; start 2026-07-02 (actual); three US sites, all recruiting; adults over 21
+      with functional mitral regurgitation (3+ or more) suitable for transcatheter repair. Enrollment is the estimated
+      target, not patients treated.
+- id: trial-explore-mrace-ge
+  type: trial
+  name: EXPLORE MRace (GE)
+  nctId: NCT07796659
+  phase: "Early feasibility study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-polares-mrace
+  enrollmentCounts:
+    - count: 100
+      basis: estimated
+      asOf: "2026-09-01"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07796659
+  primaryEndpoint: >-
+    All-cause mortality at 30 days; change from severe mitral regurgitation (grade 3+ or more) to moderate or less
+    (grade 2+ or less) by transthoracic echocardiography at 30 days.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07796659
+    notes: >-
+      Registry record last updated 2026-09-01; first submitted 2026-08-27 although the stated start is 2022-05-23
+      (actual). Four centers in Tbilisi, Georgia; the official title says Brazil while all listed sites are in Georgia.
+      The registry lists the condition as Mitral Valve Disease; its summary and intervention target mitral
+      regurgitation, which is used here. Enrollment is the estimated target, not patients treated.
+- id: trial-explore-mrace-us
+  type: trial
+  name: EXPLORE-MRace (United States)
+  nctId: NCT07517588
+  phase: "Early feasibility study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-polares-mrace
+  enrollmentCounts:
+    - count: 15
+      basis: estimated
+      asOf: "2026-09-01"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07517588
+  primaryEndpoint: >-
+    All-cause mortality at 30 days; reduction in mitral regurgitation to grade 2+ or less by 2D transthoracic
+    echocardiography at 30 days.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07517588
+    notes: >-
+      Registry record last updated 2026-09-01; the start date (2026-09-01) is an estimate; one of three sites
+      recruiting. Enrollment is the estimated target, not patients treated.
+- id: trial-protea-pfo-ous
+  type: trial
+  name: PROTEA-PFO OUS
+  nctId: NCT07698951
+  phase: "Feasibility study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-pfo
+  therapies:
+    - dev-recross-p3-occluder
+  enrollmentCounts:
+    - count: 15
+      basis: estimated
+      asOf: "2026-07-13"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07698951
+  primaryEndpoint: >-
+    Effective PFO closure by transesophageal echocardiography at the index procedure and at 6 months; significant
+    adverse events (cardiac death, myocardial infarction, stroke) within 30 days.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07698951
+    notes: >-
+      Registry record last updated 2026-07-13; start 2026-06-17 (actual); one site in Belgrade, Serbia; collaborator
+      SCIRENT Clinical Research and Science d.o.o. Enrollment is the estimated target, not patients treated.
+- id: trial-protea-pfo
+  type: trial
+  name: PROTEA-PFO
+  nctId: NCT07172464
+  phase: "Early feasibility study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-pfo
+  therapies:
+    - dev-recross-p3-occluder
+  enrollmentCounts:
+    - count: 30
+      basis: estimated
+      asOf: "2026-07-27"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07172464
+  primaryEndpoint: >-
+    Major adverse cardiovascular events (cardiac death, myocardial infarction, stroke) at 30 days; effective PFO closure
+    by transesophageal echocardiography at the index procedure and at 6 months.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07172464
+    notes: >-
+      Registry record last updated 2026-07-27; start 2025-10-09 (actual); five US sites; follow-up planned to 5 years;
+      collaborator MCRA. The registry lists PFO, cryptogenic stroke and PFO-associated stroke. Enrollment is the
+      estimated target, not patients treated.
+- id: trial-pivot-bridge-pilot
+  type: trial
+  name: Pivot Bridge exploratory pilot (South Korea)
+  nctId: NCT05854095
+  phase: "Exploratory pilot study (registry phase: not applicable)"
+  status: completed
+  primaryAnalysis:
+    status: reported
+    date: "2026-03-27"
+    precision: day
+    source: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41891323&resultType=core&format=json
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-tau-pivot-bridge
+  enrollmentCounts:
+    - count: 15
+      basis: actual
+      asOf: "2024-02-08"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05854095
+  primaryEndpoint: >-
+    Acute-phase safety: adverse reactions including serious adverse events and serious adverse device reactions,
+    assessed immediately after the procedure.
+  outcomeSummary: >-
+    A 2026 first-in-human report (abstract) describes 15 patients: procedural success in all, no serious adverse events
+    during device placement (median 5 days) and a tricuspid regurgitation reduction of at least one grade in all; the
+    device was then removed.
+  resultStatus: ongoing
+  references:
+    - PMID:41891323
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05854095
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41891323&resultType=core&format=json
+    notes: >-
+      Registry record last updated 2024-02-08; start 2023-03-13 and primary completion 2023-10-17 (both actual);
+      multicenter, open-label, single-arm, investigator-initiated, ten sites in South Korea. A 2026 paper (abstract and
+      funding field read; full text not opened) reports the 15 patients; primaryAnalysis is marked reported on that
+      basis, with the registered endpoint not compared line by line to the paper. resultStatus is a placeholder: no
+      category fits a completed pilot whose results were not categorized.
+- id: trial-spacer-australia-pivot-extend
+  type: trial
+  name: SPACER (Australia, Pivot Extend)
+  nctId: NCT07172477
+  phase: "Early feasibility study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-tau-pivot-extend
+  enrollmentCounts:
+    - count: 10
+      basis: estimated
+      asOf: "2025-12-09"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07172477
+  primaryEndpoint: >-
+    Occurrence rate of major adverse cardiac events (for example stroke, myocardial infarction, pulmonary embolism) at
+    30 days after device implantation.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07172477
+    notes: >-
+      Registry record last updated 2025-12-09; start 2025-11-11 (actual); one site (Macquarie University). The lead
+      sponsor is Tau Medical Australia Pty Ltd with Tau-MEDICAL Co., Ltd. as collaborator; the registry does not state
+      how the two relate, and the company home page lists this study as its own. Enrollment is the estimated target, not
+      patients treated.
+- id: trial-spacer-pivot-extend
+  type: trial
+  name: SPACER Study (Pivot Extend)
+  nctId: NCT06877520
+  phase: "Early feasibility study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-tau-pivot-extend
+  enrollmentCounts:
+    - count: 7
+      basis: estimated
+      asOf: "2025-04-11"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06877520
+  primaryEndpoint: Occurrence ratio of major adverse cardiac events (MACE) at 1 month after the procedure.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06877520
+    notes: >-
+      Registry record last updated 2025-04-11 and not updated since; status Recruiting as verified 2025-04. The
+      estimated start (2025-05) and primary completion (2026-05) have passed, so the status may be out of date. Three
+      sites in Tbilisi, Georgia. Enrollment is the estimated target, not patients treated.
+- id: trial-tavipilot-fih
+  type: trial
+  name: TaviPilot first-in-human study
+  nctId: NCT07043075
+  phase: Device study (not applicable phase)
+  status: not-yet-recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-as
+  therapies:
+    - dig-tavipilot-software
+  enrollmentCounts:
+    - count: 10
+      basis: estimated
+      asOf: "2025-06-29"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07043075
+  primaryEndpoint: Investigational device safety (peroperative).
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07043075
+    notes: >-
+      Registry status Not yet recruiting as last updated 2025-06-29; the estimated start date (2025-08-01) has passed
+      and current status is not verified.
+- id: trial-tavipilot-rotao-1
+  type: trial
+  name: ROTAO 1 (TAVIPILOT tele-operated robot)
+  nctId: NCT07152574
+  phase: Device study (not applicable phase)
+  status: not-yet-recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-as
+  therapies:
+    - dev-tavipilot-robot
+  enrollmentCounts:
+    - count: 10
+      basis: estimated
+      asOf: "2025-09-03"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07152574
+  primaryEndpoint: Investigational device safety (periprocedural).
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07152574
+    notes: >-
+      Registry status Not yet recruiting as last updated 2025-09-03; the estimated start date (2025-09-15) has passed
+      and current status is not verified.
+- id: trial-tavipilot-sairo
+  type: trial
+  name: SAIRO (TAVIPILOT robot guided by software)
+  nctId: NCT07664163
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-as
+  therapies:
+    - dev-tavipilot-robot
+    - dig-tavipilot-software
+  enrollmentCounts:
+    - count: 10
+      basis: estimated
+      asOf: "2026-09-09"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07664163
+  primaryEndpoint: Investigational device-related safety (periprocedural), including absence of major technical malfunctions.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07664163
+    notes: Start date is an estimate (2026-09-10) in the registry record last updated 2026-09-09.
+- id: trial-tavipilot-saito-1b-australia
+  type: trial
+  name: SAITO 1B Australia (TAVIPILOT software)
+  nctId: NCT07121907
+  phase: Device study (not applicable phase)
+  status: not-yet-recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-as
+  therapies:
+    - dig-tavipilot-software
+  enrollmentCounts:
+    - count: 10
+      basis: estimated
+      asOf: "2025-08-14"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07121907
+  primaryEndpoint: Investigational device-related safety (periprocedural).
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07121907
+    notes: >-
+      Registry status Not yet recruiting as last updated 2025-08-14; the estimated start date (2025-09-15) has passed
+      and current status is not verified.
+- id: trial-tavipilot-saito-1b
+  type: trial
+  name: SAITO 1B (TAVIPILOT software)
+  nctId: NCT07100340
+  phase: Device study (not applicable phase)
+  status: not-yet-recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-as
+  therapies:
+    - dig-tavipilot-software
+  enrollmentCounts:
+    - count: 10
+      basis: estimated
+      asOf: "2025-08-03"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07100340
+  primaryEndpoint: Investigational device-related safety (periprocedural).
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07100340
+    notes: >-
+      Registry status Not yet recruiting as last updated 2025-08-03; the estimated start date (2025-09-15) has passed
+      and current status is not verified.
+- id: trial-guardian-point-guard
+  type: trial
+  name: GUARDIAN (POINT-GUARD, Australia)
+  nctId: NCT06962371
+  phase: "Feasibility study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-as
+  therapies:
+    - dev-transverse-point-guard
+  enrollmentCounts:
+    - count: 30
+      basis: estimated
+      asOf: "2025-05-08"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06962371
+  primaryEndpoint: >-
+    Technical success (deployment, positioning and intact retrieval of the Point-Guard filter with minimal device
+    interference); safety endpoints of TAVR procedure complications related to the test device and MACCE (all death, all
+    stroke, acute kidney injury class 3) within 72 hours or discharge and at 30 days.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06962371
+    notes: >-
+      Registry record last updated 2025-05-08 and not updated since; status Recruiting as verified 2025-04, so the
+      current status is unknown. Start 2025-04-07 (actual); one site (Victorian Heart Hospital, Clayton, Australia); the
+      estimated primary completion (2026-03) has passed. Enrollment is the estimated target, not patients treated.
+- id: trial-tricure-efs
+  type: trial
+  name: TRICURE EFS Study
+  nctId: NCT06506942
+  phase: "Early feasibility study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-tricares-topaz
+  enrollmentCounts:
+    - count: 15
+      basis: estimated
+      asOf: "2026-07-23"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06506942
+  primaryEndpoint: >-
+    Composite rate of major adverse events (mortality, myocardial infarction, stroke and major complications) at 30
+    days; device success defined as a reduction in tricuspid regurgitation immediately after the intervention.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06506942
+    notes: >-
+      Registry record last updated 2026-07-23; start 2024-09-11 (actual); single-group; ten sites in the United States
+      and Canada, all recruiting. Enrollment is the estimated target, not patients treated.
+- id: trial-tricure-eu-pivotal
+  type: trial
+  name: TRICURE EU Pivotal Study
+  nctId: NCT06581471
+  phase: "Pivotal study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-tricares-topaz
+  enrollmentCounts:
+    - count: 80
+      basis: estimated
+      asOf: "2026-04-15"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06581471
+  primaryEndpoint: >-
+    Composite rate of major adverse events (mortality, myocardial infarction, stroke and major complications) at 30
+    days; device success defined as a reduction in tricuspid regurgitation immediately after the intervention.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06581471
+    notes: >-
+      Registry record last updated 2026-04-15; start 2024-08-29 (actual); multicenter single-arm; eight sites in Belgium
+      and Germany, two not yet recruiting; estimated primary completion 2026-10-30. "Pivotal" is the sponsor-entered
+      title. Enrollment is the estimated target, not patients treated.
+- id: trial-tricure-fih
+  type: trial
+  name: TRICURE First in Human Trial
+  nctId: NCT05126030
+  phase: "First-in-human study (registry phase: not applicable)"
+  status: active
+  primaryAnalysis:
+    status: reported
+    date: "2025-11-01"
+    precision: month
+    source: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41243777&resultType=core&format=json
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-tricares-topaz
+  enrollmentCounts:
+    - count: 20
+      basis: estimated
+      asOf: "2025-03-26"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05126030
+  primaryEndpoint: >-
+    Hierarchical composite of all-cause mortality, heart failure rehospitalization, re-intervention for failed tricuspid
+    intervention and KCCQ worsening at 30 days (as registered).
+  outcomeSummary: >-
+    The 2025 first-in-human paper (abstract) reports the primary performance endpoint met in all 20 patients, a 30-day
+    composite of major adverse events in 35%, and no device-related pacemaker implant; the authors say outcomes need
+    confirming in a larger series.
+  resultStatus: ongoing
+  references:
+    - PMID:41243777
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05126030
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41243777&resultType=core&format=json
+    notes: >-
+      Registry record last updated 2025-03-26; Active, not recruiting; start 2022-07-15 and primary completion
+      2025-03-01 (both actual); 11 sites in Belgium and France. The registry count is an estimate of 20; the 2025 paper
+      (abstract read; full text not opened) reports 20 patients enrolled and defines its primary safety composite
+      without the KCCQ component, so the registered and published endpoint definitions differ.
+- id: trial-tricure-us-ide-pivotal
+  type: trial
+  name: TRICURE US IDE Pivotal Study
+  nctId: NCT07528326
+  phase: "Pivotal randomized study with a single-arm registry (registry phase: not applicable)"
+  status: not-yet-recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-tricares-topaz
+    - dev-evoque
+  enrollmentCounts:
+    - count: 831
+      basis: estimated
+      asOf: "2026-05-05"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07528326
+  primaryEndpoint: >-
+    Rate of major adverse events at 30 days; composite of all-cause mortality, heart failure hospitalization and
+    non-elective tricuspid valve reintervention at 1 year.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07528326
+    notes: >-
+      Registry record last updated 2026-05-05; status Not yet recruiting (verified 2026-04); estimated start 2026-10; no
+      sites listed. Randomized, parallel: Topaz versus the Edwards EVOQUE system as active comparator, plus a single-arm
+      registry. The company states it has initiated the study; that statement post-dates the registry update. dev-evoque
+      is listed as the registered comparator. Enrollment is the estimated target.
+- id: trial-amend-i
+  type: trial
+  name: AMEND I Study
+  nctId: NCT02602613
+  phase: "Device study (registry phase: not applicable)"
+  status: completed
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-valcare-amend
+  enrollmentCounts:
+    - count: 4
+      basis: actual
+      asOf: "2019-05-03"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT02602613
+  primaryEndpoint: >-
+    Freedom from major serious adverse events at 30 days after the procedure; technical success of implantation (ring
+    location and attachment by echocardiography).
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT02602613
+    notes: >-
+      Registry record last updated 2019-05-03; status Completed (verified 2017-10); start 2015-12; primary completion
+      2018-12 (actual); five sites in Belgium, Czechia, Israel and Italy. The registry names the AMEND Mitral Valve
+      Repair System and does not state its relation to the AMEND Trans-Septal System. resultStatus is a placeholder: no
+      results are posted and no category fits a completed study without categorized results.
+- id: trial-amend-ts-efs
+  type: trial
+  name: AMEND TS Early Feasibility Study
+  nctId: NCT06951672
+  phase: "Early feasibility study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-valcare-amend
+  enrollmentCounts:
+    - count: 15
+      basis: estimated
+      asOf: "2026-01-07"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06951672
+  primaryEndpoint: >-
+    Composite of all-cause death, stroke, myocardial infarction or non-elective cardiovascular surgery for
+    device-related complications at 30 days.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06951672
+    notes: >-
+      Registry record last updated 2026-01-07; start 2025-09-11 (actual); single-arm; symptomatic functional mitral
+      regurgitation 3+ or greater at high surgical risk. The description says up to 7 centers in the US and Canada; 11
+      US locations are listed, 5 not yet recruiting. Enrollment is the estimated target (up to 15), not patients
+      treated.
+- id: trial-vesalius-tmvr-fih
+  type: trial
+  name: Vesalius TMVr First-in-Human ITA Study
+  nctId: NCT07470788
+  phase: "First-in-human study (registry phase: not applicable)"
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-vesalius-tmvr
+  enrollmentCounts:
+    - count: 5
+      basis: estimated
+      asOf: "2026-08-19"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07470788
+  primaryEndpoint: All-cause mortality through 30 days; technical success at procedure exit; device success at 30 days.
+  outcomeSummary: No results are posted in the registry record.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07470788
+    notes: >-
+      Registry record last updated 2026-08-19; status Recruiting (verified 2026-08); start 2026-08 (estimated); up to 5
+      patients at one site (St. Paul's Hospital, Vancouver). No implant or enrollment is documented. Enrollment is the
+      estimated target, not patients treated.
+- id: trial-zenith-laa-feasibility
+  type: trial
+  name: Zenith LAA Occlusion System feasibility study
+  nctId: NCT05951101
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-af
+  therapies:
+    - dev-zenith-laa
+  enrollmentCounts:
+    - count: 10
+      basis: estimated
+      asOf: "2024-10-16"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05951101
+  primaryEndpoint: Procedural success within 72 hours; mechanical device closure at 45 days.
+  resultStatus: ongoing
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05951101
+    notes: >-
+      Registry status Recruiting as last verified 2024-10; the estimated completion dates have passed and current status
+      is not verified. No reviewed document links the 2025 first-in-human paper to this registration.
