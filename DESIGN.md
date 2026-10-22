@@ -1,10 +1,8 @@
 # VISUALIZE-SH — Design System
 
-The look and feel are derived from **[harshadparanjape.com](https://www.harshadparanjape.com/)**.
-
-**Source palette** — `#3b0b55` (deep purple) · `#f0d5ff` (lilac) · `#dcfbb6` (lime)
+**Brand palette** — `#3b0b55` (deep purple) · `#f0d5ff` (lilac) · `#dcfbb6` (lime)
 · `#ffd358` (gold).
-**Source type** — headings **Open Sans**, body/content **Source Sans Pro**.
+**Type** — headings **Open Sans**, body/content **Source Sans Pro**.
 
 This document is the reference; the implementation lives in CSS custom properties in
 [`src/index.css`](src/index.css) (`:root`) and in the graph palette in
