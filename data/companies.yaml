@@ -1241,3 +1241,620 @@
     notes: >-
       T45 Labs release dated 2026-09-29: opening partnership paragraphs and About T45 Labs portfolio
       paragraph. No legal fund entity, ownership percentage or investment date inferred.
+
+- id: co-4c-medical-technologies
+  type: company
+  name: 4C Medical Technologies
+  website: https://www.4cmed.com/
+  description: >-
+    Develops the AltaValve System, a transcatheter mitral valve replacement for mitral regurgitation that the company
+    describes as fixed in the left atrium above the native valve. The device is investigational and is studied in
+    registered clinical trials.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.4cmed.com/technology
+      - https://clinicaltrials.gov/api/v2/studies/NCT06465745
+      - https://clinicaltrials.gov/api/v2/studies/NCT03997305
+- id: co-acorai
+  type: company
+  name: Acorai
+  website: https://acorai.com/
+  description: >-
+    Develops a non-invasive handheld sensor system that the company describes as estimating intracardiac and pulmonary
+    pressures in heart failure. Its registered ClinicalTrials.gov studies are observational data-collection and cohort
+    studies.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://acorai.com/
+      - https://clinicaltrials.gov/api/v2/studies/NCT07671742
+      - https://clinicaltrials.gov/api/v2/studies/NCT05835024
+- id: co-alleviant-medical
+  type: company
+  name: Alleviant Medical
+  hq: Austin, TX, USA
+  website: https://www.alleviantmedical.com/
+  description: >-
+    Develops the Alleviant (ALV1) System, a catheter-created interatrial shunt that leaves no permanent implant, for
+    heart failure. The company states the system is investigational and is evaluating it in two registered
+    sham-controlled studies.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.alleviantmedical.com/
+      - https://reporter.nih.gov/project-details/11289343
+      - https://clinicaltrials.gov/api/v2/studies/NCT05685303
+      - https://clinicaltrials.gov/api/v2/studies/NCT06812533
+- id: co-amygo-solutions
+  type: company
+  name: Amygo Solutions
+  hq: Grand Prairie, TX, USA
+  website: https://www.amygosolutions.com/
+  description: >-
+    Is developing a blood test for earlier detection of transthyretin amyloid cardiomyopathy (ATTR-CM), according to its
+    website and federal award records. The work is funded by NIH and NSF Small Business Innovation Research Phase I
+    awards; no clinical use is documented.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.amygosolutions.com/
+      - https://reporter.nih.gov/project-details/11407018
+      - >-
+        https://api.nsf.gov/services/v1/awards.json?id=2537128&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName,abstractText
+- id: co-anteris-technologies
+  type: company
+  name: Anteris Technologies
+  website: https://anteristech.com/
+  description: >-
+    Structural-heart company that develops the DurAVR THV System, a balloon-expandable transcatheter aortic valve the
+    company describes as a single-piece biomimetic design. DurAVR is investigational and is studied in registered
+    first-in-human, early feasibility and randomized trials.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://anteristech.com/home.html
+      - https://clinicaltrials.gov/api/v2/studies/NCT05182307
+      - https://clinicaltrials.gov/api/v2/studies/NCT05712161
+      - https://clinicaltrials.gov/api/v2/studies/NCT07194265
+      - https://clinicaltrials.gov/api/v2/studies/NCT06510855
+- id: co-anumana
+  type: company
+  name: Anumana
+  hq: Cambridge, MA, USA
+  website: https://anumana.ai/
+  description: >-
+    Develops ECG-based artificial-intelligence software. Two of its algorithms hold FDA 510(k) clearances: ECG-AI Low
+    Ejection Fraction (K250652) and ECG-AI Cardiac Amyloidosis (K253801).
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250652.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K253801.pdf
+      - https://api.fda.gov/device/510k.json?search=k_number:%22K250652%22
+      - https://anumana.ai/
+- id: co-approxima
+  type: company
+  name: Approxima
+  hq: Milan, Italy
+  website: https://www.approximamedical.com/
+  description: >-
+    Is developing a percutaneous tricuspid valve repair system based on ventricular reshaping for tricuspid
+    regurgitation, according to the company's website.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.approximamedical.com/
+- id: co-aurigen-medical
+  type: company
+  name: AuriGen Medical
+  hq: Galway, Ireland
+  website: https://aurigenmedical.com/
+  description: >-
+    Develops the Zenith left atrial appendage occlusion system for stroke prevention in non-valvular atrial
+    fibrillation. A 2025 journal paper reports preclinical testing and a 10-patient first-in-human study, and a
+    feasibility study is registered on ClinicalTrials.gov.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://aurigenmedical.com/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41137840&resultType=core&format=json
+      - https://clinicaltrials.gov/api/v2/studies/NCT05951101
+- id: co-aventusoft
+  type: company
+  name: Aventusoft
+  hq: Boca Raton, FL, USA
+  website: https://aventusoft.com/
+  description: >-
+    Develops HEMOTAG, a non-invasive home monitoring suite for heart failure that its NIH award abstract describes as a
+    home device, a mobile app and analysis software. A randomized HEMOTAG study (HATS-OFF) is registered on
+    ClinicalTrials.gov.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11292754
+      - https://clinicaltrials.gov/api/v2/studies/NCT04149743
+      - https://aventusoft.com/
+- id: co-caranx-medical
+  type: company
+  name: Caranx Medical
+  hq: Paris, France
+  description: >-
+    Develops TAVIPILOT, intra-operative guidance software for valve positioning during transcatheter aortic valve
+    implantation, which received FDA 510(k) clearance (K243884, decision 2025-07-07). A related tele-operated robot is
+    studied in registered feasibility studies.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://api.fda.gov/device/510k.json?search=applicant:%22Caranx%22&limit=5
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf24/K243884.pdf
+      - https://clinicaltrials.gov/api/v2/studies/NCT07043075
+      - https://clinicaltrials.gov/api/v2/studies/NCT07152574
+      - https://clinicaltrials.gov/api/v2/studies/NCT07664163
+- id: co-cardiosense
+  type: company
+  name: Cardiosense
+  website: https://cardiosense.com/
+  description: >-
+    The company describes noninvasive heart-failure monitoring based on a wearable sensor (CardioTag) and PCWP Analysis
+    Software. FDA granted De Novo authorization to the software (DEN250057, order dated 2026-05-22) and cleared
+    CardioTag under 510(k) K243566 (2025-07-22).
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/DEN250057.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf24/K243566.pdf
+      - https://cardiosense.com/
+- id: co-cardioset-medical
+  type: company
+  name: Cardioset Medical
+  hq: Matan, Israel
+  description: >-
+    Develops the Edema Guard Monitor, a non-invasive lung-bioimpedance monitor for fluid management that received FDA
+    510(k) clearance (K250922, decision 2025-09-09). Heart failure is one of the populations named in the cleared
+    indication.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://api.fda.gov/device/510k.json?search=k_number:%22K250922%22
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250922.pdf
+- id: co-corwave
+  type: company
+  name: CorWave
+  website: https://www.corwave.com/
+  description: >-
+    Clinical-stage company (its own description) developing the CorWave LVAS, an implantable left ventricular assist
+    system with a wave-membrane pump for advanced heart failure. The company states the system is investigational and
+    not approved for commercial use in any country.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.corwave.com/
+      - https://www.corwave.com/product/corwave-lvas/
+      - https://clinicaltrials.gov/api/v2/studies/NCT06907017
+- id: co-ebr-systems
+  type: company
+  name: EBR Systems
+  hq: Sunnyvale, CA, USA
+  website: https://www.ebrsystemsinc.com/
+  description: >-
+    Develops the WiSE CRT System, a leadless left ventricular endocardial pacing system for cardiac resynchronization
+    therapy, which FDA approved under PMA P240028 on 2025-04-11.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://api.fda.gov/device/pma.json?search=pma_number:%22P240028%22+AND+supplement_number:%22%22
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240028B.pdf
+      - https://www.ebrsystemsinc.com/
+- id: co-edgewise-therapeutics
+  type: company
+  name: Edgewise Therapeutics
+  website: https://edgewisetx.com/
+  description: >-
+    Develops EDG-7500, an oral cardiac sarcomere modulator that the company describes as diastolic-selective, for
+    hypertrophic cardiomyopathy. EDG-7500 is investigational, and a Phase 2 study (CIRRUS-HCM) is registered on
+    ClinicalTrials.gov.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://edgewisetx.com/science/edg-7500/
+      - https://clinicaltrials.gov/api/v2/studies/NCT06347159
+      - >-
+        https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42770301%20AND%20SRC:MED&resultType=core&format=json
+- id: co-elenae-therapeutics
+  type: company
+  name: Elenae Therapeutics
+  hq: Berkeley, CA, USA
+  website: https://www.elenaetherapeutics.com/
+  description: >-
+    Develops ELN-128, a locked nucleic acid antisense oligonucleotide against microRNA miR-128-3p, aimed at preventing
+    heart-failure progression after myocardial infarction. The company describes the program as in preclinical
+    development with NIH SBIR Phase II support.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11409761
+      - https://www.elenaetherapeutics.com/
+- id: co-fineheart
+  type: company
+  name: FineHeart
+  website: https://fineheart.fr/
+  description: >-
+    Clinical-stage medical device company (its own description) developing the Icoms FlowMaker, an implantable cardiac
+    assist device for advanced heart failure. A first-in-human study (FAIR) is registered on ClinicalTrials.gov.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://fineheart.fr/
+      - https://clinicaltrials.gov/api/v2/studies/NCT07632586
+- id: co-foldax
+  type: company
+  name: Foldax, Inc.
+  hq: Salt Lake City, Utah, USA
+  website: https://www.foldax.com/
+  description: >-
+    The company says it develops surgical and transcatheter heart valves from a proprietary polymer. A 2026 paper with
+    two Foldax-affiliated authors reports bench and 90-day sheep testing of a self-expanding polymeric-leaflet
+    transcatheter aortic valve prototype.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41872486&resultType=core&format=json
+      - https://www.foldax.com/
+    notes: >-
+      Covers the transcatheter aortic valve program only. The company's TRIA surgical valves and their registered
+      studies are not classified in this record. Headquarters is taken from the paper's author affiliation field.
+- id: co-innovheart
+  type: company
+  name: InnovHeart
+  hq: Milan, Italy
+  website: https://innovheart.com/
+  description: >-
+    InnovHeart develops the SATURN transseptal transcatheter mitral valve replacement (TMVR) system for mitral
+    regurgitation. The system is investigational and is in two registered feasibility studies, CASSINI-US and
+    CASSINI-EU.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07130994
+      - https://clinicaltrials.gov/api/v2/studies/NCT06414265
+      - https://innovheart.com/technology/
+      - https://innovheart.com/
+    notes: >-
+      Headquarters is taken from the company home page footer (Milano). Registered studies are listed by the registry
+      under the sponsor name InnovHeart.
+- id: co-intershunt-technologies
+  type: company
+  name: InterShunt Technologies, Inc.
+  website: https://dynamashunt.com/
+  description: >-
+    InterShunt Technologies develops the Dynama System, also known as the PAS-C System, a catheter that removes a small
+    section of interatrial septal tissue to create a left-to-right shunt without a permanent implant, for heart failure.
+    The company describes it as investigational.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://dynamashunt.com/company
+      - https://dynamashunt.com/
+    notes: >-
+      Website is the Dynama brand site; intershunt.com is reported to redirect to it. The registry lists the sponsor as
+      InterShunt Technologies, Inc.
+- id: co-kilele-health
+  type: company
+  name: Kilele Health
+  hq: Oakwood, Ohio, USA
+  website: https://www.kilelehealth.com/
+  description: >-
+    Kilele Health develops SunVida, an aptamer-sensor platform for continuous biochemical monitoring, and lists heart
+    failure as a second-wave application. An NIH SBIR Phase I award record describes a skin-insertable monitor of
+    NT-proBNP and potassium for heart-failure patients after discharge, with animal validation as the stated aim.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11072993
+      - https://www.kilelehealth.com/aptamer
+      - https://www.kilelehealth.com/
+    notes: >-
+      Heart failure is not the company's lead application (its home page leads with phenylketonuria and GLP-1
+      monitoring). Location is the awardee city in the NIH and NSF records; the legal form (Inc. or LLC) differs between
+      records.
+- id: co-medfree
+  type: company
+  name: Medfree
+  hq: Newark, California, USA
+  website: https://medfreeinc.com/
+  description: >-
+    Medfree describes itself as a structural heart device startup focused on percutaneous treatment of mitral and
+    tricuspid regurgitation by edge-to-edge repair. NIH and NSF award records describe two preclinical self-closing
+    transcatheter repair devices; no human use is documented.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11059902
+      - >-
+        https://api.nsf.gov/services/v1/awards.json?id=2322197&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName,abstractText,projectOutComesReport
+      - https://medfreeinc.com/
+    notes: Location is the awardee city in the NIH and NSF records. Legal name in funder records is MEDFREE, INC.
+- id: co-nyra-medical
+  type: company
+  name: Nyra Medical, Inc.
+  hq: Atlanta, Georgia, USA
+  website: https://nyramedical.com/
+  description: >-
+    Nyra Medical develops CARLEN (Nyra Cardiac Leaflet Enhancer), a transcatheter single-leaflet implant for functional
+    mitral regurgitation. The system is investigational and is in the ENHANCE EFS early feasibility study.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07503236
+      - https://nyramedical.com/our-technology/
+      - https://nyramedical.com/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42317202&resultType=core&format=json
+    notes: Location is taken from the Atlanta affiliation of a 2026 paper author and the company site footer.
+- id: co-polares-medical
+  type: company
+  name: Polares Medical SA
+  website: https://www.polaresmedical.com/
+  description: >-
+    Polares Medical develops the MR-ace (MRace) transcatheter leaflet restoration system, a posterior-leaflet implant
+    for mitral regurgitation. The company states the device is investigational and not approved for sale in or outside
+    the United States.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.polaresmedical.com/mrace-technology/
+      - https://www.polaresmedical.com/clinical-trials/
+    notes: >-
+      Registry sponsor is Polares Medical SA; the company site lists locations in Lausanne and Palo Alto, so no single
+      headquarters is given. Other registrations under the same sponsor (including studies named PLAR) were not
+      reviewed.
+- id: co-polyvascular
+  type: company
+  name: PolyVascular
+  hq: Houston, Texas, USA
+  website: https://polyvascular.com/
+  description: >-
+    PolyVascular develops a polymeric stent-mounted transcatheter pulmonary valve for use in young children with
+    congenital heart disease. An NIH SBIR Phase II award abstract (applicant text) proposes a first-in-human early
+    feasibility study; no human use is documented.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11044614
+    notes: >-
+      Website supplied by the site owner; no company page was reviewed. Location is the awardee city in the NIH record.
+      The company is known here only from the NIH award record.
+- id: co-recross-cardio
+  type: company
+  name: Recross Cardio, Inc.
+  website: https://recrosscardio.com/
+  description: >-
+    Recross Cardio describes itself as a structural heart company developing next-generation membrane sealing
+    technologies. Its P3 Occluder (P3O) System, a transcatheter occluder for closing a patent foramen ovale in
+    PFO-associated stroke, is in two registered feasibility studies (PROTEA-PFO and PROTEA-PFO OUS).
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07172464
+      - https://clinicaltrials.gov/api/v2/studies/NCT07698951
+      - https://recrosscardio.com/
+    notes: >-
+      The company description rests on home page metadata only; the page body is script-rendered and was not readable.
+      No ASD program is claimed.
+- id: co-sensydia
+  type: company
+  name: Sensydia
+  website: https://www.sensydia.com/
+  description: >-
+    Sensydia develops the Cardiac Performance System (CPS), a non-invasive platform that pairs chest acoustic sensors
+    and ECG electrodes with algorithms to estimate hemodynamic measures; the company presents it for heart failure
+    assessment. The company describes CPS as investigational under an FDA Investigational Device Exemption.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11322000
+      - https://www.sensydia.com/hemodynamics-heart-failure
+      - https://www.sensydia.com/
+    notes: >-
+      Headquarters not given: the company site lists a Valencia, California address and the NIH record lists Los
+      Angeles. The platform is also aimed at pulmonary hypertension, which is not covered here.
+- id: co-tau-medical
+  type: company
+  name: Tau-MEDICAL Co., Ltd.
+  website: https://www.tau-medical.com/
+  description: >-
+    The company (site brand Tau Medical) develops transcatheter therapies for tricuspid regurgitation around Pivot-TR, a
+    transfemoral spacer platform offered as a permanent device (Pivot Extend) and a temporary device (Pivot Bridge). It
+    states the devices are investigational and not commercially available.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05854095
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41891323&resultType=core&format=json
+      - https://www.tau-medical.com/
+      - https://www.tau-medical.com/about.html
+    notes: >-
+      Research and manufacturing sites are listed in Busan and Yangsan, Korea; no headquarters is stated. The registry
+      sponsor name is Tau-MEDICAL Co., Ltd. (Korea); one Australian study is sponsored by Tau Medical Australia Pty Ltd,
+      whose relation to the Korean company is not stated by the registry. Not to be confused with Alpha Tau Medical.
+- id: co-transverse-medical
+  type: company
+  name: Transverse Medical, Inc.
+  website: https://www.transversemedical.com/
+  description: >-
+    Transverse Medical develops POINT-GUARD, a cerebral embolic protection device intended for use during transcatheter
+    aortic valve replacement. The company states the device is investigational and not cleared for sale by any
+    regulatory authority.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.transversemedical.com/
+      - https://www.transversemedical.com/the-solution-24
+- id: co-tricares
+  type: company
+  name: TRiCares
+  website: https://www.tricares.com/
+  description: >-
+    TRiCares develops the Topaz transcatheter tricuspid valve replacement system for tricuspid regurgitation. The system
+    is investigational and is in registered first-in-human, European pivotal, US early feasibility and US IDE pivotal
+    studies.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05126030
+      - https://clinicaltrials.gov/api/v2/studies/NCT06581471
+      - https://clinicaltrials.gov/api/v2/studies/NCT07528326
+      - https://www.tricares.com/topaz
+      - https://www.tricares.com/clinical
+    notes: >-
+      The site lists group entities in Germany, France and the United States (TRiCares GmbH, TRiCares SAS, TRiCares
+      Corporation); no single headquarters is given and their relations were not checked.
+- id: co-us2-ai
+  type: company
+  name: Us2.ai
+  hq: Singapore
+  website: https://us2.ai/
+  description: >-
+    Us2.ai (legal name Eko.Ai Pte Ltd, Singapore) develops AI software that analyzes echocardiography images. FDA
+    records show 510(k) clearances for its Us2.v2 measurement software (2024) and its Us2.ca software to support the
+    diagnosis of cardiac amyloidosis in adults with increased left ventricular wall thickness (2025).
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://api.fda.gov/device/510k.json?search=k_number:%22K250151%22
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250151.pdf
+      - https://us2.ai/
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf23/K233676.pdf
+    notes: >-
+      Location is the applicant address in the FDA records. Not to be confused with Eko Health (digital stethoscopes);
+      no document read links the two Eko names. The Us2.ca label does not differentiate ATTR from AL amyloidosis, so no
+      condition is linked here.
+- id: co-valcare-medical
+  type: company
+  name: Valcare Medical Ltd.
+  website: https://valcaremedical.com/
+  description: >-
+    Valcare Medical develops AMEND, a semi-rigid D-shaped annuloplasty ring delivered by transseptal catheter for mitral
+    regurgitation. The company describes the system as investigational.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06951672
+      - https://valcaremedical.com/physicians/
+      - https://valcaremedical.com/
+    notes: >-
+      The company site gives a Delaware address while the registry sponsor is Valcare Medical Ltd.; no headquarters is
+      stated here.
+- id: co-vesalius-cardiovascular
+  type: company
+  name: Vesalius Cardiovascular Inc.
+  hq: Vancouver, Canada
+  website: https://vesaliuscardio.com/
+  description: >-
+    Vesalius Cardiovascular develops the Vesalius Transcatheter Mitral Valve Repair (TMVr) System, a transfemoral device
+    that provides both chordal replacement and annuloplasty for degenerative mitral regurgitation. A first-in-human
+    study at one Canadian site is registered.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07470788
+      - https://vesaliuscardio.com/tmvr-system/
+      - https://vesaliuscardio.com/about/
+    notes: >-
+      The company home page and About page word its stage differently (pre-clinical versus clinical-stage); the registry
+      lists a first-in-human study with an estimated August 2026 start.
+- id: co-youngheartvalve
+  type: company
+  name: YoungHeartValve
+  hq: Atlanta, Georgia, USA
+  website: https://youngheartvalve.com/
+  description: >-
+    YoungHeartValve develops the Rejuvenate Heart Valve, a balloon-expandable transcatheter aortic valve with
+    hyaluronan-impregnated polymeric leaflets. The company describes the valves as investigational and not available for
+    sale.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11193821
+      - https://youngheartvalve.com/
+    notes: >-
+      Location is the awardee city in the NIH record. The legal form differs between the NIH organization field (LLC)
+      and the abstract text (Inc.).
+
+- id: co-avatar-medtech
+  type: company
+  name: AVaTAR MedTech
+  hq: Buenos Aires, Argentina
+  website: https://www.avatarmedtech.com/
+  description: >-
+    AVaTAR MedTech develops AVaTAR (Aortic Valve Trileaflet Autologous Reconstruction), a surgical method and set of
+    single-use instruments that the company says reconstruct the aortic or pulmonary valve from the patient's own tissue
+    in children and adults. A 2025 surgical-society meeting abstract reports the technique with prototype devices in
+    seven children with severe aortic regurgitation.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.avatarmedtech.com/
+      - https://www.avatarmedtech.com/contact
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13615604/fullTextXML
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13476999/fullTextXML
+    notes: >-
+      Product description is the company's own wording (sponsor claim). Location is the address on the company contact
+      page; legal entity and incorporation are not established. The abstract is a preliminary meeting abstract whose
+      authors include the company's chief scientific officer per the 2026 JTCVS Open disclosure.
+- id: co-corveus-medical
+  type: company
+  name: Corveus Medical
+  hq: Houston, Texas, USA
+  website: https://www.corveusmedical.com/
+  description: >-
+    Corveus Medical is developing a minimally invasive, catheter-delivered venous procedure to ablate the greater
+    splanchnic nerve as a treatment for congestive heart failure. An NSF SBIR Phase I award (2023 to 2024) and the
+    company's own statements describe preclinical work; no human use is documented.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.corveusmedical.com/
+      - https://www.corveusmedical.com/home
+      - >-
+        https://api.nsf.gov/services/v1/awards.json?id=2213155&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName,abstractText
+    notes: >-
+      Location is the awardee city in the NSF record; the company home page also says it is based in Houston. The
+      awardee's NSF outcomes report states a former name, Caridian Medical, Inc.; no state or SEC filing was opened.
+      Product descriptions are the company's own wording or the applicant's award abstract.
