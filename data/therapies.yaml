@@ -5605,3 +5605,76 @@
       - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41137840&resultType=core&format=json
       - https://clinicaltrials.gov/api/v2/studies/NCT05951101
       - https://aurigenmedical.com/
+
+- id: dev-avatar-valve-reconstruction
+  type: therapy
+  therapyType: device
+  subtype: Single-use instrument set and surgical method for autologous trileaflet valve reconstruction
+  name: AVaTAR (Aortic Valve Trileaflet Autologous Reconstruction)
+  company: co-avatar-medtech
+  treats:
+    - cond-as
+    - cond-ar
+    - cond-pv
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational: the clinical series in a 2025 meeting abstract used prototype devices, and the company describes
+    injection-molded production instruments as planned. No regulatory status is documented.
+  mechanism: >-
+    Sponsor-described: single-use instruments standardize building a symmetric trileaflet valve from the patient's own
+    tissue (autologous pericardium in the reported series) and its semi-automated implantation. The neo-valve has no
+    rigid frame and, for children, is intentionally oversized so the annulus can grow.
+  description: >-
+    Surgical method and set of single-use instruments that the company says let a surgeon build a symmetric trileaflet
+    valve from the patient's own tissue and implant it to reconstruct the aortic or pulmonary valve in children and
+    adults. A finite-element simulation of the AVaTAR aortic design was published in 2026. The documented clinical
+    report is a preliminary 2025 meeting abstract of 7 children with severe aortic regurgitation treated with prototype
+    devices: 71% had absent or mild regurgitation at discharge; at a mean 4.3 years 43% did, the rest had moderate
+    regurgitation, 57% had absent or mild stenosis (mean peak gradient 43 mmHg), and none needed reintervention. The
+    company's own larger patient counts are undated and are not combined with the abstract.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.avatarmedtech.com/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13476999/fullTextXML
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13615604/fullTextXML
+    notes: >-
+      Product description is the company's own wording (sponsor claim). The conditions are sponsor-described; the only
+      documented clinical series is aortic regurgitation in children. Kit version, regulatory status and trial
+      registration are not established. The abstract's authors include the company's chief scientific officer per the
+      2026 JTCVS Open disclosure.
+- id: dev-corveus-gsn-catheter
+  type: therapy
+  therapyType: device
+  subtype: Catheter-based nerve ablation (greater splanchnic nerve, venous approach)
+  name: Corveus venous catheter for greater splanchnic nerve ablation
+  company: co-corveus-medical
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  regulatoryDetail: Preclinical, per the company's NSF award outcomes report. No human use and no regulatory status are documented.
+  mechanism: >-
+    Sponsor-described: a catheter reaches the target nerve branch through venous anatomy and ablates it; the NSF award
+    abstract describes extravascular, localized energy delivery and a detection system indicating procedural success.
+  description: >-
+    The NSF SBIR Phase I award abstract describes a minimally invasive, catheter-delivered venous procedure for
+    extravascular greater splanchnic nerve ablation in a subset of heart failure patients. The company calls it a
+    non-implantable, one-time treatment and says full nerve deactivation can be confirmed during the procedure. Energy
+    type and device configuration are not stated. An independent 2024 review lists Corveus Medical as an example in the
+    neuromodulation column of a table of interventional therapies for chronic heart failure; it gives no device data.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - >-
+        https://api.nsf.gov/services/v1/awards.json?id=2213155&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName,abstractText
+      - https://www.corveusmedical.com/
+      - https://www.corveusmedical.com/home
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC11911643/
+    notes: >-
+      No product name is documented, so the name is descriptive. Preclinical statements are the awardee's own (NSF
+      outcomes report); the abstract is the applicant's plan at award time. The company's heart failure wording differs
+      by page and the ejection-fraction subtype is not stated. No registry trial was found.
