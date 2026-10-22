@@ -4559,6 +4559,1056 @@
       Procedure taxonomy addition; source locator: Approval Order Statement. See
       docs/ATLAS_RELATIONSHIP_RESEARCH_2026-10-15.md. No blanket device authorization inferred.
 
+- id: dev-acorai-save-sensor
+  type: therapy
+  therapyType: device
+  subtype: Non-invasive handheld hemodynamic sensor
+  name: Acorai SAVE Sensor System
+  company: co-acorai
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational. In the registered hospitalized-heart-failure study the device gives no diagnostic output to
+    clinicians. No clearance or approval document was reviewed.
+  mechanism: >-
+    Sponsor-described: short recordings from seismic, acoustic, visual and electric sensors analyzed by proprietary
+    machine-learning models; algorithm not read.
+  description: >-
+    Non-invasive handheld multimodal sensor system that, per the company, takes short recordings of thoracic signals and
+    uses machine-learning models to estimate intracardiac and pulmonary pressures in heart failure. Registered Acorai
+    studies collect sensor data in hospitalized and right-heart-catheterization patients.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07671742
+      - https://clinicaltrials.gov/api/v2/studies/NCT05835024
+      - https://acorai.com/
+    notes: >-
+      The registry names the studied device 'Acorai Device 1.0' and 'Acorai Sensor Data Collection (ASDC) system 1.0';
+      no reviewed document states these are the product the company page calls the SAVE Sensor System.
+- id: dev-alleviant-alv1
+  type: therapy
+  therapyType: device
+  subtype: Interatrial shunt (catheter-created, no permanent implant)
+  name: Alleviant ALV1 System
+  company: co-alleviant-medical
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational: the company states the Alleviant (ALV1) System is not cleared, authorized or approved for
+    commercial use in any global geography. Two sham-controlled studies are registered.
+  mechanism: >-
+    Applicant-described: transcatheter creation of a left-to-right atrial shunt for left atrial decompression, leaving
+    no cardiac implant.
+  description: >-
+    Catheter-based system that creates a left-to-right interatrial shunt without leaving a permanent cardiac implant, to
+    lower left atrial pressure in chronic heart failure (company and applicant descriptions). Studied in two registered
+    randomized sham-controlled studies: ALLAY-HF (HFpEF/HFmrEF) and ALLAY-HFrEF.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11289343
+      - https://clinicaltrials.gov/api/v2/studies/NCT05685303
+      - https://clinicaltrials.gov/api/v2/studies/NCT06812533
+      - https://www.alleviantmedical.com/
+- id: dev-altavalve
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter mitral valve replacement (supra-annular, left atrial fixation)
+  name: AltaValve System
+  company: co-4c-medical-technologies
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational per the company's Technology page (investigational-device caution); a pivotal trial and an early
+    feasibility study are registered. No regulatory authorization document was reviewed.
+  mechanism: >-
+    Company-described: valve positioned above the native mitral valve with fixation in the left atrium only; a 2025
+    review abstract states there is no left ventricular anchoring.
+  description: >-
+    Transcatheter mitral valve replacement system for mitral regurgitation. The company describes a valve positioned
+    above the native mitral valve and fixed in the left atrium only, delivered transseptally (also available
+    transapically). A 2025 review abstract describes the supra-annular design without left ventricular anchoring.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06465745
+      - https://clinicaltrials.gov/api/v2/studies/NCT03997305
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41224388&resultType=core&format=json
+      - https://www.4cmed.com/technology
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40340705&resultType=core&format=json
+- id: dev-amygo-tad1-assay
+  type: therapy
+  therapyType: device
+  subtype: Blood-based aggregate-detection assay (in vitro diagnostic, in development)
+  name: AmyGo TAD1-based ATTR-CM blood test
+  company: co-amygo-solutions
+  treats:
+    - cond-attr-cm
+  regulatoryStatus: investigational
+  regulatoryDetail: In development under NIH and NSF Phase I small-business awards; no regulatory authorization is documented.
+  mechanism: "Applicant-described: a structure-guided peptide (TAD1) binds pathogenic transthyretin aggregates in plasma."
+  description: >-
+    Blood test in development that, per the applicant, uses a peptide (TAD1) to detect circulating misfolded
+    transthyretin aggregates for earlier diagnosis of ATTR cardiomyopathy. A dot-blot version is described as existing;
+    the Phase I work aims to build a kit and validate it on clinical samples.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11407018
+      - >-
+        https://api.nsf.gov/services/v1/awards.json?id=2537128&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName,abstractText
+      - https://www.amygosolutions.com/
+- id: dig-anumana-ecg-ai-lef
+  type: therapy
+  therapyType: digital
+  subtype: ECG-based AI software for low ejection fraction detection
+  name: ECG-AI Low Ejection Fraction (LEF) 12-Lead Algorithm
+  company: co-anumana
+  treats:
+    - cond-hf
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    US FDA 510(k) clearance K250652 (decision 2025-07-28), a submission to expand ECG device compatibility for this
+    algorithm against its earlier clearance K232699 (not reviewed). Indication: software to aid earlier detection of
+    LVEF of 40% or less in adults at risk for heart failure; not stand-alone. This is a 510(k) clearance, not a PMA
+    approval.
+  description: >-
+    ECG-based machine-learning software that aids earlier detection of left ventricular ejection fraction of 40% or less
+    on a 12-lead ECG in adults at risk for heart failure (for example cardiomyopathies, post-MI, aortic stenosis,
+    chronic atrial fibrillation, cardiotoxic therapy, postpartum). A negative result does not rule out evaluation in
+    high-risk patients.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250652.pdf
+      - https://anumana.ai/
+- id: dev-approxima-tricuspid-reshaping
+  type: therapy
+  therapyType: device
+  subtype: Percutaneous tricuspid repair (ventricular reshaping)
+  name: Approxima percutaneous tricuspid ventricular reshaping repair system
+  company: co-approxima
+  treats:
+    - cond-tr
+  regulatoryStatus: investigational
+  regulatoryDetail: In development per the company's website; no regulatory record was reviewed.
+  mechanism: "Sponsor-described: percutaneous system that reshapes the ventricle and annulus to address leaflet tethering."
+  description: >-
+    Percutaneous tricuspid valve repair system based on a ventricular reshaping approach that the company says targets
+    the root cause of tricuspid regurgitation. The company cites in vivo data for ventricle and annulus reshaping and
+    tricuspid regurgitation reduction; the device design is not described on the page.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.approximamedical.com/
+- id: dig-cardiosense-pcwp-software
+  type: therapy
+  therapyType: digital
+  subtype: Software device system for estimation of cardiac pressures
+  name: PCWP Analysis Software
+  company: co-cardiosense
+  treats:
+    - cond-hfref
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    US FDA De Novo grant DEN250057 (order dated 2026-05-22): software device system for estimation of cardiac pressures
+    (21 CFR 870.1150, Class II, product code SIF), with a predetermined change control plan. This is a De Novo grant,
+    not a 510(k) clearance or PMA approval. The order names no hardware.
+  description: >-
+    Prescription software that noninvasively estimates pulmonary capillary wedge pressure (PCWP) and identifies PCWP
+    above or below 18 mmHg, indicated for patients diagnosed with HFrEF and NYHA class II to IV symptoms and used by
+    qualified healthcare professionals with other standard-of-care parameters. The company website presents it with the
+    CardioTag wearable sensor; the FDA order does not name that hardware.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/DEN250057.pdf
+      - https://cardiosense.com/
+- id: dev-corwave-lvas
+  type: therapy
+  therapyType: device
+  subtype: Left ventricular assist system (wave-membrane pump)
+  name: CorWave LVAS
+  company: co-corwave
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational: the company states the LVAS is under clinical investigation and not approved for commercial use in
+    any country (website, metadata modified 2026-03-02).
+  mechanism: >-
+    Sponsor-described: an undulating wave-membrane pump intended to give pulsatile flow; powered by a percutaneous
+    driveline to an external controller and batteries.
+  description: >-
+    Implantable left ventricular assist system for advanced heart failure that the company describes as using a
+    pulsatile wave-membrane pump, designed for 5 to 6 L/min flow and implantable in the intrapericardial cavity by
+    standard surgical procedures. A first-in-human study is registered on ClinicalTrials.gov.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06907017
+      - https://www.corwave.com/product/corwave-lvas/
+      - https://www.corwave.com/
+- id: dev-duravr-thv
+  type: therapy
+  therapyType: device
+  subtype: Balloon-expandable transcatheter aortic valve
+  name: DurAVR THV System
+  company: co-anteris-technologies
+  treats:
+    - cond-as
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational: the company's website marks DurAVR as investigational use only and not available for commercial
+    sale.
+  mechanism: Company-described single-piece, native-shaped (biomimetic) valve intended to mimic healthy aortic valve performance.
+  description: >-
+    Balloon-expandable transcatheter aortic valve for severe aortic stenosis that the company describes as a
+    single-piece, native-shaped biomimetic design. Studied in registered first-in-human (EMBARK), early feasibility and
+    randomized (PARADIGM) trials; a 2026 EuroIntervention paper (abstract) reports pooled 30-day outcomes of the
+    small-sized valve in 100 patients with small aortic annuli.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05182307
+      - https://clinicaltrials.gov/api/v2/studies/NCT05712161
+      - https://clinicaltrials.gov/api/v2/studies/NCT07194265
+      - https://anteristech.com/home.html
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41251720&resultType=core&format=json
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40958620&resultType=core&format=json
+- id: dev-edema-guard-monitor
+  type: therapy
+  therapyType: device
+  subtype: Lung bioimpedance fluid-status monitor
+  name: Edema Guard Monitor (EGM) CardioSet-001
+  company: co-cardioset-medical
+  treats:
+    - cond-hf
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    US FDA 510(k) clearance K250922 (decision 2025-09-09, traditional pathway, product code DSB, Class II). This is a
+    510(k) clearance, not a PMA approval. Other jurisdictions were not reviewed.
+  mechanism: >-
+    Submitter-described in the 510(k) summary: measures lung bioimpedance with six chest electrodes to track fluid
+    status; same measurement principle as the predicate.
+  description: >-
+    Non-invasive lung-bioimpedance monitor that tracks fluid status as an adjunct to clinical assessment, used under a
+    physician's direction. The cleared indication covers patients with fluid management problems, taking diuretics,
+    living with heart failure, or suffering or recovering from a coronary artery disease event; heart failure is one of
+    four named populations.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://api.fda.gov/device/510k.json?search=k_number:%22K250922%22
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250922.pdf
+    notes: >-
+      Heart failure is one of four populations in the indication; heart-failure clinical studies in the FDA summary
+      concern an earlier device version.
+- id: rx-edg-7500
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: Cardiac sarcomere modulator (diastolic-selective)
+  name: EDG-7500
+  company: co-edgewise-therapeutics
+  treats:
+    - cond-hcm
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational: the company states EDG-7500 is not approved for use in HCM by any regulatory agency (website,
+    metadata modified 2026-04-20). A Phase 2 study is registered.
+  mechanism: >-
+    Sponsor-described: oral modulator of cardiac myosin intended to improve relaxation and filling while preserving
+    systolic function.
+  description: >-
+    Oral cardiac sarcomere modulator that the company and a sponsor-authored 2026 paper describe as diastolic-selective,
+    aimed at symptomatic hypertrophic cardiomyopathy. In preclinical models the authors report improved relaxation and
+    filling pressure without systolic impairment; the open-label Phase 2 CIRRUS-HCM study is registered.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - >-
+        https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42770301%20AND%20SRC:MED&resultType=core&format=json
+      - https://clinicaltrials.gov/api/v2/studies/NCT06347159
+      - https://edgewisetx.com/science/edg-7500/
+- id: rx-eln-128
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: Locked nucleic acid antisense oligonucleotide (anti-miRNA)
+  name: ELN-128 (anti-miR-128 antisense oligonucleotide)
+  company: co-elenae-therapeutics
+  treats:
+    - cond-hf
+    - cond-ischemic-lv-remodeling
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Preclinical: no human use or IND is documented; the NIH award abstract (applicant text) describes IND-enabling
+    studies as the next step.
+  mechanism: "Applicant-described: inhibits miR-128-3p, a proposed regulator of post-infarct remodeling; dosing route not stated."
+  description: >-
+    Locked nucleic acid antisense oligonucleotide targeting miR-128-3p, aimed at preventing heart-failure progression
+    after myocardial infarction. The applicant's abstract reports testing in mouse and cynomolgus monkey models; the NIH
+    Phase II plan covers dosing and efficacy in a porcine ischemia/reperfusion model and rat safety studies.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11409761
+      - https://www.elenaetherapeutics.com/
+- id: dev-foldax-sipuu-tavi
+  type: therapy
+  therapyType: device
+  subtype: Self-expanding transcatheter aortic valve (polymeric leaflets)
+  name: Foldax SiPUU polymeric-leaflet TAVI
+  company: co-foldax
+  treats:
+    - cond-as
+  regulatoryStatus: investigational
+  regulatoryDetail: Preclinical prototype (bench and sheep testing). No human use and no regulatory authorization are documented.
+  mechanism: >-
+    Per the paper abstract: self-expanding nitinol-framed valve with siloxane poly(urethane-urea) (SiPUU) leaflets and
+    an electrospun SiPUU skirt.
+  materials:
+    - name: Nitinol
+      role: Self-expanding valve frame
+      category: frame
+      source: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41872486&resultType=core&format=json
+      note: Prototype described in the 2026 paper abstract.
+    - name: Siloxane poly(urethane-urea) (SiPUU)
+      role: Valve leaflets
+      category: leaflet
+      source: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41872486&resultType=core&format=json
+      note: Prototype described in the 2026 paper abstract.
+    - name: Electrospun SiPUU
+      role: Valve skirt
+      category: fabric
+      source: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41872486&resultType=core&format=json
+      note: Prototype described in the 2026 paper abstract.
+  description: >-
+    The authors report frame fatigue testing to 200 million cycles, hydrodynamic testing per ISO 5840-3 and nine sheep
+    implants followed to 90 days; six animals completed follow-up with stable hemodynamics, no hemolysis, no
+    paravalvular leak at implant and no calcification at explant. They say further testing and delivery refinement are
+    needed toward first-in-human evaluation. Abstract only; no human data.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41872486&resultType=core&format=json
+    notes: >-
+      Abstract of the 2026 NPJ Cardiovascular Health paper read; full text not opened. Three of nine animals did not
+      complete follow-up (reason not in the abstract). Two authors list Foldax, Inc.; the paper does not state who owns
+      the design. Materials are as named in the abstract for the prototype.
+- id: dev-hemotag
+  type: therapy
+  therapyType: device
+  subtype: Home heart-failure monitoring suite (device, mobile app, analysis software)
+  name: HEMOTAG
+  company: co-aventusoft
+  treats:
+    - cond-hf
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    The applicant's NIH award abstract describes two HEMOTAG components as FDA registered and one as under FDA review.
+    FDA registration is not clearance, and no FDA clearance or approval record was reviewed.
+  mechanism: >-
+    Applicant-described: a home device times parts of the cardiac cycle as a surrogate for intracardiac pressures, with
+    a phone app and cloud analysis software; algorithm not read.
+  description: >-
+    Non-invasive heart-failure monitoring suite that the applicant describes as three products: HEMOTAG Vitals (a home
+    device), a HEMOTAG mobile app and HEMOTAG Analysis Software, for hemodynamic-guided therapy. A randomized diagnostic
+    study (HATS-OFF) is registered; its status has been unverified since 2024-08.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11292754
+      - https://clinicaltrials.gov/api/v2/studies/NCT04149743
+      - https://aventusoft.com/
+    notes: >-
+      Regulatory status left unknown: the sponsor describes FDA registration only. Therapy type drafted as device; the
+      suite also includes an app and analysis software.
+- id: dev-icoms-flowmaker
+  type: therapy
+  therapyType: device
+  subtype: Implantable intracardiac cardiac assist device
+  name: Icoms FlowMaker
+  company: co-fineheart
+  treats:
+    - cond-hfref
+  regulatoryStatus: investigational
+  regulatoryDetail: "Investigational: a first-in-human study is registered (NCT07632586); CE and FDA status were not reviewed."
+  mechanism: "Registry wording: adds blood flow during each systole; implanted without cardiopulmonary bypass."
+  description: >-
+    Implantable cardiac assist device that, per the registry, adds blood flow on top of native flow during each systole
+    while the heart keeps its own pump function, implanted surgically in advanced heart failure (LVEF 35% or less). The
+    registered first-in-human study (FAIR) targets patients at high risk for a conventional LVAD or for percutaneous
+    driveline morbidity.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07632586
+      - https://fineheart.fr/
+- id: dev-innovheart-saturn-ts-tmvr
+  type: therapy
+  therapyType: device
+  subtype: Transseptal transcatheter mitral valve replacement
+  name: SATURN TS TMVR System
+  company: co-innovheart
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational; registered in CASSINI-EU and CASSINI-US. The company describes it as investigational. No marketing
+    authorization is documented.
+  mechanism: >-
+    The company describes a pericardial valve joined to an annular structure, implanted as one device through a 29 Fr
+    transseptal delivery system.
+  materials: []
+  description: >-
+    CASSINI-US is a prospective single-arm early feasibility study in symptomatic functional or mixed mitral
+    regurgitation at high surgical risk. A company home page news item says the first US implant was in August 2026 and
+    that 15 patients had been reached globally; these are sponsor statements and are not independently confirmed.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07130994
+      - https://clinicaltrials.gov/api/v2/studies/NCT06414265
+      - https://innovheart.com/technology/
+      - https://innovheart.com/
+    notes: >-
+      Sponsor description from an undated company page; design and benefit statements are the sponsor's. Implant
+      composition not verified. The company's earlier transapical pilot registration was not reviewed.
+- id: dev-intershunt-dynama-pas-c
+  type: therapy
+  therapyType: device
+  subtype: No-implant interatrial shunt (septal tissue excision)
+  name: Dynama System (PAS-C)
+  company: co-intershunt-technologies
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational. The company site describes the Dynama System (also known as the PAS-C System) as an investigational
+    device. No marketing authorization is documented.
+  mechanism: >-
+    Per the registry and the company, a catheter excises a small section of interatrial septal tissue to create a
+    left-to-right shunt that lowers left atrial pressure, without a permanent implant.
+  materials: []
+  description: >-
+    Registered in two single-arm studies: EASE HF (10 patients enrolled, status unknown) and EASE HF2 (early feasibility
+    study, estimated 20 patients, active not recruiting). The registry does not state whether the same device version
+    was used in both. The company calls the system the only interatrial shunting device requiring no implant or energy;
+    this is a sponsor claim.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06859970
+      - https://clinicaltrials.gov/api/v2/studies/NCT05403372
+      - https://dynamashunt.com/company
+      - https://dynamashunt.com/
+    notes: >-
+      Heart failure (cond-hf) is used because the two studies differ by ejection fraction: EASE HF2 requires LVEF
+      20-40%; EASE HF listed LVEF 40% or more with diastolic dysfunction among key criteria. The system is described as
+      implant-free, so no implant materials are listed.
+- id: dev-kilele-sunvida-hf-monitor
+  type: therapy
+  therapyType: device
+  subtype: Wearable aptamer biosensor (continuous monitoring)
+  name: SunVida heart-failure molecular monitor (NT-proBNP and potassium)
+  company: co-kilele-health
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  regulatoryDetail: Preclinical, per the applicant's award abstract. No human use and no regulatory status are documented.
+  mechanism: >-
+    Applicant-described factory-calibrated, skin-insertable sensor strip that continuously measures NT-proBNP and
+    potassium.
+  materials: []
+  description: >-
+    The NIH award abstract (applicant text) sets out planned Phase I work: build the sensor strip, show batch
+    fabrication and test for at least 3 days in rats; no animal or human results are stated. The company site marks
+    heart failure as a later application after phenylketonuria and GLP-1 monitoring. An NSF SBIR Phase II record for the
+    same awardee also covers a wearable NT-proBNP monitoring system for heart failure.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11072993
+      - https://www.kilelehealth.com/aptamer
+      - https://www.kilelehealth.com/
+      - >-
+        https://api.nsf.gov/services/v1/awards.json?keyword=%22Kilele+Health%22&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName
+    notes: >-
+      Sponsor wording throughout; "first-ever continuous molecular monitor" is the applicant's phrase and is not adopted
+      here. Sensor composition not verified.
+- id: dev-medfree-mitral-teer
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter edge-to-edge mitral repair
+  name: Medfree self-closing 12F mitral valve repair system
+  company: co-medfree
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: Preclinical, per the applicant. No human use and no regulatory status are documented.
+  mechanism: >-
+    Applicant-described self-closing transcatheter edge-to-edge repair device delivered through the femoral vein with a
+    12F system.
+  materials: []
+  description: >-
+    In the NIH project summary (applicant text) the applicant says GLP porcine studies (30-day and 140-day cohorts), MRI
+    and fatigue durability studies were completed with outstanding results, and that it is preparing for early
+    feasibility and first-in-human studies. Results and species counts are not shown.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11059902
+      - https://medfreeinc.com/
+    notes: >-
+      Applicant wording; the claim to improve on the market-leading edge-to-edge device is not adopted. Device design
+      beyond the award title and summary not reviewed; materials not verified.
+- id: dev-medfree-tr-free
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter edge-to-edge tricuspid repair
+  name: TR-Free Valve Repair System (Medfree)
+  company: co-medfree
+  treats:
+    - cond-tr
+  regulatoryStatus: investigational
+  regulatoryDetail: Preclinical, per the applicant. No human use and no regulatory status are documented.
+  mechanism: >-
+    Applicant-described self-closing transcatheter edge-to-edge repair device delivered through the jugular or femoral
+    vein.
+  materials: []
+  description: >-
+    The awardee's outcomes report in the NSF record (last modified 2026-01-20) names the device the TR-Free Valve Repair
+    System and says Phase I produced bench grasp-and-hold testing on synthetic leaflet material and delivery-catheter
+    navigation in a human anatomical heart model, with acute in vivo testing and preparation for a first-in-human early
+    feasibility study planned.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - >-
+        https://api.nsf.gov/services/v1/awards.json?id=2322197&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName,abstractText,projectOutComesReport
+      - https://medfreeinc.com/
+    notes: >-
+      Applicant wording. The product name comes from the awardee-written outcomes report. Device design beyond the award
+      title and abstract not reviewed; materials not verified.
+- id: dev-nyra-carlen
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter mitral single-leaflet augmentation implant
+  name: CARLEN System (Nyra Cardiac Leaflet Enhancer)
+  company: co-nyra-medical
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational; the company page and the registry record describe it as investigational. No marketing authorization
+    is documented.
+  mechanism: >-
+    The company describes an implant delivered transfemorally and transseptally onto the anterior or posterior mitral
+    leaflet that adds leaflet length and thickness to restore coaptation, without sutures, tethers or permanent
+    deformation.
+  materials: []
+  description: >-
+    The registered ENHANCE EFS enrolls adults with symptomatic moderate-to-severe or severe functional mitral
+    regurgitation. The company cites bench studies, over 70 nonclinical studies and first-in-human success as support;
+    these are sponsor wording and are not independently confirmed.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07503236
+      - https://nyramedical.com/our-technology/
+      - https://nyramedical.com/
+    notes: >-
+      Sponsor description from an undated page (metadata modified 2026-09-24). The first-in-human study registration was
+      not reviewed. Implant composition not verified.
+- id: dev-polares-mrace
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter posterior-leaflet implant (leaflet restoration)
+  name: MR-ace (MRace) Implant and Delivery System
+  company: co-polares-medical
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: Investigational; the company states it is not approved for sale in or outside the United States.
+  mechanism: >-
+    Transvenous, transseptal catheter delivery of an implant over the posterior mitral leaflet (registry). The company
+    describes a bovine-pericardium coaptation element on a nitinol frame laminated with ePTFE, with five anchors.
+  materials: []
+  description: >-
+    Registered in two early feasibility studies: EXPLORE-MRace in the United States and EXPLORE MRace (GE) at four
+    centers in Tbilisi, Georgia. The company presents the system as an alternative to transcatheter edge-to-edge repair
+    and mitral valve replacement; this is a sponsor claim.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07517588
+      - https://clinicaltrials.gov/api/v2/studies/NCT07796659
+      - https://www.polaresmedical.com/mrace-technology/
+      - https://www.polaresmedical.com/clinical-trials/
+    notes: >-
+      Sponsor description from an undated page (metadata modified 2026-08-18); the page body does not name MRace. Device
+      generations across studies are not stated. Implant composition is the sponsor's description and is not verified.
+- id: dev-polyvascular-pulmonary-valve
+  type: therapy
+  therapyType: device
+  subtype: Polymeric-leaflet transcatheter pulmonary valve
+  name: PolyVascular transcatheter polymeric pulmonary valve
+  company: co-polyvascular
+  treats:
+    - cond-pv
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational per the applicant's award abstract, which proposes a first-in-human study. No regulatory status is
+    documented.
+  mechanism: >-
+    Applicant-described stent-mounted valve with polymer-derived leaflets inside a metal stent, delivered by
+    transcatheter techniques.
+  materials: []
+  description: >-
+    The applicant frames the need as pulmonary valve replacement in children with congenital heart disease, where
+    commonly used biological valves are scarce and wear out, leading to repeat surgery. Its plan: Aim 1 prepares an
+    early feasibility study; Aim 2 enrolls up to 15 patients with a 6-month primary safety and efficacy endpoint. No
+    enrollment or result is stated.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11044614
+    notes: >-
+      Applicant rationale and plan, not findings. Device size range, configuration and design details are not stated in
+      the abstract; materials not verified.
+- id: dev-recross-p3-occluder
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter PFO occluder
+  name: Recross P3 Occluder (P3O) System
+  company: co-recross-cardio
+  treats:
+    - cond-pfo
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational; the registry describes it as being developed for transcatheter PFO closure to reduce recurrent
+    ischemic stroke. No marketing authorization is documented.
+  materials: []
+  description: >-
+    Registered in PROTEA-PFO (US early feasibility study, five sites) and PROTEA-PFO OUS (one site in Belgrade, Serbia).
+    The company describes membrane sealing technologies; the opened pages do not describe the device design.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07172464
+      - https://clinicaltrials.gov/api/v2/studies/NCT07698951
+      - https://recrosscardio.com/
+    notes: Device design and implant materials not stated on the pages reviewed; materials not verified.
+- id: dev-sensydia-cps
+  type: therapy
+  therapyType: device
+  subtype: Non-invasive acoustic and ECG hemodynamic assessment platform
+  name: Cardiac Performance System (CPS)
+  company: co-sensydia
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    The company states CPS is investigational, under clinical evaluation under an FDA Investigational Device Exemption,
+    and not approved for commercial use. The company home page labels ejection fraction as FDA approved 2018 and its NIH
+    award abstract says a 510(k) clearance was granted for ejection-fraction measurement (sponsor statements). The FDA
+    record found (510(k) K173156, decision 2018-06-08) is for an Integrated CardioRespiratory System from Sensydia, Inc.
+    indicated for an estimate of left ventricular ejection fraction; no opened document ties it to the Cardiac
+    Performance System.
+  mechanism: >-
+    Disposable sensors acquire heart sounds and ECG; proprietary algorithms compute hemodynamic measures such as
+    ejection fraction, cardiac output, pulmonary artery pressure and pulmonary capillary wedge pressure (company
+    description; algorithm details not reviewed).
+  materials: []
+  description: >-
+    The NIH award abstract (applicant text) says further algorithm development and testing are required for cardiac
+    output, pulmonary artery pressure and PCWP, and that Phase I would refine and validate the pressure algorithms
+    against catheterization data. The company presents CPS for heart-failure decision points (sponsor wording). A
+    registered observational method-comparison study against right heart catheterization exists (ClinicalTrials.gov
+    NCT06870591).
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11322000
+      - https://www.sensydia.com/hemodynamics-heart-failure
+      - https://www.sensydia.com/
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf17/K173156.pdf
+    notes: >-
+      Heart failure is the platform's applicant-described application; the registry lists the condition as
+      Cardiovascular Diseases and the 2018 FDA record carries no heart-failure claim. Trial NCT06870591 is not drafted
+      as a public trial because its registry condition (Cardiovascular Diseases) maps to no existing condition without
+      transferring the heart-failure application.
+- id: dev-tau-pivot-bridge
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter tricuspid spacer (short-term)
+  name: Pivot Bridge
+  company: co-tau-medical
+  treats:
+    - cond-tr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational short-term transcatheter device (registry description); the company states the devices are
+    investigational and not commercially available.
+  mechanism: >-
+    Described in a 2026 paper as an atraumatic vertical spacer; the registry describes a transcatheter device for
+    short-term treatment of functional tricuspid regurgitation.
+  materials: []
+  description: >-
+    In a 2026 first-in-human report (abstract only), 15 patients with severe tricuspid regurgitation who were surgical
+    candidates received the device for a median of 5 days: procedural success in all, no serious adverse events during
+    device placement and a tricuspid regurgitation reduction of at least one grade in all. The device was then removed
+    (10 patients by surgery, 5 percutaneously). This is a short-term implantation cohort, not a Pivot Extend result.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05854095
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41891323&resultType=core&format=json
+      - https://www.tau-medical.com/
+    notes: >-
+      Abstract and funding field of the paper read; full text not opened. The paper states that Tau Medical supplied the
+      devices.
+- id: dev-tau-pivot-extend
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter tricuspid spacer (long-term)
+  name: Pivot Extend
+  company: co-tau-medical
+  treats:
+    - cond-tr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational long-term transcatheter implant (registry description); the company states the devices are
+    investigational and not commercially available.
+  mechanism: >-
+    Registry description: an investigational implant designed to reduce tricuspid regurgitation by occupying the
+    regurgitant orifice and improving leaflet coaptation, implanted by a transcatheter procedure under imaging guidance
+    and intended for long-term placement.
+  materials: []
+  description: >-
+    Registered in two early feasibility studies: the SPACER Study (sponsor Tau-MEDICAL Co., Ltd., sites in Tbilisi,
+    Georgia; estimated 7 patients) and SPACER Australia (lead sponsor Tau Medical Australia Pty Ltd with Tau-MEDICAL
+    Co., Ltd. as collaborator; estimated 10 patients). No results are documented.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06877520
+      - https://clinicaltrials.gov/api/v2/studies/NCT07172477
+      - https://www.tau-medical.com/
+    notes: "Registry statuses are old: the SPACER Study record was last updated 2025-04-11. Implant composition not verified."
+- id: dev-tavipilot-robot
+  type: therapy
+  therapyType: device
+  subtype: Tele-operated robot for TAVR valve positioning
+  name: TAVIPILOT tele-operated robot
+  company: co-caranx-medical
+  treats:
+    - cond-as
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational: studied in registered feasibility and safety studies. The FDA 510(k) K243884 covers the TAVIPILOT
+    software only; no authorization document for the robot was reviewed.
+  description: >-
+    Tele-operated robot for transcatheter aortic valve positioning during TAVR/TAVI, evaluated in the registered ROTAO 1
+    and SAIRO feasibility and safety studies. The Carvolix site presents it with the TAVIPILOT software as a combined
+    solution.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - >-
+        https://clinicaltrials.gov/api/v2/studies?pageSize=20&fields=NCTId,BriefTitle,OverallStatus,LeadSponsorName,StartDate,StartDateType,LastUpdatePostDate&query.spons=Caranx
+      - https://www.carvolix.eu/pathologies-and-solutions-tavipilot/
+      - https://clinicaltrials.gov/api/v2/studies/NCT07152574
+      - https://clinicaltrials.gov/api/v2/studies/NCT07664163
+    notes: Drafted from registry records and the Carvolix site (relationship to Caranx Medical not documented).
+- id: dig-tavipilot-software
+  type: therapy
+  therapyType: digital
+  subtype: Intra-operative TAVI valve-positioning guidance software
+  name: TAVIPILOT software
+  company: co-caranx-medical
+  treats:
+    - cond-as
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    US FDA 510(k) clearance K243884 (decision 2025-07-07, product code OWB; the decision letter also lists QIH),
+    software only. This is a 510(k) clearance, not a PMA approval. Compatibility is limited to Edwards SAPIEN 3 and
+    SAPIEN 3 Ultra with the Commander delivery system; other jurisdictions were not reviewed.
+  description: >-
+    Intra-operative software that gives real-time fluoroscopy detection, tracking and marking of the non-coronary cusp
+    and the prosthetic valve to guide valve positioning per the planning phase in TAVI/TAVR, cleared for adults 21 and
+    over. Labeled contraindications include prior TAVI or SAVR, aortic insufficiency and non-femoral main access.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://api.fda.gov/device/510k.json?search=applicant:%22Caranx%22&limit=5
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf24/K243884.pdf
+      - https://clinicaltrials.gov/api/v2/studies/NCT07043075
+      - https://www.carvolix.eu/pathologies-and-solutions-tavipilot/
+    notes: Claim 005 rests on the Carvolix site, whose relationship to Caranx Medical is not documented.
+- id: dev-transverse-point-guard
+  type: therapy
+  therapyType: device
+  subtype: Cerebral embolic protection adjunct during TAVR
+  name: POINT-GUARD cerebral embolic protection device
+  company: co-transverse-medical
+  treats:
+    - cond-as
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational; the company states the device is limited to investigational use by US federal law, not cleared for
+    sale by any regulatory authority and not approved by FDA.
+  mechanism: >-
+    The company says POINT-GUARD is designed to give full-brain protection and to eliminate periprocedural and silent
+    stroke in structural heart procedures such as TAVR; device design is not described on the pages reviewed.
+  materials: []
+  description: >-
+    An adjunct used during TAVR for aortic stenosis, not an aortic valve replacement. A registered Australian
+    feasibility study (GUARDIAN) evaluates it. The company describes the device as in a class by itself compared with
+    the single commercially approved partial-protection device; this is a comparative sponsor claim without data.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06962371
+      - https://www.transversemedical.com/
+      - https://www.transversemedical.com/the-solution-24
+    notes: Sponsor wording from undated pages (copyright 2025). Design and materials not verified.
+- id: dev-tricares-topaz
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter tricuspid valve replacement
+  name: Topaz TTVR System
+  company: co-tricares
+  treats:
+    - cond-tr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational; registered in first-in-human, European pivotal, US early feasibility and US IDE pivotal studies. A
+    company press release title describes FDA approval of the US IDE study, which is study authorization and not
+    marketing authorization of the device. No marketing authorization is documented.
+  mechanism: >-
+    The company describes a two-stent, self-expanding biological valve prosthesis with a steerable-sheath implantation
+    system, delivered mainly by femoral vein and also by jugular vein.
+  materials: []
+  description: >-
+    The 2025 EuroIntervention first-in-human paper (abstract only) reports 20 patients: the primary performance endpoint
+    (tricuspid regurgitation reduction of at least one grade, no more than moderate regurgitation) was met in all, a
+    30-day composite of major adverse events occurred in 35%, and no device-related pacemaker implant was reported. The
+    authors say outcomes need confirming in a larger series. The abstract describes a flexible outer stent and a rigid
+    inner stent.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05126030
+      - https://clinicaltrials.gov/api/v2/studies/NCT06581471
+      - https://clinicaltrials.gov/api/v2/studies/NCT07528326
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41243777&resultType=core&format=json
+      - https://www.tricares.com/topaz
+      - https://www.tricares.com/clinical
+      - https://www.tricares.com/
+    notes: >-
+      Sponsor descriptions from undated pages; benefit statements are the sponsor's. The paper abstract does not name
+      the manufacturer; the link rests on the NCT number and registry sponsor. Implant composition not verified.
+- id: dev-valcare-amend
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter mitral annuloplasty ring
+  name: AMEND annuloplasty ring system (Valcare Medical)
+  company: co-valcare-medical
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational; the company page carries an investigational-device caution. No marketing authorization is
+    documented.
+  mechanism: >-
+    Per the registry and the company: a closed, semi-rigid D-shaped annuloplasty ring delivered by catheter (transseptal
+    in the current study) and implanted on the atrial side of the mitral annulus.
+  materials: []
+  description: >-
+    Registered in the AMEND TS Early Feasibility Study (current) and the earlier AMEND I Study (4 patients enrolled,
+    completed). The company page lists publications titled as first-in-human (2022), 30-day (2025) and 6-month (2026)
+    results of the transseptal system; their contents were not reviewed.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06951672
+      - https://clinicaltrials.gov/api/v2/studies/NCT02602613
+      - https://valcaremedical.com/physicians/
+      - https://valcaremedical.com/
+    notes: >-
+      Linked at the AMEND family level: the registry names the AMEND Trans-Septal System (NCT06951672) and the AMEND
+      Mitral Valve Repair System (NCT02602613) and does not state whether the earlier system is an earlier generation or
+      delivery route. Implant composition not verified.
+- id: dev-vesalius-tmvr
+  type: therapy
+  therapyType: device
+  subtype: Transfemoral mitral valve repair (chordal replacement plus annuloplasty)
+  name: Vesalius TMVr System
+  company: co-vesalius-cardiovascular
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational; registered first-in-human study. The company home page reports a Health Canada Investigational
+    Testing Authorization for 5 patients (a sponsor statement). No marketing authorization is documented.
+  mechanism: >-
+    The registry describes an adjustable ePTFE net delivered by a minimally invasive transcatheter approach. The company
+    describes a single adjustable device that provides both chordal replacement and annuloplasty as in surgical repair,
+    for single- or multi-leaflet disease.
+  materials: []
+  description: >-
+    The registered first-in-human study plans up to 5 patients with degenerative mitral regurgitation at high or
+    prohibitive surgical risk at one Canadian site (St. Paul's Hospital, Vancouver); primary measures are 30-day
+    all-cause mortality, technical success and device success. No implant or result is documented.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07470788
+      - https://vesaliuscardio.com/tmvr-system/
+      - https://vesaliuscardio.com/
+    notes: >-
+      Performance and one-size-fits-all statements on the company page are the sponsor's. Implant composition beyond the
+      registry's ePTFE net description not verified.
+- id: dev-wise-crt
+  type: therapy
+  therapyType: device
+  subtype: Leadless left ventricular endocardial pacing (CRT)
+  name: WiSE CRT System
+  company: co-ebr-systems
+  treats:
+    - cond-hf
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    US FDA PMA P240028 approval (decision 2025-04-11, product code SEG), original PMA only; later supplements and other
+    jurisdictions were not reviewed. Indication: adults 22 or older indicated for CRT, with or eligible for an implanted
+    right ventricular pacing system, who are previously untreatable or high-risk upgrades; the indication does not name
+    heart failure.
+  mechanism: >-
+    Company-described: a small leadless electrode converts ultrasonic energy into an electrical pulse to pace the left
+    ventricle from the endocardium, coordinated with an existing pacing device.
+  description: >-
+    Leadless left ventricular endocardial pacing system (Wireless Stimulation of the Endocardium) for cardiac
+    resynchronization therapy, working with a co-implanted pacemaker or ICD. The FDA summary places it among
+    heart-failure treatment alternatives and records Breakthrough Device status granted 2019-07-18.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://api.fda.gov/device/pma.json?search=pma_number:%22P240028%22+AND+supplement_number:%22%22
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240028B.pdf
+      - https://www.ebrsystemsinc.com/
+    notes: >-
+      The approved indication is cardiac resynchronization therapy and does not name heart failure; the heart-failure
+      link follows the FDA summary context and company wording.
+- id: dev-youngheartvalve-rejuvenate
+  type: therapy
+  therapyType: device
+  subtype: Balloon-expandable transcatheter aortic valve (polymeric leaflets)
+  name: Rejuvenate Heart Valve
+  company: co-youngheartvalve
+  treats:
+    - cond-as
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational and preclinical per the company; the website states the valves are investigational and not available
+    for sale. No regulatory status is documented.
+  mechanism: >-
+    Applicant-described balloon-expandable stented valve with flexible polymeric leaflets impregnated with hyaluronan,
+    with a dynamic sealing technology for the annular seal.
+  materials: []
+  description: >-
+    The NIH award abstract (applicant text) states aims to verify the Valve 2.0 design against ISO standards, begin
+    manufacturing scale-up and complete acute and chronic animal testing before GLP preclinical and first-in-human
+    testing. The company website claims 6-month juvenile sheep studies with no calcification or clotting; no results
+    document was reviewed.
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://reporter.nih.gov/project-details/11193821
+      - https://youngheartvalve.com/
+    notes: >-
+      Sponsor wording throughout (aims and claims, not results). Valve materials beyond the leaflet description not
+      verified.
+- id: dev-zenith-laa
+  type: therapy
+  therapyType: device
+  subtype: LAA closure device
+  name: Zenith LAA Occlusion System
+  company: co-aurigen-medical
+  treats:
+    - cond-af
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational: first-in-human experience and a registered feasibility study; CE mark and FDA status were not
+    reviewed.
+  mechanism: >-
+    Per the paper abstract: conformable nitinol scaffold covered with a polyethylene terephthalate membrane, a
+    self-closing central conduit and an independently deployed dynamic anchoring system.
+  description: >-
+    Transcatheter left atrial appendage occlusion implant for stroke prevention in non-valvular atrial fibrillation. A
+    2025 JACC: Cardiovascular Interventions paper (abstract) reports three canine preclinical trials (17 animals) and a
+    single-arm first-in-human study in 10 patients, with successful implantation in 9 of 10 and no device-related
+    thrombus.
+  materials: []
+  curation:
+    status: draft
+    lastUpdated: "2026-10-21"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41137840&resultType=core&format=json
+      - https://clinicaltrials.gov/api/v2/studies/NCT05951101
+      - https://aurigenmedical.com/
+
 - id: dev-avatar-valve-reconstruction
   type: therapy
   therapyType: device
