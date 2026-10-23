@@ -2,7 +2,7 @@ import { Fragment, useState } from 'react'
 import type { ComparisonCell, ComparisonRow } from '../../data/comparison'
 import { comparisonExportRows, projectComparison } from '../../data/comparison'
 import { displayValue, formatEvidenceDate, rowsToCsv, sourceFor, sourceProvenance, sourceUrl, versionName } from '../../data/intelligence'
-import { approvalLabel, firstDecision, thumbnailFor } from '../../data/spec-tables'
+import { approvalLabel, firstDecision } from '../../data/spec-tables'
 import type { ComparativeObservation } from '../../types/comparative'
 import type { EvidenceClaim, IntelligenceData } from '../../types/intelligence'
 import ComparisonMediaStrip from './ComparisonMediaStrip'
@@ -87,9 +87,8 @@ function ComparisonTable({ data, rows, versionIds, asOf }: { data: IntelligenceD
     <table className="intel-compare-table">
       <caption className="intel-visually-hidden">Device standard attributes by exact product version and selected configuration</caption>
       <thead><tr><th scope="col">Attribute</th>{versionIds.map(id => {
-        const isDevice = data.versions.find(version => version.id === id)?.kind === 'device'
-        const thumb = isDevice ? deviceIllustrationFor(id) : thumbnailFor(data, id)
-        return <th scope="col" key={id}><span className="intel-product"><ProductThumbnail key={thumb?.assetPath ?? id} illustration={thumb} name={versionName(data, id)} isDevice={isDevice} /><span className="intel-product-text">{versionName(data, id)}<span className="intel-compare-maker">{manufacturer(id)}</span></span></span></th>
+        const thumb = deviceIllustrationFor(id)
+        return <th scope="col" key={id}><span className="intel-product"><ProductThumbnail key={thumb?.assetPath ?? id} illustration={thumb} name={versionName(data, id)} /><span className="intel-product-text">{versionName(data, id)}<span className="intel-compare-maker">{manufacturer(id)}</span></span></span></th>
       })}</tr></thead>
       <tbody>
         <tr><th scope="row">US authorization</th>{versionIds.map(id => {
