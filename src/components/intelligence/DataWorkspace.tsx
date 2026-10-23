@@ -1,5 +1,8 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import type { EvidenceMedia, IntelligenceData, LineageEdge } from '../../types/intelligence'
+import type { GraphNodeData } from '../../types/entities'
+import { therapySnapshots } from '../../data/therapy-snapshots'
+import TherapySnapshots from './TherapySnapshots'
 import {
   formatEvidenceDate,
   isOnOrBefore,
@@ -26,6 +29,9 @@ type OutcomeRow = ReturnType<typeof outcomeRows>[number]
 
 export interface DataWorkspaceProps {
   data: IntelligenceData
+  catalogData: IntelligenceData
+  therapyNodes: GraphNodeData[]
+  nodesById: Map<string, GraphNodeData>
   conditionId: string
   versionId: string | null
   onOpenAtlas: (versionId: string) => void
@@ -118,7 +124,7 @@ function GroupedTabs<Row>({ groups, render }: { groups: Grouped<Row>[]; render: 
 }
 
 export default function DataWorkspace({
-  data, conditionId, versionId, onOpenAtlas, jurisdiction, asOf, dataView, initialQuery, compareCategory, compareVersionIds, compareConfigurationIds,
+  data, catalogData, therapyNodes, nodesById, conditionId, versionId, onOpenAtlas, jurisdiction, asOf, dataView, initialQuery, compareCategory, compareVersionIds, compareConfigurationIds,
   onDataViewChange, onCompareCategoryChange, onCompareVersionIdsChange, onCompareConfigurationIdsChange,
 }: DataWorkspaceProps) {
   const [tab, setTab] = useState<DataTab>('specs')
@@ -127,6 +133,8 @@ export default function DataWorkspace({
   const normalizedQuery = query.trim().toLowerCase()
 
   const specTables = useMemo(() => projectSpecTables(data, { versionId, asOf, jurisdiction, query: normalizedQuery }), [data, versionId, asOf, jurisdiction, normalizedQuery])
+  // Undated graph snapshots cannot establish a historical version.
+  const snapshots = useMemo(() => versionId || asOf ? [] : therapySnapshots(catalogData, therapyNodes, normalizedQuery, nodesById), [catalogData, therapyNodes, nodesById, normalizedQuery, versionId, asOf])
   const outcomeRowsAll = useMemo(() => outcomeRows(data, versionId, asOf), [data, versionId, asOf])
   const mediaRows = useMemo<EvidenceMedia[]>(() => mediaForVersion(data, versionId), [data, versionId])
 
@@ -176,7 +184,7 @@ export default function DataWorkspace({
   const outcomeGroups = useMemo(() => groupRows(filteredOutcomes, outcomeVersion, place), [filteredOutcomes, place])
   const historyGroups = useMemo(() => groupRows(filteredHistory.flatMap(row => (row.versionIds.length ? row.versionIds : ['']).map(versionId => ({ ...row, versionId }))), row => row.versionId, place), [filteredHistory, place])
   const figureGroups = useMemo(() => groupRows(filteredMedia.flatMap(media => media.versionIds.map(versionId => ({ media, versionId }))), row => row.versionId, place), [filteredMedia, place])
-  const specCount = specTables.reduce((sum, table) => sum + table.rows.length, 0)
+  const specCount = specTables.reduce((sum, table) => sum + table.rows.length, 0) + snapshots.length
   const tabs: Array<{ id: DataTab; label: string; count: number }> = [
     { id: 'specs', label: 'Specs', count: specCount },
     { id: 'outcomes', label: 'Outcomes', count: filteredOutcomes.length },
@@ -192,12 +200,18 @@ export default function DataWorkspace({
   function exportRows(format: 'csv' | 'json') {
     const context = { datasetVersion: data.schemaVersion, datasetUpdatedAt: data.updatedAt, asOf, jurisdiction }
     const rows: Record<string, unknown>[] = activeTab === 'specs'
-      ? specTables.flatMap(table => table.rows.flatMap(row => [...table.columns.flatMap((column, index) => row.cells[index].map(claim => ({ claim, attribute: column.label }))), ...row.extra.map(claim => ({ claim, attribute: claim.label }))].map(({ claim, attribute }) => ({
+      ? [...specTables.flatMap(table => table.rows.flatMap(row => [...table.columns.flatMap((column, index) => row.cells[index].map(claim => ({ claim, attribute: column.label }))), ...row.extra.map(claim => ({ claim, attribute: claim.label }))].map(({ claim, attribute }) => ({
         ...context, table: table.label, versionId: row.version.id, version: row.version.name, manufacturer: row.manufacturer,
         usApproval: row.approval ? `${row.approval.identifier} ${row.approval.date.value}` : '', attribute, attributeId: claim.comparisonAttributeId ?? claim.key,
         value: claim.value ?? '', unit: claim.unit ?? '', availability: claim.availability, basis: claim.basis, context: claim.context ?? '', limitation: claim.limitation ?? '',
         observedAt: claim.observedAt, sourceIds: sourceProvenance(claim.sourceRefs).sourceIds, sourceLocators: sourceProvenance(claim.sourceRefs).locators, sourceUrls: sourceUrls(data, claim.sourceRefs), reviewStatus: claim.reviewStatus,
-      }))))
+      })))), ...snapshots.map(({ therapy, illustration, maker }) => ({
+        ...context, jurisdiction: '', table: 'Therapy snapshots', entityId: therapy.id, versionId: '', version: therapy.name, manufacturer: maker,
+        recordScope: 'Graph therapy; exact version unresolved; undated', picturedConfiguration: illustration?.configuration ?? '',
+        illustration: illustration?.assetPath ?? '', illustrationLimits: illustration?.limitations.join('; ') ?? '',
+        sourceUrls: [...(therapy.curation.sources ?? []), ...(illustration?.sources.map(source => source.url) ?? [])].join('; '),
+        sourceLocators: illustration?.sources.map(source => source.locator).join('; ') ?? '', reviewStatus: therapy.curation.status,
+      }))]
       : activeTab === 'outcomes' ? filteredOutcomes.map(row => ({ ...context, ...row }))
         : activeTab === 'history' ? filteredHistory.map(row => ({ ...context, ...row, versionIds: row.versionIds.join('; ') }))
           : filteredMedia.map(media => ({
@@ -224,9 +238,10 @@ export default function DataWorkspace({
         <button type="button" className="intel-export" disabled={!activeCount} onClick={() => exportRows('json')}>JSON</button>
       </div>
       {hasDraft && <p className="intel-data-result-note">Draft values — confirm against the cited source. Select a product or value for sources.</p>}
+      {activeTab === 'specs' && snapshots.length > 0 && <p className="intel-data-result-note"><a href="#data-therapy-snapshots">Therapy snapshots ({snapshots.length}) ↓</a></p>}
 
       {activeCount === 0 ? <div className="intel-empty"><h3>No matches</h3><p>Try another product, date, or filter.</p></div>
-        : activeTab === 'specs' ? <SpecTables data={data} tables={specTables} onOpenAtlas={onOpenAtlas} />
+        : activeTab === 'specs' ? <><SpecTables data={data} tables={specTables} onOpenAtlas={onOpenAtlas} /><TherapySnapshots data={data} rows={snapshots} /></>
           : activeTab === 'outcomes' ? <GroupedTabs groups={outcomeGroups} render={group => <GroupedTable<OutcomeRow> key={group.id} id={group.id} label={group.label} rows={group.rows}
             rowKey={row => row.id} product={outcomeProduct} sources={row => sourcesFor(data, splitIds(row.sourceIds))}
             detail={row => <><OutcomeDetail row={row} /><div className="intel-reference-grid">{(row.versionIds.length ? row.versionIds : data.versions.filter(version => version.familyId === outcomeFamily(row)?.id).map(version => version.id)).map(id => <article key={id}><h3>{versionName(data, id)}</h3><EvidenceReferences data={data} versionId={id} name={versionName(data, id)} compact /></article>)}</div></>}
