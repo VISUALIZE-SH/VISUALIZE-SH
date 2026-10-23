@@ -1,4 +1,5 @@
 import index from '../../data/illustrations/device-thumbnail-index.json'
+import therapyIndex from '../../data/illustrations/therapy-thumbnail-index.json'
 
 /** Artwork approval is separate from clinical evidence and product authorization. */
 export interface DeviceIllustration {
@@ -13,4 +14,9 @@ const illustrations = new Map<string, DeviceIllustration>(
 /** Exact-version lookup only: held and newly added versions have no substitute. */
 export function deviceIllustrationFor(versionId: string): DeviceIllustration | undefined {
   return illustrations.get(versionId)
+}
+
+/** Pictured graph-level concepts never substitute for exact-version artwork. */
+export function therapyIllustrationFor(entityId: string) {
+  return therapyIndex.find(item => item.entityId === entityId)
 }
