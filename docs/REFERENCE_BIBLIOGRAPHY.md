@@ -21,7 +21,7 @@ a browser to print or save a PDF, or in a word processor. Missing publication
 dates use `n.d.`; an unknown title uses a source-document descriptor. Retrieval
 dates never become publication dates.
 
-## Reference scope
+## Documentary source scope
 
 Patents qualify only through an explicit public connection to the named
 product: a product/IFU reference, manufacturer virtual marking, an exact
@@ -38,7 +38,7 @@ the A2 application publication. Article citation metadata covers 98 exact URL
 aliases, resolved through DOI, PMID, PMC-to-PMID mapping, or original publisher
 metadata. Duplicate DOI aliases share the same verified bibliographic fields.
 Publication dates retain their recorded day, month, or year precision.
- Credited collective authors and suffixes remain in
+Credited collective authors and suffixes remain in
 the byline; appended investigator and reviewer rosters are excluded. Publisher
 full names take precedence where PubMed initials lose a name or hyphen.
 
