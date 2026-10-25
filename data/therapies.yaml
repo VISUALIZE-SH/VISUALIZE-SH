@@ -5678,3 +5678,506 @@
       No product name is documented, so the name is descriptive. Preclinical statements are the awardee's own (NSF
       outcomes report); the abstract is the applicant's plan at award time. The company's heart failure wording differs
       by page and the ejection-fraction subtype is not stated. No registry trial was found.
+
+- id: dig-angioinsight-angioai-cmd
+  type: therapy
+  therapyType: digital
+  name: AngioAI+ CMD application
+  company: co-angioinsight
+  treats:
+    - cond-cmd
+  regulatoryStatus: investigational
+  mechanism: AI analysis of angiographic video contrast transit and vessel geometry.
+  description: AngioInsight is developing AngioAI+, an investigational angiography analysis platform with a CMD application.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.angioinsight.com/angioai/
+      - https://www.angioinsight.com/angioinsight-announces-first-patient-enrolled-in-smartflow-clinical-study/
+      - https://clinicaltrials.gov/study/NCT07676097
+    notes: " AngioAI+ CMD assessment is scoped separately from epicardial FFR. Model/version number not disclosed in reviewed technical page. Registry and sponsor milestone differ in date/status/enrollment; preserve separately. Gaps: cmd-specific-results, exact-software-version, regulatory-decision, origin-institution-primary-document, registry-sponsor-status-conflict."
+- id: dev-cardiovalve-tricuspid
+  type: therapy
+  therapyType: device
+  name: Cardiovalve tricuspid replacement system
+  company: co-cardiovalve
+  treats:
+    - cond-tr
+  regulatoryStatus: investigational
+  mechanism: Transfemoral bioprosthesis with native tissue anchoring and annular sealing.
+  description: Investigational Cardiovalve tricuspid valve replacement program; mitral research is separately scoped.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://cardiovalve.com/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9485574/fullTextXML
+      - https://clinicaltrials.gov/study/NCT05486832
+      - https://clinicaltrials.gov/study/NCT03714412
+      - https://clinicaltrials.gov/study/NCT07334691
+      - https://clinicaltrials.gov/study/NCT03339115
+      - https://clinicaltrials.gov/study/NCT03958773
+      - https://clinicaltrials.gov/study/NCT03813524
+      - https://clinicaltrials.gov/study/NCT04100720
+    notes: " Primary proposed Atlas program is tricuspid Cardiovalve. Mitral Cardiovalve evidence is separate and must not supply TR materials/specs. TARGET2.0 is a separate registry identity; no assumption that every historical model is its exact configuration. Gaps: tricuspid-exact-materials, target2-generation-bridge, mitral-tricuspid-distinction, regulator-decision, patent-marking-number."
+  materials: []
+  materialsStatus: not_established
+- id: dev-cardyograft-patch
+  type: therapy
+  therapyType: device
+  name: Autologous cardiac patch
+  company: co-cardyograft
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  mechanism: >-
+    Autologous atrial appendage tissue is mechanically processed into micrografts and placed on an epicardial scaffold
+    during CABG.
+  description: >-
+    Sponsor describes an autologous cardiac patch for HF, prepared and applied during bypass surgery. Separate final
+    CardYograft kit from academic AAMS/AAMS2. AAMS2 scaffold, fibrin matrix and instruments are trial-specific. A
+    processing device CE mark and ISO manufacturing certification do not authorize the cardiac combination. Site names
+    Northern European university only; do not infer corporate spin-off institution.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.cardyograft.com/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12866517/fullTextXML
+      - https://clinicaltrials.gov/study/NCT05632432
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+  materials: []
+  materialsStatus: not_established
+  regulatoryDetail: >-
+    Exact marketing authorization not established by this dossier; trial registrations, sponsor statements,
+    designations, and CMS study/coding records retain their own scope.
+- id: dev-echopoint-ikor
+  type: therapy
+  therapyType: device
+  name: iKOr coronary physiology system
+  company: co-echopoint-medical
+  treats:
+    - cond-cmd
+  regulatoryStatus: investigational
+  mechanism: Optical rapid-exchange microcatheter and console measure coronary pressure and flow.
+  description: >-
+    Echopoint develops the iKOr coronary physiology system for pressure and flow assessment including microvascular
+    disease.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.echopointmedical.com/tackling-the-anoca-inoca-diagnostic-gap-echopoint-medical-advances-toward-ikode-clinical-study/
+      - https://www.echopointmedical.com/our-technology/
+      - https://www.echopointmedical.com/echopoint-medical-announces-collaboration-with-the-international-heart-spasms-alliance/
+      - https://clinicaltrials.gov/study/NCT05346458
+    notes: " Registry NCT05346458 names iKOs microcatheter plus iKOr console; current marketing uses iKOr system. Keep exact historical components separate; iKoDE planning is not documented enrollment. Gaps: permanent-implant-materials-not-applicable, ikode-registry-identity, original-fih-results, exact-us-authorization, institutional-origin-confirmation, grant-award-original."
+  materials: []
+  materialsStatus: not_established
+- id: dev-electradx-nt-probnp
+  type: therapy
+  therapyType: device
+  name: NT-proBNP point-of-care test
+  company: co-electradx
+  treats:
+    - cond-hf
+  regulatoryStatus: unknown
+  mechanism: Electrochemical NT-proBNP testing with a handheld reader and on-strip electronic assay control.
+  description: >-
+    Sponsor identifies HF as the initial application for its small-sample NT-proBNP testing platform. Target NT-proBNP
+    assay only. Do not transfer molecular infectious-disease products, avian-influenza grants or founders’ prior cleared
+    products. Lab-quality is unverified sponsor language; sample matrix, analytical range, calibration, CV, interference
+    and threshold validation not established. Exact preclinical/clinical stage is not_yet_reviewed; target specification
+    and certification language alone do not establish a study stage.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://electradx.com/heart-health/
+      - https://electradx.com/about/
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+  materials: []
+  materialsStatus: not_established
+  regulatoryDetail: >-
+    Exact marketing authorization not established by this dossier; trial registrations, sponsor statements,
+    designations, and CMS study/coding records retain their own scope.
+- id: dig-elem-hf-modeling
+  type: therapy
+  therapyType: digital
+  name: HFrEF electromechanical modeling research
+  company: co-elem-biotech
+  treats:
+    - cond-hfref
+  regulatoryStatus: unknown
+  mechanism: >-
+    Multiscale biventricular hemo-electromechanical modeling couples myosin activation kinetics with three-dimensional
+    myocardial dynamics.
+  description: >-
+    An original abstract with ELEM affiliations describes modeling pharmacological response in HFrEF. Retain HFrEF
+    research model as proposed primary configuration. V.HEART commercial research tools and HCM/ATTR presentations are
+    separate research applications. NCT07462572 concerns renal denervation for hypertension and does not validate HF
+    modeling. No medical-device authorization inferred from in-silico regulatory frameworks.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12795199/fullTextXML
+      - https://www.elem.bio/products/trials/
+      - https://www.elem.bio/newsroom/one-modelling-framework-three-pathways-to-heart-failure/
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+  regulatoryDetail: >-
+    Research modeling application; clinical decision-support authorization and prospective HFrEF validation not
+    established.
+- id: dev-foresee-microsensor
+  type: therapy
+  therapyType: device
+  name: Multiparametric intravascular microsensor
+  company: co-foresee-medtech
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  mechanism: >-
+    External electrodes send high-frequency current bursts through tissue volume conduction to power and communicate
+    with an implantable multiparametric microsensor.
+  description: >-
+    Sponsor describes an intravascular microsensor and associated remote-monitoring system for HF. Primary configuration
+    is HF intravascular sensor plus external unit, pulmonary-artery delivery and visualization app. Prior eAXON
+    neurostimulation/EMG human feasibility does not establish human intravascular sensing safety. Exact sensor
+    parameters, encapsulant and final geometry remain unresolved.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://foresee-medtech.com/project/
+      - https://foresee-medtech.com/technology/
+      - https://foresee-medtech.com/about-us/
+      - https://cordis.europa.eu/project/id/101136633
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+  materials: []
+  materialsStatus: not_established
+  regulatoryDetail: >-
+    Exact marketing authorization not established by this dossier; trial registrations, sponsor statements,
+    designations, and CMS study/coding records retain their own scope.
+- id: dev-yacoub-pulmonary-scaffold
+  type: therapy
+  therapyType: device
+  name: Yacoub Heart Valve scaffold
+  company: co-heart-biotech
+  treats:
+    - cond-pv
+  regulatoryStatus: investigational
+  mechanism: Acellular porous polymer scaffold supports host-cell infiltration and tissue remodeling.
+  description: Heart Biotech develops a resorbable scaffold intended to enable in-situ formation of a living pulmonary valve.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://heartbiotech.co.uk/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10560219/fullTextXML
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12518614/fullTextXML
+    notes: " Current Yacoub Heart Valve and historical HCCV research configuration are linked by sponsor page but must not be assumed identical. HCCV 2023 is a surgical25-mm research scaffold in sheep, not established commercial configuration or pediatric growth proof. Gaps: current-yacoub-hccv-version-bridge, first-human-study, human-growth-durability, patent-office-original, grant-funder-original."
+  materials: []
+  materialsStatus: not_established
+- id: dev-heartfelt-monitor
+  type: therapy
+  therapyType: device
+  name: Optical foot-volume monitoring
+  company: co-heartfelt-technologies
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  mechanism: Passive optical foot/lower-leg volume measurement with cloud processing and alerts for HF monitoring.
+  description: >-
+    Sponsor describes passive in-home foot-volume monitoring for HF care. Current passive home-monitor program.
+    Historical HF-1 accuracy cohort does not establish performance of later HF3 revisions; NCT06222099 US crossover
+    differs from UK HF-TRACK and ME-HF. Not a therapeutic implant. Optical modality; no inference about later hardware revisions.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.hftech.org/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8053525/fullTextXML
+      - https://www.hftech.org/patents/
+      - https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10573004
+      - https://clinicaltrials.gov/study/NCT06334822
+      - https://clinicaltrials.gov/study/NCT06222099
+      - https://clinicaltrials.gov/study/NCT07067658
+      - https://clinicaltrials.gov/study/NCT04072744
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+  materials: []
+  materialsStatus: not_established
+  regulatoryDetail: >-
+    Exact marketing authorization not established by this dossier; trial registrations, sponsor statements,
+    designations, and CMS study/coding records retain their own scope.
+- id: dig-heartfocus
+  type: therapy
+  therapyType: digital
+  name: AI-guided cardiac ultrasound (DESKi brand)
+  company: co-deski
+  treats:
+    - cond-hf
+  regulatoryStatus: approved
+  mechanism: Real-time probe guidance, image-quality feedback and automated clip capture support trained medical users.
+  description: HeartFocus is a DESKi brand for AI-guided acquisition of cardiac ultrasound views.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.heartfocus.ai/about-heartfocus
+      - https://www.heartfocus.ai/white-papers-and-publications/heartfocus-ai-outperforms-traditional-cardiac-ultrasound-training
+      - https://clinicaltrials.gov/study/NCT05874128
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260780
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K242807
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260780.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf24/K242807.pdf
+    notes: " Original FDA submissions distinguish HeartFocus v1.1.1 (K242807, initial Clarius configuration) from v1.3.0 (K260780, iPhone portrait UI change; Butterfly iQ+/iQ3 and iPadOS implemented through the prior PCCP). Both concern adult cardiac-image acquisition guidance, not automated disease diagnosis. K260780 expressly marks age 22 years and greater and prescription use. Clinical-study registry NCT05874128 and sponsor education/Link material remain generic unless a document establishes an exact-version bridge. Current deployed builds beyond these submissions are not established. Remaining gaps: original-clinical-publication, vcom-exact-day-and-results, patent-product-connection, deployed-build-and-ifu-beyond-reviewed-submissions, heartfocus-link-separate-indication, generic-trial-to-exact-version-bridge."
+  regulatoryDetail: >-
+    FDA 510(k) cleared acquisition guidance: v1.1.1 K242807 (2025-04-04); v1.3.0 K260780 (2026-06-03). K260780 indicates
+    prescription cardiac ultrasound acquisition for adults 22+ by trained medical professionals, ten standard 2D-TTE
+    views. v1.3.0 adds iPhone portrait UI; Butterfly iQ+/iQ3 and iPadOS expansions are described under the prior PCCP.
+    No automated disease-diagnosis indication inferred.
+- id: dig-medividia-tavi-simulation
+  type: therapy
+  therapyType: digital
+  name: Patient-specific TAVI finite-element research
+  company: co-medividia
+  treats:
+    - cond-as
+  regulatoryStatus: unknown
+  mechanism: Abaqus structural modeling coupled with FlowVision fluid dynamics for valve/device fluid–structure interaction.
+  description: Medividia provides cardiovascular simulation services and contributes to patient-specific TAVI modeling research.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://medividia.com/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13545116/fullTextXML
+    notes: " Research/services profile, not an established authorized clinical decision product. Evolut-R14-patient research (2025) differs from SAPIEN 3 Ultra5-patient FSI research (2026). No Medividia-manufactured implant or implant materials inferred. Gaps: clinical-product-version, regulatory-authorization, prospective-clinical-validation, patent-product-connection, company-funder-award-record."
+- id: dev-neocor-human-coapt
+  type: therapy
+  therapyType: device
+  name: Human CoApt mitral/tricuspid program
+  company: co-neocor
+  treats:
+    - cond-mr
+    - cond-tr
+  regulatoryStatus: investigational
+  mechanism: >-
+    Transcatheter intracardiac device designed to cooperate with native atrioventricular leaflets and reduce
+    regurgitation.
+  description: NeoCor develops CoApt for human mitral/tricuspid disease alongside a veterinary pathway.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.coaptvalve.com/
+      - https://www.coaptvalve.com/about
+    notes: " Human developmental program only. Sponsor prototype and canine studies cannot establish human efficacy. Russian NeoCor UniLine/TiAra registry records are different entity/program and excluded. Gaps: human-study-registration, exact-polymer-chemistry, human-design-configuration, patent-marking-number, independent-animal-publication."
+  materials:
+    - name: Nitinol
+      role: Self-expanding frame
+      category: frame
+      source: https://www.coaptvalve.com/
+    - name: Electrospun polymer, chemistry not disclosed
+      role: Valve material
+      category: leaflet
+      source: https://www.coaptvalve.com/
+    - name: Nitinol
+      role: Three trebled anchors
+      category: anchor
+      source: https://www.coaptvalve.com/
+  materialsStatus: not_established
+- id: dig-noah-labs-vox
+  type: therapy
+  therapyType: digital
+  name: Noah Labs Vox
+  company: co-noah-labs
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  mechanism: Cloud software analyzes short daily smartphone or tablet voice recordings for signs of worsening HF.
+  description: >-
+    Sponsor describes voice-based detection of HF decompensation. Primary configuration Noah Labs Vox research
+    algorithm. Ark CE status cannot transfer to Vox. VOICE-HF Oct14 registry NOT_YET_RECRUITING predates Oct21 sponsor
+    first enrollment. VAMP-HF admission/discharge classification is distinct from TIM-HF3 ambulatory prediction and
+    VOICE-HF independent test.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.noah-labs.com/nl-vox
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13326637/fullTextXML
+      - https://www.noah-labs.com/blog/noah-labs-enrolls-first-patients-in-voice-hf-the-pivotal-trial-to-support-fda-authorization-of-its-voice-based-ai-to-detect-worsening-heart-failure
+      - https://clinicaltrials.gov/study/NCT07870395
+      - https://clinicaltrials.gov/study/NCT07443670
+      - https://clinicaltrials.gov/study/NCT07443969
+      - https://clinicaltrials.gov/study/NCT06566911
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+  regulatoryDetail: >-
+    Exact marketing authorization not established by this dossier; trial registrations, sponsor statements,
+    designations, and CMS study/coding records retain their own scope.
+- id: dev-avim-hf-research
+  type: therapy
+  therapyType: device
+  name: AVIM exploratory HF application
+  company: co-orchestra-biomed
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  mechanism: >-
+    A sequence of variably timed short and longer atrioventricular intervals during dual-chamber pacing modulates
+    cardiac loading.
+  description: >-
+    Sponsor announces an AVIM program application in HF alongside its hypertension work. Primary HF context is
+    exploratory CNT-HF/AVIM research, distinct from pivotal hypertension BACKBEAT. NCT04573699 uses temporary external
+    Moderato IPG signals during ICD implantation, not chronic HF implant therapy. Proposed HF condition mapping is
+    contextual. Virtue SAB is outside this program. In-window BACKBEAT enrollment and HRX/R&D announcements were
+    reviewed but not proposed as HF-specific News because their substantive indication is hypertension; new HF-specific
+    evidence not established.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://investors.orchestrabiomed.com/news-releases/news-release-details/orchestra-biomed-announces-presentations-highlighting-avim
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12418400/fullTextXML
+      - https://investors.orchestrabiomed.com/news-releases/news-release-details/orchestra-biomed-exceeds-full-enrollment-target-backbeat-global
+      - https://clinicaltrials.gov/study/NCT04573699
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+  materials: []
+  materialsStatus: not_established
+  regulatoryDetail: >-
+    Exact marketing authorization not established by this dossier; trial registrations, sponsor statements,
+    designations, and CMS study/coding records retain their own scope.
+- id: rx-pro-302
+  type: therapy
+  therapyType: pharmaceutical
+  name: PRO-302 myocardial regeneration
+  company: co-prolifagen
+  treats:
+    - cond-ischemic-lv-remodeling
+  regulatoryStatus: investigational
+  mechanism: >-
+    Local transient delivery of miR-302 mimics from a dissolving hyaluronic-acid hydrogel to promote cardiomyocyte
+    proliferation after infarction.
+  description: >-
+    Sponsor describes miR302/hydrogel delivery to damaged myocardium following myocardial infarction. PRO-302
+    pharmaceutical research formulation; no permanent implant-material list. Academic gel–miR302 mouse results are not
+    human or final commercial formulation data. Historical LLC award not silently equated to current Inc. Founding and
+    exclusive-license origin remain sponsor claims pending institution original.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://prolifagen.com/technology/
+      - https://prolifagen.com/wp-content/uploads/2026/02/prolifagen-non-confidential-deck-v2-26.pdf
+      - https://prolifagen.com/wp-content/uploads/2025/06/prolifagen-Wang-Morrissey-Burdick-Hydrogel-miR.pdf
+      - https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12128136
+      - https://reporter.nih.gov/project-details/9775771
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+  regulatoryDetail: >-
+    Exact marketing authorization not established by this dossier; trial registrations, sponsor statements,
+    designations, and CMS study/coding records retain their own scope.
+- id: dev-enhancor-padn
+  type: therapy
+  therapyType: device
+  name: Enhancor PADN / PULSE-LHD
+  company: co-pulnovo-medical
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  mechanism: Catheter radiofrequency pulmonary-artery denervation in CpcPH associated with left-heart disease.
+  description: >-
+    The official study record names Pulnovo and PADN for CpcPH associated with left-heart disease, including HF. Primary
+    configuration Enhancor Multi-Pole PA Radiofrequency Ablation System in PULSE-LHD CpcPH due to LHD, with broad HF EF
+    strata. Group1 PAH commercialization does not authorize Group2 HF use. PADN-HF-PH China NCT05824923 separate from US
+    PULSE-LHD. 
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07214376
+      - https://www.cms.gov/medicare/coverage/investigational-device-exemption-ide-studies/approved/g250159-nct07214376
+      - https://clinicaltrials.gov/study/NCT07214376
+      - https://clinicaltrials.gov/study/NCT05824923
+      - https://clinicaltrials.gov/study/NCT05996562
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+  materials: []
+  materialsStatus: not_established
+  regulatoryDetail: >-
+    Exact marketing authorization not established by this dossier; trial registrations, sponsor statements,
+    designations, and CMS study/coding records retain their own scope.
+- id: dev-reprieve-system
+  type: therapy
+  therapyType: device
+  name: Reprieve decongestion system
+  company: co-reprieve-cardiovascular
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  mechanism: >-
+    Urine-output-guided diuretic dose finding and infusion, with titrated saline replacement during hospital
+    decongestion.
+  description: >-
+    Sponsor describes personalized diuretic/fluid management for acute decompensated HF. Primary current bedside
+    Reprieve System is separate from legacy CardioRenal/TARGET devices and FASTR pilot research settings. Physiological
+    feedback does not imply autonomous clinical authority. FASTR pilot100 enrolled/96 randomized is sponsor statement
+    until original 2026 JACC paper reviewed; no imported outcome numbers. CMS recommendation is proposed coding only.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://reprievecardio.com/reprieve-system
+      - https://www.cms.gov/files/document/fall-2026-icd-10-pcs-update-materials.pdf
+      - https://clinicaltrials.gov/study/NCT06898515
+      - https://clinicaltrials.gov/study/NCT05174312
+      - https://clinicaltrials.gov/study/NCT05015764
+      - https://clinicaltrials.gov/study/NCT06362668
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+  materials: []
+  materialsStatus: not_established
+  regulatoryDetail: >-
+    Exact marketing authorization not established by this dossier; trial registrations, sponsor statements,
+    designations, and CMS study/coding records retain their own scope.
+- id: dev-smartvalves-tavr-sensing-pacing
+  type: therapy
+  therapyType: device
+  name: TAVR sensing/pacing add-on
+  company: co-smartvalves
+  treats:
+    - cond-as
+  regulatoryStatus: investigational
+  mechanism: >-
+    An implant add-on communicates with an external wearable that transmits energy and links to a physician monitoring
+    platform.
+  description: SmartValves is developing a battery-free, leadless sensing/pacing add-on for TAVR platforms.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://smartvalves.com/
+    notes: " Concept architecture; website labels imagery illustrative and device investigational/unavailable. Compatibility with every approved valve is an intended sponsor scope, not tested matrix. No host-valve authorization transfers to add-on. Gaps: development-stage, trial-registration, exact-implant-materials, valve-compatibility-validation, regulator-decision, explicit-patent-connection."
+  materials: []
+  materialsStatus: not_established
+- id: dev-xeltis-xplore2
+  type: therapy
+  therapyType: device
+  name: Xplore-2 pulmonary valve
+  company: co-xeltis
+  treats:
+    - cond-pv
+  regulatoryStatus: investigational
+  mechanism: Bioabsorbable polymer scaffold supports host tissue replacement over time.
+  description: Xeltis develops restorative pulmonary valved conduits for congenital right-ventricular-outflow-tract reconstruction.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://xeltis.com/applications/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7969645/fullTextXML
+      - https://clinicaltrials.gov/study/NCT03022708
+      - https://clinicaltrials.gov/study/NCT03405636
+      - https://clinicaltrials.gov/study/NCT02700100
+    notes: " Pulmonary XPV initial and modified second clinical prototypes are distinct. Do not transfer aXess dialysis graft CE mark to Xplore2. Historical conduit chemistry specified below applies only to 2021 studied prototypes. Sponsor Xplore2 wording does not bridge every manufacturing iteration. Gaps: current-xplore2-prototype-bridge, pulmonary-authorization, patent-product-connection, current-generation-materials, newsroom-access-limits."
+  materials: []
+  materialsStatus: not_established

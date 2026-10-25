@@ -38,6 +38,47 @@
     - cond-ar
     - cond-tr
 
+- id: news-2026-10-22-corwave-feasibility-enrollment
+  publishedAt: "2026-10-22"
+  title: >-
+    CorWave Completes Enrollment in Feasibility Study and Presents First Clinical Data on Adaptive Support with its Wave
+    Membrane LVAD
+  summary: >-
+    CorWave announced completion of enrollment in its LVAS feasibility study at two centers in Australia and Kazakhstan.
+    Its release describes adaptive-support observations in a presented case; aggregate feasibility results remain
+    forthcoming. The wave-membrane pump is investigational.
+  sourceName: CorWave
+  sourceUrl: https://www.corwave.com/wp-content/uploads/2026/10/20261022_CorWave_PR_End-of-Enrollment-of-Feasibility-Study-.pdf
+  topicTags:
+    - heart failure
+    - LVAD
+    - clinical study
+  relevantNodeIds:
+    - co-corwave
+    - dev-corwave-lvas
+    - cond-hf
+  reviewStatus: reviewed
+
+- id: news-2026-10-21-noah-voice-hf-first-patients
+  publishedAt: "2026-10-21"
+  title: Noah Labs announces first VOICE-HF participants
+  summary: >-
+    Noah Labs announced the first participants in VOICE-HF, a prospective study of its investigational Vox
+    voice-analysis software in stage C chronic heart failure. The trial is intended to test worsening-HF detection from
+    daily home recordings; no trial outcomes or marketing authorization are established by the announcement.
+  sourceName: Noah Labs
+  sourceUrl: >-
+    https://www.noah-labs.com/blog/noah-labs-enrolls-first-patients-in-voice-hf-the-pivotal-trial-to-support-fda-authorization-of-its-voice-based-ai-to-detect-worsening-heart-failure
+  topicTags:
+    - heart failure
+    - digital monitoring
+    - clinical study
+  relevantNodeIds:
+    - co-noah-labs
+    - dig-noah-labs-vox
+    - cond-hf
+  reviewStatus: reviewed
+
 - id: news-2026-10-21-revalve-palmetto-tmvr-efs-registered
   publishedAt: "2026-10-21"
   title: "The PALMETTO Study: Palmetto vAlve for Lifelong Management of patiEnts With miTral Valve regurgiTatiOn"
@@ -412,6 +453,63 @@
   topicTags: [TAVR, aortic regurgitation, delivery system, recall]
   relevantNodeIds: [dev-trilogy, co-jenavalve, cond-ar]
   lifecycleStatus: recalled
+  reviewStatus: reviewed
+
+- id: news-2026-09-04-medividia-post-tavi-fsi-study
+  publishedAt: "2026-09-04"
+  title: Medividia-affiliated study compares patient-specific post-TAVI simulations with echocardiography
+  summary: >-
+    An original five-subject SAPIEN 3 Ultra modeling study coupled Abaqus and FlowVision to compare predicted
+    hemodynamics with echocardiography. The preliminary comparison supported further benchmarking, particularly for
+    effective orifice area; it does not establish clinical treatment-selection efficacy.
+  sourceName: Biomechanics and Modeling in Mechanobiology
+  sourceUrl: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13545116/fullTextXML
+  topicTags:
+    - aortic-stenosis
+    - simulation
+    - research
+  relevantNodeIds:
+    - co-medividia
+    - dig-medividia-tavi-simulation
+    - cond-as
+  reviewStatus: reviewed
+
+- id: news-2026-08-28-elem-hf-modeling-framework
+  publishedAt: "2026-08-28"
+  title: ELEM outlines a shared modeling framework for heart-failure research
+  summary: >-
+    ELEM described research combining patient imaging and ECG data with electromechanical modeling across ischemic
+    cardiomyopathy, obstructive HCM and ATTR-CM. The written research overview stresses validation for each intended
+    use; it does not establish clinical outcome benefit or authorization for treatment selection.
+  sourceName: ELEM Biotech
+  sourceUrl: https://www.elem.bio/newsroom/one-modelling-framework-three-pathways-to-heart-failure/
+  topicTags:
+    - heart failure
+    - computational modeling
+    - research
+  relevantNodeIds:
+    - co-elem-biotech
+    - dig-elem-hf-modeling
+    - cond-hfref
+  reviewStatus: reviewed
+
+- id: news-2026-08-24-echopoint-ihsa-collaboration
+  publishedAt: "2026-08-24"
+  title: Echopoint announces collaboration with International Heart Spasms Alliance
+  summary: >-
+    Echopoint announced an IHSA collaboration intended to bring patient input into clinical evaluation and communication
+    for its iKOr coronary physiology program. The announcement does not establish clinical results or marketing
+    authorization.
+  sourceName: Echopoint Medical
+  sourceUrl: >-
+    https://www.echopointmedical.com/echopoint-medical-announces-collaboration-with-the-international-heart-spasms-alliance/
+  topicTags:
+    - coronary-microvascular-disease
+    - diagnostics
+  relevantNodeIds:
+    - co-echopoint-medical
+    - dev-echopoint-ikor
+    - cond-cmd
   reviewStatus: reviewed
 
 - id: news-2026-05-18-boston-mirus-siegel-investment

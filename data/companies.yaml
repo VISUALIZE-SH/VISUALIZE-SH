@@ -1858,3 +1858,281 @@
       Location is the awardee city in the NSF record; the company home page also says it is based in Houston. The
       awardee's NSF outcomes report states a former name, Caridian Medical, Inc.; no state or SEC filing was opened.
       Product descriptions are the company's own wording or the applicant's award abstract.
+
+- id: co-angioinsight
+  type: company
+  name: AngioInsight
+  website: https://www.angioinsight.com/company/news/
+  description: AngioInsight is developing AngioAI+, an investigational angiography analysis platform with a CMD application.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.angioinsight.com/angioai/
+      - https://www.angioinsight.com/angioinsight-announces-first-patient-enrolled-in-smartflow-clinical-study/
+      - https://clinicaltrials.gov/study/NCT07676097
+    notes: " AngioAI+ CMD assessment is scoped separately from epicardial FFR. Model/version number not disclosed in reviewed technical page. Registry and sponsor milestone differ in date/status/enrollment; preserve separately. Gaps: cmd-specific-results, exact-software-version, regulatory-decision, origin-institution-primary-document, registry-sponsor-status-conflict."
+- id: co-cardiovalve
+  type: company
+  name: Cardiovalve
+  website: https://cardiovalve.com/
+  description: >-
+    Cardiovalve develops transcatheter replacement systems for tricuspid and mitral disease; the two positions have
+    distinct studies.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://cardiovalve.com/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9485574/fullTextXML
+      - https://clinicaltrials.gov/study/NCT05486832
+      - https://clinicaltrials.gov/study/NCT03714412
+      - https://clinicaltrials.gov/study/NCT07334691
+      - https://clinicaltrials.gov/study/NCT03339115
+      - https://clinicaltrials.gov/study/NCT03958773
+      - https://clinicaltrials.gov/study/NCT03813524
+      - https://clinicaltrials.gov/study/NCT04100720
+    notes: " Primary proposed Atlas program is tricuspid Cardiovalve. Mitral Cardiovalve evidence is separate and must not supply TR materials/specs. TARGET2.0 is a separate registry identity; no assumption that every historical model is its exact configuration. Gaps: tricuspid-exact-materials, target2-generation-bridge, mitral-tricuspid-distinction, regulator-decision, patent-marking-number."
+- id: co-cardyograft
+  type: company
+  name: CardYograft
+  website: https://www.cardyograft.com/
+  description: Sponsor describes an autologous cardiac patch for HF, prepared and applied during bypass surgery.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.cardyograft.com/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12866517/fullTextXML
+      - https://clinicaltrials.gov/study/NCT05632432
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+- id: co-echopoint-medical
+  type: company
+  name: Echopoint Medical
+  website: https://www.echopointmedical.com/echopoint-medical-close-2-5-million-funding-round/
+  description: >-
+    Echopoint develops the iKOr coronary physiology system for pressure and flow assessment including microvascular
+    disease.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.echopointmedical.com/tackling-the-anoca-inoca-diagnostic-gap-echopoint-medical-advances-toward-ikode-clinical-study/
+      - https://www.echopointmedical.com/our-technology/
+      - https://www.echopointmedical.com/echopoint-medical-announces-collaboration-with-the-international-heart-spasms-alliance/
+      - https://clinicaltrials.gov/study/NCT05346458
+    notes: " Registry NCT05346458 names iKOs microcatheter plus iKOr console; current marketing uses iKOr system. Keep exact historical components separate; iKoDE planning is not documented enrollment. Gaps: permanent-implant-materials-not-applicable, ikode-registry-identity, original-fih-results, exact-us-authorization, institutional-origin-confirmation, grant-award-original."
+- id: co-electradx
+  type: company
+  name: ElectraDx
+  website: https://electradx.com/
+  description: Sponsor identifies HF as the initial application for its small-sample NT-proBNP testing platform.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://electradx.com/heart-health/
+      - https://electradx.com/about/
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+- id: co-elem-biotech
+  type: company
+  name: ELEM Biotech
+  website: https://www.elem.bio/
+  description: An original abstract with ELEM affiliations describes modeling pharmacological response in HFrEF.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12795199/fullTextXML
+      - https://www.elem.bio/products/trials/
+      - https://www.elem.bio/newsroom/one-modelling-framework-three-pathways-to-heart-failure/
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+- id: co-foresee-medtech
+  type: company
+  name: FORESEE MedTech
+  website: https://foresee-medtech.com/
+  description: Sponsor describes an intravascular microsensor and associated remote-monitoring system for HF.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://foresee-medtech.com/project/
+      - https://foresee-medtech.com/technology/
+      - https://foresee-medtech.com/about-us/
+      - https://cordis.europa.eu/project/id/101136633
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+- id: co-heart-biotech
+  type: company
+  name: Heart Biotech Ltd
+  website: https://heartbiotech.co.uk/
+  description: Heart Biotech develops a resorbable scaffold intended to enable in-situ formation of a living pulmonary valve.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://heartbiotech.co.uk/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10560219/fullTextXML
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12518614/fullTextXML
+    notes: " Current Yacoub Heart Valve and historical HCCV research configuration are linked by sponsor page but must not be assumed identical. HCCV 2023 is a surgical25-mm research scaffold in sheep, not established commercial configuration or pediatric growth proof. Gaps: current-yacoub-hccv-version-bridge, first-human-study, human-growth-durability, patent-office-original, grant-funder-original."
+- id: co-heartfelt-technologies
+  type: company
+  name: Heartfelt Technologies
+  website: https://www.hftech.org/
+  description: Sponsor describes passive in-home foot-volume monitoring for HF care.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.hftech.org/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8053525/fullTextXML
+      - https://www.hftech.org/patents/
+      - https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10573004
+      - https://clinicaltrials.gov/study/NCT06334822
+      - https://clinicaltrials.gov/study/NCT06222099
+      - https://clinicaltrials.gov/study/NCT07067658
+      - https://clinicaltrials.gov/study/NCT04072744
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+- id: co-deski
+  type: company
+  name: HeartFocus
+  website: https://www.heartfocus.ai/
+  description: HeartFocus is a DESKi brand for AI-guided acquisition of cardiac ultrasound views.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.heartfocus.ai/about-heartfocus
+      - https://www.heartfocus.ai/white-papers-and-publications/heartfocus-ai-outperforms-traditional-cardiac-ultrasound-training
+      - https://clinicaltrials.gov/study/NCT05874128
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260780
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K242807
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260780.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf24/K242807.pdf
+    notes: " Original FDA submissions distinguish HeartFocus v1.1.1 (K242807, initial Clarius configuration) from v1.3.0 (K260780, iPhone portrait UI change; Butterfly iQ+/iQ3 and iPadOS implemented through the prior PCCP). Both concern adult cardiac-image acquisition guidance, not automated disease diagnosis. K260780 expressly marks age 22 years and greater and prescription use. Clinical-study registry NCT05874128 and sponsor education/Link material remain generic unless a document establishes an exact-version bridge. Current deployed builds beyond these submissions are not established. Remaining gaps: original-clinical-publication, vcom-exact-day-and-results, patent-product-connection, deployed-build-and-ifu-beyond-reviewed-submissions, heartfocus-link-separate-indication, generic-trial-to-exact-version-bridge."
+- id: co-medividia
+  type: company
+  name: Medividia
+  website: https://medividia.com/
+  description: Medividia provides cardiovascular simulation services and contributes to patient-specific TAVI modeling research.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://medividia.com/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13545116/fullTextXML
+    notes: " Research/services profile, not an established authorized clinical decision product. Evolut-R14-patient research (2025) differs from SAPIEN 3 Ultra5-patient FSI research (2026). No Medividia-manufactured implant or implant materials inferred. Gaps: clinical-product-version, regulatory-authorization, prospective-clinical-validation, patent-product-connection, company-funder-award-record."
+- id: co-neocor
+  type: company
+  name: NeoCor
+  website: https://www.coaptvalve.com/
+  description: NeoCor develops CoApt for human mitral/tricuspid disease alongside a veterinary pathway.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.coaptvalve.com/
+      - https://www.coaptvalve.com/about
+    notes: " Human developmental program only. Sponsor prototype and canine studies cannot establish human efficacy. Russian NeoCor UniLine/TiAra registry records are different entity/program and excluded. Gaps: human-study-registration, exact-polymer-chemistry, human-design-configuration, patent-marking-number, independent-animal-publication."
+- id: co-noah-labs
+  type: company
+  name: Noah Labs
+  website: https://www.noah-labs.com/
+  description: Sponsor describes voice-based detection of HF decompensation.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://www.noah-labs.com/nl-vox
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13326637/fullTextXML
+      - https://www.noah-labs.com/blog/noah-labs-enrolls-first-patients-in-voice-hf-the-pivotal-trial-to-support-fda-authorization-of-its-voice-based-ai-to-detect-worsening-heart-failure
+      - https://clinicaltrials.gov/study/NCT07870395
+      - https://clinicaltrials.gov/study/NCT07443670
+      - https://clinicaltrials.gov/study/NCT07443969
+      - https://clinicaltrials.gov/study/NCT06566911
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+- id: co-orchestra-biomed
+  type: company
+  name: Orchestra BioMed
+  website: https://www.orchestrabiomed.com/
+  description: Sponsor announces an AVIM program application in HF alongside its hypertension work.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://investors.orchestrabiomed.com/news-releases/news-release-details/orchestra-biomed-announces-presentations-highlighting-avim
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12418400/fullTextXML
+      - https://investors.orchestrabiomed.com/news-releases/news-release-details/orchestra-biomed-exceeds-full-enrollment-target-backbeat-global
+      - https://clinicaltrials.gov/study/NCT04573699
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+- id: co-prolifagen
+  type: company
+  name: Prolifagen
+  website: https://prolifagen.com/
+  description: Sponsor describes miR302/hydrogel delivery to damaged myocardium following myocardial infarction.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://prolifagen.com/technology/
+      - https://prolifagen.com/wp-content/uploads/2026/02/prolifagen-non-confidential-deck-v2-26.pdf
+      - https://prolifagen.com/wp-content/uploads/2025/06/prolifagen-Wang-Morrissey-Burdick-Hydrogel-miR.pdf
+      - https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12128136
+      - https://reporter.nih.gov/project-details/9775771
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+- id: co-pulnovo-medical
+  type: company
+  name: Pulnovo Medical
+  website: https://pulnovomed.com/
+  description: The official study record names Pulnovo and PADN for CpcPH associated with left-heart disease, including HF.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07214376
+      - https://www.cms.gov/medicare/coverage/investigational-device-exemption-ide-studies/approved/g250159-nct07214376
+      - https://clinicaltrials.gov/study/NCT07214376
+      - https://clinicaltrials.gov/study/NCT05824923
+      - https://clinicaltrials.gov/study/NCT05996562
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+- id: co-reprieve-cardiovascular
+  type: company
+  name: Reprieve Cardiovascular
+  website: https://reprievecardio.com/
+  description: Sponsor describes personalized diuretic/fluid management for acute decompensated HF.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://reprievecardio.com/reprieve-system
+      - https://www.cms.gov/files/document/fall-2026-icd-10-pcs-update-materials.pdf
+      - https://clinicaltrials.gov/study/NCT06898515
+      - https://clinicaltrials.gov/study/NCT05174312
+      - https://clinicaltrials.gov/study/NCT05015764
+      - https://clinicaltrials.gov/study/NCT06362668
+    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+- id: co-smartvalves
+  type: company
+  name: SmartValves
+  website: https://smartvalves.com/
+  description: SmartValves is developing a battery-free, leadless sensing/pacing add-on for TAVR platforms.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://smartvalves.com/
+    notes: " Concept architecture; website labels imagery illustrative and device investigational/unavailable. Compatibility with every approved valve is an intended sponsor scope, not tested matrix. No host-valve authorization transfers to add-on. Gaps: development-stage, trial-registration, exact-implant-materials, valve-compatibility-validation, regulator-decision, explicit-patent-connection."
+- id: co-xeltis
+  type: company
+  name: Xeltis
+  website: https://xeltis.com/applications/
+  description: Xeltis develops restorative pulmonary valved conduits for congenital right-ventricular-outflow-tract reconstruction.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://xeltis.com/applications/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7969645/fullTextXML
+      - https://clinicaltrials.gov/study/NCT03022708
+      - https://clinicaltrials.gov/study/NCT03405636
+      - https://clinicaltrials.gov/study/NCT02700100
+    notes: " Pulmonary XPV initial and modified second clinical prototypes are distinct. Do not transfer aXess dialysis graft CE mark to Xplore2. Historical conduit chemistry specified below applies only to 2021 studied prototypes. Sponsor Xplore2 wording does not bridge every manufacturing iteration. Gaps: current-xplore2-prototype-bridge, pulmonary-authorization, patent-product-connection, current-generation-materials, newsroom-access-limits."
