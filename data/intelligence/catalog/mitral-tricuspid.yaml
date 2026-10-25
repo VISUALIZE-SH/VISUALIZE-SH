@@ -536,34 +536,42 @@ specs:
     source: src-triclip-ifu
     values:
       frame-material:
+        reviewStatus: reviewed
         value: Cobalt-chromium alloy clip arms/body; nitinol grippers
         source: src-triclip-ifu
         loc: 'PDF p.5, Section 3.0 Contraindications (implant-component hypersensitivity)'
       grasping-mechanism:
+        reviewStatus: reviewed
         value: Independent or simultaneous leaflet grasping (implant identical to MitraClip G4)
         basis: derived
         loc: 'PDF p.4, Section V Device Description ("identical to...MitraClip G4 implant...in formulation, geometry")'
         source: src-triclip-ssed
         context: TriClip G4 SSED states the implant is identical to the commercially available MitraClip G4 implant; MitraClip G4's own design-change approval (P100009/S029) added independent, simultaneous gripper actuation.
       available-sizes:
+        reviewStatus: reviewed
         value: 'Four sizes: NT, NTW, XT, XTW'
         loc: 'PDF p.4, Table 2'
         context: 'Grasping width (min): NT/NTW 17 mm, XT/XTW 22 mm. Implant width (nominal): NT/NTW 20 mm, XT/XTW 25 mm. Arm width (max): NT/XT 4 mm, NTW/XTW 6 mm. Max arm (coaptation) length: NT/NTW 9 mm, XT/XTW 12 mm.'
       delivery-sheath:
+        reviewStatus: reviewed
         value: Guide catheter 8.4 mm (25 Fr); delivery catheter 5.3 mm (16 Fr)
         loc: 'PDF p.4, Table 2'
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous to right atrium; no transseptal puncture
         loc: 'PDF p.3, Device Description (Steerable Guide Catheter)'
       imaging-guidance:
+        reviewStatus: reviewed
         value: Fluoroscopy and transesophageal echocardiography (TEE)
         loc: 'PDF p.5, Section 5.0/Warnings (implantation technique)'
       indication-scope:
+        reviewStatus: reviewed
         value: Symptomatic severe TR despite OMT, intermediate-or-greater risk
         loc: 'PDF p.1, Section II Indications for Use'
         source: src-triclip-ssed
         context: OMT = optimal medical therapy; full wording is longer (multidisciplinary heart-team determination that TEER is expected to reduce TR to moderate or less).
       pivotal-trials:
+        reviewStatus: reviewed
         value: TRILUMINATE Pivotal (NCT03904147)
         loc: 'PDF p.10, Section X Summary of Primary Clinical Study'
         source: src-triclip-ssed
@@ -573,10 +581,12 @@ specs:
     source: src-triclip-g5-pma
     values:
       device-design:
+        reviewStatus: reviewed
         value: Same G4 implant; redesigned delivery handle, simplified IFU
         loc: Approval Order Statement
         context: FDA approval order describes modifications to the Delivery System Handle and simplification of IFU procedural steps to improve ergonomics/usability.
       available-sizes:
+        reviewStatus: reviewed
         value: NT, NTW, XT, XTW (unchanged from G4 per approval order)
         basis: derived
         loc: Approval Order Statement
@@ -587,24 +597,30 @@ specs:
     source: src-mitraclip-g4-specs
     values:
       grasping-mechanism:
+        reviewStatus: reviewed
         value: Independent and simultaneous gripper (leaflet) actuation
         source: src-mitraclip-g4-pma
         loc: Approval Order Statement
         context: Added over the prior NT/NTR/XTR generation per the G4 design-change approval order.
       available-sizes:
+        reviewStatus: reviewed
         value: 'Four sizes: NT, NTW, XT, XTW'
         loc: 'PDF p.7 (printed pp.12-13), "MitraClip Device (Implant)" figure'
         context: 'Arm length: NT/NTW 15 mm, XT/XTW 18 mm (standard vs long-length arm). Arm width: NT/XT 4 mm, NTW/XTW 6 mm.'
       delivery-sheath:
+        reviewStatus: reviewed
         value: 25 Fr steerable guide catheter
         loc: 'PDF p.7 (printed pp.12-13), "Steerable Guide Catheter"'
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous, transseptal (left atrium)
         loc: 'PDF p.7 (printed pp.12-13), "Clip Delivery System"'
       imaging-guidance:
+        reviewStatus: reviewed
         value: Fluoroscopy and transesophageal echocardiography (TEE)
         loc: 'PDF p.7 (printed pp.12-13), "Equipment"'
       indication-scope:
+        reviewStatus: reviewed
         value: Degenerative MR and secondary MR in heart failure on GDMT
         basis: derived
         loc: Approval Order Statement
@@ -616,15 +632,18 @@ specs:
     source: src-mitraclip-g5-pma
     values:
       device-design:
+        reviewStatus: reviewed
         value: Same G4 implant; redesigned delivery handle, simplified IFU
         loc: Approval Order Statement
         context: Approved together with TriClip G5; FDA approval order describes handle and IFU procedural-step changes to improve ergonomics/usability.
       available-sizes:
+        reviewStatus: reviewed
         value: NT, NTW, XT, XTW (unchanged from G4)
         basis: derived
         loc: Approval Order Statement
         context: FDA states the change is limited to the Delivery System Handle and IFU procedural steps, not the implant; Abbott's US ordering page lists catalog numbers CDS0801-NT/NTW/XT/XTW and Steerable Guide Catheter SGC0801.
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous, transseptal (left atrium)
         basis: derived
         loc: Approval Order Statement
@@ -635,39 +654,49 @@ specs:
     source: src-pascal-ssed
     values:
       device-design:
+        reviewStatus: reviewed
         value: Central spacer plus paddles and independently actuated clasps
         loc: 'PDF p.2, Section V Device Description'
         context: Spacer fills the regurgitant orifice; broad paddles and clasps capture the leaflets.
       frame-material:
+        reviewStatus: reviewed
         value: Nitinol spacer, paddles, and clasps
         loc: 'PDF p.2, Section V Device Description'
       fabric-cover:
+        reviewStatus: reviewed
         value: Polyethylene terephthalate (PET) cloth over the spacer/paddles/clasps
         loc: 'PDF p.2, Section V Device Description'
       available-sizes:
+        reviewStatus: reviewed
         value: Two implant profiles, PASCAL and the narrower-profile PASCAL Ace
         loc: 'PDF p.2, Section V Device Description; Figure 2'
       delivery-sheath:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         loc: 'SSED (PDF, 40pp) and Labeling Part 2 (PDF, 38pp) checked; no guide-sheath French size or catheter OD stated'
         source: src-pascal-ifu
       grasping-mechanism:
+        reviewStatus: reviewed
         value: Independent leaflet capture (clasps move separately or together)
         source: src-pascal-ifu
         loc: 'PDF p.8, Section 8 Implant procedure steps'
         context: Each clasp slider can be advanced/retracted separately (clasp lock disengaged) or together with the other clasp (clasp lock engaged).
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous, transseptal (left atrium)
         source: src-pascal-ifu
         loc: 'PDF p.7, Implant procedure (Access step)'
       imaging-guidance:
+        reviewStatus: reviewed
         value: Transesophageal echocardiography (TEE, 2D and 3D) and fluoroscopy
         source: src-pascal-ifu
         loc: 'PDF p.5, Section on required equipment/capabilities'
       indication-scope:
+        reviewStatus: reviewed
         value: Degenerative (primary) MR, prohibitive surgical risk
         loc: 'PDF p.1, Section II Indications for Use'
       pivotal-trials:
+        reviewStatus: reviewed
         value: CLASP IID (NCT03706833)
         source: src-pascal-ifu
         loc: 'PDF p.10, CLASP IID trial summary'
@@ -677,49 +706,61 @@ specs:
     source: src-tendyne-ssed
     values:
       expansion-mechanism:
+        reviewStatus: reviewed
         value: Self-expanding
         loc: 'PDF p.3, Section V Device Description'
       frame-material:
+        reviewStatus: reviewed
         value: Nitinol inner and outer (fixation) frames; apical tether
         loc: 'PDF p.3, Section V Device Description'
       leaflet-material:
+        reviewStatus: reviewed
         value: Porcine pericardium
         source: src-tendyne-ifu
         loc: 'PDF p.4, Table 1 header / Device Description'
       anchoring-mechanism:
+        reviewStatus: reviewed
         value: UHMWPE tether secured to an epicardial apical pad
         loc: 'PDF p.3, Section V Device Description'
         context: Ultra-high-molecular-weight polyethylene tether; pad tension adjusted, then tether cut to release the delivery system.
       available-sizes:
+        reviewStatus: reviewed
         value: 'Outer diameters 29, 33, 35, 37, 39, 41 mm; SP or LP profile'
         source: src-tendyne-ifu
         loc: 'PDF p.4, Table 1'
         context: SP = Standard Profile, LP = Low Profile. 23 model/annulus-fit sub-sizes (A/B/C/S/M/L) in Table 1, each matched to a native-annulus AP and perimeter range.
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: Native annulus AP 26.4-36.8 mm / perimeter 96-143 mm across sub-sizes
         source: src-tendyne-ifu
         loc: 'PDF p.4, Table 1'
       delivery-sheath:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         loc: 'IFU (PDF, 64pp) checked; transapical delivery sheath/dilator described without a French size or measured OD'
         source: src-tendyne-ifu
       access-route:
+        reviewStatus: reviewed
         value: Transapical (left ventricular apex)
         loc: 'PDF p.1, Section II Indications for Use / Device Description'
       imaging-guidance:
+        reviewStatus: reviewed
         value: Transesophageal echocardiography (TEE) and fluoroscopy
         source: src-tendyne-ifu
         loc: 'IFU implant procedure steps'
       indication-scope:
+        reviewStatus: reviewed
         value: Severe mitral valve dysfunction (MR/MS) associated with severe MAC
         loc: 'PDF p.1, Section II Indications for Use'
         context: Moderate-to-severe/severe MR, severe MS, or moderate MR with moderate-or-greater MS, associated with severe MAC, unsuitable for surgery or TEER.
       post-implant-therapy:
+        reviewStatus: reviewed
         value: Long-term anticoagulation recommended if thromboembolism risk factors
         source: src-tendyne-ifu
         loc: 'PDF p.15, Patient counseling information'
         context: 'General bioprosthetic-valve guidance ("unless contraindicated"), not a fixed protocol duration.'
       pivotal-trials:
+        reviewStatus: reviewed
         value: SUMMIT trial, Severe MAC cohort (IDE G140240)
         loc: 'PDF p.12, Section X Summary of Primary Clinical Study'
 
@@ -728,49 +769,62 @@ specs:
     source: src-sapienm3-ssed
     values:
       expansion-mechanism:
+        reviewStatus: reviewed
         value: Balloon-expandable valve within a self-expanding nitinol encircling dock
         loc: 'PDF p.2, Section V Device Description'
       frame-material:
+        reviewStatus: reviewed
         value: Cobalt-chromium valve frame; nitinol dock (PET-covered braid)
         loc: 'PDF p.2, Section V Device Description'
       leaflet-material:
+        reviewStatus: reviewed
         value: Bovine pericardium
         loc: 'PDF p.2, Section V Device Description'
       tissue-treatment:
+        reviewStatus: reviewed
         value: Carpentier-Edwards ThermaFix process
         loc: 'PDF p.2, Section V Device Description'
       sealing-design:
+        reviewStatus: reviewed
         value: PET inner skirt, full-frame outer skirt
         loc: 'PDF p.2, Section V Device Description'
         context: ePTFE covering the frame inflow/outflow.
       anchoring-mechanism:
+        reviewStatus: reviewed
         value: Nitinol dock encircles/cinches native leaflets before valve deployment
         loc: 'PDF p.2, Section V Device Description'
       available-sizes:
+        reviewStatus: reviewed
         value: '20, 23, 26, 29 mm'
         source: src-sapienm3-s002-pma
         loc: Device field
       delivery-sheath:
+        reviewStatus: reviewed
         value: Edwards 23F guide sheath; Commander M delivery system
         loc: 'PDF p.2-3, Section V Device Description'
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous, transseptal, through 23F guide sheath
         loc: 'PDF p.16, Clinical study procedural description'
       imaging-guidance:
+        reviewStatus: reviewed
         value: Transesophageal echocardiography (TEE) and fluoroscopy
         basis: derived
         loc: 'PDF p.2-3, Section V Device Description (delivery-system positioning knobs); IFU procedure steps'
         source: src-sapienm3-ifu
       indication-scope:
+        reviewStatus: reviewed
         value: Symptomatic moderate-to-severe/severe MR, or MAC-associated MV dysfunction
         loc: 'PDF p.1, Section II Indications for Use'
         context: Both indications require the patient to be unsuitable for surgery or TEER per multidisciplinary heart team.
       post-implant-therapy:
+        reviewStatus: reviewed
         value: Anticoagulation per physician discretion, minimum 6 months
         source: src-sapienm3-ifu
         loc: 'PDF p.5, Precautions'
         context: Failure to anticoagulate/bridge appropriately risks valve thrombosis.
       pivotal-trials:
+        reviewStatus: reviewed
         value: ENCIRCLE trial, Main Cohort (IDE G170152)
         loc: 'PDF p.17, Section X Summary of Primary Clinical Study'
 
@@ -779,36 +833,46 @@ specs:
     source: src-intrepid-protocol
     values:
       expansion-mechanism:
+        reviewStatus: reviewed
         value: Self-expanding
         loc: 'PDF p.21, Section 6.1 Product Description'
       frame-material:
+        reviewStatus: reviewed
         value: Inner nitinol stent; isolated outer nitinol fixation ring
         loc: 'PDF p.21, Section 6.1 Product Description'
         context: A nitinol-reinforced polyester atrial-brim skirt is structurally independent of both.
       leaflet-material:
+        reviewStatus: reviewed
         value: Bovine pericardium
         loc: 'PDF p.21, Section 6.1 Product Description'
       sealing-design:
+        reviewStatus: reviewed
         value: Woven polyester valve fabric and atrial-brim skirt
         loc: 'PDF p.21, Section 6.1 Product Description'
       anchoring-mechanism:
+        reviewStatus: reviewed
         value: Outer fixation ring conforms to and engages the annulus
         loc: 'PDF p.21, Section 6.1 Product Description'
         context: Mechanically isolated from the inner valve stent so annular loading does not distort the leaflets.
       delivery-sheath:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         loc: 'Clinical Investigation Plan (PDF, 159pp, pp.1-45 reviewed) checked; transfemoral sheath/dilator kit described without a French size'
       access-route:
+        reviewStatus: reviewed
         value: Investigational transfemoral transseptal (left atrium)
         loc: 'PDF p.1 Title page; PDF p.21, Section 6.1 Product Description'
         context: Earlier device generation used transapical access (APOLLO trial).
       imaging-guidance:
+        reviewStatus: reviewed
         value: Fluoroscopy and echocardiography
         loc: 'PDF p.21, Section 6.1 Product Description'
       indication-scope:
+        reviewStatus: reviewed
         value: 'Investigational: moderate-severe/severe MR, ineligible for surgery'
         loc: 'PDF p.11, Indication under investigation'
       pivotal-trials:
+        reviewStatus: reviewed
         value: APOLLO (transapical, ongoing); separate transseptal EFS protocol
         loc: 'PDF p.1 Title page; PDF p.11, Investigation Purpose'
         context: APOLLO is the Intrepid transapical pivotal program described in existing graph data; this protocol (NCT02322840) is a distinct transfemoral transseptal early feasibility study. No FDA decision has been identified for either generation.
@@ -818,55 +882,69 @@ specs:
     source: src-evoque-ssed
     values:
       expansion-mechanism:
+        reviewStatus: reviewed
         value: Self-expanding
         loc: 'PDF p.2, Section V Device Description'
       frame-material:
+        reviewStatus: reviewed
         value: Self-expanding nitinol frame with an integrated anchoring system
         loc: 'PDF p.2, Section V Device Description'
       leaflet-material:
+        reviewStatus: reviewed
         value: Bovine pericardium (28 mm trileaflet valve)
         loc: 'PDF p.2, Section V Device Description'
       tissue-treatment:
+        reviewStatus: reviewed
         value: Glutaraldehyde fixation, proprietary Thermafix process
         loc: 'PDF p.2, Section V Device Description'
       sealing-design:
+        reviewStatus: reviewed
         value: Intra-annular fabric skirt
         loc: 'PDF p.2, Section V Device Description'
       anchoring-mechanism:
+        reviewStatus: reviewed
         value: Nitinol anchors capture the free edge of all 3 native leaflets
         loc: 'PDF p.2, Section V Device Description'
         context: Anchors extend between the subvalvular chordae to engage the septal, anterior, and posterior tricuspid leaflets.
       available-sizes:
+        reviewStatus: reviewed
         value: 44, 48, 52 mm outer frame diameter
         loc: 'PDF p.2, Section V Device Description'
         context: A 56-mm valve was used late in TRISCEND II enrollment but is outside this PMA's scope.
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: Perimeter-derived annulus diameter approx. 36.5-53.5 mm
         source: src-evoque-ifu
         loc: 'PDF p.2, Valve size recommendation table'
         context: Range spans the 44/48/52 mm sizes across systole/diastole.
       delivery-sheath:
+        reviewStatus: reviewed
         value: 28 Fr delivery-system OD; 24/28/33 Fr dilator kit
         source: src-evoque-ifu
         loc: 'PDF p.2, Delivery System / Dilator Kit description'
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous (right atrium); no transseptal puncture
         source: src-evoque-ifu
         loc: 'PDF p.2, Delivery System description'
       imaging-guidance:
+        reviewStatus: reviewed
         value: TEE and fluoroscopy, with CT-based sizing
         source: src-evoque-ifu
         loc: 'IFU precautions and sizing sections'
       indication-scope:
+        reviewStatus: reviewed
         value: Symptomatic severe TR despite OMT, heart-team appropriate for replacement
         loc: 'PDF p.1, Section II Indications for Use'
         context: OMT = optimal medical therapy.
       post-implant-therapy:
+        reviewStatus: reviewed
         value: Anticoagulant/antiplatelet therapy per physician discretion
         source: src-evoque-ifu
         loc: 'PDF p.3, Warnings'
         context: Per current guidelines; no fixed protocol duration stated.
       pivotal-trials:
+        reviewStatus: reviewed
         value: TRISCEND II (IDE G190289)
         loc: 'PDF p.13, Section X Summary of Primary Clinical Study'
 
@@ -875,31 +953,39 @@ specs:
     source: src-adaptr-fih
     values:
       frame-material:
+        reviewStatus: reviewed
         value: Conformable nitinol right-atrial frame with anchoring barbs
         loc: Device Description / Figure 1
         context: Frame is covered by a textile atrial-skirt ingrowth matrix; the report does not identify the fabric polymer.
       anchoring-mechanism:
+        reviewStatus: reviewed
         value: Barbs engage right-atrial tissue only; no ventricular contact
         loc: Case Summary (device description paragraph)
         context: Device sits entirely in the right atrium and does not cross the septum.
       available-sizes:
+        reviewStatus: reviewed
         value: Single configuration reported (22 mm central disk)
         loc: Case Summary; Discussion
         context: Additional sizes/shapes are planned per the Discussion section; only one first-in-human configuration is public.
       delivery-sheath:
+        reviewStatus: reviewed
         value: 26 Fr delivery catheter (26-F DrySeal Flex introducer)
         loc: Case Summary (procedure description)
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous (right atrium); no septal crossing
         loc: Case Summary (procedure description)
       imaging-guidance:
+        reviewStatus: reviewed
         value: 3D multiplanar TEE and fluoroscopy; CT for sizing/follow-up
         loc: Case Summary (procedure description); Figures 2-5
       indication-scope:
+        reviewStatus: reviewed
         value: 'Investigational: high-risk isolated functional TR, single case'
         loc: Case Summary
         context: Anatomy unsuitable for other transcatheter tricuspid valve intervention (TTVI) options in this patient.
       post-implant-therapy:
+        reviewStatus: reviewed
         value: Anticoagulation for at least 6 months in this case
         loc: Case Summary (post-procedure course)
         context: Single-case protocol, not a labeled regimen.
@@ -909,25 +995,32 @@ specs:
     source: src-cardioband-review
     values:
       device-design:
+        reviewStatus: reviewed
         value: Adjustable band anchored trigone-to-trigone, cinched under echo
         loc: Device description / Procedural details
         context: Sleeve is anchored along the posterior mitral annulus, then the cinching mechanism reduces annular dimension on the beating heart.
       fabric-cover:
+        reviewStatus: reviewed
         value: Standard polyester fabric sleeve
         loc: Device description
       anchoring-mechanism:
+        reviewStatus: reviewed
         value: Multiple stainless-steel anchors screwed sequentially along the annulus
         loc: Device description
       available-sizes:
+        reviewStatus: reviewed
         value: Six implant sizes to cover different annulus sizes
         loc: Procedural details (Implant sizes)
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous, transseptal (left atrium), via the fossa ovalis
         loc: Procedural details (Delivery method / Access)
       imaging-guidance:
+        reviewStatus: reviewed
         value: Echocardiography (beating-heart TEE guidance)
         loc: Procedural details
       indication-scope:
+        reviewStatus: reviewed
         value: Mitral annular reduction (functional MR)
         context: CE-marked, no identified US authorization.
         basis: derived

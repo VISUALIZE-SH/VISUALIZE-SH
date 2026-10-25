@@ -80,44 +80,55 @@ specs:
     source: src-autus-fda-announcement-20261001
     values:
       manufacturer:
+        reviewStatus: reviewed
         value: Edwards Lifesciences (approval holder)
         loc: Final paragraph naming approval recipient and original developer
         context: FDA names Autus Valve Technologies as developer; legal manufacturing-site details are not established here.
       device-design:
+        reviewStatus: reviewed
         value: Size-adjustable surgical pulmonary valve with polymeric leaflets
         loc: Opening paragraph; polymeric-leaflet paragraph
       expansion-mechanism:
+        reviewStatus: reviewed
         value: Postimplant transcatheter balloon expansion
         loc: Diameter paragraph; final clinical-study paragraph
         limitation: Designed to accommodate growth; expansion experience and durability are limited. It does not grow autonomously.
       leaflet-material:
+        reviewStatus: reviewed
         value: Polymeric material
         loc: Polymeric-leaflet paragraph
         limitation: Polymer chemistry is not disclosed in the FDA announcement; no ePTFE or other specific composition inferred.
       frame-material:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         loc: Entire FDA announcement (frame alloy not specified)
         limitation: This is missingness in the inspected announcement, not a conclusion about the unavailable IFU or SSED.
       access-route:
+        reviewStatus: reviewed
         value: Surgical implantation; subsequent transcatheter balloon dilation
         loc: Opening paragraph; diameter paragraph
       available-sizes:
+        reviewStatus: reviewed
         availability: not_yet_reviewed
         loc: Diameter paragraph (approximately 13 mm initially; expansion up to 22 mm)
         context: Reported initial and maximum diameters are not discrete marketed sizes. Exact catalog size/model requires the approved IFU.
       adjustable-diameter:
+        reviewStatus: reviewed
         value: Approx. 13 mm initial diameter; later expansion up to 22 mm
         loc: Diameter paragraph
         limitation: Announcement-level valve diameter description, not discrete marketed sizes or a patient annulus/RVOT eligibility range.
       development-status:
+        reviewStatus: reviewed
         value: US FDA PMA approval announced October 1, 2026
         loc: Opening paragraph; PMA pathway paragraph
         limitation: PMA identifier, approval order and approved IFU were not located. No formal decision record with an invented identifier is added.
       indication-scope:
+        reviewStatus: reviewed
         value: Pediatric congenital pulmonary valve disease; surgical replacement
         loc: Opening paragraph
         context: Paraphrase of FDA announcement scope; trial ages and eligibility are not substituted for exact approved labeling.
       pivotal-trials:
+        reviewStatus: reviewed
         value: AUT-CP-001 / NCT05006404
         source: src-autus-pivotal-registry
         loc: 'API protocolSection.identificationModule; descriptionModule; designModule (retrieved 2026-10-07)'

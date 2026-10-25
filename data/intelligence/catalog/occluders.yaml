@@ -595,47 +595,59 @@ specs:
   source: src-amulet-ssed
   values:
     device-design:
+      reviewStatus: reviewed
       value: 'Dual-seal occluder: Nitinol lobe + larger disc, central waist'
       loc: PDF p.2, Device Description
       context: Braided Nitinol lobe; disc connected to the lobe by the waist.
     frame-material:
+      reviewStatus: reviewed
       value: Braided Nitinol
       loc: PDF p.2, Device Description
     fabric-cover:
+      reviewStatus: reviewed
       value: Polyester fabric sewn into both the lobe and the disc
       loc: PDF p.2, Device Description
     anchoring-mechanism:
+      reviewStatus: reviewed
       value: Lobe wires give radial fixation against LAA wall (passive)
       loc: PDF p.2, Device Description
       context: Passive friction only; no screw/active fixation.
     repositionable:
+      reviewStatus: reviewed
       value: Recapturable and repositionable by pulling the delivery cable before release
       loc: PDF p.5, Principles of Operation
     access-route:
+      reviewStatus: reviewed
       value: Transfemoral venous, transseptal puncture
       loc: PDF p.4, Principles of Operation
     delivery-sheath:
+      reviewStatus: reviewed
       value: 12F or 14F Amplatzer TV45x45 Delivery Sheath
       loc: PDF p.3, Accessories
     available-sizes:
+      reviewStatus: reviewed
       value: Lobe 16-34 mm; disc 22-41 mm (8 lobe sizes)
       source: src-amulet-ifu
       loc: PDF p.19 (printed p.15), Appendix A, Table 1
       context: Eight lobe sizes (16, 18, 20, 22, 25, 28, 31, 34 mm). The SSED (PDF p.2, Device Description) gives the same lobe and disc ranges without a count. An earlier "13 device sizes" value was incorrect; the only 13s in the Amulet documents are a 13F loader/ACP sheath size (SSED PDF p.3) and the top of the first landing-zone range, not a size count.
     imaging-guidance:
+      reviewStatus: reviewed
       value: Pre-procedure TEE to exclude thrombus; fluoroscopy plus TEE during implantation
       loc: PDF p.4, Principles of Operation
     indication-scope:
+      reviewStatus: reviewed
       value: LAA thrombus-embolization risk reduction in non-valvular AF
       loc: PDF p.1, Indications for Use
       context: Assessed by CHADS2/CHA2DS2-VASc; suitable for short-term anticoagulation, with rationale
         to seek a non-pharmacologic alternative.
     post-implant-therapy:
+      reviewStatus: reviewed
       value: 'Amulet IDE protocol: DAPT or aspirin+OAC, physician discretion'
       loc: PDF p.22, Clinical Study
       context: NOAC or VKA. Reflects the FDA-reviewed pivotal-trial regimen (vs. the Watchman control
         arm’s required aspirin+warfarin); may not be the verbatim current IFU wording.
     pivotal-trials:
+      reviewStatus: reviewed
       value: Amulet IDE Trial (vs. WATCHMAN, PMA P130013)
       loc: PDF p.12, Summary of Primary Clinical Study
 - version: ver-lambre
@@ -643,47 +655,59 @@ specs:
   source: src-lambre-study
   values:
     device-design:
+      reviewStatus: reviewed
       value: Umbrella (8 arms + distal hooks) and disc, central pin
       loc: Article body, 'Dispositivo Lambre®' section
       context: Arms have atraumatic tips; disc covers the LAA ostium.
     frame-material:
+      reviewStatus: reviewed
       value: Self-expanding Nitinol mesh
       loc: Article body, 'Dispositivo Lambre®' section
     fabric-cover:
+      reviewStatus: reviewed
       value: PET fabric sewn inside the umbrella and disc
       loc: Article body, 'Dispositivo Lambre®' section
       context: PET = polyethylene terephthalate.
     surface-coating:
+      reviewStatus: reviewed
       value: Titanium nitride (TiN) coating over the Nitinol mesh
       loc: Article body, 'Dispositivo Lambre®' section
     anchoring-mechanism:
+      reviewStatus: reviewed
       value: Umbrella arms engage LAA trabeculae; distal hooks anchor wall
       loc: Article body, 'Dispositivo Lambre®' section
       context: Atraumatic tips; arms deploy via anterograde rotation, for added stability.
     access-route:
+      reviewStatus: reviewed
       value: Transseptal, via dedicated dual-curve (45°/30°) long delivery sheath
       loc: Article body, Methods
     delivery-sheath:
+      reviewStatus: reviewed
       value: 8F to 10F (dual-curve 45°/30° sheaths, sized to the chosen device)
       loc: Article body, Methods
     available-sizes:
+      reviewStatus: reviewed
       value: 'Standard: umbrella 16-36 mm; Special: umbrella 16-26 mm'
       loc: Article body, Methods
       context: Standard type in 2 mm steps, disc 6 mm larger (16-30 mm umbrella) or 4 mm larger (32-36
         mm umbrella). Special type disc 12-14 mm larger.
     anatomy-range-summary:
+      reviewStatus: reviewed
       value: Umbrella 2-8 mm larger than LAA landing zone
       loc: Article body, Methods
       context: Sized by intraoperative angiography/TEE (implantation zone).
     imaging-guidance:
+      reviewStatus: reviewed
       value: Intraoperative angiography plus transesophageal echocardiography (TEE)
       loc: Article body, Methods
     post-implant-therapy:
+      reviewStatus: reviewed
       value: Aspirin 100 mg + clopidogrel 75 mg post-procedure
       loc: Article body, Methods
       context: Clopidogrel stopped at 3 months, aspirin continued; follow-up TEE at 3 and 6 months. Single-center/multicenter
         Brazilian registry protocol, not an FDA label (device has no US marketing authorization).
     indication-scope:
+      reviewStatus: reviewed
       availability: not_applicable
       basis: directly_reported
       loc: Press release body
@@ -696,48 +720,60 @@ specs:
   source: src-ecliptis-510k
   values:
     device-design:
+      reviewStatus: reviewed
       value: Curved mechanical clip, U-shape opening, tip-first closure
       loc: PDF p.5-6, Device Description and Table 1
       context: Surgical LAA exclusion clip, not a transcatheter occluder.
     frame-material:
+      reviewStatus: reviewed
       value: Nitinol spring plus polyether ether ketone (PEEK) bars
       loc: PDF p.5, Device Description
     fabric-cover:
+      reviewStatus: reviewed
       value: Silicone overmold covering the PEEK implant bars
       loc: PDF p.5, Device Description
     anchoring-mechanism:
+      reviewStatus: reviewed
       value: Spring-loaded clip compresses across the LAA base
       loc: PDF p.6, Table 1 (Clip Mechanics)
       context: Not a radial-friction endovascular anchor.
     repositionable:
+      reviewStatus: reviewed
       value: Recapturable and re-deployable, same delivery system
       loc: PDF p.7, Table 1 (Adjustment after deployment)
       context: After initial deployment.
     access-route:
+      reviewStatus: reviewed
       value: Surgical, epicardial, under direct visualization
       loc: PDF p.5, Indications for Use
       context: Performed with other cardiac surgical procedures (not transcatheter/femoral).
     delivery-sheath:
+      reviewStatus: reviewed
       availability: not_applicable
       loc: PDF p.5, Device Description
       context: Delivered via a malleable-shaft, pre-loaded surgical applicator; no transcatheter sheath
         French size applies.
     available-sizes:
+      reviewStatus: reviewed
       value: 35, 40, 45, 50 mm clip sizes
       loc: PDF p.5, Device Description
     imaging-guidance:
+      reviewStatus: reviewed
       value: Direct surgical visualization; no fluoro/echo required
       loc: PDF p.5, Indications for Use
       context: With or without camera/endoscope assistance.
     indication-scope:
+      reviewStatus: reviewed
       value: Exclusion of the heart's left atrial appendage
       loc: PDF p.5, Indications for Use
       context: Performed under direct visualization, in conjunction with other cardiac surgical procedures.
     post-implant-therapy:
+      reviewStatus: reviewed
       availability: not_publicly_disclosed
       loc: PDF p.5-7
       context: The 510(k) summary does not specify a device-specific post-implant antithrombotic regimen.
     pivotal-trials:
+      reviewStatus: reviewed
       availability: not_applicable
       loc: PDF p.7, Performance Data
       context: Cleared via 510(k) substantial equivalence to the AtriCure AtriClip (K210293) using bench,
@@ -747,40 +783,50 @@ specs:
   source: src-amplatzer-pfo-ssed
   values:
     device-design:
+      reviewStatus: reviewed
       value: Self-expanding double-disc device, articulating waist
       loc: PDF p.2, Device Description
       context: Two discs linked by a short connecting waist that articulates to conform to the septal
         wall.
     frame-material:
+      reviewStatus: reviewed
       value: Nitinol wire mesh
       loc: PDF p.2, Device Description
     fabric-cover:
+      reviewStatus: reviewed
       value: Polyester fabric sewn to each disc with polyester thread
       loc: PDF p.2, Device Description
     repositionable:
+      reviewStatus: reviewed
       value: End-screw delivery-cable attachment allows recapture if required, before release
       loc: PDF p.2, Device Description
     access-route:
+      reviewStatus: reviewed
       value: 'Transseptal, via the AMPLATZER TorqVue Delivery System'
       loc: PDF p.2, Device Description
       context: 510(k)-cleared; right atrium to left atrium.
     available-sizes:
+      reviewStatus: reviewed
       value: 18, 25, 35 mm (device size = right atrial disc diameter)
       loc: PDF p.2, Device Description
     imaging-guidance:
+      reviewStatus: reviewed
       value: TEE at ~6 months post-implant to assess closure
       loc: PDF p.15, Study Protocol
       context: ICE may substitute for TEE at the time of the procedure.
     indication-scope:
+      reviewStatus: reviewed
       value: Transcatheter PFO closure to reduce recurrent stroke risk
       loc: PDF p.1, Indications for Use
       context: In patients (predominantly 18-60 y) with cryptogenic stroke due to presumed paradoxical
         embolism.
     post-implant-therapy:
+      reviewStatus: reviewed
       value: 'RESPECT protocol: clopidogrel 30 days + aspirin 6 months'
       loc: PDF p.15, Study Protocol
       context: Additional therapy beyond 6 months at investigator discretion.
     pivotal-trials:
+      reviewStatus: reviewed
       value: RESPECT trial (IDE G990318)
       loc: PDF p.10, Summary of Primary Clinical Study
 - version: ver-gore-cardioform-septal
@@ -790,45 +836,57 @@ specs:
   source: src-gore-cardioform-septal-ssed
   values:
     device-design:
+      reviewStatus: reviewed
       value: 'Double-disc occluder: platinum-filled Nitinol, ePTFE cover'
       loc: PDF p.2, Device Description
       context: Forms a double-disc configuration when deployed.
     frame-material:
+      reviewStatus: reviewed
       value: Platinum-filled Nitinol wire frame
       loc: PDF p.2, Device Description
     fabric-cover:
+      reviewStatus: reviewed
       value: Expanded polytetrafluoroethylene (ePTFE) cover
       loc: PDF p.2, Device Description
     surface-coating:
+      reviewStatus: reviewed
       value: Hydrophilic surface treatment on the ePTFE to aid echocardiographic visibility
       loc: PDF p.2, Device Description
     repositionable:
+      reviewStatus: reviewed
       value: Handle repositions/retrieves via Retrieval Cord before release
       loc: PDF p.2, Device Description
     access-route:
+      reviewStatus: reviewed
       value: Transcatheter, conventional delivery; 0.035 in guidewire
       loc: PDF p.2, Device Description
     delivery-sheath:
+      reviewStatus: reviewed
       value: 10 Fr outer-diameter Delivery Catheter, 75 cm working length
       loc: PDF p.2, Device Description
     available-sizes:
+      reviewStatus: reviewed
       value: 20, 25, 30 mm occluder diameters
       loc: PDF p.2, Device Description
     anatomy-range-summary:
+      reviewStatus: reviewed
       value: Not recommended for defects larger than 17 mm
       loc: PDF p.4, Warnings
       source: src-gore-cardioform-septal-ifu
     imaging-guidance:
+      reviewStatus: reviewed
       value: TEE/ICE with color-flow Doppler for sizing
       loc: PDF p.4, Warnings (device sizing)
       source: src-gore-cardioform-septal-ifu
       context: TTE or TEE used to assess closure post-implant.
     indication-scope:
+      reviewStatus: reviewed
       value: Transcatheter closure of secundum ASD and PFO
       loc: PDF p.1, Indications for Use
       context: PFO closure to reduce recurrent ischemic stroke risk in patients (predominantly 18-60
         y) with cryptogenic stroke due to presumed paradoxical embolism.
     post-implant-therapy:
+      reviewStatus: reviewed
       value: 'ASD: antiplatelet 6 months. PFO: antiplatelet indefinitely'
       loc: PDF p.5, Post Procedure
       source: src-gore-cardioform-septal-ifu
@@ -836,6 +894,7 @@ specs:
         75 mg for 3 days, then aspirin 81-325 mg alone (or aspirin+dipyridamole, or clopidogrel 75 mg
         alone).'
     pivotal-trials:
+      reviewStatus: reviewed
       value: REDUCE trial
       loc: PDF p.5, Summary of Primary Clinical Study
 - version: ver-gore-cardioform-asd
@@ -843,6 +902,7 @@ specs:
   source: src-gore-cardioform-asd-decision
   values:
     device-design:
+      reviewStatus: reviewed
       value: Same CARDIOFORM platform (Nitinol frame, ePTFE cover)
       loc: Approval order statement
       context: As the GORE CARDIOFORM Septal Occluder, in a labeled configuration for larger ASDs.
@@ -852,14 +912,17 @@ specs:
         GORE HELEX Septal Occluder product line' plus the original CARDIOFORM Septal Occluder SSED device
         description.
     anatomy-range-summary:
+      reviewStatus: reviewed
       value: Labeled for secundum ASDs 8-35 mm in diameter
       loc: Press release, paragraph 2
       source: src-gore-cardioform-asd-pr
       context: Including defects without a retro-aortic rim.
     indication-scope:
+      reviewStatus: reviewed
       value: Percutaneous closure of ostium secundum atrial septal defects (ASD)
       loc: Approval order statement
     pivotal-trials:
+      reviewStatus: reviewed
       value: ASSURED clinical study
       loc: Article title
       source: src-gore-cardioform-asd-assured
@@ -870,45 +933,57 @@ specs:
   source: src-amplatzer-aso-ssed
   values:
     device-design:
+      reviewStatus: reviewed
       value: Self-expanding double-disc device, waist sized to ASD
       loc: PDF p.3, Device Description
       context: Discs linked by a short connecting waist.
     frame-material:
+      reviewStatus: reviewed
       value: Nitinol wire mesh
       loc: PDF p.3, Device Description
     fabric-cover:
+      reviewStatus: reviewed
       value: Polyester fabric filling the discs and waist, sewn on with polyester thread
       loc: PDF p.3, Device Description
     repositionable:
+      reviewStatus: reviewed
       value: Delivery cable allows placement and retrieval before release
       loc: PDF p.4, Device Description
       context: Retrieval is used if necessary.
     access-route:
+      reviewStatus: reviewed
       value: Transcatheter, via the AMPLATZER Delivery System
       loc: PDF p.4, Device Description
       context: Delivery System = Delivery Sheath, Dilator, Loader.
     delivery-sheath:
+      reviewStatus: reviewed
       value: 6-7F (4-10 mm devices) up to 12F (34-38 mm devices), by device size
       loc: PDF p.4, Table 1 (Device Specifications)
     available-sizes:
+      reviewStatus: reviewed
       value: 4-38 mm device (stretched-ASD) sizes, 28 sizes total
       loc: PDF p.4, Table 1 (Device Specifications)
     anatomy-range-summary:
+      reviewStatus: reviewed
       value: Device size = stretched ASD 4-38 mm; LA disc 16-54, RA 12-48 mm
       loc: PDF p.4, Table 1 (Device Specifications)
       context: LA/RA disc size depends on device size.
     imaging-guidance:
+      reviewStatus: reviewed
       value: Echo evidence of secundum ASD required for selection
       loc: PDF p.16, Study Protocol
       context: TEE probe size is a selection factor; TTE used at follow-up.
     indication-scope:
+      reviewStatus: reviewed
       value: Occlusion of secundum ASD; also fenestrated Fontan closure
       loc: PDF p.2, Indications and Usage
       context: Closure of the fenestration after a fenestrated Fontan procedure.
     post-implant-therapy:
+      reviewStatus: reviewed
       value: Aspirin 3-5 mg/kg/day for 6 months post-placement
       loc: PDF p.16, Study Protocol
     pivotal-trials:
+      reviewStatus: reviewed
       value: AGA Medical ASO pivotal study (device vs. surgical closure)
       loc: PDF p.14, Summary of Clinical Studies
       context: Surgical closure of atrial septal defects.
@@ -917,20 +992,24 @@ specs:
   source: src-amplatzer-piccolo-pivotal
   values:
     device-design:
+      reviewStatus: reviewed
       value: Self-expanding braided Nitinol occluder, central waist
       loc: Article body, Introduction/Methods
       context: Waist spans the PDA length with retention discs seated on the aortic and pulmonary sides
         for positional stability.
     frame-material:
+      reviewStatus: reviewed
       value: Braided Nitinol (shape-memory)
       loc: PDF p.3, Amplatzer Piccolo Occluder section
       source: src-amplatzer-piccolo-brochure
     access-route:
+      reviewStatus: reviewed
       value: Transcatheter, minimally invasive (typically femoral)
       loc: PDF p.4 and p.6, The Amplatzer Piccolo Procedure
       source: src-amplatzer-piccolo-brochure
       context: Access in a cardiac catheterization laboratory.
     anatomy-range-summary:
+      reviewStatus: reviewed
       value: PDA <=4 mm narrowest, >=3 mm length; pt >=700 g, >=3 days
       loc: Article body, Methods (inclusion/exclusion criteria)
       context: Labeled use; diameter at the narrowest portion.
@@ -939,6 +1018,7 @@ specs:
         (src-amplatzer-piccolo-brochure, PDF p.5); no FDA SSED was public for this supplement to confirm
         verbatim label wording.
     pivotal-trials:
+      reviewStatus: reviewed
       value: Piccolo US IDE pivotal study (NCT03055858)
       loc: Article body, Study Design
 - version: ver-amplatzer-vsd
@@ -946,40 +1026,51 @@ specs:
   source: src-amplatzer-vsd-ssed
   values:
     device-design:
+      reviewStatus: reviewed
       value: Self-expandable double-disc device, waist sized to VSD
       loc: PDF p.2, Device Description
       context: Discs linked by a short cylindrical waist.
     frame-material:
+      reviewStatus: reviewed
       value: Nitinol wire mesh
       loc: PDF p.2, Device Description
     fabric-cover:
+      reviewStatus: reviewed
       value: Polyester fabric filling the discs and waist, sewn on by polyester thread
       loc: PDF p.2, Device Description
     repositionable:
+      reviewStatus: reviewed
       value: Delivery Cable allows placement and recapture of the device before release
       loc: PDF p.3, Device Description
     access-route:
+      reviewStatus: reviewed
       value: Transcatheter, via AMPLATZER TorqVue Delivery System
       loc: PDF p.2, Device Description
       context: 45° antegrade or 180° retrograde, per physician preference.
     delivery-sheath:
+      reviewStatus: reviewed
       value: 5-9 Fr depending on device size (4-18 mm)
       loc: PDF p.2, Table 1A (Device Specifications)
     available-sizes:
+      reviewStatus: reviewed
       value: 4, 6, 8, 10, 12, 14, 16, 18 mm waist diameters
       loc: PDF p.2, Table 1A (Device Specifications)
     anatomy-range-summary:
+      reviewStatus: reviewed
       value: Device waist 4-18 mm sized to the muscular VSD
       loc: PDF p.1, Contraindications
       context: Contraindicated if <4 mm from a semilunar/atrioventricular valve or in patients <5.2 kg.
     imaging-guidance:
+      reviewStatus: reviewed
       value: Doppler transthoracic echocardiography (TTE) pre-implant and at follow-up
       loc: PDF p.12, Study Protocol
     indication-scope:
+      reviewStatus: reviewed
       value: Complex muscular VSD warranting closure, high surgical risk
       loc: PDF p.1, Indications and Usage
       context: Large L-R shunt, pulmonary hypertension, and/or CHF symptoms.
     pivotal-trials:
+      reviewStatus: reviewed
       value: AGA Medical Muscular VSD retrospective High Risk cohort
       loc: PDF p.12, Clinical Studies
       context: 11 US centers, n=41.

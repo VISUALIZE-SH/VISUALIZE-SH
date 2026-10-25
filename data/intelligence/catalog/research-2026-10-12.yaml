@@ -1,4 +1,4 @@
-# WOR-29: documentary research; 
+# WOR-29: documentary research;
 observedAt: '2026-10-12'
 sources:
   - id: src-tempus-ecg-mr-fda-k254297
@@ -1305,15 +1305,19 @@ specs:
     source: src-occlutech-asd-p200032-ssed
     values:
       device-design:
+        reviewStatus: reviewed
         value: Two mesh discs, flexible waist and three polyester patches
         loc: SSED p.2, Section V
       frame-material:
+        reviewStatus: reviewed
         value: Nitinol
         loc: SSED p.2, Section V
       fabric-cover:
+        reviewStatus: reviewed
         value: Polyester patches in both discs and waist
         loc: SSED p.2, Section V
       indication-scope:
+        reviewStatus: reviewed
         value: Secundum ASD with RV volume overload
         loc: SSED p.1, Section II
         context: Qp/Qs ≥1.5 or RV enlargement. US original approval only; current IFU not reviewed.
@@ -1322,19 +1326,24 @@ specs:
     source: src-laaguarder-lp01-brochure
     values:
       frame-material:
+        reviewStatus: reviewed
         value: Nitinol alloy
         loc: PDF p.3, General Specifications
       fabric-cover:
+        reviewStatus: reviewed
         value: PET knit fabric, 160 µm mesh
         loc: PDF p.3, General Specifications
       available-sizes:
+        reviewStatus: reviewed
         value: 21, 24, 27, 30, 33 mm
         loc: PDF p.3, Ordering Information
         limitation: LP01 brochure range only; unknown revision and jurisdiction.
       access-route:
+        reviewStatus: reviewed
         value: Femoral venous / transseptal
         loc: PDF p.1, LAAC Technology
       delivery-sheath:
+        reviewStatus: reviewed
         value: Access system 14 Fr OD; delivery system 12 Fr OD
         loc: PDF p.3, General Specifications
         limitation: Nominal brochure outer diameters; no current IFU/compatibility reviewed.
@@ -1343,6 +1352,7 @@ specs:
     source: src-pascal-capture-clarity-p220003s028-api
     values:
       device-design:
+        reviewStatus: reviewed
         availability: not_yet_reviewed
         loc: results[0].supplement_reason and ao_statement
         limitation: FDA API confirms named system, but detailed IFU/design-change document unavailable.
@@ -1353,13 +1363,16 @@ specs:
     source: src-tovinontrine-hfsa-release-20261011
     values:
       drug-class:
+        reviewStatus: reviewed
         value: Investigational PDE9 inhibitor
         loc: Opening non-quotation paragraphs
       route-dosing:
+        reviewStatus: reviewed
         value: Oral BID in Phase 2 CYCLE; doses differ by cohort
         loc: CYCLE-1 REF and CYCLE-2 PEF results paragraphs
         context: 'Study regimen only: HFrEF 2.5/25/50 mg BID; HFpEF 50 mg BID. No commercial dosing.'
       development-status:
+        reviewStatus: reviewed
         value: Investigational; completed Phase 2 registry studies
         loc: Opening paragraph and CYCLE trial paragraphs
         limitation: No hospitalization or survival benefit established; no marketing authorization.

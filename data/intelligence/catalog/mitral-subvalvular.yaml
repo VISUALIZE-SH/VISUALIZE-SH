@@ -92,32 +92,40 @@ specs:
     source: src-mitria-t45-partnership
     values:
       device-design:
+        reviewStatus: reviewed
         value: Nitinol braid supporting the displaced posterior leaflet
         loc: 'About Mitria Medical, paragraph 1'
         context: Intended support and coaptation mechanism in functional MR; sponsor design description, not demonstrated comparative benefit.
       implant-material:
+        reviewStatus: reviewed
         value: Nitinol braid
         loc: 'About Mitria Medical, paragraph 1'
         limitation: Full implant composition, coverings and coatings are not disclosed.
       access-route:
+        reviewStatus: reviewed
         value: Transcatheter approach under development
         loc: 'Opening paragraph; About Mitria Medical, paragraph 1'
         limitation: Vascular entry and transseptal route are not specified. The AATS 2025 two-patient abstract describes surgical implantation and is not mapped to this build.
       delivery-sheath:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         loc: 'Entire written release, including About Mitria Medical (no delivery profile disclosed)'
       available-sizes:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         loc: 'Entire written release, including About Mitria Medical (no implant size range disclosed)'
       development-status:
+        reviewStatus: reviewed
         value: Investigational; not available for commercial sale
         loc: 'Investigational-device statement immediately before About Mitria Medical'
         limitation: Single-patient expanded access is sponsor-reported; no marketing authorization or regulator decision is inferred.
       indication-scope:
+        reviewStatus: reviewed
         value: Intended for secondary / functional MR; investigational
         loc: 'About Mitria Medical, paragraph 1'
         context: Development target rather than an FDA-approved indication; no approval decision is added.
       pivotal-trials:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         loc: 'Entire written release (conference experience described; no pivotal trial identified)'
         limitation: No verified SVS registry identifier or pivotal protocol was located in this bounded review.

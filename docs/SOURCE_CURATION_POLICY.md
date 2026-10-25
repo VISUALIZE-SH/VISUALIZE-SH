@@ -84,6 +84,12 @@ in public notes.
 
 ## Review state
 
+Discovery screens, source/lead searches, review findings and approval receipts
+are committed in the private research engine. Public records retain review-state
+fields, documentary citations, exact scope and substantive uncertainty, without
+embedding the private discovery or approval process. Ask the owner when a proposed
+artifact's destination is unclear.
+
 - New factual records are draft, with sources and locators, until the applicable
   curator review; the owner reviews authored articles before publication. Agent
   verification and passing validation are not substitutes for that review.

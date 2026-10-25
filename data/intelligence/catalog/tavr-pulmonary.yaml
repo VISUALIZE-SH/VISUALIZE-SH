@@ -413,36 +413,44 @@ specs:
     source: src-sapien-ifu-s085
     values:
       tissue-treatment:
+        reviewStatus: reviewed
         value: Carpentier-Edwards ThermaFix leaflet treatment
         loc: PDF p.100, Device Description §1.0
       repositionable:
+        reviewStatus: reviewed
         value: Not repositionable — single balloon-inflation deployment
         loc: PDF p.100, Device Description §1.0
         context: >-
           No recapture/resheath mechanism described. Balloon-expandable design; "device recapture or retrieval" appears only as a procedural
           adverse-event category in the SSED, not as a designed feature.
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral (primary); transapical, transaortic (alternative)
         loc: PDF p.6 (eSheath access exclusions); PDF p.17 (clinical TF/TA/TAo access breakdown)
       delivery-sheath:
+        reviewStatus: reviewed
         value: 14 Fr or 16 Fr Edwards eSheath introducer set
         loc: PDF p.6, Contraindications/exclusion criteria
         context: Labeled introducer size, not a measured maximum delivery-system OD.
       available-sizes:
+        reviewStatus: reviewed
         value: 20, 23, 26, 29 mm (valve heights 15.5–22.5 mm)
         loc: PDF p.100, Table 2
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: 20mm 16–19mm; 23mm 18–22mm; 26mm 21–25mm; 29mm 24–28mm
         loc: PDF p.101, Table 3
         context: >-
           By size, TEE annulus diameter. CT area-derived range is also given per size (e.g. 20 mm = 273–345 mm²); valve-in-valve sizing for a
           failed surgical bioprosthesis uses a separate true-ID table (PDF p.101, Table 4).
       indication-scope:
+        reviewStatus: reviewed
         value: Native severe AS, including selected asymptomatic patients; valve-in-valve / mitral-ring indications have distinct risk criteria
         source: src-sapien-ultra-resilia-ifu-s182
         loc: PDF p.5, §2 Indications
         context: Use the current IFU for complete population restrictions; historical decision records retain their earlier scopes.
       pivotal-trials:
+        reviewStatus: reviewed
         value: PARTNER II trial — SAPIEN 3 high-risk cohort (PIIS3HR) + Nested Registry
         source: src-sapien-ssed
         loc: p.21, Section X Summary of Primary Clinical Study
@@ -454,22 +462,27 @@ specs:
     source: src-sapien-ifu-s085
     values:
       frame-material:
+        reviewStatus: reviewed
         value: Cobalt-chromium
         source: src-sapien-ultra-resilia-ifu-s182
         loc: PDF pp.1–2, §1 Device Description — SAPIEN 3 Ultra RESILIA
       expansion-mechanism:
+        reviewStatus: reviewed
         value: Balloon-expandable
         source: src-sapien-ultra-resilia-ifu-s182
         loc: PDF p.1, §1 Device Description
       leaflet-material:
+        reviewStatus: reviewed
         value: Trileaflet RESILIA bovine pericardial tissue
         source: src-sapien-ultra-resilia-ifu-s182
         loc: PDF p.1, §1 Device Description
       sealing-design:
+        reviewStatus: reviewed
         value: PET fabric skirt; Ultra platform includes an outer sealing skirt
         source: src-sapien-ultra-resilia-ifu-s182
         loc: PDF p.1, §1 Device Description
       tissue-treatment:
+        reviewStatus: reviewed
         value: "RESILIA tissue: anti-calcification treatment, dry packaging"
         source: src-edwards-resilia-launch
         loc: Press release body, paragraphs 2–4
@@ -479,10 +492,12 @@ specs:
           U.S. market today" (as of the 2022-09-12 launch). This differs from the ThermaFix process used on non-RESILIA SAPIEN 3/SAPIEN 3 Ultra
           valves.
       repositionable:
+        reviewStatus: reviewed
         value: Not repositionable — single balloon-inflation deployment
         loc: PDF p.100, Device Description §1.0
         context: Same mechanism as base SAPIEN 3 Ultra platform.
       access-route:
+        reviewStatus: reviewed
         availability: not_yet_reviewed
         source: src-sapien-ultra-resilia-ifu-s182
         loc: Consolidated IFU §8 — procedural instructions
@@ -490,6 +505,7 @@ specs:
           Exact routes for the RESILIA configuration require a dedicated locator check; historical SAPIEN 3 trial access routes are not
           transferred automatically.
       delivery-sheath:
+        reviewStatus: reviewed
         value: Commander systems 9750CM20/23/26/29; compatible Edwards sheath required
         source: src-sapien-ultra-resilia-ifu-s182
         loc: PDF p.9, Table 9; PDF p.12, §8.3.3
@@ -497,10 +513,12 @@ specs:
           Matching delivery systems are identified. Exact sheath model and French size remain unverified here; do not inherit those dimensions
           from an earlier Ultra label.
       available-sizes:
+        reviewStatus: reviewed
         value: "Model 9755RSL: 20, 23, 26, 29 mm"
         source: src-sapien-ultra-resilia-ifu-s182
         loc: PDF p.2, Table 1
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: "20 mm: 16–19 mm TEE; 23 mm: 18–22 mm; 26 mm: 21–25 mm; 29 mm: 24–28 mm"
         source: src-sapien-ultra-resilia-ifu-s182
         loc: PDF p.2, Table 4
@@ -508,11 +526,13 @@ specs:
           Native-annulus sizing; CT-area ranges are 273–345, 338–430, 430–546 and 540–683 mm² respectively. Separate tables cover failed
           surgical bioprostheses.
       indication-scope:
+        reviewStatus: reviewed
         value: Native severe AS, including selected asymptomatic patients; valve-in-valve / mitral-ring indications have distinct risk criteria
         source: src-sapien-ultra-resilia-ifu-s182
         loc: PDF p.5, §2 Indications
         context: Use the current IFU for complete population restrictions; historical decision records retain their earlier scopes.
       pivotal-trials:
+        reviewStatus: reviewed
         availability: not_applicable
         loc: S141 Approval Order Statement
         context: >-
@@ -526,38 +546,47 @@ specs:
     source: src-evolut-ifu
     values:
       tissue-treatment:
+        reviewStatus: reviewed
         value: Alpha-amino oleic acid (AOA) anti-mineralization treatment
         loc: PDF p.32, §1.1 Evolut FX transcatheter aortic valve
       leaflet-position:
+        reviewStatus: reviewed
         value: Supra-annular
         loc: Supra-annular design benefits
         source: src-medtronic-evolut-durability
         context: Manufacturer statement for the Evolut platform; the working leaflets sit above the native annulus.
       repositionable:
+        reviewStatus: reviewed
         value: Recapturable, up to 3 attempts
         loc: PDF p.33, §1.2 Delivery catheter system; PDF p.20, deployment/recapture instructions
         context: Before the "point of no recapture"; deployment-knob mechanism.
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral (primary); subclavian/axillary, direct aortic (alternative)
         loc: PDF p.10, Warnings and precautions (access-site criteria)
       delivery-sheath:
+        reviewStatus: reviewed
         value: "23–29mm: 18 Fr (6.0mm) capsule; 34mm: 22 Fr (7.33mm) capsule"
         loc: PDF p.33, §1.2 Delivery catheter system and Figure 2
         context: 14 Fr equivalent inline sheath (23-29mm valves); 18 Fr equivalent inline sheath (34mm valve).
       available-sizes:
+        reviewStatus: reviewed
         value: 23, 26, 29, 34 mm
         loc: PDF p.32, Table 2
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: 23mm 17/18–20mm; 26mm 20–23mm; 29mm 23–26mm; 34mm 26–30mm
         loc: PDF p.32, Table 2
         context: >-
           Aortic annulus diameter by size. Annulus perimeter equivalents also given per size (diameter × π); TAV-in-SAV/TAV-in-TAV criteria
           apply to the failed valve's measured inner diameter.
       indication-scope:
+        reviewStatus: reviewed
         value: Native AS, appropriate for THV; ViV for failed AV, high+ risk
         loc: PDF p.35, §2 Indications
         context: THV per Heart Team; failed surgical/transcatheter bioprosthetic AV.
       pivotal-trials:
+        reviewStatus: reviewed
         value: STS/ACC TVT Registry real-world redo-TAVR analysis (basis for PMA P130021/S174)
         source: src-evolut-ssed
         loc: p.5 (repo tmp/pdfs/P130021S174B.txt), Section X Summary of Primary Clinical Study
@@ -573,48 +602,60 @@ specs:
     source: src-evolut-ifu
     values:
       frame-material:
+        reviewStatus: reviewed
         value: Self-expanding nitinol, multi-level frame, 3 gold markers
         loc: 'PDF p.60, §1.1 Evolut FX+ transcatheter aortic valve'
         context: Radiopaque markers near the inflow.
       leaflet-material:
+        reviewStatus: reviewed
         value: Processed porcine pericardium (3 leaflets + inner skirt)
         loc: 'PDF p.60, Table 1'
         context: Single-layer; 23 mm valve also uses ePTFE suture.
       sealing-design:
+        reviewStatus: reviewed
         value: Porcine pericardial outer skirt (wrap), 1.5 cells tall
         loc: 'PDF p.60, §1.1 Evolut FX+ transcatheter aortic valve'
         context: Sutured at the inflow.
       tissue-treatment:
+        reviewStatus: reviewed
         value: Alpha-amino oleic acid (AOA) anti-mineralization treatment
         loc: 'PDF p.60, §1.1 Evolut FX+ transcatheter aortic valve'
       leaflet-position:
+        reviewStatus: reviewed
         value: Supra-annular
         loc: 'Supra-annular design benefits'
         source: src-medtronic-evolut-durability
         context: Manufacturer statement for the Evolut platform; the working leaflets sit above the native annulus.
       repositionable:
+        reviewStatus: reviewed
         value: Recapturable, up to 3 attempts
         loc: 'PDF p.60–61, §1.2 Delivery catheter system'
         context: 'Before the "point of no recapture"; same deployment-knob mechanism as Evolut FX.'
       access-route:
+        reviewStatus: reviewed
         value: 'Transfemoral (primary); subclavian/axillary, direct aortic (alternative)'
         loc: 'PDF p.10, Warnings and precautions (shared access-site criteria in this combined labeling)'
       delivery-sheath:
+        reviewStatus: reviewed
         value: '23–29mm: 18 Fr (6.0mm) capsule; 34mm: 22 Fr (7.33mm) capsule'
         loc: 'PDF p.60–61, §1.2 Delivery catheter system'
         context: 14 Fr equivalent inline sheath (23-29mm valves); 18 Fr equivalent inline sheath (34mm valve). Same delivery-catheter models (D-EVOLUTFX-2329 / D-EVOLUTFX-34) as Evolut FX.
       available-sizes:
+        reviewStatus: reviewed
         value: 23, 26, 29, 34 mm
         loc: 'PDF p.60–61, Table 2'
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: '23mm 17/18–20mm; 26mm 20–23mm; 29mm 23–26mm; 34mm 26–30mm'
         loc: 'PDF p.60–61, Table 2'
         context: Aortic annulus diameter by size. Identical anatomical sizing table to Evolut FX; FX+ differs by the added frame windows (coronary-access-feature), not by annulus range.
       indication-scope:
+        reviewStatus: reviewed
         value: Native AS, appropriate for THV; ViV for failed AV, high+ risk
         loc: 'PDF p.63, §2 Indications'
         context: THV per Heart Team; failed surgical/transcatheter bioprosthetic AV.
       pivotal-trials:
+        reviewStatus: reviewed
         value: STS/ACC TVT Registry real-world redo-TAVR analysis (basis for PMA P130021/S174)
         source: src-evolut-ssed
         loc: 'p.5 (repo tmp/pdfs/P130021S174B.txt), Section X Summary of Primary Clinical Study'
@@ -626,27 +667,34 @@ specs:
     source: src-navitor-ifu
     values:
       manufacturer:
+        reviewStatus: reviewed
         value: Abbott
         source: src-navitor-s002
         loc: Applicant field
       family:
+        reviewStatus: reviewed
         value: Navitor
         source: src-navitor-s002
         loc: Device/trade-name field
       exact-version:
+        reviewStatus: reviewed
         value: Navitor
         source: src-navitor-s002
         loc: Device/trade-name field
       frame-material:
+        reviewStatus: reviewed
         value: Nitinol (self-expanding, radiopaque)
         loc: PDF p.3, Description
       expansion-mechanism:
+        reviewStatus: reviewed
         value: Self-expanding
         loc: PDF p.3, Description
       leaflet-material:
+        reviewStatus: reviewed
         value: Trileaflet bovine pericardium
         loc: PDF p.3, Description
       sealing-design:
+        reviewStatus: reviewed
         value: NaviSeal polyethylene (UHMWPE) inner/outer cuff fabric
         loc: Abbott IFU PDF p.13, Product Materials substance table; US IFU device description
         context: >-
@@ -654,39 +702,47 @@ specs:
           polymer/grade terms.
         observedAt: "2026-10-03"
       tissue-treatment:
+        reviewStatus: reviewed
         value: Glutaraldehyde-crosslinked leaflet, Linx anticalcification
         loc: PDF p.3, Description
         context: Leaflet pericardium preserved/crosslinked in glutaraldehyde.
       leaflet-position:
+        reviewStatus: reviewed
         value: Intra-annular leaflets
         loc: PDF p.9, Performance Characteristics
         context: >-
           Exact wording: "contains intra-annular leaflets which provide early function and hemodynamic stability prior to final valve
           deployment."
       repositionable:
+        reviewStatus: reviewed
         value: Re-sheathable/repositionable up to 2 times
         loc: PDF p.4, FlexNav Delivery System
         context: Provided the valve has not been fully deployed.
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral (primary); subclavian, axillary (alternative)
         loc: PDF p.4, FlexNav Delivery System
       delivery-sheath:
+        reviewStatus: reviewed
         value: "23/25mm: 14 Fr (6.0mm); 27/29mm: 15 Fr (6.3mm) capsule"
         loc: PDF p.4, Table 3
         context: >-
           Compatible with separate 18 Fr / 19 Fr introducer sheaths. FlexNav's own integrated sheath is reported as an "equivalent" French size
           (labeled), not a directly measured true OD; the capsule OD in mm is directly measured.
       available-sizes:
+        reviewStatus: reviewed
         value: 23, 25, 27, 29 mm
         loc: PDF p.3, Table 1
         context: >-
           A larger 35 mm "Navitor Titan" size was added by FDA supplement P190023/S013 (2023-09-15, per openFDA), after this 2022 IFU revision;
           not covered by this document.
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: 23mm 19–21mm; 25mm 21–23mm; 27mm 23–25mm; 29mm 25–27mm
         loc: PDF p.3–4, Table 2
         context: Annulus diameter by size. Ascending aorta diameter, annulus area (mm²) and perimeter (mm) ranges are also tabulated per size.
       indication-scope:
+        reviewStatus: reviewed
         value: Native AS, high+ surgical risk (STS mortality >=8% at 30d)
         source: src-navitor-original
         loc: Approval Order Statement (base PMA P190023, 2021-09-17)
@@ -696,6 +752,7 @@ specs:
           (2026-07-09, per openFDA). The international IFU used for design attributes states a similar but not identical "high or extreme risk"
           phrasing (p.5, Indications) — not used here because it is not the US-specific label.
       pivotal-trials:
+        reviewStatus: reviewed
         value: NCT04011722 (trial number listed against the P190023/S002 FDA record)
         source: src-navitor-s002
         loc: Clinical Trials field
@@ -710,56 +767,72 @@ specs:
     source: src-acurate-neo2-specsheet
     values:
       manufacturer:
+        reviewStatus: reviewed
         value: Boston Scientific
         loc: 'p.1, footer/branding'
       family:
+        reviewStatus: reviewed
         value: ACURATE neo2
         loc: 'p.1, title'
       exact-version:
+        reviewStatus: reviewed
         value: ACURATE neo2
         loc: 'p.1, title'
       frame-material:
+        reviewStatus: reviewed
         value: Nitinol
         loc: 'p.1, Specifications table'
       expansion-mechanism:
+        reviewStatus: reviewed
         value: Self-expanding
         loc: 'p.1, Specifications table'
       leaflet-material:
+        reviewStatus: reviewed
         value: Porcine pericardium
         loc: 'p.1, Specifications table'
       sealing-design:
+        reviewStatus: reviewed
         value: Active PVseal — conforms to the native annulus to reduce paravalvular leak
         loc: 'p.1, Specifications table and "Active PVseal Technology" panel'
       tissue-treatment:
+        reviewStatus: reviewed
         value: BioFix anti-calcification process
         loc: 'p.1, Specifications table'
         context: 'Footnote: "Significant reduction in calcification demonstrated in animal models... No clinical data are available which evaluate the long-term impact of the BioFix tissue treatment in patients."'
       leaflet-position:
+        reviewStatus: reviewed
         value: Supra-annular
         loc: 'p.1, Specifications table'
       repositionable:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         loc: 'p.1–2 (not stated in this spec sheet)'
         context: The IFU that would normally document recapture/reposition capability (51081293-01A_ACURATEneo2_IFU_OUS_ML_s.pdf) returns HTTP 404 as of 2026-09-23 and no Wayback Machine snapshot was found.
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral
         loc: 'p.1, Specifications table'
       delivery-sheath:
+        reviewStatus: reviewed
         value: 14 Fr iSLEEVE expandable introducer set (optional accessory)
         loc: 'p.2, Ordering Information'
         context: This is an optional expandable-introducer accessory listed in the catalog, not a stated true delivery-catheter OD; the primary delivery-system OD is not disclosed in this spec sheet.
       available-sizes:
+        reviewStatus: reviewed
         value: 'S 23 mm, M 25 mm, L 27 mm'
         loc: 'p.1, Valve Size table'
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: 'S 21–23mm; M 23–25mm; L 25–27mm (CT perimeter-derived)'
         loc: 'p.1, Valve Size table'
         context: Aortic annulus diameter. Annulus perimeter ranges also given (66–85 mm across S/M/L).
       indication-scope:
+        reviewStatus: reviewed
         availability: not_applicable
         loc: 'p.1, Indications for Use'
         context: 'Never received FDA authorization — no PMA or 510(k) record for "ACURATE" exists in the openFDA PMA/510(k) databases (checked 2026-09-23). This is a CE-mark indication only: "...severe native calcific aortic stenosis... judged by a Heart Team... to be appropriate for the transcatheter heart valve replacement therapy." Boston Scientific discontinued the platform worldwide in 2025.'
       pivotal-trials:
+        reviewStatus: reviewed
         availability: not_applicable
         loc: n/a
         context: No US pivotal trial applies because the device was never FDA-authorized.
@@ -770,51 +843,64 @@ specs:
     source: src-trilogy-ssed
     values:
       frame-material:
+        reviewStatus: reviewed
         value: Self-expanding nitinol with 3 Locators bearing tantalum radiopaque markers
         loc: 'p.2, V. Device Description'
       expansion-mechanism:
+        reviewStatus: reviewed
         value: Self-expanding
         loc: 'p.2, V. Device Description'
       leaflet-material:
+        reviewStatus: reviewed
         value: Trileaflet porcine pericardium, sewn with polyester sutures
         loc: 'p.2, V. Device Description'
       tissue-treatment:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         loc: 'p.2 device description and p.9 tissue-characterization testing (glutaraldehyde crosslinking confirmed; no named proprietary process disclosed)'
         context: The SSED describes "glutaraldehyde crosslinking" and "proprietary tissue processing" (bench comparability testing, p.9-11) without naming a branded tissue-treatment process.
       sealing-design:
+        reviewStatus: reviewed
         value: Flared Sealing Ring extending from the LVOT inflow to the annular basal plane
         loc: 'p.2, V. Device Description'
       anchoring-mechanism:
+        reviewStatus: reviewed
         value: 3 Locators clip and capture native leaflets (no calcium anchor)
         loc: 'p.2, V. Device Description'
         context: Between the Locators and stent body. This active-anchoring mechanism is what allows THV fixation in patients with pure aortic regurgitation, who typically lack the annular calcium that anchors conventional TAVR valves.
       repositionable:
+        reviewStatus: reviewed
         value: Locators repositionable before Sealing Ring release only
         source: src-trilogy-ifu
         loc: 'p.19–20, Deployment/recapture warnings'
         context: Partial deployment only; not repositionable/retrievable once the Sealing Ring has deployed.
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral (percutaneous or cutdown); vessel >=7.0 mm
         source: src-trilogy-ifu
         loc: 'p.10, Patient selection criteria; p.4, Device Description'
         context: Minimum femoral/iliac vessel diameter 7.0 mm.
       delivery-sheath:
+        reviewStatus: reviewed
         value: 22 Fr Introducer Sheath OD; 20 Fr Delivery Catheter OD
         loc: 'p.2–3, V. Device Description'
       available-sizes:
+        reviewStatus: reviewed
         value: 23, 25, 27 mm
         loc: 'p.2, V. Device Description'
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: 'Aortic annulus diameter 21–28.6 mm (annulus perimeter 66–90 mm), by MDCT or TEE'
         source: src-trilogy-ifu
         loc: 'p.7, Table 2 THV Sizing Chart'
         context: 'By size: 23 mm 21–24.2 mm; 25 mm 24.2–26.4 mm; 27 mm 26.4–28.6 mm annulus diameter.'
       indication-scope:
+        reviewStatus: reviewed
         value: Symptomatic severe native AR, high or greater surgical risk
         loc: 'p.1, II. Indications for Use'
         context: 'AR = aortic regurgitation; not endocarditis/rheumatic/dissection-related. Exact wording: "...treatment of symptomatic, severe native tricuspid aortic valve regurgitation... in patients who are judged by a Heart Team, including a cardiac surgeon, to be at high or greater risk for surgical aortic valve replacement (i.e., predicted risk of surgical mortality >=8% at 30 days...)."'
       pivotal-trials:
+        reviewStatus: reviewed
         value: ALIGN-AR study (IDE G150035) + ALIGN-AR continued access program (CAP) cohort
         loc: 'p.13, X. Summary of Primary Clinical Study'
 
@@ -824,48 +910,60 @@ specs:
     source: src-melody-ssed
     values:
       frame-material:
+        reviewStatus: reviewed
         value: Platinum-iridium (balloon-expandable stent, laser-welded)
         loc: 'p.2, V. Device Description'
       expansion-mechanism:
+        reviewStatus: reviewed
         value: Balloon-expandable (Ensemble delivery system, balloon-in-balloon)
         loc: 'p.2, V. Device Description'
       leaflet-material:
+        reviewStatus: reviewed
         value: Bovine jugular vein segment with native venous valve, sutured into the frame
         loc: 'p.2, V. Device Description'
         context: 'The valve is sutured into the platinum-iridium frame; the SSED describes both valve tissue and frame but does not identify the permanent suture polymer.'
       tissue-treatment:
+        reviewStatus: reviewed
         value: Glutaraldehyde-fixed; no proprietary anti-calcification process
         source: src-melody-ifu
         loc: 'p.5, Device materials/sterilization'
       sealing-design:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         loc: 'p.2, V. Device Description (no distinct sealing-cuff/skirt feature described; sealing relies on balloon-expanded stent apposition to the conduit wall)'
       repositionable:
+        reviewStatus: reviewed
         value: Not repositionable — single balloon-in-balloon inflation
         source: src-melody-ifu
         loc: 'Labeling reviewed in full; no reposition/recapture/retrieve language found'
         context: No resheath/recapture mechanism described.
       access-route:
+        reviewStatus: reviewed
         value: Transvenous — femoral (94.6%) or internal jugular (4.8%)
         source: src-melody-ifu
         loc: 'p.24, Clinical study access-route summary'
       delivery-sheath:
+        reviewStatus: reviewed
         value: Ensemble DS — 22 Fr crossing profile
         loc: 'p.2, V. Device Description'
       available-sizes:
+        reviewStatus: reviewed
         value: '16 mm BJV (expands to <=20 mm); 18 mm BJV (expands to <=22 mm)'
         source: src-melody-ifu
         loc: 'p.5, Device Description'
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: Original RVOT conduit diameter >=16 mm circumferential
         source: src-melody-ifu
         loc: 'p.16, Implantation/predilation guidance'
         context: Conduit predilated to <=110% of nominal diameter (<=20 mm for the 16→20 mm valve, <=22 mm for the 18→22 mm valve).
       indication-scope:
+        reviewStatus: reviewed
         value: 'Adjunct to surgery: dysfunctional RVOT conduit, >=16mm'
         loc: 'p.1, II. Indications for Use'
         context: Regurgitation >=moderate and/or mean RVOT gradient >=35 mmHg.
       pivotal-trials:
+        reviewStatus: reviewed
         value: Original US IDE study (171 subjects, 5 US centers)
         loc: 'p.5, X.1 Melody TPV Long-term Follow-up PAS (Study Design)'
         context: Basis for HDE H080002 and PMA P140017. No formal trial acronym is used in the SSED; described only as "the pre-market IDE study" / "the original IDE study."
@@ -876,49 +974,61 @@ specs:
     source: src-harmony-ssed
     values:
       frame-material:
+        reviewStatus: reviewed
         value: Self-expanding nitinol wire struts
         loc: 'p.2, V. Device Description'
       expansion-mechanism:
+        reviewStatus: reviewed
         value: Self-expanding
         loc: 'p.2, V. Device Description'
       leaflet-material:
+        reviewStatus: reviewed
         value: Porcine pericardial valve, PTFE or UHMWPE sutures
         loc: 'p.2, V. Device Description'
         context: 'PTFE-impregnated polyester suture for TPV 22; UHMWPE suture for TPV 25. Treat these as size-specific permanent fixation materials, not a single interchangeable material.'
       tissue-treatment:
+        reviewStatus: reviewed
         value: Alpha-amino oleic acid (AOA) anti-mineralization treatment
         loc: 'p.2, V. Device Description'
       sealing-design:
+        reviewStatus: reviewed
         value: Knitted polyester fabric graft sewn onto the nitinol frame
         source: src-harmony-ifu
         loc: 'p.5, §1.1 Transcatheter pulmonary valve (TPV)'
       repositionable:
+        reviewStatus: reviewed
         value: Not intended for recapture/retrieval once deployment begins
         source: src-harmony-ifu
         loc: 'p.13–14, Deployment warnings'
         context: Physician-judgment-only repositioning discouraged after deployment is complete.
       access-route:
+        reviewStatus: reviewed
         value: Transvenous — femoral vein (94.4%, 67/71) or jugular vein (5.6%, 4/71)
         source: src-harmony-ifu
         loc: 'p.32, Clinical access-site summary'
       delivery-sheath:
+        reviewStatus: reviewed
         value: Harmony DCS — 25 Fr (8.33 mm) crossing profile
         loc: 'p.2, V. Device Description'
         context: Labeling states the patient's venous anatomy should accommodate this 25 Fr (8.33 mm) delivery catheter system.
         source: src-harmony-ifu
       available-sizes:
+        reviewStatus: reviewed
         value: TPV 22, TPV 25
         loc: 'p.2, V. Device Description'
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: 'TPV22: distal 22–28mm, proximal 23–39mm; TPV25: 25–38/32–48mm'
         source: src-harmony-ifu
         loc: 'p.5–6, §1.2 Patient anatomical criteria, Figures 1–2'
         context: Distal PA/bifurcation vs proximal PA/RVOT diameter; perimeter-derived diameter.
       indication-scope:
+        reviewStatus: reviewed
         value: Severe pulmonary regurgitation, native/repaired RVOT, PVR-indicated
         loc: 'p.1, Indications for Use'
         context: By echo, or PR fraction >=30% by CMR.
       pivotal-trials:
+        reviewStatus: reviewed
         value: Harmony TPV IDE study — EFS + pivotal phases pooled
         loc: 'p.34, X. Summary of Primary Clinical Study'
         context: IDE G120175.
