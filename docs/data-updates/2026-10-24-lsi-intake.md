@@ -2,6 +2,8 @@
 
 [WOR-75](https://linear.app/workspace-visualize-sh/issue/WOR-75/deeply-enrich-the-26-lsi-screening-companies-and-two-months-of-news) · [WOR-76](https://linear.app/workspace-visualize-sh/issue/WOR-76/stage-lsi-company-news-atlas-and-data-updates-for-local-approval)
 
+Release and review record: [pull request #55](https://github.com/VISUALIZE-SH/VISUALIZE-SH/pull/55). Merge is gated on passing repository, dependency and CodeQL checks.
+
 The owner approved the local News, Atlas and Data drafts on 24 October 2026 and authorized their incorporation, pull request, review and merge if checks pass. The records below are the public outcome of that intake. Curation approval means the recorded statements and limits were reviewed; it does not establish regulatory authorization, clinical efficacy or universal product compatibility.
 
 ## Coverage and source boundary
