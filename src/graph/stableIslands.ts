@@ -15,6 +15,7 @@ const THERAPIES = new Set(['device', 'pharmaceutical', 'digital', 'procedure'])
 const CORPORATE = new Set(['invested_in', 'acquired', 'option_to_acquire', 'portfolio_includes', 'terminated_acquisition'])
 const TAU = Math.PI * 2
 const GOLDEN_ANGLE = Math.PI * (3 - Math.sqrt(5))
+const BRIDGE_END_MARGIN = 1 / 6
 const compare = (a: string, b: string) => a < b ? -1 : a > b ? 1 : 0
 
 function fraction(value: string): number {
@@ -53,6 +54,7 @@ interface Body extends IslandPosition {
   width: number
   height: number
   mobility: number
+  bridge?: { a: IslandPosition; b: IslandPosition; count: number }
 }
 
 /**
@@ -180,7 +182,8 @@ export function computeStableIslands(
       const ux = (b.x - a.x) / length
       const uy = (b.y - a.y) / length
       const along = (fraction(`${node.id}:along`) - 0.5) * Math.min(100, length * 0.12)
-      const across = (rank - (bucket.length - 1) / 2) * 78 + (fraction(node.id) - 0.5) * 24
+      const across = Math.max(-length * 0.45, Math.min(length * 0.45,
+        (rank - (bucket.length - 1) / 2) * 78 + (fraction(node.id) - 0.5) * 24))
       homes.set(node.id, { x: center.x + ux * along - uy * across, y: center.y + uy * along + ux * across })
     } else {
       const distance = 52 * Math.sqrt(rank + 0.6)
@@ -211,7 +214,10 @@ export function computeStableIslands(
     const footprint = footprints?.get(node.id)
     const width = finiteSize(footprint?.width, Math.max(60, Math.min(240, node.label.length * 6.2)))
     const height = finiteSize(footprint?.height, node.group === 'condition' ? 68 : 52)
+    const targets = direct.get(node.id) ?? []
     return { id: node.id, ...home, hx: home.x, hy: home.y, width, height,
+      bridge: targets.length === 2 ? { a: anchors.get(targets[0])!, b: anchors.get(targets[1])!,
+        count: [...direct.values()].filter(ids => ids.length === 2 && ids[0] === targets[0] && ids[1] === targets[1]).length } : undefined,
       mobility: node.group === 'condition' ? 0 : node.group === 'company' || node.group === 'trial' ? 1 : (direct.get(node.id)?.length ?? 0) > 1 ? 0.25 : 0.55 }
   })
   relaxFootprints(bodies)
@@ -240,13 +246,34 @@ function relaxFootprints(bodies: Body[]): void {
   // from its targets. Choose the nearest clear boundary candidate when a home
   // is occupied; fixed anchors never move. Organic variation is in the homes.
   const placed = bodies.filter((body) => !body.mobility)
-  const mobile = bodies.filter((body) => body.mobility).sort((a, b) => a.mobility - b.mobility || compare(a.id, b.id))
+  // Reserve the tighter, less crowded bridges before packing dense shared
+  // buckets. Otherwise a large HF bucket can consume another pair's corridor.
+  const bridgePriority = (body: Body) => body.bridge
+    ? body.bridge.count / (Math.hypot(body.bridge.b.x - body.bridge.a.x, body.bridge.b.y - body.bridge.a.y) || 1)
+    : Infinity
+  const mobile = bodies.filter((body) => body.mobility).sort((a, b) =>
+    a.mobility - b.mobility || bridgePriority(a) - bridgePriority(b) || compare(a.id, b.id))
   for (const body of mobile) {
     body.x = body.hx
     body.y = body.hy
-    const clear = (point: IslandPosition) => placed.every((other) =>
+    const bridge = body.bridge
+    const dx = bridge ? bridge.b.x - bridge.a.x : 0
+    const dy = bridge ? bridge.b.y - bridge.a.y : 0
+    const span = Math.hypot(dx, dy)
+    const acrossSize = span ? (Math.abs(dy) * body.width + Math.abs(dx) * body.height) / span : body.height
+    const acrossLimit = Math.max(span * 0.5,
+      (bridge?.count ?? 0) * (acrossSize + 12) / 2)
+    const inside = (point: IslandPosition, limit = acrossLimit) => {
+      if (!bridge || !span) return true
+      const x = point.x - bridge.a.x, y = point.y - bridge.a.y
+      const along = (x * dx + y * dy) / (span * span)
+      const across = Math.abs(x * dy - y * dx) / span
+      return along >= BRIDGE_END_MARGIN && along <= 1 - BRIDGE_END_MARGIN && across <= limit
+    }
+    const clearFootprints = (point: IslandPosition) => placed.every((other) =>
       Math.abs(point.x - other.x) >= (body.width + other.width) / 2 + 12 ||
       Math.abs(point.y - other.y) >= (body.height + other.height) / 2 + 12)
+    const clear = (point: IslandPosition) => inside(point) && clearFootprints(point)
     if (!clear(body)) {
       const candidates: IslandPosition[] = [{ x: body.hx, y: body.hy }]
       for (const other of placed) {
@@ -257,8 +284,67 @@ function relaxFootprints(bodies: Body[]): void {
           { x: body.hx, y: other.y - dy }, { x: body.hx, y: other.y + dy },
         )
       }
+      if (bridge && span) {
+        // A bridge is a semantic region, not merely a soft initial home.
+        // Axis-only exits can miss a nearby free corner and send a shared
+        // therapy arbitrarily far away as other islands become denser.
+        // Search the arrangement vertices of expanded label rectangles and
+        // the bridge boundary, which also handles rotated condition pairs.
+        const xs = [body.hx], ys = [body.hy]
+        for (const other of placed) {
+          const x = (body.width + other.width) / 2 + 12.2
+          const y = (body.height + other.height) / 2 + 12.2
+          xs.push(other.x - x, other.x + x)
+          ys.push(other.y - y, other.y + y)
+        }
+        const corners = [BRIDGE_END_MARGIN, 1 - BRIDGE_END_MARGIN].flatMap(along => [-acrossLimit / span, acrossLimit / span].map(across => ({
+          x: bridge.a.x + along * dx - across * dy,
+          y: bridge.a.y + along * dy + across * dx,
+        })))
+        const boundary = [corners[0], corners[2], corners[3], corners[1]]
+        candidates.push(...corners)
+        for (const x of xs) for (const y of ys) {
+          const point = { x, y }
+          if (inside(point)) candidates.push(point)
+        }
+        for (let i = 0; i < boundary.length; i++) {
+          const a = boundary[i], b = boundary[(i + 1) % boundary.length]
+          for (const x of xs) if (a.x !== b.x) {
+            const t = (x - a.x) / (b.x - a.x)
+            if (t >= 0 && t <= 1) candidates.push({ x, y: a.y + t * (b.y - a.y) })
+          }
+          for (const y of ys) if (a.y !== b.y) {
+            const t = (y - a.y) / (b.y - a.y)
+            if (t >= 0 && t <= 1) candidates.push({ x: a.x + t * (b.x - a.x), y })
+          }
+        }
+      }
       candidates.sort((a, b) => Math.hypot(a.x - body.hx, a.y - body.hy) - Math.hypot(b.x - body.hx, b.y - body.hy) || a.x - b.x || a.y - b.y)
-      const free = candidates.find(clear)
+      let free = candidates.find(clear)
+      if (!free && bridge && span) {
+        // Very large labels or a dense shared-target bucket may exhaust the
+        // preferred corridor. Widen across it only as much as packing needs,
+        // keeping the center between the two hubs. Perpendicular rail exits
+        // guarantee a clear candidate instead of silently retaining overlap.
+        const center = { x: (bridge.a.x + bridge.b.x) / 2, y: (bridge.a.y + bridge.b.y) / 2 }
+        const nx = -dy / span, ny = dx / span
+        const exits: IslandPosition[] = []
+        for (const other of placed) {
+          const x = (body.width + other.width) / 2 + 12.2
+          const y = (body.height + other.height) / 2 + 12.2
+          if (nx) for (const edge of [other.x - x, other.x + x]) {
+            const t = (edge - center.x) / nx
+            exits.push({ x: edge, y: center.y + t * ny })
+          }
+          if (ny) for (const edge of [other.y - y, other.y + y]) {
+            const t = (edge - center.y) / ny
+            exits.push({ x: center.x + t * nx, y: edge })
+          }
+        }
+        const wider = [...candidates, ...exits].filter(point => inside(point, Infinity) && clearFootprints(point))
+        wider.sort((a, b) => Math.hypot(a.x - body.hx, a.y - body.hy) - Math.hypot(b.x - body.hx, b.y - body.hy) || a.x - b.x || a.y - b.y)
+        free = wider[0]
+      }
       if (free) { body.x = free.x; body.y = free.y }
     }
     placed.push(body)

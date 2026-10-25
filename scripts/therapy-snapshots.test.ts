@@ -20,7 +20,8 @@ const hash = (value: string | Buffer) => createHash('sha256').update(value).dige
 test('all approved graph-level illustrations retain their original geometry and exact identities', () => {
   assert.equal(registry.illustrations.length, 18)
   assert.equal(new Set(registry.illustrations.map(item => item.entityId)).size, 18)
-  const rows = therapySnapshots(data, nodes)
+  // Illustration identity checks must survive later authored profile additions.
+  const rows = therapySnapshots({ ...data, versions: [] }, nodes)
   for (const item of registry.illustrations) {
     assert.ok(rows.some(row => row.therapy.id === item.entityId), item.entityId)
     assert.equal(deviceIllustrationFor(item.entityId), undefined, 'graph concepts cannot become version artwork')
@@ -56,7 +57,8 @@ test('Data renders unillustrated therapies and unresolved families with the shar
     }
     const render = (patch = {}) => renderToStaticMarkup(createElement(DataWorkspace, { ...props, ...patch }))
     assert.match(render(), /dev-alleviant-alv1-orthographic.svg/)
-    assert.match(render({ initialQuery: 'Approxima' }), /Illustration unavailable for Approxima/)
+    // Exercise the graph-only fallback independently of the live profile inventory.
+    assert.match(render({ data: { ...data, versions: [] }, catalogData: { ...data, versions: [] }, initialQuery: 'Approxima' }), /Illustration unavailable for Approxima/)
     assert.doesNotMatch(render({ asOf: '2026-10-01' }), /id="data-therapy-snapshots"/)
     assert.doesNotMatch(render({ versionId: data.versions[0].id }), /id="data-therapy-snapshots"/)
     const scopedNodes = nodes.filter(node => node.entity.type === 'therapy' && node.entity.treats.includes('cond-ms'))
@@ -70,7 +72,7 @@ test('Data renders unillustrated therapies and unresolved families with the shar
 test('snapshots filter authored graph therapies without inventing versions or dropping held therapies', () => {
   const rows = therapySnapshots(data, nodes)
   assert.ok(rows.some(row => row.therapy.therapyType !== 'device' && !row.illustration))
-  assert.ok(rows.some(row => row.therapy.id === 'dev-approxima-tricuspid-reshaping' && !row.illustration))
+  assert.ok(therapySnapshots({ ...data, versions: [] }, nodes).some(row => row.therapy.id === 'dev-approxima-tricuspid-reshaping' && !row.illustration))
   assert.equal(therapySnapshots(data, nodes, 'altavalve')[0].therapy.id, 'dev-altavalve')
   assert.ok(therapySnapshots(data, nodes, 'Alleviant Medical').some(row => row.therapy.id === 'dev-alleviant-alv1'), 'displayed maker is searchable')
   assert.equal(therapySnapshots(data, nodes, 'no-such-therapy-123').length, 0)
