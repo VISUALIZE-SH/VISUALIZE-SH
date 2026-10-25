@@ -21,16 +21,7 @@ a browser to print or save a PDF, or in a word processor. Missing publication
 dates use `n.d.`; an unknown title uses a source-document descriptor. Retrieval
 dates never become publication dates.
 
-## Public-source research, 2026-10-04
-
-Three Luna agents reviewed the LAAO, valve/repair, and remaining therapy
-inventories, reusing existing authored research and public-source notes. The
-per-therapy audit covers all 100 therapies and records checked product
-documents, patent sources, qualifying numbers, and limitations. The audit file was
-removed from this repository on 2026-10-21 (WOR-60) and is archived in the private
-research engine. The final compiled inventory contains 782 sources,
-including 291 distinct patent records; counts in a product's Evidence section
-reflect only its linked documents.
+## Documentary source scope
 
 Patents qualify only through an explicit public connection to the named
 product: a product/IFU reference, manufacturer virtual marking, an exact
@@ -47,8 +38,7 @@ the A2 application publication. Article citation metadata covers 98 exact URL
 aliases, resolved through DOI, PMID, PMC-to-PMID mapping, or original publisher
 metadata. Duplicate DOI aliases share the same verified bibliographic fields.
 Publication dates retain their recorded day, month, or year precision.
-The author review checked 93 URL aliases against 84 PubMed article records and
-five publisher-only pages. Credited collective authors and suffixes remain in
+Credited collective authors and suffixes remain in
 the byline; appended investigator and reviewer rosters are excluded. Publisher
 full names take precedence where PubMed initials lose a name or hyphen.
 

@@ -184,5 +184,4 @@ still uses the frozen local run; a build never advances that checkpoint.
 
 Reviewed readers omit draft banners, local review/template navigation and
 `noindex` metadata. Source, cohort and missing-evidence limits remain. Editing a
-review state does not authorize newsletter delivery. The owner approved the
-October 13 and October 16 editions and LAAO Part 1 for the October 17 integration.
+review state does not authorize newsletter delivery.
