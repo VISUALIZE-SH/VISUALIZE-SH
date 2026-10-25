@@ -430,44 +430,55 @@ specs:
     source: src-cardiomems-ssed-orig
     values:
       device-design:
+        reviewStatus: reviewed
         value: 'Fused-silica capsule (15x3.4x2 mm), silicone-coated, nitinol anchors'
         loc: 'SSED (P100045B) p.1-2, Section V Device Description'
         context: 'Battery-free; wire-loop anchors around a coil/capacitor circuit. Capsule is a 3-D coil and pressure-sensitive capacitor between two fused-silica wafers, fully encased in medical-grade silicone; platinum/iridium marker bands aid fluoroscopic visualization.'
       sensor-location:
+        reviewStatus: reviewed
         value: 'Descending branch of the left or right pulmonary artery'
         loc: 'SSED (P100045B) p.2, Section V Device Description'
       measured-parameter:
+        reviewStatus: reviewed
         value: 'PA systolic/diastolic/mean pressure; heart rate'
         loc: 'SSED (P100045B) p.1, Section V Device Description'
         context: 'Daily patient self-measurement.'
       power-telemetry:
+        reviewStatus: reviewed
         value: 'Battery-free; read remotely via electromagnetic coupling'
         loc: 'SSED (P100045B) p.1-2, Section V Device Description'
         context: 'Resonant frequency of the implanted circuit read via the Hospital/Patient Electronics Systems.'
       access-route:
+        reviewStatus: reviewed
         value: 'Transvenous, placed during right heart catheterization'
         loc: 'SSED (P100045B) p.6, Clinical Studies'
       delivery-sheath:
+        reviewStatus: reviewed
         value: '12 Fr sheath; 120 cm catheter; 0.018 in wire'
         loc: 'SSED (P100045B) p.3, Section V Device Description'
         context: 'Usable-length catheter; guidewire-compatible; hydrophilic-coated distal shaft.'
       available-sizes:
+        reviewStatus: reviewed
         value: 'Single size (fits PA branch 7-15 mm diameter)'
         loc: 'SSED (P100045B) p.17, Enrollment Criteria'
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: 'Target implant PA branch diameter 7-15 mm'
         loc: 'SSED (P100045B) p.17, Enrollment Criteria'
         context: 'CHAMPION pivotal-trial enrollment criterion for implant branch diameter, not restated as a separate labeled range in the 2022 supplement.'
       indication-scope:
+        reviewStatus: reviewed
         value: 'NYHA II/III HF with prior-year HF hospitalization or elevated BNP'
         source: src-cardiomems-s056-ssed
         loc: 'SSED (P100045/S056) p.1, Section II Indications for Use'
         context: 'Natriuretic peptides must be elevated within 30 days. 2022 expanded indication (PMA supplement P100045/S056). The original 2014 PMA indication was narrower: NYHA III with HF hospitalization in the prior year.'
       post-implant-therapy:
+        reviewStatus: reviewed
         value: 'Contraindicated if unable to take DAPT/anticoagulation x1 month'
         loc: 'SSED (P100045B) p.1, Section III Contraindications'
         context: 'Required for 1 month post-implant (dual antiplatelet therapy or anticoagulation).'
       pivotal-trials:
+        reviewStatus: reviewed
         value: 'CHAMPION (original 2014 indication); GUIDE-HF (2022 expanded indication)'
         source: src-cardiomems-s056-ssed
         loc: 'SSED (P100045/S056) p.7, GUIDE-HF Trial - Randomized Arm'
@@ -477,42 +488,53 @@ specs:
     source: src-cordella-ssed
     values:
       device-design:
+        reviewStatus: reviewed
         value: 'Capacitive pressure sensor, glass body (~20x4x2 mm), nitinol anchors'
         loc: 'SSED (P230040B) p.1-3, Section V Device Description'
         context: 'Battery-less, silicone-coated (CorPASS). Used with the Cordella HF System for home vital-sign capture and clinician review.'
       sensor-location:
+        reviewStatus: reviewed
         value: 'Interlobar right pulmonary artery (RPA downturn diameter 12-26 mm)'
         loc: 'SSED (P230040B) p.2, Section V Device Description'
       measured-parameter:
+        reviewStatus: reviewed
         value: 'Pulmonary artery pressure; on-demand patient self-reading at home'
         loc: 'SSED (P230040B) p.1-2, Section V Device Description'
       power-telemetry:
+        reviewStatus: reviewed
         value: 'Battery-free; wirelessly powered via myCordella handheld Reader'
         loc: 'SSED (P230040B) p.4, Section V Device Description'
         context: 'Interrogated at home by the patient.'
       access-route:
+        reviewStatus: reviewed
         value: 'Femoral or jugular venous access'
         loc: 'SSED (P230040B) p.17, Engineering Study Results'
       delivery-sheath:
+        reviewStatus: reviewed
         value: '14 Fr minimum sheath ID; 122 cm delivery catheter; 0.025 in max guidewire OD'
         source: src-cordella-labeling
         loc: 'Labeling (P230040C) p.9, Delivery System specifications'
       available-sizes:
+        reviewStatus: reviewed
         value: 'Single size (fits RPA downturn diameter 12-26 mm)'
         loc: 'SSED (P230040B) p.2-3, Section V Device Description'
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: 'RPA downturn diameter 12-26 mm required for secure sensor stabilization'
         loc: 'SSED (P230040B) p.2, Section V Device Description'
       indication-scope:
+        reviewStatus: reviewed
         value: 'NYHA III HF, on diuretics/GDMT, stable 30 days on GDMT'
         loc: 'SSED (P230040B) p.1, Section II Indications for Use'
         context: 'At-home patients.'
       post-implant-therapy:
+        reviewStatus: reviewed
         value: 'DAPT 30 days post-implant, then aspirin indefinitely'
         source: src-cordella-labeling
         loc: 'Labeling (P230040C) p.45, Peri-Procedural Anticoagulation and Antiplatelet Therapy'
         context: 'DAPT = aspirin plus clopidogrel, prasugrel or ticagrelor. Patients on chronic anticoagulation resume that therapy post-implant.'
       pivotal-trials:
+        reviewStatus: reviewed
         value: 'PROACTIVE-HF (ETX-HFS-PA-03)'
         loc: 'SSED (P230040B) p.27, Pivotal Study'
 
@@ -521,43 +543,53 @@ specs:
     source: src-fire1-future-hf-primary
     values:
       device-design:
+        reviewStatus: reviewed
         value: "Passive, battery-free crown implant: nitinol/gold-strand LC circuit"
         loc: Methods — system description; Figure 1
         context: >-
           Passive nitinol/gold/capacitor circuit; the first four implants used an earlier design and the subsequent 46 an updated design.
           Reported materials apply to the study system, not every later NORM configuration.
       sensor-location:
+        reviewStatus: reviewed
         value: Inferior vena cava, between the renal and hepatic veins
         loc: Methods — Screening and implantation procedure; Figure 2
       measured-parameter:
+        reviewStatus: reviewed
         value: IVC cross-sectional area and collapsibility; no calibration required
         loc: Methods — system description and Screening and implantation procedure
       power-telemetry:
+        reviewStatus: reviewed
         value: Battery-free; interrogated (~1 min) via belt-like abdomen reader
         loc: Methods — system description; Figure 1
         context: Passive resonant circuit; data uploaded to a cloud application.
       access-route:
+        reviewStatus: reviewed
         value: Femoral venous access
         loc: Methods — Screening and implantation procedure; Figure 2
       delivery-sheath:
+        reviewStatus: reviewed
         value: 16 F introducer sheath, 70 cm length
         loc: Methods — Screening and implantation procedure; Figure 2
         context: FUTURE-HF implantation configuration; fluoroscopic placement confirmed by cavography.
       available-sizes:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         loc: Methods — system description (commercial sizing range not stated)
       indication-scope:
+        reviewStatus: reviewed
         value: Investigational IVC monitoring system for heart failure
         loc: About page — investigational device disclaimer
         source: src-fire1-current-manufacturer
         context: Company information does not establish a marketing authorization. FUTURE-HF is a feasibility study.
       pivotal-trials:
+        reviewStatus: reviewed
         value: FUTURE-HF (NCT04203576); FUTURE-HF2 (NCT05763407)
         loc: Methods — Study design
         context: >-
           Early feasibility programs; the primary publication reports 50 implants, with exploratory clinical outcomes rather than randomized
           efficacy.
       post-implant-therapy:
+        reviewStatus: reviewed
         value: DAPT or anticoagulation for one month in FUTURE-HF
         loc: Methods — Screening and implantation procedure
         context: >-
@@ -572,42 +604,52 @@ specs:
     source: src-vlap-eurointervention
     values:
       device-design:
+        reviewStatus: reviewed
         value: Leadless MEMS sensor + antenna, nitinol hemidiscs (16/18 mm)
         loc: Article body, device description paragraph
         context: Spans the septum; anchored by two braided nitinol hemidiscs, 16 mm RA disc and 18 mm LA disc.
       sensor-location:
+        reviewStatus: reviewed
         value: Left-atrial side of the interatrial septum (transseptal implant)
         loc: Article body, device description paragraph
       measured-parameter:
+        reviewStatus: reviewed
         value: Left atrial pressure, direct high-fidelity measurement
         loc: Article body, device description paragraph
       power-telemetry:
+        reviewStatus: reviewed
         value: Battery-free; bidirectional RF link to external unit
         loc: Article body, device description paragraph
         context: Designed to operate at least 10 years.
       access-route:
+        reviewStatus: reviewed
         value: Femoral venous + transseptal puncture (fossa ovalis)
         loc: Article body, device description paragraph
         context: Centrally in the fossa ovalis, under TEE or ICE guidance.
       delivery-sheath:
+        reviewStatus: reviewed
         value: 12 Fr delivery system, fully retrievable braid
         loc: Article body, device description paragraph
         context: Anchoring braid remains fully retrievable during deployment.
       available-sizes:
+        reviewStatus: reviewed
         value: 17 mm antenna; 16 mm right-atrial and 18 mm left-atrial anchoring hemidiscs
         loc: Device description paragraph
         context: >-
           2020 first-in-human configuration. Body dimensions previously taken from a later review have been removed; dimensions are not a
           commercial size range.
       indication-scope:
+        reviewStatus: reviewed
         value: Investigational left-atrial pressure monitoring in heart failure
         loc: Manufacturer investigational device disclaimer
         source: src-vlap-current-manufacturer
       post-implant-therapy:
+        reviewStatus: reviewed
         value: Aspirin and clopidogrel, or anticoagulation, started the day after implantation
         loc: Article body, discharge/follow-up paragraph
         context: Regimen reported for the first two human implants; study treatment, not approved labeling.
       pivotal-trials:
+        reviewStatus: reviewed
         value: VECTOR-HF (NCT03775161)
         loc: Study identification and intervention fields
         source: src-vlap-vector-hf-registry
@@ -621,25 +663,31 @@ specs:
     source: src-corvia-reduce-lap-hf-i-design
     values:
       device-design:
+        reviewStatus: reviewed
         value: Multi-legged, one-size self-expanding metal double-disc cage
         loc: Author manuscript pp.6–8 — The Investigational Device and study procedure
         context: Single-piece; spans the interatrial septum.
       frame-material:
+        reviewStatus: reviewed
         value: Nitinol (0.144 g) with a small tantalum radiopaque marker (0.005 g)
         source: src-corvia-patient-guide
         loc: PDF p.3, Implant Materials
       fabric-cover:
+        reviewStatus: reviewed
         availability: not_applicable
         loc: PDF p.3, Implant Materials
         source: src-corvia-patient-guide
         context: Implant Materials section lists only nitinol and a tantalum marker; bare-metal cage, no fabric/cover component.
       shunt-diameter:
+        reviewStatus: reviewed
         value: 8 mm fixed inner (orifice) diameter; 19.4 mm outer disc diameter
         loc: Author manuscript pp.6–8 — The Investigational Device and study procedure
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous access; deployment after atrial (transseptal) puncture
         loc: Author manuscript pp.6–8 — The Investigational Device and study procedure
       delivery-sheath:
+        reviewStatus: reviewed
         value: 16 Fr delivery catheter (historical IASD configuration)
         loc: PDF p.7, device illustration — Catheter (16 Fr)
         source: src-corvia-tct-2019
@@ -647,9 +695,11 @@ specs:
           Manufacturer-hosted 2019 presentation reports the catheter profile. It does not establish introducer sheath inner or outer diameter,
           or an unchanged current delivery system.
       available-sizes:
+        reviewStatus: reviewed
         value: Single size (8 mm fixed orifice)
         loc: Author manuscript pp.6–8 — The Investigational Device and study procedure
       indication-scope:
+        reviewStatus: reviewed
         value: Investigational shunt in HF with LVEF at least 40% and elevated exercise filling pressure
         loc: RESPONDER-HF — study design, population, enrollment and status
         source: src-corvia-responder-current
@@ -657,6 +707,7 @@ specs:
           Current sponsor page lists 260 randomized participants and In Follow-up; the older review target of 750 is not the current enrollment
           figure.
       pivotal-trials:
+        reviewStatus: reviewed
         value: REDUCE LAP-HF II; RESPONDER-HF (NCT05425459)
         loc: RESPONDER-HF — clinical program and study design
         source: src-corvia-responder-current
@@ -670,46 +721,57 @@ specs:
     source: src-vwave-fluid-dynamics
     values:
       device-design:
+        reviewStatus: reviewed
         value: Hourglass self-expanding nitinol stent, sintered ePTFE cover
         loc: Main text, device description paragraph
         context: Fully encapsulated; valveless (second generation).
       frame-material:
+        reviewStatus: reviewed
         value: Self-expanding nitinol frame
         loc: Main text, device description paragraph
       fabric-cover:
+        reviewStatus: reviewed
         value: Sintered ePTFE encapsulant, luminal + abluminal surfaces
         loc: Main text, device description paragraph
         context: Internodal distance <=30 micrometers.
       shunt-diameter:
+        reviewStatus: reviewed
         value: Neck ID 5.1 mm; LA entry 14 mm; RA exit 11 mm; length 12 mm
         loc: Main text, device description paragraph
         context: Neck ID +/-0.1 mm; wall thickness 0.2 mm.
       access-route:
+        reviewStatus: reviewed
         value: Right femoral venous access with transseptal puncture
         loc: Printed p.44 / PDF p.45, section 3.2.3
         source: src-vwave-fda-panel-briefing
       delivery-sheath:
+        reviewStatus: reviewed
         value: 14 French Cook Medical Mullins Introducer Sheath
         loc: Printed p.44 / PDF p.45, section 3.2.3
         source: src-vwave-fda-panel-briefing
         context: RELIEVE-HF investigational delivery configuration; FDA-hosted sponsor panel briefing is not an approval order.
       available-sizes:
+        reviewStatus: reviewed
         value: Fixed nominal 5.1 mm orifice in the described study configuration
         loc: Device description; Figure 1
         context: Fixed investigational study geometry; no claim that all current or future models share the same dimensions.
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: Interatrial septum thickness must not exceed 6 mm
         loc: Main text, device description paragraph
       indication-scope:
+        reviewStatus: reviewed
         value: Investigational; HF across the LVEF spectrum
         loc: Main text, Results (RELIEVE-HF open-label roll-in cohort)
         context: >-
           The publication concerns RELIEVE-HF study cohorts. A later FDA panel briefing supports investigational device identity; a panel
           meeting or sponsor submission does not constitute FDA approval.
       pivotal-trials:
+        reviewStatus: reviewed
         value: RELIEVE-HF (NCT03499236)
         loc: Main text, device description and Results
       post-implant-therapy:
+        reviewStatus: reviewed
         value: Aspirin plus clopidogrel or ongoing oral anticoagulation in RELIEVE-HF
         loc: Printed p.66 / PDF p.67, section 5.4, Tables 13–14
         source: src-vwave-fda-panel-briefing
@@ -723,36 +785,45 @@ specs:
     source: src-apture-alt-flow-ii-primary
     values:
       device-design:
+        reviewStatus: reviewed
         value: Bare nitinol implant, 4 anchoring legs; LA-to-CS shunt
         loc: Device and procedure; Figure 1
         context: 2 legs in the coronary sinus, 2 in the left atrium; created via percutaneous atriotomy.
       frame-material:
+        reviewStatus: reviewed
         value: Bare self-expanding nitinol frame
         loc: Device and procedure; Figure 1
       fabric-cover:
+        reviewStatus: reviewed
         availability: not_applicable
         loc: Device and procedure; Figure 1
         context: Described as a "bare nitinol implant"; no fabric/cover component.
       shunt-diameter:
+        reviewStatus: reviewed
         value: 7 mm internal diameter; 28 mm device length
         loc: Device and procedure; Figure 1
         context: Four anchoring arms, two in the coronary sinus and two in the left atrium.
       access-route:
+        reviewStatus: reviewed
         value: Right internal jugular venous access
         loc: Device and procedure; Figure 1
       delivery-sheath:
+        reviewStatus: reviewed
         value: 20 F introducer sheath via right transjugular access
         loc: Device and procedure — introducer sheath and access
         context: ALT-FLOW II study configuration; fluoroscopy and transesophageal echocardiography guidance.
       available-sizes:
+        reviewStatus: reviewed
         value: 7 mm internal diameter in the trial configuration
         loc: Device and procedure; Figure 1
         context: The paper describes this geometry; it does not establish a complete commercial model-size catalog.
       indication-scope:
+        reviewStatus: reviewed
         value: Investigational LA-to-coronary-sinus shunt in HF with LVEF greater than 40%
         loc: Trial design — study population and eligibility
         context: ALT-FLOW II studies HFpEF/HFmrEF, not an HFrEF indication. The paper describes trial design rather than final efficacy results.
       pivotal-trials:
+        reviewStatus: reviewed
         value: ALT-FLOW II (NCT05686317), randomized and sham controlled
         loc: Trial design — registration, randomization and endpoints
         context: >-
@@ -767,33 +838,41 @@ specs:
     source: src-reducer-spec-sheet
     values:
       device-design:
+        reviewStatus: reviewed
         value: 'Balloon-expandable, seamless tubular hourglass mesh'
         loc: 'PDF p.1, device description'
         context: 'Single model fits the range of typical coronary-sinus anatomy.'
       frame-material:
+        reviewStatus: reviewed
         value: 'Surgical-grade 316L stainless steel'
         loc: 'PDF p.1, General Product Specifications'
       access-route:
+        reviewStatus: reviewed
         value: 'CS access via 9 Fr guiding catheter, 0.035 in J-tip wire'
         loc: 'PDF p.1, General Product Specifications / Reducer System Kit Components'
         context: 'Guiding catheter: Cordis Vista Brite Tip or Boston Acuity Pro.'
       delivery-sheath:
+        reviewStatus: reviewed
         value: '9 Fr compatible; 85 cm over-the-wire balloon delivery catheter'
         loc: 'PDF p.1, Design and Reference Dimensions / General Product Specifications'
         context: 'Hourglass semi-compliant balloon, effective-length delivery catheter.'
       available-sizes:
+        reviewStatus: reviewed
         value: 'Single model, 22 mm length; OD tapers 13.3 to 10.7 mm'
         loc: 'PDF p.1, Design and Reference Dimensions'
         context: 'Deployed outer diameter tapers from proximal to distal around a 3 mm neck.'
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: 'Proximal coronary sinus; CS diameter 9.5-13 mm'
         loc: 'PDF p.1, Warnings and Precautions'
         context: 'Implanted 2-4 cm distal to the ostium.'
       indication-scope:
+        reviewStatus: reviewed
         value: 'Refractory angina despite GDMT, unsuitable for CABG/PCI'
         loc: 'PDF p.1, Indications/Intended Use and Warnings and Precautions'
         context: 'Investigational in the US (COSIRA-II, Canada); commercially available outside the US/Canada.'
       pivotal-trials:
+        reviewStatus: reviewed
         value: 'COSIRA-II'
         loc: 'PDF p.1, Warnings and Precautions'
 
@@ -802,29 +881,36 @@ specs:
     source: src-vahaticor-device
     values:
       device-design:
+        reviewStatus: reviewed
         value: 'Self-expanding, repositionable nitinol hourglass mesh'
         loc: "'The Device' section"
         context: 'Recapturable up to half deployment; SwiftCell Technology gives a tighter mesh weave at the waist for flow modulation.'
       frame-material:
+        reviewStatus: reviewed
         value: 'Self-expanding nitinol mesh'
         loc: "'The Device' section"
       access-route:
+        reviewStatus: reviewed
         value: 'Transvenous catheter delivery through the right heart to the coronary sinus'
         loc: "'The Procedure' section"
       delivery-sheath:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         loc: "'The Device' and 'The Procedure' sections (French size not stated)"
       available-sizes:
+        reviewStatus: reviewed
         value: 'Four sizes: 9, 11, 13, 15 mm'
         loc: "'The Device' section, Four Sizes"
         context: 'Selected to match the patient coronary-sinus diameter.'
       indication-scope:
+        reviewStatus: reviewed
         value: 'Investigational; intended for symptomatic CMD'
         observedAt: '2026-10-06'
         source: src-vahaticor-home
         loc: 'Homepage, investigational-device disclaimer and opening device description'
         context: 'Development target; not an FDA-approved indication. Dated study statuses are separate registry evidence.'
       pivotal-trials:
+        reviewStatus: reviewed
         availability: not_publicly_disclosed
         observedAt: '2026-10-06'
         loc: "'Clinical Evaluation' section (SERRA-I is early feasibility; no pivotal authorization trial identified)"

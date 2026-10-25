@@ -67,10 +67,12 @@ specs:
     source: src-watchman-original-ssed
     values:
       indication-scope:
+        reviewStatus: reviewed
         value: 'Reduce thromboembolism risk from LAA in NVAF at increased stroke risk with a suitable reason to seek a non-pharmacologic alternative to warfarin.'
         loc: 'PDF pp. 1–2, Indications for Use'
         limitation: Original 2015 WATCHMAN indication snapshot; check later PMA supplements for current labeling.
       pivotal-trials:
+        reviewStatus: reviewed
         value: 'PROTECT AF (NCT00129545); PREVAIL (NCT01182441)'
         loc: 'PDF p. 12, Summary of Primary Clinical Studies; FDA PAS linked IDE cohort follow-up'
         context: Original WATCHMAN generation evidence; do not transfer endpoint estimates to FLX generations.

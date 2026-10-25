@@ -102,18 +102,22 @@ specs:
     source: src-azd5462-discovery
     values:
       drug-class:
+        reviewStatus: reviewed
         value: Selective oral allosteric RXFP1 relaxin-receptor agonist
         loc: Title and abstract
       development-status:
+        reviewStatus: reviewed
         value: Investigational, Phase II clinical development
         source: src-azd5462-pipeline
         loc: Phase II — AZD5462 heart failure
       indication-scope:
+        reviewStatus: reviewed
         value: "LUMINARA investigational HF cohorts: LVEF at most 35% and 41–55%"
         source: src-luminara-esc-results
         loc: Study design — cohort eligibility
         context: Trial population rather than a US approved indication. No claim of randomized reduction in mortality or HF events.
       pivotal-trials:
+        reviewStatus: reviewed
         value: LUMINARA, Phase IIb dose-ranging trial; 375 randomized participants
         source: src-luminara-esc-results
         loc: Study design and primary-endpoint results
@@ -125,13 +129,16 @@ specs:
     source: src-zepbound-current-label
     values:
       drug-class:
+        reviewStatus: reviewed
         value: Dual GIP and GLP-1 receptor agonist
         loc: US prescribing information §12.1
       indication-scope:
+        reviewStatus: reviewed
         value: Weight management; moderate-to-severe OSA in adults with obesity
         loc: US prescribing information §1
         context: August 2026 US label does not list HFpEF. SUMMIT research and guideline recommendations are separate from approved labeling.
       pivotal-trials:
+        reviewStatus: reviewed
         value: SUMMIT (NCT04847557), Phase 3 obesity-related HFpEF study; 731 participants
         source: src-tirzepatide-summit-sponsor
         loc: Study summary — trial identity, population and enrollment

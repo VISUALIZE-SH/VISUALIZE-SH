@@ -120,54 +120,68 @@ specs:
     source: src-watchman-flx-pro-s074-ssed
     values:
       device-design:
+        reviewStatus: reviewed
         value: Self-expanding nitinol frame, closed both ends, extra anchor row
         source: src-watchman-flx-s035-ssed
         loc: 'PDF p.3-4, Section V.B Device Description'
         context: Frame shape differs from the original (non-FLX) WATCHMAN device -- closed at both ends with an additional row of anchors for added stabilization.
       frame-material:
+        reviewStatus: reviewed
         value: Self-expanding Nitinol (nickel-titanium alloy)
         loc: 'PDF p.3, Section V Device Description'
       fabric-cover:
+        reviewStatus: reviewed
         value: PET (polyethylene terephthalate) porous membrane, proximal face
         loc: 'PDF p.3, Section V Device Description'
       anchoring-mechanism:
+        reviewStatus: reviewed
         value: Fixation anchors on outer edge of frame struts (passive)
         loc: 'PDF p.3, Section V Device Description'
       surface-coating:
+        reviewStatus: reviewed
         availability: not_applicable
         basis: derived
         loc: 'PDF p.4, Section V Device Description'
         context: 'The FLX Pro device is described as WATCHMAN FLX "with the addition of a HEMOCOAT Technology coating on the PET fabric," implying the base FLX device carries no added surface coating.'
       repositionable:
+        reviewStatus: reviewed
         value: Fully recapturable and repositionable before final release
         source: src-watchman-flx-s035-ssed
         loc: 'PDF p.4, Section V.B Device Description'
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous access, transseptal puncture
         loc: 'PDF p.3, Section V Device Description'
       delivery-sheath:
+        reviewStatus: reviewed
         value: 12 Fr reinforced Delivery Catheter, threaded core-wire deploy
         loc: 'PDF p.3, Section V Device Description'
       available-sizes:
+        reviewStatus: reviewed
         value: 20, 24, 27, 31, 35 mm (5 device sizes)
         loc: 'PDF p.3-4, Table 1: Device Sizing'
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: Max LAA ostium 14.0-31.5 mm across the 5 sizes
         loc: 'PDF p.3-4, Table 1: Device Sizing'
       imaging-guidance:
+        reviewStatus: reviewed
         value: Fluoroscopy + TEE intra-procedure; CT/TEE for pre-procedure sizing
         loc: 'PDF p.3, Section V Device Description'
       indication-scope:
+        reviewStatus: reviewed
         value: LAA thromboembolism risk reduction in NVAF, incl. post-ablation
         loc: 'PDF p.2-3, Section II Indications for Use'
         context: Full label also covers the standard (non-ablation) NVAF population; see decision-watchman-flx-s035 and decision-watchman-s074 for the supplement history.
       post-implant-therapy:
+        reviewStatus: reviewed
         value: OAC (NOAC/warfarin) +/- aspirin, DAPT, or NOAC alone; physician choice
         basis: derived
         loc: 'PDF p.2, General Information; PDF p.31, Summary of Supplemental Clinical Information'
         context: Combines the cumulative post-implant regimen options added across supplements -- OAC+aspirin (original/S035 label), DAPT as an alternative (S043, 2022; see decision-watchman-s043), and NOAC alone (S074, 2025, based on the WATCHMAN FLX-SURPASS discharge-medication sub-analysis).
         limitation: Not verbatim IFU wording; consult current physician labeling for the exact regimen algorithm.
       pivotal-trials:
+        reviewStatus: reviewed
         value: PINNACLE FLX (IDE G150200), single-arm, n=458
         source: src-watchman-flx-s035-ssed
         loc: 'PDF p.14, Section X Summary of Primary Clinical Study(ies)'
@@ -177,52 +191,66 @@ specs:
     source: src-watchman-flx-pro-s074-ssed
     values:
       device-design:
+        reviewStatus: reviewed
         value: Same FLX frame plus HEMOCOAT coating and 3 tantalum RO markers
         loc: 'PDF p.3-4, Section V Device Description'
       frame-material:
+        reviewStatus: reviewed
         value: Self-expanding Nitinol (nickel-titanium alloy)
         loc: 'PDF p.3, Section V Device Description'
       fabric-cover:
+        reviewStatus: reviewed
         value: PET porous membrane, proximal face, HEMOCOAT-coated
         loc: 'PDF p.3-4, Section V Device Description'
       anchoring-mechanism:
+        reviewStatus: reviewed
         value: Fixation anchors on outer edge of frame struts (passive)
         loc: 'PDF p.3, Section V Device Description'
       surface-coating:
+        reviewStatus: reviewed
         value: HEMOCOAT Technology coating on the PET fabric
         loc: 'PDF p.4, Section V Device Description'
         context: Introduced with the FLX Pro device (P130013/S057, 2023-09-06); also adds 3 tantalum radiopaque markers at the plane of maximum diameter to aid fluoroscopic assessment.
       repositionable:
+        reviewStatus: reviewed
         value: Fully recapturable and repositionable before final release
         basis: derived
         loc: 'PDF p.3, Section V Device Description'
         context: 'S074 states the shared deployment/release-or-recapture mechanism (threaded core wire) for FLX and FLX Pro jointly; the fuller "fully recapturable and repositionable" phrasing is stated for FLX in the S035 SSED and not restated verbatim in S074, but no change to this mechanism is described for FLX Pro.'
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous access, transseptal puncture
         loc: 'PDF p.3, Section V Device Description'
       delivery-sheath:
+        reviewStatus: reviewed
         value: 12 Fr reinforced Delivery Catheter, threaded core-wire deploy
         loc: 'PDF p.3, Section V Device Description'
       available-sizes:
+        reviewStatus: reviewed
         value: 20, 24, 27, 31, 35, 40 mm (6 sizes; adds 40 mm)
         loc: 'PDF p.3-4, Table 1: Device Sizing'
       anatomy-range-summary:
+        reviewStatus: reviewed
         value: Max LAA ostium 14.0-36.0 mm across the 6 sizes
         loc: 'PDF p.3-4, Table 1: Device Sizing'
       imaging-guidance:
+        reviewStatus: reviewed
         value: Fluoroscopy + TEE intra-procedure; CT/TEE for pre-procedure sizing
         loc: 'PDF p.3, Section V Device Description'
       indication-scope:
+        reviewStatus: reviewed
         value: LAA thromboembolism risk reduction in NVAF, incl. post-ablation
         loc: 'PDF p.2-3, Section II Indications for Use'
         context: Same indication as WATCHMAN FLX, stated jointly for both devices in this SSED. See decision-watchman-flx-pro-s057 and decision-watchman-s074.
       post-implant-therapy:
+        reviewStatus: reviewed
         value: OAC (NOAC/warfarin) +/- aspirin, DAPT, or NOAC alone; physician choice
         basis: derived
         loc: 'PDF p.2, General Information; PDF p.31, Summary of Supplemental Clinical Information'
         context: Same cumulative regimen history as WATCHMAN FLX; stated jointly for both devices in this SSED.
         limitation: Not verbatim IFU wording; consult current physician labeling for the exact regimen algorithm.
       pivotal-trials:
+        reviewStatus: reviewed
         availability: not_applicable
         source: src-watchman-flx-pro-s057-decision
         loc: Approval Order Statement
@@ -233,59 +261,70 @@ specs:
     source: src-mitraclip-p100009-ifu
     values:
       device-design:
+        reviewStatus: reviewed
         value: Single-size mechanical clip; steerable sleeve refined (2016)
         source: src-mitraclip-generations-review
         loc: 'Article body, MitraClip NT paragraph'
         context: Per Synak et al. 2026 (PMC13189608), the 2016 NT update improved the Steerable Sleeve for more precise clip steering, with less anterior tip movement while turning the M-knob.
       frame-material:
+        reviewStatus: reviewed
         value: Metal-alloy clip arms; gripper alloy changed (Elgiloy to nickel)
         basis: derived
         loc: 'PDF p.9-10, Section 12.0 Device Description'
         context: Clip arms/cover described as "metal alloys" in the original 2013 IFU. Per Synak et al. 2026 (PMC13189608, MitraClip NT paragraph), the P100009/S015 (2016) supplement changed the gripper material from Elgiloy to a nickel-based alloy.
         limitation: No public SSED or IFU was posted for supplement P100009/S015; the exact post-2016 gripper alloy designation is not independently confirmed beyond the cited review.
       grasping-mechanism:
+        reviewStatus: reviewed
         value: Arms open/invert/close; sleeve refined for precise clip steering
         source: src-mitraclip-generations-review
         basis: derived
         loc: 'Article body, MitraClip NT paragraph'
         context: Baseline arm motion (fully opened, inverted, or closed; grippers raised/lowered repeatedly) per the original 2013 IFU, PDF p.10.
       fabric-cover:
+        reviewStatus: reviewed
         value: Polyester fabric (Clip cover) over the metal clip frame
         basis: derived
         loc: 'PDF p.9-10, Section 12.0 Device Description'
         limitation: No public SSED or IFU was posted for supplement P100009/S015; value carried forward from the original 2013 IFU (S015 did not describe a fabric change).
       repositionable:
+        reviewStatus: reviewed
         value: Repositionable before release via Delivery Catheter Handle
         basis: derived
         loc: 'PDF p.10, Section 12.0 Device Description'
         limitation: Carried forward from the original 2013 IFU; no public S015 IFU to confirm unchanged wording.
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous access, transseptal puncture (left atrium)
         basis: derived
         loc: 'PDF p.10, Section 12.0 Device Description'
       delivery-sheath:
+        reviewStatus: reviewed
         value: 16 Fr Steerable Sleeve via 24 Fr Steerable Guide Catheter
         basis: derived
         loc: 'PDF p.8, Table 1: MitraClip Device Dimensions'
         limitation: No public SSED or IFU was posted for supplement P100009/S015; dimensions carried forward from the original 2013 IFU. The cited review describes qualitative steering improvements without new dimensions.
       available-sizes:
+        reviewStatus: reviewed
         value: 'Single clip size: closed length <=15 mm, width <=20 mm (180 deg)'
         basis: derived
         loc: 'PDF p.8, Table 1: MitraClip Device Dimensions'
         context: Arm width <=5 mm, arm (coaptation) length <=9 mm, grasping width <=17 mm at 120 degrees.
         limitation: Dimensions are from the original 2013 IFU; P100009/S015 (2016) is documented only as a gripper-material and delivery-system change, with no indication of a clip-dimension change, but no public S015 IFU confirms this.
       imaging-guidance:
+        reviewStatus: reviewed
         value: Fluoroscopy plus 2D/3D transesophageal echocardiography (TEE)
         source: src-mitraclip-generations-review
         loc: 'Article body, Figure 1 caption and procedure description'
         limitation: General MitraClip technique description in the cited review; not stated as generation-specific.
       indication-scope:
+        reviewStatus: reviewed
         value: Degenerative MR and secondary MR in heart failure on GDMT
         source: src-mitraclip-s028
         basis: derived
         loc: Approval Order Statement
         context: Prohibitive-surgical-risk degenerative MR carried from the original 2013 PMA; GDMT-refractory secondary MR added by the S028 supplement (2019), whose approval order names both the MitraClip NT and NTR/XTR model groups.
       pivotal-trials:
+        reviewStatus: reviewed
         availability: not_applicable
         source: src-mitraclip-nt-s015-decision
         loc: Approval Order Statement
@@ -296,35 +335,42 @@ specs:
     source: src-mitraclip-p100009-ifu
     values:
       device-design:
+        reviewStatus: reviewed
         value: Two clip sizes (NTR, XTR); reinforced longer delivery shaft
         source: src-mitraclip-generations-review
         loc: 'Article body, MitraClip NTR/XTR paragraph'
         context: Per Synak et al. 2026 (PMC13189608), the clip delivery shaft became a multi-lumen extrusion with a reinforced braid and Pebax jacket, stiffened and lengthened by 1.5 cm to allow a higher transseptal puncture without losing reach to the mitral valve.
       frame-material:
+        reviewStatus: reviewed
         value: Same clip alloys as NT (metal arms, nickel-alloy gripper)
         basis: derived
         loc: 'PDF p.9-10, Section 12.0 Device Description'
         limitation: No public SSED or IFU was posted for supplement P100009/S025; materials carried forward from the NT-generation baseline (see ver-mitraclip-nt).
       grasping-mechanism:
+        reviewStatus: reviewed
         value: Arms open/close without locking; XTR arms 3 mm longer than NTR
         source: src-mitraclip-generations-review
         loc: 'Article body, MitraClip NTR/XTR paragraph'
         context: Opening and closing the clip arms no longer required locking the device, minimizing inadvertent medial/lateral movement; the XTR system has 3 mm longer clip arms than NTR for reach and grasp in more complex anatomies.
       fabric-cover:
+        reviewStatus: reviewed
         value: Polyester fabric (Clip cover) over the metal clip frame
         basis: derived
         loc: 'PDF p.9-10, Section 12.0 Device Description'
         limitation: No public SSED or IFU was posted for supplement P100009/S025; value carried forward from the original 2013 IFU.
       repositionable:
+        reviewStatus: reviewed
         value: Repositionable before release via Delivery Catheter Handle
         basis: derived
         loc: 'PDF p.10, Section 12.0 Device Description'
         limitation: Carried forward from the original 2013 IFU; no public S025 IFU to confirm unchanged wording.
       access-route:
+        reviewStatus: reviewed
         value: Transfemoral venous access, transseptal puncture (left atrium)
         basis: derived
         loc: 'PDF p.10, Section 12.0 Device Description'
       delivery-sheath:
+        reviewStatus: reviewed
         value: 16 Fr reinforced Sleeve (1.5 cm longer) via 24 Fr Guide Catheter
         source: src-mitraclip-generations-review
         basis: derived
@@ -332,6 +378,7 @@ specs:
         context: Base 16 Fr / 24 Fr French sizes per the original 2013 IFU, Table 1 (PDF p.8); shaft reinforcement and 1.5 cm lengthening per the cited review.
         limitation: No public SSED or IFU was posted for supplement P100009/S025; exact revised shaft dimensions beyond the +1.5 cm length are not independently confirmed.
       available-sizes:
+        reviewStatus: reviewed
         value: 'Two sizes: NTR (standard) and XTR (arms ~3 mm longer)'
         source: src-mitraclip-generations-review
         basis: derived
@@ -339,17 +386,20 @@ specs:
         context: NTR retains the NT/original clip dimensions (closed length <=15 mm, arm length <=9 mm); XTR arms are reported as 3 mm longer for reach in complex anatomies.
         limitation: XTR's absolute arm length is not independently confirmed in a public NTR/XTR-specific source; +3 mm is the only dimension reported in the cited review.
       imaging-guidance:
+        reviewStatus: reviewed
         value: Fluoroscopy plus 2D/3D transesophageal echocardiography (TEE)
         source: src-mitraclip-generations-review
         loc: 'Article body, Figure 1 caption and procedure description'
         limitation: General MitraClip technique description in the cited review; not stated as generation-specific.
       indication-scope:
+        reviewStatus: reviewed
         value: Degenerative MR and secondary MR in heart failure on GDMT
         source: src-mitraclip-s028
         basis: derived
         loc: Approval Order Statement
         context: Prohibitive-surgical-risk degenerative MR carried from the original 2013 PMA; GDMT-refractory secondary MR added by the S028 supplement (2019), whose approval order names both the MitraClip NT and NTR/XTR model groups.
       pivotal-trials:
+        reviewStatus: reviewed
         availability: not_applicable
         source: src-mitraclip-ntr-xtr-s025-decision
         loc: Approval Order Statement

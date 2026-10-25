@@ -1610,20 +1610,11 @@
   pulse: 6
   curation:
     status: curated
-    lastUpdated: '2026-10-09'
+    lastUpdated: "2026-10-09"
     sources:
       - https://clinicaltrials.gov/study/NCT07687485
       - https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html
-    notes: >-
-      WOR-28: Official API protocolSection.identificationModule (CLN-004, TRIUMPH); descriptionModule; designModule.designInfo
-      and enrollmentInfo; armsInterventionsModule; outcomesModule.primaryOutcomes[0:2]; statusModule; hasResults false.
-      Retrieved 2026-10-09. Registry reports NOT_YET_RECRUITING, status verified 2026-07, last update posted 2026-07-22;
-      graph status unknown preserves the unsupported coarse enum mapping. Estimated start 2026-09 is not an actual start,
-      so no timeline is assigned. Graph enrollment is omitted: the API estimates 700 total while its design describes 400
-      randomized plus up to 150 single-arm patients; the intelligence snapshot retains the raw 700 estimate with its caveat.
-      Single-arm patients are unsuitable for EVOQUE and suboptimal for T-TEER. Exact Laplace/EVOQUE generations and TRIUMPH
-      access route remain unverified. June 29 release opening paragraphs report IDE approval and the cohort plan, not outcomes
-      or marketing authorization. 
+    notes: "WOR-28: Official API protocolSection.identificationModule (CLN-004, TRIUMPH); descriptionModule; designModule.designInfo and enrollmentInfo; armsInterventionsModule; outcomesModule.primaryOutcomes[0:2]; statusModule; hasResults false. Retrieved 2026-10-09. Registry reports NOT_YET_RECRUITING, status verified 2026-07, last update posted 2026-07-22; graph status unknown preserves the unsupported coarse enum mapping. Estimated start 2026-09 is not an actual start, so no timeline is assigned. Graph enrollment is omitted: the API estimates 700 total while its design describes 400 randomized plus up to 150 single-arm patients; the intelligence snapshot retains the raw 700 estimate with its caveat. Single-arm patients are unsuitable for EVOQUE and suboptimal for T-TEER. Exact Laplace/EVOQUE generations and TRIUMPH access route remain unverified. June 29 release opening paragraphs report IDE approval and the cohort plan, not outcomes or marketing authorization."
 
 # --- TMVR ---
 - id: trial-summit
@@ -2635,13 +2626,10 @@
     - https://clinicaltrials.gov/study/NCT04029337
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://clinicaltrials.gov/study/NCT04029337
-    notes: >-
-      Registry last update posted
-      2025-03-17; 30 estimated participants; this count is not a treated or analyzed cohort. No results
-      posted in the API record.
+    notes: Registry last update posted 2025-03-17; 30 estimated participants; this count is not a treated or analyzed cohort. No results posted in the API record.
   timeline:
     date: '2020-07-14'
     precision: day
@@ -2667,13 +2655,10 @@
     - https://clinicaltrials.gov/study/NCT04029363
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://clinicaltrials.gov/study/NCT04029363
-    notes: >-
-      Registry last update posted
-      2025-09-15; 120 estimated participants; this count is not a treated or analyzed cohort. No results
-      posted in the API record.
+    notes: Registry last update posted 2025-09-15; 120 estimated participants; this count is not a treated or analyzed cohort. No results posted in the API record.
   timeline:
     date: '2019-05-28'
     precision: day
@@ -2699,14 +2684,10 @@
     - https://clinicaltrials.gov/study/NCT04888247
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://clinicaltrials.gov/study/NCT04888247
-    notes: >-
-      Registry last update posted
-      2024-10-03; 30 estimated participants; this count is not a treated or analyzed cohort. Recruitment
-      record last verified October 2024; current recruitment may be stale. No results posted in the API
-      record.
+    notes: Registry last update posted 2024-10-03; 30 estimated participants; this count is not a treated or analyzed cohort. Recruitment record last verified October 2024; current recruitment may be stale. No results posted in the API record.
   timeline:
     date: '2021-07-01'
     precision: day
@@ -2732,15 +2713,10 @@
     - https://clinicaltrials.gov/study/NCT06683729
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://clinicaltrials.gov/study/NCT06683729
-    notes: >-
-      Registry last update posted
-      2025-09-15; 240 estimated participants; this count is not a treated or analyzed cohort. Registry
-      estimated start is not verified initiation. September 2026 company disclosures describe the pivotal
-      program advancing, but this registry remains NOT_YET_RECRUITING. Do not silently reconcile the conflict.
-      No results posted in the API record.
+    notes: Registry last update posted 2025-09-15; 240 estimated participants; this count is not a treated or analyzed cohort. Registry estimated start is not verified initiation. September 2026 company disclosures describe the pivotal program advancing, but this registry remains NOT_YET_RECRUITING. Do not silently reconcile the conflict. No results posted in the API record.
   pulse: 5
 
 - id: trial-highlife-31mm-feasibility
@@ -2763,13 +2739,10 @@
   pulse: 4
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://clinicaltrials.gov/study/NCT02974881
-    notes: >-
-      Registry last posted 2024-10-03; 5
-      actual overall participants, not a numerical efficacy result. Historical 31 mm study; later-generation
-      equivalence not established. No posted results extracted.
+    notes: Registry last posted 2024-10-03; 5 actual overall participants, not a numerical efficacy result. Historical 31 mm study; later-generation equivalence not established. No posted results extracted.
   timeline:
     date: '2017-07-20'
     precision: day
@@ -2797,14 +2770,10 @@
   pulse: 4
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://clinicaltrials.gov/study/NCT07409285
-    notes: >-
-      Registry last posted 2026-02-13; 150
-      estimated overall participants, not a numerical efficacy result. Commercial registry describes a 28 mm
-      bioprosthesis; exact marketed generation unresolved. Estimated start is not verified initiation. No
-      posted results extracted.
+    notes: Registry last posted 2026-02-13; 150 estimated overall participants, not a numerical efficacy result. Commercial registry describes a 28 mm bioprosthesis; exact marketed generation unresolved. Estimated start is not verified initiation. No posted results extracted.
 
 # --- Original publication-backed early-feasibility context ---
 - id: trial-clasp-tr-efs
@@ -4279,7 +4248,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT06334822
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Interventional randomized
 - id: trial-nct06222099
   type: trial
@@ -4307,7 +4276,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT06222099
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Interventional randomized
 - id: trial-nct07067658
   type: trial
@@ -4335,7 +4304,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT07067658
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Interventional randomized
 - id: trial-nct04072744
   type: trial
@@ -4363,7 +4332,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT04072744
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Observational
 - id: trial-nct05874128
   type: trial
@@ -4417,7 +4386,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT07870395
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Observational
 - id: trial-nct07443670
   type: trial
@@ -4445,7 +4414,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT07443670
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Observational
 - id: trial-nct07443969
   type: trial
@@ -4473,7 +4442,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT07443969
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Observational
 - id: trial-nct06566911
   type: trial
@@ -4501,7 +4470,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT06566911
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Observational
 - id: trial-nct04573699
   type: trial
@@ -4527,7 +4496,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT04573699
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Observational
 - id: trial-nct07214376
   type: trial
@@ -4556,7 +4525,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT07214376
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Interventional randomized
 - id: trial-nct05824923
   type: trial
@@ -4585,7 +4554,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT05824923
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Interventional randomized
 - id: trial-nct05996562
   type: trial
@@ -4613,7 +4582,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT05996562
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Interventional
 - id: trial-nct06898515
   type: trial
@@ -4643,7 +4612,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT06898515
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Interventional randomized
 - id: trial-nct05174312
   type: trial
@@ -4671,7 +4640,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT05174312
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Interventional randomized
 - id: trial-nct05015764
   type: trial
@@ -4701,7 +4670,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT05015764
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Interventional randomized
 - id: trial-nct06362668
   type: trial
@@ -4730,7 +4699,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT06362668
-    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
   phase: Interventional randomized
 - id: trial-nct03022708
   type: trial

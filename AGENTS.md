@@ -14,6 +14,14 @@ other machine, stop and ask the owner. Do not gather evidence, snapshot sources,
 or draft factual records here. The engine writes approved records into this
 checkout uncommitted; validate, preview, and publish them under the rules below.
 
+All source/lead discovery work must be committed to the private engine repository:
+screens, candidate directories, source searches, research notes, review outcomes,
+approval receipts, and their screenshots/previews. Local ignored files are not a
+substitute for a private commit. Public output contains only approved reader-facing
+records, citations, evidence limits, artwork provenance, and app/software changes.
+Keep discovery process and review receipts out of public data notes, docs, assets,
+and pull-request text. If the boundary is unclear, ask the owner before committing.
+
 ## Track the work in Linear
 
 Use workspace `workspace-visualize-sh`, team `Workspace-visualize-sh` (`WOR`).

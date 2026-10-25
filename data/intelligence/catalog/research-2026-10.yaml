@@ -287,16 +287,18 @@ specs:
     category: mitral-chordal-reconstruction
     source: src-mitrapatch-fda-k252126
     values:
-      manufacturer: { value: Chawla Heart Technologies LLC, loc: 'PDF p.5 (Summary p.1), Applicant; p.6 comparison table' }
-      device-design: { value: Permanent ePTFE monomembrane connecting papillary muscle and leaflet, loc: 'PDF p.5 (Summary p.1), Device Description' }
-      implant-material: { value: Nonabsorbable expanded polytetrafluoroethylene (ePTFE), loc: 'PDF p.5 (Summary p.1), Device Description' }
-      available-sizes: { value: One size, loc: 'PDF p.6 (Summary p.2), Product Variants comparison row' }
+      manufacturer: { reviewStatus: reviewed, value: Chawla Heart Technologies LLC, loc: 'PDF p.5 (Summary p.1), Applicant; p.6 comparison table' }
+      device-design: { reviewStatus: reviewed, value: Permanent ePTFE monomembrane connecting papillary muscle and leaflet, loc: 'PDF p.5 (Summary p.1), Device Description' }
+      implant-material: { reviewStatus: reviewed, value: Nonabsorbable expanded polytetrafluoroethylene (ePTFE), loc: 'PDF p.5 (Summary p.1), Device Description' }
+      available-sizes: { reviewStatus: reviewed, value: One size, loc: 'PDF p.6 (Summary p.2), Product Variants comparison row' }
       access-route:
+        reviewStatus: reviewed
         value: Surgical mitral chordal repair
         loc: 'PDF p.5 (Summary p.1), Common Name and Device Description'
         limitation: Access incision, beating-heart use and transcatheter compatibility are not established.
-      indication-scope: { value: Repair/replacement of marginal (primary) chordae tendinae only, loc: 'PDF p.4 Indications for Use; p.5 (Summary p.1) Indication for Use' }
+      indication-scope: { reviewStatus: reviewed, value: Repair/replacement of marginal (primary) chordae tendinae only, loc: 'PDF p.4 Indications for Use; p.5 (Summary p.1) Indication for Use' }
       development-status:
+        reviewStatus: reviewed
         value: US 510(k) clearance December 4, 2025; K252126
         loc: PDF p.1 clearance letter
         limitation: Historical backfill; current commercial distribution and human trial evidence are not verified.
@@ -304,23 +306,27 @@ specs:
     category: embolic-protection-devices
     source: src-emboliner-fda-k261715
     values:
-      manufacturer: { value: 'Emboline, Inc.', loc: Applicant }
-      exact-version: { value: Emboliner EPC-03, loc: Device Name }
+      manufacturer: { reviewStatus: reviewed, value: 'Emboline, Inc.', loc: Applicant }
+      exact-version: { reviewStatus: reviewed, value: Emboliner EPC-03, loc: Device Name }
       device-design:
+        reviewStatus: reviewed
         value: Temporary catheter for capture/removal of embolic debris during TAVR
         source: src-emboliner-commercial-use-20261002
         loc: Second non-quotation paragraph; About Emboline
         limitation: Manufacturer design intent; no superiority or stroke-reduction outcome inferred.
       development-status:
+        reviewStatus: reviewed
         value: US 510(k)-cleared; controlled commercial launch announced October 2
         source: src-emboliner-commercial-use-20261002
         loc: Opening paragraph; controlled-launch paragraph
         context: FDA K261715 confirms clearance on September 8, 2026. First commercial procedures occurred October 1; release appeared October 2.
       indication-scope:
+        reviewStatus: reviewed
         availability: not_yet_reviewed
         loc: Device Classification Name (exact cleared IFU text unavailable)
         limitation: Sponsor describes TAVR use; regulator record establishes clearance but exact indication restrictions require the unavailable summary/IFU.
       implant-material:
+        reviewStatus: reviewed
         availability: not_applicable
         loc: Device Classification Name (temporary catheter)
         context: Temporary protection adjunct, not a permanent implant; filter/frame composition was not independently verified.

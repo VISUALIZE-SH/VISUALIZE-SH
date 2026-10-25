@@ -44,16 +44,13 @@
       url: https://clinicaltrials.gov/study/NCT06680427
   curation:
     status: curated
-    lastUpdated: '2026-10-14'
+    lastUpdated: "2026-10-14"
     sources:
       - https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/
       - https://news.bostonscientific.com/2026-05-18-Boston-Scientific-announces-strategic-investment-in-MiRus-LLC
       - https://clinicaltrials.gov/study/NCT07278310
       - https://clinicaltrials.gov/study/NCT06680427
-    notes: >-
-      
-      No FDA commercial-authorization decision or reusable product figure added. Do not infer exact alloy composition from
-      orthopedic Mo-47.5Re or attribute unnamed MiRus mitral/tricuspid assets to this aortic platform.
+    notes: No FDA commercial-authorization decision or reusable product figure added. Do not infer exact alloy composition from orthopedic Mo-47.5Re or attribute unnamed MiRus mitral/tricuspid assets to this aortic platform.
 
 # --- LAA closure ---
 - id: dev-watchman-original
@@ -117,12 +114,13 @@
       - https://www.sec.gov/Archives/edgar/data/885725/000088572516000035/q12016form10-q.htm
       - https://www.bfarm.de/SharedDocs/Kundeninfos/EN/11/2016/02623-16_kundeninfo_en.pdf?__blob=publicationFile
     notes: >-
-      Early-iteration implant composition not independently verified; do not carry forward 2020 FLX specifications. 2026-09-30 correction: removed the Ledwoch et al. 2015 '4th generation WATCHMAN' study (Catheter Cardiovasc Interv, PMID 26354821) as a
+      Early-iteration implant composition not independently verified; do not carry forward 2020 FLX specifications. 2026-09-30 correction
+      : removed the Ledwoch et al. 2015 '4th generation WATCHMAN' study (Catheter Cardiovasc Interv, PMID 26354821) as a
       source and dropped ordinal-generation wording; that paper describes an Atritech prototype for which CE marking was not pursued, not the
       CE-marked early FLX. Early-FLX facts now rest on the Boston Scientific FY2015 10-K (CE mark November 2015), the Q1 2016 10-Q (initial
       market release suspended for a higher than expected rate of device embolization; design enhancements to follow) and field safety notice
       91133341-FA (BfArM 02623/16, p.1). 2026-10-03 audit:
-      Aligns timeline month with the source correction. Graph context and primary evidence links aligned with
+      Aligns timeline month with the documented source correction. Graph context and primary evidence links aligned with
       version records.
 
 - id: dev-amplatzer-cardiac-plug
@@ -393,7 +391,7 @@
       - https://pubmed.ncbi.nlm.nih.gov/38841867/
       - https://patents.google.com/patent/US10792045B2/en
     notes: >-
-      2026-09-30 correction: catalog manufacturer changed from 'Hangzhou Valued Medtech' to Hangzhou Dinova EP (formerly
+      2026-09-30 correction : catalog manufacturer changed from 'Hangzhou Valued Medtech' to Hangzhou Dinova EP (formerly
       Hangzhou Nuomao Medtech). Basis: ClinicalTrials.gov NCT05911685 (SeaLA, n=163) names Hangzhou Dinova EP Technology Co., Ltd as lead
       sponsor; US 10,792,045 B2 records the Nuomao-to-Dinova change of name on 2022-04-08; 'Valued Medtech' is a separate stent registrant
       with no second link to SeaLA. 2026-10-03 audit: Graph context and primary evidence links
@@ -547,7 +545,7 @@
       - https://www.jacc.org/doi/10.1016/j.jcin.2021.08.060
       - https://clinicaltrials.gov/study/NCT05147792
     notes: >-
-      2026-09-30 correction: the catalog Data table no longer says 'outer ePTFE cover'; ePTFE covers the proximal (left
+      2026-09-30 correction : the catalog Data table no longer says 'outer ePTFE cover'; ePTFE covers the proximal (left
       atrial) face only, per the first clinical report (Device description). 2026-10-03 audit: Primary sources establish developer and investigation; no marketing authorization
       located. Graph context and primary evidence links aligned with version records.
 
@@ -721,7 +719,7 @@
       - https://ec.europa.eu/tools/eudamed/api/documents/bb3c3556-fc8b-4c30-9e32-7d719293b81b
     notes: >-
       Public source reviewed does not disclose generation-specific implant materials; avoid copying prior Amulet composition. 2026-09-30
-      correction: catalog anchor wording changed from 'two rows of shorter anchors' to a second, re-shaped row of stabilizing
+      correction : catalog anchor wording changed from 'two rows of shorter anchors' to a second, re-shaped row of stabilizing
       anchors per the EU SSCP (Abbott ref 91161889 Rev A, p.12 s3.2); anchor count and length are not disclosed, and 'shorter'/'smaller' is
       release wording only. 2026-10-03 audit: Graph context and
       primary evidence links aligned with version records.
@@ -754,7 +752,7 @@
       - https://www.cms.gov/medicare/coverage/evidence/left-atrial-closure
       - https://www.investor.jnj.com/investor-news/news-details/2023/Johnson--Johnson-MedTech-Acquires-Laminar-Inc/default.aspx
     notes: >-
-      2026-09-30 correction: trial status corrected from 'on hold' to SUSPENDED. ClinicalTrials.gov NCT06168942 first shows
+      2026-09-30 correction : trial status corrected from 'on hold' to SUSPENDED. ClinicalTrials.gov NCT06168942 first shows
       SUSPENDED in the record version of 2025-07-03 (last RECRUITING version 2025-06-19); why-stopped text: potential unwrapping of the LAA
       post implant with clinically significant leaks. The registry gives no suspension date beyond those version dates. Verified against the
       registry record on 2026-09-30 . 2026-10-03 audit: The
@@ -836,7 +834,7 @@
     status: curated
     lastUpdated: "2026-10-03"
     notes: >-
-      2026-09-30 correction: removed '13 device sizes' from the catalog Data table; the IFU (P200049C, PDF p.19 Table 1)
+      2026-09-30 correction : removed '13 device sizes' from the catalog Data table; the IFU (P200049C, PDF p.19 Table 1)
       lists eight lobe sizes, 16-34 mm. The only 13s in the Amulet documents are a 13F loader/ACP sheath size and a landing-zone bound.
       2026-10-03 audit: Graph context and primary evidence links
       aligned with version records. 2026-10-03 audit: Timeline now uses the earliest primary-verified marketing authorization for the
@@ -1096,7 +1094,7 @@
     status: curated
     lastUpdated: "2026-10-03"
     notes: >-
-      2026-09-23: pathway corrected from HDE to PMA and date set to 2007-09-07
+      2026-09-23: pathway corrected from HDE to PMA and date set to 2007-09-07 in the cited source
       (https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040040). 2026-10-03 audit: Graph context and primary evidence
       links aligned with version records. 2026-10-03 audit: Original FDA SSED supports the recorded PMA date; earlier jurisdiction-specific
       authorization dates are not established in this pass.
@@ -1229,7 +1227,7 @@
     status: curated
     lastUpdated: "2026-10-03"
     notes: >-
-      2026-09-23: HERO reader approval added to regulatoryDetail. Source:
+      2026-09-23: HERO reader approval added to regulatoryDetail in the cited source. Source:
       https://abbott.mediaroom.com/press-releases?item=124735 2026-10-03 audit: Adds a directly attributable source and date to the graph
       milestone. Graph context and primary evidence links aligned with version records.
     sources:
@@ -1476,7 +1474,7 @@
       https://ir.cytokinetics.com/press-releases/press-release-details/2025/Cytokinetics-Announces-FDA-Approval-of-MYQORZO-aficamten-for-the-Treatment-of-Adults-with-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-to-Improve-Functional-Capacity-and-Symptoms/default.aspx
       ; https://www.healio.com/news/cardiology/20251219/fda-approves-aficamten-for-adults-with-obstructive-hcm ;
       https://www.globenewswire.com/news-release/2026/07/07/3323061/35409/en/Cytokinetics-Announces-Three-Late-Breaking-Science-Abstracts-at-the-European-Society-of-Cardiology-ESC-Congress-2026.html.
-      Applied 2026-09-23: name, regulatoryStatus, regulatoryDetail, and fda-approval timeline updated from the
+      Applied 2026-09-23 in the cited source: name, regulatoryStatus, regulatoryDetail, and fda-approval timeline updated from the
       Drugs@FDA NDA 219083 record. 2026-10-03 audit: Graph context and primary evidence links aligned with version records.
     sources:
       - https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=fd778507-1274-4d1a-a659-5431d55c543a&type=pdf
@@ -1575,7 +1573,7 @@
     lastUpdated: "2026-10-03"
     notes: >-
       2026-09-23: ATTR-CM label date verified on Drugs@FDA
-      (https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215515) and applied. ESC
+      (https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215515) and applied in the cited source. ESC
       2026 HELIOS-B subgroup: benefit consistent regardless of background tafamidis (https://investors.alnylam.com/press-release?id=30006).
       2026-10-03 audit: Graph context and primary evidence links aligned with version records.
     sources:
@@ -1763,8 +1761,7 @@
     lastUpdated: "2026-10-03"
     notes: >-
       2026-09-23: HF label verified on Drugs@FDA
-      (https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215341); regulatoryDetail updated at the
-      owner's request. 2026-10-03 audit: Graph context and primary evidence links aligned with version records.
+      (https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215341). Graph context and primary evidence links align with version records.
     sources:
       - https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc726765-5d5a-4d6e-b037-b847bda9fb7c
 
@@ -2156,7 +2153,7 @@
     status: curated
     lastUpdated: "2026-10-03"
     notes: >-
-      2026-09-23: timeline corrected to the FDA decision date 2026-03-17 (P250024; openFDA and SSED p.1). Earlier note:
+      2026-09-23: timeline corrected in the cited source to the FDA decision date 2026-03-17 (P250024; openFDA and SSED p.1). Earlier note:
       press reports dated the approval 2026-03-23. Sources: https://www.tctmd.com/news/fda-approves-jenavalves-trilogy-aortic-regurgitation ;
       https://citoday.com/news/fda-approves-jenavalves-trilogy-thv-system-for-symptomatic-severe-aortic-regurgitation. Additionally, a
       2026-07-01 JenaValve release recapped New York Valves 2026 late-breakers: an ALIGN-AR sub-analysis on pacemaker-implantation predictors
@@ -2201,7 +2198,7 @@
     status: curated
     lastUpdated: "2026-10-03"
     notes: >-
-      2026-09-23: US approval added (https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P240042);
+      2026-09-23: US approval added in the cited source (https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P240042);
       timeline still shows the 2020 CE mark as first availability. 2026-10-03 audit: Graph context and primary evidence links aligned with
       version records. 2026-10-03 audit: Timeline now uses the earliest primary-verified marketing authorization for the represented product
       lineage; day precision is not inferred from an announcement.
@@ -2470,7 +2467,7 @@
   pulse: 6
   curation:
     status: curated
-    lastUpdated: '2026-10-09'
+    lastUpdated: "2026-10-09"
     sources:
       - https://laplaceint.com/
       - https://laplaceint.com/technology-1
@@ -2478,12 +2475,7 @@
       - https://clinicaltrials.gov/study/NCT07687485
       - https://clinicaltrials.gov/study/NCT07171060
       - https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html
-    notes: >-
-      WOR-28: Homepage About Us; Technology, SIMPLE paragraph and final Caution; release opening paragraph and About the
-      Company. Retrieved 2026-10-09. The IDE announcement is sponsor-reported, not a verified marketing authorization;
-      no approval timeline is assigned. Empty materials means composition is not curated for an exact generation, not that
-      the implant has no materials. Delivery dimensions, size ranges and clinical outcomes are not inferred from the
-      undated overview or transferred between access routes/cohorts. 
+    notes: "WOR-28: Homepage About Us; Technology, SIMPLE paragraph and final Caution; release opening paragraph and About the Company. Retrieved 2026-10-09. The IDE announcement is sponsor-reported, not a verified marketing authorization; no approval timeline is assigned. Empty materials means composition is not curated for an exact generation, not that the implant has no materials. Delivery dimensions, size ranges and clinical outcomes are not inferred from the undated overview or transferred between access routes/cohorts."
 
 - id: dev-evoque
   type: therapy
@@ -2599,7 +2591,7 @@
     status: curated
     lastUpdated: "2026-10-03"
     notes: >-
-      2026-09-23: PMA year corrected 2017→2015 and HDE date set to 2010-01-25 (openFDA;
+      2026-09-23: PMA year corrected 2017→2015 and HDE date set to 2010-01-25 in the cited source (openFDA;
       https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140017B.pdf p.1). 2026-10-03 audit: Graph context and primary evidence links aligned
       with version records. 2026-10-03 audit: Timeline now uses the earliest primary-verified marketing authorization for the represented
       product lineage; day precision is not inferred from an announcement.
@@ -3900,12 +3892,10 @@
       url: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200032B.pdf
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200032B.pdf
-    notes: >-
-      SSED pp.1–2, Sections I–V. New catalog inclusion, not a new 2026 approval. Figulla Flex II in a
-      mixed-device pediatric cohort is not assumed identical to this US model range. 
+    notes: SSED pp.1–2, Sections I–V. New catalog inclusion, not a new 2026 approval. Figulla Flex II in a mixed-device pediatric cohort is not assumed identical to this US model range.
 - id: dev-laaguarder
   type: therapy
   therapyType: device
@@ -4184,16 +4174,10 @@
       url: https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-its-tmvr-solution/
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-its-tmvr-solution/
-    notes: >-
-      Legacy graph remains draft under the
-      existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data
-      record is reviewed with its stated scope and unknowns. Draft geography-specific manufacturer claim, not
-      an independently verified regulatory decision. Empty materials avoid transferring historical implant
-      composition to the current commercial generations. No FDA marketing authorization inferred from IDE or
-      breakthrough designation.
+    notes: Legacy graph remains draft under the existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data record is reviewed with its stated scope and unknowns. Draft geography-specific manufacturer claim, not an independently verified regulatory decision. Empty materials avoid transferring historical implant composition to the current commercial generations. No FDA marketing authorization inferred from IDE or breakthrough designation.
 
 - id: dev-highlife-clarity
   type: therapy
@@ -4219,17 +4203,10 @@
         https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
-      - >-
-        https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/
-    notes: >-
-      Legacy graph remains draft under the
-      existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data
-      record is reviewed with its stated scope and unknowns. Draft geography-specific manufacturer claim, not
-      an independently verified regulatory decision. Empty materials avoid transferring historical implant
-      composition to the current commercial generations. No FDA marketing authorization inferred from IDE or
-      breakthrough designation.
+      - https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/
+    notes: Legacy graph remains draft under the existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data record is reviewed with its stated scope and unknowns. Draft geography-specific manufacturer claim, not an independently verified regulatory decision. Empty materials avoid transferring historical implant composition to the current commercial generations. No FDA marketing authorization inferred from IDE or breakthrough designation.
 
 - id: dig-ultrasight-guidance
   type: therapy
@@ -4244,19 +4221,13 @@
   description: Diagnostic acquisition adjunct; the AS graph link is research context, not an AS-specific FDA indication.
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223347.pdf
       - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K251416.pdf
-      - >-
-        https://ultrasight.com/ultrasight-raises-24-million-to-scale-its-ai-guided-cardiac-workflow-platform-across-u-s-health-systems/
+      - https://ultrasight.com/ultrasight-raises-24-million-to-scale-its-ai-guided-cardiac-workflow-platform-across-u-s-health-systems/
       - https://jamanetwork.com/journals/jamacardiology/article-abstract/2853493
-    notes: >-
-      WOR-30: FDA K223347 PDF p4
-      indication and p7 hardware row; K251416 PDF p1 decision and p4 indication. JAMA abstract: AS workflow
-      context. This graph approved enum represents authorization, specifically clearance rather than PMA
-      approval. Echosystem is a manufacturer workflow/product-line name, not a software build. New factual
-      records remain draft.
+    notes: "WOR-30: FDA K223347 PDF p4 indication and p7 hardware row; K251416 PDF p1 decision and p4 indication. JAMA abstract: AS workflow context. This graph approved enum represents authorization, specifically clearance rather than PMA approval. Echosystem is a manufacturer workflow/product-line name, not a software build. New factual records remain draft."
   pulse: 5
 
 - id: dig-lubdub-heart-health
@@ -4279,15 +4250,11 @@
       url: https://www.heartfoundation.org.au/catalyst/heart-first-initiative
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://www.lubdub.ai/
       - https://www.heartfoundation.org.au/catalyst/heart-first-initiative
-    notes: >-
-      The cond-hf edge denotes research
-      motivation for earlier cardiac detection in the written Problem/Solution sections, not a treatment or
-      clearance claim. No numerical performance, patent linkage, interview quotation or diagnostic-efficacy
-      assertion extracted. Hardware model identifiers/software version unspecified.
+    notes: The cond-hf edge denotes research motivation for earlier cardiac detection in the written Problem/Solution sections, not a treatment or clearance claim. No numerical performance, patent linkage, interview quotation or diagnostic-efficacy assertion extracted. Hardware model identifiers/software version unspecified.
 
 - id: dev-respiree-rs001
   type: therapy
@@ -4319,18 +4286,11 @@
       clearance, not PMA approval.
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223681.pdf
-      - >-
-        https://www.prnewswire.com/news-releases/digital-therapeutics-startup-respiree-gains-us-fda-clearance-for-its-rs001-cardio-respiratory-wearable-301766399.html
-    notes: >-
-      Legacy graph remains draft under the
-      existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data
-      record is reviewed with its stated scope and unknowns. Permanent implant materials are inapplicable;
-      empty draft materials list. cond-hf edge identifies sponsor-described patient application context from
-      original2023 written disclosure, not a disease-specific FDA indication. FDA label limited to respiration
-      rate: do not borrow pulse rate/SpO2 from Biobeat reference-device column.
+      - https://www.prnewswire.com/news-releases/digital-therapeutics-startup-respiree-gains-us-fda-clearance-for-its-rs001-cardio-respiratory-wearable-301766399.html
+    notes: "Legacy graph remains draft under the existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data record is reviewed with its stated scope and unknowns. Permanent implant materials are inapplicable; empty draft materials list. cond-hf edge identifies sponsor-described patient application context from original2023 written disclosure, not a disease-specific FDA indication. FDA label limited to respiration rate: do not borrow pulse rate/SpO2 from Biobeat reference-device column."
 
 - id: dev-respiree-rs001-d
   type: therapy
@@ -4362,18 +4322,11 @@
       clearance, not PMA approval.
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250934.pdf
-      - >-
-        https://www.prnewswire.com/news-releases/digital-therapeutics-startup-respiree-gains-us-fda-clearance-for-its-rs001-cardio-respiratory-wearable-301766399.html
-    notes: >-
-      Legacy graph remains draft under the
-      existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data
-      record is reviewed with its stated scope and unknowns. Permanent implant materials are inapplicable;
-      empty draft materials list. cond-hf edge identifies sponsor-described patient application context from
-      original2023 written disclosure, not a disease-specific FDA indication. FDA label limited to respiration
-      rate: do not borrow pulse rate/SpO2 from Biobeat reference-device column.
+      - https://www.prnewswire.com/news-releases/digital-therapeutics-startup-respiree-gains-us-fda-clearance-for-its-rs001-cardio-respiratory-wearable-301766399.html
+    notes: "Legacy graph remains draft under the existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data record is reviewed with its stated scope and unknowns. Permanent implant materials are inapplicable; empty draft materials list. cond-hf edge identifies sponsor-described patient application context from original2023 written disclosure, not a disease-specific FDA indication. FDA label limited to respiration rate: do not borrow pulse rate/SpO2 from Biobeat reference-device column."
 
 - id: dev-conkay-annuloplasty
   type: therapy
@@ -4403,21 +4356,12 @@
         https://www.businesswire.com/news/home/20240318732658/en/ConKay-Medical-Systems-Raises-$1.8M-in-Oversubscribed-Seed-Funding-Round
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://www.conkaymedical.com/market
-      - >-
-        https://www.businesswire.com/news/home/20240318732658/en/ConKay-Medical-Systems-Raises-$1.8M-in-Oversubscribed-Seed-Funding-Round
-      - >-
-        https://www.einpresswire.com/article/743915283/conkay-medical-systems-adds-top-cardiologist-to-advisory-board-moves-to-larger-headquarters
-    notes: >-
-      Legacy graph remains draft under the
-      existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data
-      record is reviewed with its stated scope and unknowns. WOR-30: Market final paragraph; original Business
-      Wire release non-quotation development and catheter paragraphs; Sep16 2024 EIN manufacturer release
-      non-quotation device paragraph. Investigational is broad development classification, not evidence that a
-      registered clinical trial is ongoing. No named commercial device or exact build. Materials remain
-      unknown; no source images or unsupported clinical benefit imported.
+      - https://www.businesswire.com/news/home/20240318732658/en/ConKay-Medical-Systems-Raises-$1.8M-in-Oversubscribed-Seed-Funding-Round
+      - https://www.einpresswire.com/article/743915283/conkay-medical-systems-adds-top-cardiologist-to-advisory-board-moves-to-larger-headquarters
+    notes: "Legacy graph remains draft under the existing material-completeness gate; no implant material is inferred. The corresponding Atlas/Data record is reviewed with its stated scope and unknowns. WOR-30: Market final paragraph; original Business Wire release non-quotation development and catheter paragraphs; Sep16 2024 EIN manufacturer release non-quotation device paragraph. Investigational is broad development classification, not evidence that a registered clinical trial is ongoing. No named commercial device or exact build. Materials remain unknown; no source images or unsupported clinical benefit imported."
   pulse: 5
 
 - id: dig-ultrasight-pvadiq
@@ -4435,15 +4379,11 @@
     context, not a disease-specific FDA indication.
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K252235.pdf
       - https://ultrasight.com/ultrasight-in-cardiac-critical-care/
-    notes: >-
-      WOR-30: FDA PDF p1 decision, p4
-      indication; Feb25 manufacturer announcement. Graph approved enum denotes clearance. Separate from
-      UltraSight acquisition guidance/AS research; numbered software build unverified. Clinical context is
-      adult PVAD support; no device-treatment efficacy inferred.
+    notes: "WOR-30: FDA PDF p1 decision, p4 indication; Feb25 manufacturer announcement. Graph approved enum denotes clearance. Separate from UltraSight acquisition guidance/AS research; numbered software build unverified. Clinical context is adult PVAD support; no device-treatment efficacy inferred."
   pulse: 5
 
 # --- Source-located procedure taxonomy, October 15 local Atlas prototype ---
@@ -4462,13 +4402,10 @@
   pulse: 5
   curation:
     status: curated
-    lastUpdated: '2026-10-15'
+    lastUpdated: "2026-10-15"
     sources:
       - https://www.accessdata.fda.gov/cdrh_docs/pdf22/P220003B.pdf
-    notes: >-
-      Procedure taxonomy addition; source locator: pp.1–3, II Indications for Use, V Device Description, VI
-      Alternative Practices and Procedures. No blanket
-      device authorization inferred.
+    notes: "Procedure taxonomy addition; source locator: pp.1–3, II Indications for Use, V Device Description, VI Alternative Practices and Procedures. No blanket device authorization inferred."
 - id: proc-tricuspid-teer
   type: therapy
   therapyType: procedure
@@ -4484,12 +4421,10 @@
   pulse: 5
   curation:
     status: curated
-    lastUpdated: '2026-10-15'
+    lastUpdated: "2026-10-15"
     sources:
       - https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf
-    notes: >-
-      Procedure taxonomy addition; source locator: pp.1–2, II Indications for Use and V Device Description.
-      No blanket device authorization inferred.
+    notes: "Procedure taxonomy addition; source locator: pp.1–2, II Indications for Use and V Device Description. No blanket device authorization inferred."
 - id: proc-tmvr
   type: therapy
   therapyType: procedure
@@ -4506,13 +4441,10 @@
   pulse: 5
   curation:
     status: curated
-    lastUpdated: '2026-10-15'
+    lastUpdated: "2026-10-15"
     sources:
       - https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042B.pdf
-    notes: >-
-      Procedure taxonomy addition; source locator: p.1, II Indications for Use; p.41, Benefit-Risk
-      Determination. No blanket device authorization
-      inferred.
+    notes: "Procedure taxonomy addition; source locator: p.1, II Indications for Use; p.41, Benefit-Risk Determination. No blanket device authorization inferred."
 - id: proc-ttvr
   type: therapy
   therapyType: procedure
@@ -4528,12 +4460,10 @@
   pulse: 5
   curation:
     status: curated
-    lastUpdated: '2026-10-15'
+    lastUpdated: "2026-10-15"
     sources:
       - https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230013B.pdf
-    notes: >-
-      Procedure taxonomy addition; source locator: pp.1–2, II Indications for Use and V Device Description.
-      No blanket device authorization inferred.
+    notes: "Procedure taxonomy addition; source locator: pp.1–2, II Indications for Use and V Device Description. No blanket device authorization inferred."
 - id: proc-laac
   type: therapy
   therapyType: procedure
@@ -4549,12 +4479,10 @@
   pulse: 5
   curation:
     status: curated
-    lastUpdated: '2026-10-15'
+    lastUpdated: "2026-10-15"
     sources:
       - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S035
-    notes: >-
-      Procedure taxonomy addition; source locator: Approval Order Statement. See
-      docs/ATLAS_RELATIONSHIP_RESEARCH_2026-10-15.md. No blanket device authorization inferred.
+    notes: "Procedure taxonomy addition; source locator: Approval Order Statement. No blanket device authorization inferred."
 
 - id: dev-acorai-save-sensor
   type: therapy
@@ -5696,7 +5624,7 @@
       - https://www.angioinsight.com/angioai/
       - https://www.angioinsight.com/angioinsight-announces-first-patient-enrolled-in-smartflow-clinical-study/
       - https://clinicaltrials.gov/study/NCT07676097
-    notes: " AngioAI+ CMD assessment is scoped separately from epicardial FFR. Model/version number not disclosed in reviewed technical page. Registry and sponsor milestone differ in date/status/enrollment; preserve separately. Gaps: cmd-specific-results, exact-software-version, regulatory-decision, origin-institution-primary-document, registry-sponsor-status-conflict."
+    notes: "AngioAI+ CMD assessment is scoped separately from epicardial FFR. Model/version number not disclosed in reviewed technical page. Registry and sponsor milestone differ in date/status/enrollment; preserve separately. Gaps: cmd-specific-results, exact-software-version, regulatory-decision, origin-institution-primary-document, registry-sponsor-status-conflict."
 - id: dev-cardiovalve-tricuspid
   type: therapy
   therapyType: device
@@ -5720,7 +5648,7 @@
       - https://clinicaltrials.gov/study/NCT03958773
       - https://clinicaltrials.gov/study/NCT03813524
       - https://clinicaltrials.gov/study/NCT04100720
-    notes: " Primary proposed Atlas program is tricuspid Cardiovalve. Mitral Cardiovalve evidence is separate and must not supply TR materials/specs. TARGET2.0 is a separate registry identity; no assumption that every historical model is its exact configuration. Gaps: tricuspid-exact-materials, target2-generation-bridge, mitral-tricuspid-distinction, regulator-decision, patent-marking-number."
+    notes: "Primary proposed Atlas program is tricuspid Cardiovalve. Mitral Cardiovalve evidence is separate and must not supply TR materials/specs. TARGET2.0 is a separate registry identity; no assumption that every historical model is its exact configuration. Gaps: tricuspid-exact-materials, target2-generation-bridge, mitral-tricuspid-distinction, regulator-decision, patent-marking-number."
   materials: []
   materialsStatus: not_established
 - id: dev-cardyograft-patch
@@ -5772,7 +5700,7 @@
       - https://www.echopointmedical.com/our-technology/
       - https://www.echopointmedical.com/echopoint-medical-announces-collaboration-with-the-international-heart-spasms-alliance/
       - https://clinicaltrials.gov/study/NCT05346458
-    notes: " Registry NCT05346458 names iKOs microcatheter plus iKOr console; current marketing uses iKOr system. Keep exact historical components separate; iKoDE planning is not documented enrollment. Gaps: permanent-implant-materials-not-applicable, ikode-registry-identity, original-fih-results, exact-us-authorization, institutional-origin-confirmation, grant-award-original."
+    notes: "Registry NCT05346458 names iKOs microcatheter plus iKOr console; current marketing uses iKOr system. Keep exact historical components separate; iKoDE planning is not documented enrollment. Gaps: permanent-implant-materials-not-applicable, ikode-registry-identity, original-fih-results, exact-us-authorization, institutional-origin-confirmation, grant-award-original."
   materials: []
   materialsStatus: not_established
 - id: dev-electradx-nt-probnp
@@ -5876,7 +5804,7 @@
       - https://heartbiotech.co.uk/
       - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10560219/fullTextXML
       - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12518614/fullTextXML
-    notes: " Current Yacoub Heart Valve and historical HCCV research configuration are linked by sponsor page but must not be assumed identical. HCCV 2023 is a surgical25-mm research scaffold in sheep, not established commercial configuration or pediatric growth proof. Gaps: current-yacoub-hccv-version-bridge, first-human-study, human-growth-durability, patent-office-original, grant-funder-original."
+    notes: "Current Yacoub Heart Valve and historical HCCV research configuration are linked by sponsor page but must not be assumed identical. HCCV 2023 is a surgical25-mm research scaffold in sheep, not established commercial configuration or pediatric growth proof. Gaps: current-yacoub-hccv-version-bridge, first-human-study, human-growth-durability, patent-office-original, grant-funder-original, ."
   materials: []
   materialsStatus: not_established
 - id: dev-heartfelt-monitor
@@ -5891,7 +5819,7 @@
   description: >-
     Sponsor describes passive in-home foot-volume monitoring for HF care. Current passive home-monitor program.
     Historical HF-1 accuracy cohort does not establish performance of later HF3 revisions; NCT06222099 US crossover
-    differs from UK HF-TRACK and ME-HF. Not a therapeutic implant. Optical modality; no inference about later hardware revisions.
+    differs from UK HF-TRACK and ME-HF. Not a therapeutic implant.
   curation:
     status: curated
     lastUpdated: "2026-10-24"
@@ -5931,7 +5859,7 @@
       - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K242807
       - https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260780.pdf
       - https://www.accessdata.fda.gov/cdrh_docs/pdf24/K242807.pdf
-    notes: " Original FDA submissions distinguish HeartFocus v1.1.1 (K242807, initial Clarius configuration) from v1.3.0 (K260780, iPhone portrait UI change; Butterfly iQ+/iQ3 and iPadOS implemented through the prior PCCP). Both concern adult cardiac-image acquisition guidance, not automated disease diagnosis. K260780 expressly marks age 22 years and greater and prescription use. Clinical-study registry NCT05874128 and sponsor education/Link material remain generic unless a document establishes an exact-version bridge. Current deployed builds beyond these submissions are not established. Remaining gaps: original-clinical-publication, vcom-exact-day-and-results, patent-product-connection, deployed-build-and-ifu-beyond-reviewed-submissions, heartfocus-link-separate-indication, generic-trial-to-exact-version-bridge."
+    notes: "Original FDA submissions distinguish HeartFocus v1.1.1 (K242807, initial Clarius configuration) from v1.3.0 (K260780, iPhone portrait UI change; Butterfly iQ+/iQ3 and iPadOS implemented through the prior PCCP). Both concern adult cardiac-image acquisition guidance, not automated disease diagnosis. K260780 expressly marks age 22 years and greater and prescription use. Clinical-study registry NCT05874128 and sponsor education/Link material remain generic unless a document establishes an exact-version bridge. Current deployed builds beyond these submissions are not established. Remaining gaps: original-clinical-publication, vcom-exact-day-and-results, patent-product-connection, deployed-build-and-ifu-beyond-reviewed-submissions, heartfocus-link-separate-indication, generic-trial-to-exact-version-bridge."
   regulatoryDetail: >-
     FDA 510(k) cleared acquisition guidance: v1.1.1 K242807 (2025-04-04); v1.3.0 K260780 (2026-06-03). K260780 indicates
     prescription cardiac ultrasound acquisition for adults 22+ by trained medical professionals, ten standard 2D-TTE
@@ -5953,7 +5881,7 @@
     sources:
       - https://medividia.com/
       - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13545116/fullTextXML
-    notes: " Research/services profile, not an established authorized clinical decision product. Evolut-R14-patient research (2025) differs from SAPIEN 3 Ultra5-patient FSI research (2026). No Medividia-manufactured implant or implant materials inferred. Gaps: clinical-product-version, regulatory-authorization, prospective-clinical-validation, patent-product-connection, company-funder-award-record."
+    notes: "Research/services profile, not an established authorized clinical decision product. Evolut-R14-patient research (2025) differs from SAPIEN 3 Ultra5-patient FSI research (2026). No Medividia-manufactured implant or implant materials inferred. Gaps: clinical-product-version, regulatory-authorization, prospective-clinical-validation, patent-product-connection, company-funder-award-record."
 - id: dev-neocor-human-coapt
   type: therapy
   therapyType: device
@@ -5973,7 +5901,7 @@
     sources:
       - https://www.coaptvalve.com/
       - https://www.coaptvalve.com/about
-    notes: " Human developmental program only. Sponsor prototype and canine studies cannot establish human efficacy. Russian NeoCor UniLine/TiAra registry records are different entity/program and excluded. Gaps: human-study-registration, exact-polymer-chemistry, human-design-configuration, patent-marking-number, independent-animal-publication."
+    notes: "Human developmental program only. Sponsor prototype and canine studies cannot establish human efficacy. Russian NeoCor UniLine/TiAra registry records are different entity/program and excluded. Gaps: human-study-registration, exact-polymer-chemistry, human-design-configuration, patent-marking-number, independent-animal-publication."
   materials:
     - name: Nitinol
       role: Self-expanding frame
@@ -6091,7 +6019,7 @@
     The official study record names Pulnovo and PADN for CpcPH associated with left-heart disease, including HF. Primary
     configuration Enhancor Multi-Pole PA Radiofrequency Ablation System in PULSE-LHD CpcPH due to LHD, with broad HF EF
     strata. Group1 PAH commercialization does not authorize Group2 HF use. PADN-HF-PH China NCT05824923 separate from US
-    PULSE-LHD. 
+    PULSE-LHD.
   curation:
     status: curated
     lastUpdated: "2026-10-24"
@@ -6156,7 +6084,7 @@
     lastUpdated: "2026-10-24"
     sources:
       - https://smartvalves.com/
-    notes: " Concept architecture; website labels imagery illustrative and device investigational/unavailable. Compatibility with every approved valve is an intended sponsor scope, not tested matrix. No host-valve authorization transfers to add-on. Gaps: development-stage, trial-registration, exact-implant-materials, valve-compatibility-validation, regulator-decision, explicit-patent-connection."
+    notes: "Concept architecture; website labels imagery illustrative and device investigational/unavailable. Compatibility with every approved valve is an intended sponsor scope, not tested matrix. No host-valve authorization transfers to add-on. Gaps: development-stage, trial-registration, exact-implant-materials, valve-compatibility-validation, regulator-decision, explicit-patent-connection."
   materials: []
   materialsStatus: not_established
 - id: dev-xeltis-xplore2
@@ -6178,6 +6106,6 @@
       - https://clinicaltrials.gov/study/NCT03022708
       - https://clinicaltrials.gov/study/NCT03405636
       - https://clinicaltrials.gov/study/NCT02700100
-    notes: " Pulmonary XPV initial and modified second clinical prototypes are distinct. Do not transfer aXess dialysis graft CE mark to Xplore2. Historical conduit chemistry specified below applies only to 2021 studied prototypes. Sponsor Xplore2 wording does not bridge every manufacturing iteration. Gaps: current-xplore2-prototype-bridge, pulmonary-authorization, patent-product-connection, current-generation-materials, newsroom-access-limits."
+    notes: "Pulmonary XPV initial and modified second clinical prototypes are distinct. Do not transfer aXess dialysis graft CE mark to Xplore2. Historical conduit chemistry specified below applies only to 2021 studied prototypes. Sponsor Xplore2 wording does not bridge every manufacturing iteration. Gaps: current-xplore2-prototype-bridge, pulmonary-authorization, patent-product-connection, current-generation-materials, newsroom-access-limits."
   materials: []
   materialsStatus: not_established
