@@ -2309,6 +2309,12 @@
     - https://clinicaltrials.gov/study/NCT04662034
     - https://onlinelibrary.wiley.com/doi/10.1002/ejhf.3763
   pulse: 6
+  enrollmentCounts:
+    - count: 70
+      basis: actual
+      asOf: "2026-02-06"
+      source: https://clinicaltrials.gov/study/NCT04662034
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
   curation:
     status: curated
     lastUpdated: '2026-10-12'
@@ -2343,6 +2349,12 @@
   references:
     - https://clinicaltrials.gov/study/NCT06920030
   pulse: 6
+  enrollmentCounts:
+    - count: 22
+      basis: estimated
+      asOf: "2026-08-11"
+      source: https://clinicaltrials.gov/study/NCT06920030
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
   curation:
     status: curated
     lastUpdated: '2026-10-12'
@@ -2363,7 +2375,7 @@
   name: C-MIC IV
   nctId: NCT07795359
   phase: Device study (not applicable phase)
-  status: unknown
+  status: not-yet-recruiting
   conditions:
     - cond-hfref
   therapies:
@@ -2379,6 +2391,12 @@
   references:
     - https://clinicaltrials.gov/study/NCT07795359
   pulse: 6
+  enrollmentCounts:
+    - count: 60
+      basis: estimated
+      asOf: "2026-08-31"
+      source: https://clinicaltrials.gov/study/NCT07795359
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
   curation:
     status: curated
     lastUpdated: '2026-10-12'
@@ -2411,6 +2429,12 @@
     - https://clinicaltrials.gov/study/NCT05189860
     - https://academic.oup.com/eurjhf/advance-article/doi/10.1093/ejhf/xuag274/8771333
   pulse: 6
+  enrollmentCounts:
+    - count: 31
+      basis: estimated
+      asOf: "2025-06-08"
+      source: https://clinicaltrials.gov/study/NCT05189860
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
   curation:
     status: curated
     lastUpdated: '2026-10-12'
@@ -3067,7 +3091,8 @@
     - count: 20
       basis: estimated
       asOf: "2026-08-03"
-      source: https://clinicaltrials.gov/api/v2/studies/NCT06907017
+      source: https://clinicaltrials.gov/study/NCT06907017
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
   primaryEndpoint: Survival post-implant and freedom from adverse events associated with the CorWave LVAD, each at 30 days.
   resultStatus: ongoing
   curation:
@@ -3313,7 +3338,8 @@
     - count: 10
       basis: actual
       asOf: "2023-03-01"
-      source: https://clinicaltrials.gov/api/v2/studies/NCT05403372
+      source: https://clinicaltrials.gov/study/NCT05403372
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
   primaryEndpoint: Proportion of subjects with a major adverse cardiac or cerebrovascular event or systemic embolization at 1 month.
   outcomeSummary: No results are posted in the registry record.
   resultStatus: ongoing
@@ -3344,7 +3370,8 @@
     - count: 20
       basis: estimated
       asOf: "2026-05-27"
-      source: https://clinicaltrials.gov/api/v2/studies/NCT06859970
+      source: https://clinicaltrials.gov/study/NCT06859970
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
   primaryEndpoint: >-
     Proportion of subjects with a major adverse cardiac or cerebrovascular event or systemic embolization through one
     month after the procedure.
@@ -3796,7 +3823,8 @@
     - count: 15
       basis: estimated
       asOf: "2026-07-23"
-      source: https://clinicaltrials.gov/api/v2/studies/NCT06506942
+      scope: Registry enrollment estimate/actual; not treated/analyzed
+      source: https://clinicaltrials.gov/study/NCT06506942
   primaryEndpoint: >-
     Composite rate of major adverse events (mortality, myocardial infarction, stroke and major complications) at 30
     days; device success defined as a reduction in tricuspid regurgitation immediately after the intervention.
@@ -3826,7 +3854,8 @@
     - count: 80
       basis: estimated
       asOf: "2026-04-15"
-      source: https://clinicaltrials.gov/api/v2/studies/NCT06581471
+      scope: Registry enrollment estimate/actual; not treated/analyzed
+      source: https://clinicaltrials.gov/study/NCT06581471
   primaryEndpoint: >-
     Composite rate of major adverse events (mortality, myocardial infarction, stroke and major complications) at 30
     days; device success defined as a reduction in tricuspid regurgitation immediately after the intervention.
@@ -3860,7 +3889,8 @@
     - count: 20
       basis: estimated
       asOf: "2025-03-26"
-      source: https://clinicaltrials.gov/api/v2/studies/NCT05126030
+      scope: Registry enrollment estimate/actual; not treated/analyzed
+      source: https://clinicaltrials.gov/study/NCT05126030
   primaryEndpoint: >-
     Hierarchical composite of all-cause mortality, heart failure rehospitalization, re-intervention for failed tricuspid
     intervention and KCCQ worsening at 30 days (as registered).
@@ -3887,7 +3917,7 @@
   name: TRICURE US IDE Pivotal Study
   nctId: NCT07528326
   phase: "Pivotal randomized study with a single-arm registry (registry phase: not applicable)"
-  status: not-yet-recruiting
+  status: recruiting
   primaryAnalysis:
     status: not-reported
   conditions:
@@ -3898,8 +3928,9 @@
   enrollmentCounts:
     - count: 831
       basis: estimated
-      asOf: "2026-05-05"
-      source: https://clinicaltrials.gov/api/v2/studies/NCT07528326
+      asOf: "2026-10-22"
+      scope: Registry enrollment estimate/actual; not treated/analyzed
+      source: https://clinicaltrials.gov/study/NCT07528326
   primaryEndpoint: >-
     Rate of major adverse events at 30 days; composite of all-cause mortality, heart failure hospitalization and
     non-elective tricuspid valve reintervention at 1 year.
@@ -4035,3 +4066,695 @@
     notes: >-
       Registry status Recruiting as last verified 2024-10; the estimated completion dates have passed and current status
       is not verified. No reviewed document links the 2025 first-in-human paper to this registration.
+
+- id: trial-nct07676097
+  type: trial
+  name: Simultaneous Measurement of EpicArdial and Microvascular ResisTance Via Angiographic FLOW Study
+  nctId: NCT07676097
+  conditions:
+    - cond-cmd
+  therapies:
+    - dig-angioinsight-angioai-cmd
+  status: not-yet-recruiting
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT07676097
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT07676097
+    notes: >-
+      Registry status only; results analysis not inferred. Exact registry NCT07676097; status as last updated
+      2026-07-13. Historical design does not establish current availability or enrollment since that update.
+  enrollmentCounts:
+    - count: 620
+      basis: estimated
+      asOf: "2026-07-13"
+      scope: Registry enrollment estimate/actual; not treated/analyzed
+      source: https://clinicaltrials.gov/study/NCT07676097
+- id: trial-nct05486832
+  type: trial
+  name: "TARGET Study: Safety and Performance of the Cardiovalve TR Replacement System"
+  nctId: NCT05486832
+  conditions:
+    - cond-mr
+    - cond-tr
+  therapies:
+    - dev-cardiovalve-tricuspid
+  status: active
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT05486832
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT05486832
+    notes: >-
+      Registry status only; results analysis not inferred. Exact registry NCT05486832; status as last updated
+      2026-05-11. Historical design does not establish current availability or enrollment since that update.
+  enrollmentCounts:
+    - count: 157
+      basis: actual
+      asOf: "2026-05-11"
+      scope: Registry enrollment estimate/actual; not treated/analyzed
+      source: https://clinicaltrials.gov/study/NCT05486832
+- id: trial-nct07334691
+  type: trial
+  name: "TARGET 2.0 Study: Safety and Performance of the Cardiovalve TR Replacement System"
+  nctId: NCT07334691
+  conditions:
+    - cond-mr
+    - cond-tr
+  therapies:
+    - dev-cardiovalve-tricuspid
+  status: recruiting
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT07334691
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT07334691
+    notes: >-
+      Registry status only; results analysis not inferred. Exact registry NCT07334691; status as last updated
+      2026-05-11. Historical design does not establish current availability or enrollment since that update.
+  enrollmentCounts:
+    - count: 150
+      basis: estimated
+      asOf: "2026-05-11"
+      scope: Registry enrollment estimate/actual; not treated/analyzed
+      source: https://clinicaltrials.gov/study/NCT07334691
+- id: trial-nct05632432
+  type: trial
+  name: AAMS2
+  nctId: NCT05632432
+  status: recruiting
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-cardyograft-patch
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 50
+      basis: estimated
+      asOf: "2024-04-19"
+      source: https://clinicaltrials.gov/study/NCT05632432
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: Change in myocardial scar tissue by LGE-CMRI and change in plasma NT-proBNP, each from baseline to six months.
+  references:
+    - https://clinicaltrials.gov/study/NCT05632432
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT05632432
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. Academic AAMS2: sponsor link is company-attributed; not a CardYograft-sponsored trial."
+  phase: Interventional randomized
+- id: trial-nct05346458
+  type: trial
+  name: Measuring Blood Flow in Heart Vessels With a New Fibre Optic Sensor
+  nctId: NCT05346458
+  conditions:
+    - cond-cmd
+  therapies:
+    - dev-echopoint-ikor
+  status: completed
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT05346458
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT05346458
+    notes: >-
+      Registry status only; results analysis not inferred. Exact registry NCT05346458; status as last updated
+      2024-04-30. Historical design does not establish current availability or enrollment since that update.
+  enrollmentCounts:
+    - count: 10
+      basis: actual
+      asOf: "2024-04-30"
+      scope: Registry enrollment estimate/actual; not treated/analyzed
+      source: https://clinicaltrials.gov/study/NCT05346458
+- id: trial-nct03526471
+  type: trial
+  name: Omega™ Left Atrial Appendage (LAA) Occluder in Patients With Non-Valvular Atrial Fibrillation
+  nctId: NCT03526471
+  conditions:
+    - cond-af
+  therapies:
+    - dev-omega-laa
+  status: completed
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT03526471
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT03526471
+    notes: >-
+      Registry status only; results analysis not inferred. Exact registry NCT03526471; status as last updated
+      2020-08-27. Historical design does not establish current availability or enrollment since that update.
+  enrollmentCounts:
+    - count: 20
+      basis: actual
+      asOf: "2020-08-27"
+      scope: Registry enrollment estimate/actual; not treated/analyzed
+      source: https://clinicaltrials.gov/study/NCT03526471
+- id: trial-nct04829929
+  type: trial
+  name: >-
+    Evaluation of Safety and Performance of the Omega™ LAA (Left Atrial Appendage) Occluder and Omega™ Delivery System
+    in Patients With Non-Valvular Atrial Fibrillation and High Bleeding Risk
+  nctId: NCT04829929
+  conditions:
+    - cond-af
+  therapies:
+    - dev-omega-laa
+  status: active
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT04829929
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT04829929
+    notes: >-
+      Registry status only; results analysis not inferred. Exact registry NCT04829929; status as last updated
+      2025-12-03. Historical design does not establish current availability or enrollment since that update.
+  enrollmentCounts:
+    - count: 200
+      basis: actual
+      asOf: "2025-12-03"
+      scope: Registry enrollment estimate/actual; not treated/analyzed
+      source: https://clinicaltrials.gov/study/NCT04829929
+- id: trial-nct06334822
+  type: trial
+  name: HF-TRACK
+  nctId: NCT06334822
+  status: active
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-heartfelt-monitor
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 186
+      basis: actual
+      asOf: "2026-03-16"
+      source: https://clinicaltrials.gov/study/NCT06334822
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    All-cause mortality, device-related complications and heart-failure events through study completion, averaging six
+    months.
+  references:
+    - https://clinicaltrials.gov/study/NCT06334822
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT06334822
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Interventional randomized
+- id: trial-nct06222099
+  type: trial
+  name: HEARTFELT
+  nctId: NCT06222099
+  status: recruiting
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-heartfelt-monitor
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 1500
+      basis: estimated
+      asOf: "2026-10-19"
+      source: https://clinicaltrials.gov/study/NCT06222099
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Heart-failure hospitalization or worsening HF without hospitalization, and doubling of serum creatinine to at least
+    2.0 mg/dL; 12 months plus up to 48 months of long-term follow-up.
+  references:
+    - https://clinicaltrials.gov/study/NCT06222099
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT06222099
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Interventional randomized
+- id: trial-nct07067658
+  type: trial
+  name: ME-HF
+  nctId: NCT07067658
+  status: recruiting
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-heartfelt-monitor
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 300
+      basis: estimated
+      asOf: "2026-07-28"
+      source: https://clinicaltrials.gov/study/NCT07067658
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Unplanned hospital attendance or death due to HF, cardiovascular, respiratory or renal causes over 12 months,
+    including recurrent events; EQ-5D-5L at baseline and 3, 6, 9 and 12 months, with primary analysis at 12 months.
+  references:
+    - https://clinicaltrials.gov/study/NCT07067658
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT07067658
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Interventional randomized
+- id: trial-nct04072744
+  type: trial
+  name: FOOT
+  nctId: NCT04072744
+  status: completed
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-heartfelt-monitor
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 31
+      basis: actual
+      asOf: "2023-02-02"
+      source: https://clinicaltrials.gov/study/NCT04072744
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Change in foot volume from baseline to the last measurement before HF-related hospital admission, through study
+    completion averaging six months.
+  references:
+    - https://clinicaltrials.gov/study/NCT04072744
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT04072744
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Observational
+- id: trial-nct05874128
+  type: trial
+  name: PROSPECTIVE EVALUATION OF HEARTFOCUS
+  nctId: NCT05874128
+  conditions:
+    - cond-hf
+  therapies:
+    - dig-heartfocus
+  status: completed
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT05874128
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT05874128
+    notes: >-
+      Registry status only; results analysis not inferred. Exact registry NCT05874128; status as last updated
+      2026-01-29. Historical design does not establish current availability or enrollment since that update.
+  enrollmentCounts:
+    - count: 240
+      basis: actual
+      asOf: "2026-01-29"
+      scope: Registry enrollment estimate/actual; not treated/analyzed
+      source: https://clinicaltrials.gov/study/NCT05874128
+- id: trial-nct07870395
+  type: trial
+  name: VOICE-HF
+  nctId: NCT07870395
+  status: not-yet-recruiting
+  conditions:
+    - cond-hf
+  therapies:
+    - dig-noah-labs-vox
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 450
+      basis: estimated
+      asOf: "2026-10-14"
+      source: https://clinicaltrials.gov/study/NCT07870395
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Vox algorithm sensitivity and unexplained alert rate for detecting HF decompensation events, from enrollment through
+    six months of follow-up.
+  references:
+    - https://clinicaltrials.gov/study/NCT07870395
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT07870395
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Observational
+- id: trial-nct07443670
+  type: trial
+  name: VAPP-HF
+  nctId: NCT07443670
+  status: recruiting
+  conditions:
+    - cond-hf
+  therapies:
+    - dig-noah-labs-vox
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 60
+      basis: estimated
+      asOf: "2026-03-02"
+      source: https://clinicaltrials.gov/study/NCT07443670
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Sensitivity and specificity of AI voice analysis for pulmonary-arterial pressure changes at prespecified thresholds
+    over 12 weeks.
+  references:
+    - https://clinicaltrials.gov/study/NCT07443670
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT07443670
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Observational
+- id: trial-nct07443969
+  type: trial
+  name: PRE-DETECT-HF
+  nctId: NCT07443969
+  status: active
+  conditions:
+    - cond-hf
+  therapies:
+    - dig-noah-labs-vox
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 123
+      basis: estimated
+      asOf: "2026-03-02"
+      source: https://clinicaltrials.gov/study/NCT07443969
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Sensitivity of voice analysis for HF deterioration, defined as HF hospitalization or intensified HF therapy for
+    worsening HF, over six months.
+  references:
+    - https://clinicaltrials.gov/study/NCT07443969
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT07443969
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Observational
+- id: trial-nct06566911
+  type: trial
+  name: VAMP-HF
+  nctId: NCT06566911
+  status: unknown
+  conditions:
+    - cond-hf
+  therapies:
+    - dig-noah-labs-vox
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 70
+      basis: estimated
+      asOf: "2024-08-22"
+      source: https://clinicaltrials.gov/study/NCT06566911
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Change in vocal characteristics from admission to discharge and correlation with HF severity markers during the
+    hospital stay.
+  references:
+    - https://clinicaltrials.gov/study/NCT06566911
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT06566911
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Observational
+- id: trial-nct04573699
+  type: trial
+  name: Cardiac Neuromodulation for Heart Failure
+  nctId: NCT04573699
+  status: completed
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-avim-hf-research
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 34
+      basis: actual
+      asOf: "2026-06-18"
+      source: https://clinicaltrials.gov/study/NCT04573699
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: Immediate change in arterial elastance derived from ongoing left-ventricular pressure-volume changes.
+  references:
+    - https://clinicaltrials.gov/study/NCT04573699
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT04573699
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Observational
+- id: trial-nct07214376
+  type: trial
+  name: The PULSE-LHD
+  nctId: NCT07214376
+  status: recruiting
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-enhancor-padn
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 750
+      basis: estimated
+      asOf: "2026-10-20"
+      source: https://clinicaltrials.gov/study/NCT07214376
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Efficacy: cardiovascular death, heart transplantation or durable LVAD implantation, HF hospitalization, or
+    outpatient worsening HF; time-to-first-event analysis at 24 months, evaluated when the last enrollee reaches
+    12-month follow-up. Safety: device- or procedure-related major adverse events versus a performance goal at 30 days.
+  references:
+    - https://clinicaltrials.gov/study/NCT07214376
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT07214376
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Interventional randomized
+- id: trial-nct05824923
+  type: trial
+  name: PADN-HF-PH
+  nctId: NCT05824923
+  status: active
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-enhancor-padn
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 264
+      basis: estimated
+      asOf: "2026-07-21"
+      source: https://clinicaltrials.gov/study/NCT05824923
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Clinical worsening: IV medication for worsening HF, HF rehospitalization, 6-minute walk distance reduction greater
+    than 10% or 30 m from baseline, referral for heart/heart-lung transplantation, or all-cause death; from
+    randomization until the last enrollee has at least six months of follow-up.
+  references:
+    - https://clinicaltrials.gov/study/NCT05824923
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT05824923
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Interventional randomized
+- id: trial-nct05996562
+  type: trial
+  name: >-
+    Study for Evaluation of Safety and Efficacy of PADN to Treat Combined Post- and Pre- Capillary Pulmonary
+    Hypertension Associated With Chronic Heart Failure（PADN-CpcPH-PILOT）
+  nctId: NCT05996562
+  status: completed
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-enhancor-padn
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 30
+      basis: actual
+      asOf: "2026-01-16"
+      source: https://clinicaltrials.gov/study/NCT05996562
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: Change in 6-minute walk distance from baseline to six months.
+  references:
+    - https://clinicaltrials.gov/study/NCT05996562
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT05996562
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Interventional
+- id: trial-nct06898515
+  type: trial
+  name: FASTR-II
+  nctId: NCT06898515
+  status: recruiting
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-reprieve-system
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 400
+      basis: estimated
+      asOf: "2026-10-13"
+      source: https://clinicaltrials.gov/study/NCT06898515
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Hierarchical composite: cardiovascular mortality through 30 days after randomization, HF rehospitalization through
+    30 days after discharge, and net sodium loss per 24 hours through 72 hours after randomization. Safety:
+    device/procedure-related KDIGO stage 2 or greater AKI or catheter-associated UTI, from randomized therapy initiation
+    through 72 hours after its completion.
+  references:
+    - https://clinicaltrials.gov/study/NCT06898515
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT06898515
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Interventional randomized
+- id: trial-nct05174312
+  type: trial
+  name: FASTR
+  nctId: NCT05174312
+  status: completed
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-reprieve-system
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 100
+      basis: actual
+      asOf: "2026-06-23"
+      source: https://clinicaltrials.gov/study/NCT05174312
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Total urine sodium output 24 hours after treatment initiation; clinically significant AKI, severe electrolyte
+    abnormality, symptomatic hypotension or hypertensive emergency at end of treatment (0–72 hours).
+  references:
+    - https://clinicaltrials.gov/study/NCT05174312
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT05174312
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Interventional randomized
+- id: trial-nct05015764
+  type: trial
+  name: >-
+    Reprieve Cardiovascular System for the Treatment of Subjects With Acute Decompensated Heart Failure Mechanistic
+    Study
+  nctId: NCT05015764
+  status: completed
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-reprieve-system
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 31
+      basis: actual
+      asOf: "2025-04-04"
+      source: https://clinicaltrials.gov/study/NCT05015764
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Average fractional sodium excretion during therapy to end of treatment, averaging 24 hours; device/procedure-related
+    adverse and serious adverse events through study completion, averaging 90 days.
+  references:
+    - https://clinicaltrials.gov/study/NCT05015764
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT05015764
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Interventional randomized
+- id: trial-nct06362668
+  type: trial
+  name: FASTR-EU
+  nctId: NCT06362668
+  status: completed
+  conditions:
+    - cond-hf
+  therapies:
+    - dev-reprieve-system
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 12
+      basis: actual
+      asOf: "2025-03-10"
+      source: https://clinicaltrials.gov/study/NCT06362668
+      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+  primaryEndpoint: >-
+    Total sodium loss at end of randomized therapy, normalized to 24 hours (treatment averaging 72 hours); clinically
+    significant AKI, severe electrolyte abnormality, symptomatic hypotension or hypertensive emergency through study
+    completion, averaging 90 days.
+  references:
+    - https://clinicaltrials.gov/study/NCT06362668
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT06362668
+    notes: "Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision. "
+  phase: Interventional randomized
+- id: trial-nct03022708
+  type: trial
+  name: Xeltis Bioabsorbable Pulmonary Valved Conduit Pivotal Study
+  nctId: NCT03022708
+  conditions:
+    - cond-pv
+  therapies:
+    - dev-xeltis-xplore2
+  status: active
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/study/NCT03022708
+  curation:
+    status: curated
+    lastUpdated: "2026-10-24"
+    sources:
+      - https://clinicaltrials.gov/study/NCT03022708
+    notes: >-
+      Registry status only; results analysis not inferred. Exact registry NCT03022708; status as last updated
+      2026-08-06. Historical design does not establish current availability or enrollment since that update.
+  enrollmentCounts:
+    - count: 6
+      basis: actual
+      asOf: "2026-08-06"
+      scope: Registry enrollment estimate/actual; not treated/analyzed
+      source: https://clinicaltrials.gov/study/NCT03022708
