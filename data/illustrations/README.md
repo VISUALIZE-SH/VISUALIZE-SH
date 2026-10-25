@@ -1,9 +1,8 @@
 # Data thumbnail artwork
 
-`device-schematics.json` maps exact product-version IDs to the original orthographic
-SVG illustrations approved by the owner on October 20, 2026. The owner also
-approved the Data UI integration, Atlas recovery fix, and PR/review/merge workflow
-on October 20, 2026. Integration is tracked in WOR-12 and WOR-40.
+`device-schematics.json` maps exact product-version IDs to original orthographic
+SVG illustrations. The public registry carries source metadata, asset digests
+and substantive depiction limits. Review records are maintained privately.
 
 The 95 SVGs in `public/evidence/schematics/` are byte-for-byte copies from the final
 local schematic catalog. Their hashes, source metadata and illustration limits
@@ -23,10 +22,9 @@ Regenerate the small UI index after changing the registry with
 `node --import tsx scripts/sync-device-thumbnails.ts`. Tests enforce that the index
 matches the approved register; source metadata is not bundled into the UI.
 
-## Therapy snapshots approved October 23, 2026
+## Therapy snapshots
 
-`therapy-schematics.json` retains the 18 final refinement-v2 illustrations approved
-by the owner, including Data integration and public PR/review/merge. These map to
+`therapy-schematics.json` retains 18 original therapy illustrations. These map to
 graph therapy IDs, which currently have no exact-version records. They appear in
 the Data Specs **Therapy snapshots** table, with the pictured configuration,
 limitations and source links. They never substitute for exact-version artwork or

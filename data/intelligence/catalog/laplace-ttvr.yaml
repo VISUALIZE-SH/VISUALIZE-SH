@@ -1,6 +1,6 @@
 # WOR-28: Draft company/product identity and manufacturer-described access routes.
 # Exact generation, implant composition and trial-specific build mapping remain uncurated.
-# See docs/RESEARCH_LAPLACE_2026-10-09.md for provenance, gaps and review boundaries.
+# Documentary sources, locators and evidence boundaries accompany each record.
 observedAt: '2026-10-09'
 
 sources:
@@ -94,6 +94,7 @@ specs:
     source: src-laplace-technology
     values:
       access-route:
+        reviewStatus: reviewed
         value: Transjugular or transfemoral (manufacturer overview)
         loc: Laplace TTVR System, SIMPLE paragraph; undated page retrieved 2026-10-09.
         context: Manufacturer description of the investigational platform; not an approved-label statement.

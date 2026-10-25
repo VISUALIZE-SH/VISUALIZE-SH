@@ -27,6 +27,7 @@ export function addGraphBibliography(data: IntelligenceData, graph: GraphData): 
   if (!Array.isArray(graph.elements?.nodes)) return data
   const sources = [...data.sources]
   const bibliography = [...(data.bibliography ?? [])]
+  const authoredBibliographyIds = new Set(bibliography.map(entry => entry.id))
   const sourceIndex = new Map(sources.map(source => [canonicalReferenceUrl(source.url), source]))
   const entities = graph.elements.nodes.map(node => node.data.entity)
   const trials = entities.filter((entity): entity is Trial => entity.type === 'trial')
@@ -60,6 +61,10 @@ export function addGraphBibliography(data: IntelligenceData, graph: GraphData): 
     for (const link of items ?? []) add(link.url, `${name}: ${link.label}`, locator, refs, retrievedAt, /product|manufacturer|official/i.test(link.label) ? 'manufacturer' : undefined, publisher)
   }
   for (const therapy of entities.filter((entity): entity is Therapy => entity.type === 'therapy')) {
+    // Explicit authored snapshots retain their source scope and review state.
+    // Graph changes require a reviewed export to update an existing snapshot;
+    // only therapies without one receive a new draft bibliography.
+    if (authoredBibliographyIds.has(`bib-graph-${therapy.id}`)) continue
     const refs: SourceRef[] = []
     const maker = entities.find(entity => entity.id === therapy.company)?.name
     const retrievedAt = therapy.curation.lastUpdated

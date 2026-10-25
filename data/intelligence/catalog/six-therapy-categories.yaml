@@ -438,60 +438,64 @@ specs:
     category: pvl-closure
     source: src-pvl-pld-outcomes
     values:
-      manufacturer: { value: Occlutech, loc: "Article title/affiliation and device description"}
-      device-design: { value: Dedicated rectangular-waist occluder, loc: "Methods; device use and implantation"}
-      pivotal-trials: { value: International prospective multicenter PLD study (144 patients), loc: "Abstract; enrollment and study design"}
+      manufacturer: { reviewStatus: reviewed, value: Occlutech, loc: "Article title/affiliation and device description"}
+      device-design: { reviewStatus: reviewed, value: Dedicated rectangular-waist occluder, loc: "Methods; device use and implantation"}
+      pivotal-trials: { reviewStatus: reviewed, value: International prospective multicenter PLD study (144 patients), loc: "Abstract; enrollment and study design"}
   - version: ver-neochord-ds1000
     category: mitral-chordal-reconstruction
     source: src-rechord-registry
     values:
-      manufacturer: { value: NeoChord, loc: "Sponsor field"}
-      device-design: { value: Transapical beating-heart artificial chordae replacement, loc: "Brief Summary"}
-      pivotal-trials: { value: "ReChord (NCT02803957; active, not recruiting)", loc: "Study Status and Study Plan"}
+      manufacturer: { reviewStatus: reviewed, value: NeoChord, loc: "Sponsor field"}
+      device-design: { reviewStatus: reviewed, value: Transapical beating-heart artificial chordae replacement, loc: "Brief Summary"}
+      pivotal-trials: { reviewStatus: reviewed, value: "ReChord (NCT02803957; active, not recruiting)", loc: "Study Status and Study Plan"}
   - version: ver-mi-chord
     category: mitral-chordal-reconstruction
     source: src-michord-fda
     values:
-      manufacturer: { value: LSI Solutions, loc: "Applicant field, page 1"}
-      device-design: { value: ePTFE artificial chordae secured by titanium fastener, loc: "Table 1, page 5"}
-      implant-material: { value: "Permanent ePTFE suture and titanium (ASTM F67 grade 1 or 2) fastener", loc: "Table 1, PDF p.5; implanted components, permanent patient contact"}
-      pivotal-trials: { value: OUS prospective feasibility cohort (12 patients), loc: "Clinical Information, pp. 11-14"}
+      manufacturer: { reviewStatus: reviewed, value: LSI Solutions, loc: "Applicant field, page 1"}
+      device-design: { reviewStatus: reviewed, value: ePTFE artificial chordae secured by titanium fastener, loc: "Table 1, page 5"}
+      implant-material: { reviewStatus: reviewed, value: "Permanent ePTFE suture and titanium (ASTM F67 grade 1 or 2) fastener", loc: "Table 1, PDF p.5; implanted components, permanent patient contact"}
+      pivotal-trials: { reviewStatus: reviewed, value: OUS prospective feasibility cohort (12 patients), loc: "Clinical Information, pp. 11-14"}
   - version: ver-tricvalve
     category: heterotopic-caval-valves
     source: src-tricvalve-tricus-euro
     values:
-      manufacturer: { value: P+F Products + Features, loc: "Study device/manufacturer, Methods"}
-      device-design: { value: Two self-expanding bioprostheses for SVC and IVC, loc: "Device description, Methods"}
-      implant-material: { value: "Nitinol frames; bovine-pericardial leaflets; polyester PVL skirt (SVC) and bovine pericardium + PET skirt (IVC)", source: src-tricvalve-techspec, loc: "PDF p.2, Stent Frame Material, Biological Material, Number of Leaflets and PVL Protection"}
-      pivotal-trials: { value: TRICUS EURO (n=35; 6-month outcomes), loc: "Methods and Results"}
+      manufacturer: { reviewStatus: reviewed, value: P+F Products + Features, loc: "Study device/manufacturer, Methods"}
+      device-design: { reviewStatus: reviewed, value: Two self-expanding bioprostheses for SVC and IVC, loc: "Device description, Methods"}
+      implant-material: { reviewStatus: reviewed, value: "Nitinol frames; bovine-pericardial leaflets; polyester PVL skirt (SVC) and bovine pericardium + PET skirt (IVC)", source: src-tricvalve-techspec, loc: "PDF p.2, Stent Frame Material, Biological Material, Number of Leaflets and PVL Protection"}
+      pivotal-trials: { reviewStatus: reviewed, value: TRICUS EURO (n=35; 6-month outcomes), loc: "Methods and Results"}
   - version: ver-sapien-xt-caval
     category: heterotopic-caval-valves
     source: src-tricaval-registry
     values:
-      manufacturer: { value: Edwards Lifesciences, loc: "Collaborators field"}
-      device-design: { value: Edwards SAPIEN XT valve implanted in the inferior vena cava, loc: "Brief Summary and intervention"}
-      pivotal-trials: { value: TRICAVAL (NCT02387697; terminated for safety concerns), loc: "Study Status and reason"}
+      manufacturer: { reviewStatus: reviewed, value: Edwards Lifesciences, loc: "Collaborators field"}
+      device-design: { reviewStatus: reviewed, value: Edwards SAPIEN XT valve implanted in the inferior vena cava, loc: "Brief Summary and intervention"}
+      pivotal-trials: { reviewStatus: reviewed, value: TRICAVAL (NCT02387697; terminated for safety concerns), loc: "Study Status and reason"}
   - version: ver-revivent-tc
     category: lv-restoration
     source: src-revivent-alive
     values:
-      manufacturer: { value: BioVentrix, loc: "Affiliations and Conflict of Interest"}
-      device-design: { value: Hybrid scar exclusion using paired micro-anchors, loc: "Methods; procedure description"}
-      pivotal-trials: { value: ALIVE (n=126; primary endpoint not met), loc: "Abstract; Methods and Results"}
+      manufacturer: { reviewStatus: reviewed, value: BioVentrix, loc: "Affiliations and Conflict of Interest"}
+      device-design: { reviewStatus: reviewed, value: Hybrid scar exclusion using paired micro-anchors, loc: "Methods; procedure description"}
+      pivotal-trials: { reviewStatus: reviewed, value: ALIVE (n=126; primary endpoint not met), loc: "Abstract; Methods and Results"}
   - version: ver-corcap
     category: epicardial-restraint
     source: src-corcap-five-year
     values:
       manufacturer:
+        reviewStatus: reviewed
         value: Acorn Cardiovascular
         loc: Abstract; device description
       device-design:
+        reviewStatus: reviewed
         value: Polyester mesh fitted around the ventricles for diastolic support
         loc: Introduction — CorCap device description
       pivotal-trials:
+        reviewStatus: reviewed
         value: Acorn randomized trial; 5-year no-MVR cohort n=107
         loc: Methods and Results
       implant-material:
+        reviewStatus: reviewed
         value: Polyester ventricular restraint mesh
         loc: Introduction — CorCap device description
 
@@ -501,50 +505,50 @@ specs:
     category: epicardial-restraint
     source: src-peerless-hf
     values:
-      manufacturer: { value: Paracor Medical, loc: "Article title/affiliation"}
-      device-design: { value: Elastic ventricular restraint, loc: "Study description"}
-      pivotal-trials: { value: PEERLESS-HF (enrollment stopped for futility), loc: "Abstract"}
+      manufacturer: { reviewStatus: reviewed, value: Paracor Medical, loc: "Article title/affiliation"}
+      device-design: { reviewStatus: reviewed, value: Elastic ventricular restraint, loc: "Study description"}
+      pivotal-trials: { reviewStatus: reviewed, value: PEERLESS-HF (enrollment stopped for futility), loc: "Abstract"}
   - version: ver-avp3-pvl
     category: pvl-closure
     source: src-avp3-kiss
     values:
-      manufacturer: { value: Abbott, loc: "Product used in registry; Table 3" }
-      device-design: { value: Low-profile oval vascular plug, loc: "Methods; Table 3" }
-      pivotal-trials: { value: KISS multicenter registry (AVP III used in 140/171 transcatheter procedures), loc: "Table 3; observational registry, not device-specific trial" }
+      manufacturer: { reviewStatus: reviewed, value: Abbott, loc: "Product used in registry; Table 3" }
+      device-design: { reviewStatus: reviewed, value: Low-profile oval vascular plug, loc: "Methods; Table 3" }
+      pivotal-trials: { reviewStatus: reviewed, value: KISS multicenter registry (AVP III used in 140/171 transcatheter procedures), loc: "Table 3; observational registry, not device-specific trial" }
   - version: ver-tricento
     category: heterotopic-caval-valves
     source: src-tricento-registry
     values:
-      manufacturer: { value: New Valve Technology (NVT), loc: "Article; device description" }
-      device-design: { value: "Custom-made bicaval stent graft; porcine-pericardial leaflets/cover, PTFE suture, nitinol support stent, gold markers", source: src-tricento-patient-leaflet, loc: "PDF p.1, Materials and quantitative composition" }
-      pivotal-trials: { value: Multicenter TRICENTO registry (21 patients), loc: "Abstract; study design" }
+      manufacturer: { reviewStatus: reviewed, value: New Valve Technology (NVT), loc: "Article; device description" }
+      device-design: { reviewStatus: reviewed, value: "Custom-made bicaval stent graft; porcine-pericardial leaflets/cover, PTFE suture, nitinol support stent, gold markers", source: src-tricento-patient-leaflet, loc: "PDF p.1, Materials and quantitative composition" }
+      pivotal-trials: { reviewStatus: reviewed, value: Multicenter TRICENTO registry (21 patients), loc: "Abstract; study design" }
   - version: ver-accucinch
     category: lv-restoration
     source: src-accucinch-corcinch
     values:
-      manufacturer: { value: Ancora Heart, loc: "Sponsor field" }
-      device-design: { value: Transcatheter LV cinching/restoration system, loc: "Intervention and study title" }
-      pivotal-trials: { value: CORCINCH-HF (NCT04331769; estimated n=400), loc: "Study Plan; enrollment" }
+      manufacturer: { reviewStatus: reviewed, value: Ancora Heart, loc: "Sponsor field" }
+      device-design: { reviewStatus: reviewed, value: Transcatheter LV cinching/restoration system, loc: "Intervention and study title" }
+      pivotal-trials: { reviewStatus: reviewed, value: CORCINCH-HF (NCT04331769; estimated n=400), loc: "Study Plan; enrollment" }
   - version: ver-heartmate-ii
     category: durable-mcs
     source: src-heartmate-ii-pma
     values:
-      manufacturer: { value: Abbott Medical (Thoratec applicant at original authorization), loc: "Applicant and approval order" }
-      device-design: { value: Implantable continuous-flow axial pump, loc: "FDA SSED; device description" }
-      indication-scope: { value: US bridge-to-transplant authorization; later supplements expanded indications, loc: "Approval order and PMA supplement history" }
-      pivotal-trials: { value: MOMENTUM 3 comparator, loc: "HM3 SSED; randomized comparator group" }
+      manufacturer: { reviewStatus: reviewed, value: Abbott Medical (Thoratec applicant at original authorization), loc: "Applicant and approval order" }
+      device-design: { reviewStatus: reviewed, value: Implantable continuous-flow axial pump, loc: "FDA SSED; device description" }
+      indication-scope: { reviewStatus: reviewed, value: US bridge-to-transplant authorization; later supplements expanded indications, loc: "Approval order and PMA supplement history" }
+      pivotal-trials: { reviewStatus: reviewed, value: MOMENTUM 3 comparator, loc: "HM3 SSED; randomized comparator group" }
   - version: ver-heartmate-3
     category: durable-mcs
     source: src-heartmate3-ssed
     values:
-      manufacturer: { value: Abbott/Thoratec, loc: "Cover and applicant section"}
-      device-design: { value: Fully magnetically levitated centrifugal-flow LVAS, loc: "Device description, pp. 2-3"}
-      implant-material: { value: "Ti6Al4V titanium alloy; polyester, gelatin-sealed outflow graft", loc: "Nonclinical Studies—Biocompatibility, page 4"}
-      pivotal-trials: { value: MOMENTUM 3, loc: "SSED Clinical Studies; pivotal trial identifier"}
+      manufacturer: { reviewStatus: reviewed, value: Abbott/Thoratec, loc: "Cover and applicant section"}
+      device-design: { reviewStatus: reviewed, value: Fully magnetically levitated centrifugal-flow LVAS, loc: "Device description, pp. 2-3"}
+      implant-material: { reviewStatus: reviewed, value: "Ti6Al4V titanium alloy; polyester, gelatin-sealed outflow graft", loc: "Nonclinical Studies—Biocompatibility, page 4"}
+      pivotal-trials: { reviewStatus: reviewed, value: MOMENTUM 3, loc: "SSED Clinical Studies; pivotal trial identifier"}
   - version: ver-heartmate-3-kit-106524us
     category: durable-mcs
     source: src-heartmate3-recall-kit
     values:
-      manufacturer: { value: Abbott, loc: "Recall firm and product fields"}
-      exact-version: { value: "Affected 11V backup batteries in HeartMate 3 kit 106524US", loc: "Product brand/name and Model/Catalog Number fields; only specified affected serial numbers"}
-      development-status: { value: "Open Class II recall (Z-2518-2026), scoped to specified batteries/serials", loc: "Recall Status; date initiated and posted"}
+      manufacturer: { reviewStatus: reviewed, value: Abbott, loc: "Recall firm and product fields"}
+      exact-version: { reviewStatus: reviewed, value: "Affected 11V backup batteries in HeartMate 3 kit 106524US", loc: "Product brand/name and Model/Catalog Number fields; only specified affected serial numbers"}
+      development-status: { reviewStatus: reviewed, value: "Open Class II recall (Z-2518-2026), scoped to specified batteries/serials", loc: "Recall Status; date initiated and posted"}

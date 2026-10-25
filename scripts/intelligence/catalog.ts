@@ -1,7 +1,7 @@
 /**
  * Merge the comparison taxonomy and compact catalog fragments into the authored
  * intelligence document before schema validation. Fragments keep per-class
- * curation reviewable; `specs` expand into ordinary draft claims so the public
+ * curation reviewable; `specs` expand into ordinary claims so the public
  * payload and validator see one uniform claim model.
  */
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
@@ -14,7 +14,7 @@ interface Category { id: string; versionIds: string[] }
 
 const MERGED = ['sources', 'bibliography', 'families', 'versions', 'claims', 'decisions', 'indications', 'media'] as const
 const FRAGMENT_KEYS = new Set<string>([...MERGED, 'observedAt', 'specs'])
-const VALUE_KEYS = new Set(['value', 'unit', 'loc', 'source', 'availability', 'basis', 'context', 'limitation', 'observedAt'])
+const VALUE_KEYS = new Set(['value', 'unit', 'loc', 'source', 'availability', 'basis', 'context', 'limitation', 'observedAt', 'reviewStatus'])
 
 export interface IntelligenceSourcePaths { input: string; taxonomy?: string; catalogDir?: string; citationMetadata?: string }
 
@@ -71,6 +71,8 @@ function expandSpecs(fragment: Doc, name: string, attributes: Map<string, Attrib
       if (!attribute) throw new Error(`${label}.values.${attributeId} is not a taxonomy standard attribute`)
       const entry = typeof raw === 'string' || typeof raw === 'number' ? { value: raw } : record(raw, `${label}.values.${attributeId}`)
       for (const key of Object.keys(entry)) if (!VALUE_KEYS.has(key)) throw new Error(`${label}.values.${attributeId} has unknown key ${key}`)
+      const reviewStatus = entry.reviewStatus === undefined ? 'draft' : entry.reviewStatus
+      if (reviewStatus !== 'draft' && reviewStatus !== 'reviewed') throw new Error(`${label}.values.${attributeId}.reviewStatus must be draft or reviewed`)
       const sourceId = text(entry.source ?? spec.source, `${label}.values.${attributeId}.source`)
       const availability = entry.availability ?? (entry.value === undefined ? undefined : 'reported')
       if (!availability) throw new Error(`${label}.values.${attributeId} needs a value or an availability status`)
@@ -89,7 +91,7 @@ function expandSpecs(fragment: Doc, name: string, attributes: Map<string, Attrib
         ...(entry.limitation === undefined ? {} : { limitation: entry.limitation }),
         observedAt: entry.observedAt ?? spec.observedAt ?? defaultObservedAt,
         sourceRefs: [{ sourceId, locator: text(entry.loc, `${label}.values.${attributeId}.loc`) }],
-        reviewStatus: 'draft',
+        reviewStatus,
       }
     })
   })

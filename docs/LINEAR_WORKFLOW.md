@@ -19,7 +19,12 @@ Team: `Workspace-visualize-sh` (`WOR`), UUID
 
 Use the existing plural `visualize-sh-editorials` name returned by Linear. An
 article may be linked from a digest without moving its research/writing issue to
-newsletter. Research and discovery issues belong in `P-WOR-4`; the public data,
+newsletter. Discovery screens, source/lead searches, review outcomes and approval receipts
+are committed in the private engine, including related screenshots. Public
+issues and PRs describe only software or approved public record changes. Ask the
+owner before committing when this boundary is unclear.
+
+Research and discovery issues belong in `P-WOR-4`; the public data,
 schema, or UI change that publishes their result belongs in webapp, and the
 article issue links to either. Research does not run in this repository; it runs
 in the private engine (see `AGENTS.md`). Split cross-project work by deliverable
@@ -119,27 +124,6 @@ are authoritative; do not maintain completion state in this table.
 | visualize-sh-editorials | [WOR-23](https://linear.app/workspace-visualize-sh/issue/WOR-23/define-the-specialty-article-publication-and-newsletter-link-handoff) | Define the specialty article publication and newsletter-link handoff |
 
 Shared Linear reference: [VISUALIZE-SH work organization and source policy](https://linear.app/workspace-visualize-sh/document/visualize-sh-work-organization-and-source-policy-5232e09368ad).
-
-## Reconciled local work
-
-The owner initially requested local-only previews and later approved including
-all pending changes in a pushed, reviewed and merged PR on October 14, 2026.
-The following local proposals have been reconciled after searching Linear:
-
-- [WOR-32: approved SIEGEL research and pending workspace integration](https://linear.app/workspace-visualize-sh/issue/WOR-32/integrate-approved-siegel-research-and-pending-workspace-changes)
-  owns the SIEGEL/MiRus evidence additions, the shared News Insights/Editorial
-  keyword UI, and repository integration/review in `P-WOR-1`. Source pointers,
-  acceptance criteria and held evidence gaps are in the issue and
-  `docs/SIEGEL_RHENIUM_REVIEW_2026-10-14.md`.
-- [WOR-33: manual News Insights template and draft workflow](https://linear.app/workspace-visualize-sh/issue/WOR-33/add-manual-news-insights-template-frozen-run-windows-and-local-draft)
-  owns the template, frozen run windows, local renderer/preview workflow and
-  inaugural September 30–October 13 draft in `P-WOR-2`. This is distinct from
-  WOR-14's scheduled aggregated digest rehearsal. The article remains draft;
-  committing its source is not public article publication or delivery approval.
-
-Linear is authoritative for lifecycle and validation. No new schedule or send is
-created by these outcomes. The older local-only handoffs are retained in Git
-history; they are not pending/unfiled issues now.
 
 ## Unfiled work when Linear is unavailable
 

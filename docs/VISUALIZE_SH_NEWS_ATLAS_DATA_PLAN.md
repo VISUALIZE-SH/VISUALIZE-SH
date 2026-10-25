@@ -3,7 +3,7 @@
 > Design history: use `docs/LOCAL_IMPLEMENTATION_STATUS.md` for the current
 > implementation record and `docs/HANDOFF.md` for contributor instructions.
 
-Planning proposal · Research conducted September 20–21, 2026 · No application or database migration performed
+Product design proposal · Current implementation is documented separately
 
 ## 1. The product to build
 
@@ -22,52 +22,11 @@ These are four tracking bundles, not four scalar fields. The user-facing profile
 
 **Working audience:** device R&D, design, simulation, and clinical-development teams, with visual explanations accessible to structural-heart clinicians. **Working pilot:** TAVR. These are provisional choices pending reader/focus feedback, not confirmed preferences. Keep the existing wider structural-heart coverage, but apply deep curation first to a bounded collection.
 
-## 2. What the publication review changes about the strategy
+## 2. Evidence acceptance
 
-This was a targeted competitive and scientific literature review, not a systematic review or an exhaustive audit of paid databases. It combined first-party publication/product pages, original studies, FDA records and documentation, ClinicalTrials.gov documentation, the earlier ChatGPT discussion, and the current repository. The existing Chrome/ProQuest session provided full-text access to a detailed crimping-model paper and cross-journal discovery. Access and completeness varied; a citation or abstract was not treated as a full-text review.
-
-### Competitive landscape
-
-Current curation follows [SOURCE_CURATION_POLICY.md](SOURCE_CURATION_POLICY.md):
-public or legitimately licensed documentary sources only; podcasts, interviews,
-and transcripts cannot support factual claims. The publication inventory below
-describes discovery channels, not permission to use every content format.
-
-| Publication or product | Relevant observed offering | Consequence for VISUALIZE-SH |
-|---|---|---|
-| [The Valve Wire](https://www.thevalvewire.com/) and its [trial dashboard](https://www.thevalvewire.com/trials) | Structural-heart digest, topic coverage, trial status/enrollment/completion tracking, and materials/regulatory stories. | Closest direct overlap. News aggregation, materials summaries, and a registry tracker are insufficient differentiation by themselves. |
-| [TCTMD](https://www.tctmd.com/) | Clinical/conference reporting, expert interpretation, interviews, features, and educational content. | Use for discovery and clinical context; build persistent technical records that readers can revisit after a news cycle. |
-| [PCRonline / EuroIntervention](https://www.pcronline.com/PCR-Publications) | Trials resources, textbooks, peer-reviewed research, cases, procedural education, and congress material. | Detailed procedural and device discussion already exists. Normalize it into versioned comparisons rather than claiming engineering is entirely uncovered. |
-| [Structural Heart](https://www.structuralheartjournal.org/) | Dedicated heart-team research spanning structural conditions, interventions, and device innovation. | A primary evidence source and potential venue for deeper reference material. |
-| [Heart Valve Society literature updates](https://heartvalvesociety.org/VHD/) and [JHVS](https://journals.sagepub.com/home/hvs) | Valve-focused literature discovery and basic, translational, and clinical research. | A curated reading list is useful but readily replicated. Add extraction, interpretation, and maintained evidence histories. |
-| [Cardiovascular Business](https://cardiovascularbusiness.com/topics/clinical/structural-heart-disease) | Structural-heart clinical, operational, economic, and industry reporting. | Include adoption context where it changes technology use; keep the core technical promise clear. |
-| [Cardiovascular News](https://cardiovascularnews.com/news/) | Trials, approvals, funding, congresses, first-patient announcements, and print/newsletter coverage. | Convert announcements into changes to a known product or trial record. |
-| [MedTech Dive](https://www.medtechdive.com/topic/cardiac/) | Cardiac business, FDA, recall, earnings, and strategic reporting. | Strong discovery source; broad business coverage is not the initial competitive advantage. |
-| [MassDevice](https://www.massdevice.com/massdevices-transcatheter-heart-valves-special-report/) | News plus a transcatheter-valve special report covering technology, companies, markets, and competitive dynamics. | Even comparative market reports are occupied territory. The opportunity is technical specificity, evidence traceability, and maintenance over time. |
-| [Fierce Medtech](https://www.fiercebiotech.com/medtech) | Device development, studies, regulation, safety, and transactions. | Use event reporting to initiate primary-source verification. |
-| [MedTech Strategist](https://www.mystrategist.com/) | Subscription business, startup, regulatory, reimbursement, and policy intelligence. | Avoid a promise of comprehensive commercial intelligence without a corresponding research operation. |
-| [DeviceTalks](https://www.devicetalks.com/about/) | Product-development, manufacturing, leadership, and business interviews, podcasts, and events. | Discovery leads only. Podcasts/interviews and their transcripts are excluded as factual evidence; independently establish a fact in an eligible document before curation. |
-| [STAT medical-device coverage](https://www.statnews.com/topic/medical-devices/) | Investigative and explanatory reporting on devices, regulation, safety, payment, and adoption. | Evidence quality and commercial context matter alongside engineering. |
-| [GlobalData pipeline database](https://www.globaldata.com/product/medical-devices-pipeline-products-database/) | Broad commercial pipeline intelligence and structured delivery. | Compete on a narrow technical domain and transparent sources; do not promise comparable global completeness initially. |
-
-The defensible conclusion is a **plausible opportunity in the maintained connection between engineering, exact product generations, indications, and clinical evidence**. This scan cannot establish that no competitor offers these features privately. The Valve Wire's [materials article](https://thevalvewire.com/article/2026-09-08/innovation-and-challenges-in-materials-for-transcatheter-aortic-valves) makes the overlap concrete. Its retrieved dashboard snapshots had different dates and counts, so its current inventory size is deliberately not used as a positioning claim.
-
-### Scientific literature: findings that should determine the schema
-
-| Source and evidence type | What is useful for the product | What to curate or avoid inferring |
-|---|---|---|
-| [Bressloff, 2022, full-device crimping simulation](https://doi.org/10.1007/s13239-022-00614-6), full text examined through ProQuest | The modeled frame, skirt, leaflet properties, contacts, and crimp procedure all affect interpretation. The author states that mesh verification was not undertaken and discusses generalizability limits. | Record model provenance, material law, loading, mesh verification, validation, and limitations. This was a research design mixing features; its dimensions must not become specifications of a marketed valve. |
-| [Alavi et al., 2014, leaflet microscopy after crimping](https://pubmed.ncbi.nlm.nih.gov/24444873/), original experimental study | Crimping produced persistent structural tissue damage under the studied conditions. | Capture tissue, crimp diameter, duration, method, and measured damage. A tissue-damage finding does not establish a clinical durability penalty for every commercial valve. |
-| [Kiefer et al., 2011, crimping and subcutaneous rat study](https://pubmed.ncbi.nlm.nih.gov/21718842/), original preclinical study | Structural fragmentation differed, but calcification did not differ between the studied groups. | Separate structural damage, calcification, and clinical valve failure as distinct outcomes; preserve experimental context and apparently conflicting evidence. |
-| [PRECISE-TAVI, 2023](https://pubmed.ncbi.nlm.nih.gov/37668110/), clinical simulation study | Simulations changed plans in some challenging anatomies and related modeled contact pressure to pacemaker implantation. | Distinguish prediction, changed operator behavior, and proven patient benefit. Record anatomy selection and observational limitations. |
-| [Carr et al., 2026, nitinol uncertainty quantification](https://pubmed.ncbi.nlm.nih.gov/42082881/), original computational/experimental research | Choice of input distribution affected output uncertainty and extreme-event interpretation. Harshad Paranjape is among the authors. | A concrete foundation for a simulation-credibility editorial series. This research used an IVC-filter context/surrogate, not a marketed heart valve; transfer the reasoning, not its numerical findings. |
-| [TRILUMINATE Pivotal, 2023](https://pubmed.ncbi.nlm.nih.gov/36876753/), randomized trial | The initial 350-patient report used a hierarchical composite; its one-year result must be interpreted with its component outcomes. | Do not translate a favorable win ratio into a mortality benefit. Store endpoint hierarchy and component results. |
-| [TRILUMINATE full randomized cohort](https://pubmed.ncbi.nlm.nih.gov/39471883/) and [two-year report](https://pubmed.ncbi.nlm.nih.gov/40159089/) | Later publications report 572 randomized participants and different follow-up. The two-year report found fewer recurrent HF hospitalizations; mortality was similar. | Separate cohort and follow-up versions. Preserve the original one-year finding and add the later finding instead of overwriting one trial summary. |
-| [PREDICT-LAA final report, 2023](https://doi.org/10.1016/j.jcin.2023.01.008), randomized simulation-planning study | Procedural benefits and a statistically inconclusive primary composite coexist. | Track primary and secondary endpoints, randomized and evaluable populations, exact device, and software intervention separately. |
-| [VITAL-HF](https://pubmed.ncbi.nlm.nih.gov/41939727/), randomized digital-care study | The intervention combines digital infrastructure, health coaches, and clinician-directed treatment plans. | Attribute outcomes to the evaluated care package; do not assign the effect exclusively to an algorithm. |
-| [Hello Heart cohort study](https://pubmed.ncbi.nlm.nih.gov/34652447/), observational study | Connected BP monitoring and digital self-management can be studied with longitudinal engagement and BP measurements. | Preserve selection, missingness, follow-up denominators, and engagement confounding. This is adjacent HF/cardiovascular evidence, not direct proof in a valve population. |
-
-Use the published endpoint definitions in [VARC-3](https://pubmed.ncbi.nlm.nih.gov/33871579/), [MVARC](https://doi.org/10.1016/j.jacc.2015.05.049), and [TVARC](https://pubmed.ncbi.nlm.nih.gov/37804294/) as controlled references. Save the edition/definition actually used by each study; do not retrospectively relabel every older result as using the newest standard. For AI interventions, [SPIRIT-AI](https://www.bmj.com/content/370/bmj.m3210) provides useful protocol-reporting fields, including the algorithm and its interaction with users.
+Public records follow [SOURCE_CURATION_POLICY.md](SOURCE_CURATION_POLICY.md).
+Discovery, source searches and their assessments are maintained in the private
+research engine; this document describes the public product contract.
 
 ## 3. The three application modes
 
@@ -243,53 +202,11 @@ Display a timeline with lanes for **Product**, **Label/indication**, **Evidence*
 
 Do not infer causation between neighboring events. An indication expansion followed by a redesign does not prove that redesign enabled the expansion. A manufacturing supplement does not imply a quality defect. Keep an explicit `change_rationale` assertion with its own source when one is disclosed.
 
-## 8. Access FDA data as linked documents plus structured discovery
+## 8. Documentary provenance
 
-There is no single FDA device/therapy database with all the desired detail. Use APIs and bulk files to find records, then inspect the decision-specific documents.
-
-| Source | Best information | Retrieval and joining strategy |
-|---|---|---|
-| [PMA database](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm) | Original approval and supplements, dates, change reasons, orders, SSEDs, labels and post-approval links when posted. | Seed known base PMA numbers and enumerate supplements. Key decisions by base PMA plus supplement; map models explicitly. |
-| [openFDA PMA](https://open.fda.gov/apis/device/pma/) | Searchable decision metadata and approval-order statement text. | Use `pma_number`, `supplement_number`, `supplement_reason`, `decision_date`, `ao_statement`, applicant and product code. Documentation states monthly updates; do not present it as real time. |
-| [510(k)](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm) / [openFDA 510(k)](https://open.fda.gov/apis/device/510k/) | Intended use, technological characteristics, predicates and performance summaries where public. | K number. Distinguish publicly posted summary from a submitter's statement; missing summary detail is not evidence that testing was absent. |
-| [De Novo](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm) and [HDE](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfhde/hde.cfm) | Classification/decision summaries and special controls; HDE probable-benefit evidence. | DEN/H identifiers and supplements. Preserve pathway-specific terminology and evidence standards. |
-| [AccessGUDID](https://accessgudid.nlm.nih.gov/) and [history API](https://accessgudid.nlm.nih.gov/resources/developers/v3/device_history_api) | Labeler, brand, model/catalog and device identifiers. | DI/record key plus verified model mapping. UDI is not a universal PMA crosswalk and does not encode a complete clinical lineage. |
-| [Classification database](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm) / TPLC | Product-code discovery and lifecycle context. | Product codes are categories, not unique product identities. Use them to find candidates, then resolve names and models. |
-| [Post-Approval Studies](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm) / [522 surveillance](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pss.cfm) | Required postmarket study objectives, status, schedules and available results. | Distinct PAS and 522 study records; link back to the relevant order/application and product. |
-| [Advisory committee archive](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfAdvisory/search.cfm) | Briefing material, scientific disagreements, votes and transcripts. | Meeting/document identity plus product/application. Distinguish panel discussion from the eventual FDA decision. |
-| [MAUDE](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfMAUDE/search.CFM), [openFDA device events](https://open.fda.gov/apis/device/event/) | Report narratives, reported failures, device problems and follow-up reports. | Report IDs, model/lot if available, revision and duplicate handling. Use for hypothesis generation with source context. |
-| [FDA recalls](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfres/res.cfm), [device recall API](https://open.fda.gov/apis/device/recall/), [enforcement API](https://open.fda.gov/apis/device/enforcement/) | Corrections/removals, affected products and reported reasons. | Preserve distinct event/recall identifiers, dates and lot scope. Reconcile overlapping records before counting. |
-| [Drugs@FDA](https://www.accessdata.fda.gov/scripts/cder/daf/) / [DailyMed services](https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm) | HCM, ATTR-CM and HF drug approval histories, reviews, labels and label versions. | NDA/BLA/application and supplement; DailyMed SPL SETID plus version/history. Drug labeling and a device IFU are separate objects. |
-
-Read an **approval order** for the decision and its conditions, the **SSED** for public scientific support, and the contemporary **IFU/label** for actual instructions and restrictions. Relevant SSED sections can expose device descriptions, materials, biocompatibility, bench/fatigue/hydrodynamic tests, animal work, clinical eligibility and outcomes. Availability and depth vary, especially for supplements. Never assume an original PMA PDF remains the current IFU.
-
-FDA's APIs are discovery aids, not a replacement for the document archive. Both recall/enforcement API pages state limitations on public alerts and recall-lifecycle tracking, including stale status behavior. Use official current recall/safety communications for any published safety update; do not generate automated clinical alerts from an API record alone. MAUDE lacks reliable exposure denominators and cannot establish comparative complication rates or causation. [FDA MAUDE limitations](https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufacturers-importers-and-device-user-facilities/about-manufacturer-and-user-facility-device-experience-maude-database).
-
-### Acquisition workflow
-
-1. **Seed identity:** existing therapy ID, manufacturer aliases, known PMA/K/DEN/H/NDA/BLA identifiers, product code, and known model/catalog numbers.
-2. **Discover:** query structured sources and official database pages; ingest new IDs and changed metadata into a candidate queue. Use [openFDA bulk downloads](https://open.fda.gov/data/downloads/) for reproducible baselines when appropriate.
-3. **Retrieve documents:** follow actual posted links to order, SSED, label, supplement, protocol and study result. Preserve source URL, publication/decision date, retrieval time, document version, hash and acquisition status. Do not manufacture PDF URLs from filename patterns.
-4. **Extract:** capture proposed facts with document page/section/table locations and exact product/cohort scope. Keep original units and source wording alongside normalized values.
-5. **Diff:** detect meaningful indication, component, enrollment, endpoint and outcome changes. Store byte changes separately from semantic changes; a changed footer is not an event.
-6. **Resolve:** match by identifiers and corroborated models. Brand substrings/product codes alone should only propose matches. Preserve ambiguous mappings for review.
-7. **Review and publish:** approve individual assertions and link them into Atlas/Data; generate News from accepted changes. Retain superseded values and corrections.
-
-Illustrative endpoint shapes for later implementation, **not an implemented or verified end-to-end collector**:
-
-```text
-GET https://api.fda.gov/device/pma.json?search=pma_number:"P140031"&limit=100
-GET https://clinicaltrials.gov/api/v2/studies/NCT03904147
-GET https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/{SETID}/history.json
-```
-
-The collector will need URL encoding, pagination, backoff, source-update timestamps, completeness checks and reconciliation against official detail pages. ClinicalTrials.gov's API is a current-record interface; establish a dated local snapshot history rather than assuming it exposes every historical revision as a simple version API. Use available registry history for targeted backfill. [API documentation](https://clinicaltrials.gov/data-api/api), [PMA field documentation](https://open.fda.gov/apis/device/pma/searchable-fields/).
-
-### When public documents are insufficient
-
-Use a focused FOIA/request queue: application/supplement, decision date, exact requested record, why it is useful, request date, status, response/redaction and disclosure outcome. A 510(k) statement has a specific submitter-request mechanism described by FDA; it is different from simply waiting for a summary PDF. [FDA 510(k) content guidance](https://www.fda.gov/medical-devices/premarket-notification-510k/content-510k).
-
-Do not promise complete design history files, manufacturing recipes, raw patient data, confidential IDE dossiers, unsuccessful prototypes or trade secrets. These may be unavailable or redacted. A targeted request for a releasable review memorandum or test summary is more concrete than requesting “everything about this device.” [CDRH FOI reference sheet](https://www.fda.gov/medical-devices/overview-device-regulation/cdrh-freedom-information-foi-reference-sheet).
+Public records retain decision-specific source identity, exact locators, version
+and jurisdiction scope, and evidence limits. Retrieval, discovery and source
+selection belong to the private engine.
 
 ## 9. Proposed data structure
 
@@ -383,18 +300,6 @@ A repeatable flagship item contains:
 4. **Implication and next test:** what design or clinical-development teams should investigate next.
 
 Good recurring series are **Device Anatomy**, **Generation Change**, **Endpoint in Context**, **Simulation Evidence**, and **Regulatory Design Watch**. Each article should improve an existing profile or comparison. A useful dataset can accumulate through small reviewed additions; every issue need not invent an entirely new dataset.
-
-### What gets attention first
-
-Use a small editorial rubric: relevance to the target reader, magnitude of the change, primary-source availability, connection to a design/evidence question, and ability to update an existing record. Deprioritize routine promotional announcements with no new evidence or technical content. A priority score is editorial triage, never a clinical quality score.
-
-### Efficient work allocation
-
-Use deterministic tools for identifiers, document hashes, JSON diffs, units and validation. Use Luna for bounded metadata extraction and classification drafts, Terra for structured normalization and consistency checks, and Sol for source-backed research synthesis and draft comparisons. Escalate ambiguous product mapping, causal interpretation, study limitations and final editorial judgment to expert review. This task used the requested model mix for routine research.
-
-Avoid sending entire dossiers on every run. Maintain a source manifest; reprocess only new or changed sections; cache validated extractions; use a stable field schema; and pass a small relevant evidence packet to the model. ProQuest access is valuable for targeted full-text review, but an interactive institutional session should not become the unattended ingestion dependency. Prefer public APIs/open-access texts and use licensed content only within permitted access and reuse terms.
-
-Suggested monitoring cadence for later implementation: daily or weekly candidate detection for active trials and official communications; weekly editorial review; monthly reconciliation of slower bulk/API feeds; quarterly completeness audits of the pilot. Display source-update time and review time separately. These are proposed operations, not schedules created by this planning task.
 
 ## 12. Phased implementation and acceptance criteria
 

@@ -1,9 +1,4 @@
 {
-  "ownerApproval": {
-    "date": "2026-10-20",
-    "scope": "Existing illustration artwork and Data thumbnail UI integration approved by owner; no publication or deployment requested",
-    "source": "Owner message in this chat"
-  },
   "illustrations": [
     {
       "versionId": "ver-accucinch",
@@ -12,7 +7,6 @@
       "scope": "schematic",
       "alt": "AccuCinch Ventricular Restoration System — orthographic schematic/concept illustration; not to scale",
       "sha256": "a73063aa4d4b86375f389827bf38379c141de023f1c2ff465025c28a41e7cf84",
-      "sourceRegister": "waves/15/research.json",
       "limitations": [
         "Nine locations illustrate repeated components; actual number and arrangement are patient-specific, not a fixed device count.",
         "Only one detailed visual geometry source family. Source images privately viewed; no trace or source pixels in output.",
@@ -25,19 +19,19 @@
           "title": "AccuCinch Ventricular Restoration System — Instructions for Use, Doc 5089 Rev. G",
           "url": "https://www.ancoraheart.com/wp-content/uploads/2023/08/5089_G-IFU-ACCUCINCH-VENTRICULAR-RESTORATION-SYSTEM-_compressed.pdf",
           "locator": "Printed pp.3–4: Implant Description, Table 1, Figure 1",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "Reverse Remodeling Induced by Transcatheter Left Ventricular Restoration System Is Sustained Through 2 Years of Follow-Up",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12391679/",
           "locator": "Device and procedure description; article Figure 1 is an outcome plot",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "AccuCinch — Physicians",
           "url": "https://www.ancoraheart.com/physicians/",
           "locator": "Technology/device description",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -48,14 +42,12 @@
       "scope": "schematic",
       "alt": "Boston Scientific ACURATE neo2 — orthographic schematic/concept illustration; not to scale",
       "sha256": "de4e42b1b3f7bcaeb6eb71ed2d8a9a77f5c7c07a8e35f49fc5477f9e949e1509",
-      "sourceRegister": "waves/08/research.json",
       "limitations": [
         "Three arches already existed in the original model; oblique overlap with solid tissue outlines concealed the third. A rigid axial display rotation and dashed tissue details separate them without altering any curve or adding loops.",
         "Oblique two-front/one-rear wording applies only to the fixed oblique camera. Side projection can show unequal apex spacing because of threefold geometry; it is not a manufacturing asymmetry claim.",
         "Precise arch-root and commissural attachment joint map remains unresolved. Small normalized frame-to-tissue spacing is illustrative; no unsupported skeleton, posts, hubs or joint connectors added.",
         "Frame cell counts, crown fingers, arch shape/proportions, suture map, angular registration and M25 dimensional geometry remain representative. Two actual documentary figure perspectives support gross neo2 architecture only, not CAD fidelity.",
         "All nine internal commissural, scalloped and free-edge tissue paths are dashed explanatory outlines, not metal struts. Transparent tissue and partly open leaflet pose do not describe physical opacity or a validated functional state.",
-        "Additional implant IFU51081293-01A URL returned404; original bench article PDF request returned HTML rather than PDF. Neither figure was inspected or used to establish geometry. Public manufacturer launch still redirect blocked by automatic approval review; uninspected lead excluded.",
         "Human factual, clinical, engineering and rights signoff pending. Original source artwork neither copied/traced nor distributed. Display clocking is not clinical alignment guidance."
       ],
       "sources": [
@@ -63,13 +55,13 @@
           "title": "ACURATE neo2 Product Overview SH-621403-AE",
           "url": "https://www.bostonscientific.com/content/dam/bostonscientific/StructuralHeart/acurate-neo2-eu/2023-updates/SH-621403-AE-ACURATE_neo2_product_overview_spec_sheet.pdf",
           "locator": "Physical p1 product photo, feature labels, M25mm row; p2 copyright",
-          "access": "public; existing original PDF p1 photograph freshly visually inspected this refinement"
+          "access": "public"
         },
         {
           "title": "The ACURATE neo2 valve system for transcatheter aortic valve implantation:30-day and1-year outcomes",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8639565/",
           "locator": "Methods: Study design and device details; Figure1 right-hand ACURATE neo2 panel and caption",
-          "access": "public; full original HTML text and freshly retrieved actual Figure1 JPEG visually inspected privately"
+          "access": "public"
         }
       ]
     },
@@ -80,7 +72,6 @@
       "scope": "schematic",
       "alt": "adapTR Leaflet Enhancement System — orthographic schematic/concept illustration; not to scale",
       "sha256": "9dfac91021f224c3736f74bb2756038aac4d3b53d6cf51b994606dbb1f045c08",
-      "sourceRegister": "waves/14/research.json",
       "limitations": [
         "Only one exact-build geometric documentary source; manufacturer webpage independently supports product architecture but not first-human geometry.",
         "Normalized crown height, disc-to-frame ratio, support curvature and barb shape are qualitative; manufacturing topology and cell/support/barb counts are not asserted.",
@@ -92,13 +83,13 @@
           "title": "First-in-Human Use of a Novel Dual-Mechanism Transcatheter Tricuspid Repair Device",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12926008/",
           "locator": "Case Summary, device description; Figure 1 A and B",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "Versa Vascular | adapTR technology",
           "url": "https://versavascular.com/",
           "locator": "Atrial Positioning and Retention; Supports Native Leaflet Function; static illustration Image-2b-copy.svg linked from homepage",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -109,7 +100,6 @@
       "scope": "schematic",
       "alt": "A-FLUX Reducer System — orthographic schematic/concept illustration; not to scale",
       "sha256": "d558503ef4c19aa96183d7dcf7161597da395eafbe40be199b6dcb587db7f018",
-      "sourceRegister": "waves/18/research.json",
       "limitations": [
         "One detailed manufacturer geometric source family. Independent registry entries corroborate named self-expanding dense-cell nitinol architecture but provide no detailed geometry; homepage repeats manufacturer description.",
         "Nominal size, exact hardware revision, end diameter hierarchy and anatomical distal assignment unverified; +Z is documented reference end only.",
@@ -122,25 +112,25 @@
           "title": "A-FLUX Reducer System: How It Works",
           "url": "https://vahaticor.com/device-and-technology/",
           "locator": "The Device: Self-expanding, Repositionable, SwiftCell Technology, Four Sizes; device image https://vahaticor.com/wp-content/uploads/2026/05/VahatiCor-Stent-V2.png",
-          "access": "public; actual documentary text and figure pixels inspected"
+          "access": "public"
         },
         {
           "title": "VahatiCor: Advancing Treatment for Coronary Microvascular Dysfunction",
           "url": "https://vahaticor.com/",
           "locator": "A-FLUX Reducer System feature descriptions and footer",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         },
         {
           "title": "SERRA-I European study NCT06991322",
           "url": "https://clinicaltrials.gov/study/NCT06991322",
           "locator": "protocolSection.identificationModule; armsInterventionsModule.interventions; statusModule",
-          "access": "public; actual registry API contents inspected"
+          "access": "public"
         },
         {
           "title": "SERRA-I US NCT07449325",
           "url": "https://clinicaltrials.gov/study/NCT07449325",
           "locator": "protocolSection.identificationModule; armsInterventionsModule.interventions; statusModule",
-          "access": "public; actual registry API contents inspected"
+          "access": "public"
         }
       ]
     },
@@ -151,11 +141,10 @@
       "scope": "schematic",
       "alt": "Amplatzer Septal Occluder (ASO) — orthographic schematic/concept illustration; not to scale",
       "sha256": "eca8e3f5317419dc7e32548ed8b7532ffbc2fa302eb22c147a189816361bd47e",
-      "sourceRegister": "waves/06/research.json",
       "limitations": [
         "Braided nitinol with polyester within both discs and waist; sparse cloth symbols.",
         "4 mm waist length; disc thickness and bowl contours illustrative, no anchor hooks.",
-        "All views are original normalized explanatory geometry; source images reviewed only in private cache; no tracing.",
+        "All views use original normalized explanatory geometry; no tracing.",
         "Rear-gray coding is a depth cue, not physical opacity. Human factual signoff pending.",
         "Braid is sparse local texture: transverse crossed strands on gently bowed disc faces and separate crossed waist mesh. No continuous hub-to-rim loops, exact wire counts or structural radial ribs are asserted."
       ],
@@ -164,13 +153,13 @@
           "title": "Amplatzer Septal Occluder SSED P000039",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf/P000039b.pdf",
           "locator": "Physical PDF p.3 section5; p.4 Table1, 9-ASD-020; p.5 Figure1",
-          "access": "public actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "Amplatzer Septal Occluder ARTMT600149465 C",
           "url": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/LY/en/ARTMT600149465_C.pdf",
           "locator": "Physical p.8 English Device Description; pp.186–187 AppendixA Table2 and Figure1",
-          "access": "public PDF downloaded; actual p186 dimension side figure inspected privately; parent also viewed p187 Figure1"
+          "access": "public"
         }
       ]
     },
@@ -181,7 +170,6 @@
       "scope": "approximate",
       "alt": "Amplatzer Cardiac Plug (ACP) — orthographic schematic/concept illustration; not to scale",
       "sha256": "dada1f773881364c5a0435c22006b9be6de07182809506ce3d728177a22a3bfd",
-      "sourceRegister": "pilot/research.json",
       "limitations": [
         "Approximate scope retained; only an original normalized expanded family envelope, not exact nominal-size CAD",
         "Six displayed pairs match primary first-generation count; positions, pairing spacing, common axial row, wire routes and braid incidence are illustrative rather than verified manufacturing construction",
@@ -207,19 +195,19 @@
           "title": "AMPLATZER Cardiac Plug Instructions for Use, 600286-016 OUS01-2011",
           "url": "https://www.cofguadalajara.es/cofgu/Descarga.asp?Id=34&IdDoc=96&Tipo=2&idMenu=0",
           "locator": "PDF physical6/printed1 Device Description and F1 key; physical19/printed189 FigureF1; physical18/printed188 TableT1; final imprint physical22",
-          "access": "public; full document text and actual figure pixels inspected"
+          "access": "public"
         },
         {
           "title": "AMPLATZER Cardiac Plug Structural Heart Therapy, MM00800(02)Intl07/11",
           "url": "https://pdfs.semanticscholar.org/938c/f562ed223d73450d78a29c623e8be6a49ae5.pdf",
           "locator": "p5 device paragraph and Figure1; final p12 imprint",
-          "access": "public; actual p5 text/figure inspected and final imprint read"
+          "access": "public"
         },
         {
           "title": "Comparison of the Feasibility and Safety of First- versus Second-Generation AMPLATZER Occluders for Left Atrial Appendage Closure",
           "url": "https://onlinelibrary.wiley.com/doi/10.1155/2017/1519362",
           "locator": "DOI10.1155/2017/1519362; Methods2.2 Comparison between ACP and AMPLATZER Amulet",
-          "access": "public full written Methods inspected"
+          "access": "public"
         }
       ]
     },
@@ -230,7 +218,6 @@
       "scope": "schematic",
       "alt": "Amplatzer PFO Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "1861667ea8101e9edcba30f4ad063c49bf12232ec724a3122c501df34bd1e910",
-      "sourceRegister": "pilot/research.json",
       "limitations": [
         "Only one original submission figure family; fresh documentary text plus a low-resolution pre-existing SSED crop, not fresh full-PDF pixels. Direct requests404; no restriction bypass or unseen figure inference.",
         "Only nominal rim diameter ratio18/25 is fixed; bow depths, thickness, waist length/radius and terminal fitting dimensions representative",
@@ -244,19 +231,19 @@
           "title": "AMPLATZER PFO Occluder Instructions for Use",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf12/P120021C.pdf",
           "locator": "Physical p1 Device Description/Figure1; physical p14 Table12, row9-PFO-025; p14 steps10/15/16 and p15 step19",
-          "access": "public; original FDA written text freshly inspected via web; fresh local PDF/image retrieval unavailable"
+          "access": "public"
         },
         {
           "title": "AMPLATZER PFO Occluder Summary of Safety and Effectiveness Data (P120021)",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf12/P120021B.pdf",
           "locator": "Physical/printed p2 SectionV Device Description and Figure1",
-          "access": "public; current original written text inspected; actual pre-existing cached Fig1 crop inspected"
+          "access": "public"
         },
         {
           "title": "Patent Foramen Ovale Closure with the AMPLATZER PFO Occluder: Information Guide for Patients and Caregivers",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf12/P120021D.pdf",
           "locator": "Physical/printed p4 Device Description",
-          "access": "public written original guide inspected via web; no actual patient-guide figure pixels inspected"
+          "access": "public"
         }
       ]
     },
@@ -267,11 +254,10 @@
       "scope": "schematic",
       "alt": "Amplatzer Piccolo Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "f86642c5a98995a09c54530d9031e8fea1f53187bfa880c7c0229269220cc21a",
-      "sourceRegister": "waves/06/research.json",
       "limitations": [
         "Low-profile equal discs only slightly wider than waist; symmetric cylindrical body.",
         "Sparse braid is representative; no fabric added from original ADO; hubs enlarged for legibility.",
-        "All views are original normalized explanatory geometry; source images reviewed only in private cache; no tracing.",
+        "All views use original normalized explanatory geometry; no tracing.",
         "Rear-gray coding is a depth cue, not physical opacity. Human factual signoff pending.",
         "Braid is sparse local texture: transverse crossed strands on gently bowed disc faces and separate crossed waist mesh. No continuous hub-to-rim loops, exact wire counts or structural radial ribs are asserted."
       ],
@@ -280,19 +266,19 @@
           "title": "Amplatzer Duct Occluders — Piccolo ordering information",
           "url": "https://www.cardiovascular.abbott/us/en/hcp/products/structural-heart/structural-interventions/amplatzer-pda.html",
           "locator": "Piccolo ordering table row9-PDAP-04-02-L; linked Piccolo product image",
-          "access": "public actual page/table text inspected; linked actual product image downloaded and inspected privately"
+          "access": "public"
         },
         {
           "title": "Amplatzer Piccolo Occluder clinical trial for percutaneous closure of the patent ductus arteriosus in patients ≥700 grams",
           "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/ccd.28973",
           "locator": "Section2.1 Description of procedure; Figure1 caption",
-          "access": "public actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "Amplatzer Piccolo Occluder ARTEN600042307 C",
           "url": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/US/en/ARTEN600042307_C.PDF",
           "locator": "Physical PDF p.4(printed1) DeviceDescription; p.5(printed2) Figure2",
-          "access": "public actual IFU text inspected by coordinating agent"
+          "access": "public"
         }
       ]
     },
@@ -303,11 +289,10 @@
       "scope": "schematic",
       "alt": "Amplatzer Muscular VSD Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "d94c7cf9a91847d6c52647d766342041ecc252942d064ac78fe21bccf7866bc3",
-      "sourceRegister": "waves/06/research.json",
       "limitations": [
         "Muscular VSD only; marketed equal discs, not trial smaller RV disc or membranous device.",
         "End screw recessed within waist; PET discs and waist; funnel and marker proportions illustrative.",
-        "All views are original normalized explanatory geometry; source images reviewed only in private cache; no tracing.",
+        "All views use original normalized explanatory geometry; no tracing.",
         "Rear-gray coding is a depth cue, not physical opacity. Human factual signoff pending.",
         "Braid is sparse local texture: transverse crossed strands on gently bowed disc faces and separate crossed waist mesh. No continuous hub-to-rim loops, exact wire counts or structural radial ribs are asserted."
       ],
@@ -316,13 +301,13 @@
           "title": "Amplatzer Muscular VSD Occluder SSED P040040",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf4/P040040b.pdf",
           "locator": "Physical PDF p.2 section5 and Table1A,9-VSD-MUSC-008 and footnote",
-          "access": "public actual FDA text and table inspected"
+          "access": "public"
         },
         {
           "title": "Amplatzer Muscular VSD Occluder ARTMT600149469 B",
           "url": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/PS/en/ARTMT600149469_B.pdf",
           "locator": "Physical p.7 English DeviceDescription; physical p.204 AppendixA Figure1; Table1 following",
-          "access": "public PDF downloaded; actual Fig1p204 viewed and English text inspected"
+          "access": "public"
         }
       ]
     },
@@ -333,10 +318,8 @@
       "scope": "schematic",
       "alt": "Amplatzer Amulet — orthographic schematic/concept illustration; not to scale",
       "sha256": "e21a0e61b4cb7c54afb40027ba5808425d9d8eeb3a599a7a100b66b8eede0b8c",
-      "sourceRegister": "waves/01/research.json",
       "limitations": [
         "Table1 says6/8/10 stabilizing wires; literature sometimes calls these pairs. Number of hook tips is therefore not asserted.",
-        "Recess form assessed from actual existing FDA crop artifacts/research/2026-10-12/site-preview/evidence/fda/amulet.png; no tracing.",
         "Braid density and all normalized proportions illustrative."
       ],
       "sources": [
@@ -367,7 +350,6 @@
       "scope": "concept",
       "alt": "Amulet360 — orthographic schematic/concept illustration; not to scale",
       "sha256": "67cfd80133f68869a124c07fed38db121e8e1d48bde36f1032dc555c43a5c9f0",
-      "sourceRegister": "waves/01/research.json",
       "limitations": [
         "Concept scope retained; human factual signoff pending. No dimensions or exact manufacturing topology asserted.",
         "Only original analytic geometry, not traced source paths. Multiple source perspectives are Abbott-authored, not independent manufacturers.",
@@ -402,7 +384,6 @@
       "scope": "schematic",
       "alt": "AtriClip LAA Exclusion System — orthographic schematic/concept illustration; not to scale",
       "sha256": "fef588857c2e54198bcc111aed2a8d8cc8a0f32c960a51adf5cd06ff798b56d8",
-      "sourceRegister": "waves/05/research.json",
       "limitations": [
         "Jaw separation is explanatory; normalized widths, spring arcs and fabric marks are not dimensional or manufacturing reconstructions.",
         "No transfer from later open-ended clip models."
@@ -412,13 +393,13 @@
           "title": "AtriClip LAA Exclusion System with preloaded Gillinov-Cosgrove Clip, IFU-0278.A",
           "url": "https://europe.atricure.com/sites/default/files/devices-ifu/IFU-0278.A.pdf",
           "locator": "PDF p.1 System Description; Figures 1, 2, 5, 6, 8, 9",
-          "access": "public actual PDF text and rendered p.1 figures inspected; private05/_review/atriclip.pdf"
+          "access": "public"
         },
         {
           "title": "Mitral valvuloplasty with left atrial appendage closure and pacemaker implantation in a dog with severe myxomatous mitral valve degeneration: a case report",
           "url": "https://link.springer.com/article/10.1186/s12917-022-03284-7",
           "locator": "Figure 3 caption; Case presentation",
-          "access": "public publisher full article and caption inspected"
+          "access": "public"
         }
       ]
     },
@@ -429,7 +410,6 @@
       "scope": "schematic",
       "alt": "AUTUS Size-Adjustable Valve — orthographic schematic/concept illustration; not to scale",
       "sha256": "a5d04e5c5281e6a25331da8e2a4e9f923339c2941b9e16dd35097e75c0addb48",
-      "sourceRegister": "waves/10/research.json",
       "limitations": [
         "Only nominal representative pose illustrated; schematic proportions not exact Table1 reconstruction.",
         "Balloon expansion mechanism is plastic frame dilation and stretch sleeve, not an extra adjustment screw or autonomous growing tissue.",
@@ -440,19 +420,19 @@
           "title": "AUTUS original PMA SSED P260007",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007B.pdf",
           "locator": "p2§V/Fig1/Table1",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "AUTUS Size-Adjustable Valve original FDA IFU",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007D.pdf",
           "locator": "physicalp1§1/Figure1",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "AUTUS designed for pediatric PVD",
           "url": "https://www.edwards.com/healthcare-professionals/products-services/autus-size-adjustable-valve/designed-for-pediatric-pvd",
           "locator": "static Closeup of AUTUS; Top view; Outer sleeve; leaflet, preimplant sizing and postimplant expansion sections",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         }
       ]
     },
@@ -463,11 +443,10 @@
       "scope": "schematic",
       "alt": "Amplatzer Valvular Plug III (PVL use) — orthographic schematic/concept illustration; not to scale",
       "sha256": "b9775f14621114b8f2850909ea158a66f7ac4c4191576d438ff1715eaadb0707",
-      "sourceRegister": "waves/06/research.json",
       "limitations": [
         "2023 APVL3 documentary configuration; not generic vascular-plug or new-version substitution.",
         "Rectangular-oval outline uses a modest original superellipse; braid density and layer count symbolic; fabric not depicted.",
-        "All views are original normalized explanatory geometry; source images reviewed only in private cache; no tracing.",
+        "All views use original normalized explanatory geometry; no tracing.",
         "Rear-gray coding is a depth cue, not physical opacity. Human factual signoff pending.",
         "Braid is sparse local texture: transverse crossed strands on gently bowed disc faces and separate crossed waist mesh. No continuous hub-to-rim loops, exact wire counts or structural radial ribs are asserted."
       ],
@@ -476,19 +455,19 @@
           "title": "Amplatzer Valvular Plug III (formerly AVP III), MAT-2002715 v2.0",
           "url": "https://www.my-connext.com/fileadmin/connext/downloads-trending/PVL/files/amplatzer-valvular-plug-III-hcp.pdf",
           "locator": "Physical p.2 rectangular-oval shape; p.6 actual photograph; p.7 actual dimensional diagram/table9-APVL3-084; p.8 copyright",
-          "access": "public PDF downloaded; actual p6 photograph/p7 diagram visually inspected"
+          "access": "public"
         },
         {
           "title": "Amplatzer Valvular Plug III MAT-2002714 v1.0",
           "url": "https://www.csi-congress.org/sites/default/files/AMPLATZER_VALVULAR_PLUG_III.pdf",
           "locator": "Physical p.4 product description; p.8 copyright",
-          "access": "public actual PDF p4 read and visually inspected"
+          "access": "public"
         },
         {
           "title": "Amplatzer Valvular Plug III product page",
           "url": "https://www.cardiovascular.abbott/int/en/hcp/products/structural-heart/structural-interventions/amplatzer-valvular.html",
           "locator": "Product overview; New Version Available link",
-          "access": "public actual official product page text inspected"
+          "access": "public"
         }
       ]
     },
@@ -499,7 +478,6 @@
       "scope": "schematic",
       "alt": "Cardioband — orthographic schematic/concept illustration; not to scale",
       "sha256": "861c0bd547cacd1d64bb8eb30e1b595280a6c5fcb01ed8e4125affbe1ed4bf02",
-      "sourceRegister": "pilot/research.json",
       "limitations": [
         "Detailed geometric evidence is one2015 primary figure family; later written synthesis is general corroboration, not an unchanged-design bridge",
         "Rounded circular sweep, enlarged end ratio and elliptic C path are normalized qualitative envelopes, not source-measured cross-section or annular shape",
@@ -519,13 +497,13 @@
           "title": "Cardioband, a transcatheter surgical-like direct mitral valve annuloplasty system: early results of the feasibility trial",
           "url": "https://academic.oup.com/eurheartj/article/37/10/817/2570445",
           "locator": "DOI10.1093/eurheartj/ehv603; original abstract Aims; online2015-11-18, issue2016-03-07",
-          "access": "public abstract inspected; full text remains purchase-limited/unavailable"
+          "access": "public"
         },
         {
           "title": "The Cardioband transcatheter direct mitral valve annuloplasty system",
           "url": "https://eurointervention.pcronline.com/article/the-cardioband-transcatheter-direct-mitral-valve-annuloplasty-system",
           "locator": "DOI10.4244/EIJV11SWA15; physical1/printedW58 Device description, Figure1B implant; physical2/printedW59 Figure2C anchor inset and2D adjustment",
-          "access": "public original technical PDF text and both actual page images inspected"
+          "access": "public"
         }
       ]
     },
@@ -536,7 +514,6 @@
       "scope": "concept",
       "alt": "Cardioblate Closure LAA Device — orthographic schematic/concept illustration; not to scale",
       "sha256": "e997e725095c78d1051290188091d21aaecfa39a6e2093560b971ef0a4e6c408",
-      "sourceRegister": "waves/05/research.json",
       "limitations": [
         "Actual secondary inset points to preclinical band, not independently verified clinical-trial implant.",
         "Soft-section torus, relaxed opening and cloth markings illustrative; marker clips excluded.",
@@ -548,13 +525,13 @@
           "title": "Occlusion of canine atrial appendage using an expandable silicone band",
           "url": "https://pubmed.ncbi.nlm.nih.gov/20346467/",
           "locator": "Abstract Methods and Conclusions; DOI 10.1016/j.jtcvs.2010.01.015",
-          "access": "public original abstract inspected"
+          "access": "public"
         },
         {
           "title": "Surgical Left Atrial Appendage Exclusion Devices",
           "url": "https://www.aphrs.org/attachments/category/16/APHRS%20News%20No.25.pdf",
           "locator": "Printed p.8 Other Surgical LAA Closure Devices 2; Figure 4B inset; p.9 reference 17",
-          "access": "public PDF downloaded and actual p.8 Figure 4B inspected; private05/_review/aphrs-2016.pdf"
+          "access": "public"
         }
       ]
     },
@@ -565,7 +542,6 @@
       "scope": "schematic",
       "alt": "CardioMEMS HF System — orthographic schematic/concept illustration; not to scale",
       "sha256": "8370f9f8b73fa51da6bdb2678a225f7d30e320a539de152c541469060c295ad5",
-      "sourceRegister": "waves/17/research.json",
       "limitations": [
         "Only one complete geometric source family in original FDA submission; second documentary source corroborates gross envelope.",
         "Wireform shape, slab corner rounding, silicone thickness, loop planar pose and marker registration simplified; no physical dimensions asserted.",
@@ -576,13 +552,13 @@
           "title": "CardioMEMS HF System original P100045 SSED",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf10/P100045B.pdf",
           "locator": "pp1–3 Section V, PA Sensor, Figure1 and Figure2",
-          "access": "public; actual documentary text and figure pixels inspected"
+          "access": "public"
         },
         {
           "title": "CardioMEMS HF System original FDA-submitted patient labeling",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf10/P100045C.pdf",
           "locator": "Physical p5, Introduction, Figure1 Pulmonary Artery (PA) Sensor",
-          "access": "public; actual documentary text and figure pixels inspected"
+          "access": "public"
         }
       ]
     },
@@ -593,7 +569,6 @@
       "scope": "schematic",
       "alt": "Conformal Left Atrial Appendage Seal (CLAAS) — orthographic schematic/concept illustration; not to scale",
       "sha256": "cb391ac5b8998fca3add7aca4efa2a0a4911030fe7bf9c46ab7ad5c4cfd1f994",
-      "sourceRegister": "waves/04/research.json",
       "limitations": [
         "Twenty-anchor count/two rows supported for2021regular; tenfold cell/spoke pattern and normalized anchor registration are original illustrative routes, not measuredmanufacturingtopology.",
         "ActualpreclinicalFig1a andnewclinicalFig2C are sameimagefamily. SeparateclinicalB/E views andprimarytext corroborate grossconstruction without recoveringCAD.",
@@ -629,7 +604,6 @@
       "scope": "concept",
       "alt": "C-MIC subcutaneous LV configuration (C-MIC III) — orthographic schematic/concept illustration; not to scale",
       "sha256": "ec3fa9f5b142a8c90f3cda43ff6d2df903cebb7ee3438588a7c30e2310129dfb",
-      "sourceRegister": "pilot/research.json",
       "limitations": [
         "Exact hardware revision/model unverified.",
         "Cannot supply technically exact original hardware orthographic views from the eligible documents obtained.",
@@ -641,7 +615,7 @@
           "title": "Pilot Study to Investigate the Performance of the Cardiac Microcurrent (C-MIC) System With a Less Invasively Placed Left Ventricular Lead",
           "url": "https://clinicaltrials.gov/study/NCT06920030",
           "locator": "Live API protocolSection.identificationModule.orgStudyIdInfo; descriptionModule.detailedDescription; armsInterventionsModule; statusModule.lastUpdatePostDateStruct (2026-08-11).",
-          "access": "Public original live API actually downloaded and parsed; no mirror used"
+          "access": "public"
         },
         {
           "title": "EN-527959-001 First-in-human evaluation of subcutaneous cardiac microcurrent therapy in advanced heart failure: primary results from the C-MIC III pilot study",
@@ -653,7 +627,7 @@
           "title": "Cardiac microcurrent therapy in heart failure: Mechanistic rationale, early clinical evidence, and future directions",
           "url": "https://link.springer.com/article/10.1007/s10741-026-10644-0",
           "locator": "Overview of cardiac microcurrent device therapy; Next generation subcutaneous system; Figure2: Subcutaneous Implantation of the Left Ventricular Patch Using a Minimally Invasive Approach; volume31article71",
-          "access": "Public full written review and actual Figure2 PNG pixels inspected independently by coordinator and reviewer; reference copy only in excluded _review/"
+          "access": "public"
         }
       ]
     },
@@ -664,7 +638,6 @@
       "scope": "schematic",
       "alt": "CorCap Cardiac Support Device — orthographic schematic/concept illustration; not to scale",
       "sha256": "cc0ff4a90ead2885fa6f76e548eb1b2974de8d53f375ab96eb6cb8bacecf171c",
-      "sourceRegister": "waves/16/research.json",
       "limitations": [
         "One inspected complete geometry figure family; primary procedure and clinical sources corroborate material and attachment roles without a second complete envelope figure.",
         "Grid sampling, normalized cup contour, seam trajectory, seven tacks and stitch count illustrative; no exact knit topology, dimension or patient fit.",
@@ -675,19 +648,19 @@
           "title": "Public CMS rulemaking submission: CorCap implant procedure steps, sponsor Exhibit A",
           "url": "https://www.cms.gov/regulations-and-guidance/regulations-and-policies/erulemaking/downloads/1500-p-101-150.pdf",
           "locator": "PhysicalPDFpp.96–97, ExhibitA printedpp.2–3",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "Beneficial effects of the CorCap cardiac support device: five-year results from the Acorn Trial",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3790142/",
           "locator": "Introduction, device description",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "The CorInnova Implantable Cardiac Assist System for Direct Cardiac Compression — historical CorCap Figure4",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11273667/",
           "locator": "Historical passive support paragraph; Figure4 and caption; reference36",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -698,7 +671,6 @@
       "scope": "schematic",
       "alt": "Cordella Pulmonary Artery Sensor System — orthographic schematic/concept illustration; not to scale",
       "sha256": "c728720f45e927b5fcd875a646f31e910a836e041a9f15b5e8d8082248d54725",
-      "sourceRegister": "waves/17/research.json",
       "limitations": [
         "One original FDA submission geometric source family, with SSED photo and exact IFU multi-view diagrams; no second independent technical geometry source inspected.",
         "Analytic wire loops preserve unequal raised envelopes only; precise closed-wire routing, basal bends, lean and end registration simplified.",
@@ -710,13 +682,13 @@
           "title": "Cordella Pulmonary Artery Sensor System original P230040 SSED rev2",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230040B.pdf",
           "locator": "pp2–4 Section V; p3 Figure2; p4 Figure4",
-          "access": "public; actual documentary text and figure pixels inspected"
+          "access": "public"
         },
         {
           "title": "Cordella PA Sensor System Instructions for Use,100663-04 Rev4",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230040C.pdf",
           "locator": "Physical and printed p8 Cordella PA Sensor; three orthogonal sensor diagrams and dimension key",
-          "access": "public; actual documentary text and figure pixels inspected"
+          "access": "public"
         }
       ]
     },
@@ -727,7 +699,6 @@
       "scope": "schematic",
       "alt": "Coronary Sinus Reducer System — orthographic schematic/concept illustration; not to scale",
       "sha256": "b68c6b57c1508febdd07d0f4dbbf3e302413c6801a427e0fa33c25bba7c450ea",
-      "sourceRegister": "waves/18/research.json",
       "limitations": [
         "Only2025 manufacturer sheet establishes current reference geometry;2016 review is historical gross-shape corroboration, not independent exact2025 topology evidence.",
         "Mesh displayed as representative crossed cells; actual cell counts, connectors, edge termination and manufacturing process unasserted.",
@@ -739,13 +710,13 @@
           "title": "Shockwave Reducer System Product Specification Sheet, SPL70146 Rev F",
           "url": "https://shockwavemedical.com/wp-content/uploads/2024/11/Shockwave-Reducer-Spec-Sheet.pdf",
           "locator": "p1 introduction, Design and Reference Dimensions, General Product Specifications",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         },
         {
           "title": "Percutaneous Device to Narrow the Coronary Sinus: Shifting Paradigm in the Treatment of Refractory Angina? A Review of the Literature",
           "url": "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2016.00042/full",
           "locator": "Device and Implantation Procedure; Figure1 upper expanded device / lower balloon-mounted device; DOI10.3389/fcvm.2016.00042",
-          "access": "public; actual documentary text and figure pixels inspected"
+          "access": "public"
         }
       ]
     },
@@ -756,7 +727,6 @@
       "scope": "schematic",
       "alt": "Corvia Atrial Shunt — orthographic schematic/concept illustration; not to scale",
       "sha256": "e91756d739cb900d51c1a0bb40f7fcf0965285483f43bcba579de354d3bd3ae2",
-      "sourceRegister": "waves/07/research.json",
       "limitations": [
         "Uncovered metal cage; nine legs each side; open central barrel.",
         "Leg bends, barrel length and marker dimensions are illustrative; no invented anchors.",
@@ -768,13 +738,13 @@
           "title": "Transcatheter Interatrial Shunt Device for the Treatment of Heart Failure: Rationale and Design of REDUCE LAP-HF I",
           "url": "https://eprints.gla.ac.uk/128358/1/128358.pdf",
           "locator": "Physical p.8(printed7) IASD Device description; physical p.32(printed31) Figure1",
-          "access": "public; author manuscript downloaded/read; actual Figure1 viewed privately"
+          "access": "public"
         },
         {
           "title": "Corvia Atrial Shunt System information for patients00697AW US Rev01",
           "url": "https://us.corviamedical.com/wp-content/uploads/2024/07/00697AW-US-Corvia-Patient-Information-Guide-Rev-01.pdf",
           "locator": "Physical p.1 title/ABOUT YOUR ATRIAL SHUNT; physical p.3 Implant Materials",
-          "access": "public; actual manufacturer PDF text inspected via web; direct download403"
+          "access": "public"
         }
       ]
     },
@@ -785,12 +755,10 @@
       "scope": "schematic",
       "alt": "Daxor BVA-100 — orthographic schematic/concept illustration; not to scale",
       "sha256": "e0df530aa13ecd904b552ad3e64fbab384ac974f7cd61793400b5b4d48224288",
-      "sourceRegister": "waves/18/research.json",
       "limitations": [
         "Only manufacturer poster Fig2 supplies detailed visual geometry; FDA comparison independently supports workflow/component architecture only.",
         "Poster publication date and exact illustrated BVA-100 hardware revision unresolved; no1997exact-build equivalence.",
         "Carousel tube sampling, raised bridge/support sections, enclosure depth and monitor proportions normalized; no actual counts or dimensions.",
-        "Old manufacturer bva100-brochure.pdf URL is unsuitable: coordinator retrieval now returned March2026handheld brochure, not BVA-100; no appearance borrowed.",
         "Human factual signoff pending."
       ],
       "sources": [
@@ -798,19 +766,19 @@
           "title": "Precision blood volume point-of-care testing to guide fluid management",
           "url": "https://www.umassmed.edu/globalassets/capcat-collaborative/projects-funded/daxor-poster.pdf",
           "locator": "p1 Figure2 and caption Predicate BVA-100 with computer monitor; Introduction / Results Objective2",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         },
         {
           "title": "BVA-200 510(k) Summary K251087; BVA-100 predicate comparison",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K251087.pdf",
           "locator": "Physicalp7 printedp3 predicate carousel paragraph; physicalpp10–11 printedpp6–7 comparison rows SampleType, SamplesIntroducedToGammaCounter, UserInteraction",
-          "access": "public; actual regulatory documentary text inspected"
+          "access": "public"
         },
         {
           "title": "Automated Multi-Point Blood Volume Analyzer K964406",
           "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K964406",
           "locator": "Device Name, Applicant, Decision Date, Decision",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         }
       ]
     },
@@ -821,7 +789,6 @@
       "scope": "schematic",
       "alt": "Daxor BVA-200 — orthographic schematic/concept illustration; not to scale",
       "sha256": "c9953a7f007b6eb8ab01b36d2e22bbf2e5908ba1aab6b0462cb9578e6e703606",
-      "sourceRegister": "waves/19/research.json",
       "limitations": [
         "Manufacturer poster and brochure are one detailed appearance source family; FDA independently corroborates architecture only.",
         "Exact2026hardware revision,backports,screenangle,apertureshape and dimensions unresolved.",
@@ -832,31 +799,31 @@
           "title": "Precision blood volume point-of-care testing to guide fluid management",
           "url": "https://www.umassmed.edu/globalassets/capcat-collaborative/projects-funded/daxor-poster.pdf",
           "locator": "p1 Figure1 explicitly BVA-200 device with touch screen; Methods and Materials continued; Results Objective2",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         },
         {
           "title": "Blood Volume Analysis product brochure M005-REF2339-B",
           "url": "https://www.daxor.com/wp-content/uploads/2014/10/bva100-brochure.pdf",
           "locator": "p1 compact analyzer image; document product presentation",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         },
         {
           "title": "BVA-200 K251087 summary",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K251087.pdf",
           "locator": "Device Description and predicate comparison, physicalpp5-11",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         },
         {
           "title": "BVA-200 K261099 summary",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261099.pdf",
           "locator": "Physicalpp5-6 Device Description / configuration",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         },
         {
           "title": "Daxor Corporation receives FDA clearance for new rapid lightweight blood volume analysis system",
           "url": "https://daxor.com/daxor-corporation-receives-fda-clearance-for-new-rapid-lightweight-blood-volume-analysis-system/",
           "locator": "Clearance and compact handheld BVA description",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         }
       ]
     },
@@ -867,7 +834,6 @@
       "scope": "schematic",
       "alt": "DragonFly-T study-described system (configuration range) — orthographic schematic/concept illustration; not to scale",
       "sha256": "b6eb23cb3ba1641047a672f54dcb46856e262e020320ae648e7112564103ca67",
-      "sourceRegister": "waves/13/research.json",
       "limitations": [
         "Normalized original envelopes; source-informed qualitative form, not CAD, exact angle or manufacturing geometry.",
         "Fine retention microfeatures, fabric weave, hidden mechanisms and exact topology omitted.",
@@ -880,13 +846,13 @@
           "title": "Transcatheter Edge-to-Edge Repair for Tricuspid Regurgitation: Design and Rationale of the TEER-CHINA Trial",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13554751/",
           "locator": "Study device description; Figure 1 and caption; DOI 10.1016/j.jacasi.2026.06.012",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "TEER-CHINA registry NCT05556460",
           "url": "https://clinicaltrials.gov/study/NCT05556460",
           "locator": "IdentificationModule; ArmsInterventionsModule; DesignModule",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -897,7 +863,6 @@
       "scope": "concept",
       "alt": "Ecliptis LAA Exclusion System — orthographic schematic/concept illustration; not to scale",
       "sha256": "d84ca2ed04b52c4f94d8b31a29b1c788c17547c9dc8c26cb01fe8b1203fa9d22",
-      "sourceRegister": "waves/05/research.json",
       "limitations": [
         "No independently verified implant photograph or IFU figure found. Functional spring connector placement/shape unverified.",
         "Concept geometry should remain withheld from factual promotion until manufacturer figure and human review."
@@ -907,13 +872,13 @@
           "title": "ECLIPTIS LAA Exclusion System 510(k) summary K254232",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K254232.pdf",
           "locator": "PDF pp.5–6 Device Description and Table 1 Clip Mechanics",
-          "access": "public FDA PDF indexed text inspected"
+          "access": "public"
         },
         {
           "title": "AccessGUDID ECLIPTIS ECS150 device record",
           "url": "https://accessgudid.nlm.nih.gov/devices/00690103221237",
           "locator": "Device Identifier Information; Premarket Submission Number",
-          "access": "public actual record inspected"
+          "access": "public"
         }
       ]
     },
@@ -924,7 +889,6 @@
       "scope": "schematic",
       "alt": "APTURE Transcatheter Shunt System — orthographic schematic/concept illustration; not to scale",
       "sha256": "6d60ea579c341cadc2c79b31e35a8add34fc38d6228f14b3e2110d45c17ce17b",
-      "sourceRegister": "waves/17/research.json",
       "limitations": [
         "Central lattice sampled, not exact manufacturing cell topology or braid assertion.",
         "Four-arm count and LA/CS roles supported; angular registration, arm curvature and central length/diameter normalized.",
@@ -936,13 +900,13 @@
           "title": "Rationale and design of ALT-FLOW II evaluating Edwards APTURE transcatheter shunt",
           "url": "https://academic.oup.com/eurjhf/advance-article/doi/10.1093/ejhf/xuaf016/8415028",
           "locator": "Device and procedure; Figure1A–C",
-          "access": "public; actual documentary text and figure pixels inspected"
+          "access": "public"
         },
         {
           "title": "ICD-10 Coordination and Maintenance Committee September10,2024 agenda, APTURE technology",
           "url": "https://www.cms.gov/files/document/september-10-2024-final-agenda-and-materials.pdf",
           "locator": "Physical and printedp14 Technology",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         }
       ]
     },
@@ -953,7 +917,6 @@
       "scope": "concept",
       "alt": "Emboliner Embolic Protection System (EPC-03) — orthographic schematic/concept illustration; not to scale",
       "sha256": "8292c8b2b48083165a7853293cb7db323d701c0682d5ac66c4338cb04e496a44",
-      "sourceRegister": "waves/19/research.json",
       "limitations": [
         "ExactEPC-03FDAtext supports component architecture; current manufacturer image revision does not establish exactEPC-03 end geometry.",
         "Straightened profile is functional concept; no claimed clinical deployment shape,dimensions,portposition,wallseparation or production weave.",
@@ -965,19 +928,19 @@
           "title": "Emboliner Embolic Protection System EPC-03 K261715 summary",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261715.pdf",
           "locator": "Physicalp6 printed2 Device Description; physicalp9 printed5 Investigation Device",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         },
         {
           "title": "Emboliner product",
           "url": "https://emboline.com/product/",
           "locator": "Product technology: double-wall frameless cylindrical nitinol filter and self-sealing access port; footerMA1001RevA",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         },
         {
           "title": "Emboliner retrieved filter component photograph",
           "url": "https://emboline.com/wp-content/uploads/emboline-home-track-emboliner-embolic-protection.jpg",
           "locator": "Homepage retrieved-filter image; broad outer wall,inward return and smaller access neck at one end",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         }
       ]
     },
@@ -988,7 +951,6 @@
       "scope": "schematic",
       "alt": "Medtronic Evolut FX — orthographic schematic/concept illustration; not to scale",
       "sha256": "2b3ec10c880d7e88c522e51500c04b8fe4956947f0a68783745e9a6e030d959e",
-      "sourceRegister": "waves/08/research.json",
       "limitations": [
         "Frame rhomboid count, bends, exact topology, dimensions and leaflet attachment/commissural contours remain representative. No CAD reconstruction or FX+ enlarged-window transfer.",
         "Rigid axial display clocking aligns a symmetry plane to the fixed side camera. It is an illustration orientation, not a recommended clinical commissural-alignment angle.",
@@ -1002,31 +964,31 @@
           "title": "Evolut PRO+ / FX / FX+ SSED P130021/S174",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174B.pdf",
           "locator": "Physical pp2–3 §V, Figures1–2",
-          "access": "public; actual document text inspected"
+          "access": "public"
         },
         {
           "title": "Evolut FX and FX+ Instructions for Use, in FDA S174 labeling bundle",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174D.pdf",
           "locator": "FX physical p32 §1.1 Figure1; FX+ physical p60 §1.1 Figure1 and p61 Table2",
-          "access": "public; actual document text inspected"
+          "access": "public"
         },
         {
           "title": "Evolut FX TAVR system — features and ordering",
           "url": "https://www.medtronic.com/en-us/healthcare-professionals/products/cardiovascular/heart-valves/transcatheter-systems/evolut-fx-tavr-system.html",
           "locator": "Features/Enhanced visualization and ordering EVOLUTFX-29; linked static scene7 image evolut-fx-animation-prod-d-AVS",
-          "access": "public actual current page text read; prior cached linked static cutaway pixels freshly inspected privately"
+          "access": "public"
         },
         {
           "title": "Optimize PRO Clinical Investigation Plan – FX Addendum, version3.0,15December2022",
           "url": "https://cdn.clinicaltrials.gov/large-docs/48/NCT04091048/Prot_006.pdf",
           "locator": "30physicalpages including cover; physical13/printed12 Table1 EVOLUTFX-29; physical14/printed13 Figure1 and§7.1.2.1",
-          "access": "public officialregistry PDF downloaded; actual physical13Table1 and physical14Figure1/text inspected privately"
+          "access": "public"
         },
         {
           "title": "Evolut FX System Product Specifications, UC202203007a EN",
           "url": "https://www.medtronic.com/content/dam/medtronic-com/products/cardiovascular/transcatheter-aortic-heart-valves/documents/evolut-fx-product-specs.pdf",
           "locator": "Physicalp1 EVOLUTFX-29; physicalp2 footer UC202203007a EN01/2022",
-          "access": "public indexed originalPDF text read; directdownload403 respected"
+          "access": "public"
         }
       ]
     },
@@ -1037,7 +999,6 @@
       "scope": "schematic",
       "alt": "Medtronic Evolut FX+ — orthographic schematic/concept illustration; not to scale",
       "sha256": "a7bb0987c836231c144586eda44235e72d757d3b463d8e45c40bd5eeaeecd459",
-      "sourceRegister": "waves/08/research.json",
       "limitations": [
         "The three enlarged-window fact is exact-generation supported; their dimensions, shape details, angular width, ordinary-cell count and junction map are original representative choices, not manufacturing topology.",
         "Only one actual unambiguous window photograph was inspected: size-unspecified technical consensusFigure1. PrimaryFDA/USmanufacturer text corroborates architecture and EVFXPLUS-29 identity; exact29image remains unavailable. Prior cached FDA front crop is inadequate to validate FX+ window geometry.",
@@ -1051,37 +1012,37 @@
           "title": "Evolut PRO+ / FX / FX+ SSED P130021/S174",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174B.pdf",
           "locator": "Physical pp2–3 §V, Figures1–2",
-          "access": "public; actual document text inspected"
+          "access": "public"
         },
         {
           "title": "Evolut FX and FX+ Instructions for Use, in FDA S174 labeling bundle",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S174D.pdf",
           "locator": "FX+ physical60§1.1 Figure1 description, physical61Table2 EVFXPLUS-29; exclude other generation sections",
-          "access": "public indexed original FDA text freshly read; prior campaign bundle inspection retained"
+          "access": "public"
         },
         {
           "title": "Evolut FX+ TAVI System, Canada",
           "url": "https://www.medtronic.com/en-ca/healthcare-professionals/products/cardiovascular/heart-valves/transcatheter-systems/evolut-fx-plus-tavi-system.html",
           "locator": "Features: Access; ordering EVFXPLUS-29",
-          "access": "public; actual document text inspected"
+          "access": "public"
         },
         {
           "title": "Evolut FX+ TAVR System — US features and ordering",
           "url": "https://www.medtronic.com/en-us/healthcare-professionals/products/cardiovascular/heart-valves/transcatheter-systems/evolut-fx-plus-tavr-system.html",
           "locator": "Features/Access; Bioprosthesis ordering EVFXPLUS-29; linked image evolut-fx-plus-23-prll.png",
-          "access": "public actual page text inspected; linked static23mm image direct403 respected"
+          "access": "public"
         },
         {
           "title": "Nordic consensus document on Evolut FX+ transcatheter aortic valve implantation: optimizing index implantation and longer-term outcomes",
           "url": "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2025.1682714/full",
           "locator": "Physicalp2Figure1 top-left valve photo; physicalp3 EvolutFX/FX+systems; physicalp5 CommissuralAlignment paragraph",
-          "access": "public fullPDF downloaded; actual physicalp2 Figure1 pixels independently inspected"
+          "access": "public"
         },
         {
           "title": "Evolut FX+ System Product Specifications, UC202402378a EN",
           "url": "https://www.medtronic.com/content/dam/medtronic-wide/public/united-states/products/cardiac-vascular/cardiovascular/heart-valves/evolut-fx-plus-product-specs.pdf",
           "locator": "Physicalp1 EVFXPLUS-29/29mm row; physicalp2 footer UC202402378aEN08/2024",
-          "access": "public indexed originalPDF text read; direct403 respected"
+          "access": "public"
         }
       ]
     },
@@ -1092,7 +1053,6 @@
       "scope": "schematic",
       "alt": "EVOQUE — orthographic schematic/concept illustration; not to scale",
       "sha256": "08d3b40c2a8bbe1e291dea262ba77133e2c5696dcc60d69d3a155199e57dbe25",
-      "sourceRegister": "waves/10/research.json",
       "limitations": [
         "Nine anchors documented; length, tip shape and angular registration schematic.",
         "No distinct sealing collar invented: broad lower fabric boundary follows original FDA figure.",
@@ -1104,19 +1064,19 @@
           "title": "EVOQUE original PMA SSED P230013",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230013B.pdf",
           "locator": "p2§V/Figure1",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "EVOQUE original physician IFU",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230013C.pdf",
           "locator": "physicalp1§1 model table/device description",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "EVOQUE original FDA patient labeling",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230013D.pdf",
           "locator": "printedp7 The EVOQUE Valve illustration and explanatory paragraph",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         }
       ]
     },
@@ -1127,7 +1087,6 @@
       "scope": "schematic",
       "alt": "FIRE1 NORM — orthographic schematic/concept illustration; not to scale",
       "sha256": "71754a0845b80a4cd1d771680cb5dd27071394099bec07ea8713a8796f5a803e",
-      "sourceRegister": "waves/17/research.json",
       "limitations": [
         "Exact2025 Figure1 build unspecified; primary reports both polymer-coated gold-strand design and nitinol components updated after initial4 recipients; later46 not collapsed into identical hardware.",
         "Only one2025 detailed geometric source. Additional2022 actual image/2023 written Methods provide earlier historical context only; manufacturer current page supports identity/function, not unchanged geometry.",
@@ -1141,25 +1100,25 @@
           "title": "First-in-Human Implantable Inferior Vena Cava Sensor for Remote Care in Heart Failure: FUTURE-HF",
           "url": "https://pure.eur.nl/ws/files/197314929/1-s2.0-S2213177925001726-main.pdf",
           "locator": "DOI10.1016/j.jchf.2025.01.019; physicalp4 printedp1002 Methods; physicalp5 printedp1003 Figures1/2; printedp1005 Results",
-          "access": "public; actual documentary text and figure pixels inspected"
+          "access": "public"
         },
         {
           "title": "FIRE1 clinician system description",
           "url": "https://fire1foundry.com/clinicians/",
           "locator": "Clinicians page, NORM Sensor flexible-frame description",
-          "access": "public; actual written manufacturer page read"
+          "access": "public"
         },
         {
           "title": "Changes in inferior vena cava area represent a more sensitive metric than changes in filling pressures during experimental manipulation of intravascular volume and tone",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9306514/",
           "locator": "DOI10.1002/ejhf.2395; Inferior vena cava sensor Methods; Figure1A implant (B external belt excluded)",
-          "access": "public original article text and actual Figure1 pixels inspected"
+          "access": "public"
         },
         {
           "title": "Safety and performance of a novel implantable sensor in the inferior vena cava under acute and chronic intravascular volume modulation",
           "url": "https://onlinelibrary.wiley.com/doi/10.1002/ejhf.2822",
           "locator": "DOI10.1002/ejhf.2822; Methods, The FIRE1 system",
-          "access": "public original written Methods inspected; no actual Figure1 pixel claim"
+          "access": "public"
         }
       ]
     },
@@ -1170,7 +1129,6 @@
       "scope": "schematic",
       "alt": "GORE CARDIOFORM ASD Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "64b73bf44e5af44570de7fbf582c3ed0e7b69da7cf246638ce732b62c5d2cee3",
-      "sourceRegister": "waves/07/research.json",
       "limitations": [
         "Covered wire-loop frame and adaptable waist; distinct from the thin Septal device.",
         "Broad ePTFE-covered saddle width, thickness and curvature are qualitative original approximations, not exact48mm waist dimensions. Eight loops are representative within documented6–8wirefamily; exact48mm wire routing/count unresolved.",
@@ -1182,19 +1140,19 @@
           "title": "GORE CARDIOFORM ASD Occluder product brochure 22822731-EN",
           "url": "https://goremedical.com/sites/default/files/resources/pdf/2025-01/22822731-EN-GCA-Brochure-FNL.pdf",
           "locator": "Physical p.4 actual product photo; p.5 waist/wire frame photo and six-to-eight-wire statement; p.14 specifications48mm",
-          "access": "public; PDF downloaded and actual p4/p5 figures visually inspected"
+          "access": "public"
         },
         {
           "title": "P050006/S071 CARDIOFORM ASD addition decision",
           "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P050006S071",
           "locator": "Approval order statement",
-          "access": "public; actual FDA decision page inspected"
+          "access": "public"
         },
         {
           "title": "ASSURED clinical study: New GORE CARDIOFORM ASD occluder for transcatheter closure of atrial septal defect",
           "url": "https://pubmed.ncbi.nlm.nih.gov/31943749/",
           "locator": "Public abstract Background/Methods",
-          "access": "public; actual PubMed abstract inspected; publisher full text unavailable"
+          "access": "public"
         }
       ]
     },
@@ -1205,7 +1163,6 @@
       "scope": "schematic",
       "alt": "GORE CARDIOFORM Septal Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "64a1c1b91144634c58caf8faf33188d8088690d6e43d30bb6a098e8d249115ba",
-      "sourceRegister": "waves/07/research.json",
       "limitations": [
         "Thin ePTFE-covered double-disc frame; compact LA eyelet at distal+Z, distinct RA eyelet/lock loop at proximal-Z; no screw.",
         "Original offset loop paths show wireform construction, not exact routing or a braid.",
@@ -1217,19 +1174,19 @@
           "title": "GORE CARDIOFORM Septal Occluder SSED P050006/S060",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf5/P050006s060b.pdf",
           "locator": "Physical p.2 §V Figure1 left/right atrial views",
-          "access": "public; actual FDA text read; actual verified repository crop public/evidence/fda/gore-cardioform-septal.png viewed"
+          "access": "public"
         },
         {
           "title": "GORE CARDIOFORM Septal Occluder Instructions for Use P050006/S060",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf5/P050006s060d.pdf",
           "locator": "Physical p.3 Description / Figure1 callouts; sizing20/25/30",
-          "access": "public; actual IFU text/figure callouts read via web and coordinator"
+          "access": "public"
         },
         {
           "title": "GORE CARDIOFORM Septal Occluder product page",
           "url": "https://www.goremedical.com/products/cardioform-septal-occluder",
           "locator": "Actual product thumbnail16-9_cardiac-cardioform-septal-occluder_thumbnail_0.jpg; release sequence",
-          "access": "public; actual manufacturer page read; linked product photograph and companion reference rendering downloaded and viewed"
+          "access": "public"
         }
       ]
     },
@@ -1240,7 +1197,6 @@
       "scope": "schematic",
       "alt": "Harmony TPV — orthographic schematic/concept illustration; not to scale",
       "sha256": "b8f623eeef6d0ab399d56bba53b50304bd00e9712207d53879d6300301684fde",
-      "sourceRegister": "pilot/research.json",
       "limitations": [
         "Intermediate fullframe radial profile and axialstations are qualitative, unmeasured; only reported outerdiameter/length ratios guide envelope",
         "Representative6repeats/4tiers/sharedmodelvertices are graphical topology; actual individualwireconstruction and physicaljoints not reconstructed",
@@ -1287,7 +1243,6 @@
       "scope": "schematic",
       "alt": "HeartMate 3 LVAS — orthographic schematic/concept illustration; not to scale",
       "sha256": "873b1ffeeb64bb80db71b86a3ecdb30cf2bb9bfab04376ba76d309685810217d",
-      "sourceRegister": "waves/16/research.json",
       "limitations": [
         "No dimensions, component angles, graft length or port registration reconstructed; all proportions and routes normalized.",
         "Only original manufacturer labeling provides sufficiently visible detailed/gross component geometry; FDA SSED corroborates system architecture but its implant figure is small. These are separate documents, not independent geometric verification.",
@@ -1299,13 +1254,13 @@
           "title": "HeartMate 3 original PMA P160054 Summary of Safety and Effectiveness Data",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160054B.pdf",
           "locator": "PDF pp.1–2 Section V/Figure 1; p.4 Section IX.A.1",
-          "access": "public; actual documentary content and source figure pixels inspected"
+          "access": "public"
         },
         {
           "title": "HeartMate 3 original FDA Instructions for Use",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160054C.pdf",
           "locator": "Physical p.15 / printed1-5 Figure1.2; physical p.35 / printed2-3 Figure2.1",
-          "access": "public; actual documentary content and source figure pixels inspected"
+          "access": "public"
         }
       ]
     },
@@ -1316,7 +1271,6 @@
       "scope": "schematic",
       "alt": "HeartMate II LVAS — orthographic schematic/concept illustration; not to scale",
       "sha256": "9fc8cae4329edfe1a384cfaac92d3691b66a9ce757e3a65ca48929b0bd88f0c6",
-      "sourceRegister": "waves/16/research.json",
       "limitations": [
         "No dimensions, component angles, graft length or port registration reconstructed; all proportions and routes normalized.",
         "Only original manufacturer labeling provides sufficiently visible detailed/gross component geometry; FDA SSED corroborates system architecture but its implant figure is small. These are separate documents, not independent geometric verification.",
@@ -1328,13 +1282,13 @@
           "title": "HeartMate II original PMA P060040 Summary of Safety and Effectiveness Data",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf6/P060040B.pdf",
           "locator": "PDF pp.1–2 Section V and Figure 1; p.6 Biocompatibility Testing",
-          "access": "public; actual documentary content and source figure pixels inspected"
+          "access": "public"
         },
         {
           "title": "HeartMate II original FDA labeling: Instructions for Use and 2008 Patient Handbook",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf6/P060040C.pdf",
           "locator": "Physical pp.43–45 glossary; pp.56–57, handbook pp.8–9 Your Heart Pump and Figure 1",
-          "access": "public; actual documentary content and source figure pixels inspected"
+          "access": "public"
         }
       ]
     },
@@ -1345,7 +1299,6 @@
       "scope": "schematic",
       "alt": "HighLife Clarity Mitral Heart Valve — orthographic schematic/concept illustration; not to scale",
       "sha256": "bb7ae72d3dd9c0ad5150ecc9bef8262876f58e09b3ec3e65bd56165714ec5db4",
-      "sourceRegister": "waves/12/research.json",
       "limitations": [
         "One detailed exact-announcement geometric image family; other sources corroborate platform/identity, not full topology.",
         "No standard/LAV size selected; no historical28/31mm, nominal diameter, frame chemistry, exact attachment/scallop/cell count or hidden leaflet number inferred.",
@@ -1358,25 +1311,25 @@
           "title": "Clarity CE-mark announcement",
           "url": "https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-clarity-valve-the-next-generation-valve-for-the-highlife-tmvr-system/",
           "locator": "Purpose-Built design paragraph; embedded static highlife-clarity-valve.png",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "Clarity CE-mark press release PDF",
           "url": "https://www.highlifemedical.com/wp-content/uploads/highlife-clarity-valve-ce-mark-press-release-2708.pdf",
           "locator": "Physicalp1 device illustration/design text",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "HighFLO Clarity feasibility registry",
           "url": "https://clinicaltrials.gov/api/v2/studies/NCT04888247",
           "locator": "protocolSection.identificationModule.officialTitle; descriptionModule; armsInterventionsModule",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "HighLife TSMVR technology overview",
           "url": "https://www.highlifemedical.com/our-tsmvr-solution/",
           "locator": "Technology paragraphs; publication/trial links",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -1387,7 +1340,6 @@
       "scope": "schematic",
       "alt": "HighLife 31 mm study bioprosthesis — orthographic schematic/concept illustration; not to scale",
       "sha256": "2d38e808c3926457549cea9df2d65aeba54a9a074df6b7428116fbbed06d155a",
-      "sourceRegister": "waves/11/research.json",
       "limitations": [
         "Only one directly inspected geometric document for thishistorical configuration; registry independently establishes identity, not shape.",
         "Frame cells and scallop counts representative; relative proportions normalized independently; similar architecture is not interchangeability.",
@@ -1400,13 +1352,13 @@
           "title": "Historical HighLife 31 mm feasibility registry",
           "url": "https://clinicaltrials.gov/api/v2/studies/NCT02974881",
           "locator": "protocolSection.armsInterventionsModule.armGroups[0].description",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "Transcatheter Mitral Valve Implantation Using the HighLife System",
           "url": "https://doi.org/10.1016/j.jcin.2017.06.046",
           "locator": "physical p2/printed1663 TMVI Device Overview; physical p3/printed1664 Fig1",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         }
       ]
     },
@@ -1417,7 +1369,6 @@
       "scope": "schematic",
       "alt": "HighLife TMVR System (initial 2026 announcement) — orthographic schematic/concept illustration; not to scale",
       "sha256": "46650f3ed6073c7ec37c4be1d09ad868bc2361ee467dab36e9f72135ed0f9040",
-      "sourceRegister": "waves/12/research.json",
       "limitations": [
         "One detailed exact-announcement geometric image family; other sources corroborate platform/identity, not full topology.",
         "No standard/LAV size selected; no historical28/31mm, nominal diameter, frame chemistry, exact attachment/scallop/cell count or hidden leaflet number inferred.",
@@ -1430,25 +1381,25 @@
           "title": "Initial HighLife TMVR CE-mark press release PDF",
           "url": "https://www.highlifemedical.com/wp-content/uploads/jan26-2026-highlife-ce-mark-press-release.pdf",
           "locator": "Physicalp1 top-left static valve illustration and opening/dual-component design paragraphs",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "Initial HighLife TMVR CE-mark announcement",
           "url": "https://www.highlifemedical.com/highlife-receives-ce-mark-approval-for-its-tmvr-solution/",
           "locator": "Opening paragraphs; European Commercial Rollout; Availability Notice",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "HighLife CECP expert opinion EMA/EX/0000309556",
           "url": "https://www.ema.europa.eu/sv/media/74625",
           "locator": "Physicalp3 identity; p5 device architecture; p8 opinion date",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "HighLife TSMVR technology overview",
           "url": "https://www.highlifemedical.com/our-tsmvr-solution/",
           "locator": "Technology paragraphs; publication/trial links",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -1459,7 +1410,6 @@
       "scope": "schematic",
       "alt": "HighLife 28 mm transseptal study system — orthographic schematic/concept illustration; not to scale",
       "sha256": "8720aa5c089099f2b32a2e2183465589b611874df7853e75d743b179060437ce",
-      "sourceRegister": "waves/11/research.json",
       "limitations": [
         "Only one directly inspected geometric document for thishistorical configuration; registry independently establishes identity, not shape.",
         "Frame cells and scallop counts representative; relative proportions normalized independently; similar architecture is not interchangeability.",
@@ -1471,13 +1421,13 @@
           "title": "Historical HighLife 28 mm feasibility registry",
           "url": "https://clinicaltrials.gov/api/v2/studies/NCT04029363",
           "locator": "protocolSection identificationModule.officialTitle; descriptionModule.briefSummary",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "Transseptal implantation of the HighLife self-expandable mitral valve in a patient with severe mitral regurgitation",
           "url": "https://doi.org/10.33963/KP.15960",
           "locator": "accepted manuscriptphysical p3 introductory/device paragraphs; p5Fig1A/B/D/E",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         }
       ]
     },
@@ -1488,7 +1438,6 @@
       "scope": "schematic",
       "alt": "Intrepid — orthographic schematic/concept illustration; not to scale",
       "sha256": "3ed2f8ab198f60248adae9913b1c205b657d63b864a025a4fee3ce8cd830d0e3",
-      "sourceRegister": "waves/11/research.json",
       "limitations": [
         "Representative48 mm pose only; frame/cell/cleat counts and interframe support number unresolved.",
         "No tether/pad or generic large barbs added; no exact dimensional reconstruction of27:48 ratio beyond inner vs outer qualitative scale.",
@@ -1499,13 +1448,13 @@
           "title": "Intrepid transseptal EFS Clinical Investigation Plan V4.0",
           "url": "https://cdn.clinicaltrials.gov/large-docs/40/NCT02322840/Prot_SAP_001.pdf",
           "locator": "physical p1 summary; physical p21 / printed20 §6.1",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "Thirty-Day Outcomes Following Transfemoral Transseptal Transcatheter Mitral Valve Replacement: Intrepid TMVR Early Feasibility Study Results",
           "url": "https://doi.org/10.1016/j.jcin.2021.10.018",
           "locator": "preproof physical p7 system paragraph; p25 Central Illustration caption; p33 static Central Illustration A",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         }
       ]
     },
@@ -1516,7 +1465,6 @@
       "scope": "schematic",
       "alt": "LaaGuarder LP01 brochure model range — orthographic schematic/concept illustration; not to scale",
       "sha256": "69985a62f601b47d950018c0acefb2fe951e581aa60987f847f3c39c3a34ed3f",
-      "sourceRegister": "waves/02/research.json",
       "limitations": [
         "Brochure has no printed revision date. Exact manufacturing connectivity not established.",
         "Eight petal-path symbols are representative, not a count inferred from stylized front diagram.",
@@ -1544,7 +1492,6 @@
       "scope": "schematic",
       "alt": "LACbes LAA Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "0752caba71225569d326e35c13c57321e0404916c45fc58fc5abdbd86fe6f602",
-      "sourceRegister": "waves/02/research.json",
       "limitations": [
         "Preclinical9–12 versus clinical10–12 ranges kept separate; clinical source governs model.",
         "Exact braid density, angular phase, ribbon thickness and row layout not established."
@@ -1571,11 +1518,9 @@
       "scope": "schematic",
       "alt": "LAmbre — orthographic schematic/concept illustration; not to scale",
       "sha256": "6b37eefa3a43cccc8d6ccb61f4c9bcefc70defad1ebe2826843734502eda73bf",
-      "sourceRegister": "waves/02/research.json",
       "limitations": [
         "U ends and small hooks are complementary features; not claimed as two axial anchor rows.",
-        "Eight arm paths are qualitative; mesh density, hook bends and normalized proportions illustrative.",
-        "Actual original Brazilian device photograph inspected locally: artifacts/research/2026-10-12/site-preview/evidence/publications/lambre.png; qualitative shape check only."
+        "Eight arm paths are qualitative; mesh density, hook bends and normalized proportions illustrative."
       ],
       "sources": [
         {
@@ -1599,7 +1544,6 @@
       "scope": "schematic",
       "alt": "LAMINAR LAA Exclusion System — orthographic schematic/concept illustration; not to scale",
       "sha256": "da40861af8a905eff7574967b4d8a58766454a79d147cb54250dd29c21de805d",
-      "sourceRegister": "waves/04/research.json",
       "limitations": [
         "Exact ball strut count, junction/closure topology, manufacturing method, petal profiles and collar shape unknown; sparse original connected loops are explicit illustrative symbols.",
         "Unlocked explanatory pose; ball axial span, flattened-pole depth and ball/lock gap are illustrative, not measured.",
@@ -1611,19 +1555,19 @@
           "title": "Transcatheter Left Atrial Appendage Exclusion: Preclinical and Early Clinical Results With the Laminar Device",
           "url": "https://www.jacc.org/doi/10.1016/j.jcin.2023.04.028",
           "locator": "Fresh indexed publisher Methods/Device Description and Central Illustration B/C caption; issue16(11),12June2023,pp1347–1357",
-          "access": "public full indexed original article text read"
+          "access": "public"
         },
         {
           "title": "Addressing Peri-Device Leaks in Next-Generation Transcatheter Left Atrial Appendage Occluders: An Open Question",
           "url": "https://www.mdpi.com/2673-4095/6/1/15",
           "locator": "§2.9; Table3 Laminar row, actual280×192 image i011, Photo courtesy Biosense Webster; upperleft ball and lowerright lock",
-          "access": "Public manufacturer-credited image URL observed in browser DOM; actual pixels independently inspected by coordinator and reviewer; private inspection cache excluded"
+          "access": "public"
         },
         {
           "title": "Approach to Left Atrial Appendage Closure Takes a Turn",
           "url": "https://www.hmpgloballearningnetwork.com/site/eplab/letter-editor/approach-left-atrial-appendage-closure-takes-turn",
           "locator": "EP LAB DIGEST24(1):6; paragraph beginning A new technique for LAAC; reference2 cites Wong2023 primary",
-          "access": "Public indexed written article text inspected; not recording/interview"
+          "access": "public"
         }
       ]
     },
@@ -1634,7 +1578,6 @@
       "scope": "schematic",
       "alt": "Laplace TTVR System (investigational overview) — orthographic schematic/concept illustration; not to scale",
       "sha256": "1f34a4d5fd3c7993afba9167ba649535e3d811787641468c9ea8ba5bbc365c1a",
-      "sourceRegister": "waves/10/research.json",
       "limitations": [
         "Only one geometric documentary source: static Figure2A/B of original case report. Manufacturer independently confirms high-level flexible-frame system but not exact microgeometry.",
         "Flap/engager counts outside the published views unresolved; two overlapping anterior panels and local posterior engagement arrangement representative.",
@@ -1647,13 +1590,13 @@
           "title": "Transcatheter Tricuspid Valve Replacement in a Patient With Small Right Atrium and Multiple Device Leads",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13350377/",
           "locator": "Management, Figure2A/B static device figure; implantation paragraph",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "Laplace TTVR System technology overview",
           "url": "https://laplaceint.com/technology-1",
           "locator": "Laplace TTVR System / Design and Simple paragraphs; final Caution",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         }
       ]
     },
@@ -1664,7 +1607,6 @@
       "scope": "schematic",
       "alt": "LARIAT LAA Ligation System — orthographic schematic/concept illustration; not to scale",
       "sha256": "db155cd107fe0869fc7f4f74cd0283c17a23e1d58e6348832d547b574e5b3379",
-      "sourceRegister": "waves/05/research.json",
       "limitations": [
         "Knot is symbolic, relative knot/loop size enlarged; not a knot tying diagram.",
         "Regulatory indication remains soft tissue ligation; human study does not confer LAA-specific clearance.",
@@ -1675,25 +1617,25 @@
           "title": "LARIAT II Suture Delivery Device 510(k) K090385",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf9/K090385.pdf",
           "locator": "PDF p.1 Physical Description and Intended Use; p.5 Indications",
-          "access": "public actual FDA PDF text inspected"
+          "access": "public"
         },
         {
           "title": "Percutaneous Left Atrial Appendage Suture Ligation Using the LARIAT Device in Patients With Atrial Fibrillation: Initial Clinical Experience",
           "url": "https://www.jacc.org/doi/10.1016/j.jacc.2012.06.046",
           "locator": "Methods; Figures 1 and 3 captions",
-          "access": "public publisher indexed documentary text and captions read; direct full URL returned 403"
+          "access": "public"
         },
         {
           "title": "LARIAT RS Suture Delivery Device LBS-0108 Rev E",
           "url": "https://www.atricure.com/sites/default/files/devices-ifu/Lariat%20Suture%20Delivery%20Device.pdf",
           "locator": "Description; suture cutting precautions",
-          "access": "public indexed IFU text inspected"
+          "access": "public"
         },
         {
           "title": "PubMed bibliographic record PMID 23062528",
           "url": "https://pubmed.ncbi.nlm.nih.gov/23062528/",
           "locator": "JournalIssue PubDate; ArticleDate DateType=Electronic; Pagination; DOI",
-          "access": "public PubMed efetch XML and publisher-deposited Crossref JSON inspected; private05/_review/lariat-pubmed.xml and lariat-crossref.json"
+          "access": "public"
         }
       ]
     },
@@ -1704,7 +1646,6 @@
       "scope": "schematic",
       "alt": "Lefort LAA Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "3fcd5fafdedd44e571793351c2481ee66a1a5a93365daefb8c473eb6bbce6d86",
-      "sourceRegister": "waves/02/research.json",
       "limitations": [
         "Open-mouth interpretation is based on actual 2017 Figure2B pixels and the two-publication duplicate crown photo; not engineering validation.",
         "Eight cells/barbule symbols are representative, not a count claim. Angular phase chosen to keep symmetric side loops legible.",
@@ -1740,7 +1681,6 @@
       "scope": "schematic",
       "alt": "Melody TPV — orthographic schematic/concept illustration; not to scale",
       "sha256": "354bcd5be4b91c08f89537d5b53edd35033d4f31f915687e255fd01d5b7c7f42",
-      "sourceRegister": "waves/10/research.json",
       "limitations": [
         "Frame-cell layout and relative dimensions representative, no exact manufacturing topology.",
         "Native venous leaflets shown partly open, not a measured physiological state.",
@@ -1751,13 +1691,13 @@
           "title": "Melody original PMA SSED P140017",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140017B.pdf",
           "locator": "p1 identity; p2§V/Figure1",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "Melody / Ensemble original PMA labeling",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140017D.pdf",
           "locator": "physicalp5/printed3§1; physicalp10/printed8§4.2",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         }
       ]
     },
@@ -1768,7 +1708,6 @@
       "scope": "schematic",
       "alt": "Memo 4D Curve — orthographic schematic/concept illustration; not to scale",
       "sha256": "8ac4d642b5cc448cf731986b76f3f18ffe109b13dffdd2e109ce26559917dae6",
-      "sourceRegister": "waves/15/research.json",
       "limitations": [
         "Only one visual geometry source family (manufacturer brochure/product imagery); FDA independently establishes descriptive shape category and size scope.",
         "Outline, thickness, marker registration and gap angle are normalized. No size-specific dimension reconstruction.",
@@ -1779,13 +1718,13 @@
           "title": "MEMO 4D Curve — K261707 clearance and 510(k) summary",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261707.pdf",
           "locator": "PDF pp.5–6, Device Description and Technological Comparison",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "Memory in Motion — Memo platform CC-MK-001662 B",
           "url": "https://info.corcym.com/hubfs/CC-MK-001662%20B%20Memo%20platform%20brochure.pdf?hsLang=en",
           "locator": "Physical PDF pp.10–11 Memo 4D Curve; p.14 product ordering illustration/table; p.18 revision code",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -1796,7 +1735,6 @@
       "scope": "schematic",
       "alt": "Mi-CHORD System — orthographic schematic/concept illustration; not to scale",
       "sha256": "5d7050aa09907f69690814bb3493bfe943f4d3f8cf241336f5d2255985a828d5",
-      "sourceRegister": "waves/14/research.json",
       "limitations": [
         "FDA exact-build fastener geometry and Rev C IFU completed-assembly figure support qualitative structure. Current manufacturer webpage has product-revision notice; later revision geometry is not inferred.",
         "Normalized relative fastener size, paired-limb spacing, suture bridge, tail direction and length are illustrative. No exact crimp or suture-passage topology.",
@@ -1808,19 +1746,19 @@
           "title": "DEN230069 Mi-CHORD System De Novo classification summary",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN230069.pdf",
           "locator": "PDF pp.2-4 Device Description; p.5 Figure 3 and Table 1",
-          "access": "public; actual text and Figure 3 pixels inspected"
+          "access": "public"
         },
         {
           "title": "Mi-CHORD | LSI Solutions product information",
           "url": "https://www.lsisolutions.com/products/mi-chord",
           "locator": "Key Features: Dual Needle, LS-5 Suture, Custom Shaped Fastener; Compatible Sutures",
-          "access": "public; actual written page inspected; testimonial/video excluded"
+          "access": "public"
         },
         {
           "title": "Mi-CHORD System Product Insert, P/N 031789 Rev C",
           "url": "https://cdn.prod.website-files.com/66df2a8d6e60e234768228c1/6753703e8c368dfb1ed3b461_031789_RevC_Mi-CHORD_SYSTEM_Product_Insert.pdf",
           "locator": "PDF p.3 Figure 3; p.11 Figure 16; p.12 Figure 17",
-          "access": "public; actual PDF text and figures inspected"
+          "access": "public"
         }
       ]
     },
@@ -1831,7 +1769,6 @@
       "scope": "schematic",
       "alt": "MitraClip G4 — orthographic schematic/concept illustration; not to scale",
       "sha256": "c76f582f9b47ecec93f4b1da27d1488be4f7081719ef43843283803ab4577fd9",
-      "sourceRegister": "waves/13/research.json",
       "limitations": [
         "Normalized original envelopes; source-informed qualitative form, not CAD, exact angle or manufacturing geometry.",
         "Fine retention microfeatures, fabric weave, hidden mechanisms and exact topology omitted.",
@@ -1842,19 +1779,19 @@
           "title": "MitraClip: Advancing Mitral Therapy for Your Patients, executive summary",
           "url": "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/au/hcp/structural-heart/pdfs/mitraclip/Exec%20Summary%20-%20MitraClip%20G4%20v2.pdf",
           "locator": "PDF p.7 (printed pp.12-13), MitraClip Device (Implant) panel",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "MitraClip G4 System P100009/S029 decision",
           "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S029",
           "locator": "Approval Order Statement",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "TriClip G4 System Summary of Safety and Effectiveness Data P230007",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf",
           "locator": "PDF pp.2-3, section V; PDF p.5, section IX.A.1 Biocompatibility",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -1865,7 +1802,6 @@
       "scope": "schematic",
       "alt": "MitraClip G5 — orthographic schematic/concept illustration; not to scale",
       "sha256": "dcaf64a13ef78f38c0c398a2117961a95ac1b348519f37149c4943695164dbfd",
-      "sourceRegister": "waves/13/research.json",
       "limitations": [
         "Normalized original envelopes; source-informed qualitative form, not CAD, exact angle or manufacturing geometry.",
         "Fine retention microfeatures, fabric weave, hidden mechanisms and exact topology omitted.",
@@ -1877,25 +1813,25 @@
           "title": "MitraClip G5 System P100009/S067 decision",
           "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S067",
           "locator": "Device, Decision Date, Approval Order Statement",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "MitraClip Transcatheter Mitral Valve Repair (TEER)",
           "url": "https://www.structuralheart.abbott/int/products/transcatheter-mitral-valve-repair/mitraclip-tmvr-teer",
           "locator": "Features; Ability to choose clip size; paragraph after selection table; Controlled Gripper Actuation",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "MitraClip: Advancing Mitral Therapy for Your Patients, executive summary",
           "url": "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/au/hcp/structural-heart/pdfs/mitraclip/Exec%20Summary%20-%20MitraClip%20G4%20v2.pdf",
           "locator": "PDF p.7 (printed pp.12-13), MitraClip Device (Implant) panel",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "MitraClip G5 Delivery System P100009/S082 decision",
           "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S082",
           "locator": "Device; Approval Order Statement",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -1906,7 +1842,6 @@
       "scope": "schematic",
       "alt": "MitraClip NT — orthographic schematic/concept illustration; not to scale",
       "sha256": "52bee4f1749c70472783d31c5aa72eb6bd2e7bf33b634542035b4f19c48c4630",
-      "sourceRegister": "waves/12/research.json",
       "limitations": [
         "Only one actual geometric image source inspected; independent protocol and regulator decision corroborate scope/construction.",
         "Open pose illustrative, not an exact120-degree reconstruction. Covered arm thickness and hinge/body proportions normalized; fine gripper retention detail and exact topology omitted.",
@@ -1918,19 +1853,19 @@
           "title": "MitraClip NT IFU EL2106481 within P100009S028D labeling",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf10/P100009S028D.pdf",
           "locator": "first85 pages only; p10Table10.1; p11Fig10.1; p12Section12.0; p14-16 positions/controls",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "MitraClip NT System Clinical Investigation Plan ABT-CIP10334, Redacted VersionA",
           "url": "https://cdn.clinicaltrials.gov/large-docs/72/NCT04350372/Prot_000.pdf",
           "locator": "physicalp18 delivery controls; physicalp19 MitraClip NT Device; physicalp20 Fig4 caption",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "MitraClip NT design-change supplement P100009/S015",
           "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S015",
           "locator": "Device; DecisionDate; ApprovalOrderStatement",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         }
       ]
     },
@@ -1941,7 +1876,6 @@
       "scope": "schematic",
       "alt": "MitraClip NTR / XTR — orthographic schematic/concept illustration; not to scale",
       "sha256": "05b2a8d7e22782b82128c7a0491717c06589dba6b196a14147f8c636e3a5ef29",
-      "sourceRegister": "waves/13/research.json",
       "limitations": [
         "Normalized original envelopes; source-informed qualitative form, not CAD, exact angle or manufacturing geometry.",
         "Fine retention microfeatures, fabric weave, hidden mechanisms and exact topology omitted.",
@@ -1954,13 +1888,13 @@
           "title": "MitraClip NTR/XTR IFU EL2120710, second document within S028 labeling",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf10/P100009S028D.pdf",
           "locator": "PDF pp.95-98 (IFU own pp.10-13/87), Table 10.1, Figures 10.1-10.2, section 12",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "MitraClip System (NTR and XTR) P100009/S025 decision",
           "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S025",
           "locator": "Device, Decision Date, Approval Order Statement",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -1971,7 +1905,6 @@
       "scope": "schematic",
       "alt": "Abbott Navitor (original) — orthographic schematic/concept illustration; not to scale",
       "sha256": "db2553705e4295a43b6a48e0a9a4ecb7f1f5a9175e28f5de7ef8ccc5024fcc2c",
-      "sourceRegister": "waves/08/research.json",
       "limitations": [
         "Original NVTR generation and NVTR-25 catalog identity retained. No Navitor Vision marker row, NVRO leaflet changes or Titan dimensions imported.",
         "The apparent asymmetric middle came from projected overlap of three solid tissue attachment/free-edge outlines with sixfold representative frame cells. Entire scene is rigidly clocked to align an existing symmetry plane with side camera; no struts added, removed or rerouted.",
@@ -1986,19 +1919,19 @@
           "title": "Navitor Transcatheter Aortic Valve Implantation System IFU ARTMT600163776_B",
           "url": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/MA/en/ARTMT600163776_B.PDF",
           "locator": "Physical p3 / printed1 Description, Figure1 and Table1; printed7 Device design",
-          "access": "public; previously downloaded actual original PDF physical3 Fig1 and Table1 freshly visually inspected privately"
+          "access": "public"
         },
         {
           "title": "Thirty-day and one-year outcomes of Navitor: prospective global PORTICO NG Study",
           "url": "https://api.eurointervention.com/v1/articles/17031/download/pdf",
           "locator": "Physical p3 Study Device; physical p2 Central illustration panelA",
-          "access": "public; previously downloaded original PDF physical2 Central illustration panelA freshly rendered and visually inspected; Study Device text read"
+          "access": "public"
         },
         {
           "title": "Portico NG Approval Study Clinical Investigation Plan, Version E_US",
           "url": "https://cdn.clinicaltrials.gov/large-docs/22/NCT04011722/Prot_000.pdf",
           "locator": "Cover version/date; printed63–64 Device Design/Navitor Valve (PDF physical64–65 including cover)",
-          "access": "public; original official registry PDF text inspected through browser retrieval"
+          "access": "public"
         }
       ]
     },
@@ -2009,7 +1942,6 @@
       "scope": "schematic",
       "alt": "NeoChord DS1000 — orthographic schematic/concept illustration; not to scale",
       "sha256": "5e5e17e7ff352672a1a6b954b49a578075563829f8dfc8824d3b06fa808c6c27",
-      "sourceRegister": "waves/14/research.json",
       "limitations": [
         "Normalized lengths and thicknesses are illustrative; not CAD, nominal ratios or implantation guidance.",
         "One double chord is a representative unit, not a recommended repair count. Pledget shape/material not fixed by this drawing.",
@@ -2021,19 +1953,19 @@
           "title": "NeoChord Artificial Chordae Delivery System, Model DS1000, IFU 700010-002 Rev 5",
           "url": "https://neochord.com/wp-content/uploads/2019/02/700010-002_Rev_5_IFU_pc_eng.pdf",
           "locator": "p.2 section 2; p.4 section 8; p.6 sections 9.4.2-9.4.5; p.9 section 9.7.8; p.10 section 9.8.4",
-          "access": "public; actual PDF text and p.6 photographs inspected"
+          "access": "public"
         },
         {
           "title": "Healthcare Professionals | NeoChord",
           "url": "https://www.neochord.com/healthcare-professionals/",
           "locator": "The NeoChord DS1000 System; PROCEDURE | Echo Guided Procedure paragraphs",
-          "access": "public; written page inspected; videos excluded"
+          "access": "public"
         },
         {
           "title": "Trans-apical beating-heart implantation of neo-chordae to mitral valve leaflets: results of an acute animal study",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3241122/",
           "locator": "Material and Methods, Concept; Figure 3 and caption",
-          "access": "public; actual full written article and Figure 3 inspected"
+          "access": "public"
         }
       ]
     },
@@ -2044,7 +1976,6 @@
       "scope": "schematic",
       "alt": "Occlutech ASD Occluder (US original P200032) — orthographic schematic/concept illustration; not to scale",
       "sha256": "d480802be79dd2dfd8a0a7988d6fe6a5b5914057d4014bd001c4debdd9c56c64",
-      "sourceRegister": "waves/07/research.json",
       "limitations": [
         "OriginalP200032configuration retained:37ASD18P nominaldiameters18/33/29. Axiallength, disccontours/shoulders, ballgeometryandwirecount/routing/joints remain illustrative.",
         "No side-camera clipping bakedinto3Dwaistpaths; front/rearoblique depth classification usescurrentview. Side/distal remainblackperestablishedstyle.",
@@ -2058,19 +1989,19 @@
           "title": "Occlutech ASD Occluder and Pistol Pusher original SSED P200032",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200032B.pdf",
           "locator": "Physical pp.2–3 §V Figures1–2; physical p.5 Table2 row37ASD18P",
-          "access": "public indexed originalFDA text andFigure1caption inspected thiscycle; directFDA403respectfullynotbypassed"
+          "access": "public"
         },
         {
           "title": "Occlutech ASD Occluder US product information",
           "url": "https://us.occlutech.com/asd/",
           "locator": "Intro noLAhub; sizingtablerow37ASD18P; productphoto linked6, two exposedfaceperspectives",
-          "access": "publicUSpage and actuallinked1800x897productPNG freshly inspected privately"
+          "access": "public"
         },
         {
           "title": "Instructions for Use: Occlutech ASD Occluder, P17F03.009.02",
           "url": "https://www.bisusa.com/content/dam/catalog/bbraun/bbraunProductCatalog/S/AEM2015/en-us-bis/b5/ifu-for-occlutechasdoccluder.pdf",
           "locator": "PhysicalPDFp3/printed2§1; physicalp5/printed4§5.1Figure1; physicalp6/printed5Table1row37ASD18P; physicalp22backcover issuedateRev02,2025-12-18",
-          "access": "public linked22pagePDF downloaded; actualpage5Figure1 andpage6Table1 pixels inspected"
+          "access": "public"
         }
       ]
     },
@@ -2081,7 +2012,6 @@
       "scope": "schematic",
       "alt": "Original Occlutech LAA Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "774af00a9c91cc8213aec7052e41bf51aca4290884208e05a0c86b752510770c",
-      "sourceRegister": "waves/03/research.json",
       "limitations": [
         "V3.0 is the directly documented predecessor comparator; earlier individual prototypes not reconstructed.",
         "Loop connections, braid density, cap dimensions and hub mechanics illustrative."
@@ -2091,19 +2021,19 @@
           "title": "Preclinical assessment of a modified Occlutech left atrial appendage closure device in a porcine model",
           "url": "https://www.nature.com/articles/s41598-021-82359-1.pdf",
           "locator": "PDF pp.2–3, device-description section and Figure1A–B (p.3), comparison table and footnote",
-          "access": "Public publisher PDF downloaded, text read and actual Figure1 inspected locally."
+          "access": "public"
         },
         {
           "title": "Left Atrial Appendage Closure With the New Occlutech Device: First in Man Experience and Neurological Outcome",
           "url": "https://pubmed.ncbi.nlm.nih.gov/27925332/",
           "locator": "Abstract Methods/Results, 2012–2016 cohort",
-          "access": "Public PubMed abstract read."
+          "access": "public"
         },
         {
           "title": "Occlutech LAA Occluder Urgent Field Safety Notice FSN-20160928",
           "url": "https://www.moph.gov.lb/userfiles/files/Medical%20Devices/Medical%20Devices%20Recalls%202016/24-10-2016/OcclutechLAAOccluder.pdf",
           "locator": "PDF pp.1–2, affected articles and problem description",
-          "access": "Public manufacturer PDF read."
+          "access": "public"
         }
       ]
     },
@@ -2114,7 +2044,6 @@
       "scope": "schematic",
       "alt": "Modified Occlutech Plus LAA Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "47082f51b366798ffb82081faac239377f930e14a62847faab007c5e43b9e9cc",
-      "sourceRegister": "waves/03/research.json",
       "limitations": [
         "Primary source is sufficient for depicted features; second separate exact-Plus source access/locator remains incomplete.",
         "Porcine prototype architecture; no claim of later commercial availability or universal dimensions.",
@@ -2125,13 +2054,13 @@
           "title": "Preclinical assessment of a modified Occlutech left atrial appendage closure device in a porcine model",
           "url": "https://www.nature.com/articles/s41598-021-82359-1.pdf",
           "locator": "PDF pp.2–3, device-description section and Figure1A–B (p.3), comparison table and footnote",
-          "access": "Public publisher PDF downloaded, text read and actual Figure1 inspected locally."
+          "access": "public"
         },
         {
           "title": "Addressing Peri-Device Leaks (exact full title not independently recovered)",
           "url": "https://www.mdpi.com/2673-4095/6/1/15",
           "locator": "Occlutech Plus indexed paragraph; exact PDF page/figure unavailable",
-          "access": "Public documentary review lead; current direct access429."
+          "access": "public"
         }
       ]
     },
@@ -2142,11 +2071,10 @@
       "scope": "schematic",
       "alt": "Occlutech Paravalvular Leak Device — orthographic schematic/concept illustration; not to scale",
       "sha256": "e67d6ca8741a838f3c79d74735ce809768678e16d5899bf535a0dbf80d557a49",
-      "sourceRegister": "waves/06/research.json",
       "limitations": [
         "2020 rectangular waist variant; smaller proximal disc, larger distal disc and ball attachment.",
         "PET in each disc; two marker locations schematic; pillow outline original approximation, not twist variant.",
-        "All views are original normalized explanatory geometry; source images reviewed only in private cache; no tracing.",
+        "All views use original normalized explanatory geometry; no tracing.",
         "Rear-gray coding is a depth cue, not physical opacity. Human factual signoff pending.",
         "Braid is sparse local texture: transverse crossed strands on gently bowed disc faces and separate crossed waist mesh. No continuous hub-to-rim loops, exact wire counts or structural radial ribs are asserted."
       ],
@@ -2155,19 +2083,19 @@
           "title": "Occlutech PLD brochure P17F06.002.04",
           "url": "https://www.occlutech.com/wp-content/uploads/2020/05/P17F06-002-04_Occlutech-PLD-Br_R03b-1.pdf",
           "locator": "Physical p.1 actual product photograph/waist-twist diagrams and rectangularW row61PLD04W; p.2 features",
-          "access": "public PDF downloaded and actual p1 visually inspected"
+          "access": "public"
         },
         {
           "title": "Early experience with the Occlutech PLD occluder for mitral paravalvar leak closure through a hybrid transapical approach",
           "url": "https://eurointervention.pcronline.com/article/early-experience-with-the-occlutech-pld-occluder-for-mitral-paravalvar-leak-closure-through-a-hybrid-transapical-approach",
           "locator": "The Occlutech PLD paravalvar leak occluder section; Figure2 caption; Table1",
-          "access": "public actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "Occlutech PLD Occluder",
           "url": "https://occlutech.com/pld/",
           "locator": "Product features; material/design characteristics",
-          "access": "public actual manufacturer product page inspected"
+          "access": "public"
         }
       ]
     },
@@ -2178,7 +2106,6 @@
       "scope": "schematic",
       "alt": "OMEGA LAA Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "e0b9e0eddceb23f74b39d6ded901e9bd78511f3453bb7fa4180aa97d78408454",
-      "sourceRegister": "waves/03/research.json",
       "limitations": [
         "Four/five-pair manufacturer scope does not cover FIM six-hook small sizes.",
         "Distal recess is photograph-based qualitative form; depths and mesh density illustrative.",
@@ -2189,7 +2116,7 @@
           "title": "First-in-human results of the Omega left atrial appendage occluder for patients with non-valvular atrial fibrillation",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9724991/",
           "locator": "Introduction; Figure1 photographs and embedded sizing table; Discussion",
-          "access": "Public article read; actual Figure1 image inspected in browser and local cache."
+          "access": "public"
         },
         {
           "title": "OMEGA LAA Occluder product page",
@@ -2201,7 +2128,7 @@
           "title": "OMEGA LAA Occluder Field Safety Notice EM-FSN-24001",
           "url": "https://assets.hpra.ie/data/docs/default-source/product-updates/fsn/field-safety-notices/november-2024/omega-left-atrial-appendage-%28laa%29-occluder-device_eclipse-medical_-advice-regarding-a-device-removal.pdf?sfvrsn=a200dad9_1",
           "locator": "PDF p.1, affected device description and catalogue range",
-          "access": "Public regulatory-hosted manufacturer PDF read."
+          "access": "public"
         }
       ]
     },
@@ -2212,7 +2139,6 @@
       "scope": "schematic",
       "alt": "PASCAL Precision — orthographic schematic/concept illustration; not to scale",
       "sha256": "f809edb849995b0379b4c62d0da343561be5ae398b9c42fde030abbc1b86cd15",
-      "sourceRegister": "waves/12/research.json",
       "limitations": [
         "No exact dimensional reconstruction or paddle opening angle. Shown open pose is illustrative, not the final closed implant.",
         "Clasp strip outlines show articulation only; hidden microstructure, retention features and fabric weave unresolved and omitted.",
@@ -2223,13 +2149,13 @@
           "title": "PASCAL Precision original PMA SSED P220003",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/P220003B.pdf",
           "locator": "p2 SectionV; p3 Fig2; p4 SectionVII",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "Edwards PASCAL Precision Instructions for Use, original FDA labeling",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/P220003D.pdf",
           "locator": "p1 model table/implant/implant catheter; p8 Section8.4.3 steps16-18; p31 Fig1/p32 Fig2 captions",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         }
       ]
     },
@@ -2240,7 +2166,6 @@
       "scope": "concept",
       "alt": "PFM LAA Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "b95361c8fa0006d897ae5d32e65db68a78afa4ef288ffb76d6bd9a9cbaeb538f",
-      "sourceRegister": "waves/04/research.json",
       "limitations": [
         "One actual geometric source reused between reviews. Primary2012deck requireslogin.",
         "3D depth, mesh paths, collar curvature and connector length approximate."
@@ -2250,19 +2175,19 @@
           "title": "PFM Medical: Device Description and Preclinical Results",
           "url": "https://www.tctmd.com/slide/pfm-medical-device-description-and-preclinical-results",
           "locator": "Public title/date and access gate",
-          "access": "public landing page inspected; deck inaccessible"
+          "access": "public"
         },
         {
           "title": "The Spectrum of Devices for Percutaneous Left Atrial Appendage Occlusion",
           "url": "https://citoday.com/articles/2018-may-june/the-spectrum-of-devices-for-percutaneous-left-atrial-appendage-occlusion",
           "locator": "PFM paragraph; actualFigure1O; Sideris paragraph/Figure1M; SeaLA paragraph",
-          "access": "public full article and actual Figure1 image inspected in browser"
+          "access": "public"
         },
         {
           "title": "Percutaneous Left Atrial Appendage Closure: Current Devices and Clinical Outcomes",
           "url": "https://www.ahajournals.org/doi/pdf/10.1161/CIRCINTERVENTIONS.117.005359",
           "locator": "Pfm section; Table1/Figure1O cited",
-          "access": "public indexed text read; direct PDF inaccessible"
+          "access": "public"
         }
       ]
     },
@@ -2273,7 +2198,6 @@
       "scope": "approximate",
       "alt": "PLAATO system — orthographic schematic/concept illustration; not to scale",
       "sha256": "22e229b19ef2a2295402e6baf25010057d593391b60705d2fa7ec1750f918af9",
-      "sourceRegister": "pilot/research.json",
       "limitations": [
         "Allnormalizedradii/lengths, intermediateovoidshape, eight meridians/anchorsperrow, rowstations/angles and tinebends are illustrative, not actualmanufacturing",
         "Modeledrootincidence proves drawingcontinuity only, not weld/cut/clothattachment engineering",
@@ -2321,13 +2245,11 @@
       "scope": "concept",
       "alt": "Prolipsis patch redesign — orthographic schematic/concept illustration; not to scale",
       "sha256": "c7949512abab26823d10d55cf4000479f0b26f71d51757cfeaa78cfadbde8041",
-      "sourceRegister": "pilot/research.json",
       "limitations": [
         "No exact-version primaryengineeringdocument or second independent geometricperspective obtained; additionalconsensus isidentityonly",
         "LinFig3f is singlegeometrysource, photographstate notverifieddeployedshape. Alldepth/symmetry/side/endrotations and necktermination remainconceptual",
         "Faintsurfacecrease not reconstructed as seam; materials/internalframe/fixation/release/counts remainunknown",
-        "Boundedexactname/FDA/IFU search found no matching accessibletechnicalfigure; this is a searchgap, not a regulatoryabsenceclaim",
-        "Linref48 is Chow2019review DOI10.1016/j.tcm.2018.08.008, not primaryIFU. Search discovery not treated as inspectedfulltext/figure",
+        "A cited review is not an exact-version IFU and does not establish device geometry.",
         "Humanfactual/clinical/engineering/rights signoffpending; conceptscope unchanged, helddesigns stayheld"
       ],
       "sources": [
@@ -2358,7 +2280,6 @@
       "scope": "schematic",
       "alt": "Respiree Cardio-Respiratory Monitor (RS001) — orthographic schematic/concept illustration; not to scale",
       "sha256": "a59caa69a15fda0484c7351bcf22b40ce222c7aa7dcd1bb76e28800df92a3512",
-      "sourceRegister": "waves/19/research.json",
       "limitations": [
         "One detailed geometric source family; FDA corroborates device architecture and gross dimensions only.",
         "Original2023 image is illustrative; rear shape,interfaces,aperture/control layout and precise radii unknown.",
@@ -2370,25 +2291,25 @@
           "title": "Respiree Cardio-Respiratory Monitor K223681",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K223681.pdf",
           "locator": "Physical p4 / printed 1 of 8, Device Description; physical p7 / printed 4 of 8, Displayed parameters; physical p8 / printed 5 of 8, Dimensions",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         },
         {
           "title": "Digital Therapeutics Startup Respiree Gains US FDA Clearance for Its RS001 Cardio-Respiratory Wearable",
           "url": "https://www.prnewswire.com/news-releases/digital-therapeutics-startup-respiree-gains-us-fda-clearance-for-its-rs001-cardio-respiratory-wearable-301766399.html",
           "locator": "Caption Illustrative Image of Respiree RS001 Cardio-respiratory Wearable; exact image https://mma.prnewswire.com/media/2003973/image.jpg?p=original",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         },
         {
           "title": "Respiree Cardio-Respiratory Monitor System K250934",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250934.pdf",
           "locator": "Physical p5 / printed 1, Device Description; physical p7 / printed 3, subject/predicate model headers; physical p9 / printed 5, Dimensions and Display; physical p10 / printed 6, changes",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         },
         {
           "title": "RS001 Cardio Respiratory Monitor Owners Manual; FCC manufacturer manual mirror",
           "url": "https://device.report/manual/3825567",
           "locator": "Product Models table; Operation: Models RS001.2.C / RS001.2.S; Models RS001.2.D / RS001.2.DS; Charging",
-          "access": "public; actual documentary contents inspected"
+          "access": "public"
         }
       ]
     },
@@ -2399,7 +2320,6 @@
       "scope": "schematic",
       "alt": "Revivent TC System — orthographic schematic/concept illustration; not to scale",
       "sha256": "eed2ef555e001d950b87d0bd44cbc54a26b8721d21b04353b18776b4b2421959",
-      "sourceRegister": "waves/15/research.json",
       "limitations": [
         "Multiple primary documentary sources support gross paired bar/tether geometry; no exact manufacturing geometry reconstructed.",
         "Pair count, tether length, relative bar rotation and anatomical spacing vary; one pair shown only.",
@@ -2410,19 +2330,19 @@
           "title": "Less invasive ventricular reconstruction for ischaemic heart failure",
           "url": "https://bioventrix.com/wp-content/uploads/2022/11/Klein.pdf",
           "locator": "PDF p.3 Figure 2A and Device description and implantation; p.4 continuation",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "Micro-Anchor Implant",
           "url": "https://bioventrix.com/int/micro-anchor-implant/",
           "locator": "Micro-anchor implant description and labeled internal anchor/tether/external anchor image",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "Transcatheter Left Ventricular Reconstruction in Heart Failure Patients With Prior Anterior Myocardial Infarction: The Prospective ALIVE Trial",
           "url": "https://pubmed.ncbi.nlm.nih.gov/39797846/",
           "locator": "Abstract Methods",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -2433,7 +2353,6 @@
       "scope": "schematic",
       "alt": "Edwards SAPIEN 3 — orthographic schematic/concept illustration; not to scale",
       "sha256": "3b6c7d42011b03b7590b8e0bcb601decb3560a090aaa1c51e87f7558ef197a2c",
-      "sourceRegister": "waves/09/research.json",
       "limitations": [
         "Original 9600TFX26 SAPIEN3 identity retained; no Ultra taller cover, RESILIA tissue, or alternative delivery/indication inferred.",
         "The apparent middle asymmetry was solid internal tissue contours crossing metal. Nine tissue commissural/scalloped/free-edge paths are dashed explanatory outlines, not metal poles. Original geometric paths and relative tissue-to-frame angular registration remain unchanged.",
@@ -2441,7 +2360,6 @@
         "Representative ninefold lattice/crown and low rhomboid pattern retained as sparse explanatory geometry; actual detailed cell count/routing, joint map, frame proportions and measured26mm geometry not reconstructed. Source illustrations are more detailed than this schematic.",
         "Partly open leaflet shape, radial/axial position, scalloped suture map and transparent textile conventions are illustrative. Physical opaque tissue and cloth are shown as internal boundaries for clarity; not a validated leaflet state.",
         "Additional actual manufacturer side/open-top images are exactS3-labeled but not specimen-size labeled. PMDA model/26mm inset corroborates original identity; mixed later-model columns omitted. No current clinical recommendation/authorization transfer.",
-        "A searched2015 technical article PMC page returned recaptcha; no article figure inspection or topology/count claim imported from it.",
         "Human factual, clinical, engineering and rights signoff pending. No sourceimage/fulltext copied/traced/redistributed. Display clocking is not clinical alignment guidance."
       ],
       "sources": [
@@ -2449,25 +2367,25 @@
           "title": "SAPIEN 3 original SSED P140031",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031B.pdf",
           "locator": "p2 §V Figure1",
-          "access": "public; existing original FDA PDF physical2 actual Figure1 and §V freshly rendered and visually inspected; original public text freshly checked"
+          "access": "public"
         },
         {
           "title": "Edwards SAPIEN 3 IFU DOC-0186240A",
           "url": "https://eifu.edwards.com/eifu/5970f1a946e0fb00015e5f4c/DOC-0186240A.pdf",
           "locator": "§1 Device Description; Figure1",
-          "access": "public; previously downloaded original IFU English physicalp1 Figure1/§1 freshly rendered and description read"
+          "access": "public"
         },
         {
           "title": "Edwards media gallery — original SAPIEN3 valve side and open-top stills",
           "url": "https://www.edwards.com/newsroom/media-gallery",
           "locator": "SAPIEN3 valve section, side-view and top-view-leaflets-open links, distinct from separate Ultra/RESILIA sections",
-          "access": "public actual media-gallery section read; both exactS3 linked staticPNG files retrieved and visually inspected privately"
+          "access": "public"
         },
         {
           "title": "Edwards SAPIEN3 PMDA Review Report — English reference translation",
           "url": "https://www.pmda.go.jp/files/000251033.pdf",
           "locator": "I.ProductOverview printed10/physical11, Figure1A model9600TFX third26mm inset; Table1 first9600TFX column",
-          "access": "public official PDF downloaded; actualphysical11/printed10 Figure1A and Table1 visually inspected"
+          "access": "public"
         }
       ]
     },
@@ -2478,7 +2396,6 @@
       "scope": "schematic",
       "alt": "SAPIEN M3 — orthographic schematic/concept illustration; not to scale",
       "sha256": "fb6e5a7d88861b98f0557a723267d7733bb1d105d0aff06f80ee01e2d8345b6d",
-      "sourceRegister": "waves/11/research.json",
       "limitations": [
         "One normalized assembled pose; upper dock course and helical pitch are schematic, not a complete exact wire topology.",
         "Local PVL guard angular registration is arbitrary; sparse crossed curves symbolize braid, not true weave. PET/ePTFE boundaries transparent; fine annular skirt texture omitted.",
@@ -2490,31 +2407,31 @@
           "title": "SAPIEN M3 original PMA SSED P250019",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250019B.pdf",
           "locator": "p2§V/Fig1; p3§V/Fig3",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "SAPIEN M3 original FDA physician labeling",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250019D.pdf",
           "locator": "p1§1/Fig1; p2 dock paragraph",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "SAPIEN M3 system Instructions for Use 60050527001A",
           "url": "https://eifu.edwards.com/eifu/tmtt-production-eifus/DOC-0551257A.pdf",
           "locator": "p1§1/Fig1; p2Fig2 dock insets; p35 revision",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "One system. Two parts. MR treatment reimagined. PP--US-11559 v1.0",
           "url": "https://assets-us-01.kc-usercontent.com/6239a81e-8f0f-0040-a1df-b4932a10f6ae/c6df2131-e04b-4889-a502-4d5c5e054ebc/Step3_DIGITAL%20PP--US-11559%20v1.0%20SAPIEN%20M3%20US%20Brochure.pdf",
           "locator": "physical p2 assembled implant static image; p3 separate valve/dock labelled static images; p4 copyright",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "SAPIEN M3 system features",
           "url": "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-mitral-tricuspid-technologies/sapien-m3/features",
           "locator": "SAPIEN M3 dock labelled static image and numbered feature captions",
-          "access": "public; actual static figure pixels inspected"
+          "access": "public"
         }
       ]
     },
@@ -2525,7 +2442,6 @@
       "scope": "schematic",
       "alt": "Edwards SAPIEN 3 Ultra RESILIA — orthographic schematic/concept illustration; not to scale",
       "sha256": "866b14dbf8b3b5722d9877abd087620cf0182d5f52882059ee6f149e3f152828",
-      "sourceRegister": "waves/09/research.json",
       "limitations": [
         "Exact9755RSL26 generation retained: RESILIA bovine tissue and taller external cover. No9750TFX ThermaFix or original9600TFX lowercover substitution.",
         "One rigid82deg axial rotation preserves every original frame/tissue/skirt path, curve length and relative registration; nine tissue commissural/scalloped/free-edge paths dashed. No new struts, metal posts or altered attachment map.",
@@ -2541,25 +2457,25 @@
           "title": "SAPIEN 3 / Ultra / Ultra RESILIA consolidated IFU P140031/S182",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S182D.pdf",
           "locator": "physical pp1–2 §1 Figure1; p9 Table9",
-          "access": "public; original consolidated FDA PDF text freshly read through browser retrieval"
+          "access": "public"
         },
         {
           "title": "SAPIEN 3 / Ultra / Ultra RESILIA IFU 10054332002 A",
           "url": "https://eifu.edwards.com/eifu/5970f1a946e0fb00015e5f4c/DOC-0551082A_CA.pdf",
           "locator": "p1 §1; p2 Figure1 (9755RSL), compared Figure3(9600TFX), Table1",
-          "access": "public; previously downloaded original manufacturer PDF physicalp2 actual9755RSLFigure1/Table1 freshly visually inspected; §1 description read"
+          "access": "public"
         },
         {
           "title": "Edwards newsroom media gallery — SAPIEN 3 Ultra RESILIA",
           "url": "https://www.edwards.com/newsroom/media-gallery",
           "locator": "SAPIEN 3 Ultra RESILIA side view and top view leaflets open downloadable images",
-          "access": "public actual current media-gallery exactRESILIA section read; fresh linked side/open staticPNGs downloaded and visually inspected privately"
+          "access": "public"
         },
         {
           "title": "Edwards SAPIEN3 PMDA Review Report — English reference translation",
           "url": "https://www.pmda.go.jp/files/000251033.pdf",
           "locator": "I.ProductOverview printed10/physical11 Table1 THIRD9755RSL column and its actual product image; Fig1A is9600TFX and not used asRESILIAgeometry",
-          "access": "public official originalPDF cached earlier today; actualphysical11/printed10 Table1 third9755RSL column freshly visually inspected"
+          "access": "public"
         }
       ]
     },
@@ -2570,7 +2486,6 @@
       "scope": "schematic",
       "alt": "Edwards SAPIEN XT (9300TFX) — orthographic schematic/concept illustration; not to scale",
       "sha256": "ea321a5c9b1fedc2c21f40ac9d93d3c26018b37588016261d9290915a330474d",
-      "sourceRegister": "waves/09/research.json",
       "limitations": [
         "Exact native-aortic9300TFX29 selected; three tiers rather than23/26mm two-tier frame. No S3 external cuff, RESILIA tissue or caval landing-stent features transferred.",
         "XT has three actual metallic commissural posts. Three new solid representative centerlines share upper frame vertices and extend above mesh; finite-width tuning-fork/attachment detail and exact dimensions remain unresolved.",
@@ -2587,19 +2502,19 @@
           "title": "SAPIEN XT original SSED P130009",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130009B.pdf",
           "locator": "p2 §V Figure1",
-          "access": "public; original FDA PDF text freshly read through browser retrieval"
+          "access": "public"
         },
         {
           "title": "SAPIEN XT NovaFlex+ IFU 157563004 A",
           "url": "https://eifu.edwards.com/eifu/5970f1a946e0fb00015e5f4c/DOC-0035735A.pdf",
           "locator": "p1 Figure1; p2 §1 Table1",
-          "access": "public; previously downloaded original manufacturer IFU actual p1Figure1 rightmost29mm and p2§1/Table1 freshly visually inspected/read"
+          "access": "public"
         },
         {
           "title": "Comparison of SAPIEN3 and SAPIEN XT transcatheter heart valve stent-frame expansion: evaluation using multi-slice computed tomography",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5066339/",
           "locator": "Introduction paragraph distinguishing three XT posts from S3; Figure2 TOP ROW upper-right XT image (660mm2,29mm per Methods mapping); lowerS3 row excluded",
-          "access": "public full original HTML Introduction/Methods/caption read; actualFigure2 JPEG fetched from observed source link and visually inspected privately"
+          "access": "public"
         }
       ]
     },
@@ -2610,7 +2525,6 @@
       "scope": "schematic",
       "alt": "SAPIEN XT IVC caval implantation (TRICAVAL use) — orthographic schematic/concept illustration; not to scale",
       "sha256": "83d392248fab51442169ddeaba7cef26ddf692a021547408ebc2f55de9a598c9",
-      "sourceRegister": "waves/09/research.json",
       "limitations": [
         "Selected29mmXT plus one separate sinus-XL prestent is a representative trialconfiguration; exact prestent number/size/revision/length, overlap, radiusratio and axial registration remain unverified normalized conventions",
         "NativeaorticIFU and Kazunooriginal2016 support XT component architecture only; originalTRICAVALmethods independently establishes caval assembly. No nativeaortic outcomes/indication or newerS3/RESILIA features transferred",
@@ -2626,31 +2540,31 @@
           "title": "TRICAVAL randomized trial",
           "url": "https://eurointervention.pcronline.com/article/treatment-of-severe-tricuspid-regurgitation-in-patients-with-advanced-heart-failure-with-caval-vein-implantation-of-the-edwards-sapien-xt-valve-tricavala-controlled-prospective-randomized-trial",
           "locator": "PublisherPDFphysicalp3/printed1508 CAVAL VALVE IMPLANTATIONS; Figure1A/B; DOI10.4244/EIJ-D-19-00901",
-          "access": "public; actual original publisher PDF parsed text and cached Fig1 pixels inspected"
+          "access": "public"
         },
         {
           "title": "SAPIEN XT NovaFlex+ IFU 157563004 A",
           "url": "https://eifu.edwards.com/eifu/5970f1a946e0fb00015e5f4c/DOC-0035735A.pdf",
           "locator": "p1 Figure1; p2 §1 Table1",
-          "access": "public; existing downloaded exactmanufacturer IFUp1Figure1/p2 text freshly inspected"
+          "access": "public"
         },
         {
           "title": "SAPIEN XT original SSED P130009",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130009B.pdf",
           "locator": "p2 §V Figure1",
-          "access": "public; originalFDA description retained as previously inspected documentary context"
+          "access": "public"
         },
         {
           "title": "sinus-XL Stent Family 9997-0004EN",
           "url": "https://www.optimed.com/wp-content/uploads/2024/06/sinus-XL-Family_9997-0004EN_web.pdf",
           "locator": "pp4–5 sinus-XL THE CLASSIC product photo and features",
-          "access": "public; existing manufacturerPDF p4actualphoto/p5text freshly inspected"
+          "access": "public"
         },
         {
           "title": "Comparison of SAPIEN3 and SAPIEN XT transcatheter heart valve stent-frame expansion: evaluation using multi-slice computed tomography",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5066339/",
           "locator": "Introduction paragraph distinguishing three XT posts from S3; Figure2 TOP ROW upper-right XT image (660mm2,29mm per Methods mapping); lowerS3 row excluded",
-          "access": "public full original HTML Introduction/Methods/caption read; actualFigure2 JPEG fetched from observed source link and visually inspected privately"
+          "access": "public"
         }
       ]
     },
@@ -2661,7 +2575,6 @@
       "scope": "concept",
       "alt": "SeaLA LAA Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "a64f48a77050878158b7025766c361b5606a2563dc56229bd6ea091f16b39399",
-      "sourceRegister": "waves/04/research.json",
       "limitations": [
         "Only one actual manufacturer-supplied geometric figure reviewed; primary2024methods unavailable.",
         "Historical architecture concept; hook axial registration, mesh density and proportions approximate."
@@ -2671,19 +2584,19 @@
           "title": "Update on Left Atrial Appendage Occlusion",
           "url": "https://citoday.com/articles/2019-july-aug/update-on-left-atrial-appendage-occlusion",
           "locator": "SeaLA paragraph and actualFigure10, courtesyHangzhou NuoMao Medical Technology",
-          "access": "public full article and actual manufacturer-supplied Figure10 inspected in browser"
+          "access": "public"
         },
         {
           "title": "The Spectrum of Devices for Percutaneous Left Atrial Appendage Occlusion",
           "url": "https://citoday.com/articles/2018-may-june/the-spectrum-of-devices-for-percutaneous-left-atrial-appendage-occlusion",
           "locator": "PFM paragraph; actualFigure1O; Sideris paragraph/Figure1M; SeaLA paragraph",
-          "access": "public full article and actual Figure1 image inspected in browser"
+          "access": "public"
         },
         {
           "title": "Percutaneous left atrial appendage closure with SeaLA device in non-valvular atrial fibrillation",
           "url": "https://onlinelibrary.wiley.com/doi/10.1002/ccd.31056",
           "locator": "PublicAbstract Objectives/Methods; journal104(7):1491–1498, December2024",
-          "access": "public abstract read; full methods not accessible"
+          "access": "public"
         }
       ]
     },
@@ -2694,7 +2607,6 @@
       "scope": "concept",
       "alt": "Sideris transcatheter patch — orthographic schematic/concept illustration; not to scale",
       "sha256": "9c8cb772ad50e58c8b8500d9592a4eb5a45665e042a32ee18f3d5482d43cfc76",
-      "sourceRegister": "waves/04/research.json",
       "limitations": [
         "Conceptscope retained: outlineisoriginalanatomy-adaptedshape, notactualfixedreleasedimplantgeometry.",
         "Nylonloop localattachmentisfunctionalillustration basedonbottomsewingdescription; exactsite/azimuth/plane unverified.",
@@ -2736,7 +2648,6 @@
       "scope": "schematic",
       "alt": "SIEGEL TAVR (2026 disclosed configuration) — orthographic schematic/concept illustration; not to scale",
       "sha256": "6ff41b163a66611d8fc00566019701e23352f548815e650d8b283efdd8a35c28",
-      "sourceRegister": "waves/09/research.json",
       "limitations": [
         "Molybdenum-rhenium frame, nickel/cobalt free; dry porcine tissue.",
         "18 cells is manufacturer claim; no exact cell topology or revision asserted.",
@@ -2749,13 +2660,13 @@
           "title": "SIEGEL Transcatheter Aortic Valve",
           "url": "https://www.mirusmed.com/solutions/structural-heart/siegel-transcatheter-aortic-valve-2/",
           "locator": "Molybdenum-Rhenium; Exceptional Biocompatibility; Superior Coronary Access; linked Bright-Valve-2026.png",
-          "access": "public; actual document text inspected"
+          "access": "public"
         },
         {
           "title": "Boston Scientific announces strategic investment in MiRus LLC",
           "url": "https://news.bostonscientific.com/2026-05-18-Boston-Scientific-announces-strategic-investment-in-MiRus-LLC",
           "locator": "Nonquotation narrative paragraphs beginning The SIEGEL TAVR valve and Uniquely; investigational caution",
-          "access": "public; actual document text inspected"
+          "access": "public"
         }
       ]
     },
@@ -2766,7 +2677,6 @@
       "scope": "concept",
       "alt": "Sierra LAA Ligation System — orthographic schematic/concept illustration; not to scale",
       "sha256": "27516d5e520b7cb51e0cf62c5e8646981effa61ac5dccbd46c46da5c4366cf40",
-      "sourceRegister": "waves/05/research.json",
       "limitations": [
         "Only one primary geometry source; Mayo record identity-only corroboration.",
         "Titanium lock symbol is not its established external shape; section / internal engagement unknown."
@@ -2776,13 +2686,13 @@
           "title": "First-in-Human Percutaneous Epicardial-Only Left Atrial Appendage Closure Using Sierra Left Atrial Appendage Ligation System",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11642118/",
           "locator": "Section 2.2, actual Figures 2 and 3 (PDF p.4); Section 2.3 (PDF p.5)",
-          "access": "public full article text; actual PDF p.4 figures inspected via public mirror https://pdfs.semanticscholar.org/414b/04f2b8b6a3991d11e35ed7408dd8768fa39a.pdf; private05/_review/sierra.pdf"
+          "access": "public"
         },
         {
           "title": "Feasibility Study Of A Left Atrial Appendage Closure Device In Patients With Atrial Fibrillation",
           "url": "https://www.mayo.edu/research/clinical-trials/cls-20319576",
           "locator": "About this study; Study IDs",
-          "access": "public actual institutional study page inspected"
+          "access": "public"
         }
       ]
     },
@@ -2793,7 +2703,6 @@
       "scope": "schematic",
       "alt": "Tendyne — orthographic schematic/concept illustration; not to scale",
       "sha256": "e3b1bb806cf9ac64674f4d1203b0a47e7b119d16531e9efb744576e7ade45058",
-      "sourceRegister": "waves/11/research.json",
       "limitations": [
         "FDA SSED catalog crop and official Abbott static features image inspected; IFU documentary text independently confirms construction. Exact SP size, fabric seam map, tether bridle count and pad outline unresolved.",
         "D-like cuff and taper are qualitative; exact SP size, skirt seam map, tether bridle count and pad outline not established.",
@@ -2806,19 +2715,19 @@
           "title": "Tendyne original PMA SSED P240042",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042B.pdf",
           "locator": "p2 Figure1 valve/apical-pad panel; p3 §V",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "Tendyne original FDA IFU ARTEN600354777 RevA",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240042D.pdf",
           "locator": "p3 §1.1/Fig1; p4 Table1",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "Tendyne features",
           "url": "https://www.my-connext.com/products/tendyne/features",
           "locator": "Features / labelled static valve, inner frame, outer frame, tether and pad illustration",
-          "access": "public; actual static figure pixels inspected"
+          "access": "public"
         }
       ]
     },
@@ -2829,7 +2738,6 @@
       "scope": "schematic",
       "alt": "TRICENTO bicaval valved stent — orthographic schematic/concept illustration; not to scale",
       "sha256": "cc92dd268d77bb44371a6ce428b0faae776ed275e2d88cb41b08cb38b68858b2",
-      "sourceRegister": "waves/10/research.json",
       "limitations": [
         "Patient-customized curvature, caval diameter ratio, length and cell counts representative; exact individual configuration not asserted.",
         "Primary original report supports ONE lateral bicuspid element; later reviews describing two valves not adopted.",
@@ -2841,13 +2749,13 @@
           "title": "First-in-man implantation of the Tricento transcatheter heart valve for the treatment of severe tricuspid regurgitation",
           "url": "https://eurointervention.pcronline.com/article/first-in-man-implantation-of-the-tricento-transcatheter-heart-valve-for-the-treatment-of-severe-tricuspid-regurgitation/pdf",
           "locator": "p759 Methods/Figure1; p760Figure3",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         },
         {
           "title": "TRICENTO Valved Stent Graft Bioprosthesis Patient Leaflet Rev00105601",
           "url": "https://www.nvt-med.com/files/Content/Downloads/Patient%20Leaflet%20TRICENTO_Rev_00105601_072021_02.pdf",
           "locator": "p1 English Materials and quantitative composition; Manufacturer Information",
-          "access": "public; actual documentary text inspected"
+          "access": "public"
         }
       ]
     },
@@ -2858,7 +2766,6 @@
       "scope": "schematic",
       "alt": "TriClip G4 — orthographic schematic/concept illustration; not to scale",
       "sha256": "d6a42bd4310f5aa5fca7056156f6d07465f454428c7f8b9be7d7db1aea7c0ffc",
-      "sourceRegister": "waves/13/research.json",
       "limitations": [
         "Normalized original envelopes; source-informed qualitative form, not CAD, exact angle or manufacturing geometry.",
         "Fine retention microfeatures, fabric weave, hidden mechanisms and exact topology omitted.",
@@ -2869,25 +2776,25 @@
           "title": "TriClip G4 Instructions for Use EL2140056",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007C.pdf",
           "locator": "PDF pp.3-4, Device Description, Figure 1, Table 2",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "TriClip G4 System Summary of Safety and Effectiveness Data P230007",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf",
           "locator": "PDF pp.2-3, section V; PDF p.5, section IX.A.1 Biocompatibility",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "MitraClip G4 System P100009/S029 decision",
           "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S029",
           "locator": "Approval Order Statement",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "MitraClip: Advancing Mitral Therapy for Your Patients, executive summary",
           "url": "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/au/hcp/structural-heart/pdfs/mitraclip/Exec%20Summary%20-%20MitraClip%20G4%20v2.pdf",
           "locator": "PDF p.7 (printed pp.12-13), MitraClip Device (Implant) panel",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -2898,7 +2805,6 @@
       "scope": "schematic",
       "alt": "TriClip G5 illustrative NT architecture — orthographic schematic/concept illustration; not to scale",
       "sha256": "41fffb352b0d5be0560284f58e4eb190311ef8bc9137990ebf7f8eeb02822b1e",
-      "sourceRegister": "pilot/research.json",
       "limitations": [
         "Exact current G5 implant revision/IFU engineering drawing and lock geometry not obtained. S019 explicitly changes implant lock; unchanged-G4 claim rejected.",
         "Only generic covered paired-arm/inner-gripper architecture refined; current manufacturer imagery has G4/XT identifiers, patient guide figure unlabeled. No exact NT dimensions or current friction-count mapping verified.",
@@ -2947,7 +2853,6 @@
       "scope": "approximate",
       "alt": "TricValve 2023 qualitative SVC + IVC pair — orthographic schematic/concept illustration; not to scale",
       "sha256": "fac63b2cf956432c2f76fd6cf5976cd3185e903f8b90ea41078dd81319d4890e",
-      "sourceRegister": "pilot/research.json",
       "limitations": [
         "No selected SVC/IVC model pair or physical scale, dimensional/cell count specification or exact 3D topology claimed. Twelve graphic circumferential nodes and eight axial gaps are illustrative, not copied computational CAD counts.",
         "Radius profiles, regular symmetry, local cell edges/crown points, skirt bounds, relative component spacing/scale and all3leaflet curves/pose/attachment height are original graphic conventions.",
@@ -2984,7 +2889,6 @@
       "scope": "schematic",
       "alt": "JenaValve Trilogy (US P250024) — orthographic schematic/concept illustration; not to scale",
       "sha256": "d178b2c93b250b2c529eb9abbefededc55cf11614233d68be01f675fc8317710",
-      "sourceRegister": "waves/08/research.json",
       "limitations": [
         "US P250024 TRILOGY-THV-M25 identity retained. No first-generation transapical JenaValve, J-Valve or unverified alternative generation substituted.",
         "Original full outflow ring and three closed hexagonal boxes were unsupported convenience geometry. They are replaced by three curved intermediate paths and a threefold scalloped scaffold; all intermediate/crown samples lie on representative revolved profile rather than long interior chords.",
@@ -3002,25 +2906,25 @@
           "title": "Trilogy Transcatheter Heart Valve System SSED P250024",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250024B.pdf",
           "locator": "Physical p2 §V Figure1",
-          "access": "public; original FDA document text freshly read; prior source-linked Figure1 crop freshly visually inspected privately"
+          "access": "public"
         },
         {
           "title": "Trilogy US Instructions for Use P250024D",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250024D.pdf",
           "locator": "Physical p3 / printed3 §1.1 Figure1 and Table1; p4 Table2",
-          "access": "public; fresh FDA original text and figure description read through browser; direct PDF GET returned404"
+          "access": "public"
         },
         {
           "title": "ALIGN-AR JenaValve Trilogy Heart Valve System PMA Study Protocol P02C320, Revision U",
           "url": "https://cdn.clinicaltrials.gov/large-docs/47/NCT04415047/Prot_000.pdf",
           "locator": "Printed/physical21–22 §2.1; Figure5 at printed/physical22",
-          "access": "public official registry PDF downloaded; actual printed22 Figure5 pixels rendered and visually inspected; printed21–22 §2.1 text read"
+          "access": "public"
         },
         {
           "title": "Trilogy System — current US product page and two linked static device images",
           "url": "https://jenavalve.com/trilogy-system/",
           "locator": "The Trilogy Valve/Features; front still tsvalve2.jpg; additional oblique still trilogyhero-v2.png",
-          "access": "public actual page text read; both linked static image files retrieved and visually inspected privately"
+          "access": "public"
         }
       ]
     },
@@ -3031,7 +2935,6 @@
       "scope": "schematic",
       "alt": "TriMemo — orthographic schematic/concept illustration; not to scale",
       "sha256": "dd405e197fdf8e400cb0ea15ad66896e490c84a174b2ab6c7feeb58954c9c0f5",
-      "sourceRegister": "waves/15/research.json",
       "limitations": [
         "Only manufacturer product illustrations establish the visible envelope; FDA provides independent documentary description but no second geometric figure.",
         "Relief, marker placement, covered cross-section and exact size contour illustrative; no exact cell pattern.",
@@ -3042,13 +2945,13 @@
           "title": "TriMemo — K260498 clearance and 510(k) summary",
           "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260498.pdf",
           "locator": "PDF pp.5–6, Device Description and Technological Comparison",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         },
         {
           "title": "Memory in Motion — Memo platform CC-MK-001662 B",
           "url": "https://info.corcym.com/hubfs/CC-MK-001662%20B%20Memo%20platform%20brochure.pdf?hsLang=en",
           "locator": "Physical PDF pp.12–13 TriMemo; p.15 product ordering image/table",
-          "access": "public; actual documentary content inspected"
+          "access": "public"
         }
       ]
     },
@@ -3059,13 +2962,11 @@
       "scope": "schematic",
       "alt": "Ultraseal LAA Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "7ec5ba5dbab103077390829878c03d9967a7e6982bd13c8cf27c5f23f2c76588",
-      "sourceRegister": "waves/02/research.json",
       "limitations": [
         "2016publisherFigure1A/F/G/H is the only actually inspected geometric document;2018technical text/caption corroborates architecture/count/materials, but its figure pixels remain unavailable.",
         "Twelve support meridians and cross-links are original representative routes, not a claim of12manufactured struts. All12 modeled hook roots are supported.",
         "Single axial level for hook symbols is diagrammatic and does not assert a real row arrangement.",
         "Joint bulges represent dual articulation function, not literal ball joints. Sail outline, node/post gauges and all proportions illustrative.",
-        "Publisher2016PDF identity checked; a search-suggested CJ.a2016.0002/33886 file proved an unrelated diet article and was excluded before geometry use.",
         "Additional2018PagnottaPubMed record is identity-only and does not count as independent geometry evidence."
       ],
       "sources": [
@@ -3096,12 +2997,10 @@
       "scope": "schematic",
       "alt": "Ultraseal II LAA Occluder — orthographic schematic/concept illustration; not to scale",
       "sha256": "397ca64748287f281a034e0899b2cd0fa3dc7d75da6d23057ef7db5c289a5769",
-      "sourceRegister": "waves/03/research.json",
       "limitations": [
         "Six closed loops and twelve supported shoulder locations are original illustrative routes, not recovered manufacturing topology.",
         "One2019document supplies actual inspected front/side/oblique photographs; independent2022primary text supports exact-II distinctions. No claim of newly inspecting LIGATE figure pixels.",
-        "Sail supports, functional joint bulges, marker subset, hook axial registration and all normalized proportions remain schematic.",
-        "2019article/PDF,2023CVIAfulltext and2021Oxfordimage retrieval did not supply additional inspectable figures. Oxford adapted artwork was not used to infer exact-II topology."
+        "Sail supports, functional joint bulges, marker subset, hook axial registration and all normalized proportions remain schematic."
       ],
       "sources": [
         {
@@ -3125,7 +3024,6 @@
       "scope": "schematic",
       "alt": "V-LAP — orthographic schematic/concept illustration; not to scale",
       "sha256": "597120e8b42a88a050995b85dec2d86d3ef559d449c33720dcc1380956bf5186",
-      "sourceRegister": "waves/17/research.json",
       "limitations": [
         "2020/2021 clinical source scope only; exact current hardware bridge absent.",
         "Only one detailed geometric figure family inspected; second primary text corroborates two-disc/body architecture.",
@@ -3138,13 +3036,13 @@
           "title": "A rise in left atrial pressure detected by the V‐LAP™ system for patients with heart failure during the coronavirus disease 2019 pandemic",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7537224/",
           "locator": "Figure1A/B and device description; DOI10.1002/ehf2.13033",
-          "access": "public; actual documentary text and figure pixels inspected"
+          "access": "public"
         },
         {
           "title": "Implantation of an Innovative Intracardiac Microcomputer System for Web-Based Real-Time Monitoring of Heart Failure: Usability and Patients’ Attitudes",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8411428/",
           "locator": "System paragraph and Figure1",
-          "access": "public; actual documentary text and figure pixels inspected"
+          "access": "public"
         }
       ]
     },
@@ -3155,7 +3053,6 @@
       "scope": "schematic",
       "alt": "Ventura Interatrial Shunt — orthographic schematic/concept illustration; not to scale",
       "sha256": "f00a9ed61afff7ce975a84bac1f434f436de852b598edc6af09716542c4a47b2",
-      "sourceRegister": "waves/07/research.json",
       "limitations": [
         "Valveless, fully ePTFE-encapsulated hourglass; six axial / five sinusoidal frame members.",
         "Three exposed E engagement loops simplified; no braid or first-generation tissue valve.",
@@ -3167,13 +3064,13 @@
           "title": "V-Wave Ventura sponsor briefing document for FDA panel",
           "url": "https://www.fda.gov/media/189899/download",
           "locator": "Physical p.44(printed43) §3.2.1 Figure9; physical p.45 §3.2.2",
-          "access": "public; actual PDF downloaded, §3.2.1 read, Figure9 viewed privately"
+          "access": "public"
         },
         {
           "title": "In vivo fluid dynamics of the Ventura interatrial shunt device in patients with heart failure",
           "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/ehf2.14859",
           "locator": "Methods / Study device; Figure1A caption",
-          "access": "public; actual full article Methods text and Figure1A caption inspected via web"
+          "access": "public"
         }
       ]
     },
@@ -3184,10 +3081,8 @@
       "scope": "schematic",
       "alt": "WATCHMAN FLX — orthographic schematic/concept illustration; not to scale",
       "sha256": "c03dbcd01233b665ca98ea19874ecb69d774e9834e3d95d211eaa4d2a48ba1d2",
-      "sourceRegister": "waves/01/research.json",
       "limitations": [
-        "Exact row angular registration and cell construction not specified by inspected primary text.",
-        "Gross figure inspected in existing FDA documentary crop artifacts/research/2026-10-12/site-preview/evidence/fda/watchman-flx.png."
+        "Exact row angular registration and cell construction not specified by inspected primary text."
       ],
       "sources": [
         {
@@ -3223,7 +3118,6 @@
       "scope": "schematic",
       "alt": "Early WATCHMAN FLX (2015 iteration) — orthographic schematic/concept illustration; not to scale",
       "sha256": "b03308628166c606bdb49ec196cf94f339e2069a4181d9f121697f5c741896e5",
-      "sourceRegister": "waves/01/research.json",
       "limitations": [
         "Only early-FLX figure caption reviewed; source figure pixels unavailable.",
         "Closed shape, cell connections and angular phase are illustrative."
@@ -3250,7 +3144,6 @@
       "scope": "schematic",
       "alt": "WATCHMAN FLX Pro generic illustrative implant — orthographic schematic/concept illustration; not to scale",
       "sha256": "86d4b1479bbb65f7c6861de4f890b8e67d8d4d07abb105ac7f51304b5eef2348",
-      "sourceRegister": "pilot/research.json",
       "limitations": [
         "Exact physical frame/anchor count and topology not verified in obtained primarydescription; eighteen supportlines and six anchor symbols at each of two levels deliberately illustrative, not manufacturer count assertions",
         "Pro photograph supports connected grossarchitecture, PETsidecoverage and bareclosed distalreturn; detailed suture/frame junctions, anchorangles/barbprofile and axial locations remain unknown",
@@ -3288,10 +3181,8 @@
       "scope": "schematic",
       "alt": "Original WATCHMAN (2015) — orthographic schematic/concept illustration; not to scale",
       "sha256": "a857921fed48a3af71a3cb4799500ea95fcf2e0eab5ffa83b19b6223251dcc19",
-      "sourceRegister": "waves/01/research.json",
       "limitations": [
-        "Strut widths, bends, cloth boundary, angular phase and normalized dimensions illustrative.",
-        "Gross form also inspected in existing local documentary crop artifacts/research/2026-10-12/site-preview/evidence/publications/watchman-original.png; no tracing."
+        "Strut widths, bends, cloth boundary, angular phase and normalized dimensions illustrative."
       ],
       "sources": [
         {
@@ -3321,7 +3212,6 @@
       "scope": "schematic",
       "alt": "Coherex WaveCrest — orthographic schematic/concept illustration; not to scale",
       "sha256": "a28f0943433ff12f358e19c29c23d741cb40547a5e9f48d0d754641250a33be5",
-      "sourceRegister": "waves/03/research.json",
       "limitations": [
         "Database record identifiesCE-markedWaveCrest asreported2015; no frozenhardware revision. Drawing is historicalphoto-informedgrossschematic, not recovered2015CAD or verifiedunchangedbuild.",
         "Ten anchorcarriers and threebands are representative symbols only. Actualhistorical totals, clocking, attachmentmicrogeometry, topology and proportions unknown.",
@@ -3395,14 +3285,5 @@
     "ver-xpv-initial-2021",
     "ver-xpv-modified-2021",
     "ver-youngheartvalve-rejuvenate"
-  ],
-  "dataUIApproval": {
-    "date": "2026-10-20",
-    "source": "Owner message: I approve the Data section w/ the illustrations."
-  },
-  "integrationApproval": {
-    "date": "2026-10-20",
-    "scope": "Owner approved Data illustrations, Atlas fix, and push/PR/review/merge if acceptable",
-    "source": "Owner instruction in this chat"
-  }
+  ]
 }

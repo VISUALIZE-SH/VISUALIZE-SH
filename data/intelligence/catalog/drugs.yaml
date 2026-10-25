@@ -641,9 +641,11 @@ specs:
     source: src-camzyos-label
     values:
       drug-class:
+        reviewStatus: reviewed
         value: Selective cardiac myosin inhibitor
         loc: Label §12.1
       route-dosing:
+        reviewStatus: reviewed
         value: "Oral daily: adults start 5 mg; pediatric 30–<45 kg start 2.5 mg, ≥45 kg start 5 mg; echo-guided titration, maximum 15 mg"
         loc: September 2026 label §2.1, Figures 1–4; PDF pp.2–3
         observedAt: "2026-10-03"
@@ -651,13 +653,16 @@ specs:
           Adult dose steps 2.5/5/10/15 mg; pediatric steps also include 1 mg. CYP inhibitors may modify starting doses (§2.2); monitoring
           follows the applicable label algorithm.
       monitoring:
+        reviewStatus: reviewed
         value: LVEF by echo (interrupt <50%); REMS; CYP2C19/3A4 interaction limits
         loc: Label Boxed Warning; §5.1-5.3
       indication-scope:
+        reviewStatus: reviewed
         value: Symptomatic obstructive HCM in adults and pediatric patients ≥30 kg, to improve functional capacity and symptoms
         loc: September 2026 label §1; PDF p.2
         observedAt: "2026-10-03"
       pivotal-trials:
+        reviewStatus: reviewed
         value: EXPLORER-HCM, VALOR-HCM (adults); SCOUT-HCM (pediatric)
         loc: September 2026 label §14; PDF pp.8–12
         observedAt: "2026-10-03"
@@ -666,122 +671,130 @@ specs:
     category: cardiac-myosin-inhibitors
     source: src-myqorzo-label
     values:
-      drug-class: { value: Selective cardiac myosin inhibitor, loc: 'Label §12.1' }
-      route-dosing: { value: 'Oral; 5-20 mg daily, titrate 5 mg q2-8wk, echo-guided', loc: 'Label §2.1-2.2' }
-      monitoring: { value: 'LVEF by echo (decrease <50%, interrupt <40%); REMS; CYP2C9/3A4 interactions', loc: 'Label Boxed Warning; §5.1-5.3' }
-      indication-scope: { value: Symptomatic obstructive HCM to improve functional capacity and symptoms, loc: 'Label §1' }
-      pivotal-trials: { value: SEQUOIA-HCM, loc: 'Label §14 Clinical Studies' }
+      drug-class: { reviewStatus: reviewed, value: Selective cardiac myosin inhibitor, loc: 'Label §12.1' }
+      route-dosing: { reviewStatus: reviewed, value: 'Oral; 5-20 mg daily, titrate 5 mg q2-8wk, echo-guided', loc: 'Label §2.1-2.2' }
+      monitoring: { reviewStatus: reviewed, value: 'LVEF by echo (decrease <50%, interrupt <40%); REMS; CYP2C9/3A4 interactions', loc: 'Label Boxed Warning; §5.1-5.3' }
+      indication-scope: { reviewStatus: reviewed, value: Symptomatic obstructive HCM to improve functional capacity and symptoms, loc: 'Label §1' }
+      pivotal-trials: { reviewStatus: reviewed, value: SEQUOIA-HCM, loc: 'Label §14 Clinical Studies' }
   - version: ver-vyndaqel-vyndamax
     category: attr-cm-drugs
     source: src-vyndaqel-label
     values:
-      drug-class: { value: TTR tetramer stabilizer, loc: 'Label §12.1' }
+      drug-class: { reviewStatus: reviewed, value: TTR tetramer stabilizer, loc: 'Label §12.1' }
       route-dosing:
+        reviewStatus: reviewed
         value: 'Vyndaqel 80 mg or Vyndamax 61 mg orally once daily'
         loc: 'Label §2.1'
         observedAt: '2026-10-03'
         context: 'Vyndaqel is four 20 mg capsules; Vyndamax is one 61 mg capsule. They are not substitutable on a per-milligram basis.'
-      monitoring: { value: 'No REMS or lab-monitoring program specified; caution with BCRP substrates', loc: 'Label (no §5); §7.1 Drug Interactions' }
-      indication-scope: { value: 'ATTR-CM (wild-type or hereditary): reduces CV mortality and hospitalization', loc: 'Label §1' }
-      pivotal-trials: { value: ATTR-ACT, loc: 'Label §14 Clinical Studies' }
+      monitoring: { reviewStatus: reviewed, value: 'No REMS or lab-monitoring program specified; caution with BCRP substrates', loc: 'Label (no §5); §7.1 Drug Interactions' }
+      indication-scope: { reviewStatus: reviewed, value: 'ATTR-CM (wild-type or hereditary): reduces CV mortality and hospitalization', loc: 'Label §1' }
+      pivotal-trials: { reviewStatus: reviewed, value: ATTR-ACT, loc: 'Label §14 Clinical Studies' }
   - version: ver-attruby
     category: attr-cm-drugs
     source: src-attruby-label
     values:
-      drug-class: { value: 'Near-complete TTR tetramer stabilizer (>=90%)', loc: 'Label §12.1' }
-      route-dosing: { value: 'Oral; 712 mg (two 356 mg tablets) twice daily', loc: 'Label §2.1' }
-      monitoring: { value: 'Serum creatinine/eGFR dip within ~4wk of initiation, generally reversible', loc: 'Label §6.1' }
-      indication-scope: { value: 'ATTR-CM (wild-type or variant): reduces CV death and CV hospitalization', loc: 'Label §1' }
-      pivotal-trials: { value: ATTRibute-CM, loc: 'Label §14 Clinical Studies' }
+      drug-class: { reviewStatus: reviewed, value: 'Near-complete TTR tetramer stabilizer (>=90%)', loc: 'Label §12.1' }
+      route-dosing: { reviewStatus: reviewed, value: 'Oral; 712 mg (two 356 mg tablets) twice daily', loc: 'Label §2.1' }
+      monitoring: { reviewStatus: reviewed, value: 'Serum creatinine/eGFR dip within ~4wk of initiation, generally reversible', loc: 'Label §6.1' }
+      indication-scope: { reviewStatus: reviewed, value: 'ATTR-CM (wild-type or variant): reduces CV death and CV hospitalization', loc: 'Label §1' }
+      pivotal-trials: { reviewStatus: reviewed, value: ATTRibute-CM, loc: 'Label §14 Clinical Studies' }
   - version: ver-amvuttra
     category: attr-cm-drugs
     source: src-amvuttra-label
     values:
-      drug-class: { value: 'TTR-silencing siRNA, GalNAc-conjugated', loc: 'Label §12.1' }
-      route-dosing: { value: '25 mg subcutaneous injection once every 3 months, HCP-administered', loc: 'Label §2.1-2.2' }
+      drug-class: { reviewStatus: reviewed, value: 'TTR-silencing siRNA, GalNAc-conjugated', loc: 'Label §12.1' }
+      route-dosing: { reviewStatus: reviewed, value: '25 mg subcutaneous injection once every 3 months, HCP-administered', loc: 'Label §2.1-2.2' }
       monitoring:
+        reviewStatus: reviewed
         value: 'Vitamin A at RDA; ophthalmology referral for ocular symptoms'
         loc: 'Label §5.1, Reduced Serum Vitamin A Levels and Recommended Supplementation'
         observedAt: '2026-10-03'
         context: 'Serum vitamin A does not reflect total body vitamin A during treatment. The label advises against higher doses to normalize serum levels; it does not prescribe routine serum-level titration.'
-      indication-scope: { value: 'ATTR-CM: reduces CV mortality, CV hospitalizations, urgent HF visits', loc: 'Label §1.2' }
-      pivotal-trials: { value: HELIOS-B, loc: 'Label §14 Clinical Studies' }
+      indication-scope: { reviewStatus: reviewed, value: 'ATTR-CM: reduces CV mortality, CV hospitalizations, urgent HF visits', loc: 'Label §1.2' }
+      pivotal-trials: { reviewStatus: reviewed, value: HELIOS-B, loc: 'Label §14 Clinical Studies' }
   - version: ver-onpattro
     category: attr-cm-drugs
     source: src-patisiran-crl
     values:
       indication-scope:
+        reviewStatus: reviewed
         value: 'ATTR-CM not FDA-approved (CRL Oct 2023); label covers only hATTR-PN'
         loc: 'Press release, regulatory update; cf. label §1 (no ATTR-CM indication)'
         context: 'FDA stated APOLLO-B did not establish clinical meaningfulness for the cardiomyopathy indication despite meeting its primary/secondary endpoints; no subsequent resubmission has been approved as of this extraction.'
-      pivotal-trials: { value: APOLLO-B, loc: 'Press release, regulatory update' }
+      pivotal-trials: { reviewStatus: reviewed, value: APOLLO-B, loc: 'Press release, regulatory update' }
   - version: ver-farxiga
     category: [hfref-drugs, hfpef-drugs]
     source: src-farxiga-label
     values:
-      drug-class: { value: SGLT2 inhibitor, loc: 'Label §12.1' }
-      route-dosing: { value: 'Oral; 10 mg once daily (all HF indications)', loc: 'Label §2.3' }
-      monitoring: { value: 'Ketoacidosis risk; volume status/hypotension; genital mycotic infections', loc: 'Label §5.1-5.3' }
-      indication-scope: { value: 'HF: reduces CV death, HF hospitalization, urgent HF visits, any LVEF', loc: 'Label §1' }
-      pivotal-trials: { value: 'DAPA-HF; DELIVER', loc: 'Label §14 Clinical Studies' }
+      drug-class: { reviewStatus: reviewed, value: SGLT2 inhibitor, loc: 'Label §12.1' }
+      route-dosing: { reviewStatus: reviewed, value: 'Oral; 10 mg once daily (all HF indications)', loc: 'Label §2.3' }
+      monitoring: { reviewStatus: reviewed, value: 'Ketoacidosis risk; volume status/hypotension; genital mycotic infections', loc: 'Label §5.1-5.3' }
+      indication-scope: { reviewStatus: reviewed, value: 'HF: reduces CV death, HF hospitalization, urgent HF visits, any LVEF', loc: 'Label §1' }
+      pivotal-trials: { reviewStatus: reviewed, value: 'DAPA-HF; DELIVER', loc: 'Label §14 Clinical Studies' }
   - version: ver-jardiance
     category: [hfref-drugs, hfpef-drugs]
     source: src-jardiance-label
     values:
-      drug-class: { value: SGLT2 inhibitor, loc: 'Label §12.1' }
-      route-dosing: { value: 'Oral; 10 mg once daily (HF indications, any LVEF)', loc: 'Label §2.2' }
-      monitoring: { value: 'Volume status/renal function before start; genital mycotic infections', loc: 'Label §5.2-5.3' }
-      indication-scope: { value: 'HF: reduces CV death and HF hospitalization, regardless of LVEF', loc: 'Label §1' }
-      pivotal-trials: { value: 'EMPEROR-Reduced; EMPEROR-Preserved', loc: 'Label §14 Clinical Studies' }
+      drug-class: { reviewStatus: reviewed, value: SGLT2 inhibitor, loc: 'Label §12.1' }
+      route-dosing: { reviewStatus: reviewed, value: 'Oral; 10 mg once daily (HF indications, any LVEF)', loc: 'Label §2.2' }
+      monitoring: { reviewStatus: reviewed, value: 'Volume status/renal function before start; genital mycotic infections', loc: 'Label §5.2-5.3' }
+      indication-scope: { reviewStatus: reviewed, value: 'HF: reduces CV death and HF hospitalization, regardless of LVEF', loc: 'Label §1' }
+      pivotal-trials: { reviewStatus: reviewed, value: 'EMPEROR-Reduced; EMPEROR-Preserved', loc: 'Label §14 Clinical Studies' }
   - version: ver-entresto
     category: [hfref-drugs, hfpef-drugs]
     source: src-entresto-label
     values:
-      drug-class: { value: 'Angiotensin receptor-neprilysin inhibitor (ARNI)', loc: 'Label §12.1' }
-      route-dosing: { value: 'Oral; start 49/51 mg BID, double at 2-4wk to target 97/103 mg BID', loc: 'Label §2.2' }
-      monitoring: { value: 'Serum potassium (hyperkalemia); renal function; angioedema', loc: 'Label §5.2, §5.4, §5.5' }
-      indication-scope: { value: 'Chronic HF; benefit most evident with LVEF below normal', loc: 'Label §1.1' }
-      pivotal-trials: { value: 'PARADIGM-HF; PARAGON-HF', loc: 'Label §14 Clinical Studies' }
+      drug-class: { reviewStatus: reviewed, value: 'Angiotensin receptor-neprilysin inhibitor (ARNI)', loc: 'Label §12.1' }
+      route-dosing: { reviewStatus: reviewed, value: 'Oral; start 49/51 mg BID, double at 2-4wk to target 97/103 mg BID', loc: 'Label §2.2' }
+      monitoring: { reviewStatus: reviewed, value: 'Serum potassium (hyperkalemia); renal function; angioedema', loc: 'Label §5.2, §5.4, §5.5' }
+      indication-scope: { reviewStatus: reviewed, value: 'Chronic HF; benefit most evident with LVEF below normal', loc: 'Label §1.1' }
+      pivotal-trials: { reviewStatus: reviewed, value: 'PARADIGM-HF; PARAGON-HF', loc: 'Label §14 Clinical Studies' }
   - version: ver-verquvo
     category: hfref-drugs
     source: src-verquvo-label
     values:
-      drug-class: { value: 'Soluble guanylate cyclase (sGC) stimulator', loc: 'Label §12.1' }
+      drug-class: { reviewStatus: reviewed, value: 'Soluble guanylate cyclase (sGC) stimulator', loc: 'Label §12.1' }
       route-dosing:
+        reviewStatus: reviewed
         value: 'Oral; start 5 mg daily with food, titrate to 10 mg'
         loc: 'Label §2.1, Recommended Dosage'
         observedAt: '2026-10-03'
         context: 'Start at 2.5 mg daily for patients at risk of symptomatic hypotension. Double approximately every two weeks as tolerated.'
-      monitoring: { value: 'Blood pressure (hypotension); hemoglobin (anemia); pregnancy test', loc: 'Label §5.1, §6.1' }
-      indication-scope: { value: 'Symptomatic chronic HFrEF (LVEF <45%) after HF hospitalization/IV diuretics', loc: 'Label §1' }
-      pivotal-trials: { value: VICTORIA, loc: 'Label §14 Clinical Studies' }
+      monitoring: { reviewStatus: reviewed, value: 'Blood pressure (hypotension); hemoglobin (anemia); pregnancy test', loc: 'Label §5.1, §6.1' }
+      indication-scope: { reviewStatus: reviewed, value: 'Symptomatic chronic HFrEF (LVEF <45%) after HF hospitalization/IV diuretics', loc: 'Label §1' }
+      pivotal-trials: { reviewStatus: reviewed, value: VICTORIA, loc: 'Label §14 Clinical Studies' }
   - version: ver-kerendia
     category: hfpef-drugs
     source: src-kerendia-label
     values:
-      drug-class: { value: 'Nonsteroidal mineralocorticoid receptor antagonist (MRA)', loc: 'Label §12.1' }
+      drug-class: { reviewStatus: reviewed, value: 'Nonsteroidal mineralocorticoid receptor antagonist (MRA)', loc: 'Label §12.1' }
       route-dosing:
+        reviewStatus: reviewed
         value: 'Oral; start 10 or 20 mg daily; HF target 20 or 40 mg by eGFR'
         loc: 'Label §2.1-2.3, Tables 1 and 3'
         observedAt: '2026-10-03'
         context: 'The HF target dose depends on eGFR at initiation. Starting dose and later target dose are different; serum potassium and eGFR guide adjustment after four weeks.'
-      monitoring: { value: 'Serum potassium and eGFR at 4wk and periodically; avoid grapefruit', loc: 'Label §2.3' }
-      indication-scope: { value: 'HF with LVEF >=40%: reduces CV death, HF hospitalization, urgent HF visits', loc: 'Label §1' }
-      pivotal-trials: { value: FINEARTS-HF, loc: 'Label §14 Clinical Studies' }
+      monitoring: { reviewStatus: reviewed, value: 'Serum potassium and eGFR at 4wk and periodically; avoid grapefruit', loc: 'Label §2.3' }
+      indication-scope: { reviewStatus: reviewed, value: 'HF with LVEF >=40%: reduces CV death, HF hospitalization, urgent HF visits', loc: 'Label §1' }
+      pivotal-trials: { reviewStatus: reviewed, value: FINEARTS-HF, loc: 'Label §14 Clinical Studies' }
   - version: ver-omecamtiv
     category: hfref-drugs
     source: src-omecamtiv-crl
     values:
       drug-class:
+        reviewStatus: reviewed
         value: Selective small-molecule cardiac myosin activator
         loc: 'Press release, mechanism description'
         source: src-galactic-hf-nejm
       indication-scope:
+        reviewStatus: reviewed
         value: 'Investigational; FDA Complete Response Letter Feb 2023 (HFrEF, not approved)'
         loc: 'Press release, FDA Complete Response Letter summary'
         observedAt: '2026-10-03'
         context: 'The 2023 CRL required additional evidence. Cytokinetics subsequently initiated the confirmatory Phase 3 COMET-HF program, listed in its current pipeline; the old statement that no additional trial was planned is outdated.'
       pivotal-trials:
+        reviewStatus: reviewed
         value: 'GALACTIC-HF; COMET-HF (confirmatory Phase 3)'
         loc: 'Commercial Medicine & Pipeline, Omecamtiv Mecarbil / HFrEF / COMET-HF'
         source: src-cytokinetics-pipeline-audit

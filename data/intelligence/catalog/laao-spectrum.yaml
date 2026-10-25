@@ -1,5 +1,5 @@
 # Historical LAA closure devices described in the 2018 CI Today spectrum article.
-# Owner approved the records on 2026-10-17; each is bounded to its cited historical source. Current commercial
+#  each is bounded to its cited historical source. Current commercial
 # availability is intentionally not inferred from old regulatory or study material.
 observedAt: '2026-10-03'
 sources:
@@ -719,25 +719,26 @@ specs:
     category: laao-occluders
     source: src-plaato-first-human
     values:
-      device-design: { value: Self-expanding cage occludes the LAA, loc: "Abstract, Methods and results" }
-      frame-material: { value: Nitinol, loc: "Abstract, Methods and results" }
-      fabric-cover: { value: ePTFE polymeric membrane, loc: "Abstract, Methods and results" }
-      access-route: { value: Percutaneous transseptal LAA delivery, source: src-plaato-feasibility, loc: "Article introduction, system description" }
+      device-design: { reviewStatus: reviewed, value: Self-expanding cage occludes the LAA, loc: "Abstract, Methods and results" }
+      frame-material: { reviewStatus: reviewed, value: Nitinol, loc: "Abstract, Methods and results" }
+      fabric-cover: { reviewStatus: reviewed, value: ePTFE polymeric membrane, loc: "Abstract, Methods and results" }
+      access-route: { reviewStatus: reviewed, value: Percutaneous transseptal LAA delivery, source: src-plaato-feasibility, loc: "Article introduction, system description" }
   - version: ver-watchman-original
     category: laao-occluders
     source: src-watchman-legacy-spec
     values:
-      device-design: { value: Self-expanding nitinol cage with proximal porous cover, loc: "PDF p.2, WATCHMAN LAAC Device" }
-      frame-material: { value: Nitinol alloy, loc: "PDF p.2, General Specifications and Materials List" }
-      fabric-cover: { value: PET knit fabric on proximal face, loc: "PDF p.2, General Specifications and Materials List" }
-      anchoring-mechanism: { value: Peripheral fixation anchors, loc: "PDF p.2, labeled device figure" }
-      access-route: { value: 'Femoral venous, transseptal', loc: "PDF p.1, technology description" }
-      available-sizes: { value: '21, 24, 27, 30, 33 mm', loc: "PDF p.2, General Specifications and Materials List" }
+      device-design: { reviewStatus: reviewed, value: Self-expanding nitinol cage with proximal porous cover, loc: "PDF p.2, WATCHMAN LAAC Device" }
+      frame-material: { reviewStatus: reviewed, value: Nitinol alloy, loc: "PDF p.2, General Specifications and Materials List" }
+      fabric-cover: { reviewStatus: reviewed, value: PET knit fabric on proximal face, loc: "PDF p.2, General Specifications and Materials List" }
+      anchoring-mechanism: { reviewStatus: reviewed, value: Peripheral fixation anchors, loc: "PDF p.2, labeled device figure" }
+      access-route: { reviewStatus: reviewed, value: 'Femoral venous, transseptal', loc: "PDF p.1, technology description" }
+      available-sizes: { reviewStatus: reviewed, value: '21, 24, 27, 30, 33 mm', loc: "PDF p.2, General Specifications and Materials List" }
   - version: ver-watchman-flx-2015
     category: laao-occluders
     source: src-watchman-flx-early-10k-2015
     values:
       device-design:
+        reviewStatus: reviewed
         value: Closed distal end; can be fully recaptured and repositioned
         loc: Item 1 Business, Structural Heart Therapies
         context: Sponsor wording for the CE-marked 2015 Watchman FLX; the filing gives no strut, anchor or material details. Distinct from the redesigned 2020 FLX (see src-watchman-flx-redesign-study); do not carry forward 2020 FLX specifications.
@@ -745,29 +746,31 @@ specs:
     category: laao-occluders
     source: src-acp-preclinical
     values:
-      device-design: { value: Transcatheter LAA plug with nitinol structure and polyester fabric, loc: "Abstract, Methods" }
-      frame-material: { value: Nitinol, loc: "Abstract, Methods" }
-      fabric-cover: { value: Polyester fabric, loc: "Abstract, Methods" }
-      access-route: { value: Percutaneous transseptal, source: src-acp-first-human, loc: "Abstract, Methods" }
-      repositionable: { value: Retrievable and repositionable in preclinical implants, loc: "Abstract, Results", context: Canine study; not a claim about current instructions for use. }
+      device-design: { reviewStatus: reviewed, value: Transcatheter LAA plug with nitinol structure and polyester fabric, loc: "Abstract, Methods" }
+      frame-material: { reviewStatus: reviewed, value: Nitinol, loc: "Abstract, Methods" }
+      fabric-cover: { reviewStatus: reviewed, value: Polyester fabric, loc: "Abstract, Methods" }
+      access-route: { reviewStatus: reviewed, value: Percutaneous transseptal, source: src-acp-first-human, loc: "Abstract, Methods" }
+      repositionable: { reviewStatus: reviewed, value: Retrievable and repositionable in preclinical implants, loc: "Abstract, Results", context: Canine study; not a claim about current instructions for use. }
   - version: ver-wavecrest
     category: laao-occluders
     source: src-wavecrest-catalog
     values:
-      device-design: { value: ePTFE occluder with independently actuated anchors, loc: "Device Description and Implant Characteristics" }
-      frame-material: { value: Laser-cut nitinol frame, loc: "Device Description and Implant Characteristics" }
-      fabric-cover: { value: ePTFE occluder and polyurethane foam rim, loc: "Device Description and Implant Characteristics" }
-      anchoring-mechanism: { value: 20 interlocking actuated anchors, loc: Implant Characteristics }
-      repositionable: { value: Fully recapturable before final release, loc: Implant Characteristics }
+      device-design: { reviewStatus: reviewed, value: ePTFE occluder with independently actuated anchors, loc: "Device Description and Implant Characteristics" }
+      frame-material: { reviewStatus: reviewed, value: Laser-cut nitinol frame, loc: "Device Description and Implant Characteristics" }
+      fabric-cover: { reviewStatus: reviewed, value: ePTFE occluder and polyurethane foam rim, loc: "Device Description and Implant Characteristics" }
+      anchoring-mechanism: { reviewStatus: reviewed, value: 20 interlocking actuated anchors, loc: Implant Characteristics }
+      repositionable: { reviewStatus: reviewed, value: Fully recapturable before final release, loc: Implant Characteristics }
   - version: ver-occlutech-laa-original
     category: laao-occluders
     source: src-occlutech-first-human
     values:
       device-design:
+        reviewStatus: reviewed
         value: Implantable catheter-delivered LAA occluder
         loc: "Abstract, Methods and Results"
         limitation: Exact original device materials require original IFU or full-text confirmation.
       available-sizes:
+        reviewStatus: reviewed
         value: '18, 21, 24, 27, 30, 33 mm affected in 2016 notice'
         source: src-occlutech-2016-field-notice
         loc: "PDF p.2, Affected product/articles"
@@ -776,30 +779,32 @@ specs:
     category: laao-occluders
     source: src-occlutech-plus-preclinical
     values:
-      device-design: { value: Self-expanding conical lobe with proximal seal, loc: "Introduction, Occlutech Plus device paragraph", context: Porcine preclinical evaluation. }
-      fabric-cover: { value: Polyurethane mesh covering with modified polymer surface, loc: "Introduction, Occlutech Plus device paragraph", context: Porcine preclinical evaluation. }
-      anchoring-mechanism: { value: Distal loops supported by added anchors, loc: "Introduction, Occlutech Plus device paragraph", context: Added after original design anchoring concerns. }
+      device-design: { reviewStatus: reviewed, value: Self-expanding conical lobe with proximal seal, loc: "Introduction, Occlutech Plus device paragraph", context: Porcine preclinical evaluation. }
+      fabric-cover: { reviewStatus: reviewed, value: Polyurethane mesh covering with modified polymer surface, loc: "Introduction, Occlutech Plus device paragraph", context: Porcine preclinical evaluation. }
+      anchoring-mechanism: { reviewStatus: reviewed, value: Distal loops supported by added anchors, loc: "Introduction, Occlutech Plus device paragraph", context: Added after original design anchoring concerns. }
   - version: ver-atriclip
     category: laa-exclusion-ligation
     source: src-atriclip-ifu-2024
     values:
-      device-design: { value: Surgical clip compresses the LAA base, loc: Device description }
-      frame-material: { value: Titanium beams and nitinol springs, loc: Device description }
-      fabric-cover: { value: Knit-braided PET fabric with titanium dioxide, loc: Device description }
-      access-route: { value: Surgical epicardial placement, loc: Instructions for use }
-      available-sizes: { value: '35, 40, 45, 50 mm', loc: Product code and sizing table }
+      device-design: { reviewStatus: reviewed, value: Surgical clip compresses the LAA base, loc: Device description }
+      frame-material: { reviewStatus: reviewed, value: Titanium beams and nitinol springs, loc: Device description }
+      fabric-cover: { reviewStatus: reviewed, value: Knit-braided PET fabric with titanium dioxide, loc: Device description }
+      access-route: { reviewStatus: reviewed, value: Surgical epicardial placement, loc: Instructions for use }
+      available-sizes: { reviewStatus: reviewed, value: '35, 40, 45, 50 mm', loc: Product code and sizing table }
   - version: ver-amulet-360
     category: laao-occluders
     source: src-amulet-360-ce
     values:
-      device-design: { value: Softer lobe with proximal outer disc, loc: Device description }
+      device-design: { reviewStatus: reviewed, value: Softer lobe with proximal outer disc, loc: Device description }
       anchoring-mechanism:
+        reviewStatus: reviewed
         value: Two rows of stabilizing anchors; second row added, anchors re-shaped
         source: src-amulet-360-sscp
         loc: 'PDF p.12, Section 3.2 Previous Generations or Variants; Figure 3-5 C-D'
         context: 'The SSCP lists an additional row of stabilizing anchors and modified anchor geometry with eyelets for full recapture; anchor count and length are not disclosed. "Shorter" anchors is not SSCP wording (Abbott''s 2026-08-27 release says "smaller anchors").'
-      access-route: { value: Transfemoral venous, loc: Procedure description }
+      access-route: { reviewStatus: reviewed, value: Transfemoral venous, loc: Procedure description }
       indication-scope:
+        reviewStatus: reviewed
         availability: not_applicable
         source: src-amulet-360-product
         loc: US investigational disclaimer
@@ -808,32 +813,34 @@ specs:
     category: laao-occluders
     source: src-claas-first-clinical
     values:
-      device-design: { value: Conformable foam cup with nitinol endoskeleton, loc: Device description }
-      frame-material: { value: Nitinol endoskeleton, loc: Device description }
+      device-design: { reviewStatus: reviewed, value: Conformable foam cup with nitinol endoskeleton, loc: Device description }
+      frame-material: { reviewStatus: reviewed, value: Nitinol endoskeleton, loc: Device description }
       fabric-cover:
+        reviewStatus: reviewed
         value: Porous foam; ePTFE cover on the left atrial face
         loc: Device description
         context: ePTFE covers the proximal (left atrial) face only, not the whole outer surface; the cited paper does not name the foam polymer.
-      anchoring-mechanism: { value: Nitinol barbs, loc: Device description }
-      access-route: { value: Transseptal venous catheter delivery, loc: "Methods, procedure" }
-      available-sizes: { value: '27 and 35 mm', loc: Device description }
+      anchoring-mechanism: { reviewStatus: reviewed, value: Nitinol barbs, loc: Device description }
+      access-route: { reviewStatus: reviewed, value: Transseptal venous catheter delivery, loc: "Methods, procedure" }
+      available-sizes: { reviewStatus: reviewed, value: '27 and 35 mm', loc: Device description }
   - version: ver-laminar
     category: laao-occluders
     source: src-laminar-first-human
     values:
-      device-design: { value: Self-expanding ball with six-petal tissue lock, loc: Device description }
-      frame-material: { value: Nitinol ball, loc: Device description, context: Lock material not specified in the cited study. }
-      anchoring-mechanism: { value: Interlocking petals compress LAA tissue, loc: Device description }
-      access-route: { value: Transseptal catheter delivery, loc: "Methods, procedure" }
-      available-sizes: { value: '12 and 16 mm balls; 16 mm lock', loc: Device description }
+      device-design: { reviewStatus: reviewed, value: Self-expanding ball with six-petal tissue lock, loc: Device description }
+      frame-material: { reviewStatus: reviewed, value: Nitinol ball, loc: Device description, context: Lock material not specified in the cited study. }
+      anchoring-mechanism: { reviewStatus: reviewed, value: Interlocking petals compress LAA tissue, loc: Device description }
+      access-route: { reviewStatus: reviewed, value: Transseptal catheter delivery, loc: "Methods, procedure" }
+      available-sizes: { reviewStatus: reviewed, value: '12 and 16 mm balls; 16 mm lock', loc: Device description }
   - version: ver-omega-laa
     category: laao-occluders
     source: src-omega-field-notice
     values:
-      device-design: { value: Cup-and-disc LAA occluder, loc: Affected device description }
-      frame-material: { value: Platinum-coated nitinol, loc: Affected device description }
-      available-sizes: { value: '14–30 mm', loc: Affected device sizes }
+      device-design: { reviewStatus: reviewed, value: Cup-and-disc LAA occluder, loc: Affected device description }
+      frame-material: { reviewStatus: reviewed, value: Platinum-coated nitinol, loc: Affected device description }
+      available-sizes: { reviewStatus: reviewed, value: '14–30 mm', loc: Affected device sizes }
       indication-scope:
+        reviewStatus: reviewed
         availability: not_applicable
         loc: Reason for Field Safety Notice
         context: November 2024 notice directed removal of all stock over corrosion, nickel leaching, and wire-breakage concerns; it is not a current indication statement.
@@ -841,32 +848,33 @@ specs:
     category: laao-occluders
     source: src-lacbes-first-clinical
     values:
-      device-design: { value: Lobe-and-disc occluder with central waist, loc: Device description }
-      frame-material: { value: Nitinol mesh, loc: Device description }
-      fabric-cover: { value: Polyester patches, loc: Device description }
-      anchoring-mechanism: { value: 10–12 curved isogenous barbs, loc: Device description }
-      available-sizes: { value: '18–34 mm lobes in 2 mm steps', loc: Device sizing }
+      device-design: { reviewStatus: reviewed, value: Lobe-and-disc occluder with central waist, loc: Device description }
+      frame-material: { reviewStatus: reviewed, value: Nitinol mesh, loc: Device description }
+      fabric-cover: { reviewStatus: reviewed, value: Polyester patches, loc: Device description }
+      anchoring-mechanism: { reviewStatus: reviewed, value: 10–12 curved isogenous barbs, loc: Device description }
+      available-sizes: { reviewStatus: reviewed, value: '18–34 mm lobes in 2 mm steps', loc: Device sizing }
   - version: ver-ultraseal-ii
     category: laao-occluders
     source: src-ultraseal-ii-study
     values:
-      device-design: { value: Flexible distal bulb and proximal polyester sail, loc: Device description }
-      fabric-cover: { value: Inverted polyester sail, loc: Device description }
-      delivery-sheath: { value: '9–12 Fr', loc: Device description }
-      available-sizes: { value: '16–34 mm in 10 sizes', loc: Device description }
-      anatomy-range-summary: { value: Minimum LAA depth 12 mm, loc: Device description }
+      device-design: { reviewStatus: reviewed, value: Flexible distal bulb and proximal polyester sail, loc: Device description }
+      fabric-cover: { reviewStatus: reviewed, value: Inverted polyester sail, loc: Device description }
+      delivery-sheath: { reviewStatus: reviewed, value: '9–12 Fr', loc: Device description }
+      available-sizes: { reviewStatus: reviewed, value: '16–34 mm in 10 sizes', loc: Device description }
+      anatomy-range-summary: { reviewStatus: reviewed, value: Minimum LAA depth 12 mm, loc: Device description }
   - version: ver-cardioblate-closure
     category: laa-exclusion-ligation
     source: src-cardioblate-canines
     values:
-      device-design: { value: Expandable external LAA closure bands, loc: Abstract, context: Canine preclinical prototype. }
-      fabric-cover: { value: Silicone bands covered with polyester fabric, loc: Abstract, context: Canine preclinical prototype. }
-      access-route: { value: Thoracoscopic epicardial application, loc: Abstract, context: Canine preclinical prototype; the later clinical registry enrolled patients scheduled for cardiac surgery. }
+      device-design: { reviewStatus: reviewed, value: Expandable external LAA closure bands, loc: Abstract, context: Canine preclinical prototype. }
+      fabric-cover: { reviewStatus: reviewed, value: Silicone bands covered with polyester fabric, loc: Abstract, context: Canine preclinical prototype. }
+      access-route: { reviewStatus: reviewed, value: Thoracoscopic epicardial application, loc: Abstract, context: Canine preclinical prototype; the later clinical registry enrolled patients scheduled for cardiac surgery. }
   - version: ver-sideris-patch
     category: laao-occluders
     source: src-sideris-first-human
     values:
       device-design:
+        reviewStatus: reviewed
         value: Bioabsorbable transcatheter patch attached with surgical adhesive
         loc: Abstract, Objectives and Background
         context: The paper reports a two-stage polyethylene glycol adhesive and alkaline activation; patch polymer composition and delivery sheath French size are not stated in the abstract.
@@ -878,9 +886,9 @@ specs:
     category: laao-occluders
     source: src-ultraseal-first-human-fulltext
     values:
-      device-design: { value: Self-expandable nitinol bulb-and-sail device with articulating joint, loc: Device characteristics and implantation }
-      frame-material: { value: Nitinol, loc: Device characteristics and implantation }
-      anchoring-mechanism: { value: Distal bulb with 12 stabilizing hooks, loc: Device characteristics and implantation }
+      device-design: { reviewStatus: reviewed, value: Self-expandable nitinol bulb-and-sail device with articulating joint, loc: Device characteristics and implantation }
+      frame-material: { reviewStatus: reviewed, value: Nitinol, loc: Device characteristics and implantation }
+      anchoring-mechanism: { reviewStatus: reviewed, value: Distal bulb with 12 stabilizing hooks, loc: Device characteristics and implantation }
   - version: ver-seala
     category: laao-occluders
     source: src-seala-multicenter
@@ -889,27 +897,29 @@ specs:
     category: laao-occluders
     source: src-lefort-original-study
     values:
-      device-design: { value: Umbrella occluder with internal flow barrier, loc: Device description }
-      frame-material: { value: Nickel-titanium alloy, loc: Device description }
-      available-sizes: { value: '21–33 mm', loc: Device description }
+      device-design: { reviewStatus: reviewed, value: Umbrella occluder with internal flow barrier, loc: Device description }
+      frame-material: { reviewStatus: reviewed, value: Nickel-titanium alloy, loc: Device description }
+      available-sizes: { reviewStatus: reviewed, value: '21–33 mm', loc: Device description }
   - version: ver-pfm-laa
     category: laao-occluders
     source: src-pfm-preclinical-presentation
     values:
-      device-design: { value: Double-disc closure with adjustable center connector, loc: Device description }
-      frame-material: { value: Nitinol frame, loc: Device description }
-      anchoring-mechanism: { value: Barbless primary and secondary anchors, loc: Device description }
+      device-design: { reviewStatus: reviewed, value: Double-disc closure with adjustable center connector, loc: Device description }
+      frame-material: { reviewStatus: reviewed, value: Nitinol frame, loc: Device description }
+      anchoring-mechanism: { reviewStatus: reviewed, value: Barbless primary and secondary anchors, loc: Device description }
   - version: ver-lariat
     category: laa-exclusion-ligation
     source: src-lariat-ii-510k
     values:
-      device-design: { value: Pre-tied ligating suture loop, loc: Device description }
-      fabric-cover: { value: Polyester suture, loc: Device description }
+      device-design: { reviewStatus: reviewed, value: Pre-tied ligating suture loop, loc: Device description }
+      fabric-cover: { reviewStatus: reviewed, value: Polyester suture, loc: Device description }
       access-route:
+        reviewStatus: reviewed
         value: Combined pericardial and transseptal access
         source: src-lariat-first-human
         loc: "Methods, Percutaneous suture ligation of LAA"
       indication-scope:
+        reviewStatus: reviewed
         availability: not_applicable
         source: src-lariat-original-510k
         loc: Indications for use
@@ -918,5 +928,5 @@ specs:
     category: laa-exclusion-ligation
     source: src-sierra-first-human
     values:
-      device-design: { value: Epicardial guide and ligating band system, loc: Device description }
-      access-route: { value: Percutaneous subxiphoid epicardial, loc: Procedure description }
+      device-design: { reviewStatus: reviewed, value: Epicardial guide and ligating band system, loc: Device description }
+      access-route: { reviewStatus: reviewed, value: Percutaneous subxiphoid epicardial, loc: Procedure description }

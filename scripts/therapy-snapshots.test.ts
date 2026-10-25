@@ -16,8 +16,20 @@ import type { IntelligenceData } from '../src/types/intelligence'
 const data: IntelligenceData = JSON.parse(readFileSync(new URL('../public/intelligence.json', import.meta.url), 'utf8'))
 const nodes: GraphNodeData[] = JSON.parse(readFileSync(new URL('../public/graph.json', import.meta.url), 'utf8')).elements.nodes.map((node: { data: GraphNodeData }) => node.data)
 const hash = (value: string | Buffer) => createHash('sha256').update(value).digest('hex')
+// Text copy has its own whole-file checksum. The drawing checksum retains every
+// SVG tag and attribute, including text layout, while excluding label contents.
+const drawingContent = (svg: string) => svg.replace(/<(title|desc|text)\b[^>]*>[\s\S]*?<\/\1>/g,
+  element => element.replace(/>[^<]*</g, '><'))
 
-test('all approved graph-level illustrations retain their original geometry and exact identities', () => {
+test('drawing fingerprints exclude label copy while retaining geometry, layout, and styling', () => {
+  const svg = '<svg viewBox="0 0 10 10"><desc>Example description</desc><path d="M 0,0 L 1,1" stroke="black"><title>Line</title></path><text x="2">Caption <tspan dx="1">detail</tspan></text></svg>'
+  assert.equal(hash(drawingContent(svg)), hash(drawingContent(svg.replace('Example description', 'Updated description').replace('Caption ', 'Revised '))))
+  for (const changed of [svg.replace('L 1,1', 'L 2,2'), svg.replace('black', 'red'), svg.replace('0 0 10 10', '0 0 20 20'), svg.replace('x="2"', 'x="3"'), svg.replace('dx="1"', 'dx="2"')]) {
+    assert.notEqual(hash(drawingContent(svg)), hash(drawingContent(changed)))
+  }
+})
+
+test('all graph-level illustrations retain their drawing integrity and exact identities', () => {
   assert.equal(registry.illustrations.length, 18)
   assert.equal(new Set(registry.illustrations.map(item => item.entityId)).size, 18)
   // Illustration identity checks must survive later authored profile additions.
@@ -29,10 +41,7 @@ test('all approved graph-level illustrations retain their original geometry and 
     assert.deepEqual(therapyIllustrationFor(entityId), { entityId, assetPath, alt, configuration, limitations, sources })
     const svg = readFileSync(new URL(`../public/${assetPath}`, import.meta.url), 'utf8')
     assert.equal(hash(svg), item.sha256)
-    const original = svg.replace('Artwork approved by owner 2026-10-23; not production CAD.', 'Human approval pending.')
-      .replace('VISUALIZE·SH / DESIGN ILLUSTRATION', 'VISUALIZE·SH / LOCAL ARTWORK REVIEW')
-      .replace('Owner-approved artwork · Pictured configuration only · Not production CAD', 'Source-informed draft · Configuration limits in source register · Approval pending')
-    assert.equal(hash(original), item.approvedGeometrySha256, `${entityId}: publication must only alter review captions`)
+    assert.equal(hash(drawingContent(svg)), item.geometrySha256, `${entityId}: SVG drawing integrity`)
     assert.match(svg, /NOT TO SCALE/)
     assert.match(svg, item.scope === 'concept' ? /CONCEPT FOR ILLUSTRATION/ : /SCHEMATIC FOR ILLUSTRATION/)
     assert.doesNotMatch(svg, /<(?:script|foreignObject|image)\b|approval pending/i)

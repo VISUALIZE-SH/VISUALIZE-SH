@@ -37,4 +37,4 @@ The [May–June 2018 CI Today spectrum](https://citoday.com/articles/2018-may-ju
 
 The endocardial `laao-occluders` category is labeled **LAA occlusion / closure (LAAO/LAAC)** in Data. LARIAT, Sierra, Cardioblate Closure, AtriClip, and Ecliptis close or exclude the appendage by epicardial ligation or surgical clipping and belong in the separate `laa-exclusion-ligation` category. Their delivery routes and dimensions must not be compared as though they were transseptal occluders.
 
-The unresolved “Sealer” request has no version ID until a distinct manufacturer and device can be verified. SeaLA is a separately named LAA device. Historical approvals, CE marks, field actions, and trial records are source-date facts; none establish current commercial availability. Missing quantitative specifications should remain blank or explicitly unavailable, not inherited from a later generation.
+Historical approvals, CE marks, field actions, and trial records are source-date facts; none establish current commercial availability. Missing quantitative specifications should remain blank or explicitly unavailable, not inherited from a later generation.

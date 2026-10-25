@@ -49,3 +49,22 @@ test('non-values keep their status without a value, and malformed specs fail lou
   assert.throws(() => mergeCatalog({}, taxonomy, [{ name: 'd.yaml', data: { specs: [{ version: 'ver-d', category: 'nope', source: 's', values: {} }] } }]), /unknown taxonomy category/)
   assert.throws(() => mergeCatalog({}, taxonomy, [{ name: 'e.yaml', data: { claimz: [] } }]), /unsupported top-level key claimz/)
 })
+
+test('compact claims carry only their own explicit review state; new neighboring values stay draft', () => {
+  const fragment = { observedAt: '2026-09-23', specs: [{ version: 'ver-a', source: 'src-a', values: {
+    'frame-material': { value: 'Nitinol', loc: 'p. 1', reviewStatus: 'reviewed' },
+    'pivotal-trials': { availability: 'not_yet_reviewed', loc: 'p. 2' },
+    'access-route': { value: 'Transfemoral', loc: 'p. 3', reviewStatus: 'draft' },
+  } }] }
+  const before = structuredClone(fragment)
+  const merged = mergeCatalog({}, taxonomy, [{ name: 'a.yaml', data: fragment }])
+  assert.deepEqual((merged.claims as Array<Record<string, unknown>>).map(claim => [claim.id, claim.reviewStatus]), [
+    ['claim-a-frame-material', 'reviewed'], ['claim-a-pivotal-trials', 'draft'], ['claim-a-access-route', 'draft'],
+  ])
+  assert.deepEqual(fragment, before)
+  for (const reviewStatus of ['approved', null, true]) {
+    assert.throws(() => mergeCatalog({}, taxonomy, [{ name: 'bad.yaml', data: { specs: [{ version: 'ver-a', source: 'src-a', values: {
+      'frame-material': { value: 'Nitinol', loc: 'p. 1', reviewStatus },
+    } }] } }]), /reviewStatus must be draft or reviewed/)
+  }
+})

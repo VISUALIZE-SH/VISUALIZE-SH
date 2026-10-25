@@ -1,8 +1,9 @@
 /** Heuristic CI scan for known secret, email, and browser-tracking patterns. */
 import { execFileSync } from 'node:child_process'
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { repositoryBoundaryViolation } from './repository-boundary'
 
 const ROOT = resolve(fileURLToPath(new URL('..', import.meta.url)))
 const files = execFileSync('git', ['ls-files', '--cached', '--others', '--exclude-standard', '-z'], {
@@ -59,6 +60,12 @@ function addMatches(file: string, text: string, type: string, pattern: RegExp): 
 
 let scanned = 0
 for (const file of [...new Set(files)].sort()) {
+  // Git still lists unstaged deletions; only files present in the public tree
+  // can be scanned (the same behavior as the content read below).
+  if (!existsSync(resolve(ROOT, file))) continue
+  // Check paths before skipping binaries: private snapshots can be images/PDFs.
+  const boundaryViolation = repositoryBoundaryViolation(file)
+  if (boundaryViolation) findings.push({ file, line: 1, type: boundaryViolation })
   if (binaryExtensions.has(extname(file).toLowerCase())) continue
   let text: string
   try { text = readFileSync(resolve(ROOT, file), 'utf8') } catch { continue }
@@ -110,5 +117,5 @@ if (unique.length > 0) {
   for (const finding of unique) console.error(`  ${finding.file}:${finding.line}: ${finding.type}`)
   process.exitCode = 1
 } else {
-  console.log(`✓ security check: ${scanned} public-repository files scanned; no secrets, unapproved email addresses, or browser tracking APIs found`)
+  console.log(`✓ security check: ${scanned} public-repository files scanned; no private artifact paths, secrets, unapproved email addresses, or browser tracking APIs found`)
 }
