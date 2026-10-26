@@ -6109,3 +6109,338 @@
     notes: "Pulmonary XPV initial and modified second clinical prototypes are distinct. Do not transfer aXess dialysis graft CE mark to Xplore2. Historical conduit chemistry specified below applies only to 2021 studied prototypes. Sponsor Xplore2 wording does not bridge every manufacturing iteration. Gaps: current-xplore2-prototype-bridge, pulmonary-authorization, patent-product-connection, current-generation-materials, newsroom-access-limits."
   materials: []
   materialsStatus: not_established
+
+- id: dev-sutra-hemi-valve-tmvr
+  type: therapy
+  therapyType: device
+  name: Sutra Hemi-Valve TMVR
+  treats:
+    - cond-mr
+  regulatoryStatus: unknown
+  regulatoryDetail: Marketing authorization for this exact configuration and application is not established.
+  description: Sutra Medical describes posterior mitral-leaflet replacement designed to coapt with the native anterior leaflet.
+  materials: []
+  company: co-sutra-medical
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://sutramedical.com/our-technology/
+      - https://clinicaltrials.gov/api/v2/studies/NCT06552689
+    notes: >-
+      Sutra Medical; What is Sutra Hemi-Valve TMVR, nonquoted product application paragraph. ClinicalTrials.gov;
+      protocolSection identificationModule, statusModule, sponsorCollaboratorsModule, descriptionModule, designModule,
+      armsInterventionsModule. Sponsor-described mechanism; registered application is moderate-severe or severe
+      symptomatic mitral regurgitation in patients at high surgical risk. No efficacy or durability claim adopted.
+      Exact-version permanent implant composition is not established in this record. Sources retrieved 2026-10-26; no
+      source artwork reproduced.
+- id: dev-leafix-mitral-system
+  type: therapy
+  therapyType: device
+  name: LeaFix Mitral System
+  treats:
+    - cond-mr
+  regulatoryStatus: unknown
+  regulatoryDetail: Marketing authorization for this exact configuration and application is not established.
+  description: >-
+    LeaFix Medical describes a transcatheter implant intended to augment the anterior mitral leaflet for functional
+    mitral regurgitation.
+  materials: []
+  company: co-leafix-medical
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://www.leafix-medical.com/
+    notes: >-
+      LeaFix Medical Ltd.; About LeaFix, opening product/application paragraph. Undated sponsor design/application
+      statement; no implantation, outcomes, durability or clinical stage is established. Exact-version permanent implant
+      composition is not established in this record. Sources retrieved 2026-10-26; no source artwork reproduced.
+- id: dev-sciencrown-tavr
+  type: therapy
+  therapyType: device
+  name: ScienCrown TAVR system
+  treats:
+    - cond-as
+  regulatoryStatus: unknown
+  regulatoryDetail: Marketing authorization for this exact configuration and application is not established.
+  description: Scientech Medical describes ScienCrown as a transcatheter aortic valve replacement system for aortic stenosis.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://en.scientechmed.com/product/163.html
+    notes: >-
+      Scientech Medical; Treatment of Valvular Disease, ScienCrown heading, TAVR system label and Description paragraph.
+      Undated sponsor description of the Scientech-branded product only. Identity with the separately published
+      Lepu-attributed valve, other generations or native aortic-regurgitation use is not established. No case outcomes
+      transferred. Exact-version permanent implant composition is not established in this record. Sources retrieved
+      2026-10-26; no source artwork reproduced.
+- id: dev-tioga-tmvr
+  type: therapy
+  therapyType: device
+  name: Tioga TMVR System
+  treats:
+    - cond-mr
+  regulatoryStatus: unknown
+  regulatoryDetail: Marketing authorization for this exact configuration and application is not established.
+  description: >-
+    The registered Tioga TMVR study describes transseptal replacement of the native mitral valve in patients with
+    symptomatic mitral regurgitation of at least 3+.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06038838
+    notes: >-
+      ClinicalTrials.gov, U.S. National Library of Medicine; protocolSection.identificationModule;
+      sponsorCollaboratorsModule.leadSponsor; conditionsModule.conditions; armsInterventionsModule.interventions;
+      statusModule.lastUpdatePostDateStruct. ClinicalTrials.gov, U.S. National Library of Medicine;
+      protocolSection.descriptionModule; designModule.enrollmentInfo. NCT06038838 revision 2025-11-12; generic Tioga
+      TMVR identity only. Equivalence to Luna is not established. Registration is not proof of treatment or results.
+      Exact-version permanent implant composition is not established in this record. Sources retrieved 2026-10-26; no
+      source artwork reproduced.
+- id: dev-sikelia-polymeric-tavr
+  type: therapy
+  therapyType: device
+  name: Sikelia polymeric-leaflet transcatheter aortic valve
+  treats:
+    - cond-as
+  regulatoryStatus: unknown
+  regulatoryDetail: Marketing authorization for this exact configuration and application is not established.
+  description: >-
+    The original study describes a self-expanding transcatheter aortic valve with polyurethane leaflets and a sealing
+    skirt for severe symptomatic aortic stenosis.
+  materials:
+    - name: Polyurethane
+      role: Trileaflet valve
+      category: leaflet
+      source: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13080745/fullTextXML
+      note: >-
+        Historical Sikelia configuration described in Methods, Device description p0030; not transferred to later
+        generations.
+  company: co-mitrassist-lifesciences
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13080745/fullTextXML
+    notes: >-
+      JACC: Asia, original research article distributed through Europe PMC; Body, Methods; Device description, first
+      paragraph; Study design and patient selection, opening application sentence. JACC: Asia, original research article
+      distributed through Europe PMC; Body Methods Device description p0030–p0035; Implantation procedure p0040.
+      Historical studied configuration only. No durability advantage or contemporary authorization is inferred. The
+      cited TRISKELE registry identity does not resolve the product-name, generation or enrollment discrepancies.
+      Sources retrieved 2026-10-26; no source artwork reproduced.
+- id: dev-physician-modified-low-profile-endobentall
+  type: therapy
+  therapyType: device
+  name: Physician-modified low-profile Endo-Bentall conduit
+  treats:
+    - cond-complex-aortic-root-disease
+  regulatoryStatus: unknown
+  regulatoryDetail: Marketing authorization for this exact configuration and application is not established.
+  description: >-
+    The original report describes a physician-constructed conduit combining a self-expanding transcatheter aortic valve,
+    thoracic aortic stent graft and coronary fenestrations.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12648707/fullTextXML
+    notes: >-
+      Journal of Vascular Surgery Cases, Innovations and Techniques; original article through Europe PMC; Body, Device
+      modification, sec2/p0025, opening device-composition sentences before patient-specific measurements. Journal of
+      Vascular Surgery Cases, Innovations and Techniques; original article through Europe PMC; Body Device modification
+      p0025–p0030. Journal of Vascular Surgery Cases, Innovations and Techniques; original article through Europe PMC;
+      Body Endo-Bentall stage, sec3/p0035. Journal of Vascular Surgery Cases, Innovations and Techniques; original
+      article through Europe PMC; Body Discussion p0060. Single patient-specific configuration described in the 2025
+      report. The patient died two weeks after surgery from end-stage heart failure; deployment does not establish
+      benefit or durable safety. Additional clinical experience is required. Component authorization does not authorize
+      the combined conduit; no manufacturer of the composite is inferred. Exact-version permanent implant composition is
+      not established in this record. Sources retrieved 2026-10-26; no source artwork reproduced.
+- id: dev-monarq-ttvr
+  type: therapy
+  therapyType: device
+  name: inQB8 MonarQ transcatheter tricuspid valve replacement system
+  treats:
+    - cond-tr
+  regulatoryStatus: unknown
+  regulatoryDetail: Marketing authorization for this exact configuration and application is not established.
+  description: >-
+    The NCT06611579 registry names the inQB8 MonarQ system as its transcatheter tricuspid-valve replacement
+    intervention.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06611579
+    notes: >-
+      ClinicalTrials.gov / National Library of Medicine; protocolSection.identificationModule.briefTitle;
+      conditionsModule.conditions; armsInterventionsModule.interventions[0].otherNames and description. Registered
+      intervention at revision 2026-05-18 only. No equivalence to the historical compassionate-use configuration,
+      implant materials or results is inferred. Exact-version permanent implant composition is not established in this
+      record. Sources retrieved 2026-10-26; no source artwork reproduced.
+- id: proc-valve-in-valve-aortic-replacement
+  type: therapy
+  therapyType: procedure
+  name: Valve-in-valve transcatheter aortic replacement
+  treats:
+    - cond-failed-surgical-aortic-bioprosthesis
+  regulatoryStatus: unknown
+  regulatoryDetail: No product-specific authorization is represented by this procedure category.
+  description: >-
+    Transcatheter valve-in-valve replacement for failed surgical aortic bioprostheses is one registered REPEAT
+    comparison arm.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://drks.de/search/en/trial/DRKS00034170
+    notes: >-
+      German Clinical Trials Register / BfArM; DRKS-ID and acronym fields; Brief summary in scientific language;
+      Interventions, Observational Groups, Arms 1 and 2; Organizational Data last update. DRKS00034170 intervention-arm
+      category only; no specific valve, manufacturer or comparative treatment recommendation is inferred. Sources
+      retrieved 2026-10-26; no source artwork reproduced.
+- id: proc-redo-surgical-aortic-replacement
+  type: therapy
+  therapyType: procedure
+  name: Repeat surgical aortic-valve replacement
+  treats:
+    - cond-failed-surgical-aortic-bioprosthesis
+  regulatoryStatus: unknown
+  regulatoryDetail: No product-specific authorization is represented by this procedure category.
+  description: Repeat surgical replacement for failed surgical aortic bioprostheses is one registered REPEAT comparison arm.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://drks.de/search/en/trial/DRKS00034170
+    notes: >-
+      German Clinical Trials Register / BfArM; DRKS-ID and acronym fields; Brief summary in scientific language;
+      Interventions, Observational Groups, Arms 1 and 2; Organizational Data last update. DRKS00034170 intervention-arm
+      category only; no specific valve, manufacturer or comparative treatment recommendation is inferred. Sources
+      retrieved 2026-10-26; no source artwork reproduced.
+- id: dev-vsling
+  type: therapy
+  therapyType: device
+  name: Vsling transcatheter papillary-muscle sling
+  treats:
+    - cond-hfref
+  regulatoryStatus: unknown
+  regulatoryDetail: Marketing authorization for this exact configuration and application is not established.
+  description: >-
+    The original paper describes a transcatheter papillary-muscle sling; Vsling I is registered in heart failure with
+    reduced left-ventricular ejection fraction and ventricular dilation.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10242562/fullTextXML
+      - https://clinicaltrials.gov/api/v2/studies/NCT06851949
+    notes: >-
+      Structural Heart, original article distributed through Europe PMC; Body Introduction p0040/p0045; Materials and
+      Methods, Vsling Device sec2.1/p0050, device identity and placement sentences. ClinicalTrials.gov / National
+      Library of Medicine; protocolSection.identificationModule; descriptionModule; statusModule; designModule;
+      outcomesModule. Device description and Vsling I application only. Animal/cadaver feasibility does not establish
+      human clinical effectiveness. Historical paper configuration is not assumed identical to the registered study
+      device. Exact-version permanent implant composition is not established in this record. Sources retrieved
+      2026-10-26; no source artwork reproduced.
+- id: dev-jensclip
+  type: therapy
+  therapyType: device
+  name: JensClip
+  treats:
+    - cond-mr
+  regulatoryStatus: unknown
+  regulatoryDetail: Marketing authorization for this exact configuration and application is not established.
+  description: Jenscare describes JensClip as a clip-based transcatheter system intended to repair severe mitral regurgitation.
+  materials: []
+  company: co-jenscare-scientific
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://en.jenscare.com/product/242.html
+    notes: >-
+      Jenscare Scientific Co., Ltd.; JensClip body product-description opening paragraph, first intended-application
+      sentence. Undated sponsor description only. Application submissions do not establish authorization. No
+      superiority, outcomes or equivalence between trial cohorts or generations is inferred. Exact-version permanent
+      implant composition is not established in this record. Sources retrieved 2026-10-26; no source artwork reproduced.
+- id: dig-articor-pulmonary-planning
+  type: therapy
+  therapyType: digital
+  name: ARTICOR pulmonary-valve planning workflow
+  treats:
+    - cond-pv
+  regulatoryStatus: unknown
+  regulatoryDetail: Authorization for the described application and software version is not established.
+  description: >-
+    A retrospective single-center study used ARTICOR to create CT-derived patient-specific holographic models for
+    planning Venus P-valve implantation.
+  company: co-artiness
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12483681/fullTextXML
+    notes: >-
+      International Journal of Cardiology Congenital Heart Disease; Body2.1 p0095;2.2 p0100;2.4 p0120–p0125;3 Results
+      p0165–p0170;4 Discussion p0190. Study-specific planning workflow for 26 patients treated January 2023–June 2024.
+      Exact software version and equivalence to ARTICOR planner K252195, Compass or the general intraprocedural platform
+      are not established. No improved clinical outcomes are inferred. Sources retrieved 2026-10-26; no source artwork
+      reproduced.
+- id: dev-grownvalve-pulmonary
+  type: therapy
+  therapyType: device
+  subtype: Autologous transcatheter pulmonary valve
+  name: GrOwnValve autologous pulmonary valve
+  company: co-grownvalve
+  treats:
+    - cond-pv
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Adult first-in-human programme GECT-DZHK28 (NCT05809856). No commercial authorization is established by the cited
+    clinical documents.
+  mechanism: >-
+    Patient-specific pulmonary-valve fabrication from autologous pericardium on a balloon-expandable stent, followed by
+    transcatheter implantation.
+  materials:
+    - name: Autologous pericardium
+      role: Valve tissue in the published first clinical case
+      category: leaflet
+      source: https://doi.org/10.1093/ehjcr/ytag548
+      note: Exact case configuration; stent composition and later configurations are not established here.
+  description: >-
+    The published single case used pericardium harvested through mini-thoracotomy and CT-based moulds before
+    implantation in a failed pulmonary homograft. This combined surgical and catheter workflow does not establish
+    long-term durability or growth.
+  links:
+    - label: First clinical case report
+      url: https://doi.org/10.1093/ehjcr/ytag548
+    - label: GECT-DZHK28 registry
+      url: https://clinicaltrials.gov/study/NCT05809856
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://doi.org/10.1093/ehjcr/ytag548
+      - https://clinicaltrials.gov/study/NCT05809856
+    notes: >-
+      First case of the novel GrOwnValve procedure—a case report, European Heart Journal – Case Reports, published
+      2026-07-20: case procedure and six-month follow-up narrative. NCT05809856: intervention, eligibility and status
+      sections, last updated 2025-09-29. Accessed 2026-10-26. Single uncontrolled adult pulmonary case; no pediatric,
+      aortic-position, regeneration or growth benefit is established. No source artwork reproduced.

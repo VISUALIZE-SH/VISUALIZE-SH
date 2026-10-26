@@ -304,3 +304,36 @@
     notes: >-
       New genotype-specific condition candidate. Curator should confirm if this belongs in existing condition
       taxonomy or whether a broader DCM node is preferred; do not map to HFrEF alone.
+
+- id: cond-complex-aortic-root-disease
+  type: condition
+  name: Complex aortic-root disease
+  category: Aortic valve disease
+  description: >-
+    Complex aortic disease involving the aortic root, the application described in the physician-modified Endo-Bentall
+    report.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12648707/fullTextXML
+    notes: >-
+      Journal of Vascular Surgery Cases, Innovations and Techniques; original article through Europe PMC; Body, Device
+      modification, sec2/p0025, opening device-composition sentences before patient-specific measurements. Application
+      category for the published aortic-root construct; no general disease mechanism or equivalence to aortic stenosis
+      or regurgitation is inferred. Sources retrieved 2026-10-26; no source artwork reproduced.
+- id: cond-failed-surgical-aortic-bioprosthesis
+  type: condition
+  name: Failed surgical aortic bioprosthesis
+  category: Aortic valve disease
+  description: Failure of a surgical aortic bioprosthesis requiring reintervention, the population specified by REPEAT.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://drks.de/search/en/trial/DRKS00034170
+    notes: >-
+      German Clinical Trials Register / BfArM; DRKS-ID and acronym fields; Brief summary in scientific language;
+      Interventions, Observational Groups, Arms 1 and 2; Organizational Data last update. Registered REPEAT population;
+      no substitution of native aortic stenosis, native regurgitation or paravalvular leak. Sources retrieved
+      2026-10-26; no source artwork reproduced.
