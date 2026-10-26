@@ -2440,7 +2440,7 @@
       "sourceRefs": [
         {
           "locator": "Therapy information links",
-          "sourceId": "src-graph-293eb4f8ebbee72f"
+          "sourceId": "src-grownvalve-first-case-report"
         },
         {
           "locator": "Therapy information links",
@@ -2448,7 +2448,7 @@
         },
         {
           "locator": "Therapy research sources",
-          "sourceId": "src-graph-293eb4f8ebbee72f"
+          "sourceId": "src-grownvalve-first-case-report"
         },
         {
           "locator": "Therapy research sources",
@@ -2456,7 +2456,7 @@
         },
         {
           "locator": "Materials: Autologous pericardium — Valve tissue in the published first clinical case",
-          "sourceId": "src-graph-293eb4f8ebbee72f"
+          "sourceId": "src-grownvalve-first-case-report"
         },
         {
           "locator": "Related trial: GECT-DZHK28",
@@ -2464,11 +2464,11 @@
         },
         {
           "locator": "Related trial: GECT-DZHK28",
-          "sourceId": "src-graph-293eb4f8ebbee72f"
+          "sourceId": "src-grownvalve-first-case-report"
         },
         {
           "locator": "Related trial: GECT-DZHK28",
-          "sourceId": "src-graph-0eff63e8bd786803"
+          "sourceId": "src-grownvalve-cohort-announcement"
         }
       ],
       "versionIds": []
@@ -51901,15 +51901,6 @@
     },
     {
       "access": "public",
-      "id": "src-graph-0eff63e8bd786803",
-      "kind": "manufacturer",
-      "publisher": "Laplace Interventional",
-      "retrievedAt": "2026-10-26",
-      "title": "[Source document: prnewswire.com, grownvalve-achieves-primary-safety-endpoint-in-first-in-human-heart-valve-study-302919450.html]",
-      "url": "https://www.prnewswire.com/news-releases/grownvalve-achieves-primary-safety-endpoint-in-first-in-human-heart-valve-study-302919450.html"
-    },
-    {
-      "access": "public",
       "id": "src-graph-0f649889340718ea",
       "kind": "registry",
       "publisher": "ClinicalTrials.gov",
@@ -52337,15 +52328,6 @@
       "retrievedAt": "2026-10-21",
       "title": "[Source document: ebi.ac.uk, search]",
       "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42770301%20AND%20SRC:MED&resultType=core&format=json"
-    },
-    {
-      "access": "public",
-      "id": "src-graph-293eb4f8ebbee72f",
-      "kind": "publication",
-      "publisher": "GrOwnValve GmbH",
-      "retrievedAt": "2026-10-26",
-      "title": "GrOwnValve autologous pulmonary valve: First clinical case report",
-      "url": "https://doi.org/10.1093/ehjcr/ytag548"
     },
     {
       "access": "public",
@@ -56733,6 +56715,37 @@
       "retrievedAt": "2026-10-21",
       "title": "[Source document: alleviantmedical.com]",
       "url": "https://www.alleviantmedical.com/"
+    },
+    {
+      "access": "public",
+      "id": "src-grownvalve-cohort-announcement",
+      "kind": "manufacturer",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-10-26"
+      },
+      "publisher": "GrOwnValve GmbH",
+      "retrievedAt": "2026-10-26",
+      "title": "GrOwnValve achieves primary safety endpoint in first-in-human heart valve study",
+      "url": "https://www.prnewswire.com/news-releases/grownvalve-achieves-primary-safety-endpoint-in-first-in-human-heart-valve-study-302919450.html"
+    },
+    {
+      "access": "public",
+      "citation": {
+        "containerTitle": "European Heart Journal – Case Reports",
+        "doi": "10.1093/ehjcr/ytag548"
+      },
+      "id": "src-grownvalve-first-case-report",
+      "identifier": "DOI 10.1093/ehjcr/ytag548; PMID 42540957; PMC13426910",
+      "kind": "publication",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-07-20"
+      },
+      "publisher": "Oxford University Press",
+      "retrievedAt": "2026-10-26",
+      "title": "First case of the novel GrOwnValve procedure—a case report",
+      "url": "https://doi.org/10.1093/ehjcr/ytag548"
     },
     {
       "access": "public",
