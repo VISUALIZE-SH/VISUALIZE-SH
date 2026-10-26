@@ -4727,3 +4727,258 @@
       asOf: "2026-08-06"
       scope: Registry enrollment estimate/actual; not treated/analyzed
       source: https://clinicaltrials.gov/study/NCT03022708
+
+- id: trial-sutra-hemi-valve-nct06552689
+  type: trial
+  name: Sutra Hemi-Valve first-in-human feasibility study
+  nctId: NCT06552689
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-sutra-hemi-valve-tmvr
+  resultStatus: ongoing
+  status: recruiting
+  enrollmentCounts:
+    - count: 15
+      basis: estimated
+      asOf: "2025-03-17"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06552689
+      scope: Registry target sample, not actual enrollment or a results denominator.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06552689
+    notes: >-
+      ClinicalTrials.gov; protocolSection identificationModule, statusModule, sponsorCollaboratorsModule,
+      descriptionModule, designModule, armsInterventionsModule. Registry revision 2025-03-17; status and estimated
+      enrollment apply to that revision and do not establish current recruitment or treatment. No clinical results are
+      represented. Estimated April 2025 start is not evidence of actual study start. Sources retrieved 2026-10-26; no
+      source artwork reproduced.
+- id: trial-tioga-tmvr-nct06038838
+  type: trial
+  name: Feasibility Study of the Tioga TMVR System
+  nctId: NCT06038838
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-tioga-tmvr
+  resultStatus: ongoing
+  status: recruiting
+  enrollmentCounts:
+    - count: 30
+      basis: estimated
+      asOf: "2025-11-12"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06038838
+      scope: Registry target sample, not actual enrollment or a results denominator.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06038838
+    notes: >-
+      ClinicalTrials.gov, U.S. National Library of Medicine; protocolSection.identificationModule;
+      sponsorCollaboratorsModule.leadSponsor; conditionsModule.conditions; armsInterventionsModule.interventions;
+      statusModule.lastUpdatePostDateStruct. ClinicalTrials.gov, U.S. National Library of Medicine;
+      protocolSection.descriptionModule; designModule.enrollmentInfo. ClinicalTrials.gov, U.S. National Library of
+      Medicine; protocolSection.statusModule. Registry revision 2025-11-12; status and estimated enrollment apply to
+      that revision and do not establish current recruitment or treatment. No clinical results are represented. Tioga
+      TMVR is not established as Luna. Sources retrieved 2026-10-26; no source artwork reproduced.
+- id: trial-monarq-nct06611579
+  type: trial
+  name: MonarQ Study
+  nctId: NCT06611579
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-monarq-ttvr
+  resultStatus: ongoing
+  status: recruiting
+  enrollmentCounts:
+    - count: 50
+      basis: estimated
+      asOf: "2026-05-18"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06611579
+      scope: Registry target sample, not actual enrollment or a results denominator.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06611579
+    notes: >-
+      ClinicalTrials.gov / National Library of Medicine; protocolSection.identificationModule.briefTitle;
+      conditionsModule.conditions; armsInterventionsModule.interventions[0].otherNames and description.
+      ClinicalTrials.gov / National Library of Medicine; protocolSection.descriptionModule; designModule.enrollmentInfo;
+      outcomesModule.primaryOutcomes. ClinicalTrials.gov / National Library of Medicine; protocolSection.statusModule.
+      Registry revision 2026-05-18; status and estimated enrollment apply to that revision and do not establish current
+      recruitment or treatment. No clinical results are represented. Historical single-case results are not results of
+      this study. Sources retrieved 2026-10-26; no source artwork reproduced.
+- id: trial-repeat-drks00034170
+  type: trial
+  name: REPEAT (DRKS00034170)
+  conditions:
+    - cond-failed-surgical-aortic-bioprosthesis
+  therapies:
+    - proc-valve-in-valve-aortic-replacement
+    - proc-redo-surgical-aortic-replacement
+  resultStatus: ongoing
+  status: not-yet-recruiting
+  enrollmentCounts:
+    - count: 850
+      basis: estimated
+      asOf: "2025-09-25"
+      source: https://drks.de/search/en/trial/DRKS00034170
+      scope: Registry target sample, not actual enrollment or a results denominator.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://drks.de/search/en/trial/DRKS00034170
+    notes: >-
+      German Clinical Trials Register / BfArM; DRKS-ID and acronym fields; Brief summary in scientific language;
+      Interventions, Observational Groups, Arms 1 and 2; Organizational Data last update. German Clinical Trials
+      Register / BfArM; Organizational Data; Recruitment period and number of participants; Endpoints. Registry revision
+      2025-09-25; status and estimated enrollment apply to that revision and do not establish current recruitment or
+      treatment. No clinical results are represented. DRKS reports planned recruitment and start. The separate
+      NCT07462624 revision is not merged into this registry identity; its sample/status differ. Sources retrieved
+      2026-10-26; no source artwork reproduced.
+- id: trial-vsling-i-nct06851949
+  type: trial
+  name: Vsling I
+  nctId: NCT06851949
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-vsling
+  resultStatus: ongoing
+  status: recruiting
+  enrollmentCounts:
+    - count: 20
+      basis: estimated
+      asOf: "2025-02-28"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06851949
+      scope: Registry target sample, not actual enrollment or a results denominator.
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06851949
+    notes: >-
+      ClinicalTrials.gov / National Library of Medicine; protocolSection.identificationModule; descriptionModule;
+      statusModule; designModule; outcomesModule. Registry revision 2025-02-28; status and estimated enrollment apply to
+      that revision and do not establish current recruitment or treatment. No clinical results are represented. This
+      cohort is distinct from Vsling III NCT06002386. Sources retrieved 2026-10-26; no source artwork reproduced.
+- id: trial-gect-dzhk28
+  type: trial
+  name: GECT-DZHK28
+  nctId: NCT05809856
+  phase: First-in-human feasibility study
+  status: recruiting
+  conditions:
+    - cond-pv
+  therapies:
+    - dev-grownvalve-pulmonary
+  resultStatus: ongoing
+  enrollmentCounts:
+    - count: 7
+      basis: estimated
+      asOf: "2025-09-29"
+      scope: Registered planned total, distinct from the single published case and sponsor-reported five-patient cohort
+      source: https://clinicaltrials.gov/study/NCT05809856
+  outcomeSummary: >-
+    The registry has no posted results. A separate single-case paper describes six-month follow-up. In its 2026-10-26
+    announcement, GrOwnValve reports five patients with six-month follow-up and no prosthesis-related major
+    complications; this is a sponsor report, not independently verified cohort results or evidence of zero adverse
+    events.
+  references:
+    - https://clinicaltrials.gov/study/NCT05809856
+    - https://doi.org/10.1093/ehjcr/ytag548
+    - >-
+      https://www.prnewswire.com/news-releases/grownvalve-achieves-primary-safety-endpoint-in-first-in-human-heart-valve-study-302919450.html
+  links:
+    - label: Single-case publication
+      url: https://doi.org/10.1093/ehjcr/ytag548
+    - label: Sponsor five-patient announcement
+      url: >-
+        https://www.prnewswire.com/news-releases/grownvalve-achieves-primary-safety-endpoint-in-first-in-human-heart-valve-study-302919450.html
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://clinicaltrials.gov/study/NCT05809856
+      - https://doi.org/10.1093/ehjcr/ytag548
+      - >-
+        https://www.prnewswire.com/news-releases/grownvalve-achieves-primary-safety-endpoint-in-first-in-human-heart-valve-study-302919450.html
+    notes: >-
+      NCT05809856 status, sponsor/collaborator, design/enrollment and results modules: RECRUITING last updated
+      2025-09-29, accessed 2026-10-26; recruitment metadata may be stale. Charité is lead sponsor; GrOwnValve GmbH is
+      collaborator. The 2026-07-20 case-report procedure/follow-up narrative and the 2026-10-26 sponsor release opening
+      cohort/Clinical Development sections describe distinct evidence. The exact bridge between the release endpoint and
+      registered endpoint definitions remains unestablished. Seven planned participants, one published case and five
+      sponsor-reported patients are not interchangeable denominators. Long-term safety, effectiveness, durability and
+      growth remain unresolved.
+- id: trial-ice-watchman
+  type: trial
+  name: ICE-WATCHMAN 3D ICE guidance feasibility study
+  phase: Prospective two-centre feasibility cohort
+  status: completed
+  conditions:
+    - cond-af
+  therapies:
+    - dev-watchman-flx
+  resultStatus: mixed
+  primaryAnalysis:
+    status: reported
+    date: "2025-01-13"
+    precision: day
+    source: https://doi.org/10.1016/j.jacadv.2024.101570
+  year: 2025
+  enrollmentCounts:
+    - count: 101
+      basis: actual
+      asOf: "2023-12-27"
+      scope: Total registered study population; distinct from the 100-patient published cohort
+      source: https://clinicaltrials.gov/study/NCT04569734
+    - count: 100
+      basis: actual
+      scope: Enrolled at two centres in 2022–2023
+      source: https://doi.org/10.1016/j.jacadv.2024.101570
+    - count: 96
+      basis: treated
+      scope: Patients implanted with WATCHMAN FLX
+      source: https://doi.org/10.1016/j.jacadv.2024.101570
+    - count: 96
+      basis: analyzed
+      scope: Clinical follow-up population
+      source: https://doi.org/10.1016/j.jacadv.2024.101570
+    - count: 92
+      basis: analyzed
+      scope: 45-day imaging-table population with CT or TEE
+      source: https://doi.org/10.1016/j.jacadv.2024.101570
+  outcomeSummary: >-
+    The uncontrolled cohort evaluated Philips VeriSight Pro 3D ICE guidance of WATCHMAN FLX implantation under moderate
+    sedation. No conversion to general anesthesia or TEE was reported. Events included an ischemic stroke, two
+    gastrointestinal bleeds requiring transfusion and a day-33 myocardial-infarction death considered unrelated to LAAO
+    by the authors. The study does not establish superiority over TEE or zero complications.
+  references:
+    - https://doi.org/10.1016/j.jacadv.2024.101570
+    - https://clinicaltrials.gov/study/NCT04569734
+  links:
+    - label: Original ICE-WATCHMAN report
+      url: https://doi.org/10.1016/j.jacadv.2024.101570
+  curation:
+    status: curated
+    lastUpdated: "2026-10-26"
+    sources:
+      - https://doi.org/10.1016/j.jacadv.2024.101570
+      - https://clinicaltrials.gov/study/NCT04569734
+    notes: >-
+      Safety and Feasibility of 3D Intracardiac Echocardiography in Guiding Left Atrial Appendage Occlusion With
+      WATCHMAN FLX, JACC: Advances, published 2025-01-13: Methods, Results, Tables 6–8 and limitations; accessed
+      2026-10-26. One Philips VeriSight Pro/WATCHMAN FLX configuration at two experienced centres, no control arm or
+      imaging core laboratory. Enrollment, implantation, clinical follow-up and imaging denominators are distinct. The
+      article Methods explicitly cites NCT04569734. Its registry status/design/intervention sections, last updated
+      2023-12-27, report COMPLETED and 101 actual participants for a broader WATCHMAN/possible FLX protocol; this is not
+      the 100-patient FLX publication denominator. Mixed is a descriptive evidence-summary category, not a formal
+      comparative efficacy conclusion; cross-study leak-rate comparisons are unsupported.
+  nctId: NCT04569734

@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-10-25T16:09:27.779Z",
-    "lastUpdated": "2026-10-24",
+    "generatedAt": "2026-10-26T22:25:38.543Z",
+    "lastUpdated": "2026-10-26",
     "counts": {
-      "condition": 21,
-      "device": 137,
+      "condition": 23,
+      "device": 147,
       "pharmaceutical": 20,
-      "procedure": 13,
-      "digital": 18,
-      "company": 126,
-      "trial": 166
+      "procedure": 15,
+      "digital": 19,
+      "company": 135,
+      "trial": 173
     },
     "draftCount": 115,
-    "total": 501,
+    "total": 532,
     "newsCount": 161,
     "latestNewsDate": "2026-10-22"
   },
@@ -3390,7 +3390,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 42,
+          "degree": 43,
           "pulse": 7,
           "entity": {
             "id": "cond-af",
@@ -3620,7 +3620,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 49,
+          "degree": 51,
           "pulse": 5,
           "entity": {
             "id": "cond-hfref",
@@ -3718,7 +3718,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 42,
+          "degree": 44,
           "pulse": 9,
           "entity": {
             "id": "cond-as",
@@ -3790,7 +3790,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 52,
+          "degree": 58,
           "pulse": 8,
           "entity": {
             "id": "cond-mr",
@@ -3859,7 +3859,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 42,
+          "degree": 44,
           "pulse": 9,
           "entity": {
             "id": "cond-tr",
@@ -3894,7 +3894,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 11,
+          "degree": 14,
           "pulse": 4,
           "entity": {
             "id": "cond-pv",
@@ -4082,6 +4082,62 @@
                 "https://clinicaltrials.gov/study/NCT07426419"
               ],
               "notes": "New genotype-specific condition candidate. Curator should confirm if this belongs in existing condition taxonomy or whether a broader DCM node is preferred; do not map to HFrEF alone."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-complex-aortic-root-disease",
+          "label": "Complex aortic-root disease",
+          "group": "condition",
+          "category": "Aortic valve disease",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "cond-complex-aortic-root-disease",
+            "type": "condition",
+            "name": "Complex aortic-root disease",
+            "category": "Aortic valve disease",
+            "description": "Complex aortic disease involving the aortic root, the application described in the physician-modified Endo-Bentall report.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12648707/fullTextXML"
+              ],
+              "notes": "Journal of Vascular Surgery Cases, Innovations and Techniques; original article through Europe PMC; Body, Device modification, sec2/p0025, opening device-composition sentences before patient-specific measurements. Application category for the published aortic-root construct; no general disease mechanism or equivalence to aortic stenosis or regurgitation is inferred. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cond-failed-surgical-aortic-bioprosthesis",
+          "label": "Failed surgical aortic bioprosthesis",
+          "group": "condition",
+          "category": "Aortic valve disease",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "cond-failed-surgical-aortic-bioprosthesis",
+            "type": "condition",
+            "name": "Failed surgical aortic bioprosthesis",
+            "category": "Aortic valve disease",
+            "description": "Failure of a surgical aortic bioprosthesis requiring reintervention, the population specified by REPEAT.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://drks.de/search/en/trial/DRKS00034170"
+              ],
+              "notes": "German Clinical Trials Register / BfArM; DRKS-ID and acronym fields; Brief summary in scientific language; Interventions, Observational Groups, Arms 1 and 2; Organizational Data last update. Registered REPEAT population; no substitution of native aortic stenosis, native regurgitation or paravalvular leak. Sources retrieved 2026-10-26; no source artwork reproduced."
             }
           }
         }
@@ -5434,7 +5490,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 6,
+          "degree": 7,
           "pulse": 6,
           "timelineDate": "2020-07-21",
           "entity": {
@@ -13628,6 +13684,478 @@
       },
       {
         "data": {
+          "id": "dev-sutra-hemi-valve-tmvr",
+          "label": "Sutra Hemi-Valve TMVR",
+          "group": "device",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-sutra-hemi-valve-tmvr",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Sutra Hemi-Valve TMVR",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Marketing authorization for this exact configuration and application is not established.",
+            "description": "Sutra Medical describes posterior mitral-leaflet replacement designed to coapt with the native anterior leaflet.",
+            "materials": [],
+            "company": "co-sutra-medical",
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://sutramedical.com/our-technology/",
+                "https://clinicaltrials.gov/api/v2/studies/NCT06552689"
+              ],
+              "notes": "Sutra Medical; What is Sutra Hemi-Valve TMVR, nonquoted product application paragraph. ClinicalTrials.gov; protocolSection identificationModule, statusModule, sponsorCollaboratorsModule, descriptionModule, designModule, armsInterventionsModule. Sponsor-described mechanism; registered application is moderate-severe or severe symptomatic mitral regurgitation in patients at high surgical risk. No efficacy or durability claim adopted. Exact-version permanent implant composition is not established in this record. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-leafix-mitral-system",
+          "label": "LeaFix Mitral System",
+          "group": "device",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-leafix-mitral-system",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "LeaFix Mitral System",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Marketing authorization for this exact configuration and application is not established.",
+            "description": "LeaFix Medical describes a transcatheter implant intended to augment the anterior mitral leaflet for functional mitral regurgitation.",
+            "materials": [],
+            "company": "co-leafix-medical",
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://www.leafix-medical.com/"
+              ],
+              "notes": "LeaFix Medical Ltd.; About LeaFix, opening product/application paragraph. Undated sponsor design/application statement; no implantation, outcomes, durability or clinical stage is established. Exact-version permanent implant composition is not established in this record. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sciencrown-tavr",
+          "label": "ScienCrown TAVR system",
+          "group": "device",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-sciencrown-tavr",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "ScienCrown TAVR system",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Marketing authorization for this exact configuration and application is not established.",
+            "description": "Scientech Medical describes ScienCrown as a transcatheter aortic valve replacement system for aortic stenosis.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://en.scientechmed.com/product/163.html"
+              ],
+              "notes": "Scientech Medical; Treatment of Valvular Disease, ScienCrown heading, TAVR system label and Description paragraph. Undated sponsor description of the Scientech-branded product only. Identity with the separately published Lepu-attributed valve, other generations or native aortic-regurgitation use is not established. No case outcomes transferred. Exact-version permanent implant composition is not established in this record. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tioga-tmvr",
+          "label": "Tioga TMVR System",
+          "group": "device",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-tioga-tmvr",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Tioga TMVR System",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Marketing authorization for this exact configuration and application is not established.",
+            "description": "The registered Tioga TMVR study describes transseptal replacement of the native mitral valve in patients with symptomatic mitral regurgitation of at least 3+.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06038838"
+              ],
+              "notes": "ClinicalTrials.gov, U.S. National Library of Medicine; protocolSection.identificationModule; sponsorCollaboratorsModule.leadSponsor; conditionsModule.conditions; armsInterventionsModule.interventions; statusModule.lastUpdatePostDateStruct. ClinicalTrials.gov, U.S. National Library of Medicine; protocolSection.descriptionModule; designModule.enrollmentInfo. NCT06038838 revision 2025-11-12; generic Tioga TMVR identity only. Equivalence to Luna is not established. Registration is not proof of treatment or results. Exact-version permanent implant composition is not established in this record. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sikelia-polymeric-tavr",
+          "label": "Sikelia polymeric-leaflet transcatheter aortic valve",
+          "group": "device",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-sikelia-polymeric-tavr",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Sikelia polymeric-leaflet transcatheter aortic valve",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Marketing authorization for this exact configuration and application is not established.",
+            "description": "The original study describes a self-expanding transcatheter aortic valve with polyurethane leaflets and a sealing skirt for severe symptomatic aortic stenosis.",
+            "materials": [
+              {
+                "name": "Polyurethane",
+                "role": "Trileaflet valve",
+                "category": "leaflet",
+                "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13080745/fullTextXML",
+                "note": "Historical Sikelia configuration described in Methods, Device description p0030; not transferred to later generations."
+              }
+            ],
+            "company": "co-mitrassist-lifesciences",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13080745/fullTextXML"
+              ],
+              "notes": "JACC: Asia, original research article distributed through Europe PMC; Body, Methods; Device description, first paragraph; Study design and patient selection, opening application sentence. JACC: Asia, original research article distributed through Europe PMC; Body Methods Device description p0030–p0035; Implantation procedure p0040. Historical studied configuration only. No durability advantage or contemporary authorization is inferred. The cited TRISKELE registry identity does not resolve the product-name, generation or enrollment discrepancies. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-physician-modified-low-profile-endobentall",
+          "label": "Physician-modified low-profile Endo-Bentall conduit",
+          "group": "device",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-physician-modified-low-profile-endobentall",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Physician-modified low-profile Endo-Bentall conduit",
+            "treats": [
+              "cond-complex-aortic-root-disease"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Marketing authorization for this exact configuration and application is not established.",
+            "description": "The original report describes a physician-constructed conduit combining a self-expanding transcatheter aortic valve, thoracic aortic stent graft and coronary fenestrations.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12648707/fullTextXML"
+              ],
+              "notes": "Journal of Vascular Surgery Cases, Innovations and Techniques; original article through Europe PMC; Body, Device modification, sec2/p0025, opening device-composition sentences before patient-specific measurements. Journal of Vascular Surgery Cases, Innovations and Techniques; original article through Europe PMC; Body Device modification p0025–p0030. Journal of Vascular Surgery Cases, Innovations and Techniques; original article through Europe PMC; Body Endo-Bentall stage, sec3/p0035. Journal of Vascular Surgery Cases, Innovations and Techniques; original article through Europe PMC; Body Discussion p0060. Single patient-specific configuration described in the 2025 report. The patient died two weeks after surgery from end-stage heart failure; deployment does not establish benefit or durable safety. Additional clinical experience is required. Component authorization does not authorize the combined conduit; no manufacturer of the composite is inferred. Exact-version permanent implant composition is not established in this record. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-monarq-ttvr",
+          "label": "inQB8 MonarQ transcatheter tricuspid valve replacement system",
+          "group": "device",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-monarq-ttvr",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "inQB8 MonarQ transcatheter tricuspid valve replacement system",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Marketing authorization for this exact configuration and application is not established.",
+            "description": "The NCT06611579 registry names the inQB8 MonarQ system as its transcatheter tricuspid-valve replacement intervention.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06611579"
+              ],
+              "notes": "ClinicalTrials.gov / National Library of Medicine; protocolSection.identificationModule.briefTitle; conditionsModule.conditions; armsInterventionsModule.interventions[0].otherNames and description. Registered intervention at revision 2026-05-18 only. No equivalence to the historical compassionate-use configuration, implant materials or results is inferred. Exact-version permanent implant composition is not established in this record. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-valve-in-valve-aortic-replacement",
+          "label": "Valve-in-valve transcatheter aortic replacement",
+          "group": "procedure",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "proc-valve-in-valve-aortic-replacement",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "name": "Valve-in-valve transcatheter aortic replacement",
+            "treats": [
+              "cond-failed-surgical-aortic-bioprosthesis"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "No product-specific authorization is represented by this procedure category.",
+            "description": "Transcatheter valve-in-valve replacement for failed surgical aortic bioprostheses is one registered REPEAT comparison arm.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://drks.de/search/en/trial/DRKS00034170"
+              ],
+              "notes": "German Clinical Trials Register / BfArM; DRKS-ID and acronym fields; Brief summary in scientific language; Interventions, Observational Groups, Arms 1 and 2; Organizational Data last update. DRKS00034170 intervention-arm category only; no specific valve, manufacturer or comparative treatment recommendation is inferred. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "proc-redo-surgical-aortic-replacement",
+          "label": "Repeat surgical aortic-valve replacement",
+          "group": "procedure",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "proc-redo-surgical-aortic-replacement",
+            "type": "therapy",
+            "therapyType": "procedure",
+            "name": "Repeat surgical aortic-valve replacement",
+            "treats": [
+              "cond-failed-surgical-aortic-bioprosthesis"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "No product-specific authorization is represented by this procedure category.",
+            "description": "Repeat surgical replacement for failed surgical aortic bioprostheses is one registered REPEAT comparison arm.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://drks.de/search/en/trial/DRKS00034170"
+              ],
+              "notes": "German Clinical Trials Register / BfArM; DRKS-ID and acronym fields; Brief summary in scientific language; Interventions, Observational Groups, Arms 1 and 2; Organizational Data last update. DRKS00034170 intervention-arm category only; no specific valve, manufacturer or comparative treatment recommendation is inferred. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vsling",
+          "label": "Vsling transcatheter papillary-muscle sling",
+          "group": "device",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-vsling",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Vsling transcatheter papillary-muscle sling",
+            "treats": [
+              "cond-hfref"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Marketing authorization for this exact configuration and application is not established.",
+            "description": "The original paper describes a transcatheter papillary-muscle sling; Vsling I is registered in heart failure with reduced left-ventricular ejection fraction and ventricular dilation.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10242562/fullTextXML",
+                "https://clinicaltrials.gov/api/v2/studies/NCT06851949"
+              ],
+              "notes": "Structural Heart, original article distributed through Europe PMC; Body Introduction p0040/p0045; Materials and Methods, Vsling Device sec2.1/p0050, device identity and placement sentences. ClinicalTrials.gov / National Library of Medicine; protocolSection.identificationModule; descriptionModule; statusModule; designModule; outcomesModule. Device description and Vsling I application only. Animal/cadaver feasibility does not establish human clinical effectiveness. Historical paper configuration is not assumed identical to the registered study device. Exact-version permanent implant composition is not established in this record. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-jensclip",
+          "label": "JensClip",
+          "group": "device",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-jensclip",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "JensClip",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Marketing authorization for this exact configuration and application is not established.",
+            "description": "Jenscare describes JensClip as a clip-based transcatheter system intended to repair severe mitral regurgitation.",
+            "materials": [],
+            "company": "co-jenscare-scientific",
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://en.jenscare.com/product/242.html"
+              ],
+              "notes": "Jenscare Scientific Co., Ltd.; JensClip body product-description opening paragraph, first intended-application sentence. Undated sponsor description only. Application submissions do not establish authorization. No superiority, outcomes or equivalence between trial cohorts or generations is inferred. Exact-version permanent implant composition is not established in this record. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dig-articor-pulmonary-planning",
+          "label": "ARTICOR pulmonary-valve planning workflow",
+          "group": "digital",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dig-articor-pulmonary-planning",
+            "type": "therapy",
+            "therapyType": "digital",
+            "name": "ARTICOR pulmonary-valve planning workflow",
+            "treats": [
+              "cond-pv"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Authorization for the described application and software version is not established.",
+            "description": "A retrospective single-center study used ARTICOR to create CT-derived patient-specific holographic models for planning Venus P-valve implantation.",
+            "company": "co-artiness",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12483681/fullTextXML"
+              ],
+              "notes": "International Journal of Cardiology Congenital Heart Disease; Body2.1 p0095;2.2 p0100;2.4 p0120–p0125;3 Results p0165–p0170;4 Discussion p0190. Study-specific planning workflow for 26 patients treated January 2023–June 2024. Exact software version and equivalence to ARTICOR planner K252195, Compass or the general intraprocedural platform are not established. No improved clinical outcomes are inferred. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-grownvalve-pulmonary",
+          "label": "GrOwnValve autologous pulmonary valve",
+          "group": "device",
+          "category": "Autologous transcatheter pulmonary valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-grownvalve-pulmonary",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Autologous transcatheter pulmonary valve",
+            "name": "GrOwnValve autologous pulmonary valve",
+            "company": "co-grownvalve",
+            "treats": [
+              "cond-pv"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Adult first-in-human programme GECT-DZHK28 (NCT05809856). No commercial authorization is established by the cited clinical documents.",
+            "mechanism": "Patient-specific pulmonary-valve fabrication from autologous pericardium on a balloon-expandable stent, followed by transcatheter implantation.",
+            "materials": [
+              {
+                "name": "Autologous pericardium",
+                "role": "Valve tissue in the published first clinical case",
+                "category": "leaflet",
+                "source": "https://doi.org/10.1093/ehjcr/ytag548",
+                "note": "Exact case configuration; stent composition and later configurations are not established here."
+              }
+            ],
+            "description": "The published single case used pericardium harvested through mini-thoracotomy and CT-based moulds before implantation in a failed pulmonary homograft. This combined surgical and catheter workflow does not establish long-term durability or growth.",
+            "links": [
+              {
+                "label": "First clinical case report",
+                "url": "https://doi.org/10.1093/ehjcr/ytag548"
+              },
+              {
+                "label": "GECT-DZHK28 registry",
+                "url": "https://clinicaltrials.gov/study/NCT05809856"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://doi.org/10.1093/ehjcr/ytag548",
+                "https://clinicaltrials.gov/study/NCT05809856"
+              ],
+              "notes": "First case of the novel GrOwnValve procedure—a case report, European Heart Journal – Case Reports, published 2026-07-20: case procedure and six-month follow-up narrative. NCT05809856: intervention, eligibility and status sections, last updated 2025-09-29. Accessed 2026-10-26. Single uncontrolled adult pulmonary case; no pediatric, aortic-position, regeneration or growth benefit is established. No source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-mirus",
           "label": "MiRus LLC",
           "group": "company",
@@ -17384,6 +17912,240 @@
                 "https://clinicaltrials.gov/study/NCT02700100"
               ],
               "notes": "Pulmonary XPV initial and modified second clinical prototypes are distinct. Do not transfer aXess dialysis graft CE mark to Xplore2. Historical conduit chemistry specified below applies only to 2021 studied prototypes. Sponsor Xplore2 wording does not bridge every manufacturing iteration. Gaps: current-xplore2-prototype-bridge, pulmonary-authorization, patent-product-connection, current-generation-materials, newsroom-access-limits."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-cara-medical",
+          "label": "Cara Medical",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 0,
+          "pulse": 0,
+          "entity": {
+            "id": "co-cara-medical",
+            "type": "company",
+            "name": "Cara Medical",
+            "description": "Cara Medical describes CT-based visualization of the cardiac conduction system for structural valve procedures and heart-failure pacing.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://www.cara-medical.co/"
+              ],
+              "notes": "Cara Medical; Personalizing Cardiac Pacing and Structural Heart Procedures, application paragraph; Guided Device Deployment, heart-failure pacing description; Our Products, Metis and Atlas descriptions. Undated sponsor description only; clinical performance and authorization are not established. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-sutra-medical",
+          "label": "Sutra Medical",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-sutra-medical",
+            "type": "company",
+            "name": "Sutra Medical",
+            "description": "Sutra Medical describes a partial mitral-valve replacement approach using its Hemi-Valve TMVR system.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://sutramedical.com/our-technology/"
+              ],
+              "notes": "Sutra Medical; What is Sutra Hemi-Valve TMVR, nonquoted product application paragraph. Undated sponsor description only; clinical performance and authorization are not established. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-leafix-medical",
+          "label": "LeaFix Medical",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-leafix-medical",
+            "type": "company",
+            "name": "LeaFix Medical",
+            "description": "LeaFix Medical describes development of the LeaFix Mitral System for anterior-leaflet augmentation in functional mitral regurgitation.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://www.leafix-medical.com/"
+              ],
+              "notes": "LeaFix Medical Ltd.; About LeaFix, opening product/application paragraph. Undated sponsor description only; clinical performance and authorization are not established. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-tioga-cardiovascular",
+          "label": "Tioga Cardiovascular",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 0,
+          "pulse": 0,
+          "entity": {
+            "id": "co-tioga-cardiovascular",
+            "type": "company",
+            "name": "Tioga Cardiovascular",
+            "description": "ClinicalTrials.gov names Tioga Cardiovascular, Inc. as lead sponsor of the Tioga TMVR feasibility study NCT06038838.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06038838"
+              ],
+              "notes": "ClinicalTrials.gov, U.S. National Library of Medicine; protocolSection.identificationModule; sponsorCollaboratorsModule.leadSponsor; conditionsModule.conditions; armsInterventionsModule.interventions; statusModule.lastUpdatePostDateStruct. Registry sponsor identity at revision 2025-11-12; no broader corporate or product-generation claim. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-adsilico",
+          "label": "Adsilico",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 0,
+          "pulse": 0,
+          "entity": {
+            "id": "co-adsilico",
+            "type": "company",
+            "name": "Adsilico",
+            "description": "Adsilico describes Virtual Chimera virtual populations and physics-based simulation for structural-heart device development, including a mitral-repair simulation example.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://www.adsilico.uk/"
+              ],
+              "notes": "adsilico; How it works, Define the anatomy and the question and See the patients trials miss; The science in view, Mitral valve repair, nonquoted application description. Undated sponsor description of an device-development simulation application. It does not establish a patient therapy, condition-specific clinical use, prediction accuracy or regulatory acceptance. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-mitrassist-lifesciences",
+          "label": "MitrAssist Lifesciences Limited",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-mitrassist-lifesciences",
+            "type": "company",
+            "name": "MitrAssist Lifesciences Limited",
+            "description": "The original Sikelia study identifies MitrAssist Lifesciences Limited as developer of the studied transcatheter aortic-valve system.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13080745/fullTextXML"
+              ],
+              "notes": "JACC: Asia, original research article distributed through Europe PMC; Body, Methods; Device description, first paragraph; Study design and patient selection, opening application sentence. Developer attribution in the historical study only; no broader portfolio claim. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-jenscare-scientific",
+          "label": "Jenscare Scientific",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-jenscare-scientific",
+            "type": "company",
+            "name": "Jenscare Scientific",
+            "description": "Jenscare describes its JensClip clip-based transcatheter mitral-repair system for severe mitral regurgitation.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://en.jenscare.com/product/242.html"
+              ],
+              "notes": "Jenscare Scientific Co., Ltd.; JensClip body product-description opening paragraph, first intended-application sentence. Undated sponsor description only; clinical performance and authorization are not established. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-artiness",
+          "label": "Artiness",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-artiness",
+            "type": "company",
+            "name": "Artiness",
+            "description": "The original pulmonary-valve planning study identifies ARTICOR software with Artiness, Milan.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12483681/fullTextXML"
+              ],
+              "notes": "International Journal of Cardiology Congenital Heart Disease; Body2.1 p0095;2.2 p0100;2.4 p0120–p0125;3 Results p0165–p0170;4 Discussion p0190. Attribution limited to the study-specific ARTICOR workflow. Identity with a contemporary or cleared software version is not established. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-grownvalve",
+          "label": "GrOwnValve GmbH",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-grownvalve",
+            "type": "company",
+            "name": "GrOwnValve GmbH",
+            "description": "Developer collaborating on an investigational autologous transcatheter pulmonary-valve programme.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT05809856"
+              ],
+              "notes": "GECT-DZHK28, NCT05809856: sponsor/collaborator and intervention sections identify GrOwnValve GmbH as collaborator and Charité as lead sponsor. Registry last updated 2025-09-29; accessed 2026-10-26. No commercial authorization or other valve-position programme is established by this record."
             }
           }
         }
@@ -25572,6 +26334,370 @@
             ]
           }
         }
+      },
+      {
+        "data": {
+          "id": "trial-sutra-hemi-valve-nct06552689",
+          "label": "Sutra Hemi-Valve first-in-human feasibility study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-sutra-hemi-valve-nct06552689",
+            "type": "trial",
+            "name": "Sutra Hemi-Valve first-in-human feasibility study",
+            "nctId": "NCT06552689",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-sutra-hemi-valve-tmvr"
+            ],
+            "resultStatus": "ongoing",
+            "status": "recruiting",
+            "enrollmentCounts": [
+              {
+                "count": 15,
+                "basis": "estimated",
+                "asOf": "2025-03-17",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06552689",
+                "scope": "Registry target sample, not actual enrollment or a results denominator."
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06552689"
+              ],
+              "notes": "ClinicalTrials.gov; protocolSection identificationModule, statusModule, sponsorCollaboratorsModule, descriptionModule, designModule, armsInterventionsModule. Registry revision 2025-03-17; status and estimated enrollment apply to that revision and do not establish current recruitment or treatment. No clinical results are represented. Estimated April 2025 start is not evidence of actual study start. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tioga-tmvr-nct06038838",
+          "label": "Feasibility Study of the Tioga TMVR System",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-tioga-tmvr-nct06038838",
+            "type": "trial",
+            "name": "Feasibility Study of the Tioga TMVR System",
+            "nctId": "NCT06038838",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-tioga-tmvr"
+            ],
+            "resultStatus": "ongoing",
+            "status": "recruiting",
+            "enrollmentCounts": [
+              {
+                "count": 30,
+                "basis": "estimated",
+                "asOf": "2025-11-12",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06038838",
+                "scope": "Registry target sample, not actual enrollment or a results denominator."
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06038838"
+              ],
+              "notes": "ClinicalTrials.gov, U.S. National Library of Medicine; protocolSection.identificationModule; sponsorCollaboratorsModule.leadSponsor; conditionsModule.conditions; armsInterventionsModule.interventions; statusModule.lastUpdatePostDateStruct. ClinicalTrials.gov, U.S. National Library of Medicine; protocolSection.descriptionModule; designModule.enrollmentInfo. ClinicalTrials.gov, U.S. National Library of Medicine; protocolSection.statusModule. Registry revision 2025-11-12; status and estimated enrollment apply to that revision and do not establish current recruitment or treatment. No clinical results are represented. Tioga TMVR is not established as Luna. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-monarq-nct06611579",
+          "label": "MonarQ Study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-monarq-nct06611579",
+            "type": "trial",
+            "name": "MonarQ Study",
+            "nctId": "NCT06611579",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-monarq-ttvr"
+            ],
+            "resultStatus": "ongoing",
+            "status": "recruiting",
+            "enrollmentCounts": [
+              {
+                "count": 50,
+                "basis": "estimated",
+                "asOf": "2026-05-18",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06611579",
+                "scope": "Registry target sample, not actual enrollment or a results denominator."
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06611579"
+              ],
+              "notes": "ClinicalTrials.gov / National Library of Medicine; protocolSection.identificationModule.briefTitle; conditionsModule.conditions; armsInterventionsModule.interventions[0].otherNames and description. ClinicalTrials.gov / National Library of Medicine; protocolSection.descriptionModule; designModule.enrollmentInfo; outcomesModule.primaryOutcomes. ClinicalTrials.gov / National Library of Medicine; protocolSection.statusModule. Registry revision 2026-05-18; status and estimated enrollment apply to that revision and do not establish current recruitment or treatment. No clinical results are represented. Historical single-case results are not results of this study. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-repeat-drks00034170",
+          "label": "REPEAT (DRKS00034170)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-repeat-drks00034170",
+            "type": "trial",
+            "name": "REPEAT (DRKS00034170)",
+            "conditions": [
+              "cond-failed-surgical-aortic-bioprosthesis"
+            ],
+            "therapies": [
+              "proc-valve-in-valve-aortic-replacement",
+              "proc-redo-surgical-aortic-replacement"
+            ],
+            "resultStatus": "ongoing",
+            "status": "not-yet-recruiting",
+            "enrollmentCounts": [
+              {
+                "count": 850,
+                "basis": "estimated",
+                "asOf": "2025-09-25",
+                "source": "https://drks.de/search/en/trial/DRKS00034170",
+                "scope": "Registry target sample, not actual enrollment or a results denominator."
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://drks.de/search/en/trial/DRKS00034170"
+              ],
+              "notes": "German Clinical Trials Register / BfArM; DRKS-ID and acronym fields; Brief summary in scientific language; Interventions, Observational Groups, Arms 1 and 2; Organizational Data last update. German Clinical Trials Register / BfArM; Organizational Data; Recruitment period and number of participants; Endpoints. Registry revision 2025-09-25; status and estimated enrollment apply to that revision and do not establish current recruitment or treatment. No clinical results are represented. DRKS reports planned recruitment and start. The separate NCT07462624 revision is not merged into this registry identity; its sample/status differ. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-vsling-i-nct06851949",
+          "label": "Vsling I",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-vsling-i-nct06851949",
+            "type": "trial",
+            "name": "Vsling I",
+            "nctId": "NCT06851949",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "dev-vsling"
+            ],
+            "resultStatus": "ongoing",
+            "status": "recruiting",
+            "enrollmentCounts": [
+              {
+                "count": 20,
+                "basis": "estimated",
+                "asOf": "2025-02-28",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06851949",
+                "scope": "Registry target sample, not actual enrollment or a results denominator."
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06851949"
+              ],
+              "notes": "ClinicalTrials.gov / National Library of Medicine; protocolSection.identificationModule; descriptionModule; statusModule; designModule; outcomesModule. Registry revision 2025-02-28; status and estimated enrollment apply to that revision and do not establish current recruitment or treatment. No clinical results are represented. This cohort is distinct from Vsling III NCT06002386. Sources retrieved 2026-10-26; no source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-gect-dzhk28",
+          "label": "GECT-DZHK28",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-gect-dzhk28",
+            "type": "trial",
+            "name": "GECT-DZHK28",
+            "nctId": "NCT05809856",
+            "phase": "First-in-human feasibility study",
+            "status": "recruiting",
+            "conditions": [
+              "cond-pv"
+            ],
+            "therapies": [
+              "dev-grownvalve-pulmonary"
+            ],
+            "resultStatus": "ongoing",
+            "enrollmentCounts": [
+              {
+                "count": 7,
+                "basis": "estimated",
+                "asOf": "2025-09-29",
+                "scope": "Registered planned total, distinct from the single published case and sponsor-reported five-patient cohort",
+                "source": "https://clinicaltrials.gov/study/NCT05809856"
+              }
+            ],
+            "outcomeSummary": "The registry has no posted results. A separate single-case paper describes six-month follow-up. In its 2026-10-26 announcement, GrOwnValve reports five patients with six-month follow-up and no prosthesis-related major complications; this is a sponsor report, not independently verified cohort results or evidence of zero adverse events.",
+            "references": [
+              "https://clinicaltrials.gov/study/NCT05809856",
+              "https://doi.org/10.1093/ehjcr/ytag548",
+              "https://www.prnewswire.com/news-releases/grownvalve-achieves-primary-safety-endpoint-in-first-in-human-heart-valve-study-302919450.html"
+            ],
+            "links": [
+              {
+                "label": "Single-case publication",
+                "url": "https://doi.org/10.1093/ehjcr/ytag548"
+              },
+              {
+                "label": "Sponsor five-patient announcement",
+                "url": "https://www.prnewswire.com/news-releases/grownvalve-achieves-primary-safety-endpoint-in-first-in-human-heart-valve-study-302919450.html"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT05809856",
+                "https://doi.org/10.1093/ehjcr/ytag548",
+                "https://www.prnewswire.com/news-releases/grownvalve-achieves-primary-safety-endpoint-in-first-in-human-heart-valve-study-302919450.html"
+              ],
+              "notes": "NCT05809856 status, sponsor/collaborator, design/enrollment and results modules: RECRUITING last updated 2025-09-29, accessed 2026-10-26; recruitment metadata may be stale. Charité is lead sponsor; GrOwnValve GmbH is collaborator. The 2026-07-20 case-report procedure/follow-up narrative and the 2026-10-26 sponsor release opening cohort/Clinical Development sections describe distinct evidence. The exact bridge between the release endpoint and registered endpoint definitions remains unestablished. Seven planned participants, one published case and five sponsor-reported patients are not interchangeable denominators. Long-term safety, effectiveness, durability and growth remain unresolved."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-ice-watchman",
+          "label": "ICE-WATCHMAN 3D ICE guidance feasibility study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-ice-watchman",
+            "type": "trial",
+            "name": "ICE-WATCHMAN 3D ICE guidance feasibility study",
+            "phase": "Prospective two-centre feasibility cohort",
+            "status": "completed",
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-watchman-flx"
+            ],
+            "resultStatus": "mixed",
+            "primaryAnalysis": {
+              "status": "reported",
+              "date": "2025-01-13",
+              "precision": "day",
+              "source": "https://doi.org/10.1016/j.jacadv.2024.101570"
+            },
+            "year": 2025,
+            "enrollmentCounts": [
+              {
+                "count": 101,
+                "basis": "actual",
+                "asOf": "2023-12-27",
+                "scope": "Total registered study population; distinct from the 100-patient published cohort",
+                "source": "https://clinicaltrials.gov/study/NCT04569734"
+              },
+              {
+                "count": 100,
+                "basis": "actual",
+                "scope": "Enrolled at two centres in 2022–2023",
+                "source": "https://doi.org/10.1016/j.jacadv.2024.101570"
+              },
+              {
+                "count": 96,
+                "basis": "treated",
+                "scope": "Patients implanted with WATCHMAN FLX",
+                "source": "https://doi.org/10.1016/j.jacadv.2024.101570"
+              },
+              {
+                "count": 96,
+                "basis": "analyzed",
+                "scope": "Clinical follow-up population",
+                "source": "https://doi.org/10.1016/j.jacadv.2024.101570"
+              },
+              {
+                "count": 92,
+                "basis": "analyzed",
+                "scope": "45-day imaging-table population with CT or TEE",
+                "source": "https://doi.org/10.1016/j.jacadv.2024.101570"
+              }
+            ],
+            "outcomeSummary": "The uncontrolled cohort evaluated Philips VeriSight Pro 3D ICE guidance of WATCHMAN FLX implantation under moderate sedation. No conversion to general anesthesia or TEE was reported. Events included an ischemic stroke, two gastrointestinal bleeds requiring transfusion and a day-33 myocardial-infarction death considered unrelated to LAAO by the authors. The study does not establish superiority over TEE or zero complications.",
+            "references": [
+              "https://doi.org/10.1016/j.jacadv.2024.101570",
+              "https://clinicaltrials.gov/study/NCT04569734"
+            ],
+            "links": [
+              {
+                "label": "Original ICE-WATCHMAN report",
+                "url": "https://doi.org/10.1016/j.jacadv.2024.101570"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-10-26",
+              "sources": [
+                "https://doi.org/10.1016/j.jacadv.2024.101570",
+                "https://clinicaltrials.gov/study/NCT04569734"
+              ],
+              "notes": "Safety and Feasibility of 3D Intracardiac Echocardiography in Guiding Left Atrial Appendage Occlusion With WATCHMAN FLX, JACC: Advances, published 2025-01-13: Methods, Results, Tables 6–8 and limitations; accessed 2026-10-26. One Philips VeriSight Pro/WATCHMAN FLX configuration at two experienced centres, no control arm or imaging core laboratory. Enrollment, implantation, clinical follow-up and imaging denominators are distinct. The article Methods explicitly cites NCT04569734. Its registry status/design/intervention sections, last updated 2023-12-27, report COMPLETED and 101 actual participants for a broader WATCHMAN/possible FLX protocol; this is not the 100-patient FLX publication denominator. Mixed is a descriptive evidence-summary category, not a formal comparative efficacy conclusion; cross-study leak-rate comparisons are unsupported."
+            },
+            "nctId": "NCT04569734"
+          }
+        }
       }
     ],
     "edges": [
@@ -28649,6 +29775,158 @@
       },
       {
         "data": {
+          "id": "dev-sutra-hemi-valve-tmvr__made_by__co-sutra-medical",
+          "source": "dev-sutra-hemi-valve-tmvr",
+          "target": "co-sutra-medical",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sutra-hemi-valve-tmvr__treats__cond-mr",
+          "source": "dev-sutra-hemi-valve-tmvr",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-leafix-mitral-system__made_by__co-leafix-medical",
+          "source": "dev-leafix-mitral-system",
+          "target": "co-leafix-medical",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-leafix-mitral-system__treats__cond-mr",
+          "source": "dev-leafix-mitral-system",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sciencrown-tavr__treats__cond-as",
+          "source": "dev-sciencrown-tavr",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-tioga-tmvr__treats__cond-mr",
+          "source": "dev-tioga-tmvr",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sikelia-polymeric-tavr__made_by__co-mitrassist-lifesciences",
+          "source": "dev-sikelia-polymeric-tavr",
+          "target": "co-mitrassist-lifesciences",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sikelia-polymeric-tavr__treats__cond-as",
+          "source": "dev-sikelia-polymeric-tavr",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-physician-modified-low-profile-endobentall__treats__cond-complex-aortic-root-disease",
+          "source": "dev-physician-modified-low-profile-endobentall",
+          "target": "cond-complex-aortic-root-disease",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-monarq-ttvr__treats__cond-tr",
+          "source": "dev-monarq-ttvr",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-valve-in-valve-aortic-replacement__treats__cond-failed-surgical-aortic-bioprosthesis",
+          "source": "proc-valve-in-valve-aortic-replacement",
+          "target": "cond-failed-surgical-aortic-bioprosthesis",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "proc-redo-surgical-aortic-replacement__treats__cond-failed-surgical-aortic-bioprosthesis",
+          "source": "proc-redo-surgical-aortic-replacement",
+          "target": "cond-failed-surgical-aortic-bioprosthesis",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vsling__treats__cond-hfref",
+          "source": "dev-vsling",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-jensclip__made_by__co-jenscare-scientific",
+          "source": "dev-jensclip",
+          "target": "co-jenscare-scientific",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-jensclip__treats__cond-mr",
+          "source": "dev-jensclip",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-articor-pulmonary-planning__made_by__co-artiness",
+          "source": "dig-articor-pulmonary-planning",
+          "target": "co-artiness",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dig-articor-pulmonary-planning__treats__cond-pv",
+          "source": "dig-articor-pulmonary-planning",
+          "target": "cond-pv",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-grownvalve-pulmonary__made_by__co-grownvalve",
+          "source": "dev-grownvalve-pulmonary",
+          "target": "co-grownvalve",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-grownvalve-pulmonary__treats__cond-pv",
+          "source": "dev-grownvalve-pulmonary",
+          "target": "cond-pv",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "trial-siegel-star__evaluates__dev-siegel-tavr",
           "source": "trial-siegel-star",
           "target": "dev-siegel-tavr",
@@ -31476,6 +32754,126 @@
           "id": "trial-nct03022708__studies__cond-pv",
           "source": "trial-nct03022708",
           "target": "cond-pv",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-sutra-hemi-valve-nct06552689__evaluates__dev-sutra-hemi-valve-tmvr",
+          "source": "trial-sutra-hemi-valve-nct06552689",
+          "target": "dev-sutra-hemi-valve-tmvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-sutra-hemi-valve-nct06552689__studies__cond-mr",
+          "source": "trial-sutra-hemi-valve-nct06552689",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tioga-tmvr-nct06038838__evaluates__dev-tioga-tmvr",
+          "source": "trial-tioga-tmvr-nct06038838",
+          "target": "dev-tioga-tmvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tioga-tmvr-nct06038838__studies__cond-mr",
+          "source": "trial-tioga-tmvr-nct06038838",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-monarq-nct06611579__evaluates__dev-monarq-ttvr",
+          "source": "trial-monarq-nct06611579",
+          "target": "dev-monarq-ttvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-monarq-nct06611579__studies__cond-tr",
+          "source": "trial-monarq-nct06611579",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-repeat-drks00034170__evaluates__proc-valve-in-valve-aortic-replacement",
+          "source": "trial-repeat-drks00034170",
+          "target": "proc-valve-in-valve-aortic-replacement",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-repeat-drks00034170__evaluates__proc-redo-surgical-aortic-replacement",
+          "source": "trial-repeat-drks00034170",
+          "target": "proc-redo-surgical-aortic-replacement",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-repeat-drks00034170__studies__cond-failed-surgical-aortic-bioprosthesis",
+          "source": "trial-repeat-drks00034170",
+          "target": "cond-failed-surgical-aortic-bioprosthesis",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-vsling-i-nct06851949__evaluates__dev-vsling",
+          "source": "trial-vsling-i-nct06851949",
+          "target": "dev-vsling",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-vsling-i-nct06851949__studies__cond-hfref",
+          "source": "trial-vsling-i-nct06851949",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-gect-dzhk28__evaluates__dev-grownvalve-pulmonary",
+          "source": "trial-gect-dzhk28",
+          "target": "dev-grownvalve-pulmonary",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-gect-dzhk28__studies__cond-pv",
+          "source": "trial-gect-dzhk28",
+          "target": "cond-pv",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-ice-watchman__evaluates__dev-watchman-flx",
+          "source": "trial-ice-watchman",
+          "target": "dev-watchman-flx",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-ice-watchman__studies__cond-af",
+          "source": "trial-ice-watchman",
+          "target": "cond-af",
           "relationship": "studies"
         }
       },
