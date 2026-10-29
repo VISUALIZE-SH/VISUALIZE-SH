@@ -1,0 +1,46 @@
+# cardiac-diagnostic-evidence-2026-10: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-10-27"
+claims:
+  - id: claim-wor81-b05-reveal-diagnostic-accuracy
+    versionId: ver-i124-evuzamitide-reveal
+    category: evidence
+    key: diagnostic-accuracy
+    label: REVEAL overall diagnostic accuracy
+    value: Sensitivity 94% (95% CI, 85%–98%); specificity 86% (95% CI, 77%–92%)
+    availability: reported
+    basis: directly_reported
+    reviewStatus: reviewed
+    observedAt: "2026-10-27"
+    context: >-
+      Original nonrandomized REVEAL abstract: 195 enrolled, 170 included, suspected cardiac amyloidosis; blinded image
+      readers and clinical adjudication. Both coprimary P<.001.
+    limitation: >-
+      Abstract/keypoints only, not full methods. Overall diagnostic metrics, not ATTR-only, clinical treatment benefit
+      or marketing approval. Registry 204 is separate.
+    sourceRefs:
+      - sourceId: src-wor81-b05-reveal-original-abstract
+        locator: >-
+          Original abstract > Design,Setting,andParticipants; MainOutcomesandMeasures; Results; TrialRegistration.
+          NCT06788535, DOI10.1001/jama.2026.17361.
+bibliography:
+  - id: bib-wor81-b05-reveal-original-diagnostic-abstract
+    entityIds:
+      - rx-i124-evuzamitide
+    versionIds:
+      - ver-i124-evuzamitide-reveal
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b05-reveal-original-abstract
+        locator: Original REVEAL abstract/KeyPoints only; overall diagnostic cohort and source-specific count limits.
+sources:
+  - id: src-wor81-b05-reveal-original-abstract
+    title: "124I-Evuzamitide PET/CT for Diagnosing Cardiac Amyloidosis: The REVEAL Nonrandomized Clinical Trial"
+    url: https://doi.org/10.1001/jama.2026.17361
+    kind: publication
+    publisher: JAMA
+    identifier: DOI:10.1001/jama.2026.17361
+    publishedAt:
+      value: "2026-08-30"
+      precision: day
+    retrievedAt: "2026-10-27"
+    access: public

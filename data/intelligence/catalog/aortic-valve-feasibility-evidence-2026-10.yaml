@@ -1,0 +1,25 @@
+# aortic-valve-feasibility-evidence-2026-10: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-10-28"
+sources:
+  - id: src-wor81-b11-duravr-original
+    title: Early safety and feasibility of a first-in-class biomimetic transcatheter aortic valve - DurAVR
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10333917&retmode=xml
+    kind: publication
+    publisher: Original publication via NCBI
+    publishedAt:
+      value: "2023-07-17"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: public
+    identifier: PMCID:PMC10333917
+bibliography:
+  - id: bib-wor81-b11-duravr-original
+    entityIds:
+      - dev-duravr-thv
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b11-duravr-original
+        locator: >-
+          article/front/article-meta/article-id[pub-id-type=pmcid]=PMC10333917; abstract/sec[st3,st4,st5]; abstract
+          only, historical 13-patient cohort, not current PARADIGM/EFS build or comparative benefit.

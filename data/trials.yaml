@@ -2182,10 +2182,7 @@
   year: 2026
   primaryEndpoint: 90-day heart failure hospitalization rate
   resultStatus: mixed
-  outcomeSummary: >-
-    Registry reports 13 versus 16 HF hospitalizations in 80 versus 91 analyzed participants without comparative
-    statistics. ACC26 abstract did not demonstrate a reduction in HF hospitalization; notification instability
-    is a separate endpoint.
+  outcomeSummary: Registry primary table reports 13 versus 16 HF hospitalizations with 80/91 participant denominators and no comparative statistics. The October 9 results abstract reports 13/80 versus 17/91 participants with HF rehospitalization (HR 0.90; 95% CI, 0.43–1.84; P=.76), without demonstrated reduction in exploratory clinical events. Lower AI-detected physiological instability is a separate endpoint; count definitions remain unreconciled.
   timeline:
     date: '2021-04-19'
     precision: day
@@ -2196,17 +2193,27 @@
     - https://clinicaltrials.gov/api/v2/studies/NCT04502563
     - https://cdn.clinicaltrials.gov/large-docs/63/NCT04502563/Prot_SAP_001.pdf
     - https://www.jacc.org/doi/10.1016/j.jacc.2026.02.1489
+    - https://doi.org/10.1016/j.jchf.2026.103422
+  primaryAnalysis:
+    status: reported
+    date: "2026-04-28"
+    precision: day
+    source: https://clinicaltrials.gov/study/NCT04502563
+  enrollmentCounts:
+    - count: 176
+      basis: actual
+      asOf: "2026-04-28"
+      source: https://clinicaltrials.gov/study/NCT04502563
+      scope: Whole registry enrollment ACTUAL at posted revision; not the171 analyzed population.
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://clinicaltrials.gov/api/v2/studies/NCT04502563
       - https://cdn.clinicaltrials.gov/large-docs/63/NCT04502563/Prot_SAP_001.pdf
       - https://www.jacc.org/doi/10.1016/j.jacc.2026.02.1489
-    notes: >-
-      Actual registry enrollment176 differs from171 analyzed (80/91) and protocol240 planned. Registry reports
-      quadruple masking; final Oct9 paper unavailable and design discrepancy not adjudicated. Last
-      update/results posted2026-04-28. Raw hospitalization counts do not establish benefit.
+      - https://doi.org/10.1016/j.jchf.2026.103422
+    notes: Registry 176 actual enrollment differs from 171 analyzed (80/91). Registry 13/16 hospitalizations versus publication 13/17 participants with HF rehospitalization remain distinct. Registry quadruple masking and publication open-label, blinded-endpoint descriptions are not adjudicated. Original October 9 abstract reviewed; full final methods and protocol planning target not reviewed here. Device/analytics build remains unbridged; clinical and AI-physiological endpoints remain separate.
 - id: trial-teer-china
   type: trial
   name: TEER-CHINA
@@ -2598,15 +2605,24 @@
     event: REVEAL actual start
     source: https://clinicaltrials.gov/study/NCT06788535
   pulse: 7
+  primaryAnalysis:
+    status: reported
+    date: "2026-08-30"
+    precision: day
+    source: https://doi.org/10.1001/jama.2026.17361
+  enrollmentCounts:
+    - count: 204
+      basis: actual
+      asOf: "2026-04-30"
+      source: https://clinicaltrials.gov/study/NCT06788535
+      scope: Whole registry enrollment, ACTUAL, at posted revision; not identical to publication analysis cohort.
   curation:
     status: curated
-    lastUpdated: '2026-10-12'
+    lastUpdated: "2026-10-12"
     sources:
       - https://clinicaltrials.gov/study/NCT06788535
       - https://jamanetwork.com/journals/jama/article-abstract/2853272
-    notes: >-
-      Registry 204 actual vs paper 195 enrolled/170 included; preserve distinct scopes. Brigham and Women’s
-      Hospital sponsor. ATTR condition is a partial diagnostic crosswalk.
+    notes: Registry reports 204 actual enrollment; publication abstract reports 195 enrolled and 170 included. Preserve distinct populations without harmonization. Coprimary diagnostic accuracy is published; the dated registry capture has no tabular results. Abstract/key-points review only; full methods and subtype-specific findings not reviewed. Registry lead sponsor is Sharmila Dorbala (sponsor-investigator); Brigham and Women’s Hospital is affiliation/organization, and Bayer is collaborator. ATTR association is a partial diagnostic crosswalk, not therapeutic efficacy.
 
 # Documentary records; source and scope limits accompany each entry.
 - id: trial-highlife-us-efs
@@ -4364,7 +4380,7 @@
   type: trial
   name: VOICE-HF
   nctId: NCT07870395
-  status: not-yet-recruiting
+  status: recruiting
   conditions:
     - cond-hf
   therapies:
@@ -4373,20 +4389,26 @@
   enrollmentCounts:
     - count: 450
       basis: estimated
-      asOf: "2026-10-14"
+      asOf: "2026-10-27"
       source: https://clinicaltrials.gov/study/NCT07870395
-      scope: Whole registry study; not necessarily randomized, treated or analyzed.
+      scope: Whole registry study, ESTIMATED at current revision; not actual enrolled, analyzed or treated.
   primaryEndpoint: >-
     Vox algorithm sensitivity and unexplained alert rate for detecting HF decompensation events, from enrollment through
     six months of follow-up.
   references:
     - https://clinicaltrials.gov/study/NCT07870395
+  timeline:
+    date: "2026-10-15"
+    precision: day
+    dateBasis: trial-start
+    event: VOICE-HF actual study start (registry-reported)
+    source: https://clinicaltrials.gov/study/NCT07870395
   curation:
     status: curated
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT07870395
-    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
+    notes: VOICE-HF registry revision posted October 27, 2026 reports recruiting and actual study start October 15, 2026. Enrollment 450 remains estimated; no primary results or clinical effectiveness established. Preserve exact Vox configuration and distinction from VAMP-HF, VAPP-HF, PRE-DETECT-HF and TIM-HF3.
   phase: Observational
 - id: trial-nct07443670
   type: trial
@@ -4549,12 +4571,17 @@
     randomization until the last enrollee has at least six months of follow-up.
   references:
     - https://clinicaltrials.gov/study/NCT05824923
+  primaryAnalysis:
+    status: reported
+    date: "2026-08-30"
+    precision: day
+    source: https://doi.org/10.1056/NEJMoa2609056
   curation:
     status: curated
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT05824923
-    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
+    notes: Registry design/status remains separately scoped. Original NCT05824923 main article reports 264 randomized in China, median follow-up 338 days and Kaplan-Meier estimated two-year primary clinical-worsening analysis. Main article methods reviewed; supplements/protocol not provided. Open-label, no-sham trial; component/subgroup findings exploratory. No exact current PULSE-LHD hardware equivalence established. Dated registry enrollment estimate remains distinct from publication randomized count.
   phase: Interventional randomized
 - id: trial-nct05996562
   type: trial
@@ -4623,24 +4650,47 @@
     - cond-hf
   therapies:
     - dev-reprieve-system
-  resultStatus: ongoing
+  resultStatus: mixed
   enrollmentCounts:
     - count: 100
       basis: actual
       asOf: "2026-06-23"
       source: https://clinicaltrials.gov/study/NCT05174312
       scope: Whole registry study; not necessarily randomized, treated or analyzed.
+    - count: 100
+      basis: randomized
+      asOf: "2026-05-01"
+      source: https://doi.org/10.1016/j.jchf.2026.103062
+      scope: "Original full report/CONSORT: 56 assigned Reprieve and 44 optimal diuretic therapy. Publication reporting date, not an inferred randomization event date."
+    - count: 96
+      basis: treated
+      asOf: "2026-05-01"
+      source: https://doi.org/10.1016/j.jchf.2026.103062
+      scope: 52 Reprieve and 44 optimal diuretic therapy received randomized treatment; four assigned Reprieve could not receive a urinary catheter.
+    - count: 96
+      basis: analyzed
+      asOf: "2026-05-01"
+      source: https://doi.org/10.1016/j.jchf.2026.103062
+      scope: "Primary-endpoint analytical cohort: 52 Reprieve and 44 control; excludes four randomized Reprieve patients who did not receive therapy. Not the 100-person randomized population."
   primaryEndpoint: >-
     Total urine sodium output 24 hours after treatment initiation; clinically significant AKI, severe electrolyte
     abnormality, symptomatic hypotension or hypertensive emergency at end of treatment (0–72 hours).
   references:
     - https://clinicaltrials.gov/study/NCT05174312
+    - https://doi.org/10.1016/j.jchf.2026.103062
+  primaryAnalysis:
+    status: reported
+    date: "2026-05-01"
+    source: https://doi.org/10.1016/j.jchf.2026.103062
+    precision: day
+  outcomeSummary: "Analyst classification: mixed, based on exploratory pilot findings. Reprieve versus optimal diuretic therapy: 24-hour natriuresis 1,082±487 versus 423±290 mmol (nominal P<.001); primary safety events in 16/52 versus 17/44 patients (P=.42). Ninety-day death/HF hospitalization HR 0.67 (95% CI, 0.32–1.39; P=.28) did not demonstrate benefit. All tests were post hoc and unadjusted; 100 randomized, 96 treated/analyzed. This does not establish safety equivalence or absence of benefit."
   curation:
     status: curated
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT05174312
-    notes: Registry design/status record; resultStatus ongoing means no primary result classification was assessed here. Preserve exact device/configuration and study revision.
+      - https://doi.org/10.1016/j.jchf.2026.103062
+    notes: Main-article methods and results reviewed. Open-label pilot without formal sample-size assessment or an a priori hypothesis-testing plan; all hypothesis tests were post hoc and unadjusted for multiplicity. Algorithm changed after 54 enrolled patients. Favorable exploratory natriuresis does not establish safety equivalence or death/HF-hospitalization benefit. Supplemental materials and current commercial configuration remain unreviewed.
   phase: Interventional randomized
 - id: trial-nct05015764
   type: trial
@@ -4713,14 +4763,17 @@
   resultStatus: ongoing
   references:
     - https://clinicaltrials.gov/study/NCT03022708
+  primaryAnalysis:
+    status: reported
+    date: "2026-08-06"
+    precision: day
+    source: https://clinicaltrials.gov/study/NCT03022708
   curation:
     status: curated
     lastUpdated: "2026-10-24"
     sources:
       - https://clinicaltrials.gov/study/NCT03022708
-    notes: >-
-      Registry status only; results analysis not inferred. Exact registry NCT03022708; status as last updated
-      2026-08-06. Historical design does not establish current availability or enrollment since that update.
+    notes: Registry overall status remains ACTIVE_NOT_RECRUITING as of the2026-08-06 revision. Results for the primary12-month composite endpoint are posted; ongoing follow-up and estimated study completion remain separate. The exact six-participant registry cohort does not establish current-platform equivalence or a positive/negative efficacy classification.
   enrollmentCounts:
     - count: 6
       basis: actual

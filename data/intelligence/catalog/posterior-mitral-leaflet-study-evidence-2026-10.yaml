@@ -1,0 +1,44 @@
+# posterior-mitral-leaflet-study-evidence-2026-10: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-10-28"
+sources:
+  - id: src-wor81-b13-mrace-br
+    title: EXPLORE MRace (BR)
+    url: https://clinicaltrials.gov/api/v2/studies/NCT06113354
+    kind: registry
+    publisher: ClinicalTrials.gov
+    publishedAt:
+      value: "2026-09-01"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: public
+  - id: src-wor81-b13-mrace-fr
+    title: ACCESS-MR (FR)
+    url: https://clinicaltrials.gov/api/v2/studies/NCT07757607
+    kind: registry
+    publisher: ClinicalTrials.gov
+    publishedAt:
+      value: "2026-08-11"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: public
+bibliography:
+  - id: bib-wor81-b13-mrace-br
+    entityIds:
+      - dev-polares-mrace
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b13-mrace-br
+        locator: >-
+          protocolSection.identificationModule; statusModule; descriptionModule; designModule.enrollmentInfo;
+          hasResults; independentregistration, no cohort/build pooling.
+  - id: bib-wor81-b13-mrace-fr
+    entityIds:
+      - dev-polares-mrace
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b13-mrace-fr
+        locator: >-
+          protocolSection.identificationModule; statusModule; descriptionModule; designModule.enrollmentInfo;
+          hasResults; independentregistration, no cohort/build pooling.

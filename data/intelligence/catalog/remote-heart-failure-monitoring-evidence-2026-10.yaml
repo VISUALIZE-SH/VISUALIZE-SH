@@ -1,0 +1,65 @@
+# remote-heart-failure-monitoring-evidence-2026-10: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-10-27"
+sources:
+  - id: src-wor81-b06-link-final-abstract
+    title: >-
+      Artificial Intelligence–Enabled Detection and Management of Physiological Instability in Heart Failure: Results of
+      the Randomized LINK-HF2 Trial
+    url: https://doi.org/10.1016/j.jchf.2026.103422
+    kind: publication
+    publisher: "JACC: Heart Failure"
+    identifier: DOI:10.1016/j.jchf.2026.103422
+    publishedAt:
+      value: "2026-10-09"
+      precision: day
+    retrievedAt: "2026-10-27"
+    access: public
+claims:
+  - id: claim-wor81-b06-link-clinical-endpoint
+    versionId: ver-link-hf2-study-intervention
+    category: evidence
+    key: exploratory-clinical-endpoint
+    label: LINK-HF2 exploratory HF rehospitalization
+    value: 13/80 versus 17/91 participants; HR 0.90 (95% CI, 0.43–1.84), P=.76
+    availability: reported
+    basis: directly_reported
+    reviewStatus: reviewed
+    observedAt: "2026-10-27"
+    context: >-
+      Original October 9 abstract: 171 analyzed, intervention/control, up to 90 days, open-label/blinded-endpoint
+      feasibility trial.
+    limitation: >-
+      Abstract only; full methods not read. Registry 13/16 hospitalization table differs and remains unreconciled. Not
+      demonstrated clinical-event reduction, not proof of equivalence or absence of benefit; exact build unknown.
+    sourceRefs:
+      - sourceId: src-wor81-b06-link-final-abstract
+        locator: PubMedPMID42853165 original Abstract > Methods,Results,Conclusions
+  - id: claim-wor81-b06-link-physiological-endpoint
+    versionId: ver-link-hf2-study-intervention
+    category: evidence
+    key: physiological-instability
+    label: AI-detected physiological instability
+    value: HR 0.76 (95% CI, 0.60–0.97), P=.025
+    availability: reported
+    basis: directly_reported
+    reviewStatus: reviewed
+    observedAt: "2026-10-27"
+    context: Separate AI-detected physiological endpoint in the original LINK-HF2 results abstract.
+    limitation: >-
+      Not the HF rehospitalization, emergency-visit or mortality endpoint. Do not convert a platform-defined signal
+      difference into therapeutic clinical benefit.
+    sourceRefs:
+      - sourceId: src-wor81-b06-link-final-abstract
+        locator: PubMedPMID42853165 original Abstract > Results and Conclusions
+bibliography:
+  - id: bib-wor81-b06-link-final-abstract
+    entityIds:
+      - dig-link-hf2-monitoring
+    versionIds:
+      - ver-link-hf2-study-intervention
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b06-link-final-abstract
+        locator: >-
+          Original October9resultsabstract, NCT04502563. Separate registry counts/design; no exact currentpatch/software
+          build or fullmethods review.

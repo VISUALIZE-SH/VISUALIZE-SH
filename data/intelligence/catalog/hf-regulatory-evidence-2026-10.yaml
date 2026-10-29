@@ -1,0 +1,221 @@
+# hf-regulatory-evidence-2026-10: documentary citations and source-scoped evidence. See README.md.
+sources:
+  - id: src-wor81-b01-1
+    title: >-
+      Autologous atrial appendage micrografts transplanted during coronary artery bypass surgery: design of the AAMS2
+      randomized, double-blinded, and placebo-controlled trial
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12866517/fullTextXML
+    kind: publication
+    publisher: Trials
+    publishedAt:
+      value: "2026-01-02"
+      precision: day
+    retrievedAt: "2026-10-25"
+    access: public
+  - id: src-wor81-b01-2
+    title: NCT06920030 C-MIC study record
+    url: https://clinicaltrials.gov/api/v2/studies/NCT06920030
+    kind: registry
+    publisher: ClinicalTrials.gov
+    publishedAt:
+      value: "2025-04-09"
+      precision: day
+    retrievedAt: "2026-10-26"
+    access: public
+  - id: src-wor81-b01-3
+    title: NCT07795359 C-MIC study record
+    url: https://clinicaltrials.gov/api/v2/studies/NCT07795359
+    kind: registry
+    publisher: ClinicalTrials.gov
+    publishedAt:
+      value: "2026-08-31"
+      precision: day
+    retrievedAt: "2026-10-26"
+    access: public
+  - id: src-wor81-b01-4
+    title: >-
+      The C-MIC II Follow-Up Study: Safety and Efficacy Results 12 months After Deactivation of Cardiac Microcurrent
+      Therapy
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42647736&retmode=xml
+    kind: publication
+    publisher: European Journal of Heart Failure / PubMed
+    publishedAt:
+      value: "2026-08-26"
+      precision: day
+    retrievedAt: "2026-10-25"
+    access: public
+  - id: src-wor81-b01-cmic-ii-bridge
+    title: NCT04662034 C-MIC II study record
+    url: https://clinicaltrials.gov/api/v2/studies/NCT04662034
+    kind: registry
+    publisher: ClinicalTrials.gov
+    publishedAt:
+      value: "2020-12-10"
+      precision: day
+    retrievedAt: "2026-10-26"
+    access: public
+  - id: src-wor81-b01-hc-306771
+    title: Health Canada trial-search record 306771
+    url: https://clinical-trials-search.canada.ca/en/clinical-trial/306771-cardiomyopathy
+    kind: registry
+    publisher: Health Canada Canadian clinical trial search portal
+    retrievedAt: "2026-10-26"
+    access: public
+    identifier: 306771; AFTX-201-001; NCT07426419
+  - id: src-wor81-b01-ema-smartflow
+    title: HMA-EMA SMARTFLOW catalogue record
+    url: https://catalogues.ema.europa.eu/node/4936/methodological-aspects
+    kind: registry
+    publisher: HMA-EMA Catalogue of real-world data studies
+    publishedAt:
+      value: "2026-06-18"
+      precision: day
+    retrievedAt: "2026-10-26"
+    access: public
+    identifier: EUPAS1000001032
+claims:
+  - id: claim-wor81-b01-1
+    versionId: ver-cardyograft-patch
+    category: evidence
+    key: aams2-study-configuration
+    label: Study scope and evidence limits
+    value: >-
+      The AAMS2 protocol uses a Hemopatch collagen-based sheet with atrial micrografts in a fibrin matrix; the control
+      receives the patch without micrografts.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Academic AAMS2 NCT05632432 protocol; trial-specific materials do not establish current CardYograft kit
+      composition.
+    limitation: Academic AAMS2 protocol; not a finalized commercial kit specification or an authorization.
+    observedAt: "2026-10-26"
+    sourceRefs:
+      - sourceId: src-wor81-b01-1
+        locator: "Methods: Preparation and administration of atrial appendage micrografts; Trial status"
+    reviewStatus: reviewed
+  - id: claim-wor81-b01-2
+    versionId: ver-cardyograft-patch
+    category: evidence
+    key: aams2-protocol-timeline
+    label: Study scope and evidence limits
+    value: >-
+      The 2026 protocol reports 10 participants recruited at publication and projects recruitment completion in late
+      2027 and full completion in mid-2028.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      AAMS2 protocol publication 2026-01-02, not current recruitment or a results publication; differs from older
+      registry estimates.
+    limitation: >-
+      Publication-time projection, not current recruitment or actual completion; registry revision 2024-04-19 carries
+      older estimates.
+    observedAt: "2026-10-26"
+    sourceRefs:
+      - sourceId: src-wor81-b01-1
+        locator: "Methods: Preparation and administration of atrial appendage micrografts; Trial status"
+    reviewStatus: reviewed
+  - id: claim-wor81-b01-3
+    versionId: ver-cmic-subcutaneous-iii
+    category: evidence
+    key: cmic-iii-registry-design
+    label: Study scope and evidence limits
+    value: >-
+      NCT06920030 describes a non-randomized, unmasked pilot of less-invasive LV lead placement; enrollment is 22
+      estimated and status RECRUITING at revision 2026-08-11.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      C-MIC III NCT06920030; registry design/status only, not evidence of 22 treated patients or current operational
+      recruitment.
+    limitation: Registry design/status as of revision, not actual enrollment or clinical results.
+    observedAt: "2026-10-26"
+    sourceRefs:
+      - sourceId: src-wor81-b01-2
+        locator: >-
+          protocolSection.identificationModule; statusModule; designModule; armsInterventionsModule; eligibilityModule;
+          outcomesModule
+    reviewStatus: reviewed
+  - id: claim-wor81-b01-4
+    versionId: ver-cmic-subcutaneous-iv
+    category: evidence
+    key: cmic-iv-registry-design
+    label: Study scope and evidence limits
+    value: >-
+      NCT07795359 registers randomized active/inactive sequences for subcutaneous C-MIC, with 60 estimated participants
+      and NOT_YET_RECRUITING at revision 2026-08-31.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      C-MIC IV NCT07795359; registration does not establish study start or actual enrollment. Narrative title and
+      structured masking fields retained separately.
+    limitation: Registry registration, not study start or actual enrollment; do not transfer III or surgical results.
+    observedAt: "2026-10-26"
+    sourceRefs:
+      - sourceId: src-wor81-b01-3
+        locator: >-
+          protocolSection.identificationModule; statusModule; designModule; armsInterventionsModule; eligibilityModule;
+          outcomesModule
+    reviewStatus: reviewed
+  - id: claim-wor81-b01-5
+    versionId: ver-cmic-surgical-ii
+    category: evidence
+    key: cmic-ii-post-deactivation-scope
+    label: Study scope and evidence limits
+    value: >-
+      The C-MIC II follow-up abstract reports 31 of 32 eligible prior-treated patients enrolled; three required device
+      reactivation. Comparison is to pre-implantation and end-active-therapy values.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Surgical C-MIC II treated-arm 12-month post-deactivation follow-up; original abstract only, not controlled
+      comparison or III/IV results.
+    limitation: >-
+      Original abstract only; prior-treated surgical cohort without contemporary randomized comparator. No III/IV
+      transfer.
+    observedAt: "2026-10-26"
+    sourceRefs:
+      - sourceId: src-wor81-b01-4
+        locator: "PubmedArticle[PMID=42647736]/MedlineCitation/Article/Abstract: METHODS, RESULTS; ArticleDate"
+      - sourceId: src-wor81-b01-cmic-ii-bridge
+        locator: protocolSection.identificationModule.acronym; armsInterventionsModule.interventions[name=CMIC].description
+    reviewStatus: reviewed
+  - id: claim-wor81-b01-owner-1
+    versionId: ver-aftx-201
+    category: evidence
+    key: canadian-trial-record
+    label: Canadian trial portal record
+    value: >-
+      The supplied Canadian trial portal record identifies AFTX-201-001 / UPBEAT, control 306771, with an explicit
+      ClinicalTrials.gov NCT07426419 link. It displays Recruiting and an Approved date of 2026-03-20.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Canadian trial portal record updated 2026-09-05; portal trial-approval field only, not marketing authorization,
+      actual enrollment or dosing confirmation.
+    limitation: Canadian trial portal field, not product marketing authorization, actual dosing or trial results.
+    observedAt: "2026-10-26"
+    sourceRefs:
+      - sourceId: src-wor81-b01-hc-306771
+        locator: "PDF pp1-2: last updated; protocol code; control number; Status; Approved; Trial phase; ClinicalTrials.gov link"
+    reviewStatus: reviewed
+  - id: claim-wor81-b01-owner-2
+    versionId: ver-angioinsight-angioai-cmd
+    category: evidence
+    key: smartflow-catalogue-plan
+    label: Dated SMARTFLOW catalogue plan
+    value: >-
+      The supplied SMARTFLOW catalogue record lists EUPAS1000001032, Planned status and 650 estimated subjects; it was
+      first published 2026-06-18 and last updated 2026-06-23.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Dated HMA-EMA catalogue study-entry fields; no clinical result, actual enrollment, present recruitment
+      confirmation or regulator endorsement inferred.
+    limitation: >-
+      Catalogue study-entry snapshot; estimated sample size differs from later ClinicalTrials.gov (620) and sponsor
+      (approximately 600) statements. No actual enrollment, efficacy or regulator endorsement inferred.
+    observedAt: "2026-10-26"
+    sourceRefs:
+      - sourceId: src-wor81-b01-ema-smartflow
+        locator: "PDF p1: title, First published, Last updated, Study Planned, EU PAS number; p8: Estimated number of subjects"
+    reviewStatus: reviewed

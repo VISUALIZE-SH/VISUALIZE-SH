@@ -1,0 +1,68 @@
+# sarcomere-polymer-valve-monitoring-evidence-2026-10: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-10-28"
+sources:
+  - id: src-wor81-b12-edg-original
+    title: >-
+      Mechanistic diversity within RLC-dependent myosin ATPase inhibitors differentiates EDG-7500, a diastolic-selective
+      cardiac sarcomere modulator.
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13596718/fullTextXML
+    kind: publication
+    publisher: JCI Insight
+    publishedAt:
+      value: "2026-09-22"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: public
+  - id: src-wor81-b12-foldax-original
+    title: Development and preclinical results of a transcatheter aortic valve implant with novel polymeric leaflets.
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13009250/fullTextXML
+    kind: publication
+    publisher: npj Cardiovascular Health
+    publishedAt:
+      value: "2026-03-23"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: public
+  - id: src-wor81-b12-hemotag-original
+    title: Non-Invasive Evaluation by the HEMOTAG Recording Device to Tailor Treatment of Acutely Decompensated Heart Failure
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12781972/fullTextXML
+    kind: publication
+    publisher: Original publication via Europe PMC
+    publishedAt:
+      value: "2025-06-27"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: public
+bibliography:
+  - id: bib-wor81-b12-edg-original
+    entityIds:
+      - rx-edg-7500
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b12-edg-original
+        locator: >-
+          article/body/sec[sec-type=results]: Biochemical effects; Acute EDG-7500 decreases Ca2+ sensitivity;
+          article/body/sec[sec-type=methods]: experimental design; Discussion; exact preclinical/observational
+          configuration only, no current-product outcome bridge.
+  - id: bib-wor81-b12-foldax-original
+    entityIds:
+      - dev-foldax-sipuu-tavi
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b12-foldax-original
+        locator: >-
+          article/body/sec/Sec10 (Material and device design); Sec7 (Preclinical study in ovine model); Sec15 (Methods
+          ovine model); Sec8 (Discussion); exact preclinical/observational configuration only, no current-product
+          outcome bridge.
+  - id: bib-wor81-b12-hemotag-original
+    entityIds:
+      - dev-hemotag
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b12-hemotag-original
+        locator: >-
+          Materials and Methods2.1,2.8;Results4.1–4.2 Tables1–4;Discussion;Funding/Footnotes; exact
+          preclinical/observational configuration only, no current-product outcome bridge.

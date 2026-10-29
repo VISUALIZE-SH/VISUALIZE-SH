@@ -1,0 +1,73 @@
+# digital-cardiac-and-mitral-evidence-2026-10: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-10-27"
+sources:
+  - id: src-wor81-b04-elem-original-abstract
+    title: >-
+      Electromechanical computational modeling of heart failure provides extensive analysis of cardiac
+      pathophysiological features
+    url: >-
+      https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41530433%20AND%20SRC:MED&format=json&resultType=core
+    kind: publication
+    publisher: Original Biomechanics and Modeling in Mechanobiology abstract via Europe PMC
+    identifier: DOI:10.1007/s10237-025-02038-2
+    publishedAt:
+      value: "2026-01-13"
+      precision: day
+    retrievedAt: "2026-10-27"
+    access: public
+  - id: src-wor81-b04-heartfocus-original-paper
+    title: Artificial Intelligence Empowers Novice Users to Acquire Diagnostic-Quality Echocardiography
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=12308015
+    kind: publication
+    publisher: "JACC: Advances / NCBI PMC"
+    identifier: DOI:10.1016/j.jacadv.2025.102005
+    publishedAt:
+      value: "2025-07-22"
+      precision: day
+    retrievedAt: "2026-10-27"
+    access: public
+bibliography:
+  - id: bib-wor81-b04-elem-related-original-abstract
+    entityIds:
+      - dig-elem-hf-modeling
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b04-elem-original-abstract
+        locator: >-
+          Original abstract PMID41530433; ELEM affiliations and3D0D HFrEF simulation. Abstract-only; not exact
+          myosin-activator model/current V.HEART release or prospective clinical validation.
+  - id: bib-wor81-b04-heartfocus-original-paper
+    entityIds:
+      - dig-heartfocus
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b04-heartfocus-original-paper
+        locator: >-
+          Original2025 paper Methods/DataCollection and StudyLimitations; HeartFocus/ClariusHD3 study, no exact
+          software-version bridge; paper18+ inclusion kept distinct from FDA22+ scope.
+specs:
+  - version: ver-highlife-tmvr-initial-2026
+    category: mitral-replacement
+    values:
+      access-route:
+        value: Transfemoral (manufacturer-described initial2026 system)
+        source: src-highlife-tmvr-20260126
+        loc: January26,2026 announcement, second nonquotation paragraph
+        basis: directly_reported
+        context: Sponsor-described initial2026 HighLife TMVR system. Distinct from Clarity and historical study hardware.
+        limitation: >-
+          Attributed issuer description. No independent CE certificate/IFU inspected; anatomy range is not nominal valve
+          size or a US indication.
+        reviewStatus: reviewed
+      anatomy-range-summary:
+        value: Native mitral annulus30–53mm (manufacturer claim; not nominal valve size)
+        source: src-highlife-tmvr-20260126
+        loc: January26,2026 announcement, second nonquotation paragraph
+        basis: directly_reported
+        context: Sponsor-described initial2026 HighLife TMVR system. Distinct from Clarity and historical study hardware.
+        limitation: >-
+          Attributed issuer description. No independent CE certificate/IFU inspected; anatomy range is not nominal valve
+          size or a US indication.
+        reviewStatus: reviewed

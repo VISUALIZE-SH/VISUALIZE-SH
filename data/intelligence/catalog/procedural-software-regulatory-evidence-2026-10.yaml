@@ -1,0 +1,48 @@
+# procedural-software-regulatory-evidence-2026-10: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-10-27"
+claims:
+  - id: claim-wor81-b07-dasi-technical-validation
+    versionId: ver-dasi-11
+    category: evidence
+    key: frame-deformation-validation
+    label: Frame-deformation technical validation
+    value: >-
+      Diameter difference <2 mm: 100%, 97%, 98% of cases; aspect-ratio difference <0.1: 97%, 98%, 98% of cases (inflow,
+      waist, outflow)
+    availability: reported
+    basis: directly_reported
+    reviewStatus: reviewed
+    observedAt: "2026-10-27"
+    context: >-
+      Manufacturer-submitted K223809 validation against post-TAVR CT in 89 patients with tricuspid aortic morphology and
+      SAPIEN 3/Ultra implants.
+    limitation: >-
+      Technical agreement under the reported cohort/configuration only. Not clinical benefit, not validation of all
+      valve types or bicuspid anatomy, and not a bridge to a later software release. Reader case/plane denominators are
+      separate. Exact analyzed denominators for individual percentages are not separately printed in that results
+      paragraph.
+    sourceRefs:
+      - sourceId: src-dasi
+        locator: PDF p6 Testing Summary(cohort); p7 first results paragraph(diameter and aspect-ratio comparisons)
+  - id: claim-wor81-b07-pvadiq-submission-validation
+    versionId: ver-ultrasight-pvadiq-k252235
+    category: evidence
+    key: submission-distance-validation
+    label: Submission distance-measurement validation
+    value: MAE 0.42 cm (95% CI, 0.38–0.47); 963 clips from 186 patients
+    availability: reported
+    basis: directly_reported
+    reviewStatus: reviewed
+    observedAt: "2026-10-27"
+    context: >-
+      Manufacturer-submitted K252235 testing, under Non-Clinical Performance Data, against experienced US
+      board-certified cardiac-sonographer annotations. CI upper-bound acceptance criterion <0.5 cm.
+    limitation: >-
+      Test-dataset agreement, not a patient-benefit outcome. Separate from the THT 2026 abstract, whose cohort was not
+      reviewed. Exact software build unknown; planned PCCP retraining, added devices and views are not assumed
+      implemented.
+    sourceRefs:
+      - sourceId: src-ultrasight-fda-k252235
+        locator: >-
+          PDF p8 (summary p4 of7), Non-Clinical Performance Data: dataset, groundtruth and distance criterion/result
+          paragraphs

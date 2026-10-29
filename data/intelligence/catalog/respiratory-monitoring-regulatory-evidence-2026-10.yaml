@@ -1,0 +1,37 @@
+# respiratory-monitoring-regulatory-evidence-2026-10: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-10-27"
+claims:
+  - id: claim-wor81-b08-rs001-rr-validation
+    versionId: ver-respiree-rs001
+    category: evidence
+    key: respiratory-rate-validation
+    label: Respiratory-rate measurement validation
+    value: ARMS <3 respirations/min against manually scored EtCO2 waveforms; 46 subjects
+    availability: reported
+    basis: directly_reported
+    reviewStatus: reviewed
+    observedAt: "2026-10-27"
+    context: Manufacturer-submitted K223681 clinical measurement validation against Datex-Ohmeda reference waveforms.
+    limitation: >-
+      Not HF prediction or clinical outcomes. CI, paired-observation count and duration are not stated in this summary
+      passage. Registry RS001.2 study reports 30 actual participants; no cohort equivalence is assumed.
+    sourceRefs:
+      - sourceId: src-respiree-k223681
+        locator: PDF p. 11 (summary p. 8 of 8), Clinical Data and Effectiveness
+  - id: claim-wor81-b08-rs001d-rr-bridge
+    versionId: ver-respiree-rs001-d
+    category: design
+    key: rr-algorithm-bridge
+    label: Respiratory-rate algorithm continuity
+    value: Same RR sensor units/algorithm as K223681; no new clinical studies required for K250934
+    availability: reported
+    basis: directly_reported
+    reviewStatus: reviewed
+    observedAt: "2026-10-27"
+    context: K250934 separately describes home-use, gateway/server/dashboard, charging-port, casing and patch changes.
+    limitation: >-
+      Explicit bridge concerns RR technology only; not identical device configuration, a new validation cohort,
+      continuous-use/HF-prediction clearance or Biobeat pulse/SpO2 functionality.
+    sourceRefs:
+      - sourceId: src-respiree-k250934
+        locator: PDF p. 10, changes paragraph and list; PDF p. 12, Clinical Data
