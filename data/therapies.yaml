@@ -4529,10 +4529,7 @@
   mechanism: >-
     Applicant-described: transcatheter creation of a left-to-right atrial shunt for left atrial decompression, leaving
     no cardiac implant.
-  description: >-
-    Catheter-based system that creates a left-to-right interatrial shunt without leaving a permanent cardiac implant, to
-    lower left atrial pressure in chronic heart failure (company and applicant descriptions). Studied in two registered
-    randomized sham-controlled studies: ALLAY-HF (HFpEF/HFmrEF) and ALLAY-HFrEF.
+  description: "Catheter-based system that creates a left-to-right interatrial shunt without leaving a permanent cardiac implant, to lower left atrial pressure in chronic heart failure (company and applicant descriptions). Studied in two registered randomized sham-controlled studies: ALLAY-HF (HFpEF/HFmrEF) and ALLAY-HFrEF. A 2022 first-in-human report describes electrosurgical septal-tissue excision with no implant and patent shunts at six months in 15 patients described as having HFpEF; this historical uncontrolled cohort is separate from the randomized ALLAY studies."
   materials: []
   curation:
     status: draft
@@ -4542,6 +4539,7 @@
       - https://clinicaltrials.gov/api/v2/studies/NCT05685303
       - https://clinicaltrials.gov/api/v2/studies/NCT06812533
       - https://www.alleviantmedical.com/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10242572/fullTextXML
 - id: dev-altavalve
   type: therapy
   therapyType: device
@@ -4557,10 +4555,7 @@
   mechanism: >-
     Company-described: valve positioned above the native mitral valve with fixation in the left atrium only; a 2025
     review abstract states there is no left ventricular anchoring.
-  description: >-
-    Transcatheter mitral valve replacement system for mitral regurgitation. The company describes a valve positioned
-    above the native mitral valve and fixed in the left atrium only, delivered transseptally (also available
-    transapically). A 2025 review abstract describes the supra-annular design without left ventricular anchoring.
+  description: Transcatheter mitral valve replacement system for mitral regurgitation. The sponsor describes a valve above the native mitral valve with left atrial fixation and transseptal or transapical delivery. A 2024 original six-patient series in severe MR with moderate/severe mitral annular calcification documents this supra-annular design; five patients were enrolled in the early feasibility study and one treated compassionately. Historical study design and results do not establish the current ATLAS configuration or marketing authorization.
   materials: []
   curation:
     status: draft
@@ -4571,6 +4566,7 @@
       - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41224388&resultType=core&format=json
       - https://www.4cmed.com/technology
       - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40340705&resultType=core&format=json
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11121746/fullTextXML
 - id: dev-amygo-tad1-assay
   type: therapy
   therapyType: device
@@ -4582,19 +4578,19 @@
   regulatoryStatus: investigational
   regulatoryDetail: In development under NIH and NSF Phase I small-business awards; no regulatory authorization is documented.
   mechanism: "Applicant-described: a structure-guided peptide (TAD1) binds pathogenic transthyretin aggregates in plasma."
-  description: >-
-    Blood test in development that, per the applicant, uses a peptide (TAD1) to detect circulating misfolded
-    transthyretin aggregates for earlier diagnosis of ATTR cardiomyopathy. A dot-blot version is described as existing;
-    the Phase I work aims to build a kit and validate it on clinical samples.
+  description: The TAD1 research basis includes a 2024 study of serum/plasma specimens from 20 patients with ATTR amyloidosis and 11 controls. A structure-guided peptide detected large non-native TTR aggregates in plasma; serum did not show the same group separation. Individual experiments used subsets and paired pre/post-treatment samples. This was convenience-selected exploratory research with selection bias and a stated need for independent validation, not validation of a finalized commercial AmyGo kit.
   materials: []
   curation:
     status: draft
     lastUpdated: "2026-10-21"
     sources:
       - https://reporter.nih.gov/project-details/11407018
-      - >-
-        https://api.nsf.gov/services/v1/awards.json?id=2537128&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName,abstractText
+      - https://api.nsf.gov/services/v1/awards.json?id=2537128&printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,startDate,expDate,date,piFirstName,piLastName,fundProgramName,abstractText
       - https://www.amygosolutions.com/
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11494390/fullTextXML
+      - https://doi.org/10.1161/CIRCULATIONAHA.123.067225
+      - https://doi.org/10.1080/13506129.2024.2404073
+    notes: The research assay and commercial kit are distinct evidence scopes. These small convenience studies need independent validation. Analytical binding/precision experiments used different conditions from patient-plasma assays; they do not establish clinical diagnostic accuracy or monitoring utility. Exact commercial-kit configuration and regulatory authorization remain unestablished.
 - id: dig-anumana-ecg-ai-lef
   type: therapy
   therapyType: digital
@@ -4609,17 +4605,14 @@
     algorithm against its earlier clearance K232699 (not reviewed). Indication: software to aid earlier detection of
     LVEF of 40% or less in adults at risk for heart failure; not stand-alone. This is a 510(k) clearance, not a PMA
     approval.
-  description: >-
-    ECG-based machine-learning software that aids earlier detection of left ventricular ejection fraction of 40% or less
-    on a 12-lead ECG in adults at risk for heart failure (for example cardiomyopathies, post-MI, aortic stenosis,
-    chronic atrial fibrillation, cardiotoxic therapy, postpartum). A negative result does not rule out evaluation in
-    high-risk patients.
+  description: ECG-based machine-learning software that aids earlier detection of left ventricular ejection fraction of 40% or less on a 12-lead ECG in adults at risk for heart failure (for example cardiomyopathies, post-MI, aortic stenosis, chronic atrial fibrillation, cardiotoxic therapy, postpartum). A negative result does not rule out evaluation in high-risk patients. K250652 identifies subject software v2.4.0 versus predicate v2.3.0 and expands compatibility to Philips PageWriter TC50 and TC30; this does not establish implementation of future PCCP changes.
   curation:
     status: draft
     lastUpdated: "2026-10-21"
     sources:
       - https://www.accessdata.fda.gov/cdrh_docs/pdf25/K250652.pdf
       - https://anumana.ai/
+    notes: The cleared v2.4.0 configuration and predecessor v2.3.0 are distinct. Planned PCCP changes require validation and appropriate communication to users, such as revised labeling or release notes; no implemented future model, new diagnostic indication, clinical-outcome benefit or continuous-monitoring scope is inferred.
 - id: dev-approxima-tricuspid-reshaping
   type: therapy
   therapyType: device
@@ -4665,6 +4658,7 @@
     sources:
       - https://www.accessdata.fda.gov/cdrh_docs/pdf25/DEN250057.pdf
       - https://cardiosense.com/
+    notes: DEN250057 requires interpretation with clinical history, symptoms and other tests; patient management should not rely solely on its output. The generic device-type definition and PCCP authorization do not establish a particular sensor build, implemented model change or clinical-outcome benefit.
 - id: dev-corwave-lvas
   type: therapy
   therapyType: device
@@ -4705,11 +4699,7 @@
     Investigational: the company's website marks DurAVR as investigational use only and not available for commercial
     sale.
   mechanism: Company-described single-piece, native-shaped (biomimetic) valve intended to mimic healthy aortic valve performance.
-  description: >-
-    Balloon-expandable transcatheter aortic valve for severe aortic stenosis that the company describes as a
-    single-piece, native-shaped biomimetic design. Studied in registered first-in-human (EMBARK), early feasibility and
-    randomized (PARADIGM) trials; a 2026 EuroIntervention paper (abstract) reports pooled 30-day outcomes of the
-    small-sized valve in 100 patients with small aortic annuli.
+  description: Balloon-expandable transcatheter aortic valve for severe aortic stenosis that the company describes as a single-piece, native-shaped biomimetic design. Studied in registered first-in-human (EMBARK), early feasibility and randomized (PARADIGM) trials; a 2026 EuroIntervention paper (abstract) reports pooled 30-day outcomes of the small-sized valve in 100 patients with small aortic annuli. An original 2023 first-in-human report (abstract reviewed) describes 13 enrolled patients and reports hemodynamic performance sustained at one year; the uncontrolled historical cohort included an access complication, pacemaker implantation and moderate aortic regurgitation, and follow-up denominators were not verified.
   materials: []
   curation:
     status: draft
@@ -4721,6 +4711,7 @@
       - https://anteristech.com/home.html
       - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41251720&resultType=core&format=json
       - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40958620&resultType=core&format=json
+      - https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10333917&retmode=xml
 - id: dev-edema-guard-monitor
   type: therapy
   therapyType: device
@@ -4736,11 +4727,7 @@
   mechanism: >-
     Submitter-described in the 510(k) summary: measures lung bioimpedance with six chest electrodes to track fluid
     status; same measurement principle as the predicate.
-  description: >-
-    Non-invasive lung-bioimpedance monitor that tracks fluid status as an adjunct to clinical assessment, used under a
-    physician's direction. The cleared indication covers patients with fluid management problems, taking diuretics,
-    living with heart failure, or suffering or recovering from a coronary artery disease event; heart failure is one of
-    four named populations.
+  description: Non-invasive lung-bioimpedance monitor that tracks fluid status as an adjunct to clinical assessment, used under a physician's direction. The cleared indication covers patients with fluid management problems, taking diuretics, living with heart failure, or suffering or recovering from a coronary artery disease event; heart failure is one of four named populations. The submitter’s FDA summary describes six electrodes (three front, three back), 100-kHz current and local analysis without external or cloud communication. Its cited clinical studies used the earlier RSMM 207; their HF outcomes are not established for CardioSet-001 by this summary.
   materials: []
   curation:
     status: draft
@@ -4766,10 +4753,7 @@
   mechanism: >-
     Sponsor-described: oral modulator of cardiac myosin intended to improve relaxation and filling while preserving
     systolic function.
-  description: >-
-    Oral cardiac sarcomere modulator that the company and a sponsor-authored 2026 paper describe as diastolic-selective,
-    aimed at symptomatic hypertrophic cardiomyopathy. In preclinical models the authors report improved relaxation and
-    filling pressure without systolic impairment; the open-label Phase 2 CIRRUS-HCM study is registered.
+  description: Oral diastolic-selective cardiac sarcomere modulator being studied for symptomatic obstructive and nonobstructive hypertrophic cardiomyopathy in Phase 2 CIRRUS-HCM. A sponsor-affiliated original preclinical study describes RLC-dependent, calcium-sensitive myofibril ATPase modulation and prevention of diastolic impairment in a MYH7 R403Q swine model; these findings do not establish human efficacy.
   curation:
     status: draft
     lastUpdated: "2026-10-21"
@@ -4831,11 +4815,7 @@
       category: fabric
       source: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41872486&resultType=core&format=json
       note: Prototype described in the 2026 paper abstract.
-  description: >-
-    The authors report frame fatigue testing to 200 million cycles, hydrodynamic testing per ISO 5840-3 and nine sheep
-    implants followed to 90 days; six animals completed follow-up with stable hemodynamics, no hemolysis, no
-    paravalvular leak at implant and no calcification at explant. They say further testing and delivery refinement are
-    needed toward first-in-human evaluation. Abstract only; no human data.
+  description: The 2026 original paper describes a size-27 self-expanding SiPUU-leaflet TAVI prototype. After model creation in 17 sheep, nine received the TAVI; three had immediate migration after subannular malposition and six completed 90 days. Bench frame fatigue reached 200 million cycles. These preclinical results do not establish human durability; further testing and delivery refinement toward first-in-human evaluation are needed.
   curation:
     status: draft
     lastUpdated: "2026-10-21"
@@ -4857,13 +4837,8 @@
   regulatoryDetail: >-
     The applicant's NIH award abstract describes two HEMOTAG components as FDA registered and one as under FDA review.
     FDA registration is not clearance, and no FDA clearance or approval record was reviewed.
-  mechanism: >-
-    Applicant-described: a home device times parts of the cardiac cycle as a surrogate for intracardiac pressures, with
-    a phone app and cloud analysis software; algorithm not read.
-  description: >-
-    Non-invasive heart-failure monitoring suite that the applicant describes as three products: HEMOTAG Vitals (a home
-    device), a HEMOTAG mobile app and HEMOTAG Analysis Software, for hemodynamic-guided therapy. A randomized diagnostic
-    study (HATS-OFF) is registered; its status has been unverified since 2024-08.
+  mechanism: The original 2025 hospital study describes a chest-wall sensor recording 30 seconds of electrical and heart-vibration signals to derive cardiac time intervals, including isovolumetric contraction time, with a mobile app and cloud analysis. This study configuration does not establish direct intracardiac-pressure measurement or the exact current marketed algorithm.
+  description: "Non-invasive heart-failure monitoring suite that the applicant describes as three products: HEMOTAG Vitals (a home device), a HEMOTAG mobile app and HEMOTAG Analysis Software, for hemodynamic-guided therapy. A randomized diagnostic study (HATS-OFF) is registered; its status has been unverified since 2024-08. A 2025 original report describes a single-center, unblinded, non-randomized observational hospital study: 105 enrolled, 97 analyzed (47 ADHF, 50 controls), and a repeated-measure subset of 17 (12 ADHF, 5 controls). The observational report does not establish future-decompensation prediction, reduced readmissions or equivalence to a current marketed build."
   materials: []
   curation:
     status: draft
@@ -4926,9 +4901,7 @@
       - https://clinicaltrials.gov/api/v2/studies/NCT06414265
       - https://innovheart.com/technology/
       - https://innovheart.com/
-    notes: >-
-      Sponsor description from an undated company page; design and benefit statements are the sponsor's. Implant
-      composition not verified. The company's earlier transapical pilot registration was not reviewed.
+    notes: Sponsor description from an undated company page; design and benefit statements are the sponsor's. Implant composition not verified. An original transapical pilot report describes five recipients of a 28-mm SATURN valve, with one-year follow-up in all five and two-year follow-up in three. Those uncontrolled transapical findings and the paper’s bovine-leaflet/nitinol configuration do not establish current transseptal SATURN TS performance or exact build equivalence.
 - id: dev-intershunt-dynama-pas-c
   type: therapy
   therapyType: device
@@ -5094,10 +5067,7 @@
     Transvenous, transseptal catheter delivery of an implant over the posterior mitral leaflet (registry). The company
     describes a bovine-pericardium coaptation element on a nitinol frame laminated with ePTFE, with five anchors.
   materials: []
-  description: >-
-    Registered in two early feasibility studies: EXPLORE-MRace in the United States and EXPLORE MRace (GE) at four
-    centers in Tbilisi, Georgia. The company presents the system as an alternative to transcatheter edge-to-edge repair
-    and mitral valve replacement; this is a sponsor claim.
+  description: "Early feasibility registrations include: EXPLORE-MRace in the United States and EXPLORE MRace (GE) at four centers in Tbilisi, Georgia. The company presents the system as an alternative to transcatheter edge-to-edge repair and mitral valve replacement; this is a sponsor claim. The separate Brazil record NCT06113354 (EXPLORE MRace BR) registers an estimated 10 participants; this target is not a treated count and exact device-generation equivalence across these studies is unresolved."
   curation:
     status: draft
     lastUpdated: "2026-10-21"
@@ -5106,9 +5076,7 @@
       - https://clinicaltrials.gov/api/v2/studies/NCT07796659
       - https://www.polaresmedical.com/mrace-technology/
       - https://www.polaresmedical.com/clinical-trials/
-    notes: >-
-      Sponsor description from an undated page (metadata modified 2026-08-18); the page body does not name MRace. Device
-      generations across studies are not stated. Implant composition is the sponsor's description and is not verified.
+    notes: Sponsor description from an undated page (metadata modified 2026-08-18); the page body does not name MRace. Device generations across studies are not stated. Implant composition is the sponsor's description and is not verified. ACCESS-MR in France (NCT07757607) is a separate pilot registration, not yet recruiting as of its last posted revision, with an estimated 20-person target and estimated November 2026 start. These are registration estimates, not actual enrollment, results or a proven bridge to the US, Georgia or Brazil configurations.
 - id: dev-polyvascular-pulmonary-valve
   type: therapy
   therapyType: device
@@ -5183,12 +5151,7 @@
     ejection fraction, cardiac output, pulmonary artery pressure and pulmonary capillary wedge pressure (company
     description; algorithm details not reviewed).
   materials: []
-  description: >-
-    The NIH award abstract (applicant text) says further algorithm development and testing are required for cardiac
-    output, pulmonary artery pressure and PCWP, and that Phase I would refine and validate the pressure algorithms
-    against catheterization data. The company presents CPS for heart-failure decision points (sponsor wording). A
-    registered observational method-comparison study against right heart catheterization exists (ClinicalTrials.gov
-    NCT06870591).
+  description: The NIH award abstract (applicant text) says further algorithm development and testing are required for cardiac output, pulmonary artery pressure and PCWP, and that Phase I would refine and validate the pressure algorithms against catheterization data. The company presents CPS for heart-failure decision points (sponsor wording). A registered observational method-comparison study against right heart catheterization exists (ClinicalTrials.gov NCT06870591). The registry revision posted 2026-04-24 reports recruiting with an estimated target of 1,000; this is a study target, not enrolled participants or results.
   curation:
     status: draft
     lastUpdated: "2026-10-21"
@@ -5197,11 +5160,8 @@
       - https://www.sensydia.com/hemodynamics-heart-failure
       - https://www.sensydia.com/
       - https://www.accessdata.fda.gov/cdrh_docs/pdf17/K173156.pdf
-    notes: >-
-      Heart failure is the platform's applicant-described application; the registry lists the condition as
-      Cardiovascular Diseases and the 2018 FDA record carries no heart-failure claim. Trial NCT06870591 is not drafted
-      as a public trial because its registry condition (Cardiovascular Diseases) maps to no existing condition without
-      transferring the heart-failure application.
+      - https://clinicaltrials.gov/api/v2/studies/NCT06870591
+    notes: Heart failure is the platform's applicant-described application; the registry lists the condition as Cardiovascular Diseases and the 2018 FDA record carries no heart-failure claim. Trial NCT06870591 is not drafted as a public trial because its registry condition (Cardiovascular Diseases) maps to no existing condition without transferring the heart-failure application.
 - id: dev-tau-pivot-bridge
   type: therapy
   therapyType: device
@@ -5230,9 +5190,7 @@
       - https://clinicaltrials.gov/api/v2/studies/NCT05854095
       - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41891323&resultType=core&format=json
       - https://www.tau-medical.com/
-    notes: >-
-      Abstract and funding field of the paper read; full text not opened. The paper states that Tau Medical supplied the
-      devices.
+    notes: "Abstract and funding field of the paper read; full text not opened. The paper states that Tau Medical supplied the devices. The original Pivot-Bridge report is a 15-person single-arm first-in-human abstract in surgical candidates: device placement lasted a median of five days, followed by removal (10 surgical, five percutaneous). These short-term findings do not establish permanent Pivot Extend performance or comparative benefit."
 - id: dev-tau-pivot-extend
   type: therapy
   therapyType: device
@@ -5261,7 +5219,7 @@
       - https://clinicaltrials.gov/api/v2/studies/NCT06877520
       - https://clinicaltrials.gov/api/v2/studies/NCT07172477
       - https://www.tau-medical.com/
-    notes: "Registry statuses are old: the SPACER Study record was last updated 2025-04-11. Implant composition not verified."
+    notes: "Registry statuses are old: the SPACER Study record was last updated 2025-04-11. Implant composition not verified. The separate Georgian and Australian registrations retain estimated targets of seven and ten, with no posted registry results in the 2026-10-28 capture. Their recruitment labels reflect last posted revisions in April and December 2025. Temporary Pivot Bridge outcomes are not Pivot Extend outcomes."
 - id: dev-tavipilot-robot
   type: therapy
   therapyType: device
@@ -5327,9 +5285,7 @@
   regulatoryDetail: >-
     Investigational; the company states the device is limited to investigational use by US federal law, not cleared for
     sale by any regulatory authority and not approved by FDA.
-  mechanism: >-
-    The company says POINT-GUARD is designed to give full-brain protection and to eliminate periprocedural and silent
-    stroke in structural heart procedures such as TAVR; device design is not described on the pages reviewed.
+  mechanism: GUARDIAN registers cerebral embolic protection during TAVR and describes a Point-Guard filter unit deployed into the aortic arch, positioned, and retrieved intact as part of its technical-success endpoint. This is a protocol description, not achieved efficacy or current detailed hardware specifications.
   materials: []
   description: >-
     An adjunct used during TAVR for aortic stenosis, not an aortic valve replacement. A registered Australian
@@ -5396,10 +5352,7 @@
     Per the registry and the company: a closed, semi-rigid D-shaped annuloplasty ring delivered by catheter (transseptal
     in the current study) and implanted on the atrial side of the mitral annulus.
   materials: []
-  description: >-
-    Registered in the AMEND TS Early Feasibility Study (current) and the earlier AMEND I Study (4 patients enrolled,
-    completed). The company page lists publications titled as first-in-human (2022), 30-day (2025) and 6-month (2026)
-    results of the transseptal system; their contents were not reviewed.
+  description: "Registered in the AMEND TS Early Feasibility Study and the earlier AMEND I Study (4 actual enrolled, completed). A 2026 original report describes a separate historical transseptal cohort: 13 patients completed six-month follow-up from 18 included and 17 implanted; 11 of 13 had mitral regurgitation grade 1 or less at six months. The uncontrolled heterogeneous cohort and incomplete follow-up limit interpretation, and its configuration is not established as equivalent to the current US early feasibility device. Serious complications included air embolism requiring extracorporeal membrane oxygenation and pericardial effusions."
   curation:
     status: draft
     lastUpdated: "2026-10-21"
@@ -5408,10 +5361,8 @@
       - https://clinicaltrials.gov/api/v2/studies/NCT02602613
       - https://valcaremedical.com/physicians/
       - https://valcaremedical.com/
-    notes: >-
-      Linked at the AMEND family level: the registry names the AMEND Trans-Septal System (NCT06951672) and the AMEND
-      Mitral Valve Repair System (NCT02602613) and does not state whether the earlier system is an earlier generation or
-      delivery route. Implant composition not verified.
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13281969/fullTextXML
+    notes: "Linked at the AMEND family level: the registry names the AMEND Trans-Septal System (NCT06951672) and the AMEND Mitral Valve Repair System (NCT02602613) and does not state whether the earlier system is an earlier generation or delivery route. Implant composition not verified."
 - id: dev-vesalius-tmvr
   type: therapy
   therapyType: device
@@ -5429,10 +5380,7 @@
     describes a single adjustable device that provides both chordal replacement and annuloplasty as in surgical repair,
     for single- or multi-leaflet disease.
   materials: []
-  description: >-
-    The registered first-in-human study plans up to 5 patients with degenerative mitral regurgitation at high or
-    prohibitive surgical risk at one Canadian site (St. Paul's Hospital, Vancouver); primary measures are 30-day
-    all-cause mortality, technical success and device success. No implant or result is documented.
+  description: The registered first-in-human study plans up to 5 patients with degenerative mitral regurgitation at high or prohibitive surgical risk at one Canadian site (St. Paul's Hospital, Vancouver); primary measures are 30-day all-cause mortality, technical success and device success. The registry revision posted 2026-08-19 reports recruiting with an estimated August 2026 start; it still has no posted results in the 2026-10-28 capture. This record does not determine whether implantation has occurred.
   curation:
     status: draft
     lastUpdated: "2026-10-21"
@@ -5452,18 +5400,9 @@
   treats:
     - cond-hf
   regulatoryStatus: approved
-  regulatoryDetail: >-
-    US FDA PMA P240028 approval (decision 2025-04-11, product code SEG), original PMA only; later supplements and other
-    jurisdictions were not reviewed. Indication: adults 22 or older indicated for CRT, with or eligible for an implanted
-    right ventricular pacing system, who are previously untreatable or high-risk upgrades; the indication does not name
-    heart failure.
-  mechanism: >-
-    Company-described: a small leadless electrode converts ultrasonic energy into an electrical pulse to pace the left
-    ventricle from the endocardium, coordinated with an existing pacing device.
-  description: >-
-    Leadless left ventricular endocardial pacing system (Wireless Stimulation of the Endocardium) for cardiac
-    resynchronization therapy, working with a co-implanted pacemaker or ICD. The FDA summary places it among
-    heart-failure treatment alternatives and records Breakthrough Device status granted 2019-07-18.
+  regulatoryDetail: "US FDA PMA P240028 approval (decision 2025-04-11, product code SEG), original indication reviewed. The five later supplement records were reviewed as metadata abstracts; full supplement labeling and other jurisdictions were not reviewed. Indication: adults 22 or older indicated for CRT, with or eligible for an implanted right ventricular pacing system, who are previously untreatable or high-risk upgrades; the indication does not name heart failure."
+  mechanism: The original FDA SSED describes a leadless electrode on the left-ventricular endocardium that converts ultrasound into electrical pacing. A subcutaneous battery and transmitter sense pacing from a co-implanted right-ventricular pacing system and coordinate left-ventricular stimulation; the system is not a standalone leadless pacemaker.
+  description: Leadless left ventricular endocardial pacing system (Wireless Stimulation of the Endocardium) for cardiac resynchronization therapy, working with a co-implanted pacemaker or ICD. The FDA summary places it among heart-failure treatment alternatives and records Breakthrough Device status granted 2019-07-18. The original SOLVE-CRT report separates 183 safety participants from a 100-person efficacy population pooled across study phases. At six months, mean relative LVESV change was −16.4% (95% CI −21.0% to −11.7%), and 148 of 183 (80.9%) were free from Type I complications. These primary analyses used performance goals, not a concurrent randomized superiority comparison; no survival benefit is established.
   materials: []
   curation:
     status: draft
@@ -5533,6 +5472,7 @@
       - https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41137840&resultType=core&format=json
       - https://clinicaltrials.gov/api/v2/studies/NCT05951101
       - https://aurigenmedical.com/
+    notes: The original abstract reports 10 first-in-human participants, nine successful implants, and 45-day closure in nine of nine implanted patients. The nine-of-nine endpoint excludes the unsuccessful implant attempt. Short, uncontrolled follow-up does not establish comparative stroke prevention, long-term durability or current regulatory authorization.
 
 - id: dev-avatar-valve-reconstruction
   type: therapy
@@ -6046,11 +5986,7 @@
   mechanism: >-
     Urine-output-guided diuretic dose finding and infusion, with titrated saline replacement during hospital
     decongestion.
-  description: >-
-    Sponsor describes personalized diuretic/fluid management for acute decompensated HF. Primary current bedside
-    Reprieve System is separate from legacy CardioRenal/TARGET devices and FASTR pilot research settings. Physiological
-    feedback does not imply autonomous clinical authority. FASTR pilot100 enrolled/96 randomized is sponsor statement
-    until original 2026 JACC paper reviewed; no imported outcome numbers. CMS recommendation is proposed coding only.
+  description: Sponsor describes personalized diuretic/fluid management for acute decompensated HF. The current bedside Reprieve System remains separate from legacy CardioRenal/TARGET devices and FASTR pilot configurations. The original FASTR report randomized 100 patients (56 Reprieve, 44 control); 96 received treatment and formed the analytical cohort (52/44). Its algorithm changed during the exploratory pilot; current commercial equivalence remains unestablished. CMS materials describe a proposed coding discussion.
   curation:
     status: curated
     lastUpdated: "2026-10-24"
@@ -6061,7 +5997,8 @@
       - https://clinicaltrials.gov/study/NCT05174312
       - https://clinicaltrials.gov/study/NCT05015764
       - https://clinicaltrials.gov/study/NCT06362668
-    notes: Sponsor-described application and mechanism; exact configuration unknowns remain explicit. Curation does not establish regulatory authorization or clinical benefit.
+      - https://doi.org/10.1016/j.jchf.2026.103062
+    notes: The main FASTR article describes a bedside algorithm/device pilot with 100 randomized and 96 treated/analyzed after four assigned Reprieve patients could not receive a urinary catheter. Testing was post hoc and unadjusted, with a mid-trial algorithm change. Findings are hypothesis-generating; supplemental methods and current-product equivalence remain unreviewed.
   materials: []
   materialsStatus: not_established
   regulatoryDetail: >-

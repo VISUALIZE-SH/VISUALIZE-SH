@@ -1,0 +1,179 @@
+# structural-device-classifications-2026-10: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-10-26"
+sources:
+  - id: src-wor81-b02-1
+    title: Cardiovalve in mitral valve position—Additional solution for valve replacement
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9485574/fullTextXML
+    kind: publication
+    publisher: Frontiers in Cardiovascular Medicine
+    publishedAt:
+      value: "2022-09-06"
+      precision: day
+    retrievedAt: "2026-10-25"
+    access: public
+  - id: src-wor81-b02-2
+    title: >-
+      Transcatheter tricuspid valve replacement—a comparison of clinical and procedural outcomes of two different
+      prostheses
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13587013/fullTextXML
+    kind: publication
+    publisher: Frontiers in Cardiovascular Medicine
+    publishedAt:
+      value: "2026-09-04"
+      precision: day
+    retrievedAt: "2026-10-27"
+    access: public
+  - id: src-wor81-b02-3
+    title: Wave Membrane - CorWave EN
+    url: https://www.corwave.com/wave-membrane/
+    kind: manufacturer
+    publisher: CorWave
+    retrievedAt: "2026-10-25"
+    access: public
+  - id: src-wor81-b02-4
+    title: CorWave LVAS - CorWave EN
+    url: https://www.corwave.com/product/corwave-lvas/
+    kind: manufacturer
+    publisher: CorWave
+    retrievedAt: "2026-10-25"
+    access: public
+  - id: src-wor81-b02-5
+    title: "A Novel Restorative Pulmonary Valve Conduit: Early Outcomes of Two Clinical Trials"
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7969645/fullTextXML
+    kind: publication
+    publisher: Original journal article via Europe PMC
+    publishedAt:
+      value: "2021-03-04"
+      precision: day
+    retrievedAt: "2026-10-25"
+    access: public
+  - id: src-wor81-b02-6
+    title: Applications - Xeltis
+    url: https://xeltis.com/applications/
+    kind: manufacturer
+    publisher: Xeltis
+    retrievedAt: "2026-10-24"
+    access: public
+specs:
+  - version: ver-cardiovalve-mitral-2022
+    category: mitral-replacement
+    values:
+      access-route:
+        value: Transfemoral venous, transseptal
+        loc: "Case report: low-profile design and transfemoral transseptal approach; procedure access paragraph"
+        context: Historical 2022 AHEAD case only
+        limitation: Case-specific delivery configuration; no current tricuspid hardware transfer.
+        source: src-wor81-b02-1
+        reviewStatus: reviewed
+  - version: ver-cardiovalve-tr
+    category: tricuspid-replacement
+    values:
+      access-route:
+        value: Transfemoral venous delivery (documented 2023–2024 TARGET/compassionate-use configuration)
+        source: src-wor81-b02-2
+        loc: Methods, paragraphs beginning We performed a retrospective and The Cardiovalve TTVR; Results opening paragraph
+        basis: directly_reported
+        context: >-
+          Cardiovalve tricuspid Methods configuration (TARGET/compassionate use, Feb2023-Oct2024); Limitations gives
+          July2021 start. Date conflict unresolved; no mitral or all-TARGET2.0 revision bridge.
+        limitation: >-
+          Source-specific Methods configuration. Procedure start differs in Limitations; unresolved. No
+          current-generation or all-TARGET2.0 hardware bridge.
+        reviewStatus: reviewed
+      expansion-mechanism:
+        value: Self-expanding (documented 2023–2024 tricuspid configuration)
+        source: src-wor81-b02-2
+        loc: Methods, paragraphs beginning We performed a retrospective and The Cardiovalve TTVR; Results opening paragraph
+        basis: directly_reported
+        context: >-
+          Cardiovalve tricuspid Methods configuration (TARGET/compassionate use, Feb2023-Oct2024); Limitations gives
+          July2021 start. Date conflict unresolved; no mitral or all-TARGET2.0 revision bridge.
+        limitation: >-
+          Source-specific Methods configuration. Procedure start differs in Limitations; unresolved. No
+          current-generation or all-TARGET2.0 hardware bridge.
+        reviewStatus: reviewed
+  - version: ver-xpv-initial-2021
+    category: surgical-pulmonary-valves
+    values:
+      device-design:
+        value: Synthetic, porous, bioabsorbable valved RV-to-pulmonary-artery conduit; initial prototype
+        source: src-wor81-b02-5
+        loc: >-
+          Methods > The Xeltis Pulmonary Valve Conduit; Patients; Surgery; Modification of the XPV Conduit Design Prior
+          to Implantation in Group 2
+        basis: directly_reported
+        context: >-
+          ver-xpv-initial-2021, group1 initial 12 recipients in PMC7969645; historical configuration only, not current
+          Xplore2.
+        limitation: Exact source configuration only; not a current-generation, cross-cohort or marketing-authorization bridge.
+        reviewStatus: reviewed
+      access-route:
+        value: Open-heart surgical implantation as RV-to-pulmonary-artery conduit
+        source: src-wor81-b02-5
+        loc: >-
+          Methods > Patients: open-heart XPV implantation, normal RV-to-pulmonary-artery conduit position, no change in
+          technique; group1/group2 descriptions
+        basis: directly_reported
+        context: >-
+          ver-xpv-initial-2021, group1 initial 12 recipients in PMC7969645; historical configuration only, not current
+          Xplore2.
+        limitation: Exact source configuration only; not a current-generation, cross-cohort or marketing-authorization bridge.
+        reviewStatus: reviewed
+  - version: ver-xpv-modified-2021
+    category: surgical-pulmonary-valves
+    values:
+      device-design:
+        value: >-
+          Synthetic, porous, bioabsorbable valved RV-to-pulmonary-artery conduit; modified prototype with more
+          homogeneous leaflet thickness
+        source: src-wor81-b02-5
+        loc: >-
+          Methods > The Xeltis Pulmonary Valve Conduit; Patients; Surgery; Modification of the XPV Conduit Design Prior
+          to Implantation in Group 2
+        basis: directly_reported
+        context: >-
+          ver-xpv-modified-2021, group2 modified six recipients in PMC7969645; historical configuration only, not
+          current Xplore2.
+        limitation: Exact source configuration only; not a current-generation, cross-cohort or marketing-authorization bridge.
+        reviewStatus: reviewed
+      access-route:
+        value: Open-heart surgical implantation as RV-to-pulmonary-artery conduit
+        source: src-wor81-b02-5
+        loc: >-
+          Methods > Patients: open-heart XPV implantation, normal RV-to-pulmonary-artery conduit position, no change in
+          technique; group1/group2 descriptions
+        basis: directly_reported
+        context: >-
+          ver-xpv-modified-2021, group2 modified six recipients in PMC7969645; historical configuration only, not
+          current Xplore2.
+        limitation: Exact source configuration only; not a current-generation, cross-cohort or marketing-authorization bridge.
+        reviewStatus: reviewed
+  - version: ver-xplore2-current
+    category: surgical-pulmonary-valves
+    values:
+      device-design:
+        value: Sponsor-described restorative pulmonary heart valve implant using Restorex supramolecular polymer technology
+        source: src-wor81-b02-6
+        loc: >-
+          FUTURE EXPANSIONS > Xplore-2 Pulmonary Heart Valve; FAQ > What products are currently available or in
+          development? pulmonary-heart-valve bullet
+        basis: directly_reported
+        context: Current sponsor-described pulmonary platform; no imported historical chemistry, sizes or clinical results.
+        limitation: >-
+          Attributed sponsor description; not independent performance or authorization evidence. Current
+          sponsor-described pulmonary platform; no imported historical chemistry, sizes or clinical results.
+        reviewStatus: reviewed
+      access-route:
+        value: >-
+          Valve replacement surgery (sponsor pulmonary-program description; precise current operative configuration not
+          disclosed)
+        source: src-wor81-b02-6
+        loc: >-
+          FUTURE EXPANSIONS > Xplore-2 Pulmonary Heart Valve; FAQ > What products are currently available or in
+          development? pulmonary-heart-valve bullet
+        basis: directly_reported
+        context: Current sponsor-described pulmonary platform at application/FAQ scope; no engineering revision bridge.
+        limitation: >-
+          Attributed sponsor description; not independent performance or authorization evidence. Current
+          sponsor-described pulmonary platform at application/FAQ scope; no engineering revision bridge.
+        reviewStatus: reviewed

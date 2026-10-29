@@ -1,0 +1,172 @@
+# cardiac-imaging-and-tricuspid-evidence-2026-10: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-10-28"
+sources:
+  - id: src-wor81-b09-ultra-npj-workflow
+    title: "Improving structural heart disease screening: AI-ECG and novice AI-guided focused cardiac ultrasound"
+    url: https://doi.org/10.1038/s41746-026-02856-3
+    kind: publication
+    publisher: npj Digital Medicine
+    identifier: DOI:10.1038/s41746-026-02856-3
+    publishedAt:
+      value: "2026-06-09"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: public
+bibliography:
+  - id: bib-wor81-b09-ultra-npj-workflow
+    entityIds:
+      - dig-ultrasight-guidance
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b09-ultra-npj-workflow
+        locator: >-
+          Methods > AI-FoCUS and data analysis; Results > Study cohort: 995 enrolled, novice UltraSight/Lumify
+          acquisition and blinded expert interpretation, no AI image interpretation. Exact guidance software build
+          unreported; not diagnostic authorization or JAMA1302 cohort.
+specs:
+  - version: ver-tricares-topaz
+    category: tricuspid-replacement
+    values:
+      expansion-mechanism:
+        value: Self-expanding biological valve
+        source: src-lsi-18427beb8c3e582a
+        loc: Topaz Heart Valve Prosthesis paragraphs1-3; Topaz Implantation System paragraphs1-3
+        basis: directly_reported
+        context: >-
+          TRiCares undated generic Topaz system description; sponsor-attributed specification, existing version
+          identity.
+        limitation: >-
+          Manufacturer claim, not independent verification. No historical FIH dimensions, sheath size, tissue species,
+          current study-build equivalence or marketing authorization inferred.
+        reviewStatus: reviewed
+      leaflet-material:
+        value: Pericardial tissue; species not established by cited generic page
+        source: src-lsi-18427beb8c3e582a
+        loc: Topaz Heart Valve Prosthesis paragraphs1-3; Topaz Implantation System paragraphs1-3
+        basis: directly_reported
+        context: >-
+          TRiCares undated generic Topaz system description; sponsor-attributed specification, existing version
+          identity.
+        limitation: >-
+          Manufacturer claim, not independent verification. No historical FIH dimensions, sheath size, tissue species,
+          current study-build equivalence or marketing authorization inferred.
+        reviewStatus: reviewed
+      anchoring-mechanism:
+        value: Outer stent anchors on native tricuspid leaflets in orthotopic position
+        source: src-lsi-18427beb8c3e582a
+        loc: Topaz Heart Valve Prosthesis paragraphs1-3; Topaz Implantation System paragraphs1-3
+        basis: directly_reported
+        context: >-
+          TRiCares undated generic Topaz system description; sponsor-attributed specification, existing version
+          identity.
+        limitation: >-
+          Manufacturer claim, not independent verification. No historical FIH dimensions, sheath size, tissue species,
+          current study-build equivalence or marketing authorization inferred.
+        reviewStatus: reviewed
+      access-route:
+        value: Transfemoral venous and transjugular
+        source: src-lsi-18427beb8c3e582a
+        loc: Topaz Heart Valve Prosthesis paragraphs1-3; Topaz Implantation System paragraphs1-3
+        basis: directly_reported
+        context: >-
+          TRiCares undated generic Topaz system description; sponsor-attributed specification, existing version
+          identity.
+        limitation: >-
+          Manufacturer claim, not independent verification. No historical FIH dimensions, sheath size, tissue species,
+          current study-build equivalence or marketing authorization inferred.
+        reviewStatus: reviewed
+claims:
+  - id: claim-wor81-b09-tempus-electrode-compatibility
+    versionId: ver-tempus-ecg-mr-k254297
+    category: digital
+    key: electrodeCompatibility
+    label: ECG electrode compatibility
+    value: Wet Ag/AgCl electrodes with conductive gel/paste
+    availability: reported
+    basis: directly_reported
+    reviewStatus: reviewed
+    observedAt: "2026-10-28"
+    context: Exact K254297 input condition; compatible ECG machine models are also required.
+    limitation: >-
+      Specific compatible machine models are not enumerated in this passage; not general compatibility with every12-lead
+      ECG machine or dry electrode recording.
+    sourceRefs:
+      - sourceId: src-tempus-ecg-mr-fda-k254297
+        locator: Physical PDF p.6 (Summary p.2), Device Description
+  - id: claim-wor81-b09-tempus-repeat-testing
+    versionId: ver-tempus-ecg-mr-k254297
+    category: digital
+    key: repeatTestingRestriction
+    label: Repeat-testing restriction
+    value: Do not repeat testing of the same patient within 12 months
+    availability: reported
+    basis: directly_reported
+    reviewStatus: reviewed
+    observedAt: "2026-10-28"
+    context: K254297 General Warnings and Precautions also states serial patient monitoring has not been validated.
+    limitation: >-
+      Label warning, not a recommended testing interval, validated longitudinal monitoring or authority to initiate MR
+      treatment.
+    sourceRefs:
+      - sourceId: src-tempus-ecg-mr-fda-k254297
+        locator: Physical PDF p.6 (Summary p.2), General Warnings and Precautions
+  - id: claim-wor81-b09-ultra-pivotal-image-adequacy
+    versionId: ver-ultrasight-ai-guidance-k223347
+    category: evidence
+    key: pivotalImageAdequacy
+    label: Pivotal image-acquisition validation
+    value: 240 subjects; 93–100% image adequacy for four co-primary assessments
+    context: >-
+      Novice users with UltraSight/Lumify versus sonographers without AI; five blinded expert readers judged adequacy
+      for LV size, LV function, RV size and pericardial effusion assessment.
+    limitation: >-
+      Qualitative image adequacy, not diagnosis accuracy or clinical benefit. Secondary TV structure adequacy was 74%
+      and IVC size 67%; the 61-subject pilot was separate. CI not specified in this summary. These are K223347 results,
+      not a K251416 clinical cohort.
+    sourceRefs:
+      - sourceId: src-ultrasight-fda-k223347
+        locator: Physical PDF  pp.12–13, Clinical Performance Data > Pivotal Study
+    availability: reported
+    basis: directly_reported
+    reviewStatus: reviewed
+    observedAt: "2026-10-28"
+  - id: claim-wor81-b09-ultra-preprocessing-pccp
+    versionId: ver-ultrasight-guidance-k251416
+    category: design
+    key: preprocessingAndPCCP
+    label: Preprocessing change and governed future modifications
+    value: Image preprocessing added; PCCP covers future model retraining, compatible systems and cardiac views
+    context: >-
+      K251416 names K223347 as predicate; the current ten-view acquisition indication and Lumify/S4-1 compatibility row
+      are unchanged. PCCP changes require validation and updated labeling.
+    limitation: >-
+      Planned future changes do not establish implemented or marketed new hardware, views or models. No numbered
+      software build or AS diagnostic indication established.
+    sourceRefs:
+      - sourceId: src-ultrasight-fda-k251416
+        locator: Physical PDF  p.6 modification paragraph; p.8 compatibility; pp.11–12 Table 3 PCCP
+    availability: reported
+    basis: directly_reported
+    reviewStatus: reviewed
+    observedAt: "2026-10-28"
+  - id: claim-wor81-b09-ultra-2025-bench-validation
+    versionId: ver-ultrasight-guidance-k251416
+    category: evidence
+    key: standaloneBenchValidation
+    label: Standalone acquisition-algorithm validation
+    value: 134 patients; 26,362 quality-bar clips and 2.4 million probe-guidance frames
+    context: >-
+      Both standalone tests describe 134 patients (111 USA/23 Israel) from sites geographically distinct from
+      development. Image/position classification acceptance criteria were reported as met.
+    limitation: >-
+      Bench validation, not disease accuracy or clinical benefit. Do not pool into 268 patients or call this a new
+      240-patient clinical study. Exact AUC/FPR point estimates and numerical CIs are not reported here; no JAMA
+      1302/NPJ 995 cohort bridge.
+    sourceRefs:
+      - sourceId: src-ultrasight-fda-k251416
+        locator: "Physical PDF  pp.9–10 (summary5–6of8), NonClinical Performance Data: Quality Bar andProbe Guidance"
+    availability: reported
+    basis: directly_reported
+    reviewStatus: reviewed
+    observedAt: "2026-10-28"

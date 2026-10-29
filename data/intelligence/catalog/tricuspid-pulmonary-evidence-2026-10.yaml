@@ -1,0 +1,153 @@
+# tricuspid-pulmonary-evidence-2026-10: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-10-26"
+sources:
+  - id: src-wor81-b03-dragon-1
+    title: "Transcatheter Edge-to-Edge Repair for Tricuspid Regurgitation: Design and Rationale of the TEER-CHINA Trial"
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13554751/fullTextXML
+    kind: publication
+    publisher: "JACC: Asia via Europe PMC"
+    publishedAt:
+      value: "2026-07-23"
+      precision: day
+    retrievedAt: "2026-10-27"
+    access: public
+  - id: src-wor81-b03-dragon-2
+    title: TEER-CHINA NCT05556460
+    url: https://clinicaltrials.gov/api/v2/studies/NCT05556460
+    kind: registry
+    publisher: ClinicalTrials.gov
+    publishedAt:
+      value: "2022-09-27"
+      precision: day
+    retrievedAt: "2026-10-27"
+    access: public
+  - id: src-wor81-b03-yacoub-1
+    title: Heart Biotech Holdings Ltd – Introduction to the Yacoub Heart valve®
+    url: https://heartbiotech.co.uk/
+    kind: manufacturer
+    publisher: Heart Biotech Ltd
+    retrievedAt: "2026-10-24"
+    access: public
+  - id: src-wor81-b03-yacoub-2
+    title: Valvulogenesis of a living, innervated pulmonary root induced by an acellular scaffold
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10560219/fullTextXML
+    kind: publication
+    publisher: Original journal article via Europe PMC
+    publishedAt:
+      value: "2023-10-07"
+      precision: day
+    retrievedAt: "2026-10-25"
+    access: public
+  - id: src-wor81-b03-pas-c-tct487
+    title: TCT-487 Results of an Implant-Free Interatrial Shunt for Heart Failure
+    url: https://doi.org/10.1016/j.jacc.2023.09.496
+    kind: publication
+    publisher: Journal of the American College of Cardiology
+    publishedAt:
+      value: "2023"
+      precision: year
+    retrievedAt: "2026-10-26"
+    access: licensed
+  - id: src-wor81-b03-padn-nejm-full
+    title: Pulmonary Denervation for Heart Failure–Related Pulmonary Hypertension
+    url: https://doi.org/10.1056/NEJMoa2609056
+    kind: publication
+    publisher: New England Journal of Medicine
+    publishedAt:
+      value: "2026-08-30"
+      precision: day
+    retrievedAt: "2026-10-26"
+    access: licensed
+specs:
+  - version: ver-dragonfly-t-study-system
+    category: tricuspid-teer
+    values:
+      device-design:
+        value: Tricuspid edge-to-edge leaflet-approximation clip system; study-described configuration range
+        source: src-wor81-b03-dragon-1
+        loc: Study device description (sec1.2,p0040); Figure1 caption
+        basis: directly_reported
+        context: TEER-CHINA study-described DragonFly-T system; participant-specific clip configurations not disclosed.
+        limitation: >-
+          Design/registry description; no trial results, superiority or marketing authorization. No mitral-generation
+          facts transferred.
+        reviewStatus: reviewed
+      grasping-mechanism:
+        value: Independent leaflet grasping; anterior/septal or posterior/septal approximation
+        source: src-wor81-b03-dragon-1
+        loc: Study device description (sec1.2,p0040)
+        basis: directly_reported
+        context: TEER-CHINA study-described DragonFly-T system; participant-specific clip configurations not disclosed.
+        limitation: >-
+          Design/registry description; no trial results, superiority or marketing authorization. No mitral-generation
+          facts transferred.
+        reviewStatus: reviewed
+      imaging-guidance:
+        value: Transesophageal echocardiography (registry-described trial procedure)
+        source: src-wor81-b03-dragon-2
+        loc: protocolSection.armsInterventionsModule.interventions[0].description
+        basis: directly_reported
+        context: TEER-CHINA study-described DragonFly-T system; participant-specific clip configurations not disclosed.
+        limitation: >-
+          Design/registry description; no trial results, superiority or marketing authorization. No mitral-generation
+          facts transferred.
+        reviewStatus: reviewed
+  - version: ver-yacoub-current
+    category: surgical-pulmonary-valves
+    values:
+      device-design:
+        value: Sponsor-described resorbable scaffold for pulmonary valve replacement surgery
+        source: src-wor81-b03-yacoub-1
+        loc: >-
+          FAQ > How does the Yacoub Heart Valve work?; Can it be used for all types of valve replacement?; FAQ > What is
+          the promise of tissue engineering?
+        basis: directly_reported
+        context: Sponsor-described current developmental concept; no exact HCCV equivalence established.
+        limitation: Sponsor statement of intended use, not clinical performance, growth, durability or authorization.
+        reviewStatus: reviewed
+  - version: ver-hccv-2023
+    category: surgical-pulmonary-valves
+    values:
+      device-design:
+        value: Sutured acellular pulmonary root scaffold with knitted PCL sinus support
+        source: src-wor81-b03-yacoub-2
+        loc: Methods > Creation and manufacturing of HCCV valve; Methods > In vivo testing
+        basis: directly_reported
+        context: Exact HCCV2023 ovine research configuration; no current Yacoub/human hardware bridge.
+        limitation: Animal research configuration only; 25-mm annulus is research size, not a marketed size range.
+        reviewStatus: reviewed
+      leaflet-material:
+        value: Jet-sprayed polycaprolactone nanofibers
+        source: src-wor81-b03-yacoub-2
+        loc: Methods > Creation and manufacturing of HCCV valve; Methods > In vivo testing
+        basis: directly_reported
+        context: Exact HCCV2023 ovine research configuration; no current Yacoub/human hardware bridge.
+        limitation: Animal research configuration only; 25-mm annulus is research size, not a marketed size range.
+        reviewStatus: reviewed
+      available-sizes:
+        value: 25-mm research annulus configuration
+        source: src-wor81-b03-yacoub-2
+        loc: Methods > Creation and manufacturing of HCCV valve; Methods > In vivo testing
+        basis: directly_reported
+        context: Exact HCCV2023 ovine research configuration; no current Yacoub/human hardware bridge.
+        limitation: Animal research configuration only; 25-mm annulus is research size, not a marketed size range.
+        reviewStatus: reviewed
+bibliography:
+  - id: bib-wor81-b03-pasc-written-abstract
+    entityIds:
+      - dev-intershunt-dynama-pas-c
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b03-pas-c-tct487
+        locator: TCT-487, journalB195–B196; abstract-only historicalPAS-C study, n=10, no exact registry/current-build bridge
+  - id: bib-wor81-b03-padn-original-paper
+    entityIds:
+      - dev-enhancor-padn
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b03-padn-nejm-full
+        locator: >-
+          Main article NCT05824923; Methods/Results/Discussion; excludes unprovided supplementary appendix and PULSE-LHD
+          hardware/outcome transfer

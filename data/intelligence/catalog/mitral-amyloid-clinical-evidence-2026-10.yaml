@@ -1,0 +1,125 @@
+# mitral-amyloid-clinical-evidence-2026-10: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-10-28"
+sources:
+  - id: src-wor81-b10-alv-original
+    title: "Feasibility of a No-Implant Approach to Interatrial Shunts: Preclinical and Early Clinical Studies."
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10242572/fullTextXML
+    kind: publication
+    publisher: Structural Heart
+    identifier: DOI:10.1016/j.shj.2022.100078
+    publishedAt:
+      value: "2022-08-09"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: public
+  - id: src-wor81-b10-alta-original
+    title: >-
+      AltaValve Atrial Fixation System for the Treatment of Severe Mitral Regurgitation and Mitral Annular
+      Calcification.
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11121746/fullTextXML
+    kind: publication
+    publisher: Structural Heart
+    identifier: DOI:10.1016/j.shj.2024.100294
+    publishedAt:
+      value: "2024-03-15"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: public
+  - id: src-wor81-b10-amend-original
+    title: "Transeptal Mitral Annuloplasty With the AMEND System: 6-Month Results of First in Man Cohort."
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13281969/fullTextXML
+    kind: publication
+    publisher: "Circulation: Cardiovascular Interventions"
+    identifier: DOI:10.1161/CIRCINTERVENTIONS.125.015977
+    publishedAt:
+      value: "2026-04-09"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: public
+  - id: src-wor81-b10-amygo-original
+    title: >-
+      Structure-Based Probe Reveals the Presence of Large Transthyretin Aggregates in Plasma of ATTR Amyloidosis
+      Patients
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11494390/fullTextXML
+    kind: publication
+    publisher: "JACC: Basic to Translational Science"
+    identifier: DOI:10.1016/j.jacbts.2024.05.013
+    publishedAt:
+      value: "2024-07-17"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: public
+  - id: src-wor81-b10-amygo-circulation
+    title: >-
+      Detection of Circulating Transthyretin Amyloid Aggregates in Plasma: A Novel Biomarker for Transthyretin
+      Amyloidosis
+    url: https://doi.org/10.1161/CIRCULATIONAHA.123.067225
+    kind: publication
+    publisher: Circulation
+    identifier: DOI:10.1161/CIRCULATIONAHA.123.067225
+    publishedAt:
+      value: "2024-05-21"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: licensed
+  - id: src-wor81-b10-amygo-amyloid
+    title: Detection of ATTR aggregates in the plasma of polyneuropathic patients with ATTR-V30M amyloidosis
+    url: https://doi.org/10.1080/13506129.2024.2404073
+    kind: publication
+    publisher: Amyloid
+    identifier: DOI:10.1080/13506129.2024.2404073
+    publishedAt:
+      value: "2024-09-16"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: licensed
+bibliography:
+  - id: bib-wor81-b10-alv-original
+    entityIds:
+      - dev-alleviant-alv1
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b10-alv-original
+        locator: >-
+          Methods/Device Description (sec2.1); Preliminary Clinical Development (sec2.5); Results/ALLEVIATE-HF-1 FIH
+          Pilot Study (sec3.3); Table1; historical research only, no exact current build or independent commercial
+          validation.
+  - id: bib-wor81-b10-alta-original
+    entityIds:
+      - dev-altavalve
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b10-alta-original
+        locator: >-
+          Methods/Device Overview(sec2.2); Study Design and Patients(sec2.1); Results(sec3); Tables1,4; Study
+          Limitations(sec4.1); historical research only, no exact current build or independent commercial validation.
+  - id: bib-wor81-b10-amend-original
+    entityIds:
+      - dev-valcare-amend
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b10-amend-original
+        locator: >-
+          Methods/Patient Population(sec8); AMEND Annuloplasty Ring(sec9); Results(sec10); Limitations(sec12);
+          historical research only, no exact current build or independent commercial validation.
+  - id: bib-wor81-b10-amygo-original
+    entityIds:
+      - dev-amygo-tad1-assay
+    versionIds: []
+    reviewStatus: reviewed
+    sourceRefs:
+      - sourceId: src-wor81-b10-amygo-original
+        locator: >-
+          Methods > Patients and tissue material; Results > TAD1 binds ATTR aggregates in plasma; Discussion > Study
+          limitations; historical research only, no exact current build or independent commercial validation.
+      - sourceId: src-wor81-b10-amygo-circulation
+        locator: >-
+          PhysicalPDF pp.1–3 (journal1696–1698), FigureE/F andcaption; limitationsparagraph p.3; exploratory research,
+          no commercial kit or independent clinical validation. Panel-specific counts not pooled.
+      - sourceId: src-wor81-b10-amygo-amyloid
+        locator: >-
+          PhysicalPDF p.2 (journal350), blindedmethods/results/limitations; p.3 (journal351), Figure1A/C/D/E andcaption;
+          exploratory research, no commercial kit or independent clinical validation. Panel-specific counts not pooled.
