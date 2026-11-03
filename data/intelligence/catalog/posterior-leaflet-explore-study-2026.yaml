@@ -1,0 +1,105 @@
+observedAt: '2026-11-02'
+sources:
+  - id: src-wor85-explore
+    title: 'Posterior Leaflet Restoration for Secondary Mitral Regurgitation: EXPLORE MR Results'
+    url: https://www.jacc.org/doi/10.1016/j.jcin.2026.10.013
+    kind: publication
+    publisher: 'JACC: Cardiovascular Interventions / original study'
+    publishedAt:
+      value: '2026-10-31'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+bibliography:
+  - id: bib-wor85-posterior-leaflet-explore-study-2026-1
+    entityIds:
+      - dev-polares-mrace
+    versionIds:
+      - ver-polares-mrace-explore-study
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: >-
+          Article-in-press PDF p2 Device Description/Study Design, p3 Figure1; Table 2 p6, Table 3 pp8–9;
+          pp13–14 Study Limitations; JACC online31 October2026.
+    reviewStatus: reviewed
+families:
+  - id: family-polares-mrace
+    name: MRace posterior leaflet restoration
+    manufacturer: Polares Medical (study attribution)
+    entityIds:
+      - dev-polares-mrace
+    conditionIds:
+      - cond-mr
+    description: >-
+      Study-linked posterior-leaflet restoration implant; exact generation/legal-entity equivalence to other
+      registrations remains unestablished.
+versions:
+  - id: ver-polares-mrace-explore-study
+    familyId: family-polares-mrace
+    graphEntityId: dev-polares-mrace
+    name: MRace — EXPLORE MR study configuration
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Original 2026 paper study configuration; no numbered generation/other-registry build equivalence
+      established.
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: PDFp2 Device Description; Figure1 p3.
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor85-posterior-leaflet-explore-study-2026-1
+    versionId: ver-polares-mrace-explore-study
+    category: design
+    key: wor85-posterior-leaflet-explore-study-2026-1
+    label: Study implant composition and mechanism
+    value: >-
+      Nitinol/ePTFE frame; bovine-pericardial adaptive coaptation element; five cobalt-chromium helical
+      anchors. The element inflates in systole and deflates in diastole.
+    availability: reported
+    basis: directly_reported
+    context: Study-specific transseptal posterior-leaflet restoration at Brazil/Georgia centers.
+    limitation: >-
+      No size/sheath/alloy-grade or tissue-treatment specification; no build bridge to US/GE/France
+      registries.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: PDFp2 Device Description; Figure1/captionp3.
+    reviewStatus: reviewed
+  - id: claim-wor85-posterior-leaflet-explore-study-2026-2
+    versionId: ver-polares-mrace-explore-study
+    category: evidence
+    key: wor85-posterior-leaflet-explore-study-2026-2
+    label: Study deployment and one-year MR observations
+    value: >-
+      75/78 deployed; MVARC technical success 72/78. At one year, MR≤2 in 29/32 with MR-grade data;26/32 had
+      MR≤1.
+    availability: reported
+    basis: directly_reported
+    context: 78 treated at 5 Brazil/Georgia centers; interim single-arm early-feasibility cohort.
+    limitation: >-
+      Only 32/78 had one-year MR observations; parameter-specific available-case denominators are not
+      all-enrolled success rates.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: PDFpp3–5 Results; Table 3 PDFpp8–9.
+    reviewStatus: reviewed
+  - id: claim-wor85-posterior-leaflet-explore-study-2026-3
+    versionId: ver-polares-mrace-explore-study
+    category: evidence
+    key: wor85-posterior-leaflet-explore-study-2026-3
+    label: Mortality and interpretation limits
+    value: 30-day mortality 6.4% (5 events); one-year Kaplan–Meier mortality 29.5% (95% CI16.9–40.2;19 events).
+    availability: reported
+    basis: directly_reported
+    context: Post hoc LV-volume subgroups, baseline differences and uncontrolled design.
+    limitation: >-
+      No comparative benefit or subgroup selection rule established; reduced coaptation-element motion needs
+      surveillance.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: Table 2 PDFp6; Study Limitations PDFpp13–14.
+    reviewStatus: reviewed

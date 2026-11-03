@@ -1,0 +1,168 @@
+observedAt: '2026-11-02'
+sources:
+  - id: src-wor85-recent-paper-1
+    title: >-
+      Epicardial Closure for Peridevice Leaks from Endocardial Left Atrial Appendage Closure - Early
+      LARIAT-4-PDL Registry Results.
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42913969&retmode=xml
+    kind: publication
+    publisher: PubMed / original journal abstract
+    publishedAt:
+      value: '2026-10-22'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+  - id: src-wor85-recent-paper-2
+    title: Zero-fluoroscopy approach to left atrial appendage closure using intracardiac echo guidance.
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42913973&retmode=xml
+    kind: publication
+    publisher: PubMed / original journal abstract
+    publishedAt:
+      value: '2026-10-22'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+  - id: src-wor85-recent-paper-3
+    title: Atrial Fibrillation Pattern and Outcomes After Contemporary Left Atrial Appendage Occlusion.
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42913976&retmode=xml
+    kind: publication
+    publisher: PubMed / original journal abstract
+    publishedAt:
+      value: '2026-10-22'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+  - id: src-wor85-recent-paper-4
+    title: >-
+      Computational Modeling Reduces Leaflet Modification Rates in Valve-In-Valve and Redo Transcatheter
+      Aortic Valve Replacement
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42914743&retmode=xml
+    kind: publication
+    publisher: NLM PubMed record of original journal study
+    publishedAt:
+      value: '2026-10-23'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+  - id: src-wor85-recent-paper-5
+    title: >-
+      Impact of Balloon-Expandable Valve Asymmetry on Heart Failure Post Transcatheter Aortic Valve
+      Replacement
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42960753&retmode=xml
+    kind: publication
+    publisher: NLM PubMed record of original journal study
+    publishedAt:
+      value: '2026-10-30'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+  - id: src-wor85-recent-paper-6
+    title: >-
+      A semi-rapid deployment workflow to reduce device time in Evolut FX self-expanding transcatheter aortic
+      valve implantation
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42924251&retmode=xml
+    kind: publication
+    publisher: NLM PubMed record of original journal study
+    publishedAt:
+      value: '2026-10-23'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+  - id: src-wor85-recent-paper-7
+    title: >-
+      A Whole-Heart Fluid-Structure Interaction Model for Transcatheter Mitral Valve Repair in Primary Mitral
+      Regurgitation
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42909734&retmode=xml
+    kind: publication
+    publisher: NLM PubMed record of original journal study
+    publishedAt:
+      value: '2026-10-23'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+bibliography:
+  - id: bib-wor85-recent-structural-study-bibliography-2026-1
+    entityIds:
+      - dev-lariat
+      - co-atricure
+      - dev-amulet
+      - proc-laac
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-wor85-recent-paper-1
+        locator: >-
+          PubmedArticle[MedlineCitation/PMID="42913969"]/MedlineCitation/Article:
+          ArticleDate[@DateType="Electronic"]; Abstract/AbstractText Methods and Results
+    reviewStatus: reviewed
+  - id: bib-wor85-recent-structural-study-bibliography-2026-2
+    entityIds:
+      - dev-watchman-flx
+      - co-boston-scientific
+      - proc-laac
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-wor85-recent-paper-2
+        locator: >-
+          PubmedArticle[MedlineCitation/PMID="42913973"]/MedlineCitation/Article:
+          ArticleDate[@DateType="Electronic"]; Abstract/AbstractText Methods and Results
+    reviewStatus: reviewed
+  - id: bib-wor85-recent-structural-study-bibliography-2026-3
+    entityIds:
+      - proc-laac
+      - cond-af
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-wor85-recent-paper-3
+        locator: >-
+          PubmedArticle[MedlineCitation/PMID="42913976"]/MedlineCitation/Article:
+          ArticleDate[@DateType="Electronic"]; Abstract/AbstractText Methods and Results
+    reviewStatus: reviewed
+  - id: bib-wor85-recent-structural-study-bibliography-2026-4
+    entityIds:
+      - proc-tavi
+      - cond-as
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-wor85-recent-paper-4
+        locator: >-
+          PubmedArticle[MedlineCitation/PMID=42914743]/MedlineCitation/Article:
+          ArticleDate[@DateType=Electronic]; ArticleTitle; Abstract/AbstractText (Methods, Results and
+          Conclusions).
+    reviewStatus: reviewed
+  - id: bib-wor85-recent-structural-study-bibliography-2026-5
+    entityIds:
+      - proc-tavi
+      - cond-hf
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-wor85-recent-paper-5
+        locator: >-
+          PubmedArticle[MedlineCitation/PMID=42960753]/MedlineCitation/Article:
+          ArticleDate[@DateType=Electronic]; ArticleTitle; Abstract/AbstractText (Methods, Results and
+          Conclusions).
+    reviewStatus: reviewed
+  - id: bib-wor85-recent-structural-study-bibliography-2026-6
+    entityIds:
+      - dev-evolut
+      - co-medtronic
+      - proc-tavi
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-wor85-recent-paper-6
+        locator: >-
+          PubmedArticle[MedlineCitation/PMID=42924251]/MedlineCitation/Article:
+          ArticleDate[@DateType=Electronic]; ArticleTitle; Abstract/AbstractText (Methods, Results and
+          Conclusions).
+    reviewStatus: reviewed
+  - id: bib-wor85-recent-structural-study-bibliography-2026-7
+    entityIds:
+      - cond-mr
+      - proc-mitral-teer
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-wor85-recent-paper-7
+        locator: >-
+          PubmedArticle[MedlineCitation/PMID=42909734]/MedlineCitation/Article:
+          ArticleDate[@DateType=Electronic]; ArticleTitle; Abstract/AbstractText (Methods, Results and
+          Conclusions).
+    reviewStatus: reviewed

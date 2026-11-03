@@ -1229,22 +1229,53 @@
     source: "https://clinicaltrials.gov/study/NCT04889872"
   conditions: [cond-as]
   therapies: [dev-sapien-3]
-  enrollment: 750
-  primaryEndpoint: "Composite of death, stroke, and unplanned cardiovascular hospitalization"
-  outcomeSummary: "Randomized trial testing TAVR (SAPIEN 3) versus clinical surveillance in moderate, calcific aortic stenosis; baseline clinical and echocardiographic characteristics of the enrolled cohort were presented at New York Valves 2026, with primary outcomes pending."
-  resultStatus: ongoing
-  references: ["https://clinicaltrials.gov/study/NCT04889872"]
+  enrollment: 2250
+  primaryEndpoint: "Effectiveness: all-cause death or a heart-failure event with or without hospitalization at 2 years. Safety: all-cause death, stroke, life-threatening/fatal bleeding, stage 4 AKI, device/procedure-related hospitalization or valve dysfunction requiring reintervention at 30 days."
+  outcomeSummary: "PROGRESS randomized 744 patients aged ≥65 with moderate AS and at-risk features to TAVR permitting SAPIEN 3/Ultra/Ultra RESILIA or surveillance. At 2 years, death or HF event was 16.7% vs 23.9% (Kaplan–Meier; difference −7.2 pp, 95% CI −13.1 to −1.3; P=.02). Death alone was 8.4% vs 7.3%; no mortality benefit established. The 30 day TAVR safety composite met its performance goal. First hierarchical secondary endpoint P=.07 stopped confirmatory secondary testing."
+  resultStatus: positive
+  references:
+    - https://clinicaltrials.gov/study/NCT04889872
+    - https://www.nejm.org/doi/full/10.1056/NEJMoa2607326
+    - https://clinicaltrials.gov/api/v2/studies/NCT04889872
   links:
     - label: "New York Valves 2026 late-breaking program (CRF)"
       url: "https://www.crf.org/crf/news-and-events/news/news/3995-new-york-valves-2026-to-unveil-late-breaking-research-in-structural-heart-disease"
   pulse: 7
+  primaryAnalysis:
+    status: reported
+    date: "2026-11-02"
+    precision: day
+    source: https://www.nejm.org/doi/full/10.1056/NEJMoa2607326
+  enrollmentCounts:
+    - count: 2250
+      basis: estimated
+      asOf: "2025-12-17"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT04889872
+      scope: Current retrieved registry revision; not actual trial enrollment.
+    - count: 744
+      basis: randomized
+      asOf: "2026-11-02"
+      source: https://www.nejm.org/doi/full/10.1056/NEJMoa2607326
+      scope: Original report randomized 373 TAVR and 371 surveillance; not registry target.
+    - count: 697
+      basis: analyzed
+      asOf: "2026-11-02"
+      source: https://www.nejm.org/doi/full/10.1056/NEJMoa2607326
+      scope: "Results p 4: 356 TAVR+341 surveillance included in effectiveness analysis; Table 2 describes ITT with randomized 373/371. KM estimates, not crude 697-person fractions."
+    - count: 358
+      basis: treated
+      asOf: "2026-11-02"
+      source: https://www.nejm.org/doi/full/10.1056/NEJMoa2607326
+      scope: Index TAVR as-treated primary safety cohort only; not both groups combined.
   curation:
     status: curated
-    lastUpdated: 2026-06-28
+    lastUpdated: "2026-11-02"
     sources:
-      - "https://clinicaltrials.gov/study/NCT04889872"
-      - "https://www.crf.org/crf/news-and-events/news/news/3995-new-york-valves-2026-to-unveil-late-breaking-research-in-structural-heart-disease"
-    notes: "Baseline characteristics presented at New York Valves 2026 (Jun 24-26); no primary outcome yet (est. completion 2037). VERIFY exact primary endpoint wording from the trial protocol before promoting."
+      - https://clinicaltrials.gov/study/NCT04889872
+      - https://www.crf.org/crf/news-and-events/news/news/3995-new-york-valves-2026-to-unveil-late-breaking-research-in-structural-heart-disease
+      - https://www.nejm.org/doi/full/10.1056/NEJMoa2607326
+      - https://clinicaltrials.gov/api/v2/studies/NCT04889872
+    notes: Original primary results reported November 2, 2026. SAPIEN 3/Ultra/Ultra RESILIA permitted; actual use/counts per generation not reported in main article; no generation-specific results. Retrieved registry still says RECRUITING with ESTIMATED 2250, revision December 17, 2025, hasResults=false; retained as registry facts despite 744 randomized in paper. PrimaryAnalysis is reported independently. First secondary P=.07 stops hierarchy. Evidence is limited to the main article; supplementary analyses and protocol detail are outside this summary.
 
 - id: trial-smart
   type: trial
@@ -5035,3 +5066,358 @@
       the 100-patient FLX publication denominator. Mixed is a descriptive evidence-summary category, not a formal
       comparative efficacy conclusion; cross-study leak-rate comparisons are unsupported.
   nctId: NCT04569734
+
+- id: trial-andes-nct03568890
+  type: trial
+  name: ANDES — post-LAAC antithrombotic strategies
+  nctId: NCT03568890
+  status: active
+  conditions:
+    - cond-af
+  therapies:
+    - proc-laac
+  enrollmentCounts:
+    - count: 510
+      basis: estimated
+      asOf: "2026-03-27"
+      scope: Registry enrollment as of its stated revision; not a new treated/analyzed count.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT03568890
+  primaryEndpoint: >-
+    Device thrombosis (efficacy outcome) (60 days after LAAC) Combined outcome of all-cause mortality, bleeding, stroke,
+    or Device thrombosis (Safety outcome) (60 days after LAAC)
+  outcomeSummary: >-
+    ANDES one-year follow-up compares 253 patients assigned to 60 days of DOAC with 257 assigned to dual antiplatelet
+    therapy after LAA closure; most then switched to single antiplatelet therapy. Any bleeding was 24.1% versus 32.3%
+    (risk difference −8.2 percentage points; 95% CI −15.9 to −0.4), driven by the first 60 days. No later-event
+    advantage was demonstrated; incomplete imaging and limited power constrain thrombus comparisons.
+  resultStatus: mixed
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT03568890
+    - https://www.sciencedirect.com/science/article/pii/S0735109726101764
+  curation:
+    status: curated
+    lastUpdated: "2026-11-02"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT03568890
+    notes: >-
+      Official revision 2026-03-27, retrieved 2026-11-02; Sixty-day randomized DOAC/DAPT strategies; one-year follow-up
+      is not continuous one-year exposure. Registry enrollment remains estimated 510; no registry results posted.
+- id: trial-expand-tavr-ii
+  type: trial
+  name: Evolut EXPAND TAVR II
+  nctId: NCT05149755
+  status: active
+  conditions:
+    - cond-as
+  therapies:
+    - dev-evolut
+  enrollmentCounts:
+    - count: 650
+      basis: estimated
+      asOf: "2026-09-30"
+      scope: Registry enrollment as of its stated revision; not a new treated/analyzed count.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05149755
+  primaryEndpoint: >-
+    Composite rate of all-cause mortality, all-stroke, life threatening or fatal bleeding, acute kidney injury,
+    hospitalization due to device or procedure-related complication, or valve dysfunction requiring reintervention. (30
+    days) Composite rate of all-cause mortality, heart failure hospitalization or event, or medical instability leading
+    to aortic valve replacement or re-intervention. (2 years)
+  outcomeSummary: >-
+    Registry hasResults=false. Moderate-AS randomized design, not a treatment-outcome readout. Registry 650 estimated is
+    a target; no treatment-outcome readout or actual randomized count inferred.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT05149755
+  curation:
+    status: curated
+    lastUpdated: "2026-11-02"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05149755
+    notes: >-
+      Official revision 2026-09-30, retrieved 2026-11-02; Moderate-AS randomized design, not a treatment-outcome
+      readout. Registry 650 estimated is a target; no treatment-outcome readout or actual randomized count inferred.
+- id: trial-jensclip-dmr-nct05417945
+  type: trial
+  name: JensClip degenerative MR study
+  nctId: NCT05417945
+  status: unknown
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-jensclip
+  enrollmentCounts:
+    - count: 124
+      basis: estimated
+      asOf: "2022-06-14"
+      scope: Registry enrollment as of its stated revision; not a new treated/analyzed count.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05417945
+  primaryEndpoint: Clinical success rate at 12 months postoperatively (12 months)
+  outcomeSummary: >-
+    Registry hasResults=false. DMR registration only; UNKNOWN overall status and old 2022 revision. Last-known
+    not-yet-recruiting is not current activity.124 estimated; no results posted.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT05417945
+  curation:
+    status: curated
+    lastUpdated: "2026-11-02"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05417945
+    notes: >-
+      Official revision 2022-06-14, retrieved 2026-11-02; lastKnownStatus=NOT_YET_RECRUITING, not current recruitment.
+      DMR registration only; UNKNOWN overall status and old 2022 revision. Last-known not-yet-recruiting is not current
+      activity.124 estimated; no results posted.
+- id: trial-jensclip-fmr-nct05931900
+  type: trial
+  name: JensClip functional MR study
+  nctId: NCT05931900
+  status: unknown
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-jensclip
+  enrollmentCounts:
+    - count: 129
+      basis: estimated
+      asOf: "2023-07-05"
+      scope: Registry enrollment as of its stated revision; not a new treated/analyzed count.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05931900
+  primaryEndpoint: All-cause mortality or hospitalization rate (12 months)
+  outcomeSummary: >-
+    Registry hasResults=false. FMR registration only; UNKNOWN overall status and old 2023 revision. Last-known
+    enrolling-by-invitation is not current activity.129 estimated; no DMR outcome transfer.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT05931900
+  curation:
+    status: curated
+    lastUpdated: "2026-11-02"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05931900
+    notes: >-
+      Official revision 2023-07-05, retrieved 2026-11-02; lastKnownStatus=ENROLLING_BY_INVITATION, not current
+      recruitment. FMR registration only; UNKNOWN overall status and old 2023 revision. Last-known
+      enrolling-by-invitation is not current activity.129 estimated; no DMR outcome transfer.
+- id: trial-paradigm-pvl-nct04489823
+  type: trial
+  name: PARADIGM — PVL closure (NCT04489823)
+  nctId: NCT04489823
+  status: active
+  conditions:
+    - cond-pvl
+  therapies:
+    - dev-amplatzer-pvl-plug-iii
+  enrollmentCounts:
+    - count: 200
+      basis: estimated
+      asOf: "2026-02-10"
+      scope: Registry enrollment as of its stated revision; not a new treated/analyzed count.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT04489823
+  primaryEndpoint: Paravalvular leak closure success rate (percent of subjects) (30 Days)
+  outcomeSummary: >-
+    Original PARADIGM paper: primary composite 188/200 (94.0%) versus 65% performance goal; separate 30-day procedural
+    success 140/181 (77.3%), mortality 4/200 (2.0%). Single-arm selected cohort; registry status remains active.
+  resultStatus: positive
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT04489823
+  curation:
+    status: curated
+    lastUpdated: "2026-11-02"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT04489823
+    notes: >-
+      Official revision 2026-02-10, retrieved 2026-11-02; PVL study, separate from PARADIGM-HF/DurAVR. Registry 200
+      estimated differs in basis from 200 published attempts; no Paraclose approval bridge.
+  primaryAnalysis:
+    status: reported
+    date: "2026-10-31"
+    precision: day
+    source: https://www.jacc.org/doi/10.1016/j.jcin.2026.10.024
+- id: trial-repeat-nct07462624
+  type: trial
+  name: REPEAT — NCT07462624
+  nctId: NCT07462624
+  status: recruiting
+  conditions:
+    - cond-as
+  therapies:
+    - proc-redo-surgical-aortic-replacement
+    - proc-valve-in-valve-aortic-replacement
+  enrollmentCounts:
+    - count: 890
+      basis: estimated
+      asOf: "2026-03-10"
+      scope: Registry enrollment as of its stated revision; not a new treated/analyzed count.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07462624
+  primaryEndpoint: >-
+    The primary endpoint will be a composite endpoint including all-cause mortality, all-cause stroke, myocardial
+    infarction, and re-hospitalization for heart failure or aortic valve reintervention at 5 years. (5 years)
+  outcomeSummary: >-
+    Registry hasResults=false. Separate NCT record:890 estimated, registry actual start 2025-11-10. Existing
+    DRKS00034170 record/850 target preserved; cross-registration equivalence is not inferred.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT07462624
+  curation:
+    status: curated
+    lastUpdated: "2026-11-02"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07462624
+    notes: >-
+      Official revision 2026-03-10, retrieved 2026-11-02; Separate NCT record:890 estimated, registry actual start
+      2025-11-10. Existing DRKS00034170 record/850 target preserved; cross-registration equivalence is not inferred.
+- id: trial-veritas-amulet-360
+  type: trial
+  name: VERITAS — Amulet 360 (NCT06707688)
+  nctId: NCT06707688
+  status: active
+  conditions:
+    - cond-af
+  therapies:
+    - dev-amulet-360
+  enrollmentCounts:
+    - count: 458
+      basis: actual
+      asOf: "2026-08-04"
+      scope: Registry enrollment as of its stated revision; not a new treated/analyzed count.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06707688
+  primaryEndpoint: >-
+    The primary safety endpoint is the occurrence of any prespecified safety events through 7 days post-procedure or
+    hospital discharge, whichever is later. (7 days post-procedure or hospital discharge) The primary effectiveness
+    endpoint is LAA occlusion defined as no peri-device flow or peri-device flow ≤5 mm based on TEE/TOE at the 45-day
+    follow-up visit. (45 days)
+  outcomeSummary: >-
+    One-year descriptive paper:458 implant attempts; complete closure 359/394 imaged (91.1%); estimated DRT3.3%,
+    stroke/systemic embolism 1.8%, major bleeding 6.6%. Single-arm, no comparative benefit established.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT06707688
+    - https://www.jacc.org/doi/10.1016/j.jcin.2026.10.023
+  curation:
+    status: curated
+    lastUpdated: "2026-11-02"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06707688
+    notes: >-
+      Official revision 2026-08-04, retrieved 2026-11-02; The original one-year paper bridges Amulet 360 to this NCT;
+      registry calls intervention Amulet 2. One-year report is follow-up; no date for first primary-analysis publication
+      inferred.
+- id: trial-vsling-iii-nct06002386
+  type: trial
+  name: Vsling III
+  nctId: NCT06002386
+  status: recruiting
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-vsling
+  enrollmentCounts:
+    - count: 10
+      basis: estimated
+      asOf: "2026-10-28"
+      scope: Registry enrollment as of its stated revision; not a new treated/analyzed count.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06002386
+  primaryEndpoint: Device related Serious Adverse Events (SAE) (30 days)
+  outcomeSummary: >-
+    Registry hasResults=false. Official October 28 revision now RECRUITING;10 estimated. Separate from Vsling I and the
+    single written EU case report; no analyzed-cohort bridge.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT06002386
+  curation:
+    status: curated
+    lastUpdated: "2026-11-02"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06002386
+    notes: >-
+      Official revision 2026-10-28, retrieved 2026-11-02; Official October 28 revision now RECRUITING;10 estimated.
+      Separate from Vsling I and the single written EU case report; no analyzed-cohort bridge.
+- id: trial-simplaafy
+  type: trial
+  name: SIMPLAAFY — WATCHMAN FLX Pro
+  nctId: NCT06521463
+  phase: Randomized three-group device/regimen trial
+  status: active
+  primaryAnalysis:
+    status: reported
+    date: "2026-11-02"
+    precision: day
+    source: https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361
+  conditions:
+    - cond-af
+  therapies:
+    - dev-watchman-flx
+  enrollmentCounts:
+    - count: 1857
+      basis: actual
+      asOf: "2026-10-13"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06521463
+      scope: Registry ACTUAL enrollment.
+    - count: 1857
+      basis: randomized
+      asOf: "2026-11-02"
+      source: https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361
+      scope: DAPT 624; reduced-dose NOAC 620; aspirin 613 after successful uncomplicated FLX Pro implant.
+    - count: 1797
+      basis: analyzed
+      asOf: "2026-11-02"
+      source: https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361
+      scope: "Primary analysis: 596 DAPT, 603 NOAC, 598 aspirin; completed follow-up or had event."
+  primaryEndpoint: >-
+    Two 6 month noninferiority comparisons of all-cause death, all stroke, systemic embolism or ISTH major bleeding:
+    reduced-dose NOAC then aspirin versus DAPT; aspirin alone versus DAPT.
+  outcomeSummary: >-
+    SIMPLAAFY randomized 1,857 patients only after successful uncomplicated WATCHMAN FLX Pro implantation. In the
+    1,797-person primary analysis, the 6 month death/stroke/systemic embolism/major bleeding composite was 6.9% DAPT,
+    5.1% reduced-dose NOAC then aspirin, 3.3% aspirin alone. Both monotherapies met noninferiority (7.2 pp margin;
+    P<.001 each). Bleeding/45 day DRT comparisons are exploratory; no full-dose NOAC comparator or other-device
+    inference. Twelve-month results are pending.
+  resultStatus: positive
+  references:
+    - https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361
+    - https://clinicaltrials.gov/api/v2/studies/NCT06521463
+    - >-
+      https://news.bostonscientific.com/2026-11-02-SIMPLAAFY-study-of-the-WATCHMAN-FLX-TM-Pro-Left-Atrial-Appendage-Closure-Device-meets-primary-endpoints
+  curation:
+    status: curated
+    lastUpdated: "2026-11-02"
+    sources:
+      - https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361
+      - https://clinicaltrials.gov/api/v2/studies/NCT06521463
+      - https://news.bostonscientific.com/2026-11-02-SIMPLAAFY-study-of-the-WATCHMAN-FLX-TM-Pro-Left-Atrial-Appendage-Closure-Device-meets-primary-endpoints
+    notes: Registry ACTIVE_NOT_RECRUITING, revision 2026-10-13; no posted registry results. Graph therapy node groups FLX/FLX Pro; study evidence maps only to Data ver-watchman-flx-pro. Paper reports 87 US sites; sponsor release 86; unresolved. Sponsor calls monotherapy regimens investigational. Evidence is limited to the main article; supplementary analyses are outside this summary.
+
+- id: trial-neochord-nexus-us-efs
+  type: trial
+  name: NeXuS US early feasibility study
+  nctId: NCT07912229
+  phase: Early feasibility study
+  status: not-yet-recruiting
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-neochord-nexus
+  enrollmentCounts:
+    - count: 15
+      basis: estimated
+      asOf: "2026-11-03"
+      scope: Planned enrollment in the November 3, 2026 registry revision; not treated or analyzed patients.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07912229
+  primaryEndpoint: Major Device Related Adverse Events through 30 days
+  outcomeSummary: >-
+    No results posted. Single-group, open-label study; estimated start February 20, 2027, primary completion February
+    20, 2029 and study completion February 20, 2032. Secondary endpoint: successful access, delivery and deployment
+    during the procedure. All dates are estimates.
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT07912229
+  curation:
+    status: curated
+    lastUpdated: "2026-11-03"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07912229
+    notes: >-
+      First posted and last updated November 3, 2026; registry status NOT_YET_RECRUITING, not independently verified
+      recruitment activity. Study criteria concern primary degenerative MR, qualifying P2 prolapse/flail, adults 18–85,
+      LVEF ≥30%, and intermediate/high surgical risk; excludes exclusively secondary MR. Registry writes MR >3+;
+      preserve that threshold as stated.
+  resultStatus: ongoing

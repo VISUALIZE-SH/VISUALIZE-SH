@@ -1,0 +1,63 @@
+observedAt: '2026-11-02'
+sources:
+  - id: src-wor86-progress
+    title: TAVR in Patients with Moderate Aortic Stenosis with At-Risk Features
+    url: https://www.nejm.org/doi/full/10.1056/NEJMoa2607326
+    kind: publication
+    publisher: New England Journal of Medicine
+    publishedAt:
+      value: '2026-11-02'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: licensed
+bibliography:
+  - id: bib-wor86-progress
+    entityIds:
+      - dev-sapien-3
+    versionIds:
+      - ver-sapien-3
+      - ver-sapien-3-ultra-progress-study
+      - ver-sapien-ultra-resilia
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Original article PDF pp 1–5; Table 2, p 9; Limitations p 11.
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor86-progress-option
+    versionId: ver-sapien-3-ultra-progress-study
+    category: design
+    key: wor86-progress-option
+    label: Named study valve option
+    value: >-
+      The PROGRESS design permitted SAPIEN 3 Ultra alongside SAPIEN 3 and SAPIEN 3 Ultra RESILIA; actual
+      use/counts by generation are not reported in the main article.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      SAPIEN 3 Ultra is a named permitted PROGRESS trial option, not an independently analyzed clinical
+      cohort.
+    limitation: >-
+      This record establishes the permitted name only. No actual Ultra implant count, Ultra-specific outcome,
+      material or delivery dimension is established.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: >-
+          Original PDF p 2, Trial Design and Oversight: permitted valve systems; main article does not
+          enumerate actual implants by generation.
+    reviewStatus: reviewed
+versions:
+  - id: ver-sapien-3-ultra-progress-study
+    familyId: family-sapien
+    graphEntityId: dev-sapien-3
+    name: SAPIEN 3 Ultra — PROGRESS design option
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Named permitted PROGRESS design option alongside SAPIEN 3 and Ultra RESILIA. Actual use/counts by
+      generation are not reported in the main article. No Ultra-specific clinical estimate, material
+      specification or delivery dimension established.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Original PDF p 2 Trial Design and Oversight.
+    reviewStatus: reviewed

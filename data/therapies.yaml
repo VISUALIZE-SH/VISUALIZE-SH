@@ -790,20 +790,16 @@
     - label: "Product page"
       url: "https://www.bostonscientific.com/en-EU/products/laac-system/watchman-flx.html"
   pulse: 6
-  description: >-
-    Boston Scientific transcatheter LAA occluder with a self-expanding nitinol frame and PET membrane for nonvalvular AF stroke prevention.
-    FDA-approved FLX and later FLX Pro configurations, post-implant medication regimens and indication supplements have separate labeling.
+  description: "Boston Scientific transcatheter LAA occluder with a self-expanding nitinol frame and PET membrane for nonvalvular AF stroke prevention. FDA-approved FLX and later FLX Pro configurations, post-implant medication regimens and indication supplements have separate labeling. SIMPLAAFY studied FLX Pro only after successful uncomplicated implantation: reduced-dose NOAC for 3 months then aspirin, or aspirin alone, met 6 month noninferiority versus DAPT for 6 months then aspirin. These results do not transfer to standard FLX, complicated implants or other devices; 12 month outcomes remain pending."
   curation:
     status: curated
-    lastUpdated: "2026-10-03"
+    lastUpdated: "2026-11-02"
     sources:
       - https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S035B.pdf
       - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S043
       - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S074
-    notes: >-
-      2026-10-03 audit: Adds a directly attributable source and date to the graph milestone. Graph context and primary evidence links aligned
-      with version records. 2026-10-03 audit: Replaces editorial guidance with concrete product context; later-generation findings are not
-      transferred to earlier FLX devices.
+      - https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361
+    notes: "2026-10-03 audit: Adds a directly attributable source and date to the graph milestone. Graph context and primary evidence links aligned with version records. 2026-10-03 audit: Replaces editorial guidance with concrete product context; later-generation findings are not transferred to earlier FLX devices. November 2 original-study evidence added with cohort/generation/regimen limits; historical regulatory fields retained, not newly verified or expanded."
 
 - id: dev-amulet
   type: therapy
@@ -1946,23 +1942,18 @@
     - label: "Product page"
       url: "https://www.edwards.com/healthcare-professionals/products-services/transcatheter-heart/transcatheter-sapien-3"
   pulse: 9
-  description: >-
-    Family-level graph entry for SAPIEN 3 and SAPIEN 3 Ultra RESILIA balloon-expandable aortic valves. The intelligence catalog separates
-    those configurations, delivery profiles and indication expansions; evidence from one generation should not be applied to the other.
+  description: "Family-level graph entry for SAPIEN 3 and SAPIEN 3 Ultra RESILIA balloon-expandable aortic valves. The intelligence catalog separates those configurations, delivery profiles and indication expansions; evidence from one generation should not be applied to the other. PROGRESS reports a pooled TAVR strategy permitting SAPIEN 3/Ultra/Ultra RESILIA in selected patients aged ≥65 with moderate AS and at-risk features: 2 year death/HF event 16.7% versus 23.9% with surveillance. This is not a generation-specific result or a new authorization; mortality benefit was not established."
   curation:
     status: curated
-    lastUpdated: "2026-10-03"
+    lastUpdated: "2026-11-02"
     sources:
       - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031
       - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031S141
       - https://ir.edwards.com/news/news-details/2014/Edwards-Receives-European-Approval-for-Advanced-SAPIEN-3-Valve/default.aspx
       - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031S182
       - https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S182D.pdf
-    notes: >-
-      2026-10-03 audit: Broad graph lineage is intentionally distinct from exact version records. 2026-10-03 audit: Timeline now uses the
-      earliest primary-verified marketing authorization for the represented product lineage; day precision is not inferred from an
-      announcement. 2026-10-03 audit: Adds the product-specific asymptomatic severe-AS expansion; CMS CED policy and approval of other TAVR
-      systems are not inferred.
+      - https://www.nejm.org/doi/full/10.1056/NEJMoa2607326
+    notes: "2026-10-03 audit: Broad graph lineage is intentionally distinct from exact version records. 2026-10-03 audit: Timeline now uses the earliest primary-verified marketing authorization for the represented product lineage; day precision is not inferred from an announcement. 2026-10-03 audit: Adds the product-specific asymptomatic severe-AS expansion; CMS CED policy and approval of other TAVR systems are not inferred. November 2 original-study evidence added with cohort/generation/regimen limits; historical regulatory fields retained, not newly verified or expanded."
 
 - id: dev-evolut
   type: therapy
@@ -3335,13 +3326,16 @@
   treats: [cond-pvl]
   regulatoryStatus: unknown
   regulatoryDetail: Used for PVL closure in observational registries, generally off-label in the United States; no FDA approval specifically for PVL closure identified.
-  mechanism: Low-profile oval vascular plug deployed across selected paravalvular channels.
-  materials: []
+  mechanism: The PARADIGM APVL3 study describes an elliptical self-expanding braided-nitinol distal lobe with extended rim and a proximal disc on opposite sides of a surgical-valve PVL, plus a platinum orientation marker. Exact revision/current marketed-device equivalence is unestablished.
+  materials:
+    - name: Nitinol
+      role: PARADIGM APVL3 study braided mesh/lobe and disc
+      category: frame
+      source: https://www.jacc.org/doi/10.1016/j.jcin.2026.10.024
+      note: Study configuration only; exact revision and equivalence to historical Vascular Plug III/Paraclose are not established.
   materialsStatus: not_established
   links: [{ label: KISS multicenter registry, url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10863827/ }]
-  description: >-
-    Plug used in observational PVL closures; the KISS registry included 171 transcatheter procedures, most commonly using AVP III (140
-    procedures), with 78.9% technical success overall in the transcatheter arm.
+  description: Plug used in observational PVL closures; the KISS registry included 171 transcatheter procedures, most commonly using AVP III (140 procedures), with 78.9% technical success overall in the transcatheter arm. The prospective PARADIGM APVL3 study reports 200 attempts, primary composite success188/200 and30-day procedural success140/181; the measures have different definitions and denominators. This study does not establish equivalence to Paraclose.
   curation:
     status: curated
     lastUpdated: "2026-10-03"
@@ -5063,20 +5057,38 @@
     - cond-mr
   regulatoryStatus: investigational
   regulatoryDetail: Investigational; the company states it is not approved for sale in or outside the United States.
-  mechanism: >-
-    Transvenous, transseptal catheter delivery of an implant over the posterior mitral leaflet (registry). The company
-    describes a bovine-pericardium coaptation element on a nitinol frame laminated with ePTFE, with five anchors.
-  materials: []
-  description: "Early feasibility registrations include: EXPLORE-MRace in the United States and EXPLORE MRace (GE) at four centers in Tbilisi, Georgia. The company presents the system as an alternative to transcatheter edge-to-edge repair and mitral valve replacement; this is a sponsor claim. The separate Brazil record NCT06113354 (EXPLORE MRace BR) registers an estimated 10 participants; this target is not a treated count and exact device-generation equivalence across these studies is unresolved."
+  mechanism: In the EXPLORE MR study configuration, a transseptally delivered nitinol frame laminated with ePTFE supports a bovine-pericardial adaptive coaptation element; five cobalt-chromium helical anchors fix it to the posterior annulus. The element inflates in systole and deflates in diastole.
+  materials:
+    - name: Nitinol
+      role: Study frame
+      category: frame
+      source: https://www.jacc.org/doi/10.1016/j.jcin.2026.10.013
+      note: EXPLORE MR study build only; no numbered generation or bridge to other registry configurations.
+    - name: Expanded polytetrafluoroethylene
+      role: Study frame lamination
+      category: fabric
+      source: https://www.jacc.org/doi/10.1016/j.jcin.2026.10.013
+      note: EXPLORE MR study build only; no numbered generation or bridge to other registry configurations.
+    - name: Bovine pericardium
+      role: Study adaptive coaptation element
+      category: leaflet
+      source: https://www.jacc.org/doi/10.1016/j.jcin.2026.10.013
+      note: EXPLORE MR study build only; no numbered generation or bridge to other registry configurations.
+    - name: Cobalt-chromium
+      role: Five study helical anchors
+      category: anchor
+      source: https://www.jacc.org/doi/10.1016/j.jcin.2026.10.013
+      note: EXPLORE MR study build only; no numbered generation or bridge to other registry configurations.
+  description: "Early feasibility registrations include: EXPLORE-MRace in the United States and EXPLORE MRace (GE) at four centers in Tbilisi, Georgia. The company presents the system as an alternative to transcatheter edge-to-edge repair and mitral valve replacement; this is a sponsor claim. The separate Brazil record NCT06113354 (EXPLORE MRace BR) registers an estimated 10 participants; this target is not a treated count and exact device-generation equivalence across these studies is unresolved. The2026 EXPLORE MR paper describes78 treated patients across Brazil/Georgia, with one-year MR≤2 in29/32 assessed and KM mortality29.5%. The pooled cohort is not assigned to any one national registration."
   curation:
-    status: draft
+    status: curated
     lastUpdated: "2026-10-21"
     sources:
       - https://clinicaltrials.gov/api/v2/studies/NCT07517588
       - https://clinicaltrials.gov/api/v2/studies/NCT07796659
       - https://www.polaresmedical.com/mrace-technology/
       - https://www.polaresmedical.com/clinical-trials/
-    notes: Sponsor description from an undated page (metadata modified 2026-08-18); the page body does not name MRace. Device generations across studies are not stated. Implant composition is the sponsor's description and is not verified. ACCESS-MR in France (NCT07757607) is a separate pilot registration, not yet recruiting as of its last posted revision, with an estimated 20-person target and estimated November 2026 start. These are registration estimates, not actual enrollment, results or a proven bridge to the US, Georgia or Brazil configurations.
+    notes: Sponsor description from an undated page (metadata modified 2026-08-18); the page body does not name MRace. Device generations across studies are not stated. Implant composition is the sponsor's description and is not verified. ACCESS-MR in France (NCT07757607) is a separate pilot registration, not yet recruiting as of its last posted revision, with an estimated 20-person target and estimated November 2026 start. These are registration estimates, not actual enrollment, results or a proven bridge to the US, Georgia or Brazil configurations. The2026 original paper independently describes the EXPLORE MR study implant materials. This resolves composition only for that study build; US/GE/France generation and legal-entity equivalence remain unestablished. The paper cites BR NCT06113354 but reports a pooled78-patient cohort, distinct from its10-person registry target.
 - id: dev-polyvascular-pulmonary-valve
   type: therapy
   therapyType: device
@@ -6151,9 +6163,7 @@
     - cond-as
   regulatoryStatus: unknown
   regulatoryDetail: Marketing authorization for this exact configuration and application is not established.
-  description: >-
-    The original study describes a self-expanding transcatheter aortic valve with polyurethane leaflets and a sealing
-    skirt for severe symptomatic aortic stenosis.
+  description: The original study describes a self-expanding transcatheter aortic valve with polyurethane leaflets and a sealing skirt for severe symptomatic aortic stenosis. In the historical12-person first-in-human study, device success was11/12 and procedural success10/12; one delayed coronary obstruction was fatal and another valve was fully retrieved. No durability or current-generation benefit is established.
   materials:
     - name: Polyurethane
       role: Trileaflet valve
@@ -6276,9 +6286,7 @@
     - cond-hfref
   regulatoryStatus: unknown
   regulatoryDetail: Marketing authorization for this exact configuration and application is not established.
-  description: >-
-    The original paper describes a transcatheter papillary-muscle sling; Vsling I is registered in heart failure with
-    reduced left-ventricular ejection fraction and ventricular dilation.
+  description: The original paper describes a transcatheter papillary-muscle sling; Vsling I is registered in heart failure with reduced left-ventricular ejection fraction and ventricular dilation. An original written2026 Images in Intervention report describes a single EU case with papillary distance reduction28 to11mm and changes maintained over6months. This one-case observation does not establish population efficacy or a registry-cohort result.
   materials: []
   materialsStatus: not_established
   curation:
@@ -6325,9 +6333,7 @@
     - cond-pv
   regulatoryStatus: unknown
   regulatoryDetail: Authorization for the described application and software version is not established.
-  description: >-
-    A retrospective single-center study used ARTICOR to create CT-derived patient-specific holographic models for
-    planning Venus P-valve implantation.
+  description: A retrospective single-center study used ARTICOR to create CT-derived patient-specific holographic models for planning Venus P-valve implantation. In that26-patient cohort, holographic planning matched implanted diameter in13/26 and length in25/26. The study does not establish improved patient outcomes; exact software build and FDA-cleared planner equivalence remain unestablished.
   company: co-artiness
   curation:
     status: curated
@@ -6381,3 +6387,132 @@
       2026-07-20: case procedure and six-month follow-up narrative. NCT05809856: intervention, eligibility and status
       sections, last updated 2025-09-29. Accessed 2026-10-26. Single uncontrolled adult pulmonary case; no pediatric,
       aortic-position, regeneration or growth benefit is established. No source artwork reproduced.
+
+- id: rx-bbp717
+  type: therapy
+  therapyType: pharmaceutical
+  name: BBP-717
+  subtype: Development-stage monoclonal antibody amyloid depleter
+  company: co-bridgebio
+  treats:
+    - cond-attr-cm
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Development intent only; IND timing is a plan, not an authorization or trial start. No transfer of acoramidis
+    results or TTR-stabilizer evidence to BBP-717.
+  description: >-
+    BridgeBio nominated BBP-717 as a monoclonal-antibody development candidate intended to deplete amyloid deposits in
+    ATTR-CM and announced a planned IND submission in 2027. The announcement provides no human safety or efficacy result
+    for BBP-717.
+  mechanism: Sponsor-described monoclonal antibody intended to deplete existing amyloid deposits.
+  links:
+    - label: Original sponsor disclosure
+      url: >-
+        https://www.globenewswire.com/news-release/2026/10/29/3391801/0/en/bridgebio-reports-third-quarter-2026-financial-results-and-corporate-updates.html
+  curation:
+    status: curated
+    lastUpdated: "2026-11-02"
+    sources:
+      - >-
+        https://www.globenewswire.com/news-release/2026/10/29/3391801/0/en/bridgebio-reports-third-quarter-2026-financial-results-and-corporate-updates.html
+    notes: >-
+      Sponsor-described program only. Development intent only; IND timing is a plan, not an authorization or trial
+      start. No transfer of acoramidis results or TTR-stabilizer evidence to BBP-717.
+- id: dev-cephea-mitral-system
+  type: therapy
+  therapyType: device
+  name: Cephea Mitral Valve System
+  subtype: Transcatheter mitral valve replacement
+  company: co-abbott
+  treats:
+    - cond-mr
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    CROWN-MV exact NCT identifier and implant generation remain unestablished. Do not map the four separate Cephea
+    registry records by name alone; no treatment efficacy or current authorization inferred.
+  description: >-
+    Abbott announced initiation and first enrollment of CROWN-MV for its investigational Cephea Mitral Valve System in
+    symptomatic mitral valve disease. This is a trial-launch announcement, not a pivotal clinical readout; the separate
+    third-generation delivery-system feasibility presentation is not transferred to this configuration.
+  mechanism: Sponsor-described catheter-based mitral valve replacement system.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: Original sponsor disclosure
+      url: >-
+        https://abbott.mediaroom.com/2026-10-29-Abbott-initiates-pivotal-trial-for-Cephea-TM-device,-an-innovative-treatment-for-mitral-heart-valve-disease
+  curation:
+    status: curated
+    lastUpdated: "2026-11-02"
+    sources:
+      - >-
+        https://abbott.mediaroom.com/2026-10-29-Abbott-initiates-pivotal-trial-for-Cephea-TM-device,-an-innovative-treatment-for-mitral-heart-valve-disease
+    notes: >-
+      Sponsor-described program only. CROWN-MV exact NCT identifier and implant generation remain unestablished. Do not
+      map the four separate Cephea registry records by name alone; no treatment efficacy or current authorization
+      inferred.
+- id: dev-parasol-catheter-gel-laac
+  type: therapy
+  therapyType: device
+  name: Parasol investigational catheter-and-gel LAA closure program
+  subtype: Investigational LAA closure development platform
+  treats:
+    - cond-af
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Exact product model, gel composition, configuration, clinical stage and trial identity remain unestablished. No
+    quoted clinician/investor claims or metal-free assertion adopted.
+  description: >-
+    Parasol Med Tech describes an integrated catheter-and-gel LAA closure platform intended to adapt to variable
+    appendage anatomy. The company states that the device is investigational and has not been FDA cleared or approved;
+    no clinical outcomes are established in this disclosure.
+  mechanism: Sponsor-described integrated catheter-and-gel LAA closure approach.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: Original sponsor disclosure
+      url: https://parasolmedtech.com/parasol-medtech-2-75m-funding/
+  curation:
+    status: curated
+    lastUpdated: "2026-11-02"
+    sources:
+      - https://parasolmedtech.com/parasol-medtech-2-75m-funding/
+    notes: >-
+      Sponsor-described program only. Exact product model, gel composition, configuration, clinical stage and trial
+      identity remain unestablished. No quoted clinician/investor claims or metal-free assertion adopted.
+
+- id: dev-neochord-nexus
+  type: therapy
+  therapyType: device
+  subtype: Transcatheter mitral chordal reconstruction system
+  name: NeXuS transcatheter chordal repair
+  company: co-neochord
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    NCT07912229, first/last posted November 3, 2026, registers an unapproved FDA-regulated NeXus device; US EFS not yet
+    recruiting. Sponsor announcement of FDA study permission is not marketing authorization.
+  mechanism: >-
+    Transcatheter reconstruction of chordal support for primary degenerative mitral regurgitation due to chordal
+    elongation or rupture with mitral prolapse.
+  materials: []
+  materialsStatus: not_established
+  description: >-
+    NeoChord transcatheter chordal repair program associated with the Vincora keyword in the US registry. Distinct from
+    the transapical DS1000. Historical NeXuS descriptions and the US EFS configuration remain separately scoped.
+  links:
+    - label: Official US EFS registry
+      url: https://clinicaltrials.gov/api/v2/studies/NCT07912229
+    - label: Sponsor announcement listing
+      url: https://www.neochord.com/news/
+  curation:
+    status: curated
+    lastUpdated: "2026-11-03"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07912229
+      - https://www.neochord.com/wp-content/uploads/2021/11/NeoChord-PR-Proof.pdf
+      - https://www.neochord.com/news/
+    notes: >-
+      Current US study configuration and historical sponsor-described NeXuS are not established as dimensionally or
+      materially identical. No US marketing approval or clinical efficacy claim.

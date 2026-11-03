@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LAAO design review, Part 3 · VISUALIZE-SH</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root { --brand:#3b0b55; --ink:#1a0426; --link:#7d1ba8; --lilac:#f0d5ff; --bg:#f7f4f9; --surface:#fff;
+        --surface2:#fcfbfd; --border:#e6e0ec; --text2:#555; --text3:#999; }
+body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.62 'Source Sans 3','Source Sans Pro',Helvetica,Arial,sans-serif; }
+main { max-width:780px; margin:0 auto; padding:36px 16px 96px; background:var(--surface); }
+html, body { background:var(--surface); overflow-x:hidden; }
+h1,h2,h3 { font-family:'Open Sans',Helvetica,Arial,sans-serif; color:var(--brand); line-height:1.25; }
+h1 { font-size:2rem; margin:0.4rem 0 0.6rem; }
+h2 { font-size:1.32rem; margin-top:2.4rem; padding-top:1.2rem; border-top:1px solid var(--border); }
+a { color:var(--link); text-decoration:none; } a:hover { text-decoration:underline; }
+p a[href^="#ref-"], td a[href^="#ref-"], li a[href^="#ref-"] { font-size:0.86em; }
+blockquote { margin:1.4rem 0; padding:0.7rem 1rem; background:var(--lilac); border-left:4px solid var(--brand); border-radius:4px; }
+blockquote.sidebar { background:var(--surface2); border:1px solid var(--border); border-left:4px solid var(--link); font-size:0.94rem; }
+figure.fig { position:relative; width:min(1120px, calc(100vw - 32px)); left:50%; transform:translateX(-50%); margin:2rem 0; padding:14px 0 10px; background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+figure.fig figcaption { max-width:748px; margin-left:auto; margin-right:auto; }
+figure.fig svg { width:100%; height:auto; display:block; }
+figcaption { font-size:0.9rem; color:var(--text2); margin-top:0.6rem; line-height:1.5; }
+figcaption strong { color:var(--ink); }
+p.tcap { font-size:0.92rem; color:var(--text2); margin:2.2rem 0 0.5rem; } p.tcap strong { color:var(--ink); }
+div.tw { width:min(1060px, calc(100vw - 32px)); position:relative; left:50%; transform:translateX(-50%); overflow-x:auto; margin:0 0 1.8rem; }
+table { border-collapse:collapse; width:100%; min-width:760px; font-size:0.8rem; line-height:1.4; }
+thead th { background:var(--brand); color:#fff; font-weight:600; position:sticky; top:0; }
+th,td { border:1px solid var(--border); padding:6px 8px; vertical-align:top; text-align:left; }
+tbody tr:nth-child(even) td { background:var(--surface2); }
+td:first-child { font-weight:600; color:var(--ink); min-width:9rem; }
+.footnote { font-size:0.86rem; color:var(--text2); } .footnote hr { display:none; }
+ol li { overflow-wrap:anywhere; }
+h2#references + ol, h2:last-of-type + ol { font-size:0.82rem; color:var(--text2); padding-left:2.2rem; }
+hr { border:none; border-top:1px solid var(--border); margin:2rem 0; }
+em { color:inherit; }
+header.series { margin:0 0 1.6rem; padding:0 0 1rem; border-bottom:1px solid var(--border); }
+header.series h1 { font-size:1.35rem; margin:0; }
+nav.series-toc { margin:0 0 1rem; padding:0.9rem 1rem; background:var(--surface2); border:1px solid var(--border); border-left:4px solid var(--link); border-radius:4px; }
+nav.series-toc p { margin:0 0 0.4rem; font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:0.78rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--brand); }
+nav.series-toc ul { list-style:none; margin:0; padding:0; }
+nav.series-toc li { display:flex; gap:0.8rem; align-items:baseline; padding:0.25rem 0; }
+nav.series-toc li .toc-part { flex:0 0 3.6rem; font-weight:600; color:var(--text2); }
+nav.series-toc li a { flex:1 1 auto; }
+nav.series-toc li .toc-words { flex:0 0 auto; font-size:0.86rem; color:var(--text2); font-variant-numeric:tabular-nums; }
+nav.series-toc li.toc-total { margin-top:0.3rem; padding-top:0.5rem; border-top:1px solid var(--border); font-weight:600; }
+nav.series-toc li.toc-total span:nth-child(1) { flex:1 1 auto; }
+nav.series-toc p.toc-note { margin:0.6rem 0 0; font-family:inherit; font-size:0.84rem; font-weight:400; letter-spacing:0; text-transform:none; color:var(--text2); }
+section.part > .part-divider { display:flex; justify-content:space-between; align-items:baseline; margin:4.5rem 0 1.4rem; padding-top:0.6rem; border-top:5px solid var(--brand); font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:0.8rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--brand); }
+section.part > .part-divider a { font-weight:600; letter-spacing:0; text-transform:none; }
+p a[href^="#p"][href*="-ref-"], td a[href^="#p"][href*="-ref-"], li a[href^="#p"][href*="-ref-"] { font-size:0.86em; }
+
+.article-nav{display:flex;gap:24px;font-size:15px;margin-bottom:24px}.article-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:14px;color:var(--text2)}.editorial-tag{background:var(--brand);color:#fff;font-weight:700;padding:3px 9px;border-radius:4px}.interpretation-label{color:var(--text2);font-size:.92em}.tw:focus-visible,a:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+</style></head><body><main>
+<nav class="article-nav" aria-label="Site"><a href="/?mode=news">← News</a><a href="/?mode=atlas">Explore Atlas</a></nav>
+<p class="article-meta"><span class="editorial-tag">Editorial</span> <time datetime="2026-11-03">November 3, 2026</time> · VISUALIZE-SH</p>
+
+<h1 id="p3-part-3">Sizing, compression and radial force</h1>
+<p><em>Editorial series: Atrial appendage occlusion: four functions, many designs. Part 3 of 4.</em></p>
+<p><strong>Summary.</strong> This part reviews sizing and release rules, reported force data, nitinol mechanics, leak studies and computational models. Sizing rules differ by device and country, and the measured orifice can change after implantation. Compression is a geometric measurement; it does not directly establish wall force, holding or continuous contact around the perimeter. Superelastic nitinol can exert a low outward force while resisting further compression with a higher force. Studies associate leak with compression and implant alignment, but the 2025 compression comparison is observational. No measured force–diameter curves were found for WATCHMAN 2.5, FLX, FLX Pro or Amulet in the public sources reviewed.</p>
+
+<hr />
+<nav aria-label="In this series"><h2>In this series</h2>
+<ol>
+<li><a href="/editorials/laao-design-series-part-1/" target="_top">Device architectures and the allocation of four functions</a></li>
+<li><a href="/editorials/laao-design-series-part-2/" target="_top">Design changes between device generations and their documented outcomes</a></li>
+<li><a href="#p3-part-3" aria-current="page">Sizing, compression and radial force</a></li>
+<li><a href="/editorials/laao-design-series-part-4/" target="_top">Durability: testing, analysis and field experience</a></li>
+</ol></nav>
+
+<h2>Introduction</h2>
+<p>Left atrial appendage occlusion (LAAO) closes the left atrial appendage, a small pouch of the left atrium where thrombus (blood clot) is often found in patients with atrial fibrillation. It is used in some patients as an alternative to long-term anticoagulation to prevent stroke (Part 1). Most implants are self-expanding frames of nitinol, a nickel–titanium alloy, delivered by catheter. This series describes four functions: seal, hold, heal and deliver. Durability is a requirement under all four. Allocation assigns each function to a component. Coupling occurs when a change for one function also changes another. Four questions organize the analysis of a design change:</p>
+<ol>
+<li>Which feature becomes independently adjustable?</li>
+<li>Which sensitivity is reduced?</li>
+<li>Which dependency remains?</li>
+<li>What evidence would show whether the change helped?</li>
+</ol>
+<p>In the devices examined here, one compressed body performs both holding and sealing. Its fit therefore links these functions: a sizing change for one can affect the other. The sizing rules select an implant larger than the measured orifice or landing zone, so the wall compresses the implant. The orifice opens into the left atrium; the landing zone is the neck region where the implant sits. Compression is the reduction in diameter, expressed as a percentage of nominal size (the labeled diameter), at the implant's widest plane on echocardiography or computed tomography (CT). Studies use different reference diameters and imaging methods. At release, compression is used as a geometric indicator of fit. It does not directly measure radial force against the wall or anchoring resistance, and it does not establish continuous perimeter contact. These quantities require separate evidence.</p>
+<p>The discussion proceeds from sizing rules and observational leak data to force measurements, nitinol mechanics, sealing, simulation and possible release criteria. It asks whether compression can adequately represent both holding and sealing.</p>
+<h2>Sizing rules of three devices</h2>
+<p>WATCHMAN implants are laser-cut nitinol frames, whereas Amulet is a braided nitinol lobe and disc. Their rules share terms but differ in content (Table 1, Figure 1).</p>
+<p>The United States (US) instructions for use of WATCHMAN 2.5, approved there in 2015, contain two tables [<a href="#p3-ref-1">1</a>]. The first selects the implant from the maximum width of the ostium (the labels' word for the orifice), measured by ultrasound in four views, preferably transesophageal echocardiography (TEE). Each implant size covers orifices 2 to 4 mm narrower than itself. The second, a release check given as a guide, asks that the deployed implant measure 80 to 92 percent of its original diameter at the plane of maximum diameter [<a href="#p3-ref-1">1</a>]. The two tables thus refer to the orifice before implant and to the implant after it.<sup id="p3-fnref:n7"><a class="footnote-ref" href="#p3-fn:n7">1</a></sup></p>
+<p>For WATCHMAN FLX and FLX Pro, the US instructions contain one table and print no percentage [<a href="#p3-ref-2">2</a>, <a href="#p3-ref-3">3</a>]. The table's column is headed "Max LAA [left atrial appendage] Ostium Width and/or Deployed Closure Device Diameter". The table's ranges are exactly 70 to 90 percent of nominal size at every size, so the rule is proportional. That is 10 to 30 percent compression. The percentage appears, however, in other published sources [<a href="#p3-ref-4">4</a>, <a href="#p3-ref-5">5</a>] and, until September 2025, in Japanese package inserts [<a href="#p3-ref-6">6</a>]. The US instructions list four checks before release, the PASS criteria: position, anchor, size (compression) and seal [<a href="#p3-ref-2">2</a>].</p>
+<p>For Amulet, the US instructions call the checks before release the CLOSE criteria [<a href="#p3-ref-7">7</a>]. Their criterion for compression is qualitative: the lobe "should be slightly compressed and have good apposition" (contact) to the wall [<a href="#p3-ref-7">7</a>]. The sizing chart sets a fixed oversize over the landing zone, where the lobe sits. The oversize is 3 to 5 mm for smaller lobes and 3 to 6 mm for larger ones [<a href="#p3-ref-7">7</a>]. As a fraction of the lobe, that is 19 to 31 percent at 16 mm and 9 to 18 percent at 34 mm.</p>
+<figure class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 645" width="1200" height="645" role="img" aria-labelledby="p3-f1-fig-title p3-f1-fig-desc" font-family="'Source Sans Pro','Source Sans 3','Helvetica Neue',Arial,sans-serif">
+<title id="p3-f1-fig-title">What each sizing table implies, by size</title>
+<desc id="p3-f1-fig-desc">Range bars of the compression implied by each sizing table, as percent of nominal implant size, for WATCHMAN 2.5 (about 9.5 to 19.0 percent at 21 mm, falling to 6.1 to 12.1 percent at 33 mm), WATCHMAN FLX and FLX Pro (10 to 30 percent at every size from 20 to 35 mm, and at 40 mm for FLX Pro only) and the Amulet lobe (18.8 to 31.3 percent at 16 mm, falling to 8.8 to 17.6 percent at 34 mm). These are selection ranges only; the separate WATCHMAN 2.5 release check on the deployed device, 80 to 92 percent of nominal, is a different criterion and is not drawn.</desc>
+<rect x="0" y="0" width="1200" height="645" fill="#ffffff"/>
+<line x1="64" y1="506" x2="1160" y2="506" stroke="#999999" stroke-width="1"/>
+<line x1="64" y1="448.86" x2="1160" y2="448.86" stroke="#e4dded" stroke-width="1"/>
+<line x1="64" y1="391.71" x2="1160" y2="391.71" stroke="#e4dded" stroke-width="1"/>
+<line x1="64" y1="334.57" x2="1160" y2="334.57" stroke="#e4dded" stroke-width="1"/>
+<line x1="64" y1="277.43" x2="1160" y2="277.43" stroke="#e4dded" stroke-width="1"/>
+<line x1="64" y1="220.29" x2="1160" y2="220.29" stroke="#e4dded" stroke-width="1"/>
+<line x1="64" y1="163.14" x2="1160" y2="163.14" stroke="#e4dded" stroke-width="1"/>
+<line x1="64" y1="106" x2="1160" y2="106" stroke="#e4dded" stroke-width="1"/>
+<line x1="64" y1="506" x2="64" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="103.14" y1="506" x2="103.14" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="142.29" y1="506" x2="142.29" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="181.43" y1="506" x2="181.43" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="220.57" y1="506" x2="220.57" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="259.71" y1="506" x2="259.71" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="298.86" y1="506" x2="298.86" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="338" y1="506" x2="338" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="377.14" y1="506" x2="377.14" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="416.29" y1="506" x2="416.29" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="455.43" y1="506" x2="455.43" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="494.57" y1="506" x2="494.57" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="533.71" y1="506" x2="533.71" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="572.86" y1="506" x2="572.86" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="612" y1="506" x2="612" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="651.14" y1="506" x2="651.14" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="690.29" y1="506" x2="690.29" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="729.43" y1="506" x2="729.43" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="768.57" y1="506" x2="768.57" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="807.71" y1="506" x2="807.71" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="846.86" y1="506" x2="846.86" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="886" y1="506" x2="886" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="925.14" y1="506" x2="925.14" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="964.29" y1="506" x2="964.29" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="1003.43" y1="506" x2="1003.43" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="1042.57" y1="506" x2="1042.57" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="1081.71" y1="506" x2="1081.71" y2="513" stroke="#999999" stroke-width="1"/>
+<line x1="1120.86" y1="506" x2="1120.86" y2="510" stroke="#999999" stroke-width="1"/>
+<line x1="1160" y1="506" x2="1160" y2="513" stroke="#999999" stroke-width="1"/>
+<rect x="333.5" y="288.86" width="9" height="108.57" rx="4.5" fill="#13808a"><title>WATCHMAN 2.5, 21 mm: 9.5–19.0%</title></rect>
+<rect x="445.43" y="315.14" width="9" height="96" rx="4.5" fill="#13808a"><title>WATCHMAN 2.5, 24 mm: 8.3–16.7%</title></rect>
+<rect x="562.86" y="336.86" width="9" height="84.57" rx="4.5" fill="#13808a"><title>WATCHMAN 2.5, 27 mm: 7.4–14.8%</title></rect>
+<rect x="685.79" y="354" width="9" height="75.43" rx="4.5" fill="#13808a"><title>WATCHMAN 2.5, 30 mm: 6.7–13.3%</title></rect>
+<rect x="803.21" y="367.71" width="9" height="68.57" rx="4.5" fill="#13808a"><title>WATCHMAN 2.5, 33 mm: 6.1–12.1%</title></rect>
+<rect x="288.86" y="163.14" width="9" height="228.57" rx="4.5" fill="#3b0b55"><title>WATCHMAN FLX / FLX Pro, 20 mm: 10.0–30.0%</title></rect>
+<rect x="456.43" y="163.14" width="9" height="228.57" rx="4.5" fill="#3b0b55"><title>WATCHMAN FLX / FLX Pro, 24 mm: 10.0–30.0%</title></rect>
+<rect x="573.86" y="163.14" width="9" height="228.57" rx="4.5" fill="#3b0b55"><title>WATCHMAN FLX / FLX Pro, 27 mm: 10.0–30.0%</title></rect>
+<rect x="719.43" y="163.14" width="9" height="228.57" rx="4.5" fill="#3b0b55"><title>WATCHMAN FLX / FLX Pro, 31 mm: 10.0–30.0%</title></rect>
+<rect x="881.5" y="163.14" width="9" height="228.57" rx="4.5" fill="#3b0b55"><title>WATCHMAN FLX / FLX Pro, 35 mm: 10.0–30.0%</title></rect>
+<rect x="1078.31" y="164.24" width="6.8" height="226.37" rx="3.4" fill="#ffffff" stroke="#3b0b55" stroke-width="2.2"><title>WATCHMAN FLX / FLX Pro, 40 mm: 10.0–30.0% (FLX Pro only)</title></rect>
+<rect x="137.79" y="148.29" width="9" height="142.86" rx="4.5" fill="#b8326b"><title>Amulet lobe, 16 mm: 18.8–31.3%</title></rect>
+<rect x="216.07" y="188.29" width="9" height="126.86" rx="4.5" fill="#b8326b"><title>Amulet lobe, 18 mm: 16.7–27.8%</title></rect>
+<rect x="299.86" y="220.29" width="9" height="114.29" rx="4.5" fill="#b8326b"><title>Amulet lobe, 20 mm: 15.0–25.0%</title></rect>
+<rect x="372.64" y="246.57" width="9" height="104" rx="4.5" fill="#b8326b"><title>Amulet lobe, 22 mm: 13.6–22.7%</title></rect>
+<rect x="490.07" y="231.71" width="9" height="137.14" rx="4.5" fill="#b8326b"><title>Amulet lobe, 25 mm: 12.0–24.0%</title></rect>
+<rect x="607.5" y="261.43" width="9" height="122.29" rx="4.5" fill="#b8326b"><title>Amulet lobe, 28 mm: 10.7–21.4%</title></rect>
+<rect x="730.43" y="284.29" width="9" height="110.86" rx="4.5" fill="#b8326b"><title>Amulet lobe, 31 mm: 9.7–19.4%</title></rect>
+<rect x="842.36" y="304.86" width="9" height="100.57" rx="4.5" fill="#b8326b"><title>Amulet lobe, 34 mm: 8.8–17.6%</title></rect>
+<text x="54" y="511" font-size="15" font-weight="400" fill="#555555" text-anchor="end">0%</text>
+<text x="54" y="453.86" font-size="15" font-weight="400" fill="#555555" text-anchor="end">5%</text>
+<text x="54" y="396.71" font-size="15" font-weight="400" fill="#555555" text-anchor="end">10%</text>
+<text x="54" y="339.57" font-size="15" font-weight="400" fill="#555555" text-anchor="end">15%</text>
+<text x="54" y="282.43" font-size="15" font-weight="400" fill="#555555" text-anchor="end">20%</text>
+<text x="54" y="225.29" font-size="15" font-weight="400" fill="#555555" text-anchor="end">25%</text>
+<text x="54" y="168.14" font-size="15" font-weight="400" fill="#555555" text-anchor="end">30%</text>
+<text x="54" y="111" font-size="15" font-weight="400" fill="#555555" text-anchor="end">35%</text>
+<text x="64" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">14</text>
+<text x="142.29" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">16</text>
+<text x="220.57" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">18</text>
+<text x="298.86" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">20</text>
+<text x="377.14" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">22</text>
+<text x="455.43" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">24</text>
+<text x="533.71" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">26</text>
+<text x="612" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">28</text>
+<text x="690.29" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">30</text>
+<text x="768.57" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">32</text>
+<text x="846.86" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">34</text>
+<text x="925.14" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">36</text>
+<text x="1003.43" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">38</text>
+<text x="1081.71" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">40</text>
+<text x="1160" y="532" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">42</text>
+<text x="24" y="78" font-size="15" font-weight="700" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">Compression implied by the sizing table (% of nominal size)</text>
+<text x="612" y="564" font-size="15" font-weight="700" fill="#1a0426" text-anchor="middle" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">Nominal implant size (mm)</text>
+<text x="1081.71" y="154.14" font-size="15" font-weight="400" fill="#555555" text-anchor="middle">FLX Pro only</text>
+<rect x="24" y="21" width="9" height="18" rx="4.5" fill="#13808a"/><text x="45" y="35.2" font-size="15" font-weight="400" fill="#555555" text-anchor="start">WATCHMAN 2.5 (ostium selection table, fixed 2–4 mm)</text><rect x="421.1" y="21" width="9" height="18" rx="4.5" fill="#3b0b55"/><text x="442.1" y="35.2" font-size="15" font-weight="400" fill="#555555" text-anchor="start">WATCHMAN FLX / FLX Pro (table = 70–90% of nominal)</text><rect x="816.85" y="21" width="9" height="18" rx="4.5" fill="#b8326b"/><text x="837.85" y="35.2" font-size="15" font-weight="400" fill="#555555" text-anchor="start">Amulet lobe (fixed 3–5 or 3–6 mm over landing zone)</text>
+<text x="24" y="604" font-size="15" font-weight="400" fill="#777777" text-anchor="start">Derived from US sizing tables; percent = (nominal − table bound) / nominal. Bars that share a size sit side by side.</text><text x="24" y="625" font-size="15" font-weight="400" fill="#777777" text-anchor="start">Bars are the sizing tables' ranges; WATCHMAN 2.5's release check on the deployed device (80–92% of nominal) is a separate criterion.</text>
+</svg>
+<figcaption><strong>Figure 1. Compression implied by each sizing table, by implant size.</strong> Each bar shows the compression implied by a US sizing table, as a percentage of nominal implant size. WATCHMAN 2.5 and Amulet use rules fixed in millimeters, so their ranges narrow toward larger sizes. Amulet's upper bound steps up once, at 25 mm. FLX and FLX Pro use a proportional rule. The ranges are those printed in each sizing table. WATCHMAN 2.5's release check on the deployed implant is a separate criterion. Derived from the instructions for use [<a href="#p3-ref-1">1</a>–<a href="#p3-ref-3">3</a>, <a href="#p3-ref-7">7</a>].</figcaption></figure>
+
+<p>Proportional and fixed-millimeter rules both specify geometric ranges. Neither establishes how force or perimeter contact varies with implant size, and the public documents do not explain how the tables were derived. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>Practice departs from the fixed-millimeter rule. In the US registry, 64.4 percent of 68,456 WATCHMAN 2.5 implants were larger than the selection table recommended [<a href="#p3-ref-8">8</a>]. Oversizing was associated with lower odds of a composite of device migration or device embolization (detachment of the implant into the bloodstream) and significant leak, mainly through less leak [<a href="#p3-ref-8">8</a>].</p>
+<p class="tcap"><strong>Table 1. Sizing reference, release check and implied compression, by device.</strong> Each row gives the sizing reference and the release check as printed, with the compression that each table implies. Percentages are derived as (nominal − table bound) / nominal. EU, European Union; 2D and 3D, two- and three-dimensional. Sources: [<a href="#p3-ref-1">1</a>–<a href="#p3-ref-4">4</a>, <a href="#p3-ref-6">6</a>, <a href="#p3-ref-7">7</a>, <a href="#p3-ref-9">9</a>–<a href="#p3-ref-11">11</a>].</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Sizing reference</th>
+<th>Release check, as printed</th>
+<th>Implied compression (% of nominal)</th>
+<th>Oversize (mm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WATCHMAN 2.5</td>
+<td>Maximum ostium width, TEE recommended, four views (US)</td>
+<td>Deployed diameter 80–92% of original (US); "8–20%" (Japan)</td>
+<td>6–19; falls with size</td>
+<td>2–4 at every size</td>
+</tr>
+<tr>
+<td>WATCHMAN FLX</td>
+<td>"Max LAA Ostium Width and/or Deployed Closure Device Diameter", TEE (US)</td>
+<td>No percentage (US); 10–30% (Japan to 2025; review table of manufacturer criteria)</td>
+<td>10–30 at every size</td>
+<td>2–6 (20 mm) to 3.5–10.5 (35 mm)</td>
+</tr>
+<tr>
+<td>WATCHMAN FLX Pro</td>
+<td>As FLX, plus 40 mm; markers at the plane of maximum diameter</td>
+<td>As FLX</td>
+<td>10–30 at every size</td>
+<td>Up to 4–12 (40 mm)</td>
+</tr>
+<tr>
+<td>Amulet</td>
+<td>Landing zone at least 10–12 mm from the orifice; maximum width on 2D TEE, mean on 3D TEE or CT</td>
+<td>Lobe "slightly compressed", "good apposition" (US)</td>
+<td>9–31; lower bound falls with size</td>
+<td>3–5 or 3–6</td>
+</tr>
+<tr>
+<td>Amulet 360</td>
+<td>Average landing zone (EU)</td>
+<td>Lobe "compressed and in full contact" (EU)</td>
+<td>Not derivable; chart printed as an image</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Compression beyond 30 percent: one observational study</h2>
+<p>A 2025 two-center study examined patients with WATCHMAN FLX implants [<a href="#p3-ref-12">12</a>]. Compression exceeded 30 percent in 61 patients, above the 10–30 percent range listed in a manufacturer-criteria review and printed in Japanese package inserts until 2025 (Table 1) [<a href="#p3-ref-4">4</a>, <a href="#p3-ref-6">6</a>]. At two months, peridevice leak (flow around the edge of the implant) was present in 8.2 percent of these patients and 32.6 percent of the 175 patients with lower compression [<a href="#p3-ref-12">12</a>]. Because compression was not assigned, this was an observational comparison. Procedural complications were too few to judge safety.<sup id="p3-fnref:n1"><a class="footnote-ref" href="#p3-fn:n1">2</a></sup> The observed difference establishes neither a better compression target nor a mechanism for the difference in leak.</p>
+<p>These leak findings matter because peridevice leak has been associated with clinical outcomes. A US registry compared small leaks, up to 5 mm, after WATCHMAN with no leak [<a href="#p3-ref-13">13</a>]. Small leaks were associated with modestly more stroke, transient ischemic attack or systemic embolism (adjusted hazard ratio 1.15) [<a href="#p3-ref-13">13</a>]. In the Amulet pivotal trial, leaks of 3 mm or more were associated with more stroke, systemic embolism or cardiovascular death (hazard ratio 1.66) [<a href="#p3-ref-14">14</a>]. Both findings are associations; the studies used different leak thresholds and outcomes [<a href="#p3-ref-13">13</a>, <a href="#p3-ref-14">14</a>].<sup id="p3-fnref:n4"><a class="footnote-ref" href="#p3-fn:n4">3</a></sup></p>
+<h2>Published data on radial force</h2>
+<p>Radial force describes interaction between implant and wall: the outward force as the implant expands, or its resistance to further compression. The Food and Drug Administration (FDA) summaries for WATCHMAN 2.5, FLX and Amulet name force tests and report each result as "Pass". None, however, gives a value, a limit, a fixture, a size or a test temperature [<a href="#p3-ref-15">15</a>–<a href="#p3-ref-17">17</a>].<sup id="p3-fnref:n8"><a class="footnote-ref" href="#p3-fn:n8">4</a></sup></p>
+<p>One bench study measured seven occluder systems across their sizing ranges [<a href="#p3-ref-18">18</a>]. The force needed to pull an implant out (pull-out force) correlated with the number of anchoring hooks per millimeter of circumference (r = 0.87) [<a href="#p3-ref-18">18</a>]. The authors concluded that stability depends more on anchoring structures than on radial force [<a href="#p3-ref-18">18</a>].<sup id="p3-fnref:n2"><a class="footnote-ref" href="#p3-fn:n2">5</a></sup> A computational model of a 25 mm Amulet lobe gives roughly 1 N of added force per millimeter of diameter reduction [<a href="#p3-ref-19">19</a>].<sup id="p3-fnref:n3"><a class="footnote-ref" href="#p3-fn:n3">6</a></sup> By contrast, no measured force–diameter curve for WATCHMAN 2.5, FLX, FLX Pro or Amulet was found in public sources.</p>
+<h2>Relation between compression and radial force</h2>
+<p>Superelasticity helps explain why compression does not directly measure force. A superelastic alloy recovers large deformations through a reversible change in crystal structure. As nitinol is compressed, it transforms at nearly constant stress along the upper plateau of its loading curve (stress against strain). On release, it transforms back at a lower stress along the lower plateau of its unloading curve. Duerig and colleagues summarized this behavior: "the force applied by a superelastic device is determined by temperature, not strain as in conventional materials" [<a href="#p3-ref-20">20</a>].</p>
+<p>A self-expanding implant opens as it unloads from the delivery sheath, until it meets the wall. For a superelastic frame operating on its transformation plateau, outward force can remain low while resistance to further compression is much higher. Duerig and colleagues call this response biased stiffness (Figure 2) [<a href="#p3-ref-20">20</a>, <a href="#p3-ref-21">21</a>]. Thus, a frame can press lightly on the wall while resisting deformation.</p>
+<figure class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 536" width="1200" height="536" role="img" aria-labelledby="p3-f2-fig-title p3-f2-fig-desc" font-family="'Source Sans Pro','Source Sans 3','Helvetica Neue',Arial,sans-serif">
+<title id="p3-f2-fig-title">Radial force against diameter for a superelastic frame, schematic</title>
+<desc id="p3-f2-fig-desc">An illustrative, not-to-scale schematic of a whole-device radial force curve for a superelastic frame against its diameter (not a material curve, not measured data), from crimped in a sheath on the left to nominal on the right, with no values on the axes. Compressing the frame follows an upper loading curve with a flat plateau; letting it expand follows a lower unloading curve with a lower plateau, so the two curves enclose a loop. Point C on the unloading curve marks contact with the appendage wall, inside a shaded, illustrative release window near the nominal end. From C the lower path, along the unloading plateau, is the chronic outward force; a steeper short branch rising from C is the radial resistive force, which resists further compression.</desc>
+<rect x="0" y="0" width="1200" height="536" fill="#ffffff"/>
+<rect x="673.24" y="52" width="291.18" height="388" fill="#f0d5ff" fill-opacity="0.5"/>
+<line x1="96" y1="440" x2="96" y2="58" stroke="#999999" stroke-width="1.6"/>
+<polygon points="96,50 100.2,60 91.8,60" fill="#999999" stroke="#999999" stroke-width="1" stroke-linejoin="round"/>
+<line x1="96" y1="440" x2="1138" y2="440" stroke="#999999" stroke-width="1.6"/>
+<polygon points="1150,440 1140,444.2 1140,435.8" fill="#999999" stroke="#999999" stroke-width="1" stroke-linejoin="round"/>
+<line x1="120" y1="440" x2="120" y2="447" stroke="#999999" stroke-width="1.2"/>
+<line x1="1110" y1="440" x2="1110" y2="447" stroke="#999999" stroke-width="1.2"/>
+<line x1="818.82" y1="351.08" x2="818.82" y2="440" stroke="#999999" stroke-width="1.2" stroke-dasharray="4 3"/>
+<path d="M1110,440 L1045.49,264.53 Q1037.21,242 1013.22,241.05 L231.33,209.95 Q207.35,209 191.47,191 L120,110" fill="none" stroke="#3b0b55" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120,110 L198.18,299.02 Q207.35,321.2 231.34,322.06 L1013.22,350.04 Q1037.21,350.9 1052.39,369.49 L1110,440" fill="none" stroke="#3b0b55" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="527.65,221.74 539.84,217.22 539.44,227.21" fill="#3b0b55" stroke="#3b0b55" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="440.29,329.54 428.12,334.1 428.48,324.11" fill="#3b0b55" stroke="#3b0b55" stroke-width="1" stroke-linejoin="round"/>
+<line x1="818.82" y1="343.08" x2="992.81" y2="349.31" stroke="#b8326b" stroke-width="5" stroke-linecap="round"/>
+<polygon points="1000.81,349.6 986.59,355.59 987.05,342.6" fill="#b8326b" stroke="#b8326b" stroke-width="1" stroke-linejoin="round"/>
+<path d="M818.82,343.08 Q814.82,303.08 794.82,279.08" fill="none" stroke="#13808a" stroke-width="5" stroke-linecap="round"/>
+<polygon points="792.82,273.08 806.34,280.53 795.86,288.22" fill="#13808a" stroke="#13808a" stroke-width="1" stroke-linejoin="round"/>
+<circle cx="818.82" cy="343.08" r="7" fill="#3b0b55" stroke="#ffffff" stroke-width="2.2"/>
+<text x="818.82" y="80" font-size="16" font-weight="600" fill="#1a0426" text-anchor="middle">release window</text>
+<text x="818.82" y="101" font-size="16" font-weight="400" fill="#555555" text-anchor="middle">(illustrative)</text>
+<text x="24" y="34" font-size="15" font-weight="700" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">Radial force (illustrative)</text>
+<text x="120" y="469" font-size="16" font-weight="400" fill="#555555" text-anchor="middle">crimped in sheath</text>
+<text x="1110" y="469" font-size="16" font-weight="400" fill="#555555" text-anchor="middle">nominal</text>
+<text x="615" y="469" font-size="15" font-weight="700" fill="#1a0426" text-anchor="middle" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">Implant diameter</text>
+<text x="483.97" y="200" font-size="16" font-weight="400" fill="#555555" text-anchor="middle">loading: compressing into the sheath</text>
+<text x="411.18" y="360.49" font-size="16" font-weight="400" fill="#555555" text-anchor="middle">unloading: expanding after release</text>
+<text x="832.82" y="376.08" font-size="16" font-weight="600" fill="#b8326b" text-anchor="start">chronic outward force (COF)</text>
+<text x="832.82" y="397.08" font-size="16" font-weight="400" fill="#555555" text-anchor="start">follows the unloading plateau</text>
+<text x="772.82" y="291.08" font-size="16" font-weight="600" fill="#13808a" text-anchor="end">radial resistive force (RRF)</text>
+<text x="772.82" y="312.08" font-size="16" font-weight="400" fill="#555555" text-anchor="end">resists further compression</text>
+<text x="834.82" y="287.08" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">biased stiffness</text>
+<text x="833.82" y="326.08" font-size="16"><tspan font-weight="700" fill="#1a0426" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif" font-size="18">C</tspan><tspan font-weight="400" fill="#555555">  contact</tspan></text>
+<text x="24" y="516" font-size="15" font-weight="400" fill="#777777" text-anchor="start">Illustrative whole-device curve, not measured data; concept after Duerig et al. 1999.</text>
+</svg>
+<figcaption><strong>Figure 2. Illustrative force–diameter curve of a superelastic frame.</strong> The curve is an illustrative whole-device curve, not measured data. The frame opens along its unloading curve until it meets the wall at point C. It then presses outward along the lower plateau and resists further compression along a steeper path. These loading and unloading paths illustrate biased stiffness: low outward force during opening combined with greater resistance to renewed compression. The shaded release window, the range of compression accepted at release, is drawn on the plateau for illustration. Where the release window of any device lies on its own curve is not disclosed. Schematic; concept after Duerig and colleagues [<a href="#p3-ref-20">20</a>].</figcaption></figure>
+
+<p>The material plateau alone does not determine an implant's force–diameter curve. Geometry, leverage at hinges and crossings, end constraints, contact and loading history also matter. The plateau nevertheless shows why compression is an incomplete predictor of force. First, local strain determines how far a frame's most strained regions, such as cage hinges or braid crossings, have transformed. The diameter ratio does not fix local strain by itself. If these regions transform across the release window (Figure 2), outward force may change little. If they remain elastic, force rises with each millimeter of compression, as in the linear-elastic model of the Amulet lobe [<a href="#p3-ref-19">19</a>]. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>Second, a percentage does not account for implant size. Ten to thirty percent of a 40 mm implant is twice the interference represented by the same percentage of a 20 mm implant. If strut section and number stayed constant across sizes, longer struts in the larger frame would bend more easily, and the same percentage would produce less outward force. Public sources do not state whether section and strut count scale with size. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>Third, force depends on temperature. Heat treatment sets the austenite-finish temperature (Af), above which the alloy is fully in its high-temperature austenite phase. Both outward and resistive force depend on Af and increase as body temperature rises further above it [<a href="#p3-ref-20">20</a>, <a href="#p3-ref-22">22</a>].<sup id="p3-fnref:n6"><a class="footnote-ref" href="#p3-fn:n6">7</a></sup> Frames with the same geometry but different heat treatments could therefore meet the same compression criterion and exert different forces. The FDA summaries, US labels and Amulet 360 summary do not state Af. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>In the bench study, holding depended more on anchors than on radial force [<a href="#p3-ref-18">18</a>]. A simulation study of FLX deployment found a bare-frame model, without fabric or anchors, unstable in 2 of 12 scenarios and concluded that neglecting the anchors "is not acceptable" [<a href="#p3-ref-23">23</a>]. In US registry data, implants that migrated or embolized in hospital had a smaller difference between implant size and orifice width (median 4 versus 5 mm) [<a href="#p3-ref-24">24</a>]. In this reading, compression affects holding partly through the anchors: how far they engage the wall, and at what angle. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<h2>Compression, contact and seal</h2>
+<p>A peridevice seal requires continuous contact between implant and wall around the full orifice, which is usually oval (Part 1). Flow through the implant fabric is a separate issue. Compression alone does not establish that perimeter contact. In matched comparisons from the Amulet pivotal trial, compression did not differ significantly between patients with severe leaks and leak-free controls in either arm, although the groups were small [<a href="#p3-ref-25">25</a>]. In the WATCHMAN 2.5 arm, maximum compression against the native landing zone was 25.6 percent in severe-leak cases and 22.6 percent in matched controls (P = 0.133) [<a href="#p3-ref-25">25</a>]. Severe leaks, over 5 mm, after either device occurred mostly with off-axis implants, tilted relative to the appendage axis, or with uncovered appendage lobes [<a href="#p3-ref-25">25</a>]. In a CT cohort of Amulet and Amplatzer Cardiac Plug patients, lobe compression alone was associated with a patent (open) appendage. The association was absent in a model that included lobe–appendage alignment; misalignment had a hazard ratio of 38.17 [<a href="#p3-ref-26">26</a>]. The 2025 guideline of the Society for Cardiovascular Angiography and Interventions and the Heart Rhythm Society lists lower compression among risk factors for leak [<a href="#p3-ref-27">27</a>]. The 2025 two-center FLX study also found less leak at higher compression [<a href="#p3-ref-12">12</a>]. Together, these findings relate compression to seal, while showing that alignment and orifice shape also matter.</p>
+<p>The orifice can also change after implantation. In the WATCH-DUAL study of 104 WATCHMAN 2.5 and FLX implants, CT about seven weeks after implant showed that the landing zone had enlarged from 290 to 446 mm² [<a href="#p3-ref-28">28</a>]. It had also become rounder. Although all patients met a minimum compression above 10 percent on transesophageal echocardiography (TEE) at release, most were below that level on CT. Leak was detected in 37 percent on CT and 5 percent on TEE at implant; this comparison spans imaging modality and time [<a href="#p3-ref-28">28</a>].<sup id="p3-fnref:n5"><a class="footnote-ref" href="#p3-fn:n5">8</a></sup> The release check is also made while the delivery cable remains attached [<a href="#p3-ref-2">2</a>]. A FLX simulation study found that the attached implant may sit differently after release [<a href="#p3-ref-29">29</a>].</p>
+<p>Compression is a diameter ratio measured in a few echocardiographic planes on implant day, while the implant remains attached. It samples one determinant of contact at one time point. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>Applied to this case, the four framework questions identify implant size relative to the orifice as the adjustable feature. The release compression check is intended to reduce the sensitivity of holding and sealing to fit. A remaining dependency is continuous contact around an orifice that changes after implantation. Evidence of benefit would require follow-up data on leak and device embolization after the orifice has changed. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<h2>Validation of computational models</h2>
+<p>Patient-specific simulation is intended to replace sizing rules with a prediction. Validation to date has focused on geometry, the quantity used by the rules (Table 2). FDA granted the first such software, FEops HEARTguide, a De Novo authorization, FDA's route for novel devices [<a href="#p3-ref-30">30</a>]. Before the authorization, the software's prediction of the maximum deployed diameter of WATCHMAN had differed from post-procedural CT by a mean of −1.9 percent in 60 cases [<a href="#p3-ref-30">30</a>]. PREDICT-LAA is the only randomized trial of computational simulation found [<a href="#p3-ref-31">31</a>]. The primary endpoint was leakage of contrast agent beyond the lobe or device-related thrombus on CT [<a href="#p3-ref-31">31</a>]. CT-based simulation for Amulet did not meet this endpoint against standard planning (28.9 versus 41.8 percent, P = 0.08) [<a href="#p3-ref-31">31</a>]. Simulation-guided planning increased complete closure and reduced the number of devices and repositionings [<a href="#p3-ref-31">31</a>].</p>
+<p>Available validations show close prediction of deformation. For individual patients, model predictions have been compared with observed leak in one small study of 30 patients, but not with anchoring (Table 2). PREDICT-LAA tested simulation-guided planning rather than the model's leak predictions. Such predictions also require inputs that remain poorly characterized: the stiffness of an individual appendage wall [<a href="#p3-ref-29">29</a>] and the implant's unpublished force curve.</p>
+<p class="tcap"><strong>Table 2. Studies of computational simulation and the quantities they compared.</strong> Each row gives the device and size of the study, the quantity compared with the model, and whether leak or a clinical outcome was tested. De Novo and 510(k) are FDA's routes to market for novel devices and for devices substantially equivalent to one already marketed. Sources: [<a href="#p3-ref-23">23</a>, <a href="#p3-ref-30">30</a>–<a href="#p3-ref-34">34</a>].</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Study</th>
+<th>Device and size of study</th>
+<th>Compared with</th>
+<th>Result</th>
+<th>Leak or outcome tested</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FEops HEARTguide, De Novo DEN200030</td>
+<td>WATCHMAN; 60 cases</td>
+<td>Maximum diameter on post-procedural CT</td>
+<td>Bias −1.9%; limits +7.4%, −11.2%; 90.6% of qualitative grades acceptable or better (printed as 169/180)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>HEARTguide, 510(k) K214066</td>
+<td>FLX and Amulet models added</td>
+<td>Same method</td>
+<td>No numeric results printed</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Bavo 2020</td>
+<td>15 Amulet, 15 WATCHMAN</td>
+<td>Frame deformation on post-procedural CT</td>
+<td>R² ≥ 0.91; apposition "correlated well with observed leaks"</td>
+<td>Leak, in 30 patients</td>
+</tr>
+<tr>
+<td>Ranard 2022</td>
+<td>22 FLX, blinded</td>
+<td>Implanted size on 3D TEE; position on post-procedural CT</td>
+<td>Size within the simulated set in 16 of 22</td>
+<td>No leaks occurred</td>
+</tr>
+<tr>
+<td>PREDICT-LAA (De Backer 2023)</td>
+<td>Amulet; 200 randomized</td>
+<td>Leak or thrombus on 90-day CT</td>
+<td>28.9% vs 41.8%, P = 0.08; complete closure 61.1% vs 44.0%</td>
+<td>Yes; primary endpoint not met</td>
+</tr>
+<tr>
+<td>Bonfanti 2026</td>
+<td>FLX; 3 anatomies, 12 scenarios</td>
+<td>Model variants</td>
+<td>Without hooks, unstable in 2 of 12</td>
+<td>No</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Possible measures for a release criterion: a perspective</h2>
+<p>Sizing rules appear in sponsor labels. The studies reviewed here suggest possible additional measures at three levels. <em class="interpretation-label">Author’s perspective, not a prescription.</em></p>
+<ul>
+<li><strong>Measurements at release.</strong> One candidate is the implant's axis relative to the appendage: severe leaks mostly occurred with off-axis implants, while compression did not differ significantly in matched comparisons [<a href="#p3-ref-25">25</a>]. Others are the continuity of contact around the whole perimeter on three-dimensional imaging and, where imaging allows, the number of anchors engaging the wall.</li>
+<li><strong>Validation at follow-up.</strong> Later CT or echocardiography would test whether those measurements predict leak and device embolization after release and landing-zone remodeling.</li>
+<li><strong>Bench data.</strong> These are force–diameter curves for each size, with the frame's Af. They also include the anchor count per unit of contact perimeter, with which pull-out force correlated in one bench comparison of seven systems.</li>
+</ul>
+<p>Each candidate would require reproducibility between readers and predictive validation before informing a rule. Public bench curves would also allow clinicians and simulation developers to assess the forces underlying device design.</p>
+<h2>Summary of findings</h2>
+<ol>
+<li>The sizing rules are geometric ranges of undisclosed derivation.</li>
+<li>One observational study found less leak above 30 percent compression but sets no target.</li>
+<li>Regulatory summaries give no radial-force values. No measured force–diameter curves were found for the reviewed WATCHMAN generations or Amulet.</li>
+<li>Force at a given compression may also depend on local strain, on how strut sections scale with size (not disclosed) and on Af.</li>
+<li>A peridevice seal requires continuous contact. Leak was associated with implant axis and alignment as well as with compression, and the orifice changes after implant.</li>
+<li>In the validations available, simulation predicts deformation closely. Its predictions have been compared with observed leak in one small study of 30 patients.</li>
+</ol>
+<p>Sustained compression beyond the 10–30 percent range raises a question about fatigue over years of service. Part 4 examines durability through testing, analysis and field experience, including fatigue tests that FDA summaries report only as "Pass".</p>
+<hr />
+<h2>Notes</h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="p3-fn:n7">
+<p>For a 27 mm implant, the first table admits ostia of 23 to 25 mm, 7 to 15 percent below nominal. The second asks that the deployed implant measure 21.6 to 24.8 mm, 8 to 20 percent below nominal [<a href="#p3-ref-1">1</a>]. The Japanese package insert states this release check as a compression ratio of 8 to 20 percent [<a href="#p3-ref-9">9</a>]. For WATCHMAN FLX, the 10 to 30 percent figure that the US instructions do not print appears in a review's table of manufacturer criteria [<a href="#p3-ref-4">4</a>], in a clinical report that attributes it to company recommendations [<a href="#p3-ref-5">5</a>] and, until September 2025, in Japanese package inserts [<a href="#p3-ref-6">6</a>]. For the seal check in the FLX PASS criteria, the US instructions give the example of no leak above 5 mm [<a href="#p3-ref-2">2</a>]. The two WATCHMAN criteria are not always distinguished in the review literature. A 2025 review gives the PASS size criterion for WATCHMAN FLX as 10 to 30 percent in its text [<a href="#p3-ref-40">40</a>]. The caption of its Figure 11, titled for both WATCHMAN and WATCHMAN FLX, gives 8 to 20 percent and names no generation [<a href="#p3-ref-40">40</a>].&#160;<a class="footnote-backref" href="#p3-fnref:n7" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="p3-fn:n1">
+<p>Only the abstract of this study was read. Procedural complications occurred in 1 of 61 and 3 of 175 patients, counts derived from its percentages (1.6 and 1.7 percent). Its printed confidence interval for compression as an independent predictor (adjusted odds ratio 0.935, 95 percent confidence interval 0.927–0.948) is inconsistent with its P value of 0.003. The duration of follow-up for clinical events is not stated [<a href="#p3-ref-12">12</a>]. An earlier single-center report by the same first author included 203 patients and defined leak as more than 1 mm. It found leak in 1 of 37 implants compressed by more than 30 percent and in 32 of 166 implants compressed less [<a href="#p3-ref-5">5</a>]. An editorial accompanied the 2025 paper [<a href="#p3-ref-35">35</a>].&#160;<a class="footnote-backref" href="#p3-fnref:n1" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="p3-fn:n4">
+<p>The registry covered 2016 to 2019. It defined small leaks as more than 0 and up to 5 mm, and it found no association for large leaks, over 5 mm [<a href="#p3-ref-13">13</a>]. For small leaks, the 95 percent confidence interval of the adjusted hazard ratio was 1.025–1.294 [<a href="#p3-ref-13">13</a>]. In the Amulet pivotal trial, the association with ischemic stroke or systemic embolism alone was not significant (hazard ratio 1.98, 95 percent confidence interval 0.93–4.19) [<a href="#p3-ref-14">14</a>]. In pooled WATCHMAN trials, leak of 5 mm or less seen on the one-year echocardiogram, but not on the 45-day one, was associated with more ischemic stroke or systemic embolism over five years (adjusted hazard ratio 1.94) [<a href="#p3-ref-37">37</a>]. According to WATCHMAN's developers, the 5 mm threshold was chosen arbitrarily, from closure devices for patent foramen ovale and atrial septal defect [<a href="#p3-ref-38">38</a>].&#160;<a class="footnote-backref" href="#p3-fnref:n4" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="p3-fn:n8">
+<p>The force tests are "Implant Radial Force" for WATCHMAN 2.5, "Implant Radial Expansion Force" for FLX, and radial force, anchoring force and stabilizing-wire retention force for Amulet [<a href="#p3-ref-15">15</a>–<a href="#p3-ref-17">17</a>]. The WATCHMAN 2.5 summary defines "Pass" as meeting product specifications [<a href="#p3-ref-15">15</a>]. No public summary of FLX Pro's design approval was found. The 2025 summary covering FLX and FLX Pro reports no new nonclinical studies [<a href="#p3-ref-10">10</a>].&#160;<a class="footnote-backref" href="#p3-fnref:n8" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="p3-fn:n2">
+<p>In the bench study, radial force ranged from 0.1 N, for a 27 mm Occlutech device at minimal compression, to 8.6 N, for a LAmbre at maximum compression [<a href="#p3-ref-18">18</a>]. The abstract names LAmbre, Occlutech and WaveCrest among the seven systems. It gives no values for WATCHMAN or Amulet [<a href="#p3-ref-18">18</a>]. The abstracts do not state which device generations were tested in either Menne study [<a href="#p3-ref-36">36</a>].&#160;<a class="footnote-backref" href="#p3-fnref:n2" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="p3-fn:n3">
+<p>The model treats the 144 nitinol wires of the braid as linear-elastic beams with a fitted effective modulus, not as a superelastic material. Its maximum strain in the deployed state is 0.5 percent. Read from the figure, the slope varies from about 0.6 to 1.3 N/mm over the range modeled [<a href="#p3-ref-19">19</a>].&#160;<a class="footnote-backref" href="#p3-fnref:n3" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="p3-fn:n6">
+<p>Page 157 of Duerig and colleagues prints "Lowering Af reduces COF and RRF", where COF is chronic outward force and RRF is radial resistive force. This sentence contradicts their advice in the same paragraph to choose "as high an Af temperature as possible" for a low outward force. The direction given in the text follows the physics of the transformation plateau, whose stress rises with temperature above Af [<a href="#p3-ref-20">20</a>]. Heat treatment sets Af. Pelton and colleagues, for example, processed their specimens to a target Af of 30 °C [<a href="#p3-ref-22">22</a>].&#160;<a class="footnote-backref" href="#p3-fnref:n6" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="p3-fn:n5">
+<p>In WATCH-DUAL, the landing zone's maximum-to-minimum diameter ratio fell from 1.29 to 1.06 [<a href="#p3-ref-28">28</a>]. CT also tends to measure the appendage 2 to 3 mm larger than TEE [<a href="#p3-ref-39">39</a>]. The WATCH-DUAL paper reports minimum compression below 10 percent on CT in "82 patients (64%)". However, 82 of its 104 patients is 79 percent. Leak on CT and leak on TEE are compared across imaging modalities as well as time [<a href="#p3-ref-28">28</a>]. Leak also varied over time in PINNACLE FLX, where the core laboratory found small leaks (jets of 5 mm or less) in 7.4 percent of patients at implant, 17.2 percent at 45 days and 10.5 percent at a year [<a href="#p3-ref-16">16</a>].&#160;<a class="footnote-backref" href="#p3-fnref:n5" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+<hr />
+<h2>References</h2>
+<ol>
+<li><a id="p3-ref-1"></a>Boston Scientific. WATCHMAN (2.5 generation) directions for use, PMA P130013 (FDA labeling file P130013D). 2015. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013D.pdf">Link</a> <em>Cited at pp. 37, 39.</em></li>
+<li><a id="p3-ref-2"></a>Boston Scientific. WATCHMAN (2.5) and WATCHMAN FLX instructions for use, PMA supplement P130013/S035 (FDA labeling file P130013S035C). 2020. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S035C.pdf">Link</a> <em>Cited at p. 57; p. 58.</em></li>
+<li><a id="p3-ref-3"></a>Boston Scientific. WATCHMAN FLX and WATCHMAN FLX Pro instructions for use, PMA supplement P130013/S074 (FDA labeling file P130013S074D). 2025. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S074D.pdf">Link</a> <em>Cited at Table 78.</em></li>
+<li><a id="p3-ref-4"></a>Holmes DR, Korsholm K, Rodés-Cabau J, et al. Left atrial appendage occlusion. EuroIntervention. 2023;18(13):e1038-e1065. <a href="https://doi.org/10.4244/EIJ-D-22-00627">doi:10.4244/EIJ-D-22-00627</a> <em>Cited at Table 7.</em></li>
+<li><a id="p3-ref-5"></a>La Fazia V, Gianni C, Pierucci N, et al. The predictive value of compression rate on residual leak after left atrial appendage occlusion with Watchman FLX (abstract). European Heart Journal. 2023;44(Supplement_2):ehad655.557. <a href="https://doi.org/10.1093/eurheartj/ehad655.557">doi:10.1093/eurheartj/ehad655.557</a></li>
+<li><a id="p3-ref-6"></a>PMDA. Package inserts, WATCHMAN FLX and FLX Pro, editions 1–7 (in Japanese). 2021–2026. <a href="https://www.pmda.go.jp/PmdaSearch/kikiDetail/OldPdfData/30200BZX00383000_A_01/1">Link</a></li>
+<li><a id="p3-ref-7"></a>Abbott Medical. Amplatzer Amulet Left Atrial Appendage Occluder instructions for use, PMA P200049 (FDA labeling file P200049C). September 2021. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049C.pdf">Link</a> <em>Cited at p. 12; p. 15.</em></li>
+<li><a id="p3-ref-8"></a>Sandhu A, Varosy PD, Du C, et al. Device-Sizing and Associated Complications With Left Atrial Appendage Occlusion: Findings From the NCDR LAAO Registry. Circulation: Cardiovascular Interventions. 2022;15(12):e012183. <a href="https://doi.org/10.1161/CIRCINTERVENTIONS.122.012183">doi:10.1161/CIRCINTERVENTIONS.122.012183</a></li>
+<li><a id="p3-ref-9"></a>PMDA. Package inserts, WATCHMAN (in Japanese). 2019–2022. <a href="https://www.pmda.go.jp/PmdaSearch/kikiDetail/OldPdfData/23100BZX00049000_A_01/1">Link</a> <em>Cited at 4th ed..</em></li>
+<li><a id="p3-ref-10"></a>FDA. Summary of Safety and Effectiveness Data: WATCHMAN FLX and FLX Pro (PMA P130013/S074). 16 July 2025. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S074B.pdf">Link</a> <em>Cited at p. 9.</em></li>
+<li><a id="p3-ref-11"></a>Abbott Medical. Summary of Safety and Clinical Performance: Amulet 360 LAA Occluder (91161889 Rev A). 28 July 2026. <a href="https://ec.europa.eu/tools/eudamed/api/documents/bb3c3556-fc8b-4c30-9e32-7d719293b81b">Link</a></li>
+<li><a id="p3-ref-12"></a>La Fazia VM, Galea R, Della Rocca DG, et al. Impact of Device Compression on Peridevice Leak After Left Atrial Appendage Closure: The Impression LAAC Study. JACC: Clinical Electrophysiology. 2025;11(12):2742-2753. <a href="https://doi.org/10.1016/j.jacep.2025.08.014">doi:10.1016/j.jacep.2025.08.014</a></li>
+<li><a id="p3-ref-13"></a>Alkhouli M, Du C, Killu A, et al. Clinical Impact of Residual Leaks Following Left Atrial Appendage Occlusion: Insights From the NCDR LAAO Registry. JACC: Clinical Electrophysiology. 2022;8(6):766-778. <a href="https://doi.org/10.1016/j.jacep.2022.03.001">doi:10.1016/j.jacep.2022.03.001</a></li>
+<li><a id="p3-ref-14"></a>Price MJ, Ellis CR, Nielsen-Kudsk JE, et al. Peridevice Leak After Transcatheter Left Atrial Appendage Occlusion: An Analysis of the Amulet IDE Trial. JACC: Cardiovascular Interventions. 2022;15(21):2127-2138. <a href="https://doi.org/10.1016/j.jcin.2022.09.001">doi:10.1016/j.jcin.2022.09.001</a></li>
+<li><a id="p3-ref-15"></a>FDA. Summary of Safety and Effectiveness Data: WATCHMAN (PMA P130013). 13 March 2015. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013B.pdf">Link</a> <em>Cited at p. 9.</em></li>
+<li><a id="p3-ref-16"></a>FDA. Summary of Safety and Effectiveness Data: WATCHMAN FLX (PMA P130013/S035). 21 July 2020. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S035B.pdf">Link</a> <em>Cited at p. 10; p. 25, Table 15.</em></li>
+<li><a id="p3-ref-17"></a>FDA. Summary of Safety and Effectiveness Data: Amplatzer Amulet (PMA P200049). 14 August 2021. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf">Link</a> <em>Cited at p. 9.</em></li>
+<li><a id="p3-ref-18"></a>Menne MF, Schrickel JW, Nickenig G, et al. Mechanical properties of currently available left atrial appendage occlusion devices: A bench-testing analysis. Artificial Organs. 2019;43(7):656-665. <a href="https://doi.org/10.1111/aor.13414">doi:10.1111/aor.13414</a></li>
+<li><a id="p3-ref-19"></a>Md RI [Islam MR], Lee MT, Cook AC, et al. A new braided model of the Amulet Amplatzer for accurate simulations of left atrial appendage occlusion procedures. Computers in Biology and Medicine. 2025;192(Pt B):110355. <a href="https://doi.org/10.1016/j.compbiomed.2025.110355">doi:10.1016/j.compbiomed.2025.110355</a> <em>Cited at Fig. 7; Sec. 2.2, 3.1, 3.2, Fig. 7.</em></li>
+<li><a id="p3-ref-20"></a>Duerig T, Pelton A, Stöckel D. An overview of nitinol medical applications. Materials Science and Engineering: A. 1999;273-275:149-160. <a href="https://doi.org/10.1016/S0921-5093(99)00294-4">doi:10.1016/S0921-5093(99)00294-4</a> <em>Cited at p. 155; pp. 156–157; p. 157.</em></li>
+<li><a id="p3-ref-21"></a>Stoeckel D, Pelton A, Duerig T. Self-expanding nitinol stents: material and design considerations. European Radiology. 2004;14(2):292-301. <a href="https://doi.org/10.1007/s00330-003-2022-5">doi:10.1007/s00330-003-2022-5</a></li>
+<li><a id="p3-ref-22"></a>Pelton AR, Schroeder V, Mitchell MR, et al. Fatigue and durability of Nitinol stents. Journal of the Mechanical Behavior of Biomedical Materials. 2008;1(2):153-164. <a href="https://doi.org/10.1016/j.jmbbm.2007.08.001">doi:10.1016/j.jmbbm.2007.08.001</a> <em>Cited at p. 155.</em></li>
+<li><a id="p3-ref-23"></a>Bonfanti C, Danielli F, Berti F, et al. Toward a computationally efficient numerical approach to simulate the left atrial appendage occlusion in patient-specific anatomies. Computer Methods and Programs in Biomedicine. 2026;287:109652. <a href="https://doi.org/10.1016/j.cmpb.2026.109652">doi:10.1016/j.cmpb.2026.109652</a></li>
+<li><a id="p3-ref-24"></a>Friedman DJ, Freeman JV, Zimmerman S, et al. Watchman device migration and embolization: A report from the NCDR LAAO Registry. Journal of Cardiovascular Electrophysiology. 2023;34(5):1192-1195. <a href="https://doi.org/10.1111/jce.15909">doi:10.1111/jce.15909</a></li>
+<li><a id="p3-ref-25"></a>Lakkireddy D, Nielsen-Kudsk JE, Windecker S, et al. Mechanisms, predictors, and evolution of severe peri-device leaks with two different left atrial appendage occluders. Europace. 2023;25(9):euad237. <a href="https://doi.org/10.1093/europace/euad237">doi:10.1093/europace/euad237</a></li>
+<li><a id="p3-ref-26"></a>Agudelo VH, Millán X, Li CH, et al. Prevalence, mechanisms and impact of residual patency and device-related thrombosis following left atrial appendage occlusion: a computed tomography analysis. EuroIntervention. 2021;17(11):e944-e952. <a href="https://doi.org/10.4244/EIJ-D-21-00320">doi:10.4244/EIJ-D-21-00320</a></li>
+<li><a id="p3-ref-27"></a>Goldsweig AM, Glikson M, Joza J, et al. 2025 SCAI/HRS Clinical Practice Guidelines on Transcatheter Left Atrial Appendage Occlusion. Journal of the Society for Cardiovascular Angiography &amp; Interventions. 2025;4(9):103783. Also listed as Heart Rhythm 2025;22(10):e1048-e1063 (unverified). <a href="https://doi.org/10.1016/j.jscai.2025.103783">doi:10.1016/j.jscai.2025.103783</a> <em>Cited at Rec. 7.1.</em></li>
+<li><a id="p3-ref-28"></a>Mahmoudi K, Galea R, Elhadad S, et al. Computed Tomography Scan Evidence for Left Atrial Appendage Short-Term Remodeling Following Percutaneous Occlusion: Impact of Device Oversizing (WATCH-DUAL). Journal of the American Heart Association. 2023;12(17):e030037. <a href="https://doi.org/10.1161/JAHA.123.030037">doi:10.1161/JAHA.123.030037</a></li>
+<li><a id="p3-ref-29"></a>Danielli F, Berti F, Fanni BM, et al. Left atrial appendage occlusion: On the need of a numerical model to simulate the implant procedure. International Journal for Numerical Methods in Biomedical Engineering. 2024;40(5):e3814. <a href="https://doi.org/10.1002/cnm.3814">doi:10.1002/cnm.3814</a></li>
+<li><a id="p3-ref-30"></a>FDA. De Novo decision summary DEN200030: FEops HEARTguide (21 CFR 870.1405, product code QQI). Decided 8 September 2021. <a href="https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN200030.pdf">Link</a> <em>Cited at pp. 3–5.</em></li>
+<li><a id="p3-ref-31"></a>De Backer O, Iriart X, Kefer J, et al. Impact of Computational Modeling on Transcatheter Left Atrial Appendage Closure Efficiency and Outcomes (PREDICT-LAA). JACC: Cardiovascular Interventions. 2023;16(6):655-666. <a href="https://doi.org/10.1016/j.jcin.2023.01.008">doi:10.1016/j.jcin.2023.01.008</a></li>
+<li><a id="p3-ref-32"></a>FDA. 510(k) K214066: FEops HEARTguide, WATCHMAN FLX and Amplatzer Amulet models added (predicate DEN200030). Cleared 25 February 2022. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf21/K214066.pdf">Link</a></li>
+<li><a id="p3-ref-33"></a>Bavo AM, Wilkins BT, Garot P, et al. Validation of a computational model aiming to optimize preprocedural planning in percutaneous left atrial appendage closure. Journal of Cardiovascular Computed Tomography. 2020;14(2):149-154. <a href="https://doi.org/10.1016/j.jcct.2019.08.010">doi:10.1016/j.jcct.2019.08.010</a></li>
+<li><a id="p3-ref-34"></a>Ranard LS, Vahl TP, Sommer R, et al. FEops HEARTguide Patient-Specific Computational Simulations for WATCHMAN FLX Left Atrial Appendage Closure: A Retrospective Study. JACC: Advances. 2022;1(5):100139. <a href="https://doi.org/10.1016/j.jacadv.2022.100139">doi:10.1016/j.jacadv.2022.100139</a></li>
+<li><a id="p3-ref-35"></a>DeSimone CV, Killu AM. Sizing Up Success: Intentional Over-Compression in Left Atrial Appendage Closure (editorial). JACC: Clinical Electrophysiology. 2025;11(12):2754-2756. <a href="https://doi.org/10.1016/j.jacep.2025.09.005">doi:10.1016/j.jacep.2025.09.005</a></li>
+<li><a id="p3-ref-36"></a>Menne MF, Schrickel JW, Nickenig G, et al. Mechanical Performance of Two Left Atrial Appendage Occlusion Systems: In Vitro Comparison of Tug Force, Radial Force, Sealing and Deformation. Annals of Biomedical Engineering. 2018;46(9):1337-1347. <a href="https://doi.org/10.1007/s10439-018-2057-z">doi:10.1007/s10439-018-2057-z</a></li>
+<li><a id="p3-ref-37"></a>Dukkipati SR, Holmes DR, Doshi SK, et al. Impact of Peridevice Leak on 5-Year Outcomes After Left Atrial Appendage Closure. Journal of the American College of Cardiology. 2022;80(5):469-483. <a href="https://doi.org/10.1016/j.jacc.2022.04.062">doi:10.1016/j.jacc.2022.04.062</a></li>
+<li><a id="p3-ref-38"></a>Holmes DR Jr, Schwartz RS, Latus GG, Van Tassel RA. A History of Left Atrial Appendage Occlusion. Interventional Cardiology Clinics. 2018;7(2):143-150. <a href="https://doi.org/10.1016/j.iccl.2017.12.005">doi:10.1016/j.iccl.2017.12.005</a></li>
+<li><a id="p3-ref-39"></a>Saw J, Holmes DR, Cavalcante JL, et al. SCAI/HRS Expert Consensus Statement on Transcatheter Left Atrial Appendage Closure. Journal of the Society for Cardiovascular Angiography &amp; Interventions. 2023;2(3):100577. <a href="https://doi.org/10.1016/j.jscai.2022.100577">doi:10.1016/j.jscai.2022.100577</a></li>
+<li><a id="p3-ref-40"></a>Garg J, Kabra R, Gopinathannair R, et al. State of the Art in Left Atrial Appendage Occlusion. JACC: Clinical Electrophysiology. 2025;11(3):602-641. <a href="https://doi.org/10.1016/j.jacep.2024.10.024">doi:10.1016/j.jacep.2024.10.024</a> <em>Cited at Figure 11.</em></li>
+</ol>
+</main></body></html>

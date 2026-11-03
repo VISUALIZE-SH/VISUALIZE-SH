@@ -1,0 +1,240 @@
+observedAt: '2026-11-03'
+sources:
+  - id: src-wor89-nexus-us-efs
+    title: Early Feasibility Study of NeoChord Transcatheter Mitral Repair System
+    url: https://clinicaltrials.gov/api/v2/studies/NCT07912229
+    kind: registry
+    publisher: ClinicalTrials.gov
+    publishedAt:
+      value: '2026-11-03'
+      precision: day
+    retrievedAt: '2026-11-03'
+    access: public
+  - id: src-wor89-nexus-2021
+    title: >-
+      NeoChord Announces Positive 30-day Results with Transcatheter NeXuS System for Mitral Chordal
+      Repair Using Multiple Chords to a Single Anchor
+    url: https://www.neochord.com/wp-content/uploads/2021/11/NeoChord-PR-Proof.pdf
+    kind: manufacturer
+    publisher: NeoChord
+    publishedAt:
+      value: '2021-11-22'
+      precision: day
+    retrievedAt: '2026-11-03'
+    access: public
+  - id: src-wor89-nexus-announcement
+    title: News — Vincora FDA early-feasibility announcement listing
+    url: https://www.neochord.com/news/
+    kind: manufacturer
+    publisher: NeoChord
+    publishedAt:
+      value: '2026-10-27'
+      precision: day
+    retrievedAt: '2026-11-03'
+    access: public
+families:
+  - id: family-neochord-nexus
+    name: NeXuS transcatheter chordal repair
+    manufacturer: NeoChord
+    entityIds:
+      - dev-neochord-nexus
+    conditionIds:
+      - cond-mr
+    description: >-
+      Transcatheter chordal repair program, separate from the DS1000 family. Historical sponsor-described
+      configuration and the registered US EFS configuration are kept distinct; no exact
+      hardware-equivalence bridge is established.
+versions:
+  - id: ver-neochord-nexus-us-efs-2026
+    familyId: family-neochord-nexus
+    graphEntityId: dev-neochord-nexus
+    name: NeXus — US EFS registered configuration (2026)
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Investigational NeXus study configuration in NCT07912229 for primary degenerative MR. Not yet
+      recruiting; 15 estimated participants. Current implant materials, dimensions, access hardware and a
+      commercial indication are not established.
+    sourceRefs:
+      - sourceId: src-wor89-nexus-us-efs
+        locator: armsInterventionsModule; statusModule; designModule.enrollmentInfo; oversightModule.
+    reviewStatus: reviewed
+  - id: ver-neochord-nexus-sponsor-2021
+    familyId: family-neochord-nexus
+    graphEntityId: dev-neochord-nexus
+    name: NeoChord NeXuS — 2021 sponsor-described configuration
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Historical investigational transfemoral/transseptal chordal repair concept described in the
+      November 22, 2021 original sponsor release. No clinical outcome or technical-equivalence claim is
+      transferred to the US EFS configuration.
+    sourceRefs:
+      - sourceId: src-wor89-nexus-2021
+        locator: PDF p 1, nonquotation investigational-device description and About NeoChord.
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor89-us-design
+    versionId: ver-neochord-nexus-us-efs-2026
+    category: design
+    key: device-design
+    label: Registered repair mechanism
+    value: >-
+      Transcatheter chordal repair for degenerative MR due to chordal elongation or rupture resulting in
+      leaflet prolapse.
+    availability: reported
+    basis: directly_reported
+    context: NCT07912229 registered US EFS configuration.
+    limitation: Study description, not an approved marketed indication or demonstrated efficacy.
+    observedAt: '2026-11-03'
+    sourceRefs:
+      - sourceId: src-wor89-nexus-us-efs
+        locator: armsInterventionsModule.armGroups[0]; interventions[0].description.
+    reviewStatus: reviewed
+    comparisonAttributeId: device-design
+  - id: claim-wor89-us-stage
+    versionId: ver-neochord-nexus-us-efs-2026
+    category: evidence
+    key: development-status
+    label: US feasibility study status
+    value: >-
+      Not yet recruiting; 15 participants ESTIMATED; start February 20, 2027 ESTIMATED. No results
+      posted.
+    availability: reported
+    basis: directly_reported
+    context: First/last registry posting November 3, 2026.
+    limitation: Estimates do not establish enrollment, implantation or study initiation.
+    observedAt: '2026-11-03'
+    sourceRefs:
+      - sourceId: src-wor89-nexus-us-efs
+        locator: statusModule; designModule.enrollmentInfo; hasResults.
+    reviewStatus: reviewed
+    comparisonAttributeId: development-status
+  - id: claim-wor89-us-endpoints
+    versionId: ver-neochord-nexus-us-efs-2026
+    category: evidence
+    key: registered-endpoints
+    label: Registered endpoints
+    value: >-
+      Primary: major device-related adverse events through 30 days. Secondary: successful access,
+      delivery and deployment during the procedure.
+    availability: reported
+    basis: directly_reported
+    context: Prospective US EFS endpoints.
+    limitation: No event rates or clinical outcome estimates are available from this registry record.
+    observedAt: '2026-11-03'
+    sourceRefs:
+      - sourceId: src-wor89-nexus-us-efs
+        locator: outcomesModule.primaryOutcomes[0]; secondaryOutcomes[0].
+    reviewStatus: reviewed
+  - id: claim-wor89-us-population
+    versionId: ver-neochord-nexus-us-efs-2026
+    category: fit
+    key: indication-scope
+    label: US study population
+    value: >-
+      Primary degenerative MR with qualifying P2 prolapse/flail, adults 18–85, LVEF ≥30% and
+      intermediate/high surgical risk; exclusively secondary MR excluded.
+    availability: reported
+    basis: directly_reported
+    context: Study population only; registry threshold is written MR >3+.
+    limitation: Not an FDA-approved indication. No extrapolation to all MR or functional MR.
+    observedAt: '2026-11-03'
+    sourceRefs:
+      - sourceId: src-wor89-nexus-us-efs
+        locator: eligibilityModule.eligibilityCriteria; minimumAge; maximumAge.
+    reviewStatus: reviewed
+    comparisonAttributeId: indication-scope
+  - id: claim-wor89-old-access
+    versionId: ver-neochord-nexus-sponsor-2021
+    category: design
+    key: access-route
+    label: Historical access route
+    value: Sponsor-described transfemoral venous delivery followed by transseptal navigation.
+    availability: reported
+    basis: directly_reported
+    context: 2021 investigational sponsor-described device.
+    limitation: No proof that the 2026 US EFS uses identical delivery hardware. No catheter dimension imported.
+    observedAt: '2026-11-03'
+    sourceRefs:
+      - sourceId: src-wor89-nexus-2021
+        locator: PDF p 1, paragraph beginning The investigational NeoChord NeXuS.
+    reviewStatus: reviewed
+    comparisonAttributeId: access-route
+  - id: claim-wor89-us-materials
+    versionId: ver-neochord-nexus-us-efs-2026
+    category: design
+    key: implant-material
+    label: Current US implant composition
+    availability: not_yet_reviewed
+    basis: directly_reported
+    context: NCT07912229 does not describe current implant composition.
+    limitation: >-
+      Nickel/titanium allergy exclusions do not prove composition; historical European ePTFE is not
+      transferred.
+    observedAt: '2026-11-03'
+    sourceRefs:
+      - sourceId: src-wor89-nexus-us-efs
+        locator: armsInterventionsModule; eligibilityModule.
+    reviewStatus: reviewed
+    comparisonAttributeId: implant-material
+  - id: claim-wor89-us-access
+    versionId: ver-neochord-nexus-us-efs-2026
+    category: design
+    key: access-route
+    label: Current US access hardware
+    availability: not_yet_reviewed
+    basis: directly_reported
+    context: Current US configuration requires exact technical documentation.
+    limitation: >-
+      Historical transfemoral/transseptal descriptions or European 28-F eligibility do not establish
+      current US hardware.
+    observedAt: '2026-11-03'
+    sourceRefs:
+      - sourceId: src-wor89-nexus-us-efs
+        locator: armsInterventionsModule.
+    reviewStatus: reviewed
+    comparisonAttributeId: access-route
+bibliography:
+  - id: bib-wor89-nexus-us-efs
+    entityIds:
+      - dev-neochord-nexus
+      - trial-neochord-nexus-us-efs
+    versionIds:
+      - ver-neochord-nexus-us-efs-2026
+    sourceRefs:
+      - sourceId: src-wor89-nexus-us-efs
+        locator: protocolSection; hasResults=false; posted November 3, 2026.
+    reviewStatus: reviewed
+  - id: bib-wor89-nexus-historical
+    entityIds:
+      - dev-neochord-nexus
+    versionIds:
+      - ver-neochord-nexus-sponsor-2021
+    sourceRefs:
+      - sourceId: src-wor89-nexus-2021
+        locator: PDF p 1, nonquotation device-description paragraph and About NeoChord.
+    reviewStatus: reviewed
+specs:
+  - version: ver-neochord-nexus-us-efs-2026
+    category: mitral-chordal-reconstruction
+    source: src-wor89-nexus-us-efs
+    observedAt: '2026-11-03'
+    values:
+      exact-version:
+        value: NeXus — NCT07912229 US EFS registered configuration
+        loc: protocolSection.armsInterventionsModule.armGroups[0].label; identificationModule.nctId.
+        context: Registry identity only; specific technical generation number is not reported.
+        limitation: No equivalence to DS1000 or historical NeXuS hardware is established.
+        reviewStatus: reviewed
+  - version: ver-neochord-nexus-sponsor-2021
+    category: mitral-chordal-reconstruction
+    source: src-wor89-nexus-2021
+    observedAt: '2026-11-03'
+    values:
+      exact-version:
+        value: NeoChord NeXuS — November 22, 2021 sponsor-described configuration
+        loc: PDF p 1, nonquotation investigational-device paragraph; About NeoChord.
+        context: Historical sponsor description only.
+        limitation: Not a current US technical label or configuration-equivalence statement.
+        reviewStatus: reviewed

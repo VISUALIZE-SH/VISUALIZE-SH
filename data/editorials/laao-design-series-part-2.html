@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LAAO design review, Part 2 · VISUALIZE-SH</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root { --brand:#3b0b55; --ink:#1a0426; --link:#7d1ba8; --lilac:#f0d5ff; --bg:#f7f4f9; --surface:#fff;
+        --surface2:#fcfbfd; --border:#e6e0ec; --text2:#555; --text3:#999; }
+body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.62 'Source Sans 3','Source Sans Pro',Helvetica,Arial,sans-serif; }
+main { max-width:780px; margin:0 auto; padding:36px 16px 96px; background:var(--surface); }
+html, body { background:var(--surface); overflow-x:hidden; }
+h1,h2,h3 { font-family:'Open Sans',Helvetica,Arial,sans-serif; color:var(--brand); line-height:1.25; }
+h1 { font-size:2rem; margin:0.4rem 0 0.6rem; }
+h2 { font-size:1.32rem; margin-top:2.4rem; padding-top:1.2rem; border-top:1px solid var(--border); }
+a { color:var(--link); text-decoration:none; } a:hover { text-decoration:underline; }
+p a[href^="#ref-"], td a[href^="#ref-"], li a[href^="#ref-"] { font-size:0.86em; }
+blockquote { margin:1.4rem 0; padding:0.7rem 1rem; background:var(--lilac); border-left:4px solid var(--brand); border-radius:4px; }
+blockquote.sidebar { background:var(--surface2); border:1px solid var(--border); border-left:4px solid var(--link); font-size:0.94rem; }
+figure.fig { position:relative; width:min(1120px, calc(100vw - 32px)); left:50%; transform:translateX(-50%); margin:2rem 0; padding:14px 0 10px; background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+figure.fig figcaption { max-width:748px; margin-left:auto; margin-right:auto; }
+figure.fig svg { width:100%; height:auto; display:block; }
+figcaption { font-size:0.9rem; color:var(--text2); margin-top:0.6rem; line-height:1.5; }
+figcaption strong { color:var(--ink); }
+p.tcap { font-size:0.92rem; color:var(--text2); margin:2.2rem 0 0.5rem; } p.tcap strong { color:var(--ink); }
+div.tw { width:min(1060px, calc(100vw - 32px)); position:relative; left:50%; transform:translateX(-50%); overflow-x:auto; margin:0 0 1.8rem; }
+table { border-collapse:collapse; width:100%; min-width:760px; font-size:0.8rem; line-height:1.4; }
+thead th { background:var(--brand); color:#fff; font-weight:600; position:sticky; top:0; }
+th,td { border:1px solid var(--border); padding:6px 8px; vertical-align:top; text-align:left; }
+tbody tr:nth-child(even) td { background:var(--surface2); }
+td:first-child { font-weight:600; color:var(--ink); min-width:9rem; }
+.footnote { font-size:0.86rem; color:var(--text2); } .footnote hr { display:none; }
+ol li { overflow-wrap:anywhere; }
+h2#references + ol, h2:last-of-type + ol { font-size:0.82rem; color:var(--text2); padding-left:2.2rem; }
+hr { border:none; border-top:1px solid var(--border); margin:2rem 0; }
+em { color:inherit; }
+header.series { margin:0 0 1.6rem; padding:0 0 1rem; border-bottom:1px solid var(--border); }
+header.series h1 { font-size:1.35rem; margin:0; }
+nav.series-toc { margin:0 0 1rem; padding:0.9rem 1rem; background:var(--surface2); border:1px solid var(--border); border-left:4px solid var(--link); border-radius:4px; }
+nav.series-toc p { margin:0 0 0.4rem; font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:0.78rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--brand); }
+nav.series-toc ul { list-style:none; margin:0; padding:0; }
+nav.series-toc li { display:flex; gap:0.8rem; align-items:baseline; padding:0.25rem 0; }
+nav.series-toc li .toc-part { flex:0 0 3.6rem; font-weight:600; color:var(--text2); }
+nav.series-toc li a { flex:1 1 auto; }
+nav.series-toc li .toc-words { flex:0 0 auto; font-size:0.86rem; color:var(--text2); font-variant-numeric:tabular-nums; }
+nav.series-toc li.toc-total { margin-top:0.3rem; padding-top:0.5rem; border-top:1px solid var(--border); font-weight:600; }
+nav.series-toc li.toc-total span:nth-child(1) { flex:1 1 auto; }
+nav.series-toc p.toc-note { margin:0.6rem 0 0; font-family:inherit; font-size:0.84rem; font-weight:400; letter-spacing:0; text-transform:none; color:var(--text2); }
+section.part > .part-divider { display:flex; justify-content:space-between; align-items:baseline; margin:4.5rem 0 1.4rem; padding-top:0.6rem; border-top:5px solid var(--brand); font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:0.8rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--brand); }
+section.part > .part-divider a { font-weight:600; letter-spacing:0; text-transform:none; }
+p a[href^="#p"][href*="-ref-"], td a[href^="#p"][href*="-ref-"], li a[href^="#p"][href*="-ref-"] { font-size:0.86em; }
+.article-nav{display:flex;gap:24px;font-size:15px;margin-bottom:24px}.article-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:14px;color:var(--text2)}.editorial-tag{background:var(--brand);color:#fff;font-weight:700;padding:3px 9px;border-radius:4px}.interpretation-label{color:var(--text2);font-size:.92em}.tw:focus-visible,a:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+</style></head><body><main>
+<nav class="article-nav" aria-label="Site"><a href="/?mode=news">← News</a><a href="/?mode=atlas">Explore Atlas</a></nav>
+<p class="article-meta"><span class="editorial-tag">Editorial</span> <time datetime="2026-11-03">November 3, 2026</time> · VISUALIZE-SH</p>
+
+<h1 id="p2-part-2">Design changes between device generations and their documented outcomes</h1>
+<p><em>Editorial series: Atrial appendage occlusion: four functions, many designs. Part 2 of 4.</em></p>
+<p><strong>Summary.</strong> Sponsors have changed anchors, ends, hubs, and surfaces between generations of left atrial appendage occluders. This part compares the stated reasons for those changes with their documented outcomes. Amulet 360 is one of the few generations for which a regulatory summary gives a reason for each change. Where outcomes were measured, some generations recorded better outcomes than their predecessors. The available documents do not identify which changes produced those outcomes.</p>
+<hr />
+<nav aria-label="In this series"><h2>In this series</h2>
+<ol>
+<li><a href="/editorials/laao-design-series-part-1/" target="_top">Device architectures and the allocation of four functions</a></li>
+<li><a href="#p2-part-2" aria-current="page">Design changes between device generations and their documented outcomes</a></li>
+<li><a href="/editorials/laao-design-series-part-3/" target="_top">Sizing, compression and radial force</a></li>
+<li><a href="/editorials/laao-design-series-part-4/" target="_top">Durability: testing, analysis and field experience</a></li>
+</ol></nav>
+
+<h2>Introduction</h2>
+<p>Left atrial appendage occlusion (LAAO) closes the left atrial appendage, a small pouch of the left atrium where thrombus (blood clot) is often found in patients with atrial fibrillation. It can serve as an alternative to long-term anticoagulation for stroke prevention in some patients (Part 1). Most implants are self-expanding frames of nitinol, a nickel–titanium alloy, delivered by catheter. This series describes four implant functions: deliver, seal, hold, and heal. Durability is a requirement across all four. Allocation assigns each function to a component; coupling means that a change for one function also affects another. The analysis asks four questions about each change:</p>
+<ol>
+<li>Which feature becomes independently adjustable?</li>
+<li>Which sensitivity is reduced?</li>
+<li>Which dependency remains?</li>
+<li>What evidence would show whether the change helped?</li>
+</ol>
+<p>This part applies those questions first to Amulet 360, then examines the early WATCHMAN FLX redesign, changes to holding and healing, and the limits of attributing outcomes to design.</p>
+<h2>Amulet 360 design rationale and outcomes</h2>
+<p>In the US pivotal trial, patients were randomized to Amulet, a braided nitinol lobe-and-disc device, or WATCHMAN 2.5, a laser-cut cage. Amulet had a higher rate of appendage seal, defined as a leak of 5 mm or less at 45 days (98.9 versus 96.8 percent) [<a href="#p2-ref-1">1</a>, <a href="#p2-ref-2">2</a>]. Pericardial effusion, fluid in the sac around the heart, required treatment more often with Amulet (3.2 versus 1.5 percent) [<a href="#p2-ref-1">1</a>].</p>
+<p>The sponsor describes the next generation, Amulet 360, as having "design enhancements intended to strengthen safety while maintaining effectiveness" [<a href="#p2-ref-3">3</a>]. The Amulet 360 study report names pericardial effusion among the problems of current devices [<a href="#p2-ref-4">4</a>]. The European summary of safety and clinical performance (SSCP) for Amulet 360 lists four changes, each with a reason [<a href="#p2-ref-3">3</a>]:</p>
+<ul>
+<li>distal end screw removed, "to improve lobe conformability and ease of use during device positioning";</li>
+<li>distal lobe edge rounded, to improve conformability "and aid in consistent stabilizing anchor protrusion";</li>
+<li>anchors given a "modified geometry ... to allow for full recapture" (recapture is drawing a deployed implant back into its sheath before release, for another attempt) and fixed by eyelets;</li>
+<li>second row of anchors added, "to achieve sufficient anchoring in instances of less precise lobe deployment".</li>
+</ul>
+<p>The Amulet 360 documents address more of the four questions than those for most generations reviewed. The design features changed were the anchors and distal lobe end. The sponsor aimed to reduce anchoring's dependence on precise lobe deployment. Dependencies remain during deployment and after release. Every anchor must pass through the sheath during recapture. The second row adds wall contact points, and the waist still joins the lobe to the disc.</p>
+<p>The study provides only part of the evidence needed to answer the fourth question. Among 400 patients, it recorded no device embolization, or detachment of the implant into the bloodstream [<a href="#p2-ref-3">3</a>, <a href="#p2-ref-4">4</a>]. At 45 days, two patients (0.5 percent) required drainage for pericardial effusion; this follow-up window was shorter than in the pivotal trial [<a href="#p2-ref-3">3</a>, <a href="#p2-ref-4">4</a>]. Of 376 patients with an evaluable echocardiogram, 93.9 percent had no leak at 45 days [<a href="#p2-ref-3">3</a>, <a href="#p2-ref-4">4</a>]. The corresponding no-residual-jet proportion in the original Amulet randomized IDE cohort was 63.0 percent at 45 days [<a href="#p2-ref-1">1</a>, <a href="#p2-ref-2">2</a>]. This is distinct from the 98.9 percent endpoint allowing a residual jet of up to 5 mm. The two no-leak proportions describe separate studies with different populations and procedural contexts; their difference cannot establish an effect of the 360 design changes. These results are consistent with the stated aim, but the single-arm study does not provide a comparison. It was assessed against performance goals, or preset thresholds derived from earlier Amulet data [<a href="#p2-ref-3">3</a>]. The SSCP therefore states that these outcomes “cannot be directly compared” with those for the predicate device, the original Amulet [<a href="#p2-ref-3">3</a>].<sup id="p2-fnref:n1"><a class="footnote-ref" href="#p2-fn:n1">1</a></sup> The study also cannot identify which change produced the observed results.</p>
+<p>One review proposes that hooks, radial force (the force between the implant and the wall), a stiffer lobe, and disc tension probably explain Amulet's higher effusion rate [<a href="#p2-ref-5">5</a>]. The rounded distal lobe edge of Amulet 360 is consistent with that hypothesis. The device also adds a second row of anchors, and no reviewed document tests the hypothesis.</p>
+<h2>Early WATCHMAN FLX redesign and outcomes</h2>
+<p>The WATCHMAN sequence illustrates a more common documentation gap. Boston Scientific sold the early FLX in a limited European release from November 2015 to March 2016 [<a href="#p2-ref-6">6</a>, <a href="#p2-ref-7">7</a>]. WATCHMAN 2.5 has one row of 10 anchors [<a href="#p2-ref-6">6</a>]. The early FLX instead had 18 struts, a closed distal end, and 12 J-shaped anchors in two rows, which investigators said aided “device stabilization” [<a href="#p2-ref-6">6</a>]. The sponsor suspended the release “due to a higher than expected rate of device embolization” [<a href="#p2-ref-8">8</a>] and “elected to make design enhancements” [<a href="#p2-ref-7">7</a>].<sup id="p2-fnref:n2"><a class="footnote-ref" href="#p2-fn:n2">2</a></sup> Investigators described the redesign's main aim as “improving the overall device stability to allow for a more forgiving placement at the ostium” [<a href="#p2-ref-6">6</a>]. The later FLX has 18 J-shaped anchors, nine in each row [<a href="#p2-ref-9">9</a>, <a href="#p2-ref-10">10</a>]. Anchor count is the only documented change between the early and later FLX, but no reviewed document identifies it or another feature as the remedy.</p>
+<p>In PINNACLE FLX, the single-arm trial supporting US approval, no device embolized among 400 patients [<a href="#p2-ref-11">11</a>]. Equal-sized US registry cohorts recorded fewer in-hospital major adverse events with FLX than with WATCHMAN 2.5 (1.35 versus 2.40 percent) [<a href="#p2-ref-12">12</a>]. They also recorded less effusion requiring intervention (0.42 versus 1.23 percent) and device embolization (0.02 versus 0.06 percent) [<a href="#p2-ref-12">12</a>]. A follow-up comparison recorded less peridevice leak, flow around the implant edge, at 45 days (14.7 versus 23.5 percent) [<a href="#p2-ref-13">13</a>]. Ischemic stroke was also less frequent at one year (adjusted hazard ratio 0.82) [<a href="#p2-ref-13">13</a>]. These observational comparisons favor FLX on each reported measure, although the cohorts differ in era and discharge drugs.<sup id="p2-fnref:n3"><a class="footnote-ref" href="#p2-fn:n3">3</a></sup></p>
+<p>The FLX generation changed struts, ends, anchors, height, and recapture together. Its trial protocol lists design objectives relative to WATCHMAN 2.5, including a closed distal end, full recapture, more contact points, and less exposed metal [<a href="#p2-ref-7">7</a>]. The protocol does not identify which change addressed the early FLX embolizations. Investigators suggest that lower height, two anchor rows, and full recapture may have contributed to the absence of embolization in the FLX trial [<a href="#p2-ref-10">10</a>]. Although the generation recorded better outcomes, public documents do not attribute them to a specific feature; the changes were introduced together.</p>
+<h2>Features for holding and injury to the wall</h2>
+<p>Features that hold an implant also affect where and how it loads the wall. This matters because the appendage wall is thin [<a href="#p2-ref-14">14</a>], and the pulmonary artery can lie in direct contact with it (Part 1) [<a href="#p2-ref-15">15</a>]. A 2013 case report described a WATCHMAN of unstated generation whose strut protruded through the wall and eroded the pulmonary artery [<a href="#p2-ref-16">16</a>]. The authors suggested a tip “rounded rather than pointed” [<a href="#p2-ref-16">16</a>]. An Abbott adverse-event report to the Food and Drug Administration (FDA) states that Amulet's stabilizing wires, or anchors, can pass through the wall into the pulmonary artery. The report names poor positioning, oversizing, and a nearby or enlarged artery as possible factors [<a href="#p2-ref-17">17</a>]. In a Brazilian series, LAmbre anchoring hooks perforated the main pulmonary artery in 1 of 51 patients [<a href="#p2-ref-18">18</a>].</p>
+<p><strong>Holding by attached wires in lobe-and-disc devices.</strong> A stabilizing wire is an anchoring wire attached around the lobe that engages the appendage wall to resist device displacement [<a href="#p2-ref-1">1</a>, <a href="#p2-ref-19">19</a>]. The Amplatzer Cardiac Plug (ACP) became the ACP 2, later called Amulet, with a thicker stabilizing wire, a longer lobe, and additional wire pairs at some sizes [<a href="#p2-ref-20">20</a>].<sup id="p2-fnref:n10"><a class="footnote-ref" href="#p2-fn:n10">4</a></sup> Investigators write that most ACP embolizations “have been linked to an inadequate implantation depth” [<a href="#p2-ref-20">20</a>]. They also warn that more and stiffer stabilizing wires may damage the appendage during aggressive handling [<a href="#p2-ref-20">20</a>]. FDA later reported that five of six Amulet pivotal-trial embolizations occurred early in the implanter's experience and “might be related to suboptimal device sizing” [<a href="#p2-ref-1">1</a>]. A 2026 notice for Amulet, not Amulet 360, added label guidance on the distance between the landing zone in the appendage neck and the pulmonary artery [<a href="#p2-ref-21">21</a>, <a href="#p2-ref-22">22</a>].</p>
+<p><strong>Anchoring changes in other device lines.</strong> Occlutech's original device used atraumatic loops to hold it. After four dislocations in 2016, the sponsor first pointed to operator training and guidance [<a href="#p2-ref-23">23</a>].<sup id="p2-fnref:n11"><a class="footnote-ref" href="#p2-fn:n11">5</a></sup> The later LAA Plus, tested in 12 pigs, adds five to eight hooks because of “insufficient anchoring” [<a href="#p2-ref-24">24</a>]. No human use is documented, and no reviewed document links the dislocations to the Plus. In Lifetech's line, a canine study identified hook penetration as the main future safety concern [<a href="#p2-ref-25">25</a>]; the later LAxible has blunted barb tips [<a href="#p2-ref-26">26</a>].</p>
+<p><strong>Anchor loads during recapture.</strong> Recapture bends curved anchors toward the sheath, imposing a loading path different from cardiac motion. Although nitinol is superelastic, repeated large deformations can leave residual plastic strain; experiments on processed NiTi wires show that the response depends on microstructure and temperature [<a href="#p2-ref-27">27</a>]. For an anchor, excessive local strain during repeated resheathing could therefore require a change in geometry or processing to limit permanent deformation and fracture risk. This is a design possibility, not a demonstrated mechanism for a particular LAAO failure.</p>
+<p>FDA recommends that nitinol assessment account for implantation deformation, clinically relevant temperature, and the effect of prestrain on fatigue [<a href="#p2-ref-28">28</a>]. As described in Part 1, WATCHMAN barbs were found damaged after recapture in 2006, although the documents give no cause [<a href="#p2-ref-29">29</a>].<sup id="p2-fnref:n9"><a class="footnote-ref" href="#p2-fn:n9">6</a></sup> Bench testing found that repeated resheathing reduced WATCHMAN's diameter by up to 7.9 percent and lowered its radial force [<a href="#p2-ref-30">30</a>]. Amulet 360's anchors were reshaped “to allow for full recapture” [<a href="#p2-ref-3">3</a>]. The observed diameter and force changes do not identify the deformation mechanism at an anchor. Recapture serves delivery, but it loads the anchors that serve holding.</p>
+<p><strong>Holding and wall injury.</strong> The effect of a holding feature on wall injury depends on its geometry, placement, handling, and the patient's anatomy. Anchors apply load at discrete points, whereas radial force spreads the load. The reports above identify positioning and sizing as well as struts and wires as relevant factors. Registry comparisons recorded less device embolization and effusion with FLX than with WATCHMAN 2.5. Amulet 360 added a row of anchors and recorded no embolization in its single-arm study. Neither result identifies the effect of the anchors. Fixation features therefore require evaluation of both retention and wall injury.</p>
+<h2>Healing surfaces and attachment sites</h2>
+<p>Before tissue covers an implant, thrombus can form on its atrial face. This thrombus is called device-related thrombus (DRT). Designers have repeatedly changed exposed metal and attachment sites that they consider likely starting points. Amulet's disc screw was recessed [<a href="#p2-ref-20">20</a>], and FLX covers a low-profile insert with fabric “to reduce exposed metal” [<a href="#p2-ref-10">10</a>].<sup id="p2-fnref:n12"><a class="footnote-ref" href="#p2-fn:n12">7</a></sup> FLX Pro changed the surface chemistry by adding a polymer coating to the FLX platform [<a href="#p2-ref-31">31</a>, <a href="#p2-ref-32">32</a>].<sup id="p2-fnref:n4"><a class="footnote-ref" href="#p2-fn:n4">8</a></sup></p>
+<p><strong>Dependencies of the healing surface.</strong> The healing surface is the atrial face of the sealing component. At its center, the hub or screw connects the implant to the delivery cable. Designers in several lineages have recessed, covered, or removed this attachment site. At the rim, the healing surface also forms the edge of the seal. The implant's contact with the ridge beside the pulmonary vein therefore affects both healing and sealing.</p>
+<p>The reported thrombus locations are consistent with this account of the healing surface. In a multicenter cohort, mostly involving WATCHMAN implants, 55.3 percent of DRT sites were on the disc or atrial face, and another 12.7 percent were at the screw or hub [<a href="#p2-ref-33">33</a>]. In the Amulet 360 study, three of nine thrombi were at a central screw; the 360 removed only the distal screw. Five were at the edge near the pulmonary-vein ridge [<a href="#p2-ref-4">4</a>]. Pooled lobe-and-disc data relayed by a review also associate thrombus with an uncovered ridge (Part 1) [<a href="#p2-ref-34">34</a>]. Implant placement and drug regimens provide other explanations. Investigators attributed ACP thrombus to the protruding pin [<a href="#p2-ref-20">20</a>], while the manufacturer's 2011 notice named implant depth as the most probable cause [<a href="#p2-ref-35">35</a>].<sup id="p2-fnref:n5"><a class="footnote-ref" href="#p2-fn:n5">9</a></sup></p>
+<p><strong>Evidence by study type.</strong> The studies differ in the claims they can support.</p>
+<ul>
+<li>An animal study can test a proposed mechanism. In the sponsor's canine study, the coated FLX Pro surface had less thrombus at two and four weeks [<a href="#p2-ref-36">36</a>].<sup id="p2-fnref:n6"><a class="footnote-ref" href="#p2-fn:n6">10</a></sup></li>
+<li>A single-arm study reports a rate but cannot provide a comparison. HEAL-LAA reported DRT in 1.6 percent of FLX Pro patients at 45 days and 2.7 percent at 12 months; its authors described these rates as “similar to the predecessor device” [<a href="#p2-ref-37">37</a>].</li>
+<li>A comparison between generations can show an association, but not its cause. In the US registry, DRT was 0.4 percent with FLX and 0.5 percent with WATCHMAN 2.5 [<a href="#p2-ref-13">13</a>]. Two two-center cohorts that may overlap found larger differences [<a href="#p2-ref-38">38</a>, <a href="#p2-ref-39">39</a>].</li>
+<li>Each explant, an implant removed from a patient, shows tissue coverage in one patient [<a href="#p2-ref-40">40</a>, <a href="#p2-ref-41">41</a>].</li>
+</ul>
+<p>No clinical study reviewed isolates the effect of the hub or coating. Designers in six lineages have pursued reductions in exposed metal or changes to attachment sites. Clinical comparisons report favorable findings in some cohorts and no difference in others.</p>
+<h2>Limits of attributing outcomes to design changes</h2>
+<p>One clinical review attributes the decline in complications, leak, and DRT over time to device design and implantation technique [<a href="#p2-ref-42">42</a>]. Another considers refinements in design, technique, and operator skill likely explanations [<a href="#p2-ref-5">5</a>]. The documents reviewed here often cannot separate design effects from other factors:</p>
+<ol>
+<li><strong>Operator experience.</strong> In PROTECT AF, procedural events fell from 9.9 to 4.8 percent between the first and second halves of enrollment [<a href="#p2-ref-43">43</a>]. The sponsor credited the decline to “training, the implant procedure, and technical aspects” of the device; the short WATCHMAN implant also entered the trial partway through [<a href="#p2-ref-43">43</a>].<sup id="p2-fnref:n7"><a class="footnote-ref" href="#p2-fn:n7">11</a></sup> In US practice, the unchanged Amulet had a 45-day effusion intervention rate of 2.3 percent among operators with fewer than 10 cases [<a href="#p2-ref-44">44</a>]. The rate was 1.5 percent among operators with 30 or more cases [<a href="#p2-ref-44">44</a>].</li>
+<li><strong>Evidence shared between generations.</strong> FDA's FLX summary applies animal data from earlier WATCHMAN devices “due to the use of identical materials and substantially similar device designs” [<a href="#p2-ref-11">11</a>]. It also states that the FLX trial results “are applicable to” WATCHMAN 2.5 because of their similar designs [<a href="#p2-ref-11">11</a>]. The trial's performance goals were derived from WATCHMAN 2.5 data [<a href="#p2-ref-7">7</a>]. Bridging evidence across generations is an established regulatory practice and can be sound for many questions. Part 4 examines what “identical materials” establishes.</li>
+<li><strong>Drug regimens.</strong> The registry cohorts differ in discharge drugs [<a href="#p2-ref-13">13</a>]. Since those comparisons, labeled post-implant regimens changed for WATCHMAN in 2022 and 2025 and for Amulet in 2025 [<a href="#p2-ref-22">22</a>, <a href="#p2-ref-45">45</a>].</li>
+<li><strong>Follow-up and imaging.</strong> The Amulet 360 study reported effusion at 45 days, a shorter follow-up window than the pivotal trial [<a href="#p2-ref-3">3</a>, <a href="#p2-ref-4">4</a>]. Echocardiography was available for about two thirds of patients in the FLX registry follow-up [<a href="#p2-ref-13">13</a>].</li>
+<li><strong>Era.</strong> The FLX registry cohorts differ in era: WATCHMAN 2.5 patients were treated immediately before each site's first FLX case [<a href="#p2-ref-12">12</a>].</li>
+<li><strong>Several changes at once.</strong> FLX and Amulet 360 each changed several features together. Their outcomes therefore cannot be assigned to a single change.</li>
+</ol>
+<blockquote class="sidebar"><p><strong>Sidebar. Device names and dates.</strong> Sources number device generations differently. This part therefore names and dates each device and identifies the device associated with every outcome. FDA's 2009 table numbers the implant and its accessories separately; its “Gen 4” refers to a delivery or access system [<a href="#p2-ref-29">29</a>]. Amulet catalog numbers still read 9-ACP2 [<a href="#p2-ref-21">21</a>].<sup id="p2-fnref:n8"><a class="footnote-ref" href="#p2-fn:n8">12</a></sup></p>
+</blockquote>
+<p class="tcap"><strong>Table 1. Design changes between successive device generations.</strong> Each row shows one step in a design sequence, the function served, the stated reason and its source, any documented link to an observed event, and subsequent findings with their evidence level. <em>Harm</em> marks a change concerning wall injury and appears under hold. <em>Durability</em> marks a durability change, since durability is a requirement rather than a function. Sources: [<a href="#p2-ref-1">1</a>, <a href="#p2-ref-3">3</a>, <a href="#p2-ref-4">4</a>, <a href="#p2-ref-6">6</a>–<a href="#p2-ref-8">8</a>, <a href="#p2-ref-11">11</a>, <a href="#p2-ref-20">20</a>, <a href="#p2-ref-23">23</a>, <a href="#p2-ref-24">24</a>, <a href="#p2-ref-26">26</a>, <a href="#p2-ref-29">29</a>, <a href="#p2-ref-36">36</a>, <a href="#p2-ref-37">37</a>, <a href="#p2-ref-46">46</a>–<a href="#p2-ref-63">63</a>].</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Generation step (date)</th>
+<th>Change (function)</th>
+<th>Stated reason (source)</th>
+<th>Documented link to an observed event</th>
+<th>Subsequent findings (evidence)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WATCHMAN pilot implants (2002–05)</td>
+<td>Barbs modified (hold); reinforced cable (deliver)</td>
+<td>Attachment, prevent embolization (investigators)</td>
+<td>Stated: 2 embolizations</td>
+<td>No embolization in the next 53 patients (single arm)</td>
+</tr>
+<tr>
+<td>Short implant (Oct 2006)</td>
+<td>20% shorter (hold, harm)</td>
+<td>Minimize length (sponsor); reduce perforation (FDA)</td>
+<td>Stated, hedged (FDA)</td>
+<td>Barbs damaged after recapture; barb redesigned</td>
+</tr>
+<tr>
+<td>Short-implant barb (after Oct 2006)</td>
+<td>Barb redesigned (deliver, durability)</td>
+<td>Barbs missing after recapture (FDA)</td>
+<td>Stated by regulator</td>
+<td>The version approved as WATCHMAN 2.5 in 2015</td>
+</tr>
+<tr>
+<td>WATCHMAN 2.5 to early FLX (2015)</td>
+<td>18 struts, closed end, 12 J-anchors (hold, harm)</td>
+<td>Device stabilization; more contact points (investigators)</td>
+<td>None</td>
+<td>Embolization above expectation: 6 of 207 (field notice), 8 of 210 (sponsor survey)</td>
+</tr>
+<tr>
+<td>Early FLX to FLX (2019)</td>
+<td>12 to 18 anchors (hold)</td>
+<td>Unnamed "design enhancements" after embolization (sponsor); "overall device stability" (investigators)</td>
+<td>Stated for the step; sequence only for the anchors</td>
+<td>No embolization in 400 (single-arm trial)</td>
+</tr>
+<tr>
+<td>FLX to FLX Pro (2023)</td>
+<td>Coating (heal); markers (deliver); 40 mm (seal)</td>
+<td>Less thrombus (sponsor preclinical)</td>
+<td>None</td>
+<td>DRT 1.6% at 45 days, "similar to the predecessor" (single arm)</td>
+</tr>
+<tr>
+<td>ACP to Amulet (2012–13)</td>
+<td>Wires, lobe, waist, disc (hold, seal); screw (heal); pre-loading (deliver)</td>
+<td>Implantation depth; counter-risk named (investigators)</td>
+<td>Stated: ACP embolization, pin thrombus</td>
+<td>Embolization ranges overlap (series, trial)</td>
+</tr>
+<tr>
+<td>Amulet to Amulet 360 (2026)</td>
+<td>Four changes (hold, harm, deliver)</td>
+<td>One reason per change (SSCP); effusion excess (sponsor study)</td>
+<td>Stated: pivotal-trial effusions</td>
+<td>No embolization; 0.5% drained effusion at 45 days (single arm)</td>
+</tr>
+<tr>
+<td>Occlutech original to LAA Plus</td>
+<td>Medial hooks; shorter cover (hold)</td>
+<td>"Insufficient anchoring" (sponsor)</td>
+<td>Sequence only: 2016 dislocations</td>
+<td>Pigs only</td>
+</tr>
+<tr>
+<td>LAmbre to LAxible (2021)</td>
+<td>Blunted barbs (harm); disc membrane (heal); suture (durability)</td>
+<td>Effusion; less exposed metal; fatigue resistance (sponsor)</td>
+<td>None cited</td>
+<td>None located</td>
+</tr>
+<tr>
+<td>LAmbre to LAmbre II (2026)</td>
+<td>Five changes, incl. snap joint, diamond hook end</td>
+<td>Anatomy, procedural safety (sponsor)</td>
+<td>None stated</td>
+<td>First-in-human study under way</td>
+</tr>
+<tr>
+<td>Ultraseal I to II (2018)</td>
+<td>No center post; shorter (deliver, harm)</td>
+<td>Easier loading and retrieval; less oversizing (investigators)</td>
+<td>Investigators: "may likely have contributed"; sponsor: possible manufacturing defect</td>
+<td>No fractures seen in 43 patients with echocardiography, median 79 days (registry)</td>
+</tr>
+<tr>
+<td>WaveCrest sheath liner (2014–15)</td>
+<td>Liner changed (deliver)</td>
+<td>Liner damage in 2 patients (sponsor)</td>
+<td>Stated</td>
+<td>Later Class 1 recall of the 32 mm sheath tip, 2018; relation not stated</td>
+</tr>
+<tr>
+<td>CLAAS second size (2019–21)</td>
+<td>Large size made available (seal, hold)</td>
+<td>Undersizing when only one size existed (investigators)</td>
+<td>Stated</td>
+<td>18 of 22 implanted at first use; 15 of 15 in a later single-center series</td>
+</tr>
+<tr>
+<td>Sideris patch to Immediate Release Patch</td>
+<td>Fixation by expansion (hold)</td>
+<td>Adhesive wait; non-adhesion (inventors)</td>
+<td>Stated</td>
+<td>Proposed only</td>
+</tr>
+<tr>
+<td>LARIAT to LARIAT+ to RS (2014–15)</td>
+<td>Larger snare, marker, braided shaft; release actuator (deliver)</td>
+<td>Orientation, torque (investigators); release from tissue (FDA summary)</td>
+<td>None</td>
+<td>None located</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Summary of findings</h2>
+<ol>
+<li>Where outcomes were measured, some generations recorded better outcomes than their predecessors. The public documents do not attribute the FLX registry or Amulet 360 single-arm results to a specific change.</li>
+<li>Holding features affect how the wall is loaded, so holding and wall injury may trade off.</li>
+<li>Healing is coupled to delivery at the hub and sealing at the rim. Thrombus has been associated with hubs, surfaces, and ridge coverage; implant depth is another reported factor that this interpretation does not explain.</li>
+<li>Shared evidence between generations, operator experience, drug regimens, follow-up, imaging, and era limit attribution of outcomes to a single change.</li>
+<li>The four questions connect an adjustable feature to its expected outcome and identify other outcomes to check based on dependencies that remain.</li>
+<li>The Amulet 360 SSCP gives a reason for each change, showing how regulatory documents can report design rationale. Part 4 examines what additional information they could provide.</li>
+</ol>
+<p>The WATCHMAN and Amulet implants described here are sized to their landing zones and released after assessment of their compression. Part 3, <em>Sizing, compression, and radial force</em>, examines what that compression measures in relation to holding and sealing.</p>
+<hr />
+<h2>Notes</h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="p2-fn:n1">
+<p>The Amulet 360 study enrolled 400 patients at 34 sites in its primary analysis, plus 58 roll-in cases outside the primary analyses. The study had an independent core laboratory and events committee. Its leak result counts the echocardiograms that the core laboratory could evaluate [<a href="#p2-ref-3">3</a>, <a href="#p2-ref-4">4</a>]. Its primary safety endpoint was met with no events. By definition, that endpoint excluded percutaneous drainage of effusion and snaring of embolized devices. By six months the SSCP counts three effusions requiring intervention (0.8 percent) and no embolization [<a href="#p2-ref-3">3</a>]. For comparison, the SSCP's own range for serious effusion, tamponade or perforation within 45 days with the original Amulet is 1.5 to 2.3 percent [<a href="#p2-ref-3">3</a>]. Effusion requiring intervention in the original Amulet's pivotal trial was 3.2 percent over its longer follow-up [<a href="#p2-ref-1">1</a>]. Among experienced US operators using the original Amulet, it was 1.5 percent at 45 days [<a href="#p2-ref-44">44</a>].&#160;<a class="footnote-backref" href="#p2-fnref:n1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="p2-fn:n2">
+<p>The sponsor's field safety notice counts 6 of 207 (2.9 percent) [<a href="#p2-ref-49">49</a>]. Of these, 2 occurred during the procedure and 4 after it. All were retrieved, and one patient died from infection after retrieval [<a href="#p2-ref-49">49</a>]. The later PINNACLE FLX protocol counts 8 of 210 (3.8 percent) [<a href="#p2-ref-7">7</a>], and the investigators' paper 8 of 209 [<a href="#p2-ref-6">6</a>]. These are separate data cuts. Boston Scientific's filings described the release as "suspended ... due to a higher than expected rate of device embolization" [<a href="#p2-ref-8">8</a>, <a href="#p2-ref-48">48</a>]. They later referred to "potential" and then "certain design enhancements", without naming them [<a href="#p2-ref-8">8</a>, <a href="#p2-ref-48">48</a>]. No document reviewed links the added anchors to the embolizations.&#160;<a class="footnote-backref" href="#p2-fnref:n2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="p2-fn:n3">
+<p>In PINNACLE FLX, the primary safety endpoint occurred in 0.5 percent, and the 12-month seal criterion was met in all 342 patients with an evaluable echocardiogram [<a href="#p2-ref-11">11</a>]. The first registry comparison matched 27,013 patients per device at the same sites [<a href="#p2-ref-12">12</a>]. Its WATCHMAN 2.5 patients were those treated immediately before each site's first FLX case [<a href="#p2-ref-12">12</a>]. The follow-up comparison matched 27,141 patients per device, and echocardiography was available for about two thirds of them [<a href="#p2-ref-13">13</a>]. The confidence interval of its hazard ratio for ischemic stroke at one year was 0.68 to 0.98 [<a href="#p2-ref-13">13</a>]. A meta-analysis of seven observational cohorts finds lower effusion and embolization with FLX [<a href="#p2-ref-64">64</a>]. Its authors call their findings "hypothesis-generating rather than definitive" [<a href="#p2-ref-64">64</a>].&#160;<a class="footnote-backref" href="#p2-fnref:n3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="p2-fn:n10">
+<p>The stabilizing wire was thickened from 0.006 to 0.0065 inch [<a href="#p2-ref-20">20</a>]. The wire pairs rose from 6 at every size on the ACP to 6, 8 or 10 on the ACP 2 [<a href="#p2-ref-20">20</a>].&#160;<a class="footnote-backref" href="#p2-fnref:n10" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="p2-fn:n11">
+<p>After the 2016 dislocations, the sponsor also stopped shipping and withdrew consignment stock [<a href="#p2-ref-23">23</a>].&#160;<a class="footnote-backref" href="#p2-fnref:n11" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="p2-fn:n9">
+<p>FDA's 2015 summary lists a barb "cleat test" that simulates recapture strain [<a href="#p2-ref-65">65</a>]. The Japanese label for Amulet allows at most three partial recaptures [<a href="#p2-ref-66">66</a>].&#160;<a class="footnote-backref" href="#p2-fnref:n9" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="p2-fn:n12">
+<p>Designers in six lineages have pursued reductions in exposed metal or changes to attachment sites: Amulet, WATCHMAN, LAmbre, WaveCrest, CLAAS, and Zenith. Besides the Amulet and FLX changes in the text, LAmbre's hub was recessed after a hub thrombus in a dog [<a href="#p2-ref-25">25</a>]. WaveCrest's hub retracts inside a clover covered with expanded polytetrafluoroethylene (ePTFE) [<a href="#p2-ref-67">67</a>]. CLAAS releases on a tether rather than a threaded rod, which its developers say removes an exposed attachment site [<a href="#p2-ref-58">58</a>]. Zenith's developers state an aim to minimize exposed metal [<a href="#p2-ref-68">68</a>].&#160;<a class="footnote-backref" href="#p2-fnref:n12" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="p2-fn:n4">
+<p>FDA's summary describes FLX Pro as FLX with HEMOCOAT "on the PET fabric", three tantalum markers and a 40 mm size, without naming the polymer [<a href="#p2-ref-31">31</a>]. PET is polyethylene terephthalate. The Japanese package insert names the polymer, poly(vinylidene fluoride-co-hexafluoropropylene) (PVDF-HFP), and the tantalum [<a href="#p2-ref-32">32</a>]. The US instructions for use say "the Closure Device is coated" [<a href="#p2-ref-69">69</a>]. For the 40 mm size, they list 0.0046 g of PVDF-HFP and 0.0010 g of tantalum [<a href="#p2-ref-69">69</a>]. A first-in-human case report calls the markers platinum [<a href="#p2-ref-70">70</a>]. No source reviewed says that FLX Pro's anchors or fabric differ from those of FLX [<a href="#p2-ref-45">45</a>].&#160;<a class="footnote-backref" href="#p2-fnref:n4" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="p2-fn:n5">
+<p>The labeled post-implant drug regimen changed for WATCHMAN in 2022 and 2025 and for Amulet in 2025 [<a href="#p2-ref-22">22</a>, <a href="#p2-ref-45">45</a>]. The DRT cohort was 74.1 percent WATCHMAN (67.2 percent described by the authors as first-generation, 6.9 percent FLX) [<a href="#p2-ref-33">33</a>]. The site was unspecified in 17.3 percent [<a href="#p2-ref-33">33</a>]. In the Amulet 360 study, core-laboratory DRT at 45 days was 9 of 381 [<a href="#p2-ref-4">4</a>]. In the Amulet pivotal trial, DRT at 18 months was 3.3 versus 4.5 percent (Amulet versus WATCHMAN 2.5) under the definition in FDA's summary [<a href="#p2-ref-1">1</a>]. A later adjudicated analysis of the same trial gives 3.4 versus 4.8 percent for DRT at 18 months (Amulet versus WATCHMAN 2.5) [<a href="#p2-ref-71">71</a>].&#160;<a class="footnote-backref" href="#p2-fnref:n5" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="p2-fn:n6">
+<p>The explants range from a WATCHMAN 2.5 with a bare hub at 2 years 8 months [<a href="#p2-ref-40">40</a>] to an FLX Pro at 3 months with covered struts and an uncovered membrane [<a href="#p2-ref-41">41</a>]. In the canine study, excess thrombus was seen on 1 of 6 coated versus 5 of 6 uncoated devices at 14 days (P=0.01) [<a href="#p2-ref-36">36</a>]. The counts were 0 of 6 versus 5 of 6 at 28 days (P=0.02), and 0 of 6 versus 3 of 6 at 45 days [<a href="#p2-ref-36">36</a>]. For 45 days, the Results give P=0.18, while the abstract reports P&lt;0.05 [<a href="#p2-ref-36">36</a>]. The study was funded by the sponsor [<a href="#p2-ref-36">36</a>]. In the comparison between generations, the two two-center cohorts found DRT in 0 versus 6.0 percent and 0.2 versus 3.1 percent for FLX against WATCHMAN 2.5 [<a href="#p2-ref-38">38</a>, <a href="#p2-ref-39">39</a>].&#160;<a class="footnote-backref" href="#p2-fnref:n6" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="p2-fn:n7">
+<p>A 2025 supplement extends the OPTION trial, which used FLX, to both FLX and FLX Pro [<a href="#p2-ref-31">31</a>]. The sponsor also reported to Japan's Pharmaceuticals and Medical Devices Agency (PMDA) on WATCHMAN 2.5 field defects outside Japan in 2015–2018 [<a href="#p2-ref-72">72</a>]. The sponsor described these field defects as chiefly use-related. They included embolization (0.167 percent) and perforation (0.171 percent), which are field-report rates, not trial incidence [<a href="#p2-ref-72">72</a>].&#160;<a class="footnote-backref" href="#p2-fnref:n7" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="p2-fn:n8">
+<p>Other sources show the same inconsistency. FDA's 2009 table and Japan's review report use "Gen 2.5" for every WATCHMAN implant version from the pilot study to the approved device [<a href="#p2-ref-29">29</a>, <a href="#p2-ref-72">72</a>]. The EVOLVE registry's "Gen 4.0" is an implant [<a href="#p2-ref-73">73</a>]. FDA's FLX summary calls the device "WATCHMAN FLX 2.0" in its animal-study table [<a href="#p2-ref-11">11</a>]. The sponsor's 2015 European release called the WATCHMAN 2.5-era device "first-generation" and the early FLX "latest generation" [<a href="#p2-ref-74">74</a>]. The "4th generation" WATCHMAN of Ledwoch and colleagues, reported in 2015, was an Atritech prototype, not the early FLX [<a href="#p2-ref-75">75</a>]. Amulet 360 is registered as "Amulet 2" [<a href="#p2-ref-76">76</a>]. Both LAmbre Plus and LAmbre II are claimed as "second generation" [<a href="#p2-ref-52">52</a>, <a href="#p2-ref-77">77</a>].&#160;<a class="footnote-backref" href="#p2-fnref:n8" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+<hr />
+<h2>References</h2>
+<ol>
+<li><a id="p2-ref-1"></a>FDA. Summary of Safety and Effectiveness Data: Amplatzer Amulet (PMA P200049). 14 August 2021. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf">Link</a> <em>Cited at p. 34, Table 19; p. 32, Table 16; p. 2; p. 32; pp. 32–33, Table 17.</em></li>
+<li><a id="p2-ref-2"></a>Lakkireddy D, Thaler D, Ellis CR, et al. Amplatzer Amulet Left Atrial Appendage Occluder Versus Watchman Device for Stroke Prophylaxis (Amulet IDE): A Randomized, Controlled Trial. Circulation. 2021;144(19):1543-1552. <a href="https://doi.org/10.1161/CIRCULATIONAHA.121.057063">doi:10.1161/CIRCULATIONAHA.121.057063</a> <em>Cited at Results, Primary and Secondary End Points.</em></li>
+<li><a id="p2-ref-3"></a>Abbott Medical. Summary of Safety and Clinical Performance: Amulet 360 LAA Occluder (91161889 Rev A). 28 July 2026. <a href="https://ec.europa.eu/tools/eudamed/api/documents/bb3c3556-fc8b-4c30-9e32-7d719293b81b">Link</a> <em>Cited at p. 12; pp. 21–22; pp. 17, 22; pp. 17–22; p. 25.</em></li>
+<li><a id="p2-ref-4"></a>Nair D, Freixa X, Ellis CR, et al. Early Outcomes With a Next-Generation Dual-Seal Left Atrial Appendage Occluder. JACC: Clinical Electrophysiology. 2026;12(6):1331-1341. <a href="https://doi.org/10.1016/j.jacep.2026.01.021">doi:10.1016/j.jacep.2026.01.021</a></li>
+<li><a id="p2-ref-5"></a>Garg J, Kabra R, Gopinathannair R, et al. State of the Art in Left Atrial Appendage Occlusion. JACC: Clinical Electrophysiology. 2025;11(3):602-641. <a href="https://doi.org/10.1016/j.jacep.2024.10.024">doi:10.1016/j.jacep.2024.10.024</a> <em>Cited at section on risk factors for pericardial effusion; section on LAAO versus direct oral anticoagulants.</em></li>
+<li><a id="p2-ref-6"></a>Grygier M, Olasińska-Wiśniewska A, Araszkiewicz A, et al. The Watchman FLX – a new device for left atrial appendage occlusion – design, potential benefits and first clinical experience. Postepy w kardiologii interwencyjnej = Advances in interventional cardiology. 2017;13(1):62-66. <a href="https://doi.org/10.5114/aic.2017.66188">doi:10.5114/aic.2017.66188</a></li>
+<li><a id="p2-ref-7"></a>Boston Scientific. PINNACLE FLX protocol G150200 (NCT02702271), as posted to ClinicalTrials.gov. <a href="https://cdn.clinicaltrials.gov/large-docs/71/NCT02702271/Prot_SAP_000.pdf">Link</a> <em>Cited at p. 22; pp. 23–25; pp. 45–46.</em></li>
+<li><a id="p2-ref-8"></a>Boston Scientific. Form 10-Q for the quarter ended 31 March 2016. 4 May 2016. <a href="https://www.sec.gov/Archives/edgar/data/885725/000088572516000035/q12016form10-q.htm">Link</a></li>
+<li><a id="p2-ref-9"></a>Grygier M, Markiewicz A, Araszkiewicz A, et al. Watchman FLX: the initial Polish experience with a new device for left atrial appendage occlusion. Kardiologia Polska. 2020;78(3):240-242. <a href="https://doi.org/10.33963/KP.15172">doi:10.33963/KP.15172</a></li>
+<li><a id="p2-ref-10"></a>Kar S, Doshi SK, Sadhu A, et al. Primary Outcome Evaluation of a Next-Generation Left Atrial Appendage Closure Device. Circulation. 2021;143(18):1754-1762. <a href="https://doi.org/10.1161/CIRCULATIONAHA.120.050117">doi:10.1161/CIRCULATIONAHA.120.050117</a></li>
+<li><a id="p2-ref-11"></a>FDA. Summary of Safety and Effectiveness Data: WATCHMAN FLX (PMA P130013/S035). 21 July 2020. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S035B.pdf">Link</a> <em>Cited at pp. 21–22, 25–26; p. 13; p. 14; p. 13, Table 4.</em></li>
+<li><a id="p2-ref-12"></a>Price MJ, Friedman DJ, Du C, et al. Comparative Safety of Transcatheter LAAO With the First-Generation Watchman and Next-Generation Watchman FLX Devices. JACC: Cardiovascular Interventions. 2022;15(21):2115-2123. <a href="https://doi.org/10.1016/j.jcin.2022.09.002">doi:10.1016/j.jcin.2022.09.002</a></li>
+<li><a id="p2-ref-13"></a>Price MJ, Tan Z, Zimmerman S, et al. Clinical Effectiveness of Transcatheter Left Atrial Appendage Occlusion With Watchman FLX Compared With First-Generation Watchman. JACC: Cardiovascular Interventions. 2025;18(10):1318-1326. <a href="https://doi.org/10.1016/j.jcin.2025.03.025">doi:10.1016/j.jcin.2025.03.025</a></li>
+<li><a id="p2-ref-14"></a>Batko J, Jakiel R, Krawczyk-Ożóg A, et al. Anatomical description of malformations of the neck of the left atrial appendage. Clinical Anatomy. 2025;38(4):471-479. <a href="https://doi.org/10.1002/ca.24246">doi:10.1002/ca.24246</a></li>
+<li><a id="p2-ref-15"></a>Kulawiak-Gałąska DA, Gałąska R, Mielczarek M, et al. Pulmonary artery and left atrial appendage anatomical relationship using electrocardiogram-gated computed tomography: An important aspect of left atrial appendage occlusion. Cardiology Journal. 2021;28(2):342-344. <a href="https://doi.org/10.5603/CJ.a2021.0024">doi:10.5603/CJ.a2021.0024</a></li>
+<li><a id="p2-ref-16"></a>Sepahpour A, Ng MK, Storey P, et al. Death from pulmonary artery erosion complicating implantation of percutaneous left atrial appendage occlusion device. Heart Rhythm. 2013;10(12):1810-1811. <a href="https://doi.org/10.1016/j.hrthm.2013.07.046">doi:10.1016/j.hrthm.2013.07.046</a></li>
+<li><a id="p2-ref-17"></a>FDA MAUDE. Manufacturer report 2135147-2023-03775 (Abbott; Amplatzer Amulet). 2023. <a href="https://api.fda.gov/device/event.json?search=report_number:%222135147-2023-03775%22">Link</a></li>
+<li><a id="p2-ref-18"></a>Chamié F, Guerios E, Silva DPe, et al. Left Atrial Appendage Closure with the LAmbre Device - Initial Multicentre Experience in Brazil. Arquivos Brasileiros de Cardiologia. 2022;119(1):48-56. <a href="https://doi.org/10.36660/abc.20210275">doi:10.36660/abc.20210275</a></li>
+<li><a id="p2-ref-19"></a>Abbott. Amplatzer LAA Occluder Post-Approval Study, clinical investigation plan SJM-CIP-10122 Ver. C (NCT02964208). 2018. <a href="https://cdn.clinicaltrials.gov/large-docs/08/NCT02964208/Prot_000.pdf">Link</a> <em>Cited at p. 15.</em></li>
+<li><a id="p2-ref-20"></a>Freixa X, Chan JL, Tzikas A, et al. The Amplatzer™ Cardiac Plug 2 for left atrial appendage occlusion: novel features and first-in-man experience. EuroIntervention. 2013;8(9):1094-1098. <a href="https://doi.org/10.4244/EIJV8I9A167">doi:10.4244/EIJV8I9A167</a> <em>Cited at Table 2.</em></li>
+<li><a id="p2-ref-21"></a>Abbott Medical. Urgent field safety notice FA-Q326-SH-1: Amplatzer Amulet, risk of pulmonary artery perforation. 10 September 2026 (Swissmedic Vk_20260910_032). <a href="https://fsca.swissmedic.ch/mep/api/publications/Vk_20260910_032/documents/3">Link</a></li>
+<li><a id="p2-ref-22"></a>FDA. PMA P200049 (Amplatzer Amulet) supplement approval orders, openFDA. Accessed September 2026. <a href="https://api.fda.gov/device/pma.json?search=pma_number:P200049&amp;limit=100">Link</a></li>
+<li><a id="p2-ref-23"></a>Occlutech International. Urgent field safety notice: Occlutech LAA Occluder (FSN-20160928). 30 September 2016 (BfArM 08384/16). <a href="https://www.bfarm.de/SharedDocs/Kundeninfos/DE/11/2016/08384-16_kundeninfo_de.pdf?__blob=publicationFile&amp;v=2">Link</a></li>
+<li><a id="p2-ref-24"></a>Reinthaler M, Grosshauser J, Schmidt T, et al. Preclinical assessment of a modified Occlutech left atrial appendage closure device in a porcine model. Scientific Reports. 2021;11(1):2988. <a href="https://doi.org/10.1038/s41598-021-82359-1">doi:10.1038/s41598-021-82359-1</a></li>
+<li><a id="p2-ref-25"></a>Lam YY, Yan BP, Doshi SK, et al. Preclinical evaluation of a new left atrial appendage occluder (Lifetech LAmbre™ Device) in a canine model. International Journal of Cardiology. 2013;168(4):3996-4001. <a href="https://doi.org/10.1016/j.ijcard.2013.06.083">doi:10.1016/j.ijcard.2013.06.083</a></li>
+<li><a id="p2-ref-26"></a>Lifetech Scientific. LAxible left atrial appendage occluder, product page (in Chinese). Accessed September 2026. <a href="https://www.lifetechmed.com/product/p1/s1/left-atrial-appendage-occluder/20221216/l-axible.aspx">Link</a></li>
+<li><a id="p2-ref-27"></a>Chen Y, Tyc O, Molnárová O, Heller L, Šittner P. Tensile Deformation of Superelastic NiTi Wires in Wide Temperature and Microstructure Ranges. Shape Memory and Superelasticity. 2019;5:42–62. Published online 20 December 2018. <a href="https://doi.org/10.1007/s40830-018-00205-2">doi:10.1007/s40830-018-00205-2</a> <em>Cited at Experimental Results, Figures 9–12, Discussion, Instability of Cyclic Superelastic Deformation.</em></li>
+<li><a id="p2-ref-28"></a>FDA. Technical considerations for non-clinical assessment of medical devices containing nitinol: guidance (document 17013-R1). 9 July 2021. <a href="https://www.fda.gov/media/123272/download">Link</a> <em>Cited at Section IV.B.1.b–c, p. 8, Section IV.B.2.d, p. 9.</em></li>
+<li><a id="p2-ref-29"></a>FDA. Executive summary memorandum, WATCHMAN (PMA P080022), Circulatory System Devices Panel, 23 April 2009 (archived copy). <a href="https://web.archive.org/web/20170216044341/http://www.fda.gov/downloads/AdvisoryCommittees/CommitteesMeetingMaterials/MedicalDevices/MedicalDevicesAdvisoryCommittee/CirculatorySystemDevicesPanel/UCM151994.pdf">Link</a> <em>Cited at p. 35; p. 7, Table 2.</em></li>
+<li><a id="p2-ref-30"></a>Menne MF, Schrickel JW, Nickenig G, et al. Mechanical Performance of Two Left Atrial Appendage Occlusion Systems: In Vitro Comparison of Tug Force, Radial Force, Sealing and Deformation. Annals of Biomedical Engineering. 2018;46(9):1337-1347. <a href="https://doi.org/10.1007/s10439-018-2057-z">doi:10.1007/s10439-018-2057-z</a></li>
+<li><a id="p2-ref-31"></a>FDA. Summary of Safety and Effectiveness Data: WATCHMAN FLX and FLX Pro (PMA P130013/S074). 16 July 2025. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S074B.pdf">Link</a> <em>Cited at p. 4; pp. 1–2, 9.</em></li>
+<li><a id="p2-ref-32"></a>PMDA. Package inserts, WATCHMAN FLX and FLX Pro, editions 1–7 (in Japanese). 2021–2026. <a href="https://www.pmda.go.jp/PmdaSearch/kikiDetail/OldPdfData/30200BZX00383000_A_01/1">Link</a> <em>Cited at p. 2.</em></li>
+<li><a id="p2-ref-33"></a>Simard T, Jung RG, Lehenbauer K, et al. Predictors of Device-Related Thrombus Following Percutaneous Left Atrial Appendage Occlusion. Journal of the American College of Cardiology. 2021;78(4):297-313. <a href="https://doi.org/10.1016/j.jacc.2021.04.098">doi:10.1016/j.jacc.2021.04.098</a></li>
+<li><a id="p2-ref-34"></a>Wong I, Tzikas A, Søndergaard L, et al. The Strengths and Weaknesses of the LAA Covering Disc Occluders—Conceptually and in Practice. Interventional Cardiology Clinics. 2022;11(2):185-194. <a href="https://doi.org/10.1016/j.iccl.2021.11.010">doi:10.1016/j.iccl.2021.11.010</a></li>
+<li><a id="p2-ref-35"></a>AGA Medical. Field safety corrective action: Amplatzer Cardiac Plug, thrombus formation after implantation. 28 January 2011 (Swissmedic Vk_20110208_04; in German). <a href="https://fsca.swissmedic.ch/mep/api/publications/Vk_20110208_04/documents/0">Link</a></li>
+<li><a id="p2-ref-36"></a>Saliba WI, Kawai K, Sato Y, et al. Enhanced Thromboresistance and Endothelialization of a Novel Fluoropolymer-Coated Left Atrial Appendage Closure Device. JACC: Clinical Electrophysiology. 2023;9(8):1555-1567. <a href="https://doi.org/10.1016/j.jacep.2023.04.013">doi:10.1016/j.jacep.2023.04.013</a></li>
+<li><a id="p2-ref-37"></a>Kanj M, McElderry T, Trulock K, et al. Outcomes of Left Atrial Appendage Occlusion With a Coated Device. JACC: Clinical Electrophysiology. 2026;12(9):2238-2248. <a href="https://doi.org/10.1016/j.jacep.2026.03.029">doi:10.1016/j.jacep.2026.03.029</a></li>
+<li><a id="p2-ref-38"></a>Galea R, Mahmoudi K, Gräni C, et al. Watchman FLX vs. Watchman 2.5 in a Dual-Center Left Atrial Appendage Closure Cohort: the WATCH-DUAL study. Europace. 2022;24(9):1441-1450. <a href="https://doi.org/10.1093/europace/euac021">doi:10.1093/europace/euac021</a></li>
+<li><a id="p2-ref-39"></a>Galea R, La Fazia VM, Della Rocca DG, et al. Watchman FLX versus Watchman 2.5 for left atrial appendage closure: a propensity score-matched analysis. EuroIntervention. 2025;21(24):e1479-e1487. <a href="https://doi.org/10.4244/EIJ-D-25-00757">doi:10.4244/EIJ-D-25-00757</a></li>
+<li><a id="p2-ref-40"></a>Ryuzaki S, Kondo Y, Aihara T, et al. Incomplete Endothelialization, at 2 Years and 8 Months Postimplantation, of a WATCHMAN Left Atrial Appendage Closure Device. CJC Open. 2026;8(7):894-896. <a href="https://doi.org/10.1016/j.cjco.2026.02.018">doi:10.1016/j.cjco.2026.02.018</a></li>
+<li><a id="p2-ref-41"></a>Hasegawa K, Yambe M, Kinebuchi K, et al. Early Healing After Left Atrial Appendage Occlusion Confirmed by Surgical Explantation. JACC: Case Reports. 2026;31(19):107859. <a href="https://doi.org/10.1016/j.jaccas.2026.107859">doi:10.1016/j.jaccas.2026.107859</a></li>
+<li><a id="p2-ref-42"></a>Malik SA, Jhand A, Shabbir MA, Ahmad S, Goldsweig AM. Filling the Void: The Past, Present, and Future of Left Atrial Appendage Occlusion. The American Journal of Cardiology. 2025;254:13-20. <a href="https://doi.org/10.1016/j.amjcard.2025.06.011">doi:10.1016/j.amjcard.2025.06.011</a> <em>Cited at abstract.</em></li>
+<li><a id="p2-ref-43"></a>Boston Scientific. Sponsor briefing document, WATCHMAN (PMA P130013), Circulatory System Devices Panel, 11 December 2013 (archived copy). <a href="https://web.archive.org/web/20170216045605/http://www.fda.gov/downloads/AdvisoryCommittees/CommitteesMeetingMaterials/MedicalDevices/MedicalDevicesAdvisoryCommittee/CirculatorySystemDevicesPanel/UCM377935.pdf">Link</a> <em>Cited at pp. 34–37.</em></li>
+<li><a id="p2-ref-44"></a>Alkhouli M, Freeman JV, Ellis CR, et al. First Experience With Amulet in the United States: Early Insights From EMERGE LAA Postapproval Study. JACC: Cardiovascular Interventions. 2024;17(3):422-434. <a href="https://doi.org/10.1016/j.jcin.2023.11.027">doi:10.1016/j.jcin.2023.11.027</a></li>
+<li><a id="p2-ref-45"></a>FDA. PMA P130013 (WATCHMAN, FLX, FLX Pro) supplement approval orders, openFDA. Accessed September 2026. <a href="https://api.fda.gov/device/pma.json?search=pma_number:P130013&amp;limit=100">Link</a></li>
+<li><a id="p2-ref-46"></a>Sick PB, Schuler G, Hauptmann KE, et al. Initial Worldwide Experience With the WATCHMAN Left Atrial Appendage System for Stroke Prevention in Atrial Fibrillation. Journal of the American College of Cardiology. 2007;49(13):1490-1495. <a href="https://doi.org/10.1016/j.jacc.2007.02.035">doi:10.1016/j.jacc.2007.02.035</a></li>
+<li><a id="p2-ref-47"></a>Atritech Inc. Sponsor executive summary, WATCHMAN (PMA P080022), Circulatory System Devices Panel, 23 April 2009 (archived copy). <a href="https://web.archive.org/web/20170222173714/https://www.fda.gov/downloads/AdvisoryCommittees/CommitteesMeetingMaterials/MedicalDevices/MedicalDevicesAdvisoryCommittee/CirculatorySystemDevicesPanel/UCM152002.pdf">Link</a></li>
+<li><a id="p2-ref-48"></a>Boston Scientific. Form 10-K for fiscal year 2016. 23 February 2017. <a href="https://www.sec.gov/Archives/edgar/data/885725/000088572517000006/a2016form10-k.htm">Link</a></li>
+<li><a id="p2-ref-49"></a>Boston Scientific. Field safety notice 91133341-FA: WATCHMAN FLX, urgent medical device recall, March 2016, and follow-up 91133341AB-FA, October 2016 (BfArM 02623/16). <a href="https://www.bfarm.de/SharedDocs/Kundeninfos/EN/11/2016/02623-16_kundeninfo_en.pdf">Link</a> <em>Cited at p. 1.</em></li>
+<li><a id="p2-ref-50"></a>Park JW, Bethencourt A, Sievert H, et al. Left atrial appendage closure with Amplatzer cardiac plug in atrial fibrillation: initial European experience. Catheterization and Cardiovascular Interventions. 2011;77(5):700-706. <a href="https://doi.org/10.1002/ccd.22764">doi:10.1002/ccd.22764</a></li>
+<li><a id="p2-ref-51"></a>Freixa X, Abualsaud A, Chan J, et al. Left atrial appendage occlusion: initial experience with the Amplatzer Amulet. International Journal of Cardiology. 2014;174(3):492-496. <a href="https://doi.org/10.1016/j.ijcard.2014.03.154">doi:10.1016/j.ijcard.2014.03.154</a></li>
+<li><a id="p2-ref-52"></a>ClinicalTrials.gov. First-in-man study of the LAmbre II occluder (NCT07385599). <a href="https://clinicaltrials.gov/study/NCT07385599?tab=history">Link</a></li>
+<li><a id="p2-ref-53"></a>Pivato CA, Liccardo G, Sanz-Sanchez J, et al. Left atrial appendage closure with the II generation Ultraseal device: An international registry. The LIGATE study. Catheterization and Cardiovascular Interventions. 2022;100(4):620-627. <a href="https://doi.org/10.1002/ccd.30336">doi:10.1002/ccd.30336</a></li>
+<li><a id="p2-ref-54"></a>Ahlgrimm B, Pottgiesser T, Stachon P, et al. The Cardia Ultraseal Left Atrial Appendage Occluder. JACC: Cardiovascular Interventions. 2019;12(19):1987-1989. <a href="https://doi.org/10.1016/j.jcin.2019.06.026">doi:10.1016/j.jcin.2019.06.026</a></li>
+<li><a id="p2-ref-55"></a>Cardia Inc. Urgent field safety notice: Ultraseal LAA closure device. 8 April 2020 (BfArM 05595/20). <a href="https://www.bfarm.de/SharedDocs/Kundeninfos/EN/11/2020/05595-20_kundeninfo_en.pdf?__blob=publicationFile">Link</a></li>
+<li><a id="p2-ref-56"></a>Coherex Medical. Field safety notice: WaveCrest delivery sheath. 8 August 2014 (ANSM 201411069; in French). <a href="https://archive.ansm.sante.fr/content/download/67651/864557/version/1/file/rlp-140925-coherex.pdf">Link</a></li>
+<li><a id="p2-ref-57"></a>Coherex Medical. WAVECREST 2 clinical investigation plan CHX_IP014 Rev H (NCT03302494). 2019. <a href="https://cdn.clinicaltrials.gov/large-docs/94/NCT03302494/Prot_002.pdf">Link</a></li>
+<li><a id="p2-ref-58"></a>Sommer RJ, Kim JH, Szerlip M, et al. Conformal Left Atrial Appendage Seal Device for Left Atrial Appendage Closure. JACC: Cardiovascular Interventions. 2021;14(21):2368-2374. <a href="https://doi.org/10.1016/j.jcin.2021.08.060">doi:10.1016/j.jcin.2021.08.060</a></li>
+<li><a id="p2-ref-59"></a>Turagam MK, Neuzil P, Hala P, et al. Intracardiac Echocardiography-Guided Left Atrial Appendage Closure With a Novel Foam-Based Conformable Device: Safety and 1-Year Outcomes. JACC: Clinical Electrophysiology. 2022;8(2):197-207. <a href="https://doi.org/10.1016/j.jacep.2021.10.001">doi:10.1016/j.jacep.2021.10.001</a></li>
+<li><a id="p2-ref-60"></a>Conformal Medical. Launch of the GLACE study with next-generation CLAAS AcuFORM. Press release, 1 October 2024. <a href="https://conformalmedical.com/company/news/conformal-medical-announces-launch-of-the-glace-study-with-next-gen-claas-acuform-left-atrial-appendage-occlusion-device">Link</a></li>
+<li><a id="p2-ref-61"></a>Toumanides S, Sideris EB, Agricola T, et al. Transcatheter Patch Occlusion of the Left Atrial Appendage Using Surgical Adhesives in High-Risk Patients With Atrial Fibrillation. Journal of the American College of Cardiology. 2011;58(21):2236-2240. <a href="https://doi.org/10.1016/j.jacc.2011.08.036">doi:10.1016/j.jacc.2011.08.036</a></li>
+<li><a id="p2-ref-62"></a>Bartus K, Gafoor S, Tschopp D, et al. Left atrial appendage ligation with the next generation LARIAT+ suture delivery device: early clinical experience. Int J Cardiol. 2016;215:244-247. <a href="https://doi.org/10.1016/j.ijcard.2016.04.005">doi:10.1016/j.ijcard.2016.04.005</a></li>
+<li><a id="p2-ref-63"></a>FDA. 510(k) K153096: LARIAT RS suture delivery device. Cleared 25 November 2015. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf15/K153096.pdf">Link</a></li>
+<li><a id="p2-ref-64"></a>Khan MA, Muhammad A, Shahbaz H, et al. A systematic review and meta-analysis comparing the clinical outcomes of the Watchman FLX versus Watchman 2.5 device for transcatheter left atrial appendage occlusion in patients with atrial fibrillation. Critical Pathways in Cardiology. 2026 (epub 2026-07-23). <a href="https://doi.org/10.1097/HPC.0000000000000434">doi:10.1097/HPC.0000000000000434</a></li>
+<li><a id="p2-ref-65"></a>FDA. Summary of Safety and Effectiveness Data: WATCHMAN (PMA P130013). 13 March 2015. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013B.pdf">Link</a> <em>Cited at p. 9, Table 4.</em></li>
+<li><a id="p2-ref-66"></a>PMDA. Package insert, Amplatzer Amulet (in Japanese). October 2024. <a href="https://www.pmda.go.jp/PmdaSearch/kikiDetail/ResultDataSetPDF/381005_30600BZX00213000_A_01_02">Link</a></li>
+<li><a id="p2-ref-67"></a>Vainrib AF, Bamira D, Benenstein RJ, et al. Echocardiographic Guidance of the Novel WaveCrest Left Atrial Appendage Occlusion Device. CASE. 2018;2(6):297-300. <a href="https://doi.org/10.1016/j.case.2018.07.005">doi:10.1016/j.case.2018.07.005</a></li>
+<li><a id="p2-ref-68"></a>Mahfoud F, Ukena C, Adamson PD, et al. Left Atrial Appendage Occlusion Using a Novel System. JACC: Cardiovascular Interventions. 2025;18(24):3072-3083. <a href="https://doi.org/10.1016/j.jcin.2025.10.002">doi:10.1016/j.jcin.2025.10.002</a></li>
+<li><a id="p2-ref-69"></a>Boston Scientific. WATCHMAN FLX Pro instructions for use (51245861). July 2023 (third-party copy). <a href="https://acforum.org/web/resource_files/1739291757-34025.pdf">Link</a> <em>Cited at p. 2, Table 1.</em></li>
+<li><a id="p2-ref-70"></a>Nielsen-Kudsk JE, Kramer A, Andersen A, et al. First-in-human left atrial appendage closure using the WATCHMAN FLX Pro device: a case report. European Heart Journal - Case Reports. 2024;8(4):ytae135. <a href="https://doi.org/10.1093/ehjcr/ytae135">doi:10.1093/ehjcr/ytae135</a></li>
+<li><a id="p2-ref-71"></a>Schmidt B, Nielsen-Kudsk JE, Ellis CR, et al. Incidence, Predictors, and Clinical Outcomes of Device-Related Thrombus in the Amulet IDE Trial. JACC: Clinical Electrophysiology. 2023;9(1):96-107. <a href="https://doi.org/10.1016/j.jacep.2022.07.014">doi:10.1016/j.jacep.2022.07.014</a></li>
+<li><a id="p2-ref-72"></a>PMDA. Review report: WATCHMAN (in Japanese). 13 December 2018. <a href="https://www.pmda.go.jp/medical_devices/2019/M20190226001/300500000_23100BZX00049000_A100_1.pdf">Link</a> <em>Cited at pp. 12–13; Table 2.</em></li>
+<li><a id="p2-ref-73"></a>ClinicalTrials.gov. EVOLVE: Next Generation WATCHMAN LAA Closure Technology (NCT01196897). <a href="https://clinicaltrials.gov/study/NCT01196897">Link</a></li>
+<li><a id="p2-ref-74"></a>Boston Scientific. Boston Scientific receives CE mark for next-generation WATCHMAN FLX left atrial appendage closure device. Press release, 19 November 2015. <a href="https://news.bostonscientific.eu/2015-11-19-Boston-Scientific-receives-CE-mark-for-next-generation-WATCHMAN-FLX-TM-left-atrial-appendage-closure-device">Link</a></li>
+<li><a id="p2-ref-75"></a>Ledwoch J, Franke J, Gonzaga M, et al. Left atrial appendage closure: First in man with the 4th generation watchman device. Catheterization and Cardiovascular Interventions. 2016;87(4):787-794. (Online 2015 Sep 10.). <a href="https://doi.org/10.1002/ccd.26238">doi:10.1002/ccd.26238</a></li>
+<li><a id="p2-ref-76"></a>ClinicalTrials.gov. VERITAS study (NCT06707688), record history. <a href="https://clinicaltrials.gov/study/NCT06707688?tab=history">Link</a></li>
+<li><a id="p2-ref-77"></a>ClinicalTrials.gov. LAmbre Plus randomized trial (NCT06465706). <a href="https://clinicaltrials.gov/study/NCT06465706">Link</a></li>
+</ol>
+</main></body></html>

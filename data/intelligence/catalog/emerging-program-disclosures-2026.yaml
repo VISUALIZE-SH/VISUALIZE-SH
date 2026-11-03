@@ -1,0 +1,65 @@
+observedAt: '2026-11-02'
+sources:
+  - id: src-wor85-emerging-cephea-system
+    title: Abbott announces launch of the CROWN-MV pivotal study of Cephea
+    url: >-
+      https://abbott.mediaroom.com/2026-10-29-Abbott-initiates-pivotal-trial-for-Cephea-TM-device,-an-innovative-treatment-for-mitral-heart-valve-disease
+    kind: manufacturer
+    publisher: Abbott
+    publishedAt:
+      value: '2026-10-29'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+  - id: src-wor85-emerging-bbp717
+    title: BridgeBio nominates BBP-717 amyloid-depleter candidate for ATTR-CM
+    url: >-
+      https://www.globenewswire.com/news-release/2026/10/29/3391801/0/en/bridgebio-reports-third-quarter-2026-financial-results-and-corporate-updates.html
+    kind: manufacturer
+    publisher: BridgeBio via GlobeNewswire
+    publishedAt:
+      value: '2026-10-29'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+  - id: src-wor85-emerging-parasol-laac
+    title: Parasol announces support for investigational catheter-and-gel LAA closure development
+    url: https://parasolmedtech.com/parasol-medtech-2-75m-funding/
+    kind: manufacturer
+    publisher: Parasol Med Tech
+    publishedAt:
+      value: '2026-10-26'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+bibliography:
+  - id: bib-wor85-emerging-cephea-system
+    entityIds:
+      - dev-cephea-mitral-system
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-wor85-emerging-cephea-system
+        locator: >-
+          Dateline Oct. 29, 2026 and first two body paragraphs; “Data support Cephea’s third-generation
+          delivery technology”; investigational-use paragraph.
+    reviewStatus: reviewed
+  - id: bib-wor85-emerging-bbp717
+    entityIds:
+      - rx-bbp717
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-wor85-emerging-bbp717
+        locator: >-
+          Dated Oct. 29, 2026 release; “BBP-717 – Monoclonal antibody depleter for ATTR-CM”, two nonquoted
+          bullets; pipeline table BBP-717 row.
+    reviewStatus: reviewed
+  - id: bib-wor85-emerging-parasol-laac
+    entityIds:
+      - dev-parasol-catheter-gel-laac
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-wor85-emerging-parasol-laac
+        locator: >-
+          Visible date October 26, 2026; first and third nonquoted body paragraphs; “About Parasol Med Tech,
+          Inc.” and final investigational-platform statement.
+    reviewStatus: reviewed
