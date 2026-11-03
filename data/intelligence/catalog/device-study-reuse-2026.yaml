@@ -1,0 +1,211 @@
+observedAt: '2026-11-02'
+sources:
+  - id: src-wor85-sikelia
+    title: Early Safety and Feasibility Study of a Novel Transcatheter Aortic Valve With Polymeric Leaflets
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13080745/fullTextXML
+    kind: publication
+    publisher: 'JACC: Asia, original research article distributed through Europe PMC'
+    publishedAt:
+      value: '2026-01-31'
+      precision: day
+    retrievedAt: '2026-10-26'
+    access: public
+  - id: src-wor85-articor
+    title: Patient-specific mixed reality for Venus P-valve implantation
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12483681/fullTextXML
+    kind: publication
+    publisher: International Journal of Cardiology Congenital Heart Disease
+    publishedAt:
+      value: '2025-08-25'
+      precision: day
+    retrievedAt: '2026-10-26'
+    access: public
+  - id: src-wor85-vsling
+    title: Percutaneous Papillary Muscle Banding to Reshape Failing Left Ventricle
+    url: https://www.jacc.org/doi/10.1016/j.jcin.2025.10.047
+    kind: publication
+    publisher: 'JACC: Cardiovascular Interventions / original study'
+    publishedAt:
+      value: '2026-01-12'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+bibliography:
+  - id: bib-wor85-device-study-reuse-2026-1
+    entityIds:
+      - dev-sikelia-polymeric-tavr
+    versionIds:
+      - ver-sikelia-fih-study
+    sourceRefs:
+      - sourceId: src-wor85-sikelia
+        locator: >-
+          Original XML Methods Device Description p0030–35; Implantation p0040; Results p0065; Table 2/tbl2;
+          clinical outcome narrative.
+    reviewStatus: reviewed
+  - id: bib-wor85-device-study-reuse-2026-2
+    entityIds:
+      - dig-articor-pulmonary-planning
+    versionIds:
+      - ver-articor-pulmonary-study
+    sourceRefs:
+      - sourceId: src-wor85-articor
+        locator: >-
+          Original XML Body Methods2.4 p0120; Results p0165–p0170; Table 3/tbl3 diameter/length concordance;
+          Discussion p0190. Table 4 is approach concordance, not sizing.
+    reviewStatus: reviewed
+  - id: bib-wor85-device-study-reuse-2026-3
+    entityIds:
+      - dev-vsling
+    versionIds:
+      - ver-vsling-eu-case
+    sourceRefs:
+      - sourceId: src-wor85-vsling
+        locator: >-
+          Original written body paragraphs2–3, before Funding; Figure1 caption for device identity only; JACC
+          header/History online12 January2026. Videos not used.
+    reviewStatus: reviewed
+families:
+  - id: family-sikelia-study
+    name: Sikelia historical study valve
+    manufacturer: MitrAssist Lifesciences Limited
+    entityIds:
+      - dev-sikelia-polymeric-tavr
+    conditionIds:
+      - cond-as
+    description: >-
+      Historical polymeric-leaflet THV described in the 12-patient original study; not a later commercial
+      generation.
+  - id: family-articor-pulmonary-study
+    name: ARTICOR pulmonary planning study workflow
+    manufacturer: Artiness (study attribution)
+    entityIds:
+      - dig-articor-pulmonary-planning
+    conditionIds:
+      - cond-pv
+    description: Retrospective study-specific holographic planning workflow; exact software release unestablished.
+  - id: family-vsling-study
+    name: VSling papillary-muscle banding
+    manufacturer: Cardiac Success Ltd
+    entityIds:
+      - dev-vsling
+    conditionIds:
+      - cond-hfref
+    description: Study/case-specific transcatheter papillary-muscle approximation; not a population efficacy claim.
+versions:
+  - id: ver-sikelia-fih-study
+    familyId: family-sikelia-study
+    graphEntityId: dev-sikelia-polymeric-tavr
+    name: Sikelia — historical first-in-human configuration
+    kind: device
+    clinicalRole: treats
+    summary: Original 12-patient study configuration; no later-generation bridge.
+    sourceRefs:
+      - sourceId: src-wor85-sikelia
+        locator: >-
+          Original XML Methods Device Description p0030–35; Implantation p0040; Results p0065; Table 2/tbl2;
+          clinical outcome narrative.
+    reviewStatus: reviewed
+  - id: ver-articor-pulmonary-study
+    familyId: family-articor-pulmonary-study
+    graphEntityId: dig-articor-pulmonary-planning
+    name: ARTICOR — pulmonary planning study workflow
+    kind: digital
+    clinicalRole: plans
+    digitalSubtype: planning
+    summary: Study-specific workflow; exact software build and FDA planner equivalence unestablished.
+    sourceRefs:
+      - sourceId: src-wor85-articor
+        locator: >-
+          Original XML Body Methods2.4 p0120; Results p0165–p0170; Table 3/tbl3 diameter/length concordance;
+          Discussion p0190. Table 4 is approach concordance, not sizing.
+    reviewStatus: reviewed
+  - id: ver-vsling-eu-case
+    familyId: family-vsling-study
+    graphEntityId: dev-vsling
+    name: VSling — written EU case report
+    kind: device
+    clinicalRole: treats
+    summary: Single written case report; not a named commercial hardware revision.
+    sourceRefs:
+      - sourceId: src-wor85-vsling
+        locator: >-
+          Original written body paragraphs2–3, before Funding; Figure1 caption for device identity only; JACC
+          header/History online12 January2026. Videos not used.
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor85-device-study-reuse-2026-1
+    versionId: ver-sikelia-fih-study
+    category: design
+    key: wor85-device-study-reuse-2026-1
+    label: Historical study construction and delivery
+    value: >-
+      Self-expanding frame; polyurethane trileaflet valve and skirt, automated dip molding;22 Fstudy delivery
+      sheath.
+    availability: reported
+    basis: directly_reported
+    context: Original Methods p 0030–40; study sizes 23,26,29 mm, not proof every size was implanted.
+    limitation: No current commercial specification, comparative durability or TRISKELE cohort bridge.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor85-sikelia
+        locator: >-
+          Original XML Methods Device Description p0030–35; Implantation p0040; Results p0065; Table 2/tbl2;
+          clinical outcome narrative.
+    reviewStatus: reviewed
+  - id: claim-wor85-device-study-reuse-2026-2
+    versionId: ver-sikelia-fih-study
+    category: evidence
+    key: wor85-device-study-reuse-2026-2
+    label: Historical first-in-human outcomes
+    value: >-
+      Device success 11/12; procedural success 10/12; one fatal delayed right-coronary obstruction and one
+      complete valve retrieval.
+    availability: reported
+    basis: directly_reported
+    context: Prospective uncontrolled 12-patient cohort; original Table 2 and Results p 0065.
+    limitation: Small selected cohort; no comparative safety or durability conclusion.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor85-sikelia
+        locator: >-
+          Original XML Methods Device Description p0030–35; Implantation p0040; Results p0065; Table 2/tbl2;
+          clinical outcome narrative.
+    reviewStatus: reviewed
+  - id: claim-wor85-device-study-reuse-2026-3
+    versionId: ver-articor-pulmonary-study
+    category: digital
+    key: wor85-device-study-reuse-2026-3
+    label: Sizing agreement and limits
+    value: In 26 patients, hologram-to-implant diameter agreement 13/26 (50%); length 25/26 (96.15%).
+    availability: reported
+    basis: directly_reported
+    context: Original Table 3/tbl 3, retrospective single-center Venus P-valve planning workflow.
+    limitation: >-
+      Table 4 covers approach, not sizing. Tissue elasticity/distensibility limitations; no improved clinical
+      outcomes or FDA build bridge.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor85-articor
+        locator: >-
+          Original XML Body Methods2.4 p0120; Results p0165–p0170; Table 3/tbl3 diameter/length concordance;
+          Discussion p0190. Table 4 is approach concordance, not sizing.
+    reviewStatus: reviewed
+  - id: claim-wor85-device-study-reuse-2026-4
+    versionId: ver-vsling-eu-case
+    category: evidence
+    key: wor85-device-study-reuse-2026-4
+    label: Original written single-case observation
+    value: >-
+      Papillary-muscle distance 28→11 mm, associated MR/remodeling changes maintained over 6 months in one
+      case.
+    availability: reported
+    basis: directly_reported
+    context: Original written Images in Intervention body paragraphs 2–3; no video evidence used.
+    limitation: One case, not a trial cohort, comparative benefit, general safety rate or commercial-build validation.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor85-vsling
+        locator: >-
+          Original written body paragraphs2–3, before Funding; Figure1 caption for device identity only; JACC
+          header/History online12 January2026. Videos not used.
+    reviewStatus: reviewed

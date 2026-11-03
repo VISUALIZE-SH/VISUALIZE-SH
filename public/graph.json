@@ -1,22 +1,507 @@
 {
   "meta": {
-    "generatedAt": "2026-10-29T04:23:16.393Z",
-    "lastUpdated": "2026-10-26",
+    "generatedAt": "2026-11-03T16:55:32.970Z",
+    "lastUpdated": "2026-11-03",
     "counts": {
       "condition": 23,
-      "device": 147,
-      "pharmaceutical": 20,
+      "device": 150,
+      "pharmaceutical": 21,
       "procedure": 15,
       "digital": 19,
       "company": 135,
-      "trial": 173
+      "trial": 183
     },
-    "draftCount": 115,
-    "total": 532,
-    "newsCount": 161,
-    "latestNewsDate": "2026-10-22"
+    "draftCount": 114,
+    "total": 546,
+    "newsCount": 185,
+    "latestNewsDate": "2026-11-03"
   },
   "news": [
+    {
+      "id": "news-2026-11-03-laao-design-series-part-2",
+      "publishedAt": "2026-11-03",
+      "contentType": "editorial",
+      "title": "LAAO design review, Part 2: Design changes between device generations and their documented outcomes",
+      "summary": "Part 2 of the LAAO engineering Editorial series compares changes to anchors, ends, hubs, and surfaces across device generations. It examines the stated design rationale, reported outcomes, and the limits of attributing an outcome to a particular change.",
+      "sourceName": "VISUALIZE-SH",
+      "sourceUrl": "https://visualize-sh.com/editorials/laao-design-series-part-2/",
+      "topicTags": [
+        "LAAO",
+        "device design",
+        "engineering",
+        "device generations"
+      ],
+      "relevantNodeIds": [
+        "cond-af",
+        "dev-amulet-360",
+        "dev-amulet",
+        "dev-watchman-flx",
+        "dev-watchman-flx-2015"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-laao-design-series-part-3",
+      "publishedAt": "2026-11-03",
+      "contentType": "editorial",
+      "title": "LAAO design review, Part 3: Sizing, compression and radial force",
+      "summary": "Part 3 reviews LAAO sizing and release rules, nitinol mechanics, measured radial-force data, leak studies, and computational models. It distinguishes geometric compression from force and contact, and examines the limits of the available evidence.",
+      "sourceName": "VISUALIZE-SH",
+      "sourceUrl": "https://visualize-sh.com/editorials/laao-design-series-part-3/",
+      "topicTags": [
+        "LAAO",
+        "device design",
+        "engineering",
+        "sizing",
+        "compression",
+        "radial force"
+      ],
+      "relevantNodeIds": [
+        "cond-af",
+        "dev-watchman-original",
+        "dev-watchman-flx",
+        "dev-amulet"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-laao-design-series-part-4",
+      "publishedAt": "2026-11-03",
+      "contentType": "editorial",
+      "title": "LAAO design review, Part 4: Durability: testing, analysis and field experience",
+      "summary": "Part 4 reviews LAAO fatigue testing, computational analysis, corrosion, and documented field events. It distinguishes specific failure reports and test-to-success results from population failure rates and margins to failure, and closes with the series conclusions.",
+      "sourceName": "VISUALIZE-SH",
+      "sourceUrl": "https://visualize-sh.com/editorials/laao-design-series-part-4/",
+      "topicTags": [
+        "LAAO",
+        "device design",
+        "engineering",
+        "durability",
+        "fatigue"
+      ],
+      "relevantNodeIds": [
+        "cond-af",
+        "dev-watchman-original",
+        "dev-watchman-flx",
+        "dev-amulet"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-02-progress-primary-results",
+      "publishedAt": "2026-11-02",
+      "title": "PROGRESS: early TAVR lowers two-year death/HF-event composite in at-risk moderate AS",
+      "summary": "In PROGRESS, 744 patients aged ≥65 with at-risk moderate AS were randomized to early TAVR (SAPIEN 3/Ultra/Ultra RESILIA permitted) or surveillance. Two-year death/HF-event estimates were 16.7% vs 23.9% (difference −7.2 pp; 95% CI −13.1 to −1.3; P=.02). Death alone was 8.4% vs 7.3%; mortality benefit was not established. The 30 day TAVR safety composite met its performance goal; first secondary P=.07 stopped hierarchical testing. Open-label results do not establish generation-specific benefit or a new indication.",
+      "sourceName": "New England Journal of Medicine",
+      "sourceUrl": "https://www.nejm.org/doi/full/10.1056/NEJMoa2607326",
+      "additionalSources": [
+        {
+          "label": "Official trial registry",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT04889872"
+        }
+      ],
+      "topicTags": [
+        "TCT 2026",
+        "TAVR",
+        "moderate aortic stenosis"
+      ],
+      "relevantNodeIds": [
+        "trial-progress",
+        "dev-sapien-3",
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-02-simplaafy-primary-results",
+      "publishedAt": "2026-11-02",
+      "title": "SIMPLAAFY: two monotherapy strategies meet six-month noninferiority after FLX Pro",
+      "summary": "After successful uncomplicated FLX Pro implantation, 1,857 patients were randomized to DAPT, 3 months reduced-dose NOAC then aspirin, or aspirin alone. In 1,797 primary-analysis patients, the 6 month death/stroke/systemic embolism/major bleeding composite was 6.9%, 5.1%, 3.3%, respectively. Both monotherapies met noninferiority versus DAPT (7.2 pp margin; P<.001 each). Bleeding/45 day DRT findings are exploratory; 12 month results are pending. No equivalence to full-dose NOACs, other devices or complicated implants is established.",
+      "sourceName": "JAMA",
+      "sourceUrl": "https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361",
+      "additionalSources": [
+        {
+          "label": "Official trial registry",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT06521463"
+        },
+        {
+          "label": "Boston Scientific original disclosure (sponsor claims)",
+          "url": "https://news.bostonscientific.com/2026-11-02-SIMPLAAFY-study-of-the-WATCHMAN-FLX-TM-Pro-Left-Atrial-Appendage-Closure-Device-meets-primary-endpoints"
+        }
+      ],
+      "topicTags": [
+        "TCT 2026",
+        "LAAO",
+        "antithrombotic therapy"
+      ],
+      "relevantNodeIds": [
+        "dev-watchman-flx",
+        "cond-af",
+        "co-boston-scientific"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-01-veritas-amulet-360-one-year",
+      "publishedAt": "2026-11-01",
+      "title": "VERITAS reports one-year Amulet 360 results in 458 implant attempts",
+      "summary": "The single-arm VERITAS study reports one-year outcomes after 458 Amulet 360 implant attempts. Complete closure was seen in 359/394 patients with imaging (91.1%); estimated ischemic stroke/systemic embolism was 1.8% and major bleeding 6.6%. Cumulative device-related thrombus was 3.3%; the selected investigational cohort and lack of a control group limit comparisons with other LAAO devices or anticoagulants.",
+      "sourceName": "JACC: Cardiovascular Interventions — original study",
+      "sourceUrl": "https://www.jacc.org/doi/10.1016/j.jcin.2026.10.023",
+      "topicTags": [
+        "laao",
+        "clinical-research",
+        "tct-2026"
+      ],
+      "relevantNodeIds": [
+        "dev-amulet-360",
+        "co-abbott",
+        "proc-laac",
+        "cond-af"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-31-andes-one-year-antithrombotic-follow-up",
+      "publishedAt": "2026-10-31",
+      "title": "ANDES reports one-year follow-up of 60-day antithrombotic strategies after LAA closure",
+      "summary": "ANDES one-year follow-up compares 253 patients assigned to 60 days of DOAC with 257 assigned to dual antiplatelet therapy after LAA closure; most then switched to single antiplatelet therapy. Any bleeding was 24.1% versus 32.3% (risk difference −8.2 percentage points; 95% CI −15.9 to −0.4), driven by the first 60 days. No later-event advantage was demonstrated; incomplete imaging and limited power constrain thrombus comparisons.",
+      "sourceName": "JACC — original ANDES research letter",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726101764",
+      "additionalSources": [
+        {
+          "label": "Publisher DOI for original ANDES one-year report",
+          "url": "https://doi.org/10.1016/j.jacc.2026.10.049"
+        }
+      ],
+      "topicTags": [
+        "laao",
+        "antithrombotic-therapy",
+        "clinical-research",
+        "tct-2026"
+      ],
+      "relevantNodeIds": [
+        "proc-laac",
+        "cond-af"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-31-expand-tavr-ii-design-baseline",
+      "publishedAt": "2026-10-31",
+      "title": "Medtronic reports EXPAND TAVR II design and baseline data in moderate aortic stenosis",
+      "summary": "Medtronic announced design and baseline information for EXPAND TAVR II, evaluating Evolut TAVR plus guideline-directed therapy versus medical therapy in moderate aortic stenosis. This is a study-design announcement, not a treatment-outcome readout. The sponsor states that moderate-AS use remains investigational.",
+      "sourceName": "Medtronic",
+      "sourceUrl": "https://news.medtronic.com/Medtronic-presents-Evolut-EXPAND-TAVR-II-trial-design-and-baseline-characteristics-of-patients-with-moderate-aortic-stenosis-at-TCT-2026",
+      "topicTags": [
+        "aortic-stenosis",
+        "tavr",
+        "trial-design"
+      ],
+      "relevantNodeIds": [
+        "co-medtronic",
+        "dev-evolut",
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-31-explore-mr-posterior-leaflet-restoration",
+      "publishedAt": "2026-10-31",
+      "title": "Posterior Leaflet Restoration for Secondary Mitral Regurgitation: EXPLORE MR Results",
+      "summary": "EXPLORE MR reports an uncontrolled early-feasibility study of the MRace posterior-leaflet restoration implant in 78 patients, with one-year MR grades available for 32. MR was moderate or less in 29/32 assessed patients (90.6%); Kaplan–Meier mortality was 29.5% at one year. Limited available imaging and post hoc LV-size subgroups prevent a comparative treatment-benefit conclusion.",
+      "sourceName": "JACC: Cardiovascular Interventions — original study",
+      "sourceUrl": "https://www.jacc.org/doi/10.1016/j.jcin.2026.10.013",
+      "additionalSources": [
+        {
+          "label": "PubMed abstract and electronic-publication metadata",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42967235/"
+        }
+      ],
+      "topicTags": [
+        "mitral-repair",
+        "device-research",
+        "tct-2026"
+      ],
+      "relevantNodeIds": [
+        "dev-polares-mrace",
+        "cond-mr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-31-paradigm-pvl-thirty-day",
+      "publishedAt": "2026-10-31",
+      "title": "PARADIGM reports 30-day results with a dedicated PVL closure plug",
+      "summary": "In the single-arm PARADIGM study of 200 APVL3 implant attempts, the primary composite was met in 188/200 (94.0%) against a 65% performance goal. The separate 30-day procedural-success measure was 140/181 (77.3%); four patients died within 30 days. Selected anatomy, missing assessments and short follow-up limit generalizability; these clinical results do not verify Paraclose marketing authorization.",
+      "sourceName": "JACC: Cardiovascular Interventions — original PARADIGM study",
+      "sourceUrl": "https://www.jacc.org/doi/10.1016/j.jcin.2026.10.024",
+      "additionalSources": [
+        {
+          "label": "Official PARADIGM trial record NCT04489823",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT04489823"
+        }
+      ],
+      "topicTags": [
+        "pvl-closure",
+        "clinical-research",
+        "tct-2026"
+      ],
+      "relevantNodeIds": [
+        "dev-amplatzer-pvl-plug-iii",
+        "co-abbott",
+        "cond-pvl"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-30-balloon-valve-asymmetry-hf",
+      "publishedAt": "2026-10-30",
+      "title": "Impact of Balloon-Expandable Valve Asymmetry on Heart Failure Post Transcatheter Aortic Valve Replacement",
+      "summary": "A prospective registry abstract examined valve asymmetry and 2-year HF hospitalization after balloon-expandable TAVR. The continuous asymmetry index was not significantly associated with the endpoint; an exploratory threshold analysis reported higher late-HF risk above 7.48%, which needs confirmation.",
+      "sourceName": "Original study (PubMed record)",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42960753&retmode=xml",
+      "additionalSources": [
+        {
+          "label": "Original study DOI 10.1161/jaha.126.049304 (publisher full text not read)",
+          "url": "https://doi.org/10.1161/jaha.126.049304"
+        }
+      ],
+      "topicTags": [
+        "tavr",
+        "heart-failure",
+        "device-geometry"
+      ],
+      "relevantNodeIds": [
+        "proc-tavi",
+        "cond-hf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-29-abbott-cephea-crown-mv-launch",
+      "publishedAt": "2026-10-29",
+      "title": "Abbott announces launch of the CROWN-MV pivotal study of Cephea",
+      "summary": "Abbott announced initiation and first enrollment of CROWN-MV, its pivotal study of the investigational Cephea Mitral Valve System in symptomatic mitral valve disease. The announcement also schedules a separate early-feasibility report using the third-generation delivery system at TCT; it provides no readout from the pivotal trial.",
+      "sourceName": "Abbott",
+      "sourceUrl": "https://abbott.mediaroom.com/2026-10-29-Abbott-initiates-pivotal-trial-for-Cephea-TM-device,-an-innovative-treatment-for-mitral-heart-valve-disease",
+      "topicTags": [
+        "tmvr",
+        "trial-initiation",
+        "tct-2026"
+      ],
+      "relevantNodeIds": [
+        "co-abbott",
+        "cond-mr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-29-bridgebio-bbp717-attr-development",
+      "publishedAt": "2026-10-29",
+      "title": "BridgeBio nominates BBP-717 amyloid-depleter candidate for ATTR-CM",
+      "summary": "BridgeBio announced BBP-717 as a development candidate intended to remove amyloid deposits in ATTR cardiomyopathy, with an IND submission planned for 2027. This is a sponsor development announcement; it provides no human efficacy or safety results for BBP-717.",
+      "sourceName": "BridgeBio via GlobeNewswire",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/29/3391801/0/en/bridgebio-reports-third-quarter-2026-financial-results-and-corporate-updates.html",
+      "topicTags": [
+        "attr-cm",
+        "drug-development"
+      ],
+      "relevantNodeIds": [
+        "co-bridgebio",
+        "cond-attr-cm"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-29-egnite-pathway-stamford-ecg-ai-pilot",
+      "publishedAt": "2026-10-29",
+      "title": "egnite, Pathway Labs and Stamford Health announce structural-heart ECG-AI pilot",
+      "summary": "egnite announced a Stamford Health pilot combining Pathway Labs’ EchoNext ECG screening output with its CardioCare care-coordination platform. The pilot aims to prioritize echocardiographic follow-up and assess echo completion and time to specialist evaluation; the announcement does not report those outcomes.",
+      "sourceName": "egnite",
+      "sourceUrl": "https://egnitehealth.com/egnite-pathway-labs-and-stamford-health-launch-first-of-its-kind-pilot-using-ecg-based-ai-to-help-clinicians-identify-and-manage-structural-heart-patients/",
+      "topicTags": [
+        "digital-health",
+        "structural-heart-screening",
+        "imaging-ai"
+      ],
+      "relevantNodeIds": [
+        "cond-hf",
+        "co-edwards"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-28-vsling-iii-registry-recruiting",
+      "publishedAt": "2026-10-28",
+      "title": "Vsling III registry revision lists recruiting status",
+      "summary": "The October 28 ClinicalTrials.gov revision for Vsling III lists recruiting status and a target of 10 participants. This is NCT06002386, separate from Vsling I; the registered primary endpoint is device-related serious adverse events at 30 days. The enrollment target and estimated completion dates are not clinical results or proof of actual enrollment.",
+      "sourceName": "ClinicalTrials.gov — official registry revision",
+      "sourceUrl": "https://clinicaltrials.gov/api/v2/studies/NCT06002386",
+      "topicTags": [
+        "heart-failure",
+        "trial-status",
+        "ventricular-repair"
+      ],
+      "relevantNodeIds": [
+        "dev-vsling",
+        "cond-hfref"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-27-vincora-nexus-us-efs",
+      "publishedAt": "2026-10-27",
+      "title": "Vincora announces FDA study permission for transcatheter chordal repair",
+      "summary": "NeoChord’s official News page dates Vincora’s announcement of FDA permission for a US early feasibility study to October 27. The NeXus registry record, first posted November 3, lists 15 planned participants, not-yet-recruiting status and an estimated February 20, 2027 start. This is an investigational-study milestone; no marketing authorization or clinical result is established.",
+      "sourceName": "NeoChord",
+      "sourceUrl": "https://www.neochord.com/news/",
+      "additionalSources": [
+        {
+          "label": "Official NeXus US EFS registry",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT07912229"
+        }
+      ],
+      "topicTags": [
+        "mitral regurgitation",
+        "chordal repair",
+        "NeXuS",
+        "early feasibility",
+        "investigational device"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "co-neochord",
+        "dev-neochord-nexus",
+        "trial-neochord-nexus-us-efs"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-26-parasol-laa-catheter-gel-development",
+      "publishedAt": "2026-10-26",
+      "title": "Parasol announces support for investigational catheter-and-gel LAA closure development",
+      "summary": "Parasol announced financing to advance its investigational left atrial appendage closure platform, described as an integrated catheter-and-gel system designed to adapt to LAA anatomy. The release reports a development program rather than clinical evidence; it states that the device has not been cleared or approved by the FDA.",
+      "sourceName": "Parasol Med Tech",
+      "sourceUrl": "https://parasolmedtech.com/parasol-medtech-2-75m-funding/",
+      "topicTags": [
+        "laao-laac",
+        "device-development"
+      ],
+      "relevantNodeIds": [
+        "cond-af"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-23-computational-planning-redo-tavr",
+      "publishedAt": "2026-10-23",
+      "title": "Computational planning associated with fewer leaflet modifications in valve-in-valve and redo TAVR",
+      "summary": "In a retrospective cohort of 157 valve-in-valve or redo-TAVR cases, leaflet modification was used in 24.1% of the 29 high-risk patients receiving computational-modeling-augmented planning versus 46.8% of 62 managed with conventional planning (one-sided P=.021). This nonrandomized association does not establish causation; no coronary obstruction occurred during the study period.",
+      "sourceName": "Original study (PubMed record)",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42914743&retmode=xml",
+      "additionalSources": [
+        {
+          "label": "Original study DOI 10.1016/j.jacadv.2026.103377 (publisher full text not read)",
+          "url": "https://doi.org/10.1016/j.jacadv.2026.103377"
+        }
+      ],
+      "topicTags": [
+        "tavr",
+        "computational-modeling"
+      ],
+      "relevantNodeIds": [
+        "proc-tavi",
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-23-evolut-fx-semi-rapid-deployment",
+      "publishedAt": "2026-10-23",
+      "title": "A semi-rapid deployment workflow to reduce device time in Evolut FX self-expanding transcatheter aortic valve implantation",
+      "summary": "A single-center retrospective before-and-after Evolut FX study reported median device time of 9 versus 14 minutes with semi-rapid versus conventional deployment; contrast volume was higher with the new workflow, while reported PVL and in-hospital pacemaker rates did not significantly differ. The results are preliminary and generation-specific.",
+      "sourceName": "Original study (PubMed record)",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42924251&retmode=xml",
+      "additionalSources": [
+        {
+          "label": "Original study DOI 10.4244/aij-d-26-00029 (publisher full text not read)",
+          "url": "https://doi.org/10.4244/aij-d-26-00029"
+        }
+      ],
+      "topicTags": [
+        "tavr",
+        "procedural-workflow"
+      ],
+      "relevantNodeIds": [
+        "dev-evolut",
+        "co-medtronic",
+        "proc-tavi"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-23-sonata-hcm-baseline-announcement",
+      "publishedAt": "2026-10-23",
+      "title": "Lexicon announces SONATA-HCM baseline update before efficacy readout",
+      "summary": "Lexicon issued a baseline-population update for SONATA-HCM, its ongoing phase 3 study of sotagliflozin in symptomatic obstructive and nonobstructive hypertrophic cardiomyopathy. Baseline reporting does not establish treatment efficacy; the study’s outcome readout remains separate.",
+      "sourceName": "Lexicon Pharmaceuticals",
+      "sourceUrl": "https://lexiconpharma.gcs-web.com/news-releases/news-release-details/lexicon-pharmaceuticals-provides-update-baseline-patient",
+      "topicTags": [
+        "hcm",
+        "trial-design"
+      ],
+      "relevantNodeIds": [
+        "cond-hcm"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-23-whole-heart-fsi-mitral-repair",
+      "publishedAt": "2026-10-23",
+      "title": "A Whole-Heart Fluid-Structure Interaction Model for Transcatheter Mitral Valve Repair in Primary Mitral Regurgitation",
+      "summary": "An engineering study describes a CT-derived whole-heart fluid–structure interaction model simulating chordal-rupture mitral regurgitation and edge-to-edge mitral repair. Simulated repair reduced regurgitation and left-atrial pressure while changing inflow jets and diastolic filling. These are model outputs, not patient clinical outcomes; the reviewed abstract does not establish clinical validation as a planning tool.",
+      "sourceName": "Original study (PubMed record)",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42909734&retmode=xml",
+      "additionalSources": [
+        {
+          "label": "Original study DOI 10.1007/s10439-026-04368-3 (publisher full text not read)",
+          "url": "https://doi.org/10.1007/s10439-026-04368-3"
+        }
+      ],
+      "topicTags": [
+        "mitral-repair",
+        "computational-modeling"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "proc-mitral-teer"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-22-af-pattern-residual-risk-laao-registry",
+      "publishedAt": "2026-10-22",
+      "title": "LAAO registry links non-paroxysmal AF to greater residual thromboembolic risk",
+      "summary": "In a multicenter registry of 3,459 LAAO patients, non-paroxysmal AF was associated with greater stroke risk than paroxysmal AF after adjustment (HR 1.64, 95% CI 1.07–2.50). The two-year analysis also found more peri-device leak and device-related thrombus in non-paroxysmal AF. These observational findings do not establish a causal effect or a preferred device or antithrombotic regimen.",
+      "sourceName": "PubMed / original journal abstract",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42913976&retmode=xml",
+      "additionalSources": [
+        {
+          "label": "Original study DOI",
+          "url": "https://doi.org/10.1016/j.hrthm.2026.10.035"
+        }
+      ],
+      "topicTags": [
+        "laao",
+        "clinical-research"
+      ],
+      "relevantNodeIds": [
+        "proc-laac",
+        "cond-af"
+      ],
+      "reviewStatus": "reviewed"
+    },
     {
       "id": "news-2026-10-22-corwave-feasibility-enrollment",
       "publishedAt": "2026-10-22",
@@ -33,6 +518,55 @@
         "co-corwave",
         "dev-corwave-lvas",
         "cond-hf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-22-ice-only-laac-zero-fluoroscopy-series",
+      "publishedAt": "2026-10-22",
+      "title": "ICE-only LAA closure series reports fluoroscopy-free completion in 203 of 214 patients",
+      "summary": "A series of 214 planned fluoroscopy-free LAA closure procedures using WATCHMAN FLX or FLX Pro reports 203 completed without fluoroscopy and 11 requiring bail-out fluoroscopy. Implantation succeeded in 212 patients; complications included one pericardial effusion and one ventricular tachycardia. The uncontrolled series supports feasibility and needs broader validation.",
+      "sourceName": "PubMed / original journal abstract",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42913973&retmode=xml",
+      "additionalSources": [
+        {
+          "label": "Original study DOI",
+          "url": "https://doi.org/10.1016/j.hrthm.2026.10.032"
+        }
+      ],
+      "topicTags": [
+        "laao",
+        "clinical-research"
+      ],
+      "relevantNodeIds": [
+        "dev-watchman-flx",
+        "co-boston-scientific",
+        "proc-laac"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-22-lariat-4-pdl-initial-registry",
+      "publishedAt": "2026-10-22",
+      "title": "LARIAT-4-PDL reports initial rescue of leaks after endocardial LAA closure",
+      "summary": "A retrospective multicenter series reports acute closure in 10 patients treated with LARIAT for leaks of at least 3 mm after WATCHMAN FLX Pro or Amulet implantation. These early feasibility findings do not establish durable closure or comparative stroke prevention; the original paper’s abstract calls for longer follow-up.",
+      "sourceName": "PubMed / original journal abstract",
+      "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42913969&retmode=xml",
+      "additionalSources": [
+        {
+          "label": "Original study DOI",
+          "url": "https://doi.org/10.1016/j.hrthm.2026.10.031"
+        }
+      ],
+      "topicTags": [
+        "laao",
+        "clinical-research"
+      ],
+      "relevantNodeIds": [
+        "dev-lariat",
+        "co-atricure",
+        "dev-amulet",
+        "proc-laac"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3390,7 +3924,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 43,
+          "degree": 47,
           "pulse": 7,
           "entity": {
             "id": "cond-af",
@@ -3587,7 +4121,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 11,
+          "degree": 12,
           "pulse": 8,
           "entity": {
             "id": "cond-attr-cm",
@@ -3620,7 +4154,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 51,
+          "degree": 52,
           "pulse": 5,
           "entity": {
             "id": "cond-hfref",
@@ -3718,7 +4252,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 44,
+          "degree": 46,
           "pulse": 9,
           "entity": {
             "id": "cond-as",
@@ -3790,7 +4324,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 58,
+          "degree": 63,
           "pulse": 8,
           "entity": {
             "id": "cond-mr",
@@ -3928,7 +4462,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 4,
+          "degree": 5,
           "pulse": 0,
           "entity": {
             "id": "cond-pvl",
@@ -5381,7 +5915,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 3,
           "pulse": 0,
           "timelineDate": "2026-08-27",
           "entity": {
@@ -5490,7 +6024,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 7,
+          "degree": 8,
           "pulse": 6,
           "timelineDate": "2020-07-21",
           "entity": {
@@ -5542,16 +6076,17 @@
               }
             ],
             "pulse": 6,
-            "description": "Boston Scientific transcatheter LAA occluder with a self-expanding nitinol frame and PET membrane for nonvalvular AF stroke prevention. FDA-approved FLX and later FLX Pro configurations, post-implant medication regimens and indication supplements have separate labeling.",
+            "description": "Boston Scientific transcatheter LAA occluder with a self-expanding nitinol frame and PET membrane for nonvalvular AF stroke prevention. FDA-approved FLX and later FLX Pro configurations, post-implant medication regimens and indication supplements have separate labeling. SIMPLAAFY studied FLX Pro only after successful uncomplicated implantation: reduced-dose NOAC for 3 months then aspirin, or aspirin alone, met 6 month noninferiority versus DAPT for 6 months then aspirin. These results do not transfer to standard FLX, complicated implants or other devices; 12 month outcomes remain pending.",
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-10-03",
+              "lastUpdated": "2026-11-02",
               "sources": [
                 "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S035B.pdf",
                 "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S043",
-                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S074"
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130013S074",
+                "https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361"
               ],
-              "notes": "2026-10-03 audit: Adds a directly attributable source and date to the graph milestone. Graph context and primary evidence links aligned with version records. 2026-10-03 audit: Replaces editorial guidance with concrete product context; later-generation findings are not transferred to earlier FLX devices."
+              "notes": "2026-10-03 audit: Adds a directly attributable source and date to the graph milestone. Graph context and primary evidence links aligned with version records. 2026-10-03 audit: Replaces editorial guidance with concrete product context; later-generation findings are not transferred to earlier FLX devices. November 2 original-study evidence added with cohort/generation/regimen limits; historical regulatory fields retained, not newly verified or expanded."
             }
           }
         }
@@ -7469,18 +8004,19 @@
               }
             ],
             "pulse": 9,
-            "description": "Family-level graph entry for SAPIEN 3 and SAPIEN 3 Ultra RESILIA balloon-expandable aortic valves. The intelligence catalog separates those configurations, delivery profiles and indication expansions; evidence from one generation should not be applied to the other.",
+            "description": "Family-level graph entry for SAPIEN 3 and SAPIEN 3 Ultra RESILIA balloon-expandable aortic valves. The intelligence catalog separates those configurations, delivery profiles and indication expansions; evidence from one generation should not be applied to the other. PROGRESS reports a pooled TAVR strategy permitting SAPIEN 3/Ultra/Ultra RESILIA in selected patients aged ≥65 with moderate AS and at-risk features: 2 year death/HF event 16.7% versus 23.9% with surveillance. This is not a generation-specific result or a new authorization; mortality benefit was not established.",
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-10-03",
+              "lastUpdated": "2026-11-02",
               "sources": [
                 "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031",
                 "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031S141",
                 "https://ir.edwards.com/news/news-details/2014/Edwards-Receives-European-Approval-for-Advanced-SAPIEN-3-Valve/default.aspx",
                 "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031S182",
-                "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S182D.pdf"
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S182D.pdf",
+                "https://www.nejm.org/doi/full/10.1056/NEJMoa2607326"
               ],
-              "notes": "2026-10-03 audit: Broad graph lineage is intentionally distinct from exact version records. 2026-10-03 audit: Timeline now uses the earliest primary-verified marketing authorization for the represented product lineage; day precision is not inferred from an announcement. 2026-10-03 audit: Adds the product-specific asymptomatic severe-AS expansion; CMS CED policy and approval of other TAVR systems are not inferred."
+              "notes": "2026-10-03 audit: Broad graph lineage is intentionally distinct from exact version records. 2026-10-03 audit: Timeline now uses the earliest primary-verified marketing authorization for the represented product lineage; day precision is not inferred from an announcement. 2026-10-03 audit: Adds the product-specific asymptomatic severe-AS expansion; CMS CED policy and approval of other TAVR systems are not inferred. November 2 original-study evidence added with cohort/generation/regimen limits; historical regulatory fields retained, not newly verified or expanded."
             }
           }
         }
@@ -7494,7 +8030,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 5,
+          "degree": 6,
           "pulse": 8,
           "timelineDate": "2007-03-01",
           "entity": {
@@ -9696,7 +10232,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 3,
+          "degree": 4,
           "pulse": 0,
           "entity": {
             "id": "dev-amplatzer-pvl-plug-iii",
@@ -9710,8 +10246,16 @@
             ],
             "regulatoryStatus": "unknown",
             "regulatoryDetail": "Used for PVL closure in observational registries, generally off-label in the United States; no FDA approval specifically for PVL closure identified.",
-            "mechanism": "Low-profile oval vascular plug deployed across selected paravalvular channels.",
-            "materials": [],
+            "mechanism": "The PARADIGM APVL3 study describes an elliptical self-expanding braided-nitinol distal lobe with extended rim and a proximal disc on opposite sides of a surgical-valve PVL, plus a platinum orientation marker. Exact revision/current marketed-device equivalence is unestablished.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "PARADIGM APVL3 study braided mesh/lobe and disc",
+                "category": "frame",
+                "source": "https://www.jacc.org/doi/10.1016/j.jcin.2026.10.024",
+                "note": "Study configuration only; exact revision and equivalence to historical Vascular Plug III/Paraclose are not established."
+              }
+            ],
             "materialsStatus": "not_established",
             "links": [
               {
@@ -9719,7 +10263,7 @@
                 "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10863827/"
               }
             ],
-            "description": "Plug used in observational PVL closures; the KISS registry included 171 transcatheter procedures, most commonly using AVP III (140 procedures), with 78.9% technical success overall in the transcatheter arm.",
+            "description": "Plug used in observational PVL closures; the KISS registry included 171 transcatheter procedures, most commonly using AVP III (140 procedures), with 78.9% technical success overall in the transcatheter arm. The prospective PARADIGM APVL3 study reports 200 attempts, primary composite success188/200 and30-day procedural success140/181; the measures have different definitions and denominators. This study does not establish equivalence to Paraclose.",
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-10-03",
@@ -11418,7 +11962,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 3,
+          "degree": 4,
           "pulse": 5,
           "entity": {
             "id": "proc-laac",
@@ -12282,7 +12826,7 @@
           "label": "MR-ace (MRace) Implant and Delivery System",
           "group": "device",
           "category": "Transcatheter posterior-leaflet implant (leaflet restoration)",
-          "isDraft": true,
+          "isDraft": false,
           "isHalted": false,
           "isRetired": false,
           "degree": 4,
@@ -12299,11 +12843,40 @@
             ],
             "regulatoryStatus": "investigational",
             "regulatoryDetail": "Investigational; the company states it is not approved for sale in or outside the United States.",
-            "mechanism": "Transvenous, transseptal catheter delivery of an implant over the posterior mitral leaflet (registry). The company describes a bovine-pericardium coaptation element on a nitinol frame laminated with ePTFE, with five anchors.",
-            "materials": [],
-            "description": "Early feasibility registrations include: EXPLORE-MRace in the United States and EXPLORE MRace (GE) at four centers in Tbilisi, Georgia. The company presents the system as an alternative to transcatheter edge-to-edge repair and mitral valve replacement; this is a sponsor claim. The separate Brazil record NCT06113354 (EXPLORE MRace BR) registers an estimated 10 participants; this target is not a treated count and exact device-generation equivalence across these studies is unresolved.",
+            "mechanism": "In the EXPLORE MR study configuration, a transseptally delivered nitinol frame laminated with ePTFE supports a bovine-pericardial adaptive coaptation element; five cobalt-chromium helical anchors fix it to the posterior annulus. The element inflates in systole and deflates in diastole.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Study frame",
+                "category": "frame",
+                "source": "https://www.jacc.org/doi/10.1016/j.jcin.2026.10.013",
+                "note": "EXPLORE MR study build only; no numbered generation or bridge to other registry configurations."
+              },
+              {
+                "name": "Expanded polytetrafluoroethylene",
+                "role": "Study frame lamination",
+                "category": "fabric",
+                "source": "https://www.jacc.org/doi/10.1016/j.jcin.2026.10.013",
+                "note": "EXPLORE MR study build only; no numbered generation or bridge to other registry configurations."
+              },
+              {
+                "name": "Bovine pericardium",
+                "role": "Study adaptive coaptation element",
+                "category": "leaflet",
+                "source": "https://www.jacc.org/doi/10.1016/j.jcin.2026.10.013",
+                "note": "EXPLORE MR study build only; no numbered generation or bridge to other registry configurations."
+              },
+              {
+                "name": "Cobalt-chromium",
+                "role": "Five study helical anchors",
+                "category": "anchor",
+                "source": "https://www.jacc.org/doi/10.1016/j.jcin.2026.10.013",
+                "note": "EXPLORE MR study build only; no numbered generation or bridge to other registry configurations."
+              }
+            ],
+            "description": "Early feasibility registrations include: EXPLORE-MRace in the United States and EXPLORE MRace (GE) at four centers in Tbilisi, Georgia. The company presents the system as an alternative to transcatheter edge-to-edge repair and mitral valve replacement; this is a sponsor claim. The separate Brazil record NCT06113354 (EXPLORE MRace BR) registers an estimated 10 participants; this target is not a treated count and exact device-generation equivalence across these studies is unresolved. The2026 EXPLORE MR paper describes78 treated patients across Brazil/Georgia, with one-year MR≤2 in29/32 assessed and KM mortality29.5%. The pooled cohort is not assigned to any one national registration.",
             "curation": {
-              "status": "draft",
+              "status": "curated",
               "lastUpdated": "2026-10-21",
               "sources": [
                 "https://clinicaltrials.gov/api/v2/studies/NCT07517588",
@@ -12311,7 +12884,7 @@
                 "https://www.polaresmedical.com/mrace-technology/",
                 "https://www.polaresmedical.com/clinical-trials/"
               ],
-              "notes": "Sponsor description from an undated page (metadata modified 2026-08-18); the page body does not name MRace. Device generations across studies are not stated. Implant composition is the sponsor's description and is not verified. ACCESS-MR in France (NCT07757607) is a separate pilot registration, not yet recruiting as of its last posted revision, with an estimated 20-person target and estimated November 2026 start. These are registration estimates, not actual enrollment, results or a proven bridge to the US, Georgia or Brazil configurations."
+              "notes": "Sponsor description from an undated page (metadata modified 2026-08-18); the page body does not name MRace. Device generations across studies are not stated. Implant composition is the sponsor's description and is not verified. ACCESS-MR in France (NCT07757607) is a separate pilot registration, not yet recruiting as of its last posted revision, with an estimated 20-person target and estimated November 2026 start. These are registration estimates, not actual enrollment, results or a proven bridge to the US, Georgia or Brazil configurations. The2026 original paper independently describes the EXPLORE MR study implant materials. This resolves composition only for that study build; US/GE/France generation and legal-entity equivalence remain unestablished. The paper cites BR NCT06113354 but reports a pooled78-patient cohort, distinct from its10-person registry target."
             }
           }
         }
@@ -13854,7 +14427,7 @@
             ],
             "regulatoryStatus": "unknown",
             "regulatoryDetail": "Marketing authorization for this exact configuration and application is not established.",
-            "description": "The original study describes a self-expanding transcatheter aortic valve with polyurethane leaflets and a sealing skirt for severe symptomatic aortic stenosis.",
+            "description": "The original study describes a self-expanding transcatheter aortic valve with polyurethane leaflets and a sealing skirt for severe symptomatic aortic stenosis. In the historical12-person first-in-human study, device success was11/12 and procedural success10/12; one delayed coronary obstruction was fatal and another valve was fully retrieved. No durability or current-generation benefit is established.",
             "materials": [
               {
                 "name": "Polyurethane",
@@ -13952,7 +14525,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 3,
           "pulse": 0,
           "entity": {
             "id": "proc-valve-in-valve-aortic-replacement",
@@ -13984,7 +14557,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 3,
           "pulse": 0,
           "entity": {
             "id": "proc-redo-surgical-aortic-replacement",
@@ -14016,7 +14589,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 3,
           "pulse": 0,
           "entity": {
             "id": "dev-vsling",
@@ -14028,7 +14601,7 @@
             ],
             "regulatoryStatus": "unknown",
             "regulatoryDetail": "Marketing authorization for this exact configuration and application is not established.",
-            "description": "The original paper describes a transcatheter papillary-muscle sling; Vsling I is registered in heart failure with reduced left-ventricular ejection fraction and ventricular dilation.",
+            "description": "The original paper describes a transcatheter papillary-muscle sling; Vsling I is registered in heart failure with reduced left-ventricular ejection fraction and ventricular dilation. An original written2026 Images in Intervention report describes a single EU case with papillary distance reduction28 to11mm and changes maintained over6months. This one-case observation does not establish population efficacy or a registry-cohort result.",
             "materials": [],
             "materialsStatus": "not_established",
             "curation": {
@@ -14051,7 +14624,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 4,
           "pulse": 0,
           "entity": {
             "id": "dev-jensclip",
@@ -14098,7 +14671,7 @@
             ],
             "regulatoryStatus": "unknown",
             "regulatoryDetail": "Authorization for the described application and software version is not established.",
-            "description": "A retrospective single-center study used ARTICOR to create CT-derived patient-specific holographic models for planning Venus P-valve implantation.",
+            "description": "A retrospective single-center study used ARTICOR to create CT-derived patient-specific holographic models for planning Venus P-valve implantation. In that26-patient cohort, holographic planning matched implanted diameter in13/26 and length in25/26. The study does not establish improved patient outcomes; exact software build and FDA-cleared planner equivalence remain unestablished.",
             "company": "co-artiness",
             "curation": {
               "status": "curated",
@@ -14163,6 +14736,185 @@
                 "https://clinicaltrials.gov/study/NCT05809856"
               ],
               "notes": "First case of the novel GrOwnValve procedure—a case report, European Heart Journal – Case Reports, published 2026-07-20: case procedure and six-month follow-up narrative. NCT05809856: intervention, eligibility and status sections, last updated 2025-09-29. Accessed 2026-10-26. Single uncontrolled adult pulmonary case; no pediatric, aortic-position, regeneration or growth benefit is established. No source artwork reproduced."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-bbp717",
+          "label": "BBP-717",
+          "group": "pharmaceutical",
+          "category": "Development-stage monoclonal antibody amyloid depleter",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "rx-bbp717",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "name": "BBP-717",
+            "subtype": "Development-stage monoclonal antibody amyloid depleter",
+            "company": "co-bridgebio",
+            "treats": [
+              "cond-attr-cm"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Development intent only; IND timing is a plan, not an authorization or trial start. No transfer of acoramidis results or TTR-stabilizer evidence to BBP-717.",
+            "description": "BridgeBio nominated BBP-717 as a monoclonal-antibody development candidate intended to deplete amyloid deposits in ATTR-CM and announced a planned IND submission in 2027. The announcement provides no human safety or efficacy result for BBP-717.",
+            "mechanism": "Sponsor-described monoclonal antibody intended to deplete existing amyloid deposits.",
+            "links": [
+              {
+                "label": "Original sponsor disclosure",
+                "url": "https://www.globenewswire.com/news-release/2026/10/29/3391801/0/en/bridgebio-reports-third-quarter-2026-financial-results-and-corporate-updates.html"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-02",
+              "sources": [
+                "https://www.globenewswire.com/news-release/2026/10/29/3391801/0/en/bridgebio-reports-third-quarter-2026-financial-results-and-corporate-updates.html"
+              ],
+              "notes": "Sponsor-described program only. Development intent only; IND timing is a plan, not an authorization or trial start. No transfer of acoramidis results or TTR-stabilizer evidence to BBP-717."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cephea-mitral-system",
+          "label": "Cephea Mitral Valve System",
+          "group": "device",
+          "category": "Transcatheter mitral valve replacement",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-cephea-mitral-system",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Cephea Mitral Valve System",
+            "subtype": "Transcatheter mitral valve replacement",
+            "company": "co-abbott",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "CROWN-MV exact NCT identifier and implant generation remain unestablished. Do not map the four separate Cephea registry records by name alone; no treatment efficacy or current authorization inferred.",
+            "description": "Abbott announced initiation and first enrollment of CROWN-MV for its investigational Cephea Mitral Valve System in symptomatic mitral valve disease. This is a trial-launch announcement, not a pivotal clinical readout; the separate third-generation delivery-system feasibility presentation is not transferred to this configuration.",
+            "mechanism": "Sponsor-described catheter-based mitral valve replacement system.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "links": [
+              {
+                "label": "Original sponsor disclosure",
+                "url": "https://abbott.mediaroom.com/2026-10-29-Abbott-initiates-pivotal-trial-for-Cephea-TM-device,-an-innovative-treatment-for-mitral-heart-valve-disease"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-02",
+              "sources": [
+                "https://abbott.mediaroom.com/2026-10-29-Abbott-initiates-pivotal-trial-for-Cephea-TM-device,-an-innovative-treatment-for-mitral-heart-valve-disease"
+              ],
+              "notes": "Sponsor-described program only. CROWN-MV exact NCT identifier and implant generation remain unestablished. Do not map the four separate Cephea registry records by name alone; no treatment efficacy or current authorization inferred."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-parasol-catheter-gel-laac",
+          "label": "Parasol investigational catheter-and-gel LAA closure program",
+          "group": "device",
+          "category": "Investigational LAA closure development platform",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-parasol-catheter-gel-laac",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Parasol investigational catheter-and-gel LAA closure program",
+            "subtype": "Investigational LAA closure development platform",
+            "treats": [
+              "cond-af"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Exact product model, gel composition, configuration, clinical stage and trial identity remain unestablished. No quoted clinician/investor claims or metal-free assertion adopted.",
+            "description": "Parasol Med Tech describes an integrated catheter-and-gel LAA closure platform intended to adapt to variable appendage anatomy. The company states that the device is investigational and has not been FDA cleared or approved; no clinical outcomes are established in this disclosure.",
+            "mechanism": "Sponsor-described integrated catheter-and-gel LAA closure approach.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "links": [
+              {
+                "label": "Original sponsor disclosure",
+                "url": "https://parasolmedtech.com/parasol-medtech-2-75m-funding/"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-02",
+              "sources": [
+                "https://parasolmedtech.com/parasol-medtech-2-75m-funding/"
+              ],
+              "notes": "Sponsor-described program only. Exact product model, gel composition, configuration, clinical stage and trial identity remain unestablished. No quoted clinician/investor claims or metal-free assertion adopted."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-neochord-nexus",
+          "label": "NeXuS transcatheter chordal repair",
+          "group": "device",
+          "category": "Transcatheter mitral chordal reconstruction system",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-neochord-nexus",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Transcatheter mitral chordal reconstruction system",
+            "name": "NeXuS transcatheter chordal repair",
+            "company": "co-neochord",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "NCT07912229, first/last posted November 3, 2026, registers an unapproved FDA-regulated NeXus device; US EFS not yet recruiting. Sponsor announcement of FDA study permission is not marketing authorization.",
+            "mechanism": "Transcatheter reconstruction of chordal support for primary degenerative mitral regurgitation due to chordal elongation or rupture with mitral prolapse.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "description": "NeoChord transcatheter chordal repair program associated with the Vincora keyword in the US registry. Distinct from the transapical DS1000. Historical NeXuS descriptions and the US EFS configuration remain separately scoped.",
+            "links": [
+              {
+                "label": "Official US EFS registry",
+                "url": "https://clinicaltrials.gov/api/v2/studies/NCT07912229"
+              },
+              {
+                "label": "Sponsor announcement listing",
+                "url": "https://www.neochord.com/news/"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-03",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07912229",
+                "https://www.neochord.com/wp-content/uploads/2021/11/NeoChord-PR-Proof.pdf",
+                "https://www.neochord.com/news/"
+              ],
+              "notes": "Current US study configuration and historical sponsor-described NeXuS are not established as dimensionally or materially identical. No US marketing approval or clinical efficacy claim."
             }
           }
         }
@@ -14243,7 +14995,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 17,
+          "degree": 18,
           "pulse": 0,
           "entity": {
             "id": "co-abbott",
@@ -14675,7 +15427,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 1,
+          "degree": 2,
           "pulse": 5,
           "entity": {
             "id": "co-bridgebio",
@@ -15173,21 +15925,22 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 1,
+          "degree": 2,
           "pulse": 0,
           "entity": {
             "id": "co-neochord",
             "type": "company",
             "name": "NeoChord",
             "website": "https://www.neochord.com",
-            "description": "Developer of the DS1000 artificial chordae delivery system for mitral valve repair.",
+            "description": "NeoChord sponsors the NeXus transcatheter mitral repair early feasibility study (NCT07912229). The US registry includes Vincora as a keyword.",
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-10-03",
+              "lastUpdated": "2026-11-03",
               "sources": [
                 "https://www.neochord.com",
                 "https://clinicaltrials.gov/study/NCT02803957",
-                "https://www.neochord.com/wp-content/uploads/2024/12/RP-602000-001_DS1000_SSCP_Rev_B_FINAL_05Dec2024.docx.pdf"
+                "https://www.neochord.com/wp-content/uploads/2024/12/RP-602000-001_DS1000_SSCP_Rev_B_FINAL_05Dec2024.docx.pdf",
+                "https://clinicaltrials.gov/api/v2/studies/NCT07912229"
               ],
               "notes": "2026-10-03 audit: Product manufacturer relationship linked to existing primary labeling/publication evidence. Legacy ticker and headquarters fields are not independently reverified by these product sources."
             }
@@ -20487,12 +21240,14 @@
             "therapies": [
               "dev-sapien-3"
             ],
-            "enrollment": 750,
-            "primaryEndpoint": "Composite of death, stroke, and unplanned cardiovascular hospitalization",
-            "outcomeSummary": "Randomized trial testing TAVR (SAPIEN 3) versus clinical surveillance in moderate, calcific aortic stenosis; baseline clinical and echocardiographic characteristics of the enrolled cohort were presented at New York Valves 2026, with primary outcomes pending.",
-            "resultStatus": "ongoing",
+            "enrollment": 2250,
+            "primaryEndpoint": "Effectiveness: all-cause death or a heart-failure event with or without hospitalization at 2 years. Safety: all-cause death, stroke, life-threatening/fatal bleeding, stage 4 AKI, device/procedure-related hospitalization or valve dysfunction requiring reintervention at 30 days.",
+            "outcomeSummary": "PROGRESS randomized 744 patients aged ≥65 with moderate AS and at-risk features to TAVR permitting SAPIEN 3/Ultra/Ultra RESILIA or surveillance. At 2 years, death or HF event was 16.7% vs 23.9% (Kaplan–Meier; difference −7.2 pp, 95% CI −13.1 to −1.3; P=.02). Death alone was 8.4% vs 7.3%; no mortality benefit established. The 30 day TAVR safety composite met its performance goal. First hierarchical secondary endpoint P=.07 stopped confirmatory secondary testing.",
+            "resultStatus": "positive",
             "references": [
-              "https://clinicaltrials.gov/study/NCT04889872"
+              "https://clinicaltrials.gov/study/NCT04889872",
+              "https://www.nejm.org/doi/full/10.1056/NEJMoa2607326",
+              "https://clinicaltrials.gov/api/v2/studies/NCT04889872"
             ],
             "links": [
               {
@@ -20501,14 +21256,52 @@
               }
             ],
             "pulse": 7,
+            "primaryAnalysis": {
+              "status": "reported",
+              "date": "2026-11-02",
+              "precision": "day",
+              "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2607326"
+            },
+            "enrollmentCounts": [
+              {
+                "count": 2250,
+                "basis": "estimated",
+                "asOf": "2025-12-17",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT04889872",
+                "scope": "Current retrieved registry revision; not actual trial enrollment."
+              },
+              {
+                "count": 744,
+                "basis": "randomized",
+                "asOf": "2026-11-02",
+                "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2607326",
+                "scope": "Original report randomized 373 TAVR and 371 surveillance; not registry target."
+              },
+              {
+                "count": 697,
+                "basis": "analyzed",
+                "asOf": "2026-11-02",
+                "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2607326",
+                "scope": "Results p 4: 356 TAVR+341 surveillance included in effectiveness analysis; Table 2 describes ITT with randomized 373/371. KM estimates, not crude 697-person fractions."
+              },
+              {
+                "count": 358,
+                "basis": "treated",
+                "asOf": "2026-11-02",
+                "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2607326",
+                "scope": "Index TAVR as-treated primary safety cohort only; not both groups combined."
+              }
+            ],
             "curation": {
               "status": "curated",
-              "lastUpdated": "2026-06-28",
+              "lastUpdated": "2026-11-02",
               "sources": [
                 "https://clinicaltrials.gov/study/NCT04889872",
-                "https://www.crf.org/crf/news-and-events/news/news/3995-new-york-valves-2026-to-unveil-late-breaking-research-in-structural-heart-disease"
+                "https://www.crf.org/crf/news-and-events/news/news/3995-new-york-valves-2026-to-unveil-late-breaking-research-in-structural-heart-disease",
+                "https://www.nejm.org/doi/full/10.1056/NEJMoa2607326",
+                "https://clinicaltrials.gov/api/v2/studies/NCT04889872"
               ],
-              "notes": "Baseline characteristics presented at New York Valves 2026 (Jun 24-26); no primary outcome yet (est. completion 2037). VERIFY exact primary endpoint wording from the trial protocol before promoting."
+              "notes": "Original primary results reported November 2, 2026. SAPIEN 3/Ultra/Ultra RESILIA permitted; actual use/counts per generation not reported in main article; no generation-specific results. Retrieved registry still says RECRUITING with ESTIMATED 2250, revision December 17, 2025, hasResults=false; retained as registry facts despite 744 randomized in paper. PrimaryAnalysis is reported independently. First secondary P=.07 stops hierarchy. Evidence is limited to the main article; supplementary analyses and protocol detail are outside this summary."
             }
           }
         }
@@ -26793,6 +27586,521 @@
             "nctId": "NCT04569734"
           }
         }
+      },
+      {
+        "data": {
+          "id": "trial-andes-nct03568890",
+          "label": "ANDES — post-LAAC antithrombotic strategies",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-andes-nct03568890",
+            "type": "trial",
+            "name": "ANDES — post-LAAC antithrombotic strategies",
+            "nctId": "NCT03568890",
+            "status": "active",
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "proc-laac"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 510,
+                "basis": "estimated",
+                "asOf": "2026-03-27",
+                "scope": "Registry enrollment as of its stated revision; not a new treated/analyzed count.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT03568890"
+              }
+            ],
+            "primaryEndpoint": "Device thrombosis (efficacy outcome) (60 days after LAAC) Combined outcome of all-cause mortality, bleeding, stroke, or Device thrombosis (Safety outcome) (60 days after LAAC)",
+            "outcomeSummary": "ANDES one-year follow-up compares 253 patients assigned to 60 days of DOAC with 257 assigned to dual antiplatelet therapy after LAA closure; most then switched to single antiplatelet therapy. Any bleeding was 24.1% versus 32.3% (risk difference −8.2 percentage points; 95% CI −15.9 to −0.4), driven by the first 60 days. No later-event advantage was demonstrated; incomplete imaging and limited power constrain thrombus comparisons.",
+            "resultStatus": "mixed",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT03568890",
+              "https://www.sciencedirect.com/science/article/pii/S0735109726101764"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-02",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT03568890"
+              ],
+              "notes": "Official revision 2026-03-27, retrieved 2026-11-02; Sixty-day randomized DOAC/DAPT strategies; one-year follow-up is not continuous one-year exposure. Registry enrollment remains estimated 510; no registry results posted."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-expand-tavr-ii",
+          "label": "Evolut EXPAND TAVR II",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-expand-tavr-ii",
+            "type": "trial",
+            "name": "Evolut EXPAND TAVR II",
+            "nctId": "NCT05149755",
+            "status": "active",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-evolut"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 650,
+                "basis": "estimated",
+                "asOf": "2026-09-30",
+                "scope": "Registry enrollment as of its stated revision; not a new treated/analyzed count.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT05149755"
+              }
+            ],
+            "primaryEndpoint": "Composite rate of all-cause mortality, all-stroke, life threatening or fatal bleeding, acute kidney injury, hospitalization due to device or procedure-related complication, or valve dysfunction requiring reintervention. (30 days) Composite rate of all-cause mortality, heart failure hospitalization or event, or medical instability leading to aortic valve replacement or re-intervention. (2 years)",
+            "outcomeSummary": "Registry hasResults=false. Moderate-AS randomized design, not a treatment-outcome readout. Registry 650 estimated is a target; no treatment-outcome readout or actual randomized count inferred.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT05149755"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-02",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT05149755"
+              ],
+              "notes": "Official revision 2026-09-30, retrieved 2026-11-02; Moderate-AS randomized design, not a treatment-outcome readout. Registry 650 estimated is a target; no treatment-outcome readout or actual randomized count inferred."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-jensclip-dmr-nct05417945",
+          "label": "JensClip degenerative MR study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-jensclip-dmr-nct05417945",
+            "type": "trial",
+            "name": "JensClip degenerative MR study",
+            "nctId": "NCT05417945",
+            "status": "unknown",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-jensclip"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 124,
+                "basis": "estimated",
+                "asOf": "2022-06-14",
+                "scope": "Registry enrollment as of its stated revision; not a new treated/analyzed count.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT05417945"
+              }
+            ],
+            "primaryEndpoint": "Clinical success rate at 12 months postoperatively (12 months)",
+            "outcomeSummary": "Registry hasResults=false. DMR registration only; UNKNOWN overall status and old 2022 revision. Last-known not-yet-recruiting is not current activity.124 estimated; no results posted.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT05417945"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-02",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT05417945"
+              ],
+              "notes": "Official revision 2022-06-14, retrieved 2026-11-02; lastKnownStatus=NOT_YET_RECRUITING, not current recruitment. DMR registration only; UNKNOWN overall status and old 2022 revision. Last-known not-yet-recruiting is not current activity.124 estimated; no results posted."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-jensclip-fmr-nct05931900",
+          "label": "JensClip functional MR study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-jensclip-fmr-nct05931900",
+            "type": "trial",
+            "name": "JensClip functional MR study",
+            "nctId": "NCT05931900",
+            "status": "unknown",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-jensclip"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 129,
+                "basis": "estimated",
+                "asOf": "2023-07-05",
+                "scope": "Registry enrollment as of its stated revision; not a new treated/analyzed count.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT05931900"
+              }
+            ],
+            "primaryEndpoint": "All-cause mortality or hospitalization rate (12 months)",
+            "outcomeSummary": "Registry hasResults=false. FMR registration only; UNKNOWN overall status and old 2023 revision. Last-known enrolling-by-invitation is not current activity.129 estimated; no DMR outcome transfer.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT05931900"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-02",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT05931900"
+              ],
+              "notes": "Official revision 2023-07-05, retrieved 2026-11-02; lastKnownStatus=ENROLLING_BY_INVITATION, not current recruitment. FMR registration only; UNKNOWN overall status and old 2023 revision. Last-known enrolling-by-invitation is not current activity.129 estimated; no DMR outcome transfer."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-paradigm-pvl-nct04489823",
+          "label": "PARADIGM — PVL closure (NCT04489823)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-paradigm-pvl-nct04489823",
+            "type": "trial",
+            "name": "PARADIGM — PVL closure (NCT04489823)",
+            "nctId": "NCT04489823",
+            "status": "active",
+            "conditions": [
+              "cond-pvl"
+            ],
+            "therapies": [
+              "dev-amplatzer-pvl-plug-iii"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 200,
+                "basis": "estimated",
+                "asOf": "2026-02-10",
+                "scope": "Registry enrollment as of its stated revision; not a new treated/analyzed count.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT04489823"
+              }
+            ],
+            "primaryEndpoint": "Paravalvular leak closure success rate (percent of subjects) (30 Days)",
+            "outcomeSummary": "Original PARADIGM paper: primary composite 188/200 (94.0%) versus 65% performance goal; separate 30-day procedural success 140/181 (77.3%), mortality 4/200 (2.0%). Single-arm selected cohort; registry status remains active.",
+            "resultStatus": "positive",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT04489823"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-02",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT04489823"
+              ],
+              "notes": "Official revision 2026-02-10, retrieved 2026-11-02; PVL study, separate from PARADIGM-HF/DurAVR. Registry 200 estimated differs in basis from 200 published attempts; no Paraclose approval bridge."
+            },
+            "primaryAnalysis": {
+              "status": "reported",
+              "date": "2026-10-31",
+              "precision": "day",
+              "source": "https://www.jacc.org/doi/10.1016/j.jcin.2026.10.024"
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-repeat-nct07462624",
+          "label": "REPEAT — NCT07462624",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-repeat-nct07462624",
+            "type": "trial",
+            "name": "REPEAT — NCT07462624",
+            "nctId": "NCT07462624",
+            "status": "recruiting",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "proc-redo-surgical-aortic-replacement",
+              "proc-valve-in-valve-aortic-replacement"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 890,
+                "basis": "estimated",
+                "asOf": "2026-03-10",
+                "scope": "Registry enrollment as of its stated revision; not a new treated/analyzed count.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT07462624"
+              }
+            ],
+            "primaryEndpoint": "The primary endpoint will be a composite endpoint including all-cause mortality, all-cause stroke, myocardial infarction, and re-hospitalization for heart failure or aortic valve reintervention at 5 years. (5 years)",
+            "outcomeSummary": "Registry hasResults=false. Separate NCT record:890 estimated, registry actual start 2025-11-10. Existing DRKS00034170 record/850 target preserved; cross-registration equivalence is not inferred.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT07462624"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-02",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07462624"
+              ],
+              "notes": "Official revision 2026-03-10, retrieved 2026-11-02; Separate NCT record:890 estimated, registry actual start 2025-11-10. Existing DRKS00034170 record/850 target preserved; cross-registration equivalence is not inferred."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-veritas-amulet-360",
+          "label": "VERITAS — Amulet 360 (NCT06707688)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-veritas-amulet-360",
+            "type": "trial",
+            "name": "VERITAS — Amulet 360 (NCT06707688)",
+            "nctId": "NCT06707688",
+            "status": "active",
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-amulet-360"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 458,
+                "basis": "actual",
+                "asOf": "2026-08-04",
+                "scope": "Registry enrollment as of its stated revision; not a new treated/analyzed count.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06707688"
+              }
+            ],
+            "primaryEndpoint": "The primary safety endpoint is the occurrence of any prespecified safety events through 7 days post-procedure or hospital discharge, whichever is later. (7 days post-procedure or hospital discharge) The primary effectiveness endpoint is LAA occlusion defined as no peri-device flow or peri-device flow ≤5 mm based on TEE/TOE at the 45-day follow-up visit. (45 days)",
+            "outcomeSummary": "One-year descriptive paper:458 implant attempts; complete closure 359/394 imaged (91.1%); estimated DRT3.3%, stroke/systemic embolism 1.8%, major bleeding 6.6%. Single-arm, no comparative benefit established.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT06707688",
+              "https://www.jacc.org/doi/10.1016/j.jcin.2026.10.023"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-02",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06707688"
+              ],
+              "notes": "Official revision 2026-08-04, retrieved 2026-11-02; The original one-year paper bridges Amulet 360 to this NCT; registry calls intervention Amulet 2. One-year report is follow-up; no date for first primary-analysis publication inferred."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-vsling-iii-nct06002386",
+          "label": "Vsling III",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-vsling-iii-nct06002386",
+            "type": "trial",
+            "name": "Vsling III",
+            "nctId": "NCT06002386",
+            "status": "recruiting",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "dev-vsling"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 10,
+                "basis": "estimated",
+                "asOf": "2026-10-28",
+                "scope": "Registry enrollment as of its stated revision; not a new treated/analyzed count.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06002386"
+              }
+            ],
+            "primaryEndpoint": "Device related Serious Adverse Events (SAE) (30 days)",
+            "outcomeSummary": "Registry hasResults=false. Official October 28 revision now RECRUITING;10 estimated. Separate from Vsling I and the single written EU case report; no analyzed-cohort bridge.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT06002386"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-02",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06002386"
+              ],
+              "notes": "Official revision 2026-10-28, retrieved 2026-11-02; Official October 28 revision now RECRUITING;10 estimated. Separate from Vsling I and the single written EU case report; no analyzed-cohort bridge."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-simplaafy",
+          "label": "SIMPLAAFY — WATCHMAN FLX Pro",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-simplaafy",
+            "type": "trial",
+            "name": "SIMPLAAFY — WATCHMAN FLX Pro",
+            "nctId": "NCT06521463",
+            "phase": "Randomized three-group device/regimen trial",
+            "status": "active",
+            "primaryAnalysis": {
+              "status": "reported",
+              "date": "2026-11-02",
+              "precision": "day",
+              "source": "https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361"
+            },
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-watchman-flx"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 1857,
+                "basis": "actual",
+                "asOf": "2026-10-13",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06521463",
+                "scope": "Registry ACTUAL enrollment."
+              },
+              {
+                "count": 1857,
+                "basis": "randomized",
+                "asOf": "2026-11-02",
+                "source": "https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361",
+                "scope": "DAPT 624; reduced-dose NOAC 620; aspirin 613 after successful uncomplicated FLX Pro implant."
+              },
+              {
+                "count": 1797,
+                "basis": "analyzed",
+                "asOf": "2026-11-02",
+                "source": "https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361",
+                "scope": "Primary analysis: 596 DAPT, 603 NOAC, 598 aspirin; completed follow-up or had event."
+              }
+            ],
+            "primaryEndpoint": "Two 6 month noninferiority comparisons of all-cause death, all stroke, systemic embolism or ISTH major bleeding: reduced-dose NOAC then aspirin versus DAPT; aspirin alone versus DAPT.",
+            "outcomeSummary": "SIMPLAAFY randomized 1,857 patients only after successful uncomplicated WATCHMAN FLX Pro implantation. In the 1,797-person primary analysis, the 6 month death/stroke/systemic embolism/major bleeding composite was 6.9% DAPT, 5.1% reduced-dose NOAC then aspirin, 3.3% aspirin alone. Both monotherapies met noninferiority (7.2 pp margin; P<.001 each). Bleeding/45 day DRT comparisons are exploratory; no full-dose NOAC comparator or other-device inference. Twelve-month results are pending.",
+            "resultStatus": "positive",
+            "references": [
+              "https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361",
+              "https://clinicaltrials.gov/api/v2/studies/NCT06521463",
+              "https://news.bostonscientific.com/2026-11-02-SIMPLAAFY-study-of-the-WATCHMAN-FLX-TM-Pro-Left-Atrial-Appendage-Closure-Device-meets-primary-endpoints"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-02",
+              "sources": [
+                "https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361",
+                "https://clinicaltrials.gov/api/v2/studies/NCT06521463",
+                "https://news.bostonscientific.com/2026-11-02-SIMPLAAFY-study-of-the-WATCHMAN-FLX-TM-Pro-Left-Atrial-Appendage-Closure-Device-meets-primary-endpoints"
+              ],
+              "notes": "Registry ACTIVE_NOT_RECRUITING, revision 2026-10-13; no posted registry results. Graph therapy node groups FLX/FLX Pro; study evidence maps only to Data ver-watchman-flx-pro. Paper reports 87 US sites; sponsor release 86; unresolved. Sponsor calls monotherapy regimens investigational. Evidence is limited to the main article; supplementary analyses are outside this summary."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-neochord-nexus-us-efs",
+          "label": "NeXuS US early feasibility study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-neochord-nexus-us-efs",
+            "type": "trial",
+            "name": "NeXuS US early feasibility study",
+            "nctId": "NCT07912229",
+            "phase": "Early feasibility study",
+            "status": "not-yet-recruiting",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-neochord-nexus"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 15,
+                "basis": "estimated",
+                "asOf": "2026-11-03",
+                "scope": "Planned enrollment in the November 3, 2026 registry revision; not treated or analyzed patients.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT07912229"
+              }
+            ],
+            "primaryEndpoint": "Major Device Related Adverse Events through 30 days",
+            "outcomeSummary": "No results posted. Single-group, open-label study; estimated start February 20, 2027, primary completion February 20, 2029 and study completion February 20, 2032. Secondary endpoint: successful access, delivery and deployment during the procedure. All dates are estimates.",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT07912229"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-03",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07912229"
+              ],
+              "notes": "First posted and last updated November 3, 2026; registry status NOT_YET_RECRUITING, not independently verified recruitment activity. Study criteria concern primary degenerative MR, qualifying P2 prolapse/flail, adults 18–85, LVEF ≥30%, and intermediate/high surgical risk; excludes exclusively secondary MR. Registry writes MR >3+; preserve that threshold as stated."
+            },
+            "resultStatus": "ongoing"
+          }
+        }
       }
     ],
     "edges": [
@@ -30022,6 +31330,62 @@
       },
       {
         "data": {
+          "id": "rx-bbp717__made_by__co-bridgebio",
+          "source": "rx-bbp717",
+          "target": "co-bridgebio",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-bbp717__treats__cond-attr-cm",
+          "source": "rx-bbp717",
+          "target": "cond-attr-cm",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cephea-mitral-system__made_by__co-abbott",
+          "source": "dev-cephea-mitral-system",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cephea-mitral-system__treats__cond-mr",
+          "source": "dev-cephea-mitral-system",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-parasol-catheter-gel-laac__treats__cond-af",
+          "source": "dev-parasol-catheter-gel-laac",
+          "target": "cond-af",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-neochord-nexus__made_by__co-neochord",
+          "source": "dev-neochord-nexus",
+          "target": "co-neochord",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-neochord-nexus__treats__cond-mr",
+          "source": "dev-neochord-nexus",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "trial-siegel-star__evaluates__dev-siegel-tavr",
           "source": "trial-siegel-star",
           "target": "dev-siegel-tavr",
@@ -32969,6 +34333,174 @@
           "id": "trial-ice-watchman__studies__cond-af",
           "source": "trial-ice-watchman",
           "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-andes-nct03568890__evaluates__proc-laac",
+          "source": "trial-andes-nct03568890",
+          "target": "proc-laac",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-andes-nct03568890__studies__cond-af",
+          "source": "trial-andes-nct03568890",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-expand-tavr-ii__evaluates__dev-evolut",
+          "source": "trial-expand-tavr-ii",
+          "target": "dev-evolut",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-expand-tavr-ii__studies__cond-as",
+          "source": "trial-expand-tavr-ii",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-jensclip-dmr-nct05417945__evaluates__dev-jensclip",
+          "source": "trial-jensclip-dmr-nct05417945",
+          "target": "dev-jensclip",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-jensclip-dmr-nct05417945__studies__cond-mr",
+          "source": "trial-jensclip-dmr-nct05417945",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-jensclip-fmr-nct05931900__evaluates__dev-jensclip",
+          "source": "trial-jensclip-fmr-nct05931900",
+          "target": "dev-jensclip",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-jensclip-fmr-nct05931900__studies__cond-mr",
+          "source": "trial-jensclip-fmr-nct05931900",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-paradigm-pvl-nct04489823__evaluates__dev-amplatzer-pvl-plug-iii",
+          "source": "trial-paradigm-pvl-nct04489823",
+          "target": "dev-amplatzer-pvl-plug-iii",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-paradigm-pvl-nct04489823__studies__cond-pvl",
+          "source": "trial-paradigm-pvl-nct04489823",
+          "target": "cond-pvl",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-repeat-nct07462624__evaluates__proc-redo-surgical-aortic-replacement",
+          "source": "trial-repeat-nct07462624",
+          "target": "proc-redo-surgical-aortic-replacement",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-repeat-nct07462624__evaluates__proc-valve-in-valve-aortic-replacement",
+          "source": "trial-repeat-nct07462624",
+          "target": "proc-valve-in-valve-aortic-replacement",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-repeat-nct07462624__studies__cond-as",
+          "source": "trial-repeat-nct07462624",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-veritas-amulet-360__evaluates__dev-amulet-360",
+          "source": "trial-veritas-amulet-360",
+          "target": "dev-amulet-360",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-veritas-amulet-360__studies__cond-af",
+          "source": "trial-veritas-amulet-360",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-vsling-iii-nct06002386__evaluates__dev-vsling",
+          "source": "trial-vsling-iii-nct06002386",
+          "target": "dev-vsling",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-vsling-iii-nct06002386__studies__cond-hfref",
+          "source": "trial-vsling-iii-nct06002386",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-simplaafy__evaluates__dev-watchman-flx",
+          "source": "trial-simplaafy",
+          "target": "dev-watchman-flx",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-simplaafy__studies__cond-af",
+          "source": "trial-simplaafy",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-neochord-nexus-us-efs__evaluates__dev-neochord-nexus",
+          "source": "trial-neochord-nexus-us-efs",
+          "target": "dev-neochord-nexus",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-neochord-nexus-us-efs__studies__cond-mr",
+          "source": "trial-neochord-nexus-us-efs",
+          "target": "cond-mr",
           "relationship": "studies"
         }
       },

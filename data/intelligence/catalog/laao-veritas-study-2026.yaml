@@ -1,0 +1,85 @@
+observedAt: '2026-11-02'
+sources:
+  - id: src-wor85-veritas
+    title: 1-Year Safety and Effectiveness of a Next-Generation Dual-Seal Left Atrial Appendage Occluder
+    url: https://www.jacc.org/doi/10.1016/j.jcin.2026.10.023
+    kind: publication
+    publisher: 'JACC: Cardiovascular Interventions / original research'
+    publishedAt:
+      value: '2026-11-01'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+  - id: src-wor85-andes
+    title: >-
+      Short-Term Anticoagulation vs Dual Antiplatelet Therapy Following Left Atrial Appendage Closure: 1-Year
+      Results of the ANDES Trial
+    url: https://www.sciencedirect.com/science/article/pii/S0735109726101764
+    kind: publication
+    publisher: Journal of the American College of Cardiology / original research letter
+    publishedAt:
+      value: '2026-10-31'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: licensed
+bibliography:
+  - id: bib-wor85-laao-veritas-study-2026-1
+    entityIds:
+      - dev-amulet-360
+    versionIds:
+      - ver-amulet-360
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: >-
+          Original article-in-press PDF pp3–5: Statistical Analysis, Patient Follow-Up, LAA Closure, Tables
+          1–2 and footnotes; p9 Study Limitations. Publisher full-text header/History: online 1 November 2026.
+    reviewStatus: reviewed
+  - id: bib-wor85-laao-veritas-study-2026-2
+    entityIds:
+      - proc-laac
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-wor85-andes
+        locator: >-
+          Licensed four-page corrected-proof PDF: p1 Methods/Results; p2 Table 1 and footnotes; p3 Study
+          Limitations/Conclusions. ScienceDirect article header: available online31 October2026.
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor85-laao-veritas-study-2026-1
+    versionId: ver-amulet-360
+    category: evidence
+    key: wor85-laao-veritas-study-2026-1
+    label: VERITAS one-year cohort and closure
+    value: >-
+      458 attempts (58 roll-in+400 primary-analysis); complete 0 mm closure 359/394 imaged (91.1%), TEE-only
+      257/267 (96.3%).
+    availability: reported
+    basis: directly_reported
+    context: Single-arm investigational study;425/438 eligible visits at one year.
+    limitation: Imaging subsets differ; no all-enrolled seal rate or current-indication inference.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: >-
+          Original article-in-press PDF pp3–5: Statistical Analysis, Patient Follow-Up, LAA Closure, Tables
+          1–2 and footnotes; p9 Study Limitations. Publisher full-text header/History: online 1 November 2026.
+    reviewStatus: reviewed
+  - id: claim-wor85-laao-veritas-study-2026-2
+    versionId: ver-amulet-360
+    category: evidence
+    key: wor85-laao-veritas-study-2026-2
+    label: VERITAS one-year clinical rates
+    value: Cumulative DRT3.3%; estimated ischemic stroke/systemic embolism 1.8%, major bleeding 6.6%.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Nonfatal rates use Aalen–Johansen estimation. Paper 95% CIs: stroke/systemic embolism 0.8–3.3%; major
+      bleeding 4.5–9.2%.
+    limitation: Single-arm selected investigational cohort; no concurrent control or comparative superiority.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: >-
+          Original article-in-press PDF pp3–5: Statistical Analysis, Patient Follow-Up, LAA Closure, Tables
+          1–2 and footnotes; p9 Study Limitations. Publisher full-text header/History: online 1 November 2026.
+    reviewStatus: reviewed

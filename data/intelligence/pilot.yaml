@@ -1,9 +1,9 @@
-# Human-review pilot. Authored from the source register below; no clinical claim is marked reviewed.
+# Source-linked clinical evidence. Review state and study limitations are recorded per entry.
 schemaVersion: 1
-updatedAt: '2026-10-14'
+updatedAt: '2026-11-02'
 coverage:
   title: Evidence pilot
-  description: Draft, source-linked records for review. Not a complete label, IFU, or safety inventory.
+  description: Source-linked records with per-entry review states and study-specific limits. Not a complete label, IFU, or safety inventory.
 sources:
   - id: src-sapien-original
     title: SAPIEN 3 original PMA decision
@@ -2133,6 +2133,71 @@ trials:
         locator: identificationModule; designModule; descriptionModule; armsInterventionsModule; outcomesModule
     reviewStatus: reviewed
 
+  - id: evidence-wor85-paradigm-pvl
+    name: PARADIGM APVL3 — original 30-day report
+    nctId: NCT04489823
+    entityId: trial-paradigm-pvl-nct04489823
+    familyIds:
+      - family-avp3-pvl
+    design: Prospective single-arm multicenter study
+    versionIds:
+      - ver-apvl3-paradigm-study
+    versionMapping: exact
+    population: 200 APVL3 implant attempts after surgical aortic/mitral valve replacement
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: Pre-proof PDF pp9–12,14–17; Tables3–4 PDFpp28–30.
+    reviewStatus: reviewed
+  - id: evidence-wor85-explore-mr-pooled
+    name: EXPLORE MR — pooled Brazil/Georgia interim report
+    familyIds:
+      - family-polares-mrace
+    design: Prospective single-arm multicenter study
+    versionIds:
+      - ver-polares-mrace-explore-study
+    versionMapping: exact
+    population: 78 treated interim participants at five Brazil/Georgia centers
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: Article PDFpp2–3 Study Design/Results; Table2p6; Table3pp8–9; Limitationspp13–14.
+    reviewStatus: reviewed
+  - id: evidence-wor86-progress
+    name: PROGRESS — pooled strategy primary report (generation use unreported)
+    nctId: NCT04889872
+    entityId: trial-progress
+    familyIds:
+      - family-sapien
+    design: >-
+      International randomized open-label early TAVR versus surveillance strategy; SAPIEN 3, Ultra and Ultra
+      RESILIA permitted, but actual generation use/counts unreported in main article. Family-level readout; no
+      generation-specific evidence inheritance.
+    versionIds: []
+    versionMapping: unclear
+    population: 744 randomized patients aged ≥65 with moderate AS and at least one at-risk feature
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Original PDF pp 2–5; Table 2, p 9; Figure 3, p 11; Limitations p 11.
+    reviewStatus: reviewed
+  - id: evidence-wor86-simplaafy
+    name: SIMPLAAFY — FLX Pro six-month primary report
+    nctId: NCT06521463
+    entityId: trial-simplaafy
+    familyIds:
+      - family-watchman
+    design: >-
+      US randomized open-label three-group postimplant regimen trial; independent event adjudication and core
+      laboratory (blinding not established in main article)
+    versionIds:
+      - ver-watchman-flx-pro
+    versionMapping: exact
+    population: >-
+      1857 NVAF patients randomized after successful uncomplicated FLX Pro implantation and eligible for all
+      three study regimens
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: Original PDF E1–E4; Tables 2–3E 7–E8; LimitationsE 9–E10.
+    reviewStatus: reviewed
+
 trialSnapshots:
   - id: snapshot-siegel-star-20261014
     trialId: evidence-siegel-star
@@ -2945,6 +3010,118 @@ cohorts:
         locator: 'Abstract: Design, Setting, and Participants; Results'
     reviewStatus: reviewed
 
+  - id: cohort-wor85-paradigm
+    trialId: evidence-wor85-paradigm-pvl
+    name: 200 APVL3 implant attempts after surgical aortic/mitral valve replacement
+    population: 200 APVL3 implant attempts after surgical aortic/mitral valve replacement
+    enrollment:
+      - value: 200
+        stage: analyzed
+        note: >-
+          Single-arm selected anatomy. Primary composite and procedural success differ; no
+          historical-build/Paraclose equivalence or comparative efficacy.
+    arms:
+      - id: arm-wor85-paradigm
+        name: Study cohort
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: Pre-proof PDF pp9–12,14–17; Tables3–4 PDFpp28–30.
+    reviewStatus: reviewed
+  - id: cohort-wor85-explore
+    trialId: evidence-wor85-explore-mr-pooled
+    name: 78 treated interim participants at five Brazil/Georgia centers
+    population: 78 treated interim participants at five Brazil/Georgia centers
+    enrollment:
+      - value: 78
+        stage: analyzed
+        note: >-
+          Pooled 78-person report cites NCT06113354 but is not assigned to its 10-person BR target or to US/GE
+          registry cohorts. Available-case imaging, post hoc subgroups, no control.
+    arms:
+      - id: arm-wor85-explore
+        name: Study cohort
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: Article PDFpp2–3 Study Design/Results; Table2p6; Table3pp8–9; Limitationspp13–14.
+    reviewStatus: reviewed
+  - id: cohort-wor85-veritas-1y
+    trialId: evidence-veritas
+    name: 458 implant attempts, including 58 roll-in and 400 primary-analysis participants
+    population: 458 implant attempts, including 58 roll-in and 400 primary-analysis participants
+    enrollment:
+      - value: 458
+        stage: analyzed
+        note: >-
+          Single-arm investigational cohort; no concurrent control. Imaging denominators differ; nonfatal
+          rates are Aalen–Johansen estimates, not crude fractions. Earlier 45-day primary-analysis cohort
+          stays separate.
+    arms:
+      - id: arm-wor85-veritas-1y
+        name: Study cohort
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: Original one-year PDFpp3–5; Tables1–2p5 and footnotes.
+    reviewStatus: reviewed
+  - id: cohort-wor86-progress
+    trialId: evidence-wor86-progress
+    name: 744 randomized patients aged ≥65 with moderate AS and at least one at-risk feature
+    population: 744 randomized patients aged ≥65 with moderate AS and at least one at-risk feature
+    enrollment:
+      - value: 1294
+        stage: screened
+      - value: 744
+        stage: randomized
+      - value: 697
+        stage: analyzed
+        note: >-
+          Results p 4 reports 356/341 included in effectiveness analysis; Table 2/Figure 1 ITT labels 373/371.
+          These counts do not define crude denominators for KM estimates.
+      - value: 358
+        stage: treated
+        note: Index TAVR as-treated safety population only.
+    arms:
+      - id: arm-wor86-progress-tavr
+        name: Early TAVR strategy (SAPIEN 3 / Ultra / Ultra RESILIA permitted; actual generation use unreported)
+        randomized: 373
+      - id: arm-wor86-progress-surveillance
+        name: Clinical surveillance with delayed AVR when indicated
+        randomized: 371
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Original PDF pp 2–5; Table 2, p 9; Figure 3, p 11; Limitations p 11.
+    reviewStatus: reviewed
+  - id: cohort-wor86-simplaafy
+    trialId: evidence-wor86-simplaafy
+    name: >-
+      1857 NVAF patients randomized after successful uncomplicated FLX Pro implantation and eligible for all
+      three study regimens
+    population: >-
+      1857 NVAF patients randomized after successful uncomplicated FLX Pro implantation and eligible for all
+      three study regimens
+    enrollment:
+      - value: 2057
+        stage: screened
+        note: Paper calls these enrolled before screening/implant exclusions.
+      - value: 1857
+        stage: randomized
+      - value: 1797
+        stage: analyzed
+        note: 596 DAPT, 603 NOAC, 598 aspirin; completed follow-up or had event, including 210-day visit window.
+    arms:
+      - id: arm-wor86-simplaafy-dapt
+        name: 'DAPT: aspirin 81–100 mg plus clopidogrel 75 mg daily for 6 months, then aspirin'
+        randomized: 624
+      - id: arm-wor86-simplaafy-noac
+        name: Reduced-dose NOAC for 3 months, then aspirin
+        randomized: 620
+      - id: arm-wor86-simplaafy-aspirin
+        name: Aspirin 81–100 mg daily for 12 months
+        randomized: 613
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: Original PDF E1–E4; Tables 2–3E 7–E8; LimitationsE 9–E10.
+    reviewStatus: reviewed
+
 endpoints:
   - id: endpoint-acorn-lvedv
     name: Five-year left ventricular end-diastolic volume
@@ -3403,6 +3580,291 @@ endpoints:
         locator: 'Abstract: Main Outcomes and Measures; Results'
     reviewStatus: reviewed
 
+  - id: endpoint-wor85-paradigm-primary
+    name: Primary composite success
+    definition: >-
+      Intended placement without surgical-valve interference; site 3D-TEE PVL reduction ≥2 grades at exit; no
+      intraprocedural death; no unplanned device-related reintervention through 30 days.
+    hierarchy: primary
+    measureType: binary
+    timeframe: Index procedure through 30 days
+    analysisPopulation: All 200 implant attempts
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: PDFpp10–12 Endpoints/Statistics; Table3 PDFp28.
+    reviewStatus: reviewed
+  - id: endpoint-wor85-paradigm-procedural
+    name: Descriptive 30-day procedural success
+    definition: Device success plus no device/procedure-related serious adverse event at 30 days.
+    hierarchy: not_reported
+    measureType: binary
+    timeframe: Index procedure through 30 days
+    analysisPopulation: 181 evaluable;19 nonevaluable excluded
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: PDFpp11,16–17; Supplemental TableS5 referenced but not supplied.
+    reviewStatus: reviewed
+  - id: endpoint-wor85-paradigm-mortality
+    name: Descriptive 30-day all-cause mortality
+    definition: All-cause death through strict day 30.
+    hierarchy: not_reported
+    measureType: binary
+    timeframe: Index procedure through 30 days
+    analysisPopulation: All 200 implant attempts
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: Table4 PDFpp29–30; Results PDFpp15–16.
+    reviewStatus: reviewed
+  - id: endpoint-wor85-explore-mr
+    name: MR moderate or less at one year
+    definition: MR grade≤2 by available one-year echocardiography.
+    hierarchy: not_reported
+    measureType: binary
+    timeframe: One year
+    analysisPopulation: 32 patients with MR-grade data, from 78 treated
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: Table3 PDFpp8–9, all-patient one-year MR rows.
+    reviewStatus: reviewed
+  - id: endpoint-wor85-explore-mortality-30d
+    name: All-cause mortality at 30 days
+    definition: All-cause mortality estimate through 30 days.
+    hierarchy: primary
+    measureType: time_to_event
+    timeframe: 30 days
+    analysisPopulation: 78 treated; Kaplan–Meier analysis
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: Study Endpointsp2; Table2p6 and footnote.
+    reviewStatus: reviewed
+  - id: endpoint-wor85-explore-mortality-1y
+    name: All-cause mortality at one year
+    definition: Kaplan–Meier all-cause mortality through one year.
+    hierarchy: not_reported
+    measureType: time_to_event
+    timeframe: One year
+    analysisPopulation: 78 treated; changing risk set/censoring
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: Table2 PDFp6 and footnotes.
+    reviewStatus: reviewed
+  - id: endpoint-wor85-veritas-1y-closure
+    name: Complete 0 mm LAA closure at one year
+    definition: No peridevice leak on available TEE or cardiac CT.
+    hierarchy: not_reported
+    measureType: binary
+    timeframe: One year
+    analysisPopulation: 394 imaged,267TEE and 127CT, from 458 attempts
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: Table1 PDFp5 and LAA closure PDFp4.
+    reviewStatus: reviewed
+  - id: endpoint-wor85-veritas-1y-drt
+    name: Cumulative device-related thrombus
+    definition: Core-lab DRT through one year; Aalen–Johansen estimate.
+    hierarchy: not_reported
+    measureType: time_to_event
+    timeframe: One year
+    analysisPopulation: Full 458-attempt descriptive cohort; time-to-event analysis
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: Table1 PDFp5 and footnote; DRT text PDFp5.
+    reviewStatus: reviewed
+  - id: endpoint-wor85-veritas-1y-stroke
+    name: Ischemic stroke or systemic embolism
+    definition: Ischemic stroke/systemic embolism through one year; Aalen–Johansen estimate.
+    hierarchy: not_reported
+    measureType: time_to_event
+    timeframe: One year
+    analysisPopulation: Full 458-attempt descriptive cohort; time-to-event analysis
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: PDFp1 abstract; Table2p5 and footnote.
+    reviewStatus: reviewed
+  - id: endpoint-wor85-veritas-1y-bleeding
+    name: Major bleeding BARC≥3
+    definition: Major bleeding BARC≥3 through one year; Aalen–Johansen estimate.
+    hierarchy: not_reported
+    measureType: time_to_event
+    timeframe: One year
+    analysisPopulation: Full 458-attempt descriptive cohort; time-to-event analysis
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: Table2 PDFp5 and footnote.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-progress-primary-effectiveness
+    name: 'Primary: death or HF event at two years'
+    definition: >-
+      First all-cause death or HF event, with or without hospitalization. HF event requires symptom, objective
+      evidence and treatment; delayed AVR alone is not an HF event.
+    hierarchy: primary
+    measureType: time_to_event
+    timeframe: Two years
+    analysisPopulation: >-
+      ITT randomized 373/371; Results p 4 separately reports 356/341 included in analysis; censored KM
+      estimates.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: PDF p 3 definition, pp 4–5 Primary End Points, Table 2, p 9/Figure 1, p 8.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-progress-primary-safety
+    name: Primary safety composite at 30 days
+    definition: >-
+      All-cause death, stroke, life-threatening/fatal bleeding, stage 4 AKI, device/procedure-related
+      hospitalization or valve dysfunction requiring reintervention.
+    hierarchy: primary
+    measureType: binary
+    timeframe: 30 days after index TAVR
+    analysisPopulation: 358 index-TAVR as-treated patients; performance goal, no randomized comparator.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: PDF pp 3, 5; Table 2, p 9 and footnotes.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-progress-death
+    name: 'Component: all-cause death at two years'
+    definition: Death from any cause as a component of primary effectiveness.
+    hierarchy: component
+    measureType: time_to_event
+    timeframe: Two years
+    analysisPopulation: ITT strategy groups; KM with censoring.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Table 2, p 9; PDF pp 4–5.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-progress-hf-event
+    name: 'Component: HF event at two years'
+    definition: HF event with or without hospitalization meeting symptom, objective assessment and treatment criteria.
+    hierarchy: component
+    measureType: time_to_event
+    timeframe: Two years
+    analysisPopulation: ITT strategy groups; KM with censoring.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: PDF pp 3, 5; Table 2, p 9.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-progress-first-secondary
+    name: 'First secondary: death, stroke or HF hospitalization'
+    definition: All-cause death, stroke or hospitalization for heart failure at two years.
+    hierarchy: secondary
+    measureType: time_to_event
+    timeframe: Two years
+    analysisPopulation: ITT strategy groups; KM with censoring.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Statistical Analysis PDF pp 3–4; Table 2, p 9.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-progress-hf-hospitalization
+    name: 'Later secondary: HF hospitalization (descriptive)'
+    definition: Hospitalization for heart failure through two years; third secondary in prespecified hierarchy.
+    hierarchy: secondary
+    measureType: time_to_event
+    timeframe: Two years
+    analysisPopulation: ITT strategy groups; KM with censoring.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: PDF p 5; Table 2, p 9; testing rules pp 3–4.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-progress-kccq
+    name: 'Later secondary: alive with sustained KCCQ improvement'
+    definition: Alive with KCCQ-OS improvement ≥10 points from baseline sustained at both one and two years.
+    hierarchy: secondary
+    measureType: binary
+    timeframe: One and two years
+    analysisPopulation: 'Available observations: 344 TAVR/327 surveillance; not all randomized.'
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Table 2, p 9 and footnotes; Statistical Analysis pp 3–4.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-progress-delayed-avr
+    name: 'Surveillance: delayed AVR through two years'
+    definition: Cumulative incidence of delayed aortic-valve replacement after assignment to clinical surveillance.
+    hierarchy: not_reported
+    measureType: time_to_event
+    timeframe: Two years
+    analysisPopulation: 371 surveillance-randomized patients; cumulative incidence with changing risk set.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Clinical Surveillance PDF p 5; Figure 3 and legendp 11; primary definitionp 3.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-simplaafy-primary-noac
+    name: 'Primary noninferiority: reduced-dose NOAC then aspirin versus DAPT'
+    definition: >-
+      All-cause death, all stroke, systemic embolism or ISTH major bleeding through six months; primary
+      analysis includes sufficient follow-up or adjudicated event within 210-day visit window.
+    hierarchy: primary
+    measureType: binary
+    timeframe: Six months
+    analysisPopulation: 'Primary analysis: 596 DAPT; 603 NOAC. Randomized denominators 624/620 differ.'
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: >-
+          Statistical Analysis/Primary End PointE 3; Figure 1, E4; Table 2, E7. Main text
+          monotherapy-minus-DAPT direction; Table 2 differences use the reverse sign.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-simplaafy-primary-aspirin
+    name: 'Primary noninferiority: aspirin alone versus DAPT'
+    definition: >-
+      All-cause death, all stroke, systemic embolism or ISTH major bleeding through six months; primary
+      analysis includes sufficient follow-up or adjudicated event within 210-day visit window.
+    hierarchy: primary
+    measureType: binary
+    timeframe: Six months
+    analysisPopulation: 'Primary analysis: 596 DAPT; 598 aspirin. Randomized denominators 624/613 differ.'
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: >-
+          Statistical Analysis/Primary End PointE 3; Figure 1, E4; Table 2, E7. Main text
+          monotherapy-minus-DAPT direction; Table 2 differences use the reverse sign.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-simplaafy-major-bleeding
+    name: 'Exploratory: ISTH major bleeding'
+    definition: Fatal/critical-site bleeding, hemoglobin fall ≥20 g/L or transfusion ≥2 units; through six months.
+    hierarchy: exploratory
+    measureType: binary
+    timeframe: Six months
+    analysisPopulation: Primary analysis 596/603/598 DAPT/NOAC/aspirin.
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: Table 2, E7 and footnotes; Statistical AnalysisE 3.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-simplaafy-crnmb
+    name: 'Exploratory: clinically relevant nonmajor bleeding'
+    definition: >-
+      Nonmajor bleeding requiring medical intervention, hospitalization/increased care, or face-to-face office
+      or telehealth assessment; telephone/electronic contact alone does not qualify.
+    hierarchy: exploratory
+    measureType: binary
+    timeframe: Six months
+    analysisPopulation: Primary analysis 596/603/598 DAPT/NOAC/aspirin.
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: Table 2, E7 and footnotes; Statistical AnalysisE 3.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-simplaafy-drt
+    name: 'Exploratory: device-related thrombus at 45 days'
+    definition: >-
+      Core-laboratory grade 2/3 echodensity or hypoattenuated thickening, not merely site-detected/treated
+      thrombus.
+    hierarchy: exploratory
+    measureType: binary
+    timeframe: 45 days
+    analysisPopulation: Imaging-evaluable 584 DAPT, 584 NOAC, 582 aspirin; distinct from clinical denominators.
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: Table 3, E8 and footnotes; Statistical AnalysisE 3.
+    reviewStatus: reviewed
+  - id: endpoint-wor86-simplaafy-ischemic-stroke
+    name: 'Component: ischemic stroke at six months'
+    definition: Ischemic stroke, excluding hemorrhagic stroke; component of all-stroke primary endpoint.
+    hierarchy: component
+    measureType: binary
+    timeframe: Six months
+    analysisPopulation: Primary analysis 596/603/598 DAPT/NOAC/aspirin.
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: Table 2, E7 individual components; Statistical AnalysisE 3.
+    reviewStatus: reviewed
+
 readouts:
   - id: readout-acorn-corcap-5y
     trialId: evidence-acorn-five-year
@@ -3750,6 +4212,101 @@ readouts:
     sourceRefs:
       - sourceId: src-ultrasight-as-jama-20260828
         locator: 'Abstract: Design, Setting, and Participants; Results'
+    reviewStatus: reviewed
+
+  - id: readout-wor85-paradigm
+    trialId: evidence-wor85-paradigm-pvl
+    cohortId: cohort-wor85-paradigm
+    title: PARADIGM APVL3 — original 30-day report
+    publishedAt:
+      value: '2026-10-31'
+      precision: day
+    followUp: Index procedure through 30 days
+    maturity: primary
+    versionIds:
+      - ver-apvl3-paradigm-study
+    limitation: >-
+      Single-arm selected anatomy. Primary composite and procedural success differ; no
+      historical-build/Paraclose equivalence or comparative efficacy.
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: Pre-proof PDF pp9–12,14–17; Tables3–4 PDFpp28–30.
+    reviewStatus: reviewed
+  - id: readout-wor85-explore
+    trialId: evidence-wor85-explore-mr-pooled
+    cohortId: cohort-wor85-explore
+    title: EXPLORE MR — pooled Brazil/Georgia interim report
+    publishedAt:
+      value: '2026-10-31'
+      precision: day
+    followUp: 30 days and one year
+    maturity: interim
+    versionIds:
+      - ver-polares-mrace-explore-study
+    limitation: >-
+      Pooled 78-person report cites NCT06113354 but is not assigned to its 10-person BR target or to US/GE
+      registry cohorts. Available-case imaging, post hoc subgroups, no control.
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: Article PDFpp2–3 Study Design/Results; Table2p6; Table3pp8–9; Limitationspp13–14.
+    reviewStatus: reviewed
+  - id: readout-wor85-veritas-1y
+    trialId: evidence-veritas
+    cohortId: cohort-wor85-veritas-1y
+    title: VERITAS Amulet360 — one-year descriptive follow-up
+    publishedAt:
+      value: '2026-11-01'
+      precision: day
+    followUp: One year
+    maturity: follow_up
+    versionIds:
+      - ver-amulet-360
+    limitation: >-
+      Single-arm investigational cohort; no concurrent control. Imaging denominators differ; nonfatal rates
+      are Aalen–Johansen estimates, not crude fractions. Earlier 45-day primary-analysis cohort stays
+      separate.
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: Original one-year PDFpp3–5; Tables1–2p5 and footnotes.
+    reviewStatus: reviewed
+  - id: readout-wor86-progress
+    trialId: evidence-wor86-progress
+    cohortId: cohort-wor86-progress
+    title: PROGRESS — pooled strategy primary report (actual generation use unresolved)
+    publishedAt:
+      value: '2026-11-02'
+      precision: day
+    followUp: Two years; primary safety at 30 days
+    maturity: primary
+    versionIds: []
+    limitation: >-
+      PROGRESS permitted SAPIEN 3 / SAPIEN 3 Ultra / SAPIEN 3 Ultra RESILIA; actual use/counts by generation
+      are not disclosed in the main paper. Outcomes are pooled strategy estimates, not individual-generation
+      results. Age ≥65 with at-risk moderate AS; open-label and unblinded event committee. KM estimates are
+      not crude fractions. Supplementary analyses and protocol detail are outside this summary.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Original PDF pp 2–5; Table 2, p 9; Figure 3, p 11; Limitations p 11.
+    reviewStatus: reviewed
+  - id: readout-wor86-simplaafy
+    trialId: evidence-wor86-simplaafy
+    cohortId: cohort-wor86-simplaafy
+    title: SIMPLAAFY — FLX Pro six-month primary report
+    publishedAt:
+      value: '2026-11-02'
+      precision: day
+    followUp: Six months clinical; 45-day imaging
+    maturity: primary
+    versionIds:
+      - ver-watchman-flx-pro
+    limitation: >-
+      FLX Pro only, randomized after successful uncomplicated implant with site-assessed 0 mm seal and
+      eligibility for all three regimens. Primary analysis excludes patients without follow-up or events; no
+      full-dose NOAC comparator, other-device inference or 12-month result. Bleeding/imaging comparisons
+      exploratory without multiplicity adjustment.
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: Original PDF E1–E4; Tables 2–3E 7–E8; LimitationsE 9–E10.
     reviewStatus: reviewed
 
 outcomes:
@@ -4436,6 +4993,663 @@ outcomes:
     sourceRefs:
       - sourceId: src-ultrasight-as-jama-20260828
         locator: 'Abstract: Results'
+    reviewStatus: reviewed
+
+  - id: outcome-wor85-paradigm-primary
+    readoutId: readout-wor85-paradigm
+    endpointId: endpoint-wor85-paradigm-primary
+    arms:
+      - armId: arm-wor85-paradigm
+        value: 94
+        unit: '%'
+        denominator: 200
+    effect:
+      measure: Reported study estimate
+      value: 94
+      unit: '%'
+      ci:
+        lower: 90.2
+        level: 96
+        sidedness: one_sided
+    pValue: 0.0001
+    pValueQualifier: <
+    interpretation: >-
+      188/200 met the composite; one-sided 96% lower bound 90.2% exceeded the 65% performance goal. No
+      concurrent comparator.
+    limitation: >-
+      Single-arm selected anatomy. Primary composite and procedural success differ; no
+      historical-build/Paraclose equivalence or comparative efficacy.
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: PDFpp10–12 Endpoints/Statistics; Table3 PDFp28.
+    reviewStatus: reviewed
+  - id: outcome-wor85-paradigm-procedural
+    readoutId: readout-wor85-paradigm
+    endpointId: endpoint-wor85-paradigm-procedural
+    arms:
+      - armId: arm-wor85-paradigm
+        value: 77.3
+        unit: '%'
+        denominator: 181
+    interpretation: 140/181 achieved procedural success; not the 94% primary composite and not 140/200.
+    limitation: >-
+      Single-arm selected anatomy. Primary composite and procedural success differ; no
+      historical-build/Paraclose equivalence or comparative efficacy.
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: PDFpp11,16–17; Supplemental TableS5 referenced but not supplied.
+    reviewStatus: reviewed
+  - id: outcome-wor85-paradigm-mortality
+    readoutId: readout-wor85-paradigm
+    endpointId: endpoint-wor85-paradigm-mortality
+    arms:
+      - armId: arm-wor85-paradigm
+        value: 2
+        unit: '%'
+        denominator: 200
+    effect:
+      measure: Reported study estimate
+      value: 2
+      unit: '%'
+      ci:
+        lower: 0.55
+        upper: 5.04
+        level: 95
+        sidedness: two_sided
+    interpretation: 4/200 deaths through day 30; the visit-disposition Day 46 death is excluded.
+    limitation: >-
+      Single-arm selected anatomy. Primary composite and procedural success differ; no
+      historical-build/Paraclose equivalence or comparative efficacy.
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: Table4 PDFpp29–30; Results PDFpp15–16.
+    reviewStatus: reviewed
+  - id: outcome-wor85-explore-mr
+    readoutId: readout-wor85-explore
+    endpointId: endpoint-wor85-explore-mr
+    arms:
+      - armId: arm-wor85-explore
+        value: 90.6
+        unit: '%'
+        denominator: 32
+    interpretation: 29/32 assessed had MR≤2; only 32/78 had one-year MR observations. Not an all-enrolled response rate.
+    limitation: >-
+      Pooled 78-person report cites NCT06113354 but is not assigned to its 10-person BR target or to US/GE
+      registry cohorts. Available-case imaging, post hoc subgroups, no control.
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: Table3 PDFpp8–9, all-patient one-year MR rows.
+    reviewStatus: reviewed
+  - id: outcome-wor85-explore-mortality-30d
+    readoutId: readout-wor85-explore
+    endpointId: endpoint-wor85-explore-mortality-30d
+    arms:
+      - armId: arm-wor85-explore
+        value: 6.4
+        unit: '%'
+    interpretation: 5 events; reported mortality estimate 6.4%. No comparator.
+    limitation: >-
+      Pooled 78-person report cites NCT06113354 but is not assigned to its 10-person BR target or to US/GE
+      registry cohorts. Available-case imaging, post hoc subgroups, no control.
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: Study Endpointsp2; Table2p6 and footnote.
+    reviewStatus: reviewed
+  - id: outcome-wor85-explore-mortality-1y
+    readoutId: readout-wor85-explore
+    endpointId: endpoint-wor85-explore-mortality-1y
+    arms:
+      - armId: arm-wor85-explore
+        value: 29.5
+        unit: '%'
+    effect:
+      measure: Reported study estimate
+      value: 29.5
+      unit: '%'
+      ci:
+        lower: 16.9
+        upper: 40.2
+        level: 95
+        sidedness: two_sided
+    interpretation: >-
+      19 deaths through one year;29.5% is a Kaplan–Meier estimate, not 19/78.23 total deaths at cutoff include
+      4 after one year.
+    limitation: >-
+      Pooled 78-person report cites NCT06113354 but is not assigned to its 10-person BR target or to US/GE
+      registry cohorts. Available-case imaging, post hoc subgroups, no control.
+    sourceRefs:
+      - sourceId: src-wor85-explore
+        locator: Table2 PDFp6 and footnotes.
+    reviewStatus: reviewed
+  - id: outcome-wor85-veritas-1y-closure
+    readoutId: readout-wor85-veritas-1y
+    endpointId: endpoint-wor85-veritas-1y-closure
+    arms:
+      - armId: arm-wor85-veritas-1y
+        value: 91.1
+        unit: '%'
+        denominator: 394
+    effect:
+      measure: Reported study estimate
+      value: 91.1
+      unit: '%'
+      ci:
+        lower: 87.9
+        upper: 93.7
+        level: 95
+        sidedness: two_sided
+    interpretation: 359/394 complete closures; TEE-only 257/267 (96.3%) is a different subset.
+    limitation: >-
+      Single-arm investigational cohort; no concurrent control. Imaging denominators differ; nonfatal rates
+      are Aalen–Johansen estimates, not crude fractions. Earlier 45-day primary-analysis cohort stays
+      separate.
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: Table1 PDFp5 and LAA closure PDFp4.
+    reviewStatus: reviewed
+  - id: outcome-wor85-veritas-1y-drt
+    readoutId: readout-wor85-veritas-1y
+    endpointId: endpoint-wor85-veritas-1y-drt
+    arms:
+      - armId: arm-wor85-veritas-1y
+        value: 3.3
+        unit: '%'
+    effect:
+      measure: Reported study estimate
+      value: 3.3
+      unit: '%'
+      ci:
+        lower: 2
+        upper: 5.3
+        level: 95
+        sidedness: two_sided
+    interpretation: >-
+      15 cumulative DRT events. The narrower post-hoc clinically relevant category was 2 events/estimated
+      0.4%, not a replacement for the full DRT result.
+    limitation: >-
+      Single-arm investigational cohort; no concurrent control. Imaging denominators differ; nonfatal rates
+      are Aalen–Johansen estimates, not crude fractions. Earlier 45-day primary-analysis cohort stays
+      separate.
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: Table1 PDFp5 and footnote; DRT text PDFp5.
+    reviewStatus: reviewed
+  - id: outcome-wor85-veritas-1y-stroke
+    readoutId: readout-wor85-veritas-1y
+    endpointId: endpoint-wor85-veritas-1y-stroke
+    arms:
+      - armId: arm-wor85-veritas-1y
+        value: 1.8
+        unit: '%'
+    effect:
+      measure: Reported study estimate
+      value: 1.8
+      unit: '%'
+      ci:
+        lower: 0.8
+        upper: 3.3
+        level: 95
+        sidedness: two_sided
+    interpretation: Eight ischemic strokes and zero systemic emboli; paper-specific estimate and interval.
+    limitation: >-
+      Single-arm investigational cohort; no concurrent control. Imaging denominators differ; nonfatal rates
+      are Aalen–Johansen estimates, not crude fractions. Earlier 45-day primary-analysis cohort stays
+      separate.
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: PDFp1 abstract; Table2p5 and footnote.
+    reviewStatus: reviewed
+  - id: outcome-wor85-veritas-1y-bleeding
+    readoutId: readout-wor85-veritas-1y
+    endpointId: endpoint-wor85-veritas-1y-bleeding
+    arms:
+      - armId: arm-wor85-veritas-1y
+        value: 6.6
+        unit: '%'
+    effect:
+      measure: Reported study estimate
+      value: 6.6
+      unit: '%'
+      ci:
+        lower: 4.5
+        upper: 9.2
+        level: 95
+        sidedness: two_sided
+    interpretation: 29 events; paper-specific estimate and 95% interval. No comparative treatment-benefit inference.
+    limitation: >-
+      Single-arm investigational cohort; no concurrent control. Imaging denominators differ; nonfatal rates
+      are Aalen–Johansen estimates, not crude fractions. Earlier 45-day primary-analysis cohort stays
+      separate.
+    sourceRefs:
+      - sourceId: src-wor85-veritas
+        locator: Table2 PDFp5 and footnote.
+    reviewStatus: reviewed
+  - id: outcome-wor86-progress-primary-effectiveness
+    readoutId: readout-wor86-progress
+    endpointId: endpoint-wor86-progress-primary-effectiveness
+    arms:
+      - armId: arm-wor86-progress-tavr
+        value: 16.7
+        unit: '%'
+      - armId: arm-wor86-progress-surveillance
+        value: 23.9
+        unit: '%'
+    effect:
+      measure: Risk difference, TAVR minus surveillance
+      value: -7.2
+      unit: percentage points
+      ci:
+        lower: -13.1
+        upper: -1.3
+        level: 95
+        sidedness: two_sided
+    pValue: 0.02
+    pValueQualifier: '='
+    interpretation: >-
+      60 versus 85 first events. Superiority criterion met for the pooled strategy composite; hazard ratio
+      0.67 (95% CI 0.48–0.93). Not an established mortality benefit or a per-generation result.
+    limitation: >-
+      PROGRESS permitted SAPIEN 3 / SAPIEN 3 Ultra / SAPIEN 3 Ultra RESILIA; actual use/counts by generation
+      are not disclosed in the main paper. Outcomes are pooled strategy estimates, not individual-generation
+      results. Age ≥65 with at-risk moderate AS; open-label and unblinded event committee. KM estimates are
+      not crude fractions. Supplementary analyses and protocol detail are outside this summary.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: PDF p 3 definition, pp 4–5 Primary End Points, Table 2, p 9/Figure 1, p 8.
+    reviewStatus: reviewed
+  - id: outcome-wor86-progress-primary-safety
+    readoutId: readout-wor86-progress
+    endpointId: endpoint-wor86-progress-primary-safety
+    arms:
+      - armId: arm-wor86-progress-tavr
+        value: 5.9
+        unit: '%'
+        denominator: 358
+    effect:
+      measure: Incidence
+      value: 5.9
+      unit: '%'
+      ci:
+        lower: 3.9
+        upper: 8.8
+        level: 95
+        sidedness: two_sided
+    pValue: 0.001
+    pValueQualifier: <
+    interpretation: >-
+      21/358 events. One-sided 97.5% upper bound 8.8% below prespecified 13.7% performance goal. P value
+      compares with the goal, not surveillance.
+    limitation: >-
+      PROGRESS permitted SAPIEN 3 / SAPIEN 3 Ultra / SAPIEN 3 Ultra RESILIA; actual use/counts by generation
+      are not disclosed in the main paper. Outcomes are pooled strategy estimates, not individual-generation
+      results. Age ≥65 with at-risk moderate AS; open-label and unblinded event committee. KM estimates are
+      not crude fractions. Supplementary analyses and protocol detail are outside this summary.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: PDF pp 3, 5; Table 2, p 9 and footnotes.
+    reviewStatus: reviewed
+  - id: outcome-wor86-progress-death
+    readoutId: readout-wor86-progress
+    endpointId: endpoint-wor86-progress-death
+    arms:
+      - armId: arm-wor86-progress-tavr
+        value: 8.4
+        unit: '%'
+      - armId: arm-wor86-progress-surveillance
+        value: 7.3
+        unit: '%'
+    effect:
+      measure: Risk difference, TAVR minus surveillance
+      value: 1
+      unit: percentage points
+      ci:
+        lower: -2.9
+        upper: 5
+        level: 95
+        sidedness: two_sided
+    interpretation: >-
+      30 versus 26 deaths. Reported difference rounds to 1.0 pp. No established mortality benefit; component
+      CI not adjusted for multiplicity.
+    limitation: >-
+      PROGRESS permitted SAPIEN 3 / SAPIEN 3 Ultra / SAPIEN 3 Ultra RESILIA; actual use/counts by generation
+      are not disclosed in the main paper. Outcomes are pooled strategy estimates, not individual-generation
+      results. Age ≥65 with at-risk moderate AS; open-label and unblinded event committee. KM estimates are
+      not crude fractions. Supplementary analyses and protocol detail are outside this summary.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Table 2, p 9; PDF pp 4–5.
+    reviewStatus: reviewed
+  - id: outcome-wor86-progress-hf-event
+    readoutId: readout-wor86-progress
+    endpointId: endpoint-wor86-progress-hf-event
+    arms:
+      - armId: arm-wor86-progress-tavr
+        value: 10.8
+        unit: '%'
+      - armId: arm-wor86-progress-surveillance
+        value: 19
+        unit: '%'
+    effect:
+      measure: Risk difference, TAVR minus surveillance
+      value: -8.2
+      unit: percentage points
+      ci:
+        lower: -13.4
+        upper: -2.9
+        level: 95
+        sidedness: two_sided
+    interpretation: >-
+      38 versus 66 HF events. Descriptive primary-composite component, not a separately
+      multiplicity-controlled efficacy claim.
+    limitation: >-
+      PROGRESS permitted SAPIEN 3 / SAPIEN 3 Ultra / SAPIEN 3 Ultra RESILIA; actual use/counts by generation
+      are not disclosed in the main paper. Outcomes are pooled strategy estimates, not individual-generation
+      results. Age ≥65 with at-risk moderate AS; open-label and unblinded event committee. KM estimates are
+      not crude fractions. Supplementary analyses and protocol detail are outside this summary.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: PDF pp 3, 5; Table 2, p 9.
+    reviewStatus: reviewed
+  - id: outcome-wor86-progress-first-secondary
+    readoutId: readout-wor86-progress
+    endpointId: endpoint-wor86-progress-first-secondary
+    arms:
+      - armId: arm-wor86-progress-tavr
+        value: 17.7
+        unit: '%'
+      - armId: arm-wor86-progress-surveillance
+        value: 23.3
+        unit: '%'
+    effect:
+      measure: Risk difference, TAVR minus surveillance
+      value: -5.6
+      unit: percentage points
+      ci:
+        lower: -11.5
+        upper: 0.3
+        level: 95
+        sidedness: two_sided
+    pValue: 0.07
+    pValueQualifier: '='
+    interpretation: >-
+      64 versus 83 events. First hierarchical secondary was not significant; confirmatory testing of all later
+      secondary endpoints stopped.
+    limitation: >-
+      PROGRESS permitted SAPIEN 3 / SAPIEN 3 Ultra / SAPIEN 3 Ultra RESILIA; actual use/counts by generation
+      are not disclosed in the main paper. Outcomes are pooled strategy estimates, not individual-generation
+      results. Age ≥65 with at-risk moderate AS; open-label and unblinded event committee. KM estimates are
+      not crude fractions. Supplementary analyses and protocol detail are outside this summary.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Statistical Analysis PDF pp 3–4; Table 2, p 9.
+    reviewStatus: reviewed
+  - id: outcome-wor86-progress-hf-hospitalization
+    readoutId: readout-wor86-progress
+    endpointId: endpoint-wor86-progress-hf-hospitalization
+    arms:
+      - armId: arm-wor86-progress-tavr
+        value: 7.4
+        unit: '%'
+      - armId: arm-wor86-progress-surveillance
+        value: 14.9
+        unit: '%'
+    effect:
+      measure: Risk difference, TAVR minus surveillance
+      value: -7.5
+      unit: percentage points
+      ci:
+        lower: -12.2
+        upper: -2.9
+        level: 95
+        sidedness: two_sided
+    interpretation: >-
+      26 versus 52 patients. Descriptive estimate only: first secondary P=.07 stopped hierarchical testing; CI
+      not a confirmatory test.
+    limitation: >-
+      PROGRESS permitted SAPIEN 3 / SAPIEN 3 Ultra / SAPIEN 3 Ultra RESILIA; actual use/counts by generation
+      are not disclosed in the main paper. Outcomes are pooled strategy estimates, not individual-generation
+      results. Age ≥65 with at-risk moderate AS; open-label and unblinded event committee. KM estimates are
+      not crude fractions. Supplementary analyses and protocol detail are outside this summary.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: PDF p 5; Table 2, p 9; testing rules pp 3–4.
+    reviewStatus: reviewed
+  - id: outcome-wor86-progress-kccq
+    readoutId: readout-wor86-progress
+    endpointId: endpoint-wor86-progress-kccq
+    arms:
+      - armId: arm-wor86-progress-tavr
+        value: 39
+        unit: '%'
+        denominator: 344
+      - armId: arm-wor86-progress-surveillance
+        value: 23.2
+        unit: '%'
+        denominator: 327
+    effect:
+      measure: Reported risk difference, TAVR minus surveillance
+      value: 15.7
+      unit: percentage points
+      ci:
+        lower: 8.8
+        upper: 22.6
+        level: 95
+        sidedness: two_sided
+    interpretation: >-
+      134/344 versus 76/327. Descriptive only following failed first secondary; no confirmatory health-status
+      superiority claimed.
+    limitation: >-
+      PROGRESS permitted SAPIEN 3 / SAPIEN 3 Ultra / SAPIEN 3 Ultra RESILIA; actual use/counts by generation
+      are not disclosed in the main paper. Outcomes are pooled strategy estimates, not individual-generation
+      results. Age ≥65 with at-risk moderate AS; open-label and unblinded event committee. KM estimates are
+      not crude fractions. Supplementary analyses and protocol detail are outside this summary.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Table 2, p 9 and footnotes; Statistical Analysis pp 3–4.
+    reviewStatus: reviewed
+  - id: outcome-wor86-progress-delayed-avr
+    readoutId: readout-wor86-progress
+    endpointId: endpoint-wor86-progress-delayed-avr
+    arms:
+      - armId: arm-wor86-progress-surveillance
+        value: 57.4
+        unit: '%'
+    interpretation: >-
+      204 patients underwent delayed AVR (199 TAVR, 5 surgery); 57.4% is the reported cumulative-incidence
+      estimate, not 204/371. This is a strategy comparison; delayed AVR alone did not satisfy HF-event
+      criteria.
+    limitation: >-
+      PROGRESS permitted SAPIEN 3 / SAPIEN 3 Ultra / SAPIEN 3 Ultra RESILIA; actual use/counts by generation
+      are not disclosed in the main paper. Outcomes are pooled strategy estimates, not individual-generation
+      results. Age ≥65 with at-risk moderate AS; open-label and unblinded event committee. KM estimates are
+      not crude fractions. Supplementary analyses and protocol detail are outside this summary.
+    sourceRefs:
+      - sourceId: src-wor86-progress
+        locator: Clinical Surveillance PDF p 5; Figure 3 and legendp 11; primary definitionp 3.
+    reviewStatus: reviewed
+  - id: outcome-wor86-simplaafy-primary-noac
+    readoutId: readout-wor86-simplaafy
+    endpointId: endpoint-wor86-simplaafy-primary-noac
+    arms:
+      - armId: arm-wor86-simplaafy-dapt
+        value: 6.9
+        unit: '%'
+        denominator: 596
+      - armId: arm-wor86-simplaafy-noac
+        value: 5.1
+        unit: '%'
+        denominator: 603
+    effect:
+      measure: Rate difference, NOAC minus DAPT
+      value: -1.7
+      unit: percentage points
+      ci:
+        upper: 1.2
+        level: 97.5
+        sidedness: one_sided
+    pValue: 0.001
+    pValueQualifier: <
+    interpretation: >-
+      41 DAPT events versus 31 NOAC events. Noninferiority met: upper bound 1.2 pp below 7.2 pp margin
+      (one-sided Farrington–Manning α=.025). This is noninferiority, not a prespecified clinical-superiority
+      result.
+    limitation: >-
+      FLX Pro only, randomized after successful uncomplicated implant with site-assessed 0 mm seal and
+      eligibility for all three regimens. Primary analysis excludes patients without follow-up or events; no
+      full-dose NOAC comparator, other-device inference or 12-month result. Bleeding/imaging comparisons
+      exploratory without multiplicity adjustment.
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: >-
+          Statistical Analysis/Primary End PointE 3; Figure 1, E4; Table 2, E7. Main text
+          monotherapy-minus-DAPT direction; Table 2 differences use the reverse sign.
+    reviewStatus: reviewed
+  - id: outcome-wor86-simplaafy-primary-aspirin
+    readoutId: readout-wor86-simplaafy
+    endpointId: endpoint-wor86-simplaafy-primary-aspirin
+    arms:
+      - armId: arm-wor86-simplaafy-dapt
+        value: 6.9
+        unit: '%'
+        denominator: 596
+      - armId: arm-wor86-simplaafy-aspirin
+        value: 3.3
+        unit: '%'
+        denominator: 598
+    effect:
+      measure: Rate difference, aspirin minus DAPT
+      value: -3.5
+      unit: percentage points
+      ci:
+        upper: -0.8
+        level: 97.5
+        sidedness: one_sided
+    pValue: 0.001
+    pValueQualifier: <
+    interpretation: >-
+      41 DAPT events versus 20 aspirin events. Noninferiority met: upper bound −0.8 pp below 7.2 pp margin
+      (one-sided Farrington–Manning α=.025). This is noninferiority, not a prespecified clinical-superiority
+      result.
+    limitation: >-
+      FLX Pro only, randomized after successful uncomplicated implant with site-assessed 0 mm seal and
+      eligibility for all three regimens. Primary analysis excludes patients without follow-up or events; no
+      full-dose NOAC comparator, other-device inference or 12-month result. Bleeding/imaging comparisons
+      exploratory without multiplicity adjustment.
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: >-
+          Statistical Analysis/Primary End PointE 3; Figure 1, E4; Table 2, E7. Main text
+          monotherapy-minus-DAPT direction; Table 2 differences use the reverse sign.
+    reviewStatus: reviewed
+  - id: outcome-wor86-simplaafy-major-bleeding
+    readoutId: readout-wor86-simplaafy
+    endpointId: endpoint-wor86-simplaafy-major-bleeding
+    arms:
+      - armId: arm-wor86-simplaafy-dapt
+        value: 4.5
+        unit: '%'
+        denominator: 596
+      - armId: arm-wor86-simplaafy-noac
+        value: 2.7
+        unit: '%'
+        denominator: 603
+      - armId: arm-wor86-simplaafy-aspirin
+        value: 1.7
+        unit: '%'
+        denominator: 598
+    interpretation: >-
+      27/596, 16/603, 10/598 events. Exploratory/unadjusted; no confirmatory bleeding superiority. In
+      particular, NOAC-versus-DAPT major-bleeding interval includes no difference.
+    limitation: >-
+      FLX Pro only, randomized after successful uncomplicated implant with site-assessed 0 mm seal and
+      eligibility for all three regimens. Primary analysis excludes patients without follow-up or events; no
+      full-dose NOAC comparator, other-device inference or 12-month result. Bleeding/imaging comparisons
+      exploratory without multiplicity adjustment.
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: Table 2, E7 and footnotes; Statistical AnalysisE 3.
+    reviewStatus: reviewed
+  - id: outcome-wor86-simplaafy-crnmb
+    readoutId: readout-wor86-simplaafy
+    endpointId: endpoint-wor86-simplaafy-crnmb
+    arms:
+      - armId: arm-wor86-simplaafy-dapt
+        value: 8.7
+        unit: '%'
+        denominator: 596
+      - armId: arm-wor86-simplaafy-noac
+        value: 4.8
+        unit: '%'
+        denominator: 603
+      - armId: arm-wor86-simplaafy-aspirin
+        value: 3.8
+        unit: '%'
+        denominator: 598
+    interpretation: 52/596, 29/603, 23/598 events. Exploratory/unadjusted; no multiplicity-controlled superiority claim.
+    limitation: >-
+      FLX Pro only, randomized after successful uncomplicated implant with site-assessed 0 mm seal and
+      eligibility for all three regimens. Primary analysis excludes patients without follow-up or events; no
+      full-dose NOAC comparator, other-device inference or 12-month result. Bleeding/imaging comparisons
+      exploratory without multiplicity adjustment.
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: Table 2, E7 and footnotes; Statistical AnalysisE 3.
+    reviewStatus: reviewed
+  - id: outcome-wor86-simplaafy-drt
+    readoutId: readout-wor86-simplaafy
+    endpointId: endpoint-wor86-simplaafy-drt
+    arms:
+      - armId: arm-wor86-simplaafy-dapt
+        value: 3.4
+        unit: '%'
+        denominator: 584
+      - armId: arm-wor86-simplaafy-noac
+        value: 0.9
+        unit: '%'
+        denominator: 584
+      - armId: arm-wor86-simplaafy-aspirin
+        value: 2.7
+        unit: '%'
+        denominator: 582
+    interpretation: >-
+      20/584, 5/584, 16/582 DRT findings. No formal imaging hypothesis prespecified; descriptive/exploratory.
+      Site-treated thrombus is a different row; no confirmatory thrombus-reduction claim.
+    limitation: >-
+      FLX Pro only, randomized after successful uncomplicated implant with site-assessed 0 mm seal and
+      eligibility for all three regimens. Primary analysis excludes patients without follow-up or events; no
+      full-dose NOAC comparator, other-device inference or 12-month result. Bleeding/imaging comparisons
+      exploratory without multiplicity adjustment.
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: Table 3, E8 and footnotes; Statistical AnalysisE 3.
+    reviewStatus: reviewed
+  - id: outcome-wor86-simplaafy-ischemic-stroke
+    readoutId: readout-wor86-simplaafy
+    endpointId: endpoint-wor86-simplaafy-ischemic-stroke
+    arms:
+      - armId: arm-wor86-simplaafy-dapt
+        value: 0.7
+        unit: '%'
+        denominator: 596
+      - armId: arm-wor86-simplaafy-noac
+        value: 0.7
+        unit: '%'
+        denominator: 603
+      - armId: arm-wor86-simplaafy-aspirin
+        value: 0.7
+        unit: '%'
+        denominator: 598
+    interpretation: >-
+      Four ischemic strokes in each group. Equal rounded percentages do not establish stroke equivalence or
+      noninferiority for this component. All stroke 6/4/4 includes 2 hemorrhagic events in DAPT.
+    limitation: >-
+      FLX Pro only, randomized after successful uncomplicated implant with site-assessed 0 mm seal and
+      eligibility for all three regimens. Primary analysis excludes patients without follow-up or events; no
+      full-dose NOAC comparator, other-device inference or 12-month result. Bleeding/imaging comparisons
+      exploratory without multiplicity adjustment.
+    sourceRefs:
+      - sourceId: src-wor86-simplaafy
+        locator: Table 2, E7 individual components; Statistical AnalysisE 3.
     reviewStatus: reviewed
 
 lineage:

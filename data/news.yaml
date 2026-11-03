@@ -1,3 +1,71 @@
+- id: news-2026-11-03-laao-design-series-part-2
+  publishedAt: '2026-11-03'
+  contentType: editorial
+  title: 'LAAO design review, Part 2: Design changes between device generations and their documented outcomes'
+  summary: >-
+    Part 2 of the LAAO engineering Editorial series compares changes to anchors, ends, hubs, and surfaces
+    across device generations. It examines the stated design rationale, reported outcomes, and the limits of
+    attributing an outcome to a particular change.
+  sourceName: VISUALIZE-SH
+  sourceUrl: https://visualize-sh.com/editorials/laao-design-series-part-2/
+  topicTags:
+    - LAAO
+    - device design
+    - engineering
+    - device generations
+  relevantNodeIds:
+    - cond-af
+    - dev-amulet-360
+    - dev-amulet
+    - dev-watchman-flx
+    - dev-watchman-flx-2015
+  reviewStatus: reviewed
+- id: news-2026-11-03-laao-design-series-part-3
+  publishedAt: '2026-11-03'
+  contentType: editorial
+  title: 'LAAO design review, Part 3: Sizing, compression and radial force'
+  summary: >-
+    Part 3 reviews LAAO sizing and release rules, nitinol mechanics, measured radial-force data, leak studies,
+    and computational models. It distinguishes geometric compression from force and contact, and examines the
+    limits of the available evidence.
+  sourceName: VISUALIZE-SH
+  sourceUrl: https://visualize-sh.com/editorials/laao-design-series-part-3/
+  topicTags:
+    - LAAO
+    - device design
+    - engineering
+    - sizing
+    - compression
+    - radial force
+  relevantNodeIds:
+    - cond-af
+    - dev-watchman-original
+    - dev-watchman-flx
+    - dev-amulet
+  reviewStatus: reviewed
+- id: news-2026-11-03-laao-design-series-part-4
+  publishedAt: '2026-11-03'
+  contentType: editorial
+  title: 'LAAO design review, Part 4: Durability: testing, analysis and field experience'
+  summary: >-
+    Part 4 reviews LAAO fatigue testing, computational analysis, corrosion, and documented field events. It
+    distinguishes specific failure reports and test-to-success results from population failure rates and
+    margins to failure, and closes with the series conclusions.
+  sourceName: VISUALIZE-SH
+  sourceUrl: https://visualize-sh.com/editorials/laao-design-series-part-4/
+  topicTags:
+    - LAAO
+    - device design
+    - engineering
+    - durability
+    - fatigue
+  relevantNodeIds:
+    - cond-af
+    - dev-watchman-original
+    - dev-watchman-flx
+    - dev-amulet
+  reviewStatus: reviewed
+
 - id: news-2026-10-13-news-insights
   publishedAt: '2026-10-13'
   contentType: news-insights
@@ -37,6 +105,453 @@
     - cond-mr
     - cond-ar
     - cond-tr
+
+- id: news-2026-11-02-simplaafy-primary-results
+  publishedAt: "2026-11-02"
+  title: "SIMPLAAFY: two monotherapy strategies meet six-month noninferiority after FLX Pro"
+  summary: >-
+    After successful uncomplicated FLX Pro implantation, 1,857 patients were randomized to DAPT, 3 months reduced-dose
+    NOAC then aspirin, or aspirin alone. In 1,797 primary-analysis patients, the 6 month death/stroke/systemic
+    embolism/major bleeding composite was 6.9%, 5.1%, 3.3%, respectively. Both monotherapies met noninferiority versus
+    DAPT (7.2 pp margin; P<.001 each). Bleeding/45 day DRT findings are exploratory; 12 month results are pending. No
+    equivalence to full-dose NOACs, other devices or complicated implants is established.
+  sourceName: JAMA
+  sourceUrl: https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2026.21361
+  additionalSources:
+    - label: Official trial registry
+      url: https://clinicaltrials.gov/api/v2/studies/NCT06521463
+    - label: Boston Scientific original disclosure (sponsor claims)
+      url: >-
+        https://news.bostonscientific.com/2026-11-02-SIMPLAAFY-study-of-the-WATCHMAN-FLX-TM-Pro-Left-Atrial-Appendage-Closure-Device-meets-primary-endpoints
+  topicTags:
+    - TCT 2026
+    - LAAO
+    - antithrombotic therapy
+  relevantNodeIds:
+    - dev-watchman-flx
+    - cond-af
+    - co-boston-scientific
+  reviewStatus: reviewed
+
+- id: news-2026-11-02-progress-primary-results
+  publishedAt: "2026-11-02"
+  title: "PROGRESS: early TAVR lowers two-year death/HF-event composite in at-risk moderate AS"
+  summary: >-
+    In PROGRESS, 744 patients aged ≥65 with at-risk moderate AS were randomized to early TAVR (SAPIEN 3/Ultra/Ultra
+    RESILIA permitted) or surveillance. Two-year death/HF-event estimates were 16.7% vs 23.9% (difference −7.2 pp; 95%
+    CI −13.1 to −1.3; P=.02). Death alone was 8.4% vs 7.3%; mortality benefit was not established. The 30 day TAVR
+    safety composite met its performance goal; first secondary P=.07 stopped hierarchical testing. Open-label results do
+    not establish generation-specific benefit or a new indication.
+  sourceName: New England Journal of Medicine
+  sourceUrl: https://www.nejm.org/doi/full/10.1056/NEJMoa2607326
+  additionalSources:
+    - label: Official trial registry
+      url: https://clinicaltrials.gov/api/v2/studies/NCT04889872
+  topicTags:
+    - TCT 2026
+    - TAVR
+    - moderate aortic stenosis
+  relevantNodeIds:
+    - trial-progress
+    - dev-sapien-3
+    - cond-as
+  reviewStatus: reviewed
+
+- id: news-2026-11-01-veritas-amulet-360-one-year
+  publishedAt: "2026-11-01"
+  title: VERITAS reports one-year Amulet 360 results in 458 implant attempts
+  summary: >-
+    The single-arm VERITAS study reports one-year outcomes after 458 Amulet 360 implant attempts. Complete closure was
+    seen in 359/394 patients with imaging (91.1%); estimated ischemic stroke/systemic embolism was 1.8% and major
+    bleeding 6.6%. Cumulative device-related thrombus was 3.3%; the selected investigational cohort and lack of a
+    control group limit comparisons with other LAAO devices or anticoagulants.
+  sourceName: "JACC: Cardiovascular Interventions — original study"
+  sourceUrl: https://www.jacc.org/doi/10.1016/j.jcin.2026.10.023
+  topicTags:
+    - laao
+    - clinical-research
+    - tct-2026
+  relevantNodeIds:
+    - dev-amulet-360
+    - co-abbott
+    - proc-laac
+    - cond-af
+  reviewStatus: reviewed
+
+- id: news-2026-10-31-paradigm-pvl-thirty-day
+  publishedAt: "2026-10-31"
+  title: PARADIGM reports 30-day results with a dedicated PVL closure plug
+  summary: >-
+    In the single-arm PARADIGM study of 200 APVL3 implant attempts, the primary composite was met in 188/200 (94.0%)
+    against a 65% performance goal. The separate 30-day procedural-success measure was 140/181 (77.3%); four patients
+    died within 30 days. Selected anatomy, missing assessments and short follow-up limit generalizability; these
+    clinical results do not verify Paraclose marketing authorization.
+  sourceName: "JACC: Cardiovascular Interventions — original PARADIGM study"
+  sourceUrl: https://www.jacc.org/doi/10.1016/j.jcin.2026.10.024
+  additionalSources:
+    - label: Official PARADIGM trial record NCT04489823
+      url: https://clinicaltrials.gov/api/v2/studies/NCT04489823
+  topicTags:
+    - pvl-closure
+    - clinical-research
+    - tct-2026
+  relevantNodeIds:
+    - dev-amplatzer-pvl-plug-iii
+    - co-abbott
+    - cond-pvl
+  reviewStatus: reviewed
+
+- id: news-2026-10-31-explore-mr-posterior-leaflet-restoration
+  publishedAt: "2026-10-31"
+  title: "Posterior Leaflet Restoration for Secondary Mitral Regurgitation: EXPLORE MR Results"
+  summary: >-
+    EXPLORE MR reports an uncontrolled early-feasibility study of the MRace posterior-leaflet restoration implant in 78
+    patients, with one-year MR grades available for 32. MR was moderate or less in 29/32 assessed patients (90.6%);
+    Kaplan–Meier mortality was 29.5% at one year. Limited available imaging and post hoc LV-size subgroups prevent a
+    comparative treatment-benefit conclusion.
+  sourceName: "JACC: Cardiovascular Interventions — original study"
+  sourceUrl: https://www.jacc.org/doi/10.1016/j.jcin.2026.10.013
+  additionalSources:
+    - label: PubMed abstract and electronic-publication metadata
+      url: https://pubmed.ncbi.nlm.nih.gov/42967235/
+  topicTags:
+    - mitral-repair
+    - device-research
+    - tct-2026
+  relevantNodeIds:
+    - dev-polares-mrace
+    - cond-mr
+  reviewStatus: reviewed
+
+- id: news-2026-10-31-expand-tavr-ii-design-baseline
+  publishedAt: "2026-10-31"
+  title: Medtronic reports EXPAND TAVR II design and baseline data in moderate aortic stenosis
+  summary: >-
+    Medtronic announced design and baseline information for EXPAND TAVR II, evaluating Evolut TAVR plus
+    guideline-directed therapy versus medical therapy in moderate aortic stenosis. This is a study-design announcement,
+    not a treatment-outcome readout. The sponsor states that moderate-AS use remains investigational.
+  sourceName: Medtronic
+  sourceUrl: >-
+    https://news.medtronic.com/Medtronic-presents-Evolut-EXPAND-TAVR-II-trial-design-and-baseline-characteristics-of-patients-with-moderate-aortic-stenosis-at-TCT-2026
+  topicTags:
+    - aortic-stenosis
+    - tavr
+    - trial-design
+  relevantNodeIds:
+    - co-medtronic
+    - dev-evolut
+    - cond-as
+  reviewStatus: reviewed
+
+- id: news-2026-10-31-andes-one-year-antithrombotic-follow-up
+  publishedAt: "2026-10-31"
+  title: ANDES reports one-year follow-up of 60-day antithrombotic strategies after LAA closure
+  summary: >-
+    ANDES one-year follow-up compares 253 patients assigned to 60 days of DOAC with 257 assigned to dual antiplatelet
+    therapy after LAA closure; most then switched to single antiplatelet therapy. Any bleeding was 24.1% versus 32.3%
+    (risk difference −8.2 percentage points; 95% CI −15.9 to −0.4), driven by the first 60 days. No later-event
+    advantage was demonstrated; incomplete imaging and limited power constrain thrombus comparisons.
+  sourceName: JACC — original ANDES research letter
+  sourceUrl: https://www.sciencedirect.com/science/article/pii/S0735109726101764
+  additionalSources:
+    - label: Publisher DOI for original ANDES one-year report
+      url: https://doi.org/10.1016/j.jacc.2026.10.049
+  topicTags:
+    - laao
+    - antithrombotic-therapy
+    - clinical-research
+    - tct-2026
+  relevantNodeIds:
+    - proc-laac
+    - cond-af
+  reviewStatus: reviewed
+
+- id: news-2026-10-30-balloon-valve-asymmetry-hf
+  publishedAt: "2026-10-30"
+  title: Impact of Balloon-Expandable Valve Asymmetry on Heart Failure Post Transcatheter Aortic Valve Replacement
+  summary: >-
+    A prospective registry abstract examined valve asymmetry and 2-year HF hospitalization after balloon-expandable
+    TAVR. The continuous asymmetry index was not significantly associated with the endpoint; an exploratory threshold
+    analysis reported higher late-HF risk above 7.48%, which needs confirmation.
+  sourceName: Original study (PubMed record)
+  sourceUrl: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42960753&retmode=xml
+  additionalSources:
+    - label: Original study DOI 10.1161/jaha.126.049304 (publisher full text not read)
+      url: https://doi.org/10.1161/jaha.126.049304
+  topicTags:
+    - tavr
+    - heart-failure
+    - device-geometry
+  relevantNodeIds:
+    - proc-tavi
+    - cond-hf
+  reviewStatus: reviewed
+
+- id: news-2026-10-29-egnite-pathway-stamford-ecg-ai-pilot
+  publishedAt: "2026-10-29"
+  title: egnite, Pathway Labs and Stamford Health announce structural-heart ECG-AI pilot
+  summary: >-
+    egnite announced a Stamford Health pilot combining Pathway Labs’ EchoNext ECG screening output with its CardioCare
+    care-coordination platform. The pilot aims to prioritize echocardiographic follow-up and assess echo completion and
+    time to specialist evaluation; the announcement does not report those outcomes.
+  sourceName: egnite
+  sourceUrl: >-
+    https://egnitehealth.com/egnite-pathway-labs-and-stamford-health-launch-first-of-its-kind-pilot-using-ecg-based-ai-to-help-clinicians-identify-and-manage-structural-heart-patients/
+  topicTags:
+    - digital-health
+    - structural-heart-screening
+    - imaging-ai
+  relevantNodeIds:
+    - cond-hf
+    - co-edwards
+  reviewStatus: reviewed
+
+- id: news-2026-10-29-bridgebio-bbp717-attr-development
+  publishedAt: "2026-10-29"
+  title: BridgeBio nominates BBP-717 amyloid-depleter candidate for ATTR-CM
+  summary: >-
+    BridgeBio announced BBP-717 as a development candidate intended to remove amyloid deposits in ATTR cardiomyopathy,
+    with an IND submission planned for 2027. This is a sponsor development announcement; it provides no human efficacy
+    or safety results for BBP-717.
+  sourceName: BridgeBio via GlobeNewswire
+  sourceUrl: >-
+    https://www.globenewswire.com/news-release/2026/10/29/3391801/0/en/bridgebio-reports-third-quarter-2026-financial-results-and-corporate-updates.html
+  topicTags:
+    - attr-cm
+    - drug-development
+  relevantNodeIds:
+    - co-bridgebio
+    - cond-attr-cm
+  reviewStatus: reviewed
+
+- id: news-2026-10-29-abbott-cephea-crown-mv-launch
+  publishedAt: "2026-10-29"
+  title: Abbott announces launch of the CROWN-MV pivotal study of Cephea
+  summary: >-
+    Abbott announced initiation and first enrollment of CROWN-MV, its pivotal study of the investigational Cephea Mitral
+    Valve System in symptomatic mitral valve disease. The announcement also schedules a separate early-feasibility
+    report using the third-generation delivery system at TCT; it provides no readout from the pivotal trial.
+  sourceName: Abbott
+  sourceUrl: >-
+    https://abbott.mediaroom.com/2026-10-29-Abbott-initiates-pivotal-trial-for-Cephea-TM-device,-an-innovative-treatment-for-mitral-heart-valve-disease
+  topicTags:
+    - tmvr
+    - trial-initiation
+    - tct-2026
+  relevantNodeIds:
+    - co-abbott
+    - cond-mr
+  reviewStatus: reviewed
+
+- id: news-2026-10-28-vsling-iii-registry-recruiting
+  publishedAt: "2026-10-28"
+  title: Vsling III registry revision lists recruiting status
+  summary: >-
+    The October 28 ClinicalTrials.gov revision for Vsling III lists recruiting status and a target of 10 participants.
+    This is NCT06002386, separate from Vsling I; the registered primary endpoint is device-related serious adverse
+    events at 30 days. The enrollment target and estimated completion dates are not clinical results or proof of actual
+    enrollment.
+  sourceName: ClinicalTrials.gov — official registry revision
+  sourceUrl: https://clinicaltrials.gov/api/v2/studies/NCT06002386
+  topicTags:
+    - heart-failure
+    - trial-status
+    - ventricular-repair
+  relevantNodeIds:
+    - dev-vsling
+    - cond-hfref
+  reviewStatus: reviewed
+
+- id: news-2026-10-27-vincora-nexus-us-efs
+  publishedAt: "2026-10-27"
+  title: Vincora announces FDA study permission for transcatheter chordal repair
+  summary: >-
+    NeoChord’s official News page dates Vincora’s announcement of FDA permission for a US early feasibility study to
+    October 27. The NeXus registry record, first posted November 3, lists 15 planned participants, not-yet-recruiting
+    status and an estimated February 20, 2027 start. This is an investigational-study milestone; no marketing
+    authorization or clinical result is established.
+  sourceName: NeoChord
+  sourceUrl: https://www.neochord.com/news/
+  additionalSources:
+    - label: Official NeXus US EFS registry
+      url: https://clinicaltrials.gov/api/v2/studies/NCT07912229
+  topicTags:
+    - mitral regurgitation
+    - chordal repair
+    - NeXuS
+    - early feasibility
+    - investigational device
+  relevantNodeIds:
+    - cond-mr
+    - co-neochord
+    - dev-neochord-nexus
+    - trial-neochord-nexus-us-efs
+  reviewStatus: reviewed
+
+- id: news-2026-10-26-parasol-laa-catheter-gel-development
+  publishedAt: "2026-10-26"
+  title: Parasol announces support for investigational catheter-and-gel LAA closure development
+  summary: >-
+    Parasol announced financing to advance its investigational left atrial appendage closure platform, described as an
+    integrated catheter-and-gel system designed to adapt to LAA anatomy. The release reports a development program
+    rather than clinical evidence; it states that the device has not been cleared or approved by the FDA.
+  sourceName: Parasol Med Tech
+  sourceUrl: https://parasolmedtech.com/parasol-medtech-2-75m-funding/
+  topicTags:
+    - laao-laac
+    - device-development
+  relevantNodeIds:
+    - cond-af
+  reviewStatus: reviewed
+
+- id: news-2026-10-23-whole-heart-fsi-mitral-repair
+  publishedAt: "2026-10-23"
+  title: >-
+    A Whole-Heart Fluid-Structure Interaction Model for Transcatheter Mitral Valve Repair in Primary Mitral
+    Regurgitation
+  summary: >-
+    An engineering study describes a CT-derived whole-heart fluid–structure interaction model simulating chordal-rupture
+    mitral regurgitation and edge-to-edge mitral repair. Simulated repair reduced regurgitation and left-atrial pressure
+    while changing inflow jets and diastolic filling. These are model outputs, not patient clinical outcomes; the
+    reviewed abstract does not establish clinical validation as a planning tool.
+  sourceName: Original study (PubMed record)
+  sourceUrl: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42909734&retmode=xml
+  additionalSources:
+    - label: Original study DOI 10.1007/s10439-026-04368-3 (publisher full text not read)
+      url: https://doi.org/10.1007/s10439-026-04368-3
+  topicTags:
+    - mitral-repair
+    - computational-modeling
+  relevantNodeIds:
+    - cond-mr
+    - proc-mitral-teer
+  reviewStatus: reviewed
+
+- id: news-2026-10-23-sonata-hcm-baseline-announcement
+  publishedAt: "2026-10-23"
+  title: Lexicon announces SONATA-HCM baseline update before efficacy readout
+  summary: >-
+    Lexicon issued a baseline-population update for SONATA-HCM, its ongoing phase 3 study of sotagliflozin in
+    symptomatic obstructive and nonobstructive hypertrophic cardiomyopathy. Baseline reporting does not establish
+    treatment efficacy; the study’s outcome readout remains separate.
+  sourceName: Lexicon Pharmaceuticals
+  sourceUrl: >-
+    https://lexiconpharma.gcs-web.com/news-releases/news-release-details/lexicon-pharmaceuticals-provides-update-baseline-patient
+  topicTags:
+    - hcm
+    - trial-design
+  relevantNodeIds:
+    - cond-hcm
+  reviewStatus: reviewed
+
+- id: news-2026-10-23-evolut-fx-semi-rapid-deployment
+  publishedAt: "2026-10-23"
+  title: >-
+    A semi-rapid deployment workflow to reduce device time in Evolut FX self-expanding transcatheter aortic valve
+    implantation
+  summary: >-
+    A single-center retrospective before-and-after Evolut FX study reported median device time of 9 versus 14 minutes
+    with semi-rapid versus conventional deployment; contrast volume was higher with the new workflow, while reported PVL
+    and in-hospital pacemaker rates did not significantly differ. The results are preliminary and generation-specific.
+  sourceName: Original study (PubMed record)
+  sourceUrl: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42924251&retmode=xml
+  additionalSources:
+    - label: Original study DOI 10.4244/aij-d-26-00029 (publisher full text not read)
+      url: https://doi.org/10.4244/aij-d-26-00029
+  topicTags:
+    - tavr
+    - procedural-workflow
+  relevantNodeIds:
+    - dev-evolut
+    - co-medtronic
+    - proc-tavi
+  reviewStatus: reviewed
+
+- id: news-2026-10-23-computational-planning-redo-tavr
+  publishedAt: "2026-10-23"
+  title: Computational planning associated with fewer leaflet modifications in valve-in-valve and redo TAVR
+  summary: >-
+    In a retrospective cohort of 157 valve-in-valve or redo-TAVR cases, leaflet modification was used in 24.1% of the 29
+    high-risk patients receiving computational-modeling-augmented planning versus 46.8% of 62 managed with conventional
+    planning (one-sided P=.021). This nonrandomized association does not establish causation; no coronary obstruction
+    occurred during the study period.
+  sourceName: Original study (PubMed record)
+  sourceUrl: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42914743&retmode=xml
+  additionalSources:
+    - label: Original study DOI 10.1016/j.jacadv.2026.103377 (publisher full text not read)
+      url: https://doi.org/10.1016/j.jacadv.2026.103377
+  topicTags:
+    - tavr
+    - computational-modeling
+  relevantNodeIds:
+    - proc-tavi
+    - cond-as
+  reviewStatus: reviewed
+
+- id: news-2026-10-22-lariat-4-pdl-initial-registry
+  publishedAt: "2026-10-22"
+  title: LARIAT-4-PDL reports initial rescue of leaks after endocardial LAA closure
+  summary: >-
+    A retrospective multicenter series reports acute closure in 10 patients treated with LARIAT for leaks of at least 3
+    mm after WATCHMAN FLX Pro or Amulet implantation. These early feasibility findings do not establish durable closure
+    or comparative stroke prevention; the original paper’s abstract calls for longer follow-up.
+  sourceName: PubMed / original journal abstract
+  sourceUrl: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42913969&retmode=xml
+  additionalSources:
+    - label: Original study DOI
+      url: https://doi.org/10.1016/j.hrthm.2026.10.031
+  topicTags:
+    - laao
+    - clinical-research
+  relevantNodeIds:
+    - dev-lariat
+    - co-atricure
+    - dev-amulet
+    - proc-laac
+  reviewStatus: reviewed
+
+- id: news-2026-10-22-ice-only-laac-zero-fluoroscopy-series
+  publishedAt: "2026-10-22"
+  title: ICE-only LAA closure series reports fluoroscopy-free completion in 203 of 214 patients
+  summary: >-
+    A series of 214 planned fluoroscopy-free LAA closure procedures using WATCHMAN FLX or FLX Pro reports 203 completed
+    without fluoroscopy and 11 requiring bail-out fluoroscopy. Implantation succeeded in 212 patients; complications
+    included one pericardial effusion and one ventricular tachycardia. The uncontrolled series supports feasibility and
+    needs broader validation.
+  sourceName: PubMed / original journal abstract
+  sourceUrl: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42913973&retmode=xml
+  additionalSources:
+    - label: Original study DOI
+      url: https://doi.org/10.1016/j.hrthm.2026.10.032
+  topicTags:
+    - laao
+    - clinical-research
+  relevantNodeIds:
+    - dev-watchman-flx
+    - co-boston-scientific
+    - proc-laac
+  reviewStatus: reviewed
+
+- id: news-2026-10-22-af-pattern-residual-risk-laao-registry
+  publishedAt: "2026-10-22"
+  title: LAAO registry links non-paroxysmal AF to greater residual thromboembolic risk
+  summary: >-
+    In a multicenter registry of 3,459 LAAO patients, non-paroxysmal AF was associated with greater stroke risk than
+    paroxysmal AF after adjustment (HR 1.64, 95% CI 1.07–2.50). The two-year analysis also found more peri-device leak
+    and device-related thrombus in non-paroxysmal AF. These observational findings do not establish a causal effect or a
+    preferred device or antithrombotic regimen.
+  sourceName: PubMed / original journal abstract
+  sourceUrl: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42913976&retmode=xml
+  additionalSources:
+    - label: Original study DOI
+      url: https://doi.org/10.1016/j.hrthm.2026.10.035
+  topicTags:
+    - laao
+    - clinical-research
+  relevantNodeIds:
+    - proc-laac
+    - cond-af
+  reviewStatus: reviewed
 
 - id: news-2026-10-22-corwave-feasibility-enrollment
   publishedAt: "2026-10-22"

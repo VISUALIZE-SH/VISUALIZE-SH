@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LAAO design review, Part 4 · VISUALIZE-SH</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root { --brand:#3b0b55; --ink:#1a0426; --link:#7d1ba8; --lilac:#f0d5ff; --bg:#f7f4f9; --surface:#fff;
+        --surface2:#fcfbfd; --border:#e6e0ec; --text2:#555; --text3:#999; }
+body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.62 'Source Sans 3','Source Sans Pro',Helvetica,Arial,sans-serif; }
+main { max-width:780px; margin:0 auto; padding:36px 16px 96px; background:var(--surface); }
+html, body { background:var(--surface); overflow-x:hidden; }
+h1,h2,h3 { font-family:'Open Sans',Helvetica,Arial,sans-serif; color:var(--brand); line-height:1.25; }
+h1 { font-size:2rem; margin:0.4rem 0 0.6rem; }
+h2 { font-size:1.32rem; margin-top:2.4rem; padding-top:1.2rem; border-top:1px solid var(--border); }
+a { color:var(--link); text-decoration:none; } a:hover { text-decoration:underline; }
+p a[href^="#ref-"], td a[href^="#ref-"], li a[href^="#ref-"] { font-size:0.86em; }
+blockquote { margin:1.4rem 0; padding:0.7rem 1rem; background:var(--lilac); border-left:4px solid var(--brand); border-radius:4px; }
+blockquote.sidebar { background:var(--surface2); border:1px solid var(--border); border-left:4px solid var(--link); font-size:0.94rem; }
+figure.fig { position:relative; width:min(1120px, calc(100vw - 32px)); left:50%; transform:translateX(-50%); margin:2rem 0; padding:14px 0 10px; background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+figure.fig figcaption { max-width:748px; margin-left:auto; margin-right:auto; }
+figure.fig svg { width:100%; height:auto; display:block; }
+figcaption { font-size:0.9rem; color:var(--text2); margin-top:0.6rem; line-height:1.5; }
+figcaption strong { color:var(--ink); }
+p.tcap { font-size:0.92rem; color:var(--text2); margin:2.2rem 0 0.5rem; } p.tcap strong { color:var(--ink); }
+div.tw { width:min(1060px, calc(100vw - 32px)); position:relative; left:50%; transform:translateX(-50%); overflow-x:auto; margin:0 0 1.8rem; }
+table { border-collapse:collapse; width:100%; min-width:760px; font-size:0.8rem; line-height:1.4; }
+thead th { background:var(--brand); color:#fff; font-weight:600; position:sticky; top:0; }
+th,td { border:1px solid var(--border); padding:6px 8px; vertical-align:top; text-align:left; }
+tbody tr:nth-child(even) td { background:var(--surface2); }
+td:first-child { font-weight:600; color:var(--ink); min-width:9rem; }
+.footnote { font-size:0.86rem; color:var(--text2); } .footnote hr { display:none; }
+ol li { overflow-wrap:anywhere; }
+h2#references + ol, h2:last-of-type + ol { font-size:0.82rem; color:var(--text2); padding-left:2.2rem; }
+hr { border:none; border-top:1px solid var(--border); margin:2rem 0; }
+em { color:inherit; }
+header.series { margin:0 0 1.6rem; padding:0 0 1rem; border-bottom:1px solid var(--border); }
+header.series h1 { font-size:1.35rem; margin:0; }
+nav.series-toc { margin:0 0 1rem; padding:0.9rem 1rem; background:var(--surface2); border:1px solid var(--border); border-left:4px solid var(--link); border-radius:4px; }
+nav.series-toc p { margin:0 0 0.4rem; font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:0.78rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--brand); }
+nav.series-toc ul { list-style:none; margin:0; padding:0; }
+nav.series-toc li { display:flex; gap:0.8rem; align-items:baseline; padding:0.25rem 0; }
+nav.series-toc li .toc-part { flex:0 0 3.6rem; font-weight:600; color:var(--text2); }
+nav.series-toc li a { flex:1 1 auto; }
+nav.series-toc li .toc-words { flex:0 0 auto; font-size:0.86rem; color:var(--text2); font-variant-numeric:tabular-nums; }
+nav.series-toc li.toc-total { margin-top:0.3rem; padding-top:0.5rem; border-top:1px solid var(--border); font-weight:600; }
+nav.series-toc li.toc-total span:nth-child(1) { flex:1 1 auto; }
+nav.series-toc p.toc-note { margin:0.6rem 0 0; font-family:inherit; font-size:0.84rem; font-weight:400; letter-spacing:0; text-transform:none; color:var(--text2); }
+section.part > .part-divider { display:flex; justify-content:space-between; align-items:baseline; margin:4.5rem 0 1.4rem; padding-top:0.6rem; border-top:5px solid var(--brand); font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:0.8rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--brand); }
+section.part > .part-divider a { font-weight:600; letter-spacing:0; text-transform:none; }
+p a[href^="#p"][href*="-ref-"], td a[href^="#p"][href*="-ref-"], li a[href^="#p"][href*="-ref-"] { font-size:0.86em; }
+
+.article-nav{display:flex;gap:24px;font-size:15px;margin-bottom:24px}.article-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:14px;color:var(--text2)}.editorial-tag{background:var(--brand);color:#fff;font-weight:700;padding:3px 9px;border-radius:4px}.interpretation-label{color:var(--text2);font-size:.92em}.tw:focus-visible,a:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+</style></head><body><main>
+<nav class="article-nav" aria-label="Site"><a href="/?mode=news">← News</a><a href="/?mode=atlas">Explore Atlas</a></nav>
+<p class="article-meta"><span class="editorial-tag">Editorial</span> <time datetime="2026-11-03">November 3, 2026</time> · VISUALIZE-SH</p>
+
+<h1 id="p4-part-4">Durability: testing, analysis and field experience</h1>
+<p><em>Editorial series: Atrial appendage occlusion: four functions, many designs. Part 4 of 4.</em></p>
+<p><strong>Summary.</strong> This part examines public evidence on the durability of left atrial appendage occlusion (LAAO) implants. Food and Drug Administration (FDA) summaries report a "Pass" for 400-million-cycle tests of WATCHMAN 2.5, WATCHMAN FLX and Amulet. They do not disclose the loading or margin to failure. Public field reports document delivery-system recalls, one barb redesign, a suspected manufacturing defect, corrosion and wire breakage found in testing of one device, and isolated frame fractures. These reports establish specific events and responses, but do not provide consistent exposure denominators or establish population failure rates. The part closes with the conclusions of the series.</p>
+
+<hr />
+<nav aria-label="In this series"><h2>In this series</h2>
+<ol>
+<li><a href="/editorials/laao-design-series-part-1/" target="_top">Device architectures and the allocation of four functions</a></li>
+<li><a href="/editorials/laao-design-series-part-2/" target="_top">Design changes between device generations and their documented outcomes</a></li>
+<li><a href="/editorials/laao-design-series-part-3/" target="_top">Sizing, compression and radial force</a></li>
+<li><a href="#p4-part-4" aria-current="page">Durability: testing, analysis and field experience</a></li>
+</ol></nav>
+
+<h2>Introduction</h2>
+<p>Left atrial appendage occlusion (LAAO) closes the left atrial appendage, a small pouch of the left atrium where thrombus (blood clot) is often found in patients with atrial fibrillation. It is used in some patients as an alternative to long-term anticoagulation for the prevention of stroke (Part 1). Most implants are self-expanding frames of nitinol, a nickel–titanium alloy, delivered by catheter. This series describes each implant by four functions: seal, hold, heal and deliver. Durability is a requirement under all four. Allocation is the assignment of each function to a component. Coupling means that a change made for one function also changes another. Four questions apply to any design change: which feature becomes independently adjustable, which sensitivity is reduced, which dependency remains, and what evidence would show whether the change helped.</p>
+<p>The discussion examines the origin and limits of the 400-million-cycle result, implant loading and frame fatigue, field evidence, surface condition, and regulatory disclosure. It then considers the elements of a durability case before drawing the series conclusions.</p>
+<h2>Basis of the 400-million-cycle count</h2>
+<p>FDA's summaries for WATCHMAN 2.5 and WATCHMAN FLX state that implants were "cycled up to the equivalent of 10 years of use or 400,000,000 cycles" [<a href="#p4-ref-1">1</a>, <a href="#p4-ref-2">2</a>]. The Amulet summary uses nearly the same words [<a href="#p4-ref-3">3</a>]. Each reports the result as "Pass" [<a href="#p4-ref-1">1</a>–<a href="#p4-ref-3">3</a>].</p>
+<p>Four hundred million cycles is ten years at about 76 beats a minute.<sup id="p4-fnref:n1"><a class="footnote-ref" href="#p4-fn:n1">1</a></sup> Pelton and colleagues attribute the number to FDA's 1995 stent guidance, under which a stent passed if "fatigue fractures did not occur in 400 million cycles, or an equivalent of 10 years" [<a href="#p4-ref-4">4</a>]. FDA's 2010 stent guidance asks for ten years "under pulsatile flow and physiologic loading" but does not contain the number [<a href="#p4-ref-5">5</a>]. No occluder summary states why the number was chosen.</p>
+<h2>Scope of a test-to-success result</h2>
+<p>Pelton and colleagues call a fixed-cycle pass-or-fail test, such as the 400-million-cycle test, "test-to-success" [<a href="#p4-ref-4">4</a>]: a sample set passes if none fractures within a set number of cycles. For nitinol frames of thin struts or wires, a pass supports durability under the applied loading. It does not establish the distance between that loading and failure, or whether the test represents loads in the appendage. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>FDA's summaries give the cycle count and result, but omit the test mode, amplitude (displacement or strain), frequency, environment, safety factor and standard. Strain amplitude is half the strain range in a cycle. A safety factor is the ratio of the strain amplitude or load endured to the corresponding service demand. Other definitions of margin are possible, and their terms must be stated. Because these conditions are not reported, the test severity and the margin represented by a pass cannot be determined from the summaries. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>Analysis can estimate service strains and compare them with material endurance, while fatigue-to-fracture testing cycles samples above physiologic loading until they fail [<a href="#p4-ref-6">6</a>]. The latter identifies failure location and amplitude, but neither method alone establishes a clinical margin. Interpreting a failure amplitude requires a defined clinical demand, a relevant failure mode and a stated statistical treatment. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>FDA's stent guidance asks for a fatigue analysis based on mean stress or strain, the average over a cycle, and alternating stress or strain, the amplitude [<a href="#p4-ref-5">5</a>].<sup id="p4-fnref:n10"><a class="footnote-ref" href="#p4-fn:n10">2</a></sup> FDA's 2021 guidance for devices with nitinol parts asks for a strain-based constant-life curve specific to the final device and its processing [<a href="#p4-ref-7">7</a>]. Such a curve shows the combinations of mean and alternating strain that give the same fatigue life. Both guidance documents are non-binding, and whether such analyses were submitted for occluders is not public. The WATCHMAN 2.5 and FLX summaries list a finite element analysis "for characterization", and Amulet's lists none [<a href="#p4-ref-1">1</a>–<a href="#p4-ref-3">3</a>].</p>
+<h2>Loading of an implant in the appendage</h2>
+<p>An occluder's cyclic load is less well defined than a stent's, which is the pulsatile change in an artery's diameter that standard bench tests reproduce [<a href="#p4-ref-8">8</a>]. The appendage and its orifice, the opening into the left atrium, contract and relax with the atrium [<a href="#p4-ref-9">9</a>]. In a computed tomography study of ten patients scheduled for closure, the orifice's equivalent diameter fell by about 11 percent between relaxation (diastole) and contraction (systole) [<a href="#p4-ref-9">9</a>].<sup id="p4-fnref:n2"><a class="footnote-ref" href="#p4-fn:n2">3</a></sup> No report located says how much of that motion reaches an implant, or as what strain. Finite-element models of marketed occluders located here simulate crimping (compression into the sheath) and deployment, not years of service [<a href="#p4-ref-10">10</a>–<a href="#p4-ref-13">13</a>].</p>
+<p>Loading also varies among patients and over time.<sup id="p4-fnref:n7"><a class="footnote-ref" href="#p4-fn:n7">4</a></sup> In patients with paroxysmal fibrillation, appendage volume at the end of contraction increased during fibrillation but not during sinus rhythm [<a href="#p4-ref-14">14</a>]. Tissue covers the implant over weeks to months in animals [<a href="#p4-ref-15">15</a>], changing how displacement and force divide between the wall and frame according to their relative stiffness. That stiffness varies among patients and as tissue grows over the implant. A 2025 report (Part 3) found compression above 30 percent in 61 of 236 FLX implants [<a href="#p4-ref-16">16</a>]. Greater compression changes the initial strain distribution, but its effect on mean strain or strain amplitude at critical regions depends on local geometry, not overall compression alone. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>A durability case is the documented argument that an implant will remain intact for its intended life. Given variation in loading, it should use a justified set of load cases (specified sets of loading conditions) or an envelope rather than one assumed load. The case should distinguish the strain distribution after deployment from cyclic strain changes with rhythm and tissue coverage. It should also address endurance of the metal in its final processed and finished state. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<h2>Fatigue of nitinol frames</h2>
+<p>Nitinol's resistance to fatigue is distinctive but depends on how it is loaded. In electropolished specimens cut from stent tubing, no fractures occurred in ten million cycles below a strain amplitude of about ±0.4 percent [<a href="#p4-ref-4">4</a>]. Fatigue life did not fall as mean strain rose to about 1.5 percent [<a href="#p4-ref-4">4</a>]. Duerig and colleagues describe superelastic nitinol, which recovers large deformations on unloading, as exceptionally fatigue-resistant where deformation is imposed, and liable to "fatigue rapidly" where force is imposed [<a href="#p4-ref-17">17</a>]. These specimen and stent data do not establish an allowable strain, or design limit, for any occluder. An occluder probably experiences both imposed displacement and imposed force, in proportions that are not public and may vary among hinges. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>In design analysis, cracks are expected where strain concentrates. In a cut frame, these locations are strut junctions, anchor roots and the heat-affected zones of cuts and welds. In a braid, they are wire crossings, terminations and joints. Where within those regions a crack starts depends on the state of the metal. Shape-setting and heat treatment affect nitinol's transformation temperatures and the stresses at which it transforms. Cold work, inclusions and the surface left by cutting, polishing or coating govern where fatigue cracks start and how much nickel the surface releases. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>The metal's processed state also limits how fatigue evidence can be carried between generations. FDA carried earlier WATCHMAN animal data forward to FLX "due to the use of identical materials and substantially similar device designs" (Part 2) [<a href="#p4-ref-2">2</a>]. That basis is reasonable for the biological questions addressed, such as tissue response and healing. For fatigue, identical material alone is insufficient because endurance also depends on processing and finish. WATCHMAN approval orders record manufacturing-process changes and new inspections, without stating reasons [<a href="#p4-ref-18">18</a>].<sup id="p4-fnref:n3"><a class="footnote-ref" href="#p4-fn:n3">5</a></sup> These records document manufacturing controls; they do not establish that a change responded to a field failure or that the evidence bridge was inadequate. In Japan, pulsatile-durability data were resubmitted after changes to WATCHMAN 2.5's suture and filter materials [<a href="#p4-ref-19">19</a>]. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<h2>Field reports and documented responses</h2>
+<p>Bench testing evaluates defined conditions, while field reports describe observed events and any documented responses. Figure 1 locates those responses by function.</p>
+<p><strong>Delivery-system problems and design responses.</strong> Documented responses to delivery problems included a reinforced WATCHMAN cable [<a href="#p4-ref-20">20</a>] and a WaveCrest sheath-liner change [<a href="#p4-ref-21">21</a>]. A delivery cable of the Amplatzer Cardiac Plug (ACP) fractured in torsion, prompting new instructions [<a href="#p4-ref-22">22</a>]. In the United States (US) recall database, every Class 1 recall (FDA's most serious category) of a WATCHMAN, Amplatzer or WaveCrest product concerns the delivery system or access hardware [<a href="#p4-ref-23">23</a>–<a href="#p4-ref-26">26</a>]. None is a recall of a WATCHMAN, FLX, FLX Pro, ACP or Amulet implant [<a href="#p4-ref-23">23</a>–<a href="#p4-ref-26">26</a>].<sup id="p4-fnref:n4"><a class="footnote-ref" href="#p4-fn:n4">6</a></sup></p>
+<p><strong>WATCHMAN barb damage and redesign.</strong> A barb is the implant's type of anchor. Among reviewed sponsor and regulator documents, the only implant redesign linked to an observed fracture was the 2006 WATCHMAN case (Part 1) [<a href="#p4-ref-27">27</a>, <a href="#p4-ref-28">28</a>].</p>
+<p><strong>Ultraseal fractures and manufacturing concerns.</strong> In one series, 2 of 18 patients had fractures of the jointed bulb-and-sail Ultraseal I device [<a href="#p4-ref-29">29</a>]. Both discs embolized (detached into the bloodstream) [<a href="#p4-ref-29">29</a>]. The sponsor's 2020 notice reported 3 fractures among 750 devices and stated that "a manufacturing defect may be present" in some initial lots [<a href="#p4-ref-30">30</a>]. One fracture had not been detected at the 6- and 12-month examinations [<a href="#p4-ref-30">30</a>].<sup id="p4-fnref:n11"><a class="footnote-ref" href="#p4-fn:n11">7</a></sup> At echocardiographic follow-up (cardiac ultrasound; median 79 days), investigators observed no fractures in the redesigned Ultraseal II and wrote that design changes "may likely have contributed" [<a href="#p4-ref-31">31</a>]. These reports have different follow-up periods and denominators, so their counts do not by themselves establish a comparative failure rate or a causal effect of redesign.</p>
+<p><strong>OMEGA corrosion and wire breakage in testing.</strong> In November 2024 Eclipse Medical recalled every unused OMEGA occluder, a platinum-coated device [<a href="#p4-ref-32">32</a>].<sup id="p4-fnref:n12"><a class="footnote-ref" href="#p4-fn:n12">8</a></sup> The recall followed testing to support certification under the European Union (EU) Medical Device Regulation [<a href="#p4-ref-32">32</a>]. That testing, "to verify fatigue and durability, as well as metallic ion release", gave "unsatisfactory results, specifically related to excessive Nickel leaching caused by corrosion, and wire breakage" [<a href="#p4-ref-32">32</a>]. The notice did not say which test produced which result. This recall documents corrosion and wire breakage detected during durability and metallic-ion testing of one device. It does not estimate how often these failures occur across the device class.</p>
+<p><strong>Case reports and surveillance limits.</strong> A single-center research letter reported central-junction fractures in 2 of 891 LAmbre patients [<a href="#p4-ref-33">33</a>]. One fracture was identified at three years after two surveillance echocardiograms had not detected it [<a href="#p4-ref-33">33</a>]. Single-case meeting abstracts describe strut fractures with leak through WATCHMAN and FLX Pro frames.<sup id="p4-fnref:n5"><a class="footnote-ref" href="#p4-fn:n5">9</a></sup> These reports identify possible events and limits of surveillance imaging; they do not provide population rates, since exposure and follow-up are not consistently characterized.</p>
+<p>In several documented cases reviewed here, failures involved features associated with a function allocation. Examples include barbs passed through the sheath and the junction between LAmbre's umbrella and cover. Documented responses include redesign, withdrawal of affected serial numbers, recall, and review of final inspection after an Amulet lobe wire was found broken during preparation [<a href="#p4-ref-34">34</a>]. The sources do not establish whether these responses addressed the causes, and they cannot identify responses that were not made public. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>The four questions also apply to changes at these features. As described in Part 2, Amulet 360's anchors were reshaped to allow full recapture, drawing a deployed implant back into its sheath before release [<a href="#p4-ref-35">35</a>]. This is a change to anchor geometry, rather than evidence that fixation became independently adjustable. Each anchor must still pass through the sheath, as the WATCHMAN barbs did in 2006. Anchor integrity after label-permitted recaptures would be relevant evidence of durability. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<figure class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1942" width="1200" height="1942" role="img" aria-labelledby="p4-f1-fig-title p4-f1-fig-desc" font-family="'Source Sans Pro','Source Sans 3','Helvetica Neue',Arial,sans-serif">
+<title id="p4-f1-fig-title">Observed problems and their publicly documented responses</title>
+<desc id="p4-f1-fig-desc">A dot matrix. Rows are observed problems grouped by function: embolization or dislocation and perforation, effusion or erosion (HOLD); device-related thrombus (HEAL); delivery or access hardware failure (DELIVER); frame or wire fracture and corrosion (DURABILITY); tissue non-adhesion, unwrapping, detachment or tearing (hold and seal by tissue); and a serious adverse event whose nature is not stated. Columns are documented responses: implant design change, delivery-system design change, process or inspection, labeling, instructions or training, field notice, lot withdrawal or recall, trial pause or suspension, and a last column for cases with no response found in the documents read. Each small labeled dot is one documented case, colored by who stated the link: regulator (deep purple), sponsor (teal), investigators (rose), or a hollow ring when the link is temporal only. A dashed outline marks a hedged link and a dotted gray ring marks a case with no response found. Not plotted: PMA supplement streams for forming, welding and inspection (WATCHMAN S006-S085; Amulet S003-S018) state no reason and no field action.</desc>
+<rect x="0" y="0" width="1200" height="1942" fill="#ffffff"/>
+<rect x="1034.86" y="18" width="141.14" height="1779" fill="#f4f1f7"/>
+<rect x="24" y="126" width="1152" height="238" fill="#f8f5fb" fill-opacity="0.9"/>
+<rect x="24" y="612" width="1152" height="378" fill="#f8f5fb" fill-opacity="0.9"/>
+<rect x="24" y="1308" width="1152" height="118" fill="#f8f5fb" fill-opacity="0.9"/>
+<rect x="24" y="1497" width="1152" height="170" fill="#f8f5fb" fill-opacity="0.9"/>
+<line x1="188" y1="22" x2="188" y2="1797" stroke="#e6e0ec" stroke-width="1"/>
+<line x1="329.14" y1="22" x2="329.14" y2="1797" stroke="#e6e0ec" stroke-width="1"/>
+<line x1="470.29" y1="22" x2="470.29" y2="1797" stroke="#e6e0ec" stroke-width="1"/>
+<line x1="611.43" y1="22" x2="611.43" y2="1797" stroke="#e6e0ec" stroke-width="1"/>
+<line x1="752.57" y1="22" x2="752.57" y2="1797" stroke="#e6e0ec" stroke-width="1"/>
+<line x1="893.71" y1="22" x2="893.71" y2="1797" stroke="#e6e0ec" stroke-width="1"/>
+<line x1="1034.86" y1="22" x2="1034.86" y2="1797" stroke="#e6e0ec" stroke-width="1"/>
+<line x1="1176" y1="22" x2="1176" y2="1797" stroke="#e6e0ec" stroke-width="1"/>
+<text x="197" y="70" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">Implant</text>
+<text x="197" y="92" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">design</text>
+<text x="197" y="114" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">change</text>
+<text x="338.14" y="48" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">Delivery-</text>
+<text x="338.14" y="70" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">system</text>
+<text x="338.14" y="92" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">design</text>
+<text x="338.14" y="114" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">change</text>
+<text x="479.29" y="92" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">Process or</text>
+<text x="479.29" y="114" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">inspection</text>
+<text x="620.43" y="70" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">Labeling,</text>
+<text x="620.43" y="92" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">instructions</text>
+<text x="620.43" y="114" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">or training</text>
+<text x="761.57" y="48" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">Field</text>
+<text x="761.57" y="70" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">notice, lot</text>
+<text x="761.57" y="92" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">withdrawal</text>
+<text x="761.57" y="114" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">or recall</text>
+<text x="902.71" y="92" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">Trial pause or</text>
+<text x="902.71" y="114" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">suspension</text>
+<text x="1043.86" y="48" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">No response</text>
+<text x="1043.86" y="70" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">found in</text>
+<text x="1043.86" y="92" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">documents</text>
+<text x="1043.86" y="114" font-size="18" font-weight="600" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">read</text>
+<line x1="24" y1="126" x2="1176" y2="126" stroke="#d6cee0" stroke-width="1.2"/>
+<rect x="24" y="135" width="4" height="220" rx="2" fill="#7c1fb0"/>
+<text x="40" y="149" font-size="15" font-weight="700" fill="#7c1fb0" text-anchor="start" letter-spacing="0.05em">HOLD</text>
+<text x="40" y="174" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">Embolization,</text>
+<text x="40" y="194" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">dislocation</text>
+<circle cx="202" cy="146.5" r="7.5" fill="#b8326b"><title>WATCHMAN with barbs (2007, Investigators): Embolization, dislocation / Implant design change [DW §3, §8 (Sick 2007 Table 1: 2 embolizations in the first 16; none in 53 after); AB b (WM-RR PDF p.9)]</title></circle>
+<text x="216" y="152" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">WATCHMAN</text>
+<text x="216" y="172" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">with barbs</text>
+<text x="216" y="192" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">2007</text>
+<circle cx="202" cy="216.5" r="7.5" fill="#b8326b"><title>ACP to Amulet (2013, Investigators): Embolization, dislocation / Implant design change [GF4 B (Freixa 2013 Discussion: embolization linked to inadequate implantation depth; sponsor-tied authors); DC §1.6]</title></circle>
+<text x="216" y="222" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">ACP to</text>
+<text x="216" y="242" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Amulet 2013</text>
+<circle cx="202" cy="266.5" r="6.3" fill="#ffffff" stroke="#555555" stroke-width="2.4"><title>early FLX, 18 anchors (2019, Temporal only): Embolization, dislocation / Implant design change [AA A1, A20; OL Settled correction 2 (12 to 18 anchors; no source links it to the embolizations)]</title></circle>
+<text x="216" y="272" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">early FLX, 18</text>
+<text x="216" y="292" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">anchors 2019</text>
+<circle cx="202" cy="316.5" r="6.8" fill="#13808a" fill-opacity="0.25" stroke="#13808a" stroke-width="2.6" stroke-dasharray="2.8 2.2"><title>LAA Plus hooks (2021, Sponsor, hedged): Embolization, dislocation / Implant design change [AA A13, GF4 E1 (OCC-PLUS Introduction: 'insufficient anchoring'; link from the 2016 notice is temporal only)]</title></circle>
+<text x="216" y="322" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">LAA Plus</text>
+<text x="216" y="342" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">hooks 2021</text>
+<circle cx="766.57" cy="146.5" r="7.5" fill="#13808a"><title>Occlutech dislocations, shipping stopped (2016, Sponsor): Embolization, dislocation / Field notice, lot withdrawal or recall [AA A13 (FSN-20160928; BfArM 08384/16 pp.1-3; four dislocations)]</title></circle>
+<text x="780.57" y="152" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Occlutech</text>
+<text x="780.57" y="172" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">dislocations,</text>
+<text x="780.57" y="192" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">shipping</text>
+<text x="780.57" y="212" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">stopped 2016</text>
+<circle cx="766.57" cy="236.5" r="7.5" fill="#13808a"><title>early FLX release suspended (2016, Sponsor): Embolization, dislocation / Field notice, lot withdrawal or recall [AA A1, A2 (FSN 91133341-FA, BfArM 02623/16 p.1; 10-Q 0000885725-16-000035: suspended for a higher than expected embolization rate)]</title></circle>
+<text x="780.57" y="242" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">early FLX</text>
+<text x="780.57" y="262" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">release</text>
+<text x="780.57" y="282" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">suspended</text>
+<text x="780.57" y="302" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">2016</text>
+<line x1="24" y1="364" x2="1176" y2="364" stroke="#e6e0ec" stroke-width="1"/>
+<rect x="24" y="373" width="4" height="230" rx="2" fill="#7c1fb0"/>
+<text x="40" y="387" font-size="15" font-weight="700" fill="#7c1fb0" text-anchor="start" letter-spacing="0.05em">HOLD · harm</text>
+<text x="40" y="412" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">Perforation,</text>
+<text x="40" y="432" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">effusion, erosion</text>
+<circle cx="202" cy="384.5" r="7.5" fill="#3b0b55"><title>WATCHMAN short implant (2009, Regulator): Perforation, effusion, erosion / Implant design change [DW §3 (F09-EXEC p.5-6, p.9: part of an iterative modification, partly to cut perforation and effusion; tine penetration 'addressed by' the short implant); OL §0]</title></circle>
+<text x="216" y="390" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">WATCHMAN</text>
+<text x="216" y="410" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">short</text>
+<text x="216" y="430" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">implant 2009</text>
+<circle cx="202" cy="454.5" r="7.5" fill="#13808a"><title>Amulet 360 rounded lobe (2026, Sponsor): Perforation, effusion, erosion / Implant design change [DL §2.6 (VERITAS Introduction ¶2: IDE effusion excess); AA A7 (SSCP p.12 §3.2)]</title></circle>
+<text x="216" y="460" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Amulet 360</text>
+<text x="216" y="480" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">rounded</text>
+<text x="216" y="500" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">lobe 2026</text>
+<circle cx="625.43" cy="384.5" r="7.5" fill="#3b0b55"><title>LARIAT FDA communication (2015, Regulator): Perforation, effusion, erosion / Labeling, instructions or training [AA A15 (FDA safety communication 2015-07-13: perforation, tamponade; cleared use is soft-tissue approximation)]</title></circle>
+<text x="639.43" y="390" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">LARIAT FDA</text>
+<text x="639.43" y="410" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">communication</text>
+<text x="639.43" y="430" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">2015</text>
+<circle cx="625.43" cy="454.5" r="7.5" fill="#b8326b"><title>LARIAT micropuncture technique (2015, Investigators): Perforation, effusion, erosion / Labeling, instructions or training [DN §3.1 (Pillarisetti 2015 Discussion P5: 4 surgical tamponades all with an 18-G needle, none after micropuncture)]</title></circle>
+<text x="639.43" y="460" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">LARIAT</text>
+<text x="639.43" y="480" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">micropuncture</text>
+<text x="639.43" y="500" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">technique 2015</text>
+<circle cx="625.43" cy="524.5" r="7.5" fill="#13808a"><title>Amulet pulmonary-artery notice (2026, Sponsor): Perforation, effusion, erosion / Labeling, instructions or training [AA B2 (FA-Q326-SH-1; Swissmedic Vk_20260910_032; BfArM 42851/26); OL Settled correction 9 (eight Amulet models, not the 360; labeling only)]</title></circle>
+<text x="639.43" y="530" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Amulet</text>
+<text x="639.43" y="550" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">pulmonary-</text>
+<text x="639.43" y="570" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">artery</text>
+<text x="639.43" y="590" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">notice 2026</text>
+<line x1="24" y1="612" x2="1176" y2="612" stroke="#e6e0ec" stroke-width="1"/>
+<rect x="24" y="621" width="4" height="360" rx="2" fill="#5ba32b"/>
+<text x="40" y="635" font-size="15" font-weight="700" fill="#5ba32b" text-anchor="start" letter-spacing="0.05em">HEAL</text>
+<text x="40" y="660" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">Device-related</text>
+<text x="40" y="680" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">thrombus</text>
+<circle cx="202" cy="632.5" r="7.5" fill="#b8326b"><title>Amulet recessed screw (2013, Investigators): Device-related thrombus / Implant design change [AA A23; DL §2.2 (Freixa 2013 Discussion ¶6: thrombus at the protruding pin)]</title></circle>
+<text x="216" y="638" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Amulet</text>
+<text x="216" y="658" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">recessed</text>
+<text x="216" y="678" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">screw 2013</text>
+<circle cx="202" cy="702.5" r="7.5" fill="#b8326b"><title>LAmbre hub recessed (2013, Investigators): Device-related thrombus / Implant design change [DL §4 (Lam 2013 Discussion: hub thrombus in one dog; Lifetech co-authors)]</title></circle>
+<text x="216" y="708" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">LAmbre hub</text>
+<text x="216" y="728" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">recessed 2013</text>
+<circle cx="202" cy="752.5" r="7.5" fill="#b8326b"><title>WaveCrest hub retracted (2018, Investigators): Device-related thrombus / Implant design change [DN §2.2 (Vainrib 2018 Introduction); OL §5]</title></circle>
+<text x="216" y="758" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">WaveCrest hub</text>
+<text x="216" y="778" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">retracted 2018</text>
+<circle cx="202" cy="802.5" r="7.5" fill="#13808a"><title>FLX low-profile insert (2021, Sponsor): Device-related thrombus / Implant design change [DW §6 (Kar 2021 Fig 1: insert under fabric 'to reduce exposed metal'; sponsor-funded)]</title></circle>
+<text x="216" y="808" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">FLX low-profile</text>
+<text x="216" y="828" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">insert 2021</text>
+<circle cx="202" cy="852.5" r="7.5" fill="#13808a"><title>FLX Pro coating (2023, Sponsor): Device-related thrombus / Implant design change [DW §7, §8 (Saliba 2023; BSC-funded preclinical: lower DRT, faster endothelialization); AA A4, A5 [added beyond brief]]</title></circle>
+<text x="216" y="858" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">FLX Pro</text>
+<text x="216" y="878" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">coating 2023</text>
+<circle cx="202" cy="902.5" r="7.5" fill="#13808a"><title>Zenith, minimal exposed metal (2025, Sponsor): Device-related thrombus / Implant design change [DN §2.5 (ZN1 Introduction ¶3; sponsor-authored)]</title></circle>
+<text x="216" y="908" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Zenith,</text>
+<text x="216" y="928" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">minimal</text>
+<text x="216" y="948" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">exposed</text>
+<text x="216" y="968" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">metal 2025</text>
+<circle cx="625.43" cy="632.5" r="7.5" fill="#13808a"><title>ACP thrombus notice (2011, Sponsor): Device-related thrombus / Labeling, instructions or training [AA A23 (AGA notice 2011-01-28; Swissmedic Vk_20110208_04 p.1: implant depth most probable cause; IFU and training)]</title></circle>
+<text x="639.43" y="638" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">ACP thrombus</text>
+<text x="639.43" y="658" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">notice 2011</text>
+<line x1="24" y1="990" x2="1176" y2="990" stroke="#e6e0ec" stroke-width="1"/>
+<rect x="24" y="999" width="4" height="300" rx="2" fill="#ec7211"/>
+<text x="40" y="1013" font-size="15" font-weight="700" fill="#ec7211" text-anchor="start" letter-spacing="0.05em">DELIVER</text>
+<text x="40" y="1038" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">Delivery or access</text>
+<text x="40" y="1058" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">hardware failure</text>
+<circle cx="343.14" cy="1010.5" r="7.5" fill="#b8326b"><title>WATCHMAN reinforced cable (2007, Investigators): Delivery or access hardware failure / Delivery-system design change [DW §3 (Sick 2007 Table 1: two core-wire failures; delivery wire, not frame); OL §2]</title></circle>
+<text x="357.14" y="1016" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">WATCHMAN</text>
+<text x="357.14" y="1036" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">reinforced</text>
+<text x="357.14" y="1056" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">cable 2007</text>
+<circle cx="343.14" cy="1080.5" r="7.5" fill="#13808a"><title>ACP delivery-wire change (2009, Sponsor): Delivery or access hardware failure / Delivery-system design change [AA B2 (AGA notice 2009-05-20, Swissmedic Vk_20090526_02: air ingress; minor delivery-wire change); GF1 l.259]</title></circle>
+<text x="357.14" y="1086" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">ACP</text>
+<text x="357.14" y="1106" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">delivery-wire</text>
+<text x="357.14" y="1126" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">change 2009</text>
+<circle cx="343.14" cy="1150.5" r="7.5" fill="#13808a"><title>WaveCrest liner changed (2015, Sponsor): Delivery or access hardware failure / Delivery-system design change [AA A14 (FSN 2014-08-08; change notification approved 2015-07-29; ANSM 201411069)]</title></circle>
+<text x="357.14" y="1156" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">WaveCrest</text>
+<text x="357.14" y="1176" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">liner changed</text>
+<text x="357.14" y="1196" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">2015</text>
+<circle cx="625.43" cy="1010.5" r="7.5" fill="#13808a"><title>ACP cable fracture, instructions (2010, Sponsor): Delivery or access hardware failure / Labeling, instructions or training [AA B2 (AGA 2010-09-07, Swissmedic Vk_20100921_05: torsional fracture; IFU revision only)]</title></circle>
+<text x="639.43" y="1016" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">ACP cable</text>
+<text x="639.43" y="1036" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">fracture,</text>
+<text x="639.43" y="1056" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">instructions</text>
+<text x="639.43" y="1076" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">2010</text>
+<circle cx="625.43" cy="1100.5" r="7.5" fill="#13808a"><title>WATCHMAN access instructions S081 (2025, Sponsor): Delivery or access hardware failure / Labeling, instructions or training [DW §6 (S081 2025-11-06); DC §1.5; OL §7]</title></circle>
+<text x="639.43" y="1106" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">WATCHMAN</text>
+<text x="639.43" y="1126" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">access</text>
+<text x="639.43" y="1146" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">instructions</text>
+<text x="639.43" y="1166" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">S081 2025</text>
+<circle cx="766.57" cy="1010.5" r="7.5" fill="#13808a"><title>WaveCrest sheath liner field notice (2014, Sponsor): Delivery or access hardware failure / Field notice, lot withdrawal or recall [AA A14 (FSN 2014-08-08, all lots, two complaints; no patient consequence)]</title></circle>
+<text x="780.57" y="1016" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">WaveCrest</text>
+<text x="780.57" y="1036" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">sheath</text>
+<text x="780.57" y="1056" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">liner field</text>
+<text x="780.57" y="1076" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">notice 2014</text>
+<circle cx="766.57" cy="1100.5" r="7.5" fill="#3b0b55"><title>WaveCrest 32 mm sheath (2018, Regulator): Delivery or access hardware failure / Field notice, lot withdrawal or recall [AA A14 (Class 1, FDA Z-2878-2018, event 80720; component design/selection) [added beyond brief]]</title></circle>
+<text x="780.57" y="1106" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">WaveCrest</text>
+<text x="780.57" y="1126" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">32 mm</text>
+<text x="780.57" y="1146" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">sheath 2018</text>
+<circle cx="766.57" cy="1170.5" r="7.5" fill="#3b0b55"><title>Amplatzer steerable sheath (2023, Regulator): Delivery or access hardware failure / Field notice, lot withdrawal or recall [DL §2.5 (FDA-ASDS; REC 92502; Class 1; device design); N09 §15]</title></circle>
+<text x="780.57" y="1176" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Amplatzer</text>
+<text x="780.57" y="1196" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">steerable</text>
+<text x="780.57" y="1216" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">sheath 2023</text>
+<circle cx="766.57" cy="1240.5" r="7.5" fill="#3b0b55"><title>WATCHMAN access systems (2025, Regulator): Delivery or access hardware failure / Field notice, lot withdrawal or recall [DW §6 (REC-API 97363; FDA-EA25; Class 1; air embolism)]</title></circle>
+<text x="780.57" y="1246" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">WATCHMAN</text>
+<text x="780.57" y="1266" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">access</text>
+<text x="780.57" y="1286" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">systems 2025</text>
+<line x1="24" y1="1308" x2="1176" y2="1308" stroke="#e6e0ec" stroke-width="1"/>
+<rect x="24" y="1317" width="4" height="100" rx="2" fill="#64748b"/>
+<text x="40" y="1331" font-size="15" font-weight="700" fill="#64748b" text-anchor="start" letter-spacing="0.05em">DURABILITY</text>
+<text x="40" y="1356" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">Frame or</text>
+<text x="40" y="1376" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">wire fracture</text>
+<circle cx="202" cy="1328.5" r="7.5" fill="#3b0b55"><title>short-implant barb loss (2009, Regulator): Frame or wire fracture / Implant design change [DW §3 (F09-EXEC p.35; F09-TR p.93-94, 98-101); OL §0, Settled correction 37; the only fracture-to-implant-design dot]</title></circle>
+<text x="216" y="1334" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">short-implant</text>
+<text x="216" y="1354" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">barb loss 2009</text>
+<circle cx="202" cy="1378.5" r="6.8" fill="#b8326b" fill-opacity="0.25" stroke="#b8326b" stroke-width="2.6" stroke-dasharray="2.8 2.2"><title>Ultraseal II (2022, Investigators, hedged): Frame or wire fracture / Implant design change [AA A9; GF4 D3 (LIGATE, Pivato 2022: 'may likely have contributed')]</title></circle>
+<text x="216" y="1384" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Ultraseal II</text>
+<text x="216" y="1404" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">2022</text>
+<circle cx="484.29" cy="1328.5" r="7.5" fill="#13808a"><title>Amulet wire, final inspection (2025, Sponsor): Frame or wire fracture / Process or inspection [AB b (MDR 2135147-2025-07217: lobe wire broken at preparation; Abbott exception to review final inspection)]</title></circle>
+<text x="498.29" y="1334" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Amulet wire,</text>
+<text x="498.29" y="1354" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">final inspection</text>
+<text x="498.29" y="1374" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">2025</text>
+<circle cx="766.57" cy="1328.5" r="7.5" fill="#13808a"><title>Ultraseal I lots, 3/750 (2020, Sponsor): Frame or wire fracture / Field notice, lot withdrawal or recall [AA A9 (FSN 2020-04-08, MDI01-20; BfArM 05595/20 EN PDF p.1: manufacturing defect in lots 0001-0750)]</title></circle>
+<text x="780.57" y="1334" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Ultraseal I lots,</text>
+<text x="780.57" y="1354" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">3/750 2020</text>
+<circle cx="766.57" cy="1378.5" r="7.5" fill="#13808a"><title>OMEGA wire breakage (2024, Sponsor): Frame or wire fracture / Field notice, lot withdrawal or recall [DL §6 (EM-FSN-24001; HPRA p.1); AA A22 [added beyond brief; same notice as the corrosion dot]]</title></circle>
+<text x="780.57" y="1384" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">OMEGA wire</text>
+<text x="780.57" y="1404" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">breakage 2024</text>
+<circle cx="1048.86" cy="1328.5" r="6.3" fill="#ffffff" stroke="#999999" stroke-width="2" stroke-dasharray="1.4 3.2" stroke-linecap="round"><title>LAmbre junction, 2/891 (2026, No response found): Frame or wire fracture / No response found in documents read [DL §4 (Alaswad 2026 text, Fig 1); AB b (no LAmbre notice in 26 periodic reports and 48 announcements); AA B1]</title></circle>
+<text x="1062.86" y="1334" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">LAmbre</text>
+<text x="1062.86" y="1354" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">junction,</text>
+<text x="1062.86" y="1374" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">2/891 2026</text>
+<line x1="24" y1="1426" x2="1176" y2="1426" stroke="#e6e0ec" stroke-width="1"/>
+<rect x="24" y="1435" width="4" height="53" rx="2" fill="#64748b"/>
+<text x="40" y="1449" font-size="15" font-weight="700" fill="#64748b" text-anchor="start" letter-spacing="0.05em">DURABILITY</text>
+<text x="40" y="1474" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">Corrosion</text>
+<circle cx="766.57" cy="1446.5" r="7.5" fill="#13808a"><title>OMEGA nickel leaching (2024, Sponsor): Corrosion / Field notice, lot withdrawal or recall [DL §6 (EM-FSN-24001; HPRA p.1; BfArM 41600-24); AA A22; OL §7]</title></circle>
+<text x="780.57" y="1452" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">OMEGA nickel</text>
+<text x="780.57" y="1472" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">leaching 2024</text>
+<line x1="24" y1="1497" x2="1176" y2="1497" stroke="#e6e0ec" stroke-width="1"/>
+<rect x="24" y="1506" width="4" height="152" rx="2" fill="#999999"/>
+<text x="40" y="1520" font-size="15" font-weight="700" fill="#777777" text-anchor="start" letter-spacing="0.05em">HOLD AND</text>
+<text x="40" y="1539" font-size="15" font-weight="700" fill="#777777" text-anchor="start" letter-spacing="0.05em">SEAL BY TISSUE</text>
+<text x="40" y="1564" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">Tissue</text>
+<text x="40" y="1584" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">non-adhesion,</text>
+<text x="40" y="1604" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">unwrapping,</text>
+<text x="40" y="1624" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">detachment,</text>
+<text x="40" y="1644" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">tearing</text>
+<circle cx="202" cy="1517.5" r="7.5" fill="#b8326b"><title>Immediate Release Patch (2011, Investigators): Tissue non-adhesion, unwrapping, detachment, tearing / Implant design change [AA A18 (Toumanides 2011, JACC 58(21):2236, Study limitations; inventor-authored: 3 of 20 did not adhere, all after angiography)]</title></circle>
+<text x="216" y="1523" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Immediate</text>
+<text x="216" y="1543" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Release</text>
+<text x="216" y="1563" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">Patch 2011</text>
+<circle cx="625.43" cy="1517.5" r="7.5" fill="#3b0b55"><title>LARIAT detachment, FDA (2015, Regulator): Tissue non-adhesion, unwrapping, detachment, tearing / Labeling, instructions or training [AA A15 (FDA safety communication 2015-07-13: complete LAA detachment; 34 emergency surgeries of 45 reports)]</title></circle>
+<text x="639.43" y="1523" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">LARIAT</text>
+<text x="639.43" y="1543" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">detachment,</text>
+<text x="639.43" y="1563" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">FDA 2015</text>
+<circle cx="766.57" cy="1517.5" r="7.5" fill="#3b0b55"><title>TigerPaw II wall tearing (2015, Regulator): Tissue non-adhesion, unwrapping, detachment, tearing / Field notice, lot withdrawal or recall [N09 §15 (REC 70853; Class 1; possible LA-wall tearing and bleeding); DN §3.4]</title></circle>
+<text x="780.57" y="1523" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">TigerPaw II</text>
+<text x="780.57" y="1543" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">wall tearing</text>
+<text x="780.57" y="1563" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">2015</text>
+<circle cx="907.71" cy="1517.5" r="7.5" fill="#13808a"><title>LAMINAR unwrapping (2025, Sponsor): Tissue non-adhesion, unwrapping, detachment, tearing / Trial pause or suspension [AB A7 (NCT06168942 v12 2025-07-03 stop text); AA A16 (J&amp;J 10-K FY2025 Note 18: 'during 2025', no reason)]</title></circle>
+<text x="921.71" y="1523" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">LAMINAR</text>
+<text x="921.71" y="1543" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">unwrapping</text>
+<text x="921.71" y="1563" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">2025</text>
+<line x1="24" y1="1667" x2="1176" y2="1667" stroke="#e6e0ec" stroke-width="1"/>
+<rect x="24" y="1676" width="4" height="112" rx="2" fill="#c9c2d2"/>
+<text x="40" y="1690" font-size="15" font-weight="700" fill="#777777" text-anchor="start" letter-spacing="0.05em">NOT</text>
+<text x="40" y="1709" font-size="15" font-weight="700" fill="#777777" text-anchor="start" letter-spacing="0.05em">CHARACTERIZED</text>
+<text x="40" y="1734" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">Serious adverse</text>
+<text x="40" y="1754" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">event, nature</text>
+<text x="40" y="1774" font-size="16" font-weight="600" fill="#1a0426" text-anchor="start">not stated</text>
+<circle cx="907.71" cy="1687.5" r="7.5" fill="#13808a"><title>CLAAS serious adverse event (2026, Sponsor): Serious adverse event, nature not stated / Trial pause or suspension [AB A8 (NCT05147792 v74 2026-08-17: enrollment suspended to review data after a serious adverse event)]</title></circle>
+<text x="921.71" y="1693" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">CLAAS serious</text>
+<text x="921.71" y="1713" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">adverse event</text>
+<text x="921.71" y="1733" font-size="16" font-weight="400" fill="#1a0426" text-anchor="start">2026</text>
+<line x1="24" y1="1797" x2="1176" y2="1797" stroke="#e6e0ec" stroke-width="1"/>
+<text x="24" y="1838.2" font-size="15" font-weight="700" fill="#1a0426" text-anchor="start" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif">Who stated the link</text>
+<circle cx="207.18" cy="1833" r="7.5" fill="#3b0b55"><title></title></circle><text x="223.18" y="1838.2" font-size="15" font-weight="400" fill="#555555" text-anchor="start">Regulator</text><circle cx="322.51" cy="1833" r="7.5" fill="#13808a"><title></title></circle><text x="338.51" y="1838.2" font-size="15" font-weight="400" fill="#555555" text-anchor="start">Sponsor</text><circle cx="428.37" cy="1833" r="7.5" fill="#b8326b"><title></title></circle><text x="444.37" y="1838.2" font-size="15" font-weight="400" fill="#555555" text-anchor="start">Investigators</text><circle cx="564.26" cy="1833" r="6.3" fill="#ffffff" stroke="#555555" stroke-width="2.4"><title></title></circle><text x="580.26" y="1838.2" font-size="15" font-weight="400" fill="#555555" text-anchor="start">Temporal only (no stated link)</text><circle cx="207.18" cy="1861" r="6.8" fill="#13808a" fill-opacity="0.25" stroke="#13808a" stroke-width="2.6" stroke-dasharray="2.8 2.2"><title></title></circle><text x="223.18" y="1866.2" font-size="15" font-weight="400" fill="#555555" text-anchor="start">Dashed outline: link hedged or partial</text><circle cx="501.45" cy="1861" r="6.3" fill="#ffffff" stroke="#999999" stroke-width="2" stroke-dasharray="1.4 3.2" stroke-linecap="round"><title></title></circle><text x="517.45" y="1866.2" font-size="15" font-weight="400" fill="#555555" text-anchor="start">No response found</text>
+<text x="24" y="1901" font-size="15" font-weight="400" fill="#777777" text-anchor="start">A dot marks a documented response to a problem. It does not show that the change caused an outcome.</text><text x="24" y="1922" font-size="15" font-weight="400" fill="#777777" text-anchor="start">Cases are those documented in the notes, not a census; dots are not rates. The year is that of the document or event that states or marks the link.</text>
+</svg>
+<figcaption><strong>Figure 1. Observed problems and their publicly documented responses.</strong> Each dot is one documented case. Its row is the observed problem, grouped by function, and its column is where the publicly documented response was made. Its color shows who stated the link, and its year is that of the document or event that states it. A dot records where a response was made, not that a change caused an outcome. Sources: the documents cited in this part and in Parts 1 and 2.</figcaption></figure>
+
+<h2>Surface condition, corrosion and nickel release</h2>
+<p>The implant surface serves the heal function (Part 2), and its condition also affects fatigue-crack initiation and nickel release. <em class="interpretation-label">Provisional engineering interpretation.</em></p>
+<p>LAAO devices use several finishes: electropolished nitinol in WATCHMAN [<a href="#p4-ref-1">1</a>], a titanium nitride covering in LAmbre [<a href="#p4-ref-36">36</a>], platinum-coated mesh in OMEGA [<a href="#p4-ref-32">32</a>], and a fluoropolymer coating in FLX Pro, poly(vinylidene fluoride-co-hexafluoropropylene) (PVDF-HFP) [<a href="#p4-ref-37">37</a>–<a href="#p4-ref-39">39</a>].<sup id="p4-fnref:n6"><a class="footnote-ref" href="#p4-fn:n6">10</a></sup> Whether the FLX Pro coating bears on the frame's fatigue or nickel release depends on whether it covers the metal, which the documents describe differently. Current devices also combine metals.<sup id="p4-fnref:n9"><a class="footnote-ref" href="#p4-fn:n9">11</a></sup></p>
+<p>FDA's 2021 guidance makes four requests on corrosion and nickel release [<a href="#p4-ref-7">7</a>]:</p>
+<ul>
+<li>pitting tests, for corrosion that forms small local cavities, after simulated implantation;</li>
+<li>nickel release over 60 days where a device fails the pitting tests or lacks an established finish such as electropolish;</li>
+<li>galvanic testing, for corrosion caused by contact between different metals, to be considered where metals differ;</li>
+<li>uncoated tests of polymer-coated devices.</li>
+</ul>
+<p>The occluder documents report a Pass for FLX's nickel elution test [<a href="#p4-ref-2">2</a>] and "acceptable nickel levels" for Amulet [<a href="#p4-ref-3">3</a>]. Amulet's US label states that nickel is released for at least 120 days [<a href="#p4-ref-40">40</a>]. Amulet 360's EU summary states at least 60 days [<a href="#p4-ref-35">35</a>]. None of the four documents gives the amount of nickel released [<a href="#p4-ref-2">2</a>, <a href="#p4-ref-3">3</a>, <a href="#p4-ref-35">35</a>, <a href="#p4-ref-40">40</a>].</p>
+<h2>Durability information in public regulatory documents</h2>
+<p>Disclosure differs by function and jurisdiction (Table 1).<sup id="p4-fnref:n8"><a class="footnote-ref" href="#p4-fn:n8">12</a></sup> The review report of Japan's Pharmaceuticals and Medical Devices Agency (PMDA) for WATCHMAN 2.5 names radial-force, dislodgement and pulsatile-durability tests without values [<a href="#p4-ref-19">19</a>, <a href="#p4-ref-41">41</a>]. Radial force is the force between the implant and the wall: the outward force the implant exerts as it expands, or the force with which it resists compression. Four quantities are absent from every FDA, PMDA and EU document read: radial-force values, anchor-strength values, corrosion or nickel-release numbers, and the fatigue loading.</p>
+<p class="tcap"><strong>Table 1. Information disclosed in public documents, by function and jurisdiction.</strong> Each row is a function, requirement or quantity, and each column is a jurisdiction or type of source. Documents reviewed for WATCHMAN 2.5, FLX, FLX Pro, Amulet and Amulet 360. "No values" means that a test is named or passed but no number is printed. Sources: [<a href="#p4-ref-1">1</a>–<a href="#p4-ref-3">3</a>, <a href="#p4-ref-19">19</a>, <a href="#p4-ref-26">26</a>, <a href="#p4-ref-35">35</a>, <a href="#p4-ref-37">37</a>, <a href="#p4-ref-38">38</a>, <a href="#p4-ref-40">40</a>–<a href="#p4-ref-50">50</a>].</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Function, requirement or quantity</th>
+<th>United States (FDA summaries, instructions for use)</th>
+<th>Japan (PMDA review report, package inserts)</th>
+<th>European Union (EU summary)</th>
+<th>Sponsor papers, decks, patents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Architecture; strut and anchor counts</td>
+<td>Described in words; no counts</td>
+<td>Not described for FLX or Amulet</td>
+<td>Described; no anchor count (Amulet 360)</td>
+<td>Counts (decks, investigators)</td>
+</tr>
+<tr>
+<td>Hold: radial force, anchor strength</td>
+<td>Tests listed as Pass; no values</td>
+<td>Tests named; no values (2.5 only)</td>
+<td>No values</td>
+<td>No values</td>
+</tr>
+<tr>
+<td>Release criterion (compression)</td>
+<td>2.5: deployed diameter 80–92% of original; FLX, FLX Pro: no percentage; Amulet: lobe "slightly compressed"</td>
+<td>Ratio printed (2.5: 8–20%; FLX: 10–30% until 2025)</td>
+<td>Sized by landing zone; no ratio</td>
+<td>Review table of manufacturer criteria; brochures (FLX 10–30%)</td>
+</tr>
+<tr>
+<td>Heal: coating chemistry, masses</td>
+<td>Polymer and masses in instructions for use (FLX Pro)</td>
+<td>Coating polymer (PVDF-HFP) and tantalum named (FLX Pro)</td>
+<td>Materials and masses table</td>
+<td>Coating process in a patent</td>
+</tr>
+<tr>
+<td>Nickel release</td>
+<td>FLX elution test Pass; Amulet "acceptable", released for at least 120 days; none listed for 2.5; no values</td>
+<td>Test named; no value (2.5 only)</td>
+<td>At least 60 days (Amulet 360); no values</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Durability: fatigue</td>
+<td>400 million cycles, Pass; mode not given (2.5, FLX, Amulet)</td>
+<td>Pulsatile durability named, no value; data resubmitted after material changes (2.5)</td>
+<td>Lifetime at least 10 years by bench testing; International Organization for Standardization (ISO) standard 22679 listed</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Reasons for a change</td>
+<td>Rarely stated</td>
+<td>Mostly masked (2.5 only)</td>
+<td>Stated per change (Amulet 360)</td>
+<td>Stated as intent</td>
+</tr>
+<tr>
+<td>Field events</td>
+<td>Recall and adverse-event databases</td>
+<td>Sponsor-reported defect rates (2.5 only)</td>
+<td>National field-notice archives</td>
+<td>Securities filings (early FLX)</td>
+</tr>
+</tbody>
+</table></div>
+<h2>A durability case: a perspective</h2>
+<p>The reviewed evidence suggests six elements that would make a public durability assessment more interpretable. <em class="interpretation-label">Author’s perspective, not a prescription.</em></p>
+<ul>
+<li><strong>A justified set of load cases.</strong> Appendage motion from imaging, converted to displacement at the implant, by rhythm and before and after the implant is covered, at the worst-case size and at the compressions now reported.</li>
+<li><strong>A strain analysis.</strong> Finite-element strain at hinges, anchor roots, junctions and wire terminations under those load cases, with the frame's transformation temperature, compared with a strain-based constant-life curve for the finished device.</li>
+<li><strong>Margin, with its terms stated.</strong> Test-to-success testing, analysis and, where suitable, fatigue-to-fracture testing, presented together, with the terms of any margin stated.</li>
+<li><strong>Recapture as a load case.</strong> Integrity after the recaptures that the label allows, tested in a way modeled on WATCHMAN 2.5's barb "cleat test", which deflects a barb to the strain of recapture [<a href="#p4-ref-1">1</a>].</li>
+<li><strong>Surface condition as part of fatigue.</strong> Corrosion, pitting and nickel release after simulated recapture, on coated devices and their uncoated worst case, with galvanic tests where metals differ.</li>
+<li><strong>Follow-up imaging that can detect a fracture.</strong> The Ultraseal and LAmbre reports describe fractures that routine follow-up imaging did not show [<a href="#p4-ref-30">30</a>, <a href="#p4-ref-33">33</a>].</li>
+</ul>
+<p>FDA's stent and nitinol guidance already requests much of this evidence. A public summary of load cases, strain limits and margin definitions would make a reported pass interpretable.</p>
+<h2>Conclusions of the series</h2>
+<p>Across regulatory documents, patents, registries, field notices and published reports, the series examined the engineering design of LAAO implants. Its findings are summarized by part below.</p>
+<ol>
+<li>In the United States and Japan, every LAAO implant approved for use inside the heart is a cage or a lobe and disc. No architecture reviewed makes the four functions independent (Part 1).</li>
+<li>Where outcomes were measured, some generations recorded better outcomes than predecessors. Public documents do not attribute the FLX registry or Amulet 360 single-arm results to a single design change (Part 2).</li>
+<li>Sizing rules specify geometric ranges of undisclosed derivation. No measured force–diameter curves were found for WATCHMAN 2.5, FLX, FLX Pro or Amulet in the public literature reviewed (Part 3).</li>
+<li>FDA summaries report a pass in a 400-million-cycle fatigue test without reporting its loading or margin. The author's engineering reading is that some documented failures involved features associated with an allocation. Figure 1 groups observed problems by function and shows where documented responses occurred (Part 4).</li>
+</ol>
+<p>These findings depend on four distinctions.</p>
+<ol>
+<li><strong>Architecture versus fabrication.</strong> How a design allocates the four functions is a separate choice from whether it is cut or braided (Part 1).</li>
+<li><strong>Holding versus radial force.</strong> In one bench study of seven systems, pull-out force correlated with anchor density (r = 0.87). The authors concluded that stability depends more on anchoring structures than on radial force (Part 3). Changes made for holding also alter where and how the wall is loaded (Part 2).</li>
+<li><strong>Perimeter contact versus a diameter ratio.</strong> A seal requires continuous contact around a changing orifice, which a diameter percentage measures only in part (Part 3).</li>
+<li><strong>Endurance versus margin.</strong> A test-to-success result establishes endurance under specified conditions. A durability margin requires stated loads and stated terms (Part 4).</li>
+</ol>
+<p>The public evidence answers the four design questions only in part. One independently adjustable feature is a seal checked before fixation. Another is a disc sealing at the orifice while a lobe holds deeper in the appendage, although the lobe also seals (Part 1). Amulet 360's European summary gives a reason for each change and addresses more questions than documents for most generations. Evidence for the fourth question remains partial (Part 2). Similarly, fatigue summaries report a pass without loading conditions, so they do not support a judgment about design margin.</p>
+<p>This review uses public documents available through September 2026. The allocations and engineering readings are the author's interpretations. Japanese documents were read in the original and translated for this series. Device selection follows Table 1 of Part 1.</p>
+<p>Public reporting could support comparison by stating, for each design change, the function it serves and the other functions it affects, as the Amulet 360 summary does in part. For each device, it could also report the mechanical quantities underlying its claims: radial-force curves by size, anchor strength, fatigue load cases and margin, and nickel release. <em class="interpretation-label">Author’s perspective, not a prescription.</em></p>
+<hr />
+<h2>Notes</h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="p4-fn:n1">
+<p>The occluder summaries do not state a test frequency. The arithmetic is 400,000,000 cycles ÷ 10 years ÷ 525,960 minutes per year ≈ 76 cycles per minute. Pelton's duty cycle for peripheral stents also assumes about 40 million pulsatile cycles a year [<a href="#p4-ref-4">4</a>]. A recent review gives the test-to-survive requirements for ten years as 10 million cycles for peripheral stents and 400 million for valve frames [<a href="#p4-ref-51">51</a>]. Stent fatigue rigs have run at 30 to 50 cycles a second, at which 400 million cycles take three to five months of testing [<a href="#p4-ref-4">4</a>]. At 50 Hz, 400 million cycles take about 93 days of testing. At 30 Hz they take about 154 days. A 2015 update supplements the 2010 stent guidance without replacing it. It prints no cycle count [<a href="#p4-ref-52">52</a>].&#160;<a class="footnote-backref" href="#p4-fnref:n1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="p4-fn:n10">
+<p>The stent guidance also asks for "a Goodman diagram or other graphic", a table of fatigue safety factors and accelerated durability testing that validates the analysis [<a href="#p4-ref-5">5</a>]. The 2021 guidance covers any device with a nitinol part in contact with the patient [<a href="#p4-ref-7">7</a>].&#160;<a class="footnote-backref" href="#p4-fnref:n10" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="p4-fn:n2">
+<p>The study validated a three-dimensional measurement method. It does not state the heart rhythm at imaging [<a href="#p4-ref-9">9</a>]. Its standard deviations are 40 to 51 percent of the means [<a href="#p4-ref-9">9</a>]. The mean orifice area fell from 4.54 to 3.58 cm² [<a href="#p4-ref-9">9</a>]. The 11 percent is derived from the mean areas, with no device in place, as the change in the diameter of a circle of equal area [<a href="#p4-ref-9">9</a>].&#160;<a class="footnote-backref" href="#p4-fnref:n2" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="p4-fn:n7">
+<p>Trial patients had paroxysmal, persistent or permanent atrial fibrillation [<a href="#p4-ref-1">1</a>]. The OPTION trial placed FLX after catheter ablation [<a href="#p4-ref-37">37</a>].&#160;<a class="footnote-backref" href="#p4-fnref:n7" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="p4-fn:n3">
+<p>The process changes are to forming temperature, heat treatment, electropolishing, laser cutting and welding. The supplements are S016 (final forming temperature, 2017), S037 (alternate heat treatment, 2020), S015 (new electropolishing system, 2017), S080 (gantry-assisted wetline process, 2025), S060 and S068 (laser-cut toolpaths, 2023–2024), S082 (automated laser welding of the nitinol puck, 2025), and S070, S072 and S085 (automated or alternate inspection for bent struts, broken anchors and broken struts, 2024–2026) [<a href="#p4-ref-18">18</a>].&#160;<a class="footnote-backref" href="#p4-fnref:n3" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="p4-fn:n4">
+<p>One Class 1 recall concerned a WaveCrest sheath tip that buckled when the 32 mm device was recaptured (2018) [<a href="#p4-ref-23">23</a>]. The others concerned air embolism with the Amplatzer steerable delivery sheath (2023) [<a href="#p4-ref-24">24</a>] and with the WATCHMAN access systems (2025; 340,185 units; 17 deaths reported to FDA as of 30 July 2025) [<a href="#p4-ref-25">25</a>, <a href="#p4-ref-53">53</a>]. New instructions for use followed the WATCHMAN access-system recall [<a href="#p4-ref-25">25</a>, <a href="#p4-ref-53">53</a>]. A 2015 Class 2 correction lists the WATCHMAN device among its products but concerns the access-sheath valve [<a href="#p4-ref-26">26</a>].&#160;<a class="footnote-backref" href="#p4-fnref:n4" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="p4-fn:n11">
+<p>The notice also stated that the potentially affected product had been removed from circulation in early 2018 [<a href="#p4-ref-30">30</a>].&#160;<a class="footnote-backref" href="#p4-fnref:n11" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="p4-fn:n12">
+<p>OMEGA had been distributed in Europe since 2020 [<a href="#p4-ref-32">32</a>].&#160;<a class="footnote-backref" href="#p4-fnref:n12" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="p4-fn:n5">
+<p>The abstracts describe a WATCHMAN 2.5 frame with a 3 mm leak through the device about five years after implant [<a href="#p4-ref-54">54</a>], a WATCHMAN frame with a 7 mm jet six years after implant [<a href="#p4-ref-55">55</a>], and an FLX Pro frame about four months after implant [<a href="#p4-ref-56">56</a>]. Sponsors analyzed returned devices and reported the results to FDA's adverse-event database. One analysis judged "a clean fracture through a single node ... just proximal to the anchor" of a WATCHMAN likely to be damage from an instrument used during explant [<a href="#p4-ref-57">57</a>]. Another found broken Amulet wires "consistent with damage during use", though when or how could not be determined [<a href="#p4-ref-58">58</a>]. A third named "shear deformation with swaging" as "a potential source" for an Amulet lobe wire found broken during preparation [<a href="#p4-ref-34">34</a>]. Brand-level counts in that database have no denominator. They include access and delivery hardware. Of 16,099 WATCHMAN-brand reports, 1, 10 and 3 carry the product-problem codes Fracture, Break and Crack [<a href="#p4-ref-59">59</a>]. Of 2,686 Amulet-brand reports, 14 carry Fracture and 1 carries Crack [<a href="#p4-ref-59">59</a>]. Of those 14, 11 concern loaders, adapters, hubs, luer locks or a stopcock [<a href="#p4-ref-59">59</a>]. Narratives that describe frame damage often carry other codes, such as Device Dislodged or Dislocated and Migration or Expulsion of Device [<a href="#p4-ref-57">57</a>, <a href="#p4-ref-58">58</a>].&#160;<a class="footnote-backref" href="#p4-fnref:n5" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="p4-fn:n6">
+<p>The documents describe the location of the FLX Pro coating differently. FDA's summary places the coating "on the PET fabric" (polyethylene terephthalate) [<a href="#p4-ref-37">37</a>]. The US instructions say "the Closure Device is coated" [<a href="#p4-ref-38">38</a>]. The Japanese package insert shows a coated filter (translated) [<a href="#p4-ref-45">45</a>]. The HEAL-LAA protocol describes dip-coating "the finished implant (including the fabric)" [<a href="#p4-ref-39">39</a>]. A sponsor web page says that the coating "encapsulates the device's surface" at under 1 µm [<a href="#p4-ref-60">60</a>]. Case reports place it on the fabric membrane [<a href="#p4-ref-61">61</a>, <a href="#p4-ref-62">62</a>].&#160;<a class="footnote-backref" href="#p4-fnref:n6" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="p4-fn:n9">
+<p>Among current devices, Amulet 360 pairs a nitinol occluder with a stainless-steel end screw and a platinum–iridium marker band [<a href="#p4-ref-35">35</a>]. FLX Pro contains titanium and, according to FDA's summary and the US instructions for use, tantalum markers [<a href="#p4-ref-37">37</a>, <a href="#p4-ref-38">38</a>].&#160;<a class="footnote-backref" href="#p4-fnref:n9" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="p4-fn:n8">
+<p>Strut and anchor counts come from sponsor training decks and investigators, not from any FDA or Japanese regulatory document read [<a href="#p4-ref-48">48</a>].&#160;<a class="footnote-backref" href="#p4-fnref:n8" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+<hr />
+<h2>References</h2>
+<ol>
+<li><a id="p4-ref-1"></a>FDA. Summary of Safety and Effectiveness Data: WATCHMAN (PMA P130013). 13 March 2015. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013B.pdf">Link</a> <em>Cited at p. 10, Table 4; p. 10; p. 3; p. 9; pp. 15, 24.</em></li>
+<li><a id="p4-ref-2"></a>FDA. Summary of Safety and Effectiveness Data: WATCHMAN FLX (PMA P130013/S035). 21 July 2020. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S035B.pdf">Link</a> <em>Cited at p. 10; p. 13; p. 9.</em></li>
+<li><a id="p4-ref-3"></a>FDA. Summary of Safety and Effectiveness Data: Amplatzer Amulet (PMA P200049). 14 August 2021. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049B.pdf">Link</a> <em>Cited at p. 10; pp. 9–10; p. 8.</em></li>
+<li><a id="p4-ref-4"></a>Pelton AR, Schroeder V, Mitchell MR, et al. Fatigue and durability of Nitinol stents. Journal of the Mechanical Behavior of Biomedical Materials. 2008;1(2):153-164. <a href="https://doi.org/10.1016/j.jmbbm.2007.08.001">doi:10.1016/j.jmbbm.2007.08.001</a> <em>Cited at p. 154; pp. 158–160; p. 162; pp. 155–156.</em></li>
+<li><a id="p4-ref-5"></a>FDA. Non-clinical engineering tests and recommended labeling for intravascular stents and associated delivery systems: guidance. 18 April 2010. <a href="https://www.fda.gov/media/71639/download">Link</a> <em>Cited at p. 20; pp. 19–21.</em></li>
+<li><a id="p4-ref-6"></a>ASTM F3211-17 (R2025). Standard guide for fatigue-to-fracture methodology for cardiovascular medical devices. ASTM International. <a href="https://doi.org/10.1520/F3211-17R25">doi:10.1520/F3211-17R25</a></li>
+<li><a id="p4-ref-7"></a>FDA. Technical considerations for non-clinical assessment of medical devices containing nitinol: guidance (document 17013-R1). 9 July 2021. <a href="https://www.fda.gov/media/123272/download">Link</a> <em>Cited at pp. 1, 7–10; pp. 10–14.</em></li>
+<li><a id="p4-ref-8"></a>ASTM F2477-24. Standard test methods for in vitro pulsatile durability testing of vascular stents and endovascular prostheses. ASTM International. <a href="https://doi.org/10.1520/F2477-24">doi:10.1520/F2477-24</a></li>
+<li><a id="p4-ref-9"></a>Vivoli G, Gasparotti E, Rezzaghi M, et al. Simultaneous Functional and Morphological Assessment of Left Atrial Appendage by 3D Virtual Models. Journal of Healthcare Engineering. 2019;2019:7095845. <a href="https://doi.org/10.1155/2019/7095845">doi:10.1155/2019/7095845</a> <em>Cited at Table 1.</em></li>
+<li><a id="p4-ref-10"></a>Zaccaria A, Danielli F, Gasparotti E, et al. Left atrial appendage occlusion device: Development and validation of a finite element model. Medical Engineering &amp; Physics. 2020;82:104-118. <a href="https://doi.org/10.1016/j.medengphy.2020.05.019">doi:10.1016/j.medengphy.2020.05.019</a></li>
+<li><a id="p4-ref-11"></a>Danielli F, Berti F, Fanni BM, et al. Left atrial appendage occlusion: On the need of a numerical model to simulate the implant procedure. International Journal for Numerical Methods in Biomedical Engineering. 2024;40(5):e3814. <a href="https://doi.org/10.1002/cnm.3814">doi:10.1002/cnm.3814</a></li>
+<li><a id="p4-ref-12"></a>Bonfanti C, Danielli F, Berti F, et al. Toward a computationally efficient numerical approach to simulate the left atrial appendage occlusion in patient-specific anatomies. Computer Methods and Programs in Biomedicine. 2026;287:109652. <a href="https://doi.org/10.1016/j.cmpb.2026.109652">doi:10.1016/j.cmpb.2026.109652</a></li>
+<li><a id="p4-ref-13"></a>Md RI [Islam MR], Lee MT, Cook AC, et al. A new braided model of the Amulet Amplatzer for accurate simulations of left atrial appendage occlusion procedures. Computers in Biology and Medicine. 2025;192(Pt B):110355. <a href="https://doi.org/10.1016/j.compbiomed.2025.110355">doi:10.1016/j.compbiomed.2025.110355</a></li>
+<li><a id="p4-ref-14"></a>Chen R, Wu X, Jin H, et al. Assessment of Left Atrial Appendage Morphology and Function in Patients with Non-valvular Paroxysmal Atrial Fibrillation with Different Rhythms Using Real-Time 3D Transesophageal Echocardiography. Ultrasound in Medicine &amp; Biology. 2016;42(1):118-124. <a href="https://doi.org/10.1016/j.ultrasmedbio.2015.08.011">doi:10.1016/j.ultrasmedbio.2015.08.011</a></li>
+<li><a id="p4-ref-15"></a>Schwartz RS, Holmes DR, Van Tassel RA, et al. Left Atrial Appendage Obliteration. JACC: Cardiovascular Interventions. 2010;3(8):870-877. <a href="https://doi.org/10.1016/j.jcin.2010.04.017">doi:10.1016/j.jcin.2010.04.017</a></li>
+<li><a id="p4-ref-16"></a>La Fazia VM, Galea R, Della Rocca DG, et al. Impact of Device Compression on Peridevice Leak After Left Atrial Appendage Closure: The Impression LAAC Study. JACC: Clinical Electrophysiology. 2025;11(12):2742-2753. <a href="https://doi.org/10.1016/j.jacep.2025.08.014">doi:10.1016/j.jacep.2025.08.014</a></li>
+<li><a id="p4-ref-17"></a>Duerig T, Pelton A, Stöckel D. An overview of nitinol medical applications. Materials Science and Engineering: A. 1999;273-275:149-160. <a href="https://doi.org/10.1016/S0921-5093(99)00294-4">doi:10.1016/S0921-5093(99)00294-4</a> <em>Cited at pp. 157–158.</em></li>
+<li><a id="p4-ref-18"></a>FDA. PMA P130013 (WATCHMAN, FLX, FLX Pro) supplement approval orders, openFDA. Accessed September 2026. <a href="https://api.fda.gov/device/pma.json?search=pma_number:P130013&amp;limit=100">Link</a></li>
+<li><a id="p4-ref-19"></a>PMDA. Review report: WATCHMAN (in Japanese). 13 December 2018. <a href="https://www.pmda.go.jp/medical_devices/2019/M20190226001/300500000_23100BZX00049000_A100_1.pdf">Link</a> <em>Cited at p. 15; pp. 13, 15.</em></li>
+<li><a id="p4-ref-20"></a>Sick PB, Schuler G, Hauptmann KE, et al. Initial Worldwide Experience With the WATCHMAN Left Atrial Appendage System for Stroke Prevention in Atrial Fibrillation. Journal of the American College of Cardiology. 2007;49(13):1490-1495. <a href="https://doi.org/10.1016/j.jacc.2007.02.035">doi:10.1016/j.jacc.2007.02.035</a></li>
+<li><a id="p4-ref-21"></a>Coherex Medical. Field safety notice: WaveCrest delivery sheath. 8 August 2014 (ANSM 201411069; in French). <a href="https://archive.ansm.sante.fr/content/download/67651/864557/version/1/file/rlp-140925-coherex.pdf">Link</a></li>
+<li><a id="p4-ref-22"></a>AGA Medical. Field safety corrective action: Amplatzer Cardiac Plug delivery cable, torsional fracture. 7 September 2010 (Swissmedic Vk_20100921_05; in German). <a href="https://fsca.swissmedic.ch/mep/api/publications/Vk_20100921_05/documents/0">Link</a></li>
+<li><a id="p4-ref-23"></a>FDA. Class 1 recall 80720: WaveCrest LAA occlusion system, 32 mm. 7 May 2018. <a href="https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?ID=166222">Link</a></li>
+<li><a id="p4-ref-24"></a>FDA. Class 1 recall 92502: Amplatzer steerable delivery sheath. 12 June 2023. <a href="https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?ID=201172">Link</a></li>
+<li><a id="p4-ref-25"></a>FDA. Class 1 recall 97363: WATCHMAN TruSeal, FXD Curve and TruSteer access systems. 29 July 2025. <a href="https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?ID=215342">Link</a></li>
+<li><a id="p4-ref-26"></a>FDA. openFDA device recall database, searches for WATCHMAN, Amplatzer Cardiac Plug and Amulet. Accessed September 2026. <a href="https://api.fda.gov/device/recall.json?search=product_description:WATCHMAN">Link</a></li>
+<li><a id="p4-ref-27"></a>FDA. Executive summary memorandum, WATCHMAN (PMA P080022), Circulatory System Devices Panel, 23 April 2009 (archived copy). <a href="https://web.archive.org/web/20170216044341/http://www.fda.gov/downloads/AdvisoryCommittees/CommitteesMeetingMaterials/MedicalDevices/MedicalDevicesAdvisoryCommittee/CirculatorySystemDevicesPanel/UCM151994.pdf">Link</a> <em>Cited at p. 35.</em></li>
+<li><a id="p4-ref-28"></a>FDA. Transcript, Circulatory System Devices Panel meeting on WATCHMAN, 23 April 2009 (archived copy). <a href="https://web.archive.org/web/20170209162331/http://www.fda.gov/ohrms/dockets/ac/09/transcripts/2009-4434t1-01.pdf">Link</a> <em>Cited at pp. 93–94, 98–99.</em></li>
+<li><a id="p4-ref-29"></a>Ahlgrimm B, Pottgiesser T, Stachon P, et al. The Cardia Ultraseal Left Atrial Appendage Occluder. JACC: Cardiovascular Interventions. 2019;12(19):1987-1989. <a href="https://doi.org/10.1016/j.jcin.2019.06.026">doi:10.1016/j.jcin.2019.06.026</a></li>
+<li><a id="p4-ref-30"></a>Cardia Inc. Urgent field safety notice: Ultraseal LAA closure device. 8 April 2020 (BfArM 05595/20). <a href="https://www.bfarm.de/SharedDocs/Kundeninfos/EN/11/2020/05595-20_kundeninfo_en.pdf?__blob=publicationFile">Link</a> <em>Cited at p. 1.</em></li>
+<li><a id="p4-ref-31"></a>Pivato CA, Liccardo G, Sanz-Sanchez J, et al. Left atrial appendage closure with the II generation Ultraseal device: An international registry. The LIGATE study. Catheterization and Cardiovascular Interventions. 2022;100(4):620-627. <a href="https://doi.org/10.1002/ccd.30336">doi:10.1002/ccd.30336</a></li>
+<li><a id="p4-ref-32"></a>Eclipse Medical. Field safety notice EM-FSN-24001: OMEGA LAA occluder, device removal. 26 November 2024 (HPRA). <a href="https://assets.hpra.ie/data/docs/default-source/product-updates/fsn/field-safety-notices/november-2024/omega-left-atrial-appendage-%28laa%29-occluder-device_eclipse-medical_-advice-regarding-a-device-removal.pdf?sfvrsn=a200dad9_1">Link</a> <em>Cited at p. 1.</em></li>
+<li><a id="p4-ref-33"></a>Alaswad AN, Zheng ZH, Cai JC, et al. Early and Late Structural Fractures in the Left Atrial Appendage Disk Occluder. JACC: Clinical Electrophysiology. 2026;12(8):2028-2030. <a href="https://doi.org/10.1016/j.jacep.2026.03.028">doi:10.1016/j.jacep.2026.03.028</a></li>
+<li><a id="p4-ref-34"></a>FDA MAUDE. Manufacturer report 2135147-2025-07217 (Abbott; Amplatzer Amulet). 2025. <a href="https://api.fda.gov/device/event.json?search=report_number:%222135147-2025-07217%22">Link</a></li>
+<li><a id="p4-ref-35"></a>Abbott Medical. Summary of Safety and Clinical Performance: Amulet 360 LAA Occluder (91161889 Rev A). 28 July 2026. <a href="https://ec.europa.eu/tools/eudamed/api/documents/bb3c3556-fc8b-4c30-9e32-7d719293b81b">Link</a> <em>Cited at p. 12; p. 15; p. 11.</em></li>
+<li><a id="p4-ref-36"></a>Chamié F, Guerios E, Silva DPe, et al. Left Atrial Appendage Closure with the LAmbre Device - Initial Multicentre Experience in Brazil. Arquivos Brasileiros de Cardiologia. 2022;119(1):48-56. <a href="https://doi.org/10.36660/abc.20210275">doi:10.36660/abc.20210275</a></li>
+<li><a id="p4-ref-37"></a>FDA. Summary of Safety and Effectiveness Data: WATCHMAN FLX and FLX Pro (PMA P130013/S074). 16 July 2025. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S074B.pdf">Link</a> <em>Cited at p. 4; pp. 16–17.</em></li>
+<li><a id="p4-ref-38"></a>Boston Scientific. WATCHMAN FLX Pro instructions for use (51245861). July 2023 (third-party copy). <a href="https://acforum.org/web/resource_files/1739291757-34025.pdf">Link</a> <em>Cited at p. 1; p. 2, Table 1.</em></li>
+<li><a id="p4-ref-39"></a>Boston Scientific. HEAL-LAA clinical investigation plan S2504 (protocol 92986161 Rev. B; NCT05809596). 5 May 2023. <a href="https://cdn.clinicaltrials.gov/large-docs/96/NCT05809596/Prot_000.pdf">Link</a> <em>Cited at pp. 17, 19.</em></li>
+<li><a id="p4-ref-40"></a>Abbott Medical. Amplatzer Amulet Left Atrial Appendage Occluder instructions for use, PMA P200049 (FDA labeling file P200049C). September 2021. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200049C.pdf">Link</a> <em>Cited at p. 2.</em></li>
+<li><a id="p4-ref-41"></a>PMDA. WATCHMAN application summary, contents (in Japanese). 2019. <a href="https://www.pmda.go.jp/medical_devices/2019/M20190226001/300500000_23100BZX00049000_B100_2.pdf">Link</a> <em>Cited at p. 6.</em></li>
+<li><a id="p4-ref-42"></a>Boston Scientific. WATCHMAN (2.5 generation) directions for use, PMA P130013 (FDA labeling file P130013D). 2015. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013D.pdf">Link</a></li>
+<li><a id="p4-ref-43"></a>Boston Scientific. WATCHMAN (2.5) and WATCHMAN FLX instructions for use, PMA supplement P130013/S035 (FDA labeling file P130013S035C). 2020. <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S035C.pdf">Link</a></li>
+<li><a id="p4-ref-44"></a>PMDA. Package inserts, WATCHMAN (in Japanese). 2019–2022. <a href="https://www.pmda.go.jp/PmdaSearch/kikiDetail/OldPdfData/23100BZX00049000_A_01/1">Link</a></li>
+<li><a id="p4-ref-45"></a>PMDA. Package inserts, WATCHMAN FLX and FLX Pro, editions 1–7 (in Japanese). 2021–2026. <a href="https://www.pmda.go.jp/PmdaSearch/kikiDetail/OldPdfData/30200BZX00383000_A_01/1">Link</a></li>
+<li><a id="p4-ref-46"></a>PMDA. Package insert, Amplatzer Amulet (in Japanese). October 2024. <a href="https://www.pmda.go.jp/PmdaSearch/kikiDetail/ResultDataSetPDF/381005_30600BZX00213000_A_01_02">Link</a></li>
+<li><a id="p4-ref-47"></a>Holmes DR, Korsholm K, Rodés-Cabau J, et al. Left atrial appendage occlusion. EuroIntervention. 2023;18(13):e1038-e1065. <a href="https://doi.org/10.4244/EIJ-D-22-00627">doi:10.4244/EIJ-D-22-00627</a></li>
+<li><a id="p4-ref-48"></a>Boston Scientific. WATCHMAN FLX in-service training deck (SH-622904-AA). 2019 (third-party copy). <a href="https://wcci.casusbtl.pl/resources/data/forms/stoiska_zwykle/2456/sh613902aa_watchman_flx_inservice_deck_final.pdf">Link</a> <em>Cited at pp. 8, 16.</em></li>
+<li><a id="p4-ref-49"></a>Kangas SL, et al. (Boston Scientific Scimed). US Patent 11,484,320. 2022. <a href="https://patents.google.com/patent/US11484320B2/en">Link</a></li>
+<li><a id="p4-ref-50"></a>Boston Scientific. Form 10-Q for the quarter ended 31 March 2016. 4 May 2016. <a href="https://www.sec.gov/Archives/edgar/data/885725/000088572516000035/q12016form10-q.htm">Link</a></li>
+<li><a id="p4-ref-51"></a>Berti F, Brambilla A, Pennati G, et al. Relevant Choices Affecting the Fatigue Analysis of Ni-Ti Endovascular Devices. Materials. 2023;16(8):3178. <a href="https://doi.org/10.3390/ma16083178">doi:10.3390/ma16083178</a></li>
+<li><a id="p4-ref-52"></a>FDA. Select updates for non-clinical engineering tests and recommended labeling for intravascular stents and associated delivery systems: guidance. 18 August 2015. <a href="https://www.fda.gov/media/93134/download">Link</a></li>
+<li><a id="p4-ref-53"></a>FDA. Vascular access systems correction: Boston Scientific updates use instructions for WATCHMAN access systems. Early alert, 6 August 2025. <a href="https://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/vascular-access-systems-correction-boston-scientific-updates-use-instructions-watchman-access">Link</a></li>
+<li><a id="p4-ref-54"></a>Trinh N, Do K. PO-01-108 A CASE OF WATCHMAN DEVICE STRUT FRACTURE, A RARE COMPLICATION OF POST DEVICE IMPLANTATION. Heart Rhythm. 2025;22(4):S172-S173. <a href="https://doi.org/10.1016/j.hrthm.2025.03.367">doi:10.1016/j.hrthm.2025.03.367</a></li>
+<li><a id="p4-ref-55"></a>Garapati SS, Bhugra P, Amin M, et al. PO-01-053 WATCH THE STRUT: A RARE CASE OF LATE INTRADEVICE LEAK DUE TO A LEFT ATRIAL APPENDAGE OCCLUSION DEVICE’S LARGE STRUT FRACTURE. Heart Rhythm. 2025;22(4):S146-S147. <a href="https://doi.org/10.1016/j.hrthm.2025.03.313">doi:10.1016/j.hrthm.2025.03.313</a></li>
+<li><a id="p4-ref-56"></a>Nadeem I, Nadeem M, Zafar MM, et al. 26-CCC-12314-ACC WATCH YOUR STRUT: A RARE CASE OF DEVICE FRACTURE AND LEAK. JACC. 2026;87(13):A1673. <a href="https://doi.org/10.1016/j.jacc.2026.02.4184">doi:10.1016/j.jacc.2026.02.4184</a></li>
+<li><a id="p4-ref-57"></a>Boston Scientific. FDA adverse-event report (MDR) 2134265-2019-03488: WATCHMAN 27 mm, embolization and death; returned implant, fractured frame node. 2019. <a href="https://api.fda.gov/device/event.json?search=report_number:%222134265-2019-03488%22">Link</a></li>
+<li><a id="p4-ref-58"></a>Abbott. FDA adverse-event report (MDR) 2135147-2024-04701: Amplatzer Amulet 28 mm, embolization and death; returned device, fractured nitinol wire. 2024. <a href="https://api.fda.gov/device/event.json?search=report_number:%222135147-2024-04701%22">Link</a></li>
+<li><a id="p4-ref-59"></a>FDA. openFDA device adverse-event database, WATCHMAN and AMULET brand queries (accessed 1 October 2026). <a href="https://api.fda.gov/device/event.json?search=device.brand_name:WATCHMAN&amp;limit=1">Link</a></li>
+<li><a id="p4-ref-60"></a>Boston Scientific. WATCHMAN FLX Pro with HEMOCOAT technology: healthcare-professional page for Europe (accessed 1 October 2026). <a href="https://www.bostonscientific.com/en-EU/medical-specialties/structural-heart/fxd-curve/watchman-flx-pro.html">Link</a></li>
+<li><a id="p4-ref-61"></a>Nielsen-Kudsk JE, Kramer A, Andersen A, et al. First-in-human left atrial appendage closure using the WATCHMAN FLX Pro device: a case report. European Heart Journal - Case Reports. 2024;8(4):ytae135. <a href="https://doi.org/10.1093/ehjcr/ytae135">doi:10.1093/ehjcr/ytae135</a></li>
+<li><a id="p4-ref-62"></a>Nakatsuji K, Nakajima K, Wakamiya A, et al. Early device-related thrombosis after WATCHMAN FLX Pro implantation requiring surgical excision in essential thrombocythemia. Journal of Cardiology Cases. 2026;34(2):71-75. <a href="https://doi.org/10.1016/j.jccase.2026.05.007">doi:10.1016/j.jccase.2026.05.007</a></li>
+</ol>
+</main></body></html>

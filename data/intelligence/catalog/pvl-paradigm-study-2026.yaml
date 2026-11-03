@@ -1,0 +1,98 @@
+observedAt: '2026-11-02'
+sources:
+  - id: src-wor85-paradigm
+    title: >-
+      Thirty-Day Outcomes of a Dedicated Transcatheter Occlusion Device for Paravalvular Leak Closure: The
+      PARADIGM Study
+    url: https://www.jacc.org/doi/10.1016/j.jcin.2026.10.024
+    kind: publication
+    publisher: 'JACC: Cardiovascular Interventions / original study'
+    publishedAt:
+      value: '2026-10-31'
+      precision: day
+    retrievedAt: '2026-11-02'
+    access: public
+bibliography:
+  - id: bib-wor85-pvl-paradigm-study-2026-1
+    entityIds:
+      - dev-amplatzer-pvl-plug-iii
+    versionIds:
+      - ver-apvl3-paradigm-study
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: >-
+          Pre-proof PDF pp9–12 Methods/Study Device/Endpoints; pp14–17 Results; Table 3 p28, Table 4 pp29–30;
+          pp20–21 Limitations. JACC header/History: online31 October2026.
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor85-pvl-paradigm-study-2026-1
+    versionId: ver-apvl3-paradigm-study
+    category: evidence
+    key: wor85-pvl-paradigm-study-2026-1
+    label: PARADIGM primary composite
+    value: 188/200 (94.0%); one-sided 96% lower confidence bound 90.2%, versus 65% performance goal (P<.0001).
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Prospective APVL3 study:200 implant attempts,24 centers; acute placement/PVL reduction/no procedural
+      death plus no device-related reintervention through 30 days.
+    limitation: >-
+      Single-arm selected anatomy; not 30-day complication-free success. No revision/Paraclose identity
+      bridge.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: Article PDF pp10–12 Endpoints/Statistics; Table 3 PDFp28.
+    reviewStatus: reviewed
+  - id: claim-wor85-pvl-paradigm-study-2026-2
+    versionId: ver-apvl3-paradigm-study
+    category: evidence
+    key: wor85-pvl-paradigm-study-2026-2
+    label: Separate 30-day procedural success and safety
+    value: >-
+      Procedural success 140/181 (77.3%); mortality 4/200 (2.0%,95% CI0.55–5.04); major bleeding 13/200
+      (6.5%).
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Procedural success adds absence of device/procedure-related serious adverse events;19 nonevaluable
+      excluded from its denominator.
+    limitation: >-
+      Endpoints have different denominators; missing imaging and short follow-up. No comparison to other
+      plugs.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: PDFpp11,16–17; Table 4 PDFpp29–30.
+    reviewStatus: reviewed
+  - id: claim-wor85-pvl-paradigm-study-2026-3
+    versionId: ver-apvl3-paradigm-study
+    category: design
+    key: wor85-pvl-paradigm-study-2026-3
+    label: APVL3 study design and materials
+    value: >-
+      Elliptical braided-nitinol lobe/extended rim/proximal disc; platinum orientation marker; nine listed
+      size pairs from 4×2 to 14×5 mm.
+    availability: reported
+    basis: directly_reported
+    context: Original Study Device description of the APVL3 configuration studied in PARADIGM.
+    limitation: No numbered revision, membrane/filler, sheath profile or marketed Paraclose equivalence established.
+    observedAt: '2026-11-02'
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: Article PDFp10 Study Device.
+    reviewStatus: reviewed
+versions:
+  - id: ver-apvl3-paradigm-study
+    familyId: family-avp3-pvl
+    graphEntityId: dev-amplatzer-pvl-plug-iii
+    name: APVL3 — PARADIGM study configuration
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Configuration described in the PARADIGM paper; no numbered revision or equivalence to historical
+      Vascular Plug III/Paraclose established.
+    sourceRefs:
+      - sourceId: src-wor85-paradigm
+        locator: Article PDFp10 Study Device; pp9–12 study identity and endpoints.
+    reviewStatus: reviewed
