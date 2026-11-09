@@ -1,0 +1,49 @@
+# atriclip-flex-mini-30mm-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-08"
+sources:
+  - id: src-wor92-fda-k263319
+    title: "FDA 510(k) K263319: ACHM30 AtriClip FLEX-Mini LAA Exclusion System"
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf26/K263319.pdf
+    kind: regulatory
+    publisher: U.S. Food and Drug Administration
+    publishedAt:
+      value: "2026-10-21"
+      precision: day
+    retrievedAt: "2026-11-08"
+    access: public
+bibliography:
+  - id: bib-wor92-k263319
+    entityIds:
+      - dev-atriclip
+    versionIds:
+      - ver-atriclip
+    sourceRefs:
+      - sourceId: src-wor92-fda-k263319
+        locator: >-
+          510(k) summary Device Description (clip lengths) and Comparison of Technological Characteristics; decision
+          letter dated October 21, 2026.
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor92-atriclip-30mm-1
+    versionId: ver-atriclip
+    category: evidence
+    key: wor92-atriclip-30mm-1
+    label: FLEX-Mini 30 mm clip size (US)
+    value: >-
+      K263319 (2026-10-21) adds a 30 mm AtriClip Mini (AOD3) clip in the FLEX-Mini ACHM30 system for smaller appendages;
+      previously available AOD3 lengths were 35, 40, 45 and 50 mm.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      US 510(k) for the FLEX-Mini ACHM30 configuration; indication: LAA exclusion under direct visualization with other
+      cardiac surgery.
+    limitation: >-
+      Configuration-specific clearance by substantial equivalence to K234125; no clinical outcome data; not a
+      stroke-prevention indication.
+    observedAt: "2026-11-08"
+    sourceRefs:
+      - sourceId: src-wor92-fda-k263319
+        locator: >-
+          510(k) summary Device Description (clip lengths) and Comparison of Technological Characteristics; decision
+          letter dated October 21, 2026.
+    reviewStatus: reviewed

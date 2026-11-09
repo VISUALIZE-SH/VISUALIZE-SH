@@ -481,7 +481,7 @@
   enrollment: 632
   year: 2023
   primaryEndpoint: "Hierarchical composite of death and cardiovascular hospitalization"
-  outcomeSummary: "Acoramidis improved the hierarchical composite endpoint, supporting FDA approval."
+  outcomeSummary: "Acoramidis improved the hierarchical composite endpoint, supporting FDA approval. A post hoc analysis (AHA 2026 abstract, BridgeBio-affiliated authors) reported fewer heart-failure-specific events through 30 months (48.8% vs 67.3%; HR 0.55, 95% CI 0.44-0.69; mITT 409 vs 202)."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=ATTRibute-CM"]
   curation:
@@ -494,7 +494,7 @@
   name: "HELIOS-B"
   nctId: NCT04153149
   phase: "Phase 3 RCT"
-  status: completed
+  status: active
   timeline:
     date: "2019-11-26"
     precision: day
@@ -506,7 +506,7 @@
   enrollment: 655
   year: 2024
   primaryEndpoint: "All-cause mortality and recurrent cardiovascular events"
-  outcomeSummary: "Vutrisiran reduced mortality and cardiovascular events in ATTR-CM."
+  outcomeSummary: "Vutrisiran reduced mortality and cardiovascular events in ATTR-CM. In the open-label extension through month 48 (466 of 654 entered), continuous vutrisiran vs placebo-to-vutrisiran: first CV event or death HR 0.63 (95% CI 0.51-0.79) and all-cause mortality HR 0.63 (0.46-0.84); non-randomized after unblinding."
   resultStatus: positive
   references: ["https://clinicaltrials.gov/search?term=HELIOS-B"]
   curation:
@@ -1164,7 +1164,7 @@
   name: "Evolut Low Risk"
   nctId: NCT02701283
   phase: "Pivotal RCT"
-  status: completed
+  status: active
   timeline:
     date: "2016-03-01"
     precision: month
@@ -1625,7 +1625,7 @@
   name: TRIUMPH (Laplace TTVR)
   nctId: NCT07687485
   phase: Pivotal randomized controlled trial with a separate single-arm cohort
-  status: unknown
+  status: recruiting
   conditions: [cond-tr]
   therapies: [dev-laplace-ttvr, dev-evoque]
   primaryEndpoint: >-
@@ -1639,6 +1639,12 @@
     - https://clinicaltrials.gov/study/NCT07687485
     - https://www.prnewswire.com/news-releases/laplace-announces-fda-ide-approval-of-triumph-pivotal-trial-of-its-transcatheter-tricuspid-valve-replacement-system-302813749.html
   pulse: 6
+  timeline:
+    date: "2026-09-04"
+    precision: day
+    dateBasis: trial-start
+    event: Trial start
+    source: https://clinicaltrials.gov/study/NCT07687485
   curation:
     status: curated
     lastUpdated: "2026-10-09"
@@ -4091,7 +4097,7 @@
     - cond-cmd
   therapies:
     - dig-angioinsight-angioai-cmd
-  status: not-yet-recruiting
+  status: recruiting
   resultStatus: ongoing
   references:
     - https://clinicaltrials.gov/study/NCT07676097
@@ -5421,3 +5427,206 @@
       LVEF ≥30%, and intermediate/high surgical risk; excludes exclusively secondary MR. Registry writes MR >3+;
       preserve that threshold as stated.
   resultStatus: ongoing
+
+- id: trial-capstan-tmvr-efs
+  type: trial
+  name: Early Feasibility Study of the Capstan Medical TMVR System (NCT07917208)
+  nctId: NCT07917208
+  phase: Early feasibility study
+  status: not-yet-recruiting
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-capstan-compass-tmvr
+  enrollmentCounts:
+    - count: 15
+      basis: estimated
+      asOf: "2026-11-04"
+      scope: Registry estimate; no participant enrolled is established.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07917208
+  primaryEndpoint: >-
+    Primary safety: serious adverse events associated with delivery and/or implantation at 30 days. Primary performance:
+    successful delivery, deployment and retrieval of the delivery catheter and deployment of the implant at the intended
+    location (end of procedure), plus freedom from emergency surgery, device/procedure-related mortality and
+    reintervention (30 days).
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT07917208
+  curation:
+    status: curated
+    lastUpdated: "2026-11-09"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07917208
+    notes: >-
+      Registry record revision 2026-11-04, retrieved 2026-11-08. Registration only; start and completion dates are
+      estimates; no results.
+- id: trial-duotap
+  type: trial
+  name: DUOTAP — routine post-dilation in balloon-expandable TAVI (NCT07477002)
+  nctId: NCT07477002
+  phase: Randomized trial
+  status: active
+  primaryAnalysis:
+    status: reported
+    date: "2026-11-03"
+    precision: day
+    source: https://doi.org/10.1001/jamacardio.2026.5260
+  conditions:
+    - cond-as
+  therapies:
+    - proc-tavi
+  enrollmentCounts:
+    - count: 146
+      basis: estimated
+      asOf: "2026-07-10"
+      scope: Registry enrollment estimate as of its stated revision.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07477002
+    - count: 148
+      basis: randomized
+      asOf: "2026-11-03"
+      scope: Randomized per the published abstract (74 vs 74), single center.
+      source: https://pubmed.ncbi.nlm.nih.gov/42976368/
+  year: 2026
+  primaryEndpoint: Fluoroscopic transcatheter heart valve asymmetry index (periprocedural).
+  outcomeSummary: >-
+    Abstract: single-center (Medical University of Vienna), single-blinded; 148 randomized to routine post-dilation vs
+    sham. Median THV asymmetry index 1.2% vs 2.8% (geometric mean ratio 0.30, 95% CI 0.18-0.47); HALT and mild or worse
+    paravalvular leak less frequent with post-dilation; no difference in procedure-related adverse events. Valve
+    platform not named in the abstract; geometry endpoint, not a clinical outcome.
+  resultStatus: positive
+  references:
+    - https://doi.org/10.1001/jamacardio.2026.5260
+    - PMID:42976368
+    - https://clinicaltrials.gov/api/v2/studies/NCT07477002
+  curation:
+    status: curated
+    lastUpdated: "2026-11-09"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07477002
+      - PMID:42976368
+    notes: >-
+      Registry revision 2026-07-10 and PubMed abstract (2026-11-03), retrieved 2026-11-08. Registry enrollment estimate
+      (146) and masking (double) differ from the abstract (148 randomized; single-blinded); both stated.
+- id: trial-season-ar
+  type: trial
+  name: SEASON-AR — TAVR with VitaFlow vs GDMT in pure aortic regurgitation (NCT04864145)
+  nctId: NCT04864145
+  phase: Randomized trial
+  status: recruiting
+  primaryAnalysis:
+    status: reported
+    date: "2026-10-31"
+    precision: day
+    source: https://doi.org/10.1161/CIRCULATIONAHA.126.082827
+  conditions:
+    - cond-ar
+  therapies:
+    - proc-tavi
+  enrollmentCounts:
+    - count: 210
+      basis: estimated
+      asOf: "2026-04-08"
+      scope: Registry enrollment estimate as of its stated revision.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT04864145
+    - count: 210
+      basis: randomized
+      asOf: "2026-10-31"
+      scope: Patients assigned across 18 centers per the published abstract (TAVR 109, GDMT 101).
+      source: https://pubmed.ncbi.nlm.nih.gov/42965504/
+  year: 2026
+  primaryEndpoint: Composite of all-cause death, disabling stroke or heart failure rehospitalization at 12 months (registry-stated).
+  outcomeSummary: >-
+    Abstract: open-label, investigator-initiated, 18 centers in China; transfemoral TAVR (VitaFlow) plus GDMT n=109 vs
+    GDMT alone n=101 in severe pure aortic regurgitation. One-year Kaplan-Meier primary composite 8.3% vs 24.8% (HR
+    0.31, 95% CI 0.14-0.66), driven by heart failure rehospitalization (3.7% vs 21.3%); major or life-threatening
+    bleeding and new pacemaker implantation were higher with TAVR, mostly within 30 days. Single platform, China only;
+    full-text limitations not reviewed here.
+  resultStatus: positive
+  references:
+    - https://doi.org/10.1161/CIRCULATIONAHA.126.082827
+    - PMID:42965504
+    - https://clinicaltrials.gov/api/v2/studies/NCT04864145
+  curation:
+    status: curated
+    lastUpdated: "2026-11-09"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT04864145
+      - PMID:42965504
+    notes: >-
+      Registry revision 2026-04-08 and PubMed abstract (published 2026-10-31), retrieved 2026-11-08. Study device is
+      VitaFlow (MicroPort); no public node, so only the TAVI procedure node is linked and no device result is attributed
+      to a device record. Registry status (recruiting) is stated as the registry gives it.
+- id: trial-single-closure
+  type: trial
+  name: SINGLE-CLOSURE — single vs double ProGlide after transfemoral TAVR (NCT06173115)
+  nctId: NCT06173115
+  phase: Randomized trial
+  status: completed
+  primaryAnalysis:
+    status: reported
+    date: "2026-11-03"
+    precision: day
+    source: https://doi.org/10.1016/j.jacc.2026.10.055
+  conditions:
+    - cond-as
+  therapies:
+    - proc-tavi
+  enrollmentCounts:
+    - count: 876
+      basis: actual
+      asOf: "2026-10-02"
+      scope: Registry actual enrollment as of its stated revision; the abstract reports 876 randomized.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06173115
+  year: 2026
+  primaryEndpoint: In-hospital composite of VARC-3-defined access-site or access-related major and minor vascular complications.
+  outcomeSummary: >-
+    Abstract: 25 centers in China, patients aged 65 or older, 1:1 single vs double ProGlide for the main access site.
+    Modified ITT primary endpoint 13.1% (57/436) vs 15.1% (65/430); noninferiority met (risk difference -2.2%, margin
+    3.19%). Access-related major complications 0.5% vs 1.4%; access-site stenosis 5.0% vs 7.9%; additional closure
+    devices 2.5% vs 0.9%. Events were mostly minor; abstract-level only.
+  resultStatus: positive
+  references:
+    - https://doi.org/10.1016/j.jacc.2026.10.055
+    - PMID:42980634
+    - https://clinicaltrials.gov/api/v2/studies/NCT06173115
+  curation:
+    status: curated
+    lastUpdated: "2026-11-09"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06173115
+      - PMID:42980634
+    notes: >-
+      Registry revision 2026-10-02 and PubMed abstract (2026-11-03), retrieved 2026-11-08. Paper-to-registry identity is
+      by matching fields; the abstract prints no NCT. The Abbott closure device has no public node; linked to the TAVI
+      procedure node only.
+- id: trial-tri-success
+  type: trial
+  name: TRI-SUCCESS — Unica cross-caval system vs optimal medical therapy (NCT07919366)
+  nctId: NCT07919366
+  phase: Pivotal RCT
+  status: not-yet-recruiting
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-innoventric-unica
+  enrollmentCounts:
+    - count: 510
+      basis: estimated
+      asOf: "2026-11-05"
+      scope: Registry maximum enrollment estimate; no participant enrolled is established.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07919366
+  primaryEndpoint: >-
+    Device-arm major adverse events at 30 days; at least one-grade reduction in caval reflux at 6 months; win-ratio
+    hierarchical composites at 6 months (KCCQ, NYHA, 6MWD) and 1 year (clinical events plus symptom and functional
+    measures).
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT07919366
+  curation:
+    status: curated
+    lastUpdated: "2026-11-09"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07919366
+    notes: >-
+      Registry record revision 2026-11-05, retrieved 2026-11-08. Registration only; estimated start 2027-01 and
+      completion dates are estimates; no results.

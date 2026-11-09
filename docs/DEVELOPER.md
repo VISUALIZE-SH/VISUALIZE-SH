@@ -161,15 +161,26 @@ data/        YAML source of truth (graph entities, news, evidence catalog)
 schema/      JSON Schemas and DATA_DICTIONARY.md
 scripts/     builds, validators, audits, newsletter, News Insights, Zoho tools
 public/      graph.json, intelligence.json, digests and published pages (generated)
+public/scenes/ device-class illustrations: per-class manifest.json and WebP stills (published assets)
 prompts/     News Insights drafting template
 docs/        handoff, architecture, curation policy, operations, plans
 DESIGN.md    design system
 src/
   graph/       Cytoscape setup, styles, layouts, palette, force helpers
   components/  workspaces, graph canvas, header, filters, detail panel, about
+  components/scenes/  device-class illustration viewer, opened from Data class headings
   data/        payload loading, comparison projection, URL workspace state
   types/       graph, intelligence and comparative data contracts
 ```
+
+Device-class illustrations are still images of a generic device class in representative
+anatomy, opened with **Visualize device class** on a Data class heading or with
+`?visualize=<class-id>`. `src/components/scenes/scene-index.json` lists the classes; each
+class manifest and its stills load from `public/scenes/` only when the viewer opens. The
+whole-heart context is adapted from the Toronto Heart Atlas (CC BY 4.0); each manifest
+carries the attribution and sources shown in the viewer's notes. The stills are published
+assets: source meshes and rendering tooling are not part of this repository.
+`scripts/scene-viewer.test.ts` checks every class, still, marker and attribution.
 
 ## 8. Configuration and deployment
 

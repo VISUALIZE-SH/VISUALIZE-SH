@@ -1,0 +1,56 @@
+# attribute-cm-hf-events-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-08"
+sources:
+  - id: src-wor92-attribute-hf-events
+    title: >-
+      Abstract 8684: Effects of Acoramidis on Heart Failure Events in Transthyretin Amyloid Cardiomyopathy: Results from
+      ATTRibute-CM
+    url: https://doi.org/10.1161/circ.154.suppl_1.8684
+    kind: publication
+    publisher: Circulation (AHA Scientific Sessions 2026 abstract supplement)
+    publishedAt:
+      value: "2026-11-02"
+      precision: day
+    retrievedAt: "2026-11-08"
+    access: public
+bibliography:
+  - id: bib-wor92-attribute-cm-hf-events-2026
+    entityIds:
+      - rx-acoramidis
+    versionIds:
+      - ver-attruby
+    sourceRefs:
+      - sourceId: src-wor92-attribute-hf-events
+        locator: Abstract 8684 Results (Crossref record, issued 2026-11-02).
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor92-attribute-cm-hf-events-2026-1
+    versionId: ver-attruby
+    category: evidence
+    key: wor92-attribute-cm-hf-events-2026-1
+    label: Heart-failure-specific events through 30 months
+    value: HF-specific events 48.8% acoramidis (n=409) vs 67.3% placebo (n=202); HR 0.55 (95% CI 0.44–0.69).
+    availability: reported
+    basis: directly_reported
+    context: ATTRibute-CM modified intention-to-treat, post hoc analysis presented as an AHA 2026 abstract.
+    limitation: Post hoc, BridgeBio-affiliated authors; congress abstract, not peer-reviewed full paper.
+    observedAt: "2026-11-08"
+    sourceRefs:
+      - sourceId: src-wor92-attribute-hf-events
+        locator: Abstract 8684 Results (Crossref record, issued 2026-11-02).
+    reviewStatus: reviewed
+  - id: claim-wor92-attribute-cm-hf-events-2026-2
+    versionId: ver-attruby
+    category: evidence
+    key: wor92-attribute-cm-hf-events-2026-2
+    label: Open-label extension HF mortality
+    value: Through 54 months, continuous acoramidis vs placebo-to-acoramidis HF mortality HR 0.42 (95% CI 0.27–0.65).
+    availability: reported
+    basis: directly_reported
+    context: ATTRibute-CM open-label extension, delayed-start comparison.
+    limitation: No concurrent control in the extension; exploratory.
+    observedAt: "2026-11-08"
+    sourceRefs:
+      - sourceId: src-wor92-attribute-hf-events
+        locator: Abstract 8684 Results.
+    reviewStatus: reviewed

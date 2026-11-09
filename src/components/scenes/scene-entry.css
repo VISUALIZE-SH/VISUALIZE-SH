@@ -1,0 +1,10 @@
+/* Data-page entry to the device-class illustrations. App tokens only (see DESIGN.md). */
+.scene-class-heading { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; padding-bottom: 12px; }
+.scene-class-heading h3 { margin: 0; }
+.scene-class-link { display: inline-flex; gap: 8px; align-items: center; padding: 6px 12px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); color: var(--link); text-decoration: none; font-size: var(--fs-12); font-weight: 600; transition: border-color .15s, color .15s; }
+.scene-class-link:hover { border-color: var(--border-strong); color: var(--link-hover); }
+.scene-class-link:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+.scene-class-link svg { width: 16px; height: 16px; }
+.scene-class-link small { display: inline-flex; align-items: center; padding: 0 6px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface-2); color: var(--text-3); font-size: var(--fs-11); font-weight: 400; }
+@media (max-width: 600px) { .scene-class-link { width: 100%; justify-content: center; } }
+@media (prefers-reduced-motion: reduce) { .scene-class-link { transition: none; } }

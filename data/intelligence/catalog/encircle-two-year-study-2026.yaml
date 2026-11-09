@@ -1,0 +1,75 @@
+# encircle-two-year-study-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-08"
+sources:
+  - id: src-wor92-encircle-2y
+    title: >-
+      Percutaneous Transcatheter Mitral Valve Replacement for Symptomatic Mitral Regurgitation: 2-Year Outcomes From the
+      ENCIRCLE Trial
+    url: https://www.sciencedirect.com/science/article/pii/S0735109726101703
+    kind: publication
+    publisher: Journal of the American College of Cardiology
+    publishedAt:
+      value: "2026-11-03"
+      precision: day
+    retrievedAt: "2026-11-08"
+    access: licensed
+bibliography:
+  - id: bib-wor92-encircle-two-year-study-2026
+    entityIds:
+      - dev-sapien-m3
+    versionIds:
+      - ver-sapien-m3
+    sourceRefs:
+      - sourceId: src-wor92-encircle-2y
+        locator: Abstract Results; Study limitations.
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor92-encircle-two-year-study-2026-1
+    versionId: ver-sapien-m3
+    category: evidence
+    key: wor92-encircle-two-year-study-2026-1
+    label: Main cohort and 2-year follow-up
+    value: 299 treated; 2-year follow-up data in 202 of 210 eligible patients (96.2%); mean STS-PROM for MVR 6.6%.
+    availability: reported
+    basis: directly_reported
+    context: "ENCIRCLE main cohort: symptomatic ≥3+ MR, unsuitable for surgery or TEER; transseptal SAPIEN M3."
+    limitation: Single-arm; 72% screen failure, mostly anatomical; not generalizable beyond selected anatomy.
+    observedAt: "2026-11-08"
+    sourceRefs:
+      - sourceId: src-wor92-encircle-2y
+        locator: Abstract Results; Study limitations.
+    reviewStatus: reviewed
+  - id: claim-wor92-encircle-two-year-study-2026-2
+    versionId: ver-sapien-m3
+    category: evidence
+    key: wor92-encircle-two-year-study-2026-2
+    label: 2-year MR and clinical outcomes
+    value: >-
+      MR ≤1+ 97.0%; all-cause death or HF hospitalization 35.6% (death 25.1%, HFH 23.0%); 1–2-year landmark death 13.0%,
+      first HFH 10.6%.
+    availability: reported
+    basis: directly_reported
+    context: Echo core laboratory and clinical events committee; Kaplan–Meier estimates.
+    limitation: Echo among survivors with data; KM may overestimate nonfatal events with competing mortality.
+    observedAt: "2026-11-08"
+    sourceRefs:
+      - sourceId: src-wor92-encircle-2y
+        locator: Abstract Results.
+    reviewStatus: reviewed
+  - id: claim-wor92-encircle-two-year-study-2026-3
+    versionId: ver-sapien-m3
+    category: evidence
+    key: wor92-encircle-two-year-study-2026-3
+    label: 2-year device-related events
+    value: >-
+      Disabling stroke 6.6%; clinically significant valve thrombosis 7.1%; hemolysis requiring intervention 7.6%; no
+      clinically significant LVOT obstruction.
+    availability: reported
+    basis: directly_reported
+    context: ENCIRCLE main cohort through 2 years.
+    limitation: Antithrombotic regimen detail not fully captured (authors).
+    observedAt: "2026-11-08"
+    sourceRefs:
+      - sourceId: src-wor92-encircle-2y
+        locator: Abstract Results; Study limitations.
+    reviewStatus: reviewed

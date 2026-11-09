@@ -1,0 +1,43 @@
+# navitor-sterilization-change-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-08"
+sources:
+  - id: src-wor92-fda-p190023-s033
+    title: "FDA PMA database: Navitor P190023 S033"
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P190023S033
+    kind: regulatory
+    publisher: U.S. Food and Drug Administration
+    publishedAt:
+      value: "2026-10-29"
+      precision: day
+    retrievedAt: "2026-11-08"
+    access: public
+bibliography:
+  - id: bib-wor92-navitor-s033
+    entityIds:
+      - dev-navitor
+    versionIds:
+      - ver-navitor
+    sourceRefs:
+      - sourceId: src-wor92-fda-p190023-s033
+        locator: "PMA P190023 S033: Decision Date 10/29/2026; Supplement Type; Approval Order Statement."
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor92-navitor-s033-1
+    versionId: ver-navitor
+    category: evidence
+    key: wor92-navitor-s033-1
+    label: Sterilization process change (US)
+    value: >-
+      FDA approved PMA supplement S033 (decided 2026-10-29) for a modification of the Navitor sterilization process to
+      terminal liquid sterilization with glutaraldehyde.
+    availability: reported
+    basis: directly_reported
+    context: US PMA supplement, normal 180-day track; listed supplement reason is a labeling change.
+    limitation: >-
+      Approval order statement only; affected sizes, lots and effective date not stated; no clinical implication
+      inferred.
+    observedAt: "2026-11-08"
+    sourceRefs:
+      - sourceId: src-wor92-fda-p190023-s033
+        locator: "PMA P190023 S033: Decision Date 10/29/2026; Supplement Type; Approval Order Statement."
+    reviewStatus: reviewed
