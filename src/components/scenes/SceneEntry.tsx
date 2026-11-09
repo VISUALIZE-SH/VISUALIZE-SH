@@ -89,7 +89,12 @@ export function VisualizationProvider({ children }: { children: ReactNode }) {
     let current = true
     loadManifest(open).then(value => { if (current) setManifest(value) }).catch(error => {
       console.error(error)
-      if (current) { openRef.current = null; setOpen(null) }
+      if (!current) return
+      const url = new URL(window.location.href)
+      url.searchParams.delete('visualize')
+      window.history.replaceState(window.history.state, '', url)
+      openRef.current = null
+      setOpen(null)
     })
     return () => { current = false }
   }, [open])
