@@ -1345,10 +1345,7 @@
   name: Aventusoft
   hq: Boca Raton, FL, USA
   website: https://aventusoft.com/
-  description: >-
-    Develops HEMOTAG, a non-invasive home monitoring suite for heart failure that its NIH award abstract describes as a
-    home device, a mobile app and analysis software. A randomized HEMOTAG study (HATS-OFF) is registered on
-    ClinicalTrials.gov.
+  description: Develops HEMOTAG, a non-invasive home monitoring suite for heart failure that its NIH award abstract describes as a home device, a mobile app and analysis software. A randomized HEMOTAG study (HATS-OFF) is registered on ClinicalTrials.gov. FDA cleared the HEMOTAG Device with HEMOTAG Analysis Software (K252736, decision 2026-10-21) as a Class II electronic stethoscope that calculates cardiac timing intervals to support heart-sound evaluation; the cleared indication does not include heart-failure monitoring.
   curation:
     status: draft
     lastUpdated: "2026-10-21"
@@ -2238,3 +2235,38 @@
       GECT-DZHK28, NCT05809856: sponsor/collaborator and intervention sections identify GrOwnValve GmbH as collaborator
       and Charité as lead sponsor. Registry last updated 2025-09-29; accessed 2026-10-26. No commercial authorization or
       other valve-position programme is established by this record.
+
+- id: co-capstan-medical
+  type: company
+  name: Capstan Medical
+  website: https://capstanmedical.com/
+  description: >-
+    Capstan Medical describes a platform that combines surgical robotics, catheter-based delivery and next-generation
+    implants for heart valve repair and replacement; its registered US early feasibility study evaluates a robotic
+    transcatheter mitral valve replacement system.
+  curation:
+    status: curated
+    lastUpdated: "2026-11-09"
+    sources:
+      - https://capstanmedical.com/
+      - https://capstanmedical.com/our-solution/
+      - https://clinicaltrials.gov/api/v2/studies/NCT07917208
+    notes: >-
+      Sponsor self-description plus registry sponsor field, retrieved 2026-11-08. Headquarters and regulatory status not
+      established. No funding information recorded.
+- id: co-innoventric
+  type: company
+  name: Innoventric
+  website: https://innoventric.com/
+  description: >-
+    Innoventric describes a transcatheter cross-caval approach to treating tricuspid regurgitation; it is the registered
+    sponsor of the TRI-SUCCESS pivotal study of its Unica system.
+  curation:
+    status: curated
+    lastUpdated: "2026-11-09"
+    sources:
+      - https://innoventric.com/
+      - https://clinicaltrials.gov/api/v2/studies/NCT07919366
+    notes: >-
+      Sponsor self-description plus registry sponsor field, retrieved 2026-11-08. Headquarters and authorization status
+      not established.

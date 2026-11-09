@@ -7,6 +7,7 @@ import EvidenceReferences from './EvidenceReferences'
 import { MediaSourceLinks } from './EvidenceMediaGallery'
 import { deviceIllustrationFor, type DeviceIllustration } from '../../data/device-illustrations'
 import ProductThumbnail from './ProductThumbnail'
+import { ClassVisualizationLink } from '../scenes/SceneEntry'
 
 /** One width scale for every Data table so columns line up down the page. */
 export const WIDTH = { product: 232, narrow: 104, cell: 152, wide: 304, sources: 168 } as const
@@ -75,7 +76,7 @@ export function GroupedTable<Row>({ id, label, rows, columns, rowKey, product, s
   }, [])
   const width = WIDTH.product + WIDTH.sources + columns.reduce((sum, column) => sum + column.width, 0)
   return <section className="intel-spec-group" id={`data-${id}`} aria-labelledby={`data-title-${id}`}>
-    <h3 id={`data-title-${id}`}>{label} <span>{rows.length}</span></h3>
+    <div className="scene-class-heading"><h3 id={`data-title-${id}`}>{label} <span>{rows.length}</span></h3><ClassVisualizationLink classId={id} title={label} /></div>
     <div className="intel-spec-scroll" role="region" aria-label={label} tabIndex={0}>
       <table className="intel-spec-table" style={{ width }}>
         <colgroup><col style={{ width: WIDTH.product }} />{columns.map(column => <col key={column.id} style={{ width: column.width }} />)}<col style={{ width: WIDTH.sources }} /></colgroup>

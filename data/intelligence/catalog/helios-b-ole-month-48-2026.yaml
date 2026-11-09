@@ -1,0 +1,60 @@
+# helios-b-ole-month-48-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-08"
+sources:
+  - id: src-wor92-helios-b-ole
+    title: >-
+      Long-Term Impact of Vutrisiran in Patients With TTR Amyloidosis With Cardiomyopathy: 1-Year Efficacy and Safety
+      Outcomes From the HELIOS-B Open-Label Extension
+    url: https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.126.080735
+    kind: publication
+    publisher: Circulation
+    publishedAt:
+      value: "2026-11-03"
+      precision: day
+    retrievedAt: "2026-11-08"
+    access: public
+bibliography:
+  - id: bib-wor92-helios-b-ole-month-48-2026
+    entityIds:
+      - rx-vutrisiran
+    versionIds:
+      - ver-amvuttra
+    sourceRefs:
+      - sourceId: src-wor92-helios-b-ole
+        locator: Abstract Results; Limitations.
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor92-helios-b-ole-month-48-2026-1
+    versionId: ver-amvuttra
+    category: evidence
+    key: wor92-helios-b-ole-month-48-2026-1
+    label: Extension population
+    value: >-
+      654 randomized (326 vutrisiran, 328 placebo); 466 entered the open-label extension (243 continuous vutrisiran, 223
+      placebo-to-vutrisiran).
+    availability: reported
+    basis: directly_reported
+    context: HELIOS-B ATTR-CM; vutrisiran 25 mg every 3 months in the extension.
+    limitation: Survivors entering the extension; possible survivorship bias.
+    observedAt: "2026-11-08"
+    sourceRefs:
+      - sourceId: src-wor92-helios-b-ole
+        locator: Abstract Results; Limitations.
+    reviewStatus: reviewed
+  - id: claim-wor92-helios-b-ole-month-48-2026-2
+    versionId: ver-amvuttra
+    category: evidence
+    key: wor92-helios-b-ole-month-48-2026-2
+    label: Month-48 outcomes, continuous vs delayed start
+    value: >-
+      First CV event or all-cause death HR 0.63 (95% CI 0.51–0.79); all-cause mortality HR 0.63 (0.46–0.84); KCCQ-OS LS
+      mean difference 9.0 (5.3–12.6).
+    availability: reported
+    basis: directly_reported
+    context: Continuous vutrisiran vs placebo-to-vutrisiran through month 48.
+    limitation: No concurrent control during the extension; delayed-start comparison.
+    observedAt: "2026-11-08"
+    sourceRefs:
+      - sourceId: src-wor92-helios-b-ole
+        locator: Abstract Results.
+    reviewStatus: reviewed

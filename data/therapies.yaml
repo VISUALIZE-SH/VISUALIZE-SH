@@ -6516,3 +6516,105 @@
     notes: >-
       Current US study configuration and historical sponsor-described NeXuS are not established as dimensionally or
       materially identical. No US marketing approval or clinical efficacy claim.
+
+- id: dev-capstan-compass-tmvr
+  type: therapy
+  therapyType: device
+  name: Capstan Compass Robotic System for Transcatheter Mitral Valve Replacement
+  subtype: Robotic transcatheter mitral valve replacement
+  company: co-capstan-medical
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Registry marks the device unapproved within an FDA-regulated early feasibility study (NCT07917208, not yet
+    recruiting); the sponsor site states clinical-investigation use only and not for sale in any country. No
+    authorization in any jurisdiction is documented.
+  description: >-
+    Investigational robotic transcatheter mitral valve replacement system as named in the registry; the registry states
+    the system includes the Capstan Mitral Valve. Sponsor describes a catheter-based platform combining surgical
+    robotics and imaging. Generation and implant design are not published.
+  mechanism: Sponsor-described catheter-based mitral valve replacement delivered with a robotic system.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: Sponsor solution page
+      url: https://capstanmedical.com/our-solution/
+  curation:
+    status: curated
+    lastUpdated: "2026-11-09"
+    sources:
+      - https://capstanmedical.com/our-solution/
+      - https://clinicaltrials.gov/api/v2/studies/NCT07917208
+    notes: >-
+      Registry and sponsor page, retrieved 2026-11-08. Naming per registry intervention field; sponsor page uses Capstan
+      Compass System. No clinical result, specification or authorization transferred.
+- id: dev-lux-valve-plus
+  type: therapy
+  therapyType: device
+  name: LuX-Valve Plus Transcatheter Tricuspid Valve Replacement System
+  subtype: Transcatheter tricuspid valve replacement (transvenous)
+  company: co-jenscare-scientific
+  treats:
+    - cond-tr
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Sponsor statements, not regulator documents: CE certification under EU MDR (announced 2026-07-23); FDA-approved IDE
+    pivotal trial (TRINITY) with first implantations announced 2026-07-23; a Hong Kong Department of Health approval
+    announcement (2026-09-04, title only). NMPA and other jurisdictions are not established. Each jurisdiction is
+    separate.
+  description: >-
+    Jenscare describes LuX-Valve Plus as a transvenous transcatheter orthotopic tricuspid valve replacement system with
+    septal anchoring independent of radial force, a self-adaptive fabric skirt and seven sizes from 40 to 70 mm. Written
+    2-year abstract data (TRAVEL II, single-arm, n=96) are preliminary and cohort-specific.
+  mechanism: >-
+    Sponsor-described transvenous replacement of the tricuspid valve with septal anchoring and a steerable delivery
+    system.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: Sponsor CE announcement
+      url: https://en.jenscare.com/new/424.html
+    - label: Sponsor TRINITY announcement
+      url: https://en.jenscare.com/new/425.html
+  curation:
+    status: curated
+    lastUpdated: "2026-11-09"
+    sources:
+      - https://en.jenscare.com/new/424.html
+      - https://en.jenscare.com/new/425.html
+      - https://www.jenscare.com/investor/Announcements
+    notes: >-
+      Sponsor pages retrieved 2026-11-08; TCT 2026 abstract TCT-1544 (JACC supplement). Sponsor claims attributed; no
+      authorization confirmed by a regulator document; original LuX-Valve facts not transferred.
+- id: dev-innoventric-unica
+  type: therapy
+  therapyType: device
+  name: Innoventric Unica heterotopic cross-caval system
+  subtype: Heterotopic cross-caval transcatheter tricuspid system
+  company: co-innoventric
+  treats:
+    - cond-tr
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Registry marks the device unapproved within the FDA-regulated TRI-SUCCESS pivotal study (not yet recruiting). Status
+    in other jurisdictions is not_yet_reviewed; no authorization is documented here.
+  description: >-
+    Sponsor-described single cross-caval device anchored in the superior and inferior vena cava with two biological
+    tissue valves, intended to address tricuspid regurgitation without implanting at the tricuspid valve. Sponsor
+    statements are attributed; no clinical result is established by this record.
+  mechanism: >-
+    Sponsor-described heterotopic approach: valves and sealing skirts placed in the vena cavae rather than at the native
+    tricuspid valve.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: Sponsor Unica page
+      url: https://innoventric.com/unica/
+  curation:
+    status: curated
+    lastUpdated: "2026-11-09"
+    sources:
+      - https://innoventric.com/unica/
+      - https://clinicaltrials.gov/api/v2/studies/NCT07919366
+    notes: Sponsor page and registry, retrieved 2026-11-08. Trillium specifications and data not transferred to Unica.
