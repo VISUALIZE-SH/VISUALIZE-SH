@@ -1,0 +1,102 @@
+# tend-ring-valve-in-ring-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-10"
+sources:
+  - id: src-wor96-tend-ring-valve-in-ring-2026
+    title: "Transapical mitral valve-in-ring implantation: European Tendyne valve-in-ring registry"
+    url: https://doi.org/10.1007/s00392-026-03039-6
+    kind: publication
+    publisher: Clinical Research in Cardiology
+    publishedAt:
+      value: "2026-11-04"
+      precision: day
+    retrievedAt: "2026-11-10"
+    access: licensed
+bibliography:
+  - id: bib-wor96-tend-ring-valve-in-ring-2026
+    entityIds:
+      - dev-tendyne
+    versionIds:
+      - ver-tendyne
+    sourceRefs:
+      - sourceId: src-wor96-tend-ring-valve-in-ring-2026
+        locator: Methods
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor96-tend-ring-valve-in-ring-2026-1
+    versionId: ver-tendyne
+    category: evidence
+    key: wor96-tend-ring-valve-in-ring-2026-1
+    label: Cohort
+    value: 16 patients, 8 centres, 2017-2024
+    availability: reported
+    basis: directly_reported
+    context: Off-label V-i-R, median age 79.5
+    limitation: Retrospective, n = 16
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-tend-ring-valve-in-ring-2026
+        locator: Methods
+    reviewStatus: reviewed
+  - id: claim-wor96-tend-ring-valve-in-ring-2026-2
+    versionId: ver-tendyne
+    category: evidence
+    key: wor96-tend-ring-valve-in-ring-2026-2
+    label: Configuration
+    value: All used Tendyne size 29 low-profile
+    availability: reported
+    basis: directly_reported
+    context: Rings mostly Edwards Physio 36-40 mm
+    limitation: One size only
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-tend-ring-valve-in-ring-2026
+        locator: Results, procedural
+    reviewStatus: reviewed
+  - id: claim-wor96-tend-ring-valve-in-ring-2026-3
+    versionId: ver-tendyne
+    category: evidence
+    key: wor96-tend-ring-valve-in-ring-2026-3
+    label: Procedure
+    value: Technical success 100%; MR eliminated in 14/16; no LVOT obstruction
+    availability: reported
+    basis: directly_reported
+    context: Core lab echo
+    limitation: Small n
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-tend-ring-valve-in-ring-2026
+        locator: Results
+    reviewStatus: reviewed
+  - id: claim-wor96-tend-ring-valve-in-ring-2026-4
+    versionId: ver-tendyne
+    category: evidence
+    key: wor96-tend-ring-valve-in-ring-2026-4
+    label: Outcome
+    value: 30-day mortality 6.3%; 5 deaths at median 11 months; one fatal atrialisation
+    availability: reported
+    basis: directly_reported
+    context: Follow-up up to 64 months
+    limitation: Heterogeneous follow-up
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-tend-ring-valve-in-ring-2026
+        locator: Short- and long-term follow-up
+    reviewStatus: reviewed
+  - id: claim-wor96-tend-ring-valve-in-ring-2026-5
+    versionId: ver-tendyne
+    category: evidence
+    key: wor96-tend-ring-valve-in-ring-2026-5
+    label: Ring sizing
+    value: >-
+      Authors suggest a 36 mm minimum for rigid or semi-rigid rings and 30 mm for flexible bands; in 3D reconstruction a
+      complete 36 mm ring took an uncompressed valve, a 32 mm complete ring deformed it and a 32 mm flexible band did
+      not
+    availability: reported
+    basis: directly_reported
+    context: 3D reconstruction
+    limitation: Anatomical observation, not outcome-derived
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-tend-ring-valve-in-ring-2026
+        locator: Figs 2-3
+    reviewStatus: reviewed

@@ -857,7 +857,7 @@
   enrollment: 508
   year: 2024
   primaryEndpoint: "Hierarchical clinical composite (death, transplant/LVAD, HF events, KCCQ)"
-  outcomeSummary: "Neutral overall with opposing directional effects: apparent benefit in HFrEF and a harm signal in HFpEF."
+  outcomeSummary: "Neutral overall with opposing directional effects: apparent benefit in HFrEF and a harm signal in HFpEF. A 2-year JACC: Heart Failure analysis reports implant success 369 of 370 attempts, shunt patency in 346 of 348 patients with imaging (99.4%) through 2 years; in HFrEF, all-cause MACNE, major bleeding and renal decline were not increased and SAE burden was lower; in HFpEF, MACNE, SAEs, major bleeding and renal decline were higher with the shunt."
   resultStatus: mixed
   references: ["https://clinicaltrials.gov/search?term=RELIEVE-HF"]
   curation:
@@ -5433,7 +5433,7 @@
   name: Early Feasibility Study of the Capstan Medical TMVR System (NCT07917208)
   nctId: NCT07917208
   phase: Early feasibility study
-  status: not-yet-recruiting
+  status: recruiting
   conditions:
     - cond-mr
   therapies:
@@ -5630,3 +5630,241 @@
     notes: >-
       Registry record revision 2026-11-05, retrieved 2026-11-08. Registration only; estimated start 2027-01 and
       completion dates are estimates; no results.
+
+- id: trial-cf-tmvr
+  type: trial
+  name: CF-TMVR — MicroPort CardioFlow transcatheter mitral valve replacement pre-market study (NCT07857343)
+  nctId: NCT07857343
+  phase: Single-arm pre-market clinical investigation
+  status: not-yet-recruiting
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-microport-cardioflow-tmvr
+  enrollmentCounts:
+    - count: 152
+      basis: estimated
+      asOf: "2026-10-05"
+      scope: Registry enrollment estimate; no participant enrolled is established.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07857343
+  primaryEndpoint: Cumulative all-cause mortality at 12 months post-procedure (registry-stated).
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT07857343
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07857343
+    notes: >-
+      Registry record posted 2026-10-05, retrieved 2026-11-10. Transapical TMVR in degenerative MR, patients 65 or older
+      unsuitable for surgery or mTEER; start 2026-12-01 and completion dates are estimates; no results.
+- id: trial-clasp-iii-tr-ced
+  type: trial
+  name: CLASP III TR CED — PASCAL Precision tricuspid coverage-with-evidence study (NCT07859709)
+  nctId: NCT07859709
+  phase: Observational cohort (CED)
+  status: not-yet-recruiting
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-pascal
+  enrollmentCounts:
+    - count: 2350
+      basis: estimated
+      asOf: "2026-10-06"
+      scope: Registry enrollment estimate for both arms; no participant enrolled is established.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07859709
+  primaryEndpoint: >-
+    Composite of all-cause death or heart failure hospitalization, time to death or heart failure hospitalization after
+    time zero, 2 years (registry-stated).
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT07859709
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07859709
+    notes: >-
+      Registry record posted 2026-10-06, retrieved 2026-11-10. Observational retrospective-perspective cohort of PASCAL
+      Precision-treated versus untreated patients aged 65 or older with at least severe TR; start 2026-10-15 and
+      completion dates are estimates; no results.
+- id: trial-evolut-durability-japan
+  type: trial
+  name: Long-term durability of the Evolut series in Japan (jRCT1052260216)
+  phase: Observational (jRCT)
+  status: active
+  conditions:
+    - cond-as
+  therapies:
+    - dev-evolut
+  enrollmentCounts:
+    - count: 2000
+      basis: estimated
+      asOf: "2026-11-09"
+      scope: Registry planned sample size; no actual count is stated.
+      source: https://jrct.mhlw.go.jp/latest-detail/jRCT1052260216
+  primaryEndpoint: >-
+    All-cause mortality, cardiac-related rehospitalization and reoperation due to valve dysfunction (registry-stated);
+    durability criteria not defined in the registry.
+  resultStatus: ongoing
+  references:
+    - https://jrct.mhlw.go.jp/latest-detail/jRCT1052260216
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://jrct.mhlw.go.jp/latest-detail/jRCT1052260216
+    notes: >-
+      jRCT record first published 2026-11-09, read 2026-11-10. Observational cohort of TAVI with Evolut R, PRO, PRO+, FX
+      and FX+ up to 2024-12-31 in Japan; planned sample size 2000; no results.
+- id: trial-past-hfref
+  type: trial
+  name: PAST-HFrEF — D-Shant atrial shunt plus GDMT vs GDMT in HFrEF (NCT07820410)
+  nctId: NCT07820410
+  phase: Phase 2/3 (registry); randomized device trial
+  status: recruiting
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-d-shant
+  enrollmentCounts:
+    - count: 208
+      basis: estimated
+      asOf: "2026-09-15"
+      scope: Registry enrollment estimate; no enrolled count is stated.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07820410
+  primaryEndpoint: >-
+    Composite at 12 months of all-cause mortality, heart transplantation or LVAD implantation due to heart failure,
+    heart-failure rehospitalization and unplanned outpatient worsening heart failure (registry-stated).
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT07820410
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07820410
+    notes: >-
+      Registry record posted 2026-09-15, retrieved 2026-11-10. Randomized D-Shant plus GDMT versus GDMT alone,
+      outcomes-assessor masked; estimated completion 2027-12-31; no results.
+- id: trial-relive
+  type: trial
+  name: RELIVE — Revivent System plus GDMT vs GDMT alone (NCT06813820)
+  nctId: NCT06813820
+  phase: Randomized device trial (registry phase N/A)
+  status: recruiting
+  conditions:
+    - cond-ischemic-lv-remodeling
+    - cond-hf
+  therapies:
+    - dev-revivent-tc
+  enrollmentCounts:
+    - count: 135
+      basis: estimated
+      asOf: "2026-02-20"
+      scope: Registry enrollment estimate (90 treatment, 45 control); no enrolled count is stated.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06813820
+  primaryEndpoint: >-
+    30-day major adverse event composite against a 70% performance goal; Finkelstein-Schoenfeld hierarchical composites
+    at 6 months (KCCQ, 6MWD, NYHA) and 12 months (clinical events plus KCCQ, 6MWD, NYHA) (registry-stated).
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT06813820
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06813820
+    notes: >-
+      Registry record last updated 2026-02-20, retrieved 2026-11-10. Revivent System via mini-thoracotomy plus GDMT
+      versus GDMT alone, 2:1; estimated primary completion 2028-08; no results. The registry names the Revivent System
+      without a generation; the link to the public Revivent TC record is a catalogue placement pending confirmation.
+- id: trial-taurus-nxt-target-value
+  type: trial
+  name: TaurusNXT Target Value Study — Peijia TAVR system in high-risk severe aortic stenosis (NCT07908225)
+  nctId: NCT07908225
+  phase: Single-arm study (registry phase N/A)
+  status: active
+  conditions:
+    - cond-as
+  therapies:
+    - dev-taurus-nxt
+  enrollmentCounts:
+    - count: 150
+      basis: actual
+      asOf: "2026-11-02"
+      scope: Registry-stated actual enrollment; not an analyzed denominator.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07908225
+  primaryEndpoint: All-cause mortality at 12 months (registry-stated).
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT07908225
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07908225
+    notes: >-
+      Registry record posted 2026-11-02, retrieved 2026-11-10. Registered retrospectively (start 2021-09-10 actual,
+      first submitted 2026-09-21); registry status active, not recruiting; no results posted.
+- id: trial-tricav-i
+  type: trial
+  name: TRICAV-I — TricValve bicaval system in severe tricuspid regurgitation (NCT06137807)
+  nctId: NCT06137807
+  phase: Single-arm device study (registry phase N/A)
+  status: active
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-tricvalve
+  enrollmentCounts:
+    - count: 50
+      basis: estimated
+      asOf: "2026-08-28"
+      scope: Registry enrollment estimate; no enrolled count is stated.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06137807
+  primaryEndpoint: >-
+    Registry lists 14 primary outcomes, including mortality at 1 and 12 months, stroke, pulmonary embolism, bleeding,
+    vascular and structural complications, acute kidney injury, RVAD or transplant, tricuspid reintervention, heart
+    failure events, and 12-month changes in KCCQ, NYHA class and 6-minute walk distance.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT06137807
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06137807
+    notes: >-
+      Registry record last updated 2026-08-28, retrieved 2026-11-10. Registry-only record; no registry results; TCT
+      abstract data not included.
+- id: trial-tricus-registry
+  type: trial
+  name: TRICUS registry — TricValve retrospective-prospective follow-up (NCT05114850)
+  nctId: NCT05114850
+  phase: Observational registry
+  status: recruiting
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-tricvalve
+  enrollmentCounts:
+    - count: 450
+      basis: estimated
+      asOf: "2024-04-03"
+      scope: Registry enrollment estimate; no enrolled count is stated.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05114850
+  primaryEndpoint: First unplanned readmission for heart failure, up to 12 months (registry-stated); follow-up up to 5 years.
+  resultStatus: ongoing
+  references:
+    - https://clinicaltrials.gov/api/v2/studies/NCT05114850
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05114850
+    notes: >-
+      Registry record last updated 2024-04-03, retrieved 2026-11-10; status and estimated dates as of that revision,
+      possibly stale. No results.

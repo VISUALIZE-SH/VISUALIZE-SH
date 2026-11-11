@@ -2270,3 +2270,161 @@
     notes: >-
       Sponsor self-description plus registry sponsor field, retrieved 2026-11-08. Headquarters and authorization status
       not established.
+
+- id: co-impulse-dynamics
+  type: company
+  name: Impulse Dynamics
+  website: https://impulse-dynamics.com/
+  description: >-
+    Developer of the Optimizer implantable system delivering cardiac contractility modulation (CCM) therapy for heart
+    failure; the Optimizer Smart System is the subject of FDA PMA P180036 (approved 2019-03-21). The company describes
+    investigational CCM-D (CCM with ICD) and AIM HIGHer programs.
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://api.fda.gov/device/pma.json?search=trade_name:optimizer&limit=50
+      - https://impulse-dynamics.com/
+      - >-
+        https://news.impulse-dynamics.com/impulse-dynamics-presented-real-world-late-breaking-data-revealing-heart-failure-hospitalization-reduction-and-sustained-clinical-benefits-of-ccm-therapy-at-one-year/
+    notes: >-
+      openFDA PMA applicant field, company site and release retrieved 2026-11-10. Headquarters not recorded. Scope for
+      cardiac contractility modulation not yet ruled on by the owner.
+- id: co-microport-cardioflow
+  type: company
+  name: MicroPort CardioFlow Medtech Corporation
+  description: >-
+    Hong Kong-listed (stock code 2160) developer of transcatheter aortic valve, left atrial appendage and other
+    structural heart devices in China. The sponsor of the registered CF-TMVR investigation of a transcatheter mitral
+    valve replacement system, Shanghai MicroPort CardioFlow Medtech Co., Ltd., is described in the HKEX announcement as
+    its wholly-owned subsidiary. Statements are the issuer's.
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07857343
+      - https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0402/2026033003758.pdf
+      - https://www.cardioflowmedtech.com/about/gongsijianjie
+    notes: Registry sponsor field, company site and HKEX results retrieved 2026-11-10. No financial information recorded.
+  website: https://www.cardioflowmedtech.com/
+  ticker: 2160.HK
+  hq: Shanghai, China
+- id: co-peijia-medical
+  type: company
+  name: Peijia Medical Limited
+  ticker: 9996.HK
+  description: >-
+    Hong Kong-listed developer of transcatheter valve therapies in China; its 2025 annual results announcement reports
+    registered TAVR products (TaurusOne, TaurusElite, TaurusMax, TaurusTrio), TaurusNXT, a TAVR system designed for
+    durability that was pending NMPA registration as of 2026-03-25, preclinical polymeric-leaflet TaurusApex and the
+    GeminiOne TEER system, for which the company home page reports NMPA approval in September 2026. Statements are the
+    issuer's.
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf
+      - https://clinicaltrials.gov/api/v2/studies/NCT07908225
+      - https://www.peijiamedical.com/
+    notes: >-
+      HKEX annual results announcement of 2026-03-25 and registry sponsor field, retrieved 2026-11-10. Issuer
+      statements; no regulator records opened; no financial information recorded.
+  website: https://www.peijiamedical.com/
+  hq: Suzhou, Jiangsu, China
+- id: co-pi-cardia
+  type: company
+  name: Pi-Cardia Ltd
+  hq: Rehovot, Israel
+  description: >-
+    Israel-based (Rehovot) developer of non-implant catheter leaflet-modification devices; applicant for the FDA De Novo
+    authorization of ShortCut, a transcatheter leaflet-splitting catheter, and recalling firm for one ShortCut lot in
+    2026.
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://api.fda.gov/device/510k.json?search=device_name:shortcut&limit=10
+      - https://api.fda.gov/device/recall.json?search=cfres_id:222130&limit=3
+      - https://www.pi-cardia.net/copy-of-about
+    notes: openFDA records and the company site retrieved 2026-11-10. Funding and ownership not recorded.
+  website: https://www.pi-cardia.net/
+- id: co-chengdu-silara-meditech
+  type: company
+  name: Chengdu Silara Meditech Inc.
+  hq: Chengdu, China
+  description: >-
+    Sponsor of two ClinicalTrials.gov studies of a Transcatheter Aortic Valve System, in severe aortic stenosis and
+    severe aortic insufficiency; location as written in the registry summaries. No website or product detail was read.
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT04893603
+      - https://clinicaltrials.gov/api/v2/studies/NCT05424653
+    notes: >-
+      Registry records retrieved 2026-11-10. Not confirmed as the maker of the Silara polymer valve in a TCT 2026
+      abstract.
+- id: co-haya-therapeutics
+  type: company
+  name: HAYA Therapeutics
+  website: https://www.hayatx.com/
+  hq: Lausanne, Switzerland
+  description: >-
+    Clinical-stage developer of RNA-guided therapeutics targeting the regulatory genome; its lead programme HTX-001 is
+    an investigational antisense oligonucleotide in a registered Phase 1 study for nonobstructive hypertrophic
+    cardiomyopathy. Statements are the company's.
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://www.hayatx.com/
+      - https://clinicaltrials.gov/api/v2/studies/NCT07867288
+    notes: Company site and registry sponsor field retrieved 2026-11-10. No financial information recorded.
+- id: co-meril-life-sciences
+  type: company
+  name: Meril Life Sciences
+  description: >-
+    Maker of the Myval balloon-expandable transcatheter heart valve family, including Octacor and Octapro (per papers,
+    which print "Vapi, India" beside the name), and sponsor of a registered Myval THV Series trial (NCT07532317).
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099935/fullTextXML
+      - https://clinicaltrials.gov/api/v2/studies/NCT07532317
+    notes: >-
+      Location is as printed beside the maker name in papers, not a stated head office, so no hq is set. No
+      company-owned page with product text was readable. No funding information recorded.
+- id: co-vdyne
+  type: company
+  name: VDyne, Inc.
+  hq: Maple Grove, Minnesota, USA
+  website: https://www.vdyne.com/
+  description: >-
+    Sponsor of the VDyne transcatheter tricuspid valve replacement system studies registered on ClinicalTrials.gov,
+    including the TRIVITA randomized pivotal trial against Edwards EVOQUE. Address as given on the company website.
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://www.vdyne.com/
+      - https://clinicaltrials.gov/api/v2/studies/NCT07516444
+    notes: Company site and registry retrieved 2026-11-10. No ownership or funding information recorded.
+- id: co-venus-medtech
+  type: company
+  name: Venus Medtech (Hangzhou) Inc.
+  ticker: 2500.HK
+  website: https://www.venusmedtech.com/
+  hq: Hangzhou, China
+  description: >-
+    Hong Kong-listed developer of transcatheter heart valve devices (aortic, pulmonary, and tricuspid or mitral
+    programmes) in China. Its 2025 annual results announcement lists several TAVR products including Venus-PowerX, which
+    it lists at pivotal stage and also reports as approved in Argentina, Chile and Venezuela. Statements are the
+    issuer's.
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033102789.pdf
+      - https://www.venusmedtech.com/
+    notes: HKEX announcement of 2026-03-31 and company home page retrieved 2026-11-10. No financial information recorded.

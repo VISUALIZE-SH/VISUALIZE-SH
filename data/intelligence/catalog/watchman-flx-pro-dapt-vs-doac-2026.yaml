@@ -1,0 +1,99 @@
+# watchman-flx-pro-dapt-vs-doac-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-10"
+sources:
+  - id: src-wor96-watchman-flx-pro-dapt-vs-doac-2026
+    title: Antithrombotic Therapy and Device Healing After LAAO With WATCHMAN FLX Pro
+    url: https://doi.org/10.25270/jic/26.00212
+    kind: publication
+    publisher: Journal of Invasive Cardiology
+    publishedAt:
+      value: "2026-09-18"
+      precision: day
+    retrievedAt: "2026-11-10"
+    access: public
+bibliography:
+  - id: bib-wor96-watchman-flx-pro-dapt-vs-doac-2026
+    entityIds:
+      - dev-watchman-flx
+    versionIds:
+      - ver-watchman-flx-pro
+    sourceRefs:
+      - sourceId: src-wor96-watchman-flx-pro-dapt-vs-doac-2026
+        locator: Abstract; Methods
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor96-watchman-flx-pro-dapt-vs-doac-2026-1
+    versionId: ver-watchman-flx-pro
+    category: evidence
+    key: wor96-watchman-flx-pro-dapt-vs-doac-2026-1
+    label: Cohort
+    value: "400 analysed: 263 DAPT, 137 low-dose DOAC; 427 evaluated"
+    availability: reported
+    basis: directly_reported
+    context: Single centre, Jul 2024-Oct 2025
+    limitation: Retrospective
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-watchman-flx-pro-dapt-vs-doac-2026
+        locator: Abstract; Methods
+    reviewStatus: reviewed
+  - id: claim-wor96-watchman-flx-pro-dapt-vs-doac-2026-2
+    versionId: ver-watchman-flx-pro
+    category: evidence
+    key: wor96-watchman-flx-pro-dapt-vs-doac-2026-2
+    label: Sizing
+    value: 15-25% compression by CT area-derived diameter
+    availability: reported
+    basis: directly_reported
+    context: ICE-guided transseptal
+    limitation: Single operator group
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-watchman-flx-pro-dapt-vs-doac-2026
+        locator: Methods, procedural
+    reviewStatus: reviewed
+  - id: claim-wor96-watchman-flx-pro-dapt-vs-doac-2026-3
+    versionId: ver-watchman-flx-pro
+    category: evidence
+    key: wor96-watchman-flx-pro-dapt-vs-doac-2026-3
+    label: HAT
+    value: High-grade HAT 5.6% (12/213) DAPT vs 0.9% (1/109) DOAC
+    availability: reported
+    basis: directly_reported
+    context: CT at about 4 months in 80.5%
+    limitation: One DOAC event
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-watchman-flx-pro-dapt-vs-doac-2026
+        locator: Results
+    reviewStatus: reviewed
+  - id: claim-wor96-watchman-flx-pro-dapt-vs-doac-2026-4
+    versionId: ver-watchman-flx-pro
+    category: evidence
+    key: wor96-watchman-flx-pro-dapt-vs-doac-2026-4
+    label: Adjusted odds of high-grade HAT
+    value: Adjusted OR 7.43 (1.01-54.44), P 0.048, for high-grade hypoattenuated thickening with DAPT versus low-dose DOAC
+    availability: reported
+    basis: directly_reported
+    context: Multivariable model, DAPT compared with low-dose DOAC; CT at about 4 months in 322 of 400
+    limitation: Very wide CI
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-watchman-flx-pro-dapt-vs-doac-2026
+        locator: Abstract
+    reviewStatus: reviewed
+  - id: claim-wor96-watchman-flx-pro-dapt-vs-doac-2026-5
+    versionId: ver-watchman-flx-pro
+    category: evidence
+    key: wor96-watchman-flx-pro-dapt-vs-doac-2026-5
+    label: Clinical
+    value: Stroke, bleeding, mortality at 180 days not different
+    availability: reported
+    basis: directly_reported
+    context: Same cohort
+    limitation: Not powered
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-watchman-flx-pro-dapt-vs-doac-2026
+        locator: Abstract; Limitations
+    reviewStatus: reviewed
