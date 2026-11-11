@@ -1,0 +1,99 @@
+# relieve-hf-2yr-lvef-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-10"
+sources:
+  - id: src-wor96-relieve-hf-2yr-lvef-2026
+    title: Long-Term Safety and Procedural Performance of an Interatrial Shunt for HF According to Ejection Fraction
+    url: https://doi.org/10.1016/j.jchf.2026.103375
+    kind: publication
+    publisher: "JACC: Heart Failure"
+    publishedAt:
+      value: "2026-10-13"
+      precision: day
+    retrievedAt: "2026-11-10"
+    access: licensed
+bibliography:
+  - id: bib-wor96-relieve-hf-2yr-lvef-2026
+    entityIds:
+      - trial-relieve-hf
+    versionIds:
+      - ver-vwave-ventura
+    sourceRefs:
+      - sourceId: src-wor96-relieve-hf-2yr-lvef-2026
+        locator: Results, procedural
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor96-relieve-hf-2yr-lvef-2026-1
+    versionId: ver-vwave-ventura
+    category: evidence
+    key: wor96-relieve-hf-2yr-lvef-2026-1
+    label: Population
+    value: "605 enrolled: 508 randomised, 97 roll-in; implant attempted 370, success 369"
+    availability: reported
+    basis: directly_reported
+    context: Ventura shunt; 22 control crossovers implanted
+    limitation: Public enrolment 508 is the randomised part only
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-relieve-hf-2yr-lvef-2026
+        locator: Results, procedural
+    reviewStatus: reviewed
+  - id: claim-wor96-relieve-hf-2yr-lvef-2026-2
+    versionId: ver-vwave-ventura
+    category: evidence
+    key: wor96-relieve-hf-2yr-lvef-2026-2
+    label: Patency
+    value: 346 of 348 patent (99.4%); one randomised closure with septum over 6 mm
+    availability: reported
+    basis: directly_reported
+    context: TTE at 1, 6, 12, 24 months, TEE if no flow
+    limitation: Loss cases were outside IFU or PFO tunnel
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-relieve-hf-2yr-lvef-2026
+        locator: Durability section
+    reviewStatus: reviewed
+  - id: claim-wor96-relieve-hf-2yr-lvef-2026-3
+    versionId: ver-vwave-ventura
+    category: evidence
+    key: wor96-relieve-hf-2yr-lvef-2026-3
+    label: HFrEF MACNE
+    value: 17.5% vs 32.7%, HR 0.60 (0.32-1.12)
+    availability: reported
+    basis: directly_reported
+    context: 2-year KM, LVEF at most 40%
+    limitation: Not significant
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-relieve-hf-2yr-lvef-2026
+        locator: Table 3
+    reviewStatus: reviewed
+  - id: claim-wor96-relieve-hf-2yr-lvef-2026-4
+    versionId: ver-vwave-ventura
+    category: evidence
+    key: wor96-relieve-hf-2yr-lvef-2026-4
+    label: HFpEF MACNE
+    value: 19.4% vs 7.2%, HR 2.69 (1.30-5.58); death HR 3.24
+    availability: reported
+    basis: directly_reported
+    context: LVEF over 40%
+    limitation: Interaction P 0.002 but Gail-Simon 0.056; not powered
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-relieve-hf-2yr-lvef-2026
+        locator: Table 3
+    reviewStatus: reviewed
+  - id: claim-wor96-relieve-hf-2yr-lvef-2026-5
+    versionId: ver-vwave-ventura
+    category: evidence
+    key: wor96-relieve-hf-2yr-lvef-2026-5
+    label: SAE and renal
+    value: SAE IRR 0.59 HFrEF, 1.81 HFpEF; HFpEF eGFR -6.0 mL/min/1.73 m2 at 12 months
+    availability: reported
+    basis: directly_reported
+    context: Investigator-reported SAEs
+    limitation: Not adjudicated; no multiplicity control
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-relieve-hf-2yr-lvef-2026
+        locator: SAE and renal sections
+    reviewStatus: reviewed

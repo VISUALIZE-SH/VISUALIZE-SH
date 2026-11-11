@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-11-09T19:22:50.156Z",
-    "lastUpdated": "2026-11-09",
+    "generatedAt": "2026-11-11T03:13:36.877Z",
+    "lastUpdated": "2026-11-10",
     "counts": {
       "condition": 23,
-      "device": 153,
-      "pharmaceutical": 21,
+      "device": 166,
+      "pharmaceutical": 22,
       "procedure": 15,
       "digital": 19,
-      "company": 137,
-      "trial": 188
+      "company": 146,
+      "trial": 196
     },
     "draftCount": 114,
-    "total": 556,
-    "newsCount": 209,
+    "total": 587,
+    "newsCount": 267,
     "latestNewsDate": "2026-11-08"
   },
   "news": [
@@ -84,6 +84,27 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-11-06-shortcut-mechanical-bicorn-valve-in-valve-first-in-human",
+      "publishedAt": "2026-11-06",
+      "title": "First-in-Human Mechanical Bilateral Iatrogenic Coronary Leaflet Obstruction Risk Nullification (BICORN) for Transcatheter Aortic Valve-in-Valve Replacement",
+      "summary": "A single 80-year-old woman with a failing 23 mm SAPIEN 3 (mean gradient 32 mm Hg, STS 16.8%) and extreme bilateral coronary-obstruction risk (valve-to-coronary 2.0 and 1.7 mm) had basal splits made in both coronary leaflets with the ShortCut device, a mechanical alternative to electrosurgical traversal for BICORN. The left cusp was translocated with an 18 mm balloon and a 20 mm SAPIEN 3 Ultra deployed through the right-cusp split; coronary flow was preserved, mean gradient 5 mm Hg, 8 mm Hg at 1 month. One case; acute aortic insufficiency and a 16 F sheath are noted limits.",
+      "sourceName": "JACC: Case Reports",
+      "sourceUrl": "https://doi.org/10.1016/j.jaccas.2026.111098",
+      "topicTags": [
+        "TAVR valve-in-valve",
+        "coronary obstruction",
+        "leaflet modification",
+        "BICORN",
+        "ShortCut"
+      ],
+      "relevantNodeIds": [
+        "dev-sapien-3",
+        "proc-valve-in-valve-aortic-replacement",
+        "proc-tavi"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-11-05-innoventric-unica-tri-success-pivotal-registered",
       "publishedAt": "2026-11-05",
       "title": "TRI-SUCCESS pivotal trial of the Innoventric Unica cross-caval stent for severe tricuspid regurgitation registered",
@@ -147,6 +168,87 @@
         "cond-as",
         "trial-partner-3",
         "trial-evolut-low-risk"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-04-tend-ring-tendyne-valve-in-ring-registry",
+      "publishedAt": "2026-11-04",
+      "title": "Transapical mitral valve-in-ring implantation: Results of the real-world European Tendyne valve-in-ring registry",
+      "summary": "TEND-RING: 16 patients at 8 European centres (2017-2024) had off-label Tendyne valve-in-ring, all with the smallest size 29 low-profile valve. Technical success 100%, MR eliminated in 14 of 16, no LVOT obstruction, 30-day mortality 6.3%, one fatal atrialisation migration, median follow-up 11 months with 5 deaths. The suggested minimums (36 mm rigid or semi-rigid ring, 30 mm flexible band) come from 3D reconstruction, where a 32 mm complete ring deformed the valve and a 32 mm flexible band did not, not from outcome statistics.",
+      "sourceName": "Clinical Research in Cardiology",
+      "sourceUrl": "https://doi.org/10.1007/s00392-026-03039-6",
+      "additionalSources": [
+        {
+          "label": "Indexed record",
+          "url": "https://europepmc.org/article/MED/42980803"
+        }
+      ],
+      "topicTags": [
+        "TMVR",
+        "valve-in-ring",
+        "Tendyne"
+      ],
+      "relevantNodeIds": [
+        "dev-tendyne",
+        "cond-mr",
+        "co-abbott",
+        "proc-tmvr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-cardiosounds-vibroacoustic-hf-monitor",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-28 A novel, non-invasive vibroacoustic device for monitoring hemodynamics in heart failure",
+      "summary": "An early-stage abstract describes CardioSounds, a transcutaneous vibroacoustic device designed to track pulmonary artery diastolic pressure from vibroacoustic signatures. In a porcine model a machine-learning model tracked left ventricular end-diastolic pressure (10-26 mmHg) with an RMSE of 2.64 mmHg; human data are 8 heart-failure patients plus dialysis subjects, and larger comparison against catheters and CardioMEMS is described as underway.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726078940",
+      "additionalSources": [],
+      "topicTags": [
+        "heart-failure",
+        "pa-pressure-monitoring",
+        "non-invasive-sensor",
+        "pre-clinical"
+      ],
+      "relevantNodeIds": [
+        "cond-hf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-carlen-first-in-human-fmr-21",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-1462 Restoration of Native Mitral Leaflet Coaptation Using a Novel Single-Leaflet Implant: Echocardiographic Findings from the CARLEN First-in-Human Study",
+      "summary": "A prospective multicentre first-in-human study of the CARLEN single-leaflet augmentation implant enrolled 21 patients with clinically significant functional mitral regurgitation. At 6 months the abstract states 90% (n 11) had MR grade 2+ or lower. In the table (n 15 at baseline and 30 days, n 11 at 180 days), ejection fraction rose from 31.9% to 39.5%, LVEDD fell from 62.2 to 57.7 mm and mean gradient stayed 2.7 to 3.1 mmHg.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726095859",
+      "topicTags": [
+        "mitral-repair",
+        "functional-mr",
+        "first-in-human",
+        "leaflet-augmentation"
+      ],
+      "relevantNodeIds": [
+        "dev-nyra-carlen",
+        "cond-mr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-coapt-valve-design-concept-abstract",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-1540 Mitral Leaflet Augmentation using the CoApt Valve: A Novel Transcatheter Device for Restoring Valve Coaptation",
+      "summary": "A design-concept abstract (no patient data) describes the CoApt Valve as a stentless transcatheter mitral leaflet augmentation device delivered fully transseptally through an 8.5 Fr inner-diameter steerable sheath, combining repair and replacement characteristics and using a left-ventricular anchoring system that the authors say avoids the dislodgement seen in previous devices with LV anchors. It is positioned for patients unsuitable for edge-to-edge repair or excluded from replacement by LVOT obstruction risk or access limits.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726080721",
+      "topicTags": [
+        "mitral-repair",
+        "leaflet-augmentation",
+        "design"
+      ],
+      "relevantNodeIds": [
+        "cond-mr"
       ],
       "reviewStatus": "reviewed"
     },
@@ -244,6 +346,45 @@
         "cond-mr",
         "co-edwards",
         "proc-tmvr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-evoque-rv-remodeling-cta-35",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-56 Short- And Long- Term Right Ventricular Changes After Transcatheter Tricuspid Valve Replacement: A Cardiac CTA Analysis",
+      "summary": "A retrospective CT analysis of 35 patients treated with the Evoque system (July 2024 to May 2026) reports falls at the early post-implant scan (mean about 25 days) in RV end-diastolic volume index (140.3 to 120.9 mL/m2) and RV ejection fraction (47.7% to 37.9%). In 10 patients with a third scan at 1 year, RV ejection fraction rose from 34.7% at the early scan to 44.8%. Small, retrospective; number of centres not stated; abstract-level.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726079271",
+      "additionalSources": [],
+      "topicTags": [
+        "tricuspid",
+        "tricuspid-replacement",
+        "imaging"
+      ],
+      "relevantNodeIds": [
+        "dev-evoque",
+        "cond-tr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-grownvalve-first-in-human-three-patients",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-1524 First-in-Human Results of the Novel GrOwnValve Procedure: An Intraoperative Manufactured Autologous Transcatheter Heart Valve",
+      "summary": "A first-in-human abstract reports three patients with dysfunctional pulmonary prostheses (allograft, Contegra, SAPIEN) who received a patient-specific valve made intraoperatively from autologous pericardium in 3D-printed moulds, treated with a non-glutaraldehyde cross-linker and mounted on a balloon-expandable frame. Follow-up was 12 months. All procedures were completed without prosthesis-related adverse events; MRI and echo showed lower gradients and reverse RV remodelling (no values given). Sizing appears decisive for long-term performance.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726096592",
+      "topicTags": [
+        "pulmonary-valve",
+        "autologous-valve",
+        "first-in-human",
+        "tissue-engineering"
+      ],
+      "relevantNodeIds": [
+        "dev-grownvalve-pulmonary",
+        "co-grownvalve",
+        "cond-pv"
       ],
       "reviewStatus": "reviewed"
     },
@@ -409,6 +550,59 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-11-03-resorbs-laac-canine-preclinical",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-458 Resorbs: New Left Atrial Appendage Closure Device",
+      "summary": "A preclinical abstract describes Resorbs (Amend Medical Innovations), an LAA closure device with grabbers that invert appendage tissue and a disc that closes the ostium. In 21 canines (6 acute, 15 chronic) it was implanted transseptally under TEE or ICE guidance; 14 of 15 chronic animals were implanted successfully (one died 8 hours after implant). TEE at 30 and 90 days showed no bleeding or other major adverse events; CT and histopathology were not yet reported.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726084330",
+      "topicTags": [
+        "left-atrial-appendage",
+        "laa-closure",
+        "pre-clinical"
+      ],
+      "relevantNodeIds": [
+        "cond-af",
+        "proc-laac"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-septal-resection-device-concept",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-1541 Novel Endovascular Device for Resection of the Human Interventricular Septum",
+      "summary": "A concept abstract describes what the authors call a first-in-class femoral-arterial transcatheter system intended to mechanically resect hypertrophied septal tissue on the beating heart for obstructive hypertrophic cardiomyopathy, without cardiopulmonary bypass. An integrated filtration trap with a temporary aortic valve is said to capture resected fragments, and the whole system is removed after the procedure. The abstract reports no animal or patient data and frames any benefit as conditional on successful validation.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726080733",
+      "topicTags": [
+        "hocm",
+        "septal-reduction",
+        "design-concept"
+      ],
+      "relevantNodeIds": [
+        "cond-hcm"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-silara-polymer-thv-china-120",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-236 One-Year Clinical and Hemodynamic Outcomes of the Silara Polymer Transcatheter Heart Valve in Chinese Patients With Predominantly Small Annuli and Bicuspid Aortic Valves",
+      "summary": "A prospective multicentre study of the polymer-based Silara valve enrolled 120 consecutive patients with severe aortic stenosis at 24 centres in China (78% small annulus, 56% Sievers type 0 or 1 bicuspid). Device success was 120 of 120. Over available follow-up of the full cohort, 5 deaths (4.2%), 2 strokes (1.7%) and 3 pacemakers (2.5%); only 44 had reached the 1-year visit. In those 44, mean gradient fell from 46.6 to 15.3 mmHg, with no moderate or severe paravalvular or central aortic regurgitation.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S073510972608143X",
+      "topicTags": [
+        "aortic-stenosis",
+        "polymer-valve",
+        "tavr"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "proc-tavi"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-11-03-single-closure-single-vs-double-proglide-tavr",
       "publishedAt": "2026-11-03",
       "title": "Single vs Double ProGlide Devices for Access Site Closure after Transfemoral Aortic Valve Replacement: The SINGLE-CLOSURE Trial",
@@ -430,6 +624,24 @@
         "TAVR",
         "vascular access closure",
         "ProGlide"
+      ],
+      "relevantNodeIds": [
+        "proc-tavi"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-split-line-basilica-redo-tavr-bench",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-1415 Leaflet Modification using Split Line Concept in Redo-TAVR: a First Reported Bench Validation Study",
+      "summary": "A benchtop study tested BASILICA laceration at split lines deviated from the midline in redo-TAVR with commissural misalignment (SAPIEN 3 and Evolut platforms), against midline laceration and UNICORN. Modestly deviated split lines gave neoskirt clearance comparable to midline; more lateral lines gave diminishing leaflet splay; basal traversal was needed in TAV-in-TAV. UNICORN cleared from midline to near the commissures. The authors say the approach appears feasible and cite real-world redo-TAVR cases (no number given) as clinical validation, without case data.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726095306",
+      "topicTags": [
+        "redo-tavr",
+        "leaflet-modification",
+        "bench",
+        "design-note"
       ],
       "relevantNodeIds": [
         "proc-tavi"
@@ -478,6 +690,104 @@
         "cond-tr",
         "proc-ttvr",
         "co-jenscare-scientific"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-tricav-i-efs-caval-reflux-91",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-55 Integrated Use of Echocardiography and Computerized Tomography in the TRICAV I Early Feasibility Study To Evaluate Hepatic Caval Reflux Following Transcatheter Bicaval Valve Therapy",
+      "summary": "TRICAV I (NCT06137807), a US early feasibility study at 25 sites, reports 91 high-risk patients treated with TricValve. Procedural success was 97.8% with no intraprocedural or 30-day mortality. Severe caval reflux (92.3% at baseline) improved to grade 2 or less in 83.3% at 30 days (58.3% grade 1), with 93.3% grade 1-2 at 6 months (n=28). Biventricular function was preserved; right-sided chamber dimensions were unchanged.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S073510972607926X",
+      "additionalSources": [],
+      "topicTags": [
+        "tricuspid",
+        "bicaval-valve",
+        "early-feasibility",
+        "imaging"
+      ],
+      "relevantNodeIds": [
+        "dev-tricvalve",
+        "cond-tr",
+        "co-pf-products"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-tricus-registry-interim-116",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-53 Durability and Outcomes of TricValve Bicaval Therapy: Mid- and Long-Term TRICUS Registry Follow-up",
+      "summary": "An interim report of the TRICUS post-market registry (up to 450 planned, about 100 centres) covers 116 patients implanted by 31 March 2026, 71 with 1-year follow-up. Kaplan-Meier 1-year mortality was 13.8% (device or procedure related 1.7%), 72% were free of heart-failure hospitalisation at 1 year, and 1-year KCCQ-12 rose 23.3 points. Retrospective-prospective design; follow-up thins to 8 patients at 5 years.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726079246",
+      "additionalSources": [],
+      "topicTags": [
+        "tricuspid",
+        "bicaval-valve",
+        "registry"
+      ],
+      "relevantNodeIds": [
+        "dev-tricvalve",
+        "cond-tr",
+        "co-pf-products"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-tricvalve-china-prospective-77",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-54 Bicaval Valve Implantation With TricValve in Chinese Patients With Severe Tricuspid Regurgitation: Results From the Prospective, Single-Arm, Multicenter Trial",
+      "summary": "A congress abstract reports a prospective single-arm study (ChiCTR2500115455) of the TricValve bicaval system that enrolled 77 high-surgical-risk Chinese patients at 16 sites. Intraprocedural success was 93.8% (60/64), 30-day clinical success 90.6% (58/64) and 6-month all-cause mortality 14.3% (9/63), with 59.6% in NYHA I-II (denominator not shown). Abstract-level, device generation not stated; follow-up to 6 months only.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726079258",
+      "additionalSources": [],
+      "topicTags": [
+        "tricuspid",
+        "bicaval-valve",
+        "caval-reflux"
+      ],
+      "relevantNodeIds": [
+        "dev-tricvalve",
+        "cond-tr",
+        "co-pf-products"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-vdyne-ttvr-initial-single-center-six",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-175 Initial Single-Center Experience with Transcatheter Tricuspid Valve Replacement Using the VDyne System",
+      "summary": "A single-centre abstract describes the first six patients with severe or greater tricuspid regurgitation in whom the VDyne system was attempted. Five procedures succeeded; one was aborted for insufficient right ventricular depth and the device was retrieved without leaflet damage, after which edge-to-edge repair succeeded. No patient needed a pacemaker. At 30 days residual TR was below mild in all treated patients and none had paravalvular leak; 3-month KCCQ and walk distance were reported.",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726080599",
+      "topicTags": [
+        "tricuspid",
+        "tricuspid-replacement",
+        "transcatheter-valve"
+      ],
+      "relevantNodeIds": [
+        "cond-tr",
+        "proc-ttvr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-03-vsling-first-in-human-one-year-16",
+      "publishedAt": "2026-11-03",
+      "title": "TCT-1335 First-in-Human 1-Year Follow Up for the Vsling Transcatheter Ventricular Repair Device",
+      "summary": "The first-in-human Vsling study (16 patients with HFrEF, LVEDD above 55 mm, none to moderate MR) attempted implantation in all 16; 3 were aborted for pericardial effusion (recovered) and 13 were implanted. Two major adverse events were tied to chordal interaction from suboptimal positioning; one patient died following valve replacement surgery. In the implanted group one death occurred within 1 year. At 1 year (currently N 7; N 10 expected by TCT 2026) mean interpapillary distance fell from 26 to 16 mm and 6-minute walk rose by 92 m (both p<0.05 as reported); LVEF rose by 3.2% (p 0.13 as reported).",
+      "sourceName": "JACC TCT 2026 abstract supplement",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0735109726094416",
+      "topicTags": [
+        "heart-failure",
+        "ventricular-repair",
+        "papillary-muscle",
+        "first-in-human"
+      ],
+      "relevantNodeIds": [
+        "dev-vsling",
+        "cond-hfref"
       ],
       "reviewStatus": "reviewed"
     },
@@ -611,6 +921,25 @@
         "dev-sapien-m3",
         "co-edwards",
         "cond-mr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-02-peijia-taurus-nxt-target-value-registered",
+      "publishedAt": "2026-11-02",
+      "title": "Target Value Study of the Taurus NXT Transcatheter Aortic Valve System (NCT07908225) registered",
+      "summary": "ClinicalTrials.gov first posted on 2026-11-02 a single-group Target Value study of Peijia Medical TaurusNXT TAVR in symptomatic severe aortic stenosis at high surgical risk, age 70 or over, with 150 participants (actual enrolment), start 2021-09-10 and primary completion 2024-02-29 (actual); primary outcome is all-cause mortality at 12 months. Status Active, not recruiting. This is a retrospective registration of a completed-enrolment study; the record posts no results.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07908225",
+      "topicTags": [
+        "TAVR",
+        "China",
+        "target value study",
+        "retrospective registration"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "proc-tavi"
       ],
       "reviewStatus": "reviewed"
     },
@@ -835,6 +1164,25 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-10-30-lvad-patients-simulated-mitral-aortic-valve-repair-3d-0d-model",
+      "publishedAt": "2026-10-30",
+      "title": "Towards modeling the hemodynamic impact of mitral and aortic valve repair in patients with left ventricular assist devices",
+      "summary": "Patient-specific, image-based 3D-0D simulations of five LVAD-supported patients, each modelled at baseline and with simulated mitral repair, aortic repair or both. The authors state the repair scenarios are exploratory because validation data for valve repair were unavailable. Simulations suggested repair improved cardiac output, reduced pulmonary congestion and improved right ventricular loading; mitral repair restored aortic valve opening, improved sinus washout and shortened blood residence time in the aortic root. The authors say larger validated cohorts are needed.",
+      "sourceName": "Computers in Biology and Medicine",
+      "sourceUrl": "https://doi.org/10.1016/j.compbiomed.2026.112014",
+      "topicTags": [
+        "LVAD",
+        "valve repair",
+        "computational modeling",
+        "right ventricle"
+      ],
+      "relevantNodeIds": [
+        "cond-hf",
+        "proc-mv-surgery"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-10-29-abbott-cephea-crown-mv-launch",
       "publishedAt": "2026-10-29",
       "title": "Abbott announces launch of the CROWN-MV pivotal study of Cephea",
@@ -888,6 +1236,31 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-10-29-ema-tafamidis-accord-generic-ec-decision",
+      "publishedAt": "2026-10-29",
+      "title": "EMA data record: Tafamidis Accord (generic tafamidis, Accord Healthcare) authorised for hereditary ATTR cardiomyopathy",
+      "summary": "EMA's medicines data lists Tafamidis Accord (EMEA/H/C/006711), a generic tafamidis from Accord Healthcare, as authorised, with a CHMP opinion on 23 July 2026 and a European Commission decision on 28 October 2026. The stated indication is hereditary transthyretin amyloidosis in adults with cardiomyopathy (ATTRh-CM); the reference product's EU indication was not read in this run.",
+      "sourceName": "EMA medicines data (JSON)",
+      "sourceUrl": "https://www.ema.europa.eu/en/documents/report/medicines-output-medicines_json-report_en.json",
+      "additionalSources": [
+        {
+          "label": "EMA EPAR page (HTTP 429 on retrieval; not read)",
+          "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tafamidis-accord"
+        }
+      ],
+      "topicTags": [
+        "attr-cm",
+        "generic",
+        "eu-authorisation",
+        "regulatory"
+      ],
+      "relevantNodeIds": [
+        "rx-tafamidis",
+        "cond-attr-cm"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-10-28-abbott-paraclose-pvl-announcement",
       "publishedAt": "2026-10-28",
       "title": "Abbott announces Paraclose PVL occluder approval",
@@ -907,6 +1280,42 @@
       "relevantNodeIds": [
         "co-abbott",
         "cond-pvl"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-28-clover-vs-zipping-tricuspid-teer-annulus-sheep",
+      "publishedAt": "2026-10-28",
+      "title": "Effect of Clover versus Zipping on Annular Geometry and Dynamics in Tricuspid Edge-to-Edge Repair",
+      "summary": "An ovine in-vivo preprint compares two clip configurations with two Abbott XTW clips (delivery system not named in the abstract) in 10 sheep with pulmonary-artery-banding functional TR (zipping n=5, clover n=5). Pooled TR fell from 3.6 to 1.3; a significant reduction in septal-lateral annular diameter was seen only with clover (30 to 27 mm), measured by sonomicrometry. Small ovine acute study; says nothing about durability or patients.",
+      "sourceName": "bioRxiv preprint (Europe PMC record PPR1352452)",
+      "sourceUrl": "https://doi.org/10.64898/2026.10.25.761672",
+      "topicTags": [
+        "tricuspid-teer",
+        "annuloplasty-effect",
+        "preclinical"
+      ],
+      "relevantNodeIds": [
+        "cond-tr",
+        "proc-tricuspid-teer"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-28-five-commercial-tpus-polymeric-heart-valve-scaffold-ovine-mitral-22-day",
+      "publishedAt": "2026-10-28",
+      "title": "Effects of segment chemistry on mechanical performance and hemocompatibility in polyurethane heart valve scaffolds",
+      "summary": "Bench comparison of five commercial thermoplastic polyurethanes (carbothane AC-4095A, carbothane AC-4075A, carbothane PC-3575A, chronoflex C65D and quadrasil ARCS 90A) as polymeric heart valve scaffold materials. Chronoflex and carbothane AC-4095A were stiffest and strongest; carbothane AC-4075A had the lowest hysteresis and best elastic recovery but low tear resistance and slightly elevated hemolysis (about 4%). All five kept platelet counts and partial thromboplastin time within ASTM-defined ranges. A carbothane AC-4095A polymeric mitral valve showed no gross thrombotic attachment after 22 days in a preliminary ovine implant.",
+      "sourceName": "Journal of Materials Chemistry B",
+      "sourceUrl": "https://doi.org/10.1039/d6tb01865c",
+      "topicTags": [
+        "polymeric heart valve",
+        "thermoplastic polyurethane",
+        "hemocompatibility",
+        "material selection"
+      ],
+      "relevantNodeIds": [
+        "cond-mr"
       ],
       "reviewStatus": "reviewed"
     },
@@ -953,6 +1362,26 @@
         "co-neochord",
         "dev-neochord-nexus",
         "trial-neochord-nexus-us-efs"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-26-cfd-newer-prosthetic-aortic-valves-doppler-gradient-ppm",
+      "publishedAt": "2026-10-26",
+      "title": "Computational Fluid Dynamics Simulations Provide Insights into the Paradox of Newer Prosthetic Aortic Valves",
+      "summary": "Steady-state axisymmetric CFD of surgical, balloon-expandable and self-expanding valve geometries, 25 anatomical and size variations each. Doppler peak velocity estimated the total gradient with a slope of 1.01 for surgical valves but overestimated it for balloon-expandable (1.19) and self-expanding (1.42) valves; at identical dimensions the gradient was highest for surgical, lower for balloon-expandable and lowest for self-expanding. In ARIC data, stroke volume correlated with LVOT area (r 0.76) better than with BSA (r 0.60). The authors propose LVOT-area-based PPM measures, pending in vitro and in vivo confirmation.",
+      "sourceName": "Cardiovascular Engineering and Technology",
+      "sourceUrl": "https://doi.org/10.1007/s13239-026-00867-5",
+      "topicTags": [
+        "prosthetic valve hemodynamics",
+        "patient-prosthesis mismatch",
+        "computational fluid dynamics",
+        "Doppler gradient"
+      ],
+      "relevantNodeIds": [
+        "proc-tavi",
+        "proc-savr",
+        "cond-as"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1261,6 +1690,25 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-10-21-fdm-printed-tpu-sebs-leaflets-polymer-tavi",
+      "publishedAt": "2026-10-21",
+      "title": "Experimental study of TPU and SEBS additively manufactured leaflets for novel aortic valve polymer TAVI prosthesis",
+      "summary": "Open-access full text. Dog-bone specimens (8 per material per orientation; TPU-87A and Filaflex SEBS, FDM with axial, transversal and diagonal filament alignment, ISO 527-2 geometry) and 6 printed leaflet samples per material were tested quasi-statically at 23 C, with DIC and Mooney-Rivlin fits. Axial alignment gave the highest strength; SEBS was stiffer (tensile modulus above five times TPU's) and TPU more ductile. No fatigue, hydrodynamic, 37 C, sterilisation or blood-contact testing; authors say device performance is not validated.",
+      "sourceName": "Frontiers in Bioengineering and Biotechnology (Europe PMC full text PMC13731260)",
+      "sourceUrl": "https://doi.org/10.3389/fbioe.2026.1959014",
+      "topicTags": [
+        "polymeric-valve",
+        "additive-manufacturing",
+        "materials",
+        "tavi"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "proc-tavi"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-10-21-noah-voice-hf-first-patients",
       "publishedAt": "2026-10-21",
       "title": "Noah Labs announces first VOICE-HF participants",
@@ -1402,6 +1850,26 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-10-19-sapien-3-ultra-resilia-prolonged-balloon-inflation-expansion-84-patients",
+      "publishedAt": "2026-10-19",
+      "title": "Impact of prolonged balloon inflation on valve expansion and early clinical outcomes following contemporary balloon-expandable transcatheter aortic valve implantation",
+      "summary": "Single-centre analysis of 84 consecutive patients with native tricuspid aortic stenosis treated with SAPIEN 3 Ultra RESILIA using an 8-second prolonged balloon inflation (mean age 78.8, median STS 3.9%). On fluoroscopy the valve was fully expanded at inflow and outflow, with mild midframe underexpansion (98.5 +/- 1.3%) against manufacturer nominal values. Against published double-tap data, expansion was descriptively similar or higher for 23, 26 and 29 mm valves and lower for 20 mm. At 30 days (VARC-3): device success in all, no stroke, pacemaker 6%, mean gradient 9.2 mmHg, no moderate or severe paravalvular leak.",
+      "sourceName": "EuroIntervention",
+      "sourceUrl": "https://doi.org/10.4244/eij-d-26-00494",
+      "topicTags": [
+        "SAPIEN 3 Ultra RESILIA",
+        "balloon-expandable TAVI",
+        "post-dilatation",
+        "valve expansion"
+      ],
+      "relevantNodeIds": [
+        "dev-sapien-3",
+        "proc-tavi",
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-10-19-ultrasound-guided-femoral-access-tavi-laac-outcomes",
       "publishedAt": "2026-10-19",
       "title": "Ultrasound-Guided versus Fluoroscopy-Guided Femoral Access for Structural Heart Procedures: Outcomes From Transcatheter Aortic Valve Implantation and Left Atrial Appendage Closure",
@@ -1531,6 +1999,43 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-10-16-baicalin-glycocalyx-hydrogel-bioprosthetic-valve-anticalcification",
+      "publishedAt": "2026-10-16",
+      "title": "Inflammation-Responsive baicalin-delivering glycocalyx-mimetic hydrogel-functionalized bioprosthetic valve for antithrombosis and immunomodulation",
+      "summary": "Tissue-treatment concept for bioprosthetic heart valve tissue that, per the authors, uses non-glutaraldehyde crosslinking: mussel-inspired catechol chemistry attaches a glycocalyx-like hydrogel carrying ROS-responsive baicalin nanoparticles (BA@ALG-PP). Reported better antithrombotic and endothelialisation behaviour in a rabbit intravascular implant and reduced calcification in rat subcutaneous implants. Small-animal, non-valve-function models; authors say large-animal work is still needed.",
+      "sourceName": "Acta Biomaterialia (Europe PMC record MED 42887585)",
+      "sourceUrl": "https://doi.org/10.1016/j.actbio.2026.10.028",
+      "topicTags": [
+        "bioprosthetic-valve",
+        "anticalcification",
+        "tissue-treatment"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-16-evolut-transcarotid-tavr-tvt-registry-2105-patients",
+      "publishedAt": "2026-10-16",
+      "title": "Transcarotid Access for Transcatheter Aortic Valve Replacement With the Evolut Self-Expanding Valve: Outcomes from a Real-World Registry",
+      "summary": "Retrospective, single-arm analysis of STS/ACC TVT Registry native-valve TAVR (Jan 2015 to Dec 2024): 2,105 transcarotid Evolut cases, 30.3% of 6,956 Evolut cases using non-iliofemoral access (valve-in-valve excluded; Evolut R, PRO, PRO+, FX and FX+ pooled, shares not in the main text). Mean age 78.3, mean STS 6.4%, 60.0% high or extreme risk; implant success 99.6%, 95.8% general anaesthesia. Kaplan-Meier mortality 3.8% at 30 days and 16.5% at 1 year; stroke 3.8% and 5.1%; 30-day pacemaker 11.9%. Moderate or severe PVR 1.0% at 1 year. Site-reported, Medtronic-analysed; 1-year stroke rose with calendar year.",
+      "sourceName": "The Annals of Thoracic Surgery",
+      "sourceUrl": "https://doi.org/10.1016/j.athoracsur.2026.09.055",
+      "topicTags": [
+        "transcarotid access",
+        "TAVR",
+        "TVT Registry",
+        "Evolut"
+      ],
+      "relevantNodeIds": [
+        "dev-evolut",
+        "proc-tavi",
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-10-16-laao-design-series-part-1",
       "publishedAt": "2026-10-16",
       "contentType": "editorial",
@@ -1547,6 +2052,32 @@
         "cond-af",
         "dev-watchman-flx",
         "dev-amulet"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-16-leadless-wise-lv-pacing-aveir-dr-sync-to-pace",
+      "publishedAt": "2026-10-16",
+      "title": "First-in-Human Permanent Totally Leadless Left Ventricular Septal Endocardial Pacing With Atrioventricular Synchrony",
+      "summary": "Single 86-year-old man (intermittent complete heart block, cardiomyopathy, LVEF 45%) in a feasibility study received an AVEIR DR atrial plus RV leadless pair and a WiSE septal LV endocardial electrode. The WiSE transmitter fires 175 ms after the atrial leadless pulse; the RV capsule stays as VVI backup at 50/min. Paced QRS 142 ms vs 172 ms with RV pacing alone and 155 ms asynchronous biventricular. At 4 weeks, atrial pacing 88% and RV pacing 12% (mostly atrial-sensed beats). Authors state selective left bundle branch capture cannot be claimed.",
+      "sourceName": "JACC: Case Reports",
+      "sourceUrl": "https://doi.org/10.1016/j.jaccas.2026.110628",
+      "additionalSources": [
+        {
+          "label": "Indexed record",
+          "url": "https://europepmc.org/article/MED/42886148"
+        }
+      ],
+      "topicTags": [
+        "leadless pacing",
+        "CRT",
+        "first-in-human",
+        "WiSE"
+      ],
+      "relevantNodeIds": [
+        "co-ebr-systems",
+        "cond-hf",
+        "dev-wise-crt"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1597,6 +2128,24 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-10-14-electrospun-pcl-whole-valve-teh-scaffolds-five-geometries-pulse-duplicator",
+      "publishedAt": "2026-10-14",
+      "title": "Functional Performance of Electrospun Tissue-Engineered Heart Valve Scaffolds Across Geometries Under Aortic Conditions",
+      "summary": "Preprint (preliminary, not peer reviewed). Polycaprolactone was electrospun directly onto parametrized 3D-printed mandrels derived from two analytical leaflet geometry models, giving 21 whole-valve scaffolds across five geometries without cutting or suturing flat sheets. Scanning electron microscopy showed consistent fibre diameter, orientation and porosity. Eight scaffolds were tested in a pulse duplicator under hypotensive, normotensive and hypertensive aortic conditions; mean geometric orifice area was 44.51% of total valve area, with physiological opening and closing. In vitro only.",
+      "sourceName": "bioRxiv (preprint)",
+      "sourceUrl": "https://doi.org/10.64898/2026.10.13.758926",
+      "topicTags": [
+        "tissue-engineered heart valve",
+        "electrospinning",
+        "polycaprolactone",
+        "pulse duplicator"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-10-13-news-insights",
       "publishedAt": "2026-10-13",
       "contentType": "news-insights",
@@ -1617,6 +2166,34 @@
         "dev-cardiomems",
         "dig-cardioguide-hf"
       ]
+    },
+    {
+      "id": "news-2026-10-13-relieve-hf-two-year-shunt-durability-lvef",
+      "publishedAt": "2026-10-13",
+      "title": "Long-Term Safety and Procedural Performance of an Interatrial Shunt for Heart Failure According to Ejection Fraction",
+      "summary": "RELIEVE-HF 2-year analysis of the Ventura interatrial shunt: 605 enrolled (508 randomised, 97 roll-in), implant attempted in 370, success 369. Patency 346 of 348 (99.4%); the one randomised loss had septal tissue over 6 mm, outside IFU. All-cause MACNE HFrEF 17.5% vs 32.7% (HR 0.60, 0.32-1.12); HFpEF 19.4% vs 7.2% (HR 2.69, 1.30-5.58); SAE IRR 0.59 and 1.81. Qualitative interaction P 0.056.",
+      "sourceName": "JACC: Heart Failure",
+      "sourceUrl": "https://doi.org/10.1016/j.jchf.2026.103375",
+      "additionalSources": [
+        {
+          "label": "Indexed record",
+          "url": "https://europepmc.org/article/MED/42886087"
+        }
+      ],
+      "topicTags": [
+        "interatrial shunt",
+        "heart failure",
+        "RELIEVE-HF",
+        "HFpEF",
+        "HFrEF"
+      ],
+      "relevantNodeIds": [
+        "trial-relieve-hf",
+        "dev-vwave-ventura",
+        "cond-hfref",
+        "cond-hfpef"
+      ],
+      "reviewStatus": "reviewed"
     },
     {
       "id": "news-2026-10-12-acacia-hcm-additional-hfsa-analyses",
@@ -1685,6 +2262,25 @@
           "label": "HFSA announcement of the planned presentations (October 6)",
           "url": "https://investor.bridgebio.com/news/news-details/2026/BridgeBio-to-Present-New-Acoramidis-Data-Including-Independent-Comparative-Real-World-EHR-Data-at-the-HFSA-Annual-Scientific-Meeting-2026/default.aspx"
         }
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-11-impulse-dynamics-ccm-post-approval-study-one-year",
+      "publishedAt": "2026-10-11",
+      "title": "Impulse Dynamics Presented Real-World, Late-Breaking Data Revealing Heart Failure Hospitalization Reduction and Sustained Clinical Benefits of CCM Therapy at One Year",
+      "summary": "Impulse Dynamics reported one-year outcomes from its US Post-Approval Study of CCM Therapy (Optimizer system; 530 participants, 71 sites; HFSA 2026 late-breaker). It states a 34% reduction in heart failure hospitalization pre- versus post-implant, NYHA improved or stabilized in 97%, and NT-proBNP down 18.5% in those with elevated baseline; several measures are flagged as research endpoints not reviewed by FDA. The release also names INTEGRA-D (investigational CCM-D, combined CCM and ICD) and AIM HIGHer (LVEF 40-70%).",
+      "sourceName": "Impulse Dynamics",
+      "sourceUrl": "https://news.impulse-dynamics.com/impulse-dynamics-presented-real-world-late-breaking-data-revealing-heart-failure-hospitalization-reduction-and-sustained-clinical-benefits-of-ccm-therapy-at-one-year/",
+      "additionalSources": [],
+      "topicTags": [
+        "cardiac contractility modulation",
+        "heart failure",
+        "post-approval study",
+        "HFSA 2026"
+      ],
+      "relevantNodeIds": [
+        "cond-hf"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1784,6 +2380,24 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-10-09-haya-htx-001-nhcm-phase1-registered",
+      "publishedAt": "2026-10-09",
+      "title": "Phase 1 Multiple Ascending Dose Study of HTX-001 in Healthy Participants and Non-obstructive HCM (NCT07867288)",
+      "summary": "ClinicalTrials.gov first posted on 2026-10-09 a two-part Phase 1 of HTX-001, an investigational antisense oligonucleotide, sponsor Haya Therapeutics: multiple ascending doses in healthy participants (Part 1) then open-label dosing at 2 to 3 levels in symptomatic non-obstructive HCM on standard care (Part 2), 10 participants estimated. Primary outcome is safety and tolerability through Day 43. Recruiting, actual start 2026-10-30, last update 2026-11-04.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07867288",
+      "topicTags": [
+        "HCM",
+        "antisense oligonucleotide",
+        "phase 1",
+        "non-obstructive"
+      ],
+      "relevantNodeIds": [
+        "cond-hcm"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-10-09-mitral-stenosis-fsi-energetics",
       "publishedAt": "2026-10-09",
       "title": "Patient-specific simulations compare ventricular flow energetics in calcific and rheumatic mitral stenosis",
@@ -1797,6 +2411,26 @@
       ],
       "relevantNodeIds": [
         "cond-ms"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-09-tendyne-tmvr-first-100-patients-single-centre-to-4-years",
+      "publishedAt": "2026-10-09",
+      "title": "Mid-Term Clinical Outcomes of Tendyne Transcatheter Mitral Valve Replacement: A Prospective Cohort of 100 Patients with Follow-up to 4 Years",
+      "summary": "Single-centre (Munich) series of the first 100 consecutive transapical Tendyne implants in patients judged high or prohibitive surgical risk and not suitable for edge-to-edge repair (mean age 76.3, mean STS 7.7%; primary MR 62%, functional MR 29%, severe MAC 30%). Technical success 96.0%; MVARC 30-day device success 74.0% (failures: death 10, gradient 5 mmHg or more 13, stroke 5). Kaplan-Meier survival 90.0% at 30 days, 71.2% at 1 year, 64.3% at 2 years, 54.8% at 3 years. At 2 years about 32 echo survivors all had MR 1+ or less. Data were recorded prospectively but analysed retrospectively; no control group.",
+      "sourceName": "The Journal of Thoracic and Cardiovascular Surgery",
+      "sourceUrl": "https://doi.org/10.1016/j.jtcvs.2026.09.026",
+      "topicTags": [
+        "Tendyne",
+        "TMVR",
+        "mid-term outcomes",
+        "learning curve"
+      ],
+      "relevantNodeIds": [
+        "dev-tendyne",
+        "proc-tmvr",
+        "cond-mr"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1832,6 +2466,23 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-10-08-halochord-dual-set-ptfe-chordae-porcine-preclinical",
+      "publishedAt": "2026-10-08",
+      "title": "Preclinical Animal Study of a Dual-Set Artificial Chordae Mitral Valve Repair System in a Porcine Model",
+      "summary": "A Research Square preprint reports the HaloChord transapical beating-heart system, which delivers up to two sets (four ePTFE threads) of artificial chordae per sequence instead of one. In 5 pigs with surgically induced P2 chordal-disconnection MR, implantation succeeded in all and MR fell from 2-3+ to 1+ or less through terminal endpoints at 30 (n=1), 90 (n=1) and 180 days (n=3). Tiny n, acute-MR model, no control arm; sponsor affiliation not stated in the abstract.",
+      "sourceName": "Research Square preprint (Europe PMC record PPR1336588)",
+      "sourceUrl": "https://doi.org/10.21203/rs.3.rs-10467847/v1",
+      "topicTags": [
+        "mitral-repair",
+        "artificial-chordae",
+        "preclinical"
+      ],
+      "relevantNodeIds": [
+        "cond-mr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-10-07-pediatric-asd-six-month-remodeling",
       "publishedAt": "2026-10-07",
       "title": "Pediatric ASD study reports six-month right-heart remodeling after transcatheter closure",
@@ -1856,6 +2507,128 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-10-06-edwards-clasp-iii-tr-ced-registered",
+      "publishedAt": "2026-10-06",
+      "title": "The CLASP III TR CED Study (NCT07859709): Edwards PASCAL Precision coverage-with-evidence-development registry registered",
+      "summary": "ClinicalTrials.gov first posted on 2026-10-06 an observational Coverage with Evidence Development study of PASCAL Precision transcatheter tricuspid repair, sponsor Edwards. It plans 2,350 participants aged 65 or older with at least severe TR (estimated), comparing PASCAL-treated patients with Medicare-eligible patients who received no tricuspid intervention; primary outcome is all-cause death or heart failure hospitalisation at 2 years. Status Not yet recruiting, estimated start 2026-10-15, primary completion 2030-12. Registration is not enrolment.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07859709",
+      "topicTags": [
+        "tricuspid",
+        "TEER",
+        "PASCAL",
+        "coverage with evidence development",
+        "registry"
+      ],
+      "relevantNodeIds": [
+        "dev-pascal",
+        "co-edwards",
+        "cond-tr",
+        "proc-tricuspid-teer"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-06-m-teer-right-to-left-shunt-emergency-iasd-closure-rv-dysfunction",
+      "publishedAt": "2026-10-06",
+      "title": "Acute deoxygenation during M-TEER: a note of caution",
+      "summary": "Single-centre retrospective analysis of 444 consecutive patients with successful mitral TEER (2017 to 2026): 6 patients (1.3%) needed emergency closure of the iatrogenic ASD for right-to-left shunting with acute deoxygenation (saturation fell by 3-8%), one developing cardiogenic shock. All six had severe tricuspid regurgitation, RV dilatation and impaired RV function; right atrial pressure exceeded left atrial pressure after M-TEER in five. Versus the rest: TAPSE 15 vs 19 mm, fractional area change 27% vs 43%, RV free-wall strain -13% vs -22%. The authors suggest comprehensive RV assessment and invasive haemodynamics for risk stratification.",
+      "sourceName": "European Heart Journal - Imaging Methods and Practice",
+      "sourceUrl": "https://doi.org/10.1093/ehjimp/qyag171",
+      "topicTags": [
+        "mitral TEER",
+        "iatrogenic ASD",
+        "right-to-left shunt",
+        "complication mechanism"
+      ],
+      "relevantNodeIds": [
+        "proc-mitral-teer",
+        "cond-mr",
+        "cond-tr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-06-octapro-balloon-expandable-thv-early-outcomes",
+      "publishedAt": "2026-10-06",
+      "title": "Early outcomes of the Octapro balloon-expandable transcatheter heart valve in an unrestricted cohort of patients with aortic valve stenosis",
+      "summary": "Octapro (Meril) is a Myval Octacor-based balloon-expandable valve with the outflow crowns reversed into a chevron (foreshortening about 10-12%). Registry of 303 patients (Nov 2024-Oct 2025, Europe and India): VARC-3 technical success 97%, 30-day device success 92.4%, early safety 80%, mortality 2.6%, stroke 0.3%, PPI 14.2%, mean gradient 9 mm Hg. Implantation depth (ROC cut-off 4.75 mm) and baseline RBBB predicted PPI.",
+      "sourceName": "International Journal of Cardiology",
+      "sourceUrl": "https://doi.org/10.1016/j.ijcard.2026.134967",
+      "additionalSources": [
+        {
+          "label": "Indexed record",
+          "url": "https://europepmc.org/article/MED/42838146"
+        }
+      ],
+      "topicTags": [
+        "TAVI",
+        "balloon-expandable",
+        "new valve platform",
+        "registry"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "proc-tavi"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-06-revivent-relive-first-patients-georgia",
+      "publishedAt": "2026-10-06",
+      "title": "BioVentrix Announces First Patients Treated with Revivent System in RELIVE Trial at Caucasus Medical Centre, Republic of Georgia",
+      "summary": "BioVentrix reported completing treatment of its first two patients in the Republic of Georgia in the RELIVE trial (Caucasus Medical Centre). RELIVE randomizes about 135 patients 2:1 to the Revivent System plus GDMT versus GDMT alone (anterior/apical LV scar or aneurysm; 30-day safety, 1-year efficacy endpoints). The release gives no outcomes beyond discharge within five days.",
+      "sourceName": "BioVentrix",
+      "sourceUrl": "https://bioventrix.com/2026/10/06/bioventrix-announces-first-patients-treated-with-revivent-system-in-relive-trial-at-caucasus-medical-centre-republic-of-georgia/",
+      "additionalSources": [
+        {
+          "label": "ClinicalTrials.gov NCT06813820 (API record)",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT06813820"
+        }
+      ],
+      "topicTags": [
+        "left ventricular restoration",
+        "heart failure",
+        "Revivent System",
+        "pivotal trial",
+        "site expansion"
+      ],
+      "relevantNodeIds": [
+        "co-bioventrix",
+        "cond-hfref",
+        "cond-ischemic-lv-remodeling"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-06-triartic-triclip-annuloplasty-then-evoque",
+      "publishedAt": "2026-10-06",
+      "title": "The TriArtic procedure: TRIcuspid annular reduction by TEER in the commissure, a transcatheter annuloplasty enabling EVOQUE tricuspid valve replacement",
+      "summary": "One patient with torrential atrial functional TR and an annulus outside the EVOQUE 56 mm sizing matrix received a TriClip XTW in the septo-anterior commissure as annuloplasty; CT at 27 days showed about 11% annular area reduction, bringing oversizing to +3.3% (within parameters), and a 56 mm EVOQUE was implanted 48 days after the clip with no residual TR and a 1 mmHg mean gradient. Authors state it shows feasibility only.",
+      "sourceName": "European Heart Journal. Case Reports",
+      "sourceUrl": "https://europepmc.org/article/MED/42898779",
+      "additionalSources": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1093/ehjcr/ytag729"
+        }
+      ],
+      "topicTags": [
+        "tricuspid",
+        "TTVR",
+        "EVOQUE",
+        "TriClip",
+        "sequential therapy"
+      ],
+      "relevantNodeIds": [
+        "dev-evoque",
+        "dev-triclip",
+        "cond-tr",
+        "proc-ttvr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-10-05-cardiomems-cardioguide-patient-access",
       "publishedAt": "2026-10-05",
       "title": "Abbott announces CardioGuide HF patient pressure access and treatment-plan updates",
@@ -1876,6 +2649,26 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-10-05-microport-cardioflow-tmvr-cf-tmvr-registered",
+      "publishedAt": "2026-10-05",
+      "title": "CardioFlow Transcatheter Mitral Valve Replacement System Pre-market Clinical Investigation (NCT07857343, CF-TMVR) registered",
+      "summary": "ClinicalTrials.gov first posted on 2026-10-05 a single-arm pre-market study of the MicroPort CardioFlow transcatheter mitral valve replacement system, planned at 152 participants (estimated) with symptomatic degenerative MR (MR 3+ or higher) judged unsuitable for conventional surgery or mTEER, aged 65 or over. The record describes transapical delivery; primary outcome is cumulative all-cause mortality at 12 months. Status Not yet recruiting, estimated start 2026-12. Registration is not enrolment.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07857343",
+      "topicTags": [
+        "TMVR",
+        "transapical",
+        "degenerative mitral regurgitation",
+        "pre-market",
+        "China"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "proc-tmvr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-10-04-echodino-pediatric-echo-foundation-model",
       "publishedAt": "2026-10-04",
       "title": "EchoDino preprint evaluates pediatric-trained echocardiography representations across age groups",
@@ -1891,6 +2684,27 @@
         "cond-asd",
         "cond-vsd",
         "cond-pda"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-02-ama-cpt-panel-tmvr-category-i-and-tav-leaflet-modification-codes",
+      "publishedAt": "2026-10-02",
+      "title": "AMA CPT Editorial Panel, September 2026: new Category I code for transcatheter mitral valve replacement; Category III code for aortic valve leaflet modification",
+      "summary": "The CPT Editorial Panel's September 2026 summary of panel actions (updated 2 Oct 2026) records acceptance of a new numeric placeholder code (33XX0) for percutaneous transcatheter mitral valve replacement, with new Cardiac Valves guidelines, revision of code 0484T and deletion of 0483T, effective January 2028. It also accepts code X715T (listed under Category III) for transcatheter modification of aortic valve leaflets during valve implantation, effective 1 Jan 2027. Codes are placeholders; final wording and numbers are not yet assigned.",
+      "sourceName": "American Medical Association",
+      "sourceUrl": "https://www.ama-assn.org/system/files/sept-2026-summary-of-panel-actions.pdf",
+      "additionalSources": [],
+      "topicTags": [
+        "CPT",
+        "coding",
+        "TMVR",
+        "aortic valve leaflet modification"
+      ],
+      "relevantNodeIds": [
+        "proc-tmvr",
+        "proc-tavi",
+        "cond-mr"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1916,6 +2730,23 @@
           "label": "FDA K261715 clearance record",
           "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715"
         }
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-10-02-tamibarotene-hfpef-relief-phase-2-registered",
+      "publishedAt": "2026-10-02",
+      "title": "The Clinical Trial of Tamibarotene for Patients With HFpEF (RELIEF Trial)",
+      "summary": "Nagoya University registered RELIEF, a phase 2 randomized, quadruple-masked, placebo-controlled trial of tamibarotene for 12 weeks in HFpEF (heart failure for at least 12 weeks, NYHA II to IV, LVEF 50% or more, NT-proBNP at least 300 pg/mL or 600 pg/mL with atrial fibrillation, and structural heart disease or a heart-failure hospitalisation within 12 months). Primary outcome is change in serum NT-proBNP; 90 participants are planned. Recruiting; start 5 November 2026 as listed.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07855692",
+      "topicTags": [
+        "HFpEF",
+        "tamibarotene",
+        "registry record"
+      ],
+      "relevantNodeIds": [
+        "cond-hfpef"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2029,6 +2860,24 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-09-29-memosorb-bioresorbable-pfo-occluder-11-year-old-diver-case-report-preprint",
+      "publishedAt": "2026-09-29",
+      "title": "Use of the MemoSorb bioresorbable PFO device in an 11-year-old diver with phospholamban mutation and family hypertrophic cardiomyopathy",
+      "summary": "Preprint (preliminary, not peer reviewed) case report of a bioresorbable PFO occluder, MemoSorb (Lepu Medical), used for primary prevention in an asymptomatic 11-year-old diver with normal biventricular function and a phospholamban mutation, chosen to keep the septum free for possible later transseptal intervention. Positioning of a 34 mm device was complicated by complete atrioventricular block, which regressed to first degree after removal; a 28 mm device was then implanted. Intermittent second-degree block after the procedure was treated with steroids, with a normal Holter weeks later and a negative bubble test at 6 months.",
+      "sourceName": "Research Square (preprint)",
+      "sourceUrl": "https://doi.org/10.21203/rs.3.rs-11017180/v1",
+      "topicTags": [
+        "PFO closure",
+        "bioresorbable occluder",
+        "case report",
+        "atrioventricular block"
+      ],
+      "relevantNodeIds": [
+        "cond-pfo"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-09-29-mitria-t45-svs-partnership",
       "publishedAt": "2026-09-29",
       "title": "Mitria partners with T45 Labs to advance investigational Subvalvular Spacer",
@@ -2067,6 +2916,25 @@
           "label": "Original article DOI",
           "url": "https://doi.org/10.1016/j.actbio.2026.09.046"
         }
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-28-fibrosis-burden-and-pattern-laa-stasis-multi-beat-multiphysics-preprint",
+      "publishedAt": "2026-09-28",
+      "title": "Fibrosis burden and spatial pattern affect left atrial appendage stasis in multi-beat multi-physics simulations",
+      "summary": "Preprint (preliminary, not peer reviewed). Coupled electromechanical and CFD simulations on one common left atrial anatomy applied three LGE-MRI-derived fibrosis patterns globally at 15.6% and 31.2% burden (six cases plus a non-fibrotic reference) and two patterns within the appendage at 10%, 25% and 50% (six cases). Rising global fibrosis lowered LA emptying fraction from 36% to 30-31% and LAA emptying fraction from 44% to 28-38%, and raised LA residence time. LAA residence time did not track LAA emptying fraction monotonically for one pattern. The authors state clinical validation is required.",
+      "sourceName": "bioRxiv (preprint)",
+      "sourceUrl": "https://doi.org/10.64898/2026.09.26.754330",
+      "topicTags": [
+        "LAA stasis",
+        "atrial fibrosis",
+        "multi-physics simulation",
+        "computational modeling"
+      ],
+      "relevantNodeIds": [
+        "cond-af",
+        "proc-laac"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2114,6 +2982,73 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-09-28-tricuspid-valve-synthetic-chordae-shape-matching-texas-trivalve",
+      "publishedAt": "2026-09-28",
+      "title": "No Strings Attached: Predicting Tricuspid Valve Deformation Without In Vivo Chordal Geometry",
+      "summary": "Preprint (preliminary, not peer reviewed). The authors adapt an anatomy-informed hyperelastic shape-matching method to generate synthetic chordae for a finite-element tricuspid valve model (Texas TriValve 1.1) without in vivo chordal attachments. Shape matching reproduced the end-systolic geometry with mean inter-surface distance 0.29 +/- 0.35 mm. With 202, 225 and 450 chordal insertions, informed by eight explanted human tricuspid valves, more insertions reduced inter-surface distance from 0.63 to 0.49 mm and contact-area error from 3.52% to 0.59%. Leaflet-belly stretch errors stayed below 2.4%.",
+      "sourceName": "bioRxiv (preprint)",
+      "sourceUrl": "https://doi.org/10.64898/2026.09.25.754571",
+      "topicTags": [
+        "tricuspid valve",
+        "chordae tendineae",
+        "finite element model",
+        "computational modeling"
+      ],
+      "relevantNodeIds": [
+        "cond-tr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-27-3d-printed-fiber-reinforced-polymeric-aortic-valve",
+      "publishedAt": "2026-09-27",
+      "title": "Design and Fabrication of 3D-Printed Biomimetic Fiber-Reinforced Polymeric Aortic Valves for Improved Stress Distribution",
+      "summary": "Bench and finite-element study of 23 mm polycarbonate urethane leaflets (0.2 and 0.3 mm) with embedded PETG fibers made by multi-material printing and heat compression. A biomimetic fiber layout gave 22% (0.3 mm) and 26% (0.2 mm) lower predicted (finite-element) strain energy density than unreinforced; pulse-duplicator GOA fell from 2.34 to about 1.95 cm2 while regurgitation fraction did not differ significantly. No durability, fatigue or calcification testing.",
+      "sourceName": "Annals of Biomedical Engineering",
+      "sourceUrl": "https://doi.org/10.1007/s10439-026-04371-8",
+      "additionalSources": [
+        {
+          "label": "Indexed record",
+          "url": "https://europepmc.org/article/MED/42801407"
+        }
+      ],
+      "topicTags": [
+        "polymeric heart valve",
+        "leaflet design",
+        "bench testing",
+        "finite element"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-26-venus-p-valve-in-myval-pulmonary-first-in-human",
+      "publishedAt": "2026-09-26",
+      "title": "First-in-Human Valve-in-Valve Implantation of a Self-Expanding Pulmonary Valve Within a Dysfunctional Balloon-Expandable Pulmonary Valve",
+      "summary": "Single-patient report: a 26-year-old man with repaired tetralogy of Fallot and a 32 mm Myval (in a 48 mm stent) developed recurrent severe pulmonary regurgitation after about 2 good years. After CT planning and two balloon dilations (30x45, then 33x60 mm) restored a near-circular frame, a 32/30 mm Venus P-Valve was deployed inside it; no residual regurgitation or coronary compression, and no regurgitation or stenosis on echo at 3 months. Authors say, to their knowledge, it is the first such implant; a suitably sized balloon-expandable valve was unavailable, and they do not offer it as a general alternative.",
+      "sourceName": "JACC: Case Reports",
+      "sourceUrl": "https://doi.org/10.1016/j.jaccas.2026.110543",
+      "additionalSources": [
+        {
+          "label": "Indexed record",
+          "url": "https://europepmc.org/article/MED/42799731"
+        }
+      ],
+      "topicTags": [
+        "pulmonary valve",
+        "valve-in-valve",
+        "first-in-human",
+        "Venus P-Valve",
+        "Myval"
+      ],
+      "relevantNodeIds": [
+        "cond-pv"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-09-25-amulet-canada-labeling-notice",
       "publishedAt": "2026-09-25",
       "title": "Health Canada posts Amulet labeling recall for pulmonary artery injury precautions",
@@ -2137,6 +3072,10 @@
         {
           "label": "Abbott September 2026 customer correction letter",
           "url": "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/pdf/reports/Customer%20Letter%20-%20Amplatzer%20Amulet%20Left%20Atrial%20Appendage%20Occluder.pdf"
+        },
+        {
+          "label": "FDA recall record (posted 2026-10-16)",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=222724"
         }
       ],
       "reviewStatus": "reviewed"
@@ -2179,6 +3118,37 @@
       ]
     },
     {
+      "id": "news-2026-09-23-nice-tavi-guideline-update-economic-plan-low-intermediate-risk",
+      "publishedAt": "2026-09-23",
+      "title": "Economic plan: Heart valve disease presenting in adults: investigation and management - transcatheter aortic valve implantation (TAVI) to treat aortic stenosis (update)",
+      "summary": "NICE published an economic plan on 23 September 2026, a pre-consultation document for its partial update of NG208 on TAVI for aortic stenosis. The single modelling question is the cost-utility of TAVI versus surgical aortic valve replacement in adults with aortic stenosis at low and at intermediate surgical risk, from an NHS and personal social services perspective, with costs and QALYs as outcomes. The model holds confidential TAVI valve price data; whether results will be redacted or use public list prices is undecided. Publication is now expected 2 March 2027 (scope: September 2026).",
+      "sourceName": "NICE",
+      "sourceUrl": "https://www.nice.org.uk/guidance/gid-ng10457/documents/economic-plan",
+      "additionalSources": [
+        {
+          "label": "NICE project information (GID-NG10457)",
+          "url": "https://www.nice.org.uk/guidance/indevelopment/gid-ng10457"
+        },
+        {
+          "label": "NICE project documents list",
+          "url": "https://www.nice.org.uk/guidance/indevelopment/gid-ng10457/documents"
+        }
+      ],
+      "topicTags": [
+        "NICE",
+        "TAVI",
+        "aortic stenosis",
+        "guideline update",
+        "health economics"
+      ],
+      "relevantNodeIds": [
+        "proc-tavi",
+        "proc-savr",
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-09-23-pascal-capture-clarity-mr-fda",
       "publishedAt": "2026-09-23",
       "title": "FDA approves PASCAL Ace with Capture Clarity MR implant-system supplement",
@@ -2218,6 +3188,26 @@
       ]
     },
     {
+      "id": "news-2026-09-22-aseptic-intracardiac-communications-after-tavi-four-case-series",
+      "publishedAt": "2026-09-22",
+      "title": "Mechanisms and Management of Acquired Aseptic Intracardiac Communications After Transcatheter Aortic Valve Implantation: Single-Center Case Series Insights",
+      "summary": "Single-centre retrospective case series of four patients (mean age 74) with acquired aseptic intracardiac communications after TAVI, comprising ventricular septal defects, aorto-right ventricular fistulas and complex root injuries, plus a literature review. The authors cite severe annular or subannular calcification, aggressive balloon dilation and valve-in-valve procedures with frame fracture as mechanisms. Transcatheter closure was procedurally successful in all four, with complete or functionally complete shunt elimination and no major device-related complications; follow-up 8 months to 2.5 years, no recurrence.",
+      "sourceName": "Catheterization and Cardiovascular Interventions",
+      "sourceUrl": "https://doi.org/10.1002/ccd.70914",
+      "topicTags": [
+        "TAVI complication",
+        "intracardiac communication",
+        "transcatheter closure",
+        "multimodality imaging"
+      ],
+      "relevantNodeIds": [
+        "proc-tavi",
+        "cond-as",
+        "proc-valve-in-valve-aortic-replacement"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-09-22-corcym-memo-4d-curve-first-in-human-implant-mitral-annuloplasty",
       "publishedAt": "2026-09-22",
       "title": "Corcym reports first-in-human implant of Memo 4D Curve, an open-configuration mitral annuloplasty ring",
@@ -2255,6 +3245,27 @@
       "reviewStatus": "reviewed"
     },
     {
+      "id": "news-2026-09-22-relief-as-dapagliflozin-spironolactone-after-aortic-valve-replacement-isrctn",
+      "publishedAt": "2026-09-22",
+      "title": "Regression in left ventricular hypertrophy and fibrosis in aortic stenosis - a randomised controlled trial (RELIEF-AS)",
+      "summary": "ISRCTN assigned a number on 22 September 2026 to RELIEF-AS, a UK phase II randomised, open-label (no masking) trial sponsored by the UCL Comprehensive Clinical Trials Unit. Adults with severe aortic stenosis and LVEF of at least 40%, referred for surgical or transcatheter valve replacement, are randomised 1:1:1:1 to dapagliflozin 10 mg, spironolactone 25 mg, both (each for 12 months), or standard care. Target enrolment is 520; the primary outcome is indexed LV mass on cardiac MRI at 12 months. Recruitment is planned from December 2026 to August 2028.",
+      "sourceName": "ISRCTN registry",
+      "sourceUrl": "https://www.isrctn.com/ISRCTN15612522",
+      "topicTags": [
+        "aortic stenosis",
+        "SGLT2 inhibitor",
+        "mineralocorticoid antagonist",
+        "LV mass regression",
+        "registry record"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "proc-tavi",
+        "proc-savr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-09-22-ubc-ivalve-soft-closure-mechanical-heart-valve",
       "publishedAt": "2026-09-22",
       "title": "UBC's Heart Valve Performance Laboratory reports on a soft-closure mechanical valve prototype",
@@ -2269,6 +3280,24 @@
       "relevantNodeIds": [
         "cond-as"
       ]
+    },
+    {
+      "id": "news-2026-09-21-resmetirom-mash-hfpef-phase-1b-registered",
+      "publishedAt": "2026-09-21",
+      "title": "Resmetirom in Patients With MASH and HFpEF",
+      "summary": "Madrigal Pharmaceuticals registered a phase 1b multicentre, randomized (2:1), double-blind, placebo-controlled study of resmetirom for 24 weeks in adults with suspected or confirmed fibrotic MASH and confirmed HFpEF, with 90 participants planned. Primary outcomes are safety and tolerability measures (adverse events, vital signs, ECG intervals and laboratory parameters) and percent change in MRI-PDFF liver fat. Recruiting; estimated start September 2026.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07830758",
+      "topicTags": [
+        "HFpEF",
+        "MASH",
+        "resmetirom",
+        "registry record"
+      ],
+      "relevantNodeIds": [
+        "cond-hfpef"
+      ],
+      "reviewStatus": "reviewed"
     },
     {
       "id": "news-2026-09-21-respiree-series-a-syndicate-expansion",
@@ -2323,6 +3352,162 @@
       ]
     },
     {
+      "id": "news-2026-09-18-reaces-puncturable-asd-occluder-randomized-trial",
+      "publishedAt": "2026-09-18",
+      "title": "Comparison of a Novel Occluder Versus Traditional Occluder in Atrial Septal Defect: A Randomized Trial",
+      "summary": "In a multicenter randomized noninferiority trial, the ReAces ASD occluder, whose central region is a 3-layer polyethylene terephthalate membrane instead of nitinol mesh (about 60% less metal, designed to be puncturable and endothelialize), matched an Amplatzer-like occluder: complete closure at 12 months 61/62 vs 63/64 (98.4% each) in the abstract. Central thickness was lower (6.8 vs 12.2 mm) and nonzero migraine scores were fewer at 1 month (3/54 vs 10/55), with no significant difference at 6 or 12 months. No puncture was needed in follow-up, so puncturability remains unproven.",
+      "sourceName": "Journal of the American Heart Association",
+      "sourceUrl": "https://europepmc.org/article/MED/42757893",
+      "additionalSources": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1161/jaha.125.045052"
+        }
+      ],
+      "topicTags": [
+        "ASD occluder",
+        "device design",
+        "randomized trial",
+        "puncturable septal occluder"
+      ],
+      "relevantNodeIds": [
+        "cond-asd"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-18-watchman-flx-pro-dapt-vs-low-dose-doac-ct-hat-single-centre",
+      "publishedAt": "2026-09-18",
+      "title": "Antithrombotic therapy and device healing after left atrial appendage occlusion with WATCHMAN FLX Pro: a single-center real-world cohort study",
+      "summary": "Retrospective single-centre analysis of 427 consecutive attempted WATCHMAN FLX Pro implants (July 2024 to October 2025); 400 were analysed, 263 discharged on dual antiplatelet therapy (DAPT) and 137 on low-dose DOAC. Among the 322 patients (80.5%) with 4-month CT, high-grade hypoattenuated thickening occurred in 12 of 213 on DAPT (5.6%) and 1 of 109 on DOAC (0.9%); adjusted odds ratio 7.43 (95% CI 1.01 to 54.44). Patency, peridevice leak, incomplete coverage and 180-day stroke, bleeding and mortality did not differ. The authors call for randomized trials.",
+      "sourceName": "Journal of Invasive Cardiology",
+      "sourceUrl": "https://doi.org/10.25270/jic/26.00212",
+      "topicTags": [
+        "LAAO",
+        "WATCHMAN FLX Pro",
+        "post-implant antithrombotic regimen",
+        "device-related thrombus"
+      ],
+      "relevantNodeIds": [
+        "dev-watchman-flx",
+        "proc-laac",
+        "cond-af"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-17-gba-interatrial-shunt-hfref-nyha-iii",
+      "publishedAt": "2026-09-17",
+      "title": "G-BA: percutaneously implanted interatrial shunt for heart failure with LVEF 40% or less (NYHA III) found necessary; decision adopted, not yet in force",
+      "summary": "On 17 Sep 2026 Germany's Federal Joint Committee concluded its method assessment of the percutaneous interatrial shunt for HFrEF (LVEF 40% or less) in NYHA III, added to guideline medical therapy. It found the benefit sufficiently shown and the method necessary in hospital care. It rests on the sham-controlled RELIEVE-HF HFrEF cohort (206 patients: 101 shunt, 105 sham): IQWiG saw a hint of benefit for heart-failure and all-cause hospitalisation, none for mortality or quality of life. The text is not yet in force (Federal Gazette publication pending); the device is not named.",
+      "sourceName": "G-BA",
+      "sourceUrl": "https://www.g-ba.de/downloads/40-268-12955/2026-09-17_KHMe-RL_interatrialer-Shunt_TrG.pdf",
+      "additionalSources": [
+        {
+          "label": "G-BA decision text, hospital-treatment directive (KHMe-RL)",
+          "url": "https://www.g-ba.de/downloads/39-261-8023/2026-09-17_KHMe-RL_interatrialer-Shunt.pdf"
+        },
+        {
+          "label": "G-BA decision text, outpatient directive (MVV-RL, par. 135)",
+          "url": "https://www.g-ba.de/downloads/39-261-8022/2026-09-17_MVV-RL_interatrialer-Shunt.pdf"
+        },
+        {
+          "label": "G-BA procedure page (par. 137c, LVEF <= 40 %)",
+          "url": "https://www.g-ba.de/bewertungsverfahren/methodenbewertung/338/"
+        }
+      ],
+      "topicTags": [
+        "G-BA",
+        "reimbursement",
+        "interatrial shunt",
+        "HFrEF",
+        "RELIEVE-HF"
+      ],
+      "relevantNodeIds": [
+        "trial-relieve-hf",
+        "cond-hfref"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-17-pi-cardia-shortcut-recall",
+      "publishedAt": "2026-09-17",
+      "title": "Pi-Cardia ShortCut (REF Z-A-20.003-US): FDA recall record, transfemoral catheter positioning arm may detach due to weld issue",
+      "summary": "openFDA lists a recall initiated by Pi-Cardia on 2026-07-06 (posted 2026-09-17; Open, Classified; product code SCZ; root cause \"Process control\") for ShortCut REF Z-A-20.003-US. The record gives the reason as \"Transfemoral catheter, positing arm may detached due to weld issue\". The record lists lot SCUS-00013 (46 units) distributed in eight US states; it has no recall class field.",
+      "sourceName": "openFDA device recall enforcement",
+      "sourceUrl": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=222130",
+      "additionalSources": [],
+      "topicTags": [
+        "TAVR",
+        "leaflet modification",
+        "coronary obstruction",
+        "recall",
+        "Pi-Cardia"
+      ],
+      "relevantNodeIds": [
+        "cond-failed-surgical-aortic-bioprosthesis",
+        "proc-tavi"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-16-encircle-mac-registry-one-year-sapien-m3",
+      "publishedAt": "2026-09-16",
+      "title": "Transseptal Transcatheter Mitral Valve Replacement for Mitral Annular Calcification: ENCIRCLE MAC Registry 1-Year Outcomes",
+      "summary": "In the prospective single-arm ENCIRCLE MAC Registry, 364 patients were screened (50.8% excluded for anatomy), SAPIEN M3 (nitinol dock plus balloon-expandable valve, transseptal) was attempted in 100 and implanted in 93; 7 aborts, 6 at encircling. One-year Kaplan-Meier death or HF hospitalisation 33.6% (death 21.1%, HFH 19.4%); MR at most 1+ in 98.5%; disabling stroke 5.1%, LVOT obstruction 4.8%, mitral reintervention 11.4%. Post hoc, nominal P values, no comparator.",
+      "sourceName": "Journal of the American College of Cardiology",
+      "sourceUrl": "https://doi.org/10.1016/j.jacc.2026.08.016",
+      "additionalSources": [
+        {
+          "label": "Indexed record",
+          "url": "https://europepmc.org/article/MED/42873164"
+        }
+      ],
+      "topicTags": [
+        "TMVR",
+        "mitral annular calcification",
+        "SAPIEN M3",
+        "registry"
+      ],
+      "relevantNodeIds": [
+        "trial-encircle",
+        "dev-sapien-m3",
+        "cond-mr",
+        "co-edwards"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-16-nice-draft-cerebral-protection-tavi-not-recommended",
+      "publishedAt": "2026-09-16",
+      "title": "NICE draft interventional procedures guidance: percutaneous cerebral protection device during TAVI to prevent stroke should not be used",
+      "summary": "NICE posted draft guidance (HTG10881, review of its interventional-procedures guidance) on 16 Sep 2026 that recommends against using percutaneous cerebral embolic protection during TAVI. The committee cited a rapid review (4 systematic reviews, 1 randomised trial, 2 retrospective studies) and said randomised evidence, including a large UK trial, shows no significant effect on stroke or death. Observational data suggest benefit but are at high risk of bias. Consultation closed 6 Oct 2026; the second committee meeting was cancelled on 27 Oct, so guidance moves to chairs' actions; final expected 11 Feb 2027.",
+      "sourceName": "NICE",
+      "sourceUrl": "https://www.nice.org.uk/guidance/gid-htg10881/documents/consultation-document",
+      "additionalSources": [
+        {
+          "label": "NICE project page and timeline (GID-HTG10881)",
+          "url": "https://www.nice.org.uk/guidance/indevelopment/gid-htg10881"
+        },
+        {
+          "label": "NICE project documents",
+          "url": "https://www.nice.org.uk/guidance/indevelopment/gid-htg10881/documents"
+        }
+      ],
+      "topicTags": [
+        "NICE",
+        "TAVI",
+        "cerebral embolic protection",
+        "stroke",
+        "draft guidance"
+      ],
+      "relevantNodeIds": [
+        "proc-tavi",
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
       "id": "news-2026-09-16-politecnico-milano-tavi-post-dilation-simulation",
       "publishedAt": "2026-09-16",
       "title": "Politecnico di Milano validates a balloon post-dilation model for patient-specific TAVI simulation",
@@ -2337,6 +3522,42 @@
       "relevantNodeIds": [
         "cond-as"
       ]
+    },
+    {
+      "id": "news-2026-09-15-past-hfref-d-shant-atrial-shunt-registered",
+      "publishedAt": "2026-09-15",
+      "title": "Atrial Shunt for the Treatment of Heart Failure With Reduced Ejection Fraction (NCT07820410, PAST-HFrEF): randomised D-Shant study registered",
+      "summary": "ClinicalTrials.gov first posted on 2026-09-15 a randomised, open-label, single-masked study of the D-Shant atrial shunt plus guideline-directed therapy versus GDMT alone in HFrEF, sponsor Beijing Anzhen Hospital, 208 participants (estimated), LVEF 20 to 40 percent, NYHA III. The record describes a braided nitinol device thermally set with a waist; primary outcome is a composite of death, transplant or LVAD, HF rehospitalisation and unplanned outpatient worsening HF within 12 months. Recruiting, start recorded as 2024-11-25 (actual), registered retrospectively.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07820410",
+      "topicTags": [
+        "interatrial shunt",
+        "HFrEF",
+        "nitinol",
+        "randomised"
+      ],
+      "relevantNodeIds": [
+        "cond-hfref"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-09-14-transcatheter-asd-closure-erosion-embolization-30-centre-survey",
+      "publishedAt": "2026-09-14",
+      "title": "Erosion and embolization after transcatheter atrial septal defect closure: Findings from a multicenter international survey",
+      "summary": "International survey of 30 centres that contributed anonymous aggregate retrospective data on 13,155 transcatheter ASD closures performed 2011 to 2021 (40% in children; Amplatzer device in 58%). Seventeen erosions (0.13%) were reported, 10 in children (0.19%) and 7 in adults (0.09%); all were treated surgically and one patient died. Embolization occurred in 91 cases (0.7%), 60% in children and 80% within 24 hours; surgical retrieval was used in 29%, and the abstract reports no fatal complications irrespective of management. The authors describe both complications as exceedingly rare.",
+      "sourceName": "International Journal of Cardiology",
+      "sourceUrl": "https://doi.org/10.1016/j.ijcard.2026.134746",
+      "topicTags": [
+        "ASD closure",
+        "device erosion",
+        "device embolization",
+        "survey"
+      ],
+      "relevantNodeIds": [
+        "cond-asd"
+      ],
+      "reviewStatus": "reviewed"
     },
     {
       "id": "news-2026-09-12-ai-powered-ultrasound-robotic-system-guides-transcatheter-closure-of-con",
@@ -4619,7 +5840,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 4,
+          "degree": 5,
           "pulse": 0,
           "entity": {
             "id": "cond-asd",
@@ -4716,7 +5937,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 12,
+          "degree": 13,
           "pulse": 7,
           "entity": {
             "id": "cond-hcm",
@@ -4783,7 +6004,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 52,
+          "degree": 54,
           "pulse": 5,
           "entity": {
             "id": "cond-hfref",
@@ -4881,7 +6102,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 48,
+          "degree": 54,
           "pulse": 9,
           "entity": {
             "id": "cond-as",
@@ -4953,7 +6174,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 65,
+          "degree": 69,
           "pulse": 8,
           "entity": {
             "id": "cond-mr",
@@ -5022,7 +6243,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 47,
+          "degree": 51,
           "pulse": 9,
           "entity": {
             "id": "cond-tr",
@@ -5125,7 +6346,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 5,
+          "degree": 6,
           "pulse": 0,
           "entity": {
             "id": "cond-ischemic-lv-remodeling",
@@ -5192,7 +6413,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 54,
+          "degree": 57,
           "pulse": 0,
           "entity": {
             "id": "cond-hf",
@@ -5286,7 +6507,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 3,
+          "degree": 4,
           "pulse": 0,
           "entity": {
             "id": "cond-failed-surgical-aortic-bioprosthesis",
@@ -7826,7 +9047,7 @@
             "curation": {
               "status": "curated",
               "lastUpdated": "2026-10-03",
-              "notes": "September 30, 2026 approval replaces the pending-PDUFA note. Adult and weight-based pediatric starting doses are separate in the current intelligence catalog. SCOUT-HCM studied adolescents ≥35 kg; the US label covers pediatric patients ≥30 kg. Exact supplemental NDA number was not established in this audit.",
+              "notes": "September 30, 2026 approval replaces the pending-PDUFA note. Adult and weight-based pediatric starting doses are separate in the current intelligence catalog. SCOUT-HCM studied adolescents ≥35 kg; the US label covers pediatric patients ≥30 kg. Drugs@FDA record (openFDA): NDA 214998 supplement 13, class Efficacy, approved 2026-09-30.",
               "sources": [
                 "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=669c936b-3ee6-4e36-8a22-79dd11b1255b",
                 "https://packageinserts.bms.com/pi/pi_camzyos.pdf",
@@ -8659,7 +9880,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 6,
+          "degree": 7,
           "pulse": 8,
           "timelineDate": "2007-03-01",
           "entity": {
@@ -9236,7 +10457,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 8,
+          "degree": 9,
           "pulse": 7,
           "timelineDate": "2019-02-01",
           "entity": {
@@ -10477,7 +11698,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 4,
           "pulse": 0,
           "entity": {
             "id": "dev-tricvalve",
@@ -10549,7 +11770,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 4,
+          "degree": 5,
           "pulse": 0,
           "entity": {
             "id": "dev-revivent-tc",
@@ -15690,6 +16911,750 @@
       },
       {
         "data": {
+          "id": "dev-d-shant",
+          "label": "D-Shant atrial shunt",
+          "group": "device",
+          "category": "Interatrial shunt (braided nitinol, fixed orifice)",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-d-shant",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "D-Shant atrial shunt",
+            "subtype": "Interatrial shunt (braided nitinol, fixed orifice)",
+            "treats": [
+              "cond-hfref"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Registered randomized study PAST-HFrEF (NCT07820410), recruiting, sponsored by Beijing Anzhen Hospital. Papers report hospital and multicentre studies in China; a 2022 paper states NMPA and IRB approval of its study. No marketing authorization record was read; regulatory status is not_yet_reviewed.",
+            "description": "Interatrial shunt for heart failure: a double-disc, buckle-shaped nitinol mesh plug with a fixed-orifice waist, delivered by the femoral vein to the interatrial septum. Papers describe four models (4, 6, 8 and 10 mm orifice; 16 to 28 mm discs) and an eccentric nut for snare retrieval. Studied in HFrEF and HFpEF patients in China; a 120-patient single-arm HFrEF study (abstract) reports 1-year improvements, and a randomised study is registered. Maker names differ between papers.",
+            "mechanism": "Fixed-orifice waist reinforced so the septum does not compress it; left-to-right flow through the septal orifice decompresses the left atrium (authors' and registrant's wording). Models differ by orifice and disc diameter.",
+            "materials": [
+              {
+                "name": "Nickel-titanium alloy",
+                "role": "Woven double-disc mesh plug",
+                "category": "frame",
+                "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9065846/fullTextXML",
+                "note": "Stainless-steel nut at the delivery connection also described; wire gauge not stated."
+              }
+            ],
+            "links": [
+              {
+                "label": "ClinicalTrials.gov NCT07820410",
+                "url": "https://clinicaltrials.gov/study/NCT07820410"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07820410",
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9065846/fullTextXML",
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10648378/fullTextXML",
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41107031%20AND%20SRC:MED&resultType=core&format=json"
+              ],
+              "notes": "Registry record and open-access papers retrieved 2026-11-10; SUSTAIN-HF abstract only. Maker printed three ways in the papers; no company set. No authorization record read."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-impulse-optimizer-ccm",
+          "label": "Impulse Dynamics Optimizer Smart System (CCM therapy)",
+          "group": "device",
+          "category": "Implantable pulse generator for cardiac contractility modulation",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "timelineDate": "2019-03-21",
+          "entity": {
+            "id": "dev-impulse-optimizer-ccm",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Impulse Dynamics Optimizer Smart System (CCM therapy)",
+            "subtype": "Implantable pulse generator for cardiac contractility modulation",
+            "company": "co-impulse-dynamics",
+            "treats": [
+              "cond-hf"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA PMA P180036 approved 2019-03-21 for the OPTIMIZER Smart System, with supplements through 2026-10-14 in the openFDA record; indication per the approval-order statement: NYHA class III heart failure, symptomatic on GDMT, normal sinus rhythm, not indicated for CRT, LVEF 25 to 45%. Other jurisdictions not_yet_reviewed; the investigational CCM-D system is not covered. Supplements in the openFDA record list a 2-lead configuration (S006, 2020), the Smart Mini (S007, 2021) and Smart Mini and Lite (S030, 2024); their labeling content was not read.",
+            "timeline": {
+              "date": "2019-03-21",
+              "event": "FDA PMA approval of the OPTIMIZER Smart System (P180036)",
+              "dateBasis": "fda-approval",
+              "precision": "day",
+              "source": "https://api.fda.gov/device/pma.json?search=trade_name:optimizer&limit=50"
+            },
+            "description": "Implantable pulse generator that delivers cardiac contractility modulation (CCM) therapy to the heart in symptomatic heart failure. The sponsor states the system delivers non-excitatory CCM signals and has no pacemaker or ICD functions. Mechanism details beyond that wording are not established here.",
+            "mechanism": "Cardiac contractility modulation therapy in general is described in a peer-reviewed review as delivery of high-voltage biphasic signals to the right-ventricular septal wall during the absolute refractory period; the sponsor states the Optimizer Smart System delivers non-excitatory CCM signals and has no pacemaker or ICD functions. Model-specific mechanism is not established here.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "links": [
+              {
+                "label": "Impulse Dynamics",
+                "url": "https://impulse-dynamics.com/"
+              },
+              {
+                "label": "openFDA PMA records P180036",
+                "url": "https://api.fda.gov/device/pma.json?search=trade_name:optimizer&limit=50"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://api.fda.gov/device/pma.json?search=trade_name:optimizer&limit=50",
+                "https://impulse-dynamics.com/",
+                "https://news.impulse-dynamics.com/impulse-dynamics-presented-real-world-late-breaking-data-revealing-heart-failure-hospitalization-reduction-and-sustained-clinical-benefits-of-ccm-therapy-at-one-year/",
+                "https://api.fda.gov/device/pma.json?search=applicant:%22impulse%20dynamics%22&limit=100",
+                "https://europepmc.org/article/MED/37769793"
+              ],
+              "notes": "openFDA PMA records, company site and company release retrieved 2026-11-10. Scope for cardiac contractility modulation not yet ruled on by the owner."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-microport-cardioflow-tmvr",
+          "label": "MicroPort CardioFlow Transcatheter Mitral Valve Replacement System",
+          "group": "device",
+          "category": "Transcatheter mitral valve replacement system (transapical)",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-microport-cardioflow-tmvr",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "MicroPort CardioFlow Transcatheter Mitral Valve Replacement System",
+            "subtype": "Transcatheter mitral valve replacement system (transapical)",
+            "company": "co-microport-cardioflow",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Registered pre-market clinical investigation CF-TMVR (NCT07857343, not yet recruiting, estimated start 2026-12-01) in China; the registry states it is intended to support product registration in China or other countries. No authorization is documented here; other jurisdictions not_yet_reviewed.",
+            "description": "Registrant-described transcatheter mitral valve replacement system studied in a single-arm pre-market investigation in degenerative mitral regurgitation. The registry text states transapical delivery under imaging guidance, with the valve released at the mitral annulus to replace the native valve. Frame, leaflet and anchoring design are not stated; no clinical result is established by this record.",
+            "mechanism": "Per the registry: the valve loaded in the delivery system is advanced transapically to the mitral annulus and released, replacing the native mitral valve.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "links": [
+              {
+                "label": "ClinicalTrials.gov NCT07857343",
+                "url": "https://clinicaltrials.gov/study/NCT07857343"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07857343"
+              ],
+              "notes": "ClinicalTrials.gov registry record retrieved 2026-11-10. Design and materials beyond access route not stated by the source."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-myval-octapro",
+          "label": "Myval Octapro",
+          "group": "device",
+          "category": "Balloon-expandable transcatheter heart valve (TAVR)",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-myval-octapro",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Myval Octapro",
+            "subtype": "Balloon-expandable transcatheter heart valve (TAVR)",
+            "company": "co-meril-life-sciences",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "No regulator document was read. A 2026 registry of 303 consecutive patients with severe aortic stenosis (abstract) reports early outcomes in Europe and India. One paper states the first-generation Myval received a CE mark in 2019; Octapro authorization is not_yet_reviewed.",
+            "description": "Third-generation Myval balloon-expandable transcatheter valve by Meril Life Sciences (per papers): intra-annular bovine-pericardium trileaflet valve in a cobalt-alloy frame (19.5 to 23.5 mm tall), a two-row hybrid-cell design, PET inner skirt and a higher outer skirt, nine sizes from 20 to 32 mm, delivered through a 14F expandable sheath. In the MyPro registry abstract (303 consecutive patients, not randomized; European and Indian centres) VARC-3 technical success was 97%; at 30 days device success was 92.4%, early safety 80%, all-cause mortality 2.6% and guideline-indicated permanent pacemaker implantation 14.2%.",
+            "mechanism": "Two-row interlacing hybrid-cell frame: V-shaped chevron outflow zone (55% of frame height) and octagonal inflow cells, reported to foreshorten 10 to 12% on deployment (Octacor 19 to 20%, Myval generation 1 21 to 24%); PET sealing skirts (authors' description).",
+            "materials": [
+              {
+                "name": "Cobalt alloy",
+                "role": "Balloon-expandable frame",
+                "category": "frame",
+                "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099935/fullTextXML",
+                "note": "Alloy composition not stated; paper says cobalt alloy."
+              },
+              {
+                "name": "Bovine pericardium",
+                "role": "Tri-leaflet valve (intra-annular)",
+                "category": "leaflet",
+                "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099935/fullTextXML"
+              },
+              {
+                "name": "Polyethylene terephthalate (PET)",
+                "role": "Internal sealing skirt; external skirt material not stated",
+                "category": "fabric",
+                "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099935/fullTextXML"
+              }
+            ],
+            "links": [
+              {
+                "label": "MyPro registry (Int J Cardiol 2026)",
+                "url": "https://doi.org/10.1016/j.ijcard.2026.134967"
+              },
+              {
+                "label": "ClinicalTrials.gov NCT07532317 (Myval THV Series)",
+                "url": "https://clinicaltrials.gov/study/NCT07532317"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42838146%20AND%20SRC:MED&resultType=core&format=json",
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099935/fullTextXML",
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13603376/fullTextXML",
+                "https://clinicaltrials.gov/api/v2/studies/NCT07532317"
+              ],
+              "notes": "Design from two secondary papers (not a manufacturer specification); outcomes from the MyPro abstract only. No regulator record read; Meril product page was not readable."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-reaces-asd-occluder",
+          "label": "ReAces puncturable ASD occluder",
+          "group": "device",
+          "category": "Atrial septal defect occluder (puncturable)",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-reaces-asd-occluder",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "ReAces puncturable ASD occluder",
+            "subtype": "Atrial septal defect occluder (puncturable)",
+            "treats": [
+              "cond-asd"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Studied in the PASSER randomized trial (NCT05371366), which the authors say supported an NMPA premarket application; no regulator decision document was read. Other jurisdictions not_yet_reviewed.",
+            "description": "ASD occluder with left and right discs and a waist on a nitinol frame; the central hole is covered by a PET membrane free of metal mesh, so that a large sheath can later cross the septum and the central region is thinner. Authors state about 60% less metal than a same-size traditional occluder. In the PASSER randomised trial, 12-month complete closure was noninferior to an Amplatzer-like occluder; later septal puncture was not tested in humans. Developer named in papers as Hanyu Medical Technology (Shanghai).",
+            "mechanism": "Authors' description: the central region is a PET membrane without metal mesh (3-layer in the 2026 paper), intended to let a large sheath cross the septum through the occluder and to endothelialize rapidly; frame is nickel-titanium wire.",
+            "materials": [
+              {
+                "name": "Nickel-titanium (memory) wire",
+                "role": "Frame: left disc, right disc, waist",
+                "category": "frame",
+                "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9831856/fullTextXML"
+              },
+              {
+                "name": "Polyethylene terephthalate (PET) membrane",
+                "role": "Covers the central hole; no metal mesh",
+                "category": "fabric",
+                "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13745100/fullTextXML",
+                "note": "Layer count differs between papers (3-layer in 2026; single layer in 2024)."
+              }
+            ],
+            "links": [
+              {
+                "label": "J Am Heart Assoc 2026;15:e045052 (open access)",
+                "url": "https://doi.org/10.1161/JAHA.125.045052"
+              },
+              {
+                "label": "ClinicalTrials.gov NCT05371366",
+                "url": "https://clinicaltrials.gov/study/NCT05371366"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13745100/fullTextXML",
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9831856/fullTextXML",
+                "https://clinicaltrials.gov/api/v2/studies/NCT05371366"
+              ],
+              "notes": "Open-access papers and registry record retrieved 2026-11-10. Membrane layer count differs between papers. No regulator record read."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-shortcut",
+          "label": "Pi-Cardia ShortCut",
+          "group": "device",
+          "category": "Transcatheter leaflet-splitting catheter (TAVR adjunct)",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": true,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-shortcut",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Pi-Cardia ShortCut",
+            "subtype": "Transcatheter leaflet-splitting catheter (TAVR adjunct)",
+            "company": "co-pi-cardia",
+            "treats": [
+              "cond-failed-surgical-aortic-bioprosthesis"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "FDA De Novo DEN240017 (openFDA decision date 2024-09-27, decision code DENG, product code SCZ, regulation 870.1254, class 2). The regulator indication wording was not read; the sponsor words it as valve-in-valve TAVR in patients at risk of coronary obstruction. Other jurisdictions not_yet_reviewed. The sponsor indication wording says bioprosthetic valves; the pivotal study included 2 of 60 failed transcatheter valves.",
+            "lifecycleStatus": "recalled",
+            "lifecycleDetail": "FDA recall Z-3213-2026 (initiated 2026-07-06, posted 2026-09-17, open) applies to 46 units in lot SCUS-00013 of REF Z-A-20.003-US because the catheter positioning arm may detach (weld issue); other lots are not flagged by this record. See the FDA record for current status.",
+            "description": "Transfemoral catheter that splits bioprosthetic aortic valve leaflets before valve-in-valve TAVR in patients at risk of coronary obstruction (sponsor wording; \"bioprosthetic\", not \"surgical\"; the FDA device-type definition reads: mechanically splitting aortic valve leaflets that may prevent coronary artery ostia obstruction during planned transcatheter valve procedures). In the single-arm 60-patient pivotal study (58 failed surgical and 2 failed transcatheter valves) splitting succeeded in all; the primary safety endpoint (procedure-related death or stroke at discharge or 7 days) was met in 98.3% with one disabling stroke, and 30-day all-cause mortality was 2 of 60. The recall record describes a positioning arm on the catheter.",
+            "mechanism": "A positioning arm opens above the valve and guides a splitting element that punctures the leaflet base from the ventricular side; withdrawing the catheter splits the leaflet from base to tip; a second leaflet can be split with the same device (pivotal paper). Non-implant.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "links": [
+              {
+                "label": "openFDA recall record 222130",
+                "url": "https://api.fda.gov/device/recall.json?search=cfres_id:222130&limit=3"
+              },
+              {
+                "label": "openFDA record DEN240017",
+                "url": "https://api.fda.gov/device/510k.json?search=device_name:shortcut&limit=10"
+              },
+              {
+                "label": "Pi-Cardia ShortCut page",
+                "url": "https://www.pi-cardia.net/technology-shortcut"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://api.fda.gov/device/recall.json?search=cfres_id:222130&limit=3",
+                "https://api.fda.gov/device/510k.json?search=device_name:shortcut&limit=10",
+                "https://api.fda.gov/device/classification.json?search=product_code:SCZ&limit=3",
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11365606/fullTextXML",
+                "https://clinicaltrials.gov/api/v2/studies/NCT04952909",
+                "https://www.pi-cardia.net/technology-shortcut"
+              ],
+              "notes": "openFDA, ClinicalTrials.gov, the open-access pivotal paper and the company site retrieved 2026-11-10. Indication taken from sponsor wording; the FDA decision summary was not read. Lot-limited recall; not all units recalled."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-taurus-nxt",
+          "label": "Peijia TaurusNXT transcatheter aortic valve system",
+          "group": "device",
+          "category": "Transcatheter aortic valve (TAVR)",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-taurus-nxt",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Peijia TaurusNXT transcatheter aortic valve system",
+            "subtype": "Transcatheter aortic valve (TAVR)",
+            "company": "co-peijia-medical",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Registered single-arm target-value study NCT07908225 (150 participants actual, active not recruiting, China). The issuer reports an NMPA registration application accepted in December 2025 and pending (HKEX, 2026-03-25); no regulator record was opened. Other jurisdictions not_yet_reviewed.",
+            "description": "Issuer-described third-generation TAVR system using non-glutaraldehyde crosslinked dry bio-tissue, pre-loaded on a retrievable, steerable delivery catheter, which the issuer expects to enhance valve durability. Design wording is the issuer's; the registry record does not describe the valve, and no clinical result is established by this record.",
+            "mechanism": "Issuer-described: non-glutaraldehyde tissue crosslinking intended to remove a source of leaflet calcification, plus ultra-low-temperature vacuum freeze-drying so the valve can be pre-loaded on the delivery catheter.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "links": [
+              {
+                "label": "ClinicalTrials.gov NCT07908225",
+                "url": "https://clinicaltrials.gov/study/NCT07908225"
+              },
+              {
+                "label": "Peijia HKEX annual results announcement",
+                "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07908225",
+                "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf"
+              ],
+              "notes": "Registry record (retrieved 2026-11-10) and HKEX announcement of 2026-03-25. Design wording is the issuer's and tied to the study by name only."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-geminione-teer",
+          "label": "Peijia GeminiOne TEER system",
+          "group": "device",
+          "category": "Transcatheter edge-to-edge mitral repair (leaflet clip)",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-geminione-teer",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Peijia GeminiOne TEER system",
+            "subtype": "Transcatheter edge-to-edge mitral repair (leaflet clip)",
+            "company": "co-peijia-medical",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Issuer reports NMPA registration accepted October 2025 (HKEX, 2026-03-25) and, on its home page, NMPA marketing approval in September 2026 for severe degenerative MR in patients contraindicated for or at high risk from surgery; no NMPA record was read. EU MDR CE application submitted and FDA IDE for an early feasibility study reported by the issuer. Not confirmed in any jurisdiction by a regulator document.",
+            "description": "Edge-to-edge clip system for mitral regurgitation delivered transcatheter with an adjustable curved introducer catheter. In the single-arm GeminiOne-DMR trial (120 patients, prohibitive surgical risk, degenerative MR 3+ or more) a 2026 paper reports 1-year clinical success of 89.84% (freedom from all-cause mortality, mitral valve reintervention and MR above 2+ at 1 year; 120 enrolled; abstract). The issuer says tricuspid use is being explored.",
+            "mechanism": "Issuer-described: a sliding groove mechanism that allows a longer coaptation length with a smaller implant profile, independent leaflet grasping and U-shaped arms that widen the leaflet clamping width; the peer-reviewed abstract calls it a groove-cam mechanism.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "links": [
+              {
+                "label": "ClinicalTrials.gov NCT05655897",
+                "url": "https://clinicaltrials.gov/study/NCT05655897"
+              },
+              {
+                "label": "JACC: Asia 1-year outcomes (abstract)",
+                "url": "https://europepmc.org/article/MED/42283667"
+              },
+              {
+                "label": "Peijia HKEX annual results announcement",
+                "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT05655897",
+                "https://europepmc.org/article/MED/42283667",
+                "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf",
+                "https://www.peijiamedical.com/"
+              ],
+              "notes": "Registry, publication abstracts, HKEX announcement and company home page retrieved 2026-11-10. Approval statement is the issuer teaser; no regulator record opened."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-halochord",
+          "label": "HaloChord dual-set artificial chordae system",
+          "group": "device",
+          "category": "Transapical beating-heart artificial chordae system",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-halochord",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "HaloChord dual-set artificial chordae system",
+            "subtype": "Transapical beating-heart artificial chordae system",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "No regulator record or registry entry was found; the only documents are preprints of porcine studies. Manufacturer is not stated in them. Status is not_yet_reviewed.",
+            "description": "Transapical artificial-chordae system described by preprint authors as delivering up to two sets (four threads) of ePTFE chordae per sequence on the beating heart under TEE guidance. Evidence is a 2026 preprint (not peer reviewed) of five pigs with surgically induced acute mitral regurgitation, with no control arm described in the abstract; no human use is documented.",
+            "mechanism": "Per the preprint abstract: suturing devices deploy ePTFE chordae and are anchored at the left ventricular apex, and a fixation device sets chordal length under echocardiographic guidance; the authors say the dual-set design simplifies transapical chordal implantation compared with the single-thread delivery the authors say current systems are limited to; no comparison was made in the study.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "links": [
+              {
+                "label": "Research Square preprint (2026)",
+                "url": "https://www.researchsquare.com/article/rs-10467847/v1"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://www.researchsquare.com/article/rs-10467847/v1",
+                "https://doi.org/10.21203/rs.3.rs-10467847/v1"
+              ],
+              "notes": "Preprint abstract and page read 2026-11-10. Sponsor unknown, so no company link. The 2022 Halochord preprint is not asserted to describe the same generation."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rx-htx-001",
+          "label": "HTX-001",
+          "group": "pharmaceutical",
+          "category": "Antisense oligonucleotide targeting WISPER lncRNA",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "rx-htx-001",
+            "type": "therapy",
+            "therapyType": "pharmaceutical",
+            "name": "HTX-001",
+            "subtype": "Antisense oligonucleotide targeting WISPER lncRNA",
+            "company": "co-haya-therapeutics",
+            "treats": [
+              "cond-hcm"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Registered two-part Phase 1 multiple-ascending-dose study (NCT07867288; healthy adults then symptomatic nonobstructive HCM; 10 participants estimated; recruiting; US sites). The company states FDA Fast Track designation for symptomatic nHCM; no FDA document was read. Not approved.",
+            "description": "Investigational subcutaneous antisense oligonucleotide being studied for symptomatic nonobstructive hypertrophic cardiomyopathy. Developer-described as targeting a lncRNA (WISPER) linked to cardiac fibrosis; no clinical result is established.",
+            "mechanism": "Sponsor-described: antisense downregulation of WISPER in cardiac myofibroblasts, intended to reprogram the fibrotic cell state. Preclinical Wisper biology: Micheletti et al., Sci Transl Med 2017 (mouse and human tissue).",
+            "links": [
+              {
+                "label": "ClinicalTrials.gov NCT07867288",
+                "url": "https://clinicaltrials.gov/study/NCT07867288"
+              },
+              {
+                "label": "HAYA pipeline",
+                "url": "https://www.hayatx.com/pipeline/"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07867288",
+                "https://www.hayatx.com/pipeline/",
+                "https://europepmc.org/article/MED/28637928"
+              ],
+              "notes": "Registry record, company pages and publication abstract retrieved 2026-11-10. Company statements attributed; Fast Track unverified."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-occlutech-afr",
+          "label": "Occlutech Atrial Flow Regulator (heart-failure use)",
+          "group": "device",
+          "category": "Interatrial shunt device",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-occlutech-afr",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Occlutech Atrial Flow Regulator (heart-failure use)",
+            "subtype": "Interatrial shunt device",
+            "company": "co-occlutech",
+            "treats": [
+              "cond-hf"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "For heart failure: the manufacturer page states no FDA Premarket Approval and no Health Canada licence; the registry marks the device unapproved within the FDA-regulated FROST-HF randomized study (active, not recruiting). CE or other authorizations for the heart-failure indication were not reviewed (not_yet_reviewed); no regulator record was read.",
+            "description": "Manufacturer-described Nitinol interatrial shunt implant placed on the atrial septum to maintain, for heart failure, a controlled left-to-right shunt created by balloon atrial septostomy and so decompress the left atrium. Evidence includes the registered PRELIEVE non-randomised pilot (a publication abstract, linked by study name and device only, reports 53 implanted patients at 1 year) and registered randomized and registry studies; heart-failure use only, other indications not covered here.",
+            "mechanism": "Sponsor-described: permanently maintains an interatrial communication after balloon atrial septostomy so blood flows from the left to the right atrium; the left atrial decompression is expected to reduce symptoms. FROST-HF tests 6 mm and 8 mm AFR devices against a sham procedure, plus a roll-in arm receiving the AFR.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "links": [
+              {
+                "label": "Manufacturer AFR page",
+                "url": "https://occlutech.com/afr/"
+              },
+              {
+                "label": "FROST-HF (ClinicalTrials.gov)",
+                "url": "https://clinicaltrials.gov/study/NCT05136820"
+              },
+              {
+                "label": "PRELIEVE 1-year abstract (PubMed; linked by name and device)",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/33555114/"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://occlutech.com/afr/",
+                "https://clinicaltrials.gov/api/v2/studies/NCT03030274",
+                "https://clinicaltrials.gov/api/v2/studies/NCT05136820",
+                "https://clinicaltrials.gov/api/v2/studies/NCT04405583",
+                "PMID:33555114"
+              ],
+              "notes": "Manufacturer pages, registry records and a publication abstract read 2026-11-10. Heart-failure indication only; Nitinol is from the manufacturer page and no implant materials table is claimed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-taurus-apex",
+          "label": "Peijia TaurusApex polymeric trileaflet TAVR system",
+          "group": "device",
+          "category": "Transcatheter aortic valve (TAVR), polymeric leaflets",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-taurus-apex",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Peijia TaurusApex polymeric trileaflet TAVR system",
+            "subtype": "Transcatheter aortic valve (TAVR), polymeric leaflets",
+            "company": "co-peijia-medical",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Issuer reports completed animal studies (HKEX, 2026-03-25); no human study or regulator record is established here. Not yet reviewed in any jurisdiction.",
+            "description": "Issuer-described fourth-generation TAVR system whose leaflets are polymeric rather than biological tissue, intended to improve durability, tear resistance and wear resistance. Preclinical per the issuer; design details beyond the leaflet concept are not disclosed.",
+            "mechanism": "Issuer-described: multi-layer bionic composite braided polymeric leaflets in place of biological tissue.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "links": [
+              {
+                "label": "Peijia HKEX annual results announcement",
+                "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf"
+              ],
+              "notes": "HKEX announcement of 2026-03-25 retrieved 2026-11-10; issuer wording only."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vdyne-ttvr",
+          "label": "VDyne transcatheter tricuspid valve replacement system",
+          "group": "device",
+          "category": "Transcatheter tricuspid valve replacement (transfemoral)",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-vdyne-ttvr",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "VDyne transcatheter tricuspid valve replacement system",
+            "subtype": "Transcatheter tricuspid valve replacement (transfemoral)",
+            "company": "co-vdyne",
+            "treats": [
+              "cond-tr"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Registry records mark the device unapproved within FDA-regulated studies (NCT05848284, which the sponsor calls VISTA US early feasibility; NCT07516444, a randomized trial against Edwards EVOQUE that names the device VDyne TriNova and that the sponsor calls pivotal), and a multi-country study (NCT05797519; sites listed in Australia, Austria, Belgium, Czechia, Denmark, Germany, the Netherlands, New Zealand, Spain, Sweden and the United Kingdom, several withdrawn) states its purpose as supporting a CE Mark. The sponsor states it is not approved for commercial sale. No regulator decision has been reviewed.",
+            "description": "Sponsor-described transfemoral transcatheter tricuspid valve replacement system: a bioprosthetic valve with a side-delivery, shallow-entry delivery system that is repositionable and retrievable without hooks or barbs, designed to match the asymmetric tricuspid anatomy. Sponsor statements are attributed; the TRIVITA registry record names the device VDyne TriNova, and only the sponsor page links it to the system in the earlier studies. No clinical result is established by this record.",
+            "mechanism": "Sponsor-described: valve delivered from the side with a shallow trajectory to the annulus and self-aligning to the asymmetric tricuspid anatomy; can be repositioned or retrieved before release (registry: fully retrievable intraoperatively); deployed on the beating heart under fluoroscopy and TEE.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "links": [
+              {
+                "label": "Sponsor technology page",
+                "url": "https://www.vdyne.com/technology"
+              },
+              {
+                "label": "TRIVITA study (ClinicalTrials.gov)",
+                "url": "https://clinicaltrials.gov/study/NCT07516444"
+              },
+              {
+                "label": "Sponsor clinical page",
+                "url": "https://www.vdyne.com/clinical"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://www.vdyne.com/technology",
+                "https://www.vdyne.com/clinical",
+                "https://clinicaltrials.gov/api/v2/studies/NCT05848284",
+                "https://clinicaltrials.gov/api/v2/studies/NCT05797519",
+                "https://clinicaltrials.gov/api/v2/studies/NCT07516444"
+              ],
+              "notes": "Sponsor page and three registry records retrieved 2026-11-10. TriNova and the VISTA-registered system are not asserted to be the same generation; no performance data transferred."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-venus-powerx",
+          "label": "Venus Medtech Venus-PowerX TAVR system",
+          "group": "device",
+          "category": "Transcatheter aortic valve (TAVR), self-expanding, dry tissue",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-venus-powerx",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Venus Medtech Venus-PowerX TAVR system",
+            "subtype": "Transcatheter aortic valve (TAVR), self-expanding, dry tissue",
+            "company": "co-venus-medtech",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Issuer reports a global pivotal clinical study and marketing approval in Argentina, Chile and Venezuela (HKEX, 2026-03-31); no regulator or registry record was read. Other jurisdictions not_yet_reviewed.",
+            "description": "Issuer-described self-expanding TAVR with pre-loaded dry tissue (no glutaraldehyde preservation), an adaptive anti-paravalvular-leak skirt, wire-controlled deployment, retrievability after complete release and a frame with large openings for coronary access. Design wording is the issuer's; no clinical result is established.",
+            "mechanism": "Issuer-described: dry-tissue anti-calcification technology, an adaptive sealing skirt to reduce paravalvular leak and wire-controlled release with retrievability.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "links": [
+              {
+                "label": "Venus Medtech HKEX annual results announcement",
+                "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033102789.pdf"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033102789.pdf"
+              ],
+              "notes": "HKEX announcement of 2026-03-31 retrieved 2026-11-10; issuer wording only."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-mirus",
           "label": "MiRus LLC",
           "group": "company",
@@ -16658,7 +18623,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 4,
+          "degree": 5,
           "pulse": 0,
           "entity": {
             "id": "co-occlutech",
@@ -19744,6 +21709,270 @@
       },
       {
         "data": {
+          "id": "co-impulse-dynamics",
+          "label": "Impulse Dynamics",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-impulse-dynamics",
+            "type": "company",
+            "name": "Impulse Dynamics",
+            "website": "https://impulse-dynamics.com/",
+            "description": "Developer of the Optimizer implantable system delivering cardiac contractility modulation (CCM) therapy for heart failure; the Optimizer Smart System is the subject of FDA PMA P180036 (approved 2019-03-21). The company describes investigational CCM-D (CCM with ICD) and AIM HIGHer programs.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://api.fda.gov/device/pma.json?search=trade_name:optimizer&limit=50",
+                "https://impulse-dynamics.com/",
+                "https://news.impulse-dynamics.com/impulse-dynamics-presented-real-world-late-breaking-data-revealing-heart-failure-hospitalization-reduction-and-sustained-clinical-benefits-of-ccm-therapy-at-one-year/"
+              ],
+              "notes": "openFDA PMA applicant field, company site and release retrieved 2026-11-10. Headquarters not recorded. Scope for cardiac contractility modulation not yet ruled on by the owner."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-microport-cardioflow",
+          "label": "MicroPort CardioFlow Medtech Corporation",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-microport-cardioflow",
+            "type": "company",
+            "name": "MicroPort CardioFlow Medtech Corporation",
+            "description": "Hong Kong-listed (stock code 2160) developer of transcatheter aortic valve, left atrial appendage and other structural heart devices in China. The sponsor of the registered CF-TMVR investigation of a transcatheter mitral valve replacement system, Shanghai MicroPort CardioFlow Medtech Co., Ltd., is described in the HKEX announcement as its wholly-owned subsidiary. Statements are the issuer's.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07857343",
+                "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0402/2026033003758.pdf",
+                "https://www.cardioflowmedtech.com/about/gongsijianjie"
+              ],
+              "notes": "Registry sponsor field, company site and HKEX results retrieved 2026-11-10. No financial information recorded."
+            },
+            "website": "https://www.cardioflowmedtech.com/",
+            "ticker": "2160.HK",
+            "hq": "Shanghai, China"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-peijia-medical",
+          "label": "Peijia Medical Limited",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "co-peijia-medical",
+            "type": "company",
+            "name": "Peijia Medical Limited",
+            "ticker": "9996.HK",
+            "description": "Hong Kong-listed developer of transcatheter valve therapies in China; its 2025 annual results announcement reports registered TAVR products (TaurusOne, TaurusElite, TaurusMax, TaurusTrio), TaurusNXT, a TAVR system designed for durability that was pending NMPA registration as of 2026-03-25, preclinical polymeric-leaflet TaurusApex and the GeminiOne TEER system, for which the company home page reports NMPA approval in September 2026. Statements are the issuer's.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf",
+                "https://clinicaltrials.gov/api/v2/studies/NCT07908225",
+                "https://www.peijiamedical.com/"
+              ],
+              "notes": "HKEX annual results announcement of 2026-03-25 and registry sponsor field, retrieved 2026-11-10. Issuer statements; no regulator records opened; no financial information recorded."
+            },
+            "website": "https://www.peijiamedical.com/",
+            "hq": "Suzhou, Jiangsu, China"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-pi-cardia",
+          "label": "Pi-Cardia Ltd",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-pi-cardia",
+            "type": "company",
+            "name": "Pi-Cardia Ltd",
+            "hq": "Rehovot, Israel",
+            "description": "Israel-based (Rehovot) developer of non-implant catheter leaflet-modification devices; applicant for the FDA De Novo authorization of ShortCut, a transcatheter leaflet-splitting catheter, and recalling firm for one ShortCut lot in 2026.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://api.fda.gov/device/510k.json?search=device_name:shortcut&limit=10",
+                "https://api.fda.gov/device/recall.json?search=cfres_id:222130&limit=3",
+                "https://www.pi-cardia.net/copy-of-about"
+              ],
+              "notes": "openFDA records and the company site retrieved 2026-11-10. Funding and ownership not recorded."
+            },
+            "website": "https://www.pi-cardia.net/"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-chengdu-silara-meditech",
+          "label": "Chengdu Silara Meditech Inc.",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 0,
+          "pulse": 0,
+          "entity": {
+            "id": "co-chengdu-silara-meditech",
+            "type": "company",
+            "name": "Chengdu Silara Meditech Inc.",
+            "hq": "Chengdu, China",
+            "description": "Sponsor of two ClinicalTrials.gov studies of a Transcatheter Aortic Valve System, in severe aortic stenosis and severe aortic insufficiency; location as written in the registry summaries. No website or product detail was read.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT04893603",
+                "https://clinicaltrials.gov/api/v2/studies/NCT05424653"
+              ],
+              "notes": "Registry records retrieved 2026-11-10. Not confirmed as the maker of the Silara polymer valve in a TCT 2026 abstract."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-haya-therapeutics",
+          "label": "HAYA Therapeutics",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-haya-therapeutics",
+            "type": "company",
+            "name": "HAYA Therapeutics",
+            "website": "https://www.hayatx.com/",
+            "hq": "Lausanne, Switzerland",
+            "description": "Clinical-stage developer of RNA-guided therapeutics targeting the regulatory genome; its lead programme HTX-001 is an investigational antisense oligonucleotide in a registered Phase 1 study for nonobstructive hypertrophic cardiomyopathy. Statements are the company's.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://www.hayatx.com/",
+                "https://clinicaltrials.gov/api/v2/studies/NCT07867288"
+              ],
+              "notes": "Company site and registry sponsor field retrieved 2026-11-10. No financial information recorded."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-meril-life-sciences",
+          "label": "Meril Life Sciences",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-meril-life-sciences",
+            "type": "company",
+            "name": "Meril Life Sciences",
+            "description": "Maker of the Myval balloon-expandable transcatheter heart valve family, including Octacor and Octapro (per papers, which print \"Vapi, India\" beside the name), and sponsor of a registered Myval THV Series trial (NCT07532317).",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099935/fullTextXML",
+                "https://clinicaltrials.gov/api/v2/studies/NCT07532317"
+              ],
+              "notes": "Location is as printed beside the maker name in papers, not a stated head office, so no hq is set. No company-owned page with product text was readable. No funding information recorded."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-vdyne",
+          "label": "VDyne, Inc.",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-vdyne",
+            "type": "company",
+            "name": "VDyne, Inc.",
+            "hq": "Maple Grove, Minnesota, USA",
+            "website": "https://www.vdyne.com/",
+            "description": "Sponsor of the VDyne transcatheter tricuspid valve replacement system studies registered on ClinicalTrials.gov, including the TRIVITA randomized pivotal trial against Edwards EVOQUE. Address as given on the company website.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://www.vdyne.com/",
+                "https://clinicaltrials.gov/api/v2/studies/NCT07516444"
+              ],
+              "notes": "Company site and registry retrieved 2026-11-10. No ownership or funding information recorded."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-venus-medtech",
+          "label": "Venus Medtech (Hangzhou) Inc.",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-venus-medtech",
+            "type": "company",
+            "name": "Venus Medtech (Hangzhou) Inc.",
+            "ticker": "2500.HK",
+            "website": "https://www.venusmedtech.com/",
+            "hq": "Hangzhou, China",
+            "description": "Hong Kong-listed developer of transcatheter heart valve devices (aortic, pulmonary, and tricuspid or mitral programmes) in China. Its 2025 annual results announcement lists several TAVR products including Venus-PowerX, which it lists at pivotal stage and also reports as approved in Argentina, Chile and Venezuela. Statements are the issuer's.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033102789.pdf",
+                "https://www.venusmedtech.com/"
+              ],
+              "notes": "HKEX announcement of 2026-03-31 and company home page retrieved 2026-11-10. No financial information recorded."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "trial-siegel-star",
           "label": "STAR (SIEGEL TAVR)",
           "group": "trial",
@@ -21394,7 +23623,7 @@
             "enrollment": 508,
             "year": 2024,
             "primaryEndpoint": "Hierarchical clinical composite (death, transplant/LVAD, HF events, KCCQ)",
-            "outcomeSummary": "Neutral overall with opposing directional effects: apparent benefit in HFrEF and a harm signal in HFpEF.",
+            "outcomeSummary": "Neutral overall with opposing directional effects: apparent benefit in HFrEF and a harm signal in HFpEF. A 2-year JACC: Heart Failure analysis reports implant success 369 of 370 attempts, shunt patency in 346 of 348 patients with imaging (99.4%) through 2 years; in HFrEF, all-cause MACNE, major bleeding and renal decline were not increased and SAE burden was lower; in HFpEF, MACNE, SAEs, major bleeding and renal decline were higher with the shunt.",
             "resultStatus": "mixed",
             "references": [
               "https://clinicaltrials.gov/search?term=RELIEVE-HF"
@@ -28952,7 +31181,7 @@
             "name": "Early Feasibility Study of the Capstan Medical TMVR System (NCT07917208)",
             "nctId": "NCT07917208",
             "phase": "Early feasibility study",
-            "status": "not-yet-recruiting",
+            "status": "recruiting",
             "conditions": [
               "cond-mr"
             ],
@@ -29219,6 +31448,390 @@
                 "https://clinicaltrials.gov/api/v2/studies/NCT07919366"
               ],
               "notes": "Registry record revision 2026-11-05, retrieved 2026-11-08. Registration only; estimated start 2027-01 and completion dates are estimates; no results."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cf-tmvr",
+          "label": "CF-TMVR — MicroPort CardioFlow transcatheter mitral valve replacement pre-market study (NCT07857343)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-cf-tmvr",
+            "type": "trial",
+            "name": "CF-TMVR — MicroPort CardioFlow transcatheter mitral valve replacement pre-market study (NCT07857343)",
+            "nctId": "NCT07857343",
+            "phase": "Single-arm pre-market clinical investigation",
+            "status": "not-yet-recruiting",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-microport-cardioflow-tmvr"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 152,
+                "basis": "estimated",
+                "asOf": "2026-10-05",
+                "scope": "Registry enrollment estimate; no participant enrolled is established.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT07857343"
+              }
+            ],
+            "primaryEndpoint": "Cumulative all-cause mortality at 12 months post-procedure (registry-stated).",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT07857343"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07857343"
+              ],
+              "notes": "Registry record posted 2026-10-05, retrieved 2026-11-10. Transapical TMVR in degenerative MR, patients 65 or older unsuitable for surgery or mTEER; start 2026-12-01 and completion dates are estimates; no results."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-clasp-iii-tr-ced",
+          "label": "CLASP III TR CED — PASCAL Precision tricuspid coverage-with-evidence study (NCT07859709)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-clasp-iii-tr-ced",
+            "type": "trial",
+            "name": "CLASP III TR CED — PASCAL Precision tricuspid coverage-with-evidence study (NCT07859709)",
+            "nctId": "NCT07859709",
+            "phase": "Observational cohort (CED)",
+            "status": "not-yet-recruiting",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-pascal"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 2350,
+                "basis": "estimated",
+                "asOf": "2026-10-06",
+                "scope": "Registry enrollment estimate for both arms; no participant enrolled is established.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT07859709"
+              }
+            ],
+            "primaryEndpoint": "Composite of all-cause death or heart failure hospitalization, time to death or heart failure hospitalization after time zero, 2 years (registry-stated).",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT07859709"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07859709"
+              ],
+              "notes": "Registry record posted 2026-10-06, retrieved 2026-11-10. Observational retrospective-perspective cohort of PASCAL Precision-treated versus untreated patients aged 65 or older with at least severe TR; start 2026-10-15 and completion dates are estimates; no results."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-evolut-durability-japan",
+          "label": "Long-term durability of the Evolut series in Japan (jRCT1052260216)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-evolut-durability-japan",
+            "type": "trial",
+            "name": "Long-term durability of the Evolut series in Japan (jRCT1052260216)",
+            "phase": "Observational (jRCT)",
+            "status": "active",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-evolut"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 2000,
+                "basis": "estimated",
+                "asOf": "2026-11-09",
+                "scope": "Registry planned sample size; no actual count is stated.",
+                "source": "https://jrct.mhlw.go.jp/latest-detail/jRCT1052260216"
+              }
+            ],
+            "primaryEndpoint": "All-cause mortality, cardiac-related rehospitalization and reoperation due to valve dysfunction (registry-stated); durability criteria not defined in the registry.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://jrct.mhlw.go.jp/latest-detail/jRCT1052260216"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://jrct.mhlw.go.jp/latest-detail/jRCT1052260216"
+              ],
+              "notes": "jRCT record first published 2026-11-09, read 2026-11-10. Observational cohort of TAVI with Evolut R, PRO, PRO+, FX and FX+ up to 2024-12-31 in Japan; planned sample size 2000; no results."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-past-hfref",
+          "label": "PAST-HFrEF — D-Shant atrial shunt plus GDMT vs GDMT in HFrEF (NCT07820410)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-past-hfref",
+            "type": "trial",
+            "name": "PAST-HFrEF — D-Shant atrial shunt plus GDMT vs GDMT in HFrEF (NCT07820410)",
+            "nctId": "NCT07820410",
+            "phase": "Phase 2/3 (registry); randomized device trial",
+            "status": "recruiting",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "dev-d-shant"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 208,
+                "basis": "estimated",
+                "asOf": "2026-09-15",
+                "scope": "Registry enrollment estimate; no enrolled count is stated.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT07820410"
+              }
+            ],
+            "primaryEndpoint": "Composite at 12 months of all-cause mortality, heart transplantation or LVAD implantation due to heart failure, heart-failure rehospitalization and unplanned outpatient worsening heart failure (registry-stated).",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT07820410"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07820410"
+              ],
+              "notes": "Registry record posted 2026-09-15, retrieved 2026-11-10. Randomized D-Shant plus GDMT versus GDMT alone, outcomes-assessor masked; estimated completion 2027-12-31; no results."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-relive",
+          "label": "RELIVE — Revivent System plus GDMT vs GDMT alone (NCT06813820)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-relive",
+            "type": "trial",
+            "name": "RELIVE — Revivent System plus GDMT vs GDMT alone (NCT06813820)",
+            "nctId": "NCT06813820",
+            "phase": "Randomized device trial (registry phase N/A)",
+            "status": "recruiting",
+            "conditions": [
+              "cond-ischemic-lv-remodeling",
+              "cond-hf"
+            ],
+            "therapies": [
+              "dev-revivent-tc"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 135,
+                "basis": "estimated",
+                "asOf": "2026-02-20",
+                "scope": "Registry enrollment estimate (90 treatment, 45 control); no enrolled count is stated.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06813820"
+              }
+            ],
+            "primaryEndpoint": "30-day major adverse event composite against a 70% performance goal; Finkelstein-Schoenfeld hierarchical composites at 6 months (KCCQ, 6MWD, NYHA) and 12 months (clinical events plus KCCQ, 6MWD, NYHA) (registry-stated).",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT06813820"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06813820"
+              ],
+              "notes": "Registry record last updated 2026-02-20, retrieved 2026-11-10. Revivent System via mini-thoracotomy plus GDMT versus GDMT alone, 2:1; estimated primary completion 2028-08; no results. The registry names the Revivent System without a generation; the link to the public Revivent TC record is a catalogue placement pending confirmation."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-taurus-nxt-target-value",
+          "label": "TaurusNXT Target Value Study — Peijia TAVR system in high-risk severe aortic stenosis (NCT07908225)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-taurus-nxt-target-value",
+            "type": "trial",
+            "name": "TaurusNXT Target Value Study — Peijia TAVR system in high-risk severe aortic stenosis (NCT07908225)",
+            "nctId": "NCT07908225",
+            "phase": "Single-arm study (registry phase N/A)",
+            "status": "active",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-taurus-nxt"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 150,
+                "basis": "actual",
+                "asOf": "2026-11-02",
+                "scope": "Registry-stated actual enrollment; not an analyzed denominator.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT07908225"
+              }
+            ],
+            "primaryEndpoint": "All-cause mortality at 12 months (registry-stated).",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT07908225"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07908225"
+              ],
+              "notes": "Registry record posted 2026-11-02, retrieved 2026-11-10. Registered retrospectively (start 2021-09-10 actual, first submitted 2026-09-21); registry status active, not recruiting; no results posted."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tricav-i",
+          "label": "TRICAV-I — TricValve bicaval system in severe tricuspid regurgitation (NCT06137807)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-tricav-i",
+            "type": "trial",
+            "name": "TRICAV-I — TricValve bicaval system in severe tricuspid regurgitation (NCT06137807)",
+            "nctId": "NCT06137807",
+            "phase": "Single-arm device study (registry phase N/A)",
+            "status": "active",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-tricvalve"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 50,
+                "basis": "estimated",
+                "asOf": "2026-08-28",
+                "scope": "Registry enrollment estimate; no enrolled count is stated.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06137807"
+              }
+            ],
+            "primaryEndpoint": "Registry lists 14 primary outcomes, including mortality at 1 and 12 months, stroke, pulmonary embolism, bleeding, vascular and structural complications, acute kidney injury, RVAD or transplant, tricuspid reintervention, heart failure events, and 12-month changes in KCCQ, NYHA class and 6-minute walk distance.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT06137807"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06137807"
+              ],
+              "notes": "Registry record last updated 2026-08-28, retrieved 2026-11-10. Registry-only record; no registry results; TCT abstract data not included."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tricus-registry",
+          "label": "TRICUS registry — TricValve retrospective-prospective follow-up (NCT05114850)",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-tricus-registry",
+            "type": "trial",
+            "name": "TRICUS registry — TricValve retrospective-prospective follow-up (NCT05114850)",
+            "nctId": "NCT05114850",
+            "phase": "Observational registry",
+            "status": "recruiting",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-tricvalve"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 450,
+                "basis": "estimated",
+                "asOf": "2024-04-03",
+                "scope": "Registry enrollment estimate; no enrolled count is stated.",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT05114850"
+              }
+            ],
+            "primaryEndpoint": "First unplanned readmission for heart failure, up to 12 months (registry-stated); follow-up up to 5 years.",
+            "resultStatus": "ongoing",
+            "references": [
+              "https://clinicaltrials.gov/api/v2/studies/NCT05114850"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-10",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT05114850"
+              ],
+              "notes": "Registry record last updated 2024-04-03, retrieved 2026-11-10; status and estimated dates as of that revision, possibly stale. No results."
             }
           }
         }
@@ -32555,6 +35168,206 @@
       },
       {
         "data": {
+          "id": "dev-d-shant__treats__cond-hfref",
+          "source": "dev-d-shant",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-impulse-optimizer-ccm__made_by__co-impulse-dynamics",
+          "source": "dev-impulse-optimizer-ccm",
+          "target": "co-impulse-dynamics",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-impulse-optimizer-ccm__treats__cond-hf",
+          "source": "dev-impulse-optimizer-ccm",
+          "target": "cond-hf",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-microport-cardioflow-tmvr__made_by__co-microport-cardioflow",
+          "source": "dev-microport-cardioflow-tmvr",
+          "target": "co-microport-cardioflow",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-microport-cardioflow-tmvr__treats__cond-mr",
+          "source": "dev-microport-cardioflow-tmvr",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-myval-octapro__made_by__co-meril-life-sciences",
+          "source": "dev-myval-octapro",
+          "target": "co-meril-life-sciences",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-myval-octapro__treats__cond-as",
+          "source": "dev-myval-octapro",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-reaces-asd-occluder__treats__cond-asd",
+          "source": "dev-reaces-asd-occluder",
+          "target": "cond-asd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-shortcut__made_by__co-pi-cardia",
+          "source": "dev-shortcut",
+          "target": "co-pi-cardia",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-shortcut__treats__cond-failed-surgical-aortic-bioprosthesis",
+          "source": "dev-shortcut",
+          "target": "cond-failed-surgical-aortic-bioprosthesis",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-taurus-nxt__made_by__co-peijia-medical",
+          "source": "dev-taurus-nxt",
+          "target": "co-peijia-medical",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-taurus-nxt__treats__cond-as",
+          "source": "dev-taurus-nxt",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-geminione-teer__made_by__co-peijia-medical",
+          "source": "dev-geminione-teer",
+          "target": "co-peijia-medical",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-geminione-teer__treats__cond-mr",
+          "source": "dev-geminione-teer",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-halochord__treats__cond-mr",
+          "source": "dev-halochord",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-htx-001__made_by__co-haya-therapeutics",
+          "source": "rx-htx-001",
+          "target": "co-haya-therapeutics",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "rx-htx-001__treats__cond-hcm",
+          "source": "rx-htx-001",
+          "target": "cond-hcm",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-occlutech-afr__made_by__co-occlutech",
+          "source": "dev-occlutech-afr",
+          "target": "co-occlutech",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-occlutech-afr__treats__cond-hf",
+          "source": "dev-occlutech-afr",
+          "target": "cond-hf",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-taurus-apex__made_by__co-peijia-medical",
+          "source": "dev-taurus-apex",
+          "target": "co-peijia-medical",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-taurus-apex__treats__cond-as",
+          "source": "dev-taurus-apex",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vdyne-ttvr__made_by__co-vdyne",
+          "source": "dev-vdyne-ttvr",
+          "target": "co-vdyne",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-vdyne-ttvr__treats__cond-tr",
+          "source": "dev-vdyne-ttvr",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-venus-powerx__made_by__co-venus-medtech",
+          "source": "dev-venus-powerx",
+          "target": "co-venus-medtech",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-venus-powerx__treats__cond-as",
+          "source": "dev-venus-powerx",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "trial-siegel-star__evaluates__dev-siegel-tavr",
           "source": "trial-siegel-star",
           "target": "dev-siegel-tavr",
@@ -35749,6 +38562,142 @@
         "data": {
           "id": "trial-tri-success__studies__cond-tr",
           "source": "trial-tri-success",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cf-tmvr__evaluates__dev-microport-cardioflow-tmvr",
+          "source": "trial-cf-tmvr",
+          "target": "dev-microport-cardioflow-tmvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cf-tmvr__studies__cond-mr",
+          "source": "trial-cf-tmvr",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-clasp-iii-tr-ced__evaluates__dev-pascal",
+          "source": "trial-clasp-iii-tr-ced",
+          "target": "dev-pascal",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-clasp-iii-tr-ced__studies__cond-tr",
+          "source": "trial-clasp-iii-tr-ced",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-evolut-durability-japan__evaluates__dev-evolut",
+          "source": "trial-evolut-durability-japan",
+          "target": "dev-evolut",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-evolut-durability-japan__studies__cond-as",
+          "source": "trial-evolut-durability-japan",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-past-hfref__evaluates__dev-d-shant",
+          "source": "trial-past-hfref",
+          "target": "dev-d-shant",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-past-hfref__studies__cond-hfref",
+          "source": "trial-past-hfref",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-relive__evaluates__dev-revivent-tc",
+          "source": "trial-relive",
+          "target": "dev-revivent-tc",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-relive__studies__cond-ischemic-lv-remodeling",
+          "source": "trial-relive",
+          "target": "cond-ischemic-lv-remodeling",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-relive__studies__cond-hf",
+          "source": "trial-relive",
+          "target": "cond-hf",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-taurus-nxt-target-value__evaluates__dev-taurus-nxt",
+          "source": "trial-taurus-nxt-target-value",
+          "target": "dev-taurus-nxt",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-taurus-nxt-target-value__studies__cond-as",
+          "source": "trial-taurus-nxt-target-value",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tricav-i__evaluates__dev-tricvalve",
+          "source": "trial-tricav-i",
+          "target": "dev-tricvalve",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tricav-i__studies__cond-tr",
+          "source": "trial-tricav-i",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tricus-registry__evaluates__dev-tricvalve",
+          "source": "trial-tricus-registry",
+          "target": "dev-tricvalve",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tricus-registry__studies__cond-tr",
+          "source": "trial-tricus-registry",
           "target": "cond-tr",
           "relationship": "studies"
         }

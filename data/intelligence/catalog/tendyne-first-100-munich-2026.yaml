@@ -1,0 +1,130 @@
+# tendyne-first-100-munich-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-10"
+sources:
+  - id: src-wor96-tendyne-first-100-munich-2026
+    title: >-
+      Mid-Term Clinical Outcomes of Tendyne Transcatheter Mitral Valve Replacement: A Prospective Cohort of 100 Patients
+      with Follow-up to 4 Years
+    url: https://doi.org/10.1016/j.jtcvs.2026.09.026
+    kind: publication
+    publisher: The Journal of Thoracic and Cardiovascular Surgery
+    publishedAt:
+      value: "2026-10-09"
+      precision: day
+    retrievedAt: "2026-11-10"
+    access: licensed
+bibliography:
+  - id: bib-wor96-tendyne-first-100-munich-2026
+    entityIds:
+      - dev-tendyne
+    versionIds:
+      - ver-tendyne
+    sourceRefs:
+      - sourceId: src-wor96-tendyne-first-100-munich-2026
+        locator: pp8-9 Introduction and Methods
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor96-tendyne-first-100-munich-2026-1
+    versionId: ver-tendyne
+    category: evidence
+    key: wor96-tendyne-first-100-munich-2026-1
+    label: Device configuration as used
+    value: >-
+      Circular inner frame carrying a porcine bioprosthetic valve inside a D-shaped outer frame; delivered transapically
+      through a 34 Fr sheath via left mini-thoracotomy and anchored by a polyethylene tether to an epicardial apical
+      pad, tension set under LV pressure and echo guidance.
+    availability: reported
+    basis: directly_reported
+    context: Authors describe it as a CE-marked self-expanding nitinol prosthesis; general anaesthesia, hybrid theatre.
+    limitation: Valve sizes and device generation not stated in the text read.
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-tendyne-first-100-munich-2026
+        locator: pp8-9 Introduction and Methods
+    reviewStatus: reviewed
+  - id: claim-wor96-tendyne-first-100-munich-2026-2
+    versionId: ver-tendyne
+    category: evidence
+    key: wor96-tendyne-first-100-munich-2026-2
+    label: Selection and cohort
+    value: >-
+      100 consecutive patients, high or prohibitive surgical risk by Heart Team and not eligible for TEER; predicted
+      neo-LVOT area above 250 mm2 required; mean age 76.3, mean STS 7.7%, primary MR 62%, functional MR 29%, severe MAC
+      30%, prior mitral intervention 19%.
+    availability: reported
+    basis: directly_reported
+    context: Single centre, Munich; 100 first patients; no concurrent trial enrolment.
+    limitation: No prespecified selection criteria; highly selected after TEE and CT screening.
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-tendyne-first-100-munich-2026
+        locator: pp9-11; Table 1 p27; Limitations p20
+    reviewStatus: reviewed
+  - id: claim-wor96-tendyne-first-100-munich-2026-3
+    versionId: ver-tendyne
+    category: evidence
+    key: wor96-tendyne-first-100-munich-2026-3
+    label: Technical and device success
+    value: >-
+      Technical success 96.0% (two fatal bleeds, one LV embolisation, one conversion for LVOT obstruction); 30-day MVARC
+      device success 74.0%, failures from death (10), gradient 5 mmHg or more (13) and stroke (5).
+    availability: reported
+    basis: directly_reported
+    context: n=100; device success needs mean gradient below 5 mmHg and MR 1+ or less.
+    limitation: Components overlap within patients.
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-tendyne-first-100-munich-2026
+        locator: pp10-12
+    reviewStatus: reviewed
+  - id: claim-wor96-tendyne-first-100-munich-2026-4
+    versionId: ver-tendyne
+    category: evidence
+    key: wor96-tendyne-first-100-munich-2026-4
+    label: Early safety
+    value: >-
+      BARC 3a or higher bleeding 16.0% (BARC 4 4%, BARC 5 2%) and stroke 5.0% within the first month; median stay 9
+      days, procedure time 110 minutes.
+    availability: reported
+    basis: directly_reported
+    context: n=100 index admission and 30 days.
+    limitation: No per-event stroke adjudication in the database.
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-tendyne-first-100-munich-2026
+        locator: pp11-12; Table 2
+    reviewStatus: reviewed
+  - id: claim-wor96-tendyne-first-100-munich-2026-5
+    versionId: ver-tendyne
+    category: evidence
+    key: wor96-tendyne-first-100-munich-2026-5
+    label: Survival to 3 years
+    value: >-
+      Kaplan-Meier survival 90.0% at 30 days, 71.2% at 1 year, 64.3% at 2 years, 54.8% at 3 years; at risk 100, 60, 38
+      and 14 at 0, 1, 2, 3 years.
+    availability: reported
+    basis: directly_reported
+    context: "n=100; median survival 1,228 days; Cox model: STS-PROM sole independent predictor (HR 1.048 per point)."
+    limitation: Late estimates rest on few patients; wide intervals (3 years 41.7 to 66.1%).
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-tendyne-first-100-munich-2026
+        locator: p13; Figure 3
+    reviewStatus: reviewed
+  - id: claim-wor96-tendyne-first-100-munich-2026-6
+    versionId: ver-tendyne
+    category: evidence
+    key: wor96-tendyne-first-100-munich-2026-6
+    label: MR and symptoms at follow-up
+    value: >-
+      MR 1+ or less in 98.8% of 83 echo survivors at 30 days and in all echo survivors at 1 year (65) and 2 years (about
+      32); NYHA I or II in 84.9% of 33 survivors at 2 years.
+    availability: reported
+    basis: directly_reported
+    context: Echo only in survivors; mean prosthesis gradient 3.7 to 4.1 mmHg across visits.
+    limitation: Figure 2 gives 96.4% at 30 days and n=33 at 2 years; text and Table 3 differ.
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-tendyne-first-100-munich-2026
+        locator: p13; Tables 2-3; Figure 2
+    reviewStatus: reviewed

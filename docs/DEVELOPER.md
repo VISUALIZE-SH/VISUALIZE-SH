@@ -106,7 +106,7 @@ More: [`docs/ARCHITECTURE.md`](ARCHITECTURE.md),
 | `data/companies.yaml` | Companies (`co-*`) | `schema/company.schema.json` |
 | `data/trials.yaml` | Clinical trials (`trial-*`) | `schema/trial.schema.json` |
 | `data/relationships.yaml` | Typed edges with locators (`rel-*`) | `schema/relationship.schema.json` |
-| `data/news.yaml` | Source-linked news, newest first, ≤ 250 items, immutable `news-YYYY-MM-DD-*` ids | `schema/news.schema.json` |
+| `data/news.yaml` | Source-linked news, newest first, ≤ 300 items, immutable `news-YYYY-MM-DD-*` ids | `schema/news.schema.json` |
 | `data/intelligence/` | Evidence catalog: `pilot.yaml`, `taxonomy.yaml`, `catalog/<topic>.yaml` fragments, `citations.yaml` | `schema/intelligence.schema.json` |
 
 The field contract, id conventions and rules are in

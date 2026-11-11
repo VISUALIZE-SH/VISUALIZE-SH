@@ -1423,17 +1423,12 @@
   curation:
     status: curated
     lastUpdated: "2026-10-03"
-    notes: >-
-      September 30, 2026 approval replaces the pending-PDUFA note. Adult and weight-based pediatric starting doses are separate in the current
-      intelligence catalog. SCOUT-HCM studied adolescents ≥35 kg; the US label covers pediatric patients ≥30 kg. Exact supplemental NDA number
-      was not established in this audit.
+    notes: "September 30, 2026 approval replaces the pending-PDUFA note. Adult and weight-based pediatric starting doses are separate in the current intelligence catalog. SCOUT-HCM studied adolescents ≥35 kg; the US label covers pediatric patients ≥30 kg. Drugs@FDA record (openFDA): NDA 214998 supplement 13, class Efficacy, approved 2026-09-30."
     sources:
       - https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=669c936b-3ee6-4e36-8a22-79dd11b1255b
       - https://packageinserts.bms.com/pi/pi_camzyos.pdf
-      - >-
-        https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart
-      - >-
-        https://news.bms.com/news/details/2026/U-S--Food-and-Drug-Administration-Approves-Expanded-Indication-for-Bristol-Myers-Squibbs-CAMZYOS-mavacamten-for-the-Treatment-of-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-oHCM-in-Adults-and-Pediatric-Patients/default.aspx
+      - https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart
+      - https://news.bms.com/news/details/2026/U-S--Food-and-Drug-Administration-Approves-Expanded-Indication-for-Bristol-Myers-Squibbs-CAMZYOS-mavacamten-for-the-Treatment-of-Symptomatic-Obstructive-Hypertrophic-Cardiomyopathy-oHCM-in-Adults-and-Pediatric-Patients/default.aspx
 
 - id: rx-aficamten
   type: therapy
@@ -6618,3 +6613,582 @@
       - https://innoventric.com/unica/
       - https://clinicaltrials.gov/api/v2/studies/NCT07919366
     notes: Sponsor page and registry, retrieved 2026-11-08. Trillium specifications and data not transferred to Unica.
+
+- id: dev-d-shant
+  type: therapy
+  therapyType: device
+  name: D-Shant atrial shunt
+  subtype: Interatrial shunt (braided nitinol, fixed orifice)
+  treats:
+    - cond-hfref
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Registered randomized study PAST-HFrEF (NCT07820410), recruiting, sponsored by Beijing Anzhen Hospital. Papers
+    report hospital and multicentre studies in China; a 2022 paper states NMPA and IRB approval of its study. No
+    marketing authorization record was read; regulatory status is not_yet_reviewed.
+  description: >-
+    Interatrial shunt for heart failure: a double-disc, buckle-shaped nitinol mesh plug with a fixed-orifice waist,
+    delivered by the femoral vein to the interatrial septum. Papers describe four models (4, 6, 8 and 10 mm orifice; 16
+    to 28 mm discs) and an eccentric nut for snare retrieval. Studied in HFrEF and HFpEF patients in China; a
+    120-patient single-arm HFrEF study (abstract) reports 1-year improvements, and a randomised study is registered.
+    Maker names differ between papers.
+  mechanism: >-
+    Fixed-orifice waist reinforced so the septum does not compress it; left-to-right flow through the septal orifice
+    decompresses the left atrium (authors' and registrant's wording). Models differ by orifice and disc diameter.
+  materials:
+    - name: Nickel-titanium alloy
+      role: Woven double-disc mesh plug
+      category: frame
+      source: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9065846/fullTextXML
+      note: Stainless-steel nut at the delivery connection also described; wire gauge not stated.
+  links:
+    - label: ClinicalTrials.gov NCT07820410
+      url: https://clinicaltrials.gov/study/NCT07820410
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07820410
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9065846/fullTextXML
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10648378/fullTextXML
+      - >-
+        https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41107031%20AND%20SRC:MED&resultType=core&format=json
+    notes: >-
+      Registry record and open-access papers retrieved 2026-11-10; SUSTAIN-HF abstract only. Maker printed three ways in
+      the papers; no company set. No authorization record read.
+- id: dev-impulse-optimizer-ccm
+  type: therapy
+  therapyType: device
+  name: Impulse Dynamics Optimizer Smart System (CCM therapy)
+  subtype: Implantable pulse generator for cardiac contractility modulation
+  company: co-impulse-dynamics
+  treats:
+    - cond-hf
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    FDA PMA P180036 approved 2019-03-21 for the OPTIMIZER Smart System, with supplements through 2026-10-14 in the
+    openFDA record; indication per the approval-order statement: NYHA class III heart failure, symptomatic on GDMT,
+    normal sinus rhythm, not indicated for CRT, LVEF 25 to 45%. Other jurisdictions not_yet_reviewed; the
+    investigational CCM-D system is not covered. Supplements in the openFDA record list a 2-lead configuration (S006,
+    2020), the Smart Mini (S007, 2021) and Smart Mini and Lite (S030, 2024); their labeling content was not read.
+  timeline:
+    date: "2019-03-21"
+    event: FDA PMA approval of the OPTIMIZER Smart System (P180036)
+    dateBasis: fda-approval
+    precision: day
+    source: https://api.fda.gov/device/pma.json?search=trade_name:optimizer&limit=50
+  description: >-
+    Implantable pulse generator that delivers cardiac contractility modulation (CCM) therapy to the heart in symptomatic
+    heart failure. The sponsor states the system delivers non-excitatory CCM signals and has no pacemaker or ICD
+    functions. Mechanism details beyond that wording are not established here.
+  mechanism: >-
+    Cardiac contractility modulation therapy in general is described in a peer-reviewed review as delivery of
+    high-voltage biphasic signals to the right-ventricular septal wall during the absolute refractory period; the
+    sponsor states the Optimizer Smart System delivers non-excitatory CCM signals and has no pacemaker or ICD functions.
+    Model-specific mechanism is not established here.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: Impulse Dynamics
+      url: https://impulse-dynamics.com/
+    - label: openFDA PMA records P180036
+      url: https://api.fda.gov/device/pma.json?search=trade_name:optimizer&limit=50
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://api.fda.gov/device/pma.json?search=trade_name:optimizer&limit=50
+      - https://impulse-dynamics.com/
+      - >-
+        https://news.impulse-dynamics.com/impulse-dynamics-presented-real-world-late-breaking-data-revealing-heart-failure-hospitalization-reduction-and-sustained-clinical-benefits-of-ccm-therapy-at-one-year/
+      - https://api.fda.gov/device/pma.json?search=applicant:%22impulse%20dynamics%22&limit=100
+      - https://europepmc.org/article/MED/37769793
+    notes: >-
+      openFDA PMA records, company site and company release retrieved 2026-11-10. Scope for cardiac contractility
+      modulation not yet ruled on by the owner.
+- id: dev-microport-cardioflow-tmvr
+  type: therapy
+  therapyType: device
+  name: MicroPort CardioFlow Transcatheter Mitral Valve Replacement System
+  subtype: Transcatheter mitral valve replacement system (transapical)
+  company: co-microport-cardioflow
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Registered pre-market clinical investigation CF-TMVR (NCT07857343, not yet recruiting, estimated start 2026-12-01)
+    in China; the registry states it is intended to support product registration in China or other countries. No
+    authorization is documented here; other jurisdictions not_yet_reviewed.
+  description: >-
+    Registrant-described transcatheter mitral valve replacement system studied in a single-arm pre-market investigation
+    in degenerative mitral regurgitation. The registry text states transapical delivery under imaging guidance, with the
+    valve released at the mitral annulus to replace the native valve. Frame, leaflet and anchoring design are not
+    stated; no clinical result is established by this record.
+  mechanism: >-
+    Per the registry: the valve loaded in the delivery system is advanced transapically to the mitral annulus and
+    released, replacing the native mitral valve.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: ClinicalTrials.gov NCT07857343
+      url: https://clinicaltrials.gov/study/NCT07857343
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07857343
+    notes: >-
+      ClinicalTrials.gov registry record retrieved 2026-11-10. Design and materials beyond access route not stated by
+      the source.
+- id: dev-myval-octapro
+  type: therapy
+  therapyType: device
+  name: Myval Octapro
+  subtype: Balloon-expandable transcatheter heart valve (TAVR)
+  company: co-meril-life-sciences
+  treats:
+    - cond-as
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    No regulator document was read. A 2026 registry of 303 consecutive patients with severe aortic stenosis (abstract)
+    reports early outcomes in Europe and India. One paper states the first-generation Myval received a CE mark in 2019;
+    Octapro authorization is not_yet_reviewed.
+  description: >-
+    Third-generation Myval balloon-expandable transcatheter valve by Meril Life Sciences (per papers): intra-annular
+    bovine-pericardium trileaflet valve in a cobalt-alloy frame (19.5 to 23.5 mm tall), a two-row hybrid-cell design,
+    PET inner skirt and a higher outer skirt, nine sizes from 20 to 32 mm, delivered through a 14F expandable sheath. In
+    the MyPro registry abstract (303 consecutive patients, not randomized; European and Indian centres) VARC-3 technical
+    success was 97%; at 30 days device success was 92.4%, early safety 80%, all-cause mortality 2.6% and
+    guideline-indicated permanent pacemaker implantation 14.2%.
+  mechanism: >-
+    Two-row interlacing hybrid-cell frame: V-shaped chevron outflow zone (55% of frame height) and octagonal inflow
+    cells, reported to foreshorten 10 to 12% on deployment (Octacor 19 to 20%, Myval generation 1 21 to 24%); PET
+    sealing skirts (authors' description).
+  materials:
+    - name: Cobalt alloy
+      role: Balloon-expandable frame
+      category: frame
+      source: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099935/fullTextXML
+      note: Alloy composition not stated; paper says cobalt alloy.
+    - name: Bovine pericardium
+      role: Tri-leaflet valve (intra-annular)
+      category: leaflet
+      source: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099935/fullTextXML
+    - name: Polyethylene terephthalate (PET)
+      role: Internal sealing skirt; external skirt material not stated
+      category: fabric
+      source: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099935/fullTextXML
+  links:
+    - label: MyPro registry (Int J Cardiol 2026)
+      url: https://doi.org/10.1016/j.ijcard.2026.134967
+    - label: ClinicalTrials.gov NCT07532317 (Myval THV Series)
+      url: https://clinicaltrials.gov/study/NCT07532317
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - >-
+        https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42838146%20AND%20SRC:MED&resultType=core&format=json
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099935/fullTextXML
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13603376/fullTextXML
+      - https://clinicaltrials.gov/api/v2/studies/NCT07532317
+    notes: >-
+      Design from two secondary papers (not a manufacturer specification); outcomes from the MyPro abstract only. No
+      regulator record read; Meril product page was not readable.
+- id: dev-reaces-asd-occluder
+  type: therapy
+  therapyType: device
+  name: ReAces puncturable ASD occluder
+  subtype: Atrial septal defect occluder (puncturable)
+  treats:
+    - cond-asd
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Studied in the PASSER randomized trial (NCT05371366), which the authors say supported an NMPA premarket application;
+    no regulator decision document was read. Other jurisdictions not_yet_reviewed.
+  description: >-
+    ASD occluder with left and right discs and a waist on a nitinol frame; the central hole is covered by a PET membrane
+    free of metal mesh, so that a large sheath can later cross the septum and the central region is thinner. Authors
+    state about 60% less metal than a same-size traditional occluder. In the PASSER randomised trial, 12-month complete
+    closure was noninferior to an Amplatzer-like occluder; later septal puncture was not tested in humans. Developer
+    named in papers as Hanyu Medical Technology (Shanghai).
+  mechanism: >-
+    Authors' description: the central region is a PET membrane without metal mesh (3-layer in the 2026 paper), intended
+    to let a large sheath cross the septum through the occluder and to endothelialize rapidly; frame is nickel-titanium
+    wire.
+  materials:
+    - name: Nickel-titanium (memory) wire
+      role: "Frame: left disc, right disc, waist"
+      category: frame
+      source: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9831856/fullTextXML
+    - name: Polyethylene terephthalate (PET) membrane
+      role: Covers the central hole; no metal mesh
+      category: fabric
+      source: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13745100/fullTextXML
+      note: Layer count differs between papers (3-layer in 2026; single layer in 2024).
+  links:
+    - label: J Am Heart Assoc 2026;15:e045052 (open access)
+      url: https://doi.org/10.1161/JAHA.125.045052
+    - label: ClinicalTrials.gov NCT05371366
+      url: https://clinicaltrials.gov/study/NCT05371366
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13745100/fullTextXML
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9831856/fullTextXML
+      - https://clinicaltrials.gov/api/v2/studies/NCT05371366
+    notes: >-
+      Open-access papers and registry record retrieved 2026-11-10. Membrane layer count differs between papers. No
+      regulator record read.
+- id: dev-shortcut
+  type: therapy
+  therapyType: device
+  name: Pi-Cardia ShortCut
+  subtype: Transcatheter leaflet-splitting catheter (TAVR adjunct)
+  company: co-pi-cardia
+  treats:
+    - cond-failed-surgical-aortic-bioprosthesis
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    FDA De Novo DEN240017 (openFDA decision date 2024-09-27, decision code DENG, product code SCZ, regulation 870.1254,
+    class 2). The regulator indication wording was not read; the sponsor words it as valve-in-valve TAVR in patients at
+    risk of coronary obstruction. Other jurisdictions not_yet_reviewed. The sponsor indication wording says
+    bioprosthetic valves; the pivotal study included 2 of 60 failed transcatheter valves.
+  lifecycleStatus: recalled
+  lifecycleDetail: >-
+    FDA recall Z-3213-2026 (initiated 2026-07-06, posted 2026-09-17, open) applies to 46 units in lot SCUS-00013 of REF
+    Z-A-20.003-US because the catheter positioning arm may detach (weld issue); other lots are not flagged by this
+    record. See the FDA record for current status.
+  description: >-
+    Transfemoral catheter that splits bioprosthetic aortic valve leaflets before valve-in-valve TAVR in patients at risk
+    of coronary obstruction (sponsor wording; "bioprosthetic", not "surgical"; the FDA device-type definition reads:
+    mechanically splitting aortic valve leaflets that may prevent coronary artery ostia obstruction during planned
+    transcatheter valve procedures). In the single-arm 60-patient pivotal study (58 failed surgical and 2 failed
+    transcatheter valves) splitting succeeded in all; the primary safety endpoint (procedure-related death or stroke at
+    discharge or 7 days) was met in 98.3% with one disabling stroke, and 30-day all-cause mortality was 2 of 60. The
+    recall record describes a positioning arm on the catheter.
+  mechanism: >-
+    A positioning arm opens above the valve and guides a splitting element that punctures the leaflet base from the
+    ventricular side; withdrawing the catheter splits the leaflet from base to tip; a second leaflet can be split with
+    the same device (pivotal paper). Non-implant.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: openFDA recall record 222130
+      url: https://api.fda.gov/device/recall.json?search=cfres_id:222130&limit=3
+    - label: openFDA record DEN240017
+      url: https://api.fda.gov/device/510k.json?search=device_name:shortcut&limit=10
+    - label: Pi-Cardia ShortCut page
+      url: https://www.pi-cardia.net/technology-shortcut
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://api.fda.gov/device/recall.json?search=cfres_id:222130&limit=3
+      - https://api.fda.gov/device/510k.json?search=device_name:shortcut&limit=10
+      - https://api.fda.gov/device/classification.json?search=product_code:SCZ&limit=3
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11365606/fullTextXML
+      - https://clinicaltrials.gov/api/v2/studies/NCT04952909
+      - https://www.pi-cardia.net/technology-shortcut
+    notes: >-
+      openFDA, ClinicalTrials.gov, the open-access pivotal paper and the company site retrieved 2026-11-10. Indication
+      taken from sponsor wording; the FDA decision summary was not read. Lot-limited recall; not all units recalled.
+- id: dev-taurus-nxt
+  type: therapy
+  therapyType: device
+  name: Peijia TaurusNXT transcatheter aortic valve system
+  subtype: Transcatheter aortic valve (TAVR)
+  company: co-peijia-medical
+  treats:
+    - cond-as
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Registered single-arm target-value study NCT07908225 (150 participants actual, active not recruiting, China). The
+    issuer reports an NMPA registration application accepted in December 2025 and pending (HKEX, 2026-03-25); no
+    regulator record was opened. Other jurisdictions not_yet_reviewed.
+  description: >-
+    Issuer-described third-generation TAVR system using non-glutaraldehyde crosslinked dry bio-tissue, pre-loaded on a
+    retrievable, steerable delivery catheter, which the issuer expects to enhance valve durability. Design wording is
+    the issuer's; the registry record does not describe the valve, and no clinical result is established by this record.
+  mechanism: >-
+    Issuer-described: non-glutaraldehyde tissue crosslinking intended to remove a source of leaflet calcification, plus
+    ultra-low-temperature vacuum freeze-drying so the valve can be pre-loaded on the delivery catheter.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: ClinicalTrials.gov NCT07908225
+      url: https://clinicaltrials.gov/study/NCT07908225
+    - label: Peijia HKEX annual results announcement
+      url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07908225
+      - https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf
+    notes: >-
+      Registry record (retrieved 2026-11-10) and HKEX announcement of 2026-03-25. Design wording is the issuer's and
+      tied to the study by name only.
+- id: dev-geminione-teer
+  type: therapy
+  therapyType: device
+  name: Peijia GeminiOne TEER system
+  subtype: Transcatheter edge-to-edge mitral repair (leaflet clip)
+  company: co-peijia-medical
+  treats:
+    - cond-mr
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Issuer reports NMPA registration accepted October 2025 (HKEX, 2026-03-25) and, on its home page, NMPA marketing
+    approval in September 2026 for severe degenerative MR in patients contraindicated for or at high risk from surgery;
+    no NMPA record was read. EU MDR CE application submitted and FDA IDE for an early feasibility study reported by the
+    issuer. Not confirmed in any jurisdiction by a regulator document.
+  description: >-
+    Edge-to-edge clip system for mitral regurgitation delivered transcatheter with an adjustable curved introducer
+    catheter. In the single-arm GeminiOne-DMR trial (120 patients, prohibitive surgical risk, degenerative MR 3+ or
+    more) a 2026 paper reports 1-year clinical success of 89.84% (freedom from all-cause mortality, mitral valve
+    reintervention and MR above 2+ at 1 year; 120 enrolled; abstract). The issuer says tricuspid use is being explored.
+  mechanism: >-
+    Issuer-described: a sliding groove mechanism that allows a longer coaptation length with a smaller implant profile,
+    independent leaflet grasping and U-shaped arms that widen the leaflet clamping width; the peer-reviewed abstract
+    calls it a groove-cam mechanism.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: ClinicalTrials.gov NCT05655897
+      url: https://clinicaltrials.gov/study/NCT05655897
+    - label: "JACC: Asia 1-year outcomes (abstract)"
+      url: https://europepmc.org/article/MED/42283667
+    - label: Peijia HKEX annual results announcement
+      url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05655897
+      - https://europepmc.org/article/MED/42283667
+      - https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf
+      - https://www.peijiamedical.com/
+    notes: >-
+      Registry, publication abstracts, HKEX announcement and company home page retrieved 2026-11-10. Approval statement
+      is the issuer teaser; no regulator record opened.
+- id: dev-halochord
+  type: therapy
+  therapyType: device
+  name: HaloChord dual-set artificial chordae system
+  subtype: Transapical beating-heart artificial chordae system
+  treats:
+    - cond-mr
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    No regulator record or registry entry was found; the only documents are preprints of porcine studies. Manufacturer
+    is not stated in them. Status is not_yet_reviewed.
+  description: >-
+    Transapical artificial-chordae system described by preprint authors as delivering up to two sets (four threads) of
+    ePTFE chordae per sequence on the beating heart under TEE guidance. Evidence is a 2026 preprint (not peer reviewed)
+    of five pigs with surgically induced acute mitral regurgitation, with no control arm described in the abstract; no
+    human use is documented.
+  mechanism: >-
+    Per the preprint abstract: suturing devices deploy ePTFE chordae and are anchored at the left ventricular apex, and
+    a fixation device sets chordal length under echocardiographic guidance; the authors say the dual-set design
+    simplifies transapical chordal implantation compared with the single-thread delivery the authors say current systems
+    are limited to; no comparison was made in the study.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: Research Square preprint (2026)
+      url: https://www.researchsquare.com/article/rs-10467847/v1
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://www.researchsquare.com/article/rs-10467847/v1
+      - https://doi.org/10.21203/rs.3.rs-10467847/v1
+    notes: >-
+      Preprint abstract and page read 2026-11-10. Sponsor unknown, so no company link. The 2022 Halochord preprint is
+      not asserted to describe the same generation.
+- id: rx-htx-001
+  type: therapy
+  therapyType: pharmaceutical
+  name: HTX-001
+  subtype: Antisense oligonucleotide targeting WISPER lncRNA
+  company: co-haya-therapeutics
+  treats:
+    - cond-hcm
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Registered two-part Phase 1 multiple-ascending-dose study (NCT07867288; healthy adults then symptomatic
+    nonobstructive HCM; 10 participants estimated; recruiting; US sites). The company states FDA Fast Track designation
+    for symptomatic nHCM; no FDA document was read. Not approved.
+  description: >-
+    Investigational subcutaneous antisense oligonucleotide being studied for symptomatic nonobstructive hypertrophic
+    cardiomyopathy. Developer-described as targeting a lncRNA (WISPER) linked to cardiac fibrosis; no clinical result is
+    established.
+  mechanism: >-
+    Sponsor-described: antisense downregulation of WISPER in cardiac myofibroblasts, intended to reprogram the fibrotic
+    cell state. Preclinical Wisper biology: Micheletti et al., Sci Transl Med 2017 (mouse and human tissue).
+  links:
+    - label: ClinicalTrials.gov NCT07867288
+      url: https://clinicaltrials.gov/study/NCT07867288
+    - label: HAYA pipeline
+      url: https://www.hayatx.com/pipeline/
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07867288
+      - https://www.hayatx.com/pipeline/
+      - https://europepmc.org/article/MED/28637928
+    notes: >-
+      Registry record, company pages and publication abstract retrieved 2026-11-10. Company statements attributed; Fast
+      Track unverified.
+- id: dev-occlutech-afr
+  type: therapy
+  therapyType: device
+  name: Occlutech Atrial Flow Regulator (heart-failure use)
+  subtype: Interatrial shunt device
+  company: co-occlutech
+  treats:
+    - cond-hf
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    For heart failure: the manufacturer page states no FDA Premarket Approval and no Health Canada licence; the registry
+    marks the device unapproved within the FDA-regulated FROST-HF randomized study (active, not recruiting). CE or other
+    authorizations for the heart-failure indication were not reviewed (not_yet_reviewed); no regulator record was read.
+  description: >-
+    Manufacturer-described Nitinol interatrial shunt implant placed on the atrial septum to maintain, for heart failure,
+    a controlled left-to-right shunt created by balloon atrial septostomy and so decompress the left atrium. Evidence
+    includes the registered PRELIEVE non-randomised pilot (a publication abstract, linked by study name and device only,
+    reports 53 implanted patients at 1 year) and registered randomized and registry studies; heart-failure use only,
+    other indications not covered here.
+  mechanism: >-
+    Sponsor-described: permanently maintains an interatrial communication after balloon atrial septostomy so blood flows
+    from the left to the right atrium; the left atrial decompression is expected to reduce symptoms. FROST-HF tests 6 mm
+    and 8 mm AFR devices against a sham procedure, plus a roll-in arm receiving the AFR.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: Manufacturer AFR page
+      url: https://occlutech.com/afr/
+    - label: FROST-HF (ClinicalTrials.gov)
+      url: https://clinicaltrials.gov/study/NCT05136820
+    - label: PRELIEVE 1-year abstract (PubMed; linked by name and device)
+      url: https://pubmed.ncbi.nlm.nih.gov/33555114/
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://occlutech.com/afr/
+      - https://clinicaltrials.gov/api/v2/studies/NCT03030274
+      - https://clinicaltrials.gov/api/v2/studies/NCT05136820
+      - https://clinicaltrials.gov/api/v2/studies/NCT04405583
+      - PMID:33555114
+    notes: >-
+      Manufacturer pages, registry records and a publication abstract read 2026-11-10. Heart-failure indication only;
+      Nitinol is from the manufacturer page and no implant materials table is claimed.
+- id: dev-taurus-apex
+  type: therapy
+  therapyType: device
+  name: Peijia TaurusApex polymeric trileaflet TAVR system
+  subtype: Transcatheter aortic valve (TAVR), polymeric leaflets
+  company: co-peijia-medical
+  treats:
+    - cond-as
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Issuer reports completed animal studies (HKEX, 2026-03-25); no human study or regulator record is established here.
+    Not yet reviewed in any jurisdiction.
+  description: >-
+    Issuer-described fourth-generation TAVR system whose leaflets are polymeric rather than biological tissue, intended
+    to improve durability, tear resistance and wear resistance. Preclinical per the issuer; design details beyond the
+    leaflet concept are not disclosed.
+  mechanism: "Issuer-described: multi-layer bionic composite braided polymeric leaflets in place of biological tissue."
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: Peijia HKEX annual results announcement
+      url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf
+    notes: HKEX announcement of 2026-03-25 retrieved 2026-11-10; issuer wording only.
+- id: dev-vdyne-ttvr
+  type: therapy
+  therapyType: device
+  name: VDyne transcatheter tricuspid valve replacement system
+  subtype: Transcatheter tricuspid valve replacement (transfemoral)
+  company: co-vdyne
+  treats:
+    - cond-tr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Registry records mark the device unapproved within FDA-regulated studies (NCT05848284, which the sponsor calls VISTA
+    US early feasibility; NCT07516444, a randomized trial against Edwards EVOQUE that names the device VDyne TriNova and
+    that the sponsor calls pivotal), and a multi-country study (NCT05797519; sites listed in Australia, Austria,
+    Belgium, Czechia, Denmark, Germany, the Netherlands, New Zealand, Spain, Sweden and the United Kingdom, several
+    withdrawn) states its purpose as supporting a CE Mark. The sponsor states it is not approved for commercial sale. No
+    regulator decision has been reviewed.
+  description: >-
+    Sponsor-described transfemoral transcatheter tricuspid valve replacement system: a bioprosthetic valve with a
+    side-delivery, shallow-entry delivery system that is repositionable and retrievable without hooks or barbs, designed
+    to match the asymmetric tricuspid anatomy. Sponsor statements are attributed; the TRIVITA registry record names the
+    device VDyne TriNova, and only the sponsor page links it to the system in the earlier studies. No clinical result is
+    established by this record.
+  mechanism: >-
+    Sponsor-described: valve delivered from the side with a shallow trajectory to the annulus and self-aligning to the
+    asymmetric tricuspid anatomy; can be repositioned or retrieved before release (registry: fully retrievable
+    intraoperatively); deployed on the beating heart under fluoroscopy and TEE.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: Sponsor technology page
+      url: https://www.vdyne.com/technology
+    - label: TRIVITA study (ClinicalTrials.gov)
+      url: https://clinicaltrials.gov/study/NCT07516444
+    - label: Sponsor clinical page
+      url: https://www.vdyne.com/clinical
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://www.vdyne.com/technology
+      - https://www.vdyne.com/clinical
+      - https://clinicaltrials.gov/api/v2/studies/NCT05848284
+      - https://clinicaltrials.gov/api/v2/studies/NCT05797519
+      - https://clinicaltrials.gov/api/v2/studies/NCT07516444
+    notes: >-
+      Sponsor page and three registry records retrieved 2026-11-10. TriNova and the VISTA-registered system are not
+      asserted to be the same generation; no performance data transferred.
+- id: dev-venus-powerx
+  type: therapy
+  therapyType: device
+  name: Venus Medtech Venus-PowerX TAVR system
+  subtype: Transcatheter aortic valve (TAVR), self-expanding, dry tissue
+  company: co-venus-medtech
+  treats:
+    - cond-as
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Issuer reports a global pivotal clinical study and marketing approval in Argentina, Chile and Venezuela (HKEX,
+    2026-03-31); no regulator or registry record was read. Other jurisdictions not_yet_reviewed.
+  description: >-
+    Issuer-described self-expanding TAVR with pre-loaded dry tissue (no glutaraldehyde preservation), an adaptive
+    anti-paravalvular-leak skirt, wire-controlled deployment, retrievability after complete release and a frame with
+    large openings for coronary access. Design wording is the issuer's; no clinical result is established.
+  mechanism: >-
+    Issuer-described: dry-tissue anti-calcification technology, an adaptive sealing skirt to reduce paravalvular leak
+    and wire-controlled release with retrievability.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: Venus Medtech HKEX annual results announcement
+      url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033102789.pdf
+  curation:
+    status: curated
+    lastUpdated: "2026-11-10"
+    sources:
+      - https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033102789.pdf
+    notes: HKEX announcement of 2026-03-31 retrieved 2026-11-10; issuer wording only.

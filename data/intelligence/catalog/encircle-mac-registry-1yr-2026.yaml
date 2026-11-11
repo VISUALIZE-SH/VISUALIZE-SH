@@ -1,0 +1,99 @@
+# encircle-mac-registry-1yr-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-10"
+sources:
+  - id: src-wor96-encircle-mac-registry-1yr-2026
+    title: "Transseptal TMVR for MAC: ENCIRCLE MAC Registry 1-Year Outcomes"
+    url: https://doi.org/10.1016/j.jacc.2026.08.016
+    kind: publication
+    publisher: JACC
+    publishedAt:
+      value: "2026-09-16"
+      precision: day
+    retrievedAt: "2026-11-10"
+    access: licensed
+bibliography:
+  - id: bib-wor96-encircle-mac-registry-1yr-2026
+    entityIds:
+      - dev-sapien-m3
+    versionIds:
+      - ver-sapien-m3
+    sourceRefs:
+      - sourceId: src-wor96-encircle-mac-registry-1yr-2026
+        locator: Results, population; Procedural
+    reviewStatus: reviewed
+claims:
+  - id: claim-wor96-encircle-mac-registry-1yr-2026-1
+    versionId: ver-sapien-m3
+    category: evidence
+    key: wor96-encircle-mac-registry-1yr-2026-1
+    label: Screening and implant
+    value: 364 screened, 185 excluded for anatomy; 100 attempted, 93 implanted
+    availability: reported
+    basis: directly_reported
+    context: SAPIEN M3 dock plus balloon-expandable valve, MAC registry, not the main cohort
+    limitation: Highly selected
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-encircle-mac-registry-1yr-2026
+        locator: Results, population; Procedural
+    reviewStatus: reviewed
+  - id: claim-wor96-encircle-mac-registry-1yr-2026-2
+    versionId: ver-sapien-m3
+    category: evidence
+    key: wor96-encircle-mac-registry-1yr-2026-2
+    label: Primary endpoint
+    value: Death or HFH 33.6% (CI 25.0-44.1) at 1 year; death 21.1%, HFH 19.4%
+    availability: reported
+    basis: directly_reported
+    context: KM estimates, all-treated n = 100
+    limitation: Nonhierarchical, post hoc, competing risk
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-encircle-mac-registry-1yr-2026
+        locator: Table 4/5
+    reviewStatus: reviewed
+  - id: claim-wor96-encircle-mac-registry-1yr-2026-3
+    versionId: ver-sapien-m3
+    category: evidence
+    key: wor96-encircle-mac-registry-1yr-2026-3
+    label: MR result
+    value: MR at most 1+ in 98.5% at 1 year; mean gradient about 5 mm Hg
+    availability: reported
+    basis: directly_reported
+    context: Valve-implant population, core lab
+    limitation: Implant-only
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-encircle-mac-registry-1yr-2026
+        locator: Echo outcomes; Table 6
+    reviewStatus: reviewed
+  - id: claim-wor96-encircle-mac-registry-1yr-2026-4
+    versionId: ver-sapien-m3
+    category: evidence
+    key: wor96-encircle-mac-registry-1yr-2026-4
+    label: Safety
+    value: Disabling stroke 5.1%, LVOT obstruction 4.8%, mitral reintervention 11.4%, new pacemaker 10.9%
+    availability: reported
+    basis: directly_reported
+    context: 1 year KM
+    limitation: Wide CIs, small n
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-encircle-mac-registry-1yr-2026
+        locator: Table 4
+    reviewStatus: reviewed
+  - id: claim-wor96-encircle-mac-registry-1yr-2026-5
+    versionId: ver-sapien-m3
+    category: evidence
+    key: wor96-encircle-mac-registry-1yr-2026-5
+    label: Procedure risk
+    value: 7 aborts (6 at encircling); 6 LV or LA injuries during encircling or commissure access
+    availability: reported
+    basis: directly_reported
+    context: n = 100 attempts
+    limitation: Mechanism of injury not generalisable
+    observedAt: "2026-11-10"
+    sourceRefs:
+      - sourceId: src-wor96-encircle-mac-registry-1yr-2026
+        locator: Results, procedural
+    reviewStatus: reviewed
