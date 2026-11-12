@@ -3652,26 +3652,34 @@
   treats:
     - cond-pv
   regulatoryStatus: approved
-  regulatoryDetail: >-
-    US FDA announced PMA approval October 1, 2026 for pediatric congenital pulmonary valve disease. Exact approved IFU and PMA
-    identifier remain unverified.
+  regulatoryDetail: US FDA PMA P260007 approved October 1, 2026 for pediatric patients weighing at least 10 kg who need surgical pulmonary valve replacement for a dysfunctional native or surgically repaired right ventricular outflow tract that meets echocardiographic stenosis or regurgitation criteria. Breakthrough Device designation was granted August 25, 2023.
   mechanism: Surgical pulmonary valve replacement followed, when needed, by transcatheter balloon expansion to accommodate patient growth.
   materials:
-    - name: Polymeric material
-      role: Valve leaflets
+    - name: Expanded polytetrafluoroethylene (ePTFE)
+      role: Valve leaflets (bileaflet, 0.1 mm)
       category: leaflet
-      source: https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
-      note: FDA polymeric-leaflet paragraph; specific polymer chemistry and frame alloy are not disclosed.
-  description: >-
-    Polymeric-leaflet surgical valve with announcement-reported initial diameter approximately 13 mm and expansion up to 22 mm.
-    These are adjustable diameters, not a discrete catalog size list. Longer-term expansion and durability evidence remain
-    limited.
+      source: https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007B.pdf
+      note: SSED PDF p.2, Section V Device Description.
+    - name: 316L stainless steel
+      role: Balloon-expandable frame
+      category: frame
+      source: https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007B.pdf
+      note: SSED PDF p.2, Section V, and p.6 FEA row; same wording in the IFU for Model AUT001, PDF p.1, Section 1.1.
+    - name: ePTFE stretch graft
+      role: Sleeve encasing the frame for suture fixation
+      category: fabric
+      source: https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007B.pdf
+      note: SSED PDF p.2, Section V Device Description.
+  description: Stented bileaflet synthetic surgical pulmonary valve (Model AUT001) in a single 12.7 mm internal-diameter size. Its balloon-expandable frame can be enlarged to 14, 16, 18, 20 or 22 mm, before implantation or later by transcatheter balloon dilation. The IFU states that the safety and effectiveness of post-implant expansion have not been established.
   links:
     - label: FDA approval announcement
       url: https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
     - label: Edwards approval announcement
-      url: >-
-        https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Receives-FDA-Approval-for-AUTUS-Valve-the-First-Surgical-Pulmonary-Valve-for-Pediatric-Patients/default.aspx
+      url: https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Receives-FDA-Approval-for-AUTUS-Valve-the-First-Surgical-Pulmonary-Valve-for-Pediatric-Patients/default.aspx
+    - label: FDA Summary of Safety and Effectiveness Data (P260007)
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007B.pdf
+    - label: Instructions for Use posted with PMA P260007 (Model AUT001, Rev. 0)
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007D.pdf
   timeline:
     date: '2026-10-01'
     precision: day
@@ -3681,16 +3689,13 @@
   pulse: 9
   curation:
     status: curated
-    lastUpdated: '2026-10-07'
+    lastUpdated: "2026-11-11"
     sources:
       - https://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children
-      - >-
-        https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Receives-FDA-Approval-for-AUTUS-Valve-the-First-Surgical-Pulmonary-Valve-for-Pediatric-Patients/default.aspx
-    notes: >-
-      WOR-26: FDA opening, diameter, polymeric-leaflet and approval-recipient paragraphs. Approval is US-specific; trial
-      eligibility is not an approved-label substitute. NCT05006404 pivotal and NCT07466745 continued-access counts remain
-      separate. Undated manufacturer study page still carries investigational language; the dated FDA announcement establishes
-      approval. No autonomous growth or reduction in repeat surgery is asserted as proven. Public documents retrieved 2026-10-07.
+      - https://ir.edwards.com/news/news-details/2026/Edwards-Lifesciences-Receives-FDA-Approval-for-AUTUS-Valve-the-First-Surgical-Pulmonary-Valve-for-Pediatric-Patients/default.aspx
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007B.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007D.pdf
+    notes: "WOR-26: FDA opening, diameter, polymeric-leaflet and approval-recipient paragraphs. Approval is US-specific; trial eligibility is not an approved-label substitute. NCT05006404 pivotal and NCT07466745 continued-access counts remain separate. Undated manufacturer study page still carries investigational language; the dated FDA announcement establishes approval. No autonomous growth or reduction in repeat surgery is asserted as proven. Public documents retrieved 2026-10-07. WOR-98: materials, model, single size, expansion range and US indication from the FDA SSED and IFU for PMA P260007 (retrieved 2026-11-11); they supersede the announcement-level diameter and leaflet wording."
 - id: dev-mitrapatch
   type: therapy
   therapyType: device
@@ -3747,15 +3752,14 @@
   mechanism: Temporary catheter designed to capture and remove embolic debris generated during TAVR.
   materials: []
   materialsStatus: not_established
-  description: >-
-    Adjunct to TAVR for aortic stenosis, not an aortic valve replacement. First US commercial procedures were reported for October
-    1, 2026; material composition and exact cleared IFU restrictions await verification.
+  description: Adjunct to TAVR for aortic stenosis, not an aortic valve replacement. The FDA 510(k) summary describes a femorally delivered, heparin-coated nitinol mesh filter deployed across the aortic arch and retrieved with captured debris at the end of the procedure. First US commercial procedures were reported for October 1, 2026.
   links:
     - label: FDA EPC-03 clearance record
       url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715
     - label: First US commercial-use announcement
-      url: >-
-        https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html
+      url: https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html
+    - label: FDA 510(k) summary (K261715)
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261715.pdf
   timeline:
     date: '2026-09-08'
     precision: day
@@ -3766,16 +3770,12 @@
   pulse: 8
   curation:
     status: curated
-    lastUpdated: '2026-10-07'
+    lastUpdated: "2026-11-11"
     sources:
       - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715
-      - >-
-        https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html
-    notes: >-
-      WOR-26: FDA Device Name, Applicant, Decision Date and Decision; October 2 release opening and controlled-launch paragraph.
-      AS link is procedural context only. FDA summary/IFU unavailable in this pass; no unsupported filter alloy, pore size,
-      delivery profile, other-procedure indication or stroke-reduction claim. Release does not disclose a new EPC-03 build. Public
-      documents retrieved 2026-10-07.
+      - https://www.prnewswire.com/news-releases/emboline-announces-first-us-commercial-use-of-the-emboliner-embolic-protection-system-302896963.html
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261715.pdf
+    notes: "WOR-26: FDA Device Name, Applicant, Decision Date and Decision; October 2 release opening and controlled-launch paragraph. AS link is procedural context only. WOR-98: indication and filter description from the FDA 510(k) summary (PDF pp.4 and 6, retrieved 2026-11-11); IFU anatomical limits, pore size and delivery profile were not reviewed. Short-term device, so no permanent implant material is listed. No stroke-reduction claim. Release does not disclose a new EPC-03 build."
 - id: dig-cardioguide-hf
   type: therapy
   therapyType: digital

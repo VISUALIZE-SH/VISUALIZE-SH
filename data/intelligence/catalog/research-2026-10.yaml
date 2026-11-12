@@ -197,12 +197,14 @@ versions:
     model: EPC-03
     kind: device
     clinicalRole: manages
-    summary: FDA lists EPC-03 under K261715, cleared September 8, 2026. Emboline announced first US commercial procedures on October 1 and a controlled launch. Exact materials, profile and cleared IFU wording await review.
+    summary: FDA 510(k) K261715, cleared September 8, 2026, for capture and removal of embolic material during TAVR. The femorally delivered filter is a double-layer, heparin-coated nitinol mesh. Emboline announced first US commercial procedures on October 1 and a controlled launch.
     sourceRefs:
       - sourceId: src-emboliner-fda-k261715
-        locator: 'Device Name; 510(k) Number; Decision Date'
+        locator: Device Name; 510(k) Number; Decision Date
       - sourceId: src-emboliner-commercial-use-20261002
-        locator: 'Opening non-quotation paragraphs; controlled-launch paragraph. Release gives family name, not a new EPC-03 build.'
+        locator: Opening non-quotation paragraphs; controlled-launch paragraph. Release gives family name, not a new EPC-03 build.
+      - sourceId: src-emboliner-fda-k261715-summary
+        locator: PDF p.4, Indications for Use form; PDF p.6, 510(k) Summary Device Description and Indications for Use
     reviewStatus: reviewed
 
 decisions:
@@ -306,14 +308,21 @@ specs:
     category: embolic-protection-devices
     source: src-emboliner-fda-k261715
     values:
-      manufacturer: { reviewStatus: reviewed, value: 'Emboline, Inc.', loc: Applicant }
-      exact-version: { reviewStatus: reviewed, value: Emboliner EPC-03, loc: Device Name }
+      manufacturer:
+        reviewStatus: reviewed
+        value: Emboline, Inc.
+        loc: Applicant
+      exact-version:
+        reviewStatus: reviewed
+        value: Emboliner EPC-03
+        loc: Device Name
       device-design:
         reviewStatus: reviewed
-        value: Temporary catheter for capture/removal of embolic debris during TAVR
-        source: src-emboliner-commercial-use-20261002
-        loc: Second non-quotation paragraph; About Emboline
-        limitation: Manufacturer design intent; no superiority or stroke-reduction outcome inferred.
+        value: Femorally delivered filter catheter with integrated delivery sheath, deployed across the aortic arch
+        source: src-emboliner-fda-k261715-summary
+        loc: PDF p.6, 510(k) Summary, Device Description
+        context: "Filter: double-layer, heparin-coated, cylindrical nitinol mesh. The catheter has an integrated 6 Fr lumen for procedural devices such as a pigtail catheter; filter and debris are retrieved into the sheath at the end of the procedure."
+        limitation: Short-term-use device; no stroke-reduction or superiority outcome inferred.
       development-status:
         reviewStatus: reviewed
         value: US 510(k)-cleared; controlled commercial launch announced October 2
@@ -322,14 +331,16 @@ specs:
         context: FDA K261715 confirms clearance on September 8, 2026. First commercial procedures occurred October 1; release appeared October 2.
       indication-scope:
         reviewStatus: reviewed
-        availability: not_yet_reviewed
-        loc: Device Classification Name (exact cleared IFU text unavailable)
-        limitation: Sponsor describes TAVR use; regulator record establishes clearance but exact indication restrictions require the unavailable summary/IFU.
+        value: "Embolic protection: capture and removal of embolic material during TAVR"
+        source: src-emboliner-fda-k261715-summary
+        loc: PDF p.4, Indications for Use form; PDF p.6, 510(k) Summary
+        context: Aortic diameter and femoral-access-to-STJ distance requirements are set in the IFU, which was not reviewed.
       implant-material:
         reviewStatus: reviewed
         availability: not_applicable
-        loc: Device Classification Name (temporary catheter)
-        context: Temporary protection adjunct, not a permanent implant; filter/frame composition was not independently verified.
+        source: src-emboliner-fda-k261715-summary
+        loc: PDF p.6, Device Description (sterile, short-term-use device)
+        context: Not a permanent implant. The temporary filter is a double-layer, heparin-coated nitinol mesh.
 
 bibliography:
   - id: bib-tavr-fsi-preprint-20261002
