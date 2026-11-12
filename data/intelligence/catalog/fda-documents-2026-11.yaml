@@ -1,0 +1,130 @@
+# fda-documents-2026-11: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-11"
+sources:
+  - id: src-autus-fda-ssed-p260007
+    title: AUTUS Size-Adjustable Valve Summary of Safety and Effectiveness Data (PMA P260007)
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt:
+      value: "2026-10-01"
+      precision: day
+    retrievedAt: "2026-11-11"
+    access: public
+    identifier: P260007
+  - id: src-autus-fda-ifu-p260007
+    title: >-
+      AUTUS Size-Adjustable Valve, Model AUT001, Instructions for Use, Rev. 0 (marked Final Draft), posted with PMA
+      P260007
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007D.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt:
+      value: "2026-09-30"
+      precision: day
+    retrievedAt: "2026-11-11"
+    access: public
+    identifier: P260007
+  - id: src-emboliner-fda-k261715-summary
+    title: Emboliner Embolic Protection System (EPC-03) 510(k) summary K261715
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261715.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt:
+      value: "2026-09-08"
+      precision: day
+    retrievedAt: "2026-11-11"
+    access: public
+    identifier: K261715
+  - id: src-heartmate-ii-ssed
+    title: Thoratec HeartMate II LVAS Summary of Safety and Effectiveness Data (PMA P060040)
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf6/P060040B.pdf
+    kind: regulatory
+    publisher: FDA
+    publishedAt:
+      value: "2008-04-21"
+      precision: day
+    retrievedAt: "2026-11-11"
+    access: public
+    identifier: P060040
+decisions:
+  - id: decision-autus-p260007
+    identifier: P260007
+    rootIdentifier: P260007
+    versionIds:
+      - ver-autus-size-adjustable
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: "2026-10-01"
+      precision: day
+    changeType: initial_authorization
+    summary: >-
+      Initial PMA approval for pediatric patients weighing at least 10 kg who need surgical pulmonary valve replacement
+      for a dysfunctional native or surgically repaired RVOT that meets echocardiographic stenosis and/or regurgitation
+      criteria.
+    sourceRefs:
+      - sourceId: src-autus-fda-ssed-p260007
+        locator: PDF p.1, Section I General Information and Section II Indications for Use
+    reviewStatus: reviewed
+specs:
+  - version: ver-watchman-original
+    source: src-watchman-original-ssed
+    values:
+      delivery-sheath:
+        reviewStatus: reviewed
+        value: 14 Fr WATCHMAN Access Sheath (single, double or anterior curve); 12 Fr delivery catheter
+        loc: PDF p.2, Tables 1-2; PDF p.4, Section C WATCHMAN Access System
+        context: Access sheath working length 75 cm.
+  - version: ver-occlutech-asd-us-p200032
+    source: src-occlutech-asd-p200032-ssed
+    values:
+      available-sizes:
+        reviewStatus: reviewed
+        value: 15 sizes; waist 6-33 mm (left atrial disc 16.5-48 mm)
+        loc: PDF pp.4-5, Table 2
+        context: >-
+          Right atrial disc 12.5-43 mm. Each size is paired with an Occlutech Pistol Pusher and a recommended Occlutech
+          Delivery Set III; the SSED gives no delivery-sheath French size.
+  - version: ver-mi-chord
+    source: src-michord-fda
+    values:
+      indication-scope:
+        reviewStatus: reviewed
+        value: Replacement of adult mitral chordae tendineae on cardiopulmonary bypass under direct visualization
+        loc: PDF p.1, Indications for Use
+        context: >-
+          Heart arrested or fibrillating. Direct visualization means a bloodless field, with or without an operating
+          telescope or videoscopy.
+  - version: ver-heartmate-ii
+    source: src-heartmate-ii-ssed
+    values:
+      implant-material:
+        reviewStatus: reviewed
+        value: Ti6Al4V titanium alloy blood pump; polyester inflow and outflow grafts
+        loc: PDF p.6, Biocompatibility Testing
+        context: The pump also contains ceramic bearings.
+        limitation: Original 2008 PMA configuration (P060040); later supplements not reviewed.
+  - version: ver-sapien-xt
+    source: src-sapien-xt-original-ssed
+    values:
+      tissue-treatment:
+        reviewStatus: reviewed
+        value: ThermaFix-treated bovine pericardial leaflets; packaged and terminally sterilized in glutaraldehyde
+        loc: PDF p.2, Section V Device Description
+      sealing-design:
+        reviewStatus: reviewed
+        value: PET fabric skirt
+        loc: PDF p.2, Section V Device Description
+      available-sizes:
+        reviewStatus: reviewed
+        value: 23, 26, 29 mm (model 9300TFX)
+        loc: PDF p.1, Section I General Information
+      indication-scope:
+        reviewStatus: reviewed
+        value: Severe symptomatic native calcific AS at high or greater surgical risk
+        loc: PDF p.1, Section II Indications for Use
+        context: >-
+          Heart team including a cardiac surgeon; STS score >=8% or >=15% 30-day mortality risk; native anatomy suitable
+          for the 23, 26 or 29 mm valve.
+        limitation: Original 2014 P130009 scope; later indication supplements are not reflected here.

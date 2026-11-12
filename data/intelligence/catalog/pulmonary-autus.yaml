@@ -59,10 +59,14 @@ versions:
     name: AUTUS Size-Adjustable Valve
     kind: device
     clinicalRole: treats
-    summary: FDA announced US PMA approval October 1, 2026. Polymeric-leaflet surgical pulmonary valve designed for later balloon expansion. Exact model, frame alloy, polymer chemistry and approved IFU remain unverified.
+    summary: US FDA PMA P260007, approved October 1, 2026. Model AUT001 is a stented bileaflet surgical pulmonary valve with 0.1 mm ePTFE leaflets on a balloon-expandable 316L stainless-steel frame, supplied in one 12.7 mm size and expandable to 22 mm by balloon dilation.
     sourceRefs:
       - sourceId: src-autus-fda-announcement-20261001
-        locator: 'Opening paragraph; diameter and leaflet paragraphs; PMA pathway and approval-recipient paragraphs'
+        locator: Opening paragraph; diameter and leaflet paragraphs; PMA pathway and approval-recipient paragraphs
+      - sourceId: src-autus-fda-ssed-p260007
+        locator: PDF p.1, Sections I-II; PDF p.2, Section V Device Description and Table 1
+      - sourceId: src-autus-fda-ifu-p260007
+        locator: PDF p.1, title and Section 1.1 Device Description; PDF p.5, Sections 7.2-7.3
     reviewStatus: reviewed
 
 bibliography:
@@ -86,50 +90,60 @@ specs:
         context: FDA names Autus Valve Technologies as developer; legal manufacturing-site details are not established here.
       device-design:
         reviewStatus: reviewed
-        value: Size-adjustable surgical pulmonary valve with polymeric leaflets
-        loc: Opening paragraph; polymeric-leaflet paragraph
+        value: Stented bileaflet synthetic valve; ePTFE sleeve around the frame for suturing
+        source: src-autus-fda-ssed-p260007
+        loc: PDF p.2, Section V Device Description
+        context: The ePTFE stretch-graft sleeve extends below the frame for suture fixation and allows the frame to expand under balloon dilation.
       expansion-mechanism:
         reviewStatus: reviewed
-        value: Postimplant transcatheter balloon expansion
-        loc: Diameter paragraph; final clinical-study paragraph
-        limitation: Designed to accommodate growth; expansion experience and durability are limited. It does not grow autonomously.
+        value: Balloon-expandable frame; pre-implant expansion or postimplant transcatheter balloon dilation
+        source: src-autus-fda-ifu-p260007
+        loc: PDF p.5, Sections 7.2-7.3
+        context: Both use a non-compliant percutaneous balloon dilation catheter.
+        limitation: "IFU Section 5: the safety and effectiveness of post-implant expansion have not been established, and there is no clinical experience with more than one expansion in a patient."
       leaflet-material:
         reviewStatus: reviewed
-        value: Polymeric material
-        loc: Polymeric-leaflet paragraph
-        limitation: Polymer chemistry is not disclosed in the FDA announcement; no ePTFE or other specific composition inferred.
+        value: Expanded polytetrafluoroethylene (ePTFE), 0.1 mm
+        source: src-autus-fda-ssed-p260007
+        loc: PDF p.2, Section V Device Description
       frame-material:
         reviewStatus: reviewed
-        availability: not_publicly_disclosed
-        loc: Entire FDA announcement (frame alloy not specified)
-        limitation: This is missingness in the inspected announcement, not a conclusion about the unavailable IFU or SSED.
+        value: 316L stainless steel
+        source: src-autus-fda-ssed-p260007
+        loc: PDF p.2, Section V Device Description; PDF p.6, nonclinical testing table (Finite Element Analysis)
+        context: The IFU for Model AUT001 posted with the PMA gives the same frame material (PDF p.1, Section 1.1).
       access-route:
         reviewStatus: reviewed
         value: Surgical implantation; subsequent transcatheter balloon dilation
         loc: Opening paragraph; diameter paragraph
       available-sizes:
         reviewStatus: reviewed
-        availability: not_yet_reviewed
-        loc: Diameter paragraph (approximately 13 mm initially; expansion up to 22 mm)
-        context: Reported initial and maximum diameters are not discrete marketed sizes. Exact catalog size/model requires the approved IFU.
+        value: "Single size: 12.7 mm internal diameter (Model AUT001)"
+        source: src-autus-fda-ssed-p260007
+        loc: PDF p.2, Section V Device Description
+        context: Model number from the IFU title (PDF p.1).
       adjustable-diameter:
         reviewStatus: reviewed
-        value: Approx. 13 mm initial diameter; later expansion up to 22 mm
-        loc: Diameter paragraph
-        limitation: Announcement-level valve diameter description, not discrete marketed sizes or a patient annulus/RVOT eligibility range.
+        value: 12.7, 14, 16, 18, 20 or 22 mm internal diameter, before or after implantation
+        source: src-autus-fda-ssed-p260007
+        loc: PDF p.2, Section V Device Description and Table 1
+        context: The SSED describes 2 mm increments within the 12.7 to 22 mm range. Table 1 lists outer diameter 15.7 to 25 mm and length 25.1 to 20.5 mm across these diameters.
+        limitation: Leaflet coaptation height decreases as the frame expands.
       development-status:
         reviewStatus: reviewed
-        value: US FDA PMA approval announced October 1, 2026
-        loc: Opening paragraph; PMA pathway paragraph
-        limitation: PMA identifier, approval order and approved IFU were not located. No formal decision record with an invented identifier is added.
+        value: US FDA PMA P260007 approved October 1, 2026
+        source: src-autus-fda-ssed-p260007
+        loc: PDF p.1, Section I General Information
+        context: Breakthrough Device designation granted August 25, 2023. The SSED states the valve had not been marketed in the US or any other country (PDF p.3, Section VII).
       indication-scope:
         reviewStatus: reviewed
-        value: Pediatric congenital pulmonary valve disease; surgical replacement
-        loc: Opening paragraph
-        context: Paraphrase of FDA announcement scope; trial ages and eligibility are not substituted for exact approved labeling.
+        value: Pediatric patients >=10 kg needing surgical pulmonary valve replacement for a dysfunctional native or surgically repaired RVOT
+        source: src-autus-fda-ssed-p260007
+        loc: PDF p.1, Section II Indications for Use
+        context: "Echocardiographic criteria: severe pulmonary stenosis (RV-PA peak gradient >=60 mmHg), at least moderate pulmonary regurgitation, or at least moderate stenosis (>=40 mmHg) with at least moderate regurgitation."
       pivotal-trials:
         reviewStatus: reviewed
         value: AUT-CP-001 / NCT05006404
         source: src-autus-pivotal-registry
-        loc: 'API protocolSection.identificationModule; descriptionModule; designModule (retrieved 2026-10-07)'
+        loc: API protocolSection.identificationModule; descriptionModule; designModule (retrieved 2026-10-07)
         context: Pivotal registry reports 62 actual participants. Continued access has a separate registry record and snapshot. The earlier 11-patient feasibility report is not merged with this cohort.

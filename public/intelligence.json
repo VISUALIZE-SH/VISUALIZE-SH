@@ -21046,27 +21046,28 @@
       "basis": "directly_reported",
       "category": "fit",
       "comparisonAttributeId": "adjustable-diameter",
+      "context": "The SSED describes 2 mm increments within the 12.7 to 22 mm range. Table 1 lists outer diameter 15.7 to 25 mm and length 25.1 to 20.5 mm across these diameters.",
       "id": "claim-autus-size-adjustable-adjustable-diameter",
       "key": "adjustable-diameter",
       "label": "Adjustable valve diameter",
-      "limitation": "Announcement-level valve diameter description, not discrete marketed sizes or a patient annulus/RVOT eligibility range.",
+      "limitation": "Leaflet coaptation height decreases as the frame expands.",
       "observedAt": "2026-10-07",
       "reviewStatus": "reviewed",
       "sourceRefs": [
         {
-          "locator": "Diameter paragraph",
-          "sourceId": "src-autus-fda-announcement-20261001"
+          "locator": "PDF p.2, Section V Device Description and Table 1",
+          "sourceId": "src-autus-fda-ssed-p260007"
         }
       ],
-      "value": "Approx. 13 mm initial diameter; later expansion up to 22 mm",
+      "value": "12.7, 14, 16, 18, 20 or 22 mm internal diameter, before or after implantation",
       "versionId": "ver-autus-size-adjustable"
     },
     {
-      "availability": "not_yet_reviewed",
+      "availability": "reported",
       "basis": "directly_reported",
       "category": "fit",
       "comparisonAttributeId": "available-sizes",
-      "context": "Reported initial and maximum diameters are not discrete marketed sizes. Exact catalog size/model requires the approved IFU.",
+      "context": "Model number from the IFU title (PDF p.1).",
       "id": "claim-autus-size-adjustable-available-sizes",
       "key": "available-sizes",
       "label": "Sizes",
@@ -21074,10 +21075,11 @@
       "reviewStatus": "reviewed",
       "sourceRefs": [
         {
-          "locator": "Diameter paragraph (approximately 13 mm initially; expansion up to 22 mm)",
-          "sourceId": "src-autus-fda-announcement-20261001"
+          "locator": "PDF p.2, Section V Device Description",
+          "sourceId": "src-autus-fda-ssed-p260007"
         }
       ],
+      "value": "Single size: 12.7 mm internal diameter (Model AUT001)",
       "versionId": "ver-autus-size-adjustable"
     },
     {
@@ -21085,19 +21087,19 @@
       "basis": "directly_reported",
       "category": "fit",
       "comparisonAttributeId": "development-status",
+      "context": "Breakthrough Device designation granted August 25, 2023. The SSED states the valve had not been marketed in the US or any other country (PDF p.3, Section VII).",
       "id": "claim-autus-size-adjustable-development-status",
       "key": "development-status",
       "label": "Development / safety status",
-      "limitation": "PMA identifier, approval order and approved IFU were not located. No formal decision record with an invented identifier is added.",
       "observedAt": "2026-10-07",
       "reviewStatus": "reviewed",
       "sourceRefs": [
         {
-          "locator": "Opening paragraph; PMA pathway paragraph",
-          "sourceId": "src-autus-fda-announcement-20261001"
+          "locator": "PDF p.1, Section I General Information",
+          "sourceId": "src-autus-fda-ssed-p260007"
         }
       ],
-      "value": "US FDA PMA approval announced October 1, 2026",
+      "value": "US FDA PMA P260007 approved October 1, 2026",
       "versionId": "ver-autus-size-adjustable"
     },
     {
@@ -21105,6 +21107,7 @@
       "basis": "directly_reported",
       "category": "design",
       "comparisonAttributeId": "device-design",
+      "context": "The ePTFE stretch-graft sleeve extends below the frame for suture fixation and allows the frame to expand under balloon dilation.",
       "id": "claim-autus-size-adjustable-device-design",
       "key": "device-design",
       "label": "Design",
@@ -21112,11 +21115,11 @@
       "reviewStatus": "reviewed",
       "sourceRefs": [
         {
-          "locator": "Opening paragraph; polymeric-leaflet paragraph",
-          "sourceId": "src-autus-fda-announcement-20261001"
+          "locator": "PDF p.2, Section V Device Description",
+          "sourceId": "src-autus-fda-ssed-p260007"
         }
       ],
-      "value": "Size-adjustable surgical pulmonary valve with polymeric leaflets",
+      "value": "Stented bileaflet synthetic valve; ePTFE sleeve around the frame for suturing",
       "versionId": "ver-autus-size-adjustable"
     },
     {
@@ -21124,38 +21127,40 @@
       "basis": "directly_reported",
       "category": "design",
       "comparisonAttributeId": "expansion-mechanism",
+      "context": "Both use a non-compliant percutaneous balloon dilation catheter.",
       "id": "claim-autus-size-adjustable-expansion-mechanism",
       "key": "expansion-mechanism",
       "label": "Expansion",
-      "limitation": "Designed to accommodate growth; expansion experience and durability are limited. It does not grow autonomously.",
+      "limitation": "IFU Section 5: the safety and effectiveness of post-implant expansion have not been established, and there is no clinical experience with more than one expansion in a patient.",
       "observedAt": "2026-10-07",
       "reviewStatus": "reviewed",
       "sourceRefs": [
         {
-          "locator": "Diameter paragraph; final clinical-study paragraph",
-          "sourceId": "src-autus-fda-announcement-20261001"
+          "locator": "PDF p.5, Sections 7.2-7.3",
+          "sourceId": "src-autus-fda-ifu-p260007"
         }
       ],
-      "value": "Postimplant transcatheter balloon expansion",
+      "value": "Balloon-expandable frame; pre-implant expansion or postimplant transcatheter balloon dilation",
       "versionId": "ver-autus-size-adjustable"
     },
     {
-      "availability": "not_publicly_disclosed",
+      "availability": "reported",
       "basis": "directly_reported",
       "category": "design",
       "comparisonAttributeId": "frame-material",
+      "context": "The IFU for Model AUT001 posted with the PMA gives the same frame material (PDF p.1, Section 1.1).",
       "id": "claim-autus-size-adjustable-frame-material",
       "key": "frame-material",
       "label": "Frame material",
-      "limitation": "This is missingness in the inspected announcement, not a conclusion about the unavailable IFU or SSED.",
       "observedAt": "2026-10-07",
       "reviewStatus": "reviewed",
       "sourceRefs": [
         {
-          "locator": "Entire FDA announcement (frame alloy not specified)",
-          "sourceId": "src-autus-fda-announcement-20261001"
+          "locator": "PDF p.2, Section V Device Description; PDF p.6, nonclinical testing table (Finite Element Analysis)",
+          "sourceId": "src-autus-fda-ssed-p260007"
         }
       ],
+      "value": "316L stainless steel",
       "versionId": "ver-autus-size-adjustable"
     },
     {
@@ -21163,7 +21168,7 @@
       "basis": "directly_reported",
       "category": "fit",
       "comparisonAttributeId": "indication-scope",
-      "context": "Paraphrase of FDA announcement scope; trial ages and eligibility are not substituted for exact approved labeling.",
+      "context": "Echocardiographic criteria: severe pulmonary stenosis (RV-PA peak gradient >=60 mmHg), at least moderate pulmonary regurgitation, or at least moderate stenosis (>=40 mmHg) with at least moderate regurgitation.",
       "id": "claim-autus-size-adjustable-indication-scope",
       "key": "indication-scope",
       "label": "US indication",
@@ -21171,11 +21176,11 @@
       "reviewStatus": "reviewed",
       "sourceRefs": [
         {
-          "locator": "Opening paragraph",
-          "sourceId": "src-autus-fda-announcement-20261001"
+          "locator": "PDF p.1, Section II Indications for Use",
+          "sourceId": "src-autus-fda-ssed-p260007"
         }
       ],
-      "value": "Pediatric congenital pulmonary valve disease; surgical replacement",
+      "value": "Pediatric patients >=10 kg needing surgical pulmonary valve replacement for a dysfunctional native or surgically repaired RVOT",
       "versionId": "ver-autus-size-adjustable"
     },
     {
@@ -21186,16 +21191,15 @@
       "id": "claim-autus-size-adjustable-leaflet-material",
       "key": "leaflet-material",
       "label": "Leaflet material",
-      "limitation": "Polymer chemistry is not disclosed in the FDA announcement; no ePTFE or other specific composition inferred.",
       "observedAt": "2026-10-07",
       "reviewStatus": "reviewed",
       "sourceRefs": [
         {
-          "locator": "Polymeric-leaflet paragraph",
-          "sourceId": "src-autus-fda-announcement-20261001"
+          "locator": "PDF p.2, Section V Device Description",
+          "sourceId": "src-autus-fda-ssed-p260007"
         }
       ],
-      "value": "Polymeric material",
+      "value": "Expanded polytetrafluoroethylene (ePTFE), 0.1 mm",
       "versionId": "ver-autus-size-adjustable"
     },
     {
@@ -23514,19 +23518,20 @@
       "basis": "directly_reported",
       "category": "design",
       "comparisonAttributeId": "device-design",
+      "context": "Filter: double-layer, heparin-coated, cylindrical nitinol mesh. The catheter has an integrated 6 Fr lumen for procedural devices such as a pigtail catheter; filter and debris are retrieved into the sheath at the end of the procedure.",
       "id": "claim-emboliner-epc03-device-design",
       "key": "device-design",
       "label": "Design",
-      "limitation": "Manufacturer design intent; no superiority or stroke-reduction outcome inferred.",
+      "limitation": "Short-term-use device; no stroke-reduction or superiority outcome inferred.",
       "observedAt": "2026-10-07",
       "reviewStatus": "reviewed",
       "sourceRefs": [
         {
-          "locator": "Second non-quotation paragraph; About Emboline",
-          "sourceId": "src-emboliner-commercial-use-20261002"
+          "locator": "PDF p.6, 510(k) Summary, Device Description",
+          "sourceId": "src-emboliner-fda-k261715-summary"
         }
       ],
-      "value": "Temporary catheter for capture/removal of embolic debris during TAVR",
+      "value": "Femorally delivered filter catheter with integrated delivery sheath, deployed across the aortic arch",
       "versionId": "ver-emboliner-epc03"
     },
     {
@@ -23553,7 +23558,7 @@
       "basis": "directly_reported",
       "category": "design",
       "comparisonAttributeId": "implant-material",
-      "context": "Temporary protection adjunct, not a permanent implant; filter/frame composition was not independently verified.",
+      "context": "Not a permanent implant. The temporary filter is a double-layer, heparin-coated nitinol mesh.",
       "id": "claim-emboliner-epc03-implant-material",
       "key": "implant-material",
       "label": "Permanent implant material",
@@ -23561,29 +23566,30 @@
       "reviewStatus": "reviewed",
       "sourceRefs": [
         {
-          "locator": "Device Classification Name (temporary catheter)",
-          "sourceId": "src-emboliner-fda-k261715"
+          "locator": "PDF p.6, Device Description (sterile, short-term-use device)",
+          "sourceId": "src-emboliner-fda-k261715-summary"
         }
       ],
       "versionId": "ver-emboliner-epc03"
     },
     {
-      "availability": "not_yet_reviewed",
+      "availability": "reported",
       "basis": "directly_reported",
       "category": "fit",
       "comparisonAttributeId": "indication-scope",
+      "context": "Aortic diameter and femoral-access-to-STJ distance requirements are set in the IFU, which was not reviewed.",
       "id": "claim-emboliner-epc03-indication-scope",
       "key": "indication-scope",
       "label": "US indication",
-      "limitation": "Sponsor describes TAVR use; regulator record establishes clearance but exact indication restrictions require the unavailable summary/IFU.",
       "observedAt": "2026-10-07",
       "reviewStatus": "reviewed",
       "sourceRefs": [
         {
-          "locator": "Device Classification Name (exact cleared IFU text unavailable)",
-          "sourceId": "src-emboliner-fda-k261715"
+          "locator": "PDF p.4, Indications for Use form; PDF p.6, 510(k) Summary",
+          "sourceId": "src-emboliner-fda-k261715-summary"
         }
       ],
+      "value": "Embolic protection: capture and removal of embolic material during TAVR",
       "versionId": "ver-emboliner-epc03"
     },
     {
@@ -25798,6 +25804,27 @@
         }
       ],
       "value": "Implantable continuous-flow axial pump",
+      "versionId": "ver-heartmate-ii"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "implant-material",
+      "context": "The pump also contains ceramic bearings.",
+      "id": "claim-heartmate-ii-implant-material",
+      "key": "implant-material",
+      "label": "Permanent implant material",
+      "limitation": "Original 2008 PMA configuration (P060040); later supplements not reviewed.",
+      "observedAt": "2026-11-11",
+      "reviewStatus": "reviewed",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.6, Biocompatibility Testing",
+          "sourceId": "src-heartmate-ii-ssed"
+        }
+      ],
+      "value": "Ti6Al4V titanium alloy blood pump; polyester inflow and outflow grafts",
       "versionId": "ver-heartmate-ii"
     },
     {
@@ -31089,6 +31116,26 @@
     {
       "availability": "reported",
       "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "indication-scope",
+      "context": "Heart arrested or fibrillating. Direct visualization means a bloodless field, with or without an operating telescope or videoscopy.",
+      "id": "claim-mi-chord-indication-scope",
+      "key": "indication-scope",
+      "label": "US indication",
+      "observedAt": "2026-11-11",
+      "reviewStatus": "reviewed",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.1, Indications for Use",
+          "sourceId": "src-michord-fda"
+        }
+      ],
+      "value": "Replacement of adult mitral chordae tendineae on cardiopulmonary bypass under direct visualization",
+      "versionId": "ver-mi-chord"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
       "category": "design",
       "comparisonAttributeId": "manufacturer",
       "id": "claim-mi-chord-manufacturer",
@@ -32594,6 +32641,26 @@
         }
       ],
       "value": "DI 04255888902731 packages occluder DI 04260182521540 and Pistol Pusher DI 8683463400161",
+      "versionId": "ver-occlutech-asd-us-p200032"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "available-sizes",
+      "context": "Right atrial disc 12.5-43 mm. Each size is paired with an Occlutech Pistol Pusher and a recommended Occlutech Delivery Set III; the SSED gives no delivery-sheath French size.",
+      "id": "claim-occlutech-asd-us-p200032-available-sizes",
+      "key": "available-sizes",
+      "label": "Sizes",
+      "observedAt": "2026-11-11",
+      "reviewStatus": "reviewed",
+      "sourceRefs": [
+        {
+          "locator": "PDF pp.4-5, Table 2",
+          "sourceId": "src-occlutech-asd-p200032-ssed"
+        }
+      ],
+      "value": "15 sizes; waist 6-33 mm (left atrial disc 16.5-48 mm)",
       "versionId": "ver-occlutech-asd-us-p200032"
     },
     {
@@ -34404,6 +34471,25 @@
     {
       "availability": "reported",
       "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "available-sizes",
+      "id": "claim-sapien-xt-available-sizes",
+      "key": "available-sizes",
+      "label": "Sizes",
+      "observedAt": "2026-11-11",
+      "reviewStatus": "reviewed",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.1, Section I General Information",
+          "sourceId": "src-sapien-xt-original-ssed"
+        }
+      ],
+      "value": "23, 26, 29 mm (model 9300TFX)",
+      "versionId": "ver-sapien-xt"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
       "category": "design",
       "comparisonAttributeId": "device-design",
       "id": "claim-sapien-xt-caval-device-design",
@@ -34499,6 +34585,27 @@
     {
       "availability": "reported",
       "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "indication-scope",
+      "context": "Heart team including a cardiac surgeon; STS score >=8% or >=15% 30-day mortality risk; native anatomy suitable for the 23, 26 or 29 mm valve.",
+      "id": "claim-sapien-xt-indication-scope",
+      "key": "indication-scope",
+      "label": "US indication",
+      "limitation": "Original 2014 P130009 scope; later indication supplements are not reflected here.",
+      "observedAt": "2026-11-11",
+      "reviewStatus": "reviewed",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.1, Section II Indications for Use",
+          "sourceId": "src-sapien-xt-original-ssed"
+        }
+      ],
+      "value": "Severe symptomatic native calcific AS at high or greater surgical risk",
+      "versionId": "ver-sapien-xt"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
       "category": "design",
       "comparisonAttributeId": "leaflet-material",
       "id": "claim-sapien-xt-leaflet-material",
@@ -34513,6 +34620,44 @@
         }
       ],
       "value": "Bovine pericardium",
+      "versionId": "ver-sapien-xt"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "sealing-design",
+      "id": "claim-sapien-xt-sealing-design",
+      "key": "sealing-design",
+      "label": "Sealing",
+      "observedAt": "2026-11-11",
+      "reviewStatus": "reviewed",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.2, Section V Device Description",
+          "sourceId": "src-sapien-xt-original-ssed"
+        }
+      ],
+      "value": "PET fabric skirt",
+      "versionId": "ver-sapien-xt"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "design",
+      "comparisonAttributeId": "tissue-treatment",
+      "id": "claim-sapien-xt-tissue-treatment",
+      "key": "tissue-treatment",
+      "label": "Tissue treatment",
+      "observedAt": "2026-11-11",
+      "reviewStatus": "reviewed",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.2, Section V Device Description",
+          "sourceId": "src-sapien-xt-original-ssed"
+        }
+      ],
+      "value": "ThermaFix-treated bovine pericardial leaflets; packaged and terminally sterilized in glutaraldehyde",
       "versionId": "ver-sapien-xt"
     },
     {
@@ -37669,6 +37814,26 @@
         }
       ],
       "value": "21, 24, 27, 30, 33 mm",
+      "versionId": "ver-watchman-original"
+    },
+    {
+      "availability": "reported",
+      "basis": "directly_reported",
+      "category": "fit",
+      "comparisonAttributeId": "delivery-sheath",
+      "context": "Access sheath working length 75 cm.",
+      "id": "claim-watchman-original-delivery-sheath",
+      "key": "delivery-sheath",
+      "label": "Delivery system",
+      "observedAt": "2026-11-11",
+      "reviewStatus": "reviewed",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.2, Tables 1-2; PDF p.4, Section C WATCHMAN Access System",
+          "sourceId": "src-watchman-original-ssed"
+        }
+      ],
+      "value": "14 Fr WATCHMAN Access Sheath (single, double or anterior curve); 12 Fr delivery catheter",
       "versionId": "ver-watchman-original"
     },
     {
@@ -42042,6 +42207,29 @@
       "summary": "Initial approval for ATTR-CM (ATTRibute-CM).",
       "versionIds": [
         "ver-attruby"
+      ]
+    },
+    {
+      "changeType": "initial_authorization",
+      "date": {
+        "precision": "day",
+        "value": "2026-10-01"
+      },
+      "id": "decision-autus-p260007",
+      "identifier": "P260007",
+      "jurisdiction": "US",
+      "pathway": "PMA",
+      "reviewStatus": "reviewed",
+      "rootIdentifier": "P260007",
+      "sourceRefs": [
+        {
+          "locator": "PDF p.1, Section I General Information and Section II Indications for Use",
+          "sourceId": "src-autus-fda-ssed-p260007"
+        }
+      ],
+      "summary": "Initial PMA approval for pediatric patients weighing at least 10 kg who need surgical pulmonary valve replacement for a dysfunctional native or surgically repaired RVOT that meets echocardiographic stenosis and/or regurgitation criteria.",
+      "versionIds": [
+        "ver-autus-size-adjustable"
       ]
     },
     {
@@ -55052,6 +55240,34 @@
     },
     {
       "access": "public",
+      "id": "src-autus-fda-ifu-p260007",
+      "identifier": "P260007",
+      "kind": "regulatory",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-09-30"
+      },
+      "publisher": "FDA",
+      "retrievedAt": "2026-11-11",
+      "title": "AUTUS Size-Adjustable Valve, Model AUT001, Instructions for Use, Rev. 0 (marked Final Draft), posted with PMA P260007",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007D.pdf"
+    },
+    {
+      "access": "public",
+      "id": "src-autus-fda-ssed-p260007",
+      "identifier": "P260007",
+      "kind": "regulatory",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-10-01"
+      },
+      "publisher": "FDA",
+      "retrievedAt": "2026-11-11",
+      "title": "AUTUS Size-Adjustable Valve Summary of Safety and Effectiveness Data (PMA P260007)",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf26/P260007B.pdf"
+    },
+    {
+      "access": "public",
       "id": "src-autus-pivotal-registry",
       "identifier": "NCT05006404",
       "kind": "registry",
@@ -56131,6 +56347,20 @@
       "retrievedAt": "2026-10-07",
       "title": "Emboliner Embolic Protection System (EPC-03) — FDA 510(k) record",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K261715"
+    },
+    {
+      "access": "public",
+      "id": "src-emboliner-fda-k261715-summary",
+      "identifier": "K261715",
+      "kind": "regulatory",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2026-09-08"
+      },
+      "publisher": "FDA",
+      "retrievedAt": "2026-11-11",
+      "title": "Emboliner Embolic Protection System (EPC-03) 510(k) summary K261715",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K261715.pdf"
     },
     {
       "access": "public",
@@ -62433,6 +62663,20 @@
       "retrievedAt": "2026-09-28",
       "title": "Thoratec HeartMate II LVAS FDA PMA P060040",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P060040"
+    },
+    {
+      "access": "public",
+      "id": "src-heartmate-ii-ssed",
+      "identifier": "P060040",
+      "kind": "regulatory",
+      "publishedAt": {
+        "precision": "day",
+        "value": "2008-04-21"
+      },
+      "publisher": "FDA",
+      "retrievedAt": "2026-11-11",
+      "title": "Thoratec HeartMate II LVAS Summary of Safety and Effectiveness Data (PMA P060040)",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf6/P060040B.pdf"
     },
     {
       "access": "public",
@@ -74667,9 +74911,17 @@
         {
           "locator": "Opening paragraph; diameter and leaflet paragraphs; PMA pathway and approval-recipient paragraphs",
           "sourceId": "src-autus-fda-announcement-20261001"
+        },
+        {
+          "locator": "PDF p.1, Sections I-II; PDF p.2, Section V Device Description and Table 1",
+          "sourceId": "src-autus-fda-ssed-p260007"
+        },
+        {
+          "locator": "PDF p.1, title and Section 1.1 Device Description; PDF p.5, Sections 7.2-7.3",
+          "sourceId": "src-autus-fda-ifu-p260007"
         }
       ],
-      "summary": "FDA announced US PMA approval October 1, 2026. Polymeric-leaflet surgical pulmonary valve designed for later balloon expansion. Exact model, frame alloy, polymer chemistry and approved IFU remain unverified."
+      "summary": "US FDA PMA P260007, approved October 1, 2026. Model AUT001 is a stented bileaflet surgical pulmonary valve with 0.1 mm ePTFE leaflets on a balloon-expandable 316L stainless-steel frame, supplied in one 12.7 mm size and expandable to 22 mm by balloon dilation."
     },
     {
       "clinicalRole": "treats",
@@ -75208,9 +75460,13 @@
         {
           "locator": "Opening non-quotation paragraphs; controlled-launch paragraph. Release gives family name, not a new EPC-03 build.",
           "sourceId": "src-emboliner-commercial-use-20261002"
+        },
+        {
+          "locator": "PDF p.4, Indications for Use form; PDF p.6, 510(k) Summary Device Description and Indications for Use",
+          "sourceId": "src-emboliner-fda-k261715-summary"
         }
       ],
-      "summary": "FDA lists EPC-03 under K261715, cleared September 8, 2026. Emboline announced first US commercial procedures on October 1 and a controlled launch. Exact materials, profile and cleared IFU wording await review."
+      "summary": "FDA 510(k) K261715, cleared September 8, 2026, for capture and removal of embolic material during TAVR. The femorally delivered filter is a double-layer, heparin-coated nitinol mesh. Emboline announced first US commercial procedures on October 1 and a controlled launch."
     },
     {
       "clinicalRole": "treats",
