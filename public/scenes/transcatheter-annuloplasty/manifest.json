@@ -1,1 +1,1220 @@
-{"classId":"transcatheter-annuloplasty","conditionId":"cond-mr","title":"Transcatheter annuloplasty","linkLabel":"Visualize device class","status":"Schematic","scope":"Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.","stageLabel":"Schematic · representative anatomy · not to scale","attribution":"Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.","sources":[{"title":"Toronto Heart Atlas","url":"https://github.com/tgh-apil/TorontoHeartAtlas","locator":"RegularHeart chamber and vessel meshes, CC BY 4.0."},{"title":"Creative Commons Attribution 4.0","url":"https://creativecommons.org/licenses/by/4.0/"},{"title":"NHLBI: How blood flows through the heart","url":"https://www.nhlbi.nih.gov/health/heart/blood-flow","locator":"Written heart-valve and circulation sections; no media reused."},{"title":"University of Minnesota: written anatomy reference","url":"https://www.vhlab.umn.edu/atlas/anatomy-tutorial/cardiac-valve-nomenclature.shtml","locator":"Anatomical description; no atlas images or models reused."}],"legend":[{"label":"Representative tissue","color":"#ad77ca"},{"label":"Generic device","color":"#ffd358"},{"label":"Leaflets / fabric","color":"#f6dfc8"},{"label":"Suture / emphasis","color":"#35a8a0"}],"designs":[{"id":"direct-band","label":"Direct partial band","summary":"A generic directly attached partial band follows the mitral annulus between the left atrium and ventricle."}],"states":[{"id":"anatomy","label":"Annular anatomy","note":"No repair device is shown."},{"id":"valve_closed","label":"Band attached, valve closed","note":"The representative partial band sits at the junction, with leaflets below it."},{"id":"valve_open","label":"Band attached, valve open","note":"The band remains in the same pose while the representative leaflets open."}],"views":[{"id":"heart","label":"Whole heart","title":"Locate the treatment region","lesson":"Use the highlighted region to orient the enlarged views.","states":["valve_open"],"orientation":{"superior":{"x":0.0,"y":-0.9595},"patientRight":{"x":-0.8384,"y":-0.1535}}},{"id":"region","label":"Left chambers","title":"See the valve between the chambers","lesson":"The left atrium and left ventricle of a real heart are opened along their long axis. The band follows the valve ring on its atrial side; the leaflets move below it.","states":["anatomy","valve_closed","valve_open"],"orientation":{"superior":{"x":-0.6796,"y":-0.0596},"patientRight":{"x":-0.4059,"y":-0.7997}}},{"id":"section","label":"Mechanism section","title":"See the tissue–device relationship","lesson":"Follow the partial band along the mitral annulus; its attachments remain above the moving leaflet edges.","states":["anatomy","valve_closed","valve_open"],"orientation":{"superior":{"x":0.6315,"y":-0.1088},"patientRight":{"x":-0.7419,"y":-0.3726}}},{"id":"oblique","label":"Oblique detail","title":"Understand depth and attachment","lesson":"An oblique view separates the near surface, device and supporting tissue.","states":["anatomy","valve_closed","valve_open"],"orientation":{"superior":{"x":0.2215,"y":0.0379},"patientRight":{"x":-0.8443,"y":-0.4926}}},{"id":"face","label":"Face view","title":"Look along the opening","lesson":"The face view complements the section. All poses and proportions are representative, not measured.","states":["anatomy","valve_closed","valve_open"],"orientation":{"superior":{"x":-0.6011,"y":-0.4895},"patientRight":{"x":0.7822,"y":-0.1985}}}],"annotations":{"location":{"label":"TREATMENT LOCATION","body":"The highlighted region locates this class in the heart. The marker is enlarged for orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"junction":{"label":"MITRAL ANNULUS","body":"The mitral annulus is the ring where the valve sits between the left atrium and left ventricle. This shape is schematic and representative.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"leaflets":{"label":"VALVE LEAFLETS","body":"These representative surfaces illustrate leaflet relationships. The positions shown are representative; they are not measured or computed.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"ventricular_support":{"label":"PAPILLARY MUSCLES","body":"Papillary muscles arise from the left ventricular wall and support the mitral leaflets through chordae. Their shapes are schematic.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"device":{"label":"GENERIC REPAIR DEVICE","body":"The highlighted device and attachment shapes are representative of this class, not a specific product or a prediction.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_atrium":{"label":"LEFT ATRIUM","body":"The left atrium sits above the valve. Its shape comes from a real heart, opened along its long axis.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_ventricle":{"label":"LEFT VENTRICLE","body":"The left ventricle sits below the valve. Its cavity and wall shape come from the same real heart.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_aorta":{"label":"AORTIC ROOT","body":"The aortic root sits beside the front leaflet of the mitral valve and helps with orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_valve":{"label":"MITRAL VALVE","body":"The two leaflets hang from the ring where the atrium joins the ventricle. Leaflet shape is representative and is not measured on a specific patient or population.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_support":{"label":"PAPILLARY MUSCLES","body":"Two papillary muscles rise from the ventricular wall. Cords fan out from their tips to the leaflet edges. Their shapes are representative.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_device":{"label":"GENERIC PARTIAL BAND","body":"The band sits on the atrial side of the ring where the leaflets attach. Its shape is representative, not a specific product.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"}},"images":{"direct-band/heart/valve_open":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__heart__valve_open.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__heart__valve_open.thumb.webp","alt":"Direct partial band: Locate the treatment region. Band attached, valve open. Schematic, representative illustration.","pins":[{"id":"location","x":0.56822,"y":0.57323}]},"direct-band/region/anatomy":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__region__anatomy.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__region__anatomy.thumb.webp","alt":"Direct partial band: See the valve between the chambers. Annular anatomy. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.62831,"y":0.22216},{"id":"region_aorta","x":0.44663,"y":0.47336},{"id":"region_valve","x":0.58313,"y":0.35138},{"id":"region_support","x":0.56267,"y":0.4935},{"id":"region_ventricle","x":0.65638,"y":0.84129}]},"direct-band/region/valve_closed":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_closed.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_closed.thumb.webp","alt":"Direct partial band: See the valve between the chambers. Band attached, valve closed. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.62831,"y":0.22216},{"id":"region_aorta","x":0.44663,"y":0.47336},{"id":"region_valve","x":0.58313,"y":0.35138},{"id":"region_support","x":0.56267,"y":0.4935},{"id":"region_ventricle","x":0.65638,"y":0.84129},{"id":"region_device","x":0.54867,"y":0.23087}]},"direct-band/region/valve_open":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_open.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_open.thumb.webp","alt":"Direct partial band: See the valve between the chambers. Band attached, valve open. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.62831,"y":0.22216},{"id":"region_aorta","x":0.44663,"y":0.47336},{"id":"region_valve","x":0.51395,"y":0.39635},{"id":"region_support","x":0.56267,"y":0.4935},{"id":"region_ventricle","x":0.65638,"y":0.84129},{"id":"region_device","x":0.54867,"y":0.23087}]},"direct-band/section/anatomy":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__section__anatomy.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__section__anatomy.thumb.webp","alt":"Direct partial band: See the tissue–device relationship. Annular anatomy. Schematic, representative illustration.","pins":[{"id":"junction","x":0.272,"y":0.44267},{"id":"leaflets","x":0.52123,"y":0.51438},{"id":"ventricular_support","x":0.40443,"y":0.76681}]},"direct-band/section/valve_closed":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_closed.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_closed.thumb.webp","alt":"Direct partial band: See the tissue–device relationship. Band attached, valve closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.272,"y":0.44267},{"id":"leaflets","x":0.52123,"y":0.51438},{"id":"ventricular_support","x":0.40443,"y":0.76681},{"id":"device","x":0.69529,"y":0.34351}]},"direct-band/section/valve_open":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_open.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_open.thumb.webp","alt":"Direct partial band: See the tissue–device relationship. Band attached, valve open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.272,"y":0.44267},{"id":"leaflets","x":0.37352,"y":0.61487},{"id":"ventricular_support","x":0.40443,"y":0.76681},{"id":"device","x":0.69529,"y":0.34351}]},"direct-band/oblique/anatomy":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__oblique__anatomy.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__oblique__anatomy.thumb.webp","alt":"Direct partial band: Understand depth and attachment. Annular anatomy. Schematic, representative illustration.","pins":[{"id":"junction","x":0.30297,"y":0.37862},{"id":"leaflets","x":0.51676,"y":0.51131},{"id":"ventricular_support","x":0.45334,"y":0.70611}]},"direct-band/oblique/valve_closed":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_closed.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_closed.thumb.webp","alt":"Direct partial band: Understand depth and attachment. Band attached, valve closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.30297,"y":0.37862},{"id":"leaflets","x":0.53091,"y":0.5402},{"id":"ventricular_support","x":0.45334,"y":0.70611},{"id":"device","x":0.71229,"y":0.39495}]},"direct-band/oblique/valve_open":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_open.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_open.thumb.webp","alt":"Direct partial band: Understand depth and attachment. Band attached, valve open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.30297,"y":0.37862},{"id":"leaflets","x":0.3926,"y":0.57857},{"id":"ventricular_support","x":0.45334,"y":0.70611},{"id":"device","x":0.71229,"y":0.39495}]},"direct-band/face/anatomy":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__face__anatomy.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__face__anatomy.thumb.webp","alt":"Direct partial band: Look along the opening. Annular anatomy. Schematic, representative illustration.","pins":[{"id":"junction","x":0.71752,"y":0.49615},{"id":"leaflets","x":0.48404,"y":0.5049}]},"direct-band/face/valve_closed":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_closed.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_closed.thumb.webp","alt":"Direct partial band: Look along the opening. Band attached, valve closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.71752,"y":0.49615},{"id":"leaflets","x":0.48404,"y":0.5049},{"id":"device","x":0.31287,"y":0.66}]},"direct-band/face/valve_open":{"src":"/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_open.webp","thumb":"/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_open.thumb.webp","alt":"Direct partial band: Look along the opening. Band attached, valve open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.71752,"y":0.49615},{"id":"leaflets","x":0.6186,"y":0.45765},{"id":"device","x":0.31287,"y":0.66}]}}}
+{
+ "classId": "transcatheter-annuloplasty",
+ "conditionId": "cond-mr",
+ "title": "Transcatheter annuloplasty",
+ "linkLabel": "Visualize device class",
+ "status": "Schematic",
+ "scope": "Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.",
+ "stageLabel": "Schematic \u00b7 representative anatomy \u00b7 not to scale",
+ "attribution": "Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.",
+ "sources": [
+  {
+   "title": "Toronto Heart Atlas",
+   "url": "https://github.com/tgh-apil/TorontoHeartAtlas",
+   "locator": "RegularHeart chamber and vessel meshes, CC BY 4.0."
+  },
+  {
+   "title": "Creative Commons Attribution 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "title": "NHLBI: How blood flows through the heart",
+   "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+   "locator": "Written heart-valve and circulation sections; no media reused."
+  },
+  {
+   "title": "University of Minnesota: written anatomy reference",
+   "url": "https://www.vhlab.umn.edu/atlas/anatomy-tutorial/cardiac-valve-nomenclature.shtml",
+   "locator": "Anatomical description; no atlas images or models reused."
+  }
+ ],
+ "legend": [
+  {
+   "label": "Representative tissue",
+   "color": "#ad77ca"
+  },
+  {
+   "label": "Generic device",
+   "color": "#ffd358"
+  },
+  {
+   "label": "Leaflets / fabric",
+   "color": "#f6dfc8"
+  },
+  {
+   "label": "Suture / emphasis",
+   "color": "#35a8a0"
+  }
+ ],
+ "designs": [
+  {
+   "id": "direct-band",
+   "label": "Direct partial band",
+   "summary": "A generic directly attached partial band follows the mitral annulus between the left atrium and ventricle."
+  }
+ ],
+ "states": [
+  {
+   "id": "anatomy",
+   "label": "Annular anatomy",
+   "note": "No repair device is shown."
+  },
+  {
+   "id": "valve_closed",
+   "label": "Band attached, valve closed",
+   "note": "The representative partial band sits at the junction, with leaflets below it."
+  },
+  {
+   "id": "valve_open",
+   "label": "Band attached, valve open",
+   "note": "The band remains in the same pose while the representative leaflets open."
+  }
+ ],
+ "views": [
+  {
+   "id": "heart",
+   "label": "Whole heart",
+   "title": "Locate the treatment region",
+   "lesson": "The highlighted region orients the enlarged views.",
+   "states": [
+    "valve_open"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9595
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1535
+    }
+   }
+  },
+  {
+   "id": "region",
+   "label": "Left chambers",
+   "title": "See the valve between the chambers",
+   "lesson": "The left chambers opened along their long axis. The band follows the valve ring on its atrial side.",
+   "states": [
+    "anatomy",
+    "valve_closed",
+    "valve_open"
+   ],
+   "orientation": {
+    "superior": {
+     "x": -0.6796,
+     "y": -0.0596
+    },
+    "patientRight": {
+     "x": -0.4059,
+     "y": -0.7997
+    }
+   },
+   "presentation": {
+    "directionCaption": "Left chambers",
+    "representation": "representative-view",
+    "regionLabel": "Transcatheter annuloplasty"
+   }
+  },
+  {
+   "id": "section",
+   "label": "Mechanism section",
+   "title": "See the tissue\u2013device relationship",
+   "lesson": "The partial band follows the annulus, with its attachments above the moving leaflet edges.",
+   "states": [
+    "anatomy",
+    "valve_closed",
+    "valve_open"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.6315,
+     "y": -0.1088
+    },
+    "patientRight": {
+     "x": -0.7419,
+     "y": -0.3726
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen from the front",
+    "representation": "representative-section",
+    "regionLabel": "Transcatheter annuloplasty"
+   }
+  },
+  {
+   "id": "oblique",
+   "label": "Oblique detail",
+   "title": "Understand depth and attachment",
+   "lesson": "An oblique view separates the near surface, the band and the supporting tissue.",
+   "states": [
+    "anatomy",
+    "valve_closed",
+    "valve_open"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.2215,
+     "y": 0.0379
+    },
+    "patientRight": {
+     "x": -0.8443,
+     "y": -0.4926
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen at an angle",
+    "representation": "representative-section",
+    "regionLabel": "Transcatheter annuloplasty"
+   }
+  },
+  {
+   "id": "face",
+   "label": "Face view",
+   "title": "Look along the opening",
+   "lesson": "Looking along the opening. Poses and proportions are representative, not measured.",
+   "states": [
+    "anatomy",
+    "valve_closed",
+    "valve_open"
+   ],
+   "orientation": {
+    "superior": {
+     "x": -0.6011,
+     "y": -0.4895
+    },
+    "patientRight": {
+     "x": 0.7822,
+     "y": -0.1985
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen along the opening",
+    "representation": "representative-section",
+    "regionLabel": "Transcatheter annuloplasty"
+   }
+  }
+ ],
+ "annotations": {
+  "location": {
+   "label": "TREATMENT LOCATION",
+   "body": "The highlighted region locates this class in the heart. The marker is enlarged for orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "junction": {
+   "label": "MITRAL ANNULUS",
+   "body": "The mitral annulus is the ring where the valve sits between the left atrium and left ventricle. This shape is schematic and representative.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "leaflets": {
+   "label": "VALVE LEAFLETS",
+   "body": "These representative surfaces illustrate leaflet relationships. The positions shown are representative; they are not measured or computed.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "ventricular_support": {
+   "label": "PAPILLARY MUSCLES",
+   "body": "Papillary muscles arise from the left ventricular wall and support the mitral leaflets through chordae. Their shapes are schematic.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "device": {
+   "label": "GENERIC REPAIR DEVICE",
+   "body": "The highlighted device and attachment shapes are representative of this class, not a specific product or a prediction.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "transcatheter-annuloplasty.device"
+  },
+  "region_atrium": {
+   "label": "LEFT ATRIUM",
+   "body": "The left atrium sits above the valve. Its shape comes from a real heart, opened along its long axis.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_ventricle": {
+   "label": "LEFT VENTRICLE",
+   "body": "The left ventricle sits below the valve. Its cavity and wall shape come from the same real heart.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_aorta": {
+   "label": "AORTIC ROOT",
+   "body": "The aortic root sits beside the front leaflet of the mitral valve and helps with orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_valve": {
+   "label": "MITRAL VALVE",
+   "body": "The two leaflets hang from the ring where the atrium joins the ventricle. Leaflet shape is representative and is not measured on a specific patient or population.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_support": {
+   "label": "PAPILLARY MUSCLES",
+   "body": "Two papillary muscles rise from the ventricular wall. Cords fan out from their tips to the leaflet edges. Their shapes are representative.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_device": {
+   "label": "GENERIC PARTIAL BAND",
+   "body": "The band sits on the atrial side of the ring where the leaflets attach. Its shape is representative, not a specific product.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "transcatheter-annuloplasty.device"
+  }
+ },
+ "images": {
+  "direct-band/heart/valve_open": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__heart__valve_open.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__heart__valve_open.thumb.webp",
+   "alt": "Direct partial band: Locate the treatment region. Band attached, valve open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.56822,
+     "y": 0.57323
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__heart__valve_open.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__heart__valve_open.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      134
+     ]
+    }
+   },
+   "keys": []
+  },
+  "direct-band/region/anatomy": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__region__anatomy.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__region__anatomy.thumb.webp",
+   "alt": "Direct partial band: See the valve between the chambers. Annular anatomy. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.50863,
+     "y": 0.13311
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.3431,
+     "y": 0.24165
+    },
+    {
+     "id": "region_valve",
+     "x": 0.5892,
+     "y": 0.35557
+    },
+    {
+     "id": "region_support",
+     "x": 0.59801,
+     "y": 0.45035
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.56374,
+     "y": 0.73088
+    }
+   ],
+   "camera": "a80c480d436883b1",
+   "contentBox": {
+    "x": 0.2442,
+    "y": 0.0344,
+    "width": 0.5117,
+    "height": 0.9311
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__region__anatomy.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__region__anatomy.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      64
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      71
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      73
+     ]
+    },
+    "region_support": {
+     "parts": [
+      67
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      67
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "direct-band/region/valve_closed": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_closed.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_closed.thumb.webp",
+   "alt": "Direct partial band: See the valve between the chambers. Band attached, valve closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.50863,
+     "y": 0.13311
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.3431,
+     "y": 0.24165
+    },
+    {
+     "id": "region_valve",
+     "x": 0.5892,
+     "y": 0.35557
+    },
+    {
+     "id": "region_support",
+     "x": 0.59801,
+     "y": 0.45035
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.56374,
+     "y": 0.73088
+    },
+    {
+     "id": "region_device",
+     "x": 0.54867,
+     "y": 0.23087
+    }
+   ],
+   "camera": "a80c480d436883b1",
+   "contentBox": {
+    "x": 0.2442,
+    "y": 0.0344,
+    "width": 0.5117,
+    "height": 0.9311
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_closed.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_closed.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      64,
+      114
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      71
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      87,
+      114
+     ]
+    },
+    "region_support": {
+     "parts": [
+      67,
+      114
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      67,
+      114
+     ]
+    },
+    "region_device": {
+     "parts": [
+      114,
+      64,
+      65,
+      67,
+      68,
+      86,
+      87
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "direct-band/region/valve_open": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_open.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_open.thumb.webp",
+   "alt": "Direct partial band: See the valve between the chambers. Band attached, valve open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.50863,
+     "y": 0.13311
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.3431,
+     "y": 0.24165
+    },
+    {
+     "id": "region_valve",
+     "x": 0.53426,
+     "y": 0.40237
+    },
+    {
+     "id": "region_support",
+     "x": 0.59801,
+     "y": 0.45035
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.56374,
+     "y": 0.73088
+    },
+    {
+     "id": "region_device",
+     "x": 0.54867,
+     "y": 0.23087
+    }
+   ],
+   "camera": "a80c480d436883b1",
+   "contentBox": {
+    "x": 0.2442,
+    "y": 0.0344,
+    "width": 0.5117,
+    "height": 0.9311
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_open.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_open.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      64,
+      121
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      71
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      100,
+      121
+     ]
+    },
+    "region_support": {
+     "parts": [
+      67,
+      121
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      67,
+      121
+     ]
+    },
+    "region_device": {
+     "parts": [
+      121,
+      64,
+      65,
+      67,
+      68,
+      100,
+      101
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "direct-band/section/anatomy": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__section__anatomy.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__section__anatomy.thumb.webp",
+   "alt": "Direct partial band: See the tissue\u2013device relationship. Annular anatomy. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.30041,
+     "y": 0.45146
+    },
+    {
+     "id": "leaflets",
+     "x": 0.52116,
+     "y": 0.50811
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.40321,
+     "y": 0.7779
+    }
+   ],
+   "camera": "45eeb56317b1b343",
+   "contentBox": {
+    "x": 0.1683,
+    "y": 0.0094,
+    "width": 0.6633,
+    "height": 0.965
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__section__anatomy.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__section__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2
+     ]
+    },
+    "leaflets": {
+     "parts": [
+      6
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/transcatheter-annuloplasty/images/direct-band__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.6288,
+    "y": 0.265,
+    "r": 0.0693
+   }
+  },
+  "direct-band/section/valve_closed": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_closed.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_closed.thumb.webp",
+   "alt": "Direct partial band: See the tissue\u2013device relationship. Band attached, valve closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.30041,
+     "y": 0.45146
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.40321,
+     "y": 0.7779
+    },
+    {
+     "id": "device",
+     "x": 0.70881,
+     "y": 0.33225
+    }
+   ],
+   "camera": "45eeb56317b1b343",
+   "contentBox": {
+    "x": 0.1683,
+    "y": 0.0094,
+    "width": 0.6633,
+    "height": 0.965
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_closed.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_closed.ghost-2.webp",
+      "x": 0.2633333333333333,
+      "y": 0.3477777777777778,
+      "width": 0.47333333333333333,
+      "height": 0.20555555555555555
+     }
+    },
+    "ventricular_support": {
+     "parts": [
+      3
+     ]
+    },
+    "device": {
+     "parts": [
+      41,
+      1,
+      2,
+      18,
+      20
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.6288,
+    "y": 0.265,
+    "r": 0.0693
+   }
+  },
+  "direct-band/section/valve_open": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_open.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_open.thumb.webp",
+   "alt": "Direct partial band: See the tissue\u2013device relationship. Band attached, valve open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.27882,
+     "y": 0.42269
+    },
+    {
+     "id": "leaflets",
+     "x": 0.38965,
+     "y": 0.61827
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.40321,
+     "y": 0.7779
+    },
+    {
+     "id": "device",
+     "x": 0.70881,
+     "y": 0.33225
+    }
+   ],
+   "camera": "45eeb56317b1b343",
+   "contentBox": {
+    "x": 0.1683,
+    "y": 0.0094,
+    "width": 0.6633,
+    "height": 0.965
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_open.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2,
+      52,
+      53,
+      54,
+      55,
+      56
+     ],
+     "ghost": {
+      "src": "/scenes/transcatheter-annuloplasty/images/direct-band__section__valve_open.ghost-2.webp",
+      "x": 0.2633333333333333,
+      "y": 0.3477777777777778,
+      "width": 0.47333333333333333,
+      "height": 0.20555555555555555
+     }
+    },
+    "leaflets": {
+     "parts": [
+      30,
+      52,
+      53,
+      54
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      3
+     ]
+    },
+    "device": {
+     "parts": [
+      52,
+      1,
+      2,
+      30,
+      32
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.6288,
+    "y": 0.265,
+    "r": 0.0693
+   }
+  },
+  "direct-band/oblique/anatomy": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__anatomy.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__anatomy.thumb.webp",
+   "alt": "Direct partial band: Understand depth and attachment. Annular anatomy. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.29518,
+     "y": 0.37015
+    },
+    {
+     "id": "leaflets",
+     "x": 0.52518,
+     "y": 0.51276
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.4624,
+     "y": 0.74819
+    }
+   ],
+   "camera": "aba02030b7587bbd",
+   "contentBox": {
+    "x": 0.2087,
+    "y": 0.0,
+    "width": 0.6104,
+    "height": 0.9994
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2
+     ]
+    },
+    "leaflets": {
+     "parts": [
+      6
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/transcatheter-annuloplasty/images/direct-band__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.6288,
+    "y": 0.265,
+    "r": 0.0693
+   }
+  },
+  "direct-band/oblique/valve_closed": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_closed.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_closed.thumb.webp",
+   "alt": "Direct partial band: Understand depth and attachment. Band attached, valve closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.29518,
+     "y": 0.37015
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.4624,
+     "y": 0.74819
+    },
+    {
+     "id": "device",
+     "x": 0.70348,
+     "y": 0.38887
+    }
+   ],
+   "camera": "aba02030b7587bbd",
+   "contentBox": {
+    "x": 0.2087,
+    "y": 0.0,
+    "width": 0.6104,
+    "height": 0.9994
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_closed.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_closed.ghost-2.webp",
+      "x": 0.27416666666666667,
+      "y": 0.2966666666666667,
+      "width": 0.45166666666666666,
+      "height": 0.27
+     }
+    },
+    "ventricular_support": {
+     "parts": [
+      3
+     ]
+    },
+    "device": {
+     "parts": [
+      41,
+      1,
+      2,
+      18,
+      20
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.6288,
+    "y": 0.265,
+    "r": 0.0693
+   }
+  },
+  "direct-band/oblique/valve_open": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_open.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_open.thumb.webp",
+   "alt": "Direct partial band: Understand depth and attachment. Band attached, valve open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.29518,
+     "y": 0.37015
+    },
+    {
+     "id": "leaflets",
+     "x": 0.41341,
+     "y": 0.58545
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.4624,
+     "y": 0.74819
+    },
+    {
+     "id": "device",
+     "x": 0.70348,
+     "y": 0.38887
+    }
+   ],
+   "camera": "aba02030b7587bbd",
+   "contentBox": {
+    "x": 0.2087,
+    "y": 0.0,
+    "width": 0.6104,
+    "height": 0.9994
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_open.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2,
+      52,
+      53,
+      55
+     ],
+     "ghost": {
+      "src": "/scenes/transcatheter-annuloplasty/images/direct-band__oblique__valve_open.ghost-2.webp",
+      "x": 0.27416666666666667,
+      "y": 0.2966666666666667,
+      "width": 0.45166666666666666,
+      "height": 0.27
+     }
+    },
+    "leaflets": {
+     "parts": [
+      30,
+      52,
+      53
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      3
+     ]
+    },
+    "device": {
+     "parts": [
+      52,
+      1,
+      2,
+      30,
+      32
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.6288,
+    "y": 0.265,
+    "r": 0.0693
+   }
+  },
+  "direct-band/face/anatomy": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__face__anatomy.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__face__anatomy.thumb.webp",
+   "alt": "Direct partial band: Look along the opening. Annular anatomy. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.7112,
+     "y": 0.46852
+    },
+    {
+     "id": "leaflets",
+     "x": 0.47801,
+     "y": 0.51237
+    }
+   ],
+   "camera": "826f1dfa9cef22ac",
+   "contentBox": {
+    "x": 0.1558,
+    "y": 0.2828,
+    "width": 0.6633,
+    "height": 0.6433
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__face__anatomy.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__face__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2
+     ]
+    },
+    "leaflets": {
+     "parts": [
+      5
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/transcatheter-annuloplasty/images/direct-band__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.6288,
+    "y": 0.265,
+    "r": 0.0693
+   }
+  },
+  "direct-band/face/valve_closed": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_closed.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_closed.thumb.webp",
+   "alt": "Direct partial band: Look along the opening. Band attached, valve closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.7112,
+     "y": 0.46852
+    },
+    {
+     "id": "leaflets",
+     "x": 0.47801,
+     "y": 0.51237
+    },
+    {
+     "id": "device",
+     "x": 0.30689,
+     "y": 0.61987
+    }
+   ],
+   "camera": "826f1dfa9cef22ac",
+   "contentBox": {
+    "x": 0.1558,
+    "y": 0.2828,
+    "width": 0.6633,
+    "height": 0.6433
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_closed.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_closed.ghost-2.webp",
+      "x": 0.27166666666666667,
+      "y": 0.2833333333333333,
+      "width": 0.4716666666666667,
+      "height": 0.46444444444444444
+     }
+    },
+    "leaflets": {
+     "parts": [
+      17,
+      41
+     ]
+    },
+    "device": {
+     "parts": [
+      41,
+      1,
+      2,
+      17,
+      19
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.6288,
+    "y": 0.265,
+    "r": 0.0693
+   }
+  },
+  "direct-band/face/valve_open": {
+   "src": "/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_open.webp",
+   "thumb": "/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_open.thumb.webp",
+   "alt": "Direct partial band: Look along the opening. Band attached, valve open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.7112,
+     "y": 0.46852
+    },
+    {
+     "id": "leaflets",
+     "x": 0.60192,
+     "y": 0.47173
+    },
+    {
+     "id": "device",
+     "x": 0.30689,
+     "y": 0.61987
+    }
+   ],
+   "camera": "826f1dfa9cef22ac",
+   "contentBox": {
+    "x": 0.1558,
+    "y": 0.2828,
+    "width": 0.6633,
+    "height": 0.6433
+   },
+   "mid": "/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_open.mid.webp",
+   "partMap": "/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2,
+      52
+     ],
+     "ghost": {
+      "src": "/scenes/transcatheter-annuloplasty/images/direct-band__face__valve_open.ghost-2.webp",
+      "x": 0.27166666666666667,
+      "y": 0.2833333333333333,
+      "width": 0.4716666666666667,
+      "height": 0.46444444444444444
+     }
+    },
+    "leaflets": {
+     "parts": [
+      29,
+      52
+     ]
+    },
+    "device": {
+     "parts": [
+      52,
+      1,
+      2,
+      29,
+      31
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/transcatheter-annuloplasty/images/direct-band__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.6288,
+    "y": 0.265,
+    "r": 0.0693
+   }
+  }
+ },
+ "presentation": {
+  "annotationMode": "external",
+  "layout": "plate",
+  "labels": {
+   "location": "Treatment location",
+   "leaflets": "Valve leaflets",
+   "ventricular_support": "Papillary muscles",
+   "region_atrium": "Left atrium",
+   "region_ventricle": "Left ventricle",
+   "region_aorta": "Aortic root",
+   "region_valve": "Mitral valve",
+   "region_support": "Papillary muscles",
+   "junction": "Mitral annulus",
+   "device": "Generic repair device",
+   "region_device": "Partial band"
+  },
+  "stateLabels": {
+   "anatomy": "Annular anatomy",
+   "valve_closed": "Valve closed",
+   "valve_open": "Valve open"
+  },
+  "stateGroups": [
+   {
+    "label": "Anatomy",
+    "states": [
+     "anatomy"
+    ]
+   },
+   {
+    "label": "With band",
+    "states": [
+     "valve_closed",
+     "valve_open"
+    ]
+   }
+  ],
+  "keyColors": {
+   "cut": "#62505c"
+  }
+ }
+}

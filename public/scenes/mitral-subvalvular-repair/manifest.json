@@ -1,1 +1,1239 @@
-{"classId":"mitral-subvalvular-repair","conditionId":"cond-mr","title":"Mitral subvalvular repair","linkLabel":"Visualize device class","status":"Schematic","scope":"Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.","stageLabel":"Schematic · representative anatomy · not to scale","attribution":"Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.","sources":[{"title":"Toronto Heart Atlas","url":"https://github.com/tgh-apil/TorontoHeartAtlas","locator":"RegularHeart chamber and vessel meshes, CC BY 4.0."},{"title":"Creative Commons Attribution 4.0","url":"https://creativecommons.org/licenses/by/4.0/"},{"title":"NHLBI: How blood flows through the heart","url":"https://www.nhlbi.nih.gov/health/heart/blood-flow","locator":"Written heart-valve and circulation sections; no media reused."},{"title":"University of Minnesota: written anatomy reference","url":"https://www.vhlab.umn.edu/atlas/anatomy-tutorial/cardiac-valve-nomenclature.shtml","locator":"Anatomical description; no atlas images or models reused."}],"legend":[{"label":"Representative tissue","color":"#ad77ca"},{"label":"Generic device","color":"#ffd358"},{"label":"Leaflets / fabric","color":"#f6dfc8"},{"label":"Suture / emphasis","color":"#35a8a0"}],"designs":[{"id":"support","label":"Ventricular leaflet support","summary":"A generic support pad sits beneath the mitral leaflet edge, with representative ventricular attachments."}],"states":[{"id":"anatomy","label":"Native support","note":"Native ventricular supporting structures are shown without the support."},{"id":"valve_closed","label":"Support present, valve closed","note":"A representative support pad sits immediately below the leaflet-edge region, with attachments below in the ventricle."},{"id":"valve_open","label":"Support present, valve open","note":"The support remains fixed while the leaflets open in a representative pose."}],"views":[{"id":"heart","label":"Whole heart","title":"Locate the treatment region","lesson":"Use the highlighted region to orient the enlarged views.","states":["valve_open"],"orientation":{"superior":{"x":0.0,"y":-0.9595},"patientRight":{"x":-0.8384,"y":-0.1535}}},{"id":"region","label":"Left chambers","title":"See the valve between the chambers","lesson":"The left atrium and left ventricle of a real heart are opened along their long axis. Both papillary muscles rise from the ventricular wall below the leaflets, and the support pad sits between them.","states":["anatomy","valve_closed","valve_open"],"orientation":{"superior":{"x":-0.676,"y":-0.2581},"patientRight":{"x":-0.4102,"y":-0.6464}}},{"id":"section","label":"Mechanism section","title":"See the tissue–device relationship","lesson":"The highlighted support pad is beneath the leaflet-edge region on the ventricular side, separate from the annular junction.","states":["anatomy","valve_closed","valve_open"],"orientation":{"superior":{"x":0.6315,"y":-0.1088},"patientRight":{"x":-0.7419,"y":-0.3726}}},{"id":"oblique","label":"Oblique detail","title":"Understand depth and attachment","lesson":"An oblique view separates the near surface, device and supporting tissue.","states":["anatomy","valve_closed","valve_open"],"orientation":{"superior":{"x":0.2215,"y":0.0379},"patientRight":{"x":-0.8443,"y":-0.4926}}},{"id":"face","label":"Ventricular view","title":"Look up from the ventricle","lesson":"Seen from the ventricular side, the support pad lies beneath the leaflet edges. All poses and proportions are representative, not measured.","states":["anatomy","valve_closed","valve_open"],"orientation":{"superior":{"x":0.6579,"y":-0.7523},"patientRight":{"x":-0.6968,"y":-0.6254}}}],"annotations":{"location":{"label":"TREATMENT LOCATION","body":"The highlighted region locates this class in the heart. The marker is enlarged for orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"junction":{"label":"MITRAL VALVE","body":"The mitral valve lies between the left atrium and left ventricle. Its depicted shape is schematic.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"leaflets":{"label":"VALVE LEAFLETS","body":"These representative surfaces illustrate leaflet relationships. The positions shown are representative; they are not measured or computed.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"ventricular_support":{"label":"PAPILLARY MUSCLES","body":"Papillary muscles arise from the ventricular wall and support the valve leaflets through chordae. Their shapes are schematic.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"device":{"label":"GENERIC REPAIR DEVICE","body":"The highlighted device and attachment shapes are representative of this class, not a specific product or a prediction.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_atrium":{"label":"LEFT ATRIUM","body":"The left atrium sits above the valve. Its shape comes from a real heart, opened along its long axis.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_ventricle":{"label":"LEFT VENTRICLE","body":"The left ventricle sits below the valve. Its cavity and wall shape come from the same real heart.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_aorta":{"label":"AORTIC ROOT","body":"The aortic root sits beside the front leaflet of the mitral valve and helps with orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_valve":{"label":"MITRAL VALVE","body":"The two leaflets hang from the ring where the atrium joins the ventricle. Leaflet shape is representative and is not measured on a specific patient or population.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_support":{"label":"PAPILLARY MUSCLES","body":"Two papillary muscles rise from the ventricular wall. Cords fan out from their tips to the leaflet edges. Their shapes are representative.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_device":{"label":"GENERIC REPAIR DEVICE","body":"The support pad sits below the leaflet edges and is attached to both papillary muscles. Its shape is representative, not a specific product.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"}},"images":{"support/heart/valve_open":{"src":"/scenes/mitral-subvalvular-repair/images/support__heart__valve_open.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__heart__valve_open.thumb.webp","alt":"Ventricular leaflet support: Locate the treatment region. Support present, valve open. Schematic, representative illustration.","pins":[{"id":"location","x":0.56822,"y":0.57323}]},"support/region/anatomy":{"src":"/scenes/mitral-subvalvular-repair/images/support__region__anatomy.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__region__anatomy.thumb.webp","alt":"Ventricular leaflet support: See the valve between the chambers. Native support. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.63043,"y":0.18357},{"id":"region_aorta","x":0.44785,"y":0.44128},{"id":"region_valve","x":0.58171,"y":0.31254},{"id":"region_support","x":0.56155,"y":0.47286},{"id":"region_ventricle","x":0.65953,"y":0.81449}]},"support/region/valve_closed":{"src":"/scenes/mitral-subvalvular-repair/images/support__region__valve_closed.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__region__valve_closed.thumb.webp","alt":"Ventricular leaflet support: See the valve between the chambers. Support present, valve closed. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.63043,"y":0.18357},{"id":"region_aorta","x":0.44785,"y":0.44128},{"id":"region_valve","x":0.58171,"y":0.31254},{"id":"region_support","x":0.56155,"y":0.47286},{"id":"region_ventricle","x":0.65953,"y":0.81449},{"id":"region_device","x":0.56798,"y":0.38018}]},"support/region/valve_open":{"src":"/scenes/mitral-subvalvular-repair/images/support__region__valve_open.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__region__valve_open.thumb.webp","alt":"Ventricular leaflet support: See the valve between the chambers. Support present, valve open. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.63043,"y":0.18357},{"id":"region_aorta","x":0.44785,"y":0.44128},{"id":"region_valve","x":0.51385,"y":0.36088},{"id":"region_support","x":0.56155,"y":0.47286},{"id":"region_ventricle","x":0.65953,"y":0.81449},{"id":"region_device","x":0.59137,"y":0.34031}]},"support/section/anatomy":{"src":"/scenes/mitral-subvalvular-repair/images/support__section__anatomy.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__section__anatomy.thumb.webp","alt":"Ventricular leaflet support: See the tissue–device relationship. Native support. Schematic, representative illustration.","pins":[{"id":"junction","x":0.272,"y":0.44267},{"id":"leaflets","x":0.52123,"y":0.51438},{"id":"ventricular_support","x":0.40443,"y":0.76681}]},"support/section/valve_closed":{"src":"/scenes/mitral-subvalvular-repair/images/support__section__valve_closed.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__section__valve_closed.thumb.webp","alt":"Ventricular leaflet support: See the tissue–device relationship. Support present, valve closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.272,"y":0.44267},{"id":"leaflets","x":0.52123,"y":0.51438},{"id":"ventricular_support","x":0.40443,"y":0.76681},{"id":"device","x":0.56775,"y":0.55357}]},"support/section/valve_open":{"src":"/scenes/mitral-subvalvular-repair/images/support__section__valve_open.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__section__valve_open.thumb.webp","alt":"Ventricular leaflet support: See the tissue–device relationship. Support present, valve open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.272,"y":0.44267},{"id":"leaflets","x":0.37352,"y":0.61487},{"id":"ventricular_support","x":0.40443,"y":0.76681},{"id":"device","x":0.53762,"y":0.55309}]},"support/oblique/anatomy":{"src":"/scenes/mitral-subvalvular-repair/images/support__oblique__anatomy.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__oblique__anatomy.thumb.webp","alt":"Ventricular leaflet support: Understand depth and attachment. Native support. Schematic, representative illustration.","pins":[{"id":"junction","x":0.30297,"y":0.37862},{"id":"leaflets","x":0.51676,"y":0.51131},{"id":"ventricular_support","x":0.45334,"y":0.70611}]},"support/oblique/valve_closed":{"src":"/scenes/mitral-subvalvular-repair/images/support__oblique__valve_closed.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__oblique__valve_closed.thumb.webp","alt":"Ventricular leaflet support: Understand depth and attachment. Support present, valve closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.30297,"y":0.37862},{"id":"leaflets","x":0.51676,"y":0.51131},{"id":"ventricular_support","x":0.45334,"y":0.70611},{"id":"device","x":0.56007,"y":0.5589}]},"support/oblique/valve_open":{"src":"/scenes/mitral-subvalvular-repair/images/support__oblique__valve_open.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__oblique__valve_open.thumb.webp","alt":"Ventricular leaflet support: Understand depth and attachment. Support present, valve open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.30297,"y":0.37862},{"id":"leaflets","x":0.3926,"y":0.57857},{"id":"ventricular_support","x":0.45334,"y":0.70611},{"id":"device","x":0.56007,"y":0.5589}]},"support/face/anatomy":{"src":"/scenes/mitral-subvalvular-repair/images/support__face__anatomy.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__face__anatomy.thumb.webp","alt":"Ventricular leaflet support: Look up from the ventricle. Native support. Schematic, representative illustration.","pins":[{"id":"junction","x":0.29245,"y":0.42757},{"id":"leaflets","x":0.51458,"y":0.51413},{"id":"ventricular_support","x":0.38611,"y":0.70752}]},"support/face/valve_closed":{"src":"/scenes/mitral-subvalvular-repair/images/support__face__valve_closed.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__face__valve_closed.thumb.webp","alt":"Ventricular leaflet support: Look up from the ventricle. Support present, valve closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.29245,"y":0.42757},{"id":"leaflets","x":0.51458,"y":0.51413},{"id":"ventricular_support","x":0.38611,"y":0.70752},{"id":"device","x":0.57996,"y":0.58116}]},"support/face/valve_open":{"src":"/scenes/mitral-subvalvular-repair/images/support__face__valve_open.webp","thumb":"/scenes/mitral-subvalvular-repair/images/support__face__valve_open.thumb.webp","alt":"Ventricular leaflet support: Look up from the ventricle. Support present, valve open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.27701,"y":0.42901},{"id":"leaflets","x":0.36645,"y":0.55804},{"id":"ventricular_support","x":0.38611,"y":0.70752},{"id":"device","x":0.57996,"y":0.58116}]}}}
+{
+ "classId": "mitral-subvalvular-repair",
+ "conditionId": "cond-mr",
+ "title": "Mitral subvalvular repair",
+ "linkLabel": "Visualize device class",
+ "status": "Schematic",
+ "scope": "Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.",
+ "stageLabel": "Schematic \u00b7 representative anatomy \u00b7 not to scale",
+ "attribution": "Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.",
+ "sources": [
+  {
+   "title": "Toronto Heart Atlas",
+   "url": "https://github.com/tgh-apil/TorontoHeartAtlas",
+   "locator": "RegularHeart chamber and vessel meshes, CC BY 4.0."
+  },
+  {
+   "title": "Creative Commons Attribution 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "title": "NHLBI: How blood flows through the heart",
+   "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+   "locator": "Written heart-valve and circulation sections; no media reused."
+  },
+  {
+   "title": "University of Minnesota: written anatomy reference",
+   "url": "https://www.vhlab.umn.edu/atlas/anatomy-tutorial/cardiac-valve-nomenclature.shtml",
+   "locator": "Anatomical description; no atlas images or models reused."
+  }
+ ],
+ "legend": [
+  {
+   "label": "Representative tissue",
+   "color": "#ad77ca"
+  },
+  {
+   "label": "Generic device",
+   "color": "#ffd358"
+  },
+  {
+   "label": "Leaflets / fabric",
+   "color": "#f6dfc8"
+  },
+  {
+   "label": "Suture / emphasis",
+   "color": "#35a8a0"
+  }
+ ],
+ "designs": [
+  {
+   "id": "support",
+   "label": "Ventricular leaflet support",
+   "summary": "A generic support pad sits beneath the mitral leaflet edge, with representative ventricular attachments."
+  }
+ ],
+ "states": [
+  {
+   "id": "anatomy",
+   "label": "Native support",
+   "note": "Native ventricular supporting structures are shown without the support."
+  },
+  {
+   "id": "valve_closed",
+   "label": "Support present, valve closed",
+   "note": "A representative support pad sits immediately below the leaflet-edge region, with attachments below in the ventricle."
+  },
+  {
+   "id": "valve_open",
+   "label": "Support present, valve open",
+   "note": "The support remains fixed while the leaflets open in a representative pose."
+  }
+ ],
+ "views": [
+  {
+   "id": "heart",
+   "label": "Whole heart",
+   "title": "Locate the treatment region",
+   "lesson": "The highlighted region orients the enlarged views.",
+   "states": [
+    "valve_open"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9595
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1535
+    }
+   }
+  },
+  {
+   "id": "region",
+   "label": "Left chambers",
+   "title": "See the valve between the chambers",
+   "lesson": "The left chambers opened along their long axis. The support pad sits between the papillary muscles, below the leaflets.",
+   "states": [
+    "anatomy",
+    "valve_closed",
+    "valve_open"
+   ],
+   "orientation": {
+    "superior": {
+     "x": -0.676,
+     "y": -0.2581
+    },
+    "patientRight": {
+     "x": -0.4102,
+     "y": -0.6464
+    }
+   },
+   "presentation": {
+    "directionCaption": "Left chambers",
+    "representation": "representative-view",
+    "regionLabel": "Mitral subvalvular repair"
+   }
+  },
+  {
+   "id": "section",
+   "label": "Mechanism section",
+   "title": "See the tissue\u2013device relationship",
+   "lesson": "The support pad lies below the leaflet edges on the ventricular side, apart from the annulus.",
+   "states": [
+    "anatomy",
+    "valve_closed",
+    "valve_open"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.6315,
+     "y": -0.1088
+    },
+    "patientRight": {
+     "x": -0.7419,
+     "y": -0.3726
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen from the front",
+    "representation": "representative-section",
+    "regionLabel": "Mitral subvalvular repair"
+   }
+  },
+  {
+   "id": "oblique",
+   "label": "Oblique detail",
+   "title": "Understand depth and attachment",
+   "lesson": "An oblique view separates the near surface, the device and the supporting tissue.",
+   "states": [
+    "anatomy",
+    "valve_closed",
+    "valve_open"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.2215,
+     "y": 0.0379
+    },
+    "patientRight": {
+     "x": -0.8443,
+     "y": -0.4926
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen at an angle",
+    "representation": "representative-section",
+    "regionLabel": "Mitral subvalvular repair"
+   }
+  },
+  {
+   "id": "face",
+   "label": "Ventricular view",
+   "title": "Look up from the ventricle",
+   "lesson": "Seen from the ventricular side, the pad lies beneath the leaflet edges. Poses and proportions are representative.",
+   "states": [
+    "anatomy",
+    "valve_closed",
+    "valve_open"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.6579,
+     "y": -0.7523
+    },
+    "patientRight": {
+     "x": -0.6968,
+     "y": -0.6254
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen along the opening",
+    "representation": "representative-section",
+    "regionLabel": "Mitral subvalvular repair"
+   }
+  }
+ ],
+ "annotations": {
+  "location": {
+   "label": "TREATMENT LOCATION",
+   "body": "The highlighted region locates this class in the heart. The marker is enlarged for orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "junction": {
+   "label": "MITRAL VALVE",
+   "body": "The mitral valve lies between the left atrium and left ventricle. Its depicted shape is schematic.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "leaflets": {
+   "label": "VALVE LEAFLETS",
+   "body": "These representative surfaces illustrate leaflet relationships. The positions shown are representative; they are not measured or computed.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "ventricular_support": {
+   "label": "PAPILLARY MUSCLES",
+   "body": "Papillary muscles arise from the ventricular wall and support the valve leaflets through chordae. Their shapes are schematic.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "device": {
+   "label": "GENERIC REPAIR DEVICE",
+   "body": "The highlighted device and attachment shapes are representative of this class, not a specific product or a prediction.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "mitral-subvalvular-repair.device"
+  },
+  "region_atrium": {
+   "label": "LEFT ATRIUM",
+   "body": "The left atrium sits above the valve. Its shape comes from a real heart, opened along its long axis.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_ventricle": {
+   "label": "LEFT VENTRICLE",
+   "body": "The left ventricle sits below the valve. Its cavity and wall shape come from the same real heart.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_aorta": {
+   "label": "AORTIC ROOT",
+   "body": "The aortic root sits beside the front leaflet of the mitral valve and helps with orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_valve": {
+   "label": "MITRAL VALVE",
+   "body": "The two leaflets hang from the ring where the atrium joins the ventricle. Leaflet shape is representative and is not measured on a specific patient or population.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_support": {
+   "label": "PAPILLARY MUSCLES",
+   "body": "Two papillary muscles rise from the ventricular wall. Cords fan out from their tips to the leaflet edges. Their shapes are representative.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_device": {
+   "label": "GENERIC REPAIR DEVICE",
+   "body": "The support pad sits below the leaflet edges and is attached to both papillary muscles. Its shape is representative, not a specific product.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "mitral-subvalvular-repair.device"
+  }
+ },
+ "images": {
+  "support/heart/valve_open": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__heart__valve_open.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__heart__valve_open.thumb.webp",
+   "alt": "Ventricular leaflet support: Locate the treatment region. Support present, valve open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.56822,
+     "y": 0.57323
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__heart__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__heart__valve_open.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      106
+     ]
+    }
+   },
+   "keys": []
+  },
+  "support/region/anatomy": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__region__anatomy.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__region__anatomy.thumb.webp",
+   "alt": "Ventricular leaflet support: See the valve between the chambers. Native support. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.52115,
+     "y": 0.10488
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.42913,
+     "y": 0.29899
+    },
+    {
+     "id": "region_valve",
+     "x": 0.58763,
+     "y": 0.32007
+    },
+    {
+     "id": "region_support",
+     "x": 0.59622,
+     "y": 0.44396
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.55561,
+     "y": 0.72257
+    }
+   ],
+   "camera": "0d788ee921eb7a1c",
+   "contentBox": {
+    "x": 0.2487,
+    "y": 0.0344,
+    "width": 0.5025,
+    "height": 0.9311
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__region__anatomy.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__region__anatomy.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      46
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      53
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      55
+     ]
+    },
+    "region_support": {
+     "parts": [
+      49
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      49
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "support/region/valve_closed": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__region__valve_closed.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__region__valve_closed.thumb.webp",
+   "alt": "Ventricular leaflet support: See the valve between the chambers. Support present, valve closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.52115,
+     "y": 0.10488
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.42913,
+     "y": 0.29899
+    },
+    {
+     "id": "region_valve",
+     "x": 0.58763,
+     "y": 0.32007
+    },
+    {
+     "id": "region_support",
+     "x": 0.59622,
+     "y": 0.44396
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.55561,
+     "y": 0.72257
+    },
+    {
+     "id": "region_device",
+     "x": 0.59069,
+     "y": 0.3596
+    }
+   ],
+   "camera": "0d788ee921eb7a1c",
+   "contentBox": {
+    "x": 0.2487,
+    "y": 0.0344,
+    "width": 0.5025,
+    "height": 0.9311
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__region__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__region__valve_closed.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      46
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      53
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      69
+     ]
+    },
+    "region_support": {
+     "parts": [
+      49,
+      97
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      49,
+      97
+     ]
+    },
+    "region_device": {
+     "parts": [
+      96,
+      71,
+      72,
+      76,
+      77
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "support/region/valve_open": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__region__valve_open.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__region__valve_open.thumb.webp",
+   "alt": "Ventricular leaflet support: See the valve between the chambers. Support present, valve open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.52115,
+     "y": 0.10488
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.42913,
+     "y": 0.29899
+    },
+    {
+     "id": "region_valve",
+     "x": 0.53374,
+     "y": 0.37019
+    },
+    {
+     "id": "region_support",
+     "x": 0.59622,
+     "y": 0.44396
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.55561,
+     "y": 0.72257
+    },
+    {
+     "id": "region_device",
+     "x": 0.59069,
+     "y": 0.3596
+    }
+   ],
+   "camera": "0d788ee921eb7a1c",
+   "contentBox": {
+    "x": 0.2487,
+    "y": 0.0344,
+    "width": 0.5025,
+    "height": 0.9311
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__region__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__region__valve_open.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      46
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      53
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      82
+     ]
+    },
+    "region_support": {
+     "parts": [
+      49,
+      99
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      49,
+      99
+     ]
+    },
+    "region_device": {
+     "parts": [
+      98,
+      91,
+      92
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "support/section/anatomy": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__section__anatomy.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__section__anatomy.thumb.webp",
+   "alt": "Ventricular leaflet support: See the tissue\u2013device relationship. Native support. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.27882,
+     "y": 0.42269
+    },
+    {
+     "id": "leaflets",
+     "x": 0.52116,
+     "y": 0.50811
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.40321,
+     "y": 0.7779
+    }
+   ],
+   "camera": "45eeb56317b1b343",
+   "contentBox": {
+    "x": 0.1683,
+    "y": 0.0094,
+    "width": 0.6633,
+    "height": 0.965
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__section__anatomy.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__section__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2
+     ]
+    },
+    "leaflets": {
+     "parts": [
+      6
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-subvalvular-repair/images/support__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.5912,
+    "y": 0.362,
+    "r": 0.0574
+   }
+  },
+  "support/section/valve_closed": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__section__valve_closed.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__section__valve_closed.thumb.webp",
+   "alt": "Ventricular leaflet support: See the tissue\u2013device relationship. Support present, valve closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.27882,
+     "y": 0.42269
+    },
+    {
+     "id": "leaflets",
+     "x": 0.52116,
+     "y": 0.50811
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.40321,
+     "y": 0.7779
+    },
+    {
+     "id": "device",
+     "x": 0.54268,
+     "y": 0.60234
+    }
+   ],
+   "camera": "45eeb56317b1b343",
+   "contentBox": {
+    "x": 0.1683,
+    "y": 0.0094,
+    "width": 0.6633,
+    "height": 0.965
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__section__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__section__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2
+     ]
+    },
+    "leaflets": {
+     "parts": [
+      18
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      3,
+      42
+     ]
+    },
+    "device": {
+     "parts": [
+      41,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27,
+      28
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-subvalvular-repair/images/support__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.5912,
+    "y": 0.362,
+    "r": 0.0574
+   }
+  },
+  "support/section/valve_open": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__section__valve_open.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__section__valve_open.thumb.webp",
+   "alt": "Ventricular leaflet support: See the tissue\u2013device relationship. Support present, valve open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.27882,
+     "y": 0.42269
+    },
+    {
+     "id": "leaflets",
+     "x": 0.38965,
+     "y": 0.61827
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.40321,
+     "y": 0.7779
+    },
+    {
+     "id": "device",
+     "x": 0.54268,
+     "y": 0.60234
+    }
+   ],
+   "camera": "45eeb56317b1b343",
+   "contentBox": {
+    "x": 0.1683,
+    "y": 0.0094,
+    "width": 0.6633,
+    "height": 0.965
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__section__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__section__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2
+     ]
+    },
+    "leaflets": {
+     "parts": [
+      30
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      3,
+      44
+     ]
+    },
+    "device": {
+     "parts": [
+      43,
+      36,
+      38,
+      40
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-subvalvular-repair/images/support__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.5912,
+    "y": 0.362,
+    "r": 0.0574
+   }
+  },
+  "support/oblique/anatomy": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__oblique__anatomy.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__oblique__anatomy.thumb.webp",
+   "alt": "Ventricular leaflet support: Understand depth and attachment. Native support. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.29518,
+     "y": 0.37015
+    },
+    {
+     "id": "leaflets",
+     "x": 0.52518,
+     "y": 0.51276
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.4624,
+     "y": 0.74819
+    }
+   ],
+   "camera": "aba02030b7587bbd",
+   "contentBox": {
+    "x": 0.2087,
+    "y": 0.0,
+    "width": 0.6104,
+    "height": 0.9994
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__oblique__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2
+     ]
+    },
+    "leaflets": {
+     "parts": [
+      6
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-subvalvular-repair/images/support__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.5912,
+    "y": 0.362,
+    "r": 0.0574
+   }
+  },
+  "support/oblique/valve_closed": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__oblique__valve_closed.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__oblique__valve_closed.thumb.webp",
+   "alt": "Ventricular leaflet support: Understand depth and attachment. Support present, valve closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.29518,
+     "y": 0.37015
+    },
+    {
+     "id": "leaflets",
+     "x": 0.52518,
+     "y": 0.51276
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.61449,
+     "y": 0.78039
+    },
+    {
+     "id": "device",
+     "x": 0.54233,
+     "y": 0.60989
+    }
+   ],
+   "camera": "aba02030b7587bbd",
+   "contentBox": {
+    "x": 0.2087,
+    "y": 0.0,
+    "width": 0.6104,
+    "height": 0.9994
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__oblique__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__oblique__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2
+     ]
+    },
+    "leaflets": {
+     "parts": [
+      18
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      4,
+      42
+     ]
+    },
+    "device": {
+     "parts": [
+      41,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27,
+      28
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-subvalvular-repair/images/support__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.5912,
+    "y": 0.362,
+    "r": 0.0574
+   }
+  },
+  "support/oblique/valve_open": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__oblique__valve_open.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__oblique__valve_open.thumb.webp",
+   "alt": "Ventricular leaflet support: Understand depth and attachment. Support present, valve open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.29518,
+     "y": 0.37015
+    },
+    {
+     "id": "leaflets",
+     "x": 0.41341,
+     "y": 0.58545
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.61449,
+     "y": 0.78039
+    },
+    {
+     "id": "device",
+     "x": 0.54233,
+     "y": 0.60989
+    }
+   ],
+   "camera": "aba02030b7587bbd",
+   "contentBox": {
+    "x": 0.2087,
+    "y": 0.0,
+    "width": 0.6104,
+    "height": 0.9994
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__oblique__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__oblique__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2
+     ]
+    },
+    "leaflets": {
+     "parts": [
+      30
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      4,
+      44
+     ]
+    },
+    "device": {
+     "parts": [
+      43,
+      36,
+      38,
+      40
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-subvalvular-repair/images/support__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.5912,
+    "y": 0.362,
+    "r": 0.0574
+   }
+  },
+  "support/face/anatomy": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__face__anatomy.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__face__anatomy.thumb.webp",
+   "alt": "Ventricular leaflet support: Look up from the ventricle. Native support. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.30202,
+     "y": 0.37927
+    },
+    {
+     "id": "leaflets",
+     "x": 0.52734,
+     "y": 0.53155
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.38611,
+     "y": 0.70752
+    }
+   ],
+   "camera": "0bd7b8bed79f06a9",
+   "contentBox": {
+    "x": 0.1558,
+    "y": 0.2567,
+    "width": 0.6633,
+    "height": 0.6878
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__face__anatomy.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__face__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2
+     ]
+    },
+    "leaflets": {
+     "parts": [
+      5
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      3
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-subvalvular-repair/images/support__face__anatomy.ghost-3.webp",
+      "x": 0.25166666666666665,
+      "y": 0.67,
+      "width": 0.13916666666666666,
+      "height": 0.20666666666666667
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-subvalvular-repair/images/support__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.5912,
+    "y": 0.362,
+    "r": 0.0574
+   }
+  },
+  "support/face/valve_closed": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__face__valve_closed.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__face__valve_closed.thumb.webp",
+   "alt": "Ventricular leaflet support: Look up from the ventricle. Support present, valve closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.30202,
+     "y": 0.37927
+    },
+    {
+     "id": "leaflets",
+     "x": 0.52734,
+     "y": 0.53155
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.38611,
+     "y": 0.70752
+    },
+    {
+     "id": "device",
+     "x": 0.5219,
+     "y": 0.6653
+    }
+   ],
+   "camera": "0bd7b8bed79f06a9",
+   "contentBox": {
+    "x": 0.1558,
+    "y": 0.2567,
+    "width": 0.6633,
+    "height": 0.6878
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__face__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__face__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2
+     ]
+    },
+    "leaflets": {
+     "parts": [
+      17
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      3,
+      42
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-subvalvular-repair/images/support__face__valve_closed.ghost-3.webp",
+      "x": 0.25166666666666665,
+      "y": 0.67,
+      "width": 0.13916666666666666,
+      "height": 0.20666666666666667
+     }
+    },
+    "device": {
+     "parts": [
+      41,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27,
+      28
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-subvalvular-repair/images/support__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.5912,
+    "y": 0.362,
+    "r": 0.0574
+   }
+  },
+  "support/face/valve_open": {
+   "src": "/scenes/mitral-subvalvular-repair/images/support__face__valve_open.webp",
+   "thumb": "/scenes/mitral-subvalvular-repair/images/support__face__valve_open.thumb.webp",
+   "alt": "Ventricular leaflet support: Look up from the ventricle. Support present, valve open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.30397,
+     "y": 0.35857
+    },
+    {
+     "id": "leaflets",
+     "x": 0.38137,
+     "y": 0.57174
+    },
+    {
+     "id": "ventricular_support",
+     "x": 0.38611,
+     "y": 0.70752
+    },
+    {
+     "id": "device",
+     "x": 0.52585,
+     "y": 0.6342
+    }
+   ],
+   "camera": "0bd7b8bed79f06a9",
+   "contentBox": {
+    "x": 0.1558,
+    "y": 0.2567,
+    "width": 0.6633,
+    "height": 0.6878
+   },
+   "mid": "/scenes/mitral-subvalvular-repair/images/support__face__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-subvalvular-repair/images/support__face__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      2
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-subvalvular-repair/images/support__face__valve_open.ghost-2.webp",
+      "x": 0.27166666666666667,
+      "y": 0.25666666666666665,
+      "width": 0.4716666666666667,
+      "height": 0.4488888888888889
+     }
+    },
+    "leaflets": {
+     "parts": [
+      29
+     ]
+    },
+    "ventricular_support": {
+     "parts": [
+      3,
+      44
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-subvalvular-repair/images/support__face__valve_open.ghost-3.webp",
+      "x": 0.25166666666666665,
+      "y": 0.67,
+      "width": 0.13916666666666666,
+      "height": 0.20666666666666667
+     }
+    },
+    "device": {
+     "parts": [
+      43,
+      36,
+      38,
+      40
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-subvalvular-repair/images/support__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.5912,
+    "y": 0.362,
+    "r": 0.0574
+   }
+  }
+ },
+ "presentation": {
+  "annotationMode": "external",
+  "layout": "plate",
+  "labels": {
+   "location": "Treatment location",
+   "leaflets": "Valve leaflets",
+   "ventricular_support": "Papillary muscles",
+   "region_atrium": "Left atrium",
+   "region_ventricle": "Left ventricle",
+   "region_aorta": "Aortic root",
+   "region_valve": "Mitral valve",
+   "region_support": "Papillary muscles",
+   "junction": "Mitral valve",
+   "device": "Generic repair device",
+   "region_device": "Generic repair device"
+  },
+  "stateLabels": {
+   "anatomy": "Native support",
+   "valve_closed": "Valve closed",
+   "valve_open": "Valve open"
+  },
+  "stateGroups": [
+   {
+    "label": "Anatomy",
+    "states": [
+     "anatomy"
+    ]
+   },
+   {
+    "label": "With support",
+    "states": [
+     "valve_closed",
+     "valve_open"
+    ]
+   }
+  ],
+  "keyColors": {
+   "cut": "#62505c"
+  }
+ }
+}

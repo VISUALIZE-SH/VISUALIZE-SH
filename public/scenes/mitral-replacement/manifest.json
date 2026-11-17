@@ -1,1 +1,2217 @@
-{"classId":"mitral-replacement","conditionId":"cond-mr","title":"Mitral valve replacement","linkLabel":"Visualize device class","status":"Schematic","scope":"Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.","stageLabel":"Schematic · representative anatomy · not to scale","attribution":"Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.","sources":[{"title":"Toronto Heart Atlas","url":"https://github.com/tgh-apil/TorontoHeartAtlas","locator":"RegularHeart chamber and vessel meshes, CC BY 4.0."},{"title":"Creative Commons Attribution 4.0","url":"https://creativecommons.org/licenses/by/4.0/"},{"title":"NHLBI: How blood flows through the heart","url":"https://www.nhlbi.nih.gov/health/heart/blood-flow","locator":"Written heart-valve and circulation sections; no media reused."},{"title":"University of Minnesota: written anatomy reference","url":"https://www.vhlab.umn.edu/atlas/anatomy-tutorial/cardiac-valve-nomenclature.shtml","locator":"Anatomical description; no atlas images or models reused."}],"legend":[{"label":"Representative tissue","color":"#ad77ca"},{"label":"Generic device","color":"#ffd358"},{"label":"Leaflets / fabric","color":"#f6dfc8"},{"label":"Suture / emphasis","color":"#35a8a0"}],"designs":[{"id":"annular-frame","label":"Annular support","summary":"A generic flanged frame supported at the representative  mitral junction."},{"id":"apical-tether","label":"Annular frame with tether","summary":"The same concept adds a tether toward a representative apical pad."}],"states":[{"id":"anatomy","label":"1. Anatomy context","note":"Representative sectioned shell and approximate junction; no native leaflet reconstruction."},{"id":"valve_open","label":"2. Replacement open","note":"Representative open replacement leaflets; support frame fixed."},{"id":"valve_closed","label":"3. Replacement closed","note":"Representative closure pose; support frame unchanged. No flow or seal calculation."}],"views":[{"id":"heart","label":"Whole heart","title":"Locate the treatment region","lesson":"Use the highlighted region to orient the enlarged views.","states":["valve_closed"],"orientation":{"superior":{"x":0.0,"y":-0.9595},"patientRight":{"x":-0.8384,"y":-0.1535}}},{"id":"region","label":"Left chambers","title":"See the valve between the chambers","lesson":"The real left atrium, left ventricle and aortic root from a heart model are opened along their length. The native valve and its papillary muscles are shown first; the generic replacement then sits in the valve ring. The valve position shown is representative and is not measured on a specific patient or population.","states":["anatomy","valve_open","valve_closed"],"orientation":{"superior":{"x":-0.6764,"y":-0.2339},"patientRight":{"x":-0.4097,"y":-0.6685}}},{"id":"section","label":"Mechanism section","title":"See the tissue–device relationship","lesson":"An annular frame spans the left AV junction; one alternative adds a tether toward a representative apical pad.","states":["anatomy","valve_open","valve_closed"],"orientation":{"superior":{"x":0.6315,"y":-0.0618},"patientRight":{"x":-0.7419,"y":-0.338}}},{"id":"oblique","label":"Oblique detail","title":"Understand depth and attachment","lesson":"An oblique view separates the near surface, device and supporting tissue.","states":["anatomy","valve_open","valve_closed"],"orientation":{"superior":{"x":0.1542,"y":0.0624},"patientRight":{"x":-0.8417,"y":-0.5144}}},{"id":"face","label":"Face view","title":"Look along the opening","lesson":"The face view complements the section. All poses and proportions are representative, not measured.","states":["anatomy","valve_open","valve_closed"],"orientation":{"superior":{"x":-0.5929,"y":-0.5676},"patientRight":{"x":0.7915,"y":-0.2802}}}],"annotations":{"location":{"label":"TREATMENT LOCATION","body":"The highlighted region locates this class in the heart. The marker is enlarged for orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"junction":{"label":"MITRAL VALVE","body":"The mitral valve lies between the left atrium and left ventricle. Its illustrated junction is schematic.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"tissue":{"label":"REPRESENTATIVE TISSUE","body":"The smooth sectioned shell is representative and is not measured on a specific patient or population. It is not a segmented myocardial or vessel wall.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"frame":{"label":"FIXED SUPPORT FRAME","body":"The generic lattice stays fixed when the prosthetic leaflets open and close. Mesh spacing and proportions are representative, not measured.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"leaflet":{"label":"PROSTHETIC LEAFLETS","body":"The thin leaflets shown are representative and open within the same support. Motion, flow and tissue contact are not calculated.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"special":{"label":"ANNULAR OR TETHER SUPPORT","body":"The optional tether is a representative mechanism diagram, not a patient-specific route or verified device geometry.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_atrium":{"label":"LEFT ATRIUM","body":"The left atrium is the chamber above the valve.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_ventricle":{"label":"LEFT VENTRICLE","body":"The left ventricle is the chamber below the valve.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_aorta":{"label":"AORTIC ROOT","body":"The aortic root lies beside the front leaflet of the mitral valve and helps with orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_valve":{"label":"NATIVE VALVE","body":"The native valve has two leaflets that hang from the valve ring. In the replacement states the leaflets of the generic valve are shown. The valve position shown is representative and is not measured on a specific patient or population.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_support":{"label":"PAPILLARY MUSCLES","body":"Papillary muscles rise from the ventricular wall, and cords fan out from their tips to the leaflet edges. Their shapes are representative.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_device":{"label":"GENERIC REPLACEMENT VALVE","body":"The generic frame sits in the valve ring and, in one design, a tether runs to the apex of the left ventricle. Its shape is representative, not a specific product.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"}},"images":{"annular-frame/heart/valve_closed":{"src":"/scenes/mitral-replacement/images/annular-frame__heart__valve_closed.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__heart__valve_closed.thumb.webp","alt":"Annular support: Locate the treatment region. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"location","x":0.56822,"y":0.57323}]},"annular-frame/region/anatomy":{"src":"/scenes/mitral-replacement/images/annular-frame__region__anatomy.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__region__anatomy.thumb.webp","alt":"Annular support: See the valve between the chambers. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.62941,"y":0.19077},{"id":"region_ventricle","x":0.65797,"y":0.82176},{"id":"region_aorta","x":0.44787,"y":0.44574},{"id":"region_valve","x":0.58163,"y":0.31766},{"id":"region_support","x":0.5615,"y":0.47592}]},"annular-frame/region/valve_open":{"src":"/scenes/mitral-replacement/images/annular-frame__region__valve_open.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__region__valve_open.thumb.webp","alt":"Annular support: See the valve between the chambers. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.62941,"y":0.19077},{"id":"region_ventricle","x":0.65797,"y":0.82176},{"id":"region_aorta","x":0.44787,"y":0.44574},{"id":"region_valve","x":0.58032,"y":0.3242},{"id":"region_support","x":0.5615,"y":0.47592},{"id":"region_device","x":0.64407,"y":0.31644}]},"annular-frame/region/valve_closed":{"src":"/scenes/mitral-replacement/images/annular-frame__region__valve_closed.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__region__valve_closed.thumb.webp","alt":"Annular support: See the valve between the chambers. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.62941,"y":0.19077},{"id":"region_ventricle","x":0.65797,"y":0.82176},{"id":"region_aorta","x":0.44787,"y":0.44574},{"id":"region_valve","x":0.59135,"y":0.33176},{"id":"region_support","x":0.5615,"y":0.47592},{"id":"region_device","x":0.64407,"y":0.31644}]},"annular-frame/section/anatomy":{"src":"/scenes/mitral-replacement/images/annular-frame__section__anatomy.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__section__anatomy.thumb.webp","alt":"Annular support: See the tissue–device relationship. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.68182,"y":0.38824},{"id":"tissue","x":0.69205,"y":0.22061}]},"annular-frame/section/valve_open":{"src":"/scenes/mitral-replacement/images/annular-frame__section__valve_open.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__section__valve_open.thumb.webp","alt":"Annular support: See the tissue–device relationship. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.68182,"y":0.38824},{"id":"tissue","x":0.69205,"y":0.22061},{"id":"frame","x":0.44456,"y":0.61623},{"id":"leaflet","x":0.51674,"y":0.54847},{"id":"special","x":0.50695,"y":0.61432}]},"annular-frame/section/valve_closed":{"src":"/scenes/mitral-replacement/images/annular-frame__section__valve_closed.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__section__valve_closed.thumb.webp","alt":"Annular support: See the tissue–device relationship. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.68182,"y":0.38824},{"id":"tissue","x":0.69205,"y":0.22061},{"id":"frame","x":0.44456,"y":0.61623},{"id":"leaflet","x":0.50786,"y":0.47244},{"id":"special","x":0.50317,"y":0.55551}]},"annular-frame/oblique/anatomy":{"src":"/scenes/mitral-replacement/images/annular-frame__oblique__anatomy.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__oblique__anatomy.thumb.webp","alt":"Annular support: Understand depth and attachment. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.65244,"y":0.44525},{"id":"tissue","x":0.66102,"y":0.28326}]},"annular-frame/oblique/valve_open":{"src":"/scenes/mitral-replacement/images/annular-frame__oblique__valve_open.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__oblique__valve_open.thumb.webp","alt":"Annular support: Understand depth and attachment. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.65244,"y":0.44525},{"id":"tissue","x":0.66102,"y":0.28326},{"id":"frame","x":0.36031,"y":0.5907},{"id":"leaflet","x":0.42784,"y":0.54313},{"id":"special","x":0.51713,"y":0.5631}]},"annular-frame/oblique/valve_closed":{"src":"/scenes/mitral-replacement/images/annular-frame__oblique__valve_closed.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__oblique__valve_closed.thumb.webp","alt":"Annular support: Understand depth and attachment. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.65244,"y":0.44525},{"id":"tissue","x":0.66102,"y":0.28326},{"id":"frame","x":0.36031,"y":0.5907},{"id":"leaflet","x":0.50659,"y":0.47525},{"id":"special","x":0.51713,"y":0.5631}]},"annular-frame/face/anatomy":{"src":"/scenes/mitral-replacement/images/annular-frame__face__anatomy.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__face__anatomy.thumb.webp","alt":"Annular support: Look along the opening. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.32813,"y":0.53494},{"id":"tissue","x":0.52488,"y":0.82856}]},"annular-frame/face/valve_open":{"src":"/scenes/mitral-replacement/images/annular-frame__face__valve_open.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__face__valve_open.thumb.webp","alt":"Annular support: Look along the opening. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.32813,"y":0.53494},{"id":"tissue","x":0.52488,"y":0.82856},{"id":"frame","x":0.55291,"y":0.26968},{"id":"leaflet","x":0.51144,"y":0.3167}]},"annular-frame/face/valve_closed":{"src":"/scenes/mitral-replacement/images/annular-frame__face__valve_closed.webp","thumb":"/scenes/mitral-replacement/images/annular-frame__face__valve_closed.thumb.webp","alt":"Annular support: Look along the opening. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.32813,"y":0.53494},{"id":"tissue","x":0.52488,"y":0.82856},{"id":"frame","x":0.55291,"y":0.26968},{"id":"leaflet","x":0.5738,"y":0.35942}]},"apical-tether/heart/valve_closed":{"src":"/scenes/mitral-replacement/images/apical-tether__heart__valve_closed.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__heart__valve_closed.thumb.webp","alt":"Annular frame with tether: Locate the treatment region. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"location","x":0.56822,"y":0.57323}]},"apical-tether/region/anatomy":{"src":"/scenes/mitral-replacement/images/apical-tether__region__anatomy.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__region__anatomy.thumb.webp","alt":"Annular frame with tether: See the valve between the chambers. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.62941,"y":0.19077},{"id":"region_ventricle","x":0.65797,"y":0.82176},{"id":"region_aorta","x":0.44787,"y":0.44574},{"id":"region_valve","x":0.58163,"y":0.31766},{"id":"region_support","x":0.5615,"y":0.47592}]},"apical-tether/region/valve_open":{"src":"/scenes/mitral-replacement/images/apical-tether__region__valve_open.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__region__valve_open.thumb.webp","alt":"Annular frame with tether: See the valve between the chambers. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.62941,"y":0.19077},{"id":"region_ventricle","x":0.65797,"y":0.82176},{"id":"region_aorta","x":0.44787,"y":0.44574},{"id":"region_valve","x":0.58032,"y":0.3242},{"id":"region_support","x":0.5615,"y":0.47592},{"id":"region_device","x":0.64407,"y":0.31644}]},"apical-tether/region/valve_closed":{"src":"/scenes/mitral-replacement/images/apical-tether__region__valve_closed.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__region__valve_closed.thumb.webp","alt":"Annular frame with tether: See the valve between the chambers. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.62941,"y":0.19077},{"id":"region_ventricle","x":0.65797,"y":0.82176},{"id":"region_aorta","x":0.44787,"y":0.44574},{"id":"region_valve","x":0.59135,"y":0.33176},{"id":"region_support","x":0.5615,"y":0.47592},{"id":"region_device","x":0.64407,"y":0.31644}]},"apical-tether/section/anatomy":{"src":"/scenes/mitral-replacement/images/apical-tether__section__anatomy.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__section__anatomy.thumb.webp","alt":"Annular frame with tether: See the tissue–device relationship. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.68182,"y":0.38824},{"id":"tissue","x":0.69205,"y":0.22061}]},"apical-tether/section/valve_open":{"src":"/scenes/mitral-replacement/images/apical-tether__section__valve_open.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__section__valve_open.thumb.webp","alt":"Annular frame with tether: See the tissue–device relationship. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.68182,"y":0.38824},{"id":"tissue","x":0.69205,"y":0.22061},{"id":"frame","x":0.44456,"y":0.61623},{"id":"leaflet","x":0.51674,"y":0.54847},{"id":"special","x":0.50695,"y":0.61432}]},"apical-tether/section/valve_closed":{"src":"/scenes/mitral-replacement/images/apical-tether__section__valve_closed.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__section__valve_closed.thumb.webp","alt":"Annular frame with tether: See the tissue–device relationship. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.68182,"y":0.38824},{"id":"tissue","x":0.69205,"y":0.22061},{"id":"frame","x":0.44456,"y":0.61623},{"id":"leaflet","x":0.50786,"y":0.47244},{"id":"special","x":0.50317,"y":0.55551}]},"apical-tether/oblique/anatomy":{"src":"/scenes/mitral-replacement/images/apical-tether__oblique__anatomy.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__oblique__anatomy.thumb.webp","alt":"Annular frame with tether: Understand depth and attachment. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.65244,"y":0.44525},{"id":"tissue","x":0.66102,"y":0.28326}]},"apical-tether/oblique/valve_open":{"src":"/scenes/mitral-replacement/images/apical-tether__oblique__valve_open.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__oblique__valve_open.thumb.webp","alt":"Annular frame with tether: Understand depth and attachment. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.65244,"y":0.44525},{"id":"tissue","x":0.66102,"y":0.28326},{"id":"frame","x":0.36031,"y":0.5907},{"id":"leaflet","x":0.42784,"y":0.54313},{"id":"special","x":0.51713,"y":0.5631}]},"apical-tether/oblique/valve_closed":{"src":"/scenes/mitral-replacement/images/apical-tether__oblique__valve_closed.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__oblique__valve_closed.thumb.webp","alt":"Annular frame with tether: Understand depth and attachment. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.65244,"y":0.44525},{"id":"tissue","x":0.66102,"y":0.28326},{"id":"frame","x":0.36031,"y":0.5907},{"id":"leaflet","x":0.50659,"y":0.47525},{"id":"special","x":0.51713,"y":0.5631}]},"apical-tether/face/anatomy":{"src":"/scenes/mitral-replacement/images/apical-tether__face__anatomy.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__face__anatomy.thumb.webp","alt":"Annular frame with tether: Look along the opening. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.32813,"y":0.53494},{"id":"tissue","x":0.52488,"y":0.82856}]},"apical-tether/face/valve_open":{"src":"/scenes/mitral-replacement/images/apical-tether__face__valve_open.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__face__valve_open.thumb.webp","alt":"Annular frame with tether: Look along the opening. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.32813,"y":0.53494},{"id":"tissue","x":0.52488,"y":0.82856},{"id":"frame","x":0.55291,"y":0.26968},{"id":"leaflet","x":0.51144,"y":0.3167}]},"apical-tether/face/valve_closed":{"src":"/scenes/mitral-replacement/images/apical-tether__face__valve_closed.webp","thumb":"/scenes/mitral-replacement/images/apical-tether__face__valve_closed.thumb.webp","alt":"Annular frame with tether: Look along the opening. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.32813,"y":0.53494},{"id":"tissue","x":0.52488,"y":0.82856},{"id":"frame","x":0.55291,"y":0.26968},{"id":"leaflet","x":0.5738,"y":0.35942}]}}}
+{
+ "classId": "mitral-replacement",
+ "conditionId": "cond-mr",
+ "title": "Mitral valve replacement",
+ "linkLabel": "Visualize device class",
+ "status": "Schematic",
+ "scope": "Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.",
+ "stageLabel": "Schematic \u00b7 representative anatomy \u00b7 not to scale",
+ "attribution": "Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.",
+ "sources": [
+  {
+   "title": "Toronto Heart Atlas",
+   "url": "https://github.com/tgh-apil/TorontoHeartAtlas",
+   "locator": "RegularHeart chamber and vessel meshes, CC BY 4.0."
+  },
+  {
+   "title": "Creative Commons Attribution 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "title": "NHLBI: How blood flows through the heart",
+   "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+   "locator": "Written heart-valve and circulation sections; no media reused."
+  },
+  {
+   "title": "University of Minnesota: written anatomy reference",
+   "url": "https://www.vhlab.umn.edu/atlas/anatomy-tutorial/cardiac-valve-nomenclature.shtml",
+   "locator": "Anatomical description; no atlas images or models reused."
+  }
+ ],
+ "legend": [
+  {
+   "label": "Representative tissue",
+   "color": "#ad77ca"
+  },
+  {
+   "label": "Generic device",
+   "color": "#ffd358"
+  },
+  {
+   "label": "Leaflets / fabric",
+   "color": "#f6dfc8"
+  },
+  {
+   "label": "Suture / emphasis",
+   "color": "#35a8a0"
+  }
+ ],
+ "designs": [
+  {
+   "id": "annular-frame",
+   "label": "Annular support",
+   "summary": "A generic flanged frame supported at the representative  mitral junction."
+  },
+  {
+   "id": "apical-tether",
+   "label": "Annular frame with tether",
+   "summary": "The same concept adds a tether toward a representative apical pad."
+  }
+ ],
+ "states": [
+  {
+   "id": "anatomy",
+   "label": "1. Anatomy context",
+   "note": "Representative sectioned shell and approximate junction; no native leaflet reconstruction."
+  },
+  {
+   "id": "valve_open",
+   "label": "2. Replacement open",
+   "note": "Representative open replacement leaflets; support frame fixed."
+  },
+  {
+   "id": "valve_closed",
+   "label": "3. Replacement closed",
+   "note": "Representative closure pose; support frame unchanged. No flow or seal calculation."
+  }
+ ],
+ "views": [
+  {
+   "id": "heart",
+   "label": "Whole heart",
+   "title": "Locate the treatment region",
+   "lesson": "The highlighted region orients the enlarged views.",
+   "states": [
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9595
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1535
+    }
+   }
+  },
+  {
+   "id": "region",
+   "label": "Left chambers",
+   "title": "See the valve between the chambers",
+   "lesson": "The left chambers opened along their length. The generic replacement sits in the valve ring.",
+   "states": [
+    "anatomy",
+    "valve_open",
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": -0.6764,
+     "y": -0.2339
+    },
+    "patientRight": {
+     "x": -0.4097,
+     "y": -0.6685
+    }
+   },
+   "presentation": {
+    "directionCaption": "Left chambers",
+    "representation": "representative-view",
+    "regionLabel": "Mitral valve replacement"
+   }
+  },
+  {
+   "id": "section",
+   "label": "Mechanism section",
+   "title": "See the tissue\u2013device relationship",
+   "lesson": "An annular frame spans the valve junction. One design adds a tether toward a representative apical pad.",
+   "states": [
+    "anatomy",
+    "valve_open",
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.6315,
+     "y": -0.0618
+    },
+    "patientRight": {
+     "x": -0.7419,
+     "y": -0.338
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen from the front",
+    "representation": "representative-section",
+    "regionLabel": "Mitral valve replacement"
+   }
+  },
+  {
+   "id": "oblique",
+   "label": "Oblique detail",
+   "title": "Understand depth and attachment",
+   "lesson": "An oblique view separates the near surface, the device and the supporting tissue.",
+   "states": [
+    "anatomy",
+    "valve_open",
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.1542,
+     "y": 0.0624
+    },
+    "patientRight": {
+     "x": -0.8417,
+     "y": -0.5144
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen at an angle",
+    "representation": "representative-section",
+    "regionLabel": "Mitral valve replacement"
+   }
+  },
+  {
+   "id": "face",
+   "label": "Face view",
+   "title": "Look along the opening",
+   "lesson": "Looking along the opening. Poses and proportions are representative, not measured.",
+   "states": [
+    "anatomy",
+    "valve_open",
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": -0.5929,
+     "y": -0.5676
+    },
+    "patientRight": {
+     "x": 0.7915,
+     "y": -0.2802
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen along the opening",
+    "representation": "representative-section",
+    "regionLabel": "Mitral valve replacement"
+   }
+  }
+ ],
+ "annotations": {
+  "location": {
+   "label": "TREATMENT LOCATION",
+   "body": "The highlighted region locates this class in the heart. The marker is enlarged for orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "junction": {
+   "label": "MITRAL VALVE",
+   "body": "The mitral valve lies between the left atrium and left ventricle. Its illustrated junction is schematic.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "tissue": {
+   "label": "REPRESENTATIVE TISSUE",
+   "body": "The smooth sectioned shell is representative and is not measured on a specific patient or population. It is not a segmented myocardial or vessel wall.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "frame": {
+   "label": "FIXED SUPPORT FRAME",
+   "body": "The generic lattice stays fixed when the prosthetic leaflets open and close. Mesh spacing and proportions are representative, not measured.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  },
+  "leaflet": {
+   "label": "PROSTHETIC LEAFLETS",
+   "body": "The thin leaflets shown are representative and open within the same support. Motion, flow and tissue contact are not calculated.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  },
+  "special": {
+   "label": "ANNULAR OR TETHER SUPPORT",
+   "body": "The optional tether is a representative mechanism diagram, not a patient-specific route or verified device geometry.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  },
+  "region_atrium": {
+   "label": "LEFT ATRIUM",
+   "body": "The left atrium is the chamber above the valve.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_ventricle": {
+   "label": "LEFT VENTRICLE",
+   "body": "The left ventricle is the chamber below the valve.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_aorta": {
+   "label": "AORTIC ROOT",
+   "body": "The aortic root lies beside the front leaflet of the mitral valve and helps with orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_valve": {
+   "label": "NATIVE VALVE",
+   "body": "The native valve has two leaflets that hang from the valve ring. In the replacement states the leaflets of the generic valve are shown. The valve position shown is representative and is not measured on a specific patient or population.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_support": {
+   "label": "PAPILLARY MUSCLES",
+   "body": "Papillary muscles rise from the ventricular wall, and cords fan out from their tips to the leaflet edges. Their shapes are representative.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_device": {
+   "label": "GENERIC REPLACEMENT VALVE",
+   "body": "The generic frame sits in the valve ring and, in one design, a tether runs to the apex of the left ventricle. Its shape is representative, not a specific product.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  }
+ },
+ "images": {
+  "annular-frame/heart/valve_closed": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__heart__valve_closed.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__heart__valve_closed.thumb.webp",
+   "alt": "Annular support: Locate the treatment region. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.56822,
+     "y": 0.57323
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__heart__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__heart__valve_closed.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      64
+     ]
+    }
+   },
+   "keys": []
+  },
+  "annular-frame/region/anatomy": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__region__anatomy.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__region__anatomy.thumb.webp",
+   "alt": "Annular support: See the valve between the chambers. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.50274,
+     "y": 0.1249
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.57449,
+     "y": 0.7364
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.42916,
+     "y": 0.30433
+    },
+    {
+     "id": "region_valve",
+     "x": 0.58755,
+     "y": 0.32478
+    },
+    {
+     "id": "region_support",
+     "x": 0.59615,
+     "y": 0.4466
+    }
+   ],
+   "camera": "b8099040015f05f5",
+   "contentBox": {
+    "x": 0.2492,
+    "y": 0.0344,
+    "width": 0.5017,
+    "height": 0.9311
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__region__anatomy.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__region__anatomy.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      6
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      10
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      12
+     ]
+    },
+    "region_support": {
+     "parts": [
+      6
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "annular-frame/region/valve_open": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__region__valve_open.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__region__valve_open.thumb.webp",
+   "alt": "Annular support: See the valve between the chambers. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.50274,
+     "y": 0.1249
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.57449,
+     "y": 0.7364
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.42916,
+     "y": 0.30433
+    },
+    {
+     "id": "region_support",
+     "x": 0.59615,
+     "y": 0.4466
+    },
+    {
+     "id": "region_device",
+     "x": 0.56936,
+     "y": 0.28313
+    }
+   ],
+   "camera": "b8099040015f05f5",
+   "contentBox": {
+    "x": 0.2492,
+    "y": 0.0344,
+    "width": 0.5017,
+    "height": 0.9311
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__region__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__region__valve_open.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3,
+      25,
+      26,
+      27,
+      28
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      6,
+      25,
+      26,
+      28
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      10,
+      25,
+      26,
+      27
+     ]
+    },
+    "region_support": {
+     "parts": [
+      6,
+      25,
+      26,
+      28
+     ]
+    },
+    "region_device": {
+     "parts": [
+      25,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "annular-frame/region/valve_closed": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__region__valve_closed.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__region__valve_closed.thumb.webp",
+   "alt": "Annular support: See the valve between the chambers. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.50274,
+     "y": 0.1249
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.57449,
+     "y": 0.7364
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.42916,
+     "y": 0.30433
+    },
+    {
+     "id": "region_support",
+     "x": 0.59615,
+     "y": 0.4466
+    },
+    {
+     "id": "region_device",
+     "x": 0.56936,
+     "y": 0.28313
+    }
+   ],
+   "camera": "b8099040015f05f5",
+   "contentBox": {
+    "x": 0.2492,
+    "y": 0.0344,
+    "width": 0.5017,
+    "height": 0.9311
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__region__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__region__valve_closed.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3,
+      25,
+      26,
+      27,
+      30
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      6,
+      25,
+      26,
+      30
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      10,
+      25,
+      26,
+      27
+     ]
+    },
+    "region_support": {
+     "parts": [
+      6,
+      25,
+      26,
+      30
+     ]
+    },
+    "region_device": {
+     "parts": [
+      25,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "annular-frame/section/anatomy": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__section__anatomy.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__section__anatomy.thumb.webp",
+   "alt": "Annular support: See the tissue\u2013device relationship. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.50891,
+     "y": 0.44786
+    },
+    {
+     "id": "tissue",
+     "x": 0.43271,
+     "y": 0.30993
+    }
+   ],
+   "camera": "58e885256baebdb4",
+   "contentBox": {
+    "x": 0.27,
+    "y": 0.0433,
+    "width": 0.46,
+    "height": 0.5722
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__section__anatomy.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__section__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      41
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/annular-frame__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.5738,
+    "y": 0.283,
+    "r": 0.1065
+   }
+  },
+  "annular-frame/section/valve_open": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__section__valve_open.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__section__valve_open.thumb.webp",
+   "alt": "Annular support: See the tissue\u2013device relationship. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "tissue",
+     "x": 0.43271,
+     "y": 0.30993
+    },
+    {
+     "id": "frame",
+     "x": 0.47887,
+     "y": 0.35734
+    },
+    {
+     "id": "leaflet",
+     "x": 0.52281,
+     "y": 0.39414
+    },
+    {
+     "id": "special",
+     "x": 0.50836,
+     "y": 0.7116
+    }
+   ],
+   "camera": "58e885256baebdb4",
+   "contentBox": {
+    "x": 0.27,
+    "y": 0.0433,
+    "width": 0.46,
+    "height": 0.5722
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__section__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__section__valve_open.parts.png",
+   "focus": {
+    "tissue": {
+     "parts": [
+      1,
+      42,
+      43,
+      44,
+      48
+     ]
+    },
+    "frame": {
+     "parts": [
+      42,
+      1,
+      41
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      44,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/annular-frame__section__valve_open.ghost-44.webp",
+      "x": 0.37333333333333335,
+      "y": 0.32666666666666666,
+      "width": 0.25333333333333335,
+      "height": 0.17888888888888888
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/annular-frame__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.5758,
+    "y": 0.2813,
+    "r": 0.1072
+   }
+  },
+  "annular-frame/section/valve_closed": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__section__valve_closed.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__section__valve_closed.thumb.webp",
+   "alt": "Annular support: See the tissue\u2013device relationship. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "tissue",
+     "x": 0.43271,
+     "y": 0.30993
+    },
+    {
+     "id": "frame",
+     "x": 0.51872,
+     "y": 0.38842
+    },
+    {
+     "id": "leaflet",
+     "x": 0.46831,
+     "y": 0.38683
+    },
+    {
+     "id": "special",
+     "x": 0.50836,
+     "y": 0.7116
+    }
+   ],
+   "camera": "58e885256baebdb4",
+   "contentBox": {
+    "x": 0.27,
+    "y": 0.0433,
+    "width": 0.46,
+    "height": 0.5722
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__section__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__section__valve_closed.parts.png",
+   "focus": {
+    "tissue": {
+     "parts": [
+      1,
+      42,
+      43,
+      46,
+      47,
+      48
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/annular-frame__section__valve_closed.ghost-1.webp",
+      "x": 0.27,
+      "y": 0.043333333333333335,
+      "width": 0.46,
+      "height": 0.5722222222222222
+     }
+    },
+    "frame": {
+     "parts": [
+      42,
+      1,
+      41
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      46,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/annular-frame__section__valve_closed.ghost-46.webp",
+      "x": 0.37333333333333335,
+      "y": 0.32666666666666666,
+      "width": 0.25333333333333335,
+      "height": 0.17
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/annular-frame__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.5738,
+    "y": 0.283,
+    "r": 0.1065
+   }
+  },
+  "annular-frame/oblique/anatomy": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__oblique__anatomy.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__oblique__anatomy.thumb.webp",
+   "alt": "Annular support: Understand depth and attachment. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.45376,
+     "y": 0.32084
+    },
+    {
+     "id": "tissue",
+     "x": 0.49032,
+     "y": 0.30169
+    }
+   ],
+   "camera": "0b7c8bd6b4b80e73",
+   "contentBox": {
+    "x": 0.2883,
+    "y": 0.0433,
+    "width": 0.4233,
+    "height": 0.6344
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__oblique__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      41
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/annular-frame__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.5738,
+    "y": 0.283,
+    "r": 0.1065
+   }
+  },
+  "annular-frame/oblique/valve_open": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_open.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_open.thumb.webp",
+   "alt": "Annular support: Understand depth and attachment. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "tissue",
+     "x": 0.49032,
+     "y": 0.30169
+    },
+    {
+     "id": "frame",
+     "x": 0.49606,
+     "y": 0.37782
+    },
+    {
+     "id": "leaflet",
+     "x": 0.43596,
+     "y": 0.38321
+    },
+    {
+     "id": "special",
+     "x": 0.50019,
+     "y": 0.71637
+    }
+   ],
+   "camera": "0b7c8bd6b4b80e73",
+   "contentBox": {
+    "x": 0.2883,
+    "y": 0.0433,
+    "width": 0.4233,
+    "height": 0.6344
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_open.parts.png",
+   "focus": {
+    "tissue": {
+     "parts": [
+      1,
+      42,
+      43,
+      44,
+      48
+     ]
+    },
+    "frame": {
+     "parts": [
+      42,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_open.ghost-42.webp",
+      "x": 0.345,
+      "y": 0.21,
+      "width": 0.2725,
+      "height": 0.35888888888888887
+     }
+    },
+    "leaflet": {
+     "parts": [
+      44,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_open.ghost-44.webp",
+      "x": 0.355,
+      "y": 0.3277777777777778,
+      "width": 0.25333333333333335,
+      "height": 0.19111111111111112
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/annular-frame__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.5758,
+    "y": 0.2813,
+    "r": 0.1072
+   }
+  },
+  "annular-frame/oblique/valve_closed": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_closed.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_closed.thumb.webp",
+   "alt": "Annular support: Understand depth and attachment. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "tissue",
+     "x": 0.49032,
+     "y": 0.30169
+    },
+    {
+     "id": "frame",
+     "x": 0.49606,
+     "y": 0.37782
+    },
+    {
+     "id": "leaflet",
+     "x": 0.47707,
+     "y": 0.41437
+    },
+    {
+     "id": "special",
+     "x": 0.50019,
+     "y": 0.71637
+    }
+   ],
+   "camera": "0b7c8bd6b4b80e73",
+   "contentBox": {
+    "x": 0.2883,
+    "y": 0.0433,
+    "width": 0.4233,
+    "height": 0.6344
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_closed.parts.png",
+   "focus": {
+    "tissue": {
+     "parts": [
+      1,
+      42,
+      43,
+      46,
+      47,
+      48
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_closed.ghost-1.webp",
+      "x": 0.28833333333333333,
+      "y": 0.043333333333333335,
+      "width": 0.42333333333333334,
+      "height": 0.6344444444444445
+     }
+    },
+    "frame": {
+     "parts": [
+      42,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_closed.ghost-42.webp",
+      "x": 0.345,
+      "y": 0.21,
+      "width": 0.2725,
+      "height": 0.35888888888888887
+     }
+    },
+    "leaflet": {
+     "parts": [
+      46,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/annular-frame__oblique__valve_closed.ghost-46.webp",
+      "x": 0.355,
+      "y": 0.3277777777777778,
+      "width": 0.25333333333333335,
+      "height": 0.18
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/annular-frame__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.5738,
+    "y": 0.283,
+    "r": 0.1065
+   }
+  },
+  "annular-frame/face/anatomy": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__face__anatomy.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__face__anatomy.thumb.webp",
+   "alt": "Annular support: Look along the opening. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.27778,
+     "y": 0.25401
+    },
+    {
+     "id": "tissue",
+     "x": 0.58376,
+     "y": 0.60324
+    }
+   ],
+   "camera": "2f28f1d3133af00e",
+   "contentBox": {
+    "x": 0.1204,
+    "y": 0.0689,
+    "width": 0.7592,
+    "height": 0.8878
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__face__anatomy.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__face__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      41
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/annular-frame__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.5738,
+    "y": 0.283,
+    "r": 0.1065
+   }
+  },
+  "annular-frame/face/valve_open": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__face__valve_open.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__face__valve_open.thumb.webp",
+   "alt": "Annular support: Look along the opening. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "tissue",
+     "x": 0.74313,
+     "y": 0.60861
+    },
+    {
+     "id": "frame",
+     "x": 0.65442,
+     "y": 0.49474
+    },
+    {
+     "id": "leaflet",
+     "x": 0.5691,
+     "y": 0.50426
+    }
+   ],
+   "camera": "2f28f1d3133af00e",
+   "contentBox": {
+    "x": 0.1204,
+    "y": 0.0433,
+    "width": 0.7592,
+    "height": 0.9133
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__face__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__face__valve_open.parts.png",
+   "focus": {
+    "tissue": {
+     "parts": [
+      1,
+      42,
+      43,
+      44,
+      48
+     ]
+    },
+    "frame": {
+     "parts": [
+      42,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/annular-frame__face__valve_open.ghost-42.webp",
+      "x": 0.23583333333333334,
+      "y": 0.043333333333333335,
+      "width": 0.4741666666666667,
+      "height": 0.6566666666666666
+     }
+    },
+    "leaflet": {
+     "parts": [
+      44,
+      1,
+      41
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/annular-frame__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.5758,
+    "y": 0.2813,
+    "r": 0.1072
+   }
+  },
+  "annular-frame/face/valve_closed": {
+   "src": "/scenes/mitral-replacement/images/annular-frame__face__valve_closed.webp",
+   "thumb": "/scenes/mitral-replacement/images/annular-frame__face__valve_closed.thumb.webp",
+   "alt": "Annular support: Look along the opening. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "tissue",
+     "x": 0.74313,
+     "y": 0.60861
+    },
+    {
+     "id": "frame",
+     "x": 0.65442,
+     "y": 0.49474
+    },
+    {
+     "id": "leaflet",
+     "x": 0.47126,
+     "y": 0.3529
+    }
+   ],
+   "camera": "2f28f1d3133af00e",
+   "contentBox": {
+    "x": 0.1204,
+    "y": 0.0433,
+    "width": 0.7592,
+    "height": 0.9133
+   },
+   "mid": "/scenes/mitral-replacement/images/annular-frame__face__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/annular-frame__face__valve_closed.parts.png",
+   "focus": {
+    "tissue": {
+     "parts": [
+      1,
+      42,
+      43,
+      46,
+      47,
+      48
+     ]
+    },
+    "frame": {
+     "parts": [
+      42,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/annular-frame__face__valve_closed.ghost-42.webp",
+      "x": 0.23583333333333334,
+      "y": 0.043333333333333335,
+      "width": 0.4741666666666667,
+      "height": 0.6566666666666666
+     }
+    },
+    "leaflet": {
+     "parts": [
+      46,
+      1,
+      41
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/annular-frame__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.5738,
+    "y": 0.283,
+    "r": 0.1065
+   }
+  },
+  "apical-tether/heart/valve_closed": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__heart__valve_closed.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__heart__valve_closed.thumb.webp",
+   "alt": "Annular frame with tether: Locate the treatment region. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.56822,
+     "y": 0.57323
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__heart__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__heart__valve_closed.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      64
+     ]
+    }
+   },
+   "keys": []
+  },
+  "apical-tether/region/anatomy": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__region__anatomy.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__region__anatomy.thumb.webp",
+   "alt": "Annular frame with tether: See the valve between the chambers. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.50274,
+     "y": 0.1249
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.57449,
+     "y": 0.7364
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.42916,
+     "y": 0.30433
+    },
+    {
+     "id": "region_valve",
+     "x": 0.58755,
+     "y": 0.32478
+    },
+    {
+     "id": "region_support",
+     "x": 0.59615,
+     "y": 0.4466
+    }
+   ],
+   "camera": "b8099040015f05f5",
+   "contentBox": {
+    "x": 0.2492,
+    "y": 0.0344,
+    "width": 0.5017,
+    "height": 0.9311
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__region__anatomy.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__region__anatomy.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      6
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      10
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      12
+     ]
+    },
+    "region_support": {
+     "parts": [
+      6
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "apical-tether/region/valve_open": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__region__valve_open.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__region__valve_open.thumb.webp",
+   "alt": "Annular frame with tether: See the valve between the chambers. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.50274,
+     "y": 0.1249
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.5546,
+     "y": 0.72477
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.42916,
+     "y": 0.30433
+    },
+    {
+     "id": "region_support",
+     "x": 0.59615,
+     "y": 0.4466
+    },
+    {
+     "id": "region_device",
+     "x": 0.56936,
+     "y": 0.28313
+    }
+   ],
+   "camera": "b8099040015f05f5",
+   "contentBox": {
+    "x": 0.2492,
+    "y": 0.0344,
+    "width": 0.5017,
+    "height": 0.9311
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__region__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__region__valve_open.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3,
+      32,
+      33,
+      34,
+      35
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      6,
+      32,
+      33,
+      35,
+      39,
+      40
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      10,
+      32,
+      33,
+      34
+     ]
+    },
+    "region_support": {
+     "parts": [
+      6,
+      32,
+      33,
+      35,
+      39,
+      40
+     ]
+    },
+    "region_device": {
+     "parts": [
+      32,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "apical-tether/region/valve_closed": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__region__valve_closed.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__region__valve_closed.thumb.webp",
+   "alt": "Annular frame with tether: See the valve between the chambers. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.50274,
+     "y": 0.1249
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.5546,
+     "y": 0.72477
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.42916,
+     "y": 0.30433
+    },
+    {
+     "id": "region_support",
+     "x": 0.59615,
+     "y": 0.4466
+    },
+    {
+     "id": "region_device",
+     "x": 0.56936,
+     "y": 0.28313
+    }
+   ],
+   "camera": "b8099040015f05f5",
+   "contentBox": {
+    "x": 0.2492,
+    "y": 0.0344,
+    "width": 0.5017,
+    "height": 0.9311
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__region__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__region__valve_closed.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3,
+      32,
+      33,
+      34,
+      37
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      6,
+      32,
+      33,
+      37,
+      39,
+      40
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      10,
+      32,
+      33,
+      34
+     ]
+    },
+    "region_support": {
+     "parts": [
+      6,
+      32,
+      33,
+      37,
+      39,
+      40
+     ]
+    },
+    "region_device": {
+     "parts": [
+      32,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "apical-tether/section/anatomy": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__section__anatomy.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__section__anatomy.thumb.webp",
+   "alt": "Annular frame with tether: See the tissue\u2013device relationship. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.50891,
+     "y": 0.44786
+    },
+    {
+     "id": "tissue",
+     "x": 0.43271,
+     "y": 0.30993
+    }
+   ],
+   "camera": "58e885256baebdb4",
+   "contentBox": {
+    "x": 0.27,
+    "y": 0.0433,
+    "width": 0.46,
+    "height": 0.5722
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__section__anatomy.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__section__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      41
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/apical-tether__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.5786,
+    "y": 0.2969,
+    "r": 0.1211
+   }
+  },
+  "apical-tether/section/valve_open": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__section__valve_open.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__section__valve_open.thumb.webp",
+   "alt": "Annular frame with tether: See the tissue\u2013device relationship. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "tissue",
+     "x": 0.43271,
+     "y": 0.30993
+    },
+    {
+     "id": "frame",
+     "x": 0.47887,
+     "y": 0.35734
+    },
+    {
+     "id": "leaflet",
+     "x": 0.52281,
+     "y": 0.39414
+    },
+    {
+     "id": "special",
+     "x": 0.50836,
+     "y": 0.7116
+    }
+   ],
+   "camera": "58e885256baebdb4",
+   "contentBox": {
+    "x": 0.27,
+    "y": 0.0433,
+    "width": 0.46,
+    "height": 0.9133
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__section__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__section__valve_open.parts.png",
+   "focus": {
+    "tissue": {
+     "parts": [
+      1,
+      49,
+      50,
+      51,
+      55
+     ]
+    },
+    "frame": {
+     "parts": [
+      49,
+      1,
+      41
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      51,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/apical-tether__section__valve_open.ghost-51.webp",
+      "x": 0.37333333333333335,
+      "y": 0.32666666666666666,
+      "width": 0.25333333333333335,
+      "height": 0.17888888888888888
+     }
+    },
+    "special": {
+     "parts": [
+      56
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/apical-tether__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.5805,
+    "y": 0.293,
+    "r": 0.1211
+   }
+  },
+  "apical-tether/section/valve_closed": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__section__valve_closed.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__section__valve_closed.thumb.webp",
+   "alt": "Annular frame with tether: See the tissue\u2013device relationship. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "tissue",
+     "x": 0.43271,
+     "y": 0.30993
+    },
+    {
+     "id": "frame",
+     "x": 0.51872,
+     "y": 0.38842
+    },
+    {
+     "id": "leaflet",
+     "x": 0.46831,
+     "y": 0.38683
+    },
+    {
+     "id": "special",
+     "x": 0.50836,
+     "y": 0.7116
+    }
+   ],
+   "camera": "58e885256baebdb4",
+   "contentBox": {
+    "x": 0.27,
+    "y": 0.0433,
+    "width": 0.46,
+    "height": 0.9133
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__section__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__section__valve_closed.parts.png",
+   "focus": {
+    "tissue": {
+     "parts": [
+      1,
+      49,
+      50,
+      53,
+      54,
+      55
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/apical-tether__section__valve_closed.ghost-1.webp",
+      "x": 0.27,
+      "y": 0.043333333333333335,
+      "width": 0.46,
+      "height": 0.5722222222222222
+     }
+    },
+    "frame": {
+     "parts": [
+      49,
+      1,
+      41
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      53,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/apical-tether__section__valve_closed.ghost-53.webp",
+      "x": 0.37333333333333335,
+      "y": 0.32666666666666666,
+      "width": 0.25333333333333335,
+      "height": 0.17
+     }
+    },
+    "special": {
+     "parts": [
+      56
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/apical-tether__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.5786,
+    "y": 0.2969,
+    "r": 0.1211
+   }
+  },
+  "apical-tether/oblique/anatomy": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__oblique__anatomy.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__oblique__anatomy.thumb.webp",
+   "alt": "Annular frame with tether: Understand depth and attachment. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.45376,
+     "y": 0.32084
+    },
+    {
+     "id": "tissue",
+     "x": 0.49032,
+     "y": 0.30169
+    }
+   ],
+   "camera": "0b7c8bd6b4b80e73",
+   "contentBox": {
+    "x": 0.2883,
+    "y": 0.0433,
+    "width": 0.4233,
+    "height": 0.6344
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__oblique__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      41
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/apical-tether__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.5786,
+    "y": 0.2969,
+    "r": 0.1211
+   }
+  },
+  "apical-tether/oblique/valve_open": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_open.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_open.thumb.webp",
+   "alt": "Annular frame with tether: Understand depth and attachment. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "tissue",
+     "x": 0.49032,
+     "y": 0.30169
+    },
+    {
+     "id": "frame",
+     "x": 0.49606,
+     "y": 0.37782
+    },
+    {
+     "id": "leaflet",
+     "x": 0.43596,
+     "y": 0.38321
+    },
+    {
+     "id": "special",
+     "x": 0.50019,
+     "y": 0.71637
+    }
+   ],
+   "camera": "0b7c8bd6b4b80e73",
+   "contentBox": {
+    "x": 0.2883,
+    "y": 0.0433,
+    "width": 0.4233,
+    "height": 0.9133
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_open.parts.png",
+   "focus": {
+    "tissue": {
+     "parts": [
+      1,
+      49,
+      50,
+      51,
+      55
+     ]
+    },
+    "frame": {
+     "parts": [
+      49,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_open.ghost-49.webp",
+      "x": 0.345,
+      "y": 0.21,
+      "width": 0.2725,
+      "height": 0.35888888888888887
+     }
+    },
+    "leaflet": {
+     "parts": [
+      51,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_open.ghost-51.webp",
+      "x": 0.355,
+      "y": 0.3277777777777778,
+      "width": 0.25333333333333335,
+      "height": 0.19111111111111112
+     }
+    },
+    "special": {
+     "parts": [
+      56
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/apical-tether__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.5805,
+    "y": 0.293,
+    "r": 0.1211
+   }
+  },
+  "apical-tether/oblique/valve_closed": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_closed.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_closed.thumb.webp",
+   "alt": "Annular frame with tether: Understand depth and attachment. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "tissue",
+     "x": 0.49032,
+     "y": 0.30169
+    },
+    {
+     "id": "frame",
+     "x": 0.49606,
+     "y": 0.37782
+    },
+    {
+     "id": "leaflet",
+     "x": 0.47707,
+     "y": 0.41437
+    },
+    {
+     "id": "special",
+     "x": 0.50019,
+     "y": 0.71637
+    }
+   ],
+   "camera": "0b7c8bd6b4b80e73",
+   "contentBox": {
+    "x": 0.2883,
+    "y": 0.0433,
+    "width": 0.4233,
+    "height": 0.9133
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_closed.parts.png",
+   "focus": {
+    "tissue": {
+     "parts": [
+      1,
+      49,
+      50,
+      53,
+      54,
+      55
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_closed.ghost-1.webp",
+      "x": 0.28833333333333333,
+      "y": 0.043333333333333335,
+      "width": 0.42333333333333334,
+      "height": 0.6344444444444445
+     }
+    },
+    "frame": {
+     "parts": [
+      49,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_closed.ghost-49.webp",
+      "x": 0.345,
+      "y": 0.21,
+      "width": 0.2725,
+      "height": 0.35888888888888887
+     }
+    },
+    "leaflet": {
+     "parts": [
+      53,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/apical-tether__oblique__valve_closed.ghost-53.webp",
+      "x": 0.355,
+      "y": 0.3277777777777778,
+      "width": 0.25333333333333335,
+      "height": 0.18
+     }
+    },
+    "special": {
+     "parts": [
+      56
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/apical-tether__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.5786,
+    "y": 0.2969,
+    "r": 0.1211
+   }
+  },
+  "apical-tether/face/anatomy": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__face__anatomy.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__face__anatomy.thumb.webp",
+   "alt": "Annular frame with tether: Look along the opening. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.27778,
+     "y": 0.25401
+    },
+    {
+     "id": "tissue",
+     "x": 0.58376,
+     "y": 0.60324
+    }
+   ],
+   "camera": "2f28f1d3133af00e",
+   "contentBox": {
+    "x": 0.1204,
+    "y": 0.0689,
+    "width": 0.7592,
+    "height": 0.8878
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__face__anatomy.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__face__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      41
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/apical-tether__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.5786,
+    "y": 0.2969,
+    "r": 0.1211
+   }
+  },
+  "apical-tether/face/valve_open": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__face__valve_open.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__face__valve_open.thumb.webp",
+   "alt": "Annular frame with tether: Look along the opening. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "tissue",
+     "x": 0.74313,
+     "y": 0.60861
+    },
+    {
+     "id": "frame",
+     "x": 0.65442,
+     "y": 0.49474
+    },
+    {
+     "id": "leaflet",
+     "x": 0.5691,
+     "y": 0.50426
+    }
+   ],
+   "camera": "2f28f1d3133af00e",
+   "contentBox": {
+    "x": 0.1204,
+    "y": 0.0433,
+    "width": 0.7592,
+    "height": 0.9133
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__face__valve_open.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__face__valve_open.parts.png",
+   "focus": {
+    "tissue": {
+     "parts": [
+      1,
+      49,
+      50,
+      51,
+      55
+     ]
+    },
+    "frame": {
+     "parts": [
+      49,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/apical-tether__face__valve_open.ghost-49.webp",
+      "x": 0.23583333333333334,
+      "y": 0.043333333333333335,
+      "width": 0.4741666666666667,
+      "height": 0.6566666666666666
+     }
+    },
+    "leaflet": {
+     "parts": [
+      51,
+      1,
+      41
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/apical-tether__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.5805,
+    "y": 0.293,
+    "r": 0.1211
+   }
+  },
+  "apical-tether/face/valve_closed": {
+   "src": "/scenes/mitral-replacement/images/apical-tether__face__valve_closed.webp",
+   "thumb": "/scenes/mitral-replacement/images/apical-tether__face__valve_closed.thumb.webp",
+   "alt": "Annular frame with tether: Look along the opening. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "tissue",
+     "x": 0.74313,
+     "y": 0.60861
+    },
+    {
+     "id": "frame",
+     "x": 0.65442,
+     "y": 0.49474
+    },
+    {
+     "id": "leaflet",
+     "x": 0.47126,
+     "y": 0.3529
+    }
+   ],
+   "camera": "2f28f1d3133af00e",
+   "contentBox": {
+    "x": 0.1204,
+    "y": 0.0433,
+    "width": 0.7592,
+    "height": 0.9133
+   },
+   "mid": "/scenes/mitral-replacement/images/apical-tether__face__valve_closed.mid.webp",
+   "partMap": "/scenes/mitral-replacement/images/apical-tether__face__valve_closed.parts.png",
+   "focus": {
+    "tissue": {
+     "parts": [
+      1,
+      49,
+      50,
+      53,
+      54,
+      55
+     ]
+    },
+    "frame": {
+     "parts": [
+      49,
+      1,
+      41
+     ],
+     "ghost": {
+      "src": "/scenes/mitral-replacement/images/apical-tether__face__valve_closed.ghost-49.webp",
+      "x": 0.23583333333333334,
+      "y": 0.043333333333333335,
+      "width": 0.4741666666666667,
+      "height": 0.6566666666666666
+     }
+    },
+    "leaflet": {
+     "parts": [
+      53,
+      1,
+      41
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/mitral-replacement/images/apical-tether__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.5786,
+    "y": 0.2969,
+    "r": 0.1211
+   }
+  }
+ },
+ "presentation": {
+  "annotationMode": "external",
+  "layout": "plate",
+  "labels": {
+   "location": "Treatment location",
+   "junction": "Mitral valve",
+   "region_atrium": "Left atrium",
+   "region_ventricle": "Left ventricle",
+   "region_aorta": "Aortic root",
+   "region_valve": "Native valve",
+   "region_support": "Papillary muscles",
+   "region_device": "Generic replacement valve",
+   "tissue": "Representative tissue",
+   "frame": "Support frame",
+   "leaflet": "Prosthetic leaflets",
+   "special": "Annular or tether support"
+  },
+  "hiddenLabels": [
+   "special"
+  ],
+  "stateLabels": {
+   "anatomy": "Anatomy only",
+   "valve_open": "Valve open",
+   "valve_closed": "Valve closed"
+  },
+  "stateGroups": [
+   {
+    "label": "Anatomy",
+    "states": [
+     "anatomy"
+    ]
+   },
+   {
+    "label": "With valve",
+    "states": [
+     "valve_open",
+     "valve_closed"
+    ]
+   }
+  ],
+  "designComparison": {
+   "pairs": [
+    {
+     "designs": [
+      "annular-frame",
+      "apical-tether"
+     ],
+     "views": [
+      "section",
+      "oblique",
+      "face"
+     ],
+     "states": [
+      "valve_open",
+      "valve_closed"
+     ],
+     "summary": "Tether. The second design adds a tether from the frame toward a representative apical pad. Same representative mitral valve, camera and pose."
+    }
+   ]
+  },
+  "keyColors": {
+   "cut": "#684c76"
+  }
+ }
+}

@@ -1,1 +1,2400 @@
-{"classId":"surgical-pulmonary-valves","conditionId":"cond-pv","title":"Surgical pulmonary valves","linkLabel":"Visualize device class","status":"Schematic","scope":"Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.","stageLabel":"Schematic · representative anatomy · not to scale","attribution":"Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.","sources":[{"title":"Toronto Heart Atlas","url":"https://github.com/tgh-apil/TorontoHeartAtlas","locator":"RegularHeart chamber and vessel meshes, CC BY 4.0."},{"title":"Creative Commons Attribution 4.0","url":"https://creativecommons.org/licenses/by/4.0/"},{"title":"NHLBI: How blood flows through the heart","url":"https://www.nhlbi.nih.gov/health/heart/blood-flow","locator":"Written heart-valve and circulation sections; no media reused."},{"title":"University of Minnesota: written anatomy reference","url":"https://www.vhlab.umn.edu/atlas/anatomy-tutorial/cardiac-valve-nomenclature.shtml","locator":"Anatomical description; no atlas images or models reused."}],"legend":[{"label":"Representative tissue","color":"#ad77ca"},{"label":"Generic device","color":"#ffd358"},{"label":"Leaflets / fabric","color":"#f6dfc8"},{"label":"Suture / emphasis","color":"#35a8a0"}],"designs":[{"id":"sewn-valve","label":"Sewn valve","summary":"A generic valve with sewing cuff at a representative  pulmonary junction."},{"id":"sewn-conduit","label":"Valved conduit","summary":"A generic sewn valve within a smooth representative replacement conduit."}],"states":[{"id":"anatomy","label":"1. Anatomy context","note":"Representative sectioned shell and approximate junction; no native leaflet reconstruction."},{"id":"valve_open","label":"2. Replacement open","note":"Representative open replacement leaflets; support frame fixed."},{"id":"valve_closed","label":"3. Replacement closed","note":"Representative closure pose; support frame unchanged. No flow or seal calculation."}],"views":[{"id":"heart","label":"Whole heart","title":"Locate the treatment region","lesson":"Use the highlighted region to orient the enlarged views.","states":["valve_closed"],"orientation":{"superior":{"x":0.0,"y":-0.9595},"patientRight":{"x":-0.8384,"y":-0.1535}}},{"id":"region","label":"RV and pulmonary trunk","title":"See the valve in its regional setting","lesson":"The right ventricle, its outflow tract and the pulmonary artery come from a real heart model and are opened along the outflow. The generic valve sits where the outflow tract meets the pulmonary artery. The valve position shown is representative and is not measured on a specific patient or population.","states":["anatomy","valve_open","valve_closed"],"orientation":{"superior":{"x":-0.4627,"y":-0.7405},"patientRight":{"x":-0.4226,"y":0.6675}}},{"id":"section","label":"Mechanism section","title":"See the tissue–device relationship","lesson":"A sewing cuff and representative sutures locate the surgical attachment around the pulmonary junction.","states":["anatomy","valve_open","valve_closed"],"orientation":{"superior":{"x":0.0403,"y":-0.623},"patientRight":{"x":-0.9992,"y":-0.0251}}},{"id":"oblique","label":"Oblique detail","title":"Understand depth and attachment","lesson":"An oblique view separates the near surface, device and supporting tissue.","states":["anatomy","valve_open","valve_closed"],"orientation":{"superior":{"x":-0.2272,"y":-0.6189},"patientRight":{"x":-0.8483,"y":-0.2534}}},{"id":"face","label":"Face view","title":"Look along the opening","lesson":"The face view complements the section. All poses and proportions are representative, not measured.","states":["anatomy","valve_open","valve_closed"],"orientation":{"superior":{"x":0.0471,"y":-0.2532},"patientRight":{"x":0.9977,"y":-0.0343}}}],"annotations":{"location":{"label":"TREATMENT LOCATION","body":"The enlarged marker indicates the treatment location for orientation; it is not an implant.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"junction":{"label":"APPROXIMATE JUNCTION","body":"A sewing cuff and representative sutures locate the surgical attachment around the pulmonary junction. The marked level is approximate, not a segmented annulus.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"tissue":{"label":"REPRESENTATIVE TISSUE","body":"The smooth sectioned shell is representative and is not measured on a specific patient or population. It is not a segmented myocardial or vessel wall.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"frame":{"label":"FIXED SUPPORT FRAME","body":"The generic lattice stays fixed when the prosthetic leaflets open and close. Mesh spacing and proportions are representative, not measured.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"leaflet":{"label":"PROSTHETIC LEAFLETS","body":"The thin leaflets shown are representative and open within the same support. Motion, flow and tissue contact are not calculated.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"special":{"label":"SEWING CUFF","body":"Representative sutures indicate surgical attachment; spacing and stitch count are representative.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_rv":{"label":"RIGHT VENTRICLE","body":"The right ventricle narrows into its outflow tract on the way to the pulmonary artery.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_rvot":{"label":"RV OUTFLOW TRACT","body":"The right ventricular outflow tract leads up to the pulmonary valve level.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_pulmonary":{"label":"PULMONARY TRUNK","body":"The pulmonary artery continues from the valve level toward the lungs and divides into its branches.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_valve":{"label":"PULMONARY VALVE LEVEL","body":"The selected generic valve sits at this level, where the outflow tract meets the pulmonary artery. The valve position shown is representative and is not measured on a specific patient or population.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_conduit":{"label":"REPRESENTATIVE CONDUIT","body":"In this design a representative conduit segment takes the place of the pulmonary trunk. It is shown in a different tone from native tissue.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"}},"images":{"sewn-valve/heart/valve_closed":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__heart__valve_closed.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__heart__valve_closed.thumb.webp","alt":"Sewn valve: Locate the treatment region. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"location","x":0.52004,"y":0.46586}]},"sewn-valve/region/anatomy":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__region__anatomy.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__region__anatomy.thumb.webp","alt":"Sewn valve: See the valve in its regional setting. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"region_rv","x":0.79343,"y":0.5787},{"id":"region_rvot","x":0.59036,"y":0.3783},{"id":"region_pulmonary","x":0.47941,"y":0.26769},{"id":"region_valve","x":0.51128,"y":0.38331}]},"sewn-valve/region/valve_open":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_open.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_open.thumb.webp","alt":"Sewn valve: See the valve in its regional setting. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"region_rv","x":0.79343,"y":0.5787},{"id":"region_rvot","x":0.59036,"y":0.3783},{"id":"region_pulmonary","x":0.47941,"y":0.26769},{"id":"region_valve","x":0.51056,"y":0.3909}]},"sewn-valve/region/valve_closed":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_closed.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_closed.thumb.webp","alt":"Sewn valve: See the valve in its regional setting. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"region_rv","x":0.79343,"y":0.5787},{"id":"region_rvot","x":0.59036,"y":0.3783},{"id":"region_pulmonary","x":0.47941,"y":0.26769},{"id":"region_valve","x":0.51056,"y":0.3909}]},"sewn-valve/section/anatomy":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__section__anatomy.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__section__anatomy.thumb.webp","alt":"Sewn valve: See the tissue–device relationship. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.66667,"y":0.5},{"id":"tissue","x":0.67821,"y":0.31088}]},"sewn-valve/section/valve_open":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_open.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_open.thumb.webp","alt":"Sewn valve: See the tissue–device relationship. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.66667,"y":0.5},{"id":"tissue","x":0.67821,"y":0.31088},{"id":"frame","x":0.44951,"y":0.74593},{"id":"leaflet","x":0.57226,"y":0.54512},{"id":"special","x":0.64231,"y":0.62169}]},"sewn-valve/section/valve_closed":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_closed.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_closed.thumb.webp","alt":"Sewn valve: See the tissue–device relationship. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.66667,"y":0.5},{"id":"tissue","x":0.67821,"y":0.31088},{"id":"frame","x":0.44951,"y":0.74593},{"id":"leaflet","x":0.54908,"y":0.57283},{"id":"special","x":0.64231,"y":0.62169}]},"sewn-valve/oblique/anatomy":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__anatomy.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__anatomy.thumb.webp","alt":"Sewn valve: Understand depth and attachment. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.63974,"y":0.55072},{"id":"tissue","x":0.64941,"y":0.36795}]},"sewn-valve/oblique/valve_open":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_open.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_open.thumb.webp","alt":"Sewn valve: Understand depth and attachment. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.63974,"y":0.55072},{"id":"tissue","x":0.64941,"y":0.36795},{"id":"frame","x":0.37276,"y":0.72057},{"id":"leaflet","x":0.49238,"y":0.56137},{"id":"special","x":0.5491,"y":0.65795}]},"sewn-valve/oblique/valve_closed":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_closed.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_closed.thumb.webp","alt":"Sewn valve: Understand depth and attachment. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.63974,"y":0.55072},{"id":"tissue","x":0.64941,"y":0.36795},{"id":"frame","x":0.37276,"y":0.72057},{"id":"leaflet","x":0.43213,"y":0.55915},{"id":"special","x":0.5491,"y":0.65795}]},"sewn-valve/face/anatomy":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__face__anatomy.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__face__anatomy.thumb.webp","alt":"Sewn valve: Look along the opening. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.33416,"y":0.50534},{"id":"tissue","x":0.51786,"y":0.78806}]},"sewn-valve/face/valve_open":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_open.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_open.thumb.webp","alt":"Sewn valve: Look along the opening. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.33416,"y":0.50534},{"id":"tissue","x":0.51786,"y":0.78806},{"id":"frame","x":0.44342,"y":0.71414},{"id":"leaflet","x":0.41856,"y":0.36459},{"id":"special","x":0.35393,"y":0.32347}]},"sewn-valve/face/valve_closed":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_closed.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_closed.thumb.webp","alt":"Sewn valve: Look along the opening. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.33416,"y":0.50534},{"id":"tissue","x":0.51786,"y":0.78806},{"id":"frame","x":0.44342,"y":0.71414},{"id":"leaflet","x":0.39299,"y":0.41554},{"id":"special","x":0.35393,"y":0.32347}]},"sewn-conduit/heart/valve_closed":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__heart__valve_closed.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__heart__valve_closed.thumb.webp","alt":"Valved conduit: Locate the treatment region. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"location","x":0.52004,"y":0.46586}]},"sewn-conduit/region/anatomy":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__anatomy.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__anatomy.thumb.webp","alt":"Valved conduit: See the valve in its regional setting. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"region_rv","x":0.79343,"y":0.5787},{"id":"region_rvot","x":0.56328,"y":0.3349},{"id":"region_pulmonary","x":0.22803,"y":0.21292},{"id":"region_valve","x":0.56581,"y":0.40387},{"id":"region_conduit","x":0.50903,"y":0.27677}]},"sewn-conduit/region/valve_open":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_open.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_open.thumb.webp","alt":"Valved conduit: See the valve in its regional setting. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"region_rv","x":0.79343,"y":0.5787},{"id":"region_rvot","x":0.56328,"y":0.3349},{"id":"region_pulmonary","x":0.22803,"y":0.21292},{"id":"region_valve","x":0.50866,"y":0.38455},{"id":"region_conduit","x":0.45783,"y":0.25662}]},"sewn-conduit/region/valve_closed":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_closed.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_closed.thumb.webp","alt":"Valved conduit: See the valve in its regional setting. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"region_rv","x":0.79343,"y":0.5787},{"id":"region_rvot","x":0.56328,"y":0.3349},{"id":"region_pulmonary","x":0.22803,"y":0.21292},{"id":"region_valve","x":0.50866,"y":0.38455},{"id":"region_conduit","x":0.45783,"y":0.25662}]},"sewn-conduit/section/anatomy":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__anatomy.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__anatomy.thumb.webp","alt":"Valved conduit: See the tissue–device relationship. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.66667,"y":0.5},{"id":"tissue","x":0.67821,"y":0.31088}]},"sewn-conduit/section/valve_open":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_open.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_open.thumb.webp","alt":"Valved conduit: See the tissue–device relationship. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.66667,"y":0.5},{"id":"tissue","x":0.67821,"y":0.31088},{"id":"frame","x":0.44951,"y":0.74593},{"id":"leaflet","x":0.57226,"y":0.54512},{"id":"special","x":0.64231,"y":0.62169}]},"sewn-conduit/section/valve_closed":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_closed.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_closed.thumb.webp","alt":"Valved conduit: See the tissue–device relationship. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.66667,"y":0.5},{"id":"tissue","x":0.67821,"y":0.31088},{"id":"frame","x":0.44951,"y":0.74593},{"id":"leaflet","x":0.54908,"y":0.57283},{"id":"special","x":0.64231,"y":0.62169}]},"sewn-conduit/oblique/anatomy":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__anatomy.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__anatomy.thumb.webp","alt":"Valved conduit: Understand depth and attachment. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.63974,"y":0.55072},{"id":"tissue","x":0.64941,"y":0.36795}]},"sewn-conduit/oblique/valve_open":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_open.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_open.thumb.webp","alt":"Valved conduit: Understand depth and attachment. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.63974,"y":0.55072},{"id":"tissue","x":0.64941,"y":0.36795},{"id":"frame","x":0.37276,"y":0.72057},{"id":"leaflet","x":0.49238,"y":0.56137},{"id":"special","x":0.5491,"y":0.65795}]},"sewn-conduit/oblique/valve_closed":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_closed.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_closed.thumb.webp","alt":"Valved conduit: Understand depth and attachment. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.63974,"y":0.55072},{"id":"tissue","x":0.64941,"y":0.36795},{"id":"frame","x":0.37276,"y":0.72057},{"id":"leaflet","x":0.43213,"y":0.55915},{"id":"special","x":0.5491,"y":0.65795}]},"sewn-conduit/face/anatomy":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__anatomy.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__anatomy.thumb.webp","alt":"Valved conduit: Look along the opening. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.33416,"y":0.50534},{"id":"tissue","x":0.51786,"y":0.78806}]},"sewn-conduit/face/valve_open":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_open.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_open.thumb.webp","alt":"Valved conduit: Look along the opening. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.33416,"y":0.50534},{"id":"tissue","x":0.51786,"y":0.78806},{"id":"frame","x":0.44342,"y":0.71414},{"id":"leaflet","x":0.41856,"y":0.36459},{"id":"special","x":0.35393,"y":0.32347}]},"sewn-conduit/face/valve_closed":{"src":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_closed.webp","thumb":"/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_closed.thumb.webp","alt":"Valved conduit: Look along the opening. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.33416,"y":0.50534},{"id":"tissue","x":0.51786,"y":0.78806},{"id":"frame","x":0.44342,"y":0.71414},{"id":"leaflet","x":0.39299,"y":0.41554},{"id":"special","x":0.35393,"y":0.32347}]}}}
+{
+ "classId": "surgical-pulmonary-valves",
+ "conditionId": "cond-pv",
+ "title": "Surgical pulmonary valves",
+ "linkLabel": "Visualize device class",
+ "status": "Schematic",
+ "scope": "Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.",
+ "stageLabel": "Schematic \u00b7 representative anatomy \u00b7 not to scale",
+ "attribution": "Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.",
+ "sources": [
+  {
+   "title": "Toronto Heart Atlas",
+   "url": "https://github.com/tgh-apil/TorontoHeartAtlas",
+   "locator": "RegularHeart chamber and vessel meshes, CC BY 4.0."
+  },
+  {
+   "title": "Creative Commons Attribution 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "title": "NHLBI: How blood flows through the heart",
+   "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+   "locator": "Written heart-valve and circulation sections; no media reused."
+  },
+  {
+   "title": "University of Minnesota: written anatomy reference",
+   "url": "https://www.vhlab.umn.edu/atlas/anatomy-tutorial/cardiac-valve-nomenclature.shtml",
+   "locator": "Anatomical description; no atlas images or models reused."
+  }
+ ],
+ "legend": [
+  {
+   "label": "Representative tissue",
+   "color": "#ad77ca"
+  },
+  {
+   "label": "Generic device",
+   "color": "#ffd358"
+  },
+  {
+   "label": "Leaflets / fabric",
+   "color": "#f6dfc8"
+  },
+  {
+   "label": "Suture / emphasis",
+   "color": "#35a8a0"
+  }
+ ],
+ "designs": [
+  {
+   "id": "sewn-valve",
+   "label": "Sewn valve",
+   "summary": "A generic valve with sewing cuff at a representative  pulmonary junction."
+  },
+  {
+   "id": "sewn-conduit",
+   "label": "Valved conduit",
+   "summary": "A generic sewn valve within a smooth representative replacement conduit."
+  }
+ ],
+ "states": [
+  {
+   "id": "anatomy",
+   "label": "1. Anatomy context",
+   "note": "Representative sectioned shell and approximate junction; no native leaflet reconstruction."
+  },
+  {
+   "id": "valve_open",
+   "label": "2. Replacement open",
+   "note": "Representative open replacement leaflets; support frame fixed."
+  },
+  {
+   "id": "valve_closed",
+   "label": "3. Replacement closed",
+   "note": "Representative closure pose; support frame unchanged. No flow or seal calculation."
+  }
+ ],
+ "views": [
+  {
+   "id": "heart",
+   "label": "Whole heart",
+   "title": "Locate the treatment region",
+   "lesson": "The highlighted region orients the enlarged views.",
+   "states": [
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9595
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1535
+    }
+   }
+  },
+  {
+   "id": "region",
+   "label": "RV and pulmonary trunk",
+   "title": "See the valve in its regional setting",
+   "lesson": "The right ventricle, outflow tract and pulmonary artery, opened along the outflow, with the valve where they meet.",
+   "states": [
+    "anatomy",
+    "valve_open",
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": -0.4627,
+     "y": -0.7405
+    },
+    "patientRight": {
+     "x": -0.4226,
+     "y": 0.6675
+    }
+   },
+   "presentation": {
+    "directionCaption": "RV and pulmonary trunk",
+    "representation": "representative-view",
+    "regionLabel": "Surgical pulmonary valves"
+   }
+  },
+  {
+   "id": "section",
+   "label": "Mechanism section",
+   "title": "See the tissue\u2013device relationship",
+   "lesson": "A sewing cuff and representative sutures locate the surgical attachment around the pulmonary junction.",
+   "states": [
+    "anatomy",
+    "valve_open",
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0403,
+     "y": -0.623
+    },
+    "patientRight": {
+     "x": -0.9992,
+     "y": -0.0251
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen from the front",
+    "representation": "representative-section",
+    "regionLabel": "Surgical pulmonary valves"
+   }
+  },
+  {
+   "id": "oblique",
+   "label": "Oblique detail",
+   "title": "Understand depth and attachment",
+   "lesson": "An oblique view separates the near surface, the device and the supporting tissue.",
+   "states": [
+    "anatomy",
+    "valve_open",
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": -0.2272,
+     "y": -0.6189
+    },
+    "patientRight": {
+     "x": -0.8483,
+     "y": -0.2534
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen at an angle",
+    "representation": "representative-section",
+    "regionLabel": "Surgical pulmonary valves"
+   }
+  },
+  {
+   "id": "face",
+   "label": "Face view",
+   "title": "Look along the opening",
+   "lesson": "Looking along the opening. Poses and proportions are representative, not measured.",
+   "states": [
+    "anatomy",
+    "valve_open",
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0471,
+     "y": -0.2532
+    },
+    "patientRight": {
+     "x": 0.9977,
+     "y": -0.0343
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen along the opening",
+    "representation": "representative-section",
+    "regionLabel": "Surgical pulmonary valves"
+   }
+  }
+ ],
+ "annotations": {
+  "location": {
+   "label": "TREATMENT LOCATION",
+   "body": "The enlarged marker indicates the treatment location for orientation; it is not an implant.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "junction": {
+   "label": "APPROXIMATE JUNCTION",
+   "body": "A sewing cuff and representative sutures locate the surgical attachment around the pulmonary junction. The marked level is approximate, not a segmented annulus.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "tissue": {
+   "label": "REPRESENTATIVE TISSUE",
+   "body": "The smooth sectioned shell is representative and is not measured on a specific patient or population. It is not a segmented myocardial or vessel wall.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "frame": {
+   "label": "FIXED SUPPORT FRAME",
+   "body": "The generic lattice stays fixed when the prosthetic leaflets open and close. Mesh spacing and proportions are representative, not measured.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  },
+  "leaflet": {
+   "label": "PROSTHETIC LEAFLETS",
+   "body": "The thin leaflets shown are representative and open within the same support. Motion, flow and tissue contact are not calculated.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  },
+  "special": {
+   "label": "SEWING CUFF",
+   "body": "Representative sutures indicate surgical attachment; spacing and stitch count are representative.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  },
+  "region_rv": {
+   "label": "RIGHT VENTRICLE",
+   "body": "The right ventricle narrows into its outflow tract on the way to the pulmonary artery.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_rvot": {
+   "label": "RV OUTFLOW TRACT",
+   "body": "The right ventricular outflow tract leads up to the pulmonary valve level.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_pulmonary": {
+   "label": "PULMONARY TRUNK",
+   "body": "The pulmonary artery continues from the valve level toward the lungs and divides into its branches.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_valve": {
+   "label": "PULMONARY VALVE LEVEL",
+   "body": "The selected generic valve sits at this level, where the outflow tract meets the pulmonary artery. The valve position shown is representative and is not measured on a specific patient or population.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_conduit": {
+   "label": "REPRESENTATIVE CONDUIT",
+   "body": "In this design a representative conduit segment takes the place of the pulmonary trunk. It is shown in a different tone from native tissue.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  }
+ },
+ "images": {
+  "sewn-valve/heart/valve_closed": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__heart__valve_closed.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__heart__valve_closed.thumb.webp",
+   "alt": "Sewn valve: Locate the treatment region. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.52004,
+     "y": 0.46586
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__heart__valve_closed.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__heart__valve_closed.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      57
+     ]
+    }
+   },
+   "keys": []
+  },
+  "sewn-valve/region/anatomy": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__anatomy.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__anatomy.thumb.webp",
+   "alt": "Sewn valve: See the valve in its regional setting. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_rv",
+     "x": 0.62744,
+     "y": 0.68479
+    },
+    {
+     "id": "region_rvot",
+     "x": 0.54141,
+     "y": 0.4297
+    },
+    {
+     "id": "region_pulmonary",
+     "x": 0.2793,
+     "y": 0.32925
+    },
+    {
+     "id": "region_valve",
+     "x": 0.51128,
+     "y": 0.38331
+    }
+   ],
+   "camera": "8da2d3e03546280f",
+   "contentBox": {
+    "x": 0.1204,
+    "y": 0.0344,
+    "width": 0.7592,
+    "height": 0.9311
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__anatomy.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__anatomy.parts.png",
+   "focus": {
+    "region_rv": {
+     "parts": [
+      4
+     ]
+    },
+    "region_rvot": {
+     "parts": [
+      4
+     ]
+    },
+    "region_pulmonary": {
+     "parts": [
+      7
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "sewn-valve/region/valve_open": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_open.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_open.thumb.webp",
+   "alt": "Sewn valve: See the valve in its regional setting. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_rv",
+     "x": 0.62744,
+     "y": 0.68479
+    },
+    {
+     "id": "region_rvot",
+     "x": 0.57093,
+     "y": 0.4582
+    },
+    {
+     "id": "region_pulmonary",
+     "x": 0.2793,
+     "y": 0.32925
+    },
+    {
+     "id": "region_valve",
+     "x": 0.51175,
+     "y": 0.38005
+    }
+   ],
+   "camera": "8da2d3e03546280f",
+   "contentBox": {
+    "x": 0.1204,
+    "y": 0.0344,
+    "width": 0.7592,
+    "height": 0.9311
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_open.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_open.parts.png",
+   "focus": {
+    "region_rv": {
+     "parts": [
+      4,
+      25,
+      26,
+      27,
+      31,
+      32
+     ]
+    },
+    "region_rvot": {
+     "parts": [
+      4,
+      25,
+      26,
+      27,
+      31,
+      32
+     ]
+    },
+    "region_pulmonary": {
+     "parts": [
+      7,
+      25,
+      26,
+      27,
+      28,
+      31,
+      32
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      25,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "sewn-valve/region/valve_closed": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_closed.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_closed.thumb.webp",
+   "alt": "Sewn valve: See the valve in its regional setting. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_rv",
+     "x": 0.62744,
+     "y": 0.68479
+    },
+    {
+     "id": "region_rvot",
+     "x": 0.57093,
+     "y": 0.4582
+    },
+    {
+     "id": "region_pulmonary",
+     "x": 0.2793,
+     "y": 0.32925
+    },
+    {
+     "id": "region_valve",
+     "x": 0.51175,
+     "y": 0.38005
+    }
+   ],
+   "camera": "8da2d3e03546280f",
+   "contentBox": {
+    "x": 0.1204,
+    "y": 0.0344,
+    "width": 0.7592,
+    "height": 0.9311
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_closed.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_closed.parts.png",
+   "focus": {
+    "region_rv": {
+     "parts": [
+      4,
+      25,
+      26,
+      29,
+      31,
+      32
+     ]
+    },
+    "region_rvot": {
+     "parts": [
+      4,
+      25,
+      26,
+      29,
+      31,
+      32
+     ]
+    },
+    "region_pulmonary": {
+     "parts": [
+      7,
+      25,
+      26,
+      29,
+      31,
+      32
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      25,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "sewn-valve/section/anatomy": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__anatomy.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__anatomy.thumb.webp",
+   "alt": "Sewn valve: See the tissue\u2013device relationship. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.5,
+     "y": 0.41395
+    },
+    {
+     "id": "tissue",
+     "x": 0.67821,
+     "y": 0.31088
+    }
+   ],
+   "camera": "14c59ed4f036530d",
+   "contentBox": {
+    "x": 0.2329,
+    "y": 0.0,
+    "width": 0.5342,
+    "height": 0.9283
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__anatomy.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.507,
+    "y": 0.3714,
+    "r": 0.0808
+   }
+  },
+  "sewn-valve/section/valve_open": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_open.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_open.thumb.webp",
+   "alt": "Sewn valve: See the tissue\u2013device relationship. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.33333,
+     "y": 0.5
+    },
+    {
+     "id": "tissue",
+     "x": 0.67821,
+     "y": 0.31088
+    },
+    {
+     "id": "frame",
+     "x": 0.52212,
+     "y": 0.4831
+    },
+    {
+     "id": "leaflet",
+     "x": 0.53301,
+     "y": 0.40267
+    },
+    {
+     "id": "special",
+     "x": 0.64231,
+     "y": 0.62169
+    }
+   ],
+   "camera": "14c59ed4f036530d",
+   "contentBox": {
+    "x": 0.2329,
+    "y": 0.0,
+    "width": 0.5342,
+    "height": 0.9283
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_open.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      20,
+      1,
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1,
+      19,
+      20,
+      21,
+      33,
+      34
+     ]
+    },
+    "frame": {
+     "parts": [
+      19,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_open.ghost-19.webp",
+      "x": 0.33416666666666667,
+      "y": 0.25,
+      "width": 0.33166666666666667,
+      "height": 0.5
+     }
+    },
+    "leaflet": {
+     "parts": [
+      21,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_open.ghost-21.webp",
+      "x": 0.34833333333333333,
+      "y": 0.36444444444444446,
+      "width": 0.30333333333333334,
+      "height": 0.2311111111111111
+     }
+    },
+    "special": {
+     "parts": [
+      33,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_open.ghost-33.webp",
+      "x": 0.3025,
+      "y": 0.4222222222222222,
+      "width": 0.395,
+      "height": 0.25
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.5102,
+    "y": 0.3766,
+    "r": 0.0804
+   }
+  },
+  "sewn-valve/section/valve_closed": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_closed.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_closed.thumb.webp",
+   "alt": "Sewn valve: See the tissue\u2013device relationship. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.33333,
+     "y": 0.5
+    },
+    {
+     "id": "tissue",
+     "x": 0.67821,
+     "y": 0.31088
+    },
+    {
+     "id": "frame",
+     "x": 0.52212,
+     "y": 0.4831
+    },
+    {
+     "id": "leaflet",
+     "x": 0.5,
+     "y": 0.43592
+    },
+    {
+     "id": "special",
+     "x": 0.64231,
+     "y": 0.62169
+    }
+   ],
+   "camera": "14c59ed4f036530d",
+   "contentBox": {
+    "x": 0.2329,
+    "y": 0.0,
+    "width": 0.5342,
+    "height": 0.9283
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_closed.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      20,
+      1,
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1,
+      19,
+      20,
+      23,
+      24,
+      33,
+      34
+     ]
+    },
+    "frame": {
+     "parts": [
+      19,
+      1,
+      18
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      23,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_closed.ghost-23.webp",
+      "x": 0.34833333333333333,
+      "y": 0.3711111111111111,
+      "width": 0.30333333333333334,
+      "height": 0.22444444444444445
+     }
+    },
+    "special": {
+     "parts": [
+      33,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__section__valve_closed.ghost-33.webp",
+      "x": 0.3025,
+      "y": 0.4222222222222222,
+      "width": 0.395,
+      "height": 0.25
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.507,
+    "y": 0.3714,
+    "r": 0.0808
+   }
+  },
+  "sewn-valve/oblique/anatomy": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__anatomy.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__anatomy.thumb.webp",
+   "alt": "Sewn valve: Understand depth and attachment. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.59083,
+     "y": 0.42198
+    },
+    {
+     "id": "tissue",
+     "x": 0.64941,
+     "y": 0.36795
+    }
+   ],
+   "camera": "924a0c5ba36bcecb",
+   "contentBox": {
+    "x": 0.2754,
+    "y": 0.0,
+    "width": 0.4917,
+    "height": 1.0
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.507,
+    "y": 0.3714,
+    "r": 0.0808
+   }
+  },
+  "sewn-valve/oblique/valve_open": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_open.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_open.thumb.webp",
+   "alt": "Sewn valve: Understand depth and attachment. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.63974,
+     "y": 0.55072
+    },
+    {
+     "id": "tissue",
+     "x": 0.64941,
+     "y": 0.36795
+    },
+    {
+     "id": "frame",
+     "x": 0.43209,
+     "y": 0.48368
+    },
+    {
+     "id": "leaflet",
+     "x": 0.49082,
+     "y": 0.40964
+    },
+    {
+     "id": "special",
+     "x": 0.5491,
+     "y": 0.65795
+    }
+   ],
+   "camera": "924a0c5ba36bcecb",
+   "contentBox": {
+    "x": 0.2754,
+    "y": 0.0,
+    "width": 0.4917,
+    "height": 1.0
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_open.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      20,
+      1,
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1,
+      19,
+      20,
+      21,
+      33,
+      34
+     ]
+    },
+    "frame": {
+     "parts": [
+      19,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_open.ghost-19.webp",
+      "x": 0.335,
+      "y": 0.24444444444444444,
+      "width": 0.33,
+      "height": 0.5111111111111111
+     }
+    },
+    "leaflet": {
+     "parts": [
+      21,
+      1,
+      18
+     ]
+    },
+    "special": {
+     "parts": [
+      33,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_open.ghost-33.webp",
+      "x": 0.3025,
+      "y": 0.41444444444444445,
+      "width": 0.395,
+      "height": 0.2644444444444444
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.5102,
+    "y": 0.3766,
+    "r": 0.0804
+   }
+  },
+  "sewn-valve/oblique/valve_closed": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_closed.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_closed.thumb.webp",
+   "alt": "Sewn valve: Understand depth and attachment. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.63974,
+     "y": 0.55072
+    },
+    {
+     "id": "tissue",
+     "x": 0.64941,
+     "y": 0.36795
+    },
+    {
+     "id": "frame",
+     "x": 0.43209,
+     "y": 0.48368
+    },
+    {
+     "id": "leaflet",
+     "x": 0.4983,
+     "y": 0.43313
+    },
+    {
+     "id": "special",
+     "x": 0.5491,
+     "y": 0.65795
+    }
+   ],
+   "camera": "924a0c5ba36bcecb",
+   "contentBox": {
+    "x": 0.2754,
+    "y": 0.0,
+    "width": 0.4917,
+    "height": 1.0
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_closed.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      20,
+      1,
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1,
+      19,
+      20,
+      23,
+      24,
+      33,
+      34
+     ]
+    },
+    "frame": {
+     "parts": [
+      19,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_closed.ghost-19.webp",
+      "x": 0.335,
+      "y": 0.24444444444444444,
+      "width": 0.33,
+      "height": 0.5111111111111111
+     }
+    },
+    "leaflet": {
+     "parts": [
+      23,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_closed.ghost-23.webp",
+      "x": 0.34833333333333333,
+      "y": 0.3788888888888889,
+      "width": 0.30333333333333334,
+      "height": 0.2222222222222222
+     }
+    },
+    "special": {
+     "parts": [
+      33,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__oblique__valve_closed.ghost-33.webp",
+      "x": 0.3025,
+      "y": 0.41444444444444445,
+      "width": 0.395,
+      "height": 0.2644444444444444
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.507,
+    "y": 0.3714,
+    "r": 0.0808
+   }
+  },
+  "sewn-valve/face/anatomy": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__anatomy.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__anatomy.thumb.webp",
+   "alt": "Sewn valve: Look along the opening. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.5,
+     "y": 0.71565
+    },
+    {
+     "id": "tissue",
+     "x": 0.33799,
+     "y": 0.55498
+    }
+   ],
+   "camera": "5646d25d267f9fae",
+   "contentBox": {
+    "x": 0.1996,
+    "y": 0.2733,
+    "width": 0.5767,
+    "height": 0.6544
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__anatomy.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.507,
+    "y": 0.3714,
+    "r": 0.0808
+   }
+  },
+  "sewn-valve/face/valve_open": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_open.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_open.thumb.webp",
+   "alt": "Sewn valve: Look along the opening. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.33416,
+     "y": 0.50534
+    },
+    {
+     "id": "tissue",
+     "x": 0.33799,
+     "y": 0.55498
+    },
+    {
+     "id": "frame",
+     "x": 0.57409,
+     "y": 0.63714
+    },
+    {
+     "id": "leaflet",
+     "x": 0.38557,
+     "y": 0.51942
+    },
+    {
+     "id": "special",
+     "x": 0.35393,
+     "y": 0.32347
+    }
+   ],
+   "camera": "5646d25d267f9fae",
+   "contentBox": {
+    "x": 0.1996,
+    "y": 0.2267,
+    "width": 0.5767,
+    "height": 0.7011
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_open.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      20,
+      1,
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1,
+      19,
+      20,
+      21,
+      33,
+      34
+     ]
+    },
+    "frame": {
+     "parts": [
+      19,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_open.ghost-19.webp",
+      "x": 0.32166666666666666,
+      "y": 0.24888888888888888,
+      "width": 0.3566666666666667,
+      "height": 0.5022222222222222
+     }
+    },
+    "leaflet": {
+     "parts": [
+      21,
+      1,
+      18
+     ]
+    },
+    "special": {
+     "parts": [
+      33,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_open.ghost-33.webp",
+      "x": 0.2991666666666667,
+      "y": 0.2311111111111111,
+      "width": 0.39416666666666667,
+      "height": 0.5122222222222222
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.5102,
+    "y": 0.3766,
+    "r": 0.0804
+   }
+  },
+  "sewn-valve/face/valve_closed": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_closed.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_closed.thumb.webp",
+   "alt": "Sewn valve: Look along the opening. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.33416,
+     "y": 0.50534
+    },
+    {
+     "id": "tissue",
+     "x": 0.33799,
+     "y": 0.55498
+    },
+    {
+     "id": "frame",
+     "x": 0.63478,
+     "y": 0.58584
+    },
+    {
+     "id": "leaflet",
+     "x": 0.51038,
+     "y": 0.52288
+    },
+    {
+     "id": "special",
+     "x": 0.35393,
+     "y": 0.32347
+    }
+   ],
+   "camera": "5646d25d267f9fae",
+   "contentBox": {
+    "x": 0.1996,
+    "y": 0.2267,
+    "width": 0.5767,
+    "height": 0.7011
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_closed.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      20,
+      1,
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1,
+      19,
+      20,
+      23,
+      24,
+      33,
+      34
+     ]
+    },
+    "frame": {
+     "parts": [
+      19,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_closed.ghost-19.webp",
+      "x": 0.32166666666666666,
+      "y": 0.24888888888888888,
+      "width": 0.3566666666666667,
+      "height": 0.5022222222222222
+     }
+    },
+    "leaflet": {
+     "parts": [
+      23,
+      1,
+      18
+     ]
+    },
+    "special": {
+     "parts": [
+      33,
+      1,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__face__valve_closed.ghost-33.webp",
+      "x": 0.2991666666666667,
+      "y": 0.2311111111111111,
+      "width": 0.39416666666666667,
+      "height": 0.5122222222222222
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-valve__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.507,
+    "y": 0.3714,
+    "r": 0.0808
+   }
+  },
+  "sewn-conduit/heart/valve_closed": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__heart__valve_closed.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__heart__valve_closed.thumb.webp",
+   "alt": "Valved conduit: Locate the treatment region. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.52004,
+     "y": 0.46586
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__heart__valve_closed.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__heart__valve_closed.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      57
+     ]
+    }
+   },
+   "keys": []
+  },
+  "sewn-conduit/region/anatomy": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__anatomy.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__anatomy.thumb.webp",
+   "alt": "Valved conduit: See the valve in its regional setting. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_rv",
+     "x": 0.62744,
+     "y": 0.68479
+    },
+    {
+     "id": "region_rvot",
+     "x": 0.59745,
+     "y": 0.46011
+    },
+    {
+     "id": "region_pulmonary",
+     "x": 0.21991,
+     "y": 0.38744
+    },
+    {
+     "id": "region_valve",
+     "x": 0.51756,
+     "y": 0.41437
+    },
+    {
+     "id": "region_conduit",
+     "x": 0.41531,
+     "y": 0.3043
+    }
+   ],
+   "camera": "8da2d3e03546280f",
+   "contentBox": {
+    "x": 0.1204,
+    "y": 0.0344,
+    "width": 0.7592,
+    "height": 0.9311
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__anatomy.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__anatomy.parts.png",
+   "focus": {
+    "region_rv": {
+     "parts": [
+      10
+     ]
+    },
+    "region_rvot": {
+     "parts": [
+      10
+     ]
+    },
+    "region_pulmonary": {
+     "parts": [
+      13
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      16
+     ]
+    },
+    "region_conduit": {
+     "parts": [
+      16
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "sewn-conduit/region/valve_open": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_open.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_open.thumb.webp",
+   "alt": "Valved conduit: See the valve in its regional setting. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_rv",
+     "x": 0.62744,
+     "y": 0.68479
+    },
+    {
+     "id": "region_rvot",
+     "x": 0.59745,
+     "y": 0.46011
+    },
+    {
+     "id": "region_pulmonary",
+     "x": 0.21991,
+     "y": 0.38744
+    },
+    {
+     "id": "region_valve",
+     "x": 0.47595,
+     "y": 0.35322
+    },
+    {
+     "id": "region_conduit",
+     "x": 0.38695,
+     "y": 0.29676
+    }
+   ],
+   "camera": "8da2d3e03546280f",
+   "contentBox": {
+    "x": 0.1204,
+    "y": 0.0344,
+    "width": 0.7592,
+    "height": 0.9311
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_open.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_open.parts.png",
+   "focus": {
+    "region_rv": {
+     "parts": [
+      10
+     ]
+    },
+    "region_rvot": {
+     "parts": [
+      10
+     ]
+    },
+    "region_pulmonary": {
+     "parts": [
+      13
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      41,
+      16,
+      17
+     ]
+    },
+    "region_conduit": {
+     "parts": [
+      16,
+      41,
+      42,
+      47,
+      48
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "sewn-conduit/region/valve_closed": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_closed.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_closed.thumb.webp",
+   "alt": "Valved conduit: See the valve in its regional setting. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_rv",
+     "x": 0.62744,
+     "y": 0.68479
+    },
+    {
+     "id": "region_rvot",
+     "x": 0.59745,
+     "y": 0.46011
+    },
+    {
+     "id": "region_pulmonary",
+     "x": 0.21991,
+     "y": 0.38744
+    },
+    {
+     "id": "region_valve",
+     "x": 0.47595,
+     "y": 0.35322
+    },
+    {
+     "id": "region_conduit",
+     "x": 0.38695,
+     "y": 0.29676
+    }
+   ],
+   "camera": "8da2d3e03546280f",
+   "contentBox": {
+    "x": 0.1204,
+    "y": 0.0344,
+    "width": 0.7592,
+    "height": 0.9311
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_closed.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_closed.parts.png",
+   "focus": {
+    "region_rv": {
+     "parts": [
+      10
+     ]
+    },
+    "region_rvot": {
+     "parts": [
+      10
+     ]
+    },
+    "region_pulmonary": {
+     "parts": [
+      13
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      41,
+      16,
+      17
+     ]
+    },
+    "region_conduit": {
+     "parts": [
+      16,
+      41,
+      42,
+      47,
+      48
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "sewn-conduit/section/anatomy": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__anatomy.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__anatomy.thumb.webp",
+   "alt": "Valved conduit: See the tissue\u2013device relationship. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.5,
+     "y": 0.41395
+    },
+    {
+     "id": "tissue",
+     "x": 0.67821,
+     "y": 0.31088
+    }
+   ],
+   "camera": "14c59ed4f036530d",
+   "contentBox": {
+    "x": 0.2933,
+    "y": 0.0,
+    "width": 0.4133,
+    "height": 0.9122
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__anatomy.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      2
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4869,
+    "y": 0.3501,
+    "r": 0.0767
+   }
+  },
+  "sewn-conduit/section/valve_open": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_open.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_open.thumb.webp",
+   "alt": "Valved conduit: See the tissue\u2013device relationship. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.33333,
+     "y": 0.5
+    },
+    {
+     "id": "tissue",
+     "x": 0.67821,
+     "y": 0.31088
+    },
+    {
+     "id": "frame",
+     "x": 0.52212,
+     "y": 0.4831
+    },
+    {
+     "id": "leaflet",
+     "x": 0.53301,
+     "y": 0.40267
+    },
+    {
+     "id": "special",
+     "x": 0.64231,
+     "y": 0.62169
+    }
+   ],
+   "camera": "14c59ed4f036530d",
+   "contentBox": {
+    "x": 0.2933,
+    "y": 0.0,
+    "width": 0.4133,
+    "height": 0.9122
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_open.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      36,
+      2,
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      2,
+      35,
+      36,
+      49,
+      50
+     ]
+    },
+    "frame": {
+     "parts": [
+      35,
+      2,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_open.ghost-35.webp",
+      "x": 0.33416666666666667,
+      "y": 0.25,
+      "width": 0.33166666666666667,
+      "height": 0.5
+     }
+    },
+    "leaflet": {
+     "parts": [
+      37,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_open.ghost-37.webp",
+      "x": 0.34833333333333333,
+      "y": 0.36444444444444446,
+      "width": 0.30333333333333334,
+      "height": 0.2311111111111111
+     }
+    },
+    "special": {
+     "parts": [
+      49,
+      2,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_open.ghost-49.webp",
+      "x": 0.3025,
+      "y": 0.4222222222222222,
+      "width": 0.395,
+      "height": 0.25
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.4898,
+    "y": 0.3553,
+    "r": 0.0763
+   }
+  },
+  "sewn-conduit/section/valve_closed": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_closed.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_closed.thumb.webp",
+   "alt": "Valved conduit: See the tissue\u2013device relationship. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.33333,
+     "y": 0.5
+    },
+    {
+     "id": "tissue",
+     "x": 0.67821,
+     "y": 0.31088
+    },
+    {
+     "id": "frame",
+     "x": 0.52212,
+     "y": 0.4831
+    },
+    {
+     "id": "leaflet",
+     "x": 0.5,
+     "y": 0.43592
+    },
+    {
+     "id": "special",
+     "x": 0.64231,
+     "y": 0.62169
+    }
+   ],
+   "camera": "14c59ed4f036530d",
+   "contentBox": {
+    "x": 0.2933,
+    "y": 0.0,
+    "width": 0.4133,
+    "height": 0.9122
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_closed.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      36,
+      2,
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      2,
+      35,
+      36,
+      49,
+      50
+     ]
+    },
+    "frame": {
+     "parts": [
+      35,
+      2,
+      18
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      39,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_closed.ghost-39.webp",
+      "x": 0.34833333333333333,
+      "y": 0.3711111111111111,
+      "width": 0.30333333333333334,
+      "height": 0.22444444444444445
+     }
+    },
+    "special": {
+     "parts": [
+      49,
+      2,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__section__valve_closed.ghost-49.webp",
+      "x": 0.3025,
+      "y": 0.4222222222222222,
+      "width": 0.395,
+      "height": 0.25
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.4869,
+    "y": 0.3501,
+    "r": 0.0767
+   }
+  },
+  "sewn-conduit/oblique/anatomy": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__anatomy.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__anatomy.thumb.webp",
+   "alt": "Valved conduit: Understand depth and attachment. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.59083,
+     "y": 0.42198
+    },
+    {
+     "id": "tissue",
+     "x": 0.64941,
+     "y": 0.36795
+    }
+   ],
+   "camera": "924a0c5ba36bcecb",
+   "contentBox": {
+    "x": 0.325,
+    "y": 0.0,
+    "width": 0.3817,
+    "height": 0.9683
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      2
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4869,
+    "y": 0.3501,
+    "r": 0.0767
+   }
+  },
+  "sewn-conduit/oblique/valve_open": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_open.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_open.thumb.webp",
+   "alt": "Valved conduit: Understand depth and attachment. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.63974,
+     "y": 0.55072
+    },
+    {
+     "id": "tissue",
+     "x": 0.64941,
+     "y": 0.36795
+    },
+    {
+     "id": "frame",
+     "x": 0.43209,
+     "y": 0.48368
+    },
+    {
+     "id": "leaflet",
+     "x": 0.49082,
+     "y": 0.40964
+    },
+    {
+     "id": "special",
+     "x": 0.5491,
+     "y": 0.65795
+    }
+   ],
+   "camera": "924a0c5ba36bcecb",
+   "contentBox": {
+    "x": 0.2958,
+    "y": 0.0,
+    "width": 0.4108,
+    "height": 0.9683
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_open.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      36,
+      2,
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      2,
+      35,
+      36,
+      49,
+      50
+     ]
+    },
+    "frame": {
+     "parts": [
+      35,
+      2,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_open.ghost-35.webp",
+      "x": 0.335,
+      "y": 0.24444444444444444,
+      "width": 0.33,
+      "height": 0.5111111111111111
+     }
+    },
+    "leaflet": {
+     "parts": [
+      37,
+      18
+     ]
+    },
+    "special": {
+     "parts": [
+      49,
+      2,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_open.ghost-49.webp",
+      "x": 0.3025,
+      "y": 0.41444444444444445,
+      "width": 0.395,
+      "height": 0.2644444444444444
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.4898,
+    "y": 0.3553,
+    "r": 0.0763
+   }
+  },
+  "sewn-conduit/oblique/valve_closed": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_closed.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_closed.thumb.webp",
+   "alt": "Valved conduit: Understand depth and attachment. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.63974,
+     "y": 0.55072
+    },
+    {
+     "id": "tissue",
+     "x": 0.64941,
+     "y": 0.36795
+    },
+    {
+     "id": "frame",
+     "x": 0.43209,
+     "y": 0.48368
+    },
+    {
+     "id": "leaflet",
+     "x": 0.4983,
+     "y": 0.43313
+    },
+    {
+     "id": "special",
+     "x": 0.5491,
+     "y": 0.65795
+    }
+   ],
+   "camera": "924a0c5ba36bcecb",
+   "contentBox": {
+    "x": 0.2958,
+    "y": 0.0,
+    "width": 0.4108,
+    "height": 0.9683
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_closed.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      36,
+      2,
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      2,
+      35,
+      36,
+      49,
+      50
+     ]
+    },
+    "frame": {
+     "parts": [
+      35,
+      2,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_closed.ghost-35.webp",
+      "x": 0.335,
+      "y": 0.24444444444444444,
+      "width": 0.33,
+      "height": 0.5111111111111111
+     }
+    },
+    "leaflet": {
+     "parts": [
+      39,
+      18
+     ]
+    },
+    "special": {
+     "parts": [
+      49,
+      2,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__oblique__valve_closed.ghost-49.webp",
+      "x": 0.3025,
+      "y": 0.41444444444444445,
+      "width": 0.395,
+      "height": 0.2644444444444444
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.4869,
+    "y": 0.3501,
+    "r": 0.0767
+   }
+  },
+  "sewn-conduit/face/anatomy": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__anatomy.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__anatomy.thumb.webp",
+   "alt": "Valved conduit: Look along the opening. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.5,
+     "y": 0.71565
+    },
+    {
+     "id": "tissue",
+     "x": 0.33799,
+     "y": 0.55498
+    }
+   ],
+   "camera": "5646d25d267f9fae",
+   "contentBox": {
+    "x": 0.2608,
+    "y": 0.2733,
+    "width": 0.4783,
+    "height": 0.6017
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__anatomy.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      2
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4869,
+    "y": 0.3501,
+    "r": 0.0767
+   }
+  },
+  "sewn-conduit/face/valve_open": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_open.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_open.thumb.webp",
+   "alt": "Valved conduit: Look along the opening. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.33416,
+     "y": 0.50534
+    },
+    {
+     "id": "tissue",
+     "x": 0.33799,
+     "y": 0.55498
+    },
+    {
+     "id": "frame",
+     "x": 0.57409,
+     "y": 0.63714
+    },
+    {
+     "id": "leaflet",
+     "x": 0.38557,
+     "y": 0.51942
+    },
+    {
+     "id": "special",
+     "x": 0.35393,
+     "y": 0.32347
+    }
+   ],
+   "camera": "5646d25d267f9fae",
+   "contentBox": {
+    "x": 0.2608,
+    "y": 0.2267,
+    "width": 0.4783,
+    "height": 0.6483
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_open.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      36,
+      2,
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      2,
+      35,
+      36,
+      49,
+      50
+     ]
+    },
+    "frame": {
+     "parts": [
+      35,
+      2,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_open.ghost-35.webp",
+      "x": 0.32166666666666666,
+      "y": 0.24888888888888888,
+      "width": 0.3566666666666667,
+      "height": 0.5022222222222222
+     }
+    },
+    "leaflet": {
+     "parts": [
+      37,
+      18
+     ]
+    },
+    "special": {
+     "parts": [
+      49,
+      2,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_open.ghost-49.webp",
+      "x": 0.2991666666666667,
+      "y": 0.2311111111111111,
+      "width": 0.39416666666666667,
+      "height": 0.5122222222222222
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.4898,
+    "y": 0.3553,
+    "r": 0.0763
+   }
+  },
+  "sewn-conduit/face/valve_closed": {
+   "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_closed.webp",
+   "thumb": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_closed.thumb.webp",
+   "alt": "Valved conduit: Look along the opening. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.33416,
+     "y": 0.50534
+    },
+    {
+     "id": "tissue",
+     "x": 0.33799,
+     "y": 0.55498
+    },
+    {
+     "id": "frame",
+     "x": 0.63478,
+     "y": 0.58584
+    },
+    {
+     "id": "leaflet",
+     "x": 0.51038,
+     "y": 0.52288
+    },
+    {
+     "id": "special",
+     "x": 0.35393,
+     "y": 0.32347
+    }
+   ],
+   "camera": "5646d25d267f9fae",
+   "contentBox": {
+    "x": 0.2608,
+    "y": 0.2267,
+    "width": 0.4783,
+    "height": 0.6483
+   },
+   "mid": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_closed.mid.webp",
+   "partMap": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      36,
+      2,
+      18
+     ]
+    },
+    "tissue": {
+     "parts": [
+      2,
+      35,
+      36,
+      49,
+      50
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_closed.ghost-2.webp",
+      "x": 0.2608333333333333,
+      "y": 0.3844444444444444,
+      "width": 0.47833333333333333,
+      "height": 0.49
+     }
+    },
+    "frame": {
+     "parts": [
+      35,
+      2,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_closed.ghost-35.webp",
+      "x": 0.32166666666666666,
+      "y": 0.24888888888888888,
+      "width": 0.3566666666666667,
+      "height": 0.5022222222222222
+     }
+    },
+    "leaflet": {
+     "parts": [
+      39,
+      18
+     ]
+    },
+    "special": {
+     "parts": [
+      49,
+      2,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__face__valve_closed.ghost-49.webp",
+      "x": 0.2991666666666667,
+      "y": 0.2311111111111111,
+      "width": 0.39416666666666667,
+      "height": 0.5122222222222222
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/surgical-pulmonary-valves/images/sewn-conduit__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.4869,
+    "y": 0.3501,
+    "r": 0.0767
+   }
+  }
+ },
+ "presentation": {
+  "annotationMode": "external",
+  "layout": "plate",
+  "labels": {
+   "location": "Treatment location",
+   "region_rv": "Right ventricle",
+   "region_rvot": "RV outflow tract",
+   "region_pulmonary": "Pulmonary trunk",
+   "region_valve": "Valve level",
+   "region_conduit": "Representative conduit",
+   "junction": "Approximate junction",
+   "tissue": "Representative tissue",
+   "frame": "Support frame",
+   "leaflet": "Prosthetic leaflets",
+   "special": "Sewing cuff"
+  },
+  "stateLabels": {
+   "anatomy": "Anatomy only",
+   "valve_open": "Valve open",
+   "valve_closed": "Valve closed"
+  },
+  "stateGroups": [
+   {
+    "label": "Anatomy",
+    "states": [
+     "anatomy"
+    ]
+   },
+   {
+    "label": "With valve",
+    "states": [
+     "valve_open",
+     "valve_closed"
+    ]
+   }
+  ],
+  "keyColors": {
+   "cut": "#4d5941"
+  }
+ }
+}

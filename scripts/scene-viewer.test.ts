@@ -35,6 +35,22 @@ for (const id of classes) {
         assert.ok(manifest.annotations[pin.id], pin.id)
         assert.ok(pin.x >= 0 && pin.x <= 1 && pin.y >= 0 && pin.y <= 1, `${pin.id} out of frame`)
       }
+      // Plate extras: phone still, part map, hidden-part outlines and regional locator.
+      const local = (path: string, ext: RegExp) => {
+        assert.match(path, new RegExp(`^/scenes/${id}/images/[\\w.-]+${ext.source}$`))
+        assert.ok(existsSync(new URL(`.${path.slice('/scenes'.length)}`, root)), path)
+      }
+      if (image.mid) local(image.mid, /\.webp/)
+      if (image.partMap) local(image.partMap, /\.parts\.png/)
+      for (const [label, entry] of Object.entries<any>(image.focus ?? {})) {
+        assert.ok(manifest.annotations[label], label)
+        assert.ok(entry.parts.length && entry.parts.every((n: number) => Number.isInteger(n) && n >= 1), `${label} parts`)
+        if (entry.ghost) local(entry.ghost.src, /\.webp/)
+      }
+      if (image.locator) {
+        local(image.locator.src, /\.webp/)
+        assert.ok(manifest.views.some((v: { id: string }) => v.id === image.locator.view), image.locator.view)
+      }
     }
   })
   test(`${id}: reader text is schematic, attributed and free of process wording`, () => {
@@ -47,10 +63,10 @@ for (const id of classes) {
   })
 }
 
-test('only stills and manifests are published (no meshes or build files)', () => {
+test('only stills, part maps and manifests are published (no meshes or build files)', () => {
   for (const id of classes) {
     for (const name of readdirSync(new URL(`${id}/`, root))) assert.ok(name === 'manifest.json' || name === 'images', `${id}/${name}`)
-    for (const name of readdirSync(new URL(`${id}/images/`, root))) assert.match(name, /\.webp$/, `${id}/images/${name}`)
+    for (const name of readdirSync(new URL(`${id}/images/`, root))) assert.match(name, /\.webp$|\.parts\.png$/, `${id}/images/${name}`)
   }
 })
 

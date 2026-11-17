@@ -1,1 +1,2806 @@
-{"classId":"embolic-protection-devices","conditionId":"cond-as","title":"Embolic protection adjuncts","linkLabel":"Visualize device class","status":"Schematic","scope":"Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.","stageLabel":"Schematic · representative anatomy · not to scale","attribution":"Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.","sources":[{"title":"Toronto Heart Atlas","url":"https://github.com/tgh-apil/TorontoHeartAtlas","locator":"RegularHeart chamber and vessel meshes, CC BY 4.0."},{"title":"Creative Commons Attribution 4.0","url":"https://creativecommons.org/licenses/by/4.0/"},{"title":"NHLBI: How blood flows through the heart","url":"https://www.nhlbi.nih.gov/health/heart/blood-flow","locator":"Written heart-valve and circulation sections; no media reused."},{"title":"Technical labeling: branch-filter placement example","url":"https://www.bostonscientific.com/content/dam/elabeling/ic/51109552-01A_Sentinel_eIFU_s.pdf","locator":"2020-06 labeling, device description and deployment, pages 1–2. Branch placement example; no source geometry reused."},{"title":"Original study: arch-deflector placement example","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC8999484/","locator":"Section 2.3, operative technique. Arch position example; no outcome claim or source geometry reused."},{"title":"Published clinical description: full-arch filter placement example","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC8288788/","locator":"Discussion, device description paragraph. Position from the ascending to the proximal descending aorta; no outcome claim or source geometry reused."},{"title":"Review article: full-arch filter access port","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12194329/","locator":"Section 6.3. States that the filter has a port for the valve delivery system; the port position shown is representative."}],"legend":[{"label":"Representative tissue","color":"#ad77ca"},{"label":"Generic device","color":"#ffd358"},{"label":"Leaflets / fabric","color":"#f6dfc8"},{"label":"Suture / emphasis","color":"#35a8a0"}],"designs":[{"id":"generic","label":"Branch filters","summary":"Two generic filter baskets sit inside the brachiocephalic and left common carotid branches and capture debris there. This example does not place a filter in the left subclavian artery."},{"id":"arch-deflector","label":"Arch deflector","summary":"A generic curved porous screen lies in the aortic arch across the branch origins and deflects debris away from them. It illustrates a different protection arrangement from branch filters."},{"id":"arch-filter","label":"Tubular arch filter","summary":"A generic mesh tube lines the aorta from the ascending aorta through the arch to the start of the descending aorta. It covers all three branch origins and captures debris inside it. A small port in its wall admits the valve delivery catheter."}],"states":[{"id":"anatomy","label":"Arch and branches","note":"Representative pose; dimensions and deformation are not measured on a specific patient or population."},{"id":"compact","label":"Protection compact","note":"Representative pose; dimensions and deformation are not measured on a specific patient or population."},{"id":"deployed","label":"Protection expanded","note":"Representative pose; dimensions and deformation are not measured on a specific patient or population."}],"views":[{"id":"heart","label":"Whole heart","title":"Locate the treatment region","lesson":"Use the highlighted region to orient the enlarged views.","states":["deployed"],"orientation":{"superior":{"x":0.0,"y":-0.9595},"patientRight":{"x":-0.8384,"y":-0.1535}}},{"id":"region","label":"Arch and branches","title":"Locate protection relative to the aorta and its branches","lesson":"Three generic arrangements are shown as examples. Branch filters sit inside two of the neck branches and capture debris. A deflector lies along the arch across the branch origins and deflects debris. A tubular filter lines the aorta from the ascending aorta to the descending aorta and captures debris, with a port for the valve catheter. The aorta comes from a real heart model with walls added. The arch branches are representative and are not measured on a specific patient or population.","states":["anatomy","compact","deployed"],"orientation":{"superior":{"x":-0.0,"y":-0.9688},"patientRight":{"x":-0.7198,"y":-0.1719}}},{"id":"section","label":"Mechanism section","title":"Compare the three protection locations","lesson":"Use the design selector to compare branch baskets, an arch screen and a tubular arch filter. The main aortic lumen stays open in all three diagrams.","states":["anatomy","compact","deployed"],"orientation":{"superior":{"x":0.0,"y":-0.9806},"patientRight":{"x":-1.0,"y":-0.0}}},{"id":"oblique","label":"Oblique detail","title":"Understand depth and attachment","lesson":"An oblique view separates the near surface, device and supporting tissue.","states":["anatomy","compact","deployed"],"orientation":{"superior":{"x":0.0,"y":-0.9698},"patientRight":{"x":-0.8384,"y":-0.1329}}},{"id":"face","label":"Protection detail","title":"Inspect the filtering or deflecting structure","lesson":"All three generic examples use the same camera to keep their position relative to branch origins clear.","states":["anatomy","compact","deployed"],"orientation":{"superior":{"x":0.0,"y":-0.9918},"patientRight":{"x":-0.8575,"y":0.0656}}}],"annotations":{"location":{"label":"TREATMENT LOCATION","body":"The highlighted region locates this class in the heart. The marker is enlarged for orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"arch":{"label":"REPRESENTATIVE AORTIC ARCH","body":"The curved vessel and branch openings are representative. The source context has no measured arch-branch anatomy.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"ascending":{"label":"ASCENDING AORTA","body":"The ascending segment leads toward the arch from the heart.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"descending":{"label":"DESCENDING AORTA","body":"The arch continues into the descending aorta.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"brachiocephalic":{"label":"BRACHIOCEPHALIC ARTERY","body":"The first illustrated arch branch; one filter is shown inside this vessel in the branch-filter example.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"carotid":{"label":"LEFT COMMON CAROTID","body":"The second illustrated arch branch; the branch-filter example places its other basket here.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"subclavian":{"label":"LEFT SUBCLAVIAN","body":"The third illustrated branch has no basket in this branch-filter example. The arch deflector and the tubular filter both extend across its origin.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"branch_filter":{"label":"BRANCH FILTER BASKETS","body":"Two baskets are inside the selected branches, above their aortic origins. Pores and capture performance are not modeled.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"branch_rim":{"label":"BRANCH FILTER RIMS","body":"These generic expanded rims remain inside the branch lumens.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"arch_screen":{"label":"ARCH DEFLECTOR SCREEN","body":"A curved screen lies within the aortic arch across the origins of the three branches. It is not a valve/root implant.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"arch_rim":{"label":"ARCH SCREEN FRAME","body":"The frame supports the schematic screen while the main aortic passage remains open. Coverage and stroke prevention are not evaluated.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_branch_filter":{"label":"BRANCH FILTER BASKETS","body":"Two baskets sit inside the brachiocephalic and left common carotid arteries, just above their origins, with their open ends toward the arch. They capture debris. A shared thin catheter links them; its course is representative.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_arch_screen":{"label":"ARCH DEFLECTOR SCREEN","body":"A curved porous screen lies against the roof of the arch across all three branch origins and deflects debris away from them. It has its own thin catheter from the descending aorta.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_tube_filter":{"label":"TUBULAR ARCH FILTER","body":"A mesh tube lines the aorta from the ascending aorta through the arch to the start of the descending aorta. It covers all three branch origins and captures debris inside it. Pores and capture performance are not modeled.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_tube_port":{"label":"ACCESS PORT","body":"A small opening in the filter wall lets the valve delivery catheter enter the filter. The port's exact position is representative.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_tube_catheter":{"label":"FILTER CATHETER","body":"The filter has its own thin catheter, which reaches it from the descending aorta. Its course is representative.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"tube_filter":{"label":"TUBULAR ARCH FILTER","body":"A mesh tube lines the arch and covers the branch origins. It is open toward the heart and narrows onto its catheter downstream, so debris is captured inside.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"tube_port":{"label":"ACCESS PORT","body":"The valve delivery catheter enters the filter through a small port in its wall. The port's exact position is representative.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"tube_catheter":{"label":"FILTER CATHETER","body":"The filter's own thin catheter leaves it at the descending end. Its course is representative.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"}},"images":{"generic/heart/deployed":{"src":"/scenes/embolic-protection-devices/images/generic__heart__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/generic__heart__deployed.thumb.webp","alt":"Branch filters: Locate the treatment region. Protection expanded. Schematic, representative illustration.","pins":[{"id":"location","x":0.7528,"y":0.10739}]},"generic/region/anatomy":{"src":"/scenes/embolic-protection-devices/images/generic__region__anatomy.webp","thumb":"/scenes/embolic-protection-devices/images/generic__region__anatomy.thumb.webp","alt":"Branch filters: Locate protection relative to the aorta and its branches. Arch and branches. Schematic, representative illustration.","pins":[{"id":"ascending","x":0.26685,"y":0.71217},{"id":"brachiocephalic","x":0.28494,"y":0.20868},{"id":"carotid","x":0.43362,"y":0.17484},{"id":"subclavian","x":0.59052,"y":0.18753},{"id":"descending","x":0.96275,"y":0.8391}]},"generic/region/compact":{"src":"/scenes/embolic-protection-devices/images/generic__region__compact.webp","thumb":"/scenes/embolic-protection-devices/images/generic__region__compact.thumb.webp","alt":"Branch filters: Locate protection relative to the aorta and its branches. Protection compact. Schematic, representative illustration.","pins":[{"id":"ascending","x":0.26685,"y":0.71217},{"id":"brachiocephalic","x":0.28494,"y":0.20868},{"id":"carotid","x":0.43362,"y":0.17484},{"id":"subclavian","x":0.59052,"y":0.18753},{"id":"descending","x":0.96275,"y":0.8391},{"id":"region_branch_filter","x":0.27749,"y":0.38447}]},"generic/region/deployed":{"src":"/scenes/embolic-protection-devices/images/generic__region__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/generic__region__deployed.thumb.webp","alt":"Branch filters: Locate protection relative to the aorta and its branches. Protection expanded. Schematic, representative illustration.","pins":[{"id":"ascending","x":0.26685,"y":0.71217},{"id":"brachiocephalic","x":0.28494,"y":0.20868},{"id":"carotid","x":0.43362,"y":0.17484},{"id":"subclavian","x":0.59052,"y":0.18753},{"id":"descending","x":0.96275,"y":0.8391},{"id":"region_branch_filter","x":0.27788,"y":0.38797}]},"generic/section/anatomy":{"src":"/scenes/embolic-protection-devices/images/generic__section__anatomy.webp","thumb":"/scenes/embolic-protection-devices/images/generic__section__anatomy.thumb.webp","alt":"Branch filters: Compare the three protection locations. Arch and branches. Schematic, representative illustration.","pins":[{"id":"arch","x":0.26415,"y":0.60114}]},"generic/section/compact":{"src":"/scenes/embolic-protection-devices/images/generic__section__compact.webp","thumb":"/scenes/embolic-protection-devices/images/generic__section__compact.thumb.webp","alt":"Branch filters: Compare the three protection locations. Protection compact. Schematic, representative illustration.","pins":[{"id":"arch","x":0.26415,"y":0.60114},{"id":"branch_filter","x":0.34906,"y":0.463},{"id":"branch_rim","x":0.5,"y":0.31819}]},"generic/section/deployed":{"src":"/scenes/embolic-protection-devices/images/generic__section__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/generic__section__deployed.thumb.webp","alt":"Branch filters: Compare the three protection locations. Protection expanded. Schematic, representative illustration.","pins":[{"id":"arch","x":0.26415,"y":0.60114},{"id":"branch_filter","x":0.34906,"y":0.463},{"id":"branch_rim","x":0.5,"y":0.32461}]},"generic/oblique/anatomy":{"src":"/scenes/embolic-protection-devices/images/generic__oblique__anatomy.webp","thumb":"/scenes/embolic-protection-devices/images/generic__oblique__anatomy.thumb.webp","alt":"Branch filters: Understand depth and attachment. Arch and branches. Schematic, representative illustration.","pins":[{"id":"arch","x":0.32282,"y":0.55769}]},"generic/oblique/compact":{"src":"/scenes/embolic-protection-devices/images/generic__oblique__compact.webp","thumb":"/scenes/embolic-protection-devices/images/generic__oblique__compact.thumb.webp","alt":"Branch filters: Understand depth and attachment. Protection compact. Schematic, representative illustration.","pins":[{"id":"arch","x":0.32282,"y":0.55769},{"id":"branch_filter","x":0.37344,"y":0.43665},{"id":"branch_rim","x":0.49332,"y":0.32036}]},"generic/oblique/deployed":{"src":"/scenes/embolic-protection-devices/images/generic__oblique__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/generic__oblique__deployed.thumb.webp","alt":"Branch filters: Understand depth and attachment. Protection expanded. Schematic, representative illustration.","pins":[{"id":"arch","x":0.32282,"y":0.55769},{"id":"branch_filter","x":0.37344,"y":0.43665},{"id":"branch_rim","x":0.47995,"y":0.32705}]},"generic/face/anatomy":{"src":"/scenes/embolic-protection-devices/images/generic__face__anatomy.webp","thumb":"/scenes/embolic-protection-devices/images/generic__face__anatomy.thumb.webp","alt":"Branch filters: Inspect the filtering or deflecting structure. Arch and branches. Schematic, representative illustration.","pins":[{"id":"arch","x":0.25526,"y":0.72334}]},"generic/face/compact":{"src":"/scenes/embolic-protection-devices/images/generic__face__compact.webp","thumb":"/scenes/embolic-protection-devices/images/generic__face__compact.thumb.webp","alt":"Branch filters: Inspect the filtering or deflecting structure. Protection compact. Schematic, representative illustration.","pins":[{"id":"arch","x":0.25526,"y":0.72334},{"id":"branch_filter","x":0.35708,"y":0.55591},{"id":"branch_rim","x":0.50697,"y":0.378}]},"generic/face/deployed":{"src":"/scenes/embolic-protection-devices/images/generic__face__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/generic__face__deployed.thumb.webp","alt":"Branch filters: Inspect the filtering or deflecting structure. Protection expanded. Schematic, representative illustration.","pins":[{"id":"arch","x":0.25526,"y":0.72334},{"id":"branch_filter","x":0.35708,"y":0.55591},{"id":"branch_rim","x":0.5209,"y":0.38195}]},"arch-deflector/heart/deployed":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__heart__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__heart__deployed.thumb.webp","alt":"Arch deflector: Locate the treatment region. Protection expanded. Schematic, representative illustration.","pins":[{"id":"location","x":0.7528,"y":0.10739}]},"arch-deflector/region/anatomy":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__region__anatomy.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__region__anatomy.thumb.webp","alt":"Arch deflector: Locate protection relative to the aorta and its branches. Arch and branches. Schematic, representative illustration.","pins":[{"id":"ascending","x":0.26685,"y":0.71217},{"id":"brachiocephalic","x":0.28494,"y":0.20868},{"id":"carotid","x":0.43362,"y":0.17484},{"id":"subclavian","x":0.59052,"y":0.18753},{"id":"descending","x":0.96275,"y":0.8391}]},"arch-deflector/region/compact":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__region__compact.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__region__compact.thumb.webp","alt":"Arch deflector: Locate protection relative to the aorta and its branches. Protection compact. Schematic, representative illustration.","pins":[{"id":"ascending","x":0.26685,"y":0.71217},{"id":"brachiocephalic","x":0.28494,"y":0.20868},{"id":"carotid","x":0.43362,"y":0.17484},{"id":"subclavian","x":0.59052,"y":0.18753},{"id":"descending","x":0.96275,"y":0.8391},{"id":"region_arch_screen","x":0.45359,"y":0.37275}]},"arch-deflector/region/deployed":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__region__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__region__deployed.thumb.webp","alt":"Arch deflector: Locate protection relative to the aorta and its branches. Protection expanded. Schematic, representative illustration.","pins":[{"id":"ascending","x":0.26685,"y":0.71217},{"id":"brachiocephalic","x":0.28494,"y":0.20868},{"id":"carotid","x":0.43362,"y":0.17484},{"id":"subclavian","x":0.59052,"y":0.18753},{"id":"descending","x":0.96275,"y":0.8391},{"id":"region_arch_screen","x":0.50299,"y":0.43293}]},"arch-deflector/section/anatomy":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__section__anatomy.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__section__anatomy.thumb.webp","alt":"Arch deflector: Compare the three protection locations. Arch and branches. Schematic, representative illustration.","pins":[{"id":"arch","x":0.26415,"y":0.60114}]},"arch-deflector/section/compact":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__section__compact.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__section__compact.thumb.webp","alt":"Arch deflector: Compare the three protection locations. Protection compact. Schematic, representative illustration.","pins":[{"id":"arch","x":0.26415,"y":0.60114},{"id":"arch_screen","x":0.45355,"y":0.41432},{"id":"arch_rim","x":0.56602,"y":0.42153}]},"arch-deflector/section/deployed":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__section__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__section__deployed.thumb.webp","alt":"Arch deflector: Compare the three protection locations. Protection expanded. Schematic, representative illustration.","pins":[{"id":"arch","x":0.26415,"y":0.60114},{"id":"arch_screen","x":0.33454,"y":0.45528},{"id":"arch_rim","x":0.26972,"y":0.51541}]},"arch-deflector/oblique/anatomy":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__oblique__anatomy.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__oblique__anatomy.thumb.webp","alt":"Arch deflector: Understand depth and attachment. Arch and branches. Schematic, representative illustration.","pins":[{"id":"arch","x":0.32282,"y":0.55769}]},"arch-deflector/oblique/compact":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__oblique__compact.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__oblique__compact.thumb.webp","alt":"Arch deflector: Understand depth and attachment. Protection compact. Schematic, representative illustration.","pins":[{"id":"arch","x":0.32282,"y":0.55769},{"id":"arch_screen","x":0.45694,"y":0.40713},{"id":"arch_rim","x":0.54713,"y":0.43431}]},"arch-deflector/oblique/deployed":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__oblique__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__oblique__deployed.thumb.webp","alt":"Arch deflector: Understand depth and attachment. Protection expanded. Schematic, representative illustration.","pins":[{"id":"arch","x":0.32282,"y":0.55769},{"id":"arch_screen","x":0.35253,"y":0.42667},{"id":"arch_rim","x":0.28944,"y":0.47488}]},"arch-deflector/face/anatomy":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__face__anatomy.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__face__anatomy.thumb.webp","alt":"Arch deflector: Inspect the filtering or deflecting structure. Arch and branches. Schematic, representative illustration.","pins":[{"id":"arch","x":0.25526,"y":0.72334}]},"arch-deflector/face/compact":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__face__compact.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__face__compact.thumb.webp","alt":"Arch deflector: Inspect the filtering or deflecting structure. Protection compact. Schematic, representative illustration.","pins":[{"id":"arch","x":0.25526,"y":0.72334},{"id":"arch_screen","x":0.46031,"y":0.49046},{"id":"arch_rim","x":0.57108,"y":0.48666}]},"arch-deflector/face/deployed":{"src":"/scenes/embolic-protection-devices/images/arch-deflector__face__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/arch-deflector__face__deployed.thumb.webp","alt":"Arch deflector: Inspect the filtering or deflecting structure. Protection expanded. Schematic, representative illustration.","pins":[{"id":"arch","x":0.25526,"y":0.72334},{"id":"arch_screen","x":0.35245,"y":0.54659},{"id":"arch_rim","x":0.30019,"y":0.61792}]},"arch-filter/heart/deployed":{"src":"/scenes/embolic-protection-devices/images/arch-filter__heart__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__heart__deployed.thumb.webp","alt":"Tubular arch filter: Locate the treatment region. Protection expanded. Schematic, representative illustration.","pins":[{"id":"location","x":0.7528,"y":0.10739}]},"arch-filter/region/anatomy":{"src":"/scenes/embolic-protection-devices/images/arch-filter__region__anatomy.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__region__anatomy.thumb.webp","alt":"Tubular arch filter: Locate protection relative to the aorta and its branches. Arch and branches. Schematic, representative illustration.","pins":[{"id":"ascending","x":0.26685,"y":0.71217},{"id":"brachiocephalic","x":0.28494,"y":0.20868},{"id":"carotid","x":0.43362,"y":0.17484},{"id":"subclavian","x":0.59052,"y":0.18753},{"id":"descending","x":0.96275,"y":0.8391}]},"arch-filter/region/compact":{"src":"/scenes/embolic-protection-devices/images/arch-filter__region__compact.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__region__compact.thumb.webp","alt":"Tubular arch filter: Locate protection relative to the aorta and its branches. Protection compact. Schematic, representative illustration.","pins":[{"id":"ascending","x":0.26685,"y":0.71217},{"id":"brachiocephalic","x":0.28494,"y":0.20868},{"id":"carotid","x":0.43362,"y":0.17484},{"id":"subclavian","x":0.59052,"y":0.18753},{"id":"descending","x":0.96275,"y":0.8391},{"id":"region_tube_filter","x":0.56981,"y":0.47434},{"id":"region_tube_catheter","x":0.87011,"y":0.82622}]},"arch-filter/region/deployed":{"src":"/scenes/embolic-protection-devices/images/arch-filter__region__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__region__deployed.thumb.webp","alt":"Tubular arch filter: Locate protection relative to the aorta and its branches. Protection expanded. Schematic, representative illustration.","pins":[{"id":"ascending","x":0.26685,"y":0.71217},{"id":"brachiocephalic","x":0.28494,"y":0.20868},{"id":"carotid","x":0.43362,"y":0.17484},{"id":"subclavian","x":0.59052,"y":0.18753},{"id":"descending","x":0.96275,"y":0.8391},{"id":"region_tube_filter","x":0.5083,"y":0.44872},{"id":"region_tube_port","x":0.67189,"y":0.58281},{"id":"region_tube_catheter","x":0.87011,"y":0.82622}]},"arch-filter/section/anatomy":{"src":"/scenes/embolic-protection-devices/images/arch-filter__section__anatomy.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__section__anatomy.thumb.webp","alt":"Tubular arch filter: Compare the three protection locations. Arch and branches. Schematic, representative illustration.","pins":[{"id":"arch","x":0.26415,"y":0.60114}]},"arch-filter/section/compact":{"src":"/scenes/embolic-protection-devices/images/arch-filter__section__compact.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__section__compact.thumb.webp","alt":"Tubular arch filter: Compare the three protection locations. Protection compact. Schematic, representative illustration.","pins":[{"id":"arch","x":0.5,"y":0.50592},{"id":"tube_filter","x":0.32102,"y":0.50814},{"id":"tube_catheter","x":0.79245,"y":0.78369}]},"arch-filter/section/deployed":{"src":"/scenes/embolic-protection-devices/images/arch-filter__section__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__section__deployed.thumb.webp","alt":"Tubular arch filter: Compare the three protection locations. Protection expanded. Schematic, representative illustration.","pins":[{"id":"arch","x":0.26415,"y":0.60114},{"id":"tube_filter","x":0.49026,"y":0.41412},{"id":"tube_port","x":0.64577,"y":0.55665},{"id":"tube_catheter","x":0.79245,"y":0.78369}]},"arch-filter/oblique/anatomy":{"src":"/scenes/embolic-protection-devices/images/arch-filter__oblique__anatomy.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__oblique__anatomy.thumb.webp","alt":"Tubular arch filter: Understand depth and attachment. Arch and branches. Schematic, representative illustration.","pins":[{"id":"arch","x":0.32282,"y":0.55769}]},"arch-filter/oblique/compact":{"src":"/scenes/embolic-protection-devices/images/arch-filter__oblique__compact.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__oblique__compact.thumb.webp","alt":"Tubular arch filter: Understand depth and attachment. Protection compact. Schematic, representative illustration.","pins":[{"id":"arch","x":0.32282,"y":0.55769},{"id":"tube_filter","x":0.49691,"y":0.45686},{"id":"tube_catheter","x":0.74521,"y":0.83241}]},"arch-filter/oblique/deployed":{"src":"/scenes/embolic-protection-devices/images/arch-filter__oblique__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__oblique__deployed.thumb.webp","alt":"Tubular arch filter: Understand depth and attachment. Protection expanded. Schematic, representative illustration.","pins":[{"id":"arch","x":0.32282,"y":0.55769},{"id":"tube_filter","x":0.50722,"y":0.41294},{"id":"tube_port","x":0.64143,"y":0.58137},{"id":"tube_catheter","x":0.74521,"y":0.83241}]},"arch-filter/face/anatomy":{"src":"/scenes/embolic-protection-devices/images/arch-filter__face__anatomy.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__face__anatomy.thumb.webp","alt":"Tubular arch filter: Inspect the filtering or deflecting structure. Arch and branches. Schematic, representative illustration.","pins":[{"id":"arch","x":0.25526,"y":0.72334}]},"arch-filter/face/compact":{"src":"/scenes/embolic-protection-devices/images/arch-filter__face__compact.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__face__compact.thumb.webp","alt":"Tubular arch filter: Inspect the filtering or deflecting structure. Protection compact. Schematic, representative illustration.","pins":[{"id":"arch","x":0.69294,"y":0.6649},{"id":"tube_filter","x":0.326,"y":0.61008},{"id":"tube_catheter","x":0.7769,"y":0.87123}]},"arch-filter/face/deployed":{"src":"/scenes/embolic-protection-devices/images/arch-filter__face__deployed.webp","thumb":"/scenes/embolic-protection-devices/images/arch-filter__face__deployed.thumb.webp","alt":"Tubular arch filter: Inspect the filtering or deflecting structure. Protection expanded. Schematic, representative illustration.","pins":[{"id":"arch","x":0.25526,"y":0.72334},{"id":"tube_filter","x":0.29801,"y":0.57358},{"id":"tube_catheter","x":0.7769,"y":0.87123}]}}}
+{
+ "classId": "embolic-protection-devices",
+ "conditionId": "cond-as",
+ "title": "Embolic protection adjuncts",
+ "linkLabel": "Visualize device class",
+ "status": "Schematic",
+ "scope": "Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.",
+ "stageLabel": "Schematic \u00b7 representative anatomy \u00b7 not to scale",
+ "attribution": "Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.",
+ "sources": [
+  {
+   "title": "Toronto Heart Atlas",
+   "url": "https://github.com/tgh-apil/TorontoHeartAtlas",
+   "locator": "RegularHeart chamber and vessel meshes, CC BY 4.0."
+  },
+  {
+   "title": "Creative Commons Attribution 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "title": "NHLBI: How blood flows through the heart",
+   "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+   "locator": "Written heart-valve and circulation sections; no media reused."
+  },
+  {
+   "title": "Technical labeling: branch-filter placement example",
+   "url": "https://www.bostonscientific.com/content/dam/elabeling/ic/51109552-01A_Sentinel_eIFU_s.pdf",
+   "locator": "2020-06 labeling, device description and deployment, pages 1\u20132. Branch placement example; no source geometry reused."
+  },
+  {
+   "title": "Original study: arch-deflector placement example",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8999484/",
+   "locator": "Section 2.3, operative technique. Arch position example; no outcome claim or source geometry reused."
+  },
+  {
+   "title": "Published clinical description: full-arch filter placement example",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8288788/",
+   "locator": "Discussion, device description paragraph. Position from the ascending to the proximal descending aorta; no outcome claim or source geometry reused."
+  },
+  {
+   "title": "Review article: full-arch filter access port",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12194329/",
+   "locator": "Section 6.3. States that the filter has a port for the valve delivery system; the port position shown is representative."
+  }
+ ],
+ "legend": [
+  {
+   "label": "Representative tissue",
+   "color": "#ad77ca"
+  },
+  {
+   "label": "Generic device",
+   "color": "#ffd358"
+  },
+  {
+   "label": "Leaflets / fabric",
+   "color": "#f6dfc8"
+  },
+  {
+   "label": "Suture / emphasis",
+   "color": "#35a8a0"
+  }
+ ],
+ "designs": [
+  {
+   "id": "generic",
+   "label": "Branch filters",
+   "summary": "Two generic filter baskets sit inside the brachiocephalic and left common carotid branches and capture debris there. This example does not place a filter in the left subclavian artery."
+  },
+  {
+   "id": "arch-deflector",
+   "label": "Arch deflector",
+   "summary": "A generic curved porous screen lies in the aortic arch across the branch origins and deflects debris away from them. It illustrates a different protection arrangement from branch filters."
+  },
+  {
+   "id": "arch-filter",
+   "label": "Tubular arch filter",
+   "summary": "A generic mesh tube lines the aorta from the ascending aorta through the arch to the start of the descending aorta. It covers all three branch origins and captures debris inside it. A small port in its wall admits the valve delivery catheter."
+  }
+ ],
+ "states": [
+  {
+   "id": "anatomy",
+   "label": "Arch and branches",
+   "note": "Representative pose; dimensions and deformation are not measured on a specific patient or population."
+  },
+  {
+   "id": "compact",
+   "label": "Protection compact",
+   "note": "Representative pose; dimensions and deformation are not measured on a specific patient or population."
+  },
+  {
+   "id": "deployed",
+   "label": "Protection expanded",
+   "note": "Representative pose; dimensions and deformation are not measured on a specific patient or population."
+  }
+ ],
+ "views": [
+  {
+   "id": "heart",
+   "label": "Whole heart",
+   "title": "Locate the treatment region",
+   "lesson": "The highlighted region orients the enlarged views.",
+   "states": [
+    "deployed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9595
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1535
+    }
+   }
+  },
+  {
+   "id": "region",
+   "label": "Arch and branches",
+   "title": "Locate protection relative to the aorta and its branches",
+   "lesson": "Three generic arrangements in a representative arch: branch filters, an arch deflector and a tubular filter.",
+   "states": [
+    "anatomy",
+    "compact",
+    "deployed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": -0.0,
+     "y": -0.9688
+    },
+    "patientRight": {
+     "x": -0.7198,
+     "y": -0.1719
+    }
+   },
+   "presentation": {
+    "directionCaption": "Arch and branches",
+    "representation": "representative-view",
+    "regionLabel": "Embolic protection adjuncts"
+   }
+  },
+  {
+   "id": "section",
+   "label": "Mechanism section",
+   "title": "Compare the three protection locations",
+   "lesson": "Compare branch baskets, an arch screen and a tubular arch filter. The aortic lumen stays open in all three.",
+   "states": [
+    "anatomy",
+    "compact",
+    "deployed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9806
+    },
+    "patientRight": {
+     "x": -1.0,
+     "y": -0.0
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen from the front",
+    "representation": "representative-section",
+    "regionLabel": "Embolic protection adjuncts"
+   }
+  },
+  {
+   "id": "oblique",
+   "label": "Oblique detail",
+   "title": "Understand depth and attachment",
+   "lesson": "An oblique view separates the near surface, device and supporting tissue.",
+   "states": [
+    "anatomy",
+    "compact",
+    "deployed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9698
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1329
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen at an angle",
+    "representation": "representative-section",
+    "regionLabel": "Embolic protection adjuncts"
+   }
+  },
+  {
+   "id": "face",
+   "label": "Protection detail",
+   "title": "Inspect the filtering or deflecting structure",
+   "lesson": "All three examples use the same camera, showing their position relative to the branch origins.",
+   "states": [
+    "anatomy",
+    "compact",
+    "deployed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9918
+    },
+    "patientRight": {
+     "x": -0.8575,
+     "y": 0.0656
+    }
+   },
+   "presentation": {
+    "directionCaption": "Protection detail",
+    "representation": "representative-section",
+    "regionLabel": "Embolic protection adjuncts"
+   }
+  }
+ ],
+ "annotations": {
+  "location": {
+   "label": "TREATMENT LOCATION",
+   "body": "The highlighted region locates this class in the heart. The marker is enlarged for orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "arch": {
+   "label": "REPRESENTATIVE AORTIC ARCH",
+   "body": "The curved vessel and branch openings are representative. The source context has no measured arch-branch anatomy.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "ascending": {
+   "label": "ASCENDING AORTA",
+   "body": "The ascending segment leads toward the arch from the heart.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "descending": {
+   "label": "DESCENDING AORTA",
+   "body": "The arch continues into the descending aorta.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "brachiocephalic": {
+   "label": "BRACHIOCEPHALIC ARTERY",
+   "body": "The first illustrated arch branch; one filter is shown inside this vessel in the branch-filter example.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "carotid": {
+   "label": "LEFT COMMON CAROTID",
+   "body": "The second illustrated arch branch; the branch-filter example places its other basket here.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "subclavian": {
+   "label": "LEFT SUBCLAVIAN",
+   "body": "The third illustrated branch has no basket in this branch-filter example. The arch deflector and the tubular filter both extend across its origin.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "branch_filter": {
+   "label": "BRANCH FILTER BASKETS",
+   "body": "Two baskets are inside the selected branches, above their aortic origins. Pores and capture performance are not modeled.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "embolic-protection-devices.branch-filter"
+  },
+  "branch_rim": {
+   "label": "BRANCH FILTER RIMS",
+   "body": "These generic expanded rims remain inside the branch lumens.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  },
+  "arch_screen": {
+   "label": "ARCH DEFLECTOR SCREEN",
+   "body": "A curved screen lies within the aortic arch across the origins of the three branches. It is not a valve/root implant.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "embolic-protection-devices.arch-screen"
+  },
+  "arch_rim": {
+   "label": "ARCH SCREEN FRAME",
+   "body": "The frame supports the schematic screen while the main aortic passage remains open. Coverage and stroke prevention are not evaluated.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  },
+  "region_branch_filter": {
+   "label": "BRANCH FILTER BASKETS",
+   "body": "Two baskets sit inside the brachiocephalic and left common carotid arteries, just above their origins, with their open ends toward the arch. They capture debris. A shared thin catheter links them; its course is representative.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "embolic-protection-devices.branch-filter"
+  },
+  "region_arch_screen": {
+   "label": "ARCH DEFLECTOR SCREEN",
+   "body": "A curved porous screen lies against the roof of the arch across all three branch origins and deflects debris away from them. It has its own thin catheter from the descending aorta.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "embolic-protection-devices.arch-screen"
+  },
+  "region_tube_filter": {
+   "label": "TUBULAR ARCH FILTER",
+   "body": "A mesh tube lines the aorta from the ascending aorta through the arch to the start of the descending aorta. It covers all three branch origins and captures debris inside it. Pores and capture performance are not modeled.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "embolic-protection-devices.tube-filter"
+  },
+  "region_tube_port": {
+   "label": "ACCESS PORT",
+   "body": "A small opening in the filter wall lets the valve delivery catheter enter the filter. The port's exact position is representative.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "embolic-protection-devices.tube-port"
+  },
+  "region_tube_catheter": {
+   "label": "FILTER CATHETER",
+   "body": "The filter has its own thin catheter, which reaches it from the descending aorta. Its course is representative.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "embolic-protection-devices.tube-catheter"
+  },
+  "tube_filter": {
+   "label": "TUBULAR ARCH FILTER",
+   "body": "A mesh tube lines the arch and covers the branch origins. It is open toward the heart and narrows onto its catheter downstream, so debris is captured inside.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "embolic-protection-devices.tube-filter"
+  },
+  "tube_port": {
+   "label": "ACCESS PORT",
+   "body": "The valve delivery catheter enters the filter through a small port in its wall. The port's exact position is representative.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "embolic-protection-devices.tube-port"
+  },
+  "tube_catheter": {
+   "label": "FILTER CATHETER",
+   "body": "The filter's own thin catheter leaves it at the descending end. Its course is representative.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "embolic-protection-devices.tube-catheter"
+  }
+ },
+ "images": {
+  "generic/heart/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/generic__heart__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__heart__deployed.thumb.webp",
+   "alt": "Branch filters: Locate the treatment region. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.7528,
+     "y": 0.10739
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__heart__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__heart__deployed.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      39
+     ]
+    }
+   },
+   "keys": []
+  },
+  "generic/region/anatomy": {
+   "src": "/scenes/embolic-protection-devices/images/generic__region__anatomy.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__region__anatomy.thumb.webp",
+   "alt": "Branch filters: Locate protection relative to the aorta and its branches. Arch and branches. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "ascending",
+     "x": 0.22556,
+     "y": 0.80333
+    },
+    {
+     "id": "brachiocephalic",
+     "x": 0.24263,
+     "y": 0.16233
+    },
+    {
+     "id": "carotid",
+     "x": 0.40444,
+     "y": 0.16556
+    },
+    {
+     "id": "subclavian",
+     "x": 0.57426,
+     "y": 0.1661
+    },
+    {
+     "id": "descending",
+     "x": 0.93309,
+     "y": 0.73332
+    }
+   ],
+   "camera": "2b6559d4d336450b",
+   "contentBox": {
+    "x": 0.035,
+    "y": 0.1561,
+    "width": 0.93,
+    "height": 0.6878
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__region__anatomy.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__region__anatomy.parts.png",
+   "focus": {
+    "ascending": {
+     "parts": [
+      17
+     ]
+    },
+    "brachiocephalic": {
+     "parts": [
+      20
+     ]
+    },
+    "carotid": {
+     "parts": [
+      23
+     ]
+    },
+    "subclavian": {
+     "parts": [
+      26
+     ]
+    },
+    "descending": {
+     "parts": [
+      17
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "generic/region/compact": {
+   "src": "/scenes/embolic-protection-devices/images/generic__region__compact.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__region__compact.thumb.webp",
+   "alt": "Branch filters: Locate protection relative to the aorta and its branches. Protection compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "ascending",
+     "x": 0.22556,
+     "y": 0.80333
+    },
+    {
+     "id": "brachiocephalic",
+     "x": 0.24263,
+     "y": 0.16233
+    },
+    {
+     "id": "carotid",
+     "x": 0.40444,
+     "y": 0.16556
+    },
+    {
+     "id": "subclavian",
+     "x": 0.57426,
+     "y": 0.1661
+    },
+    {
+     "id": "descending",
+     "x": 0.93309,
+     "y": 0.73332
+    },
+    {
+     "id": "region_branch_filter",
+     "x": 0.27809,
+     "y": 0.38437
+    }
+   ],
+   "camera": "2b6559d4d336450b",
+   "contentBox": {
+    "x": 0.035,
+    "y": 0.1561,
+    "width": 0.93,
+    "height": 0.6878
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__region__compact.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__region__compact.parts.png",
+   "focus": {
+    "ascending": {
+     "parts": [
+      17
+     ]
+    },
+    "brachiocephalic": {
+     "parts": [
+      20
+     ]
+    },
+    "carotid": {
+     "parts": [
+      23
+     ]
+    },
+    "subclavian": {
+     "parts": [
+      26
+     ]
+    },
+    "descending": {
+     "parts": [
+      17
+     ]
+    },
+    "region_branch_filter": {
+     "parts": [
+      27
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "generic/region/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/generic__region__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__region__deployed.thumb.webp",
+   "alt": "Branch filters: Locate protection relative to the aorta and its branches. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "ascending",
+     "x": 0.22556,
+     "y": 0.80333
+    },
+    {
+     "id": "brachiocephalic",
+     "x": 0.24263,
+     "y": 0.16233
+    },
+    {
+     "id": "carotid",
+     "x": 0.40444,
+     "y": 0.16556
+    },
+    {
+     "id": "subclavian",
+     "x": 0.57426,
+     "y": 0.1661
+    },
+    {
+     "id": "descending",
+     "x": 0.93309,
+     "y": 0.73332
+    },
+    {
+     "id": "region_branch_filter",
+     "x": 0.27979,
+     "y": 0.38766
+    }
+   ],
+   "camera": "2b6559d4d336450b",
+   "contentBox": {
+    "x": 0.035,
+    "y": 0.1561,
+    "width": 0.93,
+    "height": 0.6878
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__region__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__region__deployed.parts.png",
+   "focus": {
+    "ascending": {
+     "parts": [
+      17
+     ]
+    },
+    "brachiocephalic": {
+     "parts": [
+      20,
+      30
+     ]
+    },
+    "carotid": {
+     "parts": [
+      23,
+      30
+     ]
+    },
+    "subclavian": {
+     "parts": [
+      26
+     ]
+    },
+    "descending": {
+     "parts": [
+      17
+     ]
+    },
+    "region_branch_filter": {
+     "parts": [
+      30,
+      19,
+      20,
+      22,
+      23
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "generic/section/anatomy": {
+   "src": "/scenes/embolic-protection-devices/images/generic__section__anatomy.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__section__anatomy.thumb.webp",
+   "alt": "Branch filters: Compare the three protection locations. Arch and branches. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.5,
+     "y": 0.50592
+    }
+   ],
+   "camera": "bba3a0ba5b1665f4",
+   "contentBox": {
+    "x": 0.1254,
+    "y": 0.2372,
+    "width": 0.7492,
+    "height": 0.4822
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__section__anatomy.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__section__anatomy.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/generic__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.3164,
+    "y": 0.3099,
+    "r": 0.1163
+   }
+  },
+  "generic/section/compact": {
+   "src": "/scenes/embolic-protection-devices/images/generic__section__compact.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__section__compact.thumb.webp",
+   "alt": "Branch filters: Compare the three protection locations. Protection compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.5,
+     "y": 0.50592
+    },
+    {
+     "id": "branch_filter",
+     "x": 0.5,
+     "y": 0.43833
+    },
+    {
+     "id": "branch_rim",
+     "x": 0.51226,
+     "y": 0.31498
+    }
+   ],
+   "camera": "bba3a0ba5b1665f4",
+   "contentBox": {
+    "x": 0.1254,
+    "y": 0.2372,
+    "width": 0.7492,
+    "height": 0.4822
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__section__compact.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__section__compact.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    },
+    "branch_filter": {
+     "parts": [
+      5
+     ]
+    },
+    "branch_rim": {
+     "parts": [
+      5
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/generic__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.3164,
+    "y": 0.2939,
+    "r": 0.1172
+   }
+  },
+  "generic/section/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/generic__section__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__section__deployed.thumb.webp",
+   "alt": "Branch filters: Compare the three protection locations. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.5,
+     "y": 0.50592
+    },
+    {
+     "id": "branch_filter",
+     "x": 0.34906,
+     "y": 0.39592
+    },
+    {
+     "id": "branch_rim",
+     "x": 0.53679,
+     "y": 0.31498
+    }
+   ],
+   "camera": "bba3a0ba5b1665f4",
+   "contentBox": {
+    "x": 0.1254,
+    "y": 0.2372,
+    "width": 0.7492,
+    "height": 0.4822
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__section__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__section__deployed.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    },
+    "branch_filter": {
+     "parts": [
+      10
+     ]
+    },
+    "branch_rim": {
+     "parts": [
+      10
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/generic__region__deployed.thumb.webp",
+    "view": "region",
+    "x": 0.3164,
+    "y": 0.3099,
+    "r": 0.1163
+   }
+  },
+  "generic/oblique/anatomy": {
+   "src": "/scenes/embolic-protection-devices/images/generic__oblique__anatomy.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__oblique__anatomy.thumb.webp",
+   "alt": "Branch filters: Understand depth and attachment. Arch and branches. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.52622,
+     "y": 0.50518
+    }
+   ],
+   "camera": "e85cf977c3b82417",
+   "contentBox": {
+    "x": 0.1854,
+    "y": 0.2339,
+    "width": 0.6421,
+    "height": 0.53
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__oblique__anatomy.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/generic__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.3164,
+    "y": 0.3099,
+    "r": 0.1163
+   }
+  },
+  "generic/oblique/compact": {
+   "src": "/scenes/embolic-protection-devices/images/generic__oblique__compact.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__oblique__compact.thumb.webp",
+   "alt": "Branch filters: Understand depth and attachment. Protection compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.52622,
+     "y": 0.50518
+    },
+    {
+     "id": "branch_filter",
+     "x": 0.37344,
+     "y": 0.43665
+    },
+    {
+     "id": "branch_rim",
+     "x": 0.36676,
+     "y": 0.31801
+    }
+   ],
+   "camera": "e85cf977c3b82417",
+   "contentBox": {
+    "x": 0.1854,
+    "y": 0.2339,
+    "width": 0.6421,
+    "height": 0.53
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__oblique__compact.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__oblique__compact.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    },
+    "branch_filter": {
+     "parts": [
+      5
+     ]
+    },
+    "branch_rim": {
+     "parts": [
+      5
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/generic__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.3164,
+    "y": 0.2939,
+    "r": 0.1172
+   }
+  },
+  "generic/oblique/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/generic__oblique__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__oblique__deployed.thumb.webp",
+   "alt": "Branch filters: Understand depth and attachment. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.52622,
+     "y": 0.50518
+    },
+    {
+     "id": "branch_filter",
+     "x": 0.37344,
+     "y": 0.43665
+    },
+    {
+     "id": "branch_rim",
+     "x": 0.53085,
+     "y": 0.32354
+    }
+   ],
+   "camera": "e85cf977c3b82417",
+   "contentBox": {
+    "x": 0.1854,
+    "y": 0.2339,
+    "width": 0.6421,
+    "height": 0.53
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__oblique__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__oblique__deployed.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    },
+    "branch_filter": {
+     "parts": [
+      10
+     ]
+    },
+    "branch_rim": {
+     "parts": [
+      10
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/generic__region__deployed.thumb.webp",
+    "view": "region",
+    "x": 0.3164,
+    "y": 0.3099,
+    "r": 0.1163
+   }
+  },
+  "generic/face/anatomy": {
+   "src": "/scenes/embolic-protection-devices/images/generic__face__anatomy.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__face__anatomy.thumb.webp",
+   "alt": "Branch filters: Inspect the filtering or deflecting structure. Arch and branches. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.47267,
+     "y": 0.59557
+    }
+   ],
+   "camera": "8cb68b73e698c0f5",
+   "contentBox": {
+    "x": 0.1325,
+    "y": 0.295,
+    "width": 0.7221,
+    "height": 0.5533
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__face__anatomy.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__face__anatomy.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/generic__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.3164,
+    "y": 0.3099,
+    "r": 0.1163
+   }
+  },
+  "generic/face/compact": {
+   "src": "/scenes/embolic-protection-devices/images/generic__face__compact.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__face__compact.thumb.webp",
+   "alt": "Branch filters: Inspect the filtering or deflecting structure. Protection compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.47267,
+     "y": 0.59557
+    },
+    {
+     "id": "branch_filter",
+     "x": 0.3621,
+     "y": 0.47468
+    },
+    {
+     "id": "branch_rim",
+     "x": 0.51161,
+     "y": 0.37484
+    }
+   ],
+   "camera": "8cb68b73e698c0f5",
+   "contentBox": {
+    "x": 0.1325,
+    "y": 0.295,
+    "width": 0.7221,
+    "height": 0.5533
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__face__compact.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__face__compact.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    },
+    "branch_filter": {
+     "parts": [
+      5
+     ]
+    },
+    "branch_rim": {
+     "parts": [
+      5
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/generic__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.3164,
+    "y": 0.2939,
+    "r": 0.1172
+   }
+  },
+  "generic/face/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/generic__face__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/generic__face__deployed.thumb.webp",
+   "alt": "Branch filters: Inspect the filtering or deflecting structure. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.47267,
+     "y": 0.59557
+    },
+    {
+     "id": "branch_filter",
+     "x": 0.37213,
+     "y": 0.47753
+    },
+    {
+     "id": "branch_rim",
+     "x": 0.53484,
+     "y": 0.37247
+    }
+   ],
+   "camera": "8cb68b73e698c0f5",
+   "contentBox": {
+    "x": 0.1325,
+    "y": 0.295,
+    "width": 0.7221,
+    "height": 0.5533
+   },
+   "mid": "/scenes/embolic-protection-devices/images/generic__face__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/generic__face__deployed.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    },
+    "branch_filter": {
+     "parts": [
+      10
+     ]
+    },
+    "branch_rim": {
+     "parts": [
+      10
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/generic__region__deployed.thumb.webp",
+    "view": "region",
+    "x": 0.3164,
+    "y": 0.3099,
+    "r": 0.1163
+   }
+  },
+  "arch-deflector/heart/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__heart__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__heart__deployed.thumb.webp",
+   "alt": "Arch deflector: Locate the treatment region. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.7528,
+     "y": 0.10739
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__heart__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__heart__deployed.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      39
+     ]
+    }
+   },
+   "keys": []
+  },
+  "arch-deflector/region/anatomy": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__region__anatomy.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__region__anatomy.thumb.webp",
+   "alt": "Arch deflector: Locate protection relative to the aorta and its branches. Arch and branches. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "ascending",
+     "x": 0.22556,
+     "y": 0.80333
+    },
+    {
+     "id": "brachiocephalic",
+     "x": 0.24263,
+     "y": 0.16233
+    },
+    {
+     "id": "carotid",
+     "x": 0.40444,
+     "y": 0.16556
+    },
+    {
+     "id": "subclavian",
+     "x": 0.57426,
+     "y": 0.1661
+    },
+    {
+     "id": "descending",
+     "x": 0.93309,
+     "y": 0.73332
+    }
+   ],
+   "camera": "2b6559d4d336450b",
+   "contentBox": {
+    "x": 0.035,
+    "y": 0.1561,
+    "width": 0.93,
+    "height": 0.6878
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__region__anatomy.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__region__anatomy.parts.png",
+   "focus": {
+    "ascending": {
+     "parts": [
+      17
+     ]
+    },
+    "brachiocephalic": {
+     "parts": [
+      20
+     ]
+    },
+    "carotid": {
+     "parts": [
+      23
+     ]
+    },
+    "subclavian": {
+     "parts": [
+      26
+     ]
+    },
+    "descending": {
+     "parts": [
+      17
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "arch-deflector/region/compact": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__region__compact.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__region__compact.thumb.webp",
+   "alt": "Arch deflector: Locate protection relative to the aorta and its branches. Protection compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "ascending",
+     "x": 0.22556,
+     "y": 0.80333
+    },
+    {
+     "id": "brachiocephalic",
+     "x": 0.24263,
+     "y": 0.16233
+    },
+    {
+     "id": "carotid",
+     "x": 0.40444,
+     "y": 0.16556
+    },
+    {
+     "id": "subclavian",
+     "x": 0.57426,
+     "y": 0.1661
+    },
+    {
+     "id": "descending",
+     "x": 0.93309,
+     "y": 0.73332
+    },
+    {
+     "id": "region_arch_screen",
+     "x": 0.37452,
+     "y": 0.38157
+    }
+   ],
+   "camera": "2b6559d4d336450b",
+   "contentBox": {
+    "x": 0.035,
+    "y": 0.1561,
+    "width": 0.93,
+    "height": 0.6878
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__region__compact.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__region__compact.parts.png",
+   "focus": {
+    "ascending": {
+     "parts": [
+      17,
+      28
+     ]
+    },
+    "brachiocephalic": {
+     "parts": [
+      20
+     ]
+    },
+    "carotid": {
+     "parts": [
+      23
+     ]
+    },
+    "subclavian": {
+     "parts": [
+      26
+     ]
+    },
+    "descending": {
+     "parts": [
+      17,
+      28
+     ]
+    },
+    "region_arch_screen": {
+     "parts": [
+      28,
+      16,
+      17,
+      22
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "arch-deflector/region/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__region__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__region__deployed.thumb.webp",
+   "alt": "Arch deflector: Locate protection relative to the aorta and its branches. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "ascending",
+     "x": 0.22556,
+     "y": 0.80333
+    },
+    {
+     "id": "brachiocephalic",
+     "x": 0.24263,
+     "y": 0.16233
+    },
+    {
+     "id": "carotid",
+     "x": 0.40444,
+     "y": 0.16556
+    },
+    {
+     "id": "subclavian",
+     "x": 0.57426,
+     "y": 0.1661
+    },
+    {
+     "id": "descending",
+     "x": 0.93309,
+     "y": 0.73332
+    },
+    {
+     "id": "region_arch_screen",
+     "x": 0.50299,
+     "y": 0.43293
+    }
+   ],
+   "camera": "2b6559d4d336450b",
+   "contentBox": {
+    "x": 0.035,
+    "y": 0.1561,
+    "width": 0.93,
+    "height": 0.6878
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__region__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__region__deployed.parts.png",
+   "focus": {
+    "ascending": {
+     "parts": [
+      17,
+      31
+     ]
+    },
+    "brachiocephalic": {
+     "parts": [
+      20
+     ]
+    },
+    "carotid": {
+     "parts": [
+      23
+     ]
+    },
+    "subclavian": {
+     "parts": [
+      26
+     ]
+    },
+    "descending": {
+     "parts": [
+      17,
+      31
+     ]
+    },
+    "region_arch_screen": {
+     "parts": [
+      31,
+      16,
+      17
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "arch-deflector/section/anatomy": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__section__anatomy.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__section__anatomy.thumb.webp",
+   "alt": "Arch deflector: Compare the three protection locations. Arch and branches. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.5,
+     "y": 0.50592
+    }
+   ],
+   "camera": "bba3a0ba5b1665f4",
+   "contentBox": {
+    "x": 0.1254,
+    "y": 0.2372,
+    "width": 0.7492,
+    "height": 0.4822
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__section__anatomy.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__section__anatomy.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-deflector__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4263,
+    "y": 0.4263,
+    "r": 0.2
+   }
+  },
+  "arch-deflector/section/compact": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__section__compact.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__section__compact.thumb.webp",
+   "alt": "Arch deflector: Compare the three protection locations. Protection compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.5,
+     "y": 0.50592
+    },
+    {
+     "id": "arch_screen",
+     "x": 0.5,
+     "y": 0.41143
+    },
+    {
+     "id": "arch_rim",
+     "x": 0.43398,
+     "y": 0.42153
+    }
+   ],
+   "camera": "bba3a0ba5b1665f4",
+   "contentBox": {
+    "x": 0.1254,
+    "y": 0.2372,
+    "width": 0.7492,
+    "height": 0.4822
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__section__compact.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__section__compact.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1,
+      7,
+      8
+     ]
+    },
+    "arch_screen": {
+     "parts": [
+      7,
+      1
+     ]
+    },
+    "arch_rim": {
+     "parts": [
+      7,
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-deflector__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.4177,
+    "y": 0.3833,
+    "r": 0.1012
+   }
+  },
+  "arch-deflector/section/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__section__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__section__deployed.thumb.webp",
+   "alt": "Arch deflector: Compare the three protection locations. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.5,
+     "y": 0.50592
+    },
+    {
+     "id": "arch_screen",
+     "x": 0.5,
+     "y": 0.41631
+    },
+    {
+     "id": "arch_rim",
+     "x": 0.73028,
+     "y": 0.51541
+    }
+   ],
+   "camera": "bba3a0ba5b1665f4",
+   "contentBox": {
+    "x": 0.1254,
+    "y": 0.2372,
+    "width": 0.7492,
+    "height": 0.4822
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__section__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__section__deployed.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1,
+      12,
+      13
+     ]
+    },
+    "arch_screen": {
+     "parts": [
+      12,
+      1,
+      2,
+      4
+     ]
+    },
+    "arch_rim": {
+     "parts": [
+      12,
+      1,
+      2,
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-deflector__region__deployed.thumb.webp",
+    "view": "region",
+    "x": 0.4263,
+    "y": 0.4263,
+    "r": 0.2
+   }
+  },
+  "arch-deflector/oblique/anatomy": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__oblique__anatomy.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__oblique__anatomy.thumb.webp",
+   "alt": "Arch deflector: Understand depth and attachment. Arch and branches. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.52622,
+     "y": 0.50518
+    }
+   ],
+   "camera": "e85cf977c3b82417",
+   "contentBox": {
+    "x": 0.1854,
+    "y": 0.2339,
+    "width": 0.6421,
+    "height": 0.53
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__oblique__anatomy.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-deflector__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4263,
+    "y": 0.4263,
+    "r": 0.2
+   }
+  },
+  "arch-deflector/oblique/compact": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__oblique__compact.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__oblique__compact.thumb.webp",
+   "alt": "Arch deflector: Understand depth and attachment. Protection compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.52622,
+     "y": 0.50518
+    },
+    {
+     "id": "arch_screen",
+     "x": 0.49589,
+     "y": 0.41252
+    },
+    {
+     "id": "arch_rim",
+     "x": 0.43642,
+     "y": 0.4109
+    }
+   ],
+   "camera": "e85cf977c3b82417",
+   "contentBox": {
+    "x": 0.1854,
+    "y": 0.2339,
+    "width": 0.6421,
+    "height": 0.53
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__oblique__compact.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__oblique__compact.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1,
+      7,
+      8
+     ]
+    },
+    "arch_screen": {
+     "parts": [
+      7,
+      1
+     ]
+    },
+    "arch_rim": {
+     "parts": [
+      7,
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-deflector__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.4177,
+    "y": 0.3833,
+    "r": 0.1012
+   }
+  },
+  "arch-deflector/oblique/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__oblique__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__oblique__deployed.thumb.webp",
+   "alt": "Arch deflector: Understand depth and attachment. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.52622,
+     "y": 0.50518
+    },
+    {
+     "id": "arch_screen",
+     "x": 0.49126,
+     "y": 0.41745
+    },
+    {
+     "id": "arch_rim",
+     "x": 0.28944,
+     "y": 0.47488
+    }
+   ],
+   "camera": "e85cf977c3b82417",
+   "contentBox": {
+    "x": 0.1854,
+    "y": 0.2339,
+    "width": 0.6421,
+    "height": 0.53
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__oblique__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__oblique__deployed.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1,
+      12,
+      13
+     ]
+    },
+    "arch_screen": {
+     "parts": [
+      12,
+      1,
+      2,
+      4
+     ]
+    },
+    "arch_rim": {
+     "parts": [
+      12,
+      1,
+      2,
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-deflector__region__deployed.thumb.webp",
+    "view": "region",
+    "x": 0.4263,
+    "y": 0.4263,
+    "r": 0.2
+   }
+  },
+  "arch-deflector/face/anatomy": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__face__anatomy.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__face__anatomy.thumb.webp",
+   "alt": "Arch deflector: Inspect the filtering or deflecting structure. Arch and branches. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.47267,
+     "y": 0.59557
+    }
+   ],
+   "camera": "8cb68b73e698c0f5",
+   "contentBox": {
+    "x": 0.1325,
+    "y": 0.295,
+    "width": 0.7221,
+    "height": 0.5533
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__face__anatomy.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__face__anatomy.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-deflector__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4263,
+    "y": 0.4263,
+    "r": 0.2
+   }
+  },
+  "arch-deflector/face/compact": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__face__compact.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__face__compact.thumb.webp",
+   "alt": "Arch deflector: Inspect the filtering or deflecting structure. Protection compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.47267,
+     "y": 0.59557
+    },
+    {
+     "id": "arch_screen",
+     "x": 0.50429,
+     "y": 0.48275
+    },
+    {
+     "id": "arch_rim",
+     "x": 0.44607,
+     "y": 0.49942
+    }
+   ],
+   "camera": "8cb68b73e698c0f5",
+   "contentBox": {
+    "x": 0.1325,
+    "y": 0.295,
+    "width": 0.7221,
+    "height": 0.5533
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__face__compact.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__face__compact.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1,
+      7,
+      8
+     ]
+    },
+    "arch_screen": {
+     "parts": [
+      7,
+      1
+     ]
+    },
+    "arch_rim": {
+     "parts": [
+      7,
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-deflector__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.4177,
+    "y": 0.3833,
+    "r": 0.1012
+   }
+  },
+  "arch-deflector/face/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/arch-deflector__face__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-deflector__face__deployed.thumb.webp",
+   "alt": "Arch deflector: Inspect the filtering or deflecting structure. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.47267,
+     "y": 0.59557
+    },
+    {
+     "id": "arch_screen",
+     "x": 0.50911,
+     "y": 0.48708
+    },
+    {
+     "id": "arch_rim",
+     "x": 0.73625,
+     "y": 0.57341
+    }
+   ],
+   "camera": "8cb68b73e698c0f5",
+   "contentBox": {
+    "x": 0.1325,
+    "y": 0.295,
+    "width": 0.7221,
+    "height": 0.5533
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-deflector__face__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-deflector__face__deployed.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1,
+      12,
+      13
+     ]
+    },
+    "arch_screen": {
+     "parts": [
+      12,
+      1,
+      2,
+      4
+     ]
+    },
+    "arch_rim": {
+     "parts": [
+      12,
+      1,
+      2,
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-deflector__region__deployed.thumb.webp",
+    "view": "region",
+    "x": 0.4263,
+    "y": 0.4263,
+    "r": 0.2
+   }
+  },
+  "arch-filter/heart/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__heart__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__heart__deployed.thumb.webp",
+   "alt": "Tubular arch filter: Locate the treatment region. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.7528,
+     "y": 0.10739
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__heart__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__heart__deployed.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      39
+     ]
+    }
+   },
+   "keys": []
+  },
+  "arch-filter/region/anatomy": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__region__anatomy.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__region__anatomy.thumb.webp",
+   "alt": "Tubular arch filter: Locate protection relative to the aorta and its branches. Arch and branches. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "ascending",
+     "x": 0.22556,
+     "y": 0.80333
+    },
+    {
+     "id": "brachiocephalic",
+     "x": 0.24263,
+     "y": 0.16233
+    },
+    {
+     "id": "carotid",
+     "x": 0.40444,
+     "y": 0.16556
+    },
+    {
+     "id": "subclavian",
+     "x": 0.57426,
+     "y": 0.1661
+    },
+    {
+     "id": "descending",
+     "x": 0.93309,
+     "y": 0.73332
+    }
+   ],
+   "camera": "2b6559d4d336450b",
+   "contentBox": {
+    "x": 0.035,
+    "y": 0.1561,
+    "width": 0.93,
+    "height": 0.6878
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__region__anatomy.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__region__anatomy.parts.png",
+   "focus": {
+    "ascending": {
+     "parts": [
+      17
+     ]
+    },
+    "brachiocephalic": {
+     "parts": [
+      20
+     ]
+    },
+    "carotid": {
+     "parts": [
+      23
+     ]
+    },
+    "subclavian": {
+     "parts": [
+      26
+     ]
+    },
+    "descending": {
+     "parts": [
+      17
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "arch-filter/region/compact": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__region__compact.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__region__compact.thumb.webp",
+   "alt": "Tubular arch filter: Locate protection relative to the aorta and its branches. Protection compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "ascending",
+     "x": 0.22556,
+     "y": 0.80333
+    },
+    {
+     "id": "brachiocephalic",
+     "x": 0.24263,
+     "y": 0.16233
+    },
+    {
+     "id": "carotid",
+     "x": 0.40444,
+     "y": 0.16556
+    },
+    {
+     "id": "subclavian",
+     "x": 0.57426,
+     "y": 0.1661
+    },
+    {
+     "id": "descending",
+     "x": 0.93309,
+     "y": 0.73332
+    },
+    {
+     "id": "region_tube_filter",
+     "x": 0.56876,
+     "y": 0.48187
+    },
+    {
+     "id": "region_tube_catheter",
+     "x": 0.86381,
+     "y": 0.78397
+    }
+   ],
+   "camera": "2b6559d4d336450b",
+   "contentBox": {
+    "x": 0.035,
+    "y": 0.1561,
+    "width": 0.93,
+    "height": 0.6878
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__region__compact.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__region__compact.parts.png",
+   "focus": {
+    "ascending": {
+     "parts": [
+      17
+     ]
+    },
+    "brachiocephalic": {
+     "parts": [
+      20
+     ]
+    },
+    "carotid": {
+     "parts": [
+      23
+     ]
+    },
+    "subclavian": {
+     "parts": [
+      26
+     ]
+    },
+    "descending": {
+     "parts": [
+      17
+     ]
+    },
+    "region_tube_filter": {
+     "parts": [
+      29
+     ]
+    },
+    "region_tube_catheter": {
+     "parts": [
+      29
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "arch-filter/region/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__region__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__region__deployed.thumb.webp",
+   "alt": "Tubular arch filter: Locate protection relative to the aorta and its branches. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "ascending",
+     "x": 0.22556,
+     "y": 0.80333
+    },
+    {
+     "id": "brachiocephalic",
+     "x": 0.24263,
+     "y": 0.16233
+    },
+    {
+     "id": "carotid",
+     "x": 0.40444,
+     "y": 0.16556
+    },
+    {
+     "id": "subclavian",
+     "x": 0.57426,
+     "y": 0.1661
+    },
+    {
+     "id": "descending",
+     "x": 0.93309,
+     "y": 0.73332
+    },
+    {
+     "id": "region_tube_filter",
+     "x": 0.5083,
+     "y": 0.44872
+    },
+    {
+     "id": "region_tube_port",
+     "x": 0.67322,
+     "y": 0.58358
+    },
+    {
+     "id": "region_tube_catheter",
+     "x": 0.86851,
+     "y": 0.81251
+    }
+   ],
+   "camera": "2b6559d4d336450b",
+   "contentBox": {
+    "x": 0.035,
+    "y": 0.1561,
+    "width": 0.93,
+    "height": 0.6878
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__region__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__region__deployed.parts.png",
+   "focus": {
+    "ascending": {
+     "parts": [
+      17,
+      32
+     ]
+    },
+    "brachiocephalic": {
+     "parts": [
+      20
+     ]
+    },
+    "carotid": {
+     "parts": [
+      23
+     ]
+    },
+    "subclavian": {
+     "parts": [
+      26
+     ]
+    },
+    "descending": {
+     "parts": [
+      17,
+      32
+     ]
+    },
+    "region_tube_filter": {
+     "parts": [
+      32,
+      16,
+      17,
+      19,
+      22,
+      25
+     ]
+    },
+    "region_tube_port": {
+     "parts": [
+      32,
+      16,
+      17,
+      19,
+      22,
+      25
+     ]
+    },
+    "region_tube_catheter": {
+     "parts": [
+      32,
+      16,
+      17,
+      19,
+      22,
+      25
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "arch-filter/section/anatomy": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__section__anatomy.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__section__anatomy.thumb.webp",
+   "alt": "Tubular arch filter: Compare the three protection locations. Arch and branches. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.5,
+     "y": 0.50592
+    }
+   ],
+   "camera": "bba3a0ba5b1665f4",
+   "contentBox": {
+    "x": 0.1254,
+    "y": 0.2372,
+    "width": 0.7492,
+    "height": 0.4822
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__section__anatomy.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__section__anatomy.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-filter__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4635,
+    "y": 0.5727,
+    "r": 0.2
+   }
+  },
+  "arch-filter/section/compact": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__section__compact.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__section__compact.thumb.webp",
+   "alt": "Tubular arch filter: Compare the three protection locations. Protection compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.5,
+     "y": 0.50592
+    },
+    {
+     "id": "tube_filter",
+     "x": 0.49112,
+     "y": 0.45808
+    },
+    {
+     "id": "tube_catheter",
+     "x": 0.79245,
+     "y": 0.78369
+    }
+   ],
+   "camera": "bba3a0ba5b1665f4",
+   "contentBox": {
+    "x": 0.1254,
+    "y": 0.2372,
+    "width": 0.7492,
+    "height": 0.6733
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__section__compact.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__section__compact.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    },
+    "tube_filter": {
+     "parts": [
+      9,
+      2,
+      3,
+      4
+     ]
+    },
+    "tube_catheter": {
+     "parts": [
+      9,
+      2,
+      3,
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-filter__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.4352,
+    "y": 0.5425,
+    "r": 0.2
+   }
+  },
+  "arch-filter/section/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__section__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__section__deployed.thumb.webp",
+   "alt": "Tubular arch filter: Compare the three protection locations. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.5,
+     "y": 0.50592
+    },
+    {
+     "id": "tube_filter",
+     "x": 0.49026,
+     "y": 0.41412
+    },
+    {
+     "id": "tube_port",
+     "x": 0.64577,
+     "y": 0.55665
+    },
+    {
+     "id": "tube_catheter",
+     "x": 0.79245,
+     "y": 0.78369
+    }
+   ],
+   "camera": "bba3a0ba5b1665f4",
+   "contentBox": {
+    "x": 0.1254,
+    "y": 0.2372,
+    "width": 0.7492,
+    "height": 0.6733
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__section__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__section__deployed.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1,
+      14
+     ],
+     "ghost": {
+      "src": "/scenes/embolic-protection-devices/images/arch-filter__section__deployed.ghost-1.webp",
+      "x": 0.12583333333333332,
+      "y": 0.36777777777777776,
+      "width": 0.7483333333333333,
+      "height": 0.3511111111111111
+     }
+    },
+    "tube_filter": {
+     "parts": [
+      14,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    "tube_port": {
+     "parts": [
+      1,
+      14
+     ],
+     "ghost": {
+      "src": "/scenes/embolic-protection-devices/images/arch-filter__section__deployed.ghost-1.webp",
+      "x": 0.12583333333333332,
+      "y": 0.36777777777777776,
+      "width": 0.7483333333333333,
+      "height": 0.3511111111111111
+     }
+    },
+    "tube_catheter": {
+     "parts": [
+      14,
+      1,
+      2,
+      3,
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-filter__region__deployed.thumb.webp",
+    "view": "region",
+    "x": 0.4635,
+    "y": 0.5727,
+    "r": 0.2
+   }
+  },
+  "arch-filter/oblique/anatomy": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__oblique__anatomy.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__oblique__anatomy.thumb.webp",
+   "alt": "Tubular arch filter: Understand depth and attachment. Arch and branches. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.52622,
+     "y": 0.50518
+    }
+   ],
+   "camera": "e85cf977c3b82417",
+   "contentBox": {
+    "x": 0.1854,
+    "y": 0.2339,
+    "width": 0.6421,
+    "height": 0.53
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__oblique__anatomy.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-filter__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4635,
+    "y": 0.5727,
+    "r": 0.2
+   }
+  },
+  "arch-filter/oblique/compact": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__oblique__compact.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__oblique__compact.thumb.webp",
+   "alt": "Tubular arch filter: Understand depth and attachment. Protection compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.52622,
+     "y": 0.50518
+    },
+    {
+     "id": "tube_filter",
+     "x": 0.49691,
+     "y": 0.45686
+    },
+    {
+     "id": "tube_catheter",
+     "x": 0.74521,
+     "y": 0.83241
+    }
+   ],
+   "camera": "e85cf977c3b82417",
+   "contentBox": {
+    "x": 0.1854,
+    "y": 0.2339,
+    "width": 0.6421,
+    "height": 0.7239
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__oblique__compact.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__oblique__compact.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    },
+    "tube_filter": {
+     "parts": [
+      9,
+      2,
+      3,
+      4
+     ]
+    },
+    "tube_catheter": {
+     "parts": [
+      9,
+      2,
+      3,
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-filter__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.4352,
+    "y": 0.5425,
+    "r": 0.2
+   }
+  },
+  "arch-filter/oblique/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__oblique__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__oblique__deployed.thumb.webp",
+   "alt": "Tubular arch filter: Understand depth and attachment. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.52622,
+     "y": 0.50518
+    },
+    {
+     "id": "tube_filter",
+     "x": 0.50722,
+     "y": 0.41294
+    },
+    {
+     "id": "tube_port",
+     "x": 0.64143,
+     "y": 0.58137
+    },
+    {
+     "id": "tube_catheter",
+     "x": 0.74521,
+     "y": 0.83241
+    }
+   ],
+   "camera": "e85cf977c3b82417",
+   "contentBox": {
+    "x": 0.1854,
+    "y": 0.2339,
+    "width": 0.6421,
+    "height": 0.7239
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__oblique__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__oblique__deployed.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1,
+      14
+     ],
+     "ghost": {
+      "src": "/scenes/embolic-protection-devices/images/arch-filter__oblique__deployed.ghost-1.webp",
+      "x": 0.18583333333333332,
+      "y": 0.36,
+      "width": 0.6416666666666667,
+      "height": 0.4033333333333333
+     }
+    },
+    "tube_filter": {
+     "parts": [
+      14,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    "tube_port": {
+     "parts": [
+      1,
+      14
+     ],
+     "ghost": {
+      "src": "/scenes/embolic-protection-devices/images/arch-filter__oblique__deployed.ghost-1.webp",
+      "x": 0.18583333333333332,
+      "y": 0.36,
+      "width": 0.6416666666666667,
+      "height": 0.4033333333333333
+     }
+    },
+    "tube_catheter": {
+     "parts": [
+      14,
+      1,
+      2,
+      3,
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-filter__region__deployed.thumb.webp",
+    "view": "region",
+    "x": 0.4635,
+    "y": 0.5727,
+    "r": 0.2
+   }
+  },
+  "arch-filter/face/anatomy": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__face__anatomy.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__face__anatomy.thumb.webp",
+   "alt": "Tubular arch filter: Inspect the filtering or deflecting structure. Arch and branches. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.47267,
+     "y": 0.59557
+    }
+   ],
+   "camera": "8cb68b73e698c0f5",
+   "contentBox": {
+    "x": 0.1325,
+    "y": 0.295,
+    "width": 0.7221,
+    "height": 0.5533
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__face__anatomy.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__face__anatomy.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-filter__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4635,
+    "y": 0.5727,
+    "r": 0.2
+   }
+  },
+  "arch-filter/face/compact": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__face__compact.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__face__compact.thumb.webp",
+   "alt": "Tubular arch filter: Inspect the filtering or deflecting structure. Protection compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.47267,
+     "y": 0.59557
+    },
+    {
+     "id": "tube_filter",
+     "x": 0.48705,
+     "y": 0.53774
+    },
+    {
+     "id": "tube_catheter",
+     "x": 0.7769,
+     "y": 0.87123
+    }
+   ],
+   "camera": "8cb68b73e698c0f5",
+   "contentBox": {
+    "x": 0.1325,
+    "y": 0.295,
+    "width": 0.7221,
+    "height": 0.705
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__face__compact.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__face__compact.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      1
+     ]
+    },
+    "tube_filter": {
+     "parts": [
+      9,
+      2,
+      3,
+      4
+     ]
+    },
+    "tube_catheter": {
+     "parts": [
+      9,
+      2,
+      3,
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-filter__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.4352,
+    "y": 0.5425,
+    "r": 0.2
+   }
+  },
+  "arch-filter/face/deployed": {
+   "src": "/scenes/embolic-protection-devices/images/arch-filter__face__deployed.webp",
+   "thumb": "/scenes/embolic-protection-devices/images/arch-filter__face__deployed.thumb.webp",
+   "alt": "Tubular arch filter: Inspect the filtering or deflecting structure. Protection expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "arch",
+     "x": 0.26365,
+     "y": 0.65271
+    },
+    {
+     "id": "tube_filter",
+     "x": 0.47474,
+     "y": 0.49138
+    },
+    {
+     "id": "tube_catheter",
+     "x": 0.7769,
+     "y": 0.87123
+    }
+   ],
+   "camera": "8cb68b73e698c0f5",
+   "contentBox": {
+    "x": 0.1325,
+    "y": 0.295,
+    "width": 0.7221,
+    "height": 0.705
+   },
+   "mid": "/scenes/embolic-protection-devices/images/arch-filter__face__deployed.mid.webp",
+   "partMap": "/scenes/embolic-protection-devices/images/arch-filter__face__deployed.parts.png",
+   "focus": {
+    "arch": {
+     "parts": [
+      14,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    "tube_filter": {
+     "parts": [
+      14,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    "tube_catheter": {
+     "parts": [
+      14,
+      1,
+      2,
+      3,
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/embolic-protection-devices/images/arch-filter__region__deployed.thumb.webp",
+    "view": "region",
+    "x": 0.4635,
+    "y": 0.5727,
+    "r": 0.2
+   }
+  }
+ },
+ "presentation": {
+  "annotationMode": "external",
+  "layout": "plate",
+  "labels": {
+   "location": "Treatment location",
+   "arch": "Aortic arch",
+   "ascending": "Ascending aorta",
+   "descending": "Descending aorta",
+   "brachiocephalic": "Brachiocephalic artery",
+   "carotid": "Left common carotid",
+   "subclavian": "Left subclavian",
+   "branch_filter": "Branch filter baskets",
+   "branch_rim": "Branch filter rims",
+   "arch_screen": "Arch deflector screen",
+   "arch_rim": "Screen frame",
+   "region_branch_filter": "Branch filter baskets",
+   "region_arch_screen": "Arch deflector screen",
+   "region_tube_filter": "Tubular arch filter",
+   "region_tube_port": "Access port",
+   "region_tube_catheter": "Filter catheter",
+   "tube_filter": "Tubular arch filter",
+   "tube_port": "Access port",
+   "tube_catheter": "Filter catheter"
+  },
+  "stateLabels": {
+   "anatomy": "Arch and branches",
+   "compact": "Compact",
+   "deployed": "Expanded"
+  },
+  "stateGroups": [
+   {
+    "label": "Anatomy",
+    "states": [
+     "anatomy"
+    ]
+   },
+   {
+    "label": "With device",
+    "states": [
+     "compact",
+     "deployed"
+    ]
+   }
+  ],
+  "designComparison": {
+   "pairs": [
+    {
+     "designs": [
+      "generic",
+      "arch-deflector"
+     ],
+     "views": [
+      "section",
+      "oblique",
+      "face"
+     ],
+     "states": [
+      "compact",
+      "deployed"
+     ],
+     "summary": "Where protection sits. Branch filters sit inside two of the neck branches; the arch deflector is a curved screen in the arch across the branch origins. Same representative arch, camera and pose."
+    }
+   ]
+  },
+  "keyColors": {
+   "cut": "#7c4860"
+  }
+ }
+}
