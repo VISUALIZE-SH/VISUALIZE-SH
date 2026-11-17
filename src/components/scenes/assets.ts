@@ -1,11 +1,12 @@
 import type { VisualizationManifest } from './types'
 
-/** Scene assets live under public/scenes; resolve them against the deployed base path. */
-export const asset = (path?: string) => (path ? `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}` : '')
+/** Scene assets live under public/scenes; resolve a root-relative path against the deployed base path. */
+export const assetPath = (base: string, path?: string) => (path ? `${base.replace(/\/?$/, '/')}${path.replace(/^\//, '')}` : '')
 
 /** A copy of the manifest whose image paths (stills, phone stills, part maps, outlines,
- *  locator thumbnails) resolve against the base path. */
-export function withAssetBase(manifest: VisualizationManifest): VisualizationManifest {
+ *  locator thumbnails) resolve against the base path (import.meta.env.BASE_URL in the app). */
+export function withAssetBase(manifest: VisualizationManifest, base: string): VisualizationManifest {
+  const asset = (path?: string) => assetPath(base, path)
   const images = Object.fromEntries(Object.entries(manifest.images).map(([key, image]) => [key, {
     ...image,
     src: asset(image.src),

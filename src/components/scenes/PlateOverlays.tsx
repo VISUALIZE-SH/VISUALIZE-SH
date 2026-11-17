@@ -3,29 +3,36 @@ import type { FigureKey as FigureKeyId, FocusEntry, ImageLocator, SceneImage, Sc
 import { GHOST_ALPHA, KEY_TEXT, hiddenMask, keyItems, locatorCaption, maskGhost, veilMask } from './plateFocus';
 import type { PartMap } from './plateFocus';
 
+const PART_MAP_CACHE = 6;
 const partMapCache = new Map<string, Promise<PartMap | null>>();
-/** Lazy, cached per URL. Resolves null if the map cannot be loaded or decoded. */
+/** Lazy, cached per URL (the few most recent). Resolves null if the map cannot be loaded or
+ * decoded; failures are not cached, so a later selection retries. */
 export function loadPartMap(url: string): Promise<PartMap | null> {
-  let cached = partMapCache.get(url);
-  if (!cached) {
-    cached = new Promise<PartMap | null>(resolve => {
-      const img = new Image();
-      img.onload = () => {
-        try {
-          const canvas = document.createElement('canvas');
-          canvas.width = img.naturalWidth; canvas.height = img.naturalHeight;
-          const ctx = canvas.getContext('2d', { willReadFrequently: true });
-          if (!ctx) return resolve(null);
-          ctx.drawImage(img, 0, 0);
-          resolve({ width: canvas.width, height: canvas.height, data: ctx.getImageData(0, 0, canvas.width, canvas.height).data });
-        } catch { resolve(null); }
-      };
-      img.onerror = () => resolve(null);
-      img.src = url;
-    });
-    partMapCache.set(url, cached);
+  const cached = partMapCache.get(url);
+  if (cached) {
+    partMapCache.delete(url);
+    partMapCache.set(url, cached);  // most recently used last
+    return cached;
   }
-  return cached;
+  const loading = new Promise<PartMap | null>(resolve => {
+    const img = new Image();
+    img.onload = () => {
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth; canvas.height = img.naturalHeight;
+        const ctx = canvas.getContext('2d', { willReadFrequently: true });
+        if (!ctx) return resolve(null);
+        ctx.drawImage(img, 0, 0);
+        resolve({ width: canvas.width, height: canvas.height, data: ctx.getImageData(0, 0, canvas.width, canvas.height).data });
+      } catch { resolve(null); }
+    };
+    img.onerror = () => resolve(null);
+    img.src = url;
+  });
+  partMapCache.set(url, loading);
+  loading.then(map => { if (!map && partMapCache.get(url) === loading) partMapCache.delete(url); });
+  while (partMapCache.size > PART_MAP_CACHE) partMapCache.delete(partMapCache.keys().next().value!);
+  return loading;
 }
 
 

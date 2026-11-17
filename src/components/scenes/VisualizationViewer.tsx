@@ -47,7 +47,7 @@ function Icon({ name }: { name: 'close' | 'back' | 'plus' | 'minus' | 'reset' | 
 }
 
 export default function VisualizationViewer({ manifest: published, onClose, returnLabel, returnFocusElement, reviewControls }: Props) {
-  const manifest = useMemo(() => withAssetBase(published), [published]);
+  const manifest = useMemo(() => withAssetBase(published, import.meta.env.BASE_URL), [published]);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
@@ -101,8 +101,6 @@ export default function VisualizationViewer({ manifest: published, onClose, retu
   const secondDesign = designSplit && pair ? designById(pair.designs[1]) : undefined;
   const compareImage = poseCompareImage ?? (secondDesign ? manifest.images[imageKey(secondDesign.id, view.id, activeState)] : undefined);
   const split = !!compareImage;
-  const partMap1 = usePartMap(plate ? image?.partMap : undefined);
-  const partMap2 = usePartMap(plate ? compareImage?.partMap : undefined);
   const dragStart = useRef<Point | null>(null);
   const dragMoved = useRef(false);
   const comparison = manifest.states.find(item => item.id === compareId);
@@ -143,6 +141,9 @@ export default function VisualizationViewer({ manifest: published, onClose, retu
   const selectedAnnotation2 = plate ? resolveAnnotation(annotations2, selected) : undefined;
   const focus1 = plate && selectedId ? image?.focus?.[selectedId] ?? null : null;
   const focus2 = plate && selectedAnnotation2 ? compareImage?.focus?.[selectedAnnotation2.id] ?? null : null;
+  // Part maps are fetched only once a label with a focus entry is selected.
+  const partMap1 = usePartMap(focus1 ? image?.partMap : undefined);
+  const partMap2 = usePartMap(focus2 ? compareImage?.partMap : undefined);
   const sharedIds = pair?.sharedLabels ?? [];
   const largeOptions = largeText ? { rowHeight: LARGE_TEXT_ROW, widthScale: LARGE_TEXT_WIDTH } : {};
   /** Labels for one design pane: the selected label and shared labels, laid out within that pane. */
@@ -163,13 +164,15 @@ export default function VisualizationViewer({ manifest: published, onClose, retu
 
   useEffect(() => {
     const dialog = dialogRef.current;
+    // No dialog means the manifest has no image for the opening view: close, don't lock the page.
+    if (!dialog) { safeClose.current(); return; }
     const previousFocus = returnFocusElement ?? (document.activeElement instanceof HTMLElement ? document.activeElement : null);
     const oldOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     if (dialog && !dialog.open) dialog.showModal();
     closeRef.current?.focus();
     return () => {
-      dialog?.close();
+      dialog.close();
       document.body.style.overflow = oldOverflow;
       if (previousFocus?.isConnected) previousFocus.focus({ preventScroll: true });
     };
@@ -189,7 +192,8 @@ export default function VisualizationViewer({ manifest: published, onClose, retu
 
   const closeDetail = useCallback(() => {
     setSelected(null);
-    lastPinRef.current?.focus({ preventScroll: true });
+    const target = lastPinRef.current?.isConnected ? lastPinRef.current : stageRef.current;
+    target?.focus({ preventScroll: true });
   }, []);
   const closeInfo = useCallback(() => {
     setInfo(false);
@@ -334,7 +338,12 @@ export default function VisualizationViewer({ manifest: published, onClose, retu
   })() : [];
   const stepLabel = (item: { id: string; label: string }) => manifest.presentation?.stateLabels?.[item.id] ?? stateLabel(item, availableStates);
   const stepper = availableStates.length > 1 ? <div className="scene-plate-steps" role="group" aria-label="Pose">{grouped.map((group, groupIndex) => <div className="scene-plate-step-group" key={`${group.label}-${groupIndex}`}>{group.label && <div className="scene-plate-step-group-label">{group.label}</div>}<ol>{group.items.map(item => { stepNumber += 1; return <li key={item.id}><button type="button" className={item.id === activeState ? 'is-active' : ''} aria-pressed={item.id === activeState} disabled={designActive && !!pair && !pair.states.includes(item.id)} title={designActive && pair && !pair.states.includes(item.id) ? 'Not compared in this view' : item.note} aria-description={item.note} onClick={() => chooseState(item.id)}><span className="scene-plate-step-num">{stepNumber}</span><span className="scene-plate-step-text">{stepLabel(item)}</span></button></li>; })}</ol></div>)}</div> : null;
-  const labelRow = plateAnnotations.length ? <div className="scene-plate-labelrow" role="group" aria-label="Labels">{plateAnnotations.map((annotation, i) => <button type="button" key={annotation.id} className={selectedId === annotation.id ? 'is-selected' : ''} aria-pressed={selectedId === annotation.id} onClick={event => { lastPinRef.current = event.currentTarget; chooseAnnotation(annotation.id); }}><span className="scene-plate-key" aria-hidden="true">{keyLetter(i)}</span>{labelFor(annotation.id, annotation.label)}</button>)}</div> : null;
+  const paneLists = designSplit ? [paneCallouts(image, selectedId, false), compareImage ? paneCallouts(compareImage, selectedAnnotation2?.id ?? null, true) : []] : null;
+  // On wide screens the label row lists only labels the figure does not show (labels that did
+  // not fit, and all labels while comparing poses), so every label stays reachable.
+  const onFigure = narrowLayout ? null : new Set(compareImage ? (paneLists?.[0] ?? []).map(callout => callout.id) : showPins ? callouts.map(callout => callout.id) : plateAnnotations.map(annotation => annotation.id));
+  const rowAnnotations = onFigure ? plateAnnotations.filter(annotation => !onFigure.has(annotation.id)) : plateAnnotations;
+  const labelRow = rowAnnotations.length ? <div className={`scene-plate-labelrow ${onFigure ? 'is-wide' : ''}`} role="group" aria-label={onFigure ? 'More labels' : 'Labels'}>{rowAnnotations.map(annotation => <button type="button" key={annotation.id} className={selectedId === annotation.id ? 'is-selected' : ''} aria-pressed={selectedId === annotation.id} onClick={event => { lastPinRef.current = event.currentTarget; chooseAnnotation(annotation.id); }}>{!onFigure && <span className="scene-plate-key" aria-hidden="true">{keyLetter(plateAnnotations.indexOf(annotation))}</span>}{labelFor(annotation.id, annotation.label)}</button>)}</div> : null;
   const labelLayer = (list: ExternalCallout[], anns: typeof annotations, selId: string | null, focusOn: boolean, sz: Size) => <div className={`scene-plate-labels ${focusOn ? 'has-focus' : ''}`}>
     <svg className="scene-plate-leaders" width={sz.width} height={sz.height} aria-hidden="true">{list.map(callout => <g key={callout.id} className={selId === callout.id ? 'is-selected' : undefined}><line x1={callout.side === 'left' ? callout.x + callout.width : callout.x} y1={callout.y + callout.height / 2} x2={callout.anchor.x} y2={callout.anchor.y} /><circle cx={callout.anchor.x} cy={callout.anchor.y} r={selId === callout.id ? 3 : 2.5} /></g>)}</svg>
     {list.map(callout => { const annotation = anns.find(item => item.id === callout.id)!; return <button type="button" key={callout.id} className={`scene-plate-label is-${callout.side} ${callout.height > (largeText ? LARGE_TEXT_ROW : 24) + 1 ? 'is-wrap' : ''} ${selId === callout.id ? 'is-selected' : ''}`} style={{ left: callout.x, top: callout.y, width: callout.width, height: callout.height }} aria-pressed={selId === callout.id} onClick={event => { lastPinRef.current = event.currentTarget; chooseAnnotation(callout.id, anns); }}>{labelFor(annotation.id, annotation.label)}</button>; })}
@@ -342,7 +351,7 @@ export default function VisualizationViewer({ manifest: published, onClose, retu
   /** Per-pane figure furniture: design-comparison reference level and labels, and the figure key. */
   const paneOverlay = (img: NonNullable<typeof image>, anns: typeof annotations, selId: string | null, focusOn: boolean, second: boolean) => <>
     {designActive && img.reference && <ReferenceLine {...(({ y, x1, x2 }) => ({ y, x1, x2 }))(referencePlacement(img.reference.y, canvas, panelSize, viewport, img.contentBox))} label={img.reference.label} outer={(designSplit ? second : design.id === pair?.designs[1]) ? 'right' : 'left'} />}
-    {designSplit && imageStatus === 'loaded' && labelLayer(paneCallouts(img, selId, second), anns, selId, focusOn, panelSize)}
+    {paneLists && imageStatus === 'loaded' && labelLayer(paneLists[second ? 1 : 0], anns, selId, focusOn, panelSize)}
     <FigureKey image={img} second={second} colors={manifest.presentation?.keyColors} />
   </>;
   const plateWorkspace = plate ? <div className="scene-plate-grid">
@@ -382,7 +391,7 @@ export default function VisualizationViewer({ manifest: published, onClose, retu
       {designActive && pair && !narrowLayout ? <p className="scene-plate-caption" aria-live="polite">{pair.summary}</p> : !designActive && state?.note && <p className="scene-plate-caption" aria-live="polite">{state.note}</p>}
       {external && selected && !selectedAnnotation && <p className="scene-selection-unavailable" role="status">{selectedDefinition ? labelFor(Object.keys(manifest.annotations).find(id => manifest.annotations[id] === selectedDefinition) ?? '', selectedDefinition.label) : 'Selected landmark'} is unavailable in this view or state. Your selection is retained.</p>}
       {detailCard}
-      {(availableStates.length > 1 || pair) && <div className="scene-plate-compare">{availableStates.length > 1 && <button type="button" className={`scene-plate-link ${compareId ? 'is-active' : ''}`} aria-pressed={!!compareId} onClick={() => { setDesignMode(false); setCompareId(compareId ? null : comparisonState(view.states, activeState)); setViewport(INITIAL_VIEWPORT); }}>Compare poses</button>}{pair && !designActive && <button type="button" className="scene-plate-link" aria-pressed="false" onClick={enterDesigns}>Compare designs</button>}{designActive && <button type="button" className="scene-plate-link is-active" onClick={exitDesigns}>Exit comparison</button>}{compareId && <label className="scene-compare-select">With <select value={compareId} onChange={event => setCompareId(event.target.value)}>{availableStates.filter(item => item.id !== activeState).map(item => <option key={item.id} value={item.id}>{stepLabel(item)}</option>)}</select></label>}</div>}
+      {(availableStates.length > 1 || pair) && <div className="scene-plate-compare">{availableStates.length > 1 && <button type="button" className={`scene-plate-link ${compareId ? 'is-active' : ''}`} aria-pressed={!!compareId} onClick={() => { setDesignMode(false); setCompareId(compareId ? null : comparisonState(view.states, activeState)); setViewport(INITIAL_VIEWPORT); }}>Compare poses</button>}{pair && <button type="button" className={`scene-plate-link ${designActive ? 'is-active' : ''}`} aria-pressed={designActive} onClick={designActive ? exitDesigns : enterDesigns}>Compare designs</button>}{compareId && <label className="scene-compare-select">With <select value={compareId} onChange={event => setCompareId(event.target.value)}>{availableStates.filter(item => item.id !== activeState).map(item => <option key={item.id} value={item.id}>{stepLabel(item)}</option>)}</select></label>}</div>}
     </div>
     {info && <aside className="scene-panel scene-model-info" aria-label="About these illustrations"><div className="scene-panel-head"><h2 ref={infoRef} tabIndex={-1}>About these illustrations</h2><button type="button" className="scene-icon-btn" aria-label="Close notes" onClick={closeInfo}><Icon name="close" /></button></div><p>{manifest.scope}</p><h3>Anatomy and image context</h3><p>Sources below describe the anatomy used for these illustrations. Anatomy details, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and they do not establish product performance or clinical fit.</p><p>{manifest.attribution}</p><ol className="scene-sources">{manifest.sources.map(source => <li key={source.url}><a href={safeSourceURL(source.url)} target="_blank" rel="noreferrer">{source.title}<span aria-hidden="true"> ↗</span><span className="scene-sr-only"> (opens in a new tab)</span></a>{source.locator && <p>{source.locator}</p>}</li>)}</ol><h3>Keyboard and touch</h3><p>Use + and − to zoom and 0 to reset. Arrow keys move a zoomed view. At fit, left and right change views. Pinch to zoom on touch screens. Escape closes a detail, then the viewer.</p></aside>}
   </div> : null;
