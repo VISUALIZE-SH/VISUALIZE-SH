@@ -1,1 +1,1091 @@
-{"classId":"hf-pressure-sensors","conditionId":"cond-hfref","title":"HF pressure sensors","linkLabel":"Visualize device class","status":"Schematic","scope":"Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.","stageLabel":"Schematic · representative anatomy · not to scale","attribution":"Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.","sources":[{"title":"Toronto Heart Atlas","url":"https://github.com/tgh-apil/TorontoHeartAtlas","locator":"RegularHeart chamber and vessel meshes, CC BY 4.0."},{"title":"Creative Commons Attribution 4.0","url":"https://creativecommons.org/licenses/by/4.0/"},{"title":"NHLBI: How blood flows through the heart","url":"https://www.nhlbi.nih.gov/health/heart/blood-flow","locator":"Written heart-valve and circulation sections; no media reused."}],"legend":[{"label":"Representative tissue","color":"#ad77ca"},{"label":"Generic device","color":"#ffd358"},{"label":"Leaflets / fabric","color":"#f6dfc8"},{"label":"Suture / emphasis","color":"#35a8a0"}],"designs":[{"id":"generic","label":"Branch-artery sensor","summary":"A small sensing body with soft anchoring loops, illustrated in a branch pulmonary artery."}],"states":[{"id":"anatomy","label":"Artery alone","note":"Representative pose; dimensions and deformation are not measured on a specific patient or population."},{"id":"compact","label":"Loops compact","note":"Representative pose; dimensions and deformation are not measured on a specific patient or population."},{"id":"deployed","label":"Loops expanded","note":"Representative pose; dimensions and deformation are not measured on a specific patient or population."}],"views":[{"id":"heart","label":"Whole heart","title":"Locate the treatment region","lesson":"Use the highlighted region to orient the enlarged views.","states":["deployed"],"orientation":{"superior":{"x":0.0,"y":-0.9595},"patientRight":{"x":-0.8384,"y":-0.1535}}},{"id":"region","label":"Pulmonary artery branches","title":"Locate the sensor beyond the pulmonary trunk","lesson":"Seen from the left and above, the pulmonary trunk rises from the right ventricle and divides into the left and right pulmonary arteries. The near wall of the trunk and left branch is cut away. The vessels come from a real heart model with walls added. The sensor's position in the left branch is representative and is not measured on a specific patient or population.","states":["anatomy","compact","deployed"],"orientation":{"superior":{"x":0.0,"y":-0.8305},"patientRight":{"x":-0.7926,"y":-0.3396}}},{"id":"section","label":"Mechanism section","title":"See the tissue–device relationship","lesson":"The body stays small relative to the illustrated lumen; compare how the anchoring loops change shape.","states":["anatomy","compact","deployed"],"orientation":{"superior":{"x":0.0,"y":-0.9806},"patientRight":{"x":-1.0,"y":-0.0}}},{"id":"oblique","label":"Oblique detail","title":"Understand depth and attachment","lesson":"An oblique view separates the near surface, device and supporting tissue.","states":["anatomy","compact","deployed"],"orientation":{"superior":{"x":0.0,"y":-0.9698},"patientRight":{"x":-0.8384,"y":-0.1329}}},{"id":"face","label":"Face view","title":"Look along the opening","lesson":"The face view complements the section. All poses and proportions are representative, not measured.","states":["anatomy","compact","deployed"],"orientation":{"superior":{"x":0.0995,"y":0.2402},"patientRight":{"x":0.995,"y":-0.024}}}],"annotations":{"location":{"label":"TREATMENT LOCATION","body":"The highlighted region locates this class in the heart. The marker is enlarged for orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"wall":{"label":"BRANCH PULMONARY ARTERY","body":"The open wall is a representative section of an artery. Its lumen remains visible around the sensor.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"body":{"label":"SENSING BODY","body":"The generic capsule identifies the sensing element; electronics and calibration are not represented.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"anchor":{"label":"ANCHORING LOOPS","body":"Loops change from compact to expanded representative poses. They illustrate retention without predicting wall force.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_trunk":{"label":"PULMONARY TRUNK","body":"The main pulmonary artery leaves the right ventricle through the pulmonary valve opening and rises toward its branches.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_branch":{"label":"RIGHT PULMONARY ARTERY","body":"The right branch runs behind the aorta toward the right lung. It gives context for the branch that holds the sensor.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_target":{"label":"LEFT PULMONARY ARTERY","body":"The left branch arches backward toward the left lung. In this example the sensor sits in it, beyond the division of the trunk.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_RV":{"label":"RIGHT VENTRICLE","body":"The right ventricle pumps into the pulmonary trunk. It is shown for orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_body":{"label":"SENSING BODY","body":"The generic capsule lies along the branch, with blood flowing past it. Its position is representative.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_anchor":{"label":"ANCHORING LOOPS","body":"The loops change from compact to expanded poses and rest against the branch wall. They illustrate retention without predicting wall force.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"}},"images":{"generic/heart/deployed":{"src":"/scenes/hf-pressure-sensors/images/generic__heart__deployed.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__heart__deployed.thumb.webp","alt":"Branch-artery sensor: Locate the treatment region. Loops expanded. Schematic, representative illustration.","pins":[{"id":"location","x":0.64064,"y":0.26613}]},"generic/region/anatomy":{"src":"/scenes/hf-pressure-sensors/images/generic__region__anatomy.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__region__anatomy.thumb.webp","alt":"Branch-artery sensor: Locate the sensor beyond the pulmonary trunk. Artery alone. Schematic, representative illustration.","pins":[{"id":"region_trunk","x":0.53625,"y":0.44616},{"id":"region_target","x":0.68364,"y":0.27772},{"id":"region_branch","x":0.39991,"y":0.1161},{"id":"region_RV","x":0.50911,"y":0.93864}]},"generic/region/compact":{"src":"/scenes/hf-pressure-sensors/images/generic__region__compact.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__region__compact.thumb.webp","alt":"Branch-artery sensor: Locate the sensor beyond the pulmonary trunk. Loops compact. Schematic, representative illustration.","pins":[{"id":"region_trunk","x":0.53625,"y":0.44616},{"id":"region_target","x":0.68364,"y":0.27772},{"id":"region_branch","x":0.39991,"y":0.1161},{"id":"region_RV","x":0.50911,"y":0.93864},{"id":"region_body","x":0.58315,"y":0.17869},{"id":"region_anchor","x":0.66945,"y":0.18678}]},"generic/region/deployed":{"src":"/scenes/hf-pressure-sensors/images/generic__region__deployed.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__region__deployed.thumb.webp","alt":"Branch-artery sensor: Locate the sensor beyond the pulmonary trunk. Loops expanded. Schematic, representative illustration.","pins":[{"id":"region_trunk","x":0.53625,"y":0.44616},{"id":"region_target","x":0.68364,"y":0.27772},{"id":"region_branch","x":0.39991,"y":0.1161},{"id":"region_RV","x":0.50911,"y":0.93864},{"id":"region_body","x":0.58315,"y":0.17869},{"id":"region_anchor","x":0.67346,"y":0.19992}]},"generic/section/anatomy":{"src":"/scenes/hf-pressure-sensors/images/generic__section__anatomy.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__section__anatomy.thumb.webp","alt":"Branch-artery sensor: See the tissue–device relationship. Artery alone. Schematic, representative illustration.","pins":[{"id":"wall","x":0.35897,"y":0.34914}]},"generic/section/compact":{"src":"/scenes/hf-pressure-sensors/images/generic__section__compact.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__section__compact.thumb.webp","alt":"Branch-artery sensor: See the tissue–device relationship. Loops compact. Schematic, representative illustration.","pins":[{"id":"wall","x":0.35897,"y":0.34914},{"id":"body","x":0.5,"y":0.51643},{"id":"anchor","x":0.5,"y":0.39205}]},"generic/section/deployed":{"src":"/scenes/hf-pressure-sensors/images/generic__section__deployed.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__section__deployed.thumb.webp","alt":"Branch-artery sensor: See the tissue–device relationship. Loops expanded. Schematic, representative illustration.","pins":[{"id":"wall","x":0.35897,"y":0.34914},{"id":"body","x":0.5,"y":0.51643},{"id":"anchor","x":0.5,"y":0.35685}]},"generic/oblique/anatomy":{"src":"/scenes/hf-pressure-sensors/images/generic__oblique__anatomy.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__oblique__anatomy.thumb.webp","alt":"Branch-artery sensor: Understand depth and attachment. Artery alone. Schematic, representative illustration.","pins":[{"id":"wall","x":0.38176,"y":0.3258}]},"generic/oblique/compact":{"src":"/scenes/hf-pressure-sensors/images/generic__oblique__compact.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__oblique__compact.thumb.webp","alt":"Branch-artery sensor: Understand depth and attachment. Loops compact. Schematic, representative illustration.","pins":[{"id":"wall","x":0.38176,"y":0.3258},{"id":"body","x":0.46576,"y":0.51713},{"id":"anchor","x":0.4979,"y":0.6088}]},"generic/oblique/deployed":{"src":"/scenes/hf-pressure-sensors/images/generic__oblique__deployed.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__oblique__deployed.thumb.webp","alt":"Branch-artery sensor: Understand depth and attachment. Loops expanded. Schematic, representative illustration.","pins":[{"id":"wall","x":0.38176,"y":0.3258},{"id":"body","x":0.46576,"y":0.51713},{"id":"anchor","x":0.57127,"y":0.57209}]},"generic/face/anatomy":{"src":"/scenes/hf-pressure-sensors/images/generic__face__anatomy.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__face__anatomy.thumb.webp","alt":"Branch-artery sensor: Look along the opening. Artery alone. Schematic, representative illustration.","pins":[{"id":"wall","x":0.65181,"y":0.53244}]},"generic/face/compact":{"src":"/scenes/hf-pressure-sensors/images/generic__face__compact.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__face__compact.thumb.webp","alt":"Branch-artery sensor: Look along the opening. Loops compact. Schematic, representative illustration.","pins":[{"id":"wall","x":0.65181,"y":0.53244},{"id":"body","x":0.5,"y":0.41872},{"id":"anchor","x":0.50829,"y":0.52171}]},"generic/face/deployed":{"src":"/scenes/hf-pressure-sensors/images/generic__face__deployed.webp","thumb":"/scenes/hf-pressure-sensors/images/generic__face__deployed.thumb.webp","alt":"Branch-artery sensor: Look along the opening. Loops expanded. Schematic, representative illustration.","pins":[{"id":"wall","x":0.65181,"y":0.53244},{"id":"body","x":0.5,"y":0.41872},{"id":"anchor","x":0.49171,"y":0.64251}]}}}
+{
+ "classId": "hf-pressure-sensors",
+ "conditionId": "cond-hfref",
+ "title": "HF pressure sensors",
+ "linkLabel": "Visualize device class",
+ "status": "Schematic",
+ "scope": "Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.",
+ "stageLabel": "Schematic \u00b7 representative anatomy \u00b7 not to scale",
+ "attribution": "Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.",
+ "sources": [
+  {
+   "title": "Toronto Heart Atlas",
+   "url": "https://github.com/tgh-apil/TorontoHeartAtlas",
+   "locator": "RegularHeart chamber and vessel meshes, CC BY 4.0."
+  },
+  {
+   "title": "Creative Commons Attribution 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "title": "NHLBI: How blood flows through the heart",
+   "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+   "locator": "Written heart-valve and circulation sections; no media reused."
+  }
+ ],
+ "legend": [
+  {
+   "label": "Representative tissue",
+   "color": "#ad77ca"
+  },
+  {
+   "label": "Generic device",
+   "color": "#ffd358"
+  },
+  {
+   "label": "Leaflets / fabric",
+   "color": "#f6dfc8"
+  },
+  {
+   "label": "Suture / emphasis",
+   "color": "#35a8a0"
+  }
+ ],
+ "designs": [
+  {
+   "id": "generic",
+   "label": "Branch-artery sensor",
+   "summary": "A small sensing body with soft anchoring loops, illustrated in a branch pulmonary artery."
+  }
+ ],
+ "states": [
+  {
+   "id": "anatomy",
+   "label": "Artery alone",
+   "note": "Representative pose; dimensions and deformation are not measured on a specific patient or population."
+  },
+  {
+   "id": "compact",
+   "label": "Loops compact",
+   "note": "Representative pose; dimensions and deformation are not measured on a specific patient or population."
+  },
+  {
+   "id": "deployed",
+   "label": "Loops expanded",
+   "note": "Representative pose; dimensions and deformation are not measured on a specific patient or population."
+  }
+ ],
+ "views": [
+  {
+   "id": "heart",
+   "label": "Whole heart",
+   "title": "Locate the treatment region",
+   "lesson": "The highlighted region orients the enlarged views.",
+   "states": [
+    "deployed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9595
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1535
+    }
+   }
+  },
+  {
+   "id": "region",
+   "label": "Pulmonary artery branches",
+   "title": "Locate the sensor beyond the pulmonary trunk",
+   "lesson": "The pulmonary trunk divides into the left and right arteries. The sensor position in the left branch is representative.",
+   "states": [
+    "anatomy",
+    "compact",
+    "deployed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.8305
+    },
+    "patientRight": {
+     "x": -0.7926,
+     "y": -0.3396
+    }
+   },
+   "presentation": {
+    "directionCaption": "Pulmonary artery branches",
+    "representation": "representative-view",
+    "regionLabel": "HF pressure sensors"
+   }
+  },
+  {
+   "id": "section",
+   "label": "Mechanism section",
+   "title": "See the tissue\u2013device relationship",
+   "lesson": "The body stays small relative to the lumen; compare how the anchoring loops change shape.",
+   "states": [
+    "anatomy",
+    "compact",
+    "deployed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9806
+    },
+    "patientRight": {
+     "x": -1.0,
+     "y": -0.0
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen from the front",
+    "representation": "representative-section",
+    "regionLabel": "HF pressure sensors"
+   }
+  },
+  {
+   "id": "oblique",
+   "label": "Oblique detail",
+   "title": "Understand depth and attachment",
+   "lesson": "An oblique view separates the near surface, device and supporting tissue.",
+   "states": [
+    "anatomy",
+    "compact",
+    "deployed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9698
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1329
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen at an angle",
+    "representation": "representative-section",
+    "regionLabel": "HF pressure sensors"
+   }
+  },
+  {
+   "id": "face",
+   "label": "Face view",
+   "title": "Look along the opening",
+   "lesson": "A face view complements the section. Poses and proportions are representative.",
+   "states": [
+    "anatomy",
+    "compact",
+    "deployed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0995,
+     "y": 0.2402
+    },
+    "patientRight": {
+     "x": 0.995,
+     "y": -0.024
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen along the opening",
+    "representation": "representative-section",
+    "regionLabel": "HF pressure sensors"
+   }
+  }
+ ],
+ "annotations": {
+  "location": {
+   "label": "TREATMENT LOCATION",
+   "body": "The highlighted region locates this class in the heart. The marker is enlarged for orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "wall": {
+   "label": "BRANCH PULMONARY ARTERY",
+   "body": "The open wall is a representative section of an artery. Its lumen remains visible around the sensor.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "body": {
+   "label": "SENSING BODY",
+   "body": "The generic capsule identifies the sensing element; electronics and calibration are not represented.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "hf-pressure-sensors.body"
+  },
+  "anchor": {
+   "label": "ANCHORING LOOPS",
+   "body": "Loops change from compact to expanded representative poses. They illustrate retention without predicting wall force.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "hf-pressure-sensors.anchor"
+  },
+  "region_trunk": {
+   "label": "PULMONARY TRUNK",
+   "body": "The main pulmonary artery leaves the right ventricle through the pulmonary valve opening and rises toward its branches.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_branch": {
+   "label": "RIGHT PULMONARY ARTERY",
+   "body": "The right branch runs behind the aorta toward the right lung. It gives context for the branch that holds the sensor.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_target": {
+   "label": "LEFT PULMONARY ARTERY",
+   "body": "The left branch arches backward toward the left lung. In this example the sensor sits in it, beyond the division of the trunk.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_RV": {
+   "label": "RIGHT VENTRICLE",
+   "body": "The right ventricle pumps into the pulmonary trunk. It is shown for orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_body": {
+   "label": "SENSING BODY",
+   "body": "The generic capsule lies along the branch, with blood flowing past it. Its position is representative.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "hf-pressure-sensors.body"
+  },
+  "region_anchor": {
+   "label": "ANCHORING LOOPS",
+   "body": "The loops change from compact to expanded poses and rest against the branch wall. They illustrate retention without predicting wall force.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "hf-pressure-sensors.anchor"
+  }
+ },
+ "images": {
+  "generic/heart/deployed": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__heart__deployed.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__heart__deployed.thumb.webp",
+   "alt": "Branch-artery sensor: Locate the treatment region. Loops expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.64064,
+     "y": 0.26613
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__heart__deployed.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__heart__deployed.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      22
+     ]
+    }
+   },
+   "keys": []
+  },
+  "generic/region/anatomy": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__region__anatomy.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__region__anatomy.thumb.webp",
+   "alt": "Branch-artery sensor: Locate the sensor beyond the pulmonary trunk. Artery alone. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_trunk",
+     "x": 0.44955,
+     "y": 0.3722
+    },
+    {
+     "id": "region_target",
+     "x": 0.70828,
+     "y": 0.12837
+    },
+    {
+     "id": "region_branch",
+     "x": 0.35052,
+     "y": 0.16439
+    },
+    {
+     "id": "region_RV",
+     "x": 0.42545,
+     "y": 0.87405
+    }
+   ],
+   "camera": "078071b18e2c0e9d",
+   "contentBox": {
+    "x": 0.1117,
+    "y": 0.0344,
+    "width": 0.7767,
+    "height": 0.9311
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__region__anatomy.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__region__anatomy.parts.png",
+   "focus": {
+    "region_trunk": {
+     "parts": [
+      7
+     ],
+     "ghost": {
+      "src": "/scenes/hf-pressure-sensors/images/generic__region__anatomy.ghost-7.webp",
+      "x": 0.27666666666666667,
+      "y": 0.05555555555555555,
+      "width": 0.5975,
+      "height": 0.6788888888888889
+     }
+    },
+    "region_target": {
+     "parts": [
+      8
+     ],
+     "ghost": {
+      "src": "/scenes/hf-pressure-sensors/images/generic__region__anatomy.ghost-8.webp",
+      "x": 0.26166666666666666,
+      "y": 0.034444444444444444,
+      "width": 0.6266666666666667,
+      "height": 0.5655555555555556
+     }
+    },
+    "region_branch": {
+     "parts": [
+      6
+     ],
+     "ghost": {
+      "src": "/scenes/hf-pressure-sensors/images/generic__region__anatomy.ghost-6.webp",
+      "x": 0.25333333333333335,
+      "y": 0.034444444444444444,
+      "width": 0.635,
+      "height": 0.7355555555555555
+     }
+    },
+    "region_RV": {
+     "parts": [
+      9
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "generic/region/compact": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__region__compact.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__region__compact.thumb.webp",
+   "alt": "Branch-artery sensor: Locate the sensor beyond the pulmonary trunk. Loops compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_trunk",
+     "x": 0.44955,
+     "y": 0.3722
+    },
+    {
+     "id": "region_target",
+     "x": 0.70828,
+     "y": 0.12837
+    },
+    {
+     "id": "region_branch",
+     "x": 0.35052,
+     "y": 0.16439
+    },
+    {
+     "id": "region_RV",
+     "x": 0.42545,
+     "y": 0.87405
+    },
+    {
+     "id": "region_body",
+     "x": 0.58315,
+     "y": 0.17869
+    },
+    {
+     "id": "region_anchor",
+     "x": 0.66843,
+     "y": 0.18781
+    }
+   ],
+   "camera": "078071b18e2c0e9d",
+   "contentBox": {
+    "x": 0.1117,
+    "y": 0.0344,
+    "width": 0.7767,
+    "height": 0.9311
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__region__compact.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__region__compact.parts.png",
+   "focus": {
+    "region_trunk": {
+     "parts": [
+      7
+     ],
+     "ghost": {
+      "src": "/scenes/hf-pressure-sensors/images/generic__region__compact.ghost-7.webp",
+      "x": 0.27666666666666667,
+      "y": 0.05555555555555555,
+      "width": 0.5975,
+      "height": 0.6788888888888889
+     }
+    },
+    "region_target": {
+     "parts": [
+      8
+     ],
+     "ghost": {
+      "src": "/scenes/hf-pressure-sensors/images/generic__region__compact.ghost-8.webp",
+      "x": 0.26166666666666666,
+      "y": 0.034444444444444444,
+      "width": 0.6266666666666667,
+      "height": 0.5655555555555556
+     }
+    },
+    "region_branch": {
+     "parts": [
+      6
+     ],
+     "ghost": {
+      "src": "/scenes/hf-pressure-sensors/images/generic__region__compact.ghost-6.webp",
+      "x": 0.25333333333333335,
+      "y": 0.034444444444444444,
+      "width": 0.635,
+      "height": 0.7355555555555555
+     }
+    },
+    "region_RV": {
+     "parts": [
+      9
+     ]
+    },
+    "region_body": {
+     "parts": [
+      12
+     ]
+    },
+    "region_anchor": {
+     "parts": [
+      13
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "generic/region/deployed": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__region__deployed.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__region__deployed.thumb.webp",
+   "alt": "Branch-artery sensor: Locate the sensor beyond the pulmonary trunk. Loops expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_trunk",
+     "x": 0.44955,
+     "y": 0.3722
+    },
+    {
+     "id": "region_target",
+     "x": 0.70828,
+     "y": 0.12837
+    },
+    {
+     "id": "region_branch",
+     "x": 0.35052,
+     "y": 0.16439
+    },
+    {
+     "id": "region_RV",
+     "x": 0.42545,
+     "y": 0.87405
+    },
+    {
+     "id": "region_body",
+     "x": 0.58315,
+     "y": 0.17869
+    },
+    {
+     "id": "region_anchor",
+     "x": 0.6718,
+     "y": 0.2015
+    }
+   ],
+   "camera": "078071b18e2c0e9d",
+   "contentBox": {
+    "x": 0.1117,
+    "y": 0.0344,
+    "width": 0.7767,
+    "height": 0.9311
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__region__deployed.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__region__deployed.parts.png",
+   "focus": {
+    "region_trunk": {
+     "parts": [
+      7,
+      15
+     ],
+     "ghost": {
+      "src": "/scenes/hf-pressure-sensors/images/generic__region__deployed.ghost-7.webp",
+      "x": 0.27666666666666667,
+      "y": 0.05555555555555555,
+      "width": 0.5975,
+      "height": 0.6788888888888889
+     }
+    },
+    "region_target": {
+     "parts": [
+      8,
+      15
+     ],
+     "ghost": {
+      "src": "/scenes/hf-pressure-sensors/images/generic__region__deployed.ghost-8.webp",
+      "x": 0.26166666666666666,
+      "y": 0.034444444444444444,
+      "width": 0.6266666666666667,
+      "height": 0.5655555555555556
+     }
+    },
+    "region_branch": {
+     "parts": [
+      6
+     ],
+     "ghost": {
+      "src": "/scenes/hf-pressure-sensors/images/generic__region__deployed.ghost-6.webp",
+      "x": 0.25333333333333335,
+      "y": 0.034444444444444444,
+      "width": 0.635,
+      "height": 0.7355555555555555
+     }
+    },
+    "region_RV": {
+     "parts": [
+      9
+     ]
+    },
+    "region_body": {
+     "parts": [
+      14
+     ]
+    },
+    "region_anchor": {
+     "parts": [
+      15,
+      7,
+      8
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "generic/section/anatomy": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__section__anatomy.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__section__anatomy.thumb.webp",
+   "alt": "Branch-artery sensor: See the tissue\u2013device relationship. Artery alone. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.37179,
+     "y": 0.28545
+    }
+   ],
+   "camera": "9dada3ba63a62837",
+   "contentBox": {
+    "x": 0.3392,
+    "y": 0.0689,
+    "width": 0.3217,
+    "height": 0.81
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__section__anatomy.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__section__anatomy.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/hf-pressure-sensors/images/generic__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.6097,
+    "y": 0.1701,
+    "r": 0.0832
+   }
+  },
+  "generic/section/compact": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__section__compact.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__section__compact.thumb.webp",
+   "alt": "Branch-artery sensor: See the tissue\u2013device relationship. Loops compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.37179,
+     "y": 0.28545
+    },
+    {
+     "id": "body",
+     "x": 0.5,
+     "y": 0.51643
+    },
+    {
+     "id": "anchor",
+     "x": 0.5,
+     "y": 0.39205
+    }
+   ],
+   "camera": "9dada3ba63a62837",
+   "contentBox": {
+    "x": 0.3392,
+    "y": 0.0689,
+    "width": 0.3217,
+    "height": 0.81
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__section__compact.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__section__compact.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      1
+     ]
+    },
+    "body": {
+     "parts": [
+      2
+     ]
+    },
+    "anchor": {
+     "parts": [
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/hf-pressure-sensors/images/generic__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.6097,
+    "y": 0.1729,
+    "r": 0.0723
+   }
+  },
+  "generic/section/deployed": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__section__deployed.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__section__deployed.thumb.webp",
+   "alt": "Branch-artery sensor: See the tissue\u2013device relationship. Loops expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.37179,
+     "y": 0.28545
+    },
+    {
+     "id": "body",
+     "x": 0.5,
+     "y": 0.51643
+    },
+    {
+     "id": "anchor",
+     "x": 0.5,
+     "y": 0.35685
+    }
+   ],
+   "camera": "9dada3ba63a62837",
+   "contentBox": {
+    "x": 0.3392,
+    "y": 0.0689,
+    "width": 0.3217,
+    "height": 0.81
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__section__deployed.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__section__deployed.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      1
+     ]
+    },
+    "body": {
+     "parts": [
+      4
+     ]
+    },
+    "anchor": {
+     "parts": [
+      5
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/hf-pressure-sensors/images/generic__region__deployed.thumb.webp",
+    "view": "region",
+    "x": 0.6097,
+    "y": 0.1701,
+    "r": 0.0832
+   }
+  },
+  "generic/oblique/anatomy": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__oblique__anatomy.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__oblique__anatomy.thumb.webp",
+   "alt": "Branch-artery sensor: Understand depth and attachment. Artery alone. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.42046,
+     "y": 0.26436
+    }
+   ],
+   "camera": "ef951e255c021b06",
+   "contentBox": {
+    "x": 0.3871,
+    "y": 0.0628,
+    "width": 0.2792,
+    "height": 0.8378
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__oblique__anatomy.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/hf-pressure-sensors/images/generic__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.6097,
+    "y": 0.1701,
+    "r": 0.0832
+   }
+  },
+  "generic/oblique/compact": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__oblique__compact.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__oblique__compact.thumb.webp",
+   "alt": "Branch-artery sensor: Understand depth and attachment. Loops compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.42046,
+     "y": 0.26436
+    },
+    {
+     "id": "body",
+     "x": 0.46926,
+     "y": 0.46565
+    },
+    {
+     "id": "anchor",
+     "x": 0.4979,
+     "y": 0.6088
+    }
+   ],
+   "camera": "ef951e255c021b06",
+   "contentBox": {
+    "x": 0.3871,
+    "y": 0.0628,
+    "width": 0.2792,
+    "height": 0.8378
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__oblique__compact.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__oblique__compact.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      1
+     ]
+    },
+    "body": {
+     "parts": [
+      2
+     ]
+    },
+    "anchor": {
+     "parts": [
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/hf-pressure-sensors/images/generic__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.6097,
+    "y": 0.1729,
+    "r": 0.0723
+   }
+  },
+  "generic/oblique/deployed": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__oblique__deployed.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__oblique__deployed.thumb.webp",
+   "alt": "Branch-artery sensor: Understand depth and attachment. Loops expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.42046,
+     "y": 0.26436
+    },
+    {
+     "id": "body",
+     "x": 0.46926,
+     "y": 0.46565
+    },
+    {
+     "id": "anchor",
+     "x": 0.57127,
+     "y": 0.57209
+    }
+   ],
+   "camera": "ef951e255c021b06",
+   "contentBox": {
+    "x": 0.3625,
+    "y": 0.0628,
+    "width": 0.3038,
+    "height": 0.8378
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__oblique__deployed.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__oblique__deployed.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      1
+     ]
+    },
+    "body": {
+     "parts": [
+      4
+     ]
+    },
+    "anchor": {
+     "parts": [
+      5
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/hf-pressure-sensors/images/generic__region__deployed.thumb.webp",
+    "view": "region",
+    "x": 0.6097,
+    "y": 0.1701,
+    "r": 0.0832
+   }
+  },
+  "generic/face/anatomy": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__face__anatomy.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__face__anatomy.thumb.webp",
+   "alt": "Branch-artery sensor: Look along the opening. Artery alone. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.64288,
+     "y": 0.61152
+    }
+   ],
+   "camera": "1f871c422fcc0ad2",
+   "contentBox": {
+    "x": 0.3104,
+    "y": 0.4444,
+    "width": 0.3792,
+    "height": 0.3644
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__face__anatomy.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__face__anatomy.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/hf-pressure-sensors/images/generic__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.6097,
+    "y": 0.1701,
+    "r": 0.0832
+   }
+  },
+  "generic/face/compact": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__face__compact.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__face__compact.thumb.webp",
+   "alt": "Branch-artery sensor: Look along the opening. Loops compact. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.64288,
+     "y": 0.61152
+    },
+    {
+     "id": "body",
+     "x": 0.5,
+     "y": 0.41872
+    },
+    {
+     "id": "anchor",
+     "x": 0.50829,
+     "y": 0.52171
+    }
+   ],
+   "camera": "1f871c422fcc0ad2",
+   "contentBox": {
+    "x": 0.3104,
+    "y": 0.3694,
+    "width": 0.3792,
+    "height": 0.4394
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__face__compact.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__face__compact.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      1
+     ]
+    },
+    "body": {
+     "parts": [
+      2
+     ]
+    },
+    "anchor": {
+     "parts": [
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/hf-pressure-sensors/images/generic__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.6097,
+    "y": 0.1729,
+    "r": 0.0723
+   }
+  },
+  "generic/face/deployed": {
+   "src": "/scenes/hf-pressure-sensors/images/generic__face__deployed.webp",
+   "thumb": "/scenes/hf-pressure-sensors/images/generic__face__deployed.thumb.webp",
+   "alt": "Branch-artery sensor: Look along the opening. Loops expanded. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.64288,
+     "y": 0.61152
+    },
+    {
+     "id": "body",
+     "x": 0.50383,
+     "y": 0.43933
+    },
+    {
+     "id": "anchor",
+     "x": 0.49171,
+     "y": 0.64251
+    }
+   ],
+   "camera": "1f871c422fcc0ad2",
+   "contentBox": {
+    "x": 0.3104,
+    "y": 0.2944,
+    "width": 0.3792,
+    "height": 0.5144
+   },
+   "mid": "/scenes/hf-pressure-sensors/images/generic__face__deployed.mid.webp",
+   "partMap": "/scenes/hf-pressure-sensors/images/generic__face__deployed.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      1
+     ]
+    },
+    "body": {
+     "parts": [
+      4
+     ]
+    },
+    "anchor": {
+     "parts": [
+      5
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/hf-pressure-sensors/images/generic__region__deployed.thumb.webp",
+    "view": "region",
+    "x": 0.6097,
+    "y": 0.1701,
+    "r": 0.0832
+   }
+  }
+ },
+ "presentation": {
+  "annotationMode": "external",
+  "layout": "plate",
+  "labels": {
+   "location": "Treatment location",
+   "wall": "Branch artery",
+   "body": "Sensing body",
+   "anchor": "Anchoring loops",
+   "region_trunk": "Pulmonary trunk",
+   "region_branch": "Right pulmonary artery",
+   "region_target": "Left pulmonary artery",
+   "region_RV": "Right ventricle",
+   "region_body": "Sensing body",
+   "region_anchor": "Anchoring loops"
+  },
+  "stateLabels": {
+   "anatomy": "Artery alone",
+   "compact": "Loops compact",
+   "deployed": "Loops expanded"
+  },
+  "stateGroups": [
+   {
+    "label": "Anatomy",
+    "states": [
+     "anatomy"
+    ]
+   },
+   {
+    "label": "With sensor",
+    "states": [
+     "compact",
+     "deployed"
+    ]
+   }
+  ],
+  "keyColors": {
+   "cut": "#415c4d"
+  }
+ }
+}

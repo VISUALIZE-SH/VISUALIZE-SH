@@ -1,1 +1,1049 @@
-{"classId":"lv-restoration","conditionId":"cond-ischemic-lv-remodeling","title":"Left ventricular restoration","linkLabel":"Visualize device class","status":"Schematic","scope":"Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.","stageLabel":"Schematic · representative anatomy · not to scale","attribution":"Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.","sources":[{"title":"Toronto Heart Atlas","url":"https://github.com/tgh-apil/TorontoHeartAtlas","locator":"RegularHeart chamber and vessel meshes, CC BY 4.0."},{"title":"Creative Commons Attribution 4.0","url":"https://creativecommons.org/licenses/by/4.0/"},{"title":"NHLBI: How blood flows through the heart","url":"https://www.nhlbi.nih.gov/health/heart/blood-flow","locator":"Written heart-valve and circulation sections; no media reused."}],"legend":[{"label":"Representative tissue","color":"#ad77ca"},{"label":"Generic device","color":"#ffd358"},{"label":"Leaflets / fabric","color":"#f6dfc8"},{"label":"Suture / emphasis","color":"#35a8a0"}],"designs":[{"id":"generic","label":"Anchor and cinch","summary":"Paired anchors and a connecting element illustrate approximation of a representative ventricular region."}],"states":[{"id":"anatomy","label":"Representative enlarged region","note":"Representative pose; dimensions and deformation are not measured on a specific patient or population."},{"id":"placed","label":"Anchors placed","note":"Representative pose; dimensions and deformation are not measured on a specific patient or population."},{"id":"cinched","label":"Region approximated","note":"Representative pose; dimensions and deformation are not measured on a specific patient or population."}],"views":[{"id":"heart","label":"Whole heart","title":"Locate the treatment region","lesson":"Use the highlighted region to orient the enlarged views.","states":["cinched"],"orientation":{"superior":{"x":0.0,"y":-0.9595},"patientRight":{"x":-0.8384,"y":-0.1535}}},{"id":"region","label":"Ventricles","title":"Orient the treated ventricular region","lesson":"Seen from the left, both ventricles are cut open along the length of the left ventricle. One anchor sits on the right ventricular side of the septum and the other on the outside of the left ventricular wall; the connecting element crosses the left ventricular cavity. The chambers come from a real heart model with walls added. The anchor positions and the drawn-in wall are representative and are not measured on a specific patient or population.","states":["anatomy","placed","cinched"],"orientation":{"superior":{"x":-0.0,"y":-0.9714},"patientRight":{"x":-0.3714,"y":-0.2204}}},{"id":"section","label":"Mechanism section","title":"See the tissue–device relationship","lesson":"Use the fixed section to compare the marked region before and after the posed approximation.","states":["anatomy","placed","cinched"],"orientation":{"superior":{"x":0.0,"y":-0.9806},"patientRight":{"x":-1.0,"y":-0.0}}},{"id":"oblique","label":"Oblique detail","title":"Understand depth and attachment","lesson":"An oblique view separates the near surface, device and supporting tissue.","states":["anatomy","placed","cinched"],"orientation":{"superior":{"x":0.0,"y":-0.9698},"patientRight":{"x":-0.8384,"y":-0.1329}}},{"id":"face","label":"Alternate section","title":"See the relationship from another side","lesson":"This alternate view keeps the same representative geometry and state.","states":["anatomy","placed","cinched"],"orientation":{"superior":{"x":0.0,"y":-0.9918},"patientRight":{"x":-0.8575,"y":0.0656}}}],"annotations":{"location":{"label":"TREATMENT LOCATION","body":"The highlighted region locates this class in the heart. The marker is enlarged for orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"wall":{"label":"REPRESENTATIVE VENTRICULAR WALL","body":"A smooth sectional chamber is representative and is not measured on a specific patient or population.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"anchor":{"label":"PAIRED ANCHORS","body":"Two generic fixation elements mark the ends of a connecting element.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"link":{"label":"CONNECTING ELEMENT","body":"A shorter representative span brings the two anchored walls inward. This is a posed comparison, not tissue simulation.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_LV":{"label":"LEFT VENTRICLE","body":"The near part of the left ventricle is cut away to show its cavity. In the cinched pose the walls near the anchors are drawn inward; elsewhere the chamber is unchanged.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_septum":{"label":"VENTRICULAR SEPTUM","body":"The septum is the shared wall between the two ventricles. One anchor rests on its right ventricular side.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_RV":{"label":"RIGHT VENTRICLE","body":"The right ventricle wraps around the septum. Its near wall is cut away to show the septal anchor.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_anchor":{"label":"PAIRED ANCHORS","body":"One generic anchor sits on the outside of the left ventricular wall and the other on the septum, facing the right ventricle. Their positions are representative.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_link":{"label":"CONNECTING ELEMENT","body":"The element crosses the left ventricular cavity between the anchors. Shortening it draws the two walls toward each other; this is a posed comparison, not tissue simulation.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"}},"images":{"generic/heart/cinched":{"src":"/scenes/lv-restoration/images/generic__heart__cinched.webp","thumb":"/scenes/lv-restoration/images/generic__heart__cinched.thumb.webp","alt":"Anchor and cinch: Locate the treatment region. Region approximated. Schematic, representative illustration.","pins":[{"id":"location","x":0.59223,"y":0.6729}]},"generic/region/anatomy":{"src":"/scenes/lv-restoration/images/generic__region__anatomy.webp","thumb":"/scenes/lv-restoration/images/generic__region__anatomy.thumb.webp","alt":"Anchor and cinch: Orient the treated ventricular region. Representative enlarged region. Schematic, representative illustration.","pins":[{"id":"region_LV","x":0.47639,"y":0.77834},{"id":"region_septum","x":0.47429,"y":0.25882},{"id":"region_RV","x":0.27377,"y":0.69872}]},"generic/region/placed":{"src":"/scenes/lv-restoration/images/generic__region__placed.webp","thumb":"/scenes/lv-restoration/images/generic__region__placed.thumb.webp","alt":"Anchor and cinch: Orient the treated ventricular region. Anchors placed. Schematic, representative illustration.","pins":[{"id":"region_LV","x":0.47639,"y":0.77834},{"id":"region_septum","x":0.47429,"y":0.25882},{"id":"region_RV","x":0.27377,"y":0.69872},{"id":"region_anchor","x":0.74508,"y":0.69049},{"id":"region_link","x":0.50475,"y":0.40342}]},"generic/region/cinched":{"src":"/scenes/lv-restoration/images/generic__region__cinched.webp","thumb":"/scenes/lv-restoration/images/generic__region__cinched.thumb.webp","alt":"Anchor and cinch: Orient the treated ventricular region. Region approximated. Schematic, representative illustration.","pins":[{"id":"region_LV","x":0.47639,"y":0.77834},{"id":"region_septum","x":0.47429,"y":0.25882},{"id":"region_RV","x":0.27377,"y":0.69872},{"id":"region_anchor","x":0.70551,"y":0.64326},{"id":"region_link","x":0.51662,"y":0.41759}]},"generic/section/anatomy":{"src":"/scenes/lv-restoration/images/generic__section__anatomy.webp","thumb":"/scenes/lv-restoration/images/generic__section__anatomy.thumb.webp","alt":"Anchor and cinch: See the tissue–device relationship. Representative enlarged region. Schematic, representative illustration.","pins":[{"id":"wall","x":0.30112,"y":0.44582}]},"generic/section/placed":{"src":"/scenes/lv-restoration/images/generic__section__placed.webp","thumb":"/scenes/lv-restoration/images/generic__section__placed.thumb.webp","alt":"Anchor and cinch: See the tissue–device relationship. Anchors placed. Schematic, representative illustration.","pins":[{"id":"wall","x":0.30112,"y":0.44582},{"id":"anchor","x":0.71082,"y":0.67877},{"id":"link","x":0.5,"y":0.70545}]},"generic/section/cinched":{"src":"/scenes/lv-restoration/images/generic__section__cinched.webp","thumb":"/scenes/lv-restoration/images/generic__section__cinched.thumb.webp","alt":"Anchor and cinch: See the tissue–device relationship. Region approximated. Schematic, representative illustration.","pins":[{"id":"wall","x":0.3056,"y":0.44414},{"id":"anchor","x":0.66217,"y":0.67877},{"id":"link","x":0.5,"y":0.70545}]},"generic/oblique/anatomy":{"src":"/scenes/lv-restoration/images/generic__oblique__anatomy.webp","thumb":"/scenes/lv-restoration/images/generic__oblique__anatomy.thumb.webp","alt":"Anchor and cinch: Understand depth and attachment. Representative enlarged region. Schematic, representative illustration.","pins":[{"id":"wall","x":0.36112,"y":0.41044}]},"generic/oblique/placed":{"src":"/scenes/lv-restoration/images/generic__oblique__placed.webp","thumb":"/scenes/lv-restoration/images/generic__oblique__placed.thumb.webp","alt":"Anchor and cinch: Understand depth and attachment. Anchors placed. Schematic, representative illustration.","pins":[{"id":"wall","x":0.36112,"y":0.41044},{"id":"anchor","x":0.66564,"y":0.71446},{"id":"link","x":0.48888,"y":0.70348}]},"generic/oblique/cinched":{"src":"/scenes/lv-restoration/images/generic__oblique__cinched.webp","thumb":"/scenes/lv-restoration/images/generic__oblique__cinched.thumb.webp","alt":"Anchor and cinch: Understand depth and attachment. Region approximated. Schematic, representative illustration.","pins":[{"id":"wall","x":0.36838,"y":0.40948},{"id":"anchor","x":0.62485,"y":0.70584},{"id":"link","x":0.48888,"y":0.70348}]},"generic/face/anatomy":{"src":"/scenes/lv-restoration/images/generic__face__anatomy.webp","thumb":"/scenes/lv-restoration/images/generic__face__anatomy.thumb.webp","alt":"Anchor and cinch: See the relationship from another side. Representative enlarged region. Schematic, representative illustration.","pins":[{"id":"wall","x":0.62264,"y":0.42389}]},"generic/face/placed":{"src":"/scenes/lv-restoration/images/generic__face__placed.webp","thumb":"/scenes/lv-restoration/images/generic__face__placed.thumb.webp","alt":"Anchor and cinch: See the relationship from another side. Anchors placed. Schematic, representative illustration.","pins":[{"id":"wall","x":0.62264,"y":0.42389},{"id":"anchor","x":0.69127,"y":0.65995},{"id":"link","x":0.5105,"y":0.70539}]},"generic/face/cinched":{"src":"/scenes/lv-restoration/images/generic__face__cinched.webp","thumb":"/scenes/lv-restoration/images/generic__face__cinched.thumb.webp","alt":"Anchor and cinch: See the relationship from another side. Region approximated. Schematic, representative illustration.","pins":[{"id":"wall","x":0.62764,"y":0.42491},{"id":"anchor","x":0.64956,"y":0.66421},{"id":"link","x":0.5105,"y":0.70539}]}}}
+{
+ "classId": "lv-restoration",
+ "conditionId": "cond-ischemic-lv-remodeling",
+ "title": "Left ventricular restoration",
+ "linkLabel": "Visualize device class",
+ "status": "Schematic",
+ "scope": "Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.",
+ "stageLabel": "Schematic \u00b7 representative anatomy \u00b7 not to scale",
+ "attribution": "Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.",
+ "sources": [
+  {
+   "title": "Toronto Heart Atlas",
+   "url": "https://github.com/tgh-apil/TorontoHeartAtlas",
+   "locator": "RegularHeart chamber and vessel meshes, CC BY 4.0."
+  },
+  {
+   "title": "Creative Commons Attribution 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "title": "NHLBI: How blood flows through the heart",
+   "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+   "locator": "Written heart-valve and circulation sections; no media reused."
+  }
+ ],
+ "legend": [
+  {
+   "label": "Representative tissue",
+   "color": "#ad77ca"
+  },
+  {
+   "label": "Generic device",
+   "color": "#ffd358"
+  },
+  {
+   "label": "Leaflets / fabric",
+   "color": "#f6dfc8"
+  },
+  {
+   "label": "Suture / emphasis",
+   "color": "#35a8a0"
+  }
+ ],
+ "designs": [
+  {
+   "id": "generic",
+   "label": "Anchor and cinch",
+   "summary": "Paired anchors and a connecting element illustrate approximation of a representative ventricular region."
+  }
+ ],
+ "states": [
+  {
+   "id": "anatomy",
+   "label": "Representative enlarged region",
+   "note": "Representative pose; dimensions and deformation are not measured on a specific patient or population."
+  },
+  {
+   "id": "placed",
+   "label": "Anchors placed",
+   "note": "Representative pose; dimensions and deformation are not measured on a specific patient or population."
+  },
+  {
+   "id": "cinched",
+   "label": "Region approximated",
+   "note": "Representative pose; dimensions and deformation are not measured on a specific patient or population."
+  }
+ ],
+ "views": [
+  {
+   "id": "heart",
+   "label": "Whole heart",
+   "title": "Locate the treatment region",
+   "lesson": "The highlighted region orients the enlarged views.",
+   "states": [
+    "cinched"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9595
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1535
+    }
+   }
+  },
+  {
+   "id": "region",
+   "label": "Ventricles",
+   "title": "Orient the treated ventricular region",
+   "lesson": "Both ventricles cut open: one anchor on the right ventricular side of the septum, one outside the left ventricular wall, joined across the cavity.",
+   "states": [
+    "anatomy",
+    "placed",
+    "cinched"
+   ],
+   "orientation": {
+    "superior": {
+     "x": -0.0,
+     "y": -0.9714
+    },
+    "patientRight": {
+     "x": -0.3714,
+     "y": -0.2204
+    }
+   },
+   "presentation": {
+    "directionCaption": "Ventricles",
+    "representation": "representative-view",
+    "regionLabel": "Left ventricular restoration"
+   }
+  },
+  {
+   "id": "section",
+   "label": "Mechanism section",
+   "title": "See the tissue\u2013device relationship",
+   "lesson": "A fixed section compares the marked region before and after the posed approximation.",
+   "states": [
+    "anatomy",
+    "placed",
+    "cinched"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9806
+    },
+    "patientRight": {
+     "x": -1.0,
+     "y": -0.0
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen from the front",
+    "representation": "representative-section",
+    "regionLabel": "Left ventricular restoration"
+   }
+  },
+  {
+   "id": "oblique",
+   "label": "Oblique detail",
+   "title": "Understand depth and attachment",
+   "lesson": "An oblique view separates the near surface, device and supporting tissue.",
+   "states": [
+    "anatomy",
+    "placed",
+    "cinched"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9698
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1329
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen at an angle",
+    "representation": "representative-section",
+    "regionLabel": "Left ventricular restoration"
+   }
+  },
+  {
+   "id": "face",
+   "label": "Alternate section",
+   "title": "See the relationship from another side",
+   "lesson": "An alternate view of the same representative geometry and state.",
+   "states": [
+    "anatomy",
+    "placed",
+    "cinched"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9918
+    },
+    "patientRight": {
+     "x": -0.8575,
+     "y": 0.0656
+    }
+   },
+   "presentation": {
+    "directionCaption": "Alternate section",
+    "representation": "representative-section",
+    "regionLabel": "Left ventricular restoration"
+   }
+  }
+ ],
+ "annotations": {
+  "location": {
+   "label": "TREATMENT LOCATION",
+   "body": "The highlighted region locates this class in the heart. The marker is enlarged for orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "wall": {
+   "label": "REPRESENTATIVE VENTRICULAR WALL",
+   "body": "A smooth sectional chamber is representative and is not measured on a specific patient or population.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "anchor": {
+   "label": "PAIRED ANCHORS",
+   "body": "Two generic fixation elements mark the ends of a connecting element.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "lv-restoration.anchor"
+  },
+  "link": {
+   "label": "CONNECTING ELEMENT",
+   "body": "A shorter representative span brings the two anchored walls inward. This is a posed comparison, not tissue simulation.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "lv-restoration.link"
+  },
+  "region_LV": {
+   "label": "LEFT VENTRICLE",
+   "body": "The near part of the left ventricle is cut away to show its cavity. In the cinched pose the walls near the anchors are drawn inward; elsewhere the chamber is unchanged.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_septum": {
+   "label": "VENTRICULAR SEPTUM",
+   "body": "The septum is the shared wall between the two ventricles. One anchor rests on its right ventricular side.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_RV": {
+   "label": "RIGHT VENTRICLE",
+   "body": "The right ventricle wraps around the septum. Its near wall is cut away to show the septal anchor.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_anchor": {
+   "label": "PAIRED ANCHORS",
+   "body": "One generic anchor sits on the outside of the left ventricular wall and the other on the septum, facing the right ventricle. Their positions are representative.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "lv-restoration.anchor"
+  },
+  "region_link": {
+   "label": "CONNECTING ELEMENT",
+   "body": "The element crosses the left ventricular cavity between the anchors. Shortening it draws the two walls toward each other; this is a posed comparison, not tissue simulation.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "lv-restoration.link"
+  }
+ },
+ "images": {
+  "generic/heart/cinched": {
+   "src": "/scenes/lv-restoration/images/generic__heart__cinched.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__heart__cinched.thumb.webp",
+   "alt": "Anchor and cinch: Locate the treatment region. Region approximated. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.59223,
+     "y": 0.6729
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/lv-restoration/images/generic__heart__cinched.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__heart__cinched.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      33
+     ]
+    }
+   },
+   "keys": []
+  },
+  "generic/region/anatomy": {
+   "src": "/scenes/lv-restoration/images/generic__region__anatomy.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__region__anatomy.thumb.webp",
+   "alt": "Anchor and cinch: Orient the treated ventricular region. Representative enlarged region. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_LV",
+     "x": 0.39914,
+     "y": 0.63924
+    },
+    {
+     "id": "region_septum",
+     "x": 0.50262,
+     "y": 0.24026
+    },
+    {
+     "id": "region_RV",
+     "x": 0.16556,
+     "y": 0.53108
+    }
+   ],
+   "camera": "16c904152123db3f",
+   "contentBox": {
+    "x": 0.035,
+    "y": 0.1261,
+    "width": 0.93,
+    "height": 0.7478
+   },
+   "mid": "/scenes/lv-restoration/images/generic__region__anatomy.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__region__anatomy.parts.png",
+   "focus": {
+    "region_LV": {
+     "parts": [
+      12
+     ]
+    },
+    "region_septum": {
+     "parts": [
+      13
+     ]
+    },
+    "region_RV": {
+     "parts": [
+      14
+     ],
+     "ghost": {
+      "src": "/scenes/lv-restoration/images/generic__region__anatomy.ghost-14.webp",
+      "x": 0.035,
+      "y": 0.12666666666666668,
+      "width": 0.58,
+      "height": 0.7088888888888889
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "generic/region/placed": {
+   "src": "/scenes/lv-restoration/images/generic__region__placed.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__region__placed.thumb.webp",
+   "alt": "Anchor and cinch: Orient the treated ventricular region. Anchors placed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_LV",
+     "x": 0.39914,
+     "y": 0.63924
+    },
+    {
+     "id": "region_septum",
+     "x": 0.50262,
+     "y": 0.24026
+    },
+    {
+     "id": "region_RV",
+     "x": 0.16556,
+     "y": 0.53108
+    },
+    {
+     "id": "region_anchor",
+     "x": 0.74954,
+     "y": 0.68384
+    },
+    {
+     "id": "region_link",
+     "x": 0.55876,
+     "y": 0.46788
+    }
+   ],
+   "camera": "16c904152123db3f",
+   "contentBox": {
+    "x": 0.035,
+    "y": 0.1261,
+    "width": 0.93,
+    "height": 0.7478
+   },
+   "mid": "/scenes/lv-restoration/images/generic__region__placed.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__region__placed.parts.png",
+   "focus": {
+    "region_LV": {
+     "parts": [
+      12
+     ]
+    },
+    "region_septum": {
+     "parts": [
+      13,
+      23,
+      24
+     ]
+    },
+    "region_RV": {
+     "parts": [
+      14
+     ],
+     "ghost": {
+      "src": "/scenes/lv-restoration/images/generic__region__placed.ghost-14.webp",
+      "x": 0.035,
+      "y": 0.12666666666666668,
+      "width": 0.58,
+      "height": 0.7088888888888889
+     }
+    },
+    "region_anchor": {
+     "parts": [
+      23,
+      11,
+      13,
+      15,
+      16
+     ]
+    },
+    "region_link": {
+     "parts": [
+      24,
+      11,
+      13,
+      15,
+      16
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "generic/region/cinched": {
+   "src": "/scenes/lv-restoration/images/generic__region__cinched.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__region__cinched.thumb.webp",
+   "alt": "Anchor and cinch: Orient the treated ventricular region. Region approximated. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_LV",
+     "x": 0.40875,
+     "y": 0.65711
+    },
+    {
+     "id": "region_septum",
+     "x": 0.50262,
+     "y": 0.24026
+    },
+    {
+     "id": "region_RV",
+     "x": 0.16556,
+     "y": 0.53108
+    },
+    {
+     "id": "region_anchor",
+     "x": 0.70997,
+     "y": 0.6366
+    },
+    {
+     "id": "region_link",
+     "x": 0.55876,
+     "y": 0.46788
+    }
+   ],
+   "camera": "16c904152123db3f",
+   "contentBox": {
+    "x": 0.0354,
+    "y": 0.1261,
+    "width": 0.9292,
+    "height": 0.7472
+   },
+   "mid": "/scenes/lv-restoration/images/generic__region__cinched.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__region__cinched.parts.png",
+   "focus": {
+    "region_LV": {
+     "parts": [
+      18
+     ]
+    },
+    "region_septum": {
+     "parts": [
+      22,
+      25,
+      26
+     ]
+    },
+    "region_RV": {
+     "parts": [
+      20
+     ],
+     "ghost": {
+      "src": "/scenes/lv-restoration/images/generic__region__cinched.ghost-20.webp",
+      "x": 0.035833333333333335,
+      "y": 0.12666666666666668,
+      "width": 0.5791666666666667,
+      "height": 0.7088888888888889
+     }
+    },
+    "region_anchor": {
+     "parts": [
+      25,
+      17,
+      19,
+      21,
+      22
+     ]
+    },
+    "region_link": {
+     "parts": [
+      26,
+      17,
+      19,
+      21,
+      22
+     ]
+    }
+   },
+   "keys": []
+  },
+  "generic/section/anatomy": {
+   "src": "/scenes/lv-restoration/images/generic__section__anatomy.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__section__anatomy.thumb.webp",
+   "alt": "Anchor and cinch: See the tissue\u2013device relationship. Representative enlarged region. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.49145,
+     "y": 0.32239
+    }
+   ],
+   "camera": "553bad1eb79cc74b",
+   "contentBox": {
+    "x": 0.2654,
+    "y": 0.0811,
+    "width": 0.5058,
+    "height": 0.8344
+   },
+   "mid": "/scenes/lv-restoration/images/generic__section__anatomy.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__section__anatomy.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/lv-restoration/images/generic__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.5588,
+    "y": 0.4679,
+    "r": 0.2
+   }
+  },
+  "generic/section/placed": {
+   "src": "/scenes/lv-restoration/images/generic__section__placed.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__section__placed.thumb.webp",
+   "alt": "Anchor and cinch: See the tissue\u2013device relationship. Anchors placed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.49145,
+     "y": 0.32239
+    },
+    {
+     "id": "anchor",
+     "x": 0.71082,
+     "y": 0.67877
+    },
+    {
+     "id": "link",
+     "x": 0.5,
+     "y": 0.70545
+    }
+   ],
+   "camera": "553bad1eb79cc74b",
+   "contentBox": {
+    "x": 0.2654,
+    "y": 0.0811,
+    "width": 0.5058,
+    "height": 0.8344
+   },
+   "mid": "/scenes/lv-restoration/images/generic__section__placed.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__section__placed.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      3,
+      5,
+      6
+     ]
+    },
+    "anchor": {
+     "parts": [
+      5,
+      3
+     ]
+    },
+    "link": {
+     "parts": [
+      6,
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/lv-restoration/images/generic__region__placed.thumb.webp",
+    "view": "region",
+    "x": 0.5588,
+    "y": 0.4679,
+    "r": 0.2
+   }
+  },
+  "generic/section/cinched": {
+   "src": "/scenes/lv-restoration/images/generic__section__cinched.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__section__cinched.thumb.webp",
+   "alt": "Anchor and cinch: See the tissue\u2013device relationship. Region approximated. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.5195,
+     "y": 0.32206
+    },
+    {
+     "id": "anchor",
+     "x": 0.66217,
+     "y": 0.67877
+    },
+    {
+     "id": "link",
+     "x": 0.5,
+     "y": 0.70545
+    }
+   ],
+   "camera": "553bad1eb79cc74b",
+   "contentBox": {
+    "x": 0.2696,
+    "y": 0.0811,
+    "width": 0.4971,
+    "height": 0.8344
+   },
+   "mid": "/scenes/lv-restoration/images/generic__section__cinched.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__section__cinched.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      7,
+      9,
+      10
+     ]
+    },
+    "anchor": {
+     "parts": [
+      9,
+      7
+     ]
+    },
+    "link": {
+     "parts": [
+      10,
+      7
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/lv-restoration/images/generic__region__cinched.thumb.webp",
+    "view": "region",
+    "x": 0.5588,
+    "y": 0.4679,
+    "r": 0.2
+   }
+  },
+  "generic/oblique/anatomy": {
+   "src": "/scenes/lv-restoration/images/generic__oblique__anatomy.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__oblique__anatomy.thumb.webp",
+   "alt": "Anchor and cinch: Understand depth and attachment. Representative enlarged region. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.60785,
+     "y": 0.31986
+    }
+   ],
+   "camera": "acaa92732273034f",
+   "contentBox": {
+    "x": 0.3033,
+    "y": 0.0772,
+    "width": 0.465,
+    "height": 0.8333
+   },
+   "mid": "/scenes/lv-restoration/images/generic__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__oblique__anatomy.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/lv-restoration/images/generic__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.5588,
+    "y": 0.4679,
+    "r": 0.2
+   }
+  },
+  "generic/oblique/placed": {
+   "src": "/scenes/lv-restoration/images/generic__oblique__placed.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__oblique__placed.thumb.webp",
+   "alt": "Anchor and cinch: Understand depth and attachment. Anchors placed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.60785,
+     "y": 0.31986
+    },
+    {
+     "id": "anchor",
+     "x": 0.66564,
+     "y": 0.71446
+    },
+    {
+     "id": "link",
+     "x": 0.48888,
+     "y": 0.70348
+    }
+   ],
+   "camera": "acaa92732273034f",
+   "contentBox": {
+    "x": 0.3033,
+    "y": 0.0772,
+    "width": 0.465,
+    "height": 0.8333
+   },
+   "mid": "/scenes/lv-restoration/images/generic__oblique__placed.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__oblique__placed.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      3,
+      5,
+      6
+     ]
+    },
+    "anchor": {
+     "parts": [
+      5,
+      3
+     ]
+    },
+    "link": {
+     "parts": [
+      6,
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/lv-restoration/images/generic__region__placed.thumb.webp",
+    "view": "region",
+    "x": 0.5588,
+    "y": 0.4679,
+    "r": 0.2
+   }
+  },
+  "generic/oblique/cinched": {
+   "src": "/scenes/lv-restoration/images/generic__oblique__cinched.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__oblique__cinched.thumb.webp",
+   "alt": "Anchor and cinch: Understand depth and attachment. Region approximated. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.58132,
+     "y": 0.31047
+    },
+    {
+     "id": "anchor",
+     "x": 0.62485,
+     "y": 0.70584
+    },
+    {
+     "id": "link",
+     "x": 0.48888,
+     "y": 0.70348
+    }
+   ],
+   "camera": "acaa92732273034f",
+   "contentBox": {
+    "x": 0.3067,
+    "y": 0.0772,
+    "width": 0.4575,
+    "height": 0.8333
+   },
+   "mid": "/scenes/lv-restoration/images/generic__oblique__cinched.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__oblique__cinched.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      7,
+      9,
+      10
+     ]
+    },
+    "anchor": {
+     "parts": [
+      9,
+      7
+     ]
+    },
+    "link": {
+     "parts": [
+      10,
+      7
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/lv-restoration/images/generic__region__cinched.thumb.webp",
+    "view": "region",
+    "x": 0.5588,
+    "y": 0.4679,
+    "r": 0.2
+   }
+  },
+  "generic/face/anatomy": {
+   "src": "/scenes/lv-restoration/images/generic__face__anatomy.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__face__anatomy.thumb.webp",
+   "alt": "Anchor and cinch: See the relationship from another side. Representative enlarged region. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.43241,
+     "y": 0.34753
+    }
+   ],
+   "camera": "c809df518dfba36a",
+   "contentBox": {
+    "x": 0.2629,
+    "y": 0.0889,
+    "width": 0.47,
+    "height": 0.8311
+   },
+   "mid": "/scenes/lv-restoration/images/generic__face__anatomy.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__face__anatomy.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/lv-restoration/images/generic__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.5588,
+    "y": 0.4679,
+    "r": 0.2
+   }
+  },
+  "generic/face/placed": {
+   "src": "/scenes/lv-restoration/images/generic__face__placed.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__face__placed.thumb.webp",
+   "alt": "Anchor and cinch: See the relationship from another side. Anchors placed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.43241,
+     "y": 0.34753
+    },
+    {
+     "id": "anchor",
+     "x": 0.69127,
+     "y": 0.65995
+    },
+    {
+     "id": "link",
+     "x": 0.5105,
+     "y": 0.70539
+    }
+   ],
+   "camera": "c809df518dfba36a",
+   "contentBox": {
+    "x": 0.2629,
+    "y": 0.0889,
+    "width": 0.47,
+    "height": 0.8311
+   },
+   "mid": "/scenes/lv-restoration/images/generic__face__placed.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__face__placed.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      3,
+      5,
+      6
+     ]
+    },
+    "anchor": {
+     "parts": [
+      5,
+      3
+     ]
+    },
+    "link": {
+     "parts": [
+      6,
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/lv-restoration/images/generic__region__placed.thumb.webp",
+    "view": "region",
+    "x": 0.5588,
+    "y": 0.4679,
+    "r": 0.2
+   }
+  },
+  "generic/face/cinched": {
+   "src": "/scenes/lv-restoration/images/generic__face__cinched.webp",
+   "thumb": "/scenes/lv-restoration/images/generic__face__cinched.thumb.webp",
+   "alt": "Anchor and cinch: See the relationship from another side. Region approximated. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "wall",
+     "x": 0.45918,
+     "y": 0.34601
+    },
+    {
+     "id": "anchor",
+     "x": 0.39419,
+     "y": 0.69027
+    },
+    {
+     "id": "link",
+     "x": 0.5105,
+     "y": 0.70539
+    }
+   ],
+   "camera": "c809df518dfba36a",
+   "contentBox": {
+    "x": 0.2671,
+    "y": 0.0889,
+    "width": 0.4621,
+    "height": 0.8311
+   },
+   "mid": "/scenes/lv-restoration/images/generic__face__cinched.mid.webp",
+   "partMap": "/scenes/lv-restoration/images/generic__face__cinched.parts.png",
+   "focus": {
+    "wall": {
+     "parts": [
+      7,
+      9,
+      10
+     ]
+    },
+    "anchor": {
+     "parts": [
+      9,
+      7
+     ]
+    },
+    "link": {
+     "parts": [
+      10,
+      7
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/lv-restoration/images/generic__region__cinched.thumb.webp",
+    "view": "region",
+    "x": 0.5588,
+    "y": 0.4679,
+    "r": 0.2
+   }
+  }
+ },
+ "presentation": {
+  "annotationMode": "external",
+  "layout": "plate",
+  "labels": {
+   "location": "Treatment location",
+   "wall": "Ventricular wall",
+   "anchor": "Paired anchors",
+   "link": "Connecting element",
+   "region_LV": "Left ventricle",
+   "region_septum": "Ventricular septum",
+   "region_RV": "Right ventricle",
+   "region_anchor": "Paired anchors",
+   "region_link": "Connecting element"
+  },
+  "stateLabels": {
+   "anatomy": "Enlarged region",
+   "placed": "Anchors placed",
+   "cinched": "Region approximated"
+  },
+  "stateGroups": [
+   {
+    "label": "Anatomy",
+    "states": [
+     "anatomy"
+    ]
+   },
+   {
+    "label": "With anchors",
+    "states": [
+     "placed",
+     "cinched"
+    ]
+   }
+  ],
+  "keyColors": {
+   "cut": "#5e5165"
+  }
+ }
+}

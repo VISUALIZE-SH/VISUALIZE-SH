@@ -1,1 +1,2530 @@
-{"classId":"tricuspid-replacement","conditionId":"cond-tr","title":"Tricuspid valve replacement","linkLabel":"Visualize device class","status":"Schematic","scope":"Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.","stageLabel":"Schematic · representative anatomy · not to scale","attribution":"Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.","sources":[{"title":"Toronto Heart Atlas","url":"https://github.com/tgh-apil/TorontoHeartAtlas","locator":"RegularHeart chamber and vessel meshes, CC BY 4.0."},{"title":"Creative Commons Attribution 4.0","url":"https://creativecommons.org/licenses/by/4.0/"},{"title":"NHLBI: How blood flows through the heart","url":"https://www.nhlbi.nih.gov/health/heart/blood-flow","locator":"Written heart-valve and circulation sections; no media reused."},{"title":"University of Minnesota: written anatomy reference","url":"https://www.vhlab.umn.edu/atlas/anatomy-tutorial/cardiac-valve-nomenclature.shtml","locator":"Anatomical description; no atlas images or models reused."},{"title":"FDA labeling: tricuspid access example","url":"https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230013C.pdf","locator":"Section 9.4.2, steps 3–8. Right-atrial approach example only; generic geometry."}],"legend":[{"label":"Representative tissue","color":"#ad77ca"},{"label":"Generic device","color":"#ffd358"},{"label":"Leaflets / fabric","color":"#f6dfc8"},{"label":"Suture / emphasis","color":"#35a8a0"}],"designs":[{"id":"annular-valve","label":"Annular valve","summary":"A generic supported valve across the representative  tricuspid junction."},{"id":"flared-annular","label":"Flared annular valve","summary":"A representative flared support alternative at the same right AV site."}],"states":[{"id":"anatomy","label":"1. Anatomy context","note":"Representative sectioned shell and approximate junction; no native leaflet reconstruction."},{"id":"valve_open","label":"2. Replacement open","note":"Representative open replacement leaflets; support frame fixed."},{"id":"valve_closed","label":"3. Replacement closed","note":"Representative closure pose; support frame unchanged. No flow or seal calculation."}],"views":[{"id":"heart","label":"Whole heart","title":"Locate the treatment region","lesson":"Use the highlighted region to orient the enlarged views.","states":["valve_closed"],"orientation":{"superior":{"x":0.0,"y":-0.9595},"patientRight":{"x":-0.8384,"y":-0.1535}}},{"id":"region","label":"Right chambers","title":"See the valve between the chambers","lesson":"The real right atrium, right ventricle and caval veins from a heart model are opened along their length. The native valve and its papillary muscles are shown first; the generic replacement then sits in the valve ring. The valve position shown is representative and is not measured on a specific patient or population.","states":["anatomy","valve_open","valve_closed"],"orientation":{"superior":{"x":0.3636,"y":-0.2087},"patientRight":{"x":-0.6264,"y":-0.7761}}},{"id":"access","label":"Local approach","title":"Approach from the right atrium","lesson":"The arrow comes through the right atrium toward the valve. The complete route is not shown.","states":["anatomy"],"orientation":{"superior":{"x":0.3636,"y":-0.2087},"patientRight":{"x":-0.6264,"y":-0.7761}}},{"id":"section","label":"Mechanism section","title":"See the tissue–device relationship","lesson":"A generic annular replacement occupies the right AV junction rather than a caval vessel.","states":["anatomy","valve_open","valve_closed"],"orientation":{"superior":{"x":0.8914,"y":-0.255},"patientRight":{"x":-0.4532,"y":-0.5016}}},{"id":"oblique","label":"Oblique detail","title":"Understand depth and attachment","lesson":"An oblique view separates the near surface, device and supporting tissue.","states":["anatomy","valve_open","valve_closed"],"orientation":{"superior":{"x":0.613,"y":-0.0552},"patientRight":{"x":-0.6444,"y":-0.6122}}},{"id":"face","label":"Face view","title":"Look along the opening","lesson":"The face view complements the section. All poses and proportions are representative, not measured.","states":["anatomy","valve_open","valve_closed"],"orientation":{"superior":{"x":-0.8492,"y":-0.1266},"patientRight":{"x":0.5253,"y":-0.302}}}],"annotations":{"location":{"label":"TREATMENT LOCATION","body":"The highlighted region locates this class in the heart. The marker is enlarged for orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"junction":{"label":"TRICUSPID VALVE","body":"The tricuspid valve lies between the right atrium and right ventricle. Its illustrated junction is schematic.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"tissue":{"label":"REPRESENTATIVE TISSUE","body":"The smooth sectioned shell is representative and is not measured on a specific patient or population. It is not a segmented myocardial or vessel wall.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"frame":{"label":"FIXED SUPPORT FRAME","body":"The generic lattice stays fixed when the prosthetic leaflets open and close. Mesh spacing and proportions are representative, not measured.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"leaflet":{"label":"PROSTHETIC LEAFLETS","body":"The thin leaflets shown are representative and open within the same support. Motion, flow and tissue contact are not calculated.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"special":{"label":"RIGHT AV JUNCTION","body":"The native tricuspid site differs from caval implantation. Replacement leaflet poses do not model native TV mechanics.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_atrium":{"label":"RIGHT ATRIUM","body":"The right atrium is the chamber above the valve.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_ventricle":{"label":"RIGHT VENTRICLE","body":"The right ventricle is the chamber below the valve.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_access":{"label":"ATRIAL APPROACH","body":"An approach through the right atrium toward the tricuspid valve. It does not show the complete route or a delivery device.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_valve":{"label":"NATIVE VALVE","body":"The native valve has three leaflets that hang from the valve ring. In the replacement states the leaflets of the generic valve are shown. The valve position shown is representative and is not measured on a specific patient or population.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_support":{"label":"PAPILLARY MUSCLES","body":"Papillary muscles rise from the ventricular wall, and cords fan out from their tips to the leaflet edges. Their shapes are representative.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_device":{"label":"GENERIC REPLACEMENT VALVE","body":"The generic frame sits in the valve ring. Its shape is representative, not a specific product.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"}},"images":{"annular-valve/heart/valve_closed":{"src":"/scenes/tricuspid-replacement/images/annular-valve__heart__valve_closed.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__heart__valve_closed.thumb.webp","alt":"Annular valve: Locate the treatment region. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"location","x":0.42078,"y":0.64473}]},"annular-valve/region/anatomy":{"src":"/scenes/tricuspid-replacement/images/annular-valve__region__anatomy.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__region__anatomy.thumb.webp","alt":"Annular valve: See the valve between the chambers. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.60648,"y":0.19767},{"id":"region_ventricle","x":0.48725,"y":0.87626},{"id":"region_valve","x":0.46633,"y":0.39838},{"id":"region_support","x":0.43654,"y":0.59344}]},"annular-valve/region/valve_open":{"src":"/scenes/tricuspid-replacement/images/annular-valve__region__valve_open.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__region__valve_open.thumb.webp","alt":"Annular valve: See the valve between the chambers. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.60648,"y":0.19767},{"id":"region_ventricle","x":0.48725,"y":0.87626},{"id":"region_valve","x":0.47451,"y":0.4144},{"id":"region_support","x":0.43654,"y":0.59344},{"id":"region_device","x":0.39719,"y":0.41678}]},"annular-valve/region/valve_closed":{"src":"/scenes/tricuspid-replacement/images/annular-valve__region__valve_closed.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__region__valve_closed.thumb.webp","alt":"Annular valve: See the valve between the chambers. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.60648,"y":0.19767},{"id":"region_ventricle","x":0.48725,"y":0.87626},{"id":"region_valve","x":0.50271,"y":0.4226},{"id":"region_support","x":0.43654,"y":0.59344},{"id":"region_device","x":0.39719,"y":0.41678}]},"annular-valve/access/anatomy":{"src":"/scenes/tricuspid-replacement/images/annular-valve__access__anatomy.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__access__anatomy.thumb.webp","alt":"Annular valve: Approach from the right atrium. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.60648,"y":0.19767},{"id":"region_ventricle","x":0.48725,"y":0.87626},{"id":"region_valve","x":0.46633,"y":0.39838},{"id":"region_access","x":0.47741,"y":0.18791}]},"annular-valve/section/anatomy":{"src":"/scenes/tricuspid-replacement/images/annular-valve__section__anatomy.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__section__anatomy.thumb.webp","alt":"Annular valve: See the tissue–device relationship. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.68478,"y":0.5},{"id":"tissue","x":0.69457,"y":0.33966}]},"annular-valve/section/valve_open":{"src":"/scenes/tricuspid-replacement/images/annular-valve__section__valve_open.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__section__valve_open.thumb.webp","alt":"Annular valve: See the tissue–device relationship. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.68478,"y":0.5},{"id":"tissue","x":0.69457,"y":0.33966},{"id":"frame","x":0.44356,"y":0.72349},{"id":"leaflet","x":0.5171,"y":0.65807},{"id":"special","x":0.29348,"y":0.48664}]},"annular-valve/section/valve_closed":{"src":"/scenes/tricuspid-replacement/images/annular-valve__section__valve_closed.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__section__valve_closed.thumb.webp","alt":"Annular valve: See the tissue–device relationship. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.68478,"y":0.5},{"id":"tissue","x":0.69457,"y":0.33966},{"id":"frame","x":0.44356,"y":0.72349},{"id":"leaflet","x":0.50799,"y":0.58053},{"id":"special","x":0.29348,"y":0.48664}]},"annular-valve/oblique/anatomy":{"src":"/scenes/tricuspid-replacement/images/annular-valve__oblique__anatomy.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__oblique__anatomy.thumb.webp","alt":"Annular valve: Understand depth and attachment. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.65493,"y":0.55623},{"id":"tissue","x":0.66313,"y":0.40128}]},"annular-valve/oblique/valve_open":{"src":"/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_open.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_open.thumb.webp","alt":"Annular valve: Understand depth and attachment. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.65493,"y":0.55623},{"id":"tissue","x":0.66313,"y":0.40128},{"id":"frame","x":0.35781,"y":0.69592},{"id":"leaflet","x":0.43461,"y":0.65498}]},"annular-valve/oblique/valve_closed":{"src":"/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_closed.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_closed.thumb.webp","alt":"Annular valve: Understand depth and attachment. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.65493,"y":0.55623},{"id":"tissue","x":0.66313,"y":0.40128},{"id":"frame","x":0.35781,"y":0.69592},{"id":"leaflet","x":0.48263,"y":0.59384}]},"annular-valve/face/anatomy":{"src":"/scenes/tricuspid-replacement/images/annular-valve__face__anatomy.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__face__anatomy.thumb.webp","alt":"Annular valve: Look along the opening. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.31613,"y":0.50592},{"id":"tissue","x":0.51514,"y":0.80049}]},"annular-valve/face/valve_open":{"src":"/scenes/tricuspid-replacement/images/annular-valve__face__valve_open.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__face__valve_open.thumb.webp","alt":"Annular valve: Look along the opening. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.31613,"y":0.50592},{"id":"tissue","x":0.51514,"y":0.80049},{"id":"frame","x":0.54535,"y":0.23815},{"id":"leaflet","x":0.36751,"y":0.37617}]},"annular-valve/face/valve_closed":{"src":"/scenes/tricuspid-replacement/images/annular-valve__face__valve_closed.webp","thumb":"/scenes/tricuspid-replacement/images/annular-valve__face__valve_closed.thumb.webp","alt":"Annular valve: Look along the opening. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.31613,"y":0.50592},{"id":"tissue","x":0.51514,"y":0.80049},{"id":"frame","x":0.54535,"y":0.23815},{"id":"leaflet","x":0.34889,"y":0.4388}]},"flared-annular/heart/valve_closed":{"src":"/scenes/tricuspid-replacement/images/flared-annular__heart__valve_closed.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__heart__valve_closed.thumb.webp","alt":"Flared annular valve: Locate the treatment region. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"location","x":0.42078,"y":0.64473}]},"flared-annular/region/anatomy":{"src":"/scenes/tricuspid-replacement/images/flared-annular__region__anatomy.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__region__anatomy.thumb.webp","alt":"Flared annular valve: See the valve between the chambers. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.60648,"y":0.19767},{"id":"region_ventricle","x":0.48725,"y":0.87626},{"id":"region_valve","x":0.46633,"y":0.39838},{"id":"region_support","x":0.43654,"y":0.59344}]},"flared-annular/region/valve_open":{"src":"/scenes/tricuspid-replacement/images/flared-annular__region__valve_open.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__region__valve_open.thumb.webp","alt":"Flared annular valve: See the valve between the chambers. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.60648,"y":0.19767},{"id":"region_ventricle","x":0.48725,"y":0.87626},{"id":"region_valve","x":0.47451,"y":0.4144},{"id":"region_support","x":0.43654,"y":0.59344},{"id":"region_device","x":0.53679,"y":0.42656}]},"flared-annular/region/valve_closed":{"src":"/scenes/tricuspid-replacement/images/flared-annular__region__valve_closed.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__region__valve_closed.thumb.webp","alt":"Flared annular valve: See the valve between the chambers. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.60648,"y":0.19767},{"id":"region_ventricle","x":0.48725,"y":0.87626},{"id":"region_valve","x":0.50271,"y":0.4226},{"id":"region_support","x":0.43654,"y":0.59344},{"id":"region_device","x":0.42124,"y":0.41503}]},"flared-annular/access/anatomy":{"src":"/scenes/tricuspid-replacement/images/flared-annular__access__anatomy.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__access__anatomy.thumb.webp","alt":"Flared annular valve: Approach from the right atrium. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.60648,"y":0.19767},{"id":"region_ventricle","x":0.48725,"y":0.87626},{"id":"region_valve","x":0.46633,"y":0.39838},{"id":"region_access","x":0.47741,"y":0.18791}]},"flared-annular/section/anatomy":{"src":"/scenes/tricuspid-replacement/images/flared-annular__section__anatomy.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__section__anatomy.thumb.webp","alt":"Flared annular valve: See the tissue–device relationship. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.68478,"y":0.5},{"id":"tissue","x":0.69457,"y":0.33966}]},"flared-annular/section/valve_open":{"src":"/scenes/tricuspid-replacement/images/flared-annular__section__valve_open.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__section__valve_open.thumb.webp","alt":"Flared annular valve: See the tissue–device relationship. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.68478,"y":0.5},{"id":"tissue","x":0.30543,"y":0.63362},{"id":"frame","x":0.43645,"y":0.80212},{"id":"leaflet","x":0.5,"y":0.65474},{"id":"special","x":0.29348,"y":0.48664}]},"flared-annular/section/valve_closed":{"src":"/scenes/tricuspid-replacement/images/flared-annular__section__valve_closed.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__section__valve_closed.thumb.webp","alt":"Flared annular valve: See the tissue–device relationship. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.68478,"y":0.5},{"id":"tissue","x":0.30543,"y":0.63362},{"id":"frame","x":0.43645,"y":0.80212},{"id":"leaflet","x":0.50799,"y":0.58053},{"id":"special","x":0.29348,"y":0.48664}]},"flared-annular/oblique/anatomy":{"src":"/scenes/tricuspid-replacement/images/flared-annular__oblique__anatomy.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__oblique__anatomy.thumb.webp","alt":"Flared annular valve: Understand depth and attachment. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.65493,"y":0.55623},{"id":"tissue","x":0.66313,"y":0.40128}]},"flared-annular/oblique/valve_open":{"src":"/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_open.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_open.thumb.webp","alt":"Flared annular valve: Understand depth and attachment. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.65493,"y":0.55623},{"id":"tissue","x":0.66313,"y":0.40128},{"id":"frame","x":0.33938,"y":0.77028},{"id":"leaflet","x":0.43461,"y":0.65498}]},"flared-annular/oblique/valve_closed":{"src":"/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_closed.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_closed.thumb.webp","alt":"Flared annular valve: Understand depth and attachment. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.65493,"y":0.55623},{"id":"tissue","x":0.66313,"y":0.40128},{"id":"frame","x":0.33938,"y":0.77028},{"id":"leaflet","x":0.48263,"y":0.59384}]},"flared-annular/face/anatomy":{"src":"/scenes/tricuspid-replacement/images/flared-annular__face__anatomy.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__face__anatomy.thumb.webp","alt":"Flared annular valve: Look along the opening. 1. Anatomy context. Schematic, representative illustration.","pins":[{"id":"junction","x":0.31613,"y":0.50592},{"id":"tissue","x":0.51514,"y":0.80049}]},"flared-annular/face/valve_open":{"src":"/scenes/tricuspid-replacement/images/flared-annular__face__valve_open.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__face__valve_open.thumb.webp","alt":"Flared annular valve: Look along the opening. 2. Replacement open. Schematic, representative illustration.","pins":[{"id":"junction","x":0.31613,"y":0.50592},{"id":"tissue","x":0.51514,"y":0.80049},{"id":"frame","x":0.54701,"y":0.19091},{"id":"leaflet","x":0.50285,"y":0.2843}]},"flared-annular/face/valve_closed":{"src":"/scenes/tricuspid-replacement/images/flared-annular__face__valve_closed.webp","thumb":"/scenes/tricuspid-replacement/images/flared-annular__face__valve_closed.thumb.webp","alt":"Flared annular valve: Look along the opening. 3. Replacement closed. Schematic, representative illustration.","pins":[{"id":"junction","x":0.31613,"y":0.50592},{"id":"tissue","x":0.51514,"y":0.80049},{"id":"frame","x":0.54701,"y":0.19091},{"id":"leaflet","x":0.4425,"y":0.29703}]}}}
+{
+ "classId": "tricuspid-replacement",
+ "conditionId": "cond-tr",
+ "title": "Tricuspid valve replacement",
+ "linkLabel": "Visualize device class",
+ "status": "Schematic",
+ "scope": "Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.",
+ "stageLabel": "Schematic \u00b7 representative anatomy \u00b7 not to scale",
+ "attribution": "Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.",
+ "sources": [
+  {
+   "title": "Toronto Heart Atlas",
+   "url": "https://github.com/tgh-apil/TorontoHeartAtlas",
+   "locator": "RegularHeart chamber and vessel meshes, CC BY 4.0."
+  },
+  {
+   "title": "Creative Commons Attribution 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "title": "NHLBI: How blood flows through the heart",
+   "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+   "locator": "Written heart-valve and circulation sections; no media reused."
+  },
+  {
+   "title": "University of Minnesota: written anatomy reference",
+   "url": "https://www.vhlab.umn.edu/atlas/anatomy-tutorial/cardiac-valve-nomenclature.shtml",
+   "locator": "Anatomical description; no atlas images or models reused."
+  },
+  {
+   "title": "FDA labeling: tricuspid access example",
+   "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230013C.pdf",
+   "locator": "Section 9.4.2, steps 3\u20138. Right-atrial approach example only; generic geometry."
+  }
+ ],
+ "legend": [
+  {
+   "label": "Representative tissue",
+   "color": "#ad77ca"
+  },
+  {
+   "label": "Generic device",
+   "color": "#ffd358"
+  },
+  {
+   "label": "Leaflets / fabric",
+   "color": "#f6dfc8"
+  },
+  {
+   "label": "Suture / emphasis",
+   "color": "#35a8a0"
+  }
+ ],
+ "designs": [
+  {
+   "id": "annular-valve",
+   "label": "Annular valve",
+   "summary": "A generic supported valve across the representative  tricuspid junction."
+  },
+  {
+   "id": "flared-annular",
+   "label": "Flared annular valve",
+   "summary": "A representative flared support alternative at the same right AV site."
+  }
+ ],
+ "states": [
+  {
+   "id": "anatomy",
+   "label": "1. Anatomy context",
+   "note": "Representative sectioned shell and approximate junction; no native leaflet reconstruction."
+  },
+  {
+   "id": "valve_open",
+   "label": "2. Replacement open",
+   "note": "Representative open replacement leaflets; support frame fixed."
+  },
+  {
+   "id": "valve_closed",
+   "label": "3. Replacement closed",
+   "note": "Representative closure pose; support frame unchanged. No flow or seal calculation."
+  }
+ ],
+ "views": [
+  {
+   "id": "heart",
+   "label": "Whole heart",
+   "title": "Locate the treatment region",
+   "lesson": "The highlighted region orients the enlarged views.",
+   "states": [
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9595
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1535
+    }
+   }
+  },
+  {
+   "id": "region",
+   "label": "Right chambers",
+   "title": "See the valve between the chambers",
+   "lesson": "The right chambers and caval veins opened along their length. The generic replacement sits in the valve ring.",
+   "states": [
+    "anatomy",
+    "valve_open",
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.3636,
+     "y": -0.2087
+    },
+    "patientRight": {
+     "x": -0.6264,
+     "y": -0.7761
+    }
+   },
+   "presentation": {
+    "directionCaption": "Right chambers",
+    "representation": "representative-view",
+    "regionLabel": "Tricuspid valve replacement"
+   }
+  },
+  {
+   "id": "access",
+   "label": "Local approach",
+   "title": "Approach from the right atrium",
+   "lesson": "The arrow comes through the right atrium toward the valve. The full route is not shown.",
+   "states": [
+    "anatomy"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.3636,
+     "y": -0.2087
+    },
+    "patientRight": {
+     "x": -0.6264,
+     "y": -0.7761
+    }
+   },
+   "presentation": {
+    "directionCaption": "Local approach",
+    "representation": "representative-view",
+    "regionLabel": "Tricuspid valve replacement"
+   }
+  },
+  {
+   "id": "section",
+   "label": "Mechanism section",
+   "title": "See the tissue\u2013device relationship",
+   "lesson": "A generic annular replacement occupies the right atrioventricular junction, not a caval vessel.",
+   "states": [
+    "anatomy",
+    "valve_open",
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.8914,
+     "y": -0.255
+    },
+    "patientRight": {
+     "x": -0.4532,
+     "y": -0.5016
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen from the front",
+    "representation": "representative-section",
+    "regionLabel": "Tricuspid valve replacement"
+   }
+  },
+  {
+   "id": "oblique",
+   "label": "Oblique detail",
+   "title": "Understand depth and attachment",
+   "lesson": "An oblique view separates the near surface, the device and the supporting tissue.",
+   "states": [
+    "anatomy",
+    "valve_open",
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.613,
+     "y": -0.0552
+    },
+    "patientRight": {
+     "x": -0.6444,
+     "y": -0.6122
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen at an angle",
+    "representation": "representative-section",
+    "regionLabel": "Tricuspid valve replacement"
+   }
+  },
+  {
+   "id": "face",
+   "label": "Face view",
+   "title": "Look along the opening",
+   "lesson": "Looking along the opening. Poses and proportions are representative, not measured.",
+   "states": [
+    "anatomy",
+    "valve_open",
+    "valve_closed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": -0.8492,
+     "y": -0.1266
+    },
+    "patientRight": {
+     "x": 0.5253,
+     "y": -0.302
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen along the opening",
+    "representation": "representative-section",
+    "regionLabel": "Tricuspid valve replacement"
+   }
+  }
+ ],
+ "annotations": {
+  "location": {
+   "label": "TREATMENT LOCATION",
+   "body": "The highlighted region locates this class in the heart. The marker is enlarged for orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "junction": {
+   "label": "TRICUSPID VALVE",
+   "body": "The tricuspid valve lies between the right atrium and right ventricle. Its illustrated junction is schematic.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "tissue": {
+   "label": "REPRESENTATIVE TISSUE",
+   "body": "The smooth sectioned shell is representative and is not measured on a specific patient or population. It is not a segmented myocardial or vessel wall.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "frame": {
+   "label": "FIXED SUPPORT FRAME",
+   "body": "The generic lattice stays fixed when the prosthetic leaflets open and close. Mesh spacing and proportions are representative, not measured.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  },
+  "leaflet": {
+   "label": "PROSTHETIC LEAFLETS",
+   "body": "The thin leaflets shown are representative and open within the same support. Motion, flow and tissue contact are not calculated.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  },
+  "special": {
+   "label": "RIGHT AV JUNCTION",
+   "body": "The native tricuspid site differs from caval implantation. Replacement leaflet poses do not model native TV mechanics.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_atrium": {
+   "label": "RIGHT ATRIUM",
+   "body": "The right atrium is the chamber above the valve.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_ventricle": {
+   "label": "RIGHT VENTRICLE",
+   "body": "The right ventricle is the chamber below the valve.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_access": {
+   "label": "ATRIAL APPROACH",
+   "body": "An approach through the right atrium toward the tricuspid valve. It does not show the complete route or a delivery device.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_valve": {
+   "label": "NATIVE VALVE",
+   "body": "The native valve has three leaflets that hang from the valve ring. In the replacement states the leaflets of the generic valve are shown. The valve position shown is representative and is not measured on a specific patient or population.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_support": {
+   "label": "PAPILLARY MUSCLES",
+   "body": "Papillary muscles rise from the ventricular wall, and cords fan out from their tips to the leaflet edges. Their shapes are representative.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_device": {
+   "label": "GENERIC REPLACEMENT VALVE",
+   "body": "The generic frame sits in the valve ring. Its shape is representative, not a specific product.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  }
+ },
+ "images": {
+  "annular-valve/heart/valve_closed": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__heart__valve_closed.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__heart__valve_closed.thumb.webp",
+   "alt": "Annular valve: Locate the treatment region. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.42078,
+     "y": 0.64473
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__heart__valve_closed.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__heart__valve_closed.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      59
+     ]
+    }
+   },
+   "keys": []
+  },
+  "annular-valve/region/anatomy": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__region__anatomy.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__region__anatomy.thumb.webp",
+   "alt": "Annular valve: See the valve between the chambers. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.47646,
+     "y": 0.15294
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.41511,
+     "y": 0.77344
+    },
+    {
+     "id": "region_valve",
+     "x": 0.48151,
+     "y": 0.40246
+    },
+    {
+     "id": "region_support",
+     "x": 0.43636,
+     "y": 0.55764
+    }
+   ],
+   "camera": "3da902ad9b818820",
+   "contentBox": {
+    "x": 0.2737,
+    "y": 0.0344,
+    "width": 0.4525,
+    "height": 0.9311
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__region__anatomy.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__region__anatomy.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      6
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      9
+     ]
+    },
+    "region_support": {
+     "parts": [
+      6
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "annular-valve/region/valve_open": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_open.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_open.thumb.webp",
+   "alt": "Annular valve: See the valve between the chambers. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.47646,
+     "y": 0.15294
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.41511,
+     "y": 0.77344
+    },
+    {
+     "id": "region_valve",
+     "x": 0.43495,
+     "y": 0.35508
+    },
+    {
+     "id": "region_support",
+     "x": 0.43636,
+     "y": 0.55764
+    },
+    {
+     "id": "region_device",
+     "x": 0.47229,
+     "y": 0.39295
+    }
+   ],
+   "camera": "3da902ad9b818820",
+   "contentBox": {
+    "x": 0.2737,
+    "y": 0.0344,
+    "width": 0.4525,
+    "height": 0.9311
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_open.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_open.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3,
+      24,
+      25,
+      26
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_open.ghost-3.webp",
+      "x": 0.32083333333333336,
+      "y": 0.035555555555555556,
+      "width": 0.39166666666666666,
+      "height": 0.33444444444444443
+     }
+    },
+    "region_ventricle": {
+     "parts": [
+      6,
+      24,
+      25
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      27
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_open.ghost-27.webp",
+      "x": 0.36333333333333334,
+      "y": 0.3188888888888889,
+      "width": 0.21583333333333332,
+      "height": 0.10666666666666667
+     }
+    },
+    "region_support": {
+     "parts": [
+      6,
+      24,
+      25
+     ]
+    },
+    "region_device": {
+     "parts": [
+      24,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "annular-valve/region/valve_closed": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_closed.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_closed.thumb.webp",
+   "alt": "Annular valve: See the valve between the chambers. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.47646,
+     "y": 0.15294
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.41511,
+     "y": 0.77344
+    },
+    {
+     "id": "region_valve",
+     "x": 0.43014,
+     "y": 0.41233
+    },
+    {
+     "id": "region_support",
+     "x": 0.43636,
+     "y": 0.55764
+    },
+    {
+     "id": "region_device",
+     "x": 0.47229,
+     "y": 0.39295
+    }
+   ],
+   "camera": "3da902ad9b818820",
+   "contentBox": {
+    "x": 0.2737,
+    "y": 0.0344,
+    "width": 0.4525,
+    "height": 0.9311
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_closed.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_closed.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3,
+      24,
+      25,
+      26
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_closed.ghost-3.webp",
+      "x": 0.32083333333333336,
+      "y": 0.035555555555555556,
+      "width": 0.39166666666666666,
+      "height": 0.33444444444444443
+     }
+    },
+    "region_ventricle": {
+     "parts": [
+      6,
+      24,
+      25
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      29
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_closed.ghost-29.webp",
+      "x": 0.36333333333333334,
+      "y": 0.3188888888888889,
+      "width": 0.21583333333333332,
+      "height": 0.10888888888888888
+     }
+    },
+    "region_support": {
+     "parts": [
+      6,
+      24,
+      25
+     ]
+    },
+    "region_device": {
+     "parts": [
+      24,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "annular-valve/access/anatomy": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__access__anatomy.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__access__anatomy.thumb.webp",
+   "alt": "Annular valve: Approach from the right atrium. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.47646,
+     "y": 0.15294
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.41511,
+     "y": 0.77344
+    },
+    {
+     "id": "region_valve",
+     "x": 0.48151,
+     "y": 0.40246
+    },
+    {
+     "id": "region_access",
+     "x": 0.47881,
+     "y": 0.24579
+    }
+   ],
+   "camera": "3da902ad9b818820",
+   "contentBox": {
+    "x": 0.2737,
+    "y": 0.0344,
+    "width": 0.4525,
+    "height": 0.9311
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__access__anatomy.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__access__anatomy.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      6
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      9
+     ]
+    },
+    "region_access": {
+     "parts": [
+      23
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "annular-valve/section/anatomy": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__section__anatomy.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__section__anatomy.thumb.webp",
+   "alt": "Annular valve: See the tissue\u2013device relationship. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.5,
+     "y": 0.46434
+    },
+    {
+     "id": "tissue",
+     "x": 0.5,
+     "y": 0.22847
+    }
+   ],
+   "camera": "b14c2c8b1ac99c78",
+   "contentBox": {
+    "x": 0.1271,
+    "y": 0.0433,
+    "width": 0.7458,
+    "height": 0.9011
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__section__anatomy.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__section__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      1
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/annular-valve__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4673,
+    "y": 0.3615,
+    "r": 0.1326
+   }
+  },
+  "annular-valve/section/valve_open": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_open.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_open.thumb.webp",
+   "alt": "Annular valve: See the tissue\u2013device relationship. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.5,
+     "y": 0.46434
+    },
+    {
+     "id": "tissue",
+     "x": 0.5,
+     "y": 0.22847
+    },
+    {
+     "id": "frame",
+     "x": 0.46486,
+     "y": 0.548
+    },
+    {
+     "id": "leaflet",
+     "x": 0.44759,
+     "y": 0.58078
+    },
+    {
+     "id": "special",
+     "x": 0.24645,
+     "y": 0.56507
+    }
+   ],
+   "camera": "b14c2c8b1ac99c78",
+   "contentBox": {
+    "x": 0.1271,
+    "y": 0.0433,
+    "width": 0.7458,
+    "height": 0.9011
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_open.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      40,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_open.ghost-40.webp",
+      "x": 0.275,
+      "y": 0.45555555555555555,
+      "width": 0.45,
+      "height": 0.31777777777777777
+     }
+    },
+    "tissue": {
+     "parts": [
+      1,
+      39,
+      40,
+      41,
+      45
+     ]
+    },
+    "frame": {
+     "parts": [
+      39,
+      1,
+      38
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      41,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_open.ghost-41.webp",
+      "x": 0.2891666666666667,
+      "y": 0.48777777777777775,
+      "width": 0.4216666666666667,
+      "height": 0.2911111111111111
+     }
+    },
+    "special": {
+     "parts": [
+      1,
+      39,
+      40,
+      41,
+      45
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.47,
+    "y": 0.3592,
+    "r": 0.1333
+   }
+  },
+  "annular-valve/section/valve_closed": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_closed.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_closed.thumb.webp",
+   "alt": "Annular valve: See the tissue\u2013device relationship. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.5,
+     "y": 0.46434
+    },
+    {
+     "id": "tissue",
+     "x": 0.5,
+     "y": 0.22847
+    },
+    {
+     "id": "frame",
+     "x": 0.46486,
+     "y": 0.548
+    },
+    {
+     "id": "leaflet",
+     "x": 0.51747,
+     "y": 0.65492
+    },
+    {
+     "id": "special",
+     "x": 0.24645,
+     "y": 0.56507
+    }
+   ],
+   "camera": "b14c2c8b1ac99c78",
+   "contentBox": {
+    "x": 0.1271,
+    "y": 0.0433,
+    "width": 0.7458,
+    "height": 0.9011
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_closed.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      40,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_closed.ghost-40.webp",
+      "x": 0.275,
+      "y": 0.45555555555555555,
+      "width": 0.45,
+      "height": 0.31777777777777777
+     }
+    },
+    "tissue": {
+     "parts": [
+      1,
+      39,
+      40,
+      43,
+      44,
+      45
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_closed.ghost-1.webp",
+      "x": 0.1275,
+      "y": 0.043333333333333335,
+      "width": 0.745,
+      "height": 0.9011111111111111
+     }
+    },
+    "frame": {
+     "parts": [
+      39,
+      1,
+      38
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      43,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_closed.ghost-43.webp",
+      "x": 0.2891666666666667,
+      "y": 0.48777777777777775,
+      "width": 0.4216666666666667,
+      "height": 0.27444444444444444
+     }
+    },
+    "special": {
+     "parts": [
+      1,
+      39,
+      40,
+      43,
+      44,
+      45
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__section__valve_closed.ghost-1.webp",
+      "x": 0.1275,
+      "y": 0.043333333333333335,
+      "width": 0.745,
+      "height": 0.9011111111111111
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.4673,
+    "y": 0.3615,
+    "r": 0.1326
+   }
+  },
+  "annular-valve/oblique/anatomy": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__oblique__anatomy.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__oblique__anatomy.thumb.webp",
+   "alt": "Annular valve: Understand depth and attachment. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.58529,
+     "y": 0.44625
+    },
+    {
+     "id": "tissue",
+     "x": 0.65507,
+     "y": 0.4326
+    }
+   ],
+   "camera": "53b31a5c94cebc22",
+   "contentBox": {
+    "x": 0.1875,
+    "y": 0.0433,
+    "width": 0.625,
+    "height": 0.9133
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__oblique__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      1
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/annular-valve__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4673,
+    "y": 0.3615,
+    "r": 0.1326
+   }
+  },
+  "annular-valve/oblique/valve_open": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_open.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_open.thumb.webp",
+   "alt": "Annular valve: Understand depth and attachment. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.58529,
+     "y": 0.44625
+    },
+    {
+     "id": "tissue",
+     "x": 0.59125,
+     "y": 0.2352
+    },
+    {
+     "id": "frame",
+     "x": 0.49477,
+     "y": 0.53307
+    },
+    {
+     "id": "leaflet",
+     "x": 0.41197,
+     "y": 0.51987
+    }
+   ],
+   "camera": "53b31a5c94cebc22",
+   "contentBox": {
+    "x": 0.1875,
+    "y": 0.0433,
+    "width": 0.625,
+    "height": 0.9133
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_open.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      40,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_open.ghost-40.webp",
+      "x": 0.2675,
+      "y": 0.42,
+      "width": 0.41,
+      "height": 0.30444444444444446
+     }
+    },
+    "tissue": {
+     "parts": [
+      1,
+      39,
+      40,
+      41,
+      45
+     ]
+    },
+    "frame": {
+     "parts": [
+      39,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_open.ghost-39.webp",
+      "x": 0.26666666666666666,
+      "y": 0.2811111111111111,
+      "width": 0.4116666666666667,
+      "height": 0.5233333333333333
+     }
+    },
+    "leaflet": {
+     "parts": [
+      41,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_open.ghost-41.webp",
+      "x": 0.28,
+      "y": 0.4488888888888889,
+      "width": 0.385,
+      "height": 0.28444444444444444
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.47,
+    "y": 0.3592,
+    "r": 0.1333
+   }
+  },
+  "annular-valve/oblique/valve_closed": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_closed.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_closed.thumb.webp",
+   "alt": "Annular valve: Understand depth and attachment. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.58529,
+     "y": 0.44625
+    },
+    {
+     "id": "tissue",
+     "x": 0.59125,
+     "y": 0.2352
+    },
+    {
+     "id": "frame",
+     "x": 0.49477,
+     "y": 0.53307
+    },
+    {
+     "id": "leaflet",
+     "x": 0.47495,
+     "y": 0.6192
+    }
+   ],
+   "camera": "53b31a5c94cebc22",
+   "contentBox": {
+    "x": 0.1875,
+    "y": 0.0433,
+    "width": 0.625,
+    "height": 0.9133
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_closed.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      40,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_closed.ghost-40.webp",
+      "x": 0.2675,
+      "y": 0.42,
+      "width": 0.41,
+      "height": 0.30444444444444446
+     }
+    },
+    "tissue": {
+     "parts": [
+      1,
+      39,
+      40,
+      43,
+      44,
+      45
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_closed.ghost-1.webp",
+      "x": 0.18833333333333332,
+      "y": 0.043333333333333335,
+      "width": 0.6241666666666666,
+      "height": 0.9133333333333333
+     }
+    },
+    "frame": {
+     "parts": [
+      39,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_closed.ghost-39.webp",
+      "x": 0.26666666666666666,
+      "y": 0.2811111111111111,
+      "width": 0.4116666666666667,
+      "height": 0.5233333333333333
+     }
+    },
+    "leaflet": {
+     "parts": [
+      43,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__oblique__valve_closed.ghost-43.webp",
+      "x": 0.28,
+      "y": 0.4488888888888889,
+      "width": 0.385,
+      "height": 0.26555555555555554
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.4673,
+    "y": 0.3615,
+    "r": 0.1326
+   }
+  },
+  "annular-valve/face/anatomy": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__face__anatomy.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__face__anatomy.thumb.webp",
+   "alt": "Annular valve: Look along the opening. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.47522,
+     "y": 0.69001
+    },
+    {
+     "id": "tissue",
+     "x": 0.26296,
+     "y": 0.46546
+    }
+   ],
+   "camera": "92d47a5e657c9745",
+   "contentBox": {
+    "x": 0.1429,
+    "y": 0.1172,
+    "width": 0.7142,
+    "height": 0.8394
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__face__anatomy.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__face__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      1
+     ]
+    },
+    "tissue": {
+     "parts": [
+      38
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/annular-valve__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4673,
+    "y": 0.3615,
+    "r": 0.1326
+   }
+  },
+  "annular-valve/face/valve_open": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__face__valve_open.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__face__valve_open.thumb.webp",
+   "alt": "Annular valve: Look along the opening. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.25915,
+     "y": 0.416
+    },
+    {
+     "id": "tissue",
+     "x": 0.26296,
+     "y": 0.46546
+    },
+    {
+     "id": "frame",
+     "x": 0.65106,
+     "y": 0.52878
+    },
+    {
+     "id": "leaflet",
+     "x": 0.56917,
+     "y": 0.53909
+    }
+   ],
+   "camera": "92d47a5e657c9745",
+   "contentBox": {
+    "x": 0.1429,
+    "y": 0.0939,
+    "width": 0.7142,
+    "height": 0.8628
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__face__valve_open.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__face__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      40,
+      1,
+      38
+     ]
+    },
+    "tissue": {
+     "parts": [
+      39,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__face__valve_open.ghost-39.webp",
+      "x": 0.24666666666666667,
+      "y": 0.09444444444444444,
+      "width": 0.45666666666666667,
+      "height": 0.63
+     }
+    },
+    "frame": {
+     "parts": [
+      39,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__face__valve_open.ghost-39.webp",
+      "x": 0.24666666666666667,
+      "y": 0.09444444444444444,
+      "width": 0.45666666666666667,
+      "height": 0.63
+     }
+    },
+    "leaflet": {
+     "parts": [
+      41,
+      1,
+      38
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.47,
+    "y": 0.3592,
+    "r": 0.1333
+   }
+  },
+  "annular-valve/face/valve_closed": {
+   "src": "/scenes/tricuspid-replacement/images/annular-valve__face__valve_closed.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/annular-valve__face__valve_closed.thumb.webp",
+   "alt": "Annular valve: Look along the opening. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.25915,
+     "y": 0.416
+    },
+    {
+     "id": "tissue",
+     "x": 0.26296,
+     "y": 0.46546
+    },
+    {
+     "id": "frame",
+     "x": 0.65106,
+     "y": 0.52878
+    },
+    {
+     "id": "leaflet",
+     "x": 0.47432,
+     "y": 0.39239
+    }
+   ],
+   "camera": "92d47a5e657c9745",
+   "contentBox": {
+    "x": 0.1429,
+    "y": 0.0939,
+    "width": 0.7142,
+    "height": 0.8628
+   },
+   "mid": "/scenes/tricuspid-replacement/images/annular-valve__face__valve_closed.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/annular-valve__face__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      40,
+      1,
+      38
+     ]
+    },
+    "tissue": {
+     "parts": [
+      39,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__face__valve_closed.ghost-39.webp",
+      "x": 0.24666666666666667,
+      "y": 0.09444444444444444,
+      "width": 0.45666666666666667,
+      "height": 0.63
+     }
+    },
+    "frame": {
+     "parts": [
+      39,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/annular-valve__face__valve_closed.ghost-39.webp",
+      "x": 0.24666666666666667,
+      "y": 0.09444444444444444,
+      "width": 0.45666666666666667,
+      "height": 0.63
+     }
+    },
+    "leaflet": {
+     "parts": [
+      43,
+      1,
+      38
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/annular-valve__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.4673,
+    "y": 0.3615,
+    "r": 0.1326
+   }
+  },
+  "flared-annular/heart/valve_closed": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__heart__valve_closed.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__heart__valve_closed.thumb.webp",
+   "alt": "Flared annular valve: Locate the treatment region. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.42078,
+     "y": 0.64473
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__heart__valve_closed.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__heart__valve_closed.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      59
+     ]
+    }
+   },
+   "keys": []
+  },
+  "flared-annular/region/anatomy": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__region__anatomy.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__region__anatomy.thumb.webp",
+   "alt": "Flared annular valve: See the valve between the chambers. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.47646,
+     "y": 0.15294
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.41511,
+     "y": 0.77344
+    },
+    {
+     "id": "region_valve",
+     "x": 0.48151,
+     "y": 0.40246
+    },
+    {
+     "id": "region_support",
+     "x": 0.43636,
+     "y": 0.55764
+    }
+   ],
+   "camera": "3da902ad9b818820",
+   "contentBox": {
+    "x": 0.2737,
+    "y": 0.0344,
+    "width": 0.4525,
+    "height": 0.9311
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__region__anatomy.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__region__anatomy.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      6
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      9
+     ]
+    },
+    "region_support": {
+     "parts": [
+      6
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "flared-annular/region/valve_open": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_open.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_open.thumb.webp",
+   "alt": "Flared annular valve: See the valve between the chambers. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.47646,
+     "y": 0.15294
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.41511,
+     "y": 0.77344
+    },
+    {
+     "id": "region_valve",
+     "x": 0.44357,
+     "y": 0.41547
+    },
+    {
+     "id": "region_support",
+     "x": 0.43636,
+     "y": 0.55764
+    },
+    {
+     "id": "region_device",
+     "x": 0.49219,
+     "y": 0.38196
+    }
+   ],
+   "camera": "3da902ad9b818820",
+   "contentBox": {
+    "x": 0.2737,
+    "y": 0.0344,
+    "width": 0.4525,
+    "height": 0.9311
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_open.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_open.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3,
+      31,
+      32,
+      33
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_open.ghost-3.webp",
+      "x": 0.32083333333333336,
+      "y": 0.035555555555555556,
+      "width": 0.39166666666666666,
+      "height": 0.33444444444444443
+     }
+    },
+    "region_ventricle": {
+     "parts": [
+      6,
+      31,
+      32
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      34
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_open.ghost-34.webp",
+      "x": 0.36333333333333334,
+      "y": 0.3188888888888889,
+      "width": 0.21583333333333332,
+      "height": 0.10666666666666667
+     }
+    },
+    "region_support": {
+     "parts": [
+      6,
+      31,
+      32
+     ]
+    },
+    "region_device": {
+     "parts": [
+      31,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "flared-annular/region/valve_closed": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_closed.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_closed.thumb.webp",
+   "alt": "Flared annular valve: See the valve between the chambers. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.47646,
+     "y": 0.15294
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.41511,
+     "y": 0.77344
+    },
+    {
+     "id": "region_valve",
+     "x": 0.47584,
+     "y": 0.423
+    },
+    {
+     "id": "region_support",
+     "x": 0.43636,
+     "y": 0.55764
+    },
+    {
+     "id": "region_device",
+     "x": 0.49219,
+     "y": 0.38196
+    }
+   ],
+   "camera": "3da902ad9b818820",
+   "contentBox": {
+    "x": 0.2737,
+    "y": 0.0344,
+    "width": 0.4525,
+    "height": 0.9311
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_closed.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_closed.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3,
+      31,
+      32,
+      33
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_closed.ghost-3.webp",
+      "x": 0.32083333333333336,
+      "y": 0.035555555555555556,
+      "width": 0.39166666666666666,
+      "height": 0.33444444444444443
+     }
+    },
+    "region_ventricle": {
+     "parts": [
+      6,
+      31,
+      32
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      36
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_closed.ghost-36.webp",
+      "x": 0.36333333333333334,
+      "y": 0.3188888888888889,
+      "width": 0.21583333333333332,
+      "height": 0.10888888888888888
+     }
+    },
+    "region_support": {
+     "parts": [
+      6,
+      31,
+      32
+     ]
+    },
+    "region_device": {
+     "parts": [
+      31,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "flared-annular/access/anatomy": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__access__anatomy.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__access__anatomy.thumb.webp",
+   "alt": "Flared annular valve: Approach from the right atrium. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.47646,
+     "y": 0.15294
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.41511,
+     "y": 0.77344
+    },
+    {
+     "id": "region_valve",
+     "x": 0.48151,
+     "y": 0.40246
+    },
+    {
+     "id": "region_access",
+     "x": 0.47881,
+     "y": 0.24579
+    }
+   ],
+   "camera": "3da902ad9b818820",
+   "contentBox": {
+    "x": 0.2737,
+    "y": 0.0344,
+    "width": 0.4525,
+    "height": 0.9311
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__access__anatomy.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__access__anatomy.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      3
+     ]
+    },
+    "region_ventricle": {
+     "parts": [
+      6
+     ]
+    },
+    "region_valve": {
+     "parts": [
+      9
+     ]
+    },
+    "region_access": {
+     "parts": [
+      23
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "flared-annular/section/anatomy": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__section__anatomy.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__section__anatomy.thumb.webp",
+   "alt": "Flared annular valve: See the tissue\u2013device relationship. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.5,
+     "y": 0.46434
+    },
+    {
+     "id": "tissue",
+     "x": 0.5,
+     "y": 0.22847
+    }
+   ],
+   "camera": "b14c2c8b1ac99c78",
+   "contentBox": {
+    "x": 0.1271,
+    "y": 0.0433,
+    "width": 0.7458,
+    "height": 0.9011
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__section__anatomy.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__section__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      1
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/flared-annular__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4672,
+    "y": 0.3634,
+    "r": 0.1381
+   }
+  },
+  "flared-annular/section/valve_open": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_open.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_open.thumb.webp",
+   "alt": "Flared annular valve: See the tissue\u2013device relationship. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.5,
+     "y": 0.46434
+    },
+    {
+     "id": "tissue",
+     "x": 0.26113,
+     "y": 0.74552
+    },
+    {
+     "id": "frame",
+     "x": 0.50371,
+     "y": 0.57731
+    },
+    {
+     "id": "leaflet",
+     "x": 0.45742,
+     "y": 0.57716
+    },
+    {
+     "id": "special",
+     "x": 0.24645,
+     "y": 0.56507
+    }
+   ],
+   "camera": "b14c2c8b1ac99c78",
+   "contentBox": {
+    "x": 0.1271,
+    "y": 0.0433,
+    "width": 0.7458,
+    "height": 0.9133
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_open.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      47,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_open.ghost-47.webp",
+      "x": 0.275,
+      "y": 0.45555555555555555,
+      "width": 0.45,
+      "height": 0.31777777777777777
+     }
+    },
+    "tissue": {
+     "parts": [
+      46,
+      1,
+      38
+     ]
+    },
+    "frame": {
+     "parts": [
+      46,
+      1,
+      38
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      48,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_open.ghost-48.webp",
+      "x": 0.2891666666666667,
+      "y": 0.48777777777777775,
+      "width": 0.4216666666666667,
+      "height": 0.2911111111111111
+     }
+    },
+    "special": {
+     "parts": [
+      1,
+      46,
+      47,
+      48,
+      52
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_open.ghost-1.webp",
+      "x": 0.1275,
+      "y": 0.043333333333333335,
+      "width": 0.745,
+      "height": 0.9011111111111111
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.47,
+    "y": 0.3608,
+    "r": 0.1388
+   }
+  },
+  "flared-annular/section/valve_closed": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_closed.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_closed.thumb.webp",
+   "alt": "Flared annular valve: See the tissue\u2013device relationship. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.5,
+     "y": 0.46434
+    },
+    {
+     "id": "tissue",
+     "x": 0.26113,
+     "y": 0.74552
+    },
+    {
+     "id": "frame",
+     "x": 0.50371,
+     "y": 0.57731
+    },
+    {
+     "id": "leaflet",
+     "x": 0.51747,
+     "y": 0.65492
+    },
+    {
+     "id": "special",
+     "x": 0.24645,
+     "y": 0.56507
+    }
+   ],
+   "camera": "b14c2c8b1ac99c78",
+   "contentBox": {
+    "x": 0.1271,
+    "y": 0.0433,
+    "width": 0.7458,
+    "height": 0.9133
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_closed.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      47,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_closed.ghost-47.webp",
+      "x": 0.275,
+      "y": 0.45555555555555555,
+      "width": 0.45,
+      "height": 0.31777777777777777
+     }
+    },
+    "tissue": {
+     "parts": [
+      46,
+      1,
+      38
+     ]
+    },
+    "frame": {
+     "parts": [
+      46,
+      1,
+      38
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      50,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_closed.ghost-50.webp",
+      "x": 0.2891666666666667,
+      "y": 0.48777777777777775,
+      "width": 0.4216666666666667,
+      "height": 0.27444444444444444
+     }
+    },
+    "special": {
+     "parts": [
+      1,
+      46,
+      47,
+      50,
+      51,
+      52
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__section__valve_closed.ghost-1.webp",
+      "x": 0.1275,
+      "y": 0.043333333333333335,
+      "width": 0.745,
+      "height": 0.9011111111111111
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.4672,
+    "y": 0.3634,
+    "r": 0.1381
+   }
+  },
+  "flared-annular/oblique/anatomy": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__oblique__anatomy.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__oblique__anatomy.thumb.webp",
+   "alt": "Flared annular valve: Understand depth and attachment. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.58529,
+     "y": 0.44625
+    },
+    {
+     "id": "tissue",
+     "x": 0.65507,
+     "y": 0.4326
+    }
+   ],
+   "camera": "53b31a5c94cebc22",
+   "contentBox": {
+    "x": 0.1875,
+    "y": 0.0433,
+    "width": 0.625,
+    "height": 0.9133
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__oblique__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      1
+     ]
+    },
+    "tissue": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/flared-annular__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4672,
+    "y": 0.3634,
+    "r": 0.1381
+   }
+  },
+  "flared-annular/oblique/valve_open": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_open.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_open.thumb.webp",
+   "alt": "Flared annular valve: Understand depth and attachment. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.6459,
+     "y": 0.60579
+    },
+    {
+     "id": "tissue",
+     "x": 0.59125,
+     "y": 0.2352
+    },
+    {
+     "id": "frame",
+     "x": 0.49616,
+     "y": 0.48439
+    },
+    {
+     "id": "leaflet",
+     "x": 0.45443,
+     "y": 0.54475
+    }
+   ],
+   "camera": "53b31a5c94cebc22",
+   "contentBox": {
+    "x": 0.1875,
+    "y": 0.0433,
+    "width": 0.625,
+    "height": 0.9133
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_open.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      47,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_open.ghost-47.webp",
+      "x": 0.2675,
+      "y": 0.42,
+      "width": 0.41,
+      "height": 0.30444444444444446
+     }
+    },
+    "tissue": {
+     "parts": [
+      46,
+      1,
+      38
+     ]
+    },
+    "frame": {
+     "parts": [
+      46,
+      1,
+      38
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      48,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_open.ghost-48.webp",
+      "x": 0.28,
+      "y": 0.4488888888888889,
+      "width": 0.385,
+      "height": 0.28444444444444444
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.47,
+    "y": 0.3608,
+    "r": 0.1388
+   }
+  },
+  "flared-annular/oblique/valve_closed": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_closed.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_closed.thumb.webp",
+   "alt": "Flared annular valve: Understand depth and attachment. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.6459,
+     "y": 0.60579
+    },
+    {
+     "id": "tissue",
+     "x": 0.59125,
+     "y": 0.2352
+    },
+    {
+     "id": "frame",
+     "x": 0.49616,
+     "y": 0.48439
+    },
+    {
+     "id": "leaflet",
+     "x": 0.46522,
+     "y": 0.62085
+    }
+   ],
+   "camera": "53b31a5c94cebc22",
+   "contentBox": {
+    "x": 0.1875,
+    "y": 0.0433,
+    "width": 0.625,
+    "height": 0.9133
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_closed.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      47,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_closed.ghost-47.webp",
+      "x": 0.2675,
+      "y": 0.42,
+      "width": 0.41,
+      "height": 0.30444444444444446
+     }
+    },
+    "tissue": {
+     "parts": [
+      46,
+      1,
+      38
+     ]
+    },
+    "frame": {
+     "parts": [
+      46,
+      1,
+      38
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      50,
+      1,
+      38
+     ],
+     "ghost": {
+      "src": "/scenes/tricuspid-replacement/images/flared-annular__oblique__valve_closed.ghost-50.webp",
+      "x": 0.28,
+      "y": 0.4488888888888889,
+      "width": 0.385,
+      "height": 0.26555555555555554
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.4672,
+    "y": 0.3634,
+    "r": 0.1381
+   }
+  },
+  "flared-annular/face/anatomy": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__face__anatomy.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__face__anatomy.thumb.webp",
+   "alt": "Flared annular valve: Look along the opening. 1. Anatomy context. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.47522,
+     "y": 0.69001
+    },
+    {
+     "id": "tissue",
+     "x": 0.26296,
+     "y": 0.46546
+    }
+   ],
+   "camera": "92d47a5e657c9745",
+   "contentBox": {
+    "x": 0.1429,
+    "y": 0.1172,
+    "width": 0.7142,
+    "height": 0.8394
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__face__anatomy.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__face__anatomy.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      1
+     ]
+    },
+    "tissue": {
+     "parts": [
+      38
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/flared-annular__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4672,
+    "y": 0.3634,
+    "r": 0.1381
+   }
+  },
+  "flared-annular/face/valve_open": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__face__valve_open.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__face__valve_open.thumb.webp",
+   "alt": "Flared annular valve: Look along the opening. 2. Replacement open. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.25915,
+     "y": 0.416
+    },
+    {
+     "id": "tissue",
+     "x": 0.26296,
+     "y": 0.46546
+    },
+    {
+     "id": "frame",
+     "x": 0.65438,
+     "y": 0.5215
+    },
+    {
+     "id": "leaflet",
+     "x": 0.56917,
+     "y": 0.53909
+    }
+   ],
+   "camera": "92d47a5e657c9745",
+   "contentBox": {
+    "x": 0.1429,
+    "y": 0.0433,
+    "width": 0.7142,
+    "height": 0.9133
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__face__valve_open.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__face__valve_open.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      47,
+      1,
+      38
+     ]
+    },
+    "tissue": {
+     "parts": [
+      46,
+      1,
+      38
+     ]
+    },
+    "frame": {
+     "parts": [
+      46,
+      1,
+      38
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      48,
+      1,
+      38
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_open.thumb.webp",
+    "view": "region",
+    "x": 0.47,
+    "y": 0.3608,
+    "r": 0.1388
+   }
+  },
+  "flared-annular/face/valve_closed": {
+   "src": "/scenes/tricuspid-replacement/images/flared-annular__face__valve_closed.webp",
+   "thumb": "/scenes/tricuspid-replacement/images/flared-annular__face__valve_closed.thumb.webp",
+   "alt": "Flared annular valve: Look along the opening. 3. Replacement closed. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "junction",
+     "x": 0.25915,
+     "y": 0.416
+    },
+    {
+     "id": "tissue",
+     "x": 0.26296,
+     "y": 0.46546
+    },
+    {
+     "id": "frame",
+     "x": 0.65438,
+     "y": 0.5215
+    },
+    {
+     "id": "leaflet",
+     "x": 0.46819,
+     "y": 0.3861
+    }
+   ],
+   "camera": "92d47a5e657c9745",
+   "contentBox": {
+    "x": 0.1429,
+    "y": 0.0433,
+    "width": 0.7142,
+    "height": 0.9133
+   },
+   "mid": "/scenes/tricuspid-replacement/images/flared-annular__face__valve_closed.mid.webp",
+   "partMap": "/scenes/tricuspid-replacement/images/flared-annular__face__valve_closed.parts.png",
+   "focus": {
+    "junction": {
+     "parts": [
+      47,
+      1,
+      38
+     ]
+    },
+    "tissue": {
+     "parts": [
+      46,
+      1,
+      38
+     ]
+    },
+    "frame": {
+     "parts": [
+      46,
+      1,
+      38
+     ]
+    },
+    "leaflet": {
+     "parts": [
+      50,
+      1,
+      38
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/tricuspid-replacement/images/flared-annular__region__valve_closed.thumb.webp",
+    "view": "region",
+    "x": 0.4672,
+    "y": 0.3634,
+    "r": 0.1381
+   }
+  }
+ },
+ "presentation": {
+  "annotationMode": "external",
+  "layout": "plate",
+  "labels": {
+   "location": "Treatment location",
+   "junction": "Tricuspid valve",
+   "region_atrium": "Right atrium",
+   "region_ventricle": "Right ventricle",
+   "region_access": "Atrial approach",
+   "region_valve": "Native valve",
+   "region_support": "Papillary muscles",
+   "region_device": "Generic replacement valve",
+   "tissue": "Representative tissue",
+   "frame": "Support frame",
+   "leaflet": "Prosthetic leaflets",
+   "special": "Right AV junction"
+  },
+  "stateLabels": {
+   "anatomy": "Anatomy only",
+   "valve_open": "Valve open",
+   "valve_closed": "Valve closed"
+  },
+  "stateGroups": [
+   {
+    "label": "Anatomy",
+    "states": [
+     "anatomy"
+    ]
+   },
+   {
+    "label": "With valve",
+    "states": [
+     "valve_open",
+     "valve_closed"
+    ]
+   }
+  ],
+  "designComparison": {
+   "pairs": [
+    {
+     "designs": [
+      "annular-valve",
+      "flared-annular"
+     ],
+     "views": [
+      "section",
+      "oblique",
+      "face"
+     ],
+     "states": [
+      "valve_open",
+      "valve_closed"
+     ],
+     "summary": "Support shape. The second design uses a flared support at the same right atrioventricular site. Same representative tricuspid valve, camera and pose."
+    }
+   ]
+  },
+  "keyColors": {
+   "cut": "#4d5941"
+  }
+ }
+}

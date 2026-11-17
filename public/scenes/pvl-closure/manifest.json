@@ -1,1 +1,1243 @@
-{"classId":"pvl-closure","conditionId":"cond-pvl","title":"Paravalvular leak closure","linkLabel":"Visualize device class","status":"Schematic","scope":"Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.","stageLabel":"Schematic · representative anatomy · not to scale","attribution":"Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.","sources":[{"title":"Toronto Heart Atlas","url":"https://github.com/tgh-apil/TorontoHeartAtlas","locator":"RegularHeart chamber and vessel meshes, CC BY 4.0."},{"title":"Creative Commons Attribution 4.0","url":"https://creativecommons.org/licenses/by/4.0/"},{"title":"NHLBI: How blood flows through the heart","url":"https://www.nhlbi.nih.gov/health/heart/blood-flow","locator":"Written heart-valve and circulation sections; no media reused."},{"title":"University of Minnesota: written anatomy reference","url":"https://www.vhlab.umn.edu/atlas/anatomy-tutorial/cardiac-valve-nomenclature.shtml","locator":"Anatomical description; no atlas images or models reused."}],"legend":[{"label":"Representative tissue","color":"#ad77ca"},{"label":"Generic device","color":"#ffd358"},{"label":"Leaflets / fabric","color":"#f6dfc8"},{"label":"Suture / emphasis","color":"#35a8a0"}],"designs":[{"id":"plug","label":"Generic peri-prosthetic plug","summary":"A synthetic channel lies beside a generic prosthetic cuff. No measured prosthesis or defect is represented."}],"states":[{"id":"channel","label":"Peri-prosthetic channel","note":"The synthetic channel is outside the prosthetic cuff, separate from the central valve opening."},{"id":"approach","label":"Plug above the channel","note":"The generic plug is shown apart from the channel to expose its relationship. This is not a procedural instruction."},{"id":"placed","label":"Plug within the channel","note":"The plug occupies the representative peri-cuff channel. No sealing, flow or clinical result is predicted."}],"views":[{"id":"heart","label":"Whole heart","title":"Locate the treatment region","lesson":"Use the highlighted region to orient the enlarged views.","states":["placed"],"orientation":{"superior":{"x":0.0,"y":-0.9595},"patientRight":{"x":-0.8384,"y":-0.1535}}},{"id":"region","label":"Left chambers","title":"See the valve between the chambers","lesson":"The left atrium and left ventricle of a real heart are opened along their long axis. Seen from above the valve, the gap beside the prosthetic cuff is separate from the valve opening.","states":["channel","approach","placed"],"orientation":{"superior":{"x":-0.6769,"y":-0.2095},"patientRight":{"x":-0.4092,"y":-0.6898}}},{"id":"section","label":"Mechanism section","title":"See the tissue–device relationship","lesson":"Distinguish the peri-cuff channel from the prosthesis central opening; the generic plug belongs outside the cuff.","states":["channel","approach","placed"],"orientation":{"superior":{"x":0.5599,"y":0.1619},"patientRight":{"x":-0.7783,"y":-0.2338}}},{"id":"oblique","label":"Oblique detail","title":"Understand depth and attachment","lesson":"An oblique view separates the near surface, device and supporting tissue.","states":["channel","approach","placed"],"orientation":{"superior":{"x":0.1542,"y":0.1282},"patientRight":{"x":-0.8417,"y":-0.5023}}},{"id":"face","label":"Face view","title":"Look along the opening","lesson":"The face view complements the section. All poses and proportions are representative, not measured.","states":["channel","approach","placed"],"orientation":{"superior":{"x":-0.6011,"y":-0.4895},"patientRight":{"x":0.7822,"y":-0.1985}}}],"annotations":{"location":{"label":"TREATMENT LOCATION","body":"The highlighted region locates this class in the heart. The marker is enlarged for orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"channel":{"label":"PERI-PROSTHETIC CHANNEL","body":"This deliberately synthetic opening lies outside the cuff. It is not a native leaflet coaptation gap.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"cuff":{"label":"PROSTHETIC CUFF","body":"A generic prosthetic cuff separates the central valve opening from the peri-cuff channel.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"opening":{"label":"CENTRAL VALVE OPENING","body":"The central prosthetic valve opening is separate from the channel targeted by the generic plug.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"device":{"label":"GENERIC CHANNEL PLUG","body":"The plug occupies a representative channel. Position does not imply sealing, safety, compatibility or flow reduction.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_atrium":{"label":"LEFT ATRIUM","body":"The left atrium sits above the valve. Its shape comes from a real heart, opened along its long axis.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_ventricle":{"label":"LEFT VENTRICLE","body":"The left ventricle sits below the valve. Its cavity and wall shape come from the same real heart.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_aorta":{"label":"AORTIC ROOT","body":"The aortic root sits beside the front leaflet of the mitral valve and helps with orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_cuff":{"label":"PROSTHETIC CUFF","body":"A generic replacement valve sits in the mitral ring. Its sewing cuff is shown cut along the section.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_channel":{"label":"PERI-PROSTHETIC CHANNEL","body":"This representative gap lies between the cuff and the surrounding tissue, outside the valve opening.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_device":{"label":"GENERIC CHANNEL PLUG","body":"The plug sits in the gap beside the cuff. Its shape is representative, not a specific product. Its position does not imply sealing.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"}},"images":{"plug/heart/placed":{"src":"/scenes/pvl-closure/images/plug__heart__placed.webp","thumb":"/scenes/pvl-closure/images/plug__heart__placed.thumb.webp","alt":"Generic peri-prosthetic plug: Locate the treatment region. Plug within the channel. Schematic, representative illustration.","pins":[{"id":"location","x":0.56822,"y":0.57323}]},"plug/region/channel":{"src":"/scenes/pvl-closure/images/plug__region__channel.webp","thumb":"/scenes/pvl-closure/images/plug__region__channel.thumb.webp","alt":"Generic peri-prosthetic plug: See the valve between the chambers. Peri-prosthetic channel. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.6293,"y":0.1949},{"id":"region_aorta","x":0.44787,"y":0.44977},{"id":"region_cuff","x":0.50546,"y":0.25595},{"id":"region_channel","x":0.66375,"y":0.2955},{"id":"region_ventricle","x":0.65784,"y":0.82307}]},"plug/region/approach":{"src":"/scenes/pvl-closure/images/plug__region__approach.webp","thumb":"/scenes/pvl-closure/images/plug__region__approach.thumb.webp","alt":"Generic peri-prosthetic plug: See the valve between the chambers. Plug above the channel. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.6293,"y":0.1949},{"id":"region_aorta","x":0.44787,"y":0.44977},{"id":"region_cuff","x":0.50546,"y":0.25595},{"id":"region_channel","x":0.66375,"y":0.2955},{"id":"region_ventricle","x":0.65784,"y":0.82307},{"id":"region_device","x":0.59458,"y":0.16468}]},"plug/region/placed":{"src":"/scenes/pvl-closure/images/plug__region__placed.webp","thumb":"/scenes/pvl-closure/images/plug__region__placed.thumb.webp","alt":"Generic peri-prosthetic plug: See the valve between the chambers. Plug within the channel. Schematic, representative illustration.","pins":[{"id":"region_atrium","x":0.6293,"y":0.1949},{"id":"region_aorta","x":0.44787,"y":0.44977},{"id":"region_cuff","x":0.50546,"y":0.25595},{"id":"region_ventricle","x":0.65784,"y":0.82307},{"id":"region_device","x":0.66163,"y":0.25715}]},"plug/section/channel":{"src":"/scenes/pvl-closure/images/plug__section__channel.webp","thumb":"/scenes/pvl-closure/images/plug__section__channel.thumb.webp","alt":"Generic peri-prosthetic plug: See the tissue–device relationship. Peri-prosthetic channel. Schematic, representative illustration.","pins":[{"id":"channel","x":0.80128,"y":0.51857},{"id":"cuff","x":0.32909,"y":0.59768},{"id":"opening","x":0.69433,"y":0.52714}]},"plug/section/approach":{"src":"/scenes/pvl-closure/images/plug__section__approach.webp","thumb":"/scenes/pvl-closure/images/plug__section__approach.thumb.webp","alt":"Generic peri-prosthetic plug: See the tissue–device relationship. Plug above the channel. Schematic, representative illustration.","pins":[{"id":"channel","x":0.80128,"y":0.51857},{"id":"cuff","x":0.32909,"y":0.59768},{"id":"opening","x":0.69433,"y":0.52714},{"id":"device","x":0.768,"y":0.29368}]},"plug/section/placed":{"src":"/scenes/pvl-closure/images/plug__section__placed.webp","thumb":"/scenes/pvl-closure/images/plug__section__placed.thumb.webp","alt":"Generic peri-prosthetic plug: See the tissue–device relationship. Plug within the channel. Schematic, representative illustration.","pins":[{"id":"cuff","x":0.32909,"y":0.59768},{"id":"opening","x":0.69433,"y":0.52714},{"id":"device","x":0.768,"y":0.47452}]},"plug/oblique/channel":{"src":"/scenes/pvl-closure/images/plug__oblique__channel.webp","thumb":"/scenes/pvl-closure/images/plug__oblique__channel.thumb.webp","alt":"Generic peri-prosthetic plug: Understand depth and attachment. Peri-prosthetic channel. Schematic, representative illustration.","pins":[{"id":"channel","x":0.73997,"y":0.59002},{"id":"cuff","x":0.27491,"y":0.50802},{"id":"opening","x":0.63032,"y":0.57091}]},"plug/oblique/approach":{"src":"/scenes/pvl-closure/images/plug__oblique__approach.webp","thumb":"/scenes/pvl-closure/images/plug__oblique__approach.thumb.webp","alt":"Generic peri-prosthetic plug: Understand depth and attachment. Plug above the channel. Schematic, representative illustration.","pins":[{"id":"channel","x":0.73997,"y":0.59002},{"id":"cuff","x":0.27491,"y":0.50802},{"id":"opening","x":0.63032,"y":0.57091},{"id":"device","x":0.72582,"y":0.34419}]},"plug/oblique/placed":{"src":"/scenes/pvl-closure/images/plug__oblique__placed.webp","thumb":"/scenes/pvl-closure/images/plug__oblique__placed.thumb.webp","alt":"Generic peri-prosthetic plug: Understand depth and attachment. Plug within the channel. Schematic, representative illustration.","pins":[{"id":"cuff","x":0.27491,"y":0.50802},{"id":"opening","x":0.63032,"y":0.57091},{"id":"device","x":0.72582,"y":0.54232}]},"plug/face/channel":{"src":"/scenes/pvl-closure/images/plug__face__channel.webp","thumb":"/scenes/pvl-closure/images/plug__face__channel.thumb.webp","alt":"Generic peri-prosthetic plug: Look along the opening. Peri-prosthetic channel. Schematic, representative illustration.","pins":[{"id":"channel","x":0.19739,"y":0.48837},{"id":"cuff","x":0.6559,"y":0.28981},{"id":"opening","x":0.29554,"y":0.49773}]},"plug/face/approach":{"src":"/scenes/pvl-closure/images/plug__face__approach.webp","thumb":"/scenes/pvl-closure/images/plug__face__approach.thumb.webp","alt":"Generic peri-prosthetic plug: Look along the opening. Plug above the channel. Schematic, representative illustration.","pins":[{"id":"channel","x":0.19739,"y":0.48837},{"id":"cuff","x":0.6559,"y":0.28981},{"id":"opening","x":0.29554,"y":0.49773},{"id":"device","x":0.24852,"y":0.61549}]},"plug/face/placed":{"src":"/scenes/pvl-closure/images/plug__face__placed.webp","thumb":"/scenes/pvl-closure/images/plug__face__placed.thumb.webp","alt":"Generic peri-prosthetic plug: Look along the opening. Plug within the channel. Schematic, representative illustration.","pins":[{"id":"cuff","x":0.6559,"y":0.28981},{"id":"opening","x":0.29554,"y":0.49773},{"id":"device","x":0.23502,"y":0.53219}]}}}
+{
+ "classId": "pvl-closure",
+ "conditionId": "cond-pvl",
+ "title": "Paravalvular leak closure",
+ "linkLabel": "Visualize device class",
+ "status": "Schematic",
+ "scope": "Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.",
+ "stageLabel": "Schematic \u00b7 representative anatomy \u00b7 not to scale",
+ "attribution": "Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.",
+ "sources": [
+  {
+   "title": "Toronto Heart Atlas",
+   "url": "https://github.com/tgh-apil/TorontoHeartAtlas",
+   "locator": "RegularHeart chamber and vessel meshes, CC BY 4.0."
+  },
+  {
+   "title": "Creative Commons Attribution 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "title": "NHLBI: How blood flows through the heart",
+   "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+   "locator": "Written heart-valve and circulation sections; no media reused."
+  },
+  {
+   "title": "University of Minnesota: written anatomy reference",
+   "url": "https://www.vhlab.umn.edu/atlas/anatomy-tutorial/cardiac-valve-nomenclature.shtml",
+   "locator": "Anatomical description; no atlas images or models reused."
+  }
+ ],
+ "legend": [
+  {
+   "label": "Representative tissue",
+   "color": "#ad77ca"
+  },
+  {
+   "label": "Generic device",
+   "color": "#ffd358"
+  },
+  {
+   "label": "Leaflets / fabric",
+   "color": "#f6dfc8"
+  },
+  {
+   "label": "Suture / emphasis",
+   "color": "#35a8a0"
+  }
+ ],
+ "designs": [
+  {
+   "id": "plug",
+   "label": "Generic peri-prosthetic plug",
+   "summary": "A synthetic channel lies beside a generic prosthetic cuff. No measured prosthesis or defect is represented."
+  }
+ ],
+ "states": [
+  {
+   "id": "channel",
+   "label": "Peri-prosthetic channel",
+   "note": "The synthetic channel is outside the prosthetic cuff, separate from the central valve opening."
+  },
+  {
+   "id": "approach",
+   "label": "Plug above the channel",
+   "note": "The generic plug is shown apart from the channel to expose its relationship. This is not a procedural instruction."
+  },
+  {
+   "id": "placed",
+   "label": "Plug within the channel",
+   "note": "The plug occupies the representative peri-cuff channel. No sealing, flow or clinical result is predicted."
+  }
+ ],
+ "views": [
+  {
+   "id": "heart",
+   "label": "Whole heart",
+   "title": "Locate the treatment region",
+   "lesson": "The highlighted region orients the enlarged views.",
+   "states": [
+    "placed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9595
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1535
+    }
+   }
+  },
+  {
+   "id": "region",
+   "label": "Left chambers",
+   "title": "See the valve between the chambers",
+   "lesson": "The left chambers opened along their long axis. The channel beside the cuff is separate from the valve opening.",
+   "states": [
+    "channel",
+    "approach",
+    "placed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": -0.6769,
+     "y": -0.2095
+    },
+    "patientRight": {
+     "x": -0.4092,
+     "y": -0.6898
+    }
+   },
+   "presentation": {
+    "directionCaption": "Left chambers",
+    "representation": "representative-view",
+    "regionLabel": "Paravalvular leak closure"
+   }
+  },
+  {
+   "id": "section",
+   "label": "Mechanism section",
+   "title": "See the tissue\u2013device relationship",
+   "lesson": "The channel lies outside the cuff and apart from the central opening. The plug belongs outside the cuff.",
+   "states": [
+    "channel",
+    "approach",
+    "placed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.5599,
+     "y": 0.1619
+    },
+    "patientRight": {
+     "x": -0.7783,
+     "y": -0.2338
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen from the front",
+    "representation": "representative-section",
+    "regionLabel": "Paravalvular leak closure"
+   }
+  },
+  {
+   "id": "oblique",
+   "label": "Oblique detail",
+   "title": "Understand depth and attachment",
+   "lesson": "An oblique view separates the near surface, the cuff, the channel and the plug.",
+   "states": [
+    "channel",
+    "approach",
+    "placed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.1542,
+     "y": 0.1282
+    },
+    "patientRight": {
+     "x": -0.8417,
+     "y": -0.5023
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen at an angle",
+    "representation": "representative-section",
+    "regionLabel": "Paravalvular leak closure"
+   }
+  },
+  {
+   "id": "face",
+   "label": "Face view",
+   "title": "Look along the opening",
+   "lesson": "Looking along the opening. Poses and proportions are representative, not measured.",
+   "states": [
+    "channel",
+    "approach",
+    "placed"
+   ],
+   "orientation": {
+    "superior": {
+     "x": -0.6011,
+     "y": -0.4895
+    },
+    "patientRight": {
+     "x": 0.7822,
+     "y": -0.1985
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen along the opening",
+    "representation": "representative-section",
+    "regionLabel": "Paravalvular leak closure"
+   }
+  }
+ ],
+ "annotations": {
+  "location": {
+   "label": "TREATMENT LOCATION",
+   "body": "The highlighted region locates this class in the heart. The marker is enlarged for orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "channel": {
+   "label": "PERI-PROSTHETIC CHANNEL",
+   "body": "This deliberately synthetic opening lies outside the cuff. It is not a native leaflet coaptation gap.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic",
+   "landmarkId": "pvl-closure.channel"
+  },
+  "cuff": {
+   "label": "PROSTHETIC CUFF",
+   "body": "A generic prosthetic cuff separates the central valve opening from the peri-cuff channel.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic",
+   "landmarkId": "pvl-closure.cuff"
+  },
+  "opening": {
+   "label": "CENTRAL VALVE OPENING",
+   "body": "The central prosthetic valve opening is separate from the channel targeted by the generic plug.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "device": {
+   "label": "GENERIC CHANNEL PLUG",
+   "body": "The plug occupies a representative channel. Position does not imply sealing, safety, compatibility or flow reduction.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "pvl-closure.device"
+  },
+  "region_atrium": {
+   "label": "LEFT ATRIUM",
+   "body": "The left atrium sits above the valve. Its shape comes from a real heart, opened along its long axis.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_ventricle": {
+   "label": "LEFT VENTRICLE",
+   "body": "The left ventricle sits below the valve. Its cavity and wall shape come from the same real heart.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_aorta": {
+   "label": "AORTIC ROOT",
+   "body": "The aortic root sits beside the front leaflet of the mitral valve and helps with orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_cuff": {
+   "label": "PROSTHETIC CUFF",
+   "body": "A generic replacement valve sits in the mitral ring. Its sewing cuff is shown cut along the section.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic",
+   "landmarkId": "pvl-closure.cuff"
+  },
+  "region_channel": {
+   "label": "PERI-PROSTHETIC CHANNEL",
+   "body": "This representative gap lies between the cuff and the surrounding tissue, outside the valve opening.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic",
+   "landmarkId": "pvl-closure.channel"
+  },
+  "region_device": {
+   "label": "GENERIC CHANNEL PLUG",
+   "body": "The plug sits in the gap beside the cuff. Its shape is representative, not a specific product. Its position does not imply sealing.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic",
+   "landmarkId": "pvl-closure.device"
+  }
+ },
+ "images": {
+  "plug/heart/placed": {
+   "src": "/scenes/pvl-closure/images/plug__heart__placed.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__heart__placed.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: Locate the treatment region. Plug within the channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.56822,
+     "y": 0.57323
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/pvl-closure/images/plug__heart__placed.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__heart__placed.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      27
+     ]
+    }
+   },
+   "keys": []
+  },
+  "plug/region/channel": {
+   "src": "/scenes/pvl-closure/images/plug__region__channel.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__region__channel.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: See the valve between the chambers. Peri-prosthetic channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.50279,
+     "y": 0.12621
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.42917,
+     "y": 0.30938
+    },
+    {
+     "id": "region_cuff",
+     "x": 0.53859,
+     "y": 0.25022
+    },
+    {
+     "id": "region_channel",
+     "x": 0.66699,
+     "y": 0.29671
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.58009,
+     "y": 0.70635
+    }
+   ],
+   "camera": "3443fee26839a3e9",
+   "contentBox": {
+    "x": 0.2492,
+    "y": 0.0344,
+    "width": 0.5017,
+    "height": 0.9311
+   },
+   "mid": "/scenes/pvl-closure/images/plug__region__channel.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__region__channel.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      7
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      14
+     ]
+    },
+    "region_cuff": {
+     "parts": [
+      16
+     ],
+     "ghost": {
+      "src": "/scenes/pvl-closure/images/plug__region__channel.ghost-16.webp",
+      "x": 0.49916666666666665,
+      "y": 0.2411111111111111,
+      "width": 0.15416666666666667,
+      "height": 0.06111111111111111
+     }
+    },
+    "region_channel": {
+     "parts": [
+      15
+     ],
+     "ghost": {
+      "src": "/scenes/pvl-closure/images/plug__region__channel.ghost-15.webp",
+      "x": 0.455,
+      "y": 0.22777777777777777,
+      "width": 0.23166666666666666,
+      "height": 0.07555555555555556
+     }
+    },
+    "region_ventricle": {
+     "parts": [
+      10
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "plug/region/approach": {
+   "src": "/scenes/pvl-closure/images/plug__region__approach.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__region__approach.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: See the valve between the chambers. Plug above the channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.50279,
+     "y": 0.12621
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.42917,
+     "y": 0.30938
+    },
+    {
+     "id": "region_cuff",
+     "x": 0.53859,
+     "y": 0.25022
+    },
+    {
+     "id": "region_channel",
+     "x": 0.66699,
+     "y": 0.29671
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.58009,
+     "y": 0.70635
+    },
+    {
+     "id": "region_device",
+     "x": 0.61527,
+     "y": 0.16691
+    }
+   ],
+   "camera": "3443fee26839a3e9",
+   "contentBox": {
+    "x": 0.2492,
+    "y": 0.0344,
+    "width": 0.5017,
+    "height": 0.9311
+   },
+   "mid": "/scenes/pvl-closure/images/plug__region__approach.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__region__approach.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      7,
+      18
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      14
+     ]
+    },
+    "region_cuff": {
+     "parts": [
+      16
+     ],
+     "ghost": {
+      "src": "/scenes/pvl-closure/images/plug__region__approach.ghost-16.webp",
+      "x": 0.49916666666666665,
+      "y": 0.2411111111111111,
+      "width": 0.15416666666666667,
+      "height": 0.06111111111111111
+     }
+    },
+    "region_channel": {
+     "parts": [
+      15
+     ],
+     "ghost": {
+      "src": "/scenes/pvl-closure/images/plug__region__approach.ghost-15.webp",
+      "x": 0.455,
+      "y": 0.22777777777777777,
+      "width": 0.23166666666666666,
+      "height": 0.07555555555555556
+     }
+    },
+    "region_ventricle": {
+     "parts": [
+      10
+     ]
+    },
+    "region_device": {
+     "parts": [
+      18,
+      6,
+      7,
+      8,
+      20
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "plug/region/placed": {
+   "src": "/scenes/pvl-closure/images/plug__region__placed.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__region__placed.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: See the valve between the chambers. Plug within the channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_atrium",
+     "x": 0.50279,
+     "y": 0.12621
+    },
+    {
+     "id": "region_aorta",
+     "x": 0.42917,
+     "y": 0.30938
+    },
+    {
+     "id": "region_cuff",
+     "x": 0.53859,
+     "y": 0.25022
+    },
+    {
+     "id": "region_ventricle",
+     "x": 0.58009,
+     "y": 0.70635
+    },
+    {
+     "id": "region_device",
+     "x": 0.661,
+     "y": 0.26188
+    }
+   ],
+   "camera": "3443fee26839a3e9",
+   "contentBox": {
+    "x": 0.2492,
+    "y": 0.0344,
+    "width": 0.5017,
+    "height": 0.9311
+   },
+   "mid": "/scenes/pvl-closure/images/plug__region__placed.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__region__placed.parts.png",
+   "focus": {
+    "region_atrium": {
+     "parts": [
+      7,
+      19
+     ]
+    },
+    "region_aorta": {
+     "parts": [
+      14
+     ]
+    },
+    "region_cuff": {
+     "parts": [
+      16,
+      19
+     ],
+     "ghost": {
+      "src": "/scenes/pvl-closure/images/plug__region__placed.ghost-16.webp",
+      "x": 0.49916666666666665,
+      "y": 0.2411111111111111,
+      "width": 0.15416666666666667,
+      "height": 0.06111111111111111
+     }
+    },
+    "region_ventricle": {
+     "parts": [
+      10,
+      19
+     ]
+    },
+    "region_device": {
+     "parts": [
+      19,
+      7,
+      8,
+      10,
+      11,
+      15,
+      16,
+      17
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "plug/section/channel": {
+   "src": "/scenes/pvl-closure/images/plug__section__channel.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__section__channel.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: See the tissue\u2013device relationship. Peri-prosthetic channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "channel",
+     "x": 0.8031,
+     "y": 0.49458
+    },
+    {
+     "id": "cuff",
+     "x": 0.29565,
+     "y": 0.44871
+    },
+    {
+     "id": "opening",
+     "x": 0.56102,
+     "y": 0.57887
+    }
+   ],
+   "camera": "7e900811491135aa",
+   "contentBox": {
+    "x": 0.1058,
+    "y": 0.155,
+    "width": 0.7883,
+    "height": 0.69
+   },
+   "mid": "/scenes/pvl-closure/images/plug__section__channel.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__section__channel.parts.png",
+   "focus": {
+    "channel": {
+     "parts": [
+      1
+     ]
+    },
+    "cuff": {
+     "parts": [
+      2
+     ],
+     "ghost": {
+      "src": "/scenes/pvl-closure/images/plug__section__channel.ghost-2.webp",
+      "x": 0.26416666666666666,
+      "y": 0.2822222222222222,
+      "width": 0.4716666666666667,
+      "height": 0.43555555555555553
+     }
+    },
+    "opening": {
+     "parts": [
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/pvl-closure/images/plug__region__channel.thumb.webp",
+    "view": "region",
+    "x": 0.6617,
+    "y": 0.2842,
+    "r": 0.045
+   }
+  },
+  "plug/section/approach": {
+   "src": "/scenes/pvl-closure/images/plug__section__approach.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__section__approach.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: See the tissue\u2013device relationship. Plug above the channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "channel",
+     "x": 0.80251,
+     "y": 0.49853
+    },
+    {
+     "id": "cuff",
+     "x": 0.29565,
+     "y": 0.44871
+    },
+    {
+     "id": "opening",
+     "x": 0.56102,
+     "y": 0.57887
+    },
+    {
+     "id": "device",
+     "x": 0.76785,
+     "y": 0.29386
+    }
+   ],
+   "camera": "7e900811491135aa",
+   "contentBox": {
+    "x": 0.1058,
+    "y": 0.155,
+    "width": 0.7883,
+    "height": 0.69
+   },
+   "mid": "/scenes/pvl-closure/images/plug__section__approach.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__section__approach.parts.png",
+   "focus": {
+    "channel": {
+     "parts": [
+      1
+     ]
+    },
+    "cuff": {
+     "parts": [
+      2
+     ],
+     "ghost": {
+      "src": "/scenes/pvl-closure/images/plug__section__approach.ghost-2.webp",
+      "x": 0.26416666666666666,
+      "y": 0.2822222222222222,
+      "width": 0.4716666666666667,
+      "height": 0.43555555555555553
+     }
+    },
+    "opening": {
+     "parts": [
+      3
+     ]
+    },
+    "device": {
+     "parts": [
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/pvl-closure/images/plug__region__approach.thumb.webp",
+    "view": "region",
+    "x": 0.6159,
+    "y": 0.1892,
+    "r": 0.045
+   }
+  },
+  "plug/section/placed": {
+   "src": "/scenes/pvl-closure/images/plug__section__placed.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__section__placed.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: See the tissue\u2013device relationship. Plug within the channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "cuff",
+     "x": 0.29565,
+     "y": 0.44871
+    },
+    {
+     "id": "opening",
+     "x": 0.52685,
+     "y": 0.58855
+    },
+    {
+     "id": "device",
+     "x": 0.76785,
+     "y": 0.4747
+    }
+   ],
+   "camera": "7e900811491135aa",
+   "contentBox": {
+    "x": 0.1058,
+    "y": 0.155,
+    "width": 0.7883,
+    "height": 0.69
+   },
+   "mid": "/scenes/pvl-closure/images/plug__section__placed.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__section__placed.parts.png",
+   "focus": {
+    "cuff": {
+     "parts": [
+      2,
+      5
+     ],
+     "ghost": {
+      "src": "/scenes/pvl-closure/images/plug__section__placed.ghost-2.webp",
+      "x": 0.26416666666666666,
+      "y": 0.2822222222222222,
+      "width": 0.4716666666666667,
+      "height": 0.43555555555555553
+     }
+    },
+    "opening": {
+     "parts": [
+      3,
+      5
+     ]
+    },
+    "device": {
+     "parts": [
+      5,
+      1,
+      2,
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/pvl-closure/images/plug__region__placed.thumb.webp",
+    "view": "region",
+    "x": 0.6617,
+    "y": 0.2842,
+    "r": 0.045
+   }
+  },
+  "plug/oblique/channel": {
+   "src": "/scenes/pvl-closure/images/plug__oblique__channel.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__oblique__channel.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: Understand depth and attachment. Peri-prosthetic channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "channel",
+     "x": 0.75261,
+     "y": 0.57614
+    },
+    {
+     "id": "cuff",
+     "x": 0.33092,
+     "y": 0.39232
+    },
+    {
+     "id": "opening",
+     "x": 0.51363,
+     "y": 0.5617
+    }
+   ],
+   "camera": "810ac0e279c215d6",
+   "contentBox": {
+    "x": 0.1058,
+    "y": 0.215,
+    "width": 0.7883,
+    "height": 0.57
+   },
+   "mid": "/scenes/pvl-closure/images/plug__oblique__channel.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__oblique__channel.parts.png",
+   "focus": {
+    "channel": {
+     "parts": [
+      1
+     ]
+    },
+    "cuff": {
+     "parts": [
+      2
+     ],
+     "ghost": {
+      "src": "/scenes/pvl-closure/images/plug__oblique__channel.ghost-2.webp",
+      "x": 0.26416666666666666,
+      "y": 0.31666666666666665,
+      "width": 0.4716666666666667,
+      "height": 0.36666666666666664
+     }
+    },
+    "opening": {
+     "parts": [
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/pvl-closure/images/plug__region__channel.thumb.webp",
+    "view": "region",
+    "x": 0.6617,
+    "y": 0.2842,
+    "r": 0.045
+   }
+  },
+  "plug/oblique/approach": {
+   "src": "/scenes/pvl-closure/images/plug__oblique__approach.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__oblique__approach.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: Understand depth and attachment. Plug above the channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "channel",
+     "x": 0.75261,
+     "y": 0.57614
+    },
+    {
+     "id": "cuff",
+     "x": 0.33092,
+     "y": 0.39232
+    },
+    {
+     "id": "opening",
+     "x": 0.51363,
+     "y": 0.5617
+    },
+    {
+     "id": "device",
+     "x": 0.72565,
+     "y": 0.34429
+    }
+   ],
+   "camera": "810ac0e279c215d6",
+   "contentBox": {
+    "x": 0.1058,
+    "y": 0.215,
+    "width": 0.7883,
+    "height": 0.57
+   },
+   "mid": "/scenes/pvl-closure/images/plug__oblique__approach.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__oblique__approach.parts.png",
+   "focus": {
+    "channel": {
+     "parts": [
+      1
+     ]
+    },
+    "cuff": {
+     "parts": [
+      2
+     ],
+     "ghost": {
+      "src": "/scenes/pvl-closure/images/plug__oblique__approach.ghost-2.webp",
+      "x": 0.26416666666666666,
+      "y": 0.31666666666666665,
+      "width": 0.4716666666666667,
+      "height": 0.36666666666666664
+     }
+    },
+    "opening": {
+     "parts": [
+      3
+     ]
+    },
+    "device": {
+     "parts": [
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/pvl-closure/images/plug__region__approach.thumb.webp",
+    "view": "region",
+    "x": 0.6159,
+    "y": 0.1892,
+    "r": 0.045
+   }
+  },
+  "plug/oblique/placed": {
+   "src": "/scenes/pvl-closure/images/plug__oblique__placed.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__oblique__placed.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: Understand depth and attachment. Plug within the channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "cuff",
+     "x": 0.33092,
+     "y": 0.39232
+    },
+    {
+     "id": "opening",
+     "x": 0.48745,
+     "y": 0.55964
+    },
+    {
+     "id": "device",
+     "x": 0.72565,
+     "y": 0.54242
+    }
+   ],
+   "camera": "810ac0e279c215d6",
+   "contentBox": {
+    "x": 0.1058,
+    "y": 0.215,
+    "width": 0.7883,
+    "height": 0.57
+   },
+   "mid": "/scenes/pvl-closure/images/plug__oblique__placed.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__oblique__placed.parts.png",
+   "focus": {
+    "cuff": {
+     "parts": [
+      2,
+      5
+     ],
+     "ghost": {
+      "src": "/scenes/pvl-closure/images/plug__oblique__placed.ghost-2.webp",
+      "x": 0.26416666666666666,
+      "y": 0.31666666666666665,
+      "width": 0.4716666666666667,
+      "height": 0.36666666666666664
+     }
+    },
+    "opening": {
+     "parts": [
+      3,
+      5
+     ]
+    },
+    "device": {
+     "parts": [
+      5,
+      1,
+      2,
+      3
+     ],
+     "ghost": {
+      "src": "/scenes/pvl-closure/images/plug__oblique__placed.ghost-5.webp",
+      "x": 0.6458333333333334,
+      "y": 0.4855555555555556,
+      "width": 0.15916666666666668,
+      "height": 0.21555555555555556
+     }
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/pvl-closure/images/plug__region__placed.thumb.webp",
+    "view": "region",
+    "x": 0.6617,
+    "y": 0.2842,
+    "r": 0.045
+   }
+  },
+  "plug/face/channel": {
+   "src": "/scenes/pvl-closure/images/plug__face__channel.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__face__channel.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: Look along the opening. Peri-prosthetic channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "channel",
+     "x": 0.19856,
+     "y": 0.52563
+    },
+    {
+     "id": "cuff",
+     "x": 0.7076,
+     "y": 0.51387
+    },
+    {
+     "id": "opening",
+     "x": 0.43349,
+     "y": 0.70298
+    }
+   ],
+   "camera": "82634e58e49ea10a",
+   "contentBox": {
+    "x": 0.105,
+    "y": 0.0,
+    "width": 0.79,
+    "height": 1.0
+   },
+   "mid": "/scenes/pvl-closure/images/plug__face__channel.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__face__channel.parts.png",
+   "focus": {
+    "channel": {
+     "parts": [
+      1
+     ]
+    },
+    "cuff": {
+     "parts": [
+      2
+     ]
+    },
+    "opening": {
+     "parts": [
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/pvl-closure/images/plug__region__channel.thumb.webp",
+    "view": "region",
+    "x": 0.6617,
+    "y": 0.2842,
+    "r": 0.045
+   }
+  },
+  "plug/face/approach": {
+   "src": "/scenes/pvl-closure/images/plug__face__approach.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__face__approach.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: Look along the opening. Plug above the channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "channel",
+     "x": 0.20628,
+     "y": 0.47078
+    },
+    {
+     "id": "cuff",
+     "x": 0.7076,
+     "y": 0.51387
+    },
+    {
+     "id": "opening",
+     "x": 0.4446,
+     "y": 0.34228
+    },
+    {
+     "id": "device",
+     "x": 0.24853,
+     "y": 0.61533
+    }
+   ],
+   "camera": "82634e58e49ea10a",
+   "contentBox": {
+    "x": 0.105,
+    "y": 0.0,
+    "width": 0.79,
+    "height": 1.0
+   },
+   "mid": "/scenes/pvl-closure/images/plug__face__approach.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__face__approach.parts.png",
+   "focus": {
+    "channel": {
+     "parts": [
+      1
+     ]
+    },
+    "cuff": {
+     "parts": [
+      2
+     ]
+    },
+    "opening": {
+     "parts": [
+      3
+     ]
+    },
+    "device": {
+     "parts": [
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/pvl-closure/images/plug__region__approach.thumb.webp",
+    "view": "region",
+    "x": 0.6159,
+    "y": 0.1892,
+    "r": 0.045
+   }
+  },
+  "plug/face/placed": {
+   "src": "/scenes/pvl-closure/images/plug__face__placed.webp",
+   "thumb": "/scenes/pvl-closure/images/plug__face__placed.thumb.webp",
+   "alt": "Generic peri-prosthetic plug: Look along the opening. Plug within the channel. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "cuff",
+     "x": 0.7076,
+     "y": 0.51387
+    },
+    {
+     "id": "opening",
+     "x": 0.46098,
+     "y": 0.33812
+    },
+    {
+     "id": "device",
+     "x": 0.23514,
+     "y": 0.53189
+    }
+   ],
+   "camera": "82634e58e49ea10a",
+   "contentBox": {
+    "x": 0.105,
+    "y": 0.0,
+    "width": 0.79,
+    "height": 1.0
+   },
+   "mid": "/scenes/pvl-closure/images/plug__face__placed.mid.webp",
+   "partMap": "/scenes/pvl-closure/images/plug__face__placed.parts.png",
+   "focus": {
+    "cuff": {
+     "parts": [
+      2,
+      5
+     ]
+    },
+    "opening": {
+     "parts": [
+      3,
+      5
+     ]
+    },
+    "device": {
+     "parts": [
+      5,
+      1,
+      2,
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/pvl-closure/images/plug__region__placed.thumb.webp",
+    "view": "region",
+    "x": 0.6617,
+    "y": 0.2842,
+    "r": 0.045
+   }
+  }
+ },
+ "presentation": {
+  "annotationMode": "external",
+  "layout": "plate",
+  "labels": {
+   "location": "Treatment location",
+   "channel": "Peri-prosthetic channel",
+   "cuff": "Prosthetic cuff",
+   "opening": "Central valve opening",
+   "device": "Generic channel plug",
+   "region_atrium": "Left atrium",
+   "region_ventricle": "Left ventricle",
+   "region_aorta": "Aortic root",
+   "region_cuff": "Prosthetic cuff",
+   "region_channel": "Peri-prosthetic channel",
+   "region_device": "Generic channel plug"
+  },
+  "stateLabels": {
+   "channel": "Channel only",
+   "approach": "Plug above",
+   "placed": "Plug in channel"
+  },
+  "stateGroups": [
+   {
+    "label": "Anatomy",
+    "states": [
+     "channel"
+    ]
+   },
+   {
+    "label": "With plug",
+    "states": [
+     "approach",
+     "placed"
+    ]
+   }
+  ],
+  "keyColors": {
+   "cut": "#645059"
+  }
+ }
+}

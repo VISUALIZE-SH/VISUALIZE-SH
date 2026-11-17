@@ -1,1 +1,922 @@
-{"classId":"pfo-occluders","conditionId":"cond-pfo","title":"PFO occluders","linkLabel":"Visualize device class","status":"Schematic","scope":"Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.","stageLabel":"Schematic · representative anatomy · not to scale","attribution":"Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.","sources":[{"title":"Toronto Heart Atlas","url":"https://github.com/tgh-apil/TorontoHeartAtlas","locator":"RegularHeart chamber and vessel meshes, CC BY 4.0."},{"title":"Creative Commons Attribution 4.0","url":"https://creativecommons.org/licenses/by/4.0/"},{"title":"NHLBI: How blood flows through the heart","url":"https://www.nhlbi.nih.gov/health/heart/blood-flow","locator":"Written heart-valve and circulation sections; no media reused."},{"title":"University of Minnesota: written anatomy reference","url":"https://www.vhlab.umn.edu/atlas/right-atrium/fossa-ovalis/","locator":"Anatomical description; no atlas images or models reused."}],"legend":[{"label":"Representative tissue","color":"#ad77ca"},{"label":"Generic device","color":"#ffd358"},{"label":"Leaflets / fabric","color":"#f6dfc8"},{"label":"Suture / emphasis","color":"#35a8a0"}],"designs":[{"id":"overlapping-flap-occluder","label":"PFO occluder","summary":"A generic pair of discs joined through an overlapping flap tunnel."}],"states":[{"id":"anatomy","label":"1. Anatomy only","note":"An enlarged representative section; dimensions and tissue shapes are not measured on a specific patient or population."},{"id":"compact","label":"2. Compact illustration","note":"A simplified narrow device pose, not a delivery instruction or a simulated deployment."},{"id":"expanded","label":"3. Expanded illustration","note":"A representative expanded pose. Contact, sealing, tissue deformation and flow are not calculated."}],"views":[{"id":"heart","label":"Whole heart","title":"Locate the region","lesson":"The enlarged marker orients the separate representative diagrams.","states":["expanded"],"orientation":{"superior":{"x":0.0,"y":-0.9595},"patientRight":{"x":-0.8384,"y":-0.1535}}},{"id":"region","label":"Atria and septum","title":"See the flap tunnel on the real atrial septum","lesson":"Both atria come from a real heart model with walls added. The right atrium is opened from the right side to show the septum, with the caval veins above and below. A flap tunnel sits where the oval fossa would lie. The position of the tunnel is representative and is not measured on a specific patient or population.","states":["anatomy","compact","expanded"],"orientation":{"superior":{"x":0.0,"y":-0.9711},"patientRight":{"x":-0.8046,"y":-0.1417}}},{"id":"section","label":"Tissue section","title":"See both sides of the tissue","lesson":"Compare the overlapping flap tunnel with its generic occluder. The tunnel is deliberately distinct from an ASD aperture.","states":["anatomy","compact","expanded"],"orientation":{"superior":{"x":0.0995,"y":-0.2311},"patientRight":{"x":-0.9209,"y":0.3469}}},{"id":"oblique","label":"Oblique detail","title":"See the three-dimensional relationship","lesson":"A representative oblique view separates the near and far components.","states":["anatomy","expanded"],"orientation":{"superior":{"x":0.0,"y":-0.9698},"patientRight":{"x":-0.5697,"y":-0.2005}}},{"id":"face","label":"Face view","title":"Look toward the channel","lesson":"Use this complementary view to distinguish tissue, the device and the opening.","states":["anatomy","expanded"],"orientation":{"superior":{"x":0.0,"y":-0.995},"patientRight":{"x":-0.9255,"y":-0.0377}}}],"annotations":{"location":{"label":"TREATMENT LOCATION","body":"The highlighted region locates this class in the heart. The marker is enlarged for orientation.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"flap":{"label":"OVERLAPPING FLAPS","body":"Two offset tissue flaps overlap here; this is a tunnel between layers, not a circular tissue deficiency.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"tunnel":{"label":"FLAP TUNNEL","body":"The connector follows the representative passage between overlapping flaps. The tunnel is enlarged for legibility.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"disc":{"label":"RETENTION DISCS","body":"Two expanded discs lie on opposing faces of the representative wall. These generic shapes do not represent a product.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"compact":{"label":"COMPACT POSE","body":"The narrow illustration contrasts with the expanded pose; a sheath and delivery sequence are omitted.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"},"region_RA":{"label":"RIGHT ATRIUM","body":"The right atrium is opened from the right side. The two caval veins open into it above and below the septum.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_LA":{"label":"LEFT ATRIUM","body":"The left atrium lies behind the septum, seen here from outside with its lung veins.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_SVC":{"label":"UPPER CAVAL VEIN","body":"The upper caval vein opens into the top of the right atrium, above the septum.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_IVC":{"label":"LOWER CAVAL VEIN","body":"The lower caval vein opens into the bottom of the right atrium, below the septum.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_septum":{"label":"INTERATRIAL SEPTUM","body":"The back wall of the opened right atrium is the septum, shared with the left atrium. Around it the atrial walls fold away from each other, so the flat part of the septum is limited.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_communication":{"label":"OVERLAPPING FLAP TUNNEL","body":"A slit-like passage runs obliquely through the septum. On the left atrial side a thin flap overlaps it, so from here the flap closes the view rather than a round hole. The position of the tunnel is representative and is not measured on a specific patient or population.","color":"#693387","layer":"anatomy","fidelity":"authored-schematic"},"region_device":{"label":"GENERIC OCCLUDER","body":"One disc lies on the right atrial face, shown here, and a second disc lies on the left atrial side behind the septum and flap, joined through the tunnel. The device is sized to this site for the illustration and does not represent a specific product.","color":"#ffd358","layer":"device","fidelity":"authored-schematic"}},"images":{"overlapping-flap-occluder/heart/expanded":{"src":"/scenes/pfo-occluders/images/overlapping-flap-occluder__heart__expanded.webp","thumb":"/scenes/pfo-occluders/images/overlapping-flap-occluder__heart__expanded.thumb.webp","alt":"PFO occluder: Locate the region. 3. Expanded illustration. Schematic, representative illustration.","pins":[{"id":"location","x":0.49932,"y":0.51592}]},"overlapping-flap-occluder/region/anatomy":{"src":"/scenes/pfo-occluders/images/overlapping-flap-occluder__region__anatomy.webp","thumb":"/scenes/pfo-occluders/images/overlapping-flap-occluder__region__anatomy.thumb.webp","alt":"PFO occluder: See the flap tunnel on the real atrial septum. 1. Anatomy only. Schematic, representative illustration.","pins":[{"id":"region_RA","x":0.67304,"y":0.6463},{"id":"region_LA","x":0.74926,"y":0.16459},{"id":"region_SVC","x":0.52001,"y":0.22232},{"id":"region_IVC","x":0.51343,"y":0.93983},{"id":"region_septum","x":0.53646,"y":0.62287},{"id":"region_communication","x":0.50265,"y":0.57213}]},"overlapping-flap-occluder/region/compact":{"src":"/scenes/pfo-occluders/images/overlapping-flap-occluder__region__compact.webp","thumb":"/scenes/pfo-occluders/images/overlapping-flap-occluder__region__compact.thumb.webp","alt":"PFO occluder: See the flap tunnel on the real atrial septum. 2. Compact illustration. Schematic, representative illustration.","pins":[{"id":"region_RA","x":0.67304,"y":0.6463},{"id":"region_LA","x":0.74926,"y":0.16459},{"id":"region_SVC","x":0.52001,"y":0.22232},{"id":"region_IVC","x":0.51343,"y":0.93983},{"id":"region_septum","x":0.53646,"y":0.62287},{"id":"region_device","x":0.47688,"y":0.60584}]},"overlapping-flap-occluder/region/expanded":{"src":"/scenes/pfo-occluders/images/overlapping-flap-occluder__region__expanded.webp","thumb":"/scenes/pfo-occluders/images/overlapping-flap-occluder__region__expanded.thumb.webp","alt":"PFO occluder: See the flap tunnel on the real atrial septum. 3. Expanded illustration. Schematic, representative illustration.","pins":[{"id":"region_RA","x":0.67304,"y":0.6463},{"id":"region_LA","x":0.74926,"y":0.16459},{"id":"region_SVC","x":0.52001,"y":0.22232},{"id":"region_IVC","x":0.51343,"y":0.93983},{"id":"region_septum","x":0.53646,"y":0.62287},{"id":"region_device","x":0.45973,"y":0.52523}]},"overlapping-flap-occluder/section/anatomy":{"src":"/scenes/pfo-occluders/images/overlapping-flap-occluder__section__anatomy.webp","thumb":"/scenes/pfo-occluders/images/overlapping-flap-occluder__section__anatomy.thumb.webp","alt":"PFO occluder: See both sides of the tissue. 1. Anatomy only. Schematic, representative illustration.","pins":[{"id":"flap","x":0.48724,"y":0.43476},{"id":"tunnel","x":0.5,"y":0.5}]},"overlapping-flap-occluder/section/compact":{"src":"/scenes/pfo-occluders/images/overlapping-flap-occluder__section__compact.webp","thumb":"/scenes/pfo-occluders/images/overlapping-flap-occluder__section__compact.thumb.webp","alt":"PFO occluder: See both sides of the tissue. 2. Compact illustration. Schematic, representative illustration.","pins":[{"id":"flap","x":0.48724,"y":0.43476},{"id":"tunnel","x":0.5,"y":0.5},{"id":"compact","x":0.42601,"y":0.54759}]},"overlapping-flap-occluder/section/expanded":{"src":"/scenes/pfo-occluders/images/overlapping-flap-occluder__section__expanded.webp","thumb":"/scenes/pfo-occluders/images/overlapping-flap-occluder__section__expanded.thumb.webp","alt":"PFO occluder: See both sides of the tissue. 3. Expanded illustration. Schematic, representative illustration.","pins":[{"id":"tunnel","x":0.5,"y":0.5},{"id":"disc","x":0.71687,"y":0.42358}]},"overlapping-flap-occluder/oblique/anatomy":{"src":"/scenes/pfo-occluders/images/overlapping-flap-occluder__oblique__anatomy.webp","thumb":"/scenes/pfo-occluders/images/overlapping-flap-occluder__oblique__anatomy.thumb.webp","alt":"PFO occluder: See the three-dimensional relationship. 1. Anatomy only. Schematic, representative illustration.","pins":[{"id":"flap","x":0.462,"y":0.51136}]},"overlapping-flap-occluder/oblique/expanded":{"src":"/scenes/pfo-occluders/images/overlapping-flap-occluder__oblique__expanded.webp","thumb":"/scenes/pfo-occluders/images/overlapping-flap-occluder__oblique__expanded.thumb.webp","alt":"PFO occluder: See the three-dimensional relationship. 3. Expanded illustration. Schematic, representative illustration.","pins":[{"id":"disc","x":0.6478,"y":0.55611}]},"overlapping-flap-occluder/face/anatomy":{"src":"/scenes/pfo-occluders/images/overlapping-flap-occluder__face__anatomy.webp","thumb":"/scenes/pfo-occluders/images/overlapping-flap-occluder__face__anatomy.thumb.webp","alt":"PFO occluder: Look toward the channel. 1. Anatomy only. Schematic, representative illustration.","pins":[{"id":"flap","x":0.48718,"y":0.50663}]},"overlapping-flap-occluder/face/expanded":{"src":"/scenes/pfo-occluders/images/overlapping-flap-occluder__face__expanded.webp","thumb":"/scenes/pfo-occluders/images/overlapping-flap-occluder__face__expanded.thumb.webp","alt":"PFO occluder: Look toward the channel. 3. Expanded illustration. Schematic, representative illustration.","pins":[{"id":"disc","x":0.71795,"y":0.5085}]}}}
+{
+ "classId": "pfo-occluders",
+ "conditionId": "cond-pfo",
+ "title": "PFO occluders",
+ "linkLabel": "Visualize device class",
+ "status": "Schematic",
+ "scope": "Generic class mechanism in representative anatomy. The anatomy, device shape and positions shown are representative of this class; they are not measured on a specific patient or population, and not a specific product. Schematic, not to scale; poses do not predict clinical fit, deformation, performance or flow.",
+ "stageLabel": "Schematic \u00b7 representative anatomy \u00b7 not to scale",
+ "attribution": "Whole-heart context adapted from Toronto Heart Atlas by Azad Mashari, Joshua Qua Hiansen, Mini Pakkal, Eitan Aziza, Ryan Ramos, Sachin Khargie and Massimiliano Meineri (CC BY 4.0). Display smoothing, vessel continuations and edits for readability are modifications. Detailed tissue shells, defects, device shapes and positions are representative schematics. They are not measured on a specific patient or population, and are not segmented tissue or clinical simulations.",
+ "sources": [
+  {
+   "title": "Toronto Heart Atlas",
+   "url": "https://github.com/tgh-apil/TorontoHeartAtlas",
+   "locator": "RegularHeart chamber and vessel meshes, CC BY 4.0."
+  },
+  {
+   "title": "Creative Commons Attribution 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "title": "NHLBI: How blood flows through the heart",
+   "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+   "locator": "Written heart-valve and circulation sections; no media reused."
+  },
+  {
+   "title": "University of Minnesota: written anatomy reference",
+   "url": "https://www.vhlab.umn.edu/atlas/right-atrium/fossa-ovalis/",
+   "locator": "Anatomical description; no atlas images or models reused."
+  }
+ ],
+ "legend": [
+  {
+   "label": "Representative tissue",
+   "color": "#ad77ca"
+  },
+  {
+   "label": "Generic device",
+   "color": "#ffd358"
+  },
+  {
+   "label": "Leaflets / fabric",
+   "color": "#f6dfc8"
+  },
+  {
+   "label": "Suture / emphasis",
+   "color": "#35a8a0"
+  }
+ ],
+ "designs": [
+  {
+   "id": "overlapping-flap-occluder",
+   "label": "PFO occluder",
+   "summary": "A generic pair of discs joined through an overlapping flap tunnel."
+  }
+ ],
+ "states": [
+  {
+   "id": "anatomy",
+   "label": "1. Anatomy only",
+   "note": "An enlarged representative section; dimensions and tissue shapes are not measured on a specific patient or population."
+  },
+  {
+   "id": "compact",
+   "label": "2. Compact illustration",
+   "note": "A simplified narrow device pose, not a delivery instruction or a simulated deployment."
+  },
+  {
+   "id": "expanded",
+   "label": "3. Expanded illustration",
+   "note": "A representative expanded pose. Contact, sealing, tissue deformation and flow are not calculated."
+  }
+ ],
+ "views": [
+  {
+   "id": "heart",
+   "label": "Whole heart",
+   "title": "Locate the region",
+   "lesson": "The marker orients the separate diagrams.",
+   "states": [
+    "expanded"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9595
+    },
+    "patientRight": {
+     "x": -0.8384,
+     "y": -0.1535
+    }
+   }
+  },
+  {
+   "id": "region",
+   "label": "Atria and septum",
+   "title": "See the flap tunnel on the real atrial septum",
+   "lesson": "Both atria, opened from the right side. A flap tunnel sits where the oval fossa would lie; its position is representative.",
+   "states": [
+    "anatomy",
+    "compact",
+    "expanded"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9711
+    },
+    "patientRight": {
+     "x": -0.8046,
+     "y": -0.1417
+    }
+   },
+   "presentation": {
+    "directionCaption": "Atria and septum",
+    "representation": "representative-view",
+    "regionLabel": "PFO occluders"
+   }
+  },
+  {
+   "id": "section",
+   "label": "Tissue section",
+   "title": "See both sides of the tissue",
+   "lesson": "The overlapping flap tunnel and its generic occluder, distinct from a round septal opening.",
+   "states": [
+    "anatomy",
+    "compact",
+    "expanded"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0995,
+     "y": -0.2311
+    },
+    "patientRight": {
+     "x": -0.9209,
+     "y": 0.3469
+    }
+   },
+   "presentation": {
+    "directionCaption": "Tissue section",
+    "representation": "representative-section",
+    "regionLabel": "PFO occluders"
+   }
+  },
+  {
+   "id": "oblique",
+   "label": "Oblique detail",
+   "title": "See the three-dimensional relationship",
+   "lesson": "An oblique view separates the near and far components.",
+   "states": [
+    "anatomy",
+    "expanded"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.9698
+    },
+    "patientRight": {
+     "x": -0.5697,
+     "y": -0.2005
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen at an angle",
+    "representation": "representative-section",
+    "regionLabel": "PFO occluders"
+   }
+  },
+  {
+   "id": "face",
+   "label": "Face view",
+   "title": "Look toward the channel",
+   "lesson": "Distinguishes the tissue, the device and the opening.",
+   "states": [
+    "anatomy",
+    "expanded"
+   ],
+   "orientation": {
+    "superior": {
+     "x": 0.0,
+     "y": -0.995
+    },
+    "patientRight": {
+     "x": -0.9255,
+     "y": -0.0377
+    }
+   },
+   "presentation": {
+    "directionCaption": "Seen from the front",
+    "representation": "representative-section",
+    "regionLabel": "PFO occluders"
+   }
+  }
+ ],
+ "annotations": {
+  "location": {
+   "label": "TREATMENT LOCATION",
+   "body": "The highlighted region locates this class in the heart. The marker is enlarged for orientation.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "flap": {
+   "label": "OVERLAPPING FLAPS",
+   "body": "Two offset tissue flaps overlap here; this is a tunnel between layers, not a circular tissue deficiency.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "tunnel": {
+   "label": "FLAP TUNNEL",
+   "body": "The connector follows the representative passage between overlapping flaps. The tunnel is enlarged for legibility.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "disc": {
+   "label": "RETENTION DISCS",
+   "body": "Two expanded discs lie on opposing faces of the representative wall. These generic shapes do not represent a product.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  },
+  "compact": {
+   "label": "COMPACT POSE",
+   "body": "The narrow illustration contrasts with the expanded pose; a sheath and delivery sequence are omitted.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  },
+  "region_RA": {
+   "label": "RIGHT ATRIUM",
+   "body": "The right atrium is opened from the right side. The two caval veins open into it above and below the septum.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_LA": {
+   "label": "LEFT ATRIUM",
+   "body": "The left atrium lies behind the septum, seen here from outside with its lung veins.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_SVC": {
+   "label": "UPPER CAVAL VEIN",
+   "body": "The upper caval vein opens into the top of the right atrium, above the septum.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_IVC": {
+   "label": "LOWER CAVAL VEIN",
+   "body": "The lower caval vein opens into the bottom of the right atrium, below the septum.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_septum": {
+   "label": "INTERATRIAL SEPTUM",
+   "body": "The back wall of the opened right atrium is the septum, shared with the left atrium. Around it the atrial walls fold away from each other, so the flat part of the septum is limited.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_communication": {
+   "label": "OVERLAPPING FLAP TUNNEL",
+   "body": "A slit-like passage runs obliquely through the septum. On the left atrial side a thin flap overlaps it, so from here the flap closes the view rather than a round hole. The position of the tunnel is representative and is not measured on a specific patient or population.",
+   "color": "#693387",
+   "layer": "anatomy",
+   "fidelity": "authored-schematic"
+  },
+  "region_device": {
+   "label": "GENERIC OCCLUDER",
+   "body": "One disc lies on the right atrial face, shown here, and a second disc lies on the left atrial side behind the septum and flap, joined through the tunnel. The device is sized to this site for the illustration and does not represent a specific product.",
+   "color": "#ffd358",
+   "layer": "device",
+   "fidelity": "authored-schematic"
+  }
+ },
+ "images": {
+  "overlapping-flap-occluder/heart/expanded": {
+   "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__heart__expanded.webp",
+   "thumb": "/scenes/pfo-occluders/images/overlapping-flap-occluder__heart__expanded.thumb.webp",
+   "alt": "PFO occluder: Locate the region. 3. Expanded illustration. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "location",
+     "x": 0.49932,
+     "y": 0.51592
+    }
+   ],
+   "camera": "a0de9a7f014ccfa0",
+   "contentBox": {
+    "x": 0.2946,
+    "y": 0.0,
+    "width": 0.6288,
+    "height": 0.8839
+   },
+   "mid": "/scenes/pfo-occluders/images/overlapping-flap-occluder__heart__expanded.mid.webp",
+   "partMap": "/scenes/pfo-occluders/images/overlapping-flap-occluder__heart__expanded.parts.png",
+   "focus": {
+    "location": {
+     "parts": [
+      29
+     ]
+    }
+   },
+   "keys": []
+  },
+  "overlapping-flap-occluder/region/anatomy": {
+   "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__anatomy.webp",
+   "thumb": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__anatomy.thumb.webp",
+   "alt": "PFO occluder: See the flap tunnel on the real atrial septum. 1. Anatomy only. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_RA",
+     "x": 0.61838,
+     "y": 0.58205
+    },
+    {
+     "id": "region_LA",
+     "x": 0.70073,
+     "y": 0.36821
+    },
+    {
+     "id": "region_SVC",
+     "x": 0.50569,
+     "y": 0.2149
+    },
+    {
+     "id": "region_IVC",
+     "x": 0.43355,
+     "y": 0.95925
+    },
+    {
+     "id": "region_septum",
+     "x": 0.43938,
+     "y": 0.6666
+    },
+    {
+     "id": "region_communication",
+     "x": 0.47758,
+     "y": 0.59829
+    }
+   ],
+   "camera": "963aea720dc3f9f5",
+   "contentBox": {
+    "x": 0.195,
+    "y": 0.0344,
+    "width": 0.61,
+    "height": 0.9311
+   },
+   "mid": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__anatomy.mid.webp",
+   "partMap": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__anatomy.parts.png",
+   "focus": {
+    "region_RA": {
+     "parts": [
+      15
+     ]
+    },
+    "region_LA": {
+     "parts": [
+      11
+     ],
+     "ghost": {
+      "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__anatomy.ghost-11.webp",
+      "x": 0.195,
+      "y": 0.14222222222222222,
+      "width": 0.6091666666666666,
+      "height": 0.6322222222222222
+     }
+    },
+    "region_SVC": {
+     "parts": [
+      15
+     ]
+    },
+    "region_IVC": {
+     "parts": [
+      16
+     ]
+    },
+    "region_septum": {
+     "parts": [
+      15
+     ]
+    },
+    "region_communication": {
+     "parts": [
+      15
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "overlapping-flap-occluder/region/compact": {
+   "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__compact.webp",
+   "thumb": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__compact.thumb.webp",
+   "alt": "PFO occluder: See the flap tunnel on the real atrial septum. 2. Compact illustration. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_RA",
+     "x": 0.61838,
+     "y": 0.58205
+    },
+    {
+     "id": "region_LA",
+     "x": 0.70073,
+     "y": 0.36821
+    },
+    {
+     "id": "region_SVC",
+     "x": 0.50569,
+     "y": 0.2149
+    },
+    {
+     "id": "region_IVC",
+     "x": 0.43355,
+     "y": 0.95925
+    },
+    {
+     "id": "region_septum",
+     "x": 0.43938,
+     "y": 0.6666
+    },
+    {
+     "id": "region_device",
+     "x": 0.47901,
+     "y": 0.60718
+    }
+   ],
+   "camera": "963aea720dc3f9f5",
+   "contentBox": {
+    "x": 0.195,
+    "y": 0.0344,
+    "width": 0.61,
+    "height": 0.9311
+   },
+   "mid": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__compact.mid.webp",
+   "partMap": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__compact.parts.png",
+   "focus": {
+    "region_RA": {
+     "parts": [
+      15,
+      22
+     ]
+    },
+    "region_LA": {
+     "parts": [
+      11
+     ],
+     "ghost": {
+      "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__compact.ghost-11.webp",
+      "x": 0.195,
+      "y": 0.14222222222222222,
+      "width": 0.6091666666666666,
+      "height": 0.6322222222222222
+     }
+    },
+    "region_SVC": {
+     "parts": [
+      15,
+      22
+     ]
+    },
+    "region_IVC": {
+     "parts": [
+      16
+     ]
+    },
+    "region_septum": {
+     "parts": [
+      15,
+      22
+     ]
+    },
+    "region_device": {
+     "parts": [
+      22,
+      12,
+      15
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "overlapping-flap-occluder/region/expanded": {
+   "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__expanded.webp",
+   "thumb": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__expanded.thumb.webp",
+   "alt": "PFO occluder: See the flap tunnel on the real atrial septum. 3. Expanded illustration. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "region_RA",
+     "x": 0.61838,
+     "y": 0.58205
+    },
+    {
+     "id": "region_LA",
+     "x": 0.70073,
+     "y": 0.36821
+    },
+    {
+     "id": "region_SVC",
+     "x": 0.50569,
+     "y": 0.2149
+    },
+    {
+     "id": "region_IVC",
+     "x": 0.43355,
+     "y": 0.95925
+    },
+    {
+     "id": "region_septum",
+     "x": 0.43938,
+     "y": 0.6666
+    },
+    {
+     "id": "region_device",
+     "x": 0.46694,
+     "y": 0.5225
+    }
+   ],
+   "camera": "963aea720dc3f9f5",
+   "contentBox": {
+    "x": 0.195,
+    "y": 0.0344,
+    "width": 0.61,
+    "height": 0.9311
+   },
+   "mid": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__expanded.mid.webp",
+   "partMap": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__expanded.parts.png",
+   "focus": {
+    "region_RA": {
+     "parts": [
+      15,
+      17,
+      18,
+      21
+     ]
+    },
+    "region_LA": {
+     "parts": [
+      11,
+      17,
+      18
+     ],
+     "ghost": {
+      "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__expanded.ghost-11.webp",
+      "x": 0.195,
+      "y": 0.14222222222222222,
+      "width": 0.6091666666666666,
+      "height": 0.6322222222222222
+     }
+    },
+    "region_SVC": {
+     "parts": [
+      15,
+      17,
+      18,
+      21
+     ]
+    },
+    "region_IVC": {
+     "parts": [
+      16
+     ]
+    },
+    "region_septum": {
+     "parts": [
+      15,
+      17,
+      18,
+      21
+     ]
+    },
+    "region_device": {
+     "parts": [
+      17,
+      11,
+      12,
+      14,
+      15
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ]
+  },
+  "overlapping-flap-occluder/section/anatomy": {
+   "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__section__anatomy.webp",
+   "thumb": "/scenes/pfo-occluders/images/overlapping-flap-occluder__section__anatomy.thumb.webp",
+   "alt": "PFO occluder: See both sides of the tissue. 1. Anatomy only. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "flap",
+     "x": 0.55868,
+     "y": 0.45693
+    },
+    {
+     "id": "tunnel",
+     "x": 0.5,
+     "y": 0.5
+    }
+   ],
+   "camera": "c9db8ae9b6e10790",
+   "contentBox": {
+    "x": 0.1792,
+    "y": 0.3489,
+    "width": 0.6533,
+    "height": 0.2283
+   },
+   "mid": "/scenes/pfo-occluders/images/overlapping-flap-occluder__section__anatomy.mid.webp",
+   "partMap": "/scenes/pfo-occluders/images/overlapping-flap-occluder__section__anatomy.parts.png",
+   "focus": {
+    "flap": {
+     "parts": [
+      3
+     ]
+    },
+    "tunnel": {
+     "parts": [
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4742,
+    "y": 0.567,
+    "r": 0.0605
+   }
+  },
+  "overlapping-flap-occluder/section/compact": {
+   "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__section__compact.webp",
+   "thumb": "/scenes/pfo-occluders/images/overlapping-flap-occluder__section__compact.thumb.webp",
+   "alt": "PFO occluder: See both sides of the tissue. 2. Compact illustration. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "flap",
+     "x": 0.55868,
+     "y": 0.45693
+    },
+    {
+     "id": "compact",
+     "x": 0.5,
+     "y": 0.5
+    }
+   ],
+   "camera": "c9db8ae9b6e10790",
+   "contentBox": {
+    "x": 0.1792,
+    "y": 0.3489,
+    "width": 0.6533,
+    "height": 0.2411
+   },
+   "mid": "/scenes/pfo-occluders/images/overlapping-flap-occluder__section__compact.mid.webp",
+   "partMap": "/scenes/pfo-occluders/images/overlapping-flap-occluder__section__compact.parts.png",
+   "focus": {
+    "flap": {
+     "parts": [
+      3,
+      10
+     ]
+    },
+    "compact": {
+     "parts": [
+      10,
+      3,
+      4
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__compact.thumb.webp",
+    "view": "region",
+    "x": 0.4743,
+    "y": 0.5963,
+    "r": 0.045
+   }
+  },
+  "overlapping-flap-occluder/section/expanded": {
+   "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__section__expanded.webp",
+   "thumb": "/scenes/pfo-occluders/images/overlapping-flap-occluder__section__expanded.thumb.webp",
+   "alt": "PFO occluder: See both sides of the tissue. 3. Expanded illustration. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "disc",
+     "x": 0.59057,
+     "y": 0.37578
+    }
+   ],
+   "camera": "c9db8ae9b6e10790",
+   "contentBox": {
+    "x": 0.1792,
+    "y": 0.3489,
+    "width": 0.6533,
+    "height": 0.2872
+   },
+   "mid": "/scenes/pfo-occluders/images/overlapping-flap-occluder__section__expanded.mid.webp",
+   "partMap": "/scenes/pfo-occluders/images/overlapping-flap-occluder__section__expanded.parts.png",
+   "focus": {
+    "disc": {
+     "parts": [
+      5,
+      3
+     ]
+    }
+   },
+   "keys": [
+    "cut"
+   ],
+   "locator": {
+    "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__expanded.thumb.webp",
+    "view": "region",
+    "x": 0.4742,
+    "y": 0.567,
+    "r": 0.0605
+   }
+  },
+  "overlapping-flap-occluder/oblique/anatomy": {
+   "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__oblique__anatomy.webp",
+   "thumb": "/scenes/pfo-occluders/images/overlapping-flap-occluder__oblique__anatomy.thumb.webp",
+   "alt": "PFO occluder: See the three-dimensional relationship. 1. Anatomy only. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "flap",
+     "x": 0.53058,
+     "y": 0.51989
+    }
+   ],
+   "camera": "6b83e6f4ea6f4cd7",
+   "contentBox": {
+    "x": 0.2058,
+    "y": 0.1206,
+    "width": 0.5883,
+    "height": 0.7589
+   },
+   "mid": "/scenes/pfo-occluders/images/overlapping-flap-occluder__oblique__anatomy.mid.webp",
+   "partMap": "/scenes/pfo-occluders/images/overlapping-flap-occluder__oblique__anatomy.parts.png",
+   "focus": {
+    "flap": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [],
+   "locator": {
+    "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4742,
+    "y": 0.567,
+    "r": 0.0605
+   }
+  },
+  "overlapping-flap-occluder/oblique/expanded": {
+   "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__oblique__expanded.webp",
+   "thumb": "/scenes/pfo-occluders/images/overlapping-flap-occluder__oblique__expanded.thumb.webp",
+   "alt": "PFO occluder: See the three-dimensional relationship. 3. Expanded illustration. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "disc",
+     "x": 0.52956,
+     "y": 0.34876
+    }
+   ],
+   "camera": "6b83e6f4ea6f4cd7",
+   "contentBox": {
+    "x": 0.2058,
+    "y": 0.1206,
+    "width": 0.5883,
+    "height": 0.7589
+   },
+   "mid": "/scenes/pfo-occluders/images/overlapping-flap-occluder__oblique__expanded.mid.webp",
+   "partMap": "/scenes/pfo-occluders/images/overlapping-flap-occluder__oblique__expanded.parts.png",
+   "focus": {
+    "disc": {
+     "parts": [
+      5,
+      1
+     ]
+    }
+   },
+   "keys": [],
+   "locator": {
+    "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__expanded.thumb.webp",
+    "view": "region",
+    "x": 0.4742,
+    "y": 0.567,
+    "r": 0.0605
+   }
+  },
+  "overlapping-flap-occluder/face/anatomy": {
+   "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__face__anatomy.webp",
+   "thumb": "/scenes/pfo-occluders/images/overlapping-flap-occluder__face__anatomy.thumb.webp",
+   "alt": "PFO occluder: Look toward the channel. 1. Anatomy only. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "flap",
+     "x": 0.55897,
+     "y": 0.50459
+    }
+   ],
+   "camera": "01de90d8768815ac",
+   "contentBox": {
+    "x": 0.1775,
+    "y": 0.1344,
+    "width": 0.645,
+    "height": 0.7311
+   },
+   "mid": "/scenes/pfo-occluders/images/overlapping-flap-occluder__face__anatomy.mid.webp",
+   "partMap": "/scenes/pfo-occluders/images/overlapping-flap-occluder__face__anatomy.parts.png",
+   "focus": {
+    "flap": {
+     "parts": [
+      1
+     ]
+    }
+   },
+   "keys": [],
+   "locator": {
+    "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__anatomy.thumb.webp",
+    "view": "region",
+    "x": 0.4742,
+    "y": 0.567,
+    "r": 0.0605
+   }
+  },
+  "overlapping-flap-occluder/face/expanded": {
+   "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__face__expanded.webp",
+   "thumb": "/scenes/pfo-occluders/images/overlapping-flap-occluder__face__expanded.thumb.webp",
+   "alt": "PFO occluder: Look toward the channel. 3. Expanded illustration. Schematic, representative illustration.",
+   "pins": [
+    {
+     "id": "disc",
+     "x": 0.71795,
+     "y": 0.5085
+    }
+   ],
+   "camera": "01de90d8768815ac",
+   "contentBox": {
+    "x": 0.1775,
+    "y": 0.1344,
+    "width": 0.645,
+    "height": 0.7311
+   },
+   "mid": "/scenes/pfo-occluders/images/overlapping-flap-occluder__face__expanded.mid.webp",
+   "partMap": "/scenes/pfo-occluders/images/overlapping-flap-occluder__face__expanded.parts.png",
+   "focus": {
+    "disc": {
+     "parts": [
+      5,
+      1
+     ]
+    }
+   },
+   "keys": [],
+   "locator": {
+    "src": "/scenes/pfo-occluders/images/overlapping-flap-occluder__region__expanded.thumb.webp",
+    "view": "region",
+    "x": 0.4742,
+    "y": 0.567,
+    "r": 0.0605
+   }
+  }
+ },
+ "presentation": {
+  "annotationMode": "external",
+  "layout": "plate",
+  "labels": {
+   "location": "Treatment location",
+   "region_RA": "Right atrium",
+   "region_LA": "Left atrium",
+   "region_SVC": "Upper caval vein",
+   "region_IVC": "Lower caval vein",
+   "region_septum": "Interatrial septum",
+   "flap": "Overlapping flaps",
+   "tunnel": "Flap tunnel",
+   "disc": "Retention discs",
+   "compact": "Compact pose",
+   "region_communication": "Flap tunnel",
+   "region_device": "Generic occluder"
+  },
+  "stateLabels": {
+   "anatomy": "Anatomy only",
+   "compact": "Compact",
+   "expanded": "Expanded"
+  },
+  "stateGroups": [
+   {
+    "label": "Anatomy",
+    "states": [
+     "anatomy"
+    ]
+   },
+   {
+    "label": "With device",
+    "states": [
+     "compact",
+     "expanded"
+    ]
+   }
+  ],
+  "keyColors": {
+   "cut": "#684c76"
+  }
+ }
+}
