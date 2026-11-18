@@ -12,7 +12,7 @@ sources:
       value: "2026-11-13"
       precision: day
     retrievedAt: "2026-11-15"
-    access: public
+    access: licensed
     identifier: PMID 43025743
     citation:
       containerTitle: The Annals of thoracic surgery
@@ -56,7 +56,7 @@ sources:
       value: "2026-11-09"
       precision: day
     retrievedAt: "2026-11-15"
-    access: public
+    access: licensed
     identifier: PMID 43002382
     citation:
       containerTitle: Circulation
@@ -144,7 +144,7 @@ sources:
       value: "2026-11-12"
       precision: day
     retrievedAt: "2026-11-15"
-    access: public
+    access: licensed
     identifier: PMID 43019591
     citation:
       containerTitle: Biomedical physics & engineering express
@@ -160,7 +160,7 @@ sources:
       value: "2026-11-10"
       precision: day
     retrievedAt: "2026-11-15"
-    access: public
+    access: licensed
     identifier: PMID 43007684
     citation:
       containerTitle: Computer methods in biomechanics and biomedical engineering
@@ -176,7 +176,7 @@ sources:
       value: "2026-11-08"
       precision: day
     retrievedAt: "2026-11-15"
-    access: public
+    access: licensed
     identifier: PMID 43000883
     citation:
       containerTitle: Proceedings of the Institution of Mechanical Engineers. Part H, Journal of engineering in medicine
@@ -220,7 +220,7 @@ sources:
       value: "2026-11-12"
       precision: day
     retrievedAt: "2026-11-15"
-    access: public
+    access: licensed
     identifier: PMID 43018728
     citation:
       containerTitle: Pediatric cardiology
@@ -231,12 +231,11 @@ bibliography:
       - dev-tendyne
       - cond-mr
       - cond-ms
-    versionIds: []
+    versionIds:
+      - ver-tendyne
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43025743
-        locator: >-
-          PubMed XML PMID 43025743: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Journal pre-proof full text: abstract p5; Methods pp8-10; Results pp10-14; Table 1 pp20-21; Comment and limitations pp14-16. Supplementary tables not reviewed; valve sizes and device generation not stated."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43012111
     entityIds:
@@ -245,9 +244,7 @@ bibliography:
     versionIds: []
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43012111
-        locator: >-
-          PubMed XML PMID 43012111: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Open-access full text: abstract p1; Methods pp2-4; Results pp4-5; Table p4; Discussion and limitations pp5-9. After year 1, echo is site-reported and symptoms are retrospective chart abstraction."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43018038
     entityIds:
@@ -256,9 +253,7 @@ bibliography:
     versionIds: []
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43018038
-        locator: >-
-          PubMed XML PMID 43018038: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Open-access full text: abstract p1; Methods pp2-3; Results pp4-7; Tables 1-4 pp5-9; Limitations p11. Venus-A only; generation not stated; group comparisons unadjusted."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43002382
     entityIds:
@@ -266,20 +261,17 @@ bibliography:
     versionIds: []
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43002382
-        locator: >-
-          PubMed XML PMID 43002382: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Accepted manuscript full text (not copyedited): abstract p3; Methods pp7-9; Results pp10-13; Tables 1-2 pp22-25; limitations p16. Week-140 ECV evaluable in 57 of 120."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43018051
     entityIds:
       - dev-watchman-flx
       - cond-af
-    versionIds: []
+    versionIds:
+      - ver-watchman-flx
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43018051
-        locator: >-
-          PubMed XML PMID 43018051: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Open-access full text: abstract p1; Methods pp2-5; Results pp5-8; Table 3 p11; limitations p14. Observational, one health system; instrumental-variable estimate applies to compliers."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43025042
     entityIds:
@@ -288,9 +280,7 @@ bibliography:
     versionIds: []
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43025042
-        locator: >-
-          PubMed XML PMID 43025042: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Open-access full text: abstract p1; Methods pp2-3; Results pp3-6; Tables 1-5 pp4-8; limitations pp8-9. Mainly third-generation MitraClip per the authors; not split by generation, so no version link."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43007718
     entityIds:
@@ -299,19 +289,17 @@ bibliography:
     versionIds: []
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43007718
-        locator: >-
-          PubMed XML PMID 43007718: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Open-access full text (ahead of print): abstract p1; Methods pp2-3; Results and Tables 1-3 pp4-5; limitations p6. First-generation VitaFlow and VitaFlow Liberty are pooled."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43008213
     entityIds:
       - cond-asd
+      - dev-amplatzer-asd
+      - co-cardia
     versionIds: []
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43008213
-        locator: >-
-          PubMed XML PMID 43008213: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Open-access full text (ahead of print): abstract pp1-2; Methods pp3-4; Table 1 p4 (device counts); Results pp4-6; Discussion pp6-7. Outcomes pooled across occluders."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43013999
     entityIds:
@@ -319,9 +307,7 @@ bibliography:
     versionIds: []
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43013999
-        locator: >-
-          PubMed XML PMID 43013999: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Open-access full text: abstract p1; Methods pp2-4; Results p4; limitations pp7-8. The diastolic chordal-force difference was not significant in the Results (p4), unlike the abstract."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43019591
     entityIds:
@@ -329,9 +315,7 @@ bibliography:
     versionIds: []
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43019591
-        locator: >-
-          PubMed XML PMID 43019591: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Accepted manuscript full text: abstract pp2-3; Methods pp5-15; Results pp15-18 (Table 4); limitations pp19-20. Generic lumped-parameter model; no patient data."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43007684
     entityIds:
@@ -340,9 +324,7 @@ bibliography:
     versionIds: []
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43007684
-        locator: >-
-          PubMed XML PMID 43007684: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Full text: abstract p2; Methods pp4-16; Results pp16-28 (Tables 5 and 7); conclusions pp28-29. Idealized geometry; stenosis represented by an imposed inlet pressure difference."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43000883
     entityIds:
@@ -350,39 +332,35 @@ bibliography:
     versionIds: []
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43000883
-        locator: >-
-          PubMed XML PMID 43000883: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Full text: abstract p1; Methods pp2-4; Results pp4-8 (Tables 8-9); limitations pp8-9. Generic rotor at one operating point; no experimental validation."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43023948
     entityIds:
       - cond-pda
+      - dev-amplatzer-piccolo
     versionIds: []
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43023948
-        locator: >-
-          PubMed XML PMID 43023948: Article/Abstract and Article/ArticleDate; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Open-access case report: abstract p1; case pp2-3; Figure 3 legend p4. One patient; off-label Azur use after an Amplatzer Piccolo was deployed and retrieved before release."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43018056
     entityIds:
       - cond-tr
       - cond-hf
+      - dev-triclip
+      - dev-pascal
     versionIds: []
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43018056
-        locator: >-
-          PubMed XML PMID 43018056: Article/Abstract and ArticleDate Electronic; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Open-access full text: abstract p1; Methods pp2-3; Results pp3-6 (devices p4); limitations p7. 699 of 3,048 registry patients; results pooled across devices."
     reviewStatus: reviewed
   - id: bib-literature-2026-11-pmid-43018728
     entityIds:
       - dev-harmony
       - cond-pv
-    versionIds: []
+    versionIds:
+      - ver-harmony
     sourceRefs:
       - sourceId: src-literature-2026-11-pmid-43018728
-        locator: >-
-          PubMed XML PMID 43018728: Article/Abstract and ArticleDate Electronic; original abstract only; full text
-          not_yet_reviewed; limited to the study cohort and configuration in the abstract.
+        locator: "Full case report: abstract p1; case pp2-3; discussion pp3-5. One patient; Harmony TPV25; result is end-of-procedure angiography only."
     reviewStatus: reviewed

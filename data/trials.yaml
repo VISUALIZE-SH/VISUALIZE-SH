@@ -5868,3 +5868,155 @@
     notes: >-
       Registry record last updated 2024-04-03, retrieved 2026-11-10; status and estimated dates as of that revision,
       possibly stale. No results.
+
+- id: trial-cardio-ttransform
+  type: trial
+  name: CARDIO-TTRansform — eplontersen vs placebo in ATTR cardiomyopathy (NCT04136171)
+  nctId: NCT04136171
+  phase: Phase 3 RCT
+  status: completed
+  primaryAnalysis:
+    status: reported
+    date: "2026-08-28"
+    precision: day
+    source: https://doi.org/10.1056/NEJMoa2608510
+  conditions:
+    - cond-attr-cm
+  therapies:
+    - rx-eplontersen
+  enrollmentCounts:
+    - count: 1438
+      basis: actual
+      asOf: "2026-09-03"
+      scope: Registry actual enrollment.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT04136171
+    - count: 1432
+      basis: randomized
+      asOf: "2026-08-28"
+      scope: Randomized and received at least one dose (715 eplontersen, 717 placebo).
+      source: https://doi.org/10.1056/NEJMoa2608510
+  year: 2026
+  primaryEndpoint: Composite of cardiovascular death and recurrent cardiovascular clinical events up to week 140.
+  outcomeSummary: >-
+    Eplontersen 45 mg every 4 weeks did not reduce the primary composite versus placebo (rate ratio 0.89, 95% CI
+    0.73-1.09; P=0.28) in 1432 patients on standard treatment, with TTR stabilizers allowed. An echo analysis reports
+    modestly less structural and functional decline, almost entirely in patients not on stabilizers at baseline; a CMR
+    substudy (12.5% on stabilizers) reports lower extracellular volume.
+  resultStatus: negative
+  references:
+    - https://doi.org/10.1056/NEJMoa2608510
+    - https://doi.org/10.1161/CIRCHEARTFAILURE.126.014205
+    - https://doi.org/10.1161/CIRCULATIONAHA.126.083722
+    - https://doi.org/10.1161/CIRCULATIONAHA.126.083732
+    - https://clinicaltrials.gov/study/NCT04136171
+  timeline:
+    date: "2020-03-13"
+    precision: day
+    dateBasis: trial-start
+    event: Trial start
+    source: https://clinicaltrials.gov/study/NCT04136171
+  curation:
+    status: curated
+    lastUpdated: "2026-11-18"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT04136171
+      - PMID:42663301
+      - PMID:42104840
+      - PMID:43002247
+      - PMID:43002382
+    notes: Registry revision 2026-09-03 and PubMed abstracts retrieved 2026-11-18; primary full text not read.
+- id: trial-eurotr
+  type: trial
+  name: EuroTR — European Registry of Transcatheter Repair for Tricuspid Regurgitation (NCT06307262)
+  nctId: NCT06307262
+  phase: Observational registry
+  status: recruiting
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-triclip
+    - dev-pascal
+  enrollmentCounts:
+    - count: 3000
+      basis: estimated
+      asOf: "2024-03-15"
+      scope: Registry enrollment estimate.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06307262
+  year: 2023
+  primaryEndpoint: All-cause mortality at 5 years (registry-stated).
+  outcomeSummary: >-
+    Multicentre European registry led from LMU Klinikum. Published subanalyses include 699 T-TEER patients with
+    follow-up echo (smaller RV dimensions with lower FAC and TAPSE at a median 407 days; survivors with imaging only)
+    and 711 patients with invasive hemodynamics (PCWP of 20 mm Hg or more associated with worse outcomes). The
+    699-patient analysis pooled Abbott (48%) and PASCAL (52%) systems. Status is the registry's as of its 2024-03-15
+    update.
+  resultStatus: ongoing
+  references:
+    - https://doi.org/10.1161/JAHA.125.048944
+    - https://doi.org/10.1161/CIRCINTERVENTIONS.125.015964
+    - https://clinicaltrials.gov/study/NCT06307262
+  curation:
+    status: curated
+    lastUpdated: "2026-11-18"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06307262
+      - PMID:43018056
+      - PMID:41235431
+    notes: >-
+      Registry revision 2024-03-15 and PubMed abstracts retrieved 2026-11-18. The registry lists one German site and a
+      2023 start, while papers include procedures from 2016 at 18 centres.
+- id: trial-nhlbi-mitral-cerclage-efs
+  type: trial
+  name: NHLBI transcatheter mitral cerclage early feasibility study (NCT03929913)
+  nctId: NCT03929913
+  phase: Early feasibility study (single arm)
+  status: completed
+  primaryAnalysis:
+    status: reported
+    date: "2022-06-27"
+    precision: day
+    source: https://doi.org/10.1016/j.jcin.2022.04.013
+  conditions:
+    - cond-mr
+    - cond-hf
+  therapies:
+    - dev-transmural-mitral-cerclage
+  enrollmentCounts:
+    - count: 19
+      basis: actual
+      asOf: "2026-04-29"
+      scope: Registry actual enrollment.
+      source: https://clinicaltrials.gov/api/v2/studies/NCT03929913
+    - count: 18
+      basis: treated
+      asOf: "2026-11-11"
+      scope: Participants in whom 19 procedures were attempted, per the 5-year report.
+      source: https://doi.org/10.1161/CIRCINTERVENTIONS.126.017202
+  year: 2019
+  primaryEndpoint: Technical success at exit from the catheterization laboratory (registry-stated).
+  outcomeSummary: >-
+    Investigator-initiated NHLBI study at three US sites. The primary endpoint (technical success) was met in 17 of 19
+    subjects (2022 abstract); the 5-year report counts 19 procedures attempted in 18 participants. New complete heart
+    block in 6 participants led to suspension of enrolment. Kaplan-Meier 5-year survival was 57% (95% CI 30-77); later
+    echo was site-reported and incomplete, and symptom benefit faded after year one.
+  resultStatus: mixed
+  references:
+    - https://doi.org/10.1016/j.jcin.2022.04.013
+    - https://doi.org/10.1161/CIRCINTERVENTIONS.126.017202
+    - https://clinicaltrials.gov/study/NCT03929913
+  timeline:
+    date: "2019-05-07"
+    precision: day
+    dateBasis: trial-start
+    event: Trial start
+    source: https://clinicaltrials.gov/study/NCT03929913
+  curation:
+    status: curated
+    lastUpdated: "2026-11-18"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT03929913
+      - PMID:35738745
+      - PMID:43012111
+    notes: >-
+      Registry revision 2026-04-29, PubMed abstracts and the open-access 5-year full text, retrieved 2026-11-18. The
+      5-year paper reports conflicting heart-block device counts (p4 vs p9).
