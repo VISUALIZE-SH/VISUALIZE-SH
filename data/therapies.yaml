@@ -7231,3 +7231,222 @@
       laceration but does not establish complete actuation/energy configuration or original clinical outcomes. Legal
       identity bridging and equivalence to other septal-myotomy systems remain not_yet_reviewed; no manufacturer-company
       relationship is asserted.
+
+- id: rx-eplontersen
+  type: therapy
+  therapyType: pharmaceutical
+  subtype: TTR silencer (antisense oligonucleotide)
+  name: Eplontersen (Wainua)
+  company: co-astrazeneca
+  treats:
+    - cond-attr-cm
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    US approval (NDA 217388, December 2023) covers only hereditary ATTR polyneuropathy; the label read in November 2026
+    has no ATTR-CM indication. CARDIO-TTRansform did not meet its primary endpoint (NEJM, August 2026).
+  mechanism: GalNAc-conjugated antisense oligonucleotide that degrades TTR mRNA in hepatocytes and lowers serum TTR.
+  description: >-
+    Monthly subcutaneous TTR silencer from Ionis and AstraZeneca. In ATTR-CM it was tested in CARDIO-TTRansform (1432
+    patients), which missed its cardiovascular-outcome primary endpoint; imaging substudies report structural
+    differences versus placebo.
+  links:
+    - label: Primary evidence / product information
+      url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7dcb847-71dd-4fff-82d0-d43a465fc096
+    - label: CARDIO-TTRansform primary results
+      url: https://doi.org/10.1056/NEJMoa2608510
+  timeline:
+    date: "2023-12-21"
+    precision: day
+    dateBasis: fda-approval
+    event: Initial US approval (hereditary ATTR polyneuropathy)
+    source: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7dcb847-71dd-4fff-82d0-d43a465fc096
+    notes: Date from Drugs@FDA NDA217388 original approval; not an ATTR-CM approval.
+  curation:
+    status: curated
+    lastUpdated: "2026-11-18"
+    sources:
+      - https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7dcb847-71dd-4fff-82d0-d43a465fc096
+      - https://api.fda.gov/drug/drugsfda.json?search=openfda.generic_name:eplontersen&limit=5
+      - PMID:42663301
+    notes: >-
+      US label (revised 4/2026), Drugs@FDA NDA217388 and the CARDIO-TTRansform primary abstract, retrieved 2026-11-18.
+      Trial sponsor Ionis has no public company node.
+- id: dev-transmural-mitral-cerclage
+  type: therapy
+  therapyType: device
+  name: Transmural Systems transcatheter mitral cerclage device
+  subtype: Transcatheter mitral cerclage annuloplasty (coronary sinus and septal vein tether with lock)
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Investigational. Studied under an FDA investigational device exemption in the NHLBI early feasibility study
+    (NCT03929913, completed per registry), whose enrolment was suspended after complete heart block. No FDA marketing
+    decision was found.
+  mechanism: >-
+    A tether looped from the coronary sinus through a septal perforator vein around the base of the left ventricle and
+    secured with a wishbone lock compresses the mitral annulus; an optional protection element shields an entrapped
+    coronary artery.
+  description: >-
+    Catheter-delivered cerclage implant for functional mitral regurgitation with heart failure, placed from the internal
+    jugular vein. Developed at NHLBI, with an NHLBI SBIR contract to Transmural Systems, and tested in the NHLBI
+    intramural early feasibility study (19 procedures attempted in 18 participants). Sizes, materials and device
+    iterations are not published.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: ClinicalTrials.gov NCT03929913
+      url: https://clinicaltrials.gov/study/NCT03929913
+    - label: Five-year outcomes (open access)
+      url: https://doi.org/10.1161/CIRCINTERVENTIONS.126.017202
+  curation:
+    status: curated
+    lastUpdated: "2026-11-18"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT03929913
+      - https://doi.org/10.1161/CIRCINTERVENTIONS.126.017202
+      - PMID:35738745
+    notes: >-
+      Registry record (updated 2026-04-29), NIH RePORTER contract 268201500008C and the 2022 and 2026 papers, retrieved
+      2026-11-18. No company node: Transmural Systems has no public record.
+- id: dev-venus-a
+  type: therapy
+  therapyType: device
+  name: Venus Medtech Venus A-Valve TAVR system
+  subtype: Transcatheter aortic valve (TAVR), self-expanding
+  company: co-venus-medtech
+  treats:
+    - cond-as
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Issuer reports NMPA approval on 2017-04-25 and approvals in nearly 15 countries including China, Brazil, Russia and
+    Thailand (HKEX results 2026-03-31; issuer page); no regulator record was read. Other jurisdictions not_yet_reviewed.
+  description: >-
+    First-generation Venus aortic valve, described by the issuer as the first TAVR approved in China: a self-expanding
+    valve with a stent design said to need no balloon expansion, staged release and radial support suited to bicuspid
+    and calcified valves. An early single-arm study at Fuwai Hospital was registered in 2012 (NCT01683474). Later
+    systems (VenusA-Plus, -Pro, -Deluxe) are separate generations. Design wording is the issuer's.
+  mechanism: >-
+    Issuer-described self-expanding valve released in stages, with radial support intended for bicuspid and heavily
+    calcified valves.
+  materials: []
+  materialsStatus: not_established
+  links:
+    - label: Venus Medtech aortic valve page (issuer)
+      url: https://www.venusmedtech.com/index.php/list-7
+    - label: Venus Medtech HKEX annual results announcement
+      url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033102789.pdf
+  curation:
+    status: curated
+    lastUpdated: "2026-11-18"
+    sources:
+      - https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033102789.pdf
+      - https://www.venusmedtech.com/index.php/list-7
+      - https://clinicaltrials.gov/api/v2/studies/NCT01683474
+    notes: >-
+      HKEX announcement of 2026-03-31 retrieved 2026-11-10; issuer page and registry record retrieved 2026-11-18; issuer
+      wording only.
+- id: dev-vitaflow-liberty
+  type: therapy
+  therapyType: device
+  name: MicroPort VitaFlow Liberty TAVI system
+  subtype: Transcatheter aortic valve (TAVR), self-expanding, retrievable delivery system
+  company: co-microport-cardioflow
+  treats:
+    - cond-as
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Issuer reports NMPA approval for registration in August 2021, CE-MDR certification in April 2024 and registration in
+    28 countries (HKEX results 2026-03-30); no regulator record was read. Registration is not availability; other
+    jurisdictions not_yet_reviewed.
+  description: >-
+    Second-generation VitaFlow series system. Issuer-described: the same self-expanding bovine-pericardial valve design
+    as VitaFlow, paired with a motorized delivery system that allows recapture, an inline sheath and a spiral catheter.
+    A prospective 163-patient single-arm study, registered under the "VitaFlow II" record NCT04414878, reported 13.5%
+    all-cause mortality at 2 years (abstract). Design wording is the issuer's; Liberty Flex (steerable delivery) is a
+    separate generation.
+  mechanism: >-
+    Self-expanding valve with a double-layer skirt intended to limit paravalvular leak; motorized, retrievable delivery
+    system (issuer-described).
+  materials:
+    - name: Nitinol
+      role: Self-expanding valve frame
+      category: frame
+      source: https://www.cardioflowmedtech.com/products/vitaflowliberty
+      note: Issuer description (hybrid-density mesh stent).
+    - name: Bovine pericardium
+      role: Valve leaflets
+      category: leaflet
+      source: https://www.cardioflowmedtech.com/products/vitaflowliberty
+      note: Issuer description; anti-calcification treatment not specified.
+    - name: Polyethylene terephthalate (PET)
+      role: Double-layer skirt
+      category: fabric
+      source: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0402/2026033003758.pdf
+      note: Issuer product table lists a double-layer PET skirt design.
+  links:
+    - label: VitaFlow Liberty product page (issuer)
+      url: https://www.cardioflowmedtech.com/products/vitaflowliberty
+    - label: Two-year outcomes (PubMed)
+      url: https://pubmed.ncbi.nlm.nih.gov/42298602/
+  curation:
+    status: curated
+    lastUpdated: "2026-11-18"
+    sources:
+      - https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0402/2026033003758.pdf
+      - https://www.cardioflowmedtech.com/products/vitaflowliberty
+      - https://pubmed.ncbi.nlm.nih.gov/42298602/
+    notes: >-
+      HKEX results of 2026-03-30 and issuer pages retrieved 2026-11-10 and 2026-11-18; issuer wording; PubMed abstract
+      only.
+- id: dev-vitaflow
+  type: therapy
+  therapyType: device
+  name: MicroPort VitaFlow TAVI system (first generation)
+  subtype: Transcatheter aortic valve (TAVR), self-expanding
+  company: co-microport-cardioflow
+  treats:
+    - cond-as
+  regulatoryStatus: unknown
+  regulatoryDetail: >-
+    Issuer reports NMPA approval for registration in July 2019 and registration in Argentina and Thailand (HKEX results
+    2026-03-30; issuer pipeline page); no regulator record was read. Other jurisdictions not_yet_reviewed.
+  description: >-
+    First-generation VitaFlow series valve: issuer-described self-expanding valve with bovine pericardial leaflets and a
+    double-layer PET skirt on a nitinol frame, large frame cells for coronary access and a motorized delivery handle. A
+    110-patient single-arm study reported 2.7% 1-year all-cause mortality (abstract). Design wording is the issuer's;
+    later generations (Liberty, Liberty Flex) are separate.
+  mechanism: >-
+    Self-expanding valve with a double-layer skirt intended to limit paravalvular leak and a motorized delivery system
+    (issuer-described).
+  materials:
+    - name: Nitinol
+      role: Self-expanding valve frame
+      category: frame
+      source: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0402/2026033003758.pdf
+      note: Issuer description.
+    - name: Bovine pericardium
+      role: Valve leaflets
+      category: leaflet
+      source: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0402/2026033003758.pdf
+      note: Issuer description; anti-calcification treatment not specified.
+    - name: Polyethylene terephthalate (PET)
+      role: Double-layer skirt
+      category: fabric
+      source: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0402/2026033003758.pdf
+      note: Issuer description.
+  links:
+    - label: VitaFlow product page (issuer)
+      url: https://www.cardioflowmedtech.com/products/vitaflow
+    - label: One-year multicentre study (PubMed)
+      url: https://pubmed.ncbi.nlm.nih.gov/31020788/
+  curation:
+    status: curated
+    lastUpdated: "2026-11-18"
+    sources:
+      - https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0402/2026033003758.pdf
+      - https://www.cardioflowmedtech.com/products/vitaflow
+      - https://pubmed.ncbi.nlm.nih.gov/31020788/
+    notes: >-
+      HKEX results of 2026-03-30 and issuer pages retrieved 2026-11-10 and 2026-11-18; issuer wording; PubMed abstract
+      only.
