@@ -1,6 +1,8 @@
 import { useMemo } from 'react'
 import type { EvidenceClaim, IntelligenceData, IntelligenceEvent, Provenance } from '../../types/intelligence'
 import { displayValue, eventVersionAssociation, formatEvidenceDate, isOnOrBefore, mediaForVersion, versionById } from '../../data/intelligence'
+import { deviceIllustrationFor } from '../../data/device-illustrations'
+import ProfileSchematic from './ProfileSchematic'
 import EvidenceMediaGallery from './EvidenceMediaGallery'
 import EvidenceReferences from './EvidenceReferences'
 import './intelligence.css'
@@ -102,6 +104,7 @@ export default function AtlasEvidence({
     return <section className="intel-workspace intel-empty" aria-label="Evidence atlas"><h2>Evidence Atlas</h2><p>This item doesn't have a product version yet.</p></section>
   }
 
+  const schematic = version.kind === 'device' ? deviceIllustrationFor(version.id) : undefined
   const role = version.kind === 'digital'
     ? `${version.digitalSubtype ?? 'digital'} · ${version.clinicalRole}`
     : `${version.kind} · ${version.clinicalRole}`
@@ -130,11 +133,13 @@ export default function AtlasEvidence({
         <SourceLink data={data} item={version} />
       </div>
 
-      <div className="intel-profile-grid">
-        <section className="intel-card"><h3>Design</h3><ClaimList data={data} claims={design} empty="No design field curated for this version."  versionStatus={version.reviewStatus} /></section>
-        <section className="intel-card"><h3>Fit</h3>{(fit.length > 0 || indications.length === 0) && <ClaimList data={data} claims={fit} empty="No anatomy, use-condition, or workflow-fit field curated for this version."  versionStatus={version.reviewStatus} />}{indications.slice(0, 2).map((indication) => <article className="intel-card-record" key={indication.id}><span>{formatEvidenceDate(indication.effectiveDate)} · {indication.textType}</span><p>{indication.population}</p><SourceLink data={data} item={indication} /></article>)}</section>
-        <section className="intel-card"><h3>Clinical Evidence</h3>{(evidence.length > 0 || evidenceReadouts.length === 0) && <ClaimList data={data} claims={evidence} empty="No evidence curated for this version."  versionStatus={version.reviewStatus} />}{evidenceReadouts.slice(0, 2).map(({ readout, trial, exact }) => <article className="intel-card-record" key={readout.id}><span>{trial.name} · {readout.followUp}</span><p>{readout.title}</p><p className={exact ? '' : 'intel-boundary'}>{exact ? 'Exact version mapping recorded.' : 'Family association only; exact generation/software build unresolved.'}</p><SourceLink data={data} item={readout} /></article>)}</section>
-        <section className="intel-card"><h3>History</h3>{(history.length > 0 || (decisions.length === 0 && events.length === 0)) && <ClaimList data={data} claims={history} empty="No evolution claim curated for this version."  versionStatus={version.reviewStatus} />}{[...decisions].sort((a, b) => b.date.value.localeCompare(a.date.value)).slice(0, 2).map((decision) => <article className="intel-card-record" key={decision.id}><span>{formatEvidenceDate(decision.date)} · {decision.identifier}</span><p>{decision.summary}</p><SourceLink data={data} item={decision} /></article>)}{[...events].sort((a, b) => b.eventDate.value.localeCompare(a.eventDate.value)).slice(0, 1).map((event) => <article className="intel-card-record" key={event.id}><span>Latest selected change · {formatEvidenceDate(event.eventDate)}</span><p>{event.after}</p><SourceLink data={data} item={event} /></article>)}</section>
+      <div className={`intel-profile-grid${schematic ? ' has-schematic' : ''}`}>
+        <section className="intel-card intel-profile-design"><h3>Design</h3><ClaimList data={data} claims={design} empty="No design field curated for this version."  versionStatus={version.reviewStatus} /></section>
+
+        {schematic && <ProfileSchematic illustration={schematic} name={version.name} notes={schematic.notes} />}
+        <section className="intel-card intel-profile-fit"><h3>Fit</h3>{(fit.length > 0 || indications.length === 0) && <ClaimList data={data} claims={fit} empty="No anatomy, use-condition, or workflow-fit field curated for this version."  versionStatus={version.reviewStatus} />}{indications.slice(0, 2).map((indication) => <article className="intel-card-record" key={indication.id}><span>{formatEvidenceDate(indication.effectiveDate)} · {indication.textType}</span><p>{indication.population}</p><SourceLink data={data} item={indication} /></article>)}</section>
+        <section className="intel-card intel-profile-evidence"><h3>Clinical Evidence</h3>{(evidence.length > 0 || evidenceReadouts.length === 0) && <ClaimList data={data} claims={evidence} empty="No evidence curated for this version."  versionStatus={version.reviewStatus} />}{evidenceReadouts.slice(0, 2).map(({ readout, trial, exact }) => <article className="intel-card-record" key={readout.id}><span>{trial.name} · {readout.followUp}</span><p>{readout.title}</p><p className={exact ? '' : 'intel-boundary'}>{exact ? 'Exact version mapping recorded.' : 'Family association only; exact generation/software build unresolved.'}</p><SourceLink data={data} item={readout} /></article>)}</section>
+        <section className="intel-card intel-profile-history"><h3>History</h3>{(history.length > 0 || (decisions.length === 0 && events.length === 0)) && <ClaimList data={data} claims={history} empty="No evolution claim curated for this version."  versionStatus={version.reviewStatus} />}{[...decisions].sort((a, b) => b.date.value.localeCompare(a.date.value)).slice(0, 2).map((decision) => <article className="intel-card-record" key={decision.id}><span>{formatEvidenceDate(decision.date)} · {decision.identifier}</span><p>{decision.summary}</p><SourceLink data={data} item={decision} /></article>)}{[...events].sort((a, b) => b.eventDate.value.localeCompare(a.eventDate.value)).slice(0, 1).map((event) => <article className="intel-card-record" key={event.id}><span>Latest selected change · {formatEvidenceDate(event.eventDate)}</span><p>{event.after}</p><SourceLink data={data} item={event} /></article>)}</section>
       </div>
 
       <EvidenceMediaGallery data={data} media={media} heading="Figures" />

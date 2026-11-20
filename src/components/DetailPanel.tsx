@@ -449,7 +449,7 @@ export default function DetailPanel({
                 </div>
               </div>
             ))}
-            {landscapeProfileHref && <div className="detail-profile-actions"><a href={landscapeProfileHref} aria-label={`View ${e.name} profile`} onClick={event => followProfile(event, landscapeProfileHref)}>View profile <span aria-hidden="true">→</span></a></div>}
+            {landscapeProfileHref && <div className="detail-profile-actions"><a href={landscapeProfileHref} aria-label={profileLinks.length ? `View ${e.name} therapy snapshot` : `View ${e.name} profile`} onClick={event => followProfile(event, landscapeProfileHref)}>{profileLinks.length ? 'View therapy snapshot' : 'View profile'} <span aria-hidden="true">→</span></a></div>}
           </section>
         )}
         <section className="detail-section">

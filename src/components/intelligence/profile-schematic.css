@@ -1,0 +1,82 @@
+.intel-profile-grid.has-schematic {
+  grid-template-areas:
+    "design schematic"
+    "fit schematic"
+    "evidence history";
+}
+.has-schematic > .intel-profile-design { grid-area: design; }
+.has-schematic > .intel-profile-fit { grid-area: fit; }
+.has-schematic > .intel-profile-schematic { grid-area: schematic; min-width: 0; align-self: start; }
+.has-schematic > .intel-profile-evidence { grid-area: evidence; }
+.has-schematic > .intel-profile-history { grid-area: history; }
+
+.intel-schematic-frame {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
+.intel-schematic-switch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 2px;
+  min-inline-size: 0;
+  margin: 0;
+  padding: 6px 8px;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-2);
+}
+.intel-schematic-switch legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  clip-path: inset(50%);
+}
+.intel-schematic-switch label { position: relative; cursor: pointer; }
+.intel-schematic-switch input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(50%);
+}
+.intel-schematic-switch span {
+  display: grid;
+  min-height: 44px;
+  place-items: center;
+  padding: 5px 11px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  color: var(--text-2);
+  font-size: var(--fs-11);
+  font-weight: 600;
+}
+.intel-schematic-switch label:hover span { background: var(--lilac); }
+.intel-schematic-switch input:checked + span { color: #fff; background: var(--brand); }
+.intel-schematic-switch input:focus-visible + span { outline: 2px solid var(--link); outline-offset: 2px; }
+.intel-schematic-stage {
+  display: grid;
+  place-items: center;
+  width: min(100%, 340px);
+  aspect-ratio: 1;
+  margin: auto;
+}
+.intel-schematic-stage img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.intel-schematic-stage p { margin: 16px; color: #524b55; font-size: var(--fs-12); text-align: center; }
+.intel-schematic-config { margin: 9px 0 3px; color: var(--text-2); font-size: var(--fs-12); }
+.intel-schematic-references { margin-top: 8px; font-size: var(--fs-11); }
+.intel-schematic-references summary {
+  min-height: 28px;
+  color: var(--link);
+  font-weight: 600;
+  cursor: pointer;
+}
+.intel-schematic-references ul { margin: 6px 0 0; padding-left: 19px; color: var(--text-2); overflow-wrap: anywhere; }
+.intel-schematic-references li + li { margin-top: 4px; }
+@media (max-width: 680px) {
+  .intel-profile-grid.has-schematic { grid-template-areas: "design" "schematic" "fit" "evidence" "history"; }
+  .intel-schematic-switch { justify-content: center; }
+}
