@@ -117,6 +117,47 @@
       "geometrySha256": "4ed2defc81422510cff2cfaff605e51c4e0947fc5c0ef753a2d987821cae1093"
     },
     {
+      "entityId": "dev-d-shant",
+      "name": "D-Shant atrial shunt",
+      "assetPath": "evidence/schematics/dev-d-shant-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Double-disc shunt with open waist in the 2022 study configuration",
+      "alt": "D-Shant atrial shunt — oblique concept illustration, not to scale",
+      "sha256": "3e51717b719f9e6f589c4d8f2f50115811feba0119986a463da9927958ffaa0d",
+      "limitations": [
+        "Proportions illustrate the documented 6/20-mm configuration and the qualitative Figure 1 shape. Braid count, reinforcement and fitting sizes are schematic."
+      ],
+      "sources": [
+        {
+          "title": "Clinical study on the treatment of chronic heart failure with a novel D-shant atrium shunt device",
+          "url": "https://academic.oup.com/eschf/article/9/3/1713/8362442",
+          "locator": "Design of D-shant atrium shunt device, opening paragraphs and Figure 1A–C",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "933f48b285226f0707a5d7064febca329725c0663b44e85cfb05d745de9b45ec",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-d-shant-orthographic.svg",
+          "sha256": "3e51717b719f9e6f589c4d8f2f50115811feba0119986a463da9927958ffaa0d",
+          "geometrySha256": "933f48b285226f0707a5d7064febca329725c0663b44e85cfb05d745de9b45ec"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-d-shant-front.svg",
+          "sha256": "769e612032e995ee0bbb76a31d74ebe8a8e44e1209951ac789dd9df035783edd",
+          "geometrySha256": "b93e680f5b2929ee4372e8cefcc4a6a1d4e24fe4274913877b940a81fbd92a5e"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-d-shant-top.svg",
+          "sha256": "f4a82d450abed0c33c67d7a4b88da578558b91ef2779e6661912f286a5a6fc54",
+          "geometrySha256": "e8d621eecdfb7f9b3340f850ad6282ab00c3b57ad709090a87fb2f5a3225f154"
+        }
+      ]
+    },
+    {
       "entityId": "dev-duravr-thv",
       "name": "Anteris DurAVR THV",
       "assetPath": "evidence/schematics/dev-duravr-thv-orthographic.svg",
@@ -174,6 +215,47 @@
         }
       ],
       "geometrySha256": "6eb214558834ed84b474880f7dfb0224be1f782a1056b39ae80e77a39b285f08"
+    },
+    {
+      "entityId": "dev-grownvalve-pulmonary",
+      "name": "GrOwnValve pulmonary valve",
+      "assetPath": "evidence/schematics/dev-grownvalve-pulmonary-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Expanded pulmonary valve from the first published case",
+      "alt": "GrOwnValve pulmonary valve — oblique concept illustration, not to scale",
+      "sha256": "421f711845570efa1da218df467e0aab11faf641875ebbcc4cefb40e304ae3b2",
+      "limitations": [
+        "One patient-specific first-case assembly. Frame repeat count, leaflet posture and individual stitches are schematic."
+      ],
+      "sources": [
+        {
+          "title": "First case of the novel GrOwnValve procedure",
+          "url": "https://doi.org/10.1093/ehjcr/ytag548",
+          "locator": "First-case narrative, Figure 1 C–D and G, ytag548f1.jpg",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "41a2804430c1cfdb347c1493967bb16c87305a6a1103943d0f349c9792b12581",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-grownvalve-pulmonary-orthographic.svg",
+          "sha256": "421f711845570efa1da218df467e0aab11faf641875ebbcc4cefb40e304ae3b2",
+          "geometrySha256": "41a2804430c1cfdb347c1493967bb16c87305a6a1103943d0f349c9792b12581"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-grownvalve-pulmonary-front.svg",
+          "sha256": "f451652211b91f7473ed753eac72fab44276eea3740bf882c56cffb343f0f843",
+          "geometrySha256": "c8ccf45cd09759a8b1241c1fcadf38402c53722e2ebb6f4ae422e2298bd6c4e7"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-grownvalve-pulmonary-top.svg",
+          "sha256": "9c4217cd4b3b62a8eda5a5403d2d9e506d436a015b859bbbc24efd29ff205c4f",
+          "geometrySha256": "57d6ce0810790c8d9891bee8012cb981fd261fcd426e43c3f6d165d03ec21eee"
+        }
+      ]
     },
     {
       "entityId": "dev-hemotag",
@@ -254,6 +336,47 @@
       "geometrySha256": "20f6782a2d5ea96bfd14ed0143ef624a9224a6adee69e6de6556cc7a8ea9ec80"
     },
     {
+      "entityId": "dev-innoventric-unica",
+      "name": "Innoventric Unica",
+      "assetPath": "evidence/schematics/dev-innoventric-unica-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Single cross-caval frame carrying both valves, sponsor technical reference",
+      "alt": "Innoventric Unica — oblique concept illustration, not to scale",
+      "sha256": "12991e13dc25c316044962f7a426f39d2ec2e22ecb92ef7aee4f0d265c398ead",
+      "limitations": [
+        "Open-cell repeats, device bend, skirt proportions and leaflet pose are schematic. The relationship to study hardware is unresolved."
+      ],
+      "sources": [
+        {
+          "title": "Innoventric Unica technical page",
+          "url": "https://innoventric.com/unica/",
+          "locator": "Device technical sections and the linked UnicaDesktop-scaled.png explainer image",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "61f55a99bf5d67ce3d68ab8c251e475ff51981f5aab2b3daa181f21937858078",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-innoventric-unica-orthographic.svg",
+          "sha256": "12991e13dc25c316044962f7a426f39d2ec2e22ecb92ef7aee4f0d265c398ead",
+          "geometrySha256": "61f55a99bf5d67ce3d68ab8c251e475ff51981f5aab2b3daa181f21937858078"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-innoventric-unica-front.svg",
+          "sha256": "83834fcbbb8c426813a4ecf82d293d316fd336808ce871f2f35dfc1307ccd994",
+          "geometrySha256": "da303739e10d744ef1b862f07c3af6a5aabe9889642d1a31cf7c08225eb9c55c"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-innoventric-unica-top.svg",
+          "sha256": "ba6b1b1ba62309ddcd27eae5ea3e0d671856c5d78941a6c9e7a8133e2d291ead",
+          "geometrySha256": "3d646e11da374714c381f6493d67883fbf74ac0053039d714502c815b6de85cd"
+        }
+      ]
+    },
+    {
       "entityId": "dev-innovheart-saturn-ts-tmvr",
       "name": "InnovHeart Saturn TMVR",
       "assetPath": "evidence/schematics/dev-innovheart-saturn-ts-tmvr-orthographic.svg",
@@ -276,6 +399,176 @@
         }
       ],
       "geometrySha256": "70104aaf5587093d8a08726f2ae27383307d77ba44b3a934ecfbcc5e368d3b9e"
+    },
+    {
+      "entityId": "dev-lux-valve-plus",
+      "name": "LuX-Valve Plus",
+      "assetPath": "evidence/schematics/dev-lux-valve-plus-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Expanded LuX-Valve Plus in the published tricuspid case",
+      "alt": "LuX-Valve Plus — oblique concept illustration, not to scale",
+      "sha256": "9d10ad1d73d8b7f99c168d7e0ccabe6d4755c86093827c022926fade6704df1f",
+      "limitations": [
+        "The illustration approximates the visible anchor profiles and attachment sides. Exact frame topology, clasp cross sections and concealed anchor hardware are unresolved."
+      ],
+      "sources": [
+        {
+          "title": "Percutaneous Orthotopic Transcatheter Tricuspid Valve Replacement for Native Valve Destruction After Endocarditis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12540496/",
+          "locator": "Figure 1D and original Figure 3A–D; Discussion on dual-element anchoring",
+          "access": "public"
+        },
+        {
+          "title": "First-in-human transjugular tricuspid valve replacement with LuX-Valve Plus",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36062995/",
+          "locator": "Exact Plus generation study abstract",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "cc10967a1d3f1a6b35e58c11cd47a5c51203544d7172481d300e77844fde0d18",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-lux-valve-plus-orthographic.svg",
+          "sha256": "9d10ad1d73d8b7f99c168d7e0ccabe6d4755c86093827c022926fade6704df1f",
+          "geometrySha256": "cc10967a1d3f1a6b35e58c11cd47a5c51203544d7172481d300e77844fde0d18"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-lux-valve-plus-front.svg",
+          "sha256": "f4a705220558e7d171b3e7bc7383a697080177000b4bc7c6bf747ed61463b0e3",
+          "geometrySha256": "5abeb55ca6ffb9a6a376957181849b1791d571a31b90fe64f3df2dd32d7e17fe"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-lux-valve-plus-top.svg",
+          "sha256": "b815fd3bdd2b8f8a50736f6bd9b2ca3e0930d02587234d75b8b994d5ea8a5610",
+          "geometrySha256": "da09fe74ba0a6d36110442954b002366d6e3436b9a6033ebeb346b94d7fb57a6"
+        }
+      ]
+    },
+    {
+      "entityId": "dev-myval-octapro",
+      "name": "Myval Octapro",
+      "assetPath": "evidence/schematics/dev-myval-octapro-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Expanded valve with separate chevron and octagonal frame zones",
+      "alt": "Myval Octapro — oblique concept illustration, not to scale",
+      "sha256": "1aad2d9a006114a7af4ac94ebc54bc825a1baeb4671cae12ef155d9619a726eb",
+      "limitations": [
+        "Based on the Octapro panel only. Circumferential counts, hidden interfaces, strut thickness and cuff dimensions remain illustrative."
+      ],
+      "sources": [
+        {
+          "title": "Myval Octapro clinical article",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099935/fullTextXML",
+          "locator": "Body p0020 and Figure 1, right-hand Octapro panel",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "f489278a0a6b71ebea19c58b02c727b965f2f5452e8f3fb425425e74317e4059",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-myval-octapro-orthographic.svg",
+          "sha256": "1aad2d9a006114a7af4ac94ebc54bc825a1baeb4671cae12ef155d9619a726eb",
+          "geometrySha256": "f489278a0a6b71ebea19c58b02c727b965f2f5452e8f3fb425425e74317e4059"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-myval-octapro-front.svg",
+          "sha256": "ce43db5d75fc76656e72cd8dd1421940143d9e66cd7c67d00a7830d522590880",
+          "geometrySha256": "1963f16b16ee5fe262b54cb7efa810b94e60f05d8f53137213e86a6cf66de802"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-myval-octapro-top.svg",
+          "sha256": "a440a8aae58581f0b82287cac735ad90bb6742a35d670d077a45e7beb764e3b9",
+          "geometrySha256": "3529ba9f747f7e41c4ed7abc5f29a39c862ff6771112ad9136db25826489b66d"
+        }
+      ]
+    },
+    {
+      "entityId": "dev-occlutech-afr",
+      "name": "Occlutech Atrial Flow Regulator",
+      "assetPath": "evidence/schematics/dev-occlutech-afr-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Open two-disk shunt with central fenestration",
+      "alt": "Occlutech Atrial Flow Regulator — oblique concept illustration, not to scale",
+      "sha256": "b6485c8d31644487b4fd1e7c84b338eb524ef0945e98d42362a927d52479357c",
+      "limitations": [
+        "Wire count, pitch, nub diameter and attachment details are illustrative. The sketch depicts the AFR08M proportions shown in the heart-failure brochure."
+      ],
+      "sources": [
+        {
+          "title": "Occlutech AFR technical brochure MM_AFR_015_EU_02",
+          "url": "https://occlutech.com/wp-content/uploads/2024/07/MM_AFR_015_EU_02_Occlutech-AFR-Product-Brochure-1.pdf",
+          "locator": "PDF p. 1, Product specifications, AFR08M row, three technical product views",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "44764c11a45c1e80a3e9cbb92a96da55406321ba13827a86036d91ff73aced81",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-occlutech-afr-orthographic.svg",
+          "sha256": "b6485c8d31644487b4fd1e7c84b338eb524ef0945e98d42362a927d52479357c",
+          "geometrySha256": "44764c11a45c1e80a3e9cbb92a96da55406321ba13827a86036d91ff73aced81"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-occlutech-afr-front.svg",
+          "sha256": "3663c6858ea27e757fdbb419cea5a0971f5962c45a23af423a778f38d935f83d",
+          "geometrySha256": "da30f7dece45ba142683f70204a3ac109fabc23dc33e3ebe7611332f448fc4f8"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-occlutech-afr-top.svg",
+          "sha256": "1934c61e5e9f6d24e2081714752158df444ead4e9328e92594358b329aaed9e0",
+          "geometrySha256": "96b645c4c703877bc1c5f3f4c698d0455b6c40a57724436ba4cc37dc0a5ea8e3"
+        }
+      ]
+    },
+    {
+      "entityId": "dev-physician-modified-low-profile-endobentall",
+      "name": "Low-profile Endo-Bentall conduit",
+      "assetPath": "evidence/schematics/dev-physician-modified-low-profile-endobentall-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Expanded case-specific composite with two coronary fenestrations",
+      "alt": "Low-profile Endo-Bentall conduit — oblique concept illustration, not to scale",
+      "sha256": "922d8c59b695a6a9696f12324fcdae8e1b17eb55420052ffc181827f6588910e",
+      "limitations": [
+        "The drawing depicts the single published composite. Window placement and shape are schematic. Patient anatomy and the descending extension are omitted."
+      ],
+      "sources": [
+        {
+          "title": "Physician-modified low-profile Endo-Bentall device for treating complex aortic diseases involving the aortic root",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12648707/",
+          "locator": "Device modification and original Figs 2, 3A–B, 5",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "cafc792169cfe0a396ea17590d7d5c4ff007bcc065ad316d0fd83b6f50effb2f",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-physician-modified-low-profile-endobentall-orthographic.svg",
+          "sha256": "922d8c59b695a6a9696f12324fcdae8e1b17eb55420052ffc181827f6588910e",
+          "geometrySha256": "cafc792169cfe0a396ea17590d7d5c4ff007bcc065ad316d0fd83b6f50effb2f"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-physician-modified-low-profile-endobentall-front.svg",
+          "sha256": "a1325304cf47ce019b60a0b692e756a2f1bfa5529c759e00f8c390086ae40c05",
+          "geometrySha256": "b00332664c2f3d724a01f2aaa3225dc0737355140b4d88728f3783898df70bbc"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-physician-modified-low-profile-endobentall-top.svg",
+          "sha256": "c7bda81fd3d0f78fb01759aa7341dc757fff36db72e7fc27a690161bc096dcd9",
+          "geometrySha256": "98bed44362ebf3ced0792ed31e5832d3b289d43d058f05512fc712e98b48a159"
+        }
+      ]
     },
     {
       "entityId": "dev-polares-mrace",
@@ -305,6 +598,47 @@
         }
       ],
       "geometrySha256": "7e9b755635c3bd217528dc8ed87c12b6d13bf34a5d8e8c8193bd59f8bbff5632"
+    },
+    {
+      "entityId": "dev-reaces-asd-occluder",
+      "name": "ReAces puncturable ASD occluder",
+      "assetPath": "evidence/schematics/dev-reaces-asd-occluder-orthographic.svg",
+      "scope": "concept",
+      "configuration": "First-in-human design with an intact membrane-covered central region",
+      "alt": "ReAces puncturable ASD occluder — oblique concept illustration, not to scale",
+      "sha256": "da826788b63d5000b6d7298922ea0dfea12dd8334d7eed88bad43a340ffb5427",
+      "limitations": [
+        "The image depicts the first-in-human design. Disc ratios, wire count, exact membrane position and wire join dimensions are illustrative."
+      ],
+      "sources": [
+        {
+          "title": "A Novel Puncturable Atrial Septal Defect Occluder",
+          "url": "https://doi.org/10.1016/j.jacbts.2022.06.010",
+          "locator": "Device design, Figure 1A–D",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "0f68ec6dda7ea65efaf75e4432d59f29db2a4bca312fa3e151e52074da5dbd83",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-reaces-asd-occluder-orthographic.svg",
+          "sha256": "da826788b63d5000b6d7298922ea0dfea12dd8334d7eed88bad43a340ffb5427",
+          "geometrySha256": "0f68ec6dda7ea65efaf75e4432d59f29db2a4bca312fa3e151e52074da5dbd83"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-reaces-asd-occluder-front.svg",
+          "sha256": "8f12bd23d0eb150868af913fb93c29cacad4e4361a15ff8af259f190fcd02619",
+          "geometrySha256": "96171446fb7cc5623814a7634053d7938aab2ba91df11c72f11f851fb2870b81"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-reaces-asd-occluder-top.svg",
+          "sha256": "0b7f7f2e232e3338ca36e13d0c17014d631ec37a5abd38e41a804d40e26be47c",
+          "geometrySha256": "3ecc11d9435b0bdacbbba80c6ea7c2e2db7adc94b8045f5de6d5375e2ac2c837"
+        }
+      ]
     },
     {
       "entityId": "dev-sensydia-cps",
@@ -337,6 +671,94 @@
         }
       ],
       "geometrySha256": "c196c65fb79ebfbed0bfce1645c3efda018c5578c6c2344f0e906767ec639e85"
+    },
+    {
+      "entityId": "dev-shortcut",
+      "name": "Pi-Cardia ShortCut",
+      "assetPath": "evidence/schematics/dev-shortcut-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Catheter working end with the positioning arm open, component concept",
+      "alt": "Pi-Cardia ShortCut — oblique concept illustration, not to scale",
+      "sha256": "87a48a9b29aba89ba8e93bb96cef81810299d846c6596f9c292f04bf98131700",
+      "limitations": [
+        "Illustrates only the distal assembly and adjoining sheath. Working-end contours, relative spread and cross-sections remain schematic. The handle and detailed mechanics are outside the drawing."
+      ],
+      "sources": [
+        {
+          "title": "FDA De Novo Summary DEN240017",
+          "url": "https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN240017.pdf",
+          "locator": "PDF pp. 2–3, Device Description and Figure 1",
+          "access": "public"
+        },
+        {
+          "title": "Leaflet modification before transcatheter aortic valve implantation: the ShortCut study",
+          "url": "https://doi.org/10.1093/eurheartj/ehae303",
+          "locator": "ShortCut device procedure and Figure 1",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "9101f06d85c79ef8b4df2d3f07deb6ed73a9c17bb69b585a0917171302e5dbcf",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-shortcut-orthographic.svg",
+          "sha256": "87a48a9b29aba89ba8e93bb96cef81810299d846c6596f9c292f04bf98131700",
+          "geometrySha256": "9101f06d85c79ef8b4df2d3f07deb6ed73a9c17bb69b585a0917171302e5dbcf"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-shortcut-front.svg",
+          "sha256": "d281e47792b0d871ec0cb288c3d9d370c289888d86195d70b84e70b1829e4c3e",
+          "geometrySha256": "7b3866b53f12a80c651b772bb75d7a9e355c7d3e10539ed738dc48f4180feb7d"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-shortcut-top.svg",
+          "sha256": "c74f497944d92da2f904692408588f82c73e9cc635378e9f714092906dd64c58",
+          "geometrySha256": "c9fc8cb94e5ab54689ade8708b0a13c4bac24371cfc8b65e153dfd1ce94b3831"
+        }
+      ]
+    },
+    {
+      "entityId": "dev-sutra-hemi-valve-tmvr",
+      "name": "Sutra Hemi-Valve TMVR",
+      "assetPath": "evidence/schematics/dev-sutra-hemi-valve-tmvr-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Sponsor-illustrated crescent frame and posterior trileaflet assembly",
+      "alt": "Sutra Hemi-Valve TMVR — oblique concept illustration, not to scale",
+      "sha256": "8bd2522c709ca46ea260269d619bbd5e21a7bc484779b4b3baf2856b01a7615a",
+      "limitations": [
+        "The sketch depicts the configuration shown by the sponsor. Crescent depth, frame cells and the visible anchor profiles are schematic. Concealed hardware is omitted."
+      ],
+      "sources": [
+        {
+          "title": "Sutra Medical, Our TMVR Technology",
+          "url": "https://sutramedical.com/our-technology/",
+          "locator": "Named device photo (sutraproduct2-1.png) and posterior-leaflet rendering (What_is_sutra.jpg)",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "fe9da031ffbc46ff4871d1817f109ee3316d1a56c778a484d071e8d5f23dc9d3",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-sutra-hemi-valve-tmvr-orthographic.svg",
+          "sha256": "8bd2522c709ca46ea260269d619bbd5e21a7bc484779b4b3baf2856b01a7615a",
+          "geometrySha256": "fe9da031ffbc46ff4871d1817f109ee3316d1a56c778a484d071e8d5f23dc9d3"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-sutra-hemi-valve-tmvr-front.svg",
+          "sha256": "a161a8a5839e923eff2b010aca7efa72bdc3a06f81be02600d1ce54af9c6c4c4",
+          "geometrySha256": "507e5ca013b74e4b88984ae372cdc80a4cc52c19d348d8ea0fb8d1603945aebe"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-sutra-hemi-valve-tmvr-top.svg",
+          "sha256": "a5cd31407bc7fbe8fc02af913aac265b39ea938b134bb592dd1cd9e3f7d8011d",
+          "geometrySha256": "15c263a401a63e27443ef150bf025a083094e0bc15a22df5955557aa30b7cf63"
+        }
+      ]
     },
     {
       "entityId": "dev-tau-pivot-bridge",
@@ -409,6 +831,100 @@
       "geometrySha256": "4a02494ad9717bee7594b27e7411db8c3e362aedb26b4172fee48cb832313a74"
     },
     {
+      "entityId": "dev-taurus-apex",
+      "name": "TaurusApex — leaflet concept",
+      "assetPath": "evidence/schematics/dev-taurus-apex-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Three polymeric leaflets, isolated component concept",
+      "alt": "TaurusApex — leaflet concept — oblique concept illustration, not to scale",
+      "sha256": "c32fcd2df8e4fb63b258e51f3a7ff62ecf787fbcba2667b2a839ae9dafc3c55e",
+      "limitations": [
+        "Leaflet contours and textile layers are illustrative, and the crossed strokes symbolize the braided material. The exterior frame and attachment hardware are omitted."
+      ],
+      "sources": [
+        {
+          "title": "Peijia Medical 2025 annual results announcement",
+          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032501873.pdf",
+          "locator": "PDF p. 27, TaurusApex heading and description",
+          "access": "public"
+        },
+        {
+          "title": "Peijia Medical 2025 annual report",
+          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0423/2026042300428.pdf",
+          "locator": "Management Discussion and Analysis, TaurusApex Polymeric Trileaflet TAVR System",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "718567296e7f6e840a7d853bcc1baa7b35c2a1090377e67d1d0cde7f29435425",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-taurus-apex-orthographic.svg",
+          "sha256": "c32fcd2df8e4fb63b258e51f3a7ff62ecf787fbcba2667b2a839ae9dafc3c55e",
+          "geometrySha256": "718567296e7f6e840a7d853bcc1baa7b35c2a1090377e67d1d0cde7f29435425"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-taurus-apex-front.svg",
+          "sha256": "6312c97adbf22317cba331fc1fd9c46c1ff724dae4d1aed7947b32acd0718a46",
+          "geometrySha256": "297bfd85690a9a94c30ca7108940f05081d35ea1b2085fc7174abfeb5018698e"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-taurus-apex-top.svg",
+          "sha256": "a4322479f7f9b761d63d83aa27d65a76dea1d0547cb7d4054f35105c7c394682",
+          "geometrySha256": "eb2196ec7d7dbe147bed27bc0ca16e1f32a5d845af46f5f3655b5ef8ee626dee"
+        }
+      ]
+    },
+    {
+      "entityId": "dev-transmural-mitral-cerclage",
+      "name": "Transmural mitral cerclage",
+      "assetPath": "evidence/schematics/dev-transmural-mitral-cerclage-orthographic.svg",
+      "scope": "concept",
+      "configuration": "NHLBI early feasibility implant with coronary protection element",
+      "alt": "Transmural mitral cerclage — oblique concept illustration, not to scale",
+      "sha256": "aa21c08462e2c332ae1d580bc833f31b2965261a81fc88985a6460b20fe9e21f",
+      "limitations": [
+        "The loop reflects an illustrated unloaded configuration. Its depth, small contours, and lock internals are unresolved. The source shows the protection-equipped version and the drawing excludes the delivery system."
+      ],
+      "sources": [
+        {
+          "title": "Transcatheter Mitral Cerclage Ventriculoplasty: From Bench to Bedside",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9236160/",
+          "locator": "Methods, Transcatheter mitral cerclage ventriculoplasty device; Figure 2A–C",
+          "access": "public"
+        },
+        {
+          "title": "NHLBI early feasibility registry",
+          "url": "https://clinicaltrials.gov/study/NCT03929913",
+          "locator": "Study overview, device intervention",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "7628d0faf9c3a44a44e00fbb89e8cb6ff3c02b562ebf1afb88736aa845ec81c1",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-transmural-mitral-cerclage-orthographic.svg",
+          "sha256": "aa21c08462e2c332ae1d580bc833f31b2965261a81fc88985a6460b20fe9e21f",
+          "geometrySha256": "7628d0faf9c3a44a44e00fbb89e8cb6ff3c02b562ebf1afb88736aa845ec81c1"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-transmural-mitral-cerclage-front.svg",
+          "sha256": "e429452d251616951ca6b6a0e7630bfe8f3156c7a47f3bc4c94441447761cb4f",
+          "geometrySha256": "31d3908ea047d7a27738f53730f2f4d4f43d0e71e1569e235d029ae0eb5e9908"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-transmural-mitral-cerclage-top.svg",
+          "sha256": "e271f884a1848fe9d5c32893260d25c5f89ece8bef1dcb9150fcd1449010e002",
+          "geometrySha256": "a2caae6588d98e7534a39b2ae6f5d25cf0f23fe8692e866fcc96fb65e2e95ddb"
+        }
+      ]
+    },
+    {
       "entityId": "dev-tricares-topaz",
       "name": "TRiCares Topaz",
       "assetPath": "evidence/schematics/dev-tricares-topaz-orthographic.svg",
@@ -457,6 +973,94 @@
       "geometrySha256": "25a1e24dd212153036bcd1e1c682c35f8a82550f15bc80d1f420de4ce8f83ddb"
     },
     {
+      "entityId": "dev-vdyne-ttvr",
+      "name": "VDyne tricuspid valve",
+      "assetPath": "evidence/schematics/dev-vdyne-ttvr-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Expanded, covered implant shown by the sponsor",
+      "alt": "VDyne tricuspid valve — oblique concept illustration, not to scale",
+      "sha256": "7899cfb30554569daf4626a4e1dd25c8be4019b9bc34248a5e23ca96fab3ae81",
+      "limitations": [
+        "This view depicts the configuration shown in the sponsor photo. Covered-frame repeats are representative. Its relationship to earlier study hardware is unresolved."
+      ],
+      "sources": [
+        {
+          "title": "VDyne technical page and five-device photograph",
+          "url": "https://www.vdyne.com/technology",
+          "locator": "The VDyne Valve section, five-device fabric-covered product photo",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "2b8c79d78ad24995bc64d2cf3f56e9eb9e9c829348bf5876d02b71d270005e37",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-vdyne-ttvr-orthographic.svg",
+          "sha256": "7899cfb30554569daf4626a4e1dd25c8be4019b9bc34248a5e23ca96fab3ae81",
+          "geometrySha256": "2b8c79d78ad24995bc64d2cf3f56e9eb9e9c829348bf5876d02b71d270005e37"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-vdyne-ttvr-front.svg",
+          "sha256": "1273690f6c5abb6771e8c7f18f835e5458949fcac659f14f56800e9ea9a5e2c0",
+          "geometrySha256": "aa5a247a7703f7922b18e3a272f031367e396454c1079b9fcb4c2563cae1cf39"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-vdyne-ttvr-top.svg",
+          "sha256": "18da8caa77d1abc76098fa3d7ba1c08f48b9832e2260bf0ac14f97a7b4ef2c1d",
+          "geometrySha256": "c1943e9ebf3b25fd07ec96e96bb6e4a13d7c369e5419d88344b024ca117c8002"
+        }
+      ]
+    },
+    {
+      "entityId": "dev-venus-powerx",
+      "name": "Venus-PowerX",
+      "assetPath": "evidence/schematics/dev-venus-powerx-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Expanded implant with a conceptual frame envelope and adaptive skirt",
+      "alt": "Venus-PowerX — oblique concept illustration, not to scale",
+      "sha256": "095a29139e64b33f64b6edeaa05833e6d7c0ce96917acc24086519d9d4b42263",
+      "limitations": [
+        "Based on the exact PowerX render and issuer description. Crown and cell repetitions are illustrative. Leaflet topology and delivery locks are omitted."
+      ],
+      "sources": [
+        {
+          "title": "Venus Medtech PowerX product page",
+          "url": "https://www.venusmedtech.com/index.php/content-847",
+          "locator": "PowerX product model and product image 1706161868271881.png",
+          "access": "public"
+        },
+        {
+          "title": "Venus Medtech annual results",
+          "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033102789.pdf",
+          "locator": "PDF p. 19, PowerX frame opening and Seadapt skirt paragraphs",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "915c1489d4c8661a09bdebd087e93a16536177b06cf46783bbaeed36c76e0e2f",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-venus-powerx-orthographic.svg",
+          "sha256": "095a29139e64b33f64b6edeaa05833e6d7c0ce96917acc24086519d9d4b42263",
+          "geometrySha256": "915c1489d4c8661a09bdebd087e93a16536177b06cf46783bbaeed36c76e0e2f"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-venus-powerx-front.svg",
+          "sha256": "8244a8320422ab76c323db48f6ac2957bea3f168ef3036eada846a0d270185e4",
+          "geometrySha256": "00048a85fd374d087d26fa55b549e60f9e764ab255b4bdf9bbe437527555cdd3"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-venus-powerx-top.svg",
+          "sha256": "a1922a6644d6e13da261d8cfb28d2a21e1d8ddce979efa0ec7d3c23ec7faac76",
+          "geometrySha256": "34c4c89ae3a852db5faa940367135743b383080777df8a03f4f73e5e37e73f63"
+        }
+      ]
+    },
+    {
       "entityId": "dev-vesalius-tmvr",
       "name": "Vesalius pictured net/ring concept",
       "assetPath": "evidence/schematics/dev-vesalius-tmvr-orthographic.svg",
@@ -479,6 +1083,94 @@
         }
       ],
       "geometrySha256": "097a0ae1e3e1b19eb225a83702d51c24c63da9184b23019c09ab644e36ea8492"
+    },
+    {
+      "entityId": "dev-vitaflow",
+      "name": "VitaFlow — first generation",
+      "assetPath": "evidence/schematics/dev-vitaflow-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Expanded implant from the first-generation system",
+      "alt": "VitaFlow — first generation — oblique concept illustration, not to scale",
+      "sha256": "6cfcfd7eece635c36a44205a710d18d904f8441ffa25aa510c7f9d419082cf6e",
+      "limitations": [
+        "First-generation manufacturer reference. Cell repeat counts, attachment tabs and leaflet posture are illustrative. Delivery hardware omitted."
+      ],
+      "sources": [
+        {
+          "title": "MicroPort CardioFlow VitaFlow product page",
+          "url": "https://en.cardioflowmedtech.com/en/products/vitaflow",
+          "locator": "Aortic Valve section, product picture 169829129343025800.png and frame/cuff feature headings",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "49d7715af7ddd982e85537f41e00b809f2e5bad13c75488cdf290eac9ccf9952",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-vitaflow-orthographic.svg",
+          "sha256": "6cfcfd7eece635c36a44205a710d18d904f8441ffa25aa510c7f9d419082cf6e",
+          "geometrySha256": "49d7715af7ddd982e85537f41e00b809f2e5bad13c75488cdf290eac9ccf9952"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-vitaflow-front.svg",
+          "sha256": "31fa02f7c82e64d79e7f36338ab4980f616ea883d1811b29f929c39d7e99cdc9",
+          "geometrySha256": "2643a93a557cc68dd01e6e72b88ee82da7e2f7f9c66aa72d6265fc9a9d66e1ee"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-vitaflow-top.svg",
+          "sha256": "bde8ae423dcf24db462e1591d1cd2c354b935417a63e613532d2541063831604",
+          "geometrySha256": "6ae5dc84556ad3273b9c2fe5d6b75763c7223f61af25ec054a7a86ce7381cc7b"
+        }
+      ]
+    },
+    {
+      "entityId": "dev-vitaflow-liberty",
+      "name": "VitaFlow Liberty",
+      "assetPath": "evidence/schematics/dev-vitaflow-liberty-orthographic.svg",
+      "scope": "concept",
+      "configuration": "Expanded implant from the Liberty system",
+      "alt": "VitaFlow Liberty — oblique concept illustration, not to scale",
+      "sha256": "f01c6464f12546d97be08344727ee20e499cd8cbbb0ba5a23e6a10add3be1db0",
+      "limitations": [
+        "The manufacturer identifies the valve as a shared design. The separate retrievable delivery system and newer Liberty Flex hardware are outside this implant view."
+      ],
+      "sources": [
+        {
+          "title": "MicroPort VitaFlow Liberty brochure",
+          "url": "https://microport.com/assets/documents/VitaFlow-Liberty-Brochure.PDF",
+          "locator": "PDF p. 2, Hybrid Cell Density Frame and Extended Valve Durability images",
+          "access": "public"
+        },
+        {
+          "title": "MicroPort CardioFlow 2025 annual results",
+          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0402/2026033003758.pdf",
+          "locator": "VitaFlow Liberty subsection, shared prosthetic valve design",
+          "access": "public"
+        }
+      ],
+      "geometrySha256": "49d7715af7ddd982e85537f41e00b809f2e5bad13c75488cdf290eac9ccf9952",
+      "views": [
+        {
+          "view": "oblique",
+          "assetPath": "evidence/schematics/dev-vitaflow-liberty-orthographic.svg",
+          "sha256": "f01c6464f12546d97be08344727ee20e499cd8cbbb0ba5a23e6a10add3be1db0",
+          "geometrySha256": "49d7715af7ddd982e85537f41e00b809f2e5bad13c75488cdf290eac9ccf9952"
+        },
+        {
+          "view": "front",
+          "assetPath": "evidence/schematics/dev-vitaflow-liberty-front.svg",
+          "sha256": "93d4abeac258d9afd20311e295114e6fb676ab997fb1c68c01ee12e3e6d82af3",
+          "geometrySha256": "2643a93a557cc68dd01e6e72b88ee82da7e2f7f9c66aa72d6265fc9a9d66e1ee"
+        },
+        {
+          "view": "top",
+          "assetPath": "evidence/schematics/dev-vitaflow-liberty-top.svg",
+          "sha256": "11e8407f6a4d07fb85ed0ac9bc779ab5d11e41bf93c763d9c936e1a650c8e322",
+          "geometrySha256": "6ae5dc84556ad3273b9c2fe5d6b75763c7223f61af25ec054a7a86ce7381cc7b"
+        }
+      ]
     },
     {
       "entityId": "dev-wise-crt",

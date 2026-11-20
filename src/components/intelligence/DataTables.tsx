@@ -7,6 +7,7 @@ import EvidenceReferences from './EvidenceReferences'
 import { MediaSourceLinks } from './EvidenceMediaGallery'
 import { deviceIllustrationFor, type DeviceIllustration } from '../../data/device-illustrations'
 import ProductThumbnail from './ProductThumbnail'
+import DeviceSketchViews, { SketchSources } from './DeviceSketchViews'
 import { ClassVisualizationLink } from '../scenes/SceneEntry'
 
 /** One width scale for every Data table so columns line up down the page. */
@@ -133,6 +134,7 @@ function SpecSheet({ data, row, table, focus, onOpenAtlas }: { data: Intelligenc
     ...table.columns.flatMap((column, index) => row.cells[index].map(claim => ({ claim, columnId: column.id }))),
     ...row.extra.map(claim => ({ claim, columnId: '' })),
   ]
+  const illustration = deviceIllustrationFor(row.version.id)
   const approvalUrl = row.approval ? sourceUrl(data, row.approval.sourceRefs) : undefined
   return <div className="intel-spec-sheet">
     <div className="intel-spec-sheet-head">
@@ -140,6 +142,12 @@ function SpecSheet({ data, row, table, focus, onOpenAtlas }: { data: Intelligenc
       <button type="button" className="intel-link-button" onClick={() => onOpenAtlas(row.version.id)}>Profile →</button>
     </div>
     {row.approval && <p className="intel-spec-approval"><strong>{row.approval.identifier}</strong> · {formatEvidenceDate(row.approval.date)} · {row.approval.summary}{approvalUrl && <> <a href={approvalUrl} target="_blank" rel="noreferrer">{sourceFor(data, row.approval.sourceRefs)} ↗</a></>}</p>}
+    <DeviceSketchViews paths={illustration?.views} name={row.version.name} />
+    {illustration?.notes && <div className="intel-sketch-notes">
+      <p>{illustration.notes.configuration}</p>
+      <ul>{illustration.notes.limitations.map(limit => <li key={limit}>{limit}</li>)}</ul>
+      <SketchSources sources={illustration.notes.sources} />
+    </div>}
     <dl>{items.map(({ claim, columnId }) => {
       const url = sourceUrl(data, claim.sourceRefs)
       return <div key={claim.id} className={focus && focus === columnId ? 'is-focus' : undefined}>

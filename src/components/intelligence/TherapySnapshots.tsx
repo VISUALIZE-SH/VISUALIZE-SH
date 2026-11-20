@@ -2,6 +2,7 @@ import type { IntelligenceData } from '../../types/intelligence'
 import { therapySnapshots } from '../../data/therapy-snapshots'
 import { GroupedTable, WIDTH } from './DataTables'
 import EvidenceReferences from './EvidenceReferences'
+import DeviceSketchViews, { SketchSources } from './DeviceSketchViews'
 
 export default function TherapySnapshots({ data, rows }: {
   data: IntelligenceData
@@ -18,7 +19,11 @@ export default function TherapySnapshots({ data, rows }: {
         { id: 'configuration', label: 'Pictured configuration', width: WIDTH.wide, cell: ({ illustration }) => ({ content: illustration?.configuration ?? 'Illustration unavailable', gap: !illustration }) },
       ]}
       detail={({ therapy, illustration }) => <>
-        {illustration && <><ul>{illustration.limitations.map((limit, i) => <li key={i}>{limit}</li>)}</ul><ul>{illustration.sources.map((source, i) => <li key={i}><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a> · {source.locator}</li>)}</ul></>}
+        <DeviceSketchViews paths={illustration?.views} name={therapy.name} />
+        {illustration && <div className="intel-sketch-notes">
+          <ul>{illustration.limitations.map((limit, i) => <li key={i}>{limit}</li>)}</ul>
+          <SketchSources sources={illustration.sources} />
+        </div>}
         <EvidenceReferences data={data} entityId={therapy.id} name={therapy.name} />
         {therapy.links?.map(link => <p key={link.url}><a href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a></p>)}
       </>} />
