@@ -4,13 +4,14 @@
 SVG illustrations. The public registry carries source metadata, asset digests
 and substantive depiction limits. Review records are maintained privately.
 
-The 95 SVGs in `public/evidence/schematics/` are byte-for-byte copies from the final
-local schematic catalog. Their hashes, source metadata and illustration limits
-are retained in the registry. Ten are explicitly labeled concepts; three others
-retain their approximate scope. Approval of this artwork does not amend clinical
-claims, authorization, engineering accuracy or source-image reuse rights.
+The registry includes 103 illustrated exact versions. The additional eight
+version entries and sixteen therapy snapshots include oblique, front and top
+SVGs in `public/evidence/schematics/`. Their drawing fingerprints cover the
+geometry, layout and styling independently of publication labels. Readers can
+open the three views in the corresponding Data row. Each set carries the
+depicted configuration, documentary locators and substantive depiction limits.
 
-The nine held versions have no illustration. Data shows the two-circle question
+The 30 held versions have no illustration. Data shows the two-circle question
 mark placeholder for these and any future unmapped device version, without using
 a related generation or legacy source figure. A failed image load also uses that
 placeholder. Existing documentary figures remain available in the Figures view.
@@ -20,11 +21,12 @@ approved SVG hashes and visible schematic/concept/not-to-scale labels.
 
 Regenerate the small UI index after changing the registry with
 `node --import tsx scripts/sync-device-thumbnails.ts`. Tests enforce that the index
-matches the approved register; source metadata is not bundled into the UI.
+matches the authored register. Artwork detail views include reader-facing
+source locators.
 
 ## Therapy snapshots
 
-`therapy-schematics.json` retains 18 original therapy illustrations. These map to
+`therapy-schematics.json` retains 34 original therapy illustrations. These map to
 graph therapy IDs, which currently have no exact-version records. They appear in
 the Data Specs **Therapy snapshots** table, with the pictured configuration,
 limitations and source links. They never substitute for exact-version artwork or
@@ -32,13 +34,10 @@ clinical evidence. The table follows condition/search filters and is hidden when
 an exact version or historical date is selected; graph snapshots are undated and
 do not establish jurisdiction-specific authorization. Exports identify this scope.
 
-Only the SVG review-state captions changed for publication. Drawing paths are
-unchanged; both the original approved hash and published hash are retained. These
-are original line drawings, with no copied source pixels, traced paths or source
-figures. Artwork approval does not establish production fidelity, clinical-build
-equivalence or permission to redistribute the referenced source images. Source
-locators and depiction limits were carried from the reviewed local packet;
-publication did not perform new research or promote factual records.
+The registry records the published SVG hashes and source locators. These are
+original line drawings. The referenced source images are available from their
+respective publishers. Pictured details retain their stated configuration and
+scope.
 
 `therapy-thumbnail-index.json` contains the display metadata and source/limit text
 used in expandable snapshot rows. Every unillustrated or failed Data thumbnail,

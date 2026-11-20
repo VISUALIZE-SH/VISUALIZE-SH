@@ -30,15 +30,18 @@ test('drawing fingerprints exclude label copy while retaining geometry, layout, 
 })
 
 test('all graph-level illustrations retain their drawing integrity and exact identities', () => {
-  assert.equal(registry.illustrations.length, 18)
-  assert.equal(new Set(registry.illustrations.map(item => item.entityId)).size, 18)
+  assert.equal(registry.illustrations.length, 34)
+  assert.equal(new Set(registry.illustrations.map(item => item.entityId)).size, 34)
   // Illustration identity checks must survive later authored profile additions.
   const rows = therapySnapshots({ ...data, versions: [] }, nodes)
   for (const item of registry.illustrations) {
     assert.ok(rows.some(row => row.therapy.id === item.entityId), item.entityId)
     assert.equal(deviceIllustrationFor(item.entityId), undefined, 'graph concepts cannot become version artwork')
-    const { entityId, assetPath, alt, configuration, limitations, sources } = item
-    assert.deepEqual(therapyIllustrationFor(entityId), { entityId, assetPath, alt, configuration, limitations, sources })
+    const { entityId, assetPath, alt, configuration, limitations, sources, views } = item
+    assert.deepEqual(therapyIllustrationFor(entityId), {
+      entityId, assetPath, alt, configuration, limitations, sources,
+      ...(views && { views: Object.fromEntries(views.map(view => [view.view, view.assetPath])) }),
+    })
     const svg = readFileSync(new URL(`../public/${assetPath}`, import.meta.url), 'utf8')
     assert.equal(hash(svg), item.sha256)
     assert.equal(hash(drawingContent(svg)), item.geometrySha256, `${entityId}: SVG drawing integrity`)
