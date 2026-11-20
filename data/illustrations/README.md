@@ -43,3 +43,12 @@ scope.
 used in expandable snapshot rows. Every unillustrated or failed Data thumbnail,
 including drugs, digital tools, procedures and unresolved families, uses the same
 two-circle question mark. Existing documentary figures remain in Figures.
+
+
+## Atlas Profiles
+
+Schematic cards show one registered projection at a time. The additional
+`profileViews` are used in Profiles. Sources label the axial projection as Top,
+Distal, or Reference according to the original artwork. Therapy snapshots
+retain graph-level schematic identity, including when an exact-version profile
+exists separately.

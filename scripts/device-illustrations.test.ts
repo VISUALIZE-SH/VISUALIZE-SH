@@ -21,12 +21,17 @@ test('approved illustrations and explicit gaps cover the exact device-version in
 
 test('thumbnail SVGs match the published digests and visible illustration labels', () => {
   for (const item of registry.illustrations) {
-    const { versionId, assetPath, alt, views, configuration, limitations, sources } = item
-    const expected = views ? {
+    const { versionId, assetPath, alt, views, profileViews, configuration, limitations, sources } = item
+    const expected = {
       assetPath, alt,
-      views: Object.fromEntries(views.map(view => [view.view, view.assetPath])),
-      notes: { configuration, limitations, sources: sources.map(({ title, url, locator }) => ({ title, url, locator })) },
-    } : { assetPath, alt }
+      ...(profileViews && { profileViews: Object.fromEntries(profileViews.map(view => [view.view, view.assetPath])) }),
+      ...(views && { views: Object.fromEntries(views.map(view => [view.view, view.assetPath])) }),
+      notes: {
+        ...(configuration && { configuration }),
+        limitations: configuration ? limitations : ['Illustrative and not to scale. Proportions and small features are representative.'],
+        sources: sources.map(({ title, url, locator }) => ({ title, url, locator })),
+      },
+    }
     assert.deepEqual(deviceIllustrationFor(versionId), expected, 'the UI index must match the approved register')
     const bytes = readFileSync(new URL(`../public/${item.assetPath}`, import.meta.url))
     assert.equal(createHash('sha256').update(bytes).digest('hex'), item.sha256, item.versionId)
@@ -66,4 +71,33 @@ test('the 24 sketch sets retain all 72 original drawing geometries and contain o
     }
   }
   assert.equal(paths.size, 72)
+})
+
+test('profile artwork has three distinct assets for all 137 registered identities', () => {
+  const records = [...registry.illustrations, ...therapyRegistry.illustrations]
+  assert.equal(records.length, 137)
+  const allPaths = new Set<string>()
+  const alternatePaths = new Set<string>()
+  for (const item of records) {
+    const views = item.views ?? [{ assetPath: item.assetPath }, ...(item.profileViews ?? [])]
+    assert.equal(views.length, 3, item.assetPath)
+    for (const view of views) {
+      assert.ok(!allPaths.has(view.assetPath), view.assetPath)
+      allPaths.add(view.assetPath)
+    }
+    for (const view of item.profileViews ?? []) {
+      const svg = readFileSync(new URL(`../public/${view.assetPath}`, import.meta.url), 'utf8')
+      const title = /<title\b[^>]*>([^<]*)<\/title>/.exec(svg)?.[1].toLowerCase()
+      assert.ok(title?.includes(view.view), view.assetPath)
+      assert.match(svg, /NOT TO SCALE/)
+      assert.doesNotMatch(svg, /<(?:script|foreignObject|image)\b|signoff pending|approval pending|SOURCES\.md/i)
+      const drawing = svg.replace(/<(title|desc|text)\b[^>]*>[\s\S]*?<\/\1>/g,
+        element => element.replace(/>[^<]*</g, '><'))
+      assert.equal(createHash('sha256').update(svg).digest('hex'), view.sha256, view.assetPath)
+      assert.equal(createHash('sha256').update(drawing).digest('hex'), view.geometrySha256, view.assetPath)
+      alternatePaths.add(view.assetPath)
+    }
+  }
+  assert.equal(allPaths.size, 411)
+  assert.equal(alternatePaths.size, 226)
 })

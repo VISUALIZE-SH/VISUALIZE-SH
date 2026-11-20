@@ -18,6 +18,7 @@ import NewsletterSignup from './components/NewsletterSignup'
 import EditorialPrompt from './components/EditorialPrompt'
 import LocalArticlePage from './components/LocalArticlePage'
 import ProfileCatalog from './components/intelligence/ProfileCatalog'
+import { therapyIllustrationFor } from './data/device-illustrations'
 import AtlasGraphBoundary from './components/AtlasGraphBoundary'
 import { localArticleContentPath } from './editorial/local-articles'
 import './workspace.css'
@@ -164,7 +165,9 @@ export default function App() {
       dataHref: `?${workspaceQuery({ ...workspace, ...context, mode: 'data', dataView: 'browse' })}`,
     }
   })
-  const landscapeProfileHref = intelligence && selectedNode?.entity.type === 'therapy' && !graphVersions.length
+  const hasTherapySketch = selectedNode?.entity.type === 'therapy' && selectedNode.entity.therapyType === 'device' &&
+    Boolean(therapyIllustrationFor(selectedNode.id))
+  const landscapeProfileHref = intelligence && selectedNode?.entity.type === 'therapy' && (!graphVersions.length || hasTherapySketch)
     ? `?${workspaceQuery({ ...workspace, mode: 'atlas', atlasView: 'profiles', atlasTopic: '', versionId: '', nodeId: '', isolateNode: false, searchQuery: '', conditionId: selectedNode.entity.treats.includes(workspace.conditionId) ? workspace.conditionId : '' })}#profile-${selectedNode.id}`
     : undefined
   const materialSuggestions = useMemo(() => [...new Set(nodes.flatMap(node => node.entity.type === 'therapy' ? (node.entity.materials ?? []).map(material => material.name) : []))].sort(), [nodes])

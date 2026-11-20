@@ -12,9 +12,18 @@ export interface IllustrationSource {
   url: string
   locator: string
 }
-interface VersionIllustration extends DeviceIllustration {
+type ProfileViewPaths = Partial<Record<'side' | 'top' | 'distal' | 'reference', string>>
+export interface ProfileIllustration extends DeviceIllustration {
   views?: SketchViewPaths
-  notes?: { configuration: string; limitations: string[]; sources: IllustrationSource[] }
+  profileViews?: ProfileViewPaths
+}
+export interface IllustrationNotes {
+  configuration?: string
+  limitations: string[]
+  sources: IllustrationSource[]
+}
+interface VersionIllustration extends ProfileIllustration {
+  notes?: IllustrationNotes
 }
 
 const illustrations = new Map<string, VersionIllustration>(
