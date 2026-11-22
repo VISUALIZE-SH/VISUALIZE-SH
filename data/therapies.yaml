@@ -7450,3 +7450,421 @@
     notes: >-
       HKEX results of 2026-03-30 and issuer pages retrieved 2026-11-10 and 2026-11-18; issuer wording; PubMed abstract
       only.
+
+- id: dev-angel-wings
+  type: therapy
+  therapyType: device
+  subtype: Septal occluder
+  name: Angel Wings septal occluder
+  treats:
+    - cond-asd
+    - cond-pfo
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    Opposed fabric-covered square nitinol frames span the septum. In the original feasibility study, incomplete disk
+    deployment and device explantation were reported.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://pubmed.ncbi.nlm.nih.gov/9930056/
+- id: dev-asdos
+  type: therapy
+  therapyType: device
+  subtype: Septal occluder
+  name: ASDOS septal occluder
+  treats:
+    - cond-asd
+    - cond-pfo
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    Two screw-joined, polyurethane-covered nitinol umbrellas were placed across the septum. Follow-up of the refined
+    design documented frame fracture and late tamponade.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1016/s0002-9149(98)00650-x
+- id: dev-chore
+  type: therapy
+  therapyType: device
+  subtype: Mitral chordal repair
+  name: ChoRe chordal repair prototype
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    A prototype for attaching and adjusting artificial mitral chords was evaluated in dissected bovine hearts. The
+    functional prototype was built at twice the intended scale.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6573001/fullTextXML
+- id: dev-circular-septal-stapler
+  type: therapy
+  therapyType: device
+  subtype: Surgical septal patch closure
+  name: Circular septal patch stapler
+  treats:
+    - cond-asd
+  regulatoryStatus: investigational
+  materials: []
+  description: Investigators adapted a surgical circular stapler for beating-heart atrial septal defect closure in pigs.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1016/j.athoracsur.2014.10.023
+- id: dev-icoapsys
+  type: therapy
+  therapyType: device
+  subtype: Ventricular reshaping
+  name: iCoapsys ventricular reshaping system
+  company: co-myocor
+  treats:
+    - cond-mr
+    - cond-hf
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    Percutaneously placed epicardial pads and a transventricular chord were evaluated in sheep. The registered VIVID
+    study’s actual enrollment remains unknown.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1002/ccd.21551
+      - https://clinicaltrials.gov/study/NCT00512005
+- id: dev-monarc
+  type: therapy
+  therapyType: device
+  subtype: Coronary-sinus annuloplasty
+  name: Edwards MONARC
+  company: co-edwards
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    MONARC used a shortening bridge between coronary venous anchors. EVOLUTION phase I reported coronary compression and
+    two myocardial infarctions with the second-generation implant.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1016/j.jcin.2010.08.027
+- id: dev-myosplint
+  type: therapy
+  therapyType: device
+  subtype: Ventricular reshaping
+  name: Myosplint
+  company: co-myocor
+  treats:
+    - cond-hf
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    Transventricular tension members reshaped the left ventricle in small feasibility studies. The early seven-patient
+    report documents intraoperative repositioning.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1016/s1053-2498(01)00773-2
+- id: dev-ps3
+  type: therapy
+  therapyType: device
+  subtype: Septal sinus annuloplasty
+  name: Ample Medical PS3
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    Two temporary implants tested percutaneous septal-lateral shortening before planned mitral surgery. Separate
+    healthy-sheep work examined longer implantation.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1002/ccd.21070
+      - https://doi.org/10.1002/ccd.21818
+- id: dev-quantumcor
+  type: therapy
+  therapyType: device
+  subtype: Radiofrequency mitral annuloplasty
+  name: QuantumCor radiofrequency annuloplasty
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    A flexible multielectrode probe heated the mitral annulus in an open-heart sheep study. Four treated animals reached
+    the planned 180-day endpoint.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1002/ccd.21868
+- id: dev-viacor-ptma
+  type: therapy
+  therapyType: device
+  subtype: Coronary-sinus annuloplasty
+  name: Viacor PTMA
+  treats:
+    - cond-mr
+  regulatoryStatus: unknown
+  materials: []
+  lifecycleStatus: halted
+  lifecycleDetail: Development stopped after two device-related deaths in PTOLEMY-2.
+  description: >-
+    The second-generation permanent PTMA used rods in a coronary venous catheter. The trial report attributes two deaths
+    to the device and states that development stopped.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1016/j.ahj.2013.01.010
+- id: dev-double-biodisk
+  type: therapy
+  therapyType: device
+  subtype: Septal occluder
+  name: Double BioDisk
+  treats:
+    - cond-asd
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    The experimental double-disk implant paired nitinol rings with porcine small-intestinal submucosa. Two deliberately
+    dislodged devices were recaptured in acute sheep tests.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC3472939/
+      - https://pubmed.ncbi.nlm.nih.gov/23077444/
+- id: dev-dyana
+  type: therapy
+  therapyType: device
+  subtype: Dynamic mitral annuloplasty
+  name: MiCardia DYANA
+  company: co-micardia
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    The complete nitinol ring could shorten or lengthen after initial repair, depending on the variant. Only the
+    shortening variant was activated in the 35-patient study.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1016/j.jtcvs.2011.12.062
+- id: dev-encorsq
+  type: therapy
+  therapyType: device
+  subtype: Adjustable mitral annuloplasty
+  name: MiCardia EnCorSQ
+  company: co-micardia
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    The D-shaped ring was designed for later adjustment using an implanted lead. A clinical report attributed three
+    failed adjustments to a wire defect.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4678969/fullTextXML
+      - https://pubmed.ncbi.nlm.nih.gov/25694471/
+- id: dev-bace
+  type: therapy
+  therapyType: device
+  subtype: External mitral annuloplasty
+  name: BACE external basal annuloplasty
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    An external polyester mesh wrap was tailored to the atrioventricular groove in an early operative series that
+    included concomitant cardiac procedures.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1016/j.hlc.2009.05.704
+- id: dev-mitra-spacer
+  type: therapy
+  therapyType: device
+  subtype: Mitral coaptation spacer
+  name: Mitra-Spacer
+  company: co-cardiosolutions
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    The transapical mitral balloon spacer changed volume during the cardiac cycle. Its filling volume was adjusted in
+    the published first-human case.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://pubmed.ncbi.nlm.nih.gov/28262622/
+      - https://pubmed.ncbi.nlm.nih.gov/28506938/
+- id: dev-cierra-pfx
+  type: therapy
+  therapyType: device
+  subtype: Implant-free PFO closure
+  name: Cierra PFx
+  treats:
+    - cond-pfo
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    The catheter used suction and radiofrequency energy to close the PFO without a permanent implant. The published
+    feasibility series reports four catheter variants and a separate closure endpoint.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1002/ccd.21809
+- id: dev-plcl-bao
+  type: therapy
+  therapyType: device
+  subtype: Bioabsorbable septal occluder
+  name: PLCL/PGA bioabsorbable septal occluder
+  treats:
+    - cond-asd
+    - cond-pfo
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    A sheep study evaluated two generations of a polymer disk occluder. Shape recovery limited the first version. Three
+    of the six sheep receiving the revised version reached one year.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1007/s00246-021-02809-5
+- id: dev-mitral-leaflet-plication-clip
+  type: therapy
+  therapyType: device
+  subtype: Mitral leaflet repair
+  name: Posterior mitral leaflet plication clip
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    A closed nitinol clip gathered a prolapsed posterior leaflet segment under direct vision. Chord entanglement and
+    oblique clip placement left residual regurgitation in two pigs.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1016/j.jtcvs.2013.09.044
+- id: dev-reflective-septal-patch-catheter
+  type: therapy
+  therapyType: device
+  subtype: Catheter-delivered septal patch
+  name: Light-reflecting septal patch catheter
+  treats:
+    - cond-vsd
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    Balloon support and a reflective light-delivery surface attached an adhesive patch in acute beating-heart septal
+    defect experiments.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - >-
+        https://biodesign.seas.harvard.edu/sites/g/files/omnuum11441/files/biodesignlab/files/2015_roche_science_transl_med_-_a_light-reflecting_balloon_catheter_for_atraumatic_tissue_defect_repair.pdf
+- id: dev-solysafe
+  type: therapy
+  therapyType: device
+  subtype: Septal occluder
+  name: Solysafe Septal Occluder
+  company: co-swissimplant
+  treats:
+    - cond-asd
+    - cond-pfo
+  regulatoryStatus: unknown
+  materials: []
+  description: >-
+    Follow-up of the wire-framed septal occluder revealed fractures, including fractures missed by routine chest
+    radiography or transthoracic echo in separate cohorts.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1016/j.ijcard.2009.03.086
+      - https://doi.org/10.1002/ccd.23399
+      - https://doi.org/10.1016/j.ijcard.2011.07.044
+      - https://www.bfarm.de/SharedDocs/Kundeninfos/DE/11/2010/2800-10_Kundeninfo-a_de.pdf?__blob=publicationFile
+- id: dev-mobius-neochord-prototype
+  type: therapy
+  therapyType: device
+  subtype: Transapical mitral chordal repair
+  name: Mobius suction-and-suture neochord prototype
+  company: co-edwards
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    The pig study repurposed a Mobius therapy catheter and separate apical guide to capture mitral leaflet tissue and
+    place artificial chords.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1016/j.ejcts.2009.01.017
+- id: dev-v-chordal
+  type: therapy
+  therapyType: device
+  subtype: Adjustable mitral chordal repair
+  name: V-Chordal adjustable neochordae
+  company: co-valtech-cardio
+  treats:
+    - cond-mr
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    The adjustable concept was evaluated in pigs. A separately registered Edwards feasibility study named V-Chordal and
+    terminated after five actual enrollees.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://pubmed.ncbi.nlm.nih.gov/22437459/
+      - https://clinicaltrials.gov/study/NCT01415947
+- id: dev-cardiofit
+  type: therapy
+  therapyType: device
+  subtype: Implantable vagus nerve stimulation
+  name: BioControl CardioFit
+  company: co-biocontrol-medical
+  treats:
+    - cond-hfref
+  regulatoryStatus: investigational
+  materials: []
+  description: >-
+    The INOVATE-HF system used a cervical stimulation cuff and ventricular sensing lead. An independent monitoring board
+    recommended stopping the randomized trial for futility.
+  curation:
+    status: draft
+    lastUpdated: "2026-11-22"
+    sources:
+      - https://doi.org/10.1016/j.ahj.2012.03.021
+      - https://doi.org/10.1016/j.jacc.2016.03.525
