@@ -1,22 +1,414 @@
 {
   "meta": {
-    "generatedAt": "2026-11-18T22:24:56.504Z",
-    "lastUpdated": "2026-11-18",
+    "generatedAt": "2026-11-22T08:10:06.550Z",
+    "lastUpdated": "2026-11-22",
     "counts": {
       "condition": 23,
-      "device": 171,
+      "device": 194,
       "pharmaceutical": 23,
       "procedure": 15,
       "digital": 19,
-      "company": 156,
+      "company": 162,
       "trial": 199
     },
-    "draftCount": 114,
-    "total": 606,
-    "newsCount": 282,
-    "latestNewsDate": "2026-11-13"
+    "draftCount": 143,
+    "total": 635,
+    "newsCount": 300,
+    "latestNewsDate": "2026-11-20"
   },
   "news": [
+    {
+      "id": "news-2026-11-20-surgery-after-failed-mitral-teer",
+      "publishedAt": "2026-11-20",
+      "title": "Two-center series reports surgery after failed mitral TEER",
+      "summary": "In a two-center Swiss series of 35 patients who underwent surgery after failed mitral transcatheter edge-to-edge repair, four received surgical repair. One patient died in hospital, 10 developed pneumonia and six required temporary renal replacement therapy. Median follow-up was four years, and only one patient remained at risk at eight years, making the longest survival estimate exploratory.",
+      "sourceName": "Frontiers in Cardiovascular Medicine",
+      "sourceUrl": "https://doi.org/10.3389/fcvm.2026.1980699",
+      "topicTags": [
+        "mitral-TEER",
+        "mitral-surgery"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "proc-mitral-teer",
+        "proc-mv-surgery"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-20-vision-hf-ai-ecg-screening-registration",
+      "publishedAt": "2026-11-20",
+      "title": "VISION-HF registers a cluster-randomized AI-ECG screening study",
+      "summary": "VISION-HF will test AI-enabled ECG screening in Brazilian primary care. The trial randomizes health centers and estimates enrollment of 5,400 adults aged 40 or older without known left ventricular systolic dysfunction. The primary measure is newly detected dysfunction, defined as echocardiographic ejection fraction below 50% within six months.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07950137",
+      "additionalSources": [
+        {
+          "label": "ClinicalTrials.gov API record",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT07950137"
+        }
+      ],
+      "topicTags": [
+        "heart-failure",
+        "AI-ECG",
+        "trial-registration"
+      ],
+      "relevantNodeIds": [
+        "cond-hf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-19-cms-tavr-coverage-implementation",
+      "publishedAt": "2026-11-19",
+      "title": "CMS issues Medicare TAVR coverage implementation instructions",
+      "summary": "CMS issued contractor instructions for processing TAVR claims under NCD 20.32, with implementation on April 5, 2027, for eligible services from September 10, 2026. The instructions distinguish symptomatic severe aortic stenosis from asymptomatic severe disease, which requires a CMS-approved Coverage with Evidence Development study. Device, heart-team and facility requirements also apply.",
+      "sourceName": "Centers for Medicare & Medicaid Services",
+      "sourceUrl": "https://www.cms.gov/files/document/r14047ncd.pdf",
+      "additionalSources": [
+        {
+          "label": "CMS companion claims transmittal R14047CP",
+          "url": "https://www.cms.gov/files/document/r14047cp.pdf"
+        }
+      ],
+      "topicTags": [
+        "TAVR",
+        "Medicare-coverage"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "proc-tavi"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-19-natrix-bnp-regn5381-results-posted",
+      "publishedAt": "2026-11-19",
+      "title": "NATRIX-BNP posts registry results for investigational REGN5381 in HFrEF",
+      "summary": "NATRIX-BNP posted phase 2 REGN5381 results for adults with heart failure and left ventricular ejection fraction of 20%–49%. The registry reports 89 enrolled and termination by sponsor decision. It gives geometric-mean NT-proBNP fold change at day 8 by regimen and background sacubitril/valsartan use, with no inferential comparison in the primary outcome entry.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT06237309?tab=results",
+      "additionalSources": [
+        {
+          "label": "ClinicalTrials.gov API record",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT06237309"
+        }
+      ],
+      "topicTags": [
+        "HFrEF",
+        "trial-results"
+      ],
+      "relevantNodeIds": [
+        "cond-hfref"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-18-enavogliflozin-aortic-stenosis-trial-registration",
+      "publishedAt": "2026-11-18",
+      "title": "SAVE-AS posts a randomized enavogliflozin trial in asymptomatic aortic stenosis",
+      "summary": "The SAVE-AS phase 4 trial first posted on ClinicalTrials.gov. It compares enavogliflozin with placebo in South Korean adults with asymptomatic moderate or severe aortic stenosis and left ventricular ejection fraction of at least 50%. The registry lists an estimated 1,182 participants and a primary composite of all-cause death, valve replacement or heart-failure hospitalization.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07944066",
+      "additionalSources": [
+        {
+          "label": "ClinicalTrials.gov API record",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT07944066"
+        }
+      ],
+      "topicTags": [
+        "aortic-stenosis",
+        "trial-registration"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-18-nobleheart-hcm-bhb-1893-registration",
+      "publishedAt": "2026-11-18",
+      "title": "NOBLEHEART-HCM registers phase 3 BHB-1893 study in nonobstructive HCM",
+      "summary": "Braveheart Bio registered a randomized phase 3 study of investigational BHB-1893 versus placebo in symptomatic nonobstructive HCM. The trial estimates 600 participants and lists change in KCCQ clinical summary score and peak oxygen uptake at week 36 as primary outcomes. The registry listed the study as not yet recruiting when checked.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07946107",
+      "additionalSources": [
+        {
+          "label": "ClinicalTrials.gov API record",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT07946107"
+        }
+      ],
+      "topicTags": [
+        "HCM",
+        "trial-registration"
+      ],
+      "relevantNodeIds": [
+        "cond-hcm"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-18-peridevice-leak-45-day-laao-stroke",
+      "publishedAt": "2026-11-18",
+      "title": "LAAO cohort links residual leaks of 3 mm or more to later ischemic stroke",
+      "summary": "In a single-center cohort of 743 patients with 45-day transesophageal echo after LAAO, 51 had a residual leak of at least 3 mm. Larger leaks were associated with higher ischemic stroke hazard (adjusted HR 2.70, 95% CI 1.53–4.77) in a cohort that included Amulet, WATCHMAN 2.5 and WATCHMAN FLX. The retrospective study did not test whether treatment based on leak size improves outcomes.",
+      "sourceName": "JAMA Cardiology",
+      "sourceUrl": "https://doi.org/10.1001/jamacardio.2026.5088",
+      "additionalSources": [
+        {
+          "label": "PubMed 43050228 electronic publication record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43050228/"
+        }
+      ],
+      "topicTags": [
+        "LAAC",
+        "peridevice-leak"
+      ],
+      "relevantNodeIds": [
+        "proc-laac",
+        "cond-af",
+        "dev-amulet",
+        "dev-watchman-original",
+        "dev-watchman-flx"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-18-rural-hf-telehealth-gdmt-registration",
+      "publishedAt": "2026-11-18",
+      "title": "RURAL-HF registers remote monitoring and telehealth medication-titration trial",
+      "summary": "RURAL-HF will enroll an estimated 600 rural adults recently discharged after a heart-failure admission. It compares home monitoring alone with monitoring plus provider-to-provider support for medication titration and recommended NT-proBNP testing. Its 180-day hierarchical endpoint includes mortality, transplant or ventricular assist device, heart-failure hospitalizations and health status.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07946679",
+      "additionalSources": [
+        {
+          "label": "ClinicalTrials.gov API record",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT07946679"
+        }
+      ],
+      "topicTags": [
+        "heart-failure",
+        "remote-monitoring",
+        "trial-registration"
+      ],
+      "relevantNodeIds": [
+        "cond-hf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-17-4dct-postinfarction-septal-rupture-closure",
+      "publishedAt": "2026-11-17",
+      "title": "Case report uses intraprocedural 4D CT to guide postinfarction septal rupture closure",
+      "summary": "In one postinfarction ventricular septal rupture case, intraprocedural four-dimensional CT showed inadequate coverage by the left ventricular disc of an Amplatzer Post-Infarct Muscular VSD Occluder when echo and fluoroscopy could not fully characterize positioning. The team exchanged the device for a larger one. The report describes imaging feasibility in a hybrid CT and angiography suite.",
+      "sourceName": "JACC: Case Reports",
+      "sourceUrl": "https://doi.org/10.1016/j.jaccas.2026.111239",
+      "additionalSources": [
+        {
+          "label": "PubMed 43043331 electronic publication record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43043331/"
+        }
+      ],
+      "topicTags": [
+        "ventricular-septal-rupture",
+        "procedural-imaging"
+      ],
+      "relevantNodeIds": [
+        "cond-vsd"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-17-bicuspid-aortic-valve-heart-failure-tavi-savr",
+      "publishedAt": "2026-11-17",
+      "title": "Matched bicuspid valve and HF cohort compares transcatheter and surgical replacement",
+      "summary": "A TriNetX study matched 383 adults per group with bicuspid aortic valve and heart failure. The two-year mortality hazard ratio for TAVI versus surgical replacement was 1.57 (95% CI 0.80–3.07). The observational estimate is imprecise and does not establish equivalent safety or survival.",
+      "sourceName": "International Journal of Cardiology",
+      "sourceUrl": "https://doi.org/10.1016/j.ijcard.2026.135081",
+      "additionalSources": [
+        {
+          "label": "PubMed 43044978 electronic publication record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43044978/"
+        }
+      ],
+      "topicTags": [
+        "TAVR",
+        "surgical-aortic-valve",
+        "heart-failure"
+      ],
+      "relevantNodeIds": [
+        "proc-tavi",
+        "proc-savr",
+        "cond-hf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-17-capstan-compass-first-us-procedure",
+      "publishedAt": "2026-11-17",
+      "title": "The Christ Hospital reports first U.S. Capstan Compass robotic TMVR procedure",
+      "summary": "The Christ Hospital reported that Capstan’s first U.S. robot-assisted transcatheter mitral valve replacement with the investigational Compass system took place November 9 in Cincinnati. The announcement describes a multi-axis catheter operated by a handheld controller. The U.S. early feasibility study evaluates the system in patients unsuitable for surgical repair or transcatheter edge-to-edge repair.",
+      "sourceName": "The Christ Hospital Health Network",
+      "sourceUrl": "https://www.thechristhospital.com/news-and-events/press-releases/first-capstan-procedure-in-united-states/",
+      "additionalSources": [
+        {
+          "label": "U.S. early feasibility study NCT07917208",
+          "url": "https://clinicaltrials.gov/study/NCT07917208"
+        }
+      ],
+      "topicTags": [
+        "TMVR",
+        "robotics",
+        "early-feasibility"
+      ],
+      "relevantNodeIds": [
+        "dev-capstan-compass-tmvr",
+        "co-capstan-medical",
+        "trial-capstan-tmvr-efs",
+        "proc-tmvr",
+        "cond-mr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-17-late-pulmonary-valve-replacement-tetralogy-fallot",
+      "publishedAt": "2026-11-17",
+      "title": "Repaired tetralogy of Fallot cohort examines late surgical pulmonary valve replacement",
+      "summary": "A single-center study of late surgical pulmonary valve replacement included 48 adults with repaired tetralogy of Fallot or pulmonary atresia with a ventricular septal defect. In a 17-patient adjusted analysis, higher preoperative right ventricular end-diastolic pressure was associated with a composite of supraventricular arrhythmia, cardiovascular rehospitalization or all-cause death (OR 1.49, 95% CI 1.01–3.40). The small analysis did not validate a threshold for surgery.",
+      "sourceName": "Pediatric Cardiology",
+      "sourceUrl": "https://doi.org/10.1007/s00246-026-04526-3",
+      "additionalSources": [
+        {
+          "label": "PubMed 43043455 electronic publication record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43043455/"
+        }
+      ],
+      "topicTags": [
+        "pulmonary-valve",
+        "congenital"
+      ],
+      "relevantNodeIds": [
+        "cond-pv"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-17-solstice-hcm-mavacamten-registration",
+      "publishedAt": "2026-11-17",
+      "title": "SOLSTICE-HCM registers phase 3 mavacamten study in nonobstructive HCM",
+      "summary": "ClinicalTrials.gov first posted SOLSTICE-HCM, a randomized phase 3 study of mavacamten in adults with symptomatic nonobstructive HCM. The study lists an estimated 500 participants and primary measures of peak oxygen uptake and KCCQ clinical summary score at week 48. The registry listed the trial as not yet recruiting when checked.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07940777",
+      "additionalSources": [
+        {
+          "label": "ClinicalTrials.gov API record",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT07940777"
+        }
+      ],
+      "topicTags": [
+        "HCM",
+        "trial-registration"
+      ],
+      "relevantNodeIds": [
+        "cond-hcm",
+        "rx-mavacamten"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-17-watchman-flx-4d-ice-workflow",
+      "publishedAt": "2026-11-17",
+      "title": "Single-operator study reports experience with 4D intracardiac echo for WATCHMAN FLX",
+      "summary": "A single operator reported 94% WATCHMAN FLX implantation success across 81 cases guided by 4D intracardiac echo, compared with 100% across 35 earlier transesophageal echo-guided cases. Two unsuccessful 4D-guided cases were completed using transesophageal echo after the imaging catheter could not cross the septum. The small retrospective comparison cannot establish equivalence.",
+      "sourceName": "Expert Review of Cardiovascular Therapy",
+      "sourceUrl": "https://doi.org/10.1080/14779072.2026.2763891",
+      "additionalSources": [
+        {
+          "label": "PubMed 43034997 electronic publication record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43034997/"
+        }
+      ],
+      "topicTags": [
+        "LAAC",
+        "procedural-imaging"
+      ],
+      "relevantNodeIds": [
+        "proc-laac",
+        "cond-af",
+        "dev-watchman-flx"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-16-beating-heart-myectomy-nonobstructive-hcm",
+      "publishedAt": "2026-11-16",
+      "title": "Transapical beating-heart myectomy reported in nonobstructive HCM",
+      "summary": "In a prospective single-center study, 85 of 97 patients with drug-refractory HCM without left ventricular outflow tract obstruction met all four success criteria 6–12 months after transapical beating-heart myectomy. The criteria combined symptoms, health status, stroke volume and diastolic function. One patient died after septal perforation, and the study had no control group.",
+      "sourceName": "Circulation",
+      "sourceUrl": "https://doi.org/10.1161/CIRCULATIONAHA.126.082486",
+      "additionalSources": [
+        {
+          "label": "PubMed 43038431 electronic publication record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43038431/"
+        }
+      ],
+      "topicTags": [
+        "HCM",
+        "septal-myectomy"
+      ],
+      "relevantNodeIds": [
+        "cond-hcm",
+        "proc-septal-myectomy"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-16-fda-myqorzo-aficamten-efficacy-label-supplement",
+      "publishedAt": "2026-11-16",
+      "title": "FDA posts revised U.S. aficamten label after efficacy supplement approval",
+      "summary": "The FDA’s Drugs@FDA record lists November 13 as the approval action date for efficacy supplement S-002 to the U.S. Myqorzo (aficamten) application and November 16 as the revised label document date. The application entry identifies the regulatory action and the revised document. The scope of the revised prescribing information remains to be checked directly.",
+      "sourceName": "U.S. Food and Drug Administration",
+      "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA219083&limit=1",
+      "additionalSources": [
+        {
+          "label": "FDA revised labeling document, NDA 219083 S-002",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219083s002lbl.pdf"
+        }
+      ],
+      "topicTags": [
+        "HCM",
+        "FDA-labeling"
+      ],
+      "relevantNodeIds": [
+        "cond-hcm",
+        "rx-aficamten"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-16-laac-fluoroscopy-lambre-watchman",
+      "publishedAt": "2026-11-16",
+      "title": "Single-center LAAC study compares fluoroscopy-only and echo-guided implantation",
+      "summary": "A retrospective study of 759 LAmbre or Watchman procedures compared fluoroscopy alone with fluoroscopy plus transesophageal echocardiography. Implantation succeeded in 99.8% versus 100%, and mean procedure time was 40.9 versus 78.9 minutes. The study selected patients who completed follow-up imaging at one experienced center and did not establish equivalence or identify all Watchman generations.",
+      "sourceName": "JACC: Advances",
+      "sourceUrl": "https://doi.org/10.1016/j.jacadv.2026.103493",
+      "additionalSources": [
+        {
+          "label": "PubMed 43038802 electronic publication record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43038802/"
+        }
+      ],
+      "topicTags": [
+        "LAAC",
+        "procedural-imaging"
+      ],
+      "relevantNodeIds": [
+        "proc-laac",
+        "cond-af",
+        "dev-lambre"
+      ],
+      "reviewStatus": "reviewed"
+    },
     {
       "id": "news-2026-11-13-coapt-pas-site-volume",
       "publishedAt": "2026-11-13",
@@ -36,6 +428,75 @@
       "relevantNodeIds": [
         "dev-mitraclip",
         "cond-mr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-13-mavacamten-midventricular-obstructive-hcm",
+      "publishedAt": "2026-11-13",
+      "title": "Mavacamten series reports lower gradients in midventricular obstructive HCM",
+      "summary": "Two South Korean centers reported that the median provoked intracavitary gradient fell from 73.0 to 19.7 mm Hg over a median 238 days in 50 patients with midventricular obstructive HCM treated with mavacamten. Twelve also had outflow tract obstruction. This was an uncontrolled analysis of 50 of 60 patients initially identified, and one early death was among the exclusions.",
+      "sourceName": "Heart",
+      "sourceUrl": "https://doi.org/10.1136/heartjnl-2026-328466",
+      "additionalSources": [
+        {
+          "label": "PubMed 43025992 electronic publication record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43025992/"
+        }
+      ],
+      "topicTags": [
+        "HCM",
+        "cardiac-myosin-inhibitors"
+      ],
+      "relevantNodeIds": [
+        "cond-hcm",
+        "rx-mavacamten"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-13-seismocardiography-aortic-stenosis",
+      "publishedAt": "2026-11-13",
+      "title": "Chest-wall vibration sensor tested for severe aortic stenosis triage",
+      "summary": "A single-center study used one-minute chest-wall vibration recordings to distinguish 100 patients referred for TAVR with symptomatic severe aortic stenosis from 121 cardiac controls. Its aortic-twist amplitude marker had an AUC of 0.94 (95% CI 0.92–0.97). The threshold was derived and tested in the same cohort, so performance still needs external validation across disease severities and in screening settings.",
+      "sourceName": "JACC: Advances",
+      "sourceUrl": "https://doi.org/10.1016/j.jacadv.2026.103502",
+      "additionalSources": [
+        {
+          "label": "PubMed 43025045 electronic publication record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43025045/"
+        }
+      ],
+      "topicTags": [
+        "aortic-stenosis",
+        "digital-diagnostics"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "proc-tavi"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-13-single-port-robotic-mitral-repair",
+      "publishedAt": "2026-11-13",
+      "title": "Single-port robotic mitral repair reported with a 30-day follow-up",
+      "summary": "A case report describes robotic mitral repair for severe regurgitation through one instrument cannula that avoided rib spreading, with a separate accessory port. The authors report discharge on day 3 and no residual mitral regurgitation at 30 days. Comparative recovery, safety and durability remain unresolved.",
+      "sourceName": "JACC: Case Reports",
+      "sourceUrl": "https://doi.org/10.1016/j.jaccas.2026.111218",
+      "additionalSources": [
+        {
+          "label": "PubMed 43033178 electronic publication record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43033178/"
+        }
+      ],
+      "topicTags": [
+        "mitral-repair",
+        "robotics"
+      ],
+      "relevantNodeIds": [
+        "cond-mr",
+        "proc-mv-surgery"
       ],
       "reviewStatus": "reviewed"
     },
@@ -6047,45 +6508,6 @@
         "dev-edwards-sapien-xt-caval",
         "trial-tricaval"
       ]
-    },
-    {
-      "id": "news-2012-05-25-peerless-hf-stopped",
-      "publishedAt": "2012-05-25",
-      "title": "PEERLESS-HF stopped after interim futility analysis",
-      "summary": "The randomized HeartNet study was stopped after interim analysis showed the primary six-month efficacy endpoint was unlikely to be met; the trial registry also lists termination. This is a halted trial signal, not evidence that all epicardial restraint therapies were withdrawn.",
-      "sourceName": "Journal of Cardiac Failure",
-      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/22633302/",
-      "reviewStatus": "reviewed",
-      "lifecycleStatus": "halted",
-      "topicTags": [
-        "heart failure",
-        "epicardial restraint",
-        "halted trial"
-      ],
-      "relevantNodeIds": [
-        "cond-hfref",
-        "dev-heartnet",
-        "trial-peerless-hf"
-      ]
-    },
-    {
-      "id": "news-2008-04-21-fda-approves-heartmate-ii",
-      "publishedAt": "2008-04-21",
-      "title": "FDA grants original PMA to HeartMate II LVAS for bridge to transplantation",
-      "summary": "FDA granted original PMA P060040 for the HeartMate II LVAS as bridge-to-transplantation support in advanced refractory left ventricular failure. Later label supplements expanded indications; the 2008 decision is the initial authorization record.",
-      "sourceName": "U.S. Food and Drug Administration",
-      "sourceUrl": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P060040",
-      "reviewStatus": "reviewed",
-      "topicTags": [
-        "durable MCS",
-        "LVAD",
-        "FDA PMA"
-      ],
-      "relevantNodeIds": [
-        "cond-hfref",
-        "dev-heartmate-ii",
-        "trial-momentum-3"
-      ]
     }
   ],
   "elements": {
@@ -6132,7 +6554,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 8,
+          "degree": 13,
           "pulse": 0,
           "entity": {
             "id": "cond-pfo",
@@ -6165,7 +6587,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 5,
+          "degree": 11,
           "pulse": 0,
           "entity": {
             "id": "cond-asd",
@@ -6196,7 +6618,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 1,
+          "degree": 2,
           "pulse": 0,
           "entity": {
             "id": "cond-vsd",
@@ -6329,7 +6751,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 54,
+          "degree": 55,
           "pulse": 5,
           "entity": {
             "id": "cond-hfref",
@@ -6499,7 +6921,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 71,
+          "degree": 84,
           "pulse": 8,
           "entity": {
             "id": "cond-mr",
@@ -6738,7 +7160,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 58,
+          "degree": 60,
           "pulse": 0,
           "entity": {
             "id": "cond-hf",
@@ -18351,6 +18773,792 @@
       },
       {
         "data": {
+          "id": "dev-angel-wings",
+          "label": "Angel Wings septal occluder",
+          "group": "device",
+          "category": "Septal occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-angel-wings",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Septal occluder",
+            "name": "Angel Wings septal occluder",
+            "treats": [
+              "cond-asd",
+              "cond-pfo"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "Opposed fabric-covered square nitinol frames span the septum. In the original feasibility study, incomplete disk deployment and device explantation were reported.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/9930056/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-asdos",
+          "label": "ASDOS septal occluder",
+          "group": "device",
+          "category": "Septal occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-asdos",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Septal occluder",
+            "name": "ASDOS septal occluder",
+            "treats": [
+              "cond-asd",
+              "cond-pfo"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "Two screw-joined, polyurethane-covered nitinol umbrellas were placed across the septum. Follow-up of the refined design documented frame fracture and late tamponade.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/s0002-9149(98)00650-x"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-chore",
+          "label": "ChoRe chordal repair prototype",
+          "group": "device",
+          "category": "Mitral chordal repair",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-chore",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Mitral chordal repair",
+            "name": "ChoRe chordal repair prototype",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "A prototype for attaching and adjusting artificial mitral chords was evaluated in dissected bovine hearts. The functional prototype was built at twice the intended scale.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6573001/fullTextXML"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-circular-septal-stapler",
+          "label": "Circular septal patch stapler",
+          "group": "device",
+          "category": "Surgical septal patch closure",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-circular-septal-stapler",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Surgical septal patch closure",
+            "name": "Circular septal patch stapler",
+            "treats": [
+              "cond-asd"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "Investigators adapted a surgical circular stapler for beating-heart atrial septal defect closure in pigs.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/j.athoracsur.2014.10.023"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-icoapsys",
+          "label": "iCoapsys ventricular reshaping system",
+          "group": "device",
+          "category": "Ventricular reshaping",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-icoapsys",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Ventricular reshaping",
+            "name": "iCoapsys ventricular reshaping system",
+            "company": "co-myocor",
+            "treats": [
+              "cond-mr",
+              "cond-hf"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "Percutaneously placed epicardial pads and a transventricular chord were evaluated in sheep. The registered VIVID study’s actual enrollment remains unknown.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1002/ccd.21551",
+                "https://clinicaltrials.gov/study/NCT00512005"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-monarc",
+          "label": "Edwards MONARC",
+          "group": "device",
+          "category": "Coronary-sinus annuloplasty",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-monarc",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Coronary-sinus annuloplasty",
+            "name": "Edwards MONARC",
+            "company": "co-edwards",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "MONARC used a shortening bridge between coronary venous anchors. EVOLUTION phase I reported coronary compression and two myocardial infarctions with the second-generation implant.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/j.jcin.2010.08.027"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-myosplint",
+          "label": "Myosplint",
+          "group": "device",
+          "category": "Ventricular reshaping",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-myosplint",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Ventricular reshaping",
+            "name": "Myosplint",
+            "company": "co-myocor",
+            "treats": [
+              "cond-hf"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "Transventricular tension members reshaped the left ventricle in small feasibility studies. The early seven-patient report documents intraoperative repositioning.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/s1053-2498(01)00773-2"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-ps3",
+          "label": "Ample Medical PS3",
+          "group": "device",
+          "category": "Septal sinus annuloplasty",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-ps3",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Septal sinus annuloplasty",
+            "name": "Ample Medical PS3",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "Two temporary implants tested percutaneous septal-lateral shortening before planned mitral surgery. Separate healthy-sheep work examined longer implantation.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1002/ccd.21070",
+                "https://doi.org/10.1002/ccd.21818"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-quantumcor",
+          "label": "QuantumCor radiofrequency annuloplasty",
+          "group": "device",
+          "category": "Radiofrequency mitral annuloplasty",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-quantumcor",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Radiofrequency mitral annuloplasty",
+            "name": "QuantumCor radiofrequency annuloplasty",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "A flexible multielectrode probe heated the mitral annulus in an open-heart sheep study. Four treated animals reached the planned 180-day endpoint.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1002/ccd.21868"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-viacor-ptma",
+          "label": "Viacor PTMA",
+          "group": "device",
+          "category": "Coronary-sinus annuloplasty",
+          "isDraft": true,
+          "isHalted": true,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-viacor-ptma",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Coronary-sinus annuloplasty",
+            "name": "Viacor PTMA",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "unknown",
+            "materials": [],
+            "lifecycleStatus": "halted",
+            "lifecycleDetail": "Development stopped after two device-related deaths in PTOLEMY-2.",
+            "description": "The second-generation permanent PTMA used rods in a coronary venous catheter. The trial report attributes two deaths to the device and states that development stopped.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/j.ahj.2013.01.010"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-double-biodisk",
+          "label": "Double BioDisk",
+          "group": "device",
+          "category": "Septal occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-double-biodisk",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Septal occluder",
+            "name": "Double BioDisk",
+            "treats": [
+              "cond-asd"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "The experimental double-disk implant paired nitinol rings with porcine small-intestinal submucosa. Two deliberately dislodged devices were recaptured in acute sheep tests.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC3472939/",
+                "https://pubmed.ncbi.nlm.nih.gov/23077444/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-dyana",
+          "label": "MiCardia DYANA",
+          "group": "device",
+          "category": "Dynamic mitral annuloplasty",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-dyana",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Dynamic mitral annuloplasty",
+            "name": "MiCardia DYANA",
+            "company": "co-micardia",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "The complete nitinol ring could shorten or lengthen after initial repair, depending on the variant. Only the shortening variant was activated in the 35-patient study.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/j.jtcvs.2011.12.062"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-encorsq",
+          "label": "MiCardia EnCorSQ",
+          "group": "device",
+          "category": "Adjustable mitral annuloplasty",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-encorsq",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Adjustable mitral annuloplasty",
+            "name": "MiCardia EnCorSQ",
+            "company": "co-micardia",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "The D-shaped ring was designed for later adjustment using an implanted lead. A clinical report attributed three failed adjustments to a wire defect.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4678969/fullTextXML",
+                "https://pubmed.ncbi.nlm.nih.gov/25694471/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-bace",
+          "label": "BACE external basal annuloplasty",
+          "group": "device",
+          "category": "External mitral annuloplasty",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-bace",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "External mitral annuloplasty",
+            "name": "BACE external basal annuloplasty",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "An external polyester mesh wrap was tailored to the atrioventricular groove in an early operative series that included concomitant cardiac procedures.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/j.hlc.2009.05.704"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitra-spacer",
+          "label": "Mitra-Spacer",
+          "group": "device",
+          "category": "Mitral coaptation spacer",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-mitra-spacer",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Mitral coaptation spacer",
+            "name": "Mitra-Spacer",
+            "company": "co-cardiosolutions",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "The transapical mitral balloon spacer changed volume during the cardiac cycle. Its filling volume was adjusted in the published first-human case.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/28262622/",
+                "https://pubmed.ncbi.nlm.nih.gov/28506938/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cierra-pfx",
+          "label": "Cierra PFx",
+          "group": "device",
+          "category": "Implant-free PFO closure",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-cierra-pfx",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Implant-free PFO closure",
+            "name": "Cierra PFx",
+            "treats": [
+              "cond-pfo"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "The catheter used suction and radiofrequency energy to close the PFO without a permanent implant. The published feasibility series reports four catheter variants and a separate closure endpoint.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1002/ccd.21809"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-plcl-bao",
+          "label": "PLCL/PGA bioabsorbable septal occluder",
+          "group": "device",
+          "category": "Bioabsorbable septal occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-plcl-bao",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Bioabsorbable septal occluder",
+            "name": "PLCL/PGA bioabsorbable septal occluder",
+            "treats": [
+              "cond-asd",
+              "cond-pfo"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "A sheep study evaluated two generations of a polymer disk occluder. Shape recovery limited the first version. Three of the six sheep receiving the revised version reached one year.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1007/s00246-021-02809-5"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitral-leaflet-plication-clip",
+          "label": "Posterior mitral leaflet plication clip",
+          "group": "device",
+          "category": "Mitral leaflet repair",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-mitral-leaflet-plication-clip",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Mitral leaflet repair",
+            "name": "Posterior mitral leaflet plication clip",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "A closed nitinol clip gathered a prolapsed posterior leaflet segment under direct vision. Chord entanglement and oblique clip placement left residual regurgitation in two pigs.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/j.jtcvs.2013.09.044"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-reflective-septal-patch-catheter",
+          "label": "Light-reflecting septal patch catheter",
+          "group": "device",
+          "category": "Catheter-delivered septal patch",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-reflective-septal-patch-catheter",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Catheter-delivered septal patch",
+            "name": "Light-reflecting septal patch catheter",
+            "treats": [
+              "cond-vsd"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "Balloon support and a reflective light-delivery surface attached an adhesive patch in acute beating-heart septal defect experiments.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://biodesign.seas.harvard.edu/sites/g/files/omnuum11441/files/biodesignlab/files/2015_roche_science_transl_med_-_a_light-reflecting_balloon_catheter_for_atraumatic_tissue_defect_repair.pdf"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-solysafe",
+          "label": "Solysafe Septal Occluder",
+          "group": "device",
+          "category": "Septal occluder",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-solysafe",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Septal occluder",
+            "name": "Solysafe Septal Occluder",
+            "company": "co-swissimplant",
+            "treats": [
+              "cond-asd",
+              "cond-pfo"
+            ],
+            "regulatoryStatus": "unknown",
+            "materials": [],
+            "description": "Follow-up of the wire-framed septal occluder revealed fractures, including fractures missed by routine chest radiography or transthoracic echo in separate cohorts.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/j.ijcard.2009.03.086",
+                "https://doi.org/10.1002/ccd.23399",
+                "https://doi.org/10.1016/j.ijcard.2011.07.044",
+                "https://www.bfarm.de/SharedDocs/Kundeninfos/DE/11/2010/2800-10_Kundeninfo-a_de.pdf?__blob=publicationFile"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mobius-neochord-prototype",
+          "label": "Mobius suction-and-suture neochord prototype",
+          "group": "device",
+          "category": "Transapical mitral chordal repair",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-mobius-neochord-prototype",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Transapical mitral chordal repair",
+            "name": "Mobius suction-and-suture neochord prototype",
+            "company": "co-edwards",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "The pig study repurposed a Mobius therapy catheter and separate apical guide to capture mitral leaflet tissue and place artificial chords.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/j.ejcts.2009.01.017"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-v-chordal",
+          "label": "V-Chordal adjustable neochordae",
+          "group": "device",
+          "category": "Adjustable mitral chordal repair",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-v-chordal",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Adjustable mitral chordal repair",
+            "name": "V-Chordal adjustable neochordae",
+            "company": "co-valtech-cardio",
+            "treats": [
+              "cond-mr"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "The adjustable concept was evaluated in pigs. A separately registered Edwards feasibility study named V-Chordal and terminated after five actual enrollees.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/22437459/",
+                "https://clinicaltrials.gov/study/NCT01415947"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardiofit",
+          "label": "BioControl CardioFit",
+          "group": "device",
+          "category": "Implantable vagus nerve stimulation",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-cardiofit",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Implantable vagus nerve stimulation",
+            "name": "BioControl CardioFit",
+            "company": "co-biocontrol-medical",
+            "treats": [
+              "cond-hfref"
+            ],
+            "regulatoryStatus": "investigational",
+            "materials": [],
+            "description": "The INOVATE-HF system used a cervical stimulation cuff and ventricular sensing lead. An independent monitoring board recommended stopping the randomized trial for futility.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/j.ahj.2012.03.021",
+                "https://doi.org/10.1016/j.jacc.2016.03.525"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-mirus",
           "label": "MiRus LLC",
           "group": "company",
@@ -18605,7 +19813,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 15,
+          "degree": 17,
           "pulse": 7,
           "entity": {
             "id": "co-edwards",
@@ -22937,6 +24145,157 @@
               "notes": "Home — CardioStory Inc; published not_yet_reviewed (undated page); retrieved 2026-11-15; public; issuer disclosure. Locators: Non-INVASIVE Cardiac FILLING PRESSURE MEASUREMENT and Monitoring heading; Why CardioStory, first paragraph. Sponsor-described intended application only; exact configuration, independent validation and regulatory status remain not_yet_reviewed. No efficacy, safety, clinical-stage or commercial-availability conclusion is established."
             },
             "website": "https://www.cardiostory.com/"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-cardiosolutions",
+          "label": "Cardiosolutions",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-cardiosolutions",
+            "type": "company",
+            "name": "Cardiosolutions",
+            "description": "The original investigator report identifies Cardiosolutions with the Mitra-Spacer mitral repair device.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/28262622/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-micardia",
+          "label": "MiCardia Corp.",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "co-micardia",
+            "type": "company",
+            "name": "MiCardia Corp.",
+            "description": "The original investigator report identifies MiCardia Corp. with the DYANA mitral repair device.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/j.jtcvs.2011.12.062"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-myocor",
+          "label": "Myocor, Inc.",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "co-myocor",
+            "type": "company",
+            "name": "Myocor, Inc.",
+            "description": "The dog feasibility report identifies the tested ventricular shape-change device as Myocor Myosplint. The VIVID registry names Myocor as lead sponsor and iCoapsys as the intervention.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/11374766/",
+                "https://clinicaltrials.gov/study/NCT00512005"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-swissimplant",
+          "label": "Swissimplant AG",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-swissimplant",
+            "type": "company",
+            "name": "Swissimplant AG",
+            "description": "Swissimplant AG identified Solysafe Septal Occluders as its product in a field safety letter covering five types.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://www.bfarm.de/SharedDocs/Kundeninfos/DE/11/2010/2800-10_Kundeninfo-a_de.pdf?__blob=publicationFile"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-valtech-cardio",
+          "label": "Valtech Cardio Ltd.",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-valtech-cardio",
+            "type": "company",
+            "name": "Valtech Cardio Ltd.",
+            "description": "The original investigator report identifies Valtech Cardio Ltd. with the V-Chordal mitral repair device.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://pubmed.ncbi.nlm.nih.gov/22437459/"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-biocontrol-medical",
+          "label": "BioControl Medical",
+          "group": "company",
+          "isDraft": true,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-biocontrol-medical",
+            "type": "company",
+            "name": "BioControl Medical",
+            "description": "The investigator report names BioControl Medical (B.C.M.) Ltd. as the INOVATE-HF sponsor and assigns it responsibility for trial execution and monitoring.",
+            "curation": {
+              "status": "draft",
+              "lastUpdated": "2026-11-22",
+              "sources": [
+                "https://doi.org/10.1016/j.jacc.2016.03.525"
+              ]
+            }
           }
         }
       },
@@ -36622,6 +37981,310 @@
           "id": "dev-vitaflow__treats__cond-as",
           "source": "dev-vitaflow",
           "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-angel-wings__treats__cond-asd",
+          "source": "dev-angel-wings",
+          "target": "cond-asd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-angel-wings__treats__cond-pfo",
+          "source": "dev-angel-wings",
+          "target": "cond-pfo",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-asdos__treats__cond-asd",
+          "source": "dev-asdos",
+          "target": "cond-asd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-asdos__treats__cond-pfo",
+          "source": "dev-asdos",
+          "target": "cond-pfo",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-chore__treats__cond-mr",
+          "source": "dev-chore",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-circular-septal-stapler__treats__cond-asd",
+          "source": "dev-circular-septal-stapler",
+          "target": "cond-asd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-icoapsys__made_by__co-myocor",
+          "source": "dev-icoapsys",
+          "target": "co-myocor",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-icoapsys__treats__cond-mr",
+          "source": "dev-icoapsys",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-icoapsys__treats__cond-hf",
+          "source": "dev-icoapsys",
+          "target": "cond-hf",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-monarc__made_by__co-edwards",
+          "source": "dev-monarc",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-monarc__treats__cond-mr",
+          "source": "dev-monarc",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-myosplint__made_by__co-myocor",
+          "source": "dev-myosplint",
+          "target": "co-myocor",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-myosplint__treats__cond-hf",
+          "source": "dev-myosplint",
+          "target": "cond-hf",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-ps3__treats__cond-mr",
+          "source": "dev-ps3",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-quantumcor__treats__cond-mr",
+          "source": "dev-quantumcor",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-viacor-ptma__treats__cond-mr",
+          "source": "dev-viacor-ptma",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-double-biodisk__treats__cond-asd",
+          "source": "dev-double-biodisk",
+          "target": "cond-asd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-dyana__made_by__co-micardia",
+          "source": "dev-dyana",
+          "target": "co-micardia",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-dyana__treats__cond-mr",
+          "source": "dev-dyana",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-encorsq__made_by__co-micardia",
+          "source": "dev-encorsq",
+          "target": "co-micardia",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-encorsq__treats__cond-mr",
+          "source": "dev-encorsq",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-bace__treats__cond-mr",
+          "source": "dev-bace",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitra-spacer__made_by__co-cardiosolutions",
+          "source": "dev-mitra-spacer",
+          "target": "co-cardiosolutions",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitra-spacer__treats__cond-mr",
+          "source": "dev-mitra-spacer",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cierra-pfx__treats__cond-pfo",
+          "source": "dev-cierra-pfx",
+          "target": "cond-pfo",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-plcl-bao__treats__cond-asd",
+          "source": "dev-plcl-bao",
+          "target": "cond-asd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-plcl-bao__treats__cond-pfo",
+          "source": "dev-plcl-bao",
+          "target": "cond-pfo",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitral-leaflet-plication-clip__treats__cond-mr",
+          "source": "dev-mitral-leaflet-plication-clip",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-reflective-septal-patch-catheter__treats__cond-vsd",
+          "source": "dev-reflective-septal-patch-catheter",
+          "target": "cond-vsd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-solysafe__made_by__co-swissimplant",
+          "source": "dev-solysafe",
+          "target": "co-swissimplant",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-solysafe__treats__cond-asd",
+          "source": "dev-solysafe",
+          "target": "cond-asd",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-solysafe__treats__cond-pfo",
+          "source": "dev-solysafe",
+          "target": "cond-pfo",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mobius-neochord-prototype__made_by__co-edwards",
+          "source": "dev-mobius-neochord-prototype",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mobius-neochord-prototype__treats__cond-mr",
+          "source": "dev-mobius-neochord-prototype",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-v-chordal__made_by__co-valtech-cardio",
+          "source": "dev-v-chordal",
+          "target": "co-valtech-cardio",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-v-chordal__treats__cond-mr",
+          "source": "dev-v-chordal",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardiofit__made_by__co-biocontrol-medical",
+          "source": "dev-cardiofit",
+          "target": "co-biocontrol-medical",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardiofit__treats__cond-hfref",
+          "source": "dev-cardiofit",
+          "target": "cond-hfref",
           "relationship": "treats"
         }
       },
