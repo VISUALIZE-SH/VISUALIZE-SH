@@ -5,6 +5,105 @@ coverage:
   title: Evidence pilot
   description: Source-linked records with per-entry review states and study-specific limits. Not a complete label, IFU, or safety inventory.
 sources:
+  - id: src-portico-flexnav-eu-registry
+    title: >-
+      Assessment of the Abbott FlexNav™ Delivery System for Portico Transcatheter Aortic Valve Implantation in High and
+      Extreme Risk Patients With Symptomatic Severe Aortic Stenosis
+    url: https://clinicaltrials.gov/study/NCT03724812
+    kind: registry
+    publisher: ClinicalTrials.gov
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: NCT03724812
+    publishedAt:
+      value: "2018-10-30"
+      precision: day
+  - id: src-portico-confidence-registry
+    title: CONtrolled Delivery For ImproveD outcomEs With cliNiCal Evidence
+    url: https://clinicaltrials.gov/study/NCT03752866
+    kind: registry
+    publisher: ClinicalTrials.gov
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: NCT03752866
+    publishedAt:
+      value: "2018-11-26"
+      precision: day
+  - id: src-portico-portico-one-registry
+    title: International Long-term Follow-up Study of Patients Implanted With a Portico™ Valve
+    url: https://clinicaltrials.gov/study/NCT01802788
+    kind: registry
+    publisher: ClinicalTrials.gov
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: NCT01802788
+  - id: src-portico-transfemoral-registry
+    title: >-
+      Assessment Of The St. Jude Medical Portico™ Transcatheter Aortic Valve Implant (TAVI) And The SJM TAVI Transfemoral
+      Delivery System (Portico TF EU)
+    url: https://clinicaltrials.gov/study/NCT01493284
+    kind: registry
+    publisher: ClinicalTrials.gov
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: NCT01493284
+  - id: src-portico-alt-registry
+    title: Assessment of the St Jude Medical Portico Resheathable Aortic Valve System-Alternative Access
+    url: https://clinicaltrials.gov/study/NCT03056573
+    kind: registry
+    publisher: ClinicalTrials.gov
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: NCT03056573
+    publishedAt:
+      value: "2017-02-17"
+      precision: day
+  - id: src-portico-viv-retrospective-registry
+    title: Retrospective Assessment of the Portico Transcatheter Aortic Valve for Valve-in-Valve Use
+    url: https://clinicaltrials.gov/study/NCT05002088
+    kind: registry
+    publisher: ClinicalTrials.gov
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: NCT05002088
+    publishedAt:
+      value: "2021-08-12"
+      precision: day
+  - id: src-portico-23mm-follow-up-registry
+    title: Long Term Follow-up of the 23mm Portico™ Aortic Valve Implant and the SJM Transfemoral Delivery System
+    url: https://clinicaltrials.gov/study/NCT01497418
+    kind: registry
+    publisher: ClinicalTrials.gov
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: NCT01497418
+  - id: src-portico-navitor-india-registry
+    title: Portico and Navitor India Clinical Trial
+    url: https://clinicaltrials.gov/study/NCT05171712
+    kind: registry
+    publisher: ClinicalTrials.gov
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: NCT05171712
+    publishedAt:
+      value: "2021-12-29"
+      precision: day
+  - id: src-portico-pas002
+    title: FDA P190023/PAS002 — Portico registry-based real-world surveillance
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6706&t_id=675209
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: P190023/PAS002
+  - id: src-portico-pas001
+    title: FDA P190023/PAS001 — continued follow-up of the PORTICO IDE cohorts
+    url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6705&t_id=675209
+    kind: regulatory
+    publisher: FDA
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: P190023/PAS001
   - id: src-sapien-original
     title: SAPIEN 3 original PMA decision
     url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P140031
@@ -215,6 +314,7 @@ families:
     entityIds:
       - dev-sapien-3
       - dev-sapien-xt
+      - dev-sapien-original
     conditionIds:
       - cond-as
     description: >-
@@ -1395,6 +1495,418 @@ indications:
     anatomy: Aortic root and valve
     restrictions: The clinician remains responsible for treatment decisions and device-IFU compliance.
 trials:
+  - id: trial-portico-ide
+    name: PORTICO IDE
+    nctId: NCT02000115
+    familyIds:
+      - family-portico
+    versionIds:
+      - ver-portico
+    versionMapping: exact
+    design: >-
+      U.S. and Australian core randomized comparison of the original Portico valve with first-generation delivery versus
+      commercially available TAVR. The registration also includes a separate FlexNav delivery cohort and a nested
+      valve-in-valve registry.
+    population: Symptomatic severe native aortic stenosis at high or extreme surgical risk in the randomized cohort.
+    sourceRefs:
+      - sourceId: src-portico-ide-registry
+        locator: Protocol, Design and Arms and Interventions modules
+      - sourceId: src-portico-p190023-ssed
+        locator: PDF pp. 15–16, section X and Table 11
+      - sourceId: src-portico-pas001
+        locator: Requirement Number, Clinical Trial Number(s) and Sample Size
+    reviewStatus: reviewed
+    entityId: trial-portico-ide
+  - id: trial-portico-flexnav-eu
+    entityId: trial-portico-flexnav-eu
+    nctId: NCT03724812
+    name: Portico FlexNav EU CE Mark Study
+    familyIds:
+      - family-portico
+    versionIds:
+      - ver-portico
+    versionMapping: exact
+    design: Prospective single-arm study
+    population: >-
+      European supplemental study of the original Portico valve with the FlexNav delivery system; 19 patients contributed
+      to the FDA PMA analysis cohort. The complete EU registry sample and the pooled FDA samples are distinct.
+    sourceRefs:
+      - sourceId: src-portico-flexnav-eu-registry
+        locator: Identification, Status, Design, Arms and Interventions, Contacts and Locations, and Outcomes modules
+    reviewStatus: reviewed
+  - id: trial-portico-confidence
+    entityId: trial-portico-confidence
+    nctId: NCT03752866
+    name: PORTICO CONFIDENCE registry
+    familyIds:
+      - family-portico
+    versionIds:
+      - ver-portico
+    versionMapping: exact
+    design: Prospective post-market registry
+    population: >-
+      Original Portico with Portico or FlexNav delivery in nine non-U.S. countries. The two delivery configurations are
+      separately named by the registry.
+    sourceRefs:
+      - sourceId: src-portico-confidence-registry
+        locator: Identification, Status, Design, Arms and Interventions, Contacts and Locations, and Outcomes modules
+    reviewStatus: reviewed
+  - id: trial-portico-portico-one
+    entityId: trial-portico-portico-one
+    nctId: NCT01802788
+    name: PORTICO-1 registry
+    familyIds:
+      - family-portico
+    versionIds:
+      - ver-portico
+    versionMapping: exact
+    design: Prospective observational registry
+    population: Original Portico in thirteen non-U.S. countries, with planned follow-up through five years.
+    sourceRefs:
+      - sourceId: src-portico-portico-one-registry
+        locator: Identification, Status, Design, Arms and Interventions, Contacts and Locations, and Outcomes modules
+    reviewStatus: reviewed
+  - id: trial-portico-transfemoral
+    entityId: trial-portico-transfemoral
+    nctId: NCT01493284
+    name: Portico transfemoral implantation study
+    familyIds:
+      - family-portico
+    versionIds:
+      - ver-portico
+    versionMapping: exact
+    design: Interventional single-arm study
+    population: Original Portico with transfemoral delivery at sites in Europe and Australia.
+    sourceRefs:
+      - sourceId: src-portico-transfemoral-registry
+        locator: Identification, Status, Design, Arms and Interventions, Contacts and Locations, and Outcomes modules
+    reviewStatus: reviewed
+  - id: trial-portico-alt
+    entityId: trial-portico-alt
+    nctId: NCT03056573
+    name: Portico alternative access study
+    familyIds:
+      - family-portico
+    versionIds:
+      - ver-portico
+    versionMapping: exact
+    design: Interventional study
+    population: Original-Portico alternative-access study with transaortic and subclavian/axillary groups at European sites.
+    sourceRefs:
+      - sourceId: src-portico-alt-registry
+        locator: Identification, Status, Design, Arms and Interventions, Contacts and Locations, and Outcomes modules
+    reviewStatus: reviewed
+  - id: trial-portico-viv-retrospective
+    entityId: trial-portico-viv-retrospective
+    nctId: NCT05002088
+    name: Portico valve-in-valve registry
+    familyIds:
+      - family-portico
+    versionIds:
+      - ver-portico
+    versionMapping: exact
+    design: Retrospective observational registry
+    population: >-
+      Australia and Europe. The population had failed surgical aortic bioprostheses. The registry is separate from the
+      PORTICO IDE nested valve-in-valve cohort.
+    sourceRefs:
+      - sourceId: src-portico-viv-retrospective-registry
+        locator: Identification, Status, Design, Arms and Interventions, Contacts and Locations, and Outcomes modules
+    reviewStatus: reviewed
+  - id: trial-portico-23mm-follow-up
+    entityId: trial-portico-23mm-follow-up
+    nctId: NCT01497418
+    name: Portico 23 mm long-term follow-up
+    familyIds:
+      - family-portico
+    versionIds:
+      - ver-portico
+    versionMapping: exact
+    design: Observational follow-up
+    population: >-
+      Canadian registry record for long-term follow-up of the 23 mm Portico valve. Two total actual participants are
+      listed.
+    sourceRefs:
+      - sourceId: src-portico-23mm-follow-up-registry
+        locator: Identification, Status, Design, Arms and Interventions, Contacts and Locations, and Outcomes modules
+    reviewStatus: reviewed
+  - id: trial-portico-navitor-india
+    entityId: trial-portico-navitor-india
+    nctId: NCT05171712
+    name: Portico and Navitor India study
+    familyIds:
+      - family-portico
+      - family-navitor
+    versionIds:
+      - ver-portico
+      - ver-navitor
+    versionMapping: mixed
+    design: Interventional study with two reported valve groups
+    population: India. Posted Participant Flow identifies Portico and Navitor separately. The whole-study enrollment covers both.
+    sourceRefs:
+      - sourceId: src-portico-navitor-india-registry
+        locator: >-
+          Identification, Status, Design, Arms and Interventions, Contacts and Locations, and Outcomes modules; Results,
+          Participant Flow groups
+    reviewStatus: reviewed
+  - id: trial-portico-pas-tvt
+    entityId: trial-portico-pas-tvt
+    name: Portico U.S. TVT surveillance
+    population: >-
+      U.S. FDA-mandated descriptive surveillance of original Portico implants attempted with FlexNav at STS/ACC TVT
+      Registry sites. FDA cross-references NCT02000115; this surveillance requirement has no separately verified NCT
+      identity.
+    design: Descriptive, single-cohort registry-based surveillance.
+    familyIds:
+      - family-portico
+    versionIds:
+      - ver-portico
+    versionMapping: exact
+    sourceRefs:
+      - sourceId: src-portico-pas002
+        locator: Requirement Number, Study Status, Study Design, Data Source, Sample Size, and Key Study Endpoints
+    reviewStatus: reviewed
+  - id: evi-history-nct02163850
+    name: Direct Flow Medical US pivotal TAVR study
+    nctId: NCT02163850
+    entityId: trial-history-nct02163850
+    design: interventional study
+    versionMapping: unclear
+    versionIds: []
+    familyIds:
+      - family-direct-flow-aortic-valve
+      - family-evolut
+      - family-sapien
+    population: Aortic Valve Stenosis
+    sourceRefs:
+      - sourceId: src-decade-nct02163850
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct01845285
+    name: Direct Flow Medical DISCOVER registry
+    nctId: NCT01845285
+    entityId: trial-history-nct01845285
+    design: observational study
+    versionMapping: exact
+    versionIds:
+      - ver-direct-flow-aortic-valve
+    population: Aortic Valve Stenosis
+    sourceRefs:
+      - sourceId: src-decade-nct01845285
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct01614652
+    name: PARACHUTE IV randomized trial
+    nctId: NCT01614652
+    entityId: trial-history-nct01614652
+    design: interventional study
+    versionMapping: exact
+    versionIds:
+      - ver-cardiokinetix-parachute
+    population: Congestive Heart Failure, Left Ventricular (LV) Systolic Dysfunction
+    sourceRefs:
+      - sourceId: src-decade-nct01614652
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct01286116
+    name: PARACHUTE multinational study
+    nctId: NCT01286116
+    entityId: trial-history-nct01286116
+    design: interventional study
+    versionMapping: exact
+    versionIds:
+      - ver-cardiokinetix-parachute
+    population: Heart Failure, Myocardial Infarction
+    sourceRefs:
+      - sourceId: src-decade-nct01286116
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct02240940
+    name: PARACHUTE China study
+    nctId: NCT02240940
+    entityId: trial-history-nct02240940
+    design: interventional study
+    versionMapping: exact
+    versionIds:
+      - ver-cardiokinetix-parachute
+    population: Ischemic Heart Failure
+    sourceRefs:
+      - sourceId: src-decade-nct02240940
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct02543632
+    name: PARACHUTE V study
+    nctId: NCT02543632
+    entityId: trial-history-nct02543632
+    design: observational study
+    versionMapping: exact
+    versionIds:
+      - ver-cardiokinetix-parachute
+    population: Heart Failure, Left Ventricular Dysfunction
+    sourceRefs:
+      - sourceId: src-decade-nct02543632
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct01740583
+    name: Mitralign ALIGN
+    nctId: NCT01740583
+    entityId: trial-history-nct01740583
+    design: interventional study
+    versionMapping: exact
+    versionIds:
+      - ver-mitralign-mpas
+    population: Mitral Valve Regurgitation
+    sourceRefs:
+      - sourceId: src-decade-nct01740583
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct01852149
+    name: Mitralign MPAS first-in-human study
+    nctId: NCT01852149
+    entityId: trial-history-nct01852149
+    design: interventional study
+    versionMapping: exact
+    versionIds:
+      - ver-mitralign-mpas
+    population: Functional Mitral Regurgitation
+    sourceRefs:
+      - sourceId: src-decade-nct01852149
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct02574650
+    name: Trialign SCOUT
+    nctId: NCT02574650
+    entityId: trial-history-nct02574650
+    design: interventional study
+    versionMapping: exact
+    versionIds:
+      - ver-mitralign-trialign
+    population: Chronic Symptomatic Functional Tricuspid Regurgitation, Tricuspid Valve Insufficiency, Heart Valve Disease
+    sourceRefs:
+      - sourceId: src-decade-nct02574650
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct03225612
+    name: Trialign SCOUT-II
+    nctId: NCT03225612
+    entityId: trial-history-nct03225612
+    design: interventional study
+    versionMapping: exact
+    versionIds:
+      - ver-mitralign-trialign
+    population: Chronic Symptomatic Functional Tricuspid Regurgitation, Tricuspid Valve Insufficiency, Heart Valve Disease
+    sourceRefs:
+      - sourceId: src-decade-nct03225612
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct03567278
+    name: ACURATE TA feasibility study
+    nctId: NCT03567278
+    entityId: trial-history-nct03567278
+    design: interventional study
+    versionMapping: exact
+    versionIds:
+      - ver-acurate-ta
+    population: Aortic Stenosis Symptomatic
+    sourceRefs:
+      - sourceId: src-decade-nct03567278
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct03011346
+    name: SCOPE I – ACURATE neo/TF versus SAPIEN 3
+    nctId: NCT03011346
+    entityId: trial-history-nct03011346
+    design: interventional study
+    versionMapping: mixed
+    versionIds:
+      - ver-acurate-neo-tf
+      - ver-sapien-3
+    population: Aortic Valve Stenosis
+    sourceRefs:
+      - sourceId: src-decade-nct03011346
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct02950428
+    name: ACURATE neo TA delivery study
+    nctId: NCT02950428
+    entityId: trial-history-nct02950428
+    design: interventional study
+    versionMapping: exact
+    versionIds:
+      - ver-acurate-neo-ta
+    population: Aortic Stenosis
+    sourceRefs:
+      - sourceId: src-decade-nct02950428
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct01808274
+    name: Edwards CENTERA safety and performance study
+    nctId: NCT01808274
+    entityId: trial-history-nct01808274
+    design: interventional study
+    versionMapping: exact
+    versionIds:
+      - ver-edwards-centera
+    population: Aortic Valve Disease
+    sourceRefs:
+      - sourceId: src-decade-nct01808274
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct01348438
+    name: Medtronic Engager European pivotal trial
+    nctId: NCT01348438
+    entityId: trial-history-nct01348438
+    design: interventional study
+    versionMapping: exact
+    versionIds:
+      - ver-medtronic-engager
+    population: Aortic Valve Stenosis
+    sourceRefs:
+      - sourceId: src-decade-nct01348438
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct01598844
+    name: JenaValve JUPITER transapical AS and AR registry
+    nctId: NCT01598844
+    entityId: trial-history-nct01598844
+    design: observational study
+    versionMapping: exact
+    versionIds:
+      - ver-jenavalve-transapical
+    population: Aortic Stenosis, Aortic Insufficiency, Aortic Regurgitation
+    sourceRefs:
+      - sourceId: src-decade-nct01598844
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct01627691
+    name: LOTUS REPRISE II
+    nctId: NCT01627691
+    entityId: trial-history-nct01627691
+    design: interventional study
+    versionMapping: exact
+    versionIds:
+      - ver-lotus-original
+    population: Transcatheter Aortic Valve Replacement
+    sourceRefs:
+      - sourceId: src-decade-nct01627691
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: evi-history-nct02202434
+    name: LOTUS REPRISE III
+    nctId: NCT02202434
+    entityId: trial-history-nct02202434
+    design: interventional study
+    versionMapping: mixed
+    versionIds:
+      - ver-lotus-original
+      - ver-lotus-edge
+      - ver-corevalve-original
+      - ver-evolut-r
+    population: Aortic Stenosis
+    sourceRefs:
+      - sourceId: src-decade-nct02202434
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
   - id: evidence-siegel-star
     name: STAR (SIEGEL TAVR)
     nctId: NCT07278310
@@ -2199,6 +2711,382 @@ trials:
     reviewStatus: reviewed
 
 trialSnapshots:
+  - id: tsnap-portico-ide-2026-11-22
+    trialId: trial-portico-ide
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2025-07-20"
+    status: Active, not recruiting
+    enrollment:
+      value: 1242
+      basis: actual
+      scope: Whole registry record across study arms
+    note: This snapshot reflects the registry's July 2025 update. The randomized cohort enrolled 750 participants.
+    sourceRefs:
+      - sourceId: src-portico-ide-registry
+        locator: Protocol, Status module and Design module enrollment
+    reviewStatus: reviewed
+  - id: tsnap-portico-flexnav-eu-2026-11-22
+    trialId: trial-portico-flexnav-eu
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2021-11-24"
+    status: Completed
+    enrollment:
+      value: 46
+      basis: actual
+      scope: Whole registry record
+    sourceRefs:
+      - sourceId: src-portico-flexnav-eu-registry
+        locator: Status module and Design module, Enrollment count and type
+    reviewStatus: reviewed
+  - id: tsnap-portico-confidence-2026-11-22
+    trialId: trial-portico-confidence
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2024-10-21"
+    status: Completed
+    enrollment:
+      value: 1001
+      basis: actual
+      scope: Whole registry record
+    sourceRefs:
+      - sourceId: src-portico-confidence-registry
+        locator: Status module and Design module, Enrollment count and type
+    reviewStatus: reviewed
+  - id: tsnap-portico-portico-one-2026-11-22
+    trialId: trial-portico-portico-one
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2025-02-11"
+    status: Completed
+    enrollment:
+      value: 1032
+      basis: actual
+      scope: Whole registry record
+    sourceRefs:
+      - sourceId: src-portico-portico-one-registry
+        locator: Status module and Design module, Enrollment count and type
+    reviewStatus: reviewed
+  - id: tsnap-portico-transfemoral-2026-11-22
+    trialId: trial-portico-transfemoral
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2019-02-04"
+    status: Completed
+    enrollment:
+      value: 222
+      basis: actual
+      scope: Whole registry record
+    sourceRefs:
+      - sourceId: src-portico-transfemoral-registry
+        locator: Status module and Design module, Enrollment count and type
+    reviewStatus: reviewed
+  - id: tsnap-portico-alt-2026-11-22
+    trialId: trial-portico-alt
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2025-02-11"
+    status: Completed
+    enrollment:
+      value: 64
+      basis: actual
+      scope: Whole registry record
+    sourceRefs:
+      - sourceId: src-portico-alt-registry
+        locator: Status module and Design module, Enrollment count and type
+    reviewStatus: reviewed
+  - id: tsnap-portico-viv-retrospective-2026-11-22
+    trialId: trial-portico-viv-retrospective
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2025-02-28"
+    status: Completed
+    enrollment:
+      value: 71
+      basis: actual
+      scope: Whole registry record
+    sourceRefs:
+      - sourceId: src-portico-viv-retrospective-registry
+        locator: Status module and Design module, Enrollment count and type
+    reviewStatus: reviewed
+  - id: tsnap-portico-23mm-follow-up-2026-11-22
+    trialId: trial-portico-23mm-follow-up
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2019-02-04"
+    status: Completed
+    enrollment:
+      value: 2
+      basis: actual
+      scope: Whole registry record
+    sourceRefs:
+      - sourceId: src-portico-23mm-follow-up-registry
+        locator: Status module and Design module, Enrollment count and type
+    reviewStatus: reviewed
+  - id: tsnap-portico-navitor-india-2026-11-22
+    trialId: trial-portico-navitor-india
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2026-04-15"
+    status: Completed
+    enrollment:
+      value: 30
+      basis: actual
+      scope: Whole registry record
+    sourceRefs:
+      - sourceId: src-portico-navitor-india-registry
+        locator: Status module and Design module, Enrollment count and type
+    reviewStatus: reviewed
+  - id: snap-history-nct02163850
+    trialId: evi-history-nct02163850
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2016-05-03"
+    status: UNKNOWN
+    enrollment:
+      value: 878
+      basis: estimated
+      scope: Whole registry record
+    note: >-
+      Registry update 2016-05-03. Overall status: unknown. Last known status: recruiting. The registered Direct Flow arm
+      and blended CoreValve or Edwards SAPIEN comparator do not establish the exact configurations.
+    sourceRefs:
+      - sourceId: src-decade-nct02163850
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct01845285
+    trialId: evi-history-nct01845285
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2016-02-24"
+    status: UNKNOWN
+    enrollment:
+      value: 1000
+      basis: estimated
+      scope: Whole registry record
+    note: "Registry update 2016-02-24. Overall status: unknown. Last known status: recruiting."
+    sourceRefs:
+      - sourceId: src-decade-nct01845285
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct01614652
+    trialId: evi-history-nct01614652
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2017-06-23"
+    status: TERMINATED
+    enrollment:
+      value: 331
+      basis: actual
+      scope: Whole registry record
+    note: "Registry update 2017-06-23. Overall status: terminated. Sponsor-entered stop reason: Company is closed."
+    sourceRefs:
+      - sourceId: src-decade-nct01614652
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct01286116
+    trialId: evi-history-nct01286116
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2017-06-23"
+    status: TERMINATED
+    enrollment:
+      value: 59
+      basis: actual
+      scope: Whole registry record
+    note: "Registry update 2017-06-23. Overall status: terminated. Sponsor-entered stop reason: Company closed."
+    sourceRefs:
+      - sourceId: src-decade-nct01286116
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct02240940
+    trialId: evi-history-nct02240940
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2017-06-22"
+    status: TERMINATED
+    enrollment:
+      value: 30
+      basis: actual
+      scope: Whole registry record
+    note: "Registry update 2017-06-22. Overall status: terminated. Sponsor-entered stop reason: Company closed."
+    sourceRefs:
+      - sourceId: src-decade-nct02240940
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct02543632
+    trialId: evi-history-nct02543632
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2017-06-22"
+    status: TERMINATED
+    enrollment:
+      value: 85
+      basis: actual
+      scope: Whole registry record
+    note: "Registry update 2017-06-22. Overall status: terminated. Sponsor-entered stop reason: Company closed."
+    sourceRefs:
+      - sourceId: src-decade-nct02543632
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct01740583
+    trialId: evi-history-nct01740583
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2016-10-17"
+    status: UNKNOWN
+    enrollment:
+      value: 50
+      basis: estimated
+      scope: Whole registry record
+    note: "Registry update 2016-10-17. Overall status: unknown. Last known status: active not recruiting."
+    sourceRefs:
+      - sourceId: src-decade-nct01740583
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct01852149
+    trialId: evi-history-nct01852149
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2016-03-18"
+    status: COMPLETED
+    enrollment:
+      value: 35
+      basis: actual
+      scope: Whole registry record
+    note: "Registry update 2016-03-18. Overall status: completed."
+    sourceRefs:
+      - sourceId: src-decade-nct01852149
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct02574650
+    trialId: evi-history-nct02574650
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2017-10-27"
+    status: UNKNOWN
+    enrollment:
+      value: 30
+      basis: estimated
+      scope: Whole registry record
+    note: "Registry update 2017-10-27. Overall status: unknown. Last known status: recruiting."
+    sourceRefs:
+      - sourceId: src-decade-nct02574650
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct03225612
+    trialId: evi-history-nct03225612
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2018-02-07"
+    status: UNKNOWN
+    enrollment:
+      value: 60
+      basis: estimated
+      scope: Whole registry record
+    note: "Registry update 2018-02-07. Overall status: unknown. Last known status: recruiting."
+    sourceRefs:
+      - sourceId: src-decade-nct03225612
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct03567278
+    trialId: evi-history-nct03567278
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2018-06-25"
+    status: COMPLETED
+    enrollment:
+      value: 40
+      basis: actual
+      scope: Whole registry record
+    note: "Registry update 2018-06-25. Overall status: completed."
+    sourceRefs:
+      - sourceId: src-decade-nct03567278
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct03011346
+    trialId: evi-history-nct03011346
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2022-03-10"
+    status: COMPLETED
+    enrollment:
+      value: 739
+      basis: actual
+      scope: Whole registry record
+    note: "Registry update 2022-03-10. Overall status: completed."
+    sourceRefs:
+      - sourceId: src-decade-nct03011346
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct02950428
+    trialId: evi-history-nct02950428
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2023-02-23"
+    status: COMPLETED
+    enrollment:
+      value: 60
+      basis: actual
+      scope: Whole registry record
+    note: "Registry update 2023-02-23. Overall status: completed."
+    sourceRefs:
+      - sourceId: src-decade-nct02950428
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct01808274
+    trialId: evi-history-nct01808274
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2018-11-20"
+    status: COMPLETED
+    enrollment:
+      value: 34
+      basis: actual
+      scope: Whole registry record
+    note: "Registry update 2018-11-20. Overall status: completed."
+    sourceRefs:
+      - sourceId: src-decade-nct01808274
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct01348438
+    trialId: evi-history-nct01348438
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2018-09-18"
+    status: COMPLETED
+    enrollment:
+      value: 125
+      basis: actual
+      scope: Whole registry record
+    note: "Registry update 2018-09-18. Overall status: completed."
+    sourceRefs:
+      - sourceId: src-decade-nct01348438
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct01598844
+    trialId: evi-history-nct01598844
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2020-11-24"
+    status: COMPLETED
+    enrollment:
+      value: 210
+      basis: actual
+      scope: Whole registry record
+    note: "Registry update 2020-11-24. Overall status: completed."
+    sourceRefs:
+      - sourceId: src-decade-nct01598844
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct01627691
+    trialId: evi-history-nct01627691
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2020-05-12"
+    status: COMPLETED
+    enrollment:
+      value: 250
+      basis: actual
+      scope: Whole registry record
+    note: "Registry update 2020-05-12. Overall status: completed."
+    sourceRefs:
+      - sourceId: src-decade-nct01627691
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
+  - id: snap-history-nct02202434
+    trialId: evi-history-nct02202434
+    observedAt: "2026-11-22"
+    registryUpdatedAt: "2021-12-17"
+    status: TERMINATED
+    enrollment:
+      value: 1425
+      basis: actual
+      scope: Whole registry record
+    note: >-
+      Registry update 2021-12-17. Overall status: terminated. Sponsor-entered stop reason: RCT/Roll-in completed.
+      CAS/21mm/Nested Registry terminated (investigational device is no longer available). The primary randomized cohort
+      used the original LOTUS. The whole record also includes CoreValve/Evolut R comparators and a nested LOTUS Edge
+      cohort.
+    sourceRefs:
+      - sourceId: src-decade-nct02202434
+        locator: "Study Overview and record dates: sponsor, device intervention, study status and enrollment fields"
+    reviewStatus: reviewed
   - id: snapshot-siegel-star-20261014
     trialId: evidence-siegel-star
     observedAt: '2026-10-14'
@@ -5653,6 +6541,80 @@ outcomes:
     reviewStatus: reviewed
 
 lineage:
+  - id: lineage-portico-navitor
+    fromVersionId: ver-portico
+    toVersionId: ver-navitor
+    relationship: derived_from
+    explanation: >-
+      FDA approved Navitor under the Portico PMA as a design change that modified the inner-skirt material, added an outer
+      skirt, and made minor changes to the valve frame and loading system.
+    sourceRefs:
+      - sourceId: src-navitor-s002
+        locator: Device, Decision Date and Approval Order Statement
+    reviewStatus: reviewed
+  - id: lineage-decade-acurate-neo-tf-acurate-neo2
+    fromVersionId: ver-acurate-neo-tf
+    toVersionId: ver-acurate-neo2
+    relationship: succeeds
+    explanation: The PRECISA registry identifies neo2 as the second generation succeeding the original neo.
+    sourceRefs:
+      - sourceId: src-decade-precisa
+        locator: Abstract, Methods
+    reviewStatus: reviewed
+  - id: lineage-decade-corevalve-original-evolut-r
+    fromVersionId: ver-corevalve-original
+    toVersionId: ver-evolut-r
+    relationship: derived_from
+    explanation: FDA identifies Evolut R as a design iteration of CoreValve.
+    sourceRefs:
+      - sourceId: src-decade-p130021s014
+        locator: PMA P130021/S014, Device, Decision Date and Approval Order Statement fields
+    reviewStatus: reviewed
+  - id: lineage-decade-evolut-r-evolut-pro
+    fromVersionId: ver-evolut-r
+    toVersionId: ver-evolut-pro
+    relationship: derived_from
+    explanation: FDA identifies Evolut PRO as a design iteration of Evolut R.
+    sourceRefs:
+      - sourceId: src-decade-p130021s029
+        locator: PMA P130021/S029, Device, Decision Date and Approval Order Statement fields
+    reviewStatus: reviewed
+  - id: lineage-decade-evolut-pro-evolut-pro-plus
+    fromVersionId: ver-evolut-pro
+    toVersionId: ver-evolut-pro-plus
+    relationship: derived_from
+    explanation: FDA identifies PRO+ as the modified Evolut PRO system.
+    sourceRefs:
+      - sourceId: src-decade-p130021s059
+        locator: PMA P130021/S059, Device, Decision Date and Approval Order Statement fields
+    reviewStatus: reviewed
+  - id: lineage-decade-sapien-3-sapien-3-ultra
+    fromVersionId: ver-sapien-3
+    toVersionId: ver-sapien-3-ultra
+    relationship: succeeds
+    explanation: Edwards identified Ultra as the intended successor to SAPIEN 3 in its July 2019 TAVR portfolio statement.
+    sourceRefs:
+      - sourceId: src-decade-centera-exit
+        locator: Transcatheter Aortic Valve Replacement section, second paragraph
+    reviewStatus: reviewed
+  - id: lineage-decade-sjm-trifecta-sjm-trifecta-gt
+    fromVersionId: ver-sjm-trifecta
+    toVersionId: ver-sjm-trifecta-gt
+    relationship: derived_from
+    explanation: FDA approved the addition of Trifecta GT to the original Trifecta PMA.
+    sourceRefs:
+      - sourceId: src-decade-p100029s021
+        locator: PMA P100029/S021, Device, Decision Date and Approval Order Statement fields
+    reviewStatus: reviewed
+  - id: lineage-decade-lotus-original-lotus-edge
+    fromVersionId: ver-lotus-original
+    toVersionId: ver-lotus-edge
+    relationship: derived_from
+    explanation: FDA describes LOTUS Edge as a modification of the first-generation LOTUS system.
+    sourceRefs:
+      - sourceId: src-decade-lotus-design-bridge
+        locator: Section X, opening paragraphs, Summary of Primary Clinical Studies
+    reviewStatus: reviewed
   - id: lineage-evolut-fx-plus
     fromVersionId: ver-evolut-fx
     toVersionId: ver-evolut-fx-plus
@@ -5706,6 +6668,38 @@ lineage:
     reviewStatus: reviewed
 
 events:
+  - id: evt-portico-navitor-design-s002
+    title: U.S. design transition from Portico to Navitor
+    eventDate:
+      value: "2023-01-13"
+      precision: day
+    publishedAt:
+      value: "2023-01-13"
+      precision: day
+    discoveredAt: "2026-11-22"
+    kind: design
+    versionIds:
+      - ver-portico
+      - ver-navitor
+    decisionIds:
+      - decision-navitor-s002
+    readoutIds: []
+    before: Original Portico under P190023 used a porcine-pericardial sealing cuff.
+    after: >-
+      The Navitor supplement changed the inner-skirt material, added an outer skirt, and revised the stent frame and
+      loading system.
+    whyItMatters: >-
+      One U.S. PMA links distinct valve designs. Portico clinical results remain associated with the original valve and
+      its study cohorts.
+    uncertainty: >-
+      The supplement documents the design change. Current commercial availability and comparative clinical effects remain
+      unverified in this record.
+    sourceRefs:
+      - sourceId: src-navitor-s002
+        locator: Device, Decision Date and Approval Order Statement
+      - sourceId: src-portico-p190023-ssed
+        locator: PDF pp. 1–2, sections I and V.A
+    reviewStatus: reviewed
   - id: event-amulet-fda-labeling-20260828
     title: FDA approves Amulet pulmonary-artery labeling update
     eventDate: { value: '2026-08-28', precision: day }

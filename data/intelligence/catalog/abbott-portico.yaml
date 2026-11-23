@@ -1,0 +1,232 @@
+# abbott-portico: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2021-09-17"
+sources:
+  - id: src-portico-p190023-ssed
+    title: Portico Transcatheter Aortic Valve Implantation System — FDA Summary of Safety and Effectiveness Data
+    publisher: FDA
+    kind: regulatory
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf
+    publishedAt:
+      value: "2021-09-17"
+      precision: day
+    retrievedAt: "2026-11-11"
+    access: public
+    identifier: P190023 SSED
+  - id: src-portico-p190023-label
+    title: Portico Transcatheter Aortic Valve Implantation System — Instructions for Use, ARTEN600098836 Rev. A
+    publisher: Abbott
+    kind: manufacturer
+    url: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023D.pdf
+    publishedAt:
+      value: 2020-06
+      precision: month
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: ARTEN600098836 Rev. A
+  - id: src-portico-ide-registry
+    title: PORTICO Re-sheathable Transcatheter Aortic Valve System US IDE Trial
+    publisher: ClinicalTrials.gov
+    kind: registry
+    url: https://clinicaltrials.gov/study/NCT02000115
+    publishedAt:
+      value: "2025-07-20"
+      precision: day
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: NCT02000115
+  - id: src-portico-ide-lancet-2020
+    title: "PORTICO IDE: self-expanding intra-annular versus commercially available transcatheter heart valves"
+    publisher: The Lancet
+    kind: publication
+    url: https://pubmed.ncbi.nlm.nih.gov/32593323/
+    publishedAt:
+      value: "2020-06-25"
+      precision: day
+    retrievedAt: "2026-11-22"
+    access: public
+    identifier: PMID 32593323
+families:
+  - id: family-portico
+    name: Portico
+    manufacturer: Abbott
+    entityIds:
+      - dev-portico
+    conditionIds:
+      - cond-as
+    description: >-
+      Original Abbott transcatheter aortic valve approved with the FlexNav delivery system. Navitor followed as a design
+      change under the same U.S. PMA.
+versions:
+  - id: ver-portico
+    familyId: family-portico
+    name: Abbott Portico
+    graphEntityId: dev-portico
+    kind: device
+    clinicalRole: treats
+    model: PRT-23, PRT-25, PRT-27, PRT-29
+    summary: >-
+      Self-expanding transcatheter aortic valve with a nitinol frame, bovine-pericardial leaflets and a
+      porcine-pericardial sealing cuff. The original U.S. system included FlexNav delivery and loading.
+    sourceRefs:
+      - sourceId: src-portico-p190023-ssed
+        locator: PDF pp. 1–2, sections I and V.A, Table 1
+    reviewStatus: reviewed
+decisions:
+  - id: decision-portico-p190023
+    identifier: P190023
+    rootIdentifier: P190023
+    jurisdiction: US
+    pathway: PMA
+    date:
+      value: "2021-09-17"
+      precision: day
+    versionIds:
+      - ver-portico
+    changeType: initial_authorization
+    summary: FDA approved Portico with the FlexNav delivery and loading systems under P190023 on September 17, 2021.
+    sourceRefs:
+      - sourceId: src-portico-p190023-ssed
+        locator: PDF p. 1, sections I–II (General Information and Indications for Use)
+    reviewStatus: reviewed
+indications:
+  - id: indication-portico-us-original
+    decisionId: decision-portico-p190023
+    versionIds:
+      - ver-portico
+    jurisdiction: US
+    effectiveDate:
+      value: "2021-09-17"
+      precision: day
+    text: >-
+      Relief of symptomatic severe native calcific aortic stenosis in patients judged by a heart team including a
+      cardiac surgeon to be at high or greater risk of open surgery, with predicted 30-day surgical mortality of at
+      least 8% based on the STS score and additional comorbidities.
+    textType: paraphrase
+    population: Symptomatic severe native calcific AS at high or greater open surgical risk (predicted 30-day mortality ≥8%).
+    sourceRefs:
+      - sourceId: src-portico-p190023-ssed
+        locator: PDF p. 1, section II (Indications for Use)
+    reviewStatus: reviewed
+bibliography:
+  - id: bib-portico-ssed
+    entityIds:
+      - dev-portico
+    versionIds:
+      - ver-portico
+    sourceRefs:
+      - sourceId: src-portico-p190023-ssed
+        locator: PDF pp. 1–4, 15–16, 27, 29 and 47
+    reviewStatus: reviewed
+  - id: bib-portico-ifu
+    entityIds:
+      - dev-portico
+    versionIds:
+      - ver-portico
+    sourceRefs:
+      - sourceId: src-portico-p190023-label
+        locator: PDF pp. 5–8, sections 1–3
+    reviewStatus: reviewed
+  - id: bib-portico-ide-lancet
+    entityIds:
+      - dev-portico
+    versionIds:
+      - ver-portico
+    sourceRefs:
+      - sourceId: src-portico-ide-lancet-2020
+        locator: Abstract, Methods and Findings (abstract only)
+    reviewStatus: reviewed
+  - id: bib-portico-ide
+    entityIds:
+      - dev-portico
+    versionIds:
+      - ver-portico
+    sourceRefs:
+      - sourceId: src-portico-ide-registry
+        locator: "Protocol: Identification, Design and Arms and Interventions modules"
+    reviewStatus: reviewed
+specs:
+  - version: ver-portico
+    category: aortic-tavr-valves
+    source: src-portico-p190023-label
+    values:
+      expansion-mechanism:
+        value: Self-expanding
+        loc: PDF p. 2, section V.A (Portico Valve)
+        source: src-portico-p190023-ssed
+        reviewStatus: reviewed
+      frame-material:
+        value: Nitinol (nickel–titanium alloy)
+        loc: PDF p. 5, section 1.1 (Portico Transcatheter Aortic Heart Valve)
+        reviewStatus: reviewed
+      leaflet-material:
+        value: Bovine pericardium, tri-leaflet
+        loc: PDF p. 5, section 1.1 (Portico Transcatheter Aortic Heart Valve)
+        reviewStatus: reviewed
+      leaflet-position:
+        value: Intra-annular
+        loc: Title and Abstract, Methods
+        source: src-portico-ide-lancet-2020
+        context: Description of the original valve in the PORTICO IDE publication abstract.
+        reviewStatus: reviewed
+      tissue-treatment:
+        value: Linx anticalcification processing for leaflets and cuff
+        loc: PDF p. 5, section 1.1 (Portico Transcatheter Aortic Heart Valve)
+        reviewStatus: reviewed
+      sealing-design:
+        value: Porcine-pericardial cuff sutured to the frame
+        loc: PDF p. 5, section 1.1 (Portico Transcatheter Aortic Heart Valve)
+        reviewStatus: reviewed
+      repositionable:
+        value: Up to two re-sheathing and repositioning attempts before full deployment
+        loc: PDF p. 3, section V.B (FlexNav Delivery System)
+        source: src-portico-p190023-ssed
+        context: Original U.S. labeling with FlexNav.
+        reviewStatus: reviewed
+      access-route:
+        value: Transfemoral, subclavian/axillary, or transaortic
+        loc: PDF p. 3, section V.B (FlexNav Delivery System)
+        source: src-portico-p190023-ssed
+        reviewStatus: reviewed
+      delivery-sheath:
+        value: "FlexNav: 14 Fr equivalent / 6.0 mm capsule (23/25 mm); 15 Fr equivalent / 6.3 mm capsule (27/29 mm)"
+        loc: PDF pp. 2, 4, Tables 1 and 3
+        source: src-portico-p190023-ssed
+        reviewStatus: reviewed
+      available-sizes:
+        value: 23, 25, 27 and 29 mm
+        loc: PDF p. 3, Table 2 (Patient Anatomical Measurements)
+        source: src-portico-p190023-ssed
+        reviewStatus: reviewed
+      anatomy-range-summary:
+        value: Native annulus 19–27 mm overall; 19–21, 21–23, 23–25, and 25–27 mm by ascending valve size
+        loc: PDF p. 3, Table 2 (Patient Anatomical Measurements)
+        source: src-portico-p190023-ssed
+        reviewStatus: reviewed
+      indication-scope:
+        value: Symptomatic severe native calcific AS at high or greater surgical risk
+        loc: PDF p. 1, section II (Indications for Use)
+        source: src-portico-p190023-ssed
+        reviewStatus: reviewed
+      pivotal-trials:
+        value: PORTICO IDE (NCT02000115)
+        loc: "Protocol: Identification, Design and Arms and Interventions modules"
+        source: src-portico-ide-registry
+        observedAt: "2021-09-17"
+        context: Pivotal randomized comparison used first-generation Portico delivery. Supplemental FlexNav cohorts were reported separately.
+        reviewStatus: reviewed
+claims:
+  - id: claim-portico-navitor-lineage
+    versionId: ver-portico
+    category: evolution
+    key: navitor-lineage
+    label: Successor design
+    availability: reported
+    basis: directly_reported
+    value: >-
+      The January 2023 U.S. Navitor design supplement changed the inner-skirt material, added an outer skirt, and made
+      minor changes to the valve frame and loading system under the Portico PMA.
+    observedAt: "2023-01-13"
+    sourceRefs:
+      - sourceId: src-navitor-s002
+        locator: Device, Decision Date and Approval Order Statement fields
+    reviewStatus: reviewed

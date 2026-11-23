@@ -150,7 +150,8 @@ function LinkList({ refs }: { refs?: string[] }) {
 }
 
 function statusBadge(value: string, kind: 'reg' | 'result') {
-  return <span className={`badge ${kind}-${value}`}>{kind === 'reg' && value === 'unknown' ? 'Unverified' : value}</span>
+  const label = kind === 'reg' && value === 'unknown' ? 'Unverified' : value.replace(/-/g, ' ')
+  return <span className={`badge ${kind}-${value}`}>{label}</span>
 }
 
 const MATERIAL_CATEGORY_LABELS: Record<DeviceMaterial['category'], string> = {

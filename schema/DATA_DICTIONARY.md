@@ -303,7 +303,7 @@ If a material applies only to one model in a family record, say so in `note`.
 | `year` | | integer (key readout / publication year) |
 | `primaryEndpoint` | | |
 | `outcomeSummary` | | 1 sentence on the result |
-| `resultStatus` | ✓ | `positive` \| `mixed` \| `negative` \| `ongoing` \| `terminated` |
+| `resultStatus` | ✓ | `positive` \| `mixed` \| `negative` \| `ongoing` \| `terminated` \| `not-assessed` (registry identity curated without a result interpretation) |
 | `references` | | list of URLs or `PMID:#######` (a ClinicalTrials.gov search link is a fine fallback) |
 | `links` | | list of `{label, url}` outcome-summary links, NOT ClinicalTrials.gov (see "Links" below) |
 | `timeline` | | trial start date (`dateBasis: trial-start`) |

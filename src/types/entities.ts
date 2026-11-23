@@ -49,6 +49,7 @@ export type ResultStatus =
   | 'negative'
   | 'ongoing'
   | 'terminated'
+  | 'not-assessed'
 
 export type CurationStatus = 'draft' | 'curated'
 
