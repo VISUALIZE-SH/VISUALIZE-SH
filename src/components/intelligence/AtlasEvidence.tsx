@@ -12,6 +12,7 @@ export interface AtlasEvidenceProps {
   versionId: string
   onSelectVersion: (id: string) => void
   onOpenData: (versionId: string) => void
+  onOpenTrial: (id: string) => void
   asOf?: string
   jurisdiction?: string
 }
@@ -62,7 +63,7 @@ function EventEntry({ data, event, familyOnly }: { data: IntelligenceData; event
 }
 
 export default function AtlasEvidence({
-  data, versionId, onSelectVersion, onOpenData, asOf, jurisdiction,
+  data, versionId, onSelectVersion, onOpenData, onOpenTrial, asOf, jurisdiction,
 }: AtlasEvidenceProps) {
   const version = versionById(data, versionId)
   const filteredClaims = useMemo(
@@ -94,6 +95,21 @@ export default function AtlasEvidence({
     if (!exact && !family) return []
     return [{ readout, trial, exact }]
   }), [data, versionId, version?.familyId, asOf])
+  const graphTrials = useMemo(() => {
+    const sourceDates = new Map(data.sources.map((source) => [source.id, source.publishedAt]))
+    return data.trials.flatMap((trial) => {
+      const { entityId } = trial
+      if (!entityId || !trial.versionIds.includes(versionId)) return []
+      return trial.sourceRefs.some((ref) => isOnOrBefore(sourceDates.get(ref.sourceId), asOf)) ? [{ trial, entityId }] : []
+    })
+  }, [data, versionId, asOf])
+  const versionRelationships = useMemo(() => {
+    const dates = new Map(data.sources.map((source) => [source.id, source.publishedAt]))
+    return data.lineage.filter((edge) =>
+      (edge.fromVersionId === versionId || edge.toVersionId === versionId)
+      && edge.sourceRefs.some((ref) => isOnOrBefore(dates.get(ref.sourceId), asOf)),
+    )
+  }, [data, versionId, asOf])
   const lanes: Array<{ name: string; kinds: IntelligenceEvent['kind'][] }> = [
     { name: 'Design & manufacture', kinds: ['design', 'manufacturing', 'software'] },
     { name: 'Label & indication', kinds: ['indication', 'labeling'] },
@@ -138,7 +154,14 @@ export default function AtlasEvidence({
 
         {schematic && <ProfileSchematic illustration={schematic} name={version.name} notes={schematic.notes} />}
         <section className="intel-card intel-profile-fit"><h3>Fit</h3>{(fit.length > 0 || indications.length === 0) && <ClaimList data={data} claims={fit} empty="No anatomy, use-condition, or workflow-fit field curated for this version."  versionStatus={version.reviewStatus} />}{indications.slice(0, 2).map((indication) => <article className="intel-card-record" key={indication.id}><span>{formatEvidenceDate(indication.effectiveDate)} · {indication.textType}</span><p>{indication.population}</p><SourceLink data={data} item={indication} /></article>)}</section>
-        <section className="intel-card intel-profile-evidence"><h3>Clinical Evidence</h3>{(evidence.length > 0 || evidenceReadouts.length === 0) && <ClaimList data={data} claims={evidence} empty="No evidence curated for this version."  versionStatus={version.reviewStatus} />}{evidenceReadouts.slice(0, 2).map(({ readout, trial, exact }) => <article className="intel-card-record" key={readout.id}><span>{trial.name} · {readout.followUp}</span><p>{readout.title}</p><p className={exact ? '' : 'intel-boundary'}>{exact ? 'Exact version mapping recorded.' : 'Family association only; exact generation/software build unresolved.'}</p><SourceLink data={data} item={readout} /></article>)}</section>
+        <section className="intel-card intel-profile-evidence"><h3>Clinical Evidence</h3>{(evidence.length > 0 || (evidenceReadouts.length === 0 && graphTrials.length === 0)) && <ClaimList data={data} claims={evidence} empty="No evidence curated for this version."  versionStatus={version.reviewStatus} />}{evidenceReadouts.slice(0, 2).map(({ readout, trial, exact }) => <article className="intel-card-record" key={readout.id}><span>{trial.name} · {readout.followUp}</span><p>{readout.title}</p><p className={exact ? '' : 'intel-boundary'}>{exact ? 'Exact version mapping recorded.' : 'Family association only; exact generation/software build unresolved.'}</p><SourceLink data={data} item={readout} /></article>)}
+          {graphTrials.length > 0 && <details className="intel-card-record"><summary>Clinical studies ({graphTrials.length})</summary>
+            <ul className="intel-profile-study-list">{graphTrials.map(({ trial, entityId }) => <li key={trial.id}>
+              <button type="button" className="intel-button" onClick={() => onOpenTrial(entityId)}>{trial.name}</button>
+              {trial.nctId && <small>{trial.nctId}</small>}
+            </li>)}</ul>
+          </details>}
+        </section>
         <section className="intel-card intel-profile-history"><h3>History</h3>{(history.length > 0 || (decisions.length === 0 && events.length === 0)) && <ClaimList data={data} claims={history} empty="No evolution claim curated for this version."  versionStatus={version.reviewStatus} />}{[...decisions].sort((a, b) => b.date.value.localeCompare(a.date.value)).slice(0, 2).map((decision) => <article className="intel-card-record" key={decision.id}><span>{formatEvidenceDate(decision.date)} · {decision.identifier}</span><p>{decision.summary}</p><SourceLink data={data} item={decision} /></article>)}{[...events].sort((a, b) => b.eventDate.value.localeCompare(a.eventDate.value)).slice(0, 1).map((event) => <article className="intel-card-record" key={event.id}><span>Latest selected change · {formatEvidenceDate(event.eventDate)}</span><p>{event.after}</p><SourceLink data={data} item={event} /></article>)}</section>
       </div>
 
@@ -157,6 +180,22 @@ export default function AtlasEvidence({
       <section className="intel-history" aria-labelledby="history-title">
         <div className="intel-section-head"><h3 id="history-title">History</h3><span>{asOf ? `As of ${asOf}` : 'All available dates'}</span></div>
         <p className="intel-caveat">A selected history — may not reflect the current, complete IFU or label.</p>
+        {versionRelationships.length > 0 && <section className="intel-label-record" aria-label="Version relationships">
+          <h4>Version relationships</h4>
+          {versionRelationships.map((edge) => {
+            const from = versionById(data, edge.fromVersionId)
+            const to = versionById(data, edge.toVersionId)
+            if (!from || !to) return null
+            const endpoint = (id: string, name: string) => id === versionId
+              ? <strong>{name}</strong>
+              : <button className="intel-button" type="button" onClick={() => onSelectVersion(id)}>{name}</button>
+            return <article key={edge.id}>
+              <p>{endpoint(from.id, from.name)} {' → '} {endpoint(to.id, to.name)} <ReviewMark item={edge} /></p>
+              <p>{edge.explanation}</p>
+              <SourceLink data={data} item={edge} />
+            </article>
+          })}
+        </section>}
         <div className="intel-history-lanes">
           {lanes.map((lane) => {
             const laneEvents = events.filter((event) => lane.kinds.includes(event.kind))

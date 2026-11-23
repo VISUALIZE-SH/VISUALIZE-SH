@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-11-22T08:10:06.550Z",
-    "lastUpdated": "2026-11-22",
+    "generatedAt": "2026-11-23T16:08:27.560Z",
+    "lastUpdated": "2026-11-23",
     "counts": {
       "condition": 23,
-      "device": 194,
+      "device": 231,
       "pharmaceutical": 23,
       "procedure": 15,
       "digital": 19,
-      "company": 162,
-      "trial": 199
+      "company": 168,
+      "trial": 227
     },
     "draftCount": 143,
-    "total": 635,
+    "total": 706,
     "newsCount": 300,
     "latestNewsDate": "2026-11-20"
   },
@@ -6751,7 +6751,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 55,
+          "degree": 61,
           "pulse": 5,
           "entity": {
             "id": "cond-hfref",
@@ -6849,7 +6849,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 57,
+          "degree": 104,
           "pulse": 9,
           "entity": {
             "id": "cond-as",
@@ -6887,7 +6887,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 5,
+          "degree": 23,
           "pulse": 7,
           "entity": {
             "id": "cond-ar",
@@ -6921,7 +6921,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 84,
+          "degree": 95,
           "pulse": 8,
           "entity": {
             "id": "cond-mr",
@@ -6956,7 +6956,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 4,
+          "degree": 11,
           "pulse": 3,
           "entity": {
             "id": "cond-ms",
@@ -6990,7 +6990,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 52,
+          "degree": 55,
           "pulse": 9,
           "entity": {
             "id": "cond-tr",
@@ -7025,7 +7025,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 14,
+          "degree": 15,
           "pulse": 4,
           "entity": {
             "id": "cond-pv",
@@ -7226,7 +7226,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 1,
+          "degree": 2,
           "pulse": 0,
           "entity": {
             "id": "cond-complex-aortic-root-disease",
@@ -7254,7 +7254,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 4,
+          "degree": 5,
           "pulse": 0,
           "entity": {
             "id": "cond-failed-surgical-aortic-bioprosthesis",
@@ -10549,7 +10549,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 7,
+          "degree": 8,
           "pulse": 9,
           "timelineDate": "2014-01-01",
           "entity": {
@@ -10627,7 +10627,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 7,
+          "degree": 8,
           "pulse": 8,
           "timelineDate": "2007-03-01",
           "entity": {
@@ -10695,7 +10695,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 3,
           "pulse": 5,
           "timelineDate": "2021-05-01",
           "entity": {
@@ -19559,6 +19559,1740 @@
       },
       {
         "data": {
+          "id": "dev-acurate-neo-tf",
+          "label": "ACURATE neo/TF",
+          "group": "device",
+          "category": "Transcatheter aortic replacement",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-acurate-neo-tf",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "ACURATE neo/TF",
+            "company": "co-symetis",
+            "treats": [
+              "cond-as"
+            ],
+            "subtype": "Transcatheter aortic replacement",
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "2017 sales announced outside the US · SCOPE I completed",
+            "description": "The original transfemoral ACURATE neo system was studied against SAPIEN 3 in SCOPE I. Boston Scientific identified neo/TF and ACURATE TA separately at the 2017 acquisition. Its original study evidence is tied to neo/TF.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT03011346",
+                "https://news.bostonscientific.com/2017-05-16-Boston-Scientific-Closes-Symetis-Acquisition",
+                "https://pubmed.ncbi.nlm.nih.gov/38577931/"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "NCT03011346",
+                "url": "https://clinicaltrials.gov/study/NCT03011346"
+              },
+              {
+                "label": "Boston Scientific Closes Symetis Acquisition",
+                "url": "https://news.bostonscientific.com/2017-05-16-Boston-Scientific-Closes-Symetis-Acquisition"
+              },
+              {
+                "label": "PRECISA registry of ACURATE neo and neo2",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/38577931/"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-acurate-ta",
+          "label": "ACURATE TA",
+          "group": "device",
+          "category": "Transcatheter aortic replacement",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-acurate-ta",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "ACURATE TA",
+            "company": "co-symetis",
+            "treats": [
+              "cond-as"
+            ],
+            "subtype": "Transcatheter aortic replacement",
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Studied in Europe · 2017 sales announced outside the US",
+            "description": "Symetis’s transapical ACURATE aortic valve and delivery system were studied for severe symptomatic aortic stenosis. After the 2017 acquisition, Boston Scientific announced European and other non-US sales. Current availability and exact country authorizations were not reviewed.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT03567278",
+                "https://news.bostonscientific.com/2017-05-16-Boston-Scientific-Closes-Symetis-Acquisition"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "NCT03567278",
+                "url": "https://clinicaltrials.gov/study/NCT03567278"
+              },
+              {
+                "label": "Boston Scientific Closes Symetis Acquisition",
+                "url": "https://news.bostonscientific.com/2017-05-16-Boston-Scientific-Closes-Symetis-Acquisition"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardiokinetix-parachute",
+          "label": "CardioKinetix Parachute",
+          "group": "device",
+          "category": "Ventricular partitioning",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 6,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-cardiokinetix-parachute",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "CardioKinetix Parachute",
+            "company": "co-cardiokinetix",
+            "treats": [
+              "cond-hfref"
+            ],
+            "subtype": "Ventricular partitioning",
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Studied in PARACHUTE IV · study terminated",
+            "description": "Catheter-delivered left ventricular partitioning implant studied in ischemic heart failure. PARACHUTE IV and other registered studies were terminated. CardioKinetix reported company closure as the reason. The material reviewed does not establish legal dissolution or subsequent device ownership.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01614652",
+                "https://clinicaltrials.gov/study/NCT01286116",
+                "https://clinicaltrials.gov/study/NCT02240940",
+                "https://clinicaltrials.gov/study/NCT02543632"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "NCT01614652",
+                "url": "https://clinicaltrials.gov/study/NCT01614652"
+              },
+              {
+                "label": "NCT01286116",
+                "url": "https://clinicaltrials.gov/study/NCT01286116"
+              },
+              {
+                "label": "NCT02240940",
+                "url": "https://clinicaltrials.gov/study/NCT02240940"
+              },
+              {
+                "label": "NCT02543632",
+                "url": "https://clinicaltrials.gov/study/NCT02543632"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-direct-flow-aortic-valve",
+          "label": "Direct Flow Medical Transcatheter Aortic Valve",
+          "group": "device",
+          "category": "Transcatheter aortic replacement",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-direct-flow-aortic-valve",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Direct Flow Medical Transcatheter Aortic Valve",
+            "company": "co-direct-flow-medical",
+            "treats": [
+              "cond-as"
+            ],
+            "subtype": "Transcatheter aortic replacement",
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Historical US pivotal study",
+            "description": "The DISCOVER registry identifies the 18F valve system. The separate US SALUS pivotal study compared a Direct Flow Medical system with commercially available valves, with exact configurations unresolved in that registry. PDL later reported the original developer's operational shutdown and scoped asset transactions.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02163850",
+                "https://clinicaltrials.gov/study/NCT01845285",
+                "https://investor.pdl.com/static-files/e037885d-6811-452e-8ac4-872f30ee4629"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "NCT02163850",
+                "url": "https://clinicaltrials.gov/study/NCT02163850"
+              },
+              {
+                "label": "NCT01845285",
+                "url": "https://clinicaltrials.gov/study/NCT01845285"
+              },
+              {
+                "label": "PDL BioPharma 2017 Annual Report",
+                "url": "https://investor.pdl.com/static-files/e037885d-6811-452e-8ac4-872f30ee4629"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-edwards-centera",
+          "label": "Edwards CENTERA",
+          "group": "device",
+          "category": "Transcatheter aortic replacement",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-edwards-centera",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Edwards CENTERA",
+            "company": "co-edwards",
+            "treats": [
+              "cond-as"
+            ],
+            "subtype": "Transcatheter aortic replacement",
+            "regulatoryStatus": "discontinued",
+            "regulatoryDetail": "Program discontinued by Edwards in 2019",
+            "description": "Edwards studied CENTERA as a self-expanding transcatheter aortic valve for severe aortic stenosis. In July 2019 Edwards announced its decision to discontinue the CENTERA program.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01808274",
+                "https://www.edwards.com/newsroom/news/2019-07-23-edwards-lifesciences-reports-second-quarter-result-8c28a70"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "NCT01808274",
+                "url": "https://clinicaltrials.gov/study/NCT01808274"
+              },
+              {
+                "label": "Edwards Lifesciences Reports Second Quarter Results",
+                "url": "https://www.edwards.com/newsroom/news/2019-07-23-edwards-lifesciences-reports-second-quarter-result-8c28a70"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-jenavalve-transapical",
+          "label": "JenaValve Transapical TAVI System",
+          "group": "device",
+          "category": "Transcatheter aortic replacement",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-jenavalve-transapical",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "JenaValve Transapical TAVI System",
+            "company": "co-jenavalve",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Transcatheter aortic replacement",
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Historical transapical JUPITER registry",
+            "description": "JUPITER studied the JenaValve transapical system in separate aortic stenosis and aortic regurgitation groups. The current Trilogy version retains its separate evidence and labeling.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01598844"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "NCT01598844",
+                "url": "https://clinicaltrials.gov/study/NCT01598844"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lotus-original",
+          "label": "Boston Scientific LOTUS",
+          "group": "device",
+          "category": "Transcatheter aortic replacement",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-lotus-original",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Boston Scientific LOTUS",
+            "company": "co-boston-scientific",
+            "treats": [
+              "cond-as"
+            ],
+            "subtype": "Transcatheter aortic replacement",
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Historical REPRISE II study device",
+            "description": "REPRISE II and the primary randomized cohort of REPRISE III studied the original repositionable LOTUS valve in severe symptomatic aortic stenosis. The entire REPRISE III record also includes a nested LOTUS Edge registry and Medtronic comparators. FDA describes the Edge modifications separately.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01627691",
+                "https://clinicaltrials.gov/study/NCT02202434",
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf18/P180029B.pdf"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "NCT01627691",
+                "url": "https://clinicaltrials.gov/study/NCT01627691"
+              },
+              {
+                "label": "NCT02202434",
+                "url": "https://clinicaltrials.gov/study/NCT02202434"
+              },
+              {
+                "label": "FDA Summary of Safety and Effectiveness Data for LOTUS Edge",
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf18/P180029B.pdf"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-engager",
+          "label": "Medtronic Engager",
+          "group": "device",
+          "category": "Transcatheter aortic replacement",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-medtronic-engager",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Medtronic Engager",
+            "company": "co-medtronic",
+            "treats": [
+              "cond-as"
+            ],
+            "subtype": "Transcatheter aortic replacement",
+            "regulatoryStatus": "unknown",
+            "regulatoryDetail": "Historical European pivotal study · program disposition unverified",
+            "description": "Medtronic registered a European pivotal study of the Engager transapical aortic valve system for severe aortic stenosis. The trial is complete. Current availability and later program disposition remain unverified.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01348438"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "NCT01348438",
+                "url": "https://clinicaltrials.gov/study/NCT01348438"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-freestyle",
+          "label": "Medtronic Freestyle",
+          "group": "device",
+          "category": "Surgical tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-medtronic-freestyle",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Medtronic Freestyle",
+            "company": "co-medtronic",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Surgical tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Historical US FDA decision · 1997",
+            "description": "FDA approved the Freestyle aortic root bioprosthesis model 995 in 1997 for replacement of malfunctioning native or prosthetic aortic valves, with the option of aortic root replacement.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P970031"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P970031",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P970031"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-hancock-ii",
+          "label": "Medtronic Hancock II",
+          "group": "device",
+          "category": "Surgical tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 5,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-medtronic-hancock-ii",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Medtronic Hancock II",
+            "company": "co-medtronic",
+            "treats": [
+              "cond-as",
+              "cond-ar",
+              "cond-mr",
+              "cond-ms"
+            ],
+            "subtype": "Surgical tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Historical US FDA decision · 1999",
+            "description": "FDA's 1999 decision identifies Hancock II porcine bioprosthesis models T505 and T510 for replacement of pathologic or prosthetic aortic and mitral valves.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980043"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P980043",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980043"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-mosaic",
+          "label": "Medtronic Mosaic",
+          "group": "device",
+          "category": "Surgical tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 5,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-medtronic-mosaic",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Medtronic Mosaic",
+            "company": "co-medtronic",
+            "treats": [
+              "cond-as",
+              "cond-ar",
+              "cond-mr",
+              "cond-ms"
+            ],
+            "subtype": "Surgical tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Historical US FDA decision · 2000",
+            "description": "FDA approved the Mosaic porcine bioprosthesis models 305 (aortic) and 310 (mitral) in 2000 to replace malfunctioning native or prosthetic valves in the respective positions.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P990064"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P990064",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P990064"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitralign-mpas",
+          "label": "Mitralign Percutaneous Annuloplasty System",
+          "group": "device",
+          "category": "Transcatheter mitral repair",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-mitralign-mpas",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Mitralign Percutaneous Annuloplasty System",
+            "company": "co-mitralign",
+            "treats": [
+              "cond-mr"
+            ],
+            "subtype": "Transcatheter mitral repair",
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Historical mitral study device",
+            "description": "MPAS plicates the posterior mitral annulus. ALIGN and the first-in-human study enrolled or planned to enroll patients with chronic functional mitral regurgitation. The current registry status of ALIGN is unknown. Trialign studied the tricuspid application separately.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01740583",
+                "https://clinicaltrials.gov/study/NCT01852149"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "NCT01740583",
+                "url": "https://clinicaltrials.gov/study/NCT01740583"
+              },
+              {
+                "label": "NCT01852149",
+                "url": "https://clinicaltrials.gov/study/NCT01852149"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitralign-trialign",
+          "label": "Mitralign Trialign",
+          "group": "device",
+          "category": "Transcatheter tricuspid repair",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-mitralign-trialign",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Mitralign Trialign",
+            "company": "co-mitralign",
+            "treats": [
+              "cond-tr"
+            ],
+            "subtype": "Transcatheter tricuspid repair",
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Historical early feasibility and SCOUT-II study device",
+            "description": "Trialign, also recorded as TriAlign or the Percutaneous Tricuspid Valve Annuloplasty System, was studied for symptomatic chronic functional tricuspid regurgitation. SCOUT and SCOUT-II now have unknown registry recruitment status.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02574650",
+                "https://clinicaltrials.gov/study/NCT03225612"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "NCT02574650",
+                "url": "https://clinicaltrials.gov/study/NCT02574650"
+              },
+              {
+                "label": "NCT03225612",
+                "url": "https://clinicaltrials.gov/study/NCT03225612"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-novacor-lvas",
+          "label": "Novacor LVAS",
+          "group": "device",
+          "category": "Durable ventricular support",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-novacor-lvas",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Novacor LVAS",
+            "treats": [
+              "cond-hfref"
+            ],
+            "subtype": "Durable ventricular support",
+            "regulatoryStatus": "discontinued",
+            "regulatoryDetail": "Original US PMA approved in 1998 · withdrawn in 2011",
+            "description": "FDA approved Novacor LVAS as a bridge to transplantation in patients at imminent risk from nonreversible left ventricular failure. The FDA record lists July 15, 2011 as the withdrawal date. Later service and asset ownership remain unverified.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980012"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P980012",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980012"
+              },
+              {
+                "label": "FDA Novacor LVAS approval record and withdrawal",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980012"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-magna-aortic",
+          "label": "Edwards PERIMOUNT Magna Aortic (model 3000)",
+          "group": "device",
+          "category": "Surgical tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-perimount-magna-aortic",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Edwards PERIMOUNT Magna Aortic (model 3000)",
+            "company": "co-edwards",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Surgical tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Historical US FDA decision · 2003",
+            "description": "FDA approved the Magna model 3000 aortic bioprosthesis in 2003, identifying sewing-ring and support-assembly modifications to the model 2800 aortic valve.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057S018"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P860057/S018",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057S018"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-magna-ease-aortic",
+          "label": "Edwards PERIMOUNT Magna Ease Aortic (3300TFX)",
+          "group": "device",
+          "category": "Surgical tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-perimount-magna-ease-aortic",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Edwards PERIMOUNT Magna Ease Aortic (3300TFX)",
+            "company": "co-edwards",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Surgical tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Historical US FDA decision · 2009",
+            "description": "The 2009 FDA supplement identifies the 3300TFX Magna Ease aortic model as a modification of 3000TFX for native or prosthetic aortic valve replacement. The cited record names changes to the Elgiloy and polyester bands.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057S042"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P860057/S042",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057S042"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-magna-ease-mitral",
+          "label": "Edwards PERIMOUNT Magna Ease Mitral",
+          "group": "device",
+          "category": "Surgical tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-perimount-magna-ease-mitral",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Edwards PERIMOUNT Magna Ease Mitral",
+            "company": "co-edwards",
+            "treats": [
+              "cond-mr",
+              "cond-ms"
+            ],
+            "subtype": "Surgical tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Historical US FDA decision · 2009",
+            "description": "A 2009 FDA supplement names the 7100 and 7100TFX Magna Ease mitral configurations and describes a packaging modification to mitral models 7000 and 7000TFX. This is a mitral decision separate from the 3300TFX aortic design change.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057S054"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P860057/S054",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057S054"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-original",
+          "label": "Edwards PERIMOUNT (model 2700)",
+          "group": "device",
+          "category": "Surgical tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-perimount-original",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Edwards PERIMOUNT (model 2700)",
+            "company": "co-edwards",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Surgical tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Historical US FDA decision · 1991",
+            "description": "The original FDA decision identifies the Carpentier-Edwards pericardial bioprosthesis model 2700 for aortic valve replacement, including replacement of a failed prior aortic prosthesis. The umbrella PMA name also references mitral products. This record represents only the original model.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P860057",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sapien-original",
+          "label": "Edwards SAPIEN (9000TFX)",
+          "group": "device",
+          "category": "Transcatheter aortic replacement",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-sapien-original",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Edwards SAPIEN (9000TFX)",
+            "company": "co-edwards",
+            "treats": [
+              "cond-as"
+            ],
+            "subtype": "Transcatheter aortic replacement",
+            "regulatoryStatus": "discontinued",
+            "regulatoryDetail": "US approvals in 2011 and 2012 · withdrawn in 2019",
+            "description": "The original Edwards SAPIEN 9000TFX received US approval for transfemoral use in an inoperable population in 2011. The 2012 decision identifies the same model and includes transapical and transfemoral accessories. FDA lists March 18, 2019 as the withdrawal date for both decisions.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100041",
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P110021"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P100041",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100041"
+              },
+              {
+                "label": "P110021",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P110021"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-biocor",
+          "label": "St. Jude Medical Biocor and Biocor Supra",
+          "group": "device",
+          "category": "Surgical tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 5,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-sjm-biocor",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "St. Jude Medical Biocor and Biocor Supra",
+            "company": "co-abbott",
+            "treats": [
+              "cond-as",
+              "cond-ar",
+              "cond-mr",
+              "cond-ms"
+            ],
+            "subtype": "Surgical tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Historical US FDA decision · 2005",
+            "description": "FDA's original 2005 PMA identifies two named St. Jude Medical models, Biocor and Biocor Supra. The original decision entry does not detail the full labeled populations or the design changes later approved for Epic. Condition tags indicate the broad valve-disease category.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040021"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P040021",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040021"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-epic",
+          "label": "St. Jude Medical Epic and Epic Supra",
+          "group": "device",
+          "category": "Surgical tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 5,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-sjm-epic",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "St. Jude Medical Epic and Epic Supra",
+            "company": "co-abbott",
+            "treats": [
+              "cond-as",
+              "cond-ar",
+              "cond-mr",
+              "cond-ms"
+            ],
+            "subtype": "Surgical tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Historical US FDA decision · 2007",
+            "description": "FDA added Epic and Epic Supra under P040021 in 2007. Epic was listed in aortic and mitral sizes, and Epic Supra was listed in aortic sizes. Epic Plus has a separate configuration record.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040021S004"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P040021/S004",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040021S004"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-trifecta-gt",
+          "label": "St. Jude Medical Trifecta GT",
+          "group": "device",
+          "category": "Surgical tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-sjm-trifecta-gt",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "St. Jude Medical Trifecta GT",
+            "company": "co-abbott",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Surgical tissue valve",
+            "regulatoryStatus": "discontinued",
+            "regulatoryDetail": "US approval in 2016 · US sales discontinued in 2023",
+            "description": "FDA added Trifecta with Glide Technology to the original PMA in 2016. The FDA's July 2023 update identifies GT among the two models that Abbott stopped selling and distributing in the US.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100029S021",
+                "https://www.fda.gov/medical-devices/letters-health-care-providers/abbott-trifecta-valves-potential-risk-early-structural-valve-deterioration-letter-health-care"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P100029/S021",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100029S021"
+              },
+              {
+                "label": "FDA Trifecta valve letter and US sales-discontinuation update",
+                "url": "https://www.fda.gov/medical-devices/letters-health-care-providers/abbott-trifecta-valves-potential-risk-early-structural-valve-deterioration-letter-health-care"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-trifecta",
+          "label": "St. Jude Medical Trifecta",
+          "group": "device",
+          "category": "Surgical tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-sjm-trifecta",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "St. Jude Medical Trifecta",
+            "company": "co-abbott",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Surgical tissue valve",
+            "regulatoryStatus": "discontinued",
+            "regulatoryDetail": "US approval in 2011 · US sales discontinued in 2023",
+            "description": "FDA approved the original Trifecta surgical aortic valve in 2011. FDA reports that Abbott announced the US sales and distribution stop in July 2023 for both Trifecta models. Other markets were not reviewed.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100029",
+                "https://www.fda.gov/medical-devices/letters-health-care-providers/abbott-trifecta-valves-potential-risk-early-structural-valve-deterioration-letter-health-care"
+              ],
+              "notes": "Device record scoped to the identified configurations, jurisdictions and periods."
+            },
+            "links": [
+              {
+                "label": "P100029",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100029"
+              },
+              {
+                "label": "FDA Trifecta valve letter and US sales-discontinuation update",
+                "url": "https://www.fda.gov/medical-devices/letters-health-care-providers/abbott-trifecta-valves-potential-risk-early-structural-valve-deterioration-letter-health-care"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-portico",
+          "label": "Abbott Portico",
+          "group": "device",
+          "category": "TAVR (self-expanding)",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 12,
+          "pulse": 1,
+          "timelineDate": "2021-09-17",
+          "entity": {
+            "id": "dev-portico",
+            "type": "therapy",
+            "name": "Abbott Portico",
+            "therapyType": "device",
+            "subtype": "TAVR (self-expanding)",
+            "company": "co-abbott",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "Original U.S. PMA P190023, September 17, 2021. Symptomatic severe native calcific aortic stenosis at high or greater surgical risk.",
+            "timeline": {
+              "date": "2021-09-17",
+              "precision": "day",
+              "dateBasis": "fda-approval",
+              "event": "Original U.S. Portico PMA",
+              "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf"
+            },
+            "mechanism": "Self-expanding nitinol frame with bovine-pericardial leaflets and a porcine-pericardial cuff, implanted within the native aortic valve.",
+            "materials": [
+              {
+                "name": "Nitinol",
+                "role": "Self-expanding valve frame",
+                "category": "frame",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023D.pdf"
+              },
+              {
+                "name": "Bovine pericardium",
+                "role": "Three valve leaflets",
+                "category": "leaflet",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023D.pdf"
+              }
+            ],
+            "pulse": 1,
+            "description": "Self-expanding transcatheter aortic valve with a nitinol frame, bovine-pericardial leaflets and a porcine-pericardial sealing cuff. The original U.S. system included FlexNav delivery and loading.",
+            "links": [
+              {
+                "label": "FDA approval and clinical evidence",
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf"
+              },
+              {
+                "label": "Original U.S. instructions for use",
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023D.pdf"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf",
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023D.pdf"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-abbott-epic-plus",
+          "label": "Abbott Epic Plus",
+          "group": "device",
+          "category": "Surgical tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-abbott-epic-plus",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Abbott Epic Plus",
+            "company": "co-abbott",
+            "treats": [
+              "cond-as",
+              "cond-mr"
+            ],
+            "subtype": "Surgical tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "U.S. FDA P040021/S047. Decision date is for the named cuff design change. Exact Epic Plus models, separate original indication, and original authorization date are not yet reviewed.",
+            "description": "Epic Plus is named alongside Epic and Epic Supra in the FDA supplement for a sewing-cuff modification intended to increase radiopacity.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040021S047"
+              ],
+              "notes": "Decision date is for the named cuff design change. Exact Epic Plus models, separate original indication, and original authorization date are not yet reviewed."
+            },
+            "links": [
+              {
+                "label": "FDA device record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040021S047"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-avalus-ultra",
+          "label": "Medtronic Avalus Ultra",
+          "group": "device",
+          "category": "Surgical aortic tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-avalus-ultra",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Medtronic Avalus Ultra",
+            "company": "co-medtronic",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Surgical aortic tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "U.S. FDA P170006/S025. The Avalus Ultra design is separate from original Avalus model 400. Material and sizing claims are unreviewed.",
+            "description": "FDA supplement P170006/S025 names the Avalus Ultra design and documents a radiopaque marker plus changes to the stent base and sewing ring.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170006S025"
+              ],
+              "notes": "The Avalus Ultra design is separate from original Avalus model 400. Material and sizing claims are unreviewed."
+            },
+            "links": [
+              {
+                "label": "FDA device record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170006S025"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-avalus",
+          "label": "Medtronic Avalus",
+          "group": "device",
+          "category": "Surgical aortic tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-avalus",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Medtronic Avalus",
+            "company": "co-medtronic",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Surgical aortic tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "U.S. FDA P170006. The original model 400 decision does not establish specifications for Avalus Ultra.",
+            "description": "Avalus model 400 is a surgical bioprosthesis approved for replacement of diseased, damaged, or malfunctioning native or prosthetic aortic valves.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170006"
+              ],
+              "notes": "The original model 400 decision does not establish specifications for Avalus Ultra."
+            },
+            "links": [
+              {
+                "label": "FDA device record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170006"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-biotronik-biovalve",
+          "label": "BIOTRONIK BIOVALVE",
+          "group": "device",
+          "category": "TAVR (self-expanding)",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-biotronik-biovalve",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "BIOTRONIK BIOVALVE",
+            "company": "co-biotronik",
+            "treats": [
+              "cond-as"
+            ],
+            "subtype": "TAVR (self-expanding)",
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "ClinicalTrials.gov lists 68 actual participants for the registered study as a whole. This registry does not establish a market authorization or current development status.",
+            "description": "The registered European first-in-human BIOVALVE I/II study evaluates the self-expanding BIOVALVE prosthesis for transfemoral treatment of severe symptomatic aortic stenosis.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02249000"
+              ],
+              "notes": "ClinicalTrials.gov lists 68 actual participants for the registered study as a whole. This registry does not establish a market authorization or current development status."
+            },
+            "links": [
+              {
+                "label": "ClinicalTrials.gov study record",
+                "url": "https://clinicaltrials.gov/study/NCT02249000"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-inspiris-resilia",
+          "label": "Edwards INSPIRIS RESILIA",
+          "group": "device",
+          "category": "Surgical aortic tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-inspiris-resilia",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Edwards INSPIRIS RESILIA",
+            "company": "co-edwards",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Surgical aortic tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "U.S. FDA P150048. The same original PMA also names model 11000A. This record describes model 11500A only.",
+            "description": "INSPIRIS RESILIA model 11500A was approved for replacement of native or prosthetic aortic valves.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150048"
+              ],
+              "notes": "The same original PMA also names model 11000A. This record describes model 11500A only."
+            },
+            "links": [
+              {
+                "label": "FDA device record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150048"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-konect-resilia",
+          "label": "Edwards KONECT RESILIA",
+          "group": "device",
+          "category": "Surgical aortic valved conduit",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-konect-resilia",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Edwards KONECT RESILIA",
+            "company": "co-edwards",
+            "treats": [
+              "cond-complex-aortic-root-disease"
+            ],
+            "subtype": "Surgical aortic valved conduit",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "U.S. FDA P150048/S029. This draft establishes the exact conduit identity. The approval statement does not provide the complete indication or dimensional specifications.",
+            "description": "FDA supplement P150048/S029 names the KONECT RESILIA Aortic Valved Conduit, model 11060A.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150048S029"
+              ],
+              "notes": "This draft establishes the exact conduit identity. The approval statement does not provide the complete indication or dimensional specifications."
+            },
+            "links": [
+              {
+                "label": "FDA device record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150048S029"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lotus-edge",
+          "label": "Boston Scientific LOTUS Edge",
+          "group": "device",
+          "category": "Transcatheter aortic valve replacement",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-lotus-edge",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Boston Scientific LOTUS Edge",
+            "company": "co-boston-scientific",
+            "treats": [
+              "cond-as"
+            ],
+            "subtype": "Transcatheter aortic valve replacement",
+            "regulatoryStatus": "discontinued",
+            "regulatoryDetail": "U.S. FDA P180029. Boston Scientific announced global product discontinuation and recall of unused inventory in November 2020. The cited announcement describes a delivery-system recall.",
+            "description": "The original U.S. LOTUS Edge approval covered severe symptomatic native calcific aortic stenosis at high or greater surgical risk.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P180029",
+                "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/boston-scientific-announces-lotus-edgetm-aortic-valve-system-voluntary-recall-and-product"
+              ],
+              "notes": "Boston Scientific announced global product discontinuation and recall of unused inventory in November 2020. The cited announcement describes a delivery-system recall."
+            },
+            "links": [
+              {
+                "label": "FDA device record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P180029"
+              },
+              {
+                "label": "FDA-hosted company discontinuation notice",
+                "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/boston-scientific-announces-lotus-edgetm-aortic-valve-system-voluntary-recall-and-product"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitris-resilia",
+          "label": "Edwards MITRIS RESILIA",
+          "group": "device",
+          "category": "Surgical mitral tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-mitris-resilia",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Edwards MITRIS RESILIA",
+            "company": "co-edwards",
+            "treats": [
+              "cond-mr",
+              "cond-ms"
+            ],
+            "subtype": "Surgical mitral tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "U.S. FDA P150048/S047. This is the named design decision. Later tricuspid TRIFORMIS authorization is a separate scoped decision.",
+            "description": "FDA supplement P150048/S047 names MITRIS RESILIA and documents changes to the wireform, sewing ring, valve holder and handle.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150048S047"
+              ],
+              "notes": "This is the named design decision. Later tricuspid TRIFORMIS authorization is a separate scoped decision."
+            },
+            "links": [
+              {
+                "label": "FDA device record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150048S047"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-on-x-aortic",
+          "label": "On-X aortic heart valve",
+          "group": "device",
+          "category": "Surgical mechanical aortic valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-on-x-aortic",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "On-X aortic heart valve",
+            "company": "co-on-x-life-technologies",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Surgical mechanical aortic valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "U.S. FDA P000037. Original approval scope. Later labeling and other On-X models are outside this draft.",
+            "description": "The original U.S. PMA covers On-X model ONXA for replacement of diseased, damaged, or malfunctioning native or prosthetic aortic valves.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P000037"
+              ],
+              "notes": "Original approval scope. Later labeling and other On-X models are outside this draft."
+            },
+            "links": [
+              {
+                "label": "FDA device record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P000037"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-on-x-mitral",
+          "label": "On-X mitral heart valve",
+          "group": "device",
+          "category": "Surgical mechanical mitral valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-on-x-mitral",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "On-X mitral heart valve",
+            "company": "co-on-x-life-technologies",
+            "treats": [
+              "cond-mr",
+              "cond-ms"
+            ],
+            "subtype": "Surgical mechanical mitral valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "U.S. FDA P000037/S001. This is the mitral supplement to the On-X aortic PMA. Aortic-specific evidence stays with the aortic model.",
+            "description": "The U.S. P000037/S001 supplement covers On-X models ONXM and ONXMC in the mitral position for replacement of diseased, damaged, or malfunctioning native or prosthetic valves.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P000037S001"
+              ],
+              "notes": "This is the mitral supplement to the On-X aortic PMA. Aortic-specific evidence stays with the aortic model."
+            },
+            "links": [
+              {
+                "label": "FDA device record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P000037S001"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perceval-plus",
+          "label": "CORCYM Perceval PLUS",
+          "group": "device",
+          "category": "Sutureless surgical aortic tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-perceval-plus",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "CORCYM Perceval PLUS",
+            "company": "co-corcym",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Sutureless surgical aortic tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "U.S. FDA P150011/S013. The inflow-ring modification is scoped to XL. Original Perceval data remains on the original model.",
+            "description": "FDA supplement P150011/S013 approves the Perceval PLUS model with revised bovine-pericardial treatment and a shorter inflow ring for the XL size.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150011S013"
+              ],
+              "notes": "The inflow-ring modification is scoped to XL. Original Perceval data remains on the original model."
+            },
+            "links": [
+              {
+                "label": "FDA device record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150011S013"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perceval",
+          "label": "CORCYM Perceval",
+          "group": "device",
+          "category": "Sutureless surgical aortic tissue valve",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-perceval",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "CORCYM Perceval",
+            "company": "co-corcym",
+            "treats": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "subtype": "Sutureless surgical aortic tissue valve",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "U.S. FDA P150011. This original FDA decision does not establish Perceval PLUS labeling or sizing.",
+            "description": "The original Perceval sutureless heart valve was approved for replacement of diseased, damaged, or malfunctioning native or prosthetic aortic valves.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150011"
+              ],
+              "notes": "This original FDA decision does not establish Perceval PLUS labeling or sizing."
+            },
+            "links": [
+              {
+                "label": "FDA device record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150011"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sapien-3-alterra",
+          "label": "Edwards SAPIEN 3 with Alterra Adaptive Prestent",
+          "group": "device",
+          "category": "Transcatheter pulmonary valve replacement",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-sapien-3-alterra",
+            "type": "therapy",
+            "therapyType": "device",
+            "name": "Edwards SAPIEN 3 with Alterra Adaptive Prestent",
+            "company": "co-edwards",
+            "treats": [
+              "cond-pv"
+            ],
+            "subtype": "Transcatheter pulmonary valve replacement",
+            "regulatoryStatus": "approved",
+            "regulatoryDetail": "U.S. FDA P200015/S011. Supplement-specific pulmonary configuration. The original SAPIEN 3 aortic valve and the conduit/bioprosthetic pulmonary indication have separate records.",
+            "description": "SAPIEN 3 transcatheter pulmonary valve system combined with Alterra Adaptive Prestent for severe pulmonary regurgitation in a native or surgically repaired right ventricular outflow tract.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200015S011"
+              ],
+              "notes": "Supplement-specific pulmonary configuration. The original SAPIEN 3 aortic valve and the conduit/bioprosthetic pulmonary indication have separate records."
+            },
+            "links": [
+              {
+                "label": "FDA device record",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200015S011"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-mirus",
           "label": "MiRus LLC",
           "group": "company",
@@ -19593,7 +21327,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 6,
+          "degree": 8,
           "pulse": 0,
           "entity": {
             "id": "co-boston-scientific",
@@ -19633,7 +21367,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 18,
+          "degree": 24,
           "pulse": 0,
           "entity": {
             "id": "co-abbott",
@@ -19813,7 +21547,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 17,
+          "degree": 27,
           "pulse": 7,
           "entity": {
             "id": "co-edwards",
@@ -20272,7 +22006,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 5,
+          "degree": 11,
           "pulse": 7,
           "entity": {
             "id": "co-medtronic",
@@ -20307,7 +22041,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 3,
+          "degree": 4,
           "pulse": 8,
           "entity": {
             "id": "co-jenavalve",
@@ -20461,7 +22195,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 4,
           "pulse": 4,
           "entity": {
             "id": "co-corcym",
@@ -24294,6 +26028,164 @@
               "lastUpdated": "2026-11-22",
               "sources": [
                 "https://doi.org/10.1016/j.jacc.2016.03.525"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-cardiokinetix",
+          "label": "CardioKinetix",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-cardiokinetix",
+            "type": "company",
+            "name": "CardioKinetix",
+            "description": "CardioKinetix sponsored studies of the Parachute ventricular partitioning implant. In June 2017, the sponsor reported company closure as the reason for terminating PARACHUTE IV and other studies. The registry does not establish legal dissolution or asset disposition.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01614652",
+                "https://clinicaltrials.gov/study/NCT01286116"
+              ],
+              "notes": "Corporate and program chronology is limited to the cited records."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-direct-flow-medical",
+          "label": "Direct Flow Medical",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-direct-flow-medical",
+            "type": "company",
+            "name": "Direct Flow Medical",
+            "description": "PDL BioPharma reported that Direct Flow Medical shut down operations in December 2016. After a creditor assignment and foreclosure in January 2017, most assets passed to PDL subsidiary DFM, LLC. The report separately describes a China-specific assignment to Haisco and a later license to HaisThera. The legal dissolution date is unverified.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://investor.pdl.com/static-files/e037885d-6811-452e-8ac4-872f30ee4629",
+                "https://clinicaltrials.gov/study/NCT01845285"
+              ],
+              "notes": "Corporate and program chronology is limited to the cited records."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-mitralign",
+          "label": "Mitralign",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "co-mitralign",
+            "type": "company",
+            "name": "Mitralign",
+            "description": "Mitralign sponsored distinct catheter-based direct annuloplasty programs for functional mitral and tricuspid regurgitation. Current corporate and product disposition remain unverified.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01740583",
+                "https://clinicaltrials.gov/study/NCT02574650"
+              ],
+              "notes": "Corporate and program chronology is limited to the cited records."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-symetis",
+          "label": "Symetis",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "co-symetis",
+            "type": "company",
+            "name": "Symetis",
+            "description": "Swiss developer of the ACURATE TA and ACURATE neo/TF aortic valve systems. Boston Scientific announced that its acquisition of Symetis closed on May 16, 2017.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://news.bostonscientific.com/2017-05-16-Boston-Scientific-Closes-Symetis-Acquisition",
+                "https://clinicaltrials.gov/study/NCT03567278"
+              ],
+              "notes": "Corporate and program chronology is limited to the cited records."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-biotronik",
+          "label": "BIOTRONIK",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 1,
+          "pulse": 0,
+          "entity": {
+            "id": "co-biotronik",
+            "type": "company",
+            "name": "BIOTRONIK",
+            "description": "ClinicalTrials.gov identifies BIOTRONIK AG as the organization and sponsor for BIOVALVE I/II.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02249000"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "co-on-x-life-technologies",
+          "label": "On-X Life Technologies",
+          "group": "company",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "co-on-x-life-technologies",
+            "type": "company",
+            "name": "On-X Life Technologies",
+            "description": "FDA identifies On-X Life Technologies as the applicant for the original aortic On-X heart valve.",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P000037"
               ]
             }
           }
@@ -34373,6 +36265,1414 @@
             }
           }
         }
+      },
+      {
+        "data": {
+          "id": "trial-portico-ide",
+          "label": "PORTICO IDE",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-portico-ide",
+            "type": "trial",
+            "name": "PORTICO IDE",
+            "nctId": "NCT02000115",
+            "phase": "Pivotal randomized trial and nested studies",
+            "status": "active",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-portico"
+            ],
+            "primaryEndpoint": "Two coprimary endpoints: 30-day composite safety and one-year death or disabling stroke.",
+            "enrollmentCounts": [
+              {
+                "count": 1242,
+                "basis": "actual",
+                "asOf": "2025-07-20",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT02000115"
+              },
+              {
+                "count": 750,
+                "basis": "randomized",
+                "scope": "Original native-AS randomized IDE cohort",
+                "asOf": "2021-09-17",
+                "source": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf"
+              }
+            ],
+            "resultStatus": "mixed",
+            "primaryAnalysis": {
+              "status": "reported",
+              "date": "2021-01-12",
+              "precision": "day",
+              "source": "https://clinicaltrials.gov/study/NCT02000115?tab=results"
+            },
+            "references": [
+              "https://clinicaltrials.gov/study/NCT02000115",
+              "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6705&t_id=675209",
+              "https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf"
+            ],
+            "outcomeSummary": "Intention-to-treat safety non-inferiority met the prespecified margin. The confirmatory as-treated analysis did not confirm it. See the separate FlexNav analysis in Data.",
+            "links": [
+              {
+                "label": "FDA PAS001 continued IDE follow-up",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6705&t_id=675209"
+              },
+              {
+                "label": "FDA review of original Portico clinical evidence",
+                "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02000115",
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6705&t_id=675209",
+                "https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf"
+              ],
+              "notes": "United States and Australia. The randomized native-AS comparison uses first-generation Portico delivery. FlexNav and valve-in-valve are separately defined cohorts. FDA PAS001 continues follow-up of the existing IDE cohorts. Registry revision posted 2025-07-20."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-flexnav-eu",
+          "label": "Portico FlexNav EU CE Mark Study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-portico-flexnav-eu",
+            "type": "trial",
+            "name": "Portico FlexNav EU CE Mark Study",
+            "nctId": "NCT03724812",
+            "phase": "Prospective single-arm study",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-portico"
+            ],
+            "primaryEndpoint": "Major vascular complications.",
+            "enrollmentCounts": [
+              {
+                "count": 46,
+                "basis": "actual",
+                "asOf": "2021-11-24",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT03724812"
+              }
+            ],
+            "resultStatus": "not-assessed",
+            "primaryAnalysis": {
+              "status": "reported",
+              "date": "2021-03-16",
+              "precision": "day",
+              "source": "https://clinicaltrials.gov/study/NCT03724812?tab=results"
+            },
+            "references": [
+              "https://clinicaltrials.gov/study/NCT03724812"
+            ],
+            "links": [],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT03724812"
+              ],
+              "notes": "European supplemental study of the original Portico valve with the FlexNav delivery system; 19 patients contributed to the FDA PMA analysis cohort. The complete EU registry sample and the pooled FDA samples are distinct. Registry revision posted 2021-11-24."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-confidence",
+          "label": "PORTICO CONFIDENCE registry",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-portico-confidence",
+            "type": "trial",
+            "name": "PORTICO CONFIDENCE registry",
+            "nctId": "NCT03752866",
+            "phase": "Prospective post-market registry",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-portico"
+            ],
+            "primaryEndpoint": "Cardiovascular mortality.",
+            "enrollmentCounts": [
+              {
+                "count": 1001,
+                "basis": "actual",
+                "asOf": "2024-10-21",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT03752866"
+              }
+            ],
+            "resultStatus": "not-assessed",
+            "primaryAnalysis": {
+              "status": "reported",
+              "date": "2024-10-21",
+              "precision": "day",
+              "source": "https://clinicaltrials.gov/study/NCT03752866?tab=results"
+            },
+            "references": [
+              "https://clinicaltrials.gov/study/NCT03752866"
+            ],
+            "links": [],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT03752866"
+              ],
+              "notes": "Original Portico with Portico or FlexNav delivery in nine non-U.S. countries. The two delivery configurations are separately named by the registry. Registry revision posted 2024-10-21."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-portico-one",
+          "label": "PORTICO-1 registry",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-portico-portico-one",
+            "type": "trial",
+            "name": "PORTICO-1 registry",
+            "nctId": "NCT01802788",
+            "phase": "Prospective observational registry",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-portico"
+            ],
+            "primaryEndpoint": "All-cause mortality.",
+            "enrollmentCounts": [
+              {
+                "count": 1032,
+                "basis": "actual",
+                "asOf": "2025-02-11",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT01802788"
+              }
+            ],
+            "resultStatus": "not-assessed",
+            "primaryAnalysis": {
+              "status": "reported",
+              "date": "2022-01-24",
+              "precision": "day",
+              "source": "https://clinicaltrials.gov/study/NCT01802788?tab=results"
+            },
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01802788"
+            ],
+            "links": [],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01802788"
+              ],
+              "notes": "Original Portico in thirteen non-U.S. countries, with planned follow-up through five years. Registry revision posted 2025-02-11."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-transfemoral",
+          "label": "Portico transfemoral implantation study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-portico-transfemoral",
+            "type": "trial",
+            "name": "Portico transfemoral implantation study",
+            "nctId": "NCT01493284",
+            "phase": "Interventional single-arm study",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-portico"
+            ],
+            "primaryEndpoint": "All-cause mortality.",
+            "enrollmentCounts": [
+              {
+                "count": 222,
+                "basis": "actual",
+                "asOf": "2019-02-04",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT01493284"
+              }
+            ],
+            "resultStatus": "not-assessed",
+            "primaryAnalysis": {
+              "status": "reported",
+              "date": "2018-04-23",
+              "precision": "day",
+              "source": "https://clinicaltrials.gov/study/NCT01493284?tab=results"
+            },
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01493284"
+            ],
+            "links": [],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01493284"
+              ],
+              "notes": "Original Portico with transfemoral delivery at sites in Europe and Australia. Registry revision posted 2019-02-04."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-alt",
+          "label": "Portico alternative access study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-portico-alt",
+            "type": "trial",
+            "name": "Portico alternative access study",
+            "nctId": "NCT03056573",
+            "phase": "Interventional study",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-portico"
+            ],
+            "primaryEndpoint": "Major vascular complications.",
+            "enrollmentCounts": [
+              {
+                "count": 64,
+                "basis": "actual",
+                "asOf": "2025-02-11",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT03056573"
+              }
+            ],
+            "resultStatus": "not-assessed",
+            "primaryAnalysis": {
+              "status": "reported",
+              "date": "2020-03-17",
+              "precision": "day",
+              "source": "https://clinicaltrials.gov/study/NCT03056573?tab=results"
+            },
+            "references": [
+              "https://clinicaltrials.gov/study/NCT03056573"
+            ],
+            "links": [],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT03056573"
+              ],
+              "notes": "Original-Portico alternative-access study with transaortic and subclavian/axillary groups at European sites. Registry revision posted 2025-02-11."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-viv-retrospective",
+          "label": "Portico valve-in-valve registry",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-portico-viv-retrospective",
+            "type": "trial",
+            "name": "Portico valve-in-valve registry",
+            "nctId": "NCT05002088",
+            "phase": "Retrospective observational registry",
+            "status": "completed",
+            "conditions": [
+              "cond-failed-surgical-aortic-bioprosthesis"
+            ],
+            "therapies": [
+              "dev-portico"
+            ],
+            "primaryEndpoint": "Composite safety and death or disabling stroke at one year.",
+            "enrollmentCounts": [
+              {
+                "count": 71,
+                "basis": "actual",
+                "asOf": "2025-02-28",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT05002088"
+              }
+            ],
+            "resultStatus": "not-assessed",
+            "primaryAnalysis": {
+              "status": "reported",
+              "date": "2025-02-28",
+              "precision": "day",
+              "source": "https://clinicaltrials.gov/study/NCT05002088?tab=results"
+            },
+            "references": [
+              "https://clinicaltrials.gov/study/NCT05002088"
+            ],
+            "links": [],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT05002088"
+              ],
+              "notes": "Australia and Europe. The population had failed surgical aortic bioprostheses. The registry is separate from the PORTICO IDE nested valve-in-valve cohort. Registry revision posted 2025-02-28."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-23mm-follow-up",
+          "label": "Portico 23 mm long-term follow-up",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-portico-23mm-follow-up",
+            "type": "trial",
+            "name": "Portico 23 mm long-term follow-up",
+            "nctId": "NCT01497418",
+            "phase": "Observational follow-up",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-portico"
+            ],
+            "primaryEndpoint": "Long-term safety.",
+            "enrollmentCounts": [
+              {
+                "count": 2,
+                "basis": "actual",
+                "asOf": "2019-02-04",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT01497418"
+              }
+            ],
+            "resultStatus": "not-assessed",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01497418"
+            ],
+            "links": [],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01497418"
+              ],
+              "notes": "Canadian registry record for long-term follow-up of the 23 mm Portico valve. Two total actual participants are listed. Registry revision posted 2019-02-04."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-navitor-india",
+          "label": "Portico and Navitor India study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-portico-navitor-india",
+            "type": "trial",
+            "name": "Portico and Navitor India study",
+            "nctId": "NCT05171712",
+            "phase": "Interventional study with two reported valve groups",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-portico",
+              "dev-navitor"
+            ],
+            "primaryEndpoint": "Prespecified clinical safety and device-performance measures.",
+            "enrollmentCounts": [
+              {
+                "count": 30,
+                "basis": "actual",
+                "asOf": "2026-04-15",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT05171712"
+              }
+            ],
+            "resultStatus": "not-assessed",
+            "primaryAnalysis": {
+              "status": "reported",
+              "date": "2026-04-15",
+              "precision": "day",
+              "source": "https://clinicaltrials.gov/study/NCT05171712?tab=results"
+            },
+            "references": [
+              "https://clinicaltrials.gov/study/NCT05171712"
+            ],
+            "links": [],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT05171712"
+              ],
+              "notes": "India. Posted Participant Flow identifies Portico and Navitor separately. The whole-study enrollment covers both. Registry revision posted 2026-04-15."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-pas-tvt",
+          "label": "Portico U.S. TVT surveillance",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-portico-pas-tvt",
+            "type": "trial",
+            "name": "Portico U.S. TVT surveillance",
+            "phase": "Post-approval registry surveillance",
+            "status": "unknown",
+            "resultStatus": "ongoing",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-portico"
+            ],
+            "primaryEndpoint": "Device success and prespecified clinical safety and valve-related events.",
+            "references": [
+              "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6706&t_id=675209"
+            ],
+            "links": [
+              {
+                "label": "FDA PAS002 — status and protocol",
+                "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6706&t_id=675209"
+              }
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6706&t_id=675209"
+              ],
+              "notes": "U.S. FDA-mandated descriptive surveillance of original Portico implants attempted with FlexNav at STS/ACC TVT Registry sites. FDA cross-references NCT02000115; this surveillance requirement has no separately verified NCT identity. FDA lists this surveillance as ongoing."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02163850",
+          "label": "Direct Flow Medical US pivotal TAVR study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct02163850",
+            "type": "trial",
+            "nctId": "NCT02163850",
+            "name": "Direct Flow Medical US pivotal TAVR study",
+            "phase": "interventional study",
+            "status": "unknown",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-direct-flow-aortic-valve"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 878,
+                "basis": "estimated",
+                "asOf": "2016-05-03",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT02163850"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT02163850"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02163850"
+              ],
+              "notes": "Registry update 2016-05-03. Overall status: unknown. Last known status: recruiting. The registered Direct Flow arm and blended CoreValve or Edwards SAPIEN comparator do not establish the exact configurations."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01845285",
+          "label": "Direct Flow Medical DISCOVER registry",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct01845285",
+            "type": "trial",
+            "nctId": "NCT01845285",
+            "name": "Direct Flow Medical DISCOVER registry",
+            "phase": "observational study",
+            "status": "unknown",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-direct-flow-aortic-valve"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 1000,
+                "basis": "estimated",
+                "asOf": "2016-02-24",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT01845285"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01845285"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01845285"
+              ],
+              "notes": "Registry update 2016-02-24. Overall status: unknown. Last known status: recruiting."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01614652",
+          "label": "PARACHUTE IV randomized trial",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": true,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct01614652",
+            "type": "trial",
+            "nctId": "NCT01614652",
+            "name": "PARACHUTE IV randomized trial",
+            "phase": "interventional study",
+            "status": "terminated",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "dev-cardiokinetix-parachute"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 331,
+                "basis": "actual",
+                "asOf": "2017-06-23",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT01614652"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01614652"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01614652"
+              ],
+              "notes": "Registry update 2017-06-23. Overall status: terminated. Sponsor-entered stop reason: Company is closed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01286116",
+          "label": "PARACHUTE multinational study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": true,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct01286116",
+            "type": "trial",
+            "nctId": "NCT01286116",
+            "name": "PARACHUTE multinational study",
+            "phase": "interventional study",
+            "status": "terminated",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "dev-cardiokinetix-parachute"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 59,
+                "basis": "actual",
+                "asOf": "2017-06-23",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT01286116"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01286116"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01286116"
+              ],
+              "notes": "Registry update 2017-06-23. Overall status: terminated. Sponsor-entered stop reason: Company closed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02240940",
+          "label": "PARACHUTE China study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": true,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct02240940",
+            "type": "trial",
+            "nctId": "NCT02240940",
+            "name": "PARACHUTE China study",
+            "phase": "interventional study",
+            "status": "terminated",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "dev-cardiokinetix-parachute"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 30,
+                "basis": "actual",
+                "asOf": "2017-06-22",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT02240940"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT02240940"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02240940"
+              ],
+              "notes": "Registry update 2017-06-22. Overall status: terminated. Sponsor-entered stop reason: Company closed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02543632",
+          "label": "PARACHUTE V study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": true,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct02543632",
+            "type": "trial",
+            "nctId": "NCT02543632",
+            "name": "PARACHUTE V study",
+            "phase": "observational study",
+            "status": "terminated",
+            "conditions": [
+              "cond-hfref"
+            ],
+            "therapies": [
+              "dev-cardiokinetix-parachute"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 85,
+                "basis": "actual",
+                "asOf": "2017-06-22",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT02543632"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT02543632"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02543632"
+              ],
+              "notes": "Registry update 2017-06-22. Overall status: terminated. Sponsor-entered stop reason: Company closed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01740583",
+          "label": "Mitralign ALIGN",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct01740583",
+            "type": "trial",
+            "nctId": "NCT01740583",
+            "name": "Mitralign ALIGN",
+            "phase": "interventional study",
+            "status": "unknown",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-mitralign-mpas"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 50,
+                "basis": "estimated",
+                "asOf": "2016-10-17",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT01740583"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01740583"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01740583"
+              ],
+              "notes": "Registry update 2016-10-17. Overall status: unknown. Last known status: active not recruiting."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01852149",
+          "label": "Mitralign MPAS first-in-human study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct01852149",
+            "type": "trial",
+            "nctId": "NCT01852149",
+            "name": "Mitralign MPAS first-in-human study",
+            "phase": "interventional study",
+            "status": "completed",
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-mitralign-mpas"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 35,
+                "basis": "actual",
+                "asOf": "2016-03-18",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT01852149"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01852149"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01852149"
+              ],
+              "notes": "Registry update 2016-03-18. Overall status: completed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02574650",
+          "label": "Trialign SCOUT",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct02574650",
+            "type": "trial",
+            "nctId": "NCT02574650",
+            "name": "Trialign SCOUT",
+            "phase": "interventional study",
+            "status": "unknown",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-mitralign-trialign"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 30,
+                "basis": "estimated",
+                "asOf": "2017-10-27",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT02574650"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT02574650"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02574650"
+              ],
+              "notes": "Registry update 2017-10-27. Overall status: unknown. Last known status: recruiting."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct03225612",
+          "label": "Trialign SCOUT-II",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct03225612",
+            "type": "trial",
+            "nctId": "NCT03225612",
+            "name": "Trialign SCOUT-II",
+            "phase": "interventional study",
+            "status": "unknown",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-mitralign-trialign"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 60,
+                "basis": "estimated",
+                "asOf": "2018-02-07",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT03225612"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT03225612"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT03225612"
+              ],
+              "notes": "Registry update 2018-02-07. Overall status: unknown. Last known status: recruiting."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct03567278",
+          "label": "ACURATE TA feasibility study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct03567278",
+            "type": "trial",
+            "nctId": "NCT03567278",
+            "name": "ACURATE TA feasibility study",
+            "phase": "interventional study",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-acurate-ta"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 40,
+                "basis": "actual",
+                "asOf": "2018-06-25",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT03567278"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT03567278"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT03567278"
+              ],
+              "notes": "Registry update 2018-06-25. Overall status: completed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct03011346",
+          "label": "SCOPE I – ACURATE neo/TF versus SAPIEN 3",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct03011346",
+            "type": "trial",
+            "nctId": "NCT03011346",
+            "name": "SCOPE I – ACURATE neo/TF versus SAPIEN 3",
+            "phase": "interventional study",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-acurate-neo-tf",
+              "dev-sapien-3"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 739,
+                "basis": "actual",
+                "asOf": "2022-03-10",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT03011346"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT03011346"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT03011346"
+              ],
+              "notes": "Registry update 2022-03-10. Overall status: completed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02950428",
+          "label": "ACURATE neo TA delivery study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct02950428",
+            "type": "trial",
+            "nctId": "NCT02950428",
+            "name": "ACURATE neo TA delivery study",
+            "phase": "interventional study",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-acurate-ta"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 60,
+                "basis": "actual",
+                "asOf": "2023-02-23",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT02950428"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT02950428"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02950428"
+              ],
+              "notes": "Registry update 2023-02-23. Overall status: completed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01808274",
+          "label": "Edwards CENTERA safety and performance study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct01808274",
+            "type": "trial",
+            "nctId": "NCT01808274",
+            "name": "Edwards CENTERA safety and performance study",
+            "phase": "interventional study",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-edwards-centera"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 34,
+                "basis": "actual",
+                "asOf": "2018-11-20",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT01808274"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01808274"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01808274"
+              ],
+              "notes": "Registry update 2018-11-20. Overall status: completed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01348438",
+          "label": "Medtronic Engager European pivotal trial",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct01348438",
+            "type": "trial",
+            "nctId": "NCT01348438",
+            "name": "Medtronic Engager European pivotal trial",
+            "phase": "interventional study",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-medtronic-engager"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 125,
+                "basis": "actual",
+                "asOf": "2018-09-18",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT01348438"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01348438"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01348438"
+              ],
+              "notes": "Registry update 2018-09-18. Overall status: completed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01598844",
+          "label": "JenaValve JUPITER transapical AS and AR registry",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct01598844",
+            "type": "trial",
+            "nctId": "NCT01598844",
+            "name": "JenaValve JUPITER transapical AS and AR registry",
+            "phase": "observational study",
+            "status": "completed",
+            "conditions": [
+              "cond-as",
+              "cond-ar"
+            ],
+            "therapies": [
+              "dev-jenavalve-transapical"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 210,
+                "basis": "actual",
+                "asOf": "2020-11-24",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT01598844"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01598844"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01598844"
+              ],
+              "notes": "Registry update 2020-11-24. Overall status: completed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01627691",
+          "label": "LOTUS REPRISE II",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct01627691",
+            "type": "trial",
+            "nctId": "NCT01627691",
+            "name": "LOTUS REPRISE II",
+            "phase": "interventional study",
+            "status": "completed",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-lotus-original"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 250,
+                "basis": "actual",
+                "asOf": "2020-05-12",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT01627691"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT01627691"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT01627691"
+              ],
+              "notes": "Registry update 2020-05-12. Overall status: completed."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02202434",
+          "label": "LOTUS REPRISE III",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": true,
+          "isRetired": false,
+          "degree": 4,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-history-nct02202434",
+            "type": "trial",
+            "nctId": "NCT02202434",
+            "name": "LOTUS REPRISE III",
+            "phase": "interventional study",
+            "status": "terminated",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-lotus-original",
+              "dev-lotus-edge",
+              "dev-evolut"
+            ],
+            "resultStatus": "not-assessed",
+            "enrollmentCounts": [
+              {
+                "count": 1425,
+                "basis": "actual",
+                "asOf": "2021-12-17",
+                "scope": "Whole registry record",
+                "source": "https://clinicaltrials.gov/study/NCT02202434"
+              }
+            ],
+            "references": [
+              "https://clinicaltrials.gov/study/NCT02202434"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-23",
+              "sources": [
+                "https://clinicaltrials.gov/study/NCT02202434"
+              ],
+              "notes": "Registry update 2021-12-17. Overall status: terminated. Sponsor-entered stop reason: RCT/Roll-in completed. CAS/21mm/Nested Registry terminated (investigational device is no longer available). The primary randomized cohort used the original LOTUS. The whole record also includes CoreValve/Evolut R comparators and a nested LOTUS Edge cohort."
+            }
+          }
+        }
       }
     ],
     "edges": [
@@ -38290,6 +41590,822 @@
       },
       {
         "data": {
+          "id": "dev-acurate-neo-tf__made_by__co-symetis",
+          "source": "dev-acurate-neo-tf",
+          "target": "co-symetis",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-acurate-neo-tf__treats__cond-as",
+          "source": "dev-acurate-neo-tf",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-acurate-ta__made_by__co-symetis",
+          "source": "dev-acurate-ta",
+          "target": "co-symetis",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-acurate-ta__treats__cond-as",
+          "source": "dev-acurate-ta",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardiokinetix-parachute__made_by__co-cardiokinetix",
+          "source": "dev-cardiokinetix-parachute",
+          "target": "co-cardiokinetix",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-cardiokinetix-parachute__treats__cond-hfref",
+          "source": "dev-cardiokinetix-parachute",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-direct-flow-aortic-valve__made_by__co-direct-flow-medical",
+          "source": "dev-direct-flow-aortic-valve",
+          "target": "co-direct-flow-medical",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-direct-flow-aortic-valve__treats__cond-as",
+          "source": "dev-direct-flow-aortic-valve",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-edwards-centera__made_by__co-edwards",
+          "source": "dev-edwards-centera",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-edwards-centera__treats__cond-as",
+          "source": "dev-edwards-centera",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-jenavalve-transapical__made_by__co-jenavalve",
+          "source": "dev-jenavalve-transapical",
+          "target": "co-jenavalve",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-jenavalve-transapical__treats__cond-as",
+          "source": "dev-jenavalve-transapical",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-jenavalve-transapical__treats__cond-ar",
+          "source": "dev-jenavalve-transapical",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lotus-original__made_by__co-boston-scientific",
+          "source": "dev-lotus-original",
+          "target": "co-boston-scientific",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lotus-original__treats__cond-as",
+          "source": "dev-lotus-original",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-engager__made_by__co-medtronic",
+          "source": "dev-medtronic-engager",
+          "target": "co-medtronic",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-engager__treats__cond-as",
+          "source": "dev-medtronic-engager",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-freestyle__made_by__co-medtronic",
+          "source": "dev-medtronic-freestyle",
+          "target": "co-medtronic",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-freestyle__treats__cond-as",
+          "source": "dev-medtronic-freestyle",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-freestyle__treats__cond-ar",
+          "source": "dev-medtronic-freestyle",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-hancock-ii__made_by__co-medtronic",
+          "source": "dev-medtronic-hancock-ii",
+          "target": "co-medtronic",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-hancock-ii__treats__cond-as",
+          "source": "dev-medtronic-hancock-ii",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-hancock-ii__treats__cond-ar",
+          "source": "dev-medtronic-hancock-ii",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-hancock-ii__treats__cond-mr",
+          "source": "dev-medtronic-hancock-ii",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-hancock-ii__treats__cond-ms",
+          "source": "dev-medtronic-hancock-ii",
+          "target": "cond-ms",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-mosaic__made_by__co-medtronic",
+          "source": "dev-medtronic-mosaic",
+          "target": "co-medtronic",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-mosaic__treats__cond-as",
+          "source": "dev-medtronic-mosaic",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-mosaic__treats__cond-ar",
+          "source": "dev-medtronic-mosaic",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-mosaic__treats__cond-mr",
+          "source": "dev-medtronic-mosaic",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-medtronic-mosaic__treats__cond-ms",
+          "source": "dev-medtronic-mosaic",
+          "target": "cond-ms",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitralign-mpas__made_by__co-mitralign",
+          "source": "dev-mitralign-mpas",
+          "target": "co-mitralign",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitralign-mpas__treats__cond-mr",
+          "source": "dev-mitralign-mpas",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitralign-trialign__made_by__co-mitralign",
+          "source": "dev-mitralign-trialign",
+          "target": "co-mitralign",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitralign-trialign__treats__cond-tr",
+          "source": "dev-mitralign-trialign",
+          "target": "cond-tr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-novacor-lvas__treats__cond-hfref",
+          "source": "dev-novacor-lvas",
+          "target": "cond-hfref",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-magna-aortic__made_by__co-edwards",
+          "source": "dev-perimount-magna-aortic",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-magna-aortic__treats__cond-as",
+          "source": "dev-perimount-magna-aortic",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-magna-aortic__treats__cond-ar",
+          "source": "dev-perimount-magna-aortic",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-magna-ease-aortic__made_by__co-edwards",
+          "source": "dev-perimount-magna-ease-aortic",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-magna-ease-aortic__treats__cond-as",
+          "source": "dev-perimount-magna-ease-aortic",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-magna-ease-aortic__treats__cond-ar",
+          "source": "dev-perimount-magna-ease-aortic",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-magna-ease-mitral__made_by__co-edwards",
+          "source": "dev-perimount-magna-ease-mitral",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-magna-ease-mitral__treats__cond-mr",
+          "source": "dev-perimount-magna-ease-mitral",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-magna-ease-mitral__treats__cond-ms",
+          "source": "dev-perimount-magna-ease-mitral",
+          "target": "cond-ms",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-original__made_by__co-edwards",
+          "source": "dev-perimount-original",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-original__treats__cond-as",
+          "source": "dev-perimount-original",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perimount-original__treats__cond-ar",
+          "source": "dev-perimount-original",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sapien-original__made_by__co-edwards",
+          "source": "dev-sapien-original",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sapien-original__treats__cond-as",
+          "source": "dev-sapien-original",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-biocor__made_by__co-abbott",
+          "source": "dev-sjm-biocor",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-biocor__treats__cond-as",
+          "source": "dev-sjm-biocor",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-biocor__treats__cond-ar",
+          "source": "dev-sjm-biocor",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-biocor__treats__cond-mr",
+          "source": "dev-sjm-biocor",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-biocor__treats__cond-ms",
+          "source": "dev-sjm-biocor",
+          "target": "cond-ms",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-epic__made_by__co-abbott",
+          "source": "dev-sjm-epic",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-epic__treats__cond-as",
+          "source": "dev-sjm-epic",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-epic__treats__cond-ar",
+          "source": "dev-sjm-epic",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-epic__treats__cond-mr",
+          "source": "dev-sjm-epic",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-epic__treats__cond-ms",
+          "source": "dev-sjm-epic",
+          "target": "cond-ms",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-trifecta-gt__made_by__co-abbott",
+          "source": "dev-sjm-trifecta-gt",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-trifecta-gt__treats__cond-as",
+          "source": "dev-sjm-trifecta-gt",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-trifecta-gt__treats__cond-ar",
+          "source": "dev-sjm-trifecta-gt",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-trifecta__made_by__co-abbott",
+          "source": "dev-sjm-trifecta",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-trifecta__treats__cond-as",
+          "source": "dev-sjm-trifecta",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sjm-trifecta__treats__cond-ar",
+          "source": "dev-sjm-trifecta",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-portico__made_by__co-abbott",
+          "source": "dev-portico",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-portico__treats__cond-as",
+          "source": "dev-portico",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-abbott-epic-plus__made_by__co-abbott",
+          "source": "dev-abbott-epic-plus",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-abbott-epic-plus__treats__cond-as",
+          "source": "dev-abbott-epic-plus",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-abbott-epic-plus__treats__cond-mr",
+          "source": "dev-abbott-epic-plus",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-avalus-ultra__made_by__co-medtronic",
+          "source": "dev-avalus-ultra",
+          "target": "co-medtronic",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-avalus-ultra__treats__cond-as",
+          "source": "dev-avalus-ultra",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-avalus-ultra__treats__cond-ar",
+          "source": "dev-avalus-ultra",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-avalus__made_by__co-medtronic",
+          "source": "dev-avalus",
+          "target": "co-medtronic",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-avalus__treats__cond-as",
+          "source": "dev-avalus",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-avalus__treats__cond-ar",
+          "source": "dev-avalus",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-biotronik-biovalve__made_by__co-biotronik",
+          "source": "dev-biotronik-biovalve",
+          "target": "co-biotronik",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-biotronik-biovalve__treats__cond-as",
+          "source": "dev-biotronik-biovalve",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-inspiris-resilia__made_by__co-edwards",
+          "source": "dev-inspiris-resilia",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-inspiris-resilia__treats__cond-as",
+          "source": "dev-inspiris-resilia",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-inspiris-resilia__treats__cond-ar",
+          "source": "dev-inspiris-resilia",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-konect-resilia__made_by__co-edwards",
+          "source": "dev-konect-resilia",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-konect-resilia__treats__cond-complex-aortic-root-disease",
+          "source": "dev-konect-resilia",
+          "target": "cond-complex-aortic-root-disease",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lotus-edge__made_by__co-boston-scientific",
+          "source": "dev-lotus-edge",
+          "target": "co-boston-scientific",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-lotus-edge__treats__cond-as",
+          "source": "dev-lotus-edge",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitris-resilia__made_by__co-edwards",
+          "source": "dev-mitris-resilia",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitris-resilia__treats__cond-mr",
+          "source": "dev-mitris-resilia",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-mitris-resilia__treats__cond-ms",
+          "source": "dev-mitris-resilia",
+          "target": "cond-ms",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-on-x-aortic__made_by__co-on-x-life-technologies",
+          "source": "dev-on-x-aortic",
+          "target": "co-on-x-life-technologies",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-on-x-aortic__treats__cond-as",
+          "source": "dev-on-x-aortic",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-on-x-aortic__treats__cond-ar",
+          "source": "dev-on-x-aortic",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-on-x-mitral__made_by__co-on-x-life-technologies",
+          "source": "dev-on-x-mitral",
+          "target": "co-on-x-life-technologies",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-on-x-mitral__treats__cond-mr",
+          "source": "dev-on-x-mitral",
+          "target": "cond-mr",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-on-x-mitral__treats__cond-ms",
+          "source": "dev-on-x-mitral",
+          "target": "cond-ms",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perceval-plus__made_by__co-corcym",
+          "source": "dev-perceval-plus",
+          "target": "co-corcym",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perceval-plus__treats__cond-as",
+          "source": "dev-perceval-plus",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perceval-plus__treats__cond-ar",
+          "source": "dev-perceval-plus",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perceval__made_by__co-corcym",
+          "source": "dev-perceval",
+          "target": "co-corcym",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perceval__treats__cond-as",
+          "source": "dev-perceval",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-perceval__treats__cond-ar",
+          "source": "dev-perceval",
+          "target": "cond-ar",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sapien-3-alterra__made_by__co-edwards",
+          "source": "dev-sapien-3-alterra",
+          "target": "co-edwards",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-sapien-3-alterra__treats__cond-pv",
+          "source": "dev-sapien-3-alterra",
+          "target": "cond-pv",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "trial-siegel-star__evaluates__dev-siegel-tavr",
           "source": "trial-siegel-star",
           "target": "dev-siegel-tavr",
@@ -41685,6 +45801,494 @@
           "id": "trial-nhlbi-mitral-cerclage-efs__studies__cond-hf",
           "source": "trial-nhlbi-mitral-cerclage-efs",
           "target": "cond-hf",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-ide__evaluates__dev-portico",
+          "source": "trial-portico-ide",
+          "target": "dev-portico",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-ide__studies__cond-as",
+          "source": "trial-portico-ide",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-flexnav-eu__evaluates__dev-portico",
+          "source": "trial-portico-flexnav-eu",
+          "target": "dev-portico",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-flexnav-eu__studies__cond-as",
+          "source": "trial-portico-flexnav-eu",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-confidence__evaluates__dev-portico",
+          "source": "trial-portico-confidence",
+          "target": "dev-portico",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-confidence__studies__cond-as",
+          "source": "trial-portico-confidence",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-portico-one__evaluates__dev-portico",
+          "source": "trial-portico-portico-one",
+          "target": "dev-portico",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-portico-one__studies__cond-as",
+          "source": "trial-portico-portico-one",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-transfemoral__evaluates__dev-portico",
+          "source": "trial-portico-transfemoral",
+          "target": "dev-portico",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-transfemoral__studies__cond-as",
+          "source": "trial-portico-transfemoral",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-alt__evaluates__dev-portico",
+          "source": "trial-portico-alt",
+          "target": "dev-portico",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-alt__studies__cond-as",
+          "source": "trial-portico-alt",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-viv-retrospective__evaluates__dev-portico",
+          "source": "trial-portico-viv-retrospective",
+          "target": "dev-portico",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-viv-retrospective__studies__cond-failed-surgical-aortic-bioprosthesis",
+          "source": "trial-portico-viv-retrospective",
+          "target": "cond-failed-surgical-aortic-bioprosthesis",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-23mm-follow-up__evaluates__dev-portico",
+          "source": "trial-portico-23mm-follow-up",
+          "target": "dev-portico",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-23mm-follow-up__studies__cond-as",
+          "source": "trial-portico-23mm-follow-up",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-navitor-india__evaluates__dev-portico",
+          "source": "trial-portico-navitor-india",
+          "target": "dev-portico",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-navitor-india__evaluates__dev-navitor",
+          "source": "trial-portico-navitor-india",
+          "target": "dev-navitor",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-navitor-india__studies__cond-as",
+          "source": "trial-portico-navitor-india",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-pas-tvt__evaluates__dev-portico",
+          "source": "trial-portico-pas-tvt",
+          "target": "dev-portico",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-portico-pas-tvt__studies__cond-as",
+          "source": "trial-portico-pas-tvt",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02163850__evaluates__dev-direct-flow-aortic-valve",
+          "source": "trial-history-nct02163850",
+          "target": "dev-direct-flow-aortic-valve",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02163850__studies__cond-as",
+          "source": "trial-history-nct02163850",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01845285__evaluates__dev-direct-flow-aortic-valve",
+          "source": "trial-history-nct01845285",
+          "target": "dev-direct-flow-aortic-valve",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01845285__studies__cond-as",
+          "source": "trial-history-nct01845285",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01614652__evaluates__dev-cardiokinetix-parachute",
+          "source": "trial-history-nct01614652",
+          "target": "dev-cardiokinetix-parachute",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01614652__studies__cond-hfref",
+          "source": "trial-history-nct01614652",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01286116__evaluates__dev-cardiokinetix-parachute",
+          "source": "trial-history-nct01286116",
+          "target": "dev-cardiokinetix-parachute",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01286116__studies__cond-hfref",
+          "source": "trial-history-nct01286116",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02240940__evaluates__dev-cardiokinetix-parachute",
+          "source": "trial-history-nct02240940",
+          "target": "dev-cardiokinetix-parachute",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02240940__studies__cond-hfref",
+          "source": "trial-history-nct02240940",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02543632__evaluates__dev-cardiokinetix-parachute",
+          "source": "trial-history-nct02543632",
+          "target": "dev-cardiokinetix-parachute",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02543632__studies__cond-hfref",
+          "source": "trial-history-nct02543632",
+          "target": "cond-hfref",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01740583__evaluates__dev-mitralign-mpas",
+          "source": "trial-history-nct01740583",
+          "target": "dev-mitralign-mpas",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01740583__studies__cond-mr",
+          "source": "trial-history-nct01740583",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01852149__evaluates__dev-mitralign-mpas",
+          "source": "trial-history-nct01852149",
+          "target": "dev-mitralign-mpas",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01852149__studies__cond-mr",
+          "source": "trial-history-nct01852149",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02574650__evaluates__dev-mitralign-trialign",
+          "source": "trial-history-nct02574650",
+          "target": "dev-mitralign-trialign",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02574650__studies__cond-tr",
+          "source": "trial-history-nct02574650",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct03225612__evaluates__dev-mitralign-trialign",
+          "source": "trial-history-nct03225612",
+          "target": "dev-mitralign-trialign",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct03225612__studies__cond-tr",
+          "source": "trial-history-nct03225612",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct03567278__evaluates__dev-acurate-ta",
+          "source": "trial-history-nct03567278",
+          "target": "dev-acurate-ta",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct03567278__studies__cond-as",
+          "source": "trial-history-nct03567278",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct03011346__evaluates__dev-acurate-neo-tf",
+          "source": "trial-history-nct03011346",
+          "target": "dev-acurate-neo-tf",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct03011346__evaluates__dev-sapien-3",
+          "source": "trial-history-nct03011346",
+          "target": "dev-sapien-3",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct03011346__studies__cond-as",
+          "source": "trial-history-nct03011346",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02950428__evaluates__dev-acurate-ta",
+          "source": "trial-history-nct02950428",
+          "target": "dev-acurate-ta",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02950428__studies__cond-as",
+          "source": "trial-history-nct02950428",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01808274__evaluates__dev-edwards-centera",
+          "source": "trial-history-nct01808274",
+          "target": "dev-edwards-centera",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01808274__studies__cond-as",
+          "source": "trial-history-nct01808274",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01348438__evaluates__dev-medtronic-engager",
+          "source": "trial-history-nct01348438",
+          "target": "dev-medtronic-engager",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01348438__studies__cond-as",
+          "source": "trial-history-nct01348438",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01598844__evaluates__dev-jenavalve-transapical",
+          "source": "trial-history-nct01598844",
+          "target": "dev-jenavalve-transapical",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01598844__studies__cond-as",
+          "source": "trial-history-nct01598844",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01598844__studies__cond-ar",
+          "source": "trial-history-nct01598844",
+          "target": "cond-ar",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01627691__evaluates__dev-lotus-original",
+          "source": "trial-history-nct01627691",
+          "target": "dev-lotus-original",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct01627691__studies__cond-as",
+          "source": "trial-history-nct01627691",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02202434__evaluates__dev-lotus-original",
+          "source": "trial-history-nct02202434",
+          "target": "dev-lotus-original",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02202434__evaluates__dev-lotus-edge",
+          "source": "trial-history-nct02202434",
+          "target": "dev-lotus-edge",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02202434__evaluates__dev-evolut",
+          "source": "trial-history-nct02202434",
+          "target": "dev-evolut",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-history-nct02202434__studies__cond-as",
+          "source": "trial-history-nct02202434",
+          "target": "cond-as",
           "relationship": "studies"
         }
       },

@@ -7868,3 +7868,1035 @@
     sources:
       - https://doi.org/10.1016/j.ahj.2012.03.021
       - https://doi.org/10.1016/j.jacc.2016.03.525
+
+- id: dev-acurate-neo-tf
+  type: therapy
+  therapyType: device
+  name: ACURATE neo/TF
+  company: co-symetis
+  treats:
+    - cond-as
+  subtype: Transcatheter aortic replacement
+  regulatoryStatus: unknown
+  regulatoryDetail: 2017 sales announced outside the US · SCOPE I completed
+  description: >-
+    The original transfemoral ACURATE neo system was studied against SAPIEN 3 in SCOPE I. Boston Scientific identified
+    neo/TF and ACURATE TA separately at the 2017 acquisition. Its original study evidence is tied to neo/TF.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT03011346
+      - https://news.bostonscientific.com/2017-05-16-Boston-Scientific-Closes-Symetis-Acquisition
+      - https://pubmed.ncbi.nlm.nih.gov/38577931/
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: NCT03011346
+      url: https://clinicaltrials.gov/study/NCT03011346
+    - label: Boston Scientific Closes Symetis Acquisition
+      url: https://news.bostonscientific.com/2017-05-16-Boston-Scientific-Closes-Symetis-Acquisition
+    - label: PRECISA registry of ACURATE neo and neo2
+      url: https://pubmed.ncbi.nlm.nih.gov/38577931/
+- id: dev-acurate-ta
+  type: therapy
+  therapyType: device
+  name: ACURATE TA
+  company: co-symetis
+  treats:
+    - cond-as
+  subtype: Transcatheter aortic replacement
+  regulatoryStatus: unknown
+  regulatoryDetail: Studied in Europe · 2017 sales announced outside the US
+  description: >-
+    Symetis’s transapical ACURATE aortic valve and delivery system were studied for severe symptomatic aortic stenosis.
+    After the 2017 acquisition, Boston Scientific announced European and other non-US sales. Current availability and
+    exact country authorizations were not reviewed.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT03567278
+      - https://news.bostonscientific.com/2017-05-16-Boston-Scientific-Closes-Symetis-Acquisition
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: NCT03567278
+      url: https://clinicaltrials.gov/study/NCT03567278
+    - label: Boston Scientific Closes Symetis Acquisition
+      url: https://news.bostonscientific.com/2017-05-16-Boston-Scientific-Closes-Symetis-Acquisition
+- id: dev-cardiokinetix-parachute
+  type: therapy
+  therapyType: device
+  name: CardioKinetix Parachute
+  company: co-cardiokinetix
+  treats:
+    - cond-hfref
+  subtype: Ventricular partitioning
+  regulatoryStatus: investigational
+  regulatoryDetail: Studied in PARACHUTE IV · study terminated
+  description: >-
+    Catheter-delivered left ventricular partitioning implant studied in ischemic heart failure. PARACHUTE IV and other
+    registered studies were terminated. CardioKinetix reported company closure as the reason. The material reviewed does
+    not establish legal dissolution or subsequent device ownership.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01614652
+      - https://clinicaltrials.gov/study/NCT01286116
+      - https://clinicaltrials.gov/study/NCT02240940
+      - https://clinicaltrials.gov/study/NCT02543632
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: NCT01614652
+      url: https://clinicaltrials.gov/study/NCT01614652
+    - label: NCT01286116
+      url: https://clinicaltrials.gov/study/NCT01286116
+    - label: NCT02240940
+      url: https://clinicaltrials.gov/study/NCT02240940
+    - label: NCT02543632
+      url: https://clinicaltrials.gov/study/NCT02543632
+- id: dev-direct-flow-aortic-valve
+  type: therapy
+  therapyType: device
+  name: Direct Flow Medical Transcatheter Aortic Valve
+  company: co-direct-flow-medical
+  treats:
+    - cond-as
+  subtype: Transcatheter aortic replacement
+  regulatoryStatus: investigational
+  regulatoryDetail: Historical US pivotal study
+  description: >-
+    The DISCOVER registry identifies the 18F valve system. The separate US SALUS pivotal study compared a Direct Flow
+    Medical system with commercially available valves, with exact configurations unresolved in that registry. PDL later
+    reported the original developer's operational shutdown and scoped asset transactions.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02163850
+      - https://clinicaltrials.gov/study/NCT01845285
+      - https://investor.pdl.com/static-files/e037885d-6811-452e-8ac4-872f30ee4629
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: NCT02163850
+      url: https://clinicaltrials.gov/study/NCT02163850
+    - label: NCT01845285
+      url: https://clinicaltrials.gov/study/NCT01845285
+    - label: PDL BioPharma 2017 Annual Report
+      url: https://investor.pdl.com/static-files/e037885d-6811-452e-8ac4-872f30ee4629
+- id: dev-edwards-centera
+  type: therapy
+  therapyType: device
+  name: Edwards CENTERA
+  company: co-edwards
+  treats:
+    - cond-as
+  subtype: Transcatheter aortic replacement
+  regulatoryStatus: discontinued
+  regulatoryDetail: Program discontinued by Edwards in 2019
+  description: >-
+    Edwards studied CENTERA as a self-expanding transcatheter aortic valve for severe aortic stenosis. In July 2019
+    Edwards announced its decision to discontinue the CENTERA program.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01808274
+      - https://www.edwards.com/newsroom/news/2019-07-23-edwards-lifesciences-reports-second-quarter-result-8c28a70
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: NCT01808274
+      url: https://clinicaltrials.gov/study/NCT01808274
+    - label: Edwards Lifesciences Reports Second Quarter Results
+      url: https://www.edwards.com/newsroom/news/2019-07-23-edwards-lifesciences-reports-second-quarter-result-8c28a70
+- id: dev-jenavalve-transapical
+  type: therapy
+  therapyType: device
+  name: JenaValve Transapical TAVI System
+  company: co-jenavalve
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Transcatheter aortic replacement
+  regulatoryStatus: unknown
+  regulatoryDetail: Historical transapical JUPITER registry
+  description: >-
+    JUPITER studied the JenaValve transapical system in separate aortic stenosis and aortic regurgitation groups. The
+    current Trilogy version retains its separate evidence and labeling.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01598844
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: NCT01598844
+      url: https://clinicaltrials.gov/study/NCT01598844
+- id: dev-lotus-original
+  type: therapy
+  therapyType: device
+  name: Boston Scientific LOTUS
+  company: co-boston-scientific
+  treats:
+    - cond-as
+  subtype: Transcatheter aortic replacement
+  regulatoryStatus: unknown
+  regulatoryDetail: Historical REPRISE II study device
+  description: >-
+    REPRISE II and the primary randomized cohort of REPRISE III studied the original repositionable LOTUS valve in
+    severe symptomatic aortic stenosis. The entire REPRISE III record also includes a nested LOTUS Edge registry and
+    Medtronic comparators. FDA describes the Edge modifications separately.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01627691
+      - https://clinicaltrials.gov/study/NCT02202434
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf18/P180029B.pdf
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: NCT01627691
+      url: https://clinicaltrials.gov/study/NCT01627691
+    - label: NCT02202434
+      url: https://clinicaltrials.gov/study/NCT02202434
+    - label: FDA Summary of Safety and Effectiveness Data for LOTUS Edge
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf18/P180029B.pdf
+- id: dev-medtronic-engager
+  type: therapy
+  therapyType: device
+  name: Medtronic Engager
+  company: co-medtronic
+  treats:
+    - cond-as
+  subtype: Transcatheter aortic replacement
+  regulatoryStatus: unknown
+  regulatoryDetail: Historical European pivotal study · program disposition unverified
+  description: >-
+    Medtronic registered a European pivotal study of the Engager transapical aortic valve system for severe aortic
+    stenosis. The trial is complete. Current availability and later program disposition remain unverified.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01348438
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: NCT01348438
+      url: https://clinicaltrials.gov/study/NCT01348438
+- id: dev-medtronic-freestyle
+  type: therapy
+  therapyType: device
+  name: Medtronic Freestyle
+  company: co-medtronic
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Surgical tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: Historical US FDA decision · 1997
+  description: >-
+    FDA approved the Freestyle aortic root bioprosthesis model 995 in 1997 for replacement of malfunctioning native or
+    prosthetic aortic valves, with the option of aortic root replacement.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P970031
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P970031
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P970031
+- id: dev-medtronic-hancock-ii
+  type: therapy
+  therapyType: device
+  name: Medtronic Hancock II
+  company: co-medtronic
+  treats:
+    - cond-as
+    - cond-ar
+    - cond-mr
+    - cond-ms
+  subtype: Surgical tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: Historical US FDA decision · 1999
+  description: >-
+    FDA's 1999 decision identifies Hancock II porcine bioprosthesis models T505 and T510 for replacement of pathologic
+    or prosthetic aortic and mitral valves.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980043
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P980043
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980043
+- id: dev-medtronic-mosaic
+  type: therapy
+  therapyType: device
+  name: Medtronic Mosaic
+  company: co-medtronic
+  treats:
+    - cond-as
+    - cond-ar
+    - cond-mr
+    - cond-ms
+  subtype: Surgical tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: Historical US FDA decision · 2000
+  description: >-
+    FDA approved the Mosaic porcine bioprosthesis models 305 (aortic) and 310 (mitral) in 2000 to replace malfunctioning
+    native or prosthetic valves in the respective positions.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P990064
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P990064
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P990064
+- id: dev-mitralign-mpas
+  type: therapy
+  therapyType: device
+  name: Mitralign Percutaneous Annuloplasty System
+  company: co-mitralign
+  treats:
+    - cond-mr
+  subtype: Transcatheter mitral repair
+  regulatoryStatus: investigational
+  regulatoryDetail: Historical mitral study device
+  description: >-
+    MPAS plicates the posterior mitral annulus. ALIGN and the first-in-human study enrolled or planned to enroll
+    patients with chronic functional mitral regurgitation. The current registry status of ALIGN is unknown. Trialign
+    studied the tricuspid application separately.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01740583
+      - https://clinicaltrials.gov/study/NCT01852149
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: NCT01740583
+      url: https://clinicaltrials.gov/study/NCT01740583
+    - label: NCT01852149
+      url: https://clinicaltrials.gov/study/NCT01852149
+- id: dev-mitralign-trialign
+  type: therapy
+  therapyType: device
+  name: Mitralign Trialign
+  company: co-mitralign
+  treats:
+    - cond-tr
+  subtype: Transcatheter tricuspid repair
+  regulatoryStatus: investigational
+  regulatoryDetail: Historical early feasibility and SCOUT-II study device
+  description: >-
+    Trialign, also recorded as TriAlign or the Percutaneous Tricuspid Valve Annuloplasty System, was studied for
+    symptomatic chronic functional tricuspid regurgitation. SCOUT and SCOUT-II now have unknown registry recruitment
+    status.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02574650
+      - https://clinicaltrials.gov/study/NCT03225612
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: NCT02574650
+      url: https://clinicaltrials.gov/study/NCT02574650
+    - label: NCT03225612
+      url: https://clinicaltrials.gov/study/NCT03225612
+- id: dev-novacor-lvas
+  type: therapy
+  therapyType: device
+  name: Novacor LVAS
+  treats:
+    - cond-hfref
+  subtype: Durable ventricular support
+  regulatoryStatus: discontinued
+  regulatoryDetail: Original US PMA approved in 1998 · withdrawn in 2011
+  description: >-
+    FDA approved Novacor LVAS as a bridge to transplantation in patients at imminent risk from nonreversible left
+    ventricular failure. The FDA record lists July 15, 2011 as the withdrawal date. Later service and asset ownership
+    remain unverified.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980012
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P980012
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980012
+    - label: FDA Novacor LVAS approval record and withdrawal
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980012
+- id: dev-perimount-magna-aortic
+  type: therapy
+  therapyType: device
+  name: Edwards PERIMOUNT Magna Aortic (model 3000)
+  company: co-edwards
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Surgical tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: Historical US FDA decision · 2003
+  description: >-
+    FDA approved the Magna model 3000 aortic bioprosthesis in 2003, identifying sewing-ring and support-assembly
+    modifications to the model 2800 aortic valve.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057S018
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P860057/S018
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057S018
+- id: dev-perimount-magna-ease-aortic
+  type: therapy
+  therapyType: device
+  name: Edwards PERIMOUNT Magna Ease Aortic (3300TFX)
+  company: co-edwards
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Surgical tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: Historical US FDA decision · 2009
+  description: >-
+    The 2009 FDA supplement identifies the 3300TFX Magna Ease aortic model as a modification of 3000TFX for native or
+    prosthetic aortic valve replacement. The cited record names changes to the Elgiloy and polyester bands.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057S042
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P860057/S042
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057S042
+- id: dev-perimount-magna-ease-mitral
+  type: therapy
+  therapyType: device
+  name: Edwards PERIMOUNT Magna Ease Mitral
+  company: co-edwards
+  treats:
+    - cond-mr
+    - cond-ms
+  subtype: Surgical tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: Historical US FDA decision · 2009
+  description: >-
+    A 2009 FDA supplement names the 7100 and 7100TFX Magna Ease mitral configurations and describes a packaging
+    modification to mitral models 7000 and 7000TFX. This is a mitral decision separate from the 3300TFX aortic design
+    change.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057S054
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P860057/S054
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057S054
+- id: dev-perimount-original
+  type: therapy
+  therapyType: device
+  name: Edwards PERIMOUNT (model 2700)
+  company: co-edwards
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Surgical tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: Historical US FDA decision · 1991
+  description: >-
+    The original FDA decision identifies the Carpentier-Edwards pericardial bioprosthesis model 2700 for aortic valve
+    replacement, including replacement of a failed prior aortic prosthesis. The umbrella PMA name also references mitral
+    products. This record represents only the original model.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P860057
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P860057
+- id: dev-sapien-original
+  type: therapy
+  therapyType: device
+  name: Edwards SAPIEN (9000TFX)
+  company: co-edwards
+  treats:
+    - cond-as
+  subtype: Transcatheter aortic replacement
+  regulatoryStatus: discontinued
+  regulatoryDetail: US approvals in 2011 and 2012 · withdrawn in 2019
+  description: >-
+    The original Edwards SAPIEN 9000TFX received US approval for transfemoral use in an inoperable population in 2011.
+    The 2012 decision identifies the same model and includes transapical and transfemoral accessories. FDA lists March
+    18, 2019 as the withdrawal date for both decisions.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100041
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P110021
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P100041
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100041
+    - label: P110021
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P110021
+- id: dev-sjm-biocor
+  type: therapy
+  therapyType: device
+  name: St. Jude Medical Biocor and Biocor Supra
+  company: co-abbott
+  treats:
+    - cond-as
+    - cond-ar
+    - cond-mr
+    - cond-ms
+  subtype: Surgical tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: Historical US FDA decision · 2005
+  description: >-
+    FDA's original 2005 PMA identifies two named St. Jude Medical models, Biocor and Biocor Supra. The original decision
+    entry does not detail the full labeled populations or the design changes later approved for Epic. Condition tags
+    indicate the broad valve-disease category.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040021
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P040021
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040021
+- id: dev-sjm-epic
+  type: therapy
+  therapyType: device
+  name: St. Jude Medical Epic and Epic Supra
+  company: co-abbott
+  treats:
+    - cond-as
+    - cond-ar
+    - cond-mr
+    - cond-ms
+  subtype: Surgical tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: Historical US FDA decision · 2007
+  description: >-
+    FDA added Epic and Epic Supra under P040021 in 2007. Epic was listed in aortic and mitral sizes, and Epic Supra was
+    listed in aortic sizes. Epic Plus has a separate configuration record.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040021S004
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P040021/S004
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040021S004
+- id: dev-sjm-trifecta-gt
+  type: therapy
+  therapyType: device
+  name: St. Jude Medical Trifecta GT
+  company: co-abbott
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Surgical tissue valve
+  regulatoryStatus: discontinued
+  regulatoryDetail: US approval in 2016 · US sales discontinued in 2023
+  description: >-
+    FDA added Trifecta with Glide Technology to the original PMA in 2016. The FDA's July 2023 update identifies GT among
+    the two models that Abbott stopped selling and distributing in the US.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100029S021
+      - >-
+        https://www.fda.gov/medical-devices/letters-health-care-providers/abbott-trifecta-valves-potential-risk-early-structural-valve-deterioration-letter-health-care
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P100029/S021
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100029S021
+    - label: FDA Trifecta valve letter and US sales-discontinuation update
+      url: >-
+        https://www.fda.gov/medical-devices/letters-health-care-providers/abbott-trifecta-valves-potential-risk-early-structural-valve-deterioration-letter-health-care
+- id: dev-sjm-trifecta
+  type: therapy
+  therapyType: device
+  name: St. Jude Medical Trifecta
+  company: co-abbott
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Surgical tissue valve
+  regulatoryStatus: discontinued
+  regulatoryDetail: US approval in 2011 · US sales discontinued in 2023
+  description: >-
+    FDA approved the original Trifecta surgical aortic valve in 2011. FDA reports that Abbott announced the US sales and
+    distribution stop in July 2023 for both Trifecta models. Other markets were not reviewed.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100029
+      - >-
+        https://www.fda.gov/medical-devices/letters-health-care-providers/abbott-trifecta-valves-potential-risk-early-structural-valve-deterioration-letter-health-care
+    notes: Device record scoped to the identified configurations, jurisdictions and periods.
+  links:
+    - label: P100029
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100029
+    - label: FDA Trifecta valve letter and US sales-discontinuation update
+      url: >-
+        https://www.fda.gov/medical-devices/letters-health-care-providers/abbott-trifecta-valves-potential-risk-early-structural-valve-deterioration-letter-health-care
+- id: dev-portico
+  type: therapy
+  name: Abbott Portico
+  therapyType: device
+  subtype: TAVR (self-expanding)
+  company: co-abbott
+  treats:
+    - cond-as
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    Original U.S. PMA P190023, September 17, 2021. Symptomatic severe native calcific aortic stenosis at high or greater
+    surgical risk.
+  timeline:
+    date: "2021-09-17"
+    precision: day
+    dateBasis: fda-approval
+    event: Original U.S. Portico PMA
+    source: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf
+  mechanism: >-
+    Self-expanding nitinol frame with bovine-pericardial leaflets and a porcine-pericardial cuff, implanted within the
+    native aortic valve.
+  materials:
+    - name: Nitinol
+      role: Self-expanding valve frame
+      category: frame
+      source: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023D.pdf
+    - name: Bovine pericardium
+      role: Three valve leaflets
+      category: leaflet
+      source: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023D.pdf
+  pulse: 1
+  description: >-
+    Self-expanding transcatheter aortic valve with a nitinol frame, bovine-pericardial leaflets and a
+    porcine-pericardial sealing cuff. The original U.S. system included FlexNav delivery and loading.
+  links:
+    - label: FDA approval and clinical evidence
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf
+    - label: Original U.S. instructions for use
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023D.pdf
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023D.pdf
+- id: dev-abbott-epic-plus
+  type: therapy
+  therapyType: device
+  name: Abbott Epic Plus
+  company: co-abbott
+  treats:
+    - cond-as
+    - cond-mr
+  subtype: Surgical tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    U.S. FDA P040021/S047. Decision date is for the named cuff design change. Exact Epic Plus models, separate original
+    indication, and original authorization date are not yet reviewed.
+  description: >-
+    Epic Plus is named alongside Epic and Epic Supra in the FDA supplement for a sewing-cuff modification intended to
+    increase radiopacity.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040021S047
+    notes: >-
+      Decision date is for the named cuff design change. Exact Epic Plus models, separate original indication, and
+      original authorization date are not yet reviewed.
+  links:
+    - label: FDA device record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P040021S047
+- id: dev-avalus-ultra
+  type: therapy
+  therapyType: device
+  name: Medtronic Avalus Ultra
+  company: co-medtronic
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Surgical aortic tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    U.S. FDA P170006/S025. The Avalus Ultra design is separate from original Avalus model 400. Material and sizing
+    claims are unreviewed.
+  description: >-
+    FDA supplement P170006/S025 names the Avalus Ultra design and documents a radiopaque marker plus changes to the
+    stent base and sewing ring.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170006S025
+    notes: The Avalus Ultra design is separate from original Avalus model 400. Material and sizing claims are unreviewed.
+  links:
+    - label: FDA device record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170006S025
+- id: dev-avalus
+  type: therapy
+  therapyType: device
+  name: Medtronic Avalus
+  company: co-medtronic
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Surgical aortic tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: U.S. FDA P170006. The original model 400 decision does not establish specifications for Avalus Ultra.
+  description: >-
+    Avalus model 400 is a surgical bioprosthesis approved for replacement of diseased, damaged, or malfunctioning native
+    or prosthetic aortic valves.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170006
+    notes: The original model 400 decision does not establish specifications for Avalus Ultra.
+  links:
+    - label: FDA device record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170006
+- id: dev-biotronik-biovalve
+  type: therapy
+  therapyType: device
+  name: BIOTRONIK BIOVALVE
+  company: co-biotronik
+  treats:
+    - cond-as
+  subtype: TAVR (self-expanding)
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    ClinicalTrials.gov lists 68 actual participants for the registered study as a whole. This registry does not
+    establish a market authorization or current development status.
+  description: >-
+    The registered European first-in-human BIOVALVE I/II study evaluates the self-expanding BIOVALVE prosthesis for
+    transfemoral treatment of severe symptomatic aortic stenosis.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02249000
+    notes: >-
+      ClinicalTrials.gov lists 68 actual participants for the registered study as a whole. This registry does not
+      establish a market authorization or current development status.
+  links:
+    - label: ClinicalTrials.gov study record
+      url: https://clinicaltrials.gov/study/NCT02249000
+- id: dev-inspiris-resilia
+  type: therapy
+  therapyType: device
+  name: Edwards INSPIRIS RESILIA
+  company: co-edwards
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Surgical aortic tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: U.S. FDA P150048. The same original PMA also names model 11000A. This record describes model 11500A only.
+  description: INSPIRIS RESILIA model 11500A was approved for replacement of native or prosthetic aortic valves.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150048
+    notes: The same original PMA also names model 11000A. This record describes model 11500A only.
+  links:
+    - label: FDA device record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150048
+- id: dev-konect-resilia
+  type: therapy
+  therapyType: device
+  name: Edwards KONECT RESILIA
+  company: co-edwards
+  treats:
+    - cond-complex-aortic-root-disease
+  subtype: Surgical aortic valved conduit
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    U.S. FDA P150048/S029. This draft establishes the exact conduit identity. The approval statement does not provide
+    the complete indication or dimensional specifications.
+  description: FDA supplement P150048/S029 names the KONECT RESILIA Aortic Valved Conduit, model 11060A.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150048S029
+    notes: >-
+      This draft establishes the exact conduit identity. The approval statement does not provide the complete indication
+      or dimensional specifications.
+  links:
+    - label: FDA device record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150048S029
+- id: dev-lotus-edge
+  type: therapy
+  therapyType: device
+  name: Boston Scientific LOTUS Edge
+  company: co-boston-scientific
+  treats:
+    - cond-as
+  subtype: Transcatheter aortic valve replacement
+  regulatoryStatus: discontinued
+  regulatoryDetail: >-
+    U.S. FDA P180029. Boston Scientific announced global product discontinuation and recall of unused inventory in
+    November 2020. The cited announcement describes a delivery-system recall.
+  description: >-
+    The original U.S. LOTUS Edge approval covered severe symptomatic native calcific aortic stenosis at high or greater
+    surgical risk.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P180029
+      - >-
+        https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/boston-scientific-announces-lotus-edgetm-aortic-valve-system-voluntary-recall-and-product
+    notes: >-
+      Boston Scientific announced global product discontinuation and recall of unused inventory in November 2020. The
+      cited announcement describes a delivery-system recall.
+  links:
+    - label: FDA device record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P180029
+    - label: FDA-hosted company discontinuation notice
+      url: >-
+        https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/boston-scientific-announces-lotus-edgetm-aortic-valve-system-voluntary-recall-and-product
+- id: dev-mitris-resilia
+  type: therapy
+  therapyType: device
+  name: Edwards MITRIS RESILIA
+  company: co-edwards
+  treats:
+    - cond-mr
+    - cond-ms
+  subtype: Surgical mitral tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    U.S. FDA P150048/S047. This is the named design decision. Later tricuspid TRIFORMIS authorization is a separate
+    scoped decision.
+  description: >-
+    FDA supplement P150048/S047 names MITRIS RESILIA and documents changes to the wireform, sewing ring, valve holder
+    and handle.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150048S047
+    notes: This is the named design decision. Later tricuspid TRIFORMIS authorization is a separate scoped decision.
+  links:
+    - label: FDA device record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150048S047
+- id: dev-on-x-aortic
+  type: therapy
+  therapyType: device
+  name: On-X aortic heart valve
+  company: co-on-x-life-technologies
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Surgical mechanical aortic valve
+  regulatoryStatus: approved
+  regulatoryDetail: U.S. FDA P000037. Original approval scope. Later labeling and other On-X models are outside this draft.
+  description: >-
+    The original U.S. PMA covers On-X model ONXA for replacement of diseased, damaged, or malfunctioning native or
+    prosthetic aortic valves.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P000037
+    notes: Original approval scope. Later labeling and other On-X models are outside this draft.
+  links:
+    - label: FDA device record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P000037
+- id: dev-on-x-mitral
+  type: therapy
+  therapyType: device
+  name: On-X mitral heart valve
+  company: co-on-x-life-technologies
+  treats:
+    - cond-mr
+    - cond-ms
+  subtype: Surgical mechanical mitral valve
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    U.S. FDA P000037/S001. This is the mitral supplement to the On-X aortic PMA. Aortic-specific evidence stays with the
+    aortic model.
+  description: >-
+    The U.S. P000037/S001 supplement covers On-X models ONXM and ONXMC in the mitral position for replacement of
+    diseased, damaged, or malfunctioning native or prosthetic valves.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P000037S001
+    notes: This is the mitral supplement to the On-X aortic PMA. Aortic-specific evidence stays with the aortic model.
+  links:
+    - label: FDA device record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P000037S001
+- id: dev-perceval-plus
+  type: therapy
+  therapyType: device
+  name: CORCYM Perceval PLUS
+  company: co-corcym
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Sutureless surgical aortic tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    U.S. FDA P150011/S013. The inflow-ring modification is scoped to XL. Original Perceval data remains on the original
+    model.
+  description: >-
+    FDA supplement P150011/S013 approves the Perceval PLUS model with revised bovine-pericardial treatment and a shorter
+    inflow ring for the XL size.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150011S013
+    notes: The inflow-ring modification is scoped to XL. Original Perceval data remains on the original model.
+  links:
+    - label: FDA device record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150011S013
+- id: dev-perceval
+  type: therapy
+  therapyType: device
+  name: CORCYM Perceval
+  company: co-corcym
+  treats:
+    - cond-as
+    - cond-ar
+  subtype: Sutureless surgical aortic tissue valve
+  regulatoryStatus: approved
+  regulatoryDetail: U.S. FDA P150011. This original FDA decision does not establish Perceval PLUS labeling or sizing.
+  description: >-
+    The original Perceval sutureless heart valve was approved for replacement of diseased, damaged, or malfunctioning
+    native or prosthetic aortic valves.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150011
+    notes: This original FDA decision does not establish Perceval PLUS labeling or sizing.
+  links:
+    - label: FDA device record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150011
+- id: dev-sapien-3-alterra
+  type: therapy
+  therapyType: device
+  name: Edwards SAPIEN 3 with Alterra Adaptive Prestent
+  company: co-edwards
+  treats:
+    - cond-pv
+  subtype: Transcatheter pulmonary valve replacement
+  regulatoryStatus: approved
+  regulatoryDetail: >-
+    U.S. FDA P200015/S011. Supplement-specific pulmonary configuration. The original SAPIEN 3 aortic valve and the
+    conduit/bioprosthetic pulmonary indication have separate records.
+  description: >-
+    SAPIEN 3 transcatheter pulmonary valve system combined with Alterra Adaptive Prestent for severe pulmonary
+    regurgitation in a native or surgically repaired right ventricular outflow tract.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200015S011
+    notes: >-
+      Supplement-specific pulmonary configuration. The original SAPIEN 3 aortic valve and the conduit/bioprosthetic
+      pulmonary indication have separate records.
+  links:
+    - label: FDA device record
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200015S011

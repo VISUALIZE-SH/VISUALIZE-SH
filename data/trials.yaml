@@ -6020,3 +6020,809 @@
     notes: >-
       Registry revision 2026-04-29, PubMed abstracts and the open-access 5-year full text, retrieved 2026-11-18. The
       5-year paper reports conflicting heart-block device counts (p4 vs p9).
+
+- id: trial-portico-ide
+  type: trial
+  name: PORTICO IDE
+  nctId: NCT02000115
+  phase: Pivotal randomized trial and nested studies
+  status: active
+  conditions:
+    - cond-as
+  therapies:
+    - dev-portico
+  primaryEndpoint: "Two coprimary endpoints: 30-day composite safety and one-year death or disabling stroke."
+  enrollmentCounts:
+    - count: 1242
+      basis: actual
+      asOf: "2025-07-20"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT02000115
+    - count: 750
+      basis: randomized
+      scope: Original native-AS randomized IDE cohort
+      asOf: "2021-09-17"
+      source: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf
+  resultStatus: mixed
+  primaryAnalysis:
+    status: reported
+    date: "2021-01-12"
+    precision: day
+    source: https://clinicaltrials.gov/study/NCT02000115?tab=results
+  references:
+    - https://clinicaltrials.gov/study/NCT02000115
+    - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6705&t_id=675209
+    - https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf
+  outcomeSummary: >-
+    Intention-to-treat safety non-inferiority met the prespecified margin. The confirmatory as-treated analysis did not
+    confirm it. See the separate FlexNav analysis in Data.
+  links:
+    - label: FDA PAS001 continued IDE follow-up
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6705&t_id=675209
+    - label: FDA review of original Portico clinical evidence
+      url: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02000115
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6705&t_id=675209
+      - https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190023B.pdf
+    notes: >-
+      United States and Australia. The randomized native-AS comparison uses first-generation Portico delivery. FlexNav
+      and valve-in-valve are separately defined cohorts. FDA PAS001 continues follow-up of the existing IDE cohorts.
+      Registry revision posted 2025-07-20.
+- id: trial-portico-flexnav-eu
+  type: trial
+  name: Portico FlexNav EU CE Mark Study
+  nctId: NCT03724812
+  phase: Prospective single-arm study
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-portico
+  primaryEndpoint: Major vascular complications.
+  enrollmentCounts:
+    - count: 46
+      basis: actual
+      asOf: "2021-11-24"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT03724812
+  resultStatus: not-assessed
+  primaryAnalysis:
+    status: reported
+    date: "2021-03-16"
+    precision: day
+    source: https://clinicaltrials.gov/study/NCT03724812?tab=results
+  references:
+    - https://clinicaltrials.gov/study/NCT03724812
+  links: []
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT03724812
+    notes: >-
+      European supplemental study of the original Portico valve with the FlexNav delivery system; 19 patients
+      contributed to the FDA PMA analysis cohort. The complete EU registry sample and the pooled FDA samples are
+      distinct. Registry revision posted 2021-11-24.
+- id: trial-portico-confidence
+  type: trial
+  name: PORTICO CONFIDENCE registry
+  nctId: NCT03752866
+  phase: Prospective post-market registry
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-portico
+  primaryEndpoint: Cardiovascular mortality.
+  enrollmentCounts:
+    - count: 1001
+      basis: actual
+      asOf: "2024-10-21"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT03752866
+  resultStatus: not-assessed
+  primaryAnalysis:
+    status: reported
+    date: "2024-10-21"
+    precision: day
+    source: https://clinicaltrials.gov/study/NCT03752866?tab=results
+  references:
+    - https://clinicaltrials.gov/study/NCT03752866
+  links: []
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT03752866
+    notes: >-
+      Original Portico with Portico or FlexNav delivery in nine non-U.S. countries. The two delivery configurations are
+      separately named by the registry. Registry revision posted 2024-10-21.
+- id: trial-portico-portico-one
+  type: trial
+  name: PORTICO-1 registry
+  nctId: NCT01802788
+  phase: Prospective observational registry
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-portico
+  primaryEndpoint: All-cause mortality.
+  enrollmentCounts:
+    - count: 1032
+      basis: actual
+      asOf: "2025-02-11"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT01802788
+  resultStatus: not-assessed
+  primaryAnalysis:
+    status: reported
+    date: "2022-01-24"
+    precision: day
+    source: https://clinicaltrials.gov/study/NCT01802788?tab=results
+  references:
+    - https://clinicaltrials.gov/study/NCT01802788
+  links: []
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01802788
+    notes: >-
+      Original Portico in thirteen non-U.S. countries, with planned follow-up through five years. Registry revision
+      posted 2025-02-11.
+- id: trial-portico-transfemoral
+  type: trial
+  name: Portico transfemoral implantation study
+  nctId: NCT01493284
+  phase: Interventional single-arm study
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-portico
+  primaryEndpoint: All-cause mortality.
+  enrollmentCounts:
+    - count: 222
+      basis: actual
+      asOf: "2019-02-04"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT01493284
+  resultStatus: not-assessed
+  primaryAnalysis:
+    status: reported
+    date: "2018-04-23"
+    precision: day
+    source: https://clinicaltrials.gov/study/NCT01493284?tab=results
+  references:
+    - https://clinicaltrials.gov/study/NCT01493284
+  links: []
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01493284
+    notes: Original Portico with transfemoral delivery at sites in Europe and Australia. Registry revision posted 2019-02-04.
+- id: trial-portico-alt
+  type: trial
+  name: Portico alternative access study
+  nctId: NCT03056573
+  phase: Interventional study
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-portico
+  primaryEndpoint: Major vascular complications.
+  enrollmentCounts:
+    - count: 64
+      basis: actual
+      asOf: "2025-02-11"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT03056573
+  resultStatus: not-assessed
+  primaryAnalysis:
+    status: reported
+    date: "2020-03-17"
+    precision: day
+    source: https://clinicaltrials.gov/study/NCT03056573?tab=results
+  references:
+    - https://clinicaltrials.gov/study/NCT03056573
+  links: []
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT03056573
+    notes: >-
+      Original-Portico alternative-access study with transaortic and subclavian/axillary groups at European sites.
+      Registry revision posted 2025-02-11.
+- id: trial-portico-viv-retrospective
+  type: trial
+  name: Portico valve-in-valve registry
+  nctId: NCT05002088
+  phase: Retrospective observational registry
+  status: completed
+  conditions:
+    - cond-failed-surgical-aortic-bioprosthesis
+  therapies:
+    - dev-portico
+  primaryEndpoint: Composite safety and death or disabling stroke at one year.
+  enrollmentCounts:
+    - count: 71
+      basis: actual
+      asOf: "2025-02-28"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT05002088
+  resultStatus: not-assessed
+  primaryAnalysis:
+    status: reported
+    date: "2025-02-28"
+    precision: day
+    source: https://clinicaltrials.gov/study/NCT05002088?tab=results
+  references:
+    - https://clinicaltrials.gov/study/NCT05002088
+  links: []
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT05002088
+    notes: >-
+      Australia and Europe. The population had failed surgical aortic bioprostheses. The registry is separate from the
+      PORTICO IDE nested valve-in-valve cohort. Registry revision posted 2025-02-28.
+- id: trial-portico-23mm-follow-up
+  type: trial
+  name: Portico 23 mm long-term follow-up
+  nctId: NCT01497418
+  phase: Observational follow-up
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-portico
+  primaryEndpoint: Long-term safety.
+  enrollmentCounts:
+    - count: 2
+      basis: actual
+      asOf: "2019-02-04"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT01497418
+  resultStatus: not-assessed
+  primaryAnalysis:
+    status: not-reported
+  references:
+    - https://clinicaltrials.gov/study/NCT01497418
+  links: []
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01497418
+    notes: >-
+      Canadian registry record for long-term follow-up of the 23 mm Portico valve. Two total actual participants are
+      listed. Registry revision posted 2019-02-04.
+- id: trial-portico-navitor-india
+  type: trial
+  name: Portico and Navitor India study
+  nctId: NCT05171712
+  phase: Interventional study with two reported valve groups
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-portico
+    - dev-navitor
+  primaryEndpoint: Prespecified clinical safety and device-performance measures.
+  enrollmentCounts:
+    - count: 30
+      basis: actual
+      asOf: "2026-04-15"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT05171712
+  resultStatus: not-assessed
+  primaryAnalysis:
+    status: reported
+    date: "2026-04-15"
+    precision: day
+    source: https://clinicaltrials.gov/study/NCT05171712?tab=results
+  references:
+    - https://clinicaltrials.gov/study/NCT05171712
+  links: []
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT05171712
+    notes: >-
+      India. Posted Participant Flow identifies Portico and Navitor separately. The whole-study enrollment covers both.
+      Registry revision posted 2026-04-15.
+- id: trial-portico-pas-tvt
+  type: trial
+  name: Portico U.S. TVT surveillance
+  phase: Post-approval registry surveillance
+  status: unknown
+  resultStatus: ongoing
+  conditions:
+    - cond-as
+  therapies:
+    - dev-portico
+  primaryEndpoint: Device success and prespecified clinical safety and valve-related events.
+  references:
+    - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6706&t_id=675209
+  links:
+    - label: FDA PAS002 — status and protocol
+      url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6706&t_id=675209
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma_pas.cfm?c_id=6706&t_id=675209
+    notes: >-
+      U.S. FDA-mandated descriptive surveillance of original Portico implants attempted with FlexNav at STS/ACC TVT
+      Registry sites. FDA cross-references NCT02000115; this surveillance requirement has no separately verified NCT
+      identity. FDA lists this surveillance as ongoing.
+- id: trial-history-nct02163850
+  type: trial
+  nctId: NCT02163850
+  name: Direct Flow Medical US pivotal TAVR study
+  phase: interventional study
+  status: unknown
+  conditions:
+    - cond-as
+  therapies:
+    - dev-direct-flow-aortic-valve
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 878
+      basis: estimated
+      asOf: "2016-05-03"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT02163850
+  references:
+    - https://clinicaltrials.gov/study/NCT02163850
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02163850
+    notes: >-
+      Registry update 2016-05-03. Overall status: unknown. Last known status: recruiting. The registered Direct Flow arm
+      and blended CoreValve or Edwards SAPIEN comparator do not establish the exact configurations.
+- id: trial-history-nct01845285
+  type: trial
+  nctId: NCT01845285
+  name: Direct Flow Medical DISCOVER registry
+  phase: observational study
+  status: unknown
+  conditions:
+    - cond-as
+  therapies:
+    - dev-direct-flow-aortic-valve
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 1000
+      basis: estimated
+      asOf: "2016-02-24"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT01845285
+  references:
+    - https://clinicaltrials.gov/study/NCT01845285
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01845285
+    notes: "Registry update 2016-02-24. Overall status: unknown. Last known status: recruiting."
+- id: trial-history-nct01614652
+  type: trial
+  nctId: NCT01614652
+  name: PARACHUTE IV randomized trial
+  phase: interventional study
+  status: terminated
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-cardiokinetix-parachute
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 331
+      basis: actual
+      asOf: "2017-06-23"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT01614652
+  references:
+    - https://clinicaltrials.gov/study/NCT01614652
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01614652
+    notes: "Registry update 2017-06-23. Overall status: terminated. Sponsor-entered stop reason: Company is closed."
+- id: trial-history-nct01286116
+  type: trial
+  nctId: NCT01286116
+  name: PARACHUTE multinational study
+  phase: interventional study
+  status: terminated
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-cardiokinetix-parachute
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 59
+      basis: actual
+      asOf: "2017-06-23"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT01286116
+  references:
+    - https://clinicaltrials.gov/study/NCT01286116
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01286116
+    notes: "Registry update 2017-06-23. Overall status: terminated. Sponsor-entered stop reason: Company closed."
+- id: trial-history-nct02240940
+  type: trial
+  nctId: NCT02240940
+  name: PARACHUTE China study
+  phase: interventional study
+  status: terminated
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-cardiokinetix-parachute
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 30
+      basis: actual
+      asOf: "2017-06-22"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT02240940
+  references:
+    - https://clinicaltrials.gov/study/NCT02240940
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02240940
+    notes: "Registry update 2017-06-22. Overall status: terminated. Sponsor-entered stop reason: Company closed."
+- id: trial-history-nct02543632
+  type: trial
+  nctId: NCT02543632
+  name: PARACHUTE V study
+  phase: observational study
+  status: terminated
+  conditions:
+    - cond-hfref
+  therapies:
+    - dev-cardiokinetix-parachute
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 85
+      basis: actual
+      asOf: "2017-06-22"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT02543632
+  references:
+    - https://clinicaltrials.gov/study/NCT02543632
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02543632
+    notes: "Registry update 2017-06-22. Overall status: terminated. Sponsor-entered stop reason: Company closed."
+- id: trial-history-nct01740583
+  type: trial
+  nctId: NCT01740583
+  name: Mitralign ALIGN
+  phase: interventional study
+  status: unknown
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-mitralign-mpas
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 50
+      basis: estimated
+      asOf: "2016-10-17"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT01740583
+  references:
+    - https://clinicaltrials.gov/study/NCT01740583
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01740583
+    notes: "Registry update 2016-10-17. Overall status: unknown. Last known status: active not recruiting."
+- id: trial-history-nct01852149
+  type: trial
+  nctId: NCT01852149
+  name: Mitralign MPAS first-in-human study
+  phase: interventional study
+  status: completed
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-mitralign-mpas
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 35
+      basis: actual
+      asOf: "2016-03-18"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT01852149
+  references:
+    - https://clinicaltrials.gov/study/NCT01852149
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01852149
+    notes: "Registry update 2016-03-18. Overall status: completed."
+- id: trial-history-nct02574650
+  type: trial
+  nctId: NCT02574650
+  name: Trialign SCOUT
+  phase: interventional study
+  status: unknown
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-mitralign-trialign
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 30
+      basis: estimated
+      asOf: "2017-10-27"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT02574650
+  references:
+    - https://clinicaltrials.gov/study/NCT02574650
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02574650
+    notes: "Registry update 2017-10-27. Overall status: unknown. Last known status: recruiting."
+- id: trial-history-nct03225612
+  type: trial
+  nctId: NCT03225612
+  name: Trialign SCOUT-II
+  phase: interventional study
+  status: unknown
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-mitralign-trialign
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 60
+      basis: estimated
+      asOf: "2018-02-07"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT03225612
+  references:
+    - https://clinicaltrials.gov/study/NCT03225612
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT03225612
+    notes: "Registry update 2018-02-07. Overall status: unknown. Last known status: recruiting."
+- id: trial-history-nct03567278
+  type: trial
+  nctId: NCT03567278
+  name: ACURATE TA feasibility study
+  phase: interventional study
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-acurate-ta
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 40
+      basis: actual
+      asOf: "2018-06-25"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT03567278
+  references:
+    - https://clinicaltrials.gov/study/NCT03567278
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT03567278
+    notes: "Registry update 2018-06-25. Overall status: completed."
+- id: trial-history-nct03011346
+  type: trial
+  nctId: NCT03011346
+  name: SCOPE I – ACURATE neo/TF versus SAPIEN 3
+  phase: interventional study
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-acurate-neo-tf
+    - dev-sapien-3
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 739
+      basis: actual
+      asOf: "2022-03-10"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT03011346
+  references:
+    - https://clinicaltrials.gov/study/NCT03011346
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT03011346
+    notes: "Registry update 2022-03-10. Overall status: completed."
+- id: trial-history-nct02950428
+  type: trial
+  nctId: NCT02950428
+  name: ACURATE neo TA delivery study
+  phase: interventional study
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-acurate-ta
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 60
+      basis: actual
+      asOf: "2023-02-23"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT02950428
+  references:
+    - https://clinicaltrials.gov/study/NCT02950428
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02950428
+    notes: "Registry update 2023-02-23. Overall status: completed."
+- id: trial-history-nct01808274
+  type: trial
+  nctId: NCT01808274
+  name: Edwards CENTERA safety and performance study
+  phase: interventional study
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-edwards-centera
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 34
+      basis: actual
+      asOf: "2018-11-20"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT01808274
+  references:
+    - https://clinicaltrials.gov/study/NCT01808274
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01808274
+    notes: "Registry update 2018-11-20. Overall status: completed."
+- id: trial-history-nct01348438
+  type: trial
+  nctId: NCT01348438
+  name: Medtronic Engager European pivotal trial
+  phase: interventional study
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-medtronic-engager
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 125
+      basis: actual
+      asOf: "2018-09-18"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT01348438
+  references:
+    - https://clinicaltrials.gov/study/NCT01348438
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01348438
+    notes: "Registry update 2018-09-18. Overall status: completed."
+- id: trial-history-nct01598844
+  type: trial
+  nctId: NCT01598844
+  name: JenaValve JUPITER transapical AS and AR registry
+  phase: observational study
+  status: completed
+  conditions:
+    - cond-as
+    - cond-ar
+  therapies:
+    - dev-jenavalve-transapical
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 210
+      basis: actual
+      asOf: "2020-11-24"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT01598844
+  references:
+    - https://clinicaltrials.gov/study/NCT01598844
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01598844
+    notes: "Registry update 2020-11-24. Overall status: completed."
+- id: trial-history-nct01627691
+  type: trial
+  nctId: NCT01627691
+  name: LOTUS REPRISE II
+  phase: interventional study
+  status: completed
+  conditions:
+    - cond-as
+  therapies:
+    - dev-lotus-original
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 250
+      basis: actual
+      asOf: "2020-05-12"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT01627691
+  references:
+    - https://clinicaltrials.gov/study/NCT01627691
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT01627691
+    notes: "Registry update 2020-05-12. Overall status: completed."
+- id: trial-history-nct02202434
+  type: trial
+  nctId: NCT02202434
+  name: LOTUS REPRISE III
+  phase: interventional study
+  status: terminated
+  conditions:
+    - cond-as
+  therapies:
+    - dev-lotus-original
+    - dev-lotus-edge
+    - dev-evolut
+  resultStatus: not-assessed
+  enrollmentCounts:
+    - count: 1425
+      basis: actual
+      asOf: "2021-12-17"
+      scope: Whole registry record
+      source: https://clinicaltrials.gov/study/NCT02202434
+  references:
+    - https://clinicaltrials.gov/study/NCT02202434
+  curation:
+    status: curated
+    lastUpdated: "2026-11-23"
+    sources:
+      - https://clinicaltrials.gov/study/NCT02202434
+    notes: >-
+      Registry update 2021-12-17. Overall status: terminated. Sponsor-entered stop reason: RCT/Roll-in completed.
+      CAS/21mm/Nested Registry terminated (investigational device is no longer available). The primary randomized cohort
+      used the original LOTUS. The whole record also includes CoreValve/Evolut R comparators and a nested LOTUS Edge
+      cohort.

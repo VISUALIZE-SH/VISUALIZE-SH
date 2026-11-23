@@ -394,3 +394,6 @@ button.intel-product::after { content: '▸'; position: absolute; top: 50%; righ
   .intel-compare-actions { justify-content: flex-end; }
   .intel-spec-table th:first-child { min-width: 120px; }
 }
+
+.intel-profile-study-list { display: grid; gap: 6px; margin: 10px 0 0; padding: 0; list-style: none; }
+.intel-profile-study-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }

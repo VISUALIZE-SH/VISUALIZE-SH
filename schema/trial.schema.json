@@ -51,7 +51,7 @@
     "year": { "type": "integer", "description": "Year of primary publication / key readout." },
     "primaryEndpoint": { "type": "string" },
     "outcomeSummary": { "type": "string" },
-    "resultStatus": { "enum": ["positive", "mixed", "negative", "ongoing", "terminated"] },
+    "resultStatus": { "enum": ["positive", "mixed", "negative", "ongoing", "terminated", "not-assessed"] },
     "references": {
       "type": "array",
       "items": {
