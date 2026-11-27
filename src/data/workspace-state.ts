@@ -5,6 +5,8 @@ import type { AppMode, IntelligenceData } from '../types/intelligence'
 export interface WorkspaceState {
   mode: AppMode
   dataView: 'browse' | 'compare'
+  /** News page or its archive of older items (News only). */
+  newsView: 'latest' | 'archive'
   compareCategory: string
   compareVersionIds: string[]
   compareConfigurationIds: string[]
@@ -42,6 +44,7 @@ export function parseWorkspace(search: string): WorkspaceState {
   return {
     mode,
     dataView: mode === 'data' && query.get('dataView') === 'compare' ? 'compare' : 'browse',
+    newsView: mode === 'news' && query.get('newsView') === 'archive' ? 'archive' : 'latest',
     compareCategory: id(query.get('compareCategory')),
     compareVersionIds: [...new Set(query.getAll('compare').map(value => id(value)).filter(Boolean))].slice(0, 4),
     compareConfigurationIds: [...new Set(query.getAll('compareConfig').map(value => id(value)).filter(Boolean))].slice(0, 4),
@@ -76,6 +79,7 @@ export function workspaceQuery(state: WorkspaceState): string {
     if (state.asOf) query.set('asOf', state.asOf)
   }
   if (state.mode === 'news') {
+    if (state.newsView === 'archive') query.set('newsView', 'archive')
     if (state.newsFrom) query.set('newsFrom', state.newsFrom)
     if (state.newsTo) query.set('newsTo', state.newsTo)
   }

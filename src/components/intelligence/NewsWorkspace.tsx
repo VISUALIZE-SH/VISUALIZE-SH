@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState, type MouseEvent, type ReactNode } from 'react'
 import type { GraphNodeData, NewsItem } from '../../types/entities'
 import type { IntelligenceData, ProductFamily, ProductVersion } from '../../types/intelligence'
 import { formatEvidenceDate, isOnOrBefore } from '../../data/intelligence'
 import { normalizeAtlasTopic } from '../../data/atlas-topic'
 import NewsContentBadge, { newsContentTypeLabel } from '../NewsContentBadge'
 import { isLocalArticleUrl } from '../../editorial/local-articles'
+import { NEWS_PAGE_LIMIT } from '../../data/news-archive'
 import './intelligence.css'
 
 export interface NewsWorkspaceProps {
@@ -19,6 +20,27 @@ export interface NewsWorkspaceProps {
   newsFrom: string
   newsTo: string
   searchQuery: string
+  /** The News page, or the News Archive of older items. */
+  view?: 'latest' | 'archive'
+  /** Published items moved off the News page into the archive. */
+  archiveCount?: number
+  viewHref?: (view: 'latest' | 'archive') => string
+  onViewChange?: (view: 'latest' | 'archive') => void
+}
+
+function ViewLink({ view, href, onChange, className, children }: {
+  view: 'latest' | 'archive'
+  href?: (view: 'latest' | 'archive') => string
+  onChange?: (view: 'latest' | 'archive') => void
+  className: string
+  children: ReactNode
+}) {
+  function follow(event: MouseEvent<HTMLAnchorElement>) {
+    if (!onChange || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+    event.preventDefault()
+    onChange(view)
+  }
+  return <a className={className} href={href?.(view) ?? '#'} onClick={follow}>{children}</a>
 }
 
 interface FamilyTrail {
@@ -133,7 +155,9 @@ function ConnectionPanel({
 
 export default function NewsWorkspace({
   data, legacyNews, nodesById, versionId, onOpenAtlas, onOpenAtlasTopic, onOpenData, atlasTopics, newsFrom, newsTo, searchQuery,
+  view = 'latest', archiveCount = 0, viewHref, onViewChange,
 }: NewsWorkspaceProps) {
+  const archive = view === 'archive'
   const [visibleCount, setVisibleCount] = useState(12)
   const stories = useMemo(() => legacyNews.filter((item) => {
     if (newsFrom && item.publishedAt < newsFrom) return false
@@ -145,19 +169,23 @@ export default function NewsWorkspace({
       || item.relevantNodeIds.includes(versionId)
   }).slice().sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || a.title.localeCompare(b.title)), [legacyNews, data, versionId, newsFrom, newsTo, searchQuery])
 
-  useEffect(() => setVisibleCount(12), [versionId, newsFrom, newsTo, searchQuery])
+  useEffect(() => setVisibleCount(12), [versionId, newsFrom, newsTo, searchQuery, view])
 
   function revealStory(id: string) {
     setVisibleCount(stories.length)
     window.setTimeout(() => document.getElementById(`story-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 0)
   }
 
+  const archiveLink = !archive && archiveCount > 0
   return <section className="intel-workspace intel-news" aria-labelledby="news-title">
     <header className="intel-workspace-head">
       <div>
-        <h2 id="news-title">News</h2>
+        {archive && <ViewLink view="latest" href={viewHref} onChange={onViewChange} className="intel-news-view-link intel-news-back">← News</ViewLink>}
+        <h2 id="news-title">{archive ? 'News Archive' : 'News'}</h2>
+        {archive && <p>Older items, newest first.</p>}
         {/* <p>A reverse-chronological, source-first feed. Connections under each item link related coverage, product generations, and recurring topics.</p> */}
       </div>
+      {archiveLink && <ViewLink view="archive" href={viewHref} onChange={onViewChange} className="intel-news-view-link">News Archive <span>{archiveCount} older {archiveCount === 1 ? 'item' : 'items'}</span></ViewLink>}
     </header>
 
     {stories.length ? <>
@@ -202,6 +230,13 @@ export default function NewsWorkspace({
         <p>Showing {visibleCount} of {stories.length} items</p>
         <button type="button" className="intel-button" onClick={() => setVisibleCount((count) => Math.min(count + 12, stories.length))}>Show 12 more</button>
       </div>}
-    </> : <div className="intel-empty"><h3>No matching news</h3><p>Try another product or date range.</p></div>}
+      {archiveLink && visibleCount >= stories.length && <div className="intel-load-more">
+        <ViewLink view="archive" href={viewHref} onChange={onViewChange} className="intel-news-view-link">Older items are in the News Archive →</ViewLink>
+      </div>}
+    </> : <div className="intel-empty">
+      <h3>{archive && !legacyNews.length ? 'No archived news yet' : 'No matching news'}</h3>
+      <p>{archive && !legacyNews.length ? `Items move here once News holds more than ${NEWS_PAGE_LIMIT}.` : 'Try another product or date range.'}</p>
+      {archiveLink && <p><ViewLink view="archive" href={viewHref} onChange={onViewChange} className="intel-news-view-link">Search the News Archive</ViewLink></p>}
+    </div>}
   </section>
 }

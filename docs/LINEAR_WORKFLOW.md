@@ -127,6 +127,21 @@ Shared Linear reference: [VISUALIZE-SH work organization and source policy](http
 
 ## Unfiled work when Linear is unavailable
 
-None recorded. If needed, append a dated entry with proposed project, outcome,
-evidence/paths, acceptance criteria, and dependency IDs. Replace it with the
-confirmed Linear link after filing.
+Append a dated entry with proposed project, outcome, evidence/paths, acceptance
+criteria, and dependency IDs. Replace it with the confirmed Linear link after
+filing.
+
+- **2026-11-27, visualize-sh-webapp (`P-WOR-1`), Feature, `Area: News`, Medium:
+  add a News Archive page linked from News.** Owner request. When published News
+  exceeds 300 items, older items move to a separate News Archive page instead of
+  being dropped. Paths: `src/data/news-archive.ts`, `scripts/build-data.ts`
+  (writes `public/news-archive.json`), `src/components/intelligence/NewsWorkspace.tsx`,
+  `src/App.tsx`, `src/data/workspace-state.ts`. Acceptance: `data/news.yaml` keeps
+  every item; News shows the newest 300 published items and links to the archive
+  when it is non-empty; the archive loads only when opened, keeps the News
+  filters, links back, and round-trips through `?mode=news&newsView=archive`;
+  `npm run validate:local` and `VITE_BASE=/ npm run build` pass. The private
+  engine's merge reports moved IDs instead of dropping them (`P-WOR-4`, same
+  outcome). Branch `codex/wor-pending-news-archive`; rename with the issue
+  number once filed. Linear did not expose team `WOR` from the connected
+  workspace on 2026-11-27.

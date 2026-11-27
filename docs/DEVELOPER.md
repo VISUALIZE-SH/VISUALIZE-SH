@@ -60,7 +60,7 @@ and `git diff --check`.
 data/*.yaml ──(build:graph)──────────────────────► public/graph.json ──► Atlas graph overview
 data/intelligence/{pilot,taxonomy,comparative-pilot}.yaml
   + data/intelligence/catalog/*.yaml ──(build:intelligence)──► public/intelligence.json ──► News / Atlas / Data
-data/news.yaml ──────────────────────────────────► graph news + digest HTML
+data/news.yaml ──(build:graph)──► public/graph.json news (newest 300) + public/news-archive.json (older) + digest HTML
 ```
 
 - **Source of truth** is the YAML under `data/`, one file per entity type; entities
@@ -106,7 +106,7 @@ More: [`docs/ARCHITECTURE.md`](ARCHITECTURE.md),
 | `data/companies.yaml` | Companies (`co-*`) | `schema/company.schema.json` |
 | `data/trials.yaml` | Clinical trials (`trial-*`) | `schema/trial.schema.json` |
 | `data/relationships.yaml` | Typed edges with locators (`rel-*`) | `schema/relationship.schema.json` |
-| `data/news.yaml` | Source-linked news, newest first, ≤ 300 items, immutable `news-YYYY-MM-DD-*` ids | `schema/news.schema.json` |
+| `data/news.yaml` | Source-linked news, newest first, immutable `news-YYYY-MM-DD-*` ids. Every item is kept: News shows the newest 300 published items (`NEWS_PAGE_LIMIT`, `src/data/news-archive.ts`) and the News Archive page (`?mode=news&newsView=archive`) shows older ones | `schema/news.schema.json` |
 | `data/intelligence/` | Evidence catalog: `pilot.yaml`, `taxonomy.yaml`, `catalog/<topic>.yaml` fragments, `citations.yaml` | `schema/intelligence.schema.json` |
 
 The field contract, id conventions and rules are in
