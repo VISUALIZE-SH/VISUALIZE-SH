@@ -12,7 +12,7 @@ test('approved illustrations and explicit gaps cover the exact device-version in
   const illustrated = registry.illustrations.map(item => item.versionId)
   const all = [...illustrated, ...registry.heldVersionIds]
   assert.equal(illustrated.length, 103)
-  assert.equal(registry.heldVersionIds.length, 101)
+  assert.equal(registry.heldVersionIds.length, 110)
   assert.equal(new Set(all).size, all.length, 'held and illustrated identities must be disjoint and unique')
   assert.deepEqual([...all].sort(), [...devices].sort())
   for (const id of registry.heldVersionIds) assert.equal(deviceIllustrationFor(id), undefined, `${id} must use a placeholder, even if legacy media exists`)

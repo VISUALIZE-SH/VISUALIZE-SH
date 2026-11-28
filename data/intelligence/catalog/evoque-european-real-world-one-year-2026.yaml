@@ -1,0 +1,149 @@
+# evoque-european-real-world-one-year-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-27"
+sources:
+  - id: src-lv26-evoque-eu-real-world-1y
+    title: "One-Year Outcomes of Transcatheter Tricuspid Valve Replacement: A European Real-World Experience."
+    url: https://doi.org/10.1016/j.jcin.2026.11.005
+    kind: publication
+    publisher: "JACC: Cardiovascular Interventions (Elsevier)"
+    publishedAt:
+      value: "2026-11-22"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: licensed
+bibliography:
+  - id: bib-lv26-evoque-eu-real-world-1y
+    entityIds:
+      - dev-evoque
+    versionIds:
+      - ver-evoque
+    sourceRefs:
+      - sourceId: src-lv26-evoque-eu-real-world-1y
+        locator: "Journal pre-proof full text: Methods, Results, Table 3, Limitations"
+    reviewStatus: reviewed
+claims:
+  - id: claim-lv26-evoque-eu-1y-1
+    versionId: ver-evoque
+    category: evidence
+    key: lv26-evoque-eu-1y-1
+    label: TR at one year
+    value: TR mild or less in 136 of 138 patients with paired one-year imaging (98.6%).
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Angellotti, Dannenberg et al., JACC: Cardiovascular Interventions, journal pre-proof online 22 Nov 2026:
+      single-arm, retrospective study of 237 consecutive patients treated with the commercial EVOQUE system at 11
+      European centers, October 2023 to July 2025; median age 80, median TRI-SCORE 5; median follow-up 367 days.
+    limitation: >-
+      Journal pre-proof full text; retrospective, single-arm; echocardiography site-reported without a core laboratory
+      and events not adjudicated (Limitations). Denominator is patients with one-year imaging, not all 237.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-evoque-eu-real-world-1y
+        locator: Results (one-year outcomes)
+    reviewStatus: reviewed
+  - id: claim-lv26-evoque-eu-1y-2
+    versionId: ver-evoque
+    category: evidence
+    key: lv26-evoque-eu-1y-2
+    label: Functional class
+    value: >-
+      NYHA class III/IV fell from 83.1% (95% CI 76.3-88.3) at baseline to 18.9% (95% CI 13.4-26.0) at one year in 148
+      paired patients; P<0.001.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Angellotti, Dannenberg et al., JACC: Cardiovascular Interventions, journal pre-proof online 22 Nov 2026:
+      single-arm, retrospective study of 237 consecutive patients treated with the commercial EVOQUE system at 11
+      European centers, October 2023 to July 2025; median age 80, median TRI-SCORE 5; median follow-up 367 days.
+    limitation: >-
+      Journal pre-proof full text; retrospective, single-arm; echocardiography site-reported without a core laboratory
+      and events not adjudicated (Limitations).
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-evoque-eu-real-world-1y
+        locator: Results (one-year outcomes)
+    reviewStatus: reviewed
+  - id: claim-lv26-evoque-eu-1y-3
+    versionId: ver-evoque
+    category: evidence
+    key: lv26-evoque-eu-1y-3
+    label: Paravalvular leak after implantation
+    value: Paravalvular leak mild or greater in 31 of 201 (15.4%); moderate or severe in 4 of 201 (2.0%).
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Angellotti, Dannenberg et al., JACC: Cardiovascular Interventions, journal pre-proof online 22 Nov 2026:
+      single-arm, retrospective study of 237 consecutive patients treated with the commercial EVOQUE system at 11
+      European centers, October 2023 to July 2025; median age 80, median TRI-SCORE 5; median follow-up 367 days.
+    limitation: >-
+      Journal pre-proof full text; retrospective, single-arm; echocardiography site-reported without a core laboratory
+      and events not adjudicated (Limitations). The abstract words the 2.0% as moderate or greater.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-evoque-eu-real-world-1y
+        locator: Results (one-year outcomes)
+    reviewStatus: reviewed
+  - id: claim-lv26-evoque-eu-1y-4
+    versionId: ver-evoque
+    category: evidence
+    key: lv26-evoque-eu-1y-4
+    label: New pacemaker
+    value: In-hospital permanent pacemaker in 33 of 166 pacemaker-naive patients (19.8%).
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Angellotti, Dannenberg et al., JACC: Cardiovascular Interventions, journal pre-proof online 22 Nov 2026:
+      single-arm, retrospective study of 237 consecutive patients treated with the commercial EVOQUE system at 11
+      European centers, October 2023 to July 2025; median age 80, median TRI-SCORE 5; median follow-up 367 days.
+    limitation: >-
+      Journal pre-proof full text; retrospective, single-arm; echocardiography site-reported without a core laboratory
+      and events not adjudicated (Limitations).
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-evoque-eu-real-world-1y
+        locator: Table 3 (in-hospital events)
+    reviewStatus: reviewed
+  - id: claim-lv26-evoque-eu-1y-5
+    versionId: ver-evoque
+    category: evidence
+    key: lv26-evoque-eu-1y-5
+    label: Mortality at one year
+    value: >-
+      26 deaths within one year; Kaplan-Meier mortality 12.8% (95% CI 8.9-18.3); one-year vital status known in 226 of
+      237.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Angellotti, Dannenberg et al., JACC: Cardiovascular Interventions, journal pre-proof online 22 Nov 2026:
+      single-arm, retrospective study of 237 consecutive patients treated with the commercial EVOQUE system at 11
+      European centers, October 2023 to July 2025; median age 80, median TRI-SCORE 5; median follow-up 367 days.
+    limitation: >-
+      Journal pre-proof full text; retrospective, single-arm; echocardiography site-reported without a core laboratory
+      and events not adjudicated (Limitations). Paravalvular leak was associated with higher one-year mortality;
+      TRI-SCORE with death or HF hospitalization (HR 1.26 per point, 95% CI 1.06-1.50).
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-evoque-eu-real-world-1y
+        locator: Results (one-year outcomes)
+    reviewStatus: reviewed
+  - id: claim-lv26-evoque-eu-1y-6
+    versionId: ver-evoque
+    category: evidence
+    key: lv26-evoque-eu-1y-6
+    label: Procedural success
+    value: T-VARC procedural success in 225 of 234 (96.1%); in-hospital death 3 of 237 (1.3%).
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Angellotti, Dannenberg et al., JACC: Cardiovascular Interventions, journal pre-proof online 22 Nov 2026:
+      single-arm, retrospective study of 237 consecutive patients treated with the commercial EVOQUE system at 11
+      European centers, October 2023 to July 2025; median age 80, median TRI-SCORE 5; median follow-up 367 days.
+    limitation: >-
+      Journal pre-proof full text; retrospective, single-arm; echocardiography site-reported without a core laboratory
+      and events not adjudicated (Limitations).
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-evoque-eu-real-world-1y
+        locator: Table 3
+    reviewStatus: reviewed

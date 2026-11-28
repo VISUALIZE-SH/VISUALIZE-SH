@@ -1,0 +1,87 @@
+# topaz-tricure-eu-thirty-day-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-27"
+sources:
+  - id: src-lv26-tricure-release
+    title: TRiCares Presents Positive Topaz Primary Endpoints from the TRICURE EU Pivotal Study at PCR London Valves
+    url: >-
+      https://www.globenewswire.com/news-release/2026/11/23/3408224/0/en/tricares-presents-positive-topaz-primary-endpoints-from-the-tricure-eu-pivotal-study-at-pcr-london-valves.html
+    kind: manufacturer
+    publisher: TRiCares SAS via GlobeNewswire
+    publishedAt:
+      value: "2026-11-23"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+bibliography:
+  - id: bib-lv26-topaz-tricure-eu-release
+    entityIds:
+      - dev-tricares-topaz
+    versionIds:
+      - ver-tricares-topaz
+    sourceRefs:
+      - sourceId: src-lv26-tricure-release
+        locator: "Release: paragraphs 3-5 (TRICURE EU 30-day data, sponsor-reported)."
+    reviewStatus: reviewed
+claims:
+  - id: claim-lv26-topaz-eu-1
+    versionId: ver-tricares-topaz
+    category: evidence
+    key: lv26-topaz-eu-1
+    label: TRICURE EU enrollment (sponsor-reported)
+    value: 77 patients enrolled across 24 sites in six European countries.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Sponsor-reported (TRiCares release, PCR London Valves Top Late-Breaking Trials, 23 Nov 2026): TRICURE EU pivotal
+      study (NCT06581471), prospective, single-arm, multicenter; severe tricuspid regurgitation at increased operative
+      risk.
+    limitation: >-
+      Sponsor press release. Enrolled count only; the analyzed number is not stated. No peer-reviewed paper or registry
+      results reviewed.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-tricure-release
+        locator: Release paragraph 3
+    reviewStatus: reviewed
+  - id: claim-lv26-topaz-eu-2
+    versionId: ver-tricares-topaz
+    category: evidence
+    key: lv26-topaz-eu-2
+    label: 30-day primary endpoint and safety (sponsor-reported)
+    value: Primary endpoint met in 98%; composite major adverse events 15.6%; new pacemaker 5% at 30 days.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Sponsor-reported (TRiCares release, PCR London Valves Top Late-Breaking Trials, 23 Nov 2026): TRICURE EU pivotal
+      study (NCT06581471), prospective, single-arm, multicenter; severe tricuspid regurgitation at increased operative
+      risk. Primary endpoint as worded in the body: TR reduced by at least one grade from baseline and no more than
+      moderate TR after the intervention.
+    limitation: >-
+      Sponsor press release. Denominator not stated. The release headline bullet words the 98% as none or mild TR, which
+      differs from the body wording. MAE components and adjudication not stated; CE mark not yet granted (company is
+      seeking it).
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-tricure-release
+        locator: Release paragraph 4 and headline bullets
+    reviewStatus: reviewed
+  - id: claim-lv26-topaz-eu-3
+    versionId: ver-tricares-topaz
+    category: evidence
+    key: lv26-topaz-eu-3
+    label: Device implantation time (sponsor-reported)
+    value: Average device implantation time 32 minutes.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Sponsor-reported (TRiCares release, PCR London Valves Top Late-Breaking Trials, 23 Nov 2026): TRICURE EU pivotal
+      study (NCT06581471), prospective, single-arm, multicenter; severe tricuspid regurgitation at increased operative
+      risk.
+    limitation: >-
+      Sponsor press release. Start and stop of the timed interval not defined; the comparison to commercially available
+      systems in the release has no data and is not reproduced.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-tricure-release
+        locator: Release paragraph 5
+    reviewStatus: reviewed

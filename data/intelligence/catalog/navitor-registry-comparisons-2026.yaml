@@ -1,0 +1,223 @@
+# navitor-registry-comparisons-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-27"
+sources:
+  - id: src-lv26-navultra
+    title: "Intra-annular self-expanding or balloon-expandable TAVI in small annuli: the NAVULTRA registry."
+    url: https://doi.org/10.4244/EIJ-D-25-00937
+    kind: publication
+    publisher: EuroIntervention
+    publishedAt:
+      value: "2026-02-02"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+    identifier: PMID 41627781
+    citation:
+      containerTitle: EuroIntervention
+      doi: 10.4244/EIJ-D-25-00937
+  - id: src-lv26-hera-tavi
+    title: >-
+      Clinical and haemodynamic outcomes with contemporary intra- and supra-annular self-expanding valves: the
+      multicentre international HERA-TAVI registry.
+    url: https://doi.org/10.4244/EIJ-D-26-00390
+    kind: publication
+    publisher: EuroIntervention
+    publishedAt:
+      value: "2026-05-20"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+    identifier: PMID 42200635
+    citation:
+      containerTitle: EuroIntervention
+      doi: 10.4244/EIJ-D-26-00390
+bibliography:
+  - id: bib-lv26-navultra-registry
+    entityIds:
+      - dev-navitor
+      - dev-sapien-3
+    versionIds:
+      - ver-navitor
+      - ver-sapien-3-ultra
+    sourceRefs:
+      - sourceId: src-lv26-navultra
+        locator: "PubMed abstract: Aims, Methods, Results (NAVULTRA registry)."
+    reviewStatus: reviewed
+  - id: bib-lv26-hera-tavi-registry
+    entityIds:
+      - dev-navitor
+      - dev-evolut
+    versionIds:
+      - ver-navitor-pooled-hera-tavi
+      - ver-evolut-fx-pooled-hera-tavi
+    sourceRefs:
+      - sourceId: src-lv26-hera-tavi
+        locator: "PubMed abstract: Methods, Results (HERA-TAVI registry)."
+    reviewStatus: reviewed
+claims:
+  - id: claim-lv26-nav-reg-1
+    versionId: ver-navitor
+    category: evidence
+    key: lv26-nav-reg-1
+    label: NAVULTRA 1-year clinical outcomes, Navitor arm
+    value: "1 year: all-cause mortality 8.8%; death, disabling stroke or HF hospitalization 11.3%."
+    availability: reported
+    basis: directly_reported
+    context: >-
+      NAVULTRA registry (patients with annulus area ≤430 mm²; 524 propensity-matched pairs from 1,617 patients): Navitor
+      (NAV) vs SAPIEN 3 Ultra (ULTRA). SAPIEN 3 Ultra arm: 9.0% and 11.8% (adjusted p=0.585 and 0.149).
+    limitation: Observational registry; propensity matching adjusts measured covariates only; abstract-only review.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-navultra
+        locator: Abstract, Results
+    reviewStatus: reviewed
+  - id: claim-lv26-nav-reg-2
+    versionId: ver-navitor
+    category: evidence
+    key: lv26-nav-reg-2
+    label: NAVULTRA device-oriented and hemodynamic outcomes, Navitor arm
+    value: Device-oriented endpoint 6.0%; residual mean gradient 7.3 mmHg; mild PVL 33.5%; permanent pacemaker 20.1%.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      NAVULTRA registry (patients with annulus area ≤430 mm²; 524 propensity-matched pairs from 1,617 patients): Navitor
+      (NAV) vs SAPIEN 3 Ultra (ULTRA). SAPIEN 3 Ultra arm: 29.3%; 12.7 mmHg; 23.2%; 11.9% (adjusted p<0.01, except mild
+      PVL p<0.05). Device-oriented endpoint (30 days): severe PPM, moderate or greater PVL or mean gradient ≥20 mmHg.
+    limitation: >-
+      Observational registry; propensity matching adjusts measured covariates only; abstract-only review. Timepoints of
+      gradient, mild PVL and pacemaker are not stated in the abstract.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-navultra
+        locator: Abstract, Results
+    reviewStatus: reviewed
+  - id: claim-lv26-nav-reg-3
+    versionId: ver-sapien-3-ultra
+    category: evidence
+    key: lv26-nav-reg-3
+    label: NAVULTRA 1-year clinical outcomes, SAPIEN 3 Ultra arm
+    value: "1 year: all-cause mortality 9.0%; death, disabling stroke or HF hospitalization 11.8%."
+    availability: reported
+    basis: directly_reported
+    context: >-
+      NAVULTRA registry (patients with annulus area ≤430 mm²; 524 propensity-matched pairs from 1,617 patients): Navitor
+      (NAV) vs SAPIEN 3 Ultra (ULTRA). Navitor arm: 8.8% and 11.3% (adjusted p=0.585 and 0.149).
+    limitation: Observational registry; propensity matching adjusts measured covariates only; abstract-only review.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-navultra
+        locator: Abstract, Results
+    reviewStatus: reviewed
+  - id: claim-lv26-nav-reg-4
+    versionId: ver-sapien-3-ultra
+    category: evidence
+    key: lv26-nav-reg-4
+    label: NAVULTRA device-oriented and hemodynamic outcomes, SAPIEN 3 Ultra arm
+    value: Device-oriented endpoint 29.3%; residual mean gradient 12.7 mmHg; mild PVL 23.2%; permanent pacemaker 11.9%.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      NAVULTRA registry (patients with annulus area ≤430 mm²; 524 propensity-matched pairs from 1,617 patients): Navitor
+      (NAV) vs SAPIEN 3 Ultra (ULTRA). Navitor arm: 6.0%; 7.3 mmHg; 33.5%; 20.1% (adjusted p<0.01, except mild PVL
+      p<0.05). Device-oriented endpoint (30 days): severe PPM, moderate or greater PVL or mean gradient ≥20 mmHg.
+    limitation: >-
+      Observational registry; propensity matching adjusts measured covariates only; abstract-only review. Timepoints of
+      gradient, mild PVL and pacemaker are not stated in the abstract.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-navultra
+        locator: Abstract, Results
+    reviewStatus: reviewed
+  - id: claim-lv26-nav-reg-5
+    versionId: ver-navitor-pooled-hera-tavi
+    category: evidence
+    key: lv26-nav-reg-5
+    label: HERA-TAVI outcomes, Navitor arm
+    value: 1-year composite 12.6%; device success 91.1%; pacemaker 22.1%; major or life-threatening bleeding 2.6%.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      HERA-TAVI registry (transfemoral TAVI June 2021–April 2025; 892 propensity-matched pairs from 2,607 patients):
+      Navitor or Navitor Vision (intra-annular) vs Evolut FX or FX+ (supra-annular). Evolut arm: 11.3%; 90.9%; 16.3%;
+      4.2%. Composite = death, disabling stroke or HF hospitalization at 1 year, HR 1.01 (95% CI 0.77–1.33; p=0.916).
+      Device success per VARC-3.
+    limitation: >-
+      Observational registry; propensity matching adjusts measured covariates only; abstract-only review. Navitor and
+      Navitor Vision are pooled and attached to a pooled study-configuration version; values are not specific to the
+      NaviSeal Navitor generation. Timepoints of device success, pacemaker and bleeding not stated in the abstract.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-hera-tavi
+        locator: Abstract, Results
+    reviewStatus: reviewed
+  - id: claim-lv26-nav-reg-6
+    versionId: ver-evolut-fx-pooled-hera-tavi
+    category: evidence
+    key: lv26-nav-reg-6
+    label: HERA-TAVI outcomes, Evolut FX/FX+ arm
+    value: 1-year composite 11.3%; device success 90.9%; pacemaker 16.3%; major or life-threatening bleeding 4.2%.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      HERA-TAVI registry (transfemoral TAVI June 2021–April 2025; 892 propensity-matched pairs from 2,607 patients):
+      Navitor or Navitor Vision (intra-annular) vs Evolut FX or FX+ (supra-annular). Navitor arm: 12.6%; 91.1%; 22.1%;
+      2.6%. Composite = death, disabling stroke or HF hospitalization at 1 year, HR 1.01 (95% CI 0.77–1.33) for Navitor
+      vs Evolut.
+    limitation: >-
+      Observational registry; propensity matching adjusts measured covariates only; abstract-only review. Evolut FX and
+      FX+ are pooled in one arm and attached to a pooled study-configuration version; values are not specific to either
+      generation. Timepoints of device success, pacemaker and bleeding not stated in the abstract.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-hera-tavi
+        locator: Abstract, Results
+    reviewStatus: reviewed
+versions:
+  - id: ver-navitor-pooled-hera-tavi
+    familyId: family-navitor
+    graphEntityId: dev-navitor
+    name: Navitor / Navitor Vision (HERA-TAVI pooled arm)
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Pooled intra-annular self-expanding study arm of the HERA-TAVI registry (Navitor or Navitor Vision); no single
+      generation is asserted.
+    sourceRefs:
+      - sourceId: src-lv26-hera-tavi
+        locator: "PubMed abstract: Methods"
+    reviewStatus: reviewed
+  - id: ver-evolut-fx-pooled-hera-tavi
+    familyId: family-evolut
+    graphEntityId: dev-evolut
+    name: Evolut FX / FX+ (HERA-TAVI pooled arm)
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Pooled supra-annular self-expanding study arm of the HERA-TAVI registry (Evolut FX or FX+); no single generation
+      is asserted.
+    sourceRefs:
+      - sourceId: src-lv26-hera-tavi
+        locator: "PubMed abstract: Methods"
+    reviewStatus: reviewed
+specs:
+  - version: ver-navitor-pooled-hera-tavi
+    category: aortic-tavr-valves
+    source: src-lv26-hera-tavi
+    values:
+      expansion-mechanism:
+        value: Self-expanding
+        loc: PubMed abstract, Methods (IA self-expanding valve)
+      leaflet-position:
+        value: Intra-annular
+        loc: PubMed abstract, Methods (IA-SEV)
+  - version: ver-evolut-fx-pooled-hera-tavi
+    category: aortic-tavr-valves
+    source: src-lv26-hera-tavi
+    values:
+      expansion-mechanism:
+        value: Self-expanding
+        loc: PubMed abstract, Methods (SA-SEV)
+      leaflet-position:
+        value: Supra-annular
+        loc: PubMed abstract, Methods (SA-SEV)

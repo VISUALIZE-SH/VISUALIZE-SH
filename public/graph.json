@@ -1,22 +1,469 @@
 {
   "meta": {
-    "generatedAt": "2026-11-23T16:08:27.560Z",
-    "lastUpdated": "2026-11-23",
+    "generatedAt": "2026-11-28T02:37:50.998Z",
+    "lastUpdated": "2026-11-27",
     "counts": {
       "condition": 23,
-      "device": 231,
+      "device": 232,
       "pharmaceutical": 23,
       "procedure": 15,
       "digital": 19,
       "company": 168,
-      "trial": 227
+      "trial": 244
     },
     "draftCount": 143,
-    "total": 706,
-    "newsCount": 300,
-    "latestNewsDate": "2026-11-20"
+    "total": 724,
+    "newsCount": 319,
+    "latestNewsDate": "2026-11-25",
+    "newsArchiveCount": 19
   },
   "news": [
+    {
+      "id": "news-2026-11-25-ocean-laac-watchman-flx-pro-vs-flx-one-year",
+      "publishedAt": "2026-11-25",
+      "title": "One-Year Outcomes with WATCHMAN FLX and WATCHMAN FLX Pro From the OCEAN-LAAC Registry",
+      "summary": "The Japanese OCEAN-LAAC registry compared 1,509 successful WATCHMAN FLX and 577 WATCHMAN FLX Pro implants (May 2021 to December 2024), with 574 propensity-matched pairs; device success was about 98% for both. At 3 months (unmatched) FLX Pro patients were more often on single antiplatelet therapy (53.4% vs 39.9%) and less often on dual therapy (5.5% vs 21.7%). One-year death, stroke, heart failure hospitalization and device-related thrombus were broadly similar; bleeding was lower with FLX Pro (6.4% vs 10.3%; major after matching 3.7% vs 7.0%), though in matched patients not significantly after day 7. Observational; FLX Pro was used later.",
+      "sourceName": "Structural Heart",
+      "sourceUrl": "https://doi.org/10.1016/j.shj.2026.101183",
+      "topicTags": [
+        "LAAO",
+        "WATCHMAN FLX Pro",
+        "registry"
+      ],
+      "relevantNodeIds": [
+        "dev-watchman-flx",
+        "proc-laac",
+        "cond-af"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-24-cardiovalve-target-six-month-full-cohort",
+      "publishedAt": "2026-11-24",
+      "title": "Venus Medtech reports six-month full-cohort TARGET results for the Cardiovalve TR system",
+      "summary": "Venus Medtech reported six-month full-cohort results from TARGET, a prospective single-arm study of the Cardiovalve transcatheter tricuspid replacement system that enrolled 157 patients at nearly 30 centers in Germany, Spain, Italy, the UK and Canada, presented at PCR London Valves. The company states both primary endpoints were met; none or trace TR was seen in 76.7% of 120 evaluable implanted patients at 6 months and 76.9% of 26 at 3 years. Thirty-day mortality was 5.7%. With the enhanced delivery system, major bleeding fell from 21% to 5.0% versus the first generation. Sponsor-reported.",
+      "sourceName": "Venus Medtech (HKEXnews)",
+      "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1124/2026112400366.pdf",
+      "topicTags": [
+        "PCR London Valves 2026",
+        "TTVR",
+        "tricuspid regurgitation",
+        "sponsor-reported results"
+      ],
+      "relevantNodeIds": [
+        "dev-cardiovalve-tricuspid",
+        "co-venus-medtech",
+        "co-cardiovalve",
+        "trial-nct05486832",
+        "cond-tr",
+        "proc-ttvr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-24-cosira-ii-enrollment-pause",
+      "publishedAt": "2026-11-24",
+      "title": "COSIRA-II coronary sinus Reducer trial listed as suspended for an enrollment pause",
+      "summary": "ClinicalTrials.gov now lists COSIRA-II, the sham-controlled trial of the coronary sinus Reducer in refractory angina, as suspended, with “Enrollment Pause” given as the reason. The record, posted November 24, keeps an estimated 380 participants across the randomized cohort and a registry arm, and an estimated primary completion of July 2027. The registry gives no further explanation, and no sponsor statement was found; the entry says nothing about device safety or performance.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT05102019",
+      "additionalSources": [
+        {
+          "label": "ClinicalTrials.gov API record",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT05102019"
+        }
+      ],
+      "topicTags": [
+        "coronary sinus reducer",
+        "refractory angina",
+        "trial status"
+      ],
+      "relevantNodeIds": [
+        "trial-cosira-ii",
+        "dev-coronary-sinus-reducer",
+        "co-shockwave",
+        "cond-cmd"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-24-maple-hcm-aficamten-biomarkers-jacc-hf",
+      "publishedAt": "2026-11-24",
+      "title": "Effect of Aficamten vs Metoprolol on Cardiac Biomarkers in Obstructive Hypertrophic Cardiomyopathy",
+      "summary": "A biomarker analysis of the randomized MAPLE-HCM trial in obstructive HCM (aficamten n=88 vs metoprolol monotherapy n=87) found that over 24 weeks NT-proBNP fell 73% with aficamten and rose 42% with metoprolol (treatment effect -81%, 95% CI -85% to -76%), while high-sensitivity troponin I fell 43% versus 17% (treatment effect -28%). NT-proBNP fell by at least half in 72% vs 5%. Both markers returned to baseline after washout. NT-proBNP change correlated with peak oxygen uptake and KCCQ score across both arms, but not significantly after adjusting for treatment. Sponsored by Cytokinetics.",
+      "sourceName": "JACC: Heart Failure",
+      "sourceUrl": "https://doi.org/10.1016/j.jchf.2026.103508",
+      "additionalSources": [
+        {
+          "label": "PubMed record 43083514",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43083514/"
+        }
+      ],
+      "topicTags": [
+        "HCM",
+        "aficamten",
+        "biomarkers",
+        "randomized trial"
+      ],
+      "relevantNodeIds": [
+        "rx-aficamten",
+        "trial-maple-hcm",
+        "cond-hcm",
+        "co-cytokinetics"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-24-ph-and-pvr-in-transcatheter-tricuspid-intervention-ejhf",
+      "publishedAt": "2026-11-24",
+      "title": "Pulmonary hypertension, pulmonary vascular disease, and right ventricular adaptation in transcatheter tricuspid valve intervention",
+      "summary": "A registry of 903 patients with severe TR who had right heart catheterization before transcatheter tricuspid intervention (2016 to 2022; 88% edge-to-edge repair, 11% annuloplasty, under 1% replacement) found pulmonary hypertension in 88%. Procedural success was 81% and NYHA class improved regardless of pulmonary hemodynamics. Crude two-year mortality was 24% (12% without and 26% with pulmonary hypertension). Resistance above 5 Wood units (adjusted HR 1.87) and right ventricle-pulmonary artery uncoupling each added risk; with pulmonary hypertension, two-year mortality was 53% with both versus 20% with neither. Observational; devices not named.",
+      "sourceName": "European Journal of Heart Failure",
+      "sourceUrl": "https://doi.org/10.1093/ejhf/xuag347",
+      "additionalSources": [
+        {
+          "label": "PubMed record 43075806",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43075806/"
+        }
+      ],
+      "topicTags": [
+        "tricuspid regurgitation",
+        "pulmonary hypertension",
+        "patient selection",
+        "registry"
+      ],
+      "relevantNodeIds": [
+        "cond-tr",
+        "proc-tricuspid-teer",
+        "proc-ttvr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-24-triplace-ttvr-vs-medical-therapy-registry",
+      "publishedAt": "2026-11-24",
+      "title": "Transcatheter Tricuspid Valve Replacement Versus Medical Therapy for Severe Secondary Tricuspid Regurgitation: The TRIPLACE Registry",
+      "summary": "An observational comparison weighted 395 TRIPLACE registry patients treated with transcatheter tricuspid valve replacement (24 centers, 2017 to 2025; ten valve systems including EVOQUE) against 784 medically treated patients from the single-center Bronx-Valve Registry (2017 to 2019). With overlap weighting, the 2-year rate of death or heart failure hospitalization was 36.6% vs 57.1% (HR 0.60, 95% CI 0.40-0.89) and all-cause death 27.4% vs 43.1% (HR 0.61); heart failure hospitalization and cardiovascular death did not differ. In-hospital mortality was 0.8% and 30-day new pacemaker 14.8%. Nonrandomized, with different eras and sites.",
+      "sourceName": "JACC: Cardiovascular Interventions",
+      "sourceUrl": "https://doi.org/10.1016/j.jcin.2026.10.036",
+      "additionalSources": [
+        {
+          "label": "PubMed record 43076840",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43076840/"
+        },
+        {
+          "label": "TRIPLACE registry NCT06033274",
+          "url": "https://clinicaltrials.gov/study/NCT06033274"
+        }
+      ],
+      "topicTags": [
+        "tricuspid regurgitation",
+        "TTVR",
+        "registry",
+        "medical therapy comparison"
+      ],
+      "relevantNodeIds": [
+        "cond-tr",
+        "proc-ttvr",
+        "trial-triplace-registry"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-23-atricure-boxx-noaf-enrollment-complete",
+      "publishedAt": "2026-11-23",
+      "title": "AtriCure Completes Enrollment in BoxX-NoAF Clinical Trial Evaluating Reduction of New-Onset Atrial Fibrillation Following Cardiac Surgery",
+      "summary": "AtriCure reported that enrollment is complete in BoxX-NoAF (NCT06989775), a randomized, multicenter IDE trial testing a surgical box lesion made with the Isolator Synergy EnCompass clamp plus AtriClip left atrial appendage exclusion to reduce new-onset atrial fibrillation in elevated-risk cardiac surgery patients. The company states that 960 patients were enrolled over 13 months and expects primary results in mid-2027. This is an enrollment milestone with no results; the release states the use is investigational and its safety and effectiveness are not established.",
+      "sourceName": "AtriCure",
+      "sourceUrl": "https://ir.atricure.com/news-releases/news-release-details/atricure-completes-enrollment-boxx-noaf-clinical-trial",
+      "additionalSources": [
+        {
+          "label": "BoxX-NoAF registry record NCT06989775",
+          "url": "https://clinicaltrials.gov/study/NCT06989775"
+        }
+      ],
+      "topicTags": [
+        "LAA exclusion",
+        "surgical ablation",
+        "postoperative atrial fibrillation",
+        "enrollment milestone"
+      ],
+      "relevantNodeIds": [
+        "co-atricure",
+        "dev-atriclip",
+        "cond-af",
+        "trial-boxx-noaf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-23-jenscare-lux-valve-plus-eu-trinity-12-month",
+      "publishedAt": "2026-11-23",
+      "title": "Jenscare reports 12-month EU TRINITY results for LuX-Valve Plus at PCR London Valves",
+      "summary": "Jenscare reported 12-month results from EU TRINITY, a prospective single-arm study of its LuX-Valve Plus transcatheter tricuspid replacement system in 149 high-surgical-risk patients at 20 centers (18 in France, Germany, Spain, Denmark and the UK), presented at PCR London Valves. The company states device success of 96.6%; at 12 months 80.6% of 126 with imaging had no more than moderate TR and 92.1% were in NYHA class I/II. Adjudicated 12-month events included cardiovascular death 6.0%, severe bleeding 6.7% and new pacemaker for AV block 8.7% (composite 24.8%). Sponsor-reported.",
+      "sourceName": "Jenscare Scientific (HKEXnews)",
+      "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1123/2026112300107.pdf",
+      "topicTags": [
+        "PCR London Valves 2026",
+        "TTVR",
+        "tricuspid regurgitation",
+        "sponsor-reported results"
+      ],
+      "relevantNodeIds": [
+        "dev-lux-valve-plus",
+        "co-jenscare-scientific",
+        "cond-tr",
+        "proc-ttvr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-23-sapien-3-ultra-resilia-23mm-randomized-hemodynamics",
+      "publishedAt": "2026-11-23",
+      "title": "REASSURE registers a randomized comparison of 23 mm SAPIEN 3 Ultra RESILIA and SAPIEN 3 Ultra valve hemodynamics",
+      "summary": "ClinicalTrials.gov first posted REASSURE, a MedStar Health Research Institute trial that will randomize patients with severe aortic stenosis receiving a 23 mm transcatheter valve to the SAPIEN 3 Ultra RESILIA or the SAPIEN 3 Ultra. The primary measure is the invasive mean aortic valve gradient immediately after implantation. Estimated enrollment is 50 at two sites, with primary completion estimated for November 2028. This is a registration of an open-label, investigator-sponsored study with no results.",
+      "sourceName": "ClinicalTrials.gov",
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07954583",
+      "additionalSources": [
+        {
+          "label": "ClinicalTrials.gov API record",
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT07954583"
+        }
+      ],
+      "topicTags": [
+        "TAVI",
+        "valve hemodynamics",
+        "trial registration"
+      ],
+      "relevantNodeIds": [
+        "dev-sapien-3",
+        "co-edwards",
+        "cond-as",
+        "proc-tavi",
+        "trial-reassure-sapien-3-ultra-resilia"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-23-tri-fr-extended-follow-up-circulation",
+      "publishedAt": "2026-11-23",
+      "title": "Transcatheter Edge-to-Edge Repair for Severe Isolated Tricuspid Regurgitation After Extended Follow-Up: The TRI-FR Randomized Clinical Trial",
+      "summary": "Extended follow-up of the randomized TRI-FR trial (300 patients at 24 centers in France and Belgium: 152 tricuspid TEER with TriClip plus optimized medical therapy, 148 medical therapy alone) reached a median follow-up of 30.8 months. TEER lowered the first composite of heart failure hospitalization, tricuspid surgery or cardiovascular death (HR 0.56, 95% CI 0.36-0.88) and recurrent heart failure hospitalization (rate ratio 0.52). Deaths were similar (32 vs 30), and cardiovascular death or surgery alone did not differ. Severe or worse TR at the last core-lab echo was 6.8% vs 53.5%. A secondary analysis; loss to follow-up rose after year one.",
+      "sourceName": "Circulation",
+      "sourceUrl": "https://doi.org/10.1161/CIRCULATIONAHA.126.080397",
+      "additionalSources": [
+        {
+          "label": "PubMed record 43074159",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43074159/"
+        },
+        {
+          "label": "TRI-FR registry record NCT04646811",
+          "url": "https://clinicaltrials.gov/study/NCT04646811"
+        }
+      ],
+      "topicTags": [
+        "tricuspid regurgitation",
+        "T-TEER",
+        "randomized trial",
+        "extended follow-up"
+      ],
+      "relevantNodeIds": [
+        "cond-tr",
+        "proc-tricuspid-teer",
+        "dev-triclip",
+        "trial-tri-fr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-23-tricares-topaz-tricure-eu-pivotal-primary-endpoint",
+      "publishedAt": "2026-11-23",
+      "title": "TRiCares reports 30-day primary endpoint data for Topaz from the TRICURE EU pivotal study at PCR London Valves",
+      "summary": "TRiCares reported 30-day data from TRICURE EU, a single-arm pivotal study of the investigational Topaz tricuspid replacement valve that enrolled 77 patients at 24 sites in six European countries, presented at PCR London Valves. The company states that 98% met the primary endpoint (TR reduced by at least one grade and no more than moderate), with composite major adverse events in 15.6%, new pacemakers in 5% and a mean implant time of 32 minutes. The release gives no denominators or adverse-event components, and no paper or written abstract was found. CE marking is pending.",
+      "sourceName": "TRiCares (GlobeNewswire)",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/23/3408224/0/en/tricares-presents-positive-topaz-primary-endpoints-from-the-tricure-eu-pivotal-study-at-pcr-london-valves.html",
+      "additionalSources": [
+        {
+          "label": "TRICURE EU Pivotal Study NCT06581471",
+          "url": "https://clinicaltrials.gov/study/NCT06581471"
+        }
+      ],
+      "topicTags": [
+        "PCR London Valves 2026",
+        "TTVR",
+        "tricuspid regurgitation",
+        "pivotal study",
+        "sponsor-reported results"
+      ],
+      "relevantNodeIds": [
+        "dev-tricares-topaz",
+        "co-tricares",
+        "trial-tricure-eu-pivotal",
+        "cond-tr",
+        "proc-ttvr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-23-vad-wean-recovery-network-lvad-weaning-circulation",
+      "publishedAt": "2026-11-23",
+      "title": "VAD Wean Recovery Network: Long-Term Outcomes of LVAD Weaning for Myocardial Recovery",
+      "summary": "A retrospective registry of 60 international centers reported 603 patients with advanced heart failure weaned from a left ventricular assist device after myocardial recovery (mean age 42 years, 9.4% ischemic, median support 440 days; 309 of 388 with data had the pump explanted). One-year survival after weaning was 91%, with 2.3% needing another LVAD and 3.7% transplantation; survival free of death, another LVAD or transplant was 71% at 5 years. An exploratory matched comparison with bridge-to-transplant recipients in the ISHLT registry found similar long-term survival. The cohort is young, mostly nonischemic and selected for recovery.",
+      "sourceName": "Circulation",
+      "sourceUrl": "https://doi.org/10.1161/CIRCULATIONAHA.126.081028",
+      "additionalSources": [
+        {
+          "label": "PubMed record 43074161",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43074161/"
+        }
+      ],
+      "topicTags": [
+        "heart failure",
+        "LVAD",
+        "myocardial recovery",
+        "registry"
+      ],
+      "relevantNodeIds": [
+        "cond-hf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-22-anteris-duravr-small-annuli-one-year",
+      "publishedAt": "2026-11-22",
+      "title": "Anteris reports one-year DurAVR THV outcomes in 100 patients with small aortic annuli at PCR London Valves",
+      "summary": "Anteris reported one-year outcomes for 100 patients with small aortic annuli (mean area 404 mm²) treated with the investigational DurAVR valve, pooled from EMBARK and early feasibility studies and presented at PCR London Valves. The company states a mean gradient of 8.9 mmHg, effective orifice area of 2.2 cm², no moderate or severe paravalvular leak, heart failure hospitalization in 1%, all-cause mortality 6%, stroke 3% and new pacemaker 9%. These are sponsor-reported, single-arm pooled data; follow-up denominators are not given and no paper or written abstract was found.",
+      "sourceName": "Anteris Technologies (GlobeNewswire)",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/22/3407938/0/en/anteris-duravr-thv-demonstrates-1-heart-failure-hospitalization-single-digit-gradients-and-no-valve-related-deaths-at-1-year-in-patients-with-small-aortic-annuli.html",
+      "additionalSources": [
+        {
+          "label": "PubMed 41251720: 30-day outcomes of the same pooled cohort (EuroIntervention)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41251720/"
+        },
+        {
+          "label": "PARADIGM randomized trial NCT07194265",
+          "url": "https://clinicaltrials.gov/study/NCT07194265"
+        }
+      ],
+      "topicTags": [
+        "PCR London Valves 2026",
+        "TAVI",
+        "small aortic annulus",
+        "sponsor-reported results"
+      ],
+      "relevantNodeIds": [
+        "dev-duravr-thv",
+        "co-anteris-technologies",
+        "trial-duravr-embark",
+        "trial-duravr-efs",
+        "trial-duravr-eu-efs",
+        "trial-duravr-paradigm",
+        "cond-as",
+        "proc-tavi"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-22-evoque-ttvr-one-year-european-real-world",
+      "publishedAt": "2026-11-22",
+      "title": "One-Year Outcomes of Transcatheter Tricuspid Valve Replacement: A European Real-World Experience",
+      "summary": "A retrospective study at 11 centers in Switzerland, Germany, Italy, Austria and France followed 237 consecutive patients treated with the commercial EVOQUE tricuspid valve replacement system (October 2023 to July 2025). Procedural success was 96.1%; in hospital 1.3% died and 19.8% of pacemaker-naive patients received a pacemaker. At one year TR was mild or less in 136 of 138 with paired imaging, and NYHA class III/IV fell from 83.1% to 18.9%. Kaplan-Meier mortality was 12.8%, and first heart failure hospitalization had a cumulative incidence of 11.7%. Imaging was site-reported and events were not adjudicated.",
+      "sourceName": "JACC: Cardiovascular Interventions",
+      "sourceUrl": "https://doi.org/10.1016/j.jcin.2026.11.005",
+      "topicTags": [
+        "tricuspid regurgitation",
+        "TTVR",
+        "EVOQUE",
+        "registry"
+      ],
+      "relevantNodeIds": [
+        "cond-tr",
+        "proc-ttvr",
+        "dev-evoque"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-22-innovheart-saturn-cassini-eu-30-day",
+      "publishedAt": "2026-11-22",
+      "title": "InnovHeart posts 30-day Saturn transseptal TMVR results presented at PCR London Valves",
+      "summary": "InnovHeart posted a one-page summary of the Saturn transseptal mitral valve replacement data presented by P. Denti in the London Valves late-breaking trials session, and the company page credits the CASSINI-EU investigators. In a prospective multicenter single-arm study of 15 high-risk patients with grade 3 or higher functional MR, the valve was successfully implanted in 93.3% (success undefined). At 30 days there were no cardiovascular deaths, major cardiac structural complications or mitral reinterventions; major vascular complications occurred in 13.3%, and MR grade improved. Small cohort, 30 days only; sponsor-posted.",
+      "sourceName": "InnovHeart",
+      "sourceUrl": "https://innovheart.com/wp-content/uploads/2026/11/11665_DENTI_LV2026_v6.pdf",
+      "additionalSources": [
+        {
+          "label": "InnovHeart: Presentation of Saturn at London Valves",
+          "url": "https://innovheart.com/presentation-of-saturn-at-london-valves-november-2026/"
+        }
+      ],
+      "topicTags": [
+        "PCR London Valves 2026",
+        "TMVR",
+        "mitral regurgitation",
+        "sponsor-reported results"
+      ],
+      "relevantNodeIds": [
+        "dev-innovheart-saturn-ts-tmvr",
+        "co-innovheart",
+        "trial-cassini-eu",
+        "cond-mr",
+        "proc-tmvr"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-22-teer-versus-ttvr-trivalve-triplace-jacc-ci",
+      "publishedAt": "2026-11-22",
+      "title": "Transcatheter Tricuspid Edge-To-Edge Repair Versus Transcatheter Tricuspid Valve Replacement for Severe Symptomatic Tricuspid Regurgitation",
+      "summary": "An analysis harmonized the TRIVALVE registry (tricuspid TEER with MitraClip or TriClip, n=384) and the TRIPLACE registry (replacement, n=398; EVOQUE in 47%, the rest investigational valves) and compared one-year outcomes with inverse probability weighting. Replacement left less residual TR (median grade 0 vs 2 at 6 to 12 months) but was associated with fewer days alive through one year (average treatment effect -81.3 days, P=0.002) and fewer days free of major adverse events (-70.7 days); heart failure hospitalization and reintervention were similar. The authors call it hypothesis-generating; eras and centers differ.",
+      "sourceName": "JACC: Cardiovascular Interventions",
+      "sourceUrl": "https://doi.org/10.1016/j.jcin.2026.08.013",
+      "additionalSources": [
+        {
+          "label": "PubMed record 43070860",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43070860/"
+        }
+      ],
+      "topicTags": [
+        "tricuspid regurgitation",
+        "T-TEER",
+        "TTVR",
+        "registry comparison"
+      ],
+      "relevantNodeIds": [
+        "cond-tr",
+        "proc-tricuspid-teer",
+        "proc-ttvr",
+        "dev-triclip",
+        "dev-mitraclip",
+        "dev-evoque",
+        "trial-triplace-registry"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-20-aortic-stenosis-deep-learning-finger-cuff-waveform",
+      "publishedAt": "2026-11-20",
+      "title": "Aortic Valve Stenosis Screening Using Deep Learning on Noninvasive Arterial Pressure Waveforms",
+      "summary": "A one-dimensional convolutional network applied to finger-cuff arterial pressure waveforms from Edwards' ClearSight system was developed in 3,634 Cleveland Clinic patients and validated in 1,336 patients in the United States, Spain and the Netherlands, with echocardiography as reference. For at least moderate aortic stenosis (241 of 1,336) the AUC was 0.893, sensitivity 92.5%, specificity 64.5%, negative predictive value 97.5% and positive predictive value 36.4%. Edwards Lifesciences funded the study and took part in the analysis. Positive predictive value is low and no outcome or workflow data are reported.",
+      "sourceName": "JACC: Advances",
+      "sourceUrl": "https://doi.org/10.1016/j.jacadv.2026.103475",
+      "additionalSources": [
+        {
+          "label": "PubMed record 43063593",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43063593/"
+        }
+      ],
+      "topicTags": [
+        "aortic stenosis",
+        "AI screening",
+        "arterial waveform"
+      ],
+      "relevantNodeIds": [
+        "cond-as"
+      ],
+      "reviewStatus": "reviewed"
+    },
     {
       "id": "news-2026-11-20-surgery-after-failed-mitral-teer",
       "publishedAt": "2026-11-20",
@@ -32,6 +479,25 @@
         "cond-mr",
         "proc-mitral-teer",
         "proc-mv-surgery"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-20-tavi-valve-performance-beyond-10-years-hamburg",
+      "publishedAt": "2026-11-20",
+      "title": "Long-Term Outcomes and Transcatheter Heart Valve Performance Beyond 10 Years After TAVI",
+      "summary": "A single-center Hamburg cohort of 1,398 patients treated with TAVI before May 2015 had an estimated 10-year survival of 9.8%. Of 80 patients known to be alive at 10 years, 30 had routine echocardiography at a mean of 10.5 years: 20 had balloon-expandable SAPIEN valves, 9 self-expanding (CoreValve or ACURATE) and 1 Lotus. Mean gradient was 11 mmHg, severe hemodynamic valve deterioration by VARC-3 was found in 8 of the 30 (27%), and 6 of the 30 had undergone valve-in-valve TAVI, a mean 9.2 years after the index procedure. Retrospective, with substantial survivorship and selection bias.",
+      "sourceName": "Structural Heart",
+      "sourceUrl": "https://doi.org/10.1016/j.shj.2026.101177",
+      "topicTags": [
+        "TAVI",
+        "durability",
+        "long-term outcomes",
+        "valve deterioration"
+      ],
+      "relevantNodeIds": [
+        "cond-as",
+        "proc-tavi"
       ],
       "reviewStatus": "reviewed"
     },
@@ -55,6 +521,28 @@
       ],
       "relevantNodeIds": [
         "cond-hf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "news-2026-11-19-abbott-voyager-ce-study-start",
+      "publishedAt": "2026-11-19",
+      "title": "Abbott initiates VOYAGER clinical trial for investigational Encantor software-guided balloon-expandable TAVI system to treat aortic stenosis",
+      "summary": "Abbott announced the start of VOYAGER CE, a prospective single-arm premarket study of its investigational Encantor balloon-expandable TAVI system, which uses software-guided deployment, in symptomatic severe aortic stenosis. The first enrollment took place at Macquarie University in Sydney; the study is to enroll up to 300 patients in Europe and Australia and to support applications for approval there. Abbott plans to start a U.S. pivotal trial in the coming months. No clinical results are in the release; six-month early feasibility data were scheduled for a PCR London Valves session and were not found in writing.",
+      "sourceName": "Abbott",
+      "sourceUrl": "https://abbott.mediaroom.com/2026-11-19-Abbott-initiates-VOYAGER-clinical-trial-for-investigational-Encantor-TM-software-guided-balloon-expandable-TAVI-system-to-treat-aortic-stenosis",
+      "topicTags": [
+        "TAVI",
+        "balloon-expandable valve",
+        "trial start",
+        "CE mark study"
+      ],
+      "relevantNodeIds": [
+        "co-abbott",
+        "cond-as",
+        "proc-tavi",
+        "dev-abbott-encantor",
+        "trial-voyager-ce"
       ],
       "reviewStatus": "reviewed"
     },
@@ -6521,7 +7009,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 47,
+          "degree": 48,
           "pulse": 7,
           "entity": {
             "id": "cond-af",
@@ -6849,7 +7337,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 104,
+          "degree": 111,
           "pulse": 9,
           "entity": {
             "id": "cond-as",
@@ -6921,7 +7409,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 95,
+          "degree": 98,
           "pulse": 8,
           "entity": {
             "id": "cond-mr",
@@ -6956,7 +7444,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 11,
+          "degree": 13,
           "pulse": 3,
           "entity": {
             "id": "cond-ms",
@@ -6990,7 +7478,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 55,
+          "degree": 62,
           "pulse": 9,
           "entity": {
             "id": "cond-tr",
@@ -8455,7 +8943,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 3,
           "pulse": 0,
           "entity": {
             "id": "dev-atriclip",
@@ -10549,7 +11037,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 8,
+          "degree": 11,
           "pulse": 9,
           "timelineDate": "2014-01-01",
           "entity": {
@@ -10627,7 +11115,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 8,
+          "degree": 9,
           "pulse": 8,
           "timelineDate": "2007-03-01",
           "entity": {
@@ -10695,7 +11183,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 3,
+          "degree": 5,
           "pulse": 5,
           "timelineDate": "2021-05-01",
           "entity": {
@@ -11204,7 +11692,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 10,
+          "degree": 11,
           "pulse": 7,
           "timelineDate": "2019-02-01",
           "entity": {
@@ -11271,7 +11759,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 5,
+          "degree": 6,
           "pulse": 8,
           "timelineDate": "2020-04-01",
           "entity": {
@@ -11456,7 +11944,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 6,
+          "degree": 8,
           "pulse": 8,
           "timelineDate": "2023-10-01",
           "entity": {
@@ -11750,7 +12238,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 8,
+          "degree": 9,
           "pulse": 6,
           "entity": {
             "id": "proc-tavi",
@@ -14482,7 +14970,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 3,
+          "degree": 4,
           "pulse": 5,
           "entity": {
             "id": "proc-tricuspid-teer",
@@ -14553,7 +15041,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 3,
           "pulse": 5,
           "entity": {
             "id": "proc-ttvr",
@@ -17417,7 +17905,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 4,
           "pulse": 0,
           "entity": {
             "id": "dev-cephea-mitral-system",
@@ -17599,7 +18087,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 4,
           "pulse": 0,
           "entity": {
             "id": "dev-lux-valve-plus",
@@ -18338,7 +18826,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 2,
+          "degree": 4,
           "pulse": 0,
           "entity": {
             "id": "dev-vdyne-ttvr",
@@ -21293,6 +21781,44 @@
       },
       {
         "data": {
+          "id": "dev-abbott-encantor",
+          "label": "Abbott Encantor",
+          "group": "device",
+          "category": "Software-guided balloon-expandable TAVI system (investigational)",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "dev-abbott-encantor",
+            "type": "therapy",
+            "therapyType": "device",
+            "subtype": "Software-guided balloon-expandable TAVI system (investigational)",
+            "name": "Abbott Encantor",
+            "company": "co-abbott",
+            "treats": [
+              "cond-as"
+            ],
+            "regulatoryStatus": "investigational",
+            "regulatoryDetail": "Sponsor release of 2026-11-19 states the Encantor balloon-expandable TAVI is investigational only and not for use anywhere in the world, including the U.S., Australia, Canada or Europe. No regulator document was reviewed.",
+            "mechanism": "Company-described: the valve is crimped on a deflated surgical balloon and delivered through a catheter from an artery in the groin; software-guided deployment customizes balloon expansion to the patient's anatomy.",
+            "description": "Abbott's investigational software-guided balloon-expandable transcatheter aortic valve system for symptomatic severe aortic stenosis, as described in the company's release. Early feasibility study data were announced for presentation at PCR London Valves 2026; the VOYAGER CE study was initiated to support CE Mark approval in Europe.",
+            "materials": [],
+            "materialsStatus": "not_established",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://abbott.mediaroom.com/2026-11-19-Abbott-initiates-VOYAGER-clinical-trial-for-investigational-Encantor-TM-software-guided-balloon-expandable-TAVI-system-to-treat-aortic-stenosis"
+              ],
+              "notes": "Sponsor claim from a single company release; materials not established (materialsStatus not_established). Early feasibility data and the VOYAGER CE registry record were not opened."
+            }
+          }
+        }
+      },
+      {
+        "data": {
           "id": "co-mirus",
           "label": "MiRus LLC",
           "group": "company",
@@ -21367,7 +21893,7 @@
           "isDraft": false,
           "isHalted": false,
           "isRetired": false,
-          "degree": 24,
+          "degree": 25,
           "pulse": 0,
           "entity": {
             "id": "co-abbott",
@@ -32549,7 +33075,7 @@
           "label": "SPACER Study (Pivot Extend)",
           "group": "trial",
           "isDraft": true,
-          "isHalted": false,
+          "isHalted": true,
           "isRetired": false,
           "degree": 2,
           "pulse": 0,
@@ -32559,7 +33085,7 @@
             "name": "SPACER Study (Pivot Extend)",
             "nctId": "NCT06877520",
             "phase": "Early feasibility study (registry phase: not applicable)",
-            "status": "recruiting",
+            "status": "terminated",
             "primaryAnalysis": {
               "status": "not-reported"
             },
@@ -32571,22 +33097,23 @@
             ],
             "enrollmentCounts": [
               {
-                "count": 7,
-                "basis": "estimated",
-                "asOf": "2025-04-11",
+                "count": 0,
+                "basis": "actual",
+                "asOf": "2026-11-24",
+                "scope": "Registry actual enrollment at withdrawal; the earlier estimate was 7",
                 "source": "https://clinicaltrials.gov/api/v2/studies/NCT06877520"
               }
             ],
             "primaryEndpoint": "Occurrence ratio of major adverse cardiac events (MACE) at 1 month after the procedure.",
-            "outcomeSummary": "No results are posted in the registry record.",
-            "resultStatus": "ongoing",
+            "outcomeSummary": "ClinicalTrials.gov lists the study as withdrawn before enrollment (reason given: poor accrual; zero participants), in the record posted 2026-11-24. No results exist.",
+            "resultStatus": "terminated",
             "curation": {
               "status": "draft",
               "lastUpdated": "2026-10-21",
               "sources": [
                 "https://clinicaltrials.gov/api/v2/studies/NCT06877520"
               ],
-              "notes": "Registry record last updated 2025-04-11 and not updated since; status Recruiting as verified 2025-04. The estimated start (2025-05) and primary completion (2026-05) have passed, so the status may be out of date. Three sites in Tbilisi, Georgia. Enrollment is the estimated target, not patients treated."
+              "notes": "Registry record last updated 2026-11-24 (status verified 2026-11): Withdrawn, reason poor accrual, actual enrollment 0. The record lists three sites in Tbilisi, Georgia. The public status value terminated stands in for the registry value Withdrawn, which the schema does not offer. The separate Australian SPACER registration is a different record and is not affected by this entry."
             }
           }
         }
@@ -37673,6 +38200,826 @@
             }
           }
         }
+      },
+      {
+        "data": {
+          "id": "trial-boxx-noaf",
+          "label": "BoxX-NoAF",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 2,
+          "entity": {
+            "id": "trial-boxx-noaf",
+            "type": "trial",
+            "name": "BoxX-NoAF",
+            "nctId": "NCT06989775",
+            "phase": "Device study (not applicable phase)",
+            "status": "recruiting",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "conditions": [
+              "cond-af"
+            ],
+            "therapies": [
+              "dev-atriclip"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 960,
+                "basis": "estimated",
+                "asOf": "2026-10-07",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06989775"
+              }
+            ],
+            "primaryEndpoint": "Clinically relevant postoperative atrial fibrillation (effectiveness) and a composite safety endpoint, both assessed 30 days after the index cardiac surgery.",
+            "resultStatus": "ongoing",
+            "pulse": 2,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06989775"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (last update 2026-10-07, no results posted). The registry names the AtriClip LAA Exclusion System without a model; public node dev-atriclip is the AtriClip FLEX generation, so the edge is family-level. The EnCompass clamp is not a public node (dev-encompass-clamp was not drafted: no label or FDA record opened), so the trial links to AtriClip only."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cephea-efs",
+          "label": "Cephea Early Feasibility Study",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 1,
+          "entity": {
+            "id": "trial-cephea-efs",
+            "type": "trial",
+            "name": "Cephea Early Feasibility Study",
+            "nctId": "NCT05061004",
+            "phase": "Device study (not applicable phase)",
+            "status": "recruiting",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "conditions": [
+              "cond-mr",
+              "cond-ms"
+            ],
+            "therapies": [
+              "dev-cephea-mitral-system"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 90,
+                "basis": "estimated",
+                "asOf": "2026-09-11",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT05061004"
+              }
+            ],
+            "primaryEndpoint": "Primary safety: freedom from all-cause mortality at 30 days; primary effectiveness: proportion with mitral regurgitation reduced to grade I or less at 30 days.",
+            "resultStatus": "ongoing",
+            "pulse": 1,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT05061004",
+                "https://doi.org/10.1016/j.jcin.2026.02.029"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (last update 2026-09-11, no results posted). The link of Cephea to London Valves Programme item 11 was inferred in the work list and is not asserted here. CROWN-MV (NCT07798726) is a separate study. Interim 30-day results for 24 EFS and 7 compassionate-use patients were published in JACC: Cardiovascular Interventions (May 2026); the primary analysis is not reported."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-crown-mv",
+          "label": "CROWN-MV",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 2,
+          "entity": {
+            "id": "trial-crown-mv",
+            "type": "trial",
+            "name": "CROWN-MV",
+            "nctId": "NCT07798726",
+            "phase": "Device study (not applicable phase)",
+            "status": "recruiting",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "conditions": [
+              "cond-mr",
+              "cond-ms"
+            ],
+            "therapies": [
+              "dev-cephea-mitral-system"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 565,
+                "basis": "estimated",
+                "asOf": "2026-11-13",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT07798726"
+              }
+            ],
+            "primaryEndpoint": "Primary effectiveness: freedom from all-cause mortality and heart failure hospitalization at 12 months; primary safety: composite of cardiovascular death, stroke, life-threatening bleeding, valve thrombosis or paravalvular leak with hemolysis at 30 days.",
+            "resultStatus": "ongoing",
+            "pulse": 2,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07798726"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (first posted 2026-09-01, last update 2026-11-13, no results). The record does not call the study pivotal; stage is left unknown."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-hera-tavi",
+          "label": "HERA-TAVI Registry",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-hera-tavi",
+            "type": "trial",
+            "name": "HERA-TAVI Registry",
+            "phase": "Observational registry (published)",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-navitor",
+              "dev-evolut"
+            ],
+            "outcomeSummary": "Observational registry (abstract only; 2,607 patients, 892 propensity-matched pairs): similar one-year death, disabling stroke or heart failure hospitalization between Navitor/Navitor Vision and Evolut FX/FX+; pacemaker implantation was more frequent with Navitor (22.1% vs 16.3%).",
+            "resultStatus": "not-assessed",
+            "references": [
+              "PMID:42200635"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "PMID:42200635"
+              ],
+              "notes": "Published registry analysis from the PubMed record only; no registry entry or protocol was opened and the abstract states no registry identifier. Non-randomized comparison with a propensity-matched subset. Counts are from the abstract; the sponsor and funding were not read."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-landmark-myval",
+          "label": "LANDMARK",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 1,
+          "entity": {
+            "id": "trial-landmark-myval",
+            "type": "trial",
+            "name": "LANDMARK",
+            "nctId": "NCT04275726",
+            "phase": "Randomized noninferiority trial (device)",
+            "status": "recruiting",
+            "primaryAnalysis": {
+              "status": "reported",
+              "source": "https://pubmed.ncbi.nlm.nih.gov/41384893/"
+            },
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "proc-tavi"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 988,
+                "basis": "estimated",
+                "asOf": "2026-08-17",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT04275726"
+              },
+              {
+                "count": 768,
+                "basis": "randomized",
+                "asOf": "2026-02-03",
+                "scope": "As stated in the 1-year publication abstract",
+                "source": "https://pubmed.ncbi.nlm.nih.gov/41384893/"
+              }
+            ],
+            "primaryEndpoint": "VARC-3 combined safety and effectiveness endpoint at 30 days.",
+            "outcomeSummary": "1-year report (abstract only; 768 randomized, 31 hospitals): Myval THV series was noninferior to contemporary THVs for the 1-year composite of all-cause mortality, all strokes or procedure- or valve-related hospitalization (freedom 87.0% vs 86.9%); the abstract states noninferiority at 30 days was met earlier.",
+            "resultStatus": "positive",
+            "references": [
+              "PMID:41384893"
+            ],
+            "pulse": 1,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT04275726",
+                "PMID:41384893"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (last update 2026-08-17, no results posted) plus the 1-year publication abstract (JACC, 2026-02-03). The registry estimate (988) and the published randomized count (768) differ and both are kept. The trial studied the Myval THV series; the public node is Myval Octapro, so the edge is series-level. SAPIEN and Evolut comparators are not linked."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-miclasp",
+          "label": "MiCLASP PMCF",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-miclasp",
+            "type": "trial",
+            "name": "MiCLASP PMCF",
+            "nctId": "NCT04430075",
+            "phase": "Observational study (post-market clinical follow-up)",
+            "status": "active",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "conditions": [
+              "cond-mr"
+            ],
+            "therapies": [
+              "dev-pascal"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 1000,
+                "basis": "estimated",
+                "asOf": "2026-08-19",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT04430075"
+              }
+            ],
+            "primaryEndpoint": "Major adverse events at 30 days; change in mitral regurgitation severity (0-4+) by echocardiography at discharge or 7 days.",
+            "resultStatus": "ongoing",
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT04430075"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (last update 2026-08-19, no results posted). The enrollment of 1,000 is the registry estimate, not a count of patients treated."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-navultra-registry",
+          "label": "NAVULTRA Registry",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 0,
+          "entity": {
+            "id": "trial-navultra-registry",
+            "type": "trial",
+            "name": "NAVULTRA Registry",
+            "phase": "Observational registry (published)",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-navitor",
+              "dev-sapien-3"
+            ],
+            "outcomeSummary": "Observational registry in small aortic annuli (abstract only; 1,617 patients, 524 matched pairs): comparable one-year clinical outcomes between Navitor and SAPIEN 3 Ultra; Navitor showed better haemodynamics with higher mild paravalvular leak and pacemaker rates.",
+            "resultStatus": "not-assessed",
+            "references": [
+              "PMID:41627781"
+            ],
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "PMID:41627781"
+              ],
+              "notes": "Published registry analysis from the PubMed record only; no registry entry was opened and the abstract states no registry identifier. Non-randomized, small-annulus subset (area 430 mm2 or less). The SAPIEN 3 Ultra edge uses the lineage node dev-sapien-3."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-reassure-sapien-3-ultra-resilia",
+          "label": "REASSURE",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 2,
+          "entity": {
+            "id": "trial-reassure-sapien-3-ultra-resilia",
+            "type": "trial",
+            "name": "REASSURE",
+            "nctId": "NCT07954583",
+            "phase": "Device study (not applicable phase)",
+            "status": "recruiting",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-sapien-3"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 50,
+                "basis": "estimated",
+                "asOf": "2026-11-23",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT07954583"
+              }
+            ],
+            "primaryEndpoint": "Invasive aortic valve mean gradient immediately after TAVR (day 0).",
+            "resultStatus": "ongoing",
+            "pulse": 2,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07954583"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (first posted and last updated 2026-11-23, no results). Lead sponsor per the registry is Medstar Health Research Institute (an investigator-sponsored study). Both studied valves are 23 mm; node dev-sapien-3 covers the SAPIEN 3 lineage including SAPIEN 3 Ultra RESILIA."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-retavi-registry",
+          "label": "ReTAVI Registry",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 1,
+          "entity": {
+            "id": "trial-retavi-registry",
+            "type": "trial",
+            "name": "ReTAVI Registry",
+            "nctId": "NCT05601453",
+            "phase": "Observational registry",
+            "status": "recruiting",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-sapien-3"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 250,
+                "basis": "estimated",
+                "asOf": "2026-10-16",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT05601453"
+              }
+            ],
+            "primaryEndpoint": "VARC-3 device success and early safety at 30 days; technical success; durability of the second transcatheter valve at 30 days, 3 months, 12 months, 3 years and 5 years.",
+            "outcomeSummary": "30-day report (abstract only; 143 patients, 59 centers, single-arm registry): replacement valve implanted successfully in 95.1%; 30-day mortality 3.5%, stroke 0.7%, pacemaker 6.3%; coronary obstruction 1.4%; no comparator.",
+            "resultStatus": "ongoing",
+            "references": [
+              "PMID:42219979"
+            ],
+            "pulse": 1,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT05601453",
+                "PMID:42219979"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (last update 2026-10-16, no results posted) plus the 30-day outcome abstract (EuroIntervention 2026). No public node exists for transcatheter heart valve failure, so the condition edge is aortic stenosis only. The registry says SAPIEN family and the abstract says SAPIEN 3 platform; dev-sapien-3 is the lineage node. The registry-estimated 250 and the 143 patients enrolled in the abstract are different counts."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tri-fr",
+          "label": "TRI-FR",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 2,
+          "entity": {
+            "id": "trial-tri-fr",
+            "type": "trial",
+            "name": "TRI-FR",
+            "nctId": "NCT04646811",
+            "phase": "Device study (not applicable phase)",
+            "status": "completed",
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "proc-tricuspid-teer",
+              "dev-triclip"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 300,
+                "basis": "actual",
+                "asOf": "2024-06-17",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT04646811"
+              }
+            ],
+            "primaryEndpoint": "Milton Packer clinical composite score at 12 months.",
+            "outcomeSummary": "Extended-follow-up secondary analysis (median 30.8 months; 152 TriClip T-TEER plus medical therapy vs 148 medical therapy alone): lower risk of a first composite of heart failure hospitalization, tricuspid surgery or cardiovascular death (HR 0.56, 95% CI 0.36-0.88) and of recurrent heart failure hospitalization; deaths 32 vs 30, and cardiovascular death or tricuspid surgery did not differ significantly.",
+            "resultStatus": "not-assessed",
+            "references": [
+              "PMID:43074159"
+            ],
+            "pulse": 2,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT04646811",
+                "PMID:43074159",
+                "https://doi.org/10.1161/CIRCULATIONAHA.126.080397"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (last update 2024-06-17, no results posted). The linked procedure node is the generic tricuspid TEER procedure: the registry says 'Clip for the tricuspid valve' and the PubMed abstract says T-TEER, but neither names the device model. The outcome summary is the abstract of the extended-follow-up secondary analysis only (Circulation, 2026-11-23); the original 12-month primary results were not opened. The Circulation full text (read 2026-11-27, licensed) names TriClip (Abbott), so dev-triclip is linked; generation not stated."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-trinity-us-pivotal",
+          "label": "TRINITY Pivotal Trial",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 3,
+          "pulse": 2,
+          "entity": {
+            "id": "trial-trinity-us-pivotal",
+            "type": "trial",
+            "name": "TRINITY Pivotal Trial",
+            "nctId": "NCT07454980",
+            "phase": "Device study (not applicable phase)",
+            "status": "recruiting",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-lux-valve-plus",
+              "dev-evoque"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 680,
+                "basis": "estimated",
+                "asOf": "2026-08-28",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT07454980"
+              }
+            ],
+            "primaryEndpoint": "Major adverse events at 30 days; composite clinical success at 12 months (survival, no heart failure hospitalization, no tricuspid valve surgery or percutaneous intervention).",
+            "resultStatus": "ongoing",
+            "pulse": 2,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT07454980"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (last update 2026-08-28, no results posted). EVOQUE is listed in the registry as the comparator device in the randomized EVOQUE-eligible cohort; the record also describes a 180-subject single-arm LuX-Valve cohort for patients not suitable for conventional transcatheter tricuspid intervention, tested against a performance goal (detailed description)."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-trinity-us",
+          "label": "TRINITY-US",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 1,
+          "entity": {
+            "id": "trial-trinity-us",
+            "type": "trial",
+            "name": "TRINITY-US",
+            "nctId": "NCT06568003",
+            "phase": "Device study (not applicable phase)",
+            "status": "active",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-lux-valve-plus"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 15,
+                "basis": "estimated",
+                "asOf": "2026-03-02",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06568003"
+              }
+            ],
+            "primaryEndpoint": "Post-procedural tricuspid regurgitation remission rate and incidence of major adverse events, both at 30 days.",
+            "resultStatus": "ongoing",
+            "pulse": 1,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06568003"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (last update 2026-03-02, no results posted). The registry title does not say early feasibility, so the work list slug trial-trinity-us-efs was shortened to trial-trinity-us. Kept apart from the European TRINITY and from the US pivotal trial (NCT07454980). Sponsor is listed as Jenscare Innovation Inc.; public company node co-jenscare-scientific is not asserted to be the same legal entity."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-triplace-registry",
+          "label": "TRIPLACE Registry",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 2,
+          "entity": {
+            "id": "trial-triplace-registry",
+            "type": "trial",
+            "name": "TRIPLACE Registry",
+            "nctId": "NCT06033274",
+            "phase": "Observational registry",
+            "status": "recruiting",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "proc-ttvr"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 800,
+                "basis": "estimated",
+                "asOf": "2026-09-15",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06033274"
+              }
+            ],
+            "primaryEndpoint": "Freedom from device-related complications at 30 days; reduction in tricuspid regurgitation severity at 30 days.",
+            "outcomeSummary": "Published observational comparison (abstract only): TRIPLACE TTVR cohort (n=395) versus Bronx-Valve medical-therapy cohort (n=784); TTVR was associated with a lower 2-year risk of all-cause mortality or heart failure hospitalization (ATO-HR 0.60, 95% CI 0.40-0.89); non-randomized design.",
+            "resultStatus": "ongoing",
+            "references": [
+              "PMID:43076840"
+            ],
+            "pulse": 2,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06033274",
+                "PMID:43076840"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (last update 2026-09-15, no results posted). The linked procedure node is generic TTVR because the registry and the abstract do not name a valve model. The outcome summary is from the published abstract only and compares non-randomized cohorts. The TRIPLACE and TRIVALVE papers share replacement patients; their counts must not be added."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-triscend-iii-eu",
+          "label": "TRISCEND III EU",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 1,
+          "entity": {
+            "id": "trial-triscend-iii-eu",
+            "type": "trial",
+            "name": "TRISCEND III EU",
+            "nctId": "NCT06569602",
+            "phase": "Observational study (single-arm, real-world)",
+            "status": "recruiting",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-evoque"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 500,
+                "basis": "estimated",
+                "asOf": "2026-09-04",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT06569602"
+              }
+            ],
+            "primaryEndpoint": "Tricuspid regurgitation grade (up to 7 days, 30 days and 1 year); major adverse events at 30 days.",
+            "resultStatus": "ongoing",
+            "pulse": 1,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT06569602"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (last update 2026-09-04, no results posted). European observational study; it is not the US TRISCEND II or other EVOQUE trials."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-vista-us-vdyne",
+          "label": "VISTA-US",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 1,
+          "entity": {
+            "id": "trial-vista-us-vdyne",
+            "type": "trial",
+            "name": "VISTA-US",
+            "nctId": "NCT05848284",
+            "phase": "Device study (not applicable phase)",
+            "status": "recruiting",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-vdyne-ttvr"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 30,
+                "basis": "estimated",
+                "asOf": "2026-09-21",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT05848284"
+              }
+            ],
+            "primaryEndpoint": "Device- and/or procedure-related major adverse events at 30 days (Clinical Events Committee); change in tricuspid regurgitation, NYHA class, 6-minute walk and KCCQ from baseline to 1 month.",
+            "resultStatus": "ongoing",
+            "pulse": 1,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT05848284"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (last update 2026-09-21, no results posted). Companion to VISTA (NCT05797519), which is registered separately."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-vista-vdyne",
+          "label": "VISTA",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 1,
+          "entity": {
+            "id": "trial-vista-vdyne",
+            "type": "trial",
+            "name": "VISTA",
+            "nctId": "NCT05797519",
+            "phase": "Device study (not applicable phase)",
+            "status": "recruiting",
+            "primaryAnalysis": {
+              "status": "not-reported"
+            },
+            "conditions": [
+              "cond-tr"
+            ],
+            "therapies": [
+              "dev-vdyne-ttvr"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 120,
+                "basis": "estimated",
+                "asOf": "2026-11-23",
+                "source": "https://clinicaltrials.gov/api/v2/studies/NCT05797519"
+              }
+            ],
+            "primaryEndpoint": "Device- and/or procedure-related major adverse events at 30 days; change in tricuspid regurgitation, KCCQ, 6-minute walk and NYHA class from baseline to 1 month.",
+            "resultStatus": "ongoing",
+            "pulse": 1,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://clinicaltrials.gov/api/v2/studies/NCT05797519"
+              ],
+              "notes": "Registry identity from the retained ClinicalTrials.gov record (last update 2026-11-23, no results posted). Separate from VISTA-US (NCT05848284), a US and Canada study of the same device system; the two registrations are not merged."
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "trial-voyager-ce",
+          "label": "VOYAGER CE",
+          "group": "trial",
+          "isDraft": false,
+          "isHalted": false,
+          "isRetired": false,
+          "degree": 2,
+          "pulse": 2,
+          "entity": {
+            "id": "trial-voyager-ce",
+            "type": "trial",
+            "name": "VOYAGER CE",
+            "phase": "Pre-market single-arm study (sponsor release)",
+            "conditions": [
+              "cond-as"
+            ],
+            "therapies": [
+              "dev-abbott-encantor"
+            ],
+            "enrollmentCounts": [
+              {
+                "count": 300,
+                "basis": "estimated",
+                "scope": "Up to 300 patients per the sponsor release; not a registry figure",
+                "source": "https://abbott.mediaroom.com/2026-11-19-Abbott-initiates-VOYAGER-clinical-trial-for-investigational-Encantor-TM-software-guided-balloon-expandable-TAVI-system-to-treat-aortic-stenosis"
+              }
+            ],
+            "resultStatus": "ongoing",
+            "pulse": 2,
+            "curation": {
+              "status": "curated",
+              "lastUpdated": "2026-11-27",
+              "sources": [
+                "https://abbott.mediaroom.com/2026-11-19-Abbott-initiates-VOYAGER-clinical-trial-for-investigational-Encantor-TM-software-guided-balloon-expandable-TAVI-system-to-treat-aortic-stenosis"
+              ],
+              "notes": "Sponsor release only; no registry record was opened, so no nctId or registry status is set. The release states the first enrollment occurred at Macquarie University, Sydney, and the study is planned to support CE Mark approval; the count is a planned maximum, not enrollment."
+            }
+          }
+        }
       }
     ],
     "edges": [
@@ -42406,6 +43753,22 @@
       },
       {
         "data": {
+          "id": "dev-abbott-encantor__made_by__co-abbott",
+          "source": "dev-abbott-encantor",
+          "target": "co-abbott",
+          "relationship": "made_by"
+        }
+      },
+      {
+        "data": {
+          "id": "dev-abbott-encantor__treats__cond-as",
+          "source": "dev-abbott-encantor",
+          "target": "cond-as",
+          "relationship": "treats"
+        }
+      },
+      {
+        "data": {
           "id": "trial-siegel-star__evaluates__dev-siegel-tavr",
           "source": "trial-siegel-star",
           "target": "dev-siegel-tavr",
@@ -46288,6 +47651,326 @@
         "data": {
           "id": "trial-history-nct02202434__studies__cond-as",
           "source": "trial-history-nct02202434",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-boxx-noaf__evaluates__dev-atriclip",
+          "source": "trial-boxx-noaf",
+          "target": "dev-atriclip",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-boxx-noaf__studies__cond-af",
+          "source": "trial-boxx-noaf",
+          "target": "cond-af",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cephea-efs__evaluates__dev-cephea-mitral-system",
+          "source": "trial-cephea-efs",
+          "target": "dev-cephea-mitral-system",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cephea-efs__studies__cond-mr",
+          "source": "trial-cephea-efs",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-cephea-efs__studies__cond-ms",
+          "source": "trial-cephea-efs",
+          "target": "cond-ms",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-crown-mv__evaluates__dev-cephea-mitral-system",
+          "source": "trial-crown-mv",
+          "target": "dev-cephea-mitral-system",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-crown-mv__studies__cond-mr",
+          "source": "trial-crown-mv",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-crown-mv__studies__cond-ms",
+          "source": "trial-crown-mv",
+          "target": "cond-ms",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-hera-tavi__evaluates__dev-navitor",
+          "source": "trial-hera-tavi",
+          "target": "dev-navitor",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-hera-tavi__evaluates__dev-evolut",
+          "source": "trial-hera-tavi",
+          "target": "dev-evolut",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-hera-tavi__studies__cond-as",
+          "source": "trial-hera-tavi",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-landmark-myval__evaluates__proc-tavi",
+          "source": "trial-landmark-myval",
+          "target": "proc-tavi",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-landmark-myval__studies__cond-as",
+          "source": "trial-landmark-myval",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-miclasp__evaluates__dev-pascal",
+          "source": "trial-miclasp",
+          "target": "dev-pascal",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-miclasp__studies__cond-mr",
+          "source": "trial-miclasp",
+          "target": "cond-mr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-navultra-registry__evaluates__dev-navitor",
+          "source": "trial-navultra-registry",
+          "target": "dev-navitor",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-navultra-registry__evaluates__dev-sapien-3",
+          "source": "trial-navultra-registry",
+          "target": "dev-sapien-3",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-navultra-registry__studies__cond-as",
+          "source": "trial-navultra-registry",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-reassure-sapien-3-ultra-resilia__evaluates__dev-sapien-3",
+          "source": "trial-reassure-sapien-3-ultra-resilia",
+          "target": "dev-sapien-3",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-reassure-sapien-3-ultra-resilia__studies__cond-as",
+          "source": "trial-reassure-sapien-3-ultra-resilia",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-retavi-registry__evaluates__dev-sapien-3",
+          "source": "trial-retavi-registry",
+          "target": "dev-sapien-3",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-retavi-registry__studies__cond-as",
+          "source": "trial-retavi-registry",
+          "target": "cond-as",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tri-fr__evaluates__proc-tricuspid-teer",
+          "source": "trial-tri-fr",
+          "target": "proc-tricuspid-teer",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tri-fr__evaluates__dev-triclip",
+          "source": "trial-tri-fr",
+          "target": "dev-triclip",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-tri-fr__studies__cond-tr",
+          "source": "trial-tri-fr",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-trinity-us-pivotal__evaluates__dev-lux-valve-plus",
+          "source": "trial-trinity-us-pivotal",
+          "target": "dev-lux-valve-plus",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-trinity-us-pivotal__evaluates__dev-evoque",
+          "source": "trial-trinity-us-pivotal",
+          "target": "dev-evoque",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-trinity-us-pivotal__studies__cond-tr",
+          "source": "trial-trinity-us-pivotal",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-trinity-us__evaluates__dev-lux-valve-plus",
+          "source": "trial-trinity-us",
+          "target": "dev-lux-valve-plus",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-trinity-us__studies__cond-tr",
+          "source": "trial-trinity-us",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-triplace-registry__evaluates__proc-ttvr",
+          "source": "trial-triplace-registry",
+          "target": "proc-ttvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-triplace-registry__studies__cond-tr",
+          "source": "trial-triplace-registry",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-triscend-iii-eu__evaluates__dev-evoque",
+          "source": "trial-triscend-iii-eu",
+          "target": "dev-evoque",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-triscend-iii-eu__studies__cond-tr",
+          "source": "trial-triscend-iii-eu",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-vista-us-vdyne__evaluates__dev-vdyne-ttvr",
+          "source": "trial-vista-us-vdyne",
+          "target": "dev-vdyne-ttvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-vista-us-vdyne__studies__cond-tr",
+          "source": "trial-vista-us-vdyne",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-vista-vdyne__evaluates__dev-vdyne-ttvr",
+          "source": "trial-vista-vdyne",
+          "target": "dev-vdyne-ttvr",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-vista-vdyne__studies__cond-tr",
+          "source": "trial-vista-vdyne",
+          "target": "cond-tr",
+          "relationship": "studies"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-voyager-ce__evaluates__dev-abbott-encantor",
+          "source": "trial-voyager-ce",
+          "target": "dev-abbott-encantor",
+          "relationship": "evaluates"
+        }
+      },
+      {
+        "data": {
+          "id": "trial-voyager-ce__studies__cond-as",
+          "source": "trial-voyager-ce",
           "target": "cond-as",
           "relationship": "studies"
         }

@@ -8,7 +8,9 @@
  *      the correct entity type, therapy id prefix matches therapyType).
  *   4. Derive graph nodes + edges, compute node degree.
  *   5. Validate data/news.yaml and verify all of its node references resolve.
- *   6. Write public/graph.json with graph metadata and a news feed.
+ *   6. Write public/graph.json with graph metadata and every published news
+ *      item. The app shows the newest NEWS_PAGE_LIMIT on News and the older
+ *      ones on the News Archive page.
  *
  * Any error fails the build (exit 1) with a clear message, so a scheduled
  * updater (or CI) catches malformed data before it ships.
@@ -32,6 +34,7 @@ import type {
   SourcedRelationship,
 } from '../src/types/entities'
 import { atlasLifecycleFlags } from '../src/data/lifecycle'
+import { orderNews, splitNewsArchive } from '../src/data/news-archive'
 import { newsDateIssues } from './news-validation'
 import { relationshipEndpointIssues } from './graph-relationships'
 import { trialIssues } from './trial-validation'
@@ -339,10 +342,10 @@ const lastUpdated = all.reduce(
 const draftCount = nodes.filter((n) => n.data.isDraft).length
 const scoredCount = nodes.filter((n) => n.data.pulse > 0).length
 // Validate every item above, then omit unreviewed research from the public feed.
-const sortedNews = news.filter((item) => item.reviewStatus !== 'draft').sort((a, b) => {
-  const dateOrder = b.publishedAt.localeCompare(a.publishedAt)
-  return dateOrder || a.id.localeCompare(b.id)
-})
+const sortedNews = orderNews(news.filter((item) => item.reviewStatus !== 'draft'))
+// Every published item stays in graph.json, so Atlas panels, search and
+// bibliographies still see older News; the app splits News from the archive.
+const { archive: archivedNews } = splitNewsArchive(sortedNews)
 
 const graph: GraphData = {
   meta: {
@@ -353,6 +356,7 @@ const graph: GraphData = {
     total: nodes.length,
     newsCount: sortedNews.length,
     latestNewsDate: sortedNews[0]?.publishedAt,
+    newsArchiveCount: archivedNews.length,
   },
   news: sortedNews,
   elements: { nodes, edges: edges.map((data) => ({ data })) },
@@ -365,7 +369,7 @@ console.log('✓ build-data: wrote public/graph.json')
 console.log(
   `  nodes: ${nodes.length}  edges: ${edges.length}  drafts: ${draftCount}  pulse-scored: ${scoredCount}`,
 )
-console.log(`  news: ${sortedNews.length}${sortedNews[0] ? `  latest: ${sortedNews[0].publishedAt}` : ''}`)
+console.log(`  news: ${sortedNews.length}${sortedNews[0] ? `  latest: ${sortedNews[0].publishedAt}` : ''}  of which in the News Archive: ${archivedNews.length}`)
 console.log(
   `  by group: ${Object.entries(counts)
     .map(([g, c]) => `${g}=${c}`)

@@ -85,6 +85,18 @@ test('News accepts a publication date window and rejects malformed or cross-mode
   assert.equal(evidence.newsTo, '')
 })
 
+test('the News Archive view is News-only and round-trips through the URL', () => {
+  const archive = parseWorkspace('?mode=news&newsView=archive&newsFrom=2018-01-01')
+  assert.equal(archive.newsView, 'archive')
+  assert.equal(archive.newsFrom, '2018-01-01')
+  assert.deepEqual(parseWorkspace(`?${workspaceQuery(archive)}`), archive)
+  assert.equal(parseWorkspace('?mode=news').newsView, 'latest')
+  assert.equal(parseWorkspace('?mode=news&newsView=other').newsView, 'latest')
+  assert.equal(parseWorkspace('?mode=data&newsView=archive').newsView, 'latest')
+  assert.equal(new URLSearchParams(workspaceQuery({ ...archive, mode: 'atlas' })).has('newsView'), false)
+  assert.equal(new URLSearchParams(workspaceQuery({ ...archive, newsView: 'latest' })).has('newsView'), false)
+})
+
 test('condition context retains family-level trial evidence without claiming an exact generation', () => {
   const data = loadIntelligenceSource(defaultIntelligencePaths(fileURLToPath(new URL('..', import.meta.url)))) as unknown as IntelligenceData
   const scoped = scopeToCondition(data, 'cond-af')

@@ -1,0 +1,188 @@
+# cardiovalve-tr-specs-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-27"
+sources:
+  - id: src-cvtr-genske-2026
+    title: >-
+      Transcatheter tricuspid valve replacement—a comparison of clinical and procedural outcomes of two different
+      prostheses
+    url: https://doi.org/10.3389/fcvm.2026.1923052
+    kind: publication
+    publisher: Frontiers in Cardiovascular Medicine
+    publishedAt:
+      value: "2026-09-04"
+      precision: day
+    retrievedAt: "2026-10-27"
+    access: public
+  - id: src-cvtr-venus-target-6m
+    title: >-
+      Voluntary announcement: global debut of the six-month clinical follow-up data of the TARGET study for the
+      Cardiovalve TR system
+    url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1124/2026112400366.pdf
+    kind: manufacturer
+    publisher: Venus Medtech (Hangzhou) Inc. (HKEXnews)
+    publishedAt:
+      value: "2026-11-24"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+  - id: src-cvtr-venus-fy2025
+    title: Venus Medtech (Hangzhou) Inc. annual results announcement for the year ended 31 December 2025
+    url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033102789.pdf
+    kind: manufacturer
+    publisher: Venus Medtech (Hangzhou) Inc. (HKEXnews)
+    publishedAt:
+      value: "2026-03-31"
+      precision: day
+    retrievedAt: "2026-11-10"
+    access: public
+specs:
+  - version: ver-cardiovalve-tr
+    category: tricuspid-replacement
+    values:
+      frame-material:
+        value: Nitinol, dual-frame configuration
+        loc: Methods, device description paragraph
+        source: src-cvtr-genske-2026
+        context: Low-profile frame.
+      leaflet-material:
+        value: Bovine pericardium
+        loc: Methods, device description paragraph
+        source: src-cvtr-genske-2026
+      sealing-design:
+        value: Circumferential atrial flange for supra-annular sealing
+        loc: Methods, device description paragraph
+        source: src-cvtr-genske-2026
+      anchoring-mechanism:
+        value: Ventricular grasping legs capture the native leaflets
+        loc: Methods, device description paragraph
+        source: src-cvtr-genske-2026
+        context: Active fixation without relying on annular calcification.
+      repositionable:
+        value: Fully retrievable before final release
+        loc: Methods, device description paragraph
+        source: src-cvtr-genske-2026
+        context: Steerable delivery catheter with controlled leaflet capture.
+      delivery-sheath:
+        value: 37 Fr transfemoral delivery system
+        loc: Methods, device description; Discussion, access paragraph
+        source: src-cvtr-genske-2026
+        context: >-
+          Surgical venous cutdown in 75% of Lübeck cases; the manufacturer altered the sheath for the last 25% of
+          procedures (size not given).
+        limitation: Applies to the original sheath. The sponsor reports an Enhanced Delivery System without a size.
+      available-sizes:
+        value: 45, 50, 55 mm
+        loc: Methods, device description paragraph
+        source: src-cvtr-genske-2026
+        context: 55 mm used in 9 and 50 mm in 3 of 12 Lübeck patients.
+      anatomy-range-summary:
+        value: Tricuspid diameter under 55 mm on CT (TARGET 2.0 inclusion)
+        loc: Eligibility, anatomical inclusion criterion 10
+        source: src-lsi-93389b1e31643a25
+        context: Also right femoral vein over 9 mm and RV length over 45 mm on CT.
+      imaging-guidance:
+        value: Fluoroscopic and echocardiographic guidance
+        loc: Methods, device description paragraph
+        source: src-cvtr-genske-2026
+        context: All procedures under general anesthesia.
+      tissue-treatment:
+        availability: not_publicly_disclosed
+        loc: Detailed description (not stated)
+        source: src-lsi-93389b1e31643a25
+      indication-scope:
+        value: Investigational; CE MDR application submitted (sponsor)
+        loc: PDF p. 20, Cardiovalve pipeline paragraph
+        source: src-cvtr-venus-fy2025
+        context: "Sponsor: European pivotal trial fully enrolled and CE MDR application submitted."
+      pivotal-trials:
+        value: European pivotal trial, 150 enrolled (sponsor)
+        loc: PDF pp. 19-20
+        source: src-cvtr-venus-fy2025
+        context: The sponsor reports interim data from this trial as the TARGET study.
+bibliography:
+  - id: bib-cvtr-specs-2026
+    entityIds:
+      - dev-cardiovalve-tricuspid
+    versionIds:
+      - ver-cardiovalve-tr
+    sourceRefs:
+      - sourceId: src-cvtr-genske-2026
+        locator: Methods device description; Results; Discussion
+      - sourceId: src-cvtr-venus-target-6m
+        locator: PDF pp. 1-2
+      - sourceId: src-cvtr-venus-fy2025
+        locator: PDF pp. 19-20
+    reviewStatus: reviewed
+claims:
+  - id: claim-cvtr-target-tr
+    versionId: ver-cardiovalve-tr
+    category: evidence
+    key: cvtr-target-tr
+    label: TARGET TR reduction (sponsor)
+    value: None or trace TR 76.7% (n=120) at 6 months; 76.9% (n=26) at 3 years
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Venus Medtech voluntary announcement, 24 Nov 2026: TARGET, prospective single-arm, 157 patients at nearly 30
+      centers in Germany, Spain, Italy, the UK and Canada; presented at PCR London Valves 2026.
+    limitation: Sponsor filing; endpoint definitions and core-lab methods not stated.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-cvtr-venus-target-6m
+        locator: PDF p. 1, results paragraph
+    reviewStatus: reviewed
+  - id: claim-cvtr-target-30d
+    versionId: ver-cardiovalve-tr
+    category: evidence
+    key: cvtr-target-30d
+    label: TARGET 30-day safety (sponsor)
+    value: 30-day all-cause death 5.7%; HF rehospitalization 1.9%
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Venus Medtech voluntary announcement, 24 Nov 2026: TARGET, prospective single-arm, 157 patients at nearly 30
+      centers in Germany, Spain, Italy, the UK and Canada; presented at PCR London Valves 2026. Major access-site or
+      vascular injury needing surgery 5.1%.
+    limitation: Sponsor filing; the August 2026 interim report gave 2.5% HF rehospitalization at 30 days.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-cvtr-venus-target-6m
+        locator: PDF p. 1, safety sentence
+    reviewStatus: reviewed
+  - id: claim-cvtr-target-delivery
+    versionId: ver-cardiovalve-tr
+    category: evidence
+    key: cvtr-target-delivery
+    label: Delivery-system generations (sponsor)
+    value: Major bleeding 21% to 5.0% with the Enhanced Delivery System
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Venus Medtech voluntary announcement, 24 Nov 2026: TARGET, prospective single-arm, 157 patients at nearly 30
+      centers in Germany, Spain, Italy, the UK and Canada; presented at PCR London Valves 2026. Major vascular
+      complications 8.8% to 3.0% versus the first-generation delivery system.
+    limitation: Non-randomized comparison between delivery-system generations; denominators and time frame not given.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-cvtr-venus-target-6m
+        locator: PDF p. 1, last sentence
+    reviewStatus: reviewed
+  - id: claim-cvtr-lubeck-2026
+    versionId: ver-cardiovalve-tr
+    category: evidence
+    key: cvtr-lubeck-2026
+    label: Single-center series (Lübeck)
+    value: Mean TR grade 4.08 at baseline vs 0.50 at 30 days (n=12)
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Genske et al. 2026: retrospective single-center comparison of Cardiovalve (n=12, TARGET or compassionate use, Feb
+      2023-Oct 2024) with EVOQUE (n=13).
+    limitation: >-
+      Retrospective, 12 patients; two device dislocations or detachments (one patient died of right heart failure at 2
+      months); sheath altered for the last 25% of procedures.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-cvtr-genske-2026
+        locator: Results, TR paragraph
+    reviewStatus: reviewed

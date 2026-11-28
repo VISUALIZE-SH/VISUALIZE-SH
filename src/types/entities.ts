@@ -304,11 +304,13 @@ export interface GraphMeta {
   newsCount: number
   /** Most recent news publication date, or undefined when no news is present. */
   latestNewsDate?: string
+  /** Published news shown on the News Archive page instead of News (included in newsCount). */
+  newsArchiveCount?: number
 }
 
 export interface GraphData {
   meta: GraphMeta
-  /** Reverse-chronological, validated news feed. */
+  /** Reverse-chronological, validated feed of every published news item. */
   news: NewsItem[]
   elements: {
     nodes: { data: GraphNodeData }[]

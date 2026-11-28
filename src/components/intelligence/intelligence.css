@@ -211,6 +211,10 @@
 .intel-entity-context { margin: 8px 0 0; color: var(--text-3); font-size: var(--fs-11); }
 .intel-load-more { display: grid; justify-items: center; gap: 8px; max-width: 1180px; padding: 6px 0 24px 110px; }
 .intel-load-more p { margin: 0; color: var(--text-3); font-size: var(--fs-12); }
+.intel-news-view-link { display: inline-grid; justify-items: end; gap: 2px; color: var(--link); font-size: var(--fs-13); font-weight: 600; text-decoration: none; white-space: nowrap; }
+.intel-news-view-link span { color: var(--text-3); font-size: var(--fs-11); font-weight: 500; }
+.intel-news-view-link:hover { text-decoration: underline; }
+.intel-news-back { display: inline-block; margin-bottom: 4px; font-size: var(--fs-12); }
 
 @media (max-width: 1100px) {
   .intel-history-lanes { grid-template-columns: 1fr; }

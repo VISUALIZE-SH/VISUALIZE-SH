@@ -1,0 +1,232 @@
+# saturn-tmvr-specs-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-27"
+sources:
+  - id: src-saturn-ta-atssr-2024
+    title: Early Feasibility Study with the SATURN Transapical Mitral Valve Replacement Device
+    url: https://doi.org/10.1016/j.atssr.2024.06.011
+    kind: publication
+    publisher: Annals of Thoracic Surgery Short Reports (Elsevier)
+    publishedAt:
+      value: "2024-06-28"
+      precision: day
+    retrievedAt: "2026-10-28"
+    access: public
+  - id: src-saturn-ts-jaccas-2025
+    title: >-
+      Transseptal Transcatheter Mitral Valve Replacement With a Novel Bioprosthesis in a Patient With Challenging
+      Anatomy
+    url: https://doi.org/10.1016/j.jaccas.2025.104739
+    kind: publication
+    publisher: "JACC: Case Reports (Elsevier)"
+    publishedAt:
+      value: "2025-08-20"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+  - id: src-saturn-us-first-release
+    title: InnovHeart announces first U.S. implant of the Saturn transseptal TMVR system
+    url: https://innovheart.com/wp-content/uploads/2026/09/2026_InnovHeart-PR-First-US-Case-15-pts-globally.pdf
+    kind: manufacturer
+    publisher: InnovHeart
+    publishedAt:
+      value: "2026-09-03"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+  - id: src-saturn-lv26-summary
+    title: Transseptal TMVR with a novel bioprosthesis (Denti et al., London Valves 2026 summary)
+    url: https://innovheart.com/wp-content/uploads/2026/11/11665_DENTI_LV2026_v6.pdf
+    kind: manufacturer
+    publisher: InnovHeart
+    publishedAt:
+      value: 2026-11
+      precision: month
+    retrievedAt: "2026-11-27"
+    access: public
+families:
+  - id: family-saturn-tmvr
+    name: SATURN TMVR
+    manufacturer: InnovHeart
+    entityIds:
+      - dev-innovheart-saturn-ts-tmvr
+    conditionIds:
+      - cond-mr
+    description: >-
+      Investigational TMVR system with a subannular annular structure joined to a central valve; first used
+      transapically, now delivered transseptally (SATURN TS).
+versions:
+  - id: ver-saturn-ta-pilot
+    familyId: family-saturn-tmvr
+    graphEntityId: dev-innovheart-saturn-ts-tmvr
+    name: SATURN TMVR, transapical (2020-2022 pilot)
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Transapical SATURN valve used in a five-patient single-center early feasibility study (Vilnius, 2020-2022);
+      predecessor of the transseptal SATURN TS system. Values do not transfer to SATURN TS.
+    sourceRefs:
+      - sourceId: src-saturn-ta-atssr-2024
+        locator: Device Description; Procedural Technique
+    reviewStatus: reviewed
+  - id: ver-saturn-ts
+    familyId: family-saturn-tmvr
+    graphEntityId: dev-innovheart-saturn-ts-tmvr
+    name: SATURN TS TMVR System (transseptal)
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Transfemoral transseptal SATURN system studied in CASSINI-EU and CASSINI-US early feasibility studies;
+      investigational and not commercially available.
+    sourceRefs:
+      - sourceId: src-graph-0f649889340718ea
+        locator: Detailed description
+      - sourceId: src-saturn-ts-jaccas-2025
+        locator: Management; Discussion
+    reviewStatus: reviewed
+specs:
+  - version: ver-saturn-ta-pilot
+    category: mitral-replacement
+    values:
+      expansion-mechanism:
+        value: Self-expanding nitinol valve with separate annular structure
+        loc: Device Description
+        source: src-saturn-ta-atssr-2024
+      leaflet-material:
+        value: Three bovine leaflets
+        loc: Device Description
+        source: src-saturn-ta-atssr-2024
+      anchoring-mechanism:
+        value: Subannular annular segments joined to the valve by arms
+        loc: Device Description; Procedural Technique
+        source: src-saturn-ta-atssr-2024
+      access-route:
+        value: Transapical (apical port)
+        loc: Procedural Technique
+        source: src-saturn-ta-atssr-2024
+      available-sizes:
+        value: 28 mm (all 5 patients); 31 mm later available
+        loc: Device Description; Comment
+        source: src-saturn-ta-atssr-2024
+      post-implant-therapy:
+        value: Aspirin plus warfarin (INR 2.5-3.5) or a NOAC
+        loc: Procedural Technique
+        source: src-saturn-ta-atssr-2024
+  - version: ver-saturn-ts
+    category: mitral-replacement
+    values:
+      expansion-mechanism:
+        value: Self-expandable nitinol valve joined to annular segments
+        loc: Detailed description, paragraph 2
+        source: src-graph-0f649889340718ea
+      frame-material:
+        value: Nitinol valve frame
+        loc: Detailed description, paragraph 2
+        source: src-graph-0f649889340718ea
+        limitation: Annular segment material not disclosed.
+      leaflet-material:
+        value: Bovine pericardium, three leaflets
+        loc: Detailed description, paragraph 2
+        source: src-graph-0f649889340718ea
+        limitation: The sponsor technology page describes a bovine and porcine pericardial valve; not reconciled.
+      anchoring-mechanism:
+        value: Subannular annular ring mechanically connected to the valve
+        loc: Management; Discussion
+        source: src-saturn-ts-jaccas-2025
+        context: The annular structure also allows the annulus to be reduced.
+      access-route:
+        value: Percutaneous transfemoral, transseptal
+        loc: Management
+        source: src-saturn-ts-jaccas-2025
+      delivery-sheath:
+        value: 29 Fr delivery system
+        loc: Management
+        source: src-saturn-ts-jaccas-2025
+        limitation: Inner or outer diameter not stated.
+      available-sizes:
+        value: Two valve sizes
+        loc: Discussion
+        source: src-saturn-ts-jaccas-2025
+        context: The 2024 transapical paper names 28 and 31 mm; the case used a 28 mm valve.
+      anatomy-range-summary:
+        value: Annular perimeter 90-146 mm across both sizes
+        loc: Discussion
+        source: src-saturn-ts-jaccas-2025
+        limitation: Statement in a case report by sponsor-affiliated authors.
+      imaging-guidance:
+        value: CT planning with neo-LVOT modeling; TEE guidance
+        loc: Management
+        source: src-saturn-ts-jaccas-2025
+      tissue-treatment:
+        availability: not_publicly_disclosed
+        loc: Detailed description (not stated)
+        source: src-graph-0f649889340718ea
+      indication-scope:
+        value: Investigational; not commercially available in any country
+        loc: Caution statement
+        source: src-saturn-us-first-release
+        context: The release describes CASSINI as studies in moderate-severe or severe symptomatic MR.
+bibliography:
+  - id: bib-saturn-specs-2026
+    entityIds:
+      - dev-innovheart-saturn-ts-tmvr
+    versionIds:
+      - ver-saturn-ta-pilot
+      - ver-saturn-ts
+    sourceRefs:
+      - sourceId: src-saturn-ta-atssr-2024
+        locator: Device Description; Procedural Results; Table 2
+      - sourceId: src-saturn-ts-jaccas-2025
+        locator: Management; Discussion
+    reviewStatus: reviewed
+claims:
+  - id: claim-saturn-ta-30d
+    versionId: ver-saturn-ta-pilot
+    category: evidence
+    key: saturn-ta-30d
+    label: Transapical pilot, 30 days
+    value: No 30-day death or stroke; MVARC technical and device success in all 5
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Five high-risk men with MR 3+ (n=3) or 4+ (n=2), single center (Vilnius), Aug 2020-Aug 2022; procedural success
+      also met in all.
+    limitation: Five patients; no comparator.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-saturn-ta-atssr-2024
+        locator: Procedural Results
+    reviewStatus: reviewed
+  - id: claim-saturn-ta-1y
+    versionId: ver-saturn-ta-pilot
+    category: evidence
+    key: saturn-ta-1y
+    label: Transapical pilot, 1 year
+    value: Median MR and paravalvular leak grade 0; median gradient 6.7 mmHg
+    availability: reported
+    basis: directly_reported
+    context: Five patients; all completed 1 year, three completed 2 years.
+    limitation: Five patients; LVEF fell from 42.2% at screening to 34.1% at 30 days and was stable thereafter.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-saturn-ta-atssr-2024
+        locator: Table 2 (1-year echocardiography)
+    reviewStatus: reviewed
+  - id: claim-saturn-ts-lv26
+    versionId: ver-saturn-ts
+    category: evidence
+    key: saturn-ts-lv26
+    label: Transseptal 30 days (sponsor summary)
+    value: "15 patients: 93.3% implanted; CV death 0%; major vascular 13.3%"
+    availability: reported
+    basis: directly_reported
+    context: >-
+      InnovHeart-hosted summary of the London Valves 2026 late-breaking presentation (Denti et al.): prospective
+      multicenter single-arm study, grade 3+ functional MR, high risk.
+    limitation: >-
+      Sponsor-posted; denominators not printed; the company page credits the CASSINI-EU investigators. May differ from
+      the sponsor's count of 15 patients treated globally.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-saturn-lv26-summary
+        locator: Main findings panel
+    reviewStatus: reviewed

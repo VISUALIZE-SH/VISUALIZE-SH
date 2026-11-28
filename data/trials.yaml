@@ -3639,7 +3639,7 @@
   name: SPACER Study (Pivot Extend)
   nctId: NCT06877520
   phase: "Early feasibility study (registry phase: not applicable)"
-  status: recruiting
+  status: terminated
   primaryAnalysis:
     status: not-reported
   conditions:
@@ -3647,22 +3647,20 @@
   therapies:
     - dev-tau-pivot-extend
   enrollmentCounts:
-    - count: 7
-      basis: estimated
-      asOf: "2025-04-11"
+    - count: 0
+      basis: actual
+      asOf: "2026-11-24"
+      scope: Registry actual enrollment at withdrawal; the earlier estimate was 7
       source: https://clinicaltrials.gov/api/v2/studies/NCT06877520
   primaryEndpoint: Occurrence ratio of major adverse cardiac events (MACE) at 1 month after the procedure.
-  outcomeSummary: No results are posted in the registry record.
-  resultStatus: ongoing
+  outcomeSummary: "ClinicalTrials.gov lists the study as withdrawn before enrollment (reason given: poor accrual; zero participants), in the record posted 2026-11-24. No results exist."
+  resultStatus: terminated
   curation:
     status: draft
     lastUpdated: "2026-10-21"
     sources:
       - https://clinicaltrials.gov/api/v2/studies/NCT06877520
-    notes: >-
-      Registry record last updated 2025-04-11 and not updated since; status Recruiting as verified 2025-04. The
-      estimated start (2025-05) and primary completion (2026-05) have passed, so the status may be out of date. Three
-      sites in Tbilisi, Georgia. Enrollment is the estimated target, not patients treated.
+    notes: "Registry record last updated 2026-11-24 (status verified 2026-11): Withdrawn, reason poor accrual, actual enrollment 0. The record lists three sites in Tbilisi, Georgia. The public status value terminated stands in for the registry value Withdrawn, which the schema does not offer. The separate Australian SPACER registration is a different record and is not affected by this entry."
 - id: trial-tavipilot-fih
   type: trial
   name: TaviPilot first-in-human study
@@ -6826,3 +6824,548 @@
       CAS/21mm/Nested Registry terminated (investigational device is no longer available). The primary randomized cohort
       used the original LOTUS. The whole record also includes CoreValve/Evolut R comparators and a nested LOTUS Edge
       cohort.
+
+- id: trial-boxx-noaf
+  type: trial
+  name: BoxX-NoAF
+  nctId: NCT06989775
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-af
+  therapies:
+    - dev-atriclip
+  enrollmentCounts:
+    - count: 960
+      basis: estimated
+      asOf: "2026-10-07"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06989775
+  primaryEndpoint: >-
+    Clinically relevant postoperative atrial fibrillation (effectiveness) and a composite safety endpoint, both assessed
+    30 days after the index cardiac surgery.
+  resultStatus: ongoing
+  pulse: 2
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06989775
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (last update 2026-10-07, no results posted). The
+      registry names the AtriClip LAA Exclusion System without a model; public node dev-atriclip is the AtriClip FLEX
+      generation, so the edge is family-level. The EnCompass clamp is not a public node (dev-encompass-clamp was not
+      drafted: no label or FDA record opened), so the trial links to AtriClip only.
+- id: trial-cephea-efs
+  type: trial
+  name: Cephea Early Feasibility Study
+  nctId: NCT05061004
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-mr
+    - cond-ms
+  therapies:
+    - dev-cephea-mitral-system
+  enrollmentCounts:
+    - count: 90
+      basis: estimated
+      asOf: "2026-09-11"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05061004
+  primaryEndpoint: >-
+    Primary safety: freedom from all-cause mortality at 30 days; primary effectiveness: proportion with mitral
+    regurgitation reduced to grade I or less at 30 days.
+  resultStatus: ongoing
+  pulse: 1
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05061004
+      - https://doi.org/10.1016/j.jcin.2026.02.029
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (last update 2026-09-11, no results posted). The
+      link of Cephea to London Valves Programme item 11 was inferred in the work list and is not asserted here. CROWN-MV
+      (NCT07798726) is a separate study. Interim 30-day results for 24 EFS and 7 compassionate-use patients were
+      published in JACC: Cardiovascular Interventions (May 2026); the primary analysis is not reported.
+- id: trial-crown-mv
+  type: trial
+  name: CROWN-MV
+  nctId: NCT07798726
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-mr
+    - cond-ms
+  therapies:
+    - dev-cephea-mitral-system
+  enrollmentCounts:
+    - count: 565
+      basis: estimated
+      asOf: "2026-11-13"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07798726
+  primaryEndpoint: >-
+    Primary effectiveness: freedom from all-cause mortality and heart failure hospitalization at 12 months; primary
+    safety: composite of cardiovascular death, stroke, life-threatening bleeding, valve thrombosis or paravalvular leak
+    with hemolysis at 30 days.
+  resultStatus: ongoing
+  pulse: 2
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07798726
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (first posted 2026-09-01, last update 2026-11-13, no
+      results). The record does not call the study pivotal; stage is left unknown.
+- id: trial-hera-tavi
+  type: trial
+  name: HERA-TAVI Registry
+  phase: Observational registry (published)
+  conditions:
+    - cond-as
+  therapies:
+    - dev-navitor
+    - dev-evolut
+  outcomeSummary: >-
+    Observational registry (abstract only; 2,607 patients, 892 propensity-matched pairs): similar one-year death,
+    disabling stroke or heart failure hospitalization between Navitor/Navitor Vision and Evolut FX/FX+; pacemaker
+    implantation was more frequent with Navitor (22.1% vs 16.3%).
+  resultStatus: not-assessed
+  references:
+    - PMID:42200635
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - PMID:42200635
+    notes: >-
+      Published registry analysis from the PubMed record only; no registry entry or protocol was opened and the abstract
+      states no registry identifier. Non-randomized comparison with a propensity-matched subset. Counts are from the
+      abstract; the sponsor and funding were not read.
+- id: trial-landmark-myval
+  type: trial
+  name: LANDMARK
+  nctId: NCT04275726
+  phase: Randomized noninferiority trial (device)
+  status: recruiting
+  primaryAnalysis:
+    status: reported
+    source: https://pubmed.ncbi.nlm.nih.gov/41384893/
+  conditions:
+    - cond-as
+  therapies:
+    - proc-tavi
+  enrollmentCounts:
+    - count: 988
+      basis: estimated
+      asOf: "2026-08-17"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT04275726
+    - count: 768
+      basis: randomized
+      asOf: "2026-02-03"
+      scope: As stated in the 1-year publication abstract
+      source: https://pubmed.ncbi.nlm.nih.gov/41384893/
+  primaryEndpoint: VARC-3 combined safety and effectiveness endpoint at 30 days.
+  outcomeSummary: >-
+    1-year report (abstract only; 768 randomized, 31 hospitals): Myval THV series was noninferior to contemporary THVs
+    for the 1-year composite of all-cause mortality, all strokes or procedure- or valve-related hospitalization (freedom
+    87.0% vs 86.9%); the abstract states noninferiority at 30 days was met earlier.
+  resultStatus: positive
+  references:
+    - PMID:41384893
+  pulse: 1
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT04275726
+      - PMID:41384893
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (last update 2026-08-17, no results posted) plus the
+      1-year publication abstract (JACC, 2026-02-03). The registry estimate (988) and the published randomized count
+      (768) differ and both are kept. The trial studied the Myval THV series; the public node is Myval Octapro, so the
+      edge is series-level. SAPIEN and Evolut comparators are not linked.
+- id: trial-miclasp
+  type: trial
+  name: MiCLASP PMCF
+  nctId: NCT04430075
+  phase: Observational study (post-market clinical follow-up)
+  status: active
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-mr
+  therapies:
+    - dev-pascal
+  enrollmentCounts:
+    - count: 1000
+      basis: estimated
+      asOf: "2026-08-19"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT04430075
+  primaryEndpoint: >-
+    Major adverse events at 30 days; change in mitral regurgitation severity (0-4+) by echocardiography at discharge or
+    7 days.
+  resultStatus: ongoing
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT04430075
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (last update 2026-08-19, no results posted). The
+      enrollment of 1,000 is the registry estimate, not a count of patients treated.
+- id: trial-navultra-registry
+  type: trial
+  name: NAVULTRA Registry
+  phase: Observational registry (published)
+  conditions:
+    - cond-as
+  therapies:
+    - dev-navitor
+    - dev-sapien-3
+  outcomeSummary: >-
+    Observational registry in small aortic annuli (abstract only; 1,617 patients, 524 matched pairs): comparable
+    one-year clinical outcomes between Navitor and SAPIEN 3 Ultra; Navitor showed better haemodynamics with higher mild
+    paravalvular leak and pacemaker rates.
+  resultStatus: not-assessed
+  references:
+    - PMID:41627781
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - PMID:41627781
+    notes: >-
+      Published registry analysis from the PubMed record only; no registry entry was opened and the abstract states no
+      registry identifier. Non-randomized, small-annulus subset (area 430 mm2 or less). The SAPIEN 3 Ultra edge uses the
+      lineage node dev-sapien-3.
+- id: trial-reassure-sapien-3-ultra-resilia
+  type: trial
+  name: REASSURE
+  nctId: NCT07954583
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-as
+  therapies:
+    - dev-sapien-3
+  enrollmentCounts:
+    - count: 50
+      basis: estimated
+      asOf: "2026-11-23"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07954583
+  primaryEndpoint: Invasive aortic valve mean gradient immediately after TAVR (day 0).
+  resultStatus: ongoing
+  pulse: 2
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07954583
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (first posted and last updated 2026-11-23, no
+      results). Lead sponsor per the registry is Medstar Health Research Institute (an investigator-sponsored study).
+      Both studied valves are 23 mm; node dev-sapien-3 covers the SAPIEN 3 lineage including SAPIEN 3 Ultra RESILIA.
+- id: trial-retavi-registry
+  type: trial
+  name: ReTAVI Registry
+  nctId: NCT05601453
+  phase: Observational registry
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-as
+  therapies:
+    - dev-sapien-3
+  enrollmentCounts:
+    - count: 250
+      basis: estimated
+      asOf: "2026-10-16"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05601453
+  primaryEndpoint: >-
+    VARC-3 device success and early safety at 30 days; technical success; durability of the second transcatheter valve
+    at 30 days, 3 months, 12 months, 3 years and 5 years.
+  outcomeSummary: >-
+    30-day report (abstract only; 143 patients, 59 centers, single-arm registry): replacement valve implanted
+    successfully in 95.1%; 30-day mortality 3.5%, stroke 0.7%, pacemaker 6.3%; coronary obstruction 1.4%; no comparator.
+  resultStatus: ongoing
+  references:
+    - PMID:42219979
+  pulse: 1
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05601453
+      - PMID:42219979
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (last update 2026-10-16, no results posted) plus the
+      30-day outcome abstract (EuroIntervention 2026). No public node exists for transcatheter heart valve failure, so
+      the condition edge is aortic stenosis only. The registry says SAPIEN family and the abstract says SAPIEN 3
+      platform; dev-sapien-3 is the lineage node. The registry-estimated 250 and the 143 patients enrolled in the
+      abstract are different counts.
+- id: trial-tri-fr
+  type: trial
+  name: TRI-FR
+  nctId: NCT04646811
+  phase: Device study (not applicable phase)
+  status: completed
+  conditions:
+    - cond-tr
+  therapies:
+    - proc-tricuspid-teer
+    - dev-triclip
+  enrollmentCounts:
+    - count: 300
+      basis: actual
+      asOf: "2024-06-17"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT04646811
+  primaryEndpoint: Milton Packer clinical composite score at 12 months.
+  outcomeSummary: >-
+    Extended-follow-up secondary analysis (median 30.8 months; 152 TriClip T-TEER plus medical therapy vs 148 medical
+    therapy alone): lower risk of a first composite of heart failure hospitalization, tricuspid surgery or
+    cardiovascular death (HR 0.56, 95% CI 0.36-0.88) and of recurrent heart failure hospitalization; deaths 32 vs 30,
+    and cardiovascular death or tricuspid surgery did not differ significantly.
+  resultStatus: not-assessed
+  references:
+    - PMID:43074159
+  pulse: 2
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT04646811
+      - PMID:43074159
+      - https://doi.org/10.1161/CIRCULATIONAHA.126.080397
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (last update 2024-06-17, no results posted). The
+      linked procedure node is the generic tricuspid TEER procedure: the registry says 'Clip for the tricuspid valve'
+      and the PubMed abstract says T-TEER, but neither names the device model. The outcome summary is the abstract of
+      the extended-follow-up secondary analysis only (Circulation, 2026-11-23); the original 12-month primary results
+      were not opened. The Circulation full text (read 2026-11-27, licensed) names TriClip (Abbott), so dev-triclip is
+      linked; generation not stated.
+- id: trial-trinity-us-pivotal
+  type: trial
+  name: TRINITY Pivotal Trial
+  nctId: NCT07454980
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-lux-valve-plus
+    - dev-evoque
+  enrollmentCounts:
+    - count: 680
+      basis: estimated
+      asOf: "2026-08-28"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT07454980
+  primaryEndpoint: >-
+    Major adverse events at 30 days; composite clinical success at 12 months (survival, no heart failure
+    hospitalization, no tricuspid valve surgery or percutaneous intervention).
+  resultStatus: ongoing
+  pulse: 2
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT07454980
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (last update 2026-08-28, no results posted). EVOQUE
+      is listed in the registry as the comparator device in the randomized EVOQUE-eligible cohort; the record also
+      describes a 180-subject single-arm LuX-Valve cohort for patients not suitable for conventional transcatheter
+      tricuspid intervention, tested against a performance goal (detailed description).
+- id: trial-trinity-us
+  type: trial
+  name: TRINITY-US
+  nctId: NCT06568003
+  phase: Device study (not applicable phase)
+  status: active
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-lux-valve-plus
+  enrollmentCounts:
+    - count: 15
+      basis: estimated
+      asOf: "2026-03-02"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06568003
+  primaryEndpoint: Post-procedural tricuspid regurgitation remission rate and incidence of major adverse events, both at 30 days.
+  resultStatus: ongoing
+  pulse: 1
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06568003
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (last update 2026-03-02, no results posted). The
+      registry title does not say early feasibility, so the work list slug trial-trinity-us-efs was shortened to
+      trial-trinity-us. Kept apart from the European TRINITY and from the US pivotal trial (NCT07454980). Sponsor is
+      listed as Jenscare Innovation Inc.; public company node co-jenscare-scientific is not asserted to be the same
+      legal entity.
+- id: trial-triplace-registry
+  type: trial
+  name: TRIPLACE Registry
+  nctId: NCT06033274
+  phase: Observational registry
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-tr
+  therapies:
+    - proc-ttvr
+  enrollmentCounts:
+    - count: 800
+      basis: estimated
+      asOf: "2026-09-15"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06033274
+  primaryEndpoint: Freedom from device-related complications at 30 days; reduction in tricuspid regurgitation severity at 30 days.
+  outcomeSummary: >-
+    Published observational comparison (abstract only): TRIPLACE TTVR cohort (n=395) versus Bronx-Valve medical-therapy
+    cohort (n=784); TTVR was associated with a lower 2-year risk of all-cause mortality or heart failure hospitalization
+    (ATO-HR 0.60, 95% CI 0.40-0.89); non-randomized design.
+  resultStatus: ongoing
+  references:
+    - PMID:43076840
+  pulse: 2
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06033274
+      - PMID:43076840
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (last update 2026-09-15, no results posted). The
+      linked procedure node is generic TTVR because the registry and the abstract do not name a valve model. The outcome
+      summary is from the published abstract only and compares non-randomized cohorts. The TRIPLACE and TRIVALVE papers
+      share replacement patients; their counts must not be added.
+- id: trial-triscend-iii-eu
+  type: trial
+  name: TRISCEND III EU
+  nctId: NCT06569602
+  phase: Observational study (single-arm, real-world)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-evoque
+  enrollmentCounts:
+    - count: 500
+      basis: estimated
+      asOf: "2026-09-04"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT06569602
+  primaryEndpoint: Tricuspid regurgitation grade (up to 7 days, 30 days and 1 year); major adverse events at 30 days.
+  resultStatus: ongoing
+  pulse: 1
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT06569602
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (last update 2026-09-04, no results posted).
+      European observational study; it is not the US TRISCEND II or other EVOQUE trials.
+- id: trial-vista-us-vdyne
+  type: trial
+  name: VISTA-US
+  nctId: NCT05848284
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-vdyne-ttvr
+  enrollmentCounts:
+    - count: 30
+      basis: estimated
+      asOf: "2026-09-21"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05848284
+  primaryEndpoint: >-
+    Device- and/or procedure-related major adverse events at 30 days (Clinical Events Committee); change in tricuspid
+    regurgitation, NYHA class, 6-minute walk and KCCQ from baseline to 1 month.
+  resultStatus: ongoing
+  pulse: 1
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05848284
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (last update 2026-09-21, no results posted).
+      Companion to VISTA (NCT05797519), which is registered separately.
+- id: trial-vista-vdyne
+  type: trial
+  name: VISTA
+  nctId: NCT05797519
+  phase: Device study (not applicable phase)
+  status: recruiting
+  primaryAnalysis:
+    status: not-reported
+  conditions:
+    - cond-tr
+  therapies:
+    - dev-vdyne-ttvr
+  enrollmentCounts:
+    - count: 120
+      basis: estimated
+      asOf: "2026-11-23"
+      source: https://clinicaltrials.gov/api/v2/studies/NCT05797519
+  primaryEndpoint: >-
+    Device- and/or procedure-related major adverse events at 30 days; change in tricuspid regurgitation, KCCQ, 6-minute
+    walk and NYHA class from baseline to 1 month.
+  resultStatus: ongoing
+  pulse: 1
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - https://clinicaltrials.gov/api/v2/studies/NCT05797519
+    notes: >-
+      Registry identity from the retained ClinicalTrials.gov record (last update 2026-11-23, no results posted).
+      Separate from VISTA-US (NCT05848284), a US and Canada study of the same device system; the two registrations are
+      not merged.
+- id: trial-voyager-ce
+  type: trial
+  name: VOYAGER CE
+  phase: Pre-market single-arm study (sponsor release)
+  conditions:
+    - cond-as
+  therapies:
+    - dev-abbott-encantor
+  enrollmentCounts:
+    - count: 300
+      basis: estimated
+      scope: Up to 300 patients per the sponsor release; not a registry figure
+      source: >-
+        https://abbott.mediaroom.com/2026-11-19-Abbott-initiates-VOYAGER-clinical-trial-for-investigational-Encantor-TM-software-guided-balloon-expandable-TAVI-system-to-treat-aortic-stenosis
+  resultStatus: ongoing
+  pulse: 2
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - >-
+        https://abbott.mediaroom.com/2026-11-19-Abbott-initiates-VOYAGER-clinical-trial-for-investigational-Encantor-TM-software-guided-balloon-expandable-TAVI-system-to-treat-aortic-stenosis
+    notes: >-
+      Sponsor release only; no registry record was opened, so no nctId or registry status is set. The release states the
+      first enrollment occurred at Macquarie University, Sydney, and the study is planned to support CE Mark approval;
+      the count is a planned maximum, not enrollment.
