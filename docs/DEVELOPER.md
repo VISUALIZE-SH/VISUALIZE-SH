@@ -60,7 +60,7 @@ and `git diff --check`.
 data/*.yaml ──(build:graph)──────────────────────► public/graph.json ──► Atlas graph overview
 data/intelligence/{pilot,taxonomy,comparative-pilot}.yaml
   + data/intelligence/catalog/*.yaml ──(build:intelligence)──► public/intelligence.json ──► News / Atlas / Data
-data/news.yaml ──(build:graph)──► public/graph.json news (newest 300) + public/news-archive.json (older) + digest HTML
+data/news.yaml ──(build:graph)──► public/graph.json news (News: newest 300; News Archive: older) + digest HTML
 ```
 
 - **Source of truth** is the YAML under `data/`, one file per entity type; entities

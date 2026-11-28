@@ -2,14 +2,10 @@ import type { NewsItem } from '../types/entities'
 
 /**
  * News shows the newest published items. Once the published feed holds more
- * than this many, the older ones move to the News Archive page
- * (public/news-archive.json). Nothing is deleted: data/news.yaml keeps every item.
+ * than this many, the older ones move to the News Archive page. Nothing is
+ * deleted: data/news.yaml and public/graph.json keep every published item.
  */
 export const NEWS_PAGE_LIMIT = 300
-
-export interface NewsArchiveData {
-  news: NewsItem[]
-}
 
 /** Newest first; same-day items in a stable id order. */
 export function orderNews(items: NewsItem[]): NewsItem[] {

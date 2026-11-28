@@ -8,9 +8,9 @@
  *      the correct entity type, therapy id prefix matches therapyType).
  *   4. Derive graph nodes + edges, compute node degree.
  *   5. Validate data/news.yaml and verify all of its node references resolve.
- *   6. Write public/graph.json with graph metadata and the newest
- *      NEWS_PAGE_LIMIT published news items; older published items go to
- *      public/news-archive.json for the News Archive page.
+ *   6. Write public/graph.json with graph metadata and every published news
+ *      item. The app shows the newest NEWS_PAGE_LIMIT on News and the older
+ *      ones on the News Archive page.
  *
  * Any error fails the build (exit 1) with a clear message, so a scheduled
  * updater (or CI) catches malformed data before it ships.
@@ -34,7 +34,7 @@ import type {
   SourcedRelationship,
 } from '../src/types/entities'
 import { atlasLifecycleFlags } from '../src/data/lifecycle'
-import { orderNews, splitNewsArchive, type NewsArchiveData } from '../src/data/news-archive'
+import { orderNews, splitNewsArchive } from '../src/data/news-archive'
 import { newsDateIssues } from './news-validation'
 import { relationshipEndpointIssues } from './graph-relationships'
 import { trialIssues } from './trial-validation'
@@ -44,7 +44,6 @@ const ROOT = resolve(__dirname, '..')
 const DATA_DIR = join(ROOT, 'data')
 const SCHEMA_DIR = join(ROOT, 'schema')
 const OUT_FILE = join(ROOT, 'public', 'graph.json')
-const ARCHIVE_FILE = join(ROOT, 'public', 'news-archive.json')
 
 const errors: string[] = []
 const warnings: string[] = []
@@ -344,8 +343,9 @@ const draftCount = nodes.filter((n) => n.data.isDraft).length
 const scoredCount = nodes.filter((n) => n.data.pulse > 0).length
 // Validate every item above, then omit unreviewed research from the public feed.
 const sortedNews = orderNews(news.filter((item) => item.reviewStatus !== 'draft'))
-// News shows the newest NEWS_PAGE_LIMIT items; older ones move to the News Archive.
-const { current: currentNews, archive: archivedNews } = splitNewsArchive(sortedNews)
+// Every published item stays in graph.json, so Atlas panels, search and
+// bibliographies still see older News; the app splits News from the archive.
+const { archive: archivedNews } = splitNewsArchive(sortedNews)
 
 const graph: GraphData = {
   meta: {
@@ -354,24 +354,22 @@ const graph: GraphData = {
     counts,
     draftCount,
     total: nodes.length,
-    newsCount: currentNews.length,
-    latestNewsDate: currentNews[0]?.publishedAt,
+    newsCount: sortedNews.length,
+    latestNewsDate: sortedNews[0]?.publishedAt,
     newsArchiveCount: archivedNews.length,
   },
-  news: currentNews,
+  news: sortedNews,
   elements: { nodes, edges: edges.map((data) => ({ data })) },
 }
 
 mkdirSync(dirname(OUT_FILE), { recursive: true })
 writeFileSync(OUT_FILE, JSON.stringify(graph, null, 2) + '\n', 'utf8')
-const archive: NewsArchiveData = { news: archivedNews }
-writeFileSync(ARCHIVE_FILE, JSON.stringify(archive, null, 2) + '\n', 'utf8')
 
-console.log('✓ build-data: wrote public/graph.json and public/news-archive.json')
+console.log('✓ build-data: wrote public/graph.json')
 console.log(
   `  nodes: ${nodes.length}  edges: ${edges.length}  drafts: ${draftCount}  pulse-scored: ${scoredCount}`,
 )
-console.log(`  news: ${currentNews.length}${currentNews[0] ? `  latest: ${currentNews[0].publishedAt}` : ''}  archive: ${archivedNews.length}`)
+console.log(`  news: ${sortedNews.length}${sortedNews[0] ? `  latest: ${sortedNews[0].publishedAt}` : ''}  of which in the News Archive: ${archivedNews.length}`)
 console.log(
   `  by group: ${Object.entries(counts)
     .map(([g, c]) => `${g}=${c}`)
