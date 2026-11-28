@@ -8900,3 +8900,34 @@
   links:
     - label: FDA device record
       url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200015S011
+
+- id: dev-abbott-encantor
+  type: therapy
+  therapyType: device
+  subtype: Software-guided balloon-expandable TAVI system (investigational)
+  name: Abbott Encantor
+  company: co-abbott
+  treats:
+    - cond-as
+  regulatoryStatus: investigational
+  regulatoryDetail: >-
+    Sponsor release of 2026-11-19 states the Encantor balloon-expandable TAVI is investigational only and not for use
+    anywhere in the world, including the U.S., Australia, Canada or Europe. No regulator document was reviewed.
+  mechanism: >-
+    Company-described: the valve is crimped on a deflated surgical balloon and delivered through a catheter from an
+    artery in the groin; software-guided deployment customizes balloon expansion to the patient's anatomy.
+  description: >-
+    Abbott's investigational software-guided balloon-expandable transcatheter aortic valve system for symptomatic severe
+    aortic stenosis, as described in the company's release. Early feasibility study data were announced for presentation
+    at PCR London Valves 2026; the VOYAGER CE study was initiated to support CE Mark approval in Europe.
+  materials: []
+  materialsStatus: not_established
+  curation:
+    status: curated
+    lastUpdated: "2026-11-27"
+    sources:
+      - >-
+        https://abbott.mediaroom.com/2026-11-19-Abbott-initiates-VOYAGER-clinical-trial-for-investigational-Encantor-TM-software-guided-balloon-expandable-TAVI-system-to-treat-aortic-stenosis
+    notes: >-
+      Sponsor claim from a single company release; materials not established (materialsStatus not_established). Early
+      feasibility data and the VOYAGER CE registry record were not opened.

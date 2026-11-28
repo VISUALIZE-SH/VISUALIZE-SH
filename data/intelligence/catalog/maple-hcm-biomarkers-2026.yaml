@@ -1,0 +1,66 @@
+# maple-hcm-biomarkers-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-27"
+sources:
+  - id: src-lv26-maple-biomarkers
+    title: Effect of Aficamten vs Metoprolol on Cardiac Biomarkers in Obstructive Hypertrophic Cardiomyopathy.
+    url: https://doi.org/10.1016/j.jchf.2026.103508
+    kind: publication
+    publisher: JACC. Heart failure
+    publishedAt:
+      value: "2026-11-24"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+    identifier: PMID 43083514
+    citation:
+      containerTitle: JACC. Heart failure
+      doi: 10.1016/j.jchf.2026.103508
+bibliography:
+  - id: bib-lv26-maple-hcm-biomarkers
+    entityIds:
+      - rx-aficamten
+    versionIds: []
+    sourceRefs:
+      - sourceId: src-lv26-maple-biomarkers
+        locator: "PubMed abstract: Methods, Results (biomarker analysis)."
+    reviewStatus: reviewed
+claims:
+  - id: claim-lv26-maple-bio-1
+    versionId: ver-myqorzo
+    category: evidence
+    key: lv26-maple-bio-1
+    label: MAPLE-HCM NT-proBNP change
+    value: NT-proBNP −73% with aficamten vs +42% with metoprolol; treatment effect −81% (95% CI −85% to −76%).
+    availability: reported
+    basis: directly_reported
+    context: >-
+      MAPLE-HCM (NCT05767346) randomized trial in symptomatic obstructive HCM: aficamten (n=88) vs metoprolol (n=87);
+      geometric or mean change from baseline to end of 24-week therapy. Geometric mean NT-proBNP; P<0.001.
+    limitation: >-
+      Biomarker analysis of a randomized trial; abstract-only. Both biomarkers returned to baseline after washout. Trial
+      regimen, not label dosing, and not a clinical-outcome result; the abstract names aficamten, not the Myqorzo brand.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-maple-biomarkers
+        locator: Abstract, Results
+    reviewStatus: reviewed
+  - id: claim-lv26-maple-bio-2
+    versionId: ver-myqorzo
+    category: evidence
+    key: lv26-maple-bio-2
+    label: MAPLE-HCM hs-cTnI change
+    value: hs-cTnI −43% with aficamten vs −17% with metoprolol; treatment effect −28% (95% CI −41% to −13%).
+    availability: reported
+    basis: directly_reported
+    context: >-
+      MAPLE-HCM (NCT05767346) randomized trial in symptomatic obstructive HCM: aficamten (n=88) vs metoprolol (n=87);
+      geometric or mean change from baseline to end of 24-week therapy. Mean high-sensitivity cardiac troponin I;
+      P=0.001.
+    limitation: >-
+      Biomarker analysis of a randomized trial; abstract-only. Both biomarkers returned to baseline after washout. Trial
+      regimen, not label dosing, and not a clinical-outcome result; the abstract names aficamten, not the Myqorzo brand.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-maple-biomarkers
+        locator: Abstract, Results
+    reviewStatus: reviewed

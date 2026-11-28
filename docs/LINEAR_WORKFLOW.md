@@ -145,3 +145,18 @@ filing.
   outcome). Branch `codex/wor-pending-news-archive`; rename with the issue
   number once filed. Linear did not expose team `WOR` from the connected
   workspace on 2026-11-27.
+- **2026-11-27, visualize-sh-webapp (`P-WOR-1`), Data, `Area: News`, Medium:
+  publish reviewed November 20–26 News, Atlas and Data records.** Owner request.
+  Adds 19 News items (the 19 oldest move to the News Archive), one therapy and 17
+  clinical study entries plus one study status update in Atlas, and 12 Data
+  catalog fragments (nine new device or study-cohort versions, specification
+  values for Cardiovalve, LuX-Valve Plus, SATURN and Cephea). Paths:
+  `data/news.yaml`, `data/therapies.yaml`, `data/trials.yaml`,
+  `data/intelligence/catalog/*-2025.yaml`, `data/intelligence/catalog/*-2026.yaml`,
+  `data/illustrations/device-schematics.json`. Acceptance: every record cites an
+  eligible documentary source with a locator and scope; new versions use
+  placeholders until exact-source artwork is available; `npm run validate:local`
+  and `VITE_BASE=/ npm run build` pass. Depends on the News Archive entry above.
+  Branch `codex/wor-pending-london-valves-nov-20-26`; rename with the issue number
+  once filed. Linear did not expose team `WOR` from the connected workspace on
+  2026-11-27.

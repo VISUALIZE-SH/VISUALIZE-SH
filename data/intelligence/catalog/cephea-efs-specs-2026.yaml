@@ -1,0 +1,167 @@
+# cephea-efs-specs-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-27"
+sources:
+  - id: src-cephea-yadav-jcin-2026
+    title: 30-Day Outcomes of a Single-Stage Transfemoral Mitral Valve Replacement System in Severe Mitral Valve Disease
+    url: https://doi.org/10.1016/j.jcin.2026.02.029
+    kind: publication
+    publisher: "JACC: Cardiovascular Interventions (Elsevier)"
+    publishedAt:
+      value: "2026-05-11"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: licensed
+families:
+  - id: family-cephea-tmvr
+    name: Cephea Mitral Valve System
+    manufacturer: Abbott
+    entityIds:
+      - dev-cephea-mitral-system
+    conditionIds:
+      - cond-mr
+    description: >-
+      Investigational transfemoral transseptal single-stage TMVR with a nitinol dual-disc frame; in the CROWN-MV pivotal
+      study since October 2026.
+versions:
+  - id: ver-cephea-efs-2021-2024
+    familyId: family-cephea-tmvr
+    graphEntityId: dev-cephea-mitral-system
+    name: Cephea TMVR, first and updated valve versions (EFS, 2021-2024)
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Cephea valve as studied in the US early feasibility study (NCT05061004) and compassionate use, August 2021 to June
+      2024: a first single-size version and an updated three-size version, reported together. The generation used in
+      CROWN-MV is not named.
+    sourceRefs:
+      - sourceId: src-cephea-yadav-jcin-2026
+        locator: "Methods: device description"
+    reviewStatus: reviewed
+specs:
+  - version: ver-cephea-efs-2021-2024
+    category: mitral-replacement
+    values:
+      frame-material:
+        value: Nitinol dual-disc outer frame; inner circular valve frame
+        loc: Methods, device description
+        source: src-cephea-yadav-jcin-2026
+      leaflet-material:
+        value: Trileaflet valve (tissue source not stated)
+        loc: Methods, device description
+        source: src-cephea-yadav-jcin-2026
+      sealing-design:
+        value: Atrial disc rests on the left atrial floor
+        loc: Methods, device description
+        source: src-cephea-yadav-jcin-2026
+        context: Authors describe the discs as conforming to noncircular annuli, including irregular MAC.
+      anchoring-mechanism:
+        value: Radial and longitudinal compression; ventricular disc tines
+        loc: Methods, device description
+        source: src-cephea-yadav-jcin-2026
+        context: No separate docking device or subvalvular anchor.
+      access-route:
+        value: Transfemoral venous, transseptal, single stage
+        loc: Methods, device description; Methods, procedural description
+        source: src-cephea-yadav-jcin-2026
+        context: Venous cutdown with the first version (n=13); large-bore percutaneous access later (n=18).
+      delivery-sheath:
+        value: 36 F (outer dimension) delivery system
+        loc: Methods, procedural description
+        source: src-cephea-yadav-jcin-2026
+        limitation: One figure for the cohort; not given by valve version.
+      available-sizes:
+        value: First version one size; updated 32, 36, 40 mm
+        loc: Methods, device description
+        source: src-cephea-yadav-jcin-2026
+        context: A 28 mm size was under development.
+      anatomy-range-summary:
+        value: Perimeter 95.5-122.5 mm (first); 88-135 mm (updated)
+        loc: Methods, device description
+        source: src-cephea-yadav-jcin-2026
+        context: Anteroposterior 27-34 mm (first) and 24-38 mm (updated).
+      imaging-guidance:
+        value: CT planning; TEE and fluoroscopy guidance
+        loc: Methods, screening; Methods, procedural description
+        source: src-cephea-yadav-jcin-2026
+      post-implant-therapy:
+        value: Warfarin, INR 2.5-3.5, at least 6 months (EFS)
+        loc: Methods, procedural description
+        source: src-cephea-yadav-jcin-2026
+        limitation: Required for EFS subjects; the compassionate-use regimen is not stated.
+      indication-scope:
+        value: Investigational (US EFS and compassionate use)
+        loc: Methods, study design
+        source: src-cephea-yadav-jcin-2026
+bibliography:
+  - id: bib-cephea-efs-specs-2026
+    entityIds:
+      - dev-cephea-mitral-system
+    versionIds:
+      - ver-cephea-efs-2021-2024
+    sourceRefs:
+      - sourceId: src-cephea-yadav-jcin-2026
+        locator: Methods (device and procedure); Results; Tables 3 and 5
+    reviewStatus: reviewed
+claims:
+  - id: claim-cephea-efs-30d
+    versionId: ver-cephea-efs-2021-2024
+    category: evidence
+    key: cephea-efs-30d
+    label: EFS and compassionate use, 30 days
+    value: Implanted 30 of 31; no procedural death or stroke; survival 30 of 31
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Yadav et al. 2026: 24 EFS and 7 compassionate-use patients, Aug 2021-Jun 2024; first and updated valve versions
+      pooled; one conversion to surgery after misdeployment.
+    limitation: Interim analysis; no comparator; EFS funded by Abbott.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-cephea-yadav-jcin-2026
+        locator: Abstract; Results, procedural outcomes
+    reviewStatus: reviewed
+  - id: claim-cephea-efs-mr
+    versionId: ver-cephea-efs-2021-2024
+    category: evidence
+    key: cephea-efs-mr
+    label: MR at 30 days (primary endpoint)
+    value: MR mild or less in 27 of 27 with evaluable imaging
+    availability: reported
+    basis: directly_reported
+    context: All patients (EFS and compassionate use), first and updated valve versions pooled.
+    limitation: Compassionate-use imaging was not core-lab assessed.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-cephea-yadav-jcin-2026
+        locator: Abstract, Results
+    reviewStatus: reviewed
+  - id: claim-cephea-efs-corelab
+    versionId: ver-cephea-efs-2021-2024
+    category: evidence
+    key: cephea-efs-corelab
+    label: EFS core lab at 1 month
+    value: MR none or trace 17 of 20, grade I 3 of 20; mean gradient 5.5 mmHg
+    availability: reported
+    basis: directly_reported
+    context: EFS patients with core-laboratory imaging.
+    limitation: Two EFS patients missed the one-month visit.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-cephea-yadav-jcin-2026
+        locator: Table 3; Study limitations
+    reviewStatus: reviewed
+  - id: claim-cephea-efs-events
+    versionId: ver-cephea-efs-2021-2024
+    category: evidence
+    key: cephea-efs-events
+    label: EFS 30-day events
+    value: HF rehospitalization 3 of 24 by 30 days
+    availability: reported
+    basis: directly_reported
+    context: EFS subjects (n=24); serious adverse events per protocol.
+    limitation: Small interim cohort.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-cephea-yadav-jcin-2026
+        locator: Results, serious adverse events (Table 5)
+    reviewStatus: reviewed

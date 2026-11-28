@@ -1,0 +1,295 @@
+# lux-valve-plus-specs-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-27"
+sources:
+  - id: src-luxp-donal-2026
+    title: "State-of-the-Art Review: Transjugular Tricuspid Valve Replacement Using the LuX-Valve Plus System"
+    url: https://doi.org/10.1016/j.shj.2026.100792
+    kind: publication
+    publisher: Structural Heart (Elsevier)
+    publishedAt:
+      value: "2026-01-06"
+      precision: day
+    retrievedAt: "2026-11-12"
+    access: public
+  - id: src-luxp-chen-acs-2026
+    title: Transjugular transcatheter tricuspid valve replacement
+    url: https://doi.org/10.21037/acs-2025-aw-42-tvd
+    kind: publication
+    publisher: Annals of Cardiothoracic Surgery
+    publishedAt:
+      value: "2026-03-19"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+  - id: src-luxp-ce-news
+    title: LuX-Valve Plus receives CE certification (Jenscare news)
+    url: https://en.jenscare.com/new/424.html
+    kind: manufacturer
+    publisher: Jenscare Scientific
+    publishedAt:
+      value: "2026-07-23"
+      precision: day
+    retrievedAt: "2026-11-09"
+    access: public
+  - id: src-luxp-trinity-12m
+    title: >-
+      Voluntary announcement: presentation of the 12-month follow-up results of EU TRINITY of the LuX-Valve Plus
+      clinical study at PCR London Valves 2026
+    url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1123/2026112300107.pdf
+    kind: manufacturer
+    publisher: Jenscare Scientific Co., Ltd. (HKEXnews)
+    publishedAt:
+      value: "2026-11-23"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+  - id: src-luxp-prospectus-2022
+    title: Jenscare Scientific Co., Ltd. global offering prospectus
+    url: https://www1.hkexnews.hk/listedco/listconews/sehk/2022/0923/2022092300017.pdf
+    kind: manufacturer
+    publisher: Jenscare Scientific Co., Ltd. (HKEXnews)
+    publishedAt:
+      value: "2022-09-23"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+  - id: src-luxp-stolz-ejhf-2025
+    title: "Transcatheter tricuspid valve replacement using the LuX-Valve Plus system: 1-year compassionate use outcomes"
+    url: https://doi.org/10.1002/ejhf.70010
+    kind: publication
+    publisher: European Journal of Heart Failure (Wiley)
+    publishedAt:
+      value: "2025-08-18"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+  - id: src-luxp-trinity-pivotal-registry
+    title: TRINITY pivotal trial of LuX-Valve Plus versus EVOQUE (NCT07454980)
+    url: https://clinicaltrials.gov/study/NCT07454980
+    kind: registry
+    publisher: ClinicalTrials.gov
+    retrievedAt: "2026-11-27"
+    access: public
+  - id: src-luxp-debacker-eij-2026
+    title: >-
+      Outcomes of patients with large anatomies undergoing transcatheter tricuspid valve replacement with the LuX-Valve
+      Plus system
+    url: https://doi.org/10.4244/EIJ-D-26-00062
+    kind: publication
+    publisher: EuroIntervention
+    publishedAt:
+      value: 2026-08
+      precision: month
+    retrievedAt: "2026-11-27"
+    access: public
+  - id: src-luxp-chen-jcin-2026
+    title: >-
+      Comparison of Early Outcomes Following Transjugular Transcatheter Tricuspid Valve Replacement Between Large vs
+      Small Annulus
+    url: https://doi.org/10.1016/j.jcin.2025.11.013
+    kind: publication
+    publisher: "JACC: Cardiovascular Interventions (Elsevier)"
+    publishedAt:
+      value: "2025-12-15"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+families:
+  - id: family-lux-valve-plus
+    name: LuX-Valve Plus
+    manufacturer: Jenscare Scientific
+    entityIds:
+      - dev-lux-valve-plus
+    conditionIds:
+      - cond-tr
+    description: >-
+      Transjugular transcatheter tricuspid valve replacement system; the second generation of the LuX-Valve platform,
+      whose first generation was implanted transatrially.
+versions:
+  - id: ver-lux-valve-plus
+    familyId: family-lux-valve-plus
+    graphEntityId: dev-lux-valve-plus
+    name: LuX-Valve Plus (transjugular)
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Jenscare transjugular TTVR system with a septal anchor and leaflet graspers, studied in compassionate use, EU
+      TRINITY and the US TRINITY studies. Values are for LuX-Valve Plus only; first-generation (transatrial) LuX-Valve
+      data are excluded.
+    sourceRefs:
+      - sourceId: src-luxp-donal-2026
+        locator: Device Overview; Technical Characteristics
+      - sourceId: src-luxp-ce-news
+        locator: News paragraphs 1-2
+    reviewStatus: reviewed
+specs:
+  - version: ver-lux-valve-plus
+    category: tricuspid-replacement
+    values:
+      expansion-mechanism:
+        value: Self-expanding
+        loc: Technical Characteristics section
+        source: src-luxp-donal-2026
+      frame-material:
+        value: Nitinol stent frame
+        loc: Technical Characteristics section
+        source: src-luxp-donal-2026
+      leaflet-material:
+        value: Bovine pericardium, trileaflet
+        loc: Technical Characteristics section
+        source: src-luxp-donal-2026
+      tissue-treatment:
+        value: JeniGal anti-calcification treatment (sponsor, 2022)
+        loc: PDF pp. 220 and 230 (LuX-Valve valve tissue); p. 241 (Plus valve adopts the same design)
+        source: src-luxp-prospectus-2022
+        context: The 2022 prospectus states it for the LuX-Valve implant and says the Plus implant has the same design.
+        limitation: No Plus-specific statement in a 2026 document was found.
+        basis: derived
+      sealing-design:
+        value: Self-adaptive fabric skirt (sponsor)
+        loc: News paragraph 2
+        source: src-luxp-ce-news
+      anchoring-mechanism:
+        value: Septal anchor plus anterior and posterior leaflet graspers
+        loc: Technical Characteristics section; Table 1
+        source: src-luxp-donal-2026
+      repositionable:
+        value: Recapture still possible after ventricular-side deployment
+        loc: Procedural technique, Step 2
+        source: src-luxp-chen-acs-2026
+        limitation: Technique description of one procedure; not a labeled device feature.
+      access-route:
+        value: Transjugular (right internal jugular vein)
+        loc: Procedural technique, Step 1
+        source: src-luxp-chen-acs-2026
+        context: Consistent with Donal 2026 (Device Overview).
+      delivery-sheath:
+        value: 33 F compatible steerable delivery system
+        loc: Technical Characteristics section; Table 1
+        source: src-luxp-donal-2026
+      available-sizes:
+        value: Seven sizes, 40-70 mm (sponsor)
+        loc: News paragraph 2
+        source: src-luxp-ce-news
+        limitation: The US early feasibility record lists models up to 65 mm only.
+      anatomy-range-summary:
+        value: Annulus up to 70 mm; minimum inner ring 30 mm (sponsor)
+        loc: PDF p. 2, paragraph 1
+        source: src-luxp-trinity-12m
+      imaging-guidance:
+        value: CT planning; TEE and fluoroscopy guidance
+        loc: Imaging sections (planning and intraprocedural guidance)
+        source: src-luxp-donal-2026
+      indication-scope:
+        value: EU MDR CE certificate (sponsor, Jul 2026)
+        loc: News headline and paragraph 1
+        source: src-luxp-ce-news
+        limitation: No certificate or intended-use statement was opened.
+      post-implant-therapy:
+        value: DOAC 42.5% or VKA 53.5% after discharge (compassionate use)
+        loc: Results, paragraph 3
+        source: src-luxp-stolz-ejhf-2025
+        context: Observed practice, not a protocol; aspirin in 5.7%.
+      pivotal-trials:
+        value: "TRINITY pivotal (NCT07454980): vs EVOQUE plus single-arm cohort"
+        loc: Design and arms modules
+        source: src-luxp-trinity-pivotal-registry
+        context: Recruiting; about 680 planned, 400 randomized 2:1 against EVOQUE in eligible patients.
+bibliography:
+  - id: bib-luxp-specs-2026
+    entityIds:
+      - dev-lux-valve-plus
+    versionIds:
+      - ver-lux-valve-plus
+    sourceRefs:
+      - sourceId: src-luxp-donal-2026
+        locator: Device Overview; Technical Characteristics; Table 1
+      - sourceId: src-luxp-chen-acs-2026
+        locator: Procedural technique
+      - sourceId: src-luxp-stolz-ejhf-2025
+        locator: Results
+    reviewStatus: reviewed
+claims:
+  - id: claim-luxp-trinity-12m-eff
+    versionId: ver-lux-valve-plus
+    category: evidence
+    key: luxp-trinity-12m-eff
+    label: EU TRINITY 12 months (sponsor)
+    value: TR moderate or less 80.6% (n=126); NYHA I/II 92.1% (n=127)
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Jenscare voluntary announcement (HKEXnews, 23 Nov 2026): EU TRINITY, prospective single-arm, 20 centers; 12-month
+      full analysis set 149; presented at PCR London Valves 2026. Device success 96.6%.
+    limitation: Sponsor filing; KCCQ and 6-minute walk denominators not stated.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-luxp-trinity-12m
+        locator: PDF p. 2, efficacy results
+    reviewStatus: reviewed
+  - id: claim-luxp-trinity-12m-safety
+    versionId: ver-lux-valve-plus
+    category: evidence
+    key: luxp-trinity-12m-safety
+    label: EU TRINITY 12-month events (sponsor)
+    value: CV death 6.0%; severe bleeding 6.7%; AV-block pacemaker 8.7% (n=149)
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Jenscare voluntary announcement (HKEXnews, 23 Nov 2026): EU TRINITY, prospective single-arm, 20 centers; 12-month
+      full analysis set 149; presented at PCR London Valves 2026. Composite event rate 24.8%.
+    limitation: Sponsor filing of CEC-adjudicated events; no paper yet.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-luxp-trinity-12m
+        locator: PDF p. 3, CEC-adjudicated events table
+    reviewStatus: reviewed
+  - id: claim-luxp-compassionate-1y
+    versionId: ver-lux-valve-plus
+    category: evidence
+    key: luxp-compassionate-1y
+    label: Compassionate use, 1 year
+    value: Survival 77.7%; TR 1+ or less 78.4%; clinical success 76.9%
+    availability: reported
+    basis: directly_reported
+    context: "Stolz et al. 2025: 74 patients at 16 centers, 2019-2024; one-year follow-up in 39 of 41 eligible."
+    limitation: Retrospective; no core laboratory or event committee.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-luxp-stolz-ejhf-2025
+        locator: Results (one-year outcomes)
+    reviewStatus: reviewed
+  - id: claim-luxp-large-anatomy-30d
+    versionId: ver-lux-valve-plus
+    category: evidence
+    key: luxp-large-anatomy-30d
+    label: Large anatomies, 30 days (EU TRINITY)
+    value: "55-70 mm valves (n=114): 30-day clinical success 91.2%"
+    availability: reported
+    basis: directly_reported
+    context: >-
+      De Backer et al., EuroIntervention 2026: EU TRINITY patients treated with the four largest sizes; new pacemaker
+      6.1% at 30 days.
+    limitation: Abstract only; full text not read.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-luxp-debacker-eij-2026
+        locator: Abstract, Results
+    reviewStatus: reviewed
+  - id: claim-luxp-annulus-size
+    versionId: ver-lux-valve-plus
+    category: evidence
+    key: luxp-annulus-size
+    label: Large vs small annulus (China)
+    value: TVARC clinical success 73.8% (large, n=42) vs 94.9% (small, n=117)
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Chen et al., JACC: Cardiovascular Interventions 2026: 159 patients at 13 centers, May 2022-Mar 2024; large annulus
+      = perimeter-derived diameter 51 mm or more, or maximal diameter 55 mm or more.
+    limitation: Abstract only; full text not read.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-luxp-chen-jcin-2026
+        locator: Abstract, Results
+    reviewStatus: reviewed

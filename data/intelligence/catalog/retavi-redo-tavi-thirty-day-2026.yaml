@@ -1,0 +1,113 @@
+# retavi-redo-tavi-thirty-day-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-27"
+sources:
+  - id: src-lv26-retavi
+    title: "Early outcomes of redo-TAVI with the SAPIEN 3 platform: the prospective, multicentre ReTAVI registry."
+    url: https://doi.org/10.4244/EIJ-D-25-01268
+    kind: publication
+    publisher: EuroIntervention
+    publishedAt:
+      value: "2026-06-01"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+    identifier: PMID 42219979
+    citation:
+      containerTitle: EuroIntervention
+      doi: 10.4244/EIJ-D-25-01268
+bibliography:
+  - id: bib-lv26-retavi-registry
+    entityIds:
+      - dev-sapien-3
+    versionIds:
+      - ver-sapien-3-platform-retavi
+    sourceRefs:
+      - sourceId: src-lv26-retavi
+        locator: "PubMed abstract: Aims, Methods, Results (ReTAVI registry)."
+    reviewStatus: reviewed
+claims:
+  - id: claim-lv26-retavi-1
+    versionId: ver-sapien-3-platform-retavi
+    category: evidence
+    key: lv26-retavi-1
+    label: ReTAVI cohort
+    value: >-
+      143 patients; median age 84; median STS 7.0%; failing valves SAPIEN 3 30.1%, CoreValve/Evolut 53.1%, ACURATE
+      14.0%.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      ReTAVI registry (NCT05601453): prospective, international, 59 centers; consecutive patients with a failed aortic
+      THV undergoing redo-TAVI with a balloon-expandable SAPIEN 3 valve; 143 patients; central imaging analysis and
+      independent event adjudication. Failure mode: isolated regurgitation 48.6%, stenosis 35.2%, mixed 16.2%.
+    limitation: >-
+      Single-arm registry; abstract-only. The abstract says "SAPIEN 3 platform"; the exact generation (SAPIEN 3, Ultra
+      or Ultra RESILIA) is not stated.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-retavi
+        locator: Abstract, Results
+    reviewStatus: reviewed
+  - id: claim-lv26-retavi-2
+    versionId: ver-sapien-3-platform-retavi
+    category: evidence
+    key: lv26-retavi-2
+    label: ReTAVI 30-day outcomes
+    value: Successful implantation 95.1%; 30-day mortality 3.5%, stroke 0.7%, pacemaker 6.3%; coronary obstruction 1.4%.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      ReTAVI registry (NCT05601453): prospective, international, 59 centers; consecutive patients with a failed aortic
+      THV undergoing redo-TAVI with a balloon-expandable SAPIEN 3 valve; 143 patients; central imaging analysis and
+      independent event adjudication.
+    limitation: >-
+      Single-arm registry; abstract-only. The abstract says "SAPIEN 3 platform"; the exact generation (SAPIEN 3, Ultra
+      or Ultra RESILIA) is not stated. Success definition not stated in the abstract.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-retavi
+        locator: Abstract, Results
+    reviewStatus: reviewed
+  - id: claim-lv26-retavi-3
+    versionId: ver-sapien-3-platform-retavi
+    category: evidence
+    key: lv26-retavi-3
+    label: ReTAVI mean gradient change
+    value: Mean gradient change −12.0 mmHg overall; −29.0 mmHg in stenotic failures.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      ReTAVI registry (NCT05601453): prospective, international, 59 centers; consecutive patients with a failed aortic
+      THV undergoing redo-TAVI with a balloon-expandable SAPIEN 3 valve; 143 patients; central imaging analysis and
+      independent event adjudication.
+    limitation: >-
+      Single-arm registry; abstract-only. The abstract says "SAPIEN 3 platform"; the exact generation (SAPIEN 3, Ultra
+      or Ultra RESILIA) is not stated. Absolute gradients and the measurement timepoint are not stated in the abstract
+      (study aim is 30-day outcomes).
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-retavi
+        locator: Abstract, Results
+    reviewStatus: reviewed
+versions:
+  - id: ver-sapien-3-platform-retavi
+    familyId: family-sapien
+    graphEntityId: dev-sapien-3
+    name: SAPIEN 3 platform (ReTAVI registry)
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Balloon-expandable SAPIEN 3 platform as used for redo-TAVI in the ReTAVI registry; the abstract does not specify
+      the generation (SAPIEN 3, Ultra or Ultra RESILIA).
+    sourceRefs:
+      - sourceId: src-lv26-retavi
+        locator: "PubMed abstract: Aims and Methods"
+    reviewStatus: reviewed
+specs:
+  - version: ver-sapien-3-platform-retavi
+    category: aortic-tavr-valves
+    source: src-lv26-retavi
+    values:
+      expansion-mechanism:
+        value: Balloon-expandable
+        loc: PubMed abstract, Aims and Methods (balloon-expandable SAPIEN 3 platform)

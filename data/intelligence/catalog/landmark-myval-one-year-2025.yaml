@@ -1,0 +1,119 @@
+# landmark-myval-one-year-2025: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-27"
+sources:
+  - id: src-lv26-landmark-1y
+    title: >-
+      1-Year Outcomes of Novel Balloon-Expandable vs Contemporary Transcatheter Heart Valves in Severe Aortic Stenosis:
+      The LANDMARK Trial.
+    url: https://doi.org/10.1016/j.jacc.2025.10.076
+    kind: publication
+    publisher: Journal of the American College of Cardiology
+    publishedAt:
+      value: "2025-11-16"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+    identifier: PMID 41384893
+    citation:
+      containerTitle: Journal of the American College of Cardiology
+      doi: 10.1016/j.jacc.2025.10.076
+bibliography:
+  - id: bib-lv26-landmark-myval-1y
+    entityIds: []
+    versionIds:
+      - ver-myval-thv-series
+    sourceRefs:
+      - sourceId: src-lv26-landmark-1y
+        locator: "PubMed abstract: Methods, Results (1-year outcomes, Myval series)."
+    reviewStatus: reviewed
+claims:
+  - id: claim-lv26-landmark-myval-1
+    versionId: ver-myval-thv-series
+    category: evidence
+    key: lv26-landmark-myval-1
+    label: LANDMARK design and cohort
+    value: 768 randomized 1:1 at 31 hospitals (Europe, New Zealand, Brazil); mean age 80; 48% women; median STS-PROM 2.6%.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      LANDMARK (NCT04275726): open-label noninferiority trial of the Myval balloon-expandable THV series vs contemporary
+      SAPIEN or Evolut series valves in symptomatic severe native aortic stenosis; intention-to-treat.
+    limitation: >-
+      Abstract-only. Open-label; comparator pooled across SAPIEN and Evolut series; individual Myval models and sizes
+      are not named in the abstract.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-landmark-1y
+        locator: Abstract, Methods and Results
+    reviewStatus: reviewed
+  - id: claim-lv26-landmark-myval-2
+    versionId: ver-myval-thv-series
+    category: evidence
+    key: lv26-landmark-myval-2
+    label: 1-year composite endpoint
+    value: >-
+      Freedom from death, any stroke or procedure/valve-related hospitalization at 1 year: 87.0% vs 86.9% (difference
+      −0.1%).
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Kaplan–Meier at 365 days, Myval series vs contemporary THVs; noninferior (1-sided 95% CI 3.9%; P noninferiority
+      <0.0001).
+    limitation: >-
+      The prespecified noninferiority test was for the 30-day endpoint; the 1-year margin (10.89%) was introduced a
+      posteriori as descriptive and exploratory. Abstract-only.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-landmark-1y
+        locator: Abstract, Methods and Results
+    reviewStatus: reviewed
+  - id: claim-lv26-landmark-myval-3
+    versionId: ver-myval-thv-series
+    category: evidence
+    key: lv26-landmark-myval-3
+    label: 1-year extended composite with quality of life
+    value: "Extended composite incl. quality of life: 80.5% vs 77.3%; difference 3.2% (95% CI −2.9% to 9.2%; P=0.33)."
+    availability: reported
+    basis: directly_reported
+    context: >-
+      VARC-3 extended composite adding the 12-Item Short Form Health Survey at baseline and 1 year; Myval series vs
+      contemporary THVs.
+    limitation: >-
+      No significant difference; exploratory. Abstract-only; quality-of-life component values not stated in the
+      abstract.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-landmark-1y
+        locator: Abstract, Results
+    reviewStatus: reviewed
+families:
+  - id: family-myval
+    name: Myval
+    manufacturer: Meril Life Sciences
+    entityIds: []
+    conditionIds:
+      - cond-as
+    description: >-
+      Balloon-expandable transcatheter aortic valve series by Meril Life Sciences; the LANDMARK trial studied the Myval
+      THV series against SAPIEN and Evolut series valves.
+versions:
+  - id: ver-myval-thv-series
+    familyId: family-myval
+    name: Myval THV series (LANDMARK)
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Myval balloon-expandable THV series as studied in the LANDMARK randomized trial; the abstract does not name
+      individual models or generations.
+    sourceRefs:
+      - sourceId: src-lv26-landmark-1y
+        locator: "PubMed abstract: Background and Methods"
+    reviewStatus: reviewed
+specs:
+  - version: ver-myval-thv-series
+    category: aortic-tavr-valves
+    source: src-lv26-landmark-1y
+    values:
+      expansion-mechanism:
+        value: Balloon-expandable
+        loc: PubMed abstract, Background (Myval balloon-expandable THV series)

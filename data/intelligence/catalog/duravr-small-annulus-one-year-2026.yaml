@@ -1,0 +1,247 @@
+# duravr-small-annulus-one-year-2026: documentary citations and source-scoped evidence. See README.md.
+observedAt: "2026-11-27"
+sources:
+  - id: src-lv26-duravr-release
+    title: >-
+      Anteris’ DurAVR THV Demonstrates 1% Heart Failure Hospitalization, Single-Digit Gradients and No Valve-Related
+      Deaths at 1 Year in Patients with Small Aortic Annuli
+    url: >-
+      https://www.globenewswire.com/news-release/2026/11/22/3407938/0/en/anteris-duravr-thv-demonstrates-1-heart-failure-hospitalization-single-digit-gradients-and-no-valve-related-deaths-at-1-year-in-patients-with-small-aortic-annuli.html
+    kind: manufacturer
+    publisher: Anteris Technologies Global Corp. via GlobeNewswire
+    publishedAt:
+      value: "2026-11-22"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+  - id: src-lv26-duravr-30day
+    title: >-
+      Thirty-day outcomes of a novel biomimetic balloon-expandable transcatheter heart valve in patients with small
+      aortic annuli.
+    url: https://doi.org/10.4244/EIJ-D-25-01106
+    kind: publication
+    publisher: EuroIntervention
+    publishedAt:
+      value: "2026-02-02"
+      precision: day
+    retrievedAt: "2026-11-27"
+    access: public
+    identifier: PMID 41251720
+    citation:
+      containerTitle: EuroIntervention
+      doi: 10.4244/EIJ-D-25-01106
+bibliography:
+  - id: bib-lv26-duravr-small-annulus-release
+    entityIds:
+      - dev-duravr-thv
+    versionIds:
+      - ver-duravr-thv-small
+    sourceRefs:
+      - sourceId: src-lv26-duravr-release
+        locator: "Release: opening paragraphs, Results Highlights bullets (1-year, sponsor-reported)."
+    reviewStatus: reviewed
+  - id: bib-lv26-duravr-small-annulus-30day
+    entityIds:
+      - dev-duravr-thv
+    versionIds:
+      - ver-duravr-thv-small
+    sourceRefs:
+      - sourceId: src-lv26-duravr-30day
+        locator: "PubMed abstract: Methods and Results (30-day pooled small-annulus cohort)."
+    reviewStatus: reviewed
+claims:
+  - id: claim-lv26-duravr-sa-1
+    versionId: ver-duravr-thv-small
+    category: evidence
+    key: lv26-duravr-sa-1
+    label: 1-year hemodynamics (sponsor-reported)
+    value: Mean gradient 8.9 ± 4.3 mmHg (baseline 48.1 ± 17.0); EOA 2.2 ± 0.9 cm² (baseline 0.8 ± 0.2)
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Sponsor-reported (Anteris release, PCR London Valves late-breaking abstract, 22 Nov 2026): 100 patients with
+      severe aortic stenosis and small annuli (annulus area 404 ± 37 mm²), pooled from the EMBARK and early feasibility
+      studies; 1-year follow-up.
+    limitation: >-
+      Sponsor press release; abstract and slides not reviewed. Single-arm pooled early studies; number with 1-year echo
+      not stated; no comparator.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-duravr-release
+        locator: Release, bullet "Hemodynamics"
+    reviewStatus: reviewed
+  - id: claim-lv26-duravr-sa-2
+    versionId: ver-duravr-thv-small
+    category: evidence
+    key: lv26-duravr-sa-2
+    label: 1-year valve performance (sponsor-reported)
+    value: >-
+      No moderate or severe paravalvular leak; no moderate or severe hemodynamic valve deterioration; no valve-related
+      death.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Sponsor-reported (Anteris release, PCR London Valves late-breaking abstract, 22 Nov 2026): 100 patients with
+      severe aortic stenosis and small annuli (annulus area 404 ± 37 mm²), pooled from the EMBARK and early feasibility
+      studies; 1-year follow-up.
+    limitation: >-
+      Sponsor press release. Deterioration criteria and denominators not stated; zero events are not rates with
+      confidence bounds.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-duravr-release
+        locator: Release, bullets "Valve performance" and "Hemodynamic Valve Deterioration"
+    reviewStatus: reviewed
+  - id: claim-lv26-duravr-sa-3
+    versionId: ver-duravr-thv-small
+    category: evidence
+    key: lv26-duravr-sa-3
+    label: 1-year clinical events (sponsor-reported)
+    value: Heart failure hospitalization 1%; all-cause death 6%; stroke 3%; new permanent pacemaker 9%.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Sponsor-reported (Anteris release, PCR London Valves late-breaking abstract, 22 Nov 2026): 100 patients with
+      severe aortic stenosis and small annuli (annulus area 404 ± 37 mm²), pooled from the EMBARK and early feasibility
+      studies; 1-year follow-up. The release lists the 6% deaths as 2 cardiovascular, 2 non-cardiac infection, 1 cancer
+      and 1 car accident.
+    limitation: >-
+      Sponsor press release. Event definitions, adjudication and crude versus Kaplan–Meier method not stated. Release
+      cross-trial comparisons are not reproduced.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-duravr-release
+        locator: Release paragraph 2; bullet "Clinical events at 1 year"
+    reviewStatus: reviewed
+  - id: claim-lv26-duravr-sa-4
+    versionId: ver-duravr-thv-small
+    category: evidence
+    key: lv26-duravr-sa-4
+    label: Symptoms and 30-day mismatch (sponsor-reported)
+    value: NYHA class I/II 96% at 1 year (39% at baseline); 97% free from moderate or severe PPM at 30 days.
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Sponsor-reported (Anteris release, PCR London Valves late-breaking abstract, 22 Nov 2026): 100 patients with
+      severe aortic stenosis and small annuli (annulus area 404 ± 37 mm²), pooled from the EMBARK and early feasibility
+      studies; 1-year follow-up. Baseline: 61% in NYHA class III/IV; the release also states 81% had symptom
+      improvement.
+    limitation: >-
+      Sponsor press release. Denominators and the mismatch definition are not stated; PPM is a 30-day value in the same
+      cohort.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-duravr-release
+        locator: Release paragraph 2; bullet "Symptoms"
+    reviewStatus: reviewed
+  - id: claim-lv26-duravr-sa-5
+    versionId: ver-duravr-thv-small
+    category: evidence
+    key: lv26-duravr-sa-5
+    label: 1-year LV mass regression, CMR substudy (sponsor-reported)
+    value: Left ventricular mass regressed by 24% at 1 year (cardiac MRI substudy, n=64).
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Sponsor-reported (Anteris release, PCR London Valves late-breaking abstract, 22 Nov 2026): 100 patients with
+      severe aortic stenosis and small annuli (annulus area 404 ± 37 mm²), pooled from the EMBARK and early feasibility
+      studies; 1-year follow-up.
+    limitation: >-
+      Sponsor press release. Substudy of 64 of 100 patients; baseline timing and whether the change is relative are not
+      stated. The release comparison with matched controls rests on a separate source not reviewed.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-duravr-release
+        locator: Release, bullet "Cardiac remodeling"
+    reviewStatus: reviewed
+  - id: claim-lv26-duravr-sa-6
+    versionId: ver-duravr-thv-small
+    category: evidence
+    key: lv26-duravr-sa-6
+    label: Small-annulus pooled cohort (peer-reviewed 30-day paper)
+    value: 100 patients; mean age 77.0 ± 7.3 y; 78% female; mean STS 4.7 ± 4.0%; annulus 404 ± 37 mm² (346–452 mm² eligible).
+    availability: reported
+    basis: directly_reported
+    context: >-
+      Pooled analysis of the first-in-human and early feasibility studies; patients with a CT annulus area of 346–452
+      mm² treated with the small-sized DurAVR THV; VARC-3 criteria, independent event adjudication and echo core
+      laboratory.
+    limitation: >-
+      Pooled single-arm early studies; small-sized valve only; abstract-only review. The sponsor release states the
+      1-year cohort is the same pooled population; that link was not independently confirmed.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-duravr-30day
+        locator: Abstract, Methods and Results
+    reviewStatus: reviewed
+  - id: claim-lv26-duravr-sa-7
+    versionId: ver-duravr-thv-small
+    category: evidence
+    key: lv26-duravr-sa-7
+    label: 30-day outcomes (peer-reviewed)
+    value: Technical success 93%; device success 91%; death 0%; stroke 2%; new permanent pacemaker 6% at 30 days.
+    availability: reported
+    basis: directly_reported
+    context: Same pooled small-annulus cohort (100 patients); VARC-3 criteria with independent adjudication of clinical events.
+    limitation: >-
+      Single-arm; abstract-only; definitions of technical and device success taken from VARC-3 per the abstract, not
+      from the full text.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-duravr-30day
+        locator: Abstract, Results
+    reviewStatus: reviewed
+  - id: claim-lv26-duravr-sa-8
+    versionId: ver-duravr-thv-small
+    category: evidence
+    key: lv26-duravr-sa-8
+    label: 30-day echocardiography (peer-reviewed)
+    value: Mean gradient 8.2 ± 3.1 mmHg; EOA 2.2 ± 0.3 cm²; DVI 0.60 ± 0.10; moderate or greater PPM 3%; no PVL above mild.
+    availability: reported
+    basis: directly_reported
+    context: Post-implant transthoracic echocardiography at 30 days, core laboratory analysis; same pooled cohort.
+    limitation: Single-arm; abstract-only; number of patients with analyzable echo not stated in the abstract.
+    observedAt: "2026-11-27"
+    sourceRefs:
+      - sourceId: src-lv26-duravr-30day
+        locator: Abstract, Results
+    reviewStatus: reviewed
+families:
+  - id: family-duravr
+    name: DurAVR
+    manufacturer: Anteris Technologies Global Corp.
+    entityIds:
+      - dev-duravr-thv
+    conditionIds:
+      - cond-as
+    description: >-
+      Investigational balloon-expandable transcatheter aortic valve with a company-described single-piece, molded
+      biomimetic leaflet design; investigational use only per the sponsor.
+versions:
+  - id: ver-duravr-thv-small
+    familyId: family-duravr
+    graphEntityId: dev-duravr-thv
+    name: DurAVR THV (small size), small-annulus cohort
+    kind: device
+    clinicalRole: treats
+    summary: >-
+      Small-sized DurAVR balloon-expandable THV as studied in the pooled first-in-human and early feasibility
+      small-annulus cohort (annulus 346–452 mm²); investigational, not authorized.
+    sourceRefs:
+      - sourceId: src-lv26-duravr-30day
+        locator: "PubMed abstract: Methods (small-sized DurAVR THV; annulus definition)"
+      - sourceId: src-lv26-duravr-release
+        locator: Release paragraph 1
+    reviewStatus: reviewed
+specs:
+  - version: ver-duravr-thv-small
+    category: aortic-tavr-valves
+    source: src-lv26-duravr-30day
+    values:
+      expansion-mechanism:
+        value: Balloon-expandable
+        loc: PubMed abstract, Aims (novel balloon-expandable DurAVR THV)
+      tissue-treatment:
+        value: ADAPT anti-calcification tissue (single molded piece)
+        loc: Release, About Anteris, paragraph 2 (sponsor-described)
+        source: src-lv26-duravr-release
